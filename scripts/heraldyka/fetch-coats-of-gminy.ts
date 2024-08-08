@@ -1,4 +1,7 @@
-import { existsSync, unlink } from "fs";
+import {
+  existsSync,
+  // unlink,
+} from "fs";
 import { writeFile } from "fs/promises";
 import chalk from 'chalk';
 

@@ -22,8 +22,6 @@ const contentToSave: AdministrativeUnit[] = [];
 	wiki.setLang('pl')
 
 	for (const unit of limited) {
-		console.log(unit);
-
 		try {
 			const page = await wiki.page(unit.title);
 			// console.log(page);
