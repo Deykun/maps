@@ -7,7 +7,8 @@
     "dev": "vite --port 3001",
     "start": "vite --port 3001",
     "build": "tsc && vite build && tsx scripts/post-build.ts",
-    "fetch:heraldyka": "tsx scripts/heraldyka.ts",
+    "fetch:gminy": "tsx scripts/heraldyka/fetch-gminy.ts",
+    "fetch:coats-of-gminy": "tsx scripts/heraldyka/fetch-coats-of-gminy.ts",
     "preview": "vite preview",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix"
