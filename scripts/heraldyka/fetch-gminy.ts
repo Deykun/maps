@@ -2,40 +2,62 @@ import fs from 'fs';
 import wiki from 'wikipedia';
 import chalk from 'chalk';
 
-import { urls, AdministrativeUnit } from './constants';
+import { urls, Administrativedivision } from './constants';
 
-// The gmina is the basic unit of the administrative division of Poland, similar to a municipality.
+// The gmina is the basic division of the administrative division of Poland, similar to a municipality.
 
-const smallAdministrativeDivision = Object.values(urls.gminyByWojewodztwo).flatMap(
+const administrativeDivisions = Object.values(urls.gminyByWojewodztwo).flatMap(
 	({ title, urls }) => urls.map(
 		(gmina) => ({ ...gmina, type: 'gmina', partOf: title }
 	),
 ));
 
-console.log(chalk.blue(`${smallAdministrativeDivision.length} gmins to check.`))
+const total = administrativeDivisions.length;
 
-const limited = smallAdministrativeDivision;
+console.log(chalk.blue(`${total} gmins to check.`))
 
-const contentToSave: AdministrativeUnit[] = [];
+const contentToSave: Administrativedivision[] = [];
 
 (async () => {
 	wiki.setLang('pl')
 
-	for (const unit of limited) {
-		console.log(unit);
+	for (let i = 0; i < administrativeDivisions.length; i++) {
+		const division = administrativeDivisions[i];
+
+		if (i % 1 === 0) {
+			console.log(`Progress ${(i / total * 100).toFixed(1)}%. ${i} out of ${total}. - ${division.title}`);
+		}
 
 		try {
-			const page = await wiki.page(unit.title);
+			const page = await wiki.page(division.title);
 			// console.log(page);
 			//Response of type @Page object
 			const summary = await page.summary();
 			// console.log(summary);
 			const content = await page.content();
-			// const links = await page.references();
+			const categories = await page.categories();
 			// const images = await page.images()
 
+			const maindivisionCategory = categories.find((category) => category.includes('(gmina)') || category.includes('(gmina wiejska)'))
+
+			if (maindivisionCategory) {
+				const divisionPage = await wiki.page(maindivisionCategory.replace('Kategoria:', ''));
+				// console.log(divisionPage);
+				// const divisionSummary = await page.summary();
+				// console.log(divisionSummary);
+				const coordinates = await divisionPage.coordinates();
+
+				division.place = {
+					name: divisionPage.title,
+					coordinates: {
+						lat: coordinates.lat,
+						lon: coordinates.lon,
+					}
+				}
+			}
+
 			contentToSave.push({
-				...unit,
+				...division,
 				description: content.substring(0, 3000),
 				image: summary.thumbnail,
 			});
