@@ -3,13 +3,16 @@ export const colorsByNames: {
 } = {
     white: '#fff',
     black: '#000',
-    // gray: '#848484',
     yellow: '#ffdf00',
     red: '#da251d',
     orange: '#fe6632',
     lightblue: '#0096d8',
-    blue: '#0000ff',
-    green: '#009241',
+    darkblue: '#083b84',
+    blue: '#005ebe',
+    lightgreen: '#6dc053',
+    green: '#37763b',
+    brown: '#ad634c',
+    gold: '#b0a88b',
 };
 
 export type AdministrativeUnit = {
@@ -26,6 +29,7 @@ export type AdministrativeUnit = {
     palette: {
       color: string,
       name: string,
+      distance?: number,
     }[],
   },
   image?: {

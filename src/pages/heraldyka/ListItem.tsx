@@ -16,7 +16,7 @@ const ListItem = ({ title, imageUrl, colors, place }: AdministrativeUnit) => {
             <div className="flex items-center gap-2 mt-2 text-[14px]">
               <h4>Wiodący:</h4>
               {colors?.primary?.color && <span className={colorClassName} style={{ backgroundColor: `${colors?.primary?.color}` }}></span>}
-              <h4>Paleta:</h4>
+              <h4 className="ml-5">Paleta:</h4>
               {(colors?.palette || []).map((item) => (
                 <span key={item.color} className={`${colorClassName} relative overflow-hidden`} style={{ backgroundColor: `${colorsByNames[item.name]}`}}>
                   <span className="absolute left-0 top-0 h-full w-1/2 block" style={{ backgroundColor: item.color }}></span>
