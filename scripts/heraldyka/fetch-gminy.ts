@@ -2,7 +2,7 @@ import fs from 'fs';
 import wiki from 'wikipedia';
 import chalk from 'chalk';
 
-import { urls, Administrativedivision } from './constants';
+import { urls, Administrativedivision } from '../../src/pages/heraldyka/constants';
 
 // The gmina is the basic division of the administrative division of Poland, similar to a municipality.
 

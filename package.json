@@ -9,7 +9,6 @@
     "build": "tsc && vite build && tsx scripts/post-build.ts",
     "fetch:gminy": "tsx scripts/heraldyka/fetch-gminy.ts",
     "fetch:coats-of-gminy": "tsx scripts/heraldyka/fetch-coats-of-gminy.ts",
-    "get:coats-colors": "tsx scripts/heraldyka/get-coats-colors.ts",
     "preview": "vite preview",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix"
@@ -58,7 +57,12 @@
       "airbnb-base"
     ],
     "rules": {
-      "react/react-in-jsx-scope": 0
+      "react/react-in-jsx-scope": 0,
+      "indent": ["error", 4, {
+        "ignoredNodes": ["JSXElement *", "JSXElement"],
+        "SwitchCase": 1,
+        "flatTernaryExpressions": true
+      }]
     },
     "parserOptions": {
       "ecmaVersion": 2021
