@@ -2,10 +2,11 @@ svg {
   path {
     fill: #f2f2f2;
     stroke: #d0d0d0;
-    stroke-width: 3px;
+    stroke-width: 1px;
+    transition: 0.3s ease-in-out;
 
     &:hover {
-      fill: red !important;
+      fill: #dddddd !important;
     }
   }
 }
@@ -13,6 +14,8 @@ svg {
 #layer1 path {
   fill: transparent;
   pointer-events: none;
+  stroke: #999;
+  stroke-width: 1px;
 
   &:hover {
     fill: transparent !important;
