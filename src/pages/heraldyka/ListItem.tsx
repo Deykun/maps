@@ -13,7 +13,7 @@ const ListItem = ({ title, imageUrl, colors, place }: AdministrativeUnit) => {
           <div>
             <h3 className="text-[20px] font-[500]">{title}</h3>
             {place?.name && <p className="text-[14px] opacity-70">{place?.name}</p>}
-            <div className="flex items-center gap-2 mt-2 text-[14px]">
+            <div className="flex hidden items-center gap-2 mt-2 text-[14px]">
               <h4>Wiodący:</h4>
               {colors?.primary?.color && <span className={colorClassName} style={{ backgroundColor: `${colors?.primary?.color}` }}></span>}
               <h4 className="ml-5">Paleta:</h4>
