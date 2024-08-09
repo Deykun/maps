@@ -42,7 +42,7 @@ const animalsByName = allUnits.reduce((stack: {
 const animalFilters = Object.entries(animalsByName).map(
   ([value, total]) => ({ value, total }),
 ).filter(
-  ({ total }) => total > 0,
+  ({ total }) => total >= 5,
 ).sort((a, b) => b.total - a.total);
 
 // https://pl.wikipedia.org/wiki/Geografia_Polski
@@ -135,7 +135,10 @@ const Heraldyka = () => {
 
     return (
         <>
-          <h1 className="text-[22px] md:text-[48px] text-center mb-10">Herby polskich miast i gmin</h1>
+          <h1 className="text-[22px] md:text-[48px] text-center mb-4">Herby polskich miast i gmin</h1>
+          <h2 className="text-[18px] text-center mb-6 opacity-70">
+            {animalFilter && <>Powiązane z: {animalFilter}</>}
+          </h2>
           <div className="relative mb-10 max-h-[70vh] aspect-[820_/_775] mx-auto flex justify-center items-center">
             {/* <SvgGmina /> */}
             <SvgPowiaty />
@@ -149,7 +152,7 @@ const Heraldyka = () => {
                     >
                       <img src={unit?.imageUrl}
                         loading="lazy"
-                        className="size-2 sm:size-3 md:size-4 lg:size-5 scale-100 hover:scale-[800%] ease-in duration-100 object-contain"
+                        className={`${unitsWithLocation.length < 25 ? 'size-4 md:size-6 lg:size-8' : 'size-2 sm:size-3 md:size-4 lg:size-5'} scale-100 hover:scale-[800%] ease-in duration-100 object-contain`}
                         title={unit.title}
                       />
                   </span>
@@ -163,17 +166,20 @@ const Heraldyka = () => {
               {' '}
               na mapię <strong>{unitsWithLocation.length}</strong>.
           </p>
-          <h3 className="mb-3">Filtry:</h3>
-          <div className="grid grid-cols-7 mb-5">
-            {animalFilters.map(({ value, total }) => 
-              <button
-                onClick={() => setAnimalFilter(animalFilter === value ? '' : value)}
-                className={animalFilter === value ? 'font-[600]' : ''}
-              >
-                {value} ({total})
-              </button>
-            )}
-          </div>
+          <h3 className="mb-3 text-[24px]">Filtry:</h3>
+          <details className="mb-3">
+            <summary className="w-fit">Zwierzęta</summary>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-7 mb-5">
+              {animalFilters.map(({ value, total }) => 
+                <button
+                  onClick={() => setAnimalFilter(animalFilter === value ? '' : value)}
+                  className={animalFilter === value ? 'font-[800]' : ''}
+                >
+                  {value} <small className="opacity-70 tracking-widest">({total})</small>
+                </button>
+              )}
+            </div>
+          </details>
           <div className="flex items-center gap-5 mb-5">
             {Object.entries(colorsByNames).map(([name, color]) => <button
               key={name}
@@ -184,7 +190,7 @@ const Heraldyka = () => {
               {colorFilters.includes(name) ? 'a' : ''}
             </button>)}
           </div>
-          <ul className="grid md:grid-cols-2 xl:grid-cols-3 gap-5" key={hashKey}>
+          <ul className="mt-10 grid md:grid-cols-2 xl:grid-cols-3 gap-5" key={hashKey}>
             {units.map((unit) => (<ListItem key={unit.title} {...unit} />))}
           </ul>
         </>
