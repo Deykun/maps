@@ -9,6 +9,13 @@ export type AdministrativeUnit = {
     width: number
     height: number
   },
+  place?: {
+    name?: string,
+    coordinates?: {
+      lat?: number,
+      lon?: number,
+    }
+  }
 }
 
 type AdministrativeUnitsGroup = {
