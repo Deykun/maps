@@ -8,7 +8,9 @@
     "start": "vite --port 3001",
     "build": "tsc && vite build && tsx scripts/post-build.ts",
     "fetch:gminy": "tsx scripts/heraldyka/fetch-gminy.ts",
+    "fetch:miasta": "tsx scripts/heraldyka/fetch-miasta.ts",
     "fetch:coats-of-gminy": "tsx scripts/heraldyka/fetch-coats-of-gminy.ts",
+    "fetch:coats-of-miasta": "tsx scripts/heraldyka/fetch-coats-of-miasta.ts",
     "preview": "vite preview",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix"
@@ -70,7 +72,13 @@
           "SwitchCase": 1,
           "flatTernaryExpressions": true
         }
-      ]
+      ],
+      "at-rule-name-space-after": "always-single-line",
+      "at-rule-semicolon-newline-after": "always",
+      "block-closing-brace-empty-line-before": "never",
+      "block-closing-brace-newline-after": "always",
+      "block-closing-brace-newline-before": "always-multi-line",
+      "block-closing-brace-space-before": "always-single-line"
     },
     "parserOptions": {
       "ecmaVersion": 2021
