@@ -45,6 +45,7 @@ export type AdministrativeUnit = {
       lon?: number,
     }
   }
+  animals: string[],
 }
 
 export type AdministrativeUnitsGroup = {
