@@ -73,7 +73,7 @@ const Heraldyka = () => {
     const [colorFilters, setColorFilters] = useState<string[]>([]);
     const [animalFilter, setAnimalFilter] = useState<string>('');
 
-    const { units, unitsWithLocation } = useMemo(() => {
+    const { units, unitsWithLocation, subtitle } = useMemo(() => {
         const filteredUnits = allUnits.filter(
           (unit) => {
             const isActive = colorFilters.length > 0;
@@ -119,6 +119,9 @@ const Heraldyka = () => {
         return {
           units: filteredUnits,
           unitsWithLocation,
+          subtitle: [animalFilter, ...colorFilters].filter(Boolean).map(
+            (name) => name.replace('red', 'czerwony').replace('green', 'zielony').replace('blue', 'niebieski'
+          )).join(' + '),
         }
     }, [colorFilters, animalFilter]);
 
@@ -137,7 +140,7 @@ const Heraldyka = () => {
         <>
           <h1 className="text-[22px] md:text-[48px] text-center mb-4">Herby polskich miast i gmin</h1>
           <h2 className="text-[18px] text-center mb-6 opacity-70">
-            {animalFilter && <>Powiązane z: {animalFilter}</>}
+            {subtitle && <>Powiązane z: {subtitle}</>}
           </h2>
           <div className="relative mb-10 max-h-[70vh] aspect-[820_/_775] mx-auto flex justify-center items-center">
             {/* <SvgGmina /> */}
@@ -167,9 +170,24 @@ const Heraldyka = () => {
               na mapię <strong>{unitsWithLocation.length}</strong>.
           </p>
           <h3 className="mb-3 text-[24px]">Filtry:</h3>
+          <div className="flex items-center gap-5 mb-3">
+            <span>Kolory:</span>
+            {[
+              { name: 'red', color: '#d61e27' },
+              { name: 'green', color: '#299649' },
+              { name: 'blue', color: '#1d7dc0' },
+            ].map(({ name, color }) => <button
+              key={name}
+              style={{ backgroundColor: color }}
+              onClick={() => toggleColor(name)}
+              className="block size-5 rounded-[4px] shadow-md text-white text-[12px]"
+            >
+              {colorFilters.includes(name) ? '✔' : ''}
+            </button>)}
+          </div>
           <details className="mb-3">
             <summary className="w-fit">Zwierzęta</summary>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-7 mb-5">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-7 mt-3">
               {animalFilters.map(({ value, total }) => 
                 <button
                   onClick={() => setAnimalFilter(animalFilter === value ? '' : value)}
@@ -180,16 +198,6 @@ const Heraldyka = () => {
               )}
             </div>
           </details>
-          <div className="flex items-center gap-5 mb-5">
-            {Object.entries(colorsByNames).map(([name, color]) => <button
-              key={name}
-              className="block size-5 rounded-[4px] shadow-md"
-              onClick={() => toggleColor(name)}
-              style={{ backgroundColor: color }}
-            >
-              {colorFilters.includes(name) ? 'a' : ''}
-            </button>)}
-          </div>
           <ul className="mt-10 grid md:grid-cols-2 xl:grid-cols-3 gap-5" key={hashKey}>
             {units.map((unit) => (<ListItem key={unit.title} {...unit} />))}
           </ul>

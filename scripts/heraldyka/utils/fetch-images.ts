@@ -459,7 +459,7 @@ export const fetchImages = async ({
 
               contentToSave[fileName] = {
                   ...unit,
-                  colors: {  
+                  colors: {
                       primary,
                       palette: uniqPalette.filter(({ distance }) => distance < 80),
                   },
@@ -469,15 +469,12 @@ export const fetchImages = async ({
                   }
               }
           } catch {
-              console.log(chalk.red('Missng colors for ', unit.title));
+              console.log(chalk.red('Missing colors for ', unit.title));
           }
       } else {
           console.log('Missng image for ', unit.title)
       }
   }
 
-  // console.log(contentToSave);
-
-  writeFileSync(`./public/data/heraldyka/${path}-images.json`, JSON.stringify(contentToSave, null, 4));
   writeFileSync(`./src/pages/heraldyka/${path}-images.json`, JSON.stringify(contentToSave, null, 4));
 };
