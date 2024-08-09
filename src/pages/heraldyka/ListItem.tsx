@@ -1,5 +1,3 @@
-import SvgGmina from './SvgGmina';
-import SvgPowiaty from './SvgPowiaty';
 import './Heraldyka.scss';
 import { colorsByNames, AdministrativeUnit } from './constants';
 
@@ -8,13 +6,13 @@ const ListItem = ({ title, url, imageUrl, colors, place, markers }: Administrati
     const colorClassName = "block size-5 rounded-[4px] shadow-md";
 
     return (
-        <li className="shadow-md p-5 flex gap-2 items-center">
+        <li className="shadow-md p-5 flex gap-4 items-center">
           {imageUrl && <img src={imageUrl} loading="lazy" className="size-20 object-contain" />}
           <div>
-            <h3 className="text-[20px] font-[500]"><a href={url} target="_blank"> {title}</a></h3>
-            {place?.name && <p className="text-[14px] opacity-70">{place?.name}</p>}
-            {markers?.animals?.length > 0 && <span>{markers?.animals?.join(', ')}</span>}
-            <div className="flex hidden items-center gap-2 mt-2 text-[14px]">
+            <h3 className="text-[16px] font-[500] mb-2"><a href={url} target="_blank"> {title}</a></h3>
+            {place?.name && <p className="text-[14px] opacity-70 mb-2">{place?.name}</p>}
+            {(markers?.animals?.length || 0) > 0 && <span className="text-[12px]">Zwierzęta: {markers?.animals?.join(', ')}</span>}
+            <div className="flex hidden items-center gap-2 text-[14px]">
               <h4>Wiodący:</h4>
               {colors?.primary?.color && <span className={colorClassName} style={{ backgroundColor: `${colors?.primary?.color}` }}></span>}
               <h4 className="ml-5">Paleta:</h4>

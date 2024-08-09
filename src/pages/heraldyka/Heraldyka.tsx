@@ -61,7 +61,7 @@ const Heraldyka = () => {
 
     return (
         <>
-          <h1 className="text-[48px] text-center mb-20">Herby polskich gmin</h1>
+          <h1 className="text-[48px] text-center mb-20">Herby polskich gmin i miast</h1>
           <div className="relative mb-10">
             <SvgGmina />
             {/* <SvgPowiaty /> */}
@@ -84,7 +84,7 @@ const Heraldyka = () => {
                   >
                     <img src={unit?.imageUrl}
                       loading="lazy"
-                      className="size-5 scale-100 hover:scale-[800%] ease-in duration-100 object-contain"
+                      className="size-2 sm:size-3 md:size-4 lg:size-5 scale-100 hover:scale-[800%] ease-in duration-100 object-contain"
                       title={unit.title}
                     />
                 </span>
@@ -120,7 +120,7 @@ const Heraldyka = () => {
               {colorFilters.includes(name) ? 'a' : ''}
             </button>)}
           </div>
-          <ul className="flex flex-col gap-5">
+          <ul className="grid md:grid-cols-2 xl:grid-cols-3 gap-5">
             {units.map((unit) => (<ListItem key={unit.title} {...unit} />))}
           </ul>
         </>

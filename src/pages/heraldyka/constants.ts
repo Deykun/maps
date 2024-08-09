@@ -44,8 +44,10 @@ export type AdministrativeUnit = {
       lat?: number,
       lon?: number,
     }
+  },
+  markers?: {
+    animals?: string[],
   }
-  animals: string[],
 }
 
 export type AdministrativeUnitsGroup = {
