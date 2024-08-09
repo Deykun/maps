@@ -11,10 +11,8 @@ import nearestColor from 'nearest-color';
 
 import { removeDiacratics } from '../../src/utils/text';
 
-
-import { AdministrativeUnit } from './constants';
 import gminyFromJSON from '../../public/data/heraldyka/gminy.json'
-import { colorsByNames } from '../../src/pages/heraldyka/constants';
+import { colorsByNames, AdministrativeUnit } from '../../src/pages/heraldyka/constants';
 
 const gminy = gminyFromJSON as AdministrativeUnit[]
 const total = gminy.length;

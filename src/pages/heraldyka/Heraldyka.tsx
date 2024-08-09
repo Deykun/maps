@@ -1,5 +1,6 @@
 import SvgGmina from './SvgGmina';
 import SvgPowiaty from './SvgPowiaty';
+import ListItem from './ListItem';
 import './Heraldyka.scss';
 import { colorsByNames } from './constants';
 
@@ -17,18 +18,18 @@ const maxLeft = 14.3;
 const maxRight = 22.08;
 
 const getPostionForPlace = (unit) => {
-  const left = `${(unit?.place?.coordinates?.lon - maxLeft) / (maxRight - maxLeft) * 100}%`;
-  const top = `${(unit?.place?.coordinates?.lat - maxTop) / (maxBottom - maxTop) * 100}%`;
+    const left = `${(unit?.place?.coordinates?.lon - maxLeft) / (maxRight - maxLeft) * 100}%`;
+    const top = `${(unit?.place?.coordinates?.lat - maxTop) / (maxBottom - maxTop) * 100}%`;
 
-  return {
-    left,
-    top,
-  }
+    return {
+        left,
+        top,
+    }
 }
 
 const Heraldyka = () => {
-  return (
-      <>
+    return (
+        <>
         <h1 className="text-[48px] text-center mb-20">Herby polskich miast i powiatów</h1>
         <div className="relative">
           <SvgGmina />
@@ -49,27 +50,11 @@ const Heraldyka = () => {
           <img src="images/heraldyka/gminy/herb-gminy-gubin.jpg" loading="lazy" className="size-10 hover:scale-150 object-contain" title="Herb gminy Gubin" />
           </span>
         </div>
-        <ul>
-        {Object.values(gminy).map((unit) => {
-          return (<li key={unit.title} className="">
-            <h3>{unit.title}</h3>
-            <p>{JSON.stringify(unit?.place)}</p>
-            <img src={unit?.imageUrl} loading="lazy" className="size-5 object-contain" />
-
-              <span className="block size-5" style={{ backgroundColor: `${unit?.colors?.primary?.color}` }}>x</span>
-
-              Paleta:
-            <div className="flex gap-5">s
-              <span className="block size-5" style={{ backgroundColor: `${colorsByNames[unit?.colors?.primary?.name]}`}}>?</span>
-              {unit?.colors?.palette?.map(({ color, name } = {}) => (
-                              <span className="block size-5" style={{ backgroundColor: `${colorsByNames[name]}`}}>?</span>
-              ))}
-            </div>
-          </li>)
-          })}
+        <ul className="flex flex-col gap-5">
+          {Object.values(gminy).map((unit) => (<ListItem key={unit.title} {...unit} />))}
         </ul>
-      </>
-  );
+        </>
+    );
 };
 
 export default Heraldyka;

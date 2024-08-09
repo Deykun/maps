@@ -58,7 +58,12 @@
       "airbnb-base"
     ],
     "rules": {
-      "react/react-in-jsx-scope": 0
+      "react/react-in-jsx-scope": 0,
+      "indent": ["error", 4, {
+        "ignoredNodes": ["JSXElement *", "JSXElement"],
+        "SwitchCase": 1,
+        "flatTernaryExpressions": true
+      }]
     },
     "parserOptions": {
       "ecmaVersion": 2021
