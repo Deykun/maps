@@ -14,6 +14,12 @@ export default [
                 SwitchCase: 1,
                 flatTernaryExpressions: true,
             }],
+            "at-rule-name-space-after": "always-single-line",
+            "at-rule-semicolon-newline-after": "always",
+            "block-closing-brace-empty-line-before": "never",
+            "block-closing-brace-newline-after": "always",
+            "block-closing-brace-newline-before": "always-multi-line",
+            "block-closing-brace-space-before": "always-single-line",
         }
     }
 ];

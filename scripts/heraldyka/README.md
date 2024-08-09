@@ -11,7 +11,7 @@ And paste to generate the list for the region:
 document.querySelectorAll('.CategoryTreeToggle:not([aria-expanded="true"])')
 
 title = document.getElementById('firstHeading').innerText.replace('Kategoria:', '').replaceAll('[edytuj]', '');
-group = title.includes('gmin') ? 'gminyByWojewodztwo' : 'powiatyByWojewodztwo';
+group = title.includes('gmin') ? 'gminyByWojewodztwo' : 'miastaByWojewodztwo';
 key = title.split(' ').at(-1).replaceAll(' ', '_');
 
 mapped = {
