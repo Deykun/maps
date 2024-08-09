@@ -2981,10 +2981,7 @@
         },
         "imageUrl": "images/heraldyka/miasta/herb-siechnic.png",
         "markers": {
-            "animals": [
-                "orzeł",
-                "ptak"
-            ]
+            "animals": []
         }
     },
     "herb-sob_otki": {
@@ -3609,10 +3606,7 @@
         },
         "imageUrl": "images/heraldyka/miasta/herb-_swieradowazdroju.png",
         "markers": {
-            "animals": [
-                "orzeł",
-                "ptak"
-            ]
+            "animals": []
         }
     },
     "herb-_swierzawy": {
@@ -3855,11 +3849,7 @@
         },
         "imageUrl": "images/heraldyka/miasta/herb-wa_lbrzycha.png",
         "markers": {
-            "animals": [
-                "orzeł",
-                "ptak",
-                "jeleń"
-            ]
+            "animals": []
         }
     },
     "herb-w_asosza": {
@@ -4612,11 +4602,7 @@
         },
         "imageUrl": "images/heraldyka/miasta/herb-barcina.png",
         "markers": {
-            "animals": [
-                "orzeł",
-                "ptak",
-                "lew"
-            ]
+            "animals": []
         }
     },
     "herb-brodnicy": {
@@ -7885,6 +7871,7 @@
         "imageUrl": "images/heraldyka/miasta/herb-lubartowa.png",
         "markers": {
             "animals": [
+                "lampart",
                 "koń"
             ]
         }
@@ -8503,7 +8490,9 @@
         },
         "imageUrl": "images/heraldyka/miasta/herb-piszczaca.png",
         "markers": {
-            "animals": []
+            "animals": [
+                "ptak"
+            ]
         }
     },
     "herb-poniatowej": {
@@ -14405,10 +14394,7 @@
         },
         "imageUrl": "images/heraldyka/miasta/herb-bobowej.png",
         "markers": {
-            "animals": [
-                "gryf",
-                "lis"
-            ]
+            "animals": []
         }
     },
     "herb-bochni": {
@@ -23951,9 +23937,7 @@
         },
         "imageUrl": "images/heraldyka/miasta/herb-nysy.png",
         "markers": {
-            "animals": [
-                "baran"
-            ]
+            "animals": []
         }
     },
     "herb-opola": {
@@ -26801,7 +26785,8 @@
         "imageUrl": "images/heraldyka/miasta/herb-rudnika-nad-sanem.png",
         "markers": {
             "animals": [
-                "byk/tur/żubr"
+                "byk/tur/żubr",
+                "ryba"
             ]
         }
     },
@@ -33081,9 +33066,7 @@
         },
         "imageUrl": "images/heraldyka/miasta/herb-piekar-_sl_askich.png",
         "markers": {
-            "animals": [
-                "baran"
-            ]
+            "animals": []
         }
     },
     "herb-pilicy": {
@@ -34990,9 +34973,7 @@
         },
         "imageUrl": "images/heraldyka/miasta/herb-j_edrzejowa.png",
         "markers": {
-            "animals": [
-                "gryf"
-            ]
+            "animals": []
         }
     },
     "herb-kazimierzy-wielkiej": {
@@ -46872,9 +46853,7 @@
         },
         "imageUrl": "images/heraldyka/miasta/herb-goleniowa.png",
         "markers": {
-            "animals": [
-                "gryf"
-            ]
+            "animals": []
         }
     },
     "herb-go_scina": {

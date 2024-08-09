@@ -913,10 +913,7 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-gr_ebocice.png",
         "markers": {
-            "animals": [
-                "orzeł",
-                "ptak"
-            ]
+            "animals": []
         }
     },
     "herb-gminy-janowice-wielkie": {
@@ -2111,10 +2108,7 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-malczyce.png",
         "markers": {
-            "animals": [
-                "orzeł",
-                "ptak"
-            ]
+            "animals": []
         }
     },
     "herb-gminy-marcinowice": {
@@ -3242,10 +3236,7 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-radwanice.png",
         "markers": {
-            "animals": [
-                "pelikan",
-                "ptak"
-            ]
+            "animals": []
         }
     },
     "herb-gminy-rudna": {
@@ -3413,10 +3404,7 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-siechnic.png",
         "markers": {
-            "animals": [
-                "orzeł",
-                "ptak"
-            ]
+            "animals": []
         }
     },
     "herb-gminy-siekierczyn": {
@@ -7353,10 +7341,7 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-osie.png",
         "markers": {
-            "animals": [
-                "koń",
-                "wilk"
-            ]
+            "animals": []
         }
     },
     "herb-gminy-osiek-powiat-brodnicki": {
@@ -8571,7 +8556,9 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-unis_law.png",
         "markers": {
-            "animals": []
+            "animals": [
+                "pies"
+            ]
         }
     },
     "herb-gminy-waganiec": {
@@ -9197,9 +9184,7 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-abram_ow.png",
         "markers": {
-            "animals": [
-                "koza"
-            ]
+            "animals": []
         }
     },
     "herb-gminy-adam_ow-powiat-_lukowski": {
@@ -9367,7 +9352,7 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-baran_ow-powiat-pu_lawski.png",
         "markers": {
             "animals": [
-                "baran"
+                "lampart"
             ]
         }
     },
@@ -11211,7 +11196,9 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-janowiec.png",
         "markers": {
-            "animals": []
+            "animals": [
+                "lampart"
+            ]
         }
     },
     "herb-gminy-jan_ow-podlaski": {
@@ -11383,8 +11370,7 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-jastk_ow.png",
         "markers": {
             "animals": [
-                "orzeł",
-                "ptak"
+                "lampart"
             ]
         }
     },
@@ -12716,11 +12702,7 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-_lomazy.png",
         "markers": {
-            "animals": [
-                "orzeł",
-                "ptak",
-                "wilk"
-            ]
+            "animals": []
         }
     },
     "herb-gminy-_lopiennik-g_orny": {
@@ -13715,7 +13697,9 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-ostr_owek-wojew_odztwo-lubelskie.png",
         "markers": {
-            "animals": []
+            "animals": [
+                "lampart"
+            ]
         }
     },
     "herb-piszczaca": {
@@ -13772,7 +13756,9 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-piszczaca.png",
         "markers": {
-            "animals": []
+            "animals": [
+                "ptak"
+            ]
         }
     },
     "herb-gminy-podedw_orze": {
@@ -16406,9 +16392,7 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-werbkowice.png",
         "markers": {
-            "animals": [
-                "ptak"
-            ]
+            "animals": []
         }
     },
     "herb-gminy-wierzbica-powiat-che_lmski": {
@@ -21269,7 +21253,6 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-dru_zbice.png",
         "markers": {
             "animals": [
-                "bocian",
                 "gęś",
                 "ptak"
             ]
@@ -32389,10 +32372,8 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-baranowo.png",
         "markers": {
             "animals": [
-                "orzeł",
                 "jastrząb",
-                "ptak",
-                "baran"
+                "ptak"
             ]
         }
     },
@@ -40078,7 +40059,9 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-siedlce.png",
         "markers": {
-            "animals": []
+            "animals": [
+                "niedźwiedź"
+            ]
         }
     },
     "herb-gminy-siemi_atkowo": {
@@ -42796,7 +42779,9 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-zakrzew-wojew_odztwo-mazowieckie.png",
         "markers": {
-            "animals": []
+            "animals": [
+                "lampart"
+            ]
         }
     },
     "herb-gminy-zar_eby-ko_scielne": {
@@ -42912,10 +42897,7 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-zatory.png",
         "markers": {
-            "animals": [
-                "kogut",
-                "ptak"
-            ]
+            "animals": []
         }
     },
     "herb-gminy-zawidz": {
@@ -43220,9 +43202,7 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-branice.png",
         "markers": {
-            "animals": [
-                "lew"
-            ]
+            "animals": []
         }
     },
     "herb-gminy-chrz_astowice": {
@@ -45584,9 +45564,7 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-chork_owka.png",
         "markers": {
-            "animals": [
-                "bóbr"
-            ]
+            "animals": []
         }
     },
     "herb-gminy-cisna": {
@@ -47916,10 +47894,7 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-markowa.png",
         "markers": {
-            "animals": [
-                "gęś",
-                "ptak"
-            ]
+            "animals": []
         }
     },
     "herb-gminy-medyka": {
@@ -50178,8 +50153,6 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-bia_lowie_za.png",
         "markers": {
             "animals": [
-                "orzeł",
-                "ptak",
                 "byk/tur/żubr"
             ]
         }
@@ -51325,8 +51298,7 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-_lom_za.png",
         "markers": {
             "animals": [
-                "jeleń",
-                "bóbr"
+                "jeleń"
             ]
         }
     },
@@ -52381,9 +52353,7 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-rutki.png",
         "markers": {
-            "animals": [
-                "ptak"
-            ]
+            "animals": []
         }
     },
     "herb-gminy-sejny": {
@@ -53746,7 +53716,9 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-chojnice.png",
         "markers": {
-            "animals": []
+            "animals": [
+                "byk/tur/żubr"
+            ]
         }
     },
     "herb-gminy-czarna-d_abr_owka": {
@@ -54397,6 +54369,7 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-kobylnica.png",
         "markers": {
             "animals": [
+                "ryba",
                 "koń"
             ]
         }
@@ -54867,7 +54840,6 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-ko_scierzyna.png",
         "markers": {
             "animals": [
-                "ryba",
                 "niedźwiedź"
             ]
         }
@@ -55814,8 +55786,7 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-pruszcz-gda_nski.png",
         "markers": {
             "animals": [
-                "gryf",
-                "lew"
+                "gryf"
             ]
         }
     },
@@ -58827,9 +58798,7 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-jan_ow-powiat-cz_estochowski.png",
         "markers": {
-            "animals": [
-                "ptak"
-            ]
+            "animals": []
         }
     },
     "herb-gminy-jaworze": {
@@ -61134,7 +61103,8 @@
         "markers": {
             "animals": [
                 "orzeł",
-                "ptak"
+                "ptak",
+                "pies"
             ]
         }
     },
@@ -62049,9 +62019,7 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-zbros_lawice.png",
         "markers": {
-            "animals": [
-                "wąż"
-            ]
+            "animals": []
         }
     },
     "herb-gminy-zebrzydowice": {
@@ -62235,6 +62203,7 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-bejsce.png",
         "markers": {
             "animals": [
+                "lampart",
                 "jednorożec"
             ]
         }
@@ -62293,9 +62262,7 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-bieliny.png",
         "markers": {
-            "animals": [
-                "dzik"
-            ]
+            "animals": []
         }
     },
     "herb-gminy-bli_zyn": {
@@ -64784,7 +64751,8 @@
         "markers": {
             "animals": [
                 "orzeł",
-                "ptak"
+                "ptak",
+                "koń"
             ]
         }
     },
@@ -67004,9 +66972,7 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-milejewo.png",
         "markers": {
-            "animals": [
-                "lew"
-            ]
+            "animals": []
         }
     },
     "herb-gminy-mi_lki": {
@@ -67573,8 +67539,6 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-srokowo.png",
         "markers": {
             "animals": [
-                "żuraw",
-                "ptak",
                 "bóbr"
             ]
         }
@@ -68253,10 +68217,7 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-brodnica-powiat-_sremski.png",
         "markers": {
-            "animals": [
-                "orzeł",
-                "ptak"
-            ]
+            "animals": []
         }
     },
     "herb-gminy-brudzew": {
@@ -68911,7 +68872,10 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-damas_lawek.png",
         "markers": {
-            "animals": []
+            "animals": [
+                "orzeł",
+                "ptak"
+            ]
         }
     },
     "herb-dobrej-powiat-turecki": {
@@ -73681,7 +73645,9 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-w_ladys_law_ow.png",
         "markers": {
-            "animals": []
+            "animals": [
+                "lew"
+            ]
         }
     },
     "herb-gminy-zakrzewo-powiat-z_lotowski": {
@@ -74150,7 +74116,6 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-bielice.png",
         "markers": {
             "animals": [
-                "gryf",
                 "lis"
             ]
         }
@@ -74871,9 +74836,7 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-ko_lobrzeg.png",
         "markers": {
-            "animals": [
-                "gryf"
-            ]
+            "animals": []
         }
     },
     "herb-gminy-kozielice": {
@@ -75328,10 +75291,7 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-ostrowice.png",
         "markers": {
-            "animals": [
-                "ryba",
-                "koń"
-            ]
+            "animals": []
         }
     },
     "herb-gminy-postomino": {
