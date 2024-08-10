@@ -1,6 +1,8 @@
 import { Route, Switch, useLocation } from "wouter";
 import { Helmet } from 'react-helmet';
 
+import { PATHS_DATA } from '../constants';
+
 import Home from '../pages/Home';
 import Heraldyka from '../pages/heraldyka/Heraldyka';
 import { useMemo } from "react";
@@ -9,7 +11,12 @@ const Routes = () => {
   const [path] = useLocation();
 
   const title = useMemo(() => {
-    // TODO: add custom titles
+    const pathToCompare = path.replace('/maps/', '');
+    const pathData = PATHS_DATA.find(({ path: itemPath }) => pathToCompare === itemPath);
+
+    if (pathData) {
+      return pathData.title;
+    }
 
     return '🗺️ maps';
   }, [path]);

@@ -100,7 +100,7 @@ export const fetchImages = async ({
                   };
               });
 
-              const palette = await ColorThief.getPalette(image, 7).then(palette => palette.map(color => {
+              const palette = await ColorThief.getPalette(image, 3).then(palette => palette.map(color => {
                   const hexColor = rgbToHex(color);
                   const near = getColorName(hexColor);
                   const distance = typeof near === 'string' ? 255 : (near?.distance || 255) as number;
@@ -146,12 +146,12 @@ export const fetchImages = async ({
               if (['Herb gminy Baranowo'].includes(unit.title)) {
                 animals.push('jastrząb')
                 animals.push('ptak');
-              } else if (['Herb Zabłudowa', 'Herb gminy Łomża'].includes(unit.title)) {
+              } else if (['Herb Zabłudowa', 'Herb gminy Łomża', 'Herb Pionek'].includes(unit.title)) {
                 animals.push('jeleń');
               } else if (['Herb Bierunia'].includes(unit.title)) {
                 animals.push('jeleń');
                 animals.push('ptak');
-              } else if (['Herb Gdyni'].includes(unit.title)) {
+              } else if (['Herb Gdyni', 'Herb Rudnika nad Sanem'].includes(unit.title)) {
                 animals.push('ryba');
               } else if (['Herb gminy Srokowo'].includes(unit.title)) {
                 animals.push('bóbr');
@@ -190,7 +190,7 @@ export const fetchImages = async ({
                 animals.push('lis');
                 animals.push('gęś');
                 animals.push('ptak');
-              } else if (['Herb gminy Damasławek', 'Herb Żagania', 'Herb Sułkowic'].includes(unit.title)) {
+              } else if (['Herb gminy Damasławek', 'Herb Żagania', 'Herb Sułkowic', 'Herb Kisielic'].includes(unit.title)) {
                 animals.push('orzeł');
                 animals.push('ptak');
               } else if (['Herb Siedlec', 'Herb Kowar'].includes(unit.title)) {
@@ -269,10 +269,12 @@ export const fetchImages = async ({
                 'Herb gminy Osie',
                 'Herb Bobowej',
                 'Herb gminy Chorkówka',
+                'Herb Cybinki',
+                'Herb Szczekocin',
               ].includes(unit.title)) {
                 // Doesn't have them
               } else {
-                if (['orzeł', 'orła', 'orłem', 'orłów', ' orle '].some((animal) => description.includes(animal))) {
+                if (['orzeł', 'orła', 'orłem', 'orłów', ' orle ', ' orły '].some((animal) => description.includes(animal))) {
                     animals.push('orzeł');
                 }
 
@@ -368,7 +370,7 @@ export const fetchImages = async ({
                     animals.push('lew');
                 }
 
-                if ([' lampart ', 'lamparta', ' lamparcie ', 'lamparcie.', 'lewarta'].some((animal) => description.includes(animal))) {
+                if ([' lampart ', 'lamparta', ' lamparcie ', 'lamparcie.', 'lewart'].some((animal) => description.includes(animal))) {
                     animals.push('lampart');
                 }
 
@@ -384,7 +386,7 @@ export const fetchImages = async ({
                     animals.push('baran');
                 }
 
-                if (['ryba ', ' ryba.', ' ryb ', 'rybogryfa', 'rybopodobne', ' rybo ', ' rybo,', 'rybę', 'ryby', 'rybą', ' karpia ', 'łososia', ' suma ', 'leszcza ', ' leszcze '].some((animal) => description.includes(animal))) {
+                if (['ryba ', ' ryba.', ' ryb ', 'rybogryfa', 'rybopodobne', ' rybo ', ' rybo,', 'rybę', 'ryby', 'rybą', ' karpia ', 'łososia', ' suma ', 'łosoś', 'leszcza ', ' leszcze '].some((animal) => description.includes(animal))) {
                     animals.push('ryba');
                 }
 
@@ -400,7 +402,7 @@ export const fetchImages = async ({
                     animals.push('bóbr');
                 }
 
-                if ([' lis ', ' lisa ', ' lisem '].some((animal) => description.includes(animal))) {
+                if ([' lis ', ' lisa ', ' lisem ', ' lisa,'].some((animal) => description.includes(animal))) {
                     animals.push('lis');
                 }
 
@@ -440,7 +442,7 @@ export const fetchImages = async ({
                     animals.push('amfisbaena');
                 }
 
-                if (['kozła', 'kozę', ' kóz.', ' kozy,', 'kozłów'].some((animal) => description.includes(animal))) {
+                if (['kozła', 'kozę', ' kóz.', ' kozy,', 'kozłów', 'koziołki'].some((animal) => description.includes(animal))) {
                     animals.push('koza');
                 }
 
@@ -459,7 +461,7 @@ export const fetchImages = async ({
 
               const items: string[] = [];
 
-              if (['podkowa', 'podkowę'].some((item) => description.includes(item))) {
+              if (['podkowa', 'podkowę', ' podkowie'].some((item) => description.includes(item))) {
                 if (![
                   'Herb Bobowej'
                 ].includes(unit.title)) {
@@ -480,12 +482,14 @@ export const fetchImages = async ({
                   'Herb Kluczborka',
                   'Herb Ślesina',
                   'Herb Człopy',
+                  'Herb Mogilna',
+                  'Herb Kłecka',
                 ].includes(unit.title)) {
                   items.push('klucz');
                 }
               }
 
-              if (['miecz'].some((item) => description.includes(item))) {
+              if (['miecz', ' nóż '].some((item) => description.includes(item))) {
                 if (![
                   'Herb Siechnic',
                   'Herb gminy Golub-Dobrzyń',
@@ -505,6 +509,7 @@ export const fetchImages = async ({
                   'Herb Rzeszowa',
                   'Herb Pszczyny',
                   'Herb Sandomierza',
+                  'Herb Mogilna',
                 ].includes(unit.title)) {
                   items.push('miecz');
                 }
@@ -520,7 +525,23 @@ export const fetchImages = async ({
                 }
               }
 
-              if (['topór', 'toporami', 'toporem', 'toporek', ' młot', 'herb górniczy'].some((item) => description.includes(item))) {
+              if ([' kłos', ' kłosem'].some((item) => description.includes(item))) {
+                if (![
+                  'Herb gminy Gaworzyce',
+                  'Herb gminy Kondratowice',
+                  'Herb gminy Łagiewniki',
+                  'Herb gminy Deszczno',
+                  'Herb gminy Regimin',
+                  'Herb gminy Czarna Dąbrówka',
+                  'Herb gminy Koszęcin',
+                  'Herb Człuchowa',
+                  'Herb Olsztyna',
+                ].includes(unit.title)) {
+                  items.push('kłos');
+                }
+              }
+
+              if (['topór', 'toporami', 'toporem', ' tasaki', 'toporek', 'topory', ' siekierę', ' siekiery', ' siekiera', 'młot', 'herb górniczy', ' oskard', ' kilof'].some((item) => description.includes(item))) {
                 if (![
                   'Herb Zaklikowa',
                   'Herb Iwanisk',
@@ -528,34 +549,93 @@ export const fetchImages = async ({
                   'Herb Szubina',
                   'Herb Głowna',
                   'Herb Sułkowic',
+                  'Herb Świątnik Górnych',
                 ].includes(unit.title)) {
-                  items.push('topór/młot');
+                  items.push('topór/młot/kilof');
                 }
               }
 
-              if (['drzewo', ' drzew', 'drzewa', 'dąb', ' dębu', ' jodła'].some((item) => description.includes(item))) {
+              if (['drzewo', ' drzew', 'drzewa', 'dąb', ' dębu', ' jodła', ' jodły', ' świerk'].some((item) => description.includes(item))) {
                 if (![
                   'Herb Węgorzyna',
                   'Herb Bobowej',
                   'Herb Opatówka',
+                  'Herb gminy Wizna',
+                  'Herb Głuska',
+                  'Herb gminy Białowieża',
+                  'Herb Drzewicy',
+                  'Herb gminy Malczyce',
+                  'Herb gminy Czerwonka',
+                  'Herb gminy Stryszawa',
+                  'Herb Latowicza',
+                  'Herb Nowego Miasta (powiat płoński)',
+                  'Herb Koprzywnicy',
+                  'Herb Latowicza',
+                  'Herb Rychtala',
+                  'Herb gminy Płoniawy-Bramura',
+                  'Herb gminy Rybno (województwo mazowieckie)',
+                  'Herb gminy Bukowsko',
+                  'Herb Rychtala',
+                  'Herb gminy Frysztak',
+                  'Herb gminy Jarosław',
+                  'Herb gminy Łomża',
+                  'Herb gminy Ujsoły',
+                  'Herb gminy Dąbrówno',
+                  'Herb Sulęcina',
+                  'Herb Cybinki',
+                  'Herb Lubniewic',
+                  'Herb Dąbrowic',
+                  'Herb Dąbrowy Tarnowskiej',
+                  'Herb Kalwarii Zebrzydowskiej',
+                  'Herb Sulejówka',
+                  'Herb Siedlec',
+                  'Herb Pułtuska',
+                  'Herb Tłuszcza',
+                  'Herb Wołomina',
+                  'Herb Zakroczymia',
+                  'Herb Nowej Sarzyny',
+                  'Herb Rudnika nad Sanem',
+                  'Herb Częstochowy',
+                  'Herb Piekar Śląskich',
+                  'Herb Kisielic',
+                  'Herb Mrągowa',
+                  'Herb Rydzyny',
+                  'Herb Bobolic',
+                  'Herb Goleniowa',
                 ].includes(unit.title)) {
                   items.push('drzewo');
                 }
               }
 
-              const lilia = [' lilie', ' lilia'];
+              const lilia = [' lilie', ' lilia', ' lilię', ' lilii '];
+              const liliaFilter = [
+                'Herb Birczy',
+                'Herb Starogardu Gdańskiego',
+              ];
 
               if ([' lilie', ' lilia'].some((item) => description.includes(item))) {
-                if (![
-                  'Herb Birczy',
-                  'Herb Starogardu Gdańskiego',
-                ].includes(unit.title)) {
+                if (!liliaFilter.includes(unit.title)) {
                   items.push('lilia');
                 }
               }
 
-              if (['róża ', 'kwiat', ...lilia].some((item) => description.includes(item))) {
+              const roza = [' róża ', ' róż ', ' róże ', ' różę '];
+              const rozaFilter = [
+                'Herb Łabiszyna',
+                'Herb Starogardu Gdańskiego',
+                'Herb Elbląga',
+              ];
+
+              if (roza.some((item) => description.includes(item))) {
+                if (!rozaFilter.includes(unit.title)) {
+                  items.push('róża');
+                }
+              }
+
+              if (['kwiat', ...roza, ...lilia].some((item) => description.includes(item))) {
                 if (![
+                  ...liliaFilter,
+                  ...rozaFilter,
                   'Herb gminy Bytoń',
                   'Herb gminy Wodzierady',
                   'Herb gminy Krościenko nad Dunajcem',
@@ -575,7 +655,7 @@ export const fetchImages = async ({
                 }
               }
 
-              if (['wieża', ' wieże', ' wieżę', ' wieżą', ' muru ', ' mur ', 'baszt'].some((item) => description.includes(item))) {
+              if (['wieża', ' wieże', ' wieżę', ' wieżą', ' wieży ', ' muru ', ' mur ', 'baszt', ' bramę ', 'bramę.', ' bramą.', 'bramą,', ' bramną '].some((item) => description.includes(item))) {
                 if (![
                   'Herb gminy Gaworzyce',
                   'Herb Oleśnicy',
@@ -600,8 +680,9 @@ export const fetchImages = async ({
                   'Herb Aleksandrowa Łódzkiego',
                   'Herb Staszowa',
                   'Herb Nysy',
+                  'Herb Olsztyna',
                 ].includes(unit.title)) {
-                  items.push('wieża');
+                  items.push('wieża/mury');
                 }
               }
 
@@ -614,8 +695,188 @@ export const fetchImages = async ({
                   'Herb Gdańska',
                   'Herb Czempinia',
                   'Herb Goleniowa',
+                  'Herb Świątnik Górnych',
+                  'Herb Pucka',
+                  'Herb Staszowa',
+                  'Herb Mikołajek',
+                  'Herb Środy Wielkopolskiej',
                 ].includes(unit.title)) {
                   items.push('łódź');
+                }
+              }
+
+              if ([' korona', ' koronę', ' koroną', ' korony ', ' korony', 'herb opola'].some((item) => description.includes(item))) {
+                if (![
+                  'Herb gminy Krasocin',
+                  'Herb Jaworzyny Śląskiej',
+                  'Herb Brodnicy',
+                  'Herb Lubrańca',
+                  'Herb Siedliszcza',
+                  'Herb Wschowy',
+                  'Herb Olkusza',
+                  'Herb Konstancina-Jeziorny',
+                  'Herb Cieszanowa',
+                  'Herb Dębicy',
+                  'Herb Jedlicza',
+                  'Herb Leska',
+                  'Herb Mielca',
+                  'Herb Tykocina',
+                  'Herb Gdyni',
+                  'Herb Bielska-Białej',
+                  'Herb Pszczyny',
+                  'Herb Sosnowca',
+                  'Herb Żywca',
+                  'Herb Nidzicy',
+                  'Herb gminy Długołęka',
+                  'Herb gminy Głowno',
+                  'Herb gminy Bralin',
+                  'Herb Kowar',
+                  'Herb Legnicy',
+                  'Herb Polkowic',
+                  'Herb Wlenia',
+                  'Herb Lipna',
+                  'Herb Rypina',
+                  'Herb Tyszowiec',
+                  'Herb Żagania',
+                  'Herb Błaszek',
+                  'Herb Piotrkowa Trybunalskiego',
+                  'Herb Piwnicznej-Zdroju',
+                  'Herb Garwolina',
+                  'Herb Siedlec',
+                  'Herb Sierpca',
+                  'Herb Kolonowskiego',
+                  'Herb Imielina',
+                  'Herb Jaworzna',
+                  'Herb Myszkowa',
+                  'Herb Nowego Korczyna',
+                  'Herb Osieka',
+                  'Herb Korsz',
+                  'Herb Ostródy',
+                  'Herb Bojanowa',
+                  'Herb Kłecka',
+                  'Herb Koźmina Wielkopolskiego',
+                  'Herb Pobiedzisk',
+                  'Herb Lipian',
+                  'Herb Drawska Pomorskiego',
+                  'Herb Świnoujścia',
+                  'Herb Węgorzyna',
+                ].includes(unit.title)) {
+                  items.push('korona');
+                }
+              }
+
+              if ([' święty', ' świetego', ' św.', ' święta ', ' świętą ', 'matki bożej', ' floriana', 'jana chrciciela', 'matki boskiej', ' madonnę', 'chrystus'].some((item) => description.includes(item))) {
+                if (![
+                  'Herb gminy Sadki',
+                  'Herb gminy Leśna Podlaska',
+                  'Herb gminy Uścimów',
+                  'Herb gminy Szczerców',
+                  'Herb gminy Trzciana',
+                  'Herb gminy Hyżne',
+                  'Herb gminy Perlejewo',
+                  'Herb gminy Somonino',
+                  'Herb gminy Bieliny',
+                  'Herb Nowej Słupi',
+                  'Herb gminy Świętajno (powiat szczycieński)',
+                  'Herb Dąbrowy Tarnowskiej',
+                  'Herb Nysy',
+                  'Herb Czyżewa',
+                  'Herb Tczewa',
+                  'Herb Nowej Słupi',
+                  'Herb Koszalina',
+                  'Herb gminy Grębocice',
+                  'Herb Siechnic',
+                  'Herb gminy Zgorzelec',
+                  'Herb gminy Choceń',
+                  'Herb gminy Chrostkowo',
+                  'Herb gminy Waganiec',
+                  'Herb gminy Miączyn',
+                  'Herb gminy Michów',
+                  'Herb gminy Nielisz',
+                  'Herb gminy Nowodwór',
+                  'Herb gminy Puławy',
+                  'Herb gminy Aleksandrów (województwo łódzkie)',
+                  'Herb gminy Burzenin',
+                  'Herb gminy Gorzkowice',
+                  'Herb gminy Zduńska Wola',
+                  'Herb gminy Ręczno',
+                  'Herb gminy Wodzierady',
+                  'Herb gminy Gromnik',
+                  'Herb gminy Liszki',
+                  'Herb gminy Łososina Dolna',
+                  'Herb gminy Łużna',
+                  'Herb gminy Moszczenica (województwo małopolskie)',
+                  'Herb gminy Żegocina',
+                  'Herb gminy Czerwonka',
+                  'Herb Jaraczewa',
+                  'Herb gminy Radziejowice',
+                  'Herb gminy Pionki',
+                  'Herb gminy Rusinów',
+                  'Herb gminy Rybno (województwo mazowieckie)',
+                  'Herb gminy Teresin',
+                  'Herb Jaraczewa',
+                  'Herb gminy Rzekuń',
+                  'Herb gminy Stromiec',
+                  'Herb gminy Czermin (województwo podkarpackie)',
+                  'Herb gminy Domaradz',
+                  'Herb gminy Grębów',
+                  'Herb gminy Skołyszyn',
+                  'Herb gminy Łomża',
+                  'Herb gminy Poświętne (powiat białostocki)',
+                  'Herb gminy Rutki',
+                  'Herb gminy Stary Targ',
+                  'Herb gminy Zblewo',
+                  'Herb gminy Dąbrowa Zielona',
+                  'Herb gminy Mykanów',
+                  'Herb gminy Przystajń',
+                  'Herb gminy Rędziny',
+                  'Herb gminy Górno',
+                  'Herb gminy Mniów',
+                  'Herb gminy Sobków',
+                  'Herb gminy Wilczyce',
+                  'Herb gminy Biskupiec (powiat nowomiejski)',
+                  'Herb gminy Rychliki',
+                  'Herb gminy Kamieniec',
+                  'Herb gminy Karnice',
+                  'Herb gminy Świerzno',
+                  'Herb Bierutowa',
+                  'Herb Legnicy',
+                  'Herb Barcina',
+                  'Herb Mogilna',
+                  'Herb Biłgoraja',
+                  'Herb Stoczka Łukowskiego',
+                  'Herb Babimostu',
+                  'Herb Opoczna',
+                  'Herb Nowego Wiśnicza',
+                  'Herb Radłowa',
+                  'Herb Ryglic',
+                  'Herb Skawiny',
+                  'Herb Świątnik Górnych',
+                  'Herb Góry Kalwarii',
+                  'Herb Kobyłki',
+                  'Herb Łaskarzewa',
+                  'Herb Tarczyna',
+                  'Herb Namysłowa',
+                  'Herb Opola',
+                  'Herb Paczkowa',
+                  'Herb Prudnika',
+                  'Herb Jedlicza',
+                  'Herb Suchowoli',
+                  'Herb Bielska-Białej',
+                  'Herb Lędzin',
+                  'Herb Sławkowa',
+                  'Herb Świętochłowic',
+                  'Herb Toszka',
+                  'Herb Buska-Zdroju',
+                  'Herb Stopnicy',
+                  'Herb Kisielic',
+                  'Herb Pieniężna',
+                  'Herb Koźmina Wielkopolskiego',
+                  'Herb Słupcy',
+                  'Herb Śremu',
+                  'Herb Trzebiatowa',
+                ].includes(unit.title)) {
+                  items.push('postać świętego');
                 }
               }
 

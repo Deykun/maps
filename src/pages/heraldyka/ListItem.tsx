@@ -9,7 +9,7 @@ const ListItem = ({ title, url, imageUrl, colors, place, markers }: Administrati
           {imageUrl && <img src={imageUrl} loading="lazy" className="size-20 object-contain" />}
           <div>
             <h3 className="text-[16px] font-[500] mb-2"><a href={url} target="_blank" title="Otwórz Wikipedię w nowej karcie">{title}</a></h3>
-            {place?.name && <p className="text-[14px] opacity-70 mb-2">{place?.name}</p>}
+            {place?.name && <p className="text-[14px] text-[#4b4b4b] mb-2">{place?.name}</p>}
             {(markers?.animals?.length || 0) > 0 && <p className="text-[12px]">Zwierzęta: {markers?.animals?.join(', ')}</p>}
             {(markers?.items?.length || 0) > 0 && <p className="text-[12px]">Cechy: {markers?.items?.join(', ')}</p>}
             <div className="flex hidden items-center gap-2 text-[14px]">
