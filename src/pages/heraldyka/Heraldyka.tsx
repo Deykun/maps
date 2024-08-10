@@ -23,10 +23,16 @@ const allUnits: AdministrativeUnit[] = Object.values([...gminy, ...miasta].filte
     'Herb Nowego Bytomia',
     'Herb gminy Brudzew',
     'Herb gminy Ostrowice',
+    'Herby miast Śląska Cieszyńskiego',
   ].includes(unit.title)) {
     // Historic
     return false;
   };
+
+  if (['Herb Trzyńca'].includes(unit.title)) {
+    // Outside of Poland
+    return false;
+  }
 
   return true;
 }).reduce((stack: {
@@ -269,11 +275,8 @@ const Heraldyka = () => {
               Na podstawie scrapingu artykułów z <strong className="text-black">Wikipedii</strong>.
             </p>
             <p className="text-[12px] text-[#4b4b4b]">
-              Zaindeksowanych <strong className="text-black">{allUnits.length}</strong>
-              {' '}
-              {allUnits.length > units.length && <>po odfiltrowaniu <strong className="text-black">{units.length}</strong></>}
-              {' '}
-              na mapię <strong className="text-black">{unitsWithLocation.length}</strong>.
+              Wszystkich herbów <strong className="text-black">{allUnits.length}</strong>
+              {allUnits.length > units.length && <>, a po odfiltrowaniu <strong className="text-black">{units.length}</strong></>}
             </p>
           </div>
           <div className="flex items-center mb-3">

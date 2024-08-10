@@ -2993,7 +2993,9 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-bobrownik.png",
         "markers": {
-            "animals": [],
+            "animals": [
+                "byk/tur/żubr"
+            ],
             "items": [
                 "łódź"
             ]
@@ -6405,7 +6407,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-czemiernik.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-gminy-d_ebowa-k_loda": {
@@ -6713,7 +6717,9 @@
             "animals": [
                 "niedźwiedź"
             ],
-            "items": []
+            "items": [
+                "wieża/mury"
+            ]
         }
     },
     "herb-gminy-firlej": {
@@ -8319,7 +8325,8 @@
             "animals": [],
             "items": [
                 "lilia",
-                "kwiat"
+                "kwiat",
+                "postać świętego"
             ]
         }
     },
@@ -9749,6 +9756,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "miecz",
                 "drzewo"
             ]
         }
@@ -10801,7 +10809,9 @@
             "animals": [
                 "wilk"
             ],
-            "items": []
+            "items": [
+                "drzewo"
+            ]
         }
     },
     "herb-gminy-wilk_ow-wojew_odztwo-lubelskie": {
@@ -13079,7 +13089,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-bia_la-wojew_odztwo-_l_odzkie.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "miecz"
+            ]
         }
     },
     "herb-bia_laczowa": {
@@ -16025,7 +16037,8 @@
             "animals": [],
             "items": [
                 "lilia",
-                "kwiat"
+                "kwiat",
+                "postać świętego"
             ]
         }
     },
@@ -19726,7 +19739,9 @@
             "animals": [
                 "gryf"
             ],
-            "items": []
+            "items": [
+                "miecz"
+            ]
         }
     },
     "herb-gminy-polanka-wielka": {
@@ -21083,7 +21098,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-zembrzyce.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "drzewo"
+            ]
         }
     },
     "herb-gminy-zielonki": {
@@ -22139,6 +22156,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "wieża/mury",
                 "korona"
             ]
         }
@@ -22386,7 +22404,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gielniowa.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-glinojecka": {
@@ -23408,6 +23428,7 @@
             "items": [
                 "podkowa",
                 "drzewo",
+                "wieża/mury",
                 "korona"
             ]
         }
@@ -28624,7 +28645,8 @@
                 "ptak"
             ],
             "items": [
-                "drzewo"
+                "drzewo",
+                "wieża/mury"
             ]
         }
     },
@@ -29186,7 +29208,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "wieża/mury"
+            ]
         }
     },
     "herb-gminy-rudniki": {
@@ -31038,6 +31062,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "miecz",
                 "kwiat"
             ]
         }
@@ -35336,7 +35361,9 @@
             "animals": [
                 "koń"
             ],
-            "items": []
+            "items": [
+                "miecz"
+            ]
         }
     },
     "herb-gminy-gardeja": {
@@ -38361,7 +38388,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "podkowa"
+                "podkowa",
+                "korona"
             ]
         }
     },
@@ -45580,7 +45608,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "kłos"
+                "kłos",
+                "wieża/mury"
             ]
         }
     },
@@ -46094,7 +46123,8 @@
             "animals": [],
             "items": [
                 "lilia",
-                "kwiat"
+                "kwiat",
+                "postać świętego"
             ]
         }
     },
@@ -48893,7 +48923,8 @@
                 "ptak"
             ],
             "items": [
-                "strzała"
+                "strzała",
+                "drzewo"
             ]
         }
     },
