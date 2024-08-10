@@ -52,9 +52,9 @@ const getFilter = (units: AdministrativeUnit[], name: 'animals' | 'items') => {
   ).sort((a, b) => b.total - a.total);
 }
 
-const animalFilters = getFilter(allUnits, 'animals');
+const animalFiltersList = getFilter(allUnits, 'animals');
 
-const itemsFilters = getFilter(allUnits, 'items');
+const itemsFiltersList = getFilter(allUnits, 'items');
 
 // https://pl.wikipedia.org/wiki/Geografia_Polski
 
@@ -82,10 +82,10 @@ const getPostionForPlace = (unit: AdministrativeUnit) => {
 
 const Heraldyka = () => {
     const [colorFilters, setColorFilters] = useState<string[]>([]);
-    const [animalFilter, setAnimalFilter] = useState<string>('');
-    const [itemFilter, setItemFilter] = useState<string>('');
+    const [animalFilters, setAnimalFilters] = useState<string[]>([]);
+    const [itemFilters, setItemFilters] = useState<string[]>([]);
 
-    const { units, unitsWITH_ANIMALLocation, subtitle } = useMemo(() => {
+    const { units, unitsWithLocation, subtitle } = useMemo(() => {
         const filteredUnits = allUnits.filter(
           (unit) => {
             const isActive = colorFilters.length > 0;
@@ -107,83 +107,121 @@ const Heraldyka = () => {
           }
         ).filter(
           (unit) => {
-            const isActive = animalFilter !== '';
+            const isActive = animalFilters.length > 0;
             if (!isActive) {
               return true;
             }
 
-            if (animalFilter === WITH_ANIMAL) {
-              return Array.isArray(unit?.markers?.animals) && unit.markers.animals.length > 0;
+            const animals = unit?.markers?.animals || [];
+            const hasAnimals = animals.length > 0;
+
+            if (animalFilters[0] === WITH_ANIMAL) {
+              return hasAnimals;
             }
 
-            if (animalFilter === WITHOUT_ANIMAL) {
-              return !Array.isArray(unit?.markers?.animals) || unit?.markers?.animals?.length === 0;
+            if (animalFilters[0] === WITHOUT_ANIMAL) {
+              return !hasAnimals;
             }
 
-            const hasAnimal = Array.isArray(unit?.markers?.animals)
-              && unit.markers.animals.length > 0
-              && unit.markers.animals.includes(animalFilter);
-
-            if (hasAnimal) {
-              return true;
+            if (!hasAnimals) {
+              return false;
             }
 
-            return false;
+            const hasAllAnimals = animalFilters.every((active) => animals.includes(active))
+
+            return hasAllAnimals;
           }
         ).filter(
           (unit) => {
-            const isActive = itemFilter !== '';
+            const isActive = itemFilters.length > 0;
             if (!isActive) {
               return true;
             }
 
-            const hasItem = Array.isArray(unit?.markers?.items)
-              && unit.markers.items.length > 0
-              && unit.markers.items.includes(itemFilter);
+            const items = unit?.markers?.items || [];
+            const hasItems = items.length > 0;
 
-            if (hasItem) {
-              return true;
+            if (!hasItems) {
+              return false;
             }
 
-            return false;
+            const hasAllItems = itemFilters.every((active) => items.includes(active))
+
+            return hasAllItems;
           }
         );
 
-        const unitsWITH_ANIMALLocation = filteredUnits.filter(
+        const unitsWithLocation = filteredUnits.filter(
           (unit) => typeof unit?.place?.coordinates?.lon === 'number',
         );
 
         return {
           units: filteredUnits,
-          unitsWITH_ANIMALLocation,
-          subtitle: [itemFilter, animalFilter, ...colorFilters].filter(Boolean).map(
+          unitsWithLocation,
+          subtitle: [...itemFilters, ...animalFilters, ...colorFilters].filter(Boolean).map(
             (name) => name.replace('red', 'czerwony').replace('green', 'zielony').replace('blue', 'niebieski'
           )).join(' + '),
         }
-    }, [colorFilters, animalFilter, itemFilter]);
+    }, [colorFilters, animalFilters, itemFilters]);
 
     const toggleColor = useCallback((color: string) => {
-        if (colorFilters.includes(color)) {
-            setColorFilters(colorFilters.filter((filterColor) => filterColor !== color));
-        } else {
-            setColorFilters([...colorFilters, color]);
+      setColorFilters((colors) => {
+        if (colors.includes(color)) {
+          return colors.filter((active) => active !== color);
         }
-    }, [colorFilters]);
 
-    // We have 2000 nodes and Reacts sometimes doesn't remove them, this force rerender of the parent
-    const hashKey = `hash-${animalFilter}-${colorFilters.join('-')}-${itemFilter}`;
+        return [...colors, color];
+      });
+    }, []);
+
+    const toggleAnimal = useCallback((animal: string) => {
+      if ([WITHOUT_ANIMAL, WITHOUT_ANIMAL].includes(animal)) {
+        setAnimalFilters([animal]);
+
+        return;
+      }
+
+      setAnimalFilters((animals) => {
+        if (animals.includes(animal)) {
+          return animals.filter((active) => active !== animal);
+        }
+
+        return [...animals, animal].filter((active) => ![WITHOUT_ANIMAL, WITHOUT_ANIMAL].includes(active));
+      });
+    }, []);
+
+    const toggleItem = useCallback((item: string) => {
+      setItemFilters((items) => {
+        if (items.includes(item)) {
+          return items.filter((active) => active !== item);
+        }
+
+        return [...items, item];
+      });
+    }, []);
+
+    const hasFilters = colorFilters.length > 0 || animalFilters.length > 0 || itemFilters.length > 0;
+
+    const resetFilters = () => {
+      setColorFilters([]);
+      setAnimalFilters([]);
+      setItemFilters([]);
+    }
+
+    // We have 2000 nodes and React sometimes doesn't remove them :D, this force rerender of the parent
+    const hashKey = `hash-${animalFilters}-${colorFilters.join('-')}-${itemFilters}`;
 
     return (
         <>
           <h1 className="text-[22px] md:text-[48px] text-center mb-4">Herby polskich miast i gmin</h1>
-          <h2 className="text-[18px] text-center mb-6 opacity-70">
-            {subtitle && <>Dopasowanie: {subtitle}</>}
+          <h2 className="text-[18px] text-center mb-6">
+            {subtitle && <span className="opacity-70">Dopasowanie: {subtitle}</span>}
           </h2>
           <div className="relative mb-10 max-h-[70vh] aspect-[820_/_775] mx-auto flex justify-center items-center">
             {/* <SvgGmina /> */}
             <SvgPowiaty />
             <div key={hashKey}>
-              {unitsWITH_ANIMALLocation.map(
+              {unitsWithLocation.map(
                   (unit) => (
                     <span
                       key={`${unit.title}-${unit?.place?.coordinates?.lon}`}
@@ -192,7 +230,7 @@ const Heraldyka = () => {
                     >
                       <img src={unit?.imageUrl}
                         loading="lazy"
-                        className={`${unitsWITH_ANIMALLocation.length < 25 ? 'size-4 md:size-6 lg:size-8' : 'size-2 sm:size-3 md:size-4 lg:size-5'} scale-100 hover:scale-[800%] ease-in duration-100 object-contain`}
+                        className={`${unitsWithLocation.length < 25 ? 'size-4 md:size-6 lg:size-8' : 'size-2 sm:size-3 md:size-4 lg:size-5'} scale-100 hover:scale-[800%] ease-in duration-100 object-contain`}
                         title={unit.title}
                       />
                   </span>
@@ -202,11 +240,17 @@ const Heraldyka = () => {
           <p className="mb-5 text-right text-[12px] opacity-70">
               Zaindeksowanych <strong>{allUnits.length}</strong>
               {' '}
-              po odfiltrowaniu <strong>{units.length}</strong>
+              {allUnits.length > units.length && <>po odfiltrowaniu <strong>{units.length}</strong></>}
               {' '}
-              na mapię <strong>{unitsWITH_ANIMALLocation.length}</strong>.
+              na mapię <strong>{unitsWithLocation.length}</strong>.
           </p>
-          <h3 className="mb-3 text-[24px]">Filtry:</h3>
+          <div className="flex items-center mb-3">
+            <h3 className="inline text-[24px]">Filtry</h3>
+            <span className="ml-auto">
+              {units.length === 0 && <span className="mr-2 text-[red] text-[12px]">(brak wyników)</span>}
+              {hasFilters && <button className="ml-auto" onClick={resetFilters}>wyczyść</button>}
+            </span>
+          </div>
           <div className="flex items-center gap-5 mb-3">
             <span className="flex items-center gap-5">
               Kolory:
@@ -230,10 +274,10 @@ const Heraldyka = () => {
               {[
                 { value: WITH_ANIMAL, total: 0 },
                 { value: WITHOUT_ANIMAL, total: 0 },
-              ...animalFilters].map(({ value, total }) => 
+              ...animalFiltersList].map(({ value, total }) => 
                 <button
-                  onClick={() => setAnimalFilter(animalFilter === value ? '' : value)}
-                  className={animalFilter === value ? 'font-[800]' : ''}
+                  onClick={() => toggleAnimal(value)}
+                  className={animalFilters.includes(value) ? 'font-[800]' : ''}
                 >
                   {value} {total > 0 && <small className="opacity-70 tracking-widest">({total})</small>}
                 </button>
@@ -243,10 +287,10 @@ const Heraldyka = () => {
           <details className="mb-3">
             <summary className="w-fit">Cechy</summary>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-7 mt-3">
-              {itemsFilters.map(({ value, total }) => 
+              {itemsFiltersList.map(({ value, total }) => 
                 <button
-                  onClick={() => setItemFilter(itemFilter === value ? '' : value)}
-                  className={itemFilter === value ? 'font-[800]' : ''}
+                  onClick={() => toggleItem(value)}
+                  className={itemFilters.includes(value) ? 'font-[800]' : ''}
                 >
                   {value} <small className="opacity-70 tracking-widest">({total})</small>
                 </button>

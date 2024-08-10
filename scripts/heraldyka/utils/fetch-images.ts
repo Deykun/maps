@@ -100,7 +100,7 @@ export const fetchImages = async ({
                   };
               });
 
-              const palette = await ColorThief.getPalette(image, 7).then(palette => palette.map(color => {
+              const palette = await ColorThief.getPalette(image, 3).then(palette => palette.map(color => {
                   const hexColor = rgbToHex(color);
                   const near = getColorName(hexColor);
                   const distance = typeof near === 'string' ? 255 : (near?.distance || 255) as number;
@@ -384,7 +384,7 @@ export const fetchImages = async ({
                     animals.push('baran');
                 }
 
-                if (['ryba ', ' ryba.', ' ryb ', 'rybogryfa', 'rybopodobne', ' rybo ', ' rybo,', 'rybę', 'ryby', 'rybą', ' karpia ', 'łososia', ' suma ', 'leszcza ', ' leszcze '].some((animal) => description.includes(animal))) {
+                if (['ryba ', ' ryba.', ' ryb ', 'rybogryfa', 'rybopodobne', ' rybo ', ' rybo,', 'rybę', 'ryby', 'rybą', ' karpia ', 'łososia', ' suma ', 'łosoś', 'leszcza ', ' leszcze '].some((animal) => description.includes(animal))) {
                     animals.push('ryba');
                 }
 
@@ -459,7 +459,7 @@ export const fetchImages = async ({
 
               const items: string[] = [];
 
-              if (['podkowa', 'podkowę'].some((item) => description.includes(item))) {
+              if (['podkowa', 'podkowę', ' podkowie'].some((item) => description.includes(item))) {
                 if (![
                   'Herb Bobowej'
                 ].includes(unit.title)) {
@@ -522,7 +522,7 @@ export const fetchImages = async ({
                 }
               }
 
-              if (['topór', 'toporami', 'toporem', 'toporek', 'topory', 'młot', 'herb górniczy'].some((item) => description.includes(item))) {
+              if (['topór', 'toporami', 'toporem', 'toporek', 'topory', ' siekiery', ' siekiera', 'młot', 'herb górniczy'].some((item) => description.includes(item))) {
                 if (![
                   'Herb Zaklikowa',
                   'Herb Iwanisk',
@@ -547,18 +547,34 @@ export const fetchImages = async ({
               }
 
               const lilia = [' lilie', ' lilia'];
+              const liliaFilter = [
+                'Herb Birczy',
+                'Herb Starogardu Gdańskiego',
+              ];
 
               if ([' lilie', ' lilia'].some((item) => description.includes(item))) {
-                if (![
-                  'Herb Birczy',
-                  'Herb Starogardu Gdańskiego',
-                ].includes(unit.title)) {
+                if (!liliaFilter.includes(unit.title)) {
                   items.push('lilia');
                 }
               }
 
-              if (['róża ', ' róż ', 'kwiat', ...lilia].some((item) => description.includes(item))) {
+              const roza = [' róża ', ' róż ', ' róże ', ' różę '];
+              const rozaFilter = [
+                'Herb Łabiszyna',
+                'Herb Starogardu Gdańskiego',
+                'Herb Elbląga',
+              ];
+
+              if (roza.some((item) => description.includes(item))) {
+                if (!rozaFilter.includes(unit.title)) {
+                  items.push('róża');
+                }
+              }
+
+              if (['kwiat', ...roza, ...lilia].some((item) => description.includes(item))) {
                 if (![
+                  ...liliaFilter,
+                  ...rozaFilter,
                   'Herb gminy Bytoń',
                   'Herb gminy Wodzierady',
                   'Herb gminy Krościenko nad Dunajcem',
@@ -618,12 +634,16 @@ export const fetchImages = async ({
                   'Herb Czempinia',
                   'Herb Goleniowa',
                   'Herb Świątnik Górnych',
+                  'Herb Pucka',
+                  'Herb Staszowa',
+                  'Herb Mikołajek',
+                  'Herb Środy Wielkopolskiej',
                 ].includes(unit.title)) {
                   items.push('łódź');
                 }
               }
 
-              if ([' korona', ' koronę', ' korony ', ' korony', 'Herb Opola'].some((item) => description.includes(item))) {
+              if ([' korona', ' koronę', ' koroną', ' korony ', ' korony', 'herb opola'].some((item) => description.includes(item))) {
                 if (![
                   'Herb gminy Krasocin',
                   'Herb Jaworzyny Śląskiej',
@@ -645,12 +665,45 @@ export const fetchImages = async ({
                   'Herb Sosnowca',
                   'Herb Żywca',
                   'Herb Nidzicy',
+                  'Herb gminy Długołęka',
+                  'Herb gminy Głowno',
+                  'Herb gminy Bralin',
+                  'Herb Kowar',
+                  'Herb Legnicy',
+                  'Herb Polkowic',
+                  'Herb Wlenia',
+                  'Herb Lipna',
+                  'Herb Rypina',
+                  'Herb Tyszowiec',
+                  'Herb Żagania',
+                  'Herb Błaszek',
+                  'Herb Piotrkowa Trybunalskiego',
+                  'Herb Piwnicznej-Zdroju',
+                  'Herb Garwolina',
+                  'Herb Siedlec',
+                  'Herb Sierpca',
+                  'Herb Kolonowskiego',
+                  'Herb Imielina',
+                  'Herb Jaworzna',
+                  'Herb Myszkowa',
+                  'Herb Nowego Korczyna',
+                  'Herb Osieka',
+                  'Herb Korsz',
+                  'Herb Ostródy',
+                  'Herb Bojanowa',
+                  'Herb Kłecka',
+                  'Herb Koźmina Wielkopolskiego',
+                  'Herb Pobiedzisk',
+                  'Herb Lipian',
+                  'Herb Drawska Pomorskiego',
+                  'Herb Świnoujścia',
+                  'Herb Węgorzyna',
                 ].includes(unit.title)) {
                   items.push('korona');
                 }
               }
 
-              if ([' święty', ' świetego', ' św.', ' święta '].some((item) => description.includes(item))) {
+              if ([' święty', ' świetego', ' św.', ' święta ', 'matki bożej', 'matki boskiej', ' madonnę', 'chrystus'].some((item) => description.includes(item))) {
                 if (![
                   'Herb gminy Sadki',
                   'Herb gminy Leśna Podlaska',

@@ -23,18 +23,14 @@
                 "name": "red",
                 "distance": 240.13537848472058
             },
-            "palette": [
-                {
-                    "color": "#e42c33",
-                    "name": "red",
-                    "distance": 72.56721022610694
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-barda.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-bierutowa": {
@@ -139,13 +135,7 @@
                 "name": "blue",
                 "distance": 95.35197952848173
             },
-            "palette": [
-                {
-                    "color": "#eb2c34",
-                    "name": "red",
-                    "distance": 70.9929573971954
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-boguszowagorc_ow.png",
         "markers": {
@@ -179,9 +169,9 @@
             },
             "palette": [
                 {
-                    "color": "#f3140c",
+                    "color": "#ef140c",
                     "name": "red",
-                    "distance": 26.229754097208
+                    "distance": 28.284271247461902
                 }
             ]
         },
@@ -220,13 +210,7 @@
                 "name": "green",
                 "distance": 150.06998367428446
             },
-            "palette": [
-                {
-                    "color": "#e82b33",
-                    "name": "red",
-                    "distance": 70.5620294492725
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-brzegu-dolnego.png",
         "markers": {
@@ -267,9 +251,9 @@
             },
             "palette": [
                 {
-                    "color": "#f31404",
+                    "color": "#f21404",
                     "name": "red",
-                    "distance": 23.664319132398465
+                    "distance": 24.186773244895647
                 }
             ]
         },
@@ -420,13 +404,7 @@
                 "name": "blue",
                 "distance": 171.04970037974343
             },
-            "palette": [
-                {
-                    "color": "#e30404",
-                    "name": "red",
-                    "distance": 28.5657137141714
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-g_logowa.png",
         "markers": {
@@ -438,7 +416,8 @@
             ],
             "items": [
                 "wieża/mury",
-                "korona"
+                "korona",
+                "postać świętego"
             ]
         }
     },
@@ -466,13 +445,7 @@
                 "name": "blue",
                 "distance": 137.81146541561773
             },
-            "palette": [
-                {
-                    "color": "#d8241b",
-                    "name": "red",
-                    "distance": 59.54829972383762
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-g_luszycy.png",
         "markers": {
@@ -504,13 +477,7 @@
                 "name": "blue",
                 "distance": 168.89345754054537
             },
-            "palette": [
-                {
-                    "color": "#e23335",
-                    "name": "red",
-                    "distance": 79.06326580656784
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-g_ory.png",
         "markers": {
@@ -693,9 +660,9 @@
             },
             "palette": [
                 {
-                    "color": "#da231c",
+                    "color": "#da261b",
                     "name": "red",
-                    "distance": 58.12056434688156
+                    "distance": 59.51470406546604
                 }
             ]
         },
@@ -705,6 +672,45 @@
                 "jeleń"
             ],
             "items": []
+        }
+    },
+    "herb-kamie_nca-z_abkowickiego": {
+        "title": "Herb Kamieńca Ząbkowickiego",
+        "url": "https://pl.wikipedia.org/wiki/Herb_Kamie%C5%84ca_Z%C4%85bkowickiego",
+        "type": "miasto",
+        "partOf": "Herby miast województwa dolnośląskiego",
+        "place": {
+            "name": "Kamieniec Ząbkowicki",
+            "coordinates": {
+                "lat": 50.526389,
+                "lon": 16.878056
+            }
+        },
+        "description": "Herb Kamieńca Ząbkowickiego – jeden z symboli miasta i gminy Kamieniec Ząbkowicki, autorstwa Kamila Wójcikowskiego i Roberta Fidury, ustanowiony 25 kwietnia 2013.\n\n\n== Wygląd i symbolika ==\nHerb przedstawia na tarczy w polu błękitnym dwa lwy wspięte, zwrócone do siebie, złote z językami i pazurami czerwonymi; prawy za kratą srebrną, lewy ukoronowany w polu usianym biletami złotymi.\nHerb przypomina dwóch najważniejszych historycznych właścicieli Kamieńca i wielu wsi w gminie Kamieniec Ząbkowicki. Prawa strona herbu wzięta została z herbu, jakim posługiwali się Cystersi z Kamieńca Ząbkowickiego, którzy byli ważnymi posiadaczami w okolicy w latach 1249-1810. Cystersi byli także założycielami wielu wsi na terenie gminy. Cystersi kamienieccy posługiwali się złożonym herbem - czteropolowym z tarczą sercową, gdzie obok tradycyjnego cysterskiego godła - belki św. Bernarda, znajdowały się pola z lwem umieszczonym za kratą. Ukoronowany lew w polu usianym biletami to główne godło herbu dynastii Orańskiej, z której Marianna Orańska była najważniejszym właścicielem Kamieńca po kasacie zakonu przez władze pruskie (dobra otrzymane w posagu, od 1830). Marianna była dobrodziejką miejscowej ludności i jest pamiętana do dzisiaj, pomimo zmiany ludności niemieckiej na polską. Wspólnie z małżonkiem, księciem Albrechtem Hohenzollern, Marianna wybudowała monumentalny pałac-zamczysko, będący do dzisiaj atrakcją turystyczną gminy.\n\n\n== Historia ==\nPierwszy herb używany przez gminę powstał w 1981 roku. Przedstawiał na tarczy dzielonej w słup w polu prawym, czerwonym, orła srebrnego z przepaską, w polu lewym, niebieskim, pół wieży czerwonej. Jego autorem jest Stefan Gnaczy. Prawnie herb był tak naprawdę logo Towarzystwa Miłośników Ziemi Kamienieckiej – powstał na potrzeby tego stowarzyszenia. Rada gminy nigdy nie podjęła uchwały o przyjęciu logo TMZKam jako herbu Kamieńca zatem nie powinna była się nim posługiwać. Dodatkowo, herb ten był obarczony licznymi błędami, w tym pomieszaniem polskiego i śląskiego orła, umieszczeniem czerwonej wieży w polu błękitnym (złamanie zasady alternacji).\n\n\n== Przypisy ==",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/POL_Kamieniec_Z%C4%85bkowicki_COA.svg/langpl-320px-POL_Kamieniec_Z%C4%85bkowicki_COA.svg.png",
+            "width": 320,
+            "height": 353
+        },
+        "colors": {
+            "primary": {
+                "color": "#0481f7",
+                "name": "blue",
+                "distance": 129.30970574554718
+            },
+            "palette": []
+        },
+        "imageUrl": "images/heraldyka/miasta/herb-kamie_nca-z_abkowickiego.png",
+        "markers": {
+            "animals": [
+                "orzeł",
+                "ptak",
+                "lew"
+            ],
+            "items": [
+                "wieża/mury",
+                "postać świętego"
+            ]
         }
     },
     "herb-kamiennej-g_ory": {
@@ -733,9 +739,9 @@
             },
             "palette": [
                 {
-                    "color": "#e3041b",
+                    "color": "#e42b35",
                     "name": "red",
-                    "distance": 39.102429592034305
+                    "distance": 73.39618518697004
                 }
             ]
         },
@@ -776,9 +782,9 @@
             },
             "palette": [
                 {
-                    "color": "#e31c1c",
+                    "color": "#e11c1c",
                     "name": "red",
-                    "distance": 48.49742261192856
+                    "distance": 49.678969393496885
                 }
             ]
         },
@@ -823,7 +829,9 @@
             "animals": [
                 "lew"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-kowar": {
@@ -886,13 +894,7 @@
                 "name": "red",
                 "distance": 224.8399430706208
             },
-            "palette": [
-                {
-                    "color": "#eb2c34",
-                    "name": "red",
-                    "distance": 70.9929573971954
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-kudowyzdroju.png",
         "markers": {
@@ -926,9 +928,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb0404",
+                    "color": "#f80404",
                     "name": "red",
-                    "distance": 6.928203230275509
+                    "distance": 9
                 }
             ]
         },
@@ -974,8 +976,7 @@
                 "lew"
             ],
             "items": [
-                "klucz",
-                "korona"
+                "klucz"
             ]
         }
     },
@@ -1003,13 +1004,7 @@
                 "name": "blue",
                 "distance": 125.66622457924007
             },
-            "palette": [
-                {
-                    "color": "#e40414",
-                    "name": "red",
-                    "distance": 33.83784863137726
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-le_snej.png",
         "markers": {
@@ -1119,18 +1114,14 @@
                 "name": "red",
                 "distance": 243.0658347032754
             },
-            "palette": [
-                {
-                    "color": "#e52c33",
-                    "name": "red",
-                    "distance": 72.20110802473879
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-lubomierza.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-mi_edzylesia": {
@@ -1159,9 +1150,9 @@
             },
             "palette": [
                 {
-                    "color": "#db241c",
+                    "color": "#d9231b",
                     "name": "red",
-                    "distance": 58.1033561853358
+                    "distance": 58.29236656715869
                 }
             ]
         },
@@ -1236,13 +1227,7 @@
                 "name": "red",
                 "distance": 220.3565292883331
             },
-            "palette": [
-                {
-                    "color": "#e62d37",
-                    "name": "red",
-                    "distance": 75.33259586659682
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-milicza.png",
         "markers": {
@@ -1393,13 +1378,7 @@
                 "name": "red",
                 "distance": 214.49009301130903
             },
-            "palette": [
-                {
-                    "color": "#ea2b33",
-                    "name": "red",
-                    "distance": 69.93568473962345
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-nowogrod_zca.png",
         "markers": {
@@ -1471,9 +1450,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2b23",
+                    "color": "#e82d25",
                     "name": "red",
-                    "distance": 58.9406481131655
+                    "distance": 62.63385665915839
                 }
             ]
         },
@@ -1514,9 +1493,9 @@
             },
             "palette": [
                 {
-                    "color": "#0dcf11",
+                    "color": "#10b411",
                     "name": "green",
-                    "distance": 52.55473337388365
+                    "distance": 78.54934754662193
                 },
                 {
                     "color": "#f70605",
@@ -1559,9 +1538,9 @@
             },
             "palette": [
                 {
-                    "color": "#db241c",
+                    "color": "#d7251d",
                     "name": "red",
-                    "distance": 58.1033561853358
+                    "distance": 61.72519744804386
                 }
             ]
         },
@@ -1571,6 +1550,38 @@
                 "kogut",
                 "ptak"
             ],
+            "items": []
+        }
+    },
+    "herb-piechowic": {
+        "title": "Herb Piechowic",
+        "url": "https://pl.wikipedia.org/wiki/Herb_Piechowic",
+        "type": "miasto",
+        "partOf": "Herby miast województwa dolnośląskiego",
+        "place": {
+            "name": "Piechowice",
+            "coordinates": {
+                "lat": 50.855556,
+                "lon": 15.618889
+            }
+        },
+        "description": "Herb Piechowic – jeden z symboli miasta Piechowice w postaci herbu.\n\n\n== Wygląd i symbolika ==\nHerb przedstawia w polu niebieskim na rzece srebrnej koło wodne nadsiębierne złote, po którym w prawo spływa woda srebrna wypływająca z koryta złotego po lewej. Całość na tarczy typu hiszpańskiego.\n\n\n== Historia ==\nHerby miasta bazują na zachowanych w archiwum jeleniogórskim pieczęciach gminy Piechowice (Petersdorf) z początku XX wieku, które wyobrażały tarczę herbową z kołem wodnym, nawiązującym do początków powstałej przy młynie wodnym osady. Przed 2016 rokiem, z powodu omyłki w statucie funkcjonowały dwie wersje barwne herbu, według opisu herb Piechowic przedstawiał tarczę herbową barwy ultramarynowej, na której drewniane koło młyńskie o kolorze drewna z podkreśleniem słoi, na obwodzie którego mieści się osiem prostokątnych czerpaków. Nad kołem umieszczone koryto z drewna, z którego spływa biały strumień wody. Woda spływa z koryta na koło z lewej strony. Pod kołem umieszczone są białe fale wodne. Tymczasem załącznik graficzny do statutu zawierał wizerunek o srebrnej barwie pola oraz niebieskiej wodzie. Nowy wzór herbu został przyjęty uchwałą nr 187/XXX/2016 Rady Miasta Piechowice z 29 grudnia 2016 roku w sprawie ustanowienia herbu, pieczęci, flagi, flagi stolikowej i banera Gminy Miejskiej Piechowice. Wzór herbu opracowali Kamil Wójcikowski i Robert Fidura.\n\n\n== Przypisy ==",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/POL_Piechowice_COA.svg/langpl-320px-POL_Piechowice_COA.svg.png",
+            "width": 320,
+            "height": 353
+        },
+        "colors": {
+            "primary": {
+                "color": "#0482f9",
+                "name": "blue",
+                "distance": 130.19984639007836
+            },
+            "palette": []
+        },
+        "imageUrl": "images/heraldyka/miasta/herb-piechowic.png",
+        "markers": {
+            "animals": [],
             "items": []
         }
     },
@@ -1760,9 +1771,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb1d23",
+                    "color": "#e42329",
                     "name": "red",
-                    "distance": 49.658836071740545
+                    "distance": 60.29096117993144
                 }
             ]
         },
@@ -1774,8 +1785,7 @@
             ],
             "items": [
                 "kwiat",
-                "wieża/mury",
-                "korona"
+                "wieża/mury"
             ]
         }
     },
@@ -1874,13 +1884,7 @@
                 "name": "blue",
                 "distance": 150.5456741324705
             },
-            "palette": [
-                {
-                    "color": "#d12b23",
-                    "name": "red",
-                    "distance": 72.04165461731151
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-przemkowa.png",
         "markers": {
@@ -1952,9 +1956,9 @@
             },
             "palette": [
                 {
-                    "color": "#db241c",
+                    "color": "#d7251d",
                     "name": "red",
-                    "distance": 58.1033561853358
+                    "distance": 61.72519744804386
                 }
             ]
         },
@@ -2026,13 +2030,7 @@
                 "name": "blue",
                 "distance": 179.75538934897057
             },
-            "palette": [
-                {
-                    "color": "#e92b33",
-                    "name": "red",
-                    "distance": 70.24243731534378
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-strzegomia.png",
         "markers": {
@@ -2104,13 +2102,7 @@
                 "name": "red",
                 "distance": 197.3170038288642
             },
-            "palette": [
-                {
-                    "color": "#da282f",
-                    "name": "red",
-                    "distance": 71.95832127002409
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-sycowa.png",
         "markers": {
@@ -2178,13 +2170,7 @@
                 "name": "green",
                 "distance": 194.28072472584614
             },
-            "palette": [
-                {
-                    "color": "#e92d33",
-                    "name": "red",
-                    "distance": 71.48426400264607
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-szczytnej.png",
         "markers": {
@@ -2256,13 +2242,7 @@
                 "name": "red",
                 "distance": 242.08469592272866
             },
-            "palette": [
-                {
-                    "color": "#e22c32",
-                    "name": "red",
-                    "distance": 72.64296249465602
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-_scinawy.png",
         "markers": {
@@ -2334,13 +2314,7 @@
                 "name": "green",
                 "distance": 202.20039564748632
             },
-            "palette": [
-                {
-                    "color": "#d21504",
-                    "name": "red",
-                    "distance": 49.8196748283246
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-_swieradowazdroju.png",
         "markers": {
@@ -2445,9 +2419,9 @@
             },
             "palette": [
                 {
-                    "color": "#d91c04",
+                    "color": "#d91f08",
                     "name": "red",
-                    "distance": 47.37087712930804
+                    "distance": 49.68903299521938
                 }
             ]
         },
@@ -2486,9 +2460,9 @@
             },
             "palette": [
                 {
-                    "color": "#da231b",
+                    "color": "#d32720",
                     "name": "red",
-                    "distance": 57.645468165329355
+                    "distance": 66.94027188471824
                 }
             ]
         },
@@ -2526,9 +2500,9 @@
             },
             "palette": [
                 {
-                    "color": "#db231c",
+                    "color": "#d9251b",
                     "name": "red",
-                    "distance": 57.48912940721924
+                    "distance": 59.51470406546604
                 }
             ]
         },
@@ -2567,9 +2541,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2c34",
+                    "color": "#e92e34",
                     "name": "red",
-                    "distance": 70.9929573971954
+                    "distance": 72.8285658241325
                 }
             ]
         },
@@ -2605,13 +2579,7 @@
                 "name": "red",
                 "distance": 221.78818724179158
             },
-            "palette": [
-                {
-                    "color": "#eb2b33",
-                    "name": "red",
-                    "distance": 69.6419413859206
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-wi_azowa.png",
         "markers": {
@@ -2721,9 +2689,9 @@
             },
             "palette": [
                 {
-                    "color": "#e72c33",
+                    "color": "#e72d33",
                     "name": "red",
-                    "distance": 71.50524456289902
+                    "distance": 72.12489168102785
                 }
             ]
         },
@@ -2950,9 +2918,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb1c23",
+                    "color": "#e31b23",
                     "name": "red",
-                    "distance": 49.08156476723211
+                    "distance": 52.32590180780452
                 }
             ]
         },
@@ -2988,9 +2956,9 @@
             },
             "palette": [
                 {
-                    "color": "#f3140c",
+                    "color": "#f2160d",
                     "name": "red",
-                    "distance": 26.229754097208
+                    "distance": 28.6705423736629
                 }
             ]
         },
@@ -2998,6 +2966,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "róża",
                 "kwiat"
             ]
         }
@@ -3068,9 +3037,9 @@
             },
             "palette": [
                 {
-                    "color": "#d9231c",
+                    "color": "#cf261b",
                     "name": "red",
-                    "distance": 58.762232769015846
+                    "distance": 66.91038783328041
                 }
             ]
         },
@@ -3147,9 +3116,9 @@
             },
             "palette": [
                 {
-                    "color": "#db231c",
+                    "color": "#d9251d",
                     "name": "red",
-                    "distance": 57.48912940721924
+                    "distance": 60.44832503882965
                 }
             ]
         },
@@ -3257,9 +3226,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb0404",
+                    "color": "#f90404",
                     "name": "red",
-                    "distance": 6.928203230275509
+                    "distance": 8.246211251235321
                 }
             ]
         },
@@ -3297,9 +3266,9 @@
             },
             "palette": [
                 {
-                    "color": "#e20414",
+                    "color": "#df0414",
                     "name": "red",
-                    "distance": 35.45419580247167
+                    "distance": 37.94733192202055
                 }
             ]
         },
@@ -3337,9 +3306,9 @@
             },
             "palette": [
                 {
-                    "color": "#e30414",
+                    "color": "#e10414",
                     "name": "red",
-                    "distance": 34.64101615137755
+                    "distance": 36.27671429443411
                 }
             ]
         },
@@ -3351,7 +3320,8 @@
                 "lew"
             ],
             "items": [
-                "wieża/mury"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -3381,9 +3351,9 @@
             },
             "palette": [
                 {
-                    "color": "#db241c",
+                    "color": "#db251d",
                     "name": "red",
-                    "distance": 58.1033561853358
+                    "distance": 59.21148537234985
                 }
             ]
         },
@@ -3425,9 +3395,9 @@
             },
             "palette": [
                 {
-                    "color": "#c41c1c",
+                    "color": "#c41d1d",
                     "name": "red",
-                    "distance": 71.05631569396206
+                    "distance": 71.85401867675878
                 }
             ]
         },
@@ -3506,13 +3476,7 @@
                 "name": "red",
                 "distance": 83.4146270146909
             },
-            "palette": [
-                {
-                    "color": "#eb2c33",
-                    "name": "red",
-                    "distance": 70.26378868236469
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-janikowa.png",
         "markers": {
@@ -3617,9 +3581,9 @@
             },
             "palette": [
                 {
-                    "color": "#fa0404",
+                    "color": "#f60404",
                     "name": "red",
-                    "distance": 7.54983443527075
+                    "distance": 10.63014581273465
                 }
             ]
         },
@@ -3660,9 +3624,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb0404",
+                    "color": "#fa0404",
                     "name": "red",
-                    "distance": 6.928203230275509
+                    "distance": 7.54983443527075
                 }
             ]
         },
@@ -3698,13 +3662,7 @@
                 "name": "red",
                 "distance": 239.7623823705462
             },
-            "palette": [
-                {
-                    "color": "#d3332b",
-                    "name": "red",
-                    "distance": 79.91245209602819
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-kowala.png",
         "markers": {
@@ -3782,9 +3740,9 @@
             },
             "palette": [
                 {
-                    "color": "#d9231b",
+                    "color": "#cc271f",
                     "name": "red",
-                    "distance": 58.29236656715869
+                    "distance": 71.29516112612411
                 }
             ]
         },
@@ -3793,8 +3751,7 @@
             "animals": [],
             "items": [
                 "drzewo",
-                "wieża/mury",
-                "korona"
+                "wieża/mury"
             ]
         }
     },
@@ -3824,9 +3781,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2c34",
+                    "color": "#ea2c33",
                     "name": "red",
-                    "distance": 70.9929573971954
+                    "distance": 70.55494312945054
                 }
             ]
         },
@@ -3868,8 +3825,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "miecz",
-                "kwiat"
+                "miecz"
             ]
         }
     },
@@ -3897,13 +3853,7 @@
                 "name": "green",
                 "distance": 204.16904760516468
             },
-            "palette": [
-                {
-                    "color": "#ea2c33",
-                    "name": "red",
-                    "distance": 70.55494312945054
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-_lasina.png",
         "markers": {
@@ -4048,9 +3998,9 @@
             },
             "palette": [
                 {
-                    "color": "#db241c",
+                    "color": "#d8231b",
                     "name": "red",
-                    "distance": 58.1033561853358
+                    "distance": 58.94913061275798
                 }
             ]
         },
@@ -4121,18 +4071,14 @@
                 "name": "blue",
                 "distance": 144.5614056378811
             },
-            "palette": [
-                {
-                    "color": "#de0414",
-                    "name": "red",
-                    "distance": 38.79432948254165
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-piotrkowa-kujawskiego.png",
         "markers": {
             "animals": [],
             "items": [
+                "róża",
+                "kwiat",
                 "korona"
             ]
         }
@@ -4273,13 +4219,7 @@
                 "name": "blue",
                 "distance": 129.8961123359741
             },
-            "palette": [
-                {
-                    "color": "#e42a32",
-                    "name": "red",
-                    "distance": 70.66116330771806
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-s_ep_olna-kraje_nskiego.png",
         "markers": {
@@ -4315,9 +4255,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2c33",
+                    "color": "#e92c33",
                     "name": "red",
-                    "distance": 70.26378868236469
+                    "distance": 70.8590149522275
                 }
             ]
         },
@@ -4390,9 +4330,9 @@
             },
             "palette": [
                 {
-                    "color": "#da241b",
+                    "color": "#d5261e",
                     "name": "red",
-                    "distance": 58.25804665451803
+                    "distance": 64.09368143584827
                 }
             ]
         },
@@ -4469,9 +4409,9 @@
             },
             "palette": [
                 {
-                    "color": "#e92b1b",
+                    "color": "#e3351f",
                     "name": "red",
-                    "distance": 55.33534132902769
+                    "distance": 67.48333127521195
                 }
             ]
         },
@@ -4508,13 +4448,7 @@
                 "name": "red",
                 "distance": 152.5417975507041
             },
-            "palette": [
-                {
-                    "color": "#da231b",
-                    "name": "red",
-                    "distance": 57.645468165329355
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-_znina.png",
         "markers": {
@@ -4550,9 +4484,9 @@
             },
             "palette": [
                 {
-                    "color": "#e30404",
+                    "color": "#e20404",
                     "name": "red",
-                    "distance": 28.5657137141714
+                    "distance": 29.546573405388315
                 }
             ]
         },
@@ -4656,9 +4590,9 @@
             },
             "palette": [
                 {
-                    "color": "#f30404",
+                    "color": "#f20404",
                     "name": "red",
-                    "distance": 13.2664991614216
+                    "distance": 14.177446878757825
                 }
             ]
         },
@@ -4877,9 +4811,9 @@
             },
             "palette": [
                 {
-                    "color": "#db242b",
+                    "color": "#da232b",
                     "name": "red",
-                    "distance": 66.64082832618455
+                    "distance": 66.65583245298194
                 }
             ]
         },
@@ -4951,9 +4885,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2b33",
+                    "color": "#eb2c34",
                     "name": "red",
-                    "distance": 69.6419413859206
+                    "distance": 70.9929573971954
                 }
             ]
         },
@@ -5101,9 +5035,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb0413",
+                    "color": "#fa0413",
                     "name": "red",
-                    "distance": 19.82422760159901
+                    "distance": 20.049937655763422
                 }
             ]
         },
@@ -5137,13 +5071,7 @@
                 "name": "blue",
                 "distance": 144.84129245487972
             },
-            "palette": [
-                {
-                    "color": "#fb4323",
-                    "name": "red",
-                    "distance": 75.69676347110224
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-lubartowa.png",
         "markers": {
@@ -5183,9 +5111,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb0404",
+                    "color": "#f90404",
                     "name": "red",
-                    "distance": 6.928203230275509
+                    "distance": 8.246211251235321
                 }
             ]
         },
@@ -5196,7 +5124,8 @@
             ],
             "items": [
                 "drzewo",
-                "wieża/mury"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -5226,9 +5155,9 @@
             },
             "palette": [
                 {
-                    "color": "#db2424",
+                    "color": "#db2324",
                     "name": "red",
-                    "distance": 62.353829072479584
+                    "distance": 61.78187436457395
                 }
             ]
         },
@@ -5268,9 +5197,9 @@
             },
             "palette": [
                 {
-                    "color": "#db141c",
+                    "color": "#db131b",
                     "name": "red",
-                    "distance": 49.79959839195493
+                    "distance": 48.84669896727925
                 }
             ]
         },
@@ -5308,9 +5237,9 @@
             },
             "palette": [
                 {
-                    "color": "#e31c23",
+                    "color": "#e21c23",
                     "name": "red",
-                    "distance": 52.848841046895245
+                    "distance": 53.38539126015655
                 }
             ]
         },
@@ -5393,7 +5322,10 @@
         "imageUrl": "images/heraldyka/miasta/herb-modliborzyc.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "róża",
+                "kwiat"
+            ]
         }
     },
     "herb-na_l_eczowa": {
@@ -5454,9 +5386,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2c1c",
+                    "color": "#e82c1c",
                     "name": "red",
-                    "distance": 55.85696017507576
+                    "distance": 57
                 }
             ]
         },
@@ -5464,7 +5396,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot",
+                "korona"
             ]
         }
     },
@@ -5534,9 +5467,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb241c",
+                    "color": "#eb231c",
                     "name": "red",
-                    "distance": 49.79959839195493
+                    "distance": 49.08156476723211
                 }
             ]
         },
@@ -5572,9 +5505,9 @@
             },
             "palette": [
                 {
-                    "color": "#db231b",
+                    "color": "#db241c",
                     "name": "red",
-                    "distance": 57.0087712549569
+                    "distance": 58.1033561853358
                 }
             ]
         },
@@ -5650,9 +5583,9 @@
             },
             "palette": [
                 {
-                    "color": "#db231c",
+                    "color": "#d92d1b",
                     "name": "red",
-                    "distance": 57.48912940721924
+                    "distance": 64.79197481170026
                 }
             ]
         },
@@ -5732,9 +5665,9 @@
             },
             "palette": [
                 {
-                    "color": "#db2b1c",
+                    "color": "#db2c1b",
                     "name": "red",
-                    "distance": 62.68173577685928
+                    "distance": 62.93647591023825
                 }
             ]
         },
@@ -5770,9 +5703,9 @@
             },
             "palette": [
                 {
-                    "color": "#ea1c24",
+                    "color": "#e71d24",
                     "name": "red",
-                    "distance": 50.20956084253277
+                    "distance": 52.08646657242167
                 }
             ]
         },
@@ -5883,9 +5816,9 @@
             },
             "palette": [
                 {
-                    "color": "#db241c",
+                    "color": "#db231c",
                     "name": "red",
-                    "distance": 58.1033561853358
+                    "distance": 57.48912940721924
                 }
             ]
         },
@@ -6035,9 +5968,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb0404",
+                    "color": "#f90404",
                     "name": "red",
-                    "distance": 6.928203230275509
+                    "distance": 8.246211251235321
                 }
             ]
         },
@@ -6047,9 +5980,7 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": [
-                "korona"
-            ]
+            "items": []
         }
     },
     "herb-urz_edowa": {
@@ -6156,9 +6087,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2c33",
+                    "color": "#ea2c33",
                     "name": "red",
-                    "distance": 70.26378868236469
+                    "distance": 70.55494312945054
                 }
             ]
         },
@@ -6345,9 +6276,9 @@
             },
             "palette": [
                 {
-                    "color": "#e92c33",
+                    "color": "#e32b33",
                     "name": "red",
-                    "distance": 70.8590149522275
+                    "distance": 72.34638899074369
                 }
             ]
         },
@@ -6357,7 +6288,8 @@
                 "lew"
             ],
             "items": [
-                "wieża/mury"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -6387,16 +6319,19 @@
             },
             "palette": [
                 {
-                    "color": "#db1c0c",
+                    "color": "#d81c0c",
                     "name": "red",
-                    "distance": 47.15930449020638
+                    "distance": 49.48737212663449
                 }
             ]
         },
         "imageUrl": "images/heraldyka/miasta/herb-dobiegniewa.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "róża",
+                "kwiat"
+            ]
         }
     },
     "herb-drezdenka": {
@@ -6423,13 +6358,7 @@
                 "name": "red",
                 "distance": 213.8153408902177
             },
-            "palette": [
-                {
-                    "color": "#e92b33",
-                    "name": "red",
-                    "distance": 70.24243731534378
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-drezdenka.png",
         "markers": {
@@ -6464,13 +6393,7 @@
                 "name": "red",
                 "distance": 232.038789860661
             },
-            "palette": [
-                {
-                    "color": "#d7231c",
-                    "name": "red",
-                    "distance": 60.07495318350236
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-gorzowa-wielkopolskiego.png",
         "markers": {
@@ -6581,9 +6504,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2c33",
+                    "color": "#e92c33",
                     "name": "red",
-                    "distance": 70.26378868236469
+                    "distance": 70.8590149522275
                 }
             ]
         },
@@ -6668,9 +6591,9 @@
             },
             "palette": [
                 {
-                    "color": "#e30404",
+                    "color": "#e00504",
                     "name": "red",
-                    "distance": 28.5657137141714
+                    "distance": 31.654383582688826
                 }
             ]
         },
@@ -6780,13 +6703,7 @@
                 "name": "red",
                 "distance": 83.40263784797217
             },
-            "palette": [
-                {
-                    "color": "#eb2c34",
-                    "name": "red",
-                    "distance": 70.9929573971954
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-_l_eknicy.png",
         "markers": {
@@ -6794,7 +6711,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-ma_lomic": {
@@ -6821,13 +6740,7 @@
                 "name": "red",
                 "distance": 222.25210910135362
             },
-            "palette": [
-                {
-                    "color": "#ea2c33",
-                    "name": "red",
-                    "distance": 70.55494312945054
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-ma_lomic.png",
         "markers": {
@@ -6937,9 +6850,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2b33",
+                    "color": "#e72d34",
                     "name": "red",
-                    "distance": 69.6419413859206
+                    "distance": 72.83543093852057
                 }
             ]
         },
@@ -6980,9 +6893,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2c33",
+                    "color": "#e82d35",
                     "name": "red",
-                    "distance": 70.26378868236469
+                    "distance": 73.23250644351864
                 }
             ]
         },
@@ -7061,9 +6974,9 @@
             },
             "palette": [
                 {
-                    "color": "#db241c",
+                    "color": "#d9251d",
                     "name": "red",
-                    "distance": 58.1033561853358
+                    "distance": 60.44832503882965
                 }
             ]
         },
@@ -7141,9 +7054,9 @@
             },
             "palette": [
                 {
-                    "color": "#d7241c",
+                    "color": "#cf271f",
                     "name": "red",
-                    "distance": 60.663003552412405
+                    "distance": 69.18092222571191
                 }
             ]
         },
@@ -7184,9 +7097,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2b33",
+                    "color": "#e92c33",
                     "name": "red",
-                    "distance": 69.6419413859206
+                    "distance": 70.8590149522275
                 }
             ]
         },
@@ -7268,13 +7181,7 @@
                 "name": "red",
                 "distance": 214.00467284617875
             },
-            "palette": [
-                {
-                    "color": "#e42c33",
-                    "name": "red",
-                    "distance": 72.56721022610694
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-sulechowa.png",
         "markers": {
@@ -7311,13 +7218,7 @@
                 "name": "red",
                 "distance": 251.06373692749816
             },
-            "palette": [
-                {
-                    "color": "#fc0404",
-                    "name": "red",
-                    "distance": 6.4031242374328485
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-sul_ecina.png",
         "markers": {
@@ -7430,13 +7331,7 @@
                 "name": "red",
                 "distance": 222.08331769856105
             },
-            "palette": [
-                {
-                    "color": "#eb2c34",
-                    "name": "red",
-                    "distance": 70.9929573971954
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-_swiebodzina.png",
         "markers": {
@@ -7545,7 +7440,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-wschowy.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-zb_aszynka": {
@@ -7652,9 +7549,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2b33",
+                    "color": "#e82d35",
                     "name": "red",
-                    "distance": 69.6419413859206
+                    "distance": 73.23250644351864
                 }
             ]
         },
@@ -7665,8 +7562,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża/mury",
-                "korona"
+                "wieża/mury"
             ]
         }
     },
@@ -7696,9 +7592,9 @@
             },
             "palette": [
                 {
-                    "color": "#c30424",
+                    "color": "#c30423",
                     "name": "red",
-                    "distance": 70.08566187174092
+                    "distance": 69.57729514719583
                 }
             ]
         },
@@ -7811,9 +7707,9 @@
             },
             "palette": [
                 {
-                    "color": "#e31c23",
+                    "color": "#de1e25",
                     "name": "red",
-                    "distance": 52.848841046895245
+                    "distance": 57.94825277780168
                 }
             ]
         },
@@ -7822,8 +7718,7 @@
             "animals": [],
             "items": [
                 "miecz",
-                "wieża/mury",
-                "korona"
+                "wieża/mury"
             ]
         }
     },
@@ -7853,9 +7748,9 @@
             },
             "palette": [
                 {
-                    "color": "#fa0404",
+                    "color": "#f60404",
                     "name": "red",
-                    "distance": 7.54983443527075
+                    "distance": 10.63014581273465
                 }
             ]
         },
@@ -7866,7 +7761,8 @@
                 "ptak"
             ],
             "items": [
-                "wieża/mury"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -7932,13 +7828,7 @@
                 "name": "red",
                 "distance": 207.4849392124643
             },
-            "palette": [
-                {
-                    "color": "#dd342e",
-                    "name": "red",
-                    "distance": 77.30459236035075
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-d_abrowic.png",
         "markers": {
@@ -8018,9 +7908,9 @@
             },
             "palette": [
                 {
-                    "color": "#db241c",
+                    "color": "#d8241b",
                     "name": "red",
-                    "distance": 58.1033561853358
+                    "distance": 59.54829972383762
                 }
             ]
         },
@@ -8058,9 +7948,9 @@
             },
             "palette": [
                 {
-                    "color": "#c40423",
+                    "color": "#c20523",
                     "name": "red",
-                    "distance": 68.71681017043792
+                    "distance": 70.50531894828929
                 }
             ]
         },
@@ -8098,9 +7988,9 @@
             },
             "palette": [
                 {
-                    "color": "#e90423",
+                    "color": "#e40523",
                     "name": "red",
-                    "distance": 41.53311931459037
+                    "distance": 44.48595283907045
                 }
             ]
         },
@@ -8138,9 +8028,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb0404",
+                    "color": "#fa0404",
                     "name": "red",
-                    "distance": 6.928203230275509
+                    "distance": 7.54983443527075
                 }
             ]
         },
@@ -8280,9 +8170,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2b33",
+                    "color": "#e92c34",
                     "name": "red",
-                    "distance": 69.6419413859206
+                    "distance": 71.58212067269312
                 }
             ]
         },
@@ -8582,9 +8472,9 @@
                     "distance": 7.54983443527075
                 },
                 {
-                    "color": "#fb0404",
+                    "color": "#f70a05",
                     "name": "red",
-                    "distance": 6.928203230275509
+                    "distance": 13.74772708486752
                 }
             ]
         },
@@ -8622,9 +8512,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb3c04",
+                    "color": "#fb3d05",
                     "name": "red",
-                    "distance": 60.266076693277455
+                    "distance": 61.335144900782616
                 }
             ]
         },
@@ -8664,9 +8554,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2c34",
+                    "color": "#ea3038",
                     "name": "red",
-                    "distance": 70.9929573971954
+                    "distance": 76.68767828015137
                 }
             ]
         },
@@ -8702,13 +8592,7 @@
                 "name": "red",
                 "distance": 158.7135784991316
             },
-            "palette": [
-                {
-                    "color": "#f90404",
-                    "name": "red",
-                    "distance": 8.246211251235321
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-parz_eczewa.png",
         "markers": {
@@ -8756,9 +8640,7 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": [
-                "korona"
-            ]
+            "items": []
         }
     },
     "herb-przedborza": {
@@ -8819,13 +8701,7 @@
                 "name": "blue",
                 "distance": 184.74847766625845
             },
-            "palette": [
-                {
-                    "color": "#e53132",
-                    "name": "red",
-                    "distance": 74.67931440499437
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-radomska.png",
         "markers": {
@@ -8834,7 +8710,8 @@
             ],
             "items": [
                 "miecz",
-                "wieża/mury"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -9005,9 +8882,9 @@
             },
             "palette": [
                 {
-                    "color": "#d12b23",
+                    "color": "#cd2b24",
                     "name": "red",
-                    "distance": 72.04165461731151
+                    "distance": 75.13321502504735
                 }
             ]
         },
@@ -9188,9 +9065,9 @@
             },
             "palette": [
                 {
-                    "color": "#e22c33",
+                    "color": "#e22f33",
                     "name": "red",
-                    "distance": 73.33484846919642
+                    "distance": 75.17313349861105
                 }
             ]
         },
@@ -9348,9 +9225,9 @@
             },
             "palette": [
                 {
-                    "color": "#db231c",
+                    "color": "#d1221b",
                     "name": "red",
-                    "distance": 57.48912940721924
+                    "distance": 63.25345840347388
                 }
             ]
         },
@@ -9548,9 +9425,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2c2c",
+                    "color": "#e92b2b",
                     "name": "red",
-                    "distance": 65.36053855347276
+                    "distance": 64.66838485689897
                 }
             ]
         },
@@ -9586,13 +9463,7 @@
                 "name": "red",
                 "distance": 84.40379138403677
             },
-            "palette": [
-                {
-                    "color": "#c3241b",
-                    "name": "red",
-                    "distance": 75
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-biecza.png",
         "markers": {
@@ -9711,9 +9582,9 @@
             },
             "palette": [
                 {
-                    "color": "#ea2c34",
+                    "color": "#e82c34",
                     "name": "red",
-                    "distance": 71.28113354878694
+                    "distance": 71.89575787207477
                 }
             ]
         },
@@ -9722,7 +9593,9 @@
             "animals": [
                 "gryf"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-brzeszcz": {
@@ -9784,13 +9657,7 @@
                 "name": "red",
                 "distance": 202.28939665736314
             },
-            "palette": [
-                {
-                    "color": "#c72a13",
-                    "name": "red",
-                    "distance": 72.53275122315436
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-bukowna.png",
         "markers": {
@@ -9864,13 +9731,7 @@
                 "name": "red",
                 "distance": 202.74368054269902
             },
-            "palette": [
-                {
-                    "color": "#f23137",
-                    "name": "red",
-                    "distance": 74.79973261984297
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-ci_e_zkowic.png",
         "markers": {
@@ -9945,13 +9806,7 @@
                 "name": "red",
                 "distance": 233.09011133036083
             },
-            "palette": [
-                {
-                    "color": "#db332b",
-                    "name": "red",
-                    "distance": 75.8023746329889
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-dobczyc.png",
         "markers": {
@@ -9987,9 +9842,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2c33",
+                    "color": "#eb2b33",
                     "name": "red",
-                    "distance": 70.26378868236469
+                    "distance": 69.6419413859206
                 }
             ]
         },
@@ -10025,13 +9880,7 @@
                 "name": "blue",
                 "distance": 177.6626015795108
             },
-            "palette": [
-                {
-                    "color": "#d3231b",
-                    "name": "red",
-                    "distance": 62.369864518050704
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-gorlic.png",
         "markers": {
@@ -10135,9 +9984,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb0404",
+                    "color": "#f90404",
                     "name": "red",
-                    "distance": 6.928203230275509
+                    "distance": 8.246211251235321
                 }
             ]
         },
@@ -10358,13 +10207,7 @@
                 "name": "green",
                 "distance": 212.8778992756176
             },
-            "palette": [
-                {
-                    "color": "#ea2b33",
-                    "name": "red",
-                    "distance": 69.93568473962345
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-libi_a_za.png",
         "markers": {
@@ -10470,13 +10313,7 @@
                 "name": "red",
                 "distance": 84.95292814258964
             },
-            "palette": [
-                {
-                    "color": "#eb2e35",
-                    "name": "red",
-                    "distance": 72.97259759663213
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-mszany-dolnej.png",
         "markers": {
@@ -10582,13 +10419,7 @@
                 "name": "red",
                 "distance": 242.3736784388932
             },
-            "palette": [
-                {
-                    "color": "#e20913",
-                    "name": "red",
-                    "distance": 35.81898937714463
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-niepo_lomic.jpg",
         "markers": {
@@ -10698,9 +10529,9 @@
             },
             "palette": [
                 {
-                    "color": "#da233b",
+                    "color": "#d6233a",
                     "name": "red",
-                    "distance": 77.94228634059948
+                    "distance": 79.18333157931662
                 }
             ]
         },
@@ -10855,9 +10686,9 @@
             },
             "palette": [
                 {
-                    "color": "#e3342c",
+                    "color": "#e0352c",
                     "name": "red",
-                    "distance": 73.64781055808787
+                    "distance": 75.53806987208503
                 }
             ]
         },
@@ -10895,9 +10726,9 @@
             },
             "palette": [
                 {
-                    "color": "#db241c",
+                    "color": "#da241c",
                     "name": "red",
-                    "distance": 58.1033561853358
+                    "distance": 58.728187440104094
                 }
             ]
         },
@@ -10938,11 +10769,6 @@
                     "color": "#fa0404",
                     "name": "red",
                     "distance": 7.54983443527075
-                },
-                {
-                    "color": "#06fc06",
-                    "name": "green",
-                    "distance": 9
                 }
             ]
         },
@@ -11089,9 +10915,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2b33",
+                    "color": "#e92d34",
                     "name": "red",
-                    "distance": 69.6419413859206
+                    "distance": 72.20110802473879
                 }
             ]
         },
@@ -11129,9 +10955,9 @@
             },
             "palette": [
                 {
-                    "color": "#da231b",
+                    "color": "#da241b",
                     "name": "red",
-                    "distance": 57.645468165329355
+                    "distance": 58.25804665451803
                 }
             ]
         },
@@ -11497,7 +11323,9 @@
             "animals": [
                 "syrena"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-bie_zunia": {
@@ -11526,9 +11354,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb1c23",
+                    "color": "#eb1c24",
                     "name": "red",
-                    "distance": 49.08156476723211
+                    "distance": 49.79959839195493
                 }
             ]
         },
@@ -11630,9 +11458,9 @@
             },
             "palette": [
                 {
-                    "color": "#f30404",
+                    "color": "#f10404",
                     "name": "red",
-                    "distance": 13.2664991614216
+                    "distance": 15.0996688705415
                 }
             ]
         },
@@ -11672,9 +11500,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb1b2c",
+                    "color": "#ea1b2b",
                     "name": "red",
-                    "distance": 55.362442142665635
+                    "distance": 54.945427471264615
                 }
             ]
         },
@@ -11712,9 +11540,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2c34",
+                    "color": "#e92d33",
                     "name": "red",
-                    "distance": 70.9929573971954
+                    "distance": 71.48426400264607
                 }
             ]
         },
@@ -11863,9 +11691,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb0404",
+                    "color": "#f90404",
                     "name": "red",
-                    "distance": 6.928203230275509
+                    "distance": 8.246211251235321
                 }
             ]
         },
@@ -11977,9 +11805,9 @@
             },
             "palette": [
                 {
-                    "color": "#db241c",
+                    "color": "#da241c",
                     "name": "red",
-                    "distance": 58.1033561853358
+                    "distance": 58.728187440104094
                 }
             ]
         },
@@ -12151,9 +11979,9 @@
             },
             "palette": [
                 {
-                    "color": "#c00d19",
+                    "color": "#bc101b",
                     "name": "red",
-                    "distance": 69.01449123191448
+                    "distance": 73.98648525237566
                 }
             ]
         },
@@ -12266,9 +12094,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb1b2b",
+                    "color": "#ea1b2b",
                     "name": "red",
-                    "distance": 54.57105459856901
+                    "distance": 54.945427471264615
                 }
             ]
         },
@@ -12378,9 +12206,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb1c23",
+                    "color": "#e61d23",
                     "name": "red",
-                    "distance": 49.08156476723211
+                    "distance": 51.87484939737175
                 }
             ]
         },
@@ -12414,13 +12242,7 @@
                 "name": "blue",
                 "distance": 155.88136514670379
             },
-            "palette": [
-                {
-                    "color": "#eb2c33",
-                    "name": "red",
-                    "distance": 70.26378868236469
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-j_ozefowa-powiat-otwocki.png",
         "markers": {
@@ -12488,9 +12310,9 @@
             },
             "palette": [
                 {
-                    "color": "#ec2c34",
+                    "color": "#eb2c34",
                     "name": "red",
-                    "distance": 70.71774883294857
+                    "distance": 70.9929573971954
                 }
             ]
         },
@@ -12528,13 +12350,7 @@
                 "name": "red",
                 "distance": 212.00471692865705
             },
-            "palette": [
-                {
-                    "color": "#e32b32",
-                    "name": "red",
-                    "distance": 71.64495795239188
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-koby_lki.png",
         "markers": {
@@ -12607,9 +12423,9 @@
             },
             "palette": [
                 {
-                    "color": "#db141c",
+                    "color": "#d9151d",
                     "name": "red",
-                    "distance": 49.79959839195493
+                    "distance": 52.21110992882645
                 }
             ]
         },
@@ -12717,9 +12533,9 @@
             },
             "palette": [
                 {
-                    "color": "#e30414",
+                    "color": "#e10615",
                     "name": "red",
-                    "distance": 34.64101615137755
+                    "distance": 37.107950630558946
                 }
             ]
         },
@@ -13020,9 +12836,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb1414",
+                    "color": "#e21817",
                     "name": "red",
-                    "distance": 34.64101615137755
+                    "distance": 44.11349000022555
                 }
             ]
         },
@@ -13168,13 +12984,7 @@
                 "name": "blue",
                 "distance": 223.28681107490428
             },
-            "palette": [
-                {
-                    "color": "#e22c33",
-                    "name": "red",
-                    "distance": 73.33484846919642
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-m_lawy.png",
         "markers": {
@@ -13243,13 +13053,7 @@
                 "name": "red",
                 "distance": 241.10785968109792
             },
-            "palette": [
-                {
-                    "color": "#e62c33",
-                    "name": "red",
-                    "distance": 71.84705978674423
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-mord_ow.png",
         "markers": {
@@ -13319,9 +13123,9 @@
             },
             "palette": [
                 {
-                    "color": "#da2c1c",
+                    "color": "#d62c1c",
                     "name": "red",
-                    "distance": 63.94528911499267
+                    "distance": 66.34003316248794
                 }
             ]
         },
@@ -13433,13 +13237,7 @@
                 "name": "blue",
                 "distance": 187.0855419320264
             },
-            "palette": [
-                {
-                    "color": "#e90708",
-                    "name": "red",
-                    "distance": 24.43358344574123
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-nowego-miasta-powiat-p_lo_nski.png",
         "markers": {
@@ -13517,13 +13315,7 @@
                 "name": "blue",
                 "distance": 181.44696194756196
             },
-            "palette": [
-                {
-                    "color": "#e82c33",
-                    "name": "red",
-                    "distance": 71.17583859709698
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-nowego-dworu-mazowieckiego.png",
         "markers": {
@@ -13597,9 +13389,9 @@
             },
             "palette": [
                 {
-                    "color": "#db1c1b",
+                    "color": "#d91c1c",
                     "name": "red",
-                    "distance": 53
+                    "distance": 54.881690936048976
                 }
             ]
         },
@@ -13679,13 +13471,7 @@
                 "name": "red",
                 "distance": 241.13481706298657
             },
-            "palette": [
-                {
-                    "color": "#20c420",
-                    "name": "green",
-                    "distance": 74.35724578008521
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-ostrowi-mazowieckiej.png",
         "markers": {
@@ -13719,13 +13505,7 @@
                 "name": "green",
                 "distance": 216.71179017303143
             },
-            "palette": [
-                {
-                    "color": "#e82b33",
-                    "name": "red",
-                    "distance": 70.5620294492725
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-otwocka.png",
         "markers": {
@@ -13765,9 +13545,9 @@
             },
             "palette": [
                 {
-                    "color": "#db2b24",
+                    "color": "#da2c24",
                     "name": "red",
-                    "distance": 66.64082832618455
+                    "distance": 67.83067152844649
                 }
             ]
         },
@@ -13803,9 +13583,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2b33",
+                    "color": "#e52f35",
                     "name": "red",
-                    "distance": 69.6419413859206
+                    "distance": 75.45859791965393
                 }
             ]
         },
@@ -13843,9 +13623,9 @@
             },
             "palette": [
                 {
-                    "color": "#db241c",
+                    "color": "#db241b",
                     "name": "red",
-                    "distance": 58.1033561853358
+                    "distance": 57.62811813689564
                 }
             ]
         },
@@ -13913,13 +13693,7 @@
                 "name": "green",
                 "distance": 162.0524606416083
             },
-            "palette": [
-                {
-                    "color": "#e33b24",
-                    "name": "red",
-                    "distance": 74.57211275000863
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-pionek.png",
         "markers": {
@@ -13955,9 +13729,9 @@
             },
             "palette": [
                 {
-                    "color": "#db241c",
+                    "color": "#da241c",
                     "name": "red",
-                    "distance": 58.1033561853358
+                    "distance": 58.728187440104094
                 }
             ]
         },
@@ -13995,9 +13769,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2c33",
+                    "color": "#ea2c34",
                     "name": "red",
-                    "distance": 70.26378868236469
+                    "distance": 71.28113354878694
                 }
             ]
         },
@@ -14072,9 +13846,9 @@
             },
             "palette": [
                 {
-                    "color": "#ec2f37",
+                    "color": "#ec333a",
                     "name": "red",
-                    "distance": 74.79973261984297
+                    "distance": 79.5361553005927
                 }
             ]
         },
@@ -14110,20 +13884,16 @@
                 "name": "red",
                 "distance": 188.92855792600545
             },
-            "palette": [
-                {
-                    "color": "#e52c34",
-                    "name": "red",
-                    "distance": 72.91090453423274
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-przysuchy.png",
         "markers": {
             "animals": [
                 "niedźwiedź"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-przytyka": {
@@ -14152,9 +13922,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb0404",
+                    "color": "#fa0404",
                     "name": "red",
-                    "distance": 6.928203230275509
+                    "distance": 7.54983443527075
                 }
             ]
         },
@@ -14226,9 +13996,9 @@
             },
             "palette": [
                 {
-                    "color": "#fa0404",
+                    "color": "#f90404",
                     "name": "red",
-                    "distance": 7.54983443527075
+                    "distance": 8.246211251235321
                 }
             ]
         },
@@ -14238,6 +14008,38 @@
             "items": [
                 "wieża/mury"
             ]
+        }
+    },
+    "herb-radzymina": {
+        "title": "Herb Radzymina",
+        "url": "https://pl.wikipedia.org/wiki/Herb_Radzymina",
+        "type": "miasto",
+        "partOf": "Herby miast województwa mazowieckiego",
+        "place": {
+            "name": "Radzymin",
+            "coordinates": {
+                "lat": 52.418056,
+                "lon": 21.181111
+            }
+        },
+        "description": "Herb Radzymina – jeden z symboli miasta Radzymin i gminy Radzymin w postaci herbu.\n\n\n== Wygląd i symbolika ==\nHerb przedstawia w błękitnej tarczy herbowej oko opatrzności otoczone srebrnymi promieniami. Godło herbowe nawiązuje do dwóch wydarzeń z historii Radzymina. W początkach XVII wieku miasto nawiedziła zaraza, tzw. morowe powietrze. Jej szybkie ustąpienie mieszkańcy uznali za efekt modlitw i stawiania krzyży przebłagalnych, wierzono, że nad miastem czuwała Opatrzność. Drugie wydarzenie miało miejsce 15 sierpnia 1920 – odbicie miasta z rąk bolszewików podczas wojny polsko-bolszewickiej, nazwane potem cudem nad Wisłą, także przypisywane opiece Opatrzności Bożej nad miastem. Herb przedstawiający oko opatrzności zatwierdziło Ministerstwo Spraw Wewnętrznych RP w 1936.\n\n\n== Przypisy ==",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/POL_Radzymin_COA.svg/langpl-320px-POL_Radzymin_COA.svg.png",
+            "width": 320,
+            "height": 399
+        },
+        "colors": {
+            "primary": {
+                "color": "#1c9cfb",
+                "name": "blue",
+                "distance": 158.54336946085132
+            },
+            "palette": []
+        },
+        "imageUrl": "images/heraldyka/miasta/herb-radzymina.png",
+        "markers": {
+            "animals": [],
+            "items": []
         }
     },
     "herb-r_o_zana": {
@@ -14266,16 +14068,19 @@
             },
             "palette": [
                 {
-                    "color": "#db241c",
+                    "color": "#d8251d",
                     "name": "red",
-                    "distance": 58.1033561853358
+                    "distance": 61.08191221630181
                 }
             ]
         },
         "imageUrl": "images/heraldyka/miasta/herb-r_o_zana.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "róża",
+                "kwiat"
+            ]
         }
     },
     "herb-sannik": {
@@ -14480,9 +14285,9 @@
             },
             "palette": [
                 {
-                    "color": "#db2424",
+                    "color": "#d92323",
                     "name": "red",
-                    "distance": 62.353829072479584
+                    "distance": 62.40192304729078
                 }
             ]
         },
@@ -14494,8 +14299,7 @@
                 "lew"
             ],
             "items": [
-                "wieża/mury",
-                "korona"
+                "wieża/mury"
             ]
         }
     },
@@ -14525,9 +14329,9 @@
             },
             "palette": [
                 {
-                    "color": "#ea2c33",
+                    "color": "#df2f37",
                     "name": "red",
-                    "distance": 70.55494312945054
+                    "distance": 79.10752176626443
                 }
             ]
         },
@@ -14569,16 +14373,19 @@
             },
             "palette": [
                 {
-                    "color": "#eb1c23",
+                    "color": "#e71b23",
                     "name": "red",
-                    "distance": 49.08156476723211
+                    "distance": 50.299105359837164
                 }
             ]
         },
         "imageUrl": "images/heraldyka/miasta/herb-sochocina.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "róża",
+                "kwiat"
+            ]
         }
     },
     "herb-soko_lowa-podlaskiego": {
@@ -14649,7 +14456,8 @@
                 "ptak"
             ],
             "items": [
-                "drzewo"
+                "drzewo",
+                "korona"
             ]
         }
     },
@@ -14747,9 +14555,9 @@
             },
             "palette": [
                 {
-                    "color": "#ec2c33",
+                    "color": "#eb2c33",
                     "name": "red",
-                    "distance": 69.98571282769076
+                    "distance": 70.26378868236469
                 }
             ]
         },
@@ -14821,9 +14629,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb1c2b",
+                    "color": "#e71c2b",
                     "name": "red",
-                    "distance": 55.072679252057455
+                    "distance": 56.64803615307419
                 }
             ]
         },
@@ -14833,7 +14641,8 @@
                 "byk/tur/żubr"
             ],
             "items": [
-                "topór/młot"
+                "topór/młot",
+                "korona"
             ]
         }
     },
@@ -14861,13 +14670,7 @@
                 "name": "green",
                 "distance": 159.68406307455982
             },
-            "palette": [
-                {
-                    "color": "#ec2d34",
-                    "name": "red",
-                    "distance": 71.34423592694787
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-wo_lomina.png",
         "markers": {
@@ -14911,6 +14714,44 @@
             "animals": [
                 "baran"
             ],
+            "items": []
+        }
+    },
+    "herb-wyszkowa": {
+        "title": "Herb Wyszkowa",
+        "url": "https://pl.wikipedia.org/wiki/Herb_Wyszkowa",
+        "type": "miasto",
+        "partOf": "Herby miast województwa mazowieckiego",
+        "place": {
+            "name": "Wyszków",
+            "coordinates": {
+                "lat": 52.593056,
+                "lon": 21.459167
+            }
+        },
+        "description": "Herb Wyszkowa – jeden z symboli miasta Wyszków i gminy Wyszków w postaci herbu.\n\n\n== Wygląd i symbolika ==\nHerb przedstawia w polu srebrnym poziomy pas czerwony o szerokości 1/3 wysokości tarczy, przechodzący przez jej środek.\n\n\n== Historia ==\nHerb znany z pieczęci z XVI wieku. Według Mariana Gumowskiego herb miał być uszczerbionym godłem z dolnego pola herbu kapituły płockiej, do której należał Wyszków. Dolne pole tego herbu zawierało błękitno-złote skosy, które w herbarzu Erazma Kamyna z 1575 zamieniono na czerwono-srebrne skosy. Taka też wersja barwna się upowszechniła.\n\n\n== Przypisy ==",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/POL_Wyszk%C3%B3w_COA.svg/langpl-320px-POL_Wyszk%C3%B3w_COA.svg.png",
+            "width": 320,
+            "height": 373
+        },
+        "colors": {
+            "primary": {
+                "color": "#0c0c0c",
+                "name": "red",
+                "distance": 243.59187178557497
+            },
+            "palette": [
+                {
+                    "color": "#fc0404",
+                    "name": "red",
+                    "distance": 6.4031242374328485
+                }
+            ]
+        },
+        "imageUrl": "images/heraldyka/miasta/herb-wyszkowa.png",
+        "markers": {
+            "animals": [],
             "items": []
         }
     },
@@ -14972,13 +14813,7 @@
                 "name": "green",
                 "distance": 200.84322243979258
             },
-            "palette": [
-                {
-                    "color": "#e32424",
-                    "name": "red",
-                    "distance": 58.1033561853358
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-z_abek.png",
         "markers": {
@@ -15019,9 +14854,9 @@
             },
             "palette": [
                 {
-                    "color": "#db231b",
+                    "color": "#d9241c",
                     "name": "red",
-                    "distance": 57.0087712549569
+                    "distance": 59.36328831862332
                 }
             ]
         },
@@ -15103,9 +14938,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2c34",
+                    "color": "#eb2e35",
                     "name": "red",
-                    "distance": 70.9929573971954
+                    "distance": 72.97259759663213
                 }
             ]
         },
@@ -15176,13 +15011,7 @@
                 "name": "blue",
                 "distance": 173.44163283364233
             },
-            "palette": [
-                {
-                    "color": "#e52b33",
-                    "name": "red",
-                    "distance": 71.596089278675
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-baborowa.png",
         "markers": {
@@ -15258,9 +15087,9 @@
             },
             "palette": [
                 {
-                    "color": "#db241c",
+                    "color": "#d9241c",
                     "name": "red",
-                    "distance": 58.1033561853358
+                    "distance": 59.36328831862332
                 }
             ]
         },
@@ -15296,13 +15125,7 @@
                 "name": "red",
                 "distance": 120.2746856158851
             },
-            "palette": [
-                {
-                    "color": "#e91e04",
-                    "name": "red",
-                    "distance": 37.416573867739416
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-dobrodzienia.png",
         "markers": {
@@ -15311,6 +15134,7 @@
                 "ptak"
             ],
             "items": [
+                "róża",
                 "kwiat"
             ]
         }
@@ -15375,9 +15199,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2c33",
+                    "color": "#e92c33",
                     "name": "red",
-                    "distance": 70.26378868236469
+                    "distance": 70.8590149522275
                 }
             ]
         },
@@ -15413,9 +15237,9 @@
             },
             "palette": [
                 {
-                    "color": "#ea2b33",
+                    "color": "#e52f36",
                     "name": "red",
-                    "distance": 69.93568473962345
+                    "distance": 76.16429609731846
                 }
             ]
         },
@@ -15425,6 +15249,7 @@
                 "lew"
             ],
             "items": [
+                "korona",
                 "postać świętego"
             ]
         }
@@ -15455,9 +15280,9 @@
             },
             "palette": [
                 {
-                    "color": "#ec3434",
+                    "color": "#ec3535",
                     "name": "red",
-                    "distance": 75.95393340703298
+                    "distance": 77.32399368889322
                 }
             ]
         },
@@ -15493,9 +15318,9 @@
             },
             "palette": [
                 {
-                    "color": "#d9231c",
+                    "color": "#d8312a",
                     "name": "red",
-                    "distance": 58.762232769015846
+                    "distance": 75.40557008603542
                 }
             ]
         },
@@ -15533,9 +15358,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb0404",
+                    "color": "#f90404",
                     "name": "red",
-                    "distance": 6.928203230275509
+                    "distance": 8.246211251235321
                 }
             ]
         },
@@ -15785,13 +15610,7 @@
                 "name": "blue",
                 "distance": 136.90872872099865
             },
-            "palette": [
-                {
-                    "color": "#d63223",
-                    "name": "red",
-                    "distance": 73.5255057786072
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-le_snicy.png",
         "markers": {
@@ -15860,13 +15679,7 @@
                 "name": "red",
                 "distance": 223.065012944657
             },
-            "palette": [
-                {
-                    "color": "#ea2f32",
-                    "name": "red",
-                    "distance": 71.76350047203663
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-namys_lowa.png",
         "markers": {
@@ -15985,7 +15798,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-otmuchowa": {
@@ -16124,9 +15939,9 @@
             },
             "palette": [
                 {
-                    "color": "#e92b33",
+                    "color": "#e53333",
                     "name": "red",
-                    "distance": 70.24243731534378
+                    "distance": 76.66811592833099
                 }
             ]
         },
@@ -16206,13 +16021,7 @@
                 "name": "blue",
                 "distance": 272.8131228515227
             },
-            "palette": [
-                {
-                    "color": "#e82b33",
-                    "name": "red",
-                    "distance": 70.5620294492725
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-prudnika.png",
         "markers": {
@@ -16222,7 +16031,8 @@
                 "lew"
             ],
             "items": [
-                "wieża/mury"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -16429,9 +16239,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb0404",
+                    "color": "#fa0404",
                     "name": "red",
-                    "distance": 6.928203230275509
+                    "distance": 7.54983443527075
                 }
             ]
         },
@@ -16507,9 +16317,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb0404",
+                    "color": "#f80404",
                     "name": "red",
-                    "distance": 6.928203230275509
+                    "distance": 9
                 }
             ]
         },
@@ -16656,9 +16466,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb0404",
+                    "color": "#f80404",
                     "name": "red",
-                    "distance": 6.928203230275509
+                    "distance": 9
                 }
             ]
         },
@@ -16833,7 +16643,8 @@
             "animals": [],
             "items": [
                 "wieża/mury",
-                "łódź"
+                "łódź",
+                "korona"
             ]
         }
     },
@@ -16863,9 +16674,9 @@
             },
             "palette": [
                 {
-                    "color": "#de2424",
+                    "color": "#db2525",
                     "name": "red",
-                    "distance": 60.67124524847005
+                    "distance": 63.51377803280167
                 }
             ]
         },
@@ -17156,13 +16967,7 @@
                 "name": "red",
                 "distance": 116.87172455303293
             },
-            "palette": [
-                {
-                    "color": "#fc070e",
-                    "name": "red",
-                    "distance": 15.937377450509228
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-le_zajska.png",
         "markers": {
@@ -17196,9 +17001,9 @@
             },
             "palette": [
                 {
-                    "color": "#d32c24",
+                    "color": "#d22b23",
                     "name": "red",
-                    "distance": 71.88880302244571
+                    "distance": 71.40728254176881
                 }
             ]
         },
@@ -17234,9 +17039,9 @@
             },
             "palette": [
                 {
-                    "color": "#db040c",
+                    "color": "#d6060d",
                     "name": "red",
-                    "distance": 38.157568056677825
+                    "distance": 43.42810150121693
                 }
             ]
         },
@@ -17272,13 +17077,7 @@
                 "name": "red",
                 "distance": 231.46057979707905
             },
-            "palette": [
-                {
-                    "color": "#ec2e2b",
-                    "name": "red",
-                    "distance": 65.7723346096214
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-mielca.png",
         "markers": {
@@ -17354,9 +17153,9 @@
                     "distance": 72.03471385380801
                 },
                 {
-                    "color": "#fa0404",
+                    "color": "#f90806",
                     "name": "red",
-                    "distance": 7.54983443527075
+                    "distance": 11.661903789690601
                 }
             ]
         },
@@ -17753,7 +17552,9 @@
                 "sokół",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "podkowa"
+            ]
         }
     },
     "herb-rudnika-nad-sanem": {
@@ -17821,9 +17622,9 @@
             },
             "palette": [
                 {
-                    "color": "#e4150d",
+                    "color": "#c20605",
                     "name": "red",
-                    "distance": 36.59234892706397
+                    "distance": 61.497967446087195
                 }
             ]
         },
@@ -17891,13 +17692,7 @@
                 "name": "blue",
                 "distance": 190.75638914594708
             },
-            "palette": [
-                {
-                    "color": "#eb2b33",
-                    "name": "red",
-                    "distance": 69.6419413859206
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-sanoka.png",
         "markers": {
@@ -17908,6 +17703,7 @@
             ],
             "items": [
                 "miecz",
+                "korona",
                 "postać świętego"
             ]
         }
@@ -18305,9 +18101,9 @@
             },
             "palette": [
                 {
-                    "color": "#e20414",
+                    "color": "#de0414",
                     "name": "red",
-                    "distance": 35.45419580247167
+                    "distance": 38.79432948254165
                 }
             ]
         },
@@ -18347,9 +18143,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb0404",
+                    "color": "#fa0404",
                     "name": "red",
-                    "distance": 6.928203230275509
+                    "distance": 7.54983443527075
                 }
             ]
         },
@@ -18389,9 +18185,9 @@
             },
             "palette": [
                 {
-                    "color": "#d8231b",
+                    "color": "#d1241b",
                     "name": "red",
-                    "distance": 58.94913061275798
+                    "distance": 64.35060217278468
                 }
             ]
         },
@@ -18535,9 +18331,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2c34",
+                    "color": "#eb2e35",
                     "name": "red",
-                    "distance": 70.9929573971954
+                    "distance": 72.97259759663213
                 }
             ]
         },
@@ -18575,14 +18371,9 @@
             },
             "palette": [
                 {
-                    "color": "#f90404",
+                    "color": "#d80d0c",
                     "name": "red",
-                    "distance": 8.246211251235321
-                },
-                {
-                    "color": "#07c407",
-                    "name": "green",
-                    "distance": 59.824744044584094
+                    "distance": 42.82522621072771
                 }
             ]
         },
@@ -18771,9 +18562,9 @@
             },
             "palette": [
                 {
-                    "color": "#da2824",
+                    "color": "#d82a26",
                     "name": "red",
-                    "distance": 65.30696746902278
+                    "distance": 68.76772498781678
                 }
             ]
         },
@@ -18809,13 +18600,7 @@
                 "name": "red",
                 "distance": 89.67719888578144
             },
-            "palette": [
-                {
-                    "color": "#ea2c34",
-                    "name": "red",
-                    "distance": 71.28113354878694
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-knyszyna.png",
         "markers": {
@@ -19028,19 +18813,14 @@
                 "name": "red",
                 "distance": 207.340299990137
             },
-            "palette": [
-                {
-                    "color": "#e62b33",
-                    "name": "red",
-                    "distance": 71.23903424387504
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-moniek.png",
         "markers": {
             "animals": [],
             "items": [
-                "kwiat"
+                "kwiat",
+                "korona"
             ]
         }
     },
@@ -19136,9 +18916,9 @@
             },
             "palette": [
                 {
-                    "color": "#db241c",
+                    "color": "#da241c",
                     "name": "red",
-                    "distance": 58.1033561853358
+                    "distance": 58.728187440104094
                 }
             ]
         },
@@ -19176,13 +18956,7 @@
                 "name": "blue",
                 "distance": 193.12690128513947
             },
-            "palette": [
-                {
-                    "color": "#e33138",
-                    "name": "red",
-                    "distance": 79.50471684120383
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-siemiatycz.png",
         "markers": {
@@ -19328,9 +19102,9 @@
             },
             "palette": [
                 {
-                    "color": "#e31b23",
+                    "color": "#df1d24",
                     "name": "red",
-                    "distance": 52.32590180780452
+                    "distance": 56.22277118748239
                 }
             ]
         },
@@ -19553,9 +19327,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb0404",
+                    "color": "#ea0404",
                     "name": "red",
-                    "distance": 20.784609690826528
+                    "distance": 21.748563170931547
                 }
             ]
         },
@@ -19591,13 +19365,7 @@
                 "name": "blue",
                 "distance": 150.20652449211386
             },
-            "palette": [
-                {
-                    "color": "#d6231b",
-                    "name": "red",
-                    "distance": 60.29096117993144
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-brus.png",
         "markers": {
@@ -19633,13 +19401,7 @@
                 "name": "blue",
                 "distance": 136.91238074038446
             },
-            "palette": [
-                {
-                    "color": "#d52f1e",
-                    "name": "red",
-                    "distance": 69.80687645210892
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-bytowa.png",
         "markers": {
@@ -19687,6 +19449,7 @@
                 "byk/tur/żubr"
             ],
             "items": [
+                "róża",
                 "kwiat"
             ]
         }
@@ -19753,9 +19516,9 @@
             },
             "palette": [
                 {
-                    "color": "#dc251b",
+                    "color": "#dc261b",
                     "name": "red",
-                    "distance": 57.645468165329355
+                    "distance": 58.29236656715869
                 }
             ]
         },
@@ -19831,13 +19594,7 @@
                 "name": "blue",
                 "distance": 214.403824592753
             },
-            "palette": [
-                {
-                    "color": "#e42c32",
-                    "name": "red",
-                    "distance": 71.8679344353238
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-dzierzgonia.png",
         "markers": {
@@ -19915,9 +19672,9 @@
             },
             "palette": [
                 {
-                    "color": "#e32c2c",
+                    "color": "#e42d2c",
                     "name": "red",
-                    "distance": 68.23488843692792
+                    "distance": 68.48357467305573
                 }
             ]
         },
@@ -20131,7 +19888,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-kwidzyna.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-_leby": {
@@ -20160,9 +19919,9 @@
             },
             "palette": [
                 {
-                    "color": "#ea2b33",
+                    "color": "#eb3531",
                     "name": "red",
-                    "distance": 69.93568473962345
+                    "distance": 74.89993324429602
                 }
             ]
         },
@@ -20201,9 +19960,9 @@
             },
             "palette": [
                 {
-                    "color": "#d9231c",
+                    "color": "#d3271d",
                     "name": "red",
-                    "distance": 58.762232769015846
+                    "distance": 65.55913361233506
                 }
             ]
         },
@@ -20239,9 +19998,9 @@
             },
             "palette": [
                 {
-                    "color": "#ea2b33",
+                    "color": "#e72b33",
                     "name": "red",
-                    "distance": 69.93568473962345
+                    "distance": 70.8942874990644
                 }
             ]
         },
@@ -20279,9 +20038,9 @@
             },
             "palette": [
                 {
-                    "color": "#da241c",
+                    "color": "#d3261e",
                     "name": "red",
-                    "distance": 58.728187440104094
+                    "distance": 65.4217089351845
                 }
             ]
         },
@@ -20325,6 +20084,8 @@
         "markers": {
             "animals": [],
             "items": [
+                "róża",
+                "kwiat",
                 "wieża/mury"
             ]
         }
@@ -20465,9 +20226,7 @@
                 "lew",
                 "ryba"
             ],
-            "items": [
-                "łódź"
-            ]
+            "items": []
         }
     },
     "herb-rumi": {
@@ -20566,13 +20325,7 @@
                 "name": "red",
                 "distance": 223.29352879114074
             },
-            "palette": [
-                {
-                    "color": "#e11d24",
-                    "name": "red",
-                    "distance": 55.10898293381942
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-sk_orcza.png",
         "markers": {
@@ -20580,7 +20333,9 @@
                 "ptak",
                 "gryf"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-s_lupska": {
@@ -20685,9 +20440,9 @@
             },
             "palette": [
                 {
-                    "color": "#f03010",
+                    "color": "#dc241b",
                     "name": "red",
-                    "distance": 52.773099207835045
+                    "distance": 57.0087712549569
                 }
             ]
         },
@@ -20725,9 +20480,9 @@
             },
             "palette": [
                 {
-                    "color": "#e91c24",
+                    "color": "#e21e25",
                     "name": "red",
-                    "distance": 50.635955604688654
+                    "distance": 55.767373974394744
                 }
             ]
         },
@@ -20772,7 +20527,8 @@
                 "syrena"
             ],
             "items": [
-                "łódź"
+                "łódź",
+                "korona"
             ]
         }
     },
@@ -20800,18 +20556,13 @@
                 "name": "red",
                 "distance": 182.8906777285272
             },
-            "palette": [
-                {
-                    "color": "#ef3930",
-                    "name": "red",
-                    "distance": 76.21679604916491
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-w_ladys_lawowa-wojew_odztwo-pomorskie.png",
         "markers": {
             "animals": [
-                "gryf"
+                "gryf",
+                "ryba"
             ],
             "items": [
                 "wieża/mury",
@@ -20851,7 +20602,8 @@
                 "gryf"
             ],
             "items": [
-                "kwiat"
+                "kwiat",
+                "korona"
             ]
         }
     },
@@ -20889,6 +20641,7 @@
             ],
             "items": [
                 "lilia",
+                "róża",
                 "kwiat"
             ]
         }
@@ -21068,9 +20821,9 @@
             },
             "palette": [
                 {
-                    "color": "#ea2b33",
+                    "color": "#e33037",
                     "name": "red",
-                    "distance": 69.93568473962345
+                    "distance": 78.18567643756751
                 }
             ]
         },
@@ -21160,7 +20913,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "korona"
+                "postać świętego"
             ]
         }
     },
@@ -21229,6 +20982,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "topór/młot",
                 "drzewo"
             ]
         }
@@ -21407,9 +21161,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2b33",
+                    "color": "#e82b33",
                     "name": "red",
-                    "distance": 69.6419413859206
+                    "distance": 70.5620294492725
                 }
             ]
         },
@@ -21485,9 +21239,9 @@
             },
             "palette": [
                 {
-                    "color": "#e33333",
+                    "color": "#e23434",
                     "name": "red",
-                    "distance": 77.3692445355388
+                    "distance": 79.05061669588669
                 }
             ]
         },
@@ -21561,9 +21315,9 @@
             },
             "palette": [
                 {
-                    "color": "#dc251c",
+                    "color": "#db251c",
                     "name": "red",
-                    "distance": 58.12056434688156
+                    "distance": 58.728187440104094
                 }
             ]
         },
@@ -21663,13 +21417,7 @@
                 "name": "red",
                 "distance": 95.3205119583398
             },
-            "palette": [
-                {
-                    "color": "#dc251d",
-                    "name": "red",
-                    "distance": 58.60887304837041
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-myszkowa.png",
         "markers": {
@@ -21677,9 +21425,7 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": [
-                "korona"
-            ]
+            "items": []
         }
     },
     "herb-nowego-bytomia": {
@@ -21780,9 +21526,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb0c04",
+                    "color": "#f90c04",
                     "name": "red",
-                    "distance": 13.2664991614216
+                    "distance": 14
                 }
             ]
         },
@@ -21858,7 +21604,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "drzewo"
+                "drzewo",
+                "postać świętego"
             ]
         }
     },
@@ -21888,9 +21635,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2c33",
+                    "color": "#ea2b33",
                     "name": "red",
-                    "distance": 70.26378868236469
+                    "distance": 69.93568473962345
                 }
             ]
         },
@@ -21926,13 +21673,7 @@
                 "name": "green",
                 "distance": 212.4899997646948
             },
-            "palette": [
-                {
-                    "color": "#eb2b33",
-                    "name": "red",
-                    "distance": 69.6419413859206
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-por_eby.png",
         "markers": {
@@ -22007,13 +21748,7 @@
                 "name": "red",
                 "distance": 202.12867188996222
             },
-            "palette": [
-                {
-                    "color": "#d2231b",
-                    "name": "red",
-                    "distance": 63.079315151640635
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-pszczyny.png",
         "markers": {
@@ -22225,6 +21960,7 @@
                 "ryba"
             ],
             "items": [
+                "róża",
                 "kwiat"
             ]
         }
@@ -22253,13 +21989,7 @@
                 "name": "red",
                 "distance": 83.47454701883683
             },
-            "palette": [
-                {
-                    "color": "#eb2b33",
-                    "name": "red",
-                    "distance": 69.6419413859206
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-siewierza.png",
         "markers": {
@@ -22296,9 +22026,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb0404",
+                    "color": "#fa0404",
                     "name": "red",
-                    "distance": 6.928203230275509
+                    "distance": 7.54983443527075
                 }
             ]
         },
@@ -22309,7 +22039,8 @@
                 "ptak"
             ],
             "items": [
-                "topór/młot"
+                "topór/młot",
+                "korona"
             ]
         }
     },
@@ -22337,13 +22068,7 @@
                 "name": "red",
                 "distance": 122.12698309546502
             },
-            "palette": [
-                {
-                    "color": "#e91d23",
-                    "name": "red",
-                    "distance": 50.49752469181039
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-sosnowca.png",
         "markers": {
@@ -22496,13 +22221,7 @@
                 "name": "blue",
                 "distance": 181.22085972646747
             },
-            "palette": [
-                {
-                    "color": "#ec2c34",
-                    "name": "red",
-                    "distance": 70.71774883294857
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-toszka.png",
         "markers": {
@@ -22573,9 +22292,9 @@
             },
             "palette": [
                 {
-                    "color": "#ea0404",
+                    "color": "#e52b26",
                     "name": "red",
-                    "distance": 21.748563170931547
+                    "distance": 63
                 }
             ]
         },
@@ -22583,6 +22302,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "róża",
                 "kwiat"
             ]
         }
@@ -22697,13 +22417,7 @@
                 "name": "red",
                 "distance": 226.4884102995118
             },
-            "palette": [
-                {
-                    "color": "#e92424",
-                    "name": "red",
-                    "distance": 55.46169849544819
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-_zarek.png",
         "markers": {
@@ -22768,9 +22482,9 @@
             },
             "palette": [
                 {
-                    "color": "#db0c13",
+                    "color": "#d2141a",
                     "name": "red",
-                    "distance": 42.43819034784589
+                    "distance": 55.68662316930342
                 }
             ]
         },
@@ -22808,9 +22522,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb0404",
+                    "color": "#fa0404",
                     "name": "red",
-                    "distance": 6.928203230275509
+                    "distance": 7.54983443527075
                 }
             ]
         },
@@ -22886,9 +22600,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb0404",
+                    "color": "#fa0404",
                     "name": "red",
-                    "distance": 6.928203230275509
+                    "distance": 7.54983443527075
                 }
             ]
         },
@@ -22991,13 +22705,7 @@
                 "name": "red",
                 "distance": 215.20687721353144
             },
-            "palette": [
-                {
-                    "color": "#eb2c33",
-                    "name": "red",
-                    "distance": 70.26378868236469
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-dzia_loszyc.png",
         "markers": {
@@ -23101,9 +22809,9 @@
             },
             "palette": [
                 {
-                    "color": "#e3041c",
+                    "color": "#e4041c",
                     "name": "red",
-                    "distance": 39.7994974842648
+                    "distance": 39.102429592034305
                 }
             ]
         },
@@ -23141,9 +22849,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2c34",
+                    "color": "#ea2d34",
                     "name": "red",
-                    "distance": 70.9929573971954
+                    "distance": 71.9027120489902
                 }
             ]
         },
@@ -23266,9 +22974,9 @@
             },
             "palette": [
                 {
-                    "color": "#fc0404",
+                    "color": "#fc0704",
                     "name": "red",
-                    "distance": 6.4031242374328485
+                    "distance": 8.602325267042627
                 }
             ]
         },
@@ -23338,13 +23046,7 @@
                 "name": "blue",
                 "distance": 181.22085972646747
             },
-            "palette": [
-                {
-                    "color": "#eb2c34",
-                    "name": "red",
-                    "distance": 70.9929573971954
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-kunowa.png",
         "markers": {
@@ -23420,13 +23122,7 @@
                 "name": "blue",
                 "distance": 128.3627671873741
             },
-            "palette": [
-                {
-                    "color": "#ee0e1d",
-                    "name": "red",
-                    "distance": 36.41428291206625
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-_lagowa.png",
         "markers": {
@@ -23498,9 +23194,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb2c2c",
+                    "color": "#fa2b2b",
                     "name": "red",
-                    "distance": 62.353829072479584
+                    "distance": 61.0163912403872
                 }
             ]
         },
@@ -23536,9 +23232,9 @@
             },
             "palette": [
                 {
-                    "color": "#ea1b23",
+                    "color": "#e6461d",
                     "name": "red",
-                    "distance": 48.938737212968626
+                    "distance": 79.78721702127478
                 }
             ]
         },
@@ -23616,9 +23312,9 @@
             },
             "palette": [
                 {
-                    "color": "#db0c14",
+                    "color": "#d31017",
                     "name": "red",
-                    "distance": 42.89522117905443
+                    "distance": 52.16320542297991
                 }
             ]
         },
@@ -23629,8 +23325,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża/mury",
-                "korona"
+                "wieża/mury"
             ]
         }
     },
@@ -23765,13 +23460,7 @@
                 "name": "red",
                 "distance": 85.75546629807339
             },
-            "palette": [
-                {
-                    "color": "#ea2c33",
-                    "name": "red",
-                    "distance": 70.55494312945054
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-osieka.png",
         "markers": {
@@ -23779,9 +23468,7 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": [
-                "korona"
-            ]
+            "items": []
         }
     },
     "herb-ostrowca-_swi_etokrzyskiego": {
@@ -23889,7 +23576,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot",
+                "postać świętego"
             ]
         }
     },
@@ -23929,6 +23617,8 @@
         "markers": {
             "animals": [],
             "items": [
+                "róża",
+                "kwiat",
                 "korona"
             ]
         }
@@ -23989,13 +23679,7 @@
                 "name": "red",
                 "distance": 217.47183725714922
             },
-            "palette": [
-                {
-                    "color": "#eb2b33",
-                    "name": "red",
-                    "distance": 69.6419413859206
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-po_la_nca.png",
         "markers": {
@@ -24072,9 +23756,9 @@
             },
             "palette": [
                 {
-                    "color": "#db241c",
+                    "color": "#da241b",
                     "name": "red",
-                    "distance": 58.1033561853358
+                    "distance": 58.25804665451803
                 }
             ]
         },
@@ -24084,7 +23768,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-s_edziszowa": {
@@ -24182,9 +23868,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb0404",
+                    "color": "#ea0404",
                     "name": "red",
-                    "distance": 20.784609690826528
+                    "distance": 21.748563170931547
                 }
             ]
         },
@@ -24298,8 +23984,7 @@
                 "ptak"
             ],
             "items": [
-                "topór/młot",
-                "łódź"
+                "topór/młot"
             ]
         }
     },
@@ -24363,9 +24048,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2c34",
+                    "color": "#eb3138",
                     "name": "red",
-                    "distance": 70.9929573971954
+                    "distance": 77.05193054038295
                 }
             ]
         },
@@ -24416,7 +24101,8 @@
                 "ptak"
             ],
             "items": [
-                "wieża/mury"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -24446,9 +24132,9 @@
             },
             "palette": [
                 {
-                    "color": "#e92c33",
+                    "color": "#e12b33",
                     "name": "red",
-                    "distance": 70.8590149522275
+                    "distance": 73.14369419163897
                 }
             ]
         },
@@ -24526,9 +24212,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb0404",
+                    "color": "#f50404",
                     "name": "red",
-                    "distance": 6.928203230275509
+                    "distance": 11.489125293076057
                 }
             ]
         },
@@ -24568,13 +24254,7 @@
                 "name": "blue",
                 "distance": 158.6978260720669
             },
-            "palette": [
-                {
-                    "color": "#c20423",
-                    "name": "red",
-                    "distance": 70.44146506142529
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-wodzis_lawia.png",
         "markers": {
@@ -24674,13 +24354,7 @@
                 "name": "green",
                 "distance": 128.51848116127113
             },
-            "palette": [
-                {
-                    "color": "#ed420b",
-                    "name": "red",
-                    "distance": 69.28924880528002
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-bia_lej-piskiej.png",
         "markers": {
@@ -24716,9 +24390,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2b33",
+                    "color": "#e53036",
                     "name": "red",
-                    "distance": 69.6419413859206
+                    "distance": 76.78541528180986
                 }
             ]
         },
@@ -24788,13 +24462,7 @@
                 "name": "green",
                 "distance": 212.67110758163648
             },
-            "palette": [
-                {
-                    "color": "#e03c1e",
-                    "name": "red",
-                    "distance": 73.89857914736926
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-braniewa.png",
         "markers": {
@@ -24831,9 +24499,9 @@
             },
             "palette": [
                 {
-                    "color": "#e31c23",
+                    "color": "#e3292b",
                     "name": "red",
-                    "distance": 52.848841046895245
+                    "distance": 65.68104749469211
                 }
             ]
         },
@@ -24910,9 +24578,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb0404",
+                    "color": "#f50604",
                     "name": "red",
-                    "distance": 6.928203230275509
+                    "distance": 12.328828005937952
                 }
             ]
         },
@@ -24982,13 +24650,7 @@
                 "name": "red",
                 "distance": 201.36533961930985
             },
-            "palette": [
-                {
-                    "color": "#d6231b",
-                    "name": "red",
-                    "distance": 60.29096117993144
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-fromborka.png",
         "markers": {
@@ -25058,9 +24720,9 @@
             },
             "palette": [
                 {
-                    "color": "#e82c33",
+                    "color": "#e93b2f",
                     "name": "red",
-                    "distance": 71.17583859709698
+                    "distance": 78.57480512225277
                 }
             ]
         },
@@ -25097,13 +24759,7 @@
                 "name": "green",
                 "distance": 214.06073904385175
             },
-            "palette": [
-                {
-                    "color": "#e92b33",
-                    "name": "red",
-                    "distance": 70.24243731534378
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-g_orowa-i_laweckiego.png",
         "markers": {
@@ -25147,7 +24803,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-i_lawy.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-k_etrzyna": {
@@ -25355,7 +25013,7 @@
                 "ryba"
             ],
             "items": [
-                "łódź"
+                "korona"
             ]
         }
     },
@@ -25483,13 +25141,7 @@
                 "name": "red",
                 "distance": 243.0658347032754
             },
-            "palette": [
-                {
-                    "color": "#cc2820",
-                    "name": "red",
-                    "distance": 72.2841614740048
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-mor_aga.png",
         "markers": {
@@ -25599,9 +25251,9 @@
             },
             "palette": [
                 {
-                    "color": "#da241b",
+                    "color": "#d9241b",
                     "name": "red",
-                    "distance": 58.25804665451803
+                    "distance": 58.89821729050889
                 }
             ]
         },
@@ -25610,7 +25262,10 @@
             "animals": [
                 "lew"
             ],
-            "items": []
+            "items": [
+                "róża",
+                "kwiat"
+            ]
         }
     },
     "herb-olecka": {
@@ -25639,9 +25294,9 @@
             },
             "palette": [
                 {
-                    "color": "#db251d",
+                    "color": "#d8261e",
                     "name": "red",
-                    "distance": 59.21148537234985
+                    "distance": 62.16912416947821
                 }
             ]
         },
@@ -25725,7 +25380,8 @@
             ],
             "items": [
                 "miecz",
-                "kwiat"
+                "kwiat",
+                "korona"
             ]
         }
     },
@@ -25755,9 +25411,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2b33",
+                    "color": "#ea3b30",
                     "name": "red",
-                    "distance": 69.6419413859206
+                    "distance": 78.90500617831546
                 }
             ]
         },
@@ -25767,9 +25423,7 @@
                 "smok",
                 "koń"
             ],
-            "items": [
-                "korona"
-            ]
+            "items": []
         }
     },
     "herb-pas_l_eka": {
@@ -25796,13 +25450,7 @@
                 "name": "green",
                 "distance": 176.92088627406318
             },
-            "palette": [
-                {
-                    "color": "#e32f32",
-                    "name": "red",
-                    "distance": 74.11477585475112
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-pas_l_eka.png",
         "markers": {
@@ -25881,9 +25529,9 @@
             },
             "palette": [
                 {
-                    "color": "#e82e33",
+                    "color": "#e72f34",
                     "name": "red",
-                    "distance": 72.42927584892728
+                    "distance": 74.08778576796583
                 }
             ]
         },
@@ -25983,13 +25631,7 @@
                 "name": "blue",
                 "distance": 147.09180806557515
             },
-            "palette": [
-                {
-                    "color": "#0c23f8",
-                    "name": "blue",
-                    "distance": 37.656340767525464
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-rynu.png",
         "markers": {
@@ -25998,7 +25640,8 @@
             ],
             "items": [
                 "drzewo",
-                "wieża/mury"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -26026,13 +25669,7 @@
                 "name": "red",
                 "distance": 117.27744881263405
             },
-            "palette": [
-                {
-                    "color": "#d2261a",
-                    "name": "red",
-                    "distance": 64.38167441127949
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-s_epopola.png",
         "markers": {
@@ -26171,13 +25808,7 @@
                 "name": "red",
                 "distance": 121.49074038789952
             },
-            "palette": [
-                {
-                    "color": "#d12f20",
-                    "name": "red",
-                    "distance": 73.13685801290619
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-w_egorzewa.png",
         "markers": {
@@ -26216,14 +25847,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb0404",
+                    "color": "#f80504",
                     "name": "red",
-                    "distance": 6.928203230275509
-                },
-                {
-                    "color": "#43fb04",
-                    "name": "green",
-                    "distance": 67.23838189605696
+                    "distance": 9.486832980505138
                 }
             ]
         },
@@ -26261,13 +25887,7 @@
                 "name": "blue",
                 "distance": 150.95032295427526
             },
-            "palette": [
-                {
-                    "color": "#da231c",
-                    "name": "red",
-                    "distance": 58.12056434688156
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-zalewa.png",
         "markers": {
@@ -26313,8 +25933,7 @@
                 "baran"
             ],
             "items": [
-                "drzewo",
-                "korona"
+                "drzewo"
             ]
         }
     },
@@ -26344,9 +25963,9 @@
             },
             "palette": [
                 {
-                    "color": "#fa0404",
+                    "color": "#f70404",
                     "name": "red",
-                    "distance": 7.54983443527075
+                    "distance": 9.797958971132712
                 }
             ]
         },
@@ -26457,9 +26076,9 @@
             },
             "palette": [
                 {
-                    "color": "#da2b1b",
+                    "color": "#d62b1b",
                     "name": "red",
-                    "distance": 62.82515419798029
+                    "distance": 65.26101439603893
                 }
             ]
         },
@@ -26497,9 +26116,9 @@
             },
             "palette": [
                 {
-                    "color": "#e31c24",
+                    "color": "#dd2327",
                     "name": "red",
-                    "distance": 53.51635264103861
+                    "distance": 62.465990746965666
                 }
             ]
         },
@@ -26575,9 +26194,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb4324",
+                    "color": "#f74425",
                     "name": "red",
-                    "distance": 76.16429609731846
+                    "distance": 77.82673062643708
                 }
             ]
         },
@@ -26760,9 +26379,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2c33",
+                    "color": "#e92c33",
                     "name": "red",
-                    "distance": 70.26378868236469
+                    "distance": 70.8590149522275
                 }
             ]
         },
@@ -26803,9 +26422,9 @@
             },
             "palette": [
                 {
-                    "color": "#dd2f28",
+                    "color": "#dd352d",
                     "name": "red",
-                    "distance": 70.46275611981126
+                    "distance": 77.3950902835574
                 }
             ]
         },
@@ -26843,9 +26462,9 @@
             },
             "palette": [
                 {
-                    "color": "#0504f8",
+                    "color": "#0504f5",
                     "name": "blue",
-                    "distance": 9.486832980505138
+                    "distance": 11.874342087037917
                 }
             ]
         },
@@ -26917,9 +26536,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2c33",
+                    "color": "#e92c34",
                     "name": "red",
-                    "distance": 70.26378868236469
+                    "distance": 71.58212067269312
                 }
             ]
         },
@@ -26956,13 +26575,7 @@
                 "name": "blue",
                 "distance": 164.2254547870092
             },
-            "palette": [
-                {
-                    "color": "#de1c23",
-                    "name": "red",
-                    "distance": 55.65968020030299
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-grodziska-wielkopolskiego.png",
         "markers": {
@@ -26998,9 +26611,9 @@
             },
             "palette": [
                 {
-                    "color": "#e31c14",
+                    "color": "#e01e15",
                     "name": "red",
-                    "distance": 44.36214602563767
+                    "distance": 47.97916214358062
                 }
             ]
         },
@@ -27041,9 +26654,9 @@
             },
             "palette": [
                 {
-                    "color": "#e30414",
+                    "color": "#e30413",
                     "name": "red",
-                    "distance": 34.64101615137755
+                    "distance": 34.07345007480164
                 }
             ]
         },
@@ -27151,9 +26764,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2c33",
+                    "color": "#e52b33",
                     "name": "red",
-                    "distance": 70.26378868236469
+                    "distance": 71.596089278675
                 }
             ]
         },
@@ -27225,9 +26838,9 @@
             },
             "palette": [
                 {
-                    "color": "#d9231b",
+                    "color": "#d4251d",
                     "name": "red",
-                    "distance": 58.29236656715869
+                    "distance": 63.7102817447859
                 }
             ]
         },
@@ -27264,13 +26877,7 @@
                 "name": "blue",
                 "distance": 190.04473157654226
             },
-            "palette": [
-                {
-                    "color": "#d9231b",
-                    "name": "red",
-                    "distance": 58.29236656715869
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-k_epna.png",
         "markers": {
@@ -27278,7 +26885,9 @@
                 "łabędź",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-kleczewa": {
@@ -27343,9 +26952,9 @@
             },
             "palette": [
                 {
-                    "color": "#e30413",
+                    "color": "#e10413",
                     "name": "red",
-                    "distance": 34.07345007480164
+                    "distance": 35.73513677041127
                 }
             ]
         },
@@ -27356,8 +26965,7 @@
                 "ptak"
             ],
             "items": [
-                "klucz",
-                "korona"
+                "klucz"
             ]
         }
     },
@@ -27385,13 +26993,7 @@
                 "name": "blue",
                 "distance": 182.32388762858255
             },
-            "palette": [
-                {
-                    "color": "#e02e35",
-                    "name": "red",
-                    "distance": 76.72027111526653
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-k_lodawy.png",
         "markers": {
@@ -27427,9 +27029,9 @@
             },
             "palette": [
                 {
-                    "color": "#e30404",
+                    "color": "#e20404",
                     "name": "red",
-                    "distance": 28.5657137141714
+                    "distance": 29.546573405388315
                 }
             ]
         },
@@ -27502,9 +27104,9 @@
             },
             "palette": [
                 {
-                    "color": "#f90404",
+                    "color": "#f30404",
                     "name": "red",
-                    "distance": 8.246211251235321
+                    "distance": 13.2664991614216
                 }
             ]
         },
@@ -27514,9 +27116,7 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": [
-                "korona"
-            ]
+            "items": []
         }
     },
     "herb-konina": {
@@ -27619,9 +27219,9 @@
             },
             "palette": [
                 {
-                    "color": "#cb0404",
+                    "color": "#ca0904",
                     "name": "red",
-                    "distance": 52.306787322488084
+                    "distance": 53.907327887774215
                 }
             ]
         },
@@ -27657,13 +27257,7 @@
                 "name": "green",
                 "distance": 242.5551483683659
             },
-            "palette": [
-                {
-                    "color": "#d82323",
-                    "name": "red",
-                    "distance": 63.0158710167526
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-ko_zminka.png",
         "markers": {
@@ -27816,7 +27410,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "klucz"
+                "klucz",
+                "róża"
             ]
         }
     },
@@ -27846,9 +27441,9 @@
             },
             "palette": [
                 {
-                    "color": "#db141f",
+                    "color": "#d11a21",
                     "name": "red",
-                    "distance": 51.54609587543949
+                    "distance": 62.297672508690084
                 }
             ]
         },
@@ -28140,13 +27735,7 @@
                 "name": "red",
                 "distance": 280.6439024814186
             },
-            "palette": [
-                {
-                    "color": "#d3261e",
-                    "name": "red",
-                    "distance": 65.4217089351845
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-miejskiej-g_orki.png",
         "markers": {
@@ -28269,9 +27858,9 @@
             },
             "palette": [
                 {
-                    "color": "#e92c33",
+                    "color": "#e82c33",
                     "name": "red",
-                    "distance": 70.8590149522275
+                    "distance": 71.17583859709698
                 }
             ]
         },
@@ -28305,13 +27894,7 @@
                 "name": "red",
                 "distance": 223.21962279333778
             },
-            "palette": [
-                {
-                    "color": "#eb2c33",
-                    "name": "red",
-                    "distance": 70.26378868236469
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-mi_los_lawia.png",
         "markers": {
@@ -28348,9 +27931,9 @@
             },
             "palette": [
                 {
-                    "color": "#db331b",
+                    "color": "#d7351e",
                     "name": "red",
-                    "distance": 68.01470429252781
+                    "distance": 72.86288492778748
                 }
             ]
         },
@@ -28361,7 +27944,8 @@
                 "ptak"
             ],
             "items": [
-                "wieża/mury"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -28389,18 +27973,15 @@
                 "name": "red",
                 "distance": 91.96194865269004
             },
-            "palette": [
-                {
-                    "color": "#dc352d",
-                    "name": "red",
-                    "distance": 77.83957862167549
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-murowanej-go_sliny.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "róża",
+                "kwiat"
+            ]
         }
     },
     "herb-nekli": {
@@ -28427,13 +28008,7 @@
                 "name": "red",
                 "distance": 80.45495634204272
             },
-            "palette": [
-                {
-                    "color": "#cc2b2c",
-                    "name": "red",
-                    "distance": 79.91245209602819
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-nekli.png",
         "markers": {
@@ -28623,9 +28198,9 @@
             },
             "palette": [
                 {
-                    "color": "#d8231c",
+                    "color": "#da321a",
                     "name": "red",
-                    "distance": 59.413803110051795
+                    "distance": 67.4166151627327
                 }
             ]
         },
@@ -28661,13 +28236,7 @@
                 "name": "red",
                 "distance": 219.4219679065886
             },
-            "palette": [
-                {
-                    "color": "#df2c32",
-                    "name": "red",
-                    "distance": 73.89181280764467
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-opalenicy.png",
         "markers": {
@@ -28704,9 +28273,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb0404",
+                    "color": "#f80404",
                     "name": "red",
-                    "distance": 6.928203230275509
+                    "distance": 9
                 }
             ]
         },
@@ -28785,9 +28354,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2c33",
+                    "color": "#ea2c33",
                     "name": "red",
-                    "distance": 70.26378868236469
+                    "distance": 70.55494312945054
                 }
             ]
         },
@@ -28825,9 +28394,9 @@
             },
             "palette": [
                 {
-                    "color": "#dc2c1c",
+                    "color": "#db2c1b",
                     "name": "red",
-                    "distance": 62.80923498976882
+                    "distance": 62.93647591023825
                 }
             ]
         },
@@ -28865,9 +28434,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2b33",
+                    "color": "#ea2c34",
                     "name": "red",
-                    "distance": 69.6419413859206
+                    "distance": 71.28113354878694
                 }
             ]
         },
@@ -28977,9 +28546,9 @@
             },
             "palette": [
                 {
-                    "color": "#e31b23",
+                    "color": "#df1e25",
                     "name": "red",
-                    "distance": 52.32590180780452
+                    "distance": 57.38466694161429
                 }
             ]
         },
@@ -28990,7 +28559,6 @@
                 "ptak"
             ],
             "items": [
-                "korona",
                 "postać świętego"
             ]
         }
@@ -29021,9 +28589,9 @@
             },
             "palette": [
                 {
-                    "color": "#ea2c33",
+                    "color": "#e52b33",
                     "name": "red",
-                    "distance": 70.55494312945054
+                    "distance": 71.596089278675
                 }
             ]
         },
@@ -29196,9 +28764,9 @@
             },
             "palette": [
                 {
-                    "color": "#fa0404",
+                    "color": "#f70504",
                     "name": "red",
-                    "distance": 7.54983443527075
+                    "distance": 10.246950765959598
                 }
             ]
         },
@@ -29314,9 +28882,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2c33",
+                    "color": "#e92d35",
                     "name": "red",
-                    "distance": 70.26378868236469
+                    "distance": 72.92461861401813
                 }
             ]
         },
@@ -29469,6 +29037,50 @@
             "items": []
         }
     },
+    "herb-stawiszyna": {
+        "title": "Herb Stawiszyna",
+        "url": "https://pl.wikipedia.org/wiki/Herb_Stawiszyna",
+        "type": "miasto",
+        "partOf": "Herby miast województwa wielkopolskiego",
+        "place": {
+            "name": "Stawiszyn",
+            "coordinates": {
+                "lat": 51.918333,
+                "lon": 18.111389
+            }
+        },
+        "description": "Herb Stawiszyna – jeden z symboli miasta Stawiszyn i gminy Stawiszyn w postaci herbu. Wizerunek herbowy wzorowany jest na osiemnastowiecznym.\n\n\n== Wygląd i symbolika ==\nHerb przedstawia na błękitnej tarczy herbowej ceglany mur czerwony z otwartą czerwoną bramą o zielonych wrotach. W bramie srebrny orzeł w koronie. Na murze w zielonym obramowaniu niby-herb przedstawiający miecz w słup, ostrzem ku górze, na polu biało-czerwonym z lewa w skos.\n\n\n== Przypisy ==",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/POL_Stawiszyn_COA.svg/langpl-320px-POL_Stawiszyn_COA.svg.png",
+            "width": 320,
+            "height": 369
+        },
+        "colors": {
+            "primary": {
+                "color": "#115216",
+                "name": "green",
+                "distance": 175.21986188785792
+            },
+            "palette": [
+                {
+                    "color": "#da2c25",
+                    "name": "red",
+                    "distance": 68.36665854054884
+                }
+            ]
+        },
+        "imageUrl": "images/heraldyka/miasta/herb-stawiszyna.png",
+        "markers": {
+            "animals": [
+                "orzeł",
+                "ptak"
+            ],
+            "items": [
+                "miecz",
+                "wieża/mury"
+            ]
+        }
+    },
     "herb-st_eszewa": {
         "title": "Herb Stęszewa",
         "url": "https://pl.wikipedia.org/wiki/Herb_St%C4%99szewa",
@@ -29508,7 +29120,8 @@
             ],
             "items": [
                 "miecz",
-                "strzała"
+                "strzała",
+                "korona"
             ]
         }
     },
@@ -29572,9 +29185,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2b33",
+                    "color": "#ea2b33",
                     "name": "red",
-                    "distance": 69.6419413859206
+                    "distance": 69.93568473962345
                 }
             ]
         },
@@ -29614,9 +29227,9 @@
             },
             "palette": [
                 {
-                    "color": "#eb2c33",
+                    "color": "#e62e33",
                     "name": "red",
-                    "distance": 70.26378868236469
+                    "distance": 73.08898685848642
                 }
             ]
         },
@@ -29769,13 +29382,7 @@
                 "name": "blue",
                 "distance": 149.14422550001726
             },
-            "palette": [
-                {
-                    "color": "#e2401e",
-                    "name": "red",
-                    "distance": 76.40026177965623
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-_srody-wielkopolskiej.png",
         "markers": {
@@ -29784,8 +29391,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża/mury",
-                "łódź"
+                "wieża/mury"
             ]
         }
     },
@@ -29813,13 +29419,7 @@
                 "name": "red",
                 "distance": 89.83317872590283
             },
-            "palette": [
-                {
-                    "color": "#d62e22",
-                    "name": "red",
-                    "distance": 70.37755323965163
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-trzcianki.png",
         "markers": {
@@ -29892,13 +29492,7 @@
                 "name": "green",
                 "distance": 204.9243762952568
             },
-            "palette": [
-                {
-                    "color": "#e62b33",
-                    "name": "red",
-                    "distance": 71.23903424387504
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-tuliszkowa.png",
         "markers": {
@@ -29977,18 +29571,7 @@
                 "name": "green",
                 "distance": 142.69197594819408
             },
-            "palette": [
-                {
-                    "color": "#2ccc04",
-                    "name": "green",
-                    "distance": 67.47592163134935
-                },
-                {
-                    "color": "#d22423",
-                    "name": "red",
-                    "distance": 67.42403132415029
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-wielenia.png",
         "markers": {
@@ -30024,9 +29607,9 @@
             },
             "palette": [
                 {
-                    "color": "#db2424",
+                    "color": "#d62525",
                     "name": "red",
-                    "distance": 62.353829072479584
+                    "distance": 66.47555941848101
                 }
             ]
         },
@@ -30098,9 +29681,9 @@
             },
             "palette": [
                 {
-                    "color": "#db231c",
+                    "color": "#da281c",
                     "name": "red",
-                    "distance": 57.48912940721924
+                    "distance": 61.26173356998641
                 }
             ]
         },
@@ -30108,6 +29691,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "róża",
                 "kwiat"
             ]
         }
@@ -30136,13 +29720,7 @@
                 "name": "green",
                 "distance": 131.36590120727678
             },
-            "palette": [
-                {
-                    "color": "#d32820",
-                    "name": "red",
-                    "distance": 67.52777206453653
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-wyrzyska.png",
         "markers": {
@@ -30290,9 +29868,9 @@
             },
             "palette": [
                 {
-                    "color": "#e92c33",
+                    "color": "#e02d34",
                     "name": "red",
-                    "distance": 70.8590149522275
+                    "distance": 75.43208866258443
                 }
             ]
         },
@@ -30328,13 +29906,7 @@
                 "name": "red",
                 "distance": 86.33075929238663
             },
-            "palette": [
-                {
-                    "color": "#d72d33",
-                    "name": "red",
-                    "distance": 78.90500617831546
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-barlinka.png",
         "markers": {
@@ -30410,9 +29982,9 @@
             },
             "palette": [
                 {
-                    "color": "#f90404",
+                    "color": "#f5312c",
                     "name": "red",
-                    "distance": 8.246211251235321
+                    "distance": 66.61080993352356
                 }
             ]
         },
@@ -30606,7 +30178,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-chojny.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-czaplinka": {
@@ -30753,14 +30327,9 @@
             },
             "palette": [
                 {
-                    "color": "#d9231c",
+                    "color": "#d2271f",
                     "name": "red",
-                    "distance": 58.762232769015846
-                },
-                {
-                    "color": "#0c3bcb",
-                    "name": "blue",
-                    "distance": 79.55501241279521
+                    "distance": 67.1341939699882
                 }
             ]
         },
@@ -30771,8 +30340,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża/mury",
-                "korona"
+                "wieża/mury"
             ]
         }
     },
@@ -30802,9 +30370,9 @@
             },
             "palette": [
                 {
-                    "color": "#e72e32",
+                    "color": "#e52f34",
                     "name": "red",
-                    "distance": 72.05553413860729
+                    "distance": 74.75961476626267
                 }
             ]
         },
@@ -30848,11 +30416,6 @@
                     "color": "#eb2c34",
                     "name": "red",
                     "distance": 70.9929573971954
-                },
-                {
-                    "color": "#1424d1",
-                    "name": "blue",
-                    "distance": 61.741396161732524
                 }
             ]
         },
@@ -30890,13 +30453,7 @@
                 "name": "blue",
                 "distance": 127.8436545159751
             },
-            "palette": [
-                {
-                    "color": "#da241c",
-                    "name": "red",
-                    "distance": 58.728187440104094
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-dobrej-powiat-_lobeski.png",
         "markers": {
@@ -30934,9 +30491,9 @@
             },
             "palette": [
                 {
-                    "color": "#d6231b",
+                    "color": "#d8301a",
                     "name": "red",
-                    "distance": 60.29096117993144
+                    "distance": 67.08949247087803
                 }
             ]
         },
@@ -31010,9 +30567,9 @@
             },
             "palette": [
                 {
-                    "color": "#d9241b",
+                    "color": "#d1261c",
                     "name": "red",
-                    "distance": 58.89821729050889
+                    "distance": 65.90902821313632
                 }
             ]
         },
@@ -31084,9 +30641,9 @@
             },
             "palette": [
                 {
-                    "color": "#db241c",
+                    "color": "#da241b",
                     "name": "red",
-                    "distance": 58.1033561853358
+                    "distance": 58.25804665451803
                 }
             ]
         },
@@ -31122,13 +30679,7 @@
                 "name": "red",
                 "distance": 218.53375025382235
             },
-            "palette": [
-                {
-                    "color": "#fa0404",
-                    "name": "red",
-                    "distance": 7.54983443527075
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-gryfic.png",
         "markers": {
@@ -31167,9 +30718,9 @@
             },
             "palette": [
                 {
-                    "color": "#d7241c",
+                    "color": "#cb261e",
                     "name": "red",
-                    "distance": 60.663003552412405
+                    "distance": 71.04927867332644
                 }
             ]
         },
@@ -31205,13 +30756,7 @@
                 "name": "red",
                 "distance": 210.15708410615142
             },
-            "palette": [
-                {
-                    "color": "#e72b33",
-                    "name": "red",
-                    "distance": 70.8942874990644
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-i_nska.png",
         "markers": {
@@ -31248,9 +30793,9 @@
             },
             "palette": [
                 {
-                    "color": "#e10404",
+                    "color": "#dc0404",
                     "name": "red",
-                    "distance": 30.528675044947494
+                    "distance": 35.45419580247167
                 }
             ]
         },
@@ -31355,13 +30900,7 @@
                 "name": "blue",
                 "distance": 133.86933928274988
             },
-            "palette": [
-                {
-                    "color": "#d6181b",
-                    "name": "red",
-                    "distance": 54.644304369257
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-ko_lobrzegu.png",
         "markers": {
@@ -31398,13 +30937,7 @@
                 "name": "red",
                 "distance": 195.54283418218117
             },
-            "palette": [
-                {
-                    "color": "#d4231b",
-                    "name": "red",
-                    "distance": 61.66846844214635
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-koszalina.png",
         "markers": {
@@ -31449,9 +30982,7 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": [
-                "korona"
-            ]
+            "items": []
         }
     },
     "herb-_lobza": {
@@ -31588,9 +31119,9 @@
             },
             "palette": [
                 {
-                    "color": "#d32c23",
+                    "color": "#d32d23",
                     "name": "red",
-                    "distance": 71.39327699440614
+                    "distance": 72.01388754955533
                 }
             ]
         },
@@ -31666,9 +31197,9 @@
             },
             "palette": [
                 {
-                    "color": "#da241c",
+                    "color": "#d3241d",
                     "name": "red",
-                    "distance": 58.728187440104094
+                    "distance": 63.8200595424354
                 }
             ]
         },
@@ -31710,9 +31241,9 @@
             },
             "palette": [
                 {
-                    "color": "#df241f",
+                    "color": "#d5251f",
                     "name": "red",
-                    "distance": 57.28001396647874
+                    "distance": 63.984373092185564
                 }
             ]
         },
@@ -31723,7 +31254,8 @@
                 "ptak"
             ],
             "items": [
-                "wieża/mury"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -31831,13 +31363,7 @@
                 "name": "red",
                 "distance": 219.3330800403806
             },
-            "palette": [
-                {
-                    "color": "#fa0404",
-                    "name": "red",
-                    "distance": 7.54983443527075
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-p_lot_ow.png",
         "markers": {
@@ -31951,9 +31477,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb4324",
+                    "color": "#f54424",
                     "name": "red",
-                    "distance": 76.16429609731846
+                    "distance": 77.5886589650833
                 }
             ]
         },
@@ -31991,13 +31517,7 @@
                 "name": "blue",
                 "distance": 134.07460609675496
             },
-            "palette": [
-                {
-                    "color": "#e52b33",
-                    "name": "red",
-                    "distance": 71.596089278675
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-pyrzyc.png",
         "markers": {
@@ -32005,6 +31525,7 @@
                 "gryf"
             ],
             "items": [
+                "róża",
                 "kwiat",
                 "wieża/mury"
             ]
@@ -32036,9 +31557,9 @@
             },
             "palette": [
                 {
-                    "color": "#d9231b",
+                    "color": "#d2261a",
                     "name": "red",
-                    "distance": 58.29236656715869
+                    "distance": 64.38167441127949
                 }
             ]
         },
@@ -32113,9 +31634,9 @@
             },
             "palette": [
                 {
-                    "color": "#e31b1c",
+                    "color": "#e01d1d",
                     "name": "red",
-                    "distance": 47.92702786528704
+                    "distance": 51.41011573610781
                 }
             ]
         },
@@ -32154,9 +31675,9 @@
             },
             "palette": [
                 {
-                    "color": "#fb0404",
+                    "color": "#f90404",
                     "name": "red",
-                    "distance": 6.928203230275509
+                    "distance": 8.246211251235321
                 }
             ]
         },
@@ -32298,9 +31819,9 @@
             },
             "palette": [
                 {
-                    "color": "#f50404",
+                    "color": "#f2140e",
                     "name": "red",
-                    "distance": 11.489125293076057
+                    "distance": 27.65863337187866
                 }
             ]
         },
@@ -32309,9 +31830,7 @@
             "animals": [
                 "gryf"
             ],
-            "items": [
-                "korona"
-            ]
+            "items": []
         }
     },
     "herb-szczecinka": {
@@ -32379,13 +31898,7 @@
                 "name": "red",
                 "distance": 218.08943119738746
             },
-            "palette": [
-                {
-                    "color": "#e42b33",
-                    "name": "red",
-                    "distance": 71.96526940128828
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-trzci_nskazdroju.png",
         "markers": {
@@ -32464,13 +31977,7 @@
                 "name": "red",
                 "distance": 116.02154972245458
             },
-            "palette": [
-                {
-                    "color": "#e72b33",
-                    "name": "red",
-                    "distance": 70.8942874990644
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-tuczna.png",
         "markers": {
@@ -32502,13 +32009,7 @@
                 "name": "green",
                 "distance": 170.46113926640288
             },
-            "palette": [
-                {
-                    "color": "#da231c",
-                    "name": "red",
-                    "distance": 58.12056434688156
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-tychowa.png",
         "markers": {
@@ -32611,13 +32112,7 @@
                 "name": "blue",
                 "distance": 148.96979559628858
             },
-            "palette": [
-                {
-                    "color": "#da231b",
-                    "name": "red",
-                    "distance": 57.645468165329355
-                }
-            ]
+            "palette": []
         },
         "imageUrl": "images/heraldyka/miasta/herb-z_locie_nca.png",
         "markers": {
