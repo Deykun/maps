@@ -40,6 +40,7 @@ export type AdministrativeUnit = {
   },
   markers?: {
     animals?: string[],
+    items?: string[],
   }
 }
 

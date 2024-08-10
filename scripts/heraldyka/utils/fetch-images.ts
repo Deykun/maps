@@ -138,10 +138,11 @@ export const fetchImages = async ({
                   [primary.name]: primary,
               }));
 
+              const description = unit?.description?.toLowerCase() || '';
+
               const animals: string[] = [];
 
-              // TODO: Add 'Trzymacze'
-
+              // TODO: replace the logic
               if (['Herb gminy Baranowo'].includes(unit.title)) {
                 animals.push('jastrząb')
                 animals.push('ptak');
@@ -192,7 +193,7 @@ export const fetchImages = async ({
               } else if (['Herb gminy Damasławek', 'Herb Żagania', 'Herb Sułkowic'].includes(unit.title)) {
                 animals.push('orzeł');
                 animals.push('ptak');
-              } else if (['Herb Siedlec'].includes(unit.title)) {
+              } else if (['Herb Siedlec', 'Herb Kowar'].includes(unit.title)) {
                 animals.push('koń');
               } else if (['Herb gminy Bielice'].includes(unit.title)) {
                 animals.push('lis');
@@ -271,7 +272,6 @@ export const fetchImages = async ({
               ].includes(unit.title)) {
                 // Doesn't have them
               } else {
-                const description = unit?.description?.toLowerCase() || '';
                 if (['orzeł', 'orła', 'orłem', 'orłów', ' orle '].some((animal) => description.includes(animal))) {
                     animals.push('orzeł');
                 }
@@ -332,7 +332,7 @@ export const fetchImages = async ({
                     animals.push('ptak');
                 }
 
-                if ([' wąż '].some((animal) => description.includes(animal))) {
+                if ([' wąż ', ' węże.'].some((animal) => description.includes(animal))) {
                     animals.push('wąż');
                 }
 
@@ -384,7 +384,7 @@ export const fetchImages = async ({
                     animals.push('baran');
                 }
 
-                if (['ryba ', ' ryba.', ' ryb ', 'rybogryfa', ' rybo ', ' rybo,', 'rybę', 'ryby', 'rybą', ' karpia ', 'łososia', ' suma ', 'leszcza ', ' leszcze '].some((animal) => description.includes(animal))) {
+                if (['ryba ', ' ryba.', ' ryb ', 'rybogryfa', 'rybopodobne', ' rybo ', ' rybo,', 'rybę', 'ryby', 'rybą', ' karpia ', 'łososia', ' suma ', 'leszcza ', ' leszcze '].some((animal) => description.includes(animal))) {
                     animals.push('ryba');
                 }
 
@@ -457,16 +457,179 @@ export const fetchImages = async ({
                 }
               }
 
+              const items: string[] = [];
+
+              if (['podkowa', 'podkowę'].some((item) => description.includes(item))) {
+                if (![
+                  'Herb Bobowej'
+                ].includes(unit.title)) {
+                  items.push('podkowa');
+                }
+              }
+              
+              if (['klucz'].some((item) => description.includes(item))) {
+                if (![
+                  'Herb gminy Łabowa',
+                  'Herb gminy Nawojowa',
+                  'Herb gminy Baranów (powiat grodziski)',
+                  'Herb gminy Goworowo',
+                  'Herb gminy Koszęcin',
+                  'Herb Olkusza',
+                  'Herb Chorzel',
+                  'Herb Karczewa',
+                  'Herb Kluczborka',
+                  'Herb Ślesina',
+                  'Herb Człopy',
+                ].includes(unit.title)) {
+                  items.push('klucz');
+                }
+              }
+
+              if (['miecz'].some((item) => description.includes(item))) {
+                if (![
+                  'Herb Siechnic',
+                  'Herb gminy Golub-Dobrzyń',
+                  'Herb gminy Rojewo',
+                  'Herb gminy Brzeźnica (powiat żagański)',
+                  'Herb gminy Rząśnia',
+                  'Herb gminy Czerwonka',
+                  'Herb gminy Nadarzyn',
+                  'Herb gminy Juchnowiec Kościelny',
+                  'Herb Legnicy',
+                  'Herb Bochni',
+                  'Herb Grybowa',
+                  'Herb Iłży',
+                  'Herb Ostrowi Mazowieckiej',
+                  'Herb Przysuchy',
+                  'Herb Kańczugi',
+                  'Herb Rzeszowa',
+                  'Herb Pszczyny',
+                  'Herb Sandomierza',
+                ].includes(unit.title)) {
+                  items.push('miecz');
+                }
+              }
+
+              if (['strzał'].some((item) => description.includes(item))) {
+                if (![
+                  'Herb gminy Nadarzyn',
+                  'Herb gminy Ożarowice',
+                  'Herb Głowna',
+                ].includes(unit.title)) {
+                  items.push('strzała');
+                }
+              }
+
+              if (['topór', 'toporami', 'toporem', 'toporek', ' młot', 'herb górniczy'].some((item) => description.includes(item))) {
+                if (![
+                  'Herb Zaklikowa',
+                  'Herb Iwanisk',
+                  'Herb gminy Krasocin',
+                  'Herb Szubina',
+                  'Herb Głowna',
+                  'Herb Sułkowic',
+                ].includes(unit.title)) {
+                  items.push('topór/młot');
+                }
+              }
+
+              if (['drzewo', ' drzew', 'drzewa', 'dąb', ' dębu', ' jodła'].some((item) => description.includes(item))) {
+                if (![
+                  'Herb Węgorzyna',
+                  'Herb Bobowej',
+                  'Herb Opatówka',
+                ].includes(unit.title)) {
+                  items.push('drzewo');
+                }
+              }
+
+              const lilia = [' lilie', ' lilia'];
+
+              if ([' lilie', ' lilia'].some((item) => description.includes(item))) {
+                if (![
+                  'Herb Birczy',
+                  'Herb Starogardu Gdańskiego',
+                ].includes(unit.title)) {
+                  items.push('lilia');
+                }
+              }
+
+              if (['róża ', 'kwiat', ...lilia].some((item) => description.includes(item))) {
+                if (![
+                  'Herb gminy Bytoń',
+                  'Herb gminy Wodzierady',
+                  'Herb gminy Krościenko nad Dunajcem',
+                  'Herb gminy Lelis',
+                  'Herb Birczy',
+                  'Herb Mogilna',
+                  'Herb Drzewicy',
+                  'Herb Kielc',
+                  'Herb Bojanowa',
+                  'Herb Krotoszyna',
+                  'Herb Dobrej (powiat łobeski)',
+                  'Herb Węgorzyna',
+                  'Herb Rogoźna',
+                  'Herb Starogardu Gdańskiego',
+                ].includes(unit.title)) {
+                  items.push('kwiat');
+                }
+              }
+
+              if (['wieża', ' wieże', ' wieżę', ' wieżą', ' muru ', ' mur ', 'baszt'].some((item) => description.includes(item))) {
+                if (![
+                  'Herb gminy Gaworzyce',
+                  'Herb Oleśnicy',
+                  'Herb Jasienia',
+                  'Herb Grybowa',
+                  'Herb Otwocka',
+                  'Herb Przysuchy',
+                  'Herb Ogrodzieńca',
+                  'Herb Pszczyny',
+                  'Herb Sandomierza',
+                  'Herb Korsz',
+                  'Herb Zdun',
+                  'Herb Choszczna',
+                  'Herb Koszalina',
+                  'Herb Legnicy',
+                  'Herb Prusic',
+                  'Herb Brodnicy',
+                  'Herb Kowalewa Pomorskiego',
+                  'Herb Łabiszyna',
+                  'Herb Mogilna',
+                  'Herb Krasnobrodu',
+                  'Herb Aleksandrowa Łódzkiego',
+                  'Herb Staszowa',
+                  'Herb Nysy',
+                ].includes(unit.title)) {
+                  items.push('wieża');
+                }
+              }
+
+              if (['łódka', 'łódź', 'statek', ' łodzi'].some((item) => description.includes(item))) {
+                if (![
+                  'Herb Głowna',
+                  'Herb Aleksandrowa Łódzkiego',
+                  'Herb Koluszek',
+                  'Herb Gogolina',
+                  'Herb Gdańska',
+                  'Herb Czempinia',
+                  'Herb Goleniowa',
+                ].includes(unit.title)) {
+                  items.push('łódź');
+                }
+              }
+
               contentToSave[fileName] = {
-                  ...unit,
-                  colors: {
-                      primary,
-                      palette: uniqPalette.filter(({ distance }) => distance < 80),
-                  },
-                  imageUrl: `images/heraldyka/${path}/${fileName}.${format}`,
-                  markers: {
-                      animals,
-                  }
+                ...unit,
+                colors: {
+                  primary,
+                  palette: uniqPalette.filter(({ distance }) => distance < 80),
+                },
+                imageUrl: `images/heraldyka/${path}/${fileName}.${format}`,
+                markers: {
+                  animals,
+                  items,
+                }
               }
           } catch {
               console.log(chalk.red('Missing colors for ', unit.title));

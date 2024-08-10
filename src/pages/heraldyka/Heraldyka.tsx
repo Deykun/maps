@@ -3,7 +3,7 @@ import { useState, useMemo, useCallback } from 'react';
 import SvgPowiaty from './SvgPowiaty';
 import ListItem from './ListItem';
 import './Heraldyka.scss';
-import { colorsByNames, AdministrativeUnit } from './constants';
+import { AdministrativeUnit } from './constants';
 
 import gminyJSON from './gminy-images.json'
 import miastaJSON from './miasta-images.json'
@@ -25,25 +25,33 @@ const allUnits: AdministrativeUnit[] = [...gminy, ...miasta].filter((unit: Admin
   return true;
 });
 
-const animalsByName = allUnits.reduce((stack: {
-  [animal: string]: number,
-}, unit) => {
-  (unit?.markers?.animals || []).forEach((animal) => {
-    if (stack[animal]) {
-      stack[animal] = stack[animal] + 1;
-    } else {
-      stack[animal] = 1;
-    }
-  })
+const getFilter = (units: AdministrativeUnit[], name: 'animals' | 'items') => {
+  const filterByName = units.reduce((stack: {
+    [key: string]: number,
+  }, unit) => {
+    const marker = unit?.markers?.[name] || [];
+    marker.forEach((value: string) => {
+      if (stack[value]) {
+        stack[value] = stack[value] + 1;
+      } else {
+        stack[value] = 1;
+      }
+    })
+  
+    return stack;
+  }, {});
 
-  return stack;
-}, {});
+  
+  return Object.entries(filterByName).map(
+    ([value, total]) => ({ value, total }),
+  ).filter(
+    ({ total }) => total >= 5,
+  ).sort((a, b) => b.total - a.total);
+}
 
-const animalFilters = Object.entries(animalsByName).map(
-  ([value, total]) => ({ value, total }),
-).filter(
-  ({ total }) => total >= 5,
-).sort((a, b) => b.total - a.total);
+const animalFilters = getFilter(allUnits, 'animals');
+
+const itemsFilters = getFilter(allUnits, 'items');
 
 // https://pl.wikipedia.org/wiki/Geografia_Polski
 
@@ -72,6 +80,7 @@ const getPostionForPlace = (unit: AdministrativeUnit) => {
 const Heraldyka = () => {
     const [colorFilters, setColorFilters] = useState<string[]>([]);
     const [animalFilter, setAnimalFilter] = useState<string>('');
+    const [itemFilter, setItemFilter] = useState<string>('');
 
     const { units, unitsWithLocation, subtitle } = useMemo(() => {
         const filteredUnits = allUnits.filter(
@@ -110,6 +119,23 @@ const Heraldyka = () => {
 
             return false;
           }
+        ).filter(
+          (unit) => {
+            const isActive = itemFilter !== '';
+            if (!isActive) {
+              return true;
+            }
+
+            const hasItem = Array.isArray(unit?.markers?.items)
+              && unit.markers.items.length > 0
+              && unit.markers.items.includes(itemFilter);
+
+            if (hasItem) {
+              return true;
+            }
+
+            return false;
+          }
         );
 
         const unitsWithLocation = filteredUnits.filter(
@@ -119,11 +145,11 @@ const Heraldyka = () => {
         return {
           units: filteredUnits,
           unitsWithLocation,
-          subtitle: [animalFilter, ...colorFilters].filter(Boolean).map(
+          subtitle: [itemFilter, animalFilter, ...colorFilters].filter(Boolean).map(
             (name) => name.replace('red', 'czerwony').replace('green', 'zielony').replace('blue', 'niebieski'
           )).join(' + '),
         }
-    }, [colorFilters, animalFilter]);
+    }, [colorFilters, animalFilter, itemFilter]);
 
     const toggleColor = useCallback((color: string) => {
         if (colorFilters.includes(color)) {
@@ -134,7 +160,7 @@ const Heraldyka = () => {
     }, [colorFilters]);
 
     // We have 2000 nodes and Reacts sometimes doesn't remove them, this force rerender of the parent
-    const hashKey = `hash-${animalFilter}-${colorFilters.join('-')}`;
+    const hashKey = `hash-${animalFilter}-${colorFilters.join('-')}-${itemFilter}`;
 
     return (
         <>
@@ -192,6 +218,19 @@ const Heraldyka = () => {
                 <button
                   onClick={() => setAnimalFilter(animalFilter === value ? '' : value)}
                   className={animalFilter === value ? 'font-[800]' : ''}
+                >
+                  {value} <small className="opacity-70 tracking-widest">({total})</small>
+                </button>
+              )}
+            </div>
+          </details>
+          <details className="mb-3">
+            <summary className="w-fit">Cechy</summary>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-7 mt-3">
+              {itemsFilters.map(({ value, total }) => 
+                <button
+                  onClick={() => setItemFilter(itemFilter === value ? '' : value)}
+                  className={itemFilter === value ? 'font-[800]' : ''}
                 >
                   {value} <small className="opacity-70 tracking-widest">({total})</small>
                 </button>

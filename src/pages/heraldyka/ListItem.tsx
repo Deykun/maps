@@ -1,7 +1,6 @@
 import './Heraldyka.scss';
 import { colorsByNames, AdministrativeUnit } from './constants';
 
-
 const ListItem = ({ title, url, imageUrl, colors, place, markers }: AdministrativeUnit) => {
     const colorClassName = "block size-5 rounded-[4px] shadow-md";
 
@@ -9,9 +8,10 @@ const ListItem = ({ title, url, imageUrl, colors, place, markers }: Administrati
         <li className="shadow-md p-5 flex gap-4 items-center">
           {imageUrl && <img src={imageUrl} loading="lazy" className="size-20 object-contain" />}
           <div>
-            <h3 className="text-[16px] font-[500] mb-2"><a href={url} target="_blank"> {title}</a></h3>
+            <h3 className="text-[16px] font-[500] mb-2"><a href={url} target="_blank" title="Otwórz Wikipedię w nowej karcie">{title}</a></h3>
             {place?.name && <p className="text-[14px] opacity-70 mb-2">{place?.name}</p>}
-            {(markers?.animals?.length || 0) > 0 && <span className="text-[12px]">Zwierzęta: {markers?.animals?.join(', ')}</span>}
+            {(markers?.animals?.length || 0) > 0 && <p className="text-[12px]">Zwierzęta: {markers?.animals?.join(', ')}</p>}
+            {(markers?.items?.length || 0) > 0 && <p className="text-[12px]">Cechy: {markers?.items?.join(', ')}</p>}
             <div className="flex hidden items-center gap-2 text-[14px]">
               <h4>Wiodący:</h4>
               {colors?.primary?.color && <span className={colorClassName} style={{ backgroundColor: `${colors?.primary?.color}` }}></span>}
