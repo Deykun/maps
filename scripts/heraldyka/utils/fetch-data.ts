@@ -13,6 +13,7 @@ export const fetchData = async ({
   administrativeDivisions: AdministrativeUnit[]
   path: string,
 }) => {
+  const start = (new Date()).getTime();
   const errors: { title: string, url: string }[] = [];
   wiki.setLang('pl');
 
@@ -26,7 +27,18 @@ export const fetchData = async ({
     const division = administrativeDivisions[i];
 
     if (i % 1 === 0) {
-      console.log(`Progress ${chalk.yellow((i / total * 100).toFixed(1))}%. ${i} out of ${total}. - ${division.title}`);
+      const progressPercent = (i / total) * 100;
+      const now = (new Date()).getTime();
+      const timeDiffrenceInSeconds = Math.floor((now - start) / 1000);
+      const timePerPercentage = timeDiffrenceInSeconds / progressPercent;
+      const expectedTimeInSeconds = Math.floor(timePerPercentage * 100);
+      const timeLeftSeconds = Math.floor(expectedTimeInSeconds - timeDiffrenceInSeconds);
+      const timeLeftMinutes = Math.floor(timeLeftSeconds / 60);
+      const timeLeftSecondsToShow = timeLeftSeconds - (timeLeftMinutes * 60);
+
+      const timeStatus = timeDiffrenceInSeconds === 0 ? '' : `- ${timeDiffrenceInSeconds}s passed and ${timeLeftMinutes}m ${timeLeftSecondsToShow}s to finish.`;
+
+      console.log(`Progress ${chalk.yellow((i / total * 100).toFixed(1))}%. ${i} out of ${total}. - ${division.title} ${timeStatus}`);
     }
 
     try {
@@ -43,15 +55,11 @@ export const fetchData = async ({
 
       if (!locationPage) {
         if (path.includes('miasta')) {
-          locationPage = categories.find((category) => !category.includes('województwa'))
+          locationPage = categories.find((category) => !['przypisami', 'herby', 'artykuły', 'herbach', 'błędne dane', 'szablon', 'brak numeru'].some((subcat) => category.toLowerCase().includes(subcat)));
         } else {
           locationPage = categories.find((category) => category.includes('(gmina') || category.includes('(gmina wiejska'))
         }
       }
-      
-      path.includes('miasta')
-        ? categories.find((category) => !category.includes('województwa'))
-        : categories.find((category) => category.includes('(gmina') || category.includes('(gmina wiejska'))
 
       if (locationPage) {
         const divisionPage = await wiki.page(locationPage.replace('Kategoria:', ''));
@@ -78,7 +86,10 @@ export const fetchData = async ({
         }
       } else {
         console.log(chalk.red(`Missing corrdinates for "${division.title}". - No category.`));
+        console.log('Missing page', locationPage);
         console.log(chalk.red(division.url));
+        
+
         errors.push({
           title: `Missing corrdinates for "${division.title}". No category.`,
           url: division.url,
