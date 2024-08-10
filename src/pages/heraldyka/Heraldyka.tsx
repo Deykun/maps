@@ -5,6 +5,7 @@ import ListItem from './ListItem';
 import MapItem from './MapItem';
 import './Heraldyka.scss';
 import { AdministrativeUnit } from './constants';
+import { removeDiacratics } from '../../utils/text';
 
 import gminyJSON from './gminy-images.json'
 import miastaJSON from './miasta-images.json'
@@ -84,7 +85,8 @@ const getPostionForPlace = (unit: AdministrativeUnit) => {
 }
 
 const Heraldyka = () => {
-    const [page, setPage] = useState(1);
+    const [listPage, setListPage] = useState(1);
+    const [listPhrase, setListPhrase] = useState('');
     const [shouldFitMap, setShouldFitMap] = useState(true);
     const [colorFilters, setColorFilters] = useState<string[]>([]);
     const [animalFilters, setAnimalFilters] = useState<string[]>([]);
@@ -160,7 +162,8 @@ const Heraldyka = () => {
           (unit) => typeof unit?.place?.coordinates?.lon === 'number',
         );
 
-        setPage(1);
+        setListPage(1);
+        setListPhrase('');
 
         return {
           units: filteredUnits,
@@ -170,6 +173,21 @@ const Heraldyka = () => {
           )).join(' + '),
         }
     }, [colorFilters, animalFilters, itemFilters]);
+
+    const unitsForList = useMemo(() => {
+      if (listPhrase === '') {
+        return units;
+      }
+
+      const listPhraseNormalized = removeDiacratics(listPhrase.toLowerCase(), 'pl', '');
+
+      return units.filter((unit) => {
+        const text = `${unit.title} ${unit?.place?.name || ''}`.toLowerCase();
+        const indexText = removeDiacratics(text, 'pl', '');
+
+        return indexText.includes(listPhraseNormalized);
+      })
+    }, [units, listPhrase]);
 
     const toggleColor = useCallback((color: string) => {
       setColorFilters((colors) => {
@@ -233,6 +251,7 @@ const Heraldyka = () => {
                     <MapItem
                       key={`${unit.title}-${unit?.place?.coordinates?.lon}`}
                       {...unit}
+                      setListPhrase={setListPhrase}
                       total={unitsWithLocation.length}
                       style={getPostionForPlace(unit)}
                     />
@@ -307,11 +326,25 @@ const Heraldyka = () => {
               )}
             </div>
           </details>
+
+          <div className="mt-10">
+            <h3 className="inline text-[24px]">Lista</h3>
+            <br />
+            <div>
+              <label>Ogranicz listę do:</label>
+              {' '}
+              <input
+                value={listPhrase} onChange={(e) => setListPhrase(e.target.value || '')}
+                className="border-[black] border-b min-w-fit px-2"
+                placeholder="miejscowość"
+              />
+            </div>
+          </div>
           <ul className="mt-10 grid md:grid-cols-2 xl:grid-cols-3 gap-5" key={hashKey}>
-            {units.slice(0, 30 * page).map((unit) => (<ListItem key={unit.title} {...unit} />))}
+            {unitsForList.slice(0, 30 * listPage).map((unit) => (<ListItem key={unit.title} {...unit} />))}
           </ul>
-          {units.length > 30 * page && <div className="mt-5 text-center">
-            <button onClick={() => setPage(page + 1)}>Więcej</button>
+          {unitsForList.length > 30 * listPage && <div className="mt-5 text-center">
+            <button onClick={() => setListPage(listPage + 1)}>Więcej</button>
           </div>}
         </>
     );

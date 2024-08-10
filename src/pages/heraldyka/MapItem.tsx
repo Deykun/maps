@@ -6,16 +6,18 @@ type Props = AdministrativeUnit & {
     top: string,
     left: string,
   },
-  total: number
+  setListPhrase: (title: string) => void,
+  total: number,
 }
 
-const MapItem = ({ title, imageUrl, markers, total, style }: Props) => {
+const MapItem = ({ title, imageUrl, markers, setListPhrase, total, style }: Props) => {
     const imageClassName = `${total < 25 ? 'size-4 md:size-6 lg:size-8' : (total < 60 ? 'size-3 md:size-5 lg:size-7' : 'size-2 sm:size-3 md:size-4 lg:size-5')} scale-100 group-hover:scale-[800%] ease-in transition delay-0 group-hover:delay-800 duration-100 object-contain`;
 
     return (
-      <span
+      <button
         className="absolute hover:z-10 group"
         style={style}
+        onClick={() => setListPhrase(title)}
       >
         <img src={imageUrl}
           loading="lazy"
@@ -29,7 +31,7 @@ const MapItem = ({ title, imageUrl, markers, total, style }: Props) => {
             {title}
           </h3>
         </div>
-    </span>
+    </button>
     );
 };
 
