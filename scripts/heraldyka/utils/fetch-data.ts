@@ -4,6 +4,8 @@ import chalk from 'chalk';
 
 import { AdministrativeUnit } from '../../../src/pages/heraldyka/constants';
 
+import { locationTitleByHerbTitle } from './constants';
+
 export const fetchData = async ({
   administrativeDivisions,
   path,
@@ -11,6 +13,7 @@ export const fetchData = async ({
   administrativeDivisions: AdministrativeUnit[]
   path: string,
 }) => {
+  const errors: { title: string, url: string }[] = [];
   wiki.setLang('pl');
 
   const total = administrativeDivisions.length;
@@ -36,12 +39,22 @@ export const fetchData = async ({
       const categories = await page.categories();
       // const images = await page.images()
 
-      const maindivisionCategory = path.includes('miasta')
-        ? categories.find((category) => !category.includes('województwa'))
-        : categories.find((category) => category.includes('(gmina)') || category.includes('(gmina wiejska)'))
+      let locationPage: string | undefined = locationTitleByHerbTitle[division.title];
 
-      if (maindivisionCategory) {
-        const divisionPage = await wiki.page(maindivisionCategory.replace('Kategoria:', ''));
+      if (!locationPage) {
+        if (path.includes('miasta')) {
+          locationPage = categories.find((category) => !category.includes('województwa'))
+        } else {
+          locationPage = categories.find((category) => category.includes('(gmina') || category.includes('(gmina wiejska'))
+        }
+      }
+      
+      path.includes('miasta')
+        ? categories.find((category) => !category.includes('województwa'))
+        : categories.find((category) => category.includes('(gmina') || category.includes('(gmina wiejska'))
+
+      if (locationPage) {
+        const divisionPage = await wiki.page(locationPage.replace('Kategoria:', ''));
         // console.log(divisionPage);
         // const divisionSummary = await page.summary();
         // console.log(divisionSummary);
@@ -56,10 +69,20 @@ export const fetchData = async ({
         }
 
         if (!coordinates.lon) {
-          console.log(chalk.red(`Missing corrdinates for ${page.title}.`));
+          console.log(chalk.red(`Missing corrdinates for "${division.title}". No data.`));
+          console.log(chalk.red(division.url));
+          errors.push({
+            title: `Missing corrdinates for "${division.title}". No data.`,
+            url: division.url,
+          });
         }
       } else {
-        console.log(chalk.red(`Missing corrdinates for ${page.title}.`));
+        console.log(chalk.red(`Missing corrdinates for "${division.title}". - No category.`));
+        console.log(chalk.red(division.url));
+        errors.push({
+          title: `Missing corrdinates for "${division.title}". No category.`,
+          url: division.url,
+        });
       }
 
       contentToSave.push({
@@ -67,12 +90,17 @@ export const fetchData = async ({
         description: content.substring(0, 3000),
         image: summary.thumbnail,
       });
-  // 		//Response of type @wikiSummary - contains the intro and the main image
     } catch (error) {
-      // console.log(error);
-  // 		//=> Typeof wikiError
+      console.log(chalk.red(`Error fetching ${division.title}.`));
+      console.log(chalk.red(division.url));
+      console.log(error);
+      errors.push({
+        title: `Error fetching ${division.title}`,
+        url: division.url,
+      });
     }
   }
 
   fs.writeFileSync(path, JSON.stringify(contentToSave, null, 4));
+  fs.writeFileSync('./errors.json', JSON.stringify(errors, null, 4));
 };

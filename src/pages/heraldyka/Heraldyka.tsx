@@ -17,7 +17,13 @@ const WITH_ANIMAL = 'ze zwięrzęciem';
 const WITHOUT_ANIMAL = 'bez zwierząt';
 
 const allUnits: AdministrativeUnit[] = Object.values([...gminy, ...miasta].filter((unit: AdministrativeUnit) => {
-  if (unit.title === 'Herb Podgórza') {
+  if ([
+    'Herb Podgórza',
+    'Herb gminy Janów (powiat częstochowski)',
+    'Herb Nowego Bytomia',
+    'Herb gminy Brudzew',
+    'Herb gminy Ostrowice',
+  ].includes(unit.title)) {
     // Historic
     return false;
   };
