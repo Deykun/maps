@@ -11,6 +11,9 @@ import miastaJSON from './miasta-images.json'
 const gminy = Object.values(gminyJSON);
 const miasta = Object.values(miastaJSON);
 
+const WITH_ANIMAL = 'ze zwięrzęciem';
+const WITHOUT_ANIMAL = 'bez zwierząt';
+
 const allUnits: AdministrativeUnit[] = [...gminy, ...miasta].filter((unit: AdministrativeUnit) => {
   if (unit.title === 'Herb Podgórza') {
     // Historic
@@ -82,7 +85,7 @@ const Heraldyka = () => {
     const [animalFilter, setAnimalFilter] = useState<string>('');
     const [itemFilter, setItemFilter] = useState<string>('');
 
-    const { units, unitsWithLocation, subtitle } = useMemo(() => {
+    const { units, unitsWITH_ANIMALLocation, subtitle } = useMemo(() => {
         const filteredUnits = allUnits.filter(
           (unit) => {
             const isActive = colorFilters.length > 0;
@@ -107,6 +110,14 @@ const Heraldyka = () => {
             const isActive = animalFilter !== '';
             if (!isActive) {
               return true;
+            }
+
+            if (animalFilter === WITH_ANIMAL) {
+              return Array.isArray(unit?.markers?.animals) && unit.markers.animals.length > 0;
+            }
+
+            if (animalFilter === WITHOUT_ANIMAL) {
+              return !Array.isArray(unit?.markers?.animals) || unit?.markers?.animals?.length === 0;
             }
 
             const hasAnimal = Array.isArray(unit?.markers?.animals)
@@ -138,13 +149,13 @@ const Heraldyka = () => {
           }
         );
 
-        const unitsWithLocation = filteredUnits.filter(
+        const unitsWITH_ANIMALLocation = filteredUnits.filter(
           (unit) => typeof unit?.place?.coordinates?.lon === 'number',
         );
 
         return {
           units: filteredUnits,
-          unitsWithLocation,
+          unitsWITH_ANIMALLocation,
           subtitle: [itemFilter, animalFilter, ...colorFilters].filter(Boolean).map(
             (name) => name.replace('red', 'czerwony').replace('green', 'zielony').replace('blue', 'niebieski'
           )).join(' + '),
@@ -166,13 +177,13 @@ const Heraldyka = () => {
         <>
           <h1 className="text-[22px] md:text-[48px] text-center mb-4">Herby polskich miast i gmin</h1>
           <h2 className="text-[18px] text-center mb-6 opacity-70">
-            {subtitle && <>Powiązane z: {subtitle}</>}
+            {subtitle && <>Dopasowanie: {subtitle}</>}
           </h2>
           <div className="relative mb-10 max-h-[70vh] aspect-[820_/_775] mx-auto flex justify-center items-center">
             {/* <SvgGmina /> */}
             <SvgPowiaty />
             <div key={hashKey}>
-              {unitsWithLocation.map(
+              {unitsWITH_ANIMALLocation.map(
                   (unit) => (
                     <span
                       key={`${unit.title}-${unit?.place?.coordinates?.lon}`}
@@ -181,7 +192,7 @@ const Heraldyka = () => {
                     >
                       <img src={unit?.imageUrl}
                         loading="lazy"
-                        className={`${unitsWithLocation.length < 25 ? 'size-4 md:size-6 lg:size-8' : 'size-2 sm:size-3 md:size-4 lg:size-5'} scale-100 hover:scale-[800%] ease-in duration-100 object-contain`}
+                        className={`${unitsWITH_ANIMALLocation.length < 25 ? 'size-4 md:size-6 lg:size-8' : 'size-2 sm:size-3 md:size-4 lg:size-5'} scale-100 hover:scale-[800%] ease-in duration-100 object-contain`}
                         title={unit.title}
                       />
                   </span>
@@ -193,11 +204,12 @@ const Heraldyka = () => {
               {' '}
               po odfiltrowaniu <strong>{units.length}</strong>
               {' '}
-              na mapię <strong>{unitsWithLocation.length}</strong>.
+              na mapię <strong>{unitsWITH_ANIMALLocation.length}</strong>.
           </p>
           <h3 className="mb-3 text-[24px]">Filtry:</h3>
           <div className="flex items-center gap-5 mb-3">
-            <span>Kolory:</span>
+            <span className="flex items-center gap-5">
+              Kolory:
             {[
               { name: 'red', color: '#d61e27' },
               { name: 'green', color: '#299649' },
@@ -210,16 +222,20 @@ const Heraldyka = () => {
             >
               {colorFilters.includes(name) ? '✔' : ''}
             </button>)}
+            </span>
           </div>
           <details className="mb-3">
             <summary className="w-fit">Zwierzęta</summary>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-7 mt-3">
-              {animalFilters.map(({ value, total }) => 
+              {[
+                { value: WITH_ANIMAL, total: 0 },
+                { value: WITHOUT_ANIMAL, total: 0 },
+              ...animalFilters].map(({ value, total }) => 
                 <button
                   onClick={() => setAnimalFilter(animalFilter === value ? '' : value)}
                   className={animalFilter === value ? 'font-[800]' : ''}
                 >
-                  {value} <small className="opacity-70 tracking-widest">({total})</small>
+                  {value} {total > 0 && <small className="opacity-70 tracking-widest">({total})</small>}
                 </button>
               )}
             </div>

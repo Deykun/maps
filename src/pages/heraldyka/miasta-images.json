@@ -192,7 +192,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -236,7 +236,8 @@
                 "koń"
             ],
             "items": [
-                "łódź"
+                "łódź",
+                "postać świętego"
             ]
         }
     },
@@ -277,7 +278,9 @@
             "animals": [
                 "lew"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-chojnowa": {
@@ -313,7 +316,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -351,7 +354,8 @@
             ],
             "items": [
                 "klucz",
-                "wieża"
+                "wieża/mury",
+                "postać świętego"
             ]
         }
     },
@@ -387,7 +391,8 @@
                 "smok"
             ],
             "items": [
-                "wieża"
+                "wieża/mury",
+                "postać świętego"
             ]
         }
     },
@@ -432,7 +437,8 @@
                 "byk/tur/żubr"
             ],
             "items": [
-                "wieża"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -511,7 +517,9 @@
             "animals": [],
             "items": [
                 "miecz",
-                "wieża"
+                "wieża/mury",
+                "korona",
+                "postać świętego"
             ]
         }
     },
@@ -738,7 +746,7 @@
             ],
             "items": [
                 "miecz",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -779,7 +787,9 @@
             "animals": [
                 "lew"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-k_lodzka": {
@@ -927,7 +937,9 @@
             "animals": [
                 "lew"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-legnicy": {
@@ -962,7 +974,8 @@
                 "lew"
             ],
             "items": [
-                "klucz"
+                "klucz",
+                "korona"
             ]
         }
     },
@@ -1078,7 +1091,7 @@
             "items": [
                 "drzewo",
                 "kwiat",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -1237,7 +1250,9 @@
                 "smok",
                 "koń"
             ],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-mirska": {
@@ -1310,7 +1325,7 @@
             ],
             "items": [
                 "drzewo",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -1392,7 +1407,7 @@
                 "baran"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -1468,7 +1483,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-olszyny": {
@@ -1632,7 +1649,7 @@
             ],
             "items": [
                 "drzewo",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -1757,7 +1774,8 @@
             ],
             "items": [
                 "kwiat",
-                "wieża"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -1870,7 +1888,7 @@
                 "jeleń"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -1904,7 +1922,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -1979,7 +1997,9 @@
                 "ptak",
                 "niedźwiedź"
             ],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-strzegomia": {
@@ -2020,7 +2040,8 @@
             "items": [
                 "klucz",
                 "miecz",
-                "wieża"
+                "wieża/mury",
+                "postać świętego"
             ]
         }
     },
@@ -2129,7 +2150,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -2169,6 +2190,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "drzewo",
                 "kwiat"
             ]
         }
@@ -2249,7 +2271,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -2323,7 +2345,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-_swieradowazdroju.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "drzewo"
+            ]
         }
     },
     "herb-_swierzawy": {
@@ -2356,7 +2380,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -2390,7 +2414,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "klucz"
+                "klucz",
+                "postać świętego"
             ]
         }
     },
@@ -2431,7 +2456,7 @@
             "animals": [],
             "items": [
                 "drzewo",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -2511,7 +2536,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża",
+                "wieża/mury",
                 "łódź"
             ]
         }
@@ -2593,7 +2618,8 @@
             "animals": [],
             "items": [
                 "lilia",
-                "kwiat"
+                "kwiat",
+                "postać świętego"
             ]
         }
     },
@@ -2708,7 +2734,7 @@
             ],
             "items": [
                 "kwiat",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -2745,7 +2771,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -2782,7 +2808,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -2819,7 +2845,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -3056,7 +3082,8 @@
                 "lew"
             ],
             "items": [
-                "wieża"
+                "wieża/mury",
+                "postać świętego"
             ]
         }
     },
@@ -3089,7 +3116,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-che_lmna.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-che_lm_zy": {
@@ -3128,7 +3157,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -3238,7 +3267,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -3278,7 +3307,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -3322,7 +3351,7 @@
                 "lew"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -3411,7 +3440,7 @@
             "items": [
                 "lilia",
                 "kwiat",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -3491,7 +3520,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-janowca-wielkopolskiego": {
@@ -3598,7 +3629,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-kiko_la": {
@@ -3636,7 +3669,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-kiko_la.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-kowala": {
@@ -3675,7 +3710,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -3758,7 +3793,8 @@
             "animals": [],
             "items": [
                 "drzewo",
-                "wieża"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -3832,7 +3868,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "miecz"
+                "miecz",
+                "kwiat"
             ]
         }
     },
@@ -3872,7 +3909,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "drzewo"
+                "drzewo",
+                "postać świętego"
             ]
         }
     },
@@ -3905,10 +3943,7 @@
         "imageUrl": "images/heraldyka/miasta/herb-mogilna.png",
         "markers": {
             "animals": [],
-            "items": [
-                "klucz",
-                "miecz"
-            ]
+            "items": []
         }
     },
     "herb-mroczy": {
@@ -4023,7 +4058,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -4057,7 +4092,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury",
+                "postać świętego"
             ]
         }
     },
@@ -4096,7 +4132,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-piotrkowa-kujawskiego.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-pruszcza": {
@@ -4163,7 +4201,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -4207,7 +4245,7 @@
                 "lew"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -4246,7 +4284,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-s_ep_olna-kraje_nskiego.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-sk_epego": {
@@ -4319,7 +4359,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury",
+                "postać świętego"
             ]
         }
     },
@@ -4396,7 +4437,10 @@
                 "gołąb",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "korona",
+                "postać świętego"
+            ]
         }
     },
     "herb-wi_ecborka": {
@@ -4435,7 +4479,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -4475,7 +4520,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -4658,7 +4703,8 @@
                 "niedźwiedź"
             ],
             "items": [
-                "drzewo"
+                "drzewo",
+                "korona"
             ]
         }
     },
@@ -4914,7 +4960,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-j_ozefowa-powiat-bi_lgorajski.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-j_ozefowa-nad-wis_l_a": {
@@ -4949,7 +4997,7 @@
                 "lew"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -4983,7 +5031,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -5148,7 +5196,7 @@
             ],
             "items": [
                 "drzewo",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -5190,7 +5238,7 @@
                 "lew"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -5271,7 +5319,9 @@
             "animals": [
                 "niedźwiedź"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-mi_edzyrzeca-podlaskiego": {
@@ -5997,7 +6047,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-urz_edowa": {
@@ -6113,7 +6165,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-zamo_scia.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-babimostu": {
@@ -6303,7 +6357,7 @@
                 "lew"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -6496,7 +6550,8 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -6661,7 +6716,9 @@
                 "ptak",
                 "ryba"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-lubniewic": {
@@ -6693,7 +6750,10 @@
         "imageUrl": "images/heraldyka/miasta/herb-lubniewic.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "drzewo",
+                "korona"
+            ]
         }
     },
     "herb-_l_eknicy": {
@@ -6810,7 +6870,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -6890,7 +6950,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -6930,7 +6990,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -7011,7 +7071,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -7093,7 +7153,9 @@
                 "kogut",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "wieża/mury"
+            ]
         }
     },
     "herb-s_lawy": {
@@ -7136,7 +7198,7 @@
             "items": [
                 "lilia",
                 "kwiat",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -7178,7 +7240,7 @@
             "items": [
                 "lilia",
                 "kwiat",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -7221,7 +7283,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -7340,7 +7402,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -7383,7 +7445,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -7560,7 +7622,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -7603,7 +7665,8 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -7759,7 +7822,8 @@
             "animals": [],
             "items": [
                 "miecz",
-                "wieża"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -7802,7 +7866,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -7881,7 +7945,7 @@
             "animals": [],
             "items": [
                 "drzewo",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -7923,7 +7987,8 @@
                 "byk/tur/żubr"
             ],
             "items": [
-                "drzewo"
+                "drzewo",
+                "korona"
             ]
         }
     },
@@ -7963,7 +8028,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -8002,7 +8067,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-g_lowna.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-grabowa": {
@@ -8041,7 +8108,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -8081,7 +8148,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -8115,7 +8182,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -8405,7 +8472,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -8607,7 +8674,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -8647,7 +8714,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -8689,7 +8756,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-przedborza": {
@@ -8722,7 +8791,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -8765,7 +8834,7 @@
             ],
             "items": [
                 "miecz",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -8805,7 +8874,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -8838,7 +8907,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-rzgowa.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-skierniewic": {
@@ -8944,7 +9015,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -8978,7 +9049,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -9087,7 +9158,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -9130,7 +9201,8 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -9170,7 +9242,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -9206,7 +9278,7 @@
                 "koza"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -9246,7 +9318,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -9288,7 +9360,8 @@
                 "lew"
             ],
             "items": [
-                "miecz"
+                "miecz",
+                "korona"
             ]
         }
     },
@@ -9331,7 +9404,8 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -9364,7 +9438,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-z_loczewa.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-_zarnowa": {
@@ -9442,7 +9518,7 @@
             "animals": [],
             "items": [
                 "drzewo",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -9523,7 +9599,8 @@
             "animals": [],
             "items": [
                 "klucz",
-                "miecz"
+                "miecz",
+                "postać świętego"
             ]
         }
     },
@@ -9801,7 +9878,8 @@
                 "gryf"
             ],
             "items": [
-                "wieża"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -9878,7 +9956,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-dobczyc.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-d_abrowy-tarnowskiej": {
@@ -9992,7 +10072,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-grybowa.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-jordanowa": {
@@ -10169,7 +10251,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-krynicyzdroju.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-krzeszowic": {
@@ -10289,7 +10373,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -10357,7 +10441,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-makowa-podhala_nskiego.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-mszany-dolnej": {
@@ -10400,7 +10486,8 @@
                 "baran"
             ],
             "items": [
-                "wieża"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -10624,7 +10711,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -10661,7 +10748,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -10696,7 +10783,9 @@
             "animals": [
                 "baran"
             ],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-podg_orza": {
@@ -10734,7 +10823,9 @@
             ],
             "items": [
                 "miecz",
-                "wieża"
+                "wieża/mury",
+                "korona",
+                "postać świętego"
             ]
         }
     },
@@ -10773,7 +10864,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-proszowic.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-rad_lowa": {
@@ -10895,7 +10988,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "miecz"
+                "miecz",
+                "korona"
             ]
         }
     },
@@ -10929,7 +11023,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "miecz"
+                "miecz",
+                "korona"
             ]
         }
     },
@@ -10963,7 +11058,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "miecz"
+                "miecz",
+                "postać świętego"
             ]
         }
     },
@@ -11046,7 +11142,8 @@
                 "ptak"
             ],
             "items": [
-                "podkowa"
+                "podkowa",
+                "korona"
             ]
         }
     },
@@ -11081,11 +11178,9 @@
             "animals": [],
             "items": [
                 "klucz",
-                "topór/młot",
                 "lilia",
                 "kwiat",
-                "wieża",
-                "łódź"
+                "wieża/mury"
             ]
         }
     },
@@ -11231,7 +11326,8 @@
             ],
             "items": [
                 "klucz",
-                "wieża"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -11298,7 +11394,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-wojnicza.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-wolbromia": {
@@ -11438,7 +11536,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -11543,7 +11641,9 @@
             "animals": [
                 "baran"
             ],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-brwinowa": {
@@ -11689,7 +11789,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "klucz"
+                "klucz",
+                "postać świętego"
             ]
         }
     },
@@ -11732,7 +11833,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -11772,7 +11873,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -11846,7 +11947,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -11988,7 +12089,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -12135,7 +12236,7 @@
             "animals": [],
             "items": [
                 "miecz",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -12206,7 +12307,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-i_l_zy.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-jadowa": {
@@ -12244,7 +12347,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-jadowa.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-jedlniletniska": {
@@ -12394,7 +12499,9 @@
             "animals": [
                 "baran"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-koby_lki": {
@@ -12436,7 +12543,7 @@
             ],
             "items": [
                 "drzewo",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -12694,7 +12801,7 @@
             "animals": [],
             "items": [
                 "podkowa",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -12842,7 +12949,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-maciejowic.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-magnuszewa": {
@@ -12962,7 +13071,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -13070,7 +13180,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury",
+                "postać świętego"
             ]
         }
     },
@@ -13104,7 +13215,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -13218,7 +13329,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -13294,7 +13405,7 @@
                 "lew"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -13336,7 +13447,8 @@
                 "baran"
             ],
             "items": [
-                "drzewo"
+                "drzewo",
+                "postać świętego"
             ]
         }
     },
@@ -13377,7 +13489,7 @@
             "animals": [],
             "items": [
                 "miecz",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -13417,7 +13529,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -13622,7 +13734,9 @@
                 "ptak",
                 "wąż"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-o_zarowa-mazowieckiego": {
@@ -13738,7 +13852,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-piastowa.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-pilawy": {
@@ -13849,7 +13965,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -13889,7 +14005,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "podkowa"
+                "podkowa",
+                "drzewo"
             ]
         }
     },
@@ -13925,7 +14042,7 @@
                 "żbik"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -13965,7 +14082,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -14045,7 +14162,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -14119,7 +14236,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -14222,7 +14339,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-serocka.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-siedlec": {
@@ -14259,7 +14378,7 @@
             "items": [
                 "miecz",
                 "drzewo",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -14375,7 +14494,8 @@
                 "lew"
             ],
             "items": [
-                "wieża"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -14419,7 +14539,7 @@
             ],
             "items": [
                 "miecz",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -14528,7 +14648,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "drzewo"
+            ]
         }
     },
     "herb-tarczyna": {
@@ -14635,7 +14757,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -14822,7 +14944,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -14866,7 +14988,8 @@
             ],
             "items": [
                 "drzewo",
-                "wieża"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -14908,7 +15031,8 @@
                 "baran"
             ],
             "items": [
-                "drzewo"
+                "drzewo",
+                "postać świętego"
             ]
         }
     },
@@ -14988,7 +15112,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-zwolenia-powiat-zwole_nski.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-_zuromina": {
@@ -15061,7 +15187,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-baborowa.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-bia_lej": {
@@ -15100,7 +15228,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -15140,7 +15268,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -15296,7 +15424,9 @@
             "animals": [
                 "lew"
             ],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-gogolina": {
@@ -15413,7 +15543,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -15521,7 +15651,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -15557,7 +15687,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "drzewo"
+            ]
         }
     },
     "herb-korfantowa": {
@@ -15590,7 +15722,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -15886,7 +16018,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -16004,7 +16136,7 @@
                 "koza"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -16090,7 +16222,7 @@
                 "lew"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -16232,7 +16364,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -16344,7 +16476,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-dubiecka.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-b_la_zowej": {
@@ -16457,7 +16591,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-brzozowa.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-cieszanowa": {
@@ -16661,7 +16797,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-iwoniczazdroju.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "drzewo"
+            ]
         }
     },
     "herb-jaros_lawia": {
@@ -16694,7 +16832,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża",
+                "wieża/mury",
                 "łódź"
             ]
         }
@@ -16734,7 +16872,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-jas_la.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-jawornika-polskiego": {
@@ -16810,7 +16950,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-jedlicza.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "drzewo"
+            ]
         }
     },
     "herb-ka_nczugi": {
@@ -16947,7 +17089,9 @@
                 "ptak",
                 "lew"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-leska": {
@@ -17358,7 +17502,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-pilzna.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-pruchnika": {
@@ -17462,7 +17608,9 @@
             "animals": [
                 "niedźwiedź"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-przeworska": {
@@ -17534,7 +17682,9 @@
             "animals": [
                 "lew"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-radymna": {
@@ -17640,7 +17790,8 @@
             ],
             "items": [
                 "strzała",
-                "drzewo"
+                "drzewo",
+                "korona"
             ]
         }
     },
@@ -17679,7 +17830,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-rymanowa.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-rzeszowa": {
@@ -17754,7 +17907,8 @@
                 "wąż"
             ],
             "items": [
-                "miecz"
+                "miecz",
+                "postać świętego"
             ]
         }
     },
@@ -17897,7 +18051,8 @@
                 "smok"
             ],
             "items": [
-                "miecz"
+                "miecz",
+                "postać świętego"
             ]
         }
     },
@@ -17963,7 +18118,9 @@
         "markers": {
             "animals": [],
             "items": [
-                "miecz"
+                "miecz",
+                "korona",
+                "postać świętego"
             ]
         }
     },
@@ -18117,7 +18274,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-augustowa.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-bielska-podlaskiego": {
@@ -18158,7 +18317,7 @@
                 "byk/tur/żubr"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -18242,7 +18401,9 @@
                 "gryf",
                 "byk/tur/żubr"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-ciechanowca": {
@@ -18434,7 +18595,8 @@
                 "koń"
             ],
             "items": [
-                "miecz"
+                "miecz",
+                "korona"
             ]
         }
     },
@@ -18509,7 +18671,9 @@
             "animals": [
                 "wilk"
             ],
-            "items": []
+            "items": [
+                "drzewo"
+            ]
         }
     },
     "herb-hajn_owki": {
@@ -18660,7 +18824,9 @@
                 "ptak",
                 "byk/tur/żubr"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-kolna": {
@@ -18908,7 +19074,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -19173,7 +19339,10 @@
             "animals": [
                 "pies"
             ],
-            "items": []
+            "items": [
+                "korona",
+                "postać świętego"
+            ]
         }
     },
     "herb-szczuczyna-wojew_odztwo-podlaskie": {
@@ -19435,7 +19604,9 @@
             "animals": [
                 "gryf"
             ],
-            "items": []
+            "items": [
+                "drzewo"
+            ]
         }
     },
     "herb-bytowa": {
@@ -19474,7 +19645,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -19672,7 +19843,9 @@
         "markers": {
             "animals": [],
             "items": [
-                "miecz"
+                "miecz",
+                "korona",
+                "postać świętego"
             ]
         }
     },
@@ -19711,7 +19884,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-gda_nska.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-gdyni": {
@@ -20074,7 +20249,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -20150,7 +20325,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -20362,7 +20537,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-skarszew.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-sk_orcza": {
@@ -20478,7 +20655,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -20517,7 +20694,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-starogardu-gda_nskiego.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-tczewa": {
@@ -20635,7 +20814,8 @@
                 "gryf"
             ],
             "items": [
-                "wieża"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -20858,7 +21038,7 @@
             ],
             "items": [
                 "drzewo",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -20902,7 +21082,8 @@
             ],
             "items": [
                 "topór/młot",
-                "drzewo"
+                "drzewo",
+                "korona"
             ]
         }
     },
@@ -20945,7 +21126,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -20978,7 +21159,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-imielina.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-jastrz_ebiazdroju": {
@@ -21153,7 +21336,7 @@
             "animals": [],
             "items": [
                 "podkowa",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -21193,7 +21376,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "miecz"
+                "miecz",
+                "korona"
             ]
         }
     },
@@ -21236,7 +21420,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -21311,7 +21495,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -21346,7 +21530,9 @@
             "animals": [
                 "jeleń"
             ],
-            "items": []
+            "items": [
+                "topór/młot"
+            ]
         }
     },
     "herb-_laz": {
@@ -21448,7 +21634,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-mys_lowic.jpg",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-myszkowa": {
@@ -21489,7 +21677,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-nowego-bytomia": {
@@ -21599,7 +21789,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-olsztyna-wojew_odztwo-_sl_askie.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-orzesza": {
@@ -21746,7 +21938,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -21786,7 +21978,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -22157,7 +22350,7 @@
             "animals": [],
             "items": [
                 "topór/młot",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -22476,7 +22669,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -22516,7 +22709,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -22585,7 +22778,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -22663,7 +22856,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -22737,7 +22930,8 @@
                 "ryba"
             ],
             "items": [
-                "drzewo"
+                "drzewo",
+                "postać świętego"
             ]
         }
     },
@@ -23001,7 +23195,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-klimontowa": {
@@ -23349,7 +23545,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-morawicy.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-nowej-s_lupi": {
@@ -23431,7 +23629,8 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -23503,7 +23702,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -23537,7 +23736,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury",
+                "postać świętego"
             ]
         }
     },
@@ -23579,7 +23779,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-ostrowca-_swi_etokrzyskiego": {
@@ -23613,7 +23815,7 @@
             "animals": [],
             "items": [
                 "strzała",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -23726,7 +23928,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-pierzchnicy.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-pi_nczowa": {
@@ -23838,7 +24042,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -23947,7 +24151,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "klucz"
+                "klucz",
+                "postać świętego"
             ]
         }
     },
@@ -24211,7 +24416,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -24251,7 +24456,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -24291,7 +24496,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -24335,7 +24540,7 @@
                 "koń"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -24521,7 +24726,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -24555,7 +24760,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -24673,7 +24878,9 @@
         "markers": {
             "animals": [],
             "items": [
-                "miecz"
+                "miecz",
+                "korona",
+                "postać świętego"
             ]
         }
     },
@@ -24787,7 +24994,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -24907,7 +25114,7 @@
             ],
             "items": [
                 "drzewo",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -24974,7 +25181,9 @@
             "animals": [
                 "niedźwiedź"
             ],
-            "items": []
+            "items": [
+                "drzewo"
+            ]
         }
     },
     "herb-kisielic": {
@@ -25007,7 +25216,6 @@
         "markers": {
             "animals": [
                 "orzeł",
-                "pelikan",
                 "ptak"
             ],
             "items": [
@@ -25286,7 +25494,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-mor_aga.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-mr_agowa": {
@@ -25442,7 +25652,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -25475,7 +25685,10 @@
         "imageUrl": "images/heraldyka/miasta/herb-olsztyna.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "wieża/mury",
+                "postać świętego"
+            ]
         }
     },
     "herb-orzysza": {
@@ -25554,7 +25767,9 @@
                 "smok",
                 "koń"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-pas_l_eka": {
@@ -25783,7 +25998,7 @@
             ],
             "items": [
                 "drzewo",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -25823,7 +26038,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża",
+                "wieża/mury",
                 "łódź"
             ]
         }
@@ -25857,7 +26072,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-susza.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-szczytna": {
@@ -25969,7 +26186,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -26015,7 +26232,8 @@
             "animals": [],
             "items": [
                 "miecz",
-                "wieża"
+                "drzewo",
+                "wieża/mury"
             ]
         }
     },
@@ -26095,7 +26313,8 @@
                 "baran"
             ],
             "items": [
-                "drzewo"
+                "drzewo",
+                "korona"
             ]
         }
     },
@@ -26138,7 +26357,7 @@
                 "podkowa",
                 "lilia",
                 "kwiat",
-                "wieża",
+                "wieża/mury",
                 "łódź"
             ]
         }
@@ -26248,7 +26467,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -26369,7 +26588,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -26510,7 +26729,9 @@
             "animals": [
                 "smok"
             ],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-gniezna": {
@@ -26551,7 +26772,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-goliny": {
@@ -26590,7 +26813,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -26630,7 +26853,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -26664,7 +26887,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -26744,7 +26967,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-grodziska-wielkopolskiego.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-budzynia": {
@@ -26864,7 +27089,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -26936,7 +27161,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -27011,7 +27236,7 @@
             "animals": [],
             "items": [
                 "miecz",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -27088,7 +27313,7 @@
                 "ryba"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -27131,7 +27356,8 @@
                 "ptak"
             ],
             "items": [
-                "klucz"
+                "klucz",
+                "korona"
             ]
         }
     },
@@ -27171,7 +27397,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -27211,7 +27437,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża",
+                "wieża/mury",
                 "łódź"
             ]
         }
@@ -27246,7 +27472,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -27288,7 +27514,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-konina": {
@@ -27401,7 +27629,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -27443,7 +27671,7 @@
                 "lew"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -27478,7 +27706,7 @@
             "animals": [],
             "items": [
                 "klucz",
-                "wieża",
+                "wieża/mury",
                 "łódź"
             ]
         }
@@ -27553,7 +27781,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "miecz"
+                "miecz",
+                "postać świętego"
             ]
         }
     },
@@ -27699,7 +27928,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -27843,7 +28072,9 @@
             "animals": [
                 "niedźwiedź"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-miasteczka-kraje_nskiego": {
@@ -27880,7 +28111,8 @@
                 "koza"
             ],
             "items": [
-                "podkowa"
+                "podkowa",
+                "korona"
             ]
         }
     },
@@ -27920,7 +28152,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża",
+                "wieża/mury",
                 "łódź"
             ]
         }
@@ -27965,7 +28197,8 @@
                 "smok"
             ],
             "items": [
-                "miecz"
+                "miecz",
+                "postać świętego"
             ]
         }
     },
@@ -28006,7 +28239,7 @@
             "animals": [],
             "items": [
                 "drzewo",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -28084,7 +28317,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża",
+                "wieża/mury",
                 "łódź"
             ]
         }
@@ -28128,7 +28361,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -28360,7 +28593,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -28482,7 +28715,7 @@
             "animals": [],
             "items": [
                 "strzała",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -28561,7 +28794,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-ostroroga.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-ostrowa-wielkopolskiego": {
@@ -28643,7 +28878,8 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -28677,7 +28913,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -28753,7 +28989,10 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "korona",
+                "postać świętego"
+            ]
         }
     },
     "herb-przedcza": {
@@ -28792,7 +29031,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -28826,7 +29065,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -28969,7 +29209,8 @@
                 "ptak"
             ],
             "items": [
-                "klucz"
+                "klucz",
+                "korona"
             ]
         }
     },
@@ -29085,7 +29326,7 @@
             "items": [
                 "strzała",
                 "drzewo",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -29301,7 +29542,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -29342,7 +29583,7 @@
             "animals": [],
             "items": [
                 "miecz",
-                "wieża",
+                "wieża/mury",
                 "łódź"
             ]
         }
@@ -29385,7 +29626,7 @@
                 "ryba"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -29418,7 +29659,10 @@
         "imageUrl": "images/heraldyka/miasta/herb-szamotu_l.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "korona",
+                "postać świętego"
+            ]
         }
     },
     "herb-_slesina": {
@@ -29456,7 +29700,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-_slesina.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "wieża/mury"
+            ]
         }
     },
     "herb-_sremu": {
@@ -29495,7 +29741,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -29538,7 +29784,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża",
+                "wieża/mury",
                 "łódź"
             ]
         }
@@ -29580,7 +29826,9 @@
             "animals": [
                 "byk/tur/żubr"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-trzemeszna": {
@@ -29615,7 +29863,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-tuliszkowa": {
@@ -29940,7 +30190,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -29973,7 +30223,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-zdun.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-z_lotowa": {
@@ -30091,7 +30343,8 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "drzewo",
+                "wieża/mury"
             ]
         }
     },
@@ -30209,7 +30462,8 @@
                 "baran"
             ],
             "items": [
-                "drzewo"
+                "drzewo",
+                "postać świętego"
             ]
         }
     },
@@ -30388,7 +30642,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -30427,7 +30681,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-cz_lopy.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-drawna": {
@@ -30515,7 +30771,8 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury",
+                "korona"
             ]
         }
     },
@@ -30558,7 +30815,7 @@
                 "ryba"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -30605,7 +30862,7 @@
                 "lew"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -30647,7 +30904,7 @@
                 "gryf"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -30836,7 +31093,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-go_scina.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "wieża/mury"
+            ]
         }
     },
     "herb-gryfic": {
@@ -31035,7 +31294,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża"
+                "wieża/mury",
+                "postać świętego"
             ]
         }
     },
@@ -31110,7 +31370,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -31189,7 +31449,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-_lobza": {
@@ -31418,7 +31680,7 @@
                 "ryba"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -31461,7 +31723,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -31505,7 +31767,7 @@
             ],
             "items": [
                 "drzewo",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -31700,7 +31962,9 @@
             "animals": [
                 "gryf"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-pyrzyc": {
@@ -31742,7 +32006,7 @@
             ],
             "items": [
                 "kwiat",
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -31785,7 +32049,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -32045,7 +32309,9 @@
             "animals": [
                 "gryf"
             ],
-            "items": []
+            "items": [
+                "korona"
+            ]
         }
     },
     "herb-szczecinka": {
@@ -32128,7 +32394,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     },
@@ -32249,7 +32515,9 @@
             "animals": [
                 "lis"
             ],
-            "items": []
+            "items": [
+                "drzewo"
+            ]
         }
     },
     "herb-wa_lcza": {
@@ -32282,7 +32550,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "miecz"
+                "miecz",
+                "korona"
             ]
         }
     },
@@ -32357,7 +32626,7 @@
                 "ptak"
             ],
             "items": [
-                "wieża"
+                "wieża/mury"
             ]
         }
     }
