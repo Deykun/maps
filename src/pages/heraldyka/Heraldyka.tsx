@@ -2,6 +2,7 @@ import { useState, useMemo, useCallback } from 'react';
 // import SvgGmina from './SvgGmina';
 import SvgPowiaty from './SvgPowiaty';
 import ListItem from './ListItem';
+import MapItem from './MapItem';
 import './Heraldyka.scss';
 import { AdministrativeUnit } from './constants';
 
@@ -83,6 +84,7 @@ const getPostionForPlace = (unit: AdministrativeUnit) => {
 }
 
 const Heraldyka = () => {
+    const [shouldFitMap, setShouldFitMap] = useState(true);
     const [colorFilters, setColorFilters] = useState<string[]>([]);
     const [animalFilters, setAnimalFilters] = useState<string[]>([]);
     const [itemFilters, setItemFilters] = useState<string[]>([]);
@@ -219,23 +221,18 @@ const Heraldyka = () => {
           <h2 className="text-[18px] text-center mb-6">
             {subtitle && <span className="text-[#4b4b4b]">Dopasowanie: {subtitle}</span>}
           </h2>
-          <div className="relative mb-10 max-h-[70vh] aspect-[820_/_775] mx-auto flex justify-center items-center">
+          <div className={`relative mb-10 ${shouldFitMap ? 'max-h-[70vh]' : ''} aspect-[820_/_775] mx-auto flex justify-center items-center`}>
             {/* <SvgGmina /> */}
             <SvgPowiaty />
             <div key={hashKey}>
-              {unitsWithLocation.map(
+                {unitsWithLocation.map(
                   (unit) => (
-                    <span
+                    <MapItem
                       key={`${unit.title}-${unit?.place?.coordinates?.lon}`}
-                      className="absolute hover:z-10"
+                      {...unit}
+                      total={unitsWithLocation.length}
                       style={getPostionForPlace(unit)}
-                    >
-                      <img src={unit?.imageUrl}
-                        loading="lazy"
-                        className={`${unitsWithLocation.length < 25 ? 'size-4 md:size-6 lg:size-8' : (unitsWithLocation.length < 60 ? 'size-3 md:size-5 lg:size-7' : 'size-2 sm:size-3 md:size-4 lg:size-5')} scale-100 hover:scale-[800%] ease-in duration-100 object-contain`}
-                        title={unit.title}
-                      />
-                  </span>
+                    />
                 ))}
             </div>
           </div>
@@ -244,36 +241,39 @@ const Heraldyka = () => {
               Na podstawie scrapingu artykułów z <strong className="text-black">Wikipedii</strong>.
             </p>
             <p className="text-[12px] text-[#4b4b4b]">
-                Zaindeksowanych <strong className="text-black">{allUnits.length}</strong>
-                {' '}
-                {allUnits.length > units.length && <>po odfiltrowaniu <strong className="text-black">{units.length}</strong></>}
-                {' '}
-                na mapię <strong className="text-black">{unitsWithLocation.length}</strong>.
+              Zaindeksowanych <strong className="text-black">{allUnits.length}</strong>
+              {' '}
+              {allUnits.length > units.length && <>po odfiltrowaniu <strong className="text-black">{units.length}</strong></>}
+              {' '}
+              na mapię <strong className="text-black">{unitsWithLocation.length}</strong>.
             </p>
           </div>
           <div className="flex items-center mb-3">
-            <h3 className="inline text-[24px]">Filtry</h3>
+            <h3 className="inline text-[24px]">Opcje</h3>
             <span className="ml-auto">
               {units.length === 0 && <span className="mr-2 text-[red] text-[12px]">(brak wyników)</span>}
               {hasFilters && <button className="ml-auto font-[600]" onClick={resetFilters}>wyczyść</button>}
             </span>
           </div>
-          <div className="flex items-center gap-5 mb-3">
+          <div className="flex items-center gap-10 mb-3">
             <span className="flex items-center gap-5">
               Kolory:
-            {[
-              { name: 'red', color: '#d61e27' },
-              { name: 'green', color: '#299649' },
-              { name: 'blue', color: '#1d7dc0' },
-            ].map(({ name, color }) => <button
-              key={name}
-              style={{ backgroundColor: color }}
-              onClick={() => toggleColor(name)}
-              className="block size-5 rounded-[4px] shadow-md text-white text-[12px]"
-            >
-              {colorFilters.includes(name) ? '✔' : ''}
-            </button>)}
+              {[
+                { name: 'red', color: '#d61e27' },
+                { name: 'green', color: '#299649' },
+                { name: 'blue', color: '#1d7dc0' },
+              ].map(({ name, color }) => <button
+                key={name}
+                style={{ backgroundColor: color }}
+                onClick={() => toggleColor(name)}
+                className="block size-5 rounded-[4px] shadow-md text-white text-[12px]"
+              >
+                {colorFilters.includes(name) ? '✔' : ''}
+              </button>)}
             </span>
+            <button className="ml-auto font-[600]" onClick={() => setShouldFitMap(value => !value)}>
+              {shouldFitMap ? 'kompaktowa' : 'duża'}
+            </button>
           </div>
           <details className="mb-3">
             <summary className="w-fit">Zwierzęta</summary>

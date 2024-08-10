@@ -270,6 +270,7 @@ export const fetchImages = async ({
                 'Herb Bobowej',
                 'Herb gminy Chorkówka',
                 'Herb Cybinki',
+                'Herb Szczekocin',
               ].includes(unit.title)) {
                 // Doesn't have them
               } else {
@@ -482,6 +483,7 @@ export const fetchImages = async ({
                   'Herb Ślesina',
                   'Herb Człopy',
                   'Herb Mogilna',
+                  'Herb Kłecka',
                 ].includes(unit.title)) {
                   items.push('klucz');
                 }
