@@ -217,7 +217,7 @@ const Heraldyka = () => {
         <>
           <h1 className="text-[22px] md:text-[48px] text-center mb-4">Herby polskich miast i gmin</h1>
           <h2 className="text-[18px] text-center mb-6">
-            {subtitle && <span className="opacity-70">Dopasowanie: {subtitle}</span>}
+            {subtitle && <span className="text-[#4b4b4b]">Dopasowanie: {subtitle}</span>}
           </h2>
           <div className="relative mb-10 max-h-[70vh] aspect-[820_/_775] mx-auto flex justify-center items-center">
             {/* <SvgGmina /> */}
@@ -232,25 +232,30 @@ const Heraldyka = () => {
                     >
                       <img src={unit?.imageUrl}
                         loading="lazy"
-                        className={`${unitsWithLocation.length < 25 ? 'size-4 md:size-6 lg:size-8' : 'size-2 sm:size-3 md:size-4 lg:size-5'} scale-100 hover:scale-[800%] ease-in duration-100 object-contain`}
+                        className={`${unitsWithLocation.length < 25 ? 'size-4 md:size-6 lg:size-8' : (unitsWithLocation.length < 60 ? 'size-3 md:size-5 lg:size-7' : 'size-2 sm:size-3 md:size-4 lg:size-5')} scale-100 hover:scale-[800%] ease-in duration-100 object-contain`}
                         title={unit.title}
                       />
                   </span>
                 ))}
             </div>
           </div>
-          <p className="mb-5 text-right text-[12px] opacity-70">
-              Zaindeksowanych <strong>{allUnits.length}</strong>
-              {' '}
-              {allUnits.length > units.length && <>po odfiltrowaniu <strong>{units.length}</strong></>}
-              {' '}
-              na mapię <strong>{unitsWithLocation.length}</strong>.
-          </p>
+          <div className="flex flex-wrap justify-between mb-10">
+            <p className="text-[12px] text-[#4b4b4b]">
+              Na podstawie scrapingu artykułów z <strong className="text-black">Wikipedii</strong>.
+            </p>
+            <p className="text-[12px] text-[#4b4b4b]">
+                Zaindeksowanych <strong className="text-black">{allUnits.length}</strong>
+                {' '}
+                {allUnits.length > units.length && <>po odfiltrowaniu <strong className="text-black">{units.length}</strong></>}
+                {' '}
+                na mapię <strong className="text-black">{unitsWithLocation.length}</strong>.
+            </p>
+          </div>
           <div className="flex items-center mb-3">
             <h3 className="inline text-[24px]">Filtry</h3>
             <span className="ml-auto">
               {units.length === 0 && <span className="mr-2 text-[red] text-[12px]">(brak wyników)</span>}
-              {hasFilters && <button className="ml-auto" onClick={resetFilters}>wyczyść</button>}
+              {hasFilters && <button className="ml-auto font-[600]" onClick={resetFilters}>wyczyść</button>}
             </span>
           </div>
           <div className="flex items-center gap-5 mb-3">
@@ -281,7 +286,7 @@ const Heraldyka = () => {
                   onClick={() => toggleAnimal(value)}
                   className={animalFilters.includes(value) ? 'font-[800]' : ''}
                 >
-                  {value} {total > 0 && <small className="opacity-70 tracking-widest">({total})</small>}
+                  {value} {total > 0 && <small className="text-[#4b4b4b] tracking-widest">({total})</small>}
                 </button>
               )}
             </div>
@@ -294,7 +299,7 @@ const Heraldyka = () => {
                   onClick={() => toggleItem(value)}
                   className={itemFilters.includes(value) ? 'font-[800]' : ''}
                 >
-                  {value} <small className="opacity-70 tracking-widest">({total})</small>
+                  {value} <small className="text-[#4b4b4b] tracking-widest">({total})</small>
                 </button>
               )}
             </div>
