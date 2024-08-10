@@ -10,7 +10,7 @@ type Props = AdministrativeUnit & {
 }
 
 const MapItem = ({ title, imageUrl, markers, total, style }: Props) => {
-    const imageClassName = `${total < 25 ? 'size-4 md:size-6 lg:size-8' : (total < 60 ? 'size-3 md:size-5 lg:size-7' : 'size-2 sm:size-3 md:size-4 lg:size-5')} scale-100 group-hover:scale-[800%] ease-in duration-100 object-contain`;
+    const imageClassName = `${total < 25 ? 'size-4 md:size-6 lg:size-8' : (total < 60 ? 'size-3 md:size-5 lg:size-7' : 'size-2 sm:size-3 md:size-4 lg:size-5')} scale-100 group-hover:scale-[800%] ease-in transition delay-0 group-hover:delay-800 duration-100 object-contain`;
 
     return (
       <span

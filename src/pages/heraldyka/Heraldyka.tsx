@@ -84,6 +84,7 @@ const getPostionForPlace = (unit: AdministrativeUnit) => {
 }
 
 const Heraldyka = () => {
+    const [page, setPage] = useState(1);
     const [shouldFitMap, setShouldFitMap] = useState(true);
     const [colorFilters, setColorFilters] = useState<string[]>([]);
     const [animalFilters, setAnimalFilters] = useState<string[]>([]);
@@ -158,6 +159,8 @@ const Heraldyka = () => {
         const unitsWithLocation = filteredUnits.filter(
           (unit) => typeof unit?.place?.coordinates?.lon === 'number',
         );
+
+        setPage(1);
 
         return {
           units: filteredUnits,
@@ -305,8 +308,11 @@ const Heraldyka = () => {
             </div>
           </details>
           <ul className="mt-10 grid md:grid-cols-2 xl:grid-cols-3 gap-5" key={hashKey}>
-            {units.map((unit) => (<ListItem key={unit.title} {...unit} />))}
+            {units.slice(0, 30 * page).map((unit) => (<ListItem key={unit.title} {...unit} />))}
           </ul>
+          {units.length > 30 * page && <div className="mt-5 text-center">
+            <button onClick={() => setPage(page + 1)}>Więcej</button>
+          </div>}
         </>
     );
 };
