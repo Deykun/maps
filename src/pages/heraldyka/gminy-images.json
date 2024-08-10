@@ -28,6 +28,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "drzewo",
                 "wieża/mury"
             ]
@@ -381,7 +382,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-domani_ow.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-dziadowa-k_loda": {
@@ -449,6 +452,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "postać świętego"
             ]
         }
@@ -813,7 +817,7 @@
                 "ptak"
             ],
             "items": [
-                "topór/młot",
+                "topór/młot/kilof",
                 "kwiat"
             ]
         }
@@ -931,7 +935,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "drzewo"
+                "drzewo",
+                "kwiat"
             ]
         }
     },
@@ -965,7 +970,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -1001,7 +1006,8 @@
                 "lew"
             ],
             "items": [
-                "miecz"
+                "miecz",
+                "kwiat"
             ]
         }
     },
@@ -1039,7 +1045,8 @@
                 "ryba"
             ],
             "items": [
-                "drzewo"
+                "drzewo",
+                "kwiat"
             ]
         }
     },
@@ -1249,6 +1256,7 @@
                 "ptak"
             ],
             "items": [
+                "kłos",
                 "wieża/mury"
             ]
         }
@@ -1321,7 +1329,6 @@
         "markers": {
             "animals": [],
             "items": [
-                "drzewo",
                 "łódź"
             ]
         }
@@ -1469,7 +1476,9 @@
                 "ptak",
                 "ryba"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-mi_ekini": {
@@ -1505,6 +1514,7 @@
                 "ptak"
             ],
             "items": [
+                "kłos",
                 "drzewo"
             ]
         }
@@ -1548,7 +1558,9 @@
                 "ptak",
                 "jeleń"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-m_sciwoj_ow": {
@@ -1722,7 +1734,9 @@
                 "ptak",
                 "lew"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-o_lawa": {
@@ -2016,7 +2030,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-radwanice": {
@@ -2088,7 +2104,8 @@
             "animals": [],
             "items": [
                 "miecz",
-                "korona"
+                "korona",
+                "postać świętego"
             ]
         }
     },
@@ -2305,7 +2322,9 @@
                 "ptak",
                 "gryf"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-udanin": {
@@ -2346,7 +2365,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-walim": {
@@ -2453,7 +2474,9 @@
                 "ptak",
                 "jednorożec"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-wi_nsko": {
@@ -2635,6 +2658,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "wieża/mury",
                 "postać świętego"
             ]
@@ -2824,6 +2848,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "drzewo"
             ]
         }
@@ -3247,7 +3272,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-che_lmno.jpg",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-che_lm_za": {
@@ -3597,7 +3624,8 @@
             "animals": [],
             "items": [
                 "miecz",
-                "strzała"
+                "strzała",
+                "kłos"
             ]
         }
     },
@@ -3843,6 +3871,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "drzewo"
             ]
         }
@@ -3875,7 +3904,9 @@
         },
         "imageUrl": "images/heraldyka/gminy/herb-gminy-grudzi_adz.png",
         "markers": {
-            "animals": [],
+            "animals": [
+                "lis"
+            ],
             "items": [
                 "drzewo"
             ]
@@ -3910,7 +3941,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-gruta.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-inowroc_law": {
@@ -3942,7 +3975,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-inowroc_law.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-jeziora-wielkie": {
@@ -3976,7 +4011,9 @@
             "animals": [
                 "jeleń"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-k_esowo": {
@@ -4050,6 +4087,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "korona",
                 "postać świętego"
             ]
@@ -4161,7 +4199,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot",
+                "topór/młot/kilof",
                 "drzewo"
             ]
         }
@@ -4988,7 +5026,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-rojewo.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-ry_nsk": {
@@ -5161,7 +5201,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "miecz"
+                "miecz",
+                "kłos"
             ]
         }
     },
@@ -5714,7 +5755,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-z_lawie_s-wielka.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-z_lotniki-kujawskie": {
@@ -7009,7 +7052,9 @@
             "animals": [
                 "jeleń"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-jab_lonna-wojew_odztwo-lubelskie": {
@@ -7613,7 +7658,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -7725,7 +7770,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -8331,7 +8376,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot",
+                "topór/młot/kilof",
                 "kwiat"
             ]
         }
@@ -8481,7 +8526,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -8521,7 +8566,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "strzała"
+                "strzała",
+                "kłos"
             ]
         }
     },
@@ -9076,7 +9122,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -9447,7 +9493,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-sitno.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-skierbiesz_ow": {
@@ -10221,7 +10269,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-tuczna.gif",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-turobina": {
@@ -10889,7 +10939,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-w_olka.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-wysokie": {
@@ -11424,6 +11476,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "drzewo"
             ]
         }
@@ -11565,7 +11618,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-k_lodawa-powiat-gorzowski.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-krzeszyce": {
@@ -11603,7 +11658,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-krzeszyce.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-lipinki-_lu_zyckie": {
@@ -11646,7 +11703,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-lipinki-_lu_zyckie.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-lubiszyn": {
@@ -11682,6 +11741,7 @@
                 "ptak"
             ],
             "items": [
+                "kłos",
                 "drzewo"
             ]
         }
@@ -11773,6 +11833,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "drzewo"
             ]
         }
@@ -11807,6 +11868,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "wieża/mury"
             ]
         }
@@ -12079,6 +12141,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "postać świętego"
             ]
         }
@@ -12333,7 +12396,8 @@
                 "ryba"
             ],
             "items": [
-                "drzewo"
+                "drzewo",
+                "kwiat"
             ]
         }
     },
@@ -12549,6 +12613,7 @@
                 "jeleń"
             ],
             "items": [
+                "kłos",
                 "drzewo"
             ]
         }
@@ -12578,7 +12643,8 @@
             "items": [
                 "klucz",
                 "miecz",
-                "drzewo"
+                "drzewo",
+                "kwiat"
             ]
         }
     },
@@ -12690,6 +12756,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "kwiat"
             ]
         }
@@ -12942,6 +13009,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "wieża/mury"
             ]
         }
@@ -13159,6 +13227,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "lilia",
                 "kwiat"
             ]
@@ -13186,7 +13255,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-czarnocin-wojew_odztwo-_l_odzkie.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kwiat"
+            ]
         }
     },
     "herb-gminy-czarno_zy_ly": {
@@ -13365,7 +13436,6 @@
         "markers": {
             "animals": [],
             "items": [
-                "drzewo",
                 "wieża/mury"
             ]
         }
@@ -13484,6 +13554,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "drzewo"
             ]
         }
@@ -14046,6 +14117,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "drzewo"
             ]
         }
@@ -14152,6 +14224,7 @@
                 "ptak"
             ],
             "items": [
+                "kłos",
                 "róża",
                 "kwiat"
             ]
@@ -14338,7 +14411,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-lipce-reymontowskie.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-lubochnia": {
@@ -14551,7 +14626,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-_l_eki-szlacheckie.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kwiat"
+            ]
         }
     },
     "herb-gminy-_lowicz": {
@@ -15419,7 +15496,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot",
+                "topór/młot/kilof",
                 "postać świętego"
             ]
         }
@@ -15822,7 +15899,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-sulmierzyce.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kwiat"
+            ]
         }
     },
     "herb-gminy-szczerc_ow": {
@@ -16115,7 +16194,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-wierzchlas.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kwiat"
+            ]
         }
     },
     "herb-gminy-wodzierady": {
@@ -16251,7 +16332,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-zadzim.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-zapolice": {
@@ -16396,7 +16479,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-_zarnowa.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-_zelechlinek": {
@@ -16431,7 +16516,9 @@
                 "pszczoła",
                 "niedźwiedź"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-_zytno": {
@@ -16465,7 +16552,9 @@
             "animals": [
                 "lew"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-babice": {
@@ -16616,7 +16705,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -16642,7 +16731,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-boles_law-powiat-d_abrowski.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-boles_law-powiat-olkuski": {
@@ -16846,6 +16937,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "topór/młot/kilof",
                 "drzewo"
             ]
         }
@@ -16891,7 +16983,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -17203,7 +17295,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-gnojnik.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-go_lcza": {
@@ -17594,7 +17688,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -17748,7 +17842,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot",
+                "topór/młot/kilof",
                 "drzewo"
             ]
         }
@@ -17815,7 +17909,9 @@
             "animals": [
                 "koń"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-korzenna": {
@@ -17885,7 +17981,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-koszyc-wojew_odztwo-ma_lopolskie.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-ko_scielisko": {
@@ -18316,7 +18414,7 @@
             "items": [
                 "klucz",
                 "miecz",
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -18642,7 +18740,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-m_edrzech_ow.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-micha_lowice-wojew_odztwo-ma_lopolskie": {
@@ -18848,7 +18948,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot",
+                "topór/młot/kilof",
                 "wieża/mury"
             ]
         }
@@ -19549,7 +19649,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot",
+                "topór/młot/kilof",
                 "kwiat"
             ]
         }
@@ -19832,7 +19932,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "drzewo"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -19872,7 +19972,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot",
+                "topór/młot/kilof",
                 "postać świętego"
             ]
         }
@@ -19984,7 +20084,7 @@
             "animals": [],
             "items": [
                 "strzała",
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -20604,7 +20704,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot",
+                "topór/młot/kilof",
                 "korona"
             ]
         }
@@ -21112,7 +21212,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-ceg_lowa.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-celestyn_ow": {
@@ -21295,7 +21397,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "klucz"
+                "klucz",
+                "kłos"
             ]
         }
     },
@@ -21536,7 +21639,6 @@
         "markers": {
             "animals": [],
             "items": [
-                "drzewo",
                 "róża",
                 "kwiat"
             ]
@@ -21753,7 +21855,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -22057,7 +22159,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-gozdowo.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kwiat"
+            ]
         }
     },
     "herb-gminy-g_orzno-powiat-garwoli_nski": {
@@ -22193,6 +22297,7 @@
                 "niedźwiedź"
             ],
             "items": [
+                "kłos",
                 "korona"
             ]
         }
@@ -22236,6 +22341,7 @@
                 "ptak"
             ],
             "items": [
+                "kłos",
                 "korona"
             ]
         }
@@ -22745,6 +22851,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kwiat",
                 "korona"
             ]
         }
@@ -22972,6 +23079,7 @@
                 "dzik"
             ],
             "items": [
+                "kłos",
                 "wieża/mury"
             ]
         }
@@ -23186,9 +23294,7 @@
             "animals": [
                 "baran"
             ],
-            "items": [
-                "drzewo"
-            ]
+            "items": []
         }
     },
     "herb-gminy-lelis": {
@@ -23293,7 +23399,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "podkowa"
+                "podkowa",
+                "kłos"
             ]
         }
     },
@@ -23328,7 +23435,9 @@
             "animals": [
                 "smok"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-liw": {
@@ -23441,7 +23550,8 @@
             "animals": [],
             "items": [
                 "klucz",
-                "miecz"
+                "miecz",
+                "kłos"
             ]
         }
     },
@@ -24132,7 +24242,9 @@
             "animals": [
                 "koza"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-nowego-miasta-powiat-p_lo_nski": {
@@ -24167,7 +24279,6 @@
                 "baran"
             ],
             "items": [
-                "drzewo",
                 "postać świętego"
             ]
         }
@@ -24338,7 +24449,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-olszanka-wojew_odztwo-mazowieckie.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-olszewoborki": {
@@ -24557,7 +24670,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-pacyna.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-parys_ow": {
@@ -24702,7 +24817,7 @@
             "animals": [],
             "items": [
                 "podkowa",
-                "drzewo"
+                "wieża/mury"
             ]
         }
     },
@@ -25019,7 +25134,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "drzewo"
+                "drzewo",
+                "kwiat"
             ]
         }
     },
@@ -25090,6 +25206,7 @@
                 "lew"
             ],
             "items": [
+                "kłos",
                 "wieża/mury"
             ]
         }
@@ -25310,7 +25427,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "drzewo"
+                "miecz"
             ]
         }
     },
@@ -25497,7 +25614,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "podkowa"
+                "podkowa",
+                "kłos"
             ]
         }
     },
@@ -25531,6 +25649,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "drzewo"
             ]
         }
@@ -25564,7 +25683,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-sannik.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-sarnaki": {
@@ -25835,7 +25956,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "miecz"
+                "miecz",
+                "kłos"
             ]
         }
     },
@@ -26310,7 +26432,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-stary-luboty_n.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-sterdy_n": {
@@ -26347,7 +26471,7 @@
             ],
             "items": [
                 "podkowa",
-                "topór/młot",
+                "topór/młot/kilof",
                 "wieża/mury"
             ]
         }
@@ -26384,6 +26508,7 @@
                 "koń"
             ],
             "items": [
+                "kłos",
                 "drzewo"
             ]
         }
@@ -26486,7 +26611,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-sypniewo.jpg",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-szczawin-ko_scielny": {
@@ -26521,6 +26648,7 @@
                 "lew"
             ],
             "items": [
+                "kłos",
                 "wieża/mury"
             ]
         }
@@ -26881,7 +27009,8 @@
                 "jeleń"
             ],
             "items": [
-                "miecz"
+                "miecz",
+                "kłos"
             ]
         }
     },
@@ -27172,7 +27301,7 @@
                 "byk/tur/żubr"
             ],
             "items": [
-                "topór/młot",
+                "topór/młot/kilof",
                 "korona"
             ]
         }
@@ -27288,7 +27417,7 @@
             "animals": [],
             "items": [
                 "klucz",
-                "topór/młot",
+                "topór/młot/kilof",
                 "korona",
                 "postać świętego"
             ]
@@ -27367,7 +27496,9 @@
             "animals": [
                 "lampart"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-zar_eby-ko_scielne": {
@@ -27473,6 +27604,7 @@
                 "ptak"
             ],
             "items": [
+                "kłos",
                 "korona"
             ]
         }
@@ -27595,7 +27727,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -27726,6 +27858,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "drzewo"
             ]
         }
@@ -27759,7 +27892,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-dobrze_n-wielki.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-domaszowice": {
@@ -27800,7 +27935,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-izbicko": {
@@ -27834,7 +27971,9 @@
             "animals": [
                 "dzik"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-kamiennik": {
@@ -27875,7 +28014,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "kwiat"
+            ]
         }
     },
     "herb-kolonowskiego": {
@@ -28129,6 +28270,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "drzewo"
             ]
         }
@@ -28193,7 +28335,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-pakos_lawice": {
@@ -28274,6 +28418,7 @@
                 "koń"
             ],
             "items": [
+                "kłos",
                 "postać świętego"
             ]
         }
@@ -28483,7 +28628,8 @@
                 "byk/tur/żubr"
             ],
             "items": [
-                "strzała"
+                "strzała",
+                "kłos"
             ]
         }
     },
@@ -28742,7 +28888,9 @@
             "animals": [
                 "wilk"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-z_ebowice": {
@@ -28781,8 +28929,9 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot",
-                "drzewo"
+                "topór/młot/kilof",
+                "drzewo",
+                "postać świętego"
             ]
         }
     },
@@ -28881,7 +29030,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-bia_lobrzegi-wojew_odztwo-podkarpackie.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-birczy": {
@@ -29039,7 +29190,7 @@
                 "jeleń"
             ],
             "items": [
-                "drzewo"
+                "kwiat"
             ]
         }
     },
@@ -29157,7 +29308,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-cisna.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kwiat"
+            ]
         }
     },
     "herb-gminy-cmolas": {
@@ -29222,7 +29375,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-czermin-wojew_odztwo-podkarpackie.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-czudec": {
@@ -29440,7 +29595,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-dydnia.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kwiat"
+            ]
         }
     },
     "herb-gminy-dyn_ow": {
@@ -29520,9 +29677,7 @@
             "animals": [
                 "baran"
             ],
-            "items": [
-                "drzewo"
-            ]
+            "items": []
         }
     },
     "herb-gminy-ga_c": {
@@ -29554,7 +29709,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-ga_c.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kwiat"
+            ]
         }
     },
     "herb-gminy-gaw_luszowice": {
@@ -29614,7 +29771,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-gorzyce-wojew_odztwo-podkarpackie.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-gr_eb_ow": {
@@ -29847,7 +30006,6 @@
             "animals": [],
             "items": [
                 "podkowa",
-                "drzewo",
                 "łódź"
             ]
         }
@@ -29950,7 +30108,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -30489,7 +30647,7 @@
                 "ptak"
             ],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -30557,7 +30715,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -31436,6 +31594,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "korona"
             ]
         }
@@ -31550,7 +31709,9 @@
             "animals": [
                 "ryba"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-wielopole-skrzy_nskie": {
@@ -31753,7 +31914,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-zarszyn.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kwiat"
+            ]
         }
     },
     "herb-gminy-zarzecze": {
@@ -31889,7 +32052,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-_zyrak_ow.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-august_ow": {
@@ -31922,6 +32087,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "drzewo"
             ]
         }
@@ -31963,7 +32129,9 @@
             "animals": [
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-bia_lowie_za": {
@@ -31998,7 +32166,6 @@
                 "byk/tur/żubr"
             ],
             "items": [
-                "drzewo",
                 "wieża/mury"
             ]
         }
@@ -32113,7 +32280,9 @@
             "animals": [
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-dobrzyniewo-du_ze": {
@@ -32338,7 +32507,9 @@
                 "żuraw",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "kwiat"
+            ]
         }
     },
     "herb-gminy-gr_odek": {
@@ -32533,7 +32704,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-kobylinborzymy.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-kolno-powiat-kolne_nski": {
@@ -32767,7 +32940,7 @@
                 "jeleń"
             ],
             "items": [
-                "drzewo",
+                "kłos",
                 "wieża/mury"
             ]
         }
@@ -33031,7 +33204,8 @@
                 "ptak"
             ],
             "items": [
-                "topór/młot"
+                "kłos",
+                "topór/młot/kilof"
             ]
         }
     },
@@ -33284,7 +33458,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-raczki.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kwiat"
+            ]
         }
     },
     "herb-gminy-radzi_l_ow": {
@@ -33357,7 +33533,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -33478,7 +33654,9 @@
             "animals": [
                 "jeleń"
             ],
-            "items": []
+            "items": [
+                "kwiat"
+            ]
         }
     },
     "herb-gminy-sidra": {
@@ -33922,9 +34100,7 @@
             "animals": [
                 "byk/tur/żubr"
             ],
-            "items": [
-                "drzewo"
-            ]
+            "items": []
         }
     },
     "herb-gminy-wi_zajny": {
@@ -34104,6 +34280,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "postać świętego"
             ]
         }
@@ -34171,7 +34348,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-cedry-wielkie.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-cewice": {
@@ -34269,7 +34448,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-choczewo.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-chojnice": {
@@ -34585,7 +34766,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-g_l_owczyce.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-kaliska": {
@@ -34686,7 +34869,9 @@
                 "ryba",
                 "koń"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-kocza_la": {
@@ -34860,7 +35045,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-kosakowo.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-krokowa": {
@@ -34929,7 +35116,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-ko_scierzyna": {
@@ -35131,7 +35320,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-lubichowo.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-luzino": {
@@ -35344,6 +35535,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "drzewo"
             ]
         }
@@ -35386,7 +35578,8 @@
                 "ptak"
             ],
             "items": [
-                "strzała"
+                "strzała",
+                "kłos"
             ]
         }
     },
@@ -35422,6 +35615,7 @@
                 "gryf"
             ],
             "items": [
+                "kłos",
                 "korona"
             ]
         }
@@ -35550,7 +35744,9 @@
             "animals": [
                 "gryf"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-przechlewo": {
@@ -35858,6 +36054,7 @@
                 "ptak"
             ],
             "items": [
+                "kłos",
                 "postać świętego"
             ]
         }
@@ -35937,7 +36134,9 @@
             "animals": [
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-sm_etowo-graniczne": {
@@ -35976,7 +36175,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "miecz"
+                "miecz",
+                "kłos"
             ]
         }
     },
@@ -36076,7 +36276,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-stara-kiszewa.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-stare-pole": {
@@ -36146,7 +36348,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-starogard-gda_nski.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-stary-dzierzgo_n": {
@@ -36213,6 +36417,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "wieża/mury"
             ]
         }
@@ -36353,7 +36558,9 @@
             "animals": [
                 "gryf"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-suchy-d_ab": {
@@ -36462,6 +36669,7 @@
                 "gryf"
             ],
             "items": [
+                "kłos",
                 "drzewo",
                 "korona"
             ]
@@ -36691,6 +36899,7 @@
                 "owad"
             ],
             "items": [
+                "kłos",
                 "łódź"
             ]
         }
@@ -36809,6 +37018,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "drzewo"
             ]
         }
@@ -36844,7 +37054,9 @@
             "animals": [
                 "ryba"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-bobrowniki-wojew_odztwo-_sl_askie": {
@@ -37106,6 +37318,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "drzewo"
             ]
         }
@@ -37140,6 +37353,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "wieża/mury"
             ]
         }
@@ -37288,7 +37502,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-golesz_ow.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-ha_zlach": {
@@ -37527,7 +37743,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -37661,7 +37877,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -37806,6 +38022,7 @@
                 "ptak"
             ],
             "items": [
+                "kłos",
                 "drzewo",
                 "wieża/mury",
                 "korona"
@@ -38023,7 +38240,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "klucz"
+                "klucz",
+                "kłos"
             ]
         }
     },
@@ -38158,7 +38376,9 @@
             "animals": [
                 "gryf"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-mil_owka": {
@@ -38698,7 +38918,7 @@
             "animals": [],
             "items": [
                 "podkowa",
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -38850,7 +39070,10 @@
                 "ptak",
                 "pies"
             ],
-            "items": []
+            "items": [
+                "kłos",
+                "topór/młot/kilof"
+            ]
         }
     },
     "herb-gminy-rajcza": {
@@ -38957,6 +39180,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "wieża/mury"
             ]
         }
@@ -39161,7 +39385,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -39195,7 +39419,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "drzewo"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -39449,7 +39673,10 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-zebrzydowice.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos",
+                "topór/młot/kilof"
+            ]
         }
     },
     "herb-gminy-_zarnowiec": {
@@ -39925,6 +40152,7 @@
                 "dzik"
             ],
             "items": [
+                "kłos",
                 "wieża/mury",
                 "łódź"
             ]
@@ -40104,7 +40332,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -40174,9 +40402,7 @@
             "animals": [
                 "baran"
             ],
-            "items": [
-                "drzewo"
-            ]
+            "items": []
         }
     },
     "herb-gminy-krasocin": {
@@ -40455,6 +40681,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "topór/młot/kilof",
                 "korona"
             ]
         }
@@ -40843,7 +41070,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -40907,7 +41134,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-paw_l_ow.jpg",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-piekoszowa": {
@@ -40940,7 +41169,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot",
+                "topór/młot/kilof",
                 "postać świętego"
             ]
         }
@@ -41342,7 +41571,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -41542,7 +41771,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot",
+                "topór/młot/kilof",
                 "wieża/mury"
             ]
         }
@@ -41661,7 +41890,7 @@
             ],
             "items": [
                 "miecz",
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -41769,7 +41998,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "strzała"
+                "strzała",
+                "kłos"
             ]
         }
     },
@@ -41803,7 +42033,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "kłos",
+                "topór/młot/kilof"
             ]
         }
     },
@@ -41877,7 +42108,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "drzewo"
+                "kwiat"
             ]
         }
     },
@@ -41910,7 +42141,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-d_zwierzuty.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-elbl_ag": {
@@ -42195,7 +42428,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-i_lawa.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-i_lowoosada": {
@@ -42227,7 +42462,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-i_lowoosada.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-janowo": {
@@ -42400,6 +42637,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "wieża/mury"
             ]
         }
@@ -42736,7 +42974,9 @@
                 "dzik",
                 "ryba"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-p_loskinia": {
@@ -42770,7 +43010,9 @@
             "animals": [
                 "byk/tur/żubr"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-prostki": {
@@ -42947,7 +43189,9 @@
                 "bóbr"
             ],
             "items": [
-                "drzewo"
+                "kłos",
+                "drzewo",
+                "kwiat"
             ]
         }
     },
@@ -43050,6 +43294,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "drzewo"
             ]
         }
@@ -43147,6 +43392,7 @@
                 "byk/tur/żubr"
             ],
             "items": [
+                "kłos",
                 "drzewo"
             ]
         }
@@ -43188,7 +43434,9 @@
             "animals": [
                 "jeleń"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-wydminy": {
@@ -43807,7 +44055,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-dobrej-powiat-turecki": {
@@ -43972,7 +44222,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-giza_lki": {
@@ -44080,6 +44332,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "lilia",
                 "kwiat"
             ]
@@ -44489,7 +44742,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-ko_laczkowo.jpg",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-ko_lo": {
@@ -44597,7 +44852,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "podkowa"
+                "podkowa",
+                "kłos"
             ]
         }
     },
@@ -44630,7 +44886,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-ko_scielec.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-kotlin": {
@@ -44810,7 +45068,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-krzemieniewo.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-krzykosy": {
@@ -45660,7 +45920,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "miecz"
+                "miecz",
+                "kłos"
             ]
         }
     },
@@ -45736,7 +45997,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-pakos_law.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-perz_ow": {
@@ -45885,7 +46148,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-po_lajewo.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-przem_et": {
@@ -45989,6 +46254,7 @@
             ],
             "items": [
                 "podkowa",
+                "kłos",
                 "lilia",
                 "kwiat"
             ]
@@ -46087,9 +46353,7 @@
             "animals": [
                 "baran"
             ],
-            "items": [
-                "drzewo"
-            ]
+            "items": []
         }
     },
     "herb-gminy-ryczyw_o_l": {
@@ -46189,7 +46453,9 @@
                 "czapla",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-sieroszewice": {
@@ -46331,7 +46597,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -46702,7 +46968,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot",
+                "topór/młot/kilof",
                 "korona"
             ]
         }
@@ -46786,7 +47052,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot",
+                "topór/młot/kilof",
                 "postać świętego"
             ]
         }
@@ -46820,7 +47086,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-wierzbinek.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-wijewo": {
@@ -47038,7 +47306,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-z_lot_ow.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-_zelazk_ow": {
@@ -47070,7 +47340,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-_zelazk_ow.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-banie": {
@@ -47144,7 +47416,9 @@
             "animals": [
                 "byk/tur/żubr"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-bia_logard": {
@@ -47180,6 +47454,7 @@
                 "ryba"
             ],
             "items": [
+                "kłos",
                 "drzewo"
             ]
         }
@@ -47222,6 +47497,7 @@
                 "lis"
             ],
             "items": [
+                "kłos",
                 "wieża/mury"
             ]
         }
@@ -47437,7 +47713,9 @@
             "animals": [
                 "gryf"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-dygowo": {
@@ -47472,6 +47750,7 @@
                 "ryba"
             ],
             "items": [
+                "kłos",
                 "drzewo"
             ]
         }
@@ -47961,7 +48240,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-postomino.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-przelewice": {
@@ -48180,7 +48461,9 @@
                 "gryf",
                 "ryba"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-s_lawoborze": {
@@ -48357,6 +48640,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "drzewo"
             ]
         }
@@ -48591,7 +48875,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-wa_lcz.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-warnice": {
@@ -48627,6 +48913,7 @@
             ],
             "items": [
                 "miecz",
+                "kwiat",
                 "postać świętego"
             ]
         }

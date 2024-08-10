@@ -14,19 +14,21 @@ const miasta = Object.values(miastaJSON);
 const WITH_ANIMAL = 'ze zwięrzęciem';
 const WITHOUT_ANIMAL = 'bez zwierząt';
 
-const allUnits: AdministrativeUnit[] = [...gminy, ...miasta].filter((unit: AdministrativeUnit) => {
+const allUnits: AdministrativeUnit[] = Object.values([...gminy, ...miasta].filter((unit: AdministrativeUnit) => {
   if (unit.title === 'Herb Podgórza') {
     // Historic
     return false;
-  }
-  
-  if (unit?.place?.name && ['Miasteczko Krajeńskie', 'Zaklików', 'Lutomiersk'].includes(unit.place.name)) {
-    // It is twice
-    return false;
-  }
+  };
 
   return true;
-});
+}).reduce((stack: {
+  [url: string]: AdministrativeUnit,
+}, unit: AdministrativeUnit) => {
+  // It flatens duplicates by url
+  stack[unit.url] = unit;
+
+  return stack
+}, {}));
 
 const getFilter = (units: AdministrativeUnit[], name: 'animals' | 'items') => {
   const filterByName = units.reduce((stack: {

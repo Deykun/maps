@@ -107,7 +107,7 @@
                 "koń"
             ],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -866,7 +866,7 @@
                 "koń"
             ],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -1199,6 +1199,7 @@
                 "ptak"
             ],
             "items": [
+                "kłos",
                 "drzewo"
             ]
         }
@@ -1420,6 +1421,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "drzewo"
             ]
         }
@@ -1659,6 +1661,7 @@
                 "baran"
             ],
             "items": [
+                "kłos",
                 "drzewo",
                 "wieża/mury"
             ]
@@ -2658,7 +2661,7 @@
                 "ptak"
             ],
             "items": [
-                "topór/młot",
+                "topór/młot/kilof",
                 "kwiat"
             ]
         }
@@ -2927,7 +2930,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-aleksandrowa-kujawskiego.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "wieża/mury"
+            ]
         }
     },
     "herb-barcina": {
@@ -3086,6 +3091,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kwiat",
                 "korona"
             ]
         }
@@ -3485,6 +3491,7 @@
                 "ptak"
             ],
             "items": [
+                "kłos",
                 "korona"
             ]
         }
@@ -4493,7 +4500,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-annopola.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-be_l_zyc": {
@@ -4740,9 +4749,7 @@
             "animals": [
                 "byk/tur/żubr"
             ],
-            "items": [
-                "drzewo"
-            ]
+            "items": []
         }
     },
     "herb-goraja": {
@@ -5396,7 +5403,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot",
+                "topór/młot/kilof",
                 "korona"
             ]
         }
@@ -6241,13 +6248,8 @@
         },
         "imageUrl": "images/heraldyka/miasta/herb-cybinki.png",
         "markers": {
-            "animals": [
-                "orzeł",
-                "ptak"
-            ],
-            "items": [
-                "drzewo"
-            ]
+            "animals": [],
+            "items": []
         }
     },
     "herb-czerwie_nska": {
@@ -6674,7 +6676,6 @@
         "markers": {
             "animals": [],
             "items": [
-                "drzewo",
                 "korona"
             ]
         }
@@ -6746,7 +6747,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -7225,9 +7226,7 @@
             "animals": [
                 "baran"
             ],
-            "items": [
-                "drzewo"
-            ]
+            "items": []
         }
     },
     "herb-szlichtyngowej": {
@@ -7834,7 +7833,6 @@
         "markers": {
             "animals": [],
             "items": [
-                "drzewo",
                 "wieża/mury"
             ]
         }
@@ -7877,7 +7875,6 @@
                 "byk/tur/żubr"
             ],
             "items": [
-                "drzewo",
                 "korona"
             ]
         }
@@ -8181,7 +8178,9 @@
             "animals": [
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-konstantynowa-_l_odzkiego": {
@@ -9355,7 +9354,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-_zarnowa.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-alwerni": {
@@ -9552,7 +9553,7 @@
                 "ptak"
             ],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -9630,7 +9631,10 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "kłos",
+                "topór/młot/kilof"
+            ]
         }
     },
     "herb-bukowna": {
@@ -9663,7 +9667,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -9851,9 +9855,7 @@
         "imageUrl": "images/heraldyka/miasta/herb-d_abrowy-tarnowskiej.png",
         "markers": {
             "animals": [],
-            "items": [
-                "drzewo"
-            ]
+            "items": []
         }
     },
     "herb-gorlic": {
@@ -9993,9 +9995,7 @@
         "imageUrl": "images/heraldyka/miasta/herb-kalwarii-zebrzydowskiej.png",
         "markers": {
             "animals": [],
-            "items": [
-                "drzewo"
-            ]
+            "items": []
         }
     },
     "herb-k_et": {
@@ -10068,7 +10068,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-koszyc-wojew_odztwo-ma_lopolskie.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-krynicyzdroju": {
@@ -10141,7 +10143,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -10216,6 +10218,7 @@
                 "ptak"
             ],
             "items": [
+                "kłos",
                 "wieża/mury"
             ]
         }
@@ -10250,7 +10253,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot",
+                "topór/młot/kilof",
                 "drzewo"
             ]
         }
@@ -10390,7 +10393,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot",
+                "topór/młot/kilof",
                 "drzewo"
             ]
         }
@@ -10459,7 +10462,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot",
+                "topór/młot/kilof",
                 "lilia",
                 "kwiat"
             ]
@@ -11004,6 +11007,7 @@
             "animals": [],
             "items": [
                 "klucz",
+                "kłos",
                 "lilia",
                 "kwiat",
                 "wieża/mury"
@@ -11187,7 +11191,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -11549,7 +11553,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-ceg_lowa.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-chorzel": {
@@ -12502,9 +12508,7 @@
             "animals": [
                 "baran"
             ],
-            "items": [
-                "drzewo"
-            ]
+            "items": []
         }
     },
     "herb-legionowa": {
@@ -12687,7 +12691,9 @@
             "animals": [
                 "łoś"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-_losic": {
@@ -13245,7 +13251,6 @@
                 "baran"
             ],
             "items": [
-                "drzewo",
                 "postać świętego"
             ]
         }
@@ -13697,7 +13702,9 @@
         },
         "imageUrl": "images/heraldyka/miasta/herb-pionek.png",
         "markers": {
-            "animals": [],
+            "animals": [
+                "jeleń"
+            ],
             "items": [
                 "drzewo"
             ]
@@ -13965,9 +13972,7 @@
         "imageUrl": "images/heraldyka/miasta/herb-pu_ltuska.png",
         "markers": {
             "animals": [],
-            "items": [
-                "drzewo"
-            ]
+            "items": []
         }
     },
     "herb-raci_a_za": {
@@ -14112,7 +14117,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-sannik.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-serocka": {
@@ -14182,7 +14189,6 @@
             ],
             "items": [
                 "miecz",
-                "drzewo",
                 "wieża/mury"
             ]
         }
@@ -14456,7 +14462,6 @@
                 "ptak"
             ],
             "items": [
-                "drzewo",
                 "korona"
             ]
         }
@@ -14524,9 +14529,7 @@
             "animals": [
                 "bóbr"
             ],
-            "items": [
-                "drzewo"
-            ]
+            "items": []
         }
     },
     "herb-warki": {
@@ -14641,7 +14644,7 @@
                 "byk/tur/żubr"
             ],
             "items": [
-                "topór/młot",
+                "topór/młot/kilof",
                 "korona"
             ]
         }
@@ -14678,9 +14681,7 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": [
-                "drzewo"
-            ]
+            "items": []
         }
     },
     "herb-wy_smierzyc": {
@@ -14866,7 +14867,6 @@
                 "baran"
             ],
             "items": [
-                "drzewo",
                 "postać świętego"
             ]
         }
@@ -15289,7 +15289,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-gogolina.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gorzowa-_sl_askiego": {
@@ -17118,7 +17120,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "drzewo"
+                "drzewo",
+                "postać świętego"
             ]
         }
     },
@@ -17229,7 +17232,6 @@
         "markers": {
             "animals": [],
             "items": [
-                "drzewo",
                 "kwiat"
             ]
         }
@@ -17302,6 +17304,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kwiat",
                 "korona"
             ]
         }
@@ -17586,12 +17589,10 @@
         "imageUrl": "images/heraldyka/miasta/herb-rudnika-nad-sanem.png",
         "markers": {
             "animals": [
-                "byk/tur/żubr",
                 "ryba"
             ],
             "items": [
                 "strzała",
-                "drzewo",
                 "korona"
             ]
         }
@@ -18301,7 +18302,8 @@
             "animals": [],
             "items": [
                 "klucz",
-                "miecz"
+                "miecz",
+                "kwiat"
             ]
         }
     },
@@ -18649,7 +18651,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-kolna.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "postać świętego"
+            ]
         }
     },
     "herb-krynek": {
@@ -19038,7 +19042,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -19189,7 +19193,9 @@
                 "kruk",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-tykocina": {
@@ -19486,7 +19492,7 @@
                 "ryba"
             ],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -20752,7 +20758,8 @@
                 "ptak"
             ],
             "items": [
-                "topór/młot"
+                "kłos",
+                "topór/młot/kilof"
             ]
         }
     },
@@ -20790,7 +20797,6 @@
                 "ptak"
             ],
             "items": [
-                "drzewo",
                 "wieża/mury"
             ]
         }
@@ -20834,7 +20840,7 @@
                 "ptak"
             ],
             "items": [
-                "topór/młot",
+                "topór/młot/kilof",
                 "drzewo",
                 "korona"
             ]
@@ -20982,7 +20988,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot",
+                "topór/młot/kilof",
                 "drzewo"
             ]
         }
@@ -21017,7 +21023,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -21285,7 +21291,7 @@
                 "jeleń"
             ],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -21425,7 +21431,9 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-nowego-bytomia": {
@@ -21604,7 +21612,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "drzewo",
+                "topór/młot/kilof",
                 "postać świętego"
             ]
         }
@@ -21679,6 +21687,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "wieża/mury"
             ]
         }
@@ -22039,7 +22048,7 @@
                 "ptak"
             ],
             "items": [
-                "topór/młot",
+                "topór/młot/kilof",
                 "korona"
             ]
         }
@@ -22074,7 +22083,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot",
+                "topór/młot/kilof",
                 "wieża/mury"
             ]
         }
@@ -22192,7 +22201,7 @@
                 "ptak"
             ],
             "items": [
-                "topór/młot",
+                "topór/młot/kilof",
                 "kwiat"
             ]
         }
@@ -22389,6 +22398,7 @@
                 "ptak"
             ],
             "items": [
+                "topór/młot/kilof",
                 "wieża/mury"
             ]
         }
@@ -22861,7 +22871,8 @@
                 "byk/tur/żubr"
             ],
             "items": [
-                "miecz"
+                "miecz",
+                "kłos"
             ]
         }
     },
@@ -22944,7 +22955,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -23017,9 +23028,7 @@
             "animals": [
                 "baran"
             ],
-            "items": [
-                "drzewo"
-            ]
+            "items": []
         }
     },
     "herb-kunowa": {
@@ -23053,7 +23062,7 @@
             "animals": [],
             "items": [
                 "podkowa",
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -23576,7 +23585,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot",
+                "topór/młot/kilof",
                 "postać świętego"
             ]
         }
@@ -23878,7 +23887,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -23947,7 +23956,7 @@
                 "ptak"
             ],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -23984,7 +23993,7 @@
                 "ptak"
             ],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -24326,7 +24335,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -24876,9 +24885,7 @@
                 "orzeł",
                 "ptak"
             ],
-            "items": [
-                "drzewo"
-            ]
+            "items": []
         }
     },
     "herb-korsz": {
@@ -24910,7 +24917,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-korsz.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-lidzbarka": {
@@ -25182,9 +25191,7 @@
             "animals": [
                 "niedźwiedź"
             ],
-            "items": [
-                "drzewo"
-            ]
+            "items": []
         }
     },
     "herb-nidzicy": {
@@ -25341,7 +25348,6 @@
         "markers": {
             "animals": [],
             "items": [
-                "wieża/mury",
                 "postać świętego"
             ]
         }
@@ -27341,7 +27347,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -27867,7 +27873,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-mikstatu.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kwiat"
+            ]
         }
     },
     "herb-mi_los_lawia": {
@@ -28813,9 +28821,7 @@
             "animals": [
                 "baran"
             ],
-            "items": [
-                "drzewo"
-            ]
+            "items": []
         }
     },
     "herb-rychwa_la": {
@@ -28893,7 +28899,7 @@
             "animals": [],
             "items": [
                 "strzała",
-                "drzewo",
+                "kwiat",
                 "wieża/mury"
             ]
         }
@@ -29543,7 +29549,7 @@
             "animals": [],
             "items": [
                 "miecz",
-                "topór/młot"
+                "topór/młot/kilof"
             ]
         }
     },
@@ -30034,7 +30040,6 @@
                 "baran"
             ],
             "items": [
-                "drzewo",
                 "postać świętego"
             ]
         }
@@ -30610,9 +30615,7 @@
         "imageUrl": "images/heraldyka/miasta/herb-goleniowa.png",
         "markers": {
             "animals": [],
-            "items": [
-                "drzewo"
-            ]
+            "items": []
         }
     },
     "herb-go_scina": {
@@ -31720,6 +31723,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "drzewo"
             ]
         }

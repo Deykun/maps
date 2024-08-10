@@ -146,12 +146,12 @@ export const fetchImages = async ({
               if (['Herb gminy Baranowo'].includes(unit.title)) {
                 animals.push('jastrząb')
                 animals.push('ptak');
-              } else if (['Herb Zabłudowa', 'Herb gminy Łomża'].includes(unit.title)) {
+              } else if (['Herb Zabłudowa', 'Herb gminy Łomża', 'Herb Pionek'].includes(unit.title)) {
                 animals.push('jeleń');
               } else if (['Herb Bierunia'].includes(unit.title)) {
                 animals.push('jeleń');
                 animals.push('ptak');
-              } else if (['Herb Gdyni'].includes(unit.title)) {
+              } else if (['Herb Gdyni', 'Herb Rudnika nad Sanem'].includes(unit.title)) {
                 animals.push('ryba');
               } else if (['Herb gminy Srokowo'].includes(unit.title)) {
                 animals.push('bóbr');
@@ -269,6 +269,7 @@ export const fetchImages = async ({
                 'Herb gminy Osie',
                 'Herb Bobowej',
                 'Herb gminy Chorkówka',
+                'Herb Cybinki',
               ].includes(unit.title)) {
                 // Doesn't have them
               } else {
@@ -400,7 +401,7 @@ export const fetchImages = async ({
                     animals.push('bóbr');
                 }
 
-                if ([' lis ', ' lisa ', ' lisem '].some((animal) => description.includes(animal))) {
+                if ([' lis ', ' lisa ', ' lisem ', ' lisa,'].some((animal) => description.includes(animal))) {
                     animals.push('lis');
                 }
 
@@ -486,7 +487,7 @@ export const fetchImages = async ({
                 }
               }
 
-              if (['miecz'].some((item) => description.includes(item))) {
+              if (['miecz', ' nóż '].some((item) => description.includes(item))) {
                 if (![
                   'Herb Siechnic',
                   'Herb gminy Golub-Dobrzyń',
@@ -522,7 +523,23 @@ export const fetchImages = async ({
                 }
               }
 
-              if (['topór', 'toporami', 'toporem', 'toporek', 'topory', ' siekiery', ' siekiera', 'młot', 'herb górniczy'].some((item) => description.includes(item))) {
+              if ([' kłos', ' kłosem'].some((item) => description.includes(item))) {
+                if (![
+                  'Herb gminy Gaworzyce',
+                  'Herb gminy Kondratowice',
+                  'Herb gminy Łagiewniki',
+                  'Herb gminy Deszczno',
+                  'Herb gminy Regimin',
+                  'Herb gminy Czarna Dąbrówka',
+                  'Herb gminy Koszęcin',
+                  'Herb Człuchowa',
+                  'Herb Olsztyna',
+                ].includes(unit.title)) {
+                  items.push('kłos');
+                }
+              }
+
+              if (['topór', 'toporami', 'toporem', ' tasaki', 'toporek', 'topory', ' siekierę', ' siekiery', ' siekiera', 'młot', 'herb górniczy', ' oskard', ' kilof'].some((item) => description.includes(item))) {
                 if (![
                   'Herb Zaklikowa',
                   'Herb Iwanisk',
@@ -532,7 +549,7 @@ export const fetchImages = async ({
                   'Herb Sułkowic',
                   'Herb Świątnik Górnych',
                 ].includes(unit.title)) {
-                  items.push('topór/młot');
+                  items.push('topór/młot/kilof');
                 }
               }
 
@@ -541,12 +558,54 @@ export const fetchImages = async ({
                   'Herb Węgorzyna',
                   'Herb Bobowej',
                   'Herb Opatówka',
+                  'Herb gminy Wizna',
+                  'Herb Głuska',
+                  'Herb gminy Białowieża',
+                  'Herb Drzewicy',
+                  'Herb gminy Malczyce',
+                  'Herb gminy Czerwonka',
+                  'Herb gminy Stryszawa',
+                  'Herb Latowicza',
+                  'Herb Nowego Miasta (powiat płoński)',
+                  'Herb Koprzywnicy',
+                  'Herb Latowicza',
+                  'Herb Rychtala',
+                  'Herb gminy Płoniawy-Bramura',
+                  'Herb gminy Rybno (województwo mazowieckie)',
+                  'Herb gminy Bukowsko',
+                  'Herb Rychtala',
+                  'Herb gminy Frysztak',
+                  'Herb gminy Jarosław',
+                  'Herb gminy Łomża',
+                  'Herb gminy Ujsoły',
+                  'Herb gminy Dąbrówno',
+                  'Herb Sulęcina',
+                  'Herb Cybinki',
+                  'Herb Lubniewic',
+                  'Herb Dąbrowic',
+                  'Herb Dąbrowy Tarnowskiej',
+                  'Herb Kalwarii Zebrzydowskiej',
+                  'Herb Sulejówka',
+                  'Herb Siedlec',
+                  'Herb Pułtuska',
+                  'Herb Tłuszcza',
+                  'Herb Wołomina',
+                  'Herb Zakroczymia',
+                  'Herb Nowej Sarzyny',
+                  'Herb Rudnika nad Sanem',
+                  'Herb Częstochowy',
+                  'Herb Piekar Śląskich',
+                  'Herb Kisielic',
+                  'Herb Mrągowa',
+                  'Herb Rydzyny',
+                  'Herb Bobolic',
+                  'Herb Goleniowa',
                 ].includes(unit.title)) {
                   items.push('drzewo');
                 }
               }
 
-              const lilia = [' lilie', ' lilia'];
+              const lilia = [' lilie', ' lilia', ' lilię', ' lilii '];
               const liliaFilter = [
                 'Herb Birczy',
                 'Herb Starogardu Gdańskiego',
@@ -594,7 +653,7 @@ export const fetchImages = async ({
                 }
               }
 
-              if (['wieża', ' wieże', ' wieżę', ' wieżą', ' wieży ', ' muru ', ' mur ', 'baszt', ' bramę ', ' bramą.', 'bramą,', ' bramną '].some((item) => description.includes(item))) {
+              if (['wieża', ' wieże', ' wieżę', ' wieżą', ' wieży ', ' muru ', ' mur ', 'baszt', ' bramę ', 'bramę.', ' bramą.', 'bramą,', ' bramną '].some((item) => description.includes(item))) {
                 if (![
                   'Herb gminy Gaworzyce',
                   'Herb Oleśnicy',
@@ -619,6 +678,7 @@ export const fetchImages = async ({
                   'Herb Aleksandrowa Łódzkiego',
                   'Herb Staszowa',
                   'Herb Nysy',
+                  'Herb Olsztyna',
                 ].includes(unit.title)) {
                   items.push('wieża/mury');
                 }
@@ -703,7 +763,7 @@ export const fetchImages = async ({
                 }
               }
 
-              if ([' święty', ' świetego', ' św.', ' święta ', 'matki bożej', 'matki boskiej', ' madonnę', 'chrystus'].some((item) => description.includes(item))) {
+              if ([' święty', ' świetego', ' św.', ' święta ', ' świętą ', 'matki bożej', ' floriana', 'jana chrciciela', 'matki boskiej', ' madonnę', 'chrystus'].some((item) => description.includes(item))) {
                 if (![
                   'Herb gminy Sadki',
                   'Herb gminy Leśna Podlaska',
