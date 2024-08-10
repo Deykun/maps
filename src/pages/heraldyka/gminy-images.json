@@ -350,7 +350,10 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-dobroszyce.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "wieża/mury",
+                "anioł"
+            ]
         }
     },
     "herb-gminy-domani_ow": {
@@ -2140,7 +2143,9 @@
             "animals": [
                 "jeleń"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-siechnic": {
@@ -3942,7 +3947,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "kłos"
+                "kłos",
+                "anioł"
             ]
         }
     },
@@ -5531,7 +5537,8 @@
                 "ryba"
             ],
             "items": [
-                "wieża/mury"
+                "wieża/mury",
+                "muszla"
             ]
         }
     },
@@ -5756,7 +5763,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "kłos"
+                "kłos",
+                "anioł"
             ]
         }
     },
@@ -10940,7 +10948,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "kłos"
+                "kłos",
+                "wieża/mury"
             ]
         }
     },
@@ -12067,7 +12076,8 @@
                 "ptak"
             ],
             "items": [
-                "klucz"
+                "klucz",
+                "wieża/mury"
             ]
         }
     },
@@ -12570,7 +12580,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-_zaga_n.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "anioł"
+            ]
         }
     },
     "herb-gminy-_zary": {
@@ -12976,7 +12988,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-bolimowa.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "muszla"
+            ]
         }
     },
     "herb-gminy-br_ojce": {
@@ -13256,7 +13270,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "kwiat"
+                "kwiat",
+                "anioł"
             ]
         }
     },
@@ -13631,6 +13646,7 @@
                 "koń"
             ],
             "items": [
+                "kłos",
                 "lilia",
                 "kwiat"
             ]
@@ -15614,6 +15630,7 @@
                 "wąż"
             ],
             "items": [
+                "kłos",
                 "drzewo",
                 "lilia",
                 "kwiat"
@@ -19225,6 +19242,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "muszla",
                 "postać świętego"
             ]
         }
@@ -24206,6 +24224,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "łódź",
                 "korona"
             ]
@@ -30533,7 +30552,9 @@
                 "jastrząb",
                 "ptak"
             ],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-le_zajsk": {
@@ -35186,7 +35207,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-lichnowy.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-linia": {
@@ -37180,7 +37203,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-che_lm-_sl_aski.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "wieża/mury"
+            ]
         }
     },
     "herb-gminy-chybie": {
@@ -39534,7 +39559,8 @@
             "animals": [],
             "items": [
                 "róża",
-                "kwiat"
+                "kwiat",
+                "muszla"
             ]
         }
     },
@@ -40716,6 +40742,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "anioł",
                 "korona",
                 "postać świętego"
             ]
@@ -45321,7 +45348,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-lipno-powiat-leszczy_nski.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-lisk_ow": {
@@ -45620,6 +45649,7 @@
             ],
             "items": [
                 "miecz",
+                "anioł",
                 "postać świętego"
             ]
         }
@@ -46558,7 +46588,9 @@
         "imageUrl": "images/heraldyka/gminy/herb-gminy-s_lupca.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "kłos"
+            ]
         }
     },
     "herb-gminy-bia_lo_sliwie": {

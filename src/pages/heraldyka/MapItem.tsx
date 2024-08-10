@@ -20,7 +20,6 @@ const MapItem = ({ title, imageUrl, markers, setListPhrase, total, style }: Prop
         onClick={() => setListPhrase(title)}
       >
         <img src={imageUrl}
-          loading="lazy"
           className={imageClassName}
           title={title}
         />
