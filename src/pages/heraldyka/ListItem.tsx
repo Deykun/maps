@@ -22,6 +22,7 @@ const ListItem = ({ title, url, imageUrl, colors, place, markers }: Administrati
                 </span>
               ))}
             </div>
+            {typeof place?.coordinates?.lon !== 'number' && <p className="text-[12px] text-[red] mt-2">Herb bez lokalizacji.</p>}
           </div>
         </li>
     );
