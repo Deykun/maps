@@ -525,7 +525,7 @@ export const fetchImages = async ({
                 }
               }
 
-              if ([' kłos', ' kłosem'].some((item) => description.includes(item))) {
+              if ([' kłos', ' kłosem', ' snop ', ' snopy '].some((item) => description.includes(item))) {
                 if (![
                   'Herb gminy Gaworzyce',
                   'Herb gminy Kondratowice',
@@ -655,7 +655,7 @@ export const fetchImages = async ({
                 }
               }
 
-              if (['wieża', ' wieże', ' wieżę', ' wieżą', ' wieży ', ' muru ', ' mur ', 'baszt', ' bramę ', 'bramę.', ' bramą.', 'bramą,', ' bramną '].some((item) => description.includes(item))) {
+              if (['wieża', ' wieże', ' wieżę', ' wieżą', ' wieży ', ' muru ', ' mur ', 'baszt', ' bramę ', 'bramę.', ' bramą.', 'bramą,', ' bramną ', ' bramie '].some((item) => description.includes(item))) {
                 if (![
                   'Herb gminy Gaworzyce',
                   'Herb Oleśnicy',
@@ -702,6 +702,24 @@ export const fetchImages = async ({
                   'Herb Środy Wielkopolskiej',
                 ].includes(unit.title)) {
                   items.push('łódź');
+                }
+              }
+
+              if ([' muszla', ' muszlę', ' muszle', ' muszelk'].some((item) => description.includes(item))) {
+                if (![
+                  'empty',
+                ].includes(unit.title)) {
+                  items.push('muszla');
+                }
+              }
+
+              if ([' anioł'].some((item) => description.includes(item))) {
+                if (![
+                  'Herb Bierutowa',
+                  'Herb Murowanej Gośliny',
+                  'Herb Łowicza',
+                ].includes(unit.title)) {
+                  items.push('anioł');
                 }
               }
 

@@ -2433,7 +2433,8 @@
             "animals": [],
             "items": [
                 "drzewo",
-                "wieża/mury"
+                "wieża/mury",
+                "anioł"
             ]
         }
     },
@@ -4272,7 +4273,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "strzała"
+                "strzała",
+                "wieża/mury"
             ]
         }
     },
@@ -7800,7 +7802,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-bolimowa.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "muszla"
+            ]
         }
     },
     "herb-d_abrowic": {
@@ -15249,6 +15253,7 @@
                 "lew"
             ],
             "items": [
+                "anioł",
                 "korona",
                 "postać świętego"
             ]
@@ -17704,6 +17709,7 @@
             ],
             "items": [
                 "miecz",
+                "anioł",
                 "korona",
                 "postać świętego"
             ]
@@ -20157,7 +20163,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-prabut.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "wieża/mury"
+            ]
         }
     },
     "herb-pruszcza-gda_nskiego": {
@@ -22310,7 +22318,8 @@
             "animals": [],
             "items": [
                 "róża",
-                "kwiat"
+                "kwiat",
+                "muszla"
             ]
         }
     },
@@ -23439,6 +23448,7 @@
             "animals": [],
             "items": [
                 "wieża/mury",
+                "muszla",
                 "postać świętego"
             ]
         }
@@ -23885,6 +23895,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "kłos",
                 "topór/młot/kilof"
             ]
         }
@@ -24300,7 +24311,9 @@
         "imageUrl": "images/heraldyka/miasta/herb-barczewa.png",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "anioł"
+            ]
         }
     },
     "herb-bartoszyc": {
@@ -25154,6 +25167,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "muszla",
                 "postać świętego"
             ]
         }
@@ -25346,6 +25360,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "muszla",
                 "postać świętego"
             ]
         }
@@ -27789,6 +27804,7 @@
             ],
             "items": [
                 "miecz",
+                "anioł",
                 "postać świętego"
             ]
         }

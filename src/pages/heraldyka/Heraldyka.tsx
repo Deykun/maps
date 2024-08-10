@@ -298,7 +298,7 @@ const Heraldyka = () => {
             </button>
           </div>
           <details className="mb-3">
-            <summary className="w-fit">Zwierzęta</summary>
+            <summary className="w-fit font-[600] tracking-wider">Zwierzęta</summary>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-7 mt-3">
               {[
                 { value: WITH_ANIMAL, total: 0 },
@@ -314,7 +314,7 @@ const Heraldyka = () => {
             </div>
           </details>
           <details className="mb-3">
-            <summary className="w-fit">Cechy</summary>
+            <summary className="w-fit font-[600] tracking-wider">Cechy</summary>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-7 mt-3">
               {itemsFiltersList.map(({ value, total }) => 
                 <button
@@ -328,8 +328,7 @@ const Heraldyka = () => {
           </details>
 
           <div className="mt-10">
-            <h3 className="inline text-[24px]">Lista</h3>
-            <br />
+            <h3 className="text-[24px] mb-3">Lista</h3>
             <div>
               <label>Ogranicz listę do:</label>
               {' '}
