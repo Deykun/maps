@@ -1,18 +1,11 @@
-export const colorsByNames: {
+type Colors = {
   [key: string]: string,
-} = {
-    white: '#fff',
-    black: '#000',
-    yellow: '#ffdf00',
-    red: '#da251d',
-    orange: '#fe6632',
-    lightblue: '#0096d8',
-    darkblue: '#083b84',
-    blue: '#005ebe',
-    lightgreen: '#6dc053',
-    green: '#37763b',
-    brown: '#ad634c',
-    gold: '#b0a88b',
+}
+
+export const colorsByNames: Colors = {
+  red: '#f00',
+  green: '#0f0',
+  blue: '#00f',
 };
 
 export type AdministrativeUnit = {
@@ -47,6 +40,7 @@ export type AdministrativeUnit = {
   },
   markers?: {
     animals?: string[],
+    items?: string[],
   }
 }
 
