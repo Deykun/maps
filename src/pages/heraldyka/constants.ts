@@ -10,6 +10,7 @@ export const colorsByNames: Colors = {
 
 export type AdministrativeUnit = {
   title: string,
+  shortTitle?: string,
   url: string,
   partOf?: string,
   type?: string,
@@ -31,6 +32,7 @@ export type AdministrativeUnit = {
     height: number
   },
   imageUrl?: string,
+  imageSrcSet?: string,
   place?: {
     name?: string,
     coordinates?: {

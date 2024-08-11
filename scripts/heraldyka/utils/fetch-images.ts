@@ -15,6 +15,26 @@ import { colorsByNames, AdministrativeUnit } from '../../../src/pages/heraldyka/
 
 const getColorName = nearestColor.from(colorsByNames);
 
+const getCompressedImageSrc = (imageUrl: string) => {
+  const [imageSrcWithoutFormat] = imageUrl.split('.');
+
+  const compressedImageSrcWithoutFormat = imageSrcWithoutFormat
+    .replace('/miasta/', '/web-miasta/')
+    .replace('/gminy/', '/web-gminy/');
+
+  const srcSet = [
+    { name: 'x1', width: '100w' },
+    { name: 'x2', width: '200w' },
+    { name: 'x3', width: '300w' },
+    { name: 'x4', width: '400w' },
+  ].map(({ name, width }) => `${compressedImageSrcWithoutFormat}-${name}.webp ${width}`).join(',')
+
+  return {
+    srcSet,
+    src: imageUrl
+  }
+}
+
 const componentToHex = (color: number) => {
   const hex = color.toString(16);
 
@@ -214,7 +234,7 @@ export const fetchImages = async ({
                 animals.push('lew');
                 animals.push('orzeł');
                 animals.push('ptak');
-              } else if (['Herb gminy Władysławów', 'Herb Zduńskiej Woli'].includes(unit.title)) {
+              } else if (['Herb gminy Władysławów', 'Herb Zduńskiej Woli', 'Herb Staszowa'].includes(unit.title)) {
                 animals.push('lew');
               } else if ([
                 'Herb gminy Siedlce',
@@ -283,6 +303,7 @@ export const fetchImages = async ({
                 'Herb Jastrzębia',
                 'Herb Ustronia',
                 'Herb Witkowa',
+                'Herb Zabrza',
               ].includes(unit.title)) {
                 // Doesn't have them
               } else {
@@ -580,6 +601,8 @@ export const fetchImages = async ({
                   'Herb Świątnik Górnych',
                   'Herb Chrzanowa',
                   'Herb Katowic',
+                  'Herb Zabrza',
+                  'Herb Staszowa',
                 ].includes(unit.title)) {
                   items.push('topór/młot/kilof');
                 }
@@ -717,7 +740,6 @@ export const fetchImages = async ({
                   'Herb Mogilna',
                   'Herb Krasnobrodu',
                   'Herb Aleksandrowa Łódzkiego',
-                  'Herb Staszowa',
                   'Herb Nysy',
                   'Herb Olsztyna',
                   'Herb Lubina',
@@ -973,11 +995,14 @@ export const fetchImages = async ({
 
               contentToSave[fileName] = {
                 ...unit,
+                description: '', // not needed
                 colors: {
                   primary,
                   palette: uniqPalette.filter(({ distance }) => distance < 80),
                 },
                 imageUrl: `images/heraldyka/${path}/${fileName}.${format}`,
+                imageSrcSet: getCompressedImageSrc(`images/heraldyka/${path}/${fileName}.${format}`).srcSet,
+                shortTitle: unit.title.replace('Herb gminy', 'Herb').replace('Herb miasta', 'Herb').replace(/\((.*)\)/g, ''),
                 markers: {
                   animals,
                   items,
