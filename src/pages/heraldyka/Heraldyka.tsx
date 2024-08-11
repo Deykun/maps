@@ -1,21 +1,23 @@
 import { useState, useMemo, useCallback } from 'react';
 import clsx from 'clsx';
+import { useTranslation } from 'react-i18next';
 // import SvgGmina from './SvgGmina';
 import SvgPowiaty from './SvgPowiaty';
 import ListItem from './ListItem';
 import MapItem from './MapItem';
 import './Heraldyka.scss';
-import { AdministrativeUnit } from './constants';
+import { AdministrativeUnit, WITH_ANIMAL, WITHOUT_ANIMAL } from './constants';
 import { removeDiacratics } from '../../utils/text';
+
+import { getFilter } from './utils/getFilter';
+import { getFilteredUnits } from './utils/getFilteredUnits';
+import { getPostionForPlace } from './utils/getPostionForPlace';
 
 import gminyJSON from './gminy-images.json'
 import miastaJSON from './miasta-images.json'
 
 const gminy = Object.values(gminyJSON);
 const miasta = Object.values(miastaJSON);
-
-const WITH_ANIMAL = 'ze zwięrzęciem';
-const WITHOUT_ANIMAL = 'bez zwierząt';
 
 const allUnits: AdministrativeUnit[] = Object.values([...gminy, ...miasta].filter((unit: AdministrativeUnit) => {
   if ([
@@ -45,57 +47,9 @@ const allUnits: AdministrativeUnit[] = Object.values([...gminy, ...miasta].filte
   return stack
 }, {}));
 
-const getFilter = (units: AdministrativeUnit[], name: 'animals' | 'items') => {
-  const filterByName = units.reduce((stack: {
-    [key: string]: number,
-  }, unit) => {
-    const marker = unit?.markers?.[name] || [];
-    marker.forEach((value: string) => {
-      if (stack[value]) {
-        stack[value] = stack[value] + 1;
-      } else {
-        stack[value] = 1;
-      }
-    })
-  
-    return stack;
-  }, {});
-
-  
-  return Object.entries(filterByName).map(
-    ([value, total]) => ({ value, total }),
-  ).filter(
-    ({ total }) => total >= 2,
-  ).sort((a, b) => b.total - a.total);
-}
-
 const animalFiltersList = getFilter(allUnits, 'animals');
 
 const itemsFiltersList = getFilter(allUnits, 'items');
-
-// https://pl.wikipedia.org/wiki/Geografia_Polski
-
-const minTop = 0;
-// const maxTop = 54.8;
-const maxTop = 54.95;
-const maxBottom = 48.95;
-
-const maxLeft = 14.07;
-const maxRight = 24.25;
-
-const polandWidth = maxRight - maxLeft;
-
-const getPostionForPlace = (unit: AdministrativeUnit) => {
-  const longitude = unit?.place?.coordinates?.lon ?? 0;
-  const latitude = unit?.place?.coordinates?.lat ?? 0;
-  const left = `${((longitude - maxLeft) / polandWidth * 100)}%`;
-  const top = `${minTop + ((latitude - maxTop) / (maxBottom - maxTop) * 100)}%`;
-
-  return {
-    left,
-    top,
-  }
-}
 
 const Heraldyka = () => {
     const [listPage, setListPage] = useState(1);
@@ -105,80 +59,24 @@ const Heraldyka = () => {
     const [animalFilters, setAnimalFilters] = useState<string[]>([]);
     const [itemFilters, setItemFilters] = useState<string[]>([]);
 
+    const { t } = useTranslation();
+
     const { units, unitsForMap, subtitle } = useMemo(() => {
-        const filteredUnits = allUnits.filter(
-          (unit) => {
-            const isColorFilterActive = colorFilters.length > 0;
-            if (isColorFilterActive) {
-              const isPrimary = unit?.colors?.primary?.name && colorFilters.includes(unit?.colors?.primary?.name);
-              if (!isPrimary) {
-                return false;
-              }
+      const {
+        filteredUnits,
+        unitsForMap,
+      } = getFilteredUnits(allUnits, colorFilters, animalFilters, itemFilters);
 
-              const isInPalette = Array.isArray(unit?.colors?.palette)
-                && unit.colors.palette.some(({ name }) => colorFilters.includes(name));
-  
-              if (!isInPalette) {
-                return false;
-              }
-            }
+      setListPage(1);
+      setListPhrase('');
 
-            const isAnimalFilterActive = animalFilters.length > 0;
-            if (isAnimalFilterActive) {
-              const animals = unit?.markers?.animals || [];
-              const hasAnimals = animals.length > 0;
-
-              if ([WITH_ANIMAL, WITHOUT_ANIMAL].includes(animalFilters[0])) {
-                if (animalFilters[0] === WITH_ANIMAL && !hasAnimals) {
-                  return false;
-                } else if (animalFilters[0] === WITHOUT_ANIMAL && hasAnimals) {
-                  return false;
-                }
-              } else {
-                if (!hasAnimals) {
-                  return false;
-                }
-  
-                const hasAllAnimals = animalFilters.every((active) => animals.includes(active));
-                if (!hasAllAnimals) {
-                  return false;
-                }
-              }
-            }
-
-            const isItemFilterActive = itemFilters.length > 0;
-            if (isItemFilterActive) {
-              const items = unit?.markers?.items || [];
-              const hasItems = items.length > 0;
-
-              if (!hasItems) {
-                return false;
-              }
-
-              const hasAllItems = itemFilters.every((active) => items.includes(active))
-              if (!hasAllItems) {
-                return false;
-              }
-            }
-
-            return true;
-          }
-        );
-
-        const unitsForMap = filteredUnits.filter(
-          (unit) => typeof unit?.place?.coordinates?.lon === 'number' && typeof unit?.imageUrl === 'string',
-        );
-
-        setListPage(1);
-        setListPhrase('');
-
-        return {
-          units: filteredUnits,
-          unitsForMap,
-          subtitle: [...itemFilters, ...animalFilters, ...colorFilters].filter(Boolean).map(
-            (name) => name.replace('red', 'czerwony').replace('green', 'zielony').replace('blue', 'niebieski'
-          )).join(' + '),
-        }
+      return {
+        units: filteredUnits,
+        unitsForMap,
+        subtitle: [...itemFilters, ...animalFilters, ...colorFilters].filter(Boolean).map(
+          (name) => name.replace('red', 'czerwony').replace('green', 'zielony').replace('blue', 'niebieski'
+        )).join(' + '),
+      }
     }, [colorFilters, animalFilters, itemFilters]);
 
     const unitsForList = useMemo(() => {
@@ -256,7 +154,9 @@ const Heraldyka = () => {
 
     return (
         <>
-          <h1 className="text-[22px] md:text-[48px] text-center mb-4">Herby polskich miast i gmin</h1>
+          <h1 className="text-[22px] md:text-[48px] text-center mb-4">
+            {t('heraldry.mapTitle')}
+          </h1>
           <h2 className="text-[18px] text-center mb-6">
             {subtitle && <span className="text-[#4b4b4b]">Dopasowanie: {subtitle}</span>}
           </h2>
@@ -329,7 +229,7 @@ const Heraldyka = () => {
                 </button>
               </span>
             </div>
-            <details className="mb-3">
+            <details className="mb-3" open>
               <summary className="w-fit font-[600] tracking-wider">Zwierzęta</summary>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-7 mt-3">
                 {[
@@ -340,7 +240,7 @@ const Heraldyka = () => {
                     onClick={() => toggleAnimal(value)}
                     className={animalFilters.includes(value) ? 'font-[800]' : ''}
                   >
-                    {value} {total > 0 && <small className="text-[#4b4b4b] tracking-widest">({total})</small>}
+                    {t(`heraldry.animal.${value}`)} {total > 0 && <small className="text-[#4b4b4b] tracking-widest">({total})</small>}
                   </button>
                 )}
               </div>

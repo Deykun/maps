@@ -164,78 +164,78 @@ export const fetchImages = async ({
 
               // TODO: replace the logic
               if (['Herb gminy Baranowo'].includes(unit.title)) {
-                animals.push('jastrząb')
-                animals.push('ptak');
+                animals.push('hawk')
+                animals.push('bird');
               } else if (['Herb Zabłudowa', 'Herb gminy Łomża', 'Herb Pionek'].includes(unit.title)) {
-                animals.push('jeleń');
+                animals.push('deer');
               } else if (['Herb Bierunia'].includes(unit.title)) {
-                animals.push('jeleń');
-                animals.push('ptak');
+                animals.push('deer');
+                animals.push('bird');
               } else if (['Herb Gdyni', 'Herb Rudnika nad Sanem'].includes(unit.title)) {
-                animals.push('ryba');
+                animals.push('fish');
               } else if (['Herb gminy Srokowo'].includes(unit.title)) {
-                animals.push('bóbr');
+                animals.push('beaver');
               } else if (['Herb Mirosławca'].includes(unit.title)) {
-                animals.push('koza');
+                animals.push('goat');
               } else if (['Herb Mielca'].includes(unit.title)) {
-                animals.push('byk/tur/żubr');
-                animals.push('jeleń');
+                animals.push('bullBison');
+                animals.push('deer');
               } else if (['Herb gminy Gołuchów'].includes(unit.title)) {
-                animals.push('byk/tur/żubr');
-                animals.push('koń');
+                animals.push('bullBison');
+                animals.push('horse');
               } else if (['Herb Jabłonkowa'].includes(unit.title)) {
-                animals.push('orzeł');
-                animals.push('ptak');
-                animals.push('baran');
+                animals.push('eagle');
+                animals.push('bird');
+                animals.push('ram');
               } else if (['Herb gminy Secemin', 'Herb Białegostoku'].includes(unit.title)) {
-                animals.push('orzeł');
-                animals.push('ptak');
-                animals.push('koń');
+                animals.push('eagle');
+                animals.push('bird');
+                animals.push('horse');
               } else if (['Herb Piwnicznej-Zdroju'].includes(unit.title)) {
-                animals.push('baran');
+                animals.push('ram');
               } else if (['Herb gminy Jastków', 'Herb gminy Baranów (powiat puławski)'].includes(unit.title)) {
-                animals.push('lampart');
+                animals.push('leopard');
               } else if (['Herb Drawna'].includes(unit.title)) {
-                animals.push('żuraw');
-                animals.push('ptak');
+                animals.push('crane');
+                animals.push('bird');
               } else if (['Herb Kołobrzegu'].includes(unit.title)) {
-                animals.push('łabędź');
-                animals.push('ptak');
+                animals.push('swan');
+                animals.push('bird');
               } else if (['Herb Tucholi'].includes(unit.title)) {
-                animals.push('gołąb');
-                animals.push('ptak');
+                animals.push('pigeon');
+                animals.push('bird');
               } else if (['Herb Słubic'].includes(unit.title)) {
-                animals.push('kogut');
-                animals.push('ptak');
+                animals.push('rooster');
+                animals.push('bird');
               } else if (['Herb gminy Drużbice'].includes(unit.title)) {
-                animals.push('gęś');
-                animals.push('ptak');
+                animals.push('goose');
+                animals.push('bird');
               } else if (['Herb Górowa Iławeckiego'].includes(unit.title)) {
-                animals.push('lis');
-                animals.push('gęś');
-                animals.push('ptak');
+                animals.push('fox');
+                animals.push('goose');
+                animals.push('bird');
               } else if (['Herb gminy Damasławek', 'Herb Żagania', 'Herb Sułkowic', 'Herb Kisielic', 'Herb Krakowa', 'Herb Zawadzkiego', 'Herb Bytomia'].includes(unit.title)) {
-                animals.push('orzeł');
-                animals.push('ptak');
+                animals.push('eagle');
+                animals.push('bird');
               } else if (['Herb Siedlec', 'Herb Kowar'].includes(unit.title)) {
-                animals.push('koń');   
+                animals.push('horse');   
               } else if (['Herb Warszawy'].includes(unit.title)) {
-                animals.push('syrena');
+                animals.push('mermaid');
               } else if (['Herb gminy Bielice'].includes(unit.title)) {
-                animals.push('lis');
+                animals.push('fox');
               } else if (['Herb gminy Pruszcz Gdański', 'Herb Ciężkowic', 'Herb Gorlic', 'Herb Tczewa'].includes(unit.title)) {
-                animals.push('gryf');
+                animals.push('griffin');
               } else if (['Herb Koszalina'].includes(unit.title)) {
-                animals.push('gryf');
-                animals.push('koń');
-                animals.push('orzeł');
-                animals.push('ptak');
+                animals.push('griffin');
+                animals.push('horse');
+                animals.push('eagle');
+                animals.push('bird');
               } else if (['Herb Częstochowy'].includes(unit.title)) {
-                animals.push('lew');
-                animals.push('orzeł');
-                animals.push('ptak');
+                animals.push('lion');
+                animals.push('eagle');
+                animals.push('bird');
               } else if (['Herb gminy Władysławów', 'Herb Zduńskiej Woli', 'Herb Staszowa'].includes(unit.title)) {
-                animals.push('lew');
+                animals.push('lion');
               } else if ([
                 'Herb gminy Siedlce',
                 'Herb gminy Kościerzyna',
@@ -243,9 +243,9 @@ export const fetchImages = async ({
                 'Herb Mrągowa',
                 'Herb Mieszkowic',
               ].includes(unit.title)) {
-                animals.push('niedźwiedź')
+                animals.push('bear')
               } else if (['Herb gminy Białowieża', 'Herb gminy Chojnice', 'Herb Głuska', 'Herb Sokółki'].includes(unit.title)) {
-                animals.push('byk/tur/żubr');
+                animals.push('bullBison');
               } else if ([
                 'Herb Wschowy',
                 'Herb gminy Zatory',
@@ -314,162 +314,162 @@ export const fetchImages = async ({
                 ]; 
                 if (orzel.some((animal) => description.includes(animal))) {
                   if (!orzelFilter.includes(unit.title)) {
-                    animals.push('orzeł');
+                    animals.push('eagle');
                   }
                 }
 
                 if (['sokół', 'sokoła'].some((animal) => description.includes(animal))) {
-                    animals.push('sokół');
+                    animals.push('falcon');
                 }
 
                 if (['czapla', 'czaple', 'czaplę', ' czapli '].some((animal) => description.includes(animal))) {
-                    animals.push('czapla');
+                    animals.push('heron');
                 }
 
                 if (['żurw', 'żurawia', 'żurawie'].some((animal) => description.includes(animal))) {
-                    animals.push('żuraw');
+                    animals.push('crane');
                 }
 
                 if ([' kruk ', ' kruka '].some((animal) => description.includes(animal))) {
-                    animals.push('kruk');
+                    animals.push('raven');
                 }
 
                 if (['jastrzą', 'jastrzębia'].some((animal) => description.includes(animal))) {
-                    animals.push('jastrząb');
+                    animals.push('hawk');
                 }
             
                 if ([' sowę', ' sowa'].some((animal) => description.includes(animal))) {
-                    animals.push('sowa');
+                    animals.push('owl');
                 }
 
                 if ([' sępie '].some((animal) => description.includes(animal))) {
-                    animals.push('sęp');
+                    animals.push('vulture');
                 }
 
                 if ([' pelikan'].some((animal) => description.includes(animal))) {
-                    animals.push('pelikan');
+                    animals.push('pelican');
                 }
 
                 if ([' bocian'].some((animal) => description.includes(animal))) {
-                    animals.push('bocian');
+                    animals.push('stork');
                 }
 
                 if ([' gęsią ', 'gęś', ' gęsie'].some((animal) => description.includes(animal))) {
-                    animals.push('gęś');
+                    animals.push('goose');
                 }
                   
                 if ([' gołębie', 'gołębia'].some((animal) => description.includes(animal))) {
-                    animals.push('gołąb');
+                    animals.push('pigeon');
                 }
 
                 if ([' łabęd'].some((animal) => description.includes(animal))) {
-                    animals.push('łabędź');
+                    animals.push('swan');
                 }
 
                 if (['kogut'].some((animal) => description.includes(animal))) {
-                    animals.push('kogut');
+                    animals.push('rooster');
                 }
 
                 if (animals.length > 0 || [...orzel, 'ptak', 'ptakiem', ' czyżyka', 'cietrzewia', 'ślepowron', ' szpak ', ' pióro', 'kormorana', ' czajkę ', 'kaczory', ' mewę', ' wrony,', 'krogulcem', ' puszczyk '].some((animal) => description.includes(animal))) {
                   if (!orzelFilter.includes(unit.title)) {
-                    animals.push('ptak');
+                    animals.push('bird');
                   }
                 }
 
                 if ([' wąż ', ' węże.'].some((animal) => description.includes(animal))) {
-                    animals.push('wąż');
+                    animals.push('snake');
                 }
 
                 if ([' zając ', ' zająca,'].some((animal) => description.includes(animal))) {
-                  animals.push('zając');
+                  animals.push('rabbit');
                 }
 
                 if ([' nietoperz'].some((animal) => description.includes(animal))) {
-                    animals.push('nietoperz');
+                    animals.push('bat');
                 }
 
                 if ([' gryfa', ' gryf', 'rybogryfa', 'półgryf'].some((animal) => description.includes(animal))) {
-                    animals.push('gryf');
+                    animals.push('griffin');
                 }
 
                 if ([' dzik,', 'dzik.', 'dzik ', ' dzika'].some((animal) => description.includes(animal))) {
-                    animals.push('dzik');
+                    animals.push('boar');
                 }
 
                 if (['jeleń', 'jelenia', 'jelenią', ' jelenie', 'jelon', ' łania', ' łani ', ' rosochy,'].some((animal) => description.includes(animal))) {
-                    animals.push('jeleń');
+                    animals.push('deer');
                 }
 
                 if (['łosia'].some((animal) => description.includes(animal))) {
-                  animals.push('łoś');
+                  animals.push('moose');
                 }
 
                 if (['żbika'].some((animal) => description.includes(animal))) {
-                  animals.push('żbik');
+                  animals.push('wildcat');
                 }
 
                 if (['półlwa', 'półlew', ' lew ', ' lwem ', ' lwa ', ' lwa,' , ' lwy ', 'lwy-', ' lwami'].some((animal) => description.includes(animal))) {
-                    animals.push('lew');
+                    animals.push('lion');
                 }
 
                 if ([' lampart ', 'lamparta', ' lamparcie ', 'lamparcie.', 'lewart'].some((animal) => description.includes(animal))) {
-                    animals.push('lampart');
+                    animals.push('leopard');
                 }
 
                 if ([' byk', ' byczka', ' tur ', ' tura ', ' tura,', 'żubr', ' ciołka ', 'ciołek ', ' bawoli', ' woła,', 'bawoła', 'bawołu ', ' wołu '].some((animal) => description.includes(animal))) {
-                    animals.push('byk/tur/żubr');
+                    animals.push('bullBison');
                 }
 
                 if (['smok'].some((animal) => description.includes(animal))) {
-                    animals.push('smok');
+                    animals.push('dragon');
                 }
 
                 if (['baran', 'muflon', ' owcę', ' owca', ' owczą'].some((animal) => description.includes(animal))) {
-                    animals.push('baran');
+                    animals.push('ram');
                 }
 
                 if (['ryba ', ' ryba.', ' ryb ', 'rybogryfa', 'rybopodobne', ' rybo ', ' rybo,', 'rybę', 'ryby', 'rybą', ' karpia ', 'łososia', ' suma ', 'łosoś', 'leszcza ', ' leszcze '].some((animal) => description.includes(animal))) {
-                    animals.push('ryba');
+                    animals.push('fish');
                 }
 
                 if (['pszczoł'].some((animal) => description.includes(animal))) {
-                    animals.push('pszczoła');
+                    animals.push('bee');
                 }
 
                 if (['syrenę', ' syrena '].some((animal) => description.includes(animal))) {
-                  animals.push('syrena');
+                  animals.push('mermaid');
                 }
 
                 if (['bóbr', ' bobra'].some((animal) => description.includes(animal))) {
-                    animals.push('bóbr');
+                    animals.push('beaver');
                 }
 
                 if ([' lis ', ' lisa ', ' lisem ', ' lisa,'].some((animal) => description.includes(animal))) {
-                    animals.push('lis');
+                    animals.push('fox');
                 }
 
                 if (['jaszczurk'].some((animal) => description.includes(animal))) {
-                    animals.push('jaszczurka');
+                    animals.push('lizard');
                 }
 
                 if ([' pies ', ' psa ', ' psa,', ' psem '].some((animal) => description.includes(animal))) {
-                    animals.push('pies');
+                    animals.push('dog');
                 }
 
                 if ([' niedźwiedz'].some((animal) => description.includes(animal))) {
-                    animals.push('niedźwiedź');
+                    animals.push('bear');
                 }
 
                 if ([' rak ', ' raka ', ' raka,', 'raka.'].some((animal) => description.includes(animal))) {
-                    animals.push('rak');
+                    animals.push('crayfish');
                 }
             
                 if ([' konia', ' koń ', ' koń,', ' koniu', ' konie '].some((animal) => description.includes(animal))) {
-                    animals.push('koń');
+                    animals.push('horse');
                 }
 
                 if (['jednoroż'].some((animal) => description.includes(animal))) {
-                    animals.push('jednorożec');
+                    animals.push('unicorn');
                 }
 
                 if (['centaur'].some((animal) => description.includes(animal))) {
@@ -477,27 +477,27 @@ export const fetchImages = async ({
                 }
 
                 if ([' oślej', ' osła'].some((animal) => description.includes(animal))) {
-                    animals.push('osioł');
+                    animals.push('donkey');
                 }
 
                 if (['amfisbaenę'].some((animal) => description.includes(animal))) {
-                    animals.push('amfisbaena');
+                    animals.push('amphisbaena');
                 }
 
                 if (['kozła', 'kozę', ' kóz.', ' kozy,', ' kozie ', 'kozłów', 'koziołki'].some((animal) => description.includes(animal))) {
-                    animals.push('koza');
+                    animals.push('goat');
                 }
 
                 if ([' wilk'].some((animal) => description.includes(animal))) {
-                    animals.push('wilk');
+                    animals.push('wolf');
                 }
 
                 if (['wiewiórka'].some((animal) => description.includes(animal))) {
-                    animals.push('wiewiórka');
+                    animals.push('squirrel');
                 }
 
                 if ([' konik polny'].some((animal) => description.includes(animal))) {
-                    animals.push('owad');
+                    animals.push('insect');
                 }
               }
 

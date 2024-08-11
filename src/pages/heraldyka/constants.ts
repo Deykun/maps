@@ -8,6 +8,9 @@ export const colorsByNames: Colors = {
   blue: '#00f',
 };
 
+export const WITH_ANIMAL = 'withAnimal';
+export const WITHOUT_ANIMAL = 'withoutAnimals';
+
 export type AdministrativeUnit = {
   title: string,
   shortTitle?: string,
