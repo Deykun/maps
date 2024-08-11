@@ -110,17 +110,17 @@ const Heraldyka = () => {
           (unit) => {
             const isColorFilterActive = colorFilters.length > 0;
             if (isColorFilterActive) {
-              if (unit?.colors?.primary?.name && colorFilters.includes(unit?.colors?.primary?.name)) {
-                return true;
-              }
-  
-              if (Array.isArray(unit?.colors?.palette) && unit.colors.palette.some(
-                ({ name }) => colorFilters.includes(name))
-              ) {
-                return true;
+              const isPrimary = unit?.colors?.primary?.name && colorFilters.includes(unit?.colors?.primary?.name);
+              if (!isPrimary) {
+                return false;
               }
 
-              return false;
+              const isInPalette = Array.isArray(unit?.colors?.palette)
+                && unit.colors.palette.some(({ name }) => colorFilters.includes(name));
+  
+              if (!isInPalette) {
+                return false;
+              }
             }
 
             const isAnimalFilterActive = animalFilters.length > 0;
