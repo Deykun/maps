@@ -998,7 +998,17 @@ export const fetchImages = async ({
                 description: '', // not needed
                 colors: {
                   primary,
-                  palette: uniqPalette.filter(({ distance }) => distance < 80),
+                  palette: uniqPalette.filter(({ name, distance }) => {
+                    if (name === 'blue') {
+                      return distance < 200;
+                    }
+
+                    if (name === 'green') {
+                      return distance < 180;
+                    }
+
+                    return distance < 110;
+                  }),
                 },
                 imageUrl: `images/heraldyka/${path}/${fileName}.${format}`,
                 imageSrcSet: getCompressedImageSrc(`images/heraldyka/${path}/${fileName}.${format}`).srcSet,
