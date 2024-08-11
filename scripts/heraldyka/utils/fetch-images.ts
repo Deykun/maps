@@ -286,8 +286,15 @@ export const fetchImages = async ({
               ].includes(unit.title)) {
                 // Doesn't have them
               } else {
-                if (['orzeł', 'orła', 'orłem', 'orłów', ' orle ', ' orły '].some((animal) => description.includes(animal))) {
+                const orzel = ['orzeł', 'orła', 'orłem', 'orłów', ' orle ', ' orły '];
+                const orzelFilter = [
+                  'Herb Trzemeszna',
+                  'Herb Starego Sącza',
+                ]; 
+                if (orzel.some((animal) => description.includes(animal))) {
+                  if (!orzelFilter.includes(unit.title)) {
                     animals.push('orzeł');
+                  }
                 }
 
                 if (['sokół', 'sokoła'].some((animal) => description.includes(animal))) {
@@ -342,8 +349,10 @@ export const fetchImages = async ({
                     animals.push('kogut');
                 }
 
-                if (animals.length > 0 || ['ptak', 'ptakiem', ' czyżyka', 'cietrzewia', 'ślepowron', ' szpak ', ' pióro', 'kormorana', ' czajkę ', 'kaczory', ' mewę', ' wrony,', 'krogulcem', ' puszczyk '].some((animal) => description.includes(animal))) {
+                if (animals.length > 0 || [...orzel, 'ptak', 'ptakiem', ' czyżyka', 'cietrzewia', 'ślepowron', ' szpak ', ' pióro', 'kormorana', ' czajkę ', 'kaczory', ' mewę', ' wrony,', 'krogulcem', ' puszczyk '].some((animal) => description.includes(animal))) {
+                  if (!orzelFilter.includes(unit.title)) {
                     animals.push('ptak');
+                  }
                 }
 
                 if ([' wąż ', ' węże.'].some((animal) => description.includes(animal))) {
@@ -956,6 +965,7 @@ export const fetchImages = async ({
                   'Herb Helu',
                   'Herb Wejherowa',
                   'Herb Zawiercia',
+                  'Herb Kamieńca Ząbkowickiego',
                 ].includes(unit.title)) {
                   items.push('postać świętego');
                 }
