@@ -23,7 +23,6 @@ const MapItem = ({ title, shortTitle, imageUrl, imageSrcSet, setListPhrase, styl
           src={imageUrl}
           srcSet={imageSrcSet}
           className="object-contain"
-          title={title}
           alt="⛊"
         />
     </button>
