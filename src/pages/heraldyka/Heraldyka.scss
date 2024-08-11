@@ -1,5 +1,5 @@
 svg {
-  filter: drop-shadow(0px 15px 5px #ddd);
+  filter: drop-shadow(0px 10px 5px #ddd);
 
   path {
     fill: #f2f2f2;
@@ -23,3 +23,41 @@ svg {
     fill: transparent !important;
   }
 }
+
+.map-wrapper {
+  container-type: inline-size;
+}
+
+.coat {
+  .coats-sm & img {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+  
+  .coats-md & img {
+    height: 2rem;
+    width: 2rem;
+    height: 4.2cqi;
+    width: 4.2cqi;
+  }
+  
+  .coats-lg & img {
+    height: 2.5rem;
+    width: 2.5rem;
+    height: 5.5cqi;
+    width: 5.5cqi;
+  }
+
+  img {
+    transition-delay: 0.1s;
+    transition: 0.1s cubic-bezier(0.68, 0, 0.265, 1.30);
+  }
+
+  &:hover {
+    img {
+      height: 100px;
+      width: 100px;
+    }
+  }
+}
+

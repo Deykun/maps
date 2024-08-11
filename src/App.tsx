@@ -5,9 +5,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <div className="max-w-screen-xl mx-auto p-4">
-        <Routes />
-      </div>
+      <Routes />
     </>
   );
 }
