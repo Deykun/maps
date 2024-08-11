@@ -16,6 +16,8 @@ export const getFilter = (units: AdministrativeUnit[], name: 'animals' | 'items'
     return stack;
   }, {});
 
+  console.log(Object.keys(filterByName).join(' '));
+
   
   return Object.entries(filterByName).map(
     ([value, total]) => ({ value, total }),

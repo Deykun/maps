@@ -54,7 +54,7 @@ const itemsFiltersList = getFilter(allUnits, 'items');
 const Heraldyka = () => {
     const [listPage, setListPage] = useState(1);
     const [listPhrase, setListPhrase] = useState('');
-    const [mapFitment, setMapFitment] = useState<'compact' | 'full-width' | 'zoom'>('compact');
+    const [mapFitment, setMapFitment] = useState<'compact' | 'fullWidth' | 'zoom'>('compact');
     const [colorFilters, setColorFilters] = useState<string[]>([]);
     const [animalFilters, setAnimalFilters] = useState<string[]>([]);
     const [itemFilters, setItemFilters] = useState<string[]>([]);
@@ -140,8 +140,8 @@ const Heraldyka = () => {
 
     const toggleMapFittment = () => {
       if (mapFitment === 'compact') {
-        setMapFitment('full-width');
-      } else if (mapFitment === 'full-width') {
+        setMapFitment('fullWidth');
+      } else if (mapFitment === 'fullWidth') {
         setMapFitment('zoom');
       } else {
         setMapFitment('compact');
@@ -157,7 +157,7 @@ const Heraldyka = () => {
           <h1 className="text-[22px] md:text-[48px] text-center mb-4">
             {t('heraldry.mapTitle')}
           </h1>
-          <h2 className="text-[18px] text-center mb-6">
+          <h2 className="text-[18px] text-center mb-6 relative">
             {subtitle && <span className="text-[#4b4b4b]">Dopasowanie: {subtitle}</span>}
           </h2>
           <div
@@ -187,26 +187,27 @@ const Heraldyka = () => {
               </div>
             </div>
           </div>
-          <div className="max-w-screen-xl mx-auto p-4">
-            <div className="flex flex-wrap justify-between mb-10">
+          <div className="sticky top-0 mb-5 shadow-md bg-white">
+            <div className="max-w-screen-xl mx-auto p-4 flex flex-wrap justify-between">
               <p className="text-[12px] text-[#4b4b4b]">
-                Na podstawie scrapingu artykułów z <strong className="text-black">Wikipedii</strong>.
+                {t('heraldry.mapFooterSource')} <strong className="text-black">wikipedia.org</strong>.
               </p>
               <p className="text-[12px] text-[#4b4b4b]">
                 Wszystkich herbów <strong className="text-black">{allUnits.length}</strong>
                 {allUnits.length > units.length && <>, a po odfiltrowaniu <strong className="text-black">{units.length}</strong></>}.
               </p>
             </div>
+          </div>
+          <div className="max-w-screen-xl mx-auto p-4">
             <div className="flex items-center mb-3">
-              <h3 className="inline text-[24px]">Opcje</h3>
               <span className="ml-auto">
-                {units.length === 0 && <span className="mr-2 text-[red] text-[12px]">(brak wyników)</span>}
-                {hasFilters && <button className="ml-auto font-[600]" onClick={resetFilters}>wyczyść</button>}
+                {units.length === 0 && <span className="mr-2 text-[red] text-[12px]">{t('heraldry.noResult')}</span>}
+                {hasFilters && <button className="ml-auto font-[600]" onClick={resetFilters}>{t('heraldry.clearFilters')}</button>}
               </span>
             </div>
             <div className="flex items-center gap-10 mb-3">
               <span className="flex items-center gap-5">
-                Kolory:
+                {t('heraldry.colors')}
                 {[
                   { name: 'red', color: '#d61e27' },
                   { name: 'green', color: '#299649' },
@@ -221,16 +222,14 @@ const Heraldyka = () => {
                 </button>)}
               </span>
               <span className="ml-auto flex items-center gap-5">
-                Rozmiar mapy:  
+                {t('heraldry.mapSize')}
                 <button className="font-[600]" onClick={toggleMapFittment}>
-                  {mapFitment === 'compact' && 'Mała'}
-                  {mapFitment === 'full-width' && 'Średni'}
-                  {mapFitment === 'zoom' && 'Duża'}
+                  {t(`heraldry.mapSize.${mapFitment}`)}
                 </button>
               </span>
             </div>
-            <details className="mb-3" open>
-              <summary className="w-fit font-[600] tracking-wider">Zwierzęta</summary>
+            <details className="mb-3">
+              <summary className="w-fit font-[600] tracking-wider">{t('heraldry.animal.filterTitle')}</summary>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-7 mt-3">
                 {[
                   { value: WITH_ANIMAL, total: 0 },
@@ -246,14 +245,14 @@ const Heraldyka = () => {
               </div>
             </details>
             <details className="mb-3">
-              <summary className="w-fit font-[600] tracking-wider">Cechy</summary>
+              <summary className="w-fit font-[600] tracking-wider">{t('heraldry.item.filterTitle')}</summary>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-7 mt-3">
                 {itemsFiltersList.map(({ value, total }) => 
                   <button
                     onClick={() => toggleItem(value)}
                     className={itemFilters.includes(value) ? 'font-[800]' : ''}
                   >
-                    {value} <small className="text-[#4b4b4b] tracking-widest">({total})</small>
+                    {t(`heraldry.item.${value}`)} <small className="text-[#4b4b4b] tracking-widest">({total})</small>
                   </button>
                 )}
               </div>
@@ -275,7 +274,7 @@ const Heraldyka = () => {
               {unitsForList.slice(0, 30 * listPage).map((unit) => (<ListItem key={unit.title} {...unit} />))}
             </ul>
             {unitsForList.length > 30 * listPage && <div className="mt-5 text-center">
-              <button onClick={() => setListPage(listPage + 1)}>Więcej</button>
+              <button onClick={() => setListPage(listPage + 1)}>Pokaż więcej</button>
             </div>}
           </div>
         </>

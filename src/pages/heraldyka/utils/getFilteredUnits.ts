@@ -1,4 +1,4 @@
-import { AdministrativeUnit } from '../constants';
+import { AdministrativeUnit, WITH_ANIMAL, WITHOUT_ANIMAL } from '../constants';
 
 export const getFilteredUnits = (units: AdministrativeUnit[], colorFilters: string[], animalFilters: string[], itemFilters: string[]) => {
   const filteredUnits = units.filter(
