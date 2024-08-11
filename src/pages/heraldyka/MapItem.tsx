@@ -17,15 +17,13 @@ const MapItem = ({ title, shortTitle, imageUrl, imageSrcSet, setListPhrase, styl
         style={style}
         onClick={() => setListPhrase(title)}
         role="button"
+        data-title={shortTitle || title}
       >
-        <h3 className="absolute bottom-full left-1/2 -translate-x-1/2 -translate-y-3 bg-white p-2 rounded-[4px] whitespace-nowrap truncate max-w-[250px] text-[12px] tracking-wider shadow-lg pointer-events-none duration-100 origin-bottom scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100">        
-          {shortTitle || title}
-        </h3>
         <img
           src={imageUrl}
           srcSet={imageSrcSet}
           className="object-contain"
-          title={title}
+          alt="⛊"
         />
     </button>
     );

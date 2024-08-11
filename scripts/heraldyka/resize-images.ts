@@ -9,7 +9,7 @@ const imagesMiasta = fs.readdirSync('./public/images/heraldyka/miasta').map(
   (imageFile) => ({ imageSrc: `./public/images/heraldyka/miasta/${imageFile}`, imageFile, type: 'miasta' }),
 );
 
-const images = [...imagesGiminy, ...imagesMiasta];;
+const images = [...imagesGiminy, ...imagesMiasta];
 
 const start = (new Date()).getTime();
 const total = images.length;
