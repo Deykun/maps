@@ -64,8 +64,15 @@ export const getFilteredUnits = (units: AdministrativeUnit[], colorFilters: stri
     (unit) => typeof unit?.place?.coordinates?.lon === 'number' && typeof unit?.imageUrl === 'string',
   );
 
+  const subtitleParts = [
+    ...colorFilters.map((value) => `heraldry.color.${value}`),
+    ...animalFilters.map((value) => `heraldry.animal.${value}`),
+    ...itemFilters.map((value) => `heraldry.item.${value}`),
+  ];
+
   return {
     filteredUnits,
     unitsForMap,
+    subtitleParts,
   }
 }

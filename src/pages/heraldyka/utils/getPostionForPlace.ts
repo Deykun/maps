@@ -5,9 +5,9 @@ import { AdministrativeUnit } from '../constants';
 const minTop = 0;
 // const maxTop = 54.8;
 const maxTop = 54.95;
-const maxBottom = 48.95;
+const maxBottom = 49;
 
-const maxLeft = 14.07;
+const maxLeft = 13.98;
 const maxRight = 24.25;
 
 const polandWidth = maxRight - maxLeft;

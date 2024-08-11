@@ -1,5 +1,5 @@
 svg {
-  filter: drop-shadow(0px 10px 5px #ddd);
+  filter: drop-shadow(0px 10px 5px #fafafa);
 
   path {
     fill: #f2f2f2;
@@ -8,7 +8,7 @@ svg {
     transition: 0.3s ease-in-out;
 
     &:hover {
-      fill: #dddddd !important;
+      fill: #fafafaddd !important;
     }
   }
 }
@@ -51,8 +51,10 @@ svg {
   img {
     transition-delay: 0.1s;
     transition: 0.1s cubic-bezier(0.68, 0, 0.265, 1.30);
-
-    background-image: radial-gradient(#66a5b8, #66a5b8 2px, transparent 3px, transparent);;
+    background-image: radial-gradient(#80907faa, #80907faa 2px, transparent 3px, transparent);
+    background-size: 10px 10px;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   &:hover {
@@ -62,4 +64,3 @@ svg {
     }
   }
 }
-

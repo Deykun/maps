@@ -61,10 +61,11 @@ const Heraldyka = () => {
 
     const { t } = useTranslation();
 
-    const { units, unitsForMap, subtitle } = useMemo(() => {
+    const { units, unitsForMap, subtitleParts } = useMemo(() => {
       const {
         filteredUnits,
         unitsForMap,
+        subtitleParts,
       } = getFilteredUnits(allUnits, colorFilters, animalFilters, itemFilters);
 
       setListPage(1);
@@ -73,9 +74,7 @@ const Heraldyka = () => {
       return {
         units: filteredUnits,
         unitsForMap,
-        subtitle: [...itemFilters, ...animalFilters, ...colorFilters].filter(Boolean).map(
-          (name) => name.replace('red', 'czerwony').replace('green', 'zielony').replace('blue', 'niebieski'
-        )).join(' + '),
+        subtitleParts,
       }
     }, [colorFilters, animalFilters, itemFilters]);
 
@@ -157,20 +156,28 @@ const Heraldyka = () => {
           <h1 className="text-[22px] md:text-[48px] text-center mb-4">
             {t('heraldry.mapTitle')}
           </h1>
-          <h2 className="text-[18px] text-center mb-6 relative">
-            {subtitle && <span className="text-[#4b4b4b]">Dopasowanie: {subtitle}</span>}
+          <h2 className="text-[18px] min-h-[20px] leading-[20px] text-center mb-6 relative">
+            {subtitleParts.length > 0 && <span className="text-[#4b4b4b]">
+              <small>
+                {t('heraldry.activeFilters')}
+              </small>
+              {' '}
+              <span className="text-black">
+                {subtitleParts.map((label) => t(label)).join(' + ')}
+              </span>
+            </span>}
           </h2>
           <div
             className={clsx("mb-10", coatsSizeClassName, {
-              "max-h-[70vh]": ['compact', 'zoom'].includes(mapFitment),
+              "max-h-[66vh]": ['compact', 'zoom'].includes(mapFitment),
               "overflow-scroll": ['zoom'].includes(mapFitment),
             })}
           >
             <div
               className={clsx("map-wrapper relative aspect-[820_/_775] mx-auto flex justify-center items-center", {
-                "max-h-[70vh]": ['compact'].includes(mapFitment),
+                "max-h-[66vh]": ['compact'].includes(mapFitment),
               })}
-              style={mapFitment === 'zoom' ? { width: 2000 } : {}}
+              style={mapFitment === 'zoom' ? { width: 2500 } : {}}
             >
               {/* <SvgGmina /> */}
               <SvgPowiaty />
@@ -187,27 +194,33 @@ const Heraldyka = () => {
               </div>
             </div>
           </div>
-          <div className="sticky top-0 mb-5 shadow-md bg-white">
-            <div className="max-w-screen-xl mx-auto p-4 flex flex-wrap justify-between">
+          <div className="sticky -top-[1px] border-b bg-white">
+            <div className="max-w-screen-xl mx-auto p-4 flex flex-wrap justify-between border-t border-x">
               <p className="text-[12px] text-[#4b4b4b]">
                 {t('heraldry.mapFooterSource')} <strong className="text-black">wikipedia.org</strong>.
               </p>
               <p className="text-[12px] text-[#4b4b4b]">
-                Wszystkich herbów <strong className="text-black">{allUnits.length}</strong>
-                {allUnits.length > units.length && <>, a po odfiltrowaniu <strong className="text-black">{units.length}</strong></>}.
+                {t('heraldry.mapFooterAllCoats')} <strong className="text-black">{allUnits.length}</strong>
+                {allUnits.length > units.length && <>{t('heraldry.mapFooterCoatsAfterFilter')}
+                {' '}
+                <strong className="text-black">{units.length}</strong>
+                {units.length > 10 && <>{' '}- <strong className="text-black">
+                  {(100 * units.length/allUnits.length).toFixed(2)}
+                </strong><small>%</small></>}</>}.
               </p>
             </div>
           </div>
-          <div className="max-w-screen-xl mx-auto p-4">
+          <div className="max-w-screen-xl mx-auto border-x p-4 pt-10 bg-white">
             <div className="flex items-center mb-3">
+              <h3 className="text-[24px] mb-3">Filtry</h3>
               <span className="ml-auto">
-                {units.length === 0 && <span className="mr-2 text-[red] text-[12px]">{t('heraldry.noResult')}</span>}
+                {units.length === 0 && <span className="mr-2 text-[#ca1a1a] text-[12px] tracking-wider">{t('heraldry.noResult')}</span>}
                 {hasFilters && <button className="ml-auto font-[600]" onClick={resetFilters}>{t('heraldry.clearFilters')}</button>}
               </span>
             </div>
-            <div className="flex items-center gap-10 mb-3">
+            <div className="flex items-center gap-10 mb-10">
               <span className="flex items-center gap-5">
-                {t('heraldry.colors')}
+                {t('heraldry.color.filterTitle')}
                 {[
                   { name: 'red', color: '#d61e27' },
                   { name: 'green', color: '#299649' },
@@ -228,7 +241,7 @@ const Heraldyka = () => {
                 </button>
               </span>
             </div>
-            <details className="mb-3">
+            <details className="mb-10">
               <summary className="w-fit font-[600] tracking-wider">{t('heraldry.animal.filterTitle')}</summary>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-7 mt-3">
                 {[
@@ -244,7 +257,7 @@ const Heraldyka = () => {
                 )}
               </div>
             </details>
-            <details className="mb-3">
+            <details className="mb-10">
               <summary className="w-fit font-[600] tracking-wider">{t('heraldry.item.filterTitle')}</summary>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-7 mt-3">
                 {itemsFiltersList.map(({ value, total }) => 
@@ -257,8 +270,7 @@ const Heraldyka = () => {
                 )}
               </div>
             </details>
-
-            <div className="mt-10">
+            <div className="mt-20">
               <h3 className="text-[24px] mb-3">Lista</h3>
               <div>
                 <label>Ogranicz listę do:</label>
