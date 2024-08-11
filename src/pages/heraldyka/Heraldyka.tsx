@@ -335,7 +335,7 @@ const Heraldyka = () => {
                   {mapFitment === 'compact' && 'Mała'}
                   {mapFitment === 'full-width' && 'Średni'}
                   {mapFitment === 'zoom' && 'Duża'}
-                </button>z
+                </button>
               </span>
             </div>
             <details className="mb-3">
