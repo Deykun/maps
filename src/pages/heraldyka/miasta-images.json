@@ -166,7 +166,7 @@
                 "horse"
             ],
             "items": [
-                "axeHammerPickaxe"
+                "hammer"
             ]
         }
     },
@@ -433,7 +433,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "walls"
+                "walls",
+                "wheel"
             ]
         }
     },
@@ -697,6 +698,7 @@
             "items": [
                 "sword",
                 "walls",
+                "wheel",
                 "crown",
                 "saint"
             ]
@@ -829,7 +831,9 @@
         "shortTitle": "Herb Jaworzyny Śląskiej",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "wheel"
+            ]
         }
     },
     "herb-jedlinyzdroju": {
@@ -916,7 +920,9 @@
                 "eagle",
                 "bird"
             ],
-            "items": []
+            "items": [
+                "wheel"
+            ]
         }
     },
     "herb-jeleniej-g_ory": {
@@ -1234,7 +1240,7 @@
                 "horse"
             ],
             "items": [
-                "axeHammerPickaxe"
+                "hammer"
             ]
         }
     },
@@ -2230,7 +2236,9 @@
         "shortTitle": "Herb Piechowic",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "wheel"
+            ]
         }
     },
     "herb-pie_nska": {
@@ -2317,14 +2325,13 @@
         "shortTitle": "Herb Pieszyc",
         "markers": {
             "animals": [
-                "eagle",
-                "bird",
                 "ram"
             ],
             "items": [
                 "earOfGrain",
                 "tree",
-                "walls"
+                "walls",
+                "wheel"
             ]
         }
     },
@@ -2758,7 +2765,7 @@
                 "bird"
             ],
             "items": [
-                "axeHammerPickaxe"
+                "hammer"
             ]
         }
     },
@@ -3529,7 +3536,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "tree"
+                "tree",
+                "wheel"
             ]
         }
     },
@@ -3664,7 +3672,8 @@
                 "bird"
             ],
             "items": [
-                "axeHammerPickaxe",
+                "hammer",
+                "pickaxe",
                 "flower"
             ]
         }
@@ -3976,7 +3985,7 @@
                 "bird"
             ],
             "items": [
-                "axeHammerPickaxe"
+                "hammer"
             ]
         }
     },
@@ -5962,7 +5971,9 @@
         "shortTitle": "Herb Radzynia Chełmińskiego",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "wheel"
+            ]
         }
     },
     "herb-rypina": {
@@ -7956,7 +7967,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "axeHammerPickaxe",
+                "axe",
                 "crown"
             ]
         }
@@ -8344,7 +8355,7 @@
                 "bird"
             ],
             "items": [
-                "axeHammerPickaxe"
+                "axe"
             ]
         }
     },
@@ -9829,7 +9840,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "axeHammerPickaxe"
+                "hammer"
             ]
         }
     },
@@ -10754,7 +10765,9 @@
                 "swan",
                 "bird"
             ],
-            "items": []
+            "items": [
+                "wheel"
+            ]
         }
     },
     "herb-zielonej-g_ory": {
@@ -11673,7 +11686,8 @@
                 "bird"
             ],
             "items": [
-                "earOfGrain"
+                "earOfGrain",
+                "wheel"
             ]
         }
     },
@@ -13700,7 +13714,8 @@
                 "bird"
             ],
             "items": [
-                "axeHammerPickaxe"
+                "hammer",
+                "pickaxe"
             ]
         }
     },
@@ -13790,7 +13805,7 @@
             ],
             "items": [
                 "earOfGrain",
-                "axeHammerPickaxe"
+                "pickaxe"
             ]
         }
     },
@@ -13832,7 +13847,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "axeHammerPickaxe"
+                "hammer"
             ]
         }
     },
@@ -13875,7 +13890,9 @@
             "animals": [
                 "moose"
             ],
-            "items": []
+            "items": [
+                "wheel"
+            ]
         }
     },
     "herb-chrzanowa": {
@@ -14212,7 +14229,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "crown"
+                "crown",
+                "saint"
             ]
         }
     },
@@ -14511,7 +14529,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "axeHammerPickaxe"
+                "axe"
             ]
         }
     },
@@ -14627,7 +14645,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "axeHammerPickaxe",
+                "axe",
                 "tree"
             ]
         }
@@ -14845,7 +14863,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "axeHammerPickaxe",
+                "axe",
+                "hammer",
                 "tree"
             ]
         }
@@ -14924,7 +14943,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "axeHammerPickaxe",
+                "axe",
                 "lily",
                 "flower"
             ]
@@ -15019,6 +15038,7 @@
             "animals": [],
             "items": [
                 "sword",
+                "wheel",
                 "crown",
                 "saint"
             ]
@@ -15410,6 +15430,7 @@
             "animals": [],
             "items": [
                 "sword",
+                "wheel",
                 "crown"
             ]
         }
@@ -16018,7 +16039,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "axeHammerPickaxe"
+                "hammer",
+                "pickaxe"
             ]
         }
     },
@@ -16145,7 +16167,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "axeHammerPickaxe"
+                "axe"
             ]
         }
     },
@@ -17600,7 +17622,8 @@
             ],
             "items": [
                 "tree",
-                "walls"
+                "walls",
+                "wheel"
             ]
         }
     },
@@ -17989,9 +18012,7 @@
             "animals": [
                 "moose"
             ],
-            "items": [
-                "earOfGrain"
-            ]
+            "items": []
         }
     },
     "herb-_lomianek": {
@@ -19107,6 +19128,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "wheel",
                 "crown"
             ]
         }
@@ -20457,7 +20479,7 @@
                 "bullBison"
             ],
             "items": [
-                "axeHammerPickaxe",
+                "axe",
                 "crown"
             ]
         }
@@ -21651,7 +21673,9 @@
                 "eagle",
                 "bird"
             ],
-            "items": []
+            "items": [
+                "wheel"
+            ]
         }
     },
     "herb-le_snicy": {
@@ -22482,6 +22506,7 @@
             ],
             "items": [
                 "walls",
+                "wheel",
                 "crown"
             ]
         }
@@ -25068,7 +25093,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "tree"
+                "tree",
+                "wheel"
             ]
         }
     },
@@ -26029,7 +26055,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "axeHammerPickaxe"
+                "axe"
             ]
         }
     },
@@ -26674,7 +26700,7 @@
                 "fish"
             ],
             "items": [
-                "axeHammerPickaxe"
+                "hammer"
             ]
         }
     },
@@ -26761,7 +26787,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "tree"
+                "tree",
+                "wheel"
             ]
         }
     },
@@ -26882,6 +26909,7 @@
             "animals": [],
             "items": [
                 "sword",
+                "wheel",
                 "crown",
                 "saint"
             ]
@@ -27175,7 +27203,9 @@
             "animals": [
                 "griffin"
             ],
-            "items": []
+            "items": [
+                "wheel"
+            ]
         }
     },
     "herb-ko_scierzyny": {
@@ -27809,7 +27839,9 @@
         "shortTitle": "Herb Rumi",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "wheel"
+            ]
         }
     },
     "herb-sztumu": {
@@ -28532,7 +28564,7 @@
                 "bird"
             ],
             "items": [
-                "axeHammerPickaxe",
+                "pickaxe",
                 "crown"
             ]
         }
@@ -28762,7 +28794,7 @@
             ],
             "items": [
                 "earOfGrain",
-                "axeHammerPickaxe"
+                "hammer"
             ]
         }
     },
@@ -28853,7 +28885,7 @@
                 "bird"
             ],
             "items": [
-                "axeHammerPickaxe",
+                "hammer",
                 "tree",
                 "crown"
             ]
@@ -29032,7 +29064,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "axeHammerPickaxe",
+                "axe",
+                "pickaxe",
                 "tree"
             ]
         }
@@ -29075,7 +29108,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "axeHammerPickaxe"
+                "hammer"
             ]
         }
     },
@@ -29422,7 +29455,9 @@
                 "eagle",
                 "bird"
             ],
-            "items": []
+            "items": [
+                "wheel"
+            ]
         }
     },
     "herb-l_edzin": {
@@ -29513,11 +29548,9 @@
         "imageSrcSet": "images/heraldyka/web-miasta/herb-_lazisk-g_ornych-x1.webp 100w,images/heraldyka/web-miasta/herb-_lazisk-g_ornych-x2.webp 200w,images/heraldyka/web-miasta/herb-_lazisk-g_ornych-x3.webp 300w,images/heraldyka/web-miasta/herb-_lazisk-g_ornych-x4.webp 400w",
         "shortTitle": "Herb Łazisk Górnych",
         "markers": {
-            "animals": [
-                "deer"
-            ],
+            "animals": [],
             "items": [
-                "axeHammerPickaxe"
+                "tree"
             ]
         }
     },
@@ -29558,7 +29591,9 @@
         "shortTitle": "Herb Łaz",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "wheel"
+            ]
         }
     },
     "herb-miasteczka-_sl_askiego": {
@@ -29780,7 +29815,9 @@
             ],
             "items": [
                 "sword",
-                "walls"
+                "walls",
+                "wheel",
+                "saint"
             ]
         }
     },
@@ -29943,7 +29980,6 @@
         "markers": {
             "animals": [],
             "items": [
-                "axeHammerPickaxe",
                 "saint"
             ]
         }
@@ -30029,7 +30065,8 @@
             "animals": [],
             "items": [
                 "earOfGrain",
-                "walls"
+                "walls",
+                "wheel"
             ]
         }
     },
@@ -30242,6 +30279,7 @@
                 "bird"
             ],
             "items": [
+                "wheel",
                 "crown"
             ]
         }
@@ -30638,7 +30676,7 @@
                 "bird"
             ],
             "items": [
-                "axeHammerPickaxe",
+                "hammer",
                 "crown"
             ]
         }
@@ -30681,7 +30719,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "axeHammerPickaxe",
+                "hammer",
                 "walls"
             ]
         }
@@ -30889,8 +30927,9 @@
                 "bird"
             ],
             "items": [
-                "axeHammerPickaxe",
-                "flower"
+                "hammer",
+                "pickaxe",
+                "wheel"
             ]
         }
     },
@@ -30929,7 +30968,8 @@
                 "bird"
             ],
             "items": [
-                "axeHammerPickaxe"
+                "hammer",
+                "pickaxe"
             ]
         }
     },
@@ -31055,9 +31095,7 @@
         "shortTitle": "Herb Ustronia",
         "markers": {
             "animals": [],
-            "items": [
-                "axeHammerPickaxe"
-            ]
+            "items": []
         }
     },
     "herb-wilamowic": {
@@ -31286,7 +31324,8 @@
                 "bird"
             ],
             "items": [
-                "sword"
+                "sword",
+                "wheel"
             ]
         }
     },
@@ -31330,7 +31369,9 @@
                 "eagle",
                 "bird"
             ],
-            "items": []
+            "items": [
+                "wheel"
+            ]
         }
     },
     "herb-zabrza": {
@@ -31376,7 +31417,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "walls"
+                "walls",
+                "wheel"
             ]
         }
     },
@@ -31418,7 +31460,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "axeHammerPickaxe",
+                "hammer",
                 "walls"
             ]
         }
@@ -31690,7 +31732,7 @@
                 "bird"
             ],
             "items": [
-                "axeHammerPickaxe",
+                "hammer",
                 "tree"
             ]
         }
@@ -32324,7 +32366,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "axeHammerPickaxe"
+                "axe"
             ]
         }
     },
@@ -32451,7 +32493,7 @@
             "animals": [],
             "items": [
                 "horseshoe",
-                "axeHammerPickaxe"
+                "hammer"
             ]
         }
     },
@@ -33103,7 +33145,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "axeHammerPickaxe",
+                "axe",
                 "saint"
             ]
         }
@@ -33445,8 +33487,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "earOfGrain",
-                "axeHammerPickaxe"
+                "earOfGrain"
             ]
         }
     },
@@ -33526,12 +33567,9 @@
         "imageSrcSet": "images/heraldyka/web-miasta/herb-starachowic-x1.webp 100w,images/heraldyka/web-miasta/herb-starachowic-x2.webp 200w,images/heraldyka/web-miasta/herb-starachowic-x3.webp 300w,images/heraldyka/web-miasta/herb-starachowic-x4.webp 400w",
         "shortTitle": "Herb Starachowic",
         "markers": {
-            "animals": [
-                "eagle",
-                "bird"
-            ],
+            "animals": [],
             "items": [
-                "axeHammerPickaxe"
+                "hammer"
             ]
         }
     },
@@ -34006,7 +34044,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "axeHammerPickaxe"
+                "axe"
             ]
         }
     },
@@ -34733,7 +34771,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "earOfGrain"
+                "earOfGrain",
+                "wheel"
             ]
         }
     },
@@ -34991,7 +35030,9 @@
         "shortTitle": "Herb Miłomłyna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "wheel"
+            ]
         }
     },
     "herb-m_lynar": {
@@ -35032,7 +35073,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "tree"
+                "tree",
+                "wheel"
             ]
         }
     },
@@ -36860,6 +36902,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "tree",
                 "crown"
             ]
         }
@@ -37423,7 +37466,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "walls"
+                "walls",
+                "wheel"
             ]
         }
     },
@@ -37727,7 +37771,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "axeHammerPickaxe"
+                "axe"
             ]
         }
     },
@@ -37984,7 +38028,7 @@
                 "bullBison"
             ],
             "items": [
-                "axeHammerPickaxe"
+                "axe"
             ]
         }
     },
@@ -40730,7 +40774,7 @@
             "animals": [],
             "items": [
                 "sword",
-                "axeHammerPickaxe"
+                "axe"
             ]
         }
     },
@@ -41643,7 +41687,9 @@
                 "eagle",
                 "bird"
             ],
-            "items": []
+            "items": [
+                "wheel"
+            ]
         }
     },
     "herb-chojny": {
@@ -41815,7 +41861,9 @@
                 "crane",
                 "bird"
             ],
-            "items": []
+            "items": [
+                "wheel"
+            ]
         }
     },
     "herb-drawska-pomorskiego": {
@@ -41914,7 +41962,8 @@
                 "fish"
             ],
             "items": [
-                "walls"
+                "walls",
+                "wheel"
             ]
         }
     },

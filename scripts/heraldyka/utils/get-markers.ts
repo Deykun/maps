@@ -42,7 +42,7 @@ export const getMarkers = ({
       animals.push('eagle');
       animals.push('bird');
       animals.push('horse');
-    } else if (['Herb Piwnicznej-Zdroju'].includes(title)) {
+    } else if (['Herb Piwnicznej-Zdroju', 'Herb Pieszyc'].includes(title)) {
       animals.push('ram');
     } else if (['Herb gminy Jastków', 'Herb gminy Baranów (powiat puławski)'].includes(title)) {
       animals.push('leopard');
@@ -155,6 +155,8 @@ export const getMarkers = ({
       'Herb Ustronia',
       'Herb Witkowa',
       'Herb Zabrza',
+      'Herb Łazisk Górnych',
+      'Herb Starachowic',
     ].includes(title)) {
       // Doesn't have them
     } else {
@@ -279,7 +281,7 @@ export const getMarkers = ({
           animals.push('ram');
       }
 
-      if (['ryba ', ' ryba.', ' ryb ', 'rybogryfa', 'rybopodobne', ' rybo ', ' rybo,', 'rybę', 'ryby', 'rybą', ' karpia ', 'łososia', ' suma ', 'łosoś', 'leszcza ', ' leszcze '].some((animal) => text.includes(animal))) {
+      if (['ryba ', ' ryba.', ' ryb ', 'rybogryfa', 'rybopodobne', ' rybo ', ' rybo,', 'rybę', 'ryby', 'rybą', ' karp ', ' karpia ', 'łososia', ' suma ', 'łosoś', 'leszcza ', ' leszcze '].some((animal) => text.includes(animal))) {
           animals.push('fish');
       }
 
@@ -434,31 +436,59 @@ export const getMarkers = ({
         'Herb Olsztyna',
         'Herb Brzezin',
         'Herb Czechowic-Dziedzic',
+        'Herb gminy Dolice',
+        'Herb Łochowa',
       ].includes(title)) {
         items.push('earOfGrain');
       }
     }
 
-    if (['topór', 'toporami', 'toporem', ' tasaki', 'toporek', 'topory', ' siekierę', ' siekiery', ' siekiera', 'młot', 'herb górniczy', ' oskard', ' kilof'].some((item) => text.includes(item))) {
+    const oldAxePickFilter = [
+      'Herb Zaklikowa',
+      'Herb Iwanisk',
+      'Herb gminy Krasocin',
+      'Herb Szubina',
+      'Herb Głowna',
+      'Herb Sułkowic',
+      'Herb Świątnik Górnych',
+      'Herb Chrzanowa',
+      'Herb Katowic',
+      'Herb Zabrza',
+      'Herb Staszowa',
+      'Herb gminy Kostomłoty',
+      'Herb Łazisk Górnych',
+    ];
+
+    if (['topór', 'toporami', 'toporem', ' tasaki', 'toporek', 'topory', ' siekierę', ' siekiery', ' siekiera'].some((item) => text.includes(item))) {
       if (![
-        'Herb Zaklikowa',
-        'Herb Iwanisk',
-        'Herb gminy Krasocin',
-        'Herb Szubina',
-        'Herb Głowna',
-        'Herb Sułkowic',
-        'Herb Świątnik Górnych',
-        'Herb Chrzanowa',
-        'Herb Katowic',
-        'Herb Zabrza',
-        'Herb Staszowa',
-        'Herb gminy Kostomłoty',
+        ...oldAxePickFilter,
       ].includes(title)) {
-        items.push('axeHammerPickaxe');
+        items.push('axe');
       }
     }
 
-    if (['drzewo', ' drzew', 'drzewa', 'dąb', ' dęby ', ' dębu', ' jodła', ' jodły', ' świerk', ' ostrzew', 'lasu.', ' pniaczek'].some((item) => text.includes(item))) {
+    if (['młot', 'herb górniczy', 'pyrlika'].some((item) => text.includes(item))) {
+      if (![
+        ...oldAxePickFilter,
+        'Herb Skarżyska-Kamiennej',
+        'Herb Ustronia',
+        'Herb Krzeszowic',
+      ].includes(title)) {
+        items.push('hammer');
+      }
+    }
+
+    if (['oskard', 'herb górniczy', 'kilof'].some((item) => text.includes(item))) {
+      if (![
+        ...oldAxePickFilter,
+        'Herb Krzeszowic',
+        'Herb Piekar Śląskich',
+      ].includes(title)) {
+        items.push('pickaxe');
+      }
+    }
+
+    if (['drzewo', ' drzew', 'drzewa', 'dąb', ' dęby ', ' dębu', ' jodła', ' jodły', ' świerk', ' ostrzew', 'gałąź', 'lasu.', ' pniaczek'].some((item) => text.includes(item))) {
       if (![
         'Herb Węgorzyna',
         'Herb Bobowej',
@@ -562,6 +592,7 @@ export const getMarkers = ({
         'Herb Starogardu Gdańskiego',
         'Herb Krakowa',
         'Herb Obornik',
+        'Herb Świętochłowic',
       ].includes(title)) {
         items.push('flower');
       }
@@ -645,6 +676,41 @@ export const getMarkers = ({
       }
     }
 
+    if ([' koło ', ' koło.', ' koła '].some((item) => text.includes(item))) {
+      if (![
+        'Herb gminy Miłkowice',
+        'Herb Siechnic',
+        'Herb gminy Stanin',
+        'Herb gminy Tomaszów Lubelski',
+        'Herb Nowego Miasta (powiat płoński)',
+        'Herb gminy Przodkowo',
+        'Herb Bierutowa',
+        'Herb Jedliny-Zdroju',
+        'Herb Wrocławia',
+        'Herb Chełmna',
+        'Herb Działoszyna',
+        'Herb Łodzi',
+        'Herb Sułkowic',
+        'Herb Zakliczyna',
+        'Herb Łochowa',
+        'Herb Marek',
+        'Herb Milanówka',
+        'Herb Wołomina',
+        'Herb Nowej Dęby',
+        'Herb Kartuz',
+        'Herb Pucka',
+        'Herb Czechowic-Dziedzic',
+        'Herb Rudy Śląskiej',
+        'Herb Szczyrku',
+        'Herb Działdowa',
+        'Herb Zawiercia',
+        'Herb Koźmina Wielkopolskiego',
+        'Herb Recza',
+      ].includes(title)) {
+        items.push('wheel');
+      }
+    }
+
     if ([' korona', ' koronę', ' koroną', ' korony ', ' korony', 'herb opola', 'mitra książęca'].some((item) => text.includes(item))) {
       if (![
         'Herb gminy Krasocin',
@@ -716,7 +782,7 @@ export const getMarkers = ({
       }
     }
 
-    if ([' święty', ' świetego', ' świętego', ' św.', ' święta ', ' świętą ', 'matki bożej', ' floriana', 'jana chrciciela', 'matki boskiej', 'madonny', ' madonnę', 'chrystus', 'błogosławiona salomea', 'bł. władysława', 'marii panny', 'herb lubawy', 'matkę boską'].some((item) => text.includes(item))) {
+    if ([' święty', ' świetego', ' świętego', ' św.', ' święta ', ' świętej ', ' świętą ', 'matki bożej', ' floriana', 'jana chrciciela', 'matki boskiej', 'madonny', ' madonnę', 'chrystus', 'błogosławiona salomea', 'bł. władysława', 'marii panny', 'herb lubawy', 'matkę boską'].some((item) => text.includes(item))) {
       if (![
         'Herb gminy Sadki',
         'Herb gminy Leśna Podlaska',
