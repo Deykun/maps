@@ -1179,7 +1179,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "axeHammerPickaxe"
+                "saint"
             ]
         }
     },
@@ -1312,7 +1312,9 @@
         "shortTitle": "Herb Krotoszyce",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "sword"
+            ]
         }
     },
     "herb-gminy-kunice": {
@@ -1441,7 +1443,9 @@
         "shortTitle": "Herb Lewin Kłodzki",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "walls"
+            ]
         }
     },
     "herb-gminy-luba_n": {
@@ -5266,7 +5270,9 @@
         "shortTitle": "Herb Lubicz",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "saint"
+            ]
         }
     },
     "herb-gminy-lubiewo": {
@@ -5443,6 +5449,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "sword",
                 "lily",
                 "flower"
             ]
@@ -6366,7 +6373,9 @@
         "shortTitle": "Herb Tłuchowo",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "sword"
+            ]
         }
     },
     "herb-gminy-top_olka": {
@@ -6572,7 +6581,8 @@
             ],
             "items": [
                 "walls",
-                "shell"
+                "shell",
+                "saint"
             ]
         }
     },
@@ -7112,7 +7122,9 @@
         "shortTitle": "Herb Batorz",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "sword"
+            ]
         }
     },
     "herb-gminy-be_l_zec": {
@@ -7410,7 +7422,9 @@
         "shortTitle": "Herb Cyców",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "sword"
+            ]
         }
     },
     "herb-czemiernik": {
@@ -7673,7 +7687,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "tree"
+                "tree",
+                "saint"
             ]
         }
     },
@@ -8712,7 +8727,9 @@
         "shortTitle": "Herb Karczmiska",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "saint"
+            ]
         }
     },
     "herb-gminy-k_akolewnica": {
@@ -9512,7 +9529,9 @@
         "shortTitle": "Herb Łaziska",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "saint"
+            ]
         }
     },
     "herb-gminy-_lomazy": {
@@ -11869,7 +11888,9 @@
         "shortTitle": "Herb Trawniki",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "sword"
+            ]
         }
     },
     "herb-gminy-trzebiesz_ow": {
@@ -12212,7 +12233,9 @@
         "shortTitle": "Herb Ulhówek",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "saint"
+            ]
         }
     },
     "herb-gminy-u_l_e_z": {
@@ -15342,6 +15365,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "sword",
                 "tree"
             ]
         }
@@ -16720,7 +16744,8 @@
                 "horseshoe",
                 "tree",
                 "lily",
-                "flower"
+                "flower",
+                "saint"
             ]
         }
     },
@@ -21937,7 +21962,9 @@
         "imageSrcSet": "images/heraldyka/web-gminy/herb-gminy-_lapsze-ni_zne-x1.webp 100w,images/heraldyka/web-gminy/herb-gminy-_lapsze-ni_zne-x2.webp 200w,images/heraldyka/web-gminy/herb-gminy-_lapsze-ni_zne-x3.webp 300w,images/heraldyka/web-gminy/herb-gminy-_lapsze-ni_zne-x4.webp 400w",
         "shortTitle": "Herb Łapsze Niżne",
         "markers": {
-            "animals": [],
+            "animals": [
+                "goat"
+            ],
             "items": []
         }
     },
@@ -23379,7 +23406,9 @@
         "shortTitle": "Herb Skrzyszów",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "saint"
+            ]
         }
     },
     "herb-gminy-s_labosz_ow": {
@@ -23726,7 +23755,8 @@
             "animals": [],
             "items": [
                 "walls",
-                "crown"
+                "crown",
+                "saint"
             ]
         }
     },
@@ -24795,7 +24825,9 @@
         "shortTitle": "Herb Bielsk",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "saint"
+            ]
         }
     },
     "herb-bodzanowa": {
@@ -26162,7 +26194,8 @@
             "animals": [],
             "items": [
                 "sword",
-                "crown"
+                "crown",
+                "saint"
             ]
         }
     },
@@ -26462,7 +26495,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "sword"
+                "sword",
+                "saint"
             ]
         }
     },
@@ -26709,7 +26743,9 @@
         "shortTitle": "Herb Jakubów",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "saint"
+            ]
         }
     },
     "herb-gminy-jasieniec": {
@@ -27300,7 +27336,9 @@
         "shortTitle": "Herb Kowala",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "sword"
+            ]
         }
     },
     "herb-gminy-krasne-wojew_odztwo-mazowieckie": {
@@ -29101,7 +29139,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "earOfGrain"
+                "earOfGrain",
+                "saint"
             ]
         }
     },
@@ -30446,7 +30485,9 @@
             "animals": [
                 "bear"
             ],
-            "items": []
+            "items": [
+                "sword"
+            ]
         }
     },
     "herb-gminy-siemi_atkowo": {
@@ -30831,7 +30872,9 @@
         "shortTitle": "Herb Sochaczew",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "saint"
+            ]
         }
     },
     "herb-sochocina": {
@@ -30962,6 +31005,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "sword",
                 "walls"
             ]
         }
@@ -31130,6 +31174,7 @@
             "animals": [],
             "items": [
                 "horseshoe",
+                "sword",
                 "arrow"
             ]
         }
@@ -32804,7 +32849,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "walls"
+                "walls",
+                "saint"
             ]
         }
     },
@@ -32846,7 +32892,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "tree"
+                "tree",
+                "saint"
             ]
         }
     },
@@ -44472,7 +44519,8 @@
             ],
             "items": [
                 "tree",
-                "crown"
+                "crown",
+                "saint"
             ]
         }
     },
@@ -44724,7 +44772,9 @@
         "shortTitle": "Herb Kobiór",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "saint"
+            ]
         }
     },
     "herb-gminy-kochanowice": {
@@ -47821,7 +47871,9 @@
             "animals": [
                 "ram"
             ],
-            "items": []
+            "items": [
+                "saint"
+            ]
         }
     },
     "herb-gminy-krasocin": {
@@ -50302,7 +50354,9 @@
         "shortTitle": "Herb Janowo",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "saint"
+            ]
         }
     },
     "herb-gminy-jedwabno": {
@@ -50390,7 +50444,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "tree"
+                "tree",
+                "saint"
             ]
         }
     },
@@ -52876,7 +52931,9 @@
         "shortTitle": "Herb Kiszkowo",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "saint"
+            ]
         }
     },
     "herb-gminy-kleszczewo": {

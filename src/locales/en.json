@@ -1,8 +1,8 @@
 {
   "main.currentLanguage": "English",
   "heraldry.noResult": "(no result)",
-  "heraldry.titleFilters": "Active filters:",
-  "heraldry.activeFilters": "Filters:",
+  "heraldry.titleFilters": "Filters",
+  "heraldry.activeFilters": "Active filters:",
   "heraldry.clearFilters": "clear filters",
   "heraldry.mapFooterSource": "Based on data from",
   "heraldry.mapFooterAllCoats": "All coats of arms",
@@ -81,5 +81,9 @@
   "heraldry.item.lily": "lily",
   "heraldry.item.horseshoe": "horseshoe",
   "heraldry.item.shell": "shell",
-  "heraldry.item.key": "key"
+  "heraldry.item.key": "key",
+  "heraldry.list.title": "List",
+  "heraldry.list.limitListTo": "Limit the list to:",
+  "heraldry.list.limitListToPlaceholder": "town...",
+  "heraldry.list.showMore": "Show more"
 }

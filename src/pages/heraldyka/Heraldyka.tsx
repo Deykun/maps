@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback } from 'react';
+import { useState, useMemo, useCallback, useEffect } from 'react';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 // import SvgGmina from './SvgGmina';
@@ -52,14 +52,19 @@ const animalFiltersList = getFilter(allUnits, 'animals');
 const itemsFiltersList = getFilter(allUnits, 'items');
 
 const Heraldyka = () => {
-    const [listPage, setListPage] = useState(1);
+    const [listPage, setListPage] = useState(0);
     const [listPhrase, setListPhrase] = useState('');
     const [mapFitment, setMapFitment] = useState<'compact' | 'fullWidth' | 'zoom'>('compact');
     const [colorFilters, setColorFilters] = useState<string[]>([]);
     const [animalFilters, setAnimalFilters] = useState<string[]>([]);
     const [itemFilters, setItemFilters] = useState<string[]>([]);
 
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+
+    useEffect(() => {
+      // Default for Polish map
+      i18n.changeLanguage('pl');
+    }, []);
 
     const { units, unitsForMap, subtitleParts } = useMemo(() => {
       const {
@@ -68,7 +73,7 @@ const Heraldyka = () => {
         subtitleParts,
       } = getFilteredUnits(allUnits, colorFilters, animalFilters, itemFilters);
 
-      setListPage(1);
+      setListPage(0);
       setListPhrase('');
 
       return {
@@ -168,9 +173,10 @@ const Heraldyka = () => {
             </span>}
           </h2>
           <div
-            className={clsx("mb-10", coatsSizeClassName, {
-              "max-h-[66vh]": ['compact', 'zoom'].includes(mapFitment),
-              "overflow-scroll": ['zoom'].includes(mapFitment),
+            className={clsx(coatsSizeClassName, {
+              "mb-10": ['compact', 'fullWidth'].includes(mapFitment),
+              "max-h-[66vh]": ['compact'].includes(mapFitment),
+              "overflow-scroll hide-scroll border-t max-h-[90vh]": ['zoom'].includes(mapFitment),
             })}
           >
             <div
@@ -194,8 +200,12 @@ const Heraldyka = () => {
               </div>
             </div>
           </div>
-          <div className="sticky -top-[1px] border-b bg-white">
-            <div className="max-w-screen-xl mx-auto p-4 flex flex-wrap justify-between border-t border-x">
+          <div
+            className={clsx('sticky -top-[1px] border-b', {
+              "-mt-[50px]": mapFitment === 'zoom',
+            })}
+          >
+            <div className="max-w-screen-xl h-[50px] mx-auto p-4 flex flex-wrap justify-between bg-white border-t border-x">
               <p className="text-[12px] text-[#4b4b4b]">
                 {t('heraldry.mapFooterSource')} <strong className="text-black">wikipedia.org</strong>.
               </p>
@@ -212,7 +222,7 @@ const Heraldyka = () => {
           </div>
           <div className="max-w-screen-xl mx-auto border-x p-4 pt-10 bg-white">
             <div className="flex items-center mb-3">
-              <h3 className="text-[24px] mb-3">Filtry</h3>
+              <h3 className="text-[24px] mb-3">{t('heraldry.titleFilters')}</h3>
               <span className="ml-auto">
                 {units.length === 0 && <span className="mr-2 text-[#ca1a1a] text-[12px] tracking-wider">{t('heraldry.noResult')}</span>}
                 {hasFilters && <button className="ml-auto font-[600]" onClick={resetFilters}>{t('heraldry.clearFilters')}</button>}
@@ -271,22 +281,25 @@ const Heraldyka = () => {
               </div>
             </details>
             <div className="mt-20">
-              <h3 className="text-[24px] mb-3">Lista</h3>
-              <div>
-                <label>Ogranicz listę do:</label>
+              <h3 className="text-[24px] mb-3">{t('heraldry.list.title')}</h3>
+              <div className="text-right">
+                <label>{t('heraldry.list.limitListTo')}</label>
                 {' '}
                 <input
-                  value={listPhrase} onChange={(e) => setListPhrase(e.target.value || '')}
-                  className="border-[black] border-b min-w-fit px-2"
-                  placeholder="miejscowość"
+                  value={listPhrase}
+                  onChange={(e) => setListPhrase(e.target.value || '')}
+                  className="border-b w-[140px] outline-offset-2 px-2"
+                  placeholder={t('heraldry.list.limitListToPlaceholder')}
                 />
               </div>
             </div>
             <ul className="mt-10 grid md:grid-cols-2 xl:grid-cols-3 gap-5">
-              {unitsForList.slice(0, 30 * listPage).map((unit) => (<ListItem key={unit.title} {...unit} />))}
+              {unitsForList.slice(0, 6 + 42 * listPage).map((unit) => (<ListItem key={unit.title} {...unit} />))}
             </ul>
-            {unitsForList.length > 30 * listPage && <div className="mt-5 text-center">
-              <button onClick={() => setListPage(listPage + 1)}>Pokaż więcej</button>
+            {unitsForList.length > (6 + 42 * listPage) && <div className="mt-5 text-center">
+              <button onClick={() => setListPage(listPage + 1)}>
+                {t('heraldry.list.showMore')}
+              </button>
             </div>}
           </div>
         </>

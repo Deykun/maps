@@ -1694,7 +1694,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "tree"
+                "tree",
+                "saint"
             ]
         }
     },
@@ -2097,7 +2098,8 @@
                 "bird"
             ],
             "items": [
-                "crown"
+                "crown",
+                "saint"
             ]
         }
     },
@@ -5918,7 +5920,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "walls"
+                "walls",
+                "saint"
             ]
         }
     },
@@ -6652,7 +6655,8 @@
                 "dragon"
             ],
             "items": [
-                "sword"
+                "sword",
+                "saint"
             ]
         }
     },
@@ -8679,7 +8683,9 @@
         "shortTitle": "Herb Tomaszowa Lubelskiego",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "saint"
+            ]
         }
     },
     "herb-turobina": {
@@ -9562,6 +9568,7 @@
                 "fish"
             ],
             "items": [
+                "walls",
                 "crown"
             ]
         }
@@ -10618,7 +10625,9 @@
                 "dragon",
                 "horse"
             ],
-            "items": []
+            "items": [
+                "saint"
+            ]
         }
     },
     "herb-witnicy": {
@@ -11577,7 +11586,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "key"
+                "key",
+                "saint"
             ]
         }
     },
@@ -11794,7 +11804,8 @@
                 "lion"
             ],
             "items": [
-                "tree"
+                "tree",
+                "saint"
             ]
         }
     },
@@ -15094,7 +15105,8 @@
                 "bird"
             ],
             "items": [
-                "walls"
+                "walls",
+                "saint"
             ]
         }
     },
@@ -15916,7 +15928,8 @@
             "animals": [],
             "items": [
                 "key",
-                "sword"
+                "sword",
+                "saint"
             ]
         }
     },
@@ -22727,7 +22740,8 @@
                 "key",
                 "sword",
                 "lily",
-                "flower"
+                "flower",
+                "saint"
             ]
         }
     },
@@ -23506,7 +23520,9 @@
             "animals": [
                 "dragon"
             ],
-            "items": []
+            "items": [
+                "saint"
+            ]
         }
     },
     "herb-mielca": {
@@ -25015,7 +25031,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "key"
+                "key",
+                "saint"
             ]
         }
     },
@@ -27372,7 +27389,9 @@
         "shortTitle": "Herb Lęborka",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "walls"
+            ]
         }
     },
     "herb-malborka": {
@@ -30306,7 +30325,9 @@
         "shortTitle": "Herb Radzionkowa",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "saint"
+            ]
         }
     },
     "herb-rudy-_sl_askiej": {
@@ -32386,7 +32407,9 @@
             "animals": [
                 "ram"
             ],
-            "items": []
+            "items": [
+                "saint"
+            ]
         }
     },
     "herb-kunowa": {
@@ -35341,7 +35364,9 @@
             "animals": [
                 "dragon"
             ],
-            "items": []
+            "items": [
+                "saint"
+            ]
         }
     },
     "herb-orzysza": {
@@ -35431,7 +35456,9 @@
                 "dragon",
                 "horse"
             ],
-            "items": []
+            "items": [
+                "saint"
+            ]
         }
     },
     "herb-pas_l_eka": {
@@ -37786,7 +37813,8 @@
             "animals": [],
             "items": [
                 "key",
-                "rose"
+                "rose",
+                "saint"
             ]
         }
     },

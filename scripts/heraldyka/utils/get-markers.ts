@@ -335,7 +335,7 @@ export const getMarkers = ({
           animals.push('amphisbaena');
       }
 
-      if (['kozła', 'kozę', ' kóz.', ' kozy,', ' kozie ', 'kozłów', 'koziołki'].some((animal) => text.includes(animal))) {
+      if (['kozła', 'kozę', ' kóz.', ' kozy,', ' kozie ', 'kozłów', ' kozłem', 'koziołki'].some((animal) => text.includes(animal))) {
           animals.push('goat');
       }
 
@@ -383,7 +383,7 @@ export const getMarkers = ({
       }
     }
 
-    if (['miecz', ' nóż ', ' szabla '].some((item) => text.includes(item))) {
+    if (['miecz', ' nóż ', ' szabla ', ' szable '].some((item) => text.includes(item))) {
       if (![
         'Herb Siechnic',
         'Herb gminy Golub-Dobrzyń',
@@ -452,6 +452,7 @@ export const getMarkers = ({
         'Herb Katowic',
         'Herb Zabrza',
         'Herb Staszowa',
+        'Herb gminy Kostomłoty',
       ].includes(title)) {
         items.push('axeHammerPickaxe');
       }
@@ -566,7 +567,7 @@ export const getMarkers = ({
       }
     }
 
-    if (['wieża', ' wieże', ' wieżę', ' wieżą', ' wieży ', ' muru ', ' mur ', 'baszt', ' bramę ', 'bramę.', ' bramą.', 'bramą,', ' bramną ', ' bramie ', 'corona muralis', ' kolumny ', ' kolumna '].some((item) => text.includes(item))) {
+    if (['wieża', ' wieże', ' wieżę', ' wieżą', ' wieży ', ' muru ', ' mur ', ' murów ', 'baszt', ' bramę ', 'bramę.', ' bramą.', 'bramą,', ' bramną ', ' bramie ', 'corona muralis', ' kolumny ', ' kolumna '].some((item) => text.includes(item))) {
       if (![
         'Herb gminy Gaworzyce',
         'Herb Oleśnicy',
@@ -715,7 +716,7 @@ export const getMarkers = ({
       }
     }
 
-    if ([' święty', ' świetego', ' św.', ' święta ', ' świętą ', 'matki bożej', ' floriana', 'jana chrciciela', 'matki boskiej', 'madonny', ' madonnę', 'chrystus', 'błogosławiona salomea', 'bł. władysława', 'marii panny', 'herb lubawy', 'matkę boską'].some((item) => text.includes(item))) {
+    if ([' święty', ' świetego', ' świętego', ' św.', ' święta ', ' świętą ', 'matki bożej', ' floriana', 'jana chrciciela', 'matki boskiej', 'madonny', ' madonnę', 'chrystus', 'błogosławiona salomea', 'bł. władysława', 'marii panny', 'herb lubawy', 'matkę boską'].some((item) => text.includes(item))) {
       if (![
         'Herb gminy Sadki',
         'Herb gminy Leśna Podlaska',

@@ -1,8 +1,8 @@
 {
   "main.currentLanguage": "Polski",
   "heraldry.noResult": "(brak wyników)",
-  "heraldry.titleFilters": "Aktywne filtry",
-  "heraldry.activeFilters": "Filtry:",
+  "heraldry.titleFilters": "Filtry",
+  "heraldry.activeFilters": "Aktywne filtry:",
   "heraldry.clearFilters": "wyczyść filtry",
   "heraldry.mapFooterSource": "Na podstawie danych z",
   "heraldry.mapFooterAllCoats": "Wszystkich herbów",
@@ -81,5 +81,9 @@
   "heraldry.item.lily": "lilia",
   "heraldry.item.horseshoe": "podkowa",
   "heraldry.item.shell": "muszla",
-  "heraldry.item.key": "klucz"
+  "heraldry.item.key": "klucz",
+  "heraldry.list.title": "Lista",
+  "heraldry.list.limitListTo": "Ogranicz listę do:",
+  "heraldry.list.limitListToPlaceholder": "miejscowość...",
+  "heraldry.list.showMore": "Pokaż więcej"
 }

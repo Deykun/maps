@@ -49,18 +49,51 @@ svg {
   }
 
   img {
+    font-size: 6px;
     transition-delay: 0.1s;
     transition: 0.1s cubic-bezier(0.68, 0, 0.265, 1.30);
-    background-image: radial-gradient(#80907faa, #80907faa 2px, transparent 3px, transparent);
-    background-size: 10px 10px;
-    background-position: center;
-    background-repeat: no-repeat;
+    color: #99a2a7;
   }
 
   &:hover {
     img {
       height: 100px;
       width: 100px;
+      filter: drop-shadow(0 0 10px white);
     }
+
+    &::before {
+      @apply border whitespace-nowrap truncate tracking-wider shadow-lg pointer-events-none origin-bottom;
+
+      content: attr(data-title);
+      position: absolute;
+      bottom: calc(100% + 15px);
+      left: 50%;
+      transform: translateX(-50%) translateY(30px) scale(0.5);
+      transform-origin: top center;
+      font-size: 12px;
+      max-width: 250px;
+      color: black;
+      background-color: white;
+      padding: 5px 10px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      font-weight: 600;
+      opacity: 0;
+      animation: 0.3s slideCoatLabel forwards ease-in;
+      animation-delay: 0.5s;
+    }
+  }
+}
+
+@keyframes slideCoatLabel {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(30px) scale(0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0) scale(1);
   }
 }
