@@ -1,6 +1,11 @@
 import { AdministrativeUnit } from '../constants';
 
-export const getFilter = (units: AdministrativeUnit[], name: 'animals' | 'items' | 'type') => {
+export type GetFilterResponse = {
+  value: string;
+  total: number;
+}[]
+
+export const getFilter = (units: AdministrativeUnit[], name: 'animals' | 'items' | 'type'): GetFilterResponse => {
   const filterByName = units.reduce((stack: {
     [key: string]: number,
   }, unit) => {

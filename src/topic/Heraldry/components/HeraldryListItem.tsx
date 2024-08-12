@@ -1,8 +1,7 @@
-import './Heraldyka.scss';
 import { useTranslation } from 'react-i18next';
-import { AdministrativeUnit } from './constants';
+import { AdministrativeUnit } from '../types';
 
-const ListItem = ({ title, url, imageUrl, colors, place, markers }: AdministrativeUnit) => {
+const HeraldryListItem = ({ title, url, imageUrl, place, markers }: AdministrativeUnit) => {
     const { t } = useTranslation();
 
     return (
@@ -22,4 +21,4 @@ const ListItem = ({ title, url, imageUrl, colors, place, markers }: Administrati
     );
 };
 
-export default ListItem;
+export default HeraldryListItem;

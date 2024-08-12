@@ -1,6 +1,25 @@
-import { AdministrativeUnit, WITH_ANIMAL, WITHOUT_ANIMAL } from '../constants';
+import { AdministrativeUnit } from '../types';
+import { WITH_ANIMAL, WITHOUT_ANIMAL } from '../constants';
 
-export const getFilteredUnits = (units: AdministrativeUnit[], filterOperator: 'and' | 'or', typeFilers: string[], colorFilters: string[], animalFilters: string[], itemFilters: string[]) => {
+export type SubtitlePart = {
+  operator: 'or' | 'and';
+  labels: string[];
+};
+
+export type GetFilterUnitsResponse = {
+  filteredUnits: AdministrativeUnit[];
+  unitsForMap: AdministrativeUnit[];
+  subtitleParts: SubtitlePart[],
+};
+
+export const getFilteredUnits = (
+  units: AdministrativeUnit[],
+  filterOperator: 'and' | 'or',
+  typeFilers: string[],
+  colorFilters: string[],
+  animalFilters: string[],
+  itemFilters: string[],
+) => {
   const filteredUnits = units.filter(
     (unit) => {
       const isTypeFilterActive = typeFilers.length > 0;

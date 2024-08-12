@@ -1,84 +1,39 @@
 import { useState, useMemo, useCallback, useEffect } from 'react';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
-// import SvgGmina from './SvgGmina';
-import SvgPowiaty from './SvgPowiaty';
-import ListItem from './ListItem';
-import MapItem from './MapItem';
-import './Heraldyka.scss';
-import { AdministrativeUnit, WITH_ANIMAL, WITHOUT_ANIMAL } from './constants';
+
+import HeraldryListItem from './components/HeraldryListItem';
+import HeraldryMapItem from './components/HeraldryMapItem';
+import HeraldrySubtitle from './components/HeraldrySubtitle';
+
 import { removeDiacratics } from '../../utils/text';
 
-import { getFilter } from './utils/getFilter';
+import { GetFilterResponse } from './utils/getFilter';
 import { getFilteredUnits } from './utils/getFilteredUnits';
 import { getPostionForPlace } from './utils/getPostionForPlace';
 
-import gminyJSON from './gminy-images.json'
-import miastaJSON from './miasta-images.json'
-import powiatyJSON from './powiaty-images.json'
+import { AdministrativeUnit } from './types';
+import { WITH_ANIMAL, WITHOUT_ANIMAL } from './constants';
 
-const gminy = Object.values(gminyJSON);
-const miasta = Object.values(miastaJSON);
-const powiaty = Object.values(powiatyJSON);
+import './Heraldry.scss';
 
-const allUnits: AdministrativeUnit[] = Object.values([
-  ...gminy,
-  ...powiaty,
-  ...miasta,
-].filter((unit: AdministrativeUnit) => {
-  if ([
-    'Herb Podgórza',
-    'Herb gminy Janów (powiat częstochowski)',
-    'Herb Nowego Bytomia',
-    'Herb gminy Brudzew',
-    'Herb gminy Ostrowice',
-    'Herby miast Śląska Cieszyńskiego',
-  ].includes(unit.title)) {
-    // Historic
-    return false;
-  };
+type Props = {
+  lang: string,
+  allUnits: AdministrativeUnit[],
+  typeFiltersList: GetFilterResponse,
+  animalFiltersList: GetFilterResponse,
+  itemsFiltersList: GetFilterResponse,
+  map: () => JSX.Element,
+}
 
-  if ([
-    'Herb Trzyńca',
-    'Herb Orłowej',
-  ].includes(unit.title)) {
-    // Outside of Poland
-    return false;
-  }
-
-  return true;
-}).reduce((stack: {
-  [url: string]: AdministrativeUnit,
-}, unit: AdministrativeUnit) => {
-  if (stack[unit.url]) {
-    const areImagesFilledAndDifferent = unit.image?.source && unit.image?.source !== stack[unit.url].image?.source;
-    if (areImagesFilledAndDifferent) {
-      if (location.href.includes('localhost')) {
-        console.error({
-          [unit.type?.join('') || 'a']: stack[unit.url].image?.source,
-          [stack[unit.url].type?.join('') || 'b']: stack[unit.url].image?.source,
-        })
-        throw ('Duplicated but different images!')
-      }
-    }
-
-    // It merges duplicates but keeps their type in array
-    const typeMerged: string[] = [...(stack[unit.url].type || []), ...(unit.type || [])];
-    stack[unit.url].type = [...new Set(typeMerged)];
-  } else {
-    stack[unit.url] = unit;
-  }
-
-  return stack;
-}, {}));
-
-const typeFiltersList = getFilter(allUnits, 'type');
-
-const animalFiltersList = getFilter(allUnits, 'animals');
-
-const itemsFiltersList = getFilter(allUnits, 'items');
-
-const Heraldyka = () => {
+const Heraldry = ({
+  lang,
+  allUnits,
+  typeFiltersList,
+  animalFiltersList,
+  itemsFiltersList,
+  map: MapBackground,
+}: Props) => {
     const [listPage, setListPage] = useState(0);
     const [listPhrase, setListPhrase] = useState('');
     const [filterOperator, setFilterOperator] = useState<'and' | 'or'>('and');
@@ -91,8 +46,10 @@ const Heraldyka = () => {
     const { t, i18n } = useTranslation();
 
     useEffect(() => {
-      // Default for the Polish map
-      i18n.changeLanguage('pl');
+      // We set the language according to the country
+      if (lang) {
+        i18n.changeLanguage(lang);
+      }
     }, []);
 
     const { units, unitsForMap, subtitleParts } = useMemo(() => {
@@ -201,43 +158,7 @@ const Heraldyka = () => {
           <h1 className="text-[18px] md:text-[36px] text-center mb-4">
             {t('heraldry.mapTitle')}
           </h1>
-          <h2 className="text-[18px] min-h-[20px] leading-[20px] text-center mb-6 relative">
-            {subtitleParts.length > 0 && <span className="text-[#4b4b4b]">
-              <small className="mr-1">
-                {t('heraldry.activeFilters')}
-              </small>
-                {subtitleParts.map(({ operator, labels }, indexParts) => {
-                  if (labels.length === 1) {
-                    return (
-                      <>
-                        <span className="text-black">{t(labels[0])}</span>
-                        {indexParts < subtitleParts.length - 1 && <small className="mx-1">
-                          {' '}{t('heraldry.filterOperator.and')}{' '}
-                        </small>}
-                      </>
-                    )
-                  }
-
-                  return (
-                    <>
-                      {operator === 'or' && subtitleParts.length > 1 && <small>{'( '}</small>}
-                      {labels.map((label, indexLabel) => (
-                        <>
-                          <span className="text-black">{t(label)}</span>
-                          {indexLabel < labels.length - 1 && <small className="mx-1">
-                            {' '}{t(`heraldry.filterOperator.${operator}`)}{' '}
-                          </small>}
-                        </>
-                      ))}
-                      {operator === 'or' && subtitleParts.length > 1 && <small>{' )'}</small>}
-                      {indexParts < subtitleParts.length - 1 && <small className="mx-1">
-                        {' '}{t('heraldry.filterOperator.and')}{' '}
-                      </small>}
-                    </>
-                  );
-                })}
-            </span>}
-          </h2>
+          <HeraldrySubtitle subtitleParts={subtitleParts} />
           <div
             className={clsx(coatsSizeClassName, {
               "mb-10": ['compact', 'fullWidth'].includes(mapFitment),
@@ -252,11 +173,11 @@ const Heraldyka = () => {
               style={mapFitment === 'zoom' ? { width: 2500 } : {}}
             >
               {/* <SvgGmina /> */}
-              <SvgPowiaty />
+              <MapBackground />
               <div>
                   {unitsForMap.map(
                     (unit) => (
-                      <MapItem
+                      <HeraldryMapItem
                         key={`${unit.title}-${unit?.place?.coordinates?.lon}`}
                         {...unit}
                         setListPhrase={setListPhrase}
@@ -385,7 +306,7 @@ const Heraldyka = () => {
               </div>
             </div>
             <ul className="mt-10 grid md:grid-cols-2 xl:grid-cols-3 gap-5">
-              {unitsForList.slice(0, 6 + 42 * listPage).map((unit) => (<ListItem key={unit.title} {...unit} />))}
+              {unitsForList.slice(0, 6 + 42 * listPage).map((unit) => (<HeraldryListItem key={unit.title} {...unit} />))}
             </ul>
             {unitsForList.length > (6 + 42 * listPage) && <div className="mt-5 text-center">
               <button onClick={() => setListPage(listPage + 1)}>
@@ -400,4 +321,4 @@ const Heraldyka = () => {
     );
 };
 
-export default Heraldyka;
+export default Heraldry;

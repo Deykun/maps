@@ -1,6 +1,5 @@
 import { memo } from 'react';
-import './Heraldyka.scss';
-import { AdministrativeUnit } from './constants';
+import { AdministrativeUnit } from '../types';
 
 type Props = AdministrativeUnit & {
   style: {
@@ -10,7 +9,7 @@ type Props = AdministrativeUnit & {
   setListPhrase: (title: string) => void,
 }
 
-const MapItem = ({ title, shortTitle, imageUrl, imageSrcSet, setListPhrase, style }: Props) => {
+const HeraldryMapItem = ({ title, shortTitle, imageUrl, imageSrcSet, setListPhrase, style }: Props) => {
     return (
       <button
         className="coat absolute -translate-x-1/2 -translate-y-1/2 hover:z-10 group"
@@ -29,4 +28,4 @@ const MapItem = ({ title, shortTitle, imageUrl, imageSrcSet, setListPhrase, styl
     );
 };
 
-export default memo(MapItem);
+export default memo(HeraldryMapItem);
