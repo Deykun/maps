@@ -175,6 +175,7 @@ const Heraldyka = () => {
     const hasFilters = colorFilters.length > 0 || animalFilters.length > 0 || itemFilters.length > 0;
 
     const resetFilters = () => {
+      setTypeFilters([]);
       setColorFilters([]);
       setAnimalFilters([]);
       setItemFilters([]);
@@ -196,7 +197,7 @@ const Heraldyka = () => {
 
     return (
         <>
-          <h1 className="text-[22px] md:text-[48px] text-center mb-4">
+          <h1 className="text-[18px] md:text-[36px] text-center mb-4">
             {t('heraldry.mapTitle')}
           </h1>
           <h2 className="text-[18px] min-h-[20px] leading-[20px] text-center mb-6 relative">
@@ -286,17 +287,17 @@ const Heraldyka = () => {
                 {typeFiltersList.map(({ value, total }) => 
                   <button
                     onClick={() => toggleType(value)}
-                    className={clsx("hover:font-[600] text-nowrap", { 
-                      'font-[800]': typeFilers.includes(value),
+                    className={clsx("hover:text-[#ca0505] text-nowrap", { 
+                      'text-[#ca0505]': typeFilers.includes(value),
                     })}
                   >
-                    {t(`heraldry.unit.type.pl.${value}`)} <small className="text-[#4b4b4b] tracking-widest">({total})</small>
+                    {t(`heraldry.unit.type.pl.${value}`)} <small className="text-[10px] text-[#4b4b4b] tracking-widest">({total})</small>
                   </button>
                 )}
               </span>
               <span className="flex items-center gap-5">
                 {t('heraldry.mapSize')}
-                <button className="font-[600]" onClick={toggleMapFittment}>
+                <button className="text-[#ca0505]" onClick={toggleMapFittment}>
                   {t(`heraldry.mapSize.${mapFitment}`)}
                 </button>
               </span>
@@ -310,8 +311,8 @@ const Heraldyka = () => {
                 ...animalFiltersList].map(({ value, total }) => 
                   <button
                     onClick={() => toggleAnimal(value)}
-                    className={clsx("hover:font-[600]", { 
-                      'font-[800]': animalFilters.includes(value),
+                    className={clsx("hover:text-[#ca0505]", { 
+                      'text-[#ca0505]': animalFilters.includes(value),
                     })}
                   >
                     {t(`heraldry.animal.${value}`)} {total > 0 && <small className="text-[#4b4b4b] tracking-widest">({total})</small>}
@@ -325,8 +326,8 @@ const Heraldyka = () => {
                 {itemsFiltersList.map(({ value, total }) => 
                   <button
                     onClick={() => toggleItem(value)}
-                    className={clsx("hover:font-[600]", { 
-                      'font-[800]': itemFilters.includes(value),
+                    className={clsx("hover:text-[#ca0505]", { 
+                      'text-[#ca0505]': itemFilters.includes(value),
                     })}
                   >
                     {t(`heraldry.item.${value}`)} <small className="text-[#4b4b4b] tracking-widest">({total})</small>
@@ -357,7 +358,7 @@ const Heraldyka = () => {
             </div>}
           </div>
           <p className="max-w-screen-xl mx-auto border-x border p-4 mb-10 text-[12px] text-[#4b4b4b] text-right">
-            {t('heraldry.list.footer')} <a href="https://github.com/Deykun/maps/issues" target="_blank" className="text-black font-[600]">github.com/Deykun/maps/issues</a>
+            {t('heraldry.list.footer')} <a href="https://github.com/Deykun/maps/issues" target="_blank" className="text-black hover:text-[#ca0505] font-[600]">github.com/Deykun/maps/issues</a>
           </p>
         </>
     );
