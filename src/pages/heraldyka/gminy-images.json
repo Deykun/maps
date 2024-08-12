@@ -942,8 +942,6 @@
         "shortTitle": "Herb Kamieńca Ząbkowickiego",
         "markers": {
             "animals": [
-                "eagle",
-                "bird",
                 "lion"
             ],
             "items": [
@@ -3128,8 +3126,7 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "lion"
+                "bird"
             ],
             "items": [
                 "cross",
@@ -4654,10 +4651,7 @@
         "imageSrcSet": "images/heraldyka/web-gminy/herb-gminy-golubdobrzy_n-x1.webp 100w,images/heraldyka/web-gminy/herb-gminy-golubdobrzy_n-x2.webp 200w,images/heraldyka/web-gminy/herb-gminy-golubdobrzy_n-x3.webp 300w,images/heraldyka/web-gminy/herb-gminy-golubdobrzy_n-x4.webp 400w",
         "shortTitle": "Herb Golub-Dobrzyń",
         "markers": {
-            "animals": [
-                "eagle",
-                "bird"
-            ],
+            "animals": [],
             "items": [
                 "crown"
             ]
@@ -15582,6 +15576,7 @@
             ],
             "items": [
                 "arrow",
+                "tree",
                 "saint"
             ]
         }
@@ -20141,7 +20136,9 @@
             "animals": [
                 "lion"
             ],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "herb-gminy-budz_ow": {
@@ -24974,8 +24971,6 @@
         "shortTitle": "Herb Baranów ",
         "markers": {
             "animals": [
-                "eagle",
-                "bird",
                 "ram"
             ],
             "items": []
@@ -25363,8 +25358,6 @@
         "shortTitle": "Herb Bulkowo",
         "markers": {
             "animals": [
-                "eagle",
-                "bird",
                 "lion"
             ],
             "items": []
@@ -26315,7 +26308,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "key"
+                "key",
+                "tree"
             ]
         }
     },
@@ -33555,10 +33549,7 @@
         "imageSrcSet": "images/heraldyka/web-gminy/herb-gminy-kamiennik-x1.webp 100w,images/heraldyka/web-gminy/herb-gminy-kamiennik-x2.webp 200w,images/heraldyka/web-gminy/herb-gminy-kamiennik-x3.webp 300w,images/heraldyka/web-gminy/herb-gminy-kamiennik-x4.webp 400w",
         "shortTitle": "Herb Kamiennik",
         "markers": {
-            "animals": [
-                "eagle",
-                "bird"
-            ],
+            "animals": [],
             "items": [
                 "lily",
                 "flower"
@@ -47266,8 +47257,6 @@
         "shortTitle": "Herb Węgierska Górka",
         "markers": {
             "animals": [
-                "eagle",
-                "bird",
                 "horse"
             ],
             "items": []
@@ -52427,7 +52416,9 @@
             "animals": [
                 "fish"
             ],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "herb-budzynia": {
@@ -55802,10 +55793,10 @@
         "shortTitle": "Herb Skulsk",
         "markers": {
             "animals": [
-                "eagle",
-                "bird"
+                "dog"
             ],
             "items": [
+                "tree",
                 "saint"
             ]
         }
@@ -57165,7 +57156,9 @@
         "shortTitle": "Herb Brzeżno",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "herb-gminy-dolice": {

@@ -101,6 +101,27 @@ export const getMarkers = ({
           'Herb Staszowa',
           'Herb Mieszkowic',
           'Herb gminy Białowieża',
+          'Herb Kamieńca Ząbkowickiego',
+          'Herb gminy Golub-Dobrzyń',
+          'Herb gminy Baranów (powiat grodziski)',
+          'Herb gminy Bulkowo',
+          'Herb gminy Kamiennik',
+          'Herb gminy Węgierska Górka',
+          'Herb gminy Skulsk',
+          'Herb Pieszyc',
+          'Herb Polkowic',
+          'Herb Jasienia',
+          'Herb Aleksandrowa Łódzkiego',
+          'Herb Bochni',
+          'Herb Olkusza',
+          'Herb Wolbromia',
+          'Herb Sierpca',
+          'Herb Sochaczewa',
+          'Herb Miastka',
+          'Herb Rydułtów',
+          'Herb Wojkowic',
+          'Herb Kielc',
+          'Herb Mirosławca',
         ].includes(title)) {
           animals.push('eagle');
         }
@@ -208,6 +229,27 @@ export const getMarkers = ({
           'Herb Mieszkowic',
           'Herb gminy Białowieża',
           'Herb Makowa Mazowieckiego',
+          'Herb Kamieńca Ząbkowickiego',
+          'Herb gminy Golub-Dobrzyń',
+          'Herb gminy Baranów (powiat grodziski)',
+          'Herb gminy Bulkowo',
+          'Herb gminy Kamiennik',
+          'Herb gminy Węgierska Górka',
+          'Herb gminy Skulsk',
+          'Herb Pieszyc',
+          'Herb Polkowic',
+          'Herb Jasienia',
+          'Herb Aleksandrowa Łódzkiego',
+          'Herb Bochni',
+          'Herb Olkusza',
+          'Herb Wolbromia',
+          'Herb Sierpca',
+          'Herb Sochaczewa',
+          'Herb Miastka',
+          'Herb Rydułtów',
+          'Herb Wojkowic',
+          'Herb Kielc',
+          'Herb Mirosławca',
         ].includes(title)) {
           animals.push('bird');
         }
@@ -261,7 +303,7 @@ export const getMarkers = ({
         animals.push('wildcat');
       }
 
-      if (['półlwa', 'półlew', '(lew ', ' lew ', ' lwem ', ' lwem,', ' lwa ', ' lwa,' , ' lwy ', 'lwy-', ' lwami', ' lwów '].some((animal) => text.includes(animal))) {
+      if (['półlwa', 'półlew', '(lew ', ' lew ', ' lew.', ' lwem ', ' lwem,', ' lwa ', ' lwa,' , ' lwy ', 'lwy-', ' lwami', ' lwów '].some((animal) => text.includes(animal))) {
         if (![
           'Herb Piwnicznej-Zdroju',
           'Herb Żagania',
@@ -272,6 +314,10 @@ export const getMarkers = ({
           'Herb Gorlic',
           'Herb Koszalina',
           'Herb Przysuchy',
+          'Herb Sierpca',
+          'Herb gminy Zawonia',
+          'Herb Żar',
+          'Herb Szczecina',
         ].includes(title)) {
           animals.push('lion');
         }
@@ -347,7 +393,7 @@ export const getMarkers = ({
           animals.push('lizard');
       }
 
-      if ([' pies ', ' psa ', ' psa,', ' psem '].some((animal) => text.includes(animal))) {
+      if ([' pies ', ' psa ', ' psa,', ' psem ', ' psy '].some((animal) => text.includes(animal))) {
           animals.push('dog');
       }
 
@@ -546,7 +592,7 @@ export const getMarkers = ({
       }
     }
 
-    if (['drzewo', ' drzew', 'drzewa', ' kłoda', 'dąb', ' dęby ', ' dębowe', ' dębu', 'lipą ', ' bukiem', ' jodła', ' sosny ', ' sosnę', ' jabłoń', ' jodły', ' świerk', ' ostrzew', 'gałąź', ' gałęzi ', 'lasu.', ' pniaczek', ' pień ', ' buk ', ' brzozową '].some((item) => text.includes(item))) {
+    if (['drzewo', ' drzew', 'drzewa', ' kłoda', 'dąb', ' dęby ', ' dębowe', ' dębu', 'lipą ', ' bukiem', ' jodła', 'sosną', ' sosny ', ' sosnę', ' jabłoń', ' jodły', ' świerk', ' ostrzew', 'gałąź', ' gałęzi ', 'lasu.', ' pniaczek', ' pień ', ' buk ', ' brzozę', ' brzozową '].some((item) => text.includes(item))) {
       if (![
         'Herb Węgorzyna',
         'Herb Bobowej',
@@ -718,7 +764,7 @@ export const getMarkers = ({
       }
     }
 
-    if ([' krzyż', ' krzyżem', ' kościół', ' kościołem', ' kościoła', ' klasztoru'].some((item) => text.includes(item))) {
+    if ([' krzyż', ' krzyżem', ' kościół', ' kościołem', ' kościoła', ' klasztoru', 'gminy brzeźnica (powiat wadowicki)'].some((item) => text.includes(item))) {
       if (![
         'Herb gminy Świdnica (powiat świdnicki)',
         'Herb gminy Gruta',
