@@ -32,7 +32,10 @@ const allUnits: AdministrativeUnit[] = Object.values([...gminy, ...miasta].filte
     return false;
   };
 
-  if (['Herb Trzyńca'].includes(unit.title)) {
+  if ([
+    'Herb Trzyńca',
+    'Herb Orłowej',
+  ].includes(unit.title)) {
     // Outside of Poland
     return false;
   }

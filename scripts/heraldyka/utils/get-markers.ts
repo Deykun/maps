@@ -357,7 +357,7 @@ export const getMarkers = ({
         }
       }
 
-      if (['ryba ', ' ryba.', ' ryb ', 'rybogryfa', 'rybopodobne', ' rybo ', ' rybo,', 'rybę', 'ryby', 'rybą', ' karp ', ' karpia ', 'łososia', ' suma ', 'łosoś', 'leszcza ', ' leszcze '].some((animal) => text.includes(animal))) {
+      if (['ryba ', ' ryba.', ' ryb ', ' rybami ', 'rybogryfa', 'rybopodobne', ' rybo ', ' rybo,', 'rybę', 'ryby', 'rybą', ' karp ', ' karpia ', 'łososia', ' suma ', 'łosoś', 'leszcza ', ' leszcze '].some((animal) => text.includes(animal))) {
         if (![
           'Herb Warszawy',
           'Herb gminy Kościerzyna',
@@ -706,6 +706,14 @@ export const getMarkers = ({
         'Herb Ustronia',
         'Herb Nowogardu',
         'Herb gminy Sędziejowice',
+        'Herb Urzędowa',
+        'Herb Brzozowa',
+        'Herb Narola',
+        'Herb Grodziska Wielkopolskiego',
+        'Herb Ozorkowa',
+        'Herb gminy Laskowa',
+        'Herb gminy Jastków',
+        'Herb gminy Aleksandrów (województwo łódzkie)',
       ].includes(title)) {
         items.push('tree');
       }
@@ -737,7 +745,7 @@ export const getMarkers = ({
       }
     }
 
-    if (['kwiat', ' maku.', ...rose, ...lily].some((item) => text.includes(item))) {
+    if (['kwiat', ' maku.', ' tulipan',  ...rose, ...lily].some((item) => text.includes(item))) {
       if (![
         ...lilyFilter,
         ...roseFilter,
@@ -823,7 +831,7 @@ export const getMarkers = ({
       }
     }
 
-    if ([' krzyż', ' krzyżem', ' kościół', ' kościołem', ' kościoła', ' klasztoru', 'gminy brzeźnica (powiat wadowicki)'].some((item) => text.includes(item))) {
+    if ([' krzyż', ' krzyżem', ' kościół', ' kościołem', ' kościoła', ' klasztoru', 'gminy brzeźnica (powiat wadowicki)', 'herb gminy dynów'].some((item) => text.includes(item))) {
       if (![
         'Herb gminy Świdnica (powiat świdnicki)',
         'Herb gminy Gruta',
