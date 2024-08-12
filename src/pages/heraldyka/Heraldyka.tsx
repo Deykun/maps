@@ -15,11 +15,17 @@ import { getPostionForPlace } from './utils/getPostionForPlace';
 
 import gminyJSON from './gminy-images.json'
 import miastaJSON from './miasta-images.json'
+import powiatyJSON from './powiaty-images.json'
 
 const gminy = Object.values(gminyJSON);
 const miasta = Object.values(miastaJSON);
+const powiaty = Object.values(powiatyJSON);
 
-const allUnits: AdministrativeUnit[] = Object.values([...gminy, ...miasta].filter((unit: AdministrativeUnit) => {
+const allUnits: AdministrativeUnit[] = Object.values([
+  ...gminy,
+  ...powiaty,
+  ...miasta,
+].filter((unit: AdministrativeUnit) => {
   if ([
     'Herb Podgórza',
     'Herb gminy Janów (powiat częstochowski)',
@@ -44,11 +50,29 @@ const allUnits: AdministrativeUnit[] = Object.values([...gminy, ...miasta].filte
 }).reduce((stack: {
   [url: string]: AdministrativeUnit,
 }, unit: AdministrativeUnit) => {
-  // It flatens duplicates by url
-  stack[unit.url] = unit;
+  if (stack[unit.url]) {
+    const areImagesFilledAndDifferent = unit.image?.source && unit.image?.source !== stack[unit.url].image?.source;
+    if (areImagesFilledAndDifferent) {
+      if (location.href.includes('localhost')) {
+        console.error({
+          [unit.type?.join('') || 'a']: stack[unit.url].image?.source,
+          [stack[unit.url].type?.join('') || 'b']: stack[unit.url].image?.source,
+        })
+        throw ('Duplicated but different images!')
+      }
+    }
 
-  return stack
+    // It merges duplicates but keeps their type in array
+    const typeMerged: string[] = [...(stack[unit.url].type || []), ...(unit.type || [])];
+    stack[unit.url].type = [...new Set(typeMerged)];
+  } else {
+    stack[unit.url] = unit;
+  }
+
+  return stack;
 }, {}));
+
+const typeFiltersList = getFilter(allUnits, 'type');
 
 const animalFiltersList = getFilter(allUnits, 'animals');
 
@@ -58,6 +82,7 @@ const Heraldyka = () => {
     const [listPage, setListPage] = useState(0);
     const [listPhrase, setListPhrase] = useState('');
     const [mapFitment, setMapFitment] = useState<'compact' | 'fullWidth' | 'zoom'>('compact');
+    const [typeFilers, setTypeFilters] = useState<string[]>([]);
     const [colorFilters, setColorFilters] = useState<string[]>([]);
     const [animalFilters, setAnimalFilters] = useState<string[]>([]);
     const [itemFilters, setItemFilters] = useState<string[]>([]);
@@ -74,7 +99,7 @@ const Heraldyka = () => {
         filteredUnits,
         unitsForMap,
         subtitleParts,
-      } = getFilteredUnits(allUnits, colorFilters, animalFilters, itemFilters);
+      } = getFilteredUnits(allUnits, typeFilers, colorFilters, animalFilters, itemFilters);
 
       setListPage(0);
       setListPhrase('');
@@ -84,7 +109,7 @@ const Heraldyka = () => {
         unitsForMap,
         subtitleParts,
       }
-    }, [colorFilters, animalFilters, itemFilters]);
+    }, [colorFilters, typeFilers, animalFilters, itemFilters]);
 
     const unitsForList = useMemo(() => {
       if (listPhrase === '') {
@@ -108,6 +133,16 @@ const Heraldyka = () => {
         }
 
         return [...colors, color];
+      });
+    }, []);
+
+    const toggleType = useCallback((type: string) => {
+      setTypeFilters((types) => {
+        if (types.includes(type)) {
+          return types.filter((active) => active !== type);
+        }
+
+        return [...types, type];
       });
     }, []);
 
@@ -140,6 +175,7 @@ const Heraldyka = () => {
     const hasFilters = colorFilters.length > 0 || animalFilters.length > 0 || itemFilters.length > 0;
 
     const resetFilters = () => {
+      setTypeFilters([]);
       setColorFilters([]);
       setAnimalFilters([]);
       setItemFilters([]);
@@ -161,7 +197,7 @@ const Heraldyka = () => {
 
     return (
         <>
-          <h1 className="text-[22px] md:text-[48px] text-center mb-4">
+          <h1 className="text-[18px] md:text-[36px] text-center mb-4">
             {t('heraldry.mapTitle')}
           </h1>
           <h2 className="text-[18px] min-h-[20px] leading-[20px] text-center mb-6 relative">
@@ -231,7 +267,7 @@ const Heraldyka = () => {
                 {hasFilters && <button className="ml-auto font-[600]" onClick={resetFilters}>{t('heraldry.clearFilters')}</button>}
               </span>
             </div>
-            <div className="flex items-center gap-10 mb-10">
+            <div className="flex flex-wrap items-center justify-between gap-5 mb-10">
               <span className="flex items-center gap-5">
                 {t('heraldry.color.filterTitle')}
                 {[
@@ -247,9 +283,21 @@ const Heraldyka = () => {
                   {colorFilters.includes(name) ? '✔' : ''}
                 </button>)}
               </span>
-              <span className="ml-auto flex items-center gap-5">
+              <span className="flex flex-wrap gap-5">
+                {typeFiltersList.map(({ value, total }) => 
+                  <button
+                    onClick={() => toggleType(value)}
+                    className={clsx("hover:text-[#ca0505] text-nowrap", { 
+                      'text-[#ca0505]': typeFilers.includes(value),
+                    })}
+                  >
+                    {t(`heraldry.unit.type.pl.${value}`)} <small className="text-[10px] text-[#4b4b4b] tracking-widest">({total})</small>
+                  </button>
+                )}
+              </span>
+              <span className="flex items-center gap-5">
                 {t('heraldry.mapSize')}
-                <button className="font-[600]" onClick={toggleMapFittment}>
+                <button className="text-[#ca0505]" onClick={toggleMapFittment}>
                   {t(`heraldry.mapSize.${mapFitment}`)}
                 </button>
               </span>
@@ -263,8 +311,8 @@ const Heraldyka = () => {
                 ...animalFiltersList].map(({ value, total }) => 
                   <button
                     onClick={() => toggleAnimal(value)}
-                    className={clsx("hover:font-[600]", { 
-                      'font-[800]': animalFilters.includes(value),
+                    className={clsx("hover:text-[#ca0505]", { 
+                      'text-[#ca0505]': animalFilters.includes(value),
                     })}
                   >
                     {t(`heraldry.animal.${value}`)} {total > 0 && <small className="text-[#4b4b4b] tracking-widest">({total})</small>}
@@ -278,8 +326,8 @@ const Heraldyka = () => {
                 {itemsFiltersList.map(({ value, total }) => 
                   <button
                     onClick={() => toggleItem(value)}
-                    className={clsx("hover:font-[600]", { 
-                      'font-[800]': itemFilters.includes(value),
+                    className={clsx("hover:text-[#ca0505]", { 
+                      'text-[#ca0505]': itemFilters.includes(value),
                     })}
                   >
                     {t(`heraldry.item.${value}`)} <small className="text-[#4b4b4b] tracking-widest">({total})</small>
@@ -310,7 +358,7 @@ const Heraldyka = () => {
             </div>}
           </div>
           <p className="max-w-screen-xl mx-auto border-x border p-4 mb-10 text-[12px] text-[#4b4b4b] text-right">
-            {t('heraldry.list.footer')} <a href="https://github.com/Deykun/maps/issues" target="_blank" className="text-black font-[600]">github.com/Deykun/maps/issues</a>
+            {t('heraldry.list.footer')} <a href="https://github.com/Deykun/maps/issues" target="_blank" className="text-black hover:text-[#ca0505] font-[600]">github.com/Deykun/maps/issues</a>
           </p>
         </>
     );

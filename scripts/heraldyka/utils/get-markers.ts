@@ -79,10 +79,13 @@ export const getMarkers = ({
     ].includes(title)) {
       // Doesn't have them
     } else {
-      const orzel = ['orzeł', 'orła', 'orłem', 'orłów', ' orle ', ' orły ', ' godła polski'];
+      const orzel = ['orzeł', 'orła', 'orłem', 'orłów', ' orle ', ' orły ', ' godła polski', 'herb powiatu radomskiego', 'herb powiatu żyrardowskiego'];
       const orzelFilter = [
         'Herb Trzemeszna',
         'Herb Starego Sącza',
+        'Herb powiatu grajewskiego',
+        'Herb powiatu pyrzyckiego',
+        'Herb powiatu stargardzkiego',
       ]; 
 
       if (orzel.some((animal) => text.includes(animal))) {
@@ -122,6 +125,9 @@ export const getMarkers = ({
           'Herb Wojkowic',
           'Herb Kielc',
           'Herb Mirosławca',
+          'Herb powiatu strzelecko-drezdeneckiego',
+          'Herb powiatu pajęczańskiego',
+          'Herb powiatu brzeskiego (małopolskiego)',
         ].includes(title)) {
           animals.push('eagle');
         }
@@ -194,7 +200,7 @@ export const getMarkers = ({
           animals.push('goose');
       }
         
-      if ([' gołębie', 'gołębia'].some((animal) => text.includes(animal))) {
+      if ([' gołębie', 'gołębia', ' gołąb'].some((animal) => text.includes(animal))) {
           animals.push('pigeon');
       }
 
@@ -250,6 +256,9 @@ export const getMarkers = ({
           'Herb Wojkowic',
           'Herb Kielc',
           'Herb Mirosławca',
+          'Herb powiatu strzelecko-drezdeneckiego',
+          'Herb powiatu pajęczańskiego',
+          'Herb powiatu brzeskiego (małopolskiego)',
         ].includes(title)) {
           animals.push('bird');
         }
@@ -267,7 +276,7 @@ export const getMarkers = ({
           animals.push('bat');
       }
 
-      if ([' gryfa', ' gryf', 'rybogryfa', 'rybogryf', 'półgryf'].some((animal) => text.includes(animal))) {
+      if ([' gryfa', ' gryf', 'rybogryfa', 'rybogryf', 'półgryf', 'poługryf', 'Herb powiatu polickiego'].some((animal) => text.includes(animal.toLowerCase()))) {
         if (![
           'Herb Mielca',
           'Herb Białegostoku',
@@ -284,18 +293,20 @@ export const getMarkers = ({
           animals.push('boar');
       }
 
-      if (['jeleń', 'jelenia', 'jelenią', ' jelenie', 'jelon', ' łania', ' łani ', ' łani,', ' rosochy,', ' daniela'].some((animal) => text.includes(animal))) {
+      if (['jeleń', 'jelenia', 'jelenią', ' jelenim', ' jelenie', 'jelon', ' łania', ' łani ', ' łani,', ' poroże', ' rosochy,', ' daniela', 'herb powiatu karkonoskiego', 'herb powiatu mieleckiego'].some((animal) => text.includes(animal))) {
         if (![
           'Herb Jabłonkowa',
           'Herb Białegostoku',
           'Herb Siedlec',
           'Herb Kowar',
+          'Herb powiatu stalowowolskiego',
+          'Herb powiatu pilskiego',
         ].includes(title)) {
           animals.push('deer');
         }
       }
 
-      if (['łosia'].some((animal) => text.includes(animal))) {
+      if (['łosia', ' łoś '].some((animal) => text.includes(animal))) {
         animals.push('moose');
       }
 
@@ -303,7 +314,7 @@ export const getMarkers = ({
         animals.push('wildcat');
       }
 
-      if (['półlwa', 'półlew', '(lew ', ' lew ', ' lew.', ' lwem ', ' lwem,', ' lwa ', ' lwa,' , ' lwy ', 'lwy-', ' lwami', ' lwów '].some((animal) => text.includes(animal))) {
+      if (['półlwa', 'półlew', ' połulwa', '(połulew', ' połulew', '(lew ', ' lew ', ' lew.', ' lwem ', ' lwem,', ' lwa ', ' lwa,' , ' lwy ', 'lwy-', ' lwami', ' lwów '].some((animal) => text.includes(animal))) {
         if (![
           'Herb Piwnicznej-Zdroju',
           'Herb Żagania',
@@ -318,16 +329,17 @@ export const getMarkers = ({
           'Herb gminy Zawonia',
           'Herb Żar',
           'Herb Szczecina',
+          'Herb powiatu prudnickiego',
         ].includes(title)) {
           animals.push('lion');
         }
       }
 
-      if ([' lampart ', 'lamparta', ' lamparcie', 'lewart'].some((animal) => text.includes(animal))) {
+      if ([' lampart ', 'lamparta', ' lamparcie', 'lewart', ' połulampart'].some((animal) => text.includes(animal))) {
           animals.push('leopard');
       }
 
-      if ([' byk', ' byczka', ' tur ', ' tura ', ' tura,', 'żubr', ' ciołka ', 'ciołek ', ' bawoli', ' woła,', 'bawoła', 'bawołu ', ' wołu ', 'gminy gołuchów', 'herbu chojnic'].some((animal) => text.includes(animal))) {
+      if ([' byk', ' byczka', ' połubyk', ' tur ', ' tura ', ' tura,', 'żubr', ' ciołka ', 'ciołek ', ' bawoli', ' wołu.', ' woła,', 'bawoła', 'bawołu ', ' woła ', ' wołu ', 'gminy gołuchów', 'herbu chojnic', 'herb powiatu mieleckiego'].some((animal) => text.includes(animal))) {
         if (![
           'Herb Rudnika nad Sanem',
           'Herb Przysuchy',
@@ -357,10 +369,11 @@ export const getMarkers = ({
         }
       }
 
-      if (['ryba ', ' ryba.', ' ryb ', ' rybami ', 'rybogryfa', 'rybopodobne', ' rybo ', ' rybo,', 'rybę', 'ryby', 'rybą', ' karp ', ' karpia ', 'łososia', ' suma ', 'łosoś', 'leszcza ', ' leszcze '].some((animal) => text.includes(animal))) {
+      if (['ryba ', ' ryba.', ' ryb ', ' rybami ', 'rybogryfa', 'rybopodobne', ' rybo ', ' rybo,', 'rybę', 'ryby', 'rybą', ' karp ', ' karpia ', 'karpiami.', ' karpiem', 'łososia', ' suma ', 'łosoś', 'leszcza ', ' leszcze ', 'Herb powiatu polickiego'].some((animal) => text.includes(animal.toLowerCase()))) {
         if (![
           'Herb Warszawy',
           'Herb gminy Kościerzyna',
+          'Herb powiatu brodnickiego',
         ].includes(title)) {
           animals.push('fish');
         }
@@ -379,7 +392,7 @@ export const getMarkers = ({
         animals.push('mermaid');
       }
 
-      if (['bóbr', ' bobra'].some((animal) => text.includes(animal))) {
+      if (['bóbr', ' bobra', ' bobry'].some((animal) => text.includes(animal))) {
         if (![
           'Herb gminy Łomża',
         ].includes(title)) {
@@ -399,7 +412,7 @@ export const getMarkers = ({
           animals.push('dog');
       }
 
-      if ([' niedźwiedz', 'herbu rawicz'].some((animal) => text.includes(animal))) {
+      if ([' niedźwiedz', ' niedźwiedź', 'herbu rawicz'].some((animal) => text.includes(animal))) {
           animals.push('bear');
       }
 
@@ -407,7 +420,7 @@ export const getMarkers = ({
           animals.push('crayfish');
       }
 
-      if ([' konia', ' koń ', ' koń,', ' rumaku', ' koniu', ' konie ', 'starykoń', 'gminy gołuchów'].some((animal) => text.includes(animal))) {
+      if ([' konia', ' koń ', ' koń,', ' końska', ' rumaku', ' koniu', ' konie ', 'starykoń', 'gminy gołuchów'].some((animal) => text.includes(animal))) {
         if (![
           'Herb Sułkowic',
           'Herb Tczewa',
@@ -440,7 +453,7 @@ export const getMarkers = ({
           animals.push('goat');
       }
 
-      if ([' wilk'].some((animal) => text.includes(animal))) {
+      if ([' wilk', 'połuwilk'].some((animal) => text.includes(animal))) {
         if (![
           'Herb Górowa Iławeckiego',
           'Herb Mrągowa',
@@ -459,7 +472,7 @@ export const getMarkers = ({
       }
     }
 
-    if (['podkowa', 'podkowę', ' podkowie'].some((item) => text.includes(item))) {
+    if (['podkowa', 'podkowę', ' podkowie', 'herb powiatu brzezińskiego'].some((item) => text.includes(item))) {
       if (![
         'Herb Bobowej',
         'Herb Izbicy',
@@ -485,12 +498,13 @@ export const getMarkers = ({
         'Herb Kłecka',
         'Herb Kamionki',
         'Herb Radomia',
+        'Herb powiatu kluczborskiego',
       ].includes(title)) {
         items.push('key');
       }
     }
 
-    if (['miecz', ' nóż ', ' szabla ', ' szable ', ' szable.'].some((item) => text.includes(item))) {
+    if (['miecz', ' nóż ', ' szabla ', ' szablach', ' szable ', ' szable.', 'herb powiatu opoczyńskiego'].some((item) => text.includes(item))) {
       if (![
         'Herb Siechnic',
         'Herb gminy Golub-Dobrzyń',
@@ -523,7 +537,7 @@ export const getMarkers = ({
       }
     }
 
-    if (['strzał', ' rogacina ', ' rogacina,'].some((item) => text.includes(item))) {
+    if (['strzał', ' rogacina ', ' rogacina,', 'herb powiatu brzezińskiego'].some((item) => text.includes(item))) {
       if (![
         'Herb gminy Nadarzyn',
         'Herb gminy Ożarowice',
@@ -573,6 +587,12 @@ export const getMarkers = ({
       'Herb gminy Ujsoły',
       'Herb Wągrowca',
       'Herb Sosnowca',
+      'Herb powiatu chełmińskiego',
+      'Herb powiatu świeckiego',
+      'Herb powiatu toruńskiego',
+      'Herb powiatu tucholskiego',
+      'Herb powiatu wąbrzeskiego',
+      'Herb powiatu malborskiego',
     ].some((item) => text.includes(item.toLowerCase()))) {
       if (![
         'empty',
@@ -601,6 +621,8 @@ export const getMarkers = ({
         'Herb Pieszyc',
         'Herb Świątnik Górnych',
         'Herb Skarżyska-Kamiennej',
+        'Herb powiatu brodnickiego',
+        'Herb powiatu zawierciańskiego',
       ].includes(title)) {
         items.push('earOfGrain');
       }
@@ -630,7 +652,7 @@ export const getMarkers = ({
       }
     }
 
-    if (['młot', 'herb górniczy', 'pyrlika'].some((item) => text.includes(item))) {
+    if (['młot', 'herb górniczy', 'pyrlika', 'herb powiatu złotoryjskiego'].some((item) => text.includes(item))) {
       if (![
         ...oldAxePickFilter,
         'Herb Skarżyska-Kamiennej',
@@ -651,7 +673,7 @@ export const getMarkers = ({
       }
     }
 
-    if (['drzewo', ' drzew', 'drzewa', ' kłoda', 'dąb', ' dęby ', ' dębowe', ' dębu', 'lipą ', ' bukiem', ' jodła', 'sosną', ' sosny ', ' sosnę', ' jabłoń', ' jodły', ' świerk', ' ostrzew', 'gałąź', ' gałęzi ', 'lasu.', ' pniaczek', ' pień ', ' buk ', ' brzozę', ' brzozową ', ' lipy'].some((item) => text.includes(item))) {
+    if (['drzewo', ' drzew', 'drzewa', ' kłoda', 'dąb', ' dęby ', ' dębowe', ' dębu', ' dębami', 'lipą ', ' bukiem', ' jodła', 'sosną', ' sosny ', ' sosnę', ' jabłoń', ' jodły', ' świerk', ' ostrzew', '(ostrzew', 'gałąź', ' gałęzi ', ' gałązka', ' gałązką', 'lasu.', ' pniaczek', ' pień ', ' buk ', ' brzozę', ' brzozową ', ' lipy', 'Herb powiatu sztumskiego', 'Herb powiatu polickiego'].some((item) => text.includes(item.toLowerCase()))) {
       if (![
         'Herb Węgorzyna',
         'Herb Bobowej',
@@ -714,12 +736,20 @@ export const getMarkers = ({
         'Herb gminy Laskowa',
         'Herb gminy Jastków',
         'Herb gminy Aleksandrów (województwo łódzkie)',
+        'Herb powiatu wieluńskiego',
+        'Herb powiatu proszowickiego',
+        'Herb powiatu zwoleńskiego',
+        'Herb powiatu mieleckiego',
+        'Herb powiatu tarnogórskiego',
+        'Herb powiatu buskiego',
+        'Herb powiatu międzychodzkiego',
+        'Herb powiatu pilskiego',
       ].includes(title)) {
         items.push('tree');
       }
     }
 
-    const lily = [' lilie', ' lilia', ' lilię', ' lilii '];
+    const lily = [' lilie', ' lilia', ' lilię', ' lilii ', ' lilijkę'];
     const lilyFilter = [
       'Herb Birczy',
       'Herb Starogardu Gdańskiego',
@@ -732,11 +762,12 @@ export const getMarkers = ({
       }
     }
 
-    const rose = [' róża ', ' róż ', ' róże ', ' różę '];
+    const rose = [' róża ', ' róż ', ' róże ', ' różę ', ' różami '];
     const roseFilter = [
       'Herb Łabiszyna',
       'Herb Starogardu Gdańskiego',
       'Herb Elbląga',
+      'Herb powiatu prudnickiego',
     ];
 
     if (rose.some((item) => text.includes(item))) {
@@ -745,7 +776,7 @@ export const getMarkers = ({
       }
     }
 
-    if (['kwiat', ' maku.', ' tulipan',  ...rose, ...lily].some((item) => text.includes(item))) {
+    if (['kwiat', ' maku.', ' maki', ' tulipan', ' kwiecie',  ...rose, ...lily].some((item) => text.includes(item))) {
       if (![
         ...lilyFilter,
         ...roseFilter,
@@ -765,12 +796,13 @@ export const getMarkers = ({
         'Herb Krakowa',
         'Herb Obornik',
         'Herb Świętochłowic',
+        'Herb powiatu pyrzyckiego',
       ].includes(title)) {
         items.push('flower');
       }
     }
 
-    if (['wieża', ' wieże', ' wieżę', ' wieżą', ' wieży ', ' muru ', ' mur ', ' murów ', ' murze ', 'baszt', ' bramę ', 'bramę.', ' bramą.', 'bramą,', ' bramną ', ' bramie ', 'corona muralis', ' kolumny ', ' kolumna ', 'gminy gołuchów'].some((item) => text.includes(item))) {
+    if (['wieża', ' wieże', ' wieżę', ' wieżą', ' wieży ', ' muru ', ' mur ', ' murów ', ' murem ', ' murze ', 'baszt', ' bramę ', 'bramę.', ' bramą.', 'bramą,', ' bramną ', ' bramie ', ' brama ', ' bramy ', 'corona muralis', ' kolumny ', ' kolumna ', 'gminy gołuchów', 'herb powiatu średzkiego (dolnośląskiego)', 'herb powiatu zgierskiego', 'herb powiatu żyrardowskiego', 'Herb powiatu myszkowskiego', 'Herb powiatu jarocińskiego'].some((item) => text.includes(item.toLowerCase()))) {
       if (![
         'Herb gminy Gaworzyce',
         'Herb Oleśnicy',
@@ -807,12 +839,14 @@ export const getMarkers = ({
         'Herb gminy Bielice',
         'Herb Opatowca',
         'Herb Ostrzeszowa',
+        'Herb powiatu radomszczańskiego',
+        'Herb powiatu poznańskiego',
       ].includes(title)) {
         items.push('walls');
       }
     }
 
-    if (['łódka', 'łódź', 'statek', ' łodzi'].some((item) => text.includes(item))) {
+    if (['łódka', 'łódź', 'statek', ' łodzi', ' korab', ' koga '].some((item) => text.includes(item))) {
       if (![
         'Herb Głowna',
         'Herb Aleksandrowa Łódzkiego',
@@ -826,12 +860,13 @@ export const getMarkers = ({
         'Herb Mikołajek',
         'Herb Środy Wielkopolskiej',
         'Herb Łomży',
+        'Herb powiatu przysuskiego',
       ].includes(title)) {
         items.push('boat');
       }
     }
 
-    if ([' krzyż', ' krzyżem', ' kościół', ' kościołem', ' kościoła', ' klasztoru', 'gminy brzeźnica (powiat wadowicki)', 'herb gminy dynów'].some((item) => text.includes(item))) {
+    if ([' krzyż', ' krzyżem', ' kościół', 'krzyżem ', ' połukrzyżem', ' połukrzyż', ' kościołem', ' kościoła', ' klasztoru', 'gminy brzeźnica (powiat wadowicki)', 'herb gminy dynów', 'herb powiatu zduńskowolskiego', 'herb powiatu tatrzańskiego', 'herb powiatu mławskiego', 'Herb powiatu elbląskiego'].some((item) => text.includes(item.toLowerCase()))) {
       if (![
         'Herb gminy Świdnica (powiat świdnicki)',
         'Herb gminy Gruta',
@@ -984,6 +1019,19 @@ export const getMarkers = ({
         'Herb Kórnika',
         'Herb Ostrzeszowa',
         'Herb Zdun',
+        'Herb powiatu brodnickiego',
+        'Herb powiatu golubsko-dobrzyńskiego',
+        'Herb powiatu hrubieszowskiego',
+        'Herb powiatu bocheńskiego',
+        'Herb powiatu płońskiego',
+        'Herb powiatu przasnyskiego',
+        'Herb powiatu siedleckiego',
+        'Herb powiatu warszawskiego zachodniego',
+        'Herb powiatu myszkowskiego',
+        'Herb powiatu raciborskiego',
+        'Herb powiatu opatowskiego',
+        'Herb powiatu iławskiego',
+        'Herb powiatu mrągowskiego',
       ].includes(title)) {
         items.push('cross');
       }
@@ -997,7 +1045,7 @@ export const getMarkers = ({
       }
     }
 
-    if ([' anioł'].some((item) => text.includes(item))) {
+    if ([' anioł', 'herb białej podlaskiej', 'herb powiatu łańcuckiego'].some((item) => text.includes(item))) {
       if (![
         'Herb Bierutowa',
         'Herb Murowanej Gośliny',
@@ -1053,12 +1101,15 @@ export const getMarkers = ({
         'Herb Recza',
         'Herb Kobyłki',
         'Herb Pieszyc',
+        'Herb powiatu wołowskiego',
+        'Herb powiatu chrzanowskiego',
+        'Herb powiatu zawierciańskiego',
       ].includes(title)) {
         items.push('wheel');
       }
     }
 
-    if ([' korona', ' koronę', ' koroną', ' korony ', ' korony', 'koronie,', 'ukoronowanego', 'herb opola', 'mitra książęca'].some((item) => text.includes(item))) {
+    if ([' korona', ' koronę', ' koroną', ' korony ', ' koronie', ' korony', 'ukoronowanego', 'ukoronowanym', 'ukoronowane', 'ukoronowany', 'herb opola', 'mitra książęca', 'herb powiatu polkowickiego', 'herb powiatu krakowskiego', 'herb powiatu suskiego', 'herb powiatu tatrzańskiego', 'herb powiatu leżajskiego', 'Herb powiatu przemyskiego', 'Herb powiatu przeworskiego', 'Herb powiatu suwalskiego', 'Herb powiatu wejherowskiego', 'Herb powiatu będzińskiego', 'Herb powiatu cieszyńskiego', 'Herb powiatu jędrzejowskiego', 'Herb powiatu szczycieńskiego', 'Herb powiatu kaliskiego', 'Herb powiatu białogardzkiego', 'Herb powiatu goleniowskiego'].some((item) => text.includes(item.toLowerCase()))) {
       if (![
         'Herb gminy Krasocin',
         'Herb Jaworzyny Śląskiej',
@@ -1130,12 +1181,19 @@ export const getMarkers = ({
         'Herb Bytomia',
         'Herb Raciborza',
         'Herb Wielbarka',
+        'Herb powiatu warszawskiego zachodniego',
+        'Herb powiatu stalowowolskiego',
+        'Herb powiatu kazimierskiego',
+        'Herb powiatu międzychodzkiego',
+        'Herb powiatu obornickiego',
+        'Herb powiatu wągrowieckiego',
+        'Herb powiatu myśliborskiego',
       ].includes(title)) {
         items.push('crown');
       }
     }
 
-    if ([' święty', ' świetego', ' świętego', ' św.', ' święta ', ' świętej ', ' świętą ', 'matki bożej', ' floriana', 'jana chrciciela', 'matki boskiej', 'madonny', ' madonnę', 'chrystus', 'błogosławiona salomea', 'bł. władysława', 'marii panny', 'maryi panny', 'herb lubawy', 'matkę boską', 'jana chrzciciela', 'szymona gorliwego'].some((item) => text.includes(item))) {
+    if ([' święty', ' świetego', ' świętego', ' św.', ' święta ', ' świętej ', ' świętą ', 'matki bożej', ' floriana', 'jana chrciciela', 'matki boskiej', 'madonny', ' madonnę', 'chrystus', 'błogosławiona salomea', 'bł. władysława', 'marii panny', 'maryi panny', 'herb lubawy', 'matkę boską', 'najświętsza maria panna', 'jana chrzciciela', 'szymona gorliwego', 'herb powiatu wołomińskiego', 'Herb powiatu polickiego'].some((item) => text.includes(item.toLowerCase()))) {
       if (![
         'Herb gminy Sadki',
         'Herb gminy Leśna Podlaska',
@@ -1298,6 +1356,21 @@ export const getMarkers = ({
         'Herb gminy Łukowa',
         'Herb gminy Stara Błotnica',
         'Herb Dobrodzienia',
+        'Herb powiatu oleśnickiego',
+        'Herb powiatu nowotarskiego',
+        'Herb powiatu prudnickiego',
+        'Herb powiatu brzozowskiego',
+        'Herb powiatu jarosławskiego',
+        'Herb powiatu kwidzyńskiego',
+        'Herb powiatu częstochowskiego',
+        'Herb powiatu wodzisławskiego',
+        'Herb powiatu buskiego',
+        'Herb powiatu kieleckiego',
+        'Herb powiatu gostyńskiego',
+        'Herb powiatu gnieźnieńskiego',
+        'Herb powiatu krotoszyńskiego',
+        'Herb powiatu pyrzyckiego',
+        'Herb powiatu myśliborskiego',
       ].includes(title)) {
         items.push('saint');
       }

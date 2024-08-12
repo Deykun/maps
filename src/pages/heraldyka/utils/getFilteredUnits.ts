@@ -1,8 +1,20 @@
 import { AdministrativeUnit, WITH_ANIMAL, WITHOUT_ANIMAL } from '../constants';
 
-export const getFilteredUnits = (units: AdministrativeUnit[], colorFilters: string[], animalFilters: string[], itemFilters: string[]) => {
+export const getFilteredUnits = (units: AdministrativeUnit[], typeFilers: string[], colorFilters: string[], animalFilters: string[], itemFilters: string[]) => {
   const filteredUnits = units.filter(
     (unit) => {
+      const isTypeFilterActive = typeFilers.length > 0;
+      if (isTypeFilterActive) {
+        if ((unit?.type?.length || 0) === 0) {
+          return false;
+        }
+
+        const isOneOfPickedTypes = typeFilers.some((active) => (unit?.type || []).includes(active));
+        if (!isOneOfPickedTypes) {
+          return false;
+        }
+      }
+
       const isColorFilterActive = colorFilters.length > 0;
       if (isColorFilterActive) {
         const isPrimary = unit?.colors?.primary?.name && colorFilters.includes(unit?.colors?.primary?.name);
@@ -65,6 +77,7 @@ export const getFilteredUnits = (units: AdministrativeUnit[], colorFilters: stri
   );
 
   const subtitleParts = [
+    ...typeFilers.map((value) => `heraldry.unit.type.pl.${value}`),
     ...colorFilters.map((value) => `heraldry.color.${value}`),
     ...animalFilters.map((value) => `heraldry.animal.${value}`),
     ...itemFilters.map((value) => `heraldry.item.${value}`),

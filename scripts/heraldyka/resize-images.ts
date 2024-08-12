@@ -8,8 +8,11 @@ const imagesGiminy = fs.readdirSync('./public/images/heraldyka/gminy').map(
 const imagesMiasta = fs.readdirSync('./public/images/heraldyka/miasta').map(
   (imageFile) => ({ imageSrc: `./public/images/heraldyka/miasta/${imageFile}`, imageFile, type: 'miasta' }),
 );
+const imagesPowiaty = fs.readdirSync('./public/images/heraldyka/powiaty').map(
+  (imageFile) => ({ imageSrc: `./public/images/heraldyka/powiaty/${imageFile}`, imageFile, type: 'powiaty' }),
+);
 
-const images = [...imagesGiminy, ...imagesMiasta];
+const images = [...imagesGiminy, ...imagesMiasta, ...imagesPowiaty];
 
 const start = (new Date()).getTime();
 const total = images.length;
