@@ -4,7 +4,7 @@ import { fetchData } from './utils/fetch-data';
 
 const administrativeDivisions: AdministrativeUnit[] = Object.values(urls.powiatyByWojewodztwo).flatMap(
 	({ title, urls }) => urls.map(
-		(gmina) => ({ ...gmina, type: 'powiat', partOf: title }
+		(gmina) => ({ ...gmina, type: ['powiat'], partOf: title }
 	),
 ));
 

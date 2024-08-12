@@ -392,7 +392,7 @@ export const getMarkers = ({
         animals.push('mermaid');
       }
 
-      if (['bóbr', ' bobra'].some((animal) => text.includes(animal))) {
+      if (['bóbr', ' bobra', ' bobry'].some((animal) => text.includes(animal))) {
         if (![
           'Herb gminy Łomża',
         ].includes(title)) {
