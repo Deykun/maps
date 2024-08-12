@@ -16,7 +16,7 @@ export type AdministrativeUnit = {
   shortTitle?: string,
   url: string,
   partOf?: string,
-  type?: string,
+  type?: string[],
   description?: string,
   colors?: {
     primary: {
