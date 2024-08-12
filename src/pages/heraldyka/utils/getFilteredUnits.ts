@@ -1,6 +1,6 @@
 import { AdministrativeUnit, WITH_ANIMAL, WITHOUT_ANIMAL } from '../constants';
 
-export const getFilteredUnits = (units: AdministrativeUnit[], typeFilers: string[], colorFilters: string[], animalFilters: string[], itemFilters: string[]) => {
+export const getFilteredUnits = (units: AdministrativeUnit[], filterOperator: 'and' | 'or', typeFilers: string[], colorFilters: string[], animalFilters: string[], itemFilters: string[]) => {
   const filteredUnits = units.filter(
     (unit) => {
       const isTypeFilterActive = typeFilers.length > 0;
@@ -22,10 +22,15 @@ export const getFilteredUnits = (units: AdministrativeUnit[], typeFilers: string
           return false;
         }
 
-        const isInPalette = Array.isArray(unit?.colors?.palette)
-          && unit.colors.palette.some(({ name }) => colorFilters.includes(name));
+        if (!Array.isArray(unit?.colors?.palette) || unit.colors.palette.length === 0) {
+          return false;
+        }
+        
+        if (filterOperator === 'or' && !unit.colors.palette.some(({ name }) => colorFilters.includes(name))) {
+          return false;
+        }
 
-        if (!isInPalette) {
+        if (filterOperator === 'and' && !colorFilters.every((active) => (unit.colors?.palette || []).some(({ name }) => name === active))) {
           return false;
         }
       }
@@ -46,8 +51,13 @@ export const getFilteredUnits = (units: AdministrativeUnit[], typeFilers: string
             return false;
           }
 
-          const hasAllAnimals = animalFilters.every((active) => animals.includes(active));
-          if (!hasAllAnimals) {
+          const needOneAndMissing = filterOperator === 'or' && !animalFilters.some((active) => animals.includes(active));
+          if (needOneAndMissing) {
+            return false;
+          }
+
+          const needAllAndMissing = filterOperator === 'and' && !animalFilters.every((active) => animals.includes(active));
+          if (needAllAndMissing) {
             return false;
           }
         }
@@ -62,8 +72,13 @@ export const getFilteredUnits = (units: AdministrativeUnit[], typeFilers: string
           return false;
         }
 
-        const hasAllItems = itemFilters.every((active) => items.includes(active))
-        if (!hasAllItems) {
+        const needOneAndMissing = filterOperator === 'or' && !itemFilters.some((active) => items.includes(active));
+        if (needOneAndMissing) {
+          return false;
+        }
+
+        const needAllAndMissing = filterOperator === 'and' && !itemFilters.every((active) => items.includes(active));
+        if (needAllAndMissing) {
           return false;
         }
       }
@@ -76,12 +91,24 @@ export const getFilteredUnits = (units: AdministrativeUnit[], typeFilers: string
     (unit) => typeof unit?.place?.coordinates?.lon === 'number' && typeof unit?.imageUrl === 'string',
   );
 
-  const subtitleParts = [
-    ...typeFilers.map((value) => `heraldry.unit.type.pl.${value}`),
-    ...colorFilters.map((value) => `heraldry.color.${value}`),
-    ...animalFilters.map((value) => `heraldry.animal.${value}`),
-    ...itemFilters.map((value) => `heraldry.item.${value}`),
-  ];
+  const subtitleParts: { operator: 'or' | 'and', labels: string[] }[] = [];
+
+  if (typeFilers.length > 0) {
+    // Using and operator for type like city, county is pointless
+    subtitleParts.push({ operator: 'or', labels: typeFilers.map((value) => `heraldry.unit.type.pl.${value}`) })
+  }
+
+  if (colorFilters.length > 0) {
+    subtitleParts.push({ operator: filterOperator, labels: colorFilters.map((value) => `heraldry.color.${value}`) })
+  }
+
+  if (animalFilters.length > 0) {
+    subtitleParts.push({ operator: filterOperator, labels: animalFilters.map((value) => `heraldry.animal.${value}`) })
+  }
+
+  if (itemFilters.length > 0) {
+    subtitleParts.push({ operator: filterOperator, labels: itemFilters.map((value) => `heraldry.item.${value}`) })
+  }
 
   return {
     filteredUnits,

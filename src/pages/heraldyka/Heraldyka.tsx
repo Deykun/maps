@@ -81,6 +81,7 @@ const itemsFiltersList = getFilter(allUnits, 'items');
 const Heraldyka = () => {
     const [listPage, setListPage] = useState(0);
     const [listPhrase, setListPhrase] = useState('');
+    const [filterOperator, setFilterOperator] = useState<'and' | 'or'>('and');
     const [mapFitment, setMapFitment] = useState<'compact' | 'fullWidth' | 'zoom'>('compact');
     const [typeFilers, setTypeFilters] = useState<string[]>([]);
     const [colorFilters, setColorFilters] = useState<string[]>([]);
@@ -99,7 +100,7 @@ const Heraldyka = () => {
         filteredUnits,
         unitsForMap,
         subtitleParts,
-      } = getFilteredUnits(allUnits, typeFilers, colorFilters, animalFilters, itemFilters);
+      } = getFilteredUnits(allUnits, filterOperator, typeFilers, colorFilters, animalFilters, itemFilters);
 
       setListPage(0);
       setListPhrase('');
@@ -109,7 +110,7 @@ const Heraldyka = () => {
         unitsForMap,
         subtitleParts,
       }
-    }, [colorFilters, typeFilers, animalFilters, itemFilters]);
+    }, [filterOperator, colorFilters, typeFilers, animalFilters, itemFilters]);
 
     const unitsForList = useMemo(() => {
       if (listPhrase === '') {
@@ -148,7 +149,7 @@ const Heraldyka = () => {
 
     const toggleAnimal = useCallback((animal: string) => {
       if ([WITH_ANIMAL, WITHOUT_ANIMAL].includes(animal)) {
-        setAnimalFilters([animal]);
+        setAnimalFilters(animals => animals.includes(animal) ? [] : [animal]);
 
         return;
       }
@@ -172,7 +173,7 @@ const Heraldyka = () => {
       });
     }, []);
 
-    const hasFilters = colorFilters.length > 0 || animalFilters.length > 0 || itemFilters.length > 0;
+    const hasFilters = typeFilers.length > 0 || colorFilters.length > 0 || animalFilters.length > 0 || itemFilters.length > 0;
 
     const resetFilters = () => {
       setTypeFilters([]);
@@ -202,13 +203,39 @@ const Heraldyka = () => {
           </h1>
           <h2 className="text-[18px] min-h-[20px] leading-[20px] text-center mb-6 relative">
             {subtitleParts.length > 0 && <span className="text-[#4b4b4b]">
-              <small>
+              <small className="mr-1">
                 {t('heraldry.activeFilters')}
               </small>
-              {' '}
-              <span className="text-black">
-                {subtitleParts.map((label) => t(label)).join(' + ')}
-              </span>
+                {subtitleParts.map(({ operator, labels }, indexParts) => {
+                  if (labels.length === 1) {
+                    return (
+                      <>
+                        <span className="text-black">{t(labels[0])}</span>
+                        {indexParts < subtitleParts.length - 1 && <small className="mx-1">
+                          {' '}{t('heraldry.filterOperator.and')}{' '}
+                        </small>}
+                      </>
+                    )
+                  }
+
+                  return (
+                    <>
+                      {operator === 'or' && subtitleParts.length > 1 && <small>{'( '}</small>}
+                      {labels.map((label, indexLabel) => (
+                        <>
+                          <span className="text-black">{t(label)}</span>
+                          {indexLabel < labels.length - 1 && <small className="mx-1">
+                            {' '}{t(`heraldry.filterOperator.${operator}`)}{' '}
+                          </small>}
+                        </>
+                      ))}
+                      {operator === 'or' && subtitleParts.length > 1 && <small>{' )'}</small>}
+                      {indexParts < subtitleParts.length - 1 && <small className="mx-1">
+                        {' '}{t('heraldry.filterOperator.and')}{' '}
+                      </small>}
+                    </>
+                  );
+                })}
             </span>}
           </h2>
           <div
@@ -241,7 +268,7 @@ const Heraldyka = () => {
           </div>
           <div
             className={clsx('sticky -top-[1px] border-b', {
-              "-mt-[50px]": mapFitment === 'zoom',
+              "md:-mt-[50px]": mapFitment === 'zoom',
             })}
           >
             <div className="max-w-screen-xl md:h-[50px] mx-auto py-2 px-4 md:p-4 flex flex-wrap justify-between bg-white border-t border-x">
@@ -252,7 +279,10 @@ const Heraldyka = () => {
                 {t('heraldry.mapFooterAllCoats')} <strong className="text-black">{allUnits.length}</strong>
                 {allUnits.length > units.length && <>{t('heraldry.mapFooterCoatsAfterFilter')}
                 {' '}
-                <strong className="text-black">{units.length}</strong>
+                <strong className={clsx({
+                  'text-black': units.length > 0,
+                  'text-[#ca1a1a]': units.length === 0 })
+                }>{units.length}</strong>
                 {units.length > 10 && <>{' '}- <strong className="text-black">
                   {(100 * units.length/allUnits.length).toFixed(2)}
                 </strong><small>%</small></>}</>}.
@@ -263,7 +293,7 @@ const Heraldyka = () => {
             <div className="flex items-center mb-3">
               <h3 className="text-[24px] mb-3">{t('heraldry.titleFilters')}</h3>
               <span className="ml-auto">
-                {units.length === 0 && <span className="mr-2 text-[#ca1a1a] text-[12px] tracking-wider">{t('heraldry.noResult')}</span>}
+                {units.length === 0 && <span className="mr-2 text-[#ca1a1a] text-[12px] tracking-widest font-[800]">{t('heraldry.noResult')}</span>}
                 {hasFilters && <button className="ml-auto font-[600]" onClick={resetFilters}>{t('heraldry.clearFilters')}</button>}
               </span>
             </div>
@@ -278,7 +308,7 @@ const Heraldyka = () => {
                   key={name}
                   style={{ backgroundColor: color }}
                   onClick={() => toggleColor(name)}
-                  className="block size-5 rounded-[4px] shadow-md text-white text-[12px]"
+                  className="block size-5 rounded-[4px] shadow-md text-white text-[10px]"
                 >
                   {colorFilters.includes(name) ? '✔' : ''}
                 </button>)}
@@ -296,8 +326,14 @@ const Heraldyka = () => {
                 )}
               </span>
               <span className="flex items-center gap-5">
+                {t('heraldry.filterOperator')}
+                <button className="hover:text-[#ca0505]" onClick={() => setFilterOperator(filterOperator === 'and' ? 'or' : 'and')}>
+                  {t(`heraldry.filterOperator.${filterOperator}`)}
+                </button>
+              </span>
+              <span className="flex items-center gap-5">
                 {t('heraldry.mapSize')}
-                <button className="text-[#ca0505]" onClick={toggleMapFittment}>
+                <button className="hover:text-[#ca0505]" onClick={toggleMapFittment}>
                   {t(`heraldry.mapSize.${mapFitment}`)}
                 </button>
               </span>
@@ -315,7 +351,7 @@ const Heraldyka = () => {
                       'text-[#ca0505]': animalFilters.includes(value),
                     })}
                   >
-                    {t(`heraldry.animal.${value}`)} {total > 0 && <small className="text-[#4b4b4b] tracking-widest">({total})</small>}
+                    {t(`heraldry.animal.${value}`)} {total > 0 && <small className="text-[10px] text-[#4b4b4b] tracking-widest">({total})</small>}
                   </button>
                 )}
               </div>
@@ -330,7 +366,7 @@ const Heraldyka = () => {
                       'text-[#ca0505]': itemFilters.includes(value),
                     })}
                   >
-                    {t(`heraldry.item.${value}`)} <small className="text-[#4b4b4b] tracking-widest">({total})</small>
+                    {t(`heraldry.item.${value}`)} <small className="text-[10px] text-[#4b4b4b] tracking-widest">({total})</small>
                   </button>
                 )}
               </div>
