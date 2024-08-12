@@ -22,9 +22,9 @@ const miasta = Object.values(miastaJSON);
 const powiaty = Object.values(powiatyJSON);
 
 const allUnits: AdministrativeUnit[] = Object.values([
-  // ...gminy,
-  // ...miasta,
+  ...gminy,
   ...powiaty,
+  ...miasta,
 ].filter((unit: AdministrativeUnit) => {
   if ([
     'Herb Podgórza',
