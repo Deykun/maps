@@ -14,64 +14,8 @@ export const getMarkers = ({
 
   if (lang === 'pl') {
     // TODO: replace the logic
-    if (['Herb gminy Baranowo'].includes(title)) {
-      animals.push('hawk')
-      animals.push('bird');
-    } else if (['Herb Zabłudowa', 'Herb gminy Łomża', 'Herb Pionek'].includes(title)) {
-      animals.push('deer');
-    } else if (['Herb Bierunia'].includes(title)) {
-      animals.push('deer');
-      animals.push('bird');
-    } else if (['Herb Gdyni', 'Herb Rudnika nad Sanem'].includes(title)) {
-      animals.push('fish');
-    } else if (['Herb gminy Srokowo'].includes(title)) {
-      animals.push('beaver');
-    } else if (['Herb Mirosławca'].includes(title)) {
-      animals.push('goat');
-    } else if (['Herb Mielca'].includes(title)) {
-      animals.push('bullBison');
-      animals.push('deer');
-    } else if (['Herb gminy Gołuchów'].includes(title)) {
-      animals.push('bullBison');
-      animals.push('horse');
-    } else if (['Herb Jabłonkowa'].includes(title)) {
-      animals.push('eagle');
-      animals.push('bird');
-      animals.push('ram');
-    } else if (['Herb gminy Secemin', 'Herb Białegostoku'].includes(title)) {
-      animals.push('eagle');
-      animals.push('bird');
-      animals.push('horse');
-    } else if (['Herb Piwnicznej-Zdroju', 'Herb Pieszyc'].includes(title)) {
-      animals.push('ram');
-    } else if (['Herb gminy Jastków', 'Herb gminy Baranów (powiat puławski)'].includes(title)) {
-      animals.push('leopard');
-    } else if (['Herb Drawna'].includes(title)) {
-      animals.push('crane');
-      animals.push('bird');
-    } else if (['Herb Kołobrzegu'].includes(title)) {
-      animals.push('swan');
-      animals.push('bird');
-    } else if (['Herb Tucholi'].includes(title)) {
-      animals.push('pigeon');
-      animals.push('bird');
-    } else if (['Herb Słubic'].includes(title)) {
-      animals.push('rooster');
-      animals.push('bird');
-    } else if (['Herb gminy Drużbice'].includes(title)) {
-      animals.push('goose');
-      animals.push('bird');
-    } else if (['Herb Górowa Iławeckiego'].includes(title)) {
-      animals.push('fox');
-      animals.push('goose');
-      animals.push('bird');
-    } else if (['Herb gminy Damasławek', 'Herb Żagania', 'Herb Sułkowic', 'Herb Kisielic', 'Herb Krakowa', 'Herb Zawadzkiego', 'Herb Bytomia'].includes(title)) {
-      animals.push('eagle');
-      animals.push('bird');
-    } else if (['Herb Siedlec', 'Herb Kowar'].includes(title)) {
-      animals.push('horse');   
-    } else if (['Herb Warszawy'].includes(title)) {
-      animals.push('mermaid');
+    if (false) {
+
     } else if (['Herb gminy Bielice'].includes(title)) {
       animals.push('fox');
     } else if (['Herb gminy Pruszcz Gdański', 'Herb Ciężkowic', 'Herb Gorlic', 'Herb Tczewa'].includes(title)) {
@@ -157,16 +101,31 @@ export const getMarkers = ({
       'Herb Zabrza',
       'Herb Łazisk Górnych',
       'Herb Starachowic',
+      'Herb Drzewicy',
+      'Herb gminy Domaniewice',
     ].includes(title)) {
       // Doesn't have them
     } else {
-      const orzel = ['orzeł', 'orła', 'orłem', 'orłów', ' orle ', ' orły '];
+      const orzel = ['orzeł', 'orła', 'orłem', 'orłów', ' orle ', ' orły ', ' godła polski'];
       const orzelFilter = [
         'Herb Trzemeszna',
         'Herb Starego Sącza',
       ]; 
+
       if (orzel.some((animal) => text.includes(animal))) {
-        if (!orzelFilter.includes(title)) {
+        if (![
+          ...orzelFilter,
+          'Herb gminy Baranowo',
+          'Herb Zabłudowa',
+          'Herb Gdyni',
+          'Herb Mirosław',
+          'Herb Piwnicznej-Zdroju',
+          'Herb Pieszy',
+          'Herb gminy Jastków',
+          'Herb Słubic',
+          'Herb Siedlec',
+          'Herb Kowar',
+        ].includes(title)) {
           animals.push('eagle');
         }
       }
@@ -176,11 +135,19 @@ export const getMarkers = ({
       }
 
       if (['czapla', 'czaple', 'czaplę', ' czapli '].some((animal) => text.includes(animal))) {
+        if (![
+          'empty',
+        ].includes(title)) {
           animals.push('heron');
+        }
       }
 
       if (['żurw', 'żurawia', 'żurawie'].some((animal) => text.includes(animal))) {
+        if (![
+          'Herb gminy Srokowo',
+        ].includes(title)) {
           animals.push('crane');
+        }
       }
 
       if ([' kruk ', ' kruka '].some((animal) => text.includes(animal))) {
@@ -200,11 +167,21 @@ export const getMarkers = ({
       }
 
       if ([' pelikan'].some((animal) => text.includes(animal))) {
+        if (![
+          'Herb Kisielic',
+        ].includes(title)) {
           animals.push('pelican');
+        }
       }
 
       if ([' bocian'].some((animal) => text.includes(animal))) {
+        if (![
+          'Herb Gdyni',
+          'Herb Drawna',
+          'Herb gminy Drużbice',
+        ].includes(title)) {
           animals.push('stork');
+        }
       }
 
       if ([' gęsią ', 'gęś', ' gęsie'].some((animal) => text.includes(animal))) {
@@ -216,7 +193,11 @@ export const getMarkers = ({
       }
 
       if ([' łabęd'].some((animal) => text.includes(animal))) {
+        if (![
+          'Herb Drawna',
+        ].includes(title)) {
           animals.push('swan');
+        }
       }
 
       if (['kogut'].some((animal) => text.includes(animal))) {
@@ -224,7 +205,20 @@ export const getMarkers = ({
       }
 
       if (animals.length > 0 || [...orzel, 'ptak', 'ptakiem', ' czyżyka', 'cietrzewia', 'ślepowron', ' szpak ', ' pióro', 'kormorana', ' czajkę ', 'kaczory', ' mewę', ' wrony,', 'krogulcem', ' puszczyk '].some((animal) => text.includes(animal))) {
-        if (!orzelFilter.includes(title)) {
+        if (![
+          ...orzelFilter,
+          'Herb Zabłudowa',
+          'Herb Gdyni',
+          'Herb gminy Srokowo',
+          'Herb Mirosław',
+          'Herb Piwnicznej-Zdroju',
+          'Herb Pieszy',
+          'Herb gminy Jastków',
+          'Herb Drawna',
+          'Herb Siedlec',
+          'Herb Kowar',
+          'Herb Warszawy',
+        ].includes(title)) {
           animals.push('bird');
         }
       }
@@ -242,15 +236,29 @@ export const getMarkers = ({
       }
 
       if ([' gryfa', ' gryf', 'rybogryfa', 'półgryf'].some((animal) => text.includes(animal))) {
+        if (![
+          'Herb Mielca',
+          'Herb Białegostoku',
+          'Herb Kołobrzegu',
+          'Herb Bytomia',
+        ].includes(title)) {
           animals.push('griffin');
+        }
       }
 
       if ([' dzik,', 'dzik.', 'dzik ', ' dzika'].some((animal) => text.includes(animal))) {
           animals.push('boar');
       }
 
-      if (['jeleń', 'jelenia', 'jelenią', ' jelenie', 'jelon', ' łania', ' łani ', ' rosochy,'].some((animal) => text.includes(animal))) {
+      if (['jeleń', 'jelenia', 'jelenią', ' jelenie', 'jelon', ' łania', ' łani ', ' rosochy,', ' daniela'].some((animal) => text.includes(animal))) {
+        if (![
+          'Herb Jabłonkowa',
+          'Herb Białegostoku',
+          'Herb Siedlec',
+          'Herb Kowar',
+        ].includes(title)) {
           animals.push('deer');
+        }
       }
 
       if (['łosia'].some((animal) => text.includes(animal))) {
@@ -261,28 +269,53 @@ export const getMarkers = ({
         animals.push('wildcat');
       }
 
-      if (['półlwa', 'półlew', ' lew ', ' lwem ', ' lwa ', ' lwa,' , ' lwy ', 'lwy-', ' lwami'].some((animal) => text.includes(animal))) {
+      if (['półlwa', 'półlew', '(lew ', ' lew ', ' lwem ', ' lwa ', ' lwa,' , ' lwy ', 'lwy-', ' lwami'].some((animal) => text.includes(animal))) {
+        if (![
+          'Herb Piwnicznej-Zdroju',
+          'Herb Żagania',
+          'Herb Krakowa',
+          'Herb Zawadzkiego',
+        ].includes(title)) {
           animals.push('lion');
+        }
       }
 
-      if ([' lampart ', 'lamparta', ' lamparcie ', 'lamparcie.', 'lewart'].some((animal) => text.includes(animal))) {
+      if ([' lampart ', 'lamparta', ' lamparcie', 'lewart'].some((animal) => text.includes(animal))) {
           animals.push('leopard');
       }
 
-      if ([' byk', ' byczka', ' tur ', ' tura ', ' tura,', 'żubr', ' ciołka ', 'ciołek ', ' bawoli', ' woła,', 'bawoła', 'bawołu ', ' wołu '].some((animal) => text.includes(animal))) {
+      if ([' byk', ' byczka', ' tur ', ' tura ', ' tura,', 'żubr', ' ciołka ', 'ciołek ', ' bawoli', ' woła,', 'bawoła', 'bawołu ', ' wołu ', 'gminy gołuchów'].some((animal) => text.includes(animal))) {
+        if (![
+          'Herb Rudnika nad Sanem',
+        ].includes(title)) {
           animals.push('bullBison');
+        }
       }
 
       if (['smok'].some((animal) => text.includes(animal))) {
+        if (![
+          'Herb Gdyni',
+          'Herb Tucholi',
+        ].includes(title)) {
           animals.push('dragon');
+        }
       }
 
       if (['baran', 'muflon', ' owcę', ' owca', ' owczą'].some((animal) => text.includes(animal))) {
+        if (![
+          'Herb gminy Baranowo',
+          'Herb gminy Baranów (powiat puławski)',
+        ].includes(title)) {
           animals.push('ram');
+        }
       }
 
       if (['ryba ', ' ryba.', ' ryb ', 'rybogryfa', 'rybopodobne', ' rybo ', ' rybo,', 'rybę', 'ryby', 'rybą', ' karp ', ' karpia ', 'łososia', ' suma ', 'łosoś', 'leszcza ', ' leszcze '].some((animal) => text.includes(animal))) {
+        if (![
+          'Herb Warszawy'
+        ].includes(title)) {
           animals.push('fish');
+        }
       }
 
       if (['pszczoł'].some((animal) => text.includes(animal))) {
@@ -294,7 +327,11 @@ export const getMarkers = ({
       }
 
       if (['bóbr', ' bobra'].some((animal) => text.includes(animal))) {
+        if (![
+          'Herb gminy Łomża',
+        ].includes(title)) {
           animals.push('beaver');
+        }
       }
 
       if ([' lis ', ' lisa ', ' lisem ', ' lisa,'].some((animal) => text.includes(animal))) {
@@ -317,12 +354,20 @@ export const getMarkers = ({
           animals.push('crayfish');
       }
 
-      if ([' konia', ' koń ', ' koń,', ' koniu', ' konie '].some((animal) => text.includes(animal))) {
+      if ([' konia', ' koń ', ' koń,', ' rumaku', ' koniu', ' konie ', 'starykoń', 'gminy gołuchów'].some((animal) => text.includes(animal))) {
+        if (![
+          'Herb Sułkowic',
+        ].includes(title)) {
           animals.push('horse');
+        }
       }
 
       if (['jednoroż'].some((animal) => text.includes(animal))) {
+        if (![
+          'Herb Zabłudowa',
+        ].includes(title)) {
           animals.push('unicorn');
+        }
       }
 
       if (['centaur'].some((animal) => text.includes(animal))) {
@@ -342,7 +387,11 @@ export const getMarkers = ({
       }
 
       if ([' wilk'].some((animal) => text.includes(animal))) {
+        if (![
+          'Herb Górowa Iławeckiego',
+        ].includes(title)) {
           animals.push('wolf');
+        }
       }
 
       if (['wiewiórka'].some((animal) => text.includes(animal))) {
@@ -407,6 +456,7 @@ export const getMarkers = ({
         'Herb Sandomierza',
         'Herb Mogilna',
         'Herb Łomianek',
+        'Herb Kowalewa Pomorskiego',
       ].includes(title)) {
         items.push('sword');
       }
@@ -488,7 +538,7 @@ export const getMarkers = ({
       }
     }
 
-    if (['drzewo', ' drzew', 'drzewa', 'dąb', ' dęby ', ' dębu', ' jodła', ' jodły', ' świerk', ' ostrzew', 'gałąź', 'lasu.', ' pniaczek'].some((item) => text.includes(item))) {
+    if (['drzewo', ' drzew', 'drzewa', 'dąb', ' dęby ', ' dębu', ' jodła', ' jodły', ' świerk', ' ostrzew', 'gałąź', 'lasu.', ' pniaczek', ' pień ', ' buk ', ' brzozową '].some((item) => text.includes(item))) {
       if (![
         'Herb Węgorzyna',
         'Herb Bobowej',
@@ -598,7 +648,7 @@ export const getMarkers = ({
       }
     }
 
-    if (['wieża', ' wieże', ' wieżę', ' wieżą', ' wieży ', ' muru ', ' mur ', ' murów ', 'baszt', ' bramę ', 'bramę.', ' bramą.', 'bramą,', ' bramną ', ' bramie ', 'corona muralis', ' kolumny ', ' kolumna '].some((item) => text.includes(item))) {
+    if (['wieża', ' wieże', ' wieżę', ' wieżą', ' wieży ', ' muru ', ' mur ', ' murów ', 'baszt', ' bramę ', 'bramę.', ' bramą.', 'bramą,', ' bramną ', ' bramie ', 'corona muralis', ' kolumny ', ' kolumna ', 'gminy gołuchów'].some((item) => text.includes(item))) {
       if (![
         'Herb gminy Gaworzyce',
         'Herb Oleśnicy',
@@ -711,7 +761,7 @@ export const getMarkers = ({
       }
     }
 
-    if ([' korona', ' koronę', ' koroną', ' korony ', ' korony', 'herb opola', 'mitra książęca'].some((item) => text.includes(item))) {
+    if ([' korona', ' koronę', ' koroną', ' korony ', ' korony', 'ukoronowanego', 'herb opola', 'mitra książęca'].some((item) => text.includes(item))) {
       if (![
         'Herb gminy Krasocin',
         'Herb Jaworzyny Śląskiej',

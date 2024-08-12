@@ -2045,7 +2045,9 @@
         "shortTitle": "Herb Nowa Ruda",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "herb-gminy-ole_snica-wojew_odztwo-dolno_sl_askie": {
@@ -2472,7 +2474,9 @@
         "shortTitle": "Herb Radwanice",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "herb-gminy-rudna": {
@@ -2864,7 +2868,9 @@
         "shortTitle": "Herb Walim",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "herb-gminy-warta-boles_lawiecka": {
@@ -3711,7 +3717,9 @@
             "animals": [
                 "deer"
             ],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "herb-gminy-brzuze": {
@@ -3794,7 +3802,9 @@
         "shortTitle": "Herb Bukowiec",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "herb-gminy-byto_n": {
@@ -7088,7 +7098,9 @@
             "animals": [
                 "leopard"
             ],
-            "items": []
+            "items": [
+                "crown"
+            ]
         }
     },
     "herb-gminy-batorz": {
@@ -14127,6 +14139,7 @@
                 "bird"
             ],
             "items": [
+                "crown",
                 "saint"
             ]
         }
@@ -16084,9 +16097,7 @@
         "imageSrcSet": "images/heraldyka/web-gminy/herb-gminy-domaniewice-x1.webp 100w,images/heraldyka/web-gminy/herb-gminy-domaniewice-x2.webp 200w,images/heraldyka/web-gminy/herb-gminy-domaniewice-x3.webp 300w,images/heraldyka/web-gminy/herb-gminy-domaniewice-x4.webp 400w",
         "shortTitle": "Herb Domaniewice",
         "markers": {
-            "animals": [
-                "horse"
-            ],
+            "animals": [],
             "items": [
                 "earOfGrain",
                 "lily",
@@ -24252,7 +24263,9 @@
                 "eagle",
                 "bird"
             ],
-            "items": []
+            "items": [
+                "crown"
+            ]
         }
     },
     "herb-gminy-wietrzychowice": {
@@ -24687,7 +24700,9 @@
                 "hawk",
                 "bird"
             ],
-            "items": []
+            "items": [
+                "crown"
+            ]
         }
     },
     "herb-gminy-baran_ow-powiat-grodziski": {
@@ -34654,6 +34669,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "tree",
                 "crown",
                 "saint"
             ]
@@ -50851,7 +50867,9 @@
         "shortTitle": "Herb Milejewo",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "herb-gminy-mi_lki": {
@@ -51986,7 +52004,9 @@
         "shortTitle": "Herb Ceków-Kolonia",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "herb-gminy-chod_ow": {
@@ -52719,7 +52739,9 @@
                 "bullBison",
                 "horse"
             ],
-            "items": []
+            "items": [
+                "walls"
+            ]
         }
     },
     "herb-gminy-grzegorzew": {
@@ -57393,7 +57415,9 @@
             "animals": [
                 "griffin"
             ],
-            "items": []
+            "items": [
+                "crown"
+            ]
         }
     },
     "herb-gminy-radowo-ma_le": {

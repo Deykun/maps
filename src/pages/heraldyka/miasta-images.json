@@ -1237,6 +1237,9 @@
         "shortTitle": "Herb Kowar",
         "markers": {
             "animals": [
+                "eagle",
+                "bird",
+                "deer",
                 "horse"
             ],
             "items": [
@@ -2325,6 +2328,8 @@
         "shortTitle": "Herb Pieszyc",
         "markers": {
             "animals": [
+                "eagle",
+                "bird",
                 "ram"
             ],
             "items": [
@@ -5285,9 +5290,7 @@
             "animals": [
                 "fish"
             ],
-            "items": [
-                "sword"
-            ]
+            "items": []
         }
     },
     "herb-kruszwicy": {
@@ -10244,7 +10247,8 @@
                 "bird"
             ],
             "items": [
-                "walls"
+                "walls",
+                "crown"
             ]
         }
     },
@@ -11328,9 +11332,7 @@
         "imageSrcSet": "images/heraldyka/web-miasta/herb-drzewicy-x1.webp 100w,images/heraldyka/web-miasta/herb-drzewicy-x2.webp 200w,images/heraldyka/web-miasta/herb-drzewicy-x3.webp 300w,images/heraldyka/web-miasta/herb-drzewicy-x4.webp 400w",
         "shortTitle": "Herb Drzewicy",
         "markers": {
-            "animals": [
-                "bullBison"
-            ],
+            "animals": [],
             "items": [
                 "crown"
             ]
@@ -19849,6 +19851,7 @@
         "shortTitle": "Herb Siedlec",
         "markers": {
             "animals": [
+                "bird",
                 "horse"
             ],
             "items": [
@@ -20395,6 +20398,8 @@
         "shortTitle": "Herb Warszawy",
         "markers": {
             "animals": [
+                "bird",
+                "fish",
                 "mermaid"
             ],
             "items": [
@@ -23587,8 +23592,8 @@
         "shortTitle": "Herb Mielca",
         "markers": {
             "animals": [
-                "bullBison",
-                "deer"
+                "deer",
+                "bullBison"
             ],
             "items": []
         }
@@ -28472,8 +28477,11 @@
         "shortTitle": "Herb Bierunia",
         "markers": {
             "animals": [
-                "deer",
-                "bird"
+                "heron",
+                "pelican",
+                "swan",
+                "bird",
+                "deer"
             ],
             "items": []
         }
@@ -34558,9 +34566,9 @@
         "shortTitle": "Herb Górowa Iławeckiego",
         "markers": {
             "animals": [
-                "fox",
                 "goose",
-                "bird"
+                "bird",
+                "fox"
             ],
             "items": [
                 "tree",
@@ -36071,7 +36079,8 @@
             "items": [
                 "sword",
                 "tree",
-                "walls"
+                "walls",
+                "crown"
             ]
         }
     },
@@ -40145,6 +40154,7 @@
         "shortTitle": "Herb Stęszewa",
         "markers": {
             "animals": [
+                "lion",
                 "bullBison"
             ],
             "items": [
@@ -41858,8 +41868,7 @@
         "shortTitle": "Herb Drawna",
         "markers": {
             "animals": [
-                "crane",
-                "bird"
+                "crane"
             ],
             "items": [
                 "wheel"
@@ -42933,6 +42942,8 @@
         "shortTitle": "Herb Mirosławca",
         "markers": {
             "animals": [
+                "eagle",
+                "bird",
                 "goat"
             ],
             "items": []
