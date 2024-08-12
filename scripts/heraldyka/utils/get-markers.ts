@@ -470,7 +470,7 @@ export const getMarkers = ({
       }
     }
 
-    if (['strzał'].some((item) => text.includes(item))) {
+    if (['strzał', ' rogacina ', ' rogacina,'].some((item) => text.includes(item))) {
       if (![
         'Herb gminy Nadarzyn',
         'Herb gminy Ożarowice',
@@ -600,6 +600,7 @@ export const getMarkers = ({
         'Herb Boguchwały',
         'Herb Ustronia',
         'Herb Nowogardu',
+        'Herb gminy Sędziejowice',
       ].includes(title)) {
         items.push('tree');
       }
@@ -611,7 +612,7 @@ export const getMarkers = ({
       'Herb Starogardu Gdańskiego',
     ];
 
-    if ([' lilie', ' lilia'].some((item) => text.includes(item))) {
+    if (lily.some((item) => text.includes(item))) {
       if (!lilyFilter.includes(title)) {
         items.push('lily');
       }
@@ -691,6 +692,8 @@ export const getMarkers = ({
         'Herb Zagórowa',
         'Herb Stargardu',
         'Herb gminy Bielice',
+        'Herb Opatowca',
+        'Herb Ostrzeszowa',
       ].includes(title)) {
         items.push('walls');
       }
@@ -715,7 +718,7 @@ export const getMarkers = ({
       }
     }
 
-    if ([' krzyż', ' krzyżem', ' kościół', ' kościołem'].some((item) => text.includes(item))) {
+    if ([' krzyż', ' krzyżem', ' kościół', ' kościołem', ' kościoła', ' klasztoru'].some((item) => text.includes(item))) {
       if (![
         'Herb gminy Świdnica (powiat świdnicki)',
         'Herb gminy Gruta',
@@ -797,6 +800,77 @@ export const getMarkers = ({
         'Herb Leszna',
         'Herb Zagórowa',
         'Herb Gryfic',
+        'Herb gminy Werbkowice',
+        'Herb gminy Lubrza (województwo lubuskie)',
+        'Herb gminy Skąpe',
+        'Herb gminy Czarnocin (województwo łódzkie)',
+        'Herb gminy Drużbice',
+        'Herb gminy Łanięta',
+        'Herb gminy Oporów',
+        'Herb gminy Sławno (województwo łódzkie)',
+        'Herb gminy Sędziejowice',
+        'Herb gminy Zapolice',
+        'Herb gminy Bolesław (powiat olkuski)',
+        'Herb gminy Gnojnik',
+        'Herb gminy Gromnik',
+        'Herb gminy Liszki',
+        'Herb gminy Moszczenica (województwo małopolskie)',
+        'Herb gminy Pałecznica',
+        'Herb gminy Słaboszów',
+        'Herb gminy Bielsk',
+        'Herb Bodzanowa',
+        'Herb Cegłowa',
+        'Herb gminy Pomiechówek',
+        'Herb gminy Radziejowice',
+        'Herb gminy Rzekuń',
+        'Herb Sochocina',
+        'Herb gminy Stara Błotnica',
+        'Herb gminy Stromiec',
+        'Herb gminy Szelków',
+        'Herb gminy Tczów',
+        'Herb gminy Kamiennik',
+        'Herb gminy Bojszowy',
+        'Herb gminy Poczesna',
+        'Herb gminy Górno',
+        'Herb gminy Ślemień',
+        'Herb Łagowa',
+        'Herb gminy Łączna',
+        'Herb Mieściska',
+        'Herb gminy Olszówka',
+        'Herb gminy Bielice',
+        'Herb gminy Rewal',
+        'Herb Góry',
+        'Herb Sobótki',
+        'Herb Strzegomia',
+        'Herb Brześcia Kujawskiego',
+        'Herb Bydgoszczy',
+        'Herb Błaszek',
+        'Herb Dobczyc',
+        'Herb Jordanowa',
+        'Herb Ryglic',
+        'Herb Wojnicza',
+        'Herb Baborowa',
+        'Herb Głogówka',
+        'Herb Nysy',
+        'Herb Jedlicza',
+        'Herb Kołaczyc',
+        'Herb Radomyśla Wielkiego',
+        'Herb Orzesza',
+        'Herb Wilamowic',
+        'Herb Toszka',
+        'Herb Wodzisławia Śląskiego',
+        'Herb Opatowca',
+        'Herb Skalbmierza',
+        'Herb Wiślicy',
+        'Herb Miłomłyna',
+        'Herb Olsztynka',
+        'Herb Ornety',
+        'Herb Pasymia',
+        'Herb Pieniężna',
+        'Herb Dolska',
+        'Herb Kórnika',
+        'Herb Ostrzeszowa',
+        'Herb Zdun',
       ].includes(title)) {
         items.push('cross');
       }
@@ -818,6 +892,18 @@ export const getMarkers = ({
         'Herb Skoczowa',
       ].includes(title)) {
         items.push('angel');
+      }
+    }
+
+    if ([' pastorał', 'laskę biskupi', 'laskę biskupią', 'jerzmanowice-przeginia'].some((item) => text.includes(item))) {
+      if (![
+        'Herb gminy Łąck',
+        'Herb gminy Rewal',
+        'Herb Iłży',
+        'Herb Nysy',
+        'Herb Koszalina',
+      ].includes(title)) {
+        items.push('crozier');
       }
     }
 
@@ -934,7 +1020,7 @@ export const getMarkers = ({
       }
     }
 
-    if ([' święty', ' świetego', ' świętego', ' św.', ' święta ', ' świętej ', ' świętą ', 'matki bożej', ' floriana', 'jana chrciciela', 'matki boskiej', 'madonny', ' madonnę', 'chrystus', 'błogosławiona salomea', 'bł. władysława', 'marii panny', 'herb lubawy', 'matkę boską', 'jana chrzciciela'].some((item) => text.includes(item))) {
+    if ([' święty', ' świetego', ' świętego', ' św.', ' święta ', ' świętej ', ' świętą ', 'matki bożej', ' floriana', 'jana chrciciela', 'matki boskiej', 'madonny', ' madonnę', 'chrystus', 'błogosławiona salomea', 'bł. władysława', 'marii panny', 'maryi panny', 'herb lubawy', 'matkę boską', 'jana chrzciciela', 'szymona gorliwego'].some((item) => text.includes(item))) {
       if (![
         'Herb gminy Sadki',
         'Herb gminy Leśna Podlaska',
@@ -1062,6 +1148,9 @@ export const getMarkers = ({
         'Herb Sobótki',
         'Herb Kwidzyna',
         'Herb Zagórowa',
+        'Herb gminy Sławno (województwo łódzkie)',
+        'Herb gminy Herby',
+        'Herb Ornety',
       ].includes(title)) {
         items.push('saint');
       }

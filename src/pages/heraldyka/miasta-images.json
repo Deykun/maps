@@ -699,6 +699,7 @@
             "items": [
                 "sword",
                 "walls",
+                "cross",
                 "wheel",
                 "crown",
                 "saint"
@@ -1576,6 +1577,7 @@
             "animals": [],
             "items": [
                 "cross",
+                "crozier",
                 "saint"
             ]
         }
@@ -2865,6 +2867,7 @@
                 "key",
                 "sword",
                 "walls",
+                "cross",
                 "saint"
             ]
         }
@@ -4348,6 +4351,7 @@
             ],
             "items": [
                 "walls",
+                "cross",
                 "saint"
             ]
         }
@@ -4824,7 +4828,8 @@
                 "bullBison"
             ],
             "items": [
-                "walls"
+                "walls",
+                "crozier"
             ]
         }
     },
@@ -6165,6 +6170,7 @@
             "animals": [],
             "items": [
                 "walls",
+                "crozier",
                 "saint"
             ]
         }
@@ -6426,7 +6432,9 @@
                 "eagle",
                 "bird"
             ],
-            "items": []
+            "items": [
+                "crozier"
+            ]
         }
     },
     "herb-wi_ecborka": {
@@ -7195,6 +7203,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "cross",
                 "saint"
             ]
         }
@@ -11157,7 +11166,8 @@
             "animals": [],
             "items": [
                 "sword",
-                "walls"
+                "walls",
+                "cross"
             ]
         }
     },
@@ -12702,6 +12712,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "crozier",
                 "saint"
             ]
         }
@@ -14152,6 +14163,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "cross",
                 "saint"
             ]
         }
@@ -14316,7 +14328,9 @@
         "shortTitle": "Herb Jordanowa",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "cross"
+            ]
         }
     },
     "herb-kalwarii-zebrzydowskiej": {
@@ -14884,7 +14898,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "cross"
+                "cross",
+                "crozier"
             ]
         }
     },
@@ -15008,7 +15023,8 @@
             "items": [
                 "axe",
                 "lily",
-                "flower"
+                "flower",
+                "cross"
             ]
         }
     },
@@ -15497,6 +15513,7 @@
             "animals": [],
             "items": [
                 "sword",
+                "cross",
                 "wheel",
                 "crown"
             ]
@@ -15672,6 +15689,7 @@
             "animals": [],
             "items": [
                 "flower",
+                "cross",
                 "crown",
                 "saint"
             ]
@@ -16024,6 +16042,7 @@
             "items": [
                 "key",
                 "sword",
+                "crozier",
                 "saint"
             ]
         }
@@ -16156,6 +16175,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "cross",
                 "saint"
             ]
         }
@@ -16532,7 +16552,9 @@
         "shortTitle": "Herb Bodzanowa",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "cross"
+            ]
         }
     },
     "herb-broku": {
@@ -16661,6 +16683,7 @@
             "animals": [],
             "items": [
                 "earOfGrain",
+                "cross",
                 "saint"
             ]
         }
@@ -16834,7 +16857,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "walls"
+                "walls",
+                "crozier"
             ]
         }
     },
@@ -17494,7 +17518,9 @@
         "shortTitle": "Herb Jastrzębia",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crozier"
+            ]
         }
     },
     "herb-jedlniletniska": {
@@ -19652,7 +19678,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "cross"
+                "cross",
+                "crozier"
             ]
         }
     },
@@ -19906,6 +19933,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "crozier",
                 "saint"
             ]
         }
@@ -20220,7 +20248,8 @@
             "animals": [],
             "items": [
                 "rose",
-                "flower"
+                "flower",
+                "cross"
             ]
         }
     },
@@ -20684,7 +20713,9 @@
             "animals": [
                 "ram"
             ],
-            "items": []
+            "items": [
+                "crozier"
+            ]
         }
     },
     "herb-wyszkowa": {
@@ -21106,6 +21137,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "cross",
                 "saint"
             ]
         }
@@ -21354,7 +21386,9 @@
         "shortTitle": "Herb Głogówka",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "cross"
+            ]
         }
     },
     "herb-g_lubczyc": {
@@ -22003,7 +22037,8 @@
             "animals": [],
             "items": [
                 "lily",
-                "flower"
+                "flower",
+                "cross"
             ]
         }
     },
@@ -22536,6 +22571,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "crozier",
                 "crown"
             ]
         }
@@ -22752,6 +22788,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "crozier",
                 "saint"
             ]
         }
@@ -23332,7 +23369,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "tree"
+                "tree",
+                "cross"
             ]
         }
     },
@@ -23418,7 +23456,8 @@
             "animals": [],
             "items": [
                 "key",
-                "sword"
+                "sword",
+                "cross"
             ]
         }
     },
@@ -24174,6 +24213,7 @@
                 "lion"
             ],
             "items": [
+                "cross",
                 "crown"
             ]
         }
@@ -24748,6 +24788,7 @@
             "animals": [],
             "items": [
                 "sword",
+                "cross",
                 "crown",
                 "saint"
             ]
@@ -25283,7 +25324,8 @@
             "items": [
                 "key",
                 "sword",
-                "flower"
+                "flower",
+                "cross"
             ]
         }
     },
@@ -30107,7 +30149,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "tree"
+                "tree",
+                "cross"
             ]
         }
     },
@@ -31188,7 +31231,8 @@
                 "bird"
             ],
             "items": [
-                "key"
+                "key",
+                "cross"
             ]
         }
     },
@@ -31309,7 +31353,9 @@
         "shortTitle": "Herb Wilamowic",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "cross"
+            ]
         }
     },
     "herb-wis_ly": {
@@ -31453,7 +31499,8 @@
             ],
             "items": [
                 "rose",
-                "flower"
+                "flower",
+                "cross"
             ]
         }
     },
@@ -31499,6 +31546,7 @@
             ],
             "items": [
                 "sword",
+                "crozier",
                 "wheel"
             ]
         }
@@ -32761,7 +32809,9 @@
         "shortTitle": "Herb Łagowa",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "cross"
+            ]
         }
     },
     "herb-_lopuszna": {
@@ -33117,6 +33167,7 @@
             "animals": [],
             "items": [
                 "walls",
+                "cross",
                 "shell",
                 "saint"
             ]
@@ -33637,6 +33688,7 @@
             "animals": [],
             "items": [
                 "key",
+                "cross",
                 "saint"
             ]
         }
@@ -33849,7 +33901,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "key"
+                "key",
+                "cross"
             ]
         }
     },
@@ -34380,7 +34433,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "walls"
+                "walls",
+                "crozier"
             ]
         }
     },
@@ -34598,7 +34652,8 @@
                 "deer"
             ],
             "items": [
-                "tree"
+                "tree",
+                "crozier"
             ]
         }
     },
@@ -34927,7 +34982,9 @@
                 "eagle",
                 "bird"
             ],
-            "items": []
+            "items": [
+                "cross"
+            ]
         }
     },
     "herb-korsz": {
@@ -35059,7 +35116,9 @@
             "animals": [
                 "ram"
             ],
-            "items": []
+            "items": [
+                "crozier"
+            ]
         }
     },
     "herb-lubawy": {
@@ -35107,6 +35166,7 @@
             "items": [
                 "tree",
                 "cross",
+                "crozier",
                 "saint"
             ]
         }
@@ -35562,6 +35622,7 @@
             "animals": [],
             "items": [
                 "key",
+                "cross",
                 "saint"
             ]
         }
@@ -35606,6 +35667,7 @@
                 "dragon"
             ],
             "items": [
+                "cross",
                 "saint"
             ]
         }
@@ -35833,7 +35895,8 @@
             "animals": [],
             "items": [
                 "key",
-                "sword"
+                "sword",
+                "cross"
             ]
         }
     },
@@ -35918,7 +35981,9 @@
             "animals": [
                 "bear"
             ],
-            "items": []
+            "items": [
+                "crozier"
+            ]
         }
     },
     "herb-rucianegonidy": {
@@ -36842,6 +36907,7 @@
                 "dragon"
             ],
             "items": [
+                "cross",
                 "saint"
             ]
         }
@@ -38109,7 +38175,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "cross"
+                "cross",
+                "crozier"
             ]
         }
     },
@@ -38559,6 +38626,7 @@
             ],
             "items": [
                 "sword",
+                "cross",
                 "angel",
                 "saint"
             ]
@@ -41469,6 +41537,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "cross",
                 "saint"
             ]
         }
@@ -42715,6 +42784,7 @@
             "animals": [],
             "items": [
                 "walls",
+                "crozier",
                 "saint"
             ]
         }
@@ -42761,7 +42831,9 @@
         "shortTitle": "Herb Karlina",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crozier"
+            ]
         }
     },
     "herb-ko_lobrzegu": {
@@ -42810,7 +42882,8 @@
                 "bird"
             ],
             "items": [
-                "walls"
+                "walls",
+                "crozier"
             ]
         }
     },
