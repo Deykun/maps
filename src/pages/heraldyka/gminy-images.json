@@ -6267,6 +6267,7 @@
             "animals": [],
             "items": [
                 "sword",
+                "arm",
                 "earOfGrain"
             ]
         }
@@ -6607,8 +6608,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "crozier",
-                "saint"
+                "crozier"
             ]
         }
     },
@@ -6653,8 +6653,7 @@
             ],
             "items": [
                 "walls",
-                "shell",
-                "saint"
+                "shell"
             ]
         }
     },
@@ -7200,7 +7199,6 @@
         "markers": {
             "animals": [],
             "items": [
-                "sword",
                 "cross"
             ]
         }
@@ -7767,10 +7765,11 @@
         "imageSrcSet": "images/heraldyka/web-gminy/herb-gminy-dubienka-x1.webp 100w,images/heraldyka/web-gminy/herb-gminy-dubienka-x2.webp 200w,images/heraldyka/web-gminy/herb-gminy-dubienka-x3.webp 300w,images/heraldyka/web-gminy/herb-gminy-dubienka-x4.webp 400w",
         "shortTitle": "Herb Dubienka",
         "markers": {
-            "animals": [],
+            "animals": [
+                "snake"
+            ],
             "items": [
-                "tree",
-                "saint"
+                "tree"
             ]
         }
     },
@@ -8300,6 +8299,7 @@
             ],
             "items": [
                 "sword",
+                "arm",
                 "crown"
             ]
         }
@@ -9771,8 +9771,7 @@
             "items": [
                 "lily",
                 "flower",
-                "cross",
-                "saint"
+                "cross"
             ]
         }
     },
@@ -10259,7 +10258,9 @@
             "animals": [
                 "bear"
             ],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "herb-gminy-nielisz": {
@@ -13920,7 +13921,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "earOfGrain"
+                "earOfGrain",
+                "tree"
             ]
         }
     },
@@ -14275,8 +14277,7 @@
                 "bird"
             ],
             "items": [
-                "crown",
-                "saint"
+                "crown"
             ]
         }
     },
@@ -14544,6 +14545,7 @@
             ],
             "items": [
                 "sword",
+                "tree",
                 "crown"
             ]
         }
@@ -14841,6 +14843,7 @@
             "animals": [],
             "items": [
                 "sword",
+                "tree",
                 "walls"
             ]
         }
@@ -17374,8 +17377,7 @@
             ],
             "items": [
                 "lily",
-                "flower",
-                "saint"
+                "flower"
             ]
         }
     },
@@ -18109,8 +18111,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "crown",
-                "saint"
+                "crown"
             ]
         }
     },
@@ -18638,7 +18639,6 @@
                 "snake"
             ],
             "items": [
-                "earOfGrain",
                 "lily",
                 "flower"
             ]
@@ -18684,8 +18684,7 @@
             "items": [
                 "lily",
                 "flower",
-                "crown",
-                "saint"
+                "crown"
             ]
         }
     },
@@ -20264,6 +20263,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "arm",
                 "axe",
                 "tree"
             ]
@@ -20648,7 +20648,8 @@
                 "griffin"
             ],
             "items": [
-                "sword"
+                "sword",
+                "arm"
             ]
         }
     },
@@ -21679,6 +21680,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "hand",
                 "cross"
             ]
         }
@@ -21853,6 +21855,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "tree",
                 "walls",
                 "saint"
             ]
@@ -23608,8 +23611,7 @@
             "animals": [],
             "items": [
                 "lily",
-                "flower",
-                "saint"
+                "flower"
             ]
         }
     },
@@ -24258,6 +24260,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "heart",
                 "cross"
             ]
         }
@@ -24884,8 +24887,7 @@
             "animals": [],
             "items": [
                 "walls",
-                "cross",
-                "saint"
+                "cross"
             ]
         }
     },
@@ -25134,9 +25136,7 @@
         "shortTitle": "Herb Bodzanowa",
         "markers": {
             "animals": [],
-            "items": [
-                "saint"
-            ]
+            "items": []
         }
     },
     "herb-gminy-borkowice": {
@@ -31493,8 +31493,7 @@
             "animals": [],
             "items": [
                 "lily",
-                "flower",
-                "saint"
+                "flower"
             ]
         }
     },
@@ -32867,8 +32866,7 @@
                 "bird"
             ],
             "items": [
-                "cross",
-                "saint"
+                "cross"
             ]
         }
     },
@@ -33225,8 +33223,7 @@
             "items": [
                 "walls",
                 "cross",
-                "crozier",
-                "saint"
+                "crozier"
             ]
         }
     },
@@ -35019,8 +35016,7 @@
             "animals": [],
             "items": [
                 "tree",
-                "crown",
-                "saint"
+                "crown"
             ]
         }
     },
@@ -36438,7 +36434,9 @@
         "imageSrcSet": "images/heraldyka/web-gminy/herb-gminy-krasne-wojew_odztwo-podkarpackie-x1.webp 100w,images/heraldyka/web-gminy/herb-gminy-krasne-wojew_odztwo-podkarpackie-x2.webp 200w,images/heraldyka/web-gminy/herb-gminy-krasne-wojew_odztwo-podkarpackie-x3.webp 300w,images/heraldyka/web-gminy/herb-gminy-krasne-wojew_odztwo-podkarpackie-x4.webp 400w",
         "shortTitle": "Herb Krasne ",
         "markers": {
-            "animals": [],
+            "animals": [
+                "bird"
+            ],
             "items": [
                 "sword",
                 "flower"
@@ -36944,7 +36942,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "sword"
+                "sword",
+                "arm"
             ]
         }
     },
@@ -38614,7 +38613,8 @@
                 "bird"
             ],
             "items": [
-                "sword"
+                "sword",
+                "arm"
             ]
         }
     },
@@ -38876,7 +38876,8 @@
                 "fish"
             ],
             "items": [
-                "arrow"
+                "arrow",
+                "arm"
             ]
         }
     },
@@ -39279,6 +39280,7 @@
             "animals": [],
             "items": [
                 "sword",
+                "arm",
                 "boat"
             ]
         }
@@ -39589,8 +39591,7 @@
                 "bird"
             ],
             "items": [
-                "crown",
-                "saint"
+                "crown"
             ]
         }
     },
@@ -44141,7 +44142,9 @@
         "imageSrcSet": "images/heraldyka/web-gminy/herb-gminy-tuchomie-x1.webp 100w,images/heraldyka/web-gminy/herb-gminy-tuchomie-x2.webp 200w,images/heraldyka/web-gminy/herb-gminy-tuchomie-x3.webp 300w,images/heraldyka/web-gminy/herb-gminy-tuchomie-x4.webp 400w",
         "shortTitle": "Herb Tuchomie",
         "markers": {
-            "animals": [],
+            "animals": [
+                "griffin"
+            ],
             "items": [
                 "sword"
             ]
@@ -45321,7 +45324,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "arrow"
+                "arrow",
+                "tree"
             ]
         }
     },
@@ -46032,7 +46036,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "arrow"
+                "arrow",
+                "heart"
             ]
         }
     },
@@ -47211,6 +47216,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "arm",
                 "axe"
             ]
         }
@@ -52590,9 +52596,7 @@
             "animals": [
                 "fish"
             ],
-            "items": [
-                "saint"
-            ]
+            "items": []
         }
     },
     "herb-gminy-czajk_ow": {
@@ -54266,8 +54270,7 @@
             "animals": [],
             "items": [
                 "lily",
-                "flower",
-                "saint"
+                "flower"
             ]
         }
     },
@@ -54308,7 +54311,9 @@
         "shortTitle": "Herb Lipka",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "herb-gminy-lipno-powiat-leszczy_nski": {
@@ -56156,8 +56161,7 @@
             "items": [
                 "lily",
                 "flower",
-                "crown",
-                "saint"
+                "crown"
             ]
         }
     },
@@ -56666,6 +56670,7 @@
                 "lion"
             ],
             "items": [
+                "heart",
                 "flower"
             ]
         }
@@ -56934,7 +56939,6 @@
                 "fox"
             ],
             "items": [
-                "earOfGrain",
                 "crozier"
             ]
         }
@@ -57816,6 +57820,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "heart",
                 "cross"
             ]
         }

@@ -220,7 +220,7 @@ const Heraldyka = () => {
               </p>
             </div>
           </div>
-          <div className="max-w-screen-xl mx-auto border-x p-4 pt-10 bg-white">
+          <div className="max-w-screen-xl mx-auto border-x p-4 pt-10 pb-10 bg-white">
             <div className="flex items-center mb-3">
               <h3 className="text-[24px] mb-3">{t('heraldry.titleFilters')}</h3>
               <span className="ml-auto">
@@ -306,6 +306,9 @@ const Heraldyka = () => {
               </button>
             </div>}
           </div>
+          <p className="max-w-screen-xl mx-auto border-x border p-4 mb-10 text-[12px] text-[#4b4b4b] text-right">
+            {t('heraldry.list.footer')} <a href="https://github.com/Deykun/maps/issues" target="_blank" className="text-black font-[600]">github.com/Deykun/maps/issues</a>
+          </p>
         </>
     );
 };
