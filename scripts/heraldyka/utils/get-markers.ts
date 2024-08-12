@@ -534,6 +534,14 @@ export const getMarkers = ({
       }
     }
 
+    if ([' serce',].some((item) => text.includes(item))) {
+      if (![
+        'empty',
+      ].includes(title)) {
+        items.push('heart');
+      }
+    }
+
     // You can use it to find potential arms
     // if ([' dłoń', ' ramię', ' rękę', 'ręka'].some((item) => text.includes(item))) {
     if ([
