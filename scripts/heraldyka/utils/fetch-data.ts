@@ -36,7 +36,7 @@ export const fetchData = async ({
       const timeLeftMinutes = Math.floor(timeLeftSeconds / 60);
       const timeLeftSecondsToShow = timeLeftSeconds - (timeLeftMinutes * 60);
 
-      const timeStatus = timeDiffrenceInSeconds === 0 ? '' : `- ${timeDiffrenceInSeconds}s passed and ${timeLeftMinutes}m ${timeLeftSecondsToShow}s to finish.`;
+      const timeStatus = timeDiffrenceInSeconds === 0 ? '' : `- ${timeDiffrenceInSeconds}s passed and ${chalk.blue(timeLeftMinutes)}m ${chalk.blue(timeLeftSecondsToShow)}s to finish.`;
 
       console.log(`Progress ${chalk.yellow((i / total * 100).toFixed(1))}%. ${i} out of ${total}. - ${division.title} ${timeStatus}`);
     }
@@ -54,7 +54,7 @@ export const fetchData = async ({
       let locationPage: string | undefined = locationTitleByHerbTitle[division.title];
 
       if (!locationPage) {
-        if (path.includes('miasta')) {
+        if (path.includes('miasta') || path.includes('powiat')) {
           locationPage = categories.find((category) => !['przypisami', 'herby', 'artykuły', 'herbach', 'błędne dane', 'szablon', 'brak numeru'].some((subcat) => category.toLowerCase().includes(subcat)));
         } else {
           locationPage = categories.find((category) => category.includes('(gmina') || category.includes('(gmina wiejska'))

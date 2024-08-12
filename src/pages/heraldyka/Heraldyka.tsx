@@ -15,11 +15,17 @@ import { getPostionForPlace } from './utils/getPostionForPlace';
 
 import gminyJSON from './gminy-images.json'
 import miastaJSON from './miasta-images.json'
+import powiatyJSON from './powiaty-images.json'
 
 const gminy = Object.values(gminyJSON);
 const miasta = Object.values(miastaJSON);
+const powiaty = Object.values(powiatyJSON);
 
-const allUnits: AdministrativeUnit[] = Object.values([...gminy, ...miasta].filter((unit: AdministrativeUnit) => {
+const allUnits: AdministrativeUnit[] = Object.values([
+  // ...gminy,
+  // ...miasta,
+  ...powiaty,
+].filter((unit: AdministrativeUnit) => {
   if ([
     'Herb Podgórza',
     'Herb gminy Janów (powiat częstochowski)',
