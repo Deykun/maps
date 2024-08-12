@@ -6607,8 +6607,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "crozier",
-                "saint"
+                "crozier"
             ]
         }
     },
@@ -6653,8 +6652,7 @@
             ],
             "items": [
                 "walls",
-                "shell",
-                "saint"
+                "shell"
             ]
         }
     },
@@ -7767,10 +7765,11 @@
         "imageSrcSet": "images/heraldyka/web-gminy/herb-gminy-dubienka-x1.webp 100w,images/heraldyka/web-gminy/herb-gminy-dubienka-x2.webp 200w,images/heraldyka/web-gminy/herb-gminy-dubienka-x3.webp 300w,images/heraldyka/web-gminy/herb-gminy-dubienka-x4.webp 400w",
         "shortTitle": "Herb Dubienka",
         "markers": {
-            "animals": [],
+            "animals": [
+                "snake"
+            ],
             "items": [
-                "tree",
-                "saint"
+                "tree"
             ]
         }
     },
@@ -9771,8 +9770,7 @@
             "items": [
                 "lily",
                 "flower",
-                "cross",
-                "saint"
+                "cross"
             ]
         }
     },
@@ -14275,8 +14273,7 @@
                 "bird"
             ],
             "items": [
-                "crown",
-                "saint"
+                "crown"
             ]
         }
     },
@@ -17374,8 +17371,7 @@
             ],
             "items": [
                 "lily",
-                "flower",
-                "saint"
+                "flower"
             ]
         }
     },
@@ -18109,8 +18105,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "crown",
-                "saint"
+                "crown"
             ]
         }
     },
@@ -18638,7 +18633,6 @@
                 "snake"
             ],
             "items": [
-                "earOfGrain",
                 "lily",
                 "flower"
             ]
@@ -18684,8 +18678,7 @@
             "items": [
                 "lily",
                 "flower",
-                "crown",
-                "saint"
+                "crown"
             ]
         }
     },
@@ -23608,8 +23601,7 @@
             "animals": [],
             "items": [
                 "lily",
-                "flower",
-                "saint"
+                "flower"
             ]
         }
     },
@@ -24884,8 +24876,7 @@
             "animals": [],
             "items": [
                 "walls",
-                "cross",
-                "saint"
+                "cross"
             ]
         }
     },
@@ -25134,9 +25125,7 @@
         "shortTitle": "Herb Bodzanowa",
         "markers": {
             "animals": [],
-            "items": [
-                "saint"
-            ]
+            "items": []
         }
     },
     "herb-gminy-borkowice": {
@@ -31493,8 +31482,7 @@
             "animals": [],
             "items": [
                 "lily",
-                "flower",
-                "saint"
+                "flower"
             ]
         }
     },
@@ -32867,8 +32855,7 @@
                 "bird"
             ],
             "items": [
-                "cross",
-                "saint"
+                "cross"
             ]
         }
     },
@@ -33225,8 +33212,7 @@
             "items": [
                 "walls",
                 "cross",
-                "crozier",
-                "saint"
+                "crozier"
             ]
         }
     },
@@ -35019,8 +35005,7 @@
             "animals": [],
             "items": [
                 "tree",
-                "crown",
-                "saint"
+                "crown"
             ]
         }
     },
@@ -39589,8 +39574,7 @@
                 "bird"
             ],
             "items": [
-                "crown",
-                "saint"
+                "crown"
             ]
         }
     },
@@ -52590,9 +52574,7 @@
             "animals": [
                 "fish"
             ],
-            "items": [
-                "saint"
-            ]
+            "items": []
         }
     },
     "herb-gminy-czajk_ow": {
@@ -54266,8 +54248,7 @@
             "animals": [],
             "items": [
                 "lily",
-                "flower",
-                "saint"
+                "flower"
             ]
         }
     },
@@ -56156,8 +56137,7 @@
             "items": [
                 "lily",
                 "flower",
-                "crown",
-                "saint"
+                "crown"
             ]
         }
     },
@@ -56934,7 +56914,6 @@
                 "fox"
             ],
             "items": [
-                "earOfGrain",
                 "crozier"
             ]
         }

@@ -255,7 +255,7 @@ export const getMarkers = ({
         }
       }
 
-      if ([' wąż ', ' węże.'].some((animal) => text.includes(animal))) {
+      if ([' wąż ', ' węże.', ' węża,'].some((animal) => text.includes(animal))) {
           animals.push('snake');
       }
 
@@ -331,6 +331,7 @@ export const getMarkers = ({
         if (![
           'Herb Rudnika nad Sanem',
           'Herb Przysuchy',
+          'Herb Grudziądza',
         ].includes(title)) {
           animals.push('bullBison');
         }
@@ -367,7 +368,8 @@ export const getMarkers = ({
 
       if (['pszczoł'].some((animal) => text.includes(animal))) {
         if (![
-          'Herb Zduńskiej Woli'
+          'Herb Zduńskiej Woli',
+          'Herb Ostrowi Mazowieckiej',
         ].includes(title)) {
           animals.push('bee');
         }
@@ -542,6 +544,11 @@ export const getMarkers = ({
         'Herb Czechowic-Dziedzic',
         'Herb gminy Dolice',
         'Herb Łochowa',
+        'Herb gminy Sędziejowice',
+        'Herb gminy Bielice',
+        'Herb Pieszyc',
+        'Herb Świątnik Górnych',
+        'Herb Skarżyska-Kamiennej',
       ].includes(title)) {
         items.push('earOfGrain');
       }
@@ -656,6 +663,7 @@ export const getMarkers = ({
     const lilyFilter = [
       'Herb Birczy',
       'Herb Starogardu Gdańskiego',
+      'Herb Brzostku',
     ];
 
     if (lily.some((item) => text.includes(item))) {
@@ -690,7 +698,6 @@ export const getMarkers = ({
         'Herb Drzewicy',
         'Herb Kielc',
         'Herb Bojanowa',
-        'Herb Krotoszyna',
         'Herb Dobrej (powiat łobeski)',
         'Herb Węgorzyna',
         'Herb Rogoźna',
@@ -948,6 +955,7 @@ export const getMarkers = ({
         'Herb Iłży',
         'Herb Nysy',
         'Herb Koszalina',
+        'Herb Tuchowa',
       ].includes(title)) {
         items.push('crozier');
       }
@@ -984,6 +992,7 @@ export const getMarkers = ({
         'Herb Koźmina Wielkopolskiego',
         'Herb Recza',
         'Herb Kobyłki',
+        'Herb Pieszyc',
       ].includes(title)) {
         items.push('wheel');
       }
@@ -1197,6 +1206,38 @@ export const getMarkers = ({
         'Herb gminy Sławno (województwo łódzkie)',
         'Herb gminy Herby',
         'Herb Ornety',
+        'Herb gminy Łanięta',
+        'Herb Wschowy',
+        'Herb Imielina',
+        'Herb Wodzisławia Śląskiego',
+        'Herb gminy Siepraw',
+        'Herb gminy Chrzypsko Wielkie',
+        'Herb gminy Szydłowo (województwo wielkopolskie)',
+        'Herb Ciechanowca',
+        'Herb Grybowa',
+        'Herb Brzostku',
+        'Herb gminy Chłopice',
+        'Herb gminy Dubienka',
+        'Herb gminy Paradyż',
+        'Herb gminy Baboszewo',
+        'Herb Bodzanowa',
+        'Herb gminy Wąpielsk',
+        'Herb gminy Warlubie',
+        'Herb Gryfic',
+        'Herb gminy Przytoczna',
+        'Herb gminy Branice',
+        'Herb Oleśnicy',
+        'Herb gminy Lądek',
+        'Herb gminy Zabrodzie',
+        'Herb Tuchowa',
+        'Herb Olkusza',
+        'Herb Krotoszyna',
+        'Herb gminy Nowe Piekuty',
+        'Herb gminy Sieradz',
+        'Herb Kutna',
+        'Herb gminy Łukowa',
+        'Herb gminy Stara Błotnica',
+        'Herb Dobrodzienia',
       ].includes(title)) {
         items.push('saint');
       }
