@@ -8699,9 +8699,7 @@
             "animals": [
                 "leopard"
             ],
-            "items": [
-                "tree"
-            ]
+            "items": []
         }
     },
     "herb-gminy-jeziorzany": {
@@ -15060,7 +15058,6 @@
             "items": [
                 "key",
                 "sword",
-                "tree",
                 "lily",
                 "flower"
             ]
@@ -21765,7 +21762,6 @@
         "markers": {
             "animals": [],
             "items": [
-                "tree",
                 "cross"
             ]
         }
@@ -35483,7 +35479,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "walls"
+                "walls",
+                "cross"
             ]
         }
     },
@@ -41400,7 +41397,9 @@
         "shortTitle": "Herb Dębnica Kaszubska",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "flower"
+            ]
         }
     },
     "herb-gminy-dziemiany": {
@@ -56984,7 +56983,9 @@
         "imageSrcSet": "images/heraldyka/web-gminy/herb-gminy-bierzwnik-x1.webp 100w,images/heraldyka/web-gminy/herb-gminy-bierzwnik-x2.webp 200w,images/heraldyka/web-gminy/herb-gminy-bierzwnik-x3.webp 300w,images/heraldyka/web-gminy/herb-gminy-bierzwnik-x4.webp 400w",
         "shortTitle": "Herb Bierzwnik",
         "markers": {
-            "animals": [],
+            "animals": [
+                "fish"
+            ],
             "items": [
                 "tree"
             ]
