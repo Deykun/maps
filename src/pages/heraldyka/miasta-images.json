@@ -1237,9 +1237,6 @@
         "shortTitle": "Herb Kowar",
         "markers": {
             "animals": [
-                "eagle",
-                "bird",
-                "deer",
                 "horse"
             ],
             "items": [
@@ -19851,7 +19848,6 @@
         "shortTitle": "Herb Siedlec",
         "markers": {
             "animals": [
-                "bird",
                 "horse"
             ],
             "items": [
@@ -20398,8 +20394,6 @@
         "shortTitle": "Herb Warszawy",
         "markers": {
             "animals": [
-                "bird",
-                "fish",
                 "mermaid"
             ],
             "items": [
@@ -28843,9 +28837,9 @@
         "shortTitle": "Herb Częstochowy",
         "markers": {
             "animals": [
-                "lion",
                 "eagle",
-                "bird"
+                "bird",
+                "lion"
             ],
             "items": [
                 "walls"
@@ -33621,7 +33615,8 @@
                 "lion"
             ],
             "items": [
-                "walls"
+                "walls",
+                "boat"
             ]
         }
     },
@@ -42633,10 +42628,10 @@
         "shortTitle": "Herb Koszalina",
         "markers": {
             "animals": [
-                "griffin",
-                "horse",
                 "eagle",
-                "bird"
+                "bird",
+                "griffin",
+                "horse"
             ],
             "items": []
         }
@@ -43843,7 +43838,8 @@
         "shortTitle": "Herb Szczecina",
         "markers": {
             "animals": [
-                "griffin"
+                "griffin",
+                "lion"
             ],
             "items": [
                 "crown"
