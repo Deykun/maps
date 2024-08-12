@@ -2548,9 +2548,7 @@
                 "eagle",
                 "bird"
             ],
-            "items": [
-                "sword"
-            ]
+            "items": []
         }
     },
     "herb-przemkowa": {
@@ -3309,6 +3307,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "hand",
                 "walls"
             ]
         }
@@ -4290,7 +4289,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "sword"
+                "hand"
             ]
         }
     },
@@ -5502,7 +5501,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "sword"
+                "hand"
             ]
         }
     },
@@ -10974,9 +10973,7 @@
         "shortTitle": "Herb Aleksandrowa Łódzkiego",
         "markers": {
             "animals": [],
-            "items": [
-                "sword"
-            ]
+            "items": []
         }
     },
     "herb-be_lchatowa": {
@@ -14611,6 +14608,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "hand",
                 "cross"
             ]
         }
@@ -23437,6 +23435,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "hand",
                 "cross"
             ]
         }
@@ -30869,6 +30868,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "arm",
                 "hammer",
                 "walls"
             ]
@@ -33137,6 +33137,7 @@
                 "bird"
             ],
             "items": [
+                "hand",
                 "cross"
             ]
         }
@@ -40979,6 +40980,7 @@
             "animals": [],
             "items": [
                 "sword",
+                "arm",
                 "axe"
             ]
         }

@@ -210,7 +210,7 @@ export const getMarkers = ({
           animals.push('rooster');
       }
 
-      if (animals.length > 0 || [...orzel, 'ptak', 'ptakiem', ' czyżyka', 'cietrzewia', 'ślepowron', ' szpak ', ' pióro', 'kormorana', ' czajkę ', 'kaczory', ' mewę', ' wrony,', 'krogulcem', ' puszczyk '].some((animal) => text.includes(animal))) {
+      if (animals.length > 0 || [...orzel, 'ptak', 'ptakiem', ' czyżyka', 'cietrzewia', 'ślepowron', ' szpak ', ' pióro', 'kormorana', ' czajkę ', 'kaczory', ' mewę', ' wrony,', 'krogulcem', ' puszczyk ', ' kraskę'].some((animal) => text.includes(animal))) {
         if (![
           ...orzelFilter,
           'Herb Zabłudowa',
@@ -267,7 +267,7 @@ export const getMarkers = ({
           animals.push('bat');
       }
 
-      if ([' gryfa', ' gryf', 'rybogryfa', 'półgryf'].some((animal) => text.includes(animal))) {
+      if ([' gryfa', ' gryf', 'rybogryfa', 'rybogryf', 'półgryf'].some((animal) => text.includes(animal))) {
         if (![
           'Herb Mielca',
           'Herb Białegostoku',
@@ -513,6 +513,11 @@ export const getMarkers = ({
         'Herb Mogilna',
         'Herb Łomianek',
         'Herb Kowalewa Pomorskiego',
+        'Herb Brodnicy',
+        'Herb Prusic',
+        'Herb Aleksandrowa Łódzkiego',
+        'Herb gminy Batorz',
+        'Herb Łabiszyna',
       ].includes(title)) {
         items.push('sword');
       }
@@ -526,6 +531,45 @@ export const getMarkers = ({
         'Herb Izbicy',
       ].includes(title)) {
         items.push('arrow');
+      }
+    }
+
+    // You can use it to find potential arms
+    // if ([' dłoń', ' ramię', ' rękę', 'ręka'].some((item) => text.includes(item))) {
+    if ([
+      'Herb gminy Brodnica (powiat brodnicki)',
+      'Herb Książa Wielkiego',
+      'Herb gminy Spytkowice (powiat nowotarski)',
+      'Herb Świerzawy',
+      'Herb Brodnicy',
+      'Herb Łabiszyna',
+      'Herb Kolbuszowej',
+      'Herb Osieka',
+    ].some((item) => text.includes(item.toLowerCase()))) {
+      if (![
+        'empty',
+      ].includes(title)) {
+        items.push('hand');
+      }
+    }
+
+    if ([
+      'Herb gminy Stolno',
+      'Herb gminy Hanna',
+      'Herb gminy Bystra-Sidzina',
+      'Herb gminy Gdów',
+      'Herb gminy Niebylec',
+      'Herb gminy Brańsk',
+      'Herb gminy Giby',
+      'Herb gminy Krasnopol',
+      'Herb gminy Ujsoły',
+      'Herb Wągrowca',
+      'Herb Sosnowca',
+    ].some((item) => text.includes(item.toLowerCase()))) {
+      if (![
+        'empty',
+      ].includes(title)) {
+        items.push('arm');
       }
     }
 
@@ -599,7 +643,7 @@ export const getMarkers = ({
       }
     }
 
-    if (['drzewo', ' drzew', 'drzewa', ' kłoda', 'dąb', ' dęby ', ' dębowe', ' dębu', 'lipą ', ' bukiem', ' jodła', 'sosną', ' sosny ', ' sosnę', ' jabłoń', ' jodły', ' świerk', ' ostrzew', 'gałąź', ' gałęzi ', 'lasu.', ' pniaczek', ' pień ', ' buk ', ' brzozę', ' brzozową '].some((item) => text.includes(item))) {
+    if (['drzewo', ' drzew', 'drzewa', ' kłoda', 'dąb', ' dęby ', ' dębowe', ' dębu', 'lipą ', ' bukiem', ' jodła', 'sosną', ' sosny ', ' sosnę', ' jabłoń', ' jodły', ' świerk', ' ostrzew', 'gałąź', ' gałęzi ', 'lasu.', ' pniaczek', ' pień ', ' buk ', ' brzozę', ' brzozową ', ' lipy'].some((item) => text.includes(item))) {
       if (![
         'Herb Węgorzyna',
         'Herb Bobowej',
@@ -685,7 +729,7 @@ export const getMarkers = ({
       }
     }
 
-    if (['kwiat', ...rose, ...lily].some((item) => text.includes(item))) {
+    if (['kwiat', ' maku.', ...rose, ...lily].some((item) => text.includes(item))) {
       if (![
         ...lilyFilter,
         ...roseFilter,
@@ -710,7 +754,7 @@ export const getMarkers = ({
       }
     }
 
-    if (['wieża', ' wieże', ' wieżę', ' wieżą', ' wieży ', ' muru ', ' mur ', ' murów ', 'baszt', ' bramę ', 'bramę.', ' bramą.', 'bramą,', ' bramną ', ' bramie ', 'corona muralis', ' kolumny ', ' kolumna ', 'gminy gołuchów'].some((item) => text.includes(item))) {
+    if (['wieża', ' wieże', ' wieżę', ' wieżą', ' wieży ', ' muru ', ' mur ', ' murów ', ' murze ', 'baszt', ' bramę ', 'bramę.', ' bramą.', 'bramą,', ' bramną ', ' bramie ', 'corona muralis', ' kolumny ', ' kolumna ', 'gminy gołuchów'].some((item) => text.includes(item))) {
       if (![
         'Herb gminy Gaworzyce',
         'Herb Oleśnicy',
