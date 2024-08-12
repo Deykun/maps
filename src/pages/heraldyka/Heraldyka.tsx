@@ -62,7 +62,7 @@ const Heraldyka = () => {
     const { t, i18n } = useTranslation();
 
     useEffect(() => {
-      // Default for Polish map
+      // Default for the Polish map
       i18n.changeLanguage('pl');
     }, []);
 
@@ -205,7 +205,7 @@ const Heraldyka = () => {
               "-mt-[50px]": mapFitment === 'zoom',
             })}
           >
-            <div className="max-w-screen-xl h-[50px] mx-auto p-4 flex flex-wrap justify-between bg-white border-t border-x">
+            <div className="max-w-screen-xl md:h-[50px] mx-auto py-2 px-4 md:p-4 flex flex-wrap justify-between bg-white border-t border-x">
               <p className="text-[12px] text-[#4b4b4b]">
                 {t('heraldry.mapFooterSource')} <strong className="text-black">wikipedia.org</strong>.
               </p>
@@ -260,7 +260,9 @@ const Heraldyka = () => {
                 ...animalFiltersList].map(({ value, total }) => 
                   <button
                     onClick={() => toggleAnimal(value)}
-                    className={animalFilters.includes(value) ? 'font-[800]' : ''}
+                    className={clsx("hover:font-[600]", { 
+                      'font-[800]': animalFilters.includes(value),
+                    })}
                   >
                     {t(`heraldry.animal.${value}`)} {total > 0 && <small className="text-[#4b4b4b] tracking-widest">({total})</small>}
                   </button>
@@ -273,7 +275,9 @@ const Heraldyka = () => {
                 {itemsFiltersList.map(({ value, total }) => 
                   <button
                     onClick={() => toggleItem(value)}
-                    className={itemFilters.includes(value) ? 'font-[800]' : ''}
+                    className={clsx("hover:font-[600]", { 
+                      'font-[800]': itemFilters.includes(value),
+                    })}
                   >
                     {t(`heraldry.item.${value}`)} <small className="text-[#4b4b4b] tracking-widest">({total})</small>
                   </button>
