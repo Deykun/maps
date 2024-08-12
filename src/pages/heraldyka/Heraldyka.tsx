@@ -62,7 +62,7 @@ const Heraldyka = () => {
     const { t, i18n } = useTranslation();
 
     useEffect(() => {
-      // Default for Polish map
+      // Default for the Polish map
       i18n.changeLanguage('pl');
     }, []);
 
