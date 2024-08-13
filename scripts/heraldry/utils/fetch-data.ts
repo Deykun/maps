@@ -40,7 +40,9 @@ export const fetchData = async ({
 
       const timeStatus = timeDiffrenceInSeconds === 0 ? '' : `- ${timeDiffrenceInSeconds}s passed and ${chalk.blue(timeLeftMinutes)}m ${chalk.blue(timeLeftSecondsToShow)}s to finish.`;
 
+      console.log(' ');
       console.log(`Progress ${chalk.yellow((i / total * 100).toFixed(1))}%. ${i} out of ${total}. - ${division.title} ${timeStatus}`);
+      console.log(' ');
     }
 
     try {
@@ -58,7 +60,7 @@ export const fetchData = async ({
       if (!locationPage) {
         if (path.includes('miasta') || path.includes('powiat')) {
           locationPage = categories.find((category) => !['przypisami', 'herby', 'artykuły', 'herbach', 'błędne dane', 'szablon', 'brak numeru'].some((subcat) => category.toLowerCase().includes(subcat)));
-        } else if (path.includes('vald')) {
+        } else if (path.includes('unit')) {
           locationPage = division.title.replace(' valla vapp', '').replace(' vapp', '');
         } else {
           locationPage = categories.find((category) => category.includes('(gmina') || category.includes('(gmina wiejska'))

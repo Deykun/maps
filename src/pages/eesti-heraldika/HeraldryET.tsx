@@ -3,14 +3,14 @@ import { AdministrativeUnit } from '../../topic/Heraldry/types';
 
 import { getFilter } from '../../topic/Heraldry/utils/getFilter';
 
-import valdJSON from './vald-map.json'
+import unitJSON from './unit-map.json'
 
 import Heraldry from '../../topic/Heraldry/Heraldry';
 
-const vald = Object.values(valdJSON);
+const units = Object.values(unitJSON);
 
 const allUnits: AdministrativeUnit[] = Object.values([
-  ...vald,
+  ...units,
 ].filter((unit: AdministrativeUnit) => {
   if ([
     'empty'

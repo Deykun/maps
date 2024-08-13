@@ -87,11 +87,11 @@ export const locationTitleByCoatOfArmsTitle = {
   // - pl
   // et
   'Harjumaa vapp': 'Harju maakond',
-  'Pirita linnaosa vapp': 'Pirita linnaosa',
+  'Pirita linnaosa vapp': 'Pirita', // 'Pirita linnaosa', misses cordinates
   'Maidla valla vapp': 'Maidla vald',
   'Saare valla vapp': 'Saare vald',
   'Järvamaa vapp': 'Järva maakond',
-  'Järva valla vapp': 'Järva vald',
+  'Järva valla vapp': 'Järva-Jaani', // 'Järva vald',  misses cordinates
   'Läänemaa vapp': 'Lääne maakond',
   'Ridala valla vapp': 'Ridala vald',
   'Rägavere valla vapp': 'Rägavere vald',
@@ -106,4 +106,22 @@ export const locationTitleByCoatOfArmsTitle = {
   'Abja valla vapp': 'Abja vald',
   'Võrumaa vapp': 'Võru maakond',
   'Setomaa valla vapp': 'Värska',
+  'Imavere valla vapp': 'Imavere vald',
+  'Kabala valla vapp': 'Türi', // Somone can suggest better
+  'Käru valla vapp': 'Käru vald',
+  'Lääne-Saare valla vapp': 'Kuressaare', // 'Lääne-Saare vald',
+  'Noarootsi valla vapp': 'Noarootsi vald',
+  'Piirissaare valla vapp': 'Piirissaare vald',
+  'Põdrala valla vapp': 'Põdrala vald',
+  'Põhja-Sakala valla vapp': 'Suure-Jaani', // 'Põhja-Sakala vald',
+  'Salme valla vapp': 'Salme vald',
+  'Tapa valla vapp (2005)': 'Tapa vald (2005)',
+  'Torgu valla vapp': 'Torgu vald',
+  'Vara valla vapp': 'Vara küla',
+  'Vigala valla vapp': 'Vigala vald',
+  'Võnnu valla vapp': 'Võnnu vald',
+  'Peipsiääre valla vapp': 'Alatskivi', // 'Peipsiääre vald',
+  'Õru valla vapp': 'Õru vald',
+  'Järvakandi valla vapp': 'Järvakandi',
+  'Lääne-Nigula valla vapp': 'Taebla', // 'Lääne-Nigula vald',
 } as const;

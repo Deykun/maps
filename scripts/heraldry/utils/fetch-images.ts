@@ -25,7 +25,7 @@ const getCompressedImageSrc = (imageUrl: string) => {
     .replace('/miasta/', '/web-miasta/')
     .replace('/gminy/', '/web-gminy/')
     .replace('/powiaty/', '/web-powiaty/')
-    .replace('/vald/', '/web-vald/');
+    .replace('/unit/', '/web-unit/');
 
   const srcSet = [
     { name: 'x2', width: '200w' },
@@ -166,7 +166,7 @@ export const fetchImages = async ({
               } = getMarkers({
                 text: unit?.description || '',
                 title: unit?.title || '',
-                lang: 'pl',
+                lang,
               })
               
               contentToSave[fileName] = {

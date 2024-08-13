@@ -10,9 +10,9 @@ And paste to generate the list for the region:
 ```
 document.querySelectorAll('.CategoryTreeToggle:not([aria-expanded="true"])')
 
-title = document.getElementById('firstHeading').innerText.replace('Kategoria:', '').replaceAll('[edytuj]', '');
-group = 'powiatyByWojewodztwo';
-key = title.split(' ').at(-1).replaceAll(' ', '_');
+title = document.getElementById('firstHeading').innerText.replace('Kategooria:', '');
+group = 'valdBySource';
+key = title
 
 mapped = {
   key,
@@ -25,3 +25,4 @@ mapped = {
 
 console.log(`urls.${group}['${key}'] = `, JSON.stringify(mapped));
 ```
+

@@ -39,7 +39,9 @@ const Heraldry = ({
     const [listPage, setListPage] = useState(0);
     const [listPhrase, setListPhrase] = useState('');
     const [filterOperator, setFilterOperator] = useState<'and' | 'or'>('and');
-    const [mapFitment, setMapFitment] = useState<'compact' | 'fullWidth' | 'zoom'>('compact');
+    // TODO: restore
+    // const [mapFitment, setMapFitment] = useState<'compact' | 'fullWidth' | 'zoom'>('compact');
+    const [mapFitment, setMapFitment] = useState<'compact' | 'fullWidth' | 'zoom'>('fullWidth');
     const [typeFilers, setTypeFilters] = useState<string[]>([]);
     const [colorFilters, setColorFilters] = useState<string[]>([]);
     const [animalFilters, setAnimalFilters] = useState<string[]>([]);
@@ -76,11 +78,11 @@ const Heraldry = ({
         return units;
       }
 
-      const listPhraseNormalized = removeDiacratics(listPhrase.toLowerCase(), 'pl', '');
+      const listPhraseNormalized = removeDiacratics(listPhrase.toLowerCase(), lang, '');
 
       return units.filter((unit) => {
         const text = `${unit.title} ${unit?.place?.name || ''}`.toLowerCase();
-        const indexText = removeDiacratics(text, 'pl', '');
+        const indexText = removeDiacratics(text, lang, '');
 
         return indexText.includes(listPhraseNormalized);
       })
@@ -244,7 +246,7 @@ const Heraldry = ({
                       'text-[#ca0505]': typeFilers.includes(value),
                     })}
                   >
-                    {t(`heraldry.unit.type.pl.${value}`)} <small className="text-[10px] text-[#4b4b4b] tracking-widest">({total})</small>
+                    {t(`heraldry.unit.type.${lang}.${value}`)} <small className="text-[10px] text-[#4b4b4b] tracking-widest">({total})</small>
                   </button>
                 )}
               </span>

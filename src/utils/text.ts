@@ -1,4 +1,4 @@
-export const removeDiacratics = (word: string, lang?: string, special = '_') => {
+export const removeDiacratics = (word: string, lang?: string, special = '') => {
     let textToReturn = word;
 
     // If lang not passed or specified
@@ -45,6 +45,17 @@ export const removeDiacratics = (word: string, lang?: string, special = '_') => 
             .replaceAll('ú', `${special}u`)
             .replaceAll('ü', `${special}ü`)
             .replaceAll('ñ', `${special}n`);
+    }
+
+    if (!lang || lang === 'et') {
+        textToReturn = textToReturn
+            .replaceAll('ä', `${special}a`)
+            .replaceAll('õ', `${special}o`)
+            .replaceAll('õ', `${special}o`)
+            .replaceAll('ö', `${special}o`)
+            .replaceAll('š', `${special}s`)
+            .replaceAll('ž', `${special}z`)
+            .replaceAll('ü', `${special}u`);
     }
 
     if (!lang || lang === 'fi') {

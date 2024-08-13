@@ -2,11 +2,11 @@ import fs from 'fs';
 import sharp from 'sharp';
 import chalk from 'chalk';
 
-const imagesVald = fs.readdirSync('./public/images/heraldry/et/vald').map(
-  (imageFile) => ({ imageSrc: `./public/images/heraldry/et/vald/${imageFile}`, imageFile, type: 'vald' }),
+const imagesUnit = fs.readdirSync('./public/images/heraldry/et/unit').map(
+  (imageFile) => ({ imageSrc: `./public/images/heraldry/et/unit/${imageFile}`, imageFile, type: 'unit' }),
 );
 
-const images = [...imagesVald];
+const images = [...imagesUnit];
 
 const start = (new Date()).getTime();
 const total = images.length;
