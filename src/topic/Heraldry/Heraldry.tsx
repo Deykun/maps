@@ -50,7 +50,7 @@ const Heraldry = ({
     useEffect(() => {
       // We set the language according to the country
       if (lang) {
-        // i18n.changeLanguage(lang);
+        i18n.changeLanguage(lang);
       }
     }, []);
 
