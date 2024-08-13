@@ -5753,24 +5753,24 @@
             "items": []
         }
     },
-    "oru-valla-vapp": {
-        "title": "Oru valla vapp",
-        "url": "https://et.wikipedia.org/wiki/Oru_valla_vapp",
+    "oru-valla-vapp-with-special-o": {
+        "title": "Õru valla vapp",
+        "url": "https://et.wikipedia.org/wiki/%C3%95ru_valla_vapp",
         "type": [
-            "unit"
+            "formerUnit"
         ],
-        "partOf": "Eesti valdade vapid",
+        "partOf": "Eesti endiste valdade vapid",
         "description": "",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/b/b8/EE_Oru.png",
-            "width": 188,
-            "height": 232
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/%C3%95ru_valla_vapp_SVG.svg/langet-320px-%C3%95ru_valla_vapp_SVG.svg.png",
+            "width": 320,
+            "height": 367
         },
         "place": {
-            "name": "Oru",
+            "name": "Õru vald",
             "coordinates": {
-                "lat": 59.00166667,
-                "lon": 23.72166667
+                "lat": 57.92583333,
+                "lon": 26.17888889
             }
         },
         "colors": {
@@ -5787,9 +5787,9 @@
                 }
             ]
         },
-        "imageUrl": "images/heraldry/et/unit/oru-valla-vapp.png",
-        "imageSrcSet": "images/heraldry/et/web-unit/oru-valla-vapp-x2.webp 200w,images/heraldry/et/web-unit/oru-valla-vapp-x3.webp 300w,images/heraldry/et/web-unit/oru-valla-vapp-x4.webp 400w",
-        "shortTitle": "Oru valla vapp",
+        "imageUrl": "images/heraldry/et/unit/oru-valla-vapp-with-special-o.png",
+        "imageSrcSet": "images/heraldry/et/web-unit/oru-valla-vapp-with-special-o-x2.webp 200w,images/heraldry/et/web-unit/oru-valla-vapp-with-special-o-x3.webp 300w,images/heraldry/et/web-unit/oru-valla-vapp-with-special-o-x4.webp 400w",
+        "shortTitle": "Õru valla vapp",
         "markers": {
             "animals": [],
             "items": [
@@ -7999,6 +7999,55 @@
             "items": [
                 "walls",
                 "cross"
+            ]
+        }
+    },
+    "oru-valla-vapp": {
+        "title": "Oru valla vapp",
+        "url": "https://et.wikipedia.org/wiki/Oru_valla_vapp",
+        "type": [
+            "unit"
+        ],
+        "partOf": "Eesti valdade vapid",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/b/b8/EE_Oru.png",
+            "width": 188,
+            "height": 232
+        },
+        "place": {
+            "name": "Oru",
+            "coordinates": {
+                "lat": 59.00166667,
+                "lon": 23.72166667
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#088f3c",
+                "name": "green",
+                "distance": 127.31064370271639
+            },
+            "palette": [
+                {
+                    "color": "#088f3c",
+                    "name": "green",
+                    "distance": 127.31064370271639
+                },
+                {
+                    "color": "#0493db",
+                    "name": "blue",
+                    "distance": 151.3968295572929
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/et/unit/oru-valla-vapp.png",
+        "imageSrcSet": "images/heraldry/et/web-unit/oru-valla-vapp-x2.webp 200w,images/heraldry/et/web-unit/oru-valla-vapp-x3.webp 300w,images/heraldry/et/web-unit/oru-valla-vapp-x4.webp 400w",
+        "shortTitle": "Oru valla vapp",
+        "markers": {
+            "animals": [],
+            "items": [
+                "earOfGrain"
             ]
         }
     },
@@ -10761,7 +10810,9 @@
         "markers": {
             "animals": [],
             "items": [
-                "tree"
+                "tree",
+                "crown",
+                "earOfGrain"
             ]
         }
     },

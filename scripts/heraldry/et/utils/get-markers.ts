@@ -384,7 +384,7 @@ export const getMarkers = ({
     }
   }
 
-  if ([' aadlikroon', ' kroon', 'Oru valla vapp'].some((item) => text.includes(item.toLowerCase()))) {
+  if ([' aadlikroon', ' kroon', 'Õru valla vapp'].some((item) => text.includes(item.toLowerCase()))) {
     if (![
       'Abja valla vapp',
       'Järva-Jaani valla vapp',
@@ -417,7 +417,7 @@ export const getMarkers = ({
   }
 
   
-  if ([' viljapea', 'Luunja valla vapp', 'Pärsti valla vapp'].some((item) => text.includes(item.toLowerCase()))) {
+  if ([' viljapea', 'Luunja valla vapp', 'Pärsti valla vapp', 'Õru valla vapp'].some((item) => text.includes(item.toLowerCase()))) {
     if (![
       'Põltsamaa vapp',
     ].includes(title)) {
