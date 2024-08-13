@@ -8,9 +8,9 @@ const Home = () => {
     <div className="max-w-screen-xl mx-auto p-4">
       <ul>
         <li>
-          <Link to="/maps/heraldyka" className="text-[30px]">1. {t('heraldry.mapTitle')}</Link></li>
+          <Link to="/maps/heraldyka" className="text-[30px]">1. {t('heraldry.pl.mapTitle')}</Link></li>
         <li>    
-          <Link to="/maps/eesti-heraldika" className="text-[30px]">2. Estonian map</Link>
+          <Link to="/maps/eesti-heraldika" className="text-[30px]">2. {t('heraldry.et.mapTitle')}</Link>
         </li>
       </ul>
     </div>

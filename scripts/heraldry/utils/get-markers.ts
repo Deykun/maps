@@ -10,17 +10,43 @@ export const getMarkers = ({
   title: string,
   lang: string,
 }) => {
-  const animals: string[] = [];
-  const items: string[] = [];
+  let animals: string[] = [];
+  let items: string[] = [];
 
   const text = rawText.toLowerCase() || '';
 
   if (lang === 'pl') {
-    return getMarkersPL({ text: rawText, title })
+    const response = getMarkersPL({ text: rawText, title });
+
+    animals = response.animals;
+    items = response.items;
   }
 
   if (lang === 'et') {
-    return getMarkersET({ text: rawText, title })
+    const response = getMarkersET({ text: rawText, title })
+
+    animals = response.animals;
+    items = response.items;
+  }
+
+  if (!animals.includes('bird') && animals.some((active) => ['stork', 'crane', 'raven', 'goose', 'gull', 'rooster', 'swan', 'owl', 'hawk', 'eagle'].includes(active))) {
+    animals.push('bird');
+  }
+
+  if (!animals.includes('insect') && animals.some((active) => ['bee', 'ant', 'dragonfly'].includes(active))) {
+    animals.push('insect');
+  }
+
+  if (!animals.includes('fish') && animals.some((active) => ['salmon'].includes(active))) {
+    animals.push('fish');
+  }
+
+  if (!items.includes('flower') && items.some((active) => ['lily', 'rose'].includes(active))) {
+    items.push('flower');
+  }
+
+  if (!items.includes('walls') && items.some((active) => ['lighthouse'].includes(active))) {
+    items.push('walls');
   }
 
   return {

@@ -61,7 +61,7 @@ export const getMarkers = ({
   
   
 
-  if ([' kala', ' lõhepea', 'Avinurme valla vapp'].some((item) => text.includes(item.toLowerCase()))) {
+  if ([' kala', 'Avinurme valla vapp'].some((item) => text.includes(item.toLowerCase()))) {
     if (![
       'Lohusuu valla vapp',
       'Salme valla vapp',
@@ -259,6 +259,35 @@ export const getMarkers = ({
     }
   }
 
+
+  if ([' liilia', ' linaõis'].some((item) => text.includes(item.toLowerCase()))) {
+    if (![
+      'empty',
+    ].includes(title)) {
+      items.push('lily');
+    }
+  }
+
+  if ([' roos'].some((item) => text.includes(item.toLowerCase()))) {
+    if (![
+      'Kohtla-Nõmme valla vapp',
+      'Kohtla-Nõmme vapp',
+      'Narva vapp',
+    ].includes(title)) {
+      items.push('rose');
+    }
+  }
+
+  if ([' õis', ' linaõit', ' nartsissiõit', ' rukkilill', ' rukkililleõis',
+  'Lääne-Nigula valla vapp', 'Veriora valla vapp',
+  'Jõgeva valla vapp', 'Ambla valla vapp', 'Saarepeedi valla vapp', 'Räpina vapp'].some((item) => text.includes(item.toLowerCase()))) {
+    if (![
+      'empty',
+    ].includes(title)) {
+      items.push('flower');
+    }
+  }
+
   if ([' laev', ' paat', ' purjekas', ' muinaslaev', ' kaljas'].some((item) => text.includes(item.toLowerCase()))) {
     if (![
       'Laeva valla vapp',
@@ -271,7 +300,51 @@ export const getMarkers = ({
     }
   }
 
-  if ([' puu', ' mänd', ' tamme'].some((item) => text.includes(item.toLowerCase()))) {
+  if ([' võti'].some((item) => text.includes(item.toLowerCase()))) {
+    if (![
+      'empty',
+    ].includes(title)) {
+      items.push('key');
+    }
+  }
+
+  if ([' kelluke', ' kirikukella', ' kellatorn', 'Võnnu valla vapp'].some((item) => text.includes(item.toLowerCase()))) {
+    if (![
+      'empty',
+    ].includes(title)) {
+      items.push('bell');
+    }
+  }
+
+  if ([' ratas', ' rool', ' vankriratas', 'Kehra vapp'].some((item) => text.includes(item.toLowerCase()))) {
+    if (![
+      'empty',
+    ].includes(title)) {
+      items.push('wheel');
+    }
+  }
+
+
+  if ([' loss', ' linnusetorn', ' torn', ' müüritud', 'Kõo valla vapp',
+  'Tõlliste valla vapp', 'Vasalemma valla vapp', 'Häädemeeste valla vapp', 'Sindi vapp',
+  'Märjamaa alevi vapp', 'Peipsiääre valla vapp'].some((item) => text.includes(item.toLowerCase()))) {
+    if (![
+      'Loodna valla vapp',
+      'Kasepää valla vapp',
+      'Kanepi valla vapp',
+      'Rapla valla vapp',
+    ].includes(title)) {
+      items.push('walls');
+    }
+  }
+
+  if ([
+    ' puu', ' mänd', ' tamme', ' vapitüvi', ' kadakas', ' kuusk ',
+    ' kuuske', ' kuusk,', ' männikäbi', ' metspähklit',
+    'Palupera valla vapp', 'Kohtla-Nõmme valla vapp', 'Rägavere valla vapp',
+    'Räpina valla vapp', 'Räpina vapp', 'Vändra vapp', 'Vändra valla vapp',
+    'Türi vapp',
+    'Püssi vapp'].some((item) => text.includes(item.toLowerCase()))) {
     if (![
       'Martna valla vapp',
       'Rõngu valla vapp',
@@ -280,6 +353,24 @@ export const getMarkers = ({
       'Hiiumaa valla vapp',
       'Maidla valla vapp',
       'Muhu valla vapp',
+      'Valgamaa vapp',
+      'Audru valla vapp',
+      'Rakvere valla vapp',
+      'Varbla valla vapp',
+      'Mikitamäe valla vapp',
+      'Oisu valla vapp',
+      'Ambla valla vapp',
+      'Kernu valla vapp',
+      'Kohtla valla vapp',
+      'Kihelkonna valla vapp',
+      'Laeva valla vapp',
+      'Meeksi valla vapp',
+      'Mäksa valla vapp',
+      'Varstu valla vapp',
+      'Võsu vapp',
+      'Kuusalu valla vapp',
+      'Luunja valla vapp',
+      'Lümanda valla vapp',
     ].includes(title)) {
       items.push('tree');
     }
@@ -295,7 +386,15 @@ export const getMarkers = ({
 
   if ([' aadlikroon', ' kroon', 'Oru valla vapp'].some((item) => text.includes(item.toLowerCase()))) {
     if (![
-      'empty',
+      'Abja valla vapp',
+      'Järva-Jaani valla vapp',
+      'Rakke valla vapp',
+      'Narva vapp',
+      'Jõgeva valla vapp',
+      'Risti valla vapp',
+      'Taebla valla vapp',
+      'Mulgi valla vapp',
+      'Paistu valla vapp',
     ].includes(title)) {
       items.push('crown');
     }
@@ -309,6 +408,53 @@ export const getMarkers = ({
     }
   }
 
+  if ([' vasarat', ' haamer'].some((item) => text.includes(item.toLowerCase()))) {
+    if (![
+      'empty',
+    ].includes(title)) {
+      items.push('hammer');
+    }
+  }
+
+  
+  if ([' viljapea', 'Luunja valla vapp', 'Pärsti valla vapp'].some((item) => text.includes(item.toLowerCase()))) {
+    if (![
+      'Põltsamaa vapp',
+    ].includes(title)) {
+      items.push('earOfGrain');
+    }
+  }
+
+  if ([' ankur', 'Maardu vapp'].some((item) => text.includes(item.toLowerCase()))) {
+    if (![
+      'empty',
+    ].includes(title)) {
+      items.push('anchor');
+    }
+  }
+
+  if ([' rist ', ' krutsifiks', ' rõngasrist', ' pügalrist', ' harkrist', 'Kõrgessaare valla vapp', 'Kadrina valla vapp', 'Viru-Nigula valla vapp'].some((item) => text.includes(item.toLowerCase()))) {
+    if (![
+      'Ambla valla vapp',
+      'Are valla vapp',
+      'Peipsiääre valla vapp',
+      'Türi valla vapp',
+      'Kehtna valla vapp',
+      'Harku valla vapp',
+      'Kõo valla vapp',
+    ].includes(title)) {
+      items.push('cross');
+    }
+  }
+  
+  if ([' tuletorn', ' majakas'].some((item) => text.includes(item.toLowerCase()))) {
+    if (![
+      'empty',
+    ].includes(title)) {
+      items.push('lighthouse');
+    }
+  }
+
   if ([
     'Valga vapp',
   ].some((item) => text.includes(item.toLowerCase()))) {
@@ -318,7 +464,6 @@ export const getMarkers = ({
       items.push('arm');
     }
   }
-
 
   return {
     animals,

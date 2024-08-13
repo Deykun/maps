@@ -22,6 +22,7 @@ let filterResponse = {
 // filterResponse.notMatches = true;
 
 export const getFilteredUnits = (
+  lang: string,
   units: AdministrativeUnit[],
   filterOperator: 'and' | 'or',
   typeFilers: string[],
@@ -123,7 +124,7 @@ export const getFilteredUnits = (
 
   if (typeFilers.length > 0) {
     // Using and operator for type like city, county is pointless
-    subtitleParts.push({ operator: 'or', labels: typeFilers.map((value) => `heraldry.unit.type.pl.${value}`) })
+    subtitleParts.push({ operator: 'or', labels: typeFilers.map((value) => `heraldry.unit.type.${lang}.${value}`) })
   }
 
   if (colorFilters.length > 0) {

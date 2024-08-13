@@ -39,7 +39,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "crown"
+                "flower"
             ]
         }
     },
@@ -126,7 +126,8 @@
         "shortTitle": "Ahja valla vapp",
         "markers": {
             "animals": [
-                "ant"
+                "ant",
+                "insect"
             ],
             "items": []
         }
@@ -217,7 +218,9 @@
         "shortTitle": "Ambla valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "flower"
+            ]
         }
     },
     "albu-valla-vapp": {
@@ -260,7 +263,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "tree"
+                "tree",
+                "cross"
             ]
         }
     },
@@ -352,7 +356,10 @@
         "shortTitle": "Alatskivi valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "walls",
+                "tree"
+            ]
         }
     },
     "aseri-valla-vapp": {
@@ -443,7 +450,9 @@
         "shortTitle": "Avanduse valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "cross"
+            ]
         }
     },
     "audru-valla-vapp": {
@@ -485,9 +494,7 @@
         "shortTitle": "Audru valla vapp",
         "markers": {
             "animals": [],
-            "items": [
-                "tree"
-            ]
+            "items": []
         }
     },
     "avinurme-valla-vapp": {
@@ -569,7 +576,10 @@
         "shortTitle": "Haanja valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "walls",
+                "tree"
+            ]
         }
     },
     "emmaste-valla-vapp": {
@@ -693,7 +703,9 @@
         "shortTitle": "Halliste valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "cross"
+            ]
         }
     },
     "helme-valla-vapp": {
@@ -777,7 +789,9 @@
         "shortTitle": "Hanila valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "cross"
+            ]
         }
     },
     "hummuli-valla-vapp": {
@@ -813,7 +827,8 @@
         "shortTitle": "Hummuli valla vapp",
         "markers": {
             "animals": [
-                "bee"
+                "bee",
+                "insect"
             ],
             "items": []
         }
@@ -906,7 +921,8 @@
         "shortTitle": "Juuru valla vapp",
         "markers": {
             "animals": [
-                "crane"
+                "crane",
+                "bird"
             ],
             "items": [
                 "tree"
@@ -983,7 +999,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "crown"
+                "earOfGrain"
             ]
         }
     },
@@ -1073,7 +1089,9 @@
         "shortTitle": "Kaarma valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "kabala-valla-vapp": {
@@ -1109,7 +1127,10 @@
         "shortTitle": "Kabala valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree",
+                "earOfGrain"
+            ]
         }
     },
     "kaisma-valla-vapp": {
@@ -1145,7 +1166,8 @@
         "shortTitle": "Kaisma valla vapp",
         "markers": {
             "animals": [
-                "swan"
+                "swan",
+                "bird"
             ],
             "items": []
         }
@@ -1183,7 +1205,9 @@
         "shortTitle": "Kareda valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "cross"
+            ]
         }
     },
     "kaiu-valla-vapp": {
@@ -1267,7 +1291,9 @@
         "shortTitle": "Karula valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "kasepaa-valla-vapp": {
@@ -1303,7 +1329,9 @@
         "shortTitle": "Kasepää valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "bell"
+            ]
         }
     },
     "kernu-valla-vapp": {
@@ -1381,7 +1409,9 @@
         "shortTitle": "Keila valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "cross"
+            ]
         }
     },
     "koeru-valla-vapp": {
@@ -1430,7 +1460,9 @@
             "animals": [
                 "dog"
             ],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "kohtla-valla-vapp": {
@@ -1516,7 +1548,9 @@
         "shortTitle": "Kihelkonna valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "walls"
+            ]
         }
     },
     "kohtlanomme-valla-vapp": {
@@ -1552,7 +1586,9 @@
         "shortTitle": "Kohtla-Nõmme valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "kohtlanomme-vapp": {
@@ -1626,7 +1662,11 @@
         "shortTitle": "Koigi valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "walls",
+                "tree",
+                "earOfGrain"
+            ]
         }
     },
     "kolgajaani-valla-vapp": {
@@ -1662,7 +1702,8 @@
         "shortTitle": "Kolga-Jaani valla vapp",
         "markers": {
             "animals": [
-                "eagle"
+                "eagle",
+                "bird"
             ],
             "items": []
         }
@@ -1782,7 +1823,8 @@
         "shortTitle": "Kuressaare valla vapp",
         "markers": {
             "animals": [
-                "stork"
+                "stork",
+                "bird"
             ],
             "items": []
         }
@@ -1820,7 +1862,8 @@
         "shortTitle": "Kõlleste valla vapp",
         "markers": {
             "animals": [
-                "crane"
+                "crane",
+                "bird"
             ],
             "items": []
         }
@@ -1864,7 +1907,9 @@
         "shortTitle": "Käina valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "earOfGrain"
+            ]
         }
     },
     "koo-valla-vapp": {
@@ -1900,7 +1945,11 @@
         "shortTitle": "Kõo valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "flower",
+                "bell",
+                "walls"
+            ]
         }
     },
     "karu-valla-vapp": {
@@ -1942,7 +1991,9 @@
         "shortTitle": "Käru valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "wheel"
+            ]
         }
     },
     "laekvere-valla-vapp": {
@@ -2058,7 +2109,9 @@
             "animals": [
                 "crayfish"
             ],
-            "items": []
+            "items": [
+                "flower"
+            ]
         }
     },
     "laimjala-valla-vapp": {
@@ -2137,6 +2190,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "flower",
                 "tree"
             ]
         }
@@ -2216,7 +2270,10 @@
         "shortTitle": "Leisi valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "anchor",
+                "cross"
+            ]
         }
     },
     "lihula-valla-vapp": {
@@ -2345,10 +2402,12 @@
         "shortTitle": "Loksa valla vapp",
         "markers": {
             "animals": [
-                "fish",
-                "salmon"
+                "salmon",
+                "fish"
             ],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "laanenigula-valla-vapp": {
@@ -2395,7 +2454,9 @@
         "shortTitle": "Lääne-Nigula valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "flower"
+            ]
         }
     },
     "loodna-valla-vapp": {
@@ -2432,6 +2493,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "tree",
                 "horseshoe"
             ]
         }
@@ -2512,7 +2574,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "horse"
+                "horse",
+                "bird"
             ],
             "items": []
         }
@@ -2556,7 +2619,9 @@
         "shortTitle": "Meremäe valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "cross"
+            ]
         }
     },
     "meeksi-valla-vapp": {
@@ -2600,7 +2665,10 @@
             "animals": [
                 "fish"
             ],
-            "items": []
+            "items": [
+                "lighthouse",
+                "walls"
+            ]
         }
     },
     "mikitamae-valla-vapp": {
@@ -2716,7 +2784,10 @@
         "shortTitle": "Mooste valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "lily",
+                "flower"
+            ]
         }
     },
     "mustjala-valla-vapp": {
@@ -2889,7 +2960,9 @@
         "shortTitle": "Nissi valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "maksa-valla-vapp": {
@@ -3099,7 +3172,9 @@
         "shortTitle": "Oisu valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "earOfGrain"
+            ]
         }
     },
     "orissaare-valla-vapp": {
@@ -3185,7 +3260,9 @@
         "shortTitle": "Padise valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "paikuse-valla-vapp": {
@@ -3307,7 +3384,8 @@
         "shortTitle": "Pala valla vapp",
         "markers": {
             "animals": [
-                "owl"
+                "owl",
+                "bird"
             ],
             "items": []
         }
@@ -3351,7 +3429,9 @@
         "shortTitle": "Palupera valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "pihtla-valla-vapp": {
@@ -3431,7 +3511,9 @@
             "animals": [
                 "fish"
             ],
-            "items": []
+            "items": [
+                "cross"
+            ]
         }
     },
     "puhja-valla-vapp": {
@@ -3541,7 +3623,8 @@
         "shortTitle": "Puurmani valla vapp",
         "markers": {
             "animals": [
-                "eagle"
+                "eagle",
+                "bird"
             ],
             "items": [
                 "tree"
@@ -3581,7 +3664,11 @@
         "shortTitle": "Põdrala valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "lily",
+                "cross",
+                "flower"
+            ]
         }
     },
     "pohjasakala-valla-vapp": {
@@ -3667,7 +3754,11 @@
         "shortTitle": "Pöide valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "lily",
+                "cross",
+                "flower"
+            ]
         }
     },
     "puhajarve-valla-vapp": {
@@ -3703,7 +3794,9 @@
         "shortTitle": "Pühajärve valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "raikkula-valla-vapp": {
@@ -3789,7 +3882,10 @@
         "shortTitle": "Pühalepa valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "lily",
+                "flower"
+            ]
         }
     },
     "rakke-valla-vapp": {
@@ -3832,7 +3928,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "crown"
+                "flower"
             ]
         }
     },
@@ -3870,6 +3966,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "tree",
                 "crown"
             ]
         }
@@ -3907,7 +4004,9 @@
         "shortTitle": "Ridala valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "cross"
+            ]
         }
     },
     "roosnaalliku-valla-vapp": {
@@ -3943,7 +4042,10 @@
         "shortTitle": "Roosna-Alliku valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "rose",
+                "flower"
+            ]
         }
     },
     "rongu-valla-vapp": {
@@ -3979,7 +4081,9 @@
         "shortTitle": "Rõngu valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "cross"
+            ]
         }
     },
     "ragavere-valla-vapp": {
@@ -4021,7 +4125,9 @@
         "shortTitle": "Rägavere valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "saare-valla-vapp": {
@@ -4058,6 +4164,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "tree",
                 "sword"
             ]
         }
@@ -4182,7 +4289,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "crown"
+                "crown",
+                "earOfGrain"
             ]
         }
     },
@@ -4311,7 +4419,9 @@
         "shortTitle": "Surju valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "someru-valla-vapp": {
@@ -4353,7 +4463,9 @@
         "shortTitle": "Sõmeru valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "earOfGrain"
+            ]
         }
     },
     "taheva-valla-vapp": {
@@ -4473,7 +4585,9 @@
         "shortTitle": "Tali valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "cross"
+            ]
         }
     },
     "tamsalu-valla-vapp": {
@@ -4565,7 +4679,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "sword"
+                "sword",
+                "cross"
             ]
         }
     },
@@ -4684,7 +4799,9 @@
         "shortTitle": "Tootsi valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "hammer"
+            ]
         }
     },
     "torma-valla-vapp": {
@@ -4757,7 +4874,9 @@
         "markers": {
             "animals": [],
             "items": [
-                "crown"
+                "crown",
+                "lighthouse",
+                "walls"
             ]
         }
     },
@@ -4794,7 +4913,10 @@
         "shortTitle": "Tudulinna valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "rose",
+                "flower"
+            ]
         }
     },
     "tolliste-valla-vapp": {
@@ -4836,7 +4958,9 @@
         "shortTitle": "Tõlliste valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "walls"
+            ]
         }
     },
     "tostamaa-valla-vapp": {
@@ -4878,7 +5002,9 @@
         "shortTitle": "Tõstamaa valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "wheel"
+            ]
         }
     },
     "tahtvere-valla-vapp": {
@@ -4916,7 +5042,9 @@
             "animals": [
                 "bird"
             ],
-            "items": []
+            "items": [
+                "earOfGrain"
+            ]
         }
     },
     "vaivara-valla-vapp": {
@@ -5000,7 +5128,8 @@
         "shortTitle": "Valgjärve valla vapp",
         "markers": {
             "animals": [
-                "eagle"
+                "eagle",
+                "bird"
             ],
             "items": []
         }
@@ -5044,7 +5173,12 @@
         "shortTitle": "Valjala valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "rose",
+                "tree",
+                "cross",
+                "flower"
+            ]
         }
     },
     "vara-valla-vapp": {
@@ -5080,7 +5214,9 @@
         "shortTitle": "Vara valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "flower"
+            ]
         }
     },
     "varbla-valla-vapp": {
@@ -5116,7 +5252,8 @@
         "shortTitle": "Varbla valla vapp",
         "markers": {
             "animals": [
-                "swan"
+                "swan",
+                "bird"
             ],
             "items": []
         }
@@ -5160,7 +5297,9 @@
         "shortTitle": "Varstu valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "wheel"
+            ]
         }
     },
     "vasalemma-valla-vapp": {
@@ -5202,7 +5341,9 @@
         "shortTitle": "Vasalemma valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "walls"
+            ]
         }
     },
     "vastsekuuste-valla-vapp": {
@@ -5276,7 +5417,10 @@
         "shortTitle": "Vastseliina valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "walls",
+                "cross"
+            ]
         }
     },
     "veriora-valla-vapp": {
@@ -5312,7 +5456,9 @@
         "shortTitle": "Veriora valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "flower"
+            ]
         }
     },
     "vigala-valla-vapp": {
@@ -5476,9 +5622,11 @@
         "shortTitle": "Võnnu valla vapp",
         "markers": {
             "animals": [
-                "goose"
+                "goose",
+                "bird"
             ],
             "items": [
+                "bell",
                 "tree"
             ]
         }
@@ -5522,7 +5670,9 @@
         "shortTitle": "Vändra valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "vaatsa-valla-vapp": {
@@ -5643,7 +5793,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "crown"
+                "crown",
+                "earOfGrain"
             ]
         }
     },
@@ -5770,9 +5921,12 @@
         "shortTitle": "Anija valla vapp",
         "markers": {
             "animals": [
-                "goose"
+                "goose",
+                "bird"
             ],
-            "items": []
+            "items": [
+                "wheel"
+            ]
         }
     },
     "harku-valla-vapp": {
@@ -5850,7 +6004,9 @@
         "shortTitle": "Kehra vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "wheel"
+            ]
         }
     },
     "joelahtme-valla-vapp": {
@@ -5892,7 +6048,10 @@
         "shortTitle": "Jõelähtme valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "lily",
+                "flower"
+            ]
         }
     },
     "keila-vapp": {
@@ -5934,7 +6093,9 @@
         "shortTitle": "Keila vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "flower"
+            ]
         }
     },
     "kiili-valla-vapp": {
@@ -5976,7 +6137,8 @@
         "shortTitle": "Kiili valla vapp",
         "markers": {
             "animals": [
-                "dragonfly"
+                "dragonfly",
+                "insect"
             ],
             "items": []
         }
@@ -6020,7 +6182,11 @@
         "shortTitle": "Kose valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "rose",
+                "cross",
+                "flower"
+            ]
         }
     },
     "kuusalu-valla-vapp": {
@@ -6191,7 +6357,9 @@
         "shortTitle": "Maardu vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "anchor"
+            ]
         }
     },
     "paldiski-vapp": {
@@ -6238,7 +6406,9 @@
         "shortTitle": "Paldiski vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "walls"
+            ]
         }
     },
     "pirita-linnaosa-vapp": {
@@ -6280,7 +6450,9 @@
         "shortTitle": "Pirita linnaosa vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "cross"
+            ]
         }
     },
     "raasiku-valla-vapp": {
@@ -6548,7 +6720,8 @@
                 "lion"
             ],
             "items": [
-                "crown"
+                "crown",
+                "cross"
             ]
         }
     },
@@ -6591,7 +6764,9 @@
         "shortTitle": "Viimsi valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "hiiumaa-vapp": {
@@ -6633,7 +6808,10 @@
         "shortTitle": "Hiiumaa vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "lily",
+                "flower"
+            ]
         }
     },
     "hiiumaa-valla-vapp": {
@@ -6675,7 +6853,10 @@
         "shortTitle": "Hiiumaa valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "walls",
+                "lighthouse"
+            ]
         }
     },
     "kardla-vapp": {
@@ -6717,7 +6898,8 @@
         "shortTitle": "Kärdla vapp",
         "markers": {
             "animals": [
-                "gull"
+                "gull",
+                "bird"
             ],
             "items": []
         }
@@ -6762,6 +6944,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "walls",
                 "sword"
             ]
         }
@@ -6807,7 +6990,9 @@
             "animals": [
                 "deer"
             ],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "kivioli-vapp": {
@@ -6933,7 +7118,9 @@
         "shortTitle": "Lüganuse valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "maidla-valla-vapp": {
@@ -7016,7 +7203,6 @@
                 "fish"
             ],
             "items": [
-                "crown",
                 "sword"
             ]
         }
@@ -7102,7 +7288,9 @@
         "shortTitle": "Püssi vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "sillamae-vapp": {
@@ -7228,7 +7416,9 @@
         "shortTitle": "Jõgevamaa vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "earOfGrain"
+            ]
         }
     },
     "jogeva-valla-vapp": {
@@ -7271,7 +7461,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "crown"
+                "flower",
+                "walls"
             ]
         }
     },
@@ -7352,7 +7543,9 @@
             "animals": [
                 "fish"
             ],
-            "items": []
+            "items": [
+                "anchor"
+            ]
         }
     },
     "mustvee-valla-vapp": {
@@ -7394,7 +7587,9 @@
         "shortTitle": "Mustvee valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "poltsamaa-valla-vapp": {
@@ -7430,7 +7625,9 @@
         "shortTitle": "Põltsamaa valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "earOfGrain"
+            ]
         }
     },
     "poltsamaa-vapp": {
@@ -7473,6 +7670,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "walls",
                 "crown"
             ]
         }
@@ -7516,7 +7714,9 @@
         "shortTitle": "Järvamaa vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "walls"
+            ]
         }
     },
     "jarva-valla-vapp": {
@@ -7560,7 +7760,9 @@
             "animals": [
                 "wolf"
             ],
-            "items": []
+            "items": [
+                "cross"
+            ]
         }
     },
     "paide-vapp": {
@@ -7607,7 +7809,11 @@
         "shortTitle": "Paide vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "rose",
+                "walls",
+                "flower"
+            ]
         }
     },
     "turi-valla-vapp": {
@@ -7649,7 +7855,9 @@
         "shortTitle": "Türi valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "turi-vapp": {
@@ -7696,7 +7904,9 @@
         "shortTitle": "Türi vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "laanemaa-vapp": {
@@ -7738,7 +7948,8 @@
         "shortTitle": "Läänemaa vapp",
         "markers": {
             "animals": [
-                "hawk"
+                "hawk",
+                "bird"
             ],
             "items": []
         }
@@ -7782,9 +7993,13 @@
         "shortTitle": "Haapsalu vapp",
         "markers": {
             "animals": [
-                "eagle"
+                "eagle",
+                "bird"
             ],
-            "items": []
+            "items": [
+                "walls",
+                "cross"
+            ]
         }
     },
     "risti-valla-vapp": {
@@ -7827,7 +8042,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "crown"
+                "cross"
             ]
         }
     },
@@ -7871,7 +8086,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "crown"
+                "wheel"
             ]
         }
     },
@@ -7919,7 +8134,9 @@
         "shortTitle": "Vormsi valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "cross"
+            ]
         }
     },
     "laanevirumaa-vapp": {
@@ -7962,6 +8179,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "walls",
                 "sword"
             ]
         }
@@ -8047,7 +8265,10 @@
         "shortTitle": "Kadrina valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "wheel",
+                "cross"
+            ]
         }
     },
     "kunda-vapp": {
@@ -8132,7 +8353,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "tree"
+                "earOfGrain"
             ]
         }
     },
@@ -8317,7 +8538,10 @@
         "shortTitle": "Viru-Nigula valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "wheel",
+                "cross"
+            ]
         }
     },
     "vaikemaarja-valla-vapp": {
@@ -8488,7 +8712,8 @@
         "shortTitle": "Põlva vapp",
         "markers": {
             "animals": [
-                "rooster"
+                "rooster",
+                "bird"
             ],
             "items": []
         }
@@ -8583,7 +8808,9 @@
         "shortTitle": "Räpina valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "rapina-vapp": {
@@ -8625,7 +8852,10 @@
         "shortTitle": "Räpina vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "flower",
+                "tree"
+            ]
         }
     },
     "parnumaa-vapp": {
@@ -8750,7 +8980,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "boat"
+                "boat",
+                "walls"
             ]
         }
     },
@@ -8788,7 +9019,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "tree"
+                "tree",
+                "hammer"
             ]
         }
     },
@@ -8875,7 +9107,9 @@
         "shortTitle": "Pärnu vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "key"
+            ]
         }
     },
     "saarde-valla-vapp": {
@@ -8919,7 +9153,9 @@
             "animals": [
                 "lynx"
             ],
-            "items": []
+            "items": [
+                "cross"
+            ]
         }
     },
     "sindi-vapp": {
@@ -8955,7 +9191,9 @@
         "shortTitle": "Sindi vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "walls"
+            ]
         }
     },
     "vandra-vapp": {
@@ -8993,7 +9231,9 @@
             "animals": [
                 "bear"
             ],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "raplamaa-vapp": {
@@ -9076,7 +9316,9 @@
         "shortTitle": "Märjamaa alevi vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "walls"
+            ]
         }
     },
     "saare-maakonna-vapp": {
@@ -9162,9 +9404,12 @@
         "shortTitle": "Kuressaare vapp",
         "markers": {
             "animals": [
-                "eagle"
+                "eagle",
+                "bird"
             ],
-            "items": []
+            "items": [
+                "walls"
+            ]
         }
     },
     "ruhnu-valla-vapp": {
@@ -9469,6 +9714,8 @@
         "markers": {
             "animals": [],
             "items": [
+                "key",
+                "walls",
                 "sword"
             ]
         }
@@ -9517,7 +9764,9 @@
         "shortTitle": "Luunja valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "earOfGrain"
+            ]
         }
     },
     "antsla-valla-vapp": {
@@ -9681,7 +9930,8 @@
         "shortTitle": "Kehtna valla vapp",
         "markers": {
             "animals": [
-                "raven"
+                "raven",
+                "bird"
             ],
             "items": []
         }
@@ -9725,7 +9975,10 @@
         "shortTitle": "Kohila valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "flower",
+                "tree"
+            ]
         }
     },
     "korgessaare-valla-vapp": {
@@ -9767,7 +10020,9 @@
         "shortTitle": "Kõrgessaare valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "cross"
+            ]
         }
     },
     "lavassaare-valla-vapp": {
@@ -9942,7 +10197,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "crown"
+                "flower"
             ]
         }
     },
@@ -9985,7 +10240,9 @@
         "shortTitle": "Muhu valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "cross"
+            ]
         }
     },
     "marjamaa-valla-vapp": {
@@ -10027,7 +10284,10 @@
         "shortTitle": "Märjamaa valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "wheel",
+                "walls"
+            ]
         }
     },
     "noo-valla-vapp": {
@@ -10063,7 +10323,9 @@
         "shortTitle": "Nõo valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "walls"
+            ]
         }
     },
     "paistu-valla-vapp": {
@@ -10100,8 +10362,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "tree",
-                "crown"
+                "tree"
             ]
         }
     },
@@ -10146,7 +10407,9 @@
             "animals": [
                 "fish"
             ],
-            "items": []
+            "items": [
+                "walls"
+            ]
         }
     },
     "rapla-valla-vapp": {
@@ -10188,7 +10451,9 @@
         "shortTitle": "Rapla valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "cross"
+            ]
         }
     },
     "rouge-valla-vapp": {
@@ -10321,7 +10586,9 @@
         "shortTitle": "Tartu valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "flower"
+            ]
         }
     },
     "tori-valla-vapp": {
@@ -10407,7 +10674,11 @@
         "shortTitle": "Viljandi valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "lily",
+                "rose",
+                "flower"
+            ]
         }
     },
     "viiratsi-valla-vapp": {
@@ -10444,7 +10715,9 @@
         "markers": {
             "animals": [],
             "items": [
-                "tree"
+                "rose",
+                "tree",
+                "flower"
             ]
         }
     },
@@ -10531,9 +10804,7 @@
         "shortTitle": "Valgamaa vapp",
         "markers": {
             "animals": [],
-            "items": [
-                "tree"
-            ]
+            "items": []
         }
     },
     "otepaa-vapp": {
@@ -10613,7 +10884,9 @@
         "shortTitle": "Tõrva vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "walls"
+            ]
         }
     },
     "valga-vapp": {
@@ -10700,10 +10973,12 @@
         "shortTitle": "Viljandimaa vapp",
         "markers": {
             "animals": [
-                "eagle"
+                "eagle",
+                "bird"
             ],
             "items": [
-                "sword"
+                "sword",
+                "earOfGrain"
             ]
         }
     },
@@ -10740,7 +11015,9 @@
         "shortTitle": "Mõisaküla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "hammer"
+            ]
         }
     },
     "parsti-valla-vapp": {
@@ -10776,7 +11053,10 @@
         "shortTitle": "Pärsti valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "flower",
+                "earOfGrain"
+            ]
         }
     },
     "saarepeedi-valla-vapp": {
@@ -10818,7 +11098,9 @@
         "shortTitle": "Saarepeedi valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "flower"
+            ]
         }
     },
     "viljandi-vapp": {
@@ -10860,7 +11142,10 @@
         "shortTitle": "Viljandi vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "rose",
+                "flower"
+            ]
         }
     },
     "vohma-vapp": {

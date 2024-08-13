@@ -39,10 +39,8 @@ const Heraldry = ({
     const [listPage, setListPage] = useState(0);
     const [listPhrase, setListPhrase] = useState('');
     const [filterOperator, setFilterOperator] = useState<'and' | 'or'>('and');
-    // TODO: restore
-    // const [mapFitment, setMapFitment] = useState<'compact' | 'fullWidth' | 'zoom'>('compact');
-    const [mapFitment, setMapFitment] = useState<'compact' | 'fullWidth' | 'zoom'>('fullWidth');
-    const [typeFilers, setTypeFilters] = useState<string[]>([]);
+    const [mapFitment, setMapFitment] = useState<'compact' | 'fullWidth' | 'zoom'>('compact');
+    const [typeFilters, setTypeFilters] = useState<string[]>([]);
     const [colorFilters, setColorFilters] = useState<string[]>([]);
     const [animalFilters, setAnimalFilters] = useState<string[]>([]);
     const [itemFilters, setItemFilters] = useState<string[]>([]);
@@ -52,16 +50,19 @@ const Heraldry = ({
     useEffect(() => {
       // We set the language according to the country
       if (lang) {
-        i18n.changeLanguage(lang);
+        // i18n.changeLanguage(lang);
       }
     }, []);
 
     const { units, unitsForMap, subtitleParts } = useMemo(() => {
+      // All types are checked and we can skip setting subtitle and filtering
+      const typeFiltersToPass = typeFilters.length === typeFiltersList.length ? [] : typeFilters;
+
       const {
         filteredUnits,
         unitsForMap,
         subtitleParts,
-      } = getFilteredUnits(allUnits, filterOperator, typeFilers, colorFilters, animalFilters, itemFilters);
+      } = getFilteredUnits(lang, allUnits, filterOperator, typeFiltersToPass, colorFilters, animalFilters, itemFilters);
 
       setListPage(0);
       setListPhrase('');
@@ -71,7 +72,7 @@ const Heraldry = ({
         unitsForMap,
         subtitleParts,
       }
-    }, [filterOperator, colorFilters, typeFilers, animalFilters, itemFilters]);
+    }, [filterOperator, colorFilters, typeFilters, animalFilters, itemFilters]);
 
     const unitsForList = useMemo(() => {
       if (listPhrase === '') {
@@ -134,7 +135,7 @@ const Heraldry = ({
       });
     }, []);
 
-    const hasFilters = typeFilers.length > 0 || colorFilters.length > 0 || animalFilters.length > 0 || itemFilters.length > 0;
+    const hasFilters = typeFilters.length > 0 || colorFilters.length > 0 || animalFilters.length > 0 || itemFilters.length > 0;
 
     const resetFilters = () => {
       setTypeFilters([]);
@@ -160,7 +161,7 @@ const Heraldry = ({
     return (
         <>
           <h1 className="text-[18px] md:text-[36px] text-center mb-4">
-            {t('heraldry.mapTitle')}
+            {t(`heraldry.${lang}.mapTitle`)}
           </h1>
           <HeraldrySubtitle subtitleParts={subtitleParts} />
           <div
@@ -243,7 +244,7 @@ const Heraldry = ({
                   <button
                     onClick={() => toggleType(value)}
                     className={clsx("hover:text-[#ca0505] text-nowrap", { 
-                      'text-[#ca0505]': typeFilers.includes(value),
+                      'text-[#ca0505]': typeFilters.includes(value),
                     })}
                   >
                     {t(`heraldry.unit.type.${lang}.${value}`)} <small className="text-[10px] text-[#4b4b4b] tracking-widest">({total})</small>
