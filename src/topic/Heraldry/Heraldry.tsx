@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback, useEffect } from 'react';
+import { memo, useState, useMemo, useCallback, useEffect } from 'react';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 
@@ -321,4 +321,4 @@ const Heraldry = ({
     );
 };
 
-export default Heraldry;
+export default memo(Heraldry);

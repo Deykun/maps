@@ -1,15 +1,6 @@
-type Colors = {
+export type Colors = {
   [key: string]: string,
 }
-
-export const colorsByNames: Colors = {
-  red: '#f00',
-  green: '#0f0',
-  blue: '#00f',
-};
-
-export const WITH_ANIMAL = 'withAnimal';
-export const WITHOUT_ANIMAL = 'withoutAnimals';
 
 export type AdministrativeUnit = {
   title: string,

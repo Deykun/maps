@@ -60,11 +60,11 @@ svg {
     img {
       height: 100px;
       width: 100px;
-      filter: drop-shadow(0 0 10px white);
+      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.46));
     }
 
     &::before {
-      @apply border whitespace-nowrap truncate tracking-wider shadow-lg pointer-events-none origin-bottom;
+      @apply whitespace-nowrap truncate tracking-wider pointer-events-none origin-bottom;
 
       content: attr(data-title);
       position: absolute;
@@ -76,13 +76,16 @@ svg {
       max-width: 250px;
       color: black;
       background-color: white;
+      border: 1px solid rgb(189, 189, 189);
+      border-top-width: 2px;
       padding: 5px 10px;
+      border-radius: 2px;
       border-bottom-left-radius: 8px;
       border-bottom-right-radius: 8px;
       font-weight: 600;
       opacity: 0;
-      animation: 0.3s slideCoatLabel forwards ease-in;
-      animation-delay: 0.5s;
+      animation: 0.17s slideCoatLabel forwards ease-in;
+      animation-delay: 0.3s;
     }
   }
 }

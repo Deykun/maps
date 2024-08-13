@@ -4,9 +4,9 @@ import { AdministrativeUnit } from '../../topic/Heraldry/types';
 
 import { getFilter } from '../../topic/Heraldry/utils/getFilter';
 
-import gminyJSON from './gminy-images.json'
-import miastaJSON from './miasta-images.json'
-import powiatyJSON from './powiaty-images.json'
+import gminyJSON from './gminy-map.json'
+import miastaJSON from './miasta-map.json'
+import powiatyJSON from './powiaty-map.json'
 
 import Heraldry from '../../topic/Heraldry/Heraldry';
 
