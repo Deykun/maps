@@ -81,7 +81,17 @@ export const fetchImages = async ({
 
   for (let i = 0; i < administrativeDivisions.length; i++) {
       const unit = administrativeDivisions[i];
-      const fileName = removeDiacratics(unit.title.toLowerCase()).replace(/[^\w\s]/gi, '').replaceAll(' ', '-');
+      let fileName = removeDiacratics(unit.title.toLowerCase()).replace(/[^\w\s]/gi, '').replaceAll(' ', '-');
+
+      if (unit.title === 'Herb gminy Miedźna') {
+        /*
+          - Herb gminy Miedzna - https://pl.wikipedia.org/wiki/Herb_gminy_Miedzna
+          - Herb gminy Miedźna - https://pl.wikipedia.org/wiki/Herb_gminy_Mied%C5%BAna
+
+          Only know to me case where two locations when diacratics are removed are flaten together.
+        */
+        fileName += '-with-special-z';
+      }
 
       const format = unit.image?.source.split('.').at(-1)?.toLowerCase() || 'png';
       if (format !== 'png' && existsSync(`./public/images/heraldry/${lang}/${path}/${fileName}.png`)) {

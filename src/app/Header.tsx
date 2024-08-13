@@ -6,7 +6,7 @@ const Header = () => {
   const { t, i18n } = useTranslation();
 
   const handleLanguageChange = useCallback(() => {
-    i18n.changeLanguage(i18n.language === 'pl' ? 'en' : 'pl');
+    i18n.changeLanguage(i18n.language === 'pl' ? 'en' : (i18n.language === 'en' ? 'et' : 'pl'));
 }, [i18n]);
 
   return (
