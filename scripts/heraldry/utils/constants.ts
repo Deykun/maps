@@ -1,4 +1,5 @@
-export const locationTitleByHerbTitle = {
+export const locationTitleByCoatOfArmsTitle = {
+  // PL
   'Herb gminy Czarny Bór': 'Czarny Bór (gmina w powiecie wałbrzyskim)',
   'Herb gminy Rogowo (powiat żniński)': 'Rogowo (powiat żniński)',
   'Rogowo (powiat żniński)': 'Rogowo (powiat żniński)',
@@ -83,4 +84,26 @@ export const locationTitleByHerbTitle = {
   'Herb powiatu oleckiego': 'Powiat olecki',
   'Herb powiatu hrubieszowskiego': 'Powiat hrubieszowski',
   'Herb powiatu rawskiego': 'Powiat rawski',
+  // - pl
+  // et
+  'Harjumaa vapp': 'Harju maakond',
+  'Pirita linnaosa vapp': 'Pirita linnaosa',
+  'Maidla valla vapp': 'Maidla vald',
+  'Saare valla vapp': 'Saare vald',
+  'Järvamaa vapp': 'Järva maakond',
+  'Järva valla vapp': 'Järva vald',
+  'Läänemaa vapp': 'Lääne maakond',
+  'Ridala valla vapp': 'Ridala vald',
+  'Rägavere valla vapp': 'Rägavere vald',
+  'Kõlleste valla vapp': 'Kõlleste vald',
+  'Laheda valla vapp': 'Laheda vald',
+  'Pärnumaa vapp': 'Pärnu maakond',
+  'Märjamaa alevi vapp': 'Märjamaa',
+  'Saare maakonna vapp': 'Saare maakond',
+  'Tartumaa vapp': 'Tartu maakond',
+  'Valgamaa vapp': 'Valga maakond',
+  'Viljandimaa vapp': 'Viljandi maakond',
+  'Abja valla vapp': 'Abja vald',
+  'Võrumaa vapp': 'Võru maakond',
+  'Setomaa valla vapp': 'Värska',
 } as const;

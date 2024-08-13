@@ -14,6 +14,9 @@
     "fetch:pl:coats-of-miasta": "tsx scripts/heraldry/pl/fetch-coats-of-miasta.ts",
     "fetch:pl:coats-of-powiaty": "tsx scripts/heraldry/pl/fetch-coats-of-powiaty.ts",
     "resize:pl:coats": "tsx scripts/heraldry/pl/resize-images.ts",
+    "fetch:et:vald": "tsx scripts/heraldry/et/fetch-vald.ts",
+    "fetch:et:coats-of-vald": "tsx scripts/heraldry/et/fetch-coats-of-vald.ts",
+    "resize:et:coats": "tsx scripts/heraldry/et/resize-images.ts",
     "preview": "vite preview",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix"

@@ -2,20 +2,22 @@ import fs from 'fs';
 import wiki from 'wikipedia';
 import chalk from 'chalk';
 
-import { AdministrativeUnit } from '../../../src/pages/heraldyka/constants';
+import { AdministrativeUnit } from '../../../src/topic/Heraldry/types';
 
-import { locationTitleByHerbTitle } from './constants';
+import { locationTitleByCoatOfArmsTitle } from './constants';
 
 export const fetchData = async ({
   administrativeDivisions,
   path,
+  lang = 'pl',
 }: {
   administrativeDivisions: AdministrativeUnit[]
   path: string,
+  lang?: string,
 }) => {
   const start = (new Date()).getTime();
   const errors: { title: string, url: string }[] = [];
-  wiki.setLang('pl');
+  wiki.setLang(lang);
 
   const total = administrativeDivisions.length;
 
@@ -51,11 +53,13 @@ export const fetchData = async ({
       const categories = await page.categories();
       // const images = await page.images()
 
-      let locationPage: string | undefined = locationTitleByHerbTitle[division.title];
+      let locationPage: string | undefined = locationTitleByCoatOfArmsTitle[division.title];
 
       if (!locationPage) {
         if (path.includes('miasta') || path.includes('powiat')) {
           locationPage = categories.find((category) => !['przypisami', 'herby', 'artykuły', 'herbach', 'błędne dane', 'szablon', 'brak numeru'].some((subcat) => category.toLowerCase().includes(subcat)));
+        } else if (path.includes('vald')) {
+          locationPage = division.title.replace(' valla vapp', '').replace(' vapp', '');
         } else {
           locationPage = categories.find((category) => category.includes('(gmina') || category.includes('(gmina wiejska'))
         }

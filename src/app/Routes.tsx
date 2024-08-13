@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import { PATHS_DATA } from '../constants';
 
 import Home from '../pages/Home';
+import HeraldryET from '../pages/eesti-heraldika/HeraldryET';
 import HeraldryPL from '../pages/heraldyka/HeraldryPL';
 import { useMemo } from "react";
 
@@ -28,6 +29,7 @@ const Routes = () => {
       </Helmet>
       <Switch >
         <Route path="/maps" component={Home} />
+        <Route path="/maps/eesti-heraldika" component={HeraldryET} />
         <Route path="/maps/heraldyka" component={HeraldryPL} />
       </Switch>
     </>

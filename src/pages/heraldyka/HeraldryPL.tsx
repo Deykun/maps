@@ -77,6 +77,7 @@ const HeraldryPL = () => {
       typeFiltersList={typeFiltersList}
       animalFiltersList={animalFiltersList}
       itemsFiltersList={itemsFiltersList}
+      mapWrapperClassName="aspect-[820_/_775]"
       map={SvgMap}
     />
   );

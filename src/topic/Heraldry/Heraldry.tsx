@@ -23,6 +23,7 @@ type Props = {
   typeFiltersList: GetFilterResponse,
   animalFiltersList: GetFilterResponse,
   itemsFiltersList: GetFilterResponse,
+  mapWrapperClassName?: string,
   map: () => JSX.Element,
 }
 
@@ -32,6 +33,7 @@ const Heraldry = ({
   typeFiltersList,
   animalFiltersList,
   itemsFiltersList,
+  mapWrapperClassName,
   map: MapBackground,
 }: Props) => {
     const [listPage, setListPage] = useState(0);
@@ -167,7 +169,7 @@ const Heraldry = ({
             })}
           >
             <div
-              className={clsx("map-wrapper relative aspect-[820_/_775] mx-auto flex justify-center items-center", {
+              className={clsx(mapWrapperClassName, "map-wrapper relative mx-auto flex justify-center items-center", {
                 "max-h-[66vh]": ['compact'].includes(mapFitment),
               })}
               style={mapFitment === 'zoom' ? { width: 2500 } : {}}
@@ -181,7 +183,7 @@ const Heraldry = ({
                         key={`${unit.title}-${unit?.place?.coordinates?.lon}`}
                         {...unit}
                         setListPhrase={setListPhrase}
-                        style={getPostionForPlace(unit)}
+                        style={getPostionForPlace(unit, lang)}
                       />
                   ))}
               </div>
