@@ -25,7 +25,8 @@ const getCompressedImageSrc = (imageUrl: string) => {
     .replace('/miasta/', '/web-miasta/')
     .replace('/gminy/', '/web-gminy/')
     .replace('/powiaty/', '/web-powiaty/')
-    .replace('/unit/', '/web-unit/');
+    .replace('/unit/', '/web-unit/')
+    .replace('/kunta/', '/web-kunta/');
 
   const srcSet = [
     { name: 'x2', width: '200w' },

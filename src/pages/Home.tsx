@@ -12,6 +12,9 @@ const Home = () => {
         <li>    
           <Link to="/maps/eesti-heraldika" className="text-[30px]">2. {t('heraldry.et.mapTitle')}</Link>
         </li>
+        <li>    
+          <Link to="/maps/suomalainen-heraldikka" className="text-[30px]">3. Finlandia</Link>
+        </li>
       </ul>
     </div>
   )

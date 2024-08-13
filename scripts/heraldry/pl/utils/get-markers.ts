@@ -649,6 +649,16 @@ export const getMarkers = ({
     }
   }
 
+  if (['jabłko', 'jabłoni', 'jabłkiem', 'jabłka', 'jabuszkiem', 'jabłek', "jabłoń"].some((item) => text.includes(item))) {
+    if (![
+      'Herb gminy Wąsewo',
+      'Herb gminy Ochotnica Dolna',
+      'Herb gminy Zbrosławice',
+    ].includes(title)) {
+      items.push('apple');
+    }
+  }
+
   if (['młot', 'herb górniczy', 'pyrlika', 'herb powiatu złotoryjskiego'].some((item) => text.includes(item))) {
     if (![
       ...oldAxePickFilter,
