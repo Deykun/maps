@@ -1,4 +1,5 @@
-export const locationTitleByHerbTitle = {
+export const locationTitleByCoatOfArmsTitle = {
+  // PL
   'Herb gminy Czarny Bór': 'Czarny Bór (gmina w powiecie wałbrzyskim)',
   'Herb gminy Rogowo (powiat żniński)': 'Rogowo (powiat żniński)',
   'Rogowo (powiat żniński)': 'Rogowo (powiat żniński)',
@@ -83,4 +84,44 @@ export const locationTitleByHerbTitle = {
   'Herb powiatu oleckiego': 'Powiat olecki',
   'Herb powiatu hrubieszowskiego': 'Powiat hrubieszowski',
   'Herb powiatu rawskiego': 'Powiat rawski',
+  // - pl
+  // et
+  'Harjumaa vapp': 'Harju maakond',
+  'Pirita linnaosa vapp': 'Pirita', // 'Pirita linnaosa', misses cordinates
+  'Maidla valla vapp': 'Maidla vald',
+  'Saare valla vapp': 'Saare vald',
+  'Järvamaa vapp': 'Järva maakond',
+  'Järva valla vapp': 'Järva-Jaani', // 'Järva vald',  misses cordinates
+  'Läänemaa vapp': 'Lääne maakond',
+  'Ridala valla vapp': 'Ridala vald',
+  'Rägavere valla vapp': 'Rägavere vald',
+  'Kõlleste valla vapp': 'Kõlleste vald',
+  'Laheda valla vapp': 'Laheda vald',
+  'Pärnumaa vapp': 'Pärnu maakond',
+  'Märjamaa alevi vapp': 'Märjamaa',
+  'Saare maakonna vapp': 'Saare maakond',
+  'Tartumaa vapp': 'Tartu maakond',
+  'Valgamaa vapp': 'Valga maakond',
+  'Viljandimaa vapp': 'Viljandi maakond',
+  'Abja valla vapp': 'Abja vald',
+  'Võrumaa vapp': 'Võru maakond',
+  'Setomaa valla vapp': 'Värska',
+  'Imavere valla vapp': 'Imavere vald',
+  'Kabala valla vapp': 'Türi', // Somone can suggest better
+  'Käru valla vapp': 'Käru vald',
+  'Lääne-Saare valla vapp': 'Kuressaare', // 'Lääne-Saare vald',
+  'Noarootsi valla vapp': 'Noarootsi vald',
+  'Piirissaare valla vapp': 'Piirissaare vald',
+  'Põdrala valla vapp': 'Põdrala vald',
+  'Põhja-Sakala valla vapp': 'Suure-Jaani', // 'Põhja-Sakala vald',
+  'Salme valla vapp': 'Salme vald',
+  'Tapa valla vapp (2005)': 'Tapa vald (2005)',
+  'Torgu valla vapp': 'Torgu vald',
+  'Vara valla vapp': 'Vara küla',
+  'Vigala valla vapp': 'Vigala vald',
+  'Võnnu valla vapp': 'Võnnu vald',
+  'Peipsiääre valla vapp': 'Alatskivi', // 'Peipsiääre vald',
+  'Õru valla vapp': 'Õru vald',
+  'Järvakandi valla vapp': 'Järvakandi',
+  'Lääne-Nigula valla vapp': 'Taebla', // 'Lääne-Nigula vald',
 } as const;

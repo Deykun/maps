@@ -24,7 +24,8 @@ const getCompressedImageSrc = (imageUrl: string) => {
   const compressedImageSrcWithoutFormat = imageSrcWithoutFormat
     .replace('/miasta/', '/web-miasta/')
     .replace('/gminy/', '/web-gminy/')
-    .replace('/powiaty/', '/web-powiaty/');
+    .replace('/powiaty/', '/web-powiaty/')
+    .replace('/unit/', '/web-unit/');
 
   const srcSet = [
     { name: 'x2', width: '200w' },
@@ -47,7 +48,7 @@ function rgbToHex([r,g,b]: [r: number, g: number, b: number]) {
   return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
 }
 
-export const download = async (url: string, fileName: string, format: string, path: string) => {
+export const download = async (url: string, fileName: string, format: string, path: string, lang: string) => {
   const response = await fetch(url);
 
   const blob = await response.blob();
@@ -55,7 +56,7 @@ export const download = async (url: string, fileName: string, format: string, pa
   const bos = Buffer.from(await blob.arrayBuffer())
   // const bos = blob.stream();
 
-  await writeFile(`./public/images/heraldyka/${path}/${fileName}.${format}`, bos);
+  await writeFile(`./public/images/heraldry/${lang}/${path}/${fileName}.${format}`, bos);
 };
 
 const contentToSave = {};
@@ -63,9 +64,13 @@ const contentToSave = {};
 export const fetchImages = async ({
   administrativeDivisions,
   path,
+  subpage = 'heraldyka',
+  lang = 'pl',
 }: {
   administrativeDivisions: AdministrativeUnit[]
   path: string,
+  subpage?: string,
+  lang?: string,
 }) => {
   console.log(path);
   const total = administrativeDivisions.length;
@@ -76,18 +81,36 @@ export const fetchImages = async ({
 
   for (let i = 0; i < administrativeDivisions.length; i++) {
       const unit = administrativeDivisions[i];
-      const fileName = removeDiacratics(unit.title.toLowerCase()).replace(/[^\w\s]/gi, '').replaceAll(' ', '-');
+      // let fileName = removeDiacratics(unit.title.toLowerCase()).replace(/[^\w\s]/gi, '').replaceAll(' ', '-');
+      let fileName = removeDiacratics(unit.title.toLowerCase()).replace(/[^\w\s]/gi, '').replaceAll(' ', '-');
+
+      // flattening collisions
+      if (unit.title === 'Herb gminy Miedźna') {
+        /*
+          - Herb gminy Miedzna - https://pl.wikipedia.org/wiki/Herb_gminy_Miedzna
+          - Herb gminy Miedźna - https://pl.wikipedia.org/wiki/Herb_gminy_Mied%C5%BAna
+        */
+        fileName += '-with-special-z';
+      }
+
+      if (unit.title === 'Õru valla vapp') {
+        /*
+          - Oru valla vapp - https://et.wikipedia.org/wiki/Oru_valla_vapp
+          - Õru valla vapp - https://et.wikipedia.org/wiki/%C3%95ru_valla_vapp
+        */
+        fileName += '-with-special-o';
+      }
 
       const format = unit.image?.source.split('.').at(-1)?.toLowerCase() || 'png';
-      if (format !== 'png' && existsSync(`./public/images/heraldyka/${path}/${fileName}.png`)) {
-          unlink(`./public/images/heraldyka/${path}/${fileName}.png`, () => {});
+      if (format !== 'png' && existsSync(`./public/images/heraldry/${lang}/${path}/${fileName}.png`)) {
+          unlink(`./public/images/heraldry/${lang}/${path}/${fileName}.png`, () => {});
           console.log(chalk.red(`Removed ${fileName}.png`));
       }
 
       if (unit.image?.source) {
-          if (!existsSync(`./public/images/heraldyka/${path}/${fileName}.${format}`)) {
+          if (!existsSync(`./public/images/heraldry/${lang}/${path}/${fileName}.${format}`)) {
             if (unit.image?.source) {
-              await download(unit.image?.source, fileName, format, path)
+              await download(unit.image?.source, fileName, format, path, lang)
               console.log(`Fetched ${fileName}.${format}`);
 
               if (i % 20 === 0) {
@@ -102,7 +125,7 @@ export const fetchImages = async ({
               console.log(chalk.gray(`Skipping ${fileName}.${format} already exists.`));
           }
 
-          const image = resolve(`./public/images/heraldyka/${path}/${fileName}.${format}`);
+          const image = resolve(`./public/images/heraldry/${lang}/${path}/${fileName}.${format}`);
 
           try {
               const primary = await ColorThief.getColor(image).then(color => {
@@ -161,7 +184,7 @@ export const fetchImages = async ({
               } = getMarkers({
                 text: unit?.description || '',
                 title: unit?.title || '',
-                lang: 'pl',
+                lang,
               })
               
               contentToSave[fileName] = {
@@ -181,8 +204,8 @@ export const fetchImages = async ({
                     return distance < 110;
                   }),
                 },
-                imageUrl: `images/heraldyka/${path}/${fileName}.${format}`,
-                imageSrcSet: getCompressedImageSrc(`images/heraldyka/${path}/${fileName}.${format}`).srcSet,
+                imageUrl: `images/heraldry/${lang}/${path}/${fileName}.${format}`,
+                imageSrcSet: getCompressedImageSrc(`images/heraldry/${lang}/${path}/${fileName}.${format}`).srcSet,
                 shortTitle: unit.title.replace('Herb gminy', 'Herb g.').replace('Herb powiatu', 'Herb p.').replace('Herb miasta', 'Herb').replace(/\((.*)\)/g, ''),
                 markers: {
                   animals,
@@ -197,5 +220,5 @@ export const fetchImages = async ({
       }
   }
 
-  writeFileSync(`./src/pages/heraldyka/${path}-map.json`, JSON.stringify(contentToSave, null, 4));
+  writeFileSync(`./src/pages/${subpage}/${path}-map.json`, JSON.stringify(contentToSave, null, 4));
 };

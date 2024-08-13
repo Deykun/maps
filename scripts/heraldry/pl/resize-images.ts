@@ -2,14 +2,14 @@ import fs from 'fs';
 import sharp from 'sharp';
 import chalk from 'chalk';
 
-const imagesGiminy = fs.readdirSync('./public/images/heraldyka/gminy').map(
-  (imageFile) => ({ imageSrc: `./public/images/heraldyka/gminy/${imageFile}`, imageFile, type: 'gminy' }),
+const imagesGiminy = fs.readdirSync('./public/images/heraldry/pl/gminy').map(
+  (imageFile) => ({ imageSrc: `./public/images/heraldry/pl/gminy/${imageFile}`, imageFile, type: 'gminy' }),
 );
-const imagesMiasta = fs.readdirSync('./public/images/heraldyka/miasta').map(
-  (imageFile) => ({ imageSrc: `./public/images/heraldyka/miasta/${imageFile}`, imageFile, type: 'miasta' }),
+const imagesMiasta = fs.readdirSync('./public/images/heraldry/pl/miasta').map(
+  (imageFile) => ({ imageSrc: `./public/images/heraldry/pl/miasta/${imageFile}`, imageFile, type: 'miasta' }),
 );
-const imagesPowiaty = fs.readdirSync('./public/images/heraldyka/powiaty').map(
-  (imageFile) => ({ imageSrc: `./public/images/heraldyka/powiaty/${imageFile}`, imageFile, type: 'powiaty' }),
+const imagesPowiaty = fs.readdirSync('./public/images/heraldry/pl/powiaty').map(
+  (imageFile) => ({ imageSrc: `./public/images/heraldry/pl/powiaty/${imageFile}`, imageFile, type: 'powiaty' }),
 );
 
 const images = [...imagesGiminy, ...imagesMiasta, ...imagesPowiaty];
@@ -25,9 +25,9 @@ images.forEach(({ type, imageSrc, imageFile }, index) => {
     threshold: 0,
   }
 
-  sharp(imageSrc).trim(trimOptions).resize(null, 200).toFile(`./public/images/heraldyka/web-${type}/${imageName}-x2.webp`);
-  sharp(imageSrc).trim(trimOptions).resize(null, 300).toFile(`./public/images/heraldyka/web-${type}/${imageName}-x3.webp`);
-  sharp(imageSrc).trim(trimOptions).resize(null, 400).toFile(`./public/images/heraldyka/web-${type}/${imageName}-x4.webp`);
+  sharp(imageSrc).trim(trimOptions).resize(null, 200).toFile(`./public/images/heraldry/pl/web-${type}/${imageName}-x2.webp`);
+  sharp(imageSrc).trim(trimOptions).resize(null, 300).toFile(`./public/images/heraldry/pl/web-${type}/${imageName}-x3.webp`);
+  sharp(imageSrc).trim(trimOptions).resize(null, 400).toFile(`./public/images/heraldry/pl/web-${type}/${imageName}-x4.webp`);
 
   if (index % 5 === 0) {
     const progressPercent = (index / total) * 100;

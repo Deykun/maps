@@ -12,7 +12,17 @@ export type GetFilterUnitsResponse = {
   subtitleParts: SubtitlePart[],
 };
 
+let filterResponse = {
+  matches: true,
+  notMatches: false
+};
+
+// DEV: Uncomment to reverse - it helps find matching that were skipped
+// filterResponse.matches = false;
+// filterResponse.notMatches = true;
+
 export const getFilteredUnits = (
+  lang: string,
   units: AdministrativeUnit[],
   filterOperator: 'and' | 'or',
   typeFilers: string[],
@@ -25,12 +35,12 @@ export const getFilteredUnits = (
       const isTypeFilterActive = typeFilers.length > 0;
       if (isTypeFilterActive) {
         if ((unit?.type?.length || 0) === 0) {
-          return false;
+          return filterResponse.notMatches;
         }
 
         const isOneOfPickedTypes = typeFilers.some((active) => (unit?.type || []).includes(active));
         if (!isOneOfPickedTypes) {
-          return false;
+          return filterResponse.notMatches;
         }
       }
 
@@ -38,19 +48,19 @@ export const getFilteredUnits = (
       if (isColorFilterActive) {
         const isPrimary = unit?.colors?.primary?.name && colorFilters.includes(unit?.colors?.primary?.name);
         if (!isPrimary) {
-          return false;
+          return filterResponse.notMatches;
         }
 
         if (!Array.isArray(unit?.colors?.palette) || unit.colors.palette.length === 0) {
-          return false;
+          return filterResponse.notMatches;
         }
         
         if (filterOperator === 'or' && !unit.colors.palette.some(({ name }) => colorFilters.includes(name))) {
-          return false;
+          return filterResponse.notMatches;
         }
 
         if (filterOperator === 'and' && !colorFilters.every((active) => (unit.colors?.palette || []).some(({ name }) => name === active))) {
-          return false;
+          return filterResponse.notMatches;
         }
       }
 
@@ -61,23 +71,23 @@ export const getFilteredUnits = (
 
         if ([WITH_ANIMAL, WITHOUT_ANIMAL].includes(animalFilters[0])) {
           if (animalFilters[0] === WITH_ANIMAL && !hasAnimals) {
-            return false;
+            return filterResponse.notMatches;
           } else if (animalFilters[0] === WITHOUT_ANIMAL && hasAnimals) {
-            return false;
+            return filterResponse.notMatches;
           }
         } else {
           if (!hasAnimals) {
-            return false;
+            return filterResponse.notMatches;
           }
 
           const needOneAndMissing = filterOperator === 'or' && !animalFilters.some((active) => animals.includes(active));
           if (needOneAndMissing) {
-            return false;
+            return filterResponse.notMatches;
           }
 
           const needAllAndMissing = filterOperator === 'and' && !animalFilters.every((active) => animals.includes(active));
           if (needAllAndMissing) {
-            return false;
+            return filterResponse.notMatches;
           }
         }
       }
@@ -88,21 +98,21 @@ export const getFilteredUnits = (
         const hasItems = items.length > 0;
 
         if (!hasItems) {
-          return false;
+          return filterResponse.notMatches;
         }
 
         const needOneAndMissing = filterOperator === 'or' && !itemFilters.some((active) => items.includes(active));
         if (needOneAndMissing) {
-          return false;
+          return filterResponse.notMatches;
         }
 
         const needAllAndMissing = filterOperator === 'and' && !itemFilters.every((active) => items.includes(active));
         if (needAllAndMissing) {
-          return false;
+          return filterResponse.notMatches;
         }
       }
 
-      return true;
+      return filterResponse.matches;
     }
   );
 
@@ -114,7 +124,7 @@ export const getFilteredUnits = (
 
   if (typeFilers.length > 0) {
     // Using and operator for type like city, county is pointless
-    subtitleParts.push({ operator: 'or', labels: typeFilers.map((value) => `heraldry.unit.type.pl.${value}`) })
+    subtitleParts.push({ operator: 'or', labels: typeFilers.map((value) => `heraldry.unit.type.${lang}.${value}`) })
   }
 
   if (colorFilters.length > 0) {
