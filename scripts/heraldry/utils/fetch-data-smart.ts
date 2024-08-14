@@ -8,7 +8,7 @@ import { AdministrativeUnit } from '../../../src/topic/Heraldry/types';
 import { locationTitleByCoatOfArmsTitle } from './constants';
 
 const start = (new Date()).getTime();
-const errors: { title: string, url: string, details?: string }[] = [];
+const errors: { title: string, url: string, details?: string[] }[] = [];
 
 const safeFetchLoop = async ({ page, title }: { page: string, title: string }) => {
   try {
@@ -16,7 +16,7 @@ const safeFetchLoop = async ({ page, title }: { page: string, title: string }) =
 
     const coordinates = await response.coordinates();
 
-    if (coordinates.lat) {
+    if (coordinates?.lat) {
       return {
         isSucces: true,
         response,
@@ -26,12 +26,13 @@ const safeFetchLoop = async ({ page, title }: { page: string, title: string }) =
 
     return {
       isSucces: false,
-      errorMessge: `Missing corrdinates for "${page}". No location.`
+      errorMessge: `Missing corrdinates for "${page}". Page exists but without location.`
     }
   } catch (error) {
     return {
       isSucces: false,
-      errorMessge: `Missing corrdinates for "${page}". No page.`
+      errorMessge: `Missing corrdinates for "${page}". No page.`,
+      errorFromCatch: error,
     }
   }
 };
@@ -49,38 +50,53 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
     division.description = content.substring(0, 3000);
     division.image = summary.thumbnail;
 
-    // const categories = await page.categories();
+    const categories = await page.categories();
     // const images = await page.images();
   
     if (lang === 'fi') {
-        const page = division.title.replace(' vaakuna', '');
+        const name = division.title.replace(' vaakuna', '');
 
-        if (page) {
-          const stringLength = page.length;
-          locationPages = [page].filter(Boolean);
+        if (name) {
+          locationPages.push(name);
 
-          if (page.endsWith('n')) {
-            if (page.endsWith('en')) {
-              locationPages.push(`${page.substr(0, stringLength - 2)}i`);
+          const nameRoot = name.slice(0, -3);
+          if (nameRoot) {
+            division.description.slice(0, 160).split(' ').forEach((word) => {
+              if (word.startsWith(nameRoot)) {
+                locationPages.push(word);
+              }
+            })
+          }
+
+          categories.find((category) => {
+            if (category.split(' ').length <= 2) {
+              // All categories with less than two words
+              locationPages.push(category);
+            }
+          });
+
+          if (name.endsWith('n')) {
+            if (name.endsWith('en')) {
+              locationPages.push(`${name.slice(0, -2)}i`);
             }
 
-            locationPages.push(page.substr(0, stringLength - 1));
-            locationPages.push(`${page.substr(0, stringLength - 1)} (kunta)`);
+            locationPages.push(`${name.slice(0, -1)} (kunta)`);
 
-            if (page.endsWith('gon')) {
-              locationPages.push(`${page.substr(0, stringLength - 3)}ko`);
+            if (name.endsWith('gon')) {
+              locationPages.push(`${name.slice(-3)}ko`);
             }
           }
 
-          locationPages.push(`${page} (kunta)`);
-          locationPages = locationPages.filter(Boolean);
+          locationPages.push(`${name} (kunta)`);
+          locationPages = Array.from(new Set(locationPages.map((item) => item?.replace('Luokka:', '')).filter(Boolean)));
         }
     }
 
     let didFetch = false;
     let divisionPage;
-    let divisionError;
+    const divisionError: string[] = [];
     let divisionCoordinates;
+    let divisionErrorFromApi: any[] = [];
     
     for (let i = 0; i < locationPages.length; i++) {
       const {
@@ -88,8 +104,11 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
         response,
         coordinates,
         errorMessge,
+        errorFromCatch,
       } = await safeFetchLoop({ page: locationPages[i], title: division.title });
-      divisionError = errorMessge;
+      if (errorMessge) {
+        divisionError.push(errorMessge);
+      }
 
       if (isSucces) {
         didFetch = true;
@@ -98,18 +117,32 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
   
         break;
       }
+
+      if (errorFromCatch) {
+        divisionErrorFromApi.push(errorFromCatch);
+      }
     }
 
     if (!didFetch) {
-      console.log(`${chalk.red(`No location was found "${division.title}"`)}. Page not found.`);
+      console.log(`${chalk.red(`No location was found "${division.title}"`)}. Page with the location not found.`);
       console.log(`Tried: ${chalk.yellow(locationPages.join(', '))}`);
+      console.log('Those errors are saved to errors.json at the end.');
       console.log(' ')
       console.log(chalk.red(division.url));
       console.log(' ')
-      console.log(divisionError);
+      console.log(divisionError.join(', '));
+      divisionErrorFromApi.forEach((error) => {
+        console.log(chalk.red(error));
+      })
       errors.push({
-        title: `Missing corrdinates for "${division.title}". Page not found`,
-        details: locationPages.join(', '),
+        title: `Missing corrdinates for "${division.title}". Page with the location not found.`,
+        details: [`Tried pages: ${locationPages.join(', ')}.`,
+          'You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data-smart.ts.',
+          'Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.',
+          'You will find the proper name of the page in the URL, make sure it has lat and lon.',
+          `List of errors:`,
+          ...divisionError
+        ],
         url: division.url,
       });
     }
@@ -151,10 +184,12 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
 
 export const fetchData = async ({
   administrativeDivisions,
+  alreadyFetchedDivisions,
   path,
   lang = 'pl',
 }: {
-  administrativeDivisions: AdministrativeUnit[]
+  administrativeDivisions: AdministrativeUnit[],
+  alreadyFetchedDivisions: AdministrativeUnit[],
   path: string,
   lang?: string,
 }) => {
@@ -171,7 +206,7 @@ export const fetchData = async ({
   const limit = pLimit(2);
 
   const progressStatus = () => {
-    if (processed % 1 === 0) {
+    if (processed % 3 === 0) {
       const progressPercent = (processed / total) * 100;
       const now = (new Date()).getTime();
       const timeDiffrenceInSeconds = Math.floor((now - start) / 1000);
@@ -188,17 +223,33 @@ export const fetchData = async ({
 
   const promises = administrativeDivisions.map((division) => limit(() => new Promise((resolve) => {
     const fetchAndProcess = async () => {
-      const divisionUpdate = await fetchDivision(division, path, lang)
+
+      const fetchedDivision = alreadyFetchedDivisions.find(
+        ({ title, place }) => title === division.title && place?.coordinates?.lat
+      );
+
+      if (fetchedDivision) {
+        contentToSave.push(fetchedDivision);
+        console.log(chalk.gray(`Skipping ${division.title}. Already fetched.`));
+
+        processed = processed + 1;
   
-      contentToSave.push({
-        ...divisionUpdate,
-      });
-
-      processed = processed + 1;
-
-      progressStatus();
-
-      resolve(true);
+        progressStatus();
+  
+        resolve(true);
+      } else {
+        const divisionUpdate = await fetchDivision(division, path, lang)
+  
+        contentToSave.push({
+          ...divisionUpdate,
+        });
+  
+        processed = processed + 1;
+  
+        progressStatus();
+  
+        resolve(true);
+      }
     }
 
     fetchAndProcess();

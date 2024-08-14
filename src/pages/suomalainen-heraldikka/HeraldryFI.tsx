@@ -1,5 +1,4 @@
-// import SvgMap from './components/SvgGmina';
-import SvgMap from '../heraldyka/components/SvgPowiaty';
+import SvgMap from './components/SvgMap';
 import { AdministrativeUnit } from '../../topic/Heraldry/types';
 
 import { getFilter } from '../../topic/Heraldry/utils/getFilter';
@@ -19,25 +18,25 @@ const allUnits: AdministrativeUnit[] = Object.values([
   // ...powiaty,
   // ...miasta,
 ].filter((unit: AdministrativeUnit) => {
-  if ([
-    'Herb Podgórza',
-    'Herb gminy Janów (powiat częstochowski)',
-    'Herb Nowego Bytomia',
-    'Herb gminy Brudzew',
-    'Herb gminy Ostrowice',
-    'Herby miast Śląska Cieszyńskiego',
-  ].includes(unit.title)) {
-    // Historic
-    return false;
-  };
+  // if ([
+  //   'Herb Podgórza',
+  //   'Herb gminy Janów (powiat częstochowski)',
+  //   'Herb Nowego Bytomia',
+  //   'Herb gminy Brudzew',
+  //   'Herb gminy Ostrowice',
+  //   'Herby miast Śląska Cieszyńskiego',
+  // ].includes(unit.title)) {
+  //   // Historic
+  //   return false;
+  // };
 
-  if ([
-    'Herb Trzyńca',
-    'Herb Orłowej',
-  ].includes(unit.title)) {
-    // Outside of Poland
-    return false;
-  }
+  // if ([
+  //   'Herb Trzyńca',
+  //   'Herb Orłowej',
+  // ].includes(unit.title)) {
+  //   // Outside of Poland
+  //   return false;
+  // }
 
   return true;
 }).reduce((stack: {
@@ -77,7 +76,7 @@ const HeraldryFI = () => {
       typeFiltersList={typeFiltersList}
       animalFiltersList={animalFiltersList}
       itemsFiltersList={itemsFiltersList}
-      mapWrapperClassName="aspect-[820_/_775]"
+      mapWrapperClassName="aspect-[361_/_734]"
       map={SvgMap}
     />
   );

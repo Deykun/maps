@@ -1,21 +1,18 @@
 import { AdministrativeUnit } from '../types';
 
 const getPostionForPlaceET = (unit: AdministrativeUnit) => {
-  // https://pl.wikipedia.org/wiki/Geografia_Polski
-
   const minTop = 0;
-  // const maxTop = 54.8;
   const maxTop = 59.97;
   const maxBottom = 57.45;
 
   const maxLeft = 21.46;
   const maxRight = 28.44;
 
-  const polandWidth = maxRight - maxLeft;
+  const mapWidth = maxRight - maxLeft;
 
   const longitude = unit?.place?.coordinates?.lon ?? 0;
   const latitude = unit?.place?.coordinates?.lat ?? 0;
-  const left = `${((longitude - maxLeft) / polandWidth * 100)}%`;
+  const left = `${((longitude - maxLeft) / mapWidth * 100)}%`;
   const top = `${minTop + ((latitude - maxTop) / (maxBottom - maxTop) * 100)}%`;
 
   return {
@@ -25,22 +22,20 @@ const getPostionForPlaceET = (unit: AdministrativeUnit) => {
 };
 
 const getPostionForPlaceFI = (unit: AdministrativeUnit) => {
-  // https://pl.wikipedia.org/wiki/Geografia_Polski
-
   const minTop = 0;
-  // const maxTop = 54.8;
-  const maxTop = 68.97;
-  const maxBottom = 57.45;
+  const maxTop = 71.099;
+  const maxBottom = 60.053;
 
-  const maxLeft = 21.46;
-  const maxRight = 28.44;
+  const maxLeft = 27.085;
+  const maxRight = 30.585;
 
-  const polandWidth = maxRight - maxLeft;
+  const mapWidth = maxRight - maxLeft + 8.2;
+  const mapHeight = maxBottom - maxTop - 0.2;
 
   const longitude = unit?.place?.coordinates?.lon ?? 0;
   const latitude = unit?.place?.coordinates?.lat ?? 0;
-  const left = `${((longitude - maxLeft) / polandWidth * 100)}%`;
-  const top = `${minTop + ((latitude - maxTop) / (maxBottom - maxTop) * 100)}%`;
+  const left = `${64.5 + ((longitude - maxLeft) / mapWidth * 100)}%`;
+  const top = `${minTop + ((latitude - maxTop) / mapHeight * 100)}%`;
 
   return {
     left,
@@ -49,21 +44,18 @@ const getPostionForPlaceFI = (unit: AdministrativeUnit) => {
 };
 
 const getPostionForPlacePL = (unit: AdministrativeUnit) => {
-  // https://pl.wikipedia.org/wiki/Geografia_Polski
-
   const minTop = 0;
-  // const maxTop = 54.8;
   const maxTop = 54.95;
   const maxBottom = 49;
 
   const maxLeft = 13.98;
   const maxRight = 24.25;
 
-  const polandWidth = maxRight - maxLeft;
+  const mapWidth = maxRight - maxLeft;
 
   const longitude = unit?.place?.coordinates?.lon ?? 0;
   const latitude = unit?.place?.coordinates?.lat ?? 0;
-  const left = `${((longitude - maxLeft) / polandWidth * 100)}%`;
+  const left = `${((longitude - maxLeft) / mapWidth * 100)}%`;
   const top = `${minTop + ((latitude - maxTop) / (maxBottom - maxTop) * 100)}%`;
 
   return {

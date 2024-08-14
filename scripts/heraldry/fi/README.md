@@ -20,7 +20,7 @@ https://fi.wikipedia.org/wiki/Luettelo_Suomen_kunnista
 document.querySelectorAll('.CategoryTreeToggle:not([aria-expanded="true"])')
 
 title = document.getElementById('firstHeading').innerText.replace('Luokka:', '');
-group = 'kuntaBySource';
+group = 'historicKuntaBySource';
 key = title
 
 mapped = {

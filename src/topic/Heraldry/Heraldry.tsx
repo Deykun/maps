@@ -1,6 +1,9 @@
 import { memo, useState, useMemo, useCallback, useEffect } from 'react';
 import clsx from 'clsx';
+import { Link } from "wouter";
 import { useTranslation } from 'react-i18next';
+
+import { PATHS_DATA } from '../../constants';
 
 import HeraldryListItem from './components/HeraldryListItem';
 import HeraldryMapItem from './components/HeraldryMapItem';
@@ -215,7 +218,7 @@ const Heraldry = ({
               </p>
             </div>
           </div>
-          <div className="max-w-screen-xl mx-auto border-x p-4 pt-10 pb-10 bg-white">
+          <div className="max-w-screen-xl mx-auto border-x p-4 pt-10">
             <div className="flex items-center mb-3">
               <h3 className="text-[24px] mb-3">{t('heraldry.titleFilters')}</h3>
               <span className="ml-auto">
@@ -264,51 +267,47 @@ const Heraldry = ({
                 </button>
               </span>
             </div>
-            <details className="mb-10">
-              <summary className="w-fit font-[600] tracking-wider">{t('heraldry.animal.filterTitle')}</summary>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-7 mt-3">
-                {[
-                  { value: WITH_ANIMAL, total: 0 },
-                  { value: WITHOUT_ANIMAL, total: 0 },
-                ...animalFiltersList].map(({ value, total }) => 
-                  <button
-                    onClick={() => toggleAnimal(value)}
-                    className={clsx("hover:text-[#ca0505]", { 
-                      'text-[#ca0505]': animalFilters.includes(value),
-                    })}
-                  >
-                    {t(`heraldry.animal.${value}`)} {total > 0 && <small className="text-[10px] text-[#4b4b4b] tracking-widest">({total})</small>}
-                  </button>
-                )}
-              </div>
-            </details>
-            <details className="mb-10">
-              <summary className="w-fit font-[600] tracking-wider">{t('heraldry.item.filterTitle')}</summary>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-7 mt-3">
-                {itemsFiltersList.map(({ value, total }) => 
-                  <button
-                    onClick={() => toggleItem(value)}
-                    className={clsx("hover:text-[#ca0505]", { 
-                      'text-[#ca0505]': itemFilters.includes(value),
-                    })}
-                  >
-                    {t(`heraldry.item.${value}`)} <small className="text-[10px] text-[#4b4b4b] tracking-widest">({total})</small>
-                  </button>
-                )}
-              </div>
-            </details>
-            <div className="mt-20">
-              <h3 className="text-[24px] mb-3">{t('heraldry.list.title')}</h3>
-              <div className="text-right">
-                <label>{t('heraldry.list.limitListTo')}</label>
-                {' '}
-                <input
-                  value={listPhrase}
-                  onChange={(e) => setListPhrase(e.target.value || '')}
-                  className="border-b w-[140px] outline-offset-2 px-2"
-                  placeholder={t('heraldry.list.limitListToPlaceholder')}
-                />
-              </div>
+            <h4 className="w-fit text-[18px] font-[600] tracking-wider">{t('heraldry.animal.filterTitle')}</h4>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-7 mt-3 mb-10">
+              {[
+                { value: WITH_ANIMAL, total: 0 },
+                { value: WITHOUT_ANIMAL, total: 0 },
+              ...animalFiltersList].map(({ value, total }) => 
+                <button
+                  onClick={() => toggleAnimal(value)}
+                  className={clsx("hover:text-[#ca0505]", { 
+                    'text-[#ca0505]': animalFilters.includes(value),
+                  })}
+                >
+                  {t(`heraldry.animal.${value}`)} {total > 0 && <small className="text-[10px] text-[#4b4b4b] tracking-widest">({total})</small>}
+                </button>
+              )}
+            </div>
+            <h4 className="w-fit text-[18px] font-[600] tracking-wider">{t('heraldry.item.filterTitle')}</h4>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-7 mt-3 pb-10">
+              {itemsFiltersList.map(({ value, total }) => 
+                <button
+                  onClick={() => toggleItem(value)}
+                  className={clsx("hover:text-[#ca0505]", { 
+                    'text-[#ca0505]': itemFilters.includes(value),
+                  })}
+                >
+                  {t(`heraldry.item.${value}`)} <small className="text-[10px] text-[#4b4b4b] tracking-widest">({total})</small>
+                </button>
+              )}
+            </div>
+          </div>
+          <div className="max-w-screen-xl mx-auto border-x border-t p-4 pt-10 pb-10">
+            <h3 className="text-[24px] mb-3">{t('heraldry.list.title')}</h3>
+            <div className="text-right">
+              <label>{t('heraldry.list.limitListTo')}</label>
+              {' '}
+              <input
+                value={listPhrase}
+                onChange={(e) => setListPhrase(e.target.value || '')}
+                className="border-b w-[140px] outline-offset-2 px-2"
+                placeholder={t('heraldry.list.limitListToPlaceholder')}
+              />
             </div>
             <ul className="mt-10 grid md:grid-cols-2 xl:grid-cols-3 gap-5">
               {unitsForList.slice(0, 6 + 42 * listPage).map((unit) => (<HeraldryListItem key={unit.title} {...unit} />))}
@@ -322,6 +321,11 @@ const Heraldry = ({
           <p className="max-w-screen-xl mx-auto border-x border p-4 mb-10 text-[12px] text-[#4b4b4b] text-right">
             {t('heraldry.list.footer')} <a href="https://github.com/Deykun/maps/issues" target="_blank" className="text-black hover:text-[#ca0505] font-[600]">github.com/Deykun/maps/issues</a>
           </p>
+          <ul className="max-w-screen-xl mx-auto p-4 mb-10 text-[12px] text-[#4b4b4b] text-center">
+            {PATHS_DATA.map(({ path, pathNameLink }) => (<li key={path} className="inline mx-2">
+              <Link to={`/maps/${path}`}>{pathNameLink}</Link>
+            </li>))}
+          </ul>
         </>
     );
 };
