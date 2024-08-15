@@ -4,17 +4,19 @@ import { AdministrativeUnit } from '../../topic/Heraldry/types';
 import { getFilter } from '../../topic/Heraldry/utils/getFilter';
 
 import kuntaJson from './kunta-map.json'
-// import miastaJSON from './miasta-map.json'
+import maakuntaJson from './maakunta-map.json'
 // import powiatyJSON from './powiaty-map.json'
 
 import Heraldry from '../../topic/Heraldry/Heraldry';
 
 const kunta = Object.values(kuntaJson);
+const maakunta = Object.values(maakuntaJson);
 // const miasta = Object.values(miastaJSON);
 // const powiaty = Object.values(powiatyJSON);
 
 const allUnits: AdministrativeUnit[] = Object.values([
   ...kunta,
+  ...maakunta,
   // ...powiaty,
   // ...miasta,
 ].filter((unit: AdministrativeUnit) => {

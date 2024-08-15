@@ -22,6 +22,7 @@ const formerAdministrativeDivisions: AdministrativeUnit[] = Object.values(urls.h
 fetchData({
 	administrativeDivisions: [...formerAdministrativeDivisions, ...administrativeDivisions],
 	alreadyFetchedDivisions,
+	unitNames: ['kunta'],
 	path: './public/data/heraldry/fi/kunta.json',
 	lang: 'fi',
 });

@@ -18,15 +18,10 @@ import { getMarkers } from './get-markers';
 
 const getColorName = nearestColor.from(colorsByNames);
 
-const getCompressedImageSrc = (imageUrl: string) => {
+const getCompressedImageSrc = (imageUrl: string, path: string) => {
   const [imageSrcWithoutFormat] = imageUrl.split('.');
 
-  const compressedImageSrcWithoutFormat = imageSrcWithoutFormat
-    .replace('/miasta/', '/web-miasta/')
-    .replace('/gminy/', '/web-gminy/')
-    .replace('/powiaty/', '/web-powiaty/')
-    .replace('/unit/', '/web-unit/')
-    .replace('/kunta/', '/web-kunta/');
+  const compressedImageSrcWithoutFormat = imageSrcWithoutFormat.replace(`/${path}/`, `/web-${path}/`);
 
   const srcSet = [
     { name: 'x2', width: '200w' },
@@ -206,7 +201,7 @@ export const fetchImages = async ({
                   }),
                 },
                 imageUrl: `images/heraldry/${lang}/${path}/${fileName}.${format}`,
-                imageSrcSet: getCompressedImageSrc(`images/heraldry/${lang}/${path}/${fileName}.${format}`).srcSet,
+                imageSrcSet: getCompressedImageSrc(`images/heraldry/${lang}/${path}/${fileName}.${format}`, path).srcSet,
                 shortTitle: unit.title.replace('Herb gminy', 'Herb g.').replace('Herb powiatu', 'Herb p.').replace('Herb miasta', 'Herb').replace(/\((.*)\)/g, ''),
                 markers: {
                   animals,

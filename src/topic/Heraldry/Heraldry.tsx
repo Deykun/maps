@@ -167,8 +167,8 @@ const Heraldry = ({
             {t(`heraldry.${lang}.mapTitle`)}
           </h1>
           <HeraldrySubtitle subtitleParts={subtitleParts} />
-          <div
-            className={clsx(coatsSizeClassName, {
+          <section
+            className={clsx(coatsSizeClassName, "map-section", {
               "mb-10": ['compact', 'fullWidth'].includes(mapFitment),
               "max-h-[66vh]": ['compact'].includes(mapFitment),
               "overflow-scroll hide-scroll border-t max-h-[90vh]": ['zoom'].includes(mapFitment),
@@ -194,7 +194,7 @@ const Heraldry = ({
                   ))}
               </div>
             </div>
-          </div>
+          </section>
           <div
             className={clsx('sticky -top-[1px] border-b', {
               "md:-mt-[50px]": mapFitment === 'zoom',
@@ -298,7 +298,11 @@ const Heraldry = ({
             </div>
           </div>
           <div className="max-w-screen-xl mx-auto border-x border-t p-4 pt-10 pb-10">
-            <h3 className="text-[24px] mb-3">{t('heraldry.list.title')}</h3>
+            <h3 className="text-[24px] mb-3">
+              {t('heraldry.list.title')}
+              {' '}
+              {unitsForList.length > 0 && <small className="text-[#4b4b4b] tracking-widest">({unitsForList.length})</small>}
+            </h3>
             <div className="text-right">
               <label>{t('heraldry.list.limitListTo')}</label>
               {' '}

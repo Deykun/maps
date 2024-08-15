@@ -2,11 +2,15 @@ import fs from 'fs';
 import sharp from 'sharp';
 import chalk from 'chalk';
 
-const imagesUnit = fs.readdirSync('./public/images/heraldry/fi/kunta').map(
+const imagesKunta = fs.readdirSync('./public/images/heraldry/fi/kunta').map(
   (imageFile) => ({ imageSrc: `./public/images/heraldry/fi/kunta/${imageFile}`, imageFile, type: 'kunta' }),
 );
 
-const images = [...imagesUnit];
+const imagesMaakunta = fs.readdirSync('./public/images/heraldry/fi/maakunta').map(
+  (imageFile) => ({ imageSrc: `./public/images/heraldry/fi/maakunta/${imageFile}`, imageFile, type: 'maakunta' }),
+);
+
+const images = [...imagesKunta, ...imagesMaakunta];
 
 const start = (new Date()).getTime();
 const total = images.length;

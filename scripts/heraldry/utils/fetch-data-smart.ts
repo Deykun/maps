@@ -10,17 +10,45 @@ import { locationTitleByCoatOfArmsTitle } from './constants';
 const start = (new Date()).getTime();
 const errors: { title: string, url: string, details?: string[] }[] = [];
 
-const safeFetchLoop = async ({ page, title }: { page: string, title: string }) => {
+const safeFetchLoop = async ({ lang, page, title }: { lang: string, page: string, title: string }) => {
   try {
     const response = await wiki.page(page);
 
-    const coordinates = await response.coordinates();
+    let coordinates = await response.coordinates();
 
     if (coordinates?.lat) {
       return {
         isSucces: true,
         response,
         coordinates,
+      }
+    }
+
+    if (lang === 'fi') {
+      const references = await response.infobox();
+
+      // fi: keskus -> en: center
+      if (references.keskus) {
+        try {
+          const responseSubpage = await wiki.page(references.keskus);
+
+          coordinates = await responseSubpage.coordinates();
+  
+          if (coordinates?.lat) {
+            return {
+              isSucces: true,
+              response,
+              coordinates,
+            }
+          }
+        } catch {
+          // 
+        }
+        
+        return {
+          isSucces: false,
+          errorMessge: `Missing corrdinates for "${page}". Page exists but without location, tried related "${references.keskus}". But it failed.`
+        }
       }
     }
 
@@ -37,7 +65,7 @@ const safeFetchLoop = async ({ page, title }: { page: string, title: string }) =
   }
 };
 
-const fetchDivision = async (division: AdministrativeUnit, path: string, lang: string) => {
+const fetchDivision = async (division: AdministrativeUnit, path: string, lang: string, unitNames: string[]) => {
   let locationPages: string[] = locationTitleByCoatOfArmsTitle[division.title]
     ? [locationTitleByCoatOfArmsTitle[division.title]]
     : [];
@@ -80,14 +108,23 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
               locationPages.push(`${name.slice(0, -2)}i`);
             }
 
-            locationPages.push(`${name.slice(0, -1)} (kunta)`);
+            if (unitNames.includes('kunta')) {
+              locationPages.push(`${name.slice(0, -1)} (kunta)`);
+            }
 
             if (name.endsWith('gon')) {
               locationPages.push(`${name.slice(-3)}ko`);
             }
           }
 
-          locationPages.push(`${name} (kunta)`);
+          if (unitNames.includes('maakunta')) {
+            locationPages.push(`${name} maakunta`);
+          }
+
+          if (unitNames.includes('kunta')) {
+            locationPages.push(`${name} (kunta)`);
+          }
+
           locationPages = Array.from(new Set(locationPages.map((item) => item?.replace('Luokka:', '')).filter(Boolean)));
         }
     }
@@ -105,7 +142,7 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
         coordinates,
         errorMessge,
         errorFromCatch,
-      } = await safeFetchLoop({ page: locationPages[i], title: division.title });
+      } = await safeFetchLoop({ lang, page: locationPages[i], title: division.title });
       if (errorMessge) {
         divisionError.push(errorMessge);
       }
@@ -184,12 +221,14 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
 
 export const fetchData = async ({
   administrativeDivisions,
-  alreadyFetchedDivisions,
+  alreadyFetchedDivisions = [],
+  unitNames = [],
   path,
   lang = 'pl',
 }: {
   administrativeDivisions: AdministrativeUnit[],
-  alreadyFetchedDivisions: AdministrativeUnit[],
+  alreadyFetchedDivisions?: AdministrativeUnit[],
+  unitNames?: string[],
   path: string,
   lang?: string,
 }) => {
@@ -225,7 +264,7 @@ export const fetchData = async ({
     const fetchAndProcess = async () => {
 
       const fetchedDivision = alreadyFetchedDivisions.find(
-        ({ title, place }) => title === division.title && place?.coordinates?.lat
+        ({ title, place }) => title === division.title && typeof place?.coordinates?.lat === 'number'
       );
 
       if (fetchedDivision) {
@@ -238,7 +277,7 @@ export const fetchData = async ({
   
         resolve(true);
       } else {
-        const divisionUpdate = await fetchDivision(division, path, lang)
+        const divisionUpdate = await fetchDivision(division, path, lang, unitNames)
   
         contentToSave.push({
           ...divisionUpdate,
