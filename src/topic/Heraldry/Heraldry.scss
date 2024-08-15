@@ -24,7 +24,7 @@ svg {
   }
 }
 
-.map-wrapper {
+.map-section {
   container-type: inline-size;
 }
 
@@ -32,6 +32,7 @@ svg {
   .coats-sm & img {
     height: 1.6rem;
     width: 1.6rem;
+    line-height: 1.6rem;
   }
   
   .coats-md & img {
@@ -39,6 +40,8 @@ svg {
     width: 2rem;
     height: 4.2cqi;
     width: 4.2cqi;
+    line-height: 2rem;
+    line-height: 5.5cqi;
   }
   
   .coats-lg & img {
@@ -46,6 +49,8 @@ svg {
     width: 2.5rem;
     height: 5.5cqi;
     width: 5.5cqi;
+    line-height: 2.5rem;
+    line-height: 5.5cqi;
   }
 
   img {
@@ -54,6 +59,9 @@ svg {
     transition: 0.1s cubic-bezier(0.68, 0, 0.265, 1.30);
     color: #99a2a7;
     max-width: none;
+    line-height: 28px;
+    background-image: radial-gradient(#99a2a7 2px, transparent 2px, transparent);
+    background-position: center;
   }
 
   &:hover {

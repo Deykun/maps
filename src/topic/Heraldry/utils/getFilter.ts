@@ -1,4 +1,4 @@
-import { AdministrativeUnit } from '../constants';
+import { AdministrativeUnit } from '../types';
 
 export type GetFilterResponse = {
   value: string;

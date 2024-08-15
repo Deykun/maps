@@ -9,7 +9,10 @@ const HeraldryListItem = ({ title, url, imageUrl, place, markers }: Administrati
           {imageUrl && <img src={imageUrl} loading="lazy" className="size-20 lg:size-[130px] object-contain" />}
           <div>
             <h3 className="text-[16px] font-[500] hover:text-[#ca0505] mb-1"><a href={url} target="_blank" title="Otwórz Wikipedię w nowej karcie">{title}</a></h3>
-            {place?.name && <p className="text-[12px] text-[#4b4b4b] mb-1">{place.name}</p>}
+            {place?.name ?
+              <p className="text-[12px] text-[#4b4b4b] mb-1">{place.name}</p>
+              : <p className="text-[12px] text-[#ca1a1a] mb-1">{t('heraldry.item.noLocation')}</p>
+            }
             {(markers?.animals || []).length > 0 && <p className="text-[12px]">
               {t("heraldry.animal.filterTitle")}: {(markers?.animals || []).map(value => t(`heraldry.animal.${value}`)).join(', ')}
             </p>}

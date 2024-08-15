@@ -1,6 +1,16 @@
 [
     {
-        "title": "Error fetching Eesti endiste valdade vapid",
-        "url": "https://et.wikipedia.org/wiki/Kategooria:Eesti_endiste_valdade_vapid"
+        "title": "Missing corrdinates for \"Etelä-Pohjanmaan vaakuna\". Page with the location not found.",
+        "details": [
+            "Tried pages: Etelä-Pohjanmaan, Etelä-Pohjanmaa, Etelä-Pohjanmaan maakunta.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data-smart.ts.",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "List of errors:",
+            "Missing corrdinates for \"Etelä-Pohjanmaan\". No page.",
+            "Missing corrdinates for \"Etelä-Pohjanmaa\". Page exists but without location, tried related \"Seinäjoki\". But it failed.",
+            "Missing corrdinates for \"Etelä-Pohjanmaan maakunta\". Page exists but without location, tried related \"Seinäjoki\". But it failed."
+        ],
+        "url": "https://fi.wikipedia.org/wiki/Etel%C3%A4-Pohjanmaan_vaakuna"
     }
 ]
