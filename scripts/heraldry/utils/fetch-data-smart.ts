@@ -104,6 +104,8 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
           });
 
           if (name.endsWith('n')) {
+            locationPages.push(`${name.slice(0, -1)}`);
+
             if (name.endsWith('en')) {
               locationPages.push(`${name.slice(0, -2)}i`);
             }
@@ -242,7 +244,7 @@ export const fetchData = async ({
   const contentToSave: AdministrativeUnit[] = [];
 
   let processed = 0;
-  const limit = pLimit(2);
+  const limit = pLimit(4);
 
   const progressStatus = () => {
     if (processed % 3 === 0) {

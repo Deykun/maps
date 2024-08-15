@@ -118,7 +118,7 @@ export const fetchImages = async ({
               console.log(chalk.red(`Missing ${fileName}.${format}.`));
             }
           } else {
-              console.log(chalk.gray(`Skipping ${fileName}.${format} already exists.`));
+              // console.log(chalk.gray(`Skipping ${fileName}.${format} already exists.`));
           }
 
           const image = resolve(`./public/images/heraldry/${lang}/${path}/${fileName}.${format}`);
@@ -208,8 +208,9 @@ export const fetchImages = async ({
                   items,
                 }
               }
-          } catch {
+          } catch (error) {
               console.log(chalk.red('Missing colors for ', unit.title));
+              console.error(error);
           }
       } else {
           console.log('Missng image for ', unit.title)

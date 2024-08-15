@@ -273,6 +273,27 @@
         }
     },
     {
+        "title": "Björköbyn vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Bj%C3%B6rk%C3%B6byn_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "Björköbyn kunnanvaakuna on saanut aiheensa kunnan historiasta ja nimestä. Björköbyn asukkaat vastasivat aikoinaan postinkulusta Merenkurkun yli, minkä muistona vaakunassa on postitorvi. Torvesta riippuvat koivunlehdet viittaavat kunnan nimeen (ruots. björk, ”koivu”).\nVaakunan on suunnitellut Gustaf von Numers, ja se vahvistettiin käyttöön 6. heinäkuuta 1959. Vaakunan selitys on ”punaisessa kentässä aaltokoroinen tyviö ja postitorvi, josta riippuu kolme koivunlehteä; kaikki kultaa”. Vaakuna muuttui epäviralliseksi kotiseutuvaakunaksi vuonna 1972 Björköbyn liityttyä Mustasaaren kuntaan.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Bj%C3%B6rk%C3%B6by.vaakuna.svg/langfi-320px-Bj%C3%B6rk%C3%B6by.vaakuna.svg.png",
+            "width": 320,
+            "height": 349
+        },
+        "place": {
+            "name": "Björköby (taajama)",
+            "coordinates": {
+                "lat": 63.34638889,
+                "lon": 21.33388889
+            }
+        }
+    },
+    {
         "title": "Bromarvin vaakuna",
         "url": "https://fi.wikipedia.org/wiki/Bromarvin_vaakuna",
         "type": [
@@ -357,27 +378,6 @@
         }
     },
     {
-        "title": "Björköbyn vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Bj%C3%B6rk%C3%B6byn_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Björköbyn kunnanvaakuna on saanut aiheensa kunnan historiasta ja nimestä. Björköbyn asukkaat vastasivat aikoinaan postinkulusta Merenkurkun yli, minkä muistona vaakunassa on postitorvi. Torvesta riippuvat koivunlehdet viittaavat kunnan nimeen (ruots. björk, ”koivu”).\nVaakunan on suunnitellut Gustaf von Numers, ja se vahvistettiin käyttöön 6. heinäkuuta 1959. Vaakunan selitys on ”punaisessa kentässä aaltokoroinen tyviö ja postitorvi, josta riippuu kolme koivunlehteä; kaikki kultaa”. Vaakuna muuttui epäviralliseksi kotiseutuvaakunaksi vuonna 1972 Björköbyn liityttyä Mustasaaren kuntaan.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Bj%C3%B6rk%C3%B6by.vaakuna.svg/langfi-320px-Bj%C3%B6rk%C3%B6by.vaakuna.svg.png",
-            "width": 320,
-            "height": 349
-        },
-        "place": {
-            "name": "Björköby (taajama)",
-            "coordinates": {
-                "lat": 63.34638889,
-                "lon": 21.33388889
-            }
-        }
-    },
-    {
         "title": "Eräjärven vaakuna",
         "url": "https://fi.wikipedia.org/wiki/Er%C3%A4j%C3%A4rven_vaakuna",
         "type": [
@@ -395,6 +395,27 @@
             "coordinates": {
                 "lat": 61.67777778,
                 "lon": 24.35694444
+            }
+        }
+    },
+    {
+        "title": "Haapasaaren vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Haapasaaren_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "Haapasaaren vaakuna oli Haapasaaren kunnan tunnus. Vaakunan aihe viittaa kalastukseen, joka oli kunnan pääelinkeino.\nVaakunan selitys on ”sinisessä kentässä kolme hopeapuikkaria alatusten.” Vaakunan on suunnitellut Kimmo Kara, ja Haapasaaren kunnanvaltuusto hyväksyi sen kokouksessaan 17. syyskuuta 1957. Sisäasiainministeriö vahvisti vaakunan käyttöön 11. joulukuuta samana vuonna.\nVaakuna jäi epäviralliseksi kotiseutuvaakunaksi 1974, kun Haapasaari liittyi Kotkan kaupunkiin.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 129.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.     \nSisäasiainministeriön vahvistamat kaupunkien, kauppaloiden ja kuntien vaakunat 1949-1995 I:8 Haapasaari Kansallisarkiston digitaaliarkisto.",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Haapasaari.vaakuna.svg/langfi-320px-Haapasaari.vaakuna.svg.png",
+            "width": 320,
+            "height": 364
+        },
+        "place": {
+            "name": "Kotkansaari",
+            "coordinates": {
+                "lat": 60.46730556,
+                "lon": 26.94583333
             }
         }
     },
@@ -567,23 +588,23 @@
         }
     },
     {
-        "title": "Haapasaaren vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Haapasaaren_vaakuna",
+        "title": "Honkajoen vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Honkajoen_vaakuna",
         "type": [
             "formerKunta"
         ],
         "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Haapasaaren vaakuna oli Haapasaaren kunnan tunnus. Vaakunan aihe viittaa kalastukseen, joka oli kunnan pääelinkeino.\nVaakunan selitys on ”sinisessä kentässä kolme hopeapuikkaria alatusten.” Vaakunan on suunnitellut Kimmo Kara, ja Haapasaaren kunnanvaltuusto hyväksyi sen kokouksessaan 17. syyskuuta 1957. Sisäasiainministeriö vahvisti vaakunan käyttöön 11. joulukuuta samana vuonna.\nVaakuna jäi epäviralliseksi kotiseutuvaakunaksi 1974, kun Haapasaari liittyi Kotkan kaupunkiin.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 129.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.     \nSisäasiainministeriön vahvistamat kaupunkien, kauppaloiden ja kuntien vaakunat 1949-1995 I:8 Haapasaari Kansallisarkiston digitaaliarkisto.",
+        "description": "Honkajoen vaakuna oli Honkajoen kunnan tunnus, ja se on saanut aiheensa vanhoista perinteistä ja Satakunnan maakunnasta. Haarikka edustaa kädentaitoja ja näistä syntyvää esineistöä, kun taas tähti on peräisin maakunnan vaakunasta.\nVaakunan on suunnitellut Ahti Hammar ja se vahvistettiin Honkajoen vaakunaksi 12. joulukuuta 1952. Vaakuna siirtyi kotiseutuvaakunaksi Honkajoen liityttyä Kankaanpään kaupunkiin vuoden 2021 alussa. Vaakunan selitys on ”sinisessä kentässä kaksikorvainen kultainen haarikka, jonka yläpuolella seitsenkärkinen hopeatähti”.",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Haapasaari.vaakuna.svg/langfi-320px-Haapasaari.vaakuna.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Honkajoki.vaakuna.svg/langfi-320px-Honkajoki.vaakuna.svg.png",
             "width": 320,
-            "height": 364
+            "height": 365
         },
         "place": {
-            "name": "Kotkansaari",
+            "name": "Kauhanevan–Pohjankankaan kansallispuisto",
             "coordinates": {
-                "lat": 60.46730556,
-                "lon": 26.94583333
+                "lat": 62.18333333,
+                "lon": 22.4
             }
         }
     },
@@ -630,23 +651,23 @@
         }
     },
     {
-        "title": "Honkajoen vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Honkajoen_vaakuna",
+        "title": "Hyvinkään maalaiskunnan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Hyvink%C3%A4%C3%A4n_maalaiskunnan_vaakuna",
         "type": [
             "formerKunta"
         ],
         "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Honkajoen vaakuna oli Honkajoen kunnan tunnus, ja se on saanut aiheensa vanhoista perinteistä ja Satakunnan maakunnasta. Haarikka edustaa kädentaitoja ja näistä syntyvää esineistöä, kun taas tähti on peräisin maakunnan vaakunasta.\nVaakunan on suunnitellut Ahti Hammar ja se vahvistettiin Honkajoen vaakunaksi 12. joulukuuta 1952. Vaakuna siirtyi kotiseutuvaakunaksi Honkajoen liityttyä Kankaanpään kaupunkiin vuoden 2021 alussa. Vaakunan selitys on ”sinisessä kentässä kaksikorvainen kultainen haarikka, jonka yläpuolella seitsenkärkinen hopeatähti”.",
+        "description": "Hyvinkään maalaiskunnan vaakuna on saanut aiheensa kunnan alueella sijainneesta vanhasta kruununkaivoksesta, joka perustettiin Juhana-herttuan aikana. Uusikuu on hopean symboli.\nVaakunan selitys on ”sinisessä kentässä hopeinen uusikuu, jonka yläpuolella kultainen kruunu”. Vaakunan on suunnitellut Olof Eriksson, ja se vahvistettiin käyttöön 29. kesäkuuta 1953. Vaakuna muuttui epäviralliseksi 1969 Hyvinkään maalaiskunnan liityttyä Hyvinkään kaupunkiin.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Honkajoki.vaakuna.svg/langfi-320px-Honkajoki.vaakuna.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Hyvink%C3%A4%C3%A4n_mlk.vaakuna.svg/langfi-320px-Hyvink%C3%A4%C3%A4n_mlk.vaakuna.svg.png",
             "width": 320,
-            "height": 365
+            "height": 368
         },
         "place": {
-            "name": "Kauhanevan–Pohjankankaan kansallispuisto",
+            "name": "Hyvinkää",
             "coordinates": {
-                "lat": 62.18333333,
-                "lon": 22.4
+                "lat": 60.63055556,
+                "lon": 24.85972222
             }
         }
     },
@@ -672,23 +693,23 @@
         }
     },
     {
-        "title": "Hyvinkään maalaiskunnan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Hyvink%C3%A4%C3%A4n_maalaiskunnan_vaakuna",
+        "title": "Iisalmen maalaiskunnan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Iisalmen_maalaiskunnan_vaakuna",
         "type": [
             "formerKunta"
         ],
         "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Hyvinkään maalaiskunnan vaakuna on saanut aiheensa kunnan alueella sijainneesta vanhasta kruununkaivoksesta, joka perustettiin Juhana-herttuan aikana. Uusikuu on hopean symboli.\nVaakunan selitys on ”sinisessä kentässä hopeinen uusikuu, jonka yläpuolella kultainen kruunu”. Vaakunan on suunnitellut Olof Eriksson, ja se vahvistettiin käyttöön 29. kesäkuuta 1953. Vaakuna muuttui epäviralliseksi 1969 Hyvinkään maalaiskunnan liityttyä Hyvinkään kaupunkiin.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
+        "description": "Iisalmen maalaiskunnan vaakuna on saanut aiheensa kirjailija Juhani Ahon teoksesta Siihen aikaan kun isä lampun osti, johon vaakunan palavat kynttilät viittaavat. Kirjailijan isä Theodor Brofeldt toimi kirkkoherrana Iisalmen seurakunnassa (vuodesta 1891 eli Iisalmen kaupungin perustamisen jälkeenkin seurakunta oli yhteinen kaupungille ja maalaiskunnalle vuoteen 1922).\nVaakunan selitys on ”mustassa kentässä vieretysten kolme hopeakynttilää, joiden liekit kultaa.” Vaakunan on suunnitellut Olof Eriksson, ja se vahvistettiin käyttöön 20. syyskuuta 1954. Vaakuna jäi epäviralliseksi kotiseutuvaakunaksi 1970 Iisalmen maalaiskunnan liityttyä Iisalmeen.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 131.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Hyvink%C3%A4%C3%A4n_mlk.vaakuna.svg/langfi-320px-Hyvink%C3%A4%C3%A4n_mlk.vaakuna.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Iisalmen_mlk.vaakuna.svg/langfi-320px-Iisalmen_mlk.vaakuna.svg.png",
             "width": 320,
-            "height": 368
+            "height": 369
         },
         "place": {
-            "name": "Hyvinkää",
+            "name": "Iisalmi",
             "coordinates": {
-                "lat": 60.63055556,
-                "lon": 24.85972222
+                "lat": 63.56111111,
+                "lon": 27.18888889
             }
         }
     },
@@ -945,23 +966,23 @@
         }
     },
     {
-        "title": "Iisalmen maalaiskunnan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Iisalmen_maalaiskunnan_vaakuna",
+        "title": "Kajaanin maalaiskunnan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Kajaanin_maalaiskunnan_vaakuna",
         "type": [
             "formerKunta"
         ],
         "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Iisalmen maalaiskunnan vaakuna on saanut aiheensa kirjailija Juhani Ahon teoksesta Siihen aikaan kun isä lampun osti, johon vaakunan palavat kynttilät viittaavat. Kirjailijan isä Theodor Brofeldt toimi kirkkoherrana Iisalmen seurakunnassa (vuodesta 1891 eli Iisalmen kaupungin perustamisen jälkeenkin seurakunta oli yhteinen kaupungille ja maalaiskunnalle vuoteen 1922).\nVaakunan selitys on ”mustassa kentässä vieretysten kolme hopeakynttilää, joiden liekit kultaa.” Vaakunan on suunnitellut Olof Eriksson, ja se vahvistettiin käyttöön 20. syyskuuta 1954. Vaakuna jäi epäviralliseksi kotiseutuvaakunaksi 1970 Iisalmen maalaiskunnan liityttyä Iisalmeen.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 131.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
+        "description": "Kajaanin maalaiskunnan vaakuna oli Kajaanin maalaiskunnan tunnus. Siinä käytetyt korot viittaavat 1600–luvulla pitäjän maille rakennettuun Kajaanin linnaan.\nVaakunan selitys on ”sinisessä kentässä yläreunaltaan sakarakoroinen ja alareunaltaan kuusikoroinen hopeahirsi.” Vaakunan on suunnitellut Kaj Kajander, ja Kajaanin maalaiskunnan kunnanvaltuusto hyväksyi sen 7. toukokuuta 1966. Sisäasiainministeriö vahvisti vaakunan käyttöön 21. syyskuuta samana vuonna.\nVaakuna jäi epäviralliseksi kotiseutuvaakunaksi 1977 Kajaanin maalaiskunnan liityttyä Kajaanin kaupunkiin.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 135.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.     \nSisäasiainministeriön vahvistamat kaupunkien, kauppaloiden ja kuntien vaakunat 1949-1995 I:9 Kajaanin maalaiskunta Kansallisarkiston digitaaliarkisto.    [vanhentunut linkki]",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Iisalmen_mlk.vaakuna.svg/langfi-320px-Iisalmen_mlk.vaakuna.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Kajaanin_mlk.vaakuna.svg/langfi-320px-Kajaanin_mlk.vaakuna.svg.png",
             "width": 320,
-            "height": 369
+            "height": 346
         },
         "place": {
-            "name": "Iisalmi",
+            "name": "Kajaani",
             "coordinates": {
-                "lat": 63.56111111,
-                "lon": 27.18888889
+                "lat": 64.225,
+                "lon": 27.73333333
             }
         }
     },
@@ -1113,23 +1134,23 @@
         }
     },
     {
-        "title": "Kajaanin maalaiskunnan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Kajaanin_maalaiskunnan_vaakuna",
+        "title": "Karjaan maalaiskunnan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Karjaan_maalaiskunnan_vaakuna",
         "type": [
             "formerKunta"
         ],
         "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Kajaanin maalaiskunnan vaakuna oli Kajaanin maalaiskunnan tunnus. Siinä käytetyt korot viittaavat 1600–luvulla pitäjän maille rakennettuun Kajaanin linnaan.\nVaakunan selitys on ”sinisessä kentässä yläreunaltaan sakarakoroinen ja alareunaltaan kuusikoroinen hopeahirsi.” Vaakunan on suunnitellut Kaj Kajander, ja Kajaanin maalaiskunnan kunnanvaltuusto hyväksyi sen 7. toukokuuta 1966. Sisäasiainministeriö vahvisti vaakunan käyttöön 21. syyskuuta samana vuonna.\nVaakuna jäi epäviralliseksi kotiseutuvaakunaksi 1977 Kajaanin maalaiskunnan liityttyä Kajaanin kaupunkiin.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 135.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.     \nSisäasiainministeriön vahvistamat kaupunkien, kauppaloiden ja kuntien vaakunat 1949-1995 I:9 Kajaanin maalaiskunta Kansallisarkiston digitaaliarkisto.    [vanhentunut linkki]",
+        "description": "Karjaan maalaiskunnan vaakuna on saanut aiheensa kunnan historiasta. Kolme muuria viittaa kolmeen Karjaan pitäjän keskiaikaiseen linnan: Raaseporin, Grabbackan ja Junkarsborgin linnoihin. Aaltokoro viittaa Mustionjokeen ja raudan merkki mustalla pohjalla sen varrella olleeseen rautaruukkiin.\nVaakunan selitys on ”aaltokorokatkoisen kilven punaisessa yläkentässä kolme kultaista sakaroitua muuria asetettuina 1 + 2, sen hopeisessa alakentässä musta, aaltokoroinen tyvikenttä, jossa kultainen raudan merkki”. Vaakunan on suunnitellut Gunnar Forsström, ja se vahvistettiin käyttöön 6. helmikuuta 1950. Vaakuna muuttui epäviralliseksi kotiseutuvaakunaksi 1969 Karjaan maalaiskunnan liityttyä Karjaan kauppalaan.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Kajaanin_mlk.vaakuna.svg/langfi-320px-Kajaanin_mlk.vaakuna.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Karjaan_mlk.vaakuna.svg/langfi-320px-Karjaan_mlk.vaakuna.svg.png",
             "width": 320,
-            "height": 346
+            "height": 378
         },
         "place": {
-            "name": "Kajaani",
+            "name": "Karjaa",
             "coordinates": {
-                "lat": 64.225,
-                "lon": 27.73333333
+                "lat": 60.07083333,
+                "lon": 23.6625
             }
         }
     },
@@ -1239,23 +1260,23 @@
         }
     },
     {
-        "title": "Karjaan maalaiskunnan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Karjaan_maalaiskunnan_vaakuna",
+        "title": "Karungin vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Karungin_vaakuna",
         "type": [
             "formerKunta"
         ],
         "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Karjaan maalaiskunnan vaakuna on saanut aiheensa kunnan historiasta. Kolme muuria viittaa kolmeen Karjaan pitäjän keskiaikaiseen linnan: Raaseporin, Grabbackan ja Junkarsborgin linnoihin. Aaltokoro viittaa Mustionjokeen ja raudan merkki mustalla pohjalla sen varrella olleeseen rautaruukkiin.\nVaakunan selitys on ”aaltokorokatkoisen kilven punaisessa yläkentässä kolme kultaista sakaroitua muuria asetettuina 1 + 2, sen hopeisessa alakentässä musta, aaltokoroinen tyvikenttä, jossa kultainen raudan merkki”. Vaakunan on suunnitellut Gunnar Forsström, ja se vahvistettiin käyttöön 6. helmikuuta 1950. Vaakuna muuttui epäviralliseksi kotiseutuvaakunaksi 1969 Karjaan maalaiskunnan liityttyä Karjaan kauppalaan.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
+        "description": "Karungin vaakuna oli Peräpohjolassa sijainneen Karungin kunnan tunnus. Vaakunan aiheen aaltokoro ja siiat viittaavat kalastukseen ja läntiseen rajajokeen, Tornionjokeen.\nVaakunan selitys on ”vihreässä kentässä aaltokoroinen hopeapieli ja kolme hopeista, punavaruksista, uivaa siikaa alatusten”. Vaakunan on suunnitellut Ahti Hammar, ja Karungin kunnanvaltuusto hyväksyi sen kokouksessaan 31. tammikuuta 1955. Sisäasiainministeriö vahvisti vaakunan käyttöön 28. tammikuuta 1956.\nVaakuna muuttui epäviralliseksi kotiseutuvaakunaksi 1973 Karungin liityttyä Tornion kaupunkiin.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 137.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.     \nSisäasiainministeriön vahvistamat kaupunkien, kauppaloiden ja kuntien vaakunat 1949-1995 I:9 Karunki Kansallisarkiston digitaaliarkisto.    [vanhentunut linkki]",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Karjaan_mlk.vaakuna.svg/langfi-320px-Karjaan_mlk.vaakuna.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Karunki.vaakuna.svg/langfi-320px-Karunki.vaakuna.svg.png",
             "width": 320,
-            "height": 378
+            "height": 390
         },
         "place": {
-            "name": "Karjaa",
+            "name": "Karunki (Suomi)",
             "coordinates": {
-                "lat": 60.07083333,
-                "lon": 23.6625
+                "lat": 66.0375,
+                "lon": 24.02222222
             }
         }
     },
@@ -1575,23 +1596,23 @@
         }
     },
     {
-        "title": "Karungin vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Karungin_vaakuna",
+        "title": "Koivulahden vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Koivulahden_vaakuna",
         "type": [
             "formerKunta"
         ],
         "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Karungin vaakuna oli Peräpohjolassa sijainneen Karungin kunnan tunnus. Vaakunan aiheen aaltokoro ja siiat viittaavat kalastukseen ja läntiseen rajajokeen, Tornionjokeen.\nVaakunan selitys on ”vihreässä kentässä aaltokoroinen hopeapieli ja kolme hopeista, punavaruksista, uivaa siikaa alatusten”. Vaakunan on suunnitellut Ahti Hammar, ja Karungin kunnanvaltuusto hyväksyi sen kokouksessaan 31. tammikuuta 1955. Sisäasiainministeriö vahvisti vaakunan käyttöön 28. tammikuuta 1956.\nVaakuna muuttui epäviralliseksi kotiseutuvaakunaksi 1973 Karungin liityttyä Tornion kaupunkiin.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 137.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.     \nSisäasiainministeriön vahvistamat kaupunkien, kauppaloiden ja kuntien vaakunat 1949-1995 I:9 Karunki Kansallisarkiston digitaaliarkisto.    [vanhentunut linkki]",
+        "description": "Koivulahden kunnanvaakuna on saanut aiheensa Koivulahden alueella alkunsa saaneista herätysliikkeistä, joita lilja ja tähdet vaakunassa symboloivat. Alueelta 1920–luvun alussa lähtenyt suurempi herätys tunnettiin Koivulahden herätyksenä.\nVaakunan on suunnitellut Gustaf von Numers, ja se vahvistettiin käyttöön 8. maaliskuuta 1955. Vaakunan selitys on ”sinisessä kentässä lilja, saatteena lakioittain kaksi kuusisakaraista tähteä; kaikki kultaa”. Vaakuna muuttui epäviralliseksi kotiseutuvaakunaksi vuonna 1973 Koivulahden liityttyä Mustasaaren kuntaan.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Karunki.vaakuna.svg/langfi-320px-Karunki.vaakuna.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Koivulahti.vaakuna.svg/langfi-320px-Koivulahti.vaakuna.svg.png",
             "width": 320,
-            "height": 390
+            "height": 356
         },
         "place": {
-            "name": "Karunki (Suomi)",
+            "name": "Koivulahti (kylä)",
             "coordinates": {
-                "lat": 66.0375,
-                "lon": 24.02222222
+                "lat": 63.16083333,
+                "lon": 21.84194444
             }
         }
     },
@@ -1764,27 +1785,6 @@
         }
     },
     {
-        "title": "Koivulahden vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Koivulahden_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Koivulahden kunnanvaakuna on saanut aiheensa Koivulahden alueella alkunsa saaneista herätysliikkeistä, joita lilja ja tähdet vaakunassa symboloivat. Alueelta 1920–luvun alussa lähtenyt suurempi herätys tunnettiin Koivulahden herätyksenä.\nVaakunan on suunnitellut Gustaf von Numers, ja se vahvistettiin käyttöön 8. maaliskuuta 1955. Vaakunan selitys on ”sinisessä kentässä lilja, saatteena lakioittain kaksi kuusisakaraista tähteä; kaikki kultaa”. Vaakuna muuttui epäviralliseksi kotiseutuvaakunaksi vuonna 1973 Koivulahden liityttyä Mustasaaren kuntaan.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Koivulahti.vaakuna.svg/langfi-320px-Koivulahti.vaakuna.svg.png",
-            "width": 320,
-            "height": 356
-        },
-        "place": {
-            "name": "Koivulahti (kylä)",
-            "coordinates": {
-                "lat": 63.16083333,
-                "lon": 21.84194444
-            }
-        }
-    },
-    {
         "title": "Kuopion maalaiskunnan vaakuna",
         "url": "https://fi.wikipedia.org/wiki/Kuopion_maalaiskunnan_vaakuna",
         "type": [
@@ -1802,6 +1802,27 @@
             "coordinates": {
                 "lat": 63.075,
                 "lon": 27.65972222
+            }
+        }
+    },
+    {
+        "title": "Kuoreveden vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Kuoreveden_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "Kuoreveden kunnanvaakuna on saanut aiheensa Kuoreveden kappeliseurakunnan 1600–luvun lopulla rakentamasta Kuoreveden toisesta kirkosta. Kirkon kello ja kruunu viittaavat kuningatar Kristiinan kirkkoon lahjoittamaan kirkonkelloon. Kultarahat kertovat kyseessä olleen uhrikirkon eli lahjoitusvaroin rahoitetun kirkon.\nVaakunan on suunnitellut Olof Eriksson, ja se vahvistettiin käyttöön 23. helmikuuta 1952. Vaakunan selitys on ”punaisessa kentässä kruunattu kirkonkello, saatteena molemmin puolin kolme rahaa paaluittain järjestettyinä; kaikki kultaa”. Vaakuna muuttui epäviralliseksi kotiseutuvaakunaksi 2001 Kuoreveden liityttyä osaksi Jämsän kaupunkia.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.     \nKuoreveden kirkko Museo24.",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Kuorevesi.vaakuna.svg/langfi-320px-Kuorevesi.vaakuna.svg.png",
+            "width": 320,
+            "height": 357
+        },
+        "place": {
+            "name": "Kuoreveden kirkko",
+            "coordinates": {
+                "lat": 61.93333333,
+                "lon": 24.72777778
             }
         }
     },
@@ -1890,23 +1911,23 @@
         }
     },
     {
-        "title": "Kuoreveden vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Kuoreveden_vaakuna",
+        "title": "Kymin vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Kymin_vaakuna",
         "type": [
             "formerKunta"
         ],
         "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Kuoreveden kunnanvaakuna on saanut aiheensa Kuoreveden kappeliseurakunnan 1600–luvun lopulla rakentamasta Kuoreveden toisesta kirkosta. Kirkon kello ja kruunu viittaavat kuningatar Kristiinan kirkkoon lahjoittamaan kirkonkelloon. Kultarahat kertovat kyseessä olleen uhrikirkon eli lahjoitusvaroin rahoitetun kirkon.\nVaakunan on suunnitellut Olof Eriksson, ja se vahvistettiin käyttöön 23. helmikuuta 1952. Vaakunan selitys on ”punaisessa kentässä kruunattu kirkonkello, saatteena molemmin puolin kolme rahaa paaluittain järjestettyinä; kaikki kultaa”. Vaakuna muuttui epäviralliseksi kotiseutuvaakunaksi 2001 Kuoreveden liityttyä osaksi Jämsän kaupunkia.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.     \nKuoreveden kirkko Museo24.",
+        "description": "Kymin vaakuna oli Kymin maalaiskunnan tunnus, joka oli saanut aiheensa entisestä lohijoesta Kymijoesta sekä sen äärellä sijainneesta Kyminkartanosta, jossa toimi kruununkalastamoja.\nVaakunan selitys on ”mustassa kentässä pystyssä hyppäävä hopeinen lohi, sen yläpuolella kultakruunu”. Vaakunan on suunnitellut Ahti Hammar, ja Kymin kunnanvaltuusto hyväksyi sen 28. huhtikuuta 1952. Sisäasiainministeriö vahvisti vaakunan käyttöön myöhemmin samana vuonna 30. toukokuuta. Vaakuna jäi epäviralliseksi kotiseutuvaakunaksi 1977, kun Kymi ja siitä aiemmin erotettu Karhula liitettiin valtioneuvoston päätöksellä Kotkan kaupunkiin.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 141.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.     \nSisäasiainministeriön vahvistamat kaupunkien, kauppaloiden ja kuntien vaakunat I:10 Kymi Kansallisarkiston digitaaliarkisto.    [vanhentunut linkki]",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Kuorevesi.vaakuna.svg/langfi-320px-Kuorevesi.vaakuna.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Kymi.vaakuna.svg/langfi-320px-Kymi.vaakuna.svg.png",
             "width": 320,
-            "height": 357
+            "height": 371
         },
         "place": {
-            "name": "Kuoreveden kirkko",
+            "name": "Karhula",
             "coordinates": {
-                "lat": 61.93333333,
-                "lon": 24.72777778
+                "lat": 60.51522222,
+                "lon": 26.93325
             }
         }
     },
@@ -1995,23 +2016,23 @@
         }
     },
     {
-        "title": "Kymin vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Kymin_vaakuna",
+        "title": "Lappeen vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Lappeen_vaakuna",
         "type": [
             "formerKunta"
         ],
         "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Kymin vaakuna oli Kymin maalaiskunnan tunnus, joka oli saanut aiheensa entisestä lohijoesta Kymijoesta sekä sen äärellä sijainneesta Kyminkartanosta, jossa toimi kruununkalastamoja.\nVaakunan selitys on ”mustassa kentässä pystyssä hyppäävä hopeinen lohi, sen yläpuolella kultakruunu”. Vaakunan on suunnitellut Ahti Hammar, ja Kymin kunnanvaltuusto hyväksyi sen 28. huhtikuuta 1952. Sisäasiainministeriö vahvisti vaakunan käyttöön myöhemmin samana vuonna 30. toukokuuta. Vaakuna jäi epäviralliseksi kotiseutuvaakunaksi 1977, kun Kymi ja siitä aiemmin erotettu Karhula liitettiin valtioneuvoston päätöksellä Kotkan kaupunkiin.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 141.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.     \nSisäasiainministeriön vahvistamat kaupunkien, kauppaloiden ja kuntien vaakunat I:10 Kymi Kansallisarkiston digitaaliarkisto.    [vanhentunut linkki]",
+        "description": "Lappeen kunnanvaakuna oli Lappeen kunnan tunnus, joka oli saanut aiheensa pitäjän keskiaikaisen kirkon suojeluspyhimyksestä Pyhästä Laurentiuksesta, joka esiintyi aiheena jo 1600–luvun alkupuolella Lappeen kihlakunnan sinetissä. Vaakunan halstari liittyy olennaisesti Pyhään Laurentiukseen tämän tunnuksena, joka viittaa tämän marttyyrikuolemaan polttamalla rauta-arinalla. Halstari on myös Lohjan vaakunassa.\nVaakunan on suunnitellut Olof Eriksson, ja se vahvistettiin käyttöön 4. helmikuuta 1953. Vaakunan selitys on ”puna-mustahalkoisessa kilvessä oikealle katsova P. Laurentius pitäen oikeassa kädessään kohotettuna halstaria ja vasemmassa kultarahoja; kaikki muu hopeaa”. Vaakuna muuttui epäviralliseksi kotiseutuvaakunaksi 1967, kun Lappeen kunta liitettiin Lauritsalan kanssa Lappeenrannan kaupunkiin.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 142.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Kymi.vaakuna.svg/langfi-320px-Kymi.vaakuna.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Lappee.vaakuna.svg/langfi-320px-Lappee.vaakuna.svg.png",
             "width": 320,
-            "height": 371
+            "height": 344
         },
         "place": {
-            "name": "Karhula",
+            "name": "Lauritsala",
             "coordinates": {
-                "lat": 60.51522222,
-                "lon": 26.93325
+                "lat": 61.07083333,
+                "lon": 28.25972222
             }
         }
     },
@@ -2163,23 +2184,23 @@
         }
     },
     {
-        "title": "Lappeen vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Lappeen_vaakuna",
+        "title": "Lohjan kunnan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Lohjan_kunnan_vaakuna",
         "type": [
             "formerKunta"
         ],
         "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Lappeen kunnanvaakuna oli Lappeen kunnan tunnus, joka oli saanut aiheensa pitäjän keskiaikaisen kirkon suojeluspyhimyksestä Pyhästä Laurentiuksesta, joka esiintyi aiheena jo 1600–luvun alkupuolella Lappeen kihlakunnan sinetissä. Vaakunan halstari liittyy olennaisesti Pyhään Laurentiukseen tämän tunnuksena, joka viittaa tämän marttyyrikuolemaan polttamalla rauta-arinalla. Halstari on myös Lohjan vaakunassa.\nVaakunan on suunnitellut Olof Eriksson, ja se vahvistettiin käyttöön 4. helmikuuta 1953. Vaakunan selitys on ”puna-mustahalkoisessa kilvessä oikealle katsova P. Laurentius pitäen oikeassa kädessään kohotettuna halstaria ja vasemmassa kultarahoja; kaikki muu hopeaa”. Vaakuna muuttui epäviralliseksi kotiseutuvaakunaksi 1967, kun Lappeen kunta liitettiin Lauritsalan kanssa Lappeenrannan kaupunkiin.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 142.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
+        "description": "Lohjan vaakuna on Lohjan kaupungin tunnus, ja sen on suunnitellut Olof Eriksson. Vaakunan selitys on ”sinisessä kentässä hopeinen halstari paaluittain; sen varren kummallakin puolella saatteena kultainen pähkinäterttu”, ja se on alun perin vahvistettu Lohjan maalaiskunnan kunnanvaakunaksi 31. joulukuuta 1951. Vaakunan halstari on Pyhän Laurentiuksen tunnus, joka on pitäjän keskiaikaisen harmaakivikirkon suojeluspyhimys – kirkon seinämaalauksissa Pyhä Lauri esitetään halstarin kanssa. Pähkinätertut symboloivat seudun runsasta kasvillisuutta. Lohjan kaupunki otti vaakunan käyttöönsä Lohjan kunnan kanssa tehdyn kuntaliitoksen yhteydessä vuonna 1997. \nVain yhdessä muussa Suomen kunnanvaakunassa, Lappeen vaakunassa, on ollut halstari.\n\n\n== Vanha vaakuna ==\n\nAlkuperäinen Lohjan kauppalalle 12. joulukuuta 1951 vahvistettu vaakuna oli Ahti Hammarin suunnittelema. Sen vaakunaselitys on ”sinisessä kentässä kolme hopeista, hopeapunaliekkistä masuunia vieretysten, tyvessä hopeinen punavaruksinen lohi”. Vaakunan masuunit viittaavat seudun vanhaan rautateollisuuteen – kunnassa sijaitsee Suomen vanhin rautakaivos, ja sen yhteyteen perustettiin myöhemmin masuuni. Lohi viittaa puolestaan paikkakunnan nimeen, jonka uskotaan juontavan juurensa sanasta ”lohijoki”.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 118, 144.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.     \nOjamon kartano Lohjan kaupunki.  Arkistoitu 29.5.2008.  Viitattu 15.3.2009.",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Lappee.vaakuna.svg/langfi-320px-Lappee.vaakuna.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Lohja.vaakuna.svg/langfi-320px-Lohja.vaakuna.svg.png",
             "width": 320,
-            "height": 344
+            "height": 352
         },
         "place": {
-            "name": "Lauritsala",
+            "name": "Lohja",
             "coordinates": {
-                "lat": 61.07083333,
-                "lon": 28.25972222
+                "lat": 60.25,
+                "lon": 24.06666667
             }
         }
     },
@@ -2331,17 +2352,24 @@
         }
     },
     {
-        "title": "Lohjan kunnan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Lohjan_kunnan_vaakuna",
+        "title": "Maarian vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Maarian_vaakuna",
         "type": [
             "formerKunta"
         ],
         "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Lohjan vaakuna on Lohjan kaupungin tunnus, ja sen on suunnitellut Olof Eriksson. Vaakunan selitys on ”sinisessä kentässä hopeinen halstari paaluittain; sen varren kummallakin puolella saatteena kultainen pähkinäterttu”, ja se on alun perin vahvistettu Lohjan maalaiskunnan kunnanvaakunaksi 31. joulukuuta 1951. Vaakunan halstari on Pyhän Laurentiuksen tunnus, joka on pitäjän keskiaikaisen harmaakivikirkon suojeluspyhimys – kirkon seinämaalauksissa Pyhä Lauri esitetään halstarin kanssa. Pähkinätertut symboloivat seudun runsasta kasvillisuutta. Lohjan kaupunki otti vaakunan käyttöönsä Lohjan kunnan kanssa tehdyn kuntaliitoksen yhteydessä vuonna 1997. \nVain yhdessä muussa Suomen kunnanvaakunassa, Lappeen vaakunassa, on ollut halstari.\n\n\n== Vanha vaakuna ==\n\nAlkuperäinen Lohjan kauppalalle 12. joulukuuta 1951 vahvistettu vaakuna oli Ahti Hammarin suunnittelema. Sen vaakunaselitys on ”sinisessä kentässä kolme hopeista, hopeapunaliekkistä masuunia vieretysten, tyvessä hopeinen punavaruksinen lohi”. Vaakunan masuunit viittaavat seudun vanhaan rautateollisuuteen – kunnassa sijaitsee Suomen vanhin rautakaivos, ja sen yhteyteen perustettiin myöhemmin masuuni. Lohi viittaa puolestaan paikkakunnan nimeen, jonka uskotaan juontavan juurensa sanasta ”lohijoki”.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 118, 144.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.     \nOjamon kartano Lohjan kaupunki.  Arkistoitu 29.5.2008.  Viitattu 15.3.2009.",
+        "description": "Maarian vaakuna oli Maarian maalaiskunnan tunnus, joka oli saanut aiheensa pitäjällekin nimensä lainanneesta Neitsyt Mariasta. Neitsyt Maria oli lisäksi pitäjän keskiaikaisen harmaakivikirkon suojeluspyhimys, joka esiintyi rukousasennossa myös pitäjän isonvihan aikaisessa nostoväen lipussa. Kruunu ja Marian monogrammit selventävät vaakunan sisältöä.\nVaakunan selitys on ”punaisessa kentässä rukoukseen polvistunut Neitsyt Maria, saateena kummallakin puolellaan Marian monogrammi; kaikki kultaa”. Vaakunan on suunnitellut Ahti Hammar, ja Maarian kunnanvaltuusto hyväksyi sen 17. heinäkuuta 1956. Sisäasiainministeriö vahvisti vaakunan käyttöön 1. lokakuuta samana vuonna. Vaakuna jäi epäviralliseksi kotiseutuvaakunaksi 1967 Maarian liityttyä Turun kaupunkiin.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 145.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.     \nSisäasiainministeriön vahvistamat kaupunkien, kauppaloiden ja kuntien vaakunat I:11 Maaria Kansallisarkiston digitaaliarkisto.    [vanhentunut linkki]",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Lohja.vaakuna.svg/langfi-320px-Lohja.vaakuna.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Maaria.vaakuna.svg/langfi-320px-Maaria.vaakuna.svg.png",
             "width": 320,
-            "height": 352
+            "height": 364
+        },
+        "place": {
+            "name": "Rusko",
+            "coordinates": {
+                "lat": 60.54166667,
+                "lon": 22.22222222
+            }
         }
     },
     {
@@ -2576,23 +2604,23 @@
         }
     },
     {
-        "title": "Maarian vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Maarian_vaakuna",
+        "title": "Naantalin maalaiskunnan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Naantalin_maalaiskunnan_vaakuna",
         "type": [
             "formerKunta"
         ],
         "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Maarian vaakuna oli Maarian maalaiskunnan tunnus, joka oli saanut aiheensa pitäjällekin nimensä lainanneesta Neitsyt Mariasta. Neitsyt Maria oli lisäksi pitäjän keskiaikaisen harmaakivikirkon suojeluspyhimys, joka esiintyi rukousasennossa myös pitäjän isonvihan aikaisessa nostoväen lipussa. Kruunu ja Marian monogrammit selventävät vaakunan sisältöä.\nVaakunan selitys on ”punaisessa kentässä rukoukseen polvistunut Neitsyt Maria, saateena kummallakin puolellaan Marian monogrammi; kaikki kultaa”. Vaakunan on suunnitellut Ahti Hammar, ja Maarian kunnanvaltuusto hyväksyi sen 17. heinäkuuta 1956. Sisäasiainministeriö vahvisti vaakunan käyttöön 1. lokakuuta samana vuonna. Vaakuna jäi epäviralliseksi kotiseutuvaakunaksi 1967 Maarian liityttyä Turun kaupunkiin.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 145.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.     \nSisäasiainministeriön vahvistamat kaupunkien, kauppaloiden ja kuntien vaakunat I:11 Maaria Kansallisarkiston digitaaliarkisto.    [vanhentunut linkki]",
+        "description": "Naantalin maalaiskunnan vaakuna oli Naantalin maalaiskunnan tunnus. Se on saanut aiheensa sanonnasta loistaa kuin Naantalin aurinko sekä puisesta aurinkotunnuksesta, joka oli asetettu koristeeksi 1750-luvun lopulla rakennetun tullihuoneen tulliportin päälle, kaupungin ja maalaiskunnan välille.\nVaakunaselityksestä on huomattava, että vaakunan vahvistamisen aikaan säde- ja liekkikoroja ei vielä eroteltu toisistaan, vaan tämä tapahtui vasta huomattavasti myöhemmin Olof Erikssonin teoksessa Heraldiikka ja symbolit: Opas heraldisten tunnusten muotoilun perusteisiin vuonna 1982. Nykyisin kuvion ulkoreuna selitettäisiin sädekoroksi, ja sitä on käytetty heraldiikassa kuvaamaan valon – ei lämmön – säteilyä.\nVaakunan selitys on ”mustassa kentässä kultainen ulkoreunaltaan liekkikoroinen vihkiristi.” Vaakunan on suunnitellut Ahti Hammar, ja Naantalin maalaiskunnan kunnanvaltuusto hyväksyi sen 30. syyskuuta 1958. Sisäasiainministeriö vahvisti vaakunan käyttöön 24. marraskuuta samana vuonna.\nVaakuna jäi epäviralliseksi kotiseutuvaakunaksi 1964 Naantalin maalaiskunnan liityttyä Naantalin kaupunkiin.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 148.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.     \nSisäasiainministeriön vahvistamat kaupunkien, kauppaloiden ja kuntien vaakunat 1949-1995 I:11 Naantalin maalaiskunta Kansallisarkiston digitaaliarkisto.    [vanhentunut linkki]\n\n\n=== Viitteet ===",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Maaria.vaakuna.svg/langfi-320px-Maaria.vaakuna.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Naantalin_mlk.vaakuna.svg/langfi-320px-Naantalin_mlk.vaakuna.svg.png",
             "width": 320,
-            "height": 364
+            "height": 359
         },
         "place": {
-            "name": "Rusko",
+            "name": "Naantali",
             "coordinates": {
-                "lat": 60.54166667,
-                "lon": 22.22222222
+                "lat": 60.46805556,
+                "lon": 22.02638889
             }
         }
     },
@@ -2744,23 +2772,23 @@
         }
     },
     {
-        "title": "Naantalin maalaiskunnan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Naantalin_maalaiskunnan_vaakuna",
+        "title": "Nurmeksen maalaiskunnan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Nurmeksen_maalaiskunnan_vaakuna",
         "type": [
             "formerKunta"
         ],
         "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Naantalin maalaiskunnan vaakuna oli Naantalin maalaiskunnan tunnus. Se on saanut aiheensa sanonnasta loistaa kuin Naantalin aurinko sekä puisesta aurinkotunnuksesta, joka oli asetettu koristeeksi 1750-luvun lopulla rakennetun tullihuoneen tulliportin päälle, kaupungin ja maalaiskunnan välille.\nVaakunaselityksestä on huomattava, että vaakunan vahvistamisen aikaan säde- ja liekkikoroja ei vielä eroteltu toisistaan, vaan tämä tapahtui vasta huomattavasti myöhemmin Olof Erikssonin teoksessa Heraldiikka ja symbolit: Opas heraldisten tunnusten muotoilun perusteisiin vuonna 1982. Nykyisin kuvion ulkoreuna selitettäisiin sädekoroksi, ja sitä on käytetty heraldiikassa kuvaamaan valon – ei lämmön – säteilyä.\nVaakunan selitys on ”mustassa kentässä kultainen ulkoreunaltaan liekkikoroinen vihkiristi.” Vaakunan on suunnitellut Ahti Hammar, ja Naantalin maalaiskunnan kunnanvaltuusto hyväksyi sen 30. syyskuuta 1958. Sisäasiainministeriö vahvisti vaakunan käyttöön 24. marraskuuta samana vuonna.\nVaakuna jäi epäviralliseksi kotiseutuvaakunaksi 1964 Naantalin maalaiskunnan liityttyä Naantalin kaupunkiin.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 148.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.     \nSisäasiainministeriön vahvistamat kaupunkien, kauppaloiden ja kuntien vaakunat 1949-1995 I:11 Naantalin maalaiskunta Kansallisarkiston digitaaliarkisto.    [vanhentunut linkki]\n\n\n=== Viitteet ===",
+        "description": "Nurmeksen maalaiskunnan vaakuna on saanut aiheensa alueen luonnosta ja metsätaloudesta, joita vaakunan mänty symboloi.\nVaakunan selitys on ”puna-mustahalkoisessa kilvessä hopeamänty, jossa kaksi kultakäpyä”. Vaakunan on suunnitellut Olof Eriksson, ja se vahvistettiin käyttöön 20. huhtikuuta 1953. Vaakuna muuttui epäviralliseksi kotiseutuvaakunaksi 1973 Nurmeksen maalaiskunnan liityttyä Nurmeksen kauppalaan.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 148.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Naantalin_mlk.vaakuna.svg/langfi-320px-Naantalin_mlk.vaakuna.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Nurmeksen_mlk.vaakuna.svg/langfi-320px-Nurmeksen_mlk.vaakuna.svg.png",
             "width": 320,
-            "height": 359
+            "height": 368
         },
         "place": {
-            "name": "Naantali",
+            "name": "Nurmes",
             "coordinates": {
-                "lat": 60.46805556,
-                "lon": 22.02638889
+                "lat": 63.54444444,
+                "lon": 29.13333333
             }
         }
     },
@@ -2807,23 +2835,23 @@
         }
     },
     {
-        "title": "Nurmeksen maalaiskunnan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Nurmeksen_maalaiskunnan_vaakuna",
+        "title": "Oulujoen vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Oulujoen_vaakuna",
         "type": [
             "formerKunta"
         ],
         "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Nurmeksen maalaiskunnan vaakuna on saanut aiheensa alueen luonnosta ja metsätaloudesta, joita vaakunan mänty symboloi.\nVaakunan selitys on ”puna-mustahalkoisessa kilvessä hopeamänty, jossa kaksi kultakäpyä”. Vaakunan on suunnitellut Olof Eriksson, ja se vahvistettiin käyttöön 20. huhtikuuta 1953. Vaakuna muuttui epäviralliseksi kotiseutuvaakunaksi 1973 Nurmeksen maalaiskunnan liityttyä Nurmeksen kauppalaan.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 148.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
+        "description": "Oulujoen vaakuna oli Oulujoen kunnan tunnus. Vaakunan aihe on peräisin pitäjän vanhasta sinetistä, jossa aaltokoroinen hirsi viittaa Oulujokeen, josta pitäjäkin oli saanut nimensä.\nVaakunan selitys on ”sinisessä kentässä reunoihin ulottuva verkko, jonka päälikkeenä aaltokoroinen hirsi; kaikki hopeaa.” Vaakunan on suunnitellut Olof Eriksson, ja Oulujoen kunnanvaltuusto hyväksyi sen kokouksessaan 18. kesäkuuta 1952. Sisäasiainministeriö vahvisti vaakunan käyttöön 5. elokuuta samana vuonna.\n\nVaakuna jäi epäviralliseksi kotiseutuvaakunaksi 1965, kun Oulujoen kunta liitettiin pääosin Ouluun. Vaakunan pohjalta on myöhemmin tehty entisen Oulujoen kunnan alueella käytössä oleva isännänviiri. Viirin on suunnittelut oululainen Henry Mäkelä vuonna 1995.\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 152.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.     \nSisäasiainministeriön vahvistamat kaupunkien, kauppaloiden ja kuntien vaakunat 1949-1995 I:11 Oulujoki Kansallisarkiston digitaaliarkisto.    [vanhentunut linkki]\n\n\n=== Viitteet ===",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Nurmeksen_mlk.vaakuna.svg/langfi-320px-Nurmeksen_mlk.vaakuna.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Oulujoki.vaakuna.svg/langfi-320px-Oulujoki.vaakuna.svg.png",
             "width": 320,
-            "height": 368
+            "height": 355
         },
         "place": {
-            "name": "Nurmes",
+            "name": "Oulujoki (Suomen entinen kunta)",
             "coordinates": {
-                "lat": 63.54444444,
-                "lon": 29.13333333
+                "lat": 65.00541667,
+                "lon": 25.56302778
             }
         }
     },
@@ -2902,6 +2930,13 @@
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Paraisten_mlk.vaakuna.svg/langfi-320px-Paraisten_mlk.vaakuna.svg.png",
             "width": 320,
             "height": 378
+        },
+        "place": {
+            "name": "Parainen",
+            "coordinates": {
+                "lat": 60.3,
+                "lon": 22.3
+            }
         }
     },
     {
@@ -2929,9 +2964,9 @@
         "title": "Pedersören kunnan vaakuna",
         "url": "https://fi.wikipedia.org/wiki/Peders%C3%B6ren_kunnan_vaakuna",
         "type": [
-            "kunta"
+            "formerKunta"
         ],
-        "partOf": "Suomen kuntien vaakunat",
+        "partOf": "Suomen entisten kuntien vaakunat",
         "description": "Pedersören kunnan vaakuna on Pedersören kunnan tunnus. Vaakunan aiheen tähkä viittaa maatalouteen, sen naularistit ja niiden lukumäärä kolmeen aiemmin itsenäiseen kuntaan ja edelleen itsenäiseen seurakuntaan − Pietarsaaren maalaiskuntaan, Ähtävään ja Purmoon, jotka muodostivat 1977 nykyisen kunnan. \nVaakunan selitys on ”punaisessa kentässä kolmen naularistin ympäröimä ohrantähkä; kaikki kultaa”, ja sen on suunnitellut Bo Aurén. Pietarsaaren maalaiskunnan kunnanvaltuusto hyväksyi vaakunan 9. huhtikuuta 1984, ja sisäasiainministeriö vahvisti vaakunan 26. lokakuuta samana vuonna.\n\nAlkuperäinen Pietarsaaren maalaiskunnalle vahvistettu vaakuna oli Gustaf von Numersin suunnittelema, ja sen selitys kuului: ”Punaisessa kentässä kuularisti, jonka ympärillä reunuksittain asetettu köysi, molemmat kultaa.” Vaakunan aiheen risti kuvastaa vanhaa kirkkopitäjää ja sen keskiaikaista kivikirkkoa, joka on yksi Pohjanmaan vanhimmista. Köysi viittaa merenkulkuun. Pietarsaaren maalaiskunnan kunnanvaltuusto hyväksyi tämän vaakunan kokouksessaan 2. toukokuuta 1957, ja sisäasiainministeriö vahvisti sen käyttöön 19. helmikuuta 1958.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 154.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.     \nKunnan vaakuna Pedersören kunta.    [vanhentunut linkki]\nSisäasiainministeriön vahvistamat kaupunkien, kauppaloiden ja kuntien vaakunat 1949–1995 I:12 Pietarsaaren maalaiskunta Kansallisarkiston digitaaliarkisto.    [vanhentunut linkki]",
         "image": {
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Peders%C3%B6re.vaakuna.svg/langfi-320px-Peders%C3%B6re.vaakuna.svg.png",
@@ -3010,17 +3045,24 @@
         }
     },
     {
-        "title": "Oulujoen vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Oulujoen_vaakuna",
+        "title": "Peräseinäjoen vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Per%C3%A4sein%C3%A4joen_vaakuna",
         "type": [
             "formerKunta"
         ],
         "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Oulujoen vaakuna oli Oulujoen kunnan tunnus. Vaakunan aihe on peräisin pitäjän vanhasta sinetistä, jossa aaltokoroinen hirsi viittaa Oulujokeen, josta pitäjäkin oli saanut nimensä.\nVaakunan selitys on ”sinisessä kentässä reunoihin ulottuva verkko, jonka päälikkeenä aaltokoroinen hirsi; kaikki hopeaa.” Vaakunan on suunnitellut Olof Eriksson, ja Oulujoen kunnanvaltuusto hyväksyi sen kokouksessaan 18. kesäkuuta 1952. Sisäasiainministeriö vahvisti vaakunan käyttöön 5. elokuuta samana vuonna.\n\nVaakuna jäi epäviralliseksi kotiseutuvaakunaksi 1965, kun Oulujoen kunta liitettiin pääosin Ouluun. Vaakunan pohjalta on myöhemmin tehty entisen Oulujoen kunnan alueella käytössä oleva isännänviiri. Viirin on suunnittelut oululainen Henry Mäkelä vuonna 1995.\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 152.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.     \nSisäasiainministeriön vahvistamat kaupunkien, kauppaloiden ja kuntien vaakunat 1949-1995 I:11 Oulujoki Kansallisarkiston digitaaliarkisto.    [vanhentunut linkki]\n\n\n=== Viitteet ===",
+        "description": "Peräseinäjoen kunnanvaakuna on saanut aiheensa kydönpoltosta, jota vaakunan painanteinen pilvikoro ja liekit kuvaavat. Kydönpoltossa suo ensin kuivatettiin ojittamalla, jonka jälkeen se seuraavana vuonna raivattiin ja poltettiin.\nVaakunan heraldinen selitys on \"hopeakentässä painanteisen pilvikoron rajoittama sininen lakio ja neljä nousevaa punaista liekkiä\". Vaakunan suunnitteli Ahti Hammar, ja se vahvistettiin käyttöön 23. marraskuuta 1959. Peräseinäjoen liityttyä Seinäjoen kaupunkiin vuonna 2005 vaakuna jäi kotiseutuvaakunaksi.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 151.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Oulujoki.vaakuna.svg/langfi-320px-Oulujoki.vaakuna.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Per%C3%A4sein%C3%A4joki.vaakuna.svg/langfi-320px-Per%C3%A4sein%C3%A4joki.vaakuna.svg.png",
             "width": 320,
-            "height": 355
+            "height": 365
+        },
+        "place": {
+            "name": "Peräseinäjoen kirkonkylä",
+            "coordinates": {
+                "lat": 62.56222222,
+                "lon": 23.06444444
+            }
         }
     },
     {
@@ -3087,20 +3129,6 @@
         }
     },
     {
-        "title": "Peräseinäjoen vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Per%C3%A4sein%C3%A4joen_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Peräseinäjoen kunnanvaakuna on saanut aiheensa kydönpoltosta, jota vaakunan painanteinen pilvikoro ja liekit kuvaavat. Kydönpoltossa suo ensin kuivatettiin ojittamalla, jonka jälkeen se seuraavana vuonna raivattiin ja poltettiin.\nVaakunan heraldinen selitys on \"hopeakentässä painanteisen pilvikoron rajoittama sininen lakio ja neljä nousevaa punaista liekkiä\". Vaakunan suunnitteli Ahti Hammar, ja se vahvistettiin käyttöön 23. marraskuuta 1959. Peräseinäjoen liityttyä Seinäjoen kaupunkiin vuonna 2005 vaakuna jäi kotiseutuvaakunaksi.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 151.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Per%C3%A4sein%C3%A4joki.vaakuna.svg/langfi-320px-Per%C3%A4sein%C3%A4joki.vaakuna.svg.png",
-            "width": 320,
-            "height": 365
-        }
-    },
-    {
         "title": "Pielisjärven vaakuna",
         "url": "https://fi.wikipedia.org/wiki/Pielisj%C3%A4rven_vaakuna",
         "type": [
@@ -3112,6 +3140,34 @@
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Pielisj%C3%A4rvi.vaakuna.svg/langfi-320px-Pielisj%C3%A4rvi.vaakuna.svg.png",
             "width": 320,
             "height": 380
+        },
+        "place": {
+            "name": "Pankakoski",
+            "coordinates": {
+                "lat": 63.3213,
+                "lon": 30.1462
+            }
+        }
+    },
+    {
+        "title": "Pihlajaveden vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Pihlajaveden_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "Pihlajaveden vaakuna oli Pihlajaveden kunnan tunnus, jonka aihe juontuu kunnan nimestä. Vaakuna on osittain puhuva.\nVaakunan selitys on ”hopeakentässä vihreä pihlaja, marjat punaiset.” Vaakunan on suunnitellut Olof Eriksson, ja Pihlajaveden kunnanvaltuusto hyväksyi sen kokouksessaan 19. toukokuuta 1960. Sisäasiainministeriö vahvisti vaakunan käyttöön 10. lokakuuta samana vuonna.\nVaakuna jäi epäviralliseksi kotiseutuvaakunaksi 1969, kun Pihlajavesi liitettiin Keuruun kuntaan.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 155.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.     \nSisäasiainministeriön vahvistamat kaupunkien, kauppaloiden ja kuntien vaakunat 1949-1995 I:12 Pihlajavesi Kansallisarkiston digitaaliarkisto.    [vanhentunut linkki]",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Pihlajavesi.vaakuna.svg/langfi-320px-Pihlajavesi.vaakuna.svg.png",
+            "width": 320,
+            "height": 367
+        },
+        "place": {
+            "name": "Pihlajavesi (Suomen entinen kunta)",
+            "coordinates": {
+                "lat": 62.34527778,
+                "lon": 24.29027778
+            }
         }
     },
     {
@@ -3199,20 +3255,6 @@
         }
     },
     {
-        "title": "Pihlajaveden vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Pihlajaveden_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Pihlajaveden vaakuna oli Pihlajaveden kunnan tunnus, jonka aihe juontuu kunnan nimestä. Vaakuna on osittain puhuva.\nVaakunan selitys on ”hopeakentässä vihreä pihlaja, marjat punaiset.” Vaakunan on suunnitellut Olof Eriksson, ja Pihlajaveden kunnanvaltuusto hyväksyi sen kokouksessaan 19. toukokuuta 1960. Sisäasiainministeriö vahvisti vaakunan käyttöön 10. lokakuuta samana vuonna.\nVaakuna jäi epäviralliseksi kotiseutuvaakunaksi 1969, kun Pihlajavesi liitettiin Keuruun kuntaan.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 155.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.     \nSisäasiainministeriön vahvistamat kaupunkien, kauppaloiden ja kuntien vaakunat 1949-1995 I:12 Pihlajavesi Kansallisarkiston digitaaliarkisto.    [vanhentunut linkki]",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Pihlajavesi.vaakuna.svg/langfi-320px-Pihlajavesi.vaakuna.svg.png",
-            "width": 320,
-            "height": 367
-        }
-    },
-    {
         "title": "Pohjaslahden vaakuna",
         "url": "https://fi.wikipedia.org/wiki/Pohjaslahden_vaakuna",
         "type": [
@@ -3224,6 +3266,13 @@
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Pohjaslahti.vaakuna.svg/langfi-320px-Pohjaslahti.vaakuna.svg.png",
             "width": 320,
             "height": 365
+        },
+        "place": {
+            "name": "Pohjaslahden kirkko",
+            "coordinates": {
+                "lat": 62.16472222,
+                "lon": 24.14138889
+            }
         }
     },
     {
@@ -3238,6 +3287,34 @@
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Porin_mlk.vaakuna.svg/langfi-320px-Porin_mlk.vaakuna.svg.png",
             "width": 320,
             "height": 337
+        },
+        "place": {
+            "name": "Pihlava",
+            "coordinates": {
+                "lat": 61.55944444,
+                "lon": 21.61194444
+            }
+        }
+    },
+    {
+        "title": "Porvoon maalaiskunnan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Porvoon_maalaiskunnan_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "Porvoon maalaiskunnan vaakuna on saanut aiheensa Porvoon kihlakunnan vanhasta sinetistä. Sinetissä on kuvattuna kolme kalaa, jotka luultavasti ovat lohia muistutuksena kihlakunnan kruunulle tärkeistä lohijoista.\nVaakunan selitys on ”punaisessa kentässä kolme kultavaruksista hopealohta asetettuina hirsittäin alatusten”. Vaakunan on suunnitellut Gustaf von Numers, ja se vahvistettiin käyttöön 19. syyskuuta 1953. Vaakuna muuttui epäviralliseksi kotiseutuvaakunaksi 1997 Porvoon maalaiskunnan liityttyä Porvoon kaupunkiin. Vaakunaa ehdotettiin Kansallisarkiston toimesta vuonna 1997 perustetun Itä-Uudenmaan maakunnan vaakunaksi. Maakunta kuitenkin otti käyttöön uuden vaakunan.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.     \n\n\n=== Viitteet ===",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Porvoon_mlk.vaakuna.svg/langfi-320px-Porvoon_mlk.vaakuna.svg.png",
+            "width": 320,
+            "height": 357
+        },
+        "place": {
+            "name": "Porvoo",
+            "coordinates": {
+                "lat": 60.39305556,
+                "lon": 25.66388889
+            }
         }
     },
     {
@@ -3304,17 +3381,24 @@
         }
     },
     {
-        "title": "Porvoon maalaiskunnan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Porvoon_maalaiskunnan_vaakuna",
+        "title": "Pusulan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Pusulan_vaakuna",
         "type": [
             "formerKunta"
         ],
         "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Porvoon maalaiskunnan vaakuna on saanut aiheensa Porvoon kihlakunnan vanhasta sinetistä. Sinetissä on kuvattuna kolme kalaa, jotka luultavasti ovat lohia muistutuksena kihlakunnan kruunulle tärkeistä lohijoista.\nVaakunan selitys on ”punaisessa kentässä kolme kultavaruksista hopealohta asetettuina hirsittäin alatusten”. Vaakunan on suunnitellut Gustaf von Numers, ja se vahvistettiin käyttöön 19. syyskuuta 1953. Vaakuna muuttui epäviralliseksi kotiseutuvaakunaksi 1997 Porvoon maalaiskunnan liityttyä Porvoon kaupunkiin. Vaakunaa ehdotettiin Kansallisarkiston toimesta vuonna 1997 perustetun Itä-Uudenmaan maakunnan vaakunaksi. Maakunta kuitenkin otti käyttöön uuden vaakunan.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.     \n\n\n=== Viitteet ===",
+        "description": "Pusulan vaakuna on saanut aiheensa pitäjän historiasta. Alueen viljelysmaat on aikanaan saatu kaskenraivauksella, johon vaakunan vesuri ja oksakoro viittaavat.\nVaakunan selitys on ”vihreässä kentässä oksakoroinen oikea pieli ja vesuri; molemmat hopeaa”. Vaakunan on suunnitellut Gustaf von Numers, ja se vahvistettiin käyttöön 19. syyskuuta 1963. Vaakuna muuttui epäviralliseksi 1981 Pusulan ja Nummen kuntien yhdistyttyä Nummi-Pusulan kunnaksi.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Porvoon_mlk.vaakuna.svg/langfi-320px-Porvoon_mlk.vaakuna.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Pusula.vaakuna.svg/langfi-320px-Pusula.vaakuna.svg.png",
             "width": 320,
-            "height": 357
+            "height": 344
+        },
+        "place": {
+            "name": "Lohja",
+            "coordinates": {
+                "lat": 60.25,
+                "lon": 24.06666667
+            }
         }
     },
     {
@@ -3581,6 +3665,13 @@
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Rovaniemi.vaakuna.svg/langfi-320px-Rovaniemi.vaakuna.svg.png",
             "width": 320,
             "height": 364
+        },
+        "place": {
+            "name": "Rovaniemi",
+            "coordinates": {
+                "lat": 66.5,
+                "lon": 25.73333333
+            }
         }
     },
     {
@@ -3794,17 +3885,24 @@
         }
     },
     {
-        "title": "Pusulan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Pusulan_vaakuna",
+        "title": "Simpeleen vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Simpeleen_vaakuna",
         "type": [
             "formerKunta"
         ],
         "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Pusulan vaakuna on saanut aiheensa pitäjän historiasta. Alueen viljelysmaat on aikanaan saatu kaskenraivauksella, johon vaakunan vesuri ja oksakoro viittaavat.\nVaakunan selitys on ”vihreässä kentässä oksakoroinen oikea pieli ja vesuri; molemmat hopeaa”. Vaakunan on suunnitellut Gustaf von Numers, ja se vahvistettiin käyttöön 19. syyskuuta 1963. Vaakuna muuttui epäviralliseksi 1981 Pusulan ja Nummen kuntien yhdistyttyä Nummi-Pusulan kunnaksi.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
+        "description": "Simpeleen vaakuna on saanut aiheensa kunnan kehityksestä. Siinä yhdistyvät maatalouspitäjän tunnuksina käytetyt apilat, kun taas hammasratas viittaa kunnan teollistumiseen. Vaakunan värit (punainen ja hopea) kertovat Simpeleen sijainnista Karjalan historiallisessa maakunnassa.\nVaakunan selitys on ”punaisessa kentässä yläreunaltaan sakarakoroinen kaarihirsi, saatteena kolme apilaa, kaksi kaarihirren ylä- ja yksi alapuolella; kaikki hopeaa.” Vaakunan on suunnitellut Ahti Hammar, ja se vahvistettiin käyttöön 25. toukokuuta 1955. Vaakuna jäi epäviralliseksi kotiseutuvaakunaksi 1973 Simpeleen yhdistyttyä Rautjärven kanssa.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 159.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Pusula.vaakuna.svg/langfi-320px-Pusula.vaakuna.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Simpele.vaakuna.svg/langfi-320px-Simpele.vaakuna.svg.png",
             "width": 320,
-            "height": 344
+            "height": 348
+        },
+        "place": {
+            "name": "Simpele (taajama)",
+            "coordinates": {
+                "lat": 61.435,
+                "lon": 29.35944444
+            }
         }
     },
     {
@@ -4113,20 +4211,34 @@
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/S%C3%A4%C3%A4minki.vaakuna.svg/langfi-320px-S%C3%A4%C3%A4minki.vaakuna.svg.png",
             "width": 320,
             "height": 370
+        },
+        "place": {
+            "name": "Savonranta",
+            "coordinates": {
+                "lat": 62.17361111,
+                "lon": 29.20694444
+            }
         }
     },
     {
-        "title": "Simpeleen vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Simpeleen_vaakuna",
+        "title": "Tammisaaren maalaiskunnan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Tammisaaren_maalaiskunnan_vaakuna",
         "type": [
             "formerKunta"
         ],
         "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Simpeleen vaakuna on saanut aiheensa kunnan kehityksestä. Siinä yhdistyvät maatalouspitäjän tunnuksina käytetyt apilat, kun taas hammasratas viittaa kunnan teollistumiseen. Vaakunan värit (punainen ja hopea) kertovat Simpeleen sijainnista Karjalan historiallisessa maakunnassa.\nVaakunan selitys on ”punaisessa kentässä yläreunaltaan sakarakoroinen kaarihirsi, saatteena kolme apilaa, kaksi kaarihirren ylä- ja yksi alapuolella; kaikki hopeaa.” Vaakunan on suunnitellut Ahti Hammar, ja se vahvistettiin käyttöön 25. toukokuuta 1955. Vaakuna jäi epäviralliseksi kotiseutuvaakunaksi 1973 Simpeleen yhdistyttyä Rautjärven kanssa.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 159.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
+        "description": "Tammisaaren maalaiskunnan vaakuna on saanut aiheensa Tammisaaren maalaiskunnan nimestä, johon vaakunan tammenoksa viittaa. Lisäksi aihe on suorassa yhteydessä Tammisaaren kaupungin vaakunaan. Aaltokoro ja kala viittaavat sijaintiin rannikolla ja merkittävään saaristokalastukseen.\nVaakunan on suunnitellut A. W. Rancken, ja se vahvistettiin käyttöön 3. maaliskuuta 1953. Vaakunan selitys on ”hopeakentässä pystyssä vihreä tammenoksa, jossa lehtiä ja alaosassa kaksi punaista terhoa; alapuolella sininen aaltokoroinen tyviö, jossa hopeinen, punavaruksinen kala”. Vaakuna muuttui epäviralliseksi kotiseutuvaakunaksi 1977 kun kunta liittyi Tammisaaren kaupunkiin.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 162.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Simpele.vaakuna.svg/langfi-320px-Simpele.vaakuna.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tammisaaren_mlk.vaakuna.svg/langfi-320px-Tammisaaren_mlk.vaakuna.svg.png",
             "width": 320,
-            "height": 348
+            "height": 399
+        },
+        "place": {
+            "name": "Tammisaari",
+            "coordinates": {
+                "lat": 59.975,
+                "lon": 23.43611111
+            }
         }
     },
     {
@@ -4183,6 +4295,13 @@
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Teerij%C3%A4rvi.vaakuna.svg/langfi-320px-Teerij%C3%A4rvi.vaakuna.svg.png",
             "width": 320,
             "height": 345
+        },
+        "place": {
+            "name": "Kruunupyy",
+            "coordinates": {
+                "lat": 63.72777778,
+                "lon": 23.03333333
+            }
         }
     },
     {
@@ -4409,10 +4528,10 @@
             "height": 344
         },
         "place": {
-            "name": "Alavus",
+            "name": "Töysä",
             "coordinates": {
-                "lat": 62.58611111,
-                "lon": 23.61944444
+                "lat": 62.63611111,
+                "lon": 23.82222222
             }
         }
     },
@@ -4459,17 +4578,24 @@
         }
     },
     {
-        "title": "Tammisaaren maalaiskunnan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Tammisaaren_maalaiskunnan_vaakuna",
+        "title": "Uudenkaarlepyyn maalaiskunnan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Uudenkaarlepyyn_maalaiskunnan_vaakuna",
         "type": [
             "formerKunta"
         ],
         "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Tammisaaren maalaiskunnan vaakuna on saanut aiheensa Tammisaaren maalaiskunnan nimestä, johon vaakunan tammenoksa viittaa. Lisäksi aihe on suorassa yhteydessä Tammisaaren kaupungin vaakunaan. Aaltokoro ja kala viittaavat sijaintiin rannikolla ja merkittävään saaristokalastukseen.\nVaakunan on suunnitellut A. W. Rancken, ja se vahvistettiin käyttöön 3. maaliskuuta 1953. Vaakunan selitys on ”hopeakentässä pystyssä vihreä tammenoksa, jossa lehtiä ja alaosassa kaksi punaista terhoa; alapuolella sininen aaltokoroinen tyviö, jossa hopeinen, punavaruksinen kala”. Vaakuna muuttui epäviralliseksi kotiseutuvaakunaksi 1977 kun kunta liittyi Tammisaaren kaupunkiin.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 162.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
+        "description": "Uudenkaarlepyyn maalaiskunnan vaakuna on saanut aiheensa pitäjänsinetistä vuodelta 1611. Sinetin aiheena on Kaarle IX:n monogrammi, kruunattu C-kirjain. Koska kirjainten käyttäminen ei ole hyvää heraldiikkaa, nimikirjaimen sijaan vaakunaan on valittu puolikuut, joista syntyy peilimonogrammia muistuttava symboli.\nVaakunan selitys on ”punaisessa kentässä kaksi vastakkain kääntynyttä ja lomittaista puolikuuta, joiden päällä kruunu; kaikki kultaa”. Vaakunan on suunnitellut Carol Hedberg, ja se vahvistettiin käyttöön 9. kesäkuuta 1965. Vaakuna muuttui epäviralliseksi kotiseutuvaakunaksi 1975 Uudenkaarlepyyn maalaiskunnan liityttyä Uudenkaarlepyyn kaupunkiin.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 165.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tammisaaren_mlk.vaakuna.svg/langfi-320px-Tammisaaren_mlk.vaakuna.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Uudenkaarlepyyn_mlk.vaakuna.svg/langfi-320px-Uudenkaarlepyyn_mlk.vaakuna.svg.png",
             "width": 320,
-            "height": 399
+            "height": 384
+        },
+        "place": {
+            "name": "Uusikaarlepyy",
+            "coordinates": {
+                "lat": 63.52222222,
+                "lon": 22.53055556
+            }
         }
     },
     {
@@ -4536,17 +4662,24 @@
         }
     },
     {
-        "title": "Uudenkaarlepyyn maalaiskunnan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Uudenkaarlepyyn_maalaiskunnan_vaakuna",
+        "title": "Valtimon vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Valtimon_vaakuna",
         "type": [
             "formerKunta"
         ],
         "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Uudenkaarlepyyn maalaiskunnan vaakuna on saanut aiheensa pitäjänsinetistä vuodelta 1611. Sinetin aiheena on Kaarle IX:n monogrammi, kruunattu C-kirjain. Koska kirjainten käyttäminen ei ole hyvää heraldiikkaa, nimikirjaimen sijaan vaakunaan on valittu puolikuut, joista syntyy peilimonogrammia muistuttava symboli.\nVaakunan selitys on ”punaisessa kentässä kaksi vastakkain kääntynyttä ja lomittaista puolikuuta, joiden päällä kruunu; kaikki kultaa”. Vaakunan on suunnitellut Carol Hedberg, ja se vahvistettiin käyttöön 9. kesäkuuta 1965. Vaakuna muuttui epäviralliseksi kotiseutuvaakunaksi 1975 Uudenkaarlepyyn maalaiskunnan liityttyä Uudenkaarlepyyn kaupunkiin.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 165.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
+        "description": "Valtimon kunnanvaakuna on vuonna 2019 lakkautetun Valtimon kunnan vaakuna, joka on otettu käyttöön vuonna 1952. Se on saanut aiheensa Simon Affleckista, joka toimi veronkerääjänä isonvihan aikoihin nykyisen Pohjois-Karjalan alueella. Suomessa Simo Hurttana tunnettu Affleck sai nimensä pitämänsä suurikokoisen koiran mukaan. Hurtta saavutti maineen säälimättömänä veronkantajana, mitä vaakunassa edustaa seitsemän suden ympärille siroteltua kultarahaa.\nVaakunan selitys on ”punaisessa kentässä hopeinen kultavaruksinen susi pystyssä, saatteena seitsemän kultarahaa järjestettyinä 2 + 2 + 2 + 1”. Vaakunan on suunnitellut Olof Eriksson, ja se vahvistettiin käyttöön 23. helmikuuta 1952.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Uudenkaarlepyyn_mlk.vaakuna.svg/langfi-320px-Uudenkaarlepyyn_mlk.vaakuna.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Valtimo.vaakuna.svg/langfi-320px-Valtimo.vaakuna.svg.png",
             "width": 320,
-            "height": 384
+            "height": 367
+        },
+        "place": {
+            "name": "Valtimon kirkonkylä",
+            "coordinates": {
+                "lat": 63.67916667,
+                "lon": 28.81388889
+            }
         }
     },
     {
@@ -4676,17 +4809,24 @@
         }
     },
     {
-        "title": "Valtimon vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Valtimon_vaakuna",
+        "title": "Velkuan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Velkuan_vaakuna",
         "type": [
             "formerKunta"
         ],
         "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Valtimon kunnanvaakuna on vuonna 2019 lakkautetun Valtimon kunnan vaakuna, joka on otettu käyttöön vuonna 1952. Se on saanut aiheensa Simon Affleckista, joka toimi veronkerääjänä isonvihan aikoihin nykyisen Pohjois-Karjalan alueella. Suomessa Simo Hurttana tunnettu Affleck sai nimensä pitämänsä suurikokoisen koiran mukaan. Hurtta saavutti maineen säälimättömänä veronkantajana, mitä vaakunassa edustaa seitsemän suden ympärille siroteltua kultarahaa.\nVaakunan selitys on ”punaisessa kentässä hopeinen kultavaruksinen susi pystyssä, saatteena seitsemän kultarahaa järjestettyinä 2 + 2 + 2 + 1”. Vaakunan on suunnitellut Olof Eriksson, ja se vahvistettiin käyttöön 23. helmikuuta 1952.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
+        "description": "Velkuan vaakuna toimii soveliaana vertauskuvana kunnan korostetulle saaristolaisluonteelle – kunta koostui yksinomaan saarista, joita oli yli 300 kappaletta.\nVaakunan selitys on ”punaisessa kentässä kultainen veneen peräsin varsineen”. Vaakunan on suunnitellut Gustaf von Numers, ja se vahvistettiin käyttöön 19. maaliskuuta 1968. Vaakuna muuttui epäviralliseksi 2009, kun Velkua liittyi Naantalin kaupunkiin.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Valtimo.vaakuna.svg/langfi-320px-Valtimo.vaakuna.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Velkua.vaakuna.svg/langfi-320px-Velkua.vaakuna.svg.png",
             "width": 320,
-            "height": 367
+            "height": 333
+        },
+        "place": {
+            "name": "Palva (Velkua)",
+            "coordinates": {
+                "lat": 60.46527778,
+                "lon": 21.66138889
+            }
         }
     },
     {
@@ -4732,17 +4872,24 @@
         }
     },
     {
-        "title": "Velkuan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Velkuan_vaakuna",
+        "title": "Viipurin vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Viipurin_vaakuna",
         "type": [
             "formerKunta"
         ],
         "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Velkuan vaakuna toimii soveliaana vertauskuvana kunnan korostetulle saaristolaisluonteelle – kunta koostui yksinomaan saarista, joita oli yli 300 kappaletta.\nVaakunan selitys on ”punaisessa kentässä kultainen veneen peräsin varsineen”. Vaakunan on suunnitellut Gustaf von Numers, ja se vahvistettiin käyttöön 19. maaliskuuta 1968. Vaakuna muuttui epäviralliseksi 2009, kun Velkua liittyi Naantalin kaupunkiin.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
+        "description": "Viipurin vaakuna on Venäjän Leningradin alueella sijaitsevan Viipurin kaupunkikunnan heraldinen tunnus. Vaakuna perustuu kaupungin keskiaikaiseen sinettiin ja sen myöhempiin muunnelmiin. Vaakunassa on kuvattuna enkelien pitelemällä kilvellä kolme kruunua, sekä kaupungin nimeen viittaava W-kirjain. \nViipurin ollessa osa Suomea käytettiin kaupungin tunnuksena pääasiassa linna-aiheista vaakunaa.\n\n\n== Vaakunan historiaa ==\nViipurin kaupunki perustettiin samannimisen linnan läheisyyteen vuonna 1403 ja kaupunki sai ensimmäisen sinettinsä samoihin aikoihin. Sinetissä kuvattiin vaakuna, jonka yläkenttään oli sijoitettu kolme avonaista kruunua, jotka mahdollisesti viittasivat Ruotsin vaakunaan. Kruunujen alapuolella esitettiin kaupungin nimeen viittaava W-kirjain. Ruotsi menetti Viipurin Venäjälle Uudenkaupungin rauhassa vuonna 1721.\n1700-luvulla kaupungin sineteihin lisättiin vanhan vaakunan lisäksi kilvenkannattajiksi kaksi enkeliä. Kyseinen vaakuna virallistettiin vuonna 1788, jolloin kilven punainen yläkenttä ja sininen alakenttä erotettiin kultaisella hirrellä. Kaupungin vanhaa vaakunaa käytettiin myös Viipurin läänin tunnuksena, jonka johdosta kaupungille vahvistettiin Venäjän keisarin päätöksellä uusi vaakuna vuonna 1817. Vaakunassa kuvattiin Viipurin linna ja vanhan vaakunan tapaan W-kirjain. Toisinaan kirjain esitettiin linnan alapuolella, toisinaan sen yllä. Myös vaakunan tarkat värit vaihtelivat. Suomen itsenäistyessä käyttöön vakiintui vaakuna, jossa linna kuvattiin hopeisena sinisellä pohjalla ja W-kirjain kultaisena linnan yllä. Vaakuna pysyi käytössä vuoteen 1944 asti, jolloin Suomi menetti Viipurin osana muita luovutettuja aluita Neuvostoliitolle. Kaupungin vaakuna säilyi Suomen puolella Viipurin perinnejärjestöjen käytössä.\nNeuvostoliiton romahdettua Viipurin kaupunginvaltuusto hyväksyi vuoden 1788 vaakunan kaupungin tunnukseksi 28.11.1994. Myös Viipurin piiri käyttää tunnuksenaan samankaltaista vaakunaa. Erotuksena kaupungin vaakunaan piirin vaakunassa ei ole ylä- ja alakenttiä jakavaa kultahirttä ja yläkentän kruunut ovat sijoitettuna 1+2.\n\n\n== Galleria ==\n\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\n\n== Lähteet ==\nJussi Iltanen: Suomen kuntavaakunat, s. 182.    Karttakeskus, 2013.      \nA. W. Rancken, Kauko Pirinen: Suomen vaakunat ja kaupunginsinetit, s. 82.    Werner Söderström osakeyhtiö, 1949.      \nГерб города Выборг | Геральдика.ру geraldika.ru.   Viitattu 6.10.2020.",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Velkua.vaakuna.svg/langfi-320px-Velkua.vaakuna.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Coat_of_arms_of_Vyborg.svg/langfi-320px-Coat_of_arms_of_Vyborg.svg.png",
             "width": 320,
-            "height": 333
+            "height": 316
+        },
+        "place": {
+            "name": "Viipuri",
+            "coordinates": {
+                "lat": 60.70916667,
+                "lon": 28.74416667
+            }
         }
     },
     {
@@ -4917,9 +5064,9 @@
         "title": "Vöyrin vaakuna",
         "url": "https://fi.wikipedia.org/wiki/V%C3%B6yrin_vaakuna",
         "type": [
-            "kunta"
+            "formerKunta"
         ],
-        "partOf": "Suomen kuntien vaakunat",
+        "partOf": "Suomen entisten kuntien vaakunat",
         "description": "Vöyrin vaakuna on alun perin Maksamaan kunnalle 19. kesäkuuta 1954 vahvistettu vaakuna, jonka Vöyri-Maksamaan kunta otti kunnanvaakunakseen Vöyrin ja Maksamaan kuntaliitoksen yhteydessä vuonna 2007. Vaakunasta tuli 2011 uudelleen perustetun Vöyrin kunnan vaakuna, kun Oravainen ja Vöyri-Maksamaa yhdistyivät Vöyrin kunnaksi.\nVaakunan selitys on ”sinisessä kentässä vedenhaltia pitäen oikeassa kädessään kalaa ja vasemmassa apilanlehteä; kaikki hopeaa.” Vaakunan on suunnitellut Gustaf von Numers, ja sen pääaihe on sama kuin von Numersin suvun, jonka juuret ovat Maksamaalla, vaakunassa. Vaakunan muut tunnukset viittaavat kalastukseen ja maanviljelyyn.\n\nVuonna 2007 lakkautetun Vöyrin kunnan vaakuna oli saanut aiheensa vanhasta pitäjänsinetistä, johon oli kuvattu karhunkäpälä kahden ristin välissä. Tämän vaakunan selitys on ”kultakentässä palkeittainen, musta karhunkäpälä, jonka kynnetkin mustat, saatteena molemmin puolin vihreä apilaristi”. Myös sen oli suunnitellut Gustaf von Numers, ja se vahvistettiin käyttöön 28. joulukuuta 1955. Vaakuna muuttui epäviralliseksi 2007, kun Vöyri yhdistyi Maksamaan kanssa Vöyri-Maksamaan kunnaksi.\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
         "image": {
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/V%C3%B6yri-Maksamaa.vaakuna.svg/langfi-320px-V%C3%B6yri-Maksamaa.vaakuna.svg.png",
@@ -4998,17 +5145,24 @@
         }
     },
     {
-        "title": "Viipurin vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Viipurin_vaakuna",
+        "title": "Ylimarkun vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Ylimarkun_vaakuna",
         "type": [
             "formerKunta"
         ],
         "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Viipurin vaakuna on Venäjän Leningradin alueella sijaitsevan Viipurin kaupunkikunnan heraldinen tunnus. Vaakuna perustuu kaupungin keskiaikaiseen sinettiin ja sen myöhempiin muunnelmiin. Vaakunassa on kuvattuna enkelien pitelemällä kilvellä kolme kruunua, sekä kaupungin nimeen viittaava W-kirjain. \nViipurin ollessa osa Suomea käytettiin kaupungin tunnuksena pääasiassa linna-aiheista vaakunaa.\n\n\n== Vaakunan historiaa ==\nViipurin kaupunki perustettiin samannimisen linnan läheisyyteen vuonna 1403 ja kaupunki sai ensimmäisen sinettinsä samoihin aikoihin. Sinetissä kuvattiin vaakuna, jonka yläkenttään oli sijoitettu kolme avonaista kruunua, jotka mahdollisesti viittasivat Ruotsin vaakunaan. Kruunujen alapuolella esitettiin kaupungin nimeen viittaava W-kirjain. Ruotsi menetti Viipurin Venäjälle Uudenkaupungin rauhassa vuonna 1721.\n1700-luvulla kaupungin sineteihin lisättiin vanhan vaakunan lisäksi kilvenkannattajiksi kaksi enkeliä. Kyseinen vaakuna virallistettiin vuonna 1788, jolloin kilven punainen yläkenttä ja sininen alakenttä erotettiin kultaisella hirrellä. Kaupungin vanhaa vaakunaa käytettiin myös Viipurin läänin tunnuksena, jonka johdosta kaupungille vahvistettiin Venäjän keisarin päätöksellä uusi vaakuna vuonna 1817. Vaakunassa kuvattiin Viipurin linna ja vanhan vaakunan tapaan W-kirjain. Toisinaan kirjain esitettiin linnan alapuolella, toisinaan sen yllä. Myös vaakunan tarkat värit vaihtelivat. Suomen itsenäistyessä käyttöön vakiintui vaakuna, jossa linna kuvattiin hopeisena sinisellä pohjalla ja W-kirjain kultaisena linnan yllä. Vaakuna pysyi käytössä vuoteen 1944 asti, jolloin Suomi menetti Viipurin osana muita luovutettuja aluita Neuvostoliitolle. Kaupungin vaakuna säilyi Suomen puolella Viipurin perinnejärjestöjen käytössä.\nNeuvostoliiton romahdettua Viipurin kaupunginvaltuusto hyväksyi vuoden 1788 vaakunan kaupungin tunnukseksi 28.11.1994. Myös Viipurin piiri käyttää tunnuksenaan samankaltaista vaakunaa. Erotuksena kaupungin vaakunaan piirin vaakunassa ei ole ylä- ja alakenttiä jakavaa kultahirttä ja yläkentän kruunut ovat sijoitettuna 1+2.\n\n\n== Galleria ==\n\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\n\n== Lähteet ==\nJussi Iltanen: Suomen kuntavaakunat, s. 182.    Karttakeskus, 2013.      \nA. W. Rancken, Kauko Pirinen: Suomen vaakunat ja kaupunginsinetit, s. 82.    Werner Söderström osakeyhtiö, 1949.      \nГерб города Выборг | Геральдика.ру geraldika.ru.   Viitattu 6.10.2020.",
+        "description": "Ylimarkun kunnanvaakuna on saanut aiheensa aaltokoroisen palkin symboloimasta Närpiönjoesta, jonka vierille suurin osa kunnan asutuksesta oli keskittynyt, sekä maataloudesta, joka oli pääelinkeino pitäjässä. \n\nVaakunan on suunnitellut G. Lindström, ja se vahvistettiin käyttöön 8. kesäkuuta 1968. Vaakunan selitys on ”sinisessä kentässä aaltokoroinen palkki; saatteena kaksi paaluittaista lyhdettä; kaikki hopeaa”. Vaakuna muuttui epäviralliseksi kotiseutuvaakunaksi Ylimarkun liityttyä Närpiöön 1973.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 168.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Coat_of_arms_of_Vyborg.svg/langfi-320px-Coat_of_arms_of_Vyborg.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Ylimarkku.vaakuna.svg/langfi-320px-Ylimarkku.vaakuna.svg.png",
             "width": 320,
-            "height": 316
+            "height": 360
+        },
+        "place": {
+            "name": "Närpiönjoen vesistö",
+            "coordinates": {
+                "lat": 62.407,
+                "lon": 21.295
+            }
         }
     },
     {
@@ -5117,20 +5271,6 @@
         }
     },
     {
-        "title": "Ylimarkun vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Ylimarkun_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Ylimarkun kunnanvaakuna on saanut aiheensa aaltokoroisen palkin symboloimasta Närpiönjoesta, jonka vierille suurin osa kunnan asutuksesta oli keskittynyt, sekä maataloudesta, joka oli pääelinkeino pitäjässä. \n\nVaakunan on suunnitellut G. Lindström, ja se vahvistettiin käyttöön 8. kesäkuuta 1968. Vaakunan selitys on ”sinisessä kentässä aaltokoroinen palkki; saatteena kaksi paaluittaista lyhdettä; kaikki hopeaa”. Vaakuna muuttui epäviralliseksi kotiseutuvaakunaksi Ylimarkun liityttyä Närpiöön 1973.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 168.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Ylimarkku.vaakuna.svg/langfi-320px-Ylimarkku.vaakuna.svg.png",
-            "width": 320,
-            "height": 360
-        }
-    },
-    {
         "title": "Äänekosken maalaiskunnan vaakuna",
         "url": "https://fi.wikipedia.org/wiki/%C3%84%C3%A4nekosken_maalaiskunnan_vaakuna",
         "type": [
@@ -5142,6 +5282,34 @@
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/%C3%84%C3%A4nekosken_mlk.vaakuna.svg/langfi-320px-%C3%84%C3%A4nekosken_mlk.vaakuna.svg.png",
             "width": 320,
             "height": 357
+        },
+        "place": {
+            "name": "Äänekoski",
+            "coordinates": {
+                "lat": 62.6,
+                "lon": 25.725
+            }
+        }
+    },
+    {
+        "title": "Öjan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/%C3%96jan_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "Öjan vaakuna oli Öjan kunnan tunnus. Vaakunan aihe viittaa Tankarin majakkaan. Tankarin nimi voidaan johtaa vanhasta suomen kielen sanasta tankokari, joka osoittaa ulkosaariston olleen tärkeä merimerkki jo kauan ennen majakan rakentamista.\nVaakunan selitys on ”kultakentässä nouseva musta majakka, jonka lyhdyn ruudut hopeaa.” Sisäasiainministeriö vahvisti vaakunan käyttöön 18. syyskuuta 1959. Vaakunan on suunnitellut Gustaf von Numers, ja Öjan kunnanvaltuusto hyväksyi sen kokouksessaan 23. heinäkuuta 1959. Vaakuna muuttui epäviralliseksi kotiseutuvaakunaksi 1969 Öjan liityttyä Kaarlelan kuntaan.\n\n\n== Lähteet ==\n\nSuomen kunnallisvaakunat, s. 173.    Suomen Kunnallisliitto, 1982.  ISBN 951-773-085-3.    \n\n\n=== Viitteet ===",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/%C3%96ja.vaakuna.svg/langfi-320px-%C3%96ja.vaakuna.svg.png",
+            "width": 320,
+            "height": 355
+        },
+        "place": {
+            "name": "Öjanjärvi",
+            "coordinates": {
+                "lat": 63.8,
+                "lon": 23
+            }
         }
     },
     {
@@ -6019,10 +6187,10 @@
             "height": 365
         },
         "place": {
-            "name": "Hämeenlinna",
+            "name": "Hämeenlinnan keskustaajama",
             "coordinates": {
-                "lat": 61,
-                "lon": 24.46666667
+                "lat": 60.99583333,
+                "lon": 24.46527778
             }
         }
     },
@@ -6586,10 +6754,10 @@
             "height": 366
         },
         "place": {
-            "name": "Kajaani",
+            "name": "Vuolijoki",
             "coordinates": {
-                "lat": 64.225,
-                "lon": 27.73333333
+                "lat": 64.17888889,
+                "lon": 27.00527778
             }
         }
     },
@@ -7006,10 +7174,10 @@
             "height": 365
         },
         "place": {
-            "name": "Kemiönsaari",
+            "name": "Dragsfjärd",
             "coordinates": {
-                "lat": 60.16388889,
-                "lon": 22.72777778
+                "lat": 60.07222222,
+                "lon": 22.46944444
             }
         }
     },
@@ -8329,10 +8497,10 @@
             "height": 346
         },
         "place": {
-            "name": "Masku",
+            "name": "Askainen",
             "coordinates": {
-                "lat": 60.57083333,
-                "lon": 22.1
+                "lat": 60.57222222,
+                "lon": 21.86527778
             }
         }
     },
@@ -9054,9 +9222,9 @@
         "title": "Pedersören kunnan vaakuna",
         "url": "https://fi.wikipedia.org/wiki/Peders%C3%B6ren_kunnan_vaakuna",
         "type": [
-            "kunta"
+            "formerKunta"
         ],
-        "partOf": "Suomen kuntien vaakunat",
+        "partOf": "Suomen entisten kuntien vaakunat",
         "description": "Pedersören kunnan vaakuna on Pedersören kunnan tunnus. Vaakunan aiheen tähkä viittaa maatalouteen, sen naularistit ja niiden lukumäärä kolmeen aiemmin itsenäiseen kuntaan ja edelleen itsenäiseen seurakuntaan − Pietarsaaren maalaiskuntaan, Ähtävään ja Purmoon, jotka muodostivat 1977 nykyisen kunnan. \nVaakunan selitys on ”punaisessa kentässä kolmen naularistin ympäröimä ohrantähkä; kaikki kultaa”, ja sen on suunnitellut Bo Aurén. Pietarsaaren maalaiskunnan kunnanvaltuusto hyväksyi vaakunan 9. huhtikuuta 1984, ja sisäasiainministeriö vahvisti vaakunan 26. lokakuuta samana vuonna.\n\nAlkuperäinen Pietarsaaren maalaiskunnalle vahvistettu vaakuna oli Gustaf von Numersin suunnittelema, ja sen selitys kuului: ”Punaisessa kentässä kuularisti, jonka ympärillä reunuksittain asetettu köysi, molemmat kultaa.” Vaakunan aiheen risti kuvastaa vanhaa kirkkopitäjää ja sen keskiaikaista kivikirkkoa, joka on yksi Pohjanmaan vanhimmista. Köysi viittaa merenkulkuun. Pietarsaaren maalaiskunnan kunnanvaltuusto hyväksyi tämän vaakunan kokouksessaan 2. toukokuuta 1957, ja sisäasiainministeriö vahvisti sen käyttöön 19. helmikuuta 1958.\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat, s. 154.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.     \nKunnan vaakuna Pedersören kunta.    [vanhentunut linkki]\nSisäasiainministeriön vahvistamat kaupunkien, kauppaloiden ja kuntien vaakunat 1949–1995 I:12 Pietarsaaren maalaiskunta Kansallisarkiston digitaaliarkisto.    [vanhentunut linkki]",
         "image": {
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Peders%C3%B6re.vaakuna.svg/langfi-320px-Peders%C3%B6re.vaakuna.svg.png",
@@ -10072,10 +10240,10 @@
             "height": 362
         },
         "place": {
-            "name": "Salo",
+            "name": "Halikko",
             "coordinates": {
-                "lat": 60.38611111,
-                "lon": 23.125
+                "lat": 60.39722222,
+                "lon": 23.07777778
             }
         }
     },
@@ -10114,10 +10282,10 @@
             "height": 365
         },
         "place": {
-            "name": "Sastamala",
+            "name": "Karkku",
             "coordinates": {
-                "lat": 61.34027778,
-                "lon": 22.90972222
+                "lat": 61.41833333,
+                "lon": 23.01305556
             }
         }
     },
@@ -11469,9 +11637,9 @@
         "title": "Vöyrin vaakuna",
         "url": "https://fi.wikipedia.org/wiki/V%C3%B6yrin_vaakuna",
         "type": [
-            "kunta"
+            "formerKunta"
         ],
-        "partOf": "Suomen kuntien vaakunat",
+        "partOf": "Suomen entisten kuntien vaakunat",
         "description": "Vöyrin vaakuna on alun perin Maksamaan kunnalle 19. kesäkuuta 1954 vahvistettu vaakuna, jonka Vöyri-Maksamaan kunta otti kunnanvaakunakseen Vöyrin ja Maksamaan kuntaliitoksen yhteydessä vuonna 2007. Vaakunasta tuli 2011 uudelleen perustetun Vöyrin kunnan vaakuna, kun Oravainen ja Vöyri-Maksamaa yhdistyivät Vöyrin kunnaksi.\nVaakunan selitys on ”sinisessä kentässä vedenhaltia pitäen oikeassa kädessään kalaa ja vasemmassa apilanlehteä; kaikki hopeaa.” Vaakunan on suunnitellut Gustaf von Numers, ja sen pääaihe on sama kuin von Numersin suvun, jonka juuret ovat Maksamaalla, vaakunassa. Vaakunan muut tunnukset viittaavat kalastukseen ja maanviljelyyn.\n\nVuonna 2007 lakkautetun Vöyrin kunnan vaakuna oli saanut aiheensa vanhasta pitäjänsinetistä, johon oli kuvattu karhunkäpälä kahden ristin välissä. Tämän vaakunan selitys on ”kultakentässä palkeittainen, musta karhunkäpälä, jonka kynnetkin mustat, saatteena molemmin puolin vihreä apilaristi”. Myös sen oli suunnitellut Gustaf von Numers, ja se vahvistettiin käyttöön 28. joulukuuta 1955. Vaakuna muuttui epäviralliseksi 2007, kun Vöyri yhdistyi Maksamaan kanssa Vöyri-Maksamaan kunnaksi.\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\n\n\n== Lähteet ==\nSuomen kunnallisvaakunat.    Suomen Kunnallisliitto, 1982. ISBN 951-773-085-3.",
         "image": {
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/V%C3%B6yri-Maksamaa.vaakuna.svg/langfi-320px-V%C3%B6yri-Maksamaa.vaakuna.svg.png",
@@ -11605,25 +11773,11 @@
             "height": 353
         },
         "place": {
-            "name": "Äänekoski",
+            "name": "Suolahti",
             "coordinates": {
-                "lat": 62.6,
-                "lon": 25.725
+                "lat": 62.56388889,
+                "lon": 25.85277778
             }
-        }
-    },
-    {
-        "title": "Öjan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/%C3%96jan_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "Öjan vaakuna oli Öjan kunnan tunnus. Vaakunan aihe viittaa Tankarin majakkaan. Tankarin nimi voidaan johtaa vanhasta suomen kielen sanasta tankokari, joka osoittaa ulkosaariston olleen tärkeä merimerkki jo kauan ennen majakan rakentamista.\nVaakunan selitys on ”kultakentässä nouseva musta majakka, jonka lyhdyn ruudut hopeaa.” Sisäasiainministeriö vahvisti vaakunan käyttöön 18. syyskuuta 1959. Vaakunan on suunnitellut Gustaf von Numers, ja Öjan kunnanvaltuusto hyväksyi sen kokouksessaan 23. heinäkuuta 1959. Vaakuna muuttui epäviralliseksi kotiseutuvaakunaksi 1969 Öjan liityttyä Kaarlelan kuntaan.\n\n\n== Lähteet ==\n\nSuomen kunnallisvaakunat, s. 173.    Suomen Kunnallisliitto, 1982.  ISBN 951-773-085-3.    \n\n\n=== Viitteet ===",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/%C3%96ja.vaakuna.svg/langfi-320px-%C3%96ja.vaakuna.svg.png",
-            "width": 320,
-            "height": 355
         }
     }
 ]

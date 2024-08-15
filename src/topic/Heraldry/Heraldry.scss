@@ -25,32 +25,51 @@ svg {
 }
 
 .map-section {
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-bottom: 1vw;
+
+  &.map-section--large {
+    padding-bottom: 100px;
+  }
+}
+
+.map-wrapper {
   container-type: inline-size;
 }
 
 .coat {
+  img {
+    height: 2.6rem;
+    width: 2.6rem;
+  }
+
   .coats-sm & img {
-    height: 1.6rem;
-    width: 1.6rem;
-    line-height: 1.6rem;
+    // height: 1.6rem;
+    // width: 1.6rem;
+    // line-height: 1.6rem;
+    // height: 3.2cqi;
+    // width: 3.2cqi;
+    // line-height: 1.6rem;
+    // line-height: 3.2cqi;
   }
   
   .coats-md & img {
-    height: 2rem;
-    width: 2rem;
-    height: 4.2cqi;
-    width: 4.2cqi;
-    line-height: 2rem;
-    line-height: 5.5cqi;
+    // height: 2rem;
+    // width: 2rem;
+    // height: 4.2cqi;
+    // width: 4.2cqi;
+    // line-height: 2rem;
+    // line-height: 5.5cqi;
   }
   
   .coats-lg & img {
-    height: 2.5rem;
-    width: 2.5rem;
-    height: 5.5cqi;
-    width: 5.5cqi;
-    line-height: 2.5rem;
-    line-height: 5.5cqi;
+    // height: 2.5rem;
+    // width: 2.5rem;
+    // height: 5.5cqi;
+    // width: 5.5cqi;
+    // line-height: 2.5rem;
+    // line-height: 5.5cqi;
   }
 
   img {
@@ -58,6 +77,8 @@ svg {
     transition-delay: 0.1s;
     transition: 0.1s cubic-bezier(0.68, 0, 0.265, 1.30);
     color: #99a2a7;
+    height: auto;
+    max-height: 80px;
     max-width: none;
     line-height: 28px;
     background-image: radial-gradient(#99a2a7 2px, transparent 2px, transparent);
@@ -68,7 +89,8 @@ svg {
     img {
       height: 100px;
       width: 100px;
-      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.46));
+      max-height: 100px;
+      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
     }
 
     &::before {

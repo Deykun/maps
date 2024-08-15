@@ -37,7 +37,10 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/ahlaisten-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/ahlaisten-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/ahlaisten-vaakuna-x4.webp 400w",
         "shortTitle": "Ahlaisten vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "gull",
+                "bird"
+            ],
             "items": []
         }
     },
@@ -115,7 +118,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/alaharman-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/alaharman-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/alaharman-vaakuna-x4.webp 400w",
         "shortTitle": "Alahärmän vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "bear"
+            ],
             "items": []
         }
     },
@@ -193,8 +198,13 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/alatornion-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/alatornion-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/alatornion-vaakuna-x4.webp 400w",
         "shortTitle": "Alatornion vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
+            "animals": [
+                "salmon",
+                "fish"
+            ],
+            "items": [
+                "arrow"
+            ]
         }
     },
     "alavetelin-vaakuna": {
@@ -278,7 +288,9 @@
         "shortTitle": "Angelniemen vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "anchor"
+            ]
         }
     },
     "anjalan-vaakuna": {
@@ -439,7 +451,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/artjarven-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/artjarven-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/artjarven-vaakuna-x4.webp 400w",
         "shortTitle": "Artjärven vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "fish"
+            ],
             "items": []
         }
     },
@@ -523,8 +537,54 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/bergon-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/bergon-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/bergon-vaakuna-x4.webp 400w",
         "shortTitle": "Bergön vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "seal"
+            ],
             "items": []
+        }
+    },
+    "bjorkobyn-vaakuna": {
+        "title": "Björköbyn vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Bj%C3%B6rk%C3%B6byn_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Bj%C3%B6rk%C3%B6by.vaakuna.svg/langfi-320px-Bj%C3%B6rk%C3%B6by.vaakuna.svg.png",
+            "width": 320,
+            "height": 349
+        },
+        "place": {
+            "name": "Björköby (taajama)",
+            "coordinates": {
+                "lat": 63.34638889,
+                "lon": 21.33388889
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#bc9c4d",
+                "name": "red",
+                "distance": 186.4242473499625
+            },
+            "palette": [
+                {
+                    "color": "#e80b07",
+                    "name": "red",
+                    "distance": 26.43860813280457
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/kunta/bjorkobyn-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/bjorkobyn-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/bjorkobyn-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/bjorkobyn-vaakuna-x4.webp 400w",
+        "shortTitle": "Björköbyn vaakuna",
+        "markers": {
+            "animals": [],
+            "items": [
+                "tree"
+            ]
         }
     },
     "bromarvin-vaakuna": {
@@ -565,42 +625,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/bromarvin-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/bromarvin-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/bromarvin-vaakuna-x4.webp 400w",
         "shortTitle": "Bromarvin vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
-        }
-    },
-    "bjorkobyn-vaakuna": {
-        "title": "Björköbyn vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Bj%C3%B6rk%C3%B6byn_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Bj%C3%B6rk%C3%B6by.vaakuna.svg/langfi-320px-Bj%C3%B6rk%C3%B6by.vaakuna.svg.png",
-            "width": 320,
-            "height": 349
-        },
-        "colors": {
-            "primary": {
-                "color": "#bc9c4d",
-                "name": "red",
-                "distance": 186.4242473499625
-            },
-            "palette": [
-                {
-                    "color": "#e80b07",
-                    "name": "red",
-                    "distance": 26.43860813280457
-                }
-            ]
-        },
-        "imageUrl": "images/heraldry/fi/kunta/bjorkobyn-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/bjorkobyn-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/bjorkobyn-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/bjorkobyn-vaakuna-x4.webp 400w",
-        "shortTitle": "Björköbyn vaakuna",
-        "markers": {
-            "animals": [],
+            "animals": [
+                "moose"
+            ],
             "items": []
         }
     },
@@ -684,8 +711,12 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/elimaen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/elimaen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/elimaen-vaakuna-x4.webp 400w",
         "shortTitle": "Elimäen vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
+            "animals": [
+                "horse"
+            ],
+            "items": [
+                "crown"
+            ]
         }
     },
     "enon-vaakuna": {
@@ -726,7 +757,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/enon-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/enon-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/enon-vaakuna-x4.webp 400w",
         "shortTitle": "Enon vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "beaver"
+            ],
             "items": []
         }
     },
@@ -742,6 +775,13 @@
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Er%C3%A4j%C3%A4rvi.vaakuna.svg/langfi-320px-Er%C3%A4j%C3%A4rvi.vaakuna.svg.png",
             "width": 320,
             "height": 349
+        },
+        "place": {
+            "name": "Orivesi",
+            "coordinates": {
+                "lat": 61.67777778,
+                "lon": 24.35694444
+            }
         },
         "colors": {
             "primary": {
@@ -777,6 +817,13 @@
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Haapasaari.vaakuna.svg/langfi-320px-Haapasaari.vaakuna.svg.png",
             "width": 320,
             "height": 364
+        },
+        "place": {
+            "name": "Kotkansaari",
+            "coordinates": {
+                "lat": 60.46730556,
+                "lon": 26.94583333
+            }
         },
         "colors": {
             "primary": {
@@ -839,7 +886,9 @@
         "shortTitle": "Halikon vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "hauhon-vaakuna": {
@@ -880,7 +929,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/hauhon-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/hauhon-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/hauhon-vaakuna-x4.webp 400w",
         "shortTitle": "Hauhon vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "squirrel"
+            ],
             "items": []
         }
     },
@@ -927,7 +978,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/haukiputaan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/haukiputaan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/haukiputaan-vaakuna-x4.webp 400w",
         "shortTitle": "Haukiputaan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "fish"
+            ],
             "items": []
         }
     },
@@ -963,7 +1016,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/haukivuoren-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/haukivuoren-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/haukivuoren-vaakuna-x4.webp 400w",
         "shortTitle": "Haukivuoren vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "fish"
+            ],
             "items": []
         }
     },
@@ -1009,6 +1064,53 @@
             "items": []
         }
     },
+    "hiittisten-vaakuna": {
+        "title": "Hiittisten vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Hiittisten_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Hiittinen.vaakuna.svg/langfi-320px-Hiittinen.vaakuna.svg.png",
+            "width": 320,
+            "height": 346
+        },
+        "place": {
+            "name": "Dragsfjärd",
+            "coordinates": {
+                "lat": 60.07222222,
+                "lon": 22.46944444
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#f20404",
+                "name": "red",
+                "distance": 14.177446878757825
+            },
+            "palette": [
+                {
+                    "color": "#f20404",
+                    "name": "red",
+                    "distance": 14.177446878757825
+                },
+                {
+                    "color": "#0854ee",
+                    "name": "blue",
+                    "distance": 86.07554821202127
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/kunta/hiittisten-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/hiittisten-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/hiittisten-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/hiittisten-vaakuna-x4.webp 400w",
+        "shortTitle": "Hiittisten vaakuna",
+        "markers": {
+            "animals": [],
+            "items": []
+        }
+    },
     "himangan-vaakuna": {
         "title": "Himangan vaakuna",
         "url": "https://fi.wikipedia.org/wiki/Himangan_vaakuna",
@@ -1048,47 +1150,9 @@
         "shortTitle": "Himangan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
-        }
-    },
-    "hiittisten-vaakuna": {
-        "title": "Hiittisten vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Hiittisten_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Hiittinen.vaakuna.svg/langfi-320px-Hiittinen.vaakuna.svg.png",
-            "width": 320,
-            "height": 346
-        },
-        "colors": {
-            "primary": {
-                "color": "#f20404",
-                "name": "red",
-                "distance": 14.177446878757825
-            },
-            "palette": [
-                {
-                    "color": "#f20404",
-                    "name": "red",
-                    "distance": 14.177446878757825
-                },
-                {
-                    "color": "#0854ee",
-                    "name": "blue",
-                    "distance": 86.07554821202127
-                }
+            "items": [
+                "boat"
             ]
-        },
-        "imageUrl": "images/heraldry/fi/kunta/hiittisten-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/hiittisten-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/hiittisten-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/hiittisten-vaakuna-x4.webp 400w",
-        "shortTitle": "Hiittisten vaakuna",
-        "markers": {
-            "animals": [],
-            "items": []
         }
     },
     "hinnerjoen-vaakuna": {
@@ -1133,6 +1197,48 @@
             "items": []
         }
     },
+    "honkajoen-vaakuna": {
+        "title": "Honkajoen vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Honkajoen_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Honkajoki.vaakuna.svg/langfi-320px-Honkajoki.vaakuna.svg.png",
+            "width": 320,
+            "height": 365
+        },
+        "place": {
+            "name": "Kauhanevan–Pohjankankaan kansallispuisto",
+            "coordinates": {
+                "lat": 62.18333333,
+                "lon": 22.4
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#045ac1",
+                "name": "blue",
+                "distance": 109.36178491593853
+            },
+            "palette": [
+                {
+                    "color": "#045ac1",
+                    "name": "blue",
+                    "distance": 109.36178491593853
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/kunta/honkajoen-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/honkajoen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/honkajoen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/honkajoen-vaakuna-x4.webp 400w",
+        "shortTitle": "Honkajoen vaakuna",
+        "markers": {
+            "animals": [],
+            "items": []
+        }
+    },
     "honkilahden-vaakuna": {
         "title": "Honkilahden vaakuna",
         "url": "https://fi.wikipedia.org/wiki/Honkilahden_vaakuna",
@@ -1171,43 +1277,12 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/honkilahden-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/honkilahden-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/honkilahden-vaakuna-x4.webp 400w",
         "shortTitle": "Honkilahden vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
-        }
-    },
-    "honkajoen-vaakuna": {
-        "title": "Honkajoen vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Honkajoen_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Honkajoki.vaakuna.svg/langfi-320px-Honkajoki.vaakuna.svg.png",
-            "width": 320,
-            "height": 365
-        },
-        "colors": {
-            "primary": {
-                "color": "#045ac1",
-                "name": "blue",
-                "distance": 109.36178491593853
-            },
-            "palette": [
-                {
-                    "color": "#045ac1",
-                    "name": "blue",
-                    "distance": 109.36178491593853
-                }
+            "animals": [
+                "fish"
+            ],
+            "items": [
+                "tree"
             ]
-        },
-        "imageUrl": "images/heraldry/fi/kunta/honkajoen-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/honkajoen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/honkajoen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/honkajoen-vaakuna-x4.webp 400w",
-        "shortTitle": "Honkajoen vaakuna",
-        "markers": {
-            "animals": [],
-            "items": []
         }
     },
     "houtskarin-vaakuna": {
@@ -1253,8 +1328,56 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/houtskarin-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/houtskarin-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/houtskarin-vaakuna-x4.webp 400w",
         "shortTitle": "Houtskarin vaakuna",
         "markers": {
+            "animals": [
+                "fish"
+            ],
+            "items": [
+                "boat"
+            ]
+        }
+    },
+    "hyvinkaan-maalaiskunnan-vaakuna": {
+        "title": "Hyvinkään maalaiskunnan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Hyvink%C3%A4%C3%A4n_maalaiskunnan_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Hyvink%C3%A4%C3%A4n_mlk.vaakuna.svg/langfi-320px-Hyvink%C3%A4%C3%A4n_mlk.vaakuna.svg.png",
+            "width": 320,
+            "height": 368
+        },
+        "place": {
+            "name": "Hyvinkää",
+            "coordinates": {
+                "lat": 60.63055556,
+                "lon": 24.85972222
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#045cc3",
+                "name": "blue",
+                "distance": 109.90905331227269
+            },
+            "palette": [
+                {
+                    "color": "#045bc2",
+                    "name": "blue",
+                    "distance": 109.62663909835054
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/kunta/hyvinkaan-maalaiskunnan-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/hyvinkaan-maalaiskunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/hyvinkaan-maalaiskunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/hyvinkaan-maalaiskunnan-vaakuna-x4.webp 400w",
+        "shortTitle": "Hyvinkään maalaiskunnan vaakuna",
+        "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crown"
+            ]
         }
     },
     "hameenkosken-vaakuna": {
@@ -1299,36 +1422,37 @@
             "items": []
         }
     },
-    "hyvinkaan-maalaiskunnan-vaakuna": {
-        "title": "Hyvinkään maalaiskunnan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Hyvink%C3%A4%C3%A4n_maalaiskunnan_vaakuna",
+    "iisalmen-maalaiskunnan-vaakuna": {
+        "title": "Iisalmen maalaiskunnan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Iisalmen_maalaiskunnan_vaakuna",
         "type": [
             "formerKunta"
         ],
         "partOf": "Suomen entisten kuntien vaakunat",
         "description": "",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Hyvink%C3%A4%C3%A4n_mlk.vaakuna.svg/langfi-320px-Hyvink%C3%A4%C3%A4n_mlk.vaakuna.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Iisalmen_mlk.vaakuna.svg/langfi-320px-Iisalmen_mlk.vaakuna.svg.png",
             "width": 320,
-            "height": 368
+            "height": 369
+        },
+        "place": {
+            "name": "Iisalmi",
+            "coordinates": {
+                "lat": 63.56111111,
+                "lon": 27.18888889
+            }
         },
         "colors": {
             "primary": {
-                "color": "#045cc3",
-                "name": "blue",
-                "distance": 109.90905331227269
+                "color": "#cdcac2",
+                "name": "red",
+                "distance": 284.49956063234964
             },
-            "palette": [
-                {
-                    "color": "#045bc2",
-                    "name": "blue",
-                    "distance": 109.62663909835054
-                }
-            ]
+            "palette": []
         },
-        "imageUrl": "images/heraldry/fi/kunta/hyvinkaan-maalaiskunnan-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/hyvinkaan-maalaiskunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/hyvinkaan-maalaiskunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/hyvinkaan-maalaiskunnan-vaakuna-x4.webp 400w",
-        "shortTitle": "Hyvinkään maalaiskunnan vaakuna",
+        "imageUrl": "images/heraldry/fi/kunta/iisalmen-maalaiskunnan-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/iisalmen-maalaiskunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/iisalmen-maalaiskunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/iisalmen-maalaiskunnan-vaakuna-x4.webp 400w",
+        "shortTitle": "Iisalmen maalaiskunnan vaakuna",
         "markers": {
             "animals": [],
             "items": []
@@ -1371,35 +1495,6 @@
         "imageUrl": "images/heraldry/fi/kunta/ikaalisten-maalaiskunnan-vaakuna.png",
         "imageSrcSet": "images/heraldry/fi/web-kunta/ikaalisten-maalaiskunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/ikaalisten-maalaiskunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/ikaalisten-maalaiskunnan-vaakuna-x4.webp 400w",
         "shortTitle": "Ikaalisten maalaiskunnan vaakuna",
-        "markers": {
-            "animals": [],
-            "items": []
-        }
-    },
-    "iisalmen-maalaiskunnan-vaakuna": {
-        "title": "Iisalmen maalaiskunnan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Iisalmen_maalaiskunnan_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Iisalmen_mlk.vaakuna.svg/langfi-320px-Iisalmen_mlk.vaakuna.svg.png",
-            "width": 320,
-            "height": 369
-        },
-        "colors": {
-            "primary": {
-                "color": "#cdcac2",
-                "name": "red",
-                "distance": 284.49956063234964
-            },
-            "palette": []
-        },
-        "imageUrl": "images/heraldry/fi/kunta/iisalmen-maalaiskunnan-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/iisalmen-maalaiskunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/iisalmen-maalaiskunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/iisalmen-maalaiskunnan-vaakuna-x4.webp 400w",
-        "shortTitle": "Iisalmen maalaiskunnan vaakuna",
         "markers": {
             "animals": [],
             "items": []
@@ -1485,7 +1580,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/jaalan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/jaalan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/jaalan-vaakuna-x4.webp 400w",
         "shortTitle": "Jaalan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "fish"
+            ],
             "items": []
         }
     },
@@ -1528,7 +1625,9 @@
         "shortTitle": "Jalasjärven vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "jepuan-vaakuna": {
@@ -1611,7 +1710,10 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/joutsenon-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/joutsenon-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/joutsenon-vaakuna-x4.webp 400w",
         "shortTitle": "Joutsenon vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "bird",
+                "swan"
+            ],
             "items": []
         }
     },
@@ -1689,7 +1791,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/jurvan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/jurvan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/jurvan-vaakuna-x4.webp 400w",
         "shortTitle": "Jurvan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "bird"
+            ],
             "items": []
         }
     },
@@ -1732,7 +1836,9 @@
         "shortTitle": "Jyväskylän maalaiskunnan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "earOfGrain"
+            ]
         }
     },
     "jamsankosken-vaakuna": {
@@ -1774,7 +1880,9 @@
         "shortTitle": "Jämsänkosken vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "arrow"
+            ]
         }
     },
     "jappilan-vaakuna": {
@@ -1851,8 +1959,54 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/kaarlelan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kaarlelan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kaarlelan-vaakuna-x4.webp 400w",
         "shortTitle": "Kaarlelan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "weasel"
+            ],
             "items": []
+        }
+    },
+    "kajaanin-maalaiskunnan-vaakuna": {
+        "title": "Kajaanin maalaiskunnan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Kajaanin_maalaiskunnan_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Kajaanin_mlk.vaakuna.svg/langfi-320px-Kajaanin_mlk.vaakuna.svg.png",
+            "width": 320,
+            "height": 346
+        },
+        "place": {
+            "name": "Kajaani",
+            "coordinates": {
+                "lat": 64.225,
+                "lon": 27.73333333
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#0454c4",
+                "name": "blue",
+                "distance": 102.7277956543408
+            },
+            "palette": [
+                {
+                    "color": "#0454c4",
+                    "name": "blue",
+                    "distance": 102.7277956543408
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/kunta/kajaanin-maalaiskunnan-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/kajaanin-maalaiskunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kajaanin-maalaiskunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kajaanin-maalaiskunnan-vaakuna-x4.webp 400w",
+        "shortTitle": "Kajaanin maalaiskunnan vaakuna",
+        "markers": {
+            "animals": [],
+            "items": [
+                "tree"
+            ]
         }
     },
     "kakskerran-vaakuna": {
@@ -1894,42 +2048,9 @@
         "shortTitle": "Kakskerran vaakuna",
         "markers": {
             "animals": [],
-            "items": []
-        }
-    },
-    "kajaanin-maalaiskunnan-vaakuna": {
-        "title": "Kajaanin maalaiskunnan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Kajaanin_maalaiskunnan_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Kajaanin_mlk.vaakuna.svg/langfi-320px-Kajaanin_mlk.vaakuna.svg.png",
-            "width": 320,
-            "height": 346
-        },
-        "colors": {
-            "primary": {
-                "color": "#0454c4",
-                "name": "blue",
-                "distance": 102.7277956543408
-            },
-            "palette": [
-                {
-                    "color": "#0454c4",
-                    "name": "blue",
-                    "distance": 102.7277956543408
-                }
+            "items": [
+                "boat"
             ]
-        },
-        "imageUrl": "images/heraldry/fi/kunta/kajaanin-maalaiskunnan-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/kajaanin-maalaiskunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kajaanin-maalaiskunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kajaanin-maalaiskunnan-vaakuna-x4.webp 400w",
-        "shortTitle": "Kajaanin maalaiskunnan vaakuna",
-        "markers": {
-            "animals": [],
-            "items": []
         }
     },
     "kalannin-vaakuna": {
@@ -2084,7 +2205,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/karhulan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/karhulan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/karhulan-vaakuna-x4.webp 400w",
         "shortTitle": "Karhulan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "bear"
+            ],
             "items": []
         }
     },
@@ -2127,7 +2250,9 @@
         "shortTitle": "Karinaisten vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "karjaan-vaakuna": {
@@ -2184,6 +2309,13 @@
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Karjaan_mlk.vaakuna.svg/langfi-320px-Karjaan_mlk.vaakuna.svg.png",
             "width": 320,
             "height": 378
+        },
+        "place": {
+            "name": "Karjaa",
+            "coordinates": {
+                "lat": 60.07083333,
+                "lon": 23.6625
+            }
         },
         "colors": {
             "primary": {
@@ -2249,48 +2381,6 @@
             "items": []
         }
     },
-    "karkun-vaakuna": {
-        "title": "Karkun vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Karkun_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Karkku.vaakuna.svg/langfi-320px-Karkku.vaakuna.svg.png",
-            "width": 320,
-            "height": 365
-        },
-        "place": {
-            "name": "Karkku",
-            "coordinates": {
-                "lat": 61.41833333,
-                "lon": 23.01305556
-            }
-        },
-        "colors": {
-            "primary": {
-                "color": "#ba9b4d",
-                "name": "red",
-                "distance": 186.31961786135136
-            },
-            "palette": [
-                {
-                    "color": "#055ccb",
-                    "name": "blue",
-                    "distance": 105.79697538209682
-                }
-            ]
-        },
-        "imageUrl": "images/heraldry/fi/kunta/karkun-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/karkun-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/karkun-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/karkun-vaakuna-x4.webp 400w",
-        "shortTitle": "Karkun vaakuna",
-        "markers": {
-            "animals": [],
-            "items": []
-        }
-    },
     "karjalohjan-vaakuna": {
         "title": "Karjalohjan vaakuna",
         "url": "https://fi.wikipedia.org/wiki/Karjalohjan_vaakuna",
@@ -2328,6 +2418,50 @@
         "imageUrl": "images/heraldry/fi/kunta/karjalohjan-vaakuna.png",
         "imageSrcSet": "images/heraldry/fi/web-kunta/karjalohjan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/karjalohjan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/karjalohjan-vaakuna-x4.webp 400w",
         "shortTitle": "Karjalohjan vaakuna",
+        "markers": {
+            "animals": [],
+            "items": [
+                "tree"
+            ]
+        }
+    },
+    "karkun-vaakuna": {
+        "title": "Karkun vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Karkun_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Karkku.vaakuna.svg/langfi-320px-Karkku.vaakuna.svg.png",
+            "width": 320,
+            "height": 365
+        },
+        "place": {
+            "name": "Karkku",
+            "coordinates": {
+                "lat": 61.41833333,
+                "lon": 23.01305556
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#ba9b4d",
+                "name": "red",
+                "distance": 186.31961786135136
+            },
+            "palette": [
+                {
+                    "color": "#055ccb",
+                    "name": "blue",
+                    "distance": 105.79697538209682
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/kunta/karkun-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/karkun-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/karkun-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/karkun-vaakuna-x4.webp 400w",
+        "shortTitle": "Karkun vaakuna",
         "markers": {
             "animals": [],
             "items": []
@@ -2372,7 +2506,9 @@
         "shortTitle": "Karttulan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "karunan-vaakuna": {
@@ -2414,6 +2550,50 @@
         "shortTitle": "Karunan vaakuna",
         "markers": {
             "animals": [],
+            "items": []
+        }
+    },
+    "karungin-vaakuna": {
+        "title": "Karungin vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Karungin_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Karunki.vaakuna.svg/langfi-320px-Karunki.vaakuna.svg.png",
+            "width": 320,
+            "height": 390
+        },
+        "place": {
+            "name": "Karunki (Suomi)",
+            "coordinates": {
+                "lat": 66.0375,
+                "lon": 24.02222222
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#d0b1b1",
+                "name": "red",
+                "distance": 254.69000765636645
+            },
+            "palette": [
+                {
+                    "color": "#1b6f19",
+                    "name": "green",
+                    "distance": 148.62705002791384
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/kunta/karungin-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/karungin-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/karungin-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/karungin-vaakuna-x4.webp 400w",
+        "shortTitle": "Karungin vaakuna",
+        "markers": {
+            "animals": [
+                "fish"
+            ],
             "items": []
         }
     },
@@ -2460,43 +2640,12 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/kauvatsan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kauvatsan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kauvatsan-vaakuna-x4.webp 400w",
         "shortTitle": "Kauvatsan vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
-        }
-    },
-    "karungin-vaakuna": {
-        "title": "Karungin vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Karungin_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Karunki.vaakuna.svg/langfi-320px-Karunki.vaakuna.svg.png",
-            "width": 320,
-            "height": 390
-        },
-        "colors": {
-            "primary": {
-                "color": "#d0b1b1",
-                "name": "red",
-                "distance": 254.69000765636645
-            },
-            "palette": [
-                {
-                    "color": "#1b6f19",
-                    "name": "green",
-                    "distance": 148.62705002791384
-                }
+            "animals": [
+                "bird"
+            ],
+            "items": [
+                "tree"
             ]
-        },
-        "imageUrl": "images/heraldry/fi/kunta/karungin-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/karungin-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/karungin-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/karungin-vaakuna-x4.webp 400w",
-        "shortTitle": "Karungin vaakuna",
-        "markers": {
-            "animals": [],
-            "items": []
         }
     },
     "keikyan-vaakuna": {
@@ -2574,7 +2723,9 @@
         "shortTitle": "Kemijärven maalaiskunnan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "kemion-vaakuna": {
@@ -2616,7 +2767,9 @@
         "shortTitle": "Kemiön vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "kerimaen-vaakuna": {
@@ -2897,7 +3050,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/kiikoisten-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kiikoisten-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kiikoisten-vaakuna-x4.webp 400w",
         "shortTitle": "Kiikoisten vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "goat"
+            ],
             "items": []
         }
     },
@@ -3024,7 +3179,9 @@
         "shortTitle": "Kiukaisten vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "earOfGrain"
+            ]
         }
     },
     "kodisjoen-vaakuna": {
@@ -3069,6 +3226,48 @@
             "items": []
         }
     },
+    "koivulahden-vaakuna": {
+        "title": "Koivulahden vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Koivulahden_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Koivulahti.vaakuna.svg/langfi-320px-Koivulahti.vaakuna.svg.png",
+            "width": 320,
+            "height": 356
+        },
+        "place": {
+            "name": "Koivulahti (kylä)",
+            "coordinates": {
+                "lat": 63.16083333,
+                "lon": 21.84194444
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#b7974b",
+                "name": "red",
+                "distance": 183.3303030052588
+            },
+            "palette": [
+                {
+                    "color": "#0453f1",
+                    "name": "blue",
+                    "distance": 84.26743143112884
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/kunta/koivulahden-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/koivulahden-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/koivulahden-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/koivulahden-vaakuna-x4.webp 400w",
+        "shortTitle": "Koivulahden vaakuna",
+        "markers": {
+            "animals": [],
+            "items": []
+        }
+    },
     "konginkankaan-vaakuna": {
         "title": "Konginkankaan vaakuna",
         "url": "https://fi.wikipedia.org/wiki/Konginkankaan_vaakuna",
@@ -3108,42 +3307,9 @@
         "shortTitle": "Konginkankaan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
-        }
-    },
-    "koivulahden-vaakuna": {
-        "title": "Koivulahden vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Koivulahden_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Koivulahti.vaakuna.svg/langfi-320px-Koivulahti.vaakuna.svg.png",
-            "width": 320,
-            "height": 356
-        },
-        "colors": {
-            "primary": {
-                "color": "#b7974b",
-                "name": "red",
-                "distance": 183.3303030052588
-            },
-            "palette": [
-                {
-                    "color": "#0453f1",
-                    "name": "blue",
-                    "distance": 84.26743143112884
-                }
+            "items": [
+                "boat"
             ]
-        },
-        "imageUrl": "images/heraldry/fi/kunta/koivulahden-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/koivulahden-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/koivulahden-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/koivulahden-vaakuna-x4.webp 400w",
-        "shortTitle": "Koivulahden vaakuna",
-        "markers": {
-            "animals": [],
-            "items": []
         }
     },
     "korpilahden-vaakuna": {
@@ -3184,7 +3350,10 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/korpilahden-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/korpilahden-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/korpilahden-vaakuna-x4.webp 400w",
         "shortTitle": "Korpilahden vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "swan",
+                "bird"
+            ],
             "items": []
         }
     },
@@ -3225,6 +3394,53 @@
         "imageUrl": "images/heraldry/fi/kunta/korppoon-vaakuna.png",
         "imageSrcSet": "images/heraldry/fi/web-kunta/korppoon-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/korppoon-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/korppoon-vaakuna-x4.webp 400w",
         "shortTitle": "Korppoon vaakuna",
+        "markers": {
+            "animals": [
+                "bird",
+                "raven"
+            ],
+            "items": [
+                "crown"
+            ]
+        }
+    },
+    "kortesjarven-vaakuna": {
+        "title": "Kortesjärven vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Kortesj%C3%A4rven_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Kortesjarvi.vaakuna.svg/langfi-320px-Kortesjarvi.vaakuna.svg.png",
+            "width": 320,
+            "height": 361
+        },
+        "place": {
+            "name": "Kortesjärvi",
+            "coordinates": {
+                "lat": 63.3,
+                "lon": 23.15833333
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#cccccc",
+                "name": "red",
+                "distance": 292.97269497343945
+            },
+            "palette": [
+                {
+                    "color": "#0c732c",
+                    "name": "green",
+                    "distance": 147.2412985544477
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/kunta/kortesjarven-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/kortesjarven-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kortesjarven-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kortesjarven-vaakuna-x4.webp 400w",
+        "shortTitle": "Kortesjärven vaakuna",
         "markers": {
             "animals": [],
             "items": []
@@ -3272,24 +3488,24 @@
             "items": []
         }
     },
-    "kortesjarven-vaakuna": {
-        "title": "Kortesjärven vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Kortesj%C3%A4rven_vaakuna",
+    "kuhmalahden-vaakuna": {
+        "title": "Kuhmalahden vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Kuhmalahden_vaakuna",
         "type": [
             "formerKunta"
         ],
         "partOf": "Suomen entisten kuntien vaakunat",
         "description": "",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Kortesjarvi.vaakuna.svg/langfi-320px-Kortesjarvi.vaakuna.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Kuhmalahti.vaakuna.svg/langfi-320px-Kuhmalahti.vaakuna.svg.png",
             "width": 320,
-            "height": 361
+            "height": 329
         },
         "place": {
-            "name": "Kortesjärvi",
+            "name": "Kuhmalahti",
             "coordinates": {
-                "lat": 63.3,
-                "lon": 23.15833333
+                "lat": 61.50416667,
+                "lon": 24.56388889
             }
         },
         "colors": {
@@ -3300,15 +3516,15 @@
             },
             "palette": [
                 {
-                    "color": "#0c732c",
-                    "name": "green",
-                    "distance": 147.2412985544477
+                    "color": "#e80505",
+                    "name": "red",
+                    "distance": 24.06241883103193
                 }
             ]
         },
-        "imageUrl": "images/heraldry/fi/kunta/kortesjarven-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/kortesjarven-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kortesjarven-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kortesjarven-vaakuna-x4.webp 400w",
-        "shortTitle": "Kortesjärven vaakuna",
+        "imageUrl": "images/heraldry/fi/kunta/kuhmalahden-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/kuhmalahden-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kuhmalahden-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kuhmalahden-vaakuna-x4.webp 400w",
+        "shortTitle": "Kuhmalahden vaakuna",
         "markers": {
             "animals": [],
             "items": []
@@ -3352,49 +3568,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/kuivaniemen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kuivaniemen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kuivaniemen-vaakuna-x4.webp 400w",
         "shortTitle": "Kuivaniemen vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
-        }
-    },
-    "kuhmalahden-vaakuna": {
-        "title": "Kuhmalahden vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Kuhmalahden_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Kuhmalahti.vaakuna.svg/langfi-320px-Kuhmalahti.vaakuna.svg.png",
-            "width": 320,
-            "height": 329
-        },
-        "place": {
-            "name": "Kuhmalahti",
-            "coordinates": {
-                "lat": 61.50416667,
-                "lon": 24.56388889
-            }
-        },
-        "colors": {
-            "primary": {
-                "color": "#cccccc",
-                "name": "red",
-                "distance": 292.97269497343945
-            },
-            "palette": [
-                {
-                    "color": "#e80505",
-                    "name": "red",
-                    "distance": 24.06241883103193
-                }
-            ]
-        },
-        "imageUrl": "images/heraldry/fi/kunta/kuhmalahden-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/kuhmalahden-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kuhmalahden-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kuhmalahden-vaakuna-x4.webp 400w",
-        "shortTitle": "Kuhmalahden vaakuna",
-        "markers": {
-            "animals": [],
+            "animals": [
+                "seal"
+            ],
             "items": []
         }
     },
@@ -3437,7 +3613,9 @@
         "shortTitle": "Kullaan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "kuopion-maalaiskunnan-vaakuna": {
@@ -3453,6 +3631,13 @@
             "width": 320,
             "height": 368
         },
+        "place": {
+            "name": "Siilinjärvi",
+            "coordinates": {
+                "lat": 63.075,
+                "lon": 27.65972222
+            }
+        },
         "colors": {
             "primary": {
                 "color": "#c1a661",
@@ -3467,6 +3652,50 @@
         "markers": {
             "animals": [],
             "items": []
+        }
+    },
+    "kuoreveden-vaakuna": {
+        "title": "Kuoreveden vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Kuoreveden_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Kuorevesi.vaakuna.svg/langfi-320px-Kuorevesi.vaakuna.svg.png",
+            "width": 320,
+            "height": 357
+        },
+        "place": {
+            "name": "Kuoreveden kirkko",
+            "coordinates": {
+                "lat": 61.93333333,
+                "lon": 24.72777778
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#c3a255",
+                "name": "red",
+                "distance": 192.53311403496284
+            },
+            "palette": [
+                {
+                    "color": "#eb0404",
+                    "name": "red",
+                    "distance": 20.784609690826528
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/kunta/kuoreveden-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/kuoreveden-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kuoreveden-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kuoreveden-vaakuna-x4.webp 400w",
+        "shortTitle": "Kuoreveden vaakuna",
+        "markers": {
+            "animals": [],
+            "items": [
+                "crown"
+            ]
         }
     },
     "kurun-vaakuna": {
@@ -3511,41 +3740,6 @@
             "items": []
         }
     },
-    "kuoreveden-vaakuna": {
-        "title": "Kuoreveden vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Kuoreveden_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Kuorevesi.vaakuna.svg/langfi-320px-Kuorevesi.vaakuna.svg.png",
-            "width": 320,
-            "height": 357
-        },
-        "colors": {
-            "primary": {
-                "color": "#c3a255",
-                "name": "red",
-                "distance": 192.53311403496284
-            },
-            "palette": [
-                {
-                    "color": "#eb0404",
-                    "name": "red",
-                    "distance": 20.784609690826528
-                }
-            ]
-        },
-        "imageUrl": "images/heraldry/fi/kunta/kuoreveden-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/kuoreveden-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kuoreveden-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kuoreveden-vaakuna-x4.webp 400w",
-        "shortTitle": "Kuoreveden vaakuna",
-        "markers": {
-            "animals": [],
-            "items": []
-        }
-    },
     "kuusankosken-vaakuna": {
         "title": "Kuusankosken vaakuna",
         "url": "https://fi.wikipedia.org/wiki/Kuusankosken_vaakuna",
@@ -3585,7 +3779,9 @@
         "shortTitle": "Kuusankosken vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "kuusjoen-vaakuna": {
@@ -3685,6 +3881,13 @@
             "width": 320,
             "height": 371
         },
+        "place": {
+            "name": "Karhula",
+            "coordinates": {
+                "lat": 60.51522222,
+                "lon": 26.93325
+            }
+        },
         "colors": {
             "primary": {
                 "color": "#c0bbaf",
@@ -3697,8 +3900,13 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/kymin-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kymin-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kymin-vaakuna-x4.webp 400w",
         "shortTitle": "Kymin vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
+            "animals": [
+                "salmon",
+                "fish"
+            ],
+            "items": [
+                "crown"
+            ]
         }
     },
     "kalvian-vaakuna": {
@@ -3869,6 +4077,48 @@
             "items": []
         }
     },
+    "lappeen-vaakuna": {
+        "title": "Lappeen vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Lappeen_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Lappee.vaakuna.svg/langfi-320px-Lappee.vaakuna.svg.png",
+            "width": 320,
+            "height": 344
+        },
+        "place": {
+            "name": "Lauritsala",
+            "coordinates": {
+                "lat": 61.07083333,
+                "lon": 28.25972222
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#c9c7c7",
+                "name": "red",
+                "distance": 286.5623841330191
+            },
+            "palette": [
+                {
+                    "color": "#f20505",
+                    "name": "red",
+                    "distance": 14.798648586948742
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/kunta/lappeen-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/lappeen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/lappeen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/lappeen-vaakuna-x4.webp 400w",
+        "shortTitle": "Lappeen vaakuna",
+        "markers": {
+            "animals": [],
+            "items": []
+        }
+    },
     "lapvaartin-vaakuna": {
         "title": "Lapväärtin vaakuna",
         "url": "https://fi.wikipedia.org/wiki/Lapv%C3%A4%C3%A4rtin_vaakuna",
@@ -3908,42 +4158,9 @@
         "shortTitle": "Lapväärtin vaakuna",
         "markers": {
             "animals": [],
-            "items": []
-        }
-    },
-    "lappeen-vaakuna": {
-        "title": "Lappeen vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Lappeen_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Lappee.vaakuna.svg/langfi-320px-Lappee.vaakuna.svg.png",
-            "width": 320,
-            "height": 344
-        },
-        "colors": {
-            "primary": {
-                "color": "#c9c7c7",
-                "name": "red",
-                "distance": 286.5623841330191
-            },
-            "palette": [
-                {
-                    "color": "#f20505",
-                    "name": "red",
-                    "distance": 14.798648586948742
-                }
+            "items": [
+                "earOfGrain"
             ]
-        },
-        "imageUrl": "images/heraldry/fi/kunta/lappeen-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/lappeen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/lappeen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/lappeen-vaakuna-x4.webp 400w",
-        "shortTitle": "Lappeen vaakuna",
-        "markers": {
-            "animals": [],
-            "items": []
         }
     },
     "lauritsalan-vaakuna": {
@@ -3985,7 +4202,9 @@
         "shortTitle": "Lauritsalan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "boat"
+            ]
         }
     },
     "lavian-vaakuna": {
@@ -4110,7 +4329,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/leivonmaen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/leivonmaen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/leivonmaen-vaakuna-x4.webp 400w",
         "shortTitle": "Leivonmäen vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "bird"
+            ],
             "items": []
         }
     },
@@ -4210,6 +4431,13 @@
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Lohja.vaakuna.svg/langfi-320px-Lohja.vaakuna.svg.png",
             "width": 320,
             "height": 352
+        },
+        "place": {
+            "name": "Lohja",
+            "coordinates": {
+                "lat": 60.25,
+                "lon": 24.06666667
+            }
         },
         "colors": {
             "primary": {
@@ -4319,7 +4547,9 @@
         "shortTitle": "Loimaan kunnan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "earOfGrain"
+            ]
         }
     },
     "lokalahden-vaakuna": {
@@ -4360,7 +4590,10 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/lokalahden-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/lokalahden-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/lokalahden-vaakuna-x4.webp 400w",
         "shortTitle": "Lokalahden vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "gull",
+                "bird"
+            ],
             "items": []
         }
     },
@@ -4527,8 +4760,55 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/maaningan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/maaningan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/maaningan-vaakuna-x4.webp 400w",
         "shortTitle": "Maaningan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "duck",
+                "bird"
+            ],
             "items": []
+        }
+    },
+    "maarian-vaakuna": {
+        "title": "Maarian vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Maarian_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Maaria.vaakuna.svg/langfi-320px-Maaria.vaakuna.svg.png",
+            "width": 320,
+            "height": 364
+        },
+        "place": {
+            "name": "Rusko",
+            "coordinates": {
+                "lat": 60.54166667,
+                "lon": 22.22222222
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#ef0705",
+                "name": "red",
+                "distance": 18.16590212458495
+            },
+            "palette": [
+                {
+                    "color": "#ef0705",
+                    "name": "red",
+                    "distance": 18.16590212458495
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/kunta/maarian-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/maarian-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/maarian-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/maarian-vaakuna-x4.webp 400w",
+        "shortTitle": "Maarian vaakuna",
+        "markers": {
+            "animals": [],
+            "items": [
+                "crown"
+            ]
         }
     },
     "maksamaan-vaakuna": {
@@ -4569,42 +4849,10 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/maksamaan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/maksamaan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/maksamaan-vaakuna-x4.webp 400w",
         "shortTitle": "Maksamaan vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
-        }
-    },
-    "maarian-vaakuna": {
-        "title": "Maarian vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Maarian_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Maaria.vaakuna.svg/langfi-320px-Maaria.vaakuna.svg.png",
-            "width": 320,
-            "height": 364
-        },
-        "colors": {
-            "primary": {
-                "color": "#ef0705",
-                "name": "red",
-                "distance": 18.16590212458495
-            },
-            "palette": [
-                {
-                    "color": "#ef0705",
-                    "name": "red",
-                    "distance": 18.16590212458495
-                }
-            ]
-        },
-        "imageUrl": "images/heraldry/fi/kunta/maarian-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/maarian-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/maarian-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/maarian-vaakuna-x4.webp 400w",
-        "shortTitle": "Maarian vaakuna",
-        "markers": {
-            "animals": [],
+            "animals": [
+                "mermaid",
+                "fish"
+            ],
             "items": []
         }
     },
@@ -4689,49 +4937,9 @@
         "shortTitle": "Merimaskun vaakuna",
         "markers": {
             "animals": [],
-            "items": []
-        }
-    },
-    "mietoisten-vaakuna": {
-        "title": "Mietoisten vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Mietoisten_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Myn%C3%A4m%C3%A4ki.vaakuna.svg/langfi-320px-Myn%C3%A4m%C3%A4ki.vaakuna.svg.png",
-            "width": 320,
-            "height": 358
-        },
-        "place": {
-            "name": "Mynämäki",
-            "coordinates": {
-                "lat": 60.67916667,
-                "lon": 21.98888889
-            }
-        },
-        "colors": {
-            "primary": {
-                "color": "#bc9c4e",
-                "name": "red",
-                "distance": 186.83950331768708
-            },
-            "palette": [
-                {
-                    "color": "#dd0905",
-                    "name": "red",
-                    "distance": 35.52463933666322
-                }
+            "items": [
+                "boat"
             ]
-        },
-        "imageUrl": "images/heraldry/fi/kunta/mietoisten-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/mietoisten-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/mietoisten-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/mietoisten-vaakuna-x4.webp 400w",
-        "shortTitle": "Mietoisten vaakuna",
-        "markers": {
-            "animals": [],
-            "items": []
         }
     },
     "metsamaan-vaakuna": {
@@ -4773,7 +4981,93 @@
         "shortTitle": "Metsämaan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
+        }
+    },
+    "mietoisten-vaakuna": {
+        "title": "Mietoisten vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Mietoisten_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Myn%C3%A4m%C3%A4ki.vaakuna.svg/langfi-320px-Myn%C3%A4m%C3%A4ki.vaakuna.svg.png",
+            "width": 320,
+            "height": 358
+        },
+        "place": {
+            "name": "Mynämäki",
+            "coordinates": {
+                "lat": 60.67916667,
+                "lon": 21.98888889
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#bc9c4e",
+                "name": "red",
+                "distance": 186.83950331768708
+            },
+            "palette": [
+                {
+                    "color": "#dd0905",
+                    "name": "red",
+                    "distance": 35.52463933666322
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/kunta/mietoisten-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/mietoisten-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/mietoisten-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/mietoisten-vaakuna-x4.webp 400w",
+        "shortTitle": "Mietoisten vaakuna",
+        "markers": {
+            "animals": [
+                "bird"
+            ],
+            "items": [
+                "tree"
+            ]
+        }
+    },
+    "mikkelin-maalaiskunnan-vaakuna": {
+        "title": "Mikkelin maalaiskunnan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Mikkelin_maalaiskunnan_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Mikkelin_mlk.vaakuna.svg/langfi-320px-Mikkelin_mlk.vaakuna.svg.png",
+            "width": 320,
+            "height": 352
+        },
+        "place": {
+            "name": "Mikkelin maalaiskunta",
+            "coordinates": {
+                "lat": 61.67410833,
+                "lon": 27.19916944
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#bb9c50",
+                "name": "red",
+                "distance": 188.04254837669055
+            },
+            "palette": []
+        },
+        "imageUrl": "images/heraldry/fi/kunta/mikkelin-maalaiskunnan-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/mikkelin-maalaiskunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/mikkelin-maalaiskunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/mikkelin-maalaiskunnan-vaakuna-x4.webp 400w",
+        "shortTitle": "Mikkelin maalaiskunnan vaakuna",
+        "markers": {
+            "animals": [],
+            "items": [
+                "arrow"
+            ]
         }
     },
     "mouhijarven-vaakuna": {
@@ -4818,42 +5112,6 @@
             "items": []
         }
     },
-    "mikkelin-maalaiskunnan-vaakuna": {
-        "title": "Mikkelin maalaiskunnan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Mikkelin_maalaiskunnan_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Mikkelin_mlk.vaakuna.svg/langfi-320px-Mikkelin_mlk.vaakuna.svg.png",
-            "width": 320,
-            "height": 352
-        },
-        "place": {
-            "name": "Mikkelin maalaiskunta",
-            "coordinates": {
-                "lat": 61.67410833,
-                "lon": 27.19916944
-            }
-        },
-        "colors": {
-            "primary": {
-                "color": "#bb9c50",
-                "name": "red",
-                "distance": 188.04254837669055
-            },
-            "palette": []
-        },
-        "imageUrl": "images/heraldry/fi/kunta/mikkelin-maalaiskunnan-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/mikkelin-maalaiskunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/mikkelin-maalaiskunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/mikkelin-maalaiskunnan-vaakuna-x4.webp 400w",
-        "shortTitle": "Mikkelin maalaiskunnan vaakuna",
-        "markers": {
-            "animals": [],
-            "items": []
-        }
-    },
     "munsalan-vaakuna": {
         "title": "Munsalan vaakuna",
         "url": "https://fi.wikipedia.org/wiki/Munsalan_vaakuna",
@@ -4892,7 +5150,10 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/munsalan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/munsalan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/munsalan-vaakuna-x4.webp 400w",
         "shortTitle": "Munsalan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "swan",
+                "bird"
+            ],
             "items": []
         }
     },
@@ -5023,6 +5284,44 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/mantan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/mantan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/mantan-vaakuna-x4.webp 400w",
         "shortTitle": "Mäntän vaakuna",
         "markers": {
+            "animals": [
+                "lynx"
+            ],
+            "items": []
+        }
+    },
+    "naantalin-maalaiskunnan-vaakuna": {
+        "title": "Naantalin maalaiskunnan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Naantalin_maalaiskunnan_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Naantalin_mlk.vaakuna.svg/langfi-320px-Naantalin_mlk.vaakuna.svg.png",
+            "width": 320,
+            "height": 359
+        },
+        "place": {
+            "name": "Naantali",
+            "coordinates": {
+                "lat": 60.46805556,
+                "lon": 22.02638889
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#ba9a4b",
+                "name": "red",
+                "distance": 184.66726835040367
+            },
+            "palette": []
+        },
+        "imageUrl": "images/heraldry/fi/kunta/naantalin-maalaiskunnan-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/naantalin-maalaiskunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/naantalin-maalaiskunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/naantalin-maalaiskunnan-vaakuna-x4.webp 400w",
+        "shortTitle": "Naantalin maalaiskunnan vaakuna",
+        "markers": {
             "animals": [],
             "items": []
         }
@@ -5066,36 +5365,9 @@
         "shortTitle": "Nastolan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
-        }
-    },
-    "naantalin-maalaiskunnan-vaakuna": {
-        "title": "Naantalin maalaiskunnan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Naantalin_maalaiskunnan_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Naantalin_mlk.vaakuna.svg/langfi-320px-Naantalin_mlk.vaakuna.svg.png",
-            "width": 320,
-            "height": 359
-        },
-        "colors": {
-            "primary": {
-                "color": "#ba9a4b",
-                "name": "red",
-                "distance": 184.66726835040367
-            },
-            "palette": []
-        },
-        "imageUrl": "images/heraldry/fi/kunta/naantalin-maalaiskunnan-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/naantalin-maalaiskunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/naantalin-maalaiskunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/naantalin-maalaiskunnan-vaakuna-x4.webp 400w",
-        "shortTitle": "Naantalin maalaiskunnan vaakuna",
-        "markers": {
-            "animals": [],
-            "items": []
+            "items": [
+                "anchor"
+            ]
         }
     },
     "nauvon-vaakuna": {
@@ -5137,7 +5409,9 @@
         "shortTitle": "Nauvon vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "anchor"
+            ]
         }
     },
     "nilsian-vaakuna": {
@@ -5173,7 +5447,9 @@
         "shortTitle": "Nilsiän vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "noormarkun-vaakuna": {
@@ -5214,7 +5490,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/noormarkun-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/noormarkun-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/noormarkun-vaakuna-x4.webp 400w",
         "shortTitle": "Noormarkun vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "squirrel"
+            ],
             "items": []
         }
     },
@@ -5256,7 +5534,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/nuijamaan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/nuijamaan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/nuijamaan-vaakuna-x4.webp 400w",
         "shortTitle": "Nuijamaan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "bear"
+            ],
             "items": []
         }
     },
@@ -5344,6 +5624,50 @@
             "items": []
         }
     },
+    "nurmeksen-maalaiskunnan-vaakuna": {
+        "title": "Nurmeksen maalaiskunnan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Nurmeksen_maalaiskunnan_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Nurmeksen_mlk.vaakuna.svg/langfi-320px-Nurmeksen_mlk.vaakuna.svg.png",
+            "width": 320,
+            "height": 368
+        },
+        "place": {
+            "name": "Nurmes",
+            "coordinates": {
+                "lat": 63.54444444,
+                "lon": 29.13333333
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#d2261f",
+                "name": "red",
+                "distance": 66.55824516917495
+            },
+            "palette": [
+                {
+                    "color": "#d2261f",
+                    "name": "red",
+                    "distance": 66.55824516917495
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/kunta/nurmeksen-maalaiskunnan-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/nurmeksen-maalaiskunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/nurmeksen-maalaiskunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/nurmeksen-maalaiskunnan-vaakuna-x4.webp 400w",
+        "shortTitle": "Nurmeksen maalaiskunnan vaakuna",
+        "markers": {
+            "animals": [],
+            "items": [
+                "tree"
+            ]
+        }
+    },
     "nurmon-vaakuna": {
         "title": "Nurmon vaakuna",
         "url": "https://fi.wikipedia.org/wiki/Nurmon_vaakuna",
@@ -5381,41 +5705,6 @@
         "imageUrl": "images/heraldry/fi/kunta/nurmon-vaakuna.png",
         "imageSrcSet": "images/heraldry/fi/web-kunta/nurmon-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/nurmon-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/nurmon-vaakuna-x4.webp 400w",
         "shortTitle": "Nurmon vaakuna",
-        "markers": {
-            "animals": [],
-            "items": []
-        }
-    },
-    "nurmeksen-maalaiskunnan-vaakuna": {
-        "title": "Nurmeksen maalaiskunnan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Nurmeksen_maalaiskunnan_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Nurmeksen_mlk.vaakuna.svg/langfi-320px-Nurmeksen_mlk.vaakuna.svg.png",
-            "width": 320,
-            "height": 368
-        },
-        "colors": {
-            "primary": {
-                "color": "#d2261f",
-                "name": "red",
-                "distance": 66.55824516917495
-            },
-            "palette": [
-                {
-                    "color": "#d2261f",
-                    "name": "red",
-                    "distance": 66.55824516917495
-                }
-            ]
-        },
-        "imageUrl": "images/heraldry/fi/kunta/nurmeksen-maalaiskunnan-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/nurmeksen-maalaiskunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/nurmeksen-maalaiskunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/nurmeksen-maalaiskunnan-vaakuna-x4.webp 400w",
-        "shortTitle": "Nurmeksen maalaiskunnan vaakuna",
         "markers": {
             "animals": [],
             "items": []
@@ -5463,6 +5752,48 @@
             "items": []
         }
     },
+    "oulujoen-vaakuna": {
+        "title": "Oulujoen vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Oulujoen_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Oulujoki.vaakuna.svg/langfi-320px-Oulujoki.vaakuna.svg.png",
+            "width": 320,
+            "height": 355
+        },
+        "place": {
+            "name": "Oulujoki (Suomen entinen kunta)",
+            "coordinates": {
+                "lat": 65.00541667,
+                "lon": 25.56302778
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#cdcecf",
+                "name": "blue",
+                "distance": 294.5589923937139
+            },
+            "palette": [
+                {
+                    "color": "#065dd4",
+                    "name": "blue",
+                    "distance": 102.6352765865616
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/kunta/oulujoen-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/oulujoen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/oulujoen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/oulujoen-vaakuna-x4.webp 400w",
+        "shortTitle": "Oulujoen vaakuna",
+        "markers": {
+            "animals": [],
+            "items": []
+        }
+    },
     "oulunsalon-vaakuna": {
         "title": "Oulunsalon vaakuna",
         "url": "https://fi.wikipedia.org/wiki/Oulunsalon_vaakuna",
@@ -5501,42 +5832,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/oulunsalon-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/oulunsalon-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/oulunsalon-vaakuna-x4.webp 400w",
         "shortTitle": "Oulunsalon vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
-        }
-    },
-    "oulujoen-vaakuna": {
-        "title": "Oulujoen vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Oulujoen_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Oulujoki.vaakuna.svg/langfi-320px-Oulujoki.vaakuna.svg.png",
-            "width": 320,
-            "height": 355
-        },
-        "colors": {
-            "primary": {
-                "color": "#cdcecf",
-                "name": "blue",
-                "distance": 294.5589923937139
-            },
-            "palette": [
-                {
-                    "color": "#065dd4",
-                    "name": "blue",
-                    "distance": 102.6352765865616
-                }
-            ]
-        },
-        "imageUrl": "images/heraldry/fi/kunta/oulujoen-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/oulujoen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/oulujoen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/oulujoen-vaakuna-x4.webp 400w",
-        "shortTitle": "Oulujoen vaakuna",
-        "markers": {
-            "animals": [],
+            "animals": [
+                "bird"
+            ],
             "items": []
         }
     },
@@ -5572,8 +5870,12 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/paattisten-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/paattisten-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/paattisten-vaakuna-x4.webp 400w",
         "shortTitle": "Paattisten vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
+            "animals": [
+                "bird"
+            ],
+            "items": [
+                "boat"
+            ]
         }
     },
     "paavolan-vaakuna": {
@@ -5618,6 +5920,48 @@
             "items": []
         }
     },
+    "paraisten-maalaiskunnan-vaakuna": {
+        "title": "Paraisten maalaiskunnan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Paraisten_maalaiskunnan_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Paraisten_mlk.vaakuna.svg/langfi-320px-Paraisten_mlk.vaakuna.svg.png",
+            "width": 320,
+            "height": 378
+        },
+        "place": {
+            "name": "Parainen",
+            "coordinates": {
+                "lat": 60.3,
+                "lon": 22.3
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#b8984c",
+                "name": "red",
+                "distance": 184.17654573804992
+            },
+            "palette": [
+                {
+                    "color": "#f30404",
+                    "name": "red",
+                    "distance": 13.2664991614216
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/kunta/paraisten-maalaiskunnan-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/paraisten-maalaiskunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/paraisten-maalaiskunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/paraisten-maalaiskunnan-vaakuna-x4.webp 400w",
+        "shortTitle": "Paraisten maalaiskunnan vaakuna",
+        "markers": {
+            "animals": [],
+            "items": []
+        }
+    },
     "pattijoen-vaakuna": {
         "title": "Pattijoen vaakuna",
         "url": "https://fi.wikipedia.org/wiki/Pattijoen_vaakuna",
@@ -5657,16 +6001,18 @@
         "shortTitle": "Pattijoen vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "earOfGrain"
+            ]
         }
     },
     "pedersoren-kunnan-vaakuna": {
         "title": "Pedersören kunnan vaakuna",
         "url": "https://fi.wikipedia.org/wiki/Peders%C3%B6ren_kunnan_vaakuna",
         "type": [
-            "kunta"
+            "formerKunta"
         ],
-        "partOf": "Suomen kuntien vaakunat",
+        "partOf": "Suomen entisten kuntien vaakunat",
         "description": "",
         "image": {
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Peders%C3%B6re.vaakuna.svg/langfi-320px-Peders%C3%B6re.vaakuna.svg.png",
@@ -5699,42 +6045,9 @@
         "shortTitle": "Pedersören kunnan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
-        }
-    },
-    "paraisten-maalaiskunnan-vaakuna": {
-        "title": "Paraisten maalaiskunnan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Paraisten_maalaiskunnan_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Paraisten_mlk.vaakuna.svg/langfi-320px-Paraisten_mlk.vaakuna.svg.png",
-            "width": 320,
-            "height": 378
-        },
-        "colors": {
-            "primary": {
-                "color": "#b8984c",
-                "name": "red",
-                "distance": 184.17654573804992
-            },
-            "palette": [
-                {
-                    "color": "#f30404",
-                    "name": "red",
-                    "distance": 13.2664991614216
-                }
+            "items": [
+                "earOfGrain"
             ]
-        },
-        "imageUrl": "images/heraldry/fi/kunta/paraisten-maalaiskunnan-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/paraisten-maalaiskunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/paraisten-maalaiskunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/paraisten-maalaiskunnan-vaakuna-x4.webp 400w",
-        "shortTitle": "Paraisten maalaiskunnan vaakuna",
-        "markers": {
-            "animals": [],
-            "items": []
         }
     },
     "pernajan-vaakuna": {
@@ -5818,7 +6131,9 @@
         "shortTitle": "Perniön vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "perttelin-vaakuna": {
@@ -5869,6 +6184,13 @@
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Per%C3%A4sein%C3%A4joki.vaakuna.svg/langfi-320px-Per%C3%A4sein%C3%A4joki.vaakuna.svg.png",
             "width": 320,
             "height": 365
+        },
+        "place": {
+            "name": "Peräseinäjoen kirkonkylä",
+            "coordinates": {
+                "lat": 62.56222222,
+                "lon": 23.06444444
+            }
         },
         "colors": {
             "primary": {
@@ -6024,6 +6346,13 @@
             "width": 320,
             "height": 380
         },
+        "place": {
+            "name": "Pankakoski",
+            "coordinates": {
+                "lat": 63.3213,
+                "lon": 30.1462
+            }
+        },
         "colors": {
             "primary": {
                 "color": "#bb9b4b",
@@ -6036,8 +6365,12 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/pielisjarven-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/pielisjarven-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/pielisjarven-vaakuna-x4.webp 400w",
         "shortTitle": "Pielisjärven vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
+            "animals": [
+                "bird"
+            ],
+            "items": [
+                "tree"
+            ]
         }
     },
     "pihlajaveden-vaakuna": {
@@ -6052,6 +6385,13 @@
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Pihlajavesi.vaakuna.svg/langfi-320px-Pihlajavesi.vaakuna.svg.png",
             "width": 320,
             "height": 367
+        },
+        "place": {
+            "name": "Pihlajavesi (Suomen entinen kunta)",
+            "coordinates": {
+                "lat": 62.34527778,
+                "lon": 24.29027778
+            }
         },
         "colors": {
             "primary": {
@@ -6119,7 +6459,9 @@
         "shortTitle": "Piikkiön vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "piippolan-vaakuna": {
@@ -6261,6 +6603,13 @@
             "width": 320,
             "height": 365
         },
+        "place": {
+            "name": "Pohjaslahden kirkko",
+            "coordinates": {
+                "lat": 62.16472222,
+                "lon": 24.14138889
+            }
+        },
         "colors": {
             "primary": {
                 "color": "#cccccd",
@@ -6296,6 +6645,13 @@
             "width": 320,
             "height": 337
         },
+        "place": {
+            "name": "Pihlava",
+            "coordinates": {
+                "lat": 61.55944444,
+                "lon": 21.61194444
+            }
+        },
         "colors": {
             "primary": {
                 "color": "#bb984a",
@@ -6314,7 +6670,56 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/porin-maalaiskunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/porin-maalaiskunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/porin-maalaiskunnan-vaakuna-x4.webp 400w",
         "shortTitle": "Porin maalaiskunnan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "bear"
+            ],
+            "items": [
+                "anchor"
+            ]
+        }
+    },
+    "porvoon-maalaiskunnan-vaakuna": {
+        "title": "Porvoon maalaiskunnan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Porvoon_maalaiskunnan_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Porvoon_mlk.vaakuna.svg/langfi-320px-Porvoon_mlk.vaakuna.svg.png",
+            "width": 320,
+            "height": 357
+        },
+        "place": {
+            "name": "Porvoo",
+            "coordinates": {
+                "lat": 60.39305556,
+                "lon": 25.66388889
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#c8c6c4",
+                "name": "red",
+                "distance": 283.98063314247327
+            },
+            "palette": [
+                {
+                    "color": "#e70706",
+                    "name": "red",
+                    "distance": 25.709920264364882
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/kunta/porvoon-maalaiskunnan-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/porvoon-maalaiskunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/porvoon-maalaiskunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/porvoon-maalaiskunnan-vaakuna-x4.webp 400w",
+        "shortTitle": "Porvoon maalaiskunnan vaakuna",
+        "markers": {
+            "animals": [
+                "fish",
+                "salmon"
+            ],
             "items": []
         }
     },
@@ -6360,41 +6765,6 @@
             "items": []
         }
     },
-    "porvoon-maalaiskunnan-vaakuna": {
-        "title": "Porvoon maalaiskunnan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Porvoon_maalaiskunnan_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Porvoon_mlk.vaakuna.svg/langfi-320px-Porvoon_mlk.vaakuna.svg.png",
-            "width": 320,
-            "height": 357
-        },
-        "colors": {
-            "primary": {
-                "color": "#c8c6c4",
-                "name": "red",
-                "distance": 283.98063314247327
-            },
-            "palette": [
-                {
-                    "color": "#e70706",
-                    "name": "red",
-                    "distance": 25.709920264364882
-                }
-            ]
-        },
-        "imageUrl": "images/heraldry/fi/kunta/porvoon-maalaiskunnan-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/porvoon-maalaiskunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/porvoon-maalaiskunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/porvoon-maalaiskunnan-vaakuna-x4.webp 400w",
-        "shortTitle": "Porvoon maalaiskunnan vaakuna",
-        "markers": {
-            "animals": [],
-            "items": []
-        }
-    },
     "punkaharjun-vaakuna": {
         "title": "Punkaharjun vaakuna",
         "url": "https://fi.wikipedia.org/wiki/Punkaharjun_vaakuna",
@@ -6434,7 +6804,10 @@
         "shortTitle": "Punkaharjun vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crown",
+                "tree"
+            ]
         }
     },
     "purmon-vaakuna": {
@@ -6474,6 +6847,50 @@
         "imageUrl": "images/heraldry/fi/kunta/purmon-vaakuna.png",
         "imageSrcSet": "images/heraldry/fi/web-kunta/purmon-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/purmon-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/purmon-vaakuna-x4.webp 400w",
         "shortTitle": "Purmon vaakuna",
+        "markers": {
+            "animals": [
+                "lynx"
+            ],
+            "items": []
+        }
+    },
+    "pusulan-vaakuna": {
+        "title": "Pusulan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Pusulan_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Pusula.vaakuna.svg/langfi-320px-Pusula.vaakuna.svg.png",
+            "width": 320,
+            "height": 344
+        },
+        "place": {
+            "name": "Lohja",
+            "coordinates": {
+                "lat": 60.25,
+                "lon": 24.06666667
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#0c7414",
+                "name": "green",
+                "distance": 140.9432509913121
+            },
+            "palette": [
+                {
+                    "color": "#0c7414",
+                    "name": "green",
+                    "distance": 140.9432509913121
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/kunta/pusulan-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/pusulan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/pusulan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/pusulan-vaakuna-x4.webp 400w",
+        "shortTitle": "Pusulan vaakuna",
         "markers": {
             "animals": [],
             "items": []
@@ -6518,42 +6935,9 @@
         "shortTitle": "Pyhäjärvi Ul:n vaakuna",
         "markers": {
             "animals": [],
-            "items": []
-        }
-    },
-    "pusulan-vaakuna": {
-        "title": "Pusulan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Pusulan_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Pusula.vaakuna.svg/langfi-320px-Pusula.vaakuna.svg.png",
-            "width": 320,
-            "height": 344
-        },
-        "colors": {
-            "primary": {
-                "color": "#0c7414",
-                "name": "green",
-                "distance": 140.9432509913121
-            },
-            "palette": [
-                {
-                    "color": "#0c7414",
-                    "name": "green",
-                    "distance": 140.9432509913121
-                }
+            "items": [
+                "boat"
             ]
-        },
-        "imageUrl": "images/heraldry/fi/kunta/pusulan-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/pusulan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/pusulan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/pusulan-vaakuna-x4.webp 400w",
-        "shortTitle": "Pusulan vaakuna",
-        "markers": {
-            "animals": [],
-            "items": []
         }
     },
     "pyhamaan-vaakuna": {
@@ -6684,7 +7068,9 @@
         "shortTitle": "Pylkönmäen vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "raippaluodon-vaakuna": {
@@ -6725,7 +7111,10 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/raippaluodon-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/raippaluodon-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/raippaluodon-vaakuna-x4.webp 400w",
         "shortTitle": "Raippaluodon vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "eagle",
+                "bird"
+            ],
             "items": []
         }
     },
@@ -6803,7 +7192,10 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/rauman-maalaiskunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/rauman-maalaiskunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/rauman-maalaiskunnan-vaakuna-x4.webp 400w",
         "shortTitle": "Rauman maalaiskunnan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "gull",
+                "bird"
+            ],
             "items": []
         }
     },
@@ -6887,7 +7279,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/rengon-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/rengon-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/rengon-vaakuna-x4.webp 400w",
         "shortTitle": "Rengon vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "bullBison"
+            ],
             "items": []
         }
     },
@@ -6930,7 +7324,9 @@
         "shortTitle": "Revonlahden vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "riistaveden-vaakuna": {
@@ -7001,8 +7397,12 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/ristiinan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/ristiinan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/ristiinan-vaakuna-x4.webp 400w",
         "shortTitle": "Ristiinan vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
+            "animals": [
+                "bird"
+            ],
+            "items": [
+                "arrow"
+            ]
         }
     },
     "rovaniemen-maalaiskunnan-vaakuna": {
@@ -7017,6 +7417,13 @@
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Rovaniemi.vaakuna.svg/langfi-320px-Rovaniemi.vaakuna.svg.png",
             "width": 320,
             "height": 364
+        },
+        "place": {
+            "name": "Rovaniemi",
+            "coordinates": {
+                "lat": 66.5,
+                "lon": 25.73333333
+            }
         },
         "colors": {
             "primary": {
@@ -7037,7 +7444,9 @@
         "shortTitle": "Rovaniemen maalaiskunnan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crown"
+            ]
         }
     },
     "ruotsinpyhtaan-vaakuna": {
@@ -7121,7 +7530,9 @@
         "shortTitle": "Ruukin vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "rymattylan-vaakuna": {
@@ -7162,7 +7573,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/rymattylan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/rymattylan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/rymattylan-vaakuna-x4.webp 400w",
         "shortTitle": "Rymättylän vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "fish"
+            ],
             "items": []
         }
     },
@@ -7331,7 +7744,9 @@
         "shortTitle": "Sammatin vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "savonrannan-vaakuna": {
@@ -7367,7 +7782,9 @@
         "shortTitle": "Savonrannan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "arrow"
+            ]
         }
     },
     "seinajoen-maalaiskunnan-vaakuna": {
@@ -7409,7 +7826,9 @@
         "shortTitle": "Seinäjoen maalaiskunnan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "key"
+            ]
         }
     },
     "siipyyn-vaakuna": {
@@ -7449,6 +7868,50 @@
         "imageUrl": "images/heraldry/fi/kunta/siipyyn-vaakuna.png",
         "imageSrcSet": "images/heraldry/fi/web-kunta/siipyyn-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/siipyyn-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/siipyyn-vaakuna-x4.webp 400w",
         "shortTitle": "Siipyyn vaakuna",
+        "markers": {
+            "animals": [],
+            "items": [
+                "tree"
+            ]
+        }
+    },
+    "simpeleen-vaakuna": {
+        "title": "Simpeleen vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Simpeleen_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Simpele.vaakuna.svg/langfi-320px-Simpele.vaakuna.svg.png",
+            "width": 320,
+            "height": 348
+        },
+        "place": {
+            "name": "Simpele (taajama)",
+            "coordinates": {
+                "lat": 61.435,
+                "lon": 29.35944444
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#cccbcb",
+                "name": "red",
+                "distance": 291.58017765273416
+            },
+            "palette": [
+                {
+                    "color": "#eb0505",
+                    "name": "red",
+                    "distance": 21.213203435596427
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/kunta/simpeleen-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/simpeleen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/simpeleen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/simpeleen-vaakuna-x4.webp 400w",
+        "shortTitle": "Simpeleen vaakuna",
         "markers": {
             "animals": [],
             "items": []
@@ -7496,41 +7959,6 @@
             "items": []
         }
     },
-    "simpeleen-vaakuna": {
-        "title": "Simpeleen vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Simpeleen_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Simpele.vaakuna.svg/langfi-320px-Simpele.vaakuna.svg.png",
-            "width": 320,
-            "height": 348
-        },
-        "colors": {
-            "primary": {
-                "color": "#cccbcb",
-                "name": "red",
-                "distance": 291.58017765273416
-            },
-            "palette": [
-                {
-                    "color": "#eb0505",
-                    "name": "red",
-                    "distance": 21.213203435596427
-                }
-            ]
-        },
-        "imageUrl": "images/heraldry/fi/kunta/simpeleen-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/simpeleen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/simpeleen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/simpeleen-vaakuna-x4.webp 400w",
-        "shortTitle": "Simpeleen vaakuna",
-        "markers": {
-            "animals": [],
-            "items": []
-        }
-    },
     "snappertunan-vaakuna": {
         "title": "Snappertunan vaakuna",
         "url": "https://fi.wikipedia.org/wiki/Snappertunan_vaakuna",
@@ -7570,7 +7998,9 @@
         "shortTitle": "Snappertunan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "somerniemen-vaakuna": {
@@ -7826,7 +8256,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/suomenniemen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/suomenniemen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/suomenniemen-vaakuna-x4.webp 400w",
         "shortTitle": "Suomenniemen vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "bird"
+            ],
             "items": []
         }
     },
@@ -7953,7 +8385,9 @@
         "shortTitle": "Särkisalon vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "anchor"
+            ]
         }
     },
     "sayneisen-vaakuna": {
@@ -8037,7 +8471,9 @@
         "shortTitle": "Säynätsalon vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "saaksmaen-vaakuna": {
@@ -8095,6 +8531,13 @@
             "width": 320,
             "height": 370
         },
+        "place": {
+            "name": "Savonranta",
+            "coordinates": {
+                "lat": 62.17361111,
+                "lon": 29.20694444
+            }
+        },
         "colors": {
             "primary": {
                 "color": "#bb9b4b",
@@ -8113,8 +8556,61 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/saamingin-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/saamingin-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/saamingin-vaakuna-x4.webp 400w",
         "shortTitle": "Säämingin vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "ram"
+            ],
             "items": []
+        }
+    },
+    "tammisaaren-maalaiskunnan-vaakuna": {
+        "title": "Tammisaaren maalaiskunnan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Tammisaaren_maalaiskunnan_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tammisaaren_mlk.vaakuna.svg/langfi-320px-Tammisaaren_mlk.vaakuna.svg.png",
+            "width": 320,
+            "height": 399
+        },
+        "place": {
+            "name": "Tammisaari",
+            "coordinates": {
+                "lat": 59.975,
+                "lon": 23.43611111
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#cacbcb",
+                "name": "green",
+                "distance": 291.06184909740404
+            },
+            "palette": [
+                {
+                    "color": "#06706b",
+                    "name": "green",
+                    "distance": 178.70086737338463
+                },
+                {
+                    "color": "#d30a0b",
+                    "name": "red",
+                    "distance": 46.44351407893249
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/kunta/tammisaaren-maalaiskunnan-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/tammisaaren-maalaiskunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/tammisaaren-maalaiskunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/tammisaaren-maalaiskunnan-vaakuna-x4.webp 400w",
+        "shortTitle": "Tammisaaren maalaiskunnan vaakuna",
+        "markers": {
+            "animals": [
+                "fish"
+            ],
+            "items": [
+                "tree"
+            ]
         }
     },
     "tammisaaren-vaakuna": {
@@ -8156,47 +8652,9 @@
         "shortTitle": "Tammisaaren vaakuna",
         "markers": {
             "animals": [],
-            "items": []
-        }
-    },
-    "tammisaaren-maalaiskunnan-vaakuna": {
-        "title": "Tammisaaren maalaiskunnan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Tammisaaren_maalaiskunnan_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tammisaaren_mlk.vaakuna.svg/langfi-320px-Tammisaaren_mlk.vaakuna.svg.png",
-            "width": 320,
-            "height": 399
-        },
-        "colors": {
-            "primary": {
-                "color": "#cacbcb",
-                "name": "green",
-                "distance": 291.06184909740404
-            },
-            "palette": [
-                {
-                    "color": "#06706b",
-                    "name": "green",
-                    "distance": 178.70086737338463
-                },
-                {
-                    "color": "#d30a0b",
-                    "name": "red",
-                    "distance": 46.44351407893249
-                }
+            "items": [
+                "tree"
             ]
-        },
-        "imageUrl": "images/heraldry/fi/kunta/tammisaaren-maalaiskunnan-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/tammisaaren-maalaiskunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/tammisaaren-maalaiskunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/tammisaaren-maalaiskunnan-vaakuna-x4.webp 400w",
-        "shortTitle": "Tammisaaren maalaiskunnan vaakuna",
-        "markers": {
-            "animals": [],
-            "items": []
         }
     },
     "tarvasjoen-vaakuna": {
@@ -8237,7 +8695,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/tarvasjoen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/tarvasjoen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/tarvasjoen-vaakuna-x4.webp 400w",
         "shortTitle": "Tarvasjoen vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "goat"
+            ],
             "items": []
         }
     },
@@ -8253,6 +8713,13 @@
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Teerij%C3%A4rvi.vaakuna.svg/langfi-320px-Teerij%C3%A4rvi.vaakuna.svg.png",
             "width": 320,
             "height": 345
+        },
+        "place": {
+            "name": "Kruunupyy",
+            "coordinates": {
+                "lat": 63.72777778,
+                "lon": 23.03333333
+            }
         },
         "colors": {
             "primary": {
@@ -8566,7 +9033,9 @@
         "shortTitle": "Tuuloksen vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "boat"
+            ]
         }
     },
     "tuupovaaran-vaakuna": {
@@ -8643,49 +9112,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/tyrvannon-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/tyrvannon-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/tyrvannon-vaakuna-x4.webp 400w",
         "shortTitle": "Tyrvännön vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
-        }
-    },
-    "toysan-vaakuna": {
-        "title": "Töysän vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/T%C3%B6ys%C3%A4n_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/T%C3%B6ys%C3%A4.vaakuna.svg/langfi-320px-T%C3%B6ys%C3%A4.vaakuna.svg.png",
-            "width": 320,
-            "height": 344
-        },
-        "place": {
-            "name": "Alavus",
-            "coordinates": {
-                "lat": 62.58611111,
-                "lon": 23.61944444
-            }
-        },
-        "colors": {
-            "primary": {
-                "color": "#cbcccc",
-                "name": "green",
-                "distance": 292.27726562290127
-            },
-            "palette": [
-                {
-                    "color": "#045cbb",
-                    "name": "blue",
-                    "distance": 114.47270417003348
-                }
-            ]
-        },
-        "imageUrl": "images/heraldry/fi/kunta/toysan-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/toysan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/toysan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/toysan-vaakuna-x4.webp 400w",
-        "shortTitle": "Töysän vaakuna",
-        "markers": {
-            "animals": [],
+            "animals": [
+                "fish"
+            ],
             "items": []
         }
     },
@@ -8726,6 +9155,50 @@
         "imageUrl": "images/heraldry/fi/kunta/tyrvaan-vaakuna.png",
         "imageSrcSet": "images/heraldry/fi/web-kunta/tyrvaan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/tyrvaan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/tyrvaan-vaakuna-x4.webp 400w",
         "shortTitle": "Tyrvään vaakuna",
+        "markers": {
+            "animals": [
+                "goat"
+            ],
+            "items": []
+        }
+    },
+    "toysan-vaakuna": {
+        "title": "Töysän vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/T%C3%B6ys%C3%A4n_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/T%C3%B6ys%C3%A4.vaakuna.svg/langfi-320px-T%C3%B6ys%C3%A4.vaakuna.svg.png",
+            "width": 320,
+            "height": 344
+        },
+        "place": {
+            "name": "Töysä",
+            "coordinates": {
+                "lat": 62.63611111,
+                "lon": 23.82222222
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#cbcccc",
+                "name": "green",
+                "distance": 292.27726562290127
+            },
+            "palette": [
+                {
+                    "color": "#045cbb",
+                    "name": "blue",
+                    "distance": 114.47270417003348
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/kunta/toysan-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/toysan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/toysan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/toysan-vaakuna-x4.webp 400w",
+        "shortTitle": "Töysän vaakuna",
         "markers": {
             "animals": [],
             "items": []
@@ -8815,6 +9288,50 @@
             "items": []
         }
     },
+    "uudenkaarlepyyn-maalaiskunnan-vaakuna": {
+        "title": "Uudenkaarlepyyn maalaiskunnan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Uudenkaarlepyyn_maalaiskunnan_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Uudenkaarlepyyn_mlk.vaakuna.svg/langfi-320px-Uudenkaarlepyyn_mlk.vaakuna.svg.png",
+            "width": 320,
+            "height": 384
+        },
+        "place": {
+            "name": "Uusikaarlepyy",
+            "coordinates": {
+                "lat": 63.52222222,
+                "lon": 22.53055556
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#bb9a4b",
+                "name": "red",
+                "distance": 184.29595763336752
+            },
+            "palette": [
+                {
+                    "color": "#f20404",
+                    "name": "red",
+                    "distance": 14.177446878757825
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/kunta/uudenkaarlepyyn-maalaiskunnan-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/uudenkaarlepyyn-maalaiskunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/uudenkaarlepyyn-maalaiskunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/uudenkaarlepyyn-maalaiskunnan-vaakuna-x4.webp 400w",
+        "shortTitle": "Uudenkaarlepyyn maalaiskunnan vaakuna",
+        "markers": {
+            "animals": [],
+            "items": [
+                "crown"
+            ]
+        }
+    },
     "uukuniemen-vaakuna": {
         "title": "Uukuniemen vaakuna",
         "url": "https://fi.wikipedia.org/wiki/Uukuniemen_vaakuna",
@@ -8852,41 +9369,6 @@
         "imageUrl": "images/heraldry/fi/kunta/uukuniemen-vaakuna.png",
         "imageSrcSet": "images/heraldry/fi/web-kunta/uukuniemen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/uukuniemen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/uukuniemen-vaakuna-x4.webp 400w",
         "shortTitle": "Uukuniemen vaakuna",
-        "markers": {
-            "animals": [],
-            "items": []
-        }
-    },
-    "uudenkaarlepyyn-maalaiskunnan-vaakuna": {
-        "title": "Uudenkaarlepyyn maalaiskunnan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Uudenkaarlepyyn_maalaiskunnan_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Uudenkaarlepyyn_mlk.vaakuna.svg/langfi-320px-Uudenkaarlepyyn_mlk.vaakuna.svg.png",
-            "width": 320,
-            "height": 384
-        },
-        "colors": {
-            "primary": {
-                "color": "#bb9a4b",
-                "name": "red",
-                "distance": 184.29595763336752
-            },
-            "palette": [
-                {
-                    "color": "#f20404",
-                    "name": "red",
-                    "distance": 14.177446878757825
-                }
-            ]
-        },
-        "imageUrl": "images/heraldry/fi/kunta/uudenkaarlepyyn-maalaiskunnan-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/uudenkaarlepyyn-maalaiskunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/uudenkaarlepyyn-maalaiskunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/uudenkaarlepyyn-maalaiskunnan-vaakuna-x4.webp 400w",
-        "shortTitle": "Uudenkaarlepyyn maalaiskunnan vaakuna",
         "markers": {
             "animals": [],
             "items": []
@@ -8931,7 +9413,9 @@
         "shortTitle": "Vahdon vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crown"
+            ]
         }
     },
     "valkealan-vaakuna": {
@@ -8967,6 +9451,50 @@
         "shortTitle": "Valkealan vaakuna",
         "markers": {
             "animals": [],
+            "items": []
+        }
+    },
+    "valtimon-vaakuna": {
+        "title": "Valtimon vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Valtimon_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Valtimo.vaakuna.svg/langfi-320px-Valtimo.vaakuna.svg.png",
+            "width": 320,
+            "height": 367
+        },
+        "place": {
+            "name": "Valtimon kirkonkylä",
+            "coordinates": {
+                "lat": 63.67916667,
+                "lon": 28.81388889
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#da0f0e",
+                "name": "red",
+                "distance": 42.30839160261236
+            },
+            "palette": [
+                {
+                    "color": "#da0f0e",
+                    "name": "red",
+                    "distance": 42.30839160261236
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/kunta/valtimon-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/valtimon-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/valtimon-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/valtimon-vaakuna-x4.webp 400w",
+        "shortTitle": "Valtimon vaakuna",
+        "markers": {
+            "animals": [
+                "wolf"
+            ],
             "items": []
         }
     },
@@ -9007,41 +9535,6 @@
         "imageUrl": "images/heraldry/fi/kunta/vammalan-vaakuna.png",
         "imageSrcSet": "images/heraldry/fi/web-kunta/vammalan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/vammalan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/vammalan-vaakuna-x4.webp 400w",
         "shortTitle": "Vammalan vaakuna",
-        "markers": {
-            "animals": [],
-            "items": []
-        }
-    },
-    "valtimon-vaakuna": {
-        "title": "Valtimon vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Valtimon_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Valtimo.vaakuna.svg/langfi-320px-Valtimo.vaakuna.svg.png",
-            "width": 320,
-            "height": 367
-        },
-        "colors": {
-            "primary": {
-                "color": "#da0f0e",
-                "name": "red",
-                "distance": 42.30839160261236
-            },
-            "palette": [
-                {
-                    "color": "#da0f0e",
-                    "name": "red",
-                    "distance": 42.30839160261236
-                }
-            ]
-        },
-        "imageUrl": "images/heraldry/fi/kunta/valtimon-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/valtimon-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/valtimon-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/valtimon-vaakuna-x4.webp 400w",
-        "shortTitle": "Valtimon vaakuna",
         "markers": {
             "animals": [],
             "items": []
@@ -9132,7 +9625,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/vanajan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/vanajan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/vanajan-vaakuna-x4.webp 400w",
         "shortTitle": "Vanajan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "lynx"
+            ],
             "items": []
         }
     },
@@ -9169,7 +9664,9 @@
         "shortTitle": "Varpaisjärven vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "vehkalahden-vaakuna": {
@@ -9211,7 +9708,10 @@
         "shortTitle": "Vehkalahden vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crown",
+                "boat"
+            ]
         }
     },
     "vehmersalmen-vaakuna": {
@@ -9248,6 +9748,50 @@
         "markers": {
             "animals": [],
             "items": []
+        }
+    },
+    "velkuan-vaakuna": {
+        "title": "Velkuan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Velkuan_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Velkua.vaakuna.svg/langfi-320px-Velkua.vaakuna.svg.png",
+            "width": 320,
+            "height": 333
+        },
+        "place": {
+            "name": "Palva (Velkua)",
+            "coordinates": {
+                "lat": 60.46527778,
+                "lon": 21.66138889
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#bc9c4c",
+                "name": "red",
+                "distance": 186.0134403746138
+            },
+            "palette": [
+                {
+                    "color": "#ef0504",
+                    "name": "red",
+                    "distance": 17.233687939614086
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/kunta/velkuan-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/velkuan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/velkuan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/velkuan-vaakuna-x4.webp 400w",
+        "shortTitle": "Velkuan vaakuna",
+        "markers": {
+            "animals": [],
+            "items": [
+                "boat"
+            ]
         }
     },
     "vihannin-vaakuna": {
@@ -9287,41 +9831,6 @@
         "imageUrl": "images/heraldry/fi/kunta/vihannin-vaakuna.png",
         "imageSrcSet": "images/heraldry/fi/web-kunta/vihannin-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/vihannin-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/vihannin-vaakuna-x4.webp 400w",
         "shortTitle": "Vihannin vaakuna",
-        "markers": {
-            "animals": [],
-            "items": []
-        }
-    },
-    "velkuan-vaakuna": {
-        "title": "Velkuan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Velkuan_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Velkua.vaakuna.svg/langfi-320px-Velkua.vaakuna.svg.png",
-            "width": 320,
-            "height": 333
-        },
-        "colors": {
-            "primary": {
-                "color": "#bc9c4c",
-                "name": "red",
-                "distance": 186.0134403746138
-            },
-            "palette": [
-                {
-                    "color": "#ef0504",
-                    "name": "red",
-                    "distance": 17.233687939614086
-                }
-            ]
-        },
-        "imageUrl": "images/heraldry/fi/kunta/velkuan-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/velkuan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/velkuan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/velkuan-vaakuna-x4.webp 400w",
-        "shortTitle": "Velkuan vaakuna",
         "markers": {
             "animals": [],
             "items": []
@@ -9382,6 +9891,13 @@
             "width": 320,
             "height": 316
         },
+        "place": {
+            "name": "Viipuri",
+            "coordinates": {
+                "lat": 60.70916667,
+                "lon": 28.74416667
+            }
+        },
         "colors": {
             "primary": {
                 "color": "#0e98e5",
@@ -9401,7 +9917,9 @@
         "shortTitle": "Viipurin vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crown"
+            ]
         }
     },
     "viljakkalan-vaakuna": {
@@ -9490,7 +10008,9 @@
         "shortTitle": "Vilppulan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "virtasalmen-vaakuna": {
@@ -9610,7 +10130,9 @@
         "shortTitle": "Vähänkyrön vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "earOfGrain"
+            ]
         }
     },
     "vartsilan-vaakuna": {
@@ -9697,48 +10219,6 @@
             "items": []
         }
     },
-    "voyrin-vaakuna": {
-        "title": "Vöyrin vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/V%C3%B6yrin_vaakuna",
-        "type": [
-            "kunta"
-        ],
-        "partOf": "Suomen kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/V%C3%B6yri-Maksamaa.vaakuna.svg/langfi-320px-V%C3%B6yri-Maksamaa.vaakuna.svg.png",
-            "width": 320,
-            "height": 356
-        },
-        "place": {
-            "name": "Vöyri",
-            "coordinates": {
-                "lat": 63.13194444,
-                "lon": 22.25277778
-            }
-        },
-        "colors": {
-            "primary": {
-                "color": "#cbcbcc",
-                "name": "blue",
-                "distance": 291.58017765273416
-            },
-            "palette": [
-                {
-                    "color": "#0963c5",
-                    "name": "blue",
-                    "distance": 115.09126813099246
-                }
-            ]
-        },
-        "imageUrl": "images/heraldry/fi/kunta/voyrin-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/voyrin-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/voyrin-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/voyrin-vaakuna-x4.webp 400w",
-        "shortTitle": "Vöyrin vaakuna",
-        "markers": {
-            "animals": [],
-            "items": []
-        }
-    },
     "voyrimaksamaan-vaakuna": {
         "title": "Vöyri-Maksamaan vaakuna",
         "url": "https://fi.wikipedia.org/wiki/V%C3%B6yri-Maksamaan_vaakuna",
@@ -9777,7 +10257,55 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/voyrimaksamaan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/voyrimaksamaan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/voyrimaksamaan-vaakuna-x4.webp 400w",
         "shortTitle": "Vöyri-Maksamaan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "mermaid",
+                "fish"
+            ],
+            "items": []
+        }
+    },
+    "voyrin-vaakuna": {
+        "title": "Vöyrin vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/V%C3%B6yrin_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/V%C3%B6yri-Maksamaa.vaakuna.svg/langfi-320px-V%C3%B6yri-Maksamaa.vaakuna.svg.png",
+            "width": 320,
+            "height": 356
+        },
+        "place": {
+            "name": "Vöyri",
+            "coordinates": {
+                "lat": 63.13194444,
+                "lon": 22.25277778
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#cbcbcc",
+                "name": "blue",
+                "distance": 291.58017765273416
+            },
+            "palette": [
+                {
+                    "color": "#0963c5",
+                    "name": "blue",
+                    "distance": 115.09126813099246
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/kunta/voyrin-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/voyrin-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/voyrin-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/voyrin-vaakuna-x4.webp 400w",
+        "shortTitle": "Vöyrin vaakuna",
+        "markers": {
+            "animals": [
+                "mermaid",
+                "fish"
+            ],
             "items": []
         }
     },
@@ -9920,6 +10448,13 @@
             "width": 320,
             "height": 360
         },
+        "place": {
+            "name": "Närpiönjoen vesistö",
+            "coordinates": {
+                "lat": 62.407,
+                "lon": 21.295
+            }
+        },
         "colors": {
             "primary": {
                 "color": "#cacbcc",
@@ -9939,7 +10474,9 @@
         "shortTitle": "Ylimarkun vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "earOfGrain"
+            ]
         }
     },
     "ylistaron-vaakuna": {
@@ -9981,7 +10518,9 @@
         "shortTitle": "Ylistaron vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "earOfGrain"
+            ]
         }
     },
     "ylamaan-vaakuna": {
@@ -10065,7 +10604,9 @@
         "shortTitle": "Yläneen vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "aetsan-vaakuna": {
@@ -10152,6 +10693,48 @@
             "items": []
         }
     },
+    "aanekosken-maalaiskunnan-vaakuna": {
+        "title": "Äänekosken maalaiskunnan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/%C3%84%C3%A4nekosken_maalaiskunnan_vaakuna",
+        "type": [
+            "formerKunta"
+        ],
+        "partOf": "Suomen entisten kuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/%C3%84%C3%A4nekosken_mlk.vaakuna.svg/langfi-320px-%C3%84%C3%A4nekosken_mlk.vaakuna.svg.png",
+            "width": 320,
+            "height": 357
+        },
+        "place": {
+            "name": "Äänekoski",
+            "coordinates": {
+                "lat": 62.6,
+                "lon": 25.725
+            }
+        },
+        "colors": {
+            "primary": {
+                "color": "#cccbcb",
+                "name": "red",
+                "distance": 291.58017765273416
+            },
+            "palette": [
+                {
+                    "color": "#e30606",
+                    "name": "red",
+                    "distance": 29.257477676655586
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/kunta/aanekosken-maalaiskunnan-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-kunta/aanekosken-maalaiskunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/aanekosken-maalaiskunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/aanekosken-maalaiskunnan-vaakuna-x4.webp 400w",
+        "shortTitle": "Äänekosken maalaiskunnan vaakuna",
+        "markers": {
+            "animals": [],
+            "items": []
+        }
+    },
     "ojan-vaakuna": {
         "title": "Öjan vaakuna",
         "url": "https://fi.wikipedia.org/wiki/%C3%96jan_vaakuna",
@@ -10164,6 +10747,13 @@
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/%C3%96ja.vaakuna.svg/langfi-320px-%C3%96ja.vaakuna.svg.png",
             "width": 320,
             "height": 355
+        },
+        "place": {
+            "name": "Öjanjärvi",
+            "coordinates": {
+                "lat": 63.8,
+                "lon": 23
+            }
         },
         "colors": {
             "primary": {
@@ -10220,7 +10810,9 @@
         "shortTitle": "Akaan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "anchor"
+            ]
         }
     },
     "alajarven-vaakuna": {
@@ -10513,7 +11105,11 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/brandon-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/brandon-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/brandon-vaakuna-x4.webp 400w",
         "shortTitle": "Brändön vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "gull",
+                "fish",
+                "bird"
+            ],
             "items": []
         }
     },
@@ -10556,7 +11152,9 @@
         "shortTitle": "Eckerön vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "boat"
+            ]
         }
     },
     "enonkosken-vaakuna": {
@@ -10633,7 +11231,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/enontekion-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/enontekion-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/enontekion-vaakuna-x4.webp 400w",
         "shortTitle": "Enontekiön vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "bird"
+            ],
             "items": []
         }
     },
@@ -10676,7 +11276,9 @@
         "shortTitle": "Espoon vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crown"
+            ]
         }
     },
     "euran-vaakuna": {
@@ -10717,7 +11319,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/euran-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/euran-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/euran-vaakuna-x4.webp 400w",
         "shortTitle": "Euran vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "bear"
+            ],
             "items": []
         }
     },
@@ -10760,7 +11364,9 @@
         "shortTitle": "Eurajoen vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "boat"
+            ]
         }
     },
     "evijarven-vaakuna": {
@@ -10806,7 +11412,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/evijarven-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/evijarven-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/evijarven-vaakuna-x4.webp 400w",
         "shortTitle": "Evijärven vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "fish"
+            ],
             "items": []
         }
     },
@@ -10849,7 +11457,9 @@
         "shortTitle": "Finströmin vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "forssan-vaakuna": {
@@ -10932,7 +11542,10 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/foglon-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/foglon-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/foglon-vaakuna-x4.webp 400w",
         "shortTitle": "Föglön vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "duck",
+                "bird"
+            ],
             "items": []
         }
     },
@@ -10974,7 +11587,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/getan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/getan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/getan-vaakuna-x4.webp 400w",
         "shortTitle": "Getan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "goat"
+            ],
             "items": []
         }
     },
@@ -11016,8 +11631,12 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/haapajarven-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/haapajarven-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/haapajarven-vaakuna-x4.webp 400w",
         "shortTitle": "Haapajärven vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
+            "animals": [
+                "bird"
+            ],
+            "items": [
+                "arrow"
+            ]
         }
     },
     "haapaveden-vaakuna": {
@@ -11059,7 +11678,9 @@
         "shortTitle": "Haapaveden vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "hailuodon-vaakuna": {
@@ -11190,7 +11811,10 @@
         "shortTitle": "Haminan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crown",
+                "boat"
+            ]
         }
     },
     "hammarlandin-vaakuna": {
@@ -11232,7 +11856,9 @@
         "shortTitle": "Hammarlandin vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "boat"
+            ]
         }
     },
     "hankasalmen-vaakuna": {
@@ -11399,7 +12025,9 @@
         "shortTitle": "Hartolan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crown"
+            ]
         }
     },
     "hattulan-vaakuna": {
@@ -11529,7 +12157,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/heinolan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/heinolan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/heinolan-vaakuna-x4.webp 400w",
         "shortTitle": "Heinolan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "lynx"
+            ],
             "items": []
         }
     },
@@ -11572,7 +12202,9 @@
         "shortTitle": "Heinäveden vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "boat"
+            ]
         }
     },
     "helsingin-vaakuna": {
@@ -11614,7 +12246,10 @@
         "shortTitle": "Helsingin vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crown",
+                "boat"
+            ]
         }
     },
     "hirvensalmen-vaakuna": {
@@ -11655,7 +12290,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/hirvensalmen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/hirvensalmen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/hirvensalmen-vaakuna-x4.webp 400w",
         "shortTitle": "Hirvensalmen vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "moose"
+            ],
             "items": []
         }
     },
@@ -11697,7 +12334,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/hollolan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/hollolan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/hollolan-vaakuna-x4.webp 400w",
         "shortTitle": "Hollolan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "moose"
+            ],
             "items": []
         }
     },
@@ -11739,7 +12378,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/huittisten-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/huittisten-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/huittisten-vaakuna-x4.webp 400w",
         "shortTitle": "Huittisten vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "bullBison"
+            ],
             "items": []
         }
     },
@@ -11924,10 +12565,10 @@
             "height": 365
         },
         "place": {
-            "name": "Hämeenlinna",
+            "name": "Hämeenlinnan keskustaajama",
             "coordinates": {
-                "lat": 61,
-                "lon": 24.46666667
+                "lat": 60.99583333,
+                "lon": 24.46527778
             }
         },
         "colors": {
@@ -11990,7 +12631,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/iin-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/iin-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/iin-vaakuna-x4.webp 400w",
         "shortTitle": "Iin vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "seal"
+            ],
             "items": []
         }
     },
@@ -12027,7 +12670,9 @@
         "shortTitle": "Iisalmen vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "arrow"
+            ]
         }
     },
     "iitin-vaakuna": {
@@ -12063,7 +12708,9 @@
         "shortTitle": "Iitin vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "key"
+            ]
         }
     },
     "ikaalisten-vaakuna": {
@@ -12146,8 +12793,12 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/ilmajoen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/ilmajoen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/ilmajoen-vaakuna-x4.webp 400w",
         "shortTitle": "Ilmajoen vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
+            "animals": [
+                "bear"
+            ],
+            "items": [
+                "arrow"
+            ]
         }
     },
     "ilomantsin-vaakuna": {
@@ -12266,7 +12917,10 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/inarin-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/inarin-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/inarin-vaakuna-x4.webp 400w",
         "shortTitle": "Inarin vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "reindeer",
+                "fish"
+            ],
             "items": []
         }
     },
@@ -12314,7 +12968,9 @@
         "shortTitle": "Inkoon vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "anchor"
+            ]
         }
     },
     "isojoen-vaakuna": {
@@ -12350,7 +13006,9 @@
         "shortTitle": "Isojoen vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "earOfGrain"
+            ]
         }
     },
     "isonkyron-vaakuna": {
@@ -12385,8 +13043,12 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/isonkyron-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/isonkyron-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/isonkyron-vaakuna-x4.webp 400w",
         "shortTitle": "Isonkyrön vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
+            "animals": [
+                "bear"
+            ],
+            "items": [
+                "tree"
+            ]
         }
     },
     "janakkalan-vaakuna": {
@@ -12432,7 +13094,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/janakkalan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/janakkalan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/janakkalan-vaakuna-x4.webp 400w",
         "shortTitle": "Janakkalan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "lynx"
+            ],
             "items": []
         }
     },
@@ -12517,7 +13181,9 @@
         "shortTitle": "Jokioisten vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "earOfGrain"
+            ]
         }
     },
     "jomalan-vaakuna": {
@@ -12559,7 +13225,9 @@
         "shortTitle": "Jomalan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crown"
+            ]
         }
     },
     "joroisten-vaakuna": {
@@ -12594,7 +13262,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/joroisten-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/joroisten-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/joroisten-vaakuna-x4.webp 400w",
         "shortTitle": "Joroisten vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "bullBison"
+            ],
             "items": []
         }
     },
@@ -12637,7 +13307,10 @@
         "shortTitle": "Joutsan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "arrow",
+                "tree"
+            ]
         }
     },
     "juuan-vaakuna": {
@@ -12679,7 +13352,9 @@
         "shortTitle": "Juuan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "juupajoen-vaakuna": {
@@ -12721,7 +13396,9 @@
         "shortTitle": "Juupajoen vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "juvan-vaakuna": {
@@ -12799,7 +13476,10 @@
         "shortTitle": "Jyväskylän vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crown",
+                "boat"
+            ]
         }
     },
     "jamijarven-vaakuna": {
@@ -12883,7 +13563,9 @@
         "shortTitle": "Jämsän vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "arrow"
+            ]
         }
     },
     "jarvenpaan-vaakuna": {
@@ -13026,10 +13708,10 @@
             "height": 366
         },
         "place": {
-            "name": "Kajaani",
+            "name": "Vuolijoki",
             "coordinates": {
-                "lat": 64.225,
-                "lon": 27.73333333
+                "lat": 64.17888889,
+                "lon": 27.00527778
             }
         },
         "colors": {
@@ -13093,7 +13775,9 @@
         "shortTitle": "Kalajoen vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "boat"
+            ]
         }
     },
     "kangasalan-vaakuna": {
@@ -13134,7 +13818,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/kangasalan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kangasalan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kangasalan-vaakuna-x4.webp 400w",
         "shortTitle": "Kangasalan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "bird"
+            ],
             "items": []
         }
     },
@@ -13213,7 +13899,9 @@
         "shortTitle": "Kankaanpään vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "kannonkosken-vaakuna": {
@@ -13255,7 +13943,9 @@
         "shortTitle": "Kannonkosken vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "kannuksen-vaakuna": {
@@ -13423,7 +14113,9 @@
         "shortTitle": "Karstulan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "anchor"
+            ]
         }
     },
     "karvian-vaakuna": {
@@ -13465,7 +14157,9 @@
         "shortTitle": "Karvian vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "kaskisten-vaakuna": {
@@ -13553,7 +14247,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/kauhajoen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kauhajoen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kauhajoen-vaakuna-x4.webp 400w",
         "shortTitle": "Kauhajoen vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "bear"
+            ],
             "items": []
         }
     },
@@ -13637,8 +14333,12 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/kauniaisten-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kauniaisten-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kauniaisten-vaakuna-x4.webp 400w",
         "shortTitle": "Kauniaisten vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
+            "animals": [
+                "squirrel"
+            ],
+            "items": [
+                "tree"
+            ]
         }
     },
     "kaustisen-vaakuna": {
@@ -13716,7 +14416,9 @@
         "shortTitle": "Keiteleen vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "boat"
+            ]
         }
     },
     "kemin-vaakuna": {
@@ -13762,8 +14464,13 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/kemin-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kemin-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kemin-vaakuna-x4.webp 400w",
         "shortTitle": "Kemin vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
+            "animals": [
+                "salmon",
+                "fish"
+            ],
+            "items": [
+                "anchor"
+            ]
         }
     },
     "kemijarven-vaakuna": {
@@ -13799,7 +14506,9 @@
         "shortTitle": "Kemijärven vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "keminmaan-vaakuna": {
@@ -13840,7 +14549,10 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/keminmaan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/keminmaan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/keminmaan-vaakuna-x4.webp 400w",
         "shortTitle": "Keminmaan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "salmon",
+                "fish"
+            ],
             "items": []
         }
     },
@@ -13858,10 +14570,10 @@
             "height": 365
         },
         "place": {
-            "name": "Kemiönsaari",
+            "name": "Dragsfjärd",
             "coordinates": {
-                "lat": 60.16388889,
-                "lon": 22.72777778
+                "lat": 60.07222222,
+                "lon": 22.46944444
             }
         },
         "colors": {
@@ -13924,7 +14636,10 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/kempeleen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kempeleen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kempeleen-vaakuna-x4.webp 400w",
         "shortTitle": "Kempeleen vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "duck",
+                "bird"
+            ],
             "items": []
         }
     },
@@ -14009,7 +14724,9 @@
         "shortTitle": "Keuruun vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "boat"
+            ]
         }
     },
     "kihnion-vaakuna": {
@@ -14093,7 +14810,9 @@
         "shortTitle": "Kinnulan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "kirkkonummen-vaakuna": {
@@ -14135,7 +14854,9 @@
         "shortTitle": "Kirkkonummen vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "boat"
+            ]
         }
     },
     "kiteen-vaakuna": {
@@ -14212,7 +14933,10 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/kittilan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kittilan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kittilan-vaakuna-x4.webp 400w",
         "shortTitle": "Kittilän vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "wolverine",
+                "wolf"
+            ],
             "items": []
         }
     },
@@ -14248,7 +14972,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/kiuruveden-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kiuruveden-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kiuruveden-vaakuna-x4.webp 400w",
         "shortTitle": "Kiuruveden vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "bird"
+            ],
             "items": []
         }
     },
@@ -14290,7 +15016,10 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/kivijarven-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kivijarven-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kivijarven-vaakuna-x4.webp 400w",
         "shortTitle": "Kivijärven vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "rooster",
+                "bird"
+            ],
             "items": []
         }
     },
@@ -14375,7 +15104,9 @@
         "shortTitle": "Kokkolan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "arrow"
+            ]
         }
     },
     "kolarin-vaakuna": {
@@ -14500,7 +15231,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/kontiolahden-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kontiolahden-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kontiolahden-vaakuna-x4.webp 400w",
         "shortTitle": "Kontiolahden vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "bear"
+            ],
             "items": []
         }
     },
@@ -14626,8 +15359,12 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/kotkan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kotkan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kotkan-vaakuna-x4.webp 400w",
         "shortTitle": "Kotkan vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
+            "animals": [
+                "bird"
+            ],
+            "items": [
+                "anchor"
+            ]
         }
     },
     "kouvolan-vaakuna": {
@@ -14710,7 +15447,10 @@
         "shortTitle": "Kristiinankaupungin vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crown",
+                "tree"
+            ]
         }
     },
     "kruunupyyn-vaakuna": {
@@ -14752,7 +15492,9 @@
         "shortTitle": "Kruunupyyn vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crown"
+            ]
         }
     },
     "kuhmon-vaakuna": {
@@ -14788,7 +15530,9 @@
         "shortTitle": "Kuhmon vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "kuhmoisten-vaakuna": {
@@ -14871,7 +15615,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/kumlingen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kumlingen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kumlingen-vaakuna-x4.webp 400w",
         "shortTitle": "Kumlingen vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "bird"
+            ],
             "items": []
         }
     },
@@ -14914,7 +15660,9 @@
         "shortTitle": "Kuopion vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crown"
+            ]
         }
     },
     "kuortaneen-vaakuna": {
@@ -14960,7 +15708,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/kuortaneen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kuortaneen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kuortaneen-vaakuna-x4.webp 400w",
         "shortTitle": "Kuortaneen vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "fish"
+            ],
             "items": []
         }
     },
@@ -15045,7 +15795,9 @@
         "shortTitle": "Kustavin vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "anchor"
+            ]
         }
     },
     "kuusamon-vaakuna": {
@@ -15086,7 +15838,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/kuusamon-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kuusamon-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kuusamon-vaakuna-x4.webp 400w",
         "shortTitle": "Kuusamon vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "reindeer"
+            ],
             "items": []
         }
     },
@@ -15218,7 +15972,9 @@
         "shortTitle": "Kärsämäen vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "boat"
+            ]
         }
     },
     "kokarin-vaakuna": {
@@ -15259,7 +16015,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/kokarin-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/kokarin-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/kokarin-vaakuna-x4.webp 400w",
         "shortTitle": "Kökarin vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "fish"
+            ],
             "items": []
         }
     },
@@ -15343,7 +16101,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/laihian-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/laihian-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/laihian-vaakuna-x4.webp 400w",
         "shortTitle": "Laihian vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "squirrel"
+            ],
             "items": []
         }
     },
@@ -15385,7 +16145,10 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/laitilan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/laitilan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/laitilan-vaakuna-x4.webp 400w",
         "shortTitle": "Laitilan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "rooster",
+                "bird"
+            ],
             "items": []
         }
     },
@@ -15506,7 +16269,9 @@
         "shortTitle": "Lappajärven vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "boat"
+            ]
         }
     },
     "lappeenrannan-vaakuna": {
@@ -15594,7 +16359,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/lapuan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/lapuan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/lapuan-vaakuna-x4.webp 400w",
         "shortTitle": "Lapuan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "bear"
+            ],
             "items": []
         }
     },
@@ -15762,7 +16529,9 @@
         "shortTitle": "Lempäälän vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "arrow"
+            ]
         }
     },
     "leppavirran-vaakuna": {
@@ -15882,7 +16651,9 @@
         "shortTitle": "Lieksan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "arrow"
+            ]
         }
     },
     "liedon-vaakuna": {
@@ -15924,7 +16695,9 @@
         "shortTitle": "Liedon vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "key"
+            ]
         }
     },
     "limingan-vaakuna": {
@@ -15965,7 +16738,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/limingan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/limingan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/limingan-vaakuna-x4.webp 400w",
         "shortTitle": "Limingan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "weasel"
+            ],
             "items": []
         }
     },
@@ -16092,7 +16867,9 @@
         "shortTitle": "Loimaan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "earOfGrain"
+            ]
         }
     },
     "lopen-vaakuna": {
@@ -16181,7 +16958,10 @@
         "shortTitle": "Loviisan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "anchor",
+                "crown"
+            ]
         }
     },
     "lumijoen-vaakuna": {
@@ -16264,7 +17044,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/lumparlandin-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/lumparlandin-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/lumparlandin-vaakuna-x4.webp 400w",
         "shortTitle": "Lumparlandin vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "fish"
+            ],
             "items": []
         }
     },
@@ -16307,7 +17089,9 @@
         "shortTitle": "Luodon vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "boat"
+            ]
         }
     },
     "luumaen-vaakuna": {
@@ -16348,8 +17132,12 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/luumaen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/luumaen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/luumaen-vaakuna-x4.webp 400w",
         "shortTitle": "Luumäen vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
+            "animals": [
+                "boar"
+            ],
+            "items": [
+                "tree"
+            ]
         }
     },
     "maalahden-vaakuna": {
@@ -16438,7 +17226,10 @@
         "shortTitle": "Maarianhaminan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "anchor",
+                "tree"
+            ]
         }
     },
     "marttilan-vaakuna": {
@@ -16502,10 +17293,10 @@
             "height": 346
         },
         "place": {
-            "name": "Masku",
+            "name": "Askainen",
             "coordinates": {
-                "lat": 60.57083333,
-                "lon": 22.1
+                "lat": 60.57222222,
+                "lon": 21.86527778
             }
         },
         "colors": {
@@ -16695,7 +17486,9 @@
         "shortTitle": "Mikkelin vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crown"
+            ]
         }
     },
     "muhoksen-vaakuna": {
@@ -16736,7 +17529,10 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/muhoksen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/muhoksen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/muhoksen-vaakuna-x4.webp 400w",
         "shortTitle": "Muhoksen vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "salmon",
+                "fish"
+            ],
             "items": []
         }
     },
@@ -16772,7 +17568,10 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/multian-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/multian-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/multian-vaakuna-x4.webp 400w",
         "shortTitle": "Multian vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "ant",
+                "insect"
+            ],
             "items": []
         }
     },
@@ -16940,7 +17739,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/mynamaen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/mynamaen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/mynamaen-vaakuna-x4.webp 400w",
         "shortTitle": "Mynämäen vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "bird"
+            ],
             "items": []
         }
     },
@@ -16983,7 +17784,9 @@
         "shortTitle": "Myrskylän vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "mantsalan-vaakuna": {
@@ -17024,7 +17827,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/mantsalan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/mantsalan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/mantsalan-vaakuna-x4.webp 400w",
         "shortTitle": "Mäntsälän vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "moose"
+            ],
             "items": []
         }
     },
@@ -17067,7 +17872,9 @@
         "shortTitle": "Mänttä-Vilppulan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "mantyharjun-vaakuna": {
@@ -17103,7 +17910,9 @@
         "shortTitle": "Mäntyharjun vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "naantalin-vaakuna": {
@@ -17139,7 +17948,9 @@
         "shortTitle": "Naantalin vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crown"
+            ]
         }
     },
     "nakkilan-vaakuna": {
@@ -17180,8 +17991,12 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/nakkilan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/nakkilan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/nakkilan-vaakuna-x4.webp 400w",
         "shortTitle": "Nakkilan vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
+            "animals": [
+                "fish"
+            ],
+            "items": [
+                "earOfGrain"
+            ]
         }
     },
     "nivalan-vaakuna": {
@@ -17264,7 +18079,10 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/nokian-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/nokian-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/nokian-vaakuna-x4.webp 400w",
         "shortTitle": "Nokian vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "beaver",
+                "weasel"
+            ],
             "items": []
         }
     },
@@ -17432,7 +18250,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/narpion-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/narpion-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/narpion-vaakuna-x4.webp 400w",
         "shortTitle": "Närpiön vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "bird"
+            ],
             "items": []
         }
     },
@@ -17474,7 +18294,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/orimattilan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/orimattilan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/orimattilan-vaakuna-x4.webp 400w",
         "shortTitle": "Orimattilan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "horse"
+            ],
             "items": []
         }
     },
@@ -17516,7 +18338,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/oripaan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/oripaan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/oripaan-vaakuna-x4.webp 400w",
         "shortTitle": "Oripään vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "horse"
+            ],
             "items": []
         }
     },
@@ -17563,7 +18387,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/oriveden-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/oriveden-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/oriveden-vaakuna-x4.webp 400w",
         "shortTitle": "Oriveden vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "horse"
+            ],
             "items": []
         }
     },
@@ -17652,7 +18478,10 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/oulun-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/oulun-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/oulun-vaakuna-x4.webp 400w",
         "shortTitle": "Oulun vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "salmon",
+                "fish"
+            ],
             "items": []
         }
     },
@@ -17695,7 +18524,9 @@
         "shortTitle": "Outokummun vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "padasjoen-vaakuna": {
@@ -17815,7 +18646,9 @@
         "shortTitle": "Paltamon vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "boat"
+            ]
         }
     },
     "paraisten-vaakuna": {
@@ -17857,7 +18690,9 @@
         "shortTitle": "Paraisten vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "anchor"
+            ]
         }
     },
     "parikkalan-vaakuna": {
@@ -17941,7 +18776,9 @@
         "shortTitle": "Parkanon vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "pelkosenniemen-vaakuna": {
@@ -18060,7 +18897,10 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/perhon-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/perhon-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/perhon-vaakuna-x4.webp 400w",
         "shortTitle": "Perhon vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "butterfly",
+                "insect"
+            ],
             "items": []
         }
     },
@@ -18103,7 +18943,9 @@
         "shortTitle": "Pertunmaan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "earOfGrain"
+            ]
         }
     },
     "petajaveden-vaakuna": {
@@ -18181,7 +19023,9 @@
         "shortTitle": "Pieksämäen vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "arrow"
+            ]
         }
     },
     "pielaveden-vaakuna": {
@@ -18263,8 +19107,12 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/pietarsaaren-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/pietarsaaren-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/pietarsaaren-vaakuna-x4.webp 400w",
         "shortTitle": "Pietarsaaren vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
+            "animals": [
+                "lion"
+            ],
+            "items": [
+                "crown"
+            ]
         }
     },
     "pihtiputaan-vaakuna": {
@@ -18472,7 +19320,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/porin-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/porin-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/porin-vaakuna-x4.webp 400w",
         "shortTitle": "Porin vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "bear"
+            ],
             "items": []
         }
     },
@@ -18628,8 +19478,12 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/pudasjarven-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/pudasjarven-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/pudasjarven-vaakuna-x4.webp 400w",
         "shortTitle": "Pudasjärven vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
+            "animals": [
+                "bear"
+            ],
+            "items": [
+                "tree"
+            ]
         }
     },
     "pukkilan-vaakuna": {
@@ -18670,7 +19524,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/pukkilan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/pukkilan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/pukkilan-vaakuna-x4.webp 400w",
         "shortTitle": "Pukkilan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "goat"
+            ],
             "items": []
         }
     },
@@ -18749,7 +19605,9 @@
         "shortTitle": "Puolangan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "puumalan-vaakuna": {
@@ -18820,7 +19678,10 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/pyhtaan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/pyhtaan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/pyhtaan-vaakuna-x4.webp 400w",
         "shortTitle": "Pyhtään vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "fish",
+                "salmon"
+            ],
             "items": []
         }
     },
@@ -18862,8 +19723,12 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/pyhajoen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/pyhajoen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/pyhajoen-vaakuna-x4.webp 400w",
         "shortTitle": "Pyhäjoen vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
+            "animals": [
+                "bird"
+            ],
+            "items": [
+                "crown"
+            ]
         }
     },
     "pyhajarven-vaakuna": {
@@ -18989,7 +19854,9 @@
         "shortTitle": "Pyhärannan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "anchor"
+            ]
         }
     },
     "palkaneen-vaakuna": {
@@ -19073,7 +19940,9 @@
         "shortTitle": "Pöytyän vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "earOfGrain"
+            ]
         }
     },
     "raahen-vaakuna": {
@@ -19114,8 +19983,12 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/raahen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/raahen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/raahen-vaakuna-x4.webp 400w",
         "shortTitle": "Raahen vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
+            "animals": [
+                "horse"
+            ],
+            "items": [
+                "tree"
+            ]
         }
     },
     "raaseporin-vaakuna": {
@@ -19157,7 +20030,9 @@
         "shortTitle": "Raaseporin vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crown"
+            ]
         }
     },
     "raision-vaakuna": {
@@ -19203,7 +20078,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/raision-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/raision-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/raision-vaakuna-x4.webp 400w",
         "shortTitle": "Raision vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "horse"
+            ],
             "items": []
         }
     },
@@ -19318,7 +20195,9 @@
         "shortTitle": "Rauman vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crown"
+            ]
         }
     },
     "rautalammin-vaakuna": {
@@ -19528,7 +20407,9 @@
         "shortTitle": "Riihimäen vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "earOfGrain"
+            ]
         }
     },
     "ristijarven-vaakuna": {
@@ -19612,7 +20493,9 @@
         "shortTitle": "Rovaniemen vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crown"
+            ]
         }
     },
     "ruokolahden-vaakuna": {
@@ -19695,8 +20578,12 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/ruoveden-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/ruoveden-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/ruoveden-vaakuna-x4.webp 400w",
         "shortTitle": "Ruoveden vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
+            "animals": [
+                "fish"
+            ],
+            "items": [
+                "boat"
+            ]
         }
     },
     "ruskon-vaakuna": {
@@ -19738,7 +20625,9 @@
         "shortTitle": "Ruskon vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crown"
+            ]
         }
     },
     "raakkylan-vaakuna": {
@@ -19881,10 +20770,10 @@
             "height": 362
         },
         "place": {
-            "name": "Salo",
+            "name": "Halikko",
             "coordinates": {
-                "lat": 60.38611111,
-                "lon": 23.125
+                "lat": 60.39722222,
+                "lon": 23.07777778
             }
         },
         "colors": {
@@ -19906,7 +20795,9 @@
         "shortTitle": "Salon vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "saltvikin-vaakuna": {
@@ -19965,10 +20856,10 @@
             "height": 365
         },
         "place": {
-            "name": "Sastamala",
+            "name": "Karkku",
             "coordinates": {
-                "lat": 61.34027778,
-                "lon": 22.90972222
+                "lat": 61.41833333,
+                "lon": 23.01305556
             }
         },
         "colors": {
@@ -20025,7 +20916,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/sauvon-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/sauvon-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/sauvon-vaakuna-x4.webp 400w",
         "shortTitle": "Sauvon vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "bird"
+            ],
             "items": []
         }
     },
@@ -20062,7 +20955,9 @@
         "shortTitle": "Savitaipaleen vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "savonlinnan-vaakuna": {
@@ -20104,7 +20999,10 @@
         "shortTitle": "Savonlinnan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crown",
+                "arrow"
+            ]
         }
     },
     "savukosken-vaakuna": {
@@ -20140,7 +21038,9 @@
         "shortTitle": "Savukosken vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "seinajoen-vaakuna": {
@@ -20265,7 +21165,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/siikaisten-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/siikaisten-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/siikaisten-vaakuna-x4.webp 400w",
         "shortTitle": "Siikaisten vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "fish"
+            ],
             "items": []
         }
     },
@@ -20307,8 +21209,12 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/siikajoen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/siikajoen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/siikajoen-vaakuna-x4.webp 400w",
         "shortTitle": "Siikajoen vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
+            "animals": [
+                "fish"
+            ],
+            "items": [
+                "tree"
+            ]
         }
     },
     "siikalatvan-vaakuna": {
@@ -20349,7 +21255,10 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/siikalatvan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/siikalatvan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/siikalatvan-vaakuna-x4.webp 400w",
         "shortTitle": "Siikalatvan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "swan",
+                "bird"
+            ],
             "items": []
         }
     },
@@ -20463,7 +21372,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/sipoon-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/sipoon-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/sipoon-vaakuna-x4.webp 400w",
         "shortTitle": "Sipoon vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "wolf"
+            ],
             "items": []
         }
     },
@@ -20506,7 +21417,9 @@
         "shortTitle": "Siuntion vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "key"
+            ]
         }
     },
     "sodankylan-vaakuna": {
@@ -20584,7 +21497,9 @@
         "shortTitle": "Soinin vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crown"
+            ]
         }
     },
     "someron-vaakuna": {
@@ -20626,7 +21541,9 @@
         "shortTitle": "Someron vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "sonkajarven-vaakuna": {
@@ -20746,7 +21663,9 @@
         "shortTitle": "Sottungan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "boat"
+            ]
         }
     },
     "sulkavan-vaakuna": {
@@ -20782,7 +21701,9 @@
         "shortTitle": "Sulkavan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "sundin-vaakuna": {
@@ -20896,7 +21817,9 @@
         "shortTitle": "Suonenjoen vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "sysman-vaakuna": {
@@ -20932,7 +21855,9 @@
         "shortTitle": "Sysmän vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "arrow"
+            ]
         }
     },
     "sakylan-vaakuna": {
@@ -21016,7 +21941,9 @@
         "shortTitle": "Taipalsaaren vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "boat"
+            ]
         }
     },
     "taivalkosken-vaakuna": {
@@ -21058,7 +21985,9 @@
         "shortTitle": "Taivalkosken vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "taivassalon-vaakuna": {
@@ -21100,7 +22029,9 @@
         "shortTitle": "Taivassalon vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "boat"
+            ]
         }
     },
     "tammelan-vaakuna": {
@@ -21142,7 +22073,9 @@
         "shortTitle": "Tammelan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "tampereen-vaakuna": {
@@ -21267,7 +22200,10 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/tervolan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/tervolan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/tervolan-vaakuna-x4.webp 400w",
         "shortTitle": "Tervolan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "crane",
+                "bird"
+            ],
             "items": []
         }
     },
@@ -21525,7 +22461,9 @@
         "shortTitle": "Turun vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crown"
+            ]
         }
     },
     "tuusniemen-vaakuna": {
@@ -21560,8 +22498,12 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/tuusniemen-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/tuusniemen-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/tuusniemen-vaakuna-x4.webp 400w",
         "shortTitle": "Tuusniemen vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
+            "animals": [
+                "bird"
+            ],
+            "items": [
+                "crown"
+            ]
         }
     },
     "tuusulan-vaakuna": {
@@ -21608,7 +22550,9 @@
         "shortTitle": "Tuusulan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "tyrnavan-vaakuna": {
@@ -21776,7 +22720,9 @@
         "shortTitle": "Utajärven vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "boat"
+            ]
         }
     },
     "utsjoen-vaakuna": {
@@ -21859,7 +22805,9 @@
         "shortTitle": "Uudenkaarlepyyn vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "crown"
+            ]
         }
     },
     "uudenkaupungin-vaakuna": {
@@ -21900,8 +22848,12 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/uudenkaupungin-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/uudenkaupungin-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/uudenkaupungin-vaakuna-x4.webp 400w",
         "shortTitle": "Uudenkaupungin vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
+            "animals": [
+                "fish"
+            ],
+            "items": [
+                "crown"
+            ]
         }
     },
     "uuraisten-vaakuna": {
@@ -22069,7 +23021,9 @@
         "shortTitle": "Valkeakosken vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "vantaan-vaakuna": {
@@ -22110,7 +23064,10 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/vantaan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/vantaan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/vantaan-vaakuna-x4.webp 400w",
         "shortTitle": "Vantaan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "fish",
+                "salmon"
+            ],
             "items": []
         }
     },
@@ -22147,7 +23104,9 @@
         "shortTitle": "Varkauden vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "anchor"
+            ]
         }
     },
     "vehmaan-vaakuna": {
@@ -22271,8 +23230,13 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/vesilahden-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/vesilahden-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/vesilahden-vaakuna-x4.webp 400w",
         "shortTitle": "Vesilahden vaakuna",
         "markers": {
-            "animals": [],
-            "items": []
+            "animals": [
+                "crane",
+                "bird"
+            ],
+            "items": [
+                "key"
+            ]
         }
     },
     "vetelin-vaakuna": {
@@ -22355,7 +23319,9 @@
         "shortTitle": "Vieremän vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "vihdin-vaakuna": {
@@ -22438,7 +23404,9 @@
         "imageSrcSet": "images/heraldry/fi/web-kunta/viitasaaren-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/viitasaaren-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/viitasaaren-vaakuna-x4.webp 400w",
         "shortTitle": "Viitasaaren vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "fish"
+            ],
             "items": []
         }
     },
@@ -22523,7 +23491,9 @@
         "shortTitle": "Virolahden vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "anchor"
+            ]
         }
     },
     "virtain-vaakuna": {
@@ -22780,7 +23750,9 @@
         "shortTitle": "Ypäjän vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "earOfGrain"
+            ]
         }
     },
     "ahtarin-vaakuna": {
@@ -22822,7 +23794,9 @@
         "shortTitle": "Ähtärin vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "arrow"
+            ]
         }
     },
     "aanekosken-vaakuna": {
@@ -22839,10 +23813,10 @@
             "height": 353
         },
         "place": {
-            "name": "Äänekoski",
+            "name": "Suolahti",
             "coordinates": {
-                "lat": 62.6,
-                "lon": 25.725
+                "lat": 62.56388889,
+                "lon": 25.85277778
             }
         },
         "colors": {
@@ -22862,41 +23836,6 @@
         "imageUrl": "images/heraldry/fi/kunta/aanekosken-vaakuna.png",
         "imageSrcSet": "images/heraldry/fi/web-kunta/aanekosken-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/aanekosken-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/aanekosken-vaakuna-x4.webp 400w",
         "shortTitle": "Äänekosken vaakuna",
-        "markers": {
-            "animals": [],
-            "items": []
-        }
-    },
-    "aanekosken-maalaiskunnan-vaakuna": {
-        "title": "Äänekosken maalaiskunnan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/%C3%84%C3%A4nekosken_maalaiskunnan_vaakuna",
-        "type": [
-            "formerKunta"
-        ],
-        "partOf": "Suomen entisten kuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/%C3%84%C3%A4nekosken_mlk.vaakuna.svg/langfi-320px-%C3%84%C3%A4nekosken_mlk.vaakuna.svg.png",
-            "width": 320,
-            "height": 357
-        },
-        "colors": {
-            "primary": {
-                "color": "#cccbcb",
-                "name": "red",
-                "distance": 291.58017765273416
-            },
-            "palette": [
-                {
-                    "color": "#e30606",
-                    "name": "red",
-                    "distance": 29.257477676655586
-                }
-            ]
-        },
-        "imageUrl": "images/heraldry/fi/kunta/aanekosken-maalaiskunnan-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-kunta/aanekosken-maalaiskunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-kunta/aanekosken-maalaiskunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-kunta/aanekosken-maalaiskunnan-vaakuna-x4.webp 400w",
-        "shortTitle": "Äänekosken maalaiskunnan vaakuna",
         "markers": {
             "animals": [],
             "items": []

@@ -42,7 +42,9 @@ const Heraldry = ({
     const [listPage, setListPage] = useState(0);
     const [listPhrase, setListPhrase] = useState('');
     const [filterOperator, setFilterOperator] = useState<'and' | 'or'>('and');
-    const [mapFitment, setMapFitment] = useState<'compact' | 'fullWidth' | 'zoom'>('compact');
+    const [shouldReverseFilters, setShouldReverseFilters] = useState(false);
+    // const [mapFitment, setMapFitment] = useState<'small' | 'medium' | 'large'>('small');
+    const [mapFitment, setMapFitment] = useState<'small' | 'medium' | 'large'>('medium');
     const [typeFilters, setTypeFilters] = useState<string[]>([]);
     const [colorFilters, setColorFilters] = useState<string[]>([]);
     const [animalFilters, setAnimalFilters] = useState<string[]>([]);
@@ -65,7 +67,7 @@ const Heraldry = ({
         filteredUnits,
         unitsForMap,
         subtitleParts,
-      } = getFilteredUnits(lang, allUnits, filterOperator, typeFiltersToPass, colorFilters, animalFilters, itemFilters);
+      } = getFilteredUnits(lang, allUnits, filterOperator, shouldReverseFilters, typeFiltersToPass, colorFilters, animalFilters, itemFilters);
 
       setListPage(0);
       setListPhrase('');
@@ -75,7 +77,7 @@ const Heraldry = ({
         unitsForMap,
         subtitleParts,
       }
-    }, [filterOperator, colorFilters, typeFilters, animalFilters, itemFilters]);
+    }, [filterOperator, shouldReverseFilters, colorFilters, typeFilters, animalFilters, itemFilters]);
 
     const unitsForList = useMemo(() => {
       if (listPhrase === '') {
@@ -148,12 +150,12 @@ const Heraldry = ({
     }
 
     const toggleMapFittment = () => {
-      if (mapFitment === 'compact') {
-        setMapFitment('fullWidth');
-      } else if (mapFitment === 'fullWidth') {
-        setMapFitment('zoom');
+      if (mapFitment === 'small') {
+        setMapFitment('medium');
+      } else if (mapFitment === 'medium') {
+        setMapFitment('large');
       } else {
-        setMapFitment('compact');
+        setMapFitment('small');
       }
     }
 
@@ -166,19 +168,21 @@ const Heraldry = ({
           <h1 className="text-[18px] md:text-[36px] text-center mb-4">
             {t(`heraldry.${lang}.mapTitle`)}
           </h1>
-          <HeraldrySubtitle subtitleParts={subtitleParts} />
+          <HeraldrySubtitle subtitleParts={subtitleParts} shouldReverseFilters={shouldReverseFilters} />
           <section
-            className={clsx(coatsSizeClassName, "map-section", {
-              "mb-10": ['compact', 'fullWidth'].includes(mapFitment),
-              "max-h-[66vh]": ['compact'].includes(mapFitment),
-              "overflow-scroll hide-scroll border-t max-h-[90vh]": ['zoom'].includes(mapFitment),
+            className={clsx(coatsSizeClassName, "map-section", `map-section--${mapFitment}`, {
+              "mb-10": ['small', 'medium'].includes(mapFitment),
+              "max-h-[66vh]": ['small'].includes(mapFitment),
+              "max-h-[1500px] w-auto": ['medium'].includes(mapFitment),
+              "overflow-scroll hide-scroll border-t max-h-[90vh]": ['large'].includes(mapFitment),
             })}
           >
             <div
               className={clsx(mapWrapperClassName, "map-wrapper relative mx-auto flex justify-center items-center", {
-                "max-h-[66vh]": ['compact'].includes(mapFitment),
+                "max-h-[66vh]": ['small'].includes(mapFitment),
+                "max-h-[1500px]": ['medium'].includes(mapFitment),
               })}
-              style={mapFitment === 'zoom' ? { width: 2500 } : {}}
+              style={mapFitment === 'large' ? { width: 2500 } : {}}
             >
               {/* <SvgGmina /> */}
               <MapBackground />
@@ -197,7 +201,7 @@ const Heraldry = ({
           </section>
           <div
             className={clsx('sticky -top-[1px] border-b', {
-              "md:-mt-[50px]": mapFitment === 'zoom',
+              "md:-mt-[50px]": mapFitment === 'large',
             })}
           >
             <div className="max-w-screen-xl md:h-[50px] mx-auto py-2 px-4 md:p-4 flex flex-wrap justify-between bg-white border-t border-x">
@@ -255,12 +259,6 @@ const Heraldry = ({
                 )}
               </span>
               <span className="flex items-center gap-5">
-                {t('heraldry.filterOperator')}
-                <button className="hover:text-[#ca0505]" onClick={() => setFilterOperator(filterOperator === 'and' ? 'or' : 'and')}>
-                  {t(`heraldry.filterOperator.${filterOperator}`)}
-                </button>
-              </span>
-              <span className="flex items-center gap-5">
                 {t('heraldry.mapSize')}
                 <button className="hover:text-[#ca0505]" onClick={toggleMapFittment}>
                   {t(`heraldry.mapSize.${mapFitment}`)}
@@ -300,6 +298,21 @@ const Heraldry = ({
                 )}
               </div>
             </>}
+
+            <div className="flex items-center justify-end gap-10 text-[14px]">
+              <span className="flex items-center gap-5">
+                  {t('heraldry.filterOperator')}
+                  <button className="hover:text-[#ca0505]" onClick={() => setFilterOperator(filterOperator === 'and' ? 'or' : 'and')}>
+                    {t(`heraldry.filterOperator.${filterOperator}`)}
+                  </button>
+              </span>
+              <span className="flex items-center gap-5">
+                  {t('heraldry.filterReverse')}
+                  <button className="hover:text-[#ca0505]" onClick={() => setShouldReverseFilters(value => !value)}>
+                    {t(`heraldry.filterReverse.${shouldReverseFilters ? 'yes' : 'no'}`)}
+                  </button>
+              </span>
+            </div>
           </div>
           <div className="max-w-screen-xl mx-auto border-x border-t p-4 pt-10 pb-10">
             <h3 className="text-[24px] mb-3">

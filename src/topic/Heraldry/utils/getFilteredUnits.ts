@@ -12,24 +12,26 @@ export type GetFilterUnitsResponse = {
   subtitleParts: SubtitlePart[],
 };
 
-let filterResponse = {
-  matches: true,
-  notMatches: false
-};
-
-// DEV: Uncomment to reverse - it helps find matching that were skipped
-// filterResponse.matches = false;
-// filterResponse.notMatches = true;
-
 export const getFilteredUnits = (
   lang: string,
   units: AdministrativeUnit[],
   filterOperator: 'and' | 'or',
+  shouldReverseFilters: boolean,
   typeFilers: string[],
   colorFilters: string[],
   animalFilters: string[],
   itemFilters: string[],
 ) => {
+  const filterResponse = {
+    matches: true,
+    notMatches: false
+  };
+
+  if (shouldReverseFilters) {
+    filterResponse.matches = false;
+    filterResponse.notMatches = true;
+  }
+
   const filteredUnits = units.filter(
     (unit) => {
       const isTypeFilterActive = typeFilers.length > 0;
