@@ -267,35 +267,39 @@ const Heraldry = ({
                 </button>
               </span>
             </div>
-            <h4 className="w-fit text-[18px] font-[600] tracking-wider">{t('heraldry.animal.filterTitle')}</h4>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-7 mt-3 mb-10">
-              {[
-                { value: WITH_ANIMAL, total: 0 },
-                { value: WITHOUT_ANIMAL, total: 0 },
-              ...animalFiltersList].map(({ value, total }) => 
-                <button
-                  onClick={() => toggleAnimal(value)}
-                  className={clsx("hover:text-[#ca0505]", { 
-                    'text-[#ca0505]': animalFilters.includes(value),
-                  })}
-                >
-                  {t(`heraldry.animal.${value}`)} {total > 0 && <small className="text-[10px] text-[#4b4b4b] tracking-widest">({total})</small>}
-                </button>
-              )}
-            </div>
-            <h4 className="w-fit text-[18px] font-[600] tracking-wider">{t('heraldry.item.filterTitle')}</h4>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-7 mt-3 pb-10">
-              {itemsFiltersList.map(({ value, total }) => 
-                <button
-                  onClick={() => toggleItem(value)}
-                  className={clsx("hover:text-[#ca0505]", { 
-                    'text-[#ca0505]': itemFilters.includes(value),
-                  })}
-                >
-                  {t(`heraldry.item.${value}`)} <small className="text-[10px] text-[#4b4b4b] tracking-widest">({total})</small>
-                </button>
-              )}
-            </div>
+            {animalFiltersList.length > 0 && <>
+              <h4 className="w-fit text-[18px] font-[600] tracking-wider">{t('heraldry.animal.filterTitle')}</h4>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-7 mt-3 mb-10">
+                {[
+                  { value: WITH_ANIMAL, total: 0 },
+                  { value: WITHOUT_ANIMAL, total: 0 },
+                ...animalFiltersList].map(({ value, total }) => 
+                  <button
+                    onClick={() => toggleAnimal(value)}
+                    className={clsx("hover:text-[#ca0505]", { 
+                      'text-[#ca0505]': animalFilters.includes(value),
+                    })}
+                  >
+                    {t(`heraldry.animal.${value}`)} {total > 0 && <small className="text-[10px] text-[#4b4b4b] tracking-widest">({total})</small>}
+                  </button>
+                )}
+              </div>
+            </>}
+            {itemsFiltersList.length > 0 && <>
+              <h4 className="w-fit text-[18px] font-[600] tracking-wider">{t('heraldry.item.filterTitle')}</h4>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-7 mt-3 pb-10">
+                {itemsFiltersList.map(({ value, total }) => 
+                  <button
+                    onClick={() => toggleItem(value)}
+                    className={clsx("hover:text-[#ca0505]", { 
+                      'text-[#ca0505]': itemFilters.includes(value),
+                    })}
+                  >
+                    {t(`heraldry.item.${value}`)} <small className="text-[10px] text-[#4b4b4b] tracking-widest">({total})</small>
+                  </button>
+                )}
+              </div>
+            </>}
           </div>
           <div className="max-w-screen-xl mx-auto border-x border-t p-4 pt-10 pb-10">
             <h3 className="text-[24px] mb-3">
@@ -327,7 +331,7 @@ const Heraldry = ({
           </p>
           <ul className="max-w-screen-xl mx-auto p-4 mb-10 text-[12px] text-[#4b4b4b] text-center">
             {PATHS_DATA.map(({ path, pathNameLink }) => (<li key={path} className="inline mx-2">
-              <Link to={`/maps/${path}`}>{pathNameLink}</Link>
+              <Link to={`/maps/${path}`}>{t(pathNameLink)}</Link>
             </li>))}
           </ul>
         </>
