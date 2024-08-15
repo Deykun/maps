@@ -3,6 +3,7 @@ import { SubtitlePart } from '../utils/getFilteredUnits';
 
 type Props = {
   subtitleParts: SubtitlePart[],
+  shouldReverseFilters: boolean,
 }
 
 /*
@@ -14,6 +15,7 @@ type Props = {
 
 const HeraldrySubtitle = ({
   subtitleParts,
+  shouldReverseFilters,
 }: Props) => {
   const { t } = useTranslation();
 
@@ -21,7 +23,7 @@ const HeraldrySubtitle = ({
     <h2 className="text-[18px] min-h-[20px] leading-[20px] text-center mb-6 relative">
       {subtitleParts.length > 0 && <span className="text-[#4b4b4b]">
         <small className="mr-1">
-          {t('heraldry.activeFilters')}
+          {t(shouldReverseFilters ? 'heraldry.activeExclusionFilters' : 'heraldry.activeFilters')}
         </small>
           {subtitleParts.map(({ operator, labels }, indexParts) => {
             if (labels.length === 1) {

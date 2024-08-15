@@ -1,5 +1,6 @@
-import { getMarkers as getMarkersPL } from '../pl/utils/get-markers';
 import { getMarkers as getMarkersET } from '../et/utils/get-markers';
+import { getMarkers as getMarkersFI } from '../fi/utils/get-markers';
+import { getMarkers as getMarkersPL } from '../pl/utils/get-markers';
 
 export const getMarkers = ({
   text: rawText = '',
@@ -15,15 +16,22 @@ export const getMarkers = ({
 
   const text = rawText.toLowerCase() || '';
 
-  if (lang === 'pl') {
-    const response = getMarkersPL({ text: rawText, title });
+  if (lang === 'et') {
+    const response = getMarkersET({ text: rawText, title })
 
     animals = response.animals;
     items = response.items;
   }
 
-  if (lang === 'et') {
-    const response = getMarkersET({ text: rawText, title })
+  if (lang === 'fi') {
+    const response = getMarkersFI({ text: rawText, title })
+
+    animals = response.animals;
+    items = response.items;
+  }
+
+  if (lang === 'pl') {
+    const response = getMarkersPL({ text: rawText, title });
 
     animals = response.animals;
     items = response.items;

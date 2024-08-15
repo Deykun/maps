@@ -13,7 +13,7 @@
     "fetch:pl:map-gminy": "tsx scripts/heraldry/pl/fetch-coats-of-gminy.ts",
     "fetch:pl:map-miasta": "tsx scripts/heraldry/pl/fetch-coats-of-miasta.ts",
     "fetch:pl:map-powiaty": "tsx scripts/heraldry/pl/fetch-coats-of-powiaty.ts",
-    "index:pl": "nodemon --watch scripts/heraldry/pl/utils/get-markers.ts --exec npm run fetch:pl:map-gminy & npm run fetch:pl:map-miasta & npm run fetch:pl:map-powiaty",
+    "index:pl": "nodemon --watch scripts/heraldry/pl/utils/get-markers.ts --exec npm run fetch:pl:map-gminy & nodemon --watch scripts/heraldry/pl/utils/get-markers.ts --exec npm run fetch:pl:map-miasta & nodemon --watch scripts/heraldry/pl/utils/get-markers.ts --exec npm run fetch:pl:map-powiaty",
     "resize:pl:coats": "tsx scripts/heraldry/pl/resize-images.ts",
     "fetch:et:unit": "tsx scripts/heraldry/et/fetch-unit.ts",
     "fetch:et:map-unit": "tsx scripts/heraldry/et/fetch-coats-of-unit.ts",
@@ -24,6 +24,8 @@
     "fetch:fi:map-kunta": "tsx scripts/heraldry/fi/fetch-coats-of-kunta.ts",
     "fetch:fi:map-maakunta": "tsx scripts/heraldry/fi/fetch-coats-of-maakunta.ts",
     "resize:fi:coats": "tsx scripts/heraldry/fi/resize-images.ts",
+    "index:fi": "nodemon --watch scripts/heraldry/fi/utils/get-markers.ts --exec npm run fetch:fi:map-kunta",
+    "index:fi:2": "nodemon --watch scripts/heraldry/fi/utils/get-markers.ts --exec npm run fetch:fi:map-maakunta",
     "preview": "vite preview",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix"

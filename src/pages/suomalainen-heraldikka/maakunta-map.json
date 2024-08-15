@@ -451,7 +451,10 @@
         "imageSrcSet": "images/heraldry/fi/web-maakunta/kymenlaakson-vaakuna-x2.webp 200w,images/heraldry/fi/web-maakunta/kymenlaakson-vaakuna-x3.webp 300w,images/heraldry/fi/web-maakunta/kymenlaakson-vaakuna-x4.webp 400w",
         "shortTitle": "Kymenlaakson vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "salmon",
+                "fish"
+            ],
             "items": []
         }
     },
@@ -838,7 +841,10 @@
         "imageSrcSet": "images/heraldry/fi/web-maakunta/satakunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-maakunta/satakunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-maakunta/satakunnan-vaakuna-x4.webp 400w",
         "shortTitle": "Satakunnan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "bear",
+                "fish"
+            ],
             "items": []
         }
     },
