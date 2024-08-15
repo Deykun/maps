@@ -15,7 +15,7 @@ const administrativeDivisions: AdministrativeUnit[] = Object.values(urls.maakunt
 
 fetchData({
 	administrativeDivisions: administrativeDivisions,
-	alreadyFetchedDivisions,
+	// alreadyFetchedDivisions,
 	unitNames: ['maakunta'],
 	path: './public/data/heraldry/fi/maakunta.json',
 	lang: 'fi',

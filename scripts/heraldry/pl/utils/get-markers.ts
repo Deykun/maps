@@ -751,6 +751,7 @@ export const getMarkers = ({
       'Herb powiatu buskiego',
       'Herb powiatu międzychodzkiego',
       'Herb powiatu pilskiego',
+      'Herb powiatu lidzbarskiego',
     ].includes(title)) {
       items.push('tree');
     }
@@ -761,6 +762,7 @@ export const getMarkers = ({
     'Herb Birczy',
     'Herb Starogardu Gdańskiego',
     'Herb Brzostku',
+    'Herb gminy Srokowo',
   ];
 
   if (lily.some((item) => text.includes(item))) {

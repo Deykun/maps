@@ -37,12 +37,16 @@ export const getMarkers = ({
     items = response.items;
   }
 
-  if (!animals.includes('bird') && animals.some((active) => ['stork', 'crane', 'raven', 'goose', 'gull', 'rooster', 'swan', 'owl', 'hawk', 'eagle'].includes(active))) {
+  if (!animals.includes('bird') && animals.some((active) => ['crane', 'duck', 'eagle', 'goose', 'gull', 'hawk', 'stork', 'raven', 'rooster', 'swan', 'owl'].includes(active))) {
     animals.push('bird');
   }
 
-  if (!animals.includes('insect') && animals.some((active) => ['bee', 'ant', 'dragonfly'].includes(active))) {
+  if (!animals.includes('insect') && animals.some((active) => ['bee', 'ant', 'dragonfly', 'butterfly'].includes(active))) {
     animals.push('insect');
+  }
+
+  if (!animals.includes('wolf') && animals.some((active) => ['wolverine'].includes(active))) {
+    animals.push('wolf');
   }
 
   if (!animals.includes('fish') && animals.some((active) => ['salmon'].includes(active))) {

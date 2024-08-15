@@ -33,7 +33,7 @@ export const getMarker = (
     const word = ` ${phrase.toLowerCase()}`;
     
     // " bear" -> [" bear", " bear ", " bear,", " bear."]
-    return [word, `${word} `, `${word},`, `${word}.`, `${word}-`].some((phraseToCheck) => text.includes(phraseToCheck));
+    return [word, `${word} `, `${word},`, `${word}.`, `${word}-`, `${word}”`, `${word};`].some((phraseToCheck) => text.includes(phraseToCheck));
   });
 
   if (hasPhrase) {

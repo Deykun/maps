@@ -27,7 +27,7 @@ export const getMarkers = ({
   }
 
 
-  if ([' ilvesefiguur'].some((item) => text.includes(item.toLowerCase()))) {
+  if ([' lynxefiguur'].some((item) => text.includes(item.toLowerCase()))) {
     if (![
       'empty',
     ].includes(title)) {

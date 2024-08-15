@@ -37,7 +37,10 @@
         "imageSrcSet": "images/heraldry/fi/web-maakunta/ahvenanmaan-vaakuna-x2.webp 200w,images/heraldry/fi/web-maakunta/ahvenanmaan-vaakuna-x3.webp 300w,images/heraldry/fi/web-maakunta/ahvenanmaan-vaakuna-x4.webp 400w",
         "shortTitle": "Ahvenanmaan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "moose",
+                "goat"
+            ],
             "items": []
         }
     },
@@ -157,7 +160,9 @@
         "imageSrcSet": "images/heraldry/fi/web-maakunta/hameen-vaakuna-x2.webp 200w,images/heraldry/fi/web-maakunta/hameen-vaakuna-x3.webp 300w,images/heraldry/fi/web-maakunta/hameen-vaakuna-x4.webp 400w",
         "shortTitle": "Hämeen vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "lynx"
+            ],
             "items": []
         }
     },
@@ -283,7 +288,9 @@
         "imageSrcSet": "images/heraldry/fi/web-maakunta/kantahameen-vaakuna-x2.webp 200w,images/heraldry/fi/web-maakunta/kantahameen-vaakuna-x3.webp 300w,images/heraldry/fi/web-maakunta/kantahameen-vaakuna-x4.webp 400w",
         "shortTitle": "Kanta-Hämeen vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "lynx"
+            ],
             "items": []
         }
     },
@@ -367,7 +374,9 @@
         "imageSrcSet": "images/heraldry/fi/web-maakunta/keskipohjanmaan-vaakuna-x2.webp 200w,images/heraldry/fi/web-maakunta/keskipohjanmaan-vaakuna-x3.webp 300w,images/heraldry/fi/web-maakunta/keskipohjanmaan-vaakuna-x4.webp 400w",
         "shortTitle": "Keski-Pohjanmaan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "weasel"
+            ],
             "items": []
         }
     },
@@ -409,7 +418,9 @@
         "imageSrcSet": "images/heraldry/fi/web-maakunta/keskisuomen-vaakuna-x2.webp 200w,images/heraldry/fi/web-maakunta/keskisuomen-vaakuna-x3.webp 300w,images/heraldry/fi/web-maakunta/keskisuomen-vaakuna-x4.webp 400w",
         "shortTitle": "Keski-Suomen vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "bird"
+            ],
             "items": []
         }
     },
@@ -585,7 +596,9 @@
         "imageSrcSet": "images/heraldry/fi/web-maakunta/pohjanmaan-historiallisen-maakunnan-vaakuna-x2.webp 200w,images/heraldry/fi/web-maakunta/pohjanmaan-historiallisen-maakunnan-vaakuna-x3.webp 300w,images/heraldry/fi/web-maakunta/pohjanmaan-historiallisen-maakunnan-vaakuna-x4.webp 400w",
         "shortTitle": "Pohjanmaan historiallisen maakunnan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "weasel"
+            ],
             "items": []
         }
     },
@@ -627,7 +640,9 @@
         "imageSrcSet": "images/heraldry/fi/web-maakunta/pohjanmaan-vaakuna-x2.webp 200w,images/heraldry/fi/web-maakunta/pohjanmaan-vaakuna-x3.webp 300w,images/heraldry/fi/web-maakunta/pohjanmaan-vaakuna-x4.webp 400w",
         "shortTitle": "Pohjanmaan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "weasel"
+            ],
             "items": []
         }
     },
@@ -711,7 +726,9 @@
         "imageSrcSet": "images/heraldry/fi/web-maakunta/pohjoispohjanmaan-vaakuna-x2.webp 200w,images/heraldry/fi/web-maakunta/pohjoispohjanmaan-vaakuna-x3.webp 300w,images/heraldry/fi/web-maakunta/pohjoispohjanmaan-vaakuna-x4.webp 400w",
         "shortTitle": "Pohjois-Pohjanmaan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "weasel"
+            ],
             "items": []
         }
     },
@@ -794,7 +811,9 @@
         "imageSrcSet": "images/heraldry/fi/web-maakunta/paijathameen-vaakuna-x2.webp 200w,images/heraldry/fi/web-maakunta/paijathameen-vaakuna-x3.webp 300w,images/heraldry/fi/web-maakunta/paijathameen-vaakuna-x4.webp 400w",
         "shortTitle": "Päijät-Hämeen vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "mermaid"
+            ],
             "items": []
         }
     },
@@ -842,8 +861,7 @@
         "shortTitle": "Satakunnan vaakuna",
         "markers": {
             "animals": [
-                "bear",
-                "fish"
+                "bear"
             ],
             "items": []
         }
@@ -1004,7 +1022,9 @@
         "imageSrcSet": "images/heraldry/fi/web-maakunta/etelapohjanmaan-vaakuna-x2.webp 200w,images/heraldry/fi/web-maakunta/etelapohjanmaan-vaakuna-x3.webp 300w,images/heraldry/fi/web-maakunta/etelapohjanmaan-vaakuna-x4.webp 400w",
         "shortTitle": "Etelä-Pohjanmaan vaakuna",
         "markers": {
-            "animals": [],
+            "animals": [
+                "weasel"
+            ],
             "items": []
         }
     }
