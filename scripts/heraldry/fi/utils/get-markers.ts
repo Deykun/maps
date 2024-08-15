@@ -1,11 +1,6 @@
-import { getMarker } from '../../utils/get-marker';
+import { getMarker, MarkerParams } from '../../utils/get-marker';
 
-const animalRules: {
-  name: string,
-  phrases?: string[],
-  exclude?: string[],
-  include?: string[],
-}[] = [{
+const animalsRules: MarkerParams[] = [{
   name: "bear",
   phrases: ['karhu'],
   exclude: ['Kymin vaakuna', 'Maksamaan vaakuna', 'Vöyri-Maksamaan vaakuna', 'Vöyrin vaakuna', 'Töysän vaakuna', 'Alavuden vaakuna', 'Nurmeksen vaakuna', 'Virtain vaakuna'],
@@ -15,7 +10,7 @@ const animalRules: {
 }, {
   name: "bird",
   phrases: ['leivonen', 'siivitetty', 'silkkiuikun', 'siivet', 'varis', 'naakka', 'soidinmetso', 'teeri', 'palokärki', 'hanhi', 'riekko', 'käki'],
-  include: ['Haapajärven vaakuna', 'Kangasalan vaakuna'],
+  include: ['Haapajärven vaakuna', 'Kangasalan vaakuna', 'Mietoisten vaakuna', 'Mynämäen vaakuna'],
   exclude: [ 'Sulvan vaakuna', 'Kemijärven vaakuna', 'Kemijärven maalaiskunnan vaakuna', 'Teerijärven vaakuna', 'Kruunupyyn vaakuna', 'Savonlinnan vaakuna', 'Päijät-Hämeen vaakuna'],
 }, {
   name: "eagle",
@@ -109,7 +104,23 @@ const animalRules: {
   name: 'salmon',
   phrases: ['lohi'],
   exclude: ['Himangan vaakuna', 'Lohjan kunnan vaakuna', 'Lohjan vaakuna', 'Vehmaan vaakuna', 'Mikkelin vaakuna', 'Helsingin vaakuna', 'Kalajoen vaakuna', 'Itä-Uudenmaan vaakuna'],
-}]
+}];
+
+const itemsRules: MarkerParams[] = [{
+  name: "anchor",
+  phrases: ['-ankkuri', 'ankkuri'],
+  exclude: ['Kajaanin vaakuna'],
+}, {
+  name: "boat",
+  phrases: ['vene', 'veneitä', 'laiva', 'purjevene', 'lautta', 'lautat', 'tervavene', 'verkkovene', 'kaljaasilla', 'hansalaiva', 'tervahöyry', 'nuottavenettä', 'kirkkoveneillä'],
+  include: ['Lauritsalan vaakuna', 'Eurajoen vaakuna', 'Merimaskun vaakuna'],
+  exclude: ['Varkauden vaakuna', 'Paimion vaakuna', 'Merijärven vaakuna', 'Enonkosken vaakuna', 'Västanfjärdin vaakuna', 'Tammisaaren vaakuna'],
+}, {
+  name: "tree",
+  phrases: ['puu', 'metsä', 'puita', 'haapa', 'kuusi', 'kuusta', 'oksaa', 'tamm', 'tammi', 'lehmuksen', 'honka', 'vaahtera', 'mänty', 'koivunverso', 'koivu', 'havupuun', 'kanto'],
+  include: ['Savukosken vaakuna', 'Luumäen vaakuna'],
+  exclude: ['Alahärmän vaakuna', 'Alastaron vaakuna', 'Askaisten vaakuna', 'Elimäen vaakuna', 'Enon vaakuna', 'Eräjärven vaakuna', 'Haapasaaren vaakuna', 'Himangan vaakuna', 'Hinnerjoen vaakuna', 'Honkajoen vaakuna', 'Ikaalisten maalaiskunnan vaakuna', 'Jaalan vaakuna', 'Joutsenon vaakuna', 'Juankosken vaakuna', 'Jurvan vaakuna', 'Jämsänkosken vaakuna', 'Karjaan vaakuna', 'Karkun vaakuna', 'Karungin vaakuna', 'Kerimäen vaakuna', 'Kestilän vaakuna', 'Kiikalan vaakuna', 'Kiimingin vaakuna', 'Koivulahden vaakuna', 'Kuhmalahden vaakuna', 'Lauritsalan vaakuna', 'Lavian vaakuna', 'Loimaan kunnan vaakuna', 'Luopioisten vaakuna', 'Luvian vaakuna', 'Muurlan vaakuna', 'Muuruveden vaakuna', 'Pernajan vaakuna', 'Petolahden vaakuna', 'Raippaluodon vaakuna', 'Rantsilan vaakuna', 'Saaren vaakuna', 'Sulvan vaakuna', 'Suodenniemen vaakuna', 'Tarvasjoen vaakuna', 'Tenholan vaakuna', 'Tuupovaaran vaakuna', 'Tyrvännön vaakuna', 'Uukuniemen vaakuna', 'Viljakkalan vaakuna', 'Värtsilän vaakuna', 'Yli-Iin vaakuna', 'Eckerön vaakuna', 'Enontekiön vaakuna', 'Eurajoen vaakuna', 'Getan vaakuna', 'Haapajärven vaakuna', 'Halsuan vaakuna', 'Hangon vaakuna', 'Helsingin vaakuna', 'Hollolan vaakuna', 'Huittisten vaakuna', 'Hyrynsalmen vaakuna', 'Hämeenkyrön vaakuna', 'Ikaalisten vaakuna', 'Ilmajoen vaakuna', 'Inkoon vaakuna', 'Isojoen vaakuna', 'Joensuun vaakuna', 'Joensuun vaakuna', 'Kaarinan vaakuna', 'Kalajoen vaakuna', 'Kangasniemen vaakuna', 'Kannuksen vaakuna', 'Kauhavan vaakuna', 'Keminmaan vaakuna', 'Keravan vaakuna', 'Kihniön vaakuna', 'Kirkkonummen vaakuna', 'Konneveden vaakuna', 'Kontiolahden vaakuna', 'Tl. Kosken vaakuna', 'Kouvolan vaakuna', 'Kurikan vaakuna', 'Laitilan vaakuna', 'Lapinlahden vaakuna', 'Lappeenrannan vaakuna', 'Lestijärven vaakuna', 'Loimaan vaakuna', 'Loviisan vaakuna', 'Maskun vaakuna', 'Mynämäen vaakuna', 'Muonion vaakuna', 'Mustasaaren vaakuna', 'Nivalan vaakuna', 'Pelkosenniemen vaakuna', 'Pellon vaakuna', 'Pielaveden vaakuna', 'Pornaisten vaakuna', 'Posion vaakuna', 'Puumalan vaakuna', 'Pyhäjärven vaakuna', 'Pyhärannan vaakuna', 'Pälkäneen vaakuna', 'Raaseporin vaakuna', 'Ranuan vaakuna', 'Rautalammin vaakuna', 'Rautavaaran vaakuna', 'Rautjärven vaakuna', 'Saarijärven vaakuna', 'Sallan vaakuna', 'Sastamalan vaakuna', 'Sauvon vaakuna', 'Siikalatvan vaakuna', 'Sotkamon vaakuna', 'Tampereen vaakuna', 'Tohmajärven vaakuna', 'Turun vaakuna', 'Tuusniemen vaakuna', 'Vaalan vaakuna', 'Varkauden vaakuna', 'Vesannon vaakuna', 'Vetelin vaakuna', 'Virtain vaakuna', 'Ylöjärven vaakuna', 'Ahvenanmaan vaakuna', 'Hämeen vaakuna', 'Kanta-Hämeen vaakuna', 'Lapin vaakuna', 'Pohjanmaan historiallisen maakunnan vaakuna', 'Pohjois-Pohjanmaan vaakuna', 'Satakunnan vaakuna', 'Uudenmaan vaakuna', 'Etelä-Pohjanmaan vaakuna'],
+}];
 
 export const getMarkers = ({
   text: rawText = '',
@@ -119,14 +130,22 @@ export const getMarkers = ({
   title: string,
 }) => {
   let animals: string[] = [];
-  const items: string[] = [];
+  let items: string[] = [];
 
   const text = rawText.toLowerCase() || '';
 
   const data = { title, text };
 
-  animalRules.forEach(({ name, phrases, exclude = [], include = [] }) => {
+  animalsRules.forEach(({ name, phrases, exclude = [], include = [] }) => {
     animals = getMarker(animals, name, data, {
+      phrases,
+      exclude,
+      include,
+    });
+  });
+
+  itemsRules.forEach(({ name, phrases, exclude = [], include = [] }) => {
+    items = getMarker(items, name, data, {
       phrases,
       exclude,
       include,

@@ -159,7 +159,6 @@ export const locationTitleByCoatOfArmsTitle = {
   'Maarian vaakuna': 'Rusko',
   'Naantalin maalaiskunnan vaakuna': 'Naantali',
   'Nurmeksen maalaiskunnan vaakuna': 'Nurmes',
-  'Etelä-Pohjanmaan vaakuna': 'Lappajärvi (järvi)',
   'Pielisjärven vaakuna': 'Pankakoski',
   'Lohjan kunnan vaakuna': 'Lohja',
   'Oulujoen vaakuna': 'Oulujoki (Suomen entinen kunta)',
@@ -197,4 +196,5 @@ export const locationTitleByCoatOfArmsTitle = {
   'Kemin vaakuna': 'Kemi',
   'Keravan vaakuna': 'Kerava',
   'Kouvolan vaakuna': 'Kouvola',
+  'Etelä-Pohjanmaan vaakuna': 'Seinäjoen maalaiskunta',
 } as const;

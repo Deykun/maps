@@ -1,3 +1,10 @@
+export type MarkerParams = {
+  name: string,
+  phrases?: string[],
+  exclude?: string[],
+  include?: string[],
+}
+
 export const getMarker = (
   markersList: string[],
   name: string,
@@ -29,8 +36,12 @@ export const getMarker = (
   }
 
   const hasPhrase = phrases.some((phrase) => {
-    // It guarantees that it is a word's start and not inside it "Bear" -> " bear"
-    const word = ` ${phrase.toLowerCase()}`;
+    /*
+      It guarantees that it is a word's start and not inside it "Bear" -> " bear"
+
+      "-ing" gurantes the ending.
+    */
+    const word = phrase.startsWith('-') ? `${phrase.toLowerCase().replace('-', '')}` : ` ${phrase.toLowerCase()}`;
     
     // " bear" -> [" bear", " bear ", " bear,", " bear."]
     return [word, `${word} `, `${word},`, `${word}.`, `${word}-`, `${word}”`, `${word};`].some((phraseToCheck) => text.includes(phraseToCheck));
