@@ -112,6 +112,10 @@ const itemsRules: MarkerParams[] = [{
   phrases: ['-ankkuri', 'ankkuri'],
   exclude: ['Kajaanin vaakuna'],
 }, {
+  name: 'earOfGrain',
+  phrases: ['tähkää', 'tähkä', 'lyhde', 'röyhy'],
+  exclude: ['Savonlinnan vaakuna'],
+}, {
   name: "key",
   phrases: ['avain', 'avaimet'],
   exclude: ['Kouvolan vaakuna'],
