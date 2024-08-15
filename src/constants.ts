@@ -18,9 +18,10 @@ export const PATHS_DATA: {
   {
     pathNameLink: 'heraldry.fi.mapTitle',
     path: 'suomalainen-heraldikka',
-    title: '🛡️ The coat of arms of Finland',
+    title: '🛡️ Suomen vaakunat - Heraldikka, kartta | Suomi',
     social: `  
-      <meta property="og:title" content="🛡️ The coat of arms of Finland" />
+      <meta property="og:title" content="🛡️ Suomen vaakunat - Heraldikka, kartta | Suomi" />
+      <meta property="og:image" content="https://deykun.github.io/maps/social/suomen-vaakunat.png" />
     `,
     lang: 'fi',
   },
