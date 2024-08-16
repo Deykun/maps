@@ -1,11 +1,20 @@
+
 import { useRef, useEffect, memo } from 'react';
-import { render } from './canvas/render';
+// import { default as Map } from './assets/europe.svg';
+import SvgMap from './SvgMap';
+import { render, onResize } from './canvas/render';
+
+import useEffectChange from '../../../hooks/useEffectChange'
+
+import './HeraldryCanvas.scss';
 
 type Props = {
   className?: string,
+  zoomLevel?: number
 }
 
-const HeraldryCanvas = ({ className }: Props) => {
+const HeraldryCanvas = ({ className, zoomLevel = 2 }: Props) => {
+
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const canvasCtxRef = useRef<CanvasRenderingContext2D | null>(null);
 
@@ -20,8 +29,20 @@ const HeraldryCanvas = ({ className }: Props) => {
     }
   }, []);
 
+  useEffectChange(() => {
+    onResize();
+  }, [zoomLevel])
+
+  const width = Math.max(window.innerWidth, (1920 / 2) * zoomLevel);
+
   return (
-      <canvas ref={canvasRef} className={className} />
+    <div
+      className="heraldry-canvas relative aspect-[680_/_520] bg-[#eee]"
+      style={{ width }}
+    >
+      <SvgMap />
+      <canvas ref={canvasRef} width={width} className='absolute top-0 left-0 w-full h-full' />
+    </div>
   );
 }
 

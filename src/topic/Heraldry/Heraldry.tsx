@@ -174,7 +174,7 @@ const Heraldry = ({
               "mb-10": ['small', 'medium'].includes(mapFitment),
               "max-h-[66vh]": ['small'].includes(mapFitment),
               "max-h-[1500px] w-auto": ['medium'].includes(mapFitment),
-              "overflow-scroll hide-scroll border-t max-h-[90vh]": ['large'].includes(mapFitment),
+              "overflow-scroll no-scrollbar border-t max-h-[90vh]": ['large'].includes(mapFitment),
             })}
           >
             <div

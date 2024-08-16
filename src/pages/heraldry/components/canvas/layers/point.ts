@@ -1,29 +1,34 @@
 import ImageEurope from '../assets/europe.svg';
+import ImagePoint from '../assets/herb-gminy-opatow-powiat-klobucki-x4.webp';
 
 
-
-export class Map {
+``
+export class Point {
   canvas: HTMLCanvasElement;
   ctx: CanvasRenderingContext2D;
-  scaleLevel: number;
+  x: number;
+  y: number;
 
-  constructor ({ canvas, ctx }: { canvas: HTMLCanvasElement, ctx: CanvasRenderingContext2D, x: number, y: number }) {
+  constructor ({ canvas, ctx, lat, lon }: { canvas: HTMLCanvasElement, ctx: CanvasRenderingContext2D, lat: number, lon: number }) {
     this.canvas = canvas;
     this.ctx = ctx;
-    this.scaleLevel = 1;
+    this.x = lat;
+    this.y = lon;
   }
 
   draw({ screenOffsetX = 0, screenOffsetY = 0 }: { screenOffsetX?: number, screenOffsetY?: number } = {}) {
     const image = new Image();
-    image.src = ImageEurope;
+    image.src = ImagePoint;
 
     // console.log({
     //   a: this.canvas.width, b: this.canvas.height
     // })
 
     // height="520" width="680" 
-    const imageWidth = this.canvas.width;
-    const imageHeight = imageWidth / (680 / 520);
+    // const imageWidth = this.canvas.width;
+    // const imageHeight = imageWidth / (680 / 520);
+    const imageWidth = 200;
+    const imageHeight = 200;
 
     const x = screenOffsetX;
     const y = screenOffsetY;
@@ -47,18 +52,18 @@ export class Map {
 
     this.ctx.drawImage(
       image,
-      0,
-      0,
+      this.x,
+      this.y,
       imageWidth,
       imageHeight,
-      x,
-      y,
-      imageWidth * this.scaleLevel,
-      imageHeight * this.scaleLevel,
+      // x,
+      // y,
+      // imageWidth * this.scaleLevel,
+      // imageHeight * this.scaleLevel,
     );
   }
 
   setScale(scaleLevel: number) {
-    this.scaleLevel = scaleLevel;
+    // this.scaleLevel = scaleLevel;
   }
 }

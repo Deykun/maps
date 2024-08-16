@@ -1,0 +1,25 @@
+.heraldry-canvas {
+  svg {
+    path {
+      fill: #e0e6d9 !important;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        fill: #f4f4f4 !important;
+      }
+    }
+
+    // Countries stroke
+    [stroke="#644545"] {
+      stroke: #b4bfaf !important;
+    }
+
+    #ocean {
+      fill: #d9e4e6  !important;
+    }
+  }
+
+  canvas {
+    pointer-events: none;
+  }
+}
