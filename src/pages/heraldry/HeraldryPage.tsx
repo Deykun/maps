@@ -1,6 +1,6 @@
 // import SvgMap from './components/SvgMap';
 // import { AdministrativeUnit } from '../../topic/Heraldry/types';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useDraggable } from "react-use-draggable-scroll";
 import clsx from 'clsx';
 
@@ -10,6 +10,17 @@ import HeraldryCanvas from './components/HeraldryCanvas';
 
 // import unitJSON from './unit-map.json'
 
+import miastaJSON from '../heraldyka/miasta-map.json';
+import unitJSON from '../eesti-heraldika/unit-map.json';
+import unitFIJSON from '../suomalainen-heraldikka/maakunta-map.json';
+import unitFISmallJSON from '../suomalainen-heraldikka/kunta-map.json';
+const miasta = Object.values(miastaJSON);
+const unitsET = Object.values(unitJSON);
+const unitFI = Object.values(unitFIJSON);
+const unitFIsmall = Object.values(unitFISmallJSON);
+
+const units = [...miasta, ...unitsET, ...unitFI, ...unitFIsmall];
+
 // import Heraldry from '../../topic/Heraldry/Heraldry';
 
 // const units = Object.values(unitJSON);
@@ -18,25 +29,31 @@ import HeraldryCanvas from './components/HeraldryCanvas';
 // const animalFiltersList = getFilter(allUnits, 'animals');
 // const itemsFiltersList = getFilter(allUnits, 'items');
 
+
+
 const HeraldryPage = () => {
-  const [zoomLevel, setZoomLevel] = useState(2);
+  const [zoomLevel, setZoomLevel] = useState(5);
   const uiWrapperClassName = "p-2 px-4 rounded-[4px] bg-white";
   const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
   const { events } = useDraggable(wrapperRef);
 
+  useEffect(() => {
+    document.querySelector('.fixed')?.scroll({ top: 854, left: 1944 });
+  }, [])
+
   return (
     <div
       ref={wrapperRef}
-      className="fixed top-0 left-0 w-full h-full no-scrollbar overflow-hidden"
-      {...events}
+      className="fixed top-0 left-0 w-full h-full no-scrollbar overflow-auto"
+      // {...events}
     >
       <header className={clsx('fixed top-2 left-2 z-10', uiWrapperClassName)}>
         <h1>Coats of arms in Poland</h1>
       </header>
       <main>
-        <HeraldryCanvas className="size-full bg-[#dff5ff]" zoomLevel={zoomLevel} />
+        <HeraldryCanvas className="size-full bg-[#dff5ff]" zoomLevel={zoomLevel} units={units} />
         <nav className="fixed top-2 right-2 z-10 flex flex-col justify-between gap-2 text-[12px]">
-          <button className={uiWrapperClassName} onClick={() => setZoomLevel((zoomLevel) => Math.min(8, zoomLevel + 1))}>
+          <button className={uiWrapperClassName} onClick={() => setZoomLevel((zoomLevel) => Math.min(20, zoomLevel + 1))}>
             +
           </button>
           <span>
