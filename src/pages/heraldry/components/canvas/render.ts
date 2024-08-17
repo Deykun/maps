@@ -83,6 +83,7 @@ const line = [...new Array(90)].map((_, index) => index);
 
 export const setCoatOfArms = (units: object[]) => {
   coatOfArmsList = [];
+
   // coatOfArmsList = [-20].flatMap((lonX) => {
   //   return line.map((latY) => {
   //     const coatOfArms = new CoatOfArms({ canvas, ctx, lonX, latY, title: `${latY}` });
@@ -109,12 +110,24 @@ export const setCoatOfArms = (units: object[]) => {
     { city: "Warsaw", country: "Poland", lat: 52.2297, lon: 21.0122 }, // Assumed "Poland" refers to Warsaw
     { city: "Oslo", country: "Norway", lat: 59.9139, lon: 10.7522 },
     { city: "Berlin", country: "Germany", lat: 52.5200, lon: 13.4050 },
-    { city: "Barcelona", country: "Spain", lat: 41.3879, lon: 2.1699 }
+    { city: "Barcelona", country: "Spain", lat: 41.7365, lon: 2.1699 },
+    { city: "Cyprus", country: "Cyprus", lat: 35.0748, lon: 33.273600 },
+    { city: "Tenerife", country: "Spain", lat: 28.291565, lon: -16.629129 },
   ];
 
   coordinates.forEach(({ lat, lon, city: title }) => {
     coatOfArmsList.push(new CoatOfArms({ canvas, ctx, lonX: lon, latY: lat, title: `${title} ${roundWithPrecision(lon, 1)}x${roundWithPrecision(lat, 1)}` }));
   })
+
+  // const lines = [
+  //   { city: "62", lat: 62, lon: 5 },
+  //   { city: "52", lat: 52, lon: 5 },
+  //   { city: "42", lat: 42, lon: 5 },
+  // ];
+
+    // lines.forEach(({ lat, lon, city: title }) => {
+    // coatOfArmsList.push(new CoatOfArms({ canvas, ctx, lonX: lon, latY: lat, title: `${title} ${roundWithPrecision(lon, 1)}x${roundWithPrecision(lat, 1)}` }));
+  // })
 
 
 }

@@ -1,27 +1,47 @@
 import ImageCoatOfArms200 from '../assets/herb-helu-x2.webp';
 
-const minLonX = -179;
-const maxLonX = (360 + minLonX) % 360;
+const minLonX = -177.5;
+const maxLonX = 180;
 
-function getCanvasY(latitude, canvasHeight, rates) {
-    const reversedLatitude = 90 - latitude;  
-    const topPadding = rates.latTop / 100 * canvasHeight;
+// function getCanvasY(latitude, canvasHeight, rates) {
+//     const reversedLatitude = 90 - latitude;
+//     const topStatic = rates.staticTop ?? 0;
+//     const topPadding = rates.latTop * canvasHeight;
 
-    // const rate = 6.568 / 1000 * canvasHeight;
-    const rate = rates.latRate / 100 * canvasHeight;
-    const latDependedRate = rates.latDynamic / 100 * reversedLatitude * canvasHeight;
+//     // const rate = 6.568 / 1000 * canvasHeight;
+//     const rate = rates.latRate / 100 * canvasHeight;
+//     const latDependedRate = rates.latDynamic / 100 * reversedLatitude * canvasHeight;
 
     
 
-    // const base = topPadding + (reversedLatitude * rate) - latDependedRate;
-    const base = topPadding + (latitude * rate) - latDependedRate;
+//     // const base = topPadding + (reversedLatitude * rate) - latDependedRate;
+//     const base = topStatic + topPadding + (latitude * rate) - latDependedRate;
 
-    const response = base;
+//     const response = base;
 
-    // console.log(response);
+//     // console.log(response);
   
-    return response;
-  }
+//     return response;
+//   }
+
+  function getCanvasY(lat, rawMapHeight, rates) {
+    const mapHeight = rawMapHeight * (rates.mapHeightStreech ?? 1);
+    const topPadding = rates.latTop / 100 * mapHeight;
+    // Earth's radius in meters (mean radius)
+    const R = 6378137;
+
+    // Convert latitude from degrees to radians
+    const latRadians = (lat + rates.latShift) * (Math.PI / 180);
+
+    // Mercator projection formula to find y coordinate
+    const y = R * Math.log(Math.tan((Math.PI / 4) + (latRadians / 2)));
+
+    // Scale the y value to fit within the map's height
+    // Normalize y to be within the range of the map's height
+    const mapY = topPadding + (mapHeight / 2) - (y / (2 * Math.PI * R) * mapHeight);
+
+    return mapY;
+}
 
   window.gg = getCanvasY;
 
@@ -97,8 +117,8 @@ export class CoatOfArms {
     const image = new Image();
     image.src = ImageCoatOfArms200;
 
-    const imageWidth = 4;
-    const imageHeight = 4;
+    const imageWidth = 6;
+    const imageHeight = 6;
 
     this.ctx.drawImage(
       image,
@@ -115,10 +135,10 @@ export class CoatOfArms {
     if (this.title) {
       this.ctx.textBaseline = "top";
       this.ctx.fillStyle = 'black';
-      this.ctx.font = `13px Arial`;
-      // this.ctx.fillText(this.title, this.x + 20, this.y);
+      this.ctx.font = `16px Arial`;
       this.ctx.fillText(this.title, this.x + 20, this.y);
-      this.ctx.fillText(this.title, this.x + this.y - 5, this.y);
+      // this.ctx.fillText(this.title, this.x + 20, this.y);
+      // this.ctx.fillText(this.title, this.x + this.y - 5, this.y);
     }
   }
 

@@ -48,7 +48,8 @@ const HeraldryPage = () => {
       // {...events}
     >
       <header className={clsx('fixed top-2 left-2 z-10', uiWrapperClassName)}>
-        <h1>Coats of arms in Poland</h1>
+        {/* <h1>Coats of arms in Poland</h1> */}
+        <h1>AAAAA!!!</h1>
       </header>
       <main>
         <HeraldryCanvas className="size-full bg-[#dff5ff]" zoomLevel={zoomLevel} units={units} />
