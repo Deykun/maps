@@ -56,6 +56,7 @@ export const locationTitleByCoatOfArmsTitle = {
   'Herb powiatu starachowickiego': 'Powiat starachowicki',
   'Herb powiatu włoszczowskiego': 'Powiat włoszczowski',
   'Herb powiatu oleckiego': 'Powiat olecki',
+  'Herb Piły': 'Piła (miasto)',
   // - pl
   // et
   'Harjumaa vapp': 'Harju maakond',

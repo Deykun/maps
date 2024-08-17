@@ -811,7 +811,7 @@ export const getMarkers = ({
     }
   }
 
-  if (['wieża', ' wieże', ' wieżę', ' wieżą', ' wieży ', ' muru ', ' mur ', ' murów ', ' murem ', ' murze ', 'baszt', ' bramę ', 'bramę.', ' bramą.', 'bramą,', ' bramną ', ' bramie ', ' brama ', ' bramy ', 'corona muralis', ' kolumny ', ' kolumna ', 'gminy gołuchów', 'herb powiatu średzkiego (dolnośląskiego)', 'herb powiatu zgierskiego', 'herb powiatu żyrardowskiego', 'Herb powiatu myszkowskiego', 'Herb powiatu jarocińskiego'].some((item) => text.includes(item.toLowerCase()))) {
+  if (['wieża', ' wieże', ' wieżę', ' wieżą', ' wieży ', ' muru ', ' mur ', ' murów ', ' murem ', ' murze ', 'baszt', ' bramę ', 'bramę.', ' bramą.', 'bramą,', ' bramną ', ' bramie ', ' brama ', ' bramy ', 'corona muralis', ' kolumny ', ' kolumna ', 'gminy gołuchów', 'herb powiatu średzkiego (dolnośląskiego)', 'herb powiatu zgierskiego', 'herb powiatu żyrardowskiego', 'Herb powiatu myszkowskiego', 'Herb powiatu jarocińskiego', 'Herb Zduńskiej Woli'].some((item) => text.includes(item.toLowerCase()))) {
     if (![
       'Herb gminy Gaworzyce',
       'Herb Oleśnicy',

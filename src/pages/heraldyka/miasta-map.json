@@ -19724,6 +19724,7 @@
             ],
             "items": [
                 "sword",
+                "walls",
                 "crown"
             ]
         }
@@ -45324,6 +45325,74 @@
             ]
         }
     },
+    "herb-rudy-slaskiej": {
+        "title": "Herb Rudy Śląskiej",
+        "url": "https://pl.wikipedia.org/wiki/Herb_Rudy_%C5%9Al%C4%85skiej",
+        "type": [
+            "miasto"
+        ],
+        "partOf": "Herby miast województwa śląskiego",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/POL_Ruda_%C5%9Al%C4%85ska_alt_COA.svg/langpl-320px-POL_Ruda_%C5%9Al%C4%85ska_alt_COA.svg.png",
+            "width": 320,
+            "height": 399
+        },
+        "place": {
+            "name": "Ruda Śląska",
+            "coordinates": {
+                "lat": 50.262778,
+                "lon": 18.853611
+            }
+        },
+        "id": "miasto-704",
+        "index": 704,
+        "colors": {
+            "primary": {
+                "color": "#f1bf0f",
+                "name": "red",
+                "distance": 192.09893284451113
+            },
+            "palette": [
+                {
+                    "color": "#0d3c88",
+                    "name": "blue",
+                    "distance": 133.90294993016397
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/pl/miasta/herb-rudy-slaskiej.png",
+        "imageSrcSet": "images/heraldry/pl/web-miasta/herb-rudy-slaskiej-50w.webp 50w,images/heraldry/pl/web-miasta/herb-rudy-slaskiej-200w.webp 200w,images/heraldry/pl/web-miasta/herb-rudy-slaskiej-400w.webp 400w",
+        "imagesList": [
+            {
+                "name": "50w",
+                "width": "50w",
+                "path": "images/heraldry/pl/web-miasta/herb-rudy-slaskiej-50w.webp"
+            },
+            {
+                "name": "200w",
+                "width": "200w",
+                "path": "images/heraldry/pl/web-miasta/herb-rudy-slaskiej-200w.webp"
+            },
+            {
+                "name": "400w",
+                "width": "400w",
+                "path": "images/heraldry/pl/web-miasta/herb-rudy-slaskiej-400w.webp"
+            }
+        ],
+        "shortTitle": "Herb Rudy Śląskiej",
+        "markers": {
+            "animals": [
+                "eagle",
+                "bird"
+            ],
+            "items": [
+                "sword",
+                "walls",
+                "saint"
+            ]
+        }
+    },
     "herb-rybnika": {
         "title": "Herb Rybnika",
         "url": "https://pl.wikipedia.org/wiki/Herb_Rybnika",
@@ -46404,6 +46473,72 @@
             "items": []
         }
     },
+    "herb-wisly": {
+        "title": "Herb Wisły",
+        "url": "https://pl.wikipedia.org/wiki/Herb_Wis%C5%82y",
+        "type": [
+            "miasto"
+        ],
+        "partOf": "Herby miast Śląska Cieszyńskiego",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/POL_Wis%C5%82a_COA.svg/langpl-320px-POL_Wis%C5%82a_COA.svg.png",
+            "width": 320,
+            "height": 413
+        },
+        "place": {
+            "name": "Wisła (miasto)",
+            "coordinates": {
+                "lat": 49.647222,
+                "lon": 18.8675
+            }
+        },
+        "id": "miasto-742",
+        "index": 742,
+        "colors": {
+            "primary": {
+                "color": "#0473ca",
+                "name": "blue",
+                "distance": 126.68859459319927
+            },
+            "palette": [
+                {
+                    "color": "#0473ca",
+                    "name": "blue",
+                    "distance": 126.68859459319927
+                },
+                {
+                    "color": "#049414",
+                    "name": "green",
+                    "distance": 108.92658077806354
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/pl/miasta/herb-wisly.png",
+        "imageSrcSet": "images/heraldry/pl/web-miasta/herb-wisly-50w.webp 50w,images/heraldry/pl/web-miasta/herb-wisly-200w.webp 200w,images/heraldry/pl/web-miasta/herb-wisly-400w.webp 400w",
+        "imagesList": [
+            {
+                "name": "50w",
+                "width": "50w",
+                "path": "images/heraldry/pl/web-miasta/herb-wisly-50w.webp"
+            },
+            {
+                "name": "200w",
+                "width": "200w",
+                "path": "images/heraldry/pl/web-miasta/herb-wisly-200w.webp"
+            },
+            {
+                "name": "400w",
+                "width": "400w",
+                "path": "images/heraldry/pl/web-miasta/herb-wisly-400w.webp"
+            }
+        ],
+        "shortTitle": "Herb Wisły",
+        "markers": {
+            "animals": [],
+            "items": []
+        }
+    },
     "herb-wlodowic": {
         "title": "Herb Włodowic",
         "url": "https://pl.wikipedia.org/wiki/Herb_W%C5%82odowic",
@@ -46948,6 +47083,71 @@
             "items": [
                 "sword"
             ]
+        }
+    },
+    "herb-zywca": {
+        "title": "Herb Żywca",
+        "url": "https://pl.wikipedia.org/wiki/Herb_%C5%BBywca",
+        "type": [
+            "miasto"
+        ],
+        "partOf": "Herby miast województwa śląskiego",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/POL_%C5%BBywiec_COA.svg/langpl-320px-POL_%C5%BBywiec_COA.svg.png",
+            "width": 320,
+            "height": 400
+        },
+        "place": {
+            "name": "Żywiec",
+            "coordinates": {
+                "lat": 49.689167,
+                "lon": 19.205833
+            }
+        },
+        "id": "miasto-731",
+        "index": 731,
+        "colors": {
+            "primary": {
+                "color": "#0453b2",
+                "name": "blue",
+                "distance": 113.28724553099524
+            },
+            "palette": [
+                {
+                    "color": "#0453b2",
+                    "name": "blue",
+                    "distance": 113.28724553099524
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/pl/miasta/herb-zywca.png",
+        "imageSrcSet": "images/heraldry/pl/web-miasta/herb-zywca-50w.webp 50w,images/heraldry/pl/web-miasta/herb-zywca-200w.webp 200w,images/heraldry/pl/web-miasta/herb-zywca-400w.webp 400w",
+        "imagesList": [
+            {
+                "name": "50w",
+                "width": "50w",
+                "path": "images/heraldry/pl/web-miasta/herb-zywca-50w.webp"
+            },
+            {
+                "name": "200w",
+                "width": "200w",
+                "path": "images/heraldry/pl/web-miasta/herb-zywca-200w.webp"
+            },
+            {
+                "name": "400w",
+                "width": "400w",
+                "path": "images/heraldry/pl/web-miasta/herb-zywca-400w.webp"
+            }
+        ],
+        "shortTitle": "Herb Żywca",
+        "markers": {
+            "animals": [
+                "eagle",
+                "bird",
+                "bullBison"
+            ],
+            "items": []
         }
     },
     "herb-czeskiego-cieszyna": {
@@ -58203,74 +58403,6 @@
             ]
         }
     },
-    "herb-pily": {
-        "title": "Herb Piły",
-        "url": "https://pl.wikipedia.org/wiki/Herb_Pi%C5%82y",
-        "type": [
-            "miasto"
-        ],
-        "partOf": "Herby miast województwa wielkopolskiego",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/POL_Pi%C5%82a_COA_1.svg/langpl-320px-POL_Pi%C5%82a_COA_1.svg.png",
-            "width": 320,
-            "height": 415
-        },
-        "place": {
-            "name": "Piły",
-            "coordinates": {
-                "lat": 50.123333,
-                "lon": 23.868611
-            }
-        },
-        "id": "miasto-913",
-        "index": 913,
-        "colors": {
-            "primary": {
-                "color": "#089245",
-                "name": "green",
-                "distance": 129.25169244539896
-            },
-            "palette": [
-                {
-                    "color": "#089245",
-                    "name": "green",
-                    "distance": 129.25169244539896
-                },
-                {
-                    "color": "#d41c39",
-                    "name": "red",
-                    "distance": 76.69419795525604
-                }
-            ]
-        },
-        "imageUrl": "images/heraldry/pl/miasta/herb-pily.png",
-        "imageSrcSet": "images/heraldry/pl/web-miasta/herb-pily-50w.webp 50w,images/heraldry/pl/web-miasta/herb-pily-200w.webp 200w,images/heraldry/pl/web-miasta/herb-pily-400w.webp 400w",
-        "imagesList": [
-            {
-                "name": "50w",
-                "width": "50w",
-                "path": "images/heraldry/pl/web-miasta/herb-pily-50w.webp"
-            },
-            {
-                "name": "200w",
-                "width": "200w",
-                "path": "images/heraldry/pl/web-miasta/herb-pily-200w.webp"
-            },
-            {
-                "name": "400w",
-                "width": "400w",
-                "path": "images/heraldry/pl/web-miasta/herb-pily-400w.webp"
-            }
-        ],
-        "shortTitle": "Herb Piły",
-        "markers": {
-            "animals": [
-                "deer"
-            ],
-            "items": []
-        }
-    },
     "herb-pleszewa": {
         "title": "Herb Pleszewa",
         "url": "https://pl.wikipedia.org/wiki/Herb_Pleszewa",
@@ -58594,6 +58726,77 @@
             "animals": [],
             "items": [
                 "walls"
+            ]
+        }
+    },
+    "herb-poznania": {
+        "title": "Herb Poznania",
+        "url": "https://pl.wikipedia.org/wiki/Herb_Poznania",
+        "type": [
+            "miasto"
+        ],
+        "partOf": "Herby miast województwa wielkopolskiego",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/POL_Pozna%C5%84_COA.svg/langpl-320px-POL_Pozna%C5%84_COA.svg.png",
+            "width": 320,
+            "height": 488
+        },
+        "place": {
+            "name": "Poznań",
+            "coordinates": {
+                "lat": 52.408333,
+                "lon": 16.934167
+            }
+        },
+        "id": "miasto-919",
+        "index": 919,
+        "colors": {
+            "primary": {
+                "color": "#0691c7",
+                "name": "blue",
+                "distance": 155.5538491969903
+            },
+            "palette": [
+                {
+                    "color": "#0691c7",
+                    "name": "blue",
+                    "distance": 155.5538491969903
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/pl/miasta/herb-poznania.png",
+        "imageSrcSet": "images/heraldry/pl/web-miasta/herb-poznania-50w.webp 50w,images/heraldry/pl/web-miasta/herb-poznania-200w.webp 200w,images/heraldry/pl/web-miasta/herb-poznania-400w.webp 400w",
+        "imagesList": [
+            {
+                "name": "50w",
+                "width": "50w",
+                "path": "images/heraldry/pl/web-miasta/herb-poznania-50w.webp"
+            },
+            {
+                "name": "200w",
+                "width": "200w",
+                "path": "images/heraldry/pl/web-miasta/herb-poznania-200w.webp"
+            },
+            {
+                "name": "400w",
+                "width": "400w",
+                "path": "images/heraldry/pl/web-miasta/herb-poznania-400w.webp"
+            }
+        ],
+        "shortTitle": "Herb Poznania",
+        "markers": {
+            "animals": [
+                "eagle",
+                "bird"
+            ],
+            "items": [
+                "key",
+                "sword",
+                "walls",
+                "cross",
+                "crown",
+                "saint"
             ]
         }
     },
@@ -60432,6 +60635,69 @@
         "markers": {
             "animals": [
                 "bullBison"
+            ],
+            "items": []
+        }
+    },
+    "herb-ujscia": {
+        "title": "Herb Ujścia",
+        "url": "https://pl.wikipedia.org/wiki/Herb_Uj%C5%9Bcia",
+        "type": [
+            "miasto"
+        ],
+        "partOf": "Herby miast województwa wielkopolskiego",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/POL_Uj%C5%9Bcie_COA_1.svg/langpl-320px-POL_Uj%C5%9Bcie_COA_1.svg.png",
+            "width": 320,
+            "height": 363
+        },
+        "place": {
+            "name": "Ujście (miasto)",
+            "coordinates": {
+                "lat": 53.0525,
+                "lon": 16.733056
+            }
+        },
+        "id": "miasto-948",
+        "index": 948,
+        "colors": {
+            "primary": {
+                "color": "#070606",
+                "name": "red",
+                "distance": 248.145118831703
+            },
+            "palette": [
+                {
+                    "color": "#fb0505",
+                    "name": "red",
+                    "distance": 8.12403840463596
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/pl/miasta/herb-ujscia.png",
+        "imageSrcSet": "images/heraldry/pl/web-miasta/herb-ujscia-50w.webp 50w,images/heraldry/pl/web-miasta/herb-ujscia-200w.webp 200w,images/heraldry/pl/web-miasta/herb-ujscia-400w.webp 400w",
+        "imagesList": [
+            {
+                "name": "50w",
+                "width": "50w",
+                "path": "images/heraldry/pl/web-miasta/herb-ujscia-50w.webp"
+            },
+            {
+                "name": "200w",
+                "width": "200w",
+                "path": "images/heraldry/pl/web-miasta/herb-ujscia-200w.webp"
+            },
+            {
+                "name": "400w",
+                "width": "400w",
+                "path": "images/heraldry/pl/web-miasta/herb-ujscia-400w.webp"
+            }
+        ],
+        "shortTitle": "Herb Ujścia",
+        "markers": {
+            "animals": [
+                "deer"
             ],
             "items": []
         }
@@ -65022,6 +65288,71 @@
             "items": []
         }
     },
+    "herb-szczecina": {
+        "title": "Herb Szczecina",
+        "url": "https://pl.wikipedia.org/wiki/Herb_Szczecina",
+        "type": [
+            "miasto"
+        ],
+        "partOf": "Herby miast województwa zachodniopomorskiego",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/POL_Szczecin_COA.svg/langpl-320px-POL_Szczecin_COA.svg.png",
+            "width": 320,
+            "height": 422
+        },
+        "place": {
+            "name": "Szczecin",
+            "coordinates": {
+                "lat": 53.438056,
+                "lon": 14.542222
+            }
+        },
+        "id": "miasto-1019",
+        "index": 1019,
+        "colors": {
+            "primary": {
+                "color": "#043b92",
+                "name": "blue",
+                "distance": 124.00806425390246
+            },
+            "palette": [
+                {
+                    "color": "#043b92",
+                    "name": "blue",
+                    "distance": 124.00806425390246
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/pl/miasta/herb-szczecina.png",
+        "imageSrcSet": "images/heraldry/pl/web-miasta/herb-szczecina-50w.webp 50w,images/heraldry/pl/web-miasta/herb-szczecina-200w.webp 200w,images/heraldry/pl/web-miasta/herb-szczecina-400w.webp 400w",
+        "imagesList": [
+            {
+                "name": "50w",
+                "width": "50w",
+                "path": "images/heraldry/pl/web-miasta/herb-szczecina-50w.webp"
+            },
+            {
+                "name": "200w",
+                "width": "200w",
+                "path": "images/heraldry/pl/web-miasta/herb-szczecina-200w.webp"
+            },
+            {
+                "name": "400w",
+                "width": "400w",
+                "path": "images/heraldry/pl/web-miasta/herb-szczecina-400w.webp"
+            }
+        ],
+        "shortTitle": "Herb Szczecina",
+        "markers": {
+            "animals": [
+                "griffin"
+            ],
+            "items": [
+                "crown"
+            ]
+        }
+    },
     "herb-szczecinka": {
         "title": "Herb Szczecinka",
         "url": "https://pl.wikipedia.org/wiki/Herb_Szczecinka",
@@ -65612,331 +65943,72 @@
             ]
         }
     },
-    "herb-wisly": {
-        "title": "Herb Wisły",
-        "url": "https://pl.wikipedia.org/wiki/Herb_Wis%C5%82y",
-        "type": [
-            "miasto"
-        ],
-        "partOf": "Herby miast województwa śląskiego",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/POL_Wis%C5%82a_COA.svg/langpl-320px-POL_Wis%C5%82a_COA.svg.png",
-            "width": 320,
-            "height": 413
-        },
-        "place": {
-            "name": "Wisła (miasto)",
-            "coordinates": {
-                "lat": 49.647222,
-                "lon": 18.8675
-            }
-        },
-        "id": "miasto-722",
-        "index": 722,
-        "colors": {
-            "primary": {
-                "color": "#0473ca",
-                "name": "blue",
-                "distance": 126.68859459319927
-            },
-            "palette": [
-                {
-                    "color": "#0473ca",
-                    "name": "blue",
-                    "distance": 126.68859459319927
-                },
-                {
-                    "color": "#049414",
-                    "name": "green",
-                    "distance": 108.92658077806354
-                }
-            ]
-        },
-        "imageUrl": "images/heraldry/pl/miasta/herb-wisly.png",
-        "imageSrcSet": "images/heraldry/pl/web-miasta/herb-wisly-50w.webp 50w,images/heraldry/pl/web-miasta/herb-wisly-200w.webp 200w,images/heraldry/pl/web-miasta/herb-wisly-400w.webp 400w",
-        "imagesList": [
-            {
-                "name": "50w",
-                "width": "50w",
-                "path": "images/heraldry/pl/web-miasta/herb-wisly-50w.webp"
-            },
-            {
-                "name": "200w",
-                "width": "200w",
-                "path": "images/heraldry/pl/web-miasta/herb-wisly-200w.webp"
-            },
-            {
-                "name": "400w",
-                "width": "400w",
-                "path": "images/heraldry/pl/web-miasta/herb-wisly-400w.webp"
-            }
-        ],
-        "shortTitle": "Herb Wisły",
-        "markers": {
-            "animals": [],
-            "items": []
-        }
-    },
-    "herb-ujscia": {
-        "title": "Herb Ujścia",
-        "url": "https://pl.wikipedia.org/wiki/Herb_Uj%C5%9Bcia",
+    "herb-pily": {
+        "title": "Herb Piły",
+        "url": "https://pl.wikipedia.org/wiki/Herb_Pi%C5%82y",
         "type": [
             "miasto"
         ],
         "partOf": "Herby miast województwa wielkopolskiego",
         "description": "",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/POL_Uj%C5%9Bcie_COA_1.svg/langpl-320px-POL_Uj%C5%9Bcie_COA_1.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/POL_Pi%C5%82a_COA_1.svg/langpl-320px-POL_Pi%C5%82a_COA_1.svg.png",
             "width": 320,
-            "height": 363
+            "height": 415
         },
         "place": {
-            "name": "Ujście (miasto)",
+            "name": "Piła (miasto)",
             "coordinates": {
-                "lat": 53.0525,
-                "lon": 16.733056
+                "lat": 53.1475,
+                "lon": 16.730833
             }
         },
-        "id": "miasto-948",
-        "index": 948,
+        "id": "miasto-913",
+        "index": 913,
         "colors": {
             "primary": {
-                "color": "#070606",
-                "name": "red",
-                "distance": 248.145118831703
+                "color": "#089245",
+                "name": "green",
+                "distance": 129.25169244539896
             },
             "palette": [
                 {
-                    "color": "#fb0505",
+                    "color": "#089245",
+                    "name": "green",
+                    "distance": 129.25169244539896
+                },
+                {
+                    "color": "#d41c39",
                     "name": "red",
-                    "distance": 8.12403840463596
+                    "distance": 76.69419795525604
                 }
             ]
         },
-        "imageUrl": "images/heraldry/pl/miasta/herb-ujscia.png",
-        "imageSrcSet": "images/heraldry/pl/web-miasta/herb-ujscia-50w.webp 50w,images/heraldry/pl/web-miasta/herb-ujscia-200w.webp 200w,images/heraldry/pl/web-miasta/herb-ujscia-400w.webp 400w",
+        "imageUrl": "images/heraldry/pl/miasta/herb-pily.png",
+        "imageSrcSet": "images/heraldry/pl/web-miasta/herb-pily-50w.webp 50w,images/heraldry/pl/web-miasta/herb-pily-200w.webp 200w,images/heraldry/pl/web-miasta/herb-pily-400w.webp 400w",
         "imagesList": [
             {
                 "name": "50w",
                 "width": "50w",
-                "path": "images/heraldry/pl/web-miasta/herb-ujscia-50w.webp"
+                "path": "images/heraldry/pl/web-miasta/herb-pily-50w.webp"
             },
             {
                 "name": "200w",
                 "width": "200w",
-                "path": "images/heraldry/pl/web-miasta/herb-ujscia-200w.webp"
+                "path": "images/heraldry/pl/web-miasta/herb-pily-200w.webp"
             },
             {
                 "name": "400w",
                 "width": "400w",
-                "path": "images/heraldry/pl/web-miasta/herb-ujscia-400w.webp"
+                "path": "images/heraldry/pl/web-miasta/herb-pily-400w.webp"
             }
         ],
-        "shortTitle": "Herb Ujścia",
+        "shortTitle": "Herb Piły",
         "markers": {
             "animals": [
                 "deer"
             ],
             "items": []
-        }
-    },
-    "herb-zywca": {
-        "title": "Herb Żywca",
-        "url": "https://pl.wikipedia.org/wiki/Herb_%C5%BBywca",
-        "type": [
-            "miasto"
-        ],
-        "partOf": "Herby miast województwa śląskiego",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/POL_%C5%BBywiec_COA.svg/langpl-320px-POL_%C5%BBywiec_COA.svg.png",
-            "width": 320,
-            "height": 400
-        },
-        "place": {
-            "name": "Żywiec",
-            "coordinates": {
-                "lat": 49.689167,
-                "lon": 19.205833
-            }
-        },
-        "id": "miasto-731",
-        "index": 731,
-        "colors": {
-            "primary": {
-                "color": "#0453b2",
-                "name": "blue",
-                "distance": 113.28724553099524
-            },
-            "palette": [
-                {
-                    "color": "#0453b2",
-                    "name": "blue",
-                    "distance": 113.28724553099524
-                }
-            ]
-        },
-        "imageUrl": "images/heraldry/pl/miasta/herb-zywca.png",
-        "imageSrcSet": "images/heraldry/pl/web-miasta/herb-zywca-50w.webp 50w,images/heraldry/pl/web-miasta/herb-zywca-200w.webp 200w,images/heraldry/pl/web-miasta/herb-zywca-400w.webp 400w",
-        "imagesList": [
-            {
-                "name": "50w",
-                "width": "50w",
-                "path": "images/heraldry/pl/web-miasta/herb-zywca-50w.webp"
-            },
-            {
-                "name": "200w",
-                "width": "200w",
-                "path": "images/heraldry/pl/web-miasta/herb-zywca-200w.webp"
-            },
-            {
-                "name": "400w",
-                "width": "400w",
-                "path": "images/heraldry/pl/web-miasta/herb-zywca-400w.webp"
-            }
-        ],
-        "shortTitle": "Herb Żywca",
-        "markers": {
-            "animals": [
-                "eagle",
-                "bird",
-                "bullBison"
-            ],
-            "items": []
-        }
-    },
-    "herb-rudy-slaskiej": {
-        "title": "Herb Rudy Śląskiej",
-        "url": "https://pl.wikipedia.org/wiki/Herb_Rudy_%C5%9Al%C4%85skiej",
-        "type": [
-            "miasto"
-        ],
-        "partOf": "Herby miast województwa śląskiego",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/POL_Ruda_%C5%9Al%C4%85ska_alt_COA.svg/langpl-320px-POL_Ruda_%C5%9Al%C4%85ska_alt_COA.svg.png",
-            "width": 320,
-            "height": 399
-        },
-        "place": {
-            "name": "Ruda Śląska",
-            "coordinates": {
-                "lat": 50.262778,
-                "lon": 18.853611
-            }
-        },
-        "id": "miasto-704",
-        "index": 704,
-        "colors": {
-            "primary": {
-                "color": "#f1bf0f",
-                "name": "red",
-                "distance": 192.09893284451113
-            },
-            "palette": [
-                {
-                    "color": "#0d3c88",
-                    "name": "blue",
-                    "distance": 133.90294993016397
-                }
-            ]
-        },
-        "imageUrl": "images/heraldry/pl/miasta/herb-rudy-slaskiej.png",
-        "imageSrcSet": "images/heraldry/pl/web-miasta/herb-rudy-slaskiej-50w.webp 50w,images/heraldry/pl/web-miasta/herb-rudy-slaskiej-200w.webp 200w,images/heraldry/pl/web-miasta/herb-rudy-slaskiej-400w.webp 400w",
-        "imagesList": [
-            {
-                "name": "50w",
-                "width": "50w",
-                "path": "images/heraldry/pl/web-miasta/herb-rudy-slaskiej-50w.webp"
-            },
-            {
-                "name": "200w",
-                "width": "200w",
-                "path": "images/heraldry/pl/web-miasta/herb-rudy-slaskiej-200w.webp"
-            },
-            {
-                "name": "400w",
-                "width": "400w",
-                "path": "images/heraldry/pl/web-miasta/herb-rudy-slaskiej-400w.webp"
-            }
-        ],
-        "shortTitle": "Herb Rudy Śląskiej",
-        "markers": {
-            "animals": [
-                "eagle",
-                "bird"
-            ],
-            "items": [
-                "sword",
-                "walls",
-                "saint"
-            ]
-        }
-    },
-    "herb-szczecina": {
-        "title": "Herb Szczecina",
-        "url": "https://pl.wikipedia.org/wiki/Herb_Szczecina",
-        "type": [
-            "miasto"
-        ],
-        "partOf": "Herby miast województwa zachodniopomorskiego",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/POL_Szczecin_COA.svg/langpl-320px-POL_Szczecin_COA.svg.png",
-            "width": 320,
-            "height": 422
-        },
-        "place": {
-            "name": "Szczecin",
-            "coordinates": {
-                "lat": 53.438056,
-                "lon": 14.542222
-            }
-        },
-        "id": "miasto-1019",
-        "index": 1019,
-        "colors": {
-            "primary": {
-                "color": "#043b92",
-                "name": "blue",
-                "distance": 124.00806425390246
-            },
-            "palette": [
-                {
-                    "color": "#043b92",
-                    "name": "blue",
-                    "distance": 124.00806425390246
-                }
-            ]
-        },
-        "imageUrl": "images/heraldry/pl/miasta/herb-szczecina.png",
-        "imageSrcSet": "images/heraldry/pl/web-miasta/herb-szczecina-50w.webp 50w,images/heraldry/pl/web-miasta/herb-szczecina-200w.webp 200w,images/heraldry/pl/web-miasta/herb-szczecina-400w.webp 400w",
-        "imagesList": [
-            {
-                "name": "50w",
-                "width": "50w",
-                "path": "images/heraldry/pl/web-miasta/herb-szczecina-50w.webp"
-            },
-            {
-                "name": "200w",
-                "width": "200w",
-                "path": "images/heraldry/pl/web-miasta/herb-szczecina-200w.webp"
-            },
-            {
-                "name": "400w",
-                "width": "400w",
-                "path": "images/heraldry/pl/web-miasta/herb-szczecina-400w.webp"
-            }
-        ],
-        "shortTitle": "Herb Szczecina",
-        "markers": {
-            "animals": [
-                "griffin"
-            ],
-            "items": [
-                "crown"
-            ]
         }
     }
 }
