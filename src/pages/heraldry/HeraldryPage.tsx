@@ -8,6 +8,7 @@ import usePrevious from '../../hooks/usePrevious';
 import clsx from 'clsx';
 
 import HeraldryCanvas from './components/HeraldryCanvas';
+import { zoomUnitInPx } from './components/constants';
 
 // import { getFilter } from '../../topic/Heraldry/utils/getFilter';
 
@@ -44,11 +45,11 @@ const HeraldryPage = () => {
   const uiWrapperClassName = "p-2 px-4 rounded-[4px] bg-white";
   const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
 
-  const { events } = useDraggable(wrapperRef);
+  const { events } = useDraggable(wrapperRef, { decayRate: 0 });
   
   const { t } = useTranslation();
 
-  const prevZoomLevel = usePrevious(zoomLevel);
+  const prevZoomLevel = usePrevious(zoomLevel, 5);
 
   useEffect(() => {
     const handleScroll = (event: WheelEvent) => {
@@ -58,13 +59,17 @@ const HeraldryPage = () => {
         setZoomLevel((zoomLevel) => Math.max(1, zoomLevel - 1));
       }
     }
+    wrapperRef.current.addEventListener('wheel', handleScroll, { passive: true });
 
-    wrapperRef.current.addEventListener('wheel', handleScroll, {
-      passive: true,
-    });
+    const handleScrollEnd = () => {
+      document.getElementById('europe-marker')?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+    };
+    wrapperRef.current.addEventListener('scrollend', handleScrollEnd);
+    handleScrollEnd();
   
     return () => {
       wrapperRef.current.removeEventListener('wheel', handleScroll);
+      wrapperRef.current.removeEventListener('scrollend', handleScrollEnd);
     };
   }, []);
 
@@ -73,12 +78,16 @@ const HeraldryPage = () => {
       const topScroll = wrapperRef.current?.scrollTop || 0;
       const scrollLeft = wrapperRef.current?.scrollLeft || 0;
   
-      const zoomAgnosticTop = topScroll / (prevZoomLevel ?? 5);
-      const zoomAgnosticLeft = scrollLeft / (prevZoomLevel ?? 5);
+      const zoomAgnosticTop = topScroll / prevZoomLevel;
+      const zoomAgnosticLeft = scrollLeft / prevZoomLevel;
+
+      const didZoomIn = prevZoomLevel < zoomLevel;
+      const zoomOffsetTop = didZoomIn ? zoomUnitInPx / 6 : -zoomUnitInPx / 6;
+      const zoomOffsetLeft = didZoomIn ? zoomUnitInPx / 4 : -zoomUnitInPx / 4;
 
       wrapperRef.current?.scroll({
-        top: zoomAgnosticTop * zoomLevel,
-        left: zoomAgnosticLeft * zoomLevel,
+        top: zoomAgnosticTop * zoomLevel + zoomOffsetTop,
+        left: zoomAgnosticLeft * zoomLevel + zoomOffsetLeft,
       });
     }
   }, [zoomLevel, wrapperRef.current]);
