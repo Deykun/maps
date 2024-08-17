@@ -37,6 +37,8 @@ export class CoatOfArms {
   title: string;
   imageUrl: string;
   rates: SettingsParams;
+  image: HTMLImageElement;
+  imageIsLoaded: boolean;
 
   constructor ({
     canvas,
@@ -51,6 +53,15 @@ export class CoatOfArms {
 
     this.title = title;
     this.imageUrl = imageUrl;
+
+    const image = new Image();
+    image.src = this.imageUrl;
+    this.image = image;
+    this.imageIsLoaded = false;
+    this.image.onload = () => {
+      this.imageIsLoaded = true;
+    }
+
     this.width = 20;
     this.height = 20;
 
@@ -76,12 +87,12 @@ export class CoatOfArms {
   }
 
   draw() {
-    const image = new Image();
-    // image.src = ImageCoatOfArms200;
-    image.src = this.imageUrl;
+    if (!this.imageIsLoaded) {
+      return;
+    }
 
     this.ctx.drawImage(
-      image,
+      this.image,
       this.x - (this.width / 2),
       this.y - (this.width / 2),
       this.width,

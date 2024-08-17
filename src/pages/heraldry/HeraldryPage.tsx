@@ -59,7 +59,9 @@ const HeraldryPage = () => {
       }
     }
 
-    wrapperRef.current.addEventListener('wheel', handleScroll);
+    wrapperRef.current.addEventListener('wheel', handleScroll, {
+      passive: true,
+    });
   
     return () => {
       wrapperRef.current.removeEventListener('wheel', handleScroll);
@@ -102,7 +104,7 @@ const HeraldryPage = () => {
         </nav>
         <section className="fixed top-[100px] right-2 z-10">
           <div className={uiWrapperClassName}>
-            {selected.map(({ title }) => <div>
+            {selected.map(({ title }) => <div key={title}>
               {title}
             </div>)}
           </div>

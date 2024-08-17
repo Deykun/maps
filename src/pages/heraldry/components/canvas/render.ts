@@ -53,6 +53,8 @@ export const render = ({ canvas: gameCanvas, ctx: gameCtx, aspectX = 1, aspectY 
     return;
   }
 
+  console.log('INIT');
+
   wasInited = true;
   canvas = gameCanvas;
   // onResize();
@@ -60,7 +62,7 @@ export const render = ({ canvas: gameCanvas, ctx: gameCtx, aspectX = 1, aspectY 
   aspectRation.x = aspectX;
   aspectRation.y = aspectY;
 
-  renderFrame();
+  // renderFrame();
   initEventListeners();
 };
 
@@ -102,6 +104,8 @@ export const setCoatOfArms = (units: AdministrativeUnit[]) => {
   // coordinates.forEach(({ lat, lon, city: title }) => {
   //   coatOfArmsList.push(new CoatOfArms({ canvas, ctx, lonX: lon, latY: lat, title: `${title} ${lon.toFixed(1)}x${lat.toFixed(1)}` }));
   // });
+
+  renderFrame();
 };
 
 export const getCoatOfArmsForXandY = ({ x, y }: { x: number, y: number }) => {
