@@ -69,10 +69,14 @@ const HeraldryCanvas = ({ zoomLevel = 2, units, setSelected }: Props) => {
 
   return (
     <div
-      className="heraldry-canvas relative bg-[#eee]"
+      className="heraldry-canvas relative bg-[#f7f7f7]"
       style={{ width, aspectRatio }}
       onClick={handleMapClick}
     >
+      <header className="map-intro">
+        <h1 className="map-title">Heraldic Map of Europe</h1>
+        <p><strong className="font-bold">{units.length}</strong> coat of arms.</p>
+      </header>
       <SvgMap />
       <canvas ref={canvasRef} width={width} className='absolute top-0 left-0 w-full h-full' />
       {/* <MapGrid /> */}

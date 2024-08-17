@@ -13,21 +13,26 @@ import HeraldryCanvas from './components/HeraldryCanvas';
 
 // import unitJSON from './unit-map.json'
 
-import miastaJSON from '../heraldyka/miasta-map.json';
-import unitJSON from '../eesti-heraldika/unit-map.json';
-import unitFIJSON from '../suomalainen-heraldikka/maakunta-map.json';
-import unitFISmallJSON from '../suomalainen-heraldikka/kunta-map.json';
+import et1JSON from '../eesti-heraldika/unit-map.json';
+
+import fi1JSON from '../suomalainen-heraldikka/kunta-map.json';
+import fi2JSON from '../suomalainen-heraldikka/maakunta-map.json';
+
+import pl1JSON from '../heraldyka/gminy-map.json';
+import pl2JSON from '../heraldyka/powiaty-map.json';
+import pl3JSON from '../heraldyka/miasta-map.json';
+
 import { AdministrativeUnit } from "../../topic/Heraldry/types";
-const miasta = Object.values(miastaJSON);
-const unitsET = Object.values(unitJSON);
-const unitFI = Object.values(unitFIJSON);
-const unitFIsmall = Object.values(unitFISmallJSON);
 
-const units = [...miasta, ...unitsET, ...unitFI, ...unitFIsmall];
-
-// import Heraldry from '../../topic/Heraldry/Heraldry';
-
-// const units = Object.values(unitJSON);
+// Will be rendered from north to south and from smallest to largest
+const units = [
+  ...Object.values(fi1JSON),
+  ...Object.values(fi2JSON),
+  ...Object.values(et1JSON),
+  ...Object.values(pl1JSON),
+  ...Object.values(pl2JSON),
+  ...Object.values(pl3JSON),
+];
 
 // const typeFiltersList = getFilter(allUnits, 'type');
 // const animalFiltersList = getFilter(allUnits, 'animals');
@@ -82,10 +87,9 @@ const HeraldryPage = () => {
       className="fixed top-0 left-0 w-full h-full no-scrollbar overflow-auto md:overflow-hidden"
       {...events}
     >
-      <header className={clsx('fixed top-2 left-2 z-10', uiWrapperClassName)}>
-        <h1>Heraldic Map of Europe</h1>
+      <p className={clsx('fixed top-2 left-2 z-10', uiWrapperClassName)}>
         This page doesn’t work yet; please check <Link to="/maps/" className="font-bold">the other maps</Link>
-      </header>
+      </p>
       <main>
         <HeraldryCanvas zoomLevel={zoomLevel} units={units} setSelected={setSelected} />
         <nav className="fixed top-2 right-2 z-10 flex flex-col justify-between gap-2 text-[12px]">
@@ -106,10 +110,12 @@ const HeraldryPage = () => {
       </main>
       <footer className="fixed bottom-2 left-2 right-2 z-10 flex justify-between text-[12px]">
         <div className={uiWrapperClassName}>
-          {t('heraldry.mapFooterSource')} <a href="https://www.wikipedia.org/" className="font-bold" target="_blank" rel="nofollow noopener">wikipedia.org</a>.
+          {t('heraldry.mapFooterSource')}
+          {' '}
+          <a href="https://www.wikipedia.org/" className="font-bold" target="_blank" rel="nofollow noopener">wikipedia.org</a>.
         </div>
         <div className={uiWrapperClassName}>
-          Wszystkich herbów <strong className="font-bold">2570</strong>.
+          <a href="https://deykun.github.io/maps/" className="font-bold" target="_blank">deykun.github.io/maps</a>
         </div>
       </footer>
     </div>

@@ -1,11 +1,39 @@
 .heraldry-canvas {
+  container-type: inline-size;
+
+  .map-intro {
+    position: absolute;
+    z-index: 20;
+    top: 35%;
+    right: 54%;
+    color: #aca4a4;
+
+    h1 {
+      color: black;
+    }
+
+    strong {
+      color: #8a8181;
+    }
+
+    .map-title {
+      font-size: 0.5cqi;
+    }
+
+    p {
+      font-size: 0.34cqi;
+    }
+  }
+
   svg {
+    filter: drop-shadow(0 15px 5px #dfdfdf);
+
     path {
-      fill: #e0e6d9 !important;
-      transition: 0.3s ease-in-out;
+      fill: white !important;
+      transition: 0.1s ease-in-out;
 
       &:hover {
-        fill: #d6e1c8 !important;
+        fill: #d0d4d5 !important;
       }
     }
 
@@ -21,5 +49,6 @@
 
   canvas {
     pointer-events: none;
+    filter: drop-shadow(0 2px 10px #b5b2b088);
   }
 }
