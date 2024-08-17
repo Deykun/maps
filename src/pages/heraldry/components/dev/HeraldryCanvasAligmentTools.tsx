@@ -1,8 +1,4 @@
-type SettingsParams = {
-  latTop: number,
-  latShift: number,
-  mapHeightStreech: number,
-};
+import { SettingsParams } from '../types';
 
 type Props = {
   settings: SettingsParams,

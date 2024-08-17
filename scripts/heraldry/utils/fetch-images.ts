@@ -23,15 +23,18 @@ const getCompressedImageSrc = (imageUrl: string, path: string) => {
 
   const compressedImageSrcWithoutFormat = imageSrcWithoutFormat.replace(`/${path}/`, `/web-${path}/`);
 
-  const srcSet = [
+  const imagesList = [
+    { name: 'w50', width: '50w' },
     { name: 'x2', width: '200w' },
-    { name: 'x3', width: '300w' },
     { name: 'x4', width: '400w' },
-  ].map(({ name, width }) => `${compressedImageSrcWithoutFormat}-${name}.webp ${width}`).join(',')
+  ].map(({ name, width }) => ({ name, width, path: `${compressedImageSrcWithoutFormat}-${name}.webp` }));
+  
+  const srcSet = imagesList.map(({ path, width }) => `${path} ${width}`).join(',')
 
   return {
     srcSet,
-    src: imageUrl
+    src: imageUrl,
+    imagesList,
   }
 }
 
@@ -182,6 +185,11 @@ export const fetchImages = async ({
                 title: unit?.title || '',
                 lang,
               })
+
+              const {
+                srcSet,
+                imagesList,
+              } = getCompressedImageSrc(`images/heraldry/${lang}/${path}/${fileName}.${format}`, path);
               
               contentToSave[fileName] = {
                 ...unit,
@@ -201,7 +209,8 @@ export const fetchImages = async ({
                   }),
                 },
                 imageUrl: `images/heraldry/${lang}/${path}/${fileName}.${format}`,
-                imageSrcSet: getCompressedImageSrc(`images/heraldry/${lang}/${path}/${fileName}.${format}`, path).srcSet,
+                imageSrcSet: srcSet,
+                imagesList,
                 shortTitle: unit.title.replace('Herb gminy', 'Herb g.').replace('Herb powiatu', 'Herb p.').replace('Herb miasta', 'Herb').replace(/\((.*)\)/g, ''),
                 markers: {
                   animals,

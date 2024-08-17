@@ -19,8 +19,8 @@ images.forEach(({ type, imageSrc, imageFile }, index) => {
     threshold: 0,
   }
 
+  sharp(imageSrc).trim(trimOptions).resize(null, 50).toFile(`./public/images/heraldry/et/web-${type}/${imageName}-w50.webp`);
   sharp(imageSrc).trim(trimOptions).resize(null, 200).toFile(`./public/images/heraldry/et/web-${type}/${imageName}-x2.webp`);
-  sharp(imageSrc).trim(trimOptions).resize(null, 300).toFile(`./public/images/heraldry/et/web-${type}/${imageName}-x3.webp`);
   sharp(imageSrc).trim(trimOptions).resize(null, 400).toFile(`./public/images/heraldry/et/web-${type}/${imageName}-x4.webp`);
 
   if (index % 5 === 0) {

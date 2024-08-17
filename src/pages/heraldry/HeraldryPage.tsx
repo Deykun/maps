@@ -29,8 +29,6 @@ const units = [...miasta, ...unitsET, ...unitFI, ...unitFIsmall];
 // const animalFiltersList = getFilter(allUnits, 'animals');
 // const itemsFiltersList = getFilter(allUnits, 'items');
 
-
-
 const HeraldryPage = () => {
   const [zoomLevel, setZoomLevel] = useState(5);
   const uiWrapperClassName = "p-2 px-4 rounded-[4px] bg-white";
@@ -45,21 +43,17 @@ const HeraldryPage = () => {
     <div
       ref={wrapperRef}
       className="fixed top-0 left-0 w-full h-full no-scrollbar overflow-auto"
-      // {...events}
+      {...events}
     >
       <header className={clsx('fixed top-2 left-2 z-10', uiWrapperClassName)}>
-        {/* <h1>Coats of arms in Poland</h1> */}
-        <h1>AAAAA!!!</h1>
+        <h1>Heraldic Map of Europe</h1>
       </header>
       <main>
-        <HeraldryCanvas className="size-full bg-[#dff5ff]" zoomLevel={zoomLevel} units={units} />
+        <HeraldryCanvas zoomLevel={zoomLevel} units={units} />
         <nav className="fixed top-2 right-2 z-10 flex flex-col justify-between gap-2 text-[12px]">
           <button className={uiWrapperClassName} onClick={() => setZoomLevel((zoomLevel) => Math.min(20, zoomLevel + 1))}>
             +
           </button>
-          <span>
-            {zoomLevel}
-          </span>
           <button className={uiWrapperClassName} onClick={() => setZoomLevel((zoomLevel) => Math.max(1, zoomLevel - 1))}>
             -
           </button>
