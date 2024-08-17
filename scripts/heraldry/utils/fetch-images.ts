@@ -102,6 +102,10 @@ export const fetchImages = async ({
             imagesList,
           } = getCompressedImageSrc(`images/heraldry/${lang}/${path}/${fileName}.${format}`, path);
 
+          if (!unit.place?.coordinates?.lat || !unit.place?.coordinates?.lon) {
+            console.log(`${chalk.yellow(unit.title)} doesn't have the ${chalk.red('location')}.`)
+          }
+
           try {
               const primary = await ColorThief.getColor(image).then(color => {
                   const hexColor = rgbToHex(color);

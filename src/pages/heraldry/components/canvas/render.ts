@@ -65,7 +65,7 @@ export const render = ({ canvas: gameCanvas, ctx: gameCtx, aspectX = 1, aspectY 
   initEventListeners();
 };
 
-export const setCoatOfArms = (units: AdministrativeUnit[]) => {
+export const setCoatOfArms = (units: AdministrativeUnit[], settings: SettingsParams) => {
   coatOfArmsList = [];
   
   coatOfArmsList = units.filter((unit) => (unit?.imagesList || []).length > 0).map((unit) => {
@@ -81,6 +81,7 @@ export const setCoatOfArms = (units: AdministrativeUnit[]) => {
       latY,
       title: unit.title,
       imageUrl: image?.path || '', // aserted in filter
+      settings,
     });
 
     return coatOfArms;

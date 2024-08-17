@@ -17,4 +17,5 @@ fetchData({
 	administrativeDivisions,
 	alreadyFetchedDivisions,
 	path: './public/data/heraldry/pl/gminy.json',
+	lang: 'pl',
 });

@@ -12,8 +12,8 @@ const imagesPowiaty = fs.readdirSync('./public/images/heraldry/pl/powiaty').map(
   (imageFile) => ({ imageSrc: `./public/images/heraldry/pl/powiaty/${imageFile}`, imageFile, type: 'powiaty' }),
 );
 
-// const images = [...imagesGiminy, ...imagesMiasta, ...imagesPowiaty];
-const images = imagesPowiaty;
+const images = [...imagesGiminy, ...imagesMiasta, ...imagesPowiaty];
+// const images = imagesPowiaty;
 
 const start = (new Date()).getTime();
 const total = images.length;
@@ -26,9 +26,9 @@ images.forEach(({ type, imageSrc, imageFile }, index) => {
     threshold: 0,
   }
 
-  // sharp(imageSrc).trim(trimOptions).resize(null, 50).toFile(`./public/images/heraldry/pl/web-${type}/${imageName}-w50.webp`);
-  // sharp(imageSrc).trim(trimOptions).resize(null, 200).toFile(`./public/images/heraldry/pl/web-${type}/${imageName}-x2.webp`);
-  // sharp(imageSrc).trim(trimOptions).resize(null, 400).toFile(`./public/images/heraldry/pl/web/${type}/${imageName}-x4.webp`);
+  sharp(imageSrc).trim(trimOptions).resize(null, 50).toFile(`./public/images/heraldry/pl/web-${type}/${imageName}-50w.webp`);
+  sharp(imageSrc).trim(trimOptions).resize(null, 200).toFile(`./public/images/heraldry/pl/web-${type}/${imageName}-200w.webp`);
+  sharp(imageSrc).trim(trimOptions).resize(null, 400).toFile(`./public/images/heraldry/pl/web-${type}/${imageName}-400w.webp`);
   sharp(imageSrc).trim(trimOptions).resize(80, 80, {
     fit: 'contain',
     position: 'center',

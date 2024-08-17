@@ -4,14 +4,14 @@ import ImageCoatOfArms200 from '../assets/herb-helu-x2.webp';
 const minLonX = -177.5;
 const maxLonX = 180;
 
-  function getCanvasY(latX: number, rawMapHeight: number, rates: SettingsParams) {
-    const mapHeight = rawMapHeight * (rates.mapHeightStreech ?? 1);
-    const topPadding = rates.latTop / 100 * mapHeight;
+  function getCanvasY(latX: number, rawMapHeight: number, settings: SettingsParams) {
+    const mapHeight = rawMapHeight * (settings.mapHeightStreech ?? 1);
+    const topPadding = settings.latTop / 100 * mapHeight;
     // Earth's radius in meters (mean radius)
     const R = 6378137;
 
     // Convert latitude from degrees to radians
-    const latRadians = (latX + rates.latShift) * (Math.PI / 180);
+    const latRadians = (latX + settings.latShift) * (Math.PI / 180);
 
     // Mercator projection formula to find y coordinate
     const y = R * Math.log(Math.tan((Math.PI / 4) + (latRadians / 2)));
@@ -36,7 +36,7 @@ export class CoatOfArms {
   latY: number;
   title: string;
   imageUrl: string;
-  rates: SettingsParams;
+  settings: SettingsParams;
   image: HTMLImageElement;
   imageIsLoaded: boolean;
 
@@ -47,7 +47,16 @@ export class CoatOfArms {
     latY,
     title,
     imageUrl,
-  }: { canvas: HTMLCanvasElement, ctx: CanvasRenderingContext2D, lonX: number, latY: number, title: string, imageUrl: string }) {
+    settings,
+  }: {
+    canvas: HTMLCanvasElement,
+    ctx: CanvasRenderingContext2D,
+    lonX: number,
+    latY: number,
+    title: string,
+    imageUrl: string,
+    settings: SettingsParams,
+  }) {
     this.canvas = canvas;
     this.ctx = ctx;
 
@@ -71,19 +80,17 @@ export class CoatOfArms {
     this.x = 0;
     this.y = 0;
 
-    this.rates = {
-      latTop: 0,
-      latShift: 0,
-      mapHeightStreech: 0,
-    }
+    this.settings = settings;
+
+    this.onResize(settings);
   }
 
-  onResize(rates: SettingsParams) {
-    this.rates = rates;
+  onResize(settings: SettingsParams) {
+    this.settings = settings;
 
     this.x = (this.lonX - minLonX) / mapWidth * this.canvas.width;
     // 1.16 because Equator is not at for current map :D
-    this.y = getCanvasY(this.latY, this.canvas.height * 1.16, rates);
+    this.y = getCanvasY(this.latY, this.canvas.height * 1.16, settings);
   }
 
   draw() {

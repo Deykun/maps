@@ -58,28 +58,28 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
         }
 
         if (!coordinates.lon) {
-          console.log(chalk.red(`Missing corrdinates for "${division.title}". No data.`));
+          console.log(chalk.red(`Missing corrdinates for '${division.title}'. No data.`));
           console.log(chalk.red(division.url));
           errors.push({
-            title: `Missing corrdinates for "${division.title}". No data.`,
+            title: `Missing corrdinates for '${division.title}'. No data.`,
             url: division.url,
           });
         }
       } catch {
-        console.log(chalk.red(`Missing corrdinates for "${division.title}". No data for locatoion.`));
+        console.log(chalk.red(`Missing corrdinates for '${division.title}'. No data for locatoion.`));
         console.log(chalk.red(division.url));
         errors.push({
-          title: `Missing corrdinates for "${division.title}". No data for locatoion.`,
+          title: `Missing corrdinates for '${division.title}'. No data for locatoion.`,
           url: division.url,
         });
       }
     } else {
-      console.log(chalk.red(`Missing page for "${division.title}". - No page.`));
+      console.log(chalk.red(`Missing page for '${division.title}'. - No page.`));
       console.log('Missing page', locationPage);
       console.log(chalk.red(division.url));
 
       errors.push({
-        title: `Missing corrdinates for "${division.title}". No page.`,
+        title: `Missing corrdinates for '${division.title}'. No page.`,
         url: division.url,
       });
     }

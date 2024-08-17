@@ -45,7 +45,7 @@ const HeraldryCanvas = ({ zoomLevel = 2, units, setSelected }: Props) => {
   }, []);
 
   useEffect(() => {
-    setCoatOfArms(units);
+    setCoatOfArms(units, settings);
   }, [units]);
 
   useEffectChange(() => {

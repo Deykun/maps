@@ -10,6 +10,9 @@ import { locationTitleByCoatOfArmsTitle } from './constants';
 const start = (new Date()).getTime();
 const errors: { title: string, url: string, details?: string[] }[] = [];
 
+let processed = 0;
+let failed = 0;
+
 const safeFetchLoop = async ({ lang, page, title }: { lang: string, page: string, title: string }) => {
   try {
     const response = await wiki.page(page);
@@ -47,28 +50,31 @@ const safeFetchLoop = async ({ lang, page, title }: { lang: string, page: string
         
         return {
           isSucces: false,
-          errorMessge: `Missing corrdinates for "${page}". Page exists but without location, tried related "${references.keskus}". But it failed.`
+          errorMessge: `Page '${page}' exists but without location, tried related "${references.keskus}". But it failed.`
         }
       }
     }
 
     return {
       isSucces: false,
-      errorMessge: `Missing corrdinates for "${page}". Page exists but without location.`
+      errorMessge: `Page '${page}' exists but without location, no location.`
     }
   } catch (error) {
     return {
       isSucces: false,
-      errorMessge: `Missing corrdinates for "${page}". No page.`,
+      errorMessge: `Page '${page}' does not exist.`,
       errorFromCatch: error,
     }
   }
 };
 
+let locationPages: string[] = [];
+
 const fetchDivision = async (division: AdministrativeUnit, path: string, lang: string, unitNames: string[]) => {
-  let locationPages: string[] = locationTitleByCoatOfArmsTitle[division.title]
-    ? [locationTitleByCoatOfArmsTitle[division.title]]
-    : [];
+  locationPages = [];
+  if (locationTitleByCoatOfArmsTitle[division.title]) {
+    locationPages.push(locationTitleByCoatOfArmsTitle[division.title]);
+  }
 
   try {
     const page = await wiki.page(division.title);
@@ -132,32 +138,100 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
     }
 
     if (lang === 'pl') {
-      const name = division.title.replace('Herb gminy ', '').replace('Herb miasta ', '');
-      if (name) {
-        locationPages.push(name);
+      const name = division.title.replace(
+        'Herb gminy ', ''
+      ).replace(
+        'Herp powiatu ', '',
+      ).replace(
+        'Herb miasta ', ''
+      ).replace(
+        'Herb ', ''
+      ).replace(/\((.*)\)/g, '').trim();
 
-        const nameRoot = name.slice(0, -3);
-        if (nameRoot) {
-          division.description.slice(0, 160).split(' ').forEach((word) => {
-            if (word.startsWith(nameRoot)) {
-              locationPages.push(word);
-            }
-          })
+      categories.filter(
+        category => ['(gmina', '(powiat', '(województwo', 'Powiat'].some((phrase) => category.includes(phrase))
+      ).forEach((category) => {
+          locationPages.push(category);
+          locationPages.push(category.replace('Kategoria:', ''));
+
+          const categoryWithoutBrackets = category.replace(/\((.*)\)/g, '').trim();
+
+          locationPages.push(categoryWithoutBrackets);
+
+          if (division.type?.includes('gmina')) {
+            locationPages.push(`${categoryWithoutBrackets} (gmina)`);
+            locationPages.push(`${categoryWithoutBrackets} (gmina wiejska)`);
+          }
+
+          if (division.type?.includes('miasto')) {
+            locationPages.push(`${categoryWithoutBrackets} (miasto)`);
+          }
+
+          if (division.type?.includes('powiaty')) {
+            locationPages.push(`${categoryWithoutBrackets} (powiaty)`);
+          }
+      });
+
+      if (name) {
+        if (division.type?.includes('gmina')) {
+          locationPages.push(`${name} (gmina)`);
+          locationPages.push(`${name} (gmina wiejska)`);
+        }
+
+        if (division.type?.includes('miasto')) {
+          locationPages.push(`${name} (miasto)`);
+        }
+
+        if (division.type?.includes('powiaty')) {
+          locationPages.push(`${name} (powiat)`);
+        }
+
+        if (name.endsWith('ka')) {
+          locationPages.push(`${name.slice(0, -2)}ek`);
+        }
+
+        if (name.endsWith('owa')) {
+          locationPages.push(`${name.slice(0, -3)}ów`);
+        }
+
+        if (name.includes('ego')) {
+          locationPages.push(name.replace('ego', 'y'));
+
+          if (name.endsWith('a')) {
+            locationPages.push(name.replace('ego', 'y').slice(0, -1));
+          }
+        }
+
+        if (division.type?.includes('gmina')) {
+          locationPages.push(`${name.replace(/\((.*)\)/g, '').trim()} (gmina)`);
+          locationPages.push(`${name.replace(/\((.*)\)/g, '').trim()} (gmina wiejska)`);
+          locationPages.push(`${name.replace(/\((.*)\)/g, '').trim()} (gmina miejsko-wiejska)`);
+        }
+
+        if (division.type?.includes('miasto') || division.type?.includes('gmina')) {
+          locationPages.push(`${name} (miasto)`);
+        }
+
+        if (division.type?.includes('powiaty') || division.type?.includes('gmina')) {
+          locationPages.push(`${name} (gmina miejsko-wiejska)`);
         }
 
         categories.filter(
-          category => !['przypisami', 'herby', 'artykuły', 'herbach', 'błędne dane', 'szablon', 'brak numeru'].includes(category)
+          category => !['przypisami', 'herby', 'artykuł', 'herbach', 'błędne dane', 'szablon', 'brak numeru'].some(
+            (phrase) => category.includes(phrase)
+          )
         ).forEach((category) => {
-          if (category.split(' ').length <= 2) {
-            // All categories with less than two words
-            locationPages.push(category);
-          } else if (category.includes('(gmina') || category.includes('(powiat')) {
-            // gmina or powiat
+          if (category.replace(/\((.*)\)/g, '').trim().split(' ').length <= 3) {
+            // All categories with less than three words
             locationPages.push(category);
           }
         });
 
-        locationPages = Array.from(new Set(locationPages.map((item) => item?.replace('Kategoria:', '')).filter(Boolean)));
+        locationPages.push(name);
+
+        locationPages = Array.from(new Set(locationPages.map(
+          (item) => item?.replace('Kategoria:', '')?.replaceAll(',', '')?.trim(),
+        ))).filter(Boolean);
       }
     }
 
@@ -193,7 +267,8 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
     }
 
     if (!didFetch) {
-      console.log(`${chalk.red(`No location was found "${division.title}"`)}. Page with the location not found.`);
+      failed = failed + 1;
+      console.log(`${chalk.red(`No location was found '${division.title}'`)}. Page with the location not found.`);
       console.log(`Tried: ${chalk.yellow(locationPages.join(', '))}`);
       console.log('Those errors are saved to errors.json at the end.');
       console.log(' ')
@@ -204,15 +279,19 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
         console.log(chalk.red(error));
       })
       errors.push({
-        title: `Missing corrdinates for "${division.title}". Page with the location not found.`,
+        title: `Missing corrdinates for '${division.title}'. Page with the location not found.`,
         details: [`Tried pages: ${locationPages.join(', ')}.`,
           'You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data-smart.ts.',
           '',
           'Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.',
           '',
           'You will find the proper name of the page in the URL, make sure it has lat and lon.',
+          '',
           `List of errors:`,
-          ...divisionError
+          ...divisionError,
+          '',
+          'Item categories:',
+          ...categories,
         ],
         url: division.url,
       });
@@ -230,21 +309,22 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
       }
 
       if (!coordinates.lon) {
-        console.log(chalk.red(`Missing corrdinates for "${division.title}". No data.`));
+        console.log(chalk.red(`Missing corrdinates for '${division.title}'. No data.`));
         console.log(chalk.red(division.url));
         errors.push({
-          title: `Missing corrdinates for "${division.title}". No data.`,
+          title: `Missing corrdinates for '${division.title}'. No data.`,
           url: division.url,
         });
       }
     }
   } catch (error) {
-    console.log(chalk.red(`Error fetching "${chalk.white(division.title)}" with "${chalk.yellow(locationPages.join(','))}".`));
+    failed = failed + 1;
+    console.log(chalk.red(`Error fetching '${chalk.white(division.title)}'${locationPages.length > 0 ? ` with '${chalk.yellow(locationPages.join(','))}`: ''}.`));
     console.log(chalk.red(division.url));
     console.log(error);
 
     errors.push({
-      title: `Error fetching ${division.title}`,
+      title: `Error fetching '${division.title}${locationPages.length > 0 ? ` with '${chalk.yellow(locationPages.join(','))}`: ''}.`,
       url: division.url,
       details: error?.title,
     });
@@ -275,8 +355,7 @@ export const fetchData = async ({
 
   const contentToSave: AdministrativeUnit[] = [];
 
-  let processed = 0;
-  const limit = pLimit(4);
+  const limit = pLimit(7);
 
   const progressStatus = () => {
     if (processed % 3 === 0) {
@@ -288,9 +367,13 @@ export const fetchData = async ({
       const timeLeftSeconds = Math.floor(expectedTimeInSeconds - timeDiffrenceInSeconds);
       const timeLeftMinutes = Math.floor(timeLeftSeconds / 60);
       const timeLeftSecondsToShow = timeLeftSeconds - (timeLeftMinutes * 60);
-      const timeStatus = timeDiffrenceInSeconds === 0 ? '' : `- ${chalk.blue(`${timeLeftMinutes}m ${timeLeftSecondsToShow}s`)} to finish.`;
+      const timeStatus = timeDiffrenceInSeconds === 0 ? '' : `${chalk.blue(`${timeLeftMinutes > 0 ? `${timeLeftMinutes}m `: ''}${timeLeftSecondsToShow}s`)} to finish.`;
   
-      console.log(`Progress ${chalk.yellow((processed / total * 100).toFixed(1))}%. ${chalk.green(processed)} out of ${total}. ${timeStatus}`);
+      console.log([
+        `Progress ${chalk.yellow((processed / total * 100).toFixed(1))}%.`,
+        `${chalk.green(processed)} out of ${total}${failed > 0 ? ` (failed: ${chalk.red(failed)})` : ''}.`,
+        `${timeStatus}`,
+      ].filter(Boolean).join(' '));
     }
   }
 
@@ -298,7 +381,9 @@ export const fetchData = async ({
     const fetchAndProcess = async () => {
 
       const fetchedDivision = alreadyFetchedDivisions.find(
-        ({ title, place }) => title === division.title && (place?.coordinates?.lat || 0) > 0,
+        ({ title, place }) => title === division.title
+          && typeof place?.coordinates?.lat === 'number'
+          && place?.coordinates?.lat !== 0,
       );
 
       const indexData = {
@@ -311,7 +396,7 @@ export const fetchData = async ({
           ...fetchedDivision,
           ...indexData,
         });
-        console.log(chalk.gray(`Skipping ${division.title}. Already fetched.`));
+        // console.log(chalk.gray(`Skipping ${division.title}. Already fetched.`));
 
         processed = processed + 1;
   
