@@ -1,5 +1,6 @@
 // import SvgMap from './components/SvgMap';
 // import { AdministrativeUnit } from '../../topic/Heraldry/types';
+import { Link } from "wouter";
 import { useEffect, useRef, useState } from 'react';
 import { useDraggable } from "react-use-draggable-scroll";
 import clsx from 'clsx';
@@ -47,6 +48,7 @@ const HeraldryPage = () => {
     >
       <header className={clsx('fixed top-2 left-2 z-10', uiWrapperClassName)}>
         <h1>Heraldic Map of Europe</h1>
+        This page doesn’t work yet; please check <Link to="/maps/" className="font-bold">the other maps</Link>
       </header>
       <main>
         <HeraldryCanvas zoomLevel={zoomLevel} units={units} />
