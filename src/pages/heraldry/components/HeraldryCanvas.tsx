@@ -1,22 +1,25 @@
 
-import { useRef, useEffect, useState, memo } from 'react';
+import React, { useRef, useEffect, useState, memo, useCallback } from 'react';
+import { AdministrativeUnit } from '../../../topic/Heraldry/types';
 import SvgMap from './SvgMap';
-
-import { render, onResize, setCoatOfArms } from './canvas/render';
+import { render, onResize, setCoatOfArms, getCoatOfArmsForXandY } from './canvas/render';
 
 import useEffectChange from '../../../hooks/useEffectChange'
 
 // import MapGrid from './dev/MapGrid';
 // import HeraldryCanvasAligmentTools from './dev/HeraldryCanvasAligmentTools';
 
+import { zoomUnitInPx } from './constants';
+
 import './HeraldryCanvas.scss';
 
 type Props = {
   zoomLevel?: number
-  units: object[],
+  units: AdministrativeUnit[],
+  setSelected: (units: AdministrativeUnit[]) => void,
 }
 
-const HeraldryCanvas = ({ zoomLevel = 2, units }: Props) => {
+const HeraldryCanvas = ({ zoomLevel = 2, units, setSelected }: Props) => {
   const [
     settings,
     // setSettings,
@@ -44,20 +47,35 @@ const HeraldryCanvas = ({ zoomLevel = 2, units }: Props) => {
     setCoatOfArms(units);
   }, [units]);
 
-
-
   useEffectChange(() => {
     onResize(settings);
   }, [settings, zoomLevel]);
 
-  const width = Math.max(window.innerWidth, (1920 / 2) * zoomLevel);
+  // 
+  const handleMapClick = useCallback((event: React.MouseEvent<HTMLElement>) => {
+    const x = event.nativeEvent.offsetX;
+    const y = event.nativeEvent.offsetY;
+
+    const selectedTitles = getCoatOfArmsForXandY({ x, y });
+
+    const selectedUnits = units.filter(({ title }) => selectedTitles.includes(title));
+
+    setSelected(selectedUnits);
+  }, []);
+
+  const width = Math.max(window.innerWidth, zoomUnitInPx * zoomLevel);
   const aspectRatio = `${SvgMap.aspectX} / ${SvgMap.aspectY}`
 
   return (
     <div
-      className="heraldry-canvas relative bg-[#eee]"
+      className="heraldry-canvas relative bg-[#f7f7f7]"
       style={{ width, aspectRatio }}
+      onClick={handleMapClick}
     >
+      <header className="map-intro">
+        <h1 className="map-title">Heraldic Map of Europe</h1>
+        <p><strong className="font-bold">{units.length}</strong> coat of arms.</p>
+      </header>
       <SvgMap />
       <canvas ref={canvasRef} width={width} className='absolute top-0 left-0 w-full h-full' />
       {/* <MapGrid /> */}
