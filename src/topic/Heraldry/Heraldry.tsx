@@ -43,8 +43,7 @@ const Heraldry = ({
     const [listPhrase, setListPhrase] = useState('');
     const [filterOperator, setFilterOperator] = useState<'and' | 'or'>('and');
     const [shouldReverseFilters, setShouldReverseFilters] = useState(false);
-    // const [mapFitment, setMapFitment] = useState<'small' | 'medium' | 'large'>('small');
-    const [mapFitment, setMapFitment] = useState<'small' | 'medium' | 'large'>('medium');
+    const [mapFitment, setMapFitment] = useState<'small' | 'medium' | 'large'>('small');
     const [typeFilters, setTypeFilters] = useState<string[]>([]);
     const [colorFilters, setColorFilters] = useState<string[]>([]);
     const [animalFilters, setAnimalFilters] = useState<string[]>([]);
@@ -174,7 +173,7 @@ const Heraldry = ({
               "mb-10": ['small', 'medium'].includes(mapFitment),
               "max-h-[66vh]": ['small'].includes(mapFitment),
               "max-h-[1500px] w-auto": ['medium'].includes(mapFitment),
-              "overflow-scroll hide-scroll border-t max-h-[90vh]": ['large'].includes(mapFitment),
+              "overflow-scroll no-scrollbar border-t max-h-[90vh]": ['large'].includes(mapFitment),
             })}
           >
             <div

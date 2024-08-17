@@ -27,6 +27,11 @@ export type AdministrativeUnit = {
   },
   imageUrl?: string,
   imageSrcSet?: string,
+  imagesList?: {
+    path: string,
+    name: string,
+    width: string,
+  }[],
   place?: {
     name?: string,
     coordinates?: {

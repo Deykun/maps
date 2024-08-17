@@ -36,4 +36,11 @@ export const PATHS_DATA: {
     `,
     lang: 'pl',
   },
+  {
+    pathNameLink: 'Heraldic Map of Europe - wip',
+    path: 'heraldry',
+    title: '🛡️ Heraldic Map of Europe',
+    social: ``,
+    lang: 'en',
+  },
 ] as const;

@@ -7,6 +7,7 @@ import Home from '../pages/Home';
 import HeraldryET from '../pages/eesti-heraldika/HeraldryET';
 import HeraldryPL from '../pages/heraldyka/HeraldryPL';
 import HeraldryFI from '../pages/suomalainen-heraldikka/HeraldryFI';
+import HeraldryPage from '../pages/heraldry/HeraldryPage';
 import { useMemo } from "react";
 
 const Routes = () => {
@@ -33,6 +34,7 @@ const Routes = () => {
         <Route path="/maps/eesti-heraldika" component={HeraldryET} />
         <Route path="/maps/heraldyka" component={HeraldryPL} />
         <Route path="/maps/suomalainen-heraldikka" component={HeraldryFI} />
+        <Route path="/maps/heraldry" component={HeraldryPage} />
       </Switch>
     </>
   )
