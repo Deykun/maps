@@ -68,10 +68,8 @@ const safeFetchLoop = async ({ lang, page, title }: { lang: string, page: string
   }
 };
 
-let locationPages: string[] = [];
-
 const fetchDivision = async (division: AdministrativeUnit, path: string, lang: string, unitNames: string[]) => {
-  locationPages = [];
+  let locationPages: string[] = [];
   if (locationTitleByCoatOfArmsTitle[division.title]) {
     locationPages.push(locationTitleByCoatOfArmsTitle[division.title]);
   }
@@ -180,6 +178,7 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
 
         if (division.type?.includes('miasto')) {
           locationPages.push(`${name} (miasto)`);
+          locationPages.push(`${name.slice(0, -1)} (miasto)`);
         }
 
         if (division.type?.includes('powiaty')) {
@@ -370,7 +369,7 @@ export const fetchData = async ({
       const timeStatus = timeDiffrenceInSeconds === 0 ? '' : `${chalk.blue(`${timeLeftMinutes > 0 ? `${timeLeftMinutes}m `: ''}${timeLeftSecondsToShow}s`)} to finish.`;
   
       console.log([
-        `Progress ${chalk.yellow((processed / total * 100).toFixed(1))}%.`,
+        `${chalk.yellow((processed / total * 100).toFixed(1))}% -`,
         `${chalk.green(processed)} out of ${total}${failed > 0 ? ` (failed: ${chalk.red(failed)})` : ''}.`,
         `${timeStatus}`,
       ].filter(Boolean).join(' '));

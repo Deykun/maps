@@ -7,17 +7,20 @@ import { getFilter } from '../../topic/Heraldry/utils/getFilter';
 import gminyJSON from './gminy-map.json'
 import miastaJSON from './miasta-map.json'
 import powiatyJSON from './powiaty-map.json'
+import wojewodztwaJSON from './wojewodztwa-map.json'
 
 import Heraldry from '../../topic/Heraldry/Heraldry';
 
 const gminy = Object.values(gminyJSON);
 const miasta = Object.values(miastaJSON);
 const powiaty = Object.values(powiatyJSON);
+const wojewodztwa = Object.values(wojewodztwaJSON);
 
 const allUnits: AdministrativeUnit[] = Object.values([
   ...gminy,
   ...powiaty,
   ...miasta,
+  ...wojewodztwa,
 ].filter((unit: AdministrativeUnit) => {
   if ([
     'Herb Podgórza',

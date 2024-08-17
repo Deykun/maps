@@ -12,7 +12,11 @@ const imagesPowiaty = fs.readdirSync('./public/images/heraldry/pl/powiaty').map(
   (imageFile) => ({ imageSrc: `./public/images/heraldry/pl/powiaty/${imageFile}`, imageFile, type: 'powiaty' }),
 );
 
-const images = [...imagesGiminy, ...imagesMiasta, ...imagesPowiaty];
+const wojewodztwaPowiaty = fs.readdirSync('./public/images/heraldry/pl/wojewodztwa').map(
+  (imageFile) => ({ imageSrc: `./public/images/heraldry/pl/wojewodztwa/${imageFile}`, imageFile, type: 'wojewodztwa' }),
+);
+
+const images = [...imagesGiminy, ...imagesMiasta, ...imagesPowiaty, ...wojewodztwaPowiaty];
 // const images = imagesPowiaty;
 
 const start = (new Date()).getTime();

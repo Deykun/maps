@@ -8,4 +8,6 @@ const powiaty = powiatyFromJSON as AdministrativeUnit[]
 fetchImages({
 	administrativeDivisions: powiaty,
 	path: 'powiaty',
+	subpage: 'heraldyka',
+  lang: 'pl',
 });
