@@ -79,7 +79,7 @@ const HeraldryPage = () => {
   return (
     <div
       ref={wrapperRef}
-      className="fixed top-0 left-0 w-full h-full no-scrollbar overflow-hidden"
+      className="fixed top-0 left-0 w-full h-full no-scrollbar overflow-auto md:overflow-hidden"
       {...events}
     >
       <header className={clsx('fixed top-2 left-2 z-10', uiWrapperClassName)}>
