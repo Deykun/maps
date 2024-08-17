@@ -5,7 +5,7 @@
       transition: 0.3s ease-in-out;
 
       &:hover {
-        fill: #f4f4f4 !important;
+        fill: #d6e1c8 !important;
       }
     }
 
@@ -20,6 +20,6 @@
   }
 
   canvas {
-    // pointer-events: none;
+    pointer-events: none;
   }
 }

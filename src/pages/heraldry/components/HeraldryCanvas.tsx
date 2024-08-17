@@ -9,6 +9,8 @@ import useEffectChange from '../../../hooks/useEffectChange'
 // import MapGrid from './dev/MapGrid';
 // import HeraldryCanvasAligmentTools from './dev/HeraldryCanvasAligmentTools';
 
+import { zoomUnitInPx } from './constants';
+
 import './HeraldryCanvas.scss';
 
 type Props = {
@@ -50,7 +52,7 @@ const HeraldryCanvas = ({ zoomLevel = 2, units }: Props) => {
     onResize(settings);
   }, [settings, zoomLevel]);
 
-  const width = Math.max(window.innerWidth, (1920 / 2) * zoomLevel);
+  const width = Math.max(window.innerWidth, zoomUnitInPx * zoomLevel);
   const aspectRatio = `${SvgMap.aspectX} / ${SvgMap.aspectY}`
 
   return (

@@ -76,8 +76,8 @@ export class CoatOfArms {
     // image.src = ImageCoatOfArms200;
     image.src = this.imageUrl;
 
-    const imageWidth = 25;
-    const imageHeight = 25;
+    const imageWidth = 20;
+    const imageHeight = 20;
 
     this.ctx.drawImage(
       image,
