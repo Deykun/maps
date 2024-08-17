@@ -39,6 +39,7 @@ const HeraldryCanvas = ({ zoomLevel = 2, units, setSelected }: Props) => {
 
       if (ctx) {
         render({ canvas: canvasRef.current, ctx, aspectX: SvgMap.aspectX, aspectY: SvgMap.aspectY });
+        onResize(settings);
       }
     }
   }, []);
@@ -78,6 +79,12 @@ const HeraldryCanvas = ({ zoomLevel = 2, units, setSelected }: Props) => {
       </header>
       <SvgMap />
       <canvas ref={canvasRef} width={width} className='absolute top-0 left-0 w-full h-full' />
+      <div id="europe-marker" className="absolute z-20 pointer-events-none" style={{
+        top: '17%',
+        right: '30%',
+        width: '30%',
+        height: '30%',
+      }} />
       {/* <MapGrid /> */}
       {/* <HeraldryCanvasAligmentTools setSettings={setSettings} settings={settings} /> */}
     </div>
