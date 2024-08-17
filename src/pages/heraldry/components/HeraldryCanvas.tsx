@@ -53,7 +53,6 @@ const HeraldryCanvas = ({ zoomLevel = 2, units, setSelected }: Props) => {
 
   // 
   const handleMapClick = useCallback((event: React.MouseEvent<HTMLElement>) => {
-    // getCoatOfArmsForXandY
     const x = event.nativeEvent.offsetX;
     const y = event.nativeEvent.offsetY;
 

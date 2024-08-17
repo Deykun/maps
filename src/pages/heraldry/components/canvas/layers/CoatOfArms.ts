@@ -126,6 +126,8 @@ export class CoatOfArms {
       return false;
     }
 
+    // TODO: add a check for elements to detect transparency
+
     return true;
   }
 }
