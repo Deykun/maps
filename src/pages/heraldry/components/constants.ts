@@ -1,1 +1,1 @@
-export const zoomUnitInPx = 1920 / 3;
+export const zoomUnitInPx = 1920 / 2;

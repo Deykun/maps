@@ -17,6 +17,7 @@ import miastaJSON from '../heraldyka/miasta-map.json';
 import unitJSON from '../eesti-heraldika/unit-map.json';
 import unitFIJSON from '../suomalainen-heraldikka/maakunta-map.json';
 import unitFISmallJSON from '../suomalainen-heraldikka/kunta-map.json';
+import { AdministrativeUnit } from "../../topic/Heraldry/types";
 const miasta = Object.values(miastaJSON);
 const unitsET = Object.values(unitJSON);
 const unitFI = Object.values(unitFIJSON);
@@ -33,6 +34,7 @@ const units = [...miasta, ...unitsET, ...unitFI, ...unitFIsmall];
 // const itemsFiltersList = getFilter(allUnits, 'items');
 
 const HeraldryPage = () => {
+  const [selected, setSelected] = useState<AdministrativeUnit[]>([]);
   const [zoomLevel, setZoomLevel] = useState(5);
   const uiWrapperClassName = "p-2 px-4 rounded-[4px] bg-white";
   const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
@@ -46,7 +48,7 @@ const HeraldryPage = () => {
   useEffect(() => {
     const handleScroll = (event: WheelEvent) => {
       if (event.deltaY < 0) {
-        setZoomLevel((zoomLevel) => Math.min(20, zoomLevel + 1));
+        setZoomLevel((zoomLevel) => Math.min(25, zoomLevel + 1));
       } else {
         setZoomLevel((zoomLevel) => Math.max(1, zoomLevel - 1));
       }
@@ -67,7 +69,6 @@ const HeraldryPage = () => {
       const zoomAgnosticTop = topScroll / (prevZoomLevel ?? 5);
       const zoomAgnosticLeft = scrollLeft / (prevZoomLevel ?? 5);
 
-
       wrapperRef.current?.scroll({
         top: zoomAgnosticTop * zoomLevel,
         left: zoomAgnosticLeft * zoomLevel,
@@ -86,15 +87,22 @@ const HeraldryPage = () => {
         This page doesn’t work yet; please check <Link to="/maps/" className="font-bold">the other maps</Link>
       </header>
       <main>
-        <HeraldryCanvas zoomLevel={zoomLevel} units={units} />
+        <HeraldryCanvas zoomLevel={zoomLevel} units={units} setSelected={setSelected} />
         <nav className="fixed top-2 right-2 z-10 flex flex-col justify-between gap-2 text-[12px]">
-          <button className={uiWrapperClassName} onClick={() => setZoomLevel((zoomLevel) => Math.min(20, zoomLevel + 1))}>
+          <button className={uiWrapperClassName} onClick={() => setZoomLevel((zoomLevel) => Math.min(25, zoomLevel + 1))}>
             +
           </button>
           <button className={uiWrapperClassName} onClick={() => setZoomLevel((zoomLevel) => Math.max(1, zoomLevel - 1))}>
             -
           </button>
         </nav>
+        <section className="fixed top-[100px] right-2 z-10">
+          <div className={uiWrapperClassName}>
+            {selected.map(({ title }) => <div>
+              {title}
+            </div>)}
+          </div>
+        </section>
       </main>
       <footer className="fixed bottom-2 left-2 right-2 z-10 flex justify-between text-[12px]">
         <div className={uiWrapperClassName}>

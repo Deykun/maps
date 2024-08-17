@@ -1,8 +1,8 @@
 
-import { useRef, useEffect, useState, memo } from 'react';
+import React, { useRef, useEffect, useState, memo, useCallback } from 'react';
+import { AdministrativeUnit } from '../../../topic/Heraldry/types';
 import SvgMap from './SvgMap';
-
-import { render, onResize, setCoatOfArms } from './canvas/render';
+import { render, onResize, setCoatOfArms, getCoatOfArmsForXandY } from './canvas/render';
 
 import useEffectChange from '../../../hooks/useEffectChange'
 
@@ -15,10 +15,11 @@ import './HeraldryCanvas.scss';
 
 type Props = {
   zoomLevel?: number
-  units: object[],
+  units: AdministrativeUnit[],
+  setSelected: (units: AdministrativeUnit[]) => void,
 }
 
-const HeraldryCanvas = ({ zoomLevel = 2, units }: Props) => {
+const HeraldryCanvas = ({ zoomLevel = 2, units, setSelected }: Props) => {
   const [
     settings,
     // setSettings,
@@ -46,11 +47,22 @@ const HeraldryCanvas = ({ zoomLevel = 2, units }: Props) => {
     setCoatOfArms(units);
   }, [units]);
 
-
-
   useEffectChange(() => {
     onResize(settings);
   }, [settings, zoomLevel]);
+
+  // 
+  const handleMapClick = useCallback((event: React.MouseEvent<HTMLElement>) => {
+    // getCoatOfArmsForXandY
+    const x = event.nativeEvent.offsetX;
+    const y = event.nativeEvent.offsetY;
+
+    const selectedTitles = getCoatOfArmsForXandY({ x, y });
+
+    const selectedUnits = units.filter(({ title }) => selectedTitles.includes(title));
+
+    setSelected(selectedUnits);
+  }, []);
 
   const width = Math.max(window.innerWidth, zoomUnitInPx * zoomLevel);
   const aspectRatio = `${SvgMap.aspectX} / ${SvgMap.aspectY}`
@@ -59,6 +71,7 @@ const HeraldryCanvas = ({ zoomLevel = 2, units }: Props) => {
     <div
       className="heraldry-canvas relative bg-[#eee]"
       style={{ width, aspectRatio }}
+      onClick={handleMapClick}
     >
       <SvgMap />
       <canvas ref={canvasRef} width={width} className='absolute top-0 left-0 w-full h-full' />

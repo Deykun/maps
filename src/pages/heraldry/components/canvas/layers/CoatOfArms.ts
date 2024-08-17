@@ -30,6 +30,8 @@ export class CoatOfArms {
   ctx: CanvasRenderingContext2D;
   x: number;
   y: number;
+  width: number;
+  height: number;
   lonX: number;
   latY: number;
   title: string;
@@ -49,6 +51,8 @@ export class CoatOfArms {
 
     this.title = title;
     this.imageUrl = imageUrl;
+    this.width = 20;
+    this.height = 20;
 
     this.lonX = lonX;
     this.latY = latY;
@@ -76,15 +80,12 @@ export class CoatOfArms {
     // image.src = ImageCoatOfArms200;
     image.src = this.imageUrl;
 
-    const imageWidth = 20;
-    const imageHeight = 20;
-
     this.ctx.drawImage(
       image,
-      this.x - (imageWidth / 2),
-      this.y - (imageWidth / 2),
-      imageWidth,
-      imageHeight,
+      this.x - (this.width / 2),
+      this.y - (this.width / 2),
+      this.width,
+      this.width,
       // x,
       // y,
       // imageWidth * this.scaleLevel,
@@ -97,5 +98,23 @@ export class CoatOfArms {
       // this.ctx.font = `16px Arial`;
       // this.ctx.fillText(this.title, this.x + 20, this.y);
     }
+  }
+
+  isRenderedAt(objectRaw?: { x: number, y: number }) {
+    if (!objectRaw) {
+      return false;
+    }
+
+    // Is rendered simillary to translate(-50%, -50%);
+    const object = {
+      x: objectRaw.x + (this.width / 2),
+      y: objectRaw.y + (this.height / 2),
+    };
+
+    if (object.x > this.x + this.width || object.x < this.x || object.y > this.y + this.height || object.y < this.y) {
+      return false;
+    }
+
+    return true;
   }
 }
