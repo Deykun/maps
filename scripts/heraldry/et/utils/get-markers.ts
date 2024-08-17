@@ -255,7 +255,7 @@ export const getMarkers = ({
     if (![
       'empty',
     ].includes(title)) {
-      animals.push('aurochs');
+      animals.push('bullBison');
     }
   }
 
