@@ -96,7 +96,7 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
             })
           }
 
-          categories.find((category) => {
+          categories.forEach((category) => {
             if (category.split(' ').length <= 2) {
               // All categories with less than two words
               locationPages.push(category);
@@ -129,6 +129,36 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
 
           locationPages = Array.from(new Set(locationPages.map((item) => item?.replace('Luokka:', '')).filter(Boolean)));
         }
+    }
+
+    if (lang === 'pl') {
+      const name = division.title.replace('Herb gminy ', '').replace('Herb miasta ', '');
+      if (name) {
+        locationPages.push(name);
+
+        const nameRoot = name.slice(0, -3);
+        if (nameRoot) {
+          division.description.slice(0, 160).split(' ').forEach((word) => {
+            if (word.startsWith(nameRoot)) {
+              locationPages.push(word);
+            }
+          })
+        }
+
+        categories.filter(
+          category => !['przypisami', 'herby', 'artykuły', 'herbach', 'błędne dane', 'szablon', 'brak numeru'].includes(category)
+        ).forEach((category) => {
+          if (category.split(' ').length <= 2) {
+            // All categories with less than two words
+            locationPages.push(category);
+          } else if (category.includes('(gmina') || category.includes('(powiat')) {
+            // gmina or powiat
+            locationPages.push(category);
+          }
+        });
+
+        locationPages = Array.from(new Set(locationPages.map((item) => item?.replace('Kategoria:', '')).filter(Boolean)));
+      }
     }
 
     let didFetch = false;
@@ -177,7 +207,9 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
         title: `Missing corrdinates for "${division.title}". Page with the location not found.`,
         details: [`Tried pages: ${locationPages.join(', ')}.`,
           'You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data-smart.ts.',
+          '',
           'Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.',
+          '',
           'You will find the proper name of the page in the URL, make sure it has lat and lon.',
           `List of errors:`,
           ...divisionError
@@ -256,21 +288,29 @@ export const fetchData = async ({
       const timeLeftSeconds = Math.floor(expectedTimeInSeconds - timeDiffrenceInSeconds);
       const timeLeftMinutes = Math.floor(timeLeftSeconds / 60);
       const timeLeftSecondsToShow = timeLeftSeconds - (timeLeftMinutes * 60);
-      const timeStatus = timeDiffrenceInSeconds === 0 ? '' : `- ${chalk.blue(timeLeftMinutes)}m ${chalk.blue(timeLeftSecondsToShow)}s to finish.`;
+      const timeStatus = timeDiffrenceInSeconds === 0 ? '' : `- ${chalk.blue(`${timeLeftMinutes}m ${timeLeftSecondsToShow}s`)} to finish.`;
   
-      console.log(`Progress ${chalk.yellow((processed / total * 100).toFixed(1))}%. ${processed} out of ${total}. ${timeStatus}`);
+      console.log(`Progress ${chalk.yellow((processed / total * 100).toFixed(1))}%. ${chalk.green(processed)} out of ${total}. ${timeStatus}`);
     }
   }
 
-  const promises = administrativeDivisions.map((division) => limit(() => new Promise((resolve) => {
+  const promises = administrativeDivisions.map((division, index) => limit(() => new Promise((resolve) => {
     const fetchAndProcess = async () => {
 
       const fetchedDivision = alreadyFetchedDivisions.find(
-        ({ title, place }) => title === division.title && typeof place?.coordinates?.lat === 'number'
+        ({ title, place }) => title === division.title && (place?.coordinates?.lat || 0) > 0,
       );
 
+      const indexData = {
+        id: `${division.type}-${index}`,
+        index,
+      };
+
       if (fetchedDivision) {
-        contentToSave.push(fetchedDivision);
+        contentToSave.push({
+          ...fetchedDivision,
+          ...indexData,
+        });
         console.log(chalk.gray(`Skipping ${division.title}. Already fetched.`));
 
         processed = processed + 1;
@@ -283,6 +323,7 @@ export const fetchData = async ({
   
         contentToSave.push({
           ...divisionUpdate,
+          ...indexData,
         });
   
         processed = processed + 1;

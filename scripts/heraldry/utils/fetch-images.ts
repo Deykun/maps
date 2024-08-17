@@ -9,40 +9,20 @@ import { resolve } from 'path';
 import ColorThief from 'colorthief';
 import nearestColor from 'nearest-color';
 
-import { removeDiacratics } from '../../../src/utils/text';
-
 import { colorsByNames } from '../../../src/topic/Heraldry/constants';
 import { AdministrativeUnit } from '../../../src/topic/Heraldry/types';
 
+import { getImageFileName, getCompressedImageSrc } from './get-image-file-name';
 import { getMarkers } from './get-markers';
 
 const getColorName = nearestColor.from(colorsByNames);
-
-const getCompressedImageSrc = (imageUrl: string, path: string) => {
-  const [imageSrcWithoutFormat] = imageUrl.split('.');
-
-  const compressedImageSrcWithoutFormat = imageSrcWithoutFormat.replace(`/${path}/`, `/web-${path}/`);
-
-  const imagesList = [
-    { name: 'w50', width: '50w' },
-    { name: 'x2', width: '200w' },
-    { name: 'x4', width: '400w' },
-  ].map(({ name, width }) => ({ name, width, path: `${compressedImageSrcWithoutFormat}-${name}.webp` }));
-  
-  const srcSet = imagesList.map(({ path, width }) => `${path} ${width}`).join(',')
-
-  return {
-    srcSet,
-    src: imageUrl,
-    imagesList,
-  }
-}
 
 const componentToHex = (color: number) => {
   const hex = color.toString(16);
 
   return hex.padStart(2, "0");
 }
+
 function rgbToHex([r,g,b]: [r: number, g: number, b: number]) {
   return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
 }
@@ -80,25 +60,7 @@ export const fetchImages = async ({
 
   for (let i = 0; i < administrativeDivisions.length; i++) {
       const unit = administrativeDivisions[i];
-      // let fileName = removeDiacratics(unit.title.toLowerCase()).replace(/[^\w\s]/gi, '').replaceAll(' ', '-');
-      let fileName = removeDiacratics(unit.title.toLowerCase()).replace(/[^\w\s]/gi, '').replaceAll(' ', '-');
-
-      // flattening collisions
-      if (unit.title === 'Herb gminy Miedźna') {
-        /*
-          - Herb gminy Miedzna - https://pl.wikipedia.org/wiki/Herb_gminy_Miedzna
-          - Herb gminy Miedźna - https://pl.wikipedia.org/wiki/Herb_gminy_Mied%C5%BAna
-        */
-        fileName += '-with-special-z';
-      }
-
-      if (unit.title === 'Õru valla vapp') {
-        /*
-          - Oru valla vapp - https://et.wikipedia.org/wiki/Oru_valla_vapp
-          - Õru valla vapp - https://et.wikipedia.org/wiki/%C3%95ru_valla_vapp
-        */
-        fileName += '-with-special-o';
-      }
+      let fileName = getImageFileName(unit.title);
 
       const format = unit.image?.source.split('.').at(-1)?.toLowerCase() || 'png';
       if (format !== 'png' && existsSync(`./public/images/heraldry/${lang}/${path}/${fileName}.png`)) {
@@ -121,10 +83,24 @@ export const fetchImages = async ({
               console.log(chalk.red(`Missing ${fileName}.${format}.`));
             }
           } else {
-              // console.log(chalk.gray(`Skipping ${fileName}.${format} already exists.`));
+              console.log(chalk.gray(`Skipping ${fileName}.${format} already exists.`));
           }
 
           const image = resolve(`./public/images/heraldry/${lang}/${path}/${fileName}.${format}`);
+
+          const {
+            animals,
+            items,
+          } = getMarkers({
+            text: unit?.description || '',
+            title: unit?.title || '',
+            lang,
+          })
+
+          const {
+            srcSet,
+            imagesList,
+          } = getCompressedImageSrc(`images/heraldry/${lang}/${path}/${fileName}.${format}`, path);
 
           try {
               const primary = await ColorThief.getColor(image).then(color => {
@@ -176,20 +152,6 @@ export const fetchImages = async ({
               }, {
                   [primary.name]: primary,
               }));
-
-              const {
-                animals,
-                items,
-              } = getMarkers({
-                text: unit?.description || '',
-                title: unit?.title || '',
-                lang,
-              })
-
-              const {
-                srcSet,
-                imagesList,
-              } = getCompressedImageSrc(`images/heraldry/${lang}/${path}/${fileName}.${format}`, path);
               
               contentToSave[fileName] = {
                 ...unit,
@@ -218,8 +180,21 @@ export const fetchImages = async ({
                 }
               }
           } catch (error) {
-              console.log(chalk.red('Missing colors for ', unit.title));
-              console.error(error);
+            console.log(chalk.red('Missing colors for ', unit.title));
+            console.error(error);
+
+            contentToSave[fileName] = {
+              ...unit,
+              description: '',
+              imageUrl: `images/heraldry/${lang}/${path}/${fileName}.${format}`,
+              imageSrcSet: srcSet,
+              imagesList,
+              shortTitle: unit.title.replace('Herb gminy', 'Herb g.').replace('Herb powiatu', 'Herb p.').replace('Herb miasta', 'Herb').replace(/\((.*)\)/g, ''),
+              markers: {
+                animals,
+                items,
+              }
+            }
           }
       } else {
           console.log('Missng image for ', unit.title)
