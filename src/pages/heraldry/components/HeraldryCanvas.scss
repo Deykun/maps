@@ -4,7 +4,7 @@
   .map-intro {
     position: absolute;
     z-index: 20;
-    top: 34%;
+    top: 32%;
     right: 54%;
     font-size: 0.20cqi;
     color: #aca4a4;
@@ -35,14 +35,21 @@
       transition: 0.1s ease-in-out;
 
       &:hover {
-        fill: #dbdbdb !important;
+        // fill: #dbdbdb !important;
+        // fill: #f8fcea !important;
+        fill: #fefffa !important;
       }
     }
 
-    // Countries stroke
-    [stroke="#644545"] {
-      stroke: #b4bfaf !important;
+    path {
+      // stroke: #e8ecdb !important;
+      stroke: #dbdbdb !important;
     }
+
+    // Countries stroke
+    // [stroke="#644545"] {
+      // stroke: hsl(101, 11%, 72%) !important;
+    // }
 
     #ocean {
       fill: #d9e4e6  !important;

@@ -30,14 +30,16 @@ images.forEach(({ type, imageSrc, imageFile }, index) => {
     threshold: 0,
   }
 
-  sharp(imageSrc).trim(trimOptions).resize(null, 50).toFile(`./public/images/heraldry/pl/web-${type}/${imageName}-50w.webp`);
-  sharp(imageSrc).trim(trimOptions).resize(null, 200).toFile(`./public/images/heraldry/pl/web-${type}/${imageName}-200w.webp`);
-  sharp(imageSrc).trim(trimOptions).resize(null, 400).toFile(`./public/images/heraldry/pl/web-${type}/${imageName}-400w.webp`);
   sharp(imageSrc).trim(trimOptions).resize(80, 80, {
     fit: 'contain',
     position: 'center',
     background: { r: 0, g: 0, b: 0, alpha: 0 },
-  }).toFile(`./public/images/heraldry/pl/web/${type}/${index}.png`);
+  }).toFile(`./public/images/heraldry/pl/web-${type}/${imageName}-80w.webp`);
+  sharp(imageSrc).trim(trimOptions).resize(300, 300, {
+    fit: 'contain',
+    position: 'center',
+    background: { r: 0, g: 0, b: 0, alpha: 0 },
+  }).toFile(`./public/images/heraldry/pl/web-${type}/${imageName}-300w.webp`);
 
   if (index % 5 === 0) {
     const progressPercent = (index / total) * 100;

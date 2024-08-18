@@ -1,4 +1,4 @@
-export const zoomUnitInPx = 1280 / 2;
+export const zoomUnitInPx = 1920 / 3;
 
 export const zoomMax = 40;
-export const zoomMin = 1;
+export const zoomMin = 5;

@@ -29,9 +29,8 @@ export const getCompressedImageSrc = (imageUrl: string, path: string) => {
   const compressedImageSrcWithoutFormat = imageSrcWithoutFormat.replace(`/${path}/`, `/web-${path}/`);
 
   const imagesList = [
-    { name: '50w', width: '50w' },
-    { name: '200w', width: '200w' },
-    { name: '400w', width: '400w' },
+    { name: '80w', width: '80w' },
+    { name: '300w', width: '300w' },
   ].map(({ name, width }) => ({ name, width, path: `${compressedImageSrcWithoutFormat}-${name}.webp` }));
   
   const srcSet = imagesList.map(({ path, width }) => `${path} ${width}`).join(',')

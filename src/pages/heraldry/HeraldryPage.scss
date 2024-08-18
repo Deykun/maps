@@ -33,6 +33,10 @@
       box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.18) 0px 1px 2px 0px;
     }
 
+    &:disabled {
+      color: #aaa;
+    }
+
     > svg {
       @apply size-5;
 

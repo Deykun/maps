@@ -72,7 +72,7 @@ export const setCoatOfArms = (units: AdministrativeUnit[], settings: SettingsPar
     const lonX = unit?.place?.coordinates?.lon ?? 0;
     const latY = unit?.place?.coordinates?.lat ?? 0;
 
-    const image = (unit.imagesList || []).find(({ width }) => width === '50w' );
+    const image = (unit.imagesList || []).find(({ width }) => width === '80w' );
 
     const coatOfArms = new CoatOfArms({
       canvas,

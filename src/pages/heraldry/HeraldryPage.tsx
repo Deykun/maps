@@ -23,6 +23,7 @@ import fi2JSON from '../suomalainen-heraldikka/maakunta-map.json';
 import pl1JSON from '../heraldyka/gminy-map.json';
 import pl2JSON from '../heraldyka/powiaty-map.json';
 import pl3JSON from '../heraldyka/miasta-map.json';
+import pl4JSON from '../heraldyka/wojewodztwa-map.json';
 
 import { AdministrativeUnit } from "../../topic/Heraldry/types";
 
@@ -36,6 +37,7 @@ const units = [
   ...Object.values(pl1JSON),
   ...Object.values(pl2JSON),
   ...Object.values(pl3JSON),
+  ...Object.values(pl4JSON),
 ];
 
 // const typeFiltersList = getFilter(allUnits, 'type');
@@ -50,7 +52,7 @@ const HeraldryPage = () => {
 
   const { events } = useDraggable(wrapperRef, { decayRate: 0 });
   
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   const prevZoomLevel = usePrevious(zoomLevel, 8);
 
@@ -107,30 +109,26 @@ const HeraldryPage = () => {
   }, [zoomLevel, wrapperRef.current]);
 
   return (
-    <div
-      ref={wrapperRef}
-      className="fixed top-0 left-0 w-full h-full no-scrollbar overflow-auto md:overflow-hidden"
-      {...events}
-    >
-      <div className={clsx('fixed top-3 left-3 z-10', uiWrapperClassName)}>
-        <h1>Heraldic Map of Europe</h1>
-        <p><strong className="font-bold">{units.length}</strong> coat of arms.</p>
-        This page doesn’t work yet; please check <Link to="/maps/" className="font-bold">the other maps</Link>
-      </div>
-      <main>
-        <HeraldryCanvas zoomLevel={zoomLevel} units={units} setSelected={setSelected} />
-
-      </main>
-        <UiRightSidebar
-          setZoomLevel={setZoomLevel}
-          selected={selected}
-        />
-      {/* <footer className="fixed bottom-3 left-3 right-2 z-10 flex justify-between text-[12px]">
-        <div className={uiWrapperClassName}>
-          111
+    <>
+      <main
+        ref={wrapperRef}
+        className="fixed top-0 left-0 w-full h-full no-scrollbar overflow-auto md:overflow-hidden"
+        {...events}
+      >
+        <div className={clsx('fixed top-3 left-3 z-10', uiWrapperClassName)}>
+          <h1>Heraldic Map of Europe</h1>
+          <p><strong className="font-bold">{units.length}</strong> coat of arms.</p>
+          <p>
+            This page doesn’t work yet; please check <Link to="/maps/" className="font-bold">the other maps</Link>.
+          </p>
         </div>
-      </footer> */}
-    </div>
+        <HeraldryCanvas zoomLevel={zoomLevel} units={units} setSelected={setSelected} />
+      </main>
+      <UiRightSidebar
+        setZoomLevel={setZoomLevel}
+        selected={selected}
+      />
+    </>
   );
 };
 

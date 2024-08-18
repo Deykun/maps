@@ -80,7 +80,7 @@ const HeraldryCanvas = ({ zoomLevel = 2, units, setSelected }: Props) => {
         <p>
           {t('heraldry.mapFooterSource')}
           {' '}          
-          <a href="https://www.wikipedia.org/" className="font-bold" target="_blank" rel="nofollow noopener">wikipedia.org</a>.
+          <a href="https://www.wikipedia.org/" className="font-bold tracking-wide" target="_blank" rel="nofollow noopener">wikipedia.org</a>.
         </p>
         <br />
         <p>{t('heraldry.list.footer')}</p>
@@ -101,11 +101,12 @@ const HeraldryCanvas = ({ zoomLevel = 2, units, setSelected }: Props) => {
       <SvgMap />
       <canvas ref={canvasRef} width={width} className='absolute top-0 left-0 w-full h-full' />
       <div id="europe-marker" className="absolute z-20 bg-[red] pointer-events-none" style={{
-        top: '15%',
+        top: '19%',
         right: '35%',
         width: '28%',
-        height: '32%',
+        height: '28%',
         borderRadius: '30px',
+        // opacity: 0.2,
         opacity: 0,
       }} />
       {/* <MapGrid /> */}

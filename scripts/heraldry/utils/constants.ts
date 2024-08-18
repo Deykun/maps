@@ -57,6 +57,7 @@ export const locationTitleByCoatOfArmsTitle = {
   'Herb powiatu włoszczowskiego': 'Powiat włoszczowski',
   'Herb powiatu oleckiego': 'Powiat olecki',
   'Herb Piły': 'Piła (miasto)',
+  'Herb Turku': 'Turek',
   // - pl
   // et
   'Harjumaa vapp': 'Harju maakond',
