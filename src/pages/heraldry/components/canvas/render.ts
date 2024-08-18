@@ -79,6 +79,7 @@ export const render = ({ canvas: gameCanvas, ctx: gameCtx, aspectX = 1, aspectY 
   wasInited = true;
   canvas = gameCanvas;
   ctx = gameCtx;
+  ctx.imageSmoothingQuality = "high";
   aspectRation.x = aspectX;
   aspectRation.y = aspectY;
 
