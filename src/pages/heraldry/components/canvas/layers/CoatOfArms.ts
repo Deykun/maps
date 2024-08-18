@@ -116,6 +116,19 @@ export class CoatOfArms {
       return;
     }
 
+    this.ctx.imageSmoothingQuality = 'high';
+    this.ctx.shadowColor = 'rgba(0, 0, 0, 0.12)';
+    this.ctx.shadowBlur = 7;
+    this.ctx.shadowOffsetY = 5;
+
+    this.ctx.shadowColor = 'rgba(0, 0, 0, 0.12)';
+    this.ctx.shadowBlur = 7;
+    this.ctx.shadowOffsetY = 5;
+
+    this.ctx.shadowColor = 'rgba(0, 0, 0, 0.12)';
+    this.ctx.shadowBlur = 7;
+    this.ctx.shadowOffsetY = 5;
+
     const frameY = spriteSize * this.imageSprint.index + spriteOffset * this.imageSprint.index;
 
     this.ctx.drawImage(

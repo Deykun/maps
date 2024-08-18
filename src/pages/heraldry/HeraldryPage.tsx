@@ -89,8 +89,10 @@ const HeraldryPage = () => {
     }
 
     return () => {
-      wrapperRef.current.removeEventListener('wheel', handleScroll);
-      wrapperRef.current.removeEventListener('scrollend', handleScrollEnd);
+      if (wrapperRef.current) {
+        wrapperRef.current.removeEventListener('wheel', handleScroll);
+        wrapperRef.current.removeEventListener('scrollend', handleScrollEnd);
+      }
     };
   }, [wrapperRef.current]);
 

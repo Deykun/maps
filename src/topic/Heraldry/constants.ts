@@ -9,6 +9,6 @@ export const colorsByNames: Colors = {
   blue: '#00f',
 };
 
-export const numberOfImagesPerSprite = 200;
+export const numberOfImagesPerSprite = 180;
 export const spriteSize = 80;
-export const spriteOffset = 1;
+export const spriteOffset = 4;

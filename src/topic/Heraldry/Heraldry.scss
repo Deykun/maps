@@ -5,7 +5,7 @@
     path {
       fill: #f2f2f2;
       stroke: #d0d0d0;
-      strokeWidth: 1px;
+      stroke-width: 1px;
       transition: 0.3s ease-in-out;
 
       &:hover {
@@ -18,7 +18,7 @@
     fill: transparent;
     pointer-events: none;
     stroke: #999;
-    strokeWidth: 1px;
+    stroke-width: 1px;
 
     &:hover {
       fill: transparent !important;
@@ -87,11 +87,29 @@
     background-position: center;
   }
 
+  .coat-sprite {
+    display: block;
+    height: 80px;
+    width: 80px;
+    background-repeat: no-repeat;
+    transform: scale(0.45);
+    transition: 0.3s cubic-bezier(0.68, 0, 0.265, 1.30);
+    margin-left: -40px;
+    margin-top: -40px;
+  }
+
   &:hover {
     img {
       height: 100px;
       width: 100px;
       max-height: 100px;
+      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+    }
+
+    .coat-sprite {
+      height: 80px;
+      width: 80px;
+      transform: scale(1);
       filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
     }
 
@@ -120,7 +138,15 @@
       animation-delay: 0.3s;
     }
   }
-}
+
+  &.coat--with-sprite {
+    width: 0;
+    height: 0;
+
+    &:hover::before {
+      bottom: calc(100% + 45px);
+    }
+  }}
 
 @keyframes slideCoatLabel {
   0% {
