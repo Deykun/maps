@@ -1,0 +1,59 @@
+.heraldry-page-ui {
+  // display: block;
+  // background-color: white;
+  // position: relative;
+}
+
+.heraldry-ui-pane {
+  @apply p-2 flex flex-col gap-2 rounded-md shadow-md;
+  
+  border: 1px solid #dbd7d7;
+  background: rgba(236, 236, 236, 0.68);
+  background: rgba(247, 247, 247, 0.48);
+  backdrop-filter: blur(4px);
+}
+
+.heraldry-ui-button {
+  > button {
+    @apply inline-flex justify-center items-center size-8 shadow-sm rounded-sm;
+
+    color: #312f2f;
+    font-size: 20px;
+    font-weight: 800;
+    // border: 1px solid #bdbabaa1;
+    // background: #ffffff5e;
+    // border-radius: 4px;
+    background-color: white;
+    border-radius: 50px;
+    transition: 0.05s ease-in-out;
+
+    &:hover {
+      color: black;
+      background: #ffffff;
+      box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.18) 0px 1px 2px 0px;
+    }
+
+    > svg {
+      @apply size-5;
+
+      fill: currentColor;
+    }
+
+    .heraldry-ui-button-marker {
+      padding: 0 4px;
+      background-color: #d4ff41;
+      color: black;
+      font-size: 10px;
+      min-width: 15px;
+      height: 15px;
+      line-height: 15px;
+      border-radius: 20px;
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.18) 0px 1px 2px 0px;
+    }
+  }
+}

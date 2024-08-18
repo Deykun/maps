@@ -44,7 +44,7 @@
   "devDependencies": {
     "@eslint/js": "^9.7.0",
     "@types/nearest-color": "^0.4.1",
-    "@types/node": "^22.0.0",
+    "@types/node": "^22.4.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@types/react-helmet": "^6.1.11",
@@ -81,33 +81,11 @@
     "wikipedia": "^2.1.2",
     "wouter": "^3.3.1"
   },
-  "eslintConfig": {
-    "extends": [
-      "airbnb-base"
-    ],
-    "rules": {
-      "react/react-in-jsx-scope": 0,
-      "indent": [
-        "error",
-        4,
-        {
-          "ignoredNodes": [
-            "JSXElement *",
-            "JSXElement"
-          ],
-          "SwitchCase": 1,
-          "flatTernaryExpressions": true
-        }
-      ],
-      "at-rule-name-space-after": "always-single-line",
-      "at-rule-semicolon-newline-after": "always",
-      "block-closing-brace-empty-line-before": "never",
-      "block-closing-brace-newline-after": "always",
-      "block-closing-brace-newline-before": "always-multi-line",
-      "block-closing-brace-space-before": "always-single-line"
-    },
-    "parserOptions": {
-      "ecmaVersion": 2021
+  "resolve-path-alias": {
+    "alias": {
+      "@/*": "src/*",
+      "@components/*": "src/components/*",
+      "@assets/*": "src/assets/*"
     }
   }
 }

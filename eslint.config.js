@@ -1,6 +1,7 @@
 import globals from "globals";
 import tseslint from "typescript-eslint";
 import pluginReactConfig from "eslint-plugin-react/configs/recommended.js";
+import { resolve } from 'path';
 
 export default [
     {languageOptions: { globals: globals.browser }},
@@ -20,6 +21,16 @@ export default [
             "block-closing-brace-newline-after": "always",
             "block-closing-brace-newline-before": "always-multi-line",
             "block-closing-brace-space-before": "always-single-line",
-        }
+        },
+        settings: {
+            'import/resolver': {
+              'alias-array': {
+                alias: true,
+                map: [
+                  ['@src', resolve(__dirname, './src/')],
+                ],
+              }
+            }
+        },
     }
 ];

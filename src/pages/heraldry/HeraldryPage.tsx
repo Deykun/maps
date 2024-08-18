@@ -1,4 +1,3 @@
-// import SvgMap from './components/SvgMap';
 // import { AdministrativeUnit } from '../../topic/Heraldry/types';
 import { Link } from "wouter";
 import { useTranslation } from 'react-i18next';
@@ -8,7 +7,9 @@ import usePrevious from '../../hooks/usePrevious';
 import clsx from 'clsx';
 
 import HeraldryCanvas from './components/HeraldryCanvas';
-import { zoomUnitInPx } from './components/constants';
+import UiRightSidebar from './components/UiRightSidebar';
+import { zoomUnitInPx, zoomMin, zoomMax } from './components/constants';
+
 
 // import { getFilter } from '../../topic/Heraldry/utils/getFilter';
 
@@ -24,6 +25,8 @@ import pl2JSON from '../heraldyka/powiaty-map.json';
 import pl3JSON from '../heraldyka/miasta-map.json';
 
 import { AdministrativeUnit } from "../../topic/Heraldry/types";
+
+import './HeraldryPage.scss';
 
 // Will be rendered from north to south and from smallest to largest
 const units = [
@@ -41,37 +44,48 @@ const units = [
 
 const HeraldryPage = () => {
   const [selected, setSelected] = useState<AdministrativeUnit[]>([]);
-  const [zoomLevel, setZoomLevel] = useState(5);
-  const uiWrapperClassName = "p-2 px-4 rounded-[4px] bg-white";
+  const [zoomLevel, setZoomLevel] = useState(8);
+  const uiWrapperClassName = "heraldry-ui-pane";
   const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
 
   const { events } = useDraggable(wrapperRef, { decayRate: 0 });
   
   const { t } = useTranslation();
 
-  const prevZoomLevel = usePrevious(zoomLevel, 5);
+  const prevZoomLevel = usePrevious(zoomLevel, 8);
 
   useEffect(() => {
     const handleScroll = (event: WheelEvent) => {
       if (event.deltaY < 0) {
-        setZoomLevel((zoomLevel) => Math.min(25, zoomLevel + 1));
+        setZoomLevel((zoomLevel) => Math.min(zoomMax, zoomLevel + 1));
       } else {
-        setZoomLevel((zoomLevel) => Math.max(1, zoomLevel - 1));
+        setZoomLevel((zoomLevel) => Math.max(zoomMin, zoomLevel - 1));
       }
     }
-    wrapperRef.current.addEventListener('wheel', handleScroll, { passive: true });
 
     const handleScrollEnd = () => {
-      document.getElementById('europe-marker')?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+      document.getElementById('europe-marker')?.scrollIntoView({
+        behavior: 'smooth', 
+        block: 'nearest',
+        inline: 'nearest',
+      });
     };
-    wrapperRef.current.addEventListener('scrollend', handleScrollEnd);
-    handleScrollEnd();
-  
+    
+    if (wrapperRef.current) {
+      wrapperRef.current.addEventListener('wheel', handleScroll, { passive: true });
+      wrapperRef.current.addEventListener('scrollend', handleScrollEnd);
+
+      document.getElementById('europe-marker')?.scrollIntoView({
+        block: 'center',
+        inline: 'center',
+      });
+    }
+
     return () => {
       wrapperRef.current.removeEventListener('wheel', handleScroll);
       wrapperRef.current.removeEventListener('scrollend', handleScrollEnd);
     };
-  }, []);
+  }, [wrapperRef.current]);
 
   useEffect(() => {
     if (wrapperRef.current) {
@@ -98,37 +112,24 @@ const HeraldryPage = () => {
       className="fixed top-0 left-0 w-full h-full no-scrollbar overflow-auto md:overflow-hidden"
       {...events}
     >
-      <p className={clsx('fixed top-2 left-2 z-10', uiWrapperClassName)}>
+      <div className={clsx('fixed top-3 left-3 z-10', uiWrapperClassName)}>
+        <h1>Heraldic Map of Europe</h1>
+        <p><strong className="font-bold">{units.length}</strong> coat of arms.</p>
         This page doesn’t work yet; please check <Link to="/maps/" className="font-bold">the other maps</Link>
-      </p>
+      </div>
       <main>
         <HeraldryCanvas zoomLevel={zoomLevel} units={units} setSelected={setSelected} />
-        <nav className="fixed top-2 right-2 z-10 flex flex-col justify-between gap-2 text-[12px]">
-          <button className={uiWrapperClassName} onClick={() => setZoomLevel((zoomLevel) => Math.min(25, zoomLevel + 1))}>
-            +
-          </button>
-          <button className={uiWrapperClassName} onClick={() => setZoomLevel((zoomLevel) => Math.max(1, zoomLevel - 1))}>
-            -
-          </button>
-        </nav>
-        <section className="fixed top-[100px] right-2 z-10">
-          <div className={uiWrapperClassName}>
-            {selected.map(({ title }) => <div key={title}>
-              {title}
-            </div>)}
-          </div>
-        </section>
+
       </main>
-      <footer className="fixed bottom-2 left-2 right-2 z-10 flex justify-between text-[12px]">
+        <UiRightSidebar
+          setZoomLevel={setZoomLevel}
+          selected={selected}
+        />
+      {/* <footer className="fixed bottom-3 left-3 right-2 z-10 flex justify-between text-[12px]">
         <div className={uiWrapperClassName}>
-          {t('heraldry.mapFooterSource')}
-          {' '}
-          <a href="https://www.wikipedia.org/" className="font-bold" target="_blank" rel="nofollow noopener">wikipedia.org</a>.
+          111
         </div>
-        <div className={uiWrapperClassName}>
-          <a href="https://deykun.github.io/maps/" className="font-bold" target="_blank">deykun.github.io/maps</a>
-        </div>
-      </footer>
+      </footer> */}
     </div>
   );
 };
