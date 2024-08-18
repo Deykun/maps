@@ -9,7 +9,7 @@ const alreadyFetchedDivisions = alreadyFetchedJSON as AdministrativeUnit[];
 
 const administrativeDivisions: AdministrativeUnit[] = Object.values(urls.powiatyByWojewodztwo).flatMap(
 	({ title, urls }) => urls.map(
-		(gmina) => ({ ...gmina, type: ['powiat'], partOf: title }
+		(gmina) => ({ ...gmina, type: ['powiaty'], partOf: title }
 	),
 ));
 

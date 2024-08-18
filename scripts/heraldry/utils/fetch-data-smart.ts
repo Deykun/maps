@@ -155,7 +155,7 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
       ).replace(/\((.*)\)/g, '').trim();
 
       categories.filter(
-        category => ['(gmina', '(powiat', '(województwo', 'Powiat'].some((phrase) => category.includes(phrase))
+        category => ['(gmina', '(powiat', '(województwo', 'powiaty'].some((phrase) => category.includes(phrase))
       ).forEach((category) => {
           locationPages.push(category);
           locationPages.push(category.replace('Kategoria:', ''));
@@ -164,7 +164,7 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
 
           locationPages.push(categoryWithoutBrackets);
 
-          if (division.type?.includes('gmina')) {
+          if (division.type?.includes('gminy')) {
             locationPages.push(`${categoryWithoutBrackets} (gmina)`);
             locationPages.push(`${categoryWithoutBrackets} (gmina wiejska)`);
           }
@@ -179,7 +179,7 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
       });
 
       if (name) {
-        if (division.type?.includes('gmina')) {
+        if (division.type?.includes('gminy')) {
           locationPages.push(`${name} (gmina)`);
           locationPages.push(`${name} (gmina wiejska)`);
         }
@@ -209,17 +209,17 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
           }
         }
 
-        if (division.type?.includes('gmina')) {
+        if (division.type?.includes('gminy')) {
           locationPages.push(`${name.replace(/\((.*)\)/g, '').trim()} (gmina)`);
           locationPages.push(`${name.replace(/\((.*)\)/g, '').trim()} (gmina wiejska)`);
           locationPages.push(`${name.replace(/\((.*)\)/g, '').trim()} (gmina miejsko-wiejska)`);
         }
 
-        if (division.type?.includes('miasta') || division.type?.includes('gmina')) {
+        if (division.type?.includes('miasta') || division.type?.includes('gminy')) {
           locationPages.push(`${name} (miasto)`);
         }
 
-        if (division.type?.includes('powiaty') || division.type?.includes('gmina')) {
+        if (division.type?.includes('powiaty') || division.type?.includes('gminy')) {
           locationPages.push(`${name} (gmina miejsko-wiejska)`);
         }
 
