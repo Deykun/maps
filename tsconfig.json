@@ -11,7 +11,5 @@
   },
   "include": [
     ".eslintrc.cjs",
-    "src",
-    "scripts",
   ],
 }
