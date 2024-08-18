@@ -7,6 +7,7 @@ import { PATHS_DATA } from '../../constants';
 
 import HeraldryListItem from './components/HeraldryListItem';
 import HeraldryMapItem from './components/HeraldryMapItem';
+import HeraldryMapItemFromSprite from './components/HeraldryMapItemFromSprite';
 import HeraldrySubtitle from './components/HeraldrySubtitle';
 
 import { removeDiacratics } from '../../utils/text';
@@ -185,12 +186,23 @@ const Heraldry = ({
             >
               {/* <SvgGmina /> */}
               <MapBackground />
-              <div>
+              {/* <div>
                   {unitsForMap.map(
                     (unit) => (
                       <HeraldryMapItem
                         key={`${unit.title}-${unit?.place?.coordinates?.lon}`}
                         {...unit}
+                        setListPhrase={setListPhrase}
+                        style={getPostionForPlace(unit, lang)}
+                      />
+                  ))}
+              </div> */}
+              <div>
+                  {unitsForMap.map(
+                    (unit) => (
+                      <HeraldryMapItemFromSprite
+                        key={`${unit.title}-${unit?.place?.coordinates?.lon}`}
+                        unit={unit}
                         setListPhrase={setListPhrase}
                         style={getPostionForPlace(unit, lang)}
                       />

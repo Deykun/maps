@@ -1,5 +1,5 @@
 import { SettingsParams } from '../types';
-import { numberOfImagesPerSprite } from '@/topic/Heraldry/constants'
+import { getSpriteDataFromUnit } from '@/topic/Heraldry/utils/getSpriteDataFromUnit';
 import { AdministrativeUnit } from '../../../../topic/Heraldry/types';
 
 import { CoatOfArms } from './layers/CoatOfArms';
@@ -96,8 +96,6 @@ export const setCoatOfArms = (units: AdministrativeUnit[], settings: SettingsPar
 
     const image = (unit.imagesList || []).find(({ width }) => width === '80w' );
 
-    const spriteIndex = Math.floor(Math.min(unit.index / numberOfImagesPerSprite));
-
     const coatOfArms = new CoatOfArms({
       canvas,
       ctx,
@@ -105,10 +103,7 @@ export const setCoatOfArms = (units: AdministrativeUnit[], settings: SettingsPar
       latY,
       title: unit.title,
       imageUrl: image?.path || '', // aserted in filter
-      imageSprint: {
-        url: `images/heraldry/${unit.lang}/web/sprites/${unit.type?.[0] || ''}-${spriteIndex}.webp`,
-        index: unit.index % numberOfImagesPerSprite,
-      },
+      imageSprint: getSpriteDataFromUnit(unit),
       settings,
       coatSize,
     });
