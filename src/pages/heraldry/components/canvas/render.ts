@@ -14,13 +14,16 @@ const aspectRation = {
   y: 1,
 }
 
-// const fps = 0.5;
+const fps = 0.5;
+
+const startAnimation = () => {
+  setTimeout(() => {
+    // window.requestAnimationFrame(renderFrame);
+    renderFrame();
+  }, 1000 / fps);
+}
+
 const renderFrame = () => {
-  // setTimeout(() => {
-
-  //   window.requestAnimationFrame(renderFrame);
-  // }, 1000 / fps);
-
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   coatOfArmsList.forEach((item) => {
@@ -44,6 +47,20 @@ export const onResize = (settings: SettingsParams) => {
     item.onResize(settings);
   });
 
+  // Image quality: https://forum.babylonjs.com/t/lossing-quality-of-image-when-scaling-drawimage-dynamic-texture/11826/2
+  const dpi = window.devicePixelRatio;
+  const styles = window.getComputedStyle(canvas);
+  const style = {
+    height() {
+      return +styles.height.slice(0, -2);
+    },
+    width() {
+      return +styles.width.slice(0, -2);
+    }
+  };
+  canvas.setAttribute('width', (style.width() * dpi).toString());
+  canvas.setAttribute('height', (style.height() * dpi).toString());
+  
   renderFrame();
 }
 
@@ -117,6 +134,7 @@ export const setCoatOfArms = (units: AdministrativeUnit[], settings: SettingsPar
   // });
 
   renderFrame();
+  startAnimation();
 };
 
 export const getCoatOfArmsForXandY = ({ x, y }: { x: number, y: number }) => {

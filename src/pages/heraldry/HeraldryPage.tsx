@@ -127,7 +127,7 @@ const HeraldryPage = () => {
             This page doesn’t work yet; please check <Link to="/maps/" className="font-bold">the other maps</Link>.
           </p>
         </div>
-        <HeraldryCanvas zoomLevel={zoomLevel} units={units} setSelected={setSelected} />
+        <HeraldryCanvas units={units} setSelected={setSelected} />
       </main>
       <UiRightSidebar
         selected={selected}
