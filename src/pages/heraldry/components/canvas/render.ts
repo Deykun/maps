@@ -7,6 +7,7 @@ import { CoatOfArms } from './layers/CoatOfArms';
 let canvas = undefined as unknown as HTMLCanvasElement;
 let ctx = undefined as unknown as CanvasRenderingContext2D;
 let coatOfArmsList: CoatOfArms[] = [];
+let coatSize = 40;
 
 const aspectRation = {
   x: 1,
@@ -20,7 +21,7 @@ const renderFrame = () => {
   //   window.requestAnimationFrame(renderFrame);
   // }, 1000 / fps);
 
-  // ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   coatOfArmsList.forEach((item) => {
     item.draw();
@@ -91,6 +92,7 @@ export const setCoatOfArms = (units: AdministrativeUnit[], settings: SettingsPar
         index: unit.index % numberOfImagesPerSprite,
       },
       settings,
+      coatSize,
     });
 
     return coatOfArms;
@@ -123,4 +125,14 @@ export const getCoatOfArmsForXandY = ({ x, y }: { x: number, y: number }) => {
   }).map(({ title }) => title);
 
   return selectedTitles;
+}
+
+export const setCoatSize = (newCoatSize: number) => {
+  coatSize = newCoatSize;
+
+  coatOfArmsList.forEach((item) => {
+    item.setSize(coatSize);
+  });
+
+  renderFrame();
 }

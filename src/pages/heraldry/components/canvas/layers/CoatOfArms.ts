@@ -53,6 +53,7 @@ export class CoatOfArms {
     imageUrl,
     imageSprint,
     settings,
+    coatSize,
   }: {
     canvas: HTMLCanvasElement,
     ctx: CanvasRenderingContext2D,
@@ -65,6 +66,7 @@ export class CoatOfArms {
       index: number
     },
     settings: SettingsParams,
+    coatSize: number,
   }) {
     this.canvas = canvas;
     this.ctx = ctx;
@@ -82,8 +84,8 @@ export class CoatOfArms {
       this.draw();
     }
 
-    this.width = 40;
-    this.height = 40;
+    this.width = coatSize;
+    this.height = coatSize;
 
     this.lonX = lonX;
     this.latY = latY;
@@ -102,6 +104,11 @@ export class CoatOfArms {
     this.x = (this.lonX - minLonX) / mapWidth * this.canvas.width;
     // 1.16 because Equator is not at for current map :D
     this.y = getCanvasY(this.latY, this.canvas.height * 1.16, settings);
+  }
+
+  setSize(size: number) {
+    this.width = size;
+    this.height = size;
   }
 
   draw() {
