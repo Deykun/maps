@@ -1,6 +1,7 @@
-
 import React, { useRef, useEffect, useState, memo, useCallback } from 'react';
-import { AdministrativeUnit } from '../../../topic/Heraldry/types';
+import { useTranslation } from 'react-i18next';
+import IconShieldCheckers from '@/components/Icons/IconShieldCheckers';
+import { AdministrativeUnit } from '@/topic/Heraldry/types';
 import SvgMap from './SvgMap';
 import { render, onResize, setCoatOfArms, getCoatOfArmsForXandY } from './canvas/render';
 
@@ -29,6 +30,8 @@ const HeraldryCanvas = ({ zoomLevel = 2, units, setSelected }: Props) => {
     mapHeightStreech: 1.01400,
   });
 
+  const { t } = useTranslation();
+
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const canvasCtxRef = useRef<CanvasRenderingContext2D | null>(null);
 
@@ -45,7 +48,7 @@ const HeraldryCanvas = ({ zoomLevel = 2, units, setSelected }: Props) => {
   }, []);
 
   useEffect(() => {
-    setCoatOfArms(units);
+    setCoatOfArms(units, settings);
   }, [units]);
 
   useEffectChange(() => {
@@ -73,17 +76,38 @@ const HeraldryCanvas = ({ zoomLevel = 2, units, setSelected }: Props) => {
       style={{ width, aspectRatio }}
       onClick={handleMapClick}
     >
-      <header className="map-intro">
-        <h1 className="map-title">Heraldic Map of Europe</h1>
-        <p><strong className="font-bold">{units.length}</strong> coat of arms.</p>
+      <header className="map-intro text-right">
+        <p>
+          {t('heraldry.mapFooterSource')}
+          {' '}          
+          <a href="https://www.wikipedia.org/" className="font-bold tracking-wide" target="_blank" rel="nofollow noopener">wikipedia.org</a>.
+        </p>
+        <br />
+        <p>{t('heraldry.list.footer')}</p>
+        <h3 className="map-title">
+          <a
+            href="https://github.com/Deykun/maps"
+            target="_blank"
+          >
+            github.com/deykun/maps
+          </a>
+        </h3>
+        <br />
+        <div className="flex justify-end items-center">
+          <IconShieldCheckers className="size-[0.3cqi] fill-[#8ab300] mr-2" />
+          <p><strong className="font-bold">{units.length}</strong> coat of arms.</p>
+        </div>
       </header>
       <SvgMap />
       <canvas ref={canvasRef} width={width} className='absolute top-0 left-0 w-full h-full' />
-      <div id="europe-marker" className="absolute z-20 pointer-events-none" style={{
-        top: '17%',
-        right: '30%',
-        width: '30%',
-        height: '30%',
+      <div id="europe-marker" className="absolute z-20 bg-[red] pointer-events-none" style={{
+        top: '19%',
+        right: '35%',
+        width: '28%',
+        height: '28%',
+        borderRadius: '30px',
+        // opacity: 0.2,
+        opacity: 0,
       }} />
       {/* <MapGrid /> */}
       {/* <HeraldryCanvasAligmentTools setSettings={setSettings} settings={settings} /> */}

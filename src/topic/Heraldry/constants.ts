@@ -8,3 +8,6 @@ export const colorsByNames: Colors = {
   green: '#0f0',
   blue: '#00f',
 };
+
+export const numberOfImagesPerSprite = 200;
+export const spriteSize = 80;

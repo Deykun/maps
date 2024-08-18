@@ -1,13 +1,15 @@
 {
   "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
-    }
-  ],
+  "references": [{ "path": "./tsconfig.node.json" }],
   "compilerOptions": {
+    "resolveJsonModule": true,
+    "baseUrl": ".",
     "paths": {
-      "@*": ["./src/*", "./src/*/index"],
-    }
+      "@scripts/*": ["./scripts/*"],
+      "@/*": ["./src/*"],
+    },
   },
+  "include": [
+    ".eslintrc.cjs",
+  ],
 }

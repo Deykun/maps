@@ -12,9 +12,10 @@
   "heraldry.color.red": "red",
   "heraldry.color.green": "green",
   "heraldry.color.blue": "blue",
-  "heraldry.unit.type.pl.miasto": "city",
-  "heraldry.unit.type.pl.powiat": "county (powiat)",
-  "heraldry.unit.type.pl.gmina": "municipality (gmina)",
+  "heraldry.unit.type.pl.miasta": "city",
+  "heraldry.unit.type.pl.powiaty": "county (powiat)",
+  "heraldry.unit.type.pl.gminy": "municipality (gmina)",
+  "heraldry.unit.type.pl.wojewodztwa": "province (województwo)",
   "heraldry.unit.type.et.unit": "current admin unit",
   "heraldry.unit.type.et.formerUnit": "former admin unit",
   "heraldry.unit.type.fi.kunta": "municipality (kunta)",
@@ -128,5 +129,5 @@
   "heraldry.list.limitListTo": "Limit the list to:",
   "heraldry.list.limitListToPlaceholder": "town...",
   "heraldry.list.showMore": "Show more",
-  "heraldry.list.footer": "If you see a mismatched coat of arms, you can report it here"
+  "heraldry.list.footer": "If you see a mismatched coat of arms, you can report it here:"
 }

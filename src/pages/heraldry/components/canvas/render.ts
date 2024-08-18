@@ -1,4 +1,5 @@
 import { SettingsParams } from '../types';
+import { numberOfImagesPerSprite } from '@/topic/Heraldry/constants'
 import { AdministrativeUnit } from '../../../../topic/Heraldry/types';
 
 import { CoatOfArms } from './layers/CoatOfArms';
@@ -65,14 +66,14 @@ export const render = ({ canvas: gameCanvas, ctx: gameCtx, aspectX = 1, aspectY 
   initEventListeners();
 };
 
-export const setCoatOfArms = (units: AdministrativeUnit[]) => {
+export const setCoatOfArms = (units: AdministrativeUnit[], settings: SettingsParams) => {
   coatOfArmsList = [];
   
   coatOfArmsList = units.filter((unit) => (unit?.imagesList || []).length > 0).map((unit) => {
     const lonX = unit?.place?.coordinates?.lon ?? 0;
     const latY = unit?.place?.coordinates?.lat ?? 0;
 
-    const image = (unit.imagesList || []).find(({ width }) => width === '50w' );
+    const image = (unit.imagesList || []).find(({ width }) => width === '80w' );
 
     const coatOfArms = new CoatOfArms({
       canvas,
@@ -81,6 +82,11 @@ export const setCoatOfArms = (units: AdministrativeUnit[]) => {
       latY,
       title: unit.title,
       imageUrl: image?.path || '', // aserted in filter
+      imageSprint: {
+        url: `images/heraldry/${unit.lang}/web/sprites/${unit.type?.[0] || ''}-${Math.round(Math.min(unit.index / numberOfImagesPerSprite))}.webp`,
+        index: unit.index % numberOfImagesPerSprite,
+      },
+      settings,
     });
 
     return coatOfArms;
