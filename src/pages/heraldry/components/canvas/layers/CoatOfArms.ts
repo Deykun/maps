@@ -1,5 +1,5 @@
 import { SettingsParams } from '../../types';
-import { spriteSize } from '@/topic/Heraldry/constants'
+import { spriteSize, spriteOffset } from '@/topic/Heraldry/constants'
 
 const minLonX = -177.5;
 const maxLonX = 180;
@@ -79,6 +79,7 @@ export class CoatOfArms {
     this.imageIsLoaded = false;
     this.image.onload = () => {
       this.imageIsLoaded = true;
+      this.draw();
     }
 
     this.width = 40;
@@ -108,7 +109,7 @@ export class CoatOfArms {
       return;
     }
 
-    const frameY = spriteSize * this.imageSprint.index;
+    const frameY = spriteSize * this.imageSprint.index + spriteOffset * this.imageSprint.index;
 
     this.ctx.drawImage(
       this.image,

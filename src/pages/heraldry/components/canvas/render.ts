@@ -13,14 +13,14 @@ const aspectRation = {
   y: 1,
 }
 
-const fps = 1;
+// const fps = 0.5;
 const renderFrame = () => {
-  setTimeout(() => {
+  // setTimeout(() => {
 
-    window.requestAnimationFrame(renderFrame);
-  }, 1000 / fps);
+  //   window.requestAnimationFrame(renderFrame);
+  // }, 1000 / fps);
 
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  // ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   coatOfArmsList.forEach((item) => {
     item.draw();
@@ -42,6 +42,8 @@ export const onResize = (settings: SettingsParams) => {
   coatOfArmsList.forEach((item) => {
     item.onResize(settings);
   });
+
+  renderFrame();
 }
 
 export const render = ({ canvas: gameCanvas, ctx: gameCtx, aspectX = 1, aspectY = 1 }: {
@@ -75,6 +77,8 @@ export const setCoatOfArms = (units: AdministrativeUnit[], settings: SettingsPar
 
     const image = (unit.imagesList || []).find(({ width }) => width === '80w' );
 
+    const spriteIndex = Math.floor(Math.min(unit.index / numberOfImagesPerSprite));
+
     const coatOfArms = new CoatOfArms({
       canvas,
       ctx,
@@ -83,7 +87,7 @@ export const setCoatOfArms = (units: AdministrativeUnit[], settings: SettingsPar
       title: unit.title,
       imageUrl: image?.path || '', // aserted in filter
       imageSprint: {
-        url: `images/heraldry/${unit.lang}/web/sprites/${unit.type?.[0] || ''}-${Math.round(Math.min(unit.index / numberOfImagesPerSprite))}.webp`,
+        url: `images/heraldry/${unit.lang}/web/sprites/${unit.type?.[0] || ''}-${spriteIndex}.webp`,
         index: unit.index % numberOfImagesPerSprite,
       },
       settings,
@@ -109,6 +113,8 @@ export const setCoatOfArms = (units: AdministrativeUnit[], settings: SettingsPar
   // coordinates.forEach(({ lat, lon, city: title }) => {
   //   coatOfArmsList.push(new CoatOfArms({ canvas, ctx, lonX: lon, latY: lat, title: `${title} ${lon.toFixed(1)}x${lat.toFixed(1)}` }));
   // });
+
+  renderFrame();
 };
 
 export const getCoatOfArmsForXandY = ({ x, y }: { x: number, y: number }) => {

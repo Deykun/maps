@@ -71,7 +71,7 @@ const HeraldryPage = () => {
 
     const handleScrollEnd = () => {
       document.getElementById('europe-marker')?.scrollIntoView({
-        behavior: 'smooth', 
+        // behavior: 'smooth', 
         block: 'nearest',
         inline: 'nearest',
       });
