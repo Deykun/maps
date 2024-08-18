@@ -15,10 +15,12 @@ import { zoomUnitInPx, zoomMin, zoomMax } from './components/constants';
 
 // import unitJSON from './unit-map.json'
 
-import et1JSON from '../eesti-heraldika/unit-map.json';
+import et1JSON from '../eesti-heraldika/formerUnit-map.json';
+import et2JSON from '../eesti-heraldika/unit-map.json';
 
-import fi1JSON from '../suomalainen-heraldikka/kunta-map.json';
-import fi2JSON from '../suomalainen-heraldikka/maakunta-map.json';
+import fi1JSON from '../suomalainen-heraldikka/formerKunta-map.json';
+import fi2JSON from '../suomalainen-heraldikka/kunta-map.json';
+import fi3JSON from '../suomalainen-heraldikka/maakunta-map.json';
 
 import pl1JSON from '../heraldyka/gminy-map.json';
 import pl2JSON from '../heraldyka/powiaty-map.json';
@@ -29,11 +31,13 @@ import { AdministrativeUnit } from "../../topic/Heraldry/types";
 
 import './HeraldryPage.scss';
 
-// Will be rendered from north to south and from smallest to largest
+// Will be rendered from former to current, north to south and from smallest to largest
 const units = [
   ...Object.values(fi1JSON),
   ...Object.values(fi2JSON),
+  ...Object.values(fi3JSON),
   ...Object.values(et1JSON),
+  ...Object.values(et2JSON),
   ...Object.values(pl1JSON),
   ...Object.values(pl2JSON),
   ...Object.values(pl3JSON),

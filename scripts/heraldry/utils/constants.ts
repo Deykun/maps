@@ -98,6 +98,7 @@ export const locationTitleByCoatOfArmsTitle = {
   'Õru valla vapp': 'Õru vald',
   'Järvakandi valla vapp': 'Järvakandi',
   'Lääne-Nigula valla vapp': 'Taebla', // 'Lääne-Nigula vald',
+  'Tudulinna valla vapp': 'Tudulinna vald',
   // - et
   // fi
   'Helsingin vaakuna': 'Helsinki',
@@ -171,4 +172,6 @@ export const locationTitleByCoatOfArmsTitle = {
   'Keravan vaakuna': 'Kerava',
   'Kouvolan vaakuna': 'Kouvola',
   'Etelä-Pohjanmaan vaakuna': 'Seinäjoen maalaiskunta',
+  'Anjalan vaakuna': 'Anjalan kartano',
+  'Vanajan vaakuna': 'Vanaja (Suomen entinen kunta)',
 } as const;

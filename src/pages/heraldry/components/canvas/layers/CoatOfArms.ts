@@ -1,5 +1,5 @@
 import { SettingsParams } from '../../types';
-import ImageCoatOfArms200 from '../assets/herb-helu-x2.webp';
+import { spriteSize } from '@/topic/Heraldry/constants'
 
 const minLonX = -177.5;
 const maxLonX = 180;
@@ -36,6 +36,10 @@ export class CoatOfArms {
   latY: number;
   title: string;
   imageUrl: string;
+  imageSprint: {
+    url: string,
+    index: number
+  };
   settings: SettingsParams;
   image: HTMLImageElement;
   imageIsLoaded: boolean;
@@ -47,6 +51,7 @@ export class CoatOfArms {
     latY,
     title,
     imageUrl,
+    imageSprint,
     settings,
   }: {
     canvas: HTMLCanvasElement,
@@ -55,6 +60,10 @@ export class CoatOfArms {
     latY: number,
     title: string,
     imageUrl: string,
+    imageSprint: {
+      url: string,
+      index: number
+    },
     settings: SettingsParams,
   }) {
     this.canvas = canvas;
@@ -62,9 +71,10 @@ export class CoatOfArms {
 
     this.title = title;
     this.imageUrl = imageUrl;
+    this.imageSprint = imageSprint;
 
     const image = new Image();
-    image.src = this.imageUrl;
+    image.src = this.imageSprint.url;
     this.image = image;
     this.imageIsLoaded = false;
     this.image.onload = () => {
@@ -98,16 +108,18 @@ export class CoatOfArms {
       return;
     }
 
+    const frameY = spriteSize * this.imageSprint.index;
+
     this.ctx.drawImage(
       this.image,
+      0, // frameX
+      frameY,
+      spriteSize, // frameWidth
+      spriteSize, // frameHeight
       this.x - (this.width / 2),
       this.y - (this.width / 2),
       this.width,
-      this.width,
-      // x,
-      // y,
-      // imageWidth * this.scaleLevel,
-      // imageHeight * this.scaleLevel,
+      this.height,
     );
 
     if (this.title) {

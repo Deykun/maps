@@ -21,6 +21,7 @@
         },
         "id": "wojewodztwa-0",
         "index": 0,
+        "lang": "pl",
         "colors": {
             "primary": {
                 "color": "#0e0d0c",
@@ -76,6 +77,7 @@
         },
         "id": "wojewodztwa-1",
         "index": 1,
+        "lang": "pl",
         "colors": {
             "primary": {
                 "color": "#ce2e16",
@@ -116,6 +118,69 @@
             ]
         }
     },
+    "herb-wojewodztwa-lubelskiego": {
+        "title": "Herb województwa lubelskiego",
+        "url": "https://pl.wikipedia.org/wiki/Herb_wojew%C3%B3dztwa_lubelskiego",
+        "type": [
+            "wojewodztwa"
+        ],
+        "partOf": "Kategoria:Herby województw obecnego podziału administracyjnego[edytuj]",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/POL_wojew%C3%B3dztwo_lubelskie_COA.svg/langpl-320px-POL_wojew%C3%B3dztwo_lubelskie_COA.svg.png",
+            "width": 320,
+            "height": 376
+        },
+        "place": {
+            "name": "Lublin",
+            "coordinates": {
+                "lat": 51.25,
+                "lon": 22.566667
+            }
+        },
+        "id": "wojewodztwa-2",
+        "index": 2,
+        "lang": "pl",
+        "colors": {
+            "primary": {
+                "color": "#d31313",
+                "name": "red",
+                "distance": 51.55579501860097
+            },
+            "palette": [
+                {
+                    "color": "#d31313",
+                    "name": "red",
+                    "distance": 51.55579501860097
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/pl/wojewodztwa/herb-wojewodztwa-lubelskiego.png",
+        "imageSrcSet": "images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-lubelskiego-80w.webp 80w,images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-lubelskiego-300w.webp 300w",
+        "imagesList": [
+            {
+                "name": "80w",
+                "width": "80w",
+                "path": "images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-lubelskiego-80w.webp"
+            },
+            {
+                "name": "300w",
+                "width": "300w",
+                "path": "images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-lubelskiego-300w.webp"
+            }
+        ],
+        "shortTitle": "Herb województwa lubelskiego",
+        "markers": {
+            "animals": [
+                "deer",
+                "bear"
+            ],
+            "items": [
+                "tree",
+                "crown"
+            ]
+        }
+    },
     "herb-wojewodztwa-lubuskiego": {
         "title": "Herb województwa lubuskiego",
         "url": "https://pl.wikipedia.org/wiki/Herb_wojew%C3%B3dztwa_lubuskiego",
@@ -138,6 +203,7 @@
         },
         "id": "wojewodztwa-3",
         "index": 3,
+        "lang": "pl",
         "colors": {
             "primary": {
                 "color": "#06923c",
@@ -182,6 +248,73 @@
             ]
         }
     },
+    "herb-wojewodztwa-lodzkiego": {
+        "title": "Herb województwa łódzkiego",
+        "url": "https://pl.wikipedia.org/wiki/Herb_wojew%C3%B3dztwa_%C5%82%C3%B3dzkiego",
+        "type": [
+            "wojewodztwa"
+        ],
+        "partOf": "Kategoria:Herby województw obecnego podziału administracyjnego[edytuj]",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/POL_wojew%C3%B3dztwo_%C5%82%C3%B3dzkie_COA.svg/langpl-320px-POL_wojew%C3%B3dztwo_%C5%82%C3%B3dzkie_COA.svg.png",
+            "width": 320,
+            "height": 392
+        },
+        "place": {
+            "name": "Łódź",
+            "coordinates": {
+                "lat": 51.776667,
+                "lon": 19.454722
+            }
+        },
+        "id": "wojewodztwa-4",
+        "index": 4,
+        "lang": "pl",
+        "colors": {
+            "primary": {
+                "color": "#b62e15",
+                "name": "red",
+                "distance": 88.80315309717331
+            },
+            "palette": [
+                {
+                    "color": "#b62e15",
+                    "name": "red",
+                    "distance": 88.80315309717331
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/pl/wojewodztwa/herb-wojewodztwa-lodzkiego.png",
+        "imageSrcSet": "images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-lodzkiego-80w.webp 80w,images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-lodzkiego-300w.webp 300w",
+        "imagesList": [
+            {
+                "name": "80w",
+                "width": "80w",
+                "path": "images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-lodzkiego-80w.webp"
+            },
+            {
+                "name": "300w",
+                "width": "300w",
+                "path": "images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-lodzkiego-300w.webp"
+            }
+        ],
+        "shortTitle": "Herb województwa łódzkiego",
+        "markers": {
+            "animals": [
+                "eagle",
+                "bird",
+                "lion",
+                "bullBison",
+                "ram"
+            ],
+            "items": [
+                "boat",
+                "cross",
+                "crown"
+            ]
+        }
+    },
     "herb-wojewodztwa-malopolskiego": {
         "title": "Herb województwa małopolskiego",
         "url": "https://pl.wikipedia.org/wiki/Herb_wojew%C3%B3dztwa_ma%C5%82opolskiego",
@@ -204,6 +337,7 @@
         },
         "id": "wojewodztwa-5",
         "index": 5,
+        "lang": "pl",
         "colors": {
             "primary": {
                 "color": "#dabd50",
@@ -243,6 +377,130 @@
             ]
         }
     },
+    "herb-wojewodztwa-mazowieckiego": {
+        "title": "Herb województwa mazowieckiego",
+        "url": "https://pl.wikipedia.org/wiki/Herb_wojew%C3%B3dztwa_mazowieckiego",
+        "type": [
+            "wojewodztwa"
+        ],
+        "partOf": "Kategoria:Herby województw obecnego podziału administracyjnego[edytuj]",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/POL_wojew%C3%B3dztwo_mazowieckie_COA.svg/langpl-320px-POL_wojew%C3%B3dztwo_mazowieckie_COA.svg.png",
+            "width": 320,
+            "height": 380
+        },
+        "place": {
+            "name": "Warszawa",
+            "coordinates": {
+                "lat": 52.232222,
+                "lon": 21.008333
+            }
+        },
+        "id": "wojewodztwa-6",
+        "index": 6,
+        "lang": "pl",
+        "colors": {
+            "primary": {
+                "color": "#150e0e",
+                "name": "red",
+                "distance": 234.83611306611255
+            },
+            "palette": [
+                {
+                    "color": "#df0e2c",
+                    "name": "red",
+                    "distance": 56.178287620752556
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/pl/wojewodztwa/herb-wojewodztwa-mazowieckiego.png",
+        "imageSrcSet": "images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-mazowieckiego-80w.webp 80w,images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-mazowieckiego-300w.webp 300w",
+        "imagesList": [
+            {
+                "name": "80w",
+                "width": "80w",
+                "path": "images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-mazowieckiego-80w.webp"
+            },
+            {
+                "name": "300w",
+                "width": "300w",
+                "path": "images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-mazowieckiego-300w.webp"
+            }
+        ],
+        "shortTitle": "Herb województwa mazowieckiego",
+        "markers": {
+            "animals": [
+                "eagle",
+                "bird"
+            ],
+            "items": [
+                "crown"
+            ]
+        }
+    },
+    "herb-wojewodztwa-opolskiego": {
+        "title": "Herb województwa opolskiego",
+        "url": "https://pl.wikipedia.org/wiki/Herb_wojew%C3%B3dztwa_opolskiego",
+        "type": [
+            "wojewodztwa"
+        ],
+        "partOf": "Kategoria:Herby województw obecnego podziału administracyjnego[edytuj]",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/POL_wojew%C3%B3dztwo_opolskie_COA.svg/langpl-320px-POL_wojew%C3%B3dztwo_opolskie_COA.svg.png",
+            "width": 320,
+            "height": 372
+        },
+        "place": {
+            "name": "Opole",
+            "coordinates": {
+                "lat": 50.664722,
+                "lon": 17.926944
+            }
+        },
+        "id": "wojewodztwa-7",
+        "index": 7,
+        "lang": "pl",
+        "colors": {
+            "primary": {
+                "color": "#0c6cb3",
+                "name": "blue",
+                "distance": 132.6046756340062
+            },
+            "palette": [
+                {
+                    "color": "#0c6cb3",
+                    "name": "blue",
+                    "distance": 132.6046756340062
+                }
+            ]
+        },
+        "imageUrl": "images/heraldry/pl/wojewodztwa/herb-wojewodztwa-opolskiego.png",
+        "imageSrcSet": "images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-opolskiego-80w.webp 80w,images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-opolskiego-300w.webp 300w",
+        "imagesList": [
+            {
+                "name": "80w",
+                "width": "80w",
+                "path": "images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-opolskiego-80w.webp"
+            },
+            {
+                "name": "300w",
+                "width": "300w",
+                "path": "images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-opolskiego-300w.webp"
+            }
+        ],
+        "shortTitle": "Herb województwa opolskiego",
+        "markers": {
+            "animals": [
+                "eagle",
+                "bird"
+            ],
+            "items": [
+                "crown"
+            ]
+        }
+    },
     "herb-wojewodztwa-podkarpackiego": {
         "title": "Herb województwa podkarpackiego",
         "url": "https://pl.wikipedia.org/wiki/Herb_wojew%C3%B3dztwa_podkarpackiego",
@@ -265,6 +523,7 @@
         },
         "id": "wojewodztwa-8",
         "index": 8,
+        "lang": "pl",
         "colors": {
             "primary": {
                 "color": "#0592d9",
@@ -332,6 +591,7 @@
         },
         "id": "wojewodztwa-9",
         "index": 9,
+        "lang": "pl",
         "colors": {
             "primary": {
                 "color": "#db2b1b",
@@ -401,6 +661,7 @@
         },
         "id": "wojewodztwa-10",
         "index": 10,
+        "lang": "pl",
         "colors": {
             "primary": {
                 "color": "#070704",
@@ -458,6 +719,7 @@
         },
         "id": "wojewodztwa-11",
         "index": 11,
+        "lang": "pl",
         "colors": {
             "primary": {
                 "color": "#3343b1",
@@ -519,6 +781,7 @@
         },
         "id": "wojewodztwa-12",
         "index": 12,
+        "lang": "pl",
         "colors": {
             "primary": {
                 "color": "#e25914",
@@ -585,6 +848,7 @@
         },
         "id": "wojewodztwa-13",
         "index": 13,
+        "lang": "pl",
         "colors": {
             "primary": {
                 "color": "#d22423",
@@ -627,256 +891,6 @@
             ]
         }
     },
-    "herb-wojewodztwa-mazowieckiego": {
-        "title": "Herb województwa mazowieckiego",
-        "url": "https://pl.wikipedia.org/wiki/Herb_wojew%C3%B3dztwa_mazowieckiego",
-        "type": [
-            "wojewodztwa"
-        ],
-        "partOf": "Kategoria:Herby województw obecnego podziału administracyjnego[edytuj]",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/POL_wojew%C3%B3dztwo_mazowieckie_COA.svg/langpl-320px-POL_wojew%C3%B3dztwo_mazowieckie_COA.svg.png",
-            "width": 320,
-            "height": 380
-        },
-        "place": {
-            "name": "Warszawa",
-            "coordinates": {
-                "lat": 52.232222,
-                "lon": 21.008333
-            }
-        },
-        "id": "wojewodztwa-6",
-        "index": 6,
-        "colors": {
-            "primary": {
-                "color": "#150e0e",
-                "name": "red",
-                "distance": 234.83611306611255
-            },
-            "palette": [
-                {
-                    "color": "#df0e2c",
-                    "name": "red",
-                    "distance": 56.178287620752556
-                }
-            ]
-        },
-        "imageUrl": "images/heraldry/pl/wojewodztwa/herb-wojewodztwa-mazowieckiego.png",
-        "imageSrcSet": "images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-mazowieckiego-80w.webp 80w,images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-mazowieckiego-300w.webp 300w",
-        "imagesList": [
-            {
-                "name": "80w",
-                "width": "80w",
-                "path": "images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-mazowieckiego-80w.webp"
-            },
-            {
-                "name": "300w",
-                "width": "300w",
-                "path": "images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-mazowieckiego-300w.webp"
-            }
-        ],
-        "shortTitle": "Herb województwa mazowieckiego",
-        "markers": {
-            "animals": [
-                "eagle",
-                "bird"
-            ],
-            "items": [
-                "crown"
-            ]
-        }
-    },
-    "herb-wojewodztwa-lodzkiego": {
-        "title": "Herb województwa łódzkiego",
-        "url": "https://pl.wikipedia.org/wiki/Herb_wojew%C3%B3dztwa_%C5%82%C3%B3dzkiego",
-        "type": [
-            "wojewodztwa"
-        ],
-        "partOf": "Kategoria:Herby województw obecnego podziału administracyjnego[edytuj]",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/POL_wojew%C3%B3dztwo_%C5%82%C3%B3dzkie_COA.svg/langpl-320px-POL_wojew%C3%B3dztwo_%C5%82%C3%B3dzkie_COA.svg.png",
-            "width": 320,
-            "height": 392
-        },
-        "place": {
-            "name": "Łódź",
-            "coordinates": {
-                "lat": 51.776667,
-                "lon": 19.454722
-            }
-        },
-        "id": "wojewodztwa-4",
-        "index": 4,
-        "colors": {
-            "primary": {
-                "color": "#b62e15",
-                "name": "red",
-                "distance": 88.80315309717331
-            },
-            "palette": [
-                {
-                    "color": "#b62e15",
-                    "name": "red",
-                    "distance": 88.80315309717331
-                }
-            ]
-        },
-        "imageUrl": "images/heraldry/pl/wojewodztwa/herb-wojewodztwa-lodzkiego.png",
-        "imageSrcSet": "images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-lodzkiego-80w.webp 80w,images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-lodzkiego-300w.webp 300w",
-        "imagesList": [
-            {
-                "name": "80w",
-                "width": "80w",
-                "path": "images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-lodzkiego-80w.webp"
-            },
-            {
-                "name": "300w",
-                "width": "300w",
-                "path": "images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-lodzkiego-300w.webp"
-            }
-        ],
-        "shortTitle": "Herb województwa łódzkiego",
-        "markers": {
-            "animals": [
-                "eagle",
-                "bird",
-                "lion",
-                "bullBison",
-                "ram"
-            ],
-            "items": [
-                "boat",
-                "cross",
-                "crown"
-            ]
-        }
-    },
-    "herb-wojewodztwa-lubelskiego": {
-        "title": "Herb województwa lubelskiego",
-        "url": "https://pl.wikipedia.org/wiki/Herb_wojew%C3%B3dztwa_lubelskiego",
-        "type": [
-            "wojewodztwa"
-        ],
-        "partOf": "Kategoria:Herby województw obecnego podziału administracyjnego[edytuj]",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/POL_wojew%C3%B3dztwo_lubelskie_COA.svg/langpl-320px-POL_wojew%C3%B3dztwo_lubelskie_COA.svg.png",
-            "width": 320,
-            "height": 376
-        },
-        "place": {
-            "name": "Lublin",
-            "coordinates": {
-                "lat": 51.25,
-                "lon": 22.566667
-            }
-        },
-        "id": "wojewodztwa-2",
-        "index": 2,
-        "colors": {
-            "primary": {
-                "color": "#d31313",
-                "name": "red",
-                "distance": 51.55579501860097
-            },
-            "palette": [
-                {
-                    "color": "#d31313",
-                    "name": "red",
-                    "distance": 51.55579501860097
-                }
-            ]
-        },
-        "imageUrl": "images/heraldry/pl/wojewodztwa/herb-wojewodztwa-lubelskiego.png",
-        "imageSrcSet": "images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-lubelskiego-80w.webp 80w,images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-lubelskiego-300w.webp 300w",
-        "imagesList": [
-            {
-                "name": "80w",
-                "width": "80w",
-                "path": "images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-lubelskiego-80w.webp"
-            },
-            {
-                "name": "300w",
-                "width": "300w",
-                "path": "images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-lubelskiego-300w.webp"
-            }
-        ],
-        "shortTitle": "Herb województwa lubelskiego",
-        "markers": {
-            "animals": [
-                "deer",
-                "bear"
-            ],
-            "items": [
-                "tree",
-                "crown"
-            ]
-        }
-    },
-    "herb-wojewodztwa-opolskiego": {
-        "title": "Herb województwa opolskiego",
-        "url": "https://pl.wikipedia.org/wiki/Herb_wojew%C3%B3dztwa_opolskiego",
-        "type": [
-            "wojewodztwa"
-        ],
-        "partOf": "Kategoria:Herby województw obecnego podziału administracyjnego[edytuj]",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/POL_wojew%C3%B3dztwo_opolskie_COA.svg/langpl-320px-POL_wojew%C3%B3dztwo_opolskie_COA.svg.png",
-            "width": 320,
-            "height": 372
-        },
-        "place": {
-            "name": "Opole",
-            "coordinates": {
-                "lat": 50.664722,
-                "lon": 17.926944
-            }
-        },
-        "id": "wojewodztwa-7",
-        "index": 7,
-        "colors": {
-            "primary": {
-                "color": "#0c6cb3",
-                "name": "blue",
-                "distance": 132.6046756340062
-            },
-            "palette": [
-                {
-                    "color": "#0c6cb3",
-                    "name": "blue",
-                    "distance": 132.6046756340062
-                }
-            ]
-        },
-        "imageUrl": "images/heraldry/pl/wojewodztwa/herb-wojewodztwa-opolskiego.png",
-        "imageSrcSet": "images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-opolskiego-80w.webp 80w,images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-opolskiego-300w.webp 300w",
-        "imagesList": [
-            {
-                "name": "80w",
-                "width": "80w",
-                "path": "images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-opolskiego-80w.webp"
-            },
-            {
-                "name": "300w",
-                "width": "300w",
-                "path": "images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-opolskiego-300w.webp"
-            }
-        ],
-        "shortTitle": "Herb województwa opolskiego",
-        "markers": {
-            "animals": [
-                "eagle",
-                "bird"
-            ],
-            "items": [
-                "crown"
-            ]
-        }
-    },
     "herb-wojewodztwa-wielkopolskiego": {
         "title": "Herb województwa wielkopolskiego",
         "url": "https://pl.wikipedia.org/wiki/Herb_wojew%C3%B3dztwa_wielkopolskiego",
@@ -899,6 +913,7 @@
         },
         "id": "wojewodztwa-14",
         "index": 14,
+        "lang": "pl",
         "colors": {
             "primary": {
                 "color": "#e0051c",
@@ -960,6 +975,7 @@
         },
         "id": "wojewodztwa-15",
         "index": 15,
+        "lang": "pl",
         "colors": {
             "primary": {
                 "color": "#ca2c2b",

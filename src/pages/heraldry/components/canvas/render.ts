@@ -1,4 +1,5 @@
 import { SettingsParams } from '../types';
+import { numberOfImagesPerSprite } from '@/topic/Heraldry/constants'
 import { AdministrativeUnit } from '../../../../topic/Heraldry/types';
 
 import { CoatOfArms } from './layers/CoatOfArms';
@@ -81,6 +82,10 @@ export const setCoatOfArms = (units: AdministrativeUnit[], settings: SettingsPar
       latY,
       title: unit.title,
       imageUrl: image?.path || '', // aserted in filter
+      imageSprint: {
+        url: `images/heraldry/${unit.lang}/web/sprites/${unit.type?.[0] || ''}-${Math.round(Math.min(unit.index / numberOfImagesPerSprite))}.webp`,
+        index: unit.index % numberOfImagesPerSprite,
+      },
       settings,
     });
 

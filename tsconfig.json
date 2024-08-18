@@ -5,6 +5,7 @@
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
+      "@scripts/*": ["./scripts/*"],
       "@/*": ["./src/*"],
     },
   },

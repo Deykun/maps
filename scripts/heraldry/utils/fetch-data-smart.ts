@@ -10,7 +10,7 @@ import { locationTitleByCoatOfArmsTitle } from './constants';
 const start = (new Date()).getTime();
 const errors: { title: string, url: string, details?: string[] }[] = [];
 
-let processed = 0;
+global.processed = typeof global.processed === 'object' ? global.processed : {};
 let failed = 0;
 
 const safeFetchLoop = async ({ lang, page, title }: { lang: string, page: string, title: string }) => {
@@ -84,6 +84,14 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
 
     const categories = await page.categories();
     // const images = await page.images();
+
+    if (lang === 'et') {
+      const name = division.title.replace(' valla vapp', '').replace(' vapp', '');
+
+      if (name) {
+        locationPages.push(name);
+      }
+    }
   
     if (lang === 'fi') {
         const name = division.title.replace(' vaakuna', '');
@@ -161,7 +169,7 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
             locationPages.push(`${categoryWithoutBrackets} (gmina wiejska)`);
           }
 
-          if (division.type?.includes('miasto')) {
+          if (division.type?.includes('miasta')) {
             locationPages.push(`${categoryWithoutBrackets} (miasto)`);
           }
 
@@ -176,7 +184,7 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
           locationPages.push(`${name} (gmina wiejska)`);
         }
 
-        if (division.type?.includes('miasto')) {
+        if (division.type?.includes('miasta')) {
           locationPages.push(`${name} (miasto)`);
           locationPages.push(`${name.slice(0, -1)} (miasto)`);
         }
@@ -207,7 +215,7 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
           locationPages.push(`${name.replace(/\((.*)\)/g, '').trim()} (gmina miejsko-wiejska)`);
         }
 
-        if (division.type?.includes('miasto') || division.type?.includes('gmina')) {
+        if (division.type?.includes('miasta') || division.type?.includes('gmina')) {
           locationPages.push(`${name} (miasto)`);
         }
 
@@ -345,6 +353,9 @@ export const fetchData = async ({
   path: string,
   lang?: string,
 }) => {
+  const unitType = unitNames[0]
+  global.processed[unitType] = 0;
+
   wiki.setLang(lang);
 
   const total = administrativeDivisions.length;
@@ -357,8 +368,8 @@ export const fetchData = async ({
   const limit = pLimit(7);
 
   const progressStatus = () => {
-    if (processed % 3 === 0) {
-      const progressPercent = (processed / total) * 100;
+    if (global.processed[unitType] % 3 === 0) {
+      const progressPercent = (global.processed[unitType] / total) * 100;
       const now = (new Date()).getTime();
       const timeDiffrenceInSeconds = Math.floor((now - start) / 1000);
       const timePerPercentage = timeDiffrenceInSeconds / progressPercent;
@@ -369,9 +380,10 @@ export const fetchData = async ({
       const timeStatus = timeDiffrenceInSeconds === 0 ? '' : `${chalk.blue(`${timeLeftMinutes > 0 ? `${timeLeftMinutes}m `: ''}${timeLeftSecondsToShow}s`)} to finish.`;
   
       console.log([
-        `${chalk.yellow((processed / total * 100).toFixed(1))}% -`,
-        `${chalk.green(processed)} out of ${total}${failed > 0 ? ` (failed: ${chalk.red(failed)})` : ''}.`,
+        `${chalk.yellow((global.processed[unitType] / total * 100).toFixed(1))}% -`,
+        `${chalk.green(global.processed[unitType])} out of ${total}${failed > 0 ? ` (failed: ${chalk.red(failed)})` : ''}.`,
         `${timeStatus}`,
+        `(${unitType})`,
       ].filter(Boolean).join(' '));
     }
   }
@@ -386,6 +398,7 @@ export const fetchData = async ({
       );
 
       const indexData = {
+        lang,
         id: `${division.type}-${index}`,
         index,
       };
@@ -397,7 +410,7 @@ export const fetchData = async ({
         });
         // console.log(chalk.gray(`Skipping ${division.title}. Already fetched.`));
 
-        processed = processed + 1;
+        global.processed[unitType] = global.processed[unitType] + 1;
   
         progressStatus();
   
@@ -410,7 +423,7 @@ export const fetchData = async ({
           ...indexData,
         });
   
-        processed = processed + 1;
+        global.processed[unitType] = global.processed[unitType] + 1;
   
         progressStatus();
   
