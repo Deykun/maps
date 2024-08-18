@@ -1,5 +1,5 @@
 import { SettingsParams } from '../../types';
-import { spriteSize } from '@/topic/Heraldry/constants'
+import { spriteSize, spriteOffset } from '@/topic/Heraldry/constants'
 
 const minLonX = -177.5;
 const maxLonX = 180;
@@ -53,6 +53,7 @@ export class CoatOfArms {
     imageUrl,
     imageSprint,
     settings,
+    coatSize,
   }: {
     canvas: HTMLCanvasElement,
     ctx: CanvasRenderingContext2D,
@@ -65,6 +66,7 @@ export class CoatOfArms {
       index: number
     },
     settings: SettingsParams,
+    coatSize: number,
   }) {
     this.canvas = canvas;
     this.ctx = ctx;
@@ -79,10 +81,11 @@ export class CoatOfArms {
     this.imageIsLoaded = false;
     this.image.onload = () => {
       this.imageIsLoaded = true;
+      this.draw();
     }
 
-    this.width = 40;
-    this.height = 40;
+    this.width = coatSize;
+    this.height = coatSize;
 
     this.lonX = lonX;
     this.latY = latY;
@@ -103,12 +106,17 @@ export class CoatOfArms {
     this.y = getCanvasY(this.latY, this.canvas.height * 1.16, settings);
   }
 
+  setSize(size: number) {
+    this.width = size;
+    this.height = size;
+  }
+
   draw() {
     if (!this.imageIsLoaded) {
       return;
     }
 
-    const frameY = spriteSize * this.imageSprint.index;
+    const frameY = spriteSize * this.imageSprint.index + spriteOffset * this.imageSprint.index;
 
     this.ctx.drawImage(
       this.image,

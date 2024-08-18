@@ -1,6 +1,9 @@
 import React, { useRef, useEffect, useState, memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import IconShieldCheckers from '@/components/Icons/IconShieldCheckers';
+
+import { useSettingStore } from '@/topic/Heraldry/stores/settingsStore';
+
 import { AdministrativeUnit } from '@/topic/Heraldry/types';
 import SvgMap from './SvgMap';
 import { render, onResize, setCoatOfArms, getCoatOfArmsForXandY } from './canvas/render';
@@ -15,12 +18,12 @@ import { zoomUnitInPx } from './constants';
 import './HeraldryCanvas.scss';
 
 type Props = {
-  zoomLevel?: number
   units: AdministrativeUnit[],
   setSelected: (units: AdministrativeUnit[]) => void,
 }
 
-const HeraldryCanvas = ({ zoomLevel = 2, units, setSelected }: Props) => {
+const HeraldryCanvas = ({ units, setSelected }: Props) => {
+  const zoomLevel = useSettingStore(state => state.zoomLevel);
   const [
     settings,
     // setSettings,

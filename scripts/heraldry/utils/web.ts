@@ -3,7 +3,7 @@ import { joinImages } from 'join-images';
 import sharp from 'sharp';
 import chalk from 'chalk';
 import { AdministrativeUnit } from '@/topic/Heraldry/types';
-import { numberOfImagesPerSprite } from '@/topic/Heraldry/constants'
+import { numberOfImagesPerSprite, spriteOffset } from '@/topic/Heraldry/constants'
 
 export const resizeImages = ({
   images,
@@ -81,7 +81,7 @@ export const getSprites = ({
 
   const sprites = {};
 
-  for (let i = 0; i < totalSprites; i++) {
+  for (let i = 0; i <= totalSprites; i++) {
     sprites[i] = Array(numberOfImagesPerSprite).fill('./public/images/heraldry/blank-80w.png')
   }
 
@@ -93,10 +93,11 @@ export const getSprites = ({
     }
   }
 
-  for (let i = 0; i < totalSprites; i++) {
+  for (let i = 0; i <= totalSprites; i++) {
     const spriteData = sprites[i].map((path) => path || './public/images/heraldry/blank-80w.png');
 
     joinImages(spriteData, {
+        offset: spriteOffset,
         color: { r: 0, g: 0, b: 0, alpha: 0 },
     }).then((sprite) => {
       sprite.toFile(`./public/images/heraldry/${lang}/web/sprites/${type}-${i}.webp`);

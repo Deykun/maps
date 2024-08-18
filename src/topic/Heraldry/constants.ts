@@ -11,3 +11,4 @@ export const colorsByNames: Colors = {
 
 export const numberOfImagesPerSprite = 200;
 export const spriteSize = 80;
+export const spriteOffset = 1;

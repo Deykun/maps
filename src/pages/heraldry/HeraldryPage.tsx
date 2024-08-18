@@ -8,7 +8,8 @@ import clsx from 'clsx';
 
 import HeraldryCanvas from './components/HeraldryCanvas';
 import UiRightSidebar from './components/UiRightSidebar';
-import { zoomUnitInPx, zoomMin, zoomMax } from './components/constants';
+import { useSettingStore, zoomIn, zoomOut } from '@/topic/Heraldry/stores/settingsStore';
+import { zoomUnitInPx } from './components/constants';
 
 
 // import { getFilter } from '../../topic/Heraldry/utils/getFilter';
@@ -50,7 +51,7 @@ const units = [
 
 const HeraldryPage = () => {
   const [selected, setSelected] = useState<AdministrativeUnit[]>([]);
-  const [zoomLevel, setZoomLevel] = useState(8);
+  const zoomLevel = useSettingStore(state => state.zoomLevel);
   const uiWrapperClassName = "heraldry-ui-pane";
   const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
 
@@ -63,15 +64,15 @@ const HeraldryPage = () => {
   useEffect(() => {
     const handleScroll = (event: WheelEvent) => {
       if (event.deltaY < 0) {
-        setZoomLevel((zoomLevel) => Math.min(zoomMax, zoomLevel + 1));
+        zoomIn();
       } else {
-        setZoomLevel((zoomLevel) => Math.max(zoomMin, zoomLevel - 1));
+        zoomOut();
       }
     }
 
     const handleScrollEnd = () => {
       document.getElementById('europe-marker')?.scrollIntoView({
-        behavior: 'smooth', 
+        // behavior: 'smooth', 
         block: 'nearest',
         inline: 'nearest',
       });
@@ -122,14 +123,13 @@ const HeraldryPage = () => {
         <div className={clsx('fixed top-3 left-3 z-10', uiWrapperClassName)}>
           <h1>Heraldic Map of Europe</h1>
           <p><strong className="font-bold">{units.length}</strong> coat of arms.</p>
-          <p>
+        <p>
             This page doesn’t work yet; please check <Link to="/maps/" className="font-bold">the other maps</Link>.
           </p>
         </div>
-        <HeraldryCanvas zoomLevel={zoomLevel} units={units} setSelected={setSelected} />
+        <HeraldryCanvas units={units} setSelected={setSelected} />
       </main>
       <UiRightSidebar
-        setZoomLevel={setZoomLevel}
         selected={selected}
       />
     </>
