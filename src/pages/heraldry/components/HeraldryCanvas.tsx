@@ -1,6 +1,10 @@
 import React, { useRef, useEffect, useState, memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
+
+import usePrevious from '@/hooks/usePrevious';
 import IconShieldCheckers from '@/components/Icons/IconShieldCheckers';
+
+
 
 import { useSettingStore } from '@/topic/Heraldry/stores/settingsStore';
 
@@ -13,17 +17,15 @@ import useEffectChange from '../../../hooks/useEffectChange'
 // import MapGrid from './dev/MapGrid';
 // import HeraldryCanvasAligmentTools from './dev/HeraldryCanvasAligmentTools';
 
-import { zoomUnitInPx } from './constants';
-
 import './HeraldryCanvas.scss';
 
 type Props = {
+  width: number,
   units: AdministrativeUnit[],
   setSelected: (units: AdministrativeUnit[]) => void,
 }
 
-const HeraldryCanvas = ({ units, setSelected }: Props) => {
-  const zoomLevel = useSettingStore(state => state.zoomLevel);
+const HeraldryCanvas = ({ width, units, setSelected }: Props) => {
   const [
     settings,
     // setSettings,
@@ -34,6 +36,8 @@ const HeraldryCanvas = ({ units, setSelected }: Props) => {
   });
 
   const { t } = useTranslation();
+
+  const prevWidth = usePrevious(width, width);
 
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const canvasCtxRef = useRef<CanvasRenderingContext2D | null>(null);
@@ -56,7 +60,7 @@ const HeraldryCanvas = ({ units, setSelected }: Props) => {
 
   useEffectChange(() => {
     onResize(settings);
-  }, [settings, zoomLevel]);
+  }, [settings, width]);
 
   // 
   const handleMapClick = useCallback((event: React.MouseEvent<HTMLElement>) => {
@@ -70,7 +74,6 @@ const HeraldryCanvas = ({ units, setSelected }: Props) => {
     setSelected(selectedUnits);
   }, []);
 
-  const width = Math.max(window.innerWidth, zoomUnitInPx * zoomLevel);
   const aspectRatio = `${SvgMap.aspectX} / ${SvgMap.aspectY}`
 
   return (

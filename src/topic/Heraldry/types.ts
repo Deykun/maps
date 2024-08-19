@@ -4,6 +4,7 @@ export type Colors = {
 
 export type AdministrativeUnit = {
   lang: string,
+  id: string,
   index: number,
   title: string,
   shortTitle?: string,
