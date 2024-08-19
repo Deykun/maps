@@ -635,7 +635,6 @@ export const getMarkers = ({
     'Herb Sułkowic',
     'Herb Świątnik Górnych',
     'Herb Chrzanowa',
-    'Herb Katowic',
     'Herb Zabrza',
     'Herb Staszowa',
     'Herb gminy Kostomłoty',
