@@ -3,10 +3,13 @@ import clsx from 'clsx';
 import { Link } from "wouter";
 import { useTranslation } from 'react-i18next';
 
+
 import { PATHS_DATA } from '../../constants';
 
+import IconMapMagnifyingGlass from '@/components/Icons/IconMapMagnifyingGlass';
+
 import HeraldryListItem from './components/HeraldryListItem';
-import HeraldryMapItem from './components/HeraldryMapItem';
+// import HeraldryMapItem from './components/HeraldryMapItem';
 import HeraldryMapItemFromSprite from './components/HeraldryMapItemFromSprite';
 import HeraldrySubtitle from './components/HeraldrySubtitle';
 
@@ -159,6 +162,14 @@ const Heraldry = ({
       }
     }
 
+    const toggleMapFittmentMobile = () => {
+      if (mapFitment === 'small') {
+        setMapFitment('large');
+      } else {
+        setMapFitment('small');
+      }
+    }
+
     const coatsSizeClassName = unitsForMap.length < 20
       ? 'coats-lg'
       : (unitsForMap.length < 60 ? 'coats-md' : 'coats-sm');
@@ -210,6 +221,16 @@ const Heraldry = ({
               </div>
             </div>
           </section>
+          <nav className="fixed bottom-0 left-0 w-full px-4 py-2 z-20 md:hidden bg-white border-t text-[12px] flex justify-between">
+            <span className="flex items-center gap-3">
+              <IconMapMagnifyingGlass className="size-4" />
+              {t('heraldry.mapSize')}
+              <button className="hover:text-[#ca0505]" onClick={toggleMapFittmentMobile}>
+                {t(`heraldry.mapSize.${mapFitment}`)}
+              </button>
+            </span>
+            {hasFilters && <button className="hover:text-[#ca0505]" onClick={resetFilters}>{t('heraldry.clearFilters')}</button>}
+          </nav>
           <div
             className={clsx('sticky -top-[1px] border-b', {
               "md:-mt-[50px]": mapFitment === 'large',

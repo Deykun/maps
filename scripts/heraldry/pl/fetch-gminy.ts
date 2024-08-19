@@ -16,6 +16,7 @@ const administrativeDivisions: AdministrativeUnit[] = Object.values(urls.gminyBy
 fetchData({
 	administrativeDivisions,
 	alreadyFetchedDivisions,
+	unitNames: ['gminy'],
 	path: './public/data/heraldry/pl/gminy.json',
 	lang: 'pl',
 });
