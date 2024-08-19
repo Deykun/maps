@@ -311,7 +311,7 @@ export const getMarkers = ({
       animals.push('wildcat');
     }
 
-    if (['półlwa', 'półlew', ' połulwa', '(połulew', ' połulew', '(lew ', ' lew ', ' lew.', ' lwem ', ' lwem,', ' lwa ', ' lwa,' , ' lwy ', 'lwy-', ' lwami', ' lwów '].some((animal) => text.includes(animal))) {
+    if (['półlwa', 'półlew', ' połulwa', '(połulew', ' połulew', '(lew ', ' lew ', ' lew.', ' lwem ', ' lwem,', ' lwa ', ' lew,', ' lwa,' , ' lwy ', 'lwy-', ' lwami', ' lwów '].some((animal) => text.includes(animal))) {
       if (![
         'Herb Piwnicznej-Zdroju',
         'Herb Żagania',
@@ -327,6 +327,7 @@ export const getMarkers = ({
         'Herb Żar',
         'Herb Szczecina',
         'Herb powiatu prudnickiego',
+        'Herb Gubina',
       ].includes(title)) {
         animals.push('lion');
       }
@@ -469,7 +470,7 @@ export const getMarkers = ({
     }
   }
 
-  if (['podkowa', 'podkowę', ' podkowie', 'herb powiatu brzezińskiego'].some((item) => text.includes(item))) {
+  if (['podkowa', 'podkowę', ' podkowie', 'podkową', 'herb powiatu brzezińskiego'].some((item) => text.includes(item))) {
     if (![
       'Herb Bobowej',
       'Herb Izbicy',
@@ -654,6 +655,7 @@ export const getMarkers = ({
       'Herb gminy Wąsewo',
       'Herb gminy Ochotnica Dolna',
       'Herb gminy Zbrosławice',
+      'Herb Kowar',
     ].includes(title)) {
       items.push('apple');
     }
