@@ -3,12 +3,14 @@ import { useTranslation } from 'react-i18next';
 
 import { removeDiacratics } from '@/utils/text';
 
-import IconShieldCheck from '@/components/Icons/IconShieldCheck';
+import IconTextMagnifyingGlass from '@/components/Icons/IconTextMagnifyingGlass';
 import IconShieldCheckers from '@/components/Icons/IconShieldCheckers';
 import { AdministrativeUnit } from '@/topic/Heraldry/types';
 
 import Pane from '@/components/UI/Pane';
 import ButtonCircle from '@/components/UI/ButtonCircle';
+
+import UnitsPaneItem from './UnitsPaneItem';
 
 type Props = {
   children?: React.ReactNode,
@@ -78,33 +80,20 @@ const UnitsPane = ({
             {shouldShowCount && phrase === filterPhrase && filteredUnits.length > 0 && <span className="ui-button-circle-marker">{filteredUnits.length}</span>}
         </ButtonCircle>
       </Pane>
-      {isOpen && <Pane className="absolute right-full w-[300px] top-0 mr-2">
-        <div>
-          <label>{t('heraldry.list.limitListTo')}</label>
-          {/* {' '} */}
-          <br />
+      {isOpen && <Pane className="absolute right-full w-[400px] top-0 mr-2">
+        <div className="relative">
+          <IconTextMagnifyingGlass className="size-4 absolute top-1/2 -translate-y-1/2 left-8 opacity-20" />
           <input
             value={filterPhrase}
             onChange={(e) => setFilterPhrase(e.target.value || '')}
-            className="border-[#dbd7d7] w-[140px] outline-offset-2 px-2"
+            className="w-full p-1 pl-[90px] text-[16px] font-[600] rounded-md bg-white borde"
             placeholder={t('heraldry.list.limitListToPlaceholder')}
           />
         </div>
-        <div className="max-h-[300px] overflow-auto">
+        <div className="border-t py-2 max-h-[300px] overflow-auto">
           <ul className="flex flex-col gap-3">
-            {filteredUnits.slice(0, itemsToShow).map(({ id, title, url, imageUrl, imageSrcSet }) => (
-              <li key={id} className="flex gap-2 items-center">
-                <img
-                  src={imageUrl}
-                  srcSet={imageSrcSet}
-                  className="size-10 object-contain p-1 rounded-md bg-white border"
-                  alt=""
-                  loading="lazy"
-                />
-                <a href={url} target="_blank" className="text-[14px] font-[500] tracking-wider line-clamp-1">
-                  {title}
-                </a>
-              </li>
+            {filteredUnits.slice(0, itemsToShow).map((unit) => (
+              <UnitsPaneItem key={unit.id} unit={unit} />
             ))}
           </ul>
           {filteredUnits.length > itemsToShow && <div className="mt-5 text-center">
