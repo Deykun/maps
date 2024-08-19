@@ -16,5 +16,6 @@ const administrativeDivisions: AdministrativeUnit[] = Object.values(urls.powiaty
 fetchData({
 	administrativeDivisions,
 	alreadyFetchedDivisions,
+	unitNames: ['powiaty'],
 	path: './public/data/heraldry/pl/powiaty.json',
 });

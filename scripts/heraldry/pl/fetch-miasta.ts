@@ -16,5 +16,6 @@ const administrativeDivisions: AdministrativeUnit[] = Object.values(urls.miastaB
 fetchData({
 	administrativeDivisions,
 	alreadyFetchedDivisions,
+	unitNames: ['miasta'],
 	path: './public/data/heraldry/pl/miasta.json',
 });

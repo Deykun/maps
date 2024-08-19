@@ -82,6 +82,14 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
     division.description = content.substring(0, 3000);
     division.image = summary.thumbnail;
 
+    console.log(' division.image ',  division.image );
+
+    if (!division.image) {
+      console.log(`${chalk.red(`Missing thumbnail for:`)} ${chalk.yellow(division.title)}`);
+      const infobox = await page.infobox();
+      console.log('infobox', infobox);
+    }
+
     const categories = await page.categories();
     // const images = await page.images();
 
@@ -392,9 +400,10 @@ export const fetchData = async ({
     const fetchAndProcess = async () => {
 
       const fetchedDivision = alreadyFetchedDivisions.find(
-        ({ title, place }) => title === division.title
+        ({ title, place, image }) => title === division.title
           && typeof place?.coordinates?.lat === 'number'
-          && place?.coordinates?.lat !== 0,
+          && place?.coordinates?.lat !== 0
+          && (image?.source?.length ?? 0) > 0,
       );
 
       const indexData = {
