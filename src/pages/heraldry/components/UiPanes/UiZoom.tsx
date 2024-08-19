@@ -1,7 +1,5 @@
 import { useState } from 'react';
 
-import useEffectChange from '@/hooks/useEffectChange';
-
 import {
   useSettingStore,
   zoomIn,
@@ -11,8 +9,6 @@ import {
   setCoatSize,
 } from '@/topic/Heraldry/stores/settingsStore';
 
-// setCoatSize
-
 import IconPlus from '@/components/Icons/IconPlus';
 import IconMinus from '@/components/Icons/IconMinus';
 import IconControls from '@/components/Icons/IconControls';
@@ -20,11 +16,10 @@ import IconShieldCheckers from '@/components/Icons/IconShieldCheckers';
 
 import UiButton from '../UiButton';
 
-
 const UiZoom = () => {
   const [isOpen, setIsOpen] = useState(false);
   const zoomLevel = useSettingStore(state => state.zoomLevel);
-  const coatSize = useSettingStore(state => state.coatSize);
+  // const coatSize = useSettingStore(state => state.coatSize);
   // const { t } = useTranslation();
 
   return (
@@ -47,6 +42,7 @@ const UiZoom = () => {
           <button onClick={() => setCoatSize(10)}>10px</button>
           <button onClick={() => setCoatSize(20)}>20px</button>
           <button onClick={() => setCoatSize(40)}>40px</button>
+          <button onClick={() => setCoatSize(60)}>60px</button>
           <button onClick={() => setCoatSize(80)}>80px</button>
         </div>
       </div>}

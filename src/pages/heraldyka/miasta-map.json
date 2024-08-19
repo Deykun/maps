@@ -1722,7 +1722,6 @@
                 "horse"
             ],
             "items": [
-                "apple",
                 "hammer"
             ]
         }
@@ -33499,6 +33498,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "horseshoe",
                 "cross"
             ]
         }
@@ -38414,7 +38414,9 @@
         ],
         "shortTitle": "Herb Lęborka",
         "markers": {
-            "animals": [],
+            "animals": [
+                "lion"
+            ],
             "items": [
                 "walls"
             ]
