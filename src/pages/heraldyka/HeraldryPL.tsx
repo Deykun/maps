@@ -9,7 +9,7 @@ import miastaJSON from './miasta-map.json'
 import powiatyJSON from './powiaty-map.json'
 import wojewodztwaJSON from './wojewodztwa-map.json'
 
-import Heraldry from '../../topic/Heraldry/Heraldry';
+import CountryHeraldry from '../../topic/Heraldry/components/CountryHeraldry/CountryHeraldry';
 
 const gminy = Object.values(gminyJSON);
 const miasta = Object.values(miastaJSON);
@@ -74,7 +74,7 @@ const itemsFiltersList = getFilter(allUnits, 'items');
 
 const HeraldryPL = () => {
   return (
-    <Heraldry
+    <CountryHeraldry
       lang="pl"
       allUnits={allUnits}
       typeFiltersList={typeFiltersList}

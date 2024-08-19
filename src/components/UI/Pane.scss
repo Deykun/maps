@@ -1,0 +1,9 @@
+.ui-pane {
+  @apply p-2 flex flex-col gap-2 rounded-md shadow-md;
+  
+  border: 1px solid #dbd7d7;
+  background: rgba(236, 236, 236, 0.68);
+  background: hsla(0, 0%, 97%, 0.759);
+  background: rgba(249, 249, 249, 0.732);
+  backdrop-filter: blur(10px) saturate(1.5) contrast(0.9);
+}
