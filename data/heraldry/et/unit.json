@@ -72,25 +72,6 @@
         "index": 2
     },
     {
-        "title": "Aruküla vapp",
-        "url": "https://et.wikipedia.org/wiki/Aruk%C3%BCla_vapp",
-        "type": [
-            "unit"
-        ],
-        "partOf": "Harju maakonna vapid",
-        "description": "Aruküla vapp loodi Aruküla Muinsuskaitseseltsi eestvedamisel Aruküla 700. aastapäevaks. Selle tähistamiseks 21. ja 22. juulil 1991 toimunud Aruküla päevadel kasutati Ülo Udumäe loodud sümboolikat mitmel pool lipukestel ning plakatitel. \nSiis loodud vappi on hiljem kasutatud Aruküla järgnevate aastapäevade tähistamisel. Algselt oli vapi keskele joonistatud Harjumaa ajalooline vapp (Punasel kilbil hõbedane rist), 2006. aastal seoses Aruküla 715. aastapäevaga vahetati see aga Raasiku valla vapi vastu.\n\n\n== Vaata ka ==\nAruküla 700\nAruküla",
-        "place": {
-            "name": "Aruküla",
-            "coordinates": {
-                "lat": 59.36527778,
-                "lon": 25.08
-            }
-        },
-        "lang": "et",
-        "id": "unit-3",
-        "index": 3
-    },
-    {
         "title": "Harku valla vapp",
         "url": "https://et.wikipedia.org/wiki/Harku_valla_vapp",
         "type": [
@@ -5620,5 +5601,24 @@
         "lang": "et",
         "id": "unit-158",
         "index": 158
+    },
+    {
+        "title": "Aruküla vapp",
+        "url": "https://et.wikipedia.org/wiki/Aruk%C3%BCla_vapp",
+        "type": [
+            "unit"
+        ],
+        "partOf": "Harju maakonna vapid",
+        "description": "Aruküla vapp loodi Aruküla Muinsuskaitseseltsi eestvedamisel Aruküla 700. aastapäevaks. Selle tähistamiseks 21. ja 22. juulil 1991 toimunud Aruküla päevadel kasutati Ülo Udumäe loodud sümboolikat mitmel pool lipukestel ning plakatitel. \nSiis loodud vappi on hiljem kasutatud Aruküla järgnevate aastapäevade tähistamisel. Algselt oli vapi keskele joonistatud Harjumaa ajalooline vapp (Punasel kilbil hõbedane rist), 2006. aastal seoses Aruküla 715. aastapäevaga vahetati see aga Raasiku valla vapi vastu.\n\n\n== Vaata ka ==\nAruküla 700\nAruküla",
+        "place": {
+            "name": "Aruküla",
+            "coordinates": {
+                "lat": 59.36527778,
+                "lon": 25.08
+            }
+        },
+        "lang": "et",
+        "id": "unit-3",
+        "index": 3
     }
 ]
