@@ -82,8 +82,6 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
     division.description = content.substring(0, 3000);
     division.image = summary.thumbnail;
 
-    console.log(' division.image ',  division.image );
-
     if (!division.image) {
       console.log(`${chalk.red(`Missing thumbnail for:`)} ${chalk.yellow(division.title)}`);
       const infobox = await page.infobox();

@@ -38,8 +38,6 @@ export const download = async (url: string, fileName: string, format: string, pa
   await writeFile(`./public/images/heraldry/${lang}/${path}/${fileName}.${format}`, bos);
 };
 
-const contentToSave = {};
-
 export const fetchImages = async ({
   administrativeDivisions,
   path,
@@ -51,6 +49,8 @@ export const fetchImages = async ({
   subpage?: string,
   lang?: string,
 }) => {
+  const contentToSave = {};
+
   console.log(path);
   const total = administrativeDivisions.length;
 
