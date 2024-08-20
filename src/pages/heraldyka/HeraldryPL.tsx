@@ -9,7 +9,7 @@ import miastaJSON from './miasta-map.json'
 import powiatyJSON from './powiaty-map.json'
 import wojewodztwaJSON from './wojewodztwa-map.json'
 
-import Heraldry from '../../topic/Heraldry/Heraldry';
+import CountryHeraldry from '../../topic/Heraldry/components/CountryHeraldry/CountryHeraldry';
 
 const gminy = Object.values(gminyJSON);
 const miasta = Object.values(miastaJSON);
@@ -37,6 +37,7 @@ const allUnits: AdministrativeUnit[] = Object.values([
   if ([
     'Herb Trzyńca',
     'Herb Orłowej',
+    'Herb Czeskiego Cieszyna',
   ].includes(unit.title)) {
     // Outside of Poland
     return false;
@@ -70,16 +71,16 @@ const allUnits: AdministrativeUnit[] = Object.values([
 
 const typeFiltersList = getFilter(allUnits, 'type');
 const animalFiltersList = getFilter(allUnits, 'animals');
-const itemsFiltersList = getFilter(allUnits, 'items');
+const itemFiltersList = getFilter(allUnits, 'items');
 
 const HeraldryPL = () => {
   return (
-    <Heraldry
+    <CountryHeraldry
       lang="pl"
       allUnits={allUnits}
       typeFiltersList={typeFiltersList}
       animalFiltersList={animalFiltersList}
-      itemsFiltersList={itemsFiltersList}
+      itemFiltersList={itemFiltersList}
       mapWrapperClassName="aspect-[820_/_775]"
       map={SvgMap}
     />

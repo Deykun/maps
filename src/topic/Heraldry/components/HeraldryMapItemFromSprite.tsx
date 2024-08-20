@@ -9,10 +9,12 @@ type Props = {
     left: string,
   },
   setListPhrase: (title: string) => void,
+  size: number,
 }
 
-const HeraldryMapItemFromSprite = ({ unit, setListPhrase, style }: Props) => {
+const HeraldryMapItemFromSprite = ({ unit, setListPhrase, style, size }: Props) => {
   const {
+    id,
     shortTitle,
     title,
   } = unit;
@@ -23,13 +25,18 @@ const HeraldryMapItemFromSprite = ({ unit, setListPhrase, style }: Props) => {
 
   return (
     <button
-      className="coat coat--with-sprite absolute -translate-x-1/2 -translate-y-1/2 hover:z-10 group"
+      id={`coat-${id}`}
+      className="coat coat--with-sprite absolute -translate-x-1/2 -translate-y-1/2 group"
       style={style}
       onClick={() => setListPhrase(title)}
       role="button"
       data-title={shortTitle || title}
     >
-      <span className="coat-sprite" style={{ backgroundImage: `url('${url}')`, backgroundPositionY: `-${spriteOffsetY}px` }}></span>
+      <span className="coat-sprite" style={{
+        backgroundImage: `url('${url}')`,
+        backgroundPositionY: `-${spriteOffsetY}px`,
+        transform: `scale(${(size / 7).toFixed(1)})`,
+      }}/>
     </button>
   );
 };

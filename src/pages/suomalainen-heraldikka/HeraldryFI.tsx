@@ -7,7 +7,7 @@ import kuntaJson from './kunta-map.json'
 import maakuntaJson from './maakunta-map.json'
 // import powiatyJSON from './powiaty-map.json'
 
-import Heraldry from '../../topic/Heraldry/Heraldry';
+import CountryHeraldry from '../../topic/Heraldry/components/CountryHeraldry/CountryHeraldry';
 
 const kunta = Object.values(kuntaJson);
 const maakunta = Object.values(maakuntaJson);
@@ -68,16 +68,16 @@ const allUnits: AdministrativeUnit[] = Object.values([
 
 const typeFiltersList = getFilter(allUnits, 'type');
 const animalFiltersList = getFilter(allUnits, 'animals');
-const itemsFiltersList = getFilter(allUnits, 'items');
+const itemFiltersList = getFilter(allUnits, 'items');
 
 const HeraldryFI = () => {
   return (
-    <Heraldry
+    <CountryHeraldry
       lang="fi"
       allUnits={allUnits}
       typeFiltersList={typeFiltersList}
       animalFiltersList={animalFiltersList}
-      itemsFiltersList={itemsFiltersList}
+      itemFiltersList={itemFiltersList}
       mapWrapperClassName="aspect-[361_/_734]"
       map={SvgMap}
     />

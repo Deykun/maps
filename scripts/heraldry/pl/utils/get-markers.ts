@@ -660,7 +660,7 @@ export const getMarkers = ({
     }
   }
 
-  if (['młot', 'herb górniczy', 'pyrlika', 'herb powiatu złotoryjskiego'].some((item) => text.includes(item))) {
+  if (['młot', 'herb górniczy', 'pyrlika', 'insygniach górniczych', 'herb powiatu złotoryjskiego'].some((item) => text.includes(item))) {
     if (![
       ...oldAxePickFilter,
       'Herb Skarżyska-Kamiennej',
@@ -1198,6 +1198,7 @@ export const getMarkers = ({
       'Herb powiatu obornickiego',
       'Herb powiatu wągrowieckiego',
       'Herb powiatu myśliborskiego',
+      'Herb gminy Baranowo',
     ].includes(title)) {
       items.push('crown');
     }

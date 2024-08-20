@@ -1,4 +1,5 @@
 export const PATHS_DATA: {
+  type?: string,
   pathNameLink: string,
   path: string,
   title: string,
@@ -6,16 +7,18 @@ export const PATHS_DATA: {
   lang: string,
 }[] = [
   {
-    pathNameLink: 'heraldry.et.mapTitle',
+    type: 'heraldryCountry',
+    pathNameLink: 'heraldry.ee.mapTitle',
     path: 'eesti-heraldika',
     title: '🛡️ Praegused ja endised Eesti vappide kujundid',
     social: `  
       <meta property="og:title" content="🛡️ Praegused ja endised Eesti vappide kujundid" />
       <meta property="og:image" content="https://deykun.github.io/maps/social/praegused-ja-endised-eesti-vappide-kujundid.png" />
     `,
-    lang: 'et',
+    lang: 'ee',
   },
   {
+    type: 'heraldryCountry',
     pathNameLink: 'heraldry.fi.mapTitle',
     path: 'suomalainen-heraldikka',
     title: '🛡️ Suomen vaakunat - Heraldikka, kartta | Suomi',
@@ -26,6 +29,7 @@ export const PATHS_DATA: {
     lang: 'fi',
   },
   {
+    type: 'heraldryCountry',
     pathNameLink: 'heraldry.pl.mapTitle',
     path: 'heraldyka',
     title: '🛡️ Herby polskich miast, powiatów i gmin - Heraldyka, mapa | Polska',
@@ -44,3 +48,5 @@ export const PATHS_DATA: {
     lang: 'en',
   },
 ] as const;
+
+export const HERALDRY_COUNTRIES = PATHS_DATA.filter(({ type }) => type === 'heraldryCountry');
