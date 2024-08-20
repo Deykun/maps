@@ -264,14 +264,15 @@ const FiltersPane = ({
           onClick={() => setFilterOperator(filterOperator === 'and' ? 'or' : 'and')}
           title={`${t('heraldry.filterOperator')} ${t(`heraldry.filterOperator.${filterOperator}`)}`}
         >
-          {filterOperator === 'and' ? <IconCubeAnd /> : <IconCubeOr />}
+          {/* Pointer events are set to 'none' because the icon changes, and sometimes a removed node is mistakenly treated as a click outside. */}
+          {filterOperator === 'and' ? <IconCubeAnd className="pointer-events-none" /> : <IconCubeOr className="pointer-events-none" />}
         </ButtonCircle>
         <ButtonCircle
           wrapperClassName="ml-auto"
           onClick={() => setShouldReverseFilters(!shouldReverseFilters)}
           title={`${t('heraldry.filterReverse')} ${t(`heraldry.filterReverse.${shouldReverseFilters ? 'yes' : 'no'}`)}`}
         >
-          {shouldReverseFilters?  <IconEyeCrossed /> : <IconEye />}
+          {shouldReverseFilters?  <IconEyeCrossed className="pointer-events-none"  /> : <IconEye className="pointer-events-none" />}
         </ButtonCircle>
       </SubPane>}
     </div>
