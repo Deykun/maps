@@ -145,8 +145,19 @@ const itemsRules: MarkerParams[] = [{
   name: 'shell',
   phrases: ['simpukat'],
 }, {
-  name: 'axe',
-  phrases: ['kirvestä', 'kirves'],
+  name: 'lily',
+  phrases: ['lilja'],
+}, {
+  name: 'rose',
+  phrases: ['ruusut'],
+}, {
+  name: 'flower',
+  phrases: ['kukka', 'perunankukka', 'lumpeenkukka', 'valkovuokkojen', 'kissankellot'],
+  exclude: ['Sotkamon vaakuna', 'Iisalmen vaakuna', 'Kouvolan vaakuna', 'Salon vaakuna']
+}, {
+  name: 'axeSaw',
+  phrases: ['kirvestä', 'kirves', 'saha', 'justeerisaha'],
+  exclude: ['Lieksan vaakuna', 'Keski-Pohjanmaan vaakuna', 'Satakunnan vaakuna', 'Nousiaisten vaakuna', 'Uudenmaan vaakuna', 'Ahvenanmaan vaakuna'],
 }, {
   name: 'walls',
   phrases: ['muuri', 'tornia', 'linna', 'kivisilta', 'silta', 'linnoitukseen', 'linnoitus', 'harjamuuri', 'tornilla', 'kirkontorni'],

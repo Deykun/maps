@@ -645,7 +645,7 @@ export const getMarkers = ({
     if (![
       ...oldAxePickFilter,
     ].includes(title)) {
-      items.push('axe');
+      items.push('axeSaw');
     }
   }
 

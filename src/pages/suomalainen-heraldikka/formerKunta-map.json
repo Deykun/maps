@@ -1146,7 +1146,9 @@
             "animals": [],
             "items": [
                 "tree",
-                "walls"
+                "lily",
+                "walls",
+                "flower"
             ]
         }
     },
@@ -1207,7 +1209,7 @@
                 "beaver"
             ],
             "items": [
-                "axe"
+                "axeSaw"
             ]
         }
     },
@@ -1331,7 +1333,9 @@
             "animals": [
                 "fish"
             ],
-            "items": []
+            "items": [
+                "axeSaw"
+            ]
         }
     },
     "haukivuoren-vaakuna": {
@@ -2892,7 +2896,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "axe"
+                "axeSaw"
             ]
         }
     },
@@ -3924,7 +3928,9 @@
         "shortTitle": "Kesälahden vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "flower"
+            ]
         }
     },
     "kiihtelysvaaran-vaakuna": {
@@ -4435,7 +4441,10 @@
         "shortTitle": "Koivulahden vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "lily",
+                "flower"
+            ]
         }
     },
     "korpilahden-vaakuna": {
@@ -5359,7 +5368,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "axe"
+                "axeSaw"
             ]
         }
     },
@@ -5531,7 +5540,9 @@
         "shortTitle": "Lammin vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "flower"
+            ]
         }
     },
     "lapin-kunnanvaakuna": {
@@ -6050,7 +6061,10 @@
         "shortTitle": "Liljendalin vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "lily",
+                "flower"
+            ]
         }
     },
     "lohtajan-vaakuna": {
@@ -6350,7 +6364,9 @@
         "shortTitle": "Längelmäen vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "flower"
+            ]
         }
     },
     "maarian-vaakuna": {
@@ -6466,7 +6482,9 @@
         "shortTitle": "Luopioisten vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "flower"
+            ]
         }
     },
     "maaningan-vaakuna": {
@@ -7044,7 +7062,9 @@
         "markers": {
             "animals": [],
             "items": [
-                "walls"
+                "lily",
+                "walls",
+                "flower"
             ]
         }
     },
@@ -7966,7 +7986,9 @@
         "shortTitle": "Paavolan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "axeSaw"
+            ]
         }
     },
     "paraisten-maalaiskunnan-vaakuna": {
@@ -8587,7 +8609,10 @@
         "shortTitle": "Petolahden vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "flower",
+                "axeSaw"
+            ]
         }
     },
     "pielisjarven-vaakuna": {
@@ -9051,7 +9076,10 @@
         "shortTitle": "Pohjan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "lily",
+                "flower"
+            ]
         }
     },
     "pulkkilan-vaakuna": {
@@ -10208,7 +10236,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "tree"
+                "tree",
+                "axeSaw"
             ]
         }
     },
@@ -10382,7 +10411,9 @@
         "shortTitle": "Sahalahden vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "axeSaw"
+            ]
         }
     },
     "sammatin-vaakuna": {
@@ -10905,7 +10936,10 @@
         "shortTitle": "Somerniemen vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "rose",
+                "flower"
+            ]
         }
     },
     "sulvan-vaakuna": {
@@ -11076,7 +11110,9 @@
         "shortTitle": "Suodenniemen vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "axeSaw"
+            ]
         }
     },
     "suomenniemen-vaakuna": {
@@ -12580,7 +12616,10 @@
         "shortTitle": "Uskelan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "lily",
+                "flower"
+            ]
         }
     },
     "uudenkaarlepyyn-maalaiskunnan-vaakuna": {
@@ -14593,7 +14632,9 @@
         "shortTitle": "Ähtävän vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "flower"
+            ]
         }
     }
 }

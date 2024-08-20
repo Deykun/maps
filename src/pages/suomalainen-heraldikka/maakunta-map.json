@@ -171,7 +171,10 @@
             "animals": [
                 "lynx"
             ],
-            "items": []
+            "items": [
+                "rose",
+                "flower"
+            ]
         }
     },
     "itauudenmaan-vaakuna": {
@@ -401,8 +404,7 @@
                 "goat"
             ],
             "items": [
-                "crown",
-                "axe"
+                "crown"
             ]
         }
     },
@@ -462,7 +464,10 @@
             "animals": [
                 "lynx"
             ],
-            "items": []
+            "items": [
+                "rose",
+                "flower"
+            ]
         }
     },
     "kymenlaakson-vaakuna": {
@@ -641,8 +646,7 @@
                 "weasel"
             ],
             "items": [
-                "crown",
-                "axe"
+                "crown"
             ]
         }
     },
@@ -1287,8 +1291,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "boat",
-                "axe"
+                "boat"
             ]
         }
     },
@@ -1352,7 +1355,9 @@
         "markers": {
             "animals": [],
             "items": [
-                "crown"
+                "crown",
+                "lily",
+                "flower"
             ]
         }
     },
@@ -1418,8 +1423,7 @@
                 "bear"
             ],
             "items": [
-                "crown",
-                "axe"
+                "crown"
             ]
         }
     }

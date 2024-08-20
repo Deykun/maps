@@ -53,7 +53,9 @@
         "shortTitle": "Asikkalan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "flower"
+            ]
         }
     },
     "askolan-vaakuna": {
@@ -110,7 +112,10 @@
         "shortTitle": "Askolan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "rose",
+                "flower"
+            ]
         }
     },
     "alavieskan-vaakuna": {
@@ -2737,7 +2742,9 @@
         "markers": {
             "animals": [],
             "items": [
-                "arrow"
+                "arrow",
+                "rose",
+                "flower"
             ]
         }
     },
@@ -4821,7 +4828,9 @@
                 "squirrel"
             ],
             "items": [
-                "tree"
+                "tree",
+                "rose",
+                "flower"
             ]
         }
     },
@@ -5402,7 +5411,9 @@
         "shortTitle": "Kihniön vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "axeSaw"
+            ]
         }
     },
     "kirkkonummen-vaakuna": {
@@ -6202,7 +6213,10 @@
         "shortTitle": "Kouvolan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "lily",
+                "flower"
+            ]
         }
     },
     "kristiinankaupungin-vaakuna": {
@@ -7672,7 +7686,9 @@
         "shortTitle": "Lemin vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "flower"
+            ]
         }
     },
     "lempaalan-vaakuna": {
@@ -7948,8 +7964,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "arrow",
-                "axe"
+                "arrow"
             ]
         }
     },
@@ -9933,9 +9948,7 @@
         "shortTitle": "Nousiaisten vaakuna",
         "markers": {
             "animals": [],
-            "items": [
-                "axe"
-            ]
+            "items": []
         }
     },
     "nurmeksen-vaakuna": {
@@ -11618,7 +11631,9 @@
         "shortTitle": "Pomarkun vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "axeSaw"
+            ]
         }
     },
     "porvoon-vaakuna": {
@@ -12403,7 +12418,9 @@
         "shortTitle": "Pälkäneen vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "flower"
+            ]
         }
     },
     "poytyan-vaakuna": {
@@ -12582,6 +12599,7 @@
             "animals": [],
             "items": [
                 "crown",
+                "flower",
                 "walls"
             ]
         }
@@ -12808,7 +12826,9 @@
         "shortTitle": "Ranuan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "axeSaw"
+            ]
         }
     },
     "rautavaaran-vaakuna": {
@@ -12866,7 +12886,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "axe"
+                "axeSaw"
             ]
         }
     },
@@ -13561,7 +13581,9 @@
         "shortTitle": "Saarijärven vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "axeSaw"
+            ]
         }
     },
     "salon-vaakuna": {
@@ -13620,7 +13642,9 @@
             "animals": [],
             "items": [
                 "tree",
-                "walls"
+                "lily",
+                "walls",
+                "flower"
             ]
         }
     },
@@ -13735,7 +13759,10 @@
         "shortTitle": "Saltvikin vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "lily",
+                "flower"
+            ]
         }
     },
     "savitaipaleen-vaakuna": {
@@ -14190,7 +14217,8 @@
                 "fish"
             ],
             "items": [
-                "tree"
+                "tree",
+                "axeSaw"
             ]
         }
     },
@@ -15194,7 +15222,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "tree"
+                "tree",
+                "axeSaw"
             ]
         }
     },
@@ -15485,7 +15514,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "axe"
+                "axeSaw"
             ]
         }
     },
@@ -15658,7 +15687,9 @@
         "markers": {
             "animals": [],
             "items": [
-                "crown"
+                "crown",
+                "lily",
+                "flower"
             ]
         }
     },
@@ -17813,7 +17844,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "arrow"
+                "arrow",
+                "flower"
             ]
         }
     }
