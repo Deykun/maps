@@ -59,7 +59,7 @@ const itemFiltersList = getFilter(allUnits, 'items');
 const HeraldryPL = () => {
   return (
     <CountryHeraldry
-      lang="et"
+      lang="ee"
       allUnits={allUnits}
       typeFiltersList={typeFiltersList}
       animalFiltersList={animalFiltersList}

@@ -6,11 +6,11 @@ import formerUnitJSON from '@/pages/eesti-heraldika/formerUnit-map.json';
 getSprites({
   mapJSON: unitJSON,
   type: 'unit',
-  lang: 'et',
+  lang: 'ee',
 });
 
 getSprites({
   mapJSON: formerUnitJSON,
   type: 'formerUnit',
-  lang: 'et',
+  lang: 'ee',
 });

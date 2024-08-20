@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import clsx from 'clsx';
 
@@ -76,7 +76,6 @@ const FiltersPane = ({
   shouldReverseFilters,
   setShouldReverseFilters,
 }: Props) => {
-  const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
   const [activeMenu, setActiveMenu] = useState('');
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
@@ -120,7 +119,7 @@ const FiltersPane = ({
   const activeTotal = typeFilters.length + colorFilters.length + animalFilters.length + itemFilters.length; 
 
   return (
-    <div className="relative pointer-events-auto" ref={wrapperRef} id="filters-pane">
+    <div className="relative pointer-events-auto" id="filters-pane">
       <Pane>
         <ButtonCircle onClick={() => setIsOpen(!isOpen)} title={t('heraldry.titleFilters')}>
           <IconMapMagnifyingGlass />

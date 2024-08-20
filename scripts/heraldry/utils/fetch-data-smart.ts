@@ -91,7 +91,7 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
     const categories = await page.categories();
     // const images = await page.images();
 
-    if (lang === 'et') {
+    if (lang === 'ee') {
       const name = division.title.replace(' valla vapp', '').replace(' vapp', '');
 
       if (name) {

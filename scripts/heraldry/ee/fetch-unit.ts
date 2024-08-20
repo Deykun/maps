@@ -3,8 +3,8 @@ import { AdministrativeUnit } from '../../../src/topic/Heraldry/types';
 
 import { fetchData } from '../utils/fetch-data-smart';
 
-import alreadyFetchedJSON from '../../../public/data/heraldry/et/unit.json';
-import alreadyFetchedFormerJSON from '../../../public/data/heraldry/et/formerUnit.json';
+import alreadyFetchedJSON from '../../../public/data/heraldry/ee/unit.json';
+import alreadyFetchedFormerJSON from '../../../public/data/heraldry/ee/formerUnit.json';
 
 const alreadyFetchedDivisions = alreadyFetchedJSON as AdministrativeUnit[];
 const alreadyFetchedFormerDivisions = alreadyFetchedFormerJSON as AdministrativeUnit[];
@@ -18,9 +18,9 @@ const administrativeDivisions: AdministrativeUnit[] = Object.values(urls.unitByS
 fetchData({
 	administrativeDivisions: administrativeDivisions,
 	alreadyFetchedDivisions: alreadyFetchedDivisions,
-	path: './public/data/heraldry/et/unit.json',
+	path: './public/data/heraldry/ee/unit.json',
 	unitNames: ['unit'],
-	lang: 'et',
+	lang: 'ee',
 });
 
 const formerAdministrativeDivisions: AdministrativeUnit[] = Object.values(urls.historicUnitBySource).flatMap(
@@ -32,7 +32,7 @@ const formerAdministrativeDivisions: AdministrativeUnit[] = Object.values(urls.h
 fetchData({
 	administrativeDivisions: formerAdministrativeDivisions,
 	alreadyFetchedDivisions: alreadyFetchedFormerDivisions,
-	path: './public/data/heraldry/et/formerUnit.json',
+	path: './public/data/heraldry/ee/formerUnit.json',
 	unitNames: ['formerUnit'],
-	lang: 'et',
+	lang: 'ee',
 });

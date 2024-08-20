@@ -47,7 +47,7 @@ export const removeDiacratics = (word: string, lang?: string, special = '') => {
             .replaceAll('ñ', `${special}n`);
     }
 
-    if (!lang || lang === 'et') {
+    if (!lang || lang === 'ee') {
         textToReturn = textToReturn
             .replaceAll('ä', `${special}a`)
             .replaceAll('õ', `${special}o`)

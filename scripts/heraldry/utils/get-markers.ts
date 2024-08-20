@@ -1,4 +1,4 @@
-import { getMarkers as getMarkersET } from '../et/utils/get-markers';
+import { getMarkers as getMarkersET } from '../ee/utils/get-markers';
 import { getMarkers as getMarkersFI } from '../fi/utils/get-markers';
 import { getMarkers as getMarkersPL } from '../pl/utils/get-markers';
 
@@ -16,7 +16,7 @@ export const getMarkers = ({
 
   const text = rawText.toLowerCase() || '';
 
-  if (lang === 'et') {
+  if (lang === 'ee') {
     const response = getMarkersET({ text: rawText, title })
 
     animals = response.animals;
