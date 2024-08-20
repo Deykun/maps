@@ -66,17 +66,33 @@ export const getSprites = ({
   type,
   lang,
 }) => {
-  const imagesByIndex = Object.values(mapJSON).reduce((stack: ImagesByIndex, { index, imagesList }: AdministrativeUnit) => {
+  const {
+    imagesByIndex,
+    maxIndex,
+  } = Object.values(mapJSON).reduce((stack: {
+    imagesByIndex: ImagesByIndex,
+    maxIndex: number,
+  }, { index, imagesList }: AdministrativeUnit) => {
     const imagePath = imagesList.find(({ width }) => width === '80w')?.path;
-  
+
     if (imagePath) {
-      stack[index] = `./public/${imagePath}`;
+      stack.imagesByIndex[index] = `./public/${imagePath}`;
+    }
+
+    if (index > stack.maxIndex) {
+      stack.maxIndex = index;
     }
   
     return stack;
-  }, {}) as ImagesByIndex;
+  }, {
+    imagesByIndex: {},
+    maxIndex: 0,
+  }) as {
+    imagesByIndex: ImagesByIndex,
+    maxIndex: number,
+  };
 
-  const total = Object.keys(imagesByIndex).length;
+  const total = maxIndex;
   const totalSprites = Math.max(total / numberOfImagesPerSprite);
 
   const sprites = {};
