@@ -32,10 +32,10 @@ const NavigationPane = () => {
   return (
     <div className="relative" id="navigation-pane">
       <Pane>
-        <ButtonCircle onClick={toggleMenu('country')} isActive={activeMenu === 'country'} title={t('dd')}>
+        <ButtonCircle onClick={toggleMenu('country')} isActive={activeMenu === 'country'} title={t('main.country')}>
           <IconGlobe />
         </ButtonCircle>
-        <ButtonCircle onClick={toggleMenu('language')} isActive={activeMenu === 'language'} title={t('dd')}>
+        <ButtonCircle onClick={toggleMenu('language')} isActive={activeMenu === 'language'} title={t('main.language')}>
           <IconTranslation />
         </ButtonCircle>
         <ButtonCircle href="https://github.com/Deykun/maps" title="Page repository" target="_blank">

@@ -151,7 +151,7 @@ const CountryHeraldry = ({
             </div>
           </section>
           {
-            zoomLevel === 1 &&
+            (zoomLevel === 1 || subtitleParts.length === 0) &&
             <div className="fixed top-3 left-3 z-20 flex flex-col gap-3 pointer-events-none">
               <NavigationPane />
             </div>

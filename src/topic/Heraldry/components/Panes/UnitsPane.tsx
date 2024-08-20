@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import clsx from 'clsx';
 
 import { removeDiacratics } from '@/utils/text';
 
@@ -109,11 +110,13 @@ const UnitsPane = ({
               <UnitsPaneItem key={unit.id} className="snap-end" unit={unit} />
             ))}
           </ul>
-          {filteredUnits.length > itemsToShow && <div className="mt-5 text-center">
+          <div className={clsx("mt-5 text-center", {
+            'hidden': filteredUnits.length <= itemsToShow,
+          })}>
             <button className="snap-center" onClick={() => setFilterPage(filterPage + 1)}>
               {t('heraldry.list.showMore')}
             </button>
-          </div>}
+          </div>
         </div>
         <p className="sans tracking-wider text-right rounded-b-[4px] p-2 text-white bg-[#000000ba] hover:bg-[#000000cb] duration-300">
           <small className="block text-[10px]">

@@ -162,6 +162,9 @@ const itemsRules: MarkerParams[] = [{
   name: 'walls',
   phrases: ['muuri', 'tornia', 'linna', 'kivisilta', 'silta', 'linnoitukseen', 'linnoitus', 'harjamuuri', 'tornilla', 'kirkontorni'],
   exclude: ['Keski-Pohjanmaan vaakuna', 'Mustasaaren vaakuna', 'Kurikan vaakuna', 'Karvian vaakuna', 'Teiskon vaakuna', 'Ristiinan vaakuna', 'Parikkalan vaakuna', 'Kanta-Hämeen vaakuna', 'Hämeen vaakuna', 'Tl. Kosken vaakuna', 'Porvoon vaakuna', 'Askolan vaakuna', 'Eurajoen vaakuna', 'Luvian vaakuna']
+}, {
+  name: 'arm',
+  include: ['Etelä-Karjalan vaakuna', 'Pohjois-Karjalan vaakuna', 'Karjalan historiallisen maakunnan vaakuna', 'Nuijamaan vaakuna', 'Karunan vaakuna', 'Anjalan vaakuna'],
 }];
 
 export const getMarkers = ({
