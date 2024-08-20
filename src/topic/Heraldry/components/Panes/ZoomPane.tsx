@@ -53,14 +53,14 @@ const ZoomPane = ({
         </ButtonCircle>
       </Pane>
       {isOpen && <SubPane order={2} className="absolute top-0 right-12 z-[100] mr-3 flex-row items-center">
-        <ButtonCircle onClick={() => setCoatSize(coatSize + 1)} isDisabled={coatSize === coatMax}>
-          <IconPlus />
+        <ButtonCircle onClick={() => setCoatSize(coatSize - 1)} isDisabled={coatSize === coatMin}>
+          <IconMinus />
         </ButtonCircle>
         <span style={{ transform: `scale(${((coatSize + 5) / (zoomMax + 5)).toFixed(1)})`}}>
           <IconShieldCheckers className="size-5" />
         </span>
-        <ButtonCircle onClick={() => setCoatSize(coatSize - 1)} isDisabled={coatSize === coatMin}>
-          <IconMinus />
+        <ButtonCircle onClick={() => setCoatSize(coatSize + 1)} isDisabled={coatSize === coatMax}>
+          <IconPlus />
         </ButtonCircle>
       </SubPane>}
     </div>

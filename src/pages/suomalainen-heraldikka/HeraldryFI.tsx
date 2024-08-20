@@ -17,8 +17,6 @@ const allUnits: AdministrativeUnit[] = Object.values([
   ...formerKunta,
   ...kunta,
   ...maakunta,
-  // ...powiaty,
-  // ...miasta,
 ].filter((unit: AdministrativeUnit) => {
   // if ([
   //    'empty'
@@ -27,12 +25,12 @@ const allUnits: AdministrativeUnit[] = Object.values([
   //   return false;
   // };
 
-  // if ([
-  //    'empty'
-  // ].includes(unit.title)) {
-  //   // Outside of country
-  //   return false;
-  // }
+  if ([
+     'Viipurin vaakuna'
+  ].includes(unit.title)) {
+    // Outside of country
+    return false;
+  }
 
   return true;
 }).reduce((stack: {

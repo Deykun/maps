@@ -29,8 +29,8 @@
     "fetch:fi:maakunta-map": "tsx scripts/heraldry/fi/fetch-coats-of-maakunta.ts",
     "resize:fi:coats": "tsx scripts/heraldry/fi/resize-images.ts",
     "web:fi": "tsx scripts/heraldry/fi/web-images.ts",
-    "index:fi": "nodemon --watch scripts/heraldry/fi/utils/get-markers.ts --exec npm run fetch:fi:map-kunta",
-    "index:fi:2": "nodemon --watch scripts/heraldry/fi/utils/get-markers.ts --exec npm run fetch:fi:map-maakunta",
+    "index:fi": "nodemon --watch scripts/heraldry/fi/utils/get-markers.ts --exec npm run fetch:fi:kunta-map",
+    "index:fi:2": "nodemon --watch scripts/heraldry/fi/utils/get-markers.ts --exec npm run fetch:fi:maakunta-map",
     "preview": "vite preview",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix"

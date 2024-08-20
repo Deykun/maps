@@ -621,7 +621,9 @@
             "animals": [
                 "fish"
             ],
-            "items": []
+            "items": [
+                "walls"
+            ]
         }
     },
     "anjalankosken-vaakuna": {
@@ -1143,7 +1145,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "tree"
+                "tree",
+                "walls"
             ]
         }
     },
@@ -1203,7 +1206,9 @@
             "animals": [
                 "beaver"
             ],
-            "items": []
+            "items": [
+                "axe"
+            ]
         }
     },
     "hauhon-vaakuna": {
@@ -2710,7 +2715,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "tree"
+                "tree",
+                "walls"
             ]
         }
     },
@@ -2769,7 +2775,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "boat"
+                "boat",
+                "walls"
             ]
         }
     },
@@ -2884,7 +2891,9 @@
         "shortTitle": "Kalvolan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "axe"
+            ]
         }
     },
     "kangaslammin-vaakuna": {
@@ -3104,7 +3113,9 @@
         "shortTitle": "Karjaan maalaiskunnan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "walls"
+            ]
         }
     },
     "karjaan-vaakuna": {
@@ -3161,7 +3172,9 @@
         "shortTitle": "Karjaan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "walls"
+            ]
         }
     },
     "karkun-vaakuna": {
@@ -3632,7 +3645,9 @@
         "shortTitle": "Keikyän vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "walls"
+            ]
         }
     },
     "kemijarven-maalaiskunnan-vaakuna": {
@@ -5343,7 +5358,9 @@
         "shortTitle": "Köyliön vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "axe"
+            ]
         }
     },
     "kalvian-vaakuna": {
@@ -7026,7 +7043,9 @@
         "shortTitle": "Muurlan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "walls"
+            ]
         }
     },
     "naantalin-maalaiskunnan-vaakuna": {
@@ -8004,7 +8023,10 @@
         "shortTitle": "Paraisten maalaiskunnan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "shell",
+                "walls"
+            ]
         }
     },
     "paattisten-vaakuna": {
@@ -10819,7 +10841,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "tree"
+                "tree",
+                "walls"
             ]
         }
     },
@@ -11517,7 +11540,9 @@
             "animals": [
                 "ram"
             ],
-            "items": []
+            "items": [
+                "walls"
+            ]
         }
     },
     "saaksmaen-vaakuna": {
@@ -12910,7 +12935,9 @@
         "shortTitle": "Vammalan vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "walls"
+            ]
         }
     },
     "valkealan-vaakuna": {
@@ -13299,7 +13326,8 @@
         "markers": {
             "animals": [],
             "items": [
-                "crown"
+                "crown",
+                "walls"
             ]
         }
     },
@@ -13527,7 +13555,9 @@
         "shortTitle": "Virtasalmen vaakuna",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "walls"
+            ]
         }
     },
     "vilppulan-vaakuna": {
