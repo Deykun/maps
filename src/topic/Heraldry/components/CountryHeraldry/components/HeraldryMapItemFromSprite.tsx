@@ -9,9 +9,10 @@ type Props = {
     left: string,
   },
   setListPhrase: (title: string) => void,
+  size: number,
 }
 
-const HeraldryMapItemFromSprite = ({ unit, setListPhrase, style }: Props) => {
+const HeraldryMapItemFromSprite = ({ unit, setListPhrase, style, size }: Props) => {
   const {
     shortTitle,
     title,
@@ -29,7 +30,11 @@ const HeraldryMapItemFromSprite = ({ unit, setListPhrase, style }: Props) => {
       role="button"
       data-title={shortTitle || title}
     >
-      <span className="coat-sprite" style={{ backgroundImage: `url('${url}')`, backgroundPositionY: `-${spriteOffsetY}px` }}></span>
+      <span className="coat-sprite" style={{
+        backgroundImage: `url('${url}')`,
+        backgroundPositionY: `-${spriteOffsetY}px`,
+        transform: `scale(${(size / 7).toFixed(1)})`,
+      }}/>
     </button>
   );
 };

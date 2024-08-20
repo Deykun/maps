@@ -97,6 +97,7 @@
     transition: 0.3s cubic-bezier(0.68, 0, 0.265, 1.30);
     margin-left: -40px;
     margin-top: -40px;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
   }
 
   &:hover {
@@ -104,13 +105,13 @@
       height: 100px;
       width: 100px;
       max-height: 100px;
-      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
     }
 
     .coat-sprite {
       height: 80px;
       width: 80px;
-      transform: scale(1);
+      transform: scale(1) !important;
       filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
     }
 

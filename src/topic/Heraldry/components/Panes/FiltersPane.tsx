@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import clsx from 'clsx';
 
 // import IconPlus from
 
 import IconMapMagnifyingGlass from '@/components/Icons/IconMapMagnifyingGlass';
-import IconFlag from '@/components/Icons/IconFlag';
+import IconBuilding from '@/components/Icons/IconBuilding';
 import IconColor from '@/components/Icons/IconColor';
 import IconColorAlt from '@/components/Icons/IconColorAlt';
 import IconAnimal from '@/components/Icons/IconAnimal';
@@ -52,7 +53,7 @@ const FiltersPane = ({
         {isOpen && <>
           <span className="border-t" />
           <ButtonCircle onClick={toggleMenu('type')} isActive={activeMenu === 'type'}>
-            <IconFlag />
+            <IconBuilding />
           </ButtonCircle>
           <ButtonCircle onClick={toggleMenu('color')} isActive={activeMenu === 'color'}>
             <IconColor />
@@ -78,10 +79,11 @@ const FiltersPane = ({
           { name: 'green', classNameIcon: '!fill-[#299649]' },
           { name: 'blue', classNameIcon: '!fill-[#1d7dc0]' },
         ].map(({ name, classNameIcon }) => <ButtonCircle onClick={() => toggleColor(name)}>
-          {colorFilters.includes(name)
-            ? <IconColorAlt className={classNameIcon} />
-            : <IconColor className={classNameIcon} />
-          }
+          <IconColor
+            className={clsx(classNameIcon, 'duration-300', {
+              'opacity-30': !colorFilters.includes(name)
+            })}
+          />
         </ButtonCircle>)}
       </SubPane>}
       {/* {isOpen && <div className="heraldry-ui-pane absolute right-full max-h-[300px] w-[300px] overflow-auto top-0 mr-2">

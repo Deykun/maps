@@ -59,6 +59,7 @@ const CountryHeraldry = ({
     const [filterOperator, setFilterOperator] = useState<'and' | 'or'>('and');
     const [shouldReverseFilters, setShouldReverseFilters] = useState(false);
     const [zoomLevel, setZoomLevel] = useState(1);
+    const [coatSize, setCoatSize] = useState(3);
     const [typeFilters, setTypeFilters] = useState<string[]>([]);
     const [colorFilters, setColorFilters] = useState<string[]>([]);
     const [animalFilters, setAnimalFilters] = useState<string[]>([]);
@@ -150,14 +151,6 @@ const CountryHeraldry = ({
       setItemFilters([]);
     }
 
-    const zoomIn = () => {
-      setZoomLevel((value) => value + 1);
-    }
-
-    const zoomOut = () => {
-      setZoomLevel((value) => Math.max(1, value - 1));
-    }
-
     const coatsSizeClassName = unitsForMap.length < 20
       ? 'coats-lg'
       : (unitsForMap.length < 60 ? 'coats-md' : 'coats-sm');
@@ -176,7 +169,7 @@ const CountryHeraldry = ({
             {...events}
           >
             <header className={clsx('', {
-              'mb-10': zoomLevel === 1,
+              'mb-10 min-h-[100px]': zoomLevel === 1,
               'ui-pane fixed top-[60px] md:top-3 left-3 z-30': zoomLevel > 1,
             })}>
               <h1 className="text-[18px] md:text-[24px] text-center">
@@ -200,6 +193,7 @@ const CountryHeraldry = ({
                           unit={unit}
                           setListPhrase={setListPhrase}
                           style={getPostionForPlace(unit, lang)}
+                          size={coatSize}
                         />
                     ))}
                 </div>
@@ -227,11 +221,14 @@ const CountryHeraldry = ({
           </section>
           <div className="fixed top-3 right-3 z-20 flex flex-col gap-3 pointer-events-none">
             <ZoomPane
-              zoomIn={zoomIn}
-              zoomOut={zoomOut}
               zoomLevel={zoomLevel}
+              setZoomLevel={setZoomLevel}
               zoomMin={1}
               zoomMax={6}
+              coatSize={coatSize}
+              setCoatSize={setCoatSize}
+              coatMin={1}
+              coatMax={7}
             />
             <UnitsPane
               units={units}
