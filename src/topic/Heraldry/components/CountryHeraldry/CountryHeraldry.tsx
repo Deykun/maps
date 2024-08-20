@@ -1,6 +1,5 @@
 import { memo, useRef, useState, useMemo, useEffect } from 'react';
 import clsx from 'clsx';
-import { Link } from "wouter";
 import { useTranslation } from 'react-i18next';
 import { useDraggable } from "react-use-draggable-scroll";
 
@@ -86,7 +85,7 @@ const CountryHeraldry = ({
             ref={wrapperRef}
             className={clsx(
               "map-section fixed top-0 left-0 w-full h-full",
-              "p-5 py-[100px]",
+              "p-5 pt-[100px]",
               "no-scrollbar overflow-auto", {
                 "flex flex-col justify-evenly": zoomLevel === 1,
               }
@@ -94,15 +93,19 @@ const CountryHeraldry = ({
             {...events}
           >
             <header className={clsx('', {
-              'mb-10 min-h-[100px]': zoomLevel === 1,
-              'ui-pane fixed top-3 left-3 z-30': zoomLevel > 1,
+              'md:mb-10 min-h-[100px]': zoomLevel === 1,
+              'ui-pane fixed top-3 left-3 z-30 px-4 empty:hidden': zoomLevel > 1,
             })}>
-              <h1 className="text-[18px] md:text-[24px] lg:text-[36px] text-center">
-                {t(`heraldry.${lang}.mapTitle`)}
-              </h1>
+              {zoomLevel === 1 && 
+                <h1 className={clsx('text-[28px] lg:text-[36px] text-center', { 
+                  'hidden': zoomLevel > 1,
+                })}>
+                  {t(`heraldry.${lang}.mapTitle`)}
+                </h1>
+              }
               {
                 (zoomLevel === 1 || subtitleParts.length > 0) &&
-                <HeraldrySubtitle subtitleParts={subtitleParts} shouldReverseFilters={shouldReverseFilters} />
+                <HeraldrySubtitle zoomLevel={zoomLevel} subtitleParts={subtitleParts} shouldReverseFilters={shouldReverseFilters} />
               }
             </header>
             <div>
@@ -127,19 +130,13 @@ const CountryHeraldry = ({
                 </div>
               </div>
             </div>
-            <div className={clsx('fixed sans bottom-3 left-3 z-30', {
-              '': zoomLevel === 1,
-              'ui-pane sans text-[13px]': zoomLevel > 1,
+            <div className={clsx('', {
+              'text-center mt-10 text-[14px] text-[#4b4b4b] tracking-wide': zoomLevel === 1,
+              'fixed bottom-3 left-1/2 -translate-x-1/2 w-[400px] max-w-[80vw] z-30 ui-pane sans text-[13px] text-center': zoomLevel > 1,
             })}>
               <p>
-                {t('heraldry.mapFooterSource')} <strong className="text-black">wikipedia.org</strong>.
-              </p>
-            </div>
-            <div className={clsx('fixed sans bottom-3 right-3 z-30', {
-              '': zoomLevel === 1,
-              'ui-pane sans text-[13px]': zoomLevel > 1,
-            })}>
-              <p>
+                {zoomLevel === 1 && <>{t('heraldry.mapFooterSource')} <strong className="text-black">wikipedia.org</strong>.<br /></>}
+                {' '}
                 {t('heraldry.mapFooterAllCoats')} <strong className="text-black">{allUnits.length}</strong>
                 {allUnits.length > units.length && <>{t('heraldry.mapFooterCoatsAfterFilter')}
                 {' '}

@@ -214,7 +214,7 @@ const FiltersPane = ({
             {animalFilters.length > 0 && <span className="ui-button-circle-marker">{animalFilters.length}</span>}
           </ButtonCircle>
         </h3>
-        {animalFiltersList.length > 0 && <div className="grid grid-cols-3 gap-1">
+        {animalFiltersList.length > 0 && <div className="grid grid-cols-1 max-h-[80lvh] overflow-auto sm:grid-cols-3 gap-1">
           {[
             { value: WITH_ANIMAL, total: 0 },
             { value: WITHOUT_ANIMAL, total: 0 },
@@ -245,7 +245,7 @@ const FiltersPane = ({
             {itemFilters.length > 0 && <span className="ui-button-circle-marker">{itemFilters.length}</span>}
           </ButtonCircle>
         </h3>
-        {itemFiltersList.length > 0 && <div className="grid grid-cols-2 gap-1">
+        {itemFiltersList.length > 0 && <div className="grid grid-cols-1 max-h-[80lvh] overflow-auto sm:grid-cols-2 gap-1">
           {itemFiltersList.map(({ value, total }) => 
             <button
               onClick={() => toggleItem(value)}

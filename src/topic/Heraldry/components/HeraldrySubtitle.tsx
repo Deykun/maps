@@ -1,9 +1,11 @@
 import { useTranslation } from 'react-i18next';
+import clsx from 'clsx';
 import { SubtitlePart } from '../utils/getFilteredUnits';
 
 type Props = {
   subtitleParts: SubtitlePart[],
   shouldReverseFilters: boolean,
+  zoomLevel: number,
 }
 
 /*
@@ -16,11 +18,15 @@ type Props = {
 const HeraldrySubtitle = ({
   subtitleParts,
   shouldReverseFilters,
+  zoomLevel,
 }: Props) => {
   const { t } = useTranslation();
 
   return (
-    <h2 className="text-[18px] min-h-[20px] leading-[20px] text-center mt-2 relative">
+    <h2 className={clsx('text-center relative', {
+      'mt-2 md:text-[16px]': zoomLevel === 1,
+      'text-[14px] md:text-[18px] min-h-[20px] leading-[20px]': zoomLevel > 1,
+    })}>
       {subtitleParts.length > 0 && <span className="text-[#4b4b4b]">
         <small className="mr-1">
           {t(shouldReverseFilters ? 'heraldry.activeExclusionFilters' : 'heraldry.activeFilters')}

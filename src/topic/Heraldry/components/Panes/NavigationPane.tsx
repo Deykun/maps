@@ -50,7 +50,7 @@ const NavigationPane = () => {
           })}
           title={t(pathNameLink)}
         >
-          <img className="navigation-pane-flag" src={`images/flags/${lang}.svg`} alt={lang} />
+          <img className="navigation-pane-flag sans" src={`images/flags/${lang}.svg`} alt={lang} />
         </ButtonCircle>)}
       </SubPane>}
       {activeMenu === 'language' && <SubPane order={1} className="absolute left-12 ml-3 flex-row">
