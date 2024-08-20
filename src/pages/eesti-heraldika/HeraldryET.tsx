@@ -5,7 +5,7 @@ import { getFilter } from '../../topic/Heraldry/utils/getFilter';
 
 import unitJSON from './unit-map.json'
 
-import Heraldry from '../../topic/Heraldry/Heraldry';
+import CountryHeraldry from '../../topic/Heraldry/components/CountryHeraldry/CountryHeraldry';
 
 const units = Object.values(unitJSON);
 
@@ -58,7 +58,7 @@ const itemsFiltersList = getFilter(allUnits, 'items');
 
 const HeraldryPL = () => {
   return (
-    <Heraldry
+    <CountryHeraldry
       lang="et"
       allUnits={allUnits}
       typeFiltersList={typeFiltersList}

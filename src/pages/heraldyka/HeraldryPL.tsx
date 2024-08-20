@@ -37,6 +37,7 @@ const allUnits: AdministrativeUnit[] = Object.values([
   if ([
     'Herb Trzyńca',
     'Herb Orłowej',
+    'Herb Czeskiego Cieszyna',
   ].includes(unit.title)) {
     // Outside of Poland
     return false;

@@ -20,7 +20,7 @@ type Props = {
   // coatSize: 40,
 };
 
-const UiZoom = ({
+const ZoomPane = ({
   zoomIn,
   zoomOut,
   zoomLevel,
@@ -58,24 +58,4 @@ const UiZoom = ({
   );
 }
 
-export default UiZoom;
-
-// <UiButton onClick={zoomOut} isDisabled={zoomMin === zoomLevel}>
-// <IconMinus />
-// </UiButton>
-{/* <UiButton onClick={() => setIsOpen(!isOpen)} isActive={isOpen}>
-<IconControls />
-</UiButton> */}
-// {isOpen && <div className="heraldry-ui-pane absolute right-full max-h-[300px] w-[300px] overflow-auto top-0 mr-2">
-// <div className="flex items-center gap-2">
-//   <IconShieldCheckers className="size-4"/>
-//   <h3>Size of the coat of arms</h3>
-// </div>
-// <div className="flex items-center gap-2">
-//   <button onClick={() => setCoatSize(10)}>10px</button>
-//   <button onClick={() => setCoatSize(20)}>20px</button>
-//   <button onClick={() => setCoatSize(40)}>40px</button>
-//   <button onClick={() => setCoatSize(60)}>60px</button>
-//   <button onClick={() => setCoatSize(80)}>80px</button>
-// </div>
-// </div>}
+export default ZoomPane;

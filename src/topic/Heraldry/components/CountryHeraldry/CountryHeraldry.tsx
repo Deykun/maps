@@ -7,8 +7,10 @@ import { useDraggable } from "react-use-draggable-scroll";
 
 import { PATHS_DATA } from '../../../../constants';
 
-import ZoomPane from '@/topic/Heraldry/components/Panes/ZoomPane'
-import UnitsPane from '@/topic/Heraldry/components/Panes/UnitsPane'
+import ZoomPane from '@/topic/Heraldry/components/Panes/ZoomPane';
+import UnitsPane from '@/topic/Heraldry/components/Panes/UnitsPane';
+import FiltersPane from '@/topic/Heraldry/components/Panes/FiltersPane';
+
 
 
 import IconMapMagnifyingGlass from '@/components/Icons/IconMapMagnifyingGlass';
@@ -166,53 +168,30 @@ const CountryHeraldry = ({
             ref={wrapperRef}
             className={clsx(coatsSizeClassName,
               "map-section fixed top-0 left-0 w-full h-full",
-              "p-5 pt-[100px]",
-              "no-scrollbar overflow-hidden", {
-                "flex flex-col justify-center": zoomLevel === 1,
+              "p-5 py-[100px]",
+              "no-scrollbar overflow-auto", {
+                "flex flex-col justify-evenly": zoomLevel === 1,
               }
             )}
             {...events}
           >
-            <header className="ui-pane fixed top-3 left-3 z-30">
+            <header className={clsx('', {
+              'mb-10': zoomLevel === 1,
+              'ui-pane fixed top-[60px] md:top-3 left-3 z-30': zoomLevel > 1,
+            })}>
               <h1 className="text-[18px] md:text-[24px] text-center">
                 {t(`heraldry.${lang}.mapTitle`)}
               </h1>
               <HeraldrySubtitle subtitleParts={subtitleParts} shouldReverseFilters={shouldReverseFilters} />
             </header>
-            <div className="fixed top-3 bottom-3 right-3 z-20 flex flex-col gap-3 pointer-events-none">
-              <ZoomPane
-                zoomIn={zoomIn}
-                zoomOut={zoomOut}
-                zoomLevel={zoomLevel}
-                zoomMin={1}
-                zoomMax={6}
-              />
-              <UnitsPane
-                units={units}
-                phrase={listPhrase}
-                shouldShowCount={listPhrase.length > 0}
-              />
-            </div>
             <div>
               <div
                 className={clsx(mapWrapperClassName, "map-wrapper z-1 relative mx-auto flex justify-center items-center", {
-                  'max-h-[60vh]': zoomLevel === 1,
+                  'max-h-[60lvh]': zoomLevel === 1,
                 })}
                 style={zoomLevel === 1 ? { } : { width: `max(${(zoomLevel - 1) * 500}px, ${(zoomLevel - 1) * 80}vw` }}
               >
-                {/* <SvgGmina /> */}
                 <MapBackground />
-                {/* <div>
-                    {unitsForMap.map(
-                      (unit) => (
-                        <HeraldryMapItem
-                          key={`${unit.title}-${unit?.place?.coordinates?.lon}`}
-                          {...unit}
-                          setListPhrase={setListPhrase}
-                          style={getPostionForPlace(unit, lang)}
-                        />
-                    ))}
-                </div> */}
                 <div>
                     {unitsForMap.map(
                       (unit) => (
@@ -226,27 +205,43 @@ const CountryHeraldry = ({
                 </div>
               </div>
             </div>
+            <div className="ui-pane sans fixed bottom-3 left-3 z-30 text-[13px]">
+              <p>
+                {t('heraldry.mapFooterSource')} <strong className="text-black">wikipedia.org</strong>.
+              </p>
+            </div>
+            <div className="ui-pane sans fixed bottom-3 right-3 z-30 text-[13px]">
+              <p>
+                {t('heraldry.mapFooterAllCoats')} <strong className="text-black">{allUnits.length}</strong>
+                {allUnits.length > units.length && <>{t('heraldry.mapFooterCoatsAfterFilter')}
+                {' '}
+                <strong className={clsx({
+                  'text-black': units.length > 0,
+                  'text-[#ca1a1a]': units.length === 0 })
+                }>{units.length}</strong>
+                {units.length > 10 && <>{' '}- <strong className="text-black">
+                  {(100 * units.length/allUnits.length).toFixed(2)}
+                </strong><small>%</small></>}</>}.
+              </p>
+            </div>
           </section>
-          <div className="ui-pane fixed bottom-[2px] left-[2px] z-30 text-[13px]">
-            <p>
-              {t('heraldry.mapFooterSource')} <strong className="text-black">wikipedia.org</strong>.
-            </p>
+          <div className="fixed top-3 right-3 z-20 flex flex-col gap-3 pointer-events-none">
+            <ZoomPane
+              zoomIn={zoomIn}
+              zoomOut={zoomOut}
+              zoomLevel={zoomLevel}
+              zoomMin={1}
+              zoomMax={6}
+            />
+            <UnitsPane
+              units={units}
+              phrase={listPhrase}
+              shouldShowCount={listPhrase.length > 0}
+            />
+            <FiltersPane
+            />
           </div>
-          <div className="ui-pane fixed bottom-[2px] right-[2px] z-30 text-[13px]">
-            <p>
-              {t('heraldry.mapFooterAllCoats')} <strong className="text-black">{allUnits.length}</strong>
-              {allUnits.length > units.length && <>{t('heraldry.mapFooterCoatsAfterFilter')}
-              {' '}
-              <strong className={clsx({
-                'text-black': units.length > 0,
-                'text-[#ca1a1a]': units.length === 0 })
-              }>{units.length}</strong>
-              {units.length > 10 && <>{' '}- <strong className="text-black">
-                {(100 * units.length/allUnits.length).toFixed(2)}
-              </strong><small>%</small></>}</>}.
-            </p>
-          </div>
-          <div className="mt-[100vh]"></div>
+          {/* <div className="mt-[100lvh]"></div>
           <div className="max-w-screen-xl mx-auto border-x p-4 pt-10">
             <div className="flex items-center mb-3">
               <h3 className="text-[24px] mb-3">{t('heraldry.titleFilters')}</h3>
@@ -332,7 +327,7 @@ const CountryHeraldry = ({
                   </button>
               </span>
             </div>
-          </div>
+          </div> */}
           {/* <div className="max-w-screen-xl mx-auto border-x border-t p-4 pt-10 pb-10">
             <h3 className="text-[24px] mb-3">
               {t('heraldry.list.title')}
@@ -358,9 +353,9 @@ const CountryHeraldry = ({
               </button>
             </div>}
           </div> */}
-          <p className="max-w-screen-xl mx-auto border-x border p-4 mb-10 text-[12px] text-[#4b4b4b] text-right">
+          {/* <p className="max-w-screen-xl mx-auto border-x border p-4 mb-10 text-[12px] text-[#4b4b4b] text-right">
             {t('heraldry.list.footer')} <a href="https://github.com/Deykun/maps/issues" target="_blank" className="text-black hover:text-[#ca0505] font-[600]">github.com/Deykun/maps/issues</a>
-          </p>
+          </p> */}
           {/* <ul className="max-w-screen-xl mx-auto p-4 mb-10 text-[12px] text-[#4b4b4b] text-center">
             {PATHS_DATA.map(({ path, pathNameLink }) => (<li key={path} className="inline mx-2">
               <Link to={`/maps/${path}`}>{t(pathNameLink)}</Link>

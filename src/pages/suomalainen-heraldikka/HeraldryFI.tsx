@@ -7,7 +7,7 @@ import kuntaJson from './kunta-map.json'
 import maakuntaJson from './maakunta-map.json'
 // import powiatyJSON from './powiaty-map.json'
 
-import Heraldry from '../../topic/Heraldry/Heraldry';
+import CountryHeraldry from '../../topic/Heraldry/components/CountryHeraldry/CountryHeraldry';
 
 const kunta = Object.values(kuntaJson);
 const maakunta = Object.values(maakuntaJson);
@@ -72,7 +72,7 @@ const itemsFiltersList = getFilter(allUnits, 'items');
 
 const HeraldryFI = () => {
   return (
-    <Heraldry
+    <CountryHeraldry
       lang="fi"
       allUnits={allUnits}
       typeFiltersList={typeFiltersList}
