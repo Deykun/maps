@@ -4,12 +4,15 @@ import { AdministrativeUnit } from '../../topic/Heraldry/types';
 import { getFilter } from '../../topic/Heraldry/utils/getFilter';
 
 import unitJSON from './unit-map.json'
+import formerUnitJSON from './formerUnit-map.json'
 
 import CountryHeraldry from '../../topic/Heraldry/components/CountryHeraldry/CountryHeraldry';
 
+const formerUnits = Object.values(formerUnitJSON);
 const units = Object.values(unitJSON);
 
 const allUnits: AdministrativeUnit[] = Object.values([
+  ...formerUnits,
   ...units,
 ].filter((unit: AdministrativeUnit) => {
   if ([

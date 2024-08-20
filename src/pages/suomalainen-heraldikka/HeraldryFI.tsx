@@ -3,40 +3,34 @@ import { AdministrativeUnit } from '../../topic/Heraldry/types';
 
 import { getFilter } from '../../topic/Heraldry/utils/getFilter';
 
+import formerKuntaJson from './formerKunta-map.json'
 import kuntaJson from './kunta-map.json'
 import maakuntaJson from './maakunta-map.json'
-// import powiatyJSON from './powiaty-map.json'
 
 import CountryHeraldry from '../../topic/Heraldry/components/CountryHeraldry/CountryHeraldry';
 
+const formerKunta = Object.values(formerKuntaJson);
 const kunta = Object.values(kuntaJson);
 const maakunta = Object.values(maakuntaJson);
-// const miasta = Object.values(miastaJSON);
-// const powiaty = Object.values(powiatyJSON);
 
 const allUnits: AdministrativeUnit[] = Object.values([
+  ...formerKunta,
   ...kunta,
   ...maakunta,
   // ...powiaty,
   // ...miasta,
 ].filter((unit: AdministrativeUnit) => {
   // if ([
-  //   'Herb Podgórza',
-  //   'Herb gminy Janów (powiat częstochowski)',
-  //   'Herb Nowego Bytomia',
-  //   'Herb gminy Brudzew',
-  //   'Herb gminy Ostrowice',
-  //   'Herby miast Śląska Cieszyńskiego',
+  //    'empty'
   // ].includes(unit.title)) {
   //   // Historic
   //   return false;
   // };
 
   // if ([
-  //   'Herb Trzyńca',
-  //   'Herb Orłowej',
+  //    'empty'
   // ].includes(unit.title)) {
-  //   // Outside of Poland
+  //   // Outside of country
   //   return false;
   // }
 
