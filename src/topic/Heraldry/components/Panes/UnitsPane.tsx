@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 
 import { removeDiacratics } from '@/utils/text';
 
+import useOutsideClick from '@/hooks/useOutsideClick';
+
 import IconTextMagnifyingGlass from '@/components/Icons/IconTextMagnifyingGlass';
 import IconShieldCheckers from '@/components/Icons/IconShieldCheckers';
 import IconGithub from '@/components/Icons/IconGithub';
@@ -34,6 +36,10 @@ const UnitsPane = ({
   const [filterPage, setFilterPage] = useState(0);
 
   const { t } = useTranslation();
+
+  useOutsideClick('#units-pane', () => {
+    setIsOpen(false);
+  });
 
   useEffect(() => {
     if (units.length === 0) {
@@ -72,7 +78,7 @@ const UnitsPane = ({
   const itemsToShow = 5 + 10 * filterPage;
 
   return (
-    <>
+    <div className="pointer-events-auto" id="units-pane">
       <Pane>
         <ButtonCircle
           isDisabled={units.length === 0}
@@ -87,7 +93,7 @@ const UnitsPane = ({
               && <span className="ui-button-circle-marker">{filteredUnits.length}</span>}
         </ButtonCircle>
       </Pane>
-      {isOpen && <Pane className="absolute right-full w-[400px] top-0 mr-3">
+      {isOpen && <Pane className="absolute top-0 right-full z-50 w-[400px] mr-3">
         <div className="relative">
           <IconTextMagnifyingGlass className="size-4 absolute top-1/2 -translate-y-1/2 left-8 opacity-20" />
           <input
@@ -119,7 +125,7 @@ const UnitsPane = ({
           </a>
         </p>
       </Pane>}
-    </>
+    </div>
   );
 }
 

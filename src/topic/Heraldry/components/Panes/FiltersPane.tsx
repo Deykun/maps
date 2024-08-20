@@ -1,6 +1,8 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useRef, useState, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import clsx from 'clsx';
+
+import useOutsideClick from '@/hooks/useOutsideClick';
 
 import { WITH_ANIMAL, WITHOUT_ANIMAL } from '@/topic/Heraldry/constants';
 
@@ -74,11 +76,15 @@ const FiltersPane = ({
   shouldReverseFilters,
   setShouldReverseFilters,
 }: Props) => {
+  const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
   const [activeMenu, setActiveMenu] = useState('');
   const [isOpen, setIsOpen] = useState(false);
-  // const zoomLevel = useSettingStore(state => state.zoomLevel);
-  // const coatSize = useSettingStore(state => state.coatSize);
   const { t } = useTranslation();
+
+  // Not the nicest solution, but it works
+  useOutsideClick('#filters-pane', () => {
+    setActiveMenu('');
+  });
 
   useEffect(() => {
     if (!isOpen) {
@@ -114,7 +120,7 @@ const FiltersPane = ({
   const activeTotal = typeFilters.length + colorFilters.length + animalFilters.length + itemFilters.length; 
 
   return (
-    <div className="relative">
+    <div className="relative pointer-events-auto" ref={wrapperRef} id="filters-pane">
       <Pane>
         <ButtonCircle onClick={() => setIsOpen(!isOpen)} title={t('heraldry.titleFilters')}>
           <IconMapMagnifyingGlass />

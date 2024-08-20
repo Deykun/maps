@@ -20,7 +20,7 @@ const HeraldrySubtitle = ({
   const { t } = useTranslation();
 
   return (
-    <h2 className="text-[18px] min-h-[20px] leading-[20px] text-center mb-6 relative">
+    <h2 className="text-[18px] min-h-[20px] leading-[20px] text-center mt-2 relative">
       {subtitleParts.length > 0 && <span className="text-[#4b4b4b]">
         <small className="mr-1">
           {t(shouldReverseFilters ? 'heraldry.activeExclusionFilters' : 'heraldry.activeFilters')}

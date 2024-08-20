@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-// import IconPlus from
+import useOutsideClick from '@/hooks/useOutsideClick';
 
 import IconPlus from '@/components/Icons/IconPlus';
 import IconMinus from '@/components/Icons/IconMinus';
@@ -34,12 +34,13 @@ const ZoomPane = ({
   coatMax,
 }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
-  // const zoomLevel = useSettingStore(state => state.zoomLevel);
-  // const coatSize = useSettingStore(state => state.coatSize);
-  // const { t } = useTranslation();
+
+  useOutsideClick('#zoom-pane', () => {
+    setIsOpen(false);
+  });
 
   return (
-    <div className="relative">
+    <div className="relative pointer-events-auto" id="zoom-pane">
       <Pane>
         <ButtonCircle onClick={() => setZoomLevel(zoomLevel + 1)} isDisabled={zoomLevel === zoomMax}>
           <IconPlus />
@@ -51,7 +52,7 @@ const ZoomPane = ({
           <IconControls />
         </ButtonCircle>
       </Pane>
-      {isOpen && <SubPane order={2} className="absolute right-12 mr-3 flex-row items-center">
+      {isOpen && <SubPane order={2} className="absolute top-0 right-12 z-[100] mr-3 flex-row items-center">
         <ButtonCircle onClick={() => setCoatSize(coatSize + 1)} isDisabled={coatSize === coatMax}>
           <IconPlus />
         </ButtonCircle>
@@ -62,15 +63,6 @@ const ZoomPane = ({
           <IconMinus />
         </ButtonCircle>
       </SubPane>}
-      {/* {isOpen && <div className="heraldry-ui-pane absolute right-full max-h-[300px] w-[300px] overflow-auto top-0 mr-2">
-        <div className="flex items-center gap-2">
-          <IconShieldCheckers className="size-4"/>
-          <h3>Size of the coat of arms</h3>
-        </div>
-        <div className="flex items-center gap-2">
-
-        </div>
-      </div>} */}
     </div>
   );
 }

@@ -1,5 +1,6 @@
 
 .ui-button-circle {
+  > a,
   > button {
     @apply inline-flex justify-center items-center size-8 shadow-sm rounded-sm;
 
@@ -50,6 +51,7 @@
 }
 
 .ui-button-circle--active {
+  > a,
   > button {
     color: #205dbd;
   }

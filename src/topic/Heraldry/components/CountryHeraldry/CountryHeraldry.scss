@@ -62,7 +62,7 @@
       height: 80px;
       width: 80px;
       transform: scale(1) !important;
-      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
+      filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.8));
     }
 
     &::before {

@@ -10,6 +10,7 @@ import { GetFilterResponse } from '@/topic/Heraldry/utils/getFilter';
 import { getFilteredUnits } from '@/topic/Heraldry/utils/getFilteredUnits';
 import { getPostionForPlace } from '@/topic/Heraldry/utils/getPostionForPlace';
 
+import NavigationPane from '@/topic/Heraldry/components/Panes/NavigationPane';
 import ZoomPane from '@/topic/Heraldry/components/Panes/ZoomPane';
 import UnitsPane from '@/topic/Heraldry/components/Panes/UnitsPane';
 import FiltersPane from '@/topic/Heraldry/components/Panes/FiltersPane';
@@ -96,10 +97,13 @@ const CountryHeraldry = ({
               'mb-10 min-h-[100px]': zoomLevel === 1,
               'ui-pane fixed top-3 left-3 z-30': zoomLevel > 1,
             })}>
-              <h1 className="text-[18px] md:text-[24px] text-center">
+              <h1 className="text-[18px] md:text-[24px] lg:text-[36px] text-center">
                 {t(`heraldry.${lang}.mapTitle`)}
               </h1>
-              <HeraldrySubtitle subtitleParts={subtitleParts} shouldReverseFilters={shouldReverseFilters} />
+              {
+                (zoomLevel === 1 || subtitleParts.length > 0) &&
+                <HeraldrySubtitle subtitleParts={subtitleParts} shouldReverseFilters={shouldReverseFilters} />
+              }
             </header>
             <div>
               <div
@@ -123,12 +127,18 @@ const CountryHeraldry = ({
                 </div>
               </div>
             </div>
-            <div className="ui-pane sans fixed bottom-3 left-3 z-30 text-[13px]">
+            <div className={clsx('fixed sans bottom-3 left-3 z-30', {
+              '': zoomLevel === 1,
+              'ui-pane sans text-[13px]': zoomLevel > 1,
+            })}>
               <p>
                 {t('heraldry.mapFooterSource')} <strong className="text-black">wikipedia.org</strong>.
               </p>
             </div>
-            <div className="ui-pane sans fixed bottom-3 right-3 z-30 text-[13px]">
+            <div className={clsx('fixed sans bottom-3 right-3 z-30', {
+              '': zoomLevel === 1,
+              'ui-pane sans text-[13px]': zoomLevel > 1,
+            })}>
               <p>
                 {t('heraldry.mapFooterAllCoats')} <strong className="text-black">{allUnits.length}</strong>
                 {allUnits.length > units.length && <>{t('heraldry.mapFooterCoatsAfterFilter')}
@@ -143,6 +153,12 @@ const CountryHeraldry = ({
               </p>
             </div>
           </section>
+          {
+            zoomLevel === 1 &&
+            <div className="fixed top-3 left-3 z-20 flex flex-col gap-3 pointer-events-none">
+              <NavigationPane />
+            </div>
+          }
           <div className="fixed top-3 right-3 z-20 flex flex-col gap-3 pointer-events-none">
             <ZoomPane
               zoomLevel={zoomLevel}
