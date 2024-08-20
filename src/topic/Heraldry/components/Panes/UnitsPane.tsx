@@ -12,6 +12,7 @@ import { AdministrativeUnit } from '@/topic/Heraldry/types';
 import Pane from '@/components/UI/Pane';
 import ButtonCircle from '@/components/UI/ButtonCircle';
 
+import { getDoesUnitMatch, getUnitSortRank } from './utils/units';
 import UnitsPaneItem from './UnitsPaneItem';
 
 type Props = {
@@ -57,18 +58,16 @@ const UnitsPane = ({
     const listPhraseNormalized = removeDiacratics(filterPhrase.toLowerCase());
 
     const filteredUnits = units.filter((unit) => {
-      const text = `${unit.title} ${unit?.place?.name || ''}`.toLowerCase();
-      const indexText = removeDiacratics(text);
+      return getDoesUnitMatch(listPhraseNormalized, unit);
+    }).sort((a, b) => {
+      const aRank = getUnitSortRank(listPhraseNormalized, a);
+      const bRank = getUnitSortRank(listPhraseNormalized, b);
 
-      return indexText.includes(listPhraseNormalized);
+      return bRank - aRank;
     });
 
     setFilteredUnits(filteredUnits);
   }, [units, filterPhrase]);
-
-  if (units.length === 0) {
-    return null;
-  }
 
   const itemsToShow = 5 + 10 * filterPage;
 

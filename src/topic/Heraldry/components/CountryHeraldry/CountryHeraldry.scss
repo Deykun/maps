@@ -42,52 +42,6 @@
 }
 
 .coat {
-  img {
-    height: 2.6rem;
-    width: 2.6rem;
-  }
-
-  .coats-sm & img {
-    // height: 1.6rem;
-    // width: 1.6rem;
-    // line-height: 1.6rem;
-    // height: 3.2cqi;
-    // width: 3.2cqi;
-    // line-height: 1.6rem;
-    // line-height: 3.2cqi;
-  }
-  
-  .coats-md & img {
-    // height: 2rem;
-    // width: 2rem;
-    // height: 4.2cqi;
-    // width: 4.2cqi;
-    // line-height: 2rem;
-    // line-height: 5.5cqi;
-  }
-  
-  .coats-lg & img {
-    // height: 2.5rem;
-    // width: 2.5rem;
-    // height: 5.5cqi;
-    // width: 5.5cqi;
-    // line-height: 2.5rem;
-    // line-height: 5.5cqi;
-  }
-
-  img {
-    font-size: 6px;
-    transition-delay: 0.1s;
-    transition: 0.1s cubic-bezier(0.68, 0, 0.265, 1.30);
-    color: #99a2a7;
-    height: auto;
-    max-height: 80px;
-    max-width: none;
-    line-height: 28px;
-    background-image: radial-gradient(#99a2a7 2px, transparent 2px, transparent);
-    background-position: center;
-  }
-
   .coat-sprite {
     display: block;
     height: 80px;
@@ -100,19 +54,15 @@
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
   }
 
-  &:hover {
-    img {
-      height: 100px;
-      width: 100px;
-      max-height: 100px;
-      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
-    }
+  &:hover,
+  &:focus {
+    z-index: 30;
 
     .coat-sprite {
       height: 80px;
       width: 80px;
       transform: scale(1) !important;
-      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
     }
 
     &::before {
@@ -122,6 +72,7 @@
       position: absolute;
       bottom: calc(100% + 15px);
       left: 50%;
+      z-index: 31;
       transform: translateX(-50%) translateY(30px) scale(0.5);
       transform-origin: top center;
       font-size: 12px;
@@ -129,7 +80,6 @@
       color: black;
       background-color: white;
       border: 1px solid rgb(189, 189, 189);
-      border-top-width: 2px;
       padding: 5px 10px;
       border-radius: 2px;
       border-bottom-left-radius: 8px;
@@ -145,7 +95,8 @@
     width: 0;
     height: 0;
 
-    &:hover::before {
+    &:hover::before,
+    &:focus::before {
       bottom: calc(100% + 45px);
     }
   }}

@@ -7,4 +7,5 @@
   background: rgba(249, 249, 249, 0.732);
   background: rgba(255, 255, 255, 0.73);
   backdrop-filter: blur(10px) saturate(1.5) contrast(0.9);
+  max-width: calc(100vw - 80px);
 }

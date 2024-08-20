@@ -96,15 +96,7 @@ const CountryHeraldry = ({
       }
     }, [filterOperator, shouldReverseFilters, colorFilters, typeFilters, animalFilters, itemFilters]);
 
-    const toggleColor = useCallback((color: string) => {
-      setColorFilters((colors) => {
-        if (colors.includes(color)) {
-          return colors.filter((active) => active !== color);
-        }
 
-        return [...colors, color];
-      });
-    }, []);
 
     const toggleType = useCallback((type: string) => {
       setTypeFilters((types) => {
@@ -113,22 +105,6 @@ const CountryHeraldry = ({
         }
 
         return [...types, type];
-      });
-    }, []);
-
-    const toggleAnimal = useCallback((animal: string) => {
-      if ([WITH_ANIMAL, WITHOUT_ANIMAL].includes(animal)) {
-        setAnimalFilters(animals => animals.includes(animal) ? [] : [animal]);
-
-        return;
-      }
-
-      setAnimalFilters((animals) => {
-        if (animals.includes(animal)) {
-          return animals.filter((active) => active !== animal);
-        }
-
-        return [...animals, animal].filter((active) => ![WITH_ANIMAL, WITHOUT_ANIMAL].includes(active));
       });
     }, []);
 
@@ -170,7 +146,7 @@ const CountryHeraldry = ({
           >
             <header className={clsx('', {
               'mb-10 min-h-[100px]': zoomLevel === 1,
-              'ui-pane fixed top-[60px] md:top-3 left-3 z-30': zoomLevel > 1,
+              'ui-pane fixed top-3 left-3 z-30': zoomLevel > 1,
             })}>
               <h1 className="text-[18px] md:text-[24px] text-center">
                 {t(`heraldry.${lang}.mapTitle`)}
@@ -236,9 +212,20 @@ const CountryHeraldry = ({
               shouldShowCount={listPhrase.length > 0}
             />
             <FiltersPane
+              lang={lang}
+              typeFilters={typeFilters}
+              setTypeFilters={setTypeFilters}
+              typeFiltersList={typeFiltersList}
               colorFilters={colorFilters}
-              toggleColor={toggleColor}
+              setColorFilters={setColorFilters}
               resetFilters={resetFilters}
+              animalFilters={animalFilters}
+              setAnimalFilters={setAnimalFilters}
+              animalFiltersList={animalFiltersList}
+              filterOperator={filterOperator}
+              setFilterOperator={setFilterOperator}
+              shouldReverseFilters={shouldReverseFilters}
+              setShouldReverseFilters={setShouldReverseFilters}
             />
           </div>
           {/* <div className="mt-[100lvh]"></div>
