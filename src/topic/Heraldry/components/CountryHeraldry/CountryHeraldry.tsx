@@ -239,6 +239,9 @@ const CountryHeraldry = ({
               shouldShowCount={listPhrase.length > 0}
             />
             <FiltersPane
+              colorFilters={colorFilters}
+              toggleColor={toggleColor}
+              resetFilters={resetFilters}
             />
           </div>
           {/* <div className="mt-[100lvh]"></div>
