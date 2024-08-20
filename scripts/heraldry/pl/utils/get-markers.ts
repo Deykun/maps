@@ -1198,6 +1198,7 @@ export const getMarkers = ({
       'Herb powiatu obornickiego',
       'Herb powiatu wągrowieckiego',
       'Herb powiatu myśliborskiego',
+      'Herb gminy Baranowo',
     ].includes(title)) {
       items.push('crown');
     }

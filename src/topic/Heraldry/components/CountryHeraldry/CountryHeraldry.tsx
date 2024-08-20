@@ -1,36 +1,21 @@
-import { memo, useRef, useState, useMemo, useCallback, useEffect } from 'react';
+import { memo, useRef, useState, useMemo, useEffect } from 'react';
 import clsx from 'clsx';
 import { Link } from "wouter";
 import { useTranslation } from 'react-i18next';
 import { useDraggable } from "react-use-draggable-scroll";
 
+import { AdministrativeUnit } from '@/topic/Heraldry/types';
 
-import { PATHS_DATA } from '../../../../constants';
+import { GetFilterResponse } from '@/topic/Heraldry/utils/getFilter';
+import { getFilteredUnits } from '@/topic/Heraldry/utils/getFilteredUnits';
+import { getPostionForPlace } from '@/topic/Heraldry/utils/getPostionForPlace';
 
 import ZoomPane from '@/topic/Heraldry/components/Panes/ZoomPane';
 import UnitsPane from '@/topic/Heraldry/components/Panes/UnitsPane';
 import FiltersPane from '@/topic/Heraldry/components/Panes/FiltersPane';
 
-
-
-import IconMapMagnifyingGlass from '@/components/Icons/IconMapMagnifyingGlass';
-
-import Pane from '@/components/UI/Pane';
-import ButtonCircle from '@/components/UI/ButtonCircle';
-
-import HeraldryListItem from './components/HeraldryListItem';
-// import HeraldryMapItem from './components/HeraldryMapItem';
-import HeraldryMapItemFromSprite from './components/HeraldryMapItemFromSprite';
-import HeraldrySubtitle from './components/HeraldrySubtitle';
-
-import { removeDiacratics } from '../../../../utils/text';
-
-import { GetFilterResponse } from './utils/getFilter';
-import { getFilteredUnits } from './utils/getFilteredUnits';
-import { getPostionForPlace } from './utils/getPostionForPlace';
-
-import { AdministrativeUnit } from './types';
-import { WITH_ANIMAL, WITHOUT_ANIMAL } from './constants';
+import HeraldryMapItemFromSprite from '@/topic/Heraldry/components/HeraldryMapItemFromSprite';
+import HeraldrySubtitle from '@/topic/Heraldry/components/HeraldrySubtitle';
 
 import './CountryHeraldry.scss';
 
@@ -39,7 +24,7 @@ type Props = {
   allUnits: AdministrativeUnit[],
   typeFiltersList: GetFilterResponse,
   animalFiltersList: GetFilterResponse,
-  itemsFiltersList: GetFilterResponse,
+  itemFiltersList: GetFilterResponse,
   mapWrapperClassName?: string,
   map: () => JSX.Element,
 }
@@ -49,12 +34,11 @@ const CountryHeraldry = ({
   allUnits,
   typeFiltersList,
   animalFiltersList,
-  itemsFiltersList,
+  itemFiltersList,
   mapWrapperClassName,
   map: MapBackground,
 }: Props) => {
     const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
-    const [listPage, setListPage] = useState(0);
     const [listPhrase, setListPhrase] = useState('');
     const [filterOperator, setFilterOperator] = useState<'and' | 'or'>('and');
     const [shouldReverseFilters, setShouldReverseFilters] = useState(false);
@@ -86,7 +70,6 @@ const CountryHeraldry = ({
         subtitleParts,
       } = getFilteredUnits(lang, allUnits, filterOperator, shouldReverseFilters, typeFiltersToPass, colorFilters, animalFilters, itemFilters);
 
-      setListPage(0);
       setListPhrase('');
 
       return {
@@ -96,46 +79,11 @@ const CountryHeraldry = ({
       }
     }, [filterOperator, shouldReverseFilters, colorFilters, typeFilters, animalFilters, itemFilters]);
 
-
-
-    const toggleType = useCallback((type: string) => {
-      setTypeFilters((types) => {
-        if (types.includes(type)) {
-          return types.filter((active) => active !== type);
-        }
-
-        return [...types, type];
-      });
-    }, []);
-
-    const toggleItem = useCallback((item: string) => {
-      setItemFilters((items) => {
-        if (items.includes(item)) {
-          return items.filter((active) => active !== item);
-        }
-
-        return [...items, item];
-      });
-    }, []);
-
-    const hasFilters = typeFilters.length > 0 || colorFilters.length > 0 || animalFilters.length > 0 || itemFilters.length > 0;
-
-    const resetFilters = () => {
-      setTypeFilters([]);
-      setColorFilters([]);
-      setAnimalFilters([]);
-      setItemFilters([]);
-    }
-
-    const coatsSizeClassName = unitsForMap.length < 20
-      ? 'coats-lg'
-      : (unitsForMap.length < 60 ? 'coats-md' : 'coats-sm');
-
     return (
         <>
           <section
             ref={wrapperRef}
-            className={clsx(coatsSizeClassName,
+            className={clsx(
               "map-section fixed top-0 left-0 w-full h-full",
               "p-5 py-[100px]",
               "no-scrollbar overflow-auto", {
@@ -218,136 +166,18 @@ const CountryHeraldry = ({
               typeFiltersList={typeFiltersList}
               colorFilters={colorFilters}
               setColorFilters={setColorFilters}
-              resetFilters={resetFilters}
               animalFilters={animalFilters}
               setAnimalFilters={setAnimalFilters}
               animalFiltersList={animalFiltersList}
+              itemFilters={itemFilters}
+              setItemFilters={setItemFilters}
+              itemFiltersList={itemFiltersList}
               filterOperator={filterOperator}
               setFilterOperator={setFilterOperator}
               shouldReverseFilters={shouldReverseFilters}
               setShouldReverseFilters={setShouldReverseFilters}
             />
           </div>
-          {/* <div className="mt-[100lvh]"></div>
-          <div className="max-w-screen-xl mx-auto border-x p-4 pt-10">
-            <div className="flex items-center mb-3">
-              <h3 className="text-[24px] mb-3">{t('heraldry.titleFilters')}</h3>
-              <span className="ml-auto">
-                {units.length === 0 && <span className="mr-2 text-[#ca1a1a] text-[12px] tracking-widest font-[800]">{t('heraldry.noResult')}</span>}
-                {hasFilters && <button className="ml-auto font-[600]" onClick={resetFilters}>{t('heraldry.clearFilters')}</button>}
-              </span>
-            </div>
-            <div className="flex flex-wrap items-center justify-between gap-5 mb-10">
-              <span className="flex items-center gap-5">
-                {t('heraldry.color.filterTitle')}
-                {[
-                  { name: 'red', color: '#d61e27' },
-                  { name: 'green', color: '#299649' },
-                  { name: 'blue', color: '#1d7dc0' },
-                ].map(({ name, color }) => <button
-                  key={name}
-                  style={{ backgroundColor: color }}
-                  onClick={() => toggleColor(name)}
-                  className="block size-5 rounded-[4px] shadow-md text-white text-[10px]"
-                >
-                  {colorFilters.includes(name) ? '✔' : ''}
-                </button>)}
-              </span>
-              <span className="flex flex-wrap gap-5">
-                {typeFiltersList.map(({ value, total }) => 
-                  <button
-                    onClick={() => toggleType(value)}
-                    className={clsx("hover:text-[#ca0505] text-nowrap", { 
-                      'text-[#ca0505]': typeFilters.includes(value),
-                    })}
-                  >
-                    {t(`heraldry.unit.type.${lang}.${value}`)} <small className="text-[10px] text-[#4b4b4b] tracking-widest">({total})</small>
-                  </button>
-                )}
-              </span>
-            </div>
-            {animalFiltersList.length > 0 && <>
-              <h4 className="w-fit text-[18px] font-[600] tracking-wider">{t('heraldry.animal.filterTitle')}</h4>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-7 mt-3 mb-10">
-                {[
-                  { value: WITH_ANIMAL, total: 0 },
-                  { value: WITHOUT_ANIMAL, total: 0 },
-                ...animalFiltersList].map(({ value, total }) => 
-                  <button
-                    onClick={() => toggleAnimal(value)}
-                    className={clsx("hover:text-[#ca0505]", { 
-                      'text-[#ca0505]': animalFilters.includes(value),
-                    })}
-                  >
-                    {t(`heraldry.animal.${value}`)} {total > 0 && <small className="text-[10px] text-[#4b4b4b] tracking-widest">({total})</small>}
-                  </button>
-                )}
-              </div>
-            </>}
-            {itemsFiltersList.length > 0 && <>
-              <h4 className="w-fit text-[18px] font-[600] tracking-wider">{t('heraldry.item.filterTitle')}</h4>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-7 mt-3 pb-10">
-                {itemsFiltersList.map(({ value, total }) => 
-                  <button
-                    onClick={() => toggleItem(value)}
-                    className={clsx("hover:text-[#ca0505]", { 
-                      'text-[#ca0505]': itemFilters.includes(value),
-                    })}
-                  >
-                    {t(`heraldry.item.${value}`)} <small className="text-[10px] text-[#4b4b4b] tracking-widest">({total})</small>
-                  </button>
-                )}
-              </div>
-            </>}
-
-            <div className="flex items-center justify-end gap-10 text-[14px]">
-              <span className="flex items-center gap-5">
-                  {t('heraldry.filterOperator')}
-                  <button className="hover:text-[#ca0505]" onClick={() => setFilterOperator(filterOperator === 'and' ? 'or' : 'and')}>
-                    {t(`heraldry.filterOperator.${filterOperator}`)}
-                  </button>
-              </span>
-              <span className="flex items-center gap-5">
-                  {t('heraldry.filterReverse')}
-                  <button className="hover:text-[#ca0505]" onClick={() => setShouldReverseFilters(value => !value)}>
-                    {t(`heraldry.filterReverse.${shouldReverseFilters ? 'yes' : 'no'}`)}
-                  </button>
-              </span>
-            </div>
-          </div> */}
-          {/* <div className="max-w-screen-xl mx-auto border-x border-t p-4 pt-10 pb-10">
-            <h3 className="text-[24px] mb-3">
-              {t('heraldry.list.title')}
-              {' '}
-              {unitsForList.length > 0 && <small className="text-[#4b4b4b] tracking-widest">({unitsForList.length})</small>}
-            </h3>
-            <div className="text-right">
-              <label>{t('heraldry.list.limitListTo')}</label>
-              {' '}
-              <input
-                value={listPhrase}
-                onChange={(e) => setListPhrase(e.target.value || '')}
-                className="border-b w-[140px] outline-offset-2 px-2"
-                placeholder={t('heraldry.list.limitListToPlaceholder')}
-              />
-            </div>
-            <ul className="mt-10 grid md:grid-cols-2 xl:grid-cols-3 gap-5">
-              {unitsForList.slice(0, 6 + 42 * listPage).map((unit) => (<HeraldryListItem key={unit.title} {...unit} />))}
-            </ul>
-            {unitsForList.length > (6 + 42 * listPage) && <div className="mt-5 text-center">
-              <button onClick={() => setListPage(listPage + 1)}>
-                {t('heraldry.list.showMore')}
-              </button>
-            </div>}
-          </div> */}
-          {/* <p className="max-w-screen-xl mx-auto border-x border p-4 mb-10 text-[12px] text-[#4b4b4b] text-right">
-            {t('heraldry.list.footer')} <a href="https://github.com/Deykun/maps/issues" target="_blank" className="text-black hover:text-[#ca0505] font-[600]">github.com/Deykun/maps/issues</a>
-          </p> */}
-          {/* <ul className="max-w-screen-xl mx-auto p-4 mb-10 text-[12px] text-[#4b4b4b] text-center">
-            {PATHS_DATA.map(({ path, pathNameLink }) => (<li key={path} className="inline mx-2">
-              <Link to={`/maps/${path}`}>{t(pathNameLink)}</Link>
-            </li>))}
-          </ul> */}
         </>
     );
 };

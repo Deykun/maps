@@ -20,17 +20,36 @@ import Pane from '@/components/UI/Pane';
 import SubPane from '@/components/UI/SubPane';
 import ButtonCircle from '@/components/UI/ButtonCircle';
 
+const getFilterToggle = (values: string[], setValues: (values: string[]) => void) => (value: string) => {
+  if (values.includes(value)) {
+    setValues(values.filter((active) => active !== value));
+
+    return;
+  }
+
+  setValues([...values, value]);
+}
+
+type FilterItem = {
+  value: string,
+  total: number,
+}
+
+type FilterSetter = (values: string[]) => void;
+
 type Props = {
   lang: string,
   typeFilters: string[],
-  setTypeFilters: (values: string[]) => void,
-  typeFiltersList: { value: string, total: number }[],
+  setTypeFilters: FilterSetter,
+  typeFiltersList: FilterItem[],
   colorFilters: string[],
-  setColorFilters: (values: string[]) => void,
-  resetFilters: () => void,
+  setColorFilters: FilterSetter,
   animalFilters: string[],
-  setAnimalFilters: (values: string[]) => void,
-  animalFiltersList: { value: string, total: number }[],
+  setAnimalFilters: FilterSetter,
+  animalFiltersList: FilterItem[],
+  itemFilters: string[],
+  setItemFilters: FilterSetter,
+  itemFiltersList: FilterItem[],
   filterOperator: 'or' | 'and',
   setFilterOperator: (operator: 'or' | 'and') => void,
   shouldReverseFilters: boolean,
@@ -44,10 +63,12 @@ const FiltersPane = ({
   typeFiltersList,
   colorFilters,
   setColorFilters,
-  resetFilters,
   animalFilters,
   setAnimalFilters,
   animalFiltersList,
+  itemFilters,
+  setItemFilters,
+  itemFiltersList,
   filterOperator,
   setFilterOperator,
   shouldReverseFilters,
@@ -64,30 +85,12 @@ const FiltersPane = ({
       setActiveMenu('');
     }
   }, [isOpen])
-  animalFilters
-  const activeTotal = typeFilters.length + colorFilters.length + animalFilters.length;
 
   const toggleMenu = (name: string) => () => setActiveMenu((v) => v === name ? '' : name); 
 
-  const toggleType = useCallback((type: string) => {
-    if (typeFilters.includes(type)) {
-      setTypeFilters(typeFilters.filter((active) => active !== type));
-
-      return;
-    }
-
-    setTypeFilters([...typeFilters, type]);
-}, [typeFilters]);
-
-  const toggleColor = useCallback((color: string) => {
-      if (colorFilters.includes(color)) {
-        setColorFilters(colorFilters.filter((active) => active !== color));
-
-        return;
-      }
-
-      setColorFilters([...colorFilters, color]);
-  }, [colorFilters]);
+  const toggleType = useCallback(getFilterToggle(typeFilters, setTypeFilters), [typeFilters]);
+  
+  const toggleColor = useCallback(getFilterToggle(colorFilters, setColorFilters), [colorFilters]);
   
   const toggleAnimal = useCallback((animal: string) => {
     if ([WITH_ANIMAL, WITHOUT_ANIMAL].includes(animal)) {
@@ -96,11 +99,19 @@ const FiltersPane = ({
       return;
     }
 
-    setAnimalFilters(animalFilters.includes(animal)
-    ? animalFilters.filter((active) => active !== animal)
-    : [...animalFilters, animal].filter((active) => ![WITH_ANIMAL, WITHOUT_ANIMAL].includes(active))
-    );
+    getFilterToggle(animalFilters.filter((active) => ![WITH_ANIMAL, WITHOUT_ANIMAL].includes(active)), setAnimalFilters)(animal);
   }, [animalFilters]);
+
+  const toggleItem = useCallback(getFilterToggle(itemFilters, setItemFilters), [itemFilters]);
+
+  const resetFilters = () => {
+    setTypeFilters([]);
+    setColorFilters([]);
+    setAnimalFilters([]);
+    setItemFilters([]);
+  }
+
+  const activeTotal = typeFilters.length + colorFilters.length + animalFilters.length + itemFilters.length; 
 
   return (
     <div className="relative">
@@ -111,7 +122,7 @@ const FiltersPane = ({
         </ButtonCircle>
         {isOpen && <>
           <span className="border-t" />
-          <ButtonCircle onClick={toggleMenu('type')} isActive={activeMenu === 'type'}>
+          <ButtonCircle onClick={toggleMenu('type')} isActive={activeMenu === 'type'} title={t('heraldry.unit.filterTitle')}>
             <IconBuilding />
             {typeFilters.length > 0 && <span className="ui-button-circle-marker">{typeFilters.length}</span>}
           </ButtonCircle>
@@ -123,10 +134,11 @@ const FiltersPane = ({
             <IconAnimal />
             {animalFilters.length > 0 && <span className="ui-button-circle-marker">{animalFilters.length}</span>}
           </ButtonCircle>
-          <ButtonCircle onClick={toggleMenu('other')} isActive={activeMenu === 'other'} title={t('heraldry.item.filterTitle')}>
+          <ButtonCircle onClick={toggleMenu('item')} isActive={activeMenu === 'item'} title={t('heraldry.item.filterTitle')}>
             <IconCrown />
+            {itemFilters.length > 0 && <span className="ui-button-circle-marker">{itemFilters.length}</span>}
           </ButtonCircle>
-          <ButtonCircle onClick={toggleMenu('settings')} isActive={activeMenu === 'settings'}>
+          <ButtonCircle onClick={toggleMenu('settings')} isActive={activeMenu === 'settings'} title={t('heraldry.clearFilters')}>
             <IconControls />
           </ButtonCircle>
         </>}
@@ -141,7 +153,7 @@ const FiltersPane = ({
         <h3 className="flex gap-3 items-center">
           <IconBuilding className="size-5" />
           <span>
-            {t('heraldry.type.filterTitle')}
+            {t('heraldry.unit.filterTitle')}
           </span>
           <ButtonCircle
             wrapperClassName="ml-auto"
@@ -152,7 +164,7 @@ const FiltersPane = ({
             {typeFilters.length > 0 && <span className="ui-button-circle-marker">{typeFilters.length}</span>}
           </ButtonCircle>
         </h3>
-        {typeFiltersList.length > 0 && <div className="grid grid-cols-3 gap-1">
+        {typeFiltersList.length > 0 && <div className="grid grid-cols-1 gap-1">
           {typeFiltersList.map(({ value, total }) => 
             <button
               onClick={() => toggleType(value)}
@@ -209,6 +221,34 @@ const FiltersPane = ({
               })}
             >
               {t(`heraldry.animal.${value}`)} {total > 0 && <small className="text-[10px] text-[#4b4b4b] tracking-widest font-[600]">({total})</small>}
+            </button>
+          )}
+        </div>}
+      </Pane>}
+      {activeMenu === 'item' && <Pane className="fixed right-12 mt-3 w-[400px] top-0 mr-6">
+        <h3 className="flex gap-3 items-center">
+          <IconCrown className="size-5" />
+          <span>
+            {t('heraldry.item.filterTitle')}
+          </span>
+          <ButtonCircle
+            wrapperClassName="ml-auto"
+            onClick={() => setItemFilters([])}
+            isDisabled={itemFilters.length === 0}
+          >
+            <IconEraser />
+            {itemFilters.length > 0 && <span className="ui-button-circle-marker">{itemFilters.length}</span>}
+          </ButtonCircle>
+        </h3>
+        {itemFiltersList.length > 0 && <div className="grid grid-cols-2 gap-1">
+          {itemFiltersList.map(({ value, total }) => 
+            <button
+              onClick={() => toggleItem(value)}
+              className={clsx('font-[500] text-[12px] text-left hover:text-[#205dbd]', { 
+                'font-[600] text-[#205dbd]': itemFilters.includes(value),
+              })}
+            >
+              {t(`heraldry.item.${value}`)} {total > 0 && <small className="text-[10px] text-[#4b4b4b] tracking-widest font-[600]">({total})</small>}
             </button>
           )}
         </div>}

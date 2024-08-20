@@ -80,7 +80,11 @@ const UnitsPane = ({
           onClick={() => setIsOpen(!isOpen)}
         >
             {children ? children : <IconShieldCheckers />}
-            {shouldShowCount && phrase === filterPhrase && filteredUnits.length > 0 && <span className="ui-button-circle-marker">{filteredUnits.length}</span>}
+            {shouldShowCount
+              && phrase === filterPhrase
+              && filteredUnits.length > 0
+              && filteredUnits.length < 100
+              && <span className="ui-button-circle-marker">{filteredUnits.length}</span>}
         </ButtonCircle>
       </Pane>
       {isOpen && <Pane className="absolute right-full w-[400px] top-0 mr-3">

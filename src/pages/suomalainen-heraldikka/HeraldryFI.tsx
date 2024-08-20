@@ -68,7 +68,7 @@ const allUnits: AdministrativeUnit[] = Object.values([
 
 const typeFiltersList = getFilter(allUnits, 'type');
 const animalFiltersList = getFilter(allUnits, 'animals');
-const itemsFiltersList = getFilter(allUnits, 'items');
+const itemFiltersList = getFilter(allUnits, 'items');
 
 const HeraldryFI = () => {
   return (
@@ -77,7 +77,7 @@ const HeraldryFI = () => {
       allUnits={allUnits}
       typeFiltersList={typeFiltersList}
       animalFiltersList={animalFiltersList}
-      itemsFiltersList={itemsFiltersList}
+      itemFiltersList={itemFiltersList}
       mapWrapperClassName="aspect-[361_/_734]"
       map={SvgMap}
     />

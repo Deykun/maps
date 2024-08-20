@@ -45,7 +45,7 @@ const units = [
 
 // const typeFiltersList = getFilter(allUnits, 'type');
 // const animalFiltersList = getFilter(allUnits, 'animals');
-// const itemsFiltersList = getFilter(allUnits, 'items');
+// const itemFiltersList = getFilter(allUnits, 'items');
 
 const HeraldryPage = () => {
   const [selected, setSelected] = useState<AdministrativeUnit[]>([]);
