@@ -22,6 +22,8 @@ import Pane from '@/components/UI/Pane';
 import SubPane from '@/components/UI/SubPane';
 import ButtonCircle from '@/components/UI/ButtonCircle';
 
+import { colorsMarkersByNames } from '@/topic/Heraldry/constants';
+
 const getFilterToggle = (values: string[], setValues: (values: string[]) => void) => (value: string) => {
   if (values.includes(value)) {
     setValues(values.filter((active) => active !== value));
@@ -183,19 +185,18 @@ const FiltersPane = ({
         </div>}
       </Pane>}
       {activeMenu === 'color' && <SubPane order={2} className="absolute right-12 mt-2 mr-3 flex-row">
-        {[
-          { name: 'red', classNameIcon: '!fill-[#d61e27]' },
-          { name: 'green', classNameIcon: '!fill-[#299649]' },
-          { name: 'blue', classNameIcon: '!fill-[#1d7dc0]' },
-        ].map(({ name, classNameIcon }) => <ButtonCircle
+        {Object.keys(colorsMarkersByNames).map((name) => <ButtonCircle
           key={name}
           onClick={() => toggleColor(name)}
           title={t(`heraldry.unit.type.${lang}.${name}`)}
         >
           <IconColor
-            className={clsx(classNameIcon, 'duration-300', {
+            className={clsx('duration-300', {
               'opacity-30': !colorFilters.includes(name)
             })}
+            style={{
+              fill: colorsMarkersByNames[name],
+            }}
           />
         </ButtonCircle>)}
       </SubPane>}

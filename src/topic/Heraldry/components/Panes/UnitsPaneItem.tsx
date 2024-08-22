@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 import { AdministrativeUnit } from '@/topic/Heraldry/types';
+import { colorsMarkersByNames } from '@/topic/Heraldry/constants';
 
 import IconMarker from '@/components/Icons/IconMarker';
 import IconLink from '@/components/Icons/IconLink';
@@ -11,7 +12,7 @@ type Props = {
 }
 
 const UnitsPaneItem = ( { className, unit }: Props) => {
-  const { id, title, url, imagesList, imageSrcSet, place, markers } = unit;  
+  const { id, title, url, imagesList, imageSrcSet, place, markers, colors } = unit;  
   
   const { t } = useTranslation();
 
@@ -54,6 +55,27 @@ const UnitsPaneItem = ( { className, unit }: Props) => {
         })}>
           {' '}
           {place?.name || t('heraldry.item.noLocation')}
+        </p>
+        <p className="my-2">
+          Target
+          {Object.entries(colors?.byNames || {}).map(([colorName, colors = []]) => 
+            <span
+              className="inline-flex mx-1 size-4 rounded-md bg-[#eee] group overflow-hidden"
+              title={`${colorName} ${colors.sort((a, b) => a.distance - b.distance)?.[0]?.distance}`} 
+              style={{ backgroundColor: colorsMarkersByNames[colorName] }}
+            >
+              {colors.map((item) => <span className="color size-full opacity-0 group-hover:opacity-100 duration-300" style={{ backgroundColor: item.color }} />)}
+            </span>
+          )}
+        </p>
+        <p className="my-2">
+          {(colors?.hexPalette || []).map((hexColor) => {
+            return (
+              <span className="inline-flex size-4" style={{ backgroundColor: hexColor }}>
+                ?
+              </span>
+            );
+          })}
         </p>
       </span>
     </li>

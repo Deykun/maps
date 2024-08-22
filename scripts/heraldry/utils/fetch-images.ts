@@ -9,23 +9,50 @@ import { resolve } from 'path';
 import ColorThief from 'colorthief';
 import nearestColor from 'nearest-color';
 
-import { colorsByNames } from '../../../src/topic/Heraldry/constants';
+import { colorsByNames, colorsByNamesShift, colorsByNamesGrayscale } from '../../../src/topic/Heraldry/constants';
 import { AdministrativeUnit } from '../../../src/topic/Heraldry/types';
 
 import { getImageFileName, getCompressedImageSrc } from './get-image-file-name';
 import { getMarkers } from './get-markers';
 
+import { rgbToHex, getGreyscale, getImageColors } from './helpers/colors'
+
 const getColorName = nearestColor.from(colorsByNames);
+const getColorNameShift = nearestColor.from(colorsByNamesShift);
+const getColorNameGrayscale = nearestColor.from(colorsByNamesGrayscale);
 
-const componentToHex = (color: number) => {
-  const hex = color.toString(16);
+const colorMatchers = {
+  red: {
+    get: nearestColor.from({ color: '#f00' }),
+    thresholdDistance: 110,
+  },
+  green: {
+    get: nearestColor.from({ color: '#f00' }),
+    thresholdDistance: 180,
+  },
+  blue: {
+    get: nearestColor.from({ color: '#f00' }),
+    thresholdDistance: 200,
+  },
+  white: {
+    get: nearestColor.from({ color: '#fff' }),
+    thresholdDistance: 30,
+  },
+  black: {
+    get: nearestColor.from({ color: '#000' }),
+    thresholdDistance: 15,
+  },
+  gold:{
+     get: nearestColor.from({ color: '#bfa14e' }),
+     thresholdDistance: 60,
+  },
+  yellow: {
+    get: nearestColor.from({ color: '#fbf105' }),
+    thresholdDistance: 30,
+  },
+};
 
-  return hex.padStart(2, "0");
-}
-
-function rgbToHex([r,g,b]: [r: number, g: number, b: number]) {
-  return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
-}
+const colorMatchersList = Object.entries(colorMatchers); 
 
 export const download = async (url: string, fileName: string, format: string, path: string, lang: string) => {
   const response = await fetch(url);
@@ -107,6 +134,18 @@ export const fetchImages = async ({
           }
 
           try {
+              const primaryColor = await ColorThief.getColor(image);
+              const paletteColors = await ColorThief.getPalette(image, 5, 1);
+
+              // const colors = [primaryColorHex, ...paletteColorsHex].map(())
+              const {
+                colorsPalette,
+                colorsPaletteAlt,
+                colorsPaletteAlt2,
+                hexPalette,
+                byNames,
+               } = await getImageColors(image);
+
               const primary = await ColorThief.getColor(image).then(color => {
                   const hexColor = rgbToHex(color);
                   const near = getColorName(hexColor);
@@ -119,17 +158,21 @@ export const fetchImages = async ({
                   };
               });
 
-              const palette = await ColorThief.getPalette(image, 3).then(palette => palette.map(color => {
-                  const hexColor = rgbToHex(color);
-                  const near = getColorName(hexColor);
-                  const distance = typeof near === 'string' ? 255 : (near?.distance || 255) as number;
+              const palette = await ColorThief.getPalette(image, 4, 1).then(palette => palette.map(color => {
+                const hexColor = rgbToHex(color);
+                const near = getColorName(hexColor);
+                const distance = typeof near === 'string' ? 255 : (near?.distance || 255) as number;
 
-                  return {
-                      color: hexColor,
-                      name: typeof near === 'string' ? near : near?.name,
-                      distance,
-                  };
+                const greyscale = getGreyscale(color);
+
+                return {
+                    color: hexColor,
+                    name: typeof near === 'string' ? near : near?.name,
+                    distance,
+                    ...greyscale,
+                };
               }));
+
 
               const uniqPalette: {
                 color: string,
@@ -156,12 +199,30 @@ export const fetchImages = async ({
               }, {
                   [primary.name]: primary,
               }));
+
+              const colorsToCheck = [primary, ...palette];
+
+              // const matchedColors = colorMatchersList.reduce((stack: string[], [colorName, { get, thresholdDistance }]) => {
+              //   if (colorsToCheck.some(({ color }) => (get(color)?.distance || 255) < thresholdDistance)) {
+              //     stack.push(colorName);
+              //   }
+                
+              //   return stack;
+              // }, {});
               
               contentToSave[fileName] = {
                 ...unit,
                 description: '', // not needed
                 colors: {
+                  // matched: matchedColors,
+                  colorsPalette,
+                  colorsPaletteAlt,
+                  colorsPaletteAlt2,
+                  byNames,
+                  hexPalette,
                   primary,
+                  palleteOrg: palette,
+                  uniqPalette: uniqPalette,
                   palette: uniqPalette.filter(({ name, distance }) => {
                     if (name === 'blue') {
                       return distance < 200;

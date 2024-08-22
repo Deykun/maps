@@ -23,11 +23,132 @@
         "id": "maakunta-2",
         "index": 2,
         "colors": {
+            "colorsPalette": [
+                {
+                    "color": "#1559a4",
+                    "name": "blue",
+                    "distance": 129.00775170508166,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#ffffff",
+                    "name": "white",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
+                }
+            ],
+            "colorsPaletteAlt": [
+                [
+                    21,
+                    89,
+                    164
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "colorsPaletteAlt2": [
+                [
+                    21,
+                    89,
+                    164
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "colorsPaletteByName": {
+                "blue": [
+                    {
+                        "color": "#1559a4",
+                        "name": "blue",
+                        "distance": 129.00775170508166,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "color": "#ffffff",
+                        "name": "white",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ]
+            },
             "primary": {
                 "color": "#145ca4",
                 "name": "blue",
                 "distance": 130.93891705677117
             },
+            "palleteOrg": [
+                {
+                    "color": "#145ca4",
+                    "name": "blue",
+                    "distance": 130.93891705677117,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#c8d8ea",
+                    "name": "blue",
+                    "distance": 295.12200866760173,
+                    "isGreyscale": false,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#040609",
+                    "name": "blue",
+                    "distance": 246.1056683621895,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                },
+                {
+                    "color": "#84acd1",
+                    "name": "blue",
+                    "distance": 221.63934668736056,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "uniqPalette": [
+                {
+                    "color": "#145ca4",
+                    "name": "blue",
+                    "distance": 130.93891705677117
+                }
+            ],
             "palette": [
                 {
                     "color": "#145ca4",
@@ -82,11 +203,196 @@
         "id": "maakunta-1",
         "index": 1,
         "colors": {
+            "colorsPalette": [
+                {
+                    "color": "#da291c",
+                    "name": "red",
+                    "distance": 61.91930232165088,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#888888",
+                    "name": "grey",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#000000",
+                    "name": "black",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                },
+                {
+                    "color": "#ffffff",
+                    "name": "white",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
+                }
+            ],
+            "colorsPaletteAlt": [
+                [
+                    218,
+                    41,
+                    28
+                ],
+                [
+                    136,
+                    136,
+                    136
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "colorsPaletteAlt2": [
+                [
+                    218,
+                    41,
+                    28
+                ],
+                [
+                    136,
+                    136,
+                    136
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "colorsPaletteByName": {
+                "red": [
+                    {
+                        "color": "#da291c",
+                        "name": "red",
+                        "distance": 61.91930232165088,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "grey": [
+                    {
+                        "color": "#888888",
+                        "name": "grey",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "black": [
+                    {
+                        "color": "#000000",
+                        "name": "black",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": true,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "color": "#ffffff",
+                        "name": "white",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ]
+            },
             "primary": {
                 "color": "#d92d1d",
                 "name": "red",
                 "distance": 65.6505902486794
             },
+            "palleteOrg": [
+                {
+                    "color": "#d92d1d",
+                    "name": "red",
+                    "distance": 65.6505902486794,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#090606",
+                    "name": "red",
+                    "distance": 246.14629796119218,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                },
+                {
+                    "color": "#e5cc69",
+                    "name": "red",
+                    "distance": 230.90474226399076,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#949494",
+                    "name": "red",
+                    "distance": 235.06807524629966,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "uniqPalette": [
+                {
+                    "color": "#d92d1d",
+                    "name": "red",
+                    "distance": 65.6505902486794
+                }
+            ],
             "palette": [
                 {
                     "color": "#d92d1d",
@@ -141,16 +447,177 @@
         "id": "maakunta-4",
         "index": 4,
         "colors": {
+            "colorsPalette": [
+                {
+                    "color": "#ffcd00",
+                    "name": "red",
+                    "distance": 205,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#e40046",
+                    "name": "red",
+                    "distance": 75.02666192761077,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#ffffff",
+                    "name": "white",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
+                }
+            ],
+            "colorsPaletteAlt": [
+                [
+                    255,
+                    205,
+                    0
+                ],
+                [
+                    228,
+                    0,
+                    70
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "colorsPaletteAlt2": [
+                [
+                    255,
+                    205,
+                    0
+                ],
+                [
+                    228,
+                    0,
+                    70
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "colorsPaletteByName": {
+                "red": [
+                    {
+                        "color": "#ffcd00",
+                        "name": "red",
+                        "distance": 205,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    },
+                    {
+                        "color": "#e40046",
+                        "name": "red",
+                        "distance": 75.02666192761077,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "color": "#ffffff",
+                        "name": "white",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ]
+            },
             "primary": {
                 "color": "#fbca0a",
                 "name": "red",
                 "distance": 202.28692493584452
             },
+            "palleteOrg": [
+                {
+                    "color": "#e40644",
+                    "name": "red",
+                    "distance": 73.40980860893181,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#fbca0a",
+                    "name": "red",
+                    "distance": 202.28692493584452,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#0c0406",
+                    "name": "red",
+                    "distance": 243.1069723393387,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                },
+                {
+                    "color": "#f47ca4",
+                    "name": "red",
+                    "distance": 205.89560461554296,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "uniqPalette": [
+                {
+                    "color": "#e40644",
+                    "name": "red",
+                    "distance": 73.40980860893181,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
             "palette": [
                 {
                     "color": "#e40644",
                     "name": "red",
-                    "distance": 73.40980860893181
+                    "distance": 73.40980860893181,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
                 }
             ]
         },
@@ -203,11 +670,142 @@
         "id": "maakunta-5",
         "index": 5,
         "colors": {
+            "colorsPalette": [
+                {
+                    "color": "#2e68b2",
+                    "name": "blue",
+                    "distance": 137.33535597216036,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#ccccca",
+                    "name": "grey",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "colorsPaletteAlt": [
+                [
+                    46,
+                    104,
+                    178
+                ],
+                [
+                    204,
+                    204,
+                    202
+                ]
+            ],
+            "colorsPaletteAlt2": [
+                [
+                    46,
+                    104,
+                    178
+                ],
+                [
+                    204,
+                    204,
+                    202
+                ]
+            ],
+            "colorsPaletteByName": {
+                "blue": [
+                    {
+                        "color": "#2e68b2",
+                        "name": "blue",
+                        "distance": 137.33535597216036,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "grey": [
+                    {
+                        "color": "#ccccca",
+                        "name": "grey",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
             "primary": {
                 "color": "#2c6cb4",
                 "name": "blue",
                 "distance": 138.6542462386205
             },
+            "palleteOrg": [
+                {
+                    "color": "#cacbcb",
+                    "name": "green",
+                    "distance": 291.06184909740404,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#2c6cb4",
+                    "name": "blue",
+                    "distance": 138.6542462386205,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#688cbc",
+                    "name": "blue",
+                    "distance": 186.82879863661276,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#7c9cbc",
+                    "name": "blue",
+                    "distance": 210.24033866030564,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "uniqPalette": [
+                {
+                    "color": "#2c6cb4",
+                    "name": "blue",
+                    "distance": 138.6542462386205
+                },
+                {
+                    "color": "#cacbcb",
+                    "name": "green",
+                    "distance": 291.06184909740404,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
             "palette": [
                 {
                     "color": "#2c6cb4",
@@ -260,11 +858,219 @@
         "id": "maakunta-3",
         "index": 3,
         "colors": {
+            "colorsPalette": [
+                {
+                    "color": "#ffce26",
+                    "name": "red",
+                    "distance": 209.4755355644186,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#abadb1",
+                    "name": "grey",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#ffffff",
+                    "name": "white",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
+                },
+                {
+                    "color": "#121722",
+                    "name": "grey",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "colorsPaletteAlt": [
+                [
+                    255,
+                    206,
+                    38
+                ],
+                [
+                    171,
+                    173,
+                    177
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    18,
+                    23,
+                    34
+                ]
+            ],
+            "colorsPaletteAlt2": [
+                [
+                    255,
+                    206,
+                    38
+                ],
+                [
+                    171,
+                    173,
+                    177
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    18,
+                    23,
+                    34
+                ]
+            ],
+            "colorsPaletteByName": {
+                "red": [
+                    {
+                        "color": "#ffce26",
+                        "name": "red",
+                        "distance": 209.4755355644186,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "grey": [
+                    {
+                        "color": "#abadb1",
+                        "name": "grey",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    },
+                    {
+                        "color": "#121722",
+                        "name": "grey",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "color": "#ffffff",
+                        "name": "white",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ]
+            },
             "primary": {
                 "color": "#f5c92e",
                 "name": "red",
                 "distance": 206.4388529322908
             },
+            "palleteOrg": [
+                {
+                    "color": "#141424",
+                    "name": "blue",
+                    "distance": 220.81893034792103,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#f6c92d",
+                    "name": "red",
+                    "distance": 206.17225807561985,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#84848c",
+                    "name": "blue",
+                    "distance": 219.25555865245468,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#848c8c",
+                    "name": "green",
+                    "distance": 224.1628872048181,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "uniqPalette": [
+                {
+                    "color": "#f6c92d",
+                    "name": "red",
+                    "distance": 206.17225807561985,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#84848c",
+                    "name": "blue",
+                    "distance": 219.25555865245468,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#848c8c",
+                    "name": "green",
+                    "distance": 224.1628872048181,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
             "palette": []
         },
         "imageUrl": "images/heraldry/fi/maakunta/etelasavon-vaakuna.png",
@@ -313,11 +1119,142 @@
         "id": "maakunta-6",
         "index": 6,
         "colors": {
+            "colorsPalette": [
+                {
+                    "color": "#feed00",
+                    "name": "red",
+                    "distance": 237.00210969525145,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#2b954a",
+                    "name": "green",
+                    "distance": 136.23876100434853,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "colorsPaletteAlt": [
+                [
+                    254,
+                    237,
+                    0
+                ],
+                [
+                    43,
+                    149,
+                    74
+                ]
+            ],
+            "colorsPaletteAlt2": [
+                [
+                    254,
+                    237,
+                    0
+                ],
+                [
+                    43,
+                    149,
+                    74
+                ]
+            ],
+            "colorsPaletteByName": {
+                "red": [
+                    {
+                        "color": "#feed00",
+                        "name": "red",
+                        "distance": 237.00210969525145,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "green": [
+                    {
+                        "color": "#2b954a",
+                        "name": "green",
+                        "distance": 136.23876100434853,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
             "primary": {
                 "color": "#2c944b",
                 "name": "green",
                 "distance": 137.87675656179326
             },
+            "palleteOrg": [
+                {
+                    "color": "#2c944b",
+                    "name": "green",
+                    "distance": 137.87675656179326,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#fbeb04",
+                    "name": "red",
+                    "distance": 235.06807524629966,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#a5c81f",
+                    "name": "green",
+                    "distance": 176.666352200978,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#c5d414",
+                    "name": "green",
+                    "distance": 202.62773748921938,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "uniqPalette": [
+                {
+                    "color": "#2c944b",
+                    "name": "green",
+                    "distance": 137.87675656179326
+                },
+                {
+                    "color": "#fbeb04",
+                    "name": "red",
+                    "distance": 235.06807524629966,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
             "palette": [
                 {
                     "color": "#2c944b",
@@ -372,16 +1309,251 @@
         "id": "maakunta-0",
         "index": 0,
         "colors": {
+            "colorsPalette": [
+                {
+                    "color": "#ac0707",
+                    "name": "red",
+                    "distance": 83.58827668997608,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#0556c7",
+                    "name": "blue",
+                    "distance": 102.74726273726225,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#dbb357",
+                    "name": "gold",
+                    "distance": 34.48187929913333,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#dbb357",
+                    "name": "red",
+                    "distance": 202.25231766286387,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#ffffff",
+                    "name": "white",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
+                }
+            ],
+            "colorsPaletteAlt": [
+                [
+                    172,
+                    7,
+                    7
+                ],
+                [
+                    5,
+                    86,
+                    199
+                ],
+                [
+                    219,
+                    179,
+                    87
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "colorsPaletteAlt2": [
+                [
+                    172,
+                    7,
+                    7
+                ],
+                [
+                    5,
+                    86,
+                    199
+                ],
+                [
+                    219,
+                    179,
+                    87
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "colorsPaletteByName": {
+                "red": [
+                    {
+                        "color": "#ac0707",
+                        "name": "red",
+                        "distance": 83.58827668997608,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    },
+                    {
+                        "color": "#dbb357",
+                        "name": "red",
+                        "distance": 202.25231766286387,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "color": "#0556c7",
+                        "name": "blue",
+                        "distance": 102.74726273726225,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "gold": [
+                    {
+                        "color": "#dbb357",
+                        "name": "gold",
+                        "distance": 34.48187929913333,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "color": "#ffffff",
+                        "name": "white",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ]
+            },
             "primary": {
                 "color": "#d6b976",
                 "name": "red",
                 "distance": 223.22634253152114
             },
-            "palette": [
+            "palleteOrg": [
                 {
                     "color": "#0654c1",
                     "name": "blue",
-                    "distance": 104.57533169921098
+                    "distance": 104.57533169921098,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#d6b976",
+                    "name": "red",
+                    "distance": 223.22634253152114,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#d11512",
+                    "name": "red",
+                    "distance": 53.67494760127857,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#599cfc",
+                    "name": "blue",
+                    "distance": 179.62739212046696,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "uniqPalette": [
+                {
+                    "color": "#d11512",
+                    "name": "red",
+                    "distance": 53.67494760127857,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#0654c1",
+                    "name": "blue",
+                    "distance": 104.57533169921098,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "palette": [
+                {
+                    "color": "#d11512",
+                    "name": "red",
+                    "distance": 53.67494760127857,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#0654c1",
+                    "name": "blue",
+                    "distance": 104.57533169921098,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
                 }
             ]
         },
@@ -434,16 +1606,177 @@
         "id": "maakunta-7",
         "index": 7,
         "colors": {
+            "colorsPalette": [
+                {
+                    "color": "#ffcd00",
+                    "name": "red",
+                    "distance": 205,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#e40046",
+                    "name": "red",
+                    "distance": 75.02666192761077,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#ffffff",
+                    "name": "white",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
+                }
+            ],
+            "colorsPaletteAlt": [
+                [
+                    255,
+                    205,
+                    0
+                ],
+                [
+                    228,
+                    0,
+                    70
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "colorsPaletteAlt2": [
+                [
+                    255,
+                    205,
+                    0
+                ],
+                [
+                    228,
+                    0,
+                    70
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "colorsPaletteByName": {
+                "red": [
+                    {
+                        "color": "#ffcd00",
+                        "name": "red",
+                        "distance": 205,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    },
+                    {
+                        "color": "#e40046",
+                        "name": "red",
+                        "distance": 75.02666192761077,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "color": "#ffffff",
+                        "name": "white",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ]
+            },
             "primary": {
                 "color": "#fbca0a",
                 "name": "red",
                 "distance": 202.28692493584452
             },
+            "palleteOrg": [
+                {
+                    "color": "#e40644",
+                    "name": "red",
+                    "distance": 73.40980860893181,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#fbca0a",
+                    "name": "red",
+                    "distance": 202.28692493584452,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#0c0406",
+                    "name": "red",
+                    "distance": 243.1069723393387,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                },
+                {
+                    "color": "#f47ca4",
+                    "name": "red",
+                    "distance": 205.89560461554296,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "uniqPalette": [
+                {
+                    "color": "#e40644",
+                    "name": "red",
+                    "distance": 73.40980860893181,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
             "palette": [
                 {
                     "color": "#e40644",
                     "name": "red",
-                    "distance": 73.40980860893181
+                    "distance": 73.40980860893181,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
                 }
             ]
         },
@@ -496,11 +1829,172 @@
         "id": "maakunta-11",
         "index": 11,
         "colors": {
+            "colorsPalette": [
+                {
+                    "color": "#0032ab",
+                    "name": "blue",
+                    "distance": 97.75479527879949,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#7a94d3",
+                    "name": "blue",
+                    "distance": 196.78414570284875,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#ffffff",
+                    "name": "white",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
+                }
+            ],
+            "colorsPaletteAlt": [
+                [
+                    0,
+                    50,
+                    171
+                ],
+                [
+                    122,
+                    148,
+                    211
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "colorsPaletteAlt2": [
+                [
+                    0,
+                    50,
+                    171
+                ],
+                [
+                    122,
+                    148,
+                    211
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "colorsPaletteByName": {
+                "blue": [
+                    {
+                        "color": "#0032ab",
+                        "name": "blue",
+                        "distance": 97.75479527879949,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    },
+                    {
+                        "color": "#7a94d3",
+                        "name": "blue",
+                        "distance": 196.78414570284875,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "color": "#ffffff",
+                        "name": "white",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ]
+            },
             "primary": {
                 "color": "#0534ac",
                 "name": "blue",
                 "distance": 98.07140255956371
             },
+            "palleteOrg": [
+                {
+                    "color": "#0636ac",
+                    "name": "blue",
+                    "distance": 99.20181449953424,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#dcd09e",
+                    "name": "red",
+                    "distance": 263.53937087274073,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#7691d4",
+                    "name": "blue",
+                    "distance": 191.8280480013285,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#7c9cd4",
+                    "name": "blue",
+                    "distance": 203.86515150952113,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "uniqPalette": [
+                {
+                    "color": "#0534ac",
+                    "name": "blue",
+                    "distance": 98.07140255956371
+                },
+                {
+                    "color": "#dcd09e",
+                    "name": "red",
+                    "distance": 263.53937087274073,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
             "palette": [
                 {
                     "color": "#0534ac",
@@ -556,16 +2050,219 @@
         "id": "maakunta-8",
         "index": 8,
         "colors": {
+            "colorsPalette": [
+                {
+                    "color": "#fff200",
+                    "name": "red",
+                    "distance": 242,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#2d358a",
+                    "name": "blue",
+                    "distance": 136.09922850626305,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#dd0328",
+                    "name": "red",
+                    "distance": 52.583267300539625,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#ffffff",
+                    "name": "white",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
+                }
+            ],
+            "colorsPaletteAlt": [
+                [
+                    255,
+                    242,
+                    0
+                ],
+                [
+                    45,
+                    53,
+                    138
+                ],
+                [
+                    221,
+                    3,
+                    40
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "colorsPaletteAlt2": [
+                [
+                    255,
+                    242,
+                    0
+                ],
+                [
+                    45,
+                    53,
+                    138
+                ],
+                [
+                    221,
+                    3,
+                    40
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "colorsPaletteByName": {
+                "red": [
+                    {
+                        "color": "#fff200",
+                        "name": "red",
+                        "distance": 242,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    },
+                    {
+                        "color": "#dd0328",
+                        "name": "red",
+                        "distance": 52.583267300539625,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "color": "#2d358a",
+                        "name": "blue",
+                        "distance": 136.09922850626305,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "color": "#ffffff",
+                        "name": "white",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ]
+            },
             "primary": {
                 "color": "#dc052c",
                 "name": "red",
                 "distance": 56.444663166680336
             },
+            "palleteOrg": [
+                {
+                    "color": "#dc062c",
+                    "name": "red",
+                    "distance": 56.542019772908716,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#fae426",
+                    "name": "red",
+                    "distance": 231.1990484409484,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#313988",
+                    "name": "blue",
+                    "distance": 140.75155416548694,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#ec7c94",
+                    "name": "red",
+                    "distance": 194.01288616996553,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "uniqPalette": [
+                {
+                    "color": "#dc052c",
+                    "name": "red",
+                    "distance": 56.444663166680336
+                },
+                {
+                    "color": "#313988",
+                    "name": "blue",
+                    "distance": 140.75155416548694,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
             "palette": [
                 {
                     "color": "#dc052c",
                     "name": "red",
                     "distance": 56.444663166680336
+                },
+                {
+                    "color": "#313988",
+                    "name": "blue",
+                    "distance": 140.75155416548694,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
                 }
             ]
         },
@@ -616,16 +2313,261 @@
         "id": "maakunta-9",
         "index": 9,
         "colors": {
+            "colorsPalette": [
+                {
+                    "color": "#ed241a",
+                    "name": "red",
+                    "distance": 47.916594202843754,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#155bdb",
+                    "name": "blue",
+                    "distance": 100.08995953640904,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#020710",
+                    "name": "black",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                },
+                {
+                    "color": "#7e7e7e",
+                    "name": "grey",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#cccccc",
+                    "name": "grey",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "colorsPaletteAlt": [
+                [
+                    237,
+                    36,
+                    26
+                ],
+                [
+                    21,
+                    91,
+                    219
+                ],
+                [
+                    2,
+                    7,
+                    16
+                ],
+                [
+                    126,
+                    126,
+                    126
+                ],
+                [
+                    204,
+                    204,
+                    204
+                ]
+            ],
+            "colorsPaletteAlt2": [
+                [
+                    237,
+                    36,
+                    26
+                ],
+                [
+                    21,
+                    91,
+                    219
+                ],
+                [
+                    2,
+                    7,
+                    16
+                ],
+                [
+                    126,
+                    126,
+                    126
+                ],
+                [
+                    204,
+                    204,
+                    204
+                ]
+            ],
+            "colorsPaletteByName": {
+                "red": [
+                    {
+                        "color": "#ed241a",
+                        "name": "red",
+                        "distance": 47.916594202843754,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "color": "#155bdb",
+                        "name": "blue",
+                        "distance": 100.08995953640904,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "black": [
+                    {
+                        "color": "#020710",
+                        "name": "black",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": true,
+                        "isWhite": false
+                    }
+                ],
+                "grey": [
+                    {
+                        "color": "#7e7e7e",
+                        "name": "grey",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    },
+                    {
+                        "color": "#cccccc",
+                        "name": "grey",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
             "primary": {
                 "color": "#d5ceba",
                 "name": "red",
                 "distance": 280.70625215694787
             },
+            "palleteOrg": [
+                {
+                    "color": "#d5ccb8",
+                    "name": "red",
+                    "distance": 277.91365565585295,
+                    "isGreyscale": false,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#165cd9",
+                    "name": "blue",
+                    "distance": 101.94115949899727,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#1e1f1f",
+                    "name": "green",
+                    "distance": 228.11619846034608,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#84acec",
+                    "name": "blue",
+                    "distance": 217.6442050687314,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "uniqPalette": [
+                {
+                    "color": "#d5ccb8",
+                    "name": "red",
+                    "distance": 277.91365565585295,
+                    "isGreyscale": false,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#165cd9",
+                    "name": "blue",
+                    "distance": 101.94115949899727,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#1e1f1f",
+                    "name": "green",
+                    "distance": 228.11619846034608,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
             "palette": [
                 {
-                    "color": "#1756c6",
+                    "color": "#165cd9",
                     "name": "blue",
-                    "distance": 105.70714261581381
+                    "distance": 101.94115949899727,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
                 }
             ]
         },
@@ -677,16 +2619,115 @@
         "id": "maakunta-13",
         "index": 13,
         "colors": {
+            "colorsPalette": [
+                {
+                    "color": "#efbc00",
+                    "name": "red",
+                    "distance": 188.67962264113208,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "colorsPaletteAlt": [
+                [
+                    239,
+                    188,
+                    0
+                ]
+            ],
+            "colorsPaletteAlt2": [
+                [
+                    239,
+                    188,
+                    0
+                ]
+            ],
+            "colorsPaletteByName": {
+                "red": [
+                    {
+                        "color": "#efbc00",
+                        "name": "red",
+                        "distance": 188.67962264113208,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
             "primary": {
                 "color": "#ecbb04",
                 "name": "red",
                 "distance": 188.00531907369003
             },
+            "palleteOrg": [
+                {
+                    "color": "#ecbb04",
+                    "name": "red",
+                    "distance": 188.00531907369003,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#d42c2b",
+                    "name": "red",
+                    "distance": 75.05997601918082,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#df5d1b",
+                    "name": "red",
+                    "distance": 101.99019560722492,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#e4860e",
+                    "name": "red",
+                    "distance": 137.40815114104404,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "uniqPalette": [
+                {
+                    "color": "#d42c2b",
+                    "name": "red",
+                    "distance": 75.05997601918082,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
             "palette": [
                 {
                     "color": "#d42c2b",
                     "name": "red",
-                    "distance": 75.05997601918082
+                    "distance": 75.05997601918082,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
                 }
             ]
         },
@@ -734,11 +2775,204 @@
         "id": "maakunta-12",
         "index": 12,
         "colors": {
+            "colorsPalette": [
+                {
+                    "color": "#008337",
+                    "name": "green",
+                    "distance": 135.6502856613284,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#6782c1",
+                    "name": "blue",
+                    "distance": 177.06778363101515,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#d1241c",
+                    "name": "red",
+                    "distance": 64.77653896280658,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#f8baa2",
+                    "name": "red",
+                    "distance": 246.75696545386515,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "colorsPaletteAlt": [
+                [
+                    0,
+                    131,
+                    55
+                ],
+                [
+                    103,
+                    130,
+                    193
+                ],
+                [
+                    209,
+                    36,
+                    28
+                ],
+                [
+                    248,
+                    186,
+                    162
+                ]
+            ],
+            "colorsPaletteAlt2": [
+                [
+                    0,
+                    131,
+                    55
+                ],
+                [
+                    103,
+                    130,
+                    193
+                ],
+                [
+                    209,
+                    36,
+                    28
+                ],
+                [
+                    248,
+                    186,
+                    162
+                ]
+            ],
+            "colorsPaletteByName": {
+                "green": [
+                    {
+                        "color": "#008337",
+                        "name": "green",
+                        "distance": 135.6502856613284,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "color": "#6782c1",
+                        "name": "blue",
+                        "distance": 177.06778363101515,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "red": [
+                    {
+                        "color": "#d1241c",
+                        "name": "red",
+                        "distance": 64.77653896280658,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    },
+                    {
+                        "color": "#f8baa2",
+                        "name": "red",
+                        "distance": 246.75696545386515,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
             "primary": {
                 "color": "#d4271e",
                 "name": "red",
                 "distance": 65.34523701081817
             },
+            "palleteOrg": [
+                {
+                    "color": "#d4271e",
+                    "name": "red",
+                    "distance": 65.34523701081817,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#e4c3b7",
+                    "name": "red",
+                    "distance": 268.78057965559935,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#dabe5f",
+                    "name": "red",
+                    "distance": 215.6246739127969,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#285f3f",
+                    "name": "green",
+                    "distance": 176.54744404833505,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "uniqPalette": [
+                {
+                    "color": "#d4271e",
+                    "name": "red",
+                    "distance": 65.34523701081817
+                },
+                {
+                    "color": "#285f3f",
+                    "name": "green",
+                    "distance": 176.54744404833505,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
             "palette": [
                 {
                     "color": "#d4271e",
@@ -746,9 +2980,14 @@
                     "distance": 65.34523701081817
                 },
                 {
-                    "color": "#285e40",
+                    "color": "#285f3f",
                     "name": "green",
-                    "distance": 177.81169815284932
+                    "distance": 176.54744404833505,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
                 }
             ]
         },
@@ -798,16 +3037,209 @@
         "id": "maakunta-10",
         "index": 10,
         "colors": {
+            "colorsPalette": [
+                {
+                    "color": "#ff1a3d",
+                    "name": "red",
+                    "distance": 66.30987860040162,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#696969",
+                    "name": "grey",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#000000",
+                    "name": "black",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                },
+                {
+                    "color": "#e6e6e6",
+                    "name": "grey",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "colorsPaletteAlt": [
+                [
+                    255,
+                    26,
+                    61
+                ],
+                [
+                    105,
+                    105,
+                    105
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    230,
+                    230,
+                    230
+                ]
+            ],
+            "colorsPaletteAlt2": [
+                [
+                    255,
+                    26,
+                    61
+                ],
+                [
+                    105,
+                    105,
+                    105
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    230,
+                    230,
+                    230
+                ]
+            ],
+            "colorsPaletteByName": {
+                "red": [
+                    {
+                        "color": "#ff1a3d",
+                        "name": "red",
+                        "distance": 66.30987860040162,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "grey": [
+                    {
+                        "color": "#696969",
+                        "name": "grey",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    },
+                    {
+                        "color": "#e6e6e6",
+                        "name": "grey",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "black": [
+                    {
+                        "color": "#000000",
+                        "name": "black",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": true,
+                        "isWhite": false
+                    }
+                ]
+            },
             "primary": {
                 "color": "#e1e1e1",
                 "name": "red",
                 "distance": 319.60913628993774
             },
+            "palleteOrg": [
+                {
+                    "color": "#060606",
+                    "name": "red",
+                    "distance": 249.14453636393475,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                },
+                {
+                    "color": "#e0e0e0",
+                    "name": "red",
+                    "distance": 318.29703108888714,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#bf3045",
+                    "name": "red",
+                    "distance": 105.64563407921787,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#747474",
+                    "name": "red",
+                    "distance": 215.01860384627187,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "uniqPalette": [
+                {
+                    "color": "#bf3045",
+                    "name": "red",
+                    "distance": 105.64563407921787,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
             "palette": [
                 {
-                    "color": "#c23045",
+                    "color": "#bf3045",
                     "name": "red",
-                    "distance": 103.85566907973777
+                    "distance": 105.64563407921787,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
                 }
             ]
         },
@@ -857,11 +3289,164 @@
         "id": "maakunta-14",
         "index": 14,
         "colors": {
+            "colorsPalette": [
+                {
+                    "color": "#0e57a1",
+                    "name": "blue",
+                    "distance": 128.84486796143648,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#000101",
+                    "name": "black",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                },
+                {
+                    "color": "#ffffff",
+                    "name": "white",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
+                }
+            ],
+            "colorsPaletteAlt": [
+                [
+                    14,
+                    87,
+                    161
+                ],
+                [
+                    0,
+                    1,
+                    1
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "colorsPaletteAlt2": [
+                [
+                    14,
+                    87,
+                    161
+                ],
+                [
+                    0,
+                    1,
+                    1
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "colorsPaletteByName": {
+                "blue": [
+                    {
+                        "color": "#0e57a1",
+                        "name": "blue",
+                        "distance": 128.84486796143648,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "black": [
+                    {
+                        "color": "#000101",
+                        "name": "black",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": true,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "color": "#ffffff",
+                        "name": "white",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ]
+            },
             "primary": {
                 "color": "#0c54a4",
                 "name": "blue",
                 "distance": 124.42266674525185
             },
+            "palleteOrg": [
+                {
+                    "color": "#0d54a4",
+                    "name": "blue",
+                    "distance": 124.52309022827855,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#c8d9ea",
+                    "name": "blue",
+                    "distance": 295.85469406450187,
+                    "isGreyscale": false,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#05090c",
+                    "name": "blue",
+                    "distance": 243.2180092016214,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                },
+                {
+                    "color": "#84accf",
+                    "name": "blue",
+                    "distance": 222.06305410851215,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "uniqPalette": [
+                {
+                    "color": "#0c54a4",
+                    "name": "blue",
+                    "distance": 124.42266674525185
+                }
+            ],
             "palette": [
                 {
                     "color": "#0c54a4",
@@ -916,16 +3501,219 @@
         "id": "maakunta-16",
         "index": 16,
         "colors": {
+            "colorsPalette": [
+                {
+                    "color": "#fff200",
+                    "name": "red",
+                    "distance": 242,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#2d358a",
+                    "name": "blue",
+                    "distance": 136.09922850626305,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#dd0328",
+                    "name": "red",
+                    "distance": 52.583267300539625,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#ffffff",
+                    "name": "white",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
+                }
+            ],
+            "colorsPaletteAlt": [
+                [
+                    255,
+                    242,
+                    0
+                ],
+                [
+                    45,
+                    53,
+                    138
+                ],
+                [
+                    221,
+                    3,
+                    40
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "colorsPaletteAlt2": [
+                [
+                    255,
+                    242,
+                    0
+                ],
+                [
+                    45,
+                    53,
+                    138
+                ],
+                [
+                    221,
+                    3,
+                    40
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "colorsPaletteByName": {
+                "red": [
+                    {
+                        "color": "#fff200",
+                        "name": "red",
+                        "distance": 242,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    },
+                    {
+                        "color": "#dd0328",
+                        "name": "red",
+                        "distance": 52.583267300539625,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "color": "#2d358a",
+                        "name": "blue",
+                        "distance": 136.09922850626305,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "color": "#ffffff",
+                        "name": "white",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ]
+            },
             "primary": {
                 "color": "#dc052c",
                 "name": "red",
                 "distance": 56.444663166680336
             },
+            "palleteOrg": [
+                {
+                    "color": "#dc062c",
+                    "name": "red",
+                    "distance": 56.542019772908716,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#fae426",
+                    "name": "red",
+                    "distance": 231.1990484409484,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#313988",
+                    "name": "blue",
+                    "distance": 140.75155416548694,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#ec7c94",
+                    "name": "red",
+                    "distance": 194.01288616996553,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "uniqPalette": [
+                {
+                    "color": "#dc052c",
+                    "name": "red",
+                    "distance": 56.444663166680336
+                },
+                {
+                    "color": "#313988",
+                    "name": "blue",
+                    "distance": 140.75155416548694,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
             "palette": [
                 {
                     "color": "#dc052c",
                     "name": "red",
                     "distance": 56.444663166680336
+                },
+                {
+                    "color": "#313988",
+                    "name": "blue",
+                    "distance": 140.75155416548694,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
                 }
             ]
         },
@@ -976,11 +3764,164 @@
         "id": "maakunta-17",
         "index": 17,
         "colors": {
+            "colorsPalette": [
+                {
+                    "color": "#0e57a1",
+                    "name": "blue",
+                    "distance": 128.84486796143648,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#000101",
+                    "name": "black",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                },
+                {
+                    "color": "#ffffff",
+                    "name": "white",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
+                }
+            ],
+            "colorsPaletteAlt": [
+                [
+                    14,
+                    87,
+                    161
+                ],
+                [
+                    0,
+                    1,
+                    1
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "colorsPaletteAlt2": [
+                [
+                    14,
+                    87,
+                    161
+                ],
+                [
+                    0,
+                    1,
+                    1
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "colorsPaletteByName": {
+                "blue": [
+                    {
+                        "color": "#0e57a1",
+                        "name": "blue",
+                        "distance": 128.84486796143648,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "black": [
+                    {
+                        "color": "#000101",
+                        "name": "black",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": true,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "color": "#ffffff",
+                        "name": "white",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ]
+            },
             "primary": {
                 "color": "#0c54a4",
                 "name": "blue",
                 "distance": 124.42266674525185
             },
+            "palleteOrg": [
+                {
+                    "color": "#0d54a4",
+                    "name": "blue",
+                    "distance": 124.52309022827855,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#c8d9ea",
+                    "name": "blue",
+                    "distance": 295.85469406450187,
+                    "isGreyscale": false,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#05090c",
+                    "name": "blue",
+                    "distance": 243.2180092016214,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                },
+                {
+                    "color": "#84accf",
+                    "name": "blue",
+                    "distance": 222.06305410851215,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "uniqPalette": [
+                {
+                    "color": "#0c54a4",
+                    "name": "blue",
+                    "distance": 124.42266674525185
+                }
+            ],
             "palette": [
                 {
                     "color": "#0c54a4",
@@ -1035,11 +3976,130 @@
         "id": "maakunta-15",
         "index": 15,
         "colors": {
+            "colorsPalette": [
+                {
+                    "color": "#ffd700",
+                    "name": "red",
+                    "distance": 215,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#d50032",
+                    "name": "red",
+                    "distance": 65.29931086925804,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "colorsPaletteAlt": [
+                [
+                    255,
+                    215,
+                    0
+                ],
+                [
+                    213,
+                    0,
+                    50
+                ]
+            ],
+            "colorsPaletteAlt2": [
+                [
+                    255,
+                    215,
+                    0
+                ],
+                [
+                    213,
+                    0,
+                    50
+                ]
+            ],
+            "colorsPaletteByName": {
+                "red": [
+                    {
+                        "color": "#ffd700",
+                        "name": "red",
+                        "distance": 215,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    },
+                    {
+                        "color": "#d50032",
+                        "name": "red",
+                        "distance": 65.29931086925804,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
             "primary": {
                 "color": "#d40433",
                 "name": "red",
                 "distance": 66.82813778641449
             },
+            "palleteOrg": [
+                {
+                    "color": "#d40433",
+                    "name": "red",
+                    "distance": 66.82813778641449,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#fbd304",
+                    "name": "red",
+                    "distance": 211.0758157629623,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#e5531f",
+                    "name": "red",
+                    "distance": 92.33634170791044,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#ef8612",
+                    "name": "red",
+                    "distance": 136.14697940094007,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "uniqPalette": [
+                {
+                    "color": "#d40433",
+                    "name": "red",
+                    "distance": 66.82813778641449
+                }
+            ],
             "palette": [
                 {
                     "color": "#d40433",
@@ -1094,11 +4154,219 @@
         "id": "maakunta-18",
         "index": 18,
         "colors": {
+            "colorsPalette": [
+                {
+                    "color": "#ffce26",
+                    "name": "red",
+                    "distance": 209.4755355644186,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#7a7d83",
+                    "name": "grey",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#ffffff",
+                    "name": "white",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
+                },
+                {
+                    "color": "#121722",
+                    "name": "grey",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "colorsPaletteAlt": [
+                [
+                    255,
+                    206,
+                    38
+                ],
+                [
+                    122,
+                    125,
+                    131
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    18,
+                    23,
+                    34
+                ]
+            ],
+            "colorsPaletteAlt2": [
+                [
+                    255,
+                    206,
+                    38
+                ],
+                [
+                    122,
+                    125,
+                    131
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    18,
+                    23,
+                    34
+                ]
+            ],
+            "colorsPaletteByName": {
+                "red": [
+                    {
+                        "color": "#ffce26",
+                        "name": "red",
+                        "distance": 209.4755355644186,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "grey": [
+                    {
+                        "color": "#7a7d83",
+                        "name": "grey",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    },
+                    {
+                        "color": "#121722",
+                        "name": "grey",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "color": "#ffffff",
+                        "name": "white",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ]
+            },
             "primary": {
                 "color": "#f7ca2d",
                 "name": "red",
                 "distance": 207.1062529234692
             },
+            "palleteOrg": [
+                {
+                    "color": "#141424",
+                    "name": "blue",
+                    "distance": 220.81893034792103,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#f6c92d",
+                    "name": "red",
+                    "distance": 206.17225807561985,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#84848c",
+                    "name": "blue",
+                    "distance": 219.25555865245468,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#848c8c",
+                    "name": "green",
+                    "distance": 224.1628872048181,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "uniqPalette": [
+                {
+                    "color": "#f6c92d",
+                    "name": "red",
+                    "distance": 206.17225807561985,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#84848c",
+                    "name": "blue",
+                    "distance": 219.25555865245468,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#848c8c",
+                    "name": "green",
+                    "distance": 224.1628872048181,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
             "palette": []
         },
         "imageUrl": "images/heraldry/fi/maakunta/pohjoissavon-vaakuna.png",
@@ -1147,21 +4415,204 @@
         "id": "maakunta-19",
         "index": 19,
         "colors": {
+            "colorsPalette": [
+                {
+                    "color": "#fff200",
+                    "name": "red",
+                    "distance": 242,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#73a864",
+                    "name": "green",
+                    "distance": 175.4821928287882,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#006bb6",
+                    "name": "blue",
+                    "distance": 129.52991932368366,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "colorsPaletteAlt": [
+                [
+                    255,
+                    242,
+                    0
+                ],
+                [
+                    115,
+                    168,
+                    100
+                ],
+                [
+                    0,
+                    107,
+                    182
+                ]
+            ],
+            "colorsPaletteAlt2": [
+                [
+                    255,
+                    242,
+                    0
+                ],
+                [
+                    115,
+                    168,
+                    100
+                ],
+                [
+                    0,
+                    107,
+                    182
+                ]
+            ],
+            "colorsPaletteByName": {
+                "red": [
+                    {
+                        "color": "#fff200",
+                        "name": "red",
+                        "distance": 242,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "green": [
+                    {
+                        "color": "#73a864",
+                        "name": "green",
+                        "distance": 175.4821928287882,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "color": "#006bb6",
+                        "name": "blue",
+                        "distance": 129.52991932368366,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
             "primary": {
                 "color": "#f3ee09",
                 "name": "red",
                 "distance": 238.47222060441337
             },
-            "palette": [
+            "palleteOrg": [
+                {
+                    "color": "#f2ee0a",
+                    "name": "red",
+                    "distance": 238.56445669881336,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
                 {
                     "color": "#076db1",
                     "name": "blue",
-                    "distance": 134.21624342828255
+                    "distance": 134.21624342828255,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
                 },
                 {
                     "color": "#7cac5c",
                     "name": "green",
-                    "distance": 175.29689101635546
+                    "distance": 175.29689101635546,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#76ac64",
+                    "name": "green",
+                    "distance": 175.5363210278716,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "uniqPalette": [
+                {
+                    "color": "#f3ee09",
+                    "name": "red",
+                    "distance": 238.47222060441337
+                },
+                {
+                    "color": "#076db1",
+                    "name": "blue",
+                    "distance": 134.21624342828255,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#7cac5c",
+                    "name": "green",
+                    "distance": 175.29689101635546,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "palette": [
+                {
+                    "color": "#076db1",
+                    "name": "blue",
+                    "distance": 134.21624342828255,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#7cac5c",
+                    "name": "green",
+                    "distance": 175.29689101635546,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
                 }
             ]
         },
@@ -1211,11 +4662,219 @@
         "id": "maakunta-21",
         "index": 21,
         "colors": {
+            "colorsPalette": [
+                {
+                    "color": "#ffce26",
+                    "name": "red",
+                    "distance": 209.4755355644186,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#7a7d83",
+                    "name": "grey",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#ffffff",
+                    "name": "white",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
+                },
+                {
+                    "color": "#121722",
+                    "name": "grey",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "colorsPaletteAlt": [
+                [
+                    255,
+                    206,
+                    38
+                ],
+                [
+                    122,
+                    125,
+                    131
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    18,
+                    23,
+                    34
+                ]
+            ],
+            "colorsPaletteAlt2": [
+                [
+                    255,
+                    206,
+                    38
+                ],
+                [
+                    122,
+                    125,
+                    131
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ],
+                [
+                    18,
+                    23,
+                    34
+                ]
+            ],
+            "colorsPaletteByName": {
+                "red": [
+                    {
+                        "color": "#ffce26",
+                        "name": "red",
+                        "distance": 209.4755355644186,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "grey": [
+                    {
+                        "color": "#7a7d83",
+                        "name": "grey",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    },
+                    {
+                        "color": "#121722",
+                        "name": "grey",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "color": "#ffffff",
+                        "name": "white",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ]
+            },
             "primary": {
                 "color": "#f7ca2d",
                 "name": "red",
                 "distance": 207.1062529234692
             },
+            "palleteOrg": [
+                {
+                    "color": "#141424",
+                    "name": "blue",
+                    "distance": 220.81893034792103,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#f6c92d",
+                    "name": "red",
+                    "distance": 206.17225807561985,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#84848c",
+                    "name": "blue",
+                    "distance": 219.25555865245468,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#848c8c",
+                    "name": "green",
+                    "distance": 224.1628872048181,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "uniqPalette": [
+                {
+                    "color": "#f6c92d",
+                    "name": "red",
+                    "distance": 206.17225807561985,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#84848c",
+                    "name": "blue",
+                    "distance": 219.25555865245468,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#848c8c",
+                    "name": "green",
+                    "distance": 224.1628872048181,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
             "palette": []
         },
         "imageUrl": "images/heraldry/fi/maakunta/savon-vaakuna.png",
@@ -1264,16 +4923,248 @@
         "id": "maakunta-22",
         "index": 22,
         "colors": {
+            "colorsPalette": [
+                {
+                    "color": "#ffd90f",
+                    "name": "red",
+                    "distance": 217.51781536232843,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#8fa156",
+                    "name": "gold",
+                    "distance": 48.662100242385755,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#8fa156",
+                    "name": "green",
+                    "distance": 191.52284459040388,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#0a5fa9",
+                    "name": "blue",
+                    "distance": 128.53404218338423,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#ffffff",
+                    "name": "white",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
+                }
+            ],
+            "colorsPaletteAlt": [
+                [
+                    255,
+                    217,
+                    15
+                ],
+                [
+                    143,
+                    161,
+                    86
+                ],
+                [
+                    10,
+                    95,
+                    169
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "colorsPaletteAlt2": [
+                [
+                    255,
+                    217,
+                    15
+                ],
+                [
+                    143,
+                    161,
+                    86
+                ],
+                [
+                    10,
+                    95,
+                    169
+                ],
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            "colorsPaletteByName": {
+                "red": [
+                    {
+                        "color": "#ffd90f",
+                        "name": "red",
+                        "distance": 217.51781536232843,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "gold": [
+                    {
+                        "color": "#8fa156",
+                        "name": "gold",
+                        "distance": 48.662100242385755,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "green": [
+                    {
+                        "color": "#8fa156",
+                        "name": "green",
+                        "distance": 191.52284459040388,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "color": "#0a5fa9",
+                        "name": "blue",
+                        "distance": 128.53404218338423,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "color": "#ffffff",
+                        "name": "white",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ]
+            },
             "primary": {
                 "color": "#f4d91b",
                 "name": "red",
                 "distance": 218.949765928169
             },
+            "palleteOrg": [
+                {
+                    "color": "#0d5dab",
+                    "name": "blue",
+                    "distance": 125.99206324209474,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#f4d91c",
+                    "name": "red",
+                    "distance": 219.07532951019382,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#829c5c",
+                    "name": "green",
+                    "distance": 187.52333188166213,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#84b4d4",
+                    "name": "blue",
+                    "distance": 227.31695933211847,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "uniqPalette": [
+                {
+                    "color": "#f4d91b",
+                    "name": "red",
+                    "distance": 218.949765928169
+                },
+                {
+                    "color": "#0d5dab",
+                    "name": "blue",
+                    "distance": 125.99206324209474,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#829c5c",
+                    "name": "green",
+                    "distance": 187.52333188166213,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
             "palette": [
                 {
                     "color": "#0d5dab",
                     "name": "blue",
-                    "distance": 125.99206324209474
+                    "distance": 125.99206324209474,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
                 }
             ]
         },
@@ -1323,11 +5214,182 @@
         "id": "maakunta-23",
         "index": 23,
         "colors": {
+            "colorsPalette": [
+                {
+                    "color": "#006bb6",
+                    "name": "blue",
+                    "distance": 129.52991932368366,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#ed1b2d",
+                    "name": "red",
+                    "distance": 55.47972602672079,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#baccd6",
+                    "name": "blue",
+                    "distance": 279.0931744059679,
+                    "isGreyscale": false,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "colorsPaletteAlt": [
+                [
+                    0,
+                    107,
+                    182
+                ],
+                [
+                    237,
+                    27,
+                    45
+                ],
+                [
+                    186,
+                    204,
+                    214
+                ]
+            ],
+            "colorsPaletteAlt2": [
+                [
+                    0,
+                    107,
+                    182
+                ],
+                [
+                    237,
+                    27,
+                    45
+                ],
+                [
+                    186,
+                    204,
+                    214
+                ]
+            ],
+            "colorsPaletteByName": {
+                "blue": [
+                    {
+                        "color": "#006bb6",
+                        "name": "blue",
+                        "distance": 129.52991932368366,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    },
+                    {
+                        "color": "#baccd6",
+                        "name": "blue",
+                        "distance": 279.0931744059679,
+                        "isGreyscale": false,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "red": [
+                    {
+                        "color": "#ed1b2d",
+                        "name": "red",
+                        "distance": 55.47972602672079,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
             "primary": {
                 "color": "#eb1c2c",
                 "name": "red",
                 "distance": 55.85696017507576
             },
+            "palleteOrg": [
+                {
+                    "color": "#eb1f2c",
+                    "name": "red",
+                    "distance": 57.41950887982237,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#f7d228",
+                    "name": "red",
+                    "distance": 213.92522057952868,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#076bb1",
+                    "name": "blue",
+                    "distance": 132.5971342073425,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#747574",
+                    "name": "green",
+                    "distance": 214.37350582569667,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "uniqPalette": [
+                {
+                    "color": "#eb1c2c",
+                    "name": "red",
+                    "distance": 55.85696017507576
+                },
+                {
+                    "color": "#076bb1",
+                    "name": "blue",
+                    "distance": 132.5971342073425,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#747574",
+                    "name": "green",
+                    "distance": 214.37350582569667,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
             "palette": [
                 {
                     "color": "#eb1c2c",
@@ -1335,9 +5397,14 @@
                     "distance": 55.85696017507576
                 },
                 {
-                    "color": "#076cb1",
+                    "color": "#076bb1",
                     "name": "blue",
-                    "distance": 133.4053971921676
+                    "distance": 132.5971342073425,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
                 }
             ]
         },
@@ -1389,11 +5456,226 @@
         "id": "maakunta-20",
         "index": 20,
         "colors": {
+            "colorsPalette": [
+                {
+                    "color": "#e70909",
+                    "name": "red",
+                    "distance": 27.16615541441225,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#0556c7",
+                    "name": "blue",
+                    "distance": 102.74726273726225,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#dbb357",
+                    "name": "gold",
+                    "distance": 34.48187929913333,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#dbb357",
+                    "name": "red",
+                    "distance": 202.25231766286387,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#000000",
+                    "name": "black",
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                }
+            ],
+            "colorsPaletteAlt": [
+                [
+                    231,
+                    9,
+                    9
+                ],
+                [
+                    5,
+                    86,
+                    199
+                ],
+                [
+                    219,
+                    179,
+                    87
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "colorsPaletteAlt2": [
+                [
+                    231,
+                    9,
+                    9
+                ],
+                [
+                    5,
+                    86,
+                    199
+                ],
+                [
+                    219,
+                    179,
+                    87
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "colorsPaletteByName": {
+                "red": [
+                    {
+                        "color": "#e70909",
+                        "name": "red",
+                        "distance": 27.16615541441225,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    },
+                    {
+                        "color": "#dbb357",
+                        "name": "red",
+                        "distance": 202.25231766286387,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "color": "#0556c7",
+                        "name": "blue",
+                        "distance": 102.74726273726225,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "gold": [
+                    {
+                        "color": "#dbb357",
+                        "name": "gold",
+                        "distance": 34.48187929913333,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "black": [
+                    {
+                        "color": "#000000",
+                        "name": "black",
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": true,
+                        "isWhite": false
+                    }
+                ]
+            },
             "primary": {
                 "color": "#043478",
                 "name": "blue",
                 "distance": 144.72387501722028
             },
+            "palleteOrg": [
+                {
+                    "color": "#d4ad54",
+                    "name": "red",
+                    "distance": 197.06344156134085,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#043478",
+                    "name": "blue",
+                    "distance": 144.72387501722028,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#d0d4db",
+                    "name": "blue",
+                    "distance": 299.17219122104245,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "color": "#cf1412",
+                    "name": "red",
+                    "distance": 55.02726596879042,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "uniqPalette": [
+                {
+                    "color": "#043478",
+                    "name": "blue",
+                    "distance": 144.72387501722028
+                },
+                {
+                    "color": "#cf1412",
+                    "name": "red",
+                    "distance": 55.02726596879042,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
             "palette": [
                 {
                     "color": "#043478",
@@ -1401,9 +5683,14 @@
                     "distance": 144.72387501722028
                 },
                 {
-                    "color": "#c71612",
+                    "color": "#cf1412",
                     "name": "red",
-                    "distance": 62.80127387243033
+                    "distance": 55.02726596879042,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
                 }
             ]
         },

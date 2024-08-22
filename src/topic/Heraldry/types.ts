@@ -2,6 +2,21 @@ export type Colors = {
   [key: string]: string,
 }
 
+export type Greyscale = {
+  isGreyscale: boolean,,
+  isLowSaturation: boolean,
+  isGrey: boolean,
+  isBlack: boolean,
+  isWhite: boolean,
+}
+
+export type ColorStatus = Greyscale & {
+  color: string,
+  name: string,
+  distanceColor: string,
+  distance: number,
+}
+
 export type AdministrativeUnit = {
   lang: string,
   id: string,
@@ -22,6 +37,9 @@ export type AdministrativeUnit = {
       name: string,
       distance?: number,
     }[],
+    byNames: {
+      [color: string]: ColorStatus[],
+    }
   },
   image?: {
     source: string
