@@ -91,30 +91,6 @@
                     "isWhite": true
                 }
             ],
-            "colorsPaletteAlt": [
-                [
-                    21,
-                    89,
-                    164
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ]
-            ],
-            "colorsPaletteAlt2": [
-                [
-                    21,
-                    89,
-                    164
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ]
-            ],
             "byNames": {
                 "blue": [
                     {
@@ -198,67 +174,6 @@
             "hexPalette": [
                 "#1559a4",
                 "#ffffff"
-            ],
-            "primary": {
-                "color": "#145ca4",
-                "name": "blue",
-                "distance": 130.93891705677117
-            },
-            "palleteOrg": [
-                {
-                    "color": "#145ca4",
-                    "name": "blue",
-                    "distance": 130.93891705677117,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#c8d8ea",
-                    "name": "blue",
-                    "distance": 295.12200866760173,
-                    "isGreyscale": false,
-                    "isLowSaturation": true,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#040609",
-                    "name": "blue",
-                    "distance": 246.1056683621895,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": false,
-                    "isBlack": true,
-                    "isWhite": false
-                },
-                {
-                    "color": "#84acd1",
-                    "name": "blue",
-                    "distance": 221.63934668736056,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "uniqPalette": [
-                {
-                    "color": "#145ca4",
-                    "name": "blue",
-                    "distance": 130.93891705677117
-                }
-            ],
-            "palette": [
-                {
-                    "color": "#145ca4",
-                    "name": "blue",
-                    "distance": 130.93891705677117
-                }
             ]
         },
         "imageUrl": "images/heraldry/fi/maakunta/etelapohjanmaan-vaakuna.png",
@@ -338,8 +253,8 @@
                     "didMatch": false,
                     "color": "#da291c",
                     "name": "green",
-                    "distanceToTreshold": -170.66859344089303,
-                    "thresholdDistance": 60,
+                    "distanceToTreshold": -140.66859344089303,
+                    "thresholdDistance": 90,
                     "distance": 230.66859344089303,
                     "isGreyscale": false,
                     "isLowSaturation": false,
@@ -402,50 +317,6 @@
                     "isBlack": false,
                     "isWhite": true
                 }
-            ],
-            "colorsPaletteAlt": [
-                [
-                    218,
-                    41,
-                    28
-                ],
-                [
-                    136,
-                    136,
-                    136
-                ],
-                [
-                    0,
-                    0,
-                    0
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ]
-            ],
-            "colorsPaletteAlt2": [
-                [
-                    218,
-                    41,
-                    28
-                ],
-                [
-                    136,
-                    136,
-                    136
-                ],
-                [
-                    0,
-                    0,
-                    0
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ]
             ],
             "byNames": {
                 "red": [
@@ -533,8 +404,8 @@
                         "didMatch": false,
                         "color": "#da291c",
                         "name": "green",
-                        "distanceToTreshold": -170.66859344089303,
-                        "thresholdDistance": 60,
+                        "distanceToTreshold": -140.66859344089303,
+                        "thresholdDistance": 90,
                         "distance": 230.66859344089303,
                         "isGreyscale": false,
                         "isLowSaturation": false,
@@ -564,67 +435,6 @@
                 "#888888",
                 "#000000",
                 "#ffffff"
-            ],
-            "primary": {
-                "color": "#d92d1d",
-                "name": "red",
-                "distance": 65.6505902486794
-            },
-            "palleteOrg": [
-                {
-                    "color": "#d92d1d",
-                    "name": "red",
-                    "distance": 65.6505902486794,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#090606",
-                    "name": "red",
-                    "distance": 246.14629796119218,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": false,
-                    "isBlack": true,
-                    "isWhite": false
-                },
-                {
-                    "color": "#e5cc69",
-                    "name": "red",
-                    "distance": 230.90474226399076,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#949494",
-                    "name": "red",
-                    "distance": 235.06807524629966,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": true,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "uniqPalette": [
-                {
-                    "color": "#d92d1d",
-                    "name": "red",
-                    "distance": 65.6505902486794
-                }
-            ],
-            "palette": [
-                {
-                    "color": "#d92d1d",
-                    "name": "red",
-                    "distance": 65.6505902486794
-                }
             ]
         },
         "imageUrl": "images/heraldry/fi/maakunta/etelakarjalan-vaakuna.png",
@@ -704,8 +514,8 @@
                     "didMatch": false,
                     "color": "#ffcd00",
                     "name": "green",
-                    "distanceToTreshold": -199.85572920372567,
-                    "thresholdDistance": 60,
+                    "distanceToTreshold": -169.85572920372567,
+                    "thresholdDistance": 90,
                     "distance": 259.8557292037257,
                     "isGreyscale": false,
                     "isLowSaturation": false,
@@ -756,9 +566,9 @@
                     "didMatch": false,
                     "color": "#e40046",
                     "name": "green",
-                    "distanceToTreshold": -202.48809496813374,
-                    "thresholdDistance": 60,
-                    "distance": 262.48809496813374,
+                    "distanceToTreshold": -173.06843216167158,
+                    "thresholdDistance": 90,
+                    "distance": 263.0684321616716,
                     "isGreyscale": false,
                     "isLowSaturation": false,
                     "isGrey": false,
@@ -792,40 +602,6 @@
                     "isBlack": false,
                     "isWhite": true
                 }
-            ],
-            "colorsPaletteAlt": [
-                [
-                    255,
-                    205,
-                    0
-                ],
-                [
-                    228,
-                    0,
-                    70
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ]
-            ],
-            "colorsPaletteAlt2": [
-                [
-                    255,
-                    205,
-                    0
-                ],
-                [
-                    228,
-                    0,
-                    70
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ]
             ],
             "byNames": {
                 "gold": [
@@ -911,9 +687,9 @@
                         "didMatch": false,
                         "color": "#e40046",
                         "name": "green",
-                        "distanceToTreshold": -202.48809496813374,
-                        "thresholdDistance": 60,
-                        "distance": 262.48809496813374,
+                        "distanceToTreshold": -173.06843216167158,
+                        "thresholdDistance": 90,
+                        "distance": 263.0684321616716,
                         "isGreyscale": false,
                         "isLowSaturation": false,
                         "isGrey": false,
@@ -941,77 +717,6 @@
                 "#ffcd00",
                 "#e40046",
                 "#ffffff"
-            ],
-            "primary": {
-                "color": "#fbca0a",
-                "name": "red",
-                "distance": 202.28692493584452
-            },
-            "palleteOrg": [
-                {
-                    "color": "#e40644",
-                    "name": "red",
-                    "distance": 73.40980860893181,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#fbca0a",
-                    "name": "red",
-                    "distance": 202.28692493584452,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#0c0406",
-                    "name": "red",
-                    "distance": 243.1069723393387,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": false,
-                    "isBlack": true,
-                    "isWhite": false
-                },
-                {
-                    "color": "#f47ca4",
-                    "name": "red",
-                    "distance": 205.89560461554296,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "uniqPalette": [
-                {
-                    "color": "#e40644",
-                    "name": "red",
-                    "distance": 73.40980860893181,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "palette": [
-                {
-                    "color": "#e40644",
-                    "name": "red",
-                    "distance": 73.40980860893181,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
             ]
         },
         "imageUrl": "images/heraldry/fi/maakunta/hameen-vaakuna.png",
@@ -1131,30 +836,6 @@
                     "isWhite": false
                 }
             ],
-            "colorsPaletteAlt": [
-                [
-                    46,
-                    104,
-                    178
-                ],
-                [
-                    204,
-                    204,
-                    202
-                ]
-            ],
-            "colorsPaletteAlt2": [
-                [
-                    46,
-                    104,
-                    178
-                ],
-                [
-                    204,
-                    204,
-                    202
-                ]
-            ],
             "byNames": {
                 "blue": [
                     {
@@ -1238,77 +919,6 @@
             "hexPalette": [
                 "#2e68b2",
                 "#ccccca"
-            ],
-            "primary": {
-                "color": "#2c6cb4",
-                "name": "blue",
-                "distance": 138.6542462386205
-            },
-            "palleteOrg": [
-                {
-                    "color": "#cacbcb",
-                    "name": "green",
-                    "distance": 291.06184909740404,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": true,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#2c6cb4",
-                    "name": "blue",
-                    "distance": 138.6542462386205,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#688cbc",
-                    "name": "blue",
-                    "distance": 186.82879863661276,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#7c9cbc",
-                    "name": "blue",
-                    "distance": 210.24033866030564,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "uniqPalette": [
-                {
-                    "color": "#2c6cb4",
-                    "name": "blue",
-                    "distance": 138.6542462386205
-                },
-                {
-                    "color": "#cacbcb",
-                    "name": "green",
-                    "distance": 291.06184909740404,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": true,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "palette": [
-                {
-                    "color": "#2c6cb4",
-                    "name": "blue",
-                    "distance": 138.6542462386205
-                }
             ]
         },
         "imageUrl": "images/heraldry/fi/maakunta/itauudenmaan-vaakuna.png",
@@ -1386,8 +996,8 @@
                     "didMatch": false,
                     "color": "#ffce26",
                     "name": "green",
-                    "distanceToTreshold": -202.43094329747015,
-                    "thresholdDistance": 60,
+                    "distanceToTreshold": -172.43094329747015,
+                    "thresholdDistance": 90,
                     "distance": 262.43094329747015,
                     "isGreyscale": false,
                     "isLowSaturation": false,
@@ -1450,50 +1060,6 @@
                     "isBlack": true,
                     "isWhite": false
                 }
-            ],
-            "colorsPaletteAlt": [
-                [
-                    255,
-                    206,
-                    38
-                ],
-                [
-                    171,
-                    173,
-                    177
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ],
-                [
-                    18,
-                    23,
-                    34
-                ]
-            ],
-            "colorsPaletteAlt2": [
-                [
-                    255,
-                    206,
-                    38
-                ],
-                [
-                    171,
-                    173,
-                    177
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ],
-                [
-                    18,
-                    23,
-                    34
-                ]
             ],
             "byNames": {
                 "gold": [
@@ -1596,8 +1162,8 @@
                         "didMatch": false,
                         "color": "#ffce26",
                         "name": "green",
-                        "distanceToTreshold": -202.43094329747015,
-                        "thresholdDistance": 60,
+                        "distanceToTreshold": -172.43094329747015,
+                        "thresholdDistance": 90,
                         "distance": 262.43094329747015,
                         "isGreyscale": false,
                         "isLowSaturation": false,
@@ -1612,87 +1178,7 @@
                 "#abadb1",
                 "#ffffff",
                 "#121722"
-            ],
-            "primary": {
-                "color": "#f5c92e",
-                "name": "red",
-                "distance": 206.4388529322908
-            },
-            "palleteOrg": [
-                {
-                    "color": "#141424",
-                    "name": "blue",
-                    "distance": 220.81893034792103,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": false,
-                    "isBlack": true,
-                    "isWhite": false
-                },
-                {
-                    "color": "#f6c92d",
-                    "name": "red",
-                    "distance": 206.17225807561985,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#84848c",
-                    "name": "blue",
-                    "distance": 219.25555865245468,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": true,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#848c8c",
-                    "name": "green",
-                    "distance": 224.1628872048181,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": true,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "uniqPalette": [
-                {
-                    "color": "#f6c92d",
-                    "name": "red",
-                    "distance": 206.17225807561985,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#84848c",
-                    "name": "blue",
-                    "distance": 219.25555865245468,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": true,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#848c8c",
-                    "name": "green",
-                    "distance": 224.1628872048181,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": true,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "palette": []
+            ]
         },
         "imageUrl": "images/heraldry/fi/maakunta/etelasavon-vaakuna.png",
         "imageSrcSet": "images/heraldry/fi/web-maakunta/etelasavon-vaakuna-80w.webp 80w,images/heraldry/fi/web-maakunta/etelasavon-vaakuna-300w.webp 300w",
@@ -1771,8 +1257,8 @@
                     "didMatch": false,
                     "color": "#feed00",
                     "name": "green",
-                    "distanceToTreshold": -194.6369965264278,
-                    "thresholdDistance": 60,
+                    "distanceToTreshold": -164.6369965264278,
+                    "thresholdDistance": 90,
                     "distance": 254.6369965264278,
                     "isGreyscale": false,
                     "isLowSaturation": false,
@@ -1781,12 +1267,12 @@
                     "isWhite": false
                 },
                 {
-                    "didMatch": false,
+                    "didMatch": true,
                     "color": "#feed00",
                     "name": "gold",
-                    "distanceToTreshold": -8.541957952775178,
-                    "thresholdDistance": 60,
-                    "distance": 68.54195795277518,
+                    "distanceToTreshold": 31.972243622680054,
+                    "thresholdDistance": 50,
+                    "distance": 18.027756377319946,
                     "isGreyscale": false,
                     "isLowSaturation": false,
                     "isGrey": false,
@@ -1823,9 +1309,9 @@
                     "didMatch": true,
                     "color": "#2b954a",
                     "name": "green",
-                    "distanceToTreshold": 12.989362905827363,
+                    "distanceToTreshold": 22.23758482300159,
                     "thresholdDistance": 60,
-                    "distance": 47.01063709417264,
+                    "distance": 37.76241517699841,
                     "isGreyscale": false,
                     "isLowSaturation": false,
                     "isGrey": false,
@@ -1846,39 +1332,30 @@
                     "isWhite": false
                 }
             ],
-            "colorsPaletteAlt": [
-                [
-                    254,
-                    237,
-                    0
-                ],
-                [
-                    43,
-                    149,
-                    74
-                ]
-            ],
-            "colorsPaletteAlt2": [
-                [
-                    254,
-                    237,
-                    0
-                ],
-                [
-                    43,
-                    149,
-                    74
-                ]
-            ],
             "byNames": {
+                "gold": [
+                    {
+                        "didMatch": true,
+                        "color": "#feed00",
+                        "name": "gold",
+                        "distanceToTreshold": 31.972243622680054,
+                        "thresholdDistance": 50,
+                        "distance": 18.027756377319946,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
                 "green": [
                     {
                         "didMatch": true,
                         "color": "#2b954a",
                         "name": "green",
-                        "distanceToTreshold": 12.989362905827363,
+                        "distanceToTreshold": 22.23758482300159,
                         "thresholdDistance": 60,
-                        "distance": 47.01063709417264,
+                        "distance": 37.76241517699841,
                         "isGreyscale": false,
                         "isLowSaturation": false,
                         "isGrey": false,
@@ -1923,8 +1400,8 @@
                         "didMatch": false,
                         "color": "#feed00",
                         "name": "green",
-                        "distanceToTreshold": -194.6369965264278,
-                        "thresholdDistance": 60,
+                        "distanceToTreshold": -164.6369965264278,
+                        "thresholdDistance": 90,
                         "distance": 254.6369965264278,
                         "isGreyscale": false,
                         "isLowSaturation": false,
@@ -1952,77 +1429,6 @@
             "hexPalette": [
                 "#feed00",
                 "#2b954a"
-            ],
-            "primary": {
-                "color": "#2c944b",
-                "name": "green",
-                "distance": 137.87675656179326
-            },
-            "palleteOrg": [
-                {
-                    "color": "#2c944b",
-                    "name": "green",
-                    "distance": 137.87675656179326,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#fbeb04",
-                    "name": "red",
-                    "distance": 235.06807524629966,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#a5c81f",
-                    "name": "green",
-                    "distance": 176.666352200978,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#c5d414",
-                    "name": "green",
-                    "distance": 202.62773748921938,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "uniqPalette": [
-                {
-                    "color": "#2c944b",
-                    "name": "green",
-                    "distance": 137.87675656179326
-                },
-                {
-                    "color": "#fbeb04",
-                    "name": "red",
-                    "distance": 235.06807524629966,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "palette": [
-                {
-                    "color": "#2c944b",
-                    "name": "green",
-                    "distance": 137.87675656179326
-                }
             ]
         },
         "imageUrl": "images/heraldry/fi/maakunta/kainuun-vaakuna.png",
@@ -2102,8 +1508,8 @@
                     "didMatch": false,
                     "color": "#ac0707",
                     "name": "green",
-                    "distanceToTreshold": -141.11936754077166,
-                    "thresholdDistance": 60,
+                    "distanceToTreshold": -111.11936754077166,
+                    "thresholdDistance": 90,
                     "distance": 201.11936754077166,
                     "isGreyscale": false,
                     "isLowSaturation": false,
@@ -2206,9 +1612,9 @@
                     "didMatch": false,
                     "color": "#dbb357",
                     "name": "green",
-                    "distanceToTreshold": -164.79101405527757,
-                    "thresholdDistance": 60,
-                    "distance": 224.79101405527757,
+                    "distanceToTreshold": -155.26312401174377,
+                    "thresholdDistance": 90,
+                    "distance": 245.26312401174377,
                     "isGreyscale": false,
                     "isLowSaturation": false,
                     "isGrey": false,
@@ -2242,50 +1648,6 @@
                     "isBlack": false,
                     "isWhite": true
                 }
-            ],
-            "colorsPaletteAlt": [
-                [
-                    172,
-                    7,
-                    7
-                ],
-                [
-                    5,
-                    86,
-                    199
-                ],
-                [
-                    219,
-                    179,
-                    87
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ]
-            ],
-            "colorsPaletteAlt2": [
-                [
-                    172,
-                    7,
-                    7
-                ],
-                [
-                    5,
-                    86,
-                    199
-                ],
-                [
-                    219,
-                    179,
-                    87
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ]
             ],
             "byNames": {
                 "blue": [
@@ -2371,9 +1733,9 @@
                         "didMatch": false,
                         "color": "#dbb357",
                         "name": "green",
-                        "distanceToTreshold": -164.79101405527757,
-                        "thresholdDistance": 60,
-                        "distance": 224.79101405527757,
+                        "distanceToTreshold": -155.26312401174377,
+                        "thresholdDistance": 90,
+                        "distance": 245.26312401174377,
                         "isGreyscale": false,
                         "isLowSaturation": false,
                         "isGrey": false,
@@ -2402,97 +1764,6 @@
                 "#0556c7",
                 "#dbb357",
                 "#ffffff"
-            ],
-            "primary": {
-                "color": "#d6b976",
-                "name": "red",
-                "distance": 223.22634253152114
-            },
-            "palleteOrg": [
-                {
-                    "color": "#0654c1",
-                    "name": "blue",
-                    "distance": 104.57533169921098,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#d6b976",
-                    "name": "red",
-                    "distance": 223.22634253152114,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#d11512",
-                    "name": "red",
-                    "distance": 53.67494760127857,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#599cfc",
-                    "name": "blue",
-                    "distance": 179.62739212046696,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "uniqPalette": [
-                {
-                    "color": "#d11512",
-                    "name": "red",
-                    "distance": 53.67494760127857,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#0654c1",
-                    "name": "blue",
-                    "distance": 104.57533169921098,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "palette": [
-                {
-                    "color": "#d11512",
-                    "name": "red",
-                    "distance": 53.67494760127857,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#0654c1",
-                    "name": "blue",
-                    "distance": 104.57533169921098,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
             ]
         },
         "imageUrl": "images/heraldry/fi/maakunta/ahvenanmaan-vaakuna.png",
@@ -2575,8 +1846,8 @@
                     "didMatch": false,
                     "color": "#ffcd00",
                     "name": "green",
-                    "distanceToTreshold": -199.85572920372567,
-                    "thresholdDistance": 60,
+                    "distanceToTreshold": -169.85572920372567,
+                    "thresholdDistance": 90,
                     "distance": 259.8557292037257,
                     "isGreyscale": false,
                     "isLowSaturation": false,
@@ -2627,9 +1898,9 @@
                     "didMatch": false,
                     "color": "#e40046",
                     "name": "green",
-                    "distanceToTreshold": -202.48809496813374,
-                    "thresholdDistance": 60,
-                    "distance": 262.48809496813374,
+                    "distanceToTreshold": -173.06843216167158,
+                    "thresholdDistance": 90,
+                    "distance": 263.0684321616716,
                     "isGreyscale": false,
                     "isLowSaturation": false,
                     "isGrey": false,
@@ -2663,40 +1934,6 @@
                     "isBlack": false,
                     "isWhite": true
                 }
-            ],
-            "colorsPaletteAlt": [
-                [
-                    255,
-                    205,
-                    0
-                ],
-                [
-                    228,
-                    0,
-                    70
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ]
-            ],
-            "colorsPaletteAlt2": [
-                [
-                    255,
-                    205,
-                    0
-                ],
-                [
-                    228,
-                    0,
-                    70
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ]
             ],
             "byNames": {
                 "gold": [
@@ -2782,9 +2019,9 @@
                         "didMatch": false,
                         "color": "#e40046",
                         "name": "green",
-                        "distanceToTreshold": -202.48809496813374,
-                        "thresholdDistance": 60,
-                        "distance": 262.48809496813374,
+                        "distanceToTreshold": -173.06843216167158,
+                        "thresholdDistance": 90,
+                        "distance": 263.0684321616716,
                         "isGreyscale": false,
                         "isLowSaturation": false,
                         "isGrey": false,
@@ -2812,77 +2049,6 @@
                 "#ffcd00",
                 "#e40046",
                 "#ffffff"
-            ],
-            "primary": {
-                "color": "#fbca0a",
-                "name": "red",
-                "distance": 202.28692493584452
-            },
-            "palleteOrg": [
-                {
-                    "color": "#e40644",
-                    "name": "red",
-                    "distance": 73.40980860893181,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#fbca0a",
-                    "name": "red",
-                    "distance": 202.28692493584452,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#0c0406",
-                    "name": "red",
-                    "distance": 243.1069723393387,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": false,
-                    "isBlack": true,
-                    "isWhite": false
-                },
-                {
-                    "color": "#f47ca4",
-                    "name": "red",
-                    "distance": 205.89560461554296,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "uniqPalette": [
-                {
-                    "color": "#e40644",
-                    "name": "red",
-                    "distance": 73.40980860893181,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "palette": [
-                {
-                    "color": "#e40644",
-                    "name": "red",
-                    "distance": 73.40980860893181,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
             ]
         },
         "imageUrl": "images/heraldry/fi/maakunta/kantahameen-vaakuna.png",
@@ -3054,40 +2220,6 @@
                     "isWhite": true
                 }
             ],
-            "colorsPaletteAlt": [
-                [
-                    0,
-                    50,
-                    171
-                ],
-                [
-                    122,
-                    148,
-                    211
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ]
-            ],
-            "colorsPaletteAlt2": [
-                [
-                    0,
-                    50,
-                    171
-                ],
-                [
-                    122,
-                    148,
-                    211
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ]
-            ],
             "byNames": {
                 "blue": [
                     {
@@ -3172,77 +2304,6 @@
                 "#0032ab",
                 "#7a94d3",
                 "#ffffff"
-            ],
-            "primary": {
-                "color": "#0534ac",
-                "name": "blue",
-                "distance": 98.07140255956371
-            },
-            "palleteOrg": [
-                {
-                    "color": "#0636ac",
-                    "name": "blue",
-                    "distance": 99.20181449953424,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#dcd09e",
-                    "name": "red",
-                    "distance": 263.53937087274073,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#7691d4",
-                    "name": "blue",
-                    "distance": 191.8280480013285,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#7c9cd4",
-                    "name": "blue",
-                    "distance": 203.86515150952113,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "uniqPalette": [
-                {
-                    "color": "#0534ac",
-                    "name": "blue",
-                    "distance": 98.07140255956371
-                },
-                {
-                    "color": "#dcd09e",
-                    "name": "red",
-                    "distance": 263.53937087274073,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "palette": [
-                {
-                    "color": "#0534ac",
-                    "name": "blue",
-                    "distance": 98.07140255956371
-                }
             ]
         },
         "imageUrl": "images/heraldry/fi/maakunta/kymenlaakson-vaakuna.png",
@@ -3323,8 +2384,8 @@
                     "didMatch": false,
                     "color": "#fff200",
                     "name": "green",
-                    "distanceToTreshold": -195.3311575190149,
-                    "thresholdDistance": 60,
+                    "distanceToTreshold": -165.3311575190149,
+                    "thresholdDistance": 90,
                     "distance": 255.3311575190149,
                     "isGreyscale": false,
                     "isLowSaturation": false,
@@ -3333,12 +2394,12 @@
                     "isWhite": false
                 },
                 {
-                    "didMatch": false,
+                    "didMatch": true,
                     "color": "#fff200",
                     "name": "gold",
-                    "distanceToTreshold": -11.847059786744225,
-                    "thresholdDistance": 60,
-                    "distance": 71.84705978674423,
+                    "distanceToTreshold": 37,
+                    "thresholdDistance": 50,
+                    "distance": 13,
                     "isGreyscale": false,
                     "isLowSaturation": false,
                     "isGrey": false,
@@ -3427,8 +2488,8 @@
                     "didMatch": false,
                     "color": "#dd0328",
                     "name": "green",
-                    "distanceToTreshold": -189.2087478400387,
-                    "thresholdDistance": 60,
+                    "distanceToTreshold": -159.2087478400387,
+                    "thresholdDistance": 90,
                     "distance": 249.2087478400387,
                     "isGreyscale": false,
                     "isLowSaturation": false,
@@ -3464,51 +2525,22 @@
                     "isWhite": true
                 }
             ],
-            "colorsPaletteAlt": [
-                [
-                    255,
-                    242,
-                    0
-                ],
-                [
-                    45,
-                    53,
-                    138
-                ],
-                [
-                    221,
-                    3,
-                    40
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ]
-            ],
-            "colorsPaletteAlt2": [
-                [
-                    255,
-                    242,
-                    0
-                ],
-                [
-                    45,
-                    53,
-                    138
-                ],
-                [
-                    221,
-                    3,
-                    40
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ]
-            ],
             "byNames": {
+                "gold": [
+                    {
+                        "didMatch": true,
+                        "color": "#fff200",
+                        "name": "gold",
+                        "distanceToTreshold": 37,
+                        "thresholdDistance": 50,
+                        "distance": 13,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
                 "red": [
                     {
                         "didMatch": true,
@@ -3577,8 +2609,8 @@
                         "didMatch": false,
                         "color": "#dd0328",
                         "name": "green",
-                        "distanceToTreshold": -189.2087478400387,
-                        "thresholdDistance": 60,
+                        "distanceToTreshold": -159.2087478400387,
+                        "thresholdDistance": 90,
                         "distance": 249.2087478400387,
                         "isGreyscale": false,
                         "isLowSaturation": false,
@@ -3608,87 +2640,6 @@
                 "#2d358a",
                 "#dd0328",
                 "#ffffff"
-            ],
-            "primary": {
-                "color": "#dc052c",
-                "name": "red",
-                "distance": 56.444663166680336
-            },
-            "palleteOrg": [
-                {
-                    "color": "#dc062c",
-                    "name": "red",
-                    "distance": 56.542019772908716,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#fae426",
-                    "name": "red",
-                    "distance": 231.1990484409484,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#313988",
-                    "name": "blue",
-                    "distance": 140.75155416548694,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#ec7c94",
-                    "name": "red",
-                    "distance": 194.01288616996553,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "uniqPalette": [
-                {
-                    "color": "#dc052c",
-                    "name": "red",
-                    "distance": 56.444663166680336
-                },
-                {
-                    "color": "#313988",
-                    "name": "blue",
-                    "distance": 140.75155416548694,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "palette": [
-                {
-                    "color": "#dc052c",
-                    "name": "red",
-                    "distance": 56.444663166680336
-                },
-                {
-                    "color": "#313988",
-                    "name": "blue",
-                    "distance": 140.75155416548694,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
             ]
         },
         "imageUrl": "images/heraldry/fi/maakunta/karjalan-historiallisen-maakunnan-vaakuna.png",
@@ -3769,8 +2720,8 @@
                     "didMatch": false,
                     "color": "#ed241a",
                     "name": "green",
-                    "distanceToTreshold": -189.93999279827148,
-                    "thresholdDistance": 60,
+                    "distanceToTreshold": -159.93999279827148,
+                    "thresholdDistance": 90,
                     "distance": 249.93999279827148,
                     "isGreyscale": false,
                     "isLowSaturation": false,
@@ -3885,60 +2836,6 @@
                     "isBlack": false,
                     "isWhite": false
                 }
-            ],
-            "colorsPaletteAlt": [
-                [
-                    237,
-                    36,
-                    26
-                ],
-                [
-                    21,
-                    91,
-                    219
-                ],
-                [
-                    2,
-                    7,
-                    16
-                ],
-                [
-                    126,
-                    126,
-                    126
-                ],
-                [
-                    204,
-                    204,
-                    204
-                ]
-            ],
-            "colorsPaletteAlt2": [
-                [
-                    237,
-                    36,
-                    26
-                ],
-                [
-                    21,
-                    91,
-                    219
-                ],
-                [
-                    2,
-                    7,
-                    16
-                ],
-                [
-                    126,
-                    126,
-                    126
-                ],
-                [
-                    204,
-                    204,
-                    204
-                ]
             ],
             "byNames": {
                 "red": [
@@ -4072,97 +2969,6 @@
                 "#020710",
                 "#7e7e7e",
                 "#cccccc"
-            ],
-            "primary": {
-                "color": "#d5ceba",
-                "name": "red",
-                "distance": 280.70625215694787
-            },
-            "palleteOrg": [
-                {
-                    "color": "#d5ccb8",
-                    "name": "red",
-                    "distance": 277.91365565585295,
-                    "isGreyscale": false,
-                    "isLowSaturation": true,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#165cd9",
-                    "name": "blue",
-                    "distance": 101.94115949899727,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#1e1f1f",
-                    "name": "green",
-                    "distance": 228.11619846034608,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": true,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#84acec",
-                    "name": "blue",
-                    "distance": 217.6442050687314,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "uniqPalette": [
-                {
-                    "color": "#d5ccb8",
-                    "name": "red",
-                    "distance": 277.91365565585295,
-                    "isGreyscale": false,
-                    "isLowSaturation": true,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#165cd9",
-                    "name": "blue",
-                    "distance": 101.94115949899727,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#1e1f1f",
-                    "name": "green",
-                    "distance": 228.11619846034608,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": true,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "palette": [
-                {
-                    "color": "#165cd9",
-                    "name": "blue",
-                    "distance": 101.94115949899727,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
             ]
         },
         "imageUrl": "images/heraldry/fi/maakunta/keskipohjanmaan-vaakuna.png",
@@ -4244,8 +3050,8 @@
                     "didMatch": false,
                     "color": "#efbc00",
                     "name": "green",
-                    "distanceToTreshold": -188.21361767638777,
-                    "thresholdDistance": 60,
+                    "distanceToTreshold": -158.21361767638777,
+                    "thresholdDistance": 90,
                     "distance": 248.21361767638777,
                     "isGreyscale": false,
                     "isLowSaturation": false,
@@ -4266,20 +3072,6 @@
                     "isBlack": false,
                     "isWhite": false
                 }
-            ],
-            "colorsPaletteAlt": [
-                [
-                    239,
-                    188,
-                    0
-                ]
-            ],
-            "colorsPaletteAlt2": [
-                [
-                    239,
-                    188,
-                    0
-                ]
             ],
             "byNames": {
                 "gold": [
@@ -4334,8 +3126,8 @@
                         "didMatch": false,
                         "color": "#efbc00",
                         "name": "green",
-                        "distanceToTreshold": -188.21361767638777,
-                        "thresholdDistance": 60,
+                        "distanceToTreshold": -158.21361767638777,
+                        "thresholdDistance": 90,
                         "distance": 248.21361767638777,
                         "isGreyscale": false,
                         "isLowSaturation": false,
@@ -4347,77 +3139,6 @@
             },
             "hexPalette": [
                 "#efbc00"
-            ],
-            "primary": {
-                "color": "#ecbb04",
-                "name": "red",
-                "distance": 188.00531907369003
-            },
-            "palleteOrg": [
-                {
-                    "color": "#ecbb04",
-                    "name": "red",
-                    "distance": 188.00531907369003,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#d42c2b",
-                    "name": "red",
-                    "distance": 75.05997601918082,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#df5d1b",
-                    "name": "red",
-                    "distance": 101.99019560722492,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#e4860e",
-                    "name": "red",
-                    "distance": 137.40815114104404,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "uniqPalette": [
-                {
-                    "color": "#d42c2b",
-                    "name": "red",
-                    "distance": 75.05997601918082,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "palette": [
-                {
-                    "color": "#d42c2b",
-                    "name": "red",
-                    "distance": 75.05997601918082,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
             ]
         },
         "imageUrl": "images/heraldry/fi/maakunta/pirkanmaan-vaakuna.png",
@@ -4495,9 +3216,9 @@
                     "didMatch": true,
                     "color": "#008337",
                     "name": "green",
-                    "distanceToTreshold": 40.97370240955955,
+                    "distanceToTreshold": 41.615223689149765,
                     "thresholdDistance": 60,
-                    "distance": 19.026297590440446,
+                    "distance": 18.384776310850235,
                     "isGreyscale": false,
                     "isLowSaturation": false,
                     "isGrey": false,
@@ -4599,8 +3320,8 @@
                     "didMatch": false,
                     "color": "#d1241c",
                     "name": "green",
-                    "distanceToTreshold": -163.80795338861395,
-                    "thresholdDistance": 60,
+                    "distanceToTreshold": -133.80795338861395,
+                    "thresholdDistance": 90,
                     "distance": 223.80795338861395,
                     "isGreyscale": false,
                     "isLowSaturation": false,
@@ -4651,9 +3372,9 @@
                     "didMatch": false,
                     "color": "#f8baa2",
                     "name": "green",
-                    "distanceToTreshold": -209.0427475328038,
+                    "distanceToTreshold": -203.59438537267823,
                     "thresholdDistance": 60,
-                    "distance": 269.0427475328038,
+                    "distance": 263.59438537267823,
                     "isGreyscale": false,
                     "isLowSaturation": false,
                     "isGrey": false,
@@ -4674,59 +3395,15 @@
                     "isWhite": false
                 }
             ],
-            "colorsPaletteAlt": [
-                [
-                    0,
-                    131,
-                    55
-                ],
-                [
-                    103,
-                    130,
-                    193
-                ],
-                [
-                    209,
-                    36,
-                    28
-                ],
-                [
-                    248,
-                    186,
-                    162
-                ]
-            ],
-            "colorsPaletteAlt2": [
-                [
-                    0,
-                    131,
-                    55
-                ],
-                [
-                    103,
-                    130,
-                    193
-                ],
-                [
-                    209,
-                    36,
-                    28
-                ],
-                [
-                    248,
-                    186,
-                    162
-                ]
-            ],
             "byNames": {
                 "green": [
                     {
                         "didMatch": true,
                         "color": "#008337",
                         "name": "green",
-                        "distanceToTreshold": 40.97370240955955,
+                        "distanceToTreshold": 41.615223689149765,
                         "thresholdDistance": 60,
-                        "distance": 19.026297590440446,
+                        "distance": 18.384776310850235,
                         "isGreyscale": false,
                         "isLowSaturation": false,
                         "isGrey": false,
@@ -4816,9 +3493,9 @@
                         "didMatch": false,
                         "color": "#f8baa2",
                         "name": "green",
-                        "distanceToTreshold": -209.0427475328038,
+                        "distanceToTreshold": -203.59438537267823,
                         "thresholdDistance": 60,
-                        "distance": 269.0427475328038,
+                        "distance": 263.59438537267823,
                         "isGreyscale": false,
                         "isLowSaturation": false,
                         "isGrey": false,
@@ -4832,87 +3509,6 @@
                 "#6782c1",
                 "#d1241c",
                 "#f8baa2"
-            ],
-            "primary": {
-                "color": "#d4271e",
-                "name": "red",
-                "distance": 65.34523701081817
-            },
-            "palleteOrg": [
-                {
-                    "color": "#d4271e",
-                    "name": "red",
-                    "distance": 65.34523701081817,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#e4c3b7",
-                    "name": "red",
-                    "distance": 268.78057965559935,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#dabe5f",
-                    "name": "red",
-                    "distance": 215.6246739127969,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#285f3f",
-                    "name": "green",
-                    "distance": 176.54744404833505,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "uniqPalette": [
-                {
-                    "color": "#d4271e",
-                    "name": "red",
-                    "distance": 65.34523701081817
-                },
-                {
-                    "color": "#285f3f",
-                    "name": "green",
-                    "distance": 176.54744404833505,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "palette": [
-                {
-                    "color": "#d4271e",
-                    "name": "red",
-                    "distance": 65.34523701081817
-                },
-                {
-                    "color": "#285f3f",
-                    "name": "green",
-                    "distance": 176.54744404833505,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
             ]
         },
         "imageUrl": "images/heraldry/fi/maakunta/lapin-vaakuna.png",
@@ -4992,8 +3588,8 @@
                     "didMatch": false,
                     "color": "#ff1a3d",
                     "name": "green",
-                    "distanceToTreshold": -215.62837299523432,
-                    "thresholdDistance": 60,
+                    "distanceToTreshold": -185.62837299523432,
+                    "thresholdDistance": 90,
                     "distance": 275.6283729952343,
                     "isGreyscale": false,
                     "isLowSaturation": false,
@@ -5056,50 +3652,6 @@
                     "isBlack": false,
                     "isWhite": false
                 }
-            ],
-            "colorsPaletteAlt": [
-                [
-                    255,
-                    26,
-                    61
-                ],
-                [
-                    105,
-                    105,
-                    105
-                ],
-                [
-                    0,
-                    0,
-                    0
-                ],
-                [
-                    230,
-                    230,
-                    230
-                ]
-            ],
-            "colorsPaletteAlt2": [
-                [
-                    255,
-                    26,
-                    61
-                ],
-                [
-                    105,
-                    105,
-                    105
-                ],
-                [
-                    0,
-                    0,
-                    0
-                ],
-                [
-                    230,
-                    230,
-                    230
-                ]
             ],
             "byNames": {
                 "red": [
@@ -5171,8 +3723,8 @@
                         "didMatch": false,
                         "color": "#ff1a3d",
                         "name": "green",
-                        "distanceToTreshold": -215.62837299523432,
-                        "thresholdDistance": 60,
+                        "distanceToTreshold": -185.62837299523432,
+                        "thresholdDistance": 90,
                         "distance": 275.6283729952343,
                         "isGreyscale": false,
                         "isLowSaturation": false,
@@ -5202,77 +3754,6 @@
                 "#696969",
                 "#000000",
                 "#e6e6e6"
-            ],
-            "primary": {
-                "color": "#e1e1e1",
-                "name": "red",
-                "distance": 319.60913628993774
-            },
-            "palleteOrg": [
-                {
-                    "color": "#060606",
-                    "name": "red",
-                    "distance": 249.14453636393475,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": false,
-                    "isBlack": true,
-                    "isWhite": false
-                },
-                {
-                    "color": "#e0e0e0",
-                    "name": "red",
-                    "distance": 318.29703108888714,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": true,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#bf3045",
-                    "name": "red",
-                    "distance": 105.64563407921787,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#747474",
-                    "name": "red",
-                    "distance": 215.01860384627187,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": true,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "uniqPalette": [
-                {
-                    "color": "#bf3045",
-                    "name": "red",
-                    "distance": 105.64563407921787,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "palette": [
-                {
-                    "color": "#bf3045",
-                    "name": "red",
-                    "distance": 105.64563407921787,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
             ]
         },
         "imageUrl": "images/heraldry/fi/maakunta/keskisuomen-vaakuna.png",
@@ -5403,40 +3884,6 @@
                     "isWhite": true
                 }
             ],
-            "colorsPaletteAlt": [
-                [
-                    14,
-                    87,
-                    161
-                ],
-                [
-                    0,
-                    1,
-                    1
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ]
-            ],
-            "colorsPaletteAlt2": [
-                [
-                    14,
-                    87,
-                    161
-                ],
-                [
-                    0,
-                    1,
-                    1
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ]
-            ],
             "byNames": {
                 "blue": [
                     {
@@ -5537,67 +3984,6 @@
                 "#0e57a1",
                 "#000101",
                 "#ffffff"
-            ],
-            "primary": {
-                "color": "#0c54a4",
-                "name": "blue",
-                "distance": 124.42266674525185
-            },
-            "palleteOrg": [
-                {
-                    "color": "#0d54a4",
-                    "name": "blue",
-                    "distance": 124.52309022827855,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#c8d9ea",
-                    "name": "blue",
-                    "distance": 295.85469406450187,
-                    "isGreyscale": false,
-                    "isLowSaturation": true,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#05090c",
-                    "name": "blue",
-                    "distance": 243.2180092016214,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": false,
-                    "isBlack": true,
-                    "isWhite": false
-                },
-                {
-                    "color": "#84accf",
-                    "name": "blue",
-                    "distance": 222.06305410851215,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "uniqPalette": [
-                {
-                    "color": "#0c54a4",
-                    "name": "blue",
-                    "distance": 124.42266674525185
-                }
-            ],
-            "palette": [
-                {
-                    "color": "#0c54a4",
-                    "name": "blue",
-                    "distance": 124.42266674525185
-                }
             ]
         },
         "imageUrl": "images/heraldry/fi/maakunta/pohjanmaan-historiallisen-maakunnan-vaakuna.png",
@@ -5677,8 +4063,8 @@
                     "didMatch": false,
                     "color": "#fff200",
                     "name": "green",
-                    "distanceToTreshold": -195.3311575190149,
-                    "thresholdDistance": 60,
+                    "distanceToTreshold": -165.3311575190149,
+                    "thresholdDistance": 90,
                     "distance": 255.3311575190149,
                     "isGreyscale": false,
                     "isLowSaturation": false,
@@ -5687,12 +4073,12 @@
                     "isWhite": false
                 },
                 {
-                    "didMatch": false,
+                    "didMatch": true,
                     "color": "#fff200",
                     "name": "gold",
-                    "distanceToTreshold": -11.847059786744225,
-                    "thresholdDistance": 60,
-                    "distance": 71.84705978674423,
+                    "distanceToTreshold": 37,
+                    "thresholdDistance": 50,
+                    "distance": 13,
                     "isGreyscale": false,
                     "isLowSaturation": false,
                     "isGrey": false,
@@ -5781,8 +4167,8 @@
                     "didMatch": false,
                     "color": "#dd0328",
                     "name": "green",
-                    "distanceToTreshold": -189.2087478400387,
-                    "thresholdDistance": 60,
+                    "distanceToTreshold": -159.2087478400387,
+                    "thresholdDistance": 90,
                     "distance": 249.2087478400387,
                     "isGreyscale": false,
                     "isLowSaturation": false,
@@ -5818,51 +4204,22 @@
                     "isWhite": true
                 }
             ],
-            "colorsPaletteAlt": [
-                [
-                    255,
-                    242,
-                    0
-                ],
-                [
-                    45,
-                    53,
-                    138
-                ],
-                [
-                    221,
-                    3,
-                    40
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ]
-            ],
-            "colorsPaletteAlt2": [
-                [
-                    255,
-                    242,
-                    0
-                ],
-                [
-                    45,
-                    53,
-                    138
-                ],
-                [
-                    221,
-                    3,
-                    40
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ]
-            ],
             "byNames": {
+                "gold": [
+                    {
+                        "didMatch": true,
+                        "color": "#fff200",
+                        "name": "gold",
+                        "distanceToTreshold": 37,
+                        "thresholdDistance": 50,
+                        "distance": 13,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
                 "red": [
                     {
                         "didMatch": true,
@@ -5931,8 +4288,8 @@
                         "didMatch": false,
                         "color": "#dd0328",
                         "name": "green",
-                        "distanceToTreshold": -189.2087478400387,
-                        "thresholdDistance": 60,
+                        "distanceToTreshold": -159.2087478400387,
+                        "thresholdDistance": 90,
                         "distance": 249.2087478400387,
                         "isGreyscale": false,
                         "isLowSaturation": false,
@@ -5962,87 +4319,6 @@
                 "#2d358a",
                 "#dd0328",
                 "#ffffff"
-            ],
-            "primary": {
-                "color": "#dc052c",
-                "name": "red",
-                "distance": 56.444663166680336
-            },
-            "palleteOrg": [
-                {
-                    "color": "#dc062c",
-                    "name": "red",
-                    "distance": 56.542019772908716,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#fae426",
-                    "name": "red",
-                    "distance": 231.1990484409484,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#313988",
-                    "name": "blue",
-                    "distance": 140.75155416548694,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#ec7c94",
-                    "name": "red",
-                    "distance": 194.01288616996553,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "uniqPalette": [
-                {
-                    "color": "#dc052c",
-                    "name": "red",
-                    "distance": 56.444663166680336
-                },
-                {
-                    "color": "#313988",
-                    "name": "blue",
-                    "distance": 140.75155416548694,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "palette": [
-                {
-                    "color": "#dc052c",
-                    "name": "red",
-                    "distance": 56.444663166680336
-                },
-                {
-                    "color": "#313988",
-                    "name": "blue",
-                    "distance": 140.75155416548694,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
             ]
         },
         "imageUrl": "images/heraldry/fi/maakunta/pohjoiskarjalan-vaakuna.png",
@@ -6174,40 +4450,6 @@
                     "isWhite": true
                 }
             ],
-            "colorsPaletteAlt": [
-                [
-                    14,
-                    87,
-                    161
-                ],
-                [
-                    0,
-                    1,
-                    1
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ]
-            ],
-            "colorsPaletteAlt2": [
-                [
-                    14,
-                    87,
-                    161
-                ],
-                [
-                    0,
-                    1,
-                    1
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ]
-            ],
             "byNames": {
                 "blue": [
                     {
@@ -6308,67 +4550,6 @@
                 "#0e57a1",
                 "#000101",
                 "#ffffff"
-            ],
-            "primary": {
-                "color": "#0c54a4",
-                "name": "blue",
-                "distance": 124.42266674525185
-            },
-            "palleteOrg": [
-                {
-                    "color": "#0d54a4",
-                    "name": "blue",
-                    "distance": 124.52309022827855,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#c8d9ea",
-                    "name": "blue",
-                    "distance": 295.85469406450187,
-                    "isGreyscale": false,
-                    "isLowSaturation": true,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#05090c",
-                    "name": "blue",
-                    "distance": 243.2180092016214,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": false,
-                    "isBlack": true,
-                    "isWhite": false
-                },
-                {
-                    "color": "#84accf",
-                    "name": "blue",
-                    "distance": 222.06305410851215,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "uniqPalette": [
-                {
-                    "color": "#0c54a4",
-                    "name": "blue",
-                    "distance": 124.42266674525185
-                }
-            ],
-            "palette": [
-                {
-                    "color": "#0c54a4",
-                    "name": "blue",
-                    "distance": 124.42266674525185
-                }
             ]
         },
         "imageUrl": "images/heraldry/fi/maakunta/pohjoispohjanmaan-vaakuna.png",
@@ -6448,8 +4629,8 @@
                     "didMatch": false,
                     "color": "#ffd700",
                     "name": "green",
-                    "distanceToTreshold": -198.11818998280614,
-                    "thresholdDistance": 60,
+                    "distanceToTreshold": -168.11818998280614,
+                    "thresholdDistance": 90,
                     "distance": 258.11818998280614,
                     "isGreyscale": false,
                     "isLowSaturation": false,
@@ -6461,9 +4642,9 @@
                     "didMatch": true,
                     "color": "#ffd700",
                     "name": "gold",
-                    "distanceToTreshold": 0.7125645688734465,
-                    "thresholdDistance": 60,
-                    "distance": 59.28743543112655,
+                    "distanceToTreshold": 10,
+                    "thresholdDistance": 50,
+                    "distance": 40,
                     "isGreyscale": false,
                     "isLowSaturation": false,
                     "isGrey": false,
@@ -6500,8 +4681,8 @@
                     "didMatch": false,
                     "color": "#d50032",
                     "name": "green",
-                    "distanceToTreshold": -185.33650360270482,
-                    "thresholdDistance": 60,
+                    "distanceToTreshold": -155.33650360270482,
+                    "thresholdDistance": 90,
                     "distance": 245.33650360270482,
                     "isGreyscale": false,
                     "isLowSaturation": false,
@@ -6523,39 +4704,15 @@
                     "isWhite": false
                 }
             ],
-            "colorsPaletteAlt": [
-                [
-                    255,
-                    215,
-                    0
-                ],
-                [
-                    213,
-                    0,
-                    50
-                ]
-            ],
-            "colorsPaletteAlt2": [
-                [
-                    255,
-                    215,
-                    0
-                ],
-                [
-                    213,
-                    0,
-                    50
-                ]
-            ],
             "byNames": {
                 "gold": [
                     {
                         "didMatch": true,
                         "color": "#ffd700",
                         "name": "gold",
-                        "distanceToTreshold": 0.7125645688734465,
-                        "thresholdDistance": 60,
-                        "distance": 59.28743543112655,
+                        "distanceToTreshold": 10,
+                        "thresholdDistance": 50,
+                        "distance": 40,
                         "isGreyscale": false,
                         "isLowSaturation": false,
                         "isGrey": false,
@@ -6615,8 +4772,8 @@
                         "didMatch": false,
                         "color": "#d50032",
                         "name": "green",
-                        "distanceToTreshold": -185.33650360270482,
-                        "thresholdDistance": 60,
+                        "distanceToTreshold": -155.33650360270482,
+                        "thresholdDistance": 90,
                         "distance": 245.33650360270482,
                         "isGreyscale": false,
                         "isLowSaturation": false,
@@ -6644,67 +4801,6 @@
             "hexPalette": [
                 "#ffd700",
                 "#d50032"
-            ],
-            "primary": {
-                "color": "#d40433",
-                "name": "red",
-                "distance": 66.82813778641449
-            },
-            "palleteOrg": [
-                {
-                    "color": "#d40433",
-                    "name": "red",
-                    "distance": 66.82813778641449,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#fbd304",
-                    "name": "red",
-                    "distance": 211.0758157629623,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#e5531f",
-                    "name": "red",
-                    "distance": 92.33634170791044,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#ef8612",
-                    "name": "red",
-                    "distance": 136.14697940094007,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "uniqPalette": [
-                {
-                    "color": "#d40433",
-                    "name": "red",
-                    "distance": 66.82813778641449
-                }
-            ],
-            "palette": [
-                {
-                    "color": "#d40433",
-                    "name": "red",
-                    "distance": 66.82813778641449
-                }
             ]
         },
         "imageUrl": "images/heraldry/fi/maakunta/pohjanmaan-vaakuna.png",
@@ -6784,8 +4880,8 @@
                     "didMatch": false,
                     "color": "#ffce26",
                     "name": "green",
-                    "distanceToTreshold": -202.43094329747015,
-                    "thresholdDistance": 60,
+                    "distanceToTreshold": -172.43094329747015,
+                    "thresholdDistance": 90,
                     "distance": 262.43094329747015,
                     "isGreyscale": false,
                     "isLowSaturation": false,
@@ -6848,50 +4944,6 @@
                     "isBlack": true,
                     "isWhite": false
                 }
-            ],
-            "colorsPaletteAlt": [
-                [
-                    255,
-                    206,
-                    38
-                ],
-                [
-                    122,
-                    125,
-                    131
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ],
-                [
-                    18,
-                    23,
-                    34
-                ]
-            ],
-            "colorsPaletteAlt2": [
-                [
-                    255,
-                    206,
-                    38
-                ],
-                [
-                    122,
-                    125,
-                    131
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ],
-                [
-                    18,
-                    23,
-                    34
-                ]
             ],
             "byNames": {
                 "gold": [
@@ -6994,8 +5046,8 @@
                         "didMatch": false,
                         "color": "#ffce26",
                         "name": "green",
-                        "distanceToTreshold": -202.43094329747015,
-                        "thresholdDistance": 60,
+                        "distanceToTreshold": -172.43094329747015,
+                        "thresholdDistance": 90,
                         "distance": 262.43094329747015,
                         "isGreyscale": false,
                         "isLowSaturation": false,
@@ -7010,87 +5062,7 @@
                 "#7a7d83",
                 "#ffffff",
                 "#121722"
-            ],
-            "primary": {
-                "color": "#f7ca2d",
-                "name": "red",
-                "distance": 207.1062529234692
-            },
-            "palleteOrg": [
-                {
-                    "color": "#141424",
-                    "name": "blue",
-                    "distance": 220.81893034792103,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": false,
-                    "isBlack": true,
-                    "isWhite": false
-                },
-                {
-                    "color": "#f6c92d",
-                    "name": "red",
-                    "distance": 206.17225807561985,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#84848c",
-                    "name": "blue",
-                    "distance": 219.25555865245468,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": true,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#848c8c",
-                    "name": "green",
-                    "distance": 224.1628872048181,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": true,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "uniqPalette": [
-                {
-                    "color": "#f6c92d",
-                    "name": "red",
-                    "distance": 206.17225807561985,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#84848c",
-                    "name": "blue",
-                    "distance": 219.25555865245468,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": true,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#848c8c",
-                    "name": "green",
-                    "distance": 224.1628872048181,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": true,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "palette": []
+            ]
         },
         "imageUrl": "images/heraldry/fi/maakunta/pohjoissavon-vaakuna.png",
         "imageSrcSet": "images/heraldry/fi/web-maakunta/pohjoissavon-vaakuna-80w.webp 80w,images/heraldry/fi/web-maakunta/pohjoissavon-vaakuna-300w.webp 300w",
@@ -7169,8 +5141,8 @@
                     "didMatch": false,
                     "color": "#fff200",
                     "name": "green",
-                    "distanceToTreshold": -195.3311575190149,
-                    "thresholdDistance": 60,
+                    "distanceToTreshold": -165.3311575190149,
+                    "thresholdDistance": 90,
                     "distance": 255.3311575190149,
                     "isGreyscale": false,
                     "isLowSaturation": false,
@@ -7179,12 +5151,12 @@
                     "isWhite": false
                 },
                 {
-                    "didMatch": false,
+                    "didMatch": true,
                     "color": "#fff200",
                     "name": "gold",
-                    "distanceToTreshold": -11.847059786744225,
-                    "thresholdDistance": 60,
-                    "distance": 71.84705978674423,
+                    "distanceToTreshold": 37,
+                    "thresholdDistance": 50,
+                    "distance": 13,
                     "isGreyscale": false,
                     "isLowSaturation": false,
                     "isGrey": false,
@@ -7221,9 +5193,9 @@
                     "didMatch": false,
                     "color": "#73a864",
                     "name": "green",
-                    "distanceToTreshold": -63.87493693237546,
+                    "distanceToTreshold": -56.262633722103516,
                     "thresholdDistance": 60,
-                    "distance": 123.87493693237546,
+                    "distance": 116.26263372210352,
                     "isGreyscale": false,
                     "isLowSaturation": false,
                     "isGrey": false,
@@ -7296,41 +5268,22 @@
                     "isWhite": false
                 }
             ],
-            "colorsPaletteAlt": [
-                [
-                    255,
-                    242,
-                    0
-                ],
-                [
-                    115,
-                    168,
-                    100
-                ],
-                [
-                    0,
-                    107,
-                    182
-                ]
-            ],
-            "colorsPaletteAlt2": [
-                [
-                    255,
-                    242,
-                    0
-                ],
-                [
-                    115,
-                    168,
-                    100
-                ],
-                [
-                    0,
-                    107,
-                    182
-                ]
-            ],
             "byNames": {
+                "gold": [
+                    {
+                        "didMatch": true,
+                        "color": "#fff200",
+                        "name": "gold",
+                        "distanceToTreshold": 37,
+                        "thresholdDistance": 50,
+                        "distance": 13,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
                 "blue": [
                     {
                         "didMatch": true,
@@ -7413,102 +5366,6 @@
                 "#fff200",
                 "#73a864",
                 "#006bb6"
-            ],
-            "primary": {
-                "color": "#f3ee09",
-                "name": "red",
-                "distance": 238.47222060441337
-            },
-            "palleteOrg": [
-                {
-                    "color": "#f2ee0a",
-                    "name": "red",
-                    "distance": 238.56445669881336,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#076db1",
-                    "name": "blue",
-                    "distance": 134.21624342828255,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#7cac5c",
-                    "name": "green",
-                    "distance": 175.29689101635546,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#76ac64",
-                    "name": "green",
-                    "distance": 175.5363210278716,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "uniqPalette": [
-                {
-                    "color": "#f3ee09",
-                    "name": "red",
-                    "distance": 238.47222060441337
-                },
-                {
-                    "color": "#076db1",
-                    "name": "blue",
-                    "distance": 134.21624342828255,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#7cac5c",
-                    "name": "green",
-                    "distance": 175.29689101635546,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "palette": [
-                {
-                    "color": "#076db1",
-                    "name": "blue",
-                    "distance": 134.21624342828255,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#7cac5c",
-                    "name": "green",
-                    "distance": 175.29689101635546,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
             ]
         },
         "imageUrl": "images/heraldry/fi/maakunta/paijathameen-vaakuna.png",
@@ -7588,8 +5445,8 @@
                     "didMatch": false,
                     "color": "#ffce26",
                     "name": "green",
-                    "distanceToTreshold": -202.43094329747015,
-                    "thresholdDistance": 60,
+                    "distanceToTreshold": -172.43094329747015,
+                    "thresholdDistance": 90,
                     "distance": 262.43094329747015,
                     "isGreyscale": false,
                     "isLowSaturation": false,
@@ -7652,50 +5509,6 @@
                     "isBlack": true,
                     "isWhite": false
                 }
-            ],
-            "colorsPaletteAlt": [
-                [
-                    255,
-                    206,
-                    38
-                ],
-                [
-                    122,
-                    125,
-                    131
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ],
-                [
-                    18,
-                    23,
-                    34
-                ]
-            ],
-            "colorsPaletteAlt2": [
-                [
-                    255,
-                    206,
-                    38
-                ],
-                [
-                    122,
-                    125,
-                    131
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ],
-                [
-                    18,
-                    23,
-                    34
-                ]
             ],
             "byNames": {
                 "gold": [
@@ -7798,8 +5611,8 @@
                         "didMatch": false,
                         "color": "#ffce26",
                         "name": "green",
-                        "distanceToTreshold": -202.43094329747015,
-                        "thresholdDistance": 60,
+                        "distanceToTreshold": -172.43094329747015,
+                        "thresholdDistance": 90,
                         "distance": 262.43094329747015,
                         "isGreyscale": false,
                         "isLowSaturation": false,
@@ -7814,87 +5627,7 @@
                 "#7a7d83",
                 "#ffffff",
                 "#121722"
-            ],
-            "primary": {
-                "color": "#f7ca2d",
-                "name": "red",
-                "distance": 207.1062529234692
-            },
-            "palleteOrg": [
-                {
-                    "color": "#141424",
-                    "name": "blue",
-                    "distance": 220.81893034792103,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": false,
-                    "isBlack": true,
-                    "isWhite": false
-                },
-                {
-                    "color": "#f6c92d",
-                    "name": "red",
-                    "distance": 206.17225807561985,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#84848c",
-                    "name": "blue",
-                    "distance": 219.25555865245468,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": true,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#848c8c",
-                    "name": "green",
-                    "distance": 224.1628872048181,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": true,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "uniqPalette": [
-                {
-                    "color": "#f6c92d",
-                    "name": "red",
-                    "distance": 206.17225807561985,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#84848c",
-                    "name": "blue",
-                    "distance": 219.25555865245468,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": true,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#848c8c",
-                    "name": "green",
-                    "distance": 224.1628872048181,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": true,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "palette": []
+            ]
         },
         "imageUrl": "images/heraldry/fi/maakunta/savon-vaakuna.png",
         "imageSrcSet": "images/heraldry/fi/web-maakunta/savon-vaakuna-80w.webp 80w,images/heraldry/fi/web-maakunta/savon-vaakuna-300w.webp 300w",
@@ -7973,8 +5706,8 @@
                     "didMatch": false,
                     "color": "#ffd90f",
                     "name": "green",
-                    "distanceToTreshold": -198.25181509526703,
-                    "thresholdDistance": 60,
+                    "distanceToTreshold": -168.25181509526703,
+                    "thresholdDistance": 90,
                     "distance": 258.25181509526703,
                     "isGreyscale": false,
                     "isLowSaturation": false,
@@ -8025,9 +5758,9 @@
                     "didMatch": false,
                     "color": "#8fa156",
                     "name": "green",
-                    "distanceToTreshold": -86.81280598094978,
+                    "distanceToTreshold": -78.74436925511608,
                     "thresholdDistance": 60,
-                    "distance": 146.81280598094978,
+                    "distance": 138.74436925511608,
                     "isGreyscale": false,
                     "isLowSaturation": false,
                     "isGrey": false,
@@ -8113,50 +5846,6 @@
                     "isBlack": false,
                     "isWhite": true
                 }
-            ],
-            "colorsPaletteAlt": [
-                [
-                    255,
-                    217,
-                    15
-                ],
-                [
-                    143,
-                    161,
-                    86
-                ],
-                [
-                    10,
-                    95,
-                    169
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ]
-            ],
-            "colorsPaletteAlt2": [
-                [
-                    255,
-                    217,
-                    15
-                ],
-                [
-                    143,
-                    161,
-                    86
-                ],
-                [
-                    10,
-                    95,
-                    169
-                ],
-                [
-                    255,
-                    255,
-                    255
-                ]
             ],
             "byNames": {
                 "gold": [
@@ -8273,92 +5962,6 @@
                 "#8fa156",
                 "#0a5fa9",
                 "#ffffff"
-            ],
-            "primary": {
-                "color": "#f4d91b",
-                "name": "red",
-                "distance": 218.949765928169
-            },
-            "palleteOrg": [
-                {
-                    "color": "#0d5dab",
-                    "name": "blue",
-                    "distance": 125.99206324209474,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#f4d91c",
-                    "name": "red",
-                    "distance": 219.07532951019382,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#829c5c",
-                    "name": "green",
-                    "distance": 187.52333188166213,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#84b4d4",
-                    "name": "blue",
-                    "distance": 227.31695933211847,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "uniqPalette": [
-                {
-                    "color": "#f4d91b",
-                    "name": "red",
-                    "distance": 218.949765928169
-                },
-                {
-                    "color": "#0d5dab",
-                    "name": "blue",
-                    "distance": 125.99206324209474,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#829c5c",
-                    "name": "green",
-                    "distance": 187.52333188166213,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "palette": [
-                {
-                    "color": "#0d5dab",
-                    "name": "blue",
-                    "distance": 125.99206324209474,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
             ]
         },
         "imageUrl": "images/heraldry/fi/maakunta/uudenmaan-vaakuna.png",
@@ -8490,8 +6093,8 @@
                     "didMatch": false,
                     "color": "#ed1b2d",
                     "name": "green",
-                    "distanceToTreshold": -195.44079548889601,
-                    "thresholdDistance": 60,
+                    "distanceToTreshold": -165.44079548889601,
+                    "thresholdDistance": 90,
                     "distance": 255.44079548889601,
                     "isGreyscale": false,
                     "isLowSaturation": false,
@@ -8542,9 +6145,9 @@
                     "didMatch": false,
                     "color": "#baccd6",
                     "name": "green",
-                    "distanceToTreshold": -184.27852955182124,
+                    "distanceToTreshold": -181.25919671589725,
                     "thresholdDistance": 60,
-                    "distance": 244.27852955182124,
+                    "distance": 241.25919671589725,
                     "isGreyscale": false,
                     "isLowSaturation": true,
                     "isGrey": false,
@@ -8564,40 +6167,6 @@
                     "isBlack": false,
                     "isWhite": false
                 }
-            ],
-            "colorsPaletteAlt": [
-                [
-                    0,
-                    107,
-                    182
-                ],
-                [
-                    237,
-                    27,
-                    45
-                ],
-                [
-                    186,
-                    204,
-                    214
-                ]
-            ],
-            "colorsPaletteAlt2": [
-                [
-                    0,
-                    107,
-                    182
-                ],
-                [
-                    237,
-                    27,
-                    45
-                ],
-                [
-                    186,
-                    204,
-                    214
-                ]
             ],
             "byNames": {
                 "blue": [
@@ -8652,9 +6221,9 @@
                         "didMatch": false,
                         "color": "#baccd6",
                         "name": "green",
-                        "distanceToTreshold": -184.27852955182124,
+                        "distanceToTreshold": -181.25919671589725,
                         "thresholdDistance": 60,
-                        "distance": 244.27852955182124,
+                        "distance": 241.25919671589725,
                         "isGreyscale": false,
                         "isLowSaturation": true,
                         "isGrey": false,
@@ -8697,97 +6266,6 @@
                 "#006bb6",
                 "#ed1b2d",
                 "#baccd6"
-            ],
-            "primary": {
-                "color": "#eb1c2c",
-                "name": "red",
-                "distance": 55.85696017507576
-            },
-            "palleteOrg": [
-                {
-                    "color": "#eb1f2c",
-                    "name": "red",
-                    "distance": 57.41950887982237,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#f7d228",
-                    "name": "red",
-                    "distance": 213.92522057952868,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#076bb1",
-                    "name": "blue",
-                    "distance": 132.5971342073425,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#747574",
-                    "name": "green",
-                    "distance": 214.37350582569667,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": true,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "uniqPalette": [
-                {
-                    "color": "#eb1c2c",
-                    "name": "red",
-                    "distance": 55.85696017507576
-                },
-                {
-                    "color": "#076bb1",
-                    "name": "blue",
-                    "distance": 132.5971342073425,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#747574",
-                    "name": "green",
-                    "distance": 214.37350582569667,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": true,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "palette": [
-                {
-                    "color": "#eb1c2c",
-                    "name": "red",
-                    "distance": 55.85696017507576
-                },
-                {
-                    "color": "#076bb1",
-                    "name": "blue",
-                    "distance": 132.5971342073425,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
             ]
         },
         "imageUrl": "images/heraldry/fi/maakunta/varsinaissuomen-vaakuna.png",
@@ -8869,8 +6347,8 @@
                     "didMatch": false,
                     "color": "#e70909",
                     "name": "green",
-                    "distanceToTreshold": -192.67766027094677,
-                    "thresholdDistance": 60,
+                    "distanceToTreshold": -162.67766027094677,
+                    "thresholdDistance": 90,
                     "distance": 252.67766027094677,
                     "isGreyscale": false,
                     "isLowSaturation": false,
@@ -8973,9 +6451,9 @@
                     "didMatch": false,
                     "color": "#dbb357",
                     "name": "green",
-                    "distanceToTreshold": -164.79101405527757,
-                    "thresholdDistance": 60,
-                    "distance": 224.79101405527757,
+                    "distanceToTreshold": -155.26312401174377,
+                    "thresholdDistance": 90,
+                    "distance": 245.26312401174377,
                     "isGreyscale": false,
                     "isLowSaturation": false,
                     "isGrey": false,
@@ -9009,50 +6487,6 @@
                     "isBlack": true,
                     "isWhite": false
                 }
-            ],
-            "colorsPaletteAlt": [
-                [
-                    231,
-                    9,
-                    9
-                ],
-                [
-                    5,
-                    86,
-                    199
-                ],
-                [
-                    219,
-                    179,
-                    87
-                ],
-                [
-                    0,
-                    0,
-                    0
-                ]
-            ],
-            "colorsPaletteAlt2": [
-                [
-                    231,
-                    9,
-                    9
-                ],
-                [
-                    5,
-                    86,
-                    199
-                ],
-                [
-                    219,
-                    179,
-                    87
-                ],
-                [
-                    0,
-                    0,
-                    0
-                ]
             ],
             "byNames": {
                 "red": [
@@ -9138,9 +6572,9 @@
                         "didMatch": false,
                         "color": "#dbb357",
                         "name": "green",
-                        "distanceToTreshold": -164.79101405527757,
-                        "thresholdDistance": 60,
-                        "distance": 224.79101405527757,
+                        "distanceToTreshold": -155.26312401174377,
+                        "thresholdDistance": 90,
+                        "distance": 245.26312401174377,
                         "isGreyscale": false,
                         "isLowSaturation": false,
                         "isGrey": false,
@@ -9184,87 +6618,6 @@
                 "#0556c7",
                 "#dbb357",
                 "#000000"
-            ],
-            "primary": {
-                "color": "#043478",
-                "name": "blue",
-                "distance": 144.72387501722028
-            },
-            "palleteOrg": [
-                {
-                    "color": "#d4ad54",
-                    "name": "red",
-                    "distance": 197.06344156134085,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#043478",
-                    "name": "blue",
-                    "distance": 144.72387501722028,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#d0d4db",
-                    "name": "blue",
-                    "distance": 299.17219122104245,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": true,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "color": "#cf1412",
-                    "name": "red",
-                    "distance": 55.02726596879042,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "uniqPalette": [
-                {
-                    "color": "#043478",
-                    "name": "blue",
-                    "distance": 144.72387501722028
-                },
-                {
-                    "color": "#cf1412",
-                    "name": "red",
-                    "distance": 55.02726596879042,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "palette": [
-                {
-                    "color": "#043478",
-                    "name": "blue",
-                    "distance": 144.72387501722028
-                },
-                {
-                    "color": "#cf1412",
-                    "name": "red",
-                    "distance": 55.02726596879042,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
             ]
         },
         "imageUrl": "images/heraldry/fi/maakunta/satakunnan-vaakuna.png",

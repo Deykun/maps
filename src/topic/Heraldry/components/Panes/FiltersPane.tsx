@@ -122,7 +122,7 @@ const FiltersPane = ({
 
   return (
     <div className="relative pointer-events-auto" id="filters-pane">
-      <Pane>
+      <Pane className="ui-pane--magic">
         <ButtonCircle onClick={() => setIsOpen(!isOpen)} title={t('heraldry.titleFilters')}>
           <IconMapMagnifyingGlass />
           {activeTotal > 0 && <span className="ui-button-circle-marker">{activeTotal}</span>}
@@ -175,7 +175,7 @@ const FiltersPane = ({
           {typeFiltersList.map(({ value, total }) => 
             <button
               onClick={() => toggleType(value)}
-              className={clsx('font-[500] text-[12px] text-left hover:text-[#205dbd]', { 
+              className={clsx('font-[500] text-[14px] text-left hover:text-[#205dbd]', { 
                 'font-[600] text-[#205dbd]': typeFilters.includes(value),
               })}
             >
@@ -187,12 +187,15 @@ const FiltersPane = ({
       {activeMenu === 'color' && <SubPane order={2} className="absolute right-12 mt-2 mr-3 flex-row">
         {Object.keys(colorsMarkersByNames).map((name) => <ButtonCircle
           key={name}
+          className={clsx({
+            'border border-[#dbd7d7]': colorFilters.includes(name),
+          })}
           onClick={() => toggleColor(name)}
           title={t(`heraldry.unit.type.${lang}.${name}`)}
         >
           <IconColor
-            className={clsx('duration-300', {
-              'opacity-30': !colorFilters.includes(name)
+            className={clsx('duration-300 drop-shadow-lg', {
+              'opacity-30': !colorFilters.includes(name),
             })}
             style={{
               fill: colorsMarkersByNames[name],
@@ -222,7 +225,7 @@ const FiltersPane = ({
           ...animalFiltersList].map(({ value, total }) => 
             <button
               onClick={() => toggleAnimal(value)}
-              className={clsx('font-[500] text-[12px] text-left hover:text-[#205dbd]', { 
+              className={clsx('font-[500] text-[14px] text-left hover:text-[#205dbd]', { 
                 'font-[600] text-[#205dbd]': animalFilters.includes(value),
               })}
             >
@@ -250,7 +253,7 @@ const FiltersPane = ({
           {itemFiltersList.map(({ value, total }) => 
             <button
               onClick={() => toggleItem(value)}
-              className={clsx('font-[500] text-[12px] text-left hover:text-[#205dbd]', { 
+              className={clsx('font-[500] text-[14px] text-left hover:text-[#205dbd]', { 
                 'font-[600] text-[#205dbd]': itemFilters.includes(value),
               })}
             >

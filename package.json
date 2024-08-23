@@ -21,7 +21,7 @@
     "web:pl": "tsx scripts/heraldry/pl/web-images.ts",
     "fetch:ee:unit": "tsx scripts/heraldry/ee/fetch-unit.ts",
     "fetch:ee:unit-map": "tsx scripts/heraldry/ee/fetch-unit-map.ts",
-    "index:ee": "nodemon --watch scripts/heraldry/ee/utils/get-markers.ts --exec npm run fetch:ee:map-unit",
+    "index:ee": "nodemon --watch scripts/heraldry/ee/utils/get-markers.ts --exec npm run fetch:ee:unit-map",
     "resize:ee:coats": "tsx scripts/heraldry/ee/resize-images.ts",
     "web:ee": "tsx scripts/heraldry/ee/web-images.ts",
     "fetch:fi:kunta": "tsx scripts/heraldry/fi/fetch-kunta.ts",

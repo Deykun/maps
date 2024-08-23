@@ -3,6 +3,8 @@ import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 import { useDraggable } from "react-use-draggable-scroll";
 
+import { isLanguageSupported } from '@/utils/lang';
+
 import { AdministrativeUnit } from '@/topic/Heraldry/types';
 
 import { GetFilterResponse } from '@/topic/Heraldry/utils/getFilter';
@@ -54,9 +56,10 @@ const CountryHeraldry = ({
     const { t, i18n } = useTranslation();
 
     useEffect(() => {
-      // We set the language according to the country
-      if (lang) {
+      if (isLanguageSupported(lang)) {
         i18n.changeLanguage(lang);
+      } else {
+        // i18n.changeLanguage('en');
       }
     }, []);
 
@@ -94,7 +97,7 @@ const CountryHeraldry = ({
           >
             <header className={clsx('', {
               'md:mb-10 min-h-[100px]': zoomLevel === 1,
-              'ui-pane fixed top-3 left-3 z-30 px-4 empty:hidden': zoomLevel > 1,
+              'ui-pane fixed top-3 left-3 md:left-12 md:ml-6 z-30 px-4 empty:hidden': zoomLevel > 1,
             })}>
               {zoomLevel === 1 && 
                 <h1 className={clsx('text-[28px] lg:text-[36px] text-center', { 
@@ -132,7 +135,7 @@ const CountryHeraldry = ({
             </div>
             <div className={clsx('', {
               'text-center mt-10 text-[14px] text-[#4b4b4b] tracking-wide': zoomLevel === 1,
-              'fixed bottom-3 left-1/2 -translate-x-1/2 w-[400px] max-w-[80vw] z-30 ui-pane sans text-[13px] text-center': zoomLevel > 1,
+              'fixed bottom-3 left-1/2 -translate-x-1/2 w-[400px] max-w-[80vw] z-30 ui-pane sans text-[10px] py-1 text-center': zoomLevel > 1,
             })}>
               <p>
                 {zoomLevel === 1 && <>{t('heraldry.mapFooterSource')} <strong className="text-black">wikipedia.org</strong>.<br /></>}
@@ -150,12 +153,11 @@ const CountryHeraldry = ({
               </p>
             </div>
           </section>
-          {
-            (zoomLevel === 1 || subtitleParts.length === 0) &&
-            <div className="fixed top-3 left-3 z-20 flex flex-col gap-3 pointer-events-none">
-              <NavigationPane />
-            </div>
-          }
+          <div className={clsx('fixed top-3 left-3 z-20 flex flex-col gap-3 pointer-events-none', {
+            'hidden md:block': zoomLevel > 1 && subtitleParts.length !== 0,
+          })}>
+            <NavigationPane />
+          </div>
           <div className="fixed top-3 right-3 z-20 flex flex-col gap-3 pointer-events-none">
             <ZoomPane
               zoomLevel={zoomLevel}

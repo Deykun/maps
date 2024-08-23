@@ -31,16 +31,11 @@ export type AdministrativeUnit = {
   type?: string[],
   description?: string,
   colors?: {
-    primary: {
-      color: string,
-      name: string,
-    },
-    palette: {
-      color: string,
-      name: string,
-      distance?: number,
-    }[],
+    hexPalette: string[],
     byNames: {
+      [color: string]: ColorStatus[],
+    }
+    byNamesRejected: {
       [color: string]: ColorStatus[],
     }
   },

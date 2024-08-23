@@ -134,108 +134,21 @@ export const fetchImages = async ({
           }
 
           try {
-              const primaryColor = await ColorThief.getColor(image);
-              const paletteColors = await ColorThief.getPalette(image, 5, 1);
-
-              // const colors = [primaryColorHex, ...paletteColorsHex].map(())
               const {
                 colorsPalette,
-                colorsPaletteAlt,
-                colorsPaletteAlt2,
                 hexPalette,
                 byNames,
                 byNamesRejected,
-               } = await getImageColors(image);
+              } = await getImageColors(image);
 
-              const primary = await ColorThief.getColor(image).then(color => {
-                  const hexColor = rgbToHex(color);
-                  const near = getColorName(hexColor);
-                  const distance = typeof near === 'string' ? 255 : (near?.distance || 255) as number;
-
-                  return {
-                      color: hexColor,
-                      name: typeof near === 'string' ? near : near?.name,
-                      distance,
-                  };
-              });
-
-              const palette = await ColorThief.getPalette(image, 4, 1).then(palette => palette.map(color => {
-                const hexColor = rgbToHex(color);
-                const near = getColorName(hexColor);
-                const distance = typeof near === 'string' ? 255 : (near?.distance || 255) as number;
-
-                const greyscale = getGreyscale(color);
-
-                return {
-                    color: hexColor,
-                    name: typeof near === 'string' ? near : near?.name,
-                    distance,
-                    ...greyscale,
-                };
-              }));
-
-
-              const uniqPalette: {
-                color: string,
-                name: string,
-                distance: number,
-              }[] = Object.values(palette.reduce((stack: {
-                [name: string]: {
-                  color: string,
-                  name: string,
-                  distance: number,
-                },
-              }, color: {
-                color: string,
-                name: string,
-                distance: number,
-              }) => {
-                  if (!stack[color.name]) {
-                      stack[color.name] = color;
-                  } else if (stack[color.name].distance > color.distance) {
-                      stack[color.name] = color;
-                  }
-
-                  return stack;
-              }, {
-                  [primary.name]: primary,
-              }));
-
-              const colorsToCheck = [primary, ...palette];
-
-              // const matchedColors = colorMatchersList.reduce((stack: string[], [colorName, { get, thresholdDistance }]) => {
-              //   if (colorsToCheck.some(({ color }) => (get(color)?.distance || 255) < thresholdDistance)) {
-              //     stack.push(colorName);
-              //   }
-                
-              //   return stack;
-              // }, {});
-              
               contentToSave[fileName] = {
                 ...unit,
                 description: '', // not needed
                 colors: {
-                  // matched: matchedColors,
                   colorsPalette,
-                  colorsPaletteAlt,
-                  colorsPaletteAlt2,
                   byNames,
                   byNamesRejected,
                   hexPalette,
-                  primary,
-                  palleteOrg: palette,
-                  uniqPalette: uniqPalette,
-                  palette: uniqPalette.filter(({ name, distance }) => {
-                    if (name === 'blue') {
-                      return distance < 200;
-                    }
-
-                    if (name === 'green') {
-                      return distance < 180;
-                    }
-
-                    return distance < 110;
-                  }),
                 },
                 imageUrl: `images/heraldry/${lang}/${path}/${fileName}.${format}`,
                 imageSrcSet: srcSet,

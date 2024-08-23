@@ -71,14 +71,18 @@ const colorMatchers = {
     getters: [{
       color: '#0f0',
       get: nearestColor.from({ color: '#0f0' }),
-      thresholdDistance: 60,
+      thresholdDistance: 90,
     }, {
       color: '#006f00',
       get: nearestColor.from({ color: '#006f00' }),
-      thresholdDistance: 60,
+      thresholdDistance: 90,
     }, {
       color: '#00824a',
       get: nearestColor.from({ color: '#00824a' }),
+      thresholdDistance: 60,
+    }, {
+      color: '#07923f', 
+      get: nearestColor.from({ color: '#07923f' }),
       thresholdDistance: 60,
     }],
   },
@@ -118,6 +122,10 @@ const colorMatchers = {
       color: '#b68f5e', 
       get: nearestColor.from({ color: '#b68f5e' }),
       thresholdDistance: 60,
+    }, {
+      color: '#ffff00', 
+      get: nearestColor.from({ color: '#ffff00' }),
+      thresholdDistance: 50,
     }],
   },
 };
@@ -187,22 +195,8 @@ export const getColorStatus = (color: RGB): ColorStatus[] => {
   return statusesToReturn;
 };
 
-// {
-//   byNames: {
-//     [color: string]: ColorStatus[],
-//   }
-//   byNamesRejected: {
-//     [color: string]: ColorStatus[],
-//   }
-
-
 export const getImageColors = async (image: string) => {
-  // TO REMOVE
-  const primaryColor = await ColorThief.getColor(image);
-  const paletteColors = await ColorThief.getPalette(image, 4, 1);
-  // TO REMOVE --
-
-  const colorsPaletteAlt: RGB[] = await new Promise((resolve, reject) => {
+  const colorsPaletteRGB: RGB[] = await new Promise((resolve, reject) => {
     try {
       getPixels(image, (err, pixels) => {
         if(!err) {
@@ -223,16 +217,8 @@ export const getImageColors = async (image: string) => {
     }
   });
 
-  const hexPalette = colorsPaletteAlt.map(rgbToHex);
-
-  // console.log('DIFF');
-  // console.log(paletteColors);
-  // console.log(colorsPaletteAlt);
-  // console.log(colorsPaletteAlt2);
-
-  const colors = [primaryColor, ...paletteColors];
-  // try {  
-  const colorsPalette = colorsPaletteAlt.flatMap(getColorStatus);
+  const hexPalette = colorsPaletteRGB.map(rgbToHex);
+  const colorsPalette = colorsPaletteRGB.flatMap(getColorStatus);
 
   const {
     byNames,
@@ -254,14 +240,8 @@ export const getImageColors = async (image: string) => {
     },
   );
 
-  // } catch {
-
-  // }
-
   return {
     colorsPalette,
-    colorsPaletteAlt,
-    colorsPaletteAlt2: colorsPaletteAlt,
     hexPalette,
     byNames,
     byNamesRejected,

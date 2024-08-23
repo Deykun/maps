@@ -9,3 +9,33 @@
   backdrop-filter: blur(10px) saturate(1.5) contrast(0.9);
   max-width: calc(100vw - 80px);
 }
+
+.ui-pane--magic {
+  border-color: #be5443c4;
+  background-image: radial-gradient(at right, #dec9c900 0, #f1770e7d, #c225c033 100%);
+  background-size: auto 100%;
+  background-position: 100%;
+  box-shadow: 0 3px 14px -5px #ff0000c4;
+  background-size: 200% 500px;
+  background-position: 0 0;
+  animation: magicBacground linear infinite 3s;
+
+  > .border-t {
+    border-color: #be5443c4;
+  }
+}
+
+
+@keyframes magicBacground {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: -10px -200px;
+  }
+
+  100% { 
+    background-position: 0 0;
+  }
+}

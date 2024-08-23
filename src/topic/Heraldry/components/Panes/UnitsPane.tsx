@@ -96,11 +96,11 @@ const UnitsPane = ({
       </Pane>
       {isOpen && <Pane className="absolute top-0 right-full z-50 w-[400px] mr-3">
         <div className="relative">
-          <IconTextMagnifyingGlass className="size-4 absolute top-1/2 -translate-y-1/2 left-8 opacity-20" />
+          <IconTextMagnifyingGlass className="size-4 absolute top-1/2 -translate-y-1/2 left-3 md:left-8 opacity-20" />
           <input
             value={filterPhrase}
             onChange={(e) => setFilterPhrase(e.target.value || '')}
-            className="w-full p-1 pl-[85px] text-[16px] font-[600] rounded-t-[4px] bg-white border"
+            className="w-full p-1 pl-[50px] md:pl-[85px] text-[16px] font-[600] rounded-t-[4px] bg-white border"
             placeholder={t('heraldry.list.limitListToPlaceholder')}
           />
         </div>
@@ -119,10 +119,10 @@ const UnitsPane = ({
           </div>
         </div>
         <p className="sans tracking-wider text-right rounded-b-[4px] p-2 text-white bg-[#000000ba] hover:bg-[#000000cb] duration-300">
-          <small className="block text-[10px]">
+          <small className="block text-[8px] sm:text-[10px]">
             {t('heraldry.list.footer')}
           </small>
-          <a href="https://github.com/Deykun/maps/issues" target="_blank" className="text-[12px] font-[500]">
+          <a href="https://github.com/Deykun/maps/issues" target="_blank" className="text-[8px] sm:text-[12px] font-[500]">
             github.com/Deykun/maps/issues
             <IconGithub className="inline size-5 fill-current ml-2" />
           </a>
