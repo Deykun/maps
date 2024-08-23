@@ -91,6 +91,7 @@ const CountryHeraldry = ({
               "p-5 pt-[100px]",
               "no-scrollbar overflow-auto", {
                 "flex flex-col justify-evenly": zoomLevel === 1,
+                "pb-[100px]": zoomLevel > 1,
               }
             )}
             {...events}
