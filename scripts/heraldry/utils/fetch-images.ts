@@ -6,53 +6,13 @@ import {
 import { writeFile } from "fs/promises";
 import chalk from 'chalk';
 import { resolve } from 'path';
-import ColorThief from 'colorthief';
-import nearestColor from 'nearest-color';
-
-import { colorsByNames, colorsByNamesShift, colorsByNamesGrayscale } from '../../../src/topic/Heraldry/constants';
 import { AdministrativeUnit } from '../../../src/topic/Heraldry/types';
 
 import { getImageFileName, getCompressedImageSrc } from './get-image-file-name';
 import { getMarkers } from './get-markers';
 
-import { rgbToHex, getGreyscale, getImageColors } from './helpers/colors'
+import { getImageColors } from './helpers/colors'
 
-const getColorName = nearestColor.from(colorsByNames);
-const getColorNameShift = nearestColor.from(colorsByNamesShift);
-const getColorNameGrayscale = nearestColor.from(colorsByNamesGrayscale);
-
-const colorMatchers = {
-  red: {
-    get: nearestColor.from({ color: '#f00' }),
-    thresholdDistance: 110,
-  },
-  green: {
-    get: nearestColor.from({ color: '#f00' }),
-    thresholdDistance: 180,
-  },
-  blue: {
-    get: nearestColor.from({ color: '#f00' }),
-    thresholdDistance: 200,
-  },
-  white: {
-    get: nearestColor.from({ color: '#fff' }),
-    thresholdDistance: 30,
-  },
-  black: {
-    get: nearestColor.from({ color: '#000' }),
-    thresholdDistance: 15,
-  },
-  gold:{
-     get: nearestColor.from({ color: '#bfa14e' }),
-     thresholdDistance: 60,
-  },
-  yellow: {
-    get: nearestColor.from({ color: '#fbf105' }),
-    thresholdDistance: 30,
-  },
-};
-
-const colorMatchersList = Object.entries(colorMatchers); 
 
 export const download = async (url: string, fileName: string, format: string, path: string, lang: string) => {
   const response = await fetch(url);

@@ -1,25 +1,10 @@
-import ColorThief from 'colorthief';
 import nearestColor from 'nearest-color';
-import getColors from 'get-image-colors';
 import { extractColors } from 'extract-colors'
 import getPixels from 'get-pixels';
 
 import { Greyscale, ColorStatus } from '../../../../src/topic/Heraldry/types';
 
-
-// const path = require('path')
-// const getColors = require('get-image-colors')
-
-// getColors(path.join(__dirname, 'double-rainbow.png')).then(colors => {
-//   // `colors` is an array of color objects
-// })
-
-
-import { colorsByNames } from '../../../../src/topic/Heraldry/constants';
-
 type RGB = [r: number, g: number, b: number];
-
-const getColorName = nearestColor.from(colorsByNames);
 
 export const componentToHex = (color: number) => {
   const hex = color.toString(16);
