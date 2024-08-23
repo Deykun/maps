@@ -144,6 +144,7 @@ export const fetchImages = async ({
                 colorsPaletteAlt2,
                 hexPalette,
                 byNames,
+                byNamesRejected,
                } = await getImageColors(image);
 
               const primary = await ColorThief.getColor(image).then(color => {
@@ -219,6 +220,7 @@ export const fetchImages = async ({
                   colorsPaletteAlt,
                   colorsPaletteAlt2,
                   byNames,
+                  byNamesRejected,
                   hexPalette,
                   primary,
                   palleteOrg: palette,

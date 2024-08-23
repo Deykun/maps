@@ -57,7 +57,7 @@ const UnitsPaneItem = ( { className, unit }: Props) => {
           {place?.name || t('heraldry.item.noLocation')}
         </p>
         <p className="my-2">
-          Target
+          Matched
           {Object.entries(colors?.byNames || {}).map(([colorName, colors = []]) => 
             <span
               className="inline-flex mx-1 size-4 rounded-md bg-[#eee] group overflow-hidden"
@@ -68,6 +68,20 @@ const UnitsPaneItem = ( { className, unit }: Props) => {
             </span>
           )}
         </p>
+
+        <p className="my-2">
+          Unmutched
+          {Object.entries(colors?.byNamesRejected || {}).map(([colorName, colors = []]) => 
+            <span
+              className="inline-flex mx-1 size-4 rounded-md bg-[#eee] group overflow-hidden"
+              title={`${colorName} ${colors.sort((a, b) => a.distance - b.distance)?.[0]?.distance}`} 
+              style={{ backgroundColor: colorsMarkersByNames[colorName] }}
+            >
+              {colors.map((item) => <span className="color size-full opacity-0 group-hover:opacity-100 duration-300" style={{ backgroundColor: item.color }} />)}
+            </span>
+          )}
+        </p>
+
         <p className="my-2">
           {(colors?.hexPalette || []).map((hexColor) => {
             return (

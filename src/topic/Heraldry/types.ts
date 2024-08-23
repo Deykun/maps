@@ -11,9 +11,12 @@ export type Greyscale = {
 }
 
 export type ColorStatus = Greyscale & {
+  didMatch: boolean,
   color: string,
   name: string,
   distanceColor: string,
+  distanceToTreshold: number,
+  thresholdDistance: number,
   distance: number,
 }
 

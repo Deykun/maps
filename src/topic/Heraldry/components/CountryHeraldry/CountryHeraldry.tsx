@@ -165,7 +165,7 @@ const CountryHeraldry = ({
               coatSize={coatSize}
               setCoatSize={setCoatSize}
               coatMin={1}
-              coatMax={7}
+              coatMax={8}
             />
             <UnitsPane
               units={units}

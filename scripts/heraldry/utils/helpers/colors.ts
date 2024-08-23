@@ -37,8 +37,8 @@ export const getGreyscale = ([r,g,b]: RGB): Greyscale => {
   const isLowSaturation = isGreyscale || (Math.abs(r - g) <= 40 && Math.abs(g - b) <= 40 && Math.abs(b - r) <= 40);
 
   if (isGreyscale) {
-    const isBlack = Math.min(r,g,b) <= 15;
-    const isWhite = Math.max(r,g,b) >= 240;
+    const isBlack = Math.min(r,g,b) <= 20;
+    const isWhite = Math.max(r,g,b) >= 235;
 
     return {
       isGreyscale: true,
@@ -76,6 +76,10 @@ const colorMatchers = {
       color: '#006f00',
       get: nearestColor.from({ color: '#006f00' }),
       thresholdDistance: 60,
+    }, {
+      color: '#00824a',
+      get: nearestColor.from({ color: '#00824a' }),
+      thresholdDistance: 60,
     }],
   },
   blue: {
@@ -87,6 +91,18 @@ const colorMatchers = {
       color: '#0059c7',
       get: nearestColor.from({ color: '#0059c7' }),
       thresholdDistance: 60,
+    }, {
+      color: '#1d7dc0',
+      get: nearestColor.from({ color: '#1d7dc0' }),
+      thresholdDistance: 60,
+    }, {
+      color: '#5596c3',
+      get: nearestColor.from({ color: '#5596c3' }),
+      thresholdDistance: 60,
+    }, {
+      color: '#0000bf',
+      get: nearestColor.from({ color: '#0000bf' }),
+      thresholdDistance: 60,
     }],
   },
   gold:{
@@ -94,18 +110,23 @@ const colorMatchers = {
       color: '#bfa14e',
       get: nearestColor.from({ color: '#bfa14e' }),
       thresholdDistance: 60,
+    }, {
+      color: '#e6c633',
+      get: nearestColor.from({ color: '#e6c633' }),
+      thresholdDistance: 60,
+    }, {
+      color: '#b68f5e', 
+      get: nearestColor.from({ color: '#b68f5e' }),
+      thresholdDistance: 60,
     }],
   },
-  // yellow: {
-  //   get: nearestColor.from({ color: '#fbf105' }),
-  //   thresholdDistance: 30,
-  // },
 };
 
 export const getColorStatus = (color: RGB): ColorStatus[] => {
   const hexColor = rgbToHex(color);
 
   const greyscale = getGreyscale(color);
+
   if (greyscale.isGreyscale) {
     let name = 'grey';
     let distanceColor = '#888';
@@ -118,48 +139,62 @@ export const getColorStatus = (color: RGB): ColorStatus[] => {
     }
 
     return [{
+      didMatch: true,
       color: hexColor,
       name,
       distanceColor,
+      distanceToTreshold: -1,
+      thresholdDistance: 0,
       distance: 0,
       ...greyscale,
-    }]
+    }];
   }
 
   const statusesToReturn: ColorStatus[] = [];
 
   ['red', 'blue', 'green', 'gold'].forEach((colorName) => {
-    let passingColorMatches: ColorStatus[] = (colorMatchers[colorName]?.getters || []).map(({ get, thresholdDistance, color: matcherColor }) => {
+    const colorMatches: ColorStatus[] = (colorMatchers[colorName]?.getters || []).map(({ get, thresholdDistance, color: matcherColor }) => {
       const match = get(hexColor);
 
-      if ((match.distance || 0) < thresholdDistance) {
-        return {
-          color: hexColor,
-          name: 'gold',
-          distanceToColor: matcherColor,
-          distance: match?.distance,
-          ...greyscale,
-        }
-      }
-      
-      return undefined;
-    }).filter(Boolean);
+      const didMatch = (match.distance || 0) < thresholdDistance;
 
-    if (passingColorMatches.length > 0) {
-      const bestMatch = passingColorMatches.sort((a: ColorStatus, b: ColorStatus) => b.distance - a.distance)[0];
-
-      statusesToReturn.push({
+      return {
+        didMatch,
         color: hexColor,
         name: colorName,
-        distanceColor: bestMatch.distanceColor,
-        distance: bestMatch?.distance,
+        distanceToTreshold: thresholdDistance - match.distance,
+        distanceToColor: matcherColor,
+        thresholdDistance,
+        distance: match?.distance,
         ...greyscale,
-      });
-    }
-  })
+      };
+    });
+
+    const bestMatch = colorMatches.sort((a: ColorStatus, b: ColorStatus) => b.distanceToTreshold - a.distanceToTreshold)[0];
+
+    statusesToReturn.push({
+      didMatch: bestMatch.didMatch,
+      color: hexColor,
+      name: colorName,
+      distanceToTreshold: bestMatch.distanceToTreshold,
+      distanceColor: bestMatch.distanceColor,
+      thresholdDistance: bestMatch.thresholdDistance,
+      distance: bestMatch?.distance,
+      ...greyscale,
+    });
+  });
 
   return statusesToReturn;
-}
+};
+
+// {
+//   byNames: {
+//     [color: string]: ColorStatus[],
+//   }
+//   byNamesRejected: {
+//     [color: string]: ColorStatus[],
+//   }
+
 
 export const getImageColors = async (image: string) => {
   // TO REMOVE
@@ -169,26 +204,26 @@ export const getImageColors = async (image: string) => {
 
   const colorsPaletteAlt: RGB[] = await new Promise((resolve, reject) => {
     try {
-        getPixels(image, (err, pixels) => {
-          if(!err) {
-            const data = [...pixels.data]
-            const [width, height] = pixels.shape
-        
-            resolve(extractColors({ data, width, height }, {
-              pixels: 400,
-              distance: 0.3,
-              saturationDistance: 0.5,
-              lightnessDistance: 0.3,
-              hueDistance: 0
-            }).then(res => res.map(({ red, green, blue}) => [red, green, blue])));
-          }
-        });
+      getPixels(image, (err, pixels) => {
+        if(!err) {
+          const data = [...pixels.data]
+          const [width, height] = pixels.shape
+      
+          resolve(extractColors({ data, width, height }, {
+            pixels: 400,
+            distance: 0.3,
+            saturationDistance: 0.5,
+            lightnessDistance: 0.3,
+            hueDistance: 0
+          }).then(res => res.map(({ red, green, blue}) => [red, green, blue])));
+        }
+      });
     } catch (err) {
         reject([]);
     }
-});
+  });
 
-const hexPalette = colorsPaletteAlt.map(rgbToHex);
+  const hexPalette = colorsPaletteAlt.map(rgbToHex);
 
   // console.log('DIFF');
   // console.log(paletteColors);
@@ -199,18 +234,26 @@ const hexPalette = colorsPaletteAlt.map(rgbToHex);
   // try {  
   const colorsPalette = colorsPaletteAlt.flatMap(getColorStatus);
 
-  const byNames = colorsPalette.reduce(
-    (stack: {}, color) => {
+  const {
+    byNames,
+    byNamesRejected,
+  } = colorsPalette.reduce(
+    (stack, color) => {
       if (color.name) {
+        const propName = color.didMatch ? 'byNames' : 'byNamesRejected';
         if (Array.isArray(stack[color.name])) {
-          stack[color.name].push(color);
+          stack[propName][color.name].push(color);
         } else {
-          stack[color.name] = [color];
+          stack[propName][color.name] = [color];
         }
       }
-    
-    return stack;
-  }, {});
+      return stack;
+    }, {
+      byNames: {},
+      byNamesRejected: {},
+    },
+  );
+
   // } catch {
 
   // }
@@ -221,5 +264,6 @@ const hexPalette = colorsPaletteAlt.map(rgbToHex);
     colorsPaletteAlt2: colorsPaletteAlt,
     hexPalette,
     byNames,
+    byNamesRejected,
   };
 };
