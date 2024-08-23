@@ -48,20 +48,15 @@ export const getFilteredUnits = (
 
       const isColorFilterActive = colorFilters.length > 0;
       if (isColorFilterActive) {
-        const isPrimary = unit?.colors?.primary?.name && colorFilters.includes(unit?.colors?.primary?.name);
-        if (!isPrimary) {
-          return filterResponse.notMatches;
-        }
-
-        if (!Array.isArray(unit?.colors?.palette) || unit.colors.palette.length === 0) {
+        if (Object.keys(unit.colors?.byNames || {}).length === 0) {
           return filterResponse.notMatches;
         }
         
-        if (filterOperator === 'or' && !unit.colors.palette.some(({ name }) => colorFilters.includes(name))) {
+        if (filterOperator === 'or' && !Object.keys(unit.colors?.byNames || {}).some((name) => colorFilters.includes(name))) {
           return filterResponse.notMatches;
         }
 
-        if (filterOperator === 'and' && !colorFilters.every((active) => (unit.colors?.palette || []).some(({ name }) => name === active))) {
+        if (filterOperator === 'and' && !colorFilters.every((active) => Object.keys(unit.colors?.byNames || {}).some(( name ) => name === active))) {
           return filterResponse.notMatches;
         }
       }

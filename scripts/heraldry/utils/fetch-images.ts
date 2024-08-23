@@ -6,26 +6,13 @@ import {
 import { writeFile } from "fs/promises";
 import chalk from 'chalk';
 import { resolve } from 'path';
-import ColorThief from 'colorthief';
-import nearestColor from 'nearest-color';
-
-import { colorsByNames } from '../../../src/topic/Heraldry/constants';
 import { AdministrativeUnit } from '../../../src/topic/Heraldry/types';
 
 import { getImageFileName, getCompressedImageSrc } from './get-image-file-name';
 import { getMarkers } from './get-markers';
 
-const getColorName = nearestColor.from(colorsByNames);
+import { getImageColors } from './helpers/colors'
 
-const componentToHex = (color: number) => {
-  const hex = color.toString(16);
-
-  return hex.padStart(2, "0");
-}
-
-function rgbToHex([r,g,b]: [r: number, g: number, b: number]) {
-  return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
-}
 
 export const download = async (url: string, fileName: string, format: string, path: string, lang: string) => {
   const response = await fetch(url);
@@ -107,72 +94,21 @@ export const fetchImages = async ({
           }
 
           try {
-              const primary = await ColorThief.getColor(image).then(color => {
-                  const hexColor = rgbToHex(color);
-                  const near = getColorName(hexColor);
-                  const distance = typeof near === 'string' ? 255 : (near?.distance || 255) as number;
+              const {
+                colorsPalette,
+                hexPalette,
+                byNames,
+                byNamesRejected,
+              } = await getImageColors(image);
 
-                  return {
-                      color: hexColor,
-                      name: typeof near === 'string' ? near : near?.name,
-                      distance,
-                  };
-              });
-
-              const palette = await ColorThief.getPalette(image, 3).then(palette => palette.map(color => {
-                  const hexColor = rgbToHex(color);
-                  const near = getColorName(hexColor);
-                  const distance = typeof near === 'string' ? 255 : (near?.distance || 255) as number;
-
-                  return {
-                      color: hexColor,
-                      name: typeof near === 'string' ? near : near?.name,
-                      distance,
-                  };
-              }));
-
-              const uniqPalette: {
-                color: string,
-                name: string,
-                distance: number,
-              }[] = Object.values(palette.reduce((stack: {
-                [name: string]: {
-                  color: string,
-                  name: string,
-                  distance: number,
-                },
-              }, color: {
-                color: string,
-                name: string,
-                distance: number,
-              }) => {
-                  if (!stack[color.name]) {
-                      stack[color.name] = color;
-                  } else if (stack[color.name].distance > color.distance) {
-                      stack[color.name] = color;
-                  }
-
-                  return stack;
-              }, {
-                  [primary.name]: primary,
-              }));
-              
               contentToSave[fileName] = {
                 ...unit,
                 description: '', // not needed
                 colors: {
-                  primary,
-                  palette: uniqPalette.filter(({ name, distance }) => {
-                    if (name === 'blue') {
-                      return distance < 200;
-                    }
-
-                    if (name === 'green') {
-                      return distance < 180;
-                    }
-
-                    return distance < 110;
-                  }),
+                  colorsPalette,
+                  byNames,
+                  byNamesRejected,
+                  hexPalette,
                 },
                 imageUrl: `images/heraldry/${lang}/${path}/${fileName}.${format}`,
                 imageSrcSet: srcSet,

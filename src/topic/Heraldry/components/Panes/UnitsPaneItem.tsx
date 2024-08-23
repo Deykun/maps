@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 import { AdministrativeUnit } from '@/topic/Heraldry/types';
+import { colorsMarkersByNames } from '@/topic/Heraldry/constants';
 
 import IconMarker from '@/components/Icons/IconMarker';
 import IconLink from '@/components/Icons/IconLink';
@@ -11,7 +12,7 @@ type Props = {
 }
 
 const UnitsPaneItem = ( { className, unit }: Props) => {
-  const { id, title, url, imagesList, imageSrcSet, place, markers } = unit;  
+  const { id, title, url, imagesList, imageSrcSet, place, markers, colors } = unit;  
   
   const { t } = useTranslation();
 
@@ -26,16 +27,16 @@ const UnitsPaneItem = ( { className, unit }: Props) => {
 
   return (
     <li className={clsx('flex gap-2 items-center', { [className || '']: className })}>
-      <span className="relative size-20 flex-shrink-0">
+      <span className="relative size-10 md:size-20 flex-shrink-0">
         <img
           src={imagesList?.[0].path}
           srcSet={imageSrcSet}
-          className="size-20 object-contain p-2 rounded-t-[4px] rounded-b-[30px] bg-white border"
+          className="size-10 md:size-20 object-contain p-2 rounded-t-[4px] rounded-b-[30px] bg-white border"
           alt=""
           loading="lazy"
         />      
         <button
-          className="absolute bottom-0 right-0 bg-white fill-[#205dbd] p-1 rounded-full shadow-md"
+          className="absolute bottom-0 right-0 translate-y-[50%] md:translate-y-0 bg-white fill-[#205dbd] p-1 rounded-full shadow-md"
           onClick={focusCoat}
         >
           <IconMarker className="size-4" />
@@ -55,6 +56,49 @@ const UnitsPaneItem = ( { className, unit }: Props) => {
           {' '}
           {place?.name || t('heraldry.item.noLocation')}
         </p>
+        <div className="mt-1 empty:hidden flex gap-1">
+          {Object.entries(colors?.byNames || {}).map(([colorName, colors = []]) => {
+            const title = [
+              colors.sort((a, b) => a.distance - b.distance)?.[0]?.distance?.toFixed(1),
+              t(`heraldry.color.${colorName}`),
+            ].filter(Boolean).join(' - ');
+
+            return (
+              <span
+              className="inline-flex mr-1 size-3 rounded-[3px] bg-[#eee] shadow-sm group overflow-hidden"
+              title={title} 
+              style={{ backgroundColor: colorsMarkersByNames[colorName] }}
+            >
+              {colors.map((item) => <span
+                className="color size-full opacity-0 group-hover:opacity-100 duration-300"
+                style={{ backgroundColor: item.color }}
+              />)}
+            </span>
+            )
+          })}
+        </div>
+        <div className="hidden">
+          <p className="my-2">
+            {Object.entries(colors?.byNamesRejected || {}).map(([colorName, colors = []]) => 
+              <span
+                className="inline-flex mx-1 size-4 rounded-md bg-[#eee] group overflow-hidden"
+                title={`${colorName} ${colors.sort((a, b) => a.distance - b.distance)?.[0]?.distance}`} 
+                style={{ backgroundColor: colorsMarkersByNames[colorName] }}
+              >
+                {colors.map((item) => <span className="color size-full opacity-0 group-hover:opacity-100 duration-300" style={{ backgroundColor: item.color }} />)}
+              </span>
+            )}
+          </p>
+          <p className="my-2">
+            {(colors?.hexPalette || []).map((hexColor) => {
+              return (
+                <span className="inline-flex size-4" style={{ backgroundColor: hexColor }}>
+                  ?
+                </span>
+              );
+            })}
+          </p>
+        </div>
       </span>
     </li>
   );

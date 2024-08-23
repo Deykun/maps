@@ -2,6 +2,24 @@ export type Colors = {
   [key: string]: string,
 }
 
+export type Greyscale = {
+  isGreyscale: boolean,,
+  isLowSaturation: boolean,
+  isGrey: boolean,
+  isBlack: boolean,
+  isWhite: boolean,
+}
+
+export type ColorStatus = Greyscale & {
+  didMatch: boolean,
+  color: string,
+  name: string,
+  distanceColor: string,
+  distanceToTreshold: number,
+  thresholdDistance: number,
+  distance: number,
+}
+
 export type AdministrativeUnit = {
   lang: string,
   id: string,
@@ -13,15 +31,13 @@ export type AdministrativeUnit = {
   type?: string[],
   description?: string,
   colors?: {
-    primary: {
-      color: string,
-      name: string,
-    },
-    palette: {
-      color: string,
-      name: string,
-      distance?: number,
-    }[],
+    hexPalette: string[],
+    byNames: {
+      [color: string]: ColorStatus[],
+    }
+    byNamesRejected: {
+      [color: string]: ColorStatus[],
+    }
   },
   image?: {
     source: string

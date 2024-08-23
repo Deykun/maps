@@ -64,6 +64,9 @@ const animalsRules: MarkerParams[] = [{
   phrases: ['joutsen', 'joutsenet'],
   exclude: ['Salon vaakuna', 'Halikon vaakuna'],
 }, {
+  name: "crayfish",
+  phrases: ['rapuja', 'rapupitäjän'],
+}, {
   name: "raven",
   phrases: ['korppi'],
 }, {
@@ -138,6 +141,30 @@ const itemsRules: MarkerParams[] = [{
   phrases: ['puu', 'metsä', 'puita', 'haapa', 'kuusi', 'kuusta', 'oksaa', 'tamm', 'tammi', 'lehmuksen', 'honka', 'vaahtera', 'mänty', 'koivunverso', 'koivu', 'havupuun', 'kanto'],
   include: ['Savukosken vaakuna', 'Luumäen vaakuna'],
   exclude: ['Alahärmän vaakuna', 'Alastaron vaakuna', 'Askaisten vaakuna', 'Elimäen vaakuna', 'Enon vaakuna', 'Eräjärven vaakuna', 'Haapasaaren vaakuna', 'Himangan vaakuna', 'Hinnerjoen vaakuna', 'Honkajoen vaakuna', 'Ikaalisten maalaiskunnan vaakuna', 'Jaalan vaakuna', 'Joutsenon vaakuna', 'Juankosken vaakuna', 'Jurvan vaakuna', 'Jämsänkosken vaakuna', 'Karjaan vaakuna', 'Karkun vaakuna', 'Karungin vaakuna', 'Kerimäen vaakuna', 'Kestilän vaakuna', 'Kiikalan vaakuna', 'Kiimingin vaakuna', 'Koivulahden vaakuna', 'Kuhmalahden vaakuna', 'Lauritsalan vaakuna', 'Lavian vaakuna', 'Loimaan kunnan vaakuna', 'Luopioisten vaakuna', 'Luvian vaakuna', 'Muurlan vaakuna', 'Muuruveden vaakuna', 'Pernajan vaakuna', 'Petolahden vaakuna', 'Raippaluodon vaakuna', 'Rantsilan vaakuna', 'Saaren vaakuna', 'Sulvan vaakuna', 'Suodenniemen vaakuna', 'Tarvasjoen vaakuna', 'Tenholan vaakuna', 'Tuupovaaran vaakuna', 'Tyrvännön vaakuna', 'Uukuniemen vaakuna', 'Viljakkalan vaakuna', 'Värtsilän vaakuna', 'Yli-Iin vaakuna', 'Eckerön vaakuna', 'Enontekiön vaakuna', 'Eurajoen vaakuna', 'Getan vaakuna', 'Haapajärven vaakuna', 'Halsuan vaakuna', 'Hangon vaakuna', 'Helsingin vaakuna', 'Hollolan vaakuna', 'Huittisten vaakuna', 'Hyrynsalmen vaakuna', 'Hämeenkyrön vaakuna', 'Ikaalisten vaakuna', 'Ilmajoen vaakuna', 'Inkoon vaakuna', 'Isojoen vaakuna', 'Joensuun vaakuna', 'Joensuun vaakuna', 'Kaarinan vaakuna', 'Kalajoen vaakuna', 'Kangasniemen vaakuna', 'Kannuksen vaakuna', 'Kauhavan vaakuna', 'Keminmaan vaakuna', 'Keravan vaakuna', 'Kihniön vaakuna', 'Kirkkonummen vaakuna', 'Konneveden vaakuna', 'Kontiolahden vaakuna', 'Tl. Kosken vaakuna', 'Kouvolan vaakuna', 'Kurikan vaakuna', 'Laitilan vaakuna', 'Lapinlahden vaakuna', 'Lappeenrannan vaakuna', 'Lestijärven vaakuna', 'Loimaan vaakuna', 'Loviisan vaakuna', 'Maskun vaakuna', 'Mynämäen vaakuna', 'Muonion vaakuna', 'Mustasaaren vaakuna', 'Nivalan vaakuna', 'Pelkosenniemen vaakuna', 'Pellon vaakuna', 'Pielaveden vaakuna', 'Pornaisten vaakuna', 'Posion vaakuna', 'Puumalan vaakuna', 'Pyhäjärven vaakuna', 'Pyhärannan vaakuna', 'Pälkäneen vaakuna', 'Raaseporin vaakuna', 'Ranuan vaakuna', 'Rautalammin vaakuna', 'Rautavaaran vaakuna', 'Rautjärven vaakuna', 'Saarijärven vaakuna', 'Sallan vaakuna', 'Sastamalan vaakuna', 'Sauvon vaakuna', 'Siikalatvan vaakuna', 'Sotkamon vaakuna', 'Tampereen vaakuna', 'Tohmajärven vaakuna', 'Turun vaakuna', 'Tuusniemen vaakuna', 'Vaalan vaakuna', 'Varkauden vaakuna', 'Vesannon vaakuna', 'Vetelin vaakuna', 'Virtain vaakuna', 'Ylöjärven vaakuna', 'Ahvenanmaan vaakuna', 'Hämeen vaakuna', 'Kanta-Hämeen vaakuna', 'Lapin vaakuna', 'Pohjanmaan historiallisen maakunnan vaakuna', 'Pohjois-Pohjanmaan vaakuna', 'Satakunnan vaakuna', 'Uudenmaan vaakuna', 'Etelä-Pohjanmaan vaakuna', 'Jämsän vaakuna'],
+}, {
+  name: 'shell',
+  phrases: ['simpukat'],
+}, {
+  name: 'lily',
+  phrases: ['lilja'],
+}, {
+  name: 'rose',
+  phrases: ['ruusut'],
+}, {
+  name: 'flower',
+  phrases: ['kukka', 'perunankukka', 'lumpeenkukka', 'valkovuokkojen', 'kissankellot'],
+  exclude: ['Sotkamon vaakuna', 'Iisalmen vaakuna', 'Kouvolan vaakuna', 'Salon vaakuna']
+}, {
+  name: 'axeSaw',
+  phrases: ['kirvestä', 'kirves', 'saha', 'justeerisaha'],
+  exclude: ['Lieksan vaakuna', 'Keski-Pohjanmaan vaakuna', 'Satakunnan vaakuna', 'Nousiaisten vaakuna', 'Uudenmaan vaakuna', 'Ahvenanmaan vaakuna'],
+}, {
+  name: 'walls',
+  phrases: ['muuri', 'tornia', 'linna', 'kivisilta', 'silta', 'linnoitukseen', 'linnoitus', 'harjamuuri', 'tornilla', 'kirkontorni'],
+  exclude: ['Keski-Pohjanmaan vaakuna', 'Mustasaaren vaakuna', 'Kurikan vaakuna', 'Karvian vaakuna', 'Teiskon vaakuna', 'Ristiinan vaakuna', 'Parikkalan vaakuna', 'Kanta-Hämeen vaakuna', 'Hämeen vaakuna', 'Tl. Kosken vaakuna', 'Porvoon vaakuna', 'Askolan vaakuna', 'Eurajoen vaakuna', 'Luvian vaakuna']
+}, {
+  name: 'arm',
+  include: ['Etelä-Karjalan vaakuna', 'Pohjois-Karjalan vaakuna', 'Karjalan historiallisen maakunnan vaakuna', 'Nuijamaan vaakuna', 'Karunan vaakuna', 'Anjalan vaakuna'],
 }];
 
 export const getMarkers = ({

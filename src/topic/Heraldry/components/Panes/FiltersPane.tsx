@@ -22,6 +22,8 @@ import Pane from '@/components/UI/Pane';
 import SubPane from '@/components/UI/SubPane';
 import ButtonCircle from '@/components/UI/ButtonCircle';
 
+import { colorsMarkersByNames } from '@/topic/Heraldry/constants';
+
 const getFilterToggle = (values: string[], setValues: (values: string[]) => void) => (value: string) => {
   if (values.includes(value)) {
     setValues(values.filter((active) => active !== value));
@@ -120,7 +122,7 @@ const FiltersPane = ({
 
   return (
     <div className="relative pointer-events-auto" id="filters-pane">
-      <Pane>
+      <Pane className="ui-pane--magic">
         <ButtonCircle onClick={() => setIsOpen(!isOpen)} title={t('heraldry.titleFilters')}>
           <IconMapMagnifyingGlass />
           {activeTotal > 0 && <span className="ui-button-circle-marker">{activeTotal}</span>}
@@ -173,7 +175,7 @@ const FiltersPane = ({
           {typeFiltersList.map(({ value, total }) => 
             <button
               onClick={() => toggleType(value)}
-              className={clsx('font-[500] text-[12px] text-left hover:text-[#205dbd]', { 
+              className={clsx('font-[500] text-[14px] text-left hover:text-[#205dbd]', { 
                 'font-[600] text-[#205dbd]': typeFilters.includes(value),
               })}
             >
@@ -183,19 +185,21 @@ const FiltersPane = ({
         </div>}
       </Pane>}
       {activeMenu === 'color' && <SubPane order={2} className="absolute right-12 mt-2 mr-3 flex-row">
-        {[
-          { name: 'red', classNameIcon: '!fill-[#d61e27]' },
-          { name: 'green', classNameIcon: '!fill-[#299649]' },
-          { name: 'blue', classNameIcon: '!fill-[#1d7dc0]' },
-        ].map(({ name, classNameIcon }) => <ButtonCircle
+        {Object.keys(colorsMarkersByNames).map((name) => <ButtonCircle
           key={name}
+          className={clsx({
+            'border border-[#dbd7d7]': colorFilters.includes(name),
+          })}
           onClick={() => toggleColor(name)}
           title={t(`heraldry.unit.type.${lang}.${name}`)}
         >
           <IconColor
-            className={clsx(classNameIcon, 'duration-300', {
-              'opacity-30': !colorFilters.includes(name)
+            className={clsx('duration-300 drop-shadow-lg', {
+              'opacity-30': !colorFilters.includes(name),
             })}
+            style={{
+              fill: colorsMarkersByNames[name],
+            }}
           />
         </ButtonCircle>)}
       </SubPane>}
@@ -221,7 +225,7 @@ const FiltersPane = ({
           ...animalFiltersList].map(({ value, total }) => 
             <button
               onClick={() => toggleAnimal(value)}
-              className={clsx('font-[500] text-[12px] text-left hover:text-[#205dbd]', { 
+              className={clsx('font-[500] text-[14px] text-left hover:text-[#205dbd]', { 
                 'font-[600] text-[#205dbd]': animalFilters.includes(value),
               })}
             >
@@ -249,7 +253,7 @@ const FiltersPane = ({
           {itemFiltersList.map(({ value, total }) => 
             <button
               onClick={() => toggleItem(value)}
-              className={clsx('font-[500] text-[12px] text-left hover:text-[#205dbd]', { 
+              className={clsx('font-[500] text-[14px] text-left hover:text-[#205dbd]', { 
                 'font-[600] text-[#205dbd]': itemFilters.includes(value),
               })}
             >
@@ -264,14 +268,15 @@ const FiltersPane = ({
           onClick={() => setFilterOperator(filterOperator === 'and' ? 'or' : 'and')}
           title={`${t('heraldry.filterOperator')} ${t(`heraldry.filterOperator.${filterOperator}`)}`}
         >
-          {filterOperator === 'and' ? <IconCubeAnd /> : <IconCubeOr />}
+          {/* Pointer events are set to 'none' because the icon changes, and sometimes a removed node is mistakenly treated as a click outside. */}
+          {filterOperator === 'and' ? <IconCubeAnd className="pointer-events-none" /> : <IconCubeOr className="pointer-events-none" />}
         </ButtonCircle>
         <ButtonCircle
           wrapperClassName="ml-auto"
           onClick={() => setShouldReverseFilters(!shouldReverseFilters)}
           title={`${t('heraldry.filterReverse')} ${t(`heraldry.filterReverse.${shouldReverseFilters ? 'yes' : 'no'}`)}`}
         >
-          {shouldReverseFilters?  <IconEyeCrossed /> : <IconEye />}
+          {shouldReverseFilters?  <IconEyeCrossed className="pointer-events-none"  /> : <IconEye className="pointer-events-none" />}
         </ButtonCircle>
       </SubPane>}
     </div>
