@@ -10,7 +10,7 @@ import IconLink from '@/components/Icons/IconLink';
 type Props = {
   className?: string,
   unit: AdministrativeUnit,
-  setPreviewUnit: (unit: AdministrativeUnit) => void,
+  setPreviewUnit: (unit?: AdministrativeUnit) => void,
 }
 
 const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
@@ -28,12 +28,12 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
   }
 
   return (
-    <li className={clsx('flex gap-2 items-center', { [className || '']: className })}>
-      <span className="relative size-10 md:size-20 flex-shrink-0">
+    <li className={clsx('flex flex-col gap-2 items-center', { [className || '']: className })}>
+      <span className="relative size-full flex-shrink-0">
         <img
           src={imagesList?.[0].path}
           srcSet={imageSrcSet}
-          className="size-10 md:size-20 object-contain p-2 rounded-t-[4px] rounded-b-[30px] bg-white border"
+          className="size-full object-contain p-2 rounded-t-[4px] rounded-b-[30px] bg-white border"
           alt=""
           loading="lazy"
         />      
@@ -46,14 +46,13 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
           </button>
           <button
             className="bg-white p-1 rounded-full shadow-md"
-            onClick={() => setPreviewUnit(unit)}
+            onClick={() => setPreviewUnit(undefined)}
           >
             <IconPlusMagnifyingGlass className="size-4" />
           </button>
         </div>
-
       </span>
-      <span>
+      <div className="w-full">
         <a href={url} target="_blank" className="text-[14px] font-[500] tracking-wide line-clamp-2 text-[#312f2f] hover:text-black duration-300">
           <span>{title}</span>
           {' '}
@@ -67,50 +66,7 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
           {' '}
           {place?.name || t('heraldry.item.noLocation')}
         </p>
-        <div className="mt-1 empty:hidden flex gap-1">
-          {Object.entries(colors?.byNames || {}).map(([colorName, colors = []]) => {
-            const title = [
-              colors.sort((a, b) => a.distance - b.distance)?.[0]?.distance?.toFixed(1),
-              t(`heraldry.color.${colorName}`),
-            ].filter(Boolean).join(' - ');
-
-            return (
-              <span
-              className="inline-flex mr-1 size-3 rounded-[3px] bg-[#eee] shadow-sm group overflow-hidden"
-              title={title} 
-              style={{ backgroundColor: colorsMarkersByNames[colorName] }}
-            >
-              {colors.map((item) => <span
-                className="color size-full opacity-0 group-hover:opacity-100 duration-300"
-                style={{ backgroundColor: item.color }}
-              />)}
-            </span>
-            )
-          })}
-        </div>
-        <div className="hidden">
-          <p className="my-2">
-            {Object.entries(colors?.byNamesRejected || {}).map(([colorName, colors = []]) => 
-              <span
-                className="inline-flex mx-1 size-4 rounded-md bg-[#eee] group overflow-hidden"
-                title={`${colorName} ${colors.sort((a, b) => a.distance - b.distance)?.[0]?.distance}`} 
-                style={{ backgroundColor: colorsMarkersByNames[colorName] }}
-              >
-                {colors.map((item) => <span className="color size-full opacity-0 group-hover:opacity-100 duration-300" style={{ backgroundColor: item.color }} />)}
-              </span>
-            )}
-          </p>
-          <p className="my-2">
-            {(colors?.hexPalette || []).map((hexColor) => {
-              return (
-                <span className="inline-flex size-4" style={{ backgroundColor: hexColor }}>
-                  ?
-                </span>
-              );
-            })}
-          </p>
-        </div>
-      </span>
+      </div>
     </li>
   );
 };

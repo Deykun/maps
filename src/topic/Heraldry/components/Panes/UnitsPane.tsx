@@ -50,6 +50,7 @@ const UnitsPane = ({
       setIsOpen(false);
       setFilterPhrase('');
       setFilterPage(0);
+      setPreviewUnit(undefined);
 
       return;
     }
@@ -59,6 +60,8 @@ const UnitsPane = ({
   }, [units, phrase]);
 
   useEffect(() => {
+    setPreviewUnit(undefined);
+
     if (filterPhrase === '') {
       setFilteredUnits(units);
 
@@ -97,7 +100,7 @@ const UnitsPane = ({
               && <span className="ui-button-circle-marker">{filteredUnits.length}</span>}
         </ButtonCircle>
       </Pane>
-      {isOpen && <Pane className="absolute top-0 right-full z-50 w-[400px] mr-3">
+      {isOpen && <Pane className="absolute top-0 right-full z-50 w-[400px] mr-2">
         <div className="relative">
           <IconTextMagnifyingGlass className="size-4 absolute top-1/2 -translate-y-1/2 left-3 md:left-8 opacity-20" />
           <input

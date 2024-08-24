@@ -17,7 +17,7 @@
 
     
     @include hoverOnDesktopActiveOnMobile {
-      color: #d88b7b;
+      color: #d2543a;
       background: #ffffff;
       box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.18) 0px 1px 2px 0px;
     }
@@ -36,7 +36,7 @@
 
     .ui-button-circle-marker {
       padding: 0 4px;
-      background-color: #c7705e;
+      background-color: #d2543a;
       color: white;
       font-size: 10px;
       min-width: 15px;
@@ -57,6 +57,6 @@
 .ui-button-circle--active {
   > a,
   > button {
-    color: #c7705e;
+    color: #d2543a;
   }
 }
