@@ -17,6 +17,8 @@ import ButtonCircle from '@/components/UI/ButtonCircle';
 
 import { getDoesUnitMatch, getUnitSortRank } from './utils/units';
 import UnitsPaneItem from './UnitsPaneItem';
+import UnitsPaneItemDetails from './UnitsPaneItemDetails';
+
 
 type Props = {
   children?: React.ReactNode,
@@ -32,6 +34,7 @@ const UnitsPane = ({
   shouldShowCount = false,
 }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [previewUnit, setPreviewUnit] = useState<AdministrativeUnit | undefined>(undefined);
   const [filterPhrase, setFilterPhrase] = useState(phrase);
   const [filteredUnits, setFilteredUnits] = useState(units);
   const [filterPage, setFilterPage] = useState(0);
@@ -107,7 +110,7 @@ const UnitsPane = ({
         <div className="border-t pt-2 pb-4 max-h-[300px] snap-y overflow-auto">
           <ul className="flex flex-col gap-3">
             {filteredUnits.slice(0, itemsToShow).map((unit) => (
-              <UnitsPaneItem key={unit.id} className="snap-end" unit={unit} />
+              <UnitsPaneItem key={unit.id} className="snap-end" unit={unit} setPreviewUnit={setPreviewUnit} />
             ))}
           </ul>
           <div className={clsx("mt-5 text-center", {
@@ -118,7 +121,9 @@ const UnitsPane = ({
             </button>
           </div>
         </div>
-        <p className="sans tracking-wider text-right rounded-b-[4px] p-2 text-white bg-[#000000ba] hover:bg-[#000000cb] duration-300">
+        <p className={clsx('sans tracking-wider text-right p-2 text-white bg-[#000000ba] hover:bg-[#000000cb] duration-300', {
+          'rounded-b-[4px]': !previewUnit,
+        })}>
           <small className="block text-[8px] sm:text-[10px]">
             {t('heraldry.list.footer')}
           </small>
@@ -127,6 +132,7 @@ const UnitsPane = ({
             <IconGithub className="inline size-5 fill-current ml-2" />
           </a>
         </p>
+        {previewUnit && <UnitsPaneItemDetails unit={previewUnit} setPreviewUnit={setPreviewUnit} />}
       </Pane>}
     </div>
   );

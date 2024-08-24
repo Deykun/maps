@@ -13,7 +13,7 @@ type Props = {
   setPreviewUnit: (unit: AdministrativeUnit) => void,
 }
 
-const UnitsPaneItem = ( { className, unit, setPreviewUnit }: Props) => {
+const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
   const { id, title, url, imagesList, imageSrcSet, place, markers, colors } = unit;  
   
   const { t } = useTranslation();
@@ -37,7 +37,7 @@ const UnitsPaneItem = ( { className, unit, setPreviewUnit }: Props) => {
           alt=""
           loading="lazy"
         />      
-        <div className="absolute bottom-0 right-0 translate-y-[50%] md:translate-y-[25%] flex gap-1">
+        <div className="absolute bottom-0 right-0 translate-y-[50%] md:translate-y-0 flex gap-1">
           <button
             className="bg-white p-1 rounded-full shadow-md"
             onClick={focusCoat}
@@ -115,4 +115,4 @@ const UnitsPaneItem = ( { className, unit, setPreviewUnit }: Props) => {
   );
 };
 
-export default UnitsPaneItem;
+export default UnitsPaneItemDetails;
