@@ -52,7 +52,7 @@ const ZoomPane = ({
           <IconControls />
         </ButtonCircle>
       </Pane>
-      {isOpen && <SubPane order={2} className="absolute top-0 right-12 z-[100] mr-3 flex-row items-center">
+      {isOpen && <SubPane order={2} className="absolute top-0 right-12 z-[100] mr-2 flex-row items-center">
         <ButtonCircle onClick={() => setCoatSize(coatSize - 1)} isDisabled={coatSize === coatMin}>
           <IconMinus />
         </ButtonCircle>

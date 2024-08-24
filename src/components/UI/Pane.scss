@@ -1,21 +1,22 @@
 .ui-pane {
-  @apply p-1 md:p-2 flex flex-col gap-2 rounded-md shadow-md;
+  @apply p-1 md:p-2 flex flex-col gap-2 rounded-md;
   
   border: 1px solid #dbd7d7;
   background: rgba(236, 236, 236, 0.68);
   background: hsla(0, 0%, 97%, 0.759);
   background: rgba(249, 249, 249, 0.732);
   background: rgba(255, 255, 255, 0.73);
-  backdrop-filter: blur(10px) saturate(1.5) contrast(0.9);
+  backdrop-filter: blur(8px) saturate(1.5) contrast(0.7);
   max-width: calc(100vw - 80px);
+  box-shadow: 0 3px 14px -5px #f4f3f2c4, 0 7px 3px -6px #d7d7d7c4;
 }
 
 .ui-pane--magic {
   border-color: #be5443c4;
+  box-shadow: 0 3px 14px -5px #ee9b7bc4, 0 7px 3px -6px #d9b7aac4;
   background-image: radial-gradient(at right, #dec9c900 0, #f1770e7d, #c225c033 100%);
   background-size: auto 100%;
   background-position: 100%;
-  box-shadow: 0 3px 14px -5px #ff0000c4;
   background-size: 200% 500px;
   background-position: 0 0;
   animation: magicBacground linear infinite 3s;
@@ -25,6 +26,14 @@
   }
 }
 
+.ui-pane-magic-border {
+  border: 1px solid #eac6a8;
+  box-shadow: 0 3px 14px -5px #ee9b7bc4, 0 7px 3px -6px #d9b7aac4;
+
+  > .border-t {
+    border-color: #eac6a8;
+  }
+}
 
 @keyframes magicBacground {
   0% {

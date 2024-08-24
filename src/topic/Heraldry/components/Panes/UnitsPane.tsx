@@ -17,6 +17,8 @@ import ButtonCircle from '@/components/UI/ButtonCircle';
 
 import { getDoesUnitMatch, getUnitSortRank } from './utils/units';
 import UnitsPaneItem from './UnitsPaneItem';
+import UnitsPaneItemDetails from './UnitsPaneItemDetails';
+
 
 type Props = {
   children?: React.ReactNode,
@@ -32,6 +34,7 @@ const UnitsPane = ({
   shouldShowCount = false,
 }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [previewUnit, setPreviewUnit] = useState<AdministrativeUnit | undefined>(undefined);
   const [filterPhrase, setFilterPhrase] = useState(phrase);
   const [filteredUnits, setFilteredUnits] = useState(units);
   const [filterPage, setFilterPage] = useState(0);
@@ -47,6 +50,7 @@ const UnitsPane = ({
       setIsOpen(false);
       setFilterPhrase('');
       setFilterPage(0);
+      setPreviewUnit(undefined);
 
       return;
     }
@@ -56,6 +60,8 @@ const UnitsPane = ({
   }, [units, phrase]);
 
   useEffect(() => {
+    setPreviewUnit(undefined);
+
     if (filterPhrase === '') {
       setFilteredUnits(units);
 
@@ -94,7 +100,7 @@ const UnitsPane = ({
               && <span className="ui-button-circle-marker">{filteredUnits.length}</span>}
         </ButtonCircle>
       </Pane>
-      {isOpen && <Pane className="absolute top-0 right-full z-50 w-[400px] mr-3">
+      {isOpen && <Pane className="absolute top-0 right-full z-50 w-[400px] mr-2">
         <div className="relative">
           <IconTextMagnifyingGlass className="size-4 absolute top-1/2 -translate-y-1/2 left-3 md:left-8 opacity-20" />
           <input
@@ -104,10 +110,11 @@ const UnitsPane = ({
             placeholder={t('heraldry.list.limitListToPlaceholder')}
           />
         </div>
-        <div className="border-t pt-2 pb-4 max-h-[300px] snap-y overflow-auto">
+        {previewUnit && <UnitsPaneItemDetails unit={previewUnit} setPreviewUnit={setPreviewUnit} />}
+        {!previewUnit && <div className="border-t pt-2 pb-4 max-h-[300px] snap-y overflow-auto">
           <ul className="flex flex-col gap-3">
             {filteredUnits.slice(0, itemsToShow).map((unit) => (
-              <UnitsPaneItem key={unit.id} className="snap-end" unit={unit} />
+              <UnitsPaneItem key={unit.id} className="snap-end" unit={unit} setPreviewUnit={setPreviewUnit} />
             ))}
           </ul>
           <div className={clsx("mt-5 text-center", {
@@ -118,6 +125,7 @@ const UnitsPane = ({
             </button>
           </div>
         </div>
+        }
         <p className="sans tracking-wider text-right rounded-b-[4px] p-2 text-white bg-[#000000ba] hover:bg-[#000000cb] duration-300">
           <small className="block text-[8px] sm:text-[10px]">
             {t('heraldry.list.footer')}

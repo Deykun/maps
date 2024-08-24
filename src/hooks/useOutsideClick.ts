@@ -4,8 +4,14 @@ import { useEffect } from "react";
 export default function useOutsideClick(selector: string, onClickOut: () => void){
   useEffect(() => {
       const onClick = (event: MouseEvent) => {
-        if (!(event.target as HTMLElement)?.closest(selector)) {
-          onClickOut();
+        const wasElementInsideSelectorClicked = Boolean((event.target as HTMLElement)?.closest(selector));
+        if (!wasElementInsideSelectorClicked) {
+          const isInBody = document.body.contains((event.target as HTMLElement));
+          if (isInBody) {
+            onClickOut();
+          } else {
+            // Was probably removed by click
+          }
         }
       }
 

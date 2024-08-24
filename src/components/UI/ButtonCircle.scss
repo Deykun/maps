@@ -1,3 +1,4 @@
+@import "@/scss/mixins.scss";
 
 .ui-button-circle {
   > a,
@@ -7,15 +8,12 @@
     color: #312f2f;
     font-size: 20px;
     font-weight: 800;
-    // border: 1px solid #bdbabaa1;
-    // background: #ffffff5e;
-    // border-radius: 4px;
     background-color: white;
     border-radius: 50px;
     transition: 0.05s ease-in-out;
-
-    &:hover {
-      color: black;
+    
+    @include hoverOnDesktopActiveOnMobile {
+      color: #d2543a;
       background: #ffffff;
       box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.18) 0px 1px 2px 0px;
     }
@@ -29,11 +27,12 @@
       @apply size-5;
 
       fill: currentColor;
+      transition: ease-in-out 0.2s;
     }
 
     .ui-button-circle-marker {
       padding: 0 4px;
-      background-color: #556c03;
+      background-color: #d2543a;
       color: white;
       font-size: 10px;
       min-width: 15px;
@@ -54,6 +53,6 @@
 .ui-button-circle--active {
   > a,
   > button {
-    color: #205dbd;
+    color: #d2543a;
   }
 }

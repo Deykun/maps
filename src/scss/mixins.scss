@@ -1,0 +1,13 @@
+@mixin hoverOnDesktopActiveOnMobile {
+  @media (hover: hover) {
+      &:hover {
+          @content;
+      }
+  }
+
+  @media (hover: none) {
+      &:active {
+          @content;
+      }
+  }
+}
