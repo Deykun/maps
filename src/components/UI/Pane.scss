@@ -19,7 +19,6 @@
   background-position: 100%;
   background-size: 200% 500px;
   background-position: 0 0;
-  animation: magicBacground linear infinite 3s;
 
   > .border-t {
     border-color: #be5443c4;
@@ -32,19 +31,5 @@
 
   > .border-t {
     border-color: #eac6a8;
-  }
-}
-
-@keyframes magicBacground {
-  0% {
-    background-position: 0 0;
-  }
-
-  50% {
-    background-position: -10px -200px;
-  }
-
-  100% { 
-    background-position: 0 0;
   }
 }
