@@ -8,13 +8,9 @@
     color: #312f2f;
     font-size: 20px;
     font-weight: 800;
-    // border: 1px solid #bdbabaa1;
-    // background: #ffffff5e;
-    // border-radius: 4px;
     background-color: white;
     border-radius: 50px;
     transition: 0.05s ease-in-out;
-
     
     @include hoverOnDesktopActiveOnMobile {
       color: #d2543a;

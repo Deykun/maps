@@ -188,7 +188,7 @@ const FiltersPane = ({
         {Object.keys(colorsMarkersByNames).map((name) => <ButtonCircle
           key={name}
           className={clsx({
-            'border border-[#d2543a]': colorFilters.includes(name),
+            'border border-[#eac6a8]': colorFilters.includes(name),
           })}
           onClick={() => toggleColor(name)}
           title={t(`heraldry.unit.type.${lang}.${name}`)}
