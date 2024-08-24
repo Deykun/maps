@@ -110,7 +110,8 @@ const UnitsPane = ({
             placeholder={t('heraldry.list.limitListToPlaceholder')}
           />
         </div>
-        <div className="border-t pt-2 pb-4 max-h-[300px] snap-y overflow-auto">
+        {previewUnit && <UnitsPaneItemDetails unit={previewUnit} setPreviewUnit={setPreviewUnit} />}
+        {!previewUnit && <div className="border-t pt-2 pb-4 max-h-[300px] snap-y overflow-auto">
           <ul className="flex flex-col gap-3">
             {filteredUnits.slice(0, itemsToShow).map((unit) => (
               <UnitsPaneItem key={unit.id} className="snap-end" unit={unit} setPreviewUnit={setPreviewUnit} />
@@ -124,9 +125,8 @@ const UnitsPane = ({
             </button>
           </div>
         </div>
-        <p className={clsx('sans tracking-wider text-right p-2 text-white bg-[#000000ba] hover:bg-[#000000cb] duration-300', {
-          'rounded-b-[4px]': !previewUnit,
-        })}>
+        }
+        <p className="sans tracking-wider text-right rounded-b-[4px] p-2 text-white bg-[#000000ba] hover:bg-[#000000cb] duration-300">
           <small className="block text-[8px] sm:text-[10px]">
             {t('heraldry.list.footer')}
           </small>
@@ -135,7 +135,6 @@ const UnitsPane = ({
             <IconGithub className="inline size-5 fill-current ml-2" />
           </a>
         </p>
-        {previewUnit && <UnitsPaneItemDetails unit={previewUnit} setPreviewUnit={setPreviewUnit} />}
       </Pane>}
     </div>
   );

@@ -29,11 +29,11 @@ const UnitsPaneItem = ( { className, unit, setPreviewUnit }: Props) => {
 
   return (
     <li className={clsx('flex gap-2 items-center', { [className || '']: className })}>
-      <span className="relative size-10 md:size-20 flex-shrink-0">
+      <span className="relative size-[70px] md:size-20 flex-shrink-0">
         <img
           src={imagesList?.[0].path}
           srcSet={imageSrcSet}
-          className="size-10 md:size-20 object-contain p-2 rounded-t-[4px] rounded-b-[30px] bg-white border"
+          className="size-[70px] md:size-20 object-contain p-2 rounded-t-[4px] rounded-b-[30px] bg-white border"
           alt=""
           loading="lazy"
         />      
@@ -67,7 +67,7 @@ const UnitsPaneItem = ( { className, unit, setPreviewUnit }: Props) => {
           {' '}
           {place?.name || t('heraldry.item.noLocation')}
         </p>
-        <div className="mt-1 empty:hidden flex gap-1">
+        <div className="mt-1 empty:hidden flex gap-1 hidden">
           {Object.entries(colors?.byNames || {}).map(([colorName, colors = []]) => {
             const title = [
               colors.sort((a, b) => a.distance - b.distance)?.[0]?.distance?.toFixed(1),
@@ -87,28 +87,6 @@ const UnitsPaneItem = ( { className, unit, setPreviewUnit }: Props) => {
             </span>
             )
           })}
-        </div>
-        <div className="hidden">
-          <p className="my-2">
-            {Object.entries(colors?.byNamesRejected || {}).map(([colorName, colors = []]) => 
-              <span
-                className="inline-flex mx-1 size-4 rounded-md bg-[#eee] group overflow-hidden"
-                title={`${colorName} ${colors.sort((a, b) => a.distance - b.distance)?.[0]?.distance}`} 
-                style={{ backgroundColor: colorsMarkersByNames[colorName] }}
-              >
-                {colors.map((item) => <span className="color size-full opacity-0 group-hover:opacity-100 duration-300" style={{ backgroundColor: item.color }} />)}
-              </span>
-            )}
-          </p>
-          <p className="my-2">
-            {(colors?.hexPalette || []).map((hexColor) => {
-              return (
-                <span className="inline-flex size-4" style={{ backgroundColor: hexColor }}>
-                  ?
-                </span>
-              );
-            })}
-          </p>
         </div>
       </span>
     </li>

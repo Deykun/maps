@@ -171,15 +171,15 @@ const FiltersPane = ({
             {typeFilters.length > 0 && <span className="ui-button-circle-marker">{typeFilters.length}</span>}
           </ButtonCircle>
         </h3>
-        {typeFiltersList.length > 0 && <div className="grid grid-cols-1 gap-1">
+        {typeFiltersList.length > 0 && <div className="grid grid-cols-1 gap-1 sans">
           {typeFiltersList.map(({ value, total }) => 
             <button
               onClick={() => toggleType(value)}
-              className={clsx('sans font-[500] text-[16px] text-left hover:text-[#d2543a]', { 
+              className={clsx('font-[500] text-[14px] text-left hover:text-[#d2543a]', { 
                 'font-[600] text-[#d2543a]': typeFilters.includes(value),
               })}
             >
-              {t(`heraldry.unit.type.${lang}.${value}`)} {total > 0 && <small className="text-[10px] text-[#b2afaf] tracking-widest">({total})</small>}
+              {typeFilters.includes(value) && '✓'} {t(`heraldry.unit.type.${lang}.${value}`)} {total > 0 && <small className="text-[10px] text-[#b2afaf] tracking-widest font-[400]">({total})</small>}
             </button>
           )}
         </div>}
@@ -218,14 +218,14 @@ const FiltersPane = ({
             {animalFilters.length > 0 && <span className="ui-button-circle-marker">{animalFilters.length}</span>}
           </ButtonCircle>
         </h3>
-        <div className="sans grid grid-cols-1 sm:grid-cols-3 gap-1">
+        <div className="sans grid grid-cols-1 gap-1">
             <button
               className={clsx('font-[500] text-[14px] text-left hover:text-[#d2543a]', { 
                 'font-[600] text-[#d2543a]': animalFilters.includes(WITH_ANIMAL),
               })}
               onClick={() => toggleAnimal(WITH_ANIMAL)}
             >
-              {t(`heraldry.animal.${WITH_ANIMAL}`)}
+              {animalFilters.includes(WITH_ANIMAL) && '✓'} {t(`heraldry.animal.${WITH_ANIMAL}`)}
             </button>
             <button
               className={clsx('font-[500] text-[14px] text-left hover:text-[#d2543a]', { 
@@ -233,10 +233,10 @@ const FiltersPane = ({
               })}
               onClick={() => toggleAnimal(WITHOUT_ANIMAL)}
             >
-              {t(`heraldry.animal.${WITHOUT_ANIMAL}`)}
+              {animalFilters.includes(WITHOUT_ANIMAL) && '✓'} {t(`heraldry.animal.${WITHOUT_ANIMAL}`)}
             </button>
         </div>
-        {animalFiltersList.length > 0 && <div className="sans mt-2 pt-3 border-t border-t-[#dbd7d7] grid grid-cols-1 max-h-[80lvh] overflow-auto sm:grid-cols-3 gap-1">
+        {animalFiltersList.length > 0 && <div className="sans mt-2 pt-3 border-t border-t-[#dbd7d7] grid grid-cols-1 max-h-[80lvh] overflow-auto sm:grid-cols-2 gap-1">
           {animalFiltersList.map(({ value, total }) => 
             <button
               onClick={() => toggleAnimal(value)}
@@ -244,7 +244,11 @@ const FiltersPane = ({
                 'font-[600] text-[#d2543a]': animalFilters.includes(value),
               })}
             >
-              {t(`heraldry.animal.${value}`)} {total > 0 && <small className="text-[10px] text-[#b2afaf] tracking-widest">({total})</small>}
+               {animalFilters.includes(value) && '✓'}
+               {' '}
+               {t(`heraldry.animal.${value}`)}
+               {' '}
+               {total > 0 && <small className="text-[10px] text-[#b2afaf] tracking-widest font-[400]">({total})</small>}
             </button>
           )}
         </div>}
@@ -264,15 +268,19 @@ const FiltersPane = ({
             {itemFilters.length > 0 && <span className="ui-button-circle-marker">{itemFilters.length}</span>}
           </ButtonCircle>
         </h3>
-        {itemFiltersList.length > 0 && <div className="grid grid-cols-1 max-h-[80lvh] overflow-auto sm:grid-cols-2 gap-1">
+        {itemFiltersList.length > 0 && <div className="sans grid grid-cols-1 max-h-[80lvh] overflow-auto sm:grid-cols-2 gap-1">
           {itemFiltersList.map(({ value, total }) => 
             <button
               onClick={() => toggleItem(value)}
-              className={clsx('sans font-[500] text-[14px] text-left hover:text-[#d2543a]', { 
+              className={clsx('font-[500] text-[14px] text-left hover:text-[#d2543a]', { 
                 'font-[600] text-[#d2543a]': itemFilters.includes(value),
               })}
             >
-              {t(`heraldry.item.${value}`)} {total > 0 && <small className="text-[10px] text-[#b2afaf] tracking-widest">({total})</small>}
+              {itemFilters.includes(value) && '✓'}
+              {' '}
+              {t(`heraldry.item.${value}`)}
+              {' '}
+              {total > 0 && <small className="text-[10px] text-[#b2afaf] tracking-widest font-[400]">({total})</small>}
             </button>
           )}
         </div>}
@@ -283,15 +291,14 @@ const FiltersPane = ({
           onClick={() => setFilterOperator(filterOperator === 'and' ? 'or' : 'and')}
           title={`${t('heraldry.filterOperator')} ${t(`heraldry.filterOperator.${filterOperator}`)}`}
         >
-          {/* Pointer events are set to 'none' because the icon changes, and sometimes a removed node is mistakenly treated as a click outside. */}
-          {filterOperator === 'and' ? <IconCubeAnd className="pointer-events-none" /> : <IconCubeOr className="pointer-events-none" />}
+          {filterOperator === 'and' ? <IconCubeAnd /> : <IconCubeOr />}
         </ButtonCircle>
         <ButtonCircle
           wrapperClassName="ml-auto"
           onClick={() => setShouldReverseFilters(!shouldReverseFilters)}
           title={`${t('heraldry.filterReverse')} ${t(`heraldry.filterReverse.${shouldReverseFilters ? 'yes' : 'no'}`)}`}
         >
-          {shouldReverseFilters?  <IconEyeCrossed className="pointer-events-none"  /> : <IconEye className="pointer-events-none" />}
+          {shouldReverseFilters ? <IconEyeCrossed /> : <IconEye />}
         </ButtonCircle>
       </SubPane>}
     </div>
