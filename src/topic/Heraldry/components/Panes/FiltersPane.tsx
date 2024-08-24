@@ -175,11 +175,11 @@ const FiltersPane = ({
           {typeFiltersList.map(({ value, total }) => 
             <button
               onClick={() => toggleType(value)}
-              className={clsx('font-[500] text-[14px] text-left hover:text-[#205dbd]', { 
-                'font-[600] text-[#205dbd]': typeFilters.includes(value),
+              className={clsx('font-[500] text-[14px] text-left hover:text-[#c7705e]', { 
+                'font-[600] text-[#c7705e]': typeFilters.includes(value),
               })}
             >
-              {t(`heraldry.unit.type.${lang}.${value}`)} {total > 0 && <small className="text-[10px] text-[#4b4b4b] tracking-widest font-[600]">({total})</small>}
+              {t(`heraldry.unit.type.${lang}.${value}`)} {total > 0 && <small className="text-[10px] text-[#b2afaf] tracking-widest font-[600]">({total})</small>}
             </button>
           )}
         </div>}
@@ -188,7 +188,7 @@ const FiltersPane = ({
         {Object.keys(colorsMarkersByNames).map((name) => <ButtonCircle
           key={name}
           className={clsx({
-            'border border-[#dbd7d7]': colorFilters.includes(name),
+            'border-2 border-[#c7705e]': colorFilters.includes(name),
           })}
           onClick={() => toggleColor(name)}
           title={t(`heraldry.unit.type.${lang}.${name}`)}
@@ -218,18 +218,33 @@ const FiltersPane = ({
             {animalFilters.length > 0 && <span className="ui-button-circle-marker">{animalFilters.length}</span>}
           </ButtonCircle>
         </h3>
-        {animalFiltersList.length > 0 && <div className="grid grid-cols-1 max-h-[80lvh] overflow-auto sm:grid-cols-3 gap-1">
-          {[
-            { value: WITH_ANIMAL, total: 0 },
-            { value: WITHOUT_ANIMAL, total: 0 },
-          ...animalFiltersList].map(({ value, total }) => 
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-1">
+            <button
+              className={clsx('font-[500] text-[14px] text-left hover:text-[#c7705e]', { 
+                'font-[600] text-[#c7705e]': animalFilters.includes(WITH_ANIMAL),
+              })}
+              onClick={() => toggleAnimal(WITH_ANIMAL)}
+            >
+              {t(`heraldry.animal.${WITH_ANIMAL}`)}
+            </button>
+            <button
+              className={clsx('font-[500] text-[14px] text-left hover:text-[#c7705e]', { 
+                'font-[600] text-[#c7705e]': animalFilters.includes(WITHOUT_ANIMAL),
+              })}
+              onClick={() => toggleAnimal(WITHOUT_ANIMAL)}
+            >
+              {t(`heraldry.animal.${WITHOUT_ANIMAL}`)}
+            </button>
+        </div>
+        {animalFiltersList.length > 0 && <div className="mt-2 pt-3 border-t border-t-[#dbd7d7] grid grid-cols-1 max-h-[80lvh] overflow-auto sm:grid-cols-3 gap-1">
+          {animalFiltersList.map(({ value, total }) => 
             <button
               onClick={() => toggleAnimal(value)}
-              className={clsx('font-[500] text-[14px] text-left hover:text-[#205dbd]', { 
-                'font-[600] text-[#205dbd]': animalFilters.includes(value),
+              className={clsx('font-[500] text-[14px] text-left hover:text-[#c7705e]', { 
+                'font-[600] text-[#c7705e]': animalFilters.includes(value),
               })}
             >
-              {t(`heraldry.animal.${value}`)} {total > 0 && <small className="text-[10px] text-[#4b4b4b] tracking-widest font-[600]">({total})</small>}
+              {t(`heraldry.animal.${value}`)} {total > 0 && <small className="text-[10px] text-[#b2afaf] tracking-widest font-[600]">({total})</small>}
             </button>
           )}
         </div>}
@@ -253,11 +268,11 @@ const FiltersPane = ({
           {itemFiltersList.map(({ value, total }) => 
             <button
               onClick={() => toggleItem(value)}
-              className={clsx('font-[500] text-[14px] text-left hover:text-[#205dbd]', { 
-                'font-[600] text-[#205dbd]': itemFilters.includes(value),
+              className={clsx('font-[500] text-[14px] text-left hover:text-[#c7705e]', { 
+                'font-[600] text-[#c7705e]': itemFilters.includes(value),
               })}
             >
-              {t(`heraldry.item.${value}`)} {total > 0 && <small className="text-[10px] text-[#4b4b4b] tracking-widest font-[600]">({total})</small>}
+              {t(`heraldry.item.${value}`)} {total > 0 && <small className="text-[10px] text-[#b2afaf] tracking-widest font-[600]">({total})</small>}
             </button>
           )}
         </div>}

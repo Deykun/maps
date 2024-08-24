@@ -36,7 +36,7 @@ const UnitsPaneItem = ( { className, unit }: Props) => {
           loading="lazy"
         />      
         <button
-          className="absolute bottom-0 right-0 translate-y-[50%] md:translate-y-0 bg-white fill-[#205dbd] p-1 rounded-full shadow-md"
+          className="absolute bottom-0 right-0 translate-y-[50%] md:translate-y-0 bg-white fill-[#c7705e] p-1 rounded-full shadow-md"
           onClick={focusCoat}
         >
           <IconMarker className="size-4" />

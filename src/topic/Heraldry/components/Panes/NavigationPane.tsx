@@ -46,7 +46,7 @@ const NavigationPane = () => {
         {HERALDRY_COUNTRIES.map(({ path: langPath, pathNameLink, lang }) => <ButtonCircle
           href={`/maps/${langPath}`}
           className={clsx('text-[20px]', {
-            'border-2 border-[#205dbd]': path === `/maps/${langPath}`,
+            'border-2 border-[#c7705e]': path === `/maps/${langPath}`,
           })}
           title={t(pathNameLink)}
         >
@@ -57,7 +57,7 @@ const NavigationPane = () => {
         {['en', 'ee', 'pl'].map((lang) => <ButtonCircle
           onClick={() => i18n.changeLanguage(lang)}
           className={clsx('text-[20px]', {
-            'border-2 border-[#205dbd]': i18n.language === lang,
+            'border-2 border-[#c7705e]': i18n.language === lang,
           })}
         >
           <img className="navigation-pane-flag sans" src={`images/flags/${lang}.svg`} alt={lang} />
