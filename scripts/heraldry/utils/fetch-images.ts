@@ -38,107 +38,106 @@ export const fetchImages = async ({
 }) => {
   const contentToSave = {};
 
-  console.log(path);
   const total = administrativeDivisions.length;
 
   console.log(' ');
-  console.log(chalk.blue(`${total} coats to fetch.`));
+  console.log(`${chalk.blue(total)} coats to fetch (${chalk.yellow(path)}).`);
   console.log(' ');
 
-  for (let i = 0; i < administrativeDivisions.length; i++) {
-      const unit = administrativeDivisions[i];
-      let fileName = getImageFileName(unit.title);
+  for (let i = 0; i < total; i++) {
+    const unit = administrativeDivisions[i];
+    let fileName = getImageFileName(unit.title);
 
-      const format = unit.image?.source.split('.').at(-1)?.toLowerCase() || 'png';
-      if (format !== 'png' && existsSync(`./public/images/heraldry/${lang}/${path}/${fileName}.png`)) {
-          unlink(`./public/images/heraldry/${lang}/${path}/${fileName}.png`, () => {});
-          console.log(chalk.red(`Removed ${fileName}.png`));
+    const format = unit.image?.source.split('.').at(-1)?.toLowerCase() || 'png';
+    if (format !== 'png' && existsSync(`./public/images/heraldry/${lang}/${path}/${fileName}.png`)) {
+      unlink(`./public/images/heraldry/${lang}/${path}/${fileName}.png`, () => {});
+      console.log(chalk.red(`Removed ${fileName}.png`));
+    }
+
+    if (unit.image?.source) {
+      if (!existsSync(`./public/images/heraldry/${lang}/${path}/${fileName}.${format}`)) {
+        if (unit.image?.source) {
+          await download(unit.image?.source, fileName, format, path, lang)
+          console.log(`Fetched ${fileName}.${format}`);
+
+          if (i % 20 === 0) {
+              console.log(' ');
+              console.log(chalk.yellow(`Progress ${(i / total * 100).toFixed(1)}%. ${i} out of ${total}.`))
+              console.log(' ');
+          }
+        } else {
+          console.log(chalk.red(`Missing ${fileName}.${format}.`));
+        }
+      } else {
+        // console.log(chalk.gray(`Skipping ${fileName}.${format} already exists.`));
       }
 
-      if (unit.image?.source) {
-          if (!existsSync(`./public/images/heraldry/${lang}/${path}/${fileName}.${format}`)) {
-            if (unit.image?.source) {
-              await download(unit.image?.source, fileName, format, path, lang)
-              console.log(`Fetched ${fileName}.${format}`);
+      const image = resolve(`./public/images/heraldry/${lang}/${path}/${fileName}.${format}`);
 
-              if (i % 20 === 0) {
-                  console.log(' ');
-                  console.log(chalk.yellow(`Progress ${(i / total * 100).toFixed(1)}%. ${i} out of ${total}.`))
-                  console.log(' ');
-              }
-            } else {
-              console.log(chalk.red(`Missing ${fileName}.${format}.`));
-            }
-          } else {
-              // console.log(chalk.gray(`Skipping ${fileName}.${format} already exists.`));
-          }
+      const {
+        animals,
+        items,
+      } = getMarkers({
+        text: unit?.description || '',
+        title: unit?.title || '',
+        lang,
+      });
 
-          const image = resolve(`./public/images/heraldry/${lang}/${path}/${fileName}.${format}`);
+      const {
+        srcSet,
+        imagesList,
+      } = getCompressedImageSrc(`images/heraldry/${lang}/${path}/${fileName}.${format}`, path);
 
-          const {
+      if (!unit.place?.coordinates?.lat || !unit.place?.coordinates?.lon) {
+        console.log(`${chalk.yellow(unit.title)} doesn't have the ${chalk.red('location')}.`)
+      }
+
+      try {
+        const {
+          colorsPalette,
+          hexPalette,
+          byNames,
+          byNamesRejected,
+        } = await getImageColors(image);
+
+        contentToSave[fileName] = {
+          ...unit,
+          description: '', // not needed
+          colors: {
+            colorsPalette,
+            byNames,
+            byNamesRejected,
+            hexPalette,
+          },
+          imageUrl: `images/heraldry/${lang}/${path}/${fileName}.${format}`,
+          imageSrcSet: srcSet,
+          imagesList,
+          shortTitle: unit.title.replace('Herb gminy', 'Herb g.').replace('Herb powiatu', 'Herb p.').replace('Herb miasta', 'Herb').replace(/\((.*)\)/g, ''),
+          markers: {
             animals,
             items,
-          } = getMarkers({
-            text: unit?.description || '',
-            title: unit?.title || '',
-            lang,
-          })
-
-          const {
-            srcSet,
-            imagesList,
-          } = getCompressedImageSrc(`images/heraldry/${lang}/${path}/${fileName}.${format}`, path);
-
-          if (!unit.place?.coordinates?.lat || !unit.place?.coordinates?.lon) {
-            console.log(`${chalk.yellow(unit.title)} doesn't have the ${chalk.red('location')}.`)
           }
+        }
+      } catch (error) {
+        console.log(`${chalk.red('Missing colors for:')} ${chalk.yellow(unit.title)}`);
+        console.error(error);
 
-          try {
-              const {
-                colorsPalette,
-                hexPalette,
-                byNames,
-                byNamesRejected,
-              } = await getImageColors(image);
-
-              contentToSave[fileName] = {
-                ...unit,
-                description: '', // not needed
-                colors: {
-                  colorsPalette,
-                  byNames,
-                  byNamesRejected,
-                  hexPalette,
-                },
-                imageUrl: `images/heraldry/${lang}/${path}/${fileName}.${format}`,
-                imageSrcSet: srcSet,
-                imagesList,
-                shortTitle: unit.title.replace('Herb gminy', 'Herb g.').replace('Herb powiatu', 'Herb p.').replace('Herb miasta', 'Herb').replace(/\((.*)\)/g, ''),
-                markers: {
-                  animals,
-                  items,
-                }
-              }
-          } catch (error) {
-            console.log(`${chalk.red('Missing colors for:')} ${chalk.yellow(unit.title)}`);
-            console.error(error);
-
-            contentToSave[fileName] = {
-              ...unit,
-              description: '',
-              imageUrl: `images/heraldry/${lang}/${path}/${fileName}.${format}`,
-              imageSrcSet: srcSet,
-              imagesList,
-              shortTitle: unit.title.replace('Herb gminy', 'Herb g.').replace('Herb powiatu', 'Herb p.').replace('Herb miasta', 'Herb').replace(/\((.*)\)/g, ''),
-              markers: {
-                animals,
-                items,
-              }
-            }
+        contentToSave[fileName] = {
+          ...unit,
+          description: '',
+          imageUrl: `images/heraldry/${lang}/${path}/${fileName}.${format}`,
+          imageSrcSet: srcSet,
+          imagesList,
+          shortTitle: unit.title.replace('Herb gminy', 'Herb g.').replace('Herb powiatu', 'Herb p.').replace('Herb miasta', 'Herb').replace(/\((.*)\)/g, ''),
+          markers: {
+            animals,
+            items,
           }
-      } else {
-        console.log(chalk.red(`Missng image for: ${chalk.yellow(unit.title)}`));
+        }
       }
+    } else {
+      console.log(chalk.red(`Missng image for: ${chalk.yellow(unit.title)}`));
+    }
   }
 
   writeFileSync(`./src/pages/${subpage}/${path}-map.json`, JSON.stringify(contentToSave, null, 4));
