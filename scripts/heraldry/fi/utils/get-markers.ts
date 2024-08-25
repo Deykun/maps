@@ -113,7 +113,7 @@ const animalsRules: MarkerParams[] = [{
 const itemsRules: MarkerParams[] = [{
   name: "anchor",
   phrases: ['-ankkuri', 'ankkuri'],
-  exclude: ['Kajaanin vaakuna'],
+  exclude: ['Kajaanin vaakuna', 'Karstulan vaakuna'],
 }, {
   name: 'earOfGrain',
   phrases: ['tähkää', 'tähkä', 'lyhde', 'röyhy'],
@@ -130,7 +130,8 @@ const itemsRules: MarkerParams[] = [{
 }, {
   name: "arrow",
   phrases: ['nuoli', 'jalkajousi', 'käsijousella', 'käsijousi', 'nuolikotelo'],
-  include: ['Pieksämäen vaakuna', 'Kokkolan vaakuna', 'Jämsän vaakuna', 'Jämsänkosken vaakuna', 'Ilmajoen vaakuna'],
+  exclude: ['Kokkolan vaakuna', 'Ilmajoen vaakuna', 'Jämsän vaakuna', 'Jämsänkosken vaakuna'],
+  include: ['Pieksämäen vaakuna']
 }, {
   name: "boat",
   phrases: ['vene', 'veneitä', 'laiva', 'purjevene', 'lautta', 'lautat', 'tervavene', 'verkkovene', 'kaljaasilla', 'hansalaiva', 'tervahöyry', 'nuottavenettä', 'kirkkoveneillä'],
