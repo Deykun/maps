@@ -23,8 +23,6 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
     ...(markers?.items || []).map((v) => t(`heraldry.item.${v}`)),
   ];
 
-  console.log(colors);
-
   const focusCoat = () => {
     document.getElementById(`coat-${id}`)?.focus();
   }

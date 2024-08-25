@@ -104,11 +104,6 @@ export const getSprites = ({
   for (let i = 0; i <= total; i++) {
     const spriteIndex = Math.floor(i / numberOfImagesPerSprite);
 
-    if (i === 1028) {
-      console.log(imagesByIndex[i])
-      console.log(spriteIndex)
-    }
-
     if (imagesByIndex[i]) {
       sprites[spriteIndex][i % numberOfImagesPerSprite] = imagesByIndex[i];
     }
