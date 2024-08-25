@@ -1,3 +1,4 @@
+import chalk from 'chalk';
 import nearestColor from 'nearest-color';
 import { extractColors } from 'extract-colors'
 import getPixels from 'get-pixels';
@@ -87,10 +88,22 @@ const colorMatchers = {
     }, {
       color: '#5596c3',
       get: nearestColor.from({ color: '#5596c3' }),
-      thresholdDistance: 60,
+      thresholdDistance: 80,
     }, {
       color: '#0000bf',
       get: nearestColor.from({ color: '#0000bf' }),
+      thresholdDistance: 60,
+    }, {
+      color: '#0099ff',
+      get: nearestColor.from({ color: '#0099ff' }),
+      thresholdDistance: 60,
+    }, {
+      color: '#243b7f',
+      get: nearestColor.from({ color: '#243b7f' }),
+      thresholdDistance: 60,
+    }, {
+      color: '#2e3192',
+      get: nearestColor.from({ color: '#2e3192' }),
       thresholdDistance: 60,
     }],
   },
@@ -122,20 +135,20 @@ export const getColorStatus = (color: RGB): ColorStatus[] => {
 
   if (greyscale.isGreyscale) {
     let name = 'grey';
-    let distanceColor = '#888';
+    let matcherColor = '#888';
     if (greyscale.isBlack) {
       name = 'black';
-      distanceColor = '#000';
+      matcherColor = '#000';
     } else if (greyscale.isWhite) {
       name = 'white';
-      distanceColor = '#fff';
+      matcherColor = '#fff';
     }
 
     return [{
       didMatch: true,
       color: hexColor,
       name,
-      distanceColor,
+      matcherColor,
       distanceToTreshold: -1,
       thresholdDistance: 0,
       distance: 0,
@@ -156,7 +169,7 @@ export const getColorStatus = (color: RGB): ColorStatus[] => {
         color: hexColor,
         name: colorName,
         distanceToTreshold: thresholdDistance - match.distance,
-        distanceToColor: matcherColor,
+        matcherColor,
         thresholdDistance,
         distance: match?.distance,
         ...greyscale,
@@ -170,7 +183,7 @@ export const getColorStatus = (color: RGB): ColorStatus[] => {
       color: hexColor,
       name: colorName,
       distanceToTreshold: bestMatch.distanceToTreshold,
-      distanceColor: bestMatch.distanceColor,
+      matcherColor: bestMatch.matcherColor,
       thresholdDistance: bestMatch.thresholdDistance,
       distance: bestMatch?.distance,
       ...greyscale,
@@ -183,8 +196,12 @@ export const getColorStatus = (color: RGB): ColorStatus[] => {
 export const getImageColors = async (image: string) => {
   const colorsPaletteRGB: RGB[] = await new Promise((resolve, reject) => {
     try {
-      getPixels(image, (err, pixels) => {
-        if(!err) {
+      getPixels(image, (error, pixels) => {
+        if (error) {
+          console.log(`${chalk.red('getPixels error from:')} ${chalk.yellow(image)}`);
+
+          reject([]);
+        } else {
           const data = [...pixels.data]
           const [width, height] = pixels.shape
       
@@ -198,7 +215,7 @@ export const getImageColors = async (image: string) => {
         }
       });
     } catch (err) {
-        reject([]);
+      reject([]);
     }
   });
 

@@ -23,12 +23,220 @@
         "index": 0,
         "lang": "pl",
         "colors": {
-            "primary": {
-                "color": "#0e0d0c",
-                "name": "red",
-                "distance": 241.64850506469102
+            "colorsPalette": [
+                {
+                    "didMatch": false,
+                    "color": "#facf00",
+                    "name": "red",
+                    "distanceToTreshold": -127.06037766796427,
+                    "thresholdDistance": 80,
+                    "distance": 207.06037766796427,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#facf00",
+                    "name": "blue",
+                    "distanceToTreshold": -201.72313615727592,
+                    "thresholdDistance": 60,
+                    "distance": 261.7231361572759,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#facf00",
+                    "name": "green",
+                    "distanceToTreshold": -164.566297847928,
+                    "thresholdDistance": 90,
+                    "distance": 254.566297847928,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#facf00",
+                    "name": "gold",
+                    "distanceToTreshold": 4.484236472871963,
+                    "thresholdDistance": 60,
+                    "distance": 55.51576352712804,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#989999",
+                    "name": "grey",
+                    "matcherColor": "#888",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#ffffff",
+                    "name": "white",
+                    "matcherColor": "#fff",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
+                },
+                {
+                    "didMatch": true,
+                    "color": "#0a0b0c",
+                    "name": "black",
+                    "matcherColor": "#000",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                }
+            ],
+            "byNames": {
+                "gold": [
+                    {
+                        "didMatch": true,
+                        "color": "#facf00",
+                        "name": "gold",
+                        "distanceToTreshold": 4.484236472871963,
+                        "thresholdDistance": 60,
+                        "distance": 55.51576352712804,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "grey": [
+                    {
+                        "didMatch": true,
+                        "color": "#989999",
+                        "name": "grey",
+                        "matcherColor": "#888",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "didMatch": true,
+                        "color": "#ffffff",
+                        "name": "white",
+                        "matcherColor": "#fff",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ],
+                "black": [
+                    {
+                        "didMatch": true,
+                        "color": "#0a0b0c",
+                        "name": "black",
+                        "matcherColor": "#000",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": true,
+                        "isWhite": false
+                    }
+                ]
             },
-            "palette": []
+            "byNamesRejected": {
+                "red": [
+                    {
+                        "didMatch": false,
+                        "color": "#facf00",
+                        "name": "red",
+                        "distanceToTreshold": -127.06037766796427,
+                        "thresholdDistance": 80,
+                        "distance": 207.06037766796427,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "didMatch": false,
+                        "color": "#facf00",
+                        "name": "blue",
+                        "distanceToTreshold": -201.72313615727592,
+                        "thresholdDistance": 60,
+                        "distance": 261.7231361572759,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "green": [
+                    {
+                        "didMatch": false,
+                        "color": "#facf00",
+                        "name": "green",
+                        "distanceToTreshold": -164.566297847928,
+                        "thresholdDistance": 90,
+                        "distance": 254.566297847928,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "hexPalette": [
+                "#facf00",
+                "#989999",
+                "#ffffff",
+                "#0a0b0c"
+            ]
         },
         "imageUrl": "images/heraldry/pl/wojewodztwa/herb-wojewodztwa-dolnoslaskiego.png",
         "imageSrcSet": "images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-dolnoslaskiego-80w.webp 80w,images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-dolnoslaskiego-300w.webp 300w",
@@ -79,17 +287,287 @@
         "index": 1,
         "lang": "pl",
         "colors": {
-            "primary": {
-                "color": "#ce2e16",
-                "name": "red",
-                "distance": 70.71774883294857
-            },
-            "palette": [
+            "colorsPalette": [
                 {
-                    "color": "#ce2e16",
+                    "didMatch": true,
+                    "color": "#d42e12",
                     "name": "red",
-                    "distance": 70.71774883294857
+                    "distanceToTreshold": 14.509542679868233,
+                    "thresholdDistance": 80,
+                    "distance": 65.49045732013177,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#d42e12",
+                    "name": "blue",
+                    "distanceToTreshold": -147.4270956263911,
+                    "thresholdDistance": 60,
+                    "distance": 207.4270956263911,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#d42e12",
+                    "name": "green",
+                    "distanceToTreshold": -132.4702227265483,
+                    "thresholdDistance": 90,
+                    "distance": 222.4702227265483,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#d42e12",
+                    "name": "gold",
+                    "distanceToTreshold": -66.82665335015349,
+                    "thresholdDistance": 60,
+                    "distance": 126.82665335015349,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#ea988a",
+                    "name": "red",
+                    "distanceToTreshold": -126.37102509800158,
+                    "thresholdDistance": 80,
+                    "distance": 206.37102509800158,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#ea988a",
+                    "name": "blue",
+                    "distanceToTreshold": -99.5430976256886,
+                    "thresholdDistance": 60,
+                    "distance": 159.5430976256886,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#ea988a",
+                    "name": "green",
+                    "distanceToTreshold": -179.14430789797194,
+                    "thresholdDistance": 60,
+                    "distance": 239.14430789797194,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#ea988a",
+                    "name": "gold",
+                    "distanceToTreshold": -8.709533545207535,
+                    "thresholdDistance": 60,
+                    "distance": 68.70953354520753,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#5c5c5c",
+                    "name": "grey",
+                    "matcherColor": "#888",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#000000",
+                    "name": "black",
+                    "matcherColor": "#000",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#ffffff",
+                    "name": "white",
+                    "matcherColor": "#fff",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
                 }
+            ],
+            "byNames": {
+                "red": [
+                    {
+                        "didMatch": true,
+                        "color": "#d42e12",
+                        "name": "red",
+                        "distanceToTreshold": 14.509542679868233,
+                        "thresholdDistance": 80,
+                        "distance": 65.49045732013177,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "grey": [
+                    {
+                        "didMatch": true,
+                        "color": "#5c5c5c",
+                        "name": "grey",
+                        "matcherColor": "#888",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "black": [
+                    {
+                        "didMatch": true,
+                        "color": "#000000",
+                        "name": "black",
+                        "matcherColor": "#000",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": true,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "didMatch": true,
+                        "color": "#ffffff",
+                        "name": "white",
+                        "matcherColor": "#fff",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ]
+            },
+            "byNamesRejected": {
+                "blue": [
+                    {
+                        "didMatch": false,
+                        "color": "#ea988a",
+                        "name": "blue",
+                        "distanceToTreshold": -99.5430976256886,
+                        "thresholdDistance": 60,
+                        "distance": 159.5430976256886,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "green": [
+                    {
+                        "didMatch": false,
+                        "color": "#ea988a",
+                        "name": "green",
+                        "distanceToTreshold": -179.14430789797194,
+                        "thresholdDistance": 60,
+                        "distance": 239.14430789797194,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "gold": [
+                    {
+                        "didMatch": false,
+                        "color": "#ea988a",
+                        "name": "gold",
+                        "distanceToTreshold": -8.709533545207535,
+                        "thresholdDistance": 60,
+                        "distance": 68.70953354520753,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "red": [
+                    {
+                        "didMatch": false,
+                        "color": "#ea988a",
+                        "name": "red",
+                        "distanceToTreshold": -126.37102509800158,
+                        "thresholdDistance": 80,
+                        "distance": 206.37102509800158,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "hexPalette": [
+                "#d42e12",
+                "#ea988a",
+                "#5c5c5c",
+                "#000000",
+                "#ffffff"
             ]
         },
         "imageUrl": "images/heraldry/pl/wojewodztwa/herb-wojewodztwa-kujawskopomorskiego.png",
@@ -142,17 +620,302 @@
         "index": 2,
         "lang": "pl",
         "colors": {
-            "primary": {
-                "color": "#d31313",
-                "name": "red",
-                "distance": 51.55579501860097
-            },
-            "palette": [
+            "colorsPalette": [
                 {
-                    "color": "#d31313",
+                    "didMatch": false,
+                    "color": "#fcc300",
                     "name": "red",
-                    "distance": 51.55579501860097
+                    "distanceToTreshold": -115.0230755577401,
+                    "thresholdDistance": 80,
+                    "distance": 195.0230755577401,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#fcc300",
+                    "name": "blue",
+                    "distanceToTreshold": -200.6511078050504,
+                    "thresholdDistance": 60,
+                    "distance": 260.6511078050504,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#fcc300",
+                    "name": "green",
+                    "distanceToTreshold": -169.04439773907484,
+                    "thresholdDistance": 90,
+                    "distance": 259.04439773907484,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#fcc300",
+                    "name": "gold",
+                    "distanceToTreshold": 4.376264059306479,
+                    "thresholdDistance": 60,
+                    "distance": 55.62373594069352,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#d51216",
+                    "name": "red",
+                    "distanceToTreshold": 29.285110667576134,
+                    "thresholdDistance": 80,
+                    "distance": 50.714889332423866,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#d51216",
+                    "name": "blue",
+                    "distanceToTreshold": -149.84518102639385,
+                    "thresholdDistance": 60,
+                    "distance": 209.84518102639385,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#d51216",
+                    "name": "green",
+                    "distanceToTreshold": -143.4566340886461,
+                    "thresholdDistance": 90,
+                    "distance": 233.4566340886461,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#d51216",
+                    "name": "gold",
+                    "distanceToTreshold": -87.5466028073842,
+                    "thresholdDistance": 60,
+                    "distance": 147.5466028073842,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#767676",
+                    "name": "grey",
+                    "matcherColor": "#888",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#000000",
+                    "name": "black",
+                    "matcherColor": "#000",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#ffffff",
+                    "name": "white",
+                    "matcherColor": "#fff",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
                 }
+            ],
+            "byNames": {
+                "gold": [
+                    {
+                        "didMatch": true,
+                        "color": "#fcc300",
+                        "name": "gold",
+                        "distanceToTreshold": 4.376264059306479,
+                        "thresholdDistance": 60,
+                        "distance": 55.62373594069352,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "red": [
+                    {
+                        "didMatch": true,
+                        "color": "#d51216",
+                        "name": "red",
+                        "distanceToTreshold": 29.285110667576134,
+                        "thresholdDistance": 80,
+                        "distance": 50.714889332423866,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "grey": [
+                    {
+                        "didMatch": true,
+                        "color": "#767676",
+                        "name": "grey",
+                        "matcherColor": "#888",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "black": [
+                    {
+                        "didMatch": true,
+                        "color": "#000000",
+                        "name": "black",
+                        "matcherColor": "#000",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": true,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "didMatch": true,
+                        "color": "#ffffff",
+                        "name": "white",
+                        "matcherColor": "#fff",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ]
+            },
+            "byNamesRejected": {
+                "red": [
+                    {
+                        "didMatch": false,
+                        "color": "#fcc300",
+                        "name": "red",
+                        "distanceToTreshold": -115.0230755577401,
+                        "thresholdDistance": 80,
+                        "distance": 195.0230755577401,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "didMatch": false,
+                        "color": "#d51216",
+                        "name": "blue",
+                        "distanceToTreshold": -149.84518102639385,
+                        "thresholdDistance": 60,
+                        "distance": 209.84518102639385,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "green": [
+                    {
+                        "didMatch": false,
+                        "color": "#d51216",
+                        "name": "green",
+                        "distanceToTreshold": -143.4566340886461,
+                        "thresholdDistance": 90,
+                        "distance": 233.4566340886461,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "gold": [
+                    {
+                        "didMatch": false,
+                        "color": "#d51216",
+                        "name": "gold",
+                        "distanceToTreshold": -87.5466028073842,
+                        "thresholdDistance": 60,
+                        "distance": 147.5466028073842,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "hexPalette": [
+                "#fcc300",
+                "#d51216",
+                "#767676",
+                "#000000",
+                "#ffffff"
             ]
         },
         "imageUrl": "images/heraldry/pl/wojewodztwa/herb-wojewodztwa-lubelskiego.png",
@@ -205,22 +968,392 @@
         "index": 3,
         "lang": "pl",
         "colors": {
-            "primary": {
-                "color": "#06923c",
-                "name": "green",
-                "distance": 124.5672509129105
-            },
-            "palette": [
+            "colorsPalette": [
                 {
-                    "color": "#06923c",
-                    "name": "green",
-                    "distance": 124.5672509129105
+                    "didMatch": false,
+                    "color": "#fff500",
+                    "name": "red",
+                    "distanceToTreshold": -165,
+                    "thresholdDistance": 80,
+                    "distance": 245,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
                 },
                 {
-                    "color": "#df5f22",
+                    "didMatch": false,
+                    "color": "#fff500",
+                    "name": "blue",
+                    "distanceToTreshold": -215.5902755904134,
+                    "thresholdDistance": 60,
+                    "distance": 275.5902755904134,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#fff500",
+                    "name": "green",
+                    "distanceToTreshold": -165.1960031034969,
+                    "thresholdDistance": 90,
+                    "distance": 255.1960031034969,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#fff500",
+                    "name": "gold",
+                    "distanceToTreshold": 40,
+                    "thresholdDistance": 50,
+                    "distance": 10,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#da251d",
                     "name": "red",
-                    "distance": 105.8536725862641
+                    "distanceToTreshold": 20.175255955415906,
+                    "thresholdDistance": 80,
+                    "distance": 59.824744044584094,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#da251d",
+                    "name": "blue",
+                    "distanceToTreshold": -147.8749624173147,
+                    "thresholdDistance": 60,
+                    "distance": 207.8749624173147,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#da251d",
+                    "name": "green",
+                    "distanceToTreshold": -142.03663503852144,
+                    "thresholdDistance": 90,
+                    "distance": 232.03663503852144,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#da251d",
+                    "name": "gold",
+                    "distanceToTreshold": -69.4488315899375,
+                    "thresholdDistance": 60,
+                    "distance": 129.4488315899375,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#00923f",
+                    "name": "red",
+                    "distanceToTreshold": -220.5162225238431,
+                    "thresholdDistance": 80,
+                    "distance": 300.5162225238431,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#00923f",
+                    "name": "blue",
+                    "distanceToTreshold": -53.84638773364749,
+                    "thresholdDistance": 60,
+                    "distance": 113.84638773364749,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#00923f",
+                    "name": "green",
+                    "distanceToTreshold": 53,
+                    "thresholdDistance": 60,
+                    "distance": 7,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#00923f",
+                    "name": "gold",
+                    "distanceToTreshold": -124.64560650066929,
+                    "thresholdDistance": 60,
+                    "distance": 184.6456065006693,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#200604",
+                    "name": "red",
+                    "distanceToTreshold": -143.11656146507815,
+                    "thresholdDistance": 80,
+                    "distance": 223.11656146507815,
+                    "isGreyscale": false,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#200604",
+                    "name": "blue",
+                    "distanceToTreshold": -73.99253710561644,
+                    "thresholdDistance": 60,
+                    "distance": 133.99253710561644,
+                    "isGreyscale": false,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#200604",
+                    "name": "green",
+                    "distanceToTreshold": -19.840793879141273,
+                    "thresholdDistance": 90,
+                    "distance": 109.84079387914127,
+                    "isGreyscale": false,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#200604",
+                    "name": "gold",
+                    "distanceToTreshold": -162.19135896789507,
+                    "thresholdDistance": 60,
+                    "distance": 222.19135896789507,
+                    "isGreyscale": false,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#acacac",
+                    "name": "grey",
+                    "matcherColor": "#888",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#ffffff",
+                    "name": "white",
+                    "matcherColor": "#fff",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
                 }
+            ],
+            "byNames": {
+                "gold": [
+                    {
+                        "didMatch": true,
+                        "color": "#fff500",
+                        "name": "gold",
+                        "distanceToTreshold": 40,
+                        "thresholdDistance": 50,
+                        "distance": 10,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "red": [
+                    {
+                        "didMatch": true,
+                        "color": "#da251d",
+                        "name": "red",
+                        "distanceToTreshold": 20.175255955415906,
+                        "thresholdDistance": 80,
+                        "distance": 59.824744044584094,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "green": [
+                    {
+                        "didMatch": true,
+                        "color": "#00923f",
+                        "name": "green",
+                        "distanceToTreshold": 53,
+                        "thresholdDistance": 60,
+                        "distance": 7,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "grey": [
+                    {
+                        "didMatch": true,
+                        "color": "#acacac",
+                        "name": "grey",
+                        "matcherColor": "#888",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "didMatch": true,
+                        "color": "#ffffff",
+                        "name": "white",
+                        "matcherColor": "#fff",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ]
+            },
+            "byNamesRejected": {
+                "red": [
+                    {
+                        "didMatch": false,
+                        "color": "#200604",
+                        "name": "red",
+                        "distanceToTreshold": -143.11656146507815,
+                        "thresholdDistance": 80,
+                        "distance": 223.11656146507815,
+                        "isGreyscale": false,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "didMatch": false,
+                        "color": "#200604",
+                        "name": "blue",
+                        "distanceToTreshold": -73.99253710561644,
+                        "thresholdDistance": 60,
+                        "distance": 133.99253710561644,
+                        "isGreyscale": false,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "green": [
+                    {
+                        "didMatch": false,
+                        "color": "#200604",
+                        "name": "green",
+                        "distanceToTreshold": -19.840793879141273,
+                        "thresholdDistance": 90,
+                        "distance": 109.84079387914127,
+                        "isGreyscale": false,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "gold": [
+                    {
+                        "didMatch": false,
+                        "color": "#200604",
+                        "name": "gold",
+                        "distanceToTreshold": -162.19135896789507,
+                        "thresholdDistance": 60,
+                        "distance": 222.19135896789507,
+                        "isGreyscale": false,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "hexPalette": [
+                "#fff500",
+                "#da251d",
+                "#00923f",
+                "#200604",
+                "#acacac",
+                "#ffffff"
             ]
         },
         "imageUrl": "images/heraldry/pl/wojewodztwa/herb-wojewodztwa-lubuskiego.png",
@@ -272,17 +1405,302 @@
         "index": 4,
         "lang": "pl",
         "colors": {
-            "primary": {
-                "color": "#b62e15",
-                "name": "red",
-                "distance": 88.80315309717331
-            },
-            "palette": [
+            "colorsPalette": [
                 {
-                    "color": "#b62e15",
+                    "didMatch": false,
+                    "color": "#ffe700",
                     "name": "red",
-                    "distance": 88.80315309717331
+                    "distanceToTreshold": -151,
+                    "thresholdDistance": 80,
+                    "distance": 231,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#ffe700",
+                    "name": "blue",
+                    "distanceToTreshold": -211.08301311590884,
+                    "thresholdDistance": 60,
+                    "distance": 271.08301311590884,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#ffe700",
+                    "name": "green",
+                    "distanceToTreshold": -166.12692166189794,
+                    "thresholdDistance": 90,
+                    "distance": 256.12692166189794,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#ffe700",
+                    "name": "gold",
+                    "distanceToTreshold": 26,
+                    "thresholdDistance": 50,
+                    "distance": 24,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#bd2910",
+                    "name": "red",
+                    "distanceToTreshold": 0.671568778904998,
+                    "thresholdDistance": 80,
+                    "distance": 79.328431221095,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#bd2910",
+                    "name": "blue",
+                    "distanceToTreshold": -129.8789087813599,
+                    "thresholdDistance": 60,
+                    "distance": 189.8789087813599,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#bd2910",
+                    "name": "green",
+                    "distanceToTreshold": -112.18061232472317,
+                    "thresholdDistance": 90,
+                    "distance": 202.18061232472317,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#bd2910",
+                    "name": "gold",
+                    "distanceToTreshold": -68.59626744194406,
+                    "thresholdDistance": 60,
+                    "distance": 128.59626744194406,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#737373",
+                    "name": "grey",
+                    "matcherColor": "#888",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#ffffff",
+                    "name": "white",
+                    "matcherColor": "#fff",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
+                },
+                {
+                    "didMatch": true,
+                    "color": "#000000",
+                    "name": "black",
+                    "matcherColor": "#000",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
                 }
+            ],
+            "byNames": {
+                "gold": [
+                    {
+                        "didMatch": true,
+                        "color": "#ffe700",
+                        "name": "gold",
+                        "distanceToTreshold": 26,
+                        "thresholdDistance": 50,
+                        "distance": 24,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "red": [
+                    {
+                        "didMatch": true,
+                        "color": "#bd2910",
+                        "name": "red",
+                        "distanceToTreshold": 0.671568778904998,
+                        "thresholdDistance": 80,
+                        "distance": 79.328431221095,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "grey": [
+                    {
+                        "didMatch": true,
+                        "color": "#737373",
+                        "name": "grey",
+                        "matcherColor": "#888",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "didMatch": true,
+                        "color": "#ffffff",
+                        "name": "white",
+                        "matcherColor": "#fff",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ],
+                "black": [
+                    {
+                        "didMatch": true,
+                        "color": "#000000",
+                        "name": "black",
+                        "matcherColor": "#000",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": true,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "byNamesRejected": {
+                "red": [
+                    {
+                        "didMatch": false,
+                        "color": "#ffe700",
+                        "name": "red",
+                        "distanceToTreshold": -151,
+                        "thresholdDistance": 80,
+                        "distance": 231,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "didMatch": false,
+                        "color": "#bd2910",
+                        "name": "blue",
+                        "distanceToTreshold": -129.8789087813599,
+                        "thresholdDistance": 60,
+                        "distance": 189.8789087813599,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "green": [
+                    {
+                        "didMatch": false,
+                        "color": "#bd2910",
+                        "name": "green",
+                        "distanceToTreshold": -112.18061232472317,
+                        "thresholdDistance": 90,
+                        "distance": 202.18061232472317,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "gold": [
+                    {
+                        "didMatch": false,
+                        "color": "#bd2910",
+                        "name": "gold",
+                        "distanceToTreshold": -68.59626744194406,
+                        "thresholdDistance": 60,
+                        "distance": 128.59626744194406,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "hexPalette": [
+                "#ffe700",
+                "#bd2910",
+                "#737373",
+                "#ffffff",
+                "#000000"
             ]
         },
         "imageUrl": "images/heraldry/pl/wojewodztwa/herb-wojewodztwa-lodzkiego.png",
@@ -339,17 +1757,302 @@
         "index": 5,
         "lang": "pl",
         "colors": {
-            "primary": {
-                "color": "#dabd50",
-                "name": "red",
-                "distance": 208.54256160314134
-            },
-            "palette": [
+            "colorsPalette": [
                 {
-                    "color": "#ac0925",
+                    "didMatch": false,
+                    "color": "#ecbf07",
                     "name": "red",
-                    "distance": 91.31812525451889
+                    "distanceToTreshold": -112.07029963010939,
+                    "thresholdDistance": 80,
+                    "distance": 192.0702996301094,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#ecbf07",
+                    "name": "blue",
+                    "distanceToTreshold": -184.59354038894813,
+                    "thresholdDistance": 60,
+                    "distance": 244.59354038894813,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#ecbf07",
+                    "name": "green",
+                    "distanceToTreshold": -154.62420158275427,
+                    "thresholdDistance": 90,
+                    "distance": 244.62420158275427,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#ecbf07",
+                    "name": "gold",
+                    "distanceToTreshold": 15.044466414021954,
+                    "thresholdDistance": 60,
+                    "distance": 44.955533585978046,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#e2042c",
+                    "name": "red",
+                    "distanceToTreshold": 27.151158953104755,
+                    "thresholdDistance": 80,
+                    "distance": 52.848841046895245,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#e2042c",
+                    "name": "blue",
+                    "distanceToTreshold": -151.72859986312668,
+                    "thresholdDistance": 60,
+                    "distance": 211.72859986312668,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#e2042c",
+                    "name": "green",
+                    "distanceToTreshold": -163.8917091990205,
+                    "thresholdDistance": 90,
+                    "distance": 253.8917091990205,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#e2042c",
+                    "name": "gold",
+                    "distanceToTreshold": -94.13305939998725,
+                    "thresholdDistance": 60,
+                    "distance": 154.13305939998725,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#777778",
+                    "name": "grey",
+                    "matcherColor": "#888",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#0a0b0c",
+                    "name": "black",
+                    "matcherColor": "#000",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#ffffff",
+                    "name": "white",
+                    "matcherColor": "#fff",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
                 }
+            ],
+            "byNames": {
+                "gold": [
+                    {
+                        "didMatch": true,
+                        "color": "#ecbf07",
+                        "name": "gold",
+                        "distanceToTreshold": 15.044466414021954,
+                        "thresholdDistance": 60,
+                        "distance": 44.955533585978046,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "red": [
+                    {
+                        "didMatch": true,
+                        "color": "#e2042c",
+                        "name": "red",
+                        "distanceToTreshold": 27.151158953104755,
+                        "thresholdDistance": 80,
+                        "distance": 52.848841046895245,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "grey": [
+                    {
+                        "didMatch": true,
+                        "color": "#777778",
+                        "name": "grey",
+                        "matcherColor": "#888",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "black": [
+                    {
+                        "didMatch": true,
+                        "color": "#0a0b0c",
+                        "name": "black",
+                        "matcherColor": "#000",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": true,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "didMatch": true,
+                        "color": "#ffffff",
+                        "name": "white",
+                        "matcherColor": "#fff",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ]
+            },
+            "byNamesRejected": {
+                "red": [
+                    {
+                        "didMatch": false,
+                        "color": "#ecbf07",
+                        "name": "red",
+                        "distanceToTreshold": -112.07029963010939,
+                        "thresholdDistance": 80,
+                        "distance": 192.0702996301094,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "didMatch": false,
+                        "color": "#e2042c",
+                        "name": "blue",
+                        "distanceToTreshold": -151.72859986312668,
+                        "thresholdDistance": 60,
+                        "distance": 211.72859986312668,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "green": [
+                    {
+                        "didMatch": false,
+                        "color": "#e2042c",
+                        "name": "green",
+                        "distanceToTreshold": -163.8917091990205,
+                        "thresholdDistance": 90,
+                        "distance": 253.8917091990205,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "gold": [
+                    {
+                        "didMatch": false,
+                        "color": "#e2042c",
+                        "name": "gold",
+                        "distanceToTreshold": -94.13305939998725,
+                        "thresholdDistance": 60,
+                        "distance": 154.13305939998725,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "hexPalette": [
+                "#ecbf07",
+                "#e2042c",
+                "#777778",
+                "#0a0b0c",
+                "#ffffff"
             ]
         },
         "imageUrl": "images/heraldry/pl/wojewodztwa/herb-wojewodztwa-malopolskiego.png",
@@ -401,17 +2104,219 @@
         "index": 6,
         "lang": "pl",
         "colors": {
-            "primary": {
-                "color": "#150e0e",
-                "name": "red",
-                "distance": 234.83611306611255
-            },
-            "palette": [
+            "colorsPalette": [
                 {
-                    "color": "#df0e2c",
+                    "didMatch": true,
+                    "color": "#e60d2e",
                     "name": "red",
-                    "distance": 56.178287620752556
+                    "distanceToTreshold": 26.05558416295529,
+                    "thresholdDistance": 80,
+                    "distance": 53.94441583704471,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#e60d2e",
+                    "name": "blue",
+                    "distanceToTreshold": -152.4899997646948,
+                    "thresholdDistance": 60,
+                    "distance": 212.4899997646948,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#e60d2e",
+                    "name": "green",
+                    "distanceToTreshold": -164.20464197177833,
+                    "thresholdDistance": 90,
+                    "distance": 254.20464197177833,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#e60d2e",
+                    "name": "gold",
+                    "distanceToTreshold": -86.65606022254929,
+                    "thresholdDistance": 60,
+                    "distance": 146.65606022254929,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#5f5f5f",
+                    "name": "grey",
+                    "matcherColor": "#888",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#000000",
+                    "name": "black",
+                    "matcherColor": "#000",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#ffffff",
+                    "name": "white",
+                    "matcherColor": "#fff",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
                 }
+            ],
+            "byNames": {
+                "red": [
+                    {
+                        "didMatch": true,
+                        "color": "#e60d2e",
+                        "name": "red",
+                        "distanceToTreshold": 26.05558416295529,
+                        "thresholdDistance": 80,
+                        "distance": 53.94441583704471,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "grey": [
+                    {
+                        "didMatch": true,
+                        "color": "#5f5f5f",
+                        "name": "grey",
+                        "matcherColor": "#888",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "black": [
+                    {
+                        "didMatch": true,
+                        "color": "#000000",
+                        "name": "black",
+                        "matcherColor": "#000",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": true,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "didMatch": true,
+                        "color": "#ffffff",
+                        "name": "white",
+                        "matcherColor": "#fff",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ]
+            },
+            "byNamesRejected": {
+                "blue": [
+                    {
+                        "didMatch": false,
+                        "color": "#e60d2e",
+                        "name": "blue",
+                        "distanceToTreshold": -152.4899997646948,
+                        "thresholdDistance": 60,
+                        "distance": 212.4899997646948,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "green": [
+                    {
+                        "didMatch": false,
+                        "color": "#e60d2e",
+                        "name": "green",
+                        "distanceToTreshold": -164.20464197177833,
+                        "thresholdDistance": 90,
+                        "distance": 254.20464197177833,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "gold": [
+                    {
+                        "didMatch": false,
+                        "color": "#e60d2e",
+                        "name": "gold",
+                        "distanceToTreshold": -86.65606022254929,
+                        "thresholdDistance": 60,
+                        "distance": 146.65606022254929,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "hexPalette": [
+                "#e60d2e",
+                "#5f5f5f",
+                "#000000",
+                "#ffffff"
             ]
         },
         "imageUrl": "images/heraldry/pl/wojewodztwa/herb-wojewodztwa-mazowieckiego.png",
@@ -463,17 +2368,240 @@
         "index": 7,
         "lang": "pl",
         "colors": {
-            "primary": {
-                "color": "#0c6cb3",
-                "name": "blue",
-                "distance": 132.6046756340062
-            },
-            "palette": [
+            "colorsPalette": [
                 {
-                    "color": "#0c6cb3",
+                    "didMatch": false,
+                    "color": "#ffc900",
+                    "name": "red",
+                    "distanceToTreshold": -121,
+                    "thresholdDistance": 80,
+                    "distance": 201,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#ffc900",
                     "name": "blue",
-                    "distance": 132.6046756340062
+                    "distanceToTreshold": -203.67783372896554,
+                    "thresholdDistance": 60,
+                    "distance": 263.67783372896554,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#ffc900",
+                    "name": "green",
+                    "distanceToTreshold": -170.6549443229497,
+                    "thresholdDistance": 90,
+                    "distance": 260.6549443229497,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#ffc900",
+                    "name": "gold",
+                    "distanceToTreshold": 3.1229395977605066,
+                    "thresholdDistance": 60,
+                    "distance": 56.87706040223949,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#0f6eb2",
+                    "name": "red",
+                    "distanceToTreshold": -238.40854259896986,
+                    "thresholdDistance": 80,
+                    "distance": 318.40854259896986,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#0f6eb2",
+                    "name": "blue",
+                    "distanceToTreshold": 35.16051530325156,
+                    "thresholdDistance": 60,
+                    "distance": 24.839484696748443,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#0f6eb2",
+                    "name": "green",
+                    "distanceToTreshold": -46.96261028976434,
+                    "thresholdDistance": 60,
+                    "distance": 106.96261028976434,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#0f6eb2",
+                    "name": "gold",
+                    "distanceToTreshold": -129.8262363320729,
+                    "thresholdDistance": 60,
+                    "distance": 189.8262363320729,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#0a0b0c",
+                    "name": "black",
+                    "matcherColor": "#000",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
                 }
+            ],
+            "byNames": {
+                "gold": [
+                    {
+                        "didMatch": true,
+                        "color": "#ffc900",
+                        "name": "gold",
+                        "distanceToTreshold": 3.1229395977605066,
+                        "thresholdDistance": 60,
+                        "distance": 56.87706040223949,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "didMatch": true,
+                        "color": "#0f6eb2",
+                        "name": "blue",
+                        "distanceToTreshold": 35.16051530325156,
+                        "thresholdDistance": 60,
+                        "distance": 24.839484696748443,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "black": [
+                    {
+                        "didMatch": true,
+                        "color": "#0a0b0c",
+                        "name": "black",
+                        "matcherColor": "#000",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": true,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "byNamesRejected": {
+                "red": [
+                    {
+                        "didMatch": false,
+                        "color": "#0f6eb2",
+                        "name": "red",
+                        "distanceToTreshold": -238.40854259896986,
+                        "thresholdDistance": 80,
+                        "distance": 318.40854259896986,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "didMatch": false,
+                        "color": "#ffc900",
+                        "name": "blue",
+                        "distanceToTreshold": -203.67783372896554,
+                        "thresholdDistance": 60,
+                        "distance": 263.67783372896554,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "green": [
+                    {
+                        "didMatch": false,
+                        "color": "#0f6eb2",
+                        "name": "green",
+                        "distanceToTreshold": -46.96261028976434,
+                        "thresholdDistance": 60,
+                        "distance": 106.96261028976434,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "gold": [
+                    {
+                        "didMatch": false,
+                        "color": "#0f6eb2",
+                        "name": "gold",
+                        "distanceToTreshold": -129.8262363320729,
+                        "thresholdDistance": 60,
+                        "distance": 189.8262363320729,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "hexPalette": [
+                "#ffc900",
+                "#0f6eb2",
+                "#0a0b0c"
             ]
         },
         "imageUrl": "images/heraldry/pl/wojewodztwa/herb-wojewodztwa-opolskiego.png",
@@ -525,22 +2653,302 @@
         "index": 8,
         "lang": "pl",
         "colors": {
-            "primary": {
-                "color": "#0592d9",
-                "name": "blue",
-                "distance": 150.94701056993478
-            },
-            "palette": [
+            "colorsPalette": [
                 {
-                    "color": "#0890d3",
-                    "name": "blue",
-                    "distance": 150.78461459976612
+                    "didMatch": false,
+                    "color": "#0094de",
+                    "name": "red",
+                    "distanceToTreshold": -289.0704539786408,
+                    "thresholdDistance": 80,
+                    "distance": 369.0704539786408,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
                 },
                 {
-                    "color": "#f1350e",
+                    "didMatch": true,
+                    "color": "#0094de",
+                    "name": "blue",
+                    "distanceToTreshold": 26.623361463442727,
+                    "thresholdDistance": 60,
+                    "distance": 33.37663853655727,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#0094de",
+                    "name": "green",
+                    "distanceToTreshold": -89.09057649630307,
+                    "thresholdDistance": 60,
+                    "distance": 149.09057649630307,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#0094de",
+                    "name": "gold",
+                    "distanceToTreshold": -162.56010424152842,
+                    "thresholdDistance": 60,
+                    "distance": 222.56010424152842,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#f20300",
                     "name": "red",
-                    "distance": 56.57738063926254
+                    "distanceToTreshold": 66.65833593587367,
+                    "thresholdDistance": 80,
+                    "distance": 13.341664064126334,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#f20300",
+                    "name": "blue",
+                    "distanceToTreshold": -188.39685988353395,
+                    "thresholdDistance": 60,
+                    "distance": 248.39685988353395,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#f20300",
+                    "name": "green",
+                    "distanceToTreshold": -175.0056603169072,
+                    "thresholdDistance": 90,
+                    "distance": 265.0056603169072,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#f20300",
+                    "name": "gold",
+                    "distanceToTreshold": -118.98603297464302,
+                    "thresholdDistance": 60,
+                    "distance": 178.98603297464302,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#727272",
+                    "name": "grey",
+                    "matcherColor": "#888",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#000000",
+                    "name": "black",
+                    "matcherColor": "#000",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#ffffff",
+                    "name": "white",
+                    "matcherColor": "#fff",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
                 }
+            ],
+            "byNames": {
+                "blue": [
+                    {
+                        "didMatch": true,
+                        "color": "#0094de",
+                        "name": "blue",
+                        "distanceToTreshold": 26.623361463442727,
+                        "thresholdDistance": 60,
+                        "distance": 33.37663853655727,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "red": [
+                    {
+                        "didMatch": true,
+                        "color": "#f20300",
+                        "name": "red",
+                        "distanceToTreshold": 66.65833593587367,
+                        "thresholdDistance": 80,
+                        "distance": 13.341664064126334,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "grey": [
+                    {
+                        "didMatch": true,
+                        "color": "#727272",
+                        "name": "grey",
+                        "matcherColor": "#888",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "black": [
+                    {
+                        "didMatch": true,
+                        "color": "#000000",
+                        "name": "black",
+                        "matcherColor": "#000",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": true,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "didMatch": true,
+                        "color": "#ffffff",
+                        "name": "white",
+                        "matcherColor": "#fff",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ]
+            },
+            "byNamesRejected": {
+                "red": [
+                    {
+                        "didMatch": false,
+                        "color": "#0094de",
+                        "name": "red",
+                        "distanceToTreshold": -289.0704539786408,
+                        "thresholdDistance": 80,
+                        "distance": 369.0704539786408,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "green": [
+                    {
+                        "didMatch": false,
+                        "color": "#f20300",
+                        "name": "green",
+                        "distanceToTreshold": -175.0056603169072,
+                        "thresholdDistance": 90,
+                        "distance": 265.0056603169072,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "gold": [
+                    {
+                        "didMatch": false,
+                        "color": "#f20300",
+                        "name": "gold",
+                        "distanceToTreshold": -118.98603297464302,
+                        "thresholdDistance": 60,
+                        "distance": 178.98603297464302,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "didMatch": false,
+                        "color": "#f20300",
+                        "name": "blue",
+                        "distanceToTreshold": -188.39685988353395,
+                        "thresholdDistance": 60,
+                        "distance": 248.39685988353395,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "hexPalette": [
+                "#0094de",
+                "#f20300",
+                "#727272",
+                "#000000",
+                "#ffffff"
             ]
         },
         "imageUrl": "images/heraldry/pl/wojewodztwa/herb-wojewodztwa-podkarpackiego.png",
@@ -593,22 +3001,370 @@
         "index": 9,
         "lang": "pl",
         "colors": {
-            "primary": {
-                "color": "#db2b1b",
-                "name": "red",
-                "distance": 62.24146527838174
-            },
-            "palette": [
+            "colorsPalette": [
                 {
-                    "color": "#db2b1b",
+                    "didMatch": false,
+                    "color": "#f6f300",
                     "name": "red",
-                    "distance": 62.24146527838174
+                    "distanceToTreshold": -163.16660954991332,
+                    "thresholdDistance": 80,
+                    "distance": 243.16660954991332,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
                 },
                 {
-                    "color": "#193244",
+                    "didMatch": false,
+                    "color": "#f6f300",
                     "name": "blue",
-                    "distance": 195.17684288869927
+                    "distanceToTreshold": -209.43459317615475,
+                    "thresholdDistance": 60,
+                    "distance": 269.43459317615475,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#f6f300",
+                    "name": "green",
+                    "distanceToTreshold": -156.2925090212855,
+                    "thresholdDistance": 90,
+                    "distance": 246.2925090212855,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#f6f300",
+                    "name": "gold",
+                    "distanceToTreshold": 35,
+                    "thresholdDistance": 50,
+                    "distance": 15,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#008ee0",
+                    "name": "red",
+                    "distanceToTreshold": -287.9198282234868,
+                    "thresholdDistance": 80,
+                    "distance": 367.9198282234868,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#008ee0",
+                    "name": "blue",
+                    "distanceToTreshold": 27.10623159320295,
+                    "thresholdDistance": 60,
+                    "distance": 32.89376840679705,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#008ee0",
+                    "name": "green",
+                    "distanceToTreshold": -90.47923444781344,
+                    "thresholdDistance": 60,
+                    "distance": 150.47923444781344,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#008ee0",
+                    "name": "gold",
+                    "distanceToTreshold": -163.6626924634504,
+                    "thresholdDistance": 60,
+                    "distance": 223.6626924634504,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#dc2b19",
+                    "name": "red",
+                    "distanceToTreshold": 19.180595201860122,
+                    "thresholdDistance": 80,
+                    "distance": 60.81940479813988,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#dc2b19",
+                    "name": "blue",
+                    "distanceToTreshold": -150.9881513260875,
+                    "thresholdDistance": 60,
+                    "distance": 210.9881513260875,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#dc2b19",
+                    "name": "green",
+                    "distanceToTreshold": -141.6225377634914,
+                    "thresholdDistance": 90,
+                    "distance": 231.6225377634914,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#dc2b19",
+                    "name": "gold",
+                    "distanceToTreshold": -67.29886095327012,
+                    "thresholdDistance": 60,
+                    "distance": 127.29886095327012,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#000000",
+                    "name": "black",
+                    "matcherColor": "#000",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#818181",
+                    "name": "grey",
+                    "matcherColor": "#888",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#ffffff",
+                    "name": "white",
+                    "matcherColor": "#fff",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
                 }
+            ],
+            "byNames": {
+                "gold": [
+                    {
+                        "didMatch": true,
+                        "color": "#f6f300",
+                        "name": "gold",
+                        "distanceToTreshold": 35,
+                        "thresholdDistance": 50,
+                        "distance": 15,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "didMatch": true,
+                        "color": "#008ee0",
+                        "name": "blue",
+                        "distanceToTreshold": 27.10623159320295,
+                        "thresholdDistance": 60,
+                        "distance": 32.89376840679705,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "red": [
+                    {
+                        "didMatch": true,
+                        "color": "#dc2b19",
+                        "name": "red",
+                        "distanceToTreshold": 19.180595201860122,
+                        "thresholdDistance": 80,
+                        "distance": 60.81940479813988,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "black": [
+                    {
+                        "didMatch": true,
+                        "color": "#000000",
+                        "name": "black",
+                        "matcherColor": "#000",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": true,
+                        "isWhite": false
+                    }
+                ],
+                "grey": [
+                    {
+                        "didMatch": true,
+                        "color": "#818181",
+                        "name": "grey",
+                        "matcherColor": "#888",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "didMatch": true,
+                        "color": "#ffffff",
+                        "name": "white",
+                        "matcherColor": "#fff",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ]
+            },
+            "byNamesRejected": {
+                "red": [
+                    {
+                        "didMatch": false,
+                        "color": "#008ee0",
+                        "name": "red",
+                        "distanceToTreshold": -287.9198282234868,
+                        "thresholdDistance": 80,
+                        "distance": 367.9198282234868,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "didMatch": false,
+                        "color": "#dc2b19",
+                        "name": "blue",
+                        "distanceToTreshold": -150.9881513260875,
+                        "thresholdDistance": 60,
+                        "distance": 210.9881513260875,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "green": [
+                    {
+                        "didMatch": false,
+                        "color": "#dc2b19",
+                        "name": "green",
+                        "distanceToTreshold": -141.6225377634914,
+                        "thresholdDistance": 90,
+                        "distance": 231.6225377634914,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "gold": [
+                    {
+                        "didMatch": false,
+                        "color": "#dc2b19",
+                        "name": "gold",
+                        "distanceToTreshold": -67.29886095327012,
+                        "thresholdDistance": 60,
+                        "distance": 127.29886095327012,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "hexPalette": [
+                "#f6f300",
+                "#008ee0",
+                "#dc2b19",
+                "#000000",
+                "#818181",
+                "#ffffff"
             ]
         },
         "imageUrl": "images/heraldry/pl/wojewodztwa/herb-wojewodztwa-podlaskiego.png",
@@ -663,12 +3419,226 @@
         "index": 10,
         "lang": "pl",
         "colors": {
-            "primary": {
-                "color": "#070704",
-                "name": "red",
-                "distance": 248.13101378102658
+            "colorsPalette": [
+                {
+                    "didMatch": false,
+                    "color": "#85700e",
+                    "name": "red",
+                    "distanceToTreshold": -86.20469307453385,
+                    "thresholdDistance": 80,
+                    "distance": 166.20469307453385,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#85700e",
+                    "name": "blue",
+                    "distanceToTreshold": -98.07276805319756,
+                    "thresholdDistance": 60,
+                    "distance": 158.07276805319756,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#85700e",
+                    "name": "green",
+                    "distanceToTreshold": -43.73855091184441,
+                    "thresholdDistance": 90,
+                    "distance": 133.7385509118444,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#85700e",
+                    "name": "gold",
+                    "distanceToTreshold": -38.80283396745257,
+                    "thresholdDistance": 60,
+                    "distance": 98.80283396745257,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#fed517",
+                    "name": "red",
+                    "distanceToTreshold": -134.24051904343398,
+                    "thresholdDistance": 80,
+                    "distance": 214.24051904343398,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#fed517",
+                    "name": "blue",
+                    "distanceToTreshold": -189.22680433693324,
+                    "thresholdDistance": 60,
+                    "distance": 249.22680433693324,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#fed517",
+                    "name": "green",
+                    "distanceToTreshold": -168.4743701027241,
+                    "thresholdDistance": 90,
+                    "distance": 258.4743701027241,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#fed517",
+                    "name": "gold",
+                    "distanceToTreshold": 20.187941525211237,
+                    "thresholdDistance": 60,
+                    "distance": 39.81205847478876,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#040404",
+                    "name": "black",
+                    "matcherColor": "#000",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                }
+            ],
+            "byNames": {
+                "gold": [
+                    {
+                        "didMatch": true,
+                        "color": "#fed517",
+                        "name": "gold",
+                        "distanceToTreshold": 20.187941525211237,
+                        "thresholdDistance": 60,
+                        "distance": 39.81205847478876,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "black": [
+                    {
+                        "didMatch": true,
+                        "color": "#040404",
+                        "name": "black",
+                        "matcherColor": "#000",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": true,
+                        "isWhite": false
+                    }
+                ]
             },
-            "palette": []
+            "byNamesRejected": {
+                "red": [
+                    {
+                        "didMatch": false,
+                        "color": "#fed517",
+                        "name": "red",
+                        "distanceToTreshold": -134.24051904343398,
+                        "thresholdDistance": 80,
+                        "distance": 214.24051904343398,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "didMatch": false,
+                        "color": "#fed517",
+                        "name": "blue",
+                        "distanceToTreshold": -189.22680433693324,
+                        "thresholdDistance": 60,
+                        "distance": 249.22680433693324,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "green": [
+                    {
+                        "didMatch": false,
+                        "color": "#fed517",
+                        "name": "green",
+                        "distanceToTreshold": -168.4743701027241,
+                        "thresholdDistance": 90,
+                        "distance": 258.4743701027241,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "gold": [
+                    {
+                        "didMatch": false,
+                        "color": "#85700e",
+                        "name": "gold",
+                        "distanceToTreshold": -38.80283396745257,
+                        "thresholdDistance": 60,
+                        "distance": 98.80283396745257,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "hexPalette": [
+                "#85700e",
+                "#fed517",
+                "#040404"
+            ]
         },
         "imageUrl": "images/heraldry/pl/wojewodztwa/herb-wojewodztwa-pomorskiego.png",
         "imageSrcSet": "images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-pomorskiego-80w.webp 80w,images/heraldry/pl/web-wojewodztwa/herb-wojewodztwa-pomorskiego-300w.webp 300w",
@@ -721,17 +3691,271 @@
         "index": 11,
         "lang": "pl",
         "colors": {
-            "primary": {
-                "color": "#3343b1",
-                "name": "blue",
-                "distance": 114.77804668141029
-            },
-            "palette": [
+            "colorsPalette": [
                 {
-                    "color": "#3343b1",
+                    "didMatch": false,
+                    "color": "#fcd116",
+                    "name": "red",
+                    "distanceToTreshold": -130.1761166260334,
+                    "thresholdDistance": 80,
+                    "distance": 210.1761166260334,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#fcd116",
                     "name": "blue",
-                    "distance": 114.77804668141029
+                    "distanceToTreshold": -187.5863485735835,
+                    "thresholdDistance": 60,
+                    "distance": 247.5863485735835,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#fcd116",
+                    "name": "green",
+                    "distanceToTreshold": -167.10698162438143,
+                    "thresholdDistance": 90,
+                    "distance": 257.10698162438143,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#fcd116",
+                    "name": "gold",
+                    "distanceToTreshold": 21.973693316336913,
+                    "thresholdDistance": 60,
+                    "distance": 38.02630668366309,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#3044b5",
+                    "name": "red",
+                    "distanceToTreshold": -203.25606789617058,
+                    "thresholdDistance": 80,
+                    "distance": 283.2560678961706,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#3044b5",
+                    "name": "blue",
+                    "distanceToTreshold": 20.12519592524623,
+                    "thresholdDistance": 60,
+                    "distance": 39.87480407475377,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#3044b5",
+                    "name": "green",
+                    "distanceToTreshold": -72.65368445693471,
+                    "thresholdDistance": 60,
+                    "distance": 132.6536844569347,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#3044b5",
+                    "name": "gold",
+                    "distanceToTreshold": -116.49362594722791,
+                    "thresholdDistance": 60,
+                    "distance": 176.4936259472279,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#f4f4f5",
+                    "name": "white",
+                    "matcherColor": "#fff",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
+                },
+                {
+                    "didMatch": true,
+                    "color": "#0a0b0c",
+                    "name": "black",
+                    "matcherColor": "#000",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
                 }
+            ],
+            "byNames": {
+                "gold": [
+                    {
+                        "didMatch": true,
+                        "color": "#fcd116",
+                        "name": "gold",
+                        "distanceToTreshold": 21.973693316336913,
+                        "thresholdDistance": 60,
+                        "distance": 38.02630668366309,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "didMatch": true,
+                        "color": "#3044b5",
+                        "name": "blue",
+                        "distanceToTreshold": 20.12519592524623,
+                        "thresholdDistance": 60,
+                        "distance": 39.87480407475377,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "didMatch": true,
+                        "color": "#f4f4f5",
+                        "name": "white",
+                        "matcherColor": "#fff",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ],
+                "black": [
+                    {
+                        "didMatch": true,
+                        "color": "#0a0b0c",
+                        "name": "black",
+                        "matcherColor": "#000",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": true,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "byNamesRejected": {
+                "red": [
+                    {
+                        "didMatch": false,
+                        "color": "#3044b5",
+                        "name": "red",
+                        "distanceToTreshold": -203.25606789617058,
+                        "thresholdDistance": 80,
+                        "distance": 283.2560678961706,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "didMatch": false,
+                        "color": "#fcd116",
+                        "name": "blue",
+                        "distanceToTreshold": -187.5863485735835,
+                        "thresholdDistance": 60,
+                        "distance": 247.5863485735835,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "green": [
+                    {
+                        "didMatch": false,
+                        "color": "#3044b5",
+                        "name": "green",
+                        "distanceToTreshold": -72.65368445693471,
+                        "thresholdDistance": 60,
+                        "distance": 132.6536844569347,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "gold": [
+                    {
+                        "didMatch": false,
+                        "color": "#3044b5",
+                        "name": "gold",
+                        "distanceToTreshold": -116.49362594722791,
+                        "thresholdDistance": 60,
+                        "distance": 176.4936259472279,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "hexPalette": [
+                "#fcd116",
+                "#3044b5",
+                "#f4f4f5",
+                "#0a0b0c"
             ]
         },
         "imageUrl": "images/heraldry/pl/wojewodztwa/herb-wojewodztwa-slaskiego.png",
@@ -783,22 +4007,302 @@
         "index": 12,
         "lang": "pl",
         "colors": {
-            "primary": {
-                "color": "#e25914",
-                "name": "red",
-                "distance": 95.71833680126291
-            },
-            "palette": [
+            "colorsPalette": [
                 {
-                    "color": "#e25914",
+                    "didMatch": false,
+                    "color": "#0093dd",
                     "name": "red",
-                    "distance": 95.71833680126291
+                    "distanceToTreshold": -288.0692869555948,
+                    "thresholdDistance": 80,
+                    "distance": 368.0692869555948,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
                 },
                 {
-                    "color": "#0591d7",
+                    "didMatch": true,
+                    "color": "#0093dd",
                     "name": "blue",
-                    "distance": 150.4991694329241
+                    "distanceToTreshold": 25.474646996735864,
+                    "thresholdDistance": 60,
+                    "distance": 34.52535300326414,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#0093dd",
+                    "name": "green",
+                    "distanceToTreshold": -87.97972834141845,
+                    "thresholdDistance": 60,
+                    "distance": 147.97972834141845,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#0093dd",
+                    "name": "gold",
+                    "distanceToTreshold": -161.96621364523025,
+                    "thresholdDistance": 60,
+                    "distance": 221.96621364523025,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#db261b",
+                    "name": "red",
+                    "distanceToTreshold": 21.10178270949111,
+                    "thresholdDistance": 80,
+                    "distance": 58.89821729050889,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#db261b",
+                    "name": "blue",
+                    "distanceToTreshold": -149.59484726490774,
+                    "thresholdDistance": 60,
+                    "distance": 209.59484726490774,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#db261b",
+                    "name": "green",
+                    "distanceToTreshold": -142.41987866789708,
+                    "thresholdDistance": 90,
+                    "distance": 232.41987866789708,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#db261b",
+                    "name": "gold",
+                    "distanceToTreshold": -69.93459893346343,
+                    "thresholdDistance": 60,
+                    "distance": 129.93459893346343,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#858586",
+                    "name": "grey",
+                    "matcherColor": "#888",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#0a0b0c",
+                    "name": "black",
+                    "matcherColor": "#000",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#ffffff",
+                    "name": "white",
+                    "matcherColor": "#fff",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
                 }
+            ],
+            "byNames": {
+                "blue": [
+                    {
+                        "didMatch": true,
+                        "color": "#0093dd",
+                        "name": "blue",
+                        "distanceToTreshold": 25.474646996735864,
+                        "thresholdDistance": 60,
+                        "distance": 34.52535300326414,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "red": [
+                    {
+                        "didMatch": true,
+                        "color": "#db261b",
+                        "name": "red",
+                        "distanceToTreshold": 21.10178270949111,
+                        "thresholdDistance": 80,
+                        "distance": 58.89821729050889,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "grey": [
+                    {
+                        "didMatch": true,
+                        "color": "#858586",
+                        "name": "grey",
+                        "matcherColor": "#888",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "black": [
+                    {
+                        "didMatch": true,
+                        "color": "#0a0b0c",
+                        "name": "black",
+                        "matcherColor": "#000",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": true,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "didMatch": true,
+                        "color": "#ffffff",
+                        "name": "white",
+                        "matcherColor": "#fff",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ]
+            },
+            "byNamesRejected": {
+                "red": [
+                    {
+                        "didMatch": false,
+                        "color": "#0093dd",
+                        "name": "red",
+                        "distanceToTreshold": -288.0692869555948,
+                        "thresholdDistance": 80,
+                        "distance": 368.0692869555948,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "green": [
+                    {
+                        "didMatch": false,
+                        "color": "#db261b",
+                        "name": "green",
+                        "distanceToTreshold": -142.41987866789708,
+                        "thresholdDistance": 90,
+                        "distance": 232.41987866789708,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "gold": [
+                    {
+                        "didMatch": false,
+                        "color": "#db261b",
+                        "name": "gold",
+                        "distanceToTreshold": -69.93459893346343,
+                        "thresholdDistance": 60,
+                        "distance": 129.93459893346343,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "didMatch": false,
+                        "color": "#db261b",
+                        "name": "blue",
+                        "distanceToTreshold": -149.59484726490774,
+                        "thresholdDistance": 60,
+                        "distance": 209.59484726490774,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "hexPalette": [
+                "#0093dd",
+                "#db261b",
+                "#858586",
+                "#0a0b0c",
+                "#ffffff"
             ]
         },
         "imageUrl": "images/heraldry/pl/wojewodztwa/herb-wojewodztwa-swietokrzyskiego.png",
@@ -850,17 +4354,302 @@
         "index": 13,
         "lang": "pl",
         "colors": {
-            "primary": {
-                "color": "#d22423",
-                "name": "red",
-                "distance": 67.42403132415029
-            },
-            "palette": [
+            "colorsPalette": [
                 {
-                    "color": "#d22423",
+                    "didMatch": false,
+                    "color": "#ffcb05",
                     "name": "red",
-                    "distance": 67.42403132415029
+                    "distanceToTreshold": -123.0615670184784,
+                    "thresholdDistance": 80,
+                    "distance": 203.0615670184784,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#ffcb05",
+                    "name": "blue",
+                    "distanceToTreshold": -200.40161289823072,
+                    "thresholdDistance": 60,
+                    "distance": 260.4016128982307,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#ffcb05",
+                    "name": "green",
+                    "distanceToTreshold": -170.2959853705009,
+                    "thresholdDistance": 90,
+                    "distance": 260.2959853705009,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#ffcb05",
+                    "name": "gold",
+                    "distanceToTreshold": 7.407224830781175,
+                    "thresholdDistance": 60,
+                    "distance": 52.592775169218825,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#d12421",
+                    "name": "red",
+                    "distanceToTreshold": 12.910507529121972,
+                    "thresholdDistance": 80,
+                    "distance": 67.08949247087803,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#d12421",
+                    "name": "blue",
+                    "distanceToTreshold": -138.2271424401815,
+                    "thresholdDistance": 60,
+                    "distance": 198.2271424401815,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#d12421",
+                    "name": "green",
+                    "distanceToTreshold": -134.48830704515547,
+                    "thresholdDistance": 90,
+                    "distance": 224.48830704515547,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#d12421",
+                    "name": "gold",
+                    "distanceToTreshold": -66.09123680890754,
+                    "thresholdDistance": 60,
+                    "distance": 126.09123680890754,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#838383",
+                    "name": "grey",
+                    "matcherColor": "#888",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#000000",
+                    "name": "black",
+                    "matcherColor": "#000",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#ffffff",
+                    "name": "white",
+                    "matcherColor": "#fff",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
                 }
+            ],
+            "byNames": {
+                "gold": [
+                    {
+                        "didMatch": true,
+                        "color": "#ffcb05",
+                        "name": "gold",
+                        "distanceToTreshold": 7.407224830781175,
+                        "thresholdDistance": 60,
+                        "distance": 52.592775169218825,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "red": [
+                    {
+                        "didMatch": true,
+                        "color": "#d12421",
+                        "name": "red",
+                        "distanceToTreshold": 12.910507529121972,
+                        "thresholdDistance": 80,
+                        "distance": 67.08949247087803,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "grey": [
+                    {
+                        "didMatch": true,
+                        "color": "#838383",
+                        "name": "grey",
+                        "matcherColor": "#888",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "black": [
+                    {
+                        "didMatch": true,
+                        "color": "#000000",
+                        "name": "black",
+                        "matcherColor": "#000",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": true,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "didMatch": true,
+                        "color": "#ffffff",
+                        "name": "white",
+                        "matcherColor": "#fff",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ]
+            },
+            "byNamesRejected": {
+                "red": [
+                    {
+                        "didMatch": false,
+                        "color": "#ffcb05",
+                        "name": "red",
+                        "distanceToTreshold": -123.0615670184784,
+                        "thresholdDistance": 80,
+                        "distance": 203.0615670184784,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "didMatch": false,
+                        "color": "#d12421",
+                        "name": "blue",
+                        "distanceToTreshold": -138.2271424401815,
+                        "thresholdDistance": 60,
+                        "distance": 198.2271424401815,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "green": [
+                    {
+                        "didMatch": false,
+                        "color": "#d12421",
+                        "name": "green",
+                        "distanceToTreshold": -134.48830704515547,
+                        "thresholdDistance": 90,
+                        "distance": 224.48830704515547,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "gold": [
+                    {
+                        "didMatch": false,
+                        "color": "#d12421",
+                        "name": "gold",
+                        "distanceToTreshold": -66.09123680890754,
+                        "thresholdDistance": 60,
+                        "distance": 126.09123680890754,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "hexPalette": [
+                "#ffcb05",
+                "#d12421",
+                "#838383",
+                "#000000",
+                "#ffffff"
             ]
         },
         "imageUrl": "images/heraldry/pl/wojewodztwa/herb-wojewodztwa-warminskomazurskiego.png",
@@ -915,17 +4704,302 @@
         "index": 14,
         "lang": "pl",
         "colors": {
-            "primary": {
-                "color": "#e0051c",
-                "name": "red",
-                "distance": 42.07136793592526
-            },
-            "palette": [
+            "colorsPalette": [
                 {
-                    "color": "#e0051c",
+                    "didMatch": false,
+                    "color": "#ffff00",
                     "name": "red",
-                    "distance": 42.07136793592526
+                    "distanceToTreshold": -175,
+                    "thresholdDistance": 80,
+                    "distance": 255,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#ffff00",
+                    "name": "blue",
+                    "distanceToTreshold": -219.19527216627432,
+                    "thresholdDistance": 60,
+                    "distance": 279.1952721662743,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#ffff00",
+                    "name": "green",
+                    "distanceToTreshold": -165,
+                    "thresholdDistance": 90,
+                    "distance": 255,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#ffff00",
+                    "name": "gold",
+                    "distanceToTreshold": 50,
+                    "thresholdDistance": 50,
+                    "distance": 0,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#e3001b",
+                    "name": "red",
+                    "distanceToTreshold": 41.102699322446554,
+                    "thresholdDistance": 80,
+                    "distance": 38.897300677553446,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#e3001b",
+                    "name": "blue",
+                    "distanceToTreshold": -162.08782046748985,
+                    "thresholdDistance": 60,
+                    "distance": 222.08782046748985,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#e3001b",
+                    "name": "green",
+                    "distanceToTreshold": -164.12398548739944,
+                    "thresholdDistance": 90,
+                    "distance": 254.12398548739944,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#e3001b",
+                    "name": "gold",
+                    "distanceToTreshold": -104.20414123888594,
+                    "thresholdDistance": 60,
+                    "distance": 164.20414123888594,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#777777",
+                    "name": "grey",
+                    "matcherColor": "#888",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#ffffff",
+                    "name": "white",
+                    "matcherColor": "#fff",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
+                },
+                {
+                    "didMatch": true,
+                    "color": "#000000",
+                    "name": "black",
+                    "matcherColor": "#000",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
                 }
+            ],
+            "byNames": {
+                "gold": [
+                    {
+                        "didMatch": true,
+                        "color": "#ffff00",
+                        "name": "gold",
+                        "distanceToTreshold": 50,
+                        "thresholdDistance": 50,
+                        "distance": 0,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "red": [
+                    {
+                        "didMatch": true,
+                        "color": "#e3001b",
+                        "name": "red",
+                        "distanceToTreshold": 41.102699322446554,
+                        "thresholdDistance": 80,
+                        "distance": 38.897300677553446,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "grey": [
+                    {
+                        "didMatch": true,
+                        "color": "#777777",
+                        "name": "grey",
+                        "matcherColor": "#888",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "didMatch": true,
+                        "color": "#ffffff",
+                        "name": "white",
+                        "matcherColor": "#fff",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ],
+                "black": [
+                    {
+                        "didMatch": true,
+                        "color": "#000000",
+                        "name": "black",
+                        "matcherColor": "#000",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": true,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "byNamesRejected": {
+                "red": [
+                    {
+                        "didMatch": false,
+                        "color": "#ffff00",
+                        "name": "red",
+                        "distanceToTreshold": -175,
+                        "thresholdDistance": 80,
+                        "distance": 255,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "didMatch": false,
+                        "color": "#e3001b",
+                        "name": "blue",
+                        "distanceToTreshold": -162.08782046748985,
+                        "thresholdDistance": 60,
+                        "distance": 222.08782046748985,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "green": [
+                    {
+                        "didMatch": false,
+                        "color": "#e3001b",
+                        "name": "green",
+                        "distanceToTreshold": -164.12398548739944,
+                        "thresholdDistance": 90,
+                        "distance": 254.12398548739944,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "gold": [
+                    {
+                        "didMatch": false,
+                        "color": "#e3001b",
+                        "name": "gold",
+                        "distanceToTreshold": -104.20414123888594,
+                        "thresholdDistance": 60,
+                        "distance": 164.20414123888594,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "hexPalette": [
+                "#ffff00",
+                "#e3001b",
+                "#777777",
+                "#ffffff",
+                "#000000"
             ]
         },
         "imageUrl": "images/heraldry/pl/wojewodztwa/herb-wojewodztwa-wielkopolskiego.png",
@@ -977,17 +5051,219 @@
         "index": 15,
         "lang": "pl",
         "colors": {
-            "primary": {
-                "color": "#ca2c2b",
-                "name": "red",
-                "distance": 81.20344820264715
-            },
-            "palette": [
+            "colorsPalette": [
                 {
-                    "color": "#ca2c2b",
+                    "didMatch": true,
+                    "color": "#d62828",
                     "name": "red",
-                    "distance": 81.20344820264715
+                    "distanceToTreshold": 10.135846101165725,
+                    "thresholdDistance": 80,
+                    "distance": 69.86415389883427,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#d62828",
+                    "name": "blue",
+                    "distanceToTreshold": -138.84918908559823,
+                    "thresholdDistance": 60,
+                    "distance": 198.84918908559823,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#d62828",
+                    "name": "green",
+                    "distanceToTreshold": -138.9912662089976,
+                    "thresholdDistance": 90,
+                    "distance": 228.9912662089976,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#d62828",
+                    "name": "gold",
+                    "distanceToTreshold": -60.61923561356207,
+                    "thresholdDistance": 60,
+                    "distance": 120.61923561356207,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#626262",
+                    "name": "grey",
+                    "matcherColor": "#888",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#000000",
+                    "name": "black",
+                    "matcherColor": "#000",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#ffffff",
+                    "name": "white",
+                    "matcherColor": "#fff",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
                 }
+            ],
+            "byNames": {
+                "red": [
+                    {
+                        "didMatch": true,
+                        "color": "#d62828",
+                        "name": "red",
+                        "distanceToTreshold": 10.135846101165725,
+                        "thresholdDistance": 80,
+                        "distance": 69.86415389883427,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "grey": [
+                    {
+                        "didMatch": true,
+                        "color": "#626262",
+                        "name": "grey",
+                        "matcherColor": "#888",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "black": [
+                    {
+                        "didMatch": true,
+                        "color": "#000000",
+                        "name": "black",
+                        "matcherColor": "#000",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": true,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "didMatch": true,
+                        "color": "#ffffff",
+                        "name": "white",
+                        "matcherColor": "#fff",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ]
+            },
+            "byNamesRejected": {
+                "blue": [
+                    {
+                        "didMatch": false,
+                        "color": "#d62828",
+                        "name": "blue",
+                        "distanceToTreshold": -138.84918908559823,
+                        "thresholdDistance": 60,
+                        "distance": 198.84918908559823,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "green": [
+                    {
+                        "didMatch": false,
+                        "color": "#d62828",
+                        "name": "green",
+                        "distanceToTreshold": -138.9912662089976,
+                        "thresholdDistance": 90,
+                        "distance": 228.9912662089976,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "gold": [
+                    {
+                        "didMatch": false,
+                        "color": "#d62828",
+                        "name": "gold",
+                        "distanceToTreshold": -60.61923561356207,
+                        "thresholdDistance": 60,
+                        "distance": 120.61923561356207,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "hexPalette": [
+                "#d62828",
+                "#626262",
+                "#000000",
+                "#ffffff"
             ]
         },
         "imageUrl": "images/heraldry/pl/wojewodztwa/herb-wojewodztwa-zachodniopomorskiego.png",

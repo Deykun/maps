@@ -362,7 +362,8 @@ export const fetchData = async ({
   const unitType = unitNames[0]
   global.processed[unitType] = 0;
 
-  wiki.setLang(lang);
+  const landOfWikipedia = lang === 'ee' ? 'et' : lang;
+  wiki.setLang(landOfWikipedia);
 
   const total = administrativeDivisions.length;
 

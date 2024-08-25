@@ -86,15 +86,22 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
         </div>
         <div className="hidden">
           <p className="my-2">
-            {Object.entries(colors?.byNamesRejected || {}).map(([colorName, colors = []]) => 
-              <span
-                className="inline-flex mx-1 size-4 rounded-md bg-[#eee] group overflow-hidden"
-                title={`${colorName} ${colors.sort((a, b) => a.distance - b.distance)?.[0]?.distance}`} 
-                style={{ backgroundColor: colorsMarkersByNames[colorName] }}
-              >
-                {colors.map((item) => <span className="color size-full opacity-0 group-hover:opacity-100 duration-300" style={{ backgroundColor: item.color }} />)}
-              </span>
-            )}
+            <span className="text-[12px]">Rejected:</span>
+            {Object.entries(colors?.byNamesRejected || {}).map(([colorName, colors = []]) => {
+              const bestMatch = colors.sort((a, b) => a.distanceToTreshold - b.distanceToTreshold)?.[0];
+
+              console.log(bestMatch);
+
+              return (
+                <span
+                  className="inline-flex mx-1 size-4 rounded-md bg-[#eee] group overflow-hidden"
+                  title={`${colorName} ${bestMatch?.distanceToTreshold}`} 
+                  style={{ backgroundColor: colorsMarkersByNames[colorName], border: `2px solid ${bestMatch.matcherColor}` }}
+                >
+                  {colors.map((item) => <span className="color size-full opacity-0 group-hover:opacity-100 duration-300" style={{ backgroundColor: item.color }} />)}
+                </span>
+              );
+            })}
           </p>
           <p className="my-2">
             {(colors?.hexPalette || []).map((hexColor) => {

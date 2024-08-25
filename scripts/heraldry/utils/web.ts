@@ -101,7 +101,7 @@ export const getSprites = ({
     sprites[i] = Array(numberOfImagesPerSprite).fill('./public/images/heraldry/blank-80w.png')
   }
 
-  for (let i = 0; i < total; i++) {
+  for (let i = 0; i <= total; i++) {
     const spriteIndex = Math.floor(i / numberOfImagesPerSprite);
 
     if (imagesByIndex[i]) {

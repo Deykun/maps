@@ -14,7 +14,7 @@ export type ColorStatus = Greyscale & {
   didMatch: boolean,
   color: string,
   name: string,
-  distanceColor: string,
+  matcherColor: string,
   distanceToTreshold: number,
   thresholdDistance: number,
   distance: number,

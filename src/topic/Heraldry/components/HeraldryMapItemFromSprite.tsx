@@ -32,11 +32,14 @@ const HeraldryMapItemFromSprite = ({ unit, setListPhrase, style, size }: Props) 
       role="button"
       data-title={shortTitle || title}
     >
-      <span className="coat-sprite" style={{
-        backgroundImage: `url('${url}')`,
-        backgroundPositionY: `-${spriteOffsetY}px`,
-        transform: `scale(${((size + 1) / 11).toFixed(2)})`,
-      }}/>
+      <span
+        className="coat-sprite"
+        style={{
+          backgroundImage: `url('${url}')`,
+          backgroundPositionY: `-${spriteOffsetY}px`,
+          transform: `scale(${((size + 1) / 11).toFixed(2)})`,
+        }}
+      />
     </button>
   );
 };
