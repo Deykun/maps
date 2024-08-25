@@ -130,8 +130,8 @@ const itemsRules: MarkerParams[] = [{
 }, {
   name: "arrow",
   phrases: ['nuoli', 'jalkajousi', 'käsijousella', 'käsijousi', 'nuolikotelo'],
-  exclude: ['Kokkolan vaakuna', 'Ilmajoen vaakuna'],
-  include: ['Pieksämäen vaakuna', 'Jämsän vaakuna', 'Jämsänkosken vaakuna',]
+  exclude: ['Kokkolan vaakuna', 'Ilmajoen vaakuna', 'Jämsän vaakuna', 'Jämsänkosken vaakuna'],
+  include: ['Pieksämäen vaakuna']
 }, {
   name: "boat",
   phrases: ['vene', 'veneitä', 'laiva', 'purjevene', 'lautta', 'lautat', 'tervavene', 'verkkovene', 'kaljaasilla', 'hansalaiva', 'tervahöyry', 'nuottavenettä', 'kirkkoveneillä'],
