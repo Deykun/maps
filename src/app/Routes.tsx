@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import { PATHS_DATA } from '../constants';
 
 import Home from '../pages/Home';
-import HeraldryEE from '../pages/eesti-heraldika/HeraldryEE';
+import HeraldryEE from '../pages/eesti-heraldika/HeraldryET';
 import HeraldryPL from '../pages/heraldyka/HeraldryPL';
 import HeraldryFI from '../pages/suomalainen-heraldikka/HeraldryFI';
 import HeraldryPage from '../pages/heraldry/HeraldryPage';

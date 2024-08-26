@@ -13,5 +13,5 @@ const images = [...imagesUnit, ...imagesFormerUnit];
 
 resizeImages({
   images,
-  lang: 'ee',
+  lang: 'et',
 });

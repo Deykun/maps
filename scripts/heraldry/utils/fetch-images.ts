@@ -140,5 +140,5 @@ export const fetchImages = async ({
     }
   }
 
-  writeFileSync(`./src/pages/${subpage}/${path}-map.json`, JSON.stringify(contentToSave, null, 4));
+  writeFileSync(`./public/data/heraldry/${lang}/${path}-map.json`, JSON.stringify(contentToSave, null, 4));
 };

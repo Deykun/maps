@@ -10,13 +10,13 @@ const formerUnits = formerUnitFromJSON as AdministrativeUnit[]
 fetchImages({
 	administrativeDivisions: units,
 	path: 'unit',
-	lang: 'ee',
+	lang: 'et',
 	subpage: 'eesti-heraldika',
 });
 
 fetchImages({
 	administrativeDivisions: formerUnits,
 	path: 'formerUnit',
-	lang: 'ee',
+	lang: 'et',
 	subpage: 'eesti-heraldika',
 });

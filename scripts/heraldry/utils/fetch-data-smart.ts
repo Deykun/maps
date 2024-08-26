@@ -91,7 +91,7 @@ const fetchDivision = async (division: AdministrativeUnit, path: string, lang: s
     const categories = await page.categories();
     // const images = await page.images();
 
-    if (lang === 'ee') {
+    if (lang === 'et') {
       const name = division.title.replace(' valla vapp', '').replace(' vapp', '');
 
       if (name) {
@@ -362,7 +362,7 @@ export const fetchData = async ({
   const unitType = unitNames[0]
   global.processed[unitType] = 0;
 
-  const landOfWikipedia = lang === 'ee' ? 'et' : lang;
+  const landOfWikipedia = lang === 'et' ? 'et' : lang;
   wiki.setLang(landOfWikipedia);
 
   const total = administrativeDivisions.length;
