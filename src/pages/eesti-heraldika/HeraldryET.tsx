@@ -1,7 +1,9 @@
+import { useMemo } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import SvgMap from './components/SvgMap'
 ;
 import { AdministrativeUnit } from '@/topic/Heraldry/types';
+import { getFiltersFromSearchParams } from '@/topic/Heraldry/utils/getSearchParams';
 import { getFilter } from '@/topic/Heraldry/utils/getFilter';
 
 import CountryHeraldry from '@/topic/Heraldry/components/CountryHeraldry/CountryHeraldry';
@@ -74,6 +76,10 @@ const fetchCountryData = async () => {
 
 
 const HeraldryET = () => {
+  const initialFilters = useMemo(() => {
+    return getFiltersFromSearchParams();
+  }, []);
+
   const {
     isLoading,
     isError,
@@ -115,6 +121,7 @@ const HeraldryET = () => {
       itemFiltersList={itemFiltersList}
       mapWrapperClassName="aspect-[707_/_509]"
       map={SvgMap}
+      initialFilters={initialFilters}
     />
   );
 };
