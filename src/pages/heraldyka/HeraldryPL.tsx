@@ -1,8 +1,10 @@
+import { useMemo } from 'react';
 import { useQuery } from '@tanstack/react-query';
 // import SvgMap from './components/SvgGmina';
 import SvgMap from './components/SvgPowiaty';
 
 import { AdministrativeUnit } from '@/topic/Heraldry/types';
+import { getFiltersFromSearchParams } from '@/topic/Heraldry/utils/getSearchParams';
 import { getFilter } from '@/topic/Heraldry/utils/getFilter';
 import CountryHeraldry from '@/topic/Heraldry/components/CountryHeraldry/CountryHeraldry';
 import CountryHeraldryStatus from '@/topic/Heraldry/components/CountryHeraldry/CountryHeraldryStatus';
@@ -86,6 +88,10 @@ const fetchCountryData = async () => {
 }
 
 const HeraldryPL = () => {
+  const initialFilters = useMemo(() => {
+    return getFiltersFromSearchParams();
+  }, []);
+
   const {
     isLoading,
     isError,
@@ -127,6 +133,7 @@ const HeraldryPL = () => {
       itemFiltersList={itemFiltersList}
       mapWrapperClassName="aspect-[820_/_775]"
       map={SvgMap}
+      initialFilters={initialFilters}
     />
   );
 };

@@ -5,6 +5,7 @@ import { useDraggable } from "react-use-draggable-scroll";
 
 import { isLanguageSupported } from '@/utils/lang';
 
+import { MapsSearchParams, getSearchParamFromFilters } from '@/topic/Heraldry/utils/getSearchParams'
 import { AdministrativeUnit } from '@/topic/Heraldry/types';
 
 import { GetFilterResponse } from '@/topic/Heraldry/utils/getFilter';
@@ -29,6 +30,7 @@ type Props = {
   itemFiltersList: GetFilterResponse,
   mapWrapperClassName?: string,
   map: () => JSX.Element,
+  initialFilters?: Partial<MapsSearchParams>
 }
 
 const CountryHeraldry = ({
@@ -39,17 +41,18 @@ const CountryHeraldry = ({
   itemFiltersList,
   mapWrapperClassName,
   map: MapBackground,
+  initialFilters = {}
 }: Props) => {
     const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
     const [listPhrase, setListPhrase] = useState('');
-    const [filterOperator, setFilterOperator] = useState<'and' | 'or'>('and');
-    const [shouldReverseFilters, setShouldReverseFilters] = useState(false);
+    const [filterOperator, setFilterOperator] = useState<'and' | 'or'>(initialFilters.filterOperator || 'and');
+    const [shouldReverseFilters, setShouldReverseFilters] = useState(initialFilters.shouldReverseFilters || false);
     const [zoomLevel, setZoomLevel] = useState(1);
     const [coatSize, setCoatSize] = useState(3);
-    const [typeFilters, setTypeFilters] = useState<string[]>([]);
-    const [colorFilters, setColorFilters] = useState<string[]>([]);
-    const [animalFilters, setAnimalFilters] = useState<string[]>([]);
-    const [itemFilters, setItemFilters] = useState<string[]>([]);
+    const [typeFilters, setTypeFilters] = useState<string[]>(initialFilters.typeFilters || []);
+    const [colorFilters, setColorFilters] = useState<string[]>(initialFilters.colorFilters || []);
+    const [animalFilters, setAnimalFilters] = useState<string[]>(initialFilters.animalFilters || []);
+    const [itemFilters, setItemFilters] = useState<string[]>(initialFilters.itemFilters || []);
 
     const { events } = useDraggable(wrapperRef, { decayRate: 0.01 });
 
@@ -74,6 +77,12 @@ const CountryHeraldry = ({
       } = getFilteredUnits(lang, allUnits, filterOperator, shouldReverseFilters, typeFiltersToPass, colorFilters, animalFilters, itemFilters);
 
       setListPhrase('');
+
+      const searchParams = getSearchParamFromFilters({
+        filterOperator, shouldReverseFilters, typeFilters: typeFiltersToPass, colorFilters, animalFilters, itemFilters,
+      })
+      
+      window.history.replaceState(undefined, '', `${location.pathname}${searchParams}`);
 
       return {
         units: filteredUnits,
