@@ -1,79 +1,123 @@
+import { useQuery } from '@tanstack/react-query';
 // import SvgMap from './components/SvgGmina';
 import SvgMap from './components/SvgPowiaty';
-import { AdministrativeUnit } from '../../topic/Heraldry/types';
 
-import { getFilter } from '../../topic/Heraldry/utils/getFilter';
+import { AdministrativeUnit } from '@/topic/Heraldry/types';
+import { getFilter } from '@/topic/Heraldry/utils/getFilter';
+import CountryHeraldry from '@/topic/Heraldry/components/CountryHeraldry/CountryHeraldry';
+import CountryHeraldryStatus from '@/topic/Heraldry/components/CountryHeraldry/CountryHeraldryStatus';
 
-import gminyJSON from './gminy-map.json'
-import miastaJSON from './miasta-map.json'
-import powiatyJSON from './powiaty-map.json'
-import wojewodztwaJSON from './wojewodztwa-map.json'
+const fetchCountryData = async () => {
+  const [
+    gminy,
+    miasta,
+    powiaty,
+    wojewodztwa,
+  ] = await Promise.all([
+    await fetch('/maps/data/heraldry/pl/gminy-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    await fetch('/maps/data/heraldry/pl/powiaty-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    await fetch('/maps/data/heraldry/pl/miasta-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    await fetch('/maps/data/heraldry/pl/wojewodztwa-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+  ]);
 
-import CountryHeraldry from '../../topic/Heraldry/components/CountryHeraldry/CountryHeraldry';
+  const allUnits: AdministrativeUnit[] = Object.values([
+    ...Object.values(gminy) as AdministrativeUnit[],
+    ...Object.values(powiaty) as AdministrativeUnit[],
+    ...Object.values(miasta) as AdministrativeUnit[],
+    ...Object.values(wojewodztwa) as AdministrativeUnit[],
+  ].filter((unit: AdministrativeUnit) => {
+    if ([
+      'Herb Podgórza',
+      'Herb gminy Janów (powiat częstochowski)',
+      'Herb Nowego Bytomia',
+      'Herb gminy Brudzew',
+      'Herb gminy Ostrowice',
+      'Herby miast Śląska Cieszyńskiego',
+    ].includes(unit.title)) {
+      // Historic
+      return false;
+    };
 
-const gminy = Object.values(gminyJSON);
-const miasta = Object.values(miastaJSON);
-const powiaty = Object.values(powiatyJSON);
-const wojewodztwa = Object.values(wojewodztwaJSON);
-
-const allUnits: AdministrativeUnit[] = Object.values([
-  ...gminy,
-  ...powiaty,
-  ...miasta,
-  ...wojewodztwa,
-].filter((unit: AdministrativeUnit) => {
-  if ([
-    'Herb Podgórza',
-    'Herb gminy Janów (powiat częstochowski)',
-    'Herb Nowego Bytomia',
-    'Herb gminy Brudzew',
-    'Herb gminy Ostrowice',
-    'Herby miast Śląska Cieszyńskiego',
-  ].includes(unit.title)) {
-    // Historic
-    return false;
-  };
-
-  if ([
-    'Herb Trzyńca',
-    'Herb Orłowej',
-    'Herb Czeskiego Cieszyna',
-  ].includes(unit.title)) {
-    // Outside of Poland
-    return false;
-  }
-
-  return true;
-}).reduce((stack: {
-  [url: string]: AdministrativeUnit,
-}, unit: AdministrativeUnit) => {
-  if (stack[unit.url]) {
-    const areImagesFilledAndDifferent = unit.image?.source && unit.image?.source !== stack[unit.url].image?.source;
-    if (areImagesFilledAndDifferent) {
-      if (location.href.includes('localhost')) {
-        console.error({
-          [unit.type?.join('') || 'a']: stack[unit.url].image?.source,
-          [stack[unit.url].type?.join('') || 'b']: stack[unit.url].image?.source,
-        })
-        throw ('Duplicated but different images!')
-      }
+    if ([
+      'Herb Trzyńca',
+      'Herb Orłowej',
+      'Herb Czeskiego Cieszyna',
+    ].includes(unit.title)) {
+      // Outside of Poland
+      return false;
     }
 
-    // It merges duplicates but keeps their type in array
-    const typeMerged: string[] = [...(stack[unit.url].type || []), ...(unit.type || [])];
-    stack[unit.url].type = [...new Set(typeMerged)];
-  } else {
-    stack[unit.url] = unit;
-  }
+    return true;
+  }).reduce((stack: {
+    [url: string]: AdministrativeUnit,
+  }, unit: AdministrativeUnit) => {
+    if (stack[unit.url]) {
+      const areImagesFilledAndDifferent = unit.image?.source && unit.image?.source !== stack[unit.url].image?.source;
+      if (areImagesFilledAndDifferent) {
+        if (location.href.includes('localhost')) {
+          console.error({
+            [unit.type?.join('') || 'a']: stack[unit.url].image?.source,
+            [stack[unit.url].type?.join('') || 'b']: stack[unit.url].image?.source,
+          })
+          throw ('Duplicated but different images!')
+        }
+      }
 
-  return stack;
-}, {}));
+      // It merges duplicates but keeps their type in array
+      const typeMerged: string[] = [...(stack[unit.url].type || []), ...(unit.type || [])];
+      stack[unit.url].type = [...new Set(typeMerged)];
+    } else {
+      stack[unit.url] = unit;
+    }
 
-const typeFiltersList = getFilter(allUnits, 'type');
-const animalFiltersList = getFilter(allUnits, 'animals');
-const itemFiltersList = getFilter(allUnits, 'items');
+    return stack;
+  }, {}));
+
+  const typeFiltersList = getFilter(allUnits, 'type');
+  const animalFiltersList = getFilter(allUnits, 'animals');
+  const itemFiltersList = getFilter(allUnits, 'items');
+
+  return {
+    allUnits,
+    typeFiltersList,
+    animalFiltersList,
+    itemFiltersList
+  };
+}
 
 const HeraldryPL = () => {
+  const {
+    isLoading,
+    isError,
+    error,
+    // error,
+    data,
+  } = useQuery({
+    queryFn: () => fetchCountryData(),
+    queryKey: ['pl'],
+  });
+
+  if (isError) {
+    console.error(error);
+
+    return <CountryHeraldryStatus text="Oops... There was an error while fetching data." />
+  }
+  
+  if (isLoading) {
+    return <CountryHeraldryStatus text="Gathering map data..." />
+  }
+
+  if (!data) {
+    return <CountryHeraldryStatus text="Oops... There was an error while fetching data." />
+  }
+
+  const {
+    allUnits,
+    typeFiltersList,
+    animalFiltersList,
+    itemFiltersList
+  } = data;
+
   return (
     <CountryHeraldry
       lang="pl"

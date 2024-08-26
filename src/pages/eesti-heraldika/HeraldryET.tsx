@@ -9,19 +9,16 @@ import CountryHeraldryStatus from '@/topic/Heraldry/components/CountryHeraldry/C
 
 const fetchCountryData = async () => {
   const [
-    formerKunta,
-    kunta,
-    maakunta,
+    formerUnits,
+    units,
   ] = await Promise.all([
-    await fetch('/maps/data/heraldry/fi/formerKunta-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    await fetch('/maps/data/heraldry/fi/kunta-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    await fetch('/maps/data/heraldry/fi/maakunta-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    await fetch('/maps/data/heraldry/et/formerUnit-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    await fetch('/maps/data/heraldry/et/unit-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
   ]);
 
   const allUnits: AdministrativeUnit[] = Object.values([
-    ...Object.values(formerKunta) as AdministrativeUnit[],
-    ...Object.values(kunta) as AdministrativeUnit[],
-    ...Object.values(maakunta) as AdministrativeUnit[],
+    ...Object.values(formerUnits) as AdministrativeUnit[],
+    ...Object.values(units) as AdministrativeUnit[],
   ].filter((unit: AdministrativeUnit) => {
     // if ([
     //    'empty'
@@ -75,7 +72,8 @@ const fetchCountryData = async () => {
   };
 }
 
-const HeraldryFI = () => {
+
+const HeraldryET = () => {
   const {
     isLoading,
     isError,
@@ -84,7 +82,7 @@ const HeraldryFI = () => {
     data,
   } = useQuery({
     queryFn: () => fetchCountryData(),
-    queryKey: ['fi'],
+    queryKey: ['et'],
   });
 
   if (isError) {
@@ -110,15 +108,15 @@ const HeraldryFI = () => {
 
   return (
     <CountryHeraldry
-      lang="fi"
+      lang="et"
       allUnits={allUnits}
       typeFiltersList={typeFiltersList}
       animalFiltersList={animalFiltersList}
       itemFiltersList={itemFiltersList}
-      mapWrapperClassName="aspect-[361_/_734]"
+      mapWrapperClassName="aspect-[707_/_509]"
       map={SvgMap}
     />
   );
 };
 
-export default HeraldryFI;
+export default HeraldryET;

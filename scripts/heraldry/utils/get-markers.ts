@@ -16,7 +16,7 @@ export const getMarkers = ({
 
   const text = rawText.toLowerCase() || '';
 
-  if (lang === 'ee') {
+  if (lang === 'et') {
     const response = getMarkersET({ text: rawText, title })
 
     animals = response.animals;

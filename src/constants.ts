@@ -15,7 +15,7 @@ export const PATHS_DATA: {
       <meta property="og:title" content="🛡️ Praegused ja endised Eesti vappide kujundid" />
       <meta property="og:image" content="https://deykun.github.io/maps/social/praegused-ja-endised-eesti-vappide-kujundid.png" />
     `,
-    lang: 'ee',
+    lang: 'et',
   },
   {
     type: 'heraldryCountry',

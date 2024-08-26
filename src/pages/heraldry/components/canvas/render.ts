@@ -47,19 +47,23 @@ export const onResize = (settings: SettingsParams) => {
     item.onResize(settings);
   });
 
-  // Image quality: https://forum.babylonjs.com/t/lossing-quality-of-image-when-scaling-drawimage-dynamic-texture/11826/2
-  const dpi = window.devicePixelRatio;
-  const styles = window.getComputedStyle(canvas);
-  const style = {
-    height() {
-      return +styles.height.slice(0, -2);
-    },
-    width() {
-      return +styles.width.slice(0, -2);
-    }
-  };
-  canvas.setAttribute('width', (style.width() * dpi).toString());
-  canvas.setAttribute('height', (style.height() * dpi).toString());
+  if (canvas) {
+    // Image quality: https://forum.babylonjs.com/t/lossing-quality-of-image-when-scaling-drawimage-dynamic-texture/11826/2
+    const dpi = window.devicePixelRatio;
+    const styles = window.getComputedStyle(canvas);
+    const style = {
+      height() {
+        return +styles.height.slice(0, -2);
+      },
+      width() {
+        return +styles.width.slice(0, -2);
+      }
+    };
+    canvas.setAttribute('width', (style.width() * dpi).toString());
+    canvas.setAttribute('height', (style.height() * dpi).toString());
+  }
+
+
   
   renderFrame();
 }
