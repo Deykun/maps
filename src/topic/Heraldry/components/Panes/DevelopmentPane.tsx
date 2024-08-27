@@ -1,29 +1,16 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import clsx from 'clsx';
 
 import useOutsideClick from '@/hooks/useOutsideClick';
 
-import { WITH_ANIMAL, WITHOUT_ANIMAL } from '@/topic/Heraldry/constants';
-
-import IconMapMagnifyingGlass from '@/components/Icons/IconMapMagnifyingGlass';
-import IconBuilding from '@/components/Icons/IconBuilding';
-import IconColor from '@/components/Icons/IconColor';
-import IconControls from '@/components/Icons/IconControls';
 import IconFlask from '@/components/Icons/IconFlask';
 import IconPacakgeChecked from '@/components/Icons/IconPacakgeChecked';
 import IconPackageMagnifyingGlass from '@/components/Icons/IconPackageMagnifyingGlass';
-import IconEraser from '@/components/Icons/IconEraser';
-import IconCubeAnd from '@/components/Icons/IconCubeAnd';
-import IconCubeOr from '@/components/Icons/IconCubeOr';
-import IconEye from '@/components/Icons/IconEye';
-import IconEyeCrossed from '@/components/Icons/IconEyeCrossed';
+
 
 import Pane from '@/components/UI/Pane';
 import SubPane from '@/components/UI/SubPane';
 import ButtonCircle from '@/components/UI/ButtonCircle';
-
-import { colorsMarkersByNames } from '@/topic/Heraldry/constants';
 
 type Props = {
   lang: string,
@@ -36,6 +23,17 @@ const DevelopmentPane = ({
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
 
+    // Not the nicest solution, but it works
+    useOutsideClick('#development-pane', () => {
+      setActiveMenu('');
+    });
+  
+    useEffect(() => {
+      if (!isOpen) {
+        setActiveMenu('');
+      }
+    }, [isOpen])
+
   const toggleMenu = (name: string) => () => setActiveMenu((v) => v === name ? '' : name); 
 
   return (
@@ -46,14 +44,27 @@ const DevelopmentPane = ({
         </ButtonCircle>
         {isOpen && <>
           <span className="border-t" />
-          <ButtonCircle onClick={toggleMenu('type')} isActive={activeMenu === 'type'} title={t('heraldry.unit.filterTitle')}>
+          <ButtonCircle onClick={toggleMenu('filters')} isActive={activeMenu === 'filters'} title="App filters">
             <IconPacakgeChecked />
           </ButtonCircle>
-          <ButtonCircle onClick={toggleMenu('type')} isActive={activeMenu === 'type'} title={t('heraldry.unit.filterTitle')}>
+          <ButtonCircle onClick={toggleMenu('customFilter')} isActive={activeMenu === 'customFilter'} title="Create your own filter">
             <IconPackageMagnifyingGlass />
           </ButtonCircle>
         </>}
       </Pane>
+      {activeMenu === 'filters' && <Pane className="fixed left-12 mt-3 w-[400px] top-0 ml-6">
+        <h3 className="flex gap-3 items-center">
+          <IconPacakgeChecked className="size-5" />
+          <span>
+            App filters
+          </span>
+        </h3>
+        <div className="sans text-[12px] tracking-wide text-justify flex flex-col gap-2">
+          <p>If you see a filter for eagle, crown, or anchor, it's based on the description of the coat of arms scraped from Wikipedia.</p>
+          <p>For the <strong>'apple'</strong> filter, we can use phrases like <strong>'apple', 'apples'</strong> and if the description contains one of those words, the coat of arms will be marked accordingly.</p>
+          <p>This method isn't ideal (for example, sometimes the text describes a previous version of the coat of arms). The 'excludes' and 'includes' options allow us to manually remove or add specific coat of arms.</p>
+        </div>
+      </Pane>}
     </div>
   );
 }
