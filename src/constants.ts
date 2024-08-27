@@ -8,7 +8,7 @@ export const PATHS_DATA: {
 }[] = [
   {
     type: 'heraldryCountry',
-    pathNameLink: 'heraldry.ee.mapTitle',
+    pathNameLink: 'heraldry.et.mapTitle',
     path: 'eesti-heraldika',
     title: '🛡️ Praegused ja endised Eesti vappide kujundid',
     social: `  
