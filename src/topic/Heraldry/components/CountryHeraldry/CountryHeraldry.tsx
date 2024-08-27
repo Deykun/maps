@@ -12,6 +12,7 @@ import { GetFilterResponse } from '@/topic/Heraldry/utils/getFilter';
 import { getFilteredUnits } from '@/topic/Heraldry/utils/getFilteredUnits';
 import { getPostionForPlace } from '@/topic/Heraldry/utils/getPostionForPlace';
 
+import DevelopmentPane from '@/topic/Heraldry/components/Panes/DevelopmentPane';
 import NavigationPane from '@/topic/Heraldry/components/Panes/NavigationPane';
 import ZoomPane from '@/topic/Heraldry/components/Panes/ZoomPane';
 import UnitsPane from '@/topic/Heraldry/components/Panes/UnitsPane';
@@ -44,6 +45,7 @@ const CountryHeraldry = ({
   initialFilters = {}
 }: Props) => {
     const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
+    const [isDevModeActive, setIsDevModeActive] = useState(false);
     const [listPhrase, setListPhrase] = useState('');
     const [filterOperator, setFilterOperator] = useState<'and' | 'or'>(initialFilters.filterOperator || 'and');
     const [shouldReverseFilters, setShouldReverseFilters] = useState(initialFilters.shouldReverseFilters || false);
@@ -167,6 +169,11 @@ const CountryHeraldry = ({
             'hidden md:block': zoomLevel > 1 && subtitleParts.length !== 0,
           })}>
             <NavigationPane />
+            {isDevModeActive &&
+              <DevelopmentPane
+                lang={lang}
+              />
+            }
           </div>
           <div className="fixed top-3 right-3 z-20 flex flex-col gap-3 pointer-events-none">
             <ZoomPane
@@ -201,6 +208,8 @@ const CountryHeraldry = ({
               setFilterOperator={setFilterOperator}
               shouldReverseFilters={shouldReverseFilters}
               setShouldReverseFilters={setShouldReverseFilters}
+              isDevModeActive={isDevModeActive}
+              setIsDevModeActive={setIsDevModeActive}
             />
           </div>
         </>

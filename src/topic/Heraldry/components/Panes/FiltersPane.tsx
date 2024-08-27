@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { memo, useState, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import clsx from 'clsx';
 
@@ -10,6 +10,7 @@ import IconMapMagnifyingGlass from '@/components/Icons/IconMapMagnifyingGlass';
 import IconBuilding from '@/components/Icons/IconBuilding';
 import IconColor from '@/components/Icons/IconColor';
 import IconControls from '@/components/Icons/IconControls';
+import IconFlask from '@/components/Icons/IconFlask';
 import IconAnimal from '@/components/Icons/IconAnimal';
 import IconCrown from '@/components/Icons/IconCrown';
 import IconEraser from '@/components/Icons/IconEraser';
@@ -58,6 +59,8 @@ type Props = {
   setFilterOperator: (operator: 'or' | 'and') => void,
   shouldReverseFilters: boolean,
   setShouldReverseFilters: (value: boolean) => void,
+  isDevModeActive: boolean,
+  setIsDevModeActive: (value: boolean) => void,
 };
 
 const FiltersPane = ({
@@ -77,6 +80,8 @@ const FiltersPane = ({
   setFilterOperator,
   shouldReverseFilters,
   setShouldReverseFilters,
+  isDevModeActive,
+  setIsDevModeActive,
 }: Props) => {
   const [activeMenu, setActiveMenu] = useState('');
   const [isOpen, setIsOpen] = useState(false);
@@ -300,9 +305,13 @@ const FiltersPane = ({
         >
           {shouldReverseFilters ? <IconEyeCrossed /> : <IconEye />}
         </ButtonCircle>
+        <span className="border-l"></span>
+        <ButtonCircle isActive={isDevModeActive} onClick={() => setIsDevModeActive(!isDevModeActive)}>
+          <IconFlask />
+        </ButtonCircle>
       </SubPane>}
     </div>
   );
 }
 
-export default FiltersPane;
+export default memo(FiltersPane);

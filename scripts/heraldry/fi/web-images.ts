@@ -1,8 +1,8 @@
 import { getSprites } from '../utils/web';
 
-import kuntaJson from '../../../src/pages/suomalainen-heraldikka/kunta-map.json';
-import formerKuntaJson from '../../../src/pages/suomalainen-heraldikka/formerKunta-map.json';
-import maakuntaJson from '../../../src/pages/suomalainen-heraldikka/maakunta-map.json';
+import kuntaJson from '../../../public/data/heraldry/fi/kunta-map.json';
+import formerKuntaJson from '../../../public/data/heraldry/fi/formerKunta-map.json';
+import maakuntaJson from '../../../public/data/heraldry/fi/maakunta-map.json';
 
 getSprites({
   mapJSON: kuntaJson,
