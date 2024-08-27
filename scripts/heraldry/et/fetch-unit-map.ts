@@ -1,5 +1,5 @@
-import unitFromJSON from '../../../public/data/heraldry/ee/unit.json'
-import formerUnitFromJSON from '../../../public/data/heraldry/ee/formerUnit.json'
+import unitFromJSON from '../../../public/data/heraldry/et/unit.json'
+import formerUnitFromJSON from '../../../public/data/heraldry/et/formerUnit.json'
 import { AdministrativeUnit } from '../../../src/topic/Heraldry/types';
 
 import { fetchImages } from '../utils/fetch-images';

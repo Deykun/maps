@@ -206,39 +206,39 @@
             "items": []
         }
     },
-    "etelakarjalan-vaakuna": {
-        "title": "Etelä-Karjalan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Etel%C3%A4-Karjalan_vaakuna",
+    "etelasavon-vaakuna": {
+        "title": "Etelä-Savon vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Etel%C3%A4-Savon_vaakuna",
         "type": [
             "maakunta"
         ],
         "partOf": "Suomen maakuntien vaakunat",
         "description": "",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Etel%C3%A4-Karjala.vaakuna.svg/langfi-320px-Etel%C3%A4-Karjala.vaakuna.svg.png",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Etel%C3%A4-Savo.vaakuna.svg/langfi-320px-Etel%C3%A4-Savo.vaakuna.svg.png",
             "width": 320,
-            "height": 371
+            "height": 366
         },
         "place": {
-            "name": "Etelä-Karjalan maakunta",
+            "name": "Etelä-Savon maakunta",
             "coordinates": {
-                "lat": 61.06666667,
-                "lon": 28.18333333
+                "lat": 61.6875,
+                "lon": 27.27361111
             }
         },
         "lang": "fi",
-        "id": "maakunta-1",
-        "index": 1,
+        "id": "maakunta-3",
+        "index": 3,
         "colors": {
             "colorsPalette": [
                 {
-                    "didMatch": true,
-                    "color": "#da291c",
+                    "didMatch": false,
+                    "color": "#ffce26",
                     "name": "red",
-                    "distanceToTreshold": 18.080697678349118,
+                    "distanceToTreshold": -129.4755355644186,
                     "matcherColor": "#f00",
                     "thresholdDistance": 80,
-                    "distance": 61.91930232165088,
+                    "distance": 209.4755355644186,
                     "isGreyscale": false,
                     "isLowSaturation": false,
                     "isGrey": false,
@@ -247,12 +247,12 @@
                 },
                 {
                     "didMatch": false,
-                    "color": "#da291c",
+                    "color": "#ffce26",
                     "name": "blue",
-                    "distanceToTreshold": -147.96393918177256,
-                    "matcherColor": "#243b7f",
-                    "thresholdDistance": 60,
-                    "distance": 207.96393918177256,
+                    "distanceToTreshold": -158.0861188729826,
+                    "matcherColor": "#5596c3",
+                    "thresholdDistance": 80,
+                    "distance": 238.0861188729826,
                     "isGreyscale": false,
                     "isLowSaturation": false,
                     "isGrey": false,
@@ -261,26 +261,12 @@
                 },
                 {
                     "didMatch": false,
-                    "color": "#da291c",
+                    "color": "#ffce26",
                     "name": "green",
-                    "distanceToTreshold": -140.66859344089303,
-                    "matcherColor": "#006f00",
+                    "distanceToTreshold": -172.43094329747015,
+                    "matcherColor": "#0f0",
                     "thresholdDistance": 90,
-                    "distance": 230.66859344089303,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#da291c",
-                    "name": "gold",
-                    "distanceToTreshold": -66.71227249165726,
-                    "matcherColor": "#b68f5e",
-                    "thresholdDistance": 60,
-                    "distance": 126.71227249165726,
+                    "distance": 262.43094329747015,
                     "isGreyscale": false,
                     "isLowSaturation": false,
                     "isGrey": false,
@@ -289,7 +275,21 @@
                 },
                 {
                     "didMatch": true,
-                    "color": "#888888",
+                    "color": "#ffce26",
+                    "name": "gold",
+                    "distanceToTreshold": 30.70836296824638,
+                    "matcherColor": "#e6c633",
+                    "thresholdDistance": 60,
+                    "distance": 29.29163703175362,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#abadb1",
                     "name": "grey",
                     "matcherColor": "#888",
                     "distanceToTreshold": -1,
@@ -299,20 +299,6 @@
                     "isLowSaturation": true,
                     "isGrey": true,
                     "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": true,
-                    "color": "#000000",
-                    "name": "black",
-                    "matcherColor": "#000",
-                    "distanceToTreshold": -1,
-                    "thresholdDistance": 0,
-                    "distance": 0,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": false,
-                    "isBlack": true,
                     "isWhite": false
                 },
                 {
@@ -328,18 +314,32 @@
                     "isGrey": false,
                     "isBlack": false,
                     "isWhite": true
+                },
+                {
+                    "didMatch": true,
+                    "color": "#121722",
+                    "name": "black",
+                    "matcherColor": "#000",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
                 }
             ],
             "byNames": {
-                "red": [
+                "gold": [
                     {
                         "didMatch": true,
-                        "color": "#da291c",
-                        "name": "red",
-                        "distanceToTreshold": 18.080697678349118,
-                        "matcherColor": "#f00",
-                        "thresholdDistance": 80,
-                        "distance": 61.91930232165088,
+                        "color": "#ffce26",
+                        "name": "gold",
+                        "distanceToTreshold": 30.70836296824638,
+                        "matcherColor": "#e6c633",
+                        "thresholdDistance": 60,
+                        "distance": 29.29163703175362,
                         "isGreyscale": false,
                         "isLowSaturation": false,
                         "isGrey": false,
@@ -350,7 +350,7 @@
                 "grey": [
                     {
                         "didMatch": true,
-                        "color": "#888888",
+                        "color": "#abadb1",
                         "name": "grey",
                         "matcherColor": "#888",
                         "distanceToTreshold": -1,
@@ -360,22 +360,6 @@
                         "isLowSaturation": true,
                         "isGrey": true,
                         "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "black": [
-                    {
-                        "didMatch": true,
-                        "color": "#000000",
-                        "name": "black",
-                        "matcherColor": "#000",
-                        "distanceToTreshold": -1,
-                        "thresholdDistance": 0,
-                        "distance": 0,
-                        "isGreyscale": true,
-                        "isLowSaturation": true,
-                        "isGrey": false,
-                        "isBlack": true,
                         "isWhite": false
                     }
                 ],
@@ -394,18 +378,50 @@
                         "isBlack": false,
                         "isWhite": true
                     }
+                ],
+                "black": [
+                    {
+                        "didMatch": true,
+                        "color": "#121722",
+                        "name": "black",
+                        "matcherColor": "#000",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": true,
+                        "isWhite": false
+                    }
                 ]
             },
             "byNamesRejected": {
+                "red": [
+                    {
+                        "didMatch": false,
+                        "color": "#ffce26",
+                        "name": "red",
+                        "distanceToTreshold": -129.4755355644186,
+                        "matcherColor": "#f00",
+                        "thresholdDistance": 80,
+                        "distance": 209.4755355644186,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
                 "blue": [
                     {
                         "didMatch": false,
-                        "color": "#da291c",
+                        "color": "#ffce26",
                         "name": "blue",
-                        "distanceToTreshold": -147.96393918177256,
-                        "matcherColor": "#243b7f",
-                        "thresholdDistance": 60,
-                        "distance": 207.96393918177256,
+                        "distanceToTreshold": -158.0861188729826,
+                        "matcherColor": "#5596c3",
+                        "thresholdDistance": 80,
+                        "distance": 238.0861188729826,
                         "isGreyscale": false,
                         "isLowSaturation": false,
                         "isGrey": false,
@@ -416,28 +432,12 @@
                 "green": [
                     {
                         "didMatch": false,
-                        "color": "#da291c",
+                        "color": "#ffce26",
                         "name": "green",
-                        "distanceToTreshold": -140.66859344089303,
-                        "matcherColor": "#006f00",
+                        "distanceToTreshold": -172.43094329747015,
+                        "matcherColor": "#0f0",
                         "thresholdDistance": 90,
-                        "distance": 230.66859344089303,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "gold": [
-                    {
-                        "didMatch": false,
-                        "color": "#da291c",
-                        "name": "gold",
-                        "distanceToTreshold": -66.71227249165726,
-                        "matcherColor": "#b68f5e",
-                        "thresholdDistance": 60,
-                        "distance": 126.71227249165726,
+                        "distance": 262.43094329747015,
                         "isGreyscale": false,
                         "isLowSaturation": false,
                         "isGrey": false,
@@ -447,31 +447,31 @@
                 ]
             },
             "hexPalette": [
-                "#da291c",
-                "#888888",
-                "#000000",
-                "#ffffff"
+                "#ffce26",
+                "#abadb1",
+                "#ffffff",
+                "#121722"
             ]
         },
-        "imageUrl": "images/heraldry/fi/maakunta/etelakarjalan-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-maakunta/etelakarjalan-vaakuna-80w.webp 80w,images/heraldry/fi/web-maakunta/etelakarjalan-vaakuna-300w.webp 300w",
+        "imageUrl": "images/heraldry/fi/maakunta/etelasavon-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-maakunta/etelasavon-vaakuna-80w.webp 80w,images/heraldry/fi/web-maakunta/etelasavon-vaakuna-300w.webp 300w",
         "imagesList": [
             {
                 "name": "80w",
                 "width": "80w",
-                "path": "images/heraldry/fi/web-maakunta/etelakarjalan-vaakuna-80w.webp"
+                "path": "images/heraldry/fi/web-maakunta/etelasavon-vaakuna-80w.webp"
             },
             {
                 "name": "300w",
                 "width": "300w",
-                "path": "images/heraldry/fi/web-maakunta/etelakarjalan-vaakuna-300w.webp"
+                "path": "images/heraldry/fi/web-maakunta/etelasavon-vaakuna-300w.webp"
             }
         ],
-        "shortTitle": "Etelä-Karjalan vaakuna",
+        "shortTitle": "Etelä-Savon vaakuna",
         "markers": {
             "animals": [],
             "items": [
-                "arm"
+                "arrow"
             ]
         }
     },
@@ -774,480 +774,6 @@
             ]
         }
     },
-    "itauudenmaan-vaakuna": {
-        "title": "Itä-Uudenmaan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/It%C3%A4-Uudenmaan_vaakuna",
-        "type": [
-            "maakunta"
-        ],
-        "partOf": "Suomen maakuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/It%C3%A4-Uusimaa.vaakuna.svg/langfi-320px-It%C3%A4-Uusimaa.vaakuna.svg.png",
-            "width": 320,
-            "height": 362
-        },
-        "place": {
-            "name": "Uudenmaan maakunta",
-            "coordinates": {
-                "lat": 60.17083333,
-                "lon": 24.9375
-            }
-        },
-        "lang": "fi",
-        "id": "maakunta-5",
-        "index": 5,
-        "colors": {
-            "colorsPalette": [
-                {
-                    "didMatch": false,
-                    "color": "#2e68b2",
-                    "name": "red",
-                    "distanceToTreshold": -213.56600620644076,
-                    "matcherColor": "#f00",
-                    "thresholdDistance": 80,
-                    "distance": 293.56600620644076,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": true,
-                    "color": "#2e68b2",
-                    "name": "blue",
-                    "distanceToTreshold": 29.569751890594123,
-                    "matcherColor": "#1d7dc0",
-                    "thresholdDistance": 60,
-                    "distance": 30.430248109405877,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#2e68b2",
-                    "name": "green",
-                    "distanceToTreshold": -56.65333257134148,
-                    "matcherColor": "#00824a",
-                    "thresholdDistance": 60,
-                    "distance": 116.65333257134148,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#2e68b2",
-                    "name": "gold",
-                    "distanceToTreshold": -104.53874923555242,
-                    "matcherColor": "#b68f5e",
-                    "thresholdDistance": 60,
-                    "distance": 164.53874923555242,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": true,
-                    "color": "#ccccca",
-                    "name": "grey",
-                    "matcherColor": "#888",
-                    "distanceToTreshold": -1,
-                    "thresholdDistance": 0,
-                    "distance": 0,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": true,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "byNames": {
-                "blue": [
-                    {
-                        "didMatch": true,
-                        "color": "#2e68b2",
-                        "name": "blue",
-                        "distanceToTreshold": 29.569751890594123,
-                        "matcherColor": "#1d7dc0",
-                        "thresholdDistance": 60,
-                        "distance": 30.430248109405877,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "grey": [
-                    {
-                        "didMatch": true,
-                        "color": "#ccccca",
-                        "name": "grey",
-                        "matcherColor": "#888",
-                        "distanceToTreshold": -1,
-                        "thresholdDistance": 0,
-                        "distance": 0,
-                        "isGreyscale": true,
-                        "isLowSaturation": true,
-                        "isGrey": true,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ]
-            },
-            "byNamesRejected": {
-                "red": [
-                    {
-                        "didMatch": false,
-                        "color": "#2e68b2",
-                        "name": "red",
-                        "distanceToTreshold": -213.56600620644076,
-                        "matcherColor": "#f00",
-                        "thresholdDistance": 80,
-                        "distance": 293.56600620644076,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "green": [
-                    {
-                        "didMatch": false,
-                        "color": "#2e68b2",
-                        "name": "green",
-                        "distanceToTreshold": -56.65333257134148,
-                        "matcherColor": "#00824a",
-                        "thresholdDistance": 60,
-                        "distance": 116.65333257134148,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "gold": [
-                    {
-                        "didMatch": false,
-                        "color": "#2e68b2",
-                        "name": "gold",
-                        "distanceToTreshold": -104.53874923555242,
-                        "matcherColor": "#b68f5e",
-                        "thresholdDistance": 60,
-                        "distance": 164.53874923555242,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ]
-            },
-            "hexPalette": [
-                "#2e68b2",
-                "#ccccca"
-            ]
-        },
-        "imageUrl": "images/heraldry/fi/maakunta/itauudenmaan-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-maakunta/itauudenmaan-vaakuna-80w.webp 80w,images/heraldry/fi/web-maakunta/itauudenmaan-vaakuna-300w.webp 300w",
-        "imagesList": [
-            {
-                "name": "80w",
-                "width": "80w",
-                "path": "images/heraldry/fi/web-maakunta/itauudenmaan-vaakuna-80w.webp"
-            },
-            {
-                "name": "300w",
-                "width": "300w",
-                "path": "images/heraldry/fi/web-maakunta/itauudenmaan-vaakuna-300w.webp"
-            }
-        ],
-        "shortTitle": "Itä-Uudenmaan vaakuna",
-        "markers": {
-            "animals": [],
-            "items": []
-        }
-    },
-    "etelasavon-vaakuna": {
-        "title": "Etelä-Savon vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Etel%C3%A4-Savon_vaakuna",
-        "type": [
-            "maakunta"
-        ],
-        "partOf": "Suomen maakuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Etel%C3%A4-Savo.vaakuna.svg/langfi-320px-Etel%C3%A4-Savo.vaakuna.svg.png",
-            "width": 320,
-            "height": 366
-        },
-        "place": {
-            "name": "Etelä-Savon maakunta",
-            "coordinates": {
-                "lat": 61.6875,
-                "lon": 27.27361111
-            }
-        },
-        "lang": "fi",
-        "id": "maakunta-3",
-        "index": 3,
-        "colors": {
-            "colorsPalette": [
-                {
-                    "didMatch": false,
-                    "color": "#ffce26",
-                    "name": "red",
-                    "distanceToTreshold": -129.4755355644186,
-                    "matcherColor": "#f00",
-                    "thresholdDistance": 80,
-                    "distance": 209.4755355644186,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#ffce26",
-                    "name": "blue",
-                    "distanceToTreshold": -158.0861188729826,
-                    "matcherColor": "#5596c3",
-                    "thresholdDistance": 80,
-                    "distance": 238.0861188729826,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#ffce26",
-                    "name": "green",
-                    "distanceToTreshold": -172.43094329747015,
-                    "matcherColor": "#0f0",
-                    "thresholdDistance": 90,
-                    "distance": 262.43094329747015,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": true,
-                    "color": "#ffce26",
-                    "name": "gold",
-                    "distanceToTreshold": 30.70836296824638,
-                    "matcherColor": "#e6c633",
-                    "thresholdDistance": 60,
-                    "distance": 29.29163703175362,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": true,
-                    "color": "#abadb1",
-                    "name": "grey",
-                    "matcherColor": "#888",
-                    "distanceToTreshold": -1,
-                    "thresholdDistance": 0,
-                    "distance": 0,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": true,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": true,
-                    "color": "#ffffff",
-                    "name": "white",
-                    "matcherColor": "#fff",
-                    "distanceToTreshold": -1,
-                    "thresholdDistance": 0,
-                    "distance": 0,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": true
-                },
-                {
-                    "didMatch": true,
-                    "color": "#121722",
-                    "name": "black",
-                    "matcherColor": "#000",
-                    "distanceToTreshold": -1,
-                    "thresholdDistance": 0,
-                    "distance": 0,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": false,
-                    "isBlack": true,
-                    "isWhite": false
-                }
-            ],
-            "byNames": {
-                "gold": [
-                    {
-                        "didMatch": true,
-                        "color": "#ffce26",
-                        "name": "gold",
-                        "distanceToTreshold": 30.70836296824638,
-                        "matcherColor": "#e6c633",
-                        "thresholdDistance": 60,
-                        "distance": 29.29163703175362,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "grey": [
-                    {
-                        "didMatch": true,
-                        "color": "#abadb1",
-                        "name": "grey",
-                        "matcherColor": "#888",
-                        "distanceToTreshold": -1,
-                        "thresholdDistance": 0,
-                        "distance": 0,
-                        "isGreyscale": true,
-                        "isLowSaturation": true,
-                        "isGrey": true,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "white": [
-                    {
-                        "didMatch": true,
-                        "color": "#ffffff",
-                        "name": "white",
-                        "matcherColor": "#fff",
-                        "distanceToTreshold": -1,
-                        "thresholdDistance": 0,
-                        "distance": 0,
-                        "isGreyscale": true,
-                        "isLowSaturation": true,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": true
-                    }
-                ],
-                "black": [
-                    {
-                        "didMatch": true,
-                        "color": "#121722",
-                        "name": "black",
-                        "matcherColor": "#000",
-                        "distanceToTreshold": -1,
-                        "thresholdDistance": 0,
-                        "distance": 0,
-                        "isGreyscale": true,
-                        "isLowSaturation": true,
-                        "isGrey": false,
-                        "isBlack": true,
-                        "isWhite": false
-                    }
-                ]
-            },
-            "byNamesRejected": {
-                "red": [
-                    {
-                        "didMatch": false,
-                        "color": "#ffce26",
-                        "name": "red",
-                        "distanceToTreshold": -129.4755355644186,
-                        "matcherColor": "#f00",
-                        "thresholdDistance": 80,
-                        "distance": 209.4755355644186,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "blue": [
-                    {
-                        "didMatch": false,
-                        "color": "#ffce26",
-                        "name": "blue",
-                        "distanceToTreshold": -158.0861188729826,
-                        "matcherColor": "#5596c3",
-                        "thresholdDistance": 80,
-                        "distance": 238.0861188729826,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "green": [
-                    {
-                        "didMatch": false,
-                        "color": "#ffce26",
-                        "name": "green",
-                        "distanceToTreshold": -172.43094329747015,
-                        "matcherColor": "#0f0",
-                        "thresholdDistance": 90,
-                        "distance": 262.43094329747015,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ]
-            },
-            "hexPalette": [
-                "#ffce26",
-                "#abadb1",
-                "#ffffff",
-                "#121722"
-            ]
-        },
-        "imageUrl": "images/heraldry/fi/maakunta/etelasavon-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-maakunta/etelasavon-vaakuna-80w.webp 80w,images/heraldry/fi/web-maakunta/etelasavon-vaakuna-300w.webp 300w",
-        "imagesList": [
-            {
-                "name": "80w",
-                "width": "80w",
-                "path": "images/heraldry/fi/web-maakunta/etelasavon-vaakuna-80w.webp"
-            },
-            {
-                "name": "300w",
-                "width": "300w",
-                "path": "images/heraldry/fi/web-maakunta/etelasavon-vaakuna-300w.webp"
-            }
-        ],
-        "shortTitle": "Etelä-Savon vaakuna",
-        "markers": {
-            "animals": [],
-            "items": [
-                "arrow"
-            ]
-        }
-    },
     "kainuun-vaakuna": {
         "title": "Kainuun vaakuna",
         "url": "https://fi.wikipedia.org/wiki/Kainuun_vaakuna",
@@ -1511,6 +1037,480 @@
             "items": [
                 "tree"
             ]
+        }
+    },
+    "etelakarjalan-vaakuna": {
+        "title": "Etelä-Karjalan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Etel%C3%A4-Karjalan_vaakuna",
+        "type": [
+            "maakunta"
+        ],
+        "partOf": "Suomen maakuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Etel%C3%A4-Karjala.vaakuna.svg/langfi-320px-Etel%C3%A4-Karjala.vaakuna.svg.png",
+            "width": 320,
+            "height": 371
+        },
+        "place": {
+            "name": "Etelä-Karjalan maakunta",
+            "coordinates": {
+                "lat": 61.06666667,
+                "lon": 28.18333333
+            }
+        },
+        "lang": "fi",
+        "id": "maakunta-1",
+        "index": 1,
+        "colors": {
+            "colorsPalette": [
+                {
+                    "didMatch": true,
+                    "color": "#da291c",
+                    "name": "red",
+                    "distanceToTreshold": 18.080697678349118,
+                    "matcherColor": "#f00",
+                    "thresholdDistance": 80,
+                    "distance": 61.91930232165088,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#da291c",
+                    "name": "blue",
+                    "distanceToTreshold": -147.96393918177256,
+                    "matcherColor": "#243b7f",
+                    "thresholdDistance": 60,
+                    "distance": 207.96393918177256,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#da291c",
+                    "name": "green",
+                    "distanceToTreshold": -140.66859344089303,
+                    "matcherColor": "#006f00",
+                    "thresholdDistance": 90,
+                    "distance": 230.66859344089303,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#da291c",
+                    "name": "gold",
+                    "distanceToTreshold": -66.71227249165726,
+                    "matcherColor": "#b68f5e",
+                    "thresholdDistance": 60,
+                    "distance": 126.71227249165726,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#888888",
+                    "name": "grey",
+                    "matcherColor": "#888",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#000000",
+                    "name": "black",
+                    "matcherColor": "#000",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#ffffff",
+                    "name": "white",
+                    "matcherColor": "#fff",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
+                }
+            ],
+            "byNames": {
+                "red": [
+                    {
+                        "didMatch": true,
+                        "color": "#da291c",
+                        "name": "red",
+                        "distanceToTreshold": 18.080697678349118,
+                        "matcherColor": "#f00",
+                        "thresholdDistance": 80,
+                        "distance": 61.91930232165088,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "grey": [
+                    {
+                        "didMatch": true,
+                        "color": "#888888",
+                        "name": "grey",
+                        "matcherColor": "#888",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "black": [
+                    {
+                        "didMatch": true,
+                        "color": "#000000",
+                        "name": "black",
+                        "matcherColor": "#000",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": true,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "didMatch": true,
+                        "color": "#ffffff",
+                        "name": "white",
+                        "matcherColor": "#fff",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ]
+            },
+            "byNamesRejected": {
+                "blue": [
+                    {
+                        "didMatch": false,
+                        "color": "#da291c",
+                        "name": "blue",
+                        "distanceToTreshold": -147.96393918177256,
+                        "matcherColor": "#243b7f",
+                        "thresholdDistance": 60,
+                        "distance": 207.96393918177256,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "green": [
+                    {
+                        "didMatch": false,
+                        "color": "#da291c",
+                        "name": "green",
+                        "distanceToTreshold": -140.66859344089303,
+                        "matcherColor": "#006f00",
+                        "thresholdDistance": 90,
+                        "distance": 230.66859344089303,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "gold": [
+                    {
+                        "didMatch": false,
+                        "color": "#da291c",
+                        "name": "gold",
+                        "distanceToTreshold": -66.71227249165726,
+                        "matcherColor": "#b68f5e",
+                        "thresholdDistance": 60,
+                        "distance": 126.71227249165726,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "hexPalette": [
+                "#da291c",
+                "#888888",
+                "#000000",
+                "#ffffff"
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/maakunta/etelakarjalan-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-maakunta/etelakarjalan-vaakuna-80w.webp 80w,images/heraldry/fi/web-maakunta/etelakarjalan-vaakuna-300w.webp 300w",
+        "imagesList": [
+            {
+                "name": "80w",
+                "width": "80w",
+                "path": "images/heraldry/fi/web-maakunta/etelakarjalan-vaakuna-80w.webp"
+            },
+            {
+                "name": "300w",
+                "width": "300w",
+                "path": "images/heraldry/fi/web-maakunta/etelakarjalan-vaakuna-300w.webp"
+            }
+        ],
+        "shortTitle": "Etelä-Karjalan vaakuna",
+        "markers": {
+            "animals": [],
+            "items": [
+                "arm"
+            ]
+        }
+    },
+    "itauudenmaan-vaakuna": {
+        "title": "Itä-Uudenmaan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/It%C3%A4-Uudenmaan_vaakuna",
+        "type": [
+            "maakunta"
+        ],
+        "partOf": "Suomen maakuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/It%C3%A4-Uusimaa.vaakuna.svg/langfi-320px-It%C3%A4-Uusimaa.vaakuna.svg.png",
+            "width": 320,
+            "height": 362
+        },
+        "place": {
+            "name": "Uudenmaan maakunta",
+            "coordinates": {
+                "lat": 60.17083333,
+                "lon": 24.9375
+            }
+        },
+        "lang": "fi",
+        "id": "maakunta-5",
+        "index": 5,
+        "colors": {
+            "colorsPalette": [
+                {
+                    "didMatch": false,
+                    "color": "#2e68b2",
+                    "name": "red",
+                    "distanceToTreshold": -213.56600620644076,
+                    "matcherColor": "#f00",
+                    "thresholdDistance": 80,
+                    "distance": 293.56600620644076,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#2e68b2",
+                    "name": "blue",
+                    "distanceToTreshold": 29.569751890594123,
+                    "matcherColor": "#1d7dc0",
+                    "thresholdDistance": 60,
+                    "distance": 30.430248109405877,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#2e68b2",
+                    "name": "green",
+                    "distanceToTreshold": -56.65333257134148,
+                    "matcherColor": "#00824a",
+                    "thresholdDistance": 60,
+                    "distance": 116.65333257134148,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#2e68b2",
+                    "name": "gold",
+                    "distanceToTreshold": -104.53874923555242,
+                    "matcherColor": "#b68f5e",
+                    "thresholdDistance": 60,
+                    "distance": 164.53874923555242,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#ccccca",
+                    "name": "grey",
+                    "matcherColor": "#888",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": true,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "byNames": {
+                "blue": [
+                    {
+                        "didMatch": true,
+                        "color": "#2e68b2",
+                        "name": "blue",
+                        "distanceToTreshold": 29.569751890594123,
+                        "matcherColor": "#1d7dc0",
+                        "thresholdDistance": 60,
+                        "distance": 30.430248109405877,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "grey": [
+                    {
+                        "didMatch": true,
+                        "color": "#ccccca",
+                        "name": "grey",
+                        "matcherColor": "#888",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": true,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "byNamesRejected": {
+                "red": [
+                    {
+                        "didMatch": false,
+                        "color": "#2e68b2",
+                        "name": "red",
+                        "distanceToTreshold": -213.56600620644076,
+                        "matcherColor": "#f00",
+                        "thresholdDistance": 80,
+                        "distance": 293.56600620644076,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "green": [
+                    {
+                        "didMatch": false,
+                        "color": "#2e68b2",
+                        "name": "green",
+                        "distanceToTreshold": -56.65333257134148,
+                        "matcherColor": "#00824a",
+                        "thresholdDistance": 60,
+                        "distance": 116.65333257134148,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "gold": [
+                    {
+                        "didMatch": false,
+                        "color": "#2e68b2",
+                        "name": "gold",
+                        "distanceToTreshold": -104.53874923555242,
+                        "matcherColor": "#b68f5e",
+                        "thresholdDistance": 60,
+                        "distance": 164.53874923555242,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "hexPalette": [
+                "#2e68b2",
+                "#ccccca"
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/maakunta/itauudenmaan-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-maakunta/itauudenmaan-vaakuna-80w.webp 80w,images/heraldry/fi/web-maakunta/itauudenmaan-vaakuna-300w.webp 300w",
+        "imagesList": [
+            {
+                "name": "80w",
+                "width": "80w",
+                "path": "images/heraldry/fi/web-maakunta/itauudenmaan-vaakuna-80w.webp"
+            },
+            {
+                "name": "300w",
+                "width": "300w",
+                "path": "images/heraldry/fi/web-maakunta/itauudenmaan-vaakuna-300w.webp"
+            }
+        ],
+        "shortTitle": "Itä-Uudenmaan vaakuna",
+        "markers": {
+            "animals": [],
+            "items": []
         }
     },
     "ahvenanmaan-vaakuna": {
@@ -2803,6 +2803,401 @@
             ]
         }
     },
+    "lapin-vaakuna": {
+        "title": "Lapin vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Lapin_vaakuna",
+        "type": [
+            "maakunta"
+        ],
+        "partOf": "Suomen maakuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Lapin_maakunnan_vaakuna.svg/langfi-320px-Lapin_maakunnan_vaakuna.svg.png",
+            "width": 320,
+            "height": 432
+        },
+        "place": {
+            "name": "Lapin maakunta",
+            "coordinates": {
+                "lat": 66.5,
+                "lon": 25.73333333
+            }
+        },
+        "lang": "fi",
+        "id": "maakunta-12",
+        "index": 12,
+        "colors": {
+            "colorsPalette": [
+                {
+                    "didMatch": false,
+                    "color": "#008337",
+                    "name": "red",
+                    "distanceToTreshold": -211.9092324679026,
+                    "matcherColor": "#f00",
+                    "thresholdDistance": 80,
+                    "distance": 291.9092324679026,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#008337",
+                    "name": "blue",
+                    "distanceToTreshold": -48,
+                    "matcherColor": "#243b7f",
+                    "thresholdDistance": 60,
+                    "distance": 108,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#008337",
+                    "name": "green",
+                    "distanceToTreshold": 41.615223689149765,
+                    "matcherColor": "#07923f",
+                    "thresholdDistance": 60,
+                    "distance": 18.384776310850235,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#008337",
+                    "name": "gold",
+                    "distanceToTreshold": -126.51809563685771,
+                    "matcherColor": "#b68f5e",
+                    "thresholdDistance": 60,
+                    "distance": 186.5180956368577,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#6782c1",
+                    "name": "red",
+                    "distanceToTreshold": -197.94423901207233,
+                    "matcherColor": "#f00",
+                    "thresholdDistance": 80,
+                    "distance": 277.94423901207233,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#6782c1",
+                    "name": "blue",
+                    "distanceToTreshold": 53.01852487353592,
+                    "matcherColor": "#5596c3",
+                    "thresholdDistance": 80,
+                    "distance": 26.981475126464083,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#6782c1",
+                    "name": "green",
+                    "distanceToTreshold": -97.38487856207789,
+                    "matcherColor": "#00824a",
+                    "thresholdDistance": 60,
+                    "distance": 157.3848785620779,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#6782c1",
+                    "name": "gold",
+                    "distanceToTreshold": -67.32242536175629,
+                    "matcherColor": "#b68f5e",
+                    "thresholdDistance": 60,
+                    "distance": 127.32242536175629,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#d1241c",
+                    "name": "red",
+                    "distanceToTreshold": 15.223461037193417,
+                    "matcherColor": "#f00",
+                    "thresholdDistance": 80,
+                    "distance": 64.77653896280658,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#d1241c",
+                    "name": "blue",
+                    "distanceToTreshold": -140.64645523905972,
+                    "matcherColor": "#243b7f",
+                    "thresholdDistance": 60,
+                    "distance": 200.64645523905972,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#d1241c",
+                    "name": "green",
+                    "distanceToTreshold": -133.80795338861395,
+                    "matcherColor": "#006f00",
+                    "thresholdDistance": 90,
+                    "distance": 223.80795338861395,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#d1241c",
+                    "name": "gold",
+                    "distanceToTreshold": -68.58460249967723,
+                    "matcherColor": "#b68f5e",
+                    "thresholdDistance": 60,
+                    "distance": 128.58460249967723,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#f8baa2",
+                    "name": "red",
+                    "distanceToTreshold": -166.75696545386515,
+                    "matcherColor": "#f00",
+                    "thresholdDistance": 80,
+                    "distance": 246.75696545386515,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#f8baa2",
+                    "name": "blue",
+                    "distanceToTreshold": -90.15874940772221,
+                    "matcherColor": "#5596c3",
+                    "thresholdDistance": 80,
+                    "distance": 170.1587494077222,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#f8baa2",
+                    "name": "green",
+                    "distanceToTreshold": -203.59438537267823,
+                    "matcherColor": "#07923f",
+                    "thresholdDistance": 60,
+                    "distance": 263.59438537267823,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#f8baa2",
+                    "name": "gold",
+                    "distanceToTreshold": -44.06248123122954,
+                    "matcherColor": "#b68f5e",
+                    "thresholdDistance": 60,
+                    "distance": 104.06248123122954,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "byNames": {
+                "green": [
+                    {
+                        "didMatch": true,
+                        "color": "#008337",
+                        "name": "green",
+                        "distanceToTreshold": 41.615223689149765,
+                        "matcherColor": "#07923f",
+                        "thresholdDistance": 60,
+                        "distance": 18.384776310850235,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "didMatch": true,
+                        "color": "#6782c1",
+                        "name": "blue",
+                        "distanceToTreshold": 53.01852487353592,
+                        "matcherColor": "#5596c3",
+                        "thresholdDistance": 80,
+                        "distance": 26.981475126464083,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "red": [
+                    {
+                        "didMatch": true,
+                        "color": "#d1241c",
+                        "name": "red",
+                        "distanceToTreshold": 15.223461037193417,
+                        "matcherColor": "#f00",
+                        "thresholdDistance": 80,
+                        "distance": 64.77653896280658,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "byNamesRejected": {
+                "red": [
+                    {
+                        "didMatch": false,
+                        "color": "#f8baa2",
+                        "name": "red",
+                        "distanceToTreshold": -166.75696545386515,
+                        "matcherColor": "#f00",
+                        "thresholdDistance": 80,
+                        "distance": 246.75696545386515,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "didMatch": false,
+                        "color": "#f8baa2",
+                        "name": "blue",
+                        "distanceToTreshold": -90.15874940772221,
+                        "matcherColor": "#5596c3",
+                        "thresholdDistance": 80,
+                        "distance": 170.1587494077222,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "gold": [
+                    {
+                        "didMatch": false,
+                        "color": "#f8baa2",
+                        "name": "gold",
+                        "distanceToTreshold": -44.06248123122954,
+                        "matcherColor": "#b68f5e",
+                        "thresholdDistance": 60,
+                        "distance": 104.06248123122954,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "green": [
+                    {
+                        "didMatch": false,
+                        "color": "#f8baa2",
+                        "name": "green",
+                        "distanceToTreshold": -203.59438537267823,
+                        "matcherColor": "#07923f",
+                        "thresholdDistance": 60,
+                        "distance": 263.59438537267823,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "hexPalette": [
+                "#008337",
+                "#6782c1",
+                "#d1241c",
+                "#f8baa2"
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/maakunta/lapin-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-maakunta/lapin-vaakuna-80w.webp 80w,images/heraldry/fi/web-maakunta/lapin-vaakuna-300w.webp 300w",
+        "imagesList": [
+            {
+                "name": "80w",
+                "width": "80w",
+                "path": "images/heraldry/fi/web-maakunta/lapin-vaakuna-80w.webp"
+            },
+            {
+                "name": "300w",
+                "width": "300w",
+                "path": "images/heraldry/fi/web-maakunta/lapin-vaakuna-300w.webp"
+            }
+        ],
+        "shortTitle": "Lapin vaakuna",
+        "markers": {
+            "animals": [],
+            "items": [
+                "crown"
+            ]
+        }
+    },
     "keskipohjanmaan-vaakuna": {
         "title": "Keski-Pohjanmaan vaakuna",
         "url": "https://fi.wikipedia.org/wiki/Keski-Pohjanmaan_vaakuna",
@@ -3321,401 +3716,6 @@
             "items": []
         }
     },
-    "lapin-vaakuna": {
-        "title": "Lapin vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Lapin_vaakuna",
-        "type": [
-            "maakunta"
-        ],
-        "partOf": "Suomen maakuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Lapin_maakunnan_vaakuna.svg/langfi-320px-Lapin_maakunnan_vaakuna.svg.png",
-            "width": 320,
-            "height": 432
-        },
-        "place": {
-            "name": "Lapin maakunta",
-            "coordinates": {
-                "lat": 66.5,
-                "lon": 25.73333333
-            }
-        },
-        "lang": "fi",
-        "id": "maakunta-12",
-        "index": 12,
-        "colors": {
-            "colorsPalette": [
-                {
-                    "didMatch": false,
-                    "color": "#008337",
-                    "name": "red",
-                    "distanceToTreshold": -211.9092324679026,
-                    "matcherColor": "#f00",
-                    "thresholdDistance": 80,
-                    "distance": 291.9092324679026,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#008337",
-                    "name": "blue",
-                    "distanceToTreshold": -48,
-                    "matcherColor": "#243b7f",
-                    "thresholdDistance": 60,
-                    "distance": 108,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": true,
-                    "color": "#008337",
-                    "name": "green",
-                    "distanceToTreshold": 41.615223689149765,
-                    "matcherColor": "#07923f",
-                    "thresholdDistance": 60,
-                    "distance": 18.384776310850235,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#008337",
-                    "name": "gold",
-                    "distanceToTreshold": -126.51809563685771,
-                    "matcherColor": "#b68f5e",
-                    "thresholdDistance": 60,
-                    "distance": 186.5180956368577,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#6782c1",
-                    "name": "red",
-                    "distanceToTreshold": -197.94423901207233,
-                    "matcherColor": "#f00",
-                    "thresholdDistance": 80,
-                    "distance": 277.94423901207233,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": true,
-                    "color": "#6782c1",
-                    "name": "blue",
-                    "distanceToTreshold": 53.01852487353592,
-                    "matcherColor": "#5596c3",
-                    "thresholdDistance": 80,
-                    "distance": 26.981475126464083,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#6782c1",
-                    "name": "green",
-                    "distanceToTreshold": -97.38487856207789,
-                    "matcherColor": "#00824a",
-                    "thresholdDistance": 60,
-                    "distance": 157.3848785620779,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#6782c1",
-                    "name": "gold",
-                    "distanceToTreshold": -67.32242536175629,
-                    "matcherColor": "#b68f5e",
-                    "thresholdDistance": 60,
-                    "distance": 127.32242536175629,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": true,
-                    "color": "#d1241c",
-                    "name": "red",
-                    "distanceToTreshold": 15.223461037193417,
-                    "matcherColor": "#f00",
-                    "thresholdDistance": 80,
-                    "distance": 64.77653896280658,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#d1241c",
-                    "name": "blue",
-                    "distanceToTreshold": -140.64645523905972,
-                    "matcherColor": "#243b7f",
-                    "thresholdDistance": 60,
-                    "distance": 200.64645523905972,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#d1241c",
-                    "name": "green",
-                    "distanceToTreshold": -133.80795338861395,
-                    "matcherColor": "#006f00",
-                    "thresholdDistance": 90,
-                    "distance": 223.80795338861395,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#d1241c",
-                    "name": "gold",
-                    "distanceToTreshold": -68.58460249967723,
-                    "matcherColor": "#b68f5e",
-                    "thresholdDistance": 60,
-                    "distance": 128.58460249967723,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#f8baa2",
-                    "name": "red",
-                    "distanceToTreshold": -166.75696545386515,
-                    "matcherColor": "#f00",
-                    "thresholdDistance": 80,
-                    "distance": 246.75696545386515,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#f8baa2",
-                    "name": "blue",
-                    "distanceToTreshold": -90.15874940772221,
-                    "matcherColor": "#5596c3",
-                    "thresholdDistance": 80,
-                    "distance": 170.1587494077222,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#f8baa2",
-                    "name": "green",
-                    "distanceToTreshold": -203.59438537267823,
-                    "matcherColor": "#07923f",
-                    "thresholdDistance": 60,
-                    "distance": 263.59438537267823,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#f8baa2",
-                    "name": "gold",
-                    "distanceToTreshold": -44.06248123122954,
-                    "matcherColor": "#b68f5e",
-                    "thresholdDistance": 60,
-                    "distance": 104.06248123122954,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "byNames": {
-                "green": [
-                    {
-                        "didMatch": true,
-                        "color": "#008337",
-                        "name": "green",
-                        "distanceToTreshold": 41.615223689149765,
-                        "matcherColor": "#07923f",
-                        "thresholdDistance": 60,
-                        "distance": 18.384776310850235,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "blue": [
-                    {
-                        "didMatch": true,
-                        "color": "#6782c1",
-                        "name": "blue",
-                        "distanceToTreshold": 53.01852487353592,
-                        "matcherColor": "#5596c3",
-                        "thresholdDistance": 80,
-                        "distance": 26.981475126464083,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "red": [
-                    {
-                        "didMatch": true,
-                        "color": "#d1241c",
-                        "name": "red",
-                        "distanceToTreshold": 15.223461037193417,
-                        "matcherColor": "#f00",
-                        "thresholdDistance": 80,
-                        "distance": 64.77653896280658,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ]
-            },
-            "byNamesRejected": {
-                "red": [
-                    {
-                        "didMatch": false,
-                        "color": "#f8baa2",
-                        "name": "red",
-                        "distanceToTreshold": -166.75696545386515,
-                        "matcherColor": "#f00",
-                        "thresholdDistance": 80,
-                        "distance": 246.75696545386515,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "blue": [
-                    {
-                        "didMatch": false,
-                        "color": "#f8baa2",
-                        "name": "blue",
-                        "distanceToTreshold": -90.15874940772221,
-                        "matcherColor": "#5596c3",
-                        "thresholdDistance": 80,
-                        "distance": 170.1587494077222,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "gold": [
-                    {
-                        "didMatch": false,
-                        "color": "#f8baa2",
-                        "name": "gold",
-                        "distanceToTreshold": -44.06248123122954,
-                        "matcherColor": "#b68f5e",
-                        "thresholdDistance": 60,
-                        "distance": 104.06248123122954,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "green": [
-                    {
-                        "didMatch": false,
-                        "color": "#f8baa2",
-                        "name": "green",
-                        "distanceToTreshold": -203.59438537267823,
-                        "matcherColor": "#07923f",
-                        "thresholdDistance": 60,
-                        "distance": 263.59438537267823,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ]
-            },
-            "hexPalette": [
-                "#008337",
-                "#6782c1",
-                "#d1241c",
-                "#f8baa2"
-            ]
-        },
-        "imageUrl": "images/heraldry/fi/maakunta/lapin-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-maakunta/lapin-vaakuna-80w.webp 80w,images/heraldry/fi/web-maakunta/lapin-vaakuna-300w.webp 300w",
-        "imagesList": [
-            {
-                "name": "80w",
-                "width": "80w",
-                "path": "images/heraldry/fi/web-maakunta/lapin-vaakuna-80w.webp"
-            },
-            {
-                "name": "300w",
-                "width": "300w",
-                "path": "images/heraldry/fi/web-maakunta/lapin-vaakuna-300w.webp"
-            }
-        ],
-        "shortTitle": "Lapin vaakuna",
-        "markers": {
-            "animals": [],
-            "items": [
-                "crown"
-            ]
-        }
-    },
     "keskisuomen-vaakuna": {
         "title": "Keski-Suomen vaakuna",
         "url": "https://fi.wikipedia.org/wiki/Keski-Suomen_vaakuna",
@@ -4207,6 +4207,244 @@
             "items": []
         }
     },
+    "pohjoispohjanmaan-vaakuna": {
+        "title": "Pohjois-Pohjanmaan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Pohjois-Pohjanmaan_vaakuna",
+        "type": [
+            "maakunta"
+        ],
+        "partOf": "Suomen maakuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Pohjois-Pohjanmaan_vaakuna.svg/langfi-320px-Pohjois-Pohjanmaan_vaakuna.svg.png",
+            "width": 320,
+            "height": 370
+        },
+        "place": {
+            "name": "Pohjois-Pohjanmaan maakunta",
+            "coordinates": {
+                "lat": 65.01666667,
+                "lon": 25.46666667
+            }
+        },
+        "lang": "fi",
+        "id": "maakunta-17",
+        "index": 17,
+        "colors": {
+            "colorsPalette": [
+                {
+                    "didMatch": false,
+                    "color": "#0e57a1",
+                    "name": "red",
+                    "distanceToTreshold": -222.60700586734606,
+                    "matcherColor": "#f00",
+                    "thresholdDistance": 80,
+                    "distance": 302.60700586734606,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#0e57a1",
+                    "name": "blue",
+                    "distanceToTreshold": 19.453730134573412,
+                    "matcherColor": "#0059c7",
+                    "thresholdDistance": 60,
+                    "distance": 40.54626986542659,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#0e57a1",
+                    "name": "green",
+                    "distanceToTreshold": -38.05100713404222,
+                    "matcherColor": "#00824a",
+                    "thresholdDistance": 60,
+                    "distance": 98.05100713404222,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#0e57a1",
+                    "name": "gold",
+                    "distanceToTreshold": -129.33832153053433,
+                    "matcherColor": "#b68f5e",
+                    "thresholdDistance": 60,
+                    "distance": 189.33832153053433,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#000101",
+                    "name": "black",
+                    "matcherColor": "#000",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#ffffff",
+                    "name": "white",
+                    "matcherColor": "#fff",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": true
+                }
+            ],
+            "byNames": {
+                "blue": [
+                    {
+                        "didMatch": true,
+                        "color": "#0e57a1",
+                        "name": "blue",
+                        "distanceToTreshold": 19.453730134573412,
+                        "matcherColor": "#0059c7",
+                        "thresholdDistance": 60,
+                        "distance": 40.54626986542659,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "black": [
+                    {
+                        "didMatch": true,
+                        "color": "#000101",
+                        "name": "black",
+                        "matcherColor": "#000",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": true,
+                        "isWhite": false
+                    }
+                ],
+                "white": [
+                    {
+                        "didMatch": true,
+                        "color": "#ffffff",
+                        "name": "white",
+                        "matcherColor": "#fff",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": true
+                    }
+                ]
+            },
+            "byNamesRejected": {
+                "red": [
+                    {
+                        "didMatch": false,
+                        "color": "#0e57a1",
+                        "name": "red",
+                        "distanceToTreshold": -222.60700586734606,
+                        "matcherColor": "#f00",
+                        "thresholdDistance": 80,
+                        "distance": 302.60700586734606,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "green": [
+                    {
+                        "didMatch": false,
+                        "color": "#0e57a1",
+                        "name": "green",
+                        "distanceToTreshold": -38.05100713404222,
+                        "matcherColor": "#00824a",
+                        "thresholdDistance": 60,
+                        "distance": 98.05100713404222,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "gold": [
+                    {
+                        "didMatch": false,
+                        "color": "#0e57a1",
+                        "name": "gold",
+                        "distanceToTreshold": -129.33832153053433,
+                        "matcherColor": "#b68f5e",
+                        "thresholdDistance": 60,
+                        "distance": 189.33832153053433,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "hexPalette": [
+                "#0e57a1",
+                "#000101",
+                "#ffffff"
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/maakunta/pohjoispohjanmaan-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-maakunta/pohjoispohjanmaan-vaakuna-80w.webp 80w,images/heraldry/fi/web-maakunta/pohjoispohjanmaan-vaakuna-300w.webp 300w",
+        "imagesList": [
+            {
+                "name": "80w",
+                "width": "80w",
+                "path": "images/heraldry/fi/web-maakunta/pohjoispohjanmaan-vaakuna-80w.webp"
+            },
+            {
+                "name": "300w",
+                "width": "300w",
+                "path": "images/heraldry/fi/web-maakunta/pohjoispohjanmaan-vaakuna-300w.webp"
+            }
+        ],
+        "shortTitle": "Pohjois-Pohjanmaan vaakuna",
+        "markers": {
+            "animals": [
+                "weasel"
+            ],
+            "items": []
+        }
+    },
     "pohjoiskarjalan-vaakuna": {
         "title": "Pohjois-Karjalan vaakuna",
         "url": "https://fi.wikipedia.org/wiki/Pohjois-Karjalan_vaakuna",
@@ -4575,509 +4813,6 @@
                 "crown",
                 "arm"
             ]
-        }
-    },
-    "pohjoispohjanmaan-vaakuna": {
-        "title": "Pohjois-Pohjanmaan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Pohjois-Pohjanmaan_vaakuna",
-        "type": [
-            "maakunta"
-        ],
-        "partOf": "Suomen maakuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Pohjois-Pohjanmaan_vaakuna.svg/langfi-320px-Pohjois-Pohjanmaan_vaakuna.svg.png",
-            "width": 320,
-            "height": 370
-        },
-        "place": {
-            "name": "Pohjois-Pohjanmaan maakunta",
-            "coordinates": {
-                "lat": 65.01666667,
-                "lon": 25.46666667
-            }
-        },
-        "lang": "fi",
-        "id": "maakunta-17",
-        "index": 17,
-        "colors": {
-            "colorsPalette": [
-                {
-                    "didMatch": false,
-                    "color": "#0e57a1",
-                    "name": "red",
-                    "distanceToTreshold": -222.60700586734606,
-                    "matcherColor": "#f00",
-                    "thresholdDistance": 80,
-                    "distance": 302.60700586734606,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": true,
-                    "color": "#0e57a1",
-                    "name": "blue",
-                    "distanceToTreshold": 19.453730134573412,
-                    "matcherColor": "#0059c7",
-                    "thresholdDistance": 60,
-                    "distance": 40.54626986542659,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#0e57a1",
-                    "name": "green",
-                    "distanceToTreshold": -38.05100713404222,
-                    "matcherColor": "#00824a",
-                    "thresholdDistance": 60,
-                    "distance": 98.05100713404222,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#0e57a1",
-                    "name": "gold",
-                    "distanceToTreshold": -129.33832153053433,
-                    "matcherColor": "#b68f5e",
-                    "thresholdDistance": 60,
-                    "distance": 189.33832153053433,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": true,
-                    "color": "#000101",
-                    "name": "black",
-                    "matcherColor": "#000",
-                    "distanceToTreshold": -1,
-                    "thresholdDistance": 0,
-                    "distance": 0,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": false,
-                    "isBlack": true,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": true,
-                    "color": "#ffffff",
-                    "name": "white",
-                    "matcherColor": "#fff",
-                    "distanceToTreshold": -1,
-                    "thresholdDistance": 0,
-                    "distance": 0,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": true
-                }
-            ],
-            "byNames": {
-                "blue": [
-                    {
-                        "didMatch": true,
-                        "color": "#0e57a1",
-                        "name": "blue",
-                        "distanceToTreshold": 19.453730134573412,
-                        "matcherColor": "#0059c7",
-                        "thresholdDistance": 60,
-                        "distance": 40.54626986542659,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "black": [
-                    {
-                        "didMatch": true,
-                        "color": "#000101",
-                        "name": "black",
-                        "matcherColor": "#000",
-                        "distanceToTreshold": -1,
-                        "thresholdDistance": 0,
-                        "distance": 0,
-                        "isGreyscale": true,
-                        "isLowSaturation": true,
-                        "isGrey": false,
-                        "isBlack": true,
-                        "isWhite": false
-                    }
-                ],
-                "white": [
-                    {
-                        "didMatch": true,
-                        "color": "#ffffff",
-                        "name": "white",
-                        "matcherColor": "#fff",
-                        "distanceToTreshold": -1,
-                        "thresholdDistance": 0,
-                        "distance": 0,
-                        "isGreyscale": true,
-                        "isLowSaturation": true,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": true
-                    }
-                ]
-            },
-            "byNamesRejected": {
-                "red": [
-                    {
-                        "didMatch": false,
-                        "color": "#0e57a1",
-                        "name": "red",
-                        "distanceToTreshold": -222.60700586734606,
-                        "matcherColor": "#f00",
-                        "thresholdDistance": 80,
-                        "distance": 302.60700586734606,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "green": [
-                    {
-                        "didMatch": false,
-                        "color": "#0e57a1",
-                        "name": "green",
-                        "distanceToTreshold": -38.05100713404222,
-                        "matcherColor": "#00824a",
-                        "thresholdDistance": 60,
-                        "distance": 98.05100713404222,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "gold": [
-                    {
-                        "didMatch": false,
-                        "color": "#0e57a1",
-                        "name": "gold",
-                        "distanceToTreshold": -129.33832153053433,
-                        "matcherColor": "#b68f5e",
-                        "thresholdDistance": 60,
-                        "distance": 189.33832153053433,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ]
-            },
-            "hexPalette": [
-                "#0e57a1",
-                "#000101",
-                "#ffffff"
-            ]
-        },
-        "imageUrl": "images/heraldry/fi/maakunta/pohjoispohjanmaan-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-maakunta/pohjoispohjanmaan-vaakuna-80w.webp 80w,images/heraldry/fi/web-maakunta/pohjoispohjanmaan-vaakuna-300w.webp 300w",
-        "imagesList": [
-            {
-                "name": "80w",
-                "width": "80w",
-                "path": "images/heraldry/fi/web-maakunta/pohjoispohjanmaan-vaakuna-80w.webp"
-            },
-            {
-                "name": "300w",
-                "width": "300w",
-                "path": "images/heraldry/fi/web-maakunta/pohjoispohjanmaan-vaakuna-300w.webp"
-            }
-        ],
-        "shortTitle": "Pohjois-Pohjanmaan vaakuna",
-        "markers": {
-            "animals": [
-                "weasel"
-            ],
-            "items": []
-        }
-    },
-    "pohjanmaan-vaakuna": {
-        "title": "Pohjanmaan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Pohjanmaan_vaakuna",
-        "type": [
-            "maakunta"
-        ],
-        "partOf": "Suomen maakuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Pohjanmaan_maakunnan_vaakuna.svg/langfi-320px-Pohjanmaan_maakunnan_vaakuna.svg.png",
-            "width": 320,
-            "height": 376
-        },
-        "place": {
-            "name": "Pohjanmaan maakunta",
-            "coordinates": {
-                "lat": 63.09583333,
-                "lon": 21.61527778
-            }
-        },
-        "lang": "fi",
-        "id": "maakunta-15",
-        "index": 15,
-        "colors": {
-            "colorsPalette": [
-                {
-                    "didMatch": false,
-                    "color": "#ffd700",
-                    "name": "red",
-                    "distanceToTreshold": -135,
-                    "matcherColor": "#f00",
-                    "thresholdDistance": 80,
-                    "distance": 215,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#ffd700",
-                    "name": "blue",
-                    "distanceToTreshold": -186.73957336698282,
-                    "matcherColor": "#5596c3",
-                    "thresholdDistance": 80,
-                    "distance": 266.7395733669828,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#ffd700",
-                    "name": "green",
-                    "distanceToTreshold": -168.11818998280614,
-                    "matcherColor": "#0f0",
-                    "thresholdDistance": 90,
-                    "distance": 258.11818998280614,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": true,
-                    "color": "#ffd700",
-                    "name": "gold",
-                    "distanceToTreshold": 10,
-                    "matcherColor": "#ffff00",
-                    "thresholdDistance": 50,
-                    "distance": 40,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": true,
-                    "color": "#d50032",
-                    "name": "red",
-                    "distanceToTreshold": 14.700689130741964,
-                    "matcherColor": "#f00",
-                    "thresholdDistance": 80,
-                    "distance": 65.29931086925804,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#d50032",
-                    "name": "blue",
-                    "distanceToTreshold": -138.76116320851014,
-                    "matcherColor": "#2e3192",
-                    "thresholdDistance": 60,
-                    "distance": 198.76116320851014,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#d50032",
-                    "name": "green",
-                    "distanceToTreshold": -155.33650360270482,
-                    "matcherColor": "#006f00",
-                    "thresholdDistance": 90,
-                    "distance": 245.33650360270482,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#d50032",
-                    "name": "gold",
-                    "distanceToTreshold": -92.79397893896211,
-                    "matcherColor": "#b68f5e",
-                    "thresholdDistance": 60,
-                    "distance": 152.7939789389621,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                }
-            ],
-            "byNames": {
-                "gold": [
-                    {
-                        "didMatch": true,
-                        "color": "#ffd700",
-                        "name": "gold",
-                        "distanceToTreshold": 10,
-                        "matcherColor": "#ffff00",
-                        "thresholdDistance": 50,
-                        "distance": 40,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "red": [
-                    {
-                        "didMatch": true,
-                        "color": "#d50032",
-                        "name": "red",
-                        "distanceToTreshold": 14.700689130741964,
-                        "matcherColor": "#f00",
-                        "thresholdDistance": 80,
-                        "distance": 65.29931086925804,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ]
-            },
-            "byNamesRejected": {
-                "red": [
-                    {
-                        "didMatch": false,
-                        "color": "#ffd700",
-                        "name": "red",
-                        "distanceToTreshold": -135,
-                        "matcherColor": "#f00",
-                        "thresholdDistance": 80,
-                        "distance": 215,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "blue": [
-                    {
-                        "didMatch": false,
-                        "color": "#d50032",
-                        "name": "blue",
-                        "distanceToTreshold": -138.76116320851014,
-                        "matcherColor": "#2e3192",
-                        "thresholdDistance": 60,
-                        "distance": 198.76116320851014,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "green": [
-                    {
-                        "didMatch": false,
-                        "color": "#d50032",
-                        "name": "green",
-                        "distanceToTreshold": -155.33650360270482,
-                        "matcherColor": "#006f00",
-                        "thresholdDistance": 90,
-                        "distance": 245.33650360270482,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "gold": [
-                    {
-                        "didMatch": false,
-                        "color": "#d50032",
-                        "name": "gold",
-                        "distanceToTreshold": -92.79397893896211,
-                        "matcherColor": "#b68f5e",
-                        "thresholdDistance": 60,
-                        "distance": 152.7939789389621,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ]
-            },
-            "hexPalette": [
-                "#ffd700",
-                "#d50032"
-            ]
-        },
-        "imageUrl": "images/heraldry/fi/maakunta/pohjanmaan-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-maakunta/pohjanmaan-vaakuna-80w.webp 80w,images/heraldry/fi/web-maakunta/pohjanmaan-vaakuna-300w.webp 300w",
-        "imagesList": [
-            {
-                "name": "80w",
-                "width": "80w",
-                "path": "images/heraldry/fi/web-maakunta/pohjanmaan-vaakuna-80w.webp"
-            },
-            {
-                "name": "300w",
-                "width": "300w",
-                "path": "images/heraldry/fi/web-maakunta/pohjanmaan-vaakuna-300w.webp"
-            }
-        ],
-        "shortTitle": "Pohjanmaan vaakuna",
-        "markers": {
-            "animals": [
-                "weasel"
-            ],
-            "items": []
         }
     },
     "pohjoissavon-vaakuna": {
@@ -5669,6 +5404,642 @@
                 "mermaid"
             ],
             "items": []
+        }
+    },
+    "pohjanmaan-vaakuna": {
+        "title": "Pohjanmaan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Pohjanmaan_vaakuna",
+        "type": [
+            "maakunta"
+        ],
+        "partOf": "Suomen maakuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Pohjanmaan_maakunnan_vaakuna.svg/langfi-320px-Pohjanmaan_maakunnan_vaakuna.svg.png",
+            "width": 320,
+            "height": 376
+        },
+        "place": {
+            "name": "Pohjanmaan maakunta",
+            "coordinates": {
+                "lat": 63.09583333,
+                "lon": 21.61527778
+            }
+        },
+        "lang": "fi",
+        "id": "maakunta-15",
+        "index": 15,
+        "colors": {
+            "colorsPalette": [
+                {
+                    "didMatch": false,
+                    "color": "#ffd700",
+                    "name": "red",
+                    "distanceToTreshold": -135,
+                    "matcherColor": "#f00",
+                    "thresholdDistance": 80,
+                    "distance": 215,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#ffd700",
+                    "name": "blue",
+                    "distanceToTreshold": -186.73957336698282,
+                    "matcherColor": "#5596c3",
+                    "thresholdDistance": 80,
+                    "distance": 266.7395733669828,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#ffd700",
+                    "name": "green",
+                    "distanceToTreshold": -168.11818998280614,
+                    "matcherColor": "#0f0",
+                    "thresholdDistance": 90,
+                    "distance": 258.11818998280614,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#ffd700",
+                    "name": "gold",
+                    "distanceToTreshold": 10,
+                    "matcherColor": "#ffff00",
+                    "thresholdDistance": 50,
+                    "distance": 40,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#d50032",
+                    "name": "red",
+                    "distanceToTreshold": 14.700689130741964,
+                    "matcherColor": "#f00",
+                    "thresholdDistance": 80,
+                    "distance": 65.29931086925804,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#d50032",
+                    "name": "blue",
+                    "distanceToTreshold": -138.76116320851014,
+                    "matcherColor": "#2e3192",
+                    "thresholdDistance": 60,
+                    "distance": 198.76116320851014,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#d50032",
+                    "name": "green",
+                    "distanceToTreshold": -155.33650360270482,
+                    "matcherColor": "#006f00",
+                    "thresholdDistance": 90,
+                    "distance": 245.33650360270482,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#d50032",
+                    "name": "gold",
+                    "distanceToTreshold": -92.79397893896211,
+                    "matcherColor": "#b68f5e",
+                    "thresholdDistance": 60,
+                    "distance": 152.7939789389621,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                }
+            ],
+            "byNames": {
+                "gold": [
+                    {
+                        "didMatch": true,
+                        "color": "#ffd700",
+                        "name": "gold",
+                        "distanceToTreshold": 10,
+                        "matcherColor": "#ffff00",
+                        "thresholdDistance": 50,
+                        "distance": 40,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "red": [
+                    {
+                        "didMatch": true,
+                        "color": "#d50032",
+                        "name": "red",
+                        "distanceToTreshold": 14.700689130741964,
+                        "matcherColor": "#f00",
+                        "thresholdDistance": 80,
+                        "distance": 65.29931086925804,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "byNamesRejected": {
+                "red": [
+                    {
+                        "didMatch": false,
+                        "color": "#ffd700",
+                        "name": "red",
+                        "distanceToTreshold": -135,
+                        "matcherColor": "#f00",
+                        "thresholdDistance": 80,
+                        "distance": 215,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "didMatch": false,
+                        "color": "#d50032",
+                        "name": "blue",
+                        "distanceToTreshold": -138.76116320851014,
+                        "matcherColor": "#2e3192",
+                        "thresholdDistance": 60,
+                        "distance": 198.76116320851014,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "green": [
+                    {
+                        "didMatch": false,
+                        "color": "#d50032",
+                        "name": "green",
+                        "distanceToTreshold": -155.33650360270482,
+                        "matcherColor": "#006f00",
+                        "thresholdDistance": 90,
+                        "distance": 245.33650360270482,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "gold": [
+                    {
+                        "didMatch": false,
+                        "color": "#d50032",
+                        "name": "gold",
+                        "distanceToTreshold": -92.79397893896211,
+                        "matcherColor": "#b68f5e",
+                        "thresholdDistance": 60,
+                        "distance": 152.7939789389621,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "hexPalette": [
+                "#ffd700",
+                "#d50032"
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/maakunta/pohjanmaan-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-maakunta/pohjanmaan-vaakuna-80w.webp 80w,images/heraldry/fi/web-maakunta/pohjanmaan-vaakuna-300w.webp 300w",
+        "imagesList": [
+            {
+                "name": "80w",
+                "width": "80w",
+                "path": "images/heraldry/fi/web-maakunta/pohjanmaan-vaakuna-80w.webp"
+            },
+            {
+                "name": "300w",
+                "width": "300w",
+                "path": "images/heraldry/fi/web-maakunta/pohjanmaan-vaakuna-300w.webp"
+            }
+        ],
+        "shortTitle": "Pohjanmaan vaakuna",
+        "markers": {
+            "animals": [
+                "weasel"
+            ],
+            "items": []
+        }
+    },
+    "satakunnan-vaakuna": {
+        "title": "Satakunnan vaakuna",
+        "url": "https://fi.wikipedia.org/wiki/Satakunnan_vaakuna",
+        "type": [
+            "maakunta"
+        ],
+        "partOf": "Suomen maakuntien vaakunat",
+        "description": "",
+        "image": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Satakunta.vaakuna.svg/langfi-320px-Satakunta.vaakuna.svg.png",
+            "width": 320,
+            "height": 461
+        },
+        "place": {
+            "name": "Satakunnan maakunta",
+            "coordinates": {
+                "lat": 61.48333333,
+                "lon": 21.8
+            }
+        },
+        "lang": "fi",
+        "id": "maakunta-20",
+        "index": 20,
+        "colors": {
+            "colorsPalette": [
+                {
+                    "didMatch": true,
+                    "color": "#e70909",
+                    "name": "red",
+                    "distanceToTreshold": 52.833844585587755,
+                    "matcherColor": "#f00",
+                    "thresholdDistance": 80,
+                    "distance": 27.16615541441225,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#e70909",
+                    "name": "blue",
+                    "distanceToTreshold": -173.34309503390068,
+                    "matcherColor": "#243b7f",
+                    "thresholdDistance": 60,
+                    "distance": 233.34309503390068,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#e70909",
+                    "name": "green",
+                    "distanceToTreshold": -162.67766027094677,
+                    "matcherColor": "#006f00",
+                    "thresholdDistance": 90,
+                    "distance": 252.67766027094677,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#e70909",
+                    "name": "gold",
+                    "distanceToTreshold": -106.07829478893382,
+                    "matcherColor": "#b68f5e",
+                    "thresholdDistance": 60,
+                    "distance": 166.07829478893382,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#0556c7",
+                    "name": "red",
+                    "distanceToTreshold": -250.90330914029857,
+                    "matcherColor": "#f00",
+                    "thresholdDistance": 80,
+                    "distance": 330.9033091402986,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#0556c7",
+                    "name": "blue",
+                    "distanceToTreshold": 54.1690481051547,
+                    "matcherColor": "#0059c7",
+                    "thresholdDistance": 60,
+                    "distance": 5.830951894845301,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#0556c7",
+                    "name": "green",
+                    "distanceToTreshold": -72.61221663180206,
+                    "matcherColor": "#00824a",
+                    "thresholdDistance": 60,
+                    "distance": 132.61221663180206,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#0556c7",
+                    "name": "gold",
+                    "distanceToTreshold": -153.5485893186841,
+                    "matcherColor": "#b68f5e",
+                    "thresholdDistance": 60,
+                    "distance": 213.5485893186841,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#dbb357",
+                    "name": "red",
+                    "distanceToTreshold": -122.25231766286387,
+                    "matcherColor": "#f00",
+                    "thresholdDistance": 80,
+                    "distance": 202.25231766286387,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#dbb357",
+                    "name": "blue",
+                    "distanceToTreshold": -94.53079957417259,
+                    "matcherColor": "#5596c3",
+                    "thresholdDistance": 80,
+                    "distance": 174.5307995741726,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": false,
+                    "color": "#dbb357",
+                    "name": "green",
+                    "distanceToTreshold": -155.26312401174377,
+                    "matcherColor": "#006f00",
+                    "thresholdDistance": 90,
+                    "distance": 245.26312401174377,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#dbb357",
+                    "name": "gold",
+                    "distanceToTreshold": 25.518120700866668,
+                    "matcherColor": "#bfa14e",
+                    "thresholdDistance": 60,
+                    "distance": 34.48187929913333,
+                    "isGreyscale": false,
+                    "isLowSaturation": false,
+                    "isGrey": false,
+                    "isBlack": false,
+                    "isWhite": false
+                },
+                {
+                    "didMatch": true,
+                    "color": "#000000",
+                    "name": "black",
+                    "matcherColor": "#000",
+                    "distanceToTreshold": -1,
+                    "thresholdDistance": 0,
+                    "distance": 0,
+                    "isGreyscale": true,
+                    "isLowSaturation": true,
+                    "isGrey": false,
+                    "isBlack": true,
+                    "isWhite": false
+                }
+            ],
+            "byNames": {
+                "red": [
+                    {
+                        "didMatch": true,
+                        "color": "#e70909",
+                        "name": "red",
+                        "distanceToTreshold": 52.833844585587755,
+                        "matcherColor": "#f00",
+                        "thresholdDistance": 80,
+                        "distance": 27.16615541441225,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "blue": [
+                    {
+                        "didMatch": true,
+                        "color": "#0556c7",
+                        "name": "blue",
+                        "distanceToTreshold": 54.1690481051547,
+                        "matcherColor": "#0059c7",
+                        "thresholdDistance": 60,
+                        "distance": 5.830951894845301,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "gold": [
+                    {
+                        "didMatch": true,
+                        "color": "#dbb357",
+                        "name": "gold",
+                        "distanceToTreshold": 25.518120700866668,
+                        "matcherColor": "#bfa14e",
+                        "thresholdDistance": 60,
+                        "distance": 34.48187929913333,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "black": [
+                    {
+                        "didMatch": true,
+                        "color": "#000000",
+                        "name": "black",
+                        "matcherColor": "#000",
+                        "distanceToTreshold": -1,
+                        "thresholdDistance": 0,
+                        "distance": 0,
+                        "isGreyscale": true,
+                        "isLowSaturation": true,
+                        "isGrey": false,
+                        "isBlack": true,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "byNamesRejected": {
+                "blue": [
+                    {
+                        "didMatch": false,
+                        "color": "#dbb357",
+                        "name": "blue",
+                        "distanceToTreshold": -94.53079957417259,
+                        "matcherColor": "#5596c3",
+                        "thresholdDistance": 80,
+                        "distance": 174.5307995741726,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "green": [
+                    {
+                        "didMatch": false,
+                        "color": "#dbb357",
+                        "name": "green",
+                        "distanceToTreshold": -155.26312401174377,
+                        "matcherColor": "#006f00",
+                        "thresholdDistance": 90,
+                        "distance": 245.26312401174377,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "gold": [
+                    {
+                        "didMatch": false,
+                        "color": "#0556c7",
+                        "name": "gold",
+                        "distanceToTreshold": -153.5485893186841,
+                        "matcherColor": "#b68f5e",
+                        "thresholdDistance": 60,
+                        "distance": 213.5485893186841,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ],
+                "red": [
+                    {
+                        "didMatch": false,
+                        "color": "#dbb357",
+                        "name": "red",
+                        "distanceToTreshold": -122.25231766286387,
+                        "matcherColor": "#f00",
+                        "thresholdDistance": 80,
+                        "distance": 202.25231766286387,
+                        "isGreyscale": false,
+                        "isLowSaturation": false,
+                        "isGrey": false,
+                        "isBlack": false,
+                        "isWhite": false
+                    }
+                ]
+            },
+            "hexPalette": [
+                "#e70909",
+                "#0556c7",
+                "#dbb357",
+                "#000000"
+            ]
+        },
+        "imageUrl": "images/heraldry/fi/maakunta/satakunnan-vaakuna.png",
+        "imageSrcSet": "images/heraldry/fi/web-maakunta/satakunnan-vaakuna-80w.webp 80w,images/heraldry/fi/web-maakunta/satakunnan-vaakuna-300w.webp 300w",
+        "imagesList": [
+            {
+                "name": "80w",
+                "width": "80w",
+                "path": "images/heraldry/fi/web-maakunta/satakunnan-vaakuna-80w.webp"
+            },
+            {
+                "name": "300w",
+                "width": "300w",
+                "path": "images/heraldry/fi/web-maakunta/satakunnan-vaakuna-300w.webp"
+            }
+        ],
+        "shortTitle": "Satakunnan vaakuna",
+        "markers": {
+            "animals": [
+                "bear"
+            ],
+            "items": [
+                "crown"
+            ]
         }
     },
     "savon-vaakuna": {
@@ -6614,377 +6985,6 @@
                 "crown",
                 "lily",
                 "flower"
-            ]
-        }
-    },
-    "satakunnan-vaakuna": {
-        "title": "Satakunnan vaakuna",
-        "url": "https://fi.wikipedia.org/wiki/Satakunnan_vaakuna",
-        "type": [
-            "maakunta"
-        ],
-        "partOf": "Suomen maakuntien vaakunat",
-        "description": "",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Satakunta.vaakuna.svg/langfi-320px-Satakunta.vaakuna.svg.png",
-            "width": 320,
-            "height": 461
-        },
-        "place": {
-            "name": "Satakunnan maakunta",
-            "coordinates": {
-                "lat": 61.48333333,
-                "lon": 21.8
-            }
-        },
-        "lang": "fi",
-        "id": "maakunta-20",
-        "index": 20,
-        "colors": {
-            "colorsPalette": [
-                {
-                    "didMatch": true,
-                    "color": "#e70909",
-                    "name": "red",
-                    "distanceToTreshold": 52.833844585587755,
-                    "matcherColor": "#f00",
-                    "thresholdDistance": 80,
-                    "distance": 27.16615541441225,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#e70909",
-                    "name": "blue",
-                    "distanceToTreshold": -173.34309503390068,
-                    "matcherColor": "#243b7f",
-                    "thresholdDistance": 60,
-                    "distance": 233.34309503390068,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#e70909",
-                    "name": "green",
-                    "distanceToTreshold": -162.67766027094677,
-                    "matcherColor": "#006f00",
-                    "thresholdDistance": 90,
-                    "distance": 252.67766027094677,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#e70909",
-                    "name": "gold",
-                    "distanceToTreshold": -106.07829478893382,
-                    "matcherColor": "#b68f5e",
-                    "thresholdDistance": 60,
-                    "distance": 166.07829478893382,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#0556c7",
-                    "name": "red",
-                    "distanceToTreshold": -250.90330914029857,
-                    "matcherColor": "#f00",
-                    "thresholdDistance": 80,
-                    "distance": 330.9033091402986,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": true,
-                    "color": "#0556c7",
-                    "name": "blue",
-                    "distanceToTreshold": 54.1690481051547,
-                    "matcherColor": "#0059c7",
-                    "thresholdDistance": 60,
-                    "distance": 5.830951894845301,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#0556c7",
-                    "name": "green",
-                    "distanceToTreshold": -72.61221663180206,
-                    "matcherColor": "#00824a",
-                    "thresholdDistance": 60,
-                    "distance": 132.61221663180206,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#0556c7",
-                    "name": "gold",
-                    "distanceToTreshold": -153.5485893186841,
-                    "matcherColor": "#b68f5e",
-                    "thresholdDistance": 60,
-                    "distance": 213.5485893186841,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#dbb357",
-                    "name": "red",
-                    "distanceToTreshold": -122.25231766286387,
-                    "matcherColor": "#f00",
-                    "thresholdDistance": 80,
-                    "distance": 202.25231766286387,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#dbb357",
-                    "name": "blue",
-                    "distanceToTreshold": -94.53079957417259,
-                    "matcherColor": "#5596c3",
-                    "thresholdDistance": 80,
-                    "distance": 174.5307995741726,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": false,
-                    "color": "#dbb357",
-                    "name": "green",
-                    "distanceToTreshold": -155.26312401174377,
-                    "matcherColor": "#006f00",
-                    "thresholdDistance": 90,
-                    "distance": 245.26312401174377,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": true,
-                    "color": "#dbb357",
-                    "name": "gold",
-                    "distanceToTreshold": 25.518120700866668,
-                    "matcherColor": "#bfa14e",
-                    "thresholdDistance": 60,
-                    "distance": 34.48187929913333,
-                    "isGreyscale": false,
-                    "isLowSaturation": false,
-                    "isGrey": false,
-                    "isBlack": false,
-                    "isWhite": false
-                },
-                {
-                    "didMatch": true,
-                    "color": "#000000",
-                    "name": "black",
-                    "matcherColor": "#000",
-                    "distanceToTreshold": -1,
-                    "thresholdDistance": 0,
-                    "distance": 0,
-                    "isGreyscale": true,
-                    "isLowSaturation": true,
-                    "isGrey": false,
-                    "isBlack": true,
-                    "isWhite": false
-                }
-            ],
-            "byNames": {
-                "red": [
-                    {
-                        "didMatch": true,
-                        "color": "#e70909",
-                        "name": "red",
-                        "distanceToTreshold": 52.833844585587755,
-                        "matcherColor": "#f00",
-                        "thresholdDistance": 80,
-                        "distance": 27.16615541441225,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "blue": [
-                    {
-                        "didMatch": true,
-                        "color": "#0556c7",
-                        "name": "blue",
-                        "distanceToTreshold": 54.1690481051547,
-                        "matcherColor": "#0059c7",
-                        "thresholdDistance": 60,
-                        "distance": 5.830951894845301,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "gold": [
-                    {
-                        "didMatch": true,
-                        "color": "#dbb357",
-                        "name": "gold",
-                        "distanceToTreshold": 25.518120700866668,
-                        "matcherColor": "#bfa14e",
-                        "thresholdDistance": 60,
-                        "distance": 34.48187929913333,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "black": [
-                    {
-                        "didMatch": true,
-                        "color": "#000000",
-                        "name": "black",
-                        "matcherColor": "#000",
-                        "distanceToTreshold": -1,
-                        "thresholdDistance": 0,
-                        "distance": 0,
-                        "isGreyscale": true,
-                        "isLowSaturation": true,
-                        "isGrey": false,
-                        "isBlack": true,
-                        "isWhite": false
-                    }
-                ]
-            },
-            "byNamesRejected": {
-                "blue": [
-                    {
-                        "didMatch": false,
-                        "color": "#dbb357",
-                        "name": "blue",
-                        "distanceToTreshold": -94.53079957417259,
-                        "matcherColor": "#5596c3",
-                        "thresholdDistance": 80,
-                        "distance": 174.5307995741726,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "green": [
-                    {
-                        "didMatch": false,
-                        "color": "#dbb357",
-                        "name": "green",
-                        "distanceToTreshold": -155.26312401174377,
-                        "matcherColor": "#006f00",
-                        "thresholdDistance": 90,
-                        "distance": 245.26312401174377,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "gold": [
-                    {
-                        "didMatch": false,
-                        "color": "#0556c7",
-                        "name": "gold",
-                        "distanceToTreshold": -153.5485893186841,
-                        "matcherColor": "#b68f5e",
-                        "thresholdDistance": 60,
-                        "distance": 213.5485893186841,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ],
-                "red": [
-                    {
-                        "didMatch": false,
-                        "color": "#dbb357",
-                        "name": "red",
-                        "distanceToTreshold": -122.25231766286387,
-                        "matcherColor": "#f00",
-                        "thresholdDistance": 80,
-                        "distance": 202.25231766286387,
-                        "isGreyscale": false,
-                        "isLowSaturation": false,
-                        "isGrey": false,
-                        "isBlack": false,
-                        "isWhite": false
-                    }
-                ]
-            },
-            "hexPalette": [
-                "#e70909",
-                "#0556c7",
-                "#dbb357",
-                "#000000"
-            ]
-        },
-        "imageUrl": "images/heraldry/fi/maakunta/satakunnan-vaakuna.png",
-        "imageSrcSet": "images/heraldry/fi/web-maakunta/satakunnan-vaakuna-80w.webp 80w,images/heraldry/fi/web-maakunta/satakunnan-vaakuna-300w.webp 300w",
-        "imagesList": [
-            {
-                "name": "80w",
-                "width": "80w",
-                "path": "images/heraldry/fi/web-maakunta/satakunnan-vaakuna-80w.webp"
-            },
-            {
-                "name": "300w",
-                "width": "300w",
-                "path": "images/heraldry/fi/web-maakunta/satakunnan-vaakuna-300w.webp"
-            }
-        ],
-        "shortTitle": "Satakunnan vaakuna",
-        "markers": {
-            "animals": [
-                "bear"
-            ],
-            "items": [
-                "crown"
             ]
         }
     }

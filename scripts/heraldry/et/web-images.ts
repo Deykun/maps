@@ -1,7 +1,7 @@
 import { getSprites } from '../utils/web';
 
-import unitJSON from '@/pages/eesti-heraldika/unit-map.json';
-import formerUnitJSON from '@/pages/eesti-heraldika/formerUnit-map.json';
+import unitJSON from '../../../public/data/heraldry/et/unit-map.json';
+import formerUnitJSON from '../../../public/data/heraldry/et/formerUnit-map.json';
 
 getSprites({
   mapJSON: unitJSON,
