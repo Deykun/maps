@@ -16,9 +16,9 @@ import Pane from '@/components/UI/Pane';
 import ButtonCircle from '@/components/UI/ButtonCircle';
 
 import { getDoesUnitMatch, getUnitSortRank } from './utils/units';
-import UnitsPaneItem from './UnitsPaneItem';
-import UnitsPaneItemDetails from './UnitsPaneItemDetails';
 
+import UnitsPaneItem from './UnitsPane/UnitsPaneItem';
+import UnitsPaneItemDetails from './UnitsPane/UnitsPaneItemDetails';
 
 type Props = {
   children?: React.ReactNode,

@@ -1,4 +1,5 @@
-import { getMarker, MarkerParams } from '../../utils/get-marker';
+import { getMarker } from '../../utils/get-marker';
+import { MarkerParams } from '../../../../src/topic/Heraldry/types'
 
 const animalsRules: MarkerParams[] = [{
   name: "bear",

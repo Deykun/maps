@@ -69,3 +69,10 @@ export type AdministrativeUnitsGroup = {
   title: string,
   urls: AdministrativeUnit[],
 }
+
+export type MarkerParams = {
+  name: string,
+  phrases?: string[],
+  exclude?: string[],
+  include?: string[],
+}

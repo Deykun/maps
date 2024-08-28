@@ -29,15 +29,15 @@ const fetchCountryData = async () => {
     formerUnits,
     units,
   ] = await Promise.all([
-    await fetch('/maps/data/heraldry/fi/formerKunta-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    await fetch('/maps/data/heraldry/fi/kunta-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    await fetch('/maps/data/heraldry/fi/maakunta-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    await fetch('/maps/data/heraldry/et/formerUnit-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    await fetch('/maps/data/heraldry/et/unit-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    await fetch('/maps/data/heraldry/pl/gminy-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    await fetch('/maps/data/heraldry/pl/powiaty-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    await fetch('/maps/data/heraldry/pl/miasta-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    await fetch('/maps/data/heraldry/pl/wojewodztwa-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/fi/formerKunta-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/fi/kunta-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/fi/maakunta-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/et/formerUnit-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/et/unit-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/pl/gminy-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/pl/powiaty-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/pl/miasta-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/pl/wojewodztwa-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
   ]);
 
   

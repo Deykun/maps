@@ -1,0 +1,127 @@
+import { useState, useCallback } from 'react';
+import { useQuery } from '@tanstack/react-query';
+import { useTranslation } from 'react-i18next';
+import clxs from 'clsx';
+
+import { MarkerParams } from '@/topic/Heraldry/types';
+
+import IconSelected from '@/components/Icons/IconSelected';
+import Pane from '@/components/UI/Pane';
+
+type FetchParmas = {
+  country: string,
+}
+
+const fetchData = async ({ country }: FetchParmas) => {
+  const response = await fetch(`/maps/data/heraldry/${country}/filters.json`).then((response) => response.json());
+
+  const {
+    animals = [] as MarkerParams[],
+    items = [] as MarkerParams[],
+  } = response || {};
+
+  return {
+    animals,
+    items,
+  };
+};
+
+type Props = FetchParmas & {
+};
+
+const DevelopmentPaneAppFilters = ({
+  country,
+}: Props) => {
+  const [pickedFilter, setPickedFilter] = useState<MarkerParams | undefined>(undefined);
+  const { t } = useTranslation();
+
+  const {
+    isLoading,
+    isError,
+    error,
+    data,
+  } = useQuery({
+    queryFn: () => fetchData({ country }),
+    queryKey: ['filter', country],
+    staleTime: 5 * 60 * 1000,
+  });
+
+  const handleClick = useCallback((e: React.ChangeEvent<HTMLSelectElement>) => {
+    const value = (e.target.value || '');
+    const [type, indexString] = value.split('-');
+    const index = Number(indexString);
+
+    if (data && type === 'animal') {
+      setPickedFilter(data.animals[index]);
+    } else if (data && type === 'item') {
+      setPickedFilter(data.items[index]);
+    } else {
+      setPickedFilter(undefined);
+    }
+  }, [data]);
+
+  if (isError) {
+    console.log('error', error);
+  }
+
+  return (
+    <Pane className="fixed left-12 mt-3 w-[400px] max-h-[calc(100%_-_1.5rem)] overflow-auto top-0 ml-6">
+      <h3 className="flex gap-3 items-center">
+        <IconSelected className="size-5" />
+        <span>
+          App filters
+        </span>
+      </h3>
+      <div className="sans text-[14px] flex flex-col gap-2 text-right">
+        <p>
+          You can read about the filters
+          {' '}
+          <a
+            href="https://github.com/Deykun/maps/blob/main/docs/FILTERS.md"
+            target="_blank"
+            className="font-[500] text-[#d2543a]"
+          >
+            here
+          </a>
+          {'. '}
+        </p>
+      </div>
+        {isError && <div>
+          Error!: {JSON.stringify(error)}  
+        </div>}
+        <select
+          disabled={isLoading}
+          value={pickedFilter}
+          onChange={handleClick}
+          className={clxs('sans w-full p-1 px-2 text-[14px] bg-white border', {
+            'rounded-b-[4px]': !pickedFilter
+          })}
+        >
+          <option>Pick filter</option>
+          {data && <>
+            {data.animals.map(({ name }, index) => (
+              <option
+                key={name}
+                value={`animal-${index}`}
+              >
+                {t('heraldry.animal.filterTitle')}: {t(`heraldry.animal.${name}`)}
+              </option>
+            ))}
+            {data.items.map(({ name }, index) => (
+              <option
+                key={name}
+                value={`item-${index}`}
+              >
+                {t('heraldry.item.filterTitle')}: {t(`heraldry.item.${name}`)}
+              </option>
+            ))}
+          </>}
+        </select>
+        {pickedFilter && <pre className="p-2 bg-black text-[#ffeb9b] text-[12px] leading-[16px] rounded-b-[4px]">
+          {JSON.stringify(pickedFilter, null, 2)}
+        </pre>}
+    </Pane>
+  );
+}
+
+export default DevelopmentPaneAppFilters;

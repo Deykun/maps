@@ -45,7 +45,8 @@ const CountryHeraldry = ({
   initialFilters = {}
 }: Props) => {
     const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
-    const [isDevModeActive, setIsDevModeActive] = useState(false);
+    // Change to false
+    const [isDevModeActive, setIsDevModeActive] = useState(true);
     const [listPhrase, setListPhrase] = useState('');
     const [filterOperator, setFilterOperator] = useState<'and' | 'or'>(initialFilters.filterOperator || 'and');
     const [shouldReverseFilters, setShouldReverseFilters] = useState(initialFilters.shouldReverseFilters || false);
@@ -171,7 +172,8 @@ const CountryHeraldry = ({
             <NavigationPane />
             {isDevModeActive &&
               <DevelopmentPane
-                lang={lang}
+                country={lang}
+                unitTypes={typeFiltersList.map(({ value }) => value)}
               />
             }
           </div>

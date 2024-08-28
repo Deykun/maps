@@ -1,10 +1,3 @@
-export type MarkerParams = {
-  name: string,
-  phrases?: string[],
-  exclude?: string[],
-  include?: string[],
-}
-
 export const getMarker = (
   markersList: string[],
   name: string,

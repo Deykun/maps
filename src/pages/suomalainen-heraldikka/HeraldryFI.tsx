@@ -15,9 +15,9 @@ const fetchCountryData = async () => {
     kunta,
     maakunta,
   ] = await Promise.all([
-    await fetch('/maps/data/heraldry/fi/formerKunta-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    await fetch('/maps/data/heraldry/fi/kunta-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    await fetch('/maps/data/heraldry/fi/maakunta-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/fi/formerKunta-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/fi/kunta-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/fi/maakunta-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
   ]);
 
   const allUnits: AdministrativeUnit[] = Object.values([

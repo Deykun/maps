@@ -36,7 +36,8 @@ export const fetchImages = async ({
   subpage?: string,
   lang?: string,
 }) => {
-  const contentToSave = {};
+  const contentToSaveForMap = {};
+  const contentToSaveForDevMode = {};
 
   const total = administrativeDivisions.length;
 
@@ -89,8 +90,16 @@ export const fetchImages = async ({
       } = getCompressedImageSrc(`images/heraldry/${lang}/${path}/${fileName}.${format}`, path);
 
       if (!unit.place?.coordinates?.lat || !unit.place?.coordinates?.lon) {
-        console.log(`${chalk.yellow(unit.title)} doesn't have the ${chalk.red('location')}.`)
+        console.log(`${chalk.yellow(unit.title)} doesn't have the ${chalk.red('location')}.`);
       }
+
+      contentToSaveForDevMode[fileName] = {
+        id: unit.id || '',
+        title: unit.title,
+        shortTitle:  unit.shortTitle || '',
+        url: unit.url || '',
+        description:  unit.description || '',
+      };
 
       try {
         const {
@@ -100,7 +109,7 @@ export const fetchImages = async ({
           byNamesRejected,
         } = await getImageColors(image);
 
-        contentToSave[fileName] = {
+        contentToSaveForMap[fileName] = {
           ...unit,
           description: '', // not needed
           colors: {
@@ -122,7 +131,7 @@ export const fetchImages = async ({
         console.log(`${chalk.red('Missing colors for:')} ${chalk.yellow(unit.title)}`);
         console.error(error);
 
-        contentToSave[fileName] = {
+        contentToSaveForMap[fileName] = {
           ...unit,
           description: '',
           imageUrl: `images/heraldry/${lang}/${path}/${fileName}.${format}`,
@@ -140,5 +149,6 @@ export const fetchImages = async ({
     }
   }
 
-  writeFileSync(`./public/data/heraldry/${lang}/${path}-map.json`, JSON.stringify(contentToSave, null, 4));
+  writeFileSync(`./public/data/heraldry/${lang}/${path}-map.json`, JSON.stringify(contentToSaveForMap, null, 4));
+  writeFileSync(`./public/data/heraldry/${lang}/${path}-dev.json`, JSON.stringify(contentToSaveForDevMode, null, 4));
 };
