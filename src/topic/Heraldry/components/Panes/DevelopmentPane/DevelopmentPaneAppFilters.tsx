@@ -8,6 +8,8 @@ import { MarkerParams } from '@/topic/Heraldry/types';
 import IconSelected from '@/components/Icons/IconSelected';
 import Pane from '@/components/UI/Pane';
 
+import DevelopmentPaneSnippet from './DevelopmentPaneSnippet';
+
 type FetchParmas = {
   country: string,
 }
@@ -86,12 +88,8 @@ const DevelopmentPaneAppFilters = ({
           {'. '}
         </p>
       </div>
-        {isError && <div>
-          Error!: {JSON.stringify(error)}  
-        </div>}
         <select
           disabled={isLoading}
-          value={pickedFilter}
           onChange={handleClick}
           className={clxs('sans w-full p-1 px-2 text-[14px] bg-white border', {
             'rounded-b-[4px]': !pickedFilter
@@ -117,9 +115,7 @@ const DevelopmentPaneAppFilters = ({
             ))}
           </>}
         </select>
-        {pickedFilter && <pre className="p-2 bg-black text-[#ffeb9b] text-[12px] leading-[16px] rounded-b-[4px]">
-          {JSON.stringify(pickedFilter, null, 2)}
-        </pre>}
+        {pickedFilter && <DevelopmentPaneSnippet {...pickedFilter} />}
     </Pane>
   );
 }

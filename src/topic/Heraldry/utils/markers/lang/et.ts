@@ -469,4 +469,4 @@ export const getMarkers = ({
     animals,
     items,
   }
-}
+};

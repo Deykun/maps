@@ -9,7 +9,7 @@ import { resolve } from 'path';
 import { AdministrativeUnit } from '../../../src/topic/Heraldry/types';
 
 import { getImageFileName, getCompressedImageSrc } from './get-image-file-name';
-import { getMarkers } from './get-markers';
+import { getMarkers } from '../../../src/topic/Heraldry/utils/markers/getMarkers';
 
 import { getImageColors } from './helpers/colors'
 
