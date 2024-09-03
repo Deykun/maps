@@ -129,11 +129,11 @@ export const getFilteredUnits = (
   const isCustomFilterActive = customFilter && Array.isArray(customFilter.result);
   if (isCustomFilterActive) {
     const InNewButNotOld = filteredUnits.filter(({ markers }) => {
-      return ![...(markers?.animals || []), 'empty'].includes(customFilter.name)
+      return ![...(markers?.items || []), 'empty'].includes(customFilter.name)
     });
 
     const InOldButNotNew = units.filter(({ id, markers }) => {
-      return [...(markers?.animals || []), 'empty'].includes(customFilter.name) && !filteredUnits.some((u) => u.id === id);
+      return [...(markers?.items || []), 'empty'].includes(customFilter.name) && !filteredUnits.some((u) => u.id === id);
     });
 
     console.log({
