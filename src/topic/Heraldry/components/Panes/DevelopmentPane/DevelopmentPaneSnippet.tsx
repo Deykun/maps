@@ -15,7 +15,7 @@ const DevelopmentPaneSnippet = ({
   }
 
   return (
-    <pre className="w-full p-2 bg-black whitespace-break-spaces text-[#fdb39d] text-[12px] leading-[16px] rounded-b-[4px]">
+    <pre className="w-full p-2 bg-black whitespace-break-spaces text-[#fdb39d] text-[12px] leading-[16px]">
       {'{'}
       <br />
       {' '}"name": "<span className="text-white">{name}</span>",

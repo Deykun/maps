@@ -15,7 +15,7 @@
     "fetch:pl:powiaty-map": "tsx scripts/heraldry/pl/fetch-powiaty-map.ts",
     "fetch:pl:wojewodztwa": "tsx scripts/heraldry/pl/fetch-wojewodztwa.ts",
     "fetch:pl:wojewodztwa-map": "tsx scripts/heraldry/pl/fetch-wojewodztwa-map.ts",
-    "index:pl": "npm run fetch:pl:gminy-map & nodemon --watch scripts/heraldry/pl/utils/get-markers.ts --exec npm run fetch:pl:miasta-map & nodemon --watch scripts/heraldry/pl/utils/get-markers.ts --exec npm run fetch:pl:powiaty-map",
+    "index:pl": "npm run fetch:pl:gminy-map & npm run fetch:pl:miasta-map & npm run fetch:pl:powiaty-map & npm run fetch:pl:wojewodztwa-map",
     "watch:pl": "nodemon --watch scripts/heraldry/* --exec npm run index:pl",
     "resize:pl": "tsx scripts/heraldry/pl/resize-images.ts",
     "web:pl": "tsx scripts/heraldry/pl/web-images.ts",

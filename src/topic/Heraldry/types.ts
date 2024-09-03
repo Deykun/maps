@@ -20,6 +20,15 @@ export type ColorStatus = Greyscale & {
   distance: number,
 }
 
+export type AdministrativeUnitIndex = {
+  id: string,
+  title: string,
+  url: string,
+  description: string,
+  imageUrl?: string,
+  imageSrcSet?: string,
+}
+
 export type AdministrativeUnit = {
   lang: string,
   id: string,
@@ -75,4 +84,9 @@ export type MarkerParams = {
   phrases?: string[],
   exclude?: string[],
   include?: string[],
+}
+
+export type MarkerParamsWithResult = MarkerParams & {
+  isActive?: boolean,
+  result?: string[],
 }

@@ -1,4 +1,4 @@
-import { AdministrativeUnit } from '../types';
+import { MarkerParamsWithResult, AdministrativeUnit } from '../types';
 import { WITH_ANIMAL, WITHOUT_ANIMAL } from '../constants';
 
 export type SubtitlePart = {
@@ -17,6 +17,7 @@ export const getFilteredUnits = (
   units: AdministrativeUnit[],
   filterOperator: 'and' | 'or',
   shouldReverseFilters: boolean,
+  customFilter: MarkerParamsWithResult | undefined,
   typeFilers: string[],
   colorFilters: string[],
   animalFilters: string[],
@@ -34,6 +35,17 @@ export const getFilteredUnits = (
 
   const filteredUnits = units.filter(
     (unit) => {
+      const isCustomFilterActive = customFilter && customFilter.isActive && Array.isArray(customFilter.result);
+      if (isCustomFilterActive) {
+        if ((customFilter.result?.length || 0) === 0) {
+          return filterResponse.notMatches;
+        }
+
+        if (!customFilter.result?.includes(unit.id)) {
+          return filterResponse.notMatches;
+        }
+      }
+
       const isTypeFilterActive = typeFilers.length > 0;
       if (isTypeFilterActive) {
         if ((unit?.type?.length || 0) === 0) {
@@ -113,11 +125,38 @@ export const getFilteredUnits = (
     }
   );
 
+  // Remove after
+  const isCustomFilterActive = customFilter && Array.isArray(customFilter.result);
+  if (isCustomFilterActive) {
+    const InNewButNotOld = filteredUnits.filter(({ markers }) => {
+      return ![...(markers?.animals || []), 'empty'].includes(customFilter.name)
+    });
+
+    const InOldButNotNew = units.filter(({ id, markers }) => {
+      return [...(markers?.animals || []), 'empty'].includes(customFilter.name) && !filteredUnits.some((u) => u.id === id);
+    });
+
+    console.log({
+      InNewButNotOld,
+      InOldButNotNew,
+      exclude: InNewButNotOld.map(({ title }) => title),
+      excludeText: InNewButNotOld.map(({ title }) => `"${title}"`).join(','),
+      include: InOldButNotNew.map(({ title }) => title),
+      includeText: InOldButNotNew.map(({ title }) => `"${title}"`).join(','),
+    })
+    console.log(InNewButNotOld.map(({ title }) => `"${title}"`).join(','));
+  }
+
   const unitsForMap = filteredUnits.filter(
     (unit) => typeof unit?.place?.coordinates?.lon === 'number' && typeof unit?.imageUrl === 'string',
   );
 
   const subtitleParts: { operator: 'or' | 'and', labels: string[] }[] = [];
+
+  if ((customFilter?.phrases || []).length > 0 && Array.isArray(customFilter?.result)) {
+    // Phrases always work as or
+    subtitleParts.push({ operator: 'or', labels: (customFilter?.phrases?.map((value) => `„${value}”`) || []) })
+  }
 
   if (typeFilers.length > 0) {
     // Using and operator for type like city, county is pointless

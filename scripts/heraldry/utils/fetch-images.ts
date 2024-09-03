@@ -96,9 +96,10 @@ export const fetchImages = async ({
       contentToSaveForDevMode[fileName] = {
         id: unit.id || '',
         title: unit.title,
-        shortTitle:  unit.shortTitle || '',
         url: unit.url || '',
         description:  unit.description || '',
+        imageUrl: unit.imageUrl || '',
+        imageSrcSet: unit.imageSrcSet || '',
       };
 
       try {
