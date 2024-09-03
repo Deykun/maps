@@ -18,23 +18,24 @@ type FetchParmas = {
 }
 
 const fetchData = async ({ country }: FetchParmas) => {
-  // const response = await fetch(`/maps/data/heraldry/${country}/filters.json`).then((response) => response.json());
+  const response = await fetch(`/maps/data/heraldry/${country}/filters.json`).then((response) => response.json());
 
-  // const {
-  //   animals = [] as MarkerParams[],
-  //   items = [] as MarkerParams[],
-  // } = response || {};
-  
   const {
-    animals,
-    items,
-  }: {
-    animals: MarkerParams[],
-    items: MarkerParams[],
-  } = {
-    animals: [],
-    items: [],
-  }
+    animals = [] as MarkerParams[],
+    items = [] as MarkerParams[],
+  } = response || {};
+  
+  // TODO: migrate ET
+  // const {
+  //   animals,
+  //   items,
+  // }: {
+  //   animals: MarkerParams[],
+  //   items: MarkerParams[],
+  // } = {
+  //   animals: [],
+  //   items: [],
+  // }
 
   return {
     animals,

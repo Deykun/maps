@@ -152,10 +152,20 @@ export const getFilteredUnits = (
   );
 
   const subtitleParts: { operator: 'or' | 'and', labels: string[] }[] = [];
+  
+  if (customFilter && customFilter.isActive) {
+    if ((customFilter?.include || []).length > 0) {
+      subtitleParts.push({ operator: 'and', labels: [`+${(customFilter?.include || []).length} ⛨`] })
+    }
 
-  if ((customFilter?.phrases || []).length > 0 && Array.isArray(customFilter?.result)) {
-    // Phrases always work as or
-    subtitleParts.push({ operator: 'or', labels: (customFilter?.phrases?.map((value) => `„${value}”`) || []) })
+    if ((customFilter?.exclude || []).length > 0) {
+      subtitleParts.push({ operator: 'and', labels: [`-${(customFilter?.exclude || []).length} ⛨`] })
+    }
+
+    if ((customFilter?.phrases || []).length > 0 && Array.isArray(customFilter?.result)) {
+      // Phrases always work as or
+      subtitleParts.push({ operator: 'or', labels: (customFilter?.phrases?.map((value) => `„${value}”`) || []) })
+    }
   }
 
   if (typeFilers.length > 0) {
