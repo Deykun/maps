@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 
 import { AdministrativeUnit, MapOffset } from '@/topic/Heraldry/types';
 // import SvgMap from './SvgMap';
+import { mapPadding } from '@/topic/Heraldry/constants'
 import { render, onResize, setCoatOfArms, getCoatOfArmsForXandY, setCoatSize } from './canvas/render';
 
 import useDebouncedResizeObserver from '@/hooks/useDebouncedResizeObserver'
@@ -21,11 +22,12 @@ import './HeraldryCanvas.scss';
 type Props = {
   units: AdministrativeUnit[],
   setSelected: (units: AdministrativeUnit[]) => void,
+  children: React.ReactNode,
   mapOffset: MapOffset,
   coatSize: number,
 }
 
-const HeraldryCanvas = ({ units, setSelected, mapOffset, coatSize }: Props) => {
+const HeraldryCanvas = ({ units, setSelected, children, mapOffset, coatSize }: Props) => {
   const [dpi, setDpi] = useState(window.devicePixelRatio)
   const [
     settings,
@@ -69,7 +71,7 @@ const HeraldryCanvas = ({ units, setSelected, mapOffset, coatSize }: Props) => {
     setDpi(window.devicePixelRatio);
     setCoatSize(coatSize);
   }, [coatSize]);
-
+children
   // const handleMapClick = useCallback((event: React.MouseEvent<HTMLElement>) => {
   //   const x = event.nativeEvent.offsetX;
   //   const y = event.nativeEvent.offsetY;
@@ -86,9 +88,10 @@ const HeraldryCanvas = ({ units, setSelected, mapOffset, coatSize }: Props) => {
       ref={wrapperRef}
       className="heraldry-canvas absolute top-0 left-0 size-full"
       // onClick={handleMapClick}
+      style={{ padding: mapPadding }}
     >
-      <canvas ref={canvasRef} className="absolute top-0 left-0 size-full" />
-
+      {children}
+      <canvas ref={canvasRef} className="absolute top-0 left-0 size-full pointer-events-none" />
     </div>
   );
 }

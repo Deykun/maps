@@ -7,7 +7,6 @@ import { isLanguageSupported } from '@/utils/lang';
 
 import { MapsSearchParams, getSearchParamFromFilters } from '@/topic/Heraldry/utils/getSearchParams'
 import { MarkerParamsWithResult, AdministrativeUnit, MapOffset } from '@/topic/Heraldry/types';
-import { mapPadding } from '@/topic/Heraldry/constants'
 
 import { GetFilterResponse } from '@/topic/Heraldry/utils/getFilter';
 import { getFilteredUnits } from '@/topic/Heraldry/utils/getFilteredUnits';
@@ -133,15 +132,16 @@ const CountryHeraldry = ({
                 className={clsx(mapWrapperClassName, "map-wrapper z-1 relative mx-auto flex justify-center items-center", {
                   'max-h-[60lvh]': zoomLevel === 1,
                 })}
-                style={zoomLevel === 1 ? { padding: mapPadding } : { padding: mapPadding, width: `max(${(zoomLevel - 1) * 500}px, ${(zoomLevel - 1) * 80}vw` }}
+                style={zoomLevel === 1 ? { } : { width: `max(${(zoomLevel - 1) * 500}px, ${(zoomLevel - 1) * 80}vw` }}
               >
-                <MapBackground />
-                {unitsForMap.length > 0 && <HeraldryCanvas
+                <HeraldryCanvas
                   units={unitsForMap}
                   setSelected={() => {}}
                   mapOffset={mapOffset}
                   coatSize={((coatSize + 1) / 11) * 80}
-                />}
+                >
+                  <MapBackground />
+                </HeraldryCanvas>
                 {/* <div>
                     {unitsForMap.map(
                       (unit) => {
