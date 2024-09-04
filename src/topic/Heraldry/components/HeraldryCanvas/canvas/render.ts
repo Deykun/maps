@@ -48,7 +48,7 @@ const initEventListeners = () => {
 
 let wasInited = false;
 
-export const onResize = (settings: SettingsParams) => {
+export const onResize = (settings: SettingsParams, mapOffset: MapOffset) => {
   canvas.width = canvas.width;
   canvas.height = canvas.width / (aspectRation.x / aspectRation.y );
 

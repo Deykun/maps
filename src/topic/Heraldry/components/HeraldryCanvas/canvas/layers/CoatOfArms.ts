@@ -1,30 +1,6 @@
 import { SettingsParams } from '../../types';
-import { spriteSize, spriteOffset } from '@/topic/Heraldry/constants'
+import { spriteSize, spriteOffset, mapPadding } from '@/topic/Heraldry/constants'
 import { MapOffset } from '@/topic/Heraldry/types';
-
-const minLonX = -177.5;
-const maxLonX = 180;
-
-//   function getCanvasY(latX: number, rawMapHeight: number, settings: SettingsParams) {
-//     const mapHeight = rawMapHeight * (settings.mapHeightStreech ?? 1);
-//     const topPadding = settings.latTop / 100 * mapHeight;
-//     // Earth's radius in meters (mean radius)
-//     const R = 6378137;
-
-//     // Convert latitude from degrees to radians
-//     const latRadians = (latX + settings.latShift) * (Math.PI / 180);
-
-//     // Mercator projection formula to find y coordinate
-//     const y = R * Math.log(Math.tan((Math.PI / 4) + (latRadians / 2)));
-
-//     // Scale the y value to fit within the map's height
-//     // Normalize y to be within the range of the map's height
-//     const mapY = topPadding + (mapHeight / 2) - (y / (2 * Math.PI * R) * mapHeight);
-
-//     return mapY;
-// }
-
-const mapWidth = maxLonX - minLonX;
 
 export class CoatOfArms {
   canvas: HTMLCanvasElement;
@@ -104,11 +80,6 @@ export class CoatOfArms {
       maxLatTop,
       minLonLeft,
       maxLonLeft,
-
-      // minLatTop: 49,
-      // maxLatTop: 54.95,
-      // minLonLeft: 13.98,
-      // maxLonLeft: 24.25,
     } = mapOffset;
 
     const widthLon = Math.abs(minLonLeft - maxLonLeft);
@@ -117,29 +88,12 @@ export class CoatOfArms {
     const percentageX = (this.lonX - minLonLeft) / widthLon;
     const percentageY = (maxLatTop - this.latY) / heightLat;
 
-    // const mapWidth = Math.abs(maxRight - maxLeft);
-    // const mapHeight = Math.abs(maxTop - maxBottom);
+    const scaledMapPadding = mapPadding * window.devicePixelRatio;
 
-    // const percentageX =  (this.lonX - maxLeft) / mapWidth;
-    // const percentageY = (this.latY - maxTop) / mapHeight;
+    const canvas = this.canvas.getClientRects()[0];
 
-    this.x = this.canvas.width * percentageX;
-    this.y = this.canvas.height * percentageY;
-
-    console.log({
-      percentageX,
-      percentageY,
-      widthLon,
-      heightLat,
-      w: this.canvas.width,
-      h: this.canvas.height,
-      lonX: this.lonX,
-      latY: this.latY,
-      x: this.x,
-      y: this.y,
-    })
-
-
+    this.x = ((canvas.width * window.devicePixelRatio) - (2 * scaledMapPadding)) * percentageX + scaledMapPadding;
+    this.y = ((canvas.height * window.devicePixelRatio) - (2 * scaledMapPadding)) * percentageY + scaledMapPadding;
   }
 
   setSize(size: number) {

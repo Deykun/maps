@@ -8,9 +8,10 @@ import { useTranslation } from 'react-i18next';
 
 import { AdministrativeUnit, MapOffset } from '@/topic/Heraldry/types';
 // import SvgMap from './SvgMap';
-import { render, onResize, setCoatOfArms, getCoatOfArmsForXandY } from './canvas/render';
+import { render, onResize, setCoatOfArms, getCoatOfArmsForXandY, setCoatSize } from './canvas/render';
 
-import useEffectChange from '../../../hooks/useEffectChange'
+import useDebouncedResizeObserver from '@/hooks/useDebouncedResizeObserver'
+import useEffectChange from '@/hooks/useEffectChange'
 
 // import MapGrid from './dev/MapGrid';
 // import HeraldryCanvasAligmentTools from './dev/HeraldryCanvasAligmentTools';
@@ -21,9 +22,11 @@ type Props = {
   units: AdministrativeUnit[],
   setSelected: (units: AdministrativeUnit[]) => void,
   mapOffset: MapOffset,
+  coatSize: number,
 }
 
-const HeraldryCanvas = ({ units, setSelected, mapOffset }: Props) => {
+const HeraldryCanvas = ({ units, setSelected, mapOffset, coatSize }: Props) => {
+  const [dpi, setDpi] = useState(window.devicePixelRatio)
   const [
     settings,
     // setSettings,
@@ -34,6 +37,8 @@ const HeraldryCanvas = ({ units, setSelected, mapOffset }: Props) => {
   });
 
   const { t } = useTranslation();
+
+  const { ref: wrapperRef, dimensions } = useDebouncedResizeObserver<HTMLDivElement>(10);
 
   // const prevWidth = usePrevious(width, width);
 
@@ -47,7 +52,7 @@ const HeraldryCanvas = ({ units, setSelected, mapOffset }: Props) => {
 
       if (ctx) {
         render({ canvas: canvasRef.current, ctx, mapOffset });
-        onResize(settings);
+        onResize(settings, mapOffset);
       }
     }
   }, [canvasRef.current]);
@@ -56,9 +61,14 @@ const HeraldryCanvas = ({ units, setSelected, mapOffset }: Props) => {
     setCoatOfArms(units, settings);
   }, [units]);
 
-  // useEffectChange(() => {
-  //   onResize(settings);
-  // }, [settings, width]);
+  useEffectChange(() => {
+    onResize(settings, mapOffset);
+  }, [settings, dimensions?.width]);
+
+  useEffectChange(() => {
+    setDpi(window.devicePixelRatio);
+    setCoatSize(coatSize);
+  }, [coatSize]);
 
   // const handleMapClick = useCallback((event: React.MouseEvent<HTMLElement>) => {
   //   const x = event.nativeEvent.offsetX;
@@ -71,14 +81,13 @@ const HeraldryCanvas = ({ units, setSelected, mapOffset }: Props) => {
   //   setSelected(selectedUnits);
   // }, []);
 
-  // const aspectRatio = `${SvgMap.aspectX} / ${SvgMap.aspectY}`
-
   return (
     <div
+      ref={wrapperRef}
       className="heraldry-canvas absolute top-0 left-0 size-full"
       // onClick={handleMapClick}
     >
-      <canvas ref={canvasRef} className='size-full' />
+      <canvas ref={canvasRef} className="absolute top-0 left-0 size-full" />
 
     </div>
   );
