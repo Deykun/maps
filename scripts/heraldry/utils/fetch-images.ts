@@ -98,8 +98,8 @@ export const fetchImages = async ({
         title: unit.title,
         url: unit.url || '',
         description:  unit.description || '',
-        imageUrl: unit.imageUrl || '',
-        imageSrcSet: unit.imageSrcSet || '',
+        imageUrl: `images/heraldry/${lang}/${path}/${fileName}.${format}`,
+        imageSrcSet: srcSet,
       };
 
       try {

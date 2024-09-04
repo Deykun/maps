@@ -24,18 +24,6 @@ const fetchData = async ({ country }: FetchParmas) => {
     animals = [] as MarkerParams[],
     items = [] as MarkerParams[],
   } = response || {};
-  
-  // TODO: migrate ET
-  // const {
-  //   animals,
-  //   items,
-  // }: {
-  //   animals: MarkerParams[],
-  //   items: MarkerParams[],
-  // } = {
-  //   animals: [],
-  //   items: [],
-  // }
 
   return {
     animals,

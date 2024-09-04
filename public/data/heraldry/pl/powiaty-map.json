@@ -725,8 +725,8 @@
             "animals": [
                 "eagle",
                 "owl",
-                "bird",
-                "dragon"
+                "dragon",
+                "bird"
             ],
             "items": [
                 "cross",
@@ -1848,7 +1848,9 @@
             "animals": [
                 "deer"
             ],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "herb-powiatu-kamiennogorskiego": {
@@ -3861,8 +3863,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "lion"
+                "lion",
+                "bird"
             ],
             "items": [
                 "cross",
@@ -4599,8 +4601,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "fish"
+                "fish",
+                "bird"
             ],
             "items": []
         }
@@ -5215,7 +5217,6 @@
         "markers": {
             "animals": [
                 "eagle",
-                "rooster",
                 "bird"
             ],
             "items": [
@@ -6914,8 +6915,8 @@
             ],
             "items": [
                 "lily",
-                "flower",
-                "cross"
+                "cross",
+                "flower"
             ]
         }
     },
@@ -7242,8 +7243,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "bullBison"
+                "bullBison",
+                "bird"
             ],
             "items": []
         }
@@ -7513,10 +7514,11 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "lion"
+                "lion",
+                "bird"
             ],
             "items": [
+                "walls",
                 "cross",
                 "crown",
                 "saint"
@@ -10173,8 +10175,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "lion"
+                "lion",
+                "bird"
             ],
             "items": [
                 "crown"
@@ -10462,9 +10464,7 @@
             "animals": [
                 "deer"
             ],
-            "items": [
-                "arm"
-            ]
+            "items": []
         }
     },
     "herb-powiatu-bydgoskiego": {
@@ -10759,8 +10759,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "lion"
+                "lion",
+                "bird"
             ],
             "items": [
                 "walls",
@@ -11320,8 +11320,7 @@
         "shortTitle": "Herb p. golubsko-dobrzyńskiego",
         "markers": {
             "animals": [
-                "pigeon",
-                "bird"
+                "pigeon"
             ],
             "items": [
                 "tree"
@@ -11651,8 +11650,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "lion"
+                "lion",
+                "bird"
             ],
             "items": [
                 "crown"
@@ -12324,8 +12323,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "lion"
+                "lion",
+                "bird"
             ],
             "items": [
                 "crown"
@@ -12686,8 +12685,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "bullBison"
+                "bullBison",
+                "bird"
             ],
             "items": [
                 "crown"
@@ -13416,8 +13415,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "lion"
+                "lion",
+                "bird"
             ],
             "items": [
                 "sword",
@@ -13780,8 +13779,8 @@
             "animals": [],
             "items": [
                 "lily",
-                "flower",
-                "saint"
+                "saint",
+                "flower"
             ]
         }
     },
@@ -14636,9 +14635,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
                 "griffin",
-                "fish"
+                "bird"
             ],
             "items": [
                 "sword",
@@ -15332,8 +15330,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "lion"
+                "lion",
+                "bird"
             ],
             "items": [
                 "crown"
@@ -16693,8 +16691,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "bear"
+                "bear",
+                "bird"
             ],
             "items": [
                 "crown"
@@ -18491,8 +18489,7 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "leopard"
+                "bird"
             ],
             "items": [
                 "crown"
@@ -20244,8 +20241,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "deer"
+                "deer",
+                "bird"
             ],
             "items": [
                 "cross"
@@ -23403,8 +23400,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "bullBison"
+                "bullBison",
+                "bird"
             ],
             "items": []
         }
@@ -24848,7 +24845,10 @@
         ],
         "shortTitle": "Herb p. strzelecko-drezdeneckiego",
         "markers": {
-            "animals": [],
+            "animals": [
+                "eagle",
+                "bird"
+            ],
             "items": [
                 "lily",
                 "rose",
@@ -27351,13 +27351,13 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "lion"
+                "lion",
+                "bird"
             ],
             "items": [
                 "lily",
-                "flower",
-                "crown"
+                "crown",
+                "flower"
             ]
         }
     },
@@ -28584,8 +28584,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "lion"
+                "lion",
+                "bird"
             ],
             "items": [
                 "crown"
@@ -29332,10 +29332,10 @@
             "animals": [],
             "items": [
                 "lily",
-                "flower",
                 "boat",
                 "cross",
-                "saint"
+                "saint",
+                "flower"
             ]
         }
     },
@@ -31043,10 +31043,11 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "lion"
+                "lion",
+                "bird"
             ],
             "items": [
+                "walls",
                 "crown"
             ]
         }
@@ -31638,8 +31639,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "lion"
+                "lion",
+                "bird"
             ],
             "items": [
                 "crown"
@@ -31956,8 +31957,7 @@
                 "bird"
             ],
             "items": [
-                "tree",
-                "flower"
+                "tree"
             ]
         }
     },
@@ -32741,9 +32741,7 @@
         ],
         "shortTitle": "Herb p. wieluńskiego",
         "markers": {
-            "animals": [
-                "ram"
-            ],
+            "animals": [],
             "items": [
                 "cross"
             ]
@@ -33513,11 +33511,10 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "lion"
+                "lion",
+                "bird"
             ],
             "items": [
-                "walls",
                 "crown"
             ]
         }
@@ -35484,8 +35481,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "lion"
+                "lion",
+                "bird"
             ],
             "items": [
                 "crown"
@@ -39997,8 +39994,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "mermaid"
+                "mermaid",
+                "bird"
             ],
             "items": [
                 "crown"
@@ -41853,8 +41850,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "dragon"
+                "dragon",
+                "bird"
             ],
             "items": [
                 "apple",
@@ -43187,8 +43184,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "horse"
+                "horse",
+                "bird"
             ],
             "items": [
                 "sword",
@@ -45096,8 +45093,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "dragon"
+                "dragon",
+                "bird"
             ],
             "items": [
                 "tree",
@@ -45501,8 +45498,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "dragon"
+                "dragon",
+                "bird"
             ],
             "items": []
         }
@@ -45739,9 +45736,7 @@
         ],
         "shortTitle": "Herb p. piaseczyńskiego",
         "markers": {
-            "animals": [
-                "ram"
-            ],
+            "animals": [],
             "items": [
                 "walls"
             ]
@@ -47017,8 +47012,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "dragon"
+                "dragon",
+                "bird"
             ],
             "items": [
                 "sword"
@@ -47864,6 +47859,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "boat",
                 "crown"
             ]
         }
@@ -48889,8 +48885,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "lion"
+                "lion",
+                "bird"
             ],
             "items": []
         }
@@ -49979,8 +49975,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "dragon"
+                "dragon",
+                "bird"
             ],
             "items": []
         }
@@ -50416,6 +50412,7 @@
             ],
             "items": [
                 "sword",
+                "angel",
                 "crown",
                 "saint"
             ]
@@ -50863,8 +50860,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "bear"
+                "bear",
+                "bird"
             ],
             "items": [
                 "crown"
@@ -54217,8 +54214,8 @@
             ],
             "items": [
                 "lily",
-                "flower",
-                "cross"
+                "cross",
+                "flower"
             ]
         }
     },
@@ -58173,8 +58170,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "lion"
+                "lion",
+                "bird"
             ],
             "items": [
                 "cross",
@@ -59331,7 +59328,9 @@
                 "deer",
                 "bullBison"
             ],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "herb-powiatu-nizanskiego": {
@@ -63283,8 +63282,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "moose"
+                "moose",
+                "bird"
             ],
             "items": [
                 "crown"
@@ -63598,8 +63597,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "bullBison"
+                "bullBison",
+                "bird"
             ],
             "items": [
                 "crown"
@@ -64764,6 +64763,7 @@
                 "bird"
             ],
             "items": [
+                "tree",
                 "saint"
             ]
         }
@@ -65033,9 +65033,9 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
                 "deer",
-                "moose"
+                "moose",
+                "bird"
             ],
             "items": []
         }
@@ -65482,8 +65482,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "horse"
+                "horse",
+                "bird"
             ],
             "items": [
                 "sword",
@@ -65782,8 +65782,7 @@
         "shortTitle": "Herb p. sokólskiego",
         "markers": {
             "animals": [
-                "falcon",
-                "bird"
+                "falcon"
             ],
             "items": []
         }
@@ -67221,8 +67220,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "bullBison"
+                "bullBison",
+                "bird"
             ],
             "items": [
                 "crown"
@@ -72431,8 +72430,8 @@
             ],
             "items": [
                 "rose",
-                "flower",
-                "crown"
+                "crown",
+                "flower"
             ]
         }
     },
@@ -74317,9 +74316,9 @@
             ],
             "items": [
                 "lily",
-                "flower",
                 "walls",
-                "crown"
+                "crown",
+                "flower"
             ]
         }
     },
@@ -78579,8 +78578,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "bullBison"
+                "bullBison",
+                "bird"
             ],
             "items": []
         }
@@ -78976,6 +78975,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "tree",
                 "cross",
                 "crown"
             ]
@@ -81814,10 +81814,7 @@
         ],
         "shortTitle": "Herb p. sandomierskiego",
         "markers": {
-            "animals": [
-                "eagle",
-                "bird"
-            ],
+            "animals": [],
             "items": []
         }
     },
@@ -84028,12 +84025,11 @@
         ],
         "shortTitle": "Herb p. braniewskiego",
         "markers": {
-            "animals": [
-                "ram"
-            ],
+            "animals": [],
             "items": [
                 "sword",
                 "tree",
+                "walls",
                 "cross",
                 "wheel",
                 "saint"
@@ -86208,8 +86204,8 @@
             "animals": [],
             "items": [
                 "lily",
-                "flower",
-                "crozier"
+                "crozier",
+                "flower"
             ]
         }
     },
@@ -86979,11 +86975,10 @@
         "shortTitle": "Herb p. lidzbarskiego",
         "markers": {
             "animals": [
-                "ram",
                 "beaver"
             ],
             "items": [
-                "flower",
+                "tree",
                 "crozier"
             ]
         }
@@ -88137,6 +88132,7 @@
             ],
             "items": [
                 "rose",
+                "walls",
                 "flower"
             ]
         }
@@ -88499,6 +88495,7 @@
             ],
             "items": [
                 "tree",
+                "walls",
                 "crown"
             ]
         }
@@ -88584,6 +88581,7 @@
         "markers": {
             "animals": [],
             "items": [
+                "walls",
                 "shell",
                 "saint"
             ]
@@ -88983,9 +88981,7 @@
         ],
         "shortTitle": "Herb p. olsztyńskiego",
         "markers": {
-            "animals": [
-                "ram"
-            ],
+            "animals": [],
             "items": [
                 "walls"
             ]
@@ -91292,8 +91288,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "bullBison"
+                "bullBison",
+                "bird"
             ],
             "items": []
         }
@@ -94219,8 +94215,8 @@
             ],
             "items": [
                 "rose",
-                "flower",
-                "wheel"
+                "wheel",
+                "flower"
             ]
         }
     },
@@ -94593,8 +94589,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "horse"
+                "horse",
+                "bird"
             ],
             "items": []
         }
@@ -94995,14 +94991,14 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "bullBison"
+                "bullBison",
+                "bird"
             ],
             "items": [
                 "key",
                 "rose",
-                "flower",
-                "crown"
+                "crown",
+                "flower"
             ]
         }
     },
@@ -95570,6 +95566,7 @@
                 "bird"
             ],
             "items": [
+                "tree",
                 "walls"
             ]
         }
@@ -95841,7 +95838,9 @@
                 "eagle",
                 "bird"
             ],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "herb-powiatu-obornickiego": {
@@ -96555,8 +96554,8 @@
                 "key",
                 "apple",
                 "rose",
-                "flower",
-                "cross"
+                "cross",
+                "flower"
             ]
         }
     },
@@ -97291,6 +97290,7 @@
             "items": [
                 "key",
                 "sword",
+                "walls",
                 "saint"
             ]
         }
@@ -97651,7 +97651,9 @@
                 "eagle",
                 "bird"
             ],
-            "items": []
+            "items": [
+                "tree"
+            ]
         }
     },
     "herb-powiatu-pleszewskiego": {
@@ -98747,8 +98749,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "bear"
+                "bear",
+                "bird"
             ],
             "items": [
                 "boat"
@@ -99999,8 +100001,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "lion"
+                "lion",
+                "bird"
             ],
             "items": []
         }
@@ -100328,8 +100330,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "bullBison"
+                "bullBison",
+                "bird"
             ],
             "items": [
                 "lily",
@@ -100696,8 +100698,8 @@
             "items": [
                 "axeSaw",
                 "lily",
-                "flower",
-                "cross"
+                "cross",
+                "flower"
             ]
         }
     },
@@ -101391,8 +101393,8 @@
             ],
             "items": [
                 "rose",
-                "flower",
-                "crown"
+                "crown",
+                "flower"
             ]
         }
     },
@@ -104412,8 +104414,8 @@
             ],
             "items": [
                 "rose",
-                "flower",
-                "crozier"
+                "crozier",
+                "flower"
             ]
         }
     },
@@ -106250,10 +106252,13 @@
         "shortTitle": "Herb p. pyrzyckiego",
         "markers": {
             "animals": [
-                "griffin"
+                "eagle",
+                "griffin",
+                "bird"
             ],
             "items": [
                 "earOfGrain",
+                "flower",
                 "crozier"
             ]
         }
@@ -108350,8 +108355,8 @@
         "markers": {
             "animals": [
                 "eagle",
-                "bird",
-                "griffin"
+                "griffin",
+                "bird"
             ],
             "items": [
                 "walls"

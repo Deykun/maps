@@ -43,10 +43,7 @@ export const getHasMarker = (
       `\n${phrase.toLowerCase()}`
     ];
 
-    // TODO: add isEnding support
-    const phrasesToCheck = isEnding 
-      ? words.flatMap((word) => [`${word}`])
-      : words.flatMap((word) => [`${word} `, `${word},`, `${word}.`, `${word})`, `${word}-`, `${word}”`, `${word};`, `${word}:`, `${word}?`]);
+    const phrasesToCheck = words.flatMap((word) => [`${word} `, `${word},`, `${word}.`, `${word})`, `${word}-`, `${word}”`, `${word}"`, `${word};`, `${word}:`, `${word}?`]);
     
     // " bear" -> [" bear", " bear ", " bear,", " bear."]
     return phrasesToCheck.some((phraseToCheck) => lowerCaseText.includes(phraseToCheck));

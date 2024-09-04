@@ -125,28 +125,6 @@ export const getFilteredUnits = (
     }
   );
 
-  // Remove after
-  const isCustomFilterActive = customFilter && Array.isArray(customFilter.result);
-  if (isCustomFilterActive) {
-    const InNewButNotOld = filteredUnits.filter(({ markers }) => {
-      return ![...(markers?.items || []), 'empty'].includes(customFilter.name)
-    });
-
-    const InOldButNotNew = units.filter(({ id, markers }) => {
-      return [...(markers?.items || []), 'empty'].includes(customFilter.name) && !filteredUnits.some((u) => u.id === id);
-    });
-
-    console.log({
-      InNewButNotOld,
-      InOldButNotNew,
-      exclude: InNewButNotOld.map(({ title }) => title),
-      excludeText: InNewButNotOld.map(({ title }) => `"${title}"`).join(','),
-      include: InOldButNotNew.map(({ title }) => title),
-      includeText: InOldButNotNew.map(({ title }) => `"${title}"`).join(','),
-    })
-    console.log(InNewButNotOld.map(({ title }) => `"${title}"`).join(','));
-  }
-
   const unitsForMap = filteredUnits.filter(
     (unit) => typeof unit?.place?.coordinates?.lon === 'number' && typeof unit?.imageUrl === 'string',
   );
