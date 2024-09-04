@@ -6,6 +6,8 @@ import { useTranslation } from 'react-i18next';
 
 // import { useSettingStore } from '@/topic/Heraldry/stores/settingsStore';
 
+import { mergeRefs } from '@/utils/ref';
+
 import { AdministrativeUnit, MapOffset } from '@/topic/Heraldry/types';
 // import SvgMap from './SvgMap';
 import { mapPadding } from '@/topic/Heraldry/constants'
@@ -13,6 +15,10 @@ import { render, onResize, setCoatOfArms, getCoatOfArmsForXandY, setCoatSize } f
 
 import useDebouncedResizeObserver from '@/hooks/useDebouncedResizeObserver'
 import useEffectChange from '@/hooks/useEffectChange'
+
+
+import useHeraldryCursorPosition from '@/topic/Heraldry/components/HeraldryCursor/useHeraldryCursorPosition';
+import HeraldryCursor from '@/topic/Heraldry/components/HeraldryCursor/HeraldryCursor';
 
 // import MapGrid from './dev/MapGrid';
 // import HeraldryCanvasAligmentTools from './dev/HeraldryCanvasAligmentTools';
@@ -71,7 +77,7 @@ const HeraldryCanvas = ({ units, setSelected, children, mapOffset, coatSize }: P
     setDpi(window.devicePixelRatio);
     setCoatSize(coatSize);
   }, [coatSize]);
-children
+// children
   // const handleMapClick = useCallback((event: React.MouseEvent<HTMLElement>) => {
   //   const x = event.nativeEvent.offsetX;
   //   const y = event.nativeEvent.offsetY;
@@ -83,15 +89,22 @@ children
   //   setSelected(selectedUnits);
   // }, []);
 
+  const {
+    position,
+    elementRef,
+  } = useHeraldryCursorPosition();
+
   return (
     <div
-      ref={wrapperRef}
+      ref={mergeRefs(wrapperRef, elementRef)}
       className="heraldry-canvas absolute top-0 left-0 size-full"
       // onClick={handleMapClick}
+      // onMouseOver={handleMouseOver}
       style={{ padding: mapPadding }}
     >
       {children}
       <canvas ref={canvasRef} className="absolute top-0 left-0 size-full pointer-events-none" />
+      <HeraldryCursor top={position.y} left={position.x} />
     </div>
   );
 }
