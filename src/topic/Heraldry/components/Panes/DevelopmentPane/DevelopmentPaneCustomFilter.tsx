@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
 
 import { removeDiacratics } from '@/utils/text';
 
@@ -52,7 +52,7 @@ const DevelopmentPaneCustomFilter = ({
   activeCustomAction,
   setActiveCustomAction,
 }: Props) => {
-  const [processingStatus, setProcessingStatus] = useState<string | undefined>(undefined);
+  const [isProcessing, setIsProcessing] = useState(false);
   const [draftFilter, setDraftFilter] = useState<MarkerParams>({
     name: customFilter?.name || '',
     phrases: customFilter?.phrases || [],
@@ -60,7 +60,7 @@ const DevelopmentPaneCustomFilter = ({
     exclude: customFilter?.exclude || [],
   });
 
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   const {
     isLoading,
@@ -95,11 +95,11 @@ const DevelopmentPaneCustomFilter = ({
   }, []);
 
   const applyFilter = () => {
-    setProcessingStatus('fetching...')
-
     if (!data) {
       return;
     }
+
+    setIsProcessing(true);
 
     const filteredUnits = data.filter(({ title, description }) => getHasMarker(
       {
@@ -112,7 +112,7 @@ const DevelopmentPaneCustomFilter = ({
       },
     ));
 
-    setProcessingStatus(undefined);
+    setIsProcessing(false);
 
     if ((draftFilter.phrases?.length || 0) === 0) {
       setCustomFilter();
@@ -127,7 +127,7 @@ const DevelopmentPaneCustomFilter = ({
     });
   }
 
-  const isDisabled = isLoading || Boolean(processingStatus);
+  const isDisabled = isLoading || isProcessing;
 
   return (
     <Pane className="fixed left-12 mt-3 w-[400px] max-h-[calc(100%_-_1.5rem)] overflow-auto top-0 ml-6">

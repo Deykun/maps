@@ -20,10 +20,8 @@ type FetchParmas = {
 const fetchData = async ({ country }: FetchParmas) => {
   const response = await fetch(`/maps/data/heraldry/${country}/filters.json`).then((response) => response.json());
 
-  const {
-    animals = [] as MarkerParams[],
-    items = [] as MarkerParams[],
-  } = response || {};
+  const animals = (response.animals || []) as MarkerParams[];
+  const items = (response.animals || []) as MarkerParams[];
 
   return {
     animals,
