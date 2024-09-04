@@ -6,12 +6,13 @@ import { useDraggable } from "react-use-draggable-scroll";
 import { isLanguageSupported } from '@/utils/lang';
 
 import { MapsSearchParams, getSearchParamFromFilters } from '@/topic/Heraldry/utils/getSearchParams'
-import { AdministrativeUnit } from '@/topic/Heraldry/types';
+import { MarkerParamsWithResult, AdministrativeUnit } from '@/topic/Heraldry/types';
 
 import { GetFilterResponse } from '@/topic/Heraldry/utils/getFilter';
 import { getFilteredUnits } from '@/topic/Heraldry/utils/getFilteredUnits';
 import { getPostionForPlace } from '@/topic/Heraldry/utils/getPostionForPlace';
 
+import DevelopmentPane from '@/topic/Heraldry/components/Panes/DevelopmentPane';
 import NavigationPane from '@/topic/Heraldry/components/Panes/NavigationPane';
 import ZoomPane from '@/topic/Heraldry/components/Panes/ZoomPane';
 import UnitsPane from '@/topic/Heraldry/components/Panes/UnitsPane';
@@ -44,11 +45,13 @@ const CountryHeraldry = ({
   initialFilters = {}
 }: Props) => {
     const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
+    const [isDevModeActive, setIsDevModeActive] = useState(false);
     const [listPhrase, setListPhrase] = useState('');
     const [filterOperator, setFilterOperator] = useState<'and' | 'or'>(initialFilters.filterOperator || 'and');
     const [shouldReverseFilters, setShouldReverseFilters] = useState(initialFilters.shouldReverseFilters || false);
     const [zoomLevel, setZoomLevel] = useState(1);
     const [coatSize, setCoatSize] = useState(3);
+    const [customFilter, setCustomFilter] = useState<MarkerParamsWithResult | undefined>(undefined);
     const [typeFilters, setTypeFilters] = useState<string[]>(initialFilters.typeFilters || []);
     const [colorFilters, setColorFilters] = useState<string[]>(initialFilters.colorFilters || []);
     const [animalFilters, setAnimalFilters] = useState<string[]>(initialFilters.animalFilters || []);
@@ -74,7 +77,7 @@ const CountryHeraldry = ({
         filteredUnits,
         unitsForMap,
         subtitleParts,
-      } = getFilteredUnits(lang, allUnits, filterOperator, shouldReverseFilters, typeFiltersToPass, colorFilters, animalFilters, itemFilters);
+      } = getFilteredUnits(lang, allUnits, filterOperator, shouldReverseFilters, customFilter, typeFiltersToPass, colorFilters, animalFilters, itemFilters);
 
       setListPhrase('');
 
@@ -89,7 +92,7 @@ const CountryHeraldry = ({
         unitsForMap,
         subtitleParts,
       }
-    }, [filterOperator, shouldReverseFilters, colorFilters, typeFilters, animalFilters, itemFilters]);
+    }, [lang, allUnits, filterOperator, shouldReverseFilters, customFilter, typeFilters, colorFilters, animalFilters, itemFilters]);
 
     return (
         <>
@@ -167,6 +170,15 @@ const CountryHeraldry = ({
             'hidden md:block': zoomLevel > 1 && subtitleParts.length !== 0,
           })}>
             <NavigationPane />
+            {isDevModeActive &&
+              <DevelopmentPane
+                country={lang}
+                unitTypes={typeFiltersList.map(({ value }) => value)}
+                customFilter={customFilter}
+                setCustomFilter={setCustomFilter}
+                unitNameForAction={listPhrase}
+              />
+            }
           </div>
           <div className="fixed top-3 right-3 z-20 flex flex-col gap-3 pointer-events-none">
             <ZoomPane
@@ -201,6 +213,8 @@ const CountryHeraldry = ({
               setFilterOperator={setFilterOperator}
               shouldReverseFilters={shouldReverseFilters}
               setShouldReverseFilters={setShouldReverseFilters}
+              isDevModeActive={isDevModeActive}
+              setIsDevModeActive={setIsDevModeActive}
             />
           </div>
         </>

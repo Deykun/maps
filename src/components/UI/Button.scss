@@ -1,0 +1,55 @@
+@import "@/scss/mixins.scss";
+
+.ui-button {
+  > a,
+  > button {
+    @apply inline-flex justify-center items-center h-8 px-3 shadow-sm rounded-sm;
+
+    color: #312f2f;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: white;
+    border-radius: 50px;
+    transition: 0.05s ease-in-out;
+    
+    @include hoverOnDesktopActiveOnMobile {
+      color: #d2543a;
+      background: #ffffff;
+      box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.18) 0px 1px 2px 0px;
+    }
+
+    &:disabled {
+      color: #aaa;
+    }
+
+    > span {
+      @include sans;
+
+      font-weight: 500;
+      font-size: 12px;
+
+      &:not(:first-child) {
+        @apply ml-2;
+      }
+
+      &:not(:last-child) {
+        @apply mr-2;
+      }
+    }
+
+    > img,
+    > svg {
+      @apply size-5;
+
+      fill: currentColor;
+      transition: ease-in-out 0.2s;
+    }
+  }
+}
+
+.ui-button--active {
+  > a,
+  > button {
+    color: #d2543a;
+  }
+}

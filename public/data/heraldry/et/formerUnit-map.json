@@ -2142,9 +2142,7 @@
         "shortTitle": "Ambla valla vapp",
         "markers": {
             "animals": [],
-            "items": [
-                "flower"
-            ]
+            "items": []
         }
     },
     "are-valla-vapp": {
@@ -3655,9 +3653,7 @@
         "shortTitle": "Emmaste valla vapp",
         "markers": {
             "animals": [],
-            "items": [
-                "boat"
-            ]
+            "items": []
         }
     },
     "haanja-valla-vapp": {
@@ -12095,10 +12091,7 @@
         ],
         "shortTitle": "Kolga-Jaani valla vapp",
         "markers": {
-            "animals": [
-                "eagle",
-                "bird"
-            ],
+            "animals": [],
             "items": []
         }
     },
@@ -13941,7 +13934,6 @@
         "markers": {
             "animals": [],
             "items": [
-                "flower",
                 "bell",
                 "walls"
             ]
@@ -17735,8 +17727,8 @@
         "shortTitle": "Loksa valla vapp",
         "markers": {
             "animals": [
-                "salmon",
-                "fish"
+                "fish",
+                "salmon"
             ],
             "items": [
                 "tree"
@@ -18362,9 +18354,7 @@
         "shortTitle": "Lääne-Nigula valla vapp",
         "markers": {
             "animals": [],
-            "items": [
-                "flower"
-            ]
+            "items": []
         }
     },
     "laanesaare-valla-vapp": {
@@ -18925,9 +18915,7 @@
         "shortTitle": "Martna valla vapp",
         "markers": {
             "animals": [
-                "eagle",
-                "horse",
-                "bird"
+                "horse"
             ],
             "items": []
         }
@@ -19272,8 +19260,8 @@
                 "fish"
             ],
             "items": [
-                "lighthouse",
-                "walls"
+                "walls",
+                "lighthouse"
             ]
         }
     },
@@ -22338,9 +22326,7 @@
         "shortTitle": "Noarootsi valla vapp",
         "markers": {
             "animals": [],
-            "items": [
-                "boat"
-            ]
+            "items": []
         }
     },
     "nova-valla-vapp": {
@@ -25141,7 +25127,9 @@
         "shortTitle": "Palamuse valla vapp",
         "markers": {
             "animals": [],
-            "items": []
+            "items": [
+                "bell"
+            ]
         }
     },
     "palupera-valla-vapp": {
@@ -26957,10 +26945,7 @@
         ],
         "shortTitle": "Puurmani valla vapp",
         "markers": {
-            "animals": [
-                "eagle",
-                "bird"
-            ],
+            "animals": [],
             "items": [
                 "tree"
             ]
@@ -27970,9 +27955,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "lily",
-                "cross",
-                "flower"
+                "cross"
             ]
         }
     },
@@ -31493,9 +31476,7 @@
         "shortTitle": "Salme valla vapp",
         "markers": {
             "animals": [],
-            "items": [
-                "boat"
-            ]
+            "items": []
         }
     },
     "sangaste-valla-vapp": {
@@ -35626,9 +35607,7 @@
             "animals": [
                 "bullBison"
             ],
-            "items": [
-                "crown"
-            ]
+            "items": []
         }
     },
     "tootsi-valla-vapp": {
@@ -36222,9 +36201,9 @@
         "markers": {
             "animals": [],
             "items": [
+                "walls",
                 "crown",
-                "lighthouse",
-                "walls"
+                "lighthouse"
             ]
         }
     },
@@ -37958,9 +37937,7 @@
         ],
         "shortTitle": "Tähtvere valla vapp",
         "markers": {
-            "animals": [
-                "bird"
-            ],
+            "animals": [],
             "items": [
                 "earOfGrain"
             ]
@@ -38814,10 +38791,7 @@
         ],
         "shortTitle": "Valgjärve valla vapp",
         "markers": {
-            "animals": [
-                "eagle",
-                "bird"
-            ],
+            "animals": [],
             "items": []
         }
     },
@@ -43561,8 +43535,7 @@
         "markers": {
             "animals": [],
             "items": [
-                "crown",
-                "earOfGrain"
+                "crown"
             ]
         }
     },

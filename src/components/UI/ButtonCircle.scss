@@ -32,18 +32,19 @@
 
     .ui-button-circle-marker {
       padding: 0 4px;
-      background-color: #d2543a;
+      background-color: #aa0d0d;
       color: white;
       font-size: 10px;
       min-width: 15px;
       height: 15px;
       line-height: 15px;
-      // border-radius: 20px;
-      border-radius: 4px;
+      line-height: 15px;
+      border-radius: 10px;
+      border-bottom-left-radius: 2px;
       position: absolute;
-      top: -5px;
-      right: -5px;
-      font-weight: 600;
+      top: -4px;
+      right: -4px;
+      font-weight: 500;
       letter-spacing: 0.08em;
       box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.18) 0px 1px 2px 0px;
     }

@@ -1,6 +1,6 @@
-import { getMarkers as getMarkersET } from '../et/utils/get-markers';
-import { getMarkers as getMarkersFI } from '../fi/utils/get-markers';
-import { getMarkers as getMarkersPL } from '../pl/utils/get-markers';
+import { getMarkers as getMarkersET } from '../../../src/topic/Heraldry/utils/markers/lang/et'
+import { getMarkers as getMarkersFI } from '../../../src/topic/Heraldry/utils/markers/lang/fi'
+import { getMarkers as getMarkersPL } from '../../../src/topic/Heraldry/utils/markers/lang/pl'
 
 export const getMarkers = ({
   text: rawText = '',

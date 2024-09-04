@@ -1,7 +1,6 @@
 import { AdministrativeUnit } from '@/topic/Heraldry/types';
 import { removeDiacratics } from '@/utils/text';
 
-
 export const getDoesUnitMatch = (listPhraseNormalized: string, unit: AdministrativeUnit) => {
   const listPhraseNormalizedWords = listPhraseNormalized.split(' ');
   const text = `${unit.title} ${unit?.place?.name || ''}`.toLowerCase();

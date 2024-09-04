@@ -29,7 +29,8 @@
   border: 1px solid #eac6a8;
   box-shadow: 0 3px 14px -5px #ee9b7bc4, 0 7px 3px -6px #d9b7aac4;
 
-  > .border-t {
+  > .border-t,
+  > .border-l {
     border-color: #eac6a8;
   }
 }

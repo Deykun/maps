@@ -16,10 +16,10 @@ const fetchCountryData = async () => {
     powiaty,
     wojewodztwa,
   ] = await Promise.all([
-    await fetch('/maps/data/heraldry/pl/gminy-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    await fetch('/maps/data/heraldry/pl/powiaty-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    await fetch('/maps/data/heraldry/pl/miasta-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    await fetch('/maps/data/heraldry/pl/wojewodztwa-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/pl/gminy-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/pl/powiaty-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/pl/miasta-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/pl/wojewodztwa-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
   ]);
 
   const allUnits: AdministrativeUnit[] = Object.values([

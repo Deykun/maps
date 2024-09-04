@@ -1,0 +1,468 @@
+{
+  "animals": [
+    {
+      "name": "bird",
+      "phrases": [
+        "jäälind",
+        "pääsuke"
+      ]
+    },
+    {
+      "name": "raven",
+      "phrases": [
+        "ronk"
+      ]
+    },
+    {
+      "name": "lynx",
+      "phrases": [
+        "ilvesefiguur"
+      ]
+    },
+    {
+      "name": "goose",
+      "phrases": [
+        "hane",
+        "hanesulega"
+      ]
+    },
+    {
+      "name": "dragonfly",
+      "phrases": [
+        "kiil"
+      ]
+    },
+    {
+      "name": "gull",
+      "phrases": [
+        "kajakas"
+      ]
+    },
+    {
+      "name": "fish",
+      "phrases": [
+        "kala"
+      ],
+      "exclude": [
+        "Lüganuse valla vapp"
+      ],
+      "include": [
+        "Avinurme valla vapp",
+        "Loksa valla vapp",
+        "Meeksi valla vapp",
+        "Nõva valla vapp",
+        "Peipsiääre valla vapp"
+      ]
+    },
+    {
+      "name": "salmon",
+      "phrases": [
+        "lõhepea"
+      ]
+    },
+    {
+      "name": "seal",
+      "phrases": [
+        "hüljes"
+      ]
+    },
+    {
+      "name": "stork",
+      "phrases": [
+        "toonekurg"
+      ]
+    },
+    {
+      "name": "bear",
+      "phrases": [
+        "karu",
+        "karupea"
+      ]
+    },
+    {
+      "name": "bee",
+      "phrases": [
+        "kimalast"
+      ]
+    },
+    {
+      "name": "ant",
+      "phrases": [
+        "sipelgas"
+      ]
+    },
+    {
+      "name": "squirrel",
+      "phrases": [
+        "orav"
+      ]
+    },
+    {
+      "name": "crane",
+      "phrases": [
+        "sookure",
+        "sookurg"
+      ],
+      "include": [
+        "Kõlleste valla vapp"
+      ]
+    },
+    {
+      "name": "beaver",
+      "phrases": [
+        "kobrast"
+      ]
+    },
+    {
+      "name": "lion",
+      "phrases": [
+        "lõvi"
+      ]
+    },
+    {
+      "name": "rooster",
+      "phrases": [
+        "kana"
+      ],
+      "include": [
+        "Põlva vapp"
+      ]
+    },
+    {
+      "name": "swan",
+      "phrases": [
+        "luik"
+      ]
+    },
+    {
+      "name": "owl",
+      "phrases": [
+        "öökull"
+      ]
+    },
+    {
+      "name": "deer",
+      "phrases": [
+        "hirv",
+        "metskits",
+        "metskitsepea"
+      ],
+      "include": [
+        "Puka valla vapp"
+      ]
+    },
+    {
+      "name": "dog",
+      "phrases": [
+        "koer",
+        "koera"
+      ]
+    },
+    {
+      "name": "crayfish",
+      "phrases": [
+        "vähk"
+      ]
+    },
+    {
+      "name": "hawk",
+      "phrases": [
+        "kull"
+      ]
+    },
+    {
+      "name": "horse",
+      "phrases": [
+        "hobuse"
+      ]
+    },
+    {
+      "name": "moose",
+      "phrases": [
+        "põdrapea"
+      ]
+    },
+    {
+      "name": "wolf",
+      "phrases": [
+        "hunt"
+      ]
+    },
+    {
+      "name": "ox",
+      "phrases": [
+        "härjapea"
+      ]
+    },
+    {
+      "name": "bullBison",
+      "phrases": [
+        "tarva"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "name": "lily",
+      "phrases": [
+        "liilia",
+        "liiliat",
+        "linaõis"
+      ]
+    },
+    {
+      "name": "rose",
+      "phrases": [
+        "roos",
+        "roosaken",
+        "roosiõis",
+        "roosõieliste"
+      ]
+    },
+    {
+      "name": "flower",
+      "phrases": [
+        "linaõit",
+        "nartsissiõit",
+        "õis",
+        "rukkilill",
+        "rukkililleõis"
+      ]
+    },
+    {
+      "name": "key",
+      "phrases": [
+        "võti"
+      ]
+    },
+    {
+      "name": "bell",
+      "phrases": [
+        "kellatorn",
+        "kelluke",
+        "kirikukell",
+        "kirikukella"
+      ]
+    },
+    {
+      "name": "wheel",
+      "phrases": [
+        "ratas",
+        "ratasrist",
+        "ratasristi",
+        "rool",
+        "vankriratas",
+        "vesiratas"
+      ]
+    },
+    {
+      "name": "walls",
+      "phrases": [
+        "ehistorni",
+        "kellatorn",
+        "linnusetorn",
+        "loss",
+        "majakas",
+        "müüritud",
+        "torn",
+        "torniga",
+        "tuletorn"
+      ],
+      "include": [
+        "Vasalemma valla vapp",
+        "Jõgeva valla vapp",
+        "Põltsamaa vapp",
+        "Haapsalu vapp",
+        "Häädemeeste valla vapp",
+        "Sindi vapp",
+        "Märjamaa alevi vapp",
+        "Märjamaa valla vapp",
+        "Peipsiääre valla vapp"
+      ],
+      "exclude": [
+        "Rapla valla vapp"
+      ]
+    },
+    {
+      "name": "tree",
+      "phrases": [
+        "kadakas",
+        "kuusk",
+        "kuuske",
+        "mänd",
+        "männikäbi",
+        "metspähklit",
+        "puu",
+        "tamme",
+        "vapitüvi"
+      ],
+      "include": [
+        "Albu valla vapp",
+        "Aseri valla vapp",
+        "Avinurme valla vapp",
+        "Juuru valla vapp",
+        "Kohtla-Nõmme valla vapp",
+        "Konguta valla vapp",
+        "Koonga valla vapp",
+        "Lasva valla vapp",
+        "Orissaare valla vapp",
+        "Palupera valla vapp",
+        "Puurmani valla vapp",
+        "Rägavere valla vapp",
+        "Saare valla vapp",
+        "Sonda valla vapp",
+        "Tabivere valla vapp",
+        "Tamsalu valla vapp",
+        "Vändra valla vapp",
+        "Loksa vapp",
+        "Rae valla vapp",
+        "Saue valla vapp",
+        "Saue vapp",
+        "Lüganuse valla vapp",
+        "Püssi vapp",
+        "Türi valla vapp",
+        "Türi vapp",
+        "Tapa valla vapp",
+        "Vinni valla vapp",
+        "Kanepi valla vapp",
+        "Räpina valla vapp",
+        "Räpina vapp",
+        "Kilingi-Nõmme vapp",
+        "Vändra vapp",
+        "Tartumaa vapp",
+        "Viiratsi valla vapp",
+        "Võru valla vapp"
+      ],
+      "exclude": [
+        "Ambla valla vapp",
+        "Kernu valla vapp",
+        "Kohtla valla vapp",
+        "Laeva valla vapp",
+        "Meeksi valla vapp",
+        "Mikitamäe valla vapp",
+        "Mäksa valla vapp",
+        "Oisu valla vapp",
+        "Varbla valla vapp",
+        "Varstu valla vapp",
+        "Kuusalu valla vapp",
+        "Rakvere valla vapp",
+        "Luunja valla vapp",
+        "Muhu valla vapp"
+      ]
+    },
+    {
+      "name": "horseshoe",
+      "phrases": [
+        "hobuseraud"
+      ]
+    },
+    {
+      "name": "crown",
+      "phrases": [
+        "aadlikroon",
+        "kroon"
+      ],
+      "include": [
+        "Tallinna vapp"
+      ],
+      "exclude": [
+        "Tarvastu valla vapp",
+        "Tallinna vapp",
+        "Võru valla vapp"
+      ]
+    },
+    {
+      "name": "sword",
+      "phrases": [
+        "mõõga",
+        "mõõgaga",
+        "mõõk",
+        "mõõka"
+      ]
+    },
+    {
+      "name": "hammer",
+      "phrases": [
+        "haamer",
+        "vasarat"
+      ]
+    },
+    {
+      "name": "earOfGrain",
+      "phrases": [
+        "rukkihakk",
+        "viljakõrt",
+        "viljapea",
+        "viljapead",
+        "viljavihk"
+      ],
+      "exclude": [
+        "Põltsamaa vapp"
+      ]
+    },
+    {
+      "name": "anchor",
+      "phrases": [
+        "ankruna",
+        "ankur"
+      ]
+    },
+    {
+      "name": "cross",
+      "phrases": [
+        "-rist",
+        "krutsifiks",
+        "rist"
+      ],
+      "include": [
+        "Meremäe valla vapp",
+        "Valjala valla vapp",
+        "Kadrina valla vapp",
+        "Viru-Nigula valla vapp",
+        "Saarde valla vapp",
+        "Kõrgessaare valla vapp",
+        "Muhu valla vapp"
+      ],
+      "exclude": [
+        "Aegviidu valla vapp",
+        "Kaisma valla vapp",
+        "Kihelkonna valla vapp",
+        "Kõo valla vapp",
+        "Loodna valla vapp",
+        "Lääne-Nigula valla vapp",
+        "Mustjala valla vapp",
+        "Pihtla valla vapp",
+        "Rägavere valla vapp",
+        "Torma valla vapp",
+        "Varstu valla vapp",
+        "Harjumaa vapp",
+        "Harku valla vapp",
+        "Kehra vapp",
+        "Rae valla vapp",
+        "Maidla valla vapp",
+        "Türi valla vapp",
+        "Taebla valla vapp",
+        "Kilingi-Nõmme vapp",
+        "Märjamaa alevi vapp",
+        "Tartu vapp",
+        "Paistu valla vapp",
+        "Peipsiääre valla vapp",
+        "Tartu valla vapp",
+        "Tori valla vapp"
+      ]
+    },
+    {
+      "name": "lighthouse",
+      "phrases": [
+        "majakas",
+        "tuletorn"
+      ]
+    },
+    {
+      "name": "arm",
+      "include": [
+        "Valga vapp"
+      ]
+    }
+  ]
+}

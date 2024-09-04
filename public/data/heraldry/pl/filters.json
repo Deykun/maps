@@ -1,0 +1,1818 @@
+{
+  "animals": [
+    {
+      "name": "eagle",
+      "phrases": [
+        "orle",
+        "orła",
+        "orłem",
+        "orłów",
+        "orły",
+        "orzeł",
+        "połuorła",
+        "połuorzeł",
+        "półorła",
+        "półorzeł"
+      ],
+      "include": [
+        "Herb Nowego Korczyna",
+        "Herb gminy Damasławek",
+        "Herb powiatu żyrardowskiego",
+        "Herb powiatu biłgorajskiego"
+      ],
+      "exclude": [
+        "Herb gminy Grębocice",
+        "Herb Kamieńca Ząbkowickiego",
+        "Herb gminy Malczyce",
+        "Herb Siechnic",
+        "Herb gminy Golub-Dobrzyń",
+        "Herb gminy Jastków",
+        "Herb gminy Łomazy",
+        "Herb gminy Baranowo",
+        "Herb gminy Baranów (powiat grodziski)",
+        "Herb gminy Bulkowo",
+        "Herb gminy Kamiennik",
+        "Herb gminy Białowieża",
+        "Herb gminy Węgierska Górka",
+        "Herb gminy Brodnica (powiat śremski)",
+        "Herb gminy Skulsk",
+        "Herb Kowar",
+        "Herb Pieszyc",
+        "Herb Polkowic",
+        "Herb Sobótki",
+        "Herb Świeradowa-Zdroju",
+        "Herb Wałbrzycha",
+        "Herb Barcina",
+        "Herb Cybinki",
+        "Herb Jasienia",
+        "Herb Słubic",
+        "Herb Wschowy",
+        "Herb Aleksandrowa Łódzkiego",
+        "Herb Bochni",
+        "Herb Grybowa",
+        "Herb Olkusza",
+        "Herb Piwnicznej-Zdroju",
+        "Herb Starego Sącza",
+        "Herb Wieliczki",
+        "Herb Wolbromia",
+        "Herb Zatora",
+        "Herb Siedlec",
+        "Herb Sierpca",
+        "Herb Sochaczewa",
+        "Herb Moniek",
+        "Herb Zabłudowa",
+        "Herb Gdyni",
+        "Herb Miastka",
+        "Herb Imielina",
+        "Herb Ogrodzieńca",
+        "Herb Rydułtów",
+        "Herb Ustronia",
+        "Herb Wojkowic",
+        "Herb Kielc",
+        "Herb Starachowic",
+        "Herb Staszowa",
+        "Herb Korsz",
+        "Herb Wielbarka",
+        "Herb Kościana",
+        "Herb Trzemeszna",
+        "Herb Witkowa",
+        "Herb Mieszkowic",
+        "Herb Mirosławca",
+        "Herb powiatu brzeskiego (małopolskiego)",
+        "Herb powiatu grajewskiego",
+        "Herb powiatu stargardzkiego"
+      ]
+    },
+    {
+      "name": "falcon",
+      "phrases": [
+        "sokoła",
+        "sokół"
+      ],
+      "exclude": [
+        "Herb Sokółki"
+      ]
+    },
+    {
+      "name": "heron",
+      "phrases": [
+        "czapla",
+        "czaple",
+        "czaplę",
+        "czapli"
+      ],
+      "exclude": [
+        "Herb Brzegu Dolnego",
+        "Herb Mikołowa"
+      ]
+    },
+    {
+      "name": "crane",
+      "phrases": [
+        "żuraw",
+        "żurawia",
+        "żurawie"
+      ],
+      "exclude": [
+        "Herb gminy Ostrówek (województwo lubelskie)",
+        "Herb gminy Srokowo"
+      ]
+    },
+    {
+      "name": "raven",
+      "phrases": [
+        "kruk",
+        "kruka",
+        "kruki"
+      ],
+      "exclude": [
+        "Herb Ozorkowa",
+        "Herb Częstochowy"
+      ]
+    },
+    {
+      "name": "hawk",
+      "phrases": [
+        "jastrząb",
+        "jastrzębia"
+      ],
+      "exclude": [
+        "Herb Jastrzębia"
+      ]
+    },
+    {
+      "name": "owl",
+      "phrases": [
+        "sowa",
+        "sowę"
+      ]
+    },
+    {
+      "name": "vulture",
+      "phrases": [
+        "sępie"
+      ]
+    },
+    {
+      "name": "pelican",
+      "phrases": [
+        "pelikan"
+      ],
+      "exclude": [
+        "Herb gminy Radwanice",
+        "Herb Muszyny",
+        "Herb Kisielic"
+      ]
+    },
+    {
+      "name": "stork",
+      "phrases": [
+        "bocian",
+        "bociany"
+      ],
+      "exclude": [
+        "Herb gminy Drużbice",
+        "Herb Makowa Mazowieckiego",
+        "Herb Gdyni",
+        "Herb Drawna"
+      ]
+    },
+    {
+      "name": "goose",
+      "phrases": [
+        "gęsią",
+        "gęsie",
+        "gęś"
+      ],
+      "exclude": [
+        "Herb gminy Markowa"
+      ]
+    },
+    {
+      "name": "pigeon",
+      "phrases": [
+        "gołąb",
+        "gołębia",
+        "gołębie",
+        "gołębiem"
+      ]
+    },
+    {
+      "name": "swan",
+      "phrases": [
+        "łabędzia",
+        "łabędzie",
+        "łabędź"
+      ],
+      "exclude": [
+        "Herb Drawna"
+      ]
+    },
+    {
+      "name": "rooster",
+      "phrases": [
+        "kogut",
+        "kogutami",
+        "kogutem"
+      ],
+      "exclude": [
+        "Herb gminy Zatory",
+        "Herb Radoszyc"
+      ]
+    },
+    {
+      "name": "snake",
+      "phrases": [
+        "wąż",
+        "weża",
+        "weże"
+      ],
+      "exclude": [
+        "Herb gminy Zbrosławice",
+        "Herb Ornety"
+      ],
+      "include": [
+        "Herb gminy Dubienka",
+        "Herb Otwocka"
+      ]
+    },
+    {
+      "name": "rabbit",
+      "phrases": [
+        "królik",
+        "królika",
+        "króliki",
+        "zając",
+        "zająca"
+      ],
+      "exclude": [
+        "Herb Opatówka"
+      ]
+    },
+    {
+      "name": "bat",
+      "phrases": [
+        "nietoperz",
+        "nietoperze",
+        "nietoperzem"
+      ]
+    },
+    {
+      "name": "griffin",
+      "phrases": [
+        "gryf",
+        "gryfa",
+        "gryfem",
+        "poługryf",
+        "połurybogryfa",
+        "półgryf",
+        "rybogryf",
+        "rybogryfa"
+      ],
+      "include": [
+        "Herb powiatu polickiego"
+      ],
+      "exclude": [
+        "Herb gminy Bielice",
+        "Herb gminy Kołobrzeg",
+        "Herb Bobowej",
+        "Herb Mielca",
+        "Herb Białegostoku",
+        "Herb Bytomia",
+        "Herb Częstochowy",
+        "Herb Jędrzejowa",
+        "Herb Goleniowa",
+        "Herb Kołobrzegu",
+        "Herb Węgorzyna"
+      ]
+    },
+    {
+      "name": "boar",
+      "phrases": [
+        "dzik",
+        "dzika",
+        "dziki"
+      ],
+      "exclude": [
+        "Herb gminy Łopiennik Górny",
+        "Herb gminy Wizna",
+        "Herb Boguszowa-Gorców",
+        "Herb Prabut",
+        "Herb Nidzicy",
+        "Herb Konina"
+      ]
+    },
+    {
+      "name": "deer",
+      "phrases": [
+        "daniela",
+        "jelenia",
+        "jelenią",
+        "jelenie",
+        "jelenim",
+        "jeleń",
+        "jelonek",
+        "jelonków",
+        "łani",
+        "łania",
+        "połujelenia",
+        "poroże",
+        "rosochy"
+      ],
+      "exclude": [
+        "Herb Strzeleczek",
+        "Herb Wałbrzycha",
+        "Herb Janowa Lubelskiego",
+        "Herb Garwolina",
+        "Herb Siedlec",
+        "Herb Białegostoku",
+        "Herb Łazisk Górnych",
+        "Herb powiatu stalowowolskiego",
+        "Herb powiatu pilskiego"
+      ],
+      "include": [
+        "Herb gminy Kozy",
+        "Herb Przysuchy",
+        "Herb powiatu mieleckiego",
+        "Herb powiatu monieckiego"
+      ]
+    },
+    {
+      "name": "moose",
+      "phrases": [
+        "łosia",
+        "łosiem",
+        "łoś"
+      ],
+      "exclude": [
+        "Herb Supraśla"
+      ]
+    },
+    {
+      "name": "wildcat",
+      "phrases": [
+        "żbik"
+      ]
+    },
+    {
+      "name": "lion",
+      "phrases": [
+        "lew",
+        "lwa",
+        "lwami",
+        "lwem",
+        "lwów",
+        "lwy",
+        "lwy-",
+        "połulew",
+        "połulwa",
+        "półlew",
+        "półlewa",
+        "półlwa"
+      ],
+      "exclude": [
+        "Herb gminy Zawonia",
+        "Herb gminy Branice",
+        "Herb gminy Pruszcz Gdański",
+        "Herb gminy Milejewo",
+        "Herb Barcina",
+        "Herb Gubina",
+        "Herb Żagania",
+        "Herb Żar",
+        "Herb Żychlina",
+        "Herb Ciężkowic",
+        "Herb Gorlic",
+        "Herb Krakowa",
+        "Herb Piwnicznej-Zdroju",
+        "Herb Przysuchy",
+        "Herb Sierpca",
+        "Herb Tarczyna",
+        "Herb Zawadzkiego",
+        "Herb Leska",
+        "Herb Sędziszowa Małopolskiego",
+        "Herb Gdańska",
+        "Herb Tczewa",
+        "Herb Koszalina",
+        "Herb Szczecina",
+        "Herb powiatu prudnickiego"
+      ]
+    },
+    {
+      "name": "bullBison",
+      "phrases": [
+        "bawolą",
+        "bawoli",
+        "bawolim",
+        "bawoła",
+        "bawołu",
+        "byczka",
+        "byk",
+        "byka",
+        "ciołek",
+        "ciołka",
+        "połubyk",
+        "tur",
+        "tura",
+        "woła",
+        "wołu",
+        "żubr",
+        "żubra",
+        "żubrza",
+        "żubrzą"
+      ],
+      "exclude": [
+        "Herb Grudziądza",
+        "Herb Poniatowej",
+        "Herb Drzewicy",
+        "Herb Przysuchy",
+        "Herb Jedlicza",
+        "Herb Rudnika nad Sanem",
+        "Herb Moniek"
+      ],
+      "include": [
+        "Herb gminy Chojnice",
+        "Herb gminy Gołuchów",
+        "Herb powiatu mieleckiego"
+      ]
+    },
+    {
+      "name": "dragon",
+      "phrases": [
+        "smok",
+        "smoka",
+        "smokiem"
+      ],
+      "exclude": [
+        "Herb Tucholi",
+        "Herb Gdyni",
+        "Herb Tczewa"
+      ]
+    },
+    {
+      "name": "fish",
+      "phrases": [
+        "karp",
+        "karpia",
+        "karpiami",
+        "karpiem",
+        "leszcza",
+        "leszcze",
+        "łososia",
+        "łosoś",
+        "półryby",
+        "ryba",
+        "rybami",
+        "rybą",
+        "rybę",
+        "rybo",
+        "rybogryfa",
+        "rybopodobne",
+        "ryby",
+        "suma",
+        "szczupak"
+      ],
+      "exclude": [
+        "Herb gminy Korzenna",
+        "Herb gminy Baligród",
+        "Herb gminy Kosakowo",
+        "Herb gminy Kościerzyna",
+        "Herb Szklarskiej Poręby",
+        "Herb Sępólna Krajeńskiego",
+        "Herb Chorzel",
+        "Herb Helu",
+        "Herb Elbląga",
+        "Herb powiatu brodnickiego"
+      ]
+    },
+    {
+      "name": "bee",
+      "phrases": [
+        "pszczoła",
+        "pszczołami",
+        "pszczołę",
+        "pszczoły",
+        "pszczół"
+      ],
+      "exclude": [
+        "Herb Zduńskiej Woli"
+      ]
+    },
+    {
+      "name": "mermaid",
+      "phrases": [
+        "syrena",
+        "syreną",
+        "syrenę"
+      ],
+      "exclude": [
+        "Herb Lubniewic"
+      ]
+    },
+    {
+      "name": "fox",
+      "phrases": [
+        "lis",
+        "lisy",
+        "lisa",
+        "lisami",
+        "lisem"
+      ],
+      "exclude": [
+        "Herb gminy Cieszków",
+        "Herb gminy Kodeń",
+        "Herb gminy Sosnówka",
+        "Herb gminy Łańcut",
+        "Herb gminy Nowa Wieś Lęborska",
+        "Herb gminy Irządze",
+        "Herb gminy Czarnocin (województwo świętokrzyskie)",
+        "Herb gminy Radków (województwo świętokrzyskie)",
+        "Herb gminy Słupia (powiat jędrzejowski)",
+        "Herb Bobowej",
+        "Herb Siemiatycz",
+        "Herb Jędrzejowa"
+      ]
+    },
+    {
+      "name": "lizard",
+      "phrases": [
+        "jaszczurka",
+        "jaszuczurki"
+      ],
+      "include": [
+        "Herb gminy Lisewo",
+        "Herb gminy Ryńsk"
+      ]
+    },
+    {
+      "name": "dog",
+      "phrases": [
+        "pies",
+        "psa",
+        "psy"
+      ],
+      "exclude": [
+        "Herb gminy Sułoszowa",
+        "Herb gminy Kulesze Kościelne",
+        "Herb Pieszyc",
+        "Herb Sycowa",
+        "Herb Korfantowa"
+      ]
+    },
+    {
+      "name": "crayfish",
+      "phrases": [
+        "rak",
+        "raka",
+        "rakiem"
+      ],
+      "exclude": [
+        "Herb Rakoniewic"
+      ]
+    },
+    {
+      "name": "horse",
+      "phrases": [
+        "konia",
+        "konie",
+        "koniu",
+        "koń",
+        "końska",
+        "rumak",
+        "rumaku",
+        "starykoń"
+      ],
+      "include": [
+        "Herb gminy Gołuchów"
+      ]
+    },
+    {
+      "name": "unicorn",
+      "phrases": [
+        "jednorożca",
+        "jednorożcami",
+        "jednorożcem",
+        "jednorożec"
+      ],
+      "include": [
+        "Herb gminy Wądroże Wielkie",
+        "Herb gminy Lubsza"
+      ]
+    },
+    {
+      "name": "goat",
+      "phrases": [
+        "kosłem",
+        "koza",
+        "kozę",
+        "kozie",
+        "koziołek",
+        "koziołki",
+        "kozła",
+        "kozłem",
+        "kozłów",
+        "kozy",
+        "koźłów",
+        "kózm kozie"
+      ],
+      "exclude": [
+        "Herb gminy Abramów"
+      ]
+    },
+    {
+      "name": "wolf",
+      "phrases": [
+        "połuwilk",
+        "półwilk",
+        "wilk",
+        "wilka",
+        "wilki",
+        "wilkiem",
+        "wilków"
+      ],
+      "exclude": [
+        "Herb gminy Łomazy",
+        "Herb Pabianic",
+        "Herb Mrągowa",
+        "Herb Węgorzyna"
+      ]
+    },
+    {
+      "name": "squirrel",
+      "phrases": [
+        "wiewiórka",
+        "wiewiórkę"
+      ]
+    },
+    {
+      "name": "insect",
+      "phrases": [
+        "konik polny"
+      ]
+    },
+    {
+      "name": "amphisbaena",
+      "phrases": [
+        "amfisbaena",
+        "amfisbaenę"
+      ]
+    },
+    {
+      "name": "donkey",
+      "phrases": [
+        "osioł",
+        "osła",
+        "oślej"
+      ]
+    },
+    {
+      "name": "centaur",
+      "phrases": [
+        "centaur",
+        "centaura"
+      ]
+    },
+    {
+      "name": "bear",
+      "phrases": [
+        "niedźwiedzia",
+        "niedźwiedziem",
+        "niedźwiedziu",
+        "niedźwiedź"
+      ],
+      "include": [
+        "Herb gminy Siedlce"
+      ],
+      "exclude": [
+        "Herb Sobótki",
+        "Herb Janowa Lubelskiego",
+        "Herb Moniek",
+        "Herb Szczekocin"
+      ]
+    },
+    {
+      "name": "beaver",
+      "phrases": [
+        "bobra",
+        "bobrem",
+        "bobry",
+        "bóbr"
+      ],
+      "exclude": [
+        "Herb gminy Łomża"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "name": "horseshoe",
+      "phrases": [
+        "podkowa",
+        "podkową",
+        "podkowę",
+        "podkowie",
+        "półpodkową"
+      ],
+      "exclude": [
+        "Herb Izbicy",
+        "Herb Bobowej"
+      ],
+      "include": [
+        "Herb gminy Gościeradów",
+        "Herb powiatu brzezińskiego"
+      ]
+    },
+    {
+      "name": "key",
+      "phrases": [
+        "klucz",
+        "kluczami",
+        "klucze",
+        "kluczem",
+        "kluczy"
+      ],
+      "exclude": [
+        "Herb gminy Koszęcin",
+        "Herb Mogilna",
+        "Herb Kamionki",
+        "Herb Karczewa",
+        "Herb Radomia",
+        "Herb Ślesina"
+      ]
+    },
+    {
+      "name": "sword",
+      "phrases": [
+        "miecz",
+        "miecza",
+        "mieczami",
+        "miecze",
+        "mieczem",
+        "mieczowego",
+        "mieczu",
+        "noża",
+        "nóż",
+        "szabla",
+        "szablach",
+        "szable"
+      ],
+      "exclude": [
+        "Herb Siechnic",
+        "Herb gminy Golub-Dobrzyń",
+        "Herb gminy Rojewo",
+        "Herb gminy Batorz",
+        "Herb gminy Jastków",
+        "Herb gminy Skąpe",
+        "Herb gminy Rząśnia",
+        "Herb gminy Nadarzyn",
+        "Herb Legnicy",
+        "Herb Prusic",
+        "Herb Brodnicy",
+        "Herb Łabiszyna",
+        "Herb Mogilna",
+        "Herb Aleksandrowa Łódzkiego",
+        "Herb Bochni",
+        "Herb Grybowa",
+        "Herb Iłży",
+        "Herb Łomianek",
+        "Herb Przysuchy",
+        "Herb Kańczugi",
+        "Herb Rzeszowa",
+        "Herb Pszczyny",
+        "Herb Sandomierza"
+      ],
+      "include": [
+        "Herb Krasnobrodu",
+        "Herb powiatu opoczyńskiego"
+      ]
+    },
+    {
+      "name": "arrow",
+      "phrases": [
+        "rogacina",
+        "rogacinę",
+        "strzał",
+        "strzała",
+        "strzałami",
+        "strzałą",
+        "strzałę",
+        "strzałką",
+        "strzały"
+      ],
+      "exclude": [
+        "Herb gminy Nadarzyn",
+        "Herb gminy Ożarowice",
+        "Herb Izbicy",
+        "Herb Głowna"
+      ],
+      "include": [
+        "Herb gminy Bojanów",
+        "Herb gminy Nowa Karczma",
+        "Herb powiatu brzezińskiego"
+      ]
+    },
+    {
+      "name": "heart",
+      "phrases": [
+        "serce",
+        "sercem"
+      ]
+    },
+    {
+      "name": "hand",
+      "phrases": [],
+      "include": [
+        "Herb gminy Brodnica (powiat brodnicki)",
+        "Herb Książa Wielkiego",
+        "Herb gminy Spytkowice (powiat nowotarski)",
+        "Herb Świerzawy",
+        "Herb Brodnicy",
+        "Herb Łabiszyna",
+        "Herb Kolbuszowej",
+        "Herb Osieka"
+      ]
+    },
+    {
+      "name": "arm",
+      "phrases": [],
+      "include": [
+        "Herb gminy Stolno",
+        "Herb gminy Hanna",
+        "Herb gminy Bystra-Sidzina",
+        "Herb gminy Gdów",
+        "Herb gminy Niebylec",
+        "Herb gminy Brańsk",
+        "Herb gminy Giby",
+        "Herb gminy Krasnopol",
+        "Herb gminy Ujsoły",
+        "Herb Wągrowca",
+        "Herb Sosnowca",
+        "Herb powiatu chełmińskiego",
+        "Herb powiatu świeckiego",
+        "Herb powiatu toruńskiego",
+        "Herb powiatu tucholskiego",
+        "Herb powiatu wąbrzeskiego",
+        "Herb powiatu malborskiego"
+      ]
+    },
+    {
+      "name": "earOfGrain",
+      "phrases": [
+        "kłos",
+        "kłosa",
+        "kłosami",
+        "kłosem",
+        "kłosie",
+        "kłosów",
+        "kłosu",
+        "kłosy",
+        "snop",
+        "snopem",
+        "snopy"
+      ],
+      "exclude": [
+        "Herb gminy Gaworzyce",
+        "Herb gminy Kondratowice",
+        "Herb gminy Łagiewniki",
+        "Herb gminy Deszczno",
+        "Herb gminy Sędziejowice",
+        "Herb gminy Regimin",
+        "Herb gminy Jaworze",
+        "Herb gminy Koszęcin",
+        "Herb gminy Bielice",
+        "Herb gminy Dolice",
+        "Herb Pieszyc",
+        "Herb Brzezin",
+        "Herb Świątnik Górnych",
+        "Herb Łochowa",
+        "Herb Człuchowa",
+        "Herb Czechowic-Dziedzic",
+        "Herb Skarżyska-Kamiennej",
+        "Herb Olsztyna",
+        "Herb powiatu brodnickiego",
+        "Herb powiatu zawierciańskiego"
+      ]
+    },
+    {
+      "name": "axeSaw",
+      "phrases": [
+        "krzyżtopór",
+        "siekiera",
+        "siekierami",
+        "siekierę",
+        "siekierka",
+        "siekiery",
+        "tasak",
+        "tasaki",
+        "toporami",
+        "toporek",
+        "toporem",
+        "topory",
+        "topór"
+      ],
+      "exclude": [
+        "Herb Zaklikowa",
+        "Herb Iwanisk",
+        "Herb gminy Krasocin",
+        "Herb Szubina",
+        "Herb Głowna",
+        "Herb Chrzanowa",
+        "Herb Łazisk Górnych",
+        "Herb Staszowa"
+      ]
+    },
+    {
+      "name": "apple",
+      "phrases": [
+        "jabłek",
+        "jabłka",
+        "jabłkami",
+        "jabłkiem",
+        "jabłko",
+        "jabłoni",
+        "jabłoń",
+        "jabuszkiem"
+      ],
+      "exclude": [
+        "Herb gminy Wąsewo",
+        "Herb gminy Zbrosławice",
+        "Herb Kowar"
+      ]
+    },
+    {
+      "name": "hammer",
+      "phrases": [
+        "herb górniczy",
+        "insygniach górniczych",
+        "młot",
+        "młotami",
+        "młotek",
+        "młotem",
+        "młotki",
+        "młotkiem",
+        "młotów",
+        "młoty",
+        "pyrlika"
+      ],
+      "exclude": [
+        "Herb Krzeszowic",
+        "Herb Sułkowic",
+        "Herb Świątnik Górnych",
+        "Herb Ustronia",
+        "Herb Skarżyska-Kamiennej"
+      ],
+      "include": [
+        "Herb powiatu złotoryjskiego"
+      ]
+    },
+    {
+      "name": "pickaxe",
+      "phrases": [
+        "herb górniczy",
+        "kilof",
+        "kilofami",
+        "kilofem",
+        "kilofu",
+        "oskard",
+        "oskardem",
+        "oskardy"
+      ],
+      "exclude": [
+        "Herb Krzeszowic",
+        "Herb Piekar Śląskich",
+        "Herb Zabrza"
+      ]
+    },
+    {
+      "name": "tree",
+      "phrases": [
+        "brzoza",
+        "brzozę",
+        "brzozową",
+        "buk",
+        "bukiem",
+        "dąb",
+        "dębami",
+        "dębową",
+        "dębowe",
+        "dębowego",
+        "dębowych",
+        "dębów",
+        "dębu",
+        "dęby",
+        "drzew",
+        "drzewa",
+        "drzewami",
+        "drzewem",
+        "drzewo",
+        "gałązka",
+        "gałązkami",
+        "gałązką",
+        "gałąź",
+        "gałęzi",
+        "jabłoni",
+        "jabłoń",
+        "jodła",
+        "jodły",
+        "kłoda",
+        "kłodzie",
+        "konar",
+        "konarami",
+        "konarem",
+        "lasu",
+        "lipą",
+        "lipy",
+        "liściach",
+        "liściem",
+        "liść",
+        "ostrzew",
+        "ostrzewi",
+        "pień",
+        "pniaczek",
+        "smrek",
+        "sosen",
+        "sosna",
+        "sosną",
+        "sosnę",
+        "sosny",
+        "szyszka",
+        "szyszkami",
+        "szyszką",
+        "szyszkę",
+        "szyszki",
+        "świerk",
+        "świerkami",
+        "świerki",
+        "świerków",
+        "świerku",
+        "topola",
+        "topolami",
+        "żołądź",
+        "żołędzia",
+        "żołędziami",
+        "żołędzie",
+        "żołędziem"
+      ],
+      "exclude": [
+        "Herb gminy Świdwin",
+        "Herb Goleniowa",
+        "Herb Janowa Lubelskiego",
+        "Herb Nowej Sarzyny",
+        "Herb gminy Laskowa",
+        "Herb Nowego Sącza",
+        "Herb gminy Stryszawa",
+        "Herb Ustronia",
+        "Herb Białej",
+        "Herb Otmuchowa",
+        "Herb gminy Dziadowa Kłoda",
+        "Herb Konina",
+        "Herb Lubniewic",
+        "Herb Tłuszcza"
+      ]
+    },
+    {
+      "name": "lily",
+      "phrases": [
+        "lilia",
+        "liliami",
+        "lilie",
+        "lilię",
+        "lilii",
+        "lilijkę"
+      ],
+      "exclude": [
+        "Herb gminy Świdwin",
+        "Herb Goleniowa",
+        "Herb Janowa Lubelskiego",
+        "Herb Nowej Sarzyny",
+        "Herb gminy Laskowa",
+        "Herb Nowego Sącza",
+        "Herb gminy Stryszawa",
+        "Herb Ustronia",
+        "Herb Białej",
+        "Herb Otmuchowa",
+        "Herb gminy Dziadowa Kłoda",
+        "Herb Konina",
+        "Herb Lubniewic",
+        "Herb Tłuszcza"
+      ]
+    },
+    {
+      "name": "rose",
+      "phrases": [
+        "róż",
+        "róża",
+        "różami",
+        "różą",
+        "róże",
+        "różę"
+      ],
+      "exclude": [
+        "Herb gminy Młynarze",
+        "Herb gminy Murów",
+        "Herb Sycowa",
+        "Herb Łabiszyna",
+        "Herb Ośna Lubuskiego",
+        "Herb Andrychowa",
+        "Herb Elbląga",
+        "Herb Dąbia",
+        "Herb Bobolic",
+        "Herb powiatu prudnickiego",
+        "Herb powiatu pyrzyckiego"
+      ]
+    },
+    {
+      "name": "flower",
+      "phrases": [
+        "kwiat",
+        "kwiatem",
+        "kwiecie",
+        "mak",
+        "maki",
+        "makiem",
+        "maku",
+        "tulipan",
+        "tulipanem",
+        "tulipany"
+      ]
+    },
+    {
+      "name": "walls",
+      "phrases": [
+        "baszt",
+        "baszta",
+        "basztami",
+        "basztą",
+        "basztę",
+        "baszty",
+        "blankami",
+        "brama",
+        "bramą",
+        "bramę",
+        "bramie",
+        "bramię",
+        "bramy",
+        "cegły",
+        "corona muralis",
+        "dzwonnicę",
+        "kolumna",
+        "kolumny",
+        "mur",
+        "murem",
+        "murów",
+        "muru",
+        "murze",
+        "wieża",
+        "wieżach",
+        "wieżami",
+        "wieżą",
+        "wieże",
+        "wieżę",
+        "wieży",
+        "zamek",
+        "zamkiem",
+        "zamku"
+      ],
+      "exclude": [
+        "Herb gminy Gaworzyce",
+        "Herb Jeleniej Góry",
+        "Herb gminy Lewin Kłodzki",
+        "Herb Kłodzka",
+        "Herb Nysy",
+        "Herb Tułowic",
+        "Herb Kędzierzyna-Koźla",
+        "Herb Grybowa",
+        "Herb gminy Baligród",
+        "Herb Izbicy",
+        "Herb gminy Kurów",
+        "Herb Bielska Podlaskiego",
+        "Herb Tykocina",
+        "Herb Zdun",
+        "Herb Jasienia",
+        "Herb Legnicy",
+        "Herb Nowego Sącza",
+        "Herb Sandomierza",
+        "Herb Witkowa"
+      ],
+      "include": [
+        "Herb powiatu żyrardowskiego"
+      ]
+    },
+    {
+      "name": "boat",
+      "phrases": [
+        "koga",
+        "korab",
+        "korabia",
+        "łodzi",
+        "łódka",
+        "łódź",
+        "statek"
+      ],
+      "include": [
+        "Herb gminy Rogowo (powiat żniński)",
+        "Herb gminy Gnojno",
+        "Herb powiatu włoszczowskiego",
+        "Herb powiatu wałeckiego"
+      ]
+    },
+    {
+      "name": "cross",
+      "phrases": [
+        "klasztoru",
+        "kościoła",
+        "kościołem",
+        "kościół",
+        "krzyż",
+        "krzyża",
+        "krzyżami",
+        "krzyże",
+        "krzyżem",
+        "krzyży",
+        "krzyżyk",
+        "krzyżykami",
+        "krzyżykiem",
+        "połukrzyż",
+        "połukrzyżem",
+        "półkrzyż",
+        "półkrzyżem",
+        "półtorakrzyżem"
+      ],
+      "exclude": [
+        "Herb gminy Łysomice",
+        "Herb gminy Stolno",
+        "Herb Czemiernik",
+        "Herb gminy Hrubieszów",
+        "Herb gminy Radzyń Podlaski",
+        "Herb gminy Serokomla",
+        "Herb gminy Werbkowice",
+        "Herb gminy Lubrza (województwo lubuskie)",
+        "Herb gminy Skąpe",
+        "Herb gminy Tuplice",
+        "Herb gminy Wymiarki",
+        "Herb gminy Żary",
+        "Herb gminy Czarnocin (województwo łódzkie)",
+        "Herb gminy Dobroń",
+        "Herb gminy Drużbice",
+        "Herb gminy Zduńska Wola",
+        "Herb gminy Łanięta",
+        "Herb gminy Oporów",
+        "Herb gminy Ręczno",
+        "Herb gminy Sędziejowice",
+        "Herb gminy Sławno (województwo łódzkie)",
+        "Herb gminy Strzelce",
+        "Herb gminy Zapolice",
+        "Herb gminy Bolesław (powiat olkuski)",
+        "Herb gminy Gdów",
+        "Herb gminy Gnojnik",
+        "Herb gminy Gołcza",
+        "Herb gminy Gromnik",
+        "Herb gminy Liszki",
+        "Herb gminy Moszczenica (województwo małopolskie)",
+        "Herb gminy Pałecznica",
+        "Herb gminy Słaboszów",
+        "Herb gminy Bielsk",
+        "Herb Bodzanowa",
+        "Herb Cegłowa",
+        "Herb gminy Pomiechówek",
+        "Herb gminy Radziejowice",
+        "Herb gminy Rzekuń",
+        "Herb Sochocina",
+        "Herb gminy Stara Błotnica",
+        "Herb gminy Stromiec",
+        "Herb gminy Szelków",
+        "Herb gminy Tczów",
+        "Herb gminy Kamiennik",
+        "Herb gminy Augustów",
+        "Herb gminy Perlejewo",
+        "Herb gminy Luzino",
+        "Herb gminy Miłoradz",
+        "Herb gminy Stary Targ",
+        "Herb gminy Bojszowy",
+        "Herb gminy Dąbrowa Zielona",
+        "Herb gminy Łękawica",
+        "Herb gminy Łodygowice",
+        "Herb gminy Poczesna",
+        "Herb gminy Ślemień",
+        "Herb gminy Węgierska Górka",
+        "Herb gminy Górno",
+        "Herb Łagowa",
+        "Herb gminy Łączna",
+        "Herb gminy Oksa",
+        "Herb Mieściska",
+        "Herb gminy Olszówka",
+        "Herb gminy Bielice",
+        "Herb gminy Rewal",
+        "Herb Bolkowa",
+        "Herb Głogowa",
+        "Herb Góry",
+        "Herb Kudowy-Zdroju",
+        "Herb Oleśnicy",
+        "Herb Polanicy-Zdroju",
+        "Herb Sobótki",
+        "Herb Strzegomia",
+        "Herb Szczytnej",
+        "Herb Świdnicy",
+        "Herb Trzebnicy",
+        "Herb Złotego Stoku",
+        "Herb Brześcia Kujawskiego",
+        "Herb Bydgoszczy",
+        "Herb Chełmży",
+        "Herb Grudziądza",
+        "Herb Żagania",
+        "Herb Żar",
+        "Herb Błaszek",
+        "Herb Poddębic",
+        "Herb Wieruszowa",
+        "Herb Dobczyc",
+        "Herb Jordanowa",
+        "Herb Ryglic",
+        "Herb Wieliczki",
+        "Herb Wojnicza",
+        "Herb Iłży",
+        "Herb Radzymina",
+        "Herb Baborowa",
+        "Herb Dobrodzienia",
+        "Herb Głogówka",
+        "Herb Namysłowa",
+        "Herb Nysy",
+        "Herb Jedlicza",
+        "Herb Kołaczyc",
+        "Herb Krosna",
+        "Herb Radomyśla Wielkiego",
+        "Herb Bielska-Białej",
+        "Herb Gliwic",
+        "Herb Łazisk Górnych",
+        "Herb Orzesza",
+        "Herb Świętochłowic",
+        "Herb Toszka",
+        "Herb Tychów",
+        "Herb Wilamowic",
+        "Herb Wodzisławia Śląskiego",
+        "Herb Kunowa",
+        "Herb Opatowca",
+        "Herb Radoszyc",
+        "Herb Skalbmierza",
+        "Herb Wiślicy",
+        "Herb Jezioran",
+        "Herb Korsz",
+        "Herb Miłomłyna",
+        "Herb Olsztyna",
+        "Herb Olsztynka",
+        "Herb Ornety",
+        "Herb Pieniężna",
+        "Herb Dolska",
+        "Herb Kórnika",
+        "Herb Ostrzeszowa",
+        "Herb Stęszewa",
+        "Herb Zagórowa",
+        "Herb Zdun",
+        "Herb Gryfic",
+        "Herb powiatu brodnickiego",
+        "Herb powiatu hrubieszowskiego",
+        "Herb powiatu bocheńskiego",
+        "Herb powiatu płońskiego",
+        "Herb powiatu przasnyskiego",
+        "Herb powiatu warszawskiego zachodniego",
+        "Herb powiatu myszkowskiego",
+        "Herb powiatu raciborskiego",
+        "Herb powiatu mrągowskiego",
+        "Herb powiatu olsztyńskiego"
+      ],
+      "include": [
+        "Herb gminy Sławatycze",
+        "Herb gminy Dynów",
+        "Herb Łomianek",
+        "Herb powiatu zduńskowolskiego",
+        "Herb powiatu tatrzańskiego",
+        "Herb powiatu mławskiego",
+        "Herb powiatu elbląskiego"
+      ]
+    },
+    {
+      "name": "shell",
+      "phrases": [
+        "muszelka",
+        "muszelki",
+        "muszla",
+        "muszle",
+        "muszlę"
+      ]
+    },
+    {
+      "name": "angel",
+      "phrases": [
+        "anioł",
+        "anioła",
+        "aniołami",
+        "aniołem",
+        "anioły",
+        "archanioła"
+      ],
+      "include": [
+        "Herb Białej Podlaskiej"
+      ],
+      "exclude": [
+        "Herb Murowanej Gośliny",
+        "Herb gminy Kamieniec",
+        "Herb gminy Łużna",
+        "Herb powiatu jarosławskiego",
+        "Herb powiatu siedleckiego",
+        "Herb Braniewa",
+        "Herb gminy Zblewo"
+      ]
+    },
+    {
+      "name": "crozier",
+      "phrases": [
+        "laskę biskupią",
+        "pastorał",
+        "pastorałami",
+        "pastorałem",
+        "pastorału",
+        "pastorały"
+      ],
+      "exclude": [
+        "Herb gminy Łąck",
+        "Herb gminy Rewal",
+        "Herb Tuchowa",
+        "Herb Iłży",
+        "Herb Nysy",
+        "Herb Koszalina"
+      ],
+      "include": [
+        "Herb gminy Jerzmanowice-Przeginia"
+      ]
+    },
+    {
+      "name": "wheel",
+      "phrases": [
+        "koła",
+        "kołem",
+        "koło"
+      ],
+      "exclude": [
+        "Herb gminy Miłkowice",
+        "Herb Siechnic",
+        "Herb gminy Hrubieszów",
+        "Herb gminy Stanin",
+        "Herb gminy Tomaszów Lubelski",
+        "Herb gminy Olesno (województwo małopolskie)",
+        "Herb Nowego Miasta (powiat płoński)",
+        "Herb gminy Parysów",
+        "Herb gminy Łambinowice",
+        "Herb gminy Murów",
+        "Herb gminy Przodkowo",
+        "Herb gminy Panki",
+        "Herb gminy Marianowo",
+        "Herb Bierutowa",
+        "Herb Jedliny-Zdroju",
+        "Herb Pieszyc",
+        "Herb Wrocławia",
+        "Herb Chełmna",
+        "Herb Nałęczowa",
+        "Herb Działoszyna",
+        "Herb Łodzi",
+        "Herb Andrychowa",
+        "Herb Grybowa",
+        "Herb Sułkowic",
+        "Herb Zakliczyna",
+        "Herb Kobyłki",
+        "Herb Łochowa",
+        "Herb Marek",
+        "Herb Milanówka",
+        "Herb Mławy",
+        "Herb Wołomina",
+        "Herb Dynowa",
+        "Herb Nowej Dęby",
+        "Herb Stalowej Woli",
+        "Herb Kartuz",
+        "Herb Pucka",
+        "Herb Czechowic-Dziedzic",
+        "Herb Katowic",
+        "Herb Rudy Śląskiej",
+        "Herb Szczyrku",
+        "Herb Zawiercia",
+        "Herb Skarżyska-Kamiennej",
+        "Herb Działdowa",
+        "Herb Koźmina Wielkopolskiego",
+        "Herb Recza",
+        "Herb powiatu wołowskiego",
+        "Herb powiatu chrzanowskiego",
+        "Herb powiatu zawierciańskiego"
+      ]
+    },
+    {
+      "name": "crown",
+      "phrases": [
+        "korona",
+        "koronach",
+        "koronami",
+        "koroną",
+        "koronę",
+        "koronie",
+        "koronię",
+        "korony",
+        "ukoronowane",
+        "ukoronowanego",
+        "ukoronowany",
+        "ukoronowanym",
+        "ukorowowane"
+      ],
+      "exclude": [
+        "Herb gminy Długołęka",
+        "Herb gminy Głowno",
+        "Herb gminy Baranowo",
+        "Herb Kolonowskiego",
+        "Herb gminy Krasocin",
+        "Herb Nowego Korczyna",
+        "Herb gminy Bralin",
+        "Herb Jaworzyny Śląskiej",
+        "Herb Kowar",
+        "Herb Legnicy",
+        "Herb Polkowic",
+        "Herb Wlenia",
+        "Herb Brodnicy",
+        "Herb Janikowa",
+        "Herb Lipna",
+        "Herb Lubrańca",
+        "Herb Rypina",
+        "Herb Lublina",
+        "Herb Siedliszcza",
+        "Herb Tyszowiec",
+        "Herb Skwierzyny",
+        "Herb Żagania",
+        "Herb Błaszek",
+        "Herb Piotrkowa Trybunalskiego",
+        "Herb Olkusza",
+        "Herb Piwnicznej-Zdroju",
+        "Herb Garwolina",
+        "Herb Konstancina-Jeziorny",
+        "Herb Płocka",
+        "Herb Siedlec",
+        "Herb Sierpca",
+        "Herb Cieszanowa",
+        "Herb Dębicy",
+        "Herb Jedlicza",
+        "Herb Leska",
+        "Herb Mielca",
+        "Herb Tykocina",
+        "Herb Gdyni",
+        "Herb Helu",
+        "Herb Bielska-Białej",
+        "Herb Bytomia",
+        "Herb Chorzowa",
+        "Herb Imielina",
+        "Herb Jaworzna",
+        "Herb Myszkowa",
+        "Herb Pszczyny",
+        "Herb Raciborza",
+        "Herb Rudy Śląskiej",
+        "Herb Sosnowca",
+        "Herb Wodzisławia Śląskiego",
+        "Herb Żywca",
+        "Herb Osieka",
+        "Herb Korsz",
+        "Herb Nidzicy",
+        "Herb Ostródy",
+        "Herb Wielbarka",
+        "Herb Bojanowa",
+        "Herb Kłecka",
+        "Herb Koźmina Wielkopolskiego",
+        "Herb Leszna",
+        "Herb Piły",
+        "Herb Pobiedzisk",
+        "Herb Zagórowa",
+        "Herb Drawska Pomorskiego",
+        "Herb Lipian",
+        "Herb Świnoujścia",
+        "Herb Węgorzyna",
+        "Herb powiatu warszawskiego zachodniego",
+        "Herb powiatu stalowowolskiego",
+        "Herb powiatu kazimierskiego",
+        "Herb powiatu obornickiego",
+        "Herb powiatu wągrowieckiego"
+      ],
+      "include": [
+        "Herb gminy Wierzchosławice",
+        "Herb gminy Przybiernów",
+        "Herb Starego Sącza",
+        "Herb Opola",
+        "Herb powiatu polkowickiego",
+        "Herb powiatu krakowskiego",
+        "Herb powiatu suskiego",
+        "Herb powiatu tatrzańskiego",
+        "Herb powiatu gostynińskiego",
+        "Herb powiatu leżajskiego",
+        "Herb powiatu augustowskiego",
+        "Herb powiatu zambrowskiego",
+        "Herb powiatu wejherowskiego",
+        "Herb powiatu buskiego",
+        "Herb powiatu jędrzejowskiego",
+        "Herb powiatu białogardzkiego",
+        "Herb powiatu goleniowskiego"
+      ]
+    },
+    {
+      "name": "saint",
+      "phrases": [
+        "bł. władysława",
+        "błogosławiona salomea",
+        "chrystus",
+        "floriana",
+        "jana chrzciciela",
+        "madonnę",
+        "madonny",
+        "marii panny",
+        "maryi panny",
+        "matkę boską",
+        "matki boskiej",
+        "matki bożej",
+        "najświętsza maria panna",
+        "szymona gorliwego",
+        "św.",
+        "świetego",
+        "świetęgo",
+        "święta",
+        "świętej",
+        "święty"
+      ],
+      "include": [
+        "Herb gminy Kostomłoty",
+        "Herb gminy Lubicz",
+        "Herb gminy Karczmiska",
+        "Herb gminy Łaziska",
+        "Herb gminy Kluki",
+        "Herb gminy Zgierz",
+        "Herb gminy Skrzyszów",
+        "Herb gminy Szaflary",
+        "Herb gminy Jakubów",
+        "Herb Latowicza",
+        "Herb gminy Pacyna",
+        "Herb gminy Sochaczew",
+        "Herb gminy Chrząstowice",
+        "Herb gminy Zębowice",
+        "Herb gminy Kobiór",
+        "Herb gminy Granowo",
+        "Herb gminy Warnice",
+        "Herb Białej Podlaskiej",
+        "Herb Tomaszowa Lubelskiego",
+        "Herb Trzciela",
+        "Herb Kamieńska",
+        "Herb Pabianic",
+        "Herb Łańcuta",
+        "Herb Radzionkowa",
+        "Herb Lubawy",
+        "Herb Olsztyna",
+        "Herb Ostródy",
+        "Herb powiatu sępoleńskiego",
+        "Herb powiatu chrzanowskiego",
+        "Herb powiatu wołomińskiego",
+        "Herb powiatu polickiego"
+      ],
+      "exclude": [
+        "Herb gminy Grębocice",
+        "Herb Kamieńca Ząbkowickiego",
+        "Herb Siechnic",
+        "Herb gminy Zgorzelec",
+        "Herb gminy Choceń",
+        "Herb gminy Chrostkowo",
+        "Herb gminy Waganiec",
+        "Herb gminy Warlubie",
+        "Herb gminy Łukowa",
+        "Herb gminy Miączyn",
+        "Herb gminy Michów",
+        "Herb gminy Nielisz",
+        "Herb gminy Nowodwór",
+        "Herb gminy Puławy",
+        "Herb gminy Przytoczna",
+        "Herb gminy Aleksandrów (województwo łódzkie)",
+        "Herb gminy Burzenin",
+        "Herb gminy Gorzkowice",
+        "Herb gminy Zduńska Wola",
+        "Herb gminy Łanięta",
+        "Herb gminy Ręczno",
+        "Herb gminy Sieradz",
+        "Herb gminy Sławno (województwo łódzkie)",
+        "Herb gminy Wodzierady",
+        "Herb gminy Gromnik",
+        "Herb gminy Liszki",
+        "Herb gminy Łososina Dolna",
+        "Herb gminy Łużna",
+        "Herb gminy Moszczenica (województwo małopolskie)",
+        "Herb gminy Żegocina",
+        "Herb gminy Baboszewo",
+        "Herb Bodzanowa",
+        "Herb gminy Czerwonka",
+        "Herb gminy Pionki",
+        "Herb gminy Radziejowice",
+        "Herb gminy Rusinów",
+        "Herb gminy Rybno (województwo mazowieckie)",
+        "Herb gminy Rzekuń",
+        "Herb gminy Stara Błotnica",
+        "Herb gminy Stromiec",
+        "Herb gminy Teresin",
+        "Herb gminy Chłopice",
+        "Herb gminy Czermin (województwo podkarpackie)",
+        "Herb gminy Domaradz",
+        "Herb gminy Grębów",
+        "Herb gminy Hyżne",
+        "Herb gminy Skołyszyn",
+        "Herb gminy Łomża",
+        "Herb gminy Nowe Piekuty",
+        "Herb gminy Perlejewo",
+        "Herb gminy Poświętne (powiat białostocki)",
+        "Herb gminy Rutki",
+        "Herb gminy Somonino",
+        "Herb gminy Stary Targ",
+        "Herb gminy Zblewo",
+        "Herb gminy Dąbrowa Zielona",
+        "Herb gminy Mykanów",
+        "Herb gminy Przystajń",
+        "Herb gminy Rędziny",
+        "Herb gminy Górno",
+        "Herb gminy Mniów",
+        "Herb gminy Sobków",
+        "Herb gminy Wilczyce",
+        "Herb gminy Biskupiec (powiat nowomiejski)",
+        "Herb gminy Rychliki",
+        "Herb gminy Chrzypsko Wielkie",
+        "Herb Jaraczewa",
+        "Herb gminy Kamieniec",
+        "Herb gminy Lądek",
+        "Herb gminy Szydłowo (województwo wielkopolskie)",
+        "Herb gminy Karnice",
+        "Herb gminy Świerzno",
+        "Herb Bierutowa",
+        "Herb Legnicy",
+        "Herb Oleśnicy",
+        "Herb Sobótki",
+        "Herb Barcina",
+        "Herb Golubia-Dobrzynia",
+        "Herb Mogilna",
+        "Herb Torunia",
+        "Herb Biłgoraja",
+        "Herb Kamionki",
+        "Herb Stoczka Łukowskiego",
+        "Herb Babimostu",
+        "Herb Wschowy",
+        "Herb Opoczna",
+        "Herb Poddębic",
+        "Herb Chrzanowa",
+        "Herb Grybowa",
+        "Herb Krakowa",
+        "Herb Nowego Wiśnicza",
+        "Herb Radłowa",
+        "Herb Ryglic",
+        "Herb Skawiny",
+        "Herb Świątnik Górnych",
+        "Herb Góry Kalwarii",
+        "Herb Kobyłki",
+        "Herb Łaskarzewa",
+        "Herb Radomia",
+        "Herb Tarczyna",
+        "Herb Dobrodzienia",
+        "Herb Namysłowa",
+        "Herb Nysy",
+        "Herb Opola",
+        "Herb Paczkowa",
+        "Herb Prudnika",
+        "Herb Jedlicza",
+        "Herb Suchowoli",
+        "Herb Helu",
+        "Herb Wejherowa",
+        "Herb Bielska-Białej",
+        "Herb Lędzin",
+        "Herb Orzesza",
+        "Herb Sławkowa",
+        "Herb Świętochłowic",
+        "Herb Toszka",
+        "Herb Wilamowic",
+        "Herb Wodzisławia Śląskiego",
+        "Herb Zawiercia",
+        "Herb Buska-Zdroju",
+        "Herb Stopnicy",
+        "Herb Kisielic",
+        "Herb Ornety",
+        "Herb Pieniężna",
+        "Herb Koźmina Wielkopolskiego",
+        "Herb Słupcy",
+        "Herb Śremu",
+        "Herb Zagórowa",
+        "Herb Gryfic",
+        "Herb Koszalina",
+        "Herb Trzebiatowa",
+        "Herb powiatu oleśnickiego",
+        "Herb powiatu nowotarskiego",
+        "Herb powiatu prudnickiego",
+        "Herb powiatu brzozowskiego",
+        "Herb powiatu jarosławskiego",
+        "Herb powiatu kwidzyńskiego",
+        "Herb powiatu częstochowskiego",
+        "Herb powiatu wodzisławskiego",
+        "Herb powiatu gostyńskiego",
+        "Herb powiatu gnieźnieńskiego",
+        "Herb powiatu pyrzyckiego"
+      ]
+    }
+  ]
+}

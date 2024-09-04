@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { memo, useState, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import clsx from 'clsx';
 
@@ -8,8 +8,10 @@ import { WITH_ANIMAL, WITHOUT_ANIMAL } from '@/topic/Heraldry/constants';
 
 import IconMapMagnifyingGlass from '@/components/Icons/IconMapMagnifyingGlass';
 import IconBuilding from '@/components/Icons/IconBuilding';
+import IconCheck from '@/components/Icons/IconCheck';
 import IconColor from '@/components/Icons/IconColor';
 import IconControls from '@/components/Icons/IconControls';
+import IconFlask from '@/components/Icons/IconFlask';
 import IconAnimal from '@/components/Icons/IconAnimal';
 import IconCrown from '@/components/Icons/IconCrown';
 import IconEraser from '@/components/Icons/IconEraser';
@@ -58,6 +60,8 @@ type Props = {
   setFilterOperator: (operator: 'or' | 'and') => void,
   shouldReverseFilters: boolean,
   setShouldReverseFilters: (value: boolean) => void,
+  isDevModeActive: boolean,
+  setIsDevModeActive: (value: boolean) => void,
 };
 
 const FiltersPane = ({
@@ -77,6 +81,8 @@ const FiltersPane = ({
   setFilterOperator,
   shouldReverseFilters,
   setShouldReverseFilters,
+  isDevModeActive,
+  setIsDevModeActive,
 }: Props) => {
   const [activeMenu, setActiveMenu] = useState('');
   const [isOpen, setIsOpen] = useState(false);
@@ -116,7 +122,7 @@ const FiltersPane = ({
     setColorFilters([]);
     setAnimalFilters([]);
     setItemFilters([]);
-  }
+  };
 
   const activeTotal = typeFilters.length + colorFilters.length + animalFilters.length + itemFilters.length; 
 
@@ -179,7 +185,7 @@ const FiltersPane = ({
                 'font-[600] text-[#d2543a]': typeFilters.includes(value),
               })}
             >
-              {typeFilters.includes(value) && '✓'} {t(`heraldry.unit.type.${lang}.${value}`)} {total > 0 && <small className="text-[10px] text-[#b2afaf] tracking-widest font-[400]">({total})</small>}
+              {typeFilters.includes(value) && <IconCheck className="inline size-3 fill-current" />} {t(`heraldry.unit.type.${lang}.${value}`)} {total > 0 && <small className="text-[10px] text-[#b2afaf] tracking-widest font-[400]">({total})</small>}
             </button>
           )}
         </div>}
@@ -225,7 +231,7 @@ const FiltersPane = ({
               })}
               onClick={() => toggleAnimal(WITH_ANIMAL)}
             >
-              {animalFilters.includes(WITH_ANIMAL) && '✓'} {t(`heraldry.animal.${WITH_ANIMAL}`)}
+              {animalFilters.includes(WITH_ANIMAL) && <IconCheck className="inline size-3 fill-current" />} {t(`heraldry.animal.${WITH_ANIMAL}`)}
             </button>
             <button
               className={clsx('font-[500] text-[14px] text-left hover:text-[#d2543a]', { 
@@ -233,7 +239,7 @@ const FiltersPane = ({
               })}
               onClick={() => toggleAnimal(WITHOUT_ANIMAL)}
             >
-              {animalFilters.includes(WITHOUT_ANIMAL) && '✓'} {t(`heraldry.animal.${WITHOUT_ANIMAL}`)}
+              {animalFilters.includes(WITHOUT_ANIMAL) && <IconCheck className="inline size-3 fill-current" />} {t(`heraldry.animal.${WITHOUT_ANIMAL}`)}
             </button>
         </div>
         {animalFiltersList.length > 0 && <div className="sans mt-2 pt-3 border-t border-t-[#dbd7d7] grid grid-cols-1 max-h-[80lvh] overflow-auto sm:grid-cols-2 gap-1">
@@ -244,7 +250,7 @@ const FiltersPane = ({
                 'font-[600] text-[#d2543a]': animalFilters.includes(value),
               })}
             >
-               {animalFilters.includes(value) && '✓'}
+               {animalFilters.includes(value) && <IconCheck className="inline size-3 fill-current" />}
                {' '}
                {t(`heraldry.animal.${value}`)}
                {' '}
@@ -276,7 +282,7 @@ const FiltersPane = ({
                 'font-[600] text-[#d2543a]': itemFilters.includes(value),
               })}
             >
-              {itemFilters.includes(value) && '✓'}
+              {itemFilters.includes(value) && <IconCheck className="inline size-3 fill-current" />}
               {' '}
               {t(`heraldry.item.${value}`)}
               {' '}
@@ -300,9 +306,13 @@ const FiltersPane = ({
         >
           {shouldReverseFilters ? <IconEyeCrossed /> : <IconEye />}
         </ButtonCircle>
+        <span className="border-l"></span>
+        <ButtonCircle isActive={isDevModeActive} onClick={() => setIsDevModeActive(!isDevModeActive)}>
+          <IconFlask />
+        </ButtonCircle>
       </SubPane>}
     </div>
   );
 }
 
-export default FiltersPane;
+export default memo(FiltersPane);

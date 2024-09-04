@@ -1,13 +1,19 @@
+@mixin sans {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 @mixin hoverOnDesktopActiveOnMobile {
   @media (hover: hover) {
-      &:hover {
-          @content;
-      }
+    &:hover {
+      @content;
+    }
   }
 
   @media (hover: none) {
-      &:active {
-          @content;
-      }
+    &:active {
+      @content;
+    }
   }
 }
