@@ -12,8 +12,8 @@ const getPostionForPlaceET = (unit: AdministrativeUnit) => {
 
   const longitude = unit?.place?.coordinates?.lon ?? 0;
   const latitude = unit?.place?.coordinates?.lat ?? 0;
-  const left = `${((longitude - maxLeft) / mapWidth * 100)}%`;
-  const top = `${minTop + ((latitude - maxTop) / (maxBottom - maxTop) * 100)}%`;
+  const left = (longitude - maxLeft) / mapWidth * 100;
+  const top = minTop + ((latitude - maxTop) / (maxBottom - maxTop) * 100);
 
   return {
     left,
@@ -34,8 +34,8 @@ const getPostionForPlaceFI = (unit: AdministrativeUnit) => {
 
   const longitude = unit?.place?.coordinates?.lon ?? 0;
   const latitude = unit?.place?.coordinates?.lat ?? 0;
-  const left = `${64.5 + ((longitude - maxLeft) / mapWidth * 100)}%`;
-  const top = `${minTop + ((latitude - maxTop) / mapHeight * 100)}%`;
+  const left = 64.5 + ((longitude - maxLeft) / mapWidth * 100);
+  const top = minTop + ((latitude - maxTop) / mapHeight * 100);
 
   return {
     left,
@@ -55,8 +55,8 @@ const getPostionForPlacePL = (unit: AdministrativeUnit) => {
 
   const longitude = unit?.place?.coordinates?.lon ?? 0;
   const latitude = unit?.place?.coordinates?.lat ?? 0;
-  const left = `${((longitude - maxLeft) / mapWidth * 100)}%`;
-  const top = `${minTop + ((latitude - maxTop) / (maxBottom - maxTop) * 100)}%`;
+  const left = (longitude - maxLeft) / mapWidth * 100;
+  const top = minTop + ((latitude - maxTop) / (maxBottom - maxTop) * 100);
 
   return {
     left,
@@ -64,7 +64,9 @@ const getPostionForPlacePL = (unit: AdministrativeUnit) => {
   }
 };
 
-export const getPostionForPlace = (unit: AdministrativeUnit, lang: string) => {
+export const getPostionForPlace = (unit: AdministrativeUnit) => {
+  const lang = unit.lang;
+
   if (lang === 'pl') {
     return getPostionForPlacePL(unit);
   }

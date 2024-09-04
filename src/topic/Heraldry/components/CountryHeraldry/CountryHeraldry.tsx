@@ -6,7 +6,7 @@ import { useDraggable } from "react-use-draggable-scroll";
 import { isLanguageSupported } from '@/utils/lang';
 
 import { MapsSearchParams, getSearchParamFromFilters } from '@/topic/Heraldry/utils/getSearchParams'
-import { MarkerParamsWithResult, AdministrativeUnit } from '@/topic/Heraldry/types';
+import { MarkerParamsWithResult, AdministrativeUnit, MapOffset } from '@/topic/Heraldry/types';
 
 import { GetFilterResponse } from '@/topic/Heraldry/utils/getFilter';
 import { getFilteredUnits } from '@/topic/Heraldry/utils/getFilteredUnits';
@@ -20,6 +20,7 @@ import FiltersPane from '@/topic/Heraldry/components/Panes/FiltersPane';
 
 import HeraldryMapItemFromSprite from '@/topic/Heraldry/components/HeraldryMapItemFromSprite';
 import HeraldrySubtitle from '@/topic/Heraldry/components/HeraldrySubtitle';
+import HeraldryCanvas from '@/topic/Heraldry/components/HeraldryCanvas/HeraldryCanvas';
 
 import './CountryHeraldry.scss';
 
@@ -32,6 +33,7 @@ type Props = {
   mapWrapperClassName?: string,
   map: () => JSX.Element,
   initialFilters?: Partial<MapsSearchParams>
+  mapOffset: MapOffset,
 }
 
 const CountryHeraldry = ({
@@ -42,7 +44,8 @@ const CountryHeraldry = ({
   itemFiltersList,
   mapWrapperClassName,
   map: MapBackground,
-  initialFilters = {}
+  initialFilters = {},
+  mapOffset,
 }: Props) => {
     const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
     const [isDevModeActive, setIsDevModeActive] = useState(false);
@@ -132,18 +135,24 @@ const CountryHeraldry = ({
                 style={zoomLevel === 1 ? { } : { width: `max(${(zoomLevel - 1) * 500}px, ${(zoomLevel - 1) * 80}vw` }}
               >
                 <MapBackground />
-                <div>
+                {unitsForMap.length > 0 && <HeraldryCanvas units={unitsForMap} setSelected={() => {}} mapOffset={mapOffset} />}
+                {/* <div>
                     {unitsForMap.map(
-                      (unit) => (
+                      (unit) => {
+                        const { top, left } = getPostionForPlace(unit);
+                        return (
                         <HeraldryMapItemFromSprite
                           key={`${unit.title}-${unit?.place?.coordinates?.lon}`}
                           unit={unit}
-                          setListPhrase={setListPhrase}
-                          style={getPostionForPlace(unit, lang)}
+                          setListPhrase={{
+                            top: `${top}%`,
+                            left: `${left}%`,
+                          }}
+                          style={}
                           size={coatSize}
                         />
-                    ))}
-                </div>
+                    )})}
+                </div> */}
               </div>
             </div>
             <div className={clsx('', {
