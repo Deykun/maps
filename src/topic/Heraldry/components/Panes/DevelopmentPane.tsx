@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 
 import { MarkerParamsWithResult } from '@/topic/Heraldry/types';
 
-
 import useEffectChange from '@/hooks/useEffectChange';
 import useOutsideClick from '@/hooks/useOutsideClick';
 
