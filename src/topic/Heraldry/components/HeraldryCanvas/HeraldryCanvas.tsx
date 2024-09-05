@@ -30,9 +30,10 @@ type Props = {
   children: React.ReactNode,
   mapOffset: MapOffset,
   coatSize: number,
+  setListPhrase: (title: string) => void,
 }
 
-const HeraldryCanvas = ({ units, children, mapOffset, coatSize }: Props) => {
+const HeraldryCanvas = ({ units, children, mapOffset, coatSize, setListPhrase }: Props) => {
   const [dpi, setDpi] = useState(window.devicePixelRatio);
   const [selected, setSelected] = useState<AdministrativeUnit[]>([]);
   const [
@@ -78,16 +79,6 @@ const HeraldryCanvas = ({ units, children, mapOffset, coatSize }: Props) => {
     setCoatSize(coatSize);
   }, [coatSize]);
 // children
-  // const handleMapClick = useCallback((event: React.MouseEvent<HTMLElement>) => {
-  //   const x = event.nativeEvent.offsetX;
-  //   const y = event.nativeEvent.offsetY;
-
-  //   const selectedTitles = getCoatOfArmsForXandY({ x, y });
-
-  //   const selectedUnits = units.filter(({ title }) => selectedTitles.includes(title));
-
-  //   setSelected(selectedUnits);
-  // }, []);
 
   const {
     isHovering,
@@ -100,16 +91,19 @@ const HeraldryCanvas = ({ units, children, mapOffset, coatSize }: Props) => {
 
     const selectedUnits = units.filter(({ title }) => selectedTitles.includes(title));
 
-    console.log(selectedUnits)
-
     setSelected(selectedUnits);
   }, [position]);
+
+  const handleMapClick = useCallback(() => {
+    console.log('selected', selected);
+    setListPhrase(selected.map(({ title }) => title).join(', '));
+  }, [selected]);
 
   return (
     <div
       ref={mergeRefs(wrapperRef, elementRef)}
       className="heraldry-canvas absolute top-0 left-0 size-full cursor-none"
-      // onClick={handleMapClick}
+      onClick={handleMapClick}
       // onMouseOver={handleMouseOver}
       style={{ padding: mapPadding }}
     >

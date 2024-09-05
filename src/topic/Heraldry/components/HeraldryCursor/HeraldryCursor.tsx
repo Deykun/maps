@@ -1,4 +1,6 @@
-import { memo } from 'react';
+import { useEffect } from 'react';
+import clsx from 'clsx';
+import { AdministrativeUnit } from '@/topic/Heraldry/types';
 
 import './HeraldryCursor.scss';
 
@@ -6,12 +8,15 @@ type Props = {
   top: string | number,
   left: string | number,
   isHovering?: boolean,
+  selected: AdministrativeUnit[],
 }
 
 const HeraldryCursor = ({ top, left, isHovering = true, selected = [] }: Props) => {
   return (
     <div
-      className="heraldry-cursor-wrapper absolute -translate-x-1/2 -translate-y-1/2 hover:z-10 group duration-0"
+      className={clsx('heraldry-cursor-wrapper absolute hover:z-10 group duration-0 select-none', {
+        'heraldry-cursor-wrapper--without-content': selected.length === 0,
+      })}
       style={{
         top,
         left,
@@ -27,4 +32,4 @@ const HeraldryCursor = ({ top, left, isHovering = true, selected = [] }: Props) 
   );
 };
 
-export default memo(HeraldryCursor);
+export default HeraldryCursor;

@@ -136,7 +136,7 @@ const CountryHeraldry = ({
               >
                 <HeraldryCanvas
                   units={unitsForMap}
-                  setSelected={() => {}}
+                  setListPhrase={setListPhrase}
                   mapOffset={mapOffset}
                   coatSize={((coatSize + 1) / 11) * 80}
                 >

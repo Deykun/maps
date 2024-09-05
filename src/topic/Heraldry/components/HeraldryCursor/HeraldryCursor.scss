@@ -1,28 +1,33 @@
 .heraldry-cursor-wrapper {
   pointer-events: none;
-  opacity: 1 !important;
+  // opacity: 1 !important;
 
   // top: 420px !important;
   // left: 420px !important;
 }
 
 .heraldry-cursor {
-  display: inline-block;
-
-  // https://codepen.io/raghavbudhiraja/pen/zYQXQoK - it look cool
-  
+  display: block;
   position: relative;
-  width: 20px;
-  height: 20px;
-
+  width: 14px;
+  height: 14px;
   border-radius: 12px;
-  // border-bottom-right-radius: 3px;
   border-top-left-radius: 3px;
+
+  .map-wrapper:active & {
+    border-radius: 50px;
+  }
+
   background-color: #ff9676;
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.18) 0px 1px 2px 0px;
-
   background-color: white;
-  border: 1px solid #be5443c4;
+  border: 1px solid #aa0d0d;
+  transition: 0.12s ease-in-out;
+
+  .heraldry-cursor-wrapper--without-content & {
+    border-color: #d0d0d0;
+    box-shadow: 0 3px 14px -5px #ee9b7bc4, 0 7px 3px -6px #d9b7aac4;
+  }
 }
 
 .heraldry-cursor-marker {
@@ -34,28 +39,30 @@
   min-width: 15px;
   height: 15px;
   line-height: 15px;
-  line-height: 15px;
   border-radius: 10px;
-  // border-top-left-radius: 2px;
   border-bottom-right-radius: 2px;
   position: absolute;
-  // top: calc(100% + 1px);
-  // left: calc(100% + 1px);
-  bottom: calc(100% + 1px);
-  right: calc(100% + 1px);
+  bottom: calc(100% + 4px);
+  right: calc(100% + 4px);
+
+  .map-wrapper:active & {
+    bottom: calc(100% + 1px);
+    right: calc(100% + 1px);
+  }
+
   font-weight: 500;
   letter-spacing: 0.08em;
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.18) 0px 1px 2px 0px;
-
+  transition: 0.12s ease-in-out;
   transform-origin: top left;
-  // transform-origin: bottom right;
   animation: 0.3s heraldryCursorMarker forwards ease-in;
 }
 
 @keyframes heraldryCursorMarker {
   0% {
+    font-size: 15px;
     opacity: 0;
-    transform: scale(0) translate(-30px, -30px);
+    transform: scale(0) translate(-50px, -50px);
   }
 
   70% {
@@ -64,6 +71,7 @@
   }
 
   100% {
+    font-size: 10px;
     opacity: 1;
     transform: scale(1) translate(0, 0);
   }
