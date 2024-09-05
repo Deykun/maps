@@ -8,14 +8,14 @@ type Props = {
   top: string | number,
   left: string | number,
   isHovering?: boolean,
-  selected: AdministrativeUnit[],
+  hovered: AdministrativeUnit[],
 }
 
-const HeraldryCursor = ({ top, left, isHovering = true, selected = [] }: Props) => {
+const HeraldryCursor = ({ top, left, isHovering = true, hovered }: Props) => {
   return (
     <div
       className={clsx('heraldry-cursor-wrapper absolute hover:z-10 group duration-0 select-none', {
-        'heraldry-cursor-wrapper--without-content': selected.length === 0,
+        'heraldry-cursor-wrapper--without-content': hovered.length === 0,
       })}
       style={{
         top,
@@ -25,8 +25,7 @@ const HeraldryCursor = ({ top, left, isHovering = true, selected = [] }: Props) 
       onClick={() => {}}
     >
       <span className="heraldry-cursor">
-        {selected.length > 0 && <span className="heraldry-cursor-marker">{selected.length}</span>}
-        {/* <span className="heraldry-cursor-marker">{selected.length + 1}</span> */}
+        {hovered.length > 0 && <span className="heraldry-cursor-marker">{hovered.length}</span>}
       </span>
     </div>
   );

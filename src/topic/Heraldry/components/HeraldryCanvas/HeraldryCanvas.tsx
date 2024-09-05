@@ -35,7 +35,7 @@ type Props = {
 
 const HeraldryCanvas = ({ units, children, mapOffset, coatSize, setListPhrase }: Props) => {
   const [dpi, setDpi] = useState(window.devicePixelRatio);
-  const [selected, setSelected] = useState<AdministrativeUnit[]>([]);
+  const [hovered, setHovered] = useState<AdministrativeUnit[]>([]);
   const [
     settings,
     // setSettings,
@@ -123,13 +123,14 @@ const HeraldryCanvas = ({ units, children, mapOffset, coatSize, setListPhrase }:
 
     const selectedUnits = units.filter(({ title }) => selectedTitles.includes(title));
 
-    setSelected(selectedUnits);
+    setHovered(selectedUnits);
   }, [position]);
 
   const handleMapClick = useCallback(() => {
-    console.log('selected', selected);
-    setListPhrase(selected.map(({ title }) => title).join(', '));
-  }, [selected]);
+    if (hovered.length > 0) {
+      setListPhrase(hovered.map(({ title }) => title).join(', '));
+    }
+  }, [hovered]);
 
   return (
     <div
@@ -141,7 +142,7 @@ const HeraldryCanvas = ({ units, children, mapOffset, coatSize, setListPhrase }:
     >
       {children}
       <canvas ref={canvasRef} className="absolute top-0 left-0 size-full pointer-events-none" />
-      <HeraldryCursor top={position.y} left={position.x} isHovering={isHovering} selected={selected} />
+      <HeraldryCursor top={position.y} left={position.x} isHovering={isHovering} hovered={hovered} />
     </div>
   );
 }
