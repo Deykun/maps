@@ -60,7 +60,8 @@ const CountryHeraldry = ({
     const [animalFilters, setAnimalFilters] = useState<string[]>(initialFilters.animalFilters || []);
     const [itemFilters, setItemFilters] = useState<string[]>(initialFilters.itemFilters || []);
 
-    const { events } = useDraggable(wrapperRef, { decayRate: 0.01 });
+    // const { events } = useDraggable(wrapperRef, { decayRate: 0.01 });
+    const { events } = useDraggable(wrapperRef, { decayRate: 0 });
 
     const { t, i18n } = useTranslation();
 

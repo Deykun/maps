@@ -87,7 +87,39 @@ const HeraldryCanvas = ({ units, children, mapOffset, coatSize, setListPhrase }:
   } = useHeraldryCursorPosition();
 
   useEffectChange(() => {
-    const selectedTitles = getCoatOfArmsForXandY(position);
+    // const {
+// 
+    // } = position;
+    
+    /* 
+      We have a 1200x1200 canvas that is scaled down to 100% x 100% (to ensure the canvas image looks good when the desktop is scaled).
+      
+      This code transforms the clicked point (x and y) to the corresponding point on the canvas.
+    */
+
+    let canvasX = position.x;
+    let canvasY = position.y;
+
+    const boxSize = canvasRef.current?.getClientRects()[0];
+
+    const shouldScalePosition = typeof boxSize?.width === 'number'
+      && typeof canvasRef.current?.width=== 'number'
+      && Math.round(boxSize.width) !== Math.round(canvasRef.current.width);
+
+    if (shouldScalePosition) {
+      console.log({
+        x: boxSize.width,
+        y: canvasRef?.current?.width
+      })
+
+      canvasX = (canvasX / boxSize.width) * (canvasRef?.current?.width || 1);
+      canvasY = (canvasY / boxSize.height) * (canvasRef?.current?.height || 1);
+    }
+
+    const selectedTitles = getCoatOfArmsForXandY({
+      x: canvasX,
+      y: canvasY,
+    });
 
     const selectedUnits = units.filter(({ title }) => selectedTitles.includes(title));
 

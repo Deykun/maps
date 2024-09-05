@@ -163,11 +163,11 @@ export class CoatOfArms {
       return false;
     }
 
-    console.log({
-      ob: JSON.stringify(objectRaw),
-      x: this.x,
-      y: this.y,
-    });
+    // console.log({
+    //   ob: JSON.stringify(objectRaw),
+    //   x: this.x,
+    //   y: this.y,
+    // });
 
     // TODO: add a check for elements to detect transparency
 
