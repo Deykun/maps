@@ -6,6 +6,7 @@ type MousePosition = {
 };
 
 export default function useHeraldryCursorPosition() {
+  const [isHovering, setIsHovering] = useState(false);
   const [position, setPosition] = useState<MousePosition>({ x: 0, y: 0 });
   const elementRef = useRef<HTMLElement>(null);
 
@@ -16,16 +17,23 @@ export default function useHeraldryCursorPosition() {
         const x = event.clientX - rect.left;
         const y = event.clientY - rect.top;
         setPosition({ x, y });
+        setIsHovering(true);
       }
     };
 
+    const handleMouseLeave = (event: MouseEvent) => {
+      setIsHovering(false);
+    }
+
     const currentElement = elementRef.current;
+    currentElement?.addEventListener('mouseleave', handleMouseLeave);
     currentElement?.addEventListener('mousemove', handleMouseMove);
 
     return () => {
+      currentElement?.removeEventListener('mouseleave', handleMouseLeave);
       currentElement?.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
 
-  return { position, elementRef };
+  return { isHovering, position, elementRef };
 }

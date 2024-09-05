@@ -27,14 +27,14 @@ import './HeraldryCanvas.scss';
 
 type Props = {
   units: AdministrativeUnit[],
-  setSelected: (units: AdministrativeUnit[]) => void,
   children: React.ReactNode,
   mapOffset: MapOffset,
   coatSize: number,
 }
 
-const HeraldryCanvas = ({ units, setSelected, children, mapOffset, coatSize }: Props) => {
-  const [dpi, setDpi] = useState(window.devicePixelRatio)
+const HeraldryCanvas = ({ units, children, mapOffset, coatSize }: Props) => {
+  const [dpi, setDpi] = useState(window.devicePixelRatio);
+  const [selected, setSelected] = useState<AdministrativeUnit[]>([]);
   const [
     settings,
     // setSettings,
@@ -90,21 +90,32 @@ const HeraldryCanvas = ({ units, setSelected, children, mapOffset, coatSize }: P
   // }, []);
 
   const {
+    isHovering,
     position,
     elementRef,
   } = useHeraldryCursorPosition();
 
+  useEffectChange(() => {
+    const selectedTitles = getCoatOfArmsForXandY(position);
+
+    const selectedUnits = units.filter(({ title }) => selectedTitles.includes(title));
+
+    console.log(selectedUnits)
+
+    setSelected(selectedUnits);
+  }, [position]);
+
   return (
     <div
       ref={mergeRefs(wrapperRef, elementRef)}
-      className="heraldry-canvas absolute top-0 left-0 size-full"
+      className="heraldry-canvas absolute top-0 left-0 size-full cursor-none"
       // onClick={handleMapClick}
       // onMouseOver={handleMouseOver}
       style={{ padding: mapPadding }}
     >
       {children}
       <canvas ref={canvasRef} className="absolute top-0 left-0 size-full pointer-events-none" />
-      <HeraldryCursor top={position.y} left={position.x} />
+      <HeraldryCursor top={position.y} left={position.x} isHovering={isHovering} selected={selected} />
     </div>
   );
 }
