@@ -1,11 +1,12 @@
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
-import { AdministrativeUnit } from '@/topic/Heraldry/types';
-import { colorsMarkersByNames } from '@/topic/Heraldry/constants';
 
 import IconMarker from '@/components/Icons/IconMarker';
 import IconPlusMagnifyingGlass from '@/components/Icons/IconPlusMagnifyingGlass';
 import IconLink from '@/components/Icons/IconLink';
+
+import { AdministrativeUnit } from '@/topic/Heraldry/types';
+import { colorsMarkersByNames } from '@/topic/Heraldry/constants';
 
 type Props = {
   className?: string,
@@ -36,7 +37,7 @@ const UnitsPaneItem = ( { className, unit, setPreviewUnit }: Props) => {
           className="size-[70px] md:size-20 object-contain p-2 rounded-t-[4px] rounded-b-[30px] bg-white border"
           alt=""
           loading="lazy"
-        />      
+        />
         <div className="absolute bottom-0 right-0 translate-y-[50%] md:translate-y-[25%] flex gap-1">
           <button
             className="bg-white p-1 rounded-full shadow-md"

@@ -2,9 +2,6 @@
   @apply p-1 md:p-2 flex flex-col gap-2 rounded-md;
   
   border: 1px solid #dbd7d7;
-  background: rgba(236, 236, 236, 0.68);
-  background: hsla(0, 0%, 97%, 0.759);
-  background: rgba(249, 249, 249, 0.732);
   background: rgba(255, 255, 255, 0.73);
   backdrop-filter: blur(8px) saturate(1.5) contrast(0.7);
   max-width: calc(100vw - 80px);

@@ -21,7 +21,7 @@ export default function useHeraldryCursorPosition() {
       }
     };
 
-    const handleMouseLeave = (event: MouseEvent) => {
+    const handleMouseLeave = () => {
       setIsHovering(false);
     }
 

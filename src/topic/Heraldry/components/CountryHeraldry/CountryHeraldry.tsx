@@ -10,7 +10,6 @@ import { MarkerParamsWithResult, AdministrativeUnit, MapOffset } from '@/topic/H
 
 import { GetFilterResponse } from '@/topic/Heraldry/utils/getFilter';
 import { getFilteredUnits } from '@/topic/Heraldry/utils/getFilteredUnits';
-import { getPostionForPlace } from '@/topic/Heraldry/utils/getPostionForPlace';
 
 import DevelopmentPane from '@/topic/Heraldry/components/Panes/DevelopmentPane';
 import NavigationPane from '@/topic/Heraldry/components/Panes/NavigationPane';
@@ -18,7 +17,6 @@ import ZoomPane from '@/topic/Heraldry/components/Panes/ZoomPane';
 import UnitsPane from '@/topic/Heraldry/components/Panes/UnitsPane';
 import FiltersPane from '@/topic/Heraldry/components/Panes/FiltersPane';
 
-import HeraldryMapItemFromSprite from '@/topic/Heraldry/components/HeraldryMapItemFromSprite';
 import HeraldrySubtitle from '@/topic/Heraldry/components/HeraldrySubtitle';
 import HeraldryCanvas from '@/topic/Heraldry/components/HeraldryCanvas/HeraldryCanvas';
 
@@ -117,7 +115,7 @@ const CountryHeraldry = ({
               'ui-pane fixed top-3 left-3 md:left-12 md:ml-6 md:max-w-[calc(100vw_-_145px)] z-30 px-4 empty:hidden': zoomLevel > 1,
             })}>
               {zoomLevel === 1 && 
-                <h1 className={clsx('text-[28px] lg:text-[36px] text-center', { 
+                <h1 className={clsx('text-[28px] lg:text-[36px] text-center text-[#aa0d0d]', { 
                   'hidden': zoomLevel > 1,
                 })}>
                   {t(`heraldry.${lang}.mapTitle`)}

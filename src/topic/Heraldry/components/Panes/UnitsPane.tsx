@@ -7,10 +7,10 @@ import { removeDiacratics } from '@/utils/text';
 import useOutsideClick from '@/hooks/useOutsideClick';
 
 import IconTextMagnifyingGlass from '@/components/Icons/IconTextMagnifyingGlass';
-import IconShieldCheckers from '@/components/Icons/IconShieldCheckers';
 import IconGithub from '@/components/Icons/IconGithub';
 
 import { AdministrativeUnit } from '@/topic/Heraldry/types';
+import IconCoatOfArms from '@/topic/Heraldry/components/IconCoatOfArms';
 
 import Pane from '@/components/UI/Pane';
 import ButtonCircle from '@/components/UI/ButtonCircle';
@@ -92,12 +92,12 @@ const UnitsPane = ({
           isActive={isOpen}
           onClick={() => setIsOpen(!isOpen)}
         >
-            {children ? children : <IconShieldCheckers />}
-            {shouldShowCount
-              && phrase === filterPhrase
-              && filteredUnits.length > 0
-              && filteredUnits.length < 100
-              && <span className="ui-button-circle-marker">{filteredUnits.length}</span>}
+          <IconCoatOfArms units={filteredUnits} />
+          {shouldShowCount
+            && phrase === filterPhrase
+            && filteredUnits.length > 0
+            && filteredUnits.length < 100
+            && <span className="ui-button-circle-marker">{filteredUnits.length}</span>}
         </ButtonCircle>
       </Pane>
       {isOpen && <Pane className="absolute top-0 right-full z-50 w-[400px] mr-2">

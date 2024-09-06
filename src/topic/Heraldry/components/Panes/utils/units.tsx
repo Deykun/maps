@@ -1,7 +1,15 @@
 import { AdministrativeUnit } from '@/topic/Heraldry/types';
 import { removeDiacratics } from '@/utils/text';
 
+const getIsIdMatch = (phrase: string, unit: AdministrativeUnit) => {
+  return unit.id.toLowerCase() === phrase.replace('id:', '');
+}
+
 const getDoesPhraseMatch =  (phrase: string, unit: AdministrativeUnit) => {
+  if (phrase.startsWith('id:')) {
+    return getIsIdMatch(phrase, unit);
+  }
+
   const listPhraseNormalizedWords = phrase.split(' ').filter(Boolean);
   const text = `${unit.title} ${unit?.place?.name || ''}`.toLowerCase();
   const indexText = removeDiacratics(text);
@@ -25,6 +33,10 @@ const getPhraseSortRank = (phrase: string, unit: AdministrativeUnit) => {
   const placeWords = removeDiacratics((unit.place?.name || '').toLowerCase()).split(' ');
 
   let rank = 0;
+
+  if (phrase.startsWith('id:') && getIsIdMatch(phrase, unit)) {
+    rank += 2000;
+  }
 
   listPhraseNormalizedWords.forEach((phraseWord) => {
     titleWords.forEach((titleWord) => {

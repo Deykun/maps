@@ -35,6 +35,7 @@ const fetchCountryData = async () => {
       'Herb gminy Brudzew',
       'Herb gminy Ostrowice',
       'Herby miast Śląska Cieszyńskiego',
+      'Herb Jabłonkowa',
     ].includes(unit.title)) {
       // Historic
       return false;

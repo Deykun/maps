@@ -19,6 +19,7 @@ import useEffectChange from '@/hooks/useEffectChange'
 
 import useHeraldryCursorPosition from '@/topic/Heraldry/components/HeraldryCursor/useHeraldryCursorPosition';
 import HeraldryCursor from '@/topic/Heraldry/components/HeraldryCursor/HeraldryCursor';
+import HeraldryCursorLastPoint from '@/topic/Heraldry/components/HeraldryCursor/HeraldryCursorLastPoint';
 
 // import MapGrid from './dev/MapGrid';
 // import HeraldryCanvasAligmentTools from './dev/HeraldryCanvasAligmentTools';
@@ -36,6 +37,12 @@ type Props = {
 const HeraldryCanvas = ({ units, children, mapOffset, coatSize, setListPhrase }: Props) => {
   const [dpi, setDpi] = useState(window.devicePixelRatio);
   const [hovered, setHovered] = useState<AdministrativeUnit[]>([]);
+  const [lastClick, setLastClick] = useState<undefined | {
+    x: number,
+    y: number,
+    hovered: AdministrativeUnit[],
+  }>(undefined);
+
   const [
     settings,
     // setSettings,
@@ -72,13 +79,13 @@ const HeraldryCanvas = ({ units, children, mapOffset, coatSize, setListPhrase }:
 
   useEffectChange(() => {
     onResize(settings, mapOffset);
+    setLastClick(undefined);
   }, [settings, dimensions?.width]);
 
   useEffectChange(() => {
     setDpi(window.devicePixelRatio);
     setCoatSize(coatSize);
   }, [coatSize]);
-// children
 
   const {
     isHovering,
@@ -87,10 +94,6 @@ const HeraldryCanvas = ({ units, children, mapOffset, coatSize, setListPhrase }:
   } = useHeraldryCursorPosition();
 
   useEffectChange(() => {
-    // const {
-// 
-    // } = position;
-    
     /* 
       We have a 1200x1200 canvas that is scaled down to 100% x 100% (to ensure the canvas image looks good when the desktop is scaled).
       
@@ -127,23 +130,39 @@ const HeraldryCanvas = ({ units, children, mapOffset, coatSize, setListPhrase }:
   }, [position]);
 
   const handleMapClick = useCallback(() => {
-    if (hovered.length > 0) {
-      setListPhrase(hovered.map(({ title }) => title).join(', '));
+    if (hovered.length > 0 && hovered.length < 20) {
+      setListPhrase(hovered.map(({ id }) => `id:${id}`).join(', '));
+      setLastClick({
+        x: position.x,
+        y: position.y,
+        hovered: hovered,
+      });
+    } else {
+      setLastClick(undefined);
     }
   }, [hovered]);
 
   return (
-    <div
-      ref={mergeRefs(wrapperRef, elementRef)}
-      className="heraldry-canvas absolute top-0 left-0 size-full cursor-none"
-      onClick={handleMapClick}
-      // onMouseOver={handleMouseOver}
-      style={{ padding: mapPadding }}
-    >
-      {children}
-      <canvas ref={canvasRef} className="absolute top-0 left-0 size-full pointer-events-none" />
+    <>
+      <div
+        ref={mergeRefs(wrapperRef, elementRef)}
+        className="heraldry-canvas absolute top-0 left-0 size-full cursor-none"
+        onClick={handleMapClick}
+        // onMouseOver={handleMouseOver}
+        style={{ padding: mapPadding }}
+      >
+        {children}
+        <canvas ref={canvasRef} className="absolute top-0 left-0 size-full pointer-events-none" />
+      </div>
+    
+      {lastClick && <HeraldryCursorLastPoint
+        key={`${lastClick.x}x${lastClick.y}`}
+        top={lastClick.y}
+        left={lastClick.x}
+        selected={lastClick.hovered}
+      />}
       <HeraldryCursor top={position.y} left={position.x} isHovering={isHovering} hovered={hovered} />
-    </div>
+    </>
   );
 }
 

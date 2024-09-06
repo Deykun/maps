@@ -56,7 +56,7 @@ const ZoomPane = ({
         <ButtonCircle onClick={() => setCoatSize(coatSize - 1)} isDisabled={coatSize === coatMin}>
           <IconMinus />
         </ButtonCircle>
-        <span style={{ transform: `scale(${((coatSize + 5) / (coatMax + 5)).toFixed(1)})`}}>
+        <span style={{ transform: `scale(${((coatSize + 5) / (coatMax + 5)).toFixed(1)})`}} className="drop-shadow-[0_0_4px_rgba(255,255,255,0.95)]">
           <IconShieldCheckers className="size-5" />
         </span>
         <ButtonCircle onClick={() => setCoatSize(coatSize + 1)} isDisabled={coatSize === coatMax}>
