@@ -77,11 +77,13 @@ const UnitsPaneItem = ( { className, unit, setPreviewUnit }: Props) => {
 
             return (
               <span
-              className="inline-flex mr-1 size-3 rounded-[3px] bg-[#eee] shadow-sm group overflow-hidden"
-              title={title} 
-              style={{ backgroundColor: colorsMarkersByNames[colorName] }}
-            >
+                key={colorName}
+                className="inline-flex mr-1 size-3 rounded-[3px] bg-[#eee] shadow-sm group overflow-hidden"
+                title={title} 
+                style={{ backgroundColor: colorsMarkersByNames[colorName] }}
+              >
               {colors.map((item) => <span
+                key={item.color}
                 className="color size-full opacity-0 group-hover:opacity-100 duration-300"
                 style={{ backgroundColor: item.color }}
               />)}

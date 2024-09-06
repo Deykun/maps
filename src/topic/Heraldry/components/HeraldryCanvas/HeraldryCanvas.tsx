@@ -75,6 +75,7 @@ const HeraldryCanvas = ({ units, children, mapOffset, coatSize, setListPhrase }:
 
   useEffect(() => {
     setCoatOfArms(units, settings);
+    setLastClick(undefined);
   }, [units]);
 
   useEffectChange(() => {

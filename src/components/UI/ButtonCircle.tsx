@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import './ButtonCircle.scss';
 
 type Props = {
+  id?: string,
   className?: string,
   wrapperClassName?: string,
   children: React.ReactNode,
@@ -14,7 +15,7 @@ type Props = {
   title?: string,
 }
 
-const ButtonCircle = ({ className, wrapperClassName, children, onClick, href, target, isDisabled = false, isActive = false, title }: Props) => {
+const ButtonCircle = ({ id, className, wrapperClassName, children, onClick, href, target, isDisabled = false, isActive = false, title }: Props) => {
   const TagName = href ? 'a' : 'button';
 
   return (
@@ -22,7 +23,7 @@ const ButtonCircle = ({ className, wrapperClassName, children, onClick, href, ta
       [wrapperClassName || '']: wrapperClassName,
       'ui-button-circle--active': isActive,
     })}>
-      <TagName onClick={onClick} disabled={isDisabled} className={className} title={title} href={href} target={target}>
+      <TagName id={id} onClick={onClick} disabled={isDisabled} className={className} title={title} href={href} target={target}>
         {children}
       </TagName>
     </span>

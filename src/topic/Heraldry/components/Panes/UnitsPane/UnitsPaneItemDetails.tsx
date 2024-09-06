@@ -72,11 +72,13 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
 
             return (
               <span
-              className="inline-flex mr-1 size-3 rounded-[3px] bg-[#eee] shadow-sm group overflow-hidden"
-              title={title} 
-              style={{ backgroundColor: colorsMarkersByNames[colorName] }}
-            >
+                key={colorName}
+                className="inline-flex mr-1 size-3 rounded-[3px] bg-[#eee] shadow-sm group overflow-hidden"
+                title={title} 
+                style={{ backgroundColor: colorsMarkersByNames[colorName] }}
+             >
               {colors.map((item) => <span
+                key={item.color}
                 className="color size-full opacity-0 group-hover:opacity-100 duration-300"
                 style={{ backgroundColor: item.color }}
               />)}
@@ -90,15 +92,14 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
             {Object.entries(colors?.byNamesRejected || {}).map(([colorName, colors = []]) => {
               const bestMatch = colors.sort((a, b) => a.distanceToTreshold - b.distanceToTreshold)?.[0];
 
-              console.log(bestMatch);
-
               return (
                 <span
+                  key={colorName}
                   className="inline-flex mx-1 size-4 rounded-md bg-[#eee] group overflow-hidden"
                   title={`${colorName} ${bestMatch?.distanceToTreshold}`} 
                   style={{ backgroundColor: colorsMarkersByNames[colorName], border: `2px solid ${bestMatch.matcherColor}` }}
                 >
-                  {colors.map((item) => <span className="color size-full opacity-0 group-hover:opacity-100 duration-300" style={{ backgroundColor: item.color }} />)}
+                  {colors.map((item) => <span key={item.color} className="color size-full opacity-0 group-hover:opacity-100 duration-300" style={{ backgroundColor: item.color }} />)}
                 </span>
               );
             })}
@@ -106,7 +107,7 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
           <p className="my-2">
             {(colors?.hexPalette || []).map((hexColor) => {
               return (
-                <span className="inline-flex size-4" style={{ backgroundColor: hexColor }} />
+                <span key={hexColor} className="inline-flex size-4" style={{ backgroundColor: hexColor }} />
               );
             })}
           </p>

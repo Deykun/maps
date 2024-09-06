@@ -121,6 +121,12 @@ const HeraldryET = () => {
       itemFiltersList={itemFiltersList}
       mapWrapperClassName="aspect-[707_/_509]"
       map={SvgMap}
+      mapOffset={{
+         minLatTop: 57.45,
+         maxLatTop: 59.97,
+         minLonLeft: 21.46,
+         maxLonLeft: 28.44,
+     }}
       initialFilters={initialFilters}
     />
   );

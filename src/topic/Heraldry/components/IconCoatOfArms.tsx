@@ -7,35 +7,17 @@ type Props = {
 }
 
 const IconCoatOfArms = ({ units }: Props) => {
-
-  if (units.length === 2) {
-    return (
-      <span className="relative size-5">
-        {units.map((unit) => (
-          <img
-            src={unit.imagesList?.[0].path}
-            srcSet={unit.imageSrcSet}
-            alt=""
-            loading="lazy"
-          />
-        ))}
-      </span>
-    );
+  if (units.length !== 1) {
+    return <IconShieldCheckers />
   }
 
   return (
-    <>
-      {units.length === 1 ? 
-        <img
-          src={units[0]?.imagesList?.[0].path}
-          srcSet={units[0]?.imageSrcSet}
-          alt=""
-          loading="lazy"
-        />
-      : 
-        <IconShieldCheckers />
-      }
-    </>
+    <img
+      src={units[0]?.imagesList?.[0].path}
+      srcSet={units[0]?.imageSrcSet}
+      alt=""
+      loading="lazy"
+    />
   );
 };
 

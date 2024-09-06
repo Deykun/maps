@@ -43,7 +43,7 @@ const UnitsPane = ({
 
   useOutsideClick('#units-pane', () => {
     setIsOpen(false);
-  });
+  }, '.heraldry-cursor-last-position-wrapper');
 
   useEffect(() => {
     if (units.length === 0) {
@@ -88,6 +88,7 @@ const UnitsPane = ({
     <div className="pointer-events-auto" id="units-pane">
       <Pane>
         <ButtonCircle
+          id="units-pane-toggle"
           isDisabled={units.length === 0}
           isActive={isOpen}
           onClick={() => setIsOpen(!isOpen)}

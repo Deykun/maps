@@ -17,9 +17,8 @@ type Props = {
 
 const HeraldryCursorLastPoint = ({ top, left, selected }: Props) => {
   const handleClick = useCallback(() => {
-    // event.preventDefault();
-
-    console.log('addas')
+    // TODO: replace with some kind of global store
+    document.getElementById(`units-pane-toggle`)?.click();
   }, []);
 
   return (
