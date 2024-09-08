@@ -35,8 +35,8 @@
   .heraldry-cursor-wrapper--without-content & {
     width: 14px;
     height: 14px;
-    border-color: #d0d0d0;
     border: 1px solid #dbd7d7;
+    border-color: #999;
     box-shadow: -5px -5px 10px #fff inset, -4px -4px 5px #fff inset, 0 3px 14px -5px #f4f3f2c4, 0 7px 3px -6px #d7d7d7c4;
   }
 }
@@ -85,4 +85,3 @@
     transform: scale(1) translate(0, 0);
   }
 }
-

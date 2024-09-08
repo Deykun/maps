@@ -34,6 +34,7 @@ const HeraldryCursorLastPoint = ({ top, left, selected }: Props) => {
           className="heraldry-cursor-last-position"
           // isActive={isOpen}
           onClick={handleClick}
+          title={selected.length <= 3 ? selected.map(({ shortTitle, title }) => shortTitle || title).join(', ') : undefined}
         >
           <IconCoatOfArms units={selected} />
           <span className="ui-button-circle-marker">{selected.length}</span>

@@ -1,41 +1,41 @@
 .heraldry-cursor-last-position-wrapper {
-
+  transform-origin: top left;
+  animation: 0.3s lastPointWrapper forwards ease-in;
 }
 
 .heraldry-cursor-last-position {
-  // @apply flex gap-1 justify-center items-center px-1;
+  transform: scale(0);
+  transform-origin: center;
+  animation: 0.2s lastPoint forwards ease-in;
+  animation-delay: 0.2s;
+}
 
-  // font-size: 10px;
-  // position: relative;
-  // background-color: #ff9676;
-  // box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.18) 0px 1px 2px 0px;
-  // background-color: white;
-  // border: 1px solid #d2543a;
+@keyframes lastPointWrapper {
+  0% {
+    opacity: 0;
+    transform: scale(0) translate(-50%, -50%);
+  }
 
-  // border-radius: 6px;
-  // border-color: #d0d0d0;
-  // box-shadow: 0 3px 14px -5px #ee9b7bc4, 0 7px 3px -6px #d9b7aac4;
-  // pointer-events: all;
+  70% {
+    transform: scale(1.3) translate(-50%, -50%);
+  }
 
-  // border-color: #be5443c4;
-  // box-shadow: 0 3px 14px -5px #ee9b7bc4, 0 7px 3px -6px #d9b7aac4;
-  // background-image: radial-gradient(at right, #dec9c900 0, #f1770e7d, #c225c033 100%);
-  // background-size: auto 100%;
-  // background-position: 100%;
-  // background-size: 200% 500px;
-  // background-position: 0 0;
+  100% {
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%);
+  }
+}
 
-  // &,
-  // > svg {
-  //   fill: #312f2f;
-  //   transition: 0.12s ease-in-out;
-  // }
+@keyframes lastPoint {
+  0% {
+    transform: scale(0);
+  }
 
-  // &:hover {
-  //   border: 1px solid #d2543a;
+  70% {
+    transform: scale(1.3);
+  }
 
-  //   > svg {
-  //     fill: #d2543a;
-  //   }
-  // }
+  100% {
+    transform: scale(1);
+  }
 }

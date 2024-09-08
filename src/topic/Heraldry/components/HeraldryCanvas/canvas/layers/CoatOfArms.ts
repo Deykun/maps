@@ -88,6 +88,10 @@ export class CoatOfArms {
     const percentageX = (this.lonX - minLonLeft) / widthLon;
     const percentageY = (maxLatTop - this.latY) / heightLat;
 
+    // console.log({
+
+    // })
+
     const scaledMapPadding = mapPadding * window.devicePixelRatio;
 
     const canvas = this.canvas.getClientRects()[0];
@@ -155,13 +159,28 @@ export class CoatOfArms {
       return false;
     }
 
-    // console.log({
-    //   ob: JSON.stringify(objectRaw),
-    //   x: this.x,
-    //   y: this.y,
-    // });
-
     // TODO: add a check for elements to detect transparency
+    // const xInImage = object.x - this.x;
+    // const yInImage = object.y - this.y;
+
+    // const canvas = document.createElement("canvas");
+
+    // try {
+    //   document.body.appendChild(canvas);
+    //   canvas.width = this.width * this.zoomLevel;
+    //   canvas.height = this.height * this.zoomLevel;
+    //   const context = canvas.getContext("2d");
+
+    //   if (context) {
+    //     context.drawImage(this.image, 0, 0, this.width, this.height);
+    //     canvas.remove();
+    
+    //     return context.getImageData(xInImage, yInImage, 1, 1).data[3] > 0
+    //   }
+    // } catch {
+    // }
+    
+    // canvas.remove();
 
     return true;
   }

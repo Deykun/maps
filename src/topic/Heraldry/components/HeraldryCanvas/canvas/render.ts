@@ -36,7 +36,10 @@ const renderFrame = () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   coatOfArmsList.forEach((item) => {
-    item.draw();
+    // TODO: Add logic to drop setTzmeout when a new frame is requested.
+    // setTimeout(() => {
+      item.draw();
+    // }, 0);
   });
 }
 

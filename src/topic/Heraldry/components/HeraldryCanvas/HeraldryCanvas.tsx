@@ -131,7 +131,7 @@ const HeraldryCanvas = ({ units, children, mapOffset, coatSize, setListPhrase }:
   }, [position]);
 
   const handleMapClick = useCallback(() => {
-    if (hovered.length > 0 && hovered.length < 20) {
+    if (hovered.length > 0 && hovered.length < 40) {
       setListPhrase(hovered.map(({ id }) => `id:${id}`).join(', '));
       setLastClick({
         x: position.x,
