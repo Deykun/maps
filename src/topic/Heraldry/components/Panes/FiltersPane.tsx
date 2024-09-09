@@ -151,13 +151,13 @@ const FiltersPane = ({
             <IconCrown />
             {itemFilters.length > 0 && <span className="ui-button-circle-marker">{itemFilters.length}</span>}
           </ButtonCircle>
-          <ButtonCircle onClick={toggleMenu('settings')} isActive={activeMenu === 'settings'} title={t('heraldry.clearFilters')}>
+          <ButtonCircle onClick={toggleMenu('settings')} isActive={activeMenu === 'settings'}>
             <IconControls />
           </ButtonCircle>
         </>}
         {activeTotal > 0 && <>
           <span className="border-t" />
-          <ButtonCircle onClick={resetFilters}>
+          <ButtonCircle onClick={resetFilters} label={t('heraldry.clearFilters')}>
             <IconEraser />
           </ButtonCircle>
         </>}

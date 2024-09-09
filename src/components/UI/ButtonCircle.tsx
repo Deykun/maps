@@ -13,9 +13,10 @@ type Props = {
   isDisabled?: boolean,
   isActive?: boolean,
   title?: string,
+  label?: string,
 }
 
-const ButtonCircle = ({ id, className, wrapperClassName, children, onClick, href, target, isDisabled = false, isActive = false, title }: Props) => {
+const ButtonCircle = ({ id, className, wrapperClassName, children, onClick, href, target, isDisabled = false, isActive = false, title, label }: Props) => {
   const TagName = href ? 'a' : 'button';
 
   return (
@@ -25,6 +26,7 @@ const ButtonCircle = ({ id, className, wrapperClassName, children, onClick, href
     })}>
       <TagName id={id} onClick={onClick} disabled={isDisabled} className={className} title={title} href={href} target={target}>
         {children}
+        {label && <span className="ui-button-circle-label">{label}</span>}
       </TagName>
     </span>
   );

@@ -1,6 +1,10 @@
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 
+import {
+  showUnitOnMap,
+} from '@/topic/Heraldry/stores/cursorStore';
+
 import IconMarker from '@/components/Icons/IconMarker';
 import IconPlusMagnifyingGlass from '@/components/Icons/IconPlusMagnifyingGlass';
 import IconLink from '@/components/Icons/IconLink';
@@ -15,7 +19,7 @@ type Props = {
 }
 
 const UnitsPaneItem = ( { className, unit, setPreviewUnit }: Props) => {
-  const { id, title, url, imagesList, imageSrcSet, place, markers, colors } = unit;  
+  const { title, url, imagesList, imageSrcSet, place, markers, colors } = unit;  
   
   const { t } = useTranslation();
 
@@ -23,10 +27,6 @@ const UnitsPaneItem = ( { className, unit, setPreviewUnit }: Props) => {
     ...(markers?.animals || []).map((v) => t(`heraldry.animal.${v}`)),
     ...(markers?.items || []).map((v) => t(`heraldry.item.${v}`)),
   ];
-
-  const focusCoat = () => {
-    document.getElementById(`coat-${id}`)?.focus();
-  }
 
   return (
     <li className={clsx('flex gap-2 items-center', { [className || '']: className })}>
@@ -41,7 +41,7 @@ const UnitsPaneItem = ( { className, unit, setPreviewUnit }: Props) => {
         <div className="absolute bottom-0 right-0 translate-y-[50%] md:translate-y-[25%] flex gap-1">
           <button
             className="bg-white p-1 rounded-full shadow-md"
-            onClick={focusCoat}
+            onClick={() => showUnitOnMap(unit.id)}
           >
             <IconMarker className="size-4" />
           </button>

@@ -10,6 +10,8 @@ export const zoomUnitInPx = 640;
 export const zoomMin = 5;
 export const zoomMax = 35;
 
+// Old poc of European map
+
 type SettingStoreState = {
   zoomLevel: number;
   zoomCenterX: number,

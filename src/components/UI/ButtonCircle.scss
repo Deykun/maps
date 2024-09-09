@@ -52,6 +52,39 @@
       animation: 0.1s buttonCircleMarker forwards ease-in;
     }
   }
+
+  .ui-button-circle-label {
+    position: absolute;
+    top: 50%;
+    opacity: 0;
+    right: calc(100% - 15px);
+    transform: translateY(-50%) scale(0);
+    transform-origin: right center;
+    background-color: #aa0d0d;
+    color: white;
+    padding: 3px 8px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    pointer-events: none;
+    transition: 0.15s ease-in-out;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      transform: translateY(-50%);
+      border: 5px solid transparent !important;
+      border-left-color: #aa0d0d !important;
+    }
+  }
+
+  &:hover .ui-button-circle-label {
+    opacity: 1;
+    right: calc(100% + 20px);
+    transform: translateY(-50%) scale(1);
+  }
 }
 
 .ui-button-circle--active {

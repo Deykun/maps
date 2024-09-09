@@ -6,6 +6,12 @@ import { useTranslation } from 'react-i18next';
 
 // import { useSettingStore } from '@/topic/Heraldry/stores/settingsStore';
 
+import {
+  setLastClick,
+  showUnitOnMap,
+  useCursorStore,
+} from '@/topic/Heraldry/stores/cursorStore';
+
 import { mergeRefs } from '@/utils/ref';
 
 import { AdministrativeUnit, MapOffset } from '@/topic/Heraldry/types';
@@ -35,13 +41,13 @@ type Props = {
 }
 
 const HeraldryCanvas = ({ units, children, mapOffset, coatSize, setListPhrase }: Props) => {
-  const [dpi, setDpi] = useState(window.devicePixelRatio);
+  const idToShow = useCursorStore((state) => state.idToShow);
   const [hovered, setHovered] = useState<AdministrativeUnit[]>([]);
-  const [lastClick, setLastClick] = useState<undefined | {
-    x: number,
-    y: number,
-    hovered: AdministrativeUnit[],
-  }>(undefined);
+  // const [lastClick, setLastClick] = useState<undefined | {
+  //   x: number,
+  //   y: number,
+  //   hovered: AdministrativeUnit[],
+  // }>(undefined);
 
   const [
     settings,
@@ -84,7 +90,6 @@ const HeraldryCanvas = ({ units, children, mapOffset, coatSize, setListPhrase }:
   }, [settings, dimensions?.width]);
 
   useEffectChange(() => {
-    setDpi(window.devicePixelRatio);
     setCoatSize(coatSize);
   }, [coatSize]);
 
@@ -111,11 +116,6 @@ const HeraldryCanvas = ({ units, children, mapOffset, coatSize, setListPhrase }:
       && Math.round(boxSize.width) !== Math.round(canvasRef.current.width);
 
     if (shouldScalePosition) {
-      console.log({
-        x: boxSize.width,
-        y: canvasRef?.current?.width
-      })
-
       canvasX = (canvasX / boxSize.width) * (canvasRef?.current?.width || 1);
       canvasY = (canvasY / boxSize.height) * (canvasRef?.current?.height || 1);
     }
@@ -143,6 +143,45 @@ const HeraldryCanvas = ({ units, children, mapOffset, coatSize, setListPhrase }:
     }
   }, [hovered]);
 
+  useEffect(() => {
+    console.log('idToShow', idToShow);
+    if (idToShow) {
+      const unit = units.find(({ id }) => id === idToShow);
+
+      if (unit && canvasRef.current) {
+        if (typeof unit?.place?.coordinates?.lon === 'number' && typeof unit?.place?.coordinates?.lat === 'number') {
+          const {
+            minLatTop,
+            maxLatTop,
+            minLonLeft,
+            maxLonLeft,
+          } = mapOffset;
+  
+          const widthLon = Math.abs(minLonLeft - maxLonLeft);
+          const heightLat = Math.abs(minLatTop - maxLatTop);
+          
+          const percentageX = (unit.place.coordinates.lon - minLonLeft) / widthLon;
+          const percentageY = (maxLatTop - unit.place.coordinates.lat) / heightLat;
+
+          const canvas = canvasRef.current.getClientRects()[0];
+
+          const position = {
+            x: canvas.left * percentageX + mapPadding,
+            y: canvas.top * percentageY + mapPadding,
+          }
+          
+          setLastClick({
+            x: position.x,
+            y: position.y,
+            hovered: [unit],
+          });
+
+          document.getElementById('heraldry-cursor-last-position')?.focus();
+        }
+      }
+    }
+  }, [idToShow])
+
   return (
     <>
       <div
@@ -155,16 +194,10 @@ const HeraldryCanvas = ({ units, children, mapOffset, coatSize, setListPhrase }:
         {children}
         <canvas ref={canvasRef} className="absolute top-0 left-0 size-full pointer-events-none" />
       </div>
-    
-      {lastClick && <HeraldryCursorLastPoint
-        key={`${lastClick.x}x${lastClick.y}`}
-        top={lastClick.y}
-        left={lastClick.x}
-        selected={lastClick.hovered}
-      />}
+      <HeraldryCursorLastPoint />
       <HeraldryCursor top={position.y} left={position.x} isHovering={isHovering} hovered={hovered} />
     </>
   );
 }
 
-export default memo(HeraldryCanvas)
+export default memo(HeraldryCanvas);

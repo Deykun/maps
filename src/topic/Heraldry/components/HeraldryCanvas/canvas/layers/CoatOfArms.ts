@@ -88,10 +88,6 @@ export class CoatOfArms {
     const percentageX = (this.lonX - minLonLeft) / widthLon;
     const percentageY = (maxLatTop - this.latY) / heightLat;
 
-    // console.log({
-
-    // })
-
     const scaledMapPadding = mapPadding * window.devicePixelRatio;
 
     const canvas = this.canvas.getClientRects()[0];

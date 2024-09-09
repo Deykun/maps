@@ -5,6 +5,12 @@ import { useDraggable } from "react-use-draggable-scroll";
 
 import { isLanguageSupported } from '@/utils/lang';
 
+import {
+  setLastClick,
+  showUnitOnMap,
+  useCursorStore,
+} from '@/topic/Heraldry/stores/cursorStore';
+
 import { MapsSearchParams, getSearchParamFromFilters } from '@/topic/Heraldry/utils/getSearchParams'
 import { MarkerParamsWithResult, AdministrativeUnit, MapOffset } from '@/topic/Heraldry/types';
 
@@ -45,6 +51,7 @@ const CountryHeraldry = ({
   initialFilters = {},
   mapOffset,
 }: Props) => {
+    const idToShow = useCursorStore((state) => state.idToShow);
     const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
     const [isDevModeActive, setIsDevModeActive] = useState(false);
     const [listPhrase, setListPhrase] = useState('');
@@ -134,6 +141,7 @@ const CountryHeraldry = ({
                 style={zoomLevel === 1 ? { } : { width: `max(${(zoomLevel - 1) * 500}px, ${(zoomLevel - 1) * 80}vw` }}
               >
                 <HeraldryCanvas
+                  idToShow={idToShow}
                   units={unitsForMap}
                   setListPhrase={setListPhrase}
                   mapOffset={mapOffset}
