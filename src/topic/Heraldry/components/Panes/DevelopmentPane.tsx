@@ -3,6 +3,10 @@ import { useTranslation } from 'react-i18next';
 
 import { MarkerParamsWithResult } from '@/topic/Heraldry/types';
 
+import {
+  useFiltersDevelopmentStore,
+} from '@/topic/Heraldry/stores/filtersDevelopmentStore';
+
 import useEffectChange from '@/hooks/useEffectChange';
 import useOutsideClick from '@/hooks/useOutsideClick';
 
@@ -32,6 +36,7 @@ const DevelopmentPane = ({
   setCustomFilter,
   unitNameForAction,
 }: Props) => {
+  const isFiltersDevelopmentModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
   const [activeCustomAction, setActiveCustomAction] = useState<undefined | 'plus' | 'minus'>(undefined);
   const [activeMenu, setActiveMenu] = useState('');
   const [isOpen, setIsOpen] = useState(false);
@@ -43,10 +48,10 @@ const DevelopmentPane = ({
   });
 
   useEffect(() => {
-    if (!isOpen) {
+    if (!isOpen || !isFiltersDevelopmentModeActive) {
       setActiveMenu('');
     }
-  }, [isOpen]);
+  }, [isOpen, isFiltersDevelopmentModeActive]);
 
   useEffect(() => {
     if (!customFilter) {
@@ -76,7 +81,11 @@ const DevelopmentPane = ({
 
   const toggleMenu = (name: string) => () => setActiveMenu((v) => v === name ? '' : name);
 
-  const hasActive = Boolean(customFilter); 
+  const hasActive = Boolean(customFilter);
+
+  if (!isFiltersDevelopmentModeActive) {
+    return null;
+  }
 
   return (
     <div className="relative pointer-events-auto" id="development-pane">
@@ -91,16 +100,30 @@ const DevelopmentPane = ({
         </ButtonCircle>
         {isOpen && <>
           <span className="border-t" />
-          <ButtonCircle onClick={toggleMenu('filters')} isActive={activeMenu === 'filters'} title="App filters">
+          <ButtonCircle
+            onClick={toggleMenu('filters')}
+            isActive={activeMenu === 'filters'}
+            label="App filters"
+            labelPosition="right"
+          >
             <IconSelected />
           </ButtonCircle>
-          <ButtonCircle onClick={toggleMenu('customFilter')} isActive={activeMenu === 'customFilter'} title="Create your own filter">
+          <ButtonCircle
+            onClick={toggleMenu('customFilter')}
+            isActive={activeMenu === 'customFilter'}
+            label="Create your own filter"
+            labelPosition="right"
+          >
             <IconSelectNew />
           </ButtonCircle>
         </>}
         {hasActive && <>
           <span className="border-t" />
-          <ButtonCircle onClick={() => setCustomFilter()}>
+          <ButtonCircle
+            onClick={() => setCustomFilter()}
+            label={t('heraldry.clearFilters')}
+            labelPosition="right"
+          >
             <IconEraser />
           </ButtonCircle>
         </>}

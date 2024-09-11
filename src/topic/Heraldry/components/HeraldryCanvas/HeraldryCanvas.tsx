@@ -1,22 +1,16 @@
 import React, { useRef, useEffect, useState, memo, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
-
-// import usePrevious from '@/hooks/usePrevious';
-// import IconShieldCheckers from '@/components/Icons/IconShieldCheckers';
-
-// import { useSettingStore } from '@/topic/Heraldry/stores/settingsStore';
 
 import {
   setLastClick,
-  showUnitOnMap,
   useCursorStore,
 } from '@/topic/Heraldry/stores/cursorStore';
 
 import { mergeRefs } from '@/utils/ref';
 
 import { AdministrativeUnit, MapOffset } from '@/topic/Heraldry/types';
-// import SvgMap from './SvgMap';
-import { mapPadding } from '@/topic/Heraldry/constants'
+import { mapPadding, maxSelectedWithClick } from '@/topic/Heraldry/constants'
+import { getXYfromLatLon } from '@/topic/Heraldry/utils/getPosition';
+
 import { render, onResize, setCoatOfArms, getCoatOfArmsForXandY, setCoatSize } from './canvas/render';
 
 import useDebouncedResizeObserver from '@/hooks/useDebouncedResizeObserver'
@@ -26,9 +20,6 @@ import useEffectChange from '@/hooks/useEffectChange'
 import useHeraldryCursorPosition from '@/topic/Heraldry/components/HeraldryCursor/useHeraldryCursorPosition';
 import HeraldryCursor from '@/topic/Heraldry/components/HeraldryCursor/HeraldryCursor';
 import HeraldryCursorLastPoint from '@/topic/Heraldry/components/HeraldryCursor/HeraldryCursorLastPoint';
-
-// import MapGrid from './dev/MapGrid';
-// import HeraldryCanvasAligmentTools from './dev/HeraldryCanvasAligmentTools';
 
 import './HeraldryCanvas.scss';
 
@@ -43,26 +34,8 @@ type Props = {
 const HeraldryCanvas = ({ units, children, mapOffset, coatSize, setListPhrase }: Props) => {
   const idToShow = useCursorStore((state) => state.idToShow);
   const [hovered, setHovered] = useState<AdministrativeUnit[]>([]);
-  // const [lastClick, setLastClick] = useState<undefined | {
-  //   x: number,
-  //   y: number,
-  //   hovered: AdministrativeUnit[],
-  // }>(undefined);
-
-  const [
-    settings,
-    // setSettings,
-  ] = useState({
-    latTop: -0.448050,
-    latShift: 2.7800,
-    mapHeightStreech: 1.01400,
-  });
-
-  const { t } = useTranslation();
 
   const { ref: wrapperRef, dimensions } = useDebouncedResizeObserver<HTMLDivElement>(10);
-
-  // const prevWidth = usePrevious(width, width);
 
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const canvasCtxRef = useRef<CanvasRenderingContext2D | null>(null);
@@ -73,21 +46,21 @@ const HeraldryCanvas = ({ units, children, mapOffset, coatSize, setListPhrase }:
       const ctx = canvasCtxRef.current;
 
       if (ctx) {
-        render({ canvas: canvasRef.current, ctx, mapOffset });
-        onResize(settings, mapOffset);
+        render({ canvas: canvasRef.current, ctx, coatSize, mapOffset });
+        onResize(mapOffset);
       }
     }
   }, [canvasRef.current]);
 
   useEffect(() => {
-    setCoatOfArms(units, settings);
+    setCoatOfArms(units);
     setLastClick(undefined);
   }, [units]);
 
   useEffectChange(() => {
-    onResize(settings, mapOffset);
+    onResize(mapOffset);
     setLastClick(undefined);
-  }, [settings, dimensions?.width]);
+  }, [dimensions?.width]);
 
   useEffectChange(() => {
     setCoatSize(coatSize);
@@ -131,8 +104,12 @@ const HeraldryCanvas = ({ units, children, mapOffset, coatSize, setListPhrase }:
   }, [position]);
 
   const handleMapClick = useCallback(() => {
-    if (hovered.length > 0 && hovered.length < 40) {
-      setListPhrase(hovered.map(({ id }) => `id:${id}`).join(', '));
+    if (hovered.length > 0) {
+      if (hovered.length <= maxSelectedWithClick) {
+        setListPhrase(hovered.map(({ id }) => `id:${id}`).join(', '));
+      } else {
+        setListPhrase('');
+      }
       setLastClick({
         x: position.x,
         y: position.y,
@@ -144,31 +121,20 @@ const HeraldryCanvas = ({ units, children, mapOffset, coatSize, setListPhrase }:
   }, [hovered]);
 
   useEffect(() => {
-    console.log('idToShow', idToShow);
     if (idToShow) {
       const unit = units.find(({ id }) => id === idToShow);
 
       if (unit && canvasRef.current) {
         if (typeof unit?.place?.coordinates?.lon === 'number' && typeof unit?.place?.coordinates?.lat === 'number') {
-          const {
-            minLatTop,
-            maxLatTop,
-            minLonLeft,
-            maxLonLeft,
-          } = mapOffset;
-  
-          const widthLon = Math.abs(minLonLeft - maxLonLeft);
-          const heightLat = Math.abs(minLatTop - maxLatTop);
-          
-          const percentageX = (unit.place.coordinates.lon - minLonLeft) / widthLon;
-          const percentageY = (maxLatTop - unit.place.coordinates.lat) / heightLat;
-
-          const canvas = canvasRef.current.getClientRects()[0];
-
-          const position = {
-            x: canvas.left * percentageX + mapPadding,
-            y: canvas.top * percentageY + mapPadding,
-          }
+          const position = getXYfromLatLon({
+            cordinates: {
+              lonX: unit.place.coordinates.lon,
+              latY: unit.place.coordinates.lat,
+            },
+            mapOffset,
+            pixelRatio: 1,
+            canvas: canvasRef.current.getClientRects()[0],
+          });
           
           setLastClick({
             x: position.x,
@@ -176,7 +142,13 @@ const HeraldryCanvas = ({ units, children, mapOffset, coatSize, setListPhrase }:
             hovered: [unit],
           });
 
-          document.getElementById('heraldry-cursor-last-position')?.focus();
+          setTimeout(() => {
+            document.getElementById('heraldry-cursor-last-position')?.scrollIntoView({
+              behavior: 'smooth',
+              block: 'center',
+              inline: 'center',
+            });
+          })
         }
       }
     }
@@ -188,7 +160,6 @@ const HeraldryCanvas = ({ units, children, mapOffset, coatSize, setListPhrase }:
         ref={mergeRefs(wrapperRef, elementRef)}
         className="heraldry-canvas absolute top-0 left-0 size-full cursor-none"
         onClick={handleMapClick}
-        // onMouseOver={handleMouseOver}
         style={{ padding: mapPadding }}
       >
         {children}

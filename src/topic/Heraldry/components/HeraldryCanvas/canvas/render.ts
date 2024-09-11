@@ -1,7 +1,5 @@
-import { SettingsParams } from '../types';
 import { getSpriteDataFromUnit } from '@/topic/Heraldry/utils/getSpriteDataFromUnit';
 import { AdministrativeUnit, MapOffset } from '@/topic/Heraldry/types';
-
 
 import { getPostionForPlace } from '@/topic/Heraldry/utils/getPostionForPlace';
 
@@ -12,10 +10,10 @@ let ctx = undefined as unknown as CanvasRenderingContext2D;
 let coatOfArmsList: CoatOfArms[] = [];
 let coatSize = 40;
 let mapOffset: MapOffset = {
-  maxTop: 90,
-  maxBottom: -90,
-  maxLeft: -180,
-  maxRight: 180,
+  minLatTop: 90,
+  maxLatTop: -90,
+  minLonLeft: -180,
+  maxLonLeft: 180,
 }
 
 const aspectRation = {
@@ -51,12 +49,15 @@ const initEventListeners = () => {
 
 let wasInited = false;
 
-export const onResize = (settings: SettingsParams, mapOffset: MapOffset) => {
+export const onResize = (mapOffset: MapOffset) => {
   canvas.width = canvas.width;
-  canvas.height = canvas.width / (aspectRation.x / aspectRation.y );
+  canvas.height = canvas.width / (aspectRation.x / aspectRation.y);
+
+  // Size is optional, but we do it once here for all CoA
+  const size = canvas.getClientRects()[0];
 
   coatOfArmsList.forEach((item) => {
-    item.onResize(settings, mapOffset);
+    item.onResize(mapOffset, size);
   });
 
   if (canvas) {
@@ -80,10 +81,11 @@ export const onResize = (settings: SettingsParams, mapOffset: MapOffset) => {
   renderFrame();
 }
 
-export const render = ({ canvas: initCanvas, ctx: gameCtx, mapOffset: initMapOffset, aspectX = 1, aspectY = 1 }: {
+export const render = ({ canvas: initCanvas, ctx: gameCtx, mapOffset: initMapOffset, coatSize: initCoatSize, aspectX = 1, aspectY = 1 }: {
   canvas: HTMLCanvasElement,
   ctx: CanvasRenderingContext2D,
   mapOffset: MapOffset,
+  coatSize: number,
   aspectX?: number,
   aspectY?: number,
 }) => {
@@ -95,7 +97,8 @@ export const render = ({ canvas: initCanvas, ctx: gameCtx, mapOffset: initMapOff
 
   wasInited = true;
   canvas = initCanvas;
-  mapOffset = initMapOffset,
+  mapOffset = initMapOffset;
+  coatSize = initCoatSize;
   ctx = gameCtx;
   ctx.imageSmoothingQuality = "high";
   aspectRation.x = aspectX;
@@ -105,7 +108,7 @@ export const render = ({ canvas: initCanvas, ctx: gameCtx, mapOffset: initMapOff
   initEventListeners();
 };
 
-export const setCoatOfArms = (units: AdministrativeUnit[], settings: SettingsParams) => {
+export const setCoatOfArms = (units: AdministrativeUnit[]) => {
   coatOfArmsList = [];
   
   coatOfArmsList = units.filter((unit) => (unit?.imagesList || []).length > 0).map((unit) => {
@@ -122,7 +125,6 @@ export const setCoatOfArms = (units: AdministrativeUnit[], settings: SettingsPar
       title: unit.title,
       imageUrl: image?.path || '', // aserted in filter
       imageSprint: getSpriteDataFromUnit(unit),
-      settings,
       coatSize,
       mapOffset,
     });

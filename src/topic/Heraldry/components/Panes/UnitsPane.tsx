@@ -6,6 +6,7 @@ import { removeDiacratics } from '@/utils/text';
 
 import useOutsideClick from '@/hooks/useOutsideClick';
 
+import IconEraser from '@/components/Icons/IconEraser';
 import IconTextMagnifyingGlass from '@/components/Icons/IconTextMagnifyingGlass';
 import IconGithub from '@/components/Icons/IconGithub';
 
@@ -92,6 +93,7 @@ const UnitsPane = ({
           isDisabled={units.length === 0}
           isActive={isOpen}
           onClick={() => setIsOpen(!isOpen)}
+          label={t('heraldry.list.title')}
         >
           <IconCoatOfArms units={filteredUnits} />
           {shouldShowCount
@@ -101,15 +103,25 @@ const UnitsPane = ({
             && <span className="ui-button-circle-marker">{filteredUnits.length}</span>}
         </ButtonCircle>
       </Pane>
-      {isOpen && <Pane className="absolute top-0 right-full z-50 w-[400px] mr-2">
-        <div className="relative">
+      {isOpen && <Pane className="ui-slide-from-top absolute top-0 right-full z-50 w-[400px] mr-2">
+        <div className="relative flex gap-1 justify-center items-center">
           <IconTextMagnifyingGlass className="size-4 absolute top-1/2 -translate-y-1/2 left-3 md:left-8 opacity-20" />
           <input
             value={filterPhrase}
             onChange={(e) => setFilterPhrase(e.target.value || '')}
-            className="w-full p-1 pl-[50px] md:pl-[85px] text-[16px] font-[600] rounded-t-[4px] bg-white border"
+            className={clsx('w-full p-1 pl-[50px] md:pl-[85px] h-[34px] leading-[34px] font-[600] rounded-tl-[4px] bg-white border', {
+              'text-[16px]': filterPhrase.length < 10,
+              'text-[12px]': filterPhrase.length >= 10,
+            })}
             placeholder={t('heraldry.list.limitListToPlaceholder')}
           />
+          <ButtonCircle
+            id="units-pane-toggle"
+            isDisabled={filterPhrase.length === 0}
+            onClick={() => setFilterPhrase('')}
+          >
+            <IconEraser />
+          </ButtonCircle>
         </div>
         {previewUnit && <UnitsPaneItemDetails unit={previewUnit} setPreviewUnit={setPreviewUnit} />}
         {!previewUnit && <div className="border-t pt-2 pb-4 max-h-[300px] snap-y overflow-auto">

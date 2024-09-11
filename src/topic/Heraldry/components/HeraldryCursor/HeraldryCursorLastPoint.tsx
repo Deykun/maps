@@ -35,6 +35,7 @@ const HeraldryCursorLastPoint = () => {
     >
       <Pane className="rounded-full p-1">
         <ButtonCircle
+          type="large"
           id="heraldry-cursor-last-position"
           className="heraldry-cursor-last-position"
           // isActive={isOpen}

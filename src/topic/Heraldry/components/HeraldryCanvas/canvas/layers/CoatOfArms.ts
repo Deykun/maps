@@ -1,6 +1,6 @@
-import { SettingsParams } from '../../types';
-import { spriteSize, spriteOffset, mapPadding } from '@/topic/Heraldry/constants'
+import { spriteSize, spriteOffset } from '@/topic/Heraldry/constants'
 import { MapOffset } from '@/topic/Heraldry/types';
+import { getXYfromLatLon } from '@/topic/Heraldry/utils/getPosition';
 
 export class CoatOfArms {
   canvas: HTMLCanvasElement;
@@ -28,7 +28,6 @@ export class CoatOfArms {
     title,
     imageUrl,
     imageSprint,
-    settings,
     coatSize,
     mapOffset,
   }: {
@@ -42,7 +41,6 @@ export class CoatOfArms {
       url: string,
       index: number
     },
-    settings: SettingsParams,
     coatSize: number,
     mapOffset: MapOffset,
   }) {
@@ -71,29 +69,22 @@ export class CoatOfArms {
     this.x = 0;
     this.y = 0;
 
-    this.onResize(settings, mapOffset);
+    this.onResize(mapOffset);
   }
 
-  onResize(settings: SettingsParams, mapOffset: MapOffset) {
-    const {
-      minLatTop,
-      maxLatTop,
-      minLonLeft,
-      maxLonLeft,
-    } = mapOffset;
+  onResize(mapOffset: MapOffset, canvas?: { width: number, height: number }) {
+    const position = getXYfromLatLon({
+      cordinates: {
+        lonX: this.lonX,
+        latY: this.latY,
+      },
+      mapOffset,
+      pixelRatio: window.devicePixelRatio,
+      canvas: canvas || this.canvas,
+    });
 
-    const widthLon = Math.abs(minLonLeft - maxLonLeft);
-    const heightLat = Math.abs(minLatTop - maxLatTop);
-
-    const percentageX = (this.lonX - minLonLeft) / widthLon;
-    const percentageY = (maxLatTop - this.latY) / heightLat;
-
-    const scaledMapPadding = mapPadding * window.devicePixelRatio;
-
-    const canvas = this.canvas.getClientRects()[0];
-
-    this.x = ((canvas.width * window.devicePixelRatio) - (2 * scaledMapPadding)) * percentageX + scaledMapPadding;
-    this.y = ((canvas.height * window.devicePixelRatio) - (2 * scaledMapPadding)) * percentageY + scaledMapPadding;
+    this.x = position.x;
+    this.y = position.y;
   }
 
   setSize(size: number) {

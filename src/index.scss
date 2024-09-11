@@ -31,3 +31,65 @@ h1, h2, h3 {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+.ui-slide-from-left {
+  opacity: 0;
+  transform: translateX(calc(-100% - 30px)) scale(0.3);
+  animation: 0.3s uiSlideFromLeft forwards ease-in;
+  animation-delay: 0.15s;
+}
+
+@keyframes uiSlideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(calc(-100% - 30px)) scale(0.3);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.ui-slide-from-right {
+  opacity: 0;
+  transform: translateX(calc(100% + 30px)) scale(0.3);
+  animation: 0.3s uiSlideFromRight forwards ease-in;
+  animation-delay: 0.15s;
+}
+
+@keyframes uiSlideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(calc(100% + 30px)) scale(0.3);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.ui-slide-from-top {
+  // opacity: 0;
+  // transform: translateY(calc(-100% - 30px)) scale(0.3);
+  // animation: 0.3s uiSlideFromTop forwards ease-in;
+  // animation-delay: 0.15s;
+  // transform-origin: top right;
+}
+
+@keyframes uiSlideFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(calc(-100% - 30px)) scale(0.3);
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

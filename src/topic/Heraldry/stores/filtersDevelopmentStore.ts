@@ -24,6 +24,34 @@ export const useFiltersDevelopmentStore = create<FiltersDevelopmentStoreState>()
   )
 )
 
+export const toggleFilterDevlopmentMode = () => {
+  useFiltersDevelopmentStore.setState((state) => ({
+    ...state,
+    isModeActive: !state.isModeActive,
+  }));
+};
+
+export const customFilterExclude = (unitTitle: string) => {
+  useFiltersDevelopmentStore.setState((state) => ({
+    ...state,
+      exclude: Array.from(new Set([...(state.exclude || []), unitTitle])),
+      include: (state.include || []).filter((unitnTitleToCheck) => unitTitle !== unitnTitleToCheck),
+  }));
+};
+
+export const customFilterInclude = (unitTitle: string) => {
+  useFiltersDevelopmentStore.setState((state) => ({
+    ...state,
+    exclude: (state.exclude || []).filter((unitnTitleToCheck) => unitTitle !== unitnTitleToCheck),
+    include: Array.from(new Set([...(state.include || []), unitTitle])),
+  }));
+}
+
+// setCustomFilter({
+//   ...customFilter,
+//   exclude: Array.from(new Set([...(customFilter.exclude || []), unitNameForAction])),
+//   include: (customFilter.include || []).filter((unitName) => unitNameForAction !== unitName),
+// });
 // export const zoomIn = ({ x = 0, y = 0 }: { x?: number, y?: number } = {}) => {
 //   useSettingStore.setState((state) => ({
 //     zoomLevel: clamp(zoomMin, state.zoomLevel + 1, zoomMax),

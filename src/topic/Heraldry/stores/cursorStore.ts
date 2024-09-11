@@ -29,6 +29,7 @@ export const useCursorStore = create<FiltersDevelopmentStoreState>()(
 export const setLastClick = (click?: ClickType) => {
   useCursorStore.setState((state) => ({
     ...state,
+    idToShow: '',
     lastClick: click,
   }));
 };

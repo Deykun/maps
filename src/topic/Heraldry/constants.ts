@@ -37,3 +37,5 @@ export const spriteSize = 80;
 export const spriteOffset = 4;
 
 export const mapPadding = 40;
+
+export const maxSelectedWithClick = 40;

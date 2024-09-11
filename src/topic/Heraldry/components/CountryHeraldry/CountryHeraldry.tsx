@@ -5,12 +5,6 @@ import { useDraggable } from "react-use-draggable-scroll";
 
 import { isLanguageSupported } from '@/utils/lang';
 
-import {
-  setLastClick,
-  showUnitOnMap,
-  useCursorStore,
-} from '@/topic/Heraldry/stores/cursorStore';
-
 import { MapsSearchParams, getSearchParamFromFilters } from '@/topic/Heraldry/utils/getSearchParams'
 import { MarkerParamsWithResult, AdministrativeUnit, MapOffset } from '@/topic/Heraldry/types';
 
@@ -51,9 +45,7 @@ const CountryHeraldry = ({
   initialFilters = {},
   mapOffset,
 }: Props) => {
-    const idToShow = useCursorStore((state) => state.idToShow);
     const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
-    const [isDevModeActive, setIsDevModeActive] = useState(false);
     const [listPhrase, setListPhrase] = useState('');
     const [filterOperator, setFilterOperator] = useState<'and' | 'or'>(initialFilters.filterOperator || 'and');
     const [shouldReverseFilters, setShouldReverseFilters] = useState(initialFilters.shouldReverseFilters || false);
@@ -65,8 +57,7 @@ const CountryHeraldry = ({
     const [animalFilters, setAnimalFilters] = useState<string[]>(initialFilters.animalFilters || []);
     const [itemFilters, setItemFilters] = useState<string[]>(initialFilters.itemFilters || []);
 
-    // const { events } = useDraggable(wrapperRef, { decayRate: 0.01 });
-    const { events } = useDraggable(wrapperRef, { decayRate: 0 });
+    const { events } = useDraggable(wrapperRef, { decayRate: 0.015 });
 
     const { t, i18n } = useTranslation();
 
@@ -141,11 +132,10 @@ const CountryHeraldry = ({
                 style={zoomLevel === 1 ? { } : { width: `max(${(zoomLevel - 1) * 500}px, ${(zoomLevel - 1) * 80}vw` }}
               >
                 <HeraldryCanvas
-                  idToShow={idToShow}
                   units={unitsForMap}
                   setListPhrase={setListPhrase}
                   mapOffset={mapOffset}
-                  coatSize={((coatSize + 1) / 11) * 80}
+                  coatSize={Math.round(((coatSize + 1) / 11) * 80)}
                 >
                   <MapBackground />
                 </HeraldryCanvas>
@@ -188,21 +178,19 @@ const CountryHeraldry = ({
               </p>
             </div>
           </section>
-          <div className={clsx('fixed top-3 left-3 z-20 flex flex-col gap-3 pointer-events-none', {
+          <div className={clsx('ui-slide-from-left fixed top-3 left-3 z-20 flex flex-col gap-3 pointer-events-none', {
             'hidden md:block': zoomLevel > 1 && subtitleParts.length !== 0,
           })}>
             <NavigationPane />
-            {isDevModeActive &&
-              <DevelopmentPane
-                country={lang}
-                unitTypes={typeFiltersList.map(({ value }) => value)}
-                customFilter={customFilter}
-                setCustomFilter={setCustomFilter}
-                unitNameForAction={listPhrase}
-              />
-            }
+            <DevelopmentPane
+              country={lang}
+              unitTypes={typeFiltersList.map(({ value }) => value)}
+              customFilter={customFilter}
+              setCustomFilter={setCustomFilter}
+              unitNameForAction={listPhrase}
+            />
           </div>
-          <div className="fixed top-3 right-3 z-20 flex flex-col gap-3 pointer-events-none">
+          <div className="ui-slide-from-right fixed top-3 right-3 z-20 flex flex-col gap-3 pointer-events-none">
             <ZoomPane
               zoomLevel={zoomLevel}
               setZoomLevel={setZoomLevel}
@@ -211,7 +199,7 @@ const CountryHeraldry = ({
               coatSize={coatSize}
               setCoatSize={setCoatSize}
               coatMin={1}
-              coatMax={8}
+              coatMax={9}
             />
             <UnitsPane
               units={units}
@@ -235,8 +223,6 @@ const CountryHeraldry = ({
               setFilterOperator={setFilterOperator}
               shouldReverseFilters={shouldReverseFilters}
               setShouldReverseFilters={setShouldReverseFilters}
-              isDevModeActive={isDevModeActive}
-              setIsDevModeActive={setIsDevModeActive}
             />
           </div>
         </>

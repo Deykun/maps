@@ -32,13 +32,28 @@ const NavigationPane = () => {
   return (
     <div className="relative" id="navigation-pane">
       <Pane>
-        <ButtonCircle onClick={toggleMenu('country')} isActive={activeMenu === 'country'} title={t('main.country')}>
+        <ButtonCircle
+          onClick={toggleMenu('country')}
+          isActive={activeMenu === 'country'}
+          label={t('main.country')}
+          labelPosition="right"
+        >
           <IconGlobe />
         </ButtonCircle>
-        <ButtonCircle onClick={toggleMenu('language')} isActive={activeMenu === 'language'} title={t('main.language')}>
+        <ButtonCircle
+          onClick={toggleMenu('language')}
+          isActive={activeMenu === 'language'}
+          label={t('main.language')}
+          labelPosition="right"
+        >
           <IconTranslation />
         </ButtonCircle>
-        <ButtonCircle href="https://github.com/Deykun/maps" title="Page repository" target="_blank">
+        <ButtonCircle
+          href="https://github.com/Deykun/maps"
+          target="_blank"
+          label="Page repository"
+          labelPosition="right"
+        >
           <IconGithub />
         </ButtonCircle>
       </Pane>

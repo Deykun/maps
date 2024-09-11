@@ -3,6 +3,10 @@ import { useTranslation } from 'react-i18next';
 import { AdministrativeUnit } from '@/topic/Heraldry/types';
 import { colorsMarkersByNames } from '@/topic/Heraldry/constants';
 
+import {
+  showUnitOnMap,
+} from '@/topic/Heraldry/stores/cursorStore';
+
 import IconMarker from '@/components/Icons/IconMarker';
 import IconMinusMagnifyingGlass from '@/components/Icons/IconMinusMagnifyingGlass';
 import IconLink from '@/components/Icons/IconLink';
@@ -23,10 +27,6 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
     ...(markers?.items || []).map((v) => t(`heraldry.item.${v}`)),
   ];
 
-  const focusCoat = () => {
-    document.getElementById(`coat-${id}`)?.focus();
-  }
-
   return (
     <li className={clsx('flex flex-col gap-2 items-center', { [className || '']: className })}>
       <span className="relative size-full flex-shrink-0">
@@ -40,7 +40,7 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
         <div className="absolute bottom-0 right-0 translate-y-[50%] md:translate-y-0 flex gap-1">
           <button
             className="bg-white p-1 rounded-full shadow-md"
-            onClick={focusCoat}
+            onClick={() => showUnitOnMap(unit.id)}
           >
             <IconMarker className="size-4" />
           </button>
