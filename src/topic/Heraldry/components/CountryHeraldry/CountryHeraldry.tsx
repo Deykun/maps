@@ -5,6 +5,10 @@ import { useDraggable } from "react-use-draggable-scroll";
 
 import { isLanguageSupported } from '@/utils/lang';
 
+import {
+  useFiltersDevelopmentStore,
+} from '@/topic/Heraldry/stores/filtersDevelopmentStore';
+
 import { MapsSearchParams, getSearchParamFromFilters } from '@/topic/Heraldry/utils/getSearchParams'
 import { MarkerParamsWithResult, AdministrativeUnit, MapOffset } from '@/topic/Heraldry/types';
 
@@ -51,7 +55,9 @@ const CountryHeraldry = ({
     const [shouldReverseFilters, setShouldReverseFilters] = useState(initialFilters.shouldReverseFilters || false);
     const [zoomLevel, setZoomLevel] = useState(1);
     const [coatSize, setCoatSize] = useState(3);
-    const [customFilter, setCustomFilter] = useState<MarkerParamsWithResult | undefined>(undefined);
+    const customFilter = useFiltersDevelopmentStore(state => state.filter);
+    const [_customFilter, setCustomFilter] = useState<MarkerParamsWithResult | undefined>(undefined);
+
     const [typeFilters, setTypeFilters] = useState<string[]>(initialFilters.typeFilters || []);
     const [colorFilters, setColorFilters] = useState<string[]>(initialFilters.colorFilters || []);
     const [animalFilters, setAnimalFilters] = useState<string[]>(initialFilters.animalFilters || []);

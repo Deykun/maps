@@ -34,15 +34,16 @@ h1, h2, h3 {
 
 .ui-slide-from-left {
   opacity: 0;
-  transform: translateX(calc(-100% - 30px)) scale(0.3);
+  transform: translateX(calc(-100% - 30px));
   animation: 0.3s uiSlideFromLeft forwards ease-in;
   animation-delay: 0.15s;
+  transform-origin: top right;
 }
 
 @keyframes uiSlideFromLeft {
   0% {
     opacity: 0;
-    transform: translateX(calc(-100% - 30px)) scale(0.3);
+    transform: translateX(calc(-100% - 30px));
   }
 
   100% {
@@ -53,15 +54,16 @@ h1, h2, h3 {
 
 .ui-slide-from-right {
   opacity: 0;
-  transform: translateX(calc(100% + 30px)) scale(0.3);
+  transform: translateX(calc(100% + 30px));
   animation: 0.3s uiSlideFromRight forwards ease-in;
   animation-delay: 0.15s;
+  transform-origin: top left;
 }
 
 @keyframes uiSlideFromRight {
   0% {
     opacity: 0;
-    transform: translateX(calc(100% + 30px)) scale(0.3);
+    transform: translateX(calc(100% + 30px));
   }
 
   100% {
@@ -72,7 +74,7 @@ h1, h2, h3 {
 
 .ui-slide-from-top {
   // opacity: 0;
-  // transform: translateY(calc(-100% - 30px)) scale(0.3);
+  // transform: translateY(calc(-100% - 30px));
   // animation: 0.3s uiSlideFromTop forwards ease-in;
   // animation-delay: 0.15s;
   // transform-origin: top right;
@@ -81,7 +83,7 @@ h1, h2, h3 {
 @keyframes uiSlideFromTop {
   0% {
     opacity: 0;
-    transform: translateY(calc(-100% - 30px)) scale(0.3);
+    transform: translateY(calc(-100% - 30px));
   }
 
   50% {

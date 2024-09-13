@@ -40,7 +40,8 @@ const HeraldryCursorLastPoint = () => {
           className="heraldry-cursor-last-position"
           // isActive={isOpen}
           onClick={handleClick}
-          title={lastClick.hovered.length <= 3 ? lastClick.hovered.map(({ shortTitle, title }) => shortTitle || title).join(', ') : undefined}
+          label={lastClick.hovered.length === 1 ? lastClick.hovered.map(({ shortTitle, title }) => shortTitle || title).join(', ') : undefined}
+          labelPosition="bottom"
         >
           <IconCoatOfArms units={lastClick.hovered} />
           <span className="ui-button-circle-marker">{lastClick.hovered.length}</span>

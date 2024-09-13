@@ -15,7 +15,7 @@ const DevelopmentPaneSnippetList = ({
       {' '}"{name}": [
         <br />
         {list.map((value, index) => <>
-          {'  '}"<span className="text-white">{value}</span>"{index !== (list.length - 1) && <>,<br /></>}
+          {'  '}"<span key={value} className="text-white">{value}</span>"{index !== (list.length - 1) && <>,<br /></>}
         </>)}
         <br />
       {' '}],

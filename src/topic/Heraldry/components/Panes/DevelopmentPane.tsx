@@ -1,10 +1,15 @@
-import { useState, useEffect } from 'react';
+import { useRef, useState, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useQuery } from '@tanstack/react-query';
 
 import { MarkerParamsWithResult } from '@/topic/Heraldry/types';
+import { getHasMarker } from '@/topic/Heraldry/utils/markers/getMarker';
+
 
 import {
   useFiltersDevelopmentStore,
+  setCustomFilter,
+  updateCustomFilterResultBasedOnData,
 } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
 
 import useEffectChange from '@/hooks/useEffectChange';
@@ -12,6 +17,7 @@ import useOutsideClick from '@/hooks/useOutsideClick';
 
 import IconEraser from '@/components/Icons/IconEraser';
 import IconFlask from '@/components/Icons/IconFlask';
+import IconLoader from '@/components/Icons/IconLoader';
 import IconSelected from '@/components/Icons/IconSelected';
 import IconSelectNew from '@/components/Icons/IconSelectNew';
 
@@ -20,6 +26,8 @@ import ButtonCircle from '@/components/UI/ButtonCircle';
 
 import DevelopmentPaneAppFilters from './DevelopmentPane/DevelopmentPaneAppFilters';
 import DevelopmentPaneCustomFilter from './DevelopmentPane/DevelopmentPaneCustomFilter';
+
+import { fetchTitlesAndDescriptions } from './DevelopmentPane/fetch';
 
 type Props = {
   country: string,
@@ -32,11 +40,22 @@ type Props = {
 const DevelopmentPane = ({
   country,
   unitTypes,
-  customFilter,
-  setCustomFilter,
-  unitNameForAction,
 }: Props) => {
+  const updateFilterTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const updateResultsTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const isFiltersDevelopmentModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
+  const isCustomFilterActive = useFiltersDevelopmentStore((state) => state.filter.isActive);
+  const filterName = useFiltersDevelopmentStore((state) => state.filter.name);
+  const filterPhrases = useFiltersDevelopmentStore((state) => state.filter.phrases);
+  const filterInclude = useFiltersDevelopmentStore((state) => state.filter.include);
+  const filterExclude = useFiltersDevelopmentStore((state) => state.filter.exclude);
+  const [draftFilter, setDraftFilter] = useState({
+    name: filterName,
+    phrases: filterPhrases,
+    include: filterInclude,
+    exclude: filterExclude,
+  });
+
   const [activeCustomAction, setActiveCustomAction] = useState<undefined | 'plus' | 'minus'>(undefined);
   const [activeMenu, setActiveMenu] = useState('');
   const [isOpen, setIsOpen] = useState(false);
@@ -52,40 +71,79 @@ const DevelopmentPane = ({
       setActiveMenu('');
     }
   }, [isOpen, isFiltersDevelopmentModeActive]);
-
-  useEffect(() => {
-    if (!customFilter) {
-      setActiveCustomAction(undefined);
-    }
-  }, [customFilter]);
-
-  useEffectChange(() => {
-    if (customFilter && unitNameForAction) {
-      if (activeCustomAction === 'minus') {
-        setCustomFilter({
-          ...customFilter,
-          exclude: Array.from(new Set([...(customFilter.exclude || []), unitNameForAction])),
-          include: (customFilter.include || []).filter((unitName) => unitNameForAction !== unitName),
-        });
-      }
-
-      if (activeCustomAction === 'plus') {
-        setCustomFilter({
-          ...customFilter,
-          exclude: (customFilter.exclude || []).filter((unitName) => unitNameForAction !== unitName),
-          include: Array.from(new Set([...(customFilter.include || []), unitNameForAction])),
-        });
-      }
-    }
-  }, [unitNameForAction])
+  
+  const {
+    isLoading,
+    // isError,
+    // error,
+    data,
+  } = useQuery({
+    queryFn: () => fetchTitlesAndDescriptions({ country, unitTypes }),
+    queryKey: ['dev', country],
+    staleTime: 60 * 60 * 1000,
+    enabled: Boolean(activeMenu),
+  });
 
   const toggleMenu = (name: string) => () => setActiveMenu((v) => v === name ? '' : name);
 
-  const hasActive = Boolean(customFilter);
+  const updateResults = useCallback(() => {
+    if (!data) {
+      return;
+    }
+
+    console.log('RESULT UPDATE');
+
+    updateCustomFilterResultBasedOnData(data);
+  }, [data])
+
+  useEffectChange(() => {
+    if (updateFilterTimeoutRef.current) {
+      clearTimeout(updateFilterTimeoutRef.current);
+      updateFilterTimeoutRef.current = null;
+    }
+
+    updateFilterTimeoutRef.current = setTimeout(() => {
+      console.log('FILTER UPDATE');
+      setCustomFilter(draftFilter);
+      updateResults();
+
+      if (updateFilterTimeoutRef.current) {
+        clearTimeout(updateFilterTimeoutRef.current);
+        updateFilterTimeoutRef.current = null;
+      }
+    }, 1500);
+  }, [draftFilter]);
+
+  useEffect(() => {
+    if (!data) {
+      return;
+    }
+
+    if (isCustomFilterActive) {
+      return;
+    }
+
+    if (updateResultsTimeoutRef.current) {
+      clearTimeout(updateResultsTimeoutRef.current);
+      updateResultsTimeoutRef.current = null;
+    }
+
+
+    updateResultsTimeoutRef.current = setTimeout(() => {
+      updateResults()
+
+      if (updateResultsTimeoutRef.current) {
+        clearTimeout(updateResultsTimeoutRef.current);
+        updateResultsTimeoutRef.current = null;
+      }
+    }, 300);
+  }, [data, updateResults, filterExclude, filterInclude, isCustomFilterActive]);
 
   if (!isFiltersDevelopmentModeActive) {
     return null;
   }
+
+  const isProcessing = isLoading || updateFilterTimeoutRef.current || updateResultsTimeoutRef.current;
 
   return (
     <div className="relative pointer-events-auto" id="development-pane">
@@ -95,7 +153,7 @@ const DevelopmentPane = ({
           <span className="ui-button-circle-marker empty:hidden">
             {activeCustomAction === 'minus' && '-'}
             {activeCustomAction === 'plus' && '+'}
-            {!activeCustomAction && hasActive && '✓'}
+            {!activeCustomAction && isCustomFilterActive && '✓'}
           </span>
         </ButtonCircle>
         {isOpen && <>
@@ -117,29 +175,32 @@ const DevelopmentPane = ({
             <IconSelectNew />
           </ButtonCircle>
         </>}
-        {hasActive && <>
+        {isCustomFilterActive && <>
           <span className="border-t" />
           <ButtonCircle
-            onClick={() => setCustomFilter()}
+            // onClick={() => setCustomFilter()}
             label={t('heraldry.clearFilters')}
             labelPosition="right"
           >
             <IconEraser />
           </ButtonCircle>
         </>}
+        {isProcessing && <ButtonCircle tagName="span">
+          <IconLoader />
+        </ButtonCircle>}
       </Pane>
       {activeMenu === 'filters' &&
         <DevelopmentPaneAppFilters
           country={country}
-          setCustomFilter={setCustomFilter}
+          // setCustomFilter={setCustomFilter}
         />
       }
       {activeMenu === 'customFilter' &&
         <DevelopmentPaneCustomFilter
           country={country}
           unitTypes={unitTypes}
-          customFilter={customFilter}
-          setCustomFilter={setCustomFilter}
+          draftFilter={draftFilter}
+          setDraftFilter={setDraftFilter}
           activeCustomAction={activeCustomAction}
           setActiveCustomAction={setActiveCustomAction}
         />

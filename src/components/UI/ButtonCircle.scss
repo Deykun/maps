@@ -2,7 +2,8 @@
 
 .ui-button-circle {
   > a,
-  > button {
+  > button,
+  > span {
     @apply inline-flex justify-center items-center size-8 shadow-sm rounded-sm;
 
     color: #312f2f;
@@ -11,12 +12,6 @@
     background-color: white;
     border-radius: 50px;
     transition: 0.05s ease-in-out;
-    
-    @include hoverOnDesktopActiveOnMobile {
-      color: #d2543a;
-      background: #ffffff;
-      box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.18) 0px 1px 2px 0px;
-    }
 
     &:disabled {
       color: #aaa;
@@ -52,6 +47,15 @@
       box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.18) 0px 1px 2px 0px;
       transform-origin: bottom right;
       animation: 0.1s buttonCircleMarker forwards ease-in;
+    }
+  }
+
+  > a,
+  > button {
+    @include hoverOnDesktopActiveOnMobile {
+      color: #d2543a;
+      background: #ffffff;
+      box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.18) 0px 1px 2px 0px;
     }
   }
 
@@ -116,6 +120,28 @@
   &:hover .ui-button-circle-label--right {
     left: calc(100% + 20px);
     transform: translateY(-50%) scale(1);
+  }
+
+  .ui-button-circle-label--bottom {
+    top: calc(100% - 15px);
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    transform-origin: top center;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 100%;
+      transform: translateX(-50%);
+      border: 5px solid transparent !important;
+      border-bottom-color: #aa0d0d !important;
+    }
+  }
+
+  &:hover .ui-button-circle-label--bottom {
+    top: calc(100% + 20px);
+    transform: translateX(-50%) scale(1);
   }
 
   &.ui-button-circle--large {

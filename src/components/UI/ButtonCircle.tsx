@@ -15,7 +15,8 @@ type Props = {
   isActive?: boolean,
   title?: string,
   label?: string,
-  labelPosition?: 'left' | 'right',
+  labelPosition?: 'left' | 'right' | 'bottom',
+  tagName?: string,
 }
 
 const ButtonCircle = ({
@@ -32,8 +33,9 @@ const ButtonCircle = ({
   label,
   labelPosition = 'left',
   type,
+  tagName,
 }: Props) => {
-  const TagName = href ? 'a' : 'button';
+  const TagName = tagName ?? (href ? 'a' : 'button');
 
   return (
     <span className={clsx('relative ui-button-circle', {
