@@ -1,10 +1,8 @@
-import { useState, useMemo, useCallback, Dispatch, SetStateAction } from 'react';
-import { useQuery } from '@tanstack/react-query';
+import { useState, useCallback, Dispatch, SetStateAction } from 'react';
 
 import { removeDiacratics } from '@/utils/text';
 
-import { MarkerParams, MarkerParamsWithResult, AdministrativeUnitIndex } from '@/topic/Heraldry/types';
-import { getHasMarker } from '@/topic/Heraldry/utils/markers/getMarker';
+import { MarkerParamsWithResult } from '@/topic/Heraldry/types';
 
 import IconEye from '@/components/Icons/IconEye';
 import IconEyeCrossed from '@/components/Icons/IconEyeCrossed';
@@ -20,13 +18,9 @@ import ButtonCircle from '@/components/UI/ButtonCircle';
 
 import {
   toggleCustomFilterVisiblity,
-  customFilterName,
-  customFilterPhrases,
-  useFiltersDevelopmentStore,
 } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
 
 import DevelopmentPaneSnippet from './DevelopmentPaneSnippet';
-import { fetchTitlesAndDescriptions } from './fetch';
 
 type Props = {
   draftFilter: MarkerParamsWithResult,
@@ -41,7 +35,6 @@ const DevelopmentPaneCustomFilter = ({
   activeCustomAction,
   setActiveCustomAction,
 }: Props) => {
-  const [isProcessing, setIsProcessing] = useState(false);
 
   const handleChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
     const name = (event.target.name || '');
@@ -64,8 +57,6 @@ const DevelopmentPaneCustomFilter = ({
     }
   }, []);
 
-  const isDisabled = isProcessing;
-
   return (
     <Pane className="fixed left-12 mt-3 w-[400px] max-h-[calc(100%_-_1.5rem)] overflow-auto top-0 ml-6">
       <h3 className="flex gap-3 items-center">
@@ -81,7 +72,6 @@ const DevelopmentPaneCustomFilter = ({
             className="sans w-full p-1 px-2 text-[14px] bg-white border"
             placeholder='name (ex. "eagle", "apple")'
             defaultValue={draftFilter.name}
-            disabled={isDisabled}
           />
           <input
             onChange={handleChange}
@@ -89,7 +79,6 @@ const DevelopmentPaneCustomFilter = ({
             className="sans w-full p-1 px-2 text-[14px] bg-white border"
             placeholder='phrases (ex. "eagle, eagles", "apple, apples")'
             defaultValue={draftFilter.phrases?.join(', ')}
-            disabled={isDisabled}
           />
       </div>
       <div className="flex gap-2">
@@ -112,18 +101,10 @@ const DevelopmentPaneCustomFilter = ({
         <ButtonCircle
           onClick={() => toggleCustomFilterVisiblity()}
           wrapperClassName="ml-auto"
-          isDisabled={isDisabled || !draftFilter}
+          isDisabled={!draftFilter}
         >
           {draftFilter?.isActive ? <IconEye /> : <IconEyeCrossed />}
         </ButtonCircle>
-        <Button
-          // onClick={applyFilter}
-          wrapperClassName="ml-auto"
-          isDisabled={isDisabled}
-        >
-          <span>Use</span>
-          <IconSelectNew />
-        </Button>
       </div>
       <div className="flex gap-2 mt-5">
         <Button
@@ -151,6 +132,3 @@ const DevelopmentPaneCustomFilter = ({
 }
 
 export default DevelopmentPaneCustomFilter;
-
-// import IconFolderDownload from '@/components/Icons/IconFolderDownload';
-// import IconFolderUpload from '@/components/Icons/IconFolderUpload';

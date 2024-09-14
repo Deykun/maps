@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import { devtools, persist } from 'zustand/middleware'
 
-import { AdministrativeUnit, AdministrativeUnitIndex, MarkerParams, MarkerParamsWithResult } from '@/topic/Heraldry/types';
+import { AdministrativeUnitIndex, MarkerParams, MarkerParamsWithResult } from '@/topic/Heraldry/types';
 
 import { getHasMarker } from '@/topic/Heraldry/utils/markers/getMarker';
 
@@ -10,7 +10,7 @@ type FiltersDevelopmentStoreState = {
   filter: MarkerParamsWithResult,
 }
 
-const EMPTY_CUSTOM_FILTER: MarkerParams = {
+export const EMPTY_CUSTOM_FILTER: MarkerParams = {
   name: '',
   phrases: [],
   exclude: [],

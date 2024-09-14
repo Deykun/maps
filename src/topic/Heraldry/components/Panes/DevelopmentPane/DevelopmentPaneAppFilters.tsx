@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback,  Dispatch, SetStateAction } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { useTranslation } from 'react-i18next';
 import clxs from 'clsx';
@@ -30,7 +30,7 @@ const fetchData = async ({ country }: FetchParmas) => {
 };
 
 type Props = FetchParmas & {
-  setDraftFilter: (filter?: MarkerParamsWithResult) => void
+  setDraftFilter: Dispatch<SetStateAction<MarkerParamsWithResult>>,
 };
 
 const DevelopmentPaneAppFilters = ({

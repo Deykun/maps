@@ -29,6 +29,9 @@
 
     .ui-button-circle-marker {
       text-align: center;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
       padding: 0 4px;
       background-color: #aa0d0d;
       color: white;
@@ -47,6 +50,10 @@
       box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.18) 0px 1px 2px 0px;
       transform-origin: bottom right;
       animation: 0.1s buttonCircleMarker forwards ease-in;
+
+      svg {
+        fill: currentColor;
+      }
     }
   }
 

@@ -2,11 +2,10 @@ import { useRef, useState, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useQuery } from '@tanstack/react-query';
 
-import { MarkerParamsWithResult } from '@/topic/Heraldry/types';
-import { getHasMarker } from '@/topic/Heraldry/utils/markers/getMarker';
-
+import { MarkerParams, MarkerParamsWithResult } from '@/topic/Heraldry/types';
 
 import {
+  EMPTY_CUSTOM_FILTER,
   useFiltersDevelopmentStore,
   setCustomFilter,
   updateCustomFilterResultBasedOnData,
@@ -49,7 +48,7 @@ const DevelopmentPane = ({
   const filterPhrases = useFiltersDevelopmentStore((state) => state.filter.phrases);
   const filterInclude = useFiltersDevelopmentStore((state) => state.filter.include);
   const filterExclude = useFiltersDevelopmentStore((state) => state.filter.exclude);
-  const [draftFilter, setDraftFilter] = useState({
+  const [draftFilter, setDraftFilter] = useState<MarkerParams>({
     name: filterName,
     phrases: filterPhrases,
     include: filterInclude,
@@ -91,8 +90,6 @@ const DevelopmentPane = ({
       return;
     }
 
-    console.log('RESULT UPDATE');
-
     updateCustomFilterResultBasedOnData(data);
   }, [data])
 
@@ -103,7 +100,6 @@ const DevelopmentPane = ({
     }
 
     updateFilterTimeoutRef.current = setTimeout(() => {
-      console.log('FILTER UPDATE');
       setCustomFilter(draftFilter);
       updateResults();
 
@@ -111,7 +107,7 @@ const DevelopmentPane = ({
         clearTimeout(updateFilterTimeoutRef.current);
         updateFilterTimeoutRef.current = null;
       }
-    }, 1500);
+    }, 2000);
   }, [draftFilter]);
 
   useEffect(() => {
@@ -178,7 +174,9 @@ const DevelopmentPane = ({
         {isCustomFilterActive && <>
           <span className="border-t" />
           <ButtonCircle
-            // onClick={() => setCustomFilter()}
+            onClick={() => setDraftFilter({
+              ...EMPTY_CUSTOM_FILTER,
+            })}
             label={t('heraldry.clearFilters')}
             labelPosition="right"
           >
@@ -197,8 +195,6 @@ const DevelopmentPane = ({
       }
       {activeMenu === 'customFilter' &&
         <DevelopmentPaneCustomFilter
-          country={country}
-          unitTypes={unitTypes}
           draftFilter={draftFilter}
           setDraftFilter={setDraftFilter}
           activeCustomAction={activeCustomAction}
