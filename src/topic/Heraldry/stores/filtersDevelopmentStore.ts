@@ -23,8 +23,8 @@ export const useFiltersDevelopmentStore = create<FiltersDevelopmentStoreState>()
       () => ({
         isModeActive: false,
         filter: {
-          isActive: false,
           ...EMPTY_CUSTOM_FILTER,
+          isActive: false,
           result: [],
         },
       } as FiltersDevelopmentStoreState),
@@ -65,8 +65,9 @@ export const clearCustomFilter = () => {
   useFiltersDevelopmentStore.setState((state) => ({
     ...state,
     filter: {
-      ...state.filter,
       ...EMPTY_CUSTOM_FILTER,
+      isActive: false,
+      result: [],
     },
   }));
 };
@@ -91,27 +92,39 @@ export const setCustomFilterPhrases = (phrases: string[]) => {
   }));
 };
 
-export const setCustomFilterExclude = (unitTitle: string) => {
-  useFiltersDevelopmentStore.setState((state) => ({
-    ...state,
-    filter: {
-      ...state.filter,
-      exclude: Array.from(new Set([...(state.filter.exclude || []), unitTitle])),
-      include: (state.filter.include || []).filter((unitnTitleToCheck) => unitTitle !== unitnTitleToCheck),
-    },
-  }));
+export const toggleAsCustomFilterExclude = (unitTitle: string) => {
+  useFiltersDevelopmentStore.setState((state) => {
+    const exclude = state.filter.exclude?.includes(unitTitle)
+      ? (state.filter.exclude || []).filter((unitnTitleToCheck) => unitTitle !== unitnTitleToCheck)
+      : Array.from(new Set([...(state.filter.exclude || []), unitTitle]));
+
+    return {
+      ...state,
+      filter: {
+        ...state.filter,
+        exclude,
+        include: (state.filter.include || []).filter((unitnTitleToCheck) => unitTitle !== unitnTitleToCheck),
+      }
+    };
+  });
 };
 
-export const setCustomFilterInclude = (unitTitle: string) => {
-  useFiltersDevelopmentStore.setState((state) => ({
-    ...state,
-    filter: {
-      ...state.filter,
-      exclude: (state.filter.exclude || []).filter((unitnTitleToCheck) => unitTitle !== unitnTitleToCheck),
-      include: Array.from(new Set([...(state.filter.include || []), unitTitle])),
-    }
-  }));
-}
+export const toggleAsCustomFilterInclude = (unitTitle: string) => {
+  useFiltersDevelopmentStore.setState((state) => {
+    const include = state.filter.include?.includes(unitTitle)
+      ? (state.filter.include || []).filter((unitnTitleToCheck) => unitTitle !== unitnTitleToCheck)
+      : Array.from(new Set([...(state.filter.include || []), unitTitle]))
+    
+    return {
+      ...state,
+      filter: {
+        ...state.filter,
+        exclude: (state.filter.exclude || []).filter((unitnTitleToCheck) => unitTitle !== unitnTitleToCheck),
+        include,
+      }
+    };
+  });
+};
 
 export const updateCustomFilterResultBasedOnData = (data: AdministrativeUnitIndex[]) => {
   const state = useFiltersDevelopmentStore.getState();

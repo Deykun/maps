@@ -1,9 +1,9 @@
-.heraldry-cursor-last-position-wrapper {
+.heraldry-cursor-last-point-wrapper {
   transform-origin: top left;
   animation: 0.3s lastPointWrapper forwards ease-in;
 }
 
-.heraldry-cursor-last-position {
+.heraldry-cursor-last-point {
   transform: scale(0);
   transform-origin: center;
   animation: 0.2s lastPoint forwards ease-in;

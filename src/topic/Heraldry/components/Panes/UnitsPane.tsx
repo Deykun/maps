@@ -44,7 +44,7 @@ const UnitsPane = ({
 
   useOutsideClick('#units-pane', () => {
     setIsOpen(false);
-  }, '.heraldry-cursor-last-position-wrapper');
+  }, '.heraldry-cursor-last-point-wrapper');
 
   useEffect(() => {
     if (units.length === 0) {

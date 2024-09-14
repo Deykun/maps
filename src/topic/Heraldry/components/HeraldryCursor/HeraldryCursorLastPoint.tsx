@@ -5,14 +5,25 @@ import {
   useCursorStore,
 } from '@/topic/Heraldry/stores/cursorStore';
 
+import {
+  toggleAsCustomFilterExclude,
+  toggleAsCustomFilterInclude,
+  useFiltersDevelopmentStore,
+} from '@/topic/Heraldry/stores/filtersDevelopmentStore';
+
 import IconCoatOfArms from '@/topic/Heraldry/components/IconCoatOfArms';
+import IconMarkerMinus from '@/components/Icons/IconMarkerMinus';
+import IconMarkerPlus from '@/components/Icons/IconMarkerPlus';
 
 import Pane from '@/components/UI/Pane';
 import ButtonCircle from '@/components/UI/ButtonCircle';
 
+import HeraldryCursorLastPointDevelopment from './HeraldryCursorLastPointDevelopment';
+
 import './HeraldryCursorLastPoint.scss';
 
 const HeraldryCursorLastPoint = () => {
+  const isFiltersDevelopmentModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
   const lastClick = useCursorStore(state => state.lastClick);
 
   const handleClick = useCallback(() => {
@@ -27,7 +38,7 @@ const HeraldryCursorLastPoint = () => {
   return (
     <div
       key={`${lastClick.x}x${lastClick.y}`}
-      className={clsx('heraldry-cursor-last-position-wrapper absolute -translate-x-1/2 -translate-y-1/2 hover:z-5 group duration-0 select-none')}
+      className={clsx('heraldry-cursor-last-point-wrapper absolute -translate-x-1/2 -translate-y-1/2 hover:z-5 group duration-0 select-none')}
       style={{
         top: lastClick.y,
         left: lastClick.x,
@@ -35,9 +46,9 @@ const HeraldryCursorLastPoint = () => {
     >
       <Pane className="rounded-full p-1">
         <ButtonCircle
-          type="large"
-          id="heraldry-cursor-last-position"
-          className="heraldry-cursor-last-position"
+          size="large"
+          id="heraldry-cursor-last-point"
+          className="heraldry-cursor-last-point"
           // isActive={isOpen}
           onClick={handleClick}
           label={lastClick.hovered.length === 1 ? lastClick.hovered.map(({ shortTitle, title }) => shortTitle || title).join(', ') : undefined}
@@ -46,6 +57,10 @@ const HeraldryCursorLastPoint = () => {
           <IconCoatOfArms units={lastClick.hovered} />
           <span className="ui-button-circle-marker">{lastClick.hovered.length}</span>
         </ButtonCircle>
+        {isFiltersDevelopmentModeActive && lastClick.hovered.length === 1 && <HeraldryCursorLastPointDevelopment
+          className="heraldry-cursor-last-point-development absolute bottom-full left-1/2 mb-2 -translate-x-1/2"
+          unit={lastClick.hovered[0]}
+        />}
       </Pane>
     </div>
   );

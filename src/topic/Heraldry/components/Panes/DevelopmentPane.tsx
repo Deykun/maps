@@ -6,14 +6,19 @@ import { MarkerParams, MarkerParamsWithResult } from '@/topic/Heraldry/types';
 
 import {
   EMPTY_CUSTOM_FILTER,
+  clearCustomFilter,
   useFiltersDevelopmentStore,
   setCustomFilter,
+  toggleCustomFilterVisiblity,
   updateCustomFilterResultBasedOnData,
 } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
 
 import useEffectChange from '@/hooks/useEffectChange';
 import useOutsideClick from '@/hooks/useOutsideClick';
 
+import IconCheck from '@/components/Icons/IconCheck';
+import IconSelectionChecked from '@/components/Icons/IconSelectionChecked';
+import IconSelectionUnchecked from '@/components/Icons/IconSelectionUnchecked';
 import IconEraser from '@/components/Icons/IconEraser';
 import IconFlask from '@/components/Icons/IconFlask';
 import IconLoader from '@/components/Icons/IconLoader';
@@ -42,6 +47,8 @@ const DevelopmentPane = ({
 }: Props) => {
   const updateFilterTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const updateResultsTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const [activeMenu, setActiveMenu] = useState('');
+  const [isOpen, setIsOpen] = useState(false);
   const isFiltersDevelopmentModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
   const isCustomFilterActive = useFiltersDevelopmentStore((state) => state.filter.isActive);
   const filterName = useFiltersDevelopmentStore((state) => state.filter.name);
@@ -55,9 +62,6 @@ const DevelopmentPane = ({
     exclude: filterExclude,
   });
 
-  const [activeCustomAction, setActiveCustomAction] = useState<undefined | 'plus' | 'minus'>(undefined);
-  const [activeMenu, setActiveMenu] = useState('');
-  const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
 
   // Not the nicest solution, but it works
@@ -115,7 +119,7 @@ const DevelopmentPane = ({
       return;
     }
 
-    if (isCustomFilterActive) {
+    if (!isCustomFilterActive) {
       return;
     }
 
@@ -123,7 +127,6 @@ const DevelopmentPane = ({
       clearTimeout(updateResultsTimeoutRef.current);
       updateResultsTimeoutRef.current = null;
     }
-
 
     updateResultsTimeoutRef.current = setTimeout(() => {
       updateResults()
@@ -135,22 +138,30 @@ const DevelopmentPane = ({
     }, 300);
   }, [data, updateResults, filterExclude, filterInclude, isCustomFilterActive]);
 
+  const resetCustomFilter = () => {
+    clearCustomFilter();
+    setDraftFilter({
+      ...EMPTY_CUSTOM_FILTER,
+    });
+  }
+
   if (!isFiltersDevelopmentModeActive) {
     return null;
   }
 
-  const isProcessing = isLoading || updateFilterTimeoutRef.current || updateResultsTimeoutRef.current;
+  const isProcessing = isLoading || (isCustomFilterActive && (updateFilterTimeoutRef.current || updateResultsTimeoutRef.current));
 
   return (
     <div className="relative pointer-events-auto" id="development-pane">
       <Pane>
-        <ButtonCircle onClick={() => setIsOpen(!isOpen)} isActive={isOpen} title={t('heraldry.titleFilters')}>
+        <ButtonCircle
+          onClick={() => setIsOpen(!isOpen)}
+          isActive={isOpen}
+          label="Custom filters"
+          labelPosition="right"
+        >
           <IconFlask />
-          <span className="ui-button-circle-marker empty:hidden">
-            {activeCustomAction === 'minus' && '-'}
-            {activeCustomAction === 'plus' && '+'}
-            {!activeCustomAction && isCustomFilterActive && '✓'}
-          </span>
+          {isCustomFilterActive && <span className="ui-button-circle-marker !px-[3px]"><IconCheck className="h-[10px]" /></span>}
         </ButtonCircle>
         {isOpen && <>
           <span className="border-t" />
@@ -170,13 +181,19 @@ const DevelopmentPane = ({
           >
             <IconSelectNew />
           </ButtonCircle>
+          <ButtonCircle
+              onClick={() => toggleCustomFilterVisiblity()}
+              wrapperClassName="ml-auto"
+              isActive={isCustomFilterActive}
+              isDisabled={!draftFilter}
+            >
+            {isCustomFilterActive ? <IconSelectionChecked /> : <IconSelectionUnchecked />}
+          </ButtonCircle>
         </>}
         {isCustomFilterActive && <>
           <span className="border-t" />
           <ButtonCircle
-            onClick={() => setDraftFilter({
-              ...EMPTY_CUSTOM_FILTER,
-            })}
+            onClick={resetCustomFilter}
             label={t('heraldry.clearFilters')}
             labelPosition="right"
           >
@@ -197,8 +214,6 @@ const DevelopmentPane = ({
         <DevelopmentPaneCustomFilter
           draftFilter={draftFilter}
           setDraftFilter={setDraftFilter}
-          activeCustomAction={activeCustomAction}
-          setActiveCustomAction={setActiveCustomAction}
         />
       }
     </div>

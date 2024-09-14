@@ -4,7 +4,7 @@ import './ButtonCircle.scss';
 
 type Props = {
   id?: string,
-  type?: 'large' | 'normal',
+  size?: 'large' | 'normal',
   className?: string,
   wrapperClassName?: string,
   children: React.ReactNode,
@@ -16,7 +16,7 @@ type Props = {
   title?: string,
   label?: string,
   labelPosition?: 'left' | 'right' | 'bottom',
-  tagName?: string,
+  tagName?: 'span',
 }
 
 const ButtonCircle = ({
@@ -32,7 +32,7 @@ const ButtonCircle = ({
   title,
   label,
   labelPosition = 'left',
-  type,
+  size,
   tagName,
 }: Props) => {
   const TagName = tagName ?? (href ? 'a' : 'button');
@@ -41,9 +41,17 @@ const ButtonCircle = ({
     <span className={clsx('relative ui-button-circle', {
       [wrapperClassName || '']: wrapperClassName,
       'ui-button-circle--active': isActive,
-      [`ui-button-circle--${type}`]: type,
+      [`ui-button-circle--${size}`]: size,
     })}>
-      <TagName id={id} onClick={onClick} disabled={isDisabled} className={className} title={title} href={href} target={target}>
+      <TagName
+        id={id}
+        onClick={onClick}
+        disabled={isDisabled}
+        className={className}
+        title={title}
+        href={href}
+        target={target}
+      >
         {children}
         {label && <span
           className={clsx('ui-button-circle-label', {

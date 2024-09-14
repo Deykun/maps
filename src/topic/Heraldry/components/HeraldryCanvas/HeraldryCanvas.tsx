@@ -143,7 +143,7 @@ const HeraldryCanvas = ({ units, children, mapOffset, coatSize, setListPhrase }:
           });
 
           setTimeout(() => {
-            document.getElementById('heraldry-cursor-last-position')?.scrollIntoView({
+            document.getElementById('heraldry-cursor-last-point')?.scrollIntoView({
               behavior: 'smooth',
               block: 'center',
               inline: 'center',
