@@ -21,7 +21,7 @@ const fetchData = async ({ country }: FetchParmas) => {
   const response = await fetch(`/maps/data/heraldry/${country}/filters.json`).then((response) => response.json());
 
   const animals = (response.animals || []) as MarkerParams[];
-  const items = (response.animals || []) as MarkerParams[];
+  const items = (response.items || []) as MarkerParams[];
 
   return {
     animals,
@@ -30,12 +30,12 @@ const fetchData = async ({ country }: FetchParmas) => {
 };
 
 type Props = FetchParmas & {
-  setCustomFilter: (filter?: MarkerParamsWithResult) => void
+  setDraftFilter: (filter?: MarkerParamsWithResult) => void
 };
 
 const DevelopmentPaneAppFilters = ({
   country,
-  setCustomFilter,
+  setDraftFilter,
 }: Props) => {
   const [pickedFilter, setPickedFilter] = useState<MarkerParams | undefined>(undefined);
   const { t } = useTranslation();
@@ -121,7 +121,7 @@ const DevelopmentPaneAppFilters = ({
         
         <div className="flex gap-2">
           <Button
-            onClick={() => pickedFilter ? setCustomFilter(pickedFilter) : {}}
+            onClick={() => pickedFilter ? setDraftFilter(pickedFilter) : {}}
             wrapperClassName="ml-auto"
             isDisabled={!pickedFilter}
           >

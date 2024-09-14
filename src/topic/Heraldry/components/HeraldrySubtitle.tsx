@@ -35,7 +35,7 @@ const HeraldrySubtitle = ({
             if (labels.length === 1) {
               return (
                 <>
-                  <span className="text-black">{t(labels[0])}</span>
+                  <span className="text-black" dangerouslySetInnerHTML={{ __html: t(labels[0]) }} />
                   {indexParts < subtitleParts.length - 1 && <small className="mx-1">
                     {' '}{t('heraldry.filterOperator.and')}{' '}
                   </small>}
@@ -48,7 +48,7 @@ const HeraldrySubtitle = ({
                 {operator === 'or' && subtitleParts.length > 1 && <small>{'( '}</small>}
                 {labels.map((label, indexLabel) => (
                   <>
-                    <span className="text-black">{t(label)}</span>
+                    <span className="text-black" dangerouslySetInnerHTML={{ __html: t(label) }} />
                     {indexLabel < labels.length - 1 && <small className="mx-1">
                       {' '}{t(`heraldry.filterOperator.${operator}`)}{' '}
                     </small>}

@@ -192,7 +192,7 @@ const DevelopmentPane = ({
       {activeMenu === 'filters' &&
         <DevelopmentPaneAppFilters
           country={country}
-          // setCustomFilter={setCustomFilter}
+          setDraftFilter={setDraftFilter}
         />
       }
       {activeMenu === 'customFilter' &&
