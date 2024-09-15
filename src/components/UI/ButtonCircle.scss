@@ -151,6 +151,18 @@
     transform: translateX(-50%) scale(1);
   }
 
+  &.ui-button-circle--small {
+    > a,
+    > button {
+      @apply size-6;
+
+      > img,
+      > svg {
+        @apply size-4;
+      }
+    } 
+  }
+
   &.ui-button-circle--large {
     > a,
     > button {

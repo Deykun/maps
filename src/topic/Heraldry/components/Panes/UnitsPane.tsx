@@ -124,7 +124,7 @@ const UnitsPane = ({
           </ButtonCircle>
         </div>
         {previewUnit && <UnitsPaneItemDetails unit={previewUnit} setPreviewUnit={setPreviewUnit} />}
-        {!previewUnit && <div className="border-t pt-2 pb-4 max-h-[300px] snap-y overflow-auto">
+        {!previewUnit && <div className="border-t pt-2 pb-4 max-h-[480px] snap-y overflow-auto">
           <ul className="flex flex-col gap-3">
             {filteredUnits.slice(0, itemsToShow).map((unit) => (
               <UnitsPaneItem key={unit.id} className="snap-end" unit={unit} setPreviewUnit={setPreviewUnit} />

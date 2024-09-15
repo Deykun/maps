@@ -6,19 +6,14 @@ import {
 } from '@/topic/Heraldry/stores/cursorStore';
 
 import {
-  toggleAsCustomFilterExclude,
-  toggleAsCustomFilterInclude,
   useFiltersDevelopmentStore,
 } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
-
-import IconCoatOfArms from '@/topic/Heraldry/components/IconCoatOfArms';
-import IconMarkerMinus from '@/components/Icons/IconMarkerMinus';
-import IconMarkerPlus from '@/components/Icons/IconMarkerPlus';
 
 import Pane from '@/components/UI/Pane';
 import ButtonCircle from '@/components/UI/ButtonCircle';
 
-import HeraldryCursorLastPointDevelopment from './HeraldryCursorLastPointDevelopment';
+import IconCoatOfArms from '@/topic/Heraldry/components/IconCoatOfArms';
+import DevelopmentActions from '@/topic/Heraldry/components/DevelopmentActions/DevelopmentActions';
 
 import './HeraldryCursorLastPoint.scss';
 
@@ -57,8 +52,8 @@ const HeraldryCursorLastPoint = () => {
           <IconCoatOfArms units={lastClick.hovered} />
           <span className="ui-button-circle-marker">{lastClick.hovered.length}</span>
         </ButtonCircle>
-        {isFiltersDevelopmentModeActive && lastClick.hovered.length === 1 && <HeraldryCursorLastPointDevelopment
-          className="heraldry-cursor-last-point-development absolute bottom-full left-1/2 mb-2 -translate-x-1/2"
+        {isFiltersDevelopmentModeActive && lastClick.hovered.length === 1 && <DevelopmentActions
+          className="heraldry-cursor-last-point-development"
           unit={lastClick.hovered[0]}
         />}
       </Pane>

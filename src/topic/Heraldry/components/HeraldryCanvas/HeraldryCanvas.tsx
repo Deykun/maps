@@ -103,18 +103,27 @@ const HeraldryCanvas = ({ units, children, mapOffset, coatSize, setListPhrase }:
     setHovered(selectedUnits);
   }, [position]);
 
-  const handleMapClick = useCallback(() => {
+  const handleMapClick = useCallback((event: React.MouseEvent) => {
     if (hovered.length > 0) {
       if (hovered.length <= maxSelectedWithClick) {
         setListPhrase(hovered.map(({ id }) => `id:${id}`).join(', '));
       } else {
         setListPhrase('');
       }
-      setLastClick({
-        x: position.x,
-        y: position.y,
-        hovered: hovered,
-      });
+
+      if (elementRef.current) {
+        const rect = elementRef.current.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+  
+        setLastClick({
+          x,
+          y,
+          hovered: hovered,
+        });
+      }
+
+
     } else {
       setLastClick(undefined);
     }

@@ -4,7 +4,7 @@ import './ButtonCircle.scss';
 
 type Props = {
   id?: string,
-  size?: 'large' | 'normal',
+  size?: 'small' | 'large' | 'normal',
   className?: string,
   wrapperClassName?: string,
   children: React.ReactNode,

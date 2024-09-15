@@ -14,7 +14,7 @@ type Props = {
 const HeraldryCursor = ({ top, left, isHovering = true, hovered }: Props) => {
   return (
     <div
-      className={clsx('heraldry-cursor-wrapper absolute hover:z-10 group duration-0 select-none', {
+      className={clsx('hidden sm:block heraldry-cursor-wrapper absolute hover:z-10 group duration-0 select-none', {
         'heraldry-cursor-wrapper--without-content': hovered.length === 0,
       })}
       style={{

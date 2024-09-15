@@ -39,3 +39,21 @@
     transform: scale(1);
   }
 }
+
+.heraldry-cursor-last-point-development {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  opacity: 0;
+  transform: translateX(-50%) translateY(20px);
+  transform-origin: center;
+  transition: 0.3s ease-in-out;
+}
+
+.heraldry-cursor-last-point-wrapper:hover {
+  .heraldry-cursor-last-point-development {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
