@@ -1,5 +1,12 @@
 .heraldry-canvas {
+  width: auto;
+
   > svg {
+    @apply mx-auto;
+
+    // display: block;
+    // height: 40vh;
+    // width: auto;
 
     path {
       fill: #f2f2f2;

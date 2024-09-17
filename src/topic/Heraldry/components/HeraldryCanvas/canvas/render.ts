@@ -1,8 +1,6 @@
 import { getSpriteDataFromUnit } from '@/topic/Heraldry/utils/getSpriteDataFromUnit';
 import { AdministrativeUnit, MapOffset } from '@/topic/Heraldry/types';
 
-import { getPostionForPlace } from '@/topic/Heraldry/utils/getPostionForPlace';
-
 import { CoatOfArms } from './layers/CoatOfArms';
 
 let canvas = undefined as unknown as HTMLCanvasElement;
@@ -14,11 +12,6 @@ let mapOffset: MapOffset = {
   maxLatTop: -90,
   minLonLeft: -180,
   maxLonLeft: 180,
-}
-
-const aspectRation = {
-  x: 1,
-  y: 1,
 }
 
 const fps = 0.5;
@@ -78,13 +71,11 @@ export const onResize = (mapOffset: MapOffset) => {
   renderFrame();
 }
 
-export const render = ({ canvas: initCanvas, ctx: gameCtx, mapOffset: initMapOffset, coatSize: initCoatSize, aspectX = 1, aspectY = 1 }: {
+export const render = ({ canvas: initCanvas, ctx: gameCtx, mapOffset: initMapOffset, coatSize: initCoatSize }: {
   canvas: HTMLCanvasElement,
   ctx: CanvasRenderingContext2D,
   mapOffset: MapOffset,
   coatSize: number,
-  aspectX?: number,
-  aspectY?: number,
 }) => {
   if (wasInited) {
     return;
@@ -98,8 +89,6 @@ export const render = ({ canvas: initCanvas, ctx: gameCtx, mapOffset: initMapOff
   coatSize = initCoatSize;
   ctx = gameCtx;
   ctx.imageSmoothingQuality = "high";
-  aspectRation.x = aspectX;
-  aspectRation.y = aspectY;
 
   renderFrame();
   initEventListeners();

@@ -33,6 +33,7 @@ type Props = {
   animalFiltersList: GetFilterResponse,
   itemFiltersList: GetFilterResponse,
   mapWrapperClassName?: string,
+  mapWrapperClassNameForZoom0?: string,
   map: () => JSX.Element,
   initialFilters?: Partial<MapsSearchParams>
   mapOffset: MapOffset,
@@ -45,6 +46,7 @@ const CountryHeraldry = ({
   animalFiltersList,
   itemFiltersList,
   mapWrapperClassName,
+  mapWrapperClassNameForZoom0,
   map: MapBackground,
   initialFilters = {},
   mapOffset,
@@ -108,7 +110,7 @@ const CountryHeraldry = ({
               "map-section fixed top-0 left-0 w-full h-full",
               "p-5 pt-[100px]",
               "no-scrollbar overflow-auto", {
-                "flex flex-col justify-evenly": zoomLevel === 1,
+                // "flex flex-col justify-evenly": zoomLevel === 1,
                 "pb-[100px]": zoomLevel > 1,
               }
             )}
@@ -132,8 +134,8 @@ const CountryHeraldry = ({
             </header>
             <div>
               <div
-                className={clsx(mapWrapperClassName, "map-wrapper z-1 relative mx-auto flex justify-center items-center", {
-                  'max-h-[60lvh]': zoomLevel === 1,
+                className={clsx(mapWrapperClassName, "map-wrapper z-1 relative mx-auto", {
+                  [`${mapWrapperClassNameForZoom0 || ''} mx-auto`]: zoomLevel === 1,
                 })}
                 style={zoomLevel === 1 ? { } : { width: `max(${(zoomLevel - 1) * 500}px, ${(zoomLevel - 1) * 80}vw` }}
               >
@@ -145,23 +147,6 @@ const CountryHeraldry = ({
                 >
                   <MapBackground />
                 </HeraldryCanvas>
-                {/* <div>
-                    {unitsForMap.map(
-                      (unit) => {
-                        const { top, left } = getPostionForPlace(unit);
-                        return (
-                        <HeraldryMapItemFromSprite
-                          key={`${unit.title}-${unit?.place?.coordinates?.lon}`}
-                          unit={unit}
-                          setListPhrase={{
-                            top: `${top}%`,
-                            left: `${left}%`,
-                          }}
-                          style={}
-                          size={coatSize}
-                        />
-                    )})}
-                </div> */}
               </div>
             </div>
             <div className={clsx('country-heraldry-footer', {

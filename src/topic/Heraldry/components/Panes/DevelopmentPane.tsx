@@ -215,7 +215,7 @@ const DevelopmentPane = ({
             <IconEraser />
           </ButtonCircle>
         </>}
-        {isProcessing && <ButtonCircle tagName="span">
+        {isProcessing && <ButtonCircle tagName="span" isActive>
           <IconLoader />
         </ButtonCircle>}
       </Pane>

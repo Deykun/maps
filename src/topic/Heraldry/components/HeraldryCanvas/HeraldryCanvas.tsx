@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState, memo, useCallback } from 'react';
+import clsx from 'clsx';
 
 import {
   setLastClick,
@@ -24,6 +25,7 @@ import HeraldryCursorLastPoint from '@/topic/Heraldry/components/HeraldryCursor/
 import './HeraldryCanvas.scss';
 
 type Props = {
+  className?: string,
   units: AdministrativeUnit[],
   children: React.ReactNode,
   mapOffset: MapOffset,
@@ -31,7 +33,7 @@ type Props = {
   setListPhrase: (title: string) => void,
 }
 
-const HeraldryCanvas = ({ units, children, mapOffset, coatSize, setListPhrase }: Props) => {
+const HeraldryCanvas = ({ className, units, children, mapOffset, coatSize, setListPhrase }: Props) => {
   const idToShow = useCursorStore((state) => state.idToShow);
   const [hovered, setHovered] = useState<AdministrativeUnit[]>([]);
 
@@ -167,7 +169,7 @@ const HeraldryCanvas = ({ units, children, mapOffset, coatSize, setListPhrase }:
     <>
       <div
         ref={mergeRefs(wrapperRef, elementRef)}
-        className="heraldry-canvas absolute top-0 left-0 size-full cursor-none"
+        className={clsx('heraldry-canvas mx-auto cursor-none', className)}
         onClick={handleMapClick}
         style={{ padding: mapPadding }}
       >

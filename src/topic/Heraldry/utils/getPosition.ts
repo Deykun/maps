@@ -28,6 +28,10 @@ export const getXYfromLatLon = ({
   if (canvas instanceof HTMLCanvasElement) {
       const size = canvas.getClientRects()[0];
 
+      if (!size) {
+        return { x: 0, y: 0 };
+      }
+
       return {
         x: ((size.width * pixelRatio) - (2 * scaledMapPadding)) * percentageX + scaledMapPadding,
         y: ((size.height * pixelRatio) - (2 * scaledMapPadding)) * percentageY + scaledMapPadding,

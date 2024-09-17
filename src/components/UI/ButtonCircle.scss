@@ -187,7 +187,8 @@
 
   &.ui-button-circle--large {
     > a,
-    > button {
+    > button,
+    > span {
       @apply size-12;
 
       > img,
@@ -200,7 +201,8 @@
 
 .ui-button-circle--active {
   > a,
-  > button {
+  > button,
+  > span {
     color: #d2543a;
   }
 }

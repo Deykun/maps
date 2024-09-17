@@ -111,7 +111,7 @@ const HeraldryPL = () => {
   }
   
   if (isLoading) {
-    return <CountryHeraldryStatus text="Gathering map data..." />
+    return <CountryHeraldryStatus text="Gathering map data..." isLoading />
   }
 
   if (!data) {
@@ -132,7 +132,8 @@ const HeraldryPL = () => {
       typeFiltersList={typeFiltersList}
       animalFiltersList={animalFiltersList}
       itemFiltersList={itemFiltersList}
-      mapWrapperClassName="aspect-[820_/_775]"
+      mapWrapperClassName="[&>div>svg]:aspect-[820_/_775]"
+      mapWrapperClassNameForZoom0="max-w-[50vh]"
       map={SvgMap}
       mapOffset={{
          minLatTop: 49,
