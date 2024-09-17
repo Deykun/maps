@@ -50,9 +50,6 @@ const initEventListeners = () => {
 let wasInited = false;
 
 export const onResize = (mapOffset: MapOffset) => {
-  canvas.width = canvas.width;
-  canvas.height = canvas.width / (aspectRation.x / aspectRation.y);
-
   // Size is optional, but we do it once here for all CoA
   const size = canvas.getClientRects()[0];
 
@@ -117,7 +114,7 @@ export const setCoatOfArms = (units: AdministrativeUnit[]) => {
 
     const image = (unit.imagesList || []).find(({ width }) => width === '80w' );
 
-    const coatOfArms = new CoatOfArms({
+    return new CoatOfArms({
       canvas,
       ctx,
       lonX,
@@ -128,8 +125,6 @@ export const setCoatOfArms = (units: AdministrativeUnit[]) => {
       coatSize,
       mapOffset,
     });
-
-    return coatOfArms;
   }).filter(Boolean);
 
   // Uncomment if you want to test the map latitude/longitude

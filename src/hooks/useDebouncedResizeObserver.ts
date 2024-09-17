@@ -14,7 +14,9 @@ function useDebouncedResizeObserver<T extends HTMLElement>(debounceDelay: number
   useEffect(() => {
     const handleResize = (entries: ResizeObserverEntry[]) => {
       const entry = entries[0]; // You may want to handle multiple elements if needed
-      if (!entry?.contentRect) return;
+      if (!entry?.contentRect) {
+        return;
+      }
 
       // Clear previous timeout
       if (resizeTimeoutRef.current) {

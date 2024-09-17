@@ -65,7 +65,7 @@ const getPostionForPlacePL = (unit: AdministrativeUnit) => {
 };
 
 export const getPostionForPlace = (unit: AdministrativeUnit) => {
-  const lang = unit.lang;
+  const { lang } = unit;
 
   if (lang === 'pl') {
     return getPostionForPlacePL(unit);
