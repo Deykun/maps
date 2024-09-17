@@ -170,7 +170,7 @@ const CountryHeraldry = ({
             </div>
           </section>
           <div className={clsx('ui-slide-from-left fixed top-3 left-3 z-20 flex flex-col gap-3 pointer-events-none', {
-            'hidden md:block': zoomLevel > 1 && subtitleParts.length !== 0,
+            'hidden md:flex': zoomLevel > 1 && subtitleParts.length !== 0,
           })}>
             <NavigationPane />
             <DevelopmentPane

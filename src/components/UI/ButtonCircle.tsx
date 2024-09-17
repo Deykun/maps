@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import { cn } from '@/utils/tailwind';
 
 import './ButtonCircle.scss';
 
@@ -38,7 +39,7 @@ const ButtonCircle = ({
   const TagName = tagName ?? (href ? 'a' : 'button');
 
   return (
-    <span className={clsx('relative ui-button-circle', {
+    <span className={cn('relative ui-button-circle', {
       [wrapperClassName || '']: wrapperClassName,
       'ui-button-circle--active': isActive,
       [`ui-button-circle--${size}`]: size,

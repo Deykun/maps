@@ -45,12 +45,16 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
           <ButtonCircle
             size="small"
             onClick={() => showUnitOnMap(unit.id)}
+            label={t('heraldry.item.showOnMap')}
+            labelPosition="top"
           >
             <IconMarker />
           </ButtonCircle>
           <ButtonCircle
             size="small"
             onClick={() => setPreviewUnit()}
+            label={t('heraldry.item.showLess')}
+            labelPosition="top"
           >
             <IconMinusMagnifyingGlass />
           </ButtonCircle>

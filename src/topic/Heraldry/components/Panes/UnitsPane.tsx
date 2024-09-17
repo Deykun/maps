@@ -30,7 +30,6 @@ type Props = {
 
 const UnitsPane = ({ 
   units = [],
-  children,
   phrase = '',
   shouldShowCount = false,
 }: Props) => {
@@ -109,23 +108,26 @@ const UnitsPane = ({
           <input
             value={filterPhrase}
             onChange={(e) => setFilterPhrase(e.target.value || '')}
-            className={clsx('w-full p-1 pl-[50px] md:pl-[85px] h-[34px] leading-[34px] font-[600] rounded-tl-[4px] bg-white border', {
+            className={clsx('w-full p-1 pl-[50px] md:pl-[85px] pr-[40px] h-[34px] leading-[34px] font-[600] rounded-t-[4px] bg-white border', {
               'text-[16px]': filterPhrase.length < 10,
               'text-[12px]': filterPhrase.length >= 10,
             })}
             placeholder={t('heraldry.list.limitListToPlaceholder')}
           />
           <ButtonCircle
+            wrapperClassName="absolute top-1/2 right-1 -translate-y-1/2"
             id="units-pane-toggle"
             isDisabled={filterPhrase.length === 0}
             onClick={() => setFilterPhrase('')}
+            size="small"
           >
             <IconEraser />
           </ButtonCircle>
         </div>
         {previewUnit && <UnitsPaneItemDetails unit={previewUnit} setPreviewUnit={setPreviewUnit} />}
         {!previewUnit && <div className="border-t pt-2 pb-4 max-h-[480px] snap-y overflow-auto">
-          <ul className="flex flex-col gap-3">
+          {filteredUnits.length === 0 && <p className="text-center text-[14px] my-2">{t('heraldry.noResult')}</p>}
+          <ul className="flex flex-col gap-3 empty:hidden">
             {filteredUnits.slice(0, itemsToShow).map((unit) => (
               <UnitsPaneItem key={unit.id} className="snap-end" unit={unit} setPreviewUnit={setPreviewUnit} />
             ))}
