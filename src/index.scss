@@ -89,3 +89,13 @@ h1, h2, h3 {
     transform: translateY(0) scale(1);
   }
 }
+
+::-moz-selection {
+  background: #aa0d0d40;
+  text-shadow: none;
+}
+
+::selection {
+  background: #aa0d0d40;
+  text-shadow: none;
+}

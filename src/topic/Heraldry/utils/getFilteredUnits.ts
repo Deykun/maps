@@ -145,7 +145,7 @@ export const getFilteredUnits = (
       // Phrases always work as or
       // subtitleParts.push({ operator: 'or', labels: (customFilter?.phrases?.map((value) => `„${value}”`) || []) })
 
-      subtitleParts.push({ operator: 'or', labels: collapsePhrases(customFilter?.phrases || [], -3).map((value) => `„${value}”`) || [] });
+      subtitleParts.push({ operator: 'or', labels: collapsePhrases(customFilter?.phrases || [], -7).map((value) => `„${value}”`) || [] });
     }
   }
 

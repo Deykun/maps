@@ -164,9 +164,9 @@ const CountryHeraldry = ({
                 </div> */}
               </div>
             </div>
-            <div className={clsx('', {
+            <div className={clsx('country-heraldry-footer', {
               'text-center mt-10 text-[14px] text-[#4b4b4b] tracking-wide': zoomLevel === 1,
-              'fixed bottom-3 left-1/2 -translate-x-1/2 w-[400px] max-w-[80vw] z-30 ui-pane sans text-[10px] py-1 text-center': zoomLevel > 1,
+              'country-heraldry-footer--zoomed fixed bottom-3 left-1/2 -translate-x-1/2 max-w-[80vw] z-30 ui-pane sans text-[10px] py-1 text-center': zoomLevel > 1,
             })}>
               <p>
                 {zoomLevel === 1 && <>{t('heraldry.mapFooterSource')} <strong className="text-black">wikipedia.org</strong>.<br /></>}

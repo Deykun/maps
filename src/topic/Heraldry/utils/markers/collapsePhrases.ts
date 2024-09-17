@@ -21,7 +21,18 @@ const shortenSuffixesIfPossible = (root: string, suffixes: string[]): { root: st
 export const collapsePhrases = (phrases: string[], suffixLength: number) => {
   const suffixesByRoots = phrases.reduce((stack: SuffixesByRoots, phrase) => {
 
-    const [root, suffix] = splitAt(suffixLength, phrase);
+    const [initRoot, initSuffix] = splitAt(suffixLength, phrase);
+
+    let root = initRoot;
+    let suffix = initSuffix;
+
+    // door, doors -> d(oor/oors) is pretty bad chunking, this set minimum length for root
+    if (initRoot.length < 3) {
+      const [suffixRoot, suffixSuffix] = splitAt(3 - initRoot.length, suffix);
+
+      root = `${initRoot}${suffixRoot}`;
+      suffix = suffixSuffix;
+    }
 
     if (stack[root]) {
       stack[root].push(suffix);
@@ -33,21 +44,29 @@ export const collapsePhrases = (phrases: string[], suffixLength: number) => {
 
   }, {});
 
-
   const mergedPhrases = Object.entries(suffixesByRoots).map(([initRoot, initSuffixes]) => {
-    if (initSuffixes.length === 1) {
-      return `${initRoot}${initSuffixes[0]}`;
+    const notEmptySuffixes = initSuffixes.filter(Boolean);
+    if (notEmptySuffixes.length <= 1) {
+      return `${initRoot}${notEmptySuffixes[0] || ''}`;
     }
     
     const {
       root,
       suffixes,
-    } = shortenSuffixesIfPossible(initRoot, initSuffixes);
+    } = shortenSuffixesIfPossible(initRoot, notEmptySuffixes);
 
-    const suffixesMerged = `<small class="text-[#4b4b4b]"> (</small>${suffixes.join('<small class="text-[#4b4b4b]">/</small>')}<small class="text-[#4b4b4b]">)</small>`;
+    if (!root) {
+      return suffixes;
+    }
+  
+    const lessImpresiveClassName = 'inline-block text-[#a8a8a7]';
+
+    const suffixesToMerge = suffixes.filter(Boolean).sort((a, b) => a.length - b.length);
+
+    const suffixesMerged = ` <small class="${lessImpresiveClassName}"> (</small>${suffixesToMerge.join(`<small class="${lessImpresiveClassName} scale-x-50">/</small>`)}<small class="${lessImpresiveClassName}">)</small>`;
 
     return `${root}${suffixesMerged}`
-  });
+  }).flatMap((v) => v);
 
   return mergedPhrases;
 };

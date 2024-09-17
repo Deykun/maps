@@ -22,7 +22,7 @@ type Props = {
 }
 
 const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
-  const { id, title, url, imagesList, imageSrcSet, place, markers, colors } = unit;  
+  const { title, url, imagesList, imageSrcSet, place, markers, colors } = unit;  
   
   const { t } = useTranslation();
 
@@ -41,7 +41,7 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
           alt=""
           loading="lazy"
         />      
-        <div className="absolute bottom-0 right-0 translate-y-[50%] md:translate-y-0 flex gap-1">
+        <div className="absolute bottom-0 right-0 translate-y-[50%]  flex gap-2">
           <ButtonCircle
             size="small"
             onClick={() => showUnitOnMap(unit.id)}
@@ -60,7 +60,7 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
             labelPositions="top"
           />
         </div>
-      </span>http://localhost:3001/maps/heraldyka
+      </span>
       <div className="w-full px-2 text-center">
         <a href={url} target="_blank" className="text-[18px] font-[500] tracking-wide text-[#312f2f] hover:text-black duration-300">
           <span>{title}</span>

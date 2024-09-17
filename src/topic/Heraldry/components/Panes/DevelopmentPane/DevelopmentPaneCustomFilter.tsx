@@ -74,7 +74,7 @@ const DevelopmentPaneCustomFilter = ({
             const value = localStorage.getItem('draft');
 
             if (value) {
-              // setDraftFilter(JSON.parse(value));
+              setDraftFilter(JSON.parse(value));
             }
           }}
         >

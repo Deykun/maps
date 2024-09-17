@@ -39,3 +39,9 @@
 .map-wrapper {
   container-type: inline-size;
 }
+
+.country-heraldry-footer {
+  &.country-heraldry-footer--zoomed {
+    width: max-content;
+  }
+}
