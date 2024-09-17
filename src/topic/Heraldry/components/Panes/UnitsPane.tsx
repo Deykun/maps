@@ -103,7 +103,7 @@ const UnitsPane = ({
             && <span className="ui-button-circle-marker">{filteredUnits.length}</span>}
         </ButtonCircle>
       </Pane>
-      {isOpen && <Pane className="ui-slide-from-top absolute top-0 right-full z-50 w-[400px] mr-2">
+      {isOpen && <Pane className="ui-slide-from-top absolute top-0 right-full z-50 w-[400px] mr-3">
         <div className="relative flex gap-1 justify-center items-center">
           <IconTextMagnifyingGlass className="size-4 absolute top-1/2 -translate-y-1/2 left-3 md:left-8 opacity-20" />
           <input

@@ -191,7 +191,7 @@ const FiltersPane = ({
           </ButtonCircle>
         </>}
       </Pane>
-      {activeMenu === 'type' && <Pane className="ui-slide-from-top ui-pane-magic-border fixed right-12 mt-3 w-[400px] top-0 mr-6">
+      {activeMenu === 'type' && <Pane className="ui-slide-from-top fixed top-0 right-full z-50 w-[400px] mr-3">
         <h3 className="flex gap-3 items-center">
           <IconBuilding className="size-5" />
           <span>
@@ -219,7 +219,7 @@ const FiltersPane = ({
           )}
         </div>}
       </Pane>}
-      {activeMenu === 'color' && <SubPane order={2} className="ui-slide-from-top ui-pane-magic-border absolute right-12 mt-2 mr-3 flex-row">
+      {activeMenu === 'color' && <SubPane order={2} className="ui-slide-from-top ui-pane-magic-border absolute right-full z-50 mt-2 mr-3 flex-row">
         {Object.keys(colorsMarkersByNames).map((name) => <ButtonCircle
           key={name}
           className={clsx({
@@ -238,7 +238,7 @@ const FiltersPane = ({
           />
         </ButtonCircle>)}
       </SubPane>}
-      {activeMenu === 'animal' && <Pane className="ui-slide-from-top ui-pane-magic-border fixed right-12 mt-3 w-[400px] top-0 mr-6">
+      {activeMenu === 'animal' && <Pane className="ui-slide-from-top ui-pane-magic-border fixed top-0 right-full z-50 w-[400px] mr-3">
         <h3 className="flex gap-3 items-center">
           <IconAnimal className="size-5" />
           <span>
@@ -288,7 +288,7 @@ const FiltersPane = ({
           )}
         </div>}
       </Pane>}
-      {activeMenu === 'item' && <Pane className="ui-slide-from-top ui-pane-magic-border fixed right-12 mt-3 w-[400px] top-0 mr-6">
+      {activeMenu === 'item' && <Pane className="ui-slide-from-top ui-pane-magic-border fixed top-0 right-full z-50 w-[400px] mr-3">
         <h3 className="flex gap-3 items-center">
           <IconCrown className="size-5" />
           <span>

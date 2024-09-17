@@ -45,7 +45,7 @@ const DevelopmentPaneCustomFilter = ({
   }, []);
 
   return (
-    <Pane className="fixed left-12 mt-3 w-[400px] max-h-[calc(100%_-_1.5rem)] overflow-auto top-0 ml-6">
+    <Pane className="fixed top-0 left-10 sm:left-12 z-50 ml-3 w-[400px] max-h-[calc(100%_-_1.5rem)] overflow-auto">
       <h3 className="flex gap-3 items-center">
         <IconSelectNew className="size-5" />
         <span>

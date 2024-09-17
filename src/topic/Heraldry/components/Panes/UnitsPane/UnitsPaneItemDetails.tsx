@@ -60,7 +60,7 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
             labelPositions="top"
           />
         </div>
-      </span>
+      </span>http://localhost:3001/maps/heraldyka
       <div className="w-full px-2 text-center">
         <a href={url} target="_blank" className="text-[18px] font-[500] tracking-wide text-[#312f2f] hover:text-black duration-300">
           <span>{title}</span>

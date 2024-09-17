@@ -33,8 +33,7 @@ h1, h2, h3 {
 }
 
 .ui-slide-from-left {
-  opacity: 0;
-  transform: translateX(calc(-100% - 30px));
+    transform: translateX(calc(-100% - 30px));
   animation: 0.3s uiSlideFromLeft forwards ease-in;
   animation-delay: 0.15s;
   transform-origin: top right;
@@ -42,18 +41,15 @@ h1, h2, h3 {
 
 @keyframes uiSlideFromLeft {
   0% {
-    opacity: 0;
     transform: translateX(calc(-100% - 30px));
   }
 
   100% {
-    opacity: 1;
     transform: translateX(0) scale(1);
   }
 }
 
 .ui-slide-from-right {
-  opacity: 0;
   transform: translateX(calc(100% + 30px));
   animation: 0.3s uiSlideFromRight forwards ease-in;
   animation-delay: 0.15s;
@@ -62,13 +58,11 @@ h1, h2, h3 {
 
 @keyframes uiSlideFromRight {
   0% {
-    opacity: 0;
     transform: translateX(calc(100% + 30px));
   }
 
   100% {
-    opacity: 1;
-    transform: translateX(0) scale(1);
+    transform: translateX(0);
   }
 }
 
