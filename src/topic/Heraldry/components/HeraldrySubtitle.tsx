@@ -32,7 +32,7 @@ const HeraldrySubtitle = ({
   if (zoomLevel > 1 && !isOpen) {
     return (
       <ButtonCircle
-        className="-mx-3"
+        className="-mx-3 md:-mx-2"
         onClick={() => setIsOpen(true)}
       >
         <IconInfo />
