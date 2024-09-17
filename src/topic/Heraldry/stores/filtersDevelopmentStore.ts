@@ -41,7 +41,6 @@ export const toggleFilterDevlopmentMode = () => {
 };
 
 export const toggleCustomFilterVisiblity = () => {
-  console.log('toggleCustomFilterVisiblitytoggleCustomFilterVisiblity');
   useFiltersDevelopmentStore.setState((state) => ({
     ...state,
     filter: {
