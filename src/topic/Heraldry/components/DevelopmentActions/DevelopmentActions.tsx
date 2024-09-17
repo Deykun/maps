@@ -17,7 +17,7 @@ type Props = {
   className?: string,
   unit: AdministrativeUnit,
   buttonSize?: 'small',
-  labelPositions?: 'bottom',
+  labelPositions?: 'top',
 }
 
 const DevelopmentActions = ({ className, unit, buttonSize, labelPositions }: Props) => {

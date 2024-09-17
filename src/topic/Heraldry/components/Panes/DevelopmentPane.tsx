@@ -95,7 +95,22 @@ const DevelopmentPane = ({
     }
 
     updateCustomFilterResultBasedOnData(data);
-  }, [data])
+  }, [data]);
+
+  useEffectChange(() => {
+    const wasIncludeAndExcludeUpdated = JSON.stringify({ filterInclude }) !== JSON.stringify(({ filterInclude: draftFilter.include })) ||
+      JSON.stringify({ filterExclude }) !== JSON.stringify(({ filterExclude: draftFilter.exclude }));
+
+    if (wasIncludeAndExcludeUpdated) {
+      setDraftFilter((previous) => {
+        return {
+          ...previous,
+          include: filterInclude,
+          exclude: filterExclude,
+        };
+      });
+    }
+  }, [filterExclude, filterInclude]);
 
   useEffectChange(() => {
     if (updateFilterTimeoutRef.current) {

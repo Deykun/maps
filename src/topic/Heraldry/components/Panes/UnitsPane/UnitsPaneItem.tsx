@@ -72,7 +72,7 @@ const UnitsPaneItem = ( { className, unit, setPreviewUnit }: Props) => {
           <DevelopmentActions
             unit={unit}
             buttonSize="small"
-            labelPositions="bottom"
+            labelPositions="top"
           />
         </span>
       </span>

@@ -11,6 +11,10 @@ import IconMarker from '@/components/Icons/IconMarker';
 import IconMinusMagnifyingGlass from '@/components/Icons/IconMinusMagnifyingGlass';
 import IconLink from '@/components/Icons/IconLink';
 
+import ButtonCircle from '@/components/UI/ButtonCircle';
+
+import DevelopmentActions from '@/topic/Heraldry/components/DevelopmentActions/DevelopmentActions';
+
 type Props = {
   className?: string,
   unit: AdministrativeUnit,
@@ -38,18 +42,23 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
           loading="lazy"
         />      
         <div className="absolute bottom-0 right-0 translate-y-[50%] md:translate-y-0 flex gap-1">
-          <button
-            className="bg-white p-1 rounded-full shadow-md"
+          <ButtonCircle
+            size="small"
             onClick={() => showUnitOnMap(unit.id)}
           >
-            <IconMarker className="size-4" />
-          </button>
-          <button
-            className="bg-white p-1 rounded-full shadow-md"
-            onClick={() => setPreviewUnit(undefined)}
+            <IconMarker />
+          </ButtonCircle>
+          <ButtonCircle
+            size="small"
+            onClick={() => setPreviewUnit()}
           >
-            <IconMinusMagnifyingGlass className="size-4" />
-          </button>
+            <IconMinusMagnifyingGlass />
+          </ButtonCircle>
+          <DevelopmentActions
+            unit={unit}
+            buttonSize="small"
+            labelPositions="top"
+          />
         </div>
       </span>
       <div className="w-full px-2 text-center">
