@@ -5,6 +5,7 @@ export const PATHS_DATA: {
   title: string,
   social: string,
   lang: string,
+  country?: string,
 }[] = [
   {
     type: 'heraldryCountry',
@@ -16,6 +17,7 @@ export const PATHS_DATA: {
       <meta property="og:image" content="https://deykun.github.io/maps/social/praegused-ja-endised-eesti-vappide-kujundid.png" />
     `,
     lang: 'et',
+    country: 'et',
   },
   {
     type: 'heraldryCountry',
@@ -27,6 +29,7 @@ export const PATHS_DATA: {
       <meta property="og:image" content="https://deykun.github.io/maps/social/suomen-vaakunat.png" />
     `,
     lang: 'fi',
+    country: 'fi',
   },
   {
     type: 'heraldryCountry',
@@ -39,6 +42,7 @@ export const PATHS_DATA: {
       <meta property="og:image" content="https://deykun.github.io/maps/social/herby-polskich-gmin-i-miast.png" />
     `,
     lang: 'pl',
+    country: 'pl',
   },
   {
     pathNameLink: 'Heraldic Map of Europe - wip',
