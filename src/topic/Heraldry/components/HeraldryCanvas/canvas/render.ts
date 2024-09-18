@@ -25,8 +25,8 @@ let mapOffset: MapOffset = {
 
 type FrameStampData = {
   coatSize: number;
-  coatOfArmsIds: CoatOfArms[];
-  mapOffset: MapOffset;
+  coatOfArmsIds: string[];
+  mapOffset: string;
   canvasWidth: number;
 };
 
@@ -47,7 +47,7 @@ const getFirstFrameChangeDetected = (a: FrameStampData, b: FrameStampData) => {
     return 'coatOfArmsIds';
   }
 
-  if (JSON.stringify(a.mapOffset) !== JSON.stringify(b.mapOffset)) {
+  if (a.mapOffset !== b.mapOffset) {
     return 'mapOffset';
   }
 
@@ -57,8 +57,8 @@ const getFirstFrameChangeDetected = (a: FrameStampData, b: FrameStampData) => {
 const getFrameStampData = (): FrameStampData => {
   return {
     coatSize,
-    coatOfArmsIds: coatOfArmsList.map((id) => id),
-    mapOffset,
+    coatOfArmsIds: coatOfArmsList.map(({ id }) => id),
+    mapOffset: JSON.stringify(mapOffset),
     canvasWidth: canvas?.width || 0,
   }
 };
@@ -69,10 +69,14 @@ const renderFrame = () => {
   const frameStampData = getFrameStampData();
   const frameChange = getFirstFrameChangeDetected(lastFrameStampData, frameStampData);
 
+  if (canvas.width === 0) {
+    return;
+  }
+
   if (!frameChange) {
     return;
   } else {
-    // console.log(frameChange);
+    console.log(`  - New frame (${frameChange} did change)`);
   }
 
   lastFrameStampData = frameStampData;
@@ -94,6 +98,22 @@ const initEventListeners = () => {
 
 let wasInited = false;
 
+const setCanvasAttributes = (canvas: HTMLCanvasElement) => {
+  // Image quality: https://forum.babylonjs.com/t/lossing-quality-of-image-when-scaling-drawimage-dynamic-texture/11826/2
+  const dpi = window.devicePixelRatio;
+  const styles = window.getComputedStyle(canvas);
+  const style = {
+    height() {
+      return +styles.height.slice(0, -2);
+    },
+    width() {
+      return +styles.width.slice(0, -2);
+    }
+  };
+  canvas.setAttribute('width', (style.width() * dpi).toString());
+  canvas.setAttribute('height', (style.height() * dpi).toString());
+}
+
 export const onResize = (mapOffset: MapOffset) => {
   // Size is optional, but we do it once here for all CoA
   const size = canvas.getClientRects()[0];
@@ -103,19 +123,7 @@ export const onResize = (mapOffset: MapOffset) => {
   });
 
   if (canvas) {
-    // Image quality: https://forum.babylonjs.com/t/lossing-quality-of-image-when-scaling-drawimage-dynamic-texture/11826/2
-    const dpi = window.devicePixelRatio;
-    const styles = window.getComputedStyle(canvas);
-    const style = {
-      height() {
-        return +styles.height.slice(0, -2);
-      },
-      width() {
-        return +styles.width.slice(0, -2);
-      }
-    };
-    canvas.setAttribute('width', (style.width() * dpi).toString());
-    canvas.setAttribute('height', (style.height() * dpi).toString());
+    setCanvasAttributes(canvas);
   }
   
   renderFrame();
@@ -135,6 +143,11 @@ export const render = ({ canvas: initCanvas, ctx: gameCtx, mapOffset: initMapOff
 
   wasInited = true;
   canvas = initCanvas;
+
+  if (canvas) {
+    setCanvasAttributes(canvas);
+  }
+
   mapOffset = initMapOffset;
   coatSize = initCoatSize;
   ctx = gameCtx;
@@ -158,7 +171,7 @@ export const setCoatOfArms = (units: AdministrativeUnit[]) => {
       ctx,
       lonX,
       latY,
-      title: unit.title,
+      id: unit.id,
       imageUrl: image?.path || '', // aserted in filter
       imageSprint: getSpriteDataFromUnit(unit),
       coatSize,
@@ -171,11 +184,11 @@ export const setCoatOfArms = (units: AdministrativeUnit[]) => {
 };
 
 export const getCoatOfArmsForXandY = ({ x, y }: { x: number, y: number }) => {
-  const selectedTitles = coatOfArmsList.filter((coatOfArms)=> {
+  const selectedIds = coatOfArmsList.filter((coatOfArms)=> {
     return coatOfArms.isRenderedAt({ x, y });
-  }).map(({ title }) => title);
+  }).map(({ id }) => id);
 
-  return selectedTitles;
+  return selectedIds;
 }
 
 export const setCoatSize = (newCoatSize: number) => {

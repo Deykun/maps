@@ -11,7 +11,7 @@ export class CoatOfArms {
   height: number;
   lonX: number;
   latY: number;
-  title: string;
+  id: string;
   imageUrl: string;
   imageSprint: {
     url: string,
@@ -25,7 +25,7 @@ export class CoatOfArms {
     ctx,
     lonX,
     latY,
-    title,
+    id,
     imageUrl,
     imageSprint,
     coatSize,
@@ -35,7 +35,7 @@ export class CoatOfArms {
     ctx: CanvasRenderingContext2D,
     lonX: number,
     latY: number,
-    title: string,
+    id: string,
     imageUrl: string,
     imageSprint: {
       url: string,
@@ -47,7 +47,7 @@ export class CoatOfArms {
     this.canvas = canvas;
     this.ctx = ctx;
 
-    this.title = title;
+    this.id = id;
     this.imageUrl = imageUrl;
     this.imageSprint = imageSprint;
 
@@ -111,11 +111,11 @@ export class CoatOfArms {
       this.height,
     );
 
-    if (this.title) {
+    if (this.id) {
       // this.ctx.textBaseline = "top";
       // this.ctx.fillStyle = 'black';
       // this.ctx.font = `16px Arial`;
-      // this.ctx.fillText(this.title, this.x + 20, this.y);
+      // this.ctx.fillText(this.id, this.x + 20, this.y);
     }
   }
 

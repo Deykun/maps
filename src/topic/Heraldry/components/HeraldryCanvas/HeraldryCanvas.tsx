@@ -30,7 +30,7 @@ type Props = {
   children: React.ReactNode,
   mapOffset: MapOffset,
   coatSize: number,
-  setListPhrase: (title: string) => void,
+  setListPhrase: (phrase: string) => void,
 }
 
 const HeraldryCanvas = ({ className, units, children, mapOffset, coatSize, setListPhrase }: Props) => {
@@ -94,12 +94,12 @@ const HeraldryCanvas = ({ className, units, children, mapOffset, coatSize, setLi
       canvasY = (canvasY / boxSize.height) * (canvasRef?.current?.height || 1);
     }
 
-    const selectedTitles = getCoatOfArmsForXandY({
+    const selectedIds = getCoatOfArmsForXandY({
       x: canvasX,
       y: canvasY,
     });
 
-    const selectedUnits = units.filter(({ title }) => selectedTitles.includes(title));
+    const selectedUnits = units.filter(({ id }) => selectedIds.includes(id));
 
     setHovered(selectedUnits);
   }, [position]);
@@ -107,7 +107,9 @@ const HeraldryCanvas = ({ className, units, children, mapOffset, coatSize, setLi
   const handleMapClick = useCallback((event: React.MouseEvent) => {
     if (hovered.length > 0) {
       if (hovered.length <= maxSelectedWithClick) {
-        setListPhrase(hovered.map(({ id }) => `id:${id}`).join(', '));
+        const phrase = hovered.map(({ id }) => `id:${id}`).join(', ');
+
+        setListPhrase(phrase);
       } else {
         setListPhrase('');
       }
