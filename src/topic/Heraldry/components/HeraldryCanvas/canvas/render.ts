@@ -28,6 +28,7 @@ type FrameStampData = {
   coatOfArmsIds: string[];
   mapOffset: string;
   canvasWidth: number;
+  shouldSkipChangeCheck: boolean,
 };
 
 const getFirstFrameChangeDetected = (a: FrameStampData, b: FrameStampData) => {
@@ -51,32 +52,39 @@ const getFirstFrameChangeDetected = (a: FrameStampData, b: FrameStampData) => {
     return 'mapOffset';
   }
 
+  if (a.shouldSkipChangeCheck !== b.shouldSkipChangeCheck) {
+    return 'shouldSkipChangeCheck';
+  }
+
   return '';
 }
 
-const getFrameStampData = (): FrameStampData => {
+const getFrameStampData = ({ shouldSkipChangeCheck }: { shouldSkipChangeCheck: boolean}): FrameStampData => {
   return {
     coatSize,
     coatOfArmsIds: coatOfArmsList.map(({ id }) => id),
     mapOffset: JSON.stringify(mapOffset),
     canvasWidth: canvas?.width || 0,
+    shouldSkipChangeCheck,
   }
 };
 
-let lastFrameStampData = getFrameStampData();
+let lastFrameStampData = getFrameStampData({ shouldSkipChangeCheck: false });
 
-const renderFrame = () => {
-  const frameStampData = getFrameStampData();
-  const frameChange = getFirstFrameChangeDetected(lastFrameStampData, frameStampData);
+const renderFrame = ({ shouldSkipChangeCheck = false }: { shouldSkipChangeCheck?: boolean } = {}) => {
+  const frameStampData = getFrameStampData({ shouldSkipChangeCheck });
 
-  if (canvas.width === 0) {
-    return;
-  }
+  if (!shouldSkipChangeCheck) {
+    const frameChange = getFirstFrameChangeDetected(lastFrameStampData, frameStampData);
 
-  if (!frameChange) {
-    return;
+    if (!frameChange) {
+      console.log('  - New frame skipped');
+      return;
+    } else {
+      console.log(`  - New frame (${frameChange} did change)`);
+    }
   } else {
-    console.log(`  - New frame (${frameChange} did change)`);
+    console.log('  - New frame (change skipped)');
   }
 
   lastFrameStampData = frameStampData;
@@ -129,20 +137,28 @@ export const onResize = (mapOffset: MapOffset) => {
   renderFrame();
 }
 
-export const render = ({ canvas: initCanvas, ctx: gameCtx, mapOffset: initMapOffset, coatSize: initCoatSize }: {
+export const render = ({ canvas: initCanvas, ctx: initCtx, mapOffset: initMapOffset, coatSize: initCoatSize }: {
   canvas: HTMLCanvasElement,
   ctx: CanvasRenderingContext2D,
   mapOffset: MapOffset,
   coatSize: number,
 }) => {
+  canvas = initCanvas;
+  if (canvas) {
+    setCanvasAttributes(canvas);
+  }
+  ctx = initCtx;
+  ctx.imageSmoothingQuality = "high";
+
   if (wasInited) {
+    console.log('✨ Canvas reinitialized ✨');
+    renderFrame({ shouldSkipChangeCheck: true });
+
     return;
   }
 
-  console.log('✨ Canvas initialized ✨');
-
   wasInited = true;
-  canvas = initCanvas;
+  console.log('✨ Canvas initialized ✨');
 
   if (canvas) {
     setCanvasAttributes(canvas);
@@ -150,8 +166,6 @@ export const render = ({ canvas: initCanvas, ctx: gameCtx, mapOffset: initMapOff
 
   mapOffset = initMapOffset;
   coatSize = initCoatSize;
-  ctx = gameCtx;
-  ctx.imageSmoothingQuality = "high";
 
   renderFrame();
   initEventListeners();
