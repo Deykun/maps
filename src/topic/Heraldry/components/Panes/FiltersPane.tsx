@@ -6,6 +6,11 @@ import useOutsideClick from '@/hooks/useOutsideClick';
 
 import { WITH_ANIMAL, WITHOUT_ANIMAL } from '@/topic/Heraldry/constants';
 
+import {
+  useFiltersDevelopmentStore,
+  toggleFilterDevlopmentMode,
+} from '@/topic/Heraldry/stores/filtersDevelopmentStore';
+
 import IconMapMagnifyingGlass from '@/components/Icons/IconMapMagnifyingGlass';
 import IconBuilding from '@/components/Icons/IconBuilding';
 import IconCheck from '@/components/Icons/IconCheck';
@@ -60,8 +65,6 @@ type Props = {
   setFilterOperator: (operator: 'or' | 'and') => void,
   shouldReverseFilters: boolean,
   setShouldReverseFilters: (value: boolean) => void,
-  isDevModeActive: boolean,
-  setIsDevModeActive: (value: boolean) => void,
 };
 
 const FiltersPane = ({
@@ -81,9 +84,8 @@ const FiltersPane = ({
   setFilterOperator,
   shouldReverseFilters,
   setShouldReverseFilters,
-  isDevModeActive,
-  setIsDevModeActive,
 }: Props) => {
+  const isFiltersDevelopmentModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
   const [activeMenu, setActiveMenu] = useState('');
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
@@ -129,40 +131,67 @@ const FiltersPane = ({
   return (
     <div className="relative pointer-events-auto" id="filters-pane">
       <Pane className="ui-pane--magic">
-        <ButtonCircle onClick={() => setIsOpen(!isOpen)} isActive={isOpen} title={t('heraldry.titleFilters')}>
+        <ButtonCircle
+          onClick={() => setIsOpen(!isOpen)}
+          isActive={isOpen}
+          label={t('heraldry.titleFilters')}
+        >
           <IconMapMagnifyingGlass />
           {activeTotal > 0 && <span className="ui-button-circle-marker">{activeTotal}</span>}
         </ButtonCircle>
         {isOpen && <>
           <span className="border-t" />
-          <ButtonCircle onClick={toggleMenu('type')} isActive={activeMenu === 'type'} title={t('heraldry.unit.filterTitle')}>
+          <ButtonCircle
+            onClick={toggleMenu('type')}
+            isActive={activeMenu === 'type'}
+            label={t('heraldry.unit.filterTitle')}
+            >
             <IconBuilding />
             {typeFilters.length > 0 && <span className="ui-button-circle-marker">{typeFilters.length}</span>}
           </ButtonCircle>
-          <ButtonCircle onClick={toggleMenu('color')} isActive={activeMenu === 'color'} title={t('heraldry.color.filterTitle')}>
+          <ButtonCircle
+            onClick={toggleMenu('color')}
+            isActive={activeMenu === 'color'}
+            label={t('heraldry.color.filterTitle')}
+            >
             <IconColor />
             {colorFilters.length > 0 && <span className="ui-button-circle-marker">{colorFilters.length}</span>}
           </ButtonCircle>
-          <ButtonCircle onClick={toggleMenu('animal')} isActive={activeMenu === 'animal'} title={t('heraldry.animal.filterTitle')}>
+          <ButtonCircle
+            onClick={toggleMenu('animal')}
+            isActive={activeMenu === 'animal'}
+            label={t('heraldry.animal.filterTitle')}
+            >
             <IconAnimal />
             {animalFilters.length > 0 && <span className="ui-button-circle-marker">{animalFilters.length}</span>}
           </ButtonCircle>
-          <ButtonCircle onClick={toggleMenu('item')} isActive={activeMenu === 'item'} title={t('heraldry.item.filterTitle')}>
+          <ButtonCircle
+            onClick={toggleMenu('item')}
+            isActive={activeMenu === 'item'}
+            label={t('heraldry.item.filterTitle')}
+            >
             <IconCrown />
             {itemFilters.length > 0 && <span className="ui-button-circle-marker">{itemFilters.length}</span>}
           </ButtonCircle>
-          <ButtonCircle onClick={toggleMenu('settings')} isActive={activeMenu === 'settings'} title={t('heraldry.clearFilters')}>
+          <ButtonCircle
+            onClick={toggleMenu('settings')}
+            isActive={activeMenu === 'settings'}
+            label={t('heraldry.titleSettings')}
+          >
             <IconControls />
           </ButtonCircle>
         </>}
         {activeTotal > 0 && <>
           <span className="border-t" />
-          <ButtonCircle onClick={resetFilters}>
+          <ButtonCircle
+            onClick={resetFilters}
+            label={t('heraldry.clearFilters')}
+          >
             <IconEraser />
           </ButtonCircle>
         </>}
       </Pane>
-      {activeMenu === 'type' && <Pane className="ui-pane-magic-border fixed right-12 mt-3 w-[400px] top-0 mr-6">
+      {activeMenu === 'type' && <Pane className="ui-slide-from-top fixed top-0 right-full z-50 w-[400px] mr-3">
         <h3 className="flex gap-3 items-center">
           <IconBuilding className="size-5" />
           <span>
@@ -190,7 +219,7 @@ const FiltersPane = ({
           )}
         </div>}
       </Pane>}
-      {activeMenu === 'color' && <SubPane order={2} className="ui-pane-magic-border absolute right-12 mt-2 mr-3 flex-row">
+      {activeMenu === 'color' && <SubPane order={2} className="ui-slide-from-top ui-pane-magic-border absolute right-full z-50 mt-2 mr-3 flex-row">
         {Object.keys(colorsMarkersByNames).map((name) => <ButtonCircle
           key={name}
           className={clsx({
@@ -209,7 +238,7 @@ const FiltersPane = ({
           />
         </ButtonCircle>)}
       </SubPane>}
-      {activeMenu === 'animal' && <Pane className="ui-pane-magic-border fixed right-12 mt-3 w-[400px] top-0 mr-6">
+      {activeMenu === 'animal' && <Pane className="ui-slide-from-top ui-pane-magic-border fixed top-0 right-full z-50 w-[400px] mr-3">
         <h3 className="flex gap-3 items-center">
           <IconAnimal className="size-5" />
           <span>
@@ -259,7 +288,7 @@ const FiltersPane = ({
           )}
         </div>}
       </Pane>}
-      {activeMenu === 'item' && <Pane className="ui-pane-magic-border fixed right-12 mt-3 w-[400px] top-0 mr-6">
+      {activeMenu === 'item' && <Pane className="ui-slide-from-top ui-pane-magic-border fixed top-0 right-full z-50 w-[400px] mr-3">
         <h3 className="flex gap-3 items-center">
           <IconCrown className="size-5" />
           <span>
@@ -291,7 +320,7 @@ const FiltersPane = ({
           )}
         </div>}
       </Pane>}
-      {activeMenu === 'settings' && <SubPane order={5} className="ui-pane-magic-border absolute right-12 mt-2 mr-3 flex-row">
+      {activeMenu === 'settings' && <SubPane order={5} className="ui-slide-from-top ui-pane-magic-border absolute right-12 mt-2 mr-3 flex-row">
         <ButtonCircle
           wrapperClassName="ml-auto"
           onClick={() => setFilterOperator(filterOperator === 'and' ? 'or' : 'and')}
@@ -307,7 +336,7 @@ const FiltersPane = ({
           {shouldReverseFilters ? <IconEyeCrossed /> : <IconEye />}
         </ButtonCircle>
         <span className="border-l"></span>
-        <ButtonCircle isActive={isDevModeActive} onClick={() => setIsDevModeActive(!isDevModeActive)}>
+        <ButtonCircle isActive={isFiltersDevelopmentModeActive} onClick={toggleFilterDevlopmentMode}>
           <IconFlask />
         </ButtonCircle>
       </SubPane>}

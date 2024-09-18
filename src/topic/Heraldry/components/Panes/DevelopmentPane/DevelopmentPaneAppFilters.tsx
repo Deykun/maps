@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback,  Dispatch, SetStateAction } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { useTranslation } from 'react-i18next';
 import clxs from 'clsx';
@@ -21,7 +21,7 @@ const fetchData = async ({ country }: FetchParmas) => {
   const response = await fetch(`/maps/data/heraldry/${country}/filters.json`).then((response) => response.json());
 
   const animals = (response.animals || []) as MarkerParams[];
-  const items = (response.animals || []) as MarkerParams[];
+  const items = (response.items || []) as MarkerParams[];
 
   return {
     animals,
@@ -30,12 +30,12 @@ const fetchData = async ({ country }: FetchParmas) => {
 };
 
 type Props = FetchParmas & {
-  setCustomFilter: (filter?: MarkerParamsWithResult) => void
+  setDraftFilter: Dispatch<SetStateAction<MarkerParamsWithResult>>,
 };
 
 const DevelopmentPaneAppFilters = ({
   country,
-  setCustomFilter,
+  setDraftFilter,
 }: Props) => {
   const [pickedFilter, setPickedFilter] = useState<MarkerParams | undefined>(undefined);
   const { t } = useTranslation();
@@ -70,7 +70,7 @@ const DevelopmentPaneAppFilters = ({
   }
 
   return (
-    <Pane className="fixed left-12 mt-3 w-[400px] max-h-[calc(100%_-_1.5rem)] overflow-auto top-0 ml-6">
+    <Pane className="fixed top-0 left-10 sm:left-12 z-50 ml-3 w-[400px] max-h-[calc(100%_-_1.5rem)] overflow-auto">
       <h3 className="flex gap-3 items-center">
         <IconSelected className="size-5" />
         <span>
@@ -121,7 +121,7 @@ const DevelopmentPaneAppFilters = ({
         
         <div className="flex gap-2">
           <Button
-            onClick={() => pickedFilter ? setCustomFilter(pickedFilter) : {}}
+            onClick={() => pickedFilter ? setDraftFilter(pickedFilter) : {}}
             wrapperClassName="ml-auto"
             isDisabled={!pickedFilter}
           >
@@ -129,7 +129,7 @@ const DevelopmentPaneAppFilters = ({
             <IconSelectNew />
           </Button>
       </div>
-        {pickedFilter && <DevelopmentPaneSnippet {...pickedFilter} />}
+      {pickedFilter && <DevelopmentPaneSnippet {...pickedFilter} />}
     </Pane>
   );
 }

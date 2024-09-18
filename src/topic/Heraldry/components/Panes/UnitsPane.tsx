@@ -6,11 +6,12 @@ import { removeDiacratics } from '@/utils/text';
 
 import useOutsideClick from '@/hooks/useOutsideClick';
 
+import IconEraser from '@/components/Icons/IconEraser';
 import IconTextMagnifyingGlass from '@/components/Icons/IconTextMagnifyingGlass';
-import IconShieldCheckers from '@/components/Icons/IconShieldCheckers';
 import IconGithub from '@/components/Icons/IconGithub';
 
 import { AdministrativeUnit } from '@/topic/Heraldry/types';
+import IconCoatOfArms from '@/topic/Heraldry/components/IconCoatOfArms';
 
 import Pane from '@/components/UI/Pane';
 import ButtonCircle from '@/components/UI/ButtonCircle';
@@ -29,7 +30,6 @@ type Props = {
 
 const UnitsPane = ({ 
   units = [],
-  children,
   phrase = '',
   shouldShowCount = false,
 }: Props) => {
@@ -43,7 +43,7 @@ const UnitsPane = ({
 
   useOutsideClick('#units-pane', () => {
     setIsOpen(false);
-  });
+  }, '.heraldry-cursor-last-point-wrapper');
 
   useEffect(() => {
     if (units.length === 0) {
@@ -88,31 +88,46 @@ const UnitsPane = ({
     <div className="pointer-events-auto" id="units-pane">
       <Pane>
         <ButtonCircle
+          id="units-pane-toggle"
           isDisabled={units.length === 0}
           isActive={isOpen}
           onClick={() => setIsOpen(!isOpen)}
+          label={t('heraldry.list.title')}
         >
-            {children ? children : <IconShieldCheckers />}
-            {shouldShowCount
-              && phrase === filterPhrase
-              && filteredUnits.length > 0
-              && filteredUnits.length < 100
-              && <span className="ui-button-circle-marker">{filteredUnits.length}</span>}
+          <IconCoatOfArms units={filteredUnits} />
+          {shouldShowCount
+            && phrase === filterPhrase
+            && filteredUnits.length > 0
+            && filteredUnits.length < 100
+            && <span className="ui-button-circle-marker">{filteredUnits.length}</span>}
         </ButtonCircle>
       </Pane>
-      {isOpen && <Pane className="absolute top-0 right-full z-50 w-[400px] mr-2">
-        <div className="relative">
+      {isOpen && <Pane className="ui-slide-from-top absolute top-0 right-full z-50 w-[400px] mr-3">
+        <div className="relative flex gap-1 justify-center items-center">
           <IconTextMagnifyingGlass className="size-4 absolute top-1/2 -translate-y-1/2 left-3 md:left-8 opacity-20" />
           <input
             value={filterPhrase}
             onChange={(e) => setFilterPhrase(e.target.value || '')}
-            className="w-full p-1 pl-[50px] md:pl-[85px] text-[16px] font-[600] rounded-t-[4px] bg-white border"
+            className={clsx('w-full p-1 pl-[50px] md:pl-[85px] pr-[40px] h-[34px] leading-[34px] font-[600] rounded-t-[4px] bg-white border', {
+              'text-[16px]': filterPhrase.length < 10,
+              'text-[12px]': filterPhrase.length >= 10,
+            })}
             placeholder={t('heraldry.list.limitListToPlaceholder')}
           />
+          <ButtonCircle
+            wrapperClassName="absolute top-1/2 right-1 -translate-y-1/2"
+            id="units-pane-toggle"
+            isDisabled={filterPhrase.length === 0}
+            onClick={() => setFilterPhrase('')}
+            size="small"
+          >
+            <IconEraser />
+          </ButtonCircle>
         </div>
         {previewUnit && <UnitsPaneItemDetails unit={previewUnit} setPreviewUnit={setPreviewUnit} />}
-        {!previewUnit && <div className="border-t pt-2 pb-4 max-h-[300px] snap-y overflow-auto">
-          <ul className="flex flex-col gap-3">
+        {!previewUnit && <div className="border-t pt-2 pb-4 max-h-[480px] snap-y overflow-auto">
+          {filteredUnits.length === 0 && <p className="text-center text-[14px] my-2">{t('heraldry.noResult')}</p>}
+          <ul className="flex flex-col gap-3 empty:hidden">
             {filteredUnits.slice(0, itemsToShow).map((unit) => (
               <UnitsPaneItem key={unit.id} className="snap-end" unit={unit} setPreviewUnit={setPreviewUnit} />
             ))}

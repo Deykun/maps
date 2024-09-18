@@ -119,8 +119,15 @@ const HeraldryET = () => {
       typeFiltersList={typeFiltersList}
       animalFiltersList={animalFiltersList}
       itemFiltersList={itemFiltersList}
-      mapWrapperClassName="aspect-[707_/_509]"
+      mapWrapperClassName="[&>div>svg]:aspect-[707_/_509]"
+      mapWrapperClassNameForZoom0="max-w-[70vh]"
       map={SvgMap}
+      mapOffset={{
+         minLatTop: 57.43,
+         maxLatTop: 59.97,
+         minLonLeft: 21.46,
+         maxLonLeft: 28.45,
+     }}
       initialFilters={initialFilters}
     />
   );

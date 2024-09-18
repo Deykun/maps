@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import useOutsideClick from '@/hooks/useOutsideClick';
 
@@ -35,6 +36,8 @@ const ZoomPane = ({
 }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const { t } = useTranslation();
+
   useOutsideClick('#zoom-pane', () => {
     setIsOpen(false);
   });
@@ -48,15 +51,15 @@ const ZoomPane = ({
         <ButtonCircle onClick={() => setZoomLevel(zoomLevel - 1)} isDisabled={zoomLevel === zoomMin}>
           <IconMinus />
         </ButtonCircle>
-        <ButtonCircle onClick={() => setIsOpen(!isOpen)} isActive={isOpen}>
+        <ButtonCircle onClick={() => setIsOpen(!isOpen)} isActive={isOpen} label={t('heraldry.titleSettings')}>
           <IconControls />
         </ButtonCircle>
       </Pane>
-      {isOpen && <SubPane order={2} className="absolute top-0 right-12 z-[100] mr-2 flex-row items-center">
+      {isOpen && <SubPane order={2} className="ui-slide-from-top absolute top-0 right-12 z-[100] mr-2 flex-row items-center">
         <ButtonCircle onClick={() => setCoatSize(coatSize - 1)} isDisabled={coatSize === coatMin}>
           <IconMinus />
         </ButtonCircle>
-        <span style={{ transform: `scale(${((coatSize + 5) / (coatMax + 5)).toFixed(1)})`}}>
+        <span style={{ transform: `scale(${((coatSize + 5) / (coatMax + 5)).toFixed(1)})`}} className="drop-shadow-[0_0_4px_rgba(255,255,255,0.95)]">
           <IconShieldCheckers className="size-5" />
         </span>
         <ButtonCircle onClick={() => setCoatSize(coatSize + 1)} isDisabled={coatSize === coatMax}>

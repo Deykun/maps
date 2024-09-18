@@ -1,0 +1,12 @@
+.icon-loader {
+  animation: spin infinite linear 1.5s;
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(-360deg);
+  }
+}

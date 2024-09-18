@@ -1,5 +1,6 @@
 import { MarkerParamsWithResult, AdministrativeUnit } from '../types';
 import { WITH_ANIMAL, WITHOUT_ANIMAL } from '../constants';
+import { collapsePhrases } from './markers/collapsePhrases';
 
 export type SubtitlePart = {
   operator: 'or' | 'and';
@@ -142,7 +143,9 @@ export const getFilteredUnits = (
 
     if ((customFilter?.phrases || []).length > 0 && Array.isArray(customFilter?.result)) {
       // Phrases always work as or
-      subtitleParts.push({ operator: 'or', labels: (customFilter?.phrases?.map((value) => `„${value}”`) || []) })
+      // subtitleParts.push({ operator: 'or', labels: (customFilter?.phrases?.map((value) => `„${value}”`) || []) })
+
+      subtitleParts.push({ operator: 'or', labels: collapsePhrases(customFilter?.phrases || [], -7).map((value) => `„${value}”`) || [] });
     }
   }
 

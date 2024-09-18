@@ -35,3 +35,7 @@ export const numberOfImagesPerSprite = 180;
 export const numberOfImagesPerSpriteRow = 36;
 export const spriteSize = 80;
 export const spriteOffset = 4;
+
+export const mapPadding = 40;
+
+export const maxSelectedWithClick = 40;

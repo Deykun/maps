@@ -3,9 +3,17 @@ import { useTranslation } from 'react-i18next';
 import { AdministrativeUnit } from '@/topic/Heraldry/types';
 import { colorsMarkersByNames } from '@/topic/Heraldry/constants';
 
+import {
+  showUnitOnMap,
+} from '@/topic/Heraldry/stores/cursorStore';
+
 import IconMarker from '@/components/Icons/IconMarker';
 import IconMinusMagnifyingGlass from '@/components/Icons/IconMinusMagnifyingGlass';
 import IconLink from '@/components/Icons/IconLink';
+
+import ButtonCircle from '@/components/UI/ButtonCircle';
+
+import DevelopmentActions from '@/topic/Heraldry/components/DevelopmentActions/DevelopmentActions';
 
 type Props = {
   className?: string,
@@ -14,7 +22,7 @@ type Props = {
 }
 
 const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
-  const { id, title, url, imagesList, imageSrcSet, place, markers, colors } = unit;  
+  const { title, url, imagesList, imageSrcSet, place, markers, colors } = unit;  
   
   const { t } = useTranslation();
 
@@ -22,10 +30,6 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
     ...(markers?.animals || []).map((v) => t(`heraldry.animal.${v}`)),
     ...(markers?.items || []).map((v) => t(`heraldry.item.${v}`)),
   ];
-
-  const focusCoat = () => {
-    document.getElementById(`coat-${id}`)?.focus();
-  }
 
   return (
     <li className={clsx('flex flex-col gap-2 items-center', { [className || '']: className })}>
@@ -37,19 +41,28 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
           alt=""
           loading="lazy"
         />      
-        <div className="absolute bottom-0 right-0 translate-y-[50%] md:translate-y-0 flex gap-1">
-          <button
-            className="bg-white p-1 rounded-full shadow-md"
-            onClick={focusCoat}
+        <div className="absolute bottom-0 right-0 translate-y-[50%]  flex gap-2">
+          <ButtonCircle
+            size="small"
+            onClick={() => showUnitOnMap(unit.id)}
+            label={t('heraldry.item.showOnMap')}
+            labelPosition="top"
           >
-            <IconMarker className="size-4" />
-          </button>
-          <button
-            className="bg-white p-1 rounded-full shadow-md"
-            onClick={() => setPreviewUnit(undefined)}
+            <IconMarker />
+          </ButtonCircle>
+          <ButtonCircle
+            size="small"
+            onClick={() => setPreviewUnit()}
+            label={t('heraldry.item.showLess')}
+            labelPosition="top"
           >
-            <IconMinusMagnifyingGlass className="size-4" />
-          </button>
+            <IconMinusMagnifyingGlass />
+          </ButtonCircle>
+          <DevelopmentActions
+            unit={unit}
+            buttonSize="small"
+            labelPositions="top"
+          />
         </div>
       </span>
       <div className="w-full px-2 text-center">
@@ -72,11 +85,13 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
 
             return (
               <span
-              className="inline-flex mr-1 size-3 rounded-[3px] bg-[#eee] shadow-sm group overflow-hidden"
-              title={title} 
-              style={{ backgroundColor: colorsMarkersByNames[colorName] }}
-            >
+                key={colorName}
+                className="inline-flex mr-1 size-3 rounded-[3px] bg-[#eee] shadow-sm group overflow-hidden"
+                title={title} 
+                style={{ backgroundColor: colorsMarkersByNames[colorName] }}
+             >
               {colors.map((item) => <span
+                key={item.color}
                 className="color size-full opacity-0 group-hover:opacity-100 duration-300"
                 style={{ backgroundColor: item.color }}
               />)}
@@ -90,15 +105,14 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
             {Object.entries(colors?.byNamesRejected || {}).map(([colorName, colors = []]) => {
               const bestMatch = colors.sort((a, b) => a.distanceToTreshold - b.distanceToTreshold)?.[0];
 
-              console.log(bestMatch);
-
               return (
                 <span
+                  key={colorName}
                   className="inline-flex mx-1 size-4 rounded-md bg-[#eee] group overflow-hidden"
                   title={`${colorName} ${bestMatch?.distanceToTreshold}`} 
                   style={{ backgroundColor: colorsMarkersByNames[colorName], border: `2px solid ${bestMatch.matcherColor}` }}
                 >
-                  {colors.map((item) => <span className="color size-full opacity-0 group-hover:opacity-100 duration-300" style={{ backgroundColor: item.color }} />)}
+                  {colors.map((item) => <span key={item.color} className="color size-full opacity-0 group-hover:opacity-100 duration-300" style={{ backgroundColor: item.color }} />)}
                 </span>
               );
             })}
@@ -106,7 +120,7 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
           <p className="my-2">
             {(colors?.hexPalette || []).map((hexColor) => {
               return (
-                <span className="inline-flex size-4" style={{ backgroundColor: hexColor }} />
+                <span key={hexColor} className="inline-flex size-4" style={{ backgroundColor: hexColor }} />
               );
             })}
           </p>

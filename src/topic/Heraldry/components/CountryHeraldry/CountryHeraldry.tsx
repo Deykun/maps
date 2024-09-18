@@ -5,12 +5,15 @@ import { useDraggable } from "react-use-draggable-scroll";
 
 import { isLanguageSupported } from '@/utils/lang';
 
+import {
+  useFiltersDevelopmentStore,
+} from '@/topic/Heraldry/stores/filtersDevelopmentStore';
+
 import { MapsSearchParams, getSearchParamFromFilters } from '@/topic/Heraldry/utils/getSearchParams'
-import { MarkerParamsWithResult, AdministrativeUnit } from '@/topic/Heraldry/types';
+import { MarkerParamsWithResult, AdministrativeUnit, MapOffset } from '@/topic/Heraldry/types';
 
 import { GetFilterResponse } from '@/topic/Heraldry/utils/getFilter';
 import { getFilteredUnits } from '@/topic/Heraldry/utils/getFilteredUnits';
-import { getPostionForPlace } from '@/topic/Heraldry/utils/getPostionForPlace';
 
 import DevelopmentPane from '@/topic/Heraldry/components/Panes/DevelopmentPane';
 import NavigationPane from '@/topic/Heraldry/components/Panes/NavigationPane';
@@ -18,8 +21,8 @@ import ZoomPane from '@/topic/Heraldry/components/Panes/ZoomPane';
 import UnitsPane from '@/topic/Heraldry/components/Panes/UnitsPane';
 import FiltersPane from '@/topic/Heraldry/components/Panes/FiltersPane';
 
-import HeraldryMapItemFromSprite from '@/topic/Heraldry/components/HeraldryMapItemFromSprite';
 import HeraldrySubtitle from '@/topic/Heraldry/components/HeraldrySubtitle';
+import HeraldryCanvas from '@/topic/Heraldry/components/HeraldryCanvas/HeraldryCanvas';
 
 import './CountryHeraldry.scss';
 
@@ -30,8 +33,10 @@ type Props = {
   animalFiltersList: GetFilterResponse,
   itemFiltersList: GetFilterResponse,
   mapWrapperClassName?: string,
+  mapWrapperClassNameForZoom0?: string,
   map: () => JSX.Element,
   initialFilters?: Partial<MapsSearchParams>
+  mapOffset: MapOffset,
 }
 
 const CountryHeraldry = ({
@@ -41,23 +46,26 @@ const CountryHeraldry = ({
   animalFiltersList,
   itemFiltersList,
   mapWrapperClassName,
+  mapWrapperClassNameForZoom0,
   map: MapBackground,
-  initialFilters = {}
+  initialFilters = {},
+  mapOffset,
 }: Props) => {
     const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
-    const [isDevModeActive, setIsDevModeActive] = useState(false);
     const [listPhrase, setListPhrase] = useState('');
     const [filterOperator, setFilterOperator] = useState<'and' | 'or'>(initialFilters.filterOperator || 'and');
     const [shouldReverseFilters, setShouldReverseFilters] = useState(initialFilters.shouldReverseFilters || false);
     const [zoomLevel, setZoomLevel] = useState(1);
     const [coatSize, setCoatSize] = useState(3);
-    const [customFilter, setCustomFilter] = useState<MarkerParamsWithResult | undefined>(undefined);
+    const customFilter = useFiltersDevelopmentStore(state => state.filter);
+    const [_customFilter, setCustomFilter] = useState<MarkerParamsWithResult | undefined>(undefined);
+
     const [typeFilters, setTypeFilters] = useState<string[]>(initialFilters.typeFilters || []);
     const [colorFilters, setColorFilters] = useState<string[]>(initialFilters.colorFilters || []);
     const [animalFilters, setAnimalFilters] = useState<string[]>(initialFilters.animalFilters || []);
     const [itemFilters, setItemFilters] = useState<string[]>(initialFilters.itemFilters || []);
 
-    const { events } = useDraggable(wrapperRef, { decayRate: 0.01 });
+    const { events } = useDraggable(wrapperRef, { decayRate: 0.015 });
 
     const { t, i18n } = useTranslation();
 
@@ -102,7 +110,7 @@ const CountryHeraldry = ({
               "map-section fixed top-0 left-0 w-full h-full",
               "p-5 pt-[100px]",
               "no-scrollbar overflow-auto", {
-                "flex flex-col justify-evenly": zoomLevel === 1,
+                // "flex flex-col justify-evenly": zoomLevel === 1,
                 "pb-[100px]": zoomLevel > 1,
               }
             )}
@@ -110,10 +118,10 @@ const CountryHeraldry = ({
           >
             <header className={clsx('', {
               'md:mb-10 min-h-[100px] max-w-[800px] flex-shrink-0 mx-auto': zoomLevel === 1,
-              'ui-pane fixed top-3 left-3 md:left-12 md:ml-6 md:max-w-[calc(100vw_-_145px)] z-30 px-4 empty:hidden': zoomLevel > 1,
+              'ui-slide-from-left ui-pane fixed top-3 left-3 md:left-12 md:ml-6 md:max-w-[calc(100vw_-_145px)] z-30 px-4 empty:hidden': zoomLevel > 1,
             })}>
               {zoomLevel === 1 && 
-                <h1 className={clsx('text-[28px] lg:text-[36px] text-center', { 
+                <h1 className={clsx('text-[28px] lg:text-[36px] text-center text-[#aa0d0d]', { 
                   'hidden': zoomLevel > 1,
                 })}>
                   {t(`heraldry.${lang}.mapTitle`)}
@@ -126,29 +134,24 @@ const CountryHeraldry = ({
             </header>
             <div>
               <div
-                className={clsx(mapWrapperClassName, "map-wrapper z-1 relative mx-auto flex justify-center items-center", {
-                  'max-h-[60lvh]': zoomLevel === 1,
+                className={clsx(mapWrapperClassName, "map-wrapper z-1 relative mx-auto", {
+                  [`${mapWrapperClassNameForZoom0 || ''} mx-auto`]: zoomLevel === 1,
                 })}
                 style={zoomLevel === 1 ? { } : { width: `max(${(zoomLevel - 1) * 500}px, ${(zoomLevel - 1) * 80}vw` }}
               >
-                <MapBackground />
-                <div>
-                    {unitsForMap.map(
-                      (unit) => (
-                        <HeraldryMapItemFromSprite
-                          key={`${unit.title}-${unit?.place?.coordinates?.lon}`}
-                          unit={unit}
-                          setListPhrase={setListPhrase}
-                          style={getPostionForPlace(unit, lang)}
-                          size={coatSize}
-                        />
-                    ))}
-                </div>
+                <HeraldryCanvas
+                  units={unitsForMap}
+                  setListPhrase={setListPhrase}
+                  mapOffset={mapOffset}
+                  coatSize={Math.round(((coatSize + 1) / 11) * 80)}
+                >
+                  <MapBackground />
+                </HeraldryCanvas>
               </div>
             </div>
-            <div className={clsx('', {
+            <div className={clsx('country-heraldry-footer', {
               'text-center mt-10 text-[14px] text-[#4b4b4b] tracking-wide': zoomLevel === 1,
-              'fixed bottom-3 left-1/2 -translate-x-1/2 w-[400px] max-w-[80vw] z-30 ui-pane sans text-[10px] py-1 text-center': zoomLevel > 1,
+              'country-heraldry-footer--zoomed fixed bottom-3 right-3 max-w-[calc(100vw_-24px)] z-30 ui-pane sans text-[12px] py-2 px-3 text-center': zoomLevel > 1,
             })}>
               <p>
                 {zoomLevel === 1 && <>{t('heraldry.mapFooterSource')} <strong className="text-black">wikipedia.org</strong>.<br /></>}
@@ -166,21 +169,19 @@ const CountryHeraldry = ({
               </p>
             </div>
           </section>
-          <div className={clsx('fixed top-3 left-3 z-20 flex flex-col gap-3 pointer-events-none', {
-            'hidden md:block': zoomLevel > 1 && subtitleParts.length !== 0,
+          <div className={clsx('ui-slide-from-left fixed top-3 left-3 z-20 flex flex-col gap-3 pointer-events-none', {
+            'hidden md:flex': zoomLevel > 1 && subtitleParts.length !== 0,
           })}>
             <NavigationPane />
-            {isDevModeActive &&
-              <DevelopmentPane
-                country={lang}
-                unitTypes={typeFiltersList.map(({ value }) => value)}
-                customFilter={customFilter}
-                setCustomFilter={setCustomFilter}
-                unitNameForAction={listPhrase}
-              />
-            }
+            <DevelopmentPane
+              country={lang}
+              unitTypes={typeFiltersList.map(({ value }) => value)}
+              customFilter={customFilter}
+              setCustomFilter={setCustomFilter}
+              unitNameForAction={listPhrase}
+            />
           </div>
-          <div className="fixed top-3 right-3 z-20 flex flex-col gap-3 pointer-events-none">
+          <div className="ui-slide-from-right fixed top-3 right-3 z-20 flex flex-col gap-3 pointer-events-none">
             <ZoomPane
               zoomLevel={zoomLevel}
               setZoomLevel={setZoomLevel}
@@ -189,7 +190,7 @@ const CountryHeraldry = ({
               coatSize={coatSize}
               setCoatSize={setCoatSize}
               coatMin={1}
-              coatMax={8}
+              coatMax={9}
             />
             <UnitsPane
               units={units}
@@ -213,8 +214,6 @@ const CountryHeraldry = ({
               setFilterOperator={setFilterOperator}
               shouldReverseFilters={shouldReverseFilters}
               setShouldReverseFilters={setShouldReverseFilters}
-              isDevModeActive={isDevModeActive}
-              setIsDevModeActive={setIsDevModeActive}
             />
           </div>
         </>

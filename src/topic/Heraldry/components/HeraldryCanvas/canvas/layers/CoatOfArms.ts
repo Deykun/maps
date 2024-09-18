@@ -1,0 +1,169 @@
+import { spriteSize, spriteOffset } from '@/topic/Heraldry/constants'
+import { MapOffset } from '@/topic/Heraldry/types';
+import { getXYfromLatLon } from '@/topic/Heraldry/utils/getPosition';
+
+export class CoatOfArms {
+  canvas: HTMLCanvasElement;
+  ctx: CanvasRenderingContext2D;
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+  lonX: number;
+  latY: number;
+  title: string;
+  imageUrl: string;
+  imageSprint: {
+    url: string,
+    index: number
+  };
+  image: HTMLImageElement;
+  imageIsLoaded: boolean;
+
+  constructor ({
+    canvas,
+    ctx,
+    lonX,
+    latY,
+    title,
+    imageUrl,
+    imageSprint,
+    coatSize,
+    mapOffset,
+  }: {
+    canvas: HTMLCanvasElement,
+    ctx: CanvasRenderingContext2D,
+    lonX: number,
+    latY: number,
+    title: string,
+    imageUrl: string,
+    imageSprint: {
+      url: string,
+      index: number
+    },
+    coatSize: number,
+    mapOffset: MapOffset,
+  }) {
+    this.canvas = canvas;
+    this.ctx = ctx;
+
+    this.title = title;
+    this.imageUrl = imageUrl;
+    this.imageSprint = imageSprint;
+
+    const image = new Image();
+    image.src = this.imageSprint.url;
+    this.image = image;
+    this.imageIsLoaded = false;
+    this.image.onload = () => {
+      this.imageIsLoaded = true;
+      this.draw();
+    }
+
+    this.width = coatSize;
+    this.height = coatSize;
+
+    this.lonX = lonX;
+    this.latY = latY;
+
+    this.x = 0;
+    this.y = 0;
+
+    this.onResize(mapOffset);
+  }
+
+  onResize(mapOffset: MapOffset, canvas?: { width: number, height: number }) {
+    const position = getXYfromLatLon({
+      cordinates: {
+        lonX: this.lonX,
+        latY: this.latY,
+      },
+      mapOffset,
+      pixelRatio: window.devicePixelRatio,
+      canvas: canvas || this.canvas,
+    });
+
+    this.x = position.x;
+    this.y = position.y;
+  }
+
+  setSize(size: number) {
+    this.width = size;
+    this.height = size;
+  }
+
+  draw() {
+    if (!this.imageIsLoaded) {
+      return;
+    }
+
+    const frameY = spriteSize * this.imageSprint.index + spriteOffset * this.imageSprint.index;
+
+    this.ctx.drawImage(
+      this.image,
+      0, // frameX
+      frameY,
+      spriteSize, // frameWidth
+      spriteSize, // frameHeight
+      this.x - (this.width / 2),
+      this.y - (this.width / 2),
+      this.width,
+      this.height,
+    );
+
+    if (this.title) {
+      // this.ctx.textBaseline = "top";
+      // this.ctx.fillStyle = 'black';
+      // this.ctx.font = `16px Arial`;
+      // this.ctx.fillText(this.title, this.x + 20, this.y);
+    }
+  }
+
+  isRenderedAt(objectRaw?: { x: number, y: number }) {
+    if (!objectRaw) {
+      return false;
+    }
+
+    // const scaledMapPadding = mapPadding * window.devicePixelRatio;
+    const scaledMapPadding = 0;
+
+
+
+    // Is rendered simillary to translate(-50%, -50%);
+    const object = {
+      x: objectRaw.x + (this.width / 2) + scaledMapPadding,
+      y: objectRaw.y + (this.height / 2) + scaledMapPadding,
+    };
+
+
+
+    if (object.x > this.x + this.width || object.x < this.x || object.y > this.y + this.height || object.y < this.y) {
+      return false;
+    }
+
+    // TODO: add a check for elements to detect transparency
+    // const xInImage = object.x - this.x;
+    // const yInImage = object.y - this.y;
+
+    // const canvas = document.createElement("canvas");
+
+    // try {
+    //   document.body.appendChild(canvas);
+    //   canvas.width = this.width * this.zoomLevel;
+    //   canvas.height = this.height * this.zoomLevel;
+    //   const context = canvas.getContext("2d");
+
+    //   if (context) {
+    //     context.drawImage(this.image, 0, 0, this.width, this.height);
+    //     canvas.remove();
+    
+    //     return context.getImageData(xInImage, yInImage, 1, 1).data[3] > 0
+    //   }
+    // } catch {
+    // }
+    
+    // canvas.remove();
+
+    return true;
+  }
+}

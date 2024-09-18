@@ -1,11 +1,19 @@
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
-import { AdministrativeUnit } from '@/topic/Heraldry/types';
-import { colorsMarkersByNames } from '@/topic/Heraldry/constants';
+
+import {
+  showUnitOnMap,
+} from '@/topic/Heraldry/stores/cursorStore';
+
+import ButtonCircle from '@/components/UI/ButtonCircle';
 
 import IconMarker from '@/components/Icons/IconMarker';
 import IconPlusMagnifyingGlass from '@/components/Icons/IconPlusMagnifyingGlass';
 import IconLink from '@/components/Icons/IconLink';
+
+import { AdministrativeUnit } from '@/topic/Heraldry/types';
+
+import DevelopmentActions from '@/topic/Heraldry/components/DevelopmentActions/DevelopmentActions';
 
 type Props = {
   className?: string,
@@ -14,7 +22,7 @@ type Props = {
 }
 
 const UnitsPaneItem = ( { className, unit, setPreviewUnit }: Props) => {
-  const { id, title, url, imagesList, imageSrcSet, place, markers, colors } = unit;  
+  const { title, url, imagesList, imageSrcSet, place, markers, colors } = unit;  
   
   const { t } = useTranslation();
 
@@ -23,37 +31,18 @@ const UnitsPaneItem = ( { className, unit, setPreviewUnit }: Props) => {
     ...(markers?.items || []).map((v) => t(`heraldry.item.${v}`)),
   ];
 
-  const focusCoat = () => {
-    document.getElementById(`coat-${id}`)?.focus();
-  }
-
   return (
     <li className={clsx('flex gap-2 items-center', { [className || '']: className })}>
-      <span className="relative size-[70px] md:size-20 flex-shrink-0">
+      <span className="relative size-[80px] md:size-20 flex-shrink-0">
         <img
           src={imagesList?.[0].path}
           srcSet={imageSrcSet}
-          className="size-[70px] md:size-20 object-contain p-2 rounded-t-[4px] rounded-b-[30px] bg-white border"
+          className="size-[80px] md:size-20 object-contain p-2 rounded-[4px] bg-white border"
           alt=""
           loading="lazy"
-        />      
-        <div className="absolute bottom-0 right-0 translate-y-[50%] md:translate-y-[25%] flex gap-1">
-          <button
-            className="bg-white p-1 rounded-full shadow-md"
-            onClick={focusCoat}
-          >
-            <IconMarker className="size-4" />
-          </button>
-          <button
-            className="bg-white p-1 rounded-full shadow-md"
-            onClick={() => setPreviewUnit(unit)}
-          >
-            <IconPlusMagnifyingGlass className="size-4" />
-          </button>
-        </div>
-
+        />
       </span>
-      <span>
+      <span className="w-full">
         <a href={url} target="_blank" className="text-[14px] font-[500] tracking-wide line-clamp-2 text-[#312f2f] hover:text-black duration-300">
           <span>{title}</span>
           {' '}
@@ -67,27 +56,29 @@ const UnitsPaneItem = ( { className, unit, setPreviewUnit }: Props) => {
           {' '}
           {place?.name || t('heraldry.item.noLocation')}
         </p>
-        <div className="mt-1 empty:hidden flex gap-1 hidden">
-          {Object.entries(colors?.byNames || {}).map(([colorName, colors = []]) => {
-            const title = [
-              colors.sort((a, b) => a.distance - b.distance)?.[0]?.distance?.toFixed(1),
-              t(`heraldry.color.${colorName}`),
-            ].filter(Boolean).join(' - ');
-
-            return (
-              <span
-              className="inline-flex mr-1 size-3 rounded-[3px] bg-[#eee] shadow-sm group overflow-hidden"
-              title={title} 
-              style={{ backgroundColor: colorsMarkersByNames[colorName] }}
-            >
-              {colors.map((item) => <span
-                className="color size-full opacity-0 group-hover:opacity-100 duration-300"
-                style={{ backgroundColor: item.color }}
-              />)}
-            </span>
-            )
-          })}
-        </div>
+        <span className="mt-1 flex gap-2">
+          <ButtonCircle
+            size="small"
+            onClick={() => showUnitOnMap(unit.id)}
+            label={t('heraldry.item.showOnMap')}
+            labelPosition="top"
+          >
+            <IconMarker />
+          </ButtonCircle>
+          <ButtonCircle
+            size="small"
+            onClick={() => setPreviewUnit(unit)}
+            label={t('heraldry.item.showMore')}
+            labelPosition="top"
+          >
+            <IconPlusMagnifyingGlass />
+          </ButtonCircle>
+          <DevelopmentActions
+            unit={unit}
+            buttonSize="small"
+            labelPositions="top"
+          />
+        </span>
       </span>
     </li>
   );

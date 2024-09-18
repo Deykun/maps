@@ -90,3 +90,10 @@ export type MarkerParamsWithResult = MarkerParams & {
   isActive?: boolean,
   result?: string[],
 }
+
+export type MapOffset = {
+  minLatTop: number,
+  maxLatTop: number,
+  minLonLeft: number,
+  maxLonLeft: number,
+}
