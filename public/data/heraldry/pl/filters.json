@@ -619,6 +619,45 @@
       ]
     },
     {
+      "name": "bird",
+      "phrases": [
+       "cietrzewia",
+       "czajkę",
+       "czyżyka",
+       "kaczory",
+       "kormorana",
+       "kraskę",
+       "krogulcem",
+       "mewę",
+       "pióro",
+       "ptak",
+       "ptakiem",
+       "puszczyk",
+       "szpak",
+       "ślepowron",
+       "wrony"
+      ],
+      "exclude": [
+       "Herb gminy Rutki",
+       "Herb Ozorkowa",
+       "Herb Mieszkowic",
+       "Herb Tczewa"
+      ]
+    },
+    {
+      "name": "ram",
+      "phrases": [
+       "baran",
+       "baranek"
+      ],
+      "exclude": [
+       "Herb Korsz",
+       "Herb gminy Tuczępy",
+       "Herb Piekar Śląskich",
+       "Herb województwa łódzkiego"
+      ]
+    },
+    {
       "name": "wolf",
       "phrases": [
         "połuwilk",

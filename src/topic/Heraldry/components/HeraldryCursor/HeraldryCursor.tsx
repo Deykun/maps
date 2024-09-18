@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import clsx from 'clsx';
 import { AdministrativeUnit } from '@/topic/Heraldry/types';
 
@@ -22,7 +21,6 @@ const HeraldryCursor = ({ top, left, isHovering = true, hovered }: Props) => {
         left,
         opacity: isHovering ? '100%' : '0%',
       }}
-      onClick={() => {}}
     >
       <span className="heraldry-cursor">
         {hovered.length > 0 && <span className="heraldry-cursor-marker">{hovered.length}</span>}

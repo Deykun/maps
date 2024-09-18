@@ -56,7 +56,7 @@ const CountryHeraldry = ({
     const [filterOperator, setFilterOperator] = useState<'and' | 'or'>(initialFilters.filterOperator || 'and');
     const [shouldReverseFilters, setShouldReverseFilters] = useState(initialFilters.shouldReverseFilters || false);
     const [zoomLevel, setZoomLevel] = useState(1);
-    const [coatSize, setCoatSize] = useState(3);
+    const [coatSize, setCoatSize] = useState(4);
     const customFilter = useFiltersDevelopmentStore(state => state.filter);
     const [_customFilter, setCustomFilter] = useState<MarkerParamsWithResult | undefined>(undefined);
 
