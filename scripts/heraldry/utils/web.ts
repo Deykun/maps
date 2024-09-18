@@ -2,6 +2,7 @@
 import { joinImages } from 'join-images';
 import sharp from 'sharp';
 import chalk from 'chalk';
+import * as fsExtra from "fs-extra";
 import { AdministrativeUnit } from '@/topic/Heraldry/types';
 import { numberOfImagesPerSprite, spriteOffset } from '@/topic/Heraldry/constants'
 
@@ -108,6 +109,8 @@ export const getSprites = ({
       sprites[spriteIndex][i % numberOfImagesPerSprite] = imagesByIndex[i];
     }
   }
+
+  fsExtra.emptyDirSync(`./public/images/heraldry/${lang}/web/sprites/`);
 
   for (let i = 0; i <= totalSprites; i++) {
     const spriteData = sprites[i].map((path) => path || './public/images/heraldry/blank-80w.png');
