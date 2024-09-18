@@ -160,10 +160,6 @@ export const render = ({ canvas: initCanvas, ctx: initCtx, mapOffset: initMapOff
   wasInited = true;
   console.log('✨ Canvas initialized ✨');
 
-  if (canvas) {
-    setCanvasAttributes(canvas);
-  }
-
   mapOffset = initMapOffset;
   coatSize = initCoatSize;
 
