@@ -114,16 +114,8 @@ const HeraldryFI = () => {
     itemFiltersList
   } = data;
 
-  const x = {
-    minLatTop: 59.899,
-    maxLatTop: 71.099,
-    minLonLeft: 19.285,
-    maxLonLeft: 31.785,
- };
-
   return (
     <CountryHeraldry
-      key={JSON.stringify(x)}
       lang="fi"
       allUnits={allUnits}
       typeFiltersList={typeFiltersList}
@@ -132,7 +124,12 @@ const HeraldryFI = () => {
       mapWrapperClassName="[&>div>svg]:aspect-[373_/_759]"
       mapWrapperClassNameForZoom0="max-w-[30vh]"
       map={SvgMap}
-      mapOffset={x}
+      mapOffset={{
+        minLatTop: 59.899,
+        maxLatTop: 71.099,
+        minLonLeft: 19.285,
+        maxLonLeft: 31.785,
+      }}
       initialFilters={initialFilters}
     />
   );

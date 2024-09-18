@@ -49,7 +49,6 @@ const HeraldryCanvas = ({ className, units, children, mapOffset, coatSize, setLi
 
       if (ctx) {
         render({ canvas: canvasRef.current, ctx, coatSize, mapOffset });
-        onResize(mapOffset);
       }
     }
   }, [canvasRef.current]);
