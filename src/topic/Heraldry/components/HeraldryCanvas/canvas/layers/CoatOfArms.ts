@@ -98,6 +98,35 @@ export class CoatOfArms {
     }
 
     const frameY = spriteSize * this.imageSprint.index + spriteOffset * this.imageSprint.index;
+   
+    this.ctx.filter = 'grayscale(1) brightness(0.5) opacity(0.5)';
+
+    this.ctx.drawImage(
+      this.image,
+      0, // frameX
+      frameY,
+      spriteSize, // frameWidth
+      spriteSize, // frameHeight
+      this.x - (this.width / 2),
+      this.y - (this.width / 2) + 2,
+      this.width,
+      this.height,
+    );
+
+    this.ctx.drawImage(
+      this.image,
+      0, // frameX
+      frameY,
+      spriteSize, // frameWidth
+      spriteSize, // frameHeight
+      this.x - (this.width / 2),
+      this.y - (this.width / 2) + 1,
+      this.width,
+      this.height,
+    );
+
+
+    this.ctx.filter = 'grayscale(0) brightness(1)';
 
     this.ctx.drawImage(
       this.image,

@@ -8,3 +8,28 @@ const defaultState = {
 };
 
 const getSettingsFromLS = () => getFromLocalStorage('wikiparse-state', defaultState);
+
+window.WikiParser = {
+  version: 'SCRIPT_VERSION',
+  isDevMode: false,
+  cache: {
+    HTML: {},
+    CSS: {},
+    inited: false,
+    status: null,
+    location: location.href,
+  },
+  settings: getSettingsFromLS(),
+  // usersByUsernames: getUsersByUsernamesFromLS(),
+  // customNamesByUsernames: getCustomNamesByUsernamesFromLS(),
+  actions: {},
+};
+
+window.WikiParser.ui = {
+  status: {
+    type: '',
+    text: '',
+  },
+  openedContent: '',
+  eventsSubscribers: {},
+};

@@ -50,20 +50,15 @@ const initWikiParser = async () => {
 
   try {
     /* import @/db.js */
-    // /* import @/dom.js */
-    // /* import @/helpers.js */
-    // /* import @/icons.js */
-    // /* import @/interface.js */
-    // /* import @/render-app-settings.js */
-    // /* import @/render-app-status.js */
-    // /* import @/render-app-theme.js */
-    // /* import @/render-app-user.js */
-    // /* import @/render-app.js */
-    // /* import @/render-status.js */
-    // /* import @/render-users.js */
-    // /* import @/save-users.js */
+    /* import @/dom.js */
+    /* import @/helpers.js */
+    /* import @/icons.js */
+    /* import @/interface.js */
 
+    /* import @/parse-page-de.js */
     /* import @/parse-page.js */
+
+    /* import @/render-app.js */
 
     savePageCoatOfArmsIfPossible();
     // renderUsers();
@@ -73,8 +68,8 @@ const initWikiParser = async () => {
     /* import @/subscribers.js */
 
     const debouncedRefresh = debounce(() => {
-      saveNewUsersIfPossible();
-      renderUsers();
+      // saveNewUsersIfPossible();
+      // renderUsers();
 
       const didLocationChange = location.href !== window.WikiParser.cache.location;
       if (didLocationChange) {
