@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="631" width="601" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<clipPath id="e"><use xlink:href="#a"/></clipPath>
+</defs>
+<path d="m14.53 355.9c6.113 152.4 131.6 274.1 285.5 274.1s279.4-121.7 285.5-274.1l14.6-355.9h-600"/>
+<path id="a" d="m583 19-12.4 336c-4.94 145.2-124.2 261.4-270.6 261.4s-265.7-116.2-270.6-261.4l-12.41-336" fill="#0081C9"/>
+<g clip-path="url(#e)">
+<use xlink:href="#b" stroke="#000" stroke-width="130"/>
+<use xlink:href="#b" stroke="#fff" stroke-width="116"/>
+<g stroke="#000" stroke-width="3">
+<path id="b" d="m300.5 626v-612m-280.5 291h561" />
+<path d="m360.5 245-120 120m0-120 120 120"/>
+</g>
+</g>
+<g id="d">
+<path id="c" d="m126.9 54.17-20.07 34.78h-40.13l20.07 34.78-20.07 34.78h40.13l20.07 34.78 20.07-34.78h40.13l-20.07-34.78 20.07-34.78h-40.13z" stroke="#000" stroke-width="5.4" fill="#fcdd09"/>
+<use xlink:href="#c" x="21.2" y="341.2"/>
+</g>
+<use xlink:href="#d" transform="matrix(-1 0 0 1 600.1 0)"/>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 601 631" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs><clipPath id="c"><use xlink:href="#a"/></clipPath></defs>
+<path d="m14.53 355.9c6.113 152.4 131.6 274.1 285.5 274.1s279.4-121.7 285.5-274.1l14.53-355.9h-600z"/>
+<path id="a" d="m17 19 12.41 336c4.9 145.2 124.7 261.4 271.1 261.4s266.2-116.2 271.1-261.4l12.4-336z" fill="#fcdb00"/>
+<g clip-path="url(#c)">
+<use xlink:href="#b" stroke="#000" stroke-width="142"/>
+<g stroke="#da251d" stroke-width="126">
+<path id="b" d="m11 1 369 637"/>
+</g>
+<g stroke="#000" stroke-width="8">
+<path d="m600 168.5v-149.5h-297v149.5z" fill="#da251d"/>
+<path d="m600 318v-149.5h-297v149.5z" fill="#FFF"/>
+<path d="m600 467.5v-149.5h-297v149.5z" fill="#005198"/>
+<path d="m600 628v-160.5h-297v160.5z" fill="#fcdb00"/>
+<path stroke-width="12" d="m300.5 14v603"/>
+</g>
+</g>
+</svg>

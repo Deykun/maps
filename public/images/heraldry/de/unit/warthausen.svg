@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="631" width="601" xmlns:xlink="http://www.w3.org/1999/xlink">
+<clipPath id="e"><use xlink:href="#f"/></clipPath>
+<g stroke="#000">
+<g id="b" stroke-width="3" fill="#fcdb00">
+<rect rx="10" height="20.58" width="34" y="248.1" x="284"/>
+<use xlink:href="#d" transform="matrix(-1 0 0 1 601 0)"/>
+<path id="d" stroke-linejoin="round" d="m300.5 115.2c-25.5 36.8-17 52.7-10.5 78.8 1 4 2 16 1 21-30-52-95-7-47.3 36.8 0.6-33.1 35.1-43.1 48.2-6.6h15.9m-0.9 30.6h-15v198.2c0 41.2-7.7 65.8-76.5 105.4 39.6 27.6 74.6-31.4 77.6-36.4 1 5-0.2 18.4-1 21-10 31-2 37 8.5 54.2" stroke-linecap="round"/>
+</g>
+<path d="m14.97 356.4c6.11 152.4 131.6 274.1 285.5 274.1s279.4-121.7 285.5-274.1l14.5-355.9h-600z"/>
+<g clip-path="url(#e)"><path id="f" d="m583 19-12.4 336c-4.94 145.2-124.2 261.4-270.6 261.4s-265.7-116.2-270.6-261.4l-12.41-336z" stroke="#fcdb00" stroke-width="7" fill="none"/>
+<path d="m-0.2212 15h601.4v174.4h-601.4l-0.0214-174.4z" stroke-width="6.5" fill="#fcdb00"/>
+</g>
+<path id="c" d="m300.5 31.53c-85.7-0.57-155.8 61.45-161.5 139.3 32.2-21.2 79.5-49.9 104.8-49.9 46.6 0 5.3 31.8 56.7 50.3 0 0 28.1-139.5 0-139.7z"/><use xlink:href="#c" transform="matrix(-1 0 0 1 601 0)"/><circle stroke-width="23" cx="300.5" cy="142" r="22" fill="#fcdb00"/><use xlink:href="#b" transform="matrix(-.5924 -.8057 -.8057 .5924 805.8 394.6)"/><path stroke-width="32" d="m200.8 324.9 159.7 117.4"/><use xlink:href="#b" transform="matrix(.5924 -.8057 .8057 .5924 -204.8 396.4)"/>
+</g></svg>

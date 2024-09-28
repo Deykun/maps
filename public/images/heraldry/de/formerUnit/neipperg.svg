@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<svg height="460" width="410" xmlns="http://www.w3.org/2000/svg" stroke="#000" fill="#e21" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="m5 5v250a200 200 0 0 0 400 0v-250z" stroke-width="8"/>
+<g id="a" stroke-width="4"><circle fill="#fff" cy="120" cx="106" r="80"/><circle cy="120" cx="106" r="56"/></g>
+<use xlink:href="#a" x="198"/><use xlink:href="#a" x="99" y="200"/>
+</svg>
