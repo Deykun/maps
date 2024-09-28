@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 186.375 197">
+<defs>
+<clipPath id="b" clipPathUnits="userSpaceOnUse">
+<path id="a" d="m2 2 10 115c9 104 153 104 162 0l10-115z"/>
+</clipPath>
+</defs>
+<g transform="translate(.1875)" clip-path="url(#b)">
+<use xlink:href="#a" height="524" width="496" stroke="#fff" stroke-width="6"/>
+<path stroke-width="2" d="m184 2-198 198h198z" fill="#fcdb00"/>
+</g>
+<use xlink:href="#a" transform="translate(.1875)" stroke="#000" stroke-width="4" fill="none"/>
+<use xlink:href="#c" transform="translate(.77830 .91840)" stroke="#000" stroke-width="3"/>
+<path id="c" stroke-linejoin="bevel" d="m111.5 16.276-66.901 46.795 30.37-8.339v118.57l66.901-46.79-30.37 8.35z" fill="#f04126"/>
+<use xlink:href="#c" stroke="#000"/>
+</svg>

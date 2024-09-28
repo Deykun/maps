@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="460" width="410" viewBox="-205 -220 410 460" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="m-200-215v250a200 200 0 0 0 400 0v-250z" stroke="#000" stroke-width="8" fill="#fff"/>
+<use xlink:href="#b" transform="rotate(180)"/>
+<g id="b">
+<path id="a" d="m25 0 45-82c38-70-8-112-56-110-33 1-68 22-77 68 49-62 116-20 93 19 0 0-23 47-55 105"/><use xlink:href="#a" transform="rotate(90)"/>
+</g></svg>

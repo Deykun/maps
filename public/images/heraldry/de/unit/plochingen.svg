@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="596" height="615">
+<clipPath id="c">
+<path d="m7,7 15,365a275,235 0 0,0 552,0l15-365"/>
+</clipPath>
+<g clip-path="url(#c)" stroke-width="900">
+<path stroke="#005198" d="m298,0v615"/>
+<path stroke="#FCDB00" stroke-dasharray="117" d="m99,99L508,600"/>
+<path stroke="#000" stroke-dasharray="7,110" d="m99,99L508,600"/>
+</g>
+<path fill="none" stroke="#000" stroke-width="13"
+d="m7,7 15,365a275,235 0 0,0 552,0l15-365z"/>
+</svg>

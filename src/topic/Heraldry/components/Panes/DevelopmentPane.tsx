@@ -36,9 +36,6 @@ import { fetchTitlesAndDescriptions } from './DevelopmentPane/fetch';
 type Props = {
   country: string,
   unitTypes: string[],
-  customFilter?: MarkerParamsWithResult,
-  setCustomFilter: (filter?: MarkerParamsWithResult) => void
-  unitNameForAction: string,
 };
 
 const DevelopmentPane = ({

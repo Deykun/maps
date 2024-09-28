@@ -4,6 +4,14 @@ const getIsFormer = (text) => {
   return ['historische', 'ehemaliger', 'ehemalige', 'ehemals'].some((phrase) => lowercaseText.includes(phrase));
 }
 
+const getSafeText = (text) => {
+  if (!text) {
+    return '';
+  }
+
+  return text.replace(/\n|\r/g, ' ').replaceAll(`'`, `"`);
+}
+
 const getUnitTypesFromTitle = (text) => {
   const lowercaseText = ` ${text.toLowerCase()} `;
 
@@ -133,9 +141,9 @@ export const savePageCoatOfArmsIfPossibleDE = () => {
         const isThatSpecificFormer = Boolean(imageEl.querySelector('.gallerytext')?.innerText?.match(/\d{4}\)/));
 
         const thumbnailUrl = imageEl.querySelector('.thumb img').src;
-        const title = (imageEl.querySelector('.gallerytext')?.innerText || '').replace(/\n|\r/g, ' ');
-        const locationName = (imageEl.querySelector('.gallerytext a')?.innerText || '').replace(/\n|\r/g, ' ');
-        const locationUrl = (imageEl.querySelector('.gallerytext a')?.href || '').replace(/\n|\r/g, ' ');
+        const title = getSafeText(imageEl.querySelector('.gallerytext')?.innerText);
+        const locationName = getSafeText(imageEl.querySelector('.gallerytext a')?.innerText);
+        const locationUrl = imageEl.querySelector('.gallerytext a')?.href || '';
         const descriptionNoteId = imageEl.querySelector('.gallerytext a[href^="#"]')?.getAttribute('href')?.replace('#', '');
         const description = descriptionNoteId ? `${(document.getElementById(descriptionNoteId)?.innerText || '').replace(/\n|\r/g, '')} ${title}` : title;
 

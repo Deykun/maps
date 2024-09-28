@@ -37,6 +37,7 @@ type Props = {
   map: () => JSX.Element,
   initialFilters?: Partial<MapsSearchParams>
   mapOffset: MapOffset,
+  developmentModeFiltersTypes?: string[],
 }
 
 const CountryHeraldry = ({
@@ -50,6 +51,7 @@ const CountryHeraldry = ({
   map: MapBackground,
   initialFilters = {},
   mapOffset,
+  developmentModeFiltersTypes,
 }: Props) => {
     const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
     const [listPhrase, setListPhrase] = useState('');
@@ -175,10 +177,7 @@ const CountryHeraldry = ({
             <NavigationPane />
             <DevelopmentPane
               country={lang}
-              unitTypes={typeFiltersList.map(({ value }) => value)}
-              customFilter={customFilter}
-              setCustomFilter={setCustomFilter}
-              unitNameForAction={listPhrase}
+              unitTypes={developmentModeFiltersTypes || typeFiltersList.map(({ value }) => value)}
             />
           </div>
           <div className="ui-slide-from-right fixed top-3 right-3 z-20 flex flex-col gap-3 pointer-events-none">
@@ -186,7 +185,7 @@ const CountryHeraldry = ({
               zoomLevel={zoomLevel}
               setZoomLevel={setZoomLevel}
               zoomMin={1}
-              zoomMax={6}
+              zoomMax={8}
               coatSize={coatSize}
               setCoatSize={setCoatSize}
               coatMin={1}

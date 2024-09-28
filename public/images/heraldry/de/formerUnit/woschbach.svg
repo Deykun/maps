@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 601 631" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs><clipPath id="e"><use xlink:href="#a"/></clipPath></defs>
+<path id="c" d="m14.53 355.9c6.113 152.4 131.6 274.1 285.5 274.1s279.4-121.7 285.5-274.1l14.53-355.9h-600z"/>
+<g fill="#005198">
+<path id="a" d="m583 19-12.4 336c-4.9 145.2-124.2 261.4-270.6 261.4s-265.7-116.2-270.6-261.4l-12.41-336z" fill=""/>
+</g>
+<g clip-path="url(#e)">
+<use stroke-width="130" stroke="#000" xlink:href="#b"/>
+<use stroke-width="116" stroke="#fff" xlink:href="#b"/>
+<g stroke="#000" stroke-width="3">
+<path id="b" fill="none" d="m300.5 626v-612m-280.5 291h561"/>
+</g>
+</g>
+<path d="m359.7 105.8" fill="#15df00"/>
+<g transform="matrix(.5021 0 0 .5021 149.4 150.1)">
+<use xlink:href="#c"/>
+<use xlink:href="#a" fill="#da251d"/>
+</g>
+<g transform="translate(5.057 4.63)">
+<circle cx="295.4" cy="351" r="93.83"/>
+<circle cx="295.4" cy="351" r="86.83" fill="#fcdb00"/>
+<circle cx="295.4" cy="351" r="69.17"/>
+<circle cx="295.4" cy="351" r="62.83" fill="#fcdb00"/>
+</g>
+<path d="m362.8 232.4c-30.4-17.1-45.1-36.6-57.5-56.3l-4.8-7.5-4.8 7.5c-12.4 19.7-27.1 39.2-57.5 56.3l-16.6 9.4s35.2 5.2 64.8-9.3v133.9h28.2v-133.9c29.6 14.5 64.8 9.3 64.8 9.3l-16.6-9.4z"/>
+<path fill="#fcdb00" d="m300.5 178.2c-13.4 21.2-29.9 41.9-60.5 59.2 21 1.3 52.1-13.5 52.1-13.5v136.8h2.8 11.2 2.8v-136.8s31.1 14.8 52.1 13.5c-30.6-17.3-47.1-38-60.5-59.2z"/>
+</svg>
