@@ -107,7 +107,7 @@ export const setCoatOfArms = (units: AdministrativeUnit[], settings: SettingsPar
       latY,
       title: unit.title,
       imageUrl: image?.path || '', // aserted in filter
-      imageSprint: getSpriteDataFromUnit(unit),
+      imageSprite: getSpriteDataFromUnit(unit),
       settings,
       coatSize,
     });

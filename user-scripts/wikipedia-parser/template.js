@@ -58,19 +58,15 @@ const initWikiParser = async () => {
     /* import @/parse-page-de.js */
     /* import @/parse-page.js */
 
+    /* import @/render-app-copy.js */
     /* import @/render-app.js */
 
     savePageCoatOfArmsIfPossible();
-    // renderUsers();
-    // renderStatus();
     renderApp();
 
     /* import @/subscribers.js */
 
     const debouncedRefresh = debounce(() => {
-      // saveNewUsersIfPossible();
-      // renderUsers();
-
       const didLocationChange = location.href !== window.WikiParser.cache.location;
       if (didLocationChange) {
         window.WikiParser.cache.location = location.href;

@@ -1,8 +1,10 @@
 import { removeDiacratics } from '../../../src/utils/text';
-
 export const getImageFileName = (title: string) => {
-  let fileName = removeDiacratics(title.toLowerCase()).replace(/[^\w\s]/gi, '').replaceAll(' ', '-');
+  let fileName = removeDiacratics(title.toLowerCase()).replace(/[^\w\s]/gi, '').replaceAll(' ', '-').replace(/[^a-z-]+/g, '');
 
+  fileName = fileName.replace('gemeinde', '').replace('stadt', '').replace('landkreis', '');
+
+  fileName = fileName.slice(0, 30);
     // flattening collisions
   if (title === 'Herb gminy Miedźna') {
     /*

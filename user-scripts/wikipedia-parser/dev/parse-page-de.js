@@ -1,26 +1,7 @@
-const getImageFromThumbnail = (thumbnailUrl) => {
-  // https://stackoverflow.com/a/33691240/6743808
-  /*
-    https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg/200px-Tour_Eiffel_Wikimedia_Commons.jpg
-
-    The first part is always the same: https://upload.wikimedia.org/wikipedia/commons/thumb
-    The second part is the first character of the MD5 hash of the file name. In this case, the MD5 hash of Tour_Eiffel_Wikimedia_Commons.jpg is a85d416ee427dfaee44b9248229a9cdd, so we get /a.
-    The third part is the first two characters of the MD5 hash from above: /a8.
-    The fourth part is the file name: /Tour_Eiffel_Wikimedia_Commons.jpg
-    The last part is the desired thumbnail width, and the file name again: /200px-Tour_Eiffel_Wikimedia_Commons.jpg
-  */
-
-  let imageUrl = thumbnailUrl.replace('/thumb/', '/');
-
-  imageUrl = imageUrl.split('/').slice(0, -1).join('/');
-
-  return imageUrl;
-};
-
 const getIsFormer = (text) => {
   const lowercaseText = text.toLowerCase();
 
-  return ['ehemaliger', 'ehemalige', 'ehemals'].some((phrase) => lowercaseText.includes(phrase));
+  return ['historische', 'ehemaliger', 'ehemalige', 'ehemals'].some((phrase) => lowercaseText.includes(phrase));
 }
 
 const getUnitTypesFromTitle = (text) => {
@@ -29,16 +10,20 @@ const getUnitTypesFromTitle = (text) => {
   const isFormer = getIsFormer(lowercaseText);
 
   // stadt - city
-  const isStad = ['stadt', 'städte', 'stadtwappen', 'städtewappen'].some((phrase) => lowercaseText.includes(phrase));
-  const isGemeinde = [' gem.', 'gemeindewappen', 'gemeinde', 'gemeinden', 'städtewappen', 'marktgemeinde'].some((phrase) => lowercaseText.includes(phrase));
+  const isCity = ['stadt\n', 'stadt ', 'städte ', 'stadtwappen', 'städtewappen'].some((phrase) => lowercaseText.includes(phrase));
+  const isLand = ['landeswappen'].some((phrase) => lowercaseText.includes(phrase));
+  const isGemeinde = [' gem.', 'gemeindewappen', 'gemeinde', 'gemeinden', 'marktgemeinde'].some((phrase) => lowercaseText.includes(phrase));
+  const isMarkt = ['markt', 'märkte'].some((phrase) => lowercaseText.includes(phrase));
   const isMarktgemeinde = ['marktgemeinde', 'märkte'].some((phrase) => lowercaseText.includes(phrase));
 
-  const isKreis = !isStad && !isGemeinde && !isMarktgemeinde && ['kreis', 'landkreis'].some((phrase) => lowercaseText.includes(phrase));
+  const isKreis = !isCity && !isLand && !isGemeinde && !isMarkt && !isMarktgemeinde && ['kreis', 'landkreis'].some((phrase) => lowercaseText.includes(phrase));
 
   const types = [
-    isStad ? 'stadt' : '',
+    isCity ? 'city' : '',
     isKreis ? 'kreis' : '',
+    isLand ? 'land' : '',
     isGemeinde ? 'gemeinde' : '',
+    isMarkt ? 'markt' : '',
     isMarktgemeinde ? 'marktgemeinde' : '',
   ].filter(Boolean).map((v) => {
     return isFormer && v !== 'kreis' ? `former${upperCaseFirstLetter(v)}` : v;
@@ -57,74 +42,63 @@ appendCSS(`
     position: absolute;
     top: 0%;
     left: 0%;
-    background-color: yellow;
+    background-color: #e0efff9c;
     font-size: 13px;
-    padding: 0 5px;
-    border: 1px solid orange;
-    transform: scale(0.1);
+    padding: 0 3px;
+    letter-spacing: 0.05em;
+    color: #0c54a2;
+    border: 1px solid #64788e40;
     transform-origin: top left;
     overflow: hidden;
-    transition: 0.3s easy-in-out;
+    transition: all 0.15s ease-in-out;
+    backdrop-filter: blur(7px) saturate(0.3);
+    max-width: 17px;
+    height: 17px;
+    line-height: 17px;
+    white-space: nowrap;
   }
 
   [data-wp-title]:hover::after {
-    transform: scale(1);
+    max-width: 300px;
   }
 `, { sourceName: 'parse-de' });
 
-// TODO: change to loop
 const getGalleryAfterHeader = (elToCheck) => {
   let el = elToCheck;
 
-  console.log('el0', el);
-
-  if (el.classList.contains('gallery')) {
-    return el;
-  }
-
-  if (el.classList.contains('.mw-heading2')) {
-    return undefined;
-  }
-
-  el = el.nextElementSibling;
-
-  console.log('el', el);
-
-  if (el.classList.contains('gallery')) {
-    return el;
-  }
-
-  if (el.classList.contains('.mw-heading2')) {
-    return undefined;
-  }
-
-  el = el.nextElementSibling;
-
+  const maxElementsToCheck = 7;
+  for (let i = 0; i < maxElementsToCheck; i++) {
+    if (el.classList.contains('gallery')) {
+      return el;
+    }
   
-  console.log('el2', el);
+    if (el.classList.contains('.mw-heading2') || el.classList.contains('.mw-heading3')) {
+      return undefined;
+    }
 
-  if (el.classList.contains('gallery')) {
-    return el;
-  }
-
-  if (el.classList.contains('.mw-heading2')) {
-    return undefined;
+    el = el.nextElementSibling;
+    console.log(i);
   }
 }
 
+window.parsedDE = {};
+
 export const savePageCoatOfArmsIfPossibleDE = () => {
-  const headersEl = Array.from(document.querySelectorAll('.mw-heading2'));
+  const source = location.href.split('#')[0];
+  const headersEl = Array.from(document.querySelectorAll('.mw-heading2, .mw-heading3'));
+
+  let coatOfArmsList = [];
 
   headersEl.forEach((headersEl) => {
     const sectionTitle = headersEl.firstChild.innerText;
 
     const groupTypes = getUnitTypesFromTitle(sectionTitle);
     const isFormerGroup = getIsFormer(sectionTitle);
+    const groupIcon = isFormerGroup ? '🍂' : '🍃';
 
-    if (groupTypes.length > 0) {
-      const source = location.href.split('#')[0];
+    if (groupTypes.length > 0 || sectionTitle.toLowerCase().includes('historische')) {
 
-      headersEl.setAttribute('data-wp-title', groupTypes.join(', '));
+      headersEl.setAttribute('data-wp-title', `${groupIcon} ${groupTypes.join(', ')}`);
 
       let nextGalleryEl = getGalleryAfterHeader(headersEl.nextElementSibling);
 
@@ -134,33 +108,41 @@ export const savePageCoatOfArmsIfPossibleDE = () => {
         const isThatSpecificFormer = Boolean(imageEl.querySelector('.gallerytext')?.innerText?.match(/\d{4}\)/));
 
         const thumbnailUrl = imageEl.querySelector('.thumb img').src;
-        const coatOfArmsTitle = imageEl.querySelector('.gallerytext')?.innerText || '';
-        const locationName = imageEl.querySelector('.gallerytext > a')?.innerText;
-        const locationUrl = imageEl.querySelector('.gallerytext > a')?.href;
+        const title = (imageEl.querySelector('.gallerytext')?.innerText || '').replace(/\n|\r/g, '');
+        const locationName = (imageEl.querySelector('.gallerytext a')?.innerText || '').replace(/\n|\r/g, '');
+        const locationUrl = (imageEl.querySelector('.gallerytext a')?.href || '').replace(/\n|\r/g, '');
         const descriptionNoteId = imageEl.querySelector('.gallerytext a[href^="#"]')?.getAttribute('href')?.replace('#', '');
-        const description = descriptionNoteId ? (document.getElementById(descriptionNoteId)?.innerText || '') : '';
+        const description = descriptionNoteId ? `${(document.getElementById(descriptionNoteId)?.innerText || '').replace(/\n|\r/g, '')} ${title}` : title;
 
-        const itemTypes = getUnitTypesFromTitle(coatOfArmsTitle);
+        const itemTypes = getUnitTypesFromTitle(title);
 
         let types = itemTypes.length > 0 ? itemTypes : groupTypes;
+
+        const itemIcon = (isFormerGroup || isThatSpecificFormer) ? '🍂' : '🍃';
 
         types = types.map((v) => {
           return (isFormerGroup || isThatSpecificFormer) && !v.startsWith('former') ? `former${upperCaseFirstLetter(v)}` : v;
         });
 
-        imageEl.setAttribute('data-wp-title', types.join(', '));
+        if (types.length > 0) {
+          imageEl.setAttribute('data-wp-title', `${itemIcon} ${types.join(', ')}`);
 
-        console.log({
-          coatOfArmsTitle,
-          locationName,
-          locationUrl,
-          thumbnailUrl,
-          description,
-          types,
-          source,
-          sourceTitle: sectionTitle,
-        })
+          const coatOfArms = {
+            title,
+            locationName,
+            locationUrl,
+            thumbnailUrl,
+            description,
+            type: types,
+            source,
+            sourceTitle: sectionTitle,
+          };
+
+          coatOfArmsList.push(coatOfArms);
+        }
       });
     }
+
+    window.parsedDE[source] = coatOfArmsList;
   })
 };

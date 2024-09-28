@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="1010" viewBox="0 0 880 1010" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <g id="key">
+   <path d="M-284 0l50 50c33 33 84 11 84-35c0-5-4-10-4-15c0-5 4-10 4-15c0-46-51-68-84-35zm40 0l30-30c20-20 49 3 33 27c-2 3-2 3 0 6c16 24-13 47-33 27zm94 15c10 16 22 16 36 0c-5-8-5-22 0-30c-10-16-22-16-36 0zm36 0h360c20 0 20-30 0-30h-360c-5 8-5 22 0 30zm245 0v25h20v20h-20v25h45v-70zm65 0v70h45v-25h-20v-20h20v-25z" fill="#fff" stroke="#000" stroke-width="8" />
+  </g>																									
+ </defs>
+ <path d="M43 355c50 534 197 535 397 635c200-100 347-101 397-635" fill="#fff" stroke="#000" stroke-width="36" />
+ <path d="M837 355l25-267c-186-93-658-93-844 0l25 267" fill="#0f47af" stroke="#000" stroke-width="36" />
+ <path d="M25 355h830" stroke="#000" stroke-width="8" />
+ <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#key" transform="translate(440 188)rotate(-28)" />
+ <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#key" transform="translate(440 188)scale(-1 1)rotate(-28)" />
+ <path d="M580 500v-35c0-120-175-120-175 0v105h-210v140h-35l70 70l70-70h-35v-70h140v105h-35l70 70l70-70h-35v-105h140v70h-35l70 70l70-70h-35v-140h-210v-105c0-24 35-24 35 0v35z" fill="#da121a" stroke="#000" stroke-width="8" />
+</svg>

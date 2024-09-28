@@ -1,7 +1,7 @@
 import { urls } from './constants';
 import { AdministrativeUnit } from '../../../src/topic/Heraldry/types';
 
-import { fetchData } from '../utils/fetch-data-smart';
+import { fetchData } from '../utils/fetch-data';
 
 import alreadyFetchedJSON from '../../../public/data/heraldry/pl/powiaty.json';
 

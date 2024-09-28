@@ -11,15 +11,15 @@ import CountryHeraldryStatus from '@/topic/Heraldry/components/CountryHeraldry/C
 
 const fetchCountryData = async () => {
   const [
-    formerUnits,
+    // formerUnits,
     units,
   ] = await Promise.all([
-    fetch('/maps/data/heraldry/et/formerUnit-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    fetch('/maps/data/heraldry/et/unit-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    // fetch('/maps/data/heraldry/et/formerUnit-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/de/unit-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
   ]);
 
   const allUnits: AdministrativeUnit[] = Object.values([
-    ...Object.values(formerUnits) as AdministrativeUnit[],
+    // ...Object.values(formerUnits) as AdministrativeUnit[],
     ...Object.values(units) as AdministrativeUnit[],
   ].filter((unit: AdministrativeUnit) => {
     // if ([
@@ -30,7 +30,7 @@ const fetchCountryData = async () => {
     // };
 
     if ([
-      'Viipurin vaakuna'
+      'empty'
     ].includes(unit.title)) {
       // Outside of country
       return false;
@@ -40,23 +40,23 @@ const fetchCountryData = async () => {
   }).reduce((stack: {
     [url: string]: AdministrativeUnit,
   }, unit: AdministrativeUnit) => {
-    if (stack[unit.url]) {
-      const areImagesFilledAndDifferent = unit.image?.source && unit.image?.source !== stack[unit.url].image?.source;
-      if (areImagesFilledAndDifferent) {
-        if (location.href.includes('localhost')) {
-          console.error({
-            [unit.type?.join('') || 'a']: stack[unit.url].image?.source,
-            [stack[unit.url].type?.join('') || 'b']: stack[unit.url].image?.source,
-          })
-          throw ('Duplicated but different images!')
-        }
-      }
+    if (stack[unit.id]) {
+      // const areImagesFilledAndDifferent = unit.image?.source && unit.image?.source !== stack[unit.url].image?.source;
+      // if (areImagesFilledAndDifferent) {
+      //   if (location.href.includes('localhost')) {
+      //     console.error({
+      //       [unit.type?.join('') || 'a']: stack[unit.url].image?.source,
+      //       [stack[unit.url].type?.join('') || 'b']: stack[unit.url].image?.source,
+      //     })
+      //     throw ('Duplicated but different images!')
+      //   }
+      // }
 
       // It merges duplicates but keeps their type in array
-      const typeMerged: string[] = [...(stack[unit.url].type || []), ...(unit.type || [])];
-      stack[unit.url].type = [...new Set(typeMerged)];
+      // const typeMerged: string[] = [...(stack[unit.url].type || []), ...(unit.type || [])];
+      // stack[unit.id].type = [...new Set(typeMerged)];
     } else {
-      stack[unit.url] = unit;
+      stack[unit.id] = unit;
     }
 
     return stack;
@@ -119,14 +119,14 @@ const HeraldryDE = () => {
       typeFiltersList={typeFiltersList}
       animalFiltersList={animalFiltersList}
       itemFiltersList={itemFiltersList}
-      mapWrapperClassName="[&>div>svg]:aspect-[707_/_509]"
-      mapWrapperClassNameForZoom0="max-w-[70vh]"
+      mapWrapperClassName="[&>div>svg]:aspect-[594_/_803]"
+      mapWrapperClassNameForZoom0="max-w-[40vh]"
       map={SvgMap}
       mapOffset={{
-         minLatTop: 57.43,
-         maxLatTop: 59.97,
-         minLonLeft: 21.46,
-         maxLonLeft: 28.45,
+         minLatTop: 47.27,
+         maxLatTop: 55.09,
+         minLonLeft: 5.87,
+         maxLonLeft: 15.04,
      }}
       initialFilters={initialFilters}
     />

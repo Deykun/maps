@@ -1,12 +1,11 @@
 appendCSS(`
   :root {
     --wp-nav-item-size: 35px;
-    --wp-nav-item-bg: var(--bgColor-muted);
-    --wp-nav-item-bg: var(--bgColor-default);
-    --wp-nav-item-text-strong: var(--fgColor-default);
-    --wp-nav-item-text: var(--fgColor-muted);
-    --wp-nav-item-text-hover: var(--fgColor-accent);
-    --wp-nav-item-border: var(--borderColor-muted);
+    --wp-nav-item-bg: #fff;
+    --wp-nav-item-text-strong: #fff;
+    --wp-nav-item-text: #59636e;
+    --wp-nav-item-text-hover: 0969da;
+    --wp-nav-item-border: #d1d0e0b3;
     --wp-nav-item-radius: 5px;
   }
 
@@ -52,6 +51,7 @@ appendCSS(`
     color: var(--wp-nav-item-text);
     width: var(--wp-nav-item-size);
     transition: 0.3s ease-in-out;
+    box-sizing: border-box;
   }
 
   .wp-nav-button:hover {
@@ -68,6 +68,7 @@ appendCSS(`
     height: var(--wp-nav-item-size);
     width: var(--wp-nav-item-size);
     line-height: var(--wp-nav-item-size);
+    box-sizing: border-box;
   }
 
   .wp-nav-popup {
@@ -172,11 +173,11 @@ export const renderApp = () => {
   const content = window.WikiParser.ui.openedContent;
 
   render(`<aside class="wp-nav" data-active="${content}">
-    TEST
+    ${getAppCopy()}
   </aside>`, 'wp-app');
 };
 
-// window.wp.ui.eventsSubscribers.content = {
+// window.WikiParser.ui.eventsSubscribers.content = {
 //   selector: '.wp-nav-button',
 //   handleClick: (_, calledByElement) => {
 //     if (calledByElement) {
@@ -193,3 +194,4 @@ export const renderApp = () => {
 //     renderApp();
 //   },
 // };
+

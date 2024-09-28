@@ -20,8 +20,6 @@ window.WikiParser = {
     location: location.href,
   },
   settings: getSettingsFromLS(),
-  // usersByUsernames: getUsersByUsernamesFromLS(),
-  // customNamesByUsernames: getCustomNamesByUsernamesFromLS(),
   actions: {},
 };
 

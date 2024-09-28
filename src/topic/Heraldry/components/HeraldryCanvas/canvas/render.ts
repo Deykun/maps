@@ -183,7 +183,7 @@ export const setCoatOfArms = (units: AdministrativeUnit[]) => {
       latY,
       id: unit.id,
       imageUrl: image?.path || '', // aserted in filter
-      imageSprint: getSpriteDataFromUnit(unit),
+      imageSprite: getSpriteDataFromUnit(unit),
       coatSize,
       mapOffset,
     });
