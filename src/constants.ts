@@ -9,6 +9,15 @@ export const PATHS_DATA: {
 }[] = [
   {
     type: 'heraldryCountry',
+    pathNameLink: 'heraldry.de.mapTitle',
+    path: 'deutsche-heraldik',
+    title: '🛡️ BETA: Deutschland Wappenkarte',
+    social: ``,
+    lang: 'de',
+    country: 'de',
+  },
+  {
+    type: 'heraldryCountry',
     pathNameLink: 'heraldry.et.mapTitle',
     path: 'eesti-heraldika',
     title: '🛡️ Praegused ja endised Eesti vappide kujundid',

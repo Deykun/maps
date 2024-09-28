@@ -4,7 +4,9 @@ import { Helmet } from 'react-helmet';
 import { PATHS_DATA } from '../constants';
 
 import Home from '../pages/Home';
-import HeraldryEE from '../pages/eesti-heraldika/HeraldryET';
+
+import HeraldryDE from '../pages/deutsche-heraldik/HeraldryDE';
+import HeraldryET from '../pages/eesti-heraldika/HeraldryET';
 import HeraldryPL from '../pages/heraldyka/HeraldryPL';
 import HeraldryFI from '../pages/suomalainen-heraldikka/HeraldryFI';
 import HeraldryPage from '../pages/heraldry/HeraldryPage';
@@ -31,7 +33,8 @@ const Routes = () => {
       </Helmet>
       <Switch >
         <Route path="/maps" component={Home} />
-        <Route path="/maps/eesti-heraldika" component={HeraldryEE} />
+        <Route path="/maps/deutsche-heraldik" component={HeraldryDE} />
+        <Route path="/maps/eesti-heraldika" component={HeraldryET} />
         <Route path="/maps/heraldyka" component={HeraldryPL} />
         <Route path="/maps/suomalainen-heraldikka" component={HeraldryFI} />
         <Route path="/maps/heraldry" component={HeraldryPage} />

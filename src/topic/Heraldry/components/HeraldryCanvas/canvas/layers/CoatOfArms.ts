@@ -13,7 +13,7 @@ export class CoatOfArms {
   latY: number;
   id: string;
   imageUrl: string;
-  imageSprint: {
+  imageSprite: {
     url: string,
     index: number
   };
@@ -27,7 +27,7 @@ export class CoatOfArms {
     latY,
     id,
     imageUrl,
-    imageSprint,
+    imageSprite,
     coatSize,
     mapOffset,
   }: {
@@ -37,7 +37,7 @@ export class CoatOfArms {
     latY: number,
     id: string,
     imageUrl: string,
-    imageSprint: {
+    imageSprite: {
       url: string,
       index: number
     },
@@ -49,10 +49,10 @@ export class CoatOfArms {
 
     this.id = id;
     this.imageUrl = imageUrl;
-    this.imageSprint = imageSprint;
+    this.imageSprite = imageSprite;
 
     const image = new Image();
-    image.src = this.imageSprint.url;
+    image.src = this.imageSprite.url;
     this.image = image;
     this.imageIsLoaded = false;
     this.image.onload = () => {
@@ -97,7 +97,36 @@ export class CoatOfArms {
       return;
     }
 
-    const frameY = spriteSize * this.imageSprint.index + spriteOffset * this.imageSprint.index;
+    const frameY = spriteSize * this.imageSprite.index + spriteOffset * this.imageSprite.index;
+   
+    // Bottom border
+    // this.ctx.filter = 'grayscale(1) brightness(0.5) opacity(0.5)';
+
+    // this.ctx.drawImage(
+    //   this.image,
+    //   0, // frameX
+    //   frameY,
+    //   spriteSize, // frameWidth
+    //   spriteSize, // frameHeight
+    //   this.x - (this.width / 2),
+    //   this.y - (this.width / 2) + 2,
+    //   this.width,
+    //   this.height,
+    // );
+
+    // this.ctx.drawImage(
+    //   this.image,
+    //   0, // frameX
+    //   frameY,
+    //   spriteSize, // frameWidth
+    //   spriteSize, // frameHeight
+    //   this.x - (this.width / 2),
+    //   this.y - (this.width / 2) + 1,
+    //   this.width,
+    //   this.height,
+    // );
+
+    // this.ctx.filter = 'grayscale(0) brightness(1)';
 
     this.ctx.drawImage(
       this.image,

@@ -38,6 +38,7 @@ export type AdministrativeUnit = {
   url: string,
   partOf?: string,
   type?: string[],
+  spriteRoot?: string,
   description?: string,
   colors?: {
     hexPalette: string[],
@@ -49,9 +50,10 @@ export type AdministrativeUnit = {
     }
   },
   image?: {
-    source: string
-    width: number
-    height: number
+    source: string,
+    sourceAlt?: string,
+    width?: number,
+    height?: number,
   },
   imageUrl?: string,
   imageSrcSet?: string,
@@ -96,4 +98,14 @@ export type MapOffset = {
   maxLatTop: number,
   minLonLeft: number,
   maxLonLeft: number,
+}
+
+export type UserScriptDivisionData = {
+  locationName: string,
+  locationUrl: string,
+  thumbnailUrl: string,
+  description: string,
+  type: string[],
+  source: string,
+  sourceTitle: string,
 }

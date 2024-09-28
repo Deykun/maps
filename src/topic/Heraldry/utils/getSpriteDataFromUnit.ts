@@ -7,7 +7,7 @@ export const getSpriteDataFromUnit = (unit: AdministrativeUnit) => {
   const spriteOffsetY = spriteSize * index + spriteOffset * index;
 
   return {
-    url: `images/heraldry/${unit.lang}/web/sprites/${unit.type?.[0] || ''}-${spriteIndex}.webp`,
+    url: `images/heraldry/${unit.lang}/web/sprites/${unit.spriteRoot || unit.type?.[0] || ''}-${spriteIndex}.webp`,
     index,
     spriteOffsetY,
   };

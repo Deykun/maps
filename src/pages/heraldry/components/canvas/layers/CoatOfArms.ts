@@ -36,7 +36,7 @@ export class CoatOfArms {
   latY: number;
   title: string;
   imageUrl: string;
-  imageSprint: {
+  imageSprite: {
     url: string,
     index: number
   };
@@ -51,7 +51,7 @@ export class CoatOfArms {
     latY,
     title,
     imageUrl,
-    imageSprint,
+    imageSprite,
     settings,
     coatSize,
   }: {
@@ -61,7 +61,7 @@ export class CoatOfArms {
     latY: number,
     title: string,
     imageUrl: string,
-    imageSprint: {
+    imageSprite: {
       url: string,
       index: number
     },
@@ -73,10 +73,10 @@ export class CoatOfArms {
 
     this.title = title;
     this.imageUrl = imageUrl;
-    this.imageSprint = imageSprint;
+    this.imageSprite = imageSprite;
 
     const image = new Image();
-    image.src = this.imageSprint.url;
+    image.src = this.imageSprite.url;
     this.image = image;
     this.imageIsLoaded = false;
     this.image.onload = () => {
@@ -129,7 +129,7 @@ export class CoatOfArms {
     this.ctx.shadowBlur = 7;
     this.ctx.shadowOffsetY = 5;
 
-    const frameY = spriteSize * this.imageSprint.index + spriteOffset * this.imageSprint.index;
+    const frameY = spriteSize * this.imageSprite.index + spriteOffset * this.imageSprite.index;
 
     this.ctx.drawImage(
       this.image,
