@@ -11,16 +11,31 @@ import CountryHeraldryStatus from '@/topic/Heraldry/components/CountryHeraldry/C
 
 const fetchCountryData = async () => {
   const [
-    formerUnits,
-    units,
+    formerUnits0,
+    formerUnits1,
+    formerUnits2,
+    units0,
+    units1,
+    units2,
+    units3,
   ] = await Promise.all([
-    fetch('/maps/data/heraldry/de/formerUnit-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    fetch('/maps/data/heraldry/de/unit-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/de/formerUnit-map-0.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/de/formerUnit-map-1.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/de/formerUnit-map-2.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/de/unit-map-0.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/de/unit-map-1.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/de/unit-map-2.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/de/unit-map-3.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
   ]);
 
   const allUnits: AdministrativeUnit[] = Object.values([
-    ...Object.values(formerUnits) as AdministrativeUnit[],
-    ...Object.values(units) as AdministrativeUnit[],
+    ...Object.values(formerUnits0) as AdministrativeUnit[],
+    ...Object.values(formerUnits1) as AdministrativeUnit[],
+    ...Object.values(formerUnits2) as AdministrativeUnit[],
+    ...Object.values(units0) as AdministrativeUnit[],
+    ...Object.values(units1) as AdministrativeUnit[],
+    ...Object.values(units2) as AdministrativeUnit[],
+    ...Object.values(units3) as AdministrativeUnit[],
   ].filter((unit: AdministrativeUnit) => {
     // if ([
     //    'empty'
@@ -125,8 +140,8 @@ const HeraldryDE = () => {
       mapOffset={{
          minLatTop: 47.27,
          maxLatTop: 55.09,
-         minLonLeft: 6.14,
-         maxLonLeft: 14.80,
+         minLonLeft: 6.10,
+         maxLonLeft: 14.9,
       }}
       initialFilters={initialFilters}
       developmentModeFiltersTypes={['unit', 'formerUnit']}

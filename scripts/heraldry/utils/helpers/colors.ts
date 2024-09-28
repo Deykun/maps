@@ -198,7 +198,7 @@ export const getImageColors = async (image: string) => {
     try {
       getPixels(image, (error, pixels) => {
         if (error) {
-          console.log(`${chalk.red('getPixels error from:')} ${chalk.yellow(image)}`);
+          // console.log(`${chalk.red('getPixels error from:')} ${chalk.yellow(image)}`);
 
           reject([]);
         } else {

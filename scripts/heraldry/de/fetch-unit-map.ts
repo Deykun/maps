@@ -1,13 +1,32 @@
+import chalk from 'chalk';
+
 import unitFromJSON from '../../../public/data/heraldry/de/unit.json'
 import { AdministrativeUnit } from '../../../src/topic/Heraldry/types';
 
 import { fetchImages } from '../utils/fetch-images';
 
-const units = unitFromJSON as AdministrativeUnit[]
+const units = unitFromJSON as AdministrativeUnit[];
+
+const chunkSize = 2500;
+
+const chunkArg = process.argv.find((arg) => arg.startsWith('chunk='));
+const chunkIndex = chunkArg ? Number(chunkArg.replace('chunk=', '')) : undefined;
+
+if (typeof chunkIndex !== 'number') {
+	console.log(`${chalk.red('Missing chunk data.')} Add chunk=0 to generate first chunk data.`);
+
+	process.exit();
+}
+
+const startIndex = chunkIndex * chunkSize;
+const endIndex = startIndex + chunkSize;
+
+console.log(`${chalk.green(`Generating chunk ${chunkIndex}`)} (${startIndex} - ${endIndex}) (${units.length} total)`);
 
 fetchImages({
-	administrativeDivisions: units,
+	administrativeDivisions: units.slice(startIndex, endIndex),
 	path: 'unit',
 	lang: 'de',
 	subpage: 'deutsche-heraldik',
+	chunkIndex,
 });

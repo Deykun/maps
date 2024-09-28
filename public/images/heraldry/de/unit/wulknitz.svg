@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 390 492">
+<defs><clipPath id="b"><path id="a" d="m10 10v286a185 185 0 0 0 370 0v-286z"/></clipPath></defs>
+<use stroke-width="20" stroke="#08c" xlink:href="#a" fill="#fc0"/>
+<use xlink:href="#a" fill="#fc0"/>
+<path d="m-39 245v-237h234v474h236v-237" clip-path="url(#b)" fill="#08c"/>
+<path d="m159 84h-114m106 36-104-72m-2 72 107-71" stroke="#000" stroke-width="6" fill="none"/>
+<path d="m107 378h11l4 41 15 15-17-4-8 5-6-6-10 5 9-13z"/>
+<path d="m93 32c2 28-19 51-13 68 6 18 41 15 45-5 5-23-20-58-32-63z" fill="#08c"/>
+<path d="m100 52c0 14-10.4 28.6-11 42.3-0 6 8.4 8 13 8 7 0 15-4.4 14-14.3-1-9-13-34-16.3-36z" fill="#fc0"/>
+<path d="m102 82v29" stroke="#000" stroke-width="4.8" fill="none"/>
+<path d="m261 52v30l20 13v70l-39 13v23h91v-23l-39-13v-70l20-13v-30z"/>
+<path fill="#fc0" d="m114 110v91h-23v-91z"/>
+<path d="m285 275c-1 7-3 16-3 22-1 15-1 29-2 44-1 11-2 21-3 32 13-1 25-8 35-16-5 38-31 74-68 80 18-31 28-62 28-96 0-32-11-52-14-60 4 0 11 6 14 9 3-5 9-11 13-15z" fill="#fc0"/>
+<path d="m113 263c5 19 22 40 29 47-11 6-15-2-25-6 4 15 19 25 33 30-16 12-26 0-31-5 4 20 28 30 43 32-13 17-37 9-43-1 2 13 22 26 27 29-11 7-27-3-29-11h-9c-10 13-16.7 20-35 14 13.6-8 32-17 35-34-9 14-44.4 19-47 2 22-3 40-17 45-31-6.5 8-26 17-39 2 18-8 34-9 40-27-6 6-18.7 12-27 9 14.7-15 24-33 33-50z" fill="#093"/>
+<use stroke-width="3.2" stroke="#fff" xlink:href="#a" fill="none"/></svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="487" width="450" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-225 6 450 487">
+<title>Wappen des Landkreises Saarlouis</title>
+<defs>
+<path id="shape" d="m-225 6 18 294c7 110 99 193 207 193s200-83 207-193l18-294z"/>
+<clipPath id="clip">
+<use xlink:href="#shape"/>
+</clipPath>
+</defs>
+<g stroke="#000" clip-path="url(#clip)">
+<use xlink:href="#shape" fill="#fd0"/>
+<g stroke-width="5" transform="matrix(-.2 .267 -.267 -.2 -102 225)">
+<rect height="1700" width="360" y="-1200" x="-180" stroke-width="9" fill="#b00"/>
+<g id="eagle" transform="translate(0,-20)">
+<g id="wing">
+<path fill="#fff" stroke-miterlimit="2" d="m22 97s17-11 29-10c13 0 27 10 23 32-7 0-23 4-22 14 0 9 16 19 34 17 19-3 60 5 72 7 8-24-19-33-54-38 13-9 45-13 58-15-8-17-34-31-71-20 13-15 53-31 68-32-15-24-51-24-91 5 5-24 62-56 85-66-23-35-98 3-126 56"/>
+<path stroke-linejoin="round" stroke-linecap="round" fill="none" d="m104 119c21-11 16-44-13-35 22-15 6-49-23-27 20-32-26-52-39-9"/>
+</g>
+<use xlink:href="#wing" transform="scale(-1,1)"/>
+<path fill="#fff" d="m0-135c-8 7-12 20-14 31-6-5-14-11-32-14 12 19 44 91 34 117-3 8-42-49-54-60 0 11 4 22 4 22s-15-2-20 3c24 14 82 51 54 79-14 14-11 35 4 53 10 12 13 43 12 58h24c-1-15 2-46 12-58 15-18 18-39 4-53-28-28 30-65 54-79-5-5-20-3-20-3s4-11 4-22c-12 11-51 68-54 60-10-26 22-98 34-117-18 3-26 9-32 14-2-11-6-24-14-31z"/>
+<path fill="#fff" d="m-34 141c14 14 6 63 34 63s20-49 34-63c-12-1-17 1-24 9-2-8-3-13-10-20-7 7-8 12-10 20-7-8-12-10-24-9z"/>
+</g>
+<use xlink:href="#eagle" y="-380"/>
+<use xlink:href="#eagle"  y="-760"/>
+</g>
+<path stroke-width="4" fill="#fff" d="m-230 6v140h460v-140z"/>
+<path d="m0 146h230v-70h-460v-70h230"/>
+<g stroke-width="3" fill="#06c">
+<path d="m123 304c-4-8-13-8-9-22 8-22 3-61-6-91-7-25 9-20 15-33 6 13 22 8 15 33-9 30-14 69-6 91 4 14-5 14-9 22z"/>
+<path id="lili" d="m175 239c21-8 28-36 12-50-12-9-34-5-47 26-6 12-13 54 0 65 20 17 31-16 24-26-5 10-12 17-21 8-7-7-4-36 10-43 17-8 25 8 22 20z"/>
+<use xlink:href="#lili" transform="matrix(-1,0,0,1,246,0)"/>
+<rect ry="5" height="14" width="50" y="238" x="98"/>
+<use xlink:href="#star" stroke-width="6"/>
+</g>
+<use stroke-width="10" xlink:href="#shape" fill="none"/>
+</g>
+<path id="star" transform="rotate(22.5,-103,380)" fill="#06c" d="m-123.4 429.3v-98.6l69.69 69.7h-98.59l69.71-69.7v98.6l-69.71-69.7h98.59z"/>
+</svg>

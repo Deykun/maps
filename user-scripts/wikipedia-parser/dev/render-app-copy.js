@@ -4,7 +4,8 @@ appendCSS(`
 export const getAppCopy = () => {
   return `<div class="wp-nav-button-wrapper">
     <button id="copy-code" class="wp-nav-button">${IconCopy}</button>
-    <button id="copy-code-all" class="wp-nav-button">${IconCopy}</button>
+    <button id="copy-code-all" class="wp-nav-button">${IconCopyAlt}</button>
+    <button id="remove-all" class="wp-nav-button">${IconRemove}</button>
   </div>`;
 };
 
@@ -52,5 +53,13 @@ window.WikiParser.ui.eventsSubscribers.copyCodeAll = {
       console.log('Copied!');
       copyMessage(textToCopy);
     }
+  },
+};
+
+window.WikiParser.ui.eventsSubscribers.removeAll = {
+  selector: '#remove-all',
+  handleClick: () => {
+    localStorage.removeItem('wikiparse-units');
+    console.log('Removed!');
   },
 };

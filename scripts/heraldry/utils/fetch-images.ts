@@ -30,11 +30,13 @@ export const fetchImages = async ({
   path,
   subpage = 'heraldyka',
   lang = 'pl',
+  chunkIndex,
 }: {
   administrativeDivisions: AdministrativeUnit[]
   path: string,
   subpage?: string,
   lang?: string,
+  chunkIndex?: number,
 }) => {
   const contentToSaveForMap = {};
   const contentToSaveForDevMode = {};
@@ -45,11 +47,16 @@ export const fetchImages = async ({
   console.log(`${chalk.blue(total)} coats to fetch (${chalk.yellow(path)}).`);
   console.log(' ');
 
+  if (total === 0) {
+    return;
+  }
+
   for (let i = 0; i < total; i++) {
     const unit = administrativeDivisions[i];
     let fileName = getImageFileName(unit.title);
+    // console.log(i, fileName, unit?.title);
 
-    const format = unit.image?.source.split('.').at(-1)?.toLowerCase() || 'png';
+    const format = unit.image?.source?.split('.')?.at(-1)?.toLowerCase() || 'png';
     if (format !== 'png' && existsSync(`./public/images/heraldry/${lang}/${path}/${fileName}.png`)) {
       unlink(`./public/images/heraldry/${lang}/${path}/${fileName}.png`, () => {});
       console.log(chalk.red(`Removed ${fileName}.png`));
@@ -70,7 +77,7 @@ export const fetchImages = async ({
           console.log(chalk.red(`Missing ${fileName}.${format}.`));
         }
       } else {
-        // console.log(chalk.gray(`Skipping ${fileName}.${format} already exists.`));
+        console.log(chalk.gray(`Skipping ${fileName}.${format} already exists. (index: ${unit.index})`));
       }
 
       const image = resolve(`./public/images/heraldry/${lang}/${path}/${fileName}.${format}`);
@@ -129,8 +136,8 @@ export const fetchImages = async ({
           }
         }
       } catch (error) {
-        console.log(`${chalk.red('Missing colors for:')} ${chalk.yellow(unit.title)}`);
-        console.error(error);
+        // console.log(`${chalk.red('Missing colors for:')} ${chalk.yellow(unit.title)}`);
+        // console.error(error);
 
         contentToSaveForMap[fileName] = {
           ...unit,
@@ -150,6 +157,8 @@ export const fetchImages = async ({
     }
   }
 
-  writeFileSync(`./public/data/heraldry/${lang}/${path}-map.json`, JSON.stringify(contentToSaveForMap, null, 4));
-  writeFileSync(`./public/data/heraldry/${lang}/${path}-dev.json`, JSON.stringify(contentToSaveForDevMode, null, 4));
+  const chunkSuffix = typeof chunkIndex === 'number' ? `-${chunkIndex}` : '';
+
+  writeFileSync(`./public/data/heraldry/${lang}/${path}-map${chunkSuffix}.json`, JSON.stringify(contentToSaveForMap, null, 4));
+  writeFileSync(`./public/data/heraldry/${lang}/${path}-dev${chunkSuffix}.json`, JSON.stringify(contentToSaveForDevMode, null, 4));
 };
