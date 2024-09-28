@@ -1,0 +1,773 @@
+import { UserScriptDivisionData } from '../../../../src/topic/Heraldry/types';
+
+export const urls: {
+  unitBySource: {
+    [source: string]: UserScriptDivisionData[],
+  },
+} = {
+  unitBySource: {},
+};
+
+urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = [
+  {
+      locationName: '',
+      locationUrl: '',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Berlin_in_Germany.svg/101px-Berlin_in_Germany.svg.png',
+      description: 'Karte Berlin, Deutschland',
+      type: ['land'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Landeswappen',
+    }, {
+      locationName: 'Berlin',
+      locationUrl: 'https://de.wikipedia.org/wiki/Berlin',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/DEU_Berlin_COA.svg/73px-DEU_Berlin_COA.svg.png',
+      description: 'Landeswappen Berlin (Details)',
+      type: ['land'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Landeswappen',
+    }, {
+      locationName: 'Charlottenburg-Wilmersdorf',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Charlottenburg-Wilmersdorf',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Coat_of_arms_of_Charlottenburg-Wilmersdorf.svg/81px-Coat_of_arms_of_Charlottenburg-Wilmersdorf.svg.png',
+      description: 'Charlottenburg-Wilmersdorf (Details)',
+      type: ['bezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Wappen der Bezirke Berlins',
+    }, {
+      locationName: 'Friedrichshain-Kreuzberg',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Friedrichshain-Kreuzberg',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Coat_of_arms_of_borough_Friedrichshain-Kreuzberg.svg/81px-Coat_of_arms_of_borough_Friedrichshain-Kreuzberg.svg.png',
+      description: 'Friedrichshain-Kreuzberg (Details)',
+      type: ['bezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Wappen der Bezirke Berlins',
+    }, {
+      locationName: 'Lichtenberg',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Lichtenberg',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Coat_of_arms_of_borough_Lichtenberg.svg/81px-Coat_of_arms_of_borough_Lichtenberg.svg.png',
+      description: 'Lichtenberg (Details)',
+      type: ['bezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Wappen der Bezirke Berlins',
+    }, {
+      locationName: 'Marzahn-Hellersdorf',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Marzahn-Hellersdorf',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Coat_of_arms_of_borough_Marzahn-Hellersdorf.svg/81px-Coat_of_arms_of_borough_Marzahn-Hellersdorf.svg.png',
+      description: 'Marzahn-Hellersdorf (Details)',
+      type: ['bezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Wappen der Bezirke Berlins',
+    }, {
+      locationName: 'Mitte',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Mitte',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Coat_of_arms_of_borough_Mitte.svg/81px-Coat_of_arms_of_borough_Mitte.svg.png',
+      description: 'Mitte (Details)',
+      type: ['bezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Wappen der Bezirke Berlins',
+    }, {
+      locationName: 'Neukölln',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Neuk%C3%B6lln',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Coat_of_arms_of_borough_Neukoelln.svg/81px-Coat_of_arms_of_borough_Neukoelln.svg.png',
+      description: 'Neukölln (Details)',
+      type: ['bezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Wappen der Bezirke Berlins',
+    }, {
+      locationName: 'Pankow',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Pankow',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Coat_of_arms_of_borough_Pankow.svg/81px-Coat_of_arms_of_borough_Pankow.svg.png',
+      description: 'Pankow (Details)',
+      type: ['bezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Wappen der Bezirke Berlins',
+    }, {
+      locationName: 'Reinickendorf',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Reinickendorf',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Coat_of_arms_of_borough_Reinickendorf.svg/81px-Coat_of_arms_of_borough_Reinickendorf.svg.png',
+      description: 'Reinickendorf (Details)',
+      type: ['bezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Wappen der Bezirke Berlins',
+    }, {
+      locationName: 'Spandau',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Spandau',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Coat_of_arms_of_borough_Spandau.svg/81px-Coat_of_arms_of_borough_Spandau.svg.png',
+      description: 'Spandau (Details)',
+      type: ['bezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Wappen der Bezirke Berlins',
+    }, {
+      locationName: 'Steglitz-Zehlendorf',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Steglitz-Zehlendorf',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Coat_of_arms_of_borough_Steglitz-Zehlendorf.svg/81px-Coat_of_arms_of_borough_Steglitz-Zehlendorf.svg.png',
+      description: 'Steglitz-Zehlendorf (Details)',
+      type: ['bezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Wappen der Bezirke Berlins',
+    }, {
+      locationName: 'Tempelhof-Schöneberg',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Tempelhof-Sch%C3%B6neberg',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Coat_of_arms_of_borough_Tempelhof-Schoeneberg.svg/81px-Coat_of_arms_of_borough_Tempelhof-Schoeneberg.svg.png',
+      description: 'Tempelhof-Schöneberg (Details)',
+      type: ['bezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Wappen der Bezirke Berlins',
+    }, {
+      locationName: 'Treptow-Köpenick',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Treptow-K%C3%B6penick',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Coat_of_arms_of_borough_Treptow-Koepenick.svg/81px-Coat_of_arms_of_borough_Treptow-Koepenick.svg.png',
+      description: 'Treptow-Köpenick (Details)',
+      type: ['bezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Wappen der Bezirke Berlins',
+    }, {
+      locationName: '',
+      locationUrl: '',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Wappen_Berlin_1875.jpg/105px-Wappen_Berlin_1875.jpg',
+      description: 'Stadtwappen ab 1875',
+      type: ['formerCity'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen',
+    }, {
+      locationName: '',
+      locationUrl: '',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Coat_of_arms_of_Berlin_%281935%29.svg/62px-Coat_of_arms_of_Berlin_%281935%29.svg.png',
+      description: 'Stadtwappen ab 1935 (und Ostberlin bis 1991)',
+      type: ['formerCity'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen',
+    }, {
+      locationName: '',
+      locationUrl: '',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Coat_of_arms_Berlin_1709.png/114px-Coat_of_arms_Berlin_1709.png',
+      description: 'großes Wappen ab 1709',
+      type: ['formerCity'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Stadtwappen Berlins',
+    }, {
+      locationName: '',
+      locationUrl: '',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Coat_of_arms_Berlin_1839.png/110px-Coat_of_arms_Berlin_1839.png',
+      description: 'großes Wappen ab 1839',
+      type: ['formerCity'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Stadtwappen Berlins',
+    }, {
+      locationName: '',
+      locationUrl: '',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Wappen_Berlin_1875.jpg/105px-Wappen_Berlin_1875.jpg',
+      description: 'Stadtwappen ab 1875',
+      type: ['formerCity'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Stadtwappen Berlins',
+    }, {
+      locationName: '',
+      locationUrl: '',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Coat_of_arms_of_Berlin_1883.png/120px-Coat_of_arms_of_Berlin_1883.png',
+      description: 'großes Wappen ab 1883',
+      type: ['formerCity'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Stadtwappen Berlins',
+    }, {
+      locationName: '',
+      locationUrl: '',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Coat_of_arms_Berlin_small_1883.png/86px-Coat_of_arms_Berlin_small_1883.png',
+      description: 'kleines Wappen ab 1883',
+      type: ['formerCity'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Stadtwappen Berlins',
+    }, {
+      locationName: '',
+      locationUrl: '',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Coat_of_arms_of_Berlin_%281935%29.svg/62px-Coat_of_arms_of_Berlin_%281935%29.svg.png',
+      description: 'Stadtwappen ab 1935 (und Ostberlin bis 1991)',
+      type: ['formerCity'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Stadtwappen Berlins',
+    }, {
+      locationName: 'Charlottenburg',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Charlottenburg',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/DEU_Charlottenburg_%28district%29_COA.svg/82px-DEU_Charlottenburg_%28district%29_COA.svg.png',
+      description: 'Charlottenburg ab 1957 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: 'Friedrichshain',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Friedrichshain',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Coat_of_arms_de-be_friedrichshain_1935.png/95px-Coat_of_arms_de-be_friedrichshain_1935.png',
+      description: 'Friedrichshain ab 1935 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: '(Details)',
+      locationUrl: 'https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Friedrichshain-Kreuzberg#Bezirk_Friedrichshain',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Escudo_del_distrito_Friedrichshain_de_Berlin_%281987-1991%29.svg/95px-Escudo_del_distrito_Friedrichshain_de_Berlin_%281987-1991%29.svg.png',
+      description: 'Friedrichshain ab 1987 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: '(Details)',
+      locationUrl: 'https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Friedrichshain-Kreuzberg#Bezirk_Friedrichshain',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Escudo_del_distrito_Friedrichshain_de_Berlin_%281991-2003%29.svg/86px-Escudo_del_distrito_Friedrichshain_de_Berlin_%281991-2003%29.svg.png',
+      description: 'Friedrichshain ab 1991 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: 'Hellersdorf',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Hellersdorf',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Coat_of_arms_de-be_hellersdorf_1986.png/98px-Coat_of_arms_de-be_hellersdorf_1986.png',
+      description: 'Hellersdorf ab 1986 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: '(Details)',
+      locationUrl: 'https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Marzahn-Hellersdorf#Bezirk_Hellersdorf',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Coat_of_arms_de-be_hellersdorf_1992.png/83px-Coat_of_arms_de-be_hellersdorf_1992.png',
+      description: 'Hellersdorf ab 1992 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: 'Hohenschönhausen',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Hohensch%C3%B6nhausen',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Coat_of_arms_de-be_hohenschoenhausen_1987.png/103px-Coat_of_arms_de-be_hohenschoenhausen_1987.png',
+      description: 'Hohenschönhausen ab 1987 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: '(Details)',
+      locationUrl: 'https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Lichtenberg#Bezirk_Hohensch%C3%B6nhausen',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Coat_of_arms_de-be_hohenschoenhausen.png/82px-Coat_of_arms_de-be_hohenschoenhausen.png',
+      description: 'Hohenschönhausen ab 1992 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: 'Köpenick',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_K%C3%B6penick',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/DEU_K%C3%B6penick_COA.svg/97px-DEU_K%C3%B6penick_COA.svg.png',
+      description: 'Köpenick ab 1920 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: '(Details)',
+      locationUrl: 'https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Treptow-K%C3%B6penick#Bezirkswappen',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Coat_of_arms_de-be_koepenick_1987.png/98px-Coat_of_arms_de-be_koepenick_1987.png',
+      description: 'Köpenick ab 1987 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: '(Details)',
+      locationUrl: 'https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Treptow-K%C3%B6penick#Bezirkswappen',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/DEU_K%C3%B6penick_%28district%29_COA.svg/82px-DEU_K%C3%B6penick_%28district%29_COA.svg.png',
+      description: 'Köpenick ab 1992 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: 'Kreuzberg',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Kreuzberg',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/DEU_Kreuzberg_%28district%29_COA.svg/82px-DEU_Kreuzberg_%28district%29_COA.svg.png',
+      description: 'Kreuzberg ab 1956 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: 'Lichtenberg',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Lichtenberg',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Coat_of_arms_de-be_lichtenberg_1987.png/98px-Coat_of_arms_de-be_lichtenberg_1987.png',
+      description: 'Lichtenberg ab 1987 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: 'Lichtenberg',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Lichtenberg',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Coats_of_arms_of_None.svg/100px-Coats_of_arms_of_None.svg.png',
+      description: 'Lichtenberg ab 1991 bis 2001 (Details) Abbildung liegt nicht vor.',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: 'Marzahn',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Marzahn',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Coat_of_arms_de-be_marzahn_1979.png/96px-Coat_of_arms_de-be_marzahn_1979.png',
+      description: 'Marzahn ab 1979 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: '(Details)',
+      locationUrl: 'https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Marzahn-Hellersdorf#Bezirk_Marzahn',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Coat_of_arms_de-be_marzahn_1992.png/83px-Coat_of_arms_de-be_marzahn_1992.png',
+      description: 'Marzahn ab 1992 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: 'Mitte',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Mitte',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Coat_of_arms_de-be_mitte_1987.png/96px-Coat_of_arms_de-be_mitte_1987.png',
+      description: 'Mitte ab 1987 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: 'Mitte',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Mitte',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/DEU_Berlin-Mitte_%28district%29_COA.svg/82px-DEU_Berlin-Mitte_%28district%29_COA.svg.png',
+      description: 'Mitte ab 1994 bis 2001 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: 'Pankow',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Pankow',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Coat_of_arms_de-be_pankow_1987.png/98px-Coat_of_arms_de-be_pankow_1987.png',
+      description: 'Pankow ab 1987 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: 'Pankow',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Pankow',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Coats_of_arms_of_None.svg/100px-Coats_of_arms_of_None.svg.png',
+      description: 'Pankow ab [nach 1990] bis 2001 (Details) Abbildung liegt nicht vor.',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: 'Prenzlauer Berg',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Prenzlauer_Berg',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Coat_of_arms_de-be_prenzlauer_berg_1987.png/97px-Coat_of_arms_de-be_prenzlauer_berg_1987.png',
+      description: 'Prenzlauer Berg ab 1987 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: '(Details)',
+      locationUrl: 'https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Pankow#Bezirk_Prenzlauer_Berg',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/DEU_Prenzlauer_Berg_%28Bezirk%29_COA.svg/82px-DEU_Prenzlauer_Berg_%28Bezirk%29_COA.svg.png',
+      description: 'Prenzlauer Berg ab 1992 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: 'Schöneberg',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Sch%C3%B6neberg',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Coat_of_arms_de-be_schoeneberg_1956.png/83px-Coat_of_arms_de-be_schoeneberg_1956.png',
+      description: 'Schöneberg ab 1956 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: 'Steglitz',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Steglitz',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/DEU_District_Steglitz_COA.svg/82px-DEU_District_Steglitz_COA.svg.png',
+      description: 'Steglitz ab 1956 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: 'Tempelhof',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Tempelhof',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/DEU_District_Tempelhof_COA.svg/82px-DEU_District_Tempelhof_COA.svg.png',
+      description: 'Tempelhof ab 1957 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: 'Tiergarten',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Tiergarten',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Coat_of_arms_de-be_tiergarten_1955.png/81px-Coat_of_arms_de-be_tiergarten_1955.png',
+      description: 'Tiergarten ab 1955 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: 'Treptow',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Treptow',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Coat_of_arms_de-be_treptow_1920.png/106px-Coat_of_arms_de-be_treptow_1920.png',
+      description: 'Treptow ab 1920 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: '(Details)',
+      locationUrl: 'https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Treptow-K%C3%B6penick#Bezirkswappen',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Coat_of_arms_de-be_treptow_1992.png/83px-Coat_of_arms_de-be_treptow_1992.png',
+      description: 'Treptow ab 1992 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: 'Wedding',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Wedding',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/DEU_Wedding_COA.svg/81px-DEU_Wedding_COA.svg.png',
+      description: 'Wedding ab 1955 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: 'Weißensee',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Wei%C3%9Fensee',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Coat_of_arms_de-be_weissensee_1987.png/97px-Coat_of_arms_de-be_weissensee_1987.png',
+      description: 'Weißensee ab 1987 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: '(Details)',
+      locationUrl: 'https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Pankow#Bezirk_Wei%C3%9Fensee',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/DEU_Wei%C3%9Fensee_%28district%29_COA.svg/82px-DEU_Wei%C3%9Fensee_%28district%29_COA.svg.png',
+      description: 'Weißensee ab 1992 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: 'Wilmersdorf',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Wilmersdorf',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/DEU_Wilmersdorf_%28district%29_COA.svg/82px-DEU_Wilmersdorf_%28district%29_COA.svg.png',
+      description: 'Wilmersdorf ab 1955 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: 'Zehlendorf',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Zehlendorf',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Coat_of_arms_de-be_zehlendorf_1956.png/81px-Coat_of_arms_de-be_zehlendorf_1956.png',
+      description: 'Zehlendorf ab 1956 (Details)',
+      type: ['formerBezirke'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+    }, {
+      locationName: 'Charlottenburg',
+      locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Charlottenburg',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/DEU_Charlottenburg_COA.svg/99px-DEU_Charlottenburg_COA.svg.png',
+      description: 'Charlottenburg (Details)',
+      type: ['formerCity'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Städte',
+    }, {
+      locationName: 'Neu-Cölln',
+      locationUrl: 'https://de.wikipedia.org/wiki/Neu-K%C3%B6lln',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Coat_of_arms_de-be_neu-c%C3%B6lln.png/99px-Coat_of_arms_de-be_neu-c%C3%B6lln.png',
+      description: 'Neu-Cölln (Details)',
+      type: ['formerCity'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Städte',
+    }, {
+      locationName: 'Dorotheenstadt',
+      locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Dorotheenstadt',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Coat_of_arms_de-be_dorotheenstadt.png/97px-Coat_of_arms_de-be_dorotheenstadt.png',
+      description: 'Dorotheenstadt (Details)',
+      type: ['formerCity'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Städte',
+    }, {
+      locationName: 'Friedrichstadt',
+      locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Friedrichstadt',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Coa_Germany_Town_Berlin-Friedrichstadt.svg/104px-Coa_Germany_Town_Berlin-Friedrichstadt.svg.png',
+      description: 'Friedrichstadt (Details)',
+      type: ['formerCity'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Städte',
+    }, {
+      locationName: 'Friedrichswerder',
+      locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Friedrichswerder',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Coa_Germany_Town_Berlin-Friedrichwerder.svg/104px-Coa_Germany_Town_Berlin-Friedrichwerder.svg.png',
+      description: 'Friedrichswerder (Details)',
+      type: ['formerCity'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Städte',
+    }, {
+      locationName: 'Königsstadt',
+      locationUrl: 'https://de.wikipedia.org/wiki/K%C3%B6nigsstadt',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Coat_of_arms_de-be_koenigsstadt.png/101px-Coat_of_arms_de-be_koenigsstadt.png',
+      description: 'Königsstadt (Details)',
+      type: ['formerCity'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Städte',
+    }, {
+      locationName: 'Lichtenberg',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Lichtenberg',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Coat_of_arms_de-be_lichtenberg_1987.png/98px-Coat_of_arms_de-be_lichtenberg_1987.png',
+      description: 'Lichtenberg (Details)',
+      type: ['formerCity'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Städte',
+    }, {
+      locationName: 'Luisenstadt',
+      locationUrl: 'https://de.wikipedia.org/wiki/Luisenstadt',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Coat_of_arms_de-be_luisenstadt.png/99px-Coat_of_arms_de-be_luisenstadt.png',
+      description: 'Luisenstadt (Details)',
+      type: ['formerCity'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Städte',
+    }, {
+      locationName: 'Rixdorf',
+      locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Neuk%C3%B6lln',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Stadt-rixdorf.gif/74px-Stadt-rixdorf.gif',
+      description: 'Rixdorf (Details)',
+      type: ['formerCity'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Städte',
+    }, {
+      locationName: 'Spandauer Vorstadt',
+      locationUrl: 'https://de.wikipedia.org/wiki/Spandauer_Vorstadt',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Coat_of_arms_de-be_spandauer_vorstadt.png/99px-Coat_of_arms_de-be_spandauer_vorstadt.png',
+      description: 'Spandauer Vorstadt (Details)',
+      type: ['formerCity'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Städte',
+    }, {
+      locationName: 'Tempelhofer Revier',
+      locationUrl: 'https://de.wikipedia.org/wiki/Tempelhofer_Vorstadt',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/DEU_Tempelhof_COA.svg/101px-DEU_Tempelhof_COA.svg.png',
+      description: 'Tempelhofer Revier',
+      type: ['formerCity'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Städte',
+    }, {
+      locationName: 'Wedding',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Wedding',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/DEU_Wedding_%281920%29_COA.svg/104px-DEU_Wedding_%281920%29_COA.svg.png',
+      description: 'Wedding',
+      type: ['formerCity'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Städte',
+    }, {
+      locationName: 'Buch',
+      locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Buch',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Coat_of_arms_de-be_buch_1987.png/97px-Coat_of_arms_de-be_buch_1987.png',
+      description: 'Buch (Details)',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Landgemeinden',
+    }, {
+      locationName: 'Französisch Buchholz',
+      locationUrl: 'https://de.wikipedia.org/wiki/Franz%C3%B6sisch_Buchholz',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Coat_of_arms_de-be_buchholz_1987.png/97px-Coat_of_arms_de-be_buchholz_1987.png',
+      description: 'Französisch Buchholz (Details)',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Landgemeinden',
+    }, {
+      locationName: 'Friedenau',
+      locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Friedenau',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Wappen_Berlin_Friedenau.jpg/108px-Wappen_Berlin_Friedenau.jpg',
+      description: 'Friedenau (Details)',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Landgemeinden',
+    }, {
+      locationName: 'Friedrichsfelde',
+      locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Friedrichsfelde',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Coat_of_arms_de-be_friedrichsfelde_1987.png/95px-Coat_of_arms_de-be_friedrichsfelde_1987.png',
+      description: 'Friedrichsfelde (Details)',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Landgemeinden',
+    }, {
+      locationName: 'Friedrichshagen',
+      locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Friedrichshagen',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Coat_of_arms_de-be_friedrichshagen_1987.png/98px-Coat_of_arms_de-be_friedrichshagen_1987.png',
+      description: 'Friedrichshagen (Details)',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Landgemeinden',
+    }, {
+      locationName: 'Heiligensee',
+      locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Heiligensee',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/de/thumb/b/b7/Wappen_Berlin-Heiligensee.png/108px-Wappen_Berlin-Heiligensee.png',
+      description: 'Heiligensee (Details)',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Landgemeinden',
+    }, {
+      locationName: 'Hohenschönhausen',
+      locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Alt-Hohensch%C3%B6nhausen',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Coat_of_arms_of_Hohenschoenhausen_1816.svg/106px-Coat_of_arms_of_Hohenschoenhausen_1816.svg.png',
+      description: 'Hohenschönhausen (Details)',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Landgemeinden',
+    }, {
+      locationName: 'Johannisthal',
+      locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Johannisthal',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Coat_of_arms_de-be_johannisthal_1987.png/97px-Coat_of_arms_de-be_johannisthal_1987.png',
+      description: 'Johannisthal (Details)',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Landgemeinden',
+    }, {
+      locationName: 'Lankwitz',
+      locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Lankwitz',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Coa_Germany_Town_Berlin-Lankwitz.svg/104px-Coa_Germany_Town_Berlin-Lankwitz.svg.png',
+      description: 'Lankwitz (Details)',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Landgemeinden',
+    }, {
+      locationName: 'Lichterfelde',
+      locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Lichterfelde',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/DEU_Berlin-Lichterfelde_COA.jpg/108px-DEU_Berlin-Lichterfelde_COA.jpg',
+      description: 'Lichterfelde (Details)',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Landgemeinden',
+    }, {
+      locationName: 'Mahlsdorf',
+      locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Mahlsdorf',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Coat_of_arms_de-be_mahlsdorf_1987.png/96px-Coat_of_arms_de-be_mahlsdorf_1987.png',
+      description: 'Mahlsdorf (Details)',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Landgemeinden',
+    }, {
+      locationName: 'Müggelheim',
+      locationUrl: 'https://de.wikipedia.org/wiki/Berlin-M%C3%BCggelheim',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Coat_of_arms_de-be_mueggelheim_1987.png/98px-Coat_of_arms_de-be_mueggelheim_1987.png',
+      description: 'Müggelheim (Details)',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Landgemeinden',
+    }, {
+      locationName: 'Niederschönhausen',
+      locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Niedersch%C3%B6nhausen',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Coat_of_arms_de-be_niederschoenhausen_1987.png/98px-Coat_of_arms_de-be_niederschoenhausen_1987.png',
+      description: 'Niederschönhausen (Details)',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Landgemeinden',
+    }, {
+      locationName: 'Oberschöneweide',
+      locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Obersch%C3%B6neweide',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Coat_of_arms_de-be_oberschoeneweide_1987.png/97px-Coat_of_arms_de-be_oberschoeneweide_1987.png',
+      description: 'Oberschöneweide (Details)',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Landgemeinden',
+    }, {
+      locationName: 'Rahnsdorf',
+      locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Rahnsdorf',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Coat_of_arms_de-be_rahnsdorf_1987.png/97px-Coat_of_arms_de-be_rahnsdorf_1987.png',
+      description: 'Rahnsdorf (Details)',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Landgemeinden',
+    }, {
+      locationName: 'Rosenthal',
+      locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Rosenthal',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Coat_of_arms_de-be_rosenthal_1987.png/98px-Coat_of_arms_de-be_rosenthal_1987.png',
+      description: 'Rosenthal (Details)',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Landgemeinden',
+    }, {
+      locationName: 'Schmargendorf',
+      locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Schmargendorf',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Schmargendorf_Wappen.gif/109px-Schmargendorf_Wappen.gif',
+      description: 'Schmargendorf (Details)',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Landgemeinden',
+    }, {
+      locationName: 'Schmöckwitz',
+      locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Schm%C3%B6ckwitz',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Coat_of_arms_de-be_schmoeckwitz_1987.png/97px-Coat_of_arms_de-be_schmoeckwitz_1987.png',
+      description: 'Schmöckwitz (Details)',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Landgemeinden',
+    }, {
+      locationName: 'Stralau',
+      locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Stralau',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Coat_of_arms_de-be_stralau_1987.png/95px-Coat_of_arms_de-be_stralau_1987.png',
+      description: 'Stralau (Details)',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Landgemeinden',
+    }, {
+      locationName: 'Treptow',
+      locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Alt-Treptow',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Coat_of_arms_de-be_treptow_1920.png/106px-Coat_of_arms_de-be_treptow_1920.png',
+      description: 'Treptow (Details)',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Landgemeinden',
+    }, {
+      locationName: 'Waidmannslust',
+      locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Waidmannslust',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Coat_of_arms_de-be_Waidmannslust.jpg/111px-Coat_of_arms_de-be_Waidmannslust.jpg',
+      description: 'Waidmannslust (Details)',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
+      sourceTitle: 'Historische Wappen der Landgemeinden',
+    }
+]; 
+
+urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_Berlins'] = [
+  
+]; 
+
+urls.unitBySource['https://de.wikipedia.org/wiki/Berliner_B%C3%A4r'] = [
+  
+]; 
+
+urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Charlottenburg-Wilmersdorf'] = [
+  
+]; 
+
+urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Friedrichshain-Kreuzberg'] = [
+  
+]; 
+
+urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Lichtenberg'] = [
+  
+]; 
+
+urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Marzahn-Hellersdorf'] = [
+  
+]; 
+
+urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Mitte'] = [
+  
+]; 
+
+urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Neuk%C3%B6lln'] = [
+  
+]; 
+
+urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Pankow'] = [
+  
+]; 
+
+urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Reinickendorf'] = [
+  
+]; 
+
+urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Spandau'] = [
+  
+]; 
+
+urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Steglitz-Zehlendorf'] = [
+  
+]; 
+
+urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Tempelhof-Sch%C3%B6neberg'] = [
+  
+]; 
+
+urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Treptow-K%C3%B6penick'] = [
+  
+]; 

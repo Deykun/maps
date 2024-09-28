@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   viewBox="7 5 264 291"
+   width="264"
+   height="291"
+   version="1.1"
+>
+
+<title>Wappen der Stadt Lebach</title>
+
+<desc>
+	Coat of Arms of the City of Lebach, Germany
+	Original: "Festschrift zur Stadtwerdung", Lebach, 1977-06-25
+</desc>
+
+<defs>
+	<path id="shape" d="M 7,5 H271 V159 C 271,217 232,296 139,296 C 46,296 7,217 7,159 z" /> 
+	<clipPath id="clip">
+		<use xlink:href="#shape" />
+	</clipPath>
+</defs>
+
+<g id="coat-of-arms" clip-path="url(#clip)" >
+	<g id="gold" fill="gold">
+		<path d="M 139,139 h-132 V   5 h 132 z" />
+		<path d="M 139,139 h 132 V2965 h-132 z" />
+	</g>      
+	<g id="silver" fill="white">
+		<path d="M 139,139 h-132 V295 h 132 z" />
+		<path d="M 139,139 h 132 V  5 h-132 z" />
+	</g>
+	<g id="symbols" stroke="black" stroke-width="1">
+		<path id="turnierkragen" fill="royalblue" d="M 7,21 H139 V37 H125 v16 h-15 v-16 h-15 v16 h-15 v-16 h-15 v16 h-15 v-16 h-15 v16 h-15 v-16 H7 z" />
+		<g id="red" fill="red">
+			<path id="zickzack" d="M 7,83 l22,-18 l22,18 l22,-18 l22,18 l22,-18 l22,18 L 139,119 l-22,-18 l-22,18 l-22,-18 l-22,18 l-22,-18 l-22,18 z" />
+
+			<path id="stab" d="M 202,139 V111 C 202,95 181,107 170,100 C 174,99 176,98 179,96 C 170,94 156,82 156,70 C 158,71 161,71 164,71 C 158,61 158,41 164,31 C 166,35 167,37 170,39 C 172,27 185,14 193,14 C 192,17 192,19 192,23 C 198,15 221,11 228,16 C 225,18 223,20 222,22 C 234,22 248,35 248,45 C 246,44 243,44 241,44 C 244,55 243,71 233,77 C 233,74 232,71 231,70 C 222,79 210,82 202,76 C 203,76 204,75 206,73 C 195,71 192,59 197,50 C 198,54 201,54 201,54 A 10,10 0 1,1 212,63 C 216,70 232,62 232,51 C 232,40 223,30 208,30 C 193,30 178,43 178,58 C 178,71 186,84 199,88 C 215,93 219,99 219,110 C 219,110 219,138 219,139 z" />
+			<rect id="stab-deko" width="28" height="13" x="196.5" y="110" ry="4" />
+
+			<path id="kreuz" d="M 63,217 H7 V188 H63 V139 H92 V188 H271 V217 H92 V296 H63 z" />
+
+			<rect id="q" x="149" y="148" width="12" height="12" />
+			<use transform="translate(25, 0)" xlink:href="#q" />
+			<use transform="translate(50, 0)" xlink:href="#q" />
+			<use transform="translate(75, 0)" xlink:href="#q" />
+			<use transform="translate(100,0)" xlink:href="#q" />
+
+			<use transform="translate(12.5,18)" xlink:href="#q" />
+			<use transform="translate(37.5,18)" xlink:href="#q" />
+			<use transform="translate(62.5,18)" xlink:href="#q" />
+			<use transform="translate(87.5,18)" xlink:href="#q" />
+
+			<use transform="translate(11,78)" xlink:href="#q" />
+			<use transform="translate(36,78)" xlink:href="#q" />
+			<use transform="translate(61,78)" xlink:href="#q" />
+			<use transform="translate(23.5,96)" xlink:href="#q" />
+			<use transform="translate(48.5,96)" xlink:href="#q" />
+			<use transform="translate(36,114)" xlink:href="#q" />
+		</g>      
+	</g>      
+	<g id="black-lines" fill="none" stroke="black">
+		<use id="border" xlink:href="#shape" style="stroke-width:4" />
+		<path id="vbar" d="M 139,0 V300" style="stroke-width:2" />
+		<path id="hbar" d="M 0,139 H300" style="stroke-width:2" />
+	</g>
+</g>
+</svg>

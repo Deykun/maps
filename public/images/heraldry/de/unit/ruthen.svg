@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   width="100%"
+   height="100%"
+   viewBox="0 0 400 488"
+   version="1.1"
+   sodipodi:docname="Stadtwappen_der_Stadt_Rüthen.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Wappen der Stadt Rüthen</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs5">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective9" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-height="697"
+     inkscape:window-width="914"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="1"
+     inkscape:cx="200.82492"
+     inkscape:cy="241.44828"
+     inkscape:window-x="-1"
+     inkscape:window-y="-1"
+     inkscape:current-layer="svg2" />
+  <path
+     style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+     d="M 4,4 L 4,204 L 4,244 L 4,288 C 4,396.584 91.416,484 200,484 C 308.584,484 396,396.584 396,288 L 396,244 L 396,204 L 396,4 L 200,4 L 4,4 z"
+     id="feld"
+     sodipodi:nodetypes="ccccscccccc" />
+  <path
+     style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+     d="M 160,4 L 160,168 L 4,168 L 4,204 L 4,244 L 4,256 L 160,256 L 160,479.875 C 172.90179,482.52884 186.28993,484 200,484 C 216.56454,484 232.65587,481.95844 248,478.125 L 248,256 L 396,256 L 396,168 L 248,168 L 248,4 L 200,4 L 160,4 z"
+     id="kreuz" />
+  <rect
+     style="opacity:1;fill:#da121a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+     id="raute0"
+     width="65.115288"
+     height="65.115288"
+     x="-25.404802"
+     y="262.18768"
+     transform="matrix(0.6757246,-0.7371541,0.6757246,0.7371541,0,0)"
+     inkscape:tile-cx="50"
+     inkscape:tile-cy="53"
+     inkscape:tile-w="22"
+     inkscape:tile-h="24"
+     inkscape:tile-x0="39"
+     inkscape:tile-y0="41" />
+  <use
+     x="0"
+     y="0"
+     inkscape:tiled-clone-of="#raute0"
+     xlink:href="#raute0"
+     id="raute1"
+     transform="translate(-116,-112)"
+     width="100"
+     height="121" />
+  <use
+     x="0"
+     y="0"
+     inkscape:tiled-clone-of="#raute0"
+     xlink:href="#raute0"
+     transform="translate(116,-112)"
+     id="raute2"
+     width="100"
+     height="121" />
+  <use
+     x="0"
+     y="0"
+     inkscape:tiled-clone-of="#raute0"
+     xlink:href="#raute0"
+     transform="translate(-116,112)"
+     id="raute3"
+     width="100"
+     height="121" />
+  <use
+     x="0"
+     y="0"
+     inkscape:tiled-clone-of="#raute0"
+     xlink:href="#raute0"
+     transform="translate(116,112)"
+     id="raute4"
+     width="100"
+     height="121" />
+  <path
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+     d="M 4,4 L 4,204 L 4,244 L 4,288 C 4,396.584 91.416,484 200,484 C 308.584,484 396,396.584 396,288 L 396,244 L 396,204 L 396,4 L 200,4 L 4,4 z"
+     id="schildrahmen"
+     sodipodi:nodetypes="ccccscccccc" />
+</svg>

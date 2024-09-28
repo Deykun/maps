@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="460" width="410" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-205 -214 410 460">
+<path stroke="#000" stroke-width="10" d="m-200-209v250a200 200 0 0 0 400 0v-250z" fill="#fff"/>
+<g id="a"><g id="b">
+<path d="m55-11 1-65h-56l-2 78h27v-30c5 5 18 13 30 17z"/>
+<circle cx="79.8" cy="-134" r="52"/>
+<circle cy="-59" cx="75" r="52"/>
+<path d="m125-153 8 45c-14-18-40-25-50-42m-30 94c-32-26-50-50-50-50" stroke="#fff" stroke-linecap="round" stroke-width="48"/><circle cx="97" cy="-153.5" r="26"/>
+</g>
+<use xlink:href="#b" transform="scale(-1,1)"/></g>
+<use xlink:href="#a" transform="scale(1,-1)"/>
+</svg>

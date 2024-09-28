@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="410" width="368" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs><clipPath id="e" clipPathUnits="userSpaceOnUse"><use xlink:href="#b" /></clipPath></defs>
+<use xlink:href="#b" fill="#fff"/>
+<g stroke="#000" clip-path="url(#e)">
+<rect height="408" width="30" x="127" fill="#d11"/>
+<g stroke-width="2" fill="#fff">
+<use xlink:href="#a" stroke-width="4" transform="translate(-71.8)"/>
+<use xlink:href="#a" transform="translate(-53.85)"/>
+<use xlink:href="#a" transform="translate(-35.9)"/>
+<use xlink:href="#a" transform="translate(-17.95)"/>
+</g>
+<g stroke-width="4" fill="#d11">
+<g id="a">
+<use xlink:href="#d" transform="matrix(1,0,0,-1,0,408)"/>
+<g id="d">
+<path d="m213.8 167c0 15 11.6 22 11.6 37s-11.6 22-11.6 37 11.5 22 11.6 37-11.8 22-11.6 37 11.6 22 11.6 37-11.6 22-11.6 37 11.6 22 11.6 37h27.6v-259"/>
+</g>
+</g>
+</g>
+<path id="c" d="m238.8 410h58.2v-50h-37v-35.5h37v-35.5h-37v-35.5h37v-35.5h-37v-35.5h37v-35.5h-37v-35.5h37v-35.5h-37v-35.5h37v-35.5h-58.2" stroke-width="4" fill="#d11"/>
+<use xlink:href="#c" transform="matrix(-1,0,0,1,368,0)"/>
+</g>
+<g fill="none" stroke="#000">
+<path id="b" stroke-width="7" d="m364.3 3.5-10.1 233.6c-3.7 93.4-76.4 169.3-170.2 169.3-93.82 0-166.5-75.9-170.2-169.3l-10.07-233.6z"/>
+</g>
+</svg>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="471" width="392">
+	<g style="stroke:black">
+		<path d="m5,5 h382 v270 a191,191 0 0 1 -382,0z" style="fill:#FFD700" />
+		<path d="m384.6,305 a191,191 0 0 1 -377.2,0z" style="fill:#0050B8" />
+		
+		<path d="M139,320 h114 v76 a57,57 0 0 1 -114,0 z m10,10 h94 v94 h-94z" style="fill:#FFD700; fill-rule:evenodd; stroke-width:3" />		
+		<path d="M199,380 v-38 h16 v38 h-22 h38 v16 h-38 v-22 v38 h-16 v-38 h22 h-38 v-16 h38z" style="fill:#FFD700; fill-rule:even-odd; stroke-width:3" />
+		<circle cx="196" cy="377" r="13" style="fill:#FF4020; fill-rule:even-odd; stroke-width:3" />
+		
+		<path d="M118,305 v-242 h10 v-23 h12 v-20 h20 v7 h13 v13 h6 v57 
+		h32 v-33 h12 v-15 h10 v-12 h9 v-7 h9 v-10 h17 v14 h6 v271 h-22 v-170 
+		q0,-11 -10.5,-17 -10.5,6 -10.5,17 v56 -56 q0,-11 -10.5,-17 -10.5,6 -10.5,17
+		v170 h-28 v-170 
+		q0,-11 -10.5,-17 -10.5,6 -10.5,17 v56 -56 q0,-11 -10.5,-17 -10.5,6 -10.5,17
+		v170 h-22z		
+		M140,191 v55 q0,-22 21,-34 21,12 21,34 v-55 h-42 z	
+		M210,191 v55 q0,-22 21,-34 21,12 21,34 v-55 h-42 z"
+		style="fill:#FF4020; stroke-width:3" />		
+		
+		<path style="fill:none; stroke-width:3" d="M109,97 h174
+		M109,135 h37 m9,0 h12 m9,0 h40 m9,0 h12 m9,0 h37
+		M109,246 h9 m22,0 h7 m28,0 h7 m28,0 h7 m28,0 h7 m22,0 h9" />
+		
+		<path d="M5,5 h382 v270 a191,191 0 0 1 -382,0z M7.4,305 h377.2" style="fill:none; stroke-width:8" />
+	</g>
+</svg>

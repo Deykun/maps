@@ -1,0 +1,11 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="154" height="192">
+	<defs>
+		<path id="star" d="m26,14 a7,7 0 0,1 14,0 v5 a7,7 0 0,0 7,7 h5 a7,7 0 0,1 0,14 h-5 a7,7 0 0,0 -7,7 v5 a7,7 0 0,1 -14,0 v-5 a7,7 0 0,0 -7,-7 h-5 a7,7 0 0,1 0,-14 h5 a7,7 0 0,0 7,-7 z m6.5,11 a8,8 0 0,0 0,16 a8,8 0 0,0 0,-16" fill="yellow"/>
+	</defs>
+
+	<path d="m1,1 v113 a76,76 0 0,0 152,0 v-113 z" style="fill:#6bb350;stroke:#000;stroke-width:2"/>
+	<use xlink:href="#star"/>
+	<use xlink:href="#star" x="87"/>
+	<use xlink:href="#star" x="44" y="123"/>
+	<path d="m65,2 v69 c0,30 -22,61 -59,67 c2,5 4,11 8,16 c30,-6 55,-30 63,-55 c9,25 34,49 63,55 c3,-5 7,-11 8,-16 c-37,-6 -59,-37 -59,-67 v-69 z" fill="#fff"/>
+</svg>

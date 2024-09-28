@@ -19,16 +19,19 @@ const getUnitTypesFromTitle = (text) => {
 
   // stadt - city
   const isCity = ['stadt\n', 'stadt ', 'städte ', 'stadtwappen', 'städtewappen'].some((phrase) => lowercaseText.includes(phrase));
+  // bezirke - distric
+  const isBezirke = ['bezirke'].some((phrase) => lowercaseText.includes(phrase));
   const isLand = ['landeswappen'].some((phrase) => lowercaseText.includes(phrase));
   const isGemeinde = [' gem.', 'gemeindewappen', 'gemeinde', 'gemeinden', 'marktgemeinde'].some((phrase) => lowercaseText.includes(phrase));
   const isMarkt = ['markt', 'märkte'].some((phrase) => lowercaseText.includes(phrase));
   const isMarktgemeinde = ['marktgemeinde', 'märkte'].some((phrase) => lowercaseText.includes(phrase));
 
-  const isKreis = !isCity && !isLand && !isGemeinde && !isMarkt && !isMarktgemeinde && ['kreis', 'landkreis'].some((phrase) => lowercaseText.includes(phrase));
+  const isKreis = !isCity && !isBezirke && !isLand && !isGemeinde && !isMarkt && !isMarktgemeinde && ['kreis', 'landkreis'].some((phrase) => lowercaseText.includes(phrase));
 
   const types = [
     isCity ? 'city' : '',
     isKreis ? 'kreis' : '',
+    isBezirke ? 'bezirke' : '',
     isLand ? 'land' : '',
     isGemeinde ? 'gemeinde' : '',
     isMarkt ? 'markt' : '',

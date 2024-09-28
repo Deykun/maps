@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="490" width="410">
+<defs>
+<pattern id="a" xlink:href="#b" patternTransform="matrix(.9272 0 0 .9272 188.1 -101.8)"/>
+<pattern id="b" width="13.728" patternUnits="userSpaceOnUse" patternTransform="translate(198.1 63.14)" height="13.728">
+<rect transform="rotate(90)" height="12.73" width="12.73" stroke="#000" y="-13.23" x=".5" fill="#e22"/>
+</pattern>
+<clipPath id="f">
+<path id="escutcheon" stroke="#000" stroke-width="8" d="m5 5v280a200 200 0 0 0 400 0v-280z"/>
+</clipPath>
+</defs>
+<use xlink:href="#escutcheon" fill="#29d"/>
+<g stroke="#000" stroke-width="3" fill="#e22">
+<rect rx="4" ry="4" height="49" width="8" y="15" x="201"/>
+<rect transform="rotate(45)" height="132" width="132" y="-102.5" x="187.4" fill="url(#a)"/>
+<circle cy="38" cx="205" r="12" stroke-width="2"/>
+</g>
+<path d="m213 34.6c-2 6.4-5 9.4-11 11.1 7 3.1 14-4.2 11-11.1z"/>
+<g clip-path="url(#f)">
+<g id="d" stroke="#000" stroke-width="3" >
+<path d="m335 172c0 40.3-32.7 73-73 73v19c50.8 0 92-41.2 92-92z" fill="#ddd"/>
+<path d="m276 300 25.8-16v27l25.8-15.7v-27.3l25.8-16v27.7l25.8-15.7v-28l25.8-16-2 219-124 51-3-190z" fill="#ddd"/>
+<path d="m343 389v35m0-104v34m29-87v35m0 34v35m-87 54v35m0-104v35m31-20v35m0-103v34m-38 127 128-79m-128 44.3 127-78.3m-127 43.7 124-77.7m-124 43 125-77" stroke-width="2"/>
+<path d="m205 201h86v-62h-29v33h-36v-33h-23" fill="#ddd"/>
+<path d="m292 195h67v-46h-23v21h-21v-21h-23v46z" fill="#ddd"/>
+</g>
+<use xlink:href="#d" transform="matrix(-1,0,0,1,410,0)"/>
+<rect height="280" width="146" stroke="#000" y="210" x="132" stroke-width="3" fill="#ddd"/>
+<path stroke="#000" stroke-width="2" d="m205 317.9c-34.5 17.8-58 53.7-58 95.1v80h116v-80c0-41.4-23.5-77.3-58-95.1z" fill="#ddd"/>
+<path d="m205 317.9c-34.5 17.8-58 53.7-58 95.1v80h58"/>
+<g stroke-width="2" stroke="#000" fill="none">
+<path d="m201 352c-15.9 14.7-25.9 35.6-25.9 59.2v80"/>
+<path stroke-width="6" stroke="#ddd" stroke-linecap="round" d="m205 327c-29.9 17.1-50.2 49.1-50.2 86v80"/>
+<path d="m205 327c-29.9 17.1-50.2 49.1-50.2 86v80h100.4v-80c0-36.9-20.3-68.9-50.2-86z"/>
+<path d="m205 336.8c-25 16.2-41.7 44.1-41.7 76.2v80h83.4v-80c0-32.1-16.7-60-41.7-76.2z"/>
+<path d="m205 348.8c-19.3 14.7-31.9 37.8-31.9 64.2v80h63.8v-80c0-26.4-12.6-49.5-31.9-64.2z" fill="#29d"/>
+<path d="m205 320.1c-33.3 17.6-56.1 52.6-56.1 92.9v78.1m56.1-151.9c-23.9 15.9-39.8 42.8-39.8 73.8v78.1" stroke="#ddd" stroke-linecap="round"/>
+</g>
+</g>
+<g stroke="#000" stroke-width="2">
+<use xlink:href="#c" transform="matrix(-1,0,0,1,410,0)"/>
+<path d="m205 203v22"/>
+<path d="m205 247v22"/>
+<path d="m205 292v25.9"/>
+<path id="g" d="m230 335.9h48m-30 22.2h30m-20 22.2h20m-15 22.2h15m-15 22.1h15m-15 22.2h15m-15 22.2h15m-44-244v22m28-43v22m0 21v22m0 23v22m0 23v22m-28-45v22"/>
+<path d="m133 313.7h144"/>
+<path d="m133 291.5h145"/>
+<path d="m133 269.4h145"/>
+<path d="m133 247.2h145"/>
+<path id="c" d="m133 225h146"/>
+<use xlink:href="#g" transform="matrix(-1,0,0,1,410,0)"/>
+
+</g>
+<use xlink:href="#escutcheon" fill="none"/>
+<use xlink:href="#e" transform="translate(-65)"/>
+<rect height="7" width="156" stroke="#000" y="203" x="127" stroke-width="3" fill="#ddd"/>
+<g id="e" stroke="#000" stroke-width="2">
+<rect height="44" width="29" y="247" x="223" fill="#ddd"/>
+<rect y="247" width="24" x="223" height="39"/>
+<path d="m247.2 286.1 4.8 4.9" fill="none"/>
+</g>
+</svg>
