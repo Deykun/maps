@@ -4,6 +4,7 @@ import intervalPlural from 'i18next-intervalplural-postprocessor';
 
 import localeEn from './locales/en.json';
 import localeEt from './locales/et.json';
+import localeDe from './locales/de.json';
 import localePl from './locales/pl.json';
 
 // TODO: manage them separated from your code: https://react.i18next.com/guides/multiple-translation-files)
@@ -13,6 +14,9 @@ const resources = {
   },
   et: {
     translation: localeEt,
+  },
+  de: {
+    translation: localeDe,
   },
   pl: {
     translation: localePl,

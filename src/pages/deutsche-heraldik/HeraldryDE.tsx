@@ -140,8 +140,8 @@ const HeraldryDE = () => {
       mapOffset={{
          minLatTop: 47.27,
          maxLatTop: 55.09,
-         minLonLeft: 6.14,
-         maxLonLeft: 14.80,
+         minLonLeft: 6.10,
+         maxLonLeft: 14.9,
       }}
       initialFilters={initialFilters}
       developmentModeFiltersTypes={['unit', 'formerUnit']}
