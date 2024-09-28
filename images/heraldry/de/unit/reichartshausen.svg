@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="655" width="637" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path id="a" d="m6.7388 6.496 15.52 397.52c8.78 125.69 137.48 244.85 298.52 243.99 161.14-0.96 293.91-119.05 294.66-272.79l14.78-368.72z"/>
+<use xlink:href="#a" fill="#fff"/>
+<g stroke="#000" fill="#da251d">
+<path d="m257.02 181.28v367.51h122.6v-367.51z" stroke-width="8"/>
+<path d="m318.34 85.501-71.1 95.779h142.19z" stroke-width="8"/>
+<path d="m318.04 337.83c-16.11 0-31.31 6.37-42.83 17.9-11.47 11.5-17.94 28.37-18.36 44.71h123.79c-0.42-16.34-8.24-33.21-19.7-44.71-11.53-11.53-26.77-17.9-42.9-17.9z" stroke-width="5"/>
+<path d="m318.07 400.44v148.35h61.55v-148.35z" stroke-width="5"/>
+</g>
+<g id="b" stroke="#000">
+<g fill="#da251d">
+<path d="m379.62 201.43v118.96h168.01l-67.55-118.96z" stroke-width="8"/>
+<path d="m379.62 320.39v228.4h135.64v-228.04z" stroke-width="8"/>
+<path stroke-linejoin="bevel" d="m379.62 548.79h135.64l-135.64-114.07h135.64z" stroke-width="5"/>
+</g>
+<path stroke-width="8" d="m318.29 34.191v51.375m0-30.875h18.14"/>
+<path d="m338.74 221.67h20.14v57.24h-20.14z" stroke-width="5" fill="#fff"/>
+<path d="m431.87 348.62h30.48v57.67h-30.48z" stroke-width="5" fill="#fff"/>
+</g>
+<path stroke="#000" stroke-width="8" d="m88.78 548.79c55.92 56.99 138.64 101.41 232.1 100.92 90.55-0.54 172.16-42.36 227.7-100.92z" fill="#00973f"/>
+<use xlink:href="#b" transform="matrix(-1 0 0 1 636.97 0)"/>
+<use xlink:href="#a" stroke="#000" stroke-width="13" fill="none"/>
+</svg>

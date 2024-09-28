@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="182" height="191">
+	<defs>
+		<path id="loch" d="m30,47 h8 v11 h-8 z" style="fill:none;stroke:#000"/>
+		<g id="turm">
+			<path d="m14,57 h9 v6 h8 v-6 h8 v6 h8 v-6 h8 v13 h-40 z" style="fill:red;stroke:#000"/>
+			<path d="m19,70 h30 v75 h-30 z" style="fill:red;stroke:#000"/>
+			<use y="32" xlink:href="#loch"/>
+			<path d="m30,100 h8 v12 h-8 z" style="fill:none;stroke:#000"/>
+		</g>
+	</defs>
+	<path d="m3,3 l4,105 a83.6,83.6 0 0,0 167,0 l4,-105 z" style="fill:#fff;stroke:#000;stroke-width:5"/>
+	<use xlink:href="#turm"/>
+	<use x="113" xlink:href="#turm"/>
+	<path d="m66,20 h10 v8 h10 v-8 h10 v8 h10 v-8 h10 v17 h-50 z" style="fill:red;stroke:#000"/>
+	<path d="m73,37 h36 v90 h-36 z" style="fill:red;stroke:#000"/>
+	<use x="49" xlink:href="#loch"/>
+	<use x="64" xlink:href="#loch"/>
+	<path d="m81,127 v-37 a9,9 0 0,1 18,0 v37" style="fill:none;stroke:#000"/>
+	<path d="m19,146 a23,23 0 0,1 35,-7 a45,45 0 0,1 74,0 a23,23 0 0,1 35,7 a83.5,83.5 0 0,1 -145,0" style="fill:green;stroke:#000;stroke-width:4"/>
+</svg>
+

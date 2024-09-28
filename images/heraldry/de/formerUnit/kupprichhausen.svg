@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="473" width="387.5" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 96.875 118.25">
+<title>Wappen Kupprichhausen</title>
+<defs>
+<clipPath id="c" clipPathUnits="userSpaceOnUse"><use xlink:href="#a" height="1" width="1"/></clipPath>
+</defs>
+<path id="a" d="m48.429 117.2c-26.38 0-47.618-20.403-47.618-45.756l0.00019-70.611 47.618-0.00045h47.617v70.611c0 25.353-21.237 45.756-47.617 45.756z"/>
+<use xlink:href="#a" fill="#f13826"/>
+<g clip-path="url(#c)">
+<g id="b" stroke-width="1.35" fill="#fff" stroke="#000">
+<rect height="58.185" width="15.872" y=".83257" x="16.701"/>
+<rect height="58.185" width="15.872" y=".83257" x="80.191"/>
+<rect height="58.185" width="15.872" y=".83257" x="48.446"/>
+</g>
+<use xlink:href="#b" transform="matrix(-1 0 0 -1 96.875 118.03)" height="118.25" width="96.875"/>
+</g>
+<use xlink:href="#a" stroke="#000" stroke-width="1.65" fill="none"/>
+</svg>

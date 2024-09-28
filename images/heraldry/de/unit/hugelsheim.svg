@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="300px" height="310px">
+<defs>
+  <clipPath id="outlineClip">
+    <path id="outline" d="m2,2l7,170.665a141.119,141.119 0 0 0 282,0l7,-170.665z"/>
+  </clipPath>
+</defs>
+<g stroke="#000" fill="none">
+  <g stroke-width="2" clip-path="url(#outlineClip)">
+    <rect fill="#0081c9" x="0" y="0" width="300" height="310"/>
+    <rect x="2" y="2" width="148" height="306" fill="#fd4"/>
+    <rect x="2" y="121" width="148" height="68" fill="#c22"/>
+    <path d="M174,15h88v20h-34v120a47,47 0 1 1 -20,0v-120h-34z
+      m54,176h17a27,27 0 0 0 -17,-17z
+      m-20,0v-17a27,27 0 0 0 -17,17z
+      m0,20h-17a27,27 0 0 0 17,17z
+      m20,0v17a27,27 0 0 0 17,-17z" fill="#fd4"/>
+  </g>
+  <use xlink:href="#outline" stroke-width="4"/>
+</g>
+</svg>
