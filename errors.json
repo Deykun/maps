@@ -1,111 +1,6 @@
 [
     {
-        "title": "Missing corrdinates for 'Lage des Landkreises Main-Spessart in Bayern'. Page with the location not found.",
-        "details": [
-            "Tried pages: .",
-            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
-            "",
-            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
-            "",
-            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
-            "",
-            "List of errors:",
-            ""
-        ],
-        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Main-Spessart"
-    },
-    {
-        "title": "Missing corrdinates for 'Lage des Landkreises Main-Spessart in Deutschland'. Page with the location not found.",
-        "details": [
-            "Tried pages: .",
-            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
-            "",
-            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
-            "",
-            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
-            "",
-            "List of errors:",
-            ""
-        ],
-        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Main-Spessart"
-    },
-    {
-        "title": "Missing corrdinates for ''. Page with the location not found.",
-        "details": [
-            "Tried pages: .",
-            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
-            "",
-            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
-            "",
-            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
-            "",
-            "List of errors:",
-            ""
-        ],
-        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Main-Spessart"
-    },
-    {
-        "title": "Missing corrdinates for 'Lage des Landkreises Altötting in Bayern'. Page with the location not found.",
-        "details": [
-            "Tried pages: .",
-            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
-            "",
-            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
-            "",
-            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
-            "",
-            "List of errors:",
-            ""
-        ],
-        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Alt%C3%B6tting"
-    },
-    {
-        "title": "Missing corrdinates for 'Lage des Landkreises Altötting in Deutschland'. Page with the location not found.",
-        "details": [
-            "Tried pages: .",
-            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
-            "",
-            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
-            "",
-            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
-            "",
-            "List of errors:",
-            ""
-        ],
-        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Alt%C3%B6tting"
-    },
-    {
-        "title": "Missing corrdinates for 'Lage des Landkreises Amberg-Sulzbach in Bayern'. Page with the location not found.",
-        "details": [
-            "Tried pages: .",
-            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
-            "",
-            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
-            "",
-            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
-            "",
-            "List of errors:",
-            ""
-        ],
-        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Amberg-Sulzbach"
-    },
-    {
-        "title": "Missing corrdinates for 'Lage des Landkreises Amberg-Sulzbach in Deutschland'. Page with the location not found.",
-        "details": [
-            "Tried pages: .",
-            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
-            "",
-            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
-            "",
-            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
-            "",
-            "List of errors:",
-            ""
-        ],
-        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Amberg-Sulzbach"
-    },
-    {
-        "title": "Missing corrdinates for 'GemeindeRosenberg'. Page with the location not found.",
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
         "details": [
             "Tried pages: index.php?title=Rosenberg (Oberpfalz)&action=edit&redlink=1.",
             "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
@@ -121,9 +16,9 @@
         "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Amberg-Sulzbach"
     },
     {
-        "title": "Missing corrdinates for 'Lage des Landkreises Pfaffenhofen a.d.Ilm in Bayern'. Page with the location not found.",
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
         "details": [
-            "Tried pages: .",
+            "Tried pages: index.php?title=Rohrbach (Mönchsdeggingen)&action=edit&redlink=1.",
             "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
             "",
             "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
@@ -131,14 +26,15 @@
             "You will find the proper name of the page in the URL, make sure it has lat and lon.",
             "",
             "List of errors:",
+            "Page 'index.php?title=Rohrbach (Mönchsdeggingen)&action=edit&redlink=1' does not exist.",
             ""
         ],
-        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Pfaffenhofen_an_der_Ilm"
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Donau-Ries"
     },
     {
-        "title": "Missing corrdinates for 'Lage des Landkreises Pfaffenhofen a.d.Ilm in Deutschland'. Page with the location not found.",
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
         "details": [
-            "Tried pages: .",
+            "Tried pages: index.php?title=Herrnsdorf (Frensdorf)&action=edit&redlink=1.",
             "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
             "",
             "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
@@ -146,14 +42,15 @@
             "You will find the proper name of the page in the URL, make sure it has lat and lon.",
             "",
             "List of errors:",
+            "Page 'index.php?title=Herrnsdorf (Frensdorf)&action=edit&redlink=1' does not exist.",
             ""
         ],
-        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Pfaffenhofen_an_der_Ilm"
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Bamberg"
     },
     {
-        "title": "Missing corrdinates for 'Lage des Landkreises Fürstenfeldbruck in Bayern'. Page with the location not found.",
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
         "details": [
-            "Tried pages: .",
+            "Tried pages: index.php?title=Altenmarkt (Oberpfalz)&action=edit&redlink=1.",
             "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
             "",
             "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
@@ -161,14 +58,15 @@
             "You will find the proper name of the page in the URL, make sure it has lat and lon.",
             "",
             "List of errors:",
+            "Page 'index.php?title=Altenmarkt (Oberpfalz)&action=edit&redlink=1' does not exist.",
             ""
         ],
-        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_F%C3%BCrstenfeldbruck"
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Cham"
     },
     {
-        "title": "Missing corrdinates for 'Lage des Landkreises Fürstenfeldbruck in Deutschland'. Page with the location not found.",
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
         "details": [
-            "Tried pages: .",
+            "Tried pages: index.php?title=Merzingen&action=edit&redlink=1.",
             "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
             "",
             "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
@@ -176,14 +74,15 @@
             "You will find the proper name of the page in the URL, make sure it has lat and lon.",
             "",
             "List of errors:",
+            "Page 'index.php?title=Merzingen&action=edit&redlink=1' does not exist.",
             ""
         ],
-        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_F%C3%BCrstenfeldbruck"
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Donau-Ries"
     },
     {
-        "title": "Missing corrdinates for 'Lage des Landkreises Oberallgäu in Bayern'. Page with the location not found.",
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
         "details": [
-            "Tried pages: .",
+            "Tried pages: index.php?title=Holzkirchen (Wechingen)&action=edit&redlink=1.",
             "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
             "",
             "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
@@ -191,14 +90,15 @@
             "You will find the proper name of the page in the URL, make sure it has lat and lon.",
             "",
             "List of errors:",
+            "Page 'index.php?title=Holzkirchen (Wechingen)&action=edit&redlink=1' does not exist.",
             ""
         ],
-        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberallg%C3%A4u"
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Donau-Ries"
     },
     {
-        "title": "Missing corrdinates for 'Lage des Landkreises Oberallgäu in Deutschland'. Page with the location not found.",
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
         "details": [
-            "Tried pages: .",
+            "Tried pages: index.php?title=Warzenried&action=edit&redlink=1.",
             "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
             "",
             "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
@@ -206,14 +106,15 @@
             "You will find the proper name of the page in the URL, make sure it has lat and lon.",
             "",
             "List of errors:",
+            "Page 'index.php?title=Warzenried&action=edit&redlink=1' does not exist.",
             ""
         ],
-        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberallg%C3%A4u"
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Cham"
     },
     {
-        "title": "Missing corrdinates for 'Gemeinde Ottacker'. Page with the location not found.",
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
         "details": [
-            "Tried pages: index.php?title=Ottacker&action=edit&redlink=1.",
+            "Tried pages: index.php?title=Schaffhausen (Mönchsdeggingen)&action=edit&redlink=1.",
             "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
             "",
             "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
@@ -221,15 +122,15 @@
             "You will find the proper name of the page in the URL, make sure it has lat and lon.",
             "",
             "List of errors:",
-            "Page 'index.php?title=Ottacker&action=edit&redlink=1' does not exist.",
+            "Page 'index.php?title=Schaffhausen (Mönchsdeggingen)&action=edit&redlink=1' does not exist.",
             ""
         ],
-        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberallg%C3%A4u"
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Donau-Ries"
     },
     {
-        "title": "Missing corrdinates for 'GemeindeStein i. Allgäu'. Page with the location not found.",
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
         "details": [
-            "Tried pages: Stein im Allgäu.",
+            "Tried pages: index.php?title=Sachsenham (Haarbach)&action=edit&redlink=1.",
             "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
             "",
             "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
@@ -237,13 +138,317 @@
             "You will find the proper name of the page in the URL, make sure it has lat and lon.",
             "",
             "List of errors:",
-            "Page 'Stein im Allgäu' exists but without location, no location.",
+            "Page 'index.php?title=Sachsenham (Haarbach)&action=edit&redlink=1' does not exist.",
             ""
         ],
-        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberallg%C3%A4u"
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Passau"
     },
     {
-        "title": "Missing corrdinates for 'GemeindeUntermaiselstein'. Page with the location not found.",
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Untermagerbein&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Untermagerbein&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Donau-Ries"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Issing (Oberbayern)&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Issing (Oberbayern)&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Landsberg_am_Lech"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Rück (Unterfranken)&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Rück (Unterfranken)&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Miltenberg"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: Zusum-Rettingen.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'Zusum-Rettingen' exists but without location, no location.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Donau-Ries"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Luhe (Oberpfalz)&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Luhe (Oberpfalz)&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Neustadt_an_der_Waldnaab"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: Wolfsbach (Landshut).",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'Wolfsbach (Landshut)' exists but without location, no location.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Landshut"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: Reutin.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'Reutin' exists but without location, no location.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Lindau_(Bodensee)"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Oberbibrach&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Oberbibrach&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Neustadt_an_der_Waldnaab"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Asch (Weißenhorn)&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Asch (Weißenhorn)&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Neu-Ulm"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Bergenstetten&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Bergenstetten&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Neu-Ulm"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Biberachzell&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Biberachzell&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Neu-Ulm"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Herrenstetten&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Herrenstetten&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Neu-Ulm"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Illereichen-Altstadt&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Illereichen-Altstadt&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Neu-Ulm"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Filzingen&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Filzingen&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Neu-Ulm"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Ingstetten (Roggenburg)&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Ingstetten (Roggenburg)&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Neu-Ulm"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Oberhausen (Weißenhorn)&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Oberhausen (Weißenhorn)&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Neu-Ulm"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Oberreichenbach (Weißenhorn)&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Oberreichenbach (Weißenhorn)&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Neu-Ulm"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Schießen (Roggenburg)&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Schießen (Roggenburg)&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Neu-Ulm"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Untereichen (Altenstadt)&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Untereichen (Altenstadt)&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Neu-Ulm"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
         "details": [
             "Tried pages: index.php?title=Untermaiselstein&action=edit&redlink=1.",
             "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
@@ -259,7 +464,23 @@
         "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberallg%C3%A4u"
     },
     {
-        "title": "Missing corrdinates for 'GemeindeVorderburg'. Page with the location not found.",
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Ottacker&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Ottacker&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberallg%C3%A4u"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
         "details": [
             "Tried pages: index.php?title=Vorderburg (Rettenberg)&action=edit&redlink=1.",
             "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
@@ -275,7 +496,103 @@
         "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberallg%C3%A4u"
     },
     {
-        "title": "Missing corrdinates for 'Lage des Landkreises Lichtenfels in Bayern'. Page with the location not found.",
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Buching (Halblech)&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Buching (Halblech)&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostallg%C3%A4u"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Enzenstetten&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Enzenstetten&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostallg%C3%A4u"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: Stein im Allgäu.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'Stein im Allgäu' exists but without location, no location.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberallg%C3%A4u"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Oberthingau&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Oberthingau&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostallg%C3%A4u"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Remnatsried&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Remnatsried&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostallg%C3%A4u"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Reinhardsried&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Reinhardsried&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostallg%C3%A4u"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
         "details": [
             "Tried pages: .",
             "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
@@ -287,12 +604,12 @@
             "List of errors:",
             ""
         ],
-        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Lichtenfels"
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Wunsiedel_im_Fichtelgebirge"
     },
     {
-        "title": "Missing corrdinates for 'Lage des Landkreises Lichtenfels in Deutschland'. Page with the location not found.",
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
         "details": [
-            "Tried pages: .",
+            "Tried pages: index.php?title=Stein (Pfronten)&action=edit&redlink=1.",
             "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
             "",
             "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
@@ -300,14 +617,15 @@
             "You will find the proper name of the page in the URL, make sure it has lat and lon.",
             "",
             "List of errors:",
+            "Page 'index.php?title=Stein (Pfronten)&action=edit&redlink=1' does not exist.",
             ""
         ],
-        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Lichtenfels"
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostallg%C3%A4u"
     },
     {
-        "title": "Missing corrdinates for 'Lage des Landkreises Aschaffenburg in Bayern'. Page with the location not found.",
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
         "details": [
-            "Tried pages: .",
+            "Tried pages: index.php?title=Steinbach (Stötten am Auerberg)&action=edit&redlink=1.",
             "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
             "",
             "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
@@ -315,14 +633,15 @@
             "You will find the proper name of the page in the URL, make sure it has lat and lon.",
             "",
             "List of errors:",
+            "Page 'index.php?title=Steinbach (Stötten am Auerberg)&action=edit&redlink=1' does not exist.",
             ""
         ],
-        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Aschaffenburg"
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostallg%C3%A4u"
     },
     {
-        "title": "Missing corrdinates for 'Lage des Landkreises Aschaffenburg in Deutschland'. Page with the location not found.",
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
         "details": [
-            "Tried pages: .",
+            "Tried pages: index.php?title=Unterostendorf&action=edit&redlink=1.",
             "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
             "",
             "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
@@ -330,14 +649,15 @@
             "You will find the proper name of the page in the URL, make sure it has lat and lon.",
             "",
             "List of errors:",
+            "Page 'index.php?title=Unterostendorf&action=edit&redlink=1' does not exist.",
             ""
         ],
-        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Aschaffenburg"
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostallg%C3%A4u"
     },
     {
-        "title": "Missing corrdinates for 'Lage des Landkreises Starnberg in Bayern'. Page with the location not found.",
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
         "details": [
-            "Tried pages: .",
+            "Tried pages: index.php?title=Korbersdorf&action=edit&redlink=1.",
             "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
             "",
             "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
@@ -345,14 +665,15 @@
             "You will find the proper name of the page in the URL, make sure it has lat and lon.",
             "",
             "List of errors:",
+            "Page 'index.php?title=Korbersdorf&action=edit&redlink=1' does not exist.",
             ""
         ],
-        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Starnberg"
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Wunsiedel_im_Fichtelgebirge"
     },
     {
-        "title": "Missing corrdinates for 'Lage des Landkreises Starnberg in Deutschland'. Page with the location not found.",
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
         "details": [
-            "Tried pages: .",
+            "Tried pages: Zwieselberg (Landkreis Füssen).",
             "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
             "",
             "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
@@ -360,14 +681,15 @@
             "You will find the proper name of the page in the URL, make sure it has lat and lon.",
             "",
             "List of errors:",
+            "Page 'Zwieselberg (Landkreis Füssen)' exists but without location, no location.",
             ""
         ],
-        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Starnberg"
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostallg%C3%A4u"
     },
     {
-        "title": "Missing corrdinates for 'Lage des Landkreises Freising in Bayern'. Page with the location not found.",
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
         "details": [
-            "Tried pages: .",
+            "Tried pages: index.php?title=Leutendorf (Marktredwitz)&action=edit&redlink=1.",
             "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
             "",
             "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
@@ -375,14 +697,15 @@
             "You will find the proper name of the page in the URL, make sure it has lat and lon.",
             "",
             "List of errors:",
+            "Page 'index.php?title=Leutendorf (Marktredwitz)&action=edit&redlink=1' does not exist.",
             ""
         ],
-        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Freising"
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Wunsiedel_im_Fichtelgebirge"
     },
     {
-        "title": "Missing corrdinates for 'Lage des Landkreises Freising in Deutschland'. Page with the location not found.",
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
         "details": [
-            "Tried pages: .",
+            "Tried pages: Hittenkirchen.",
             "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
             "",
             "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
@@ -390,12 +713,13 @@
             "You will find the proper name of the page in the URL, make sure it has lat and lon.",
             "",
             "List of errors:",
+            "Page 'Hittenkirchen' exists but without location, no location.",
             ""
         ],
-        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Freising"
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Rosenheim"
     },
     {
-        "title": "Missing corrdinates for 'GemeindeOberalting-Seefeld'. Page with the location not found.",
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
         "details": [
             "Tried pages: Oberalting-Seefeld.",
             "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
@@ -409,5 +733,309 @@
             ""
         ],
         "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Starnberg"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: Brand (Marktredwitz).",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'Brand (Marktredwitz)' exists but without location, no location.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Wunsiedel_im_Fichtelgebirge"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Neudes&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Neudes&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Wunsiedel_im_Fichtelgebirge"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Wölsau&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Wölsau&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Wunsiedel_im_Fichtelgebirge"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: Lorenzreuth.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'Lorenzreuth' exists but without location, no location.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Wunsiedel_im_Fichtelgebirge"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Reuth (Oberfranken)&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Reuth (Oberfranken)&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Forchheim"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Wolfsberg (Oberfranken)&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Wolfsberg (Oberfranken)&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Forchheim"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Dachelhofen&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Dachelhofen&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Schwandorf"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Wildenreuth (Erbendorf)&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Wildenreuth (Erbendorf)&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Tirschenreuth"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Maxhütte (Oberpfalz)&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Maxhütte (Oberpfalz)&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Schwandorf"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: Elkofen.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'Elkofen' exists but without location, no location.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ebersberg"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: Wappen der Gemeinde Oberehrenbach.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'Wappen der Gemeinde Oberehrenbach' exists but without location, no location.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Forchheim"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Engetried&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Engetried&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Unterallg%C3%A4u"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Eutenhausen (Markt Rettenbach)&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Eutenhausen (Markt Rettenbach)&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Unterallg%C3%A4u"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Dieratried&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Dieratried&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Unterallg%C3%A4u"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Kardorf (Kronburg)&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Kardorf (Kronburg)&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Unterallg%C3%A4u"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Lannenberg&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Lannenberg&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Unterallg%C3%A4u"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Unterauerbach (Mindelheim)&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Unterauerbach (Mindelheim)&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Unterallg%C3%A4u"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Wineden&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Wineden&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Unterallg%C3%A4u"
+    },
+    {
+        "title": "Missing corrdinates for 'undefined'. Page with the location not found.",
+        "details": [
+            "Tried pages: index.php?title=Schlingen (Bad Wörishofen)&action=edit&redlink=1.",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'index.php?title=Schlingen (Bad Wörishofen)&action=edit&redlink=1' does not exist.",
+            ""
+        ],
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Unterallg%C3%A4u"
     }
 ]

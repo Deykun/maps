@@ -1,8 +1,10 @@
 import { removeDiacratics } from '../../../src/utils/text';
 export const getImageFileName = (title: string) => {
-  let fileName = removeDiacratics(title.toLowerCase()).replace(/[^\w\s]/gi, '').replaceAll(' ', '-').replace(/[^a-z-]+/g, '');
-
-  fileName = fileName.replace('gemeinde', '').replace('stadt', '').replace('landkreis', '');
+  let fileName = removeDiacratics(title.toLowerCase())
+    .replace(/[^\w\s]/gi, '')
+    .replace(/\s/gi, '-')
+    .replace(/[^a-z-]+/g, '')
+    .split('-').filter((word: string) => !['gemeinde', 'stadt', 'landkreis'].includes(word)).join('-');
 
   fileName = fileName.slice(0, 30);
     // flattening collisions

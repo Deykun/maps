@@ -2,12 +2,9 @@ const getFromLocalStorage = (key, defaultValues = {}) => (localStorage.getItem(k
   ? { ...defaultValues, ...JSON.parse(localStorage.getItem(key)) }
   : { ...defaultValues });
 
-const defaultState = {
-  unitsBySource: {
-  },
-};
+const getSourcesFromLS = () => getFromLocalStorage('wikiparse-units', {});
 
-const getSettingsFromLS = () => getFromLocalStorage('wikiparse-state', defaultState);
+const getSettingsFromLS = () => getFromLocalStorage('wikiparse-state', {});
 
 window.WikiParser = {
   version: 'SCRIPT_VERSION',

@@ -9,6 +9,8 @@
     "build": "tsc && vite build && tsx scripts/post-build.ts",
     "fetch:de:unit": "tsx scripts/heraldry/de/fetch-unit.ts",
     "fetch:de:unit-map": "tsx scripts/heraldry/de/fetch-unit-map.ts",
+    "fetch:de:formerUnit": "tsx scripts/heraldry/de/fetch-formerUnit.ts",
+    "fetch:de:formerUnit-map": "tsx scripts/heraldry/de/fetch-formerUnit-map.ts",
     "resize:de": "tsx scripts/heraldry/de/resize-images.ts",
     "web:de": "tsx scripts/heraldry/de/web-images.ts",
     "fetch:et:unit": "tsx scripts/heraldry/et/fetch-unit.ts",

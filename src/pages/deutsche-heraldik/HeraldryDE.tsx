@@ -11,15 +11,15 @@ import CountryHeraldryStatus from '@/topic/Heraldry/components/CountryHeraldry/C
 
 const fetchCountryData = async () => {
   const [
-    // formerUnits,
+    formerUnits,
     units,
   ] = await Promise.all([
-    // fetch('/maps/data/heraldry/et/formerUnit-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/de/formerUnit-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
     fetch('/maps/data/heraldry/de/unit-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
   ]);
 
   const allUnits: AdministrativeUnit[] = Object.values([
-    // ...Object.values(formerUnits) as AdministrativeUnit[],
+    ...Object.values(formerUnits) as AdministrativeUnit[],
     ...Object.values(units) as AdministrativeUnit[],
   ].filter((unit: AdministrativeUnit) => {
     // if ([
@@ -125,8 +125,8 @@ const HeraldryDE = () => {
       mapOffset={{
          minLatTop: 47.27,
          maxLatTop: 55.09,
-         minLonLeft: 5.87,
-         maxLonLeft: 15.04,
+         minLonLeft: 6.37,
+         maxLonLeft: 14.74,
      }}
       initialFilters={initialFilters}
     />

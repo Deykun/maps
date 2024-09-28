@@ -426,12 +426,13 @@ const fetchDivisionFromUserScript= async (division: UserScriptDivisionData, path
       const coordinates = divisionCoordinates;
 
       const divisionToSave: AdministrativeUnit = {
-        title: division.title,
+        title: divisionPage.title || division.locationName || division.title,
         lang: indexData.lang,
         id: indexData.id,
         index: indexData.index,
         type: division.type,
         spriteRoot: unitNames[0],
+        description: division.description,
         url: division.source,
         ...(division.thumbnailUrl ? {
           image: {
@@ -539,11 +540,33 @@ export const fetchData = async ({
 
   const promises = administrativeDivisions.map((division: AdministrativeUnit | UserScriptDivisionData, index) => limit(() => new Promise((resolve) => {
     const fetchAndProcess = async () => {
+      // Returns if fetched and has needed data
       const fetchedDivision = alreadyFetchedDivisions.find(
-        ({ title, place, image }) => title === division.title
-          && typeof place?.coordinates?.lat === 'number'
-          && place?.coordinates?.lat !== 0
-          && (image?.source?.length ?? 0) > 0,
+        ({ title, description, place, image }) => {
+          if (isFromUserScript) {
+            if (image?.sourceAlt !== (division as UserScriptDivisionData)?.thumbnailUrl) {
+              return false;
+            }
+
+            if (description !== division.description) {
+              return false;
+            }
+          } else {
+            if (title !== (division as AdministrativeUnit)?.title) {
+              return false;
+            }
+          }
+
+          if (typeof place?.coordinates?.lat !== 'number' || place?.coordinates?.lat === 0) {
+            return false;
+          }
+
+          if ((image?.source?.length ?? 0) === 0) {
+            return false;
+          }
+
+          return true;
+        }
       );
 
       const indexData = {

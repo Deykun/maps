@@ -58,7 +58,8 @@ appendCSS(`
     white-space: nowrap;
   }
 
-  [data-wp-title]:hover::after {
+  [data-wp-title]:hover::after,
+  [data-wp-title-open]::after {
     max-width: 300px;
   }
 `, { sourceName: 'parse-de' });
@@ -83,8 +84,32 @@ const getGalleryAfterHeader = (elToCheck) => {
 
 window.parsedDE = {};
 
+export const markIndexedCategoriesPagesDE = () => {
+  const unitsBySource = getSourcesFromLS();
+  const indexedSources = Object.keys(unitsBySource).map((v) => v.replace('https://de.wikipedia.org', ''));
+
+  if (indexedSources.length > 0) {
+    const linksEl = Array.from(document.querySelectorAll('.mw-category-group a'));
+
+    linksEl.forEach((linkEl) => {
+      const href = linkEl.getAttribute('href');
+
+      if (indexedSources.includes(href)) {
+        linkEl.setAttribute('data-wp-title', `${unitsBySource[`https://de.wikipedia.org${href}`]?.length || 0} 🗂️`);
+        linkEl.setAttribute('data-wp-title-open', 'true');
+      }
+    })
+  }
+}
+
 export const savePageCoatOfArmsIfPossibleDE = () => {
   const source = location.href.split('#')[0];
+  const isCategoryPage = source.includes('Kategorie:');
+
+  if (isCategoryPage) {
+    markIndexedCategoriesPagesDE();
+  }
+
   const headersEl = Array.from(document.querySelectorAll('.mw-heading2, .mw-heading3'));
 
   let coatOfArmsList = [];
@@ -108,9 +133,9 @@ export const savePageCoatOfArmsIfPossibleDE = () => {
         const isThatSpecificFormer = Boolean(imageEl.querySelector('.gallerytext')?.innerText?.match(/\d{4}\)/));
 
         const thumbnailUrl = imageEl.querySelector('.thumb img').src;
-        const title = (imageEl.querySelector('.gallerytext')?.innerText || '').replace(/\n|\r/g, '');
-        const locationName = (imageEl.querySelector('.gallerytext a')?.innerText || '').replace(/\n|\r/g, '');
-        const locationUrl = (imageEl.querySelector('.gallerytext a')?.href || '').replace(/\n|\r/g, '');
+        const title = (imageEl.querySelector('.gallerytext')?.innerText || '').replace(/\n|\r/g, ' ');
+        const locationName = (imageEl.querySelector('.gallerytext a')?.innerText || '').replace(/\n|\r/g, ' ');
+        const locationUrl = (imageEl.querySelector('.gallerytext a')?.href || '').replace(/\n|\r/g, ' ');
         const descriptionNoteId = imageEl.querySelector('.gallerytext a[href^="#"]')?.getAttribute('href')?.replace('#', '');
         const description = descriptionNoteId ? `${(document.getElementById(descriptionNoteId)?.innerText || '').replace(/\n|\r/g, '')} ${title}` : title;
 
@@ -128,7 +153,6 @@ export const savePageCoatOfArmsIfPossibleDE = () => {
           imageEl.setAttribute('data-wp-title', `${itemIcon} ${types.join(', ')}`);
 
           const coatOfArms = {
-            title,
             locationName,
             locationUrl,
             thumbnailUrl,
@@ -144,5 +168,7 @@ export const savePageCoatOfArmsIfPossibleDE = () => {
     }
 
     window.parsedDE[source] = coatOfArmsList;
+
+    saveSource(source, coatOfArmsList);
   })
 };
