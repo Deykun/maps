@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="775">
+ <defs>
+  <clipPath id="clipPath3448">
+   <path d="m5 165l75-70c170-52 354-54 530 0l80 70c-126 36-103 155-50 290 42 190-17.7 258-100 300-58.9 28.8-123 46.8-190 60-60-9.2-124-29-190-60-136-74-130-200-100-300 26-114 92-245-55-290"/>
+  </clipPath>
+ </defs>
+ <g transform="translate(0-39.8)">
+  <path d="m5 120l75-70c170-52 354-54 530 0l80 70c-126 36-103 155-50 290 42 190-17.7 258-100 300-58.9 28.8-123 46.8-190 60-60-9.2-124-29-190-60-136-74-130-200-100-300 26-114 92-245-55-290" transform="translate(0 44.8)" fill="#fff"/>
+  <path clip-path="url(#clipPath3448)" fill="#da121a" d="m30 385h650v320h-650z"/>
+  <path d="m95 230l85 155 85-155-85-160-85 160" id="path3410" fill="#da121a"/>
+  <use xlink:href="#path3410" transform="translate(170)" width="700" height="775"/>
+  <use height="775" width="700" transform="translate(340)" xlink:href="#path3410"/>
+  <path d="m95 705l85-260 85 260" id="path3418" fill="#fff"/>
+  <use xlink:href="#path3418" transform="translate(170)" width="700" height="775"/>
+  <use height="775" width="700" transform="translate(340)" xlink:href="#path3418"/>
+  <path clip-path="url(#clipPath3448)" fill="#89c5e3" d="m80 705h540v110h-540z"/>
+  <path transform="translate(0 44.8)" d="m5 120l75-70c170-52 354-54 530 0l80 70c-126 36-103 155-50 290 42 190-17.7 258-100 300-58.9 28.8-123 46.8-190 60-60-9.2-124-29-190-60-136-74-130-200-100-300 26-114 100-245-55-290" fill="none" stroke="#000" stroke-linejoin="round" stroke-linecap="round" stroke-width="4" id="SVGCleanerId_0"/>
+  <use xlink:href="#SVGCleanerId_0"/>
+ </g>
+ <path d="m610 50c0 16.6-122-20-260-20-138 0-270 36.6-270 20 0-16.6 132-50 270-50 138 0 260 33.4 260 50" fill="#fcdd09" stroke="#000" stroke-linejoin="round" stroke-linecap="round" stroke-width="6" transform="translate(0 5)"/>
+</svg>

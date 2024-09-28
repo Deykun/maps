@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) and a plain text editor -->
+<svg
+   id="Wappen_Roßtal"
+   version="1.1"
+   baseProfile="full"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="370"
+   height="400">
+
+  <title>
+    Wappen von Roßtal
+  </title>
+
+  <metadata>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+             xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+             xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <rdf:Description rdf:about="http://commons.wikimedia.org/wiki/Image:Wappen von Roßtal.svg">
+        <dc:publisher>http://commons.wikimedia.org/</dc:publisher>
+        <dc:subject>Roßtal, Wappen, Pferd, Kirche</dc:subject>
+        <dc:description>Wappen des Markt Roßtal</dc:description>
+        <dc:relation>http://www.rosstal.de/</dc:relation>
+        <dc:source>http://commons.wikimedia.org/</dc:source>
+        <dc:rights>Copyright 2008 Free Software Foundation</dc:rights>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type>Image</dc:type>
+        <dc:title>Wappen von Roßtal</dc:title>
+        <dc:date>2008</dc:date>
+      </rdf:Description>
+    </rdf:RDF>
+  </metadata>
+
+  <desc>
+     Wappen des Markt Roßtal
+     aus Wikimedia Commons - dem freien Medienarchiv
+
+     Das Wappen zeigt ein weißes Pferd, das aus einer roten Kirche kommt. Der Hintergrund ist gelb.
+
+     Ursprung/Bedeutung:
+     Roßtal erhielt 1328 Stadtrechte, aber es entwickelte sich damals zu keiner richtigen Stadt. Das älteste Siegel geht auf 1501 zurück und zeigt bereits ein Pferd, das aus einer Kirche kommt. Das Wappen frömmelt, indem der Stall von Ross-Stall durch eine Kirche ersetzt wurde. Es sind bis 1819 keine anderen Siegel bekannt und genauso wie die Kette des Bürgermeisters von 1836 zeigt es dieses Wappen. Seit jeher war die Zusammensetzung die gleiche, auch wenn Größe und Form der einzelnen Elemente mitunter stark variierten.
+
+     Über den Markt Roßtal: http://de.wikipedia.org/wiki/Roßtal
+                            http://www.rosstal.de
+
+     mit Inkscape und einem einfachen Texteditor unter GNU/Linux erstellt
+     Das Wappen ist nachgezeichnet auf Grundlage eines Jpegs von http://www.ngw.nl/int/dld/r/rosstal.htm
+     Erstellungsdatum: 2008
+     Lizenz: GNU-Lizenz für freie Dokumentation (http://commons.wikimedia.org/wiki/Commons:GNU_Free_Documentation_License)
+     Beschreibungseite: http://commons.wikimedia.org/wiki/Image:Wappen von Roßtal.svg
+  </desc>
+
+
+
+  <clipPath
+     id="clipWappen">
+    <path
+       id="pathclipWappen"
+       d="M 5,5 L 24,250 C 27,316 87,397 185,397 C 283,397 343,316 346,250 L 365,5 L 5,5 z" />
+  </clipPath>
+
+
+  <g
+     id="Wappenbild"
+     clip-path="url(#clipWappen)">
+    <rect
+       id="Hintergrund"
+       x="0"
+       y="0"
+       width="370"
+       height="400"
+       style="fill:#ffff4e;stroke:none" />
+    <g
+       id="Kirche"
+         style="fill:#ff4e27;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4">
+      <path
+         id="Kirchenfläche"
+         d="M 337,359 L 337,288 L 328,270 L 328,196.5 L 347.5,196.5 L 277,89 L 89,89 L 24.5,188.5 L 60,188.5 L 60,359 L 337,359 z"
+         style="stroke:none" />
+      <path
+         id="Kirchenrand"
+         d="M 267,89 L 94.5,89 M 337,196 L 266,196 L 266,178 L 247,178 L 247,196 L 228,196 L 228,178 L 209,178 L 209,196 L 190,196 L 190,178 L 171,178 L 171,197 L 152,197 M 328,196 L 328,270 L 337,288 L 337,359 L 60,359 L 60,188 L 41,188 M 152,343 L 152,188 L 156,188"
+         style="fill:none;stroke-width:4" />
+      <g
+         id="Mauer"
+         style="fill:none">
+        <path
+           id="Mauerstriche_horizontal"
+           d="M 152.5,341.5 H 337.5 M 152.5,323.5 H 336.5 M 152.5,305.5 H 336.5 M 152.5,287.5 H 335.5 M 152.5,281.5 H 332.5 M 152.5,269.5 H 327.5 M 151.5,257.5 H 327.5" />
+        <path
+           id="Mauerstriche_vertikal"
+           d="M 187.5,287.5 v 18 M 217.5,287.5 v 18 M 247.5,287.5 v 18 M 277.5,287.5 v 18 M 307.5,287.5 v 18 M 202.5,305.5 v 18 M 232.5,305.5 v 18 M 262.5,305.5 v 18 M 292.5,305.5 v 18 M 187.5,323.5 v 18 M 217.5,323.5 v 18 M 247.5,323.5 v 18 M 277.5,323.5 v 18 M 307.5,323.5 v 18 M 172.5,341.5 v 18 M 202.5,341.5 v 18 M 232.5,341.5 v 18 M 262.5,341.5 v 18 M 292.5,341.5 v 18 M 322.5,305.5 v 18 M 322.5,341.5 v 18" />
+      </g>
+      <g
+         id="schwarzes_Tor">
+        <clipPath
+           id="clipTor">
+          <path
+             id="pathclipTor"
+             d="M 75.5,167.5 C 75.5,153.5 83.5,143.5 95.5,143.5 C 107.5,143.5 115.5,153.5 115.5,167.5 C 126.5,167.5 138.5,180.5 138.5,195.5 L 138.5,345.5 L 73.5,345.5 L 73.5,193.5 C 73.5,178.5 74,167.5 75.5,167.5 z" />
+        </clipPath>
+        <path
+           id="Toröffnung"
+           d="M 81.5,167.5 C 81.5,153.5 89.5,143.5 101.5,143.5 C 113.5,143.5 121.5,153.5 121.5,167.5 C 132.5,167.5 144.5,180.5 144.5,195.5 L 144.5,345.5 L 73.5,345.5 L 73.5,193.5 C 73.5,178.5 74,167.5 75.5,167.5 L 81.5,167.5 z"
+           clip-path="url(#clipTor)"
+         style="fill:#000000" />
+        <path
+           id="Torrahmen"
+           d="M 75.5,167.5 C 75.5,153.5 83.5,143.5 95.5,143.5 C 107.5,143.5 115.5,153.5 115.5,167.5 C 126.5,167.5 138.5,180.5 138.5,195.5 L 138.5,345.5 L 73.5,345.5 L 73.5,193.5 C 73.5,178.5 74,167.5 75.5,167.5 z"
+           style="fill:none" />
+      </g>
+      <path
+         id="Dachleiste"
+         d="M 336,179 C 334,176 337,177 340,176 C 343,175 342,170 338,169 C 334,168 331,172 329,169 L 325,163 C 323,160 326,160 329,159 C 332,158 331,153 327,152 C 323,151 319.8,155 318,152 L 314,146 C 312,143 315,143 318,142 C 321,141 320,136 316,135 C 312,134 309,138 307,135 L 303,129 C 301,126 304,126 307,125 C 310,124 309,119 305,118 C 301,117 298,121 296,118 L 292,112 C 290,109 293,109 296,108 C 299,107 298,102 294,101 C 290,100 287,104 285,101 L 277.5,89.5 L 277.5,87.5 L 269.5,87.5"
+         style="stroke-linecap:round;stroke-linejoin:round" />
+      <use
+         id="Dachleiste1"
+         style="opacity:1;display:inline"
+         x="-179"
+         y="-5"
+         xlink:href="#Dachleiste" />
+      <use
+         id="Dachleiste2"
+         transform="scale(-1,1)"
+         x="-370"
+         y="-5"
+         xlink:href="#Dachleiste" />
+      <path
+         id="Kreuz_vorne"
+         d="M 85,96 C 85,96 90,88.5 90,88.5 C 84.5,87.5 84.5,79.5 91.5,79.5 L 91.5,68.5 C 88.5,68.5 86,68.5 83.5,69 C 81,69.5 79.5,71.5 79.5,64.5 C 79.5,57.5 81,59.5 83.5,60 C 86,60.5 88.5,60.5 91.5,60.5 C 91.5,57.5 91.5,56 91,53.5 C 90.5,51 88.5,49.5 95.5,49.5 C 102.5,49.5 100.5,51 100,53.5 C 99.5,56 99.5,57.5 99.5,60.5 C 102.5,60.5 104,60.5 106.5,60 C 109,59.5 110.5,57.5 110.5,64.5 C 110.5,71.5 109,69.5 106.5,69 C 104,68.5 102.5,68.5 99.5,68.5 L 99.5,79.5 C 106.5,79.5 106.5,87.5 101,88.5 L 106,96"
+         style="stroke-linecap:round;stroke-linejoin:round" />
+      <path
+         id="Kreuz_hinten"
+         d="M 267.5,89.5 L 267,88.5 L 267,87 C 267,85.6 267.6,84.5 269,84.5 L 271.5,84.5 L 271.5,78.5 L 268.5,78.5 C 266.5,78.5 266.5,72.5 268.5,72.5 L 271.5,72.5 L 271.5,66.5 C 271.5,61.5 277.5,61.5 277.5,66.5 L 277.5,72.5 L 280.5,72.5 C 282.5,72.5 282.5,78.5 280.5,78.5 L 277.5,78.5 L 277.5,84.5 C 278.6,84.5 279.5,85.5 279.5,87 C 279.5,88.5 278.6,89.5 277.5,89.5"
+         style="stroke-linecap:round;stroke-linejoin:round" />
+      <path
+         id="Dachlinien_vorne"
+         d="M 34,174 L 24.5,188.5 L 40.5,188.5 L 98.5,99.7 M 34.5,188.5 L 95.5,94.5 L 156.5,188.5 L 166.5,188.5 L 157.0,174.0"
+         style="fill:none" />
+      <path
+         id="Dachlinien_hinten"
+         d="M 336,179 L 347.5,196.5 L 337.5,196.5 L 267.5,89.5 L 266.5,89.5"
+         style="fill:none" />
+      <g
+         id="Fenster">
+        <g
+           id="Fenster1">
+          <path
+             id="Fensterscheibe"
+             d="M 189.5,246.5 L 189.5,217.5 L 198.5,233.5 L 220.5,233.5 L 220.5,246.5 L 189.5,246.5 z"
+             style="fill:#000000;stroke:none" />
+          <path
+             id="Fensterrahmen"
+             d="M 189.5,217.5 L 198.5,233.5 L 234.5,233.5 L 225.5,217.5 L 189.5,217.5 L 189.5,246.5 L 226.5,246.5 L 226.5,233.5 M 220.5,233.5 L 220.5,246.5"
+             style="fill:none" />
+        </g>
+        <use
+           id="Fenster2"
+           x="72"
+           y="0"
+           xlink:href="#Fenster1" />
+      </g>
+      <g
+         id="Türme">
+        <g
+           id="Turm1">
+          <path
+             id="Turmdach"
+             d="M 180.5,134.5 L 172.5,134.5 L 176.5,62.5 L 184.5,62.5 L 188.5,134.5 L 180.5,134.5 L 180.5,62.5" />
+          <path
+             id="Turmbasis"
+             d="M 189.5,173.5 L 189.5,139.5 C 194.5,139.5 194.5,131.5 189.5,131.5 C 188.5,131.5 186.5,130.5 185,127.5 C 182.9,123.5 178,123.5 176,127.5 C 174.5,130.5 172.5,131.5 171.5,131.5 C 166.5,131.5 166.5,139.5 171.5,139.5 L 171.5,173.5 C 166.5,173.5 166.5,181.5 171.5,181.5 L 189.5,181.5 C 194.5,181.5 194.5,173.5 189.5,173.5 z" />
+          <path
+             id="Turmfenster"
+             d="M 177.5,173.5 L 177.5,138.7 L 180.5,135.7 L 183.5,138.7 L 183.5,173.5 L 177.5,173.5 z" />
+          <path
+             id="Turmspitze"
+             d="M 180.5,64.5 C 185.5,64.5 184,66.5 188.5,66.5 C 190,66.5 191,66 191,64.5 C 191,63 189.5,62.5 189.5,61 C 189.5,59.5 191,59 191,57.5 C 191,56 190.8,54.5 187.5,56 C 184.2,57.5 184.2,57.5 184,53.5 C 183.7,48.5 183.5,45.5 188.5,49 C 190.5,50.4 192.5,49.5 192.5,47.5 C 192.5,45.5 191.5,45.5 191.5,43.5 C 191.5,41.5 193,41 193,39 C 193,37 191.5,35.9 188.5,38 C 183.5,41.5 183.2,39.1 183,35.5 L 182.5,26.5 C 182.2,20.5 178.8,20.5 178.5,26.5 L 178,35.5 C 177.8,39.5 177.5,41.5 172.5,38 C 169.5,35.9 168,37 168,39 C 168,41 169.5,41.5 169.5,43.5 C 169.5,45.5 168.5,45.5 168.5,47.5 C 168.5,49.5 170.5,50.4 172.5,49 C 177.5,45.5 177.3,48.5 177,53.5 C 176.8,57.5 176.8,57.5 173.5,56 C 170.2,54.5 170,56 170,57.5 C 170,59 171.5,59.5 171.5,61 C 171.5,62.5 170,63 170,64.5 C 170,66 171,66.5 172.5,66.5 C 177,66.5 175.5,64.5 180.5,64.5 z" />
+        </g>
+        <use
+           id="Turm2"
+           x="38"
+           y="0"
+           xlink:href="#Turm1" />
+        <use
+           id="Turm3"
+           x="76"
+           y="0"
+           xlink:href="#Turm1" />
+      </g>
+    </g>
+
+    <g
+       id="Tore"
+       style="fill:#ffff4e;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4">
+      <g
+         id="Tor_rechts">
+        <path
+           id="Torrahmen_rechts"
+           d="M 150.5,355.5 L 172.5,344.5 L 172.5,166.5 L 168.5,165.5 C 156.5,171.5 146.5,180.5 146.5,192.5 L 146.5,354.5 L 150.5,355.5 z" />
+        <path
+           id="Torkonturen_rechts"
+           d="M 168.5,343.5 L 168.5,165.5 M 168.5,343.5 L 172.5,344.5 M 168.5,343.5 L 146.5,354.5"
+           style="fill:none" />
+        <g
+           id="Scharniere"
+           transform="translate(146.5,209) skewY(-26.565)">
+          <g
+             id="Scharnier">
+            <path
+               id="oberes_Scharnier"
+               d="M 0,-1.5 C 6,-1.5 8,-1.5 9.5,-2.75 C 11,-4 11.5,-5.3 11.5,-6.3 C 11.5,-9.3 10.5,-10.3 9,-11 C 7.5,-11.7 6.5,-11.3 5.5,-10.3 C 7.5,-9.3 8,-8 7.5,-6.8 C 7,-5.5 4,-5.5 0,-5.5 L 0,-1.5 z"
+               style="fill:#000000;stroke:none" />
+            <use
+               id="unteres_Scharnier"
+               transform="scale(1,-1)"
+               x="0"
+               y="0"
+               xlink:href="#oberes_Scharnier" />
+          </g>
+          <use
+             id="Scharnier2"
+             x="0"
+             y="54"
+             xlink:href="#Scharnier" />
+          <use
+             id="Scharnier3"
+             x="0"
+             y="108"
+             xlink:href="#Scharnier" />
+        </g>
+      </g>
+      <g
+         id="Tor_links">
+        <path
+           id="Torrahmen_links"
+           d="M 61.5,354.5 L 65.5,355.5 L 65.5,195.5 C 65.5,182.5 57.5,173.5 43.5,166.5 L 39.5,165.5 L 39.5,343.5 L 61.5,354.5 z" />
+        <path
+           id="Torkonturen_links"
+           d="M 61.5,354.5 L 61.5,194.5 C 61.5,181.5 53.5,172.5 39.5,165.5"
+           style="fill:none" />
+        <use
+           id="Scharniere_links"
+           transform="scale(-1,1)"
+           x="-208"
+           y="0"
+           xlink:href="#Scharniere" />
+      </g>
+    </g>
+
+    <g
+       id="Pferd"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round">
+      <path
+         id="hinteres_Bein"
+         d="M 82.6,258.4 C 69.3,254.3 63.3,253.1 61,253.8 C 58.9,254.5 57.2,257.4 50.6,266.6 C 45.4,273.8 41.1,277.2 41.3,280.6 C 41.5,283.2 43.1,284.6 43.3,287.4 C 43.5,290.1 40.7,291.9 42.6,294.6 C 45.4,298.7 48.9,297.5 60.1,307.5 C 62.6,301.4 62.9,297.1 61.7,293.1 C 52.9,293.1 51.8,292.5 50.5,289.2 C 48.7,284.5 53.6,286.2 54.4,283.2 C 55.3,280.1 52.3,279.1 53.2,275.9 C 53.9,273.4 60.5,266 63.5,265.6 C 66.1,265.3 68.2,269.7 89.1,275.8" />
+      <path
+         id="hinterer_Huf"
+         d="M 50.6,300.1 C 51.6,298.7 52.5,296.9 53.8,292.6"
+         style="fill:none" />
+      <path
+         id="hinteres_Ohr"
+         d="M 57.3,181.9 C 54,179.6 51.3,176.9 48.2,170 C 55.2,171.8 57.2,174.7 59.5,177.8" />
+      <path
+         id="Rumpf"
+         d="M 137,230 C 132,226 128.9,224.6 125.5,223.8 C 125.2,218.8 122.5,202.8 119,195.4 C 111.9,180.4 97.9,166.2 78.1,167.7 C 63.3,168.8 57.3,169.8 56,182.9 C 55.4,189.3 52.3,200.3 47.4,210.5 C 45.4,214.5 45.3,215.5 49.1,217.6 C 54.5,220.5 57.75625,211.80938 62.2,207.8 C 62.4,216.8 58.5,220.1 63.5,220.1 C 68.8,220.1 69.7,220.5 69.3,214.9 C 68.9,210.5 69.5,210.2 71.4,207.8 C 73.9,204.7 75.1,203.6 79.8,202.9 C 84.5,202.2 86.3,208 85,213.9 C 82.9,223.8 86.7,221.8 81.3,237.9 C 75.5,255.2 78.3,254.7 80.6,264.4 C 82.3,271.7 80.5,272.9 90.5,278.6 C 100.5,284.2 106,282 137,289"
+         style="stroke-linecap:square" />
+      <path
+         id="Hals"
+         d="M 82.2,202.8 C 84.8,200.2 86.3,198 85.9,193"
+         style="fill:none" />
+      <path
+         id="Haare"
+         d="M 126,224.2 C 126.6,229.4 127.2,231.2 128.6,232.5 M 125.1,221.3 C 124.8,222.6 123.7,223.9 122.7,224.9 M 123.3,211.3 C 121.8,212.7 120.9,214.7 120.3,217 M 121.5,203.1 C 120.6,207.7 118.9,209.9 116.8,211.1 M 117.7,193.3 C 117.2,196.8 116.5,199.8 115,201.3 M 114.9,188.6 C 114.5,191.1 113.6,193.5 112.4,195 M 109.5,181.4 C 108.8,185 108.6,187 108.6,188.8 M 103.5,175.8 C 103.7,176.7 103.8,177.9 103.9,178.6 M 96.7,171.7 C 97.1,172.6 97.9,173.9 98.5,174.7 M 89.6,168.9 C 90.3,169.4 90.9,169.9 91.4,170.6 M 82.1,167.8 C 83.3,168.8 84.1,170.1 84.5,171.3 M 74.8,168.2 C 76.7,169.6 78.3,171.1 79,172.8"
+         style="fill:none" />
+      <path
+         id="Nase"
+         d="M 50.4,213.2 L 51.6,213.2"
+         style="fill:none" />
+      <path
+         id="Auge"
+         d="M 62.8,190.9 C 66,189.8 70.5,188.5 74.1,187.5 M 71.7,187.8 C 69.9,182.1 62.5,183.6 65,190 C 66.9,193.5 68.6,192.7 68.8,189.3"
+         style="fill:none" />
+      <path
+         id="vorderes_Bein"
+         d="M 99.5,237.4 C 89.9,256.2 90,261.6 97.2,271.2 C 104.9,281.3 104.5,282.1 104.5,289.8 C 104.5,297.5 102.4,296.8 102.4,302.1 C 102.4,307.5 104.8,305.6 103.6,316.7 C 102.8,324.2 102.7,325.9 102,328.6 C 94.2,331.8 92.3,337.7 96.4,341 C 86.9,348.5 83,355.8 87.5,355.9 C 90.5,355.9 94.5,356 97.1,355.9 C 99.2,355.8 101.5,353.9 108,345.1 C 104.5,342.5 104.1,341.5 106.5,336.5 C 107,335.5 108,335.5 110,335.9 C 115.1,337 117.6,335.2 115,330.4 C 112.2,325.4 112.4,324.8 114.2,314.9 C 116.9,300.8 119.5,296.9 120,291.9 C 120.4,286.8 121.2,285.6 123.5,283.5 C 130.1,277.5 132.5,275.5 129,254.7 C 127.4,244.5 127.4,243 128.9,239.5" />
+      <path
+         id="Beinkonturen"
+         d="M 101.3,276.3 C 102.1,275.1 102.8,273.7 104.5,268.1 M 95.8,268.7 C 99.4,263.4 97.7,257.3 100.1,253.7 M 106.4,247.5 C 105.8,242.9 106.2,235.2 115.8,225"
+         style="fill:none" />
+      <path
+         id="vorderes_Ohr"
+         d="M 71.7,174.3 C 71.2,169.7 69.1,164.8 61.3,163.8 C 60.3,170.2 63.7,174.3 71.7,174.3 z" />
+      <path
+         id="Ohrkonturen"
+         d="M 69.5,174.2 C 67.4,173.6 65.4,172.7 63.9,171.3 C 65,171.2 66,170.7 66.6,170.2"
+         style="fill:none" />
+    </g>
+  </g>
+
+
+  <path
+     id="Wappenrand"
+     d="M 0,0 L 20,250 C 25.5,318.8 85,400 185,400 C 285,400 345,318.8 350,250 L 370,0 L 0,0 z M 11,11 L 28,249.5 C 32.5,312.6 89,393 185,393 C 281,393 337.5,312.6 342,249.5 L 359,11 L 11,11 z"
+     style="fill:#000000;stroke:none;fill-rule:evenodd" />
+
+</svg>
+
