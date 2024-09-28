@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<svg viewBox="0 0 590 662.9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g fill="#393">
+<path id="a" d="m5.5 5.5v362a290 290 0 0 0 580 0v-362z" stroke="#000" stroke-width="9"/>
+</g>
+<g id="b">
+<g id="c" transform="matrix(-1.911 0 0 1.835 422.9 -1109)">
+<path d="m172.5 698c6.92 5.44 10.26 12.44 10.26 23.44 0 0 7.18-2.05 10.55-2.05l2 7-.04 102.1c-.01 15.76-15.4 21.38-22.77 21.38-7.36 0-22.77-5.62-22.77-21.38l-.04-102.1 2-7c4.5 0 10.55 2.05 10.55 2.05 0-11 2.77-18 10.26-23.44z"/>
+<path d="m172.5 870.2v-22.24" fill="none" stroke="#000" stroke-width="5.22"/>
+<path d="m172.5 867.4v-128.7" fill="#928" stroke="#fd1" stroke-linecap="round" stroke-width="1.2"/>
+<path d="m172.5 702.4c-3.89 2.29-7.5 8.4-7.5 16.5s3.61 14.21 7.5 16.5c3.89-2.29 7.5-8.4 7.5-16.5s-3.61-14.21-7.5-16.5z" fill="#fd1"/>
+<g id="d">
+<path id="e" d="m156 185c-3 13 4.68 27.87 17 28 3-13-4.68-27.87-17-28z" fill="#fd1" transform="translate(-3 632.4)"/>
+<use xlink:href="#e" y="-23.75"/>
+<use xlink:href="#e" y="-47.5"/>
+<use xlink:href="#e" y="-71.25"/>
+<use xlink:href="#e" y="-95"/>
+</g>
+<use transform="matrix(-1 0 0 1 345 0)" xlink:href="#d"/>
+<path d="m182 724.1v-60.92c0-2.14 2.08-2.11 2.08 0v59.23zm-19 0v-60.92c0-1.92-2.08-1.68-2.08 0v59.23zm10.6-24.52v-37.75c0-1.93-2.25-1.82-2.25 0v37.75zm-21.42 20.52v-55.44c0-2.29-2-2.17-2 0v62.89zm40.68 0v-55.44c0-2.59 2-1.87 2 0v62.89z" fill="#fd1" stroke="#000" stroke-linejoin="round" stroke-width="1.2"/>
+</g>
+<use transform="translate(136.3 -63.15)" xlink:href="#c"/>
+</g>
+<use transform="matrix(-1 0 0 1 590 0)" xlink:href="#b"/>
+<path d="m527 541.4c-19.68-42.46-83.86-38.64-99.06-18.5-12.94-55-80.7-83-132.9-83s-120 28-132.9 83c-15.2-20.14-79.38-23.96-99.06 18.5 0 0 77.1 116 232 116s232-116 232-116z" fill="#fd1" stroke="#000" stroke-linejoin="round" stroke-width="7"/>
+<use fill="none" xlink:href="#a"/>
+</svg>

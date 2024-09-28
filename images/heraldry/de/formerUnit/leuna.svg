@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" stroke="#000"
+xmlns:xlink="http://www.w3.org/1999/xlink" width="544" height="614">
+<path fill="#fcdb00" stroke-width="10" d="m5,5v338a266,266 0 1,0 533,0V5z"/>
+<path stroke-width="40" stroke-linecap="round" d="m136,288h272M272,156v272"/>
+<path fill="none" stroke-width="12" d="m271,110a178,178 0 1,0 2,0z"/>
+<g id="e"><g id="d"><path id="c" d="m239,52h66v60h-66"/>
+<use xlink:href="#c" transform="rotate(30 272 288)"/></g>
+<use xlink:href="#d" transform="rotate(60 272 288)"/></g>
+<use xlink:href="#e" transform="rotate(120 272 288)"/>
+<use xlink:href="#e" transform="rotate(240 272 288)"/>
+</svg>
