@@ -9,6 +9,29 @@ import { getFilter } from '@/topic/Heraldry/utils/getFilter';
 import CountryHeraldry from '@/topic/Heraldry/components/CountryHeraldry/CountryHeraldry';
 import CountryHeraldryStatus from '@/topic/Heraldry/components/CountryHeraldry/CountryHeraldryStatus';
 
+const SORT_ORDER: {
+  [type: string]: number,
+} = {
+  gemeinde: 1000,
+  city: 1500,
+  markt: 500,
+  kreis: 1800,
+  bezirke: 500,
+  marktgemeinde: 800,
+  land: 2000,
+  formerMarkt: 5,
+  formerBezirke: 5,
+  formerKreis: 8,
+  formerCity: 15,
+  formerGemeinde: 10, 
+}
+
+const getSortRankFromUnit = (unit: AdministrativeUnit) => {
+  const values = (unit.type || []).map((v) => (SORT_ORDER[v] || 1)) || [0];
+
+  return Math.max(...values);
+};
+
 const fetchCountryData = async () => {
   const [
     formerUnits0,
@@ -19,13 +42,13 @@ const fetchCountryData = async () => {
     units2,
     units3,
   ] = await Promise.all([
-    fetch('/maps/data/heraldry/de/formerUnit-map-0.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    fetch('/maps/data/heraldry/de/formerUnit-map-1.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    fetch('/maps/data/heraldry/de/formerUnit-map-2.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    fetch('/maps/data/heraldry/de/unit-map-0.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    fetch('/maps/data/heraldry/de/unit-map-1.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    fetch('/maps/data/heraldry/de/unit-map-2.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    fetch('/maps/data/heraldry/de/unit-map-3.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/de/formerUnit-0-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/de/formerUnit-1-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/de/formerUnit-2-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/de/unit-0-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/de/unit-1-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/de/unit-2-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/de/unit-3-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
   ]);
 
   const allUnits: AdministrativeUnit[] = Object.values([
@@ -36,48 +59,24 @@ const fetchCountryData = async () => {
     ...Object.values(units1) as AdministrativeUnit[],
     ...Object.values(units2) as AdministrativeUnit[],
     ...Object.values(units3) as AdministrativeUnit[],
-  ].filter((unit: AdministrativeUnit) => {
-    // if ([
-    //    'empty'
-    // ].includes(unit.title)) {
-    //   // Historic
-    //   return false;
-    // };
+  ].reduce((stack: {
+      [url: string]: AdministrativeUnit,
+    }, unit: AdministrativeUnit) => {
+      const uniqueId = unit?.image?.source;
+      if (uniqueId) {
+        if (stack[uniqueId]) {
+          // It merges duplicates but keeps their type in array
+          const typeMerged: string[] = [...(stack[uniqueId].type || []), ...(unit.type || [])];
+          stack[uniqueId].type = [...new Set(typeMerged)];
+        } else {
+          stack[uniqueId] = unit;
+        }
+      }
+  
+      return stack;
+    }, {})).sort((a, b) => getSortRankFromUnit(a) > getSortRankFromUnit(b) ? 1 : -1);
 
-    if ([
-      'empty'
-    ].includes(unit.title)) {
-      // Outside of country
-      return false;
-    }
-
-    return true;
-  }).reduce((stack: {
-    [url: string]: AdministrativeUnit,
-  }, unit: AdministrativeUnit) => {
-    if (stack[unit.id]) {
-      // const areImagesFilledAndDifferent = unit.image?.source && unit.image?.source !== stack[unit.url].image?.source;
-      // if (areImagesFilledAndDifferent) {
-      //   if (location.href.includes('localhost')) {
-      //     console.error({
-      //       [unit.type?.join('') || 'a']: stack[unit.url].image?.source,
-      //       [stack[unit.url].type?.join('') || 'b']: stack[unit.url].image?.source,
-      //     })
-      //     throw ('Duplicated but different images!')
-      //   }
-      // }
-
-      // It merges duplicates but keeps their type in array
-      // const typeMerged: string[] = [...(stack[unit.url].type || []), ...(unit.type || [])];
-      // stack[unit.id].type = [...new Set(typeMerged)];
-    } else {
-      stack[unit.id] = unit;
-    }
-
-    return stack;
-  }, {}));
-
-  const typeFiltersList = getFilter(allUnits, 'type');
+  const typeFiltersList = getFilter(allUnits, 'type').sort((a) => !a.value.startsWith('former') ? -1 : 1);
   const animalFiltersList = getFilter(allUnits, 'animals');
   const itemFiltersList = getFilter(allUnits, 'items');
 
@@ -134,17 +133,25 @@ const HeraldryDE = () => {
       typeFiltersList={typeFiltersList}
       animalFiltersList={animalFiltersList}
       itemFiltersList={itemFiltersList}
-      mapWrapperClassName="[&>div>svg]:aspect-[594_/_803]"
+      mapWrapperClassName="[&>div>svg]:aspect-[461_/_623]"
       mapWrapperClassNameForZoom0="max-w-[40vh]"
       map={SvgMap}
       mapOffset={{
-         minLatTop: 47.27,
-         maxLatTop: 55.09,
-         minLonLeft: 6.10,
-         maxLonLeft: 14.9,
+         minLatTop: 47.3,
+         maxLatTop: 55.38,
+         minLonLeft: 5.8,
+         maxLonLeft: 15.1,
       }}
       initialFilters={initialFilters}
-      developmentModeFiltersTypes={['unit', 'formerUnit']}
+      developmentModeFiltersTypes={[
+        'unit-0',
+        'unit-1',
+        'unit-2',
+        'unit-3',
+        'formerUnit-0',
+        'formerUnit-1',
+        'formerUnit-2',
+      ]}
     />
   );
 };

@@ -60,12 +60,11 @@ const CountryHeraldry = ({
     const [zoomLevel, setZoomLevel] = useState(1);
     const [coatSize, setCoatSize] = useState(4);
     const customFilter = useFiltersDevelopmentStore(state => state.filter);
-    const [_customFilter, setCustomFilter] = useState<MarkerParamsWithResult | undefined>(undefined);
-
     const [typeFilters, setTypeFilters] = useState<string[]>(initialFilters.typeFilters || []);
     const [colorFilters, setColorFilters] = useState<string[]>(initialFilters.colorFilters || []);
     const [animalFilters, setAnimalFilters] = useState<string[]>(initialFilters.animalFilters || []);
     const [itemFilters, setItemFilters] = useState<string[]>(initialFilters.itemFilters || []);
+    const [shouldIgnoreFormer, setShouldIgnoreFormer] = useState(initialFilters.shouldIgnoreFormer || false);
 
     const { events } = useDraggable(wrapperRef, { decayRate: 0.015 });
 
@@ -87,12 +86,12 @@ const CountryHeraldry = ({
         filteredUnits,
         unitsForMap,
         subtitleParts,
-      } = getFilteredUnits(lang, allUnits, filterOperator, shouldReverseFilters, customFilter, typeFiltersToPass, colorFilters, animalFilters, itemFilters);
+      } = getFilteredUnits(lang, allUnits, filterOperator, shouldReverseFilters, shouldIgnoreFormer, customFilter, typeFiltersToPass, colorFilters, animalFilters, itemFilters);
 
       setListPhrase('');
 
       const searchParams = getSearchParamFromFilters({
-        filterOperator, shouldReverseFilters, typeFilters: typeFiltersToPass, colorFilters, animalFilters, itemFilters,
+        filterOperator, shouldReverseFilters, shouldIgnoreFormer, typeFilters: typeFiltersToPass, colorFilters, animalFilters, itemFilters,
       })
       
       window.history.replaceState(undefined, '', `${location.pathname}${searchParams}`);
@@ -102,7 +101,7 @@ const CountryHeraldry = ({
         unitsForMap,
         subtitleParts,
       }
-    }, [lang, allUnits, filterOperator, shouldReverseFilters, customFilter, typeFilters, colorFilters, animalFilters, itemFilters]);
+    }, [lang, allUnits, filterOperator, shouldReverseFilters, shouldIgnoreFormer, customFilter, typeFilters, colorFilters, animalFilters, itemFilters]);
 
     return (
         <>
@@ -201,6 +200,8 @@ const CountryHeraldry = ({
               typeFilters={typeFilters}
               setTypeFilters={setTypeFilters}
               typeFiltersList={typeFiltersList}
+              shouldIgnoreFormer={shouldIgnoreFormer}
+              setShouldIgnoreFormer={setShouldIgnoreFormer}
               colorFilters={colorFilters}
               setColorFilters={setColorFilters}
               animalFilters={animalFilters}

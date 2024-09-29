@@ -18,6 +18,7 @@ export const getFilteredUnits = (
   units: AdministrativeUnit[],
   filterOperator: 'and' | 'or',
   shouldReverseFilters: boolean,
+  shouldIgnoreFormer: boolean,
   customFilter: MarkerParamsWithResult | undefined,
   typeFilers: string[],
   colorFilters: string[],
@@ -56,6 +57,13 @@ export const getFilteredUnits = (
         const isOneOfPickedTypes = typeFilers.some((active) => (unit?.type || []).includes(active));
         if (!isOneOfPickedTypes) {
           return filterResponse.notMatches;
+        }
+      }
+
+      if (shouldIgnoreFormer) {
+        const areAllTypesFormer = (unit?.type?.length || 0) > 0 && unit.type?.every((item) => item.startsWith('former'));
+        if (areAllTypesFormer) {
+          return false;
         }
       }
 
@@ -147,6 +155,10 @@ export const getFilteredUnits = (
 
       subtitleParts.push({ operator: 'or', labels: collapsePhrases(customFilter?.phrases || [], -7).map((value) => `„${value}”`) || [] });
     }
+  }
+
+  if (shouldIgnoreFormer) {
+    subtitleParts.push({ operator: 'or', labels: [`heraldry.unit.type.currentlyExisting`] })
   }
 
   if (typeFilers.length > 0) {
