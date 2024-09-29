@@ -1,6 +1,7 @@
 export type MapsSearchParams = {
   filterOperator: 'or' | 'and',
   shouldReverseFilters: boolean,
+  shouldIgnoreFormer: boolean,
   typeFilters: string[],
   colorFilters: string[],
   animalFilters: string[],
@@ -8,7 +9,7 @@ export type MapsSearchParams = {
 }
 
 export const getSearchParamFromFilters = ({
-  filterOperator, shouldReverseFilters, typeFilters, colorFilters, animalFilters, itemFilters
+  filterOperator, shouldReverseFilters, shouldIgnoreFormer, typeFilters, colorFilters, animalFilters, itemFilters
 }: MapsSearchParams) => {
   const searchParts = [];
 
@@ -18,6 +19,10 @@ export const getSearchParamFromFilters = ({
 
   if (shouldReverseFilters) {
     searchParts.push('r=1');
+  }
+
+  if (shouldIgnoreFormer) {
+    searchParts.push('ifu=1');
   }
 
   if (typeFilters.length > 0) {
@@ -46,7 +51,8 @@ export const getSearchParamFromFilters = ({
 export const getFiltersFromSearchParams = () => {
   let filters: Partial<MapsSearchParams> = {
     filterOperator: undefined,
-    shouldReverseFilters:undefined,
+    shouldReverseFilters: undefined,
+    shouldIgnoreFormer: undefined,
     typeFilters: undefined,
     colorFilters: undefined,
     animalFilters: undefined,
@@ -62,6 +68,10 @@ export const getFiltersFromSearchParams = () => {
   if (searchParams.get("r") === '1') {
     filters.shouldReverseFilters = true;
   }
+
+  if (searchParams.get("ifu") === '1') {
+    filters.shouldIgnoreFormer = true;
+  }  
 
   const types = (searchParams.get("t") || '').split(',').filter(Boolean);
   const colors = (searchParams.get("c") || '').split(',').filter(Boolean);

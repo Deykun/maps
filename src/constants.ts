@@ -11,7 +11,7 @@ export const PATHS_DATA: {
     type: 'heraldryCountry',
     pathNameLink: 'heraldry.de.mapTitle',
     path: 'deutsche-heraldik',
-    title: '🛡️ BETA: Deutschland Wappenkarte',
+    title: '🛡️ Deutschland Wappenkarte',
     social: ``,
     lang: 'de',
     country: 'de',

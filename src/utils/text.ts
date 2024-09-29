@@ -1,3 +1,7 @@
+export const capitalize = (text: string | undefined) => (text ? text[0].toUpperCase() + text.slice(1) : text);
+
+export const lowercaseFirstLetter = (text: string | undefined) => (text ? text[0].toLowerCase() + text.slice(1) : text);
+
 export const removeDiacratics = (word: string, lang?: string, special = '') => {
     let textToReturn = word;
 

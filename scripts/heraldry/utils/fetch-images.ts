@@ -159,6 +159,6 @@ export const fetchImages = async ({
 
   const chunkSuffix = typeof chunkIndex === 'number' ? `-${chunkIndex}` : '';
 
-  writeFileSync(`./public/data/heraldry/${lang}/${path}-map${chunkSuffix}.json`, JSON.stringify(contentToSaveForMap, null, 4));
-  writeFileSync(`./public/data/heraldry/${lang}/${path}-dev${chunkSuffix}.json`, JSON.stringify(contentToSaveForDevMode, null, 4));
+  writeFileSync(`./public/data/heraldry/${lang}/${path}${chunkSuffix}-map.json`, JSON.stringify(contentToSaveForMap, null, 4));
+  writeFileSync(`./public/data/heraldry/${lang}/${path}${chunkSuffix}-dev.json`, JSON.stringify(contentToSaveForDevMode, null, 4));
 };

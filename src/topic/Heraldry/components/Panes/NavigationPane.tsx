@@ -69,7 +69,7 @@ const NavigationPane = () => {
         </ButtonCircle>)}
       </SubPane>}
       {activeMenu === 'language' && <SubPane order={1} className="absolute left-12 ml-3 flex-row">
-        {['en', 'et', 'pl'].map((lang) => <ButtonCircle
+        {['en', 'et', 'de', 'pl'].map((lang) => <ButtonCircle
           onClick={() => i18n.changeLanguage(lang)}
           className={clsx('text-[20px]', {
             'border border-[#eac6a8]': i18n.language === lang,

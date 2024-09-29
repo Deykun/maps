@@ -31,6 +31,8 @@ import ButtonCircle from '@/components/UI/ButtonCircle';
 
 import { colorsMarkersByNames } from '@/topic/Heraldry/constants';
 
+import FiltersPaneTypesFilter from './FiltersPane/FiltersPaneTypesFilter';
+
 const getFilterToggle = (values: string[], setValues: (values: string[]) => void) => (value: string) => {
   if (values.includes(value)) {
     setValues(values.filter((active) => active !== value));
@@ -53,6 +55,8 @@ type Props = {
   typeFilters: string[],
   setTypeFilters: FilterSetter,
   typeFiltersList: FilterItem[],
+  shouldIgnoreFormer: boolean,
+  setShouldIgnoreFormer: (value: boolean) => void,
   colorFilters: string[],
   setColorFilters: FilterSetter,
   animalFilters: string[],
@@ -72,6 +76,8 @@ const FiltersPane = ({
   typeFilters,
   setTypeFilters,
   typeFiltersList,
+  shouldIgnoreFormer,
+  setShouldIgnoreFormer,
   colorFilters,
   setColorFilters,
   animalFilters,
@@ -191,34 +197,15 @@ const FiltersPane = ({
           </ButtonCircle>
         </>}
       </Pane>
-      {activeMenu === 'type' && <Pane className="ui-slide-from-top fixed top-0 right-full z-50 w-[400px] mr-3">
-        <h3 className="flex gap-3 items-center">
-          <IconBuilding className="size-5" />
-          <span>
-            {t('heraldry.unit.filterTitle')}
-          </span>
-          <ButtonCircle
-            wrapperClassName="ml-auto"
-            onClick={() => setTypeFilters([])}
-            isDisabled={typeFilters.length === 0}
-          >
-            <IconEraser />
-            {typeFilters.length > 0 && <span className="ui-button-circle-marker">{typeFilters.length}</span>}
-          </ButtonCircle>
-        </h3>
-        {typeFiltersList.length > 0 && <div className="grid grid-cols-1 gap-1 sans">
-          {typeFiltersList.map(({ value, total }) => 
-            <button
-              onClick={() => toggleType(value)}
-              className={clsx('font-[500] text-[14px] text-left hover:text-[#d2543a]', { 
-                'font-[600] text-[#d2543a]': typeFilters.includes(value),
-              })}
-            >
-              {typeFilters.includes(value) && <IconCheck className="inline size-3 fill-current" />} {t(`heraldry.unit.type.${lang}.${value}`)} {total > 0 && <small className="text-[10px] text-[#b2afaf] tracking-widest font-[400]">({total})</small>}
-            </button>
-          )}
-        </div>}
-      </Pane>}
+      {activeMenu === 'type' && <FiltersPaneTypesFilter 
+        lang={lang}
+        typeFilters={typeFilters}
+        setTypeFilters={setTypeFilters}
+        toggleType={toggleType}
+        typeFiltersList={typeFiltersList}
+        shouldIgnoreFormer={shouldIgnoreFormer}
+        setShouldIgnoreFormer={setShouldIgnoreFormer}
+      />}
       {activeMenu === 'color' && <SubPane order={2} className="ui-slide-from-top ui-pane-magic-border absolute right-full z-50 mt-2 mr-3 flex-row">
         {Object.keys(colorsMarkersByNames).map((name) => <ButtonCircle
           key={name}
