@@ -31,14 +31,8 @@ export const colorsMarkersByNames: Colors = {
   gold: '#bfa14e',
 };
 
-// export const numberOfImagesPerSprite = 180;
-
-
-export const numberOfImagesPerSprite = 40;
-
 export const numberOfColumnsPerSprite = 50;
 export const numberOfRowsPerSprite = 30;
-
 
 export const spriteSize = 80;
 export const spriteOffset = 4;
