@@ -4,8 +4,10 @@ import sharp from 'sharp';
 import chalk from 'chalk';
 import { existsSync, mkdirSync } from 'fs';
 import * as fsExtra from "fs-extra";
+import { getSpriteLocation } from '@/topic/Heraldry/utils/getSpriteDataFromUnit';
 import { AdministrativeUnit } from '@/topic/Heraldry/types';
 import { numberOfColumnsPerSprite, numberOfRowsPerSprite, spriteOffset } from '@/topic/Heraldry/constants';
+
 
 export const resizeImages = ({
   images,
@@ -120,9 +122,11 @@ export const getSprites = async ({
   const sprites = {};
 
   for (let i = 0; i <= total; i++) {
-    const spriteIndex = Math.floor(i / numberOfImagesPerSprite);
-    const spriteColumn = Math.floor(i / numberOfRowsPerSprite) % numberOfColumnsPerSprite;
-    const spriteRow = i % numberOfRowsPerSprite;
+    const {
+      spriteIndex,
+      spriteColumn,
+      spriteRow,
+    } = getSpriteLocation(i);
 
     if (!sprites[spriteIndex]) {
       sprites[spriteIndex] = {

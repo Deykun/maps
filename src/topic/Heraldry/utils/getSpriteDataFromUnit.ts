@@ -1,14 +1,35 @@
 import { AdministrativeUnit } from '@/topic/Heraldry/types'
-import { numberOfImagesPerSprite, spriteSize, spriteOffset } from '@/topic/Heraldry/constants'
+import { numberOfColumnsPerSprite, numberOfRowsPerSprite, spriteSize, spriteOffset } from '@/topic/Heraldry/constants';
+
+const numberOfImagesPerSprite = numberOfColumnsPerSprite * numberOfRowsPerSprite;
+
+export const getSpriteLocation = (index: number) => {
+  const spriteIndex = Math.floor(index / numberOfImagesPerSprite);
+  const spriteColumn = Math.floor(index / numberOfRowsPerSprite) % numberOfColumnsPerSprite;
+  const spriteRow = index % numberOfRowsPerSprite;
+
+  return {
+    spriteIndex,
+    spriteColumn,
+    spriteRow,
+  }
+}
 
 export const getSpriteDataFromUnit = (unit: AdministrativeUnit) => {
-  const spriteIndex = Math.floor(Math.min(unit.index / numberOfImagesPerSprite));
-  const index = unit.index % numberOfImagesPerSprite;
-  const spriteOffsetY = spriteSize * index + spriteOffset * index;
+  const {
+    spriteIndex,
+    spriteColumn,
+    spriteRow,
+  } = getSpriteLocation(unit.index);
+
+  const spriteOffsetX = spriteSize * spriteColumn + spriteOffset * spriteColumn;
+  const spriteOffsetY = spriteSize * spriteRow + spriteOffset * spriteRow;
 
   return {
     url: `images/heraldry/${unit.lang}/web/sprites/${unit.spriteRoot || unit.type?.[0] || ''}-${spriteIndex}.webp`,
-    index,
+    indexX: spriteColumn,
+    indexY: spriteRow,
+    spriteOffsetX,
     spriteOffsetY,
   };
 };
