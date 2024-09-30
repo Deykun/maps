@@ -99,9 +99,7 @@
   },
   "resolve-path-alias": {
     "alias": {
-      "@/*": "src/*",
-      "@components/*": "src/components/*",
-      "@assets/*": "src/assets/*"
+      "@/*": "src/*"
     }
   }
 }

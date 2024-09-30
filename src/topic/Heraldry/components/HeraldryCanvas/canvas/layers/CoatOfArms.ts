@@ -15,7 +15,8 @@ export class CoatOfArms {
   imageUrl: string;
   imageSprite: {
     url: string,
-    index: number
+    indexX: number,
+    indexY: number,
   };
   image: HTMLImageElement;
   imageIsLoaded: boolean;
@@ -39,7 +40,8 @@ export class CoatOfArms {
     imageUrl: string,
     imageSprite: {
       url: string,
-      index: number
+      indexX: number,
+      indexY: number,
     },
     coatSize: number,
     mapOffset: MapOffset,
@@ -97,7 +99,8 @@ export class CoatOfArms {
       return;
     }
 
-    const frameY = spriteSize * this.imageSprite.index + spriteOffset * this.imageSprite.index;
+    const frameX = spriteSize * this.imageSprite.indexX + spriteOffset * this.imageSprite.indexX;
+    const frameY = spriteSize * this.imageSprite.indexY + spriteOffset * this.imageSprite.indexY;
    
     // Bottom border
     // this.ctx.filter = 'grayscale(1) brightness(0.5) opacity(0.5)';
@@ -130,7 +133,7 @@ export class CoatOfArms {
 
     this.ctx.drawImage(
       this.image,
-      0, // frameX
+      frameX,
       frameY,
       spriteSize, // frameWidth
       spriteSize, // frameHeight
