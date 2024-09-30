@@ -2,8 +2,6 @@ import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import clsx from 'clsx';
 
-import { lowercaseFirstLetter } from '@/utils/text';
-
 import IconBuilding from '@/components/Icons/IconBuilding';
 import IconCheck from '@/components/Icons/IconCheck';
 import IconEraser from '@/components/Icons/IconEraser';

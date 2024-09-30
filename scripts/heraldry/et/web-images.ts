@@ -1,7 +1,11 @@
+import * as fsExtra from "fs-extra";
+
 import { getSprites } from '../utils/web';
 
 import unitJSON from '../../../public/data/heraldry/et/unit-map.json';
 import formerUnitJSON from '../../../public/data/heraldry/et/formerUnit-map.json';
+
+fsExtra.emptyDirSync(`./public/images/heraldry/et/web/temp/`);
 
 getSprites({
   mapJSON: unitJSON,
