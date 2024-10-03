@@ -1,6 +1,6 @@
 appendCSS(`
   :root {
-    --wp-nav-item-size: 35px;
+    --wp-nav-item-size: 48px;
     --wp-nav-item-bg: #fff;
     --wp-nav-item-text-strong: #fff;
     --wp-nav-item-text: #59636e;

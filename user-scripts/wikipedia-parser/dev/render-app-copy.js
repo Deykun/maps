@@ -3,9 +3,9 @@ appendCSS(`
 
 export const getAppCopy = () => {
   return `<div class="wp-nav-button-wrapper">
-    <button id="copy-code" class="wp-nav-button">${IconCopy}</button>
-    <button id="copy-code-all" class="wp-nav-button">${IconCopyAlt}</button>
-    <button id="remove-all" class="wp-nav-button">${IconRemove}</button>
+    <button id="copy-code" class="wp-nav-button" title="Copy this page">${IconCopy}</button>
+    <button id="copy-code-all" class="wp-nav-button" title="Copy all">${IconCopyAlt}</button>
+    <button id="remove-all" class="wp-nav-button" title="Clear">${IconRemove}</button>
   </div>`;
 };
 
@@ -45,7 +45,7 @@ window.WikiParser.ui.eventsSubscribers.copyCodeAll = {
   selector: '#copy-code-all',
   handleClick: () => {
     const unitsBySource = getSourcesFromLS();
-    const indexedSources = Object.keys(unitsBySource);
+    const indexedSources = Object.keys(unitsBySource).sort((a, b) => a.localeCompare(b));
 
     if (indexedSources.length > 0) {
       const textToCopy = indexedSources.map((source) => getSourceTextToCopy(source, unitsBySource[source])).join(' ');

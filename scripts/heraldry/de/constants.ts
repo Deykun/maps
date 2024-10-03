@@ -14,7 +14,8 @@ import { urls as urlRegion10 } from './constantsForRegions/rheinland-pfalz';
 import { urls as urlRegion11 } from './constantsForRegions/saarland';
 import { urls as urlRegion12 } from './constantsForRegions/sachsen-anhalt';
 import { urls as urlRegion13 } from './constantsForRegions/sachsen';
-import { urls as urlRegion14 } from './constantsForRegions/thuringen';
+import { urls as urlRegion14 } from './constantsForRegions/schleswig-holstein';
+import { urls as urlRegion15 } from './constantsForRegions/thuringen';
 
 export const urls: {
   unitBySource: {
@@ -40,4 +41,5 @@ urls.unitBySource = {
   ...urlRegion12.unitBySource,
   ...urlRegion13.unitBySource,
   ...urlRegion14.unitBySource,
+  ...urlRegion15.unitBySource,
 };

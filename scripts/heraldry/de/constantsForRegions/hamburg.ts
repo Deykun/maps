@@ -8,9 +8,6 @@ export const urls: {
   unitBySource: {},
 };
 
-urls.unitBySource['https://de.wikipedia.org/wiki/Landeswappen_Hamburgs'] = [
-    
-]; 
 
 urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Hamburg'] = [
   {
@@ -20,7 +17,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Hamburg'] =
       description: 'Kleines Staatswappen',
       type: ['land'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Hamburg',
-      sourceTitle: 'Landeswappen',
+      sourceTitle: 'Liste der Wappen in Hamburg | Landeswappen',
     }, {
       locationName: 'Mittleres Staatswappen',
       locationUrl: 'https://de.wikipedia.org/wiki/Landeswappen_Hamburgs#Gro%C3%9Fes_Staatswappen_und_Logo',
@@ -28,7 +25,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Hamburg'] =
       description: 'Mittleres Staatswappen',
       type: ['land'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Hamburg',
-      sourceTitle: 'Landeswappen',
+      sourceTitle: 'Liste der Wappen in Hamburg | Landeswappen',
     }, {
       locationName: 'Großes Staatswappen',
       locationUrl: 'https://de.wikipedia.org/wiki/Landeswappen_Hamburgs#Gro%C3%9Fes_Staatswappen_und_Logo',
@@ -36,7 +33,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Hamburg'] =
       description: 'Großes Staatswappen',
       type: ['land'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Hamburg',
-      sourceTitle: 'Landeswappen',
+      sourceTitle: 'Liste der Wappen in Hamburg | Landeswappen',
     }, {
       locationName: '',
       locationUrl: '',
@@ -44,7 +41,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Hamburg'] =
       description: 'Aktuelles Wappen bzw. Logo',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Hamburg',
-      sourceTitle: 'Bezirke (auch historische)',
+      sourceTitle: 'Liste der Wappen in Hamburg | Bezirke (auch historische)',
     }, {
       locationName: '',
       locationUrl: '',
@@ -52,7 +49,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Hamburg'] =
       description: 'Wappen bis 1937',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Hamburg',
-      sourceTitle: 'Bezirke (auch historische)',
+      sourceTitle: 'Liste der Wappen in Hamburg | Bezirke (auch historische)',
     }, {
       locationName: '',
       locationUrl: '',
@@ -60,7 +57,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Hamburg'] =
       description: 'Frühere Variante',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Hamburg',
-      sourceTitle: 'Bezirke (auch historische)',
+      sourceTitle: 'Liste der Wappen in Hamburg | Bezirke (auch historische)',
     }, {
       locationName: '',
       locationUrl: '',
@@ -68,6 +65,78 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Hamburg'] =
       description: 'Wappen als Fensterbild',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Hamburg',
-      sourceTitle: 'Bezirke (auch historische)',
+      sourceTitle: 'Liste der Wappen in Hamburg | Bezirke (auch historische)',
+    }, {
+      locationName: 'Bergstedt',
+      locationUrl: 'https://de.wikipedia.org/wiki/Hamburg-Bergstedt',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Wappen_Bergstedt.png/107px-Wappen_Bergstedt.png',
+      description: 'Bergstedt',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Hamburg',
+      sourceTitle: 'Liste der Wappen in Hamburg | Stadtteile',
+    }, {
+      locationName: 'Bramfeld',
+      locationUrl: 'https://de.wikipedia.org/wiki/Hamburg-Bramfeld',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Wappen_Bramfeld.png/120px-Wappen_Bramfeld.png',
+      description: '↑ Bramfelds Wappen. Stadtteilarchiv Bramfeld, abgerufen am 22. März 2024. Bramfeld[3]',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Hamburg',
+      sourceTitle: 'Liste der Wappen in Hamburg | Stadtteile',
+    }, {
+      locationName: 'Eidelstedt',
+      locationUrl: 'https://de.wikipedia.org/wiki/Hamburg-Eidelstedt#Wappen',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/de/thumb/e/eb/Wappen_eidelstedt_solo_rgb_trans.png/105px-Wappen_eidelstedt_solo_rgb_trans.png',
+      description: 'Eidelstedt',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Hamburg',
+      sourceTitle: 'Liste der Wappen in Hamburg | Stadtteile',
+    }, {
+      locationName: 'Langenhorn',
+      locationUrl: 'https://de.wikipedia.org/wiki/Hamburg-Langenhorn',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Coa_hh-langenhorn.svg/100px-Coa_hh-langenhorn.svg.png',
+      description: 'Langenhorn',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Hamburg',
+      sourceTitle: 'Liste der Wappen in Hamburg | Stadtteile',
+    }, {
+      locationName: 'Lurup',
+      locationUrl: 'https://de.wikipedia.org/wiki/Hamburg-Lurup',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Wappen_Lurup.png/91px-Wappen_Lurup.png',
+      description: '↑ neu.atdotde.de (PDF; 12 MB) Lurup[4]',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Hamburg',
+      sourceTitle: 'Liste der Wappen in Hamburg | Stadtteile',
+    }, {
+      locationName: 'Ochsenwerder',
+      locationUrl: 'https://de.wikipedia.org/wiki/Hamburg-Ochsenwerder',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Wappen_Ochsenwerder.png/98px-Wappen_Ochsenwerder.png',
+      description: 'Ochsenwerder',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Hamburg',
+      sourceTitle: 'Liste der Wappen in Hamburg | Stadtteile',
+    }, {
+      locationName: 'Ottensen',
+      locationUrl: 'https://de.wikipedia.org/wiki/Hamburg-Ottensen',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wappen_Ottensen.png/92px-Wappen_Ottensen.png',
+      description: 'Ottensen',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Hamburg',
+      sourceTitle: 'Liste der Wappen in Hamburg | Stadtteile',
+    }, {
+      locationName: 'Wellingsbüttel',
+      locationUrl: 'https://de.wikipedia.org/wiki/Hamburg-Wellingsb%C3%BCttel',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Wappen_Wellingsbuettel.png/108px-Wappen_Wellingsbuettel.png',
+      description: 'Wellingsbüttel',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Hamburg',
+      sourceTitle: 'Liste der Wappen in Hamburg | Stadtteile',
+    }, {
+      locationName: 'Wilhelmsburg',
+      locationUrl: 'https://de.wikipedia.org/wiki/Hamburg-Wilhelmsburg',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Wappen_Hamburg-Wilhelmsburg.png/115px-Wappen_Hamburg-Wilhelmsburg.png',
+      description: 'Wilhelmsburg',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Hamburg',
+      sourceTitle: 'Liste der Wappen in Hamburg | Stadtteile',
     }
 ]; 

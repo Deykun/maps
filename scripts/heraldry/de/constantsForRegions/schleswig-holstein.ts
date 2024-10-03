@@ -9,248 +9,72 @@ export const urls: {
 };
 
 
-urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_Schleswig-Holsteins'] = [
-    
-]; 
-
-urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein'] = [
+urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Dithmarschen'] = [
   {
       locationName: '',
       locationUrl: '',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Deutschland_Lage_von_Schleswig-Holstein.svg/89px-Deutschland_Lage_von_Schleswig-Holstein.svg.png',
-      description: 'Karte Schleswig-Holstein, Deutschland',
-      type: ['land'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Landeswappen',
-    }, {
-      locationName: 'Schleswig-Holstein',
-      locationUrl: 'https://de.wikipedia.org/wiki/Schleswig-Holstein',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/DEU_Schleswig-Holstein_COA.svg/104px-DEU_Schleswig-Holstein_COA.svg.png',
-      description: '↑ Land Schleswig-Holstein: „Das Landeswappen zeigt in gespaltenem Schild rechts auf goldenem Grund zwei blaue, nach innen gewandte, rot bewehrte, schreitende Löwen, links in Rot ein silbernes Nesselblatt.“ (Gesetz über die Hoheitszeichen des Landes Schleswig-Holstein Vom 18. Januar 1957 i.d.F.d.B. v. 31. Dezember 1971 (Memento des Originals vom 10. Oktober 2007 im Internet Archive)  Info: Der Archivlink wurde automatisch eingesetzt und noch nicht geprüft. Bitte prüfe Original- und Archivlink gemäß Anleitung und entferne dann diesen Hinweis.) Landeswappen Schleswig-Holstein[1] (Details)',
-      type: ['land'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Landeswappen',
-    }, {
-      locationName: 'Wappenzeichen',
-      locationUrl: 'https://de.wikipedia.org/wiki/Wappenzeichen',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/State_symbol_of_Schleswig-Holstein.svg/118px-State_symbol_of_Schleswig-Holstein.svg.png',
-      description: 'Wappenzeichen',
-      type: ['land'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Landeswappen',
-    }, {
-      locationName: 'Flensburg',
-      locationUrl: 'https://de.wikipedia.org/wiki/Flensburg',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/DEU_Flensburg_COA.svg/103px-DEU_Flensburg_COA.svg.png',
-      description: '↑ Flensburg: „In Gold über blauem Wellenschildfuß ein sechseckiger roter Turm mit blauem Spitzdach, aus dem übereinander zwei herschauende, rot gezungte blaue Löwen hervorbrechen; oben ein roter Schild mit silbernem Nesselblatt.“ (Kommunale Wappenrolle Schleswig-Holstein) Flensburg[2] (Artikel)',
-      type: ['city'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Kreisfreie Städte',
-    }, {
-      locationName: 'Kiel',
-      locationUrl: 'https://de.wikipedia.org/wiki/Kiel',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/DEU_Kiel_%28Alt.%29_COA.svg/114px-DEU_Kiel_%28Alt.%29_COA.svg.png',
-      description: '↑ Kiel: „In Rot das silberne holsteinische Nesselblatt, belegt mit einem gemauerten schwarzen Boot.“ (Kommunale Wappenrolle Schleswig-Holstein) Kiel[3] (Artikel)',
-      type: ['city'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Kreisfreie Städte',
-    }, {
-      locationName: 'Lübeck',
-      locationUrl: 'https://de.wikipedia.org/wiki/L%C3%BCbeck',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/DEU_Luebeck_COA.svg/104px-DEU_Luebeck_COA.svg.png',
-      description: '↑ Lübeck: „In Gold ein rot bewehrter schwarzer Doppeladler mit einem von Silber und Rot geteilten Brustschild. Im großen Wappen halten zwei goldene Löwen den Schild; auf diesem ein Helm mit einköpfigem schwarzem Adler als Zier und silbern-roten Decken.“ (Kommunale Wappenrolle Schleswig-Holstein) Lübeck[4] (Artikel)',
-      type: ['city'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Kreisfreie Städte',
-    }, {
-      locationName: 'Neumünster',
-      locationUrl: 'https://de.wikipedia.org/wiki/Neum%C3%BCnster',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/DEU_Neum%C3%BCnster_COA.svg/92px-DEU_Neum%C3%BCnster_COA.svg.png',
-      description: '↑ Neumünster: „In Rot eine silberne Fabrikanlage mit fünf Schloten, darunter ein silberner Schwan mit goldener Halskrone; über ihm schwebend ein silbernes Nesselblatt.“ (Kommunale Wappenrolle Schleswig-Holstein) Neumünster[5]',
-      type: ['city'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Kreisfreie Städte',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/HEI_in_Schleswig-Holstein.svg/120px-HEI_in_Schleswig-Holstein.svg.png',
+      description: 'Karte Dithmarschen, Schleswig-Holstein',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Dithmarschen',
+      sourceTitle: 'Liste der Wappen im Kreis Dithmarschen | Kreiswappen',
     }, {
       locationName: 'Dithmarschen',
       locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Dithmarschen',
       thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/DEU_Kreis_Dithmarschen_COA.svg/103px-DEU_Kreis_Dithmarschen_COA.svg.png',
-      description: '↑ Kreis Dithmarschen: „In Rot auf silbernem galoppierenden Pferd mit goldenem Sattel, goldenem Zaumzeug und blauer Satteldecke ein golden gerüsteter, ein silbernes Schwert über dem Kopf schwingender Reiter mit silbernem Helmbusch.“ (Kommunale Wappenrolle Schleswig-Holstein) Dithmarschen[6] (Details)',
+      description: '↑ Kreis Dithmarschen: „In Rot auf silbernem galoppierenden Pferd mit goldenem Sattel, goldenem Zaumzeug und blauer Satteldecke ein golden gerüsteter, ein silbernes Schwert über dem Kopf schwingender Reiter mit silbernem Helmbusch.“ (Kommunale Wappenrolle Schleswig-Holstein) Kreiswappen Dithmarschen[1] (Details)',
       type: ['kreis'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Kreise',
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Dithmarschen',
+      sourceTitle: 'Liste der Wappen im Kreis Dithmarschen | Kreiswappen',
     }, {
-      locationName: 'Herzogtum Lauenburg',
-      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Herzogtum_Lauenburg',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/DEU_Kreis_Herzogtum_Lauenburg_COA.svg/69px-DEU_Kreis_Herzogtum_Lauenburg_COA.svg.png',
-      description: '↑ Kreis Herzogtum Lauenburg: „In Rot mit zwölffach von Silber und Schwarz gestücktem Bord ein rechtsgewendeter silberner Pferdekopf. Über dem Schild eine goldene Königskrone.“ (Kommunale Wappenrolle Schleswig-Holstein) Herzogtum Lauenburg[7] (Details)',
-      type: ['kreis'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Kreise',
+      locationName: 'Brunsbüttel',
+      locationUrl: 'https://de.wikipedia.org/wiki/Brunsb%C3%BCttel',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/DEU_Brunsb%C3%BCttel_COA.svg/111px-DEU_Brunsb%C3%BCttel_COA.svg.png',
+      description: '↑ Brunsbüttel: „In Rot ein schräglinker silberner Wellenbalken, den, schräglinks gekreuzt, ein Anker mit Ring und ein Spaten in verwechselten Farben überdecken.“ (Kommunale Wappenrolle Schleswig-Holstein) Brunsbüttel[2], Stadt',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Dithmarschen',
+      sourceTitle: 'Liste der Wappen im Kreis Dithmarschen | Amtsfreie Städte und Gemeinden',
     }, {
-      locationName: 'Nordfriesland',
-      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Nordfriesland',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DEU_Kreis_Nordfriesland_COA.svg/102px-DEU_Kreis_Nordfriesland_COA.svg.png',
-      description: '↑ Kreis Nordfriesland: „In Blau drei goldene dreimastige Schiffe im Stil des 16. Jahrhunderts in der Stellung 2 : 1 mit goldenen Segeln und roten Wimpeln; auf den Großsegeln je ein rotes Beizeichen (1. Pflug, 2. Fisch, 3. Stierkopf).“ (Kommunale Wappenrolle Schleswig-Holstein) Nordfriesland[8] (Details)',
-      type: ['kreis'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Kreise',
+      locationName: 'Heide',
+      locationUrl: 'https://de.wikipedia.org/wiki/Heide_(Holstein)',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/DEU_Heide_COA.svg/111px-DEU_Heide_COA.svg.png',
+      description: '↑ Heide: „In Rot der barhäuptige, silbern gerüstete Ritter St. Jürgen, der auf dem Leib eines auf dem Rücken liegenden silbernen Drachens steht und seinen Speer in den Rachen desselben stößt. Rechts wird der Ritter von einem aufgerichteten Anker und links von einem Heidebüschel begleitet. Das Haar, der Gürtel, die Sporen und der Speer des Ritters, die Augen des Drachens, der Anker und die Wurzeln des Heidebüschels sind golden, während das Heidebüschel selbst grün und dessen Blüten lila tingiert sind.“ (Kommunale Wappenrolle Schleswig-Holstein) Heide[3], Stadt',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Dithmarschen',
+      sourceTitle: 'Liste der Wappen im Kreis Dithmarschen | Amtsfreie Städte und Gemeinden',
     }, {
-      locationName: 'Ostholstein',
-      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Ostholstein',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/DEU_Kreis_Ostholstein_COA.svg/91px-DEU_Kreis_Ostholstein_COA.svg.png',
-      description: '↑ Kreis Ostholstein: „In Blau ein wachsender, silberner zweistöckiger Turm, das untere Stockwerk gemauert, mit rundbogiger Toröffnung und mit Zinnen, das obere glatt, zurückspringend und mit beiderseits ausladenden Zinnen; darüber ein goldenes, gleichschenkliges und geradarmiges Tatzenkreuz, oben besteckt mit einer silbernen, oben und unten von silbernen Perlen eingefassten Bischofsmütze mit goldenen fliegenden Bändern.“ (Kommunale Wappenrolle Schleswig-Holstein) Ostholstein[9]',
-      type: ['kreis'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Kreise',
+      locationName: '',
+      locationUrl: '',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Amt_KLG_Heider_Umland_in_HEI.png/120px-Amt_KLG_Heider_Umland_in_HEI.png',
+      description: 'Lage des Amtes',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Dithmarschen',
+      sourceTitle: 'Liste der Wappen im Kreis Dithmarschen | Amt Kirchspielslandgemeinde Heider Umland',
     }, {
-      locationName: 'Pinneberg',
-      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Pinneberg',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/DEU_Kreis_Pinneberg_COA.svg/111px-DEU_Kreis_Pinneberg_COA.svg.png',
-      description: '↑ Kreis Pinneberg: „In Rot das silberne holsteinische Nesselblatt, belegt mit einer stilisierten grünen Tanne, die goldene Wurzeln hat.“ (Kommunale Wappenrolle Schleswig-Holstein) Pinneberg[10] (Details)',
-      type: ['kreis'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Kreise',
+      locationName: 'Amt KLG Heider Umland',
+      locationUrl: 'https://de.wikipedia.org/wiki/Amt_Kirchspielslandgemeinde_Heider_Umland',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/DEU_Amt_Kirchspielslandgemeinde_Heider_Umland_COA.svg/108px-DEU_Amt_Kirchspielslandgemeinde_Heider_Umland_COA.svg.png',
+      description: '↑ Amt KLG Heider Umland: „In Rot ein silberner, von elf silbernen Pflugscharen umgebener Schild, darin unter einer blauen Waage ein fünfspeichiges rotes Rad.“ (Kommunale Wappenrolle Schleswig-Holstein) Wappen Amt KLG Heider Umland[29]',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Dithmarschen',
+      sourceTitle: 'Liste der Wappen im Kreis Dithmarschen | Amt Kirchspielslandgemeinde Heider Umland',
     }, {
-      locationName: 'Plön',
-      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Pl%C3%B6n',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/DEU_Kreis_Pl%C3%B6n_COA.svg/112px-DEU_Kreis_Pl%C3%B6n_COA.svg.png',
-      description: '↑ Kreis Plön: „Durch einen silbernen Wellenbalken von Rot und Blau geteilt. Oben das silberne holsteinische Nesselblatt, begleitet rechts von einem silbernen Eichenblatt, links von einer silbernen Ähre; unten ein silberner Fisch.“ (Kommunale Wappenrolle Schleswig-Holstein) Plön[11]',
-      type: ['kreis'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Kreise',
+      locationName: '',
+      locationUrl: '',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Amt_KLG_Eider.PNG/120px-Amt_KLG_Eider.PNG',
+      description: 'Lage des Amtes',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Dithmarschen',
+      sourceTitle: 'Liste der Wappen im Kreis Dithmarschen | Amt Kirchspielslandgemeinden Eider',
     }, {
-      locationName: 'Rendsburg-Eckernförde',
-      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Rendsburg-Eckernf%C3%B6rde',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/DEU_Kreis_Rendsburg-Eckernf%C3%B6rde_COA.svg/111px-DEU_Kreis_Rendsburg-Eckernf%C3%B6rde_COA.svg.png',
-      description: '↑ Kreis Rendsburg-Eckernförde: „Schräglinks im Wellenschnitt geteilt. Oben in Gold die beiden schreitenden, blauen Schleswiger Löwen übereinander, unten in Rot das silberne holsteinische Nesselblatt.“ (Kommunale Wappenrolle Schleswig-Holstein) Rendsburg-Eckernförde[12]',
-      type: ['kreis'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Kreise',
-    }, {
-      locationName: 'Schleswig-Flensburg',
-      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Schleswig-Flensburg',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/DEU_Kreis_Schleswig-Flensburg_COA.svg/110px-DEU_Kreis_Schleswig-Flensburg_COA.svg.png',
-      description: '↑ Kreis Schleswig-Flensburg: „Über blauem, mit zwei silbernen Wellenfäden belegtem Wellenschildfuß von Blau und Gold schräglinks geteilt mit zwei schreitenden, rot bewehrten Löwen in verwechselten Farben.“ (Kommunale Wappenrolle Schleswig-Holstein) Schleswig-Flensburg[13]',
-      type: ['kreis'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Kreise',
-    }, {
-      locationName: 'Segeberg',
-      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Segeberg',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/DEU_Kreis_Segeberg_COA.svg/100px-DEU_Kreis_Segeberg_COA.svg.png',
-      description: '↑ Kreis Segeberg: „In Silber ein aus vier spitzbedachten roten Ziegeltürmen bestehendes Kreuz, bewinkelt von vier grünen Seerosenblättern und in seiner ausgebrochenen Kreuzungsstelle belegt mit dem holsteinischen Wappenschild: in Rot ein silbernes Nesselblatt.“ (Kommunale Wappenrolle Schleswig-Holstein) Segeberg[14]',
-      type: ['kreis'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Kreise',
-    }, {
-      locationName: 'Steinburg',
-      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Steinburg',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/DEU_Kreis_Steinburg_COA.svg/120px-DEU_Kreis_Steinburg_COA.svg.png',
-      description: '↑ Kreis Steinburg: „In Rot über blauen Wellen eine silberne Burg mit drei blau bedachten Zinnentürmen; unter dem Zinnenkranz aufgelegt drei Schilde: 1. in Blau der silbern und golden gekleidete Christus mit zum Segen erhobener Rechten, in der Linken die rote Weltkugel haltend; 2. in Rot ein silbernes Nesselblatt; 3. in Rot ein flugbereiter silberner Schwan mit einer goldenen Krone um den Hals.“ (Kommunale Wappenrolle Schleswig-Holstein) Steinburg[15]',
-      type: ['kreis'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Kreise',
-    }, {
-      locationName: 'Stormarn',
-      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Stormarn',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/DEU_Kreis_Stormarn_COA.svg/105px-DEU_Kreis_Stormarn_COA.svg.png',
-      description: '↑ Kreis Stormarn: „In Rot ein nach rechts schreitender silberner Schwan in Kampfstellung mit erhobenen Flügeln und einer goldenen Krone um den Hals.“ (Kommunale Wappenrolle Schleswig-Holstein) Stormarn[16] (Details)',
-      type: ['kreis'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Kreise',
-    }, {
-      locationName: 'Eckernförde',
-      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Eckernf%C3%B6rde',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Eckernfoerde_Kreis_Wappen.png/112px-Eckernfoerde_Kreis_Wappen.png',
-      description: '↑ Kreis Eckernförde: „In Gold ein nach rechts springendes rotes Eichhörnchen über einer mit blau-silbernen Wellen ausgefüllten Spitze.“ (Schlothfeldt Schleswig-Holsteinische Kreis- und Ortswappen) Eckernförde[17]',
-      type: ['formerKreis'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Ehemalige Kreise',
-    }, {
-      locationName: 'Eiderstedt',
-      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Eiderstedt',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/DEU_Kreis_Eiderstedt_COA.svg/108px-DEU_Kreis_Eiderstedt_COA.svg.png',
-      description: '↑ Kreis Eiderstedt: „In Blau drei rechtshin segelnde dreimastige goldene Schiffe (2:1) mit silbernen Segeln und roten Wimpeln. Auf dem Großsegel je das Zeichen der drei Eiderstedter Harden: Utholm, ein hervorbrechender blauer Leopard; Everschop, eine blaue Karausche; Eiderstedt, ein roter Ochsenkopf.“ (Schlothfeldt Schleswig-Holsteinische Kreis- und Ortswappen) Eiderstedt[18]',
-      type: ['formerKreis'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Ehemalige Kreise',
-    }, {
-      locationName: 'Eutin',
-      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Eutin',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Eutin_Kreis_Wappen.png/111px-Eutin_Kreis_Wappen.png',
-      description: '↑ Kreis Eutin: „Schild halb gespalten, halb geteilt, oben rechts in Gold zwei rote Querbalken, oben links in Blau ein goldenes Nadelspitzkreuz, unten in Blau ein goldenes Kreuz, das eine goldene Bischofsmütze mit fliegenden Bändern trägt.“ (Schlothfeldt Schleswig-Holsteinische Kreis- und Ortswappen) Eutin[19]',
-      type: ['formerKreis'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Ehemalige Kreise',
-    }, {
-      locationName: 'Flensburg-Land',
-      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Flensburg-Land',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flensburg_Kreis_Wappen.png/111px-Flensburg_Kreis_Wappen.png',
-      description: '↑ Kreis Flensburg-Land: „Im geteilten Schild oben in Gold ein nach rechts schreitender rot bewehrter blauer Löwe, unten in Blau fünf (3:2) silberne Rosen.“ (Schlothfeldt Schleswig-Holsteinische Kreis- und Ortswappen) Flensburg-Land[20]',
-      type: ['formerKreis'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Ehemalige Kreise',
-    }, {
-      locationName: 'Husum',
-      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Husum',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Husum_Kreis_Wappen.png/111px-Husum_Kreis_Wappen.png',
-      description: '↑ Kreis Husum: „Im geteilten Schild oben in Gold die beiden schleswigschen Löwen, unten in Rot ein silbernes Pflugeisen, rechts begleitet von einer silbernen Mondsichel, links von einem sechsstrahligen silbernen Stern.“ (Schlothfeldt Schleswig-Holsteinische Kreis- und Ortswappen) Husum[21]',
-      type: ['formerKreis'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Ehemalige Kreise',
-    }, {
-      locationName: 'Norderdithmarschen',
-      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Norderdithmarschen',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Norderdithmarschen_Kreis_Wappen.png/110px-Norderdithmarschen_Kreis_Wappen.png',
-      description: '↑ Kreis Norderdithmarschen: „In Rot über grünem Boden auf golden gezäumtem und blau gesatteltem silbernen Pferd sprengend ein Ritter in goldener Rüstung, der mit der Rechten ein silbernes Schwert über dem Kopf schwingt.“ (Stadler Deutsche Wappen, Band 1) Norderdithmarschen[22]',
-      type: ['formerKreis'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Ehemalige Kreise',
-    }, {
-      locationName: 'Oldenburg in Holstein',
-      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Oldenburg_in_Holstein',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Oldenburg_%28Holstein%29_Kreis_Wappen.png/113px-Oldenburg_%28Holstein%29_Kreis_Wappen.png',
-      description: '↑ Kreis Oldenburg in Holstein: „In Blau, über einem silbernen Fisch eine goldene zweistöckige Burg mit offenem Tor, beiderseits begleitet von je einer goldenen Ähre. Über den Burgzinnen schwebt der rote holsteinische Schild mit dem silbernen Nesselblatt.“ (Schlothfeldt Schleswig-Holsteinische Kreis- und Ortswappen) Oldenburg in Holstein[23]',
-      type: ['formerKreis'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Ehemalige Kreise',
-    }, {
-      locationName: 'Rendsburg',
-      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Rendsburg',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Rendsburg_Kreis_Wappen.png/111px-Rendsburg_Kreis_Wappen.png',
-      description: '↑ Kreis Rendsburg: „In Gold, über blau-silbernen Wellen eine dreitürmige rote Burg; im Schildhaupt der rote holsteinische Schild mit dem silbernen Nesselblatt, flankiert von den beiden schleswigschen rotbewehrten blauen Löwen.“ (Schlothfeldt Schleswig-Holsteinische Kreis- und Ortswappen) Rendsburg[24]',
-      type: ['formerKreis'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Ehemalige Kreise',
-    }, {
-      locationName: 'Schleswig',
-      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Schleswig',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Schleswig_Kreis_Wappen.png/113px-Schleswig_Kreis_Wappen.png',
-      description: '↑ Kreis Schleswig: „In Blau unter einer nach rechts schwebenden silbernen Möwe ein goldenes, mit grünen Wellenlinien durchzogenes Ährenfeld, das rechts von blauem Wasser mit weißen spitzen Wellenköpfen und links von blauem Wasser mit weißen runden Wellenköpfen eingeschnitten ist.“ (Schlothfeldt Schleswig-Holsteinische Kreis- und Ortswappen) Schleswig[25]',
-      type: ['formerKreis'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Ehemalige Kreise',
-    }, {
-      locationName: 'Süderdithmarschen',
-      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_S%C3%BCderdithmarschen',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Suederdithmarschen_Kreis_Wappen.png/111px-Suederdithmarschen_Kreis_Wappen.png',
-      description: '↑ Kreis Süderdithmarschen: „In Rot auf silbernem, nach rechts sprengendem Ross ein Ritter in silberner Rüstung, in der Rechten sein zum Schlag erhobenes silbernes Schwert schwingend.“ (Schlothfeldt Schleswig-Holsteinische Kreis- und Ortswappen) Süderdithmarschen[26]',
-      type: ['formerKreis'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Ehemalige Kreise',
-    }, {
-      locationName: 'Südtondern',
-      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_S%C3%BCdtondern',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Suedtondern_Kreis_Wappen.png/112px-Suedtondern_Kreis_Wappen.png',
-      description: '↑ Kreis Südtondern: „In Rot über blau-silbernen Wellen im Schildfuß ein goldener Leuchtturm, von dessen Fenstern nach beiden Seiten je ein silbernes Strahlenbündel ausgeht.“ (Schlothfeldt Schleswig-Holsteinische Kreis- und Ortswappen) Südtondern[27]',
-      type: ['formerKreis'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
-      sourceTitle: 'Ehemalige Kreise',
+      locationName: 'Amt Kirchspielslandgemeinden Eider',
+      locationUrl: 'https://de.wikipedia.org/wiki/Amt_Kirchspielslandgemeinden_Eider',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/DEU_Amt_Kirchspielslandgemeinden_Eider_COA.svg/109px-DEU_Amt_Kirchspielslandgemeinden_Eider_COA.svg.png',
+      description: '↑ Amt Kirchspielslandgemeinden Eider: „Durch einen geteilten, oben blauen, unten silbernen Wellenbalken von Gold und Grün stark erhöht geteilt. Unten über einem goldenen Wagenrad zwei gekreuzte silberne Schwerter, in den Winkeln oben, links und rechts begleitet von je einem goldenen Stern.“ (Kommunale Wappenrolle Schleswig-Holstein) Wappen Amt Kirchspielslandgemeinden Eider[41]',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Dithmarschen',
+      sourceTitle: 'Liste der Wappen im Kreis Dithmarschen | Amt Kirchspielslandgemeinden Eider',
     }
-]; 
-
-urls.unitBySource['https://de.wikipedia.org/wiki/Von_der_britischen_Milit%C3%A4rregierung_genehmigte_Wappen_in_Schleswig-Holstein'] = [
-  
 ]; 
 
 urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Herzogtum_Lauenburg'] = [
@@ -261,7 +85,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Herzo
       description: 'Karte Herzogtum Lauenburg, Schleswig-Holstein',
       type: ['kreis'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Herzogtum_Lauenburg',
-      sourceTitle: 'Kreiswappen',
+      sourceTitle: 'Liste der Wappen im Kreis Herzogtum Lauenburg | Kreiswappen',
     }, {
       locationName: 'Herzogtum Lauenburg',
       locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Herzogtum_Lauenburg',
@@ -269,7 +93,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Herzo
       description: '↑ Kreis Herzogtum Lauenburg: „In Rot mit zwölffach von Silber und Schwarz gestücktem Bord ein rechtsgewendeter silberner Pferdekopf. Über dem Schild eine goldene Königskrone.“ (Kommunale Wappenrolle Schleswig-Holstein) Kreiswappen Herzogtum Lauenburg[1] (Details)',
       type: ['kreis'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Herzogtum_Lauenburg',
-      sourceTitle: 'Kreiswappen',
+      sourceTitle: 'Liste der Wappen im Kreis Herzogtum Lauenburg | Kreiswappen',
     }, {
       locationName: 'Geesthacht',
       locationUrl: 'https://de.wikipedia.org/wiki/Geesthacht',
@@ -277,7 +101,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Herzo
       description: '↑ Geesthacht: „Gespalten von Silber und Blau. Vorn auf grünem Dreiberg eine schwarze Korbweide mit sieben grün belaubten Schößlingen, hinten auf silbernen und blauen Wellen ein einmastiger goldener Kahn mit silbernem Segel.“ (Kommunale Wappenrolle Schleswig-Holstein) Geesthacht[2], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Herzogtum_Lauenburg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Herzogtum Lauenburg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Lauenburg/Elbe',
       locationUrl: 'https://de.wikipedia.org/wiki/Lauenburg/Elbe',
@@ -285,7 +109,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Herzo
       description: '↑ Lauenburg/Elbe: „In Silber eine rote Burg mit goldenem Tor in der Mauer und zwei spitz bedachten Zinnentürmen; zwischen ihnen schwebend ein gespaltener Schild: vorn in Silber ein halber roter Adler am Spalt, hinten neunmal geteilt von Schwarz und Gold, überdeckt mit schrägem, gebogenem grünen Rautenkranz.“ (Kommunale Wappenrolle Schleswig-Holstein) Lauenburg/Elbe[3], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Herzogtum_Lauenburg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Herzogtum Lauenburg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Mölln',
       locationUrl: 'https://de.wikipedia.org/wiki/M%C3%B6lln',
@@ -293,7 +117,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Herzo
       description: '↑ Mölln: „In Rot ein silbernes Mühlrad. Im silbernen Schildhaupt ein rotes Mühleisen.“ (Kommunale Wappenrolle Schleswig-Holstein) Mölln[4], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Herzogtum_Lauenburg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Herzogtum Lauenburg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Ratzeburg',
       locationUrl: 'https://de.wikipedia.org/wiki/Ratzeburg',
@@ -301,7 +125,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Herzo
       description: '↑ Ratzeburg: „In Silber eine durchgehende rote Burg mit offenem, rundbogigem Tor, bis zum unteren Schildrand reichender Zinnenmauer und drei Zinnentürmen, von denen der mittlere, höhere mit blauem Spitzdach (darauf ein roter Knauf) versehen ist; neben den aufgeschlagenen, goldenen Torflügeln je drei goldene, aus dem unteren Schildrand emporwachsende niedrige Palisadenpfähle.“ (Kommunale Wappenrolle Schleswig-Holstein) Ratzeburg[5], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Herzogtum_Lauenburg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Herzogtum Lauenburg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Schwarzenbek',
       locationUrl: 'https://de.wikipedia.org/wiki/Schwarzenbek',
@@ -309,7 +133,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Herzo
       description: '↑ Schwarzenbek: „In Gold ein steigender schwarzer Wolf mit roter Zunge über einem schwarzen Wellenbalken im Schildfuß.“ (Kommunale Wappenrolle Schleswig-Holstein) Schwarzenbek[6], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Herzogtum_Lauenburg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Herzogtum Lauenburg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Wentorf bei Hamburg',
       locationUrl: 'https://de.wikipedia.org/wiki/Wentorf_bei_Hamburg',
@@ -317,143 +141,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Herzo
       description: '↑ Wentorf bei Hamburg: „In Gold ein sechsspeichiges schwarzes Wagenrad unter einem grünen Rautenkranz im Schildhaupt.“ (Kommunale Wappenrolle Schleswig-Holstein) Wentorf bei Hamburg[7]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Herzogtum_Lauenburg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
-    }
-]; 
-
-urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Dithmarschen'] = [
-  {
-      locationName: '',
-      locationUrl: '',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/HEI_in_Schleswig-Holstein.svg/120px-HEI_in_Schleswig-Holstein.svg.png',
-      description: 'Karte Dithmarschen, Schleswig-Holstein',
-      type: ['kreis'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Dithmarschen',
-      sourceTitle: 'Kreiswappen',
-    }, {
-      locationName: 'Dithmarschen',
-      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Dithmarschen',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/DEU_Kreis_Dithmarschen_COA.svg/103px-DEU_Kreis_Dithmarschen_COA.svg.png',
-      description: '↑ Kreis Dithmarschen: „In Rot auf silbernem galoppierenden Pferd mit goldenem Sattel, goldenem Zaumzeug und blauer Satteldecke ein golden gerüsteter, ein silbernes Schwert über dem Kopf schwingender Reiter mit silbernem Helmbusch.“ (Kommunale Wappenrolle Schleswig-Holstein) Kreiswappen Dithmarschen[1] (Details)',
-      type: ['kreis'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Dithmarschen',
-      sourceTitle: 'Kreiswappen',
-    }, {
-      locationName: 'Brunsbüttel',
-      locationUrl: 'https://de.wikipedia.org/wiki/Brunsb%C3%BCttel',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/DEU_Brunsb%C3%BCttel_COA.svg/111px-DEU_Brunsb%C3%BCttel_COA.svg.png',
-      description: '↑ Brunsbüttel: „In Rot ein schräglinker silberner Wellenbalken, den, schräglinks gekreuzt, ein Anker mit Ring und ein Spaten in verwechselten Farben überdecken.“ (Kommunale Wappenrolle Schleswig-Holstein) Brunsbüttel[2], Stadt',
-      type: ['city'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Dithmarschen',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
-    }, {
-      locationName: 'Heide',
-      locationUrl: 'https://de.wikipedia.org/wiki/Heide_(Holstein)',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/DEU_Heide_COA.svg/111px-DEU_Heide_COA.svg.png',
-      description: '↑ Heide: „In Rot der barhäuptige, silbern gerüstete Ritter St. Jürgen, der auf dem Leib eines auf dem Rücken liegenden silbernen Drachens steht und seinen Speer in den Rachen desselben stößt. Rechts wird der Ritter von einem aufgerichteten Anker und links von einem Heidebüschel begleitet. Das Haar, der Gürtel, die Sporen und der Speer des Ritters, die Augen des Drachens, der Anker und die Wurzeln des Heidebüschels sind golden, während das Heidebüschel selbst grün und dessen Blüten lila tingiert sind.“ (Kommunale Wappenrolle Schleswig-Holstein) Heide[3], Stadt',
-      type: ['city'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Dithmarschen',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
-    }, {
-      locationName: '',
-      locationUrl: '',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Amt_KLG_Heider_Umland_in_HEI.png/120px-Amt_KLG_Heider_Umland_in_HEI.png',
-      description: 'Lage des Amtes',
-      type: ['gemeinde'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Dithmarschen',
-      sourceTitle: 'Amt Kirchspielslandgemeinde Heider Umland',
-    }, {
-      locationName: 'Amt KLG Heider Umland',
-      locationUrl: 'https://de.wikipedia.org/wiki/Amt_Kirchspielslandgemeinde_Heider_Umland',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/DEU_Amt_Kirchspielslandgemeinde_Heider_Umland_COA.svg/108px-DEU_Amt_Kirchspielslandgemeinde_Heider_Umland_COA.svg.png',
-      description: '↑ Amt KLG Heider Umland: „In Rot ein silberner, von elf silbernen Pflugscharen umgebener Schild, darin unter einer blauen Waage ein fünfspeichiges rotes Rad.“ (Kommunale Wappenrolle Schleswig-Holstein) Wappen Amt KLG Heider Umland[29]',
-      type: ['gemeinde'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Dithmarschen',
-      sourceTitle: 'Amt Kirchspielslandgemeinde Heider Umland',
-    }, {
-      locationName: '',
-      locationUrl: '',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Amt_KLG_Eider.PNG/120px-Amt_KLG_Eider.PNG',
-      description: 'Lage des Amtes',
-      type: ['gemeinde'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Dithmarschen',
-      sourceTitle: 'Amt Kirchspielslandgemeinden Eider',
-    }, {
-      locationName: 'Amt Kirchspielslandgemeinden Eider',
-      locationUrl: 'https://de.wikipedia.org/wiki/Amt_Kirchspielslandgemeinden_Eider',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/DEU_Amt_Kirchspielslandgemeinden_Eider_COA.svg/109px-DEU_Amt_Kirchspielslandgemeinden_Eider_COA.svg.png',
-      description: '↑ Amt Kirchspielslandgemeinden Eider: „Durch einen geteilten, oben blauen, unten silbernen Wellenbalken von Gold und Grün stark erhöht geteilt. Unten über einem goldenen Wagenrad zwei gekreuzte silberne Schwerter, in den Winkeln oben, links und rechts begleitet von je einem goldenen Stern.“ (Kommunale Wappenrolle Schleswig-Holstein) Wappen Amt Kirchspielslandgemeinden Eider[41]',
-      type: ['gemeinde'],
-      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Dithmarschen',
-      sourceTitle: 'Amt Kirchspielslandgemeinden Eider',
-    }
-]; 
-
-urls.unitBySource['https://de.wikipedia.org/wiki/Flensburger_Wappen'] = [
-  
-]; 
-
-urls.unitBySource['https://de.wikipedia.org/wiki/Kieler_Wappen'] = [
-  
-]; 
-
-urls.unitBySource['https://de.wikipedia.org/wiki/L%C3%BCbecker_Wappen'] = [
-  {
-      locationName: '',
-      locationUrl: '',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/de/thumb/f/fc/Wappen_L%C3%BCbeck_1784.jpg/120px-Wappen_L%C3%BCbeck_1784.jpg',
-      description: 'Der Lübecker Doppeladler als Holzschnitt-Vignette Entnommen einem Druck von 1784',
-      type: ['gemeinde'],
-      source: 'https://de.wikipedia.org/wiki/L%C3%BCbecker_Wappen',
-      sourceTitle: 'Wappen der Stadtgemeinde',
-    }, {
-      locationName: '',
-      locationUrl: '',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Wappen_Deutsches_Reich_-_Freie_und_Hansestadt_L%C3%BCbeck_%28Grosses%29.jpg/108px-Wappen_Deutsches_Reich_-_Freie_und_Hansestadt_L%C3%BCbeck_%28Grosses%29.jpg',
-      description: 'Großes Wappen der Freien und Hansestadt Lübeck im Deutschen Reich',
-      type: ['city'],
-      source: 'https://de.wikipedia.org/wiki/L%C3%BCbecker_Wappen',
-      sourceTitle: 'Wappen der Stadtgemeinde',
-    }, {
-      locationName: '',
-      locationUrl: '',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Wappen_L%C3%BCbeck_%28Alt%29.svg/107px-Wappen_L%C3%BCbeck_%28Alt%29.svg.png',
-      description: 'Frühere Darstellung',
-      type: ['gemeinde'],
-      source: 'https://de.wikipedia.org/wiki/L%C3%BCbecker_Wappen',
-      sourceTitle: 'Wappen der Stadtgemeinde',
-    }, {
-      locationName: 'Hubbrücke',
-      locationUrl: 'https://de.wikipedia.org/wiki/Hubbr%C3%BCcke_(L%C3%BCbeck)',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Germany_Luebeck_coats_of_arms_mosaic.jpg/90px-Germany_Luebeck_coats_of_arms_mosaic.jpg',
-      description: 'Mosaik an der Hubbrücke über den Elbe-Lübeck-Kanal unterhalb des Burgtores',
-      type: ['gemeinde'],
-      source: 'https://de.wikipedia.org/wiki/L%C3%BCbecker_Wappen',
-      sourceTitle: 'Wappen der Stadtgemeinde',
-    }, {
-      locationName: '',
-      locationUrl: '',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/HL_Damals_%E2%80%93_5te_St_Lorenz_Schule_%E2%80%93_3.jpg/96px-HL_Damals_%E2%80%93_5te_St_Lorenz_Schule_%E2%80%93_3.jpg',
-      description: 'Wappen an der 1900 erbauten heutigen Lutherschule',
-      type: ['gemeinde'],
-      source: 'https://de.wikipedia.org/wiki/L%C3%BCbecker_Wappen',
-      sourceTitle: 'Wappen der Stadtgemeinde',
-    }, {
-      locationName: 'Reichsgerichtsgebäudes',
-      locationUrl: 'https://de.wikipedia.org/wiki/Reichsgerichtsgeb%C3%A4ude',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Leipzig_Reichsgericht_Wartehallenfenster_Nord_4.jpg/120px-Leipzig_Reichsgericht_Wartehallenfenster_Nord_4.jpg',
-      description: 'Wappen in einem Fenster des Reichsgerichtsgebäudes in Leipzig',
-      type: ['gemeinde'],
-      source: 'https://de.wikipedia.org/wiki/L%C3%BCbecker_Wappen',
-      sourceTitle: 'Wappen der Stadtgemeinde',
-    }, {
-      locationName: 'Kurt Weidemann',
-      locationUrl: 'https://de.wikipedia.org/wiki/Kurt_Weidemann',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/DEU_Luebeck_COA.svg/104px-DEU_Luebeck_COA.svg.png',
-      description: 'Offizielles Stadtwappen seit 1997 Erstellt von Prof. Kurt Weidemann',
-      type: ['city'],
-      source: 'https://de.wikipedia.org/wiki/L%C3%BCbecker_Wappen',
-      sourceTitle: 'Wappen der Stadtgemeinde',
+      sourceTitle: 'Liste der Wappen im Kreis Herzogtum Lauenburg | Amtsfreie Städte und Gemeinden',
     }
 ]; 
 
@@ -465,7 +153,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Nordf
       description: 'Karte Nordfriesland, Schleswig-Holstein',
       type: ['kreis'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Nordfriesland',
-      sourceTitle: 'Kreiswappen',
+      sourceTitle: 'Liste der Wappen im Kreis Nordfriesland | Kreiswappen',
     }, {
       locationName: 'Nordfriesland',
       locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Nordfriesland',
@@ -473,7 +161,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Nordf
       description: '↑ Kreis Nordfriesland: „In Blau drei goldene dreimastige Schiffe im Stil des 16. Jahrhunderts in der Stellung 2 : 1 mit goldenen Segeln und roten Wimpeln; auf den Großsegeln je ein rotes Beizeichen (1. Pflug, 2. Fisch, 3. Stierkopf).“ (Kommunale Wappenrolle Schleswig-Holstein) Kreiswappen Nordfriesland[1] (Details)',
       type: ['kreis'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Nordfriesland',
-      sourceTitle: 'Kreiswappen',
+      sourceTitle: 'Liste der Wappen im Kreis Nordfriesland | Kreiswappen',
     }, {
       locationName: 'Friedrichstadt',
       locationUrl: 'https://de.wikipedia.org/wiki/Friedrichstadt',
@@ -481,7 +169,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Nordf
       description: '↑ Friedrichstadt: „In Rot zwei silbern gesäumte, schrägrechte blaue Wellenbalken, überdeckt mit dem silbernen, mit einem von Silber und Rot geteilten Schildchen belegten holsteinischen Nesselblatt.“ (Kommunale Wappenrolle Schleswig-Holstein) Friedrichstadt[2], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Nordfriesland',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Nordfriesland | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Husum',
       locationUrl: 'https://de.wikipedia.org/wiki/Husum',
@@ -489,7 +177,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Nordf
       description: '↑ Husum: „In Gold ein roter Palisadenzaun mit offenem Torhaus, dessen rotes Dach mit drei roten Fähnchen an blauen Stangen besteckt ist; in der Toröffnung zwei schreitende, rot gezungte blaue Löwen übereinander.“ (Kommunale Wappenrolle Schleswig-Holstein) Husum[3], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Nordfriesland',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Nordfriesland | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Reußenköge',
       locationUrl: 'https://de.wikipedia.org/wiki/Reu%C3%9Fenk%C3%B6ge',
@@ -497,7 +185,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Nordf
       description: '↑ Reußenköge: „Von Grün und Silber im Wellenschnitt geteilt. Oben eine goldene, aus sechs Ähren bestehende Garbe, unten fünf blaue Wellenfäden, überdeckt mit einem schwarzen Dreieckschild, darin ein rot gekrönter und gezungter goldener Löwe.“ (Kommunale Wappenrolle Schleswig-Holstein) Reußenköge[4]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Nordfriesland',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Nordfriesland | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Sylt',
       locationUrl: 'https://de.wikipedia.org/wiki/Sylt_(Gemeinde)',
@@ -505,7 +193,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Nordf
       description: 'Sylt',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Nordfriesland',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Nordfriesland | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Tönning',
       locationUrl: 'https://de.wikipedia.org/wiki/T%C3%B6nning',
@@ -513,7 +201,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Nordf
       description: '↑ Tönning: „In Rot auf blau-silbernen Wellen im Schildfuß schwimmend eine liegende goldene Tonne, auf der ein schwarzbewehrter silberner Schwan mit erhobenen Flügeln steht.“ (Kommunale Wappenrolle Schleswig-Holstein) Tönning[5], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Nordfriesland',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Nordfriesland | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Sylt-Ost',
       locationUrl: 'https://de.wikipedia.org/wiki/Sylt-Ost',
@@ -521,7 +209,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Nordf
       description: '↑ Sylt-Ost: „Von Gold und Blau gesenkt geteilt. Oben an der Teilungslinie eine strahlende rote Sonne, darüber - zur Mitte ansteigend - fünf achtstrahlige blaue Sterne, unten ein nach links schwimmender silberner Hering.“ (Kommunale Wappenrolle Schleswig-Holstein) Sylt-Ost[94]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Nordfriesland',
-      sourceTitle: 'Ehemalige Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Nordfriesland | Ehemalige Gemeinden',
     }, {
       locationName: 'Westerland',
       locationUrl: 'https://de.wikipedia.org/wiki/Westerland',
@@ -529,7 +217,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Nordf
       description: '↑ Westerland: „In Silber über blau-silbernen Wellen ein roter Leuchtturm mit goldener Laterne, von dem nach rechts und links drei rote, goldschimmernde Strahlenbündel ausgehen. Das Mauerwerk unterhalb der Laterne ist belegt mit einem geteilten Schild: oben Silber ohne Bild, unten Blau, darin ein silberner Hering.“ (Kommunale Wappenrolle Schleswig-Holstein) Westerland[95], Stadt',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Nordfriesland',
-      sourceTitle: 'Ehemalige Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Nordfriesland | Ehemalige Gemeinden',
     }
 ]; 
 
@@ -541,7 +229,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostho
       description: 'Karte Ostholstein, Schleswig-Holstein',
       type: ['kreis'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostholstein',
-      sourceTitle: 'Kreiswappen',
+      sourceTitle: 'Liste der Wappen im Kreis Ostholstein | Kreiswappen',
     }, {
       locationName: 'Ostholstein',
       locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Ostholstein',
@@ -549,7 +237,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostho
       description: '↑ Kreis Ostholstein: „In Blau ein wachsender, silberner zweistöckiger Turm, das untere Stockwerk gemauert, mit rundbogiger Toröffnung und mit Zinnen, das obere glatt, zurückspringend und mit beiderseits ausladenden Zinnen; darüber ein goldenes, gleichschenkliges und geradarmiges Tatzenkreuz, oben besteckt mit einer silbernen, oben und unten von silbernen Perlen eingefassten Bischofsmütze mit goldenen fliegenden Bändern.“ (Kommunale Wappenrolle Schleswig-Holstein) Kreiswappen Ostholstein[1]',
       type: ['kreis'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostholstein',
-      sourceTitle: 'Kreiswappen',
+      sourceTitle: 'Liste der Wappen im Kreis Ostholstein | Kreiswappen',
     }, {
       locationName: 'Ahrensbök',
       locationUrl: 'https://de.wikipedia.org/wiki/Ahrensb%C3%B6k',
@@ -557,7 +245,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostho
       description: '↑ Ahrensbök: „In Silber eine bewurzelte grüne Buche, belegt mit einem goldenen Schild, darin ein abgerissener, rotbewehrter schwarzer Adlerkopf.“ (Kommunale Wappenrolle Schleswig-Holstein) Ahrensbök[2]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostholstein',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Ostholstein | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Bad Schwartau',
       locationUrl: 'https://de.wikipedia.org/wiki/Bad_Schwartau',
@@ -565,7 +253,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostho
       description: '↑ Bad Schwartau: „Gespalten und halbgeteilt. Rechts in Silber ein schwarzer Schrägrechtswellenbalken, links oben in Blau ein goldenes, an den verdickten Enden einfach gekerbtes Steckkreuz, links unten in Gold zwei rote Balken.“ (Kommunale Wappenrolle Schleswig-Holstein) Bad Schwartau[3], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostholstein',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Ostholstein | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Dahme',
       locationUrl: 'https://de.wikipedia.org/wiki/Dahme_(Holstein)',
@@ -573,7 +261,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostho
       description: '↑ Dahme: „Über blau-silbernen Wellen wachsend in Gold der rote ältere und der rot-silbern-rote jüngere Leuchtturm der Gemeinde nebeneinander.“ (Kommunale Wappenrolle Schleswig-Holstein) Dahme[4]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostholstein',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Ostholstein | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Eutin',
       locationUrl: 'https://de.wikipedia.org/wiki/Eutin',
@@ -581,7 +269,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostho
       description: '↑ Eutin: „In Blau ein goldenes Balkenkreuz, der Stamm oben und unten besteckt mit einer goldenen Lilie, der Querarm beidseitig mit einer achtblättrigen goldenen Rose; in den Winkeln die goldenen Großbuchstaben VTIN.“ (Kommunale Wappenrolle Schleswig-Holstein) Eutin[5], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostholstein',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Ostholstein | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Fehmarn',
       locationUrl: 'https://de.wikipedia.org/wiki/Fehmarn',
@@ -589,7 +277,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostho
       description: '↑ Fehmarn: „In Silber über abwechselnd silbernen und blauen Wellen eine freistehende rote Burg aus Ziegelsteinen mit Zinnenmauer, geschlossenem goldenen Tor und zwei blau bedachten, mit je zwei rundbogigen Fenstern versehenen Zinnentürmen, zwischen denen der rote holsteinische Schild mit dem silbernen Nesselblatt schwebt.“ (Kommunale Wappenrolle Schleswig-Holstein) Fehmarn[6], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostholstein',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Ostholstein | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Grömitz',
       locationUrl: 'https://de.wikipedia.org/wiki/Gr%C3%B6mitz',
@@ -597,7 +285,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostho
       description: '↑ Grömitz: „Gespalten. Vorn in Rot ein halbes silbernes Nesselblatt, hinten in Silber ein halber schwarzer Adler am Spalt mit goldener Bewehrung und goldenem Nimbus.“ (Kommunale Wappenrolle Schleswig-Holstein) Grömitz[7]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostholstein',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Ostholstein | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Grube',
       locationUrl: 'https://de.wikipedia.org/wiki/Grube_(Holstein)',
@@ -605,7 +293,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostho
       description: '↑ Grube: „In Gold über einem blauen Wellenbalken ein bewurzelter grüner Laubbaum.“ (Kommunale Wappenrolle Schleswig-Holstein) Grube[8]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostholstein',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Ostholstein | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Heiligenhafen',
       locationUrl: 'https://de.wikipedia.org/wiki/Heiligenhafen',
@@ -613,7 +301,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostho
       description: '↑ Heiligenhafen: „In Silber über silbernen und blauen Wellen, in denen vier silberne Fische paarweise übereinander schwimmen, eine durchgehende rote Quadermauer; darauf sechs aneinandergereihte rote Giebelhäuser mit Toren und Uhlenloch, das zweite und fünfte besteckt mit einer roten Fahne, darin ein silbernes Nesselblatt; zwischen den Fahnen ein roter Schild mit silbernem Nesselblatt.“ (Kommunale Wappenrolle Schleswig-Holstein) Heiligenhafen[9], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostholstein',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Ostholstein | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Kellenhusen (Ostsee)',
       locationUrl: 'https://de.wikipedia.org/wiki/Kellenhusen_(Ostsee)',
@@ -621,7 +309,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostho
       description: '↑ Kellenhusen (Ostsee): „Von Blau und Gold schräglinks geteilt. Oben an der Teilung ein silberner im Boot stehender Fischer, unten fächerförmig gestellt je ein grünes Buchen-, Eichen- und Eschenblatt.“ (Kommunale Wappenrolle Schleswig-Holstein) Kellenhusen (Ostsee)[10]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostholstein',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Ostholstein | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Malente',
       locationUrl: 'https://de.wikipedia.org/wiki/Malente',
@@ -629,7 +317,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostho
       description: '↑ Malente: „Von Silber und Rot schräg geteilt. Vorn fünf blaue Wellen, hinten ein perspektivisch gezeichnetes, aus der Teilung hervorkommendes schwarzes oberschlächtiges Mühlrad.“ (Kommunale Wappenrolle Schleswig-Holstein) Malente[11]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostholstein',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Ostholstein | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Neustadt in Holstein',
       locationUrl: 'https://de.wikipedia.org/wiki/Neustadt_in_Holstein',
@@ -637,7 +325,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostho
       description: '↑ Neustadt in Holstein: „In Rot ein auf blauen Wellen fahrendes goldenes Boot mit zwei Männern, von denen der eine die Schwurhand mit ausgestreckten Fingern erhebt, der andere das Steuer führt; über dem Boot das silberne holsteinische Nesselblatt.“ (Kommunale Wappenrolle Schleswig-Holstein) Neustadt in Holstein[12], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostholstein',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Ostholstein | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Oldenburg in Holstein',
       locationUrl: 'https://de.wikipedia.org/wiki/Oldenburg_in_Holstein',
@@ -645,7 +333,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostho
       description: '↑ Oldenburg in Holstein: „In Blau ein breiter, zweigeschossiger goldener Zinnenturm mit offenem Tor und einem vierpassförmigen Fenster zwischen zwei Fenstern mit bogenförmigem oberen Abschluss; oben schwebend ein roter Schild mit silbernem Nesselblatt.“ (Kommunale Wappenrolle Schleswig-Holstein) Oldenburg in Holstein[13], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostholstein',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Ostholstein | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Ratekau',
       locationUrl: 'https://de.wikipedia.org/wiki/Ratekau',
@@ -653,7 +341,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostho
       description: '↑ Ratekau: „Über blauem Schildfuß, darin eine goldene Garbe, in Gold rechts eine grüne Eiche, an der unten ein silberner Stein lehnt, links eine eintürmige silberne Kirche mit roten Dächern; darüber zwei auswärts geneigte schwarze Ähren.“ (Kommunale Wappenrolle Schleswig-Holstein) Ratekau[14]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostholstein',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Ostholstein | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Scharbeutz',
       locationUrl: 'https://de.wikipedia.org/wiki/Scharbeutz',
@@ -661,7 +349,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostho
       description: '↑ Scharbeutz: „Von Silber und Rot sechzehnfach geständert und ein goldener Herzschild, darin ein abgerissener, rotbezungter blauer Bärenkopf.“ (Kommunale Wappenrolle Schleswig-Holstein) Scharbeutz[15]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostholstein',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Ostholstein | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Stockelsdorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Stockelsdorf',
@@ -669,7 +357,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostho
       description: '↑ Stockelsdorf: „In Blau ein Bündel von drei goldenen, mit der Spitze nach oben gerichteten Pfeilen, überhöht von drei goldenen sechsstrahligen Sternen.“ (Kommunale Wappenrolle Schleswig-Holstein) Stockelsdorf[16]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostholstein',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Ostholstein | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Süsel',
       locationUrl: 'https://de.wikipedia.org/wiki/S%C3%BCsel',
@@ -677,7 +365,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostho
       description: '↑ Süsel: „In Blau auf einem mit einem blauen Wellenbalken belegten goldenen Dreiberg ein runder, flachgedeckter silberner Turm, der rechts von einer goldenen Sonne, links von einem zugewendeten goldenen Mond begleitet wird.“ (Kommunale Wappenrolle Schleswig-Holstein) Süsel[17]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostholstein',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Ostholstein | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Timmendorfer Strand',
       locationUrl: 'https://de.wikipedia.org/wiki/Timmendorfer_Strand',
@@ -685,7 +373,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostho
       description: '↑ Timmendorfer Strand: „In Blau ein einmastiges goldenes Segelschiff mit Vor- sowie Hauptsegel und Steuerruder. Im rechten Obereck ein goldenes Seepferdchen.“ (Kommunale Wappenrolle Schleswig-Holstein) Timmendorfer Strand[18]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostholstein',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Ostholstein | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Bosau',
       locationUrl: 'https://de.wikipedia.org/wiki/Bosau',
@@ -693,7 +381,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostho
       description: '↑ Bosau: „Gespalten. Vorn in Blau ein liegender silberner stilisierter Adlerkopf am Spalt mit dem Schnabel nach oben, hinten in Rot ein aufgerichteter goldener Löwe.“ (Kommunale Wappenrolle Schleswig-Holstein) Bosau[39]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Ostholstein',
-      sourceTitle: 'Gemeinden in kreisfremden Ämtern',
+      sourceTitle: 'Liste der Wappen im Kreis Ostholstein | Gemeinden in kreisfremden Ämtern',
     }
 ]; 
 
@@ -705,7 +393,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinne
       description: 'Karte Kreis Pinneberg, Schleswig-Holstein',
       type: ['kreis'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinneberg',
-      sourceTitle: 'Kreiswappen',
+      sourceTitle: 'Liste der Wappen im Kreis Pinneberg | Kreiswappen',
     }, {
       locationName: 'Pinneberg',
       locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Pinneberg',
@@ -713,7 +401,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinne
       description: '↑ Kreis Pinneberg: „In Rot das silberne holsteinische Nesselblatt, belegt mit einer stilisierten grünen Tanne, die goldene Wurzeln hat.“ (Kommunale Wappenrolle Schleswig-Holstein) Kreiswappen Pinneberg[1] (Details)',
       type: ['kreis'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinneberg',
-      sourceTitle: 'Kreiswappen',
+      sourceTitle: 'Liste der Wappen im Kreis Pinneberg | Kreiswappen',
     }, {
       locationName: 'Barmstedt',
       locationUrl: 'https://de.wikipedia.org/wiki/Barmstedt',
@@ -721,7 +409,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinne
       description: '↑ Barmstedt: „Gespalten von Silber und Rot mit einem nesselblattförmigen, gespickelten Bord in verwechselten Farben. Vorn eine schwarze Windmühle, hinten ein stehender, silbern gerüsteter Ritter, der in der Rechten eine silberne Lanze hält und die Linke auf das Schwert legt.“ (Kommunale Wappenrolle Schleswig-Holstein) Barmstedt[2], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinneberg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Pinneberg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Bönningstedt',
       locationUrl: 'https://de.wikipedia.org/wiki/B%C3%B6nningstedt',
@@ -729,7 +417,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinne
       description: '↑ Bönningstedt: „In Silber ein schräglinker blauer Wellenbalken, oben und unten begleitet von je einem aufrechten roten Eisspatenblatt. “ (Kommunale Wappenrolle Schleswig-Holstein) Bönningstedt[3]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinneberg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Pinneberg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Elmshorn',
       locationUrl: 'https://de.wikipedia.org/wiki/Elmshorn',
@@ -737,7 +425,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinne
       description: '↑ Elmshorn: „In Rot auf blau-silbernen Wellen segelnd ein silbernes Vollschiff mit gerefften Bramsegeln am Fock- und Kreuzmast.“ (Kommunale Wappenrolle Schleswig-Holstein) Elmshorn[4], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinneberg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Pinneberg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Halstenbek',
       locationUrl: 'https://de.wikipedia.org/wiki/Halstenbek',
@@ -745,7 +433,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinne
       description: '↑ Halstenbek: „In Gold auf schwarzem Schildfuß, darin ein silberner Wellenbalken, drei grüne Tannen, die mittlere etwas höher als die beiden anderen, mit goldenen, in den Schildfuß hinabreichenden Wurzeln.“ (Kommunale Wappenrolle Schleswig-Holstein) Halstenbek[5]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinneberg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Pinneberg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Hasloh',
       locationUrl: 'https://de.wikipedia.org/wiki/Hasloh',
@@ -753,7 +441,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinne
       description: '↑ Hasloh: „Von Gold und Blau schräglinks geteilt. Oben eine rot geaderte schwarze Rose mit goldenem Kelch und grünen Blattspitzen, unten an abgeschnittenem goldenen Zweig ein aufrecht stehendes goldenes Eichenblatt, darunter am gleichen Zweig ein Stengel mit einer goldenen, aufrecht stehenden Eichel und einer nach unten zeigenden Eichelschale.“ (Kommunale Wappenrolle Schleswig-Holstein) Hasloh[6]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinneberg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Pinneberg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Helgoland',
       locationUrl: 'https://de.wikipedia.org/wiki/Helgoland',
@@ -761,7 +449,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinne
       description: '↑ Helgoland: „Zweimal geteilt von Grün, Rot und Silber.“ (Kommunale Wappenrolle Schleswig-Holstein) Helgoland[7]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinneberg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Pinneberg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Pinneberg',
       locationUrl: 'https://de.wikipedia.org/wiki/Pinneberg',
@@ -769,7 +457,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinne
       description: '↑ Pinneberg: „In Rot über grünem Dreiberg, darauf ein silberner Wellenbalken, ein silberner, in drei zinnenbewehrten Stockwerken nach oben sich verjüngender, viereckiger Zinnenturm mit offenem Tor, in dem ein goldenes, hochgezogenes Fallgitter sichtbar ist, das Ganze oben beiderseits begleitet von je einem goldenen, sechsstrahligen Stern.“ (Kommunale Wappenrolle Schleswig-Holstein) Pinneberg[8], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinneberg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Pinneberg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Quickborn',
       locationUrl: 'https://de.wikipedia.org/wiki/Quickborn',
@@ -777,7 +465,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinne
       description: '↑ Quickborn: „In Rot auf einem silbernen Brunnenpfahl, der aus der Mitte eines rechteckigen, gemauerten silbernen Brunnenbeckens hervorwächst und nach beiden Seiten einen Wasserstrahl im Bogen in das Becken sendet, eine sitzende goldene Eule in Vorderansicht, begleitet von zwei silbernen Seeblättern.“ (Kommunale Wappenrolle Schleswig-Holstein) Quickborn[9], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinneberg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Pinneberg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Rellingen',
       locationUrl: 'https://de.wikipedia.org/wiki/Rellingen',
@@ -785,7 +473,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinne
       description: '↑ Rellingen: „In Silber die schwarze Seitenansicht einer achteckigen Barockkirche mit aufgesetzter Laterne und angebauten hohen Turm in Zopfstil, der auf der rechten Seite von einer roten Rose und schräg darunter von einem grünen Ahornblatt begleitet wird.“ (Kommunale Wappenrolle Schleswig-Holstein) Rellingen[10]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinneberg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Pinneberg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Schenefeld',
       locationUrl: 'https://de.wikipedia.org/wiki/Schenefeld_(Kreis_Pinneberg)',
@@ -793,7 +481,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinne
       description: '↑ Schenefeld: „In Grün ein schräglinker goldener Wellenbalken, begleitet oben von zwei goldenen Pflugscharen, unten von einem goldenen Maschinenrad.“ (Kommunale Wappenrolle Schleswig-Holstein) Schenefeld[11], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinneberg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Pinneberg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Tornesch',
       locationUrl: 'https://de.wikipedia.org/wiki/Tornesch',
@@ -801,7 +489,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinne
       description: '↑ Tornesch: „In Blau ein freistehender goldener Zinnenturm aus Ziegeln mit offenem Tor, beiderseits begleitet von je einem goldenen Eschenblatt.“ (Kommunale Wappenrolle Schleswig-Holstein) Tornesch[12], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinneberg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Pinneberg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Uetersen',
       locationUrl: 'https://de.wikipedia.org/wiki/Uetersen',
@@ -809,7 +497,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinne
       description: '↑ Uetersen: „In Rot über blauen und silbernen Wellen eine silberne Zinnenmauer mit rotem Tor, darin ein gestürzter goldener Anker, den ein silberner Delphin umschlingt und zwei sechsstrahlige goldene Sterne beseiten; über der Mauer zwei silberne Zinnentürme mit Spitzdächern; zwischen ihnen schwebt ein silbernes Nesselblatt.“ (Kommunale Wappenrolle Schleswig-Holstein) Uetersen[13], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinneberg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Pinneberg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Wedel',
       locationUrl: 'https://de.wikipedia.org/wiki/Wedel',
@@ -817,7 +505,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinne
       description: '↑ Wedel: „Im Rot das silberne holsteinische Nesselblatt, darin die goldengerüstete, rotgegürtete, schwarzbärtige Gestalt eines Rolands in Vorderansicht mit rotem, blaugefüttertem, zurückgeschlagenem Mantel, auf dem Kopf die goldene mittelalterliche Kaiserkrone, in der rechten Hand ein bloßes silbernes Schwert mit goldenem Knauf an die rechte Schulter gelehnt, in der linken der goldene Reichsapfel.“ (Kommunale Wappenrolle Schleswig-Holstein) Wedel[14], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pinneberg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Pinneberg | Amtsfreie Städte und Gemeinden',
     }
 ]; 
 
@@ -829,7 +517,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pl%C3
       description: 'Karte Kreis Plön, Schleswig-Holstein',
       type: ['kreis'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pl%C3%B6n',
-      sourceTitle: 'Kreiswappen',
+      sourceTitle: 'Liste der Wappen im Kreis Plön | Kreiswappen',
     }, {
       locationName: 'Plön',
       locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Pl%C3%B6n',
@@ -837,7 +525,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pl%C3
       description: '↑ Kreis Plön: „Durch einen silbernen Wellenbalken von Rot und Blau geteilt. Oben das silberne holsteinische Nesselblatt, begleitet rechts von einem silbernen Eichenblatt, links von einer silbernen Ähre; unten ein silberner Fisch.“ (Kommunale Wappenrolle Schleswig-Holstein) Kreiswappen Plön[1]',
       type: ['kreis'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pl%C3%B6n',
-      sourceTitle: 'Kreiswappen',
+      sourceTitle: 'Liste der Wappen im Kreis Plön | Kreiswappen',
     }, {
       locationName: 'Ascheberg (Holstein)',
       locationUrl: 'https://de.wikipedia.org/wiki/Ascheberg_(Holstein)',
@@ -845,7 +533,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pl%C3
       description: '↑ Ascheberg (Holstein): "Unter silbernem Schildhaupt, darin ein blauer Wechselzinnenbalken, in Rot drei spatelförmige, im Dreipass von einer silbernen Blüte ausgehende silberne Blätter." (Kommunale Wappenrolle Schleswig-Holstein) Ascheberg (Holstein)[2]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pl%C3%B6n',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Plön | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Bösdorf',
       locationUrl: 'https://de.wikipedia.org/wiki/B%C3%B6sdorf_(Holstein)',
@@ -853,7 +541,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pl%C3
       description: '↑ Bösdorf: "Über rotem, über einem silbernen Wellenbalken abgeschlossenem Schildfuß, darin ein abwechselnd aus zwei Blättern und drei Eicheln bestehender Eichenzweig, in Blau ein linksgewendeter silberner Räderpflug." (Kommunale Wappenrolle Schleswig-Holstein) Bösdorf[3]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pl%C3%B6n',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Plön | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Bönebüttel',
       locationUrl: 'https://de.wikipedia.org/wiki/B%C3%B6neb%C3%BCttel',
@@ -861,7 +549,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pl%C3
       description: '↑ Bönebüttel: „Über einer gesenkten roten Spitze, diese belegt mit einer silbernen Mitra, in Silber ein blaues Spatenblatt rechts und eine begrannte blaue Getreideähre links.“ (Kommunale Wappenrolle Schleswig-Holstein) Bönebüttel[4]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pl%C3%B6n',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Plön | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Plön',
       locationUrl: 'https://de.wikipedia.org/wiki/Pl%C3%B6n',
@@ -869,7 +557,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pl%C3
       description: '↑ Plön: „In Silber über abwechselnd silbernen und blauen Wellen, in denen ein roter Fisch schwimmt, eine durchgehende, niedrige rote Zinnenmauer aus Ziegeln, besetzt mit einem gedrungenen roten Zinnenturm mit zwei schwarzen Torbögen; über dem Turm schwebend das holsteinische Wappen (in Rot das silberne Nesselblatt).“ (Kommunale Wappenrolle Schleswig-Holstein) Plön[5], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pl%C3%B6n',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Plön | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Preetz',
       locationUrl: 'https://de.wikipedia.org/wiki/Preetz',
@@ -877,7 +565,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pl%C3
       description: '↑ Preetz: „Durch einen goldenen Wellenbalken geteilt von Blau und Rot. Oben ein silberner Fisch, unten das silberne holsteinische Nesselblatt.“ (Kommunale Wappenrolle Schleswig-Holstein) Preetz[6], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pl%C3%B6n',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Plön | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Schwentinental',
       locationUrl: 'https://de.wikipedia.org/wiki/Schwentinental',
@@ -885,7 +573,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pl%C3
       description: '↑ Schwentinental: „Durch eine oben eingebogene Deichselteilung geteilt. Oben in Blau zwei silberne Wellenfäden, rechts in Rot ein silberner Krummstab, dessen Schaft abgebrochen ist, links in Gold ein grüner Eichenzweig.“ (Kommunale Wappenrolle Schleswig-Holstein) Schwentinental[7], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pl%C3%B6n',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Plön | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Klausdorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Klausdorf_(Schwentinental)',
@@ -893,7 +581,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pl%C3
       description: '↑ Klausdorf: „In Rot ein silberner Krummstab, dessen Schaft abgebrochen ist, über einem silbernen Wellenbalken im Schildfuß.“ (Kommunale Wappenrolle Schleswig-Holstein) Klausdorf[88]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pl%C3%B6n',
-      sourceTitle: 'Ehemalige Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Plön | Ehemalige Gemeinden',
     }, {
       locationName: 'Raisdorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Raisdorf',
@@ -901,7 +589,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pl%C3
       description: '↑ Raisdorf: „Von Grün und Gold dreimal geteilt und ein Eichenzweig in vertauschten Farben. “ (Kommunale Wappenrolle Schleswig-Holstein) Raisdorf[89]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Pl%C3%B6n',
-      sourceTitle: 'Ehemalige Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Plön | Ehemalige Gemeinden',
     }
 ]; 
 
@@ -913,7 +601,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Rends
       description: 'Karte Rendsburg-Eckernförde, Schleswig-Holstein',
       type: ['kreis'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Rendsburg-Eckernf%C3%B6rde',
-      sourceTitle: 'Kreiswappen',
+      sourceTitle: 'Liste der Wappen im Kreis Rendsburg-Eckernförde | Kreiswappen',
     }, {
       locationName: 'Rendsburg-Eckernförde',
       locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Rendsburg-Eckernf%C3%B6rde',
@@ -921,7 +609,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Rends
       description: '↑ Kreis Rendsburg-Eckernförde: „Schräglinks im Wellenschnitt geteilt. Oben in Gold die beiden schreitenden, blauen Schleswiger Löwen übereinander, unten in Rot das silberne holsteinische Nesselblatt.“ (Kommunale Wappenrolle Schleswig-Holstein) Kreiswappen Rendsburg-Eckernförde[1]',
       type: ['kreis'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Rendsburg-Eckernf%C3%B6rde',
-      sourceTitle: 'Kreiswappen',
+      sourceTitle: 'Liste der Wappen im Kreis Rendsburg-Eckernförde | Kreiswappen',
     }, {
       locationName: 'Altenholz',
       locationUrl: 'https://de.wikipedia.org/wiki/Altenholz',
@@ -929,7 +617,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Rends
       description: '↑ Altenholz: „In Gold eine bewurzelte grüne Eiche, der Stamm überdeckt mit einem silbernen Schild, darin ein aufspringender schwarzer Wolf.“ (Kommunale Wappenrolle Schleswig-Holstein) Altenholz[2]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Rendsburg-Eckernf%C3%B6rde',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Rendsburg-Eckernförde | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Büdelsdorf',
       locationUrl: 'https://de.wikipedia.org/wiki/B%C3%BCdelsdorf',
@@ -937,7 +625,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Rends
       description: '↑ Büdelsdorf: „Von Rot und Silber geteilt. Oben miteinander gekreuzt eine Sense und ein Dreschflegel mit goldenen Holz- und silbernen Metallteilen, unten an der Teilungslinie ein unterhalbes schwarzes Zahnrad.“ (Kommunale Wappenrolle Schleswig-Holstein) Büdelsdorf[3], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Rendsburg-Eckernf%C3%B6rde',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Rendsburg-Eckernförde | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Eckernförde',
       locationUrl: 'https://de.wikipedia.org/wiki/Eckernf%C3%B6rde',
@@ -945,7 +633,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Rends
       description: '↑ Eckernförde: „In Gold über drei blauen Wellenleisten ein breiter, gemauerter blauer Zinnenturm mit geschlossenem Tor, auf dessen Zinnen ein rotes Eichhörnchen läuft.“ (Kommunale Wappenrolle Schleswig-Holstein) Eckernförde[4], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Rendsburg-Eckernf%C3%B6rde',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Rendsburg-Eckernförde | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Kronshagen',
       locationUrl: 'https://de.wikipedia.org/wiki/Kronshagen',
@@ -953,7 +641,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Rends
       description: '↑ Kronshagen: „In Silber auf grünem Rasen drei belaubte grüne Bäume. Im roten Schildhaupt eine goldene Krone.“ (Kommunale Wappenrolle Schleswig-Holstein) Kronshagen[5]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Rendsburg-Eckernf%C3%B6rde',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Rendsburg-Eckernförde | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Rendsburg',
       locationUrl: 'https://de.wikipedia.org/wiki/Rendsburg',
@@ -961,7 +649,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Rends
       description: '↑ Rendsburg: „In Silber über abwechselnd silbernen und blauen Wellen eine rote, freistehende Ziegelburg mit Zinnenmauer, drei mit blauen Spitzdächern versehenen Zinnentürmen, davon der mittlere etwas höher und breiter, und mit offenem Tor, darin das holsteinische Wappen (in Rot das silberne Nesselblatt).“ (Kommunale Wappenrolle Schleswig-Holstein) Rendsburg[6], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Rendsburg-Eckernf%C3%B6rde',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Rendsburg-Eckernförde | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Wasbek',
       locationUrl: 'https://de.wikipedia.org/wiki/Wasbek',
@@ -969,7 +657,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Rends
       description: '↑ Wasbek: „Durch einen schräglinken silbernen Wellenbalken von Grün und Rot geteilt. Vorn eine silberne Getreidegarbe mit fünf begrannten Ähren, hinten ein silbernes Wagenrad.“ (Kommunale Wappenrolle Schleswig-Holstein) Wasbek[7]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Rendsburg-Eckernf%C3%B6rde',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Rendsburg-Eckernförde | Amtsfreie Städte und Gemeinden',
     }
 ]; 
 
@@ -981,7 +669,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schle
       description: 'Karte Schleswig-Flensburg, Schleswig-Holstein',
       type: ['kreis'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schleswig-Flensburg',
-      sourceTitle: 'Kreiswappen',
+      sourceTitle: 'Liste der Wappen im Kreis Schleswig-Flensburg | Kreiswappen',
     }, {
       locationName: 'Schleswig-Flensburg',
       locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Schleswig-Flensburg',
@@ -989,7 +677,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schle
       description: '↑ Kreis Schleswig-Flensburg: „Über blauem, mit zwei silbernen Wellenfäden belegtem Wellenschildfuß von Blau und Gold schräglinks geteilt mit zwei schreitenden, rot bewehrten Löwen in verwechselten Farben.“ (Kommunale Wappenrolle Schleswig-Holstein) Kreiswappen Schleswig-Flensburg[1]',
       type: ['kreis'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schleswig-Flensburg',
-      sourceTitle: 'Kreiswappen',
+      sourceTitle: 'Liste der Wappen im Kreis Schleswig-Flensburg | Kreiswappen',
     }, {
       locationName: 'Glücksburg (Ostsee)',
       locationUrl: 'https://de.wikipedia.org/wiki/Gl%C3%BCcksburg_(Ostsee)',
@@ -997,7 +685,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schle
       description: '↑ Glücksburg (Ostsee): „In Gold ein senkrecht gestellter roter Rost mit dem Griff nach unten.“ (Kommunale Wappenrolle Schleswig-Holstein) Glücksburg (Ostsee)[2], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schleswig-Flensburg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Schleswig-Flensburg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Handewitt',
       locationUrl: 'https://de.wikipedia.org/wiki/Handewitt',
@@ -1005,7 +693,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schle
       description: '↑ Handewitt: „Von Gold und Grün erhöht geteilt. Oben ein schreitender rot bewehrter, silbern bezahnter blauer Löwe, unten ein aus acht nach außen gestellten Blättern geflochtener goldener Eichenkranz.“ (Kommunale Wappenrolle Schleswig-Holstein) Handewitt[3]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schleswig-Flensburg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Schleswig-Flensburg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Harrislee',
       locationUrl: 'https://de.wikipedia.org/wiki/Harrislee',
@@ -1013,7 +701,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schle
       description: 'Harrislee',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schleswig-Flensburg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Schleswig-Flensburg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Kappeln',
       locationUrl: 'https://de.wikipedia.org/wiki/Kappeln',
@@ -1021,7 +709,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schle
       description: '↑ Kappeln: „In Silber, beiderseits begleitet von je drei blauen, zueinander gekehrten Heringen, der heilige Christophorus in Vorderansicht, barhaupt, mit rotem Mantel und silbernem Bart, die nackten Beine in abwechselnd blauen und silbernen Wellen verschwindend, in der rechten Hand einen astförmigen, naturfarbenen Stab, mit der linken den Jesusknaben, der die rechte Hand segnend erhebt und mit der linken die Weltkugel in Gold auf seinem linken Knie umfasst, auf seinen Schultern haltend.“ (Kommunale Wappenrolle Schleswig-Holstein) Kappeln[4], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schleswig-Flensburg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Schleswig-Flensburg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Schleswig',
       locationUrl: 'https://de.wikipedia.org/wiki/Schleswig',
@@ -1029,7 +717,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schle
       description: '↑ Schleswig: „In Blau über blauen und silbernen Wellen auf torloser goldener Zinnenmauer ein goldener Zinnenturm, den eine zugewendete goldene Mondsichel und ein sechsstrahliger goldener Stern begleiten.“ (Kommunale Wappenrolle Schleswig-Holstein) Schleswig[5], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schleswig-Flensburg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Schleswig-Flensburg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Boren',
       locationUrl: 'https://de.wikipedia.org/wiki/Boren',
@@ -1037,7 +725,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schle
       description: '↑ Boren: „In von Blau gesäumtem Gold ein blaues Balkenkreuz. 1 ein blaues Flügelkreuz, 2 ein blauer Eichenzweig mit einer Eichel und zwei Blättern, 3 zwei blaue Fische übereinander und 4 drei schwebende blaue Wellenbalken.“ (Kommunale Wappenrolle Schleswig-Holstein) Boren[132] (bis 28. Februar 2013)',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schleswig-Flensburg',
-      sourceTitle: 'Ehemalige Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Schleswig-Flensburg | Ehemalige Gemeinden',
     }, {
       locationName: 'Brebel',
       locationUrl: 'https://de.wikipedia.org/wiki/Brebel',
@@ -1045,7 +733,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schle
       description: '↑ Brebel: „In Gold unten zwischen zwei blauen Wellenbalken ein blauer Wellenfaden, oben ein grünes vierblättriges Kleeblatt mit einem aufgelegten goldenen Fadenkreuz als Blattadern.“ (Kommunale Wappenrolle Schleswig-Holstein) Brebel[133]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schleswig-Flensburg',
-      sourceTitle: 'Ehemalige Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Schleswig-Flensburg | Ehemalige Gemeinden',
     }, {
       locationName: 'Ekenis',
       locationUrl: 'https://de.wikipedia.org/wiki/Ekenis',
@@ -1053,7 +741,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schle
       description: '↑ Ekenis: „In Blau eine goldene Spitze, darin ein grünes, leicht schräglinks gestelltes Eichenblatt, belegt mit drei silbernen Eicheln.“ (Kommunale Wappenrolle Schleswig-Holstein) Ekenis[134]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schleswig-Flensburg',
-      sourceTitle: 'Ehemalige Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Schleswig-Flensburg | Ehemalige Gemeinden',
     }, {
       locationName: 'Goltoft',
       locationUrl: 'https://de.wikipedia.org/wiki/Goltoft',
@@ -1061,7 +749,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schle
       description: '↑ Goltoft: „Von Gold und Blau im Wellenschnitt gesenkt geteilt. Oben zwei fächerförmig gestellte grüne Eichenblätter, deren Stiele durch ein verknotetes grünes Band zusammengehalten werden, unten ein silberner Fisch.“ (Kommunale Wappenrolle Schleswig-Holstein) Goltoft[135]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schleswig-Flensburg',
-      sourceTitle: 'Ehemalige Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Schleswig-Flensburg | Ehemalige Gemeinden',
     }, {
       locationName: 'Handewitt',
       locationUrl: 'https://de.wikipedia.org/wiki/Handewitt',
@@ -1069,7 +757,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schle
       description: '↑ Handewitt: „Von Gold und Blau erhöht geteilt. In verwechselten Farben oben ein schreitender Löwe, unten sechs mit den Halmen aneinander gestellte begrannte Getreideähren, die Halme überdeckt mit einem Hufeisen, dessen Stollen nach oben gekehrt sind.“ (Kommunale Wappenrolle Schleswig-Holstein) Handewitt[136] (bis 29. Februar 2008)',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schleswig-Flensburg',
-      sourceTitle: 'Ehemalige Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Schleswig-Flensburg | Ehemalige Gemeinden',
     }, {
       locationName: 'Havetoftloit',
       locationUrl: 'https://de.wikipedia.org/wiki/Havetoftloit',
@@ -1077,7 +765,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schle
       description: '↑ Havetoftloit: „In Gold ein blauer Zinnenflachsparren begleitet oben von einem liegenden roten Schwert, unten von zwei gekreuzten roten Torfspaten.“ (Kommunale Wappenrolle Schleswig-Holstein) Havetoftloit[137]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schleswig-Flensburg',
-      sourceTitle: 'Ehemalige Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Schleswig-Flensburg | Ehemalige Gemeinden',
     }, {
       locationName: 'Hürup',
       locationUrl: 'https://de.wikipedia.org/wiki/H%C3%BCrup',
@@ -1085,7 +773,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schle
       description: '↑ Hürup: „In Grün ein wachsendes mit einer grünen Lilie belegtes goldenes Kirchturmdach mit Laterne und Wetterhahn, rechts und links begleitet von je einem goldenen dreiblättrigen Kleeblatt.“ (Kommunale Wappenrolle Schleswig-Holstein) Hürup[138] (bis 28. Februar 2023)',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schleswig-Flensburg',
-      sourceTitle: 'Ehemalige Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Schleswig-Flensburg | Ehemalige Gemeinden',
     }, {
       locationName: 'Jarplund-Weding',
       locationUrl: 'https://de.wikipedia.org/wiki/Jarplund-Weding',
@@ -1093,7 +781,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schle
       description: '↑ Jarplund-Weding: „In Gold ein grüner Torfspaten, aus dessen Schaftmitte beiderseits ein grüner Eichenzweig, bestehend aus jeweils einer Eichel zwischen zwei Blättern, ausschlägt.“ (Kommunale Wappenrolle Schleswig-Holstein) Jarplund-Weding[139]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schleswig-Flensburg',
-      sourceTitle: 'Ehemalige Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Schleswig-Flensburg | Ehemalige Gemeinden',
     }, {
       locationName: 'Kiesby',
       locationUrl: 'https://de.wikipedia.org/wiki/Kiesby',
@@ -1101,7 +789,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schle
       description: '↑ Kiesby: „In Blau ein silberner Dreiblatt-Rotor eines Windrades, die Spitzen den Schildrand stoßend, die Rotornabe überdeckt von einem silbernen Wagenrad. Oben rechts ein goldener Apfel, oben links ein goldener Amboss, unten vier gefächerte goldene Kornähren.“ (Kommunale Wappenrolle Schleswig-Holstein) Kiesby[140]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schleswig-Flensburg',
-      sourceTitle: 'Ehemalige Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Schleswig-Flensburg | Ehemalige Gemeinden',
     }, {
       locationName: 'Maasbüll',
       locationUrl: 'https://de.wikipedia.org/wiki/Maasb%C3%BCll',
@@ -1109,7 +797,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schle
       description: '↑ Maasbüll: „Über schwarzen Sturzgiebelschildfuß - darüber ein aufliegendes grünes Wagenrad - von Grün und Gold durch ein Flammenschwert in verwechselten Farben schräglinks geteilt. Oben rechts eine goldene, unten links eine grüne Ähre.“ (Kommunale Wappenrolle Schleswig-Holstein) Maasbüll[141]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schleswig-Flensburg',
-      sourceTitle: 'Ehemalige Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Schleswig-Flensburg | Ehemalige Gemeinden',
     }, {
       locationName: 'Norderstapel',
       locationUrl: 'https://de.wikipedia.org/wiki/Norderstapel',
@@ -1117,7 +805,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schle
       description: '↑ Norderstapel: „Unter dreimal eingebogenem goldenen Schildhaupt in Grün ein aufrechter, kurzer, oben und unten mit einem Knauf abschließender, in der Mitte sich verdickender goldener Stab, der mit seiner unteren Hälfte einen silbernen Wellenbalken überdeckt.“ (Kommunale Wappenrolle Schleswig-Holstein) Norderstapel[142]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schleswig-Flensburg',
-      sourceTitle: 'Ehemalige Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Schleswig-Flensburg | Ehemalige Gemeinden',
     }, {
       locationName: 'Quern',
       locationUrl: 'https://de.wikipedia.org/wiki/Quern',
@@ -1125,7 +813,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schle
       description: '↑ Quern: „Über blau-silbernen Wellen auf grünem Dreiberg stehend in Gold ein roter Turm mit geöffnetem Tor im breiteren Sockel, großem runden Fenster im schlankeren hohen Mittelgeschoss und drei Fenstern im breiteren, bezinnten Obergeschoss; auf diesem ein spitz bedachtes Türmchen, zwischen einem mit dem Griff nach oben gestellten roten Rost rechts und einem steigenden blauen Mond unter einem achtstrahligen blauen Stern links.“ (Kommunale Wappenrolle Schleswig-Holstein) Quern[143]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schleswig-Flensburg',
-      sourceTitle: 'Ehemalige Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Schleswig-Flensburg | Ehemalige Gemeinden',
     }, {
       locationName: 'Sankelmark',
       locationUrl: 'https://de.wikipedia.org/wiki/Sankelmark',
@@ -1133,7 +821,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schle
       description: '↑ Sankelmark: „Über blauem, mit zwei goldenen Wellenfäden belegten Wellenschildfuß von Blau und Gold schräglinks geteilt, oben eine goldene Pflugschar, unten ein blaues aus vier Tragsteinen und zwei Deckplatten bestehendes Steingrab.“ (Kommunale Wappenrolle Schleswig-Holstein) Sankelmark[144]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schleswig-Flensburg',
-      sourceTitle: 'Ehemalige Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Schleswig-Flensburg | Ehemalige Gemeinden',
     }, {
       locationName: 'Satrup',
       locationUrl: 'https://de.wikipedia.org/wiki/Satrup_(Mittelangeln)',
@@ -1141,7 +829,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schle
       description: '↑ Satrup: „In Rot auf silbernem, rechtshin springendem Pferd ein silberner Gerüsteter, in der Linken einen vorgehaltenen silbernen Schild, in der Rechten eine silberne Lanze haltend.“ (Kommunale Wappenrolle Schleswig-Holstein) Satrup[145]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schleswig-Flensburg',
-      sourceTitle: 'Ehemalige Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Schleswig-Flensburg | Ehemalige Gemeinden',
     }, {
       locationName: 'Steinbergkirche',
       locationUrl: 'https://de.wikipedia.org/wiki/Steinbergkirche',
@@ -1149,7 +837,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schle
       description: '↑ Steinbergkirche: „In Blau ein gesenkter silberner Schragen. Darüber ein abnehmender goldener Mond und ein goldener Stern nebeneinander.“ (Kommunale Wappenrolle Schleswig-Holstein) Steinbergkirche[146] (bis 28. Februar 2013)',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schleswig-Flensburg',
-      sourceTitle: 'Ehemalige Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Schleswig-Flensburg | Ehemalige Gemeinden',
     }, {
       locationName: 'Süderstapel',
       locationUrl: 'https://de.wikipedia.org/wiki/S%C3%BCderstapel',
@@ -1157,7 +845,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schle
       description: '↑ Süderstapel: „In Blau ein aufrechter, kurzer, oben und unten mit einem Knauf abschließender, in der Mitte sich verdickender goldener Stab, der mit seiner unteren Hälfte drei silberne Wellenfäden überdeckt.“ (Kommunale Wappenrolle Schleswig-Holstein) Süderstapel[147]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schleswig-Flensburg',
-      sourceTitle: 'Ehemalige Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Schleswig-Flensburg | Ehemalige Gemeinden',
     }, {
       locationName: 'Tastrup',
       locationUrl: 'https://de.wikipedia.org/wiki/Tastrup',
@@ -1165,7 +853,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schle
       description: '↑ Gemeinde: „Von einer gestürzten eingebogenen Spitze gesenkt geteilt, oben in Gold ein schwarzes Bahnhof-Empfangsgebäude, unten in Blau zwei auswärts weisende silberne Buchenblätter.“ (Kommunale Wappenrolle Schleswig-Holstein) Tastrup[148]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Schleswig-Flensburg',
-      sourceTitle: 'Ehemalige Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Schleswig-Flensburg | Ehemalige Gemeinden',
     }
 ]; 
 
@@ -1177,7 +865,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Segeb
       description: 'Karte Kreis Segeberg, Schleswig-Holstein',
       type: ['kreis'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Segeberg',
-      sourceTitle: 'Kreiswappen',
+      sourceTitle: 'Liste der Wappen im Kreis Segeberg | Kreiswappen',
     }, {
       locationName: 'Segeberg',
       locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Segeberg',
@@ -1185,7 +873,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Segeb
       description: '↑ Kreis Segeberg: „In Silber ein aus vier spitzbedachten roten Ziegeltürmen bestehendes Kreuz, bewinkelt von vier grünen Seerosenblättern und in seiner ausgebrochenen Kreuzungsstelle belegt mit dem holsteinischen Wappenschild: in Rot ein silbernes Nesselblatt.“ (Kommunale Wappenrolle Schleswig-Holstein) Kreiswappen Segeberg[1]',
       type: ['kreis'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Segeberg',
-      sourceTitle: 'Kreiswappen',
+      sourceTitle: 'Liste der Wappen im Kreis Segeberg | Kreiswappen',
     }, {
       locationName: 'Bad Bramstedt',
       locationUrl: 'https://de.wikipedia.org/wiki/Bad_Bramstedt',
@@ -1193,7 +881,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Segeb
       description: '↑ Bad Bramstedt: „In Blau ein silberner römischer Krieger mit goldenem Helm, goldenem Panzer und goldener Fußbekleidung und einer roten Schärpe von der linken Schulter zur rechten Hüfte, in der seitlich ausgestreckten rechten Hand ein aufgerichtetes, bloßes silbernes römisches Schwert haltend, während sich die linke auf einen holsteinischen Wappenschild stützt (in Rot ein silbernes Nesselblatt).“ (Kommunale Wappenrolle Schleswig-Holstein) Bad Bramstedt[2], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Segeberg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Segeberg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Bad Segeberg',
       locationUrl: 'https://de.wikipedia.org/wiki/Bad_Segeberg',
@@ -1201,7 +889,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Segeb
       description: '↑ Bad Segeberg: „Auf einem von Silber und Blau im Wellenschnitt geteilten Dreiberg in Silber eine rote Ziegelburg, bestehend aus einer beiderseits von je zwei runden, niedrigen Zinnentürmen flankierten Zinnenmauer mit schwarzer, rundbogiger Toröffnung, darin ein hochgezogenes, goldenes Fallgitter, und aus einem hohen Mittelturm hinter der Mauer mit blauem, in eine Kugel auslaufendem Spitzdach und einer beiderseits ausladenden, durch schräge Streben unterstützten Zinnenplatte; der Turm beiderseits auf der Höhe der Mauer besteckt mit einer an blauer Stange schräg herausragenden, silbernen, hochrechteckigen Flagge mit rotem Zackenrand.“ (Kommunale Wappenrolle Schleswig-Holstein) Bad Segeberg[3], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Segeberg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Segeberg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Ellerau',
       locationUrl: 'https://de.wikipedia.org/wiki/Ellerau',
@@ -1209,7 +897,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Segeb
       description: '↑ Ellerau: „In Gold ein schräglinker blauer Wellenbalken, begleitet von zwei schwarzen Erlenzweigen mit grünen Blättern und schwarzen Kätzchen (oberer Zweig) bzw. schwarzen Zapfen (unterer Zweig), der obere Zweig nach links, der untere nach rechts gewandt.“ (Kommunale Wappenrolle Schleswig-Holstein) Ellerau[4]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Segeberg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Segeberg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Henstedt-Ulzburg',
       locationUrl: 'https://de.wikipedia.org/wiki/Henstedt-Ulzburg',
@@ -1217,7 +905,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Segeb
       description: '↑ Henstedt-Ulzburg: „In Silber zwischen einer schwebenden, fünfmal gezinnten roten Mauerkrone oben und zwei blauen Wellenfäden unten ein dreiblättriger grüner Eichenzweig.“ (Kommunale Wappenrolle Schleswig-Holstein) Henstedt-Ulzburg[5]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Segeberg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Segeberg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Kaltenkirchen',
       locationUrl: 'https://de.wikipedia.org/wiki/Kaltenkirchen',
@@ -1225,7 +913,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Segeb
       description: '↑ Kaltenkirchen: „In Rot das silberne holsteinische Nesselblatt, darauf ein roter, von zwei blauen Eichenblättern begleiteter Kirchturm mit blauer Haube und Spitzturm.“ (Kommunale Wappenrolle Schleswig-Holstein) Kaltenkirchen[6], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Segeberg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Segeberg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Norderstedt',
       locationUrl: 'https://de.wikipedia.org/wiki/Norderstedt',
@@ -1233,7 +921,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Segeb
       description: '↑ Norderstedt: „Geviert von Blau und Silber mit rotem Mittelschild, darin ein achtstrahliger silberner Stern, dessen oberster Strahl mit einer silbernen Lilie besteckt ist.“ (Kommunale Wappenrolle Schleswig-Holstein) Norderstedt[7], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Segeberg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Segeberg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Wahlstedt',
       locationUrl: 'https://de.wikipedia.org/wiki/Wahlstedt',
@@ -1241,7 +929,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Segeb
       description: '↑ Wahlstedt: „Von Silber und Rot schräglinks geteilt, darauf in vertauschten Farben ein schrägrechts gestellter, bewurzelter Eichenstumpf mit vier Zweigen.“ (Kommunale Wappenrolle Schleswig-Holstein) Wahlstedt[8], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Segeberg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Segeberg | Amtsfreie Städte und Gemeinden',
     }
 ]; 
 
@@ -1253,7 +941,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Stein
       description: 'Karte Steinburg, Schleswig-Holstein',
       type: ['kreis'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Steinburg',
-      sourceTitle: 'Kreiswappen',
+      sourceTitle: 'Liste der Wappen im Kreis Steinburg | Kreiswappen',
     }, {
       locationName: 'Steinburg',
       locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Steinburg',
@@ -1261,7 +949,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Stein
       description: '↑ Kreis Steinburg: „In Rot über blauen Wellen eine silberne Burg mit drei blau bedachten Zinnentürmen; unter dem Zinnenkranz aufgelegt drei Schilde: 1. in Blau der silbern und golden gekleidete Christus mit zum Segen erhobener Rechten, in der Linken die rote Weltkugel haltend; 2. in Rot ein silbernes Nesselblatt; 3. in Rot ein flugbereiter silberner Schwan mit einer goldenen Krone um den Hals.“ (Kommunale Wappenrolle Schleswig-Holstein) Kreiswappen Steinburg[1]',
       type: ['kreis'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Steinburg',
-      sourceTitle: 'Kreiswappen',
+      sourceTitle: 'Liste der Wappen im Kreis Steinburg | Kreiswappen',
     }, {
       locationName: 'Glückstadt',
       locationUrl: 'https://de.wikipedia.org/wiki/Gl%C3%BCckstadt',
@@ -1269,7 +957,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Stein
       description: '↑ Glückstadt: „In Blau die silberne unbekleidete Glücksgöttin Fortuna mit goldenen Haaren, die mit dem rechten Fuß auf einer goldenen Kugel steht und mit beiden Händen ein vom Wind geblähtes Segel hält.“ (Kommunale Wappenrolle Schleswig-Holstein) Glückstadt[2], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Steinburg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Steinburg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Itzehoe',
       locationUrl: 'https://de.wikipedia.org/wiki/Itzehoe',
@@ -1277,7 +965,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Stein
       description: '↑ Itzehoe: „In Rot über blauen Wellen auf einer durchgehenden silbernen Mauer zwei spitzbedachte silberne Zinnentürme mit geschlossenem Tor; zwischen den Turmdächern ein silbernes Nesselblatt.“ (Kommunale Wappenrolle Schleswig-Holstein) Itzehoe[3], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Steinburg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Steinburg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Wilster',
       locationUrl: 'https://de.wikipedia.org/wiki/Wilster',
@@ -1285,7 +973,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Stein
       description: '↑ Wilster: „Geteilt von Rot und Blau. Oben ein silbernes Nesselblatt, belegt mit einem von Silber und Rot geteilten Schildchen, unten schwimmend auf silbernen Wellen ein silberner Fisch.“ (Kommunale Wappenrolle Schleswig-Holstein) Wilster[4], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Steinburg',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Steinburg | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Siezbüttel',
       locationUrl: 'https://de.wikipedia.org/wiki/Siezb%C3%BCttel',
@@ -1293,12 +981,8 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Stein
       description: '↑ Siezbüttel: „Durch einen breiten silbernen Balken in oben Blau und unten Grün schrägrechts geteilt. Darauf ein frontal gestellter silberner, im Bereich des silbernen Balkens roter Ochsenkopf.“ (Kommunale Wappenrolle Schleswig-Holstein) Siezbüttel[110]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Steinburg',
-      sourceTitle: 'Ehemalige Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Steinburg | Ehemalige Gemeinden',
     }
-]; 
-
-urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_der_Gemeinde_Stolteb%C3%BCll'] = [
-  
 ]; 
 
 urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Stormarn'] = [
@@ -1309,7 +993,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Storm
       description: 'Karte Stormarn, Schleswig-Holstein',
       type: ['kreis'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Stormarn',
-      sourceTitle: 'Kreiswappen',
+      sourceTitle: 'Liste der Wappen im Kreis Stormarn | Kreiswappen',
     }, {
       locationName: 'Stormarn',
       locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Stormarn',
@@ -1317,7 +1001,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Storm
       description: '↑ Kreis Stormarn: „In Rot ein nach rechts schreitender silberner Schwan in Kampfstellung mit erhobenen Flügeln und einer goldenen Krone um den Hals.“ (Kommunale Wappenrolle Schleswig-Holstein) Kreiswappen Stormarn[1] (Details)',
       type: ['kreis'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Stormarn',
-      sourceTitle: 'Kreiswappen',
+      sourceTitle: 'Liste der Wappen im Kreis Stormarn | Kreiswappen',
     }, {
       locationName: 'Ahrensburg',
       locationUrl: 'https://de.wikipedia.org/wiki/Ahrensburg',
@@ -1325,7 +1009,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Storm
       description: '↑ Ahrensburg: „In Silber eine rote, beiderseits von niedrigen, schwarz bedachten Türmen überragte Burg mit vorspringendem, schwarz bedachtem Torturm und offenem Tor. Darunter auf einem wachsenden roten Pfahl der schwarze stilisierte Schädel und die schwarzen stilisierten Schaufeln eines Rentiers.“ (Kommunale Wappenrolle Schleswig-Holstein) Ahrensburg[2], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Stormarn',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Stormarn | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Ammersbek',
       locationUrl: 'https://de.wikipedia.org/wiki/Ammersbek',
@@ -1333,7 +1017,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Storm
       description: '↑ Ammersbek: „In Silber unter zwei nebeneinander stehenden, giebelständigen roten Häusern auf einem grünen Hügel, der mit einem goldenen Hufeisen belegt ist, drei grüne Bäume.“ (Kommunale Wappenrolle Schleswig-Holstein) Ammersbek[3]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Stormarn',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Stormarn | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Bad Oldesloe',
       locationUrl: 'https://de.wikipedia.org/wiki/Bad_Oldesloe',
@@ -1341,7 +1025,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Storm
       description: '↑ Bad Oldesloe: „In Rot das silberne holsteinische Nesselblatt, darin als Brustbild der nimbierte, blau gekleidete heilige Petrus, der einen aufrechten schwarzen Schlüssel hält.“ (Kommunale Wappenrolle Schleswig-Holstein) Bad Oldesloe[4], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Stormarn',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Stormarn | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Bargteheide',
       locationUrl: 'https://de.wikipedia.org/wiki/Bargteheide',
@@ -1349,7 +1033,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Storm
       description: '↑ Bargteheide: „Über blauem Schildfuß, darin fünf schräggekreuzte, durchgehende silberne Fäden, zwei nach schrägrechts, drei nach schräglinks, in Silber ein rotes Wagenrad mit acht Speichen.“ (Kommunale Wappenrolle Schleswig-Holstein) Bargteheide[5], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Stormarn',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Stormarn | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Barsbüttel',
       locationUrl: 'https://de.wikipedia.org/wiki/Barsb%C3%BCttel',
@@ -1357,7 +1041,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Storm
       description: '↑ Barsbüttel: „In Rot vier sechsspeichige silberne Wagenräder, 2 : 2 gestellt. Im silbernen Schildhaupt zwei gestürzte, schräg gekreuzte grüne Erlenzweige mit jeweils einem Blatt und einem männlichen Blütenstand.“ (Kommunale Wappenrolle Schleswig-Holstein) Barsbüttel[6]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Stormarn',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Stormarn | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Glinde',
       locationUrl: 'https://de.wikipedia.org/wiki/Glinde',
@@ -1365,7 +1049,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Storm
       description: '↑ Glinde: „Geteilt von Gold und Blau. Oben ein wachsendes rotes Mühlrad, unten ein durchgehendes goldenes Schräggitter, dessen Zwischenräume mit je einem goldenen dreiblättrigen Kleeblatt gefüllt sind.“ (Kommunale Wappenrolle Schleswig-Holstein) Glinde[7], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Stormarn',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Stormarn | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Großhansdorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Gro%C3%9Fhansdorf',
@@ -1373,7 +1057,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Storm
       description: '↑ Großhansdorf: „In Grün auf goldenem Dreiberg, der von einem blauen Wellenbalken durchzogen wird, ein silberner Reiter in der Tracht des 16. Jh. auf silbernem Pferd.“ (Kommunale Wappenrolle Schleswig-Holstein) Großhansdorf[8]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Stormarn',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Stormarn | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Oststeinbek',
       locationUrl: 'https://de.wikipedia.org/wiki/Oststeinbek',
@@ -1381,7 +1065,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Storm
       description: '↑ Oststeinbek: „In Rot das silberne holsteinische Nesselblatt, belegt mit einem schwarzen Mühlrad über einem blauen Wellenbalken.“ (Kommunale Wappenrolle Schleswig-Holstein) Oststeinbek[9]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Stormarn',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Stormarn | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Reinbek',
       locationUrl: 'https://de.wikipedia.org/wiki/Reinbek',
@@ -1389,7 +1073,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Storm
       description: '↑ Reinbek: „In Rot ein silberner Wellenbalken, begleitet von drei im Dreipass mit den Stielen einander zugekehrten Eichenblättern, und zwar zwei oben und einem unten.“ (Kommunale Wappenrolle Schleswig-Holstein) Reinbek[10], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Stormarn',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Stormarn | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Reinfeld (Holstein)',
       locationUrl: 'https://de.wikipedia.org/wiki/Reinfeld_(Holstein)',
@@ -1397,7 +1081,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Storm
       description: '↑ Reinfeld (Holstein): „Geteilt von Rot und Blau. Oben ein hervorkommender, linksgewendeter goldener Abtstab zwischen zwei auswärts geneigten goldenen Ähren; unten ein waagerechter silberner Fisch.“ (Kommunale Wappenrolle Schleswig-Holstein) Reinfeld (Holstein)[11], Stadt',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Stormarn',
-      sourceTitle: 'Amtsfreie Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Kreis Stormarn | Amtsfreie Städte und Gemeinden',
     }, {
       locationName: 'Tangstedt',
       locationUrl: 'https://de.wikipedia.org/wiki/Tangstedt_(Stormarn)',
@@ -1405,6 +1089,242 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Storm
       description: '↑ Tangstedt: „In Rot das silberne holsteinische Nesselblatt; diesem aufgelegt ein schwarzer Schild mit einem silbernen Balken, der mit drei roten Rosen mit goldenen Butzen und goldenen Kelchblättern belegt ist.“ (Kommunale Wappenrolle Schleswig-Holstein) Tangstedt[60]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Kreis_Stormarn',
-      sourceTitle: 'Gemeinden in kreisfremden Ämtern',
+      sourceTitle: 'Liste der Wappen im Kreis Stormarn | Gemeinden in kreisfremden Ämtern',
+    }
+]; 
+
+urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein'] = [
+  {
+      locationName: '',
+      locationUrl: '',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Deutschland_Lage_von_Schleswig-Holstein.svg/89px-Deutschland_Lage_von_Schleswig-Holstein.svg.png',
+      description: 'Karte Schleswig-Holstein, Deutschland',
+      type: ['land'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Landeswappen',
+    }, {
+      locationName: 'Schleswig-Holstein',
+      locationUrl: 'https://de.wikipedia.org/wiki/Schleswig-Holstein',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/DEU_Schleswig-Holstein_COA.svg/104px-DEU_Schleswig-Holstein_COA.svg.png',
+      description: '↑ Land Schleswig-Holstein: „Das Landeswappen zeigt in gespaltenem Schild rechts auf goldenem Grund zwei blaue, nach innen gewandte, rot bewehrte, schreitende Löwen, links in Rot ein silbernes Nesselblatt.“ (Gesetz über die Hoheitszeichen des Landes Schleswig-Holstein Vom 18. Januar 1957 i.d.F.d.B. v. 31. Dezember 1971 (Memento des Originals vom 10. Oktober 2007 im Internet Archive)  Info: Der Archivlink wurde automatisch eingesetzt und noch nicht geprüft. Bitte prüfe Original- und Archivlink gemäß Anleitung und entferne dann diesen Hinweis.) Landeswappen Schleswig-Holstein[1] (Details)',
+      type: ['land'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Landeswappen',
+    }, {
+      locationName: 'Wappenzeichen',
+      locationUrl: 'https://de.wikipedia.org/wiki/Wappenzeichen',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/State_symbol_of_Schleswig-Holstein.svg/118px-State_symbol_of_Schleswig-Holstein.svg.png',
+      description: 'Wappenzeichen',
+      type: ['land'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Landeswappen',
+    }, {
+      locationName: 'Flensburg',
+      locationUrl: 'https://de.wikipedia.org/wiki/Flensburg',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/DEU_Flensburg_COA.svg/103px-DEU_Flensburg_COA.svg.png',
+      description: '↑ Flensburg: „In Gold über blauem Wellenschildfuß ein sechseckiger roter Turm mit blauem Spitzdach, aus dem übereinander zwei herschauende, rot gezungte blaue Löwen hervorbrechen; oben ein roter Schild mit silbernem Nesselblatt.“ (Kommunale Wappenrolle Schleswig-Holstein) Flensburg[2] (Artikel)',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Kreisfreie Städte',
+    }, {
+      locationName: 'Kiel',
+      locationUrl: 'https://de.wikipedia.org/wiki/Kiel',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/DEU_Kiel_%28Alt.%29_COA.svg/114px-DEU_Kiel_%28Alt.%29_COA.svg.png',
+      description: '↑ Kiel: „In Rot das silberne holsteinische Nesselblatt, belegt mit einem gemauerten schwarzen Boot.“ (Kommunale Wappenrolle Schleswig-Holstein) Kiel[3] (Artikel)',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Kreisfreie Städte',
+    }, {
+      locationName: 'Lübeck',
+      locationUrl: 'https://de.wikipedia.org/wiki/L%C3%BCbeck',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/DEU_Luebeck_COA.svg/104px-DEU_Luebeck_COA.svg.png',
+      description: '↑ Lübeck: „In Gold ein rot bewehrter schwarzer Doppeladler mit einem von Silber und Rot geteilten Brustschild. Im großen Wappen halten zwei goldene Löwen den Schild; auf diesem ein Helm mit einköpfigem schwarzem Adler als Zier und silbern-roten Decken.“ (Kommunale Wappenrolle Schleswig-Holstein) Lübeck[4] (Artikel)',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Kreisfreie Städte',
+    }, {
+      locationName: 'Neumünster',
+      locationUrl: 'https://de.wikipedia.org/wiki/Neum%C3%BCnster',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/DEU_Neum%C3%BCnster_COA.svg/92px-DEU_Neum%C3%BCnster_COA.svg.png',
+      description: '↑ Neumünster: „In Rot eine silberne Fabrikanlage mit fünf Schloten, darunter ein silberner Schwan mit goldener Halskrone; über ihm schwebend ein silbernes Nesselblatt.“ (Kommunale Wappenrolle Schleswig-Holstein) Neumünster[5]',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Kreisfreie Städte',
+    }, {
+      locationName: 'Dithmarschen',
+      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Dithmarschen',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/DEU_Kreis_Dithmarschen_COA.svg/103px-DEU_Kreis_Dithmarschen_COA.svg.png',
+      description: '↑ Kreis Dithmarschen: „In Rot auf silbernem galoppierenden Pferd mit goldenem Sattel, goldenem Zaumzeug und blauer Satteldecke ein golden gerüsteter, ein silbernes Schwert über dem Kopf schwingender Reiter mit silbernem Helmbusch.“ (Kommunale Wappenrolle Schleswig-Holstein) Dithmarschen[6] (Details)',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Kreise',
+    }, {
+      locationName: 'Herzogtum Lauenburg',
+      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Herzogtum_Lauenburg',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/DEU_Kreis_Herzogtum_Lauenburg_COA.svg/69px-DEU_Kreis_Herzogtum_Lauenburg_COA.svg.png',
+      description: '↑ Kreis Herzogtum Lauenburg: „In Rot mit zwölffach von Silber und Schwarz gestücktem Bord ein rechtsgewendeter silberner Pferdekopf. Über dem Schild eine goldene Königskrone.“ (Kommunale Wappenrolle Schleswig-Holstein) Herzogtum Lauenburg[7] (Details)',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Kreise',
+    }, {
+      locationName: 'Nordfriesland',
+      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Nordfriesland',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DEU_Kreis_Nordfriesland_COA.svg/102px-DEU_Kreis_Nordfriesland_COA.svg.png',
+      description: '↑ Kreis Nordfriesland: „In Blau drei goldene dreimastige Schiffe im Stil des 16. Jahrhunderts in der Stellung 2 : 1 mit goldenen Segeln und roten Wimpeln; auf den Großsegeln je ein rotes Beizeichen (1. Pflug, 2. Fisch, 3. Stierkopf).“ (Kommunale Wappenrolle Schleswig-Holstein) Nordfriesland[8] (Details)',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Kreise',
+    }, {
+      locationName: 'Ostholstein',
+      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Ostholstein',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/DEU_Kreis_Ostholstein_COA.svg/91px-DEU_Kreis_Ostholstein_COA.svg.png',
+      description: '↑ Kreis Ostholstein: „In Blau ein wachsender, silberner zweistöckiger Turm, das untere Stockwerk gemauert, mit rundbogiger Toröffnung und mit Zinnen, das obere glatt, zurückspringend und mit beiderseits ausladenden Zinnen; darüber ein goldenes, gleichschenkliges und geradarmiges Tatzenkreuz, oben besteckt mit einer silbernen, oben und unten von silbernen Perlen eingefassten Bischofsmütze mit goldenen fliegenden Bändern.“ (Kommunale Wappenrolle Schleswig-Holstein) Ostholstein[9]',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Kreise',
+    }, {
+      locationName: 'Pinneberg',
+      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Pinneberg',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/DEU_Kreis_Pinneberg_COA.svg/111px-DEU_Kreis_Pinneberg_COA.svg.png',
+      description: '↑ Kreis Pinneberg: „In Rot das silberne holsteinische Nesselblatt, belegt mit einer stilisierten grünen Tanne, die goldene Wurzeln hat.“ (Kommunale Wappenrolle Schleswig-Holstein) Pinneberg[10] (Details)',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Kreise',
+    }, {
+      locationName: 'Plön',
+      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Pl%C3%B6n',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/DEU_Kreis_Pl%C3%B6n_COA.svg/112px-DEU_Kreis_Pl%C3%B6n_COA.svg.png',
+      description: '↑ Kreis Plön: „Durch einen silbernen Wellenbalken von Rot und Blau geteilt. Oben das silberne holsteinische Nesselblatt, begleitet rechts von einem silbernen Eichenblatt, links von einer silbernen Ähre; unten ein silberner Fisch.“ (Kommunale Wappenrolle Schleswig-Holstein) Plön[11]',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Kreise',
+    }, {
+      locationName: 'Rendsburg-Eckernförde',
+      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Rendsburg-Eckernf%C3%B6rde',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/DEU_Kreis_Rendsburg-Eckernf%C3%B6rde_COA.svg/111px-DEU_Kreis_Rendsburg-Eckernf%C3%B6rde_COA.svg.png',
+      description: '↑ Kreis Rendsburg-Eckernförde: „Schräglinks im Wellenschnitt geteilt. Oben in Gold die beiden schreitenden, blauen Schleswiger Löwen übereinander, unten in Rot das silberne holsteinische Nesselblatt.“ (Kommunale Wappenrolle Schleswig-Holstein) Rendsburg-Eckernförde[12]',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Kreise',
+    }, {
+      locationName: 'Schleswig-Flensburg',
+      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Schleswig-Flensburg',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/DEU_Kreis_Schleswig-Flensburg_COA.svg/110px-DEU_Kreis_Schleswig-Flensburg_COA.svg.png',
+      description: '↑ Kreis Schleswig-Flensburg: „Über blauem, mit zwei silbernen Wellenfäden belegtem Wellenschildfuß von Blau und Gold schräglinks geteilt mit zwei schreitenden, rot bewehrten Löwen in verwechselten Farben.“ (Kommunale Wappenrolle Schleswig-Holstein) Schleswig-Flensburg[13]',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Kreise',
+    }, {
+      locationName: 'Segeberg',
+      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Segeberg',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/DEU_Kreis_Segeberg_COA.svg/100px-DEU_Kreis_Segeberg_COA.svg.png',
+      description: '↑ Kreis Segeberg: „In Silber ein aus vier spitzbedachten roten Ziegeltürmen bestehendes Kreuz, bewinkelt von vier grünen Seerosenblättern und in seiner ausgebrochenen Kreuzungsstelle belegt mit dem holsteinischen Wappenschild: in Rot ein silbernes Nesselblatt.“ (Kommunale Wappenrolle Schleswig-Holstein) Segeberg[14]',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Kreise',
+    }, {
+      locationName: 'Steinburg',
+      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Steinburg',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/DEU_Kreis_Steinburg_COA.svg/120px-DEU_Kreis_Steinburg_COA.svg.png',
+      description: '↑ Kreis Steinburg: „In Rot über blauen Wellen eine silberne Burg mit drei blau bedachten Zinnentürmen; unter dem Zinnenkranz aufgelegt drei Schilde: 1. in Blau der silbern und golden gekleidete Christus mit zum Segen erhobener Rechten, in der Linken die rote Weltkugel haltend; 2. in Rot ein silbernes Nesselblatt; 3. in Rot ein flugbereiter silberner Schwan mit einer goldenen Krone um den Hals.“ (Kommunale Wappenrolle Schleswig-Holstein) Steinburg[15]',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Kreise',
+    }, {
+      locationName: 'Stormarn',
+      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Stormarn',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/DEU_Kreis_Stormarn_COA.svg/105px-DEU_Kreis_Stormarn_COA.svg.png',
+      description: '↑ Kreis Stormarn: „In Rot ein nach rechts schreitender silberner Schwan in Kampfstellung mit erhobenen Flügeln und einer goldenen Krone um den Hals.“ (Kommunale Wappenrolle Schleswig-Holstein) Stormarn[16] (Details)',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Kreise',
+    }, {
+      locationName: 'Eckernförde',
+      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Eckernf%C3%B6rde',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Eckernfoerde_Kreis_Wappen.png/112px-Eckernfoerde_Kreis_Wappen.png',
+      description: '↑ Kreis Eckernförde: „In Gold ein nach rechts springendes rotes Eichhörnchen über einer mit blau-silbernen Wellen ausgefüllten Spitze.“ (Schlothfeldt Schleswig-Holsteinische Kreis- und Ortswappen) Eckernförde[17]',
+      type: ['formerKreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Ehemalige Kreise',
+    }, {
+      locationName: 'Eiderstedt',
+      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Eiderstedt',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/DEU_Kreis_Eiderstedt_COA.svg/108px-DEU_Kreis_Eiderstedt_COA.svg.png',
+      description: '↑ Kreis Eiderstedt: „In Blau drei rechtshin segelnde dreimastige goldene Schiffe (2:1) mit silbernen Segeln und roten Wimpeln. Auf dem Großsegel je das Zeichen der drei Eiderstedter Harden: Utholm, ein hervorbrechender blauer Leopard; Everschop, eine blaue Karausche; Eiderstedt, ein roter Ochsenkopf.“ (Schlothfeldt Schleswig-Holsteinische Kreis- und Ortswappen) Eiderstedt[18]',
+      type: ['formerKreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Ehemalige Kreise',
+    }, {
+      locationName: 'Eutin',
+      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Eutin',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Eutin_Kreis_Wappen.png/111px-Eutin_Kreis_Wappen.png',
+      description: '↑ Kreis Eutin: „Schild halb gespalten, halb geteilt, oben rechts in Gold zwei rote Querbalken, oben links in Blau ein goldenes Nadelspitzkreuz, unten in Blau ein goldenes Kreuz, das eine goldene Bischofsmütze mit fliegenden Bändern trägt.“ (Schlothfeldt Schleswig-Holsteinische Kreis- und Ortswappen) Eutin[19]',
+      type: ['formerKreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Ehemalige Kreise',
+    }, {
+      locationName: 'Flensburg-Land',
+      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Flensburg-Land',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flensburg_Kreis_Wappen.png/111px-Flensburg_Kreis_Wappen.png',
+      description: '↑ Kreis Flensburg-Land: „Im geteilten Schild oben in Gold ein nach rechts schreitender rot bewehrter blauer Löwe, unten in Blau fünf (3:2) silberne Rosen.“ (Schlothfeldt Schleswig-Holsteinische Kreis- und Ortswappen) Flensburg-Land[20]',
+      type: ['formerKreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Ehemalige Kreise',
+    }, {
+      locationName: 'Husum',
+      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Husum',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Husum_Kreis_Wappen.png/111px-Husum_Kreis_Wappen.png',
+      description: '↑ Kreis Husum: „Im geteilten Schild oben in Gold die beiden schleswigschen Löwen, unten in Rot ein silbernes Pflugeisen, rechts begleitet von einer silbernen Mondsichel, links von einem sechsstrahligen silbernen Stern.“ (Schlothfeldt Schleswig-Holsteinische Kreis- und Ortswappen) Husum[21]',
+      type: ['formerKreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Ehemalige Kreise',
+    }, {
+      locationName: 'Norderdithmarschen',
+      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Norderdithmarschen',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Norderdithmarschen_Kreis_Wappen.png/110px-Norderdithmarschen_Kreis_Wappen.png',
+      description: '↑ Kreis Norderdithmarschen: „In Rot über grünem Boden auf golden gezäumtem und blau gesatteltem silbernen Pferd sprengend ein Ritter in goldener Rüstung, der mit der Rechten ein silbernes Schwert über dem Kopf schwingt.“ (Stadler Deutsche Wappen, Band 1) Norderdithmarschen[22]',
+      type: ['formerKreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Ehemalige Kreise',
+    }, {
+      locationName: 'Oldenburg in Holstein',
+      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Oldenburg_in_Holstein',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Oldenburg_%28Holstein%29_Kreis_Wappen.png/113px-Oldenburg_%28Holstein%29_Kreis_Wappen.png',
+      description: '↑ Kreis Oldenburg in Holstein: „In Blau, über einem silbernen Fisch eine goldene zweistöckige Burg mit offenem Tor, beiderseits begleitet von je einer goldenen Ähre. Über den Burgzinnen schwebt der rote holsteinische Schild mit dem silbernen Nesselblatt.“ (Schlothfeldt Schleswig-Holsteinische Kreis- und Ortswappen) Oldenburg in Holstein[23]',
+      type: ['formerKreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Ehemalige Kreise',
+    }, {
+      locationName: 'Rendsburg',
+      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Rendsburg',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Rendsburg_Kreis_Wappen.png/111px-Rendsburg_Kreis_Wappen.png',
+      description: '↑ Kreis Rendsburg: „In Gold, über blau-silbernen Wellen eine dreitürmige rote Burg; im Schildhaupt der rote holsteinische Schild mit dem silbernen Nesselblatt, flankiert von den beiden schleswigschen rotbewehrten blauen Löwen.“ (Schlothfeldt Schleswig-Holsteinische Kreis- und Ortswappen) Rendsburg[24]',
+      type: ['formerKreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Ehemalige Kreise',
+    }, {
+      locationName: 'Schleswig',
+      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Schleswig',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Schleswig_Kreis_Wappen.png/113px-Schleswig_Kreis_Wappen.png',
+      description: '↑ Kreis Schleswig: „In Blau unter einer nach rechts schwebenden silbernen Möwe ein goldenes, mit grünen Wellenlinien durchzogenes Ährenfeld, das rechts von blauem Wasser mit weißen spitzen Wellenköpfen und links von blauem Wasser mit weißen runden Wellenköpfen eingeschnitten ist.“ (Schlothfeldt Schleswig-Holsteinische Kreis- und Ortswappen) Schleswig[25]',
+      type: ['formerKreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Ehemalige Kreise',
+    }, {
+      locationName: 'Süderdithmarschen',
+      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_S%C3%BCderdithmarschen',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Suederdithmarschen_Kreis_Wappen.png/111px-Suederdithmarschen_Kreis_Wappen.png',
+      description: '↑ Kreis Süderdithmarschen: „In Rot auf silbernem, nach rechts sprengendem Ross ein Ritter in silberner Rüstung, in der Rechten sein zum Schlag erhobenes silbernes Schwert schwingend.“ (Schlothfeldt Schleswig-Holsteinische Kreis- und Ortswappen) Süderdithmarschen[26]',
+      type: ['formerKreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Ehemalige Kreise',
+    }, {
+      locationName: 'Südtondern',
+      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_S%C3%BCdtondern',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Suedtondern_Kreis_Wappen.png/112px-Suedtondern_Kreis_Wappen.png',
+      description: '↑ Kreis Südtondern: „In Rot über blau-silbernen Wellen im Schildfuß ein goldener Leuchtturm, von dessen Fenstern nach beiden Seiten je ein silbernes Strahlenbündel ausgeht.“ (Schlothfeldt Schleswig-Holsteinische Kreis- und Ortswappen) Südtondern[27]',
+      type: ['formerKreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Schleswig-Holstein',
+      sourceTitle: 'Liste der Wappen in Schleswig-Holstein | Ehemalige Kreise',
     }
 ]; 
