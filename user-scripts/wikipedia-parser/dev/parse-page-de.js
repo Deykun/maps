@@ -9,7 +9,7 @@ const getSafeText = (text) => {
     return '';
   }
 
-  return text.replace(/\n|\r/g, ' ').replaceAll(`'`, `"`).replace(/\s\s+/g, ' ');
+  return text.replace(/\n|\r/g, ' ').replaceAll(`'`, `"`).replaceAll(`'`, '"').replace(/\s\s+/g, ' ');
 }
 
 const getUnitTypesFromTitle = (text) => {
@@ -222,7 +222,7 @@ export const savePageCoatOfArmsIfPossibleDE = () => {
           indexCoatOfArms,
           indexLocation,
           indexDescription,
-        } = Array.from(nextTableEl.querySelectorAll('tr:first-child th')).reduce((stack, el, index) => {
+        } = Array.from(nextTableEl.querySelectorAll('tr:first-child th, tr:first-child td')).reduce((stack, el, index) => {
           const text = (el.innerText || '').toLowerCase();
           const isCoatOfArms = ['wappen'].some((v) => text.includes(v));
           const isDescription = ['kommentare'].some((v) => text.includes(v));
@@ -254,7 +254,7 @@ export const savePageCoatOfArmsIfPossibleDE = () => {
           const [headEl, ...rowsEl] = Array.from(nextTableEl.querySelectorAll('tr'));
 
           rowsEl.forEach(rowEl => {
-            const columnEls = Array.from(rowEl.querySelectorAll('td'));
+            const columnEls = Array.from(rowEl.querySelectorAll('td, th'));
             const isThatSpecificFormer = getIsFormer(rowEl.innerText);
 
             const thumbnailUrl = columnEls[indexCoatOfArms].querySelector('img')?.src;

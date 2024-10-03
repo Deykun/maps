@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created using CorelDRAW  and proton32 text editor -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+xml:space="preserve" width="191mm" height="230mm" 
+style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:nonzero"
+viewBox="0 0 191 230">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+   	.strCoa {stroke:black;stroke-width:2}
+   	.filCoa {fill:white}
+    .str1 {stroke:white;stroke-width:0.1764}
+    .str2 {stroke:white;stroke-width:0.3}
+    .strTurm {stroke:black;stroke-width:0.4}
+    .strNessel {stroke:white;stroke-width: 0.2}
+    .strSchild {stroke:black;stroke-width: 1.4}
+    .fil0 {fill:none}
+    .fil2 {fill:white}
+    .fil1 {fill:#E34234}
+    .filSeerose {fill:#54BA6E}
+    .strSeerose {stroke:black;stroke-width:0.6}
+   ]]>
+  </style>
+
+	<!-- Shape Templates -->
+  <path id="turmrandUnten" class="fil0 strTurm" d="M76 117 l0 66.7078 -4.5 0 24 30 24 -30 -4.5 0 0 -66.9432c-5.4411,4.8879 -13.1045,7.2864 -19.4938,7.2864 -6.4604,0 -14.0575,-2.3205 -19.5062,-7.051z"/>
+  
+  <path id="turmrandRechts" class="fil0 strTurm" d="M118.6 113 l 39 0 0 4.5 30 -24 -30 -24 0 4.5 -34.4529 0 0 25.9474c0,5.2759 -1.7817,9.6196 -4.5759,13.0526z" />
+  
+  <polygon id="turmrandOben" class="fil0 strTurm" points="115,65.4 115,31.3 119.5,31.3 95.5,1.3 71.5,31.3 76,31.3 76,65.4 "/>
+
+	<!-- Dachziegel -->
+	<path id="dz" class="fil1 str1" d="M92.5 186.2l0 5.0213 6 0 0 -5.0213c0,-3.1383 -6,-3.1383 -6,0z"/>
+
+	<!-- Clipping -->
+  <clipPath id="clipTurm">
+	  <use xlink:href="#turmrandUnten" />
+  </clipPath>
+  <clipPath id="clipTurmRechts">
+	  <use xlink:href="#turmrandRechts" transform="rotate(90,95.5,93.5) translate(28,0)" />
+  </clipPath>
+  <clipPath id="clipTurmOben">
+	  <use xlink:href="#turmrandOben" transform="rotate(180,95.5,93.5) translate(0,-28)" />
+  </clipPath>
+</defs>
+
+<path id="coa_base" class="strCoa filCoa" d="M1 1 l189 0 0 135c0,62.5 -53.5,93 -94.5,93 -41,0 -94.5,-30.5 -94.5,-93z"/>
+
+<g id="coaContent" transform="translate(0,5)">
+  <!-- Turm unten -->
+  <g id="turm">
+    <g id="turmContent">
+      <g id="ziegel" clip-path="url(#clipTurm)">
+        <g id="ziegelreihe">
+          <use xlink:href="#dz" />
+          <use xlink:href="#dz" x="-6" />
+          <use xlink:href="#dz" x="-12" />
+          <use xlink:href="#dz" x="-18" />
+          <use xlink:href="#dz" x="-24" />
+          <use xlink:href="#dz" x="6" />
+          <use xlink:href="#dz" x="12" />
+          <use xlink:href="#dz" x="18" />
+          <use xlink:href="#dz" x="24" />
+        </g>
+        <use xlink:href="#ziegelreihe" x="-3" y="5.5" />
+        <use xlink:href="#ziegelreihe" y="11.25" />
+        <use xlink:href="#ziegelreihe" x="-3" y="17" />
+        <path id="obererDz" class="fil1 str1" d="M91.5 208.7l0 5 8 0 0 -5c0,-3.1383 -8,-3.1383 -8,0z"/>
+      </g>
+      <g id="mauersteine" clip-path="url(#clipTurm)">
+        <g id="steinreihen">
+          <g id="steinreihe1">
+            <rect id="stein1" class="fil1 str2" x="76" y="177.95" width="6.5" height="5.75" />
+            <rect id="stein2" class="fil1 str2" x="82.5" y="177.95" width="13" height="5.75" />
+            <use xlink:href="#stein2" x="13" />
+            <use xlink:href="#stein1" x="32.5" />
+          </g>
+          <g id="steinreihe2">
+            <use xlink:href="#stein2" x="-6.5" y="-5.75" />
+            <use xlink:href="#stein2" x="6.5" y="-5.75" />
+            <use xlink:href="#stein2" x="19.5" y="-5.75" />
+          </g>
+        </g>
+        <use xlink:href="#steinreihen" y="-11.5" />
+        <use xlink:href="#steinreihen" y="-23" />
+        <use xlink:href="#steinreihen" y="-34.5" />
+        <use xlink:href="#steinreihen" y="-46" />
+        <use xlink:href="#steinreihen" y="-57.5" />
+      </g>
+      <rect id="fenster" class="fil2" x="85.875" y="166.45" width="6.5" height="11.5" />
+      <use xlink:href="#fenster" x="13" />
+    </g>
+    <use xlink:href="#turmrandUnten" />
+  </g>
+
+  <g id="turmRechts">
+    <use xlink:href="#turmContent" transform="translate(-28,0) rotate(-90,95.5,93.5)"  clip-path="url(#clipTurmRechts)" />
+    <use xlink:href="#turmrandRechts" />
+  </g>
+  <use xlink:href="#turmRechts" transform="translate(191,0) scale(-1,1)" />
+  <use xlink:href="#turmContent" transform="translate(0,28) rotate(180,95.5,93.5)" clip-path="url(#clipTurmOben)" />
+  <use xlink:href="#turmrandOben" />
+
+  <path id="mittelSchild" class="fil1 strSchild" d="M70.25 68 l 50.5,0 0,31.7 c0,14.7 -14.5149,21.8056 -25.25,21.8056 -11.0313,0 -25.5462,-7.0995 -25.5,-21.8056z"/>
+
+  <polygon id="Nesselblatt" class="fil2 strNessel" points="99.4998,115.25 96.9998,107.75 108.412,114.625 105.75,105.5 116.5,107.5 109.75,98.25 118,95 110,89.75 118.25,86 110.5,82.2499 117.25,78 118.75,70.75 113,73.75 109.75,81.25 105.25,71.75 100.25,81.25 95.5,71.75 90.7499,81.25 85.7499,71.75 81.25,81.25 78,73.75 72.25,70.75 73.7499,78 80.4999,82.2499 72.75,86 81,89.75 72.9999,95 81.2499,98.25 74.5,107.5 85.25,105.5 82.5873,114.625 94,107.75 91.5,115.25 95.4999,120.5 "/>
+    
+  <g id="seerose_group" transform="rotate(-45,95.5 93.5)">
+    <path id="seerose" class="filSeerose strSeerose" d="M95.5 55c-8.6177,-10.432 -12.7823,-9.2362 -19.1735,-15.3388 -12.7619,-10.5249 2.3297,-25.3895 9.896,-17.0706 -6.7129,0.4367 -2.2845,12.1224 4.4532,7.7931 -3.2393,6.5932 3.0428,8.5353 4.8243,8.5353 1.7815,0 8.0636,-1.9421 4.8243,-8.5353 6.7377,4.3293 11.1661,-7.3564 4.4532,-7.7931 7.5663,-8.3189 22.6579,6.5457 9.896,17.0706 -6.3912,6.1026 -10.5558,4.9068 -19.1735,15.3388z"  />
+  </g>
+  <use xlink:href="#seerose" transform="rotate(45,95.5 93.5)" />
+  <use xlink:href="#seerose" transform="rotate(135,95.5 93.5)" />
+  <use xlink:href="#seerose" transform="rotate(-135,95.5 93.5)" />
+</g>  
+
+</svg>

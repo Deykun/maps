@@ -1562,7 +1562,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_D
       locationName: 'Otzberg',
       locationUrl: 'https://de.wikipedia.org/wiki/Otzberg',
       thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Wappen_Otzberg.svg/111px-Wappen_Otzberg.svg.png',
-      description: '↑ Otzberg: „In blau und rot geteiltem Schild (Teilungslinie erniedrigt) oben eine silberne Burg mit nach oben schräg zulaufender äußerer und darüber gerader innerer Ringmauer mit rundem Mittelturm, unten und auf der äußeren Ringmauer aufgelegt ein gespaltener Schild, der vorne blau und silber gerautet und hinten in Gold ein schwarzes 'O' enthält.“ Gemeinde Otzberg[18]',
+      description: '↑ Otzberg: „In blau und rot geteiltem Schild (Teilungslinie erniedrigt) oben eine silberne Burg mit nach oben schräg zulaufender äußerer und darüber gerader innerer Ringmauer mit rundem Mittelturm, unten und auf der äußeren Ringmauer aufgelegt ein gespaltener Schild, der vorne blau und silber gerautet und hinten in Gold ein schwarzes "O" enthält.“ Gemeinde Otzberg[18]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Darmstadt-Dieburg',
       sourceTitle: 'Liste der Wappen im Landkreis Darmstadt-Dieburg | Wappen der Städte und Gemeinden',

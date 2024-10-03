@@ -18229,6 +18229,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_W
     }
 ]; 
 
+
 urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_der_Region_Hannover'] = [
   {
       locationName: 'Wedemark',
@@ -19777,7 +19778,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_der_Region_
     }, {
       locationName: 'Hannover',
       locationUrl: 'https://de.wikipedia.org/wiki/Landkreis_Hannover',
-      thumbnailUrl: 'undefined',
+      thumbnailUrl: undefined,
       description: 'Das Wappen zeigte zwei Löwen Hannover 1885–1932 ',
       type: ['kreis'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_der_Region_Hannover',
@@ -19785,7 +19786,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_der_Region_
     }, {
       locationName: 'Linden',
       locationUrl: 'https://de.wikipedia.org/wiki/Landkreis_Linden',
-      thumbnailUrl: 'undefined',
+      thumbnailUrl: undefined,
       description: 'Das Wappen zeigte einen steigenden bekrönten Löwen Linden 1885–1932 ',
       type: ['kreis'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_der_Region_Hannover',
@@ -23047,7 +23048,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_der_Region_
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_der_Region_Hannover',
       sourceTitle: 'Liste der Wappen in der Region Hannover | Historische Wappen',
     }
-]; 
+];
 
 urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Niedersachsen'] = [
   {

@@ -37,6 +37,7 @@ const fetchCountryData = async () => {
     formerUnits0,
     formerUnits1,
     formerUnits2,
+    formerUnits3,
     units0,
     units1,
     units2,
@@ -45,6 +46,7 @@ const fetchCountryData = async () => {
     fetch('/maps/data/heraldry/de/formerUnit-0-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
     fetch('/maps/data/heraldry/de/formerUnit-1-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
     fetch('/maps/data/heraldry/de/formerUnit-2-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/de/formerUnit-3-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
     fetch('/maps/data/heraldry/de/unit-0-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
     fetch('/maps/data/heraldry/de/unit-1-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
     fetch('/maps/data/heraldry/de/unit-2-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
@@ -55,6 +57,7 @@ const fetchCountryData = async () => {
     ...Object.values(formerUnits0) as AdministrativeUnit[],
     ...Object.values(formerUnits1) as AdministrativeUnit[],
     ...Object.values(formerUnits2) as AdministrativeUnit[],
+    ...Object.values(formerUnits3) as AdministrativeUnit[],
     ...Object.values(units0) as AdministrativeUnit[],
     ...Object.values(units1) as AdministrativeUnit[],
     ...Object.values(units2) as AdministrativeUnit[],
@@ -138,7 +141,7 @@ const HeraldryDE = () => {
       map={SvgMap}
       mapOffset={{
          minLatTop: 47.3,
-         maxLatTop: 55.38,
+         maxLatTop: 55.22,
          minLonLeft: 5.8,
          maxLonLeft: 15.1,
       }}
@@ -151,6 +154,7 @@ const HeraldryDE = () => {
         'formerUnit-0',
         'formerUnit-1',
         'formerUnit-2',
+        'formerUnit-3',
       ]}
     />
   );

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="605" width="575" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<clipPath id="c">
+<path id="a" stroke="#000" d="m567 6.5l-12.3 332c-4.9 144-123 259-268 259s-263-115-268-259l-12.2-332z"/>
+</clipPath>
+</defs>
+<use xlink:href="#a" fill="#fff"/>
+<path d="m287 95.1 228 214v138h-456v-138l228-214z" stroke="#000" stroke-width="13" fill="#da121a"/>
+<path d="m111 258h351" stroke="#000" stroke-width="14.7" fill="none"/>
+<g id="b" stroke="#000">
+<g fill="none">
+<path d="m380 382v-122" stroke-width="14.8"/>
+<path d="m519 336h-139m96.3-63.1v141m-55.4-155v134" stroke-width="8.07"/>
+<path d="m477 336 42.3 113m-97-113-31.1 54.9m-10.8-71.7-60.9-60.9" stroke-width="7.05"/>
+<path d="m554 345-266-249" stroke-width="14.8"/>
+</g>
+<path d="m277 94s12.6-11.9 17.9-17.5c6.7-7.09 12-14.7 23.4-15 5.42 2.39 12.1 10.5 8.66 14.5l-3.52 1.61c-1.12 2.41 0.03 9.5 0.29 12.5-0.4 1.09-1.53 2.03-3.52 2.45-0.85 6.13-4.19 4.95-6.36 0.1-0.72-4.3-2.35-9.19-2.35-8.76-3.49-1.24-11.3 6.6-14.8 11"/>
+</g>
+<use xlink:href="#b" transform="matrix(-1 0 0 1 574 0)"/>
+<circle stroke-width="10" clip-path="url(#c)" stroke="#000" cy="807" cx="288" r="446" fill="#fcdd09"/>
+<use xlink:href="#a" stroke-width="13" fill="none"/>
+</svg>

@@ -103,7 +103,7 @@ export type MapOffset = {
 export type UserScriptDivisionData = {
   locationName: string,
   locationUrl: string,
-  thumbnailUrl: string,
+  thumbnailUrl?: string,
   description: string,
   type: string[],
   source: string,

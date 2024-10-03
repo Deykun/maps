@@ -13,11 +13,10 @@ const getSourceTextToCopy = (source, value) => {
   return `
   urls.unitBySource['${source}'] = [
     ${(value || window.parsedDE[source]).map((item) => {
-  
       return `{
         locationName: '${item.locationName}',
         locationUrl: '${item.locationUrl}',
-        thumbnailUrl: '${item.thumbnailUrl}',
+        thumbnailUrl: ${item.thumbnailUrl ? `'${item.thumbnailUrl}'` : 'undefined'},
         description: '${item.description}',
         type: [${item.type.map((v) => `'${v}'`).join(',')}],
         source: '${item.source}',

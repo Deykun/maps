@@ -28817,6 +28817,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Bamberg'] =
     }
 ]; 
 
+
 urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Bayern'] = [
   {
       locationName: 'Niederbayern',
@@ -28957,7 +28958,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Bayern'] = 
     }, {
       locationName: '',
       locationUrl: 'https://de.wikipedia.org/wiki/Datei:DEU_M%C3%BCnchen_gross_COA.svg',
-      thumbnailUrl: 'undefined',
+      thumbnailUrl: undefined,
       description: ' ',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Bayern',
@@ -28973,7 +28974,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Bayern'] = 
     }, {
       locationName: '',
       locationUrl: 'https://de.wikipedia.org/wiki/Datei:DEU_N%C3%BCrnberg_COA_(gro%C3%9F).svg',
-      thumbnailUrl: 'undefined',
+      thumbnailUrl: undefined,
       description: ' ',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Bayern',
@@ -29611,7 +29612,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Bayern'] = 
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Bayern',
       sourceTitle: 'Liste der Wappen in Bayern | Landkreise',
     }
-]; 
+];
 
 urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Coburg'] = [
   {

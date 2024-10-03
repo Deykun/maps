@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<svg fill="none" height="644" stroke="#111" viewBox="-310 -336 626 644" width="626" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<filter id="a" color-interpolation-filters="sRGB">
+<feFlood flood-color="#111" result="flood"/>
+<feComposite in="flood" in2="SourceGraphic" operator="in" result="composite1"/>
+<feGaussianBlur in="composite1"/>
+<feOffset dx="2" dy="2" result="offset"/>
+<feComposite in="SourceGraphic" in2="offset" result="composite2"/>
+</filter>
+<clipPath id="b">
+<path d="m-340 16h135.1l60 47 65-47h158l82 47 44-47h136v-290h-680z"/>
+</clipPath>
+</defs>
+<path d="m-301.8-328l14.4 375.8c5.8 145.5 142.8 252.3 290.3 252.3s284.2-107 290.1-252.3l14.8-375.8z" fill="#d22" stroke="#111" stroke-width="13"/>
+<use x="3" xlink:href="#c" y="3"/>
+<g id="c" clip-path="url(#b)" filter="url(#a)">
+<g stroke-width="58">
+<circle r="234"/>
+<circle r="50"/>
+</g>
+<g stroke="#fff" stroke-width="46">
+<circle r="234"/>
+<circle r="50"/>
+</g>
+<g stroke-width="3">
+<circle r="253"/>
+<circle r="68.5"/>
+<circle r="34"/>
+</g>
+<g id="d">
+<g id="e">
+<g id="f" fill="#fff" stroke-width="4">
+<path d="m-21-191c23 22 5.3 26.3-1 43h44c-4-16-24-21-1-43"/>
+<path d="m-13-206h26l9 15h-44z" stroke-linejoin="round"/>
+<circle cy="-52" r="6"/>
+<path d="m-15-76c14-34-6-44-7-59h44c-1 15-21 25-7 59z"/>
+<rect height="16" rx="5" ry="8" stroke-width="4" width="54" x="-27" y="-148"/>
+<circle cy="-232" r="6"/>
+</g>
+<use transform="scale(1,-1)" xlink:href="#f"/>
+</g>
+<use transform="rotate(90)" xlink:href="#e"/>
+</g>
+<use transform="rotate(45)" xlink:href="#d"/>
+</g>
+<path d="m13.5 16h79.8c-7 4-12.1 7.5-15.9 10.6h-54.7zm184.5 0h69.7l-.6 12.2h-57.2zm-275.9 0h58.2l8.9 2.9 2.5 7.7h-61.9c-1.2-3.6-12.1-7.6-12.1-7.6m-180.4-3h63.6v12.2h-56.1z" fill="#111" stroke="none"/>
+</svg>
