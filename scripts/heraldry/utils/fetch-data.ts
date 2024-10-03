@@ -395,7 +395,7 @@ const fetchDivisionFromUserScript= async (division: UserScriptDivisionData, path
 
     if (!didFetch) {
       failed = failed + 1;
-      console.log(`${chalk.red(`No location was found '${division.title}'`)}. Page with the location not found.`);
+      console.log(`${chalk.red(`No location was found '${division.locationName}' ${division.sourceTitle}`)}. Page with the location not found.`);
       console.log(`Tried: ${chalk.yellow(locationPages.join(', '))}`);
       console.log('Those errors are saved to errors.json at the end.');
       console.log(' ')
@@ -406,7 +406,7 @@ const fetchDivisionFromUserScript= async (division: UserScriptDivisionData, path
         console.log(chalk.red(error));
       })
       errors.push({
-        title: `Missing corrdinates for '${division.title}'. Page with the location not found.`,
+        title: `Missing corrdinates for '${division.locationName}' ${division.sourceTitle}. Page with the location not found.`,
         details: [`Tried pages: ${locationPages.join(', ')}.`,
           'You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.',
           '',
@@ -426,7 +426,7 @@ const fetchDivisionFromUserScript= async (division: UserScriptDivisionData, path
       const coordinates = divisionCoordinates;
 
       const divisionToSave: AdministrativeUnit = {
-        title: divisionPage.title || division.locationName || division.title,
+        title: divisionPage.title || division.locationName,
         lang: indexData.lang,
         id: indexData.id,
         index: indexData.index,
@@ -440,7 +440,7 @@ const fetchDivisionFromUserScript= async (division: UserScriptDivisionData, path
           sourceAlt: division.thumbnailUrl,
         }} : {}),
         place: {
-          name: divisionPage.title,
+          name: division.sourceTitle, // Since location is used as title, sourceTitle will be used as location title
           coordinates: {
             lat: coordinates.lat,
             lon: coordinates.lon,
@@ -449,10 +449,10 @@ const fetchDivisionFromUserScript= async (division: UserScriptDivisionData, path
       }
 
       if (!coordinates.lon) {
-        console.log(chalk.red(`Missing corrdinates for '${division.title}'. No data.`));
+        console.log(chalk.red(`Missing corrdinates for '${division.locationName}' ${division.sourceTitle}. No data.`));
         console.log(chalk.red(division.source));
         errors.push({
-          title: `Missing corrdinates for '${division.title}'. No data.`,
+          title: `Missing corrdinates for '${division.locationName}' ${division.sourceTitle}. No data.`,
           url: division.source,
         });
       }
@@ -461,12 +461,12 @@ const fetchDivisionFromUserScript= async (division: UserScriptDivisionData, path
     }
   } catch (error) {
     failed = failed + 1;
-    console.log(chalk.red(`Error fetching '${chalk.white(division.title)}'${locationPages.length > 0 ? ` with '${chalk.yellow(locationPages.join(','))}`: ''}.`));
+    console.log(chalk.red(`Error fetching '${chalk.white(division.locationName)}'${locationPages.length > 0 ? ` with '${chalk.yellow(locationPages.join(','))}`: ''}.`));
     console.log(chalk.red(division.source));
     console.log(error);
 
     errors.push({
-      title: `Error fetching '${division.title}${locationPages.length > 0 ? ` with '${chalk.yellow(locationPages.join(','))}`: ''}.`,
+      title: `Error fetching '${division.locationName}${locationPages.length > 0 ? ` with '${chalk.yellow(locationPages.join(','))}`: ''}.`,
       url: division.source,
       details: error?.title,
     });

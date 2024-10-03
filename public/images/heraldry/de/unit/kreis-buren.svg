@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 405 466" version="1.1" xmlns="http://www.w3.org/2000/svg">
+ <path
+   d="m 3.5,2.5 -1,300 c 0,89.2 89.5,161 200,161 110.5,0 200,-71.8 200,-161 l 0,-300 -399,0 z"
+   id="feld"
+   style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:5;marker:none;display:inline;" />
+ <path
+   d="m 202.5,228.5 c -10.45465,7.77817 -25.34463,18.76598 -25,52 -17.33333,-1 -24.44484,-32.27208 -25,-45 -8.33333,0 -25.15195,35.85786 -25,50 -16.81861,-0.70711 -27.15195,-22.56497 -25,-39 -16.697294,4.29289 -26.444842,25.25126 -25,53 -29.647042,5 -43.495094,-17.15076 -40,-38 -16.897131,15 -29.3042427,42.03216 -31.53125,71.46875 8.128962,34.77191 30.085975,65.53362 61.125,88.4375 L 68.5,420.5 c -11,-30 -2,-47 13,-59 15.833333,24 25.16667,34 50,42 -12.16667,-30 -10,-47 0,-66 13.33333,21.66667 21.66667,31.33333 46,41 -14.66667,-41 -0.34463,-62 25,-62 24.85996,0 37.66667,21 25,62 25,-13.66667 32,-21.33333 45,-41 11,24 11,39 0,66 28,-8 36,-19 51,-42 15,12 25,32 14,59 l 0.5625,0.375 C 368.94789,398.01388 390.86114,367.43737 399,332.90625 397.78828,303.31799 382.45208,276.5 367.5,261.5 c 4.2022,18.43503 -8.40321,41 -40,38 2.27327,-24.09188 -9.5956,-49 -25,-53 4.15195,14.43503 -11.00982,39 -25,39 0.85906,-12.02082 -16.66667,-50 -25,-50 -1.26226,11.31371 -7.66667,45 -25,45 -0.14004,-32.52691 -14.54535,-44.92893 -25,-52 z"
+   id="rautensparren"
+   style="fill:#da121a;fill-opacity:1;stroke:#000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;display:inline;" />
+ <path
+   d="m 2.5,3.5 0,180 400,0 0,-180 z"
+   id="schildhaupt"
+   style="fill:#da121a;fill-opacity:1;stroke:#000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;display:inline;" />
+ <path
+   d="m 172.5,3.5 0,60 -170,0 0,60 170,0 0,60 60,0 0,-60 170,0 0,-60 -170,0 0,-60 -60,0 z"
+   id="kreuz"
+   style="fill:#fcdd09;fill-opacity:1;stroke:#000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;display:inline;" />
+ <path
+   d="m 3.5,2.5 -1,300 c 0,89.2 89.5,161 200,161 110.5,0 200,-71.8 200,-161 l 0,-300 -399,0 z"
+   id="schildrahmen"
+   style="fill:none;stroke:#000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;display:inline;" />
+</svg>

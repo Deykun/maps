@@ -9,35 +9,431 @@ export const urls: {
 };
 
 
-urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_Brandenburgs'] = [
-    
-]; 
-
-urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Brandenburg'] = [
-  
-]; 
-
 urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Barnim'] = [
-  
-]; 
-
-urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_der_Stadt_Brandenburg_an_der_Havel'] = [
-  
+  {
+      locationName: 'Barnim',
+      locationUrl: 'https://de.wikipedia.org/wiki/Landkreis_Barnim',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Wappen_Landkreis_Barnim.svg/120px-Wappen_Landkreis_Barnim.svg.png',
+      description: 'Genehmigt am 17. Oktober 1995 durch den Innenminister des Landes Brandenburg. „Geviert von Silber (Feld 1 und 4) und Rot (Feld 2 und 3); oben ein wachsender, golden bewehrter Adler in verwechselten Farben mit goldenen Kleestengeln auf den Flügeln.“[1][2] Barnim ',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Barnim',
+      sourceTitle: 'Liste der Wappen im Landkreis Barnim | Landkreis',
+    }, {
+      locationName: 'Ahrensfelde',
+      locationUrl: 'https://de.wikipedia.org/wiki/Ahrensfelde',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Wappen_Ahrensfelde.png/100px-Wappen_Ahrensfelde.png',
+      description: 'Genehmigt am 15. Februar 2007 durch den Innenminister des Landes Brandenburg. Entwurf: Frank Diemar. „In Grün eine gestürzte, eingebogene und silbern-rot geschachte Spitze, überdeckt von fünf wachsenden, zur Garbe gebundenen goldenen Kornähren.“[7] Gemeinde Ahrensfelde ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Barnim',
+      sourceTitle: 'Liste der Wappen im Landkreis Barnim | Städte und Gemeinden',
+    }, {
+      locationName: 'Bernau bei Berlin',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bernau_bei_Berlin',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Wappen_Bernau_bei_Berlin.png/100px-Wappen_Bernau_bei_Berlin.png',
+      description: 'Genehmigt am 30. Juni 1992 durch den Innenminister des Landes Brandenburg. „In Silber auf grünem Rasen ein sich teilender grüner Eichbaum mit goldenen Früchten, darüber schwebend der brandenburgische Adler mit Bewehrung und Kleestengeln in Gold, vor dem Stamm ein schreitender schwarzer Bär mit roter Zunge und Bewehrung.“[8] Stadt Bernau bei Berlin ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Barnim',
+      sourceTitle: 'Liste der Wappen im Landkreis Barnim | Städte und Gemeinden',
+    }, {
+      locationName: 'Biesenthal',
+      locationUrl: 'https://de.wikipedia.org/wiki/Biesenthal',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/DEU_Biesenthal_COA.svg/100px-DEU_Biesenthal_COA.svg.png',
+      description: 'Genehmigt am 21. Juli 1994 durch den Innenminister des Landes Brandenburg. „In Silber eine bezinnte und gequaderte rote Burg zwischen deren zwei bezinnten, mit spitzen, geschindelten Dächern und je vier schwarzen Fenstern versehenen Türmen ein goldbewehrter roter Adler schwebt. Im offenen goldenen Torbogen erscheint ein aufgezogenes schwarzes Fallgatter.“[9] Stadt Biesenthal ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Barnim',
+      sourceTitle: 'Liste der Wappen im Landkreis Barnim | Städte und Gemeinden',
+    }, {
+      locationName: 'Britz',
+      locationUrl: 'https://de.wikipedia.org/wiki/Britz_(bei_Eberswalde)',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/DEU_Britz_COA.svg/100px-DEU_Britz_COA.svg.png',
+      description: 'Genehmigt am 24. August 2005 durch den Innenminister des Landes Brandenburg. „In Grün auf goldenem Boden zwei verschränkte goldene Birkenschösslinge, unten überdeckt von zwei schwebenden, schräggekreuzten silbernen Sensen.“[10] Gemeinde Britz ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Barnim',
+      sourceTitle: 'Liste der Wappen im Landkreis Barnim | Städte und Gemeinden',
+    }, {
+      locationName: 'Eberswalde',
+      locationUrl: 'https://de.wikipedia.org/wiki/Eberswalde',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Coat_of_Arms_Eberswalde.svg/100px-Coat_of_Arms_Eberswalde.svg.png',
+      description: 'Das aktuell gültige Wappen wurde auf Grund des Paragrafen 11 der Städteordnung für die östlichen Provinzen vom 30. Mai 1853 unter Zustimmung der Stadtverordnetenversammlung per Ortsstatut vom Magistrat der Stadt Eberswalde am 24. September 1928 festgelegt. Das preußische Staatsministerium hat die Genehmigung zur Führung des Wappens am 13. August 1928 erteilt. Bestätigt am 24. August 1993 durch den Innenminister des Landes Brandenburg. „In Silber eine belaubte bewurzelte grüne Eiche mit goldenen Früchten, in deren Krone ein goldbewehrter, mit goldenen Kleestengeln belegter roter Adler schwebt. Dem Stamm zugewandt steht jederseits ein schwarzer Wildschweineber mit goldenen Hauern und Rückenborsten.“[11] Kreisstadt Eberswalde ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Barnim',
+      sourceTitle: 'Liste der Wappen im Landkreis Barnim | Städte und Gemeinden',
+    }, {
+      locationName: 'Friedrichswalde',
+      locationUrl: 'https://de.wikipedia.org/wiki/Friedrichswalde',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Wappen_Friedrichswalde.png/100px-Wappen_Friedrichswalde.png',
+      description: 'Genehmigt am 12. November 1997 durch den Innenminister des Landes Brandenburg. „Von Gold und Schwarz geteilt, oben ein durchgehender schwarzer Flechtzaun, unten ein linksgewendeter goldener Holzschuh.“[12] Gemeinde Friedrichswalde ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Barnim',
+      sourceTitle: 'Liste der Wappen im Landkreis Barnim | Städte und Gemeinden',
+    }, {
+      locationName: 'Joachimsthal',
+      locationUrl: 'https://de.wikipedia.org/wiki/Joachimsthal',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Joachimsthal_wappen.PNG/100px-Joachimsthal_wappen.PNG',
+      description: 'Genehmigt ????. „In Silber ein sitzender, gekrönter, roter Adler, randumlaufend ist ein Laubkranz dargestellt.“[13] Stadt Joachimsthal ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Barnim',
+      sourceTitle: 'Liste der Wappen im Landkreis Barnim | Städte und Gemeinden',
+    }, {
+      locationName: 'Marienwerder',
+      locationUrl: 'https://de.wikipedia.org/wiki/Marienwerder_(Barnim)',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Wappen_Marienwerder.png/100px-Wappen_Marienwerder.png',
+      description: 'Genehmigt am 12. November 1997 durch den Innenminister des Landes Brandenburg. „In Silber auf blauem Wellenschildfuß ein linksgewendetes rotes Segelboot mit silbern-befensterter Kajüte, blauem Segel, belegt mit einer silbernen Garnspule, und rotem Wimpel an der schwarzen Mastspitze.“[14] Gemeinde Marienwerder ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Barnim',
+      sourceTitle: 'Liste der Wappen im Landkreis Barnim | Städte und Gemeinden',
+    }, {
+      locationName: 'Oderberg',
+      locationUrl: 'https://de.wikipedia.org/wiki/Oderberg',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Wappen_Oderberg.png/100px-Wappen_Oderberg.png',
+      description: 'Genehmigt am 16. März 1993 durch den Innenminister des Landes Brandenburg. „In Silber über grünem Schildfuß eine bezinnte, gequaderte, dreitürmige rote Burg mit schwarzem Tor und geöffneten goldenen Torflügeln. Über den mit je einem schwarzen Fenster versehenen Türmen schwebt ein roter goldbewehrter Adler.“[15] Stadt Oderberg ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Barnim',
+      sourceTitle: 'Liste der Wappen im Landkreis Barnim | Städte und Gemeinden',
+    }, {
+      locationName: 'Panketal',
+      locationUrl: 'https://de.wikipedia.org/wiki/Panketal',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Wappen_Panketal.svg/100px-Wappen_Panketal.svg.png',
+      description: 'Genehmigt am 12. April 2005 durch den Innenminister des Landes Brandenburg. Entwurf: Frank Diemar. „In Grün eine durchgehende goldene Steinbrücke unter deren Bogen ein linksgewendeter, schwarz-bewehrter silberner Schwan auf goldenen Wellen schwimmt; drauf eine silberne Eiche mit goldenen Eicheln, rechts vom Stamm begleitet von einem goldenen Wagen- und links von einem goldenen Eisenbahnrad.“[16] Gemeinde Panketal ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Barnim',
+      sourceTitle: 'Liste der Wappen im Landkreis Barnim | Städte und Gemeinden',
+    }, {
+      locationName: 'Parsteinsee',
+      locationUrl: 'https://de.wikipedia.org/wiki/Parsteinsee',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Wappen_Parsteinsee.png/100px-Wappen_Parsteinsee.png',
+      description: 'Genehmigt am 22. Juni 2004 durch den Innenminister des Landes Brandenburg. „Schräggeteilt von Gold über Blau, oben zwei schwarze begrannte Ähren, davon die linke außen mit einem geknickten Halm, unten zwei versetzt übereinander linkshin schwimmende silberne Fische.“[17] Gemeinde Parsteinsee ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Barnim',
+      sourceTitle: 'Liste der Wappen im Landkreis Barnim | Städte und Gemeinden',
+    }, {
+      locationName: 'Schorfheide',
+      locationUrl: 'https://de.wikipedia.org/wiki/Schorfheide_(Gemeinde)',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Wappen_Schorfheide.png/100px-Wappen_Schorfheide.png',
+      description: 'Genehmigt am 21. August 2007 durch den Innenminister des Landes Brandenburg. Entwurf: Frank Diemar. „Von Grün und Gold schräglinksgeteilt über einem verkleinerten blauen Wellenschildfuß, belegt an der Teilungslinie vorne von einer halben goldenen Baumscheibe und hinten von einem halben schwarzen Mühlrad.“[18] Gemeinde Schorfheide ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Barnim',
+      sourceTitle: 'Liste der Wappen im Landkreis Barnim | Städte und Gemeinden',
+    }, {
+      locationName: 'Wandlitz',
+      locationUrl: 'https://de.wikipedia.org/wiki/Wandlitz',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/DEU_VG_Wandlitz_COA.svg/100px-DEU_VG_Wandlitz_COA.svg.png',
+      description: 'Genehmigt am 13. Dezember 2007 durch den Innenminister des Landes Brandenburg. „Von Blau und Gold zinnenförmig durch eine linke Flanke gespalten, vorne ein goldenes Seeblatt.“[19] Gemeinde Wandlitz ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Barnim',
+      sourceTitle: 'Liste der Wappen im Landkreis Barnim | Städte und Gemeinden',
+    }, {
+      locationName: 'Werneuchen',
+      locationUrl: 'https://de.wikipedia.org/wiki/Werneuchen',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Wappen_der_Stadt_Werneuchen.svg/100px-Wappen_der_Stadt_Werneuchen.svg.png',
+      description: 'Genehmigt am 10. August 2001 durch den Innenminister des Landes Brandenburg. Entwurf: Frank Diemar. „Unter grünem Schildhaupt, belegt mit einem silbernen Doppelsturzsparren, in Silber auf grünem Boden eine grüne Linde.“[20] Stadt Werneuchen ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Barnim',
+      sourceTitle: 'Liste der Wappen im Landkreis Barnim | Städte und Gemeinden',
+    }
 ]; 
 
 urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald'] = [
-  
+  {
+      locationName: 'Dahme-Spreewald',
+      locationUrl: 'https://de.wikipedia.org/wiki/Landkreis_Dahme-Spreewald',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Wappen_Landkreis_Dahme-Spreewald.svg/120px-Wappen_Landkreis_Dahme-Spreewald.svg.png',
+      description: 'Genehmigt am 16. November 1995 durch den Innenminister des Landes Brandenburg. „In Silber eine eingebogene, mit goldener Königskrone belegte, blaue Spitze, begleitet vorn von einem widersehenden golden bewehrten, abgeschnittenen roten Stierrumpf, hinten von einem golden bewehrten, abgeschnittenen roten Adlerrumpf.“[1][2] Dahme-Spreewald (Dubja-Błota) ',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Landkreis',
+    }, {
+      locationName: 'Bestensee',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bestensee',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Wappen_Bestensee.png/120px-Wappen_Bestensee.png',
+      description: 'Genehmigt am 1. September 1995 durch den Innenminister des Landes Brandenburg: „Von Gold und Blau durch Schräglinkswellenschnitt geteilt; oben ein grünes Kastanienblatt, unten ein schräglinks gestürzter silberner Fisch.“[24] Gemeinde Bestensee ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Städte und Gemeinden',
+    }, {
+      locationName: 'Eichwalde',
+      locationUrl: 'https://de.wikipedia.org/wiki/Eichwalde',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Wappen_Eichwalde.svg/120px-Wappen_Eichwalde.svg.png',
+      description: 'Genehmigt am 5. Mai 1995 durch den Innenminister des Landes Brandenburg: „In Gold auf grünem Boden eine grüne Eiche mit goldenen Früchten.“[25] Gemeinde Eichwalde ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Städte und Gemeinden',
+    }, {
+      locationName: 'Golßen',
+      locationUrl: 'https://de.wikipedia.org/wiki/Gol%C3%9Fen',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Wappen_Golssen.png/120px-Wappen_Golssen.png',
+      description: 'Genehmigt am 12. Juni 1992 durch den Innenminister des Landes Brandenburg: „Von Rot über Silber geteilt; oben eine durchgängige silberne Mauer mit drei Türmen bedeckt, die mit schwarzen Fenstern und blauen Spitzdächern versehen sind, sowie einem offenen roten Tor, unten ein auf grünem Boden linkshin schreitender schwarzer Eber.“[26] Stadt Golßen (Gólišyn) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Städte und Gemeinden',
+    }, {
+      locationName: 'Halbe',
+      locationUrl: 'https://de.wikipedia.org/wiki/Halbe',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Wappen_Halbe.png/120px-Wappen_Halbe.png',
+      description: 'Genehmigt am 14. und 26. August 2003 durch den Innenminister des Landes Brandenburg: „In Gold ein schräglinker blauer Wellenbalken, begleitet oben von einem schwarz-bordierten silbernen Kreuz und unten von fünf grünen Lindenblättern (3:2).“[27] Gemeinde Halbe (Łobje) ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Städte und Gemeinden',
+    }, {
+      locationName: 'Heideblick',
+      locationUrl: 'https://de.wikipedia.org/wiki/Heideblick',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Wappen_Heideblick.png/120px-Wappen_Heideblick.png',
+      description: 'Genehmigt am 2. Dezember 2003 durch den Innenminister des Landes Brandenburg (Fortführung des Wappens des aufgelösten Amtes Heideblick): „Innerhalb eines mit 11 grünen Lindenblättern belegten goldenen Schildbordes in Grün drei zur Garbe gebundene goldene Kornähren.“[7] Gemeinde Heideblick ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Städte und Gemeinden',
+    }, {
+      locationName: 'Heidesee',
+      locationUrl: 'https://de.wikipedia.org/wiki/Heidesee',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Wappen_Graebendorf_%28Heidesee%29.png/120px-Wappen_Graebendorf_%28Heidesee%29.png',
+      description: 'Genehmigt am 3. Juni 2004 durch den Innenminister des Landes Brandenburg (Fortführung des Wappens der ehemals selbständigen, nun einen Ortsteil bildenden Gemeinde Gräbendorf): „Schräggeteilt von Gold und Blau, oben ein geädertes, grünes Eichenblatt mit Frucht, unten ein stehender silberner Reiher.“[28] Gemeinde Heidesee (Wysoki jazor) ',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Städte und Gemeinden',
+    }, {
+      locationName: 'Königs Wusterhausen',
+      locationUrl: 'https://de.wikipedia.org/wiki/K%C3%B6nigs_Wusterhausen',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DEU_Koenigs_Wusterhausen_COA.svg/120px-DEU_Koenigs_Wusterhausen_COA.svg.png',
+      description: 'Genehmigt am 3. Juli 1992 durch den Innenminister des Landes Brandenburg: „In Silber stehend auf der nördlichen Erdhalbkugel mit grünem Wasser, goldenem Festland und schwarzem Grundnetz drei rote Sendetürme; ein hoher starker Stahlgittermast zwischen zwei kleineren seitlich verspannten.“[29] Stadt Königs Wusterhausen (Parsk) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Städte und Gemeinden',
+    }, {
+      locationName: 'Lieberose',
+      locationUrl: 'https://de.wikipedia.org/wiki/Lieberose',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Wappen_Lieberose.png/120px-Wappen_Lieberose.png',
+      description: 'Genehmigt am 15. Februar 1993 durch den Innenminister des Landes Brandenburg: „In Blau über einer roten Rose im Schildfuß ein gestürztes silbernes Sensenblatt begleitet von zwei schwebenden silbernen Zinnentürmen ohne Tore.“[30] Stadt Lieberose (Luboraz) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Städte und Gemeinden',
+    }, {
+      locationName: 'Lübben (Spreewald)',
+      locationUrl: 'https://de.wikipedia.org/wiki/L%C3%BCbben_(Spreewald)',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Wappen_L%C3%BCbben.png/120px-Wappen_L%C3%BCbben.png',
+      description: 'Genehmigt am 14. März 1995 durch den Innenminister des Landes Brandenburg: „In Gold ein schwarzer Adler mit roter Zunge und roten Fängen.“[31] Kreisstadt Lübben (Spreewald) (Lubin (Błota)) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Städte und Gemeinden',
+    }, {
+      locationName: 'Luckau',
+      locationUrl: 'https://de.wikipedia.org/wiki/Luckau',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Wappen_Luckau.svg/120px-Wappen_Luckau.svg.png',
+      description: 'Das Wappen mit dem Stier geht auf ein erstmals 1399 belegtes Stadtsiegel zurück,[32] Wappen zuletzt genehmigt am 4. Januar 2005 durch den Innenminister des Landes Brandenburg: „In Silber auf grünem Rasen ein schreitender, widersehender gold-bewehrter roter Stier mit über den Rücken geschlagenem Schweif.“[33] Stadt Luckau (Łukow) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Städte und Gemeinden',
+    }, {
+      locationName: 'Märkisch Buchholz',
+      locationUrl: 'https://de.wikipedia.org/wiki/M%C3%A4rkisch_Buchholz',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Wappen_Maerkisch_Buchholz.png/120px-Wappen_Maerkisch_Buchholz.png',
+      description: 'Genehmigt am 20. August 1999 durch den Innenminister des Landes Brandenburg: „In Silber neben einer rechten blauen Flanke, belegt mit einem aufgerichteten, linksgewendeten silbernen Hecht und überhöht von einer aufgerichteten fünfendigen goldenen Hirschstange, eine bewurzelte grüne Buche.“[34] Stadt Märkisch Buchholz (Serbski Bukojc) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Städte und Gemeinden',
+    }, {
+      locationName: 'Märkische Heide',
+      locationUrl: 'https://de.wikipedia.org/wiki/M%C3%A4rkische_Heide',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Wappen_Maerkische_Heide.png/120px-Wappen_Maerkische_Heide.png',
+      description: 'Genehmigt am 26. Oktober 2003 durch den Innenminister des Landes Brandenburg: „Eingefasst durch einen mit 17 goldenen Scheiben belegten grünen Bord in Gold drei schwarze Kienäpfel zum gestürzten Dreipass gestellt und im Schnittpunkt überdeckt von drei zum Dreipass gestellt grünen Eicheln.“[35][36] Gemeinde Märkische Heide (Markojska Góla) ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Städte und Gemeinden',
+    }, {
+      locationName: 'Mittenwalde',
+      locationUrl: 'https://de.wikipedia.org/wiki/Mittenwalde',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Wappen_Mittenwalde.png/120px-Wappen_Mittenwalde.png',
+      description: 'Genehmigt am 13. September 1994 durch den Innenminister des Landes Brandenburg: „In Silber ein bewurzelter grüner Laubbaum, dessen Stamm von zwei schwarzen aufgestellten Schlüsseln mit nach außen gekehrten Bärten beseitet ist. In den Zweigen schwebt ein roter Adler mit goldener Bewehrung.“[37] Stadt Mittenwalde (Chudowina) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Städte und Gemeinden',
+    }, {
+      locationName: 'Münchehofe',
+      locationUrl: 'https://de.wikipedia.org/wiki/M%C3%BCnchehofe',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Wappen_Muenchehofe.png/120px-Wappen_Muenchehofe.png',
+      description: 'Genehmigt am 19. Februar 1999 durch den Innenminister des Landes Brandenburg: „In Grün ein spitzgiebeliger, oben mit einem Kreuz besteckter silberner Glockenturm, darin über einer Dreipassrosette eine rundbogige Öffnung mit einer goldenen Glocke am schwarzen Glockenstuhl; oben rechts beseitet von einem goldenen Birkenblatt und links von einem goldenen Mühlrad.“[38] Gemeinde Münchehofe (Michow) ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Städte und Gemeinden',
+    }, {
+      locationName: 'Schlepzig',
+      locationUrl: 'https://de.wikipedia.org/wiki/Schlepzig',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Wappen_Schlepzig.png/120px-Wappen_Schlepzig.png',
+      description: 'Genehmigt am 12. August 1999 durch den Innenminister des Landes Brandenburg: „Unter goldenem Schuppenschildhaupt, belegt vorne mit einem schrägrechtsgeneigten grünen Eichenblatt und hinten mit einem schräglinksgeneigten grünen Buchenblatt, deren Stiele sich in der Mitte überkreuzen, in Blau über einem eingebogenen silbernen Schildfuß, überzogen von einem rautenförmig geknüpften schwarzen Netz, ein silberner Zander mit geöffnetem Maul.“[39] Gemeinde Schlepzig (Słopišća) ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Städte und Gemeinden',
+    }, {
+      locationName: 'Schönefeld',
+      locationUrl: 'https://de.wikipedia.org/wiki/Sch%C3%B6nefeld',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wappen_Schoenefeld.png/120px-Wappen_Schoenefeld.png',
+      description: 'Genehmigt am 28. April 2005 durch den Innenminister des Landes Brandenburg: „Von Rot und Silber zwölfmal geständert und belegt mit einer Windrose (eine silberne Scheibe belegt mit einem achtstrahligen gold-schwarz facettierten Stern, oben besteckt mit einer schwarz-gold gespaltenen Lilie).“[40] Gemeinde Schönefeld ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Städte und Gemeinden',
+    }, {
+      locationName: 'Schulzendorf',
+      locationUrl: 'https://de.wikipedia.org/wiki/Schulzendorf',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Wappen_Schulzendorf.png/120px-Wappen_Schulzendorf.png',
+      description: 'Genehmigt am 12. Oktober 1995 durch den Innenminister des Landes Brandenburg: „Unter grünem Schildhaupt, belegt mit einem silbernen Schulzenstab, ein grüner Malvenzweig mit vier (3:1) roten Blüten.“[41] Gemeinde Schulzendorf ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Städte und Gemeinden',
+    }, {
+      locationName: 'Straupitz (Spreewald)',
+      locationUrl: 'https://de.wikipedia.org/wiki/Straupitz_(Spreewald)',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Wappen_Straupitz.png/120px-Wappen_Straupitz.png',
+      description: 'Genehmigt am 8. Juni 2016 durch den Innenminister des Landes Brandenburg: „In Gold auf einem grünen Schildfuß ein grüner Laubbaum mit voller Krone, auf jeder Seite begleitet von drei grünen Getreidehalmen.“[42] Gemeinde Straupitz (Spreewald) (Tšupc (Błota)) ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Städte und Gemeinden',
+    }, {
+      locationName: 'Teupitz',
+      locationUrl: 'https://de.wikipedia.org/wiki/Teupitz',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Wappen_Teupitz.png/120px-Wappen_Teupitz.png',
+      description: 'Genehmigt am 23. November 2009 durch den Innenminister des Landes Brandenburg: „In Silber über grünem Wellenschildfuß ein blauer Karpfen, darüber schwebend ein schwarzes Tatzenhochkreuz, begleitet von zwei schräg nach außen gewendeten, grün-gestielten natürlichen Wasserlilien mit goldenen Blüten.“[43] Stadt Teupitz (Tupc) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Städte und Gemeinden',
+    }, {
+      locationName: 'Unterspreewald',
+      locationUrl: 'https://de.wikipedia.org/wiki/Unterspreewald_(Gemeinde)',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Wappen_Amt_Unterspreewald.png/120px-Wappen_Amt_Unterspreewald.png',
+      description: 'Genehmigt am 13. März 2015 durch den Innenminister des Landes Brandenburg: „Unter grünem Schildhaupt, darin drei silberne Kienäpfel balkenweise, in Gold eine schwarze Libelle mit blauen Flügeln, nach der Figur begleitet von zwei schwarzen Rohrkolben mit abgeknickten Blättern.“[10] Die Gemeinde führt das dem damaligen Amt Unterspreewald 1996 genehmigte Wappen fort. Gemeinde Unterspreewald (Dolne Błota) ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Städte und Gemeinden',
+    }, {
+      locationName: 'Wildau',
+      locationUrl: 'https://de.wikipedia.org/wiki/Wildau',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Wappen_Wildau.png/120px-Wappen_Wildau.png',
+      description: 'Genehmigt am 19. Mai 1994 durch den Innenminister des Landes Brandenburg: „In Blau ein silbernes Lokomotivrad durchflochten von einem aufgerichteten goldenen Getreidehalm mit zwei Ähren und drei Blättern.“[44] Stadt Wildau ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Städte und Gemeinden',
+    }, {
+      locationName: 'Zeuthen',
+      locationUrl: 'https://de.wikipedia.org/wiki/Zeuthen',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/DEU_Zeuthen_COA.svg/120px-DEU_Zeuthen_COA.svg.png',
+      description: 'Genehmigt am 21. Juli 1992 durch den Innenminister des Landes Brandenburg: „In Silber ein rot-silbern geschachter Schildfuß, oben überdeckt von einem mit einer silbernen Leiste belegten blauen Wellenbalken, daraus wachsend ein grüner Laubbaum mit schwarzem Stamm.“[45] [46] Gemeinde Zeuthen ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Städte und Gemeinden',
+    }, {
+      locationName: 'Heidesee',
+      locationUrl: 'https://de.wikipedia.org/wiki/Heidesee',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Wappen_Graebendorf_%28Heidesee%29.png/120px-Wappen_Graebendorf_%28Heidesee%29.png',
+      description: 'Genehmigt ???? durch den Innenminister des Landes Brandenburg: „Schräggeteilt von Gold und Blau, oben ein geädertes, grünes Eichenblatt mit Frucht, unten ein stehender silberner Reiher.“[28] Das Wappen wird in Rechtsnachfolge von der Gemeinde Heidesee fortgeführt. Genehmigt am 3. Juni 2004 durch den Innenminister des Landes Brandenburg.[28] Gemeinde Heidesee Ortsteil Gräbendorf ',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Ehemalige Städte und Gemeinden',
+    }, {
+      locationName: 'Schönefeld',
+      locationUrl: 'https://de.wikipedia.org/wiki/Sch%C3%B6nefeld',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Wappen_Grossziethen.png/120px-Wappen_Grossziethen.png',
+      description: 'Genehmigt ???? durch den Innenminister des Landes Brandenburg: „In Grün, gespalten durch eine eingebogene goldene Spitze, vorne und hinten je eine zur Spaltungslinie geneigte begrannte goldene Ähre, unten eine grüne Kopfweide.“[47] Am 26. Oktober 2003 vereinigte sich die Gemeinde Großziethen mit den Gemeinden Kiekebusch, Selchow, Schönefeld, Waltersdorf und Waßmannsdorf zur neuen Gemeinde Schönefeld.[8] Gemeinde Schönefeld Ortsteil Großziethen ',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Ehemalige Städte und Gemeinden',
+    }, {
+      locationName: 'Schönefeld',
+      locationUrl: 'https://de.wikipedia.org/wiki/Sch%C3%B6nefeld',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Wappen_Kiekebusch.svg/120px-Wappen_Kiekebusch.svg.png',
+      description: 'Genehmigt ???? durch den Innenminister des Landes Brandenburg: „In Blau über grünem Schildfuß eine silberne Kirche in Seitenansicht. Im linken Obereck zwei gegensätzige, ineinander gelegte Hufeisen in S-Form.“[48] Am 26. Oktober 2003 vereinigte sich die Gemeinde Kiekebusch mit den Gemeinden Großziethen, Selchow, Schönefeld, Waltersdorf und Waßmannsdorf zur neuen Gemeinde Schönefeld.[8] Gemeinde Schönefeld Ortsteil Kiekebusch ',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Ehemalige Städte und Gemeinden',
+    }, {
+      locationName: 'Schönefeld',
+      locationUrl: 'https://de.wikipedia.org/wiki/Sch%C3%B6nefeld',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Wappen_Sch%C3%B6nefeld_%28Sch%C3%B6nefeld%29.svg/120px-Wappen_Sch%C3%B6nefeld_%28Sch%C3%B6nefeld%29.svg.png',
+      description: 'Genehmigt ???? durch den Innenminister des Landes Brandenburg: „Von Rot und Silber geviert, überdeckt von zwei übereinander liegenden gold-schwarzen facettierten Sternen mit je vier Strahlen, wovon die unteren, schräggekreuzten verkürzt sind.“[49] Am 26. Oktober 2003 vereinigte sich die bisherige Gemeinde Schönefeld mit den Gemeinden Großziethen, Kiekebusch, Selchow, Waltersdorf und Waßmannsdorf zur neuen Gemeinde Schönefeld.[8] Gemeinde Schönefeld Ortsteil Schönefeld ',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Ehemalige Städte und Gemeinden',
+    }, {
+      locationName: 'Schönefeld',
+      locationUrl: 'https://de.wikipedia.org/wiki/Sch%C3%B6nefeld',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/18/Wappen_von_Selchow.gif',
+      description: 'Genehmigt ???? durch den Innenminister des Landes Brandenburg: „In Blau über grünem Schildfuß eine silberne Kirche in Seitenansicht. Im linken Obereck zwei gegensätzige, ineinander gelegte Hufeisen in S-Form.“[50] Am 26. Oktober 2003 vereinigte sich die Gemeinde Selchow mit den Gemeinden Großziethen, Kiekebusch, Schönefeld, Waltersdorf und Waßmannsdorf zur neuen Gemeinde Schönefeld.[8] Gemeinde Schönefeld Ortsteil Selchow ',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Ehemalige Städte und Gemeinden',
+    }, {
+      locationName: 'Schönefeld',
+      locationUrl: 'https://de.wikipedia.org/wiki/Sch%C3%B6nefeld',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Wappen_Waltersdorf.png/120px-Wappen_Waltersdorf.png',
+      description: 'Genehmigt ???? durch den Innenminister des Landes Brandenburg: „In Gold eine heraldisch stilisierte schwarze Kirche oben begleitet von fünf blauen Kornblumenblüten (3:2).“[51] Am 26. Oktober 2003 vereinigte sich die Gemeinde Waltersdorf mit den Gemeinden Großziethen, Kiekebusch, Selchow, Schönefeld und Waßmannsdorf zur neuen Gemeinde Schönefeld.[8] Gemeinde Schönefeld Ortsteil Waltersdorf ',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Ehemalige Städte und Gemeinden',
+    }, {
+      locationName: 'Schönefeld',
+      locationUrl: 'https://de.wikipedia.org/wiki/Sch%C3%B6nefeld',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Wappen_Wassmannsdorf.png/120px-Wappen_Wassmannsdorf.png',
+      description: 'Genehmigt ???? durch den Innenminister des Landes Brandenburg: „In Rot auf goldenem Boden eine silberne Kirche in Seitenansicht mit linksstehendem Turm und einem auf dem Dach des Langhauses stehenden rot-bewehrten Storch in natürlichen Farben.“[52] Am 26. Oktober 2003 vereinigte sich die Gemeinde Waßmannsdorf mit den Gemeinden Großziethen, Kiekebusch, Selchow, Schönefeld und Waltersdorf zur neuen Gemeinde Schönefeld.[8] Gemeinde Schönefeld Ortsteil Waßmannsdorf ',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Ehemalige Städte und Gemeinden',
+    }, {
+      locationName: 'Königs Wusterhausen',
+      locationUrl: 'https://de.wikipedia.org/wiki/K%C3%B6nigs_Wusterhausen',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Wappen_Zeesen.png/120px-Wappen_Zeesen.png',
+      description: 'Genehmigt ???? durch den Innenminister des Landes Brandenburg: „Das Wappen ist geteilt und oben in Blau und Gold gespalten. Vorn oben ein goldener Krug; hinten eine grüne Tanne auf einem grünen Berg. Unten in Silber ein blauer Fisch mit Goldauge über einem im Schildfuß gespannten schwarzen Netz.“ Am 26. Oktober 2003 wurde die Gemeinde Zeesen in die Stadt Königs Wusterhausen eingemeindet.[8] Stadt Königs Wusterhausen Ortsteil Zeesen',
+      type: ['formerCity','formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Dahme-Spreewald',
+      sourceTitle: 'Liste der Wappen im Landkreis Dahme-Spreewald | Ehemalige Städte und Gemeinden',
+    }
 ]; 
 
 urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster'] = [
   {
+      locationName: 'Elbe-Elster',
+      locationUrl: 'https://de.wikipedia.org/wiki/Landkreis_Elbe-Elster',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Wappen_des_Landkreises_Elbe-Elster.svg/120px-Wappen_des_Landkreises_Elbe-Elster.svg.png',
+      description: 'Genehmigt am 24. April 1995 durch den Innenminister des Landes Brandenburg. „Im gevierteilten Schild oben vorn neunmal von Gold und Schwarz geteilt; hinten in Silber ein goldbewehrter rückschauender roter Stier; unten vorn in Gold ein rotbewehrter und rotgezungter, aufgerichteter schwarzer Löwe, hinten neunmal von Rot und Silber geteilt.“[1][2] Elbe-Elster ',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Landkreis Elbe-Elster und Vorgängerkreise',
+    }, {
+      locationName: 'Liebenwerda',
+      locationUrl: 'https://de.wikipedia.org/wiki/Landkreis_Liebenwerda',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Wappen_Landkreis_Liebenwerda.png/120px-Wappen_Landkreis_Liebenwerda.png',
+      description: 'Genehmigt ???? durch den Oberpräsidenten der Provinz Sachsen: In Silber ein schwarzer Wellenbalken, dem ein goldener Wappenschild mit einem aufgerichteten rot bewehrten und gezungten schwarzen Löwen aufgelegt ist, begleitet oben von vier und unten von drei roten gezinnten Türmen. Liebenwerda ',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Landkreis Elbe-Elster und Vorgängerkreise',
+    }, {
+      locationName: 'Herzberg',
+      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Herzberg',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Wappen_Kreis_Herzberg.svg/120px-Wappen_Kreis_Herzberg.svg.png',
+      description: 'Genehmigt ???? durch den Oberpräsidenten der Provinz Sachsen für den damaligen Landkreis Schweinitz, fortgeführt durch den Kreis Herzberg: Geteilt: oben in Schwarz zwei goldene Balken, belegt mit einem schrägrechten grünem Rautenkranz, unten in Silber drei rote Seeblätter. Der 1950 neugebildete Kreis Herzberg übernahm zunächst das Wappen des Landkreises Schweinitz, bevor er ein neues Wappen annahm. Herzberg 1950–1990 ',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Landkreis Elbe-Elster und Vorgängerkreise',
+    }, {
+      locationName: 'Herzberg',
+      locationUrl: 'https://de.wikipedia.org/wiki/Kreis_Herzberg',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Wappen_Landkreis_Herzberg.jpg/120px-Wappen_Landkreis_Herzberg.jpg',
+      description: 'Genehmigt ????: In Silber eine nach rechts blickender, mit goldenen Kleestengeln auf den Flügeln gezierten und goldbewehrter roter Adler, auf den Flügeln belegt mit zwei schräg gestellten Schilden: vorn in Schwarz vier goldene Balken, belegt mit einem schrägrechten grünen Rautenkranz, hinten in Silber drei rote Seeblätter. Der 1950 neugebildete Kreis Herzberg übernahm zunächst das Wappen des Landkreises Schweinitz, bevor er ein neues Wappen annahm. Herzberg 1991–1993',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Landkreis Elbe-Elster und Vorgängerkreise',
+    }, {
+      locationName: 'Schweinitz',
+      locationUrl: 'https://de.wikipedia.org/wiki/Landkreis_Schweinitz',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Wappen_Landkreis_Schweinitz.svg/120px-Wappen_Landkreis_Schweinitz.svg.png',
+      description: 'Genehmigt ???? durch den Oberpräsidenten der Provinz Sachsen für den damaligen Landkreis Schweinitz, fortgeführt durch den Kreis Herzberg: Geteilt: oben in Schwarz zwei goldene Balken, belegt mit einem schrägrechten grünem Rautenkranz, unten in Silber drei rote Seeblätter. Der 1950 neugebildete Kreis Herzberg übernahm zunächst das Wappen des Landkreises Schweinitz, bevor er ein neues Wappen annahm. Schweinitz 1816–1950',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Landkreis Elbe-Elster und Vorgängerkreise',
+    }, {
       locationName: 'Dobrilugk um 1900',
       locationUrl: 'https://de.wikipedia.org/wiki/Doberlug-Kirchhain',
       thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Wappen_Dobrilugk_1900_%28Alter_Fritz%29.jpg/120px-Wappen_Dobrilugk_1900_%28Alter_Fritz%29.jpg',
       description: 'Dobrilugk um 1900',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
     }, {
       locationName: '',
       locationUrl: '',
@@ -45,7 +441,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_E
       description: 'Siegelmarke der Stadt Elsterwerda mit dem ehemaligen Wappen um 1890',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
     }, {
       locationName: 'Elsterwerda',
       locationUrl: 'https://de.wikipedia.org/wiki/Elsterwerda',
@@ -53,7 +449,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_E
       description: 'Stadt Elsterwerda gültig bis 1994',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
     }, {
       locationName: 'Falkenberg/Elster',
       locationUrl: 'https://de.wikipedia.org/wiki/Falkenberg/Elster',
@@ -61,7 +457,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_E
       description: '↑ Falkenberg/Elster: „In Grün ein rotes Mittelschild, belegt mit einem goldenen Lichtmast, beseitet von zwei silbernen Ähren, alles überdeckt mit einem goldenen Flügelrad.“ (Quelle: Lexikon der Städte und Wappen der DDR, 3. Auflage. 1985) Stadt Falkenberg/Elster gültig bis 1994[48]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
     }, {
       locationName: 'Schönewalde',
       locationUrl: 'https://de.wikipedia.org/wiki/Sch%C3%B6newalde',
@@ -69,7 +465,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_E
       description: '↑ Schönewalde: „In Silber auf grünem Berg eine grüne Linde.“ (Quelle: Lexikon der Städte und Wappen der DDR, 1. Auflage. 1979) Stadt Schönewalde gültig bis 2002[49]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
     }, {
       locationName: 'Sonnewalde',
       locationUrl: 'https://de.wikipedia.org/wiki/Sonnewalde',
@@ -77,7 +473,183 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_E
       description: '↑ Sonnewalde: „In Blau auf grünem Boden eine natürliche Eiche vor einer aufgehenden goldenen Sonne.“ (Quelle: Lexikon der Städte und Wappen der DDR, 3. Auflage. 1985) Stadt Sonnewalde gültig bis 2004[50]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
+    }, {
+      locationName: 'Bad Liebenwerda',
+      locationUrl: 'https://de.wikipedia.org/wiki/Bad_Liebenwerda',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/DE-BB_12-0-62-024_Bad_Liebenwerda_COA.svg/120px-DE-BB_12-0-62-024_Bad_Liebenwerda_COA.svg.png',
+      description: 'Genehmigt am 14. September 1993 durch den Innenminister des Landes Brandenburg: „In Silber ein fenster- und torloser, bezinnter, spitzbedachter und beknaufter blauer Rundturm, belegt mit einem silbernen Schild, darin drei (2:1) rote Herzen.“[17] Stadt Bad Liebenwerda (Rukow) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
+    }, {
+      locationName: 'Doberlug-Kirchhain',
+      locationUrl: 'https://de.wikipedia.org/wiki/Doberlug-Kirchhain',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Wappen_Doberlug-Kirchhain.png/120px-Wappen_Doberlug-Kirchhain.png',
+      description: 'Genehmigt am 2. Februar 1994 durch den Innenminister des Landes Brandenburg: „In Blau unter zwei silbernen Wolken, aus denen vier goldene Strahlen hervorbrechen, schwebend ein goldenes gequadertes Gebäude mit einem Tor und zwei Fenstern in Schwarz versehen; über dem roten Dach erheben sich drei goldene, schwarzbefensterte, rotbedachte und mit goldenen Fähnchen besteckte Türme, die äußeren mit spitzem Helm, der mittlere breitere und höhere mit rundem Helm; das Gebäude wird mit einem nicht geschlossenen grünen Blätterkranz eingefasst.“[18] Stadt Doberlug-Kirchhain (Dobrjoług-Góstkow) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
+    }, {
+      locationName: 'Elsterwerda',
+      locationUrl: 'https://de.wikipedia.org/wiki/Elsterwerda',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Wappen_von_Elsterwerda.svg/120px-Wappen_von_Elsterwerda.svg.png',
+      description: 'Genehmigt am 11. August 1994 durch den Innenminister des Landes Brandenburg: „In Rot auf grünem Hügel eine linkshin schreitende natürliche Elster über der drei silberne umgürtete Lilien (2 : 1) schweben.“[19] Stadt Elsterwerda (Wikow) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
+    }, {
+      locationName: 'Falkenberg/Elster',
+      locationUrl: 'https://de.wikipedia.org/wiki/Falkenberg/Elster',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Wappen_Stadt_Falkenberg-Elster.png/120px-Wappen_Stadt_Falkenberg-Elster.png',
+      description: 'Genehmigt am 28. Februar 1994 durch den Innenminister des Landes Brandenburg: „In Grün über rotem Rad mit goldenen Flügeln ein silberner Hochspannungsmast beseitet von goldenen Ähren.“[20] Stadt Falkenberg/Elster ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
+    }, {
+      locationName: 'Finsterwalde',
+      locationUrl: 'https://de.wikipedia.org/wiki/Finsterwalde',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Wappen_Finsterwalde.svg/120px-Wappen_Finsterwalde.svg.png',
+      description: 'Genehmigt am 6. Januar 1994 durch den Innenminister des Landes Brandenburg: „In Silber eine durchgehende rote Zinnenmauer, darauf ein gequaderter roter Rundturm mit einer beknauften blauen Kuppel und zwei übereinander stehenden schwarzen Fenstern. Das offene schwarze Tor ist mit einem hochgezogenen silbernen Fallgitter versehen. Auf grünem Boden wächst vor der Mauer zu beiden Seiten des Turmes und des Tors je ein grüner beblätterter Baum empor.“[21] Stadt Finsterwalde (Grabin) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
+    }, {
+      locationName: 'Großthiemig',
+      locationUrl: 'https://de.wikipedia.org/wiki/Gro%C3%9Fthiemig',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Wappen_Grossthiemig.png/120px-Wappen_Grossthiemig.png',
+      description: 'Genehmigt am 6. Januar 1995 durch den Innenminister des Landes Brandenburg: „Geteilt von Grün über Blau durch eine gewölbte Steinbrücke mit Geländer, oben ein belaubter silberner Lindenzweig mit zwei Fruchtständen.“[22][23] Gemeinde Großthiemig ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
+    }, {
+      locationName: 'Gröden',
+      locationUrl: 'https://de.wikipedia.org/wiki/Gr%C3%B6den_(Brandenburg)',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Wappen_Groeden.png/120px-Wappen_Groeden.png',
+      description: 'Genehmigt am 26. August 2002 durch den Innenminister des Landes Brandenburg: „In Silber ein schrägrechter blauer Wellenbalken, begleitet oben von einem roten Jagdhorn und unten von einem grünen Dreiberg, darauf eine silberne Meßlatte mit rot-silbern geteiltem Sockel und zwei grüne Tanne mit schwarzem Stamm.“[24][25] Gemeinde Gröden ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
+    }, {
+      locationName: 'Heideland',
+      locationUrl: 'https://de.wikipedia.org/wiki/Heideland_(Brandenburg)',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/5/5e/Wappen_Heideland.png',
+      description: 'Genehmigt ????: „In Blau drei um den Schildmittelpunkt schwimmende silberne Fische.“[26][27] Gemeinde Heideland ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
+    }, {
+      locationName: 'Herzberg (Elster)',
+      locationUrl: 'https://de.wikipedia.org/wiki/Herzberg_(Elster)',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Wappen_Herzberg_%28Elster%29.png/120px-Wappen_Herzberg_%28Elster%29.png',
+      description: 'Genehmigt am 19. Januar 1993 durch den Innenminister des Landes Brandenburg: „In Silber auf grünem Dreiberg ein schreitender roter Hirsch (mit 12 Enden).“[28] Stadt Herzberg (Elster) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
+    }, {
+      locationName: 'Hirschfeld',
+      locationUrl: 'https://de.wikipedia.org/wiki/Hirschfeld_(Brandenburg)',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Wappen_Hirschfeld_%28Brandenburg%29.png/120px-Wappen_Hirschfeld_%28Brandenburg%29.png',
+      description: 'Genehmigt am 11. März 2003 durch den Innenminister des Landes Brandenburg: „Geteilt; oben in Silber ein wachsender gold-bewehrter schwarzer Hirsch, unten von Grün und Silber geschacht.“[29] Gemeinde Hirschfeld ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
+    }, {
+      locationName: 'Hohenleipisch',
+      locationUrl: 'https://de.wikipedia.org/wiki/Hohenleipisch',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Wappen_Hohenleipisch.png/120px-Wappen_Hohenleipisch.png',
+      description: 'Genehmigt am 14. März 2002 durch den Innenminister des Landes Brandenburg: „Gespalten von Gold und Grün; vorne ein halber Kirschbaum mit Früchten am Spalt, beseitet von einer linksgewendeten Kanne, hinten ein halber Apfelbaum mit Früchten am Spalt, beseitet von einem Weidenkorb; sämtlich in wechselnden Farben.“[30][31] Gemeinde Hohenleipisch ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
+    }, {
+      locationName: 'Mühlberg/Elbe',
+      locationUrl: 'https://de.wikipedia.org/wiki/M%C3%BChlberg/Elbe',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Wappen_Muehlberg.png/120px-Wappen_Muehlberg.png',
+      description: 'Genehmigt am 15. Juli 2002 durch den Innenminister des Landes Brandenburg: „In Schwarz ein rot-bewehrter und -gezungter, doppelt-geschwänzter goldener Löwe.“[32] Stadt Mühlberg/Elbe ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
+    }, {
+      locationName: 'Plessa',
+      locationUrl: 'https://de.wikipedia.org/wiki/Plessa',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Wappen_Plessa.png/120px-Wappen_Plessa.png',
+      description: 'Genehmigt am 20. August 1997 durch den Innenminister des Landes Brandenburg: „In Silber zwei von einander abgewandte, schränglinksgestellte, sich an den Enden kreuzende grüne Lindenzweige; begleitet oben von einem schwarzen Wasserrad, unten von einem schräggekreuzten Schlägel und Eisen.“[33][34] Gemeinde Plessa ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
+    }, {
+      locationName: 'Röderland',
+      locationUrl: 'https://de.wikipedia.org/wiki/R%C3%B6derland',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Wappen_Roederland.png/120px-Wappen_Roederland.png',
+      description: 'Genehmigt am 2. Dezember 2003 durch den Innenminister des Landes Brandenburg: „In Rot ein silbern-blau gewellter Schrägbalken, begleitet oben von vier unten von drei goldenen Lilien.“[35] Gemeinde Röderland ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
+    }, {
+      locationName: 'Rückersdorf',
+      locationUrl: 'https://de.wikipedia.org/wiki/R%C3%BCckersdorf_(Niederlausitz)',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Wappen_Rueckersdorf_%28Niederlausitz%29.png/120px-Wappen_Rueckersdorf_%28Niederlausitz%29.png',
+      description: 'Genehmigt am 1. Juni 1994 durch den Innenminister des Landes Brandenburg: „In Silber über erniedrigter blauer Spitze mit einem schreitenden silbernen Schaf, das mit dem rechten Vorderfuß über die Schulter ein rot-silbernes Banner trägt, eine grüne beblättere Linde.“[36] Gemeinde Rückersdorf ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
+    }, {
+      locationName: 'Schilda',
+      locationUrl: 'https://de.wikipedia.org/wiki/Schilda_(Brandenburg)',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Wappen_Schilda.png/120px-Wappen_Schilda.png',
+      description: 'Genehmigt am 1. Juni 1994 durch den Innenminister des Landes Brandenburg: „In Grün ein gehendes silbernes Pferd.“[37] Gemeinde Schilda ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
+    }, {
+      locationName: 'Schlieben',
+      locationUrl: 'https://de.wikipedia.org/wiki/Schlieben',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Wappen_Schlieben.png/120px-Wappen_Schlieben.png',
+      description: 'Genehmigt am ????: „Das Wappen der Stadt Schlieben zeigt einen auf schwarzem Untergrund hersehenden, silbernen Stierkopf mit goldenem Nasenring, beiderseits von einem Stern begleitet.“[38][39] Stadt Schlieben ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
+    }, {
+      locationName: 'Schönborn',
+      locationUrl: 'https://de.wikipedia.org/wiki/Sch%C3%B6nborn_(Niederlausitz)',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Wappen_Schoenborn_%28Niederlausitz%29.png/120px-Wappen_Schoenborn_%28Niederlausitz%29.png',
+      description: 'Genehmigt am 1. Juni 1994 durch den Innenminister des Landes Brandenburg: „In Blau ein gemauerter silberner Brunnen mit Fontäne, über dem aus dem oberen Schildrand eine goldene Sonne hervorbricht.“[40] Gemeinde Schönborn ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
+    }, {
+      locationName: 'Schönewalde',
+      locationUrl: 'https://de.wikipedia.org/wiki/Sch%C3%B6newalde',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Wappen_Schoenewalde.png/120px-Wappen_Schoenewalde.png',
+      description: 'Genehmigt am 25. Juni 2002 durch den Innenminister des Landes Brandenburg: „Zwischen zwei S-förmigen, gegengewendeten goldenen Flanken in Silber auf grünem Boden eine grüne Linde.“[41] Stadt Schönewalde ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
+    }, {
+      locationName: 'Sonnewalde',
+      locationUrl: 'https://de.wikipedia.org/wiki/Sonnewalde',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Wappen_Sonnewalde.png/120px-Wappen_Sonnewalde.png',
+      description: 'Genehmigt am 11. Februar 2004 durch den Innenminister des Landes Brandenburg: „In Blau eine goldene Sonne mit Gesicht und elf Strahlen.“[42] Stadt Sonnewalde ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
+    }, {
+      locationName: 'Tröbitz',
+      locationUrl: 'https://de.wikipedia.org/wiki/Tr%C3%B6bitz',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/3/32/Wappen_Troebitz.png',
+      description: 'Genehmigt am ????: „.“[43] Gemeinde Tröbitz ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
+    }, {
+      locationName: 'Uebigau-Wahrenbrück',
+      locationUrl: 'https://de.wikipedia.org/wiki/Uebigau-Wahrenbr%C3%BCck',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Wappen_Uebigau-Wahrenbrueck.png/120px-Wappen_Uebigau-Wahrenbrueck.png',
+      description: 'Genehmigt am 3. September 2003 durch den Innenminister des Landes Brandenburg: „Geviert; Feld 1: in Grün hinter einer silbernen Zinnenmauer ein gezinnter silberner Turm mit zwei schwarzen Fenstern und einem beknauften roten Spitzdach; Feld 2: in Silber neun (3:3:3) schrägrechte grüne Blätter; Feld 3: in Silber zehn (3:3:3:1) schrägrechte grüne Blätter; Feld 4: in Rot auf einer dreibogigen silbernen Steinbrücke ein silberner Turm mit einem bewimpelten Spitzdach, schwarzen Tor und zwei schwarzen Fenstern.“[44] Stadt Uebigau-Wahrenbrück ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Städte und Gemeinden',
     }, {
       locationName: 'Dobrilugk um 1900',
       locationUrl: 'https://de.wikipedia.org/wiki/Doberlug-Kirchhain',
@@ -85,7 +657,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_E
       description: 'Dobrilugk um 1900',
       type: ['formerCity','formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
-      sourceTitle: 'Ehemalige Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Ehemalige Städte und Gemeinden',
     }, {
       locationName: '',
       locationUrl: '',
@@ -93,7 +665,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_E
       description: 'Siegelmarke der Stadt Elsterwerda mit dem ehemaligen Wappen um 1890',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
-      sourceTitle: 'Ehemalige Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Ehemalige Städte und Gemeinden',
     }, {
       locationName: 'Elsterwerda',
       locationUrl: 'https://de.wikipedia.org/wiki/Elsterwerda',
@@ -101,7 +673,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_E
       description: 'Stadt Elsterwerda gültig bis 1994',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
-      sourceTitle: 'Ehemalige Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Ehemalige Städte und Gemeinden',
     }, {
       locationName: 'Falkenberg/Elster',
       locationUrl: 'https://de.wikipedia.org/wiki/Falkenberg/Elster',
@@ -109,7 +681,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_E
       description: '↑ Falkenberg/Elster: „In Grün ein rotes Mittelschild, belegt mit einem goldenen Lichtmast, beseitet von zwei silbernen Ähren, alles überdeckt mit einem goldenen Flügelrad.“ (Quelle: Lexikon der Städte und Wappen der DDR, 3. Auflage. 1985) Stadt Falkenberg/Elster gültig bis 1994[48]',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
-      sourceTitle: 'Ehemalige Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Ehemalige Städte und Gemeinden',
     }, {
       locationName: 'Schönewalde',
       locationUrl: 'https://de.wikipedia.org/wiki/Sch%C3%B6newalde',
@@ -117,7 +689,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_E
       description: '↑ Schönewalde: „In Silber auf grünem Berg eine grüne Linde.“ (Quelle: Lexikon der Städte und Wappen der DDR, 1. Auflage. 1979) Stadt Schönewalde gültig bis 2002[49]',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
-      sourceTitle: 'Ehemalige Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Ehemalige Städte und Gemeinden',
     }, {
       locationName: 'Sonnewalde',
       locationUrl: 'https://de.wikipedia.org/wiki/Sonnewalde',
@@ -125,7 +697,79 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_E
       description: '↑ Sonnewalde: „In Blau auf grünem Boden eine natürliche Eiche vor einer aufgehenden goldenen Sonne.“ (Quelle: Lexikon der Städte und Wappen der DDR, 3. Auflage. 1985) Stadt Sonnewalde gültig bis 2004[50]',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
-      sourceTitle: 'Ehemalige Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Ehemalige Städte und Gemeinden',
+    }, {
+      locationName: 'Doberlug',
+      locationUrl: 'https://de.wikipedia.org/wiki/Doberlug',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Wappen_Dobrilugk_NL_1896_1938_%28Alter_Fritz%29.png/120px-Wappen_Dobrilugk_NL_1896_1938_%28Alter_Fritz%29.png',
+      description: 'Genehmigt ????: „.“< Zum 1. Juli 1950 wurden die bisherigen Städte Doberlug und Kirchhain zur neugebildeten Stadt Doberlug-Kirchhain zusammengeschlossen. Doberlug (Dobrjoług), Stadt Doberlug-Kirchhain ',
+      type: ['formerCity'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Ehemalige Städte und Gemeinden',
+    }, {
+      locationName: 'Gruhno',
+      locationUrl: 'https://de.wikipedia.org/wiki/Gruhno',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/61/Wappen_Gruhno.png',
+      description: 'Genehmigt im Juni 1994 durch den Innenminister von Brandenburg der damaligen Gemeinde Gruhno: „Schräg geteilt von Blau über Silber; oben ein silberner Pferdekopf, unten ein grüner Lindenzweig mit drei Blättern.“[45] Zum 27. September 1998 schlossen sich die bisherigen Gemeinden Gruhno, Lindena, Schadewitz und Schönborn zur neugebildeten Gemeinde Schönborn zusammen. Gruhno (Grunow), Gemeinde Schönborn ',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Ehemalige Städte und Gemeinden',
+    }, {
+      locationName: 'Doberlug-Kirchhain',
+      locationUrl: 'https://de.wikipedia.org/wiki/Doberlug-Kirchhain',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Wappen_Kirchhain_NL_1896_1938_%28Alter_Fritz%29.png/120px-Wappen_Kirchhain_NL_1896_1938_%28Alter_Fritz%29.png',
+      description: 'Genehmigt ????: Zum 1. Juli 1950 wurden die bisherigen Städte Doberlug und Kirchhain zur neugebildeten Stadt Doberlug-Kirchhain zusammengeschlossen. Kirchhain, Stadt Doberlug-Kirchhain ',
+      type: ['formerCity'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Ehemalige Städte und Gemeinden',
+    }, {
+      locationName: 'Lindena',
+      locationUrl: 'https://de.wikipedia.org/wiki/Lindena',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/2/26/Wappen_Lindena.png',
+      description: 'Genehmigt ????: „Schräg links geteilt von Silber über Blau; vorn oben zwei einander zugewandte grüne Lindenblätter, hinten unten ein silberner rotbewehrter Storch mit erhobenem linkem Bein.“[46] Zum 27. September 1998 schlossen sich die bisherigen Gemeinden Gruhno, Lindena, Schadewitz und Schönborn zur neugebildeten Gemeinde Schönborn zusammen. Lindena, Gemeinde Schönborn ',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Ehemalige Städte und Gemeinden',
+    }, {
+      locationName: 'Oppelhain',
+      locationUrl: 'https://de.wikipedia.org/wiki/Oppelhain',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Wappen_Oppelhain.png',
+      description: 'Genehmigt ????: „Schräg geteilt von Silber über Rot, oben ein roter goldbewehrter Hahn, unten ein goldenes Kirchengebäude.“[47] Zum 31. Dezember 2001 schlossen sich die bisherigen Gemeinden Gemeinden Oppelhain und Rückersdorf zur neugebildeten Gemeinde Rückersdorf zusammen. Oppelhain (Wopaleń), Gemeinde Rückersdorf ',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Ehemalige Städte und Gemeinden',
+    }, {
+      locationName: 'Reichenhain',
+      locationUrl: 'https://de.wikipedia.org/wiki/Reichenhain_(R%C3%B6derland)',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Wappen_Reichenhain_%28R%C3%B6derland%29.png/120px-Wappen_Reichenhain_%28R%C3%B6derland%29.png',
+      description: 'Genehmigt ????: Zum 26. Oktober 2003 schlossen sich die bisherigen Gemeinden Haida, Prösen, Reichenhain, Saathain, Stolzenhain und Wainsdorf zur neugebildeten Gemeinde Röderland zusammen. Reichenhain, Gemeinde Röderland ',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Ehemalige Städte und Gemeinden',
+    }, {
+      locationName: 'Theisa',
+      locationUrl: 'https://de.wikipedia.org/wiki/Theisa',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Wappen_Theisa.png/120px-Wappen_Theisa.png',
+      description: 'Genehmigt ????: Zum 6. Dezember 1993 wurde Theisa in die Stadt Bad Liebenwerda eingemeindet. Theisa, Stadt Bad Liebenwerda ',
+      type: ['formerCity','formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Ehemalige Städte und Gemeinden',
+    }, {
+      locationName: 'Uebigau',
+      locationUrl: 'https://de.wikipedia.org/wiki/Uebigau',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Wappen_Uebigau.png/120px-Wappen_Uebigau.png',
+      description: 'Das Wappen geht auf ein altes Stadtsiegel zurück: „In Grün hinter einer silbernen Zinnenmauer ein gezinnter silberner Turm mit zwei schwarzen Fenstern und einem beknauften roten Spitzdach.“ Zum 31. Dezember 2001 wurden die Stadt Uebigau und drei weitere Gemeinden in die Stadt Wahrenbrück eingemeindet. Zum 1. Januar 2002 folgte die Umbenennung in Uebigau-Wahrenbrück. Uebigau, Stadt Uebigau-Wahrenbrück ',
+      type: ['formerCity','formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Ehemalige Städte und Gemeinden',
+    }, {
+      locationName: 'Wahrenbrück',
+      locationUrl: 'https://de.wikipedia.org/wiki/Wahrenbr%C3%BCck',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Wappen_Wahrenbr%C3%BCck.jpg/120px-Wappen_Wahrenbr%C3%BCck.jpg',
+      description: 'Das Wappen geht zurück auf ein Stadtsiegel von 1657. Schon das älteste Stadtsiegel zeigt im Siegelbild ein Brücke: „In Rot eine gewölbte dreibogige silberne Brücke, besetzt mit einem spitzbedachten silbernen Turm.“ Zum 31. Dezember 2001 wurden die Stadt Uebigau und drei weitere Gemeinden in die Stadt Wahrenbrück eingemeindet. Zum 1. Januar 2002 folgte die Umbenennung in Uebigau-Wahrenbrück. Wahrenbrück, Stadt Uebigau-Wahrenbrück ',
+      type: ['formerCity','formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Ehemalige Städte und Gemeinden',
     }, {
       locationName: '',
       locationUrl: '',
@@ -133,7 +777,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_E
       description: 'Siegelmarke der Stadt Elsterwerda mit dem ehemaligen Wappen um 1890',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
-      sourceTitle: 'Historische Wappen',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Historische Wappen',
     }, {
       locationName: 'Elsterwerda',
       locationUrl: 'https://de.wikipedia.org/wiki/Elsterwerda',
@@ -141,7 +785,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_E
       description: 'Stadt Elsterwerda gültig bis 1994',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
-      sourceTitle: 'Historische Wappen',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Historische Wappen',
     }, {
       locationName: 'Falkenberg/Elster',
       locationUrl: 'https://de.wikipedia.org/wiki/Falkenberg/Elster',
@@ -149,7 +793,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_E
       description: '↑ Falkenberg/Elster: „In Grün ein rotes Mittelschild, belegt mit einem goldenen Lichtmast, beseitet von zwei silbernen Ähren, alles überdeckt mit einem goldenen Flügelrad.“ (Quelle: Lexikon der Städte und Wappen der DDR, 3. Auflage. 1985) Stadt Falkenberg/Elster gültig bis 1994[48]',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
-      sourceTitle: 'Historische Wappen',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Historische Wappen',
     }, {
       locationName: 'Schönewalde',
       locationUrl: 'https://de.wikipedia.org/wiki/Sch%C3%B6newalde',
@@ -157,7 +801,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_E
       description: '↑ Schönewalde: „In Silber auf grünem Berg eine grüne Linde.“ (Quelle: Lexikon der Städte und Wappen der DDR, 1. Auflage. 1979) Stadt Schönewalde gültig bis 2002[49]',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
-      sourceTitle: 'Historische Wappen',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Historische Wappen',
     }, {
       locationName: 'Sonnewalde',
       locationUrl: 'https://de.wikipedia.org/wiki/Sonnewalde',
@@ -165,7 +809,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_E
       description: '↑ Sonnewalde: „In Blau auf grünem Boden eine natürliche Eiche vor einer aufgehenden goldenen Sonne.“ (Quelle: Lexikon der Städte und Wappen der DDR, 3. Auflage. 1985) Stadt Sonnewalde gültig bis 2004[50]',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster',
-      sourceTitle: 'Historische Wappen',
+      sourceTitle: 'Liste der Wappen im Landkreis Elbe-Elster | Historische Wappen',
     }
 ]; 
 
@@ -177,7 +821,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: '↑ Brieselang: „Auf einem blauen Wellenschildfuß, belegt mit dem Wappen von Bredow (in Silber ein roter Steigbaum mit drei Quersprossen), in Silber zwei Birken mit natürlichem Stamm, grüner Krone und grünen Kätzchen.“ Gemeinde Brieselang[3]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Dallgow-Döberitz',
       locationUrl: 'https://de.wikipedia.org/wiki/Dallgow-D%C3%B6beritz',
@@ -185,7 +829,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: '↑ Dallgow-Döberitz: „In Silber, geteilt durch einen roten Mittelbalken, eine grüne beblätterte auf einem Berg stehende Eiche; der Stamm beseitet von zwei gegeneinandergestellten blauen Pflugscharen; der Balken belegt mit einem silbernen Schwert.“ Gemeinde Dallgow-Döberitz[4]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Falkensee',
       locationUrl: 'https://de.wikipedia.org/wiki/Falkensee',
@@ -193,7 +837,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: '↑ Falkensee: „In Blau ein von silbernen Leisten begleiteter breiter grüner Schräglinksbalken, vorn oben eine aufgehende, ungebildete zwölfstrahlige goldene Sonne, im Balken ein linksgewendeter fliegender silberner Falke, hinten unten ein gestürzter silberner Fisch.“ Stadt Falkensee[5]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Friesack',
       locationUrl: 'https://de.wikipedia.org/wiki/Friesack',
@@ -201,7 +845,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: '↑ Friesack: „In Silber auf grünem Boden ein blau gezinntes Tor mit geschlossenen goldenen Flügeln, beiderseits gehalten von einem blauen gezinnten Turm mit rotem goldbeknauften Kuppeldach auf einem schwarzen silbergefaßten doppelten Fensterbogen; dazwischen schwebend der goldbewehrte, mit goldenen Kleestengeln belegte rote brandenburgische Adler.“ Stadt Friesack[6]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Havelaue',
       locationUrl: 'https://de.wikipedia.org/wiki/Havelaue',
@@ -209,7 +853,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: '↑ Havelaue: „In Blau vorne eine goldene Flanke, belegt mit einem blauen Bruchstab, hinten ein natürlicher Storch, links oben begleitet von einem goldenen Anker mit durchschlungenem Tau.“ Gemeinde Havelaue[7]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Ketzin/Havel',
       locationUrl: 'https://de.wikipedia.org/wiki/Ketzin/Havel',
@@ -217,7 +861,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: '↑ Ketzin/Havel: „In Blau aufrecht nebeneinander und silbern eine Garnnadel (Knüttespun), ein Bindestock mit der Spitze nach unten und ein mit dem Bart nach außen gekehrter Schlüssel.“ Stadt Ketzin/Havel[8]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Milower Land',
       locationUrl: 'https://de.wikipedia.org/wiki/Milower_Land',
@@ -225,7 +869,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: '↑ Milower Land: „In Silber über einem roten Dreiberg ein blauer, von zwei einander zugewandten schwarzen Kiefern begleiteter Göpel.“ Gemeinde Milower Land[9]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Nauen',
       locationUrl: 'https://de.wikipedia.org/wiki/Nauen',
@@ -233,7 +877,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: '↑ Nauen: „In Silber ein schrägrechtsgestellter blauer Karpfen.“ Stadt Nauen[10]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Premnitz',
       locationUrl: 'https://de.wikipedia.org/wiki/Premnitz',
@@ -241,7 +885,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: '↑ Premnitz: „In Silber eine schräglinke, zweibogige, von schwarzen Steinen eingefaßte rote Brücke, vorne von zwei linkssehenden schwarzen Entenköpfen mit beringtem goldenem Halsband und silbernem Schnabel, hinten von einem gestürzten, schwarzen Fisch nach der Figur begleitet.“ Stadt Premnitz[11]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Rathenow',
       locationUrl: 'https://de.wikipedia.org/wiki/Rathenow',
@@ -249,7 +893,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: '↑ Rathenow: „In Silber ein rotbezungter goldbewehrter befiederter roter Adlerkopf, seitlich und unten von drei sechsstrahligen blauen Sternen begleitet.“ Kreisstadt Rathenow[12]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Retzow',
       locationUrl: 'https://de.wikipedia.org/wiki/Retzow',
@@ -257,7 +901,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: '↑ Retzow: „In Silber ein schreitender, hersehender roter Luchs über einen schrägrechten, zweifach blau gepfropften roten Schildfuß.“ Gemeinde Retzow[13]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Rhinow',
       locationUrl: 'https://de.wikipedia.org/wiki/Rhinow',
@@ -265,7 +909,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: '↑ Rhinow: „In Silber über blauem Wasser eine rote Ziegelmauer, dahinter zwei rote Turmbauten von unterschiedlicher Gestalt: vorn ein Rundturm mit blauem Spitzdach und goldenem Knauf, hinten ein viereckiger Turm mit blauem Spitzdach und Erkertürmchen; Mauer und Wasser belegt mit einem silbernen Schild, darin ein goldbewehrter roter Adler; darüber, aus dem Rand des Schildes wachsend, ein blaugekleideter weißbärtiger Alter mit blauer Kappe, in der Rechten einen goldenen Stab haltend; zu beiden Seiten des Schildes auf dem Wasser schwimmend je zwei silberne Schwäne.“ Stadt Rhinow[14]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Schönwalde-Glien',
       locationUrl: 'https://de.wikipedia.org/wiki/Sch%C3%B6nwalde-Glien',
@@ -273,7 +917,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: '↑ Schönwalde-Glien: „Von Gold und Blau gespalten, vorne ein grünes Eschenblatt mit sieben Fiederblättchen, hinten pfahlweise zwei stürzende silberne Schwäne.“ Gemeinde Schönwalde-Glien[15]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Wustermark',
       locationUrl: 'https://de.wikipedia.org/wiki/Wustermark',
@@ -281,7 +925,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: '↑ Wustermark: „Innerhalb eines von Silber und Rot zehnfach gestückten Bordes in Grün unter einem flachen goldenen Doppelsturzsparren fünf (3:2) ineinander verschlungene goldene Ringe.“ Gemeinde Wustermark[16]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Brieselang',
       locationUrl: 'https://de.wikipedia.org/wiki/Brieselang',
@@ -289,7 +933,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: 'Gemeinde Brieselang Ortsteil Bredow',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Rathenow',
       locationUrl: 'https://de.wikipedia.org/wiki/Rathenow',
@@ -297,7 +941,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: 'Stadt Rathenow Ortsteil Göttlin',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Milower Land',
       locationUrl: 'https://de.wikipedia.org/wiki/Milower_Land',
@@ -305,7 +949,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: 'Gemeinde Milower Land Ortsteil Großwudicke',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Schönwalde-Glien',
       locationUrl: 'https://de.wikipedia.org/wiki/Sch%C3%B6nwalde-Glien',
@@ -313,7 +957,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: '↑ Grünefeld: „Gespalten von Grün und Gold, hinten ein stehender schwarzer Kranich mit einem silbernen Stein in der erhobenen rechten Kralle.“ Gemeinde Schönwalde-Glien Ortsteil Grünefeld[17]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Milower Land',
       locationUrl: 'https://de.wikipedia.org/wiki/Milower_Land',
@@ -321,7 +965,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: 'Gemeinde Milower Land Ortsteil Milow',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Schönwalde-Glien',
       locationUrl: 'https://de.wikipedia.org/wiki/Sch%C3%B6nwalde-Glien',
@@ -329,7 +973,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: '↑ Paaren im Glien: „In Grün ein nach rechts geöffneter, sichelförmiger goldener Pfahl, rechts oben begleitet von einem schrägrechten goldenen Hufeisen.“ Gemeinde Schönwalde-Glien Ortsteil Paaren im Glien[18]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Schönwalde-Glien',
       locationUrl: 'https://de.wikipedia.org/wiki/Sch%C3%B6nwalde-Glien',
@@ -337,7 +981,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: '↑ Pausin: „Über einem goldenen Dreiberg, belegt mit einem oben offenen grünen Hufeisen, in Grün schragenweise vier goldene Brotlaibe.“ Gemeinde Schönwalde-Glien Ortsteil Pausin[19]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Schönwalde-Glien',
       locationUrl: 'https://de.wikipedia.org/wiki/Sch%C3%B6nwalde-Glien',
@@ -345,7 +989,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: '↑ Perwenitz: „In Grün ein schräglinker, gestufter goldener Balken, gegengeschrägt belegt mit drei Kastanienblättern in verwechselten Farben.“ Gemeinde Schönwalde-Glien Ortsteil Perwenitz[20]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Schönwalde-Glien',
       locationUrl: 'https://de.wikipedia.org/wiki/Sch%C3%B6nwalde-Glien',
@@ -353,7 +997,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: '↑ Schönwalde: „Gespalten durch einen silbernen Faden, vorn in Silber am Spalt ein halber grüner Laubbaum, hinten in Blau zwei stürzende silberne Schwäne.“ Gemeinde Schönwalde-Glien Ortsteil Schönwalde[21]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Rathenow',
       locationUrl: 'https://de.wikipedia.org/wiki/Rathenow',
@@ -361,7 +1005,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: 'Stadt Rathenow Ortsteil Semlin',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Ketzin/Havel',
       locationUrl: 'https://de.wikipedia.org/wiki/Ketzin/Havel',
@@ -369,7 +1013,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: '↑ Tremmen: „In Silber eine rote Kirche mit Außenkanzel, schwarzen Fenstern und zwei schwarz-bedachten Zwiebeltürmen zwischen denen zwei schräggekreuzte rote Schlüssel schweben.“ Stadt Ketzin/Havel Ortsteil Tremmen[22]',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Milower Land',
       locationUrl: 'https://de.wikipedia.org/wiki/Milower_Land',
@@ -377,7 +1021,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: 'Gemeinde Milower Land Ortsteil Vieritz',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Nauen',
       locationUrl: 'https://de.wikipedia.org/wiki/Nauen',
@@ -385,7 +1029,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: 'Stadt Nauen Ortsteil Wachow',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Schönwalde-Glien',
       locationUrl: 'https://de.wikipedia.org/wiki/Sch%C3%B6nwalde-Glien',
@@ -393,7 +1037,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: '↑ Wansdorf: „In Silber ein mit drei goldenen Sporenrädern belegter roter Schrägrechtsbalken, beseitet von zwei auswärts gekehrten dreiblättrigen grünen Kastanienzweigen.“ Gemeinde Schönwalde-Glien Ortsteil Wansdorf[23]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Brieselang',
       locationUrl: 'https://de.wikipedia.org/wiki/Brieselang',
@@ -401,7 +1045,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: 'Gemeinde Brieselang Ortsteil Zeestow',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Friesack',
       locationUrl: 'https://de.wikipedia.org/wiki/Friesack',
@@ -409,7 +1053,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: 'Ehemaliges Wappen der Stadt Friesack',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Historische Wappen',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Historische Wappen',
     }, {
       locationName: 'Premnitz',
       locationUrl: 'https://de.wikipedia.org/wiki/Premnitz',
@@ -417,7 +1061,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_H
       description: 'Ehemaliges Wappen der Stadt Premnitz',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Havelland',
-      sourceTitle: 'Historische Wappen',
+      sourceTitle: 'Liste der Wappen im Landkreis Havelland | Historische Wappen',
     }
 ]; 
 
@@ -429,7 +1073,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Altlandsberg: „In Rot über grünem Schildfuß mit silbernem Balken ein spitzbedachter silberner Turm mit einem schwarzen Fenster und vier offenen Nischen; auf der Turmspitze ein viereckiger Aufsatz (ein stilisiertes Storchennest).“ Stadt Altlandsberg[5]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Bad Freienwalde (Oder)',
       locationUrl: 'https://de.wikipedia.org/wiki/Bad_Freienwalde_(Oder)',
@@ -437,7 +1081,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Bad Freienwalde (Oder): „In Silber eine bewurzelte grüne Eiche (mit 8 Blättern und 5 Früchten), deren Stamm von zwei kleinen silbernen Schilden mit je einem sechsspeichigen roten Rad beseitet ist.“ Stadt Bad Freienwalde (Oder)[6]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Buckow (Märk. Schweiz)',
       locationUrl: 'https://de.wikipedia.org/wiki/Buckow_(M%C3%A4rkische_Schweiz)',
@@ -445,7 +1089,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Buckow (Märkische Schweiz): „In Silber eine rote Rose mit umrankenden grünen Hopfenzweigen.“ Stadt Buckow (Märk. Schweiz)[7]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Falkenhagen (Mark)',
       locationUrl: 'https://de.wikipedia.org/wiki/Falkenhagen_(Mark)',
@@ -453,7 +1097,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: 'Gemeinde Falkenhagen (Mark)',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Fredersdorf-Vogelsdorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Fredersdorf-Vogelsdorf',
@@ -461,7 +1105,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Fredersdorf-Vogelsdorf: „Im von Gold und Grün gespaltenen Schild eine bewurzelte, mit Blättern und Früchten versehene Eiche in verwechselten Farben, belegt mit einer roten gestürzten und gekürzten Spitze, darin in Gold ein Vogel auf einem Ast.“ Gemeinde Fredersdorf-Vogelsdorf[8]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Golzow',
       locationUrl: 'https://de.wikipedia.org/wiki/Golzow_(Oderbruch)',
@@ -469,7 +1113,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Golzow (Oderbruch): „In Silber auf grünem Dreiberg stehend ein gold-bewehrter schwarzer Hahn mit rotem Kamm und Lappen, im erhobenen rechten Fuß einen nach links über den Kopf gebogenen grünen Zweig haltend.“ Gemeinde Golzow[9]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Gusow-Platkow',
       locationUrl: 'https://de.wikipedia.org/wiki/Gusow-Platkow',
@@ -477,7 +1121,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Gusow-Platkow: „In Blau durch einen silbernen Wellenbalken geteilten Schildfuß, in Gold eine schwarze Eiche mit 13 grünen Blättern und zwei Früchten, deren Stamm von einer silbernen Blitzrinne gespalten ist; begleitet rechts von einem Bündel mit sieben durchbrochenen schwarzen Kornhalmen, links von einer grünen Tabakstaude mit zwei Blattpaaren und einem Blütenstand mit 6 roten Blüten.“ Gemeinde Gusow-Platkow[10]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Heckelberg-Brunow',
       locationUrl: 'https://de.wikipedia.org/wiki/Heckelberg-Brunow',
@@ -485,7 +1129,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Heckelberg-Brunow: „Von Grün und Gold schräggeviert; Feld 1: ein goldenes Siebenblatt, Feld 2 und 3: ein blauer Wellenstab, Feld 4: über einem goldenen Boden ein goldenes Kastanienblatt.“ Gemeinde Heckelberg-Brunow[11]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Hoppegarten',
       locationUrl: 'https://de.wikipedia.org/wiki/Hoppegarten',
@@ -493,7 +1137,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Hoppegarten: „Halb gespalten und im Dornenschnitt geteilt von Grün, Silber und Blau; Feld 1: ein nach oben geöffnetes silbernes Hufeisen, Feld 2: eine grüne Hopfendolde mit Stiel und Blatt und Feld 3: eine schräglinke silberne Schildkröte.“ Gemeinde Hoppegarten[12]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Lebus',
       locationUrl: 'https://de.wikipedia.org/wiki/Lebus',
@@ -501,7 +1145,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Lebus: „In Blau auf grünem Boden ein springender goldener Wolf mit einem silbernen Lamm im Rachen.“ Stadt Lebus[13]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Letschin',
       locationUrl: 'https://de.wikipedia.org/wiki/Letschin',
@@ -509,7 +1153,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Letschin: „In Silber auf grünem Boden ein grüner, von einer goldenen Schlange umwundener Eichenstumpf mit beiderseits drei Blättern; darauf ein goldbewehrter roter Hahn mit erhobenem rechten Fuß.“ Gemeinde Letschin[14]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Müncheberg',
       locationUrl: 'https://de.wikipedia.org/wiki/M%C3%BCncheberg',
@@ -517,7 +1161,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Müncheberg: „Geviert von Rot und Gold; Feld 1: ein silbernes sechsspeichiges Wagenrad, Feld 2: ein grüner Tannenbaum, Feld 3: auf grünem Dreiberg ein wachsender Mönch mit silberner Kutte und schwarzem Skapulier, der in der Rechten einen silbernen Schild mit goldbewehrtem roten Adler und in der Linken einen silbernen besternten Stab hält (Stadtwappen vor 2002), Feld 4: silbern gefugtes Mauerwerk.“ Stadt Müncheberg[15]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Neuenhagen bei Berlin',
       locationUrl: 'https://de.wikipedia.org/wiki/Neuenhagen_bei_Berlin',
@@ -525,7 +1169,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Neuenhagen bei Berlin: „In silbernem Schild ein rotes Gebäude (Rathaus) mit mehrstöckigem Mittelturm, begleitet von zwei silbernen Schildchen, darin rechts eine schwarze Glocke, links eine grüne Zwiebel.“ Gemeinde Neuenhagen bei Berlin[16]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Neuhardenberg',
       locationUrl: 'https://de.wikipedia.org/wiki/Neuhardenberg',
@@ -533,7 +1177,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Neuhardenberg: „Halbgespalten und geteilt; Feld 1: in Silber ein silbern-bewehrter, rot-gezungter schwarzer Keilerkopf; Feld 2: in Rot ein silbernes Johanniterkreuz; Feld 3: in fünf Reihen schwarz-gold geschacht.“ Gemeinde Neuhardenberg[17]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Neutrebbin',
       locationUrl: 'https://de.wikipedia.org/wiki/Neutrebbin',
@@ -541,7 +1185,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Neutrebbin: „In Grün über silbernem Wellenschildfuß, belegt mit einem roten Fisch, ein bewurzelter silberner Laubbaum, rechts begleitet von einer links-gewendeten goldenen Gans und links von einer goldenen Kornähre.“ Gemeinde Neutrebbin[18]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Petershagen/Eggersdorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Petershagen/Eggersdorf',
@@ -549,7 +1193,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Petershagen/Eggersdorf: „Geteilt durch einen silbernen Göpel; vorne in Rot ein goldener Schlüssel, hinten in Blau ein halber, golden-bewehrter silberner Steinbock, unten in Grün ein silberner Stern.“ Gemeinde Petershagen/Eggersdorf[19]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Podelzig',
       locationUrl: 'https://de.wikipedia.org/wiki/Podelzig',
@@ -557,7 +1201,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Podelzig: „In Silber über einem blauen Wellenschildfuß eine durchgehende, gemauerte rote Bo-genbrücke, belegt mit zwei goldenen Adonisröschen; im mittleren und höheren der drei gewölbten Brückenjoche das Wappen der von Burgsdorff (dreifach gespalten von Rot und Silber, belegt mit einem blauen Balken).“ Gemeinde Podelzig[20]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Rehfelde',
       locationUrl: 'https://de.wikipedia.org/wiki/Rehfelde',
@@ -565,7 +1209,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Rehfelde: „In Grün unter erhöhtem rot-silbern geschachten Schrägrechtsbalken ein goldener Rehbock auf silbernem Boden.“ Gemeinde Rehfelde[21]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Rüdersdorf bei Berlin',
       locationUrl: 'https://de.wikipedia.org/wiki/R%C3%BCdersdorf_bei_Berlin',
@@ -573,7 +1217,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Rüdersdorf bei Berlin: „In Gold eine bewurzelte grüne Linde, begleitet von zwei roten Schilden, darin vorn gekreuzte Schlägel und Hammer, hinten eine beblättere silberne Rübe.“ Gemeinde Rüdersdorf bei Berlin[22]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Seelow',
       locationUrl: 'https://de.wikipedia.org/wiki/Seelow',
@@ -581,7 +1225,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Seelow: „In Blau zwei schräggekreuzte goldene Bootshaken; in den Winkeln: oben eine goldene Mitra, vorne ein aufgehender silberner Halbmond, hinten ein gekerbtes silbernes Tatzenkreuz und unten ein goldener Stern.“ Kreisstadt Seelow[23]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Strausberg',
       locationUrl: 'https://de.wikipedia.org/wiki/Strausberg',
@@ -589,7 +1233,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Strausberg: „In Blau über grünem Dreiberg ein nach links gewendeter, widersehender, golden bewehrter silberner Strauß, über dessen Rücken ein silberner, mit einem golden bewehrten roten Adler belegter Schild schwebt.“ Stadt Strausberg[24]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Waldsieversdorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Waldsieversdorf',
@@ -597,7 +1241,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Waldsieversdorf: „In Grün auf goldenem Boden ein rot-fundamentierter und rot-gezinnter silberner Turm mit schwarzer Tür und schwarzen Rundbogenfenstern, beseitet von je einem goldenen Lindenblatt.“ Gemeinde Waldsieversdorf[25]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Wriezen',
       locationUrl: 'https://de.wikipedia.org/wiki/Wriezen',
@@ -605,7 +1249,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Wriezen: „Geviert von Gold und Blau belegt mit silbernem Herzschild, darin ein roter Adler; oben vorn ein liegender schwarzer Schlüssel, oben hinten ein silberner Fisch; unten vorn eine silberne Feder; unten hinten schräglinks ein schwarzer Schraubenschlüssel.“ Stadt Wriezen[26]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Zeschdorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Zeschdorf',
@@ -613,7 +1257,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Zeschdorf: „Von Blau und Grün durch eine eingebogene goldene Spitze zum Schildhaupt gespalten, belegt vorne mit einem silbernen Wellenpfahl, hinten pfahlweise mit einer silbernen Rosenhecke und unten mit einer schwarzen Ameise.“ Gemeinde Zeschdorf[27]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Alt Tucheband',
       locationUrl: 'https://de.wikipedia.org/wiki/Alt_Tucheband',
@@ -621,7 +1265,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Alt Tucheband: „In Blau ein schrägrechter goldener Wellenbalken, belegt mit drei vierblättrigen grünen Kleeblättern.“ Gemeinde Alt Tucheband Ortsteil Alt Tucheband[29]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Bleyen-Genschmar',
       locationUrl: 'https://de.wikipedia.org/wiki/Bleyen-Genschmar',
@@ -629,7 +1273,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Bleyen: „Wellenförmig geteilt von Blau, Silber und Blau, darin pfahlweise drei gegengewendete Bleie in Silber, Rot und Silber.“ Gemeinde Bleyen-Genschmar Ortsteil Bleyen[30]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Heckelberg-Brunow',
       locationUrl: 'https://de.wikipedia.org/wiki/Heckelberg-Brunow',
@@ -637,7 +1281,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Brunow: „Geviert von Gold und Blau; in 1 und 4 ein schrägrechtes mit dem Stiel zur Mitte weisendes grünes Kastanienblatt, in 2 und 3 eine schräglinke, aufwärts fliegende silberne Wildgans mit rotem Schnabel.“ Gem. Heckelberg-Brunow Ortsteil Brunow[31]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Zechin',
       locationUrl: 'https://de.wikipedia.org/wiki/Zechin',
@@ -645,7 +1289,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Buschdorf: „In Rot ein goldenes Spinnrad und drei symmetrisch angeordnete goldene Spindeln.“ Gemeinde Zechin Ortsteil Buschdorf[32]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Hoppegarten',
       locationUrl: 'https://de.wikipedia.org/wiki/Hoppegarten',
@@ -653,7 +1297,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: 'Gemeinde Hoppegarten Ortsteil Dahlwitz-Hoppegarten',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Zechin',
       locationUrl: 'https://de.wikipedia.org/wiki/Zechin',
@@ -661,7 +1305,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Friedrichsaue: „In Blau ein goldenes Kutschrad mit schwarzer Nabe überhöht von einer goldenen Königskrone.“ Gemeinde Zechin Ortsteil Friedrichsaue[33]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Bleyen-Genschmar',
       locationUrl: 'https://de.wikipedia.org/wiki/Bleyen-Genschmar',
@@ -669,7 +1313,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Genschmar: „In Grün über einem von Silber und Blau durch Wellenschnitt geteilten Schildfuß zwei einander zugewendete, schnatternde, goldbewerte silberne Gänse.“ Gemeinde Bleyen-Genschmar Ortsteil Genschmar[34]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Küstriner Vorland',
       locationUrl: 'https://de.wikipedia.org/wiki/K%C3%BCstriner_Vorland',
@@ -677,7 +1321,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Gorgast: „Ein Schild durch zwei Leitmotive mittig geteilt. Im oberen Teil befindet sich auf silbernen Grund das Johanniter-Kreuz in rot. Im unteren Teil befindet sich auf blauen Grund ein zum “G” gekrümmter Fisch in Silber.“ Gemeinde Küstriner Vorland Ortsteil Gorgast[35]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Alt Tucheband',
       locationUrl: 'https://de.wikipedia.org/wiki/Alt_Tucheband',
@@ -685,7 +1329,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Hathenow: „Drei goldene Ähren in rot und ein goldener Stern in blau geteilt durch zwei silberne Wellenlinien.“ Gemeinde Alt Tucheband Ortsteil Hathenow[36]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Rüdersdorf b Berlin',
       locationUrl: 'https://de.wikipedia.org/wiki/R%C3%BCdersdorf_bei_Berlin',
@@ -693,7 +1337,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: 'Gem. Rüdersdorf b Berlin Ortsteil Hennickendorf',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Rüdersdorf b Berlin',
       locationUrl: 'https://de.wikipedia.org/wiki/R%C3%BCdersdorf_bei_Berlin',
@@ -701,7 +1345,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: 'Gem. Rüdersdorf b Berlin Ortsteil Herzfelde',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Bad Freienwalde (Oder)',
       locationUrl: 'https://de.wikipedia.org/wiki/Bad_Freienwalde_(Oder)',
@@ -709,7 +1353,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: 'Stadt Bad Freienwalde (Oder) Ortsteil Hohenwutzen',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Hoppegarten',
       locationUrl: 'https://de.wikipedia.org/wiki/Hoppegarten',
@@ -717,7 +1361,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: 'Gemeinde Hoppegarten Ortsteil Hönow',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Müncheberg',
       locationUrl: 'https://de.wikipedia.org/wiki/M%C3%BCncheberg',
@@ -725,7 +1369,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: 'Stadt Müncheberg Ortsteil Hoppegarten',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Oberbarnim',
       locationUrl: 'https://de.wikipedia.org/wiki/Oberbarnim',
@@ -733,7 +1377,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: 'Gemeinde Oberbarnim Ortsteil Klosterdorf',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Küstriner Vorland',
       locationUrl: 'https://de.wikipedia.org/wiki/K%C3%BCstriner_Vorland',
@@ -741,7 +1385,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Küstrin-Kietz: „Gespalten von Silber und Blau, rechts ein halber roter Adler am Spalt, links ein abgewendeter silberner Karpfen.“ Gemeinde Küstriner Vorland Ortsteil Küstrin-Kietz[37]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Küstriner Vorland',
       locationUrl: 'https://de.wikipedia.org/wiki/K%C3%BCstriner_Vorland',
@@ -749,7 +1393,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Manschnow: „Das Hauptmotiv bilden 2 silberne fliegende Gänse und 3 goldene Getreideähren auf blauem Grund.“ Gemeinde Küstriner Vorland Ortsteil Manschnow[38]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Alt Tucheband',
       locationUrl: 'https://de.wikipedia.org/wiki/Alt_Tucheband',
@@ -757,7 +1401,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Rathstock: „In Silber über blauem Schildfuß zwei rote Pfähle überdeckt von einem blauen Balken.“ Gemeinde Alt Tucheband Ortsteil Rathstock[39]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Märkische Höhe',
       locationUrl: 'https://de.wikipedia.org/wiki/M%C3%A4rkische_H%C3%B6he',
@@ -765,7 +1409,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: 'Gemeinde Märkische Höhe Ortsteil Ringenwalde',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Vierlinden',
       locationUrl: 'https://de.wikipedia.org/wiki/Vierlinden',
@@ -773,7 +1417,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Worin: „Von Gold und Schwarz gespalten, vorne pfahlweise zwei flammende, von je zwei schwarzen Pfeilen schrägkreuzweise durchbohrte rote Herzen und eine rote Rose mit goldenen Butzen, hinten ein halbes goldenes Mühlrad am Spalt.“ Gemeinde Vierlinden Ortsteil Worin[40]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Zechin',
       locationUrl: 'https://de.wikipedia.org/wiki/Zechin',
@@ -781,7 +1425,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: '↑ Zechin: „Gespalten von Silber und Grün; darin eine Kopfweide in verwechselten Farben.“ Gemeinde Zechin Ortsteil Zechin[41]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Lebus',
       locationUrl: 'https://de.wikipedia.org/wiki/Lebus',
@@ -789,7 +1433,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: 'Stadt Lebus Wappen bis 2000',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Historische Wappen',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Historische Wappen',
     }, {
       locationName: 'Müncheberg',
       locationUrl: 'https://de.wikipedia.org/wiki/M%C3%BCncheberg',
@@ -797,7 +1441,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M
       description: 'Stadt Müncheberg Wappen bis 2002',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_M%C3%A4rkisch-Oderland',
-      sourceTitle: 'Historische Wappen',
+      sourceTitle: 'Liste der Wappen im Landkreis Märkisch-Oderland | Historische Wappen',
     }
 ]; 
 
@@ -809,7 +1453,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Birkenwerder: „In Silber mit blauem Wellenschildfuß eine aus einem goldenen Dreiberg wachsende naturfarbene Birke.“ Gemeinde Birkenwerder[2]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberhavel',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberhavel | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Fürstenberg/Havel',
       locationUrl: 'https://de.wikipedia.org/wiki/F%C3%BCrstenberg/Havel',
@@ -817,7 +1461,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: 'Stadt Fürstenberg/Havel',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberhavel',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberhavel | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Glienicke/Nordbahn',
       locationUrl: 'https://de.wikipedia.org/wiki/Glienicke/Nordbahn',
@@ -825,7 +1469,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Glienicke/Nordbahn: „Halb geteilt und gespalten von Rot, Silber und Blau, darin vorne oben das erste Viertel eines gold-bewehrten, silbernen Adlers mit goldenem Kleestengel auf dem Flügel und hinten eine bewurzelte goldenen Kiefer beseitet von je einer goldenen Kornähre.“ Gemeinde Glienicke/Nordbahn[3]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberhavel',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberhavel | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Gransee',
       locationUrl: 'https://de.wikipedia.org/wiki/Gransee',
@@ -833,7 +1477,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: 'Stadt Gransee',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberhavel',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberhavel | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Hennigsdorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Hennigsdorf',
@@ -841,7 +1485,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Hennigsdorf: „Unter grünem Wellenschildhaupt, aus dem linken Schildrand wachsend ein silberner Reiherkopf mit einem goldenen Fisch im Schnabel, in Silber schwebend ein blauer Amboß, begleitet von zwei blauen, aufrecht zugewendeten, unten durch goldene Schleifen verbundene Sensenblättern.“ Stadt Hennigsdorf[4]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberhavel',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberhavel | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Hohen Neuendorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Hohen_Neuendorf',
@@ -849,7 +1493,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Hohen Neuendorf: „In Gold auf grünem Berg eine grüne Kiefer mit schwarzem Stamm, beseitet von zwei Schilden: vorn in Rot ein silberner Balken (Wappen von Buch); hinten in Blau ein rot-gold-blauer Regenbogen begleitet von drei goldenen Sternen (2:1) (Wappen von Wins).“ Stadt Hohen Neuendorf[5]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberhavel',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberhavel | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Kremmen',
       locationUrl: 'https://de.wikipedia.org/wiki/Kremmen',
@@ -857,7 +1501,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Kremmen: „In Blau linksgewendet ein goldener Adler mit roten Fängen, der sich auf einer rot-bewehrten silbernen Gans festkrallt und seinen Schnabel in ihren Hals schlägt.“ Stadt Kremmen[6]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberhavel',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberhavel | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Leegebruch',
       locationUrl: 'https://de.wikipedia.org/wiki/Leegebruch',
@@ -865,7 +1509,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Leegebruch: „In Gold geteilt durch einen blauen Wellenschrägbalken rechts ein grüner Eichenbruch, links ein aufsteigendes schwarzes Pferd.“ Gemeinde Leegebruch[7]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberhavel',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberhavel | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Liebenwalde',
       locationUrl: 'https://de.wikipedia.org/wiki/Liebenwalde',
@@ -873,7 +1517,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Liebenwalde: „In Silber eine bewurzelte grüne Linde, beseitet rechts von einem silbernen, an einem Ast hängenden Dreieckschild, belegt mit einem gold-bewehrten roten Adler, und links von einem Topfhelm mit einem schwarzen Flug, belegt mit gestürzten goldenen Lindenblättern.“ Stadt Liebenwalde[8]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberhavel',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberhavel | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Löwenberger Land',
       locationUrl: 'https://de.wikipedia.org/wiki/L%C3%B6wenberger_Land',
@@ -881,7 +1525,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Löwenberger Land: „Im goldenen, mit schwarzen Sternen bestreuten Schild aus rotem Dreiberg wachsend ein rot-bewehrter, -gezungter und -gekrönter doppeltgeschwänzter schwarzer Löwe mit einer roten Steigleiter mit drei Quersprossen zwischen den Vorderpranken.“ Gemeinde Löwenberger Land[9]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberhavel',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberhavel | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Mühlenbecker Land',
       locationUrl: 'https://de.wikipedia.org/wiki/M%C3%BChlenbecker_Land',
@@ -889,7 +1533,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Mühlenbecker Land: „Im gold-bordierten blauen Schild über einem wellenförmig silbern-grün geteilten Wellenschildfuß ein silbernes Mühlrad.“ Gemeinde Mühlenbecker Land[10]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberhavel',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberhavel | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Oberkrämer',
       locationUrl: 'https://de.wikipedia.org/wiki/Oberkr%C3%A4mer',
@@ -897,7 +1541,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Oberkrämer: „Über von Blau und Gold gespaltenem Wellenschildfuß gespalten von Silber und Grün, vorn rechts ein Nadelbaum und links ein Laubbaum mit jeweils schwarzem Stamm, hinten zwei übereinander fliegende natürliche Störche.“ Gemeinde Oberkrämer[11]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberhavel',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberhavel | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Oranienburg',
       locationUrl: 'https://de.wikipedia.org/wiki/Oranienburg',
@@ -905,7 +1549,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Oranienburg: „In Silber aus grünem Rasen wachsend ein grüner Eichbaum mit acht Blättern und vier goldenen Früchten; rechts vom Stamm schwebend ein linksgewendeter gekrümmter roter Fisch.“ Kreisstadt Oranienburg[12]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberhavel',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberhavel | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Velten',
       locationUrl: 'https://de.wikipedia.org/wiki/Velten',
@@ -913,7 +1557,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Velten: „In Silber ein grüner Kachelofen mit goldener Tür und schwarzen Beschlägen.“ Stadt Velten[13]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberhavel',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberhavel | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Zehdenick',
       locationUrl: 'https://de.wikipedia.org/wiki/Zehdenick',
@@ -921,7 +1565,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Zehdenick: „Gespalten von Silber und Rot; vorn am Spalt ein halber roter Adler mit Kleestengel und Bewehrung in Gold, hinten am Spalt eine halbe silberne Lilie.“ Stadt Zehdenick[14]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberhavel',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberhavel | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Oberkrämer',
       locationUrl: 'https://de.wikipedia.org/wiki/Oberkr%C3%A4mer',
@@ -929,7 +1573,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Bärenklau: „In Grün ein silberner Schrägbalken, belegt mit einer gestützten schwarzen Bärentatze.“ Gemeinde Oberkrämer Ortsteil Bärenklau[15]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberhavel',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberhavel | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Hohen Neuendorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Hohen_Neuendorf',
@@ -937,7 +1581,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Borgsdorf: „Auf silbernem (weißen) Felde geteilt von einem blauen Wellenbalken in ganzer Größe des Wappenschildes ein schwarzes Hirschgeweih mit Schädel, zwischen den Stangen des Vierzehnenders eine fünfblätterige rote Nelke mit grünem Kelch.“ Stadt Hohen Neuendorf Stadtteil Borgsdorf[16]',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberhavel',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberhavel | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Oberkrämer',
       locationUrl: 'https://de.wikipedia.org/wiki/Oberkr%C3%A4mer',
@@ -945,7 +1589,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Bötzow: „Von Silber über Blau im Wellenschnitt schräglinks geteilt; oben ein grünes Kastanienblatt, unten ein fliegender silberner Schwan.“ Gemeinde Oberkrämer Ortsteil Bötzow[17]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberhavel',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberhavel | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Oberkrämer',
       locationUrl: 'https://de.wikipedia.org/wiki/Oberkr%C3%A4mer',
@@ -953,7 +1597,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Eichstädt: „Gespalten durch eine gestützte, gesenkte, eingeschweifte goldene Spitze, darin eine schwarze Nadel, oben mit drei kreisrunden roten Platten balkenweise versehen. Diese sind jeweils mit einem silbernen Kreuz und fünf schwarzen Punkten im Schnittpunkt und an den Kreuzenden belegt. Vorn in Grün ein silbernes Eichenblatt mit einer Frucht, hinten in Grün ein fliegend stürzender silberner Schwan.“ Gemeinde Oberkrämer Ortsteil Eichstädt[18]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberhavel',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberhavel | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Oberkrämer',
       locationUrl: 'https://de.wikipedia.org/wiki/Oberkr%C3%A4mer',
@@ -961,7 +1605,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Marwitz: „Hinter silberner Flanke, in der vier rote Ameisen pfahlweise angebracht sind, in Grün ein gerissener goldener Eichenstamm, aus dessen beiden Aststümpfen je drei Blätter sprießen, beiderseits begleitet von je einem silbernen Tongefäß.“ Gemeinde Oberkrämer Ortsteil Marwitz[19]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberhavel',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberhavel | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Oberkrämer',
       locationUrl: 'https://de.wikipedia.org/wiki/Oberkr%C3%A4mer',
@@ -969,7 +1613,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Neu-Vehlefanz: „In Gold geviert durch grünes Tatzenkreutz. Vorn oben ein schwarzer Kiefernzapfen; hinten oben eine schwarze Glocke, belegt mit goldenem Schild, der einen schwarzen Steigbaum mit vier Holmen enthält; vorn unten ein schwarzer steigender Wolf, hinten unten eine gehöhlte Eiche mit drei Blättern und drei Wurzeln.“ Gemeinde Oberkrämer Ortsteil Neu-Vehlefanz[20]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberhavel',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberhavel | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Mühlenbecker Land',
       locationUrl: 'https://de.wikipedia.org/wiki/M%C3%BChlenbecker_Land',
@@ -977,7 +1621,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: 'Gem. Mühlenbecker Land Ortsteil Schildow',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberhavel',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberhavel | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Oberkrämer',
       locationUrl: 'https://de.wikipedia.org/wiki/Oberkr%C3%A4mer',
@@ -985,7 +1629,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Schwante: „In Silber ein roter Schräglinkswellenbalken, der mit drei sechsstrahligen silbernen Sternen belegt ist sowie oben und unten von je einem sitzenden grünen Frosch begleitet wird.“ Gemeinde Oberkrämer Ortsteil Schwante[21]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberhavel',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberhavel | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Oberkrämer',
       locationUrl: 'https://de.wikipedia.org/wiki/Oberkr%C3%A4mer',
@@ -993,7 +1637,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Vehlefanz: „Von einem silbernen Wellenbalken durchzogenen und mit einem silbernen Schild, darin ein dreisprossiger roter Steigbaum, belegten stumpfwinkelig abgeplatteten Berg eine rote Windmühle, beidseits begleitet vorn von einem Paar schwarzer Pflugschare und hintern von einem schwarzen mit elf silbernen Nagelkuppen versehenen Hufeisen.“ Gemeinde Oberkrämer Ortsteil Vehlefanz[22]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberhavel',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberhavel | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Zehdenick',
       locationUrl: 'https://de.wikipedia.org/wiki/Zehdenick',
@@ -1001,7 +1645,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: 'Stadt Zehdenick Wappen bis 1993',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberhavel',
-      sourceTitle: 'Historische Wappen',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberhavel | Historische Wappen',
     }
 ]; 
 
@@ -1013,7 +1657,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: 'Stadt Calau',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberspreewald-Lausitz',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberspreewald-Lausitz | Städte und Gemeinden',
     }, {
       locationName: 'Amt Großräschen',
       locationUrl: 'https://de.wikipedia.org/wiki/Amt_Gro%C3%9Fr%C3%A4schen',
@@ -1021,7 +1665,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ a b BLHA: Wappen der Stadt Großräschen Amt Großräschen bis 2001[20]',
       type: ['city','gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberspreewald-Lausitz',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberspreewald-Lausitz | Städte und Gemeinden',
     }, {
       locationName: 'Großräschen',
       locationUrl: 'https://de.wikipedia.org/wiki/Gro%C3%9Fr%C3%A4schen',
@@ -1029,7 +1673,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ M. Bensing, K. Blaschke, K. Czok, G. Kehrer, H. Machatscheck: Lexikon Städte und Wappen der DDR. Leipzig, 1984. Stadt Großräschen bis 2001[37]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberspreewald-Lausitz',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberspreewald-Lausitz | Städte und Gemeinden',
     }, {
       locationName: 'Ortrand',
       locationUrl: 'https://de.wikipedia.org/wiki/Ortrand',
@@ -1037,7 +1681,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ a b § 2 der Hauptsatzung der Stadt Ortrand (Memento vom 1. Februar 2019 im Internet Archive) vom 4. Juni 2015 Stadt Ortrand[27]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberspreewald-Lausitz',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberspreewald-Lausitz | Städte und Gemeinden',
     }, {
       locationName: 'Schwarzheide',
       locationUrl: 'https://de.wikipedia.org/wiki/Schwarzheide',
@@ -1045,7 +1689,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Entstehung des Stadtwappens der Stadt Schwarzheide Stadt Schwarzheide 1967–1993[38]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberspreewald-Lausitz',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberspreewald-Lausitz | Städte und Gemeinden',
     }, {
       locationName: 'Hohenbocka',
       locationUrl: 'https://de.wikipedia.org/wiki/Hohenbocka',
@@ -1053,7 +1697,119 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ a b Die Hauptsatzung der Gemeinde Hohenbocka (Memento vom 1. Februar 2019 im Internet Archive) vom 24. September 2014 führt kein Wappen Gemeinde Hohenbocka[12]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberspreewald-Lausitz',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberspreewald-Lausitz | Städte und Gemeinden',
+    }, {
+      locationName: 'Altdöbern',
+      locationUrl: 'https://de.wikipedia.org/wiki/Altd%C3%B6bern',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Wappen_Altdoebern.png/120px-Wappen_Altdoebern.png',
+      description: 'Genehmigt am 27. Februar 2006 durch den Innenminister des Landes Brandenburg: „Gespalten von Blau und Silber, vorne ein silberner Papierbogen, belegt mit einer blau gesäumten goldenen Lilie; hinten drei rote Schrägrechtsbalken.“[17][18] Altdöbern (Stara Darbnja) ',
+      type: ['city','gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberspreewald-Lausitz',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberspreewald-Lausitz | Städte und Gemeinden',
+    }, {
+      locationName: 'Calau',
+      locationUrl: 'https://de.wikipedia.org/wiki/Calau',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Wappen_Stadt_Calau.png/120px-Wappen_Stadt_Calau.png',
+      description: 'Genehmigt am 15. Dezember 1992 durch den Innenminister des Landes Brandenburg: „In Silber eine rote Burg, mit bezinntem und gequadertem Mauerwerk sowie mit offenem schwarzem Tor und hochgezogenem goldenem Fallgitter. Die zwei bezinnten runden Türme sind mit spitzen blauen goldbeknauften Helmen und einem schwarzen Fenster versehen. Zwischen den Türmen schwebt ein von Gold und Blau geteilter Schild, oben wachsend ein schwarzer beschwänzter Löwe mit roter Zunge und Bewehrung, unten drei (2:1) sechsstrahlige silberne Sterne.“[19] Stadt Calau (Kalawa) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberspreewald-Lausitz',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberspreewald-Lausitz | Städte und Gemeinden',
+    }, {
+      locationName: 'Großräschen',
+      locationUrl: 'https://de.wikipedia.org/wiki/Gro%C3%9Fr%C3%A4schen',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Wappen_Grossraeschen.png/120px-Wappen_Grossraeschen.png',
+      description: 'Der Innenminister des Landes Brandenburg genehmigte am 12. April 2002 der Stadt Großräschen, anstelle des tradierten Stadtwappens in Rechtsnachfolge das Wappen des zum 31. Dezember 2001 aufgelösten Amtes Großräschen fortzuführen: „Schräg gevierteilt von Rot und Silber; oben eine wachsende silberne Harke mit sieben Zinken; links ein aufrechter schwarzer Buchenzweig mit acht Blättern, rechts gekreuzte schwarze Schlägel und Eisen, unten drei zu einem Dreischenkel zusammengestellte silberne Hufeisen.“[20] Stadt Großräschen (Rań) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberspreewald-Lausitz',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberspreewald-Lausitz | Städte und Gemeinden',
+    }, {
+      locationName: 'Lauchhammer',
+      locationUrl: 'https://de.wikipedia.org/wiki/Lauchhammer',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Wappen_Lauchhammer.png/120px-Wappen_Lauchhammer.png',
+      description: 'Genehmigt am 6. April 1992 durch den Innenminister des Landes Brandenburg: „In einem geteilten und oben gespaltenen Schild vorn in Rot einen links-gewendeten, hersehenden silbernen Löwen (Leopard), hinten in Grün einen wachsenden natürlichen Eremiten in silberner Kutte, in der Linken einen goldenen Rosenkranz, in der Rechten eine silberne Grabhacke mit natürlichem Stil haltend, begleitet beiderseits von drei goldenen Ähren. Im unteren goldenen Feld befindet sich ein schwarzes Hammerwerk.“[21] Stadt Lauchhammer (Łuchow) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberspreewald-Lausitz',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberspreewald-Lausitz | Städte und Gemeinden',
+    }, {
+      locationName: 'Lindenau',
+      locationUrl: 'https://de.wikipedia.org/wiki/Lindenau_(Oberlausitz)',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wappen_Lindenau_%28Oberlausitz%29.png/120px-Wappen_Lindenau_%28Oberlausitz%29.png',
+      description: 'Genehmigt am 2. März 2000 durch den Innenminister des Landes Brandenburg: „Unter blauem Zinnenschildhaupt in Gold eine blaue Wellenleiste überdeckt von dem Stamm ei-ner bewurzelten schwarzen Linde mit grünen Blättern.“[22][23] Lindenau (Lipina) ',
+      type: ['city','gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberspreewald-Lausitz',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberspreewald-Lausitz | Städte und Gemeinden',
+    }, {
+      locationName: 'Lübbenau/Spreewald',
+      locationUrl: 'https://de.wikipedia.org/wiki/L%C3%BCbbenau/Spreewald',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Wappen_Luebbenau.png/120px-Wappen_Luebbenau.png',
+      description: 'Genehmigt am 13. September 2001 durch den Innenminister des Landes Brandenburg: „In Blau ein schwimmender silberner Fisch zwischen drei (1:2 gestellten), sechsstrahligen, silbernen Sternen.“[24] Stadt Lübbenau/Spreewald (Lubnjow/Błota) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberspreewald-Lausitz',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberspreewald-Lausitz | Städte und Gemeinden',
+    }, {
+      locationName: 'Neupetershain',
+      locationUrl: 'https://de.wikipedia.org/wiki/Neupetershain',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Wappen_Neupetershain.png/120px-Wappen_Neupetershain.png',
+      description: 'Genehmigt am 17. Mai 2006 durch den Innenminister des Landes Brandenburg: „Gespalten und schräglinksgeteilt von Rot und Gold; alles in verwechselten Farben: oben zwei schräglinke Glasmacherpfeifen, überdeckt im vorderen Feld von einem silbernen Glaskelch, unten eine schräglinke Sichel, deren silberne, nach oben zeigende Schneide eine Kornähre im hinteren Feld überdeckt.“[25] Neupetershain (Nowe Wiki) ',
+      type: ['city','gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberspreewald-Lausitz',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberspreewald-Lausitz | Städte und Gemeinden',
+    }, {
+      locationName: 'Ortrand',
+      locationUrl: 'https://de.wikipedia.org/wiki/Ortrand',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Wappen_Ortrand.png/120px-Wappen_Ortrand.png',
+      description: 'Die Stadtverordnetenversammlung beschloss die Fortführung des historischen Wappens, die der Innenminister des Landes Brandenburg am 22. Mai 2012 genehmigte: „In Gold ein doppelt-geschwänzter schwarzer Löwe mit roter Bewehrung und Zunge.“[26][27] Stadt Ortrand (Wótrań) ',
+      type: ['formerCity'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberspreewald-Lausitz',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberspreewald-Lausitz | Städte und Gemeinden',
+    }, {
+      locationName: 'Ruhland',
+      locationUrl: 'https://de.wikipedia.org/wiki/Ruhland',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Wappen_Ruhland.png/120px-Wappen_Ruhland.png',
+      description: 'Genehmigt am 10. November 1992 durch den Innenminister des Landes Brandenburg: „In Gold ein schwarzer doppelköpfiger Adler mit roter Zunge und Bewehrung, über ihm schwebend eine rotgefütterte goldene Krone.“[28] Stadt Ruhland (Rólany) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberspreewald-Lausitz',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberspreewald-Lausitz | Städte und Gemeinden',
+    }, {
+      locationName: 'Schipkau',
+      locationUrl: 'https://de.wikipedia.org/wiki/Schipkau',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Wappen_Schipkau.png/120px-Wappen_Schipkau.png',
+      description: 'Genehmigt am 13. Februar 2004 durch den Innenminister des Landes Brandenburg: „In Silber ein abgeschnittener, S-förmiger grüner Hagebuttenzweig mit sechs roten Früchten, beseitet unten rechts von einem schräggekreuzten schwarzen Schlägel und Eisen, oben links von einer nach rechts wehenden, schwarz-silbern geschachten Fahne.“[29][30] Schipkau (Šejkow) ',
+      type: ['city','gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberspreewald-Lausitz',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberspreewald-Lausitz | Städte und Gemeinden',
+    }, {
+      locationName: 'Schwarzheide',
+      locationUrl: 'https://de.wikipedia.org/wiki/Schwarzheide',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Wappen_Schwarzheide.png/120px-Wappen_Schwarzheide.png',
+      description: 'Genehmigt am 25. Oktober 1993 durch den Innenminister des Landes Brandenburg: „Schräg geteilt durch Wellenschnitt von Silber über Schwarz. Vorn ein silberner zum Schildrand aufgebogener Heidekrautblütenstengel mit drei senkrechten Blätterstengeln. Hinten ein schwarzer, steigender, widersehender Fischotter mit einem linkshin gebogenen blauen Fisch im Maul.“[31] Stadt Schwarzheide (Carny Gózd) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberspreewald-Lausitz',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberspreewald-Lausitz | Städte und Gemeinden',
+    }, {
+      locationName: 'Senftenberg',
+      locationUrl: 'https://de.wikipedia.org/wiki/Senftenberg',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Wappen_Senftenberg.png/120px-Wappen_Senftenberg.png',
+      description: 'Genehmigt am 21. Januar 2002 durch den Innenminister des Landes Brandenburg: „Geviert von Silber und Rot; 1: schräggekreuzt ein schwarzer Schlägel und ein schwarzes Eisen, 4: eine nach links wehende rote Fahne.“[32] Kreisstadt Senftenberg (Zły Komorow) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberspreewald-Lausitz',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberspreewald-Lausitz | Städte und Gemeinden',
+    }, {
+      locationName: 'Tettau',
+      locationUrl: 'https://de.wikipedia.org/wiki/Tettau_(Brandenburg)',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/DE-BB_12-0-66-316_Tettau_COA.svg/120px-DE-BB_12-0-66-316_Tettau_COA.svg.png',
+      description: 'Genehmigt am 14. März 1996 durch den Innenminister des Landes Brandenburg: „In Blau eine goldene Spitze, darin zwei blaue Wellenbalken überhöht von einem blauen Wassertropfen.“[33][34] Tettau (Ćětowa) ',
+      type: ['city','gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberspreewald-Lausitz',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberspreewald-Lausitz | Städte und Gemeinden',
+    }, {
+      locationName: 'Vetschau/Spreewald',
+      locationUrl: 'https://de.wikipedia.org/wiki/Vetschau/Spreewald',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Wappen_Vetschau.png/120px-Wappen_Vetschau.png',
+      description: 'Das heutige Wappen der Stadt Vetschau wurde durch den römisch-deutschen König Ferdinand I. auf dem „geharnischten Reichstag“ zu Augsburg 1548 verliehen.[35] Der Innenminister des Landes Brandenburg bestätigte am 3. Mai 1993[36] die Fortführung des Wappens: „Gespalten, vorn in Rot ein aufgerichteter, nach links gewendeter silberner Windhund mit goldenem Halsband, hinten blau-silbern geschacht.“[36] Stadt Vetschau/Spreewald (Wětošow/Błota) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberspreewald-Lausitz',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberspreewald-Lausitz | Städte und Gemeinden',
     }, {
       locationName: '',
       locationUrl: '',
@@ -1061,7 +1817,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: 'Stadt Calau',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberspreewald-Lausitz',
-      sourceTitle: 'Historische Wappen',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberspreewald-Lausitz | Historische Wappen',
     }, {
       locationName: 'Großräschen',
       locationUrl: 'https://de.wikipedia.org/wiki/Gro%C3%9Fr%C3%A4schen',
@@ -1069,7 +1825,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ M. Bensing, K. Blaschke, K. Czok, G. Kehrer, H. Machatscheck: Lexikon Städte und Wappen der DDR. Leipzig, 1984. Stadt Großräschen bis 2001[37]',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberspreewald-Lausitz',
-      sourceTitle: 'Historische Wappen',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberspreewald-Lausitz | Historische Wappen',
     }, {
       locationName: 'Ortrand',
       locationUrl: 'https://de.wikipedia.org/wiki/Ortrand',
@@ -1077,7 +1833,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ a b § 2 der Hauptsatzung der Stadt Ortrand (Memento vom 1. Februar 2019 im Internet Archive) vom 4. Juni 2015 Stadt Ortrand[27]',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberspreewald-Lausitz',
-      sourceTitle: 'Historische Wappen',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberspreewald-Lausitz | Historische Wappen',
     }, {
       locationName: 'Schwarzheide',
       locationUrl: 'https://de.wikipedia.org/wiki/Schwarzheide',
@@ -1085,7 +1841,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Entstehung des Stadtwappens der Stadt Schwarzheide Stadt Schwarzheide 1967–1993[38]',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberspreewald-Lausitz',
-      sourceTitle: 'Historische Wappen',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberspreewald-Lausitz | Historische Wappen',
     }, {
       locationName: 'Hohenbocka',
       locationUrl: 'https://de.wikipedia.org/wiki/Hohenbocka',
@@ -1093,7 +1849,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ a b Die Hauptsatzung der Gemeinde Hohenbocka (Memento vom 1. Februar 2019 im Internet Archive) vom 24. September 2014 führt kein Wappen Gemeinde Hohenbocka[12]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oberspreewald-Lausitz',
-      sourceTitle: 'Historische Wappen',
+      sourceTitle: 'Liste der Wappen im Landkreis Oberspreewald-Lausitz | Historische Wappen',
     }
 ]; 
 
@@ -1105,7 +1861,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Amt Scharmützelsee: „In Grün eine aus einem oben golden gesäumten Wellenschildfuß wachsende goldene Eiche mit fünf Blättern und vier Eicheln.“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Amt Scharmützelsee[2]',
       type: ['kreis'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Landkreis',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Landkreis',
     }, {
       locationName: 'Amt Schlaubetal',
       locationUrl: 'https://de.wikipedia.org/wiki/Amt_Schlaubetal',
@@ -1113,7 +1869,15 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Amt Schlaubetal: „Gespalten und halb geteilt von Grün, Schwarz und Gold, vorne ein mäanderförmiger Wellenpfahl, hinten oben ein goldenes Mühlrad und unten ein grüner Eichenzweig mit Früchten.“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Amt Schlaubetal[3]',
       type: ['kreis'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Landkreis',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Landkreis',
+    }, {
+      locationName: 'Oder-Spree',
+      locationUrl: 'https://de.wikipedia.org/wiki/Landkreis_Oder-Spree',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Wappen_Landkreis_Oder-Spree.svg/120px-Wappen_Landkreis_Oder-Spree.svg.png',
+      description: 'Genehmigt am 23. Februar 1996 durch den Innenminister des Landes Brandenburg. „Gevierteilt; oben vorn in Gold zwei gekreuzte rote Bootshaken oben bewinkelt von einem sechsstrahligen roten Stern, hinten in Schwarz ein rot-silber geschachter Schräglinksbalken; unten vorn in Rot drei mit den Spitzen nach außen gekehrte, auf dem Rücken liegende silberne Sensenklingen übereinander, hinten in Gold eine fünfendige rote Hirschstange.“[1] Oder-Spree (Dubja-Błota) ',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Landkreis',
     }, {
       locationName: 'Beeskow',
       locationUrl: 'https://de.wikipedia.org/wiki/Beeskow',
@@ -1121,7 +1885,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Beeskow: „In Rot ein spitzbedachtes, mit vier Fialen verziertes und zwei übereinandergestellten Öffnungen versehenen gotisches Portal, belegt mit zwei schräg gegeneinander gestellten Schilden. Vorn in Rot drei übereinanderliegende silberne Sensenklingen (mit der Schneide nach oben gekehrt); hinten in Gold eine rote, nach rechts gebogene, fünfendige Hirschstange.“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Kreisstadt Beeskow (Bezkow)[4]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Städte und Gemeinden',
     }, {
       locationName: 'Briesen (Mark)',
       locationUrl: 'https://de.wikipedia.org/wiki/Briesen_(Mark)',
@@ -1129,7 +1893,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Briesen (Mark): „Geteilt durch einen Winkel zum Schildfuß; oben in Silber ein roter hersehender Hirschkopf, dessen Geweih ein grünes Birkenblatt umschließt; unten blau gewellt.“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Gemeinde Briesen (Mark)[5]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Städte und Gemeinden',
     }, {
       locationName: 'Brieskow-Finkenheerd',
       locationUrl: 'https://de.wikipedia.org/wiki/Brieskow-Finkenheerd',
@@ -1137,7 +1901,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Brieskow-Finkenheerd: „Wellenförmig geteilt von Gold und Blau; oben nebeneinander drei stachlige, schwarze Sanddornzweige mit roten Früchten und blauen Blättern bei den äußeren Zweigen, unten ein silberner Karpfen.“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Gemeinde Brieskow-Finkenheerd[6]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Städte und Gemeinden',
     }, {
       locationName: 'Eisenhüttenstadt',
       locationUrl: 'https://de.wikipedia.org/wiki/Eisenh%C3%BCttenstadt',
@@ -1145,7 +1909,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Eisenhüttenstadt: „In goldenem Feld über drei blauen Wellenfäden in Rot rechts ein Hochhaus, links ein Hochofensystem überhöht von dem bandförmig blauen Teilumriss einer links gewandten Friedenstaube.“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Stadt Eisenhüttenstadt[7]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Städte und Gemeinden',
     }, {
       locationName: 'Erkner',
       locationUrl: 'https://de.wikipedia.org/wiki/Erkner',
@@ -1153,7 +1917,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Erkner: „Im blauen Schild ein goldener Schrägrechtsbalken überdeckt von einem schwarzen bewurzelten Maulbeerbaum mit grünen Blättern und zwei silbernen Maulbeeren.“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Stadt Erkner[8]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Städte und Gemeinden',
     }, {
       locationName: 'Friedland',
       locationUrl: 'https://de.wikipedia.org/wiki/Friedland_(Niederlausitz)',
@@ -1161,7 +1925,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Friedland: „In Rot drei übereinanderliegende silberne Sensenklingen mit den Schneiden nach unten.“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Stadt Friedland[9]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Städte und Gemeinden',
     }, {
       locationName: 'Fürstenwalde/Spree',
       locationUrl: 'https://de.wikipedia.org/wiki/F%C3%BCrstenwalde/Spree',
@@ -1169,7 +1933,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Fürstenwalde: „In Silber ein bewurzelter grüner Laubbaum mit einem linkshin auffliegenden schwarzen Raben in der Krone; der Stamm beseitet von zwei Schilden, vorn in Gold ein rot-bewehrter und rot-gezungter widersehender schwarzer Adler, belegt mit einem steigenden silbernen Halbmond, dessen Höhlung mit einem Kreuzchen besteckt ist; hinten in Silber ein gold-bewehrter roter Adler mit goldenen Kleestengeln auf den Flügeln.“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Stadt Fürstenwalde/Spree[10]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Städte und Gemeinden',
     }, {
       locationName: 'Groß Lindow',
       locationUrl: 'https://de.wikipedia.org/wiki/Gro%C3%9F_Lindow',
@@ -1177,7 +1941,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Groß Lindow: „In Silber ein blauer Schrägwellenbalken, nach der Figur begleitet von zwei abgeschnittenen, gegengewendeten grünen Lindenzweigen.“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Gemeinde Groß Lindow[11]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Städte und Gemeinden',
     }, {
       locationName: 'Grünheide (Mark)',
       locationUrl: 'https://de.wikipedia.org/wiki/Gr%C3%BCnheide_(Mark)',
@@ -1185,7 +1949,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Grünheide (Mark): „In Grün eine aus einem fünfmal von Blau und Silber geteilten Wellenschildfuß wachsende goldene Schildkröte.“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Gemeinde Grünheide (Mark)[12]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Städte und Gemeinden',
     }, {
       locationName: 'Grunow-Dammendorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Grunow-Dammendorf',
@@ -1193,7 +1957,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Grunow-Dammendorf: „In Rot unter einer Wellenleiste ein zehnendiges Hirschgeweih mit Grind, das ein achtspitziges (Johanniter-) Kreuz umschließt, alles silbern.“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Gemeinde Grunow-Dammendorf[13]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Städte und Gemeinden',
     }, {
       locationName: 'Langewahl',
       locationUrl: 'https://de.wikipedia.org/wiki/Langewahl',
@@ -1201,7 +1965,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Langewahl: „Über grünem Schildfuß mit silbernem Wellenbalken in Silber ein breitbeinig stehender Mann mit blauem Rock, goldenen Knöpfen, goldener Weste und goldenen Kniebundhosen sowie schwarzem Dreispitz und schwarzen Schuhen, in den Händen der ausgebreiteten Arme rechts einen schwarzen, L-förmigen Winkel, links einen bewurzelten grünen Eichensteckling haltend.“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Gemeinde Langewahl[14]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Städte und Gemeinden',
     }, {
       locationName: 'Mixdorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Mixdorf',
@@ -1209,7 +1973,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Mixdorf: „Von Rot und Grün durch eine eingebogene silberne Doppelsparrenleiste geteilt; oben ein achtspitziges silbernes (Johanniter-) Kreuz, unten ein rot gefüllter silberner Schmelztiegel mit zwei Griffen.“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Gemeinde Mixdorf[15]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Städte und Gemeinden',
     }, {
       locationName: 'Müllrose',
       locationUrl: 'https://de.wikipedia.org/wiki/M%C3%BCllrose',
@@ -1217,7 +1981,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Müllrose: „In Silber ein gold-bewehrter roter Adler über einem aus dem unteren Schildrand wachsenden gold-bewehrten roten Hirsch.“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Stadt Müllrose (Miłoraz)[16]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Städte und Gemeinden',
     }, {
       locationName: 'Neuzelle',
       locationUrl: 'https://de.wikipedia.org/wiki/Neuzelle',
@@ -1225,7 +1989,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Neuzelle: „In Blau ein silbernes Kleeblattkreuz.“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Gemeinde Neuzelle[17]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Städte und Gemeinden',
     }, {
       locationName: 'Rauen',
       locationUrl: 'https://de.wikipedia.org/wiki/Rauen',
@@ -1233,7 +1997,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Rauen: „In Silber eine grüne Leiste begleitet oben von einer schwarzen Granitschale mit drei Füßen und unten von einem grünen Dreiberg, belegt mit einer bezinnten und oben schwarz bekreuzten goldenen Kirchturmspitze.“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Gemeinde Rauen[18]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Städte und Gemeinden',
     }, {
       locationName: 'Rietz-Neuendorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Rietz-Neuendorf',
@@ -1241,7 +2005,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Rietz-Neuendorf: „Von Silber und Rot gespalten; auf einem Schildfuß vorne eine halbe Eiche und hinten eine halbe Buche am Spalt, alles in verwechselten Farben.“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Gemeinde Rietz-Neuendorf[19]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Städte und Gemeinden',
     }, {
       locationName: 'Schlaubetal',
       locationUrl: 'https://de.wikipedia.org/wiki/Schlaubetal',
@@ -1249,7 +2013,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Schlaubetal: „Von Blau und Grün gespalten durch eine eingebogene goldene Spitze, belegt mit einem schwarzen Mühlrad; vorn eine linksgekrümmte goldene Forelle mit drei roten Flecken, hinten ein goldener Eichenzweig mit je drei Blättern und Früchten.“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Gemeinde Schlaubetal[20]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Städte und Gemeinden',
     }, {
       locationName: 'Schöneiche bei Berlin',
       locationUrl: 'https://de.wikipedia.org/wiki/Sch%C3%B6neiche_bei_Berlin',
@@ -1257,7 +2021,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Schöneiche bei Berlin: „Von Silber und Grün gespalten, darin eine bewurzelte Eiche mit vier Früchten in ver-wechselten Farben.“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Gemeinde Schöneiche bei Berlin[21]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Städte und Gemeinden',
     }, {
       locationName: 'Siehdichum',
       locationUrl: 'https://de.wikipedia.org/wiki/Siehdichum',
@@ -1265,7 +2029,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Siehdichum: „In Gold eine eingebogene grüne Spitze bis zum blauen Wellenschildfuß, belegt mit drei zu einer Garbe gebundenen goldenen Kornähren, beseitet rechts von einem schräggekreuzten schwarzen Schlägel und Eisen und links von einem schwarzen Schaufelrad.“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Gemeinde Siehdichum[22]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Städte und Gemeinden',
     }, {
       locationName: 'Steinhöfel',
       locationUrl: 'https://de.wikipedia.org/wiki/Steinh%C3%B6fel',
@@ -1273,7 +2037,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Steinhöfel: „In Grün oben ein dreistöckiges goldenes Schlossgebäude mit Mittelgiebel, zwei gezinnten Ecktürmen und schwarzen Fensterhöhlen, unten in einem bis zur Teilung reichenden zwölfmal von Silber und Gold gestückten Schildbord vier aus dem Rand wachsende goldene Kornähren.“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Gemeinde Steinhöfel[23]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Städte und Gemeinden',
     }, {
       locationName: 'Storkow (Mark)',
       locationUrl: 'https://de.wikipedia.org/wiki/Storkow_(Mark)',
@@ -1281,7 +2045,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Storkow (Mark): „In Blau mit einem goldenen und mit 14 schwarzen Kugeln belegten Saum ein natürlicher Storch auf grünem Boden, überhöht von drei goldenen Sternen.“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Stadt Storkow (Mark)[24]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Städte und Gemeinden',
     }, {
       locationName: 'Vogelsang',
       locationUrl: 'https://de.wikipedia.org/wiki/Vogelsang_(Odertal)',
@@ -1289,7 +2053,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Vogelsang: „In Rot aus einem goldenen Schildfuß, belegt mit einem blauen Wellenbalken, wachsend ein dreiblättriger goldener Eichenzweig auf dem zwei einander zugewandte und singende silberne Vögel sitzen.“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Gemeinde Vogelsang[25]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Städte und Gemeinden',
     }, {
       locationName: 'Wendisch Rietz',
       locationUrl: 'https://de.wikipedia.org/wiki/Wendisch_Rietz',
@@ -1297,7 +2061,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Wendisch Rietz: „In Gold eine eingebogene blaue Spitze, darin ein goldenes Steuerrad, vorne nach der Figur begleitet von einem gestürzten schwarzen Zander, hinten von drei schwarzen Kiefernzapfen (2:1).“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Gemeinde Wendisch Rietz[26]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Städte und Gemeinden',
     }, {
       locationName: 'Wiesenau',
       locationUrl: 'https://de.wikipedia.org/wiki/Wiesenau',
@@ -1305,7 +2069,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Wiesenau: „In Gold eine gestürzte grüne Spitze, darin ein goldener Krebs, nach der Figur begleitet von zwei schwarzen Sensenklingen.“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Gemeinde Wiesenau (Łuka)[27]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Städte und Gemeinden',
     }, {
       locationName: 'Ziltendorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Ziltendorf',
@@ -1313,7 +2077,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Ziltendorf: „In Blau unter silbernem Wellenbalken eine goldene Korngarbe, begleitet rechts von einem goldenen Kleeblattkreuz und links von einem goldenen Doppelhaken.“(Wappenangaben auf dem Dienstleistungsportal der Landesverwaltung des Landes Brandenburg) Gemeinde Ziltendorf[28]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Städte und Gemeinden',
     }, {
       locationName: 'Steinhöfel',
       locationUrl: 'https://de.wikipedia.org/wiki/Steinh%C3%B6fel',
@@ -1321,7 +2085,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: 'Gemeinde Steinhöfel Ortsteil Arensdorf',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Ehemalige Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Ehemalige Städte und Gemeinden',
     }, {
       locationName: 'Steinhöfel',
       locationUrl: 'https://de.wikipedia.org/wiki/Steinh%C3%B6fel',
@@ -1329,7 +2093,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: 'Gemeinde Steinhöfel Ortsteil Beerfelde',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Ehemalige Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Ehemalige Städte und Gemeinden',
     }, {
       locationName: 'Steinhöfel',
       locationUrl: 'https://de.wikipedia.org/wiki/Steinh%C3%B6fel',
@@ -1337,7 +2101,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: 'Gemeinde Steinhöfel Ortsteil Buchholz',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Ehemalige Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Ehemalige Städte und Gemeinden',
     }, {
       locationName: 'Steinhöfel',
       locationUrl: 'https://de.wikipedia.org/wiki/Steinh%C3%B6fel',
@@ -1345,7 +2109,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: 'Gemeinde Steinhöfel Ortsteil Demnitz',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Ehemalige Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Ehemalige Städte und Gemeinden',
     }, {
       locationName: 'Steinhöfel',
       locationUrl: 'https://de.wikipedia.org/wiki/Steinh%C3%B6fel',
@@ -1353,7 +2117,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: 'Gemeinde Steinhöfel Ortsteil Hasenfelde',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Ehemalige Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Ehemalige Städte und Gemeinden',
     }, {
       locationName: 'Steinhöfel',
       locationUrl: 'https://de.wikipedia.org/wiki/Steinh%C3%B6fel',
@@ -1361,7 +2125,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: 'Gemeinde Steinhöfel Ortsteil Heinersdorf',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Ehemalige Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Ehemalige Städte und Gemeinden',
     }, {
       locationName: 'Steinhöfel',
       locationUrl: 'https://de.wikipedia.org/wiki/Steinh%C3%B6fel',
@@ -1369,7 +2133,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: 'Gemeinde Steinhöfel Ortsteil Jänickendorf',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Ehemalige Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Ehemalige Städte und Gemeinden',
     }, {
       locationName: 'Grünheide (Mark)',
       locationUrl: 'https://de.wikipedia.org/wiki/Gr%C3%BCnheide_(Mark)',
@@ -1377,7 +2141,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: 'Gemeinde Grünheide (Mark) Ortsteil Kagel',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Ehemalige Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Ehemalige Städte und Gemeinden',
     }, {
       locationName: 'Steinhöfel',
       locationUrl: 'https://de.wikipedia.org/wiki/Steinh%C3%B6fel',
@@ -1385,7 +2149,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: 'Gemeinde Steinhöfel Ortsteil Schönfelde',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Ehemalige Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Ehemalige Städte und Gemeinden',
     }, {
       locationName: 'Steinhöfel',
       locationUrl: 'https://de.wikipedia.org/wiki/Steinh%C3%B6fel',
@@ -1393,7 +2157,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: 'Gemeinde Steinhöfel Ortsteil Steinhöfel',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Ehemalige Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Ehemalige Städte und Gemeinden',
     }, {
       locationName: 'Steinhöfel',
       locationUrl: 'https://de.wikipedia.org/wiki/Steinh%C3%B6fel',
@@ -1401,7 +2165,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: 'Gemeinde Steinhöfel Ortsteil Tempelberg',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Oder-Spree',
-      sourceTitle: 'Ehemalige Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Oder-Spree | Ehemalige Städte und Gemeinden',
     }
 ]; 
 
@@ -1413,7 +2177,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Breddin: „Geteilt von Gold und Blau; oben eine rote Urkunde mit goldenem N als gotische Initiale und anhängendem, rotem Rundsiegel; unten zwei schräggekreuzte goldene Krummstäbe mit abflatterndem Sudarium, oben bewinkelt von einem fußgespitzten Kreuz.“ Gemeinde Breddin[4]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostprignitz-Ruppin',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Ostprignitz-Ruppin | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Dreetz',
       locationUrl: 'https://de.wikipedia.org/wiki/Dreetz_(Brandenburg)',
@@ -1421,7 +2185,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Dreetz: „In Gold unter blauem Wellenschildhaupt ein laufender, rot-gezungter, blau-geschwänzter schwarzer Biber über grünem Astwerk.“ Gemeinde Dreetz[5]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostprignitz-Ruppin',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Ostprignitz-Ruppin | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Fehrbellin',
       locationUrl: 'https://de.wikipedia.org/wiki/Fehrbellin',
@@ -1429,7 +2193,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Fehrbellin: „In Silber eine zweitürmige, rote Kirche mit gequadertem Mauerwerk als Unterbau und einem mit einer schwarzen Rosette belegten offenen Doppelbogenportal. Die Türme sind mit je vier schwarzen Fenstern sowie mit bezackten, beknauften und bekreuzten Spitzdächern versehen. Zwischen den Türmen ein wachsender, schwarzbekleideter und behüteter Mönchsrumpf.“ Gemeinde Fehrbellin[6]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostprignitz-Ruppin',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Ostprignitz-Ruppin | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Heiligengrabe',
       locationUrl: 'https://de.wikipedia.org/wiki/Heiligengrabe',
@@ -1437,7 +2201,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Heiligengrabe: „In Grün über einer silbernen Spitze zum Schildhaupt, belegt mit einem gemauerten roten Treppengiebel, in dessen rundem Mauerdurchbruch ein rotes Jerusalemkreuz schwebt, oben rechts ein silbernes Steingrab und oben links schräggekreuzt silbern eine Axt und ein Hammer.“ Gemeinde Heiligengrabe[7]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostprignitz-Ruppin',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Ostprignitz-Ruppin | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Kyritz',
       locationUrl: 'https://de.wikipedia.org/wiki/Kyritz',
@@ -1445,7 +2209,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Kyritz: „In Silber eine rote Stadtmauer mit geschlossenem Tor und vier spitzbedachten, goldbeknauften Türmen mit offenen Fenstern; belegt mit einem grünen Schild mit goldener Lilie.“ Stadt Kyritz[8]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostprignitz-Ruppin',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Ostprignitz-Ruppin | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Lindow (Mark)',
       locationUrl: 'https://de.wikipedia.org/wiki/Lindow_(Mark)',
@@ -1453,7 +2217,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: 'Stadt Lindow (Mark)',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostprignitz-Ruppin',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Ostprignitz-Ruppin | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Neuruppin',
       locationUrl: 'https://de.wikipedia.org/wiki/Neuruppin',
@@ -1461,7 +2225,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Neuruppin: „In Blau eine silberne Burg mit zwei gezinnten, zweigeschossigen Türmen mit zwei übereinander liegenden schwarzen Toren und gold-beknauften, roten Spitzdächern; der Mittelbau mit drei Türmchen und einem schwarzen Tor, das von einem roten Dreieckschild, belegt mit einem gold-bewehrten und gold-gezungten silbernen Adler, überdeckt wird.“ Kreisstadt Neuruppin[9]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostprignitz-Ruppin',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Ostprignitz-Ruppin | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Neustadt (Dosse)',
       locationUrl: 'https://de.wikipedia.org/wiki/Neustadt_(Dosse)',
@@ -1469,7 +2233,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Neustadt (Dosse): „In Silber ein roter bezinnter Torbau, mit blauem Kuppeldach, goldbeknauft und mit rotem Fähnchen, sowie mit geschlossenem blauen Tor; auf den Mauerzinnen einander zugewendet vorn ein aufgerichteter neunmal von Silber über Rot geteilter Löwe, mit den Vorderpranken die Kuppel berührend, hinten ein schreitender roter Elch.“ Stadt Neustadt (Dosse)[10]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostprignitz-Ruppin',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Ostprignitz-Ruppin | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Rheinsberg',
       locationUrl: 'https://de.wikipedia.org/wiki/Rheinsberg',
@@ -1477,7 +2241,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Rheinsberg: „Im rot-silbern gespaltenen Schild ein Adler in verwechselten Farben, belegt mit einem silbern-schwarz gevierten Herzschild.“ Stadt Rheinsberg[11]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostprignitz-Ruppin',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Ostprignitz-Ruppin | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Sieversdorf-Hohenofen',
       locationUrl: 'https://de.wikipedia.org/wiki/Sieversdorf-Hohenofen',
@@ -1485,7 +2249,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Sieversdorf-Hohenofen: „In Rot mit einer linken silbernen Flanke, darin oben ein grünes Lindenblatt, eine silberne Kirche mit schwarz-bedachtem Turm, schwarzer Tür und Fenstern.“ Gemeinde Sieversdorf-Hohenofen[12]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostprignitz-Ruppin',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Ostprignitz-Ruppin | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Stüdenitz-Schönermark',
       locationUrl: 'https://de.wikipedia.org/wiki/St%C3%BCdenitz-Sch%C3%B6nermark',
@@ -1493,7 +2257,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: 'Gemeinde Stüdenitz-Schönermark',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostprignitz-Ruppin',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Ostprignitz-Ruppin | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Wittstock/Dosse',
       locationUrl: 'https://de.wikipedia.org/wiki/Wittstock/Dosse',
@@ -1501,7 +2265,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Wittstock/Dosse: „In Silber eine rote gequaderte und gezinnte Burg mit zwei goldenen spitzbedachten, mit je einem schwarzen Fenster versehenen, Spitztürmen und einem niedrigen Torturm mit geöffnetem schwarzen Tor, mit goldenem aufgezogenen Fallgatter und goldenen Torflügeln. Über den Zinnen des Torturmes thront ein rotgekleideter Bischof, der in seinen ausgebreiteten Armen rechts einen goldenen Bischofsstab und links ein aufgeschlagenes Buch hält.“ Stadt Wittstock/Dosse[13]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostprignitz-Ruppin',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Ostprignitz-Ruppin | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Wusterhausen/Dosse',
       locationUrl: 'https://de.wikipedia.org/wiki/Wusterhausen/Dosse',
@@ -1509,7 +2273,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Wusterhausen/Dosse: „Gespalten von Rot und Silber; vorn ein halber silberner Adler am Spalt und hinten eine halbe rote Lilie.“ Gemeinde Wusterhausen/Dosse[14]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostprignitz-Ruppin',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Ostprignitz-Ruppin | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Neuruppin',
       locationUrl: 'https://de.wikipedia.org/wiki/Neuruppin',
@@ -1517,7 +2281,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: 'Stadt Neuruppin Ortsteil Alt Ruppin',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostprignitz-Ruppin',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Ostprignitz-Ruppin | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Fehrbellin',
       locationUrl: 'https://de.wikipedia.org/wiki/Fehrbellin',
@@ -1525,7 +2289,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Fehrbellin: „In Silber eine rote gotische Kirche mit Doppelbogenportal; zwischen den Türmen das Brustbild eines schwarzgekleideten Mönchs.“ Gemeinde Fehrbellin Ortsteil Fehrbellin[15]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostprignitz-Ruppin',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Ostprignitz-Ruppin | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Wittstock/Dosse',
       locationUrl: 'https://de.wikipedia.org/wiki/Wittstock/Dosse',
@@ -1533,7 +2297,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: 'Stadt Wittstock/Dosse Ortsteil Freyenstein',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostprignitz-Ruppin',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Ostprignitz-Ruppin | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Fehrbellin',
       locationUrl: 'https://de.wikipedia.org/wiki/Fehrbellin',
@@ -1541,7 +2305,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Königshorst: „In Silber zwischen zwei blauen Wellenstäben auf grünem Berg ein schwarzes Butterfass, belegt mit einer goldenen Königskrone.“ Gemeinde Fehrbellin Ortsteil Königshorst[16]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostprignitz-Ruppin',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Ostprignitz-Ruppin | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Fehrbellin',
       locationUrl: 'https://de.wikipedia.org/wiki/Fehrbellin',
@@ -1549,7 +2313,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Langen: „In Silber auf grünem Schildfuß ein dreiteiliges rotes Torgebäude mit größerem Mittelbau und drei offenen Rundbogentoren, flankiert von vier Türmchen mit schwarz beknauften Spitzdächern; das mittlere Tor und der Schildfuß belegt mit einem aufrechten Spaten in verwechselten Farben.“ Gemeinde Fehrbellin Ortsteil Langen[17]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostprignitz-Ruppin',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Ostprignitz-Ruppin | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Fehrbellin',
       locationUrl: 'https://de.wikipedia.org/wiki/Fehrbellin',
@@ -1557,7 +2321,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Linum: „In Blau zwei schräggekreuzte silberne Torfspaten, oben bewinkelt von einer goldenen Königskrone.“ Gemeinde Fehrbellin Ortsteil Linum[18]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostprignitz-Ruppin',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Ostprignitz-Ruppin | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Wusterhausen/Dosse',
       locationUrl: 'https://de.wikipedia.org/wiki/Wusterhausen/Dosse',
@@ -1565,7 +2329,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: '↑ Nackel: „Das [sic]⁠1Schild dieses Nackeler Gemeindewappens teilt sich in zwei Bildfelder. Darüber liegt ein Rechteck. das abwechselnd die brandenburgischen Farben rot und weiß hervorhebt.Die rechte Seite des Schildes zeigt den ältesten Teil der Kirche, der noch aus der Zeit der Askanier stammt. Die Prämonstratenser Mönche errichteten zu der Zeit die erste Kapelle (12.-13. Jahrhundert) mit Schießscharten und Böllerlöchern. Die linke Schildseite stellt im Hintergrund die Zootzen dar. Davor sieht man die 1948 gepflanzte neue „Einsame Eiche“ mitten im Rhinluch.“ (Das Gemeindewappen von Nackel (Memento des Originals vom 29. September 2007 im Internet Archive)  Info: Der Archivlink wurde automatisch eingesetzt und noch nicht geprüft. Bitte prüfe Original- und Archivlink gemäß Anleitung und entferne dann diesen Hinweis.)1 Es müsste Der Schild.. heißen. Gemeinde Wusterhausen/Dosse Ortsteil Nackel[19]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostprignitz-Ruppin',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Ostprignitz-Ruppin | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Heiligengrabe',
       locationUrl: 'https://de.wikipedia.org/wiki/Heiligengrabe',
@@ -1573,7 +2337,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_O
       description: 'Gemeinde Heiligengrabe Ortsteil Zaatzke',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Ostprignitz-Ruppin',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Ostprignitz-Ruppin | Wappen ehemaliger Städte und Gemeinden',
     }
 ]; 
 
@@ -1585,15 +2349,15 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Beelitz: „In Silber ein gold-bewehrter und mit goldenen Kleestengeln auf den Saxen belegter roter Adler, in seinen Fängen rechts ein goldener Schlüssel und links ein goldener Halbmond.“ Stadt Beelitz[2]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen Städte und Gemeinden',
     }, {
       locationName: 'Bad Belzig',
       locationUrl: 'https://de.wikipedia.org/wiki/Bad_Belzig',
-      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Wappen_Bad_Belzig.png/108px-Wappen_Bad_Belzig.png',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/DEU_Bad_Belzig_COA.svg/108px-DEU_Bad_Belzig_COA.svg.png',
       description: '↑ Bad Belzig: „In Blau ein silberner, runder Turm mit zwei Zinnenkränzen, zwischen denen ein schwarzes Kreuz sichtbar ist, mit einer goldbeknauften grünen Kuppel und mit einer offenen Pforte rechts unten. Davon rechts gelehnt ein neunfach schwarz-golden geteilter und mit grünem Rautenkranz schrägrechts belegter Schild.“ Kreisstadt Bad Belzig[3]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen Städte und Gemeinden',
     }, {
       locationName: 'Borkheide',
       locationUrl: 'https://de.wikipedia.org/wiki/Borkheide',
@@ -1601,7 +2365,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Borkheide: „In Grün ein schräglinker silberner Propeller, begleitet oben von einem goldenen Posthorn und unten von zwei goldenen Pilzen.“ Gemeinde Borkheide[4]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen Städte und Gemeinden',
     }, {
       locationName: 'Brück',
       locationUrl: 'https://de.wikipedia.org/wiki/Br%C3%BCck',
@@ -1609,7 +2373,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: 'Stadt Brück',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen Städte und Gemeinden',
     }, {
       locationName: 'Görzke',
       locationUrl: 'https://de.wikipedia.org/wiki/G%C3%B6rzke',
@@ -1617,7 +2381,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Görzke: „In Grün eine bewurzelte silberne Linde überdeckt von einem blauen Herzschild, belegt mit drei schrägrechten silbernen Bolzenpfeilen (Familienwappen von Schierstedt).“ Gemeinde Görzke[5]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen Städte und Gemeinden',
     }, {
       locationName: 'Kleinmachnow',
       locationUrl: 'https://de.wikipedia.org/wiki/Kleinmachnow',
@@ -1625,7 +2389,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Kleinmachnow: „Geteilt von Blau und Silber, oben ein silbernes rotbedachtes Schleusengebäude mit drei schwarzen Schleusentoren, das mittlere aufgezogen; unten drei schwarze Mauerhaken, der linke gegengewendet.“ Gemeinde Kleinmachnow[6]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen Städte und Gemeinden',
     }, {
       locationName: 'Kloster Lehnin',
       locationUrl: 'https://de.wikipedia.org/wiki/Kloster_Lehnin_(Gemeinde)',
@@ -1633,7 +2397,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Kloster Lehnin: „In Blau eine bewurzelte elfblättrige goldene Eiche überdeckt von einem springenden silbernen Hirsch.“ Gemeinde Kloster Lehnin[7]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen Städte und Gemeinden',
     }, {
       locationName: 'Michendorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Michendorf',
@@ -1641,7 +2405,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Michendorf: „In Silber gespalten und geteilt; vorn im Spalt ein halber brandenburgischer goldenbewehrter und rotgezungter roter Adler mit goldenem Kleestengel auf dem Flügel; hinten oben zwei ungleich hohe, wachsende grüne Kiefern mit schwarzen Stämmen; hinten unten fünf eng gesetzte blaue Wellenbalken.“ Gemeinde Michendorf[8]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen Städte und Gemeinden',
     }, {
       locationName: 'Niemegk',
       locationUrl: 'https://de.wikipedia.org/wiki/Niemegk',
@@ -1649,7 +2413,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Niemegk: „In Silber auf grünem Boden ein natürlicher Eichbaum, begleitet vorn von einem sächsischen Wappen und hinten von einer gestürzten Eichel mit zwei Blättern.“ Stadt Niemegk[9]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen Städte und Gemeinden',
     }, {
       locationName: 'Seddiner See',
       locationUrl: 'https://de.wikipedia.org/wiki/Seddiner_See',
@@ -1657,7 +2421,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Seddiner See: „In Blau eine eingebogene Spitze, darin ein rotes Speichenrad, begleitet nach der Teilung rechts von einem gestürzten silbernen Boot in Draufsicht, überdeckt von zwei schrägrechten silbernen Rudern, und links von einem gestürzten silbernen Fisch.“ Gemeinde Seddiner See[10]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen Städte und Gemeinden',
     }, {
       locationName: 'Stahnsdorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Stahnsdorf',
@@ -1665,7 +2429,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Stahnsdorf: „Gespalten in Silber, vorn am Spalt ein halber goldbewehrter mit einem goldenen Kleestengel belegter roter Adler; hinten zwei voneinander getrennte rote Schräglinksbalken.“ Gemeinde Stahnsdorf[11]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen Städte und Gemeinden',
     }, {
       locationName: 'Teltow',
       locationUrl: 'https://de.wikipedia.org/wiki/Teltow',
@@ -1673,7 +2437,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Teltow: „In Rot zwischen zwei silbernen Eichenzweigen mit je zwei Blättern und fünf Früchten und überhöht von einem mehrstrahligen silbernen Stern ein silberner Dreiecksschild mit einem goldbewehrten roten Adler.“ Stadt Teltow[12]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen Städte und Gemeinden',
     }, {
       locationName: 'Treuenbrietzen',
       locationUrl: 'https://de.wikipedia.org/wiki/Treuenbrietzen',
@@ -1681,7 +2445,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Treuenbrietzen: „In Silber ein zweitürmiges und gequadertes rotes Stadttor. Der Mittelbau zeigt ein geöffnetes Tor mit hochgezogenem schwarzen Fallgatter. Die spitzbedachten, goldbeknauften Türme sind mit je einem kleinen Tor und zwei Fenstern in Schwarz versehen. Über dem Stadttor schwebt ein roter, goldbewehrter mit goldenen Kleestengeln belegter Adler.“ Stadt Treuenbrietzen[13]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen Städte und Gemeinden',
     }, {
       locationName: 'Werder (Havel)',
       locationUrl: 'https://de.wikipedia.org/wiki/Werder_(Havel)',
@@ -1689,7 +2453,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Werder (Havel): „In Silber gespalten; vorn am Spalt ein roter goldbewehrter halber Adler; hinten pfahlweise drei grüne Kleeblätter.“ Stadt Werder (Havel)[14]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen Städte und Gemeinden',
     }, {
       locationName: 'Wusterwitz',
       locationUrl: 'https://de.wikipedia.org/wiki/Wusterwitz',
@@ -1697,7 +2461,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: 'Gemeinde Wusterwitz',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen Städte und Gemeinden',
     }, {
       locationName: 'Ziesar',
       locationUrl: 'https://de.wikipedia.org/wiki/Ziesar',
@@ -1705,7 +2469,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Ziesar: „In Rot zwei gekreuzte, goldene Schlüssel, der Bart des stehenden nach rechts, der des linkshin liegenden nach oben gewendet.“ Stadt Ziesar[15]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen Städte und Gemeinden',
     }, {
       locationName: 'Beelitz',
       locationUrl: 'https://de.wikipedia.org/wiki/Beelitz',
@@ -1713,7 +2477,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Beelitz-Heilstätten: „In Blau eine vorne von einem gestürzten goldenen Schlüssel, Bart nach aussen, und hinten von einer links gewendeten goldenen Mondsichel begleitete, silbern-bordierte eingebogene grüne Spitze. Darin ein aus dem unteren Schildrand hervorkommender achteckiger silberner Wasserturm mit allseits schwarz-gefenstertem Turmaufsatz mit drei Erkern und goldenem Spitzdach mit zwiebelförmig gefensterter schwarzer Turmspitze.“ Stadt Beelitz Ortsteil Beelitz-Heilstätten[16]',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Groß Kreutz (Havel)',
       locationUrl: 'https://de.wikipedia.org/wiki/Gro%C3%9F_Kreutz_(Havel)',
@@ -1721,7 +2485,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: 'Gemeinde Groß Kreutz (Havel) Ortsteil Bochow',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Beelitz',
       locationUrl: 'https://de.wikipedia.org/wiki/Beelitz',
@@ -1729,7 +2493,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Buchholz: „In Rot ein aus dem Schildfuß hervorkommender, an den Seiten anstoßender und oben bis in den Schildhaupt reichender Torbogen aus schwarz-gefugten Ziegelsteinen, mit silberner Toröffnung einen pfahlweise gestellten schwebenden grünen Ast mit beiderseits je drei schräg nach oben gerichteten grünen Buchenblättern umschließend.“ Stadt Beelitz Ortsteil Buchholz[17]',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Beelitz',
       locationUrl: 'https://de.wikipedia.org/wiki/Beelitz',
@@ -1737,7 +2501,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: 'Stadt Beelitz Ortsteil Busendorf',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Schwielowsee',
       locationUrl: 'https://de.wikipedia.org/wiki/Schwielowsee_(Gemeinde)',
@@ -1745,7 +2509,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: 'Gemeinde Schwielowsee Ortsteil Caputh',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Groß Kreutz (Havel)',
       locationUrl: 'https://de.wikipedia.org/wiki/Gro%C3%9F_Kreutz_(Havel)',
@@ -1753,7 +2517,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: 'Gemeinde Groß Kreutz (Havel) Ortsteil Deetz',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Beelitz',
       locationUrl: 'https://de.wikipedia.org/wiki/Beelitz',
@@ -1761,7 +2525,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: 'Stadt Beelitz Ortsteil Elsholz',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Beelitz',
       locationUrl: 'https://de.wikipedia.org/wiki/Beelitz',
@@ -1769,7 +2533,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: 'Stadt Beelitz Ortsteil Fichtenwalde',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Bad Belzig',
       locationUrl: 'https://de.wikipedia.org/wiki/Bad_Belzig',
@@ -1777,7 +2541,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Fredersdorf: „Über silbernem Schildfuß mit einem vierblättrigen, bestielten, grünen Kleeblatt; in Rot ein silbernes Gebäude mit Mittelgiebel, darin über einer rundbogigen schwarzen Türe ein ebensolches Giebelfenster, aus dessen linker Stirnseite ein Stock mit silberner Kugel ragt, ist grün bedacht, darauf rechts eine silberne Kugel mit Spitze, dahinter links ein silberner Kirchturm mit eingeknicktem Spitzdach und Knauf.“ Stadt Bad Belzig Ortsteil Fredersdorf[18]',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Groß Kreutz (Havel)',
       locationUrl: 'https://de.wikipedia.org/wiki/Gro%C3%9F_Kreutz_(Havel)',
@@ -1785,7 +2549,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: 'Gemeinde Groß Kreutz (Havel) Ortsteil Groß Kreutz',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Stahnsdorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Stahnsdorf',
@@ -1793,7 +2557,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Güterfelde: „Im durch eine eingebogene rote Spitze, darin unter einem goldenen Kiefernzapfen ein auf einem goldenen Wellenschildfuß schwimmender golden-bewehrter silberner Schwan, silbern-golden gespaltenen Schild, vorn und hinten drei rote Balken.“ Gemeinde Stahnsdorf Ortsteil Güterfelde[19]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Beelitz',
       locationUrl: 'https://de.wikipedia.org/wiki/Beelitz',
@@ -1801,7 +2565,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Körzin: „In Blau ein auf der Spitze stehendes Sechseck, gebildet aus verschränkten goldenen Baumstämmen, darin in Grün eine goldene Eichel.“ Stadt Beelitz Ortsteil Körzin[20]',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Groß Kreutz (Havel)',
       locationUrl: 'https://de.wikipedia.org/wiki/Gro%C3%9F_Kreutz_(Havel)',
@@ -1809,7 +2573,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: 'Gemeinde Groß Kreutz (Havel) Ortsteil Krielow',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Michendorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Michendorf_(Michendorf)',
@@ -1817,7 +2581,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: 'Gemeinde Michendorf Ortsteil Michendorf',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Werder (Havel)',
       locationUrl: 'https://de.wikipedia.org/wiki/Werder_(Havel)',
@@ -1825,7 +2589,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: 'Stadt Werder (Havel) Ortsteil Phöben',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Werder (Havel)',
       locationUrl: 'https://de.wikipedia.org/wiki/Werder_(Havel)',
@@ -1833,7 +2597,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: 'Stadt Werder (Havel) Ortsteil Plötzin',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Havelsee',
       locationUrl: 'https://de.wikipedia.org/wiki/Havelsee',
@@ -1841,7 +2605,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: 'Stadt Havelsee Ortsteil Pritzerbe',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Beelitz',
       locationUrl: 'https://de.wikipedia.org/wiki/Beelitz',
@@ -1849,7 +2613,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Reesdorf: „In Gold ein von einem Band schrägumwundener grüner Kranz, aus dem sieben gestielte dreiblättrige grüne Kleeblätter von innen nach außen hervorkommen.“ Stadt Beelitz Ortsteil Reesdorf[21]',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Beelitz',
       locationUrl: 'https://de.wikipedia.org/wiki/Beelitz',
@@ -1857,7 +2621,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Rieben: „Im von Grün über Blau durch eine silberne Wellenleiste schräg-geteilten Schild, oben drei beblätterte goldene Schilfkolben, unten ein aufwärts gestellter Fisch.“ Stadt Beelitz Ortsteil Rieben[22]',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Beelitz',
       locationUrl: 'https://de.wikipedia.org/wiki/Beelitz',
@@ -1865,7 +2629,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Salzbrunn: „In Silber ein nach oben gebogener grüner Balken, belegt mit einem silbernen Salzkristall, begleitet oben von drei bewurzelten grünen Bäumen, unten von einem gemauerten runden roten Brunnen.“ Stadt Beelitz Ortsteil Salzbrunn[23]',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Beelitz',
       locationUrl: 'https://de.wikipedia.org/wiki/Beelitz',
@@ -1873,7 +2637,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Schäpe: „In Rot vorn eine silberne Figur, bestehend aus vier oben und unten anstoßenden, in der Mitte kreisförmig verflochtenen Stäben, die beiden äußeren in der Mitte jeweils nach innen rund ausgebogen, die beiden inneren kreuzen sich von oben bzw. unten her bogenförmig in der Mitte, sind am Rand der Figur nach oben bzw. unten abgeknickt und halbkreisförmig verbunden, sodass zwei schrägaufwärts bzw. schrägabwärts geschrägte mandelförmige Schlingen entstehen, hinten ein steigendes silbernes Pferd.“ Stadt Beelitz Ortsteil Schäpe[24]',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Beelitz',
       locationUrl: 'https://de.wikipedia.org/wiki/Beelitz',
@@ -1881,7 +2645,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Schlunkendorf: „Im rot-silbern gespaltenen Schild ein nach oben offenes Hufeisen, eine Glocke mit Klöppel umschliessend, alles in verwechselten Farben.“ Stadt Beelitz Ortsteil Schlunkendorf[25]',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Groß Kreutz (Havel)',
       locationUrl: 'https://de.wikipedia.org/wiki/Gro%C3%9F_Kreutz_(Havel)',
@@ -1889,7 +2653,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: 'Gemeinde Groß Kreutz (Havel) Ortsteil Schmergow',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Beelitz',
       locationUrl: 'https://de.wikipedia.org/wiki/Beelitz',
@@ -1897,7 +2661,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Schönefeld: „Im erniedrigt abgeflachten, bogenförmig nach oben geteilten Schild, oben in grün eine goldene Korngarbe, unten gold-rot gespalten und 7 mal geteilt.“ Stadt Beelitz Ortsteil Schönefeld[26]',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Michendorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Michendorf',
@@ -1905,7 +2669,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: 'Gemeinde Michendorf Ortsteil Wilhelmshorst',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Beelitz',
       locationUrl: 'https://de.wikipedia.org/wiki/Beelitz',
@@ -1913,7 +2677,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: 'Stadt Beelitz Ortsteil Wittbrietzen',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Beelitz',
       locationUrl: 'https://de.wikipedia.org/wiki/Beelitz',
@@ -1921,7 +2685,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Zauchwitz: „Von Rot über Blau durch eine einbogige gemauerte silberne Brücke geteilt, begleitet oben von drei goldenen Pappelblättern, unten von einer golden-bebutzten silbernen Rose mit goldenen Kelchblättern.“ Stadt Beelitz Ortsteil Zauchwitz[27]',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Potsdam-Mittelmark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Potsdam-Mittelmark | Wappen ehemaliger Städte und Gemeinden',
     }
 ]; 
 
@@ -1933,7 +2697,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Breese: „In Silber eine rote Nadel mit einem durch das Öhr gesteckten, zweifach (b-förmig) um die Nadel geschlungenen und beiderseits abgerissenen roten Faden, daneben ein steigendes rotes Einhorn.“ Gemeinde Breese[4]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Prignitz',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Prignitz | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Bad Wilsnack',
       locationUrl: 'https://de.wikipedia.org/wiki/Bad_Wilsnack',
@@ -1941,7 +2705,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Bad Wilsnack: „In Blau auf grünem Boden eine silberne Kirche mit rot-geschindeltem Dach und Dachreiter, schwarzer Tür, schwarzen Fenstern und einem Rundturm beiderseits des Portals; die Türme haben schwarz-beknaufte rote Spitzdächer.“ Stadt Bad Wilsnack[5]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Prignitz',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Prignitz | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Groß Pankow (Prignitz)',
       locationUrl: 'https://de.wikipedia.org/wiki/Gro%C3%9F_Pankow_(Prignitz)',
@@ -1949,7 +2713,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Groß Pankow: „In Rot auf einer silbernen Leiste eine auffliegende gold-bewehrte silberne Gans mit goldenem Halsring, darunter im von gestürzten silbernen Lindenblättern bestreuten Feld eine goldene Urne mit Deckel.“ Gemeinde Groß Pankow (Prignitz)[6]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Prignitz',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Prignitz | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Karstädt',
       locationUrl: 'https://de.wikipedia.org/wiki/Karst%C3%A4dt_(Prignitz)',
@@ -1957,7 +2721,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Karstädt: „Gespalten und alles in verwechselten Farben: unter einem silbern-roten Schildhaupt, belegt mit einem durchgehenden Schragenkreuz, im rot-silbernen Schild auf der Spaltlinie ein gespaltener Hammer, beseitet rechts von einer Pflugschar und links von einer silbern gestulpten Mütze.“ Gemeinde Karstädt[7]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Prignitz',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Prignitz | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Lenzen (Elbe)',
       locationUrl: 'https://de.wikipedia.org/wiki/Lenzen_(Elbe)',
@@ -1965,7 +2729,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Lenzen: „In Silber über grünem Schildfuß ein goldbewehrter roter Adler zwischen zwei durch einen Zinnenbogen verbundenen spitzbedachten, gezinnten, roten Rundtürmen mit je einem kleinen äußeren Wartturm, Dächer mit goldenen Knäufen.“ Stadt Lenzen (Elbe)[8]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Prignitz',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Prignitz | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Meyenburg',
       locationUrl: 'https://de.wikipedia.org/wiki/Meyenburg',
@@ -1973,7 +2737,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Meyenburg: „In Silber eine zweitürmige rote Burg; die bezinnten Türme sind mit je zwei silbern gerahmten, schwarzen Spitzbogenfenstern und rot-beknauften blauen Spitzdächern versehen; über dem geschlossenen blauen Tor wächst aus einem gemauerten Stufengiebel ein vierblättriger grüner Zweig mit einem linksgewendeten auffliegenden schwarzen Vogel.“ Stadt Meyenburg[9]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Prignitz',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Prignitz | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Perleberg',
       locationUrl: 'https://de.wikipedia.org/wiki/Perleberg',
@@ -1981,7 +2745,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Perleberg: „In Blau ein achtstrahliges goldenes Spornrad, bewinkelt von acht silbernen Perlen; in der Mitte des Spornrades innerhalb eines goldenen Perlenringes eine große silberne Perle.“ Kreisstadt Perleberg[10]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Prignitz',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Prignitz | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Plattenburg',
       locationUrl: 'https://de.wikipedia.org/wiki/Plattenburg',
@@ -1989,7 +2753,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Plattenburg: „In Silber ein gemauerter roter Stufengiebel mit einem Kreuz bekrönt und von drei (1:2) offenen gotischen Fenstern durchbrochen.“ Gemeinde Plattenburg[11]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Prignitz',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Prignitz | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Pritzwalk',
       locationUrl: 'https://de.wikipedia.org/wiki/Pritzwalk',
@@ -1997,7 +2761,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Pritzwalk: „In Silber eine belaubte und bewurzelte grüne Linde, in deren Krone ein roter Adler schwebt; vor dem Stamm ein schreitender schwarzer Wolf.“ Stadt Pritzwalk[12]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Prignitz',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Prignitz | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Putlitz',
       locationUrl: 'https://de.wikipedia.org/wiki/Putlitz',
@@ -2005,7 +2769,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Putlitz: „In Rot auf grünem Boden eine flugbereite gold-bewehrte silberne Gans.“ Stadt Putlitz[13]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Prignitz',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Prignitz | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Wittenberge',
       locationUrl: 'https://de.wikipedia.org/wiki/Wittenberge',
@@ -2013,12 +2777,180 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_P
       description: '↑ Wittenberge: „In Silber eine dreitürmige rote Burg mit abgeschrägtem Mauerwerk und geschlossenem goldenen Tor, über dem breiten niedrigen Mittelturm schwebend ein goldbewehrter roter Adler mit goldenen Brustspangen.“ Stadt Wittenberge[14]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Prignitz',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Prignitz | Wappen der Städte und Gemeinden',
     }
 ]; 
 
 urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Spree-Nei%C3%9Fe'] = [
-  
+  {
+      locationName: 'Spree-Neiße',
+      locationUrl: 'https://de.wikipedia.org/wiki/Landkreis_Spree-Nei%C3%9Fe',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Wappen_Landkreis_Spree-Neisse.png/120px-Wappen_Landkreis_Spree-Neisse.png',
+      description: 'Genehmigt am 6. September 1995 durch den Innenminister des Landes Brandenburg. „Gevierteilt; oben vorn in Silber ein aufrechter roter Krebs, hinten in Rot ein steigender, doppelt geschwänzter, gekrönter silberner Löwe; unten vorn in Blau eine dreiblättrige goldene Krone, hinten in Gold eine aufgerichtete, nach außen gebogene rote Hirschstange mit vier Enden und kleeblattförmiger Rose.“[1][2] Spree-Neiße (Sprjewja-Nysa) ',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Spree-Nei%C3%9Fe',
+      sourceTitle: 'Liste der Wappen im Landkreis Spree-Neiße | Landkreis',
+    }, {
+      locationName: 'Burg (Spreewald)',
+      locationUrl: 'https://de.wikipedia.org/wiki/Burg_(Spreewald)',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Wappen_Burg_%28Spreewald%29.png/120px-Wappen_Burg_%28Spreewald%29.png',
+      description: 'Genehmigt am 15. Mai 2007 durch den Innenminister des Landes Brandenburg: „In Grün eine gold-bekrönte silberne Schlange, die sich um einen goldenen Säulenfuß windet und aus deren Rachen sich ein silberner Wasserschwall in das darauf liegende Becken ergießt; beseitet von je zwei goldenen Sumpfdotterblumen.“[13] Gemeinde Burg (Spreewald) (Bórkowy (Błota)) ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Spree-Nei%C3%9Fe',
+      sourceTitle: 'Liste der Wappen im Landkreis Spree-Neiße | Städte und Gemeinden',
+    }, {
+      locationName: 'Döbern',
+      locationUrl: 'https://de.wikipedia.org/wiki/D%C3%B6bern',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Wappen_Doebern.png/120px-Wappen_Doebern.png',
+      description: 'Genehmigt am 24. Oktober 1928 durch das Preußische Staatsministerium für die damalige Gemeinde Döbern, Kreis Sorau,[14] bestätigt am 7. Juli 1993[15] durch den Innenminister des Landes Brandenburg: „In Blau unter goldenem Schildhaupt mit quergelegter roter Hirschstange ein silberner Sparren, begleitet beiderseits von je zwei gekreuzten silbernen Berghämmern mit goldenen Stielen, im Winkel ein silberner Kelch.“[15] Stadt Döbern (Derbno) ',
+      type: ['city','gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Spree-Nei%C3%9Fe',
+      sourceTitle: 'Liste der Wappen im Landkreis Spree-Neiße | Städte und Gemeinden',
+    }, {
+      locationName: 'Drachhausen',
+      locationUrl: 'https://de.wikipedia.org/wiki/Drachhausen',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Wappen_Drachhausen.svg/120px-Wappen_Drachhausen.svg.png',
+      description: 'Genehmigt am 16. November 1998 durch den Innenminister des Landes Brandenburg: „In Silber ein steigender, vierbeiniger, rotgezungter schwarzer Drache (Lindwurm) mit einem grünen Lindenblatt in der linken Vorderkralle.“[16] Gemeinde Drachhausen (Hochoza) ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Spree-Nei%C3%9Fe',
+      sourceTitle: 'Liste der Wappen im Landkreis Spree-Neiße | Städte und Gemeinden',
+    }, {
+      locationName: 'Drebkau',
+      locationUrl: 'https://de.wikipedia.org/wiki/Drebkau',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Wappen_Drebkau.png/120px-Wappen_Drebkau.png',
+      description: 'Genehmigt am 2. Mai 2003 durch den Innenminister des Landes Brandenburg: „In Blau eine durchgehende silberne Zinnenmauer mit zwei gezinnten, schwarz-befensterten, rot-bedachten und beknauften silbernen Türmen und einem spitzbogigen Tor mit hochgezogenem roten Fallgatter; zwischen den Türmen ein schwebender roter Schild belegt mit einem doppelt-geschwänzten, gold-bewehrten, -gezungten und -gekrönten silbernen Löwen.“[17] Stadt Drebkau (Drjowk) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Spree-Nei%C3%9Fe',
+      sourceTitle: 'Liste der Wappen im Landkreis Spree-Neiße | Städte und Gemeinden',
+    }, {
+      locationName: 'Forst (Lausitz)',
+      locationUrl: 'https://de.wikipedia.org/wiki/Forst_(Lausitz)',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Wappen_der_Stadt_Forst_%28Lausitz%29.svg/120px-Wappen_der_Stadt_Forst_%28Lausitz%29.svg.png',
+      description: 'Genehmigt am 13. April 2011 durch den Innenminister des Landes Brandenburg: „In Rot ein goldener Schild, belegt mit einer linksgekehrten, fünfendigen roten Hirschstange. Auf dem Helm mit Decken aus einer Krone wachsend die Wappenfigur, alles golden.“[18] Kreisstadt Forst (Lausitz) (Baršć) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Spree-Nei%C3%9Fe',
+      sourceTitle: 'Liste der Wappen im Landkreis Spree-Neiße | Städte und Gemeinden',
+    }, {
+      locationName: 'Guben',
+      locationUrl: 'https://de.wikipedia.org/wiki/Guben',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Wappen_der_Stadt_Guben.svg/120px-Wappen_der_Stadt_Guben.svg.png',
+      description: 'Genehmigt am 15. Dezember 1992 durch den Innenminister des Landes Brandenburg: „In Silber eine gequaderte und bezinnte rote Burg mit drei Toren (das mittlere geöffnet mit goldenen Torflügeln und hochgezogenem goldenen Fallgitter vor schwarzem Hintergrund, die seitlichen vermauert) und drei Türmen (die seitlichen mit spitzem, blauem, goldbeknauftem Dach und einem schwarzen Fenster, der mittlere stärkere und höhere mit drei schwarzen Fenstern und einer herauswachsenden dreiblättrigen goldenen Krone). Die Türme sind mit je einem schrägrechtsgelehnten Schild belegt: Vorn neunmal schwarz-golden geteilt und mit grünem Rautenkranz belegt, in der Mitte in Rot ein doppelschwänziger, bezungter, goldbekrönter silberner Löwe, hinten in Silber ein rotbewehrter, goldbekrönter schwarzer Adler.“[19] Stadt Guben (Gubin) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Spree-Nei%C3%9Fe',
+      sourceTitle: 'Liste der Wappen im Landkreis Spree-Neiße | Städte und Gemeinden',
+    }, {
+      locationName: 'Heinersbrück',
+      locationUrl: 'https://de.wikipedia.org/wiki/Heinersbr%C3%BCck',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Wappen_Heinersbrueck.png/120px-Wappen_Heinersbrueck.png',
+      description: 'Genehmigt am 17. Februar 2010 durch den Innenminister des Landes Brandenburg: „In Rot über erniedrigtem blauen Schildfuß eine goldene Bohlenbrücke, darauf auf einem golden-gesattelten und -gezäumten silbernen Pferd linkshin reitend ein golden-bekrönter und -gegürteter, hersehender silberner König mit einem aufgerichteten und golden-begrifften silbernen Schwert in der Rechten; im rechten Obereck begleitet von einem goldenen Hochkreuz.“[20] Gemeinde Heinersbrück (Móst) ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Spree-Nei%C3%9Fe',
+      sourceTitle: 'Liste der Wappen im Landkreis Spree-Neiße | Städte und Gemeinden',
+    }, {
+      locationName: 'Kolkwitz',
+      locationUrl: 'https://de.wikipedia.org/wiki/Kolkwitz',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Wappen_Kolkwitz.svg/120px-Wappen_Kolkwitz.svg.png',
+      description: 'Genehmigt am 9. April 1999 durch den Innenminister des Landes Brandenburg: „Aus einem oben wellenförmig grün-silbern geteilten blauen Wellenschildfuß, belegt mit einem silbernen Fisch, wachsend in Gold ein grüner Laubbaum.“[21] Gemeinde Kolkwitz (Gołkojce) ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Spree-Nei%C3%9Fe',
+      sourceTitle: 'Liste der Wappen im Landkreis Spree-Neiße | Städte und Gemeinden',
+    }, {
+      locationName: 'Neuhausen/Spree',
+      locationUrl: 'https://de.wikipedia.org/wiki/Neuhausen/Spree',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Wappen_der_Gemeinde_Neuhausen-Spree.svg/120px-Wappen_der_Gemeinde_Neuhausen-Spree.svg.png',
+      description: 'Genehmigt 1997 dem damaligen Amt Neuhausen/Spree, in Rechtsnachfolge fortgeführt durch die zum 26. Oktober 2003 neugebildete Gemeinde Neuhausen/Spree, bestätigt am 16. November 2004 durch den Innenminister des Landes Brandenburg: „Geviert von Blau und Silber; 1: eine schräglinks fliegende natürliche Schwalbe, 2 und 3: vier rote Wellenbalken, 4: ein rot-bewehrter silberner Storch.“[8] Gemeinde Neuhausen/Spree (Kopańce) ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Spree-Nei%C3%9Fe',
+      sourceTitle: 'Liste der Wappen im Landkreis Spree-Neiße | Städte und Gemeinden',
+    }, {
+      locationName: 'Peitz',
+      locationUrl: 'https://de.wikipedia.org/wiki/Peitz',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Wappen_Peitz.png/120px-Wappen_Peitz.png',
+      description: 'Genehmigt am 2. November 1992 durch den Innenminister des Landes Brandenburg: „In Rot eine goldene dreitürmige Burg mit geschlossenem blauen Tor auf grünem Schildfuß; auf dem blauen Spitzdach des Mittelturmes mit goldenem Knauf ein goldener Vogel, beseitet von den Ziffern 8 und 5; die Seitentürme mit blauen Kuppeldächern, mit goldenen Knäufen und linkshin gewendeten Fahnen.“[22] Stadt Peitz (Picnjo) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Spree-Nei%C3%9Fe',
+      sourceTitle: 'Liste der Wappen im Landkreis Spree-Neiße | Städte und Gemeinden',
+    }, {
+      locationName: 'Spremberg',
+      locationUrl: 'https://de.wikipedia.org/wiki/Spremberg',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Wappen_Spremberg.png/120px-Wappen_Spremberg.png',
+      description: 'Genehmigt am 11./17. August 2004 durch den Innenminister des Landes Brandenburg: „In Silber auf grünem Dreiberg zwei rote, gemauerte Zinnentürme mit zwei schwarzen Fenstern; dazwischen schräggestellt ein roter Dreieckschild, belegt mit einem gold-bewehrten, -gezungten und -gekrönten doppelt-geschwänzten silbernen Löwen, darauf ein goldener Helm mit schwarzem Flug, bestreut mit gestürzten goldenen Lindenblättern.“[23] Stadt Spremberg (Grodk) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Spree-Nei%C3%9Fe',
+      sourceTitle: 'Liste der Wappen im Landkreis Spree-Neiße | Städte und Gemeinden',
+    }, {
+      locationName: 'Tauer',
+      locationUrl: 'https://de.wikipedia.org/wiki/Tauer',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Wappen_der_Gemeinde_Tauer.svg/120px-Wappen_der_Gemeinde_Tauer.svg.png',
+      description: 'Genehmigt am 9. Mai 2012 durch den Innenminister des Landes Brandenburg: „In Grün über goldenem Schildfuß, belegt mit einem liegenden grünen Eschenzweig, ein schreitender, widersehender goldener Auerochse.“[24] Gemeinde Tauer (Turjej) ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Spree-Nei%C3%9Fe',
+      sourceTitle: 'Liste der Wappen im Landkreis Spree-Neiße | Städte und Gemeinden',
+    }, {
+      locationName: 'Teichland',
+      locationUrl: 'https://de.wikipedia.org/wiki/Teichland',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Wappen_Teichland.png/120px-Wappen_Teichland.png',
+      description: 'Genehmigt am 5. April 2005 durch den Innenminister des Landes Brandenburg: „Unter schwarzem Schildhaupt, belegt mit drei goldenen Dornenfäden, in Gold drei schwarze, aus einem blauen Wellenschildfuß wachsende Rohrkolben mit grünen Stengeln und Blättern.“[25] Gemeinde Teichland (Gatojce) ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Spree-Nei%C3%9Fe',
+      sourceTitle: 'Liste der Wappen im Landkreis Spree-Neiße | Städte und Gemeinden',
+    }, {
+      locationName: 'Turnow-Preilack',
+      locationUrl: 'https://de.wikipedia.org/wiki/Turnow-Preilack',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Wappen_Turnow-Preilack.png/120px-Wappen_Turnow-Preilack.png',
+      description: 'Genehmigt am 18. April 2011 durch den Innenminister des Landes Brandenburg: „In Rot ein silberner Schräglinksbalken, belegt mit einer blauen Wellenleiste, nach der Teilung begleitet von zwei abgeschnittenen silbernen Zweigen, oben eine Schlehe mit fünf schwarzen Früchten und unten eine Trollblume mit drei Blüten.“[26] Gemeinde Turnow-Preilack (Turnow-Pšiłuk) ',
+      type: ['gemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Spree-Nei%C3%9Fe',
+      sourceTitle: 'Liste der Wappen im Landkreis Spree-Neiße | Städte und Gemeinden',
+    }, {
+      locationName: 'Welzow',
+      locationUrl: 'https://de.wikipedia.org/wiki/Welzow',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Wappen_der_Stadt_Welzow.png/120px-Wappen_der_Stadt_Welzow.png',
+      description: 'Genehmigt am 14. Juli 2005 durch den Innenminister des Landes Brandenburg: „In Rot zwei schräggekreuzte silberne Berghämmer, oben bewinkelt von einer silbernen Glasschale, unten von drei gestürzten silbernen Fruchtähren.“[27] Stadt Welzow (Wjelcej) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Spree-Nei%C3%9Fe',
+      sourceTitle: 'Liste der Wappen im Landkreis Spree-Neiße | Städte und Gemeinden',
+    }, {
+      locationName: 'Groß Schacksdorf-Simmersdorf',
+      locationUrl: 'https://de.wikipedia.org/wiki/Gro%C3%9F_Schacksdorf-Simmersdorf',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Wappen_Gross_Schacksdorf.png/120px-Wappen_Gross_Schacksdorf.png',
+      description: ': „“ Gemeinde Groß Schacksdorf-Simmersdorf Ortsteil Groß Schacksdorf (Žymjerojce)',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Spree-Nei%C3%9Fe',
+      sourceTitle: 'Liste der Wappen im Landkreis Spree-Neiße | Ehemalige Städte und Gemeinden',
+    }, {
+      locationName: 'Neuhausen/Spree',
+      locationUrl: 'https://de.wikipedia.org/wiki/Neuhausen/Spree',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Wappen_Klein_Doebbern.png/120px-Wappen_Klein_Doebbern.png',
+      description: ': „“ Gemeinde Neuhausen/Spree Ortsteil Klein Döbbern (Małe Dobrynje)',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Spree-Nei%C3%9Fe',
+      sourceTitle: 'Liste der Wappen im Landkreis Spree-Neiße | Ehemalige Städte und Gemeinden',
+    }, {
+      locationName: 'Tschernitz',
+      locationUrl: 'https://de.wikipedia.org/wiki/Tschernitz',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Wappen_Tschernitz.png/120px-Wappen_Tschernitz.png',
+      description: 'Im Jahre 2006 versuchte der Ortsteil Tschernitz sich ein Ortsteilwappen genehmigen zu lassen. Doch das Ministerium des Innern des Landes Brandenburg versagte diesem Vorhaben seine Zustimmung, da die Verordnung über kommunale Hoheitszeichen die Wappenführung eines Ortsteiles nicht vorsieht. Somit stellt dieses Wappen kein kommunales Hoheitszeichen dar. Der Ortsteil Tschernitz nutzt bzw. führt dieses Ortsteilwappen ausschließlich für repräsentative Zwecke, aus Gründen der Identifikation und Heimatverbundenheit:[28] „“ Gemeinde Tschernitz (Cersk) Ortsteil Tschernitz',
+      type: ['formerGemeinde'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Spree-Nei%C3%9Fe',
+      sourceTitle: 'Liste der Wappen im Landkreis Spree-Neiße | Ehemalige Städte und Gemeinden',
+    }, {
+      locationName: 'Forst (Lausitz)',
+      locationUrl: 'https://de.wikipedia.org/wiki/Forst_(Lausitz)',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wappen_Forst.png/120px-Wappen_Forst.png',
+      description: 'Genehmigt 1924: „Die Stadt führt ein Wappen. Das Wappen zeigt eine rote, vierendige links ausgebogene Hirschstange mit einem Rosenstock, der die Form eines stilisierten Kleeblattes hat. Das Wappenschild ist geschmückt mit einem Helm mit einer gleichfalls vierendigen kleinen Hirschstange und rotgoldenen Helmdecken.“[29] Kreisstadt Forst (Lausitz) (Baršć) 1924 bis 2005',
+      type: ['formerCity'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Spree-Nei%C3%9Fe',
+      sourceTitle: 'Liste der Wappen im Landkreis Spree-Neiße | Historische Wappen',
+    }, {
+      locationName: 'Forst (Lausitz)',
+      locationUrl: 'https://de.wikipedia.org/wiki/Forst_(Lausitz)',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Wappen_Forst_%28Lausitz%29.svg/120px-Wappen_Forst_%28Lausitz%29.svg.png',
+      description: 'Mit Schreiben des Landeshauptarchives vom 30. September 2005 wurde der Stadtverwaltung Forst (Lausitz) mitgeteilt, dass in Zukunft für hoheitliche Aufgabenbereiche (dazu gehören: Briefkopf, Dienstsiegel, Urkunden, Amtsschilder, amtliche Druckschriften und Stadtflagge) nur noch der Wappenschild zu verwenden ist. Aus diesem Grund musste das Stadtwappen der Stadt Forst (Lausitz) den neuen Gegebenheiten angepasst werden. Die Stadtverordnetenversammlung der Stadt Forst (Lausitz) beschloss danach auf ihrer 12. Sitzung am 18. November 2005[30] das nachstehend beschriebene Stadtwappen der Stadt Forst (Lausitz): „Das Wappen der Stadt Forst (Lausitz) zeigt in gold eine aufgerichtete, nach rechts gebogene, vierendige rote Hirschstange mit einem kleeblättrigen Rosenstock.“[30] Kreisstadt Forst (Lausitz) (Baršć) 2005 bis 2011',
+      type: ['formerCity'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Spree-Nei%C3%9Fe',
+      sourceTitle: 'Liste der Wappen im Landkreis Spree-Neiße | Historische Wappen',
+    }
 ]; 
 
 urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Teltow-Fl%C3%A4ming'] = [
@@ -2029,7 +2961,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_T
       description: '↑ Baruth/Mark: „Geteilt durch silbernen linken Schrägbalken von Grün über Rot; oben eine goldene doppeltürmige spitzbedachte Kirche mit einem Tor und je zwei Fenster in Schwarz; unten ein goldenes Glasgefäß. Der Linksbalken ist mit 12 schwarzen Tannen belegt.“ Stadt Baruth/Mark[2]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Teltow-Fl%C3%A4ming',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Teltow-Fläming | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Blankenfelde-Mahlow',
       locationUrl: 'https://de.wikipedia.org/wiki/Blankenfelde-Mahlow',
@@ -2037,7 +2969,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_T
       description: '↑ Blankenfelde-Mahlow: „In Gold mit blauer Wellenleiste in der Schildhauptstelle eine aus dem unteren Schildrand wachsende grüne fünfblättrige Linde, überhöht von einem abgeflachten roten Leistensparren.“ Gemeinde Blankenfelde-Mahlow[3]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Teltow-Fl%C3%A4ming',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Teltow-Fläming | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Dahme/Mark',
       locationUrl: 'https://de.wikipedia.org/wiki/Dahme/Mark',
@@ -2045,7 +2977,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_T
       description: '↑ Dahme/Mark: „In Silber eine zinnengekrönte rote Mauer mit drei bezinnten Rundtürmen, offenem schwarzen Tor und hochgezogenem silbernem Fallgatter; auf dem höheren und stärkeren Mittelturm, an dem links eine schwarze Leiter lehnt, eine wachsende, natürliche, blaugekleidete weibliche Figur mit grünem Palmenzweig in der erhobenen Rechten.“ Stadt Dahme/Mark[4]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Teltow-Fl%C3%A4ming',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Teltow-Fläming | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Dahmetal',
       locationUrl: 'https://de.wikipedia.org/wiki/Dahmetal',
@@ -2053,7 +2985,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_T
       description: '↑ Dahmetal: „In Grün über goldenem Tal ein silberner schräglinker Wellenbalken begleitet nach der Figur von rechts drei und links zwei goldenen Mühlrädern.“ Gemeinde Dahmetal[5]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Teltow-Fl%C3%A4ming',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Teltow-Fläming | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Großbeeren',
       locationUrl: 'https://de.wikipedia.org/wiki/Gro%C3%9Fbeeren',
@@ -2061,7 +2993,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_T
       description: '↑ Großbeeren: „Geteilt von Silber und Blau, oben rechts ein abgeschnittener grüner Eichenzweig mit Früchten und links ein silbern-bordiertes schwarzes Eisernes Kreuz; unten ein rot-bewehrter, auffliegender, nach ausgestreuten goldenen Beeren schnappender silberner Schwan.“ Gemeinde Großbeeren[6]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Teltow-Fl%C3%A4ming',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Teltow-Fläming | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Jüterbog',
       locationUrl: 'https://de.wikipedia.org/wiki/J%C3%BCterbog',
@@ -2069,7 +3001,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_T
       description: '↑ Jüterbog: „In von Silber und Rot geteiltem Schild ein springender schwarzer Bock mit goldenen Hörnern und Klauen.“ Stadt Jüterbog[7]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Teltow-Fl%C3%A4ming',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Teltow-Fläming | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Luckenwalde',
       locationUrl: 'https://de.wikipedia.org/wiki/Luckenwalde',
@@ -2077,7 +3009,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_T
       description: '↑ Luckenwalde: „In Blau ein durchbrochener goldener Renaissanceschild, von Gold belegt mit zwei schräggekreuzten Krummstäben, bewinkelt vorn und hinten von je einem sechsstrahligen Stern und unten von einem Nadelbaum; der Schild wird silbern bekrönt von einem durchbrochenen Nest mit einem seine vier Junge fütternden Pelikan.“ Kreisstadt Luckenwalde[8]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Teltow-Fl%C3%A4ming',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Teltow-Fläming | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Ludwigsfelde',
       locationUrl: 'https://de.wikipedia.org/wiki/Ludwigsfelde',
@@ -2085,7 +3017,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_T
       description: '↑ Ludwigsfelde: „Gespalten von Schwarz und Silber, darin eine bewurzelte Kiefer in verwechselten Farben, rechts begleitet von einem goldenen Zahnrad und links von einem roten Vogelfang.“ Stadt Ludwigsfelde[9]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Teltow-Fl%C3%A4ming',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Teltow-Fläming | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Niedergörsdorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Niederg%C3%B6rsdorf',
@@ -2093,7 +3025,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_T
       description: '↑ Niedergörsdorf: „In Gold auf grünem Berg eine schwarze Windmühle mit silbernen Flügeln.“ Gemeinde Niedergörsdorf[10]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Teltow-Fl%C3%A4ming',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Teltow-Fläming | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Nuthe-Urstromtal',
       locationUrl: 'https://de.wikipedia.org/wiki/Nuthe-Urstromtal',
@@ -2101,7 +3033,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_T
       description: '↑ Nuthe-Urstromtal: „Durch erniedrigten Wellenschnitt schräglinks geteilt, oben in Silber über einem schräglinken blauen Wellenbalken ein schwarzes Fachwerkhaus mit 23 goldenen Gefachen, unten in Grün eine goldene Ähre nach der Teilung.“ Gemeinde Nuthe-Urstromtal[11]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Teltow-Fl%C3%A4ming',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Teltow-Fläming | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Rangsdorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Rangsdorf',
@@ -2109,7 +3041,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_T
       description: '↑ Rangsdorf: „Von Blau und Silber gespalten; vorn drei pfahlweise gestellte, links gewendete silberne Fische, hinten eine bewurzelte blaue Kiefer.“ Gemeinde Rangsdorf[12]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Teltow-Fl%C3%A4ming',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Teltow-Fläming | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Trebbin',
       locationUrl: 'https://de.wikipedia.org/wiki/Trebbin',
@@ -2117,7 +3049,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_T
       description: '↑ Trebbin: „Unter silbernem Schildhaupt in drei Reihen zu vier Plätzen von Schwarz und Silber geschacht.“ Stadt Trebbin[13]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Teltow-Fl%C3%A4ming',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Teltow-Fläming | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Zossen',
       locationUrl: 'https://de.wikipedia.org/wiki/Zossen',
@@ -2125,7 +3057,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_T
       description: '↑ Zossen: „In Silber zwischen einem jeweils querliegenden roten Baumstamm mit abgeschnittenen Ästen und dreizackigen schwarzen Fischspeer wachsend eine rote Kiefer mit grüner Krone.“ Stadt Zossen[14]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Teltow-Fl%C3%A4ming',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Teltow-Fläming | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Blankenfelde-Mahlow',
       locationUrl: 'https://de.wikipedia.org/wiki/Blankenfelde-Mahlow',
@@ -2133,7 +3065,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_T
       description: 'Gem. Blankenfelde-Mahlow Ortsteil Blankenfelde',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Teltow-Fl%C3%A4ming',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Teltow-Fläming | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Blankenfelde-Mahlow',
       locationUrl: 'https://de.wikipedia.org/wiki/Blankenfelde-Mahlow',
@@ -2141,7 +3073,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_T
       description: 'Gem. Blankenfelde-Mahlow Ortsteil Dahlewitz',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Teltow-Fl%C3%A4ming',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Teltow-Fläming | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Großbeeren',
       locationUrl: 'https://de.wikipedia.org/wiki/Gro%C3%9Fbeeren',
@@ -2149,7 +3081,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_T
       description: '↑ Diedersdorf: „Schräglinks geteilt von Blau und Gold; belegt oben von einem nach links gewendeten silbernen Halbmond, durchbohrt von einem schräglinken silbernen Pfeil, unten von einer schräglinken grünen Ähre.“ Gemeinde Großbeeren Ortsteil Diedersdorf[15]',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Teltow-Fl%C3%A4ming',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Teltow-Fläming | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Blankenfelde-Mahlow',
       locationUrl: 'https://de.wikipedia.org/wiki/Blankenfelde-Mahlow',
@@ -2157,7 +3089,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_T
       description: 'Gem. Blankenfelde-Mahlow Ortsteil Groß Kienitz',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Teltow-Fl%C3%A4ming',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Teltow-Fläming | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Rangsdorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Rangsdorf',
@@ -2165,7 +3097,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_T
       description: 'Gemeinde Rangsdorf Ortsteil Groß Machnow',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Teltow-Fl%C3%A4ming',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Teltow-Fläming | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Zossen',
       locationUrl: 'https://de.wikipedia.org/wiki/Zossen',
@@ -2173,7 +3105,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_T
       description: 'Stadt Zossen Ortsteil Kallinchen',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Teltow-Fl%C3%A4ming',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Teltow-Fläming | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Blankenfelde-Mahlow',
       locationUrl: 'https://de.wikipedia.org/wiki/Blankenfelde-Mahlow',
@@ -2181,7 +3113,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_T
       description: 'Gem. Blankenfelde-Mahlow Ortsteil Mahlow',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Teltow-Fl%C3%A4ming',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Teltow-Fläming | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Zossen',
       locationUrl: 'https://de.wikipedia.org/wiki/Zossen',
@@ -2189,7 +3121,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_T
       description: 'Stadt Zossen Ortsteil Wünsdorf',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Teltow-Fl%C3%A4ming',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Teltow-Fläming | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Baruth',
       locationUrl: 'https://de.wikipedia.org/wiki/Baruth/Mark',
@@ -2197,7 +3129,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_T
       description: 'Stadt Baruth Wappen bis 2001',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Teltow-Fl%C3%A4ming',
-      sourceTitle: 'Historische Wappen',
+      sourceTitle: 'Liste der Wappen im Landkreis Teltow-Fläming | Historische Wappen',
     }, {
       locationName: 'Ludwigsfelde',
       locationUrl: 'https://de.wikipedia.org/wiki/Ludwigsfelde',
@@ -2205,7 +3137,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_T
       description: 'Stadt Ludwigsfelde Wappen bis 1965–1993',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Teltow-Fl%C3%A4ming',
-      sourceTitle: 'Historische Wappen',
+      sourceTitle: 'Liste der Wappen im Landkreis Teltow-Fläming | Historische Wappen',
     }, {
       locationName: 'Zossen',
       locationUrl: 'https://de.wikipedia.org/wiki/Zossen',
@@ -2213,7 +3145,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_T
       description: 'Stadt Zossen Wappen bis 1996',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Teltow-Fl%C3%A4ming',
-      sourceTitle: 'Historische Wappen',
+      sourceTitle: 'Liste der Wappen im Landkreis Teltow-Fläming | Historische Wappen',
     }
 ]; 
 
@@ -2225,7 +3157,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_U
       description: '↑ Angermünde: „In Silber über vier blauen Wellen eine rote Burg mit drei bezinnten Türmen; aus dem größeren Mittelturm wächst ein ein goldenes Hifthorn blasender grün gekleideter Jäger, das offene Tor ist mit einem goldenen Hirschkopf belegt; auf dem rechten Seitenturm ein blauer Spangenhelm mit drei grünen Pfauenfedern, auf dem linken Seitenturm ein roter Adler.“ Stadt Angermünde[4]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Uckermark',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Uckermark | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Boitzenburger Land',
       locationUrl: 'https://de.wikipedia.org/wiki/Boitzenburger_Land',
@@ -2233,7 +3165,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_U
       description: '↑ Boitzenburger Land: „Geviert und geteilt durch eine silberne Leiste; Feld 1: in Blau ein silberner Renaissanceschlossgiebel mit zwei offenen Fenstern und einem Vierpass darüber, Feld 2 und 3: in Rot zwei silberne Balken, Feld 4: in Blau ein offenes silbernes Spitzbogenfenster.“ Gemeinde Boitzenburger Land[5]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Uckermark',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Uckermark | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Brüssow',
       locationUrl: 'https://de.wikipedia.org/wiki/Br%C3%BCssow',
@@ -2241,7 +3173,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_U
       description: '↑ Brüssow: „In Rot auf grünem Boden eine silberne Burg mit drei spitzbedachten und gold-bekreuzten Türmen; im Torbogen eine rote Steigleiter.“ Stadt Brüssow[6]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Uckermark',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Uckermark | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Casekow',
       locationUrl: 'https://de.wikipedia.org/wiki/Casekow',
@@ -2249,7 +3181,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_U
       description: '↑ Casekow: „In Gold auf grünem Dreiberg eine grüne Kastanie mit sieben Blättern, belegt mit einem silbernen Herzschild, darin ein gold-bewehrter roter Greif.“ Gemeinde Casekow[7]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Uckermark',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Uckermark | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Gartz (Oder)',
       locationUrl: 'https://de.wikipedia.org/wiki/Gartz_(Oder)',
@@ -2257,7 +3189,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_U
       description: '↑ Gartz (Oder): „In Silber ein blauer geharnischter Ritter mit golden bekröntem Helm und geschlossenem Visier und mit 3 grünen Pfauenfedern; in der Rechten an blauem, goldbeknauftem Speer ein nach aufwärts flatterndes, silbernes Banner mit einem zum Flaggenstock sehenden roten Greifen haltend, mit der Linken auf einen silbernen Schild mit rotem Greifen gestützt; hinter dem Schild ein gestürztes blaues Schwert mit goldenem Griff.“ Stadt Gartz (Oder)[8]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Uckermark',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Uckermark | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Göritz',
       locationUrl: 'https://de.wikipedia.org/wiki/G%C3%B6ritz',
@@ -2265,7 +3197,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_U
       description: '↑ Göritz: „Geviert von Schwarz und Silber; Feld 2: ein schwarzes Kammrad, dessen vier Speichen von einem Männerrumpf mit gold-gegürtetem, schwarz-rot gespaltenem Mantel und breitkrempigen Hut mit goldener Hutschnur überdeckt werden, Feld 3: drei durch goldene Stiele verbundene, schwarz-rot gespaltene Lindenblätter (2:1).“ Gemeinde Göritz[9]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Uckermark',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Uckermark | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Gramzow',
       locationUrl: 'https://de.wikipedia.org/wiki/Gramzow',
@@ -2273,7 +3205,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_U
       description: '↑ Gramzow: „In einer silbern gefugten roten Ziegelmauer ein spitzbogiges, silbern gerahmtes blaues Fenster, oben beseitet von zwei silbernen Dreipässen, darin ein stehender, widersehender rot-bewehrter Storch in natürlichen Farben.“ Gemeinde Gramzow[10]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Uckermark',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Uckermark | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Lychen',
       locationUrl: 'https://de.wikipedia.org/wiki/Lychen',
@@ -2281,7 +3213,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_U
       description: '↑ Lychen: „In Rot über blau-silbernem Wellenschildfuß eine silberne Burg, mit zwei pyramidenförmigen bezinnten Türmen, belegt mit je einem schwarzen Fenster, und einer torlosen bezinnten und gequaderten Mauer dazwischen; darüber schwebend zwischen zwei sechsstrahligen silbernen Sternen ein silberner Schild mit goldbewehrtem rotem Adler.“ Stadt Lychen[11]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Uckermark',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Uckermark | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Nordwestuckermark',
       locationUrl: 'https://de.wikipedia.org/wiki/Nordwestuckermark',
@@ -2289,7 +3221,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_U
       description: '↑ Nordweststuckermark: „Im goldenen Schild, bestreut mit schwarzen Getreidekörnern, eine grüne Windrose mit grün-schwarz facettiertem 16-strahligen Stern und ins rechte Obereck zeigendem schwarzen Richtungsweiser.“ Gemeinde Nordwestuckermark[12]',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Uckermark',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Uckermark | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Prenzlau',
       locationUrl: 'https://de.wikipedia.org/wiki/Prenzlau',
@@ -2297,7 +3229,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_U
       description: '↑ Prenzlau: „Von Silber und Rot geteilt, oben ein gold-bewehrter roter Adler mit einem über den Kopf gestülptem goldenen Spangenhelm, darauf ein roter Flug, unten ein auf blauen Wellen schwimmender silberner Schwan.“ Kreisstadt Prenzlau[13]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Uckermark',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Uckermark | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Schwedt/Oder',
       locationUrl: 'https://de.wikipedia.org/wiki/Schwedt/Oder',
@@ -2305,7 +3237,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_U
       description: '↑ Schwedt/Oder: „In Silber über einem Wellenschildfuß mit zwei blauen Wellenbalken auf einem Mauersockel eine rote Burg, an deren zwei seitlichen Rundtürmen jeweils zwei übereinanderliegende offene Fenster und ein beknauftes, mit drei Filialen versehenes Spitzdach angebracht sind; in der bezinnten Verbindungsmauer befindet sich seitlich rechts ein geschlossenes silbernes Tor. Zwischen den Türmen schwebt ein silberner Schild mit einem roten Greifen.“ Stadt Schwedt/Oder[14]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Uckermark',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Uckermark | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Templin',
       locationUrl: 'https://de.wikipedia.org/wiki/Templin',
@@ -2313,7 +3245,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_U
       description: '↑ Templin: „In Silber, bestreut mit 14 grünen Kleeblättern, ein goldbewehrter roter Adler.“ Stadt Templin[15]',
       type: ['city'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Uckermark',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Uckermark | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Uckerland',
       locationUrl: 'https://de.wikipedia.org/wiki/Uckerland',
@@ -2321,7 +3253,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_U
       description: 'Gemeinde Uckerland',
       type: ['gemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Uckermark',
-      sourceTitle: 'Wappen der Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Uckermark | Wappen der Städte und Gemeinden',
     }, {
       locationName: 'Schwedt/Oder',
       locationUrl: 'https://de.wikipedia.org/wiki/Schwedt/Oder',
@@ -2329,7 +3261,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_U
       description: '↑ Berkholz-Meyenburg: „Im Schildhaupt durch zwei Spitzen von Grün und Gold geteilt, darunter über einem grünen Berg schräggekreuzt zwei grüne Birkenblätter mit zwei nach außen gekehrten Blütenständen.“ Stadt Schwedt/Oder Ortsteil Berkholz-Meyenburg[17]',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Uckermark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Uckermark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Angermünde',
       locationUrl: 'https://de.wikipedia.org/wiki/Angerm%C3%BCnde',
@@ -2337,7 +3269,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_U
       description: 'Stadt Angermünde Ortsteil Greiffenberg',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Uckermark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Uckermark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Schwedt/Oder',
       locationUrl: 'https://de.wikipedia.org/wiki/Schwedt/Oder',
@@ -2345,7 +3277,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_U
       description: '↑ Mark Landin: „Im gespaltenen Schild vorn in Silber am Spalt ein halber gold-bewehrter roter Adler mit goldenem Kleebattstengel; hinten schwarz-silbern geschacht (2 × gespalten, 6 × geteilt).“ Stadt Schwedt/Oder Gemeinde Mark Landin[18]',
       type: ['formerCity','formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Uckermark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Uckermark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Schwedt/Oder',
       locationUrl: 'https://de.wikipedia.org/wiki/Schwedt/Oder',
@@ -2353,7 +3285,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_U
       description: 'Stadt Schwedt/Oder Ortsteil Vierraden',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Uckermark',
-      sourceTitle: 'Wappen ehemaliger Städte und Gemeinden',
+      sourceTitle: 'Liste der Wappen im Landkreis Uckermark | Wappen ehemaliger Städte und Gemeinden',
     }, {
       locationName: 'Gartz (Oder)',
       locationUrl: 'https://de.wikipedia.org/wiki/Gartz_(Oder)',
@@ -2361,6 +3293,186 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_U
       description: 'Stadt Gartz (Oder) Wappen bis 1992',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Uckermark',
-      sourceTitle: 'Historische Wappen',
+      sourceTitle: 'Liste der Wappen im Landkreis Uckermark | Historische Wappen',
+    }
+]; 
+
+urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Brandenburg'] = [
+  {
+      locationName: 'Brandenburg',
+      locationUrl: 'https://de.wikipedia.org/wiki/Brandenburg',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/DEU_Brandenburg_COA.svg/120px-DEU_Brandenburg_COA.svg.png',
+      description: 'Festgelegt durch das Gesetz über die Hoheitszeichen des Landes Brandenburg[1] vom 30. Januar 1991: „Das Landeswappen zeigt auf einem Schild in Weiß (Silber) einen nach rechts blickenden, mit goldenen Kleestengeln auf den Flügeln gezierten und gold bewehrten roten Adler.“ Die Verfassung des Landes Brandenburg[2] wurde erst am 20. August 1992 erlassen und fasst sich zu diesem Thema daher sehr kurz: Artikel 4. Landesfarben und -wappen. „Die Landesfarben sind rot und weiß. Das Landeswappen ist der rote märkische Adler auf weißem Feld.“ Brandenburg ',
+      type: ['land'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Brandenburg',
+      sourceTitle: 'Liste der Wappen in Brandenburg | Landeswappen',
+    }, {
+      locationName: 'Brandenburg an der Havel',
+      locationUrl: 'https://de.wikipedia.org/wiki/Brandenburg_an_der_Havel',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/DEU_Brandenburg_an_der_Havel_COA.svg/120px-DEU_Brandenburg_an_der_Havel_COA.svg.png',
+      description: 'Genehmigt am 13. März 1995 durch den Innenminister des Landes Brandenburg: „Doppelwappen der Alt- (heraldisch rechts) und Neustadt (heraldisch links) Brandenburg. Altstadt: In Silber eine rote Burg mit offenem schwarzen Tor und aufgezogenem goldenen Fallgitter, deren vier bezinnte und goldbeknaufte Türme mit grünen Spitzdächern versehen sind. Die beiden mittleren Türme sind je mit einem silbernen Schild belegt, im rechten ein schwarzer, im linken ein roter Adler. Neustadt: In Silber eine rote Burg mit Zinnenmauer, deren fünf bezinnte und goldbeknaufte Türme unterschiedlicher Größe mit blauen Spitzdächern versehen sind. Im schwarzen Torbogen steht ein silberner Gewappneter mit geschultertem Schwert in der Rechten, mit der linken einen aufgestellten silbernen Spitzschild mit rotem Adler haltend..“[3] Brandenburg an der Havel ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Brandenburg',
+      sourceTitle: 'Liste der Wappen in Brandenburg | Kreisfreie Städte',
+    }, {
+      locationName: 'Cottbus',
+      locationUrl: 'https://de.wikipedia.org/wiki/Cottbus',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/DEU_Cottbus_COA.svg/120px-DEU_Cottbus_COA.svg.png',
+      description: 'Genehmigt am 5. Juni 2000 durch den Innenminister des Landes Brandenburg: „In Silber eine bezinnte, gequaderte rote Burg mit geschlossenem Tor. Zwischen den mit beknauften Spitzdächern versehenen Türmen ragen über der Mauer zwei kleine Häuschen hervor. Darüber schwebt ein silberner Dreieckschild mit einem aufgerichteten roten Krebs.“[4] Cottbus (Chóśebuz) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Brandenburg',
+      sourceTitle: 'Liste der Wappen in Brandenburg | Kreisfreie Städte',
+    }, {
+      locationName: 'Frankfurt (Oder)',
+      locationUrl: 'https://de.wikipedia.org/wiki/Frankfurt_(Oder)',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/DEU_Frankfurt_%28Oder%29_COA.svg/120px-DEU_Frankfurt_%28Oder%29_COA.svg.png',
+      description: 'Genehmigt am 3. September 1992 durch den Innenminister des Landes Brandenburg: „In Silber auf grünem Berg aufgerichtet stehend ein goldbewehrter roter Hahn im Kleeblattbogen eines von zwei sechseckigen Türmen beseiteten offenen, roten Torbaus; darüber schwebt ein silberner Schild mit rotem Adler; auf den goldbeknauften Dächern der Seitentürme steht je ein abgewendeter, widersehender goldener Vogel; der breitgedachte Mittelturm ist an den Ecken mit je einem goldenen Kreuz versehen.“[5] Frankfurt (Oder) ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Brandenburg',
+      sourceTitle: 'Liste der Wappen in Brandenburg | Kreisfreie Städte',
+    }, {
+      locationName: 'Potsdam',
+      locationUrl: 'https://de.wikipedia.org/wiki/Potsdam',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/DEU_Potsdam_COA.svg/120px-DEU_Potsdam_COA.svg.png',
+      description: 'Genehmigt am 27. April 1994 durch den Innenminister des Landes Brandenburg: „In Gold ein linkssehender, schwarzbewehrter golden gerauteter roter Adler. Den oberen Schildrand ziert eine gewölbte fünfzinnige rote Mauerkrone.“[6] Potsdam ',
+      type: ['city'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Brandenburg',
+      sourceTitle: 'Liste der Wappen in Brandenburg | Kreisfreie Städte',
+    }, {
+      locationName: 'Barnim',
+      locationUrl: 'https://de.wikipedia.org/wiki/Landkreis_Barnim',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Wappen_Landkreis_Barnim.svg/120px-Wappen_Landkreis_Barnim.svg.png',
+      description: 'Genehmigt am 17. Oktober 1995 durch den Innenminister des Landes Brandenburg. „Geviert von Silber (Feld 1 und 4) und Rot (Feld 2 und 3); oben ein wachsender, golden bewehrter Adler in verwechselten Farben mit goldenen Kleestengeln auf den Flügeln.“[7][8] Barnim ',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Brandenburg',
+      sourceTitle: 'Liste der Wappen in Brandenburg | Landkreise',
+    }, {
+      locationName: 'Dahme-Spreewald',
+      locationUrl: 'https://de.wikipedia.org/wiki/Landkreis_Dahme-Spreewald',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Wappen_Landkreis_Dahme-Spreewald.svg/120px-Wappen_Landkreis_Dahme-Spreewald.svg.png',
+      description: 'Genehmigt am 16. November 1995 durch den Innenminister des Landes Brandenburg. „In Silber eine eingebogene, mit goldener Königskrone belegte blaue Spitze, begleitet vorn von einem widersehenden, golden bewehrten, abgeschnittenen roten Stierrumpf, hinten von einem golden bewehrten, abgeschnittenen roten Adlerrumpf.“[9] Dahme-Spreewald ',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Brandenburg',
+      sourceTitle: 'Liste der Wappen in Brandenburg | Landkreise',
+    }, {
+      locationName: 'Elbe-Elster',
+      locationUrl: 'https://de.wikipedia.org/wiki/Landkreis_Elbe-Elster',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Wappen_des_Landkreises_Elbe-Elster.svg/120px-Wappen_des_Landkreises_Elbe-Elster.svg.png',
+      description: 'Genehmigt am 24. April 1995 durch den Innenminister des Landes Brandenburg. „Im gevierteilten Schild oben vorn neunmal von Gold und Schwarz geteilt; hinten in Silber ein goldbewehrter rückschauender roter Stier; unten vorn in Gold ein rotbewehrter und rotgezungter, aufgerichteter schwarzer Löwe, hinten neunmal von Rot und Silber geteilt.“[10][11] Elbe-Elster ',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Brandenburg',
+      sourceTitle: 'Liste der Wappen in Brandenburg | Landkreise',
+    }, {
+      locationName: 'Havelland',
+      locationUrl: 'https://de.wikipedia.org/wiki/Landkreis_Havelland',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/DEU_Havelland_COA.svg/120px-DEU_Havelland_COA.svg.png',
+      description: 'Genehmigt am 31. August 1995 durch den Innenminister des Landes Brandenburg. „Von Blau über Silber durch Wellenschnitt geteilt; oben zwei versetzt rechtshin fliegende, goldgeschnäbelte silberne Schwäne, unten ein goldbewehrtes rotes Adlerhaupt, beiderseits begleitet von einem sechsstrahligen blauen Stern.“[12] Havelland ',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Brandenburg',
+      sourceTitle: 'Liste der Wappen in Brandenburg | Landkreise',
+    }, {
+      locationName: 'Märkisch-Oderland',
+      locationUrl: 'https://de.wikipedia.org/wiki/Landkreis_M%C3%A4rkisch-Oderland',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/DEU_Maerkisch-Oderland_COA.svg/120px-DEU_Maerkisch-Oderland_COA.svg.png',
+      description: 'Genehmigt am 2. Juli 1996 durch den Innenminister des Landes Brandenburg. „Geteilt von Silber und Rot; oben wachsend ein goldbewehrter, roter Adler, die Flügel mit goldenen Kleestengeln belegt; unten ein silberner Wellenbalken, belegt mit einem roten Wellenfaden und bedeckt mit schräggekreuzten, begrifften goldenen Bootshaken, oben bewinkelt von einem goldenen Stern.“[13][14] Märkisch-Oderland ',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Brandenburg',
+      sourceTitle: 'Liste der Wappen in Brandenburg | Landkreise',
+    }, {
+      locationName: 'Oberhavel',
+      locationUrl: 'https://de.wikipedia.org/wiki/Landkreis_Oberhavel',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/DEU_Oberhavel_COA.svg/120px-DEU_Oberhavel_COA.svg.png',
+      description: 'Genehmigt am 18. Mai 1994 durch den Innenminister des Landes Brandenburg. „Geteilt von Silber über Grün; oben der goldbewehrte und rotgezungte rote Adler, die Flügel mit goldenen Kleestengeln belegt; unten zwei versetzt nebeneinander fliegende rotbewehrte silberne Schwäne.“[15] Oberhavel ',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Brandenburg',
+      sourceTitle: 'Liste der Wappen in Brandenburg | Landkreise',
+    }, {
+      locationName: 'Oberspreewald-Lausitz',
+      locationUrl: 'https://de.wikipedia.org/wiki/Landkreis_Oberspreewald-Lausitz',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Wappen_des_Landkreises_Oberspreewald-Lausitz.svg/120px-Wappen_des_Landkreises_Oberspreewald-Lausitz.svg.png',
+      description: 'Genehmigt am 25. November 1994 durch den Innenminister des Landes Brandenburg. „Geteilt von Silber und Blau, oben ein unbewehrter schreitender roter Stier mit über den Rücken geschlagenem Schweif, unten eine dreigezinnte goldene Mauer, belegt mit einem goldenen Schild, darin ein aufrechter schwarzer Löwe.“[16] Oberspreewald-Lausitz ',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Brandenburg',
+      sourceTitle: 'Liste der Wappen in Brandenburg | Landkreise',
+    }, {
+      locationName: 'Oder-Spree',
+      locationUrl: 'https://de.wikipedia.org/wiki/Landkreis_Oder-Spree',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Wappen_Landkreis_Oder-Spree.svg/120px-Wappen_Landkreis_Oder-Spree.svg.png',
+      description: 'Genehmigt am 23. Februar 1996 durch den Innenminister des Landes Brandenburg. „Gevierteilt; oben vorn in Gold zwei gekreuzte rote Bootshaken oben bewinkelt von einem sechsstrahligen roten Stern, hinten in Schwarz ein rot-silber geschachter Schräglinksbalken; unten vorn in Rot drei mit den Spitzen nach außen gekehrte, auf dem Rücken liegende silberne Sensenklingen übereinander, hinten in Gold eine fünfendige rote Hirschstange.“[17] Oder-Spree ',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Brandenburg',
+      sourceTitle: 'Liste der Wappen in Brandenburg | Landkreise',
+    }, {
+      locationName: 'Ostprignitz-Ruppin',
+      locationUrl: 'https://de.wikipedia.org/wiki/Landkreis_Ostprignitz-Ruppin',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Wappen_des_Landkreises_Ostprignitz-Ruppin.svg/120px-Wappen_des_Landkreises_Ostprignitz-Ruppin.svg.png',
+      description: 'Genehmigt am 2. Mai 1995 durch den Innenminister des Landes Brandenburg. „Gespalten durch eine silberne Deichsel; oben in Rot ein goldbewehrter silberner Adler; unten in Grün vorn eine rotgebundene goldene Lilie, hinten eine rotbelegte goldene Mitra.“[18][19] Ostprignitz-Ruppin ',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Brandenburg',
+      sourceTitle: 'Liste der Wappen in Brandenburg | Landkreise',
+    }, {
+      locationName: 'Potsdam-Mittelmark',
+      locationUrl: 'https://de.wikipedia.org/wiki/Landkreis_Potsdam-Mittelmark',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Wappen_des_Landkreises_Potsdam-Mittelmark.svg/120px-Wappen_des_Landkreises_Potsdam-Mittelmark.svg.png',
+      description: 'Genehmigt am 25. Oktober 1996 durch den Innenminister des Landes Brandenburg. „Geviert; 1: in Silber ein gold-bewehrter roter Adler, 2: in Schwarz ein schräglinker goldener Eichenzweig mit drei Blättern, 3: neunfach von Schwarz und Gold geteilt, 4: in Silber zwei gekreuzte rote Schlüssel.“[20] Potsdam-Mittelmark ',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Brandenburg',
+      sourceTitle: 'Liste der Wappen in Brandenburg | Landkreise',
+    }, {
+      locationName: 'Prignitz',
+      locationUrl: 'https://de.wikipedia.org/wiki/Landkreis_Prignitz',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Wappen_des_Landkreises_Prignitz.svg/120px-Wappen_des_Landkreises_Prignitz.svg.png',
+      description: 'Genehmigt am 14. März 1994 durch den Innenminister des Landes Brandenburg. „In Rot über Silber durch Wellenschnitt geteilt; oben eine goldbewehrte, flugbereite silberne Gans begleitet von acht einen oben offenen Halbkreis bildenden silbernen Perlen, unten ein rotbezungter, schreitender schwarzer Wolf.“[21] Prignitz ',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Brandenburg',
+      sourceTitle: 'Liste der Wappen in Brandenburg | Landkreise',
+    }, {
+      locationName: 'Spree-Neiße',
+      locationUrl: 'https://de.wikipedia.org/wiki/Landkreis_Spree-Nei%C3%9Fe',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Wappen_Landkreis_Spree-Neisse.png/120px-Wappen_Landkreis_Spree-Neisse.png',
+      description: 'Genehmigt am 6. September 1995 durch den Innenminister des Landes Brandenburg. „Gevierteilt; oben vorn in Silber ein aufrechter roter Krebs, hinten in Rot ein steigender, doppelt geschwänzter, gekrönter silberner Löwe; unten vorn in Blau eine dreiblättrige goldene Krone, hinten in Gold eine aufgerichtete, nach außen gebogene rote Hirschstange mit vier Enden und kleeblattförmiger Rose.“[22] Spree-Neiße ',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Brandenburg',
+      sourceTitle: 'Liste der Wappen in Brandenburg | Landkreise',
+    }, {
+      locationName: 'Teltow-Fläming',
+      locationUrl: 'https://de.wikipedia.org/wiki/Landkreis_Teltow-Fl%C3%A4ming',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Wappen_des_Landkreises_Teltow-Fl%C3%A4ming.svg/120px-Wappen_des_Landkreises_Teltow-Fl%C3%A4ming.svg.png',
+      description: 'Beschlossen am 21. Oktober 1996[23] vom Kreistag Teltow-Fläming, genehmigt am 21. November 1996 durch den Innenminister des Landes Brandenburg. „Gespalten und halb geteilt von Silber, Rot und Silber über einem in vier Reihen von Schwarz und Silber geschachten Schildfuß: vorne ein halber gold-bewehrter roter Adler am Spalt mit goldenem Kleestengel auf dem Flügel, hinten belegt mit einem goldenen Krummstab mit vier roten Edelsteinen am Knauf.“[24][25] Teltow-Fläming ',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Brandenburg',
+      sourceTitle: 'Liste der Wappen in Brandenburg | Landkreise',
+    }, {
+      locationName: 'Uckermark',
+      locationUrl: 'https://de.wikipedia.org/wiki/Landkreis_Uckermark',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/DEU_Landkreis_Uckermark_COA.svg/120px-DEU_Landkreis_Uckermark_COA.svg.png',
+      description: 'Genehmigt am 8. November 1995 durch den Innenminister des Landes Brandenburg. „In Gold ein mit zwei silbernen Fäden belegter, mehrfach gekerbter blauer Balken, überdeckt von einem gotischen, mit silbernen Putzflächen belegten, mit offenem Torbogen versehenen, roten Backsteinturm mit gezinnten Mauerflügeln; das Mauerwerk belegt mit zwei auswärts gelehnten silbernen Spitzschilden, darin rechts ein golden bewehrter, roter Adler mit goldenen Kleestengeln auf den Flügeln, links ein aufrechter, golden bewehrter roter Greif.“[26] Uckermark ',
+      type: ['kreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Brandenburg',
+      sourceTitle: 'Liste der Wappen in Brandenburg | Landkreise',
+    }, {
+      locationName: '',
+      locationUrl: '',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Wappen_Kreis_Herzberg.svg/120px-Wappen_Kreis_Herzberg.svg.png',
+      description: 'Genehmigt ???? durch den Oberpräsidenten der Provinz Sachsen für den damaligen Landkreis Schweinitz, fortgeführt durch den Kreis Herzberg: Der 1950 neugebildete Kreis Herzberg übernahm zunächst das Wappen des Landkreises Schweinitz, bevor er ein neues Wappen annahm. Geteilt: oben in Schwarz zwei goldene Balken, belegt mit einem schrägrechten grünem Rautenkranz, unten in Silber drei rote Seeblätter.',
+      type: ['formerKreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Brandenburg',
+      sourceTitle: 'Liste der Wappen in Brandenburg | Ehemalige Landkreise',
+    }, {
+      locationName: '',
+      locationUrl: '',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Wappen_Landkreis_Herzberg.jpg/120px-Wappen_Landkreis_Herzberg.jpg',
+      description: 'Genehmigt ????: Der 1950 neugebildete Kreis Herzberg übernahm zunächst das Wappen des Landkreises Schweinitz, bevor er ein neues Wappen annahm. In Silber eine nach rechts blickender, mit goldenen Kleestengeln auf den Flügeln gezierten und goldbewehrter roter Adler, auf den Flügeln belegt mit zwei schräg gestellten Schilden: vorn in Schwarz vier goldene Balken, belegt mit einem schrägrechten grünen Rautenkranz, hinten in Silber drei rote Seeblätter.',
+      type: ['formerKreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Brandenburg',
+      sourceTitle: 'Liste der Wappen in Brandenburg | Ehemalige Landkreise',
+    }, {
+      locationName: '',
+      locationUrl: '',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Wappen_Landkreis_Schweinitz.svg/120px-Wappen_Landkreis_Schweinitz.svg.png',
+      description: 'Genehmigt ???? durch den Oberpräsidenten der Provinz Sachsen für den damaligen Landkreis Schweinitz, fortgeführt durch den Kreis Herzberg: Der 1950 neugebildete Kreis Herzberg übernahm zunächst das Wappen des Landkreises Schweinitz, bevor er ein neues Wappen annahm. Geteilt: oben in Schwarz zwei goldene Balken, belegt mit einem schrägrechten grünem Rautenkranz, unten in Silber drei rote Seeblätter.',
+      type: ['formerKreis'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Brandenburg',
+      sourceTitle: 'Liste der Wappen in Brandenburg | Ehemalige Landkreise',
     }
 ]; 

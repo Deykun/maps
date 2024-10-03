@@ -24,7 +24,7 @@ const endIndex = startIndex + chunkSize;
 console.log(`${chalk.green(`Generating chunk ${chunkIndex}`)} (${startIndex} - ${endIndex}) (${units.length} total)`);
 
 fetchImages({
-	administrativeDivisions: units,
+	administrativeDivisions: units.slice(startIndex, endIndex),
 	path: 'formerUnit',
 	lang: 'de',
 	subpage: 'deutsche-heraldik',

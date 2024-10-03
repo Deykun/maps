@@ -16,7 +16,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Bremen'] = 
       description: 'Karte Bremen, Deutschland',
       type: ['land'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Bremen',
-      sourceTitle: 'Landeswappen',
+      sourceTitle: 'Liste der Wappen in Bremen | Landeswappen',
     }, {
       locationName: '',
       locationUrl: '',
@@ -24,7 +24,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Bremen'] = 
       description: 'Bremer Schlüssel',
       type: ['land'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Bremen',
-      sourceTitle: 'Landeswappen',
+      sourceTitle: 'Liste der Wappen in Bremen | Landeswappen',
     }, {
       locationName: 'Freie Hansestadt Bremen',
       locationUrl: 'https://de.wikipedia.org/wiki/Freie_Hansestadt_Bremen',
@@ -32,7 +32,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Bremen'] = 
       description: 'Mittleres Landeswappen Freie Hansestadt Bremen',
       type: ['city','land'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Bremen',
-      sourceTitle: 'Landeswappen',
+      sourceTitle: 'Liste der Wappen in Bremen | Landeswappen',
     }, {
       locationName: 'Freie Hansestadt Bremen',
       locationUrl: 'https://de.wikipedia.org/wiki/Freie_Hansestadt_Bremen',
@@ -40,6 +40,6 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Bremen'] = 
       description: 'Großes Landeswappen Freie Hansestadt Bremen',
       type: ['city','land'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Bremen',
-      sourceTitle: 'Landeswappen',
+      sourceTitle: 'Liste der Wappen in Bremen | Landeswappen',
     }
 ]; 

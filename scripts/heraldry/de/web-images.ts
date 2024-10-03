@@ -7,6 +7,7 @@ import unit3JSON from '../../../public/data/heraldry/de/unit-3-map.json';
 import former0UnitJSON from '../../../public/data/heraldry/de/formerUnit-0-map.json';
 import former1UnitJSON from '../../../public/data/heraldry/de/formerUnit-1-map.json';
 import former2UnitJSON from '../../../public/data/heraldry/de/formerUnit-2-map.json';
+import former3UnitJSON from '../../../public/data/heraldry/de/formerUnit-3-map.json';
 
 const unitJSON = {
   ...unit0JSON,
@@ -19,6 +20,7 @@ const formerUnitJSON = {
   ...former0UnitJSON,
   ...former1UnitJSON,
   ...former2UnitJSON,
+  ...former3UnitJSON,
 };
 
 getSprites({

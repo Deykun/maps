@@ -8,6 +8,7 @@ export const urls: {
   unitBySource: {},
 };
 
+
 urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = [
   {
       locationName: '',
@@ -16,7 +17,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Karte Berlin, Deutschland',
       type: ['land'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Landeswappen',
+      sourceTitle: 'Liste der Wappen in Berlin | Landeswappen',
     }, {
       locationName: 'Berlin',
       locationUrl: 'https://de.wikipedia.org/wiki/Berlin',
@@ -24,7 +25,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Landeswappen Berlin (Details)',
       type: ['land'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Landeswappen',
+      sourceTitle: 'Liste der Wappen in Berlin | Landeswappen',
     }, {
       locationName: 'Charlottenburg-Wilmersdorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Charlottenburg-Wilmersdorf',
@@ -32,7 +33,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Charlottenburg-Wilmersdorf (Details)',
       type: ['bezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Wappen der Bezirke Berlins',
+      sourceTitle: 'Liste der Wappen in Berlin | Wappen der Bezirke Berlins',
     }, {
       locationName: 'Friedrichshain-Kreuzberg',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Friedrichshain-Kreuzberg',
@@ -40,7 +41,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Friedrichshain-Kreuzberg (Details)',
       type: ['bezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Wappen der Bezirke Berlins',
+      sourceTitle: 'Liste der Wappen in Berlin | Wappen der Bezirke Berlins',
     }, {
       locationName: 'Lichtenberg',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Lichtenberg',
@@ -48,7 +49,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Lichtenberg (Details)',
       type: ['bezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Wappen der Bezirke Berlins',
+      sourceTitle: 'Liste der Wappen in Berlin | Wappen der Bezirke Berlins',
     }, {
       locationName: 'Marzahn-Hellersdorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Marzahn-Hellersdorf',
@@ -56,7 +57,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Marzahn-Hellersdorf (Details)',
       type: ['bezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Wappen der Bezirke Berlins',
+      sourceTitle: 'Liste der Wappen in Berlin | Wappen der Bezirke Berlins',
     }, {
       locationName: 'Mitte',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Mitte',
@@ -64,7 +65,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Mitte (Details)',
       type: ['bezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Wappen der Bezirke Berlins',
+      sourceTitle: 'Liste der Wappen in Berlin | Wappen der Bezirke Berlins',
     }, {
       locationName: 'Neukölln',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Neuk%C3%B6lln',
@@ -72,7 +73,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Neukölln (Details)',
       type: ['bezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Wappen der Bezirke Berlins',
+      sourceTitle: 'Liste der Wappen in Berlin | Wappen der Bezirke Berlins',
     }, {
       locationName: 'Pankow',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Pankow',
@@ -80,7 +81,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Pankow (Details)',
       type: ['bezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Wappen der Bezirke Berlins',
+      sourceTitle: 'Liste der Wappen in Berlin | Wappen der Bezirke Berlins',
     }, {
       locationName: 'Reinickendorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Reinickendorf',
@@ -88,7 +89,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Reinickendorf (Details)',
       type: ['bezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Wappen der Bezirke Berlins',
+      sourceTitle: 'Liste der Wappen in Berlin | Wappen der Bezirke Berlins',
     }, {
       locationName: 'Spandau',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Spandau',
@@ -96,7 +97,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Spandau (Details)',
       type: ['bezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Wappen der Bezirke Berlins',
+      sourceTitle: 'Liste der Wappen in Berlin | Wappen der Bezirke Berlins',
     }, {
       locationName: 'Steglitz-Zehlendorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Steglitz-Zehlendorf',
@@ -104,7 +105,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Steglitz-Zehlendorf (Details)',
       type: ['bezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Wappen der Bezirke Berlins',
+      sourceTitle: 'Liste der Wappen in Berlin | Wappen der Bezirke Berlins',
     }, {
       locationName: 'Tempelhof-Schöneberg',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Tempelhof-Sch%C3%B6neberg',
@@ -112,7 +113,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Tempelhof-Schöneberg (Details)',
       type: ['bezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Wappen der Bezirke Berlins',
+      sourceTitle: 'Liste der Wappen in Berlin | Wappen der Bezirke Berlins',
     }, {
       locationName: 'Treptow-Köpenick',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Treptow-K%C3%B6penick',
@@ -120,7 +121,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Treptow-Köpenick (Details)',
       type: ['bezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Wappen der Bezirke Berlins',
+      sourceTitle: 'Liste der Wappen in Berlin | Wappen der Bezirke Berlins',
     }, {
       locationName: '',
       locationUrl: '',
@@ -128,7 +129,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Stadtwappen ab 1875',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen',
     }, {
       locationName: '',
       locationUrl: '',
@@ -136,7 +137,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Stadtwappen ab 1935 (und Ostberlin bis 1991)',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen',
     }, {
       locationName: '',
       locationUrl: '',
@@ -144,7 +145,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'großes Wappen ab 1709',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Stadtwappen Berlins',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Stadtwappen Berlins',
     }, {
       locationName: '',
       locationUrl: '',
@@ -152,7 +153,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'großes Wappen ab 1839',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Stadtwappen Berlins',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Stadtwappen Berlins',
     }, {
       locationName: '',
       locationUrl: '',
@@ -160,7 +161,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Stadtwappen ab 1875',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Stadtwappen Berlins',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Stadtwappen Berlins',
     }, {
       locationName: '',
       locationUrl: '',
@@ -168,7 +169,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'großes Wappen ab 1883',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Stadtwappen Berlins',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Stadtwappen Berlins',
     }, {
       locationName: '',
       locationUrl: '',
@@ -176,7 +177,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'kleines Wappen ab 1883',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Stadtwappen Berlins',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Stadtwappen Berlins',
     }, {
       locationName: '',
       locationUrl: '',
@@ -184,7 +185,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Stadtwappen ab 1935 (und Ostberlin bis 1991)',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Stadtwappen Berlins',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Stadtwappen Berlins',
     }, {
       locationName: 'Charlottenburg',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Charlottenburg',
@@ -192,7 +193,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Charlottenburg ab 1957 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: 'Friedrichshain',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Friedrichshain',
@@ -200,7 +201,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Friedrichshain ab 1935 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: '(Details)',
       locationUrl: 'https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Friedrichshain-Kreuzberg#Bezirk_Friedrichshain',
@@ -208,7 +209,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Friedrichshain ab 1987 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: '(Details)',
       locationUrl: 'https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Friedrichshain-Kreuzberg#Bezirk_Friedrichshain',
@@ -216,7 +217,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Friedrichshain ab 1991 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: 'Hellersdorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Hellersdorf',
@@ -224,7 +225,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Hellersdorf ab 1986 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: '(Details)',
       locationUrl: 'https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Marzahn-Hellersdorf#Bezirk_Hellersdorf',
@@ -232,7 +233,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Hellersdorf ab 1992 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: 'Hohenschönhausen',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Hohensch%C3%B6nhausen',
@@ -240,7 +241,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Hohenschönhausen ab 1987 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: '(Details)',
       locationUrl: 'https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Lichtenberg#Bezirk_Hohensch%C3%B6nhausen',
@@ -248,7 +249,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Hohenschönhausen ab 1992 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: 'Köpenick',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_K%C3%B6penick',
@@ -256,7 +257,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Köpenick ab 1920 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: '(Details)',
       locationUrl: 'https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Treptow-K%C3%B6penick#Bezirkswappen',
@@ -264,7 +265,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Köpenick ab 1987 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: '(Details)',
       locationUrl: 'https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Treptow-K%C3%B6penick#Bezirkswappen',
@@ -272,7 +273,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Köpenick ab 1992 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: 'Kreuzberg',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Kreuzberg',
@@ -280,7 +281,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Kreuzberg ab 1956 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: 'Lichtenberg',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Lichtenberg',
@@ -288,7 +289,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Lichtenberg ab 1987 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: 'Lichtenberg',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Lichtenberg',
@@ -296,7 +297,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Lichtenberg ab 1991 bis 2001 (Details) Abbildung liegt nicht vor.',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: 'Marzahn',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Marzahn',
@@ -304,7 +305,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Marzahn ab 1979 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: '(Details)',
       locationUrl: 'https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Marzahn-Hellersdorf#Bezirk_Marzahn',
@@ -312,7 +313,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Marzahn ab 1992 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: 'Mitte',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Mitte',
@@ -320,7 +321,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Mitte ab 1987 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: 'Mitte',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Mitte',
@@ -328,7 +329,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Mitte ab 1994 bis 2001 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: 'Pankow',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Pankow',
@@ -336,7 +337,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Pankow ab 1987 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: 'Pankow',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Pankow',
@@ -344,7 +345,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Pankow ab [nach 1990] bis 2001 (Details) Abbildung liegt nicht vor.',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: 'Prenzlauer Berg',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Prenzlauer_Berg',
@@ -352,7 +353,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Prenzlauer Berg ab 1987 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: '(Details)',
       locationUrl: 'https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Pankow#Bezirk_Prenzlauer_Berg',
@@ -360,7 +361,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Prenzlauer Berg ab 1992 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: 'Schöneberg',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Sch%C3%B6neberg',
@@ -368,7 +369,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Schöneberg ab 1956 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: 'Steglitz',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Steglitz',
@@ -376,7 +377,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Steglitz ab 1956 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: 'Tempelhof',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Tempelhof',
@@ -384,7 +385,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Tempelhof ab 1957 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: 'Tiergarten',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Tiergarten',
@@ -392,7 +393,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Tiergarten ab 1955 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: 'Treptow',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Treptow',
@@ -400,7 +401,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Treptow ab 1920 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: '(Details)',
       locationUrl: 'https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Treptow-K%C3%B6penick#Bezirkswappen',
@@ -408,7 +409,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Treptow ab 1992 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: 'Wedding',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Wedding',
@@ -416,7 +417,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Wedding ab 1955 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: 'Weißensee',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Wei%C3%9Fensee',
@@ -424,7 +425,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Weißensee ab 1987 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: '(Details)',
       locationUrl: 'https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Pankow#Bezirk_Wei%C3%9Fensee',
@@ -432,7 +433,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Weißensee ab 1992 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: 'Wilmersdorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Wilmersdorf',
@@ -440,7 +441,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Wilmersdorf ab 1955 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: 'Zehlendorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Zehlendorf',
@@ -448,7 +449,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Zehlendorf ab 1956 (Details)',
       type: ['formerBezirke'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Bezirke (1945–2001)',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Bezirke (1945–2001)',
     }, {
       locationName: 'Charlottenburg',
       locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Charlottenburg',
@@ -456,7 +457,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Charlottenburg (Details)',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Städte',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Städte',
     }, {
       locationName: 'Neu-Cölln',
       locationUrl: 'https://de.wikipedia.org/wiki/Neu-K%C3%B6lln',
@@ -464,7 +465,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Neu-Cölln (Details)',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Städte',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Städte',
     }, {
       locationName: 'Dorotheenstadt',
       locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Dorotheenstadt',
@@ -472,7 +473,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Dorotheenstadt (Details)',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Städte',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Städte',
     }, {
       locationName: 'Friedrichstadt',
       locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Friedrichstadt',
@@ -480,7 +481,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Friedrichstadt (Details)',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Städte',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Städte',
     }, {
       locationName: 'Friedrichswerder',
       locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Friedrichswerder',
@@ -488,7 +489,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Friedrichswerder (Details)',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Städte',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Städte',
     }, {
       locationName: 'Königsstadt',
       locationUrl: 'https://de.wikipedia.org/wiki/K%C3%B6nigsstadt',
@@ -496,7 +497,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Königsstadt (Details)',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Städte',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Städte',
     }, {
       locationName: 'Lichtenberg',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Lichtenberg',
@@ -504,7 +505,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Lichtenberg (Details)',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Städte',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Städte',
     }, {
       locationName: 'Luisenstadt',
       locationUrl: 'https://de.wikipedia.org/wiki/Luisenstadt',
@@ -512,7 +513,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Luisenstadt (Details)',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Städte',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Städte',
     }, {
       locationName: 'Rixdorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Neuk%C3%B6lln',
@@ -520,7 +521,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Rixdorf (Details)',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Städte',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Städte',
     }, {
       locationName: 'Spandauer Vorstadt',
       locationUrl: 'https://de.wikipedia.org/wiki/Spandauer_Vorstadt',
@@ -528,7 +529,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Spandauer Vorstadt (Details)',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Städte',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Städte',
     }, {
       locationName: 'Tempelhofer Revier',
       locationUrl: 'https://de.wikipedia.org/wiki/Tempelhofer_Vorstadt',
@@ -536,7 +537,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Tempelhofer Revier',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Städte',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Städte',
     }, {
       locationName: 'Wedding',
       locationUrl: 'https://de.wikipedia.org/wiki/Bezirk_Wedding',
@@ -544,7 +545,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Wedding',
       type: ['formerCity'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Städte',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Städte',
     }, {
       locationName: 'Buch',
       locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Buch',
@@ -552,7 +553,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Buch (Details)',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Landgemeinden',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Landgemeinden',
     }, {
       locationName: 'Französisch Buchholz',
       locationUrl: 'https://de.wikipedia.org/wiki/Franz%C3%B6sisch_Buchholz',
@@ -560,7 +561,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Französisch Buchholz (Details)',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Landgemeinden',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Landgemeinden',
     }, {
       locationName: 'Friedenau',
       locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Friedenau',
@@ -568,7 +569,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Friedenau (Details)',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Landgemeinden',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Landgemeinden',
     }, {
       locationName: 'Friedrichsfelde',
       locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Friedrichsfelde',
@@ -576,7 +577,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Friedrichsfelde (Details)',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Landgemeinden',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Landgemeinden',
     }, {
       locationName: 'Friedrichshagen',
       locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Friedrichshagen',
@@ -584,7 +585,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Friedrichshagen (Details)',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Landgemeinden',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Landgemeinden',
     }, {
       locationName: 'Heiligensee',
       locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Heiligensee',
@@ -592,7 +593,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Heiligensee (Details)',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Landgemeinden',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Landgemeinden',
     }, {
       locationName: 'Hohenschönhausen',
       locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Alt-Hohensch%C3%B6nhausen',
@@ -600,7 +601,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Hohenschönhausen (Details)',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Landgemeinden',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Landgemeinden',
     }, {
       locationName: 'Johannisthal',
       locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Johannisthal',
@@ -608,7 +609,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Johannisthal (Details)',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Landgemeinden',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Landgemeinden',
     }, {
       locationName: 'Lankwitz',
       locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Lankwitz',
@@ -616,7 +617,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Lankwitz (Details)',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Landgemeinden',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Landgemeinden',
     }, {
       locationName: 'Lichterfelde',
       locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Lichterfelde',
@@ -624,7 +625,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Lichterfelde (Details)',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Landgemeinden',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Landgemeinden',
     }, {
       locationName: 'Mahlsdorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Mahlsdorf',
@@ -632,7 +633,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Mahlsdorf (Details)',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Landgemeinden',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Landgemeinden',
     }, {
       locationName: 'Müggelheim',
       locationUrl: 'https://de.wikipedia.org/wiki/Berlin-M%C3%BCggelheim',
@@ -640,7 +641,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Müggelheim (Details)',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Landgemeinden',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Landgemeinden',
     }, {
       locationName: 'Niederschönhausen',
       locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Niedersch%C3%B6nhausen',
@@ -648,7 +649,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Niederschönhausen (Details)',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Landgemeinden',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Landgemeinden',
     }, {
       locationName: 'Oberschöneweide',
       locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Obersch%C3%B6neweide',
@@ -656,7 +657,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Oberschöneweide (Details)',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Landgemeinden',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Landgemeinden',
     }, {
       locationName: 'Rahnsdorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Rahnsdorf',
@@ -664,7 +665,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Rahnsdorf (Details)',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Landgemeinden',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Landgemeinden',
     }, {
       locationName: 'Rosenthal',
       locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Rosenthal',
@@ -672,7 +673,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Rosenthal (Details)',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Landgemeinden',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Landgemeinden',
     }, {
       locationName: 'Schmargendorf',
       locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Schmargendorf',
@@ -680,7 +681,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Schmargendorf (Details)',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Landgemeinden',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Landgemeinden',
     }, {
       locationName: 'Schmöckwitz',
       locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Schm%C3%B6ckwitz',
@@ -688,7 +689,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Schmöckwitz (Details)',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Landgemeinden',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Landgemeinden',
     }, {
       locationName: 'Stralau',
       locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Stralau',
@@ -696,7 +697,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Stralau (Details)',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Landgemeinden',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Landgemeinden',
     }, {
       locationName: 'Treptow',
       locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Alt-Treptow',
@@ -704,7 +705,7 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Treptow (Details)',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Landgemeinden',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Landgemeinden',
     }, {
       locationName: 'Waidmannslust',
       locationUrl: 'https://de.wikipedia.org/wiki/Berlin-Waidmannslust',
@@ -712,62 +713,6 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin'] = 
       description: 'Waidmannslust (Details)',
       type: ['formerGemeinde'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin',
-      sourceTitle: 'Historische Wappen der Landgemeinden',
+      sourceTitle: 'Liste der Wappen in Berlin | Historische Wappen der Landgemeinden',
     }
-]; 
-
-urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_Berlins'] = [
-  
-]; 
-
-urls.unitBySource['https://de.wikipedia.org/wiki/Berliner_B%C3%A4r'] = [
-  
-]; 
-
-urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Charlottenburg-Wilmersdorf'] = [
-  
-]; 
-
-urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Friedrichshain-Kreuzberg'] = [
-  
-]; 
-
-urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Lichtenberg'] = [
-  
-]; 
-
-urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Marzahn-Hellersdorf'] = [
-  
-]; 
-
-urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Mitte'] = [
-  
-]; 
-
-urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Neuk%C3%B6lln'] = [
-  
-]; 
-
-urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Pankow'] = [
-  
-]; 
-
-urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Reinickendorf'] = [
-  
-]; 
-
-urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Spandau'] = [
-  
-]; 
-
-urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Steglitz-Zehlendorf'] = [
-  
-]; 
-
-urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Tempelhof-Sch%C3%B6neberg'] = [
-  
-]; 
-
-urls.unitBySource['https://de.wikipedia.org/wiki/Wappen_des_Bezirks_Treptow-K%C3%B6penick'] = [
-  
 ]; 

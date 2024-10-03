@@ -109,33 +109,34 @@ export const fetchImages = async ({
         imageSrcSet: srcSet,
       };
 
-      try {
-        const {
-          colorsPalette,
-          hexPalette,
-          byNames,
-          byNamesRejected,
-        } = await getImageColors(image);
+      // TODO: move color assign to separate step
+      // try {
+      //   const {
+      //     colorsPalette,
+      //     hexPalette,
+      //     byNames,
+      //     byNamesRejected,
+      //   } = await getImageColors(image);
 
-        contentToSaveForMap[fileName] = {
-          ...unit,
-          description: '', // not needed
-          colors: {
-            colorsPalette,
-            byNames,
-            byNamesRejected,
-            hexPalette,
-          },
-          imageUrl: `images/heraldry/${lang}/${path}/${fileName}.${format}`,
-          imageSrcSet: srcSet,
-          imagesList,
-          shortTitle: unit.title.replace('Herb gminy', 'Herb g.').replace('Herb powiatu', 'Herb p.').replace('Herb miasta', 'Herb').replace(/\((.*)\)/g, ''),
-          markers: {
-            animals,
-            items,
-          }
-        }
-      } catch (error) {
+        // contentToSaveForMap[fileName] = {
+        //   ...unit,
+        //   description: '', // not needed
+        //   colors: {
+        //     colorsPalette,
+        //     byNames,
+        //     byNamesRejected,
+        //     hexPalette,
+        //   },
+        //   imageUrl: `images/heraldry/${lang}/${path}/${fileName}.${format}`,
+        //   imageSrcSet: srcSet,
+        //   imagesList,
+        //   shortTitle: unit.title.replace('Herb gminy', 'Herb g.').replace('Herb powiatu', 'Herb p.').replace('Herb miasta', 'Herb').replace(/\((.*)\)/g, ''),
+        //   markers: {
+        //     animals,
+        //     items,
+        //   }
+        // }
+      // } catch (error) {
         // console.log(`${chalk.red('Missing colors for:')} ${chalk.yellow(unit.title)}`);
         // console.error(error);
 
@@ -151,7 +152,7 @@ export const fetchImages = async ({
             items,
           }
         }
-      }
+      // }
     } else {
       console.log(chalk.red(`Missng image for: ${chalk.yellow(unit.title)}`));
     }
