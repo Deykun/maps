@@ -78,6 +78,13 @@ const CountryHeraldry = ({
     const { t, i18n } = useTranslation();
 
     useEffect(() => {
+      const hasInitialFilters = Object.values(initialFilters).filter(Boolean).length > 0;
+      if (hasInitialFilters) {
+        setShouldFetchDetails(true);
+      }
+    }, [initialFilters]);
+
+    useEffect(() => {
       if (isLanguageSupported(lang)) {
         i18n.changeLanguage(lang);
       } else {
@@ -86,13 +93,6 @@ const CountryHeraldry = ({
     }, []);
 
     const { units, unitsForMap, subtitleParts } = useMemo(() => {
-      // TODO: remove
-      return {
-        units: unitsForMapAll,
-        unitsForMap: unitsForMapAll,
-        subtitleParts: [],
-      }
-
       // All types are checked and we can skip setting subtitle and filtering
       const typeFiltersToPass = typeFilters.length === typeFiltersList.length ? [] : typeFilters;
 
@@ -100,7 +100,19 @@ const CountryHeraldry = ({
         filteredUnits,
         unitsForMap,
         subtitleParts,
-      } = getFilteredUnits(lang, allUnits, filterOperator, shouldReverseFilters, shouldIgnoreFormer, customFilter, typeFiltersToPass, colorFilters, animalFilters, itemFilters);
+      } = getFilteredUnits({
+        lang,
+        unitsForMapAll,
+        detailsForUnitsById,
+        filterOperator,
+        shouldReverseFilters,
+        shouldIgnoreFormer,
+        customFilter,
+        typeFilters: typeFiltersToPass,
+        colorFilters,
+        animalFilters,
+        itemFilters,
+      });
 
       setListPhrase('');
 
@@ -112,11 +124,10 @@ const CountryHeraldry = ({
       
       return {
         units: filteredUnits,
-        // unitsForMap,
-        unitsForMap: allUnitsForMap,
+        unitsForMap,
         subtitleParts,
       }
-    }, [lang, allUnits, filterOperator, shouldReverseFilters, shouldIgnoreFormer, customFilter, typeFilters, colorFilters, animalFilters, itemFilters]);
+    }, [lang, unitsForMapAll, detailsForUnitsById, filterOperator, shouldReverseFilters, shouldIgnoreFormer, customFilter, typeFilters, colorFilters, animalFilters, itemFilters]);
 
     return (
         <>

@@ -68,18 +68,6 @@ const fetchCountryDetailsData = async () => {
   const resposne = await Promise.all(promiseArray);
   const resposneAll = resposne.flatMap(v => v) as CoatOfArmsDetailsData[];
 
-  console.log('resposneAll', resposneAll);
-
-  // const detailsForUnitsById = Object.values(response).reduce((stack, item) => {
-  //   stack[item.id] = item;
-
-  //   console.log(stack);
-  // }, {});
-
-  // const unitsForDetailsAll = Object.values(detailsForUnitsById);
-
-  // console.log('unitsForDetailsAll', unitsForDetailsAll);
-
   const animalFiltersList = getFilter(resposneAll, 'animals');
   const itemFiltersList = getFilter(resposneAll, 'items');
 
