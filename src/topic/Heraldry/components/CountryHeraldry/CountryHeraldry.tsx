@@ -10,7 +10,7 @@ import {
 } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
 
 import { MapsSearchParams, getSearchParamFromFilters } from '@/topic/Heraldry/utils/getSearchParams'
-import { MarkerParamsWithResult, AdministrativeUnit, MapOffset } from '@/topic/Heraldry/types';
+import { MarkerParamsWithResult, CoatOfArmsMapData, AdministrativeUnit, MapOffset } from '@/topic/Heraldry/types';
 
 import { GetFilterResponse } from '@/topic/Heraldry/utils/getFilter';
 import { getFilteredUnits } from '@/topic/Heraldry/utils/getFilteredUnits';
@@ -28,7 +28,7 @@ import './CountryHeraldry.scss';
 
 type Props = {
   lang: string,
-  allUnits: AdministrativeUnit[],
+  allUnitsForMap: CoatOfArmsMapData[],
   typeFiltersList: GetFilterResponse,
   animalFiltersList: GetFilterResponse,
   itemFiltersList: GetFilterResponse,
@@ -38,11 +38,12 @@ type Props = {
   initialFilters?: Partial<MapsSearchParams>
   mapOffset: MapOffset,
   developmentModeFiltersTypes?: string[],
+  setShouldFetchDetails: (value: boolean) => void,
 }
 
 const CountryHeraldry = ({
   lang,
-  allUnits,
+  allUnitsForMap,
   typeFiltersList,
   animalFiltersList,
   itemFiltersList,
@@ -52,7 +53,9 @@ const CountryHeraldry = ({
   initialFilters = {},
   mapOffset,
   developmentModeFiltersTypes,
+  setShouldFetchDetails,
 }: Props) => {
+    const allUnits: AdministrativeUnit[] = [];
     const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
     const [listPhrase, setListPhrase] = useState('');
     const [filterOperator, setFilterOperator] = useState<'and' | 'or'>(initialFilters.filterOperator || 'and');
@@ -79,6 +82,13 @@ const CountryHeraldry = ({
     }, []);
 
     const { units, unitsForMap, subtitleParts } = useMemo(() => {
+      // TODO: remove
+      return {
+        units: allUnitsForMap,
+        unitsForMap: allUnitsForMap,
+        subtitleParts: [],
+      }
+
       // All types are checked and we can skip setting subtitle and filtering
       const typeFiltersToPass = typeFilters.length === typeFiltersList.length ? [] : typeFilters;
 
@@ -95,10 +105,11 @@ const CountryHeraldry = ({
       })
       
       window.history.replaceState(undefined, '', `${location.pathname}${searchParams}`);
-
+      
       return {
         units: filteredUnits,
-        unitsForMap,
+        // unitsForMap,
+        unitsForMap: allUnitsForMap,
         subtitleParts,
       }
     }, [lang, allUnits, filterOperator, shouldReverseFilters, shouldIgnoreFormer, customFilter, typeFilters, colorFilters, animalFilters, itemFilters]);
@@ -214,6 +225,7 @@ const CountryHeraldry = ({
               setFilterOperator={setFilterOperator}
               shouldReverseFilters={shouldReverseFilters}
               setShouldReverseFilters={setShouldReverseFilters}
+              setShouldFetchDetails={setShouldFetchDetails}
             />
           </div>
         </>

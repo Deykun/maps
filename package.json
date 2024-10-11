@@ -15,7 +15,6 @@
     "web:de": "tsx scripts/heraldry/de/web-images.ts",
     "fetch:et:unit": "tsx scripts/heraldry/et/fetch-unit.ts",
     "fetch:et:unit-map": "tsx scripts/heraldry/et/fetch-unit-map.ts",
-    "resize:et": "tsx scripts/heraldry/et/resize-images.ts",
     "web:et": "tsx scripts/heraldry/et/web-images.ts",
     "fetch:fi:kunta": "tsx scripts/heraldry/fi/fetch-kunta.ts",
     "fetch:fi:maakunta": "tsx scripts/heraldry/fi/fetch-maakunta.ts",

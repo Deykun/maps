@@ -69,6 +69,7 @@ type Props = {
   setFilterOperator: (operator: 'or' | 'and') => void,
   shouldReverseFilters: boolean,
   setShouldReverseFilters: (value: boolean) => void,
+  setShouldFetchDetails: (value: boolean) => void,
 };
 
 const FiltersPane = ({
@@ -90,6 +91,7 @@ const FiltersPane = ({
   setFilterOperator,
   shouldReverseFilters,
   setShouldReverseFilters,
+  setShouldFetchDetails,
 }: Props) => {
   const isFiltersDevelopmentModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
   const [activeMenu, setActiveMenu] = useState('');
@@ -104,6 +106,8 @@ const FiltersPane = ({
   useEffect(() => {
     if (!isOpen) {
       setActiveMenu('');
+    } else {
+      setShouldFetchDetails(true);
     }
   }, [isOpen])
 

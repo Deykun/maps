@@ -1,6 +1,8 @@
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 
+import { getImageSrcSet } from '@/utils/image';
+
 import {
   showUnitOnMap,
 } from '@/topic/Heraldry/stores/cursorStore';
@@ -11,32 +13,36 @@ import IconMarker from '@/components/Icons/IconMarker';
 import IconPlusMagnifyingGlass from '@/components/Icons/IconPlusMagnifyingGlass';
 import IconLink from '@/components/Icons/IconLink';
 
-import { AdministrativeUnit } from '@/topic/Heraldry/types';
+import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 
 import DevelopmentActions from '@/topic/Heraldry/components/DevelopmentActions/DevelopmentActions';
 
 type Props = {
   className?: string,
-  unit: AdministrativeUnit,
-  setPreviewUnit: (unit: AdministrativeUnit) => void,
+  unit: CoatOfArmsMapData,
+  setPreviewUnit: (unit: CoatOfArmsMapData) => void,
 }
 
 const UnitsPaneItem = ( { className, unit, setPreviewUnit }: Props) => {
-  const { title, url, imagesList, imageSrcSet, place, markers, colors } = unit;  
+  const { title, url, imagesList, place } = unit;  
   
   const { t } = useTranslation();
 
-  const markersList = [
-    ...(markers?.animals || []).map((v) => t(`heraldry.animal.${v}`)),
-    ...(markers?.items || []).map((v) => t(`heraldry.item.${v}`)),
-  ];
+  // markers, colors
+  
+  const markersList = [];
+
+  // const markersList = [
+  //   ...(markers?.animals || []).map((v) => t(`heraldry.animal.${v}`)),
+  //   ...(markers?.items || []).map((v) => t(`heraldry.item.${v}`)),
+  // ];
 
   return (
     <li className={clsx('flex gap-2 items-center', { [className || '']: className })}>
       <span className="relative size-[80px] md:size-20 flex-shrink-0">
         <img
           src={imagesList?.[0].path}
-          srcSet={imageSrcSet}
+          srcSet={getImageSrcSet(imagesList)}
           className="size-[80px] md:size-20 object-contain p-2 rounded-[4px] bg-white border"
           alt=""
           loading="lazy"

@@ -1,7 +1,9 @@
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
-import { AdministrativeUnit } from '@/topic/Heraldry/types';
+import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 import { colorsMarkersByNames } from '@/topic/Heraldry/constants';
+
+import { getImageSrcSet } from '@/utils/image';
 
 import {
   showUnitOnMap,
@@ -17,29 +19,30 @@ import DevelopmentActions from '@/topic/Heraldry/components/DevelopmentActions/D
 
 type Props = {
   className?: string,
-  unit: AdministrativeUnit,
-  setPreviewUnit: (unit?: AdministrativeUnit) => void,
+  unit: CoatOfArmsMapData,
+  setPreviewUnit: (unit?: CoatOfArmsMapData) => void,
 }
 
 const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
-  const { title, url, imagesList, imageSrcSet, place, markers, colors } = unit;  
+  const { title, url, imagesList, place, markers, colors } = unit;  
   
   const { t } = useTranslation();
 
-  const markersList = [
-    ...(markers?.animals || []).map((v) => t(`heraldry.animal.${v}`)),
-    ...(markers?.items || []).map((v) => t(`heraldry.item.${v}`)),
-  ];
+  const markersList = [];
+
+  // const markersList = [
+  //   ...(markers?.animals || []).map((v) => t(`heraldry.animal.${v}`)),
+  //   ...(markers?.items || []).map((v) => t(`heraldry.item.${v}`)),
+  // ];
 
   return (
     <li className={clsx('flex flex-col gap-2 items-center', { [className || '']: className })}>
       <span className="relative size-full flex-shrink-0">
         <img
           src={imagesList?.[0].path}
-          srcSet={imageSrcSet}
+          srcSet={getImageSrcSet(imagesList)}
           className="size-full object-contain p-2 rounded-t-[4px] rounded-b-[30px] bg-white border"
           alt=""
-          loading="lazy"
         />      
         <div className="absolute bottom-0 right-0 translate-y-[50%]  flex gap-2">
           <ButtonCircle
@@ -76,7 +79,7 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
           {' '}
           {place?.name || t('heraldry.item.noLocation')}
         </p>
-        <div className="mt-2 empty:hidden flex gap-1 justify-center">
+        {/* <div className="mt-2 empty:hidden flex gap-1 justify-center">
           {Object.entries(colors?.byNames || {}).map(([colorName, colors = []]) => {
             const title = [
               `${colors.sort((a, b) => a.distance - b.distance)?.[0]?.distance?.toFixed(1)} p.`,
@@ -98,7 +101,7 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
             </span>
             )
           })}
-        </div>
+        </div> */}
         <div className="hidden">
           <p className="my-2">
             <span className="text-[12px]">Rejected:</span>

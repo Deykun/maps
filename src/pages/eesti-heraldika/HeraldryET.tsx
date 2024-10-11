@@ -1,8 +1,8 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import SvgMap from './components/SvgMap'
 ;
-import { AdministrativeUnit } from '@/topic/Heraldry/types';
+import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 import { getFiltersFromSearchParams } from '@/topic/Heraldry/utils/getSearchParams';
 import { getFilter } from '@/topic/Heraldry/utils/getFilter';
 
@@ -14,14 +14,14 @@ const fetchCountryData = async () => {
     formerUnits,
     units,
   ] = await Promise.all([
-    fetch('/maps/data/heraldry/et/formerUnit-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    fetch('/maps/data/heraldry/et/unit-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
+    fetch('/maps/data/heraldry/et/formerUnit-map-data.json').then((response) => response.json()),
+    fetch('/maps/data/heraldry/et/unit-map-data.json').then((response) => response.json()),
   ]);
 
-  const allUnits: AdministrativeUnit[] = Object.values([
-    ...Object.values(formerUnits) as AdministrativeUnit[],
-    ...Object.values(units) as AdministrativeUnit[],
-  ].filter((unit: AdministrativeUnit) => {
+  const allUnitsForMap: CoatOfArmsMapData[] = Object.values([
+    ...formerUnits as CoatOfArmsMapData[],
+    ...units as CoatOfArmsMapData[],
+  ].filter((unit: CoatOfArmsMapData) => {
     // if ([
     //    'empty'
     // ].includes(unit.title)) {
@@ -38,19 +38,19 @@ const fetchCountryData = async () => {
 
     return true;
   }).reduce((stack: {
-    [url: string]: AdministrativeUnit,
-  }, unit: AdministrativeUnit) => {
+    [url: string]: CoatOfArmsMapData,
+  }, unit: CoatOfArmsMapData) => {
     if (stack[unit.url]) {
-      const areImagesFilledAndDifferent = unit.image?.source && unit.image?.source !== stack[unit.url].image?.source;
-      if (areImagesFilledAndDifferent) {
-        if (location.href.includes('localhost')) {
-          console.error({
-            [unit.type?.join('') || 'a']: stack[unit.url].image?.source,
-            [stack[unit.url].type?.join('') || 'b']: stack[unit.url].image?.source,
-          })
-          throw ('Duplicated but different images!')
-        }
-      }
+      // const areImagesFilledAndDifferent = unit.image?.source && unit.image?.source !== stack[unit.url].image?.source;
+      // if (areImagesFilledAndDifferent) {
+      //   if (location.href.includes('localhost')) {
+      //     console.error({
+      //       [unit.type?.join('') || 'a']: stack[unit.url].image?.source,
+      //       [stack[unit.url].type?.join('') || 'b']: stack[unit.url].image?.source,
+      //     })
+      //     throw ('Duplicated but different images!')
+      //   }
+      // }
 
       // It merges duplicates but keeps their type in array
       const typeMerged: string[] = [...(stack[unit.url].type || []), ...(unit.type || [])];
@@ -62,20 +62,86 @@ const fetchCountryData = async () => {
     return stack;
   }, {}));
 
-  const typeFiltersList = getFilter(allUnits, 'type');
-  const animalFiltersList = getFilter(allUnits, 'animals');
-  const itemFiltersList = getFilter(allUnits, 'items');
+  // const typeFiltersList = getFilter(mapUnits, 'type');
+  // const animalFiltersList = getFilter(mapUnits, 'animals');
+  // const itemFiltersList = getFilter(mapUnits, 'items');
 
   return {
-    allUnits,
-    typeFiltersList,
-    animalFiltersList,
-    itemFiltersList
+    allUnitsForMap,
+    // typeFiltersList,
+    // animalFiltersList,
+    // itemFiltersList
   };
 }
 
+const fetchCountryDetailsData = async () => {
+  const [
+    formerUnits,
+    units,
+  ] = await Promise.all([
+    fetch('/maps/data/heraldry/et/formerUnit-map-data.json').then((response) => response.json()),
+    fetch('/maps/data/heraldry/et/unit-map-data.json').then((response) => response.json()),
+  ]);
+
+  const allUnitsForMap: CoatOfArmsMapData[] = Object.values([
+    ...formerUnits as CoatOfArmsMapData[],
+    ...units as CoatOfArmsMapData[],
+  ].filter((unit: CoatOfArmsMapData) => {
+    // if ([
+    //    'empty'
+    // ].includes(unit.title)) {
+    //   // Historic
+    //   return false;
+    // };
+
+    if ([
+      'Viipurin vaakuna'
+    ].includes(unit.title)) {
+      // Outside of country
+      return false;
+    }
+
+    return true;
+  }).reduce((stack: {
+    [url: string]: CoatOfArmsMapData,
+  }, unit: CoatOfArmsMapData) => {
+    if (stack[unit.url]) {
+      // const areImagesFilledAndDifferent = unit.image?.source && unit.image?.source !== stack[unit.url].image?.source;
+      // if (areImagesFilledAndDifferent) {
+      //   if (location.href.includes('localhost')) {
+      //     console.error({
+      //       [unit.type?.join('') || 'a']: stack[unit.url].image?.source,
+      //       [stack[unit.url].type?.join('') || 'b']: stack[unit.url].image?.source,
+      //     })
+      //     throw ('Duplicated but different images!')
+      //   }
+      // }
+
+      // It merges duplicates but keeps their type in array
+      const typeMerged: string[] = [...(stack[unit.url].type || []), ...(unit.type || [])];
+      stack[unit.url].type = [...new Set(typeMerged)];
+    } else {
+      stack[unit.url] = unit;
+    }
+
+    return stack;
+  }, {}));
+
+  // const typeFiltersList = getFilter(mapUnits, 'type');
+  // const animalFiltersList = getFilter(mapUnits, 'animals');
+  // const itemFiltersList = getFilter(mapUnits, 'items');
+
+  return {
+    allUnitsForMap,
+    // typeFiltersList,
+    // animalFiltersList,
+    // itemFiltersList
+  };
+}
 
 const HeraldryET = () => {
+  const [shouldFetchDetails, setShouldFetchDetails] = useState(false);
+
   const initialFilters = useMemo(() => {
     return getFiltersFromSearchParams();
   }, []);
@@ -106,29 +172,34 @@ const HeraldryET = () => {
   }
 
   const {
-    allUnits,
-    typeFiltersList,
-    animalFiltersList,
-    itemFiltersList
+    allUnitsForMap,
+    // typeFiltersList,
+    // animalFiltersList,
+    // itemFiltersList
   } = data;
 
   return (
     <CountryHeraldry
       lang="et"
-      allUnits={allUnits}
-      typeFiltersList={typeFiltersList}
-      animalFiltersList={animalFiltersList}
-      itemFiltersList={itemFiltersList}
+      allUnitsForMap={allUnitsForMap}
+      // typeFiltersList={typeFiltersList}
+      // animalFiltersList={animalFiltersList}
+      // itemFiltersList={itemFiltersList}
+
+      typeFiltersList={[]}
+      animalFiltersList={[]}
+      itemFiltersList={[]}
       mapWrapperClassName="[&>div>svg]:aspect-[707_/_509]"
       mapWrapperClassNameForZoom0="max-w-[70vh]"
       map={SvgMap}
       mapOffset={{
-         minLatTop: 57.43,
-         maxLatTop: 59.97,
-         minLonLeft: 21.46,
-         maxLonLeft: 28.45,
-     }}
+        minLatTop: 57.43,
+        maxLatTop: 59.97,
+        minLonLeft: 21.46,
+        maxLonLeft: 28.45,
+      }}
       initialFilters={initialFilters}
+      setShouldFetchDetails={setShouldFetchDetails}
     />
   );
 };

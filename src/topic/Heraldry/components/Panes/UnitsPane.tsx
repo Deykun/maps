@@ -10,7 +10,7 @@ import IconEraser from '@/components/Icons/IconEraser';
 import IconTextMagnifyingGlass from '@/components/Icons/IconTextMagnifyingGlass';
 import IconGithub from '@/components/Icons/IconGithub';
 
-import { AdministrativeUnit } from '@/topic/Heraldry/types';
+import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 import IconCoatOfArms from '@/topic/Heraldry/components/IconCoatOfArms';
 
 import Pane from '@/components/UI/Pane';
@@ -23,7 +23,7 @@ import UnitsPaneItemDetails from './UnitsPane/UnitsPaneItemDetails';
 
 type Props = {
   children?: React.ReactNode,
-  units?: AdministrativeUnit[],
+  units?: CoatOfArmsMapData[],
   phrase?: string,
   shouldShowCount?: boolean,
 }
@@ -34,7 +34,7 @@ const UnitsPane = ({
   shouldShowCount = false,
 }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [previewUnit, setPreviewUnit] = useState<AdministrativeUnit | undefined>(undefined);
+  const [previewUnit, setPreviewUnit] = useState<CoatOfArmsMapData | undefined>(undefined);
   const [filterPhrase, setFilterPhrase] = useState(phrase);
   const [filteredUnits, setFilteredUnits] = useState(units);
   const [filterPage, setFilterPage] = useState(0);
