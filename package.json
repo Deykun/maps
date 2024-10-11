@@ -16,6 +16,7 @@
     "fetch:et:unit": "tsx scripts/heraldry/et/fetch-unit.ts",
     "fetch:et:unit-map": "tsx scripts/heraldry/et/fetch-unit-map.ts",
     "web:et": "tsx scripts/heraldry/et/web-images.ts",
+    "index:et": "tsx scripts/heraldry/et/get-details.ts",
     "fetch:fi:kunta": "tsx scripts/heraldry/fi/fetch-kunta.ts",
     "fetch:fi:maakunta": "tsx scripts/heraldry/fi/fetch-maakunta.ts",
     "fetch:fi:kunta-map": "tsx scripts/heraldry/fi/fetch-coats-of-kunta.ts",

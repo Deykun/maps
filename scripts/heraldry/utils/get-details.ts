@@ -1,18 +1,16 @@
 import {
   existsSync,
   writeFileSync,
-  unlink,
   mkdirSync,
 } from "fs";
-import sharp from 'sharp';
 import * as fsExtra from "fs-extra";
-import { writeFile } from "fs/promises";
+import sharp from 'sharp';
 import chalk from 'chalk';
 import { resolve } from 'path';
 import { clearLastLines } from './helpers/console';
-import { getImageFileName, getCompressedImageSrc } from './helpers/images';
+import { getImageFileName } from './helpers/images';
 
-import { AdministrativeUnit, CoatOfArmsMapData, CoatOfArmsDetailsData } from '../../../src/topic/Heraldry/types';
+import { AdministrativeUnit, CoatOfArmsDetailsData } from '../../../src/topic/Heraldry/types';
 
 
 import { getMarkers } from '../../../src/topic/Heraldry/utils/markers/getMarkers';
@@ -44,38 +42,32 @@ export const getDetails = async ({
     return;
   }
 
-  if (!existsSync(`./public/images/heraldry/${lang}/${path}`)) {
-    mkdirSync(`./public/images/heraldry/${lang}/${path}`);
-  }
-
   for (let i = 0; i < total; i++) {
     const unit = administrativeDivisions[i];
     const fileName = getImageFileName(unit);
 
     const expectedFilePath = `./public/images/heraldry/${lang}/${path}/${fileName}-320w.webp`;
 
-    const format = unit.image?.source?.split('.')?.at(-1)?.toLowerCase() || 'png';
+    if (!existsSync(`./public/images/heraldry/${lang}/web/temp/${path}`)){
+      mkdirSync(`./public/images/heraldry/${lang}/web/temp/${path}`);
+    }
 
     if (i > 0) {
       clearLastLines(3);
     }
 
-    if (unit.image?.source) {
-      if (!existsSync(expectedFilePath)) {
-        await download(unit.image?.source, fileName, format, path, lang)
+    if (existsSync(expectedFilePath)) {
+      const temporaryPngFile = `./public/images/heraldry/${lang}/web/temp/${path}/${fileName}-320w.png`;
 
-        console.log([
-          chalk.green('✓'),
-          `fetched "${chalk.white(unit.title)}"`,
-          chalk.gray(`(${format} - index: ${chalk.white(unit.index)})`),
-        ].join(' '));
-      } else {
-        console.log([
-          chalk.green('✓'),
-          chalk.gray(`skipping "${chalk.white(unit.title)}"`),
-          chalk.gray(`(${format} - index: ${chalk.white(unit.index)})`),
-        ].join(' '));
-      }
+      await sharp(expectedFilePath).toFile(temporaryPngFile);
+
+      const image = resolve(temporaryPngFile);
+
+      const {
+        hexPalette,
+        byNames,
+        byNamesRejected,
+      } = await getImageColors(image);
 
       const {
         animals,
@@ -86,36 +78,23 @@ export const getDetails = async ({
         lang,
       });
 
-      const {
-        srcSet,
-        imagesList,
-      } = getCompressedImageSrc(`images/heraldry/${lang}/${path}/${fileName}.webp`, path);
-
-      if (!unit.place?.coordinates?.lat || !unit.place?.coordinates?.lon) {
-        console.log(`${chalk.yellow(unit.title)} doesn't have the ${chalk.red('location')}.`);
-      }
-
-
-
       contentToSaveForDetails[unit.id] = {
-      }
-      // ({
-      //   lang: unit.lang,
-      //   index: unit.index,
-      //   id: unit.id,
-      //   title: unit.title,
-      //   url: unit.url,
-      //   type: unit.type,
-      //   ...(unit.spriteRoot ? { spriteRoot: unit.spriteRoot } : {}),
-      //   place: unit.place,
-      //   imagesList,
-      // });
-    } else {
-      console.log(chalk.bgRedBright([
-        '✘',
-        `missing url to image "${chalk.bold(unit.title)}"`,
-        `(${format} - index: ${chalk.bold(unit.index)})`,
-      ].join(' ')));
+        colors: {
+          byNames,
+          byNamesRejected,
+          hexPalette,
+        },
+        markers: {
+          animals,
+          items,
+        },
+      };
+
+      console.log([
+        chalk.green('✓'),
+        chalk.gray(`skipping "${chalk.white(unit.title)}"`),
+        chalk.gray(`(index: ${chalk.white(unit.index)})`),
+      ].join(' '));
     }
 
     console.log(' ');
@@ -135,8 +114,10 @@ export const getDetails = async ({
 
   const chunkSuffix = typeof chunkIndex === 'number' ? `-${chunkIndex}` : '';
 
+  fsExtra.emptyDirSync(`./public/images/heraldry/${lang}/web/temp/${path}/`);
+
   writeFileSync(
-    `./public/data/heraldry/${lang}/${path}${chunkSuffix}-map-data.json`,
-    JSON.stringify(contentToSaveForMap, null, 1),
+    `./public/data/heraldry/${lang}/${path}${chunkSuffix}-details-data.json`,
+    JSON.stringify(contentToSaveForDetails, null, 1),
   );
 };
