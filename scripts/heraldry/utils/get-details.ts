@@ -28,9 +28,7 @@ export const getDetails = async ({
   lang: string,
   chunkIndex?: number,
 }) => {
-  const contentToSaveForDetails: {
-    [id: string]: CoatOfArmsDetailsData,
-  } = {};
+  const contentToSaveForDetails: CoatOfArmsDetailsData[] = [];
 
   const total = administrativeDivisions.length;
 
@@ -78,7 +76,8 @@ export const getDetails = async ({
         lang,
       });
 
-      contentToSaveForDetails[unit.id] = {
+      contentToSaveForDetails.push({
+        id: unit.id,
         colors: {
           byNames,
           byNamesRejected,
@@ -88,7 +87,7 @@ export const getDetails = async ({
           animals,
           items,
         },
-      };
+      });
 
       console.log([
         chalk.green('✓'),

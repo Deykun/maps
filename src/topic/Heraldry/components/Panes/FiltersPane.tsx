@@ -155,7 +155,7 @@ const FiltersPane = ({
             onClick={toggleMenu('type')}
             isActive={activeMenu === 'type'}
             label={t('heraldry.unit.filterTitle')}
-            >
+          >
             <IconBuilding />
             {typeFilters.length > 0 && <span className="ui-button-circle-marker">{typeFilters.length}</span>}
           </ButtonCircle>
@@ -163,7 +163,7 @@ const FiltersPane = ({
             onClick={toggleMenu('color')}
             isActive={activeMenu === 'color'}
             label={t('heraldry.color.filterTitle')}
-            >
+          >
             <IconColor />
             {colorFilters.length > 0 && <span className="ui-button-circle-marker">{colorFilters.length}</span>}
           </ButtonCircle>
@@ -171,7 +171,8 @@ const FiltersPane = ({
             onClick={toggleMenu('animal')}
             isActive={activeMenu === 'animal'}
             label={t('heraldry.animal.filterTitle')}
-            >
+            isDisabled={animalFiltersList.length === 0}
+          >
             <IconAnimal />
             {animalFilters.length > 0 && <span className="ui-button-circle-marker">{animalFilters.length}</span>}
           </ButtonCircle>
@@ -179,7 +180,8 @@ const FiltersPane = ({
             onClick={toggleMenu('item')}
             isActive={activeMenu === 'item'}
             label={t('heraldry.item.filterTitle')}
-            >
+            isDisabled={itemFiltersList.length === 0}
+          >
             <IconCrown />
             {itemFilters.length > 0 && <span className="ui-button-circle-marker">{itemFilters.length}</span>}
           </ButtonCircle>

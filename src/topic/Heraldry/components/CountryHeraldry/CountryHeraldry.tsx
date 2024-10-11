@@ -10,7 +10,7 @@ import {
 } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
 
 import { MapsSearchParams, getSearchParamFromFilters } from '@/topic/Heraldry/utils/getSearchParams'
-import { MarkerParamsWithResult, CoatOfArmsMapData, AdministrativeUnit, MapOffset } from '@/topic/Heraldry/types';
+import { MarkerParamsWithResult, CoatOfArmsMapData, AdministrativeUnit, MapOffset, CoatOfArmsDetailsData } from '@/topic/Heraldry/types';
 
 import { GetFilterResponse } from '@/topic/Heraldry/utils/getFilter';
 import { getFilteredUnits } from '@/topic/Heraldry/utils/getFilteredUnits';
@@ -28,7 +28,10 @@ import './CountryHeraldry.scss';
 
 type Props = {
   lang: string,
-  allUnitsForMap: CoatOfArmsMapData[],
+  unitsForMapAll: CoatOfArmsMapData[],
+  detailsForUnitsById: {
+    [id: string]: CoatOfArmsDetailsData,
+  },
   typeFiltersList: GetFilterResponse,
   animalFiltersList: GetFilterResponse,
   itemFiltersList: GetFilterResponse,
@@ -43,7 +46,8 @@ type Props = {
 
 const CountryHeraldry = ({
   lang,
-  allUnitsForMap,
+  unitsForMapAll,
+  detailsForUnitsById,
   typeFiltersList,
   animalFiltersList,
   itemFiltersList,
@@ -84,8 +88,8 @@ const CountryHeraldry = ({
     const { units, unitsForMap, subtitleParts } = useMemo(() => {
       // TODO: remove
       return {
-        units: allUnitsForMap,
-        unitsForMap: allUnitsForMap,
+        units: unitsForMapAll,
+        unitsForMap: unitsForMapAll,
         subtitleParts: [],
       }
 

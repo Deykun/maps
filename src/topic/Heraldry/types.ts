@@ -51,6 +51,7 @@ export type CoatOfArmsMapData = {
 }
 
 export type CoatOfArmsDetailsData = {
+  id: string,
   colors?: {
     hexPalette: string[],
     byNames: {
