@@ -44,9 +44,8 @@ const HeraldryCursorLastPoint = () => {
           size="large"
           id="heraldry-cursor-last-point"
           className="heraldry-cursor-last-point"
-          // isActive={isOpen}
           onClick={handleClick}
-          label={lastClick.hovered.length === 1 ? lastClick.hovered.map(({ shortTitle, title }) => shortTitle || title).join(', ') : undefined}
+          label={lastClick.hovered.length === 1 ? lastClick.hovered.map(({ title }) => title).join(', ') : undefined}
           labelPosition="bottom"
         >
           <IconCoatOfArms units={lastClick.hovered} />

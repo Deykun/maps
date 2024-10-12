@@ -1,12 +1,12 @@
 import { create } from 'zustand';
 import { devtools, persist } from 'zustand/middleware'
 
-import { AdministrativeUnit } from '@/topic/Heraldry/types';
+import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 
 type ClickType = {
   x: number
   y: number
-  hovered: AdministrativeUnit[],
+  hovered: CoatOfArmsMapData[],
 }
 
 type FiltersDevelopmentStoreState = {

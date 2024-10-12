@@ -1,5 +1,5 @@
 import { getSpriteDataFromUnit } from '@/topic/Heraldry/utils/getSpriteDataFromUnit';
-import { AdministrativeUnit, MapOffset } from '@/topic/Heraldry/types';
+import { CoatOfArmsMapData, MapOffset } from '@/topic/Heraldry/types';
 
 import { CoatOfArms } from './layers/CoatOfArms';
 
@@ -91,7 +91,11 @@ const renderFrame = ({ shouldSkipChangeCheck = false }: { shouldSkipChangeCheck?
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   coatOfArmsList.forEach((item) => {
-    // TODO: Add logic to drop 1. make it async and unlock the thread 2. drop the loop when next frame was requested
+    /*
+      TODO: It currently works synchronously, but it should be asynchronous to avoid blocking the main thread.
+
+      Additionally, there should be an option to skip frame calculation if a new one is requested.
+    */
     // setTimeout(() => {
       item.draw();
     // }, 0);
@@ -123,7 +127,7 @@ const setCanvasAttributes = (canvas: HTMLCanvasElement) => {
 }
 
 export const onResize = (mapOffset: MapOffset) => {
-  // Size is optional, but we do it once here for all CoA
+  // Size is optional, but we calc it once here for all CoAs
   const size = canvas.getClientRects()[0];
 
   coatOfArmsList.forEach((item) => {
@@ -167,7 +171,7 @@ export const render = ({ canvas: initCanvas, ctx: initCtx, mapOffset: initMapOff
   initEventListeners();
 };
 
-export const setCoatOfArms = (units: AdministrativeUnit[]) => {
+export const setCoatOfArms = (units: CoatOfArmsMapData[]) => {
   coatOfArmsList = [];
   
   coatOfArmsList = units.filter((unit) => (unit?.imagesList || []).length > 0).map((unit) => {

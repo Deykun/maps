@@ -8,7 +8,7 @@ import {
 
 import { mergeRefs } from '@/utils/ref';
 
-import { AdministrativeUnit, MapOffset } from '@/topic/Heraldry/types';
+import { CoatOfArmsMapData, MapOffset } from '@/topic/Heraldry/types';
 import { mapPadding, maxSelectedWithClick } from '@/topic/Heraldry/constants'
 import { getXYfromLatLon } from '@/topic/Heraldry/utils/getPosition';
 
@@ -26,7 +26,7 @@ import './HeraldryCanvas.scss';
 
 type Props = {
   className?: string,
-  units: AdministrativeUnit[],
+  units: CoatOfArmsMapData[],
   children: React.ReactNode,
   mapOffset: MapOffset,
   coatSize: number,
@@ -35,7 +35,7 @@ type Props = {
 
 const HeraldryCanvas = ({ className, units, children, mapOffset, coatSize, setListPhrase }: Props) => {
   const idToShow = useCursorStore((state) => state.idToShow);
-  const [hovered, setHovered] = useState<AdministrativeUnit[]>([]);
+  const [hovered, setHovered] = useState<CoatOfArmsMapData[]>([]);
 
   const { ref: wrapperRef, dimensions } = useDebouncedResizeObserver<HTMLDivElement>(10);
 

@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { AdministrativeUnit } from '@/topic/Heraldry/types';
+import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 
 import './HeraldryCursor.scss';
 
@@ -7,7 +7,7 @@ type Props = {
   top: string | number,
   left: string | number,
   isHovering?: boolean,
-  hovered: AdministrativeUnit[],
+  hovered: CoatOfArmsMapData[],
 }
 
 const HeraldryCursor = ({ top, left, isHovering = true, hovered }: Props) => {

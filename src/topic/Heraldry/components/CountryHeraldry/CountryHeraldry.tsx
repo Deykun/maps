@@ -59,7 +59,6 @@ const CountryHeraldry = ({
   developmentModeFiltersTypes,
   setShouldFetchDetails,
 }: Props) => {
-    const allUnits: AdministrativeUnit[] = [];
     const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
     const [listPhrase, setListPhrase] = useState('');
     const [filterOperator, setFilterOperator] = useState<'and' | 'or'>(initialFilters.filterOperator || 'and');
@@ -183,15 +182,15 @@ const CountryHeraldry = ({
               <p>
                 {zoomLevel === 1 && <>{t('heraldry.mapFooterSource')} <strong className="text-black">wikipedia.org</strong>.<br /></>}
                 {' '}
-                {t('heraldry.mapFooterAllCoats')} <strong className="text-black">{allUnits.length}</strong>
-                {allUnits.length > units.length && <>{t('heraldry.mapFooterCoatsAfterFilter')}
+                {t('heraldry.mapFooterAllCoats')} <strong className="text-black">{unitsForMapAll.length}</strong>
+                {unitsForMapAll.length > units.length && <>{t('heraldry.mapFooterCoatsAfterFilter')}
                 {' '}
                 <strong className={clsx({
                   'text-black': units.length > 0,
                   'text-[#ca1a1a]': units.length === 0 })
                 }>{units.length}</strong>
                 {units.length > 10 && <>{' '}- <strong className="text-black">
-                  {(100 * units.length/allUnits.length).toFixed(2)}
+                  {(100 * (units.length / unitsForMapAll.length)).toFixed(2)}
                 </strong><small>%</small></>}</>}.
               </p>
             </div>
