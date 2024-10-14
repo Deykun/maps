@@ -26,7 +26,7 @@ import HeraldryCanvas from '@/topic/Heraldry/components/HeraldryCanvas/HeraldryC
 
 import './CountryHeraldry.scss';
 
-type Props = {
+export type Props = {
   lang: string,
   unitsForMapAll: CoatOfArmsMapData[],
   detailsForUnitsById: {
