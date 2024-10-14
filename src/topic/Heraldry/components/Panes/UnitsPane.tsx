@@ -63,14 +63,19 @@ const UnitsPane = ({
     setPreviewUnit(undefined);
 
     if (filterPhrase === '') {
-      setFilteredUnits(units);
+      /*
+        It's reversed because states/provinces
+        are at the top of the map, so they are rendered last,
+        so here we reverse them.
+      */
+      setFilteredUnits(units.reverse());
 
       return;
     }
 
     const listPhraseNormalized = removeDiacratics(filterPhrase.toLowerCase());
 
-    const filteredUnits = units.filter((unit) => {
+    const filteredUnits = units.reverse().filter((unit) => {
       return getDoesUnitMatch(listPhraseNormalized, unit);
     }).sort((a, b) => {
       const aRank = getUnitSortRank(listPhraseNormalized, a);

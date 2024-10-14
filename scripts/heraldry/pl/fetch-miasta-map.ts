@@ -8,6 +8,5 @@ const miasta = miastaFromJSON as AdministrativeUnit[]
 fetchImages({
 	administrativeDivisions: miasta,
 	path: 'miasta',
-	subpage: 'heraldyka',
   lang: 'pl',
 });

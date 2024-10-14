@@ -17,7 +17,6 @@ import { render, onResize, setCoatOfArms, getCoatOfArmsForXandY, setCoatSize } f
 import useDebouncedResizeObserver from '@/hooks/useDebouncedResizeObserver'
 import useEffectChange from '@/hooks/useEffectChange'
 
-
 import useHeraldryCursorPosition from '@/topic/Heraldry/components/HeraldryCursor/useHeraldryCursorPosition';
 import HeraldryCursor from '@/topic/Heraldry/components/HeraldryCursor/HeraldryCursor';
 import HeraldryCursorLastPoint from '@/topic/Heraldry/components/HeraldryCursor/HeraldryCursorLastPoint';
@@ -101,7 +100,7 @@ const HeraldryCanvas = ({ className, units, children, mapOffset, coatSize, setLi
 
     const selectedUnits = units.filter(({ id }) => selectedIds.includes(id));
 
-    setHovered(selectedUnits);
+    setHovered(selectedUnits.reverse());
   }, [position]);
 
   const handleMapClick = useCallback((event: React.MouseEvent) => {

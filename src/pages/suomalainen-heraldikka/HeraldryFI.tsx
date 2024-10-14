@@ -1,5 +1,6 @@
+import React from 'react';
 import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
-import SvgMap from './components/SvgMap';
+const SvgMap = React.lazy(() => import('./components/SvgMap'));
 
 import HeraldryRegion from '@/topic/Heraldry/components/HeraldryRegion/HeraldryRegion';
 

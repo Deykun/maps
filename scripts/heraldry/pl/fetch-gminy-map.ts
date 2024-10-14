@@ -8,6 +8,5 @@ const gminy = gminyFromJSON as AdministrativeUnit[];
 fetchImages({
 	administrativeDivisions: gminy,
 	path: 'gminy',
-	subpage: 'heraldyka',
   lang: 'pl',
 });

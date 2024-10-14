@@ -1,4 +1,4 @@
-import { memo, useRef, useState, useMemo, useEffect } from 'react';
+import { memo, useRef, useState, useMemo, useEffect, Suspense } from 'react';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 import { useDraggable } from "react-use-draggable-scroll";
@@ -10,7 +10,7 @@ import {
 } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
 
 import { MapsSearchParams, getSearchParamFromFilters } from '@/topic/Heraldry/utils/getSearchParams'
-import { MarkerParamsWithResult, CoatOfArmsMapData, AdministrativeUnit, MapOffset, CoatOfArmsDetailsData } from '@/topic/Heraldry/types';
+import { CoatOfArmsMapData, MapOffset, CoatOfArmsDetailsData } from '@/topic/Heraldry/types';
 
 import { GetFilterResponse } from '@/topic/Heraldry/utils/getFilter';
 import { getFilteredUnits } from '@/topic/Heraldry/utils/getFilteredUnits';
@@ -37,7 +37,7 @@ export type Props = {
   itemFiltersList: GetFilterResponse,
   mapWrapperClassName?: string,
   mapWrapperClassNameForZoom0?: string,
-  map: () => JSX.Element,
+  map: React.LazyExoticComponent<() => JSX.Element>,
   initialFilters?: Partial<MapsSearchParams>
   mapOffset: MapOffset,
   developmentModeFiltersTypes?: string[],
@@ -171,7 +171,9 @@ const CountryHeraldry = ({
                   mapOffset={mapOffset}
                   coatSize={Math.round(((coatSize + 1) / 11) * 80)}
                 >
-                  <MapBackground />
+                  <Suspense fallback={<svg />}>
+                    <MapBackground />
+                  </Suspense>
                 </HeraldryCanvas>
               </div>
             </div>
