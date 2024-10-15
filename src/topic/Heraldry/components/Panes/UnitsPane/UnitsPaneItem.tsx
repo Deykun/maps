@@ -54,10 +54,6 @@ const UnitsPaneItem = ( { className, unit, setPreviewUnit }: Props) => {
       <span className="w-full">
         <a href={url} target="_blank" className="text-[14px] font-[500] tracking-wide line-clamp-2 text-[#312f2f] hover:text-black duration-300">
           <span>{title}</span>
-          {isFormerUnit && <>
-            {' '}
-            <IconScriptBroken className="inline-block size-3" />
-          </>}
           {' '}
           <IconLink className="inline-block size-3" /> 
         </a>
@@ -66,6 +62,12 @@ const UnitsPaneItem = ( { className, unit, setPreviewUnit }: Props) => {
           'opacity-70': className,
           'text-[#ca1a1a]': !place?.name
         })}>
+          {isFormerUnit && <>
+            <IconScriptBroken className="inline-block size-3" />
+            {' '}
+            {t('heraldry.item.formerUnit')}
+            {place?.name ? ',' : ''}
+          </>}
           {' '}
           {place?.name || t('heraldry.item.noLocation')}
         </p>

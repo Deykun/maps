@@ -14,7 +14,7 @@ const filterForCountryData = (units: CoatOfArmsMapData[]) => {
     };
 
     if ([
-      'empty'
+      'Kanton Tessin'
     ].includes(unit.title)) {
       // Outside of country
       return false;
