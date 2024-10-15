@@ -53,13 +53,6 @@ export const PATHS_DATA: {
     lang: 'pl',
     country: 'pl',
   },
-  {
-    pathNameLink: 'Heraldic Map of Europe - wip',
-    path: 'heraldry',
-    title: '🛡️ Heraldic Map of Europe',
-    social: ``,
-    lang: 'en',
-  },
 ] as const;
 
 export const HERALDRY_COUNTRIES = PATHS_DATA.filter(({ type }) => type === 'heraldryCountry');

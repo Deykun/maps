@@ -91,7 +91,7 @@ export const getDetails = async ({
 
       console.log([
         chalk.green('✓'),
-        chalk.gray(`skipping "${chalk.white(unit.title)}"`),
+        chalk.gray(`validating "${chalk.white(unit.title)}"`),
         chalk.gray(`(index: ${chalk.white(unit.index)})`),
       ].join(' '));
     }

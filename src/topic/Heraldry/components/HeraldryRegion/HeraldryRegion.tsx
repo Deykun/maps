@@ -39,7 +39,6 @@ const fetchCountryData = async ({ dataPaths, filterForCountryData, sortForCountr
         }
       }
 
-
       return stack;
     }, {}),
   );
@@ -50,8 +49,8 @@ const fetchCountryData = async ({ dataPaths, filterForCountryData, sortForCountr
   }
 
   if (sortForCountryData) {
-      // Sort from the parent
-      unitsForMapAll = unitsForMapAll.sort(sortForCountryData);
+    // Sort from the parent
+    unitsForMapAll = unitsForMapAll.sort(sortForCountryData);
   }
   
   const typeFiltersList = getFilter(unitsForMapAll, 'type');
@@ -117,11 +116,12 @@ const HeraldryRegionMap = ({
     error,
     data: dataForMap,
   } = useQuery({
-    queryFn: () => fetchCountryData({ dataPaths, filterForCountryData }),
+    queryFn: () => fetchCountryData({ dataPaths, filterForCountryData, sortForCountryData }),
     queryKey: [lang, 'map'],
   });
 
   const {
+    isLoading: isFetchingDetails,
     data: dataForDetails,
   } = useQuery({
     queryFn: () => fetchCountryDetailsData({ dataPaths }),
@@ -170,6 +170,7 @@ const HeraldryRegionMap = ({
       mapOffset={mapOffset}
       developmentModeFiltersTypes={developmentModeFiltersTypes}
       setShouldFetchDetails={setShouldFetchDetails}
+      isFetchingDetails={isFetchingDetails}
     />
   );
 };

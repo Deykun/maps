@@ -24,6 +24,7 @@ import IconCubeAnd from '@/components/Icons/IconCubeAnd';
 import IconCubeOr from '@/components/Icons/IconCubeOr';
 import IconEye from '@/components/Icons/IconEye';
 import IconEyeCrossed from '@/components/Icons/IconEyeCrossed';
+import IconLoader from '@/components/Icons/IconLoader';
 
 import Pane from '@/components/UI/Pane';
 import SubPane from '@/components/UI/SubPane';
@@ -70,6 +71,7 @@ type Props = {
   shouldReverseFilters: boolean,
   setShouldReverseFilters: (value: boolean) => void,
   setShouldFetchDetails: (value: boolean) => void,
+  isFetchingDetails: boolean,
 };
 
 const FiltersPane = ({
@@ -92,6 +94,7 @@ const FiltersPane = ({
   shouldReverseFilters,
   setShouldReverseFilters,
   setShouldFetchDetails,
+  isFetchingDetails,
 }: Props) => {
   const isFiltersDevelopmentModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
   const [activeMenu, setActiveMenu] = useState('');
@@ -200,6 +203,12 @@ const FiltersPane = ({
             label={t('heraldry.clearFilters')}
           >
             <IconEraser />
+          </ButtonCircle>
+        </>}
+        {isOpen && isFetchingDetails && <>
+          <span className="border-t" />
+          <ButtonCircle tagName="span" isActive>
+            <IconLoader />
           </ButtonCircle>
         </>}
       </Pane>

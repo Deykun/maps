@@ -19,7 +19,7 @@ const DevelopmentPaneSnippet = ({
       <DevelopmentPaneSnippetList key="exclude" name="exclude" list={exclude} />
       <DevelopmentPaneSnippetList key="include" name="include" list={include} />
       <br />
-      {'}'}
+      {'},'}
     </pre>
   );
 };
