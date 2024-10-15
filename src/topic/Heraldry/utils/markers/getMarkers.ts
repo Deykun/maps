@@ -1,4 +1,5 @@
 import { getMarkers as getMarkersET } from './lang/et';
+import { getMarkers as getMarkersDE } from './lang/de';
 import { getMarkers as getMarkersFI } from './lang/fi';
 import { getMarkers as getMarkersPL } from './lang/pl';
 
@@ -14,7 +15,14 @@ export const getMarkers = ({
   let animals: string[] = [];
   let items: string[] = [];
 
-  const text = rawText.toLowerCase() || '';
+  // const text = rawText.toLowerCase() || '';
+
+  if (lang === 'de') {
+    const response = getMarkersDE({ text: rawText, title })
+
+    animals = response.animals;
+    items = response.items;
+  }
 
   if (lang === 'et') {
     const response = getMarkersET({ text: rawText, title })

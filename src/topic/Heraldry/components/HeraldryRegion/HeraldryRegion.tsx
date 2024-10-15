@@ -63,7 +63,9 @@ const fetchCountryData = async ({ dataPaths, filterForCountryData, sortForCountr
 };
 
 const fetchCountryDetailsData = async ({ dataPaths }: FetchParams) => {
-  const promiseArray = dataPaths.map(
+  const dataPathsWithoutChunks = Array.from(new Set(dataPaths.map((path) => path.replace(/-[\d+]/g, ''))));
+
+  const promiseArray = dataPathsWithoutChunks.map(
     (path) => fetch(`${path}-details-data.json`).then((resposne) => resposne.json()),
   );
   const resposne = await Promise.all(promiseArray);
