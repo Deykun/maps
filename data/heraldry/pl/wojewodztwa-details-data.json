@@ -1,0 +1,2408 @@
+[
+ {
+  "id": "wojewodztwa-0",
+  "colors": {
+   "byNames": {
+    "gold": [
+     {
+      "didMatch": true,
+      "color": "#807859",
+      "name": "gold",
+      "distanceToTreshold": 1.093294099907439,
+      "matcherColor": "#b68f5e",
+      "thresholdDistance": 60,
+      "distance": 58.90670590009256,
+      "isGreyscale": false,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "white": [
+     {
+      "didMatch": true,
+      "color": "#ffffff",
+      "name": "white",
+      "matcherColor": "#fff",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": true
+     }
+    ],
+    "black": [
+     {
+      "didMatch": true,
+      "color": "#0a0a0a",
+      "name": "black",
+      "matcherColor": "#000",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": true,
+      "isWhite": false
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "didMatch": false,
+      "color": "#807859",
+      "name": "red",
+      "distanceToTreshold": -116.08671551127577,
+      "matcherColor": "#f00",
+      "thresholdDistance": 80,
+      "distance": 196.08671551127577,
+      "isGreyscale": false,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "blue": [
+     {
+      "didMatch": false,
+      "color": "#807859",
+      "name": "blue",
+      "distanceToTreshold": -38.25819210524064,
+      "matcherColor": "#5596c3",
+      "thresholdDistance": 80,
+      "distance": 118.25819210524064,
+      "isGreyscale": false,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "green": [
+     {
+      "didMatch": false,
+      "color": "#807859",
+      "name": "green",
+      "distanceToTreshold": -66.16017418023074,
+      "matcherColor": "#006f00",
+      "thresholdDistance": 90,
+      "distance": 156.16017418023074,
+      "isGreyscale": false,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ]
+   },
+   "hexPalette": [
+    "#fbcf01",
+    "#807859",
+    "#ffffff",
+    "#0a0a0a"
+   ]
+  },
+  "markers": {
+   "animals": [
+    "eagle",
+    "bird"
+   ],
+   "items": [
+    "cross"
+   ]
+  }
+ },
+ {
+  "id": "wojewodztwa-1",
+  "colors": {
+   "byNames": {
+    "red": [
+     {
+      "didMatch": true,
+      "color": "#d02f1d",
+      "name": "red",
+      "distanceToTreshold": 7.481036962736425,
+      "matcherColor": "#f00",
+      "thresholdDistance": 80,
+      "distance": 72.51896303726357,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "grey": [
+     {
+      "didMatch": true,
+      "color": "#706d71",
+      "name": "grey",
+      "matcherColor": "#888",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": true,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "black": [
+     {
+      "didMatch": true,
+      "color": "#000200",
+      "name": "black",
+      "matcherColor": "#000",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": true,
+      "isWhite": false
+     }
+    ],
+    "white": [
+     {
+      "didMatch": true,
+      "color": "#ffffff",
+      "name": "white",
+      "matcherColor": "#fff",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": true
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "blue": [
+     {
+      "didMatch": false,
+      "color": "#d02f1d",
+      "name": "blue",
+      "distanceToTreshold": -138.3229689168655,
+      "matcherColor": "#243b7f",
+      "thresholdDistance": 60,
+      "distance": 198.3229689168655,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "green": [
+     {
+      "didMatch": false,
+      "color": "#d02f1d",
+      "name": "green",
+      "distanceToTreshold": -129.54726142678254,
+      "matcherColor": "#006f00",
+      "thresholdDistance": 90,
+      "distance": 219.54726142678254,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "gold": [
+     {
+      "didMatch": false,
+      "color": "#d02f1d",
+      "name": "gold",
+      "distanceToTreshold": -58.81498222025705,
+      "matcherColor": "#b68f5e",
+      "thresholdDistance": 60,
+      "distance": 118.81498222025705,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ]
+   },
+   "hexPalette": [
+    "#d02f1d",
+    "#706d71",
+    "#000200",
+    "#ffffff"
+   ]
+  },
+  "markers": {
+   "animals": [
+    "eagle",
+    "lion",
+    "bird"
+   ],
+   "items": [
+    "crown"
+   ]
+  }
+ },
+ {
+  "id": "wojewodztwa-2",
+  "colors": {
+   "byNames": {
+    "red": [
+     {
+      "didMatch": true,
+      "color": "#d51216",
+      "name": "red",
+      "distanceToTreshold": 29.285110667576134,
+      "matcherColor": "#f00",
+      "thresholdDistance": 80,
+      "distance": 50.714889332423866,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "black": [
+     {
+      "didMatch": true,
+      "color": "#000000",
+      "name": "black",
+      "matcherColor": "#000",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": true,
+      "isWhite": false
+     }
+    ],
+    "white": [
+     {
+      "didMatch": true,
+      "color": "#ffffff",
+      "name": "white",
+      "matcherColor": "#fff",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": true
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "blue": [
+     {
+      "didMatch": false,
+      "color": "#755e5f",
+      "name": "blue",
+      "distanceToTreshold": -33.861600242058515,
+      "matcherColor": "#243b7f",
+      "thresholdDistance": 60,
+      "distance": 93.86160024205851,
+      "isGreyscale": false,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "green": [
+     {
+      "didMatch": false,
+      "color": "#755e5f",
+      "name": "green",
+      "distanceToTreshold": -61.66739926562991,
+      "matcherColor": "#006f00",
+      "thresholdDistance": 90,
+      "distance": 151.6673992656299,
+      "isGreyscale": false,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "gold": [
+     {
+      "didMatch": false,
+      "color": "#755e5f",
+      "name": "gold",
+      "distanceToTreshold": -21.40638795573723,
+      "matcherColor": "#b68f5e",
+      "thresholdDistance": 60,
+      "distance": 81.40638795573723,
+      "isGreyscale": false,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "red": [
+     {
+      "didMatch": false,
+      "color": "#755e5f",
+      "name": "red",
+      "distanceToTreshold": -112.1067411623028,
+      "matcherColor": "#f00",
+      "thresholdDistance": 80,
+      "distance": 192.1067411623028,
+      "isGreyscale": false,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ]
+   },
+   "hexPalette": [
+    "#d51216",
+    "#755e5f",
+    "#000000",
+    "#ffffff"
+   ]
+  },
+  "markers": {
+   "animals": [
+    "deer",
+    "bear"
+   ],
+   "items": [
+    "tree",
+    "crown"
+   ]
+  }
+ },
+ {
+  "id": "wojewodztwa-3",
+  "colors": {
+   "byNames": {
+    "gold": [
+     {
+      "didMatch": true,
+      "color": "#f6f102",
+      "name": "gold",
+      "distanceToTreshold": 33.23694538575979,
+      "matcherColor": "#ffff00",
+      "thresholdDistance": 50,
+      "distance": 16.76305461424021,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "red": [
+     {
+      "didMatch": true,
+      "color": "#db261e",
+      "name": "red",
+      "distanceToTreshold": 19.667587484006575,
+      "matcherColor": "#f00",
+      "thresholdDistance": 80,
+      "distance": 60.332412515993425,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "green": [
+     {
+      "didMatch": true,
+      "color": "#01923f",
+      "name": "green",
+      "distanceToTreshold": 54,
+      "matcherColor": "#07923f",
+      "thresholdDistance": 60,
+      "distance": 6,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "grey": [
+     {
+      "didMatch": true,
+      "color": "#989a9c",
+      "name": "grey",
+      "matcherColor": "#888",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": true,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "white": [
+     {
+      "didMatch": true,
+      "color": "#ffffff",
+      "name": "white",
+      "matcherColor": "#fff",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": true
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "didMatch": false,
+      "color": "#290000",
+      "name": "red",
+      "distanceToTreshold": -134,
+      "matcherColor": "#f00",
+      "thresholdDistance": 80,
+      "distance": 214,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "blue": [
+     {
+      "didMatch": false,
+      "color": "#290000",
+      "name": "blue",
+      "distanceToTreshold": -80.12494424619766,
+      "matcherColor": "#243b7f",
+      "thresholdDistance": 60,
+      "distance": 140.12494424619766,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "green": [
+     {
+      "didMatch": false,
+      "color": "#290000",
+      "name": "green",
+      "distanceToTreshold": -28.330046902720355,
+      "matcherColor": "#006f00",
+      "thresholdDistance": 90,
+      "distance": 118.33004690272035,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "gold": [
+     {
+      "didMatch": false,
+      "color": "#290000",
+      "name": "gold",
+      "distanceToTreshold": -161.73407496368256,
+      "matcherColor": "#b68f5e",
+      "thresholdDistance": 60,
+      "distance": 221.73407496368256,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ]
+   },
+   "hexPalette": [
+    "#f6f102",
+    "#db261e",
+    "#01923f",
+    "#290000",
+    "#989a9c",
+    "#ffffff"
+   ]
+  },
+  "markers": {
+   "animals": [
+    "eagle",
+    "bird"
+   ],
+   "items": [
+    "crown"
+   ]
+  }
+ },
+ {
+  "id": "wojewodztwa-4",
+  "colors": {
+   "byNames": {
+    "gold": [
+     {
+      "didMatch": true,
+      "color": "#ffe700",
+      "name": "gold",
+      "distanceToTreshold": 26,
+      "matcherColor": "#ffff00",
+      "thresholdDistance": 50,
+      "distance": 24,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "red": [
+     {
+      "didMatch": true,
+      "color": "#be2910",
+      "name": "red",
+      "distanceToTreshold": 1.5015923728385445,
+      "matcherColor": "#f00",
+      "thresholdDistance": 80,
+      "distance": 78.49840762716146,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "grey": [
+     {
+      "didMatch": true,
+      "color": "#949396",
+      "name": "grey",
+      "matcherColor": "#888",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": true,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "white": [
+     {
+      "didMatch": true,
+      "color": "#ffffff",
+      "name": "white",
+      "matcherColor": "#fff",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": true
+     }
+    ],
+    "black": [
+     {
+      "didMatch": true,
+      "color": "#000000",
+      "name": "black",
+      "matcherColor": "#000",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": true,
+      "isWhite": false
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "didMatch": false,
+      "color": "#ffe700",
+      "name": "red",
+      "distanceToTreshold": -151,
+      "matcherColor": "#f00",
+      "thresholdDistance": 80,
+      "distance": 231,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "blue": [
+     {
+      "didMatch": false,
+      "color": "#be2910",
+      "name": "blue",
+      "distanceToTreshold": -130.68560512005095,
+      "matcherColor": "#243b7f",
+      "thresholdDistance": 60,
+      "distance": 190.68560512005095,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "green": [
+     {
+      "didMatch": false,
+      "color": "#be2910",
+      "name": "green",
+      "distanceToTreshold": -113.11573055772908,
+      "matcherColor": "#006f00",
+      "thresholdDistance": 90,
+      "distance": 203.11573055772908,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "gold": [
+     {
+      "didMatch": false,
+      "color": "#be2910",
+      "name": "gold",
+      "distanceToTreshold": -68.65457628860312,
+      "matcherColor": "#b68f5e",
+      "thresholdDistance": 60,
+      "distance": 128.65457628860312,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ]
+   },
+   "hexPalette": [
+    "#ffe700",
+    "#be2910",
+    "#949396",
+    "#ffffff",
+    "#000000"
+   ]
+  },
+  "markers": {
+   "animals": [
+    "eagle",
+    "lion",
+    "bullBison",
+    "bird"
+   ],
+   "items": [
+    "boat",
+    "cross",
+    "crown"
+   ]
+  }
+ },
+ {
+  "id": "wojewodztwa-5",
+  "colors": {
+   "byNames": {
+    "gold": [
+     {
+      "didMatch": true,
+      "color": "#e4c000",
+      "name": "gold",
+      "distanceToTreshold": 8.60933936988161,
+      "matcherColor": "#e6c633",
+      "thresholdDistance": 60,
+      "distance": 51.39066063011839,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "red": [
+     {
+      "didMatch": true,
+      "color": "#e2032c",
+      "name": "red",
+      "distanceToTreshold": 27.21742711841341,
+      "matcherColor": "#f00",
+      "thresholdDistance": 80,
+      "distance": 52.78257288158659,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "grey": [
+     {
+      "didMatch": true,
+      "color": "#aeb0b2",
+      "name": "grey",
+      "matcherColor": "#888",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": true,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "white": [
+     {
+      "didMatch": true,
+      "color": "#ffffff",
+      "name": "white",
+      "matcherColor": "#fff",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": true
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "didMatch": false,
+      "color": "#210009",
+      "name": "red",
+      "distanceToTreshold": -142.1823575354263,
+      "matcherColor": "#f00",
+      "thresholdDistance": 80,
+      "distance": 222.1823575354263,
+      "isGreyscale": false,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "blue": [
+     {
+      "didMatch": false,
+      "color": "#210009",
+      "name": "blue",
+      "distanceToTreshold": -71.96211577570284,
+      "matcherColor": "#243b7f",
+      "thresholdDistance": 60,
+      "distance": 131.96211577570284,
+      "isGreyscale": false,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "green": [
+     {
+      "didMatch": false,
+      "color": "#210009",
+      "name": "green",
+      "distanceToTreshold": -26.150764095635637,
+      "matcherColor": "#006f00",
+      "thresholdDistance": 90,
+      "distance": 116.15076409563564,
+      "isGreyscale": false,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "gold": [
+     {
+      "didMatch": false,
+      "color": "#210009",
+      "name": "gold",
+      "distanceToTreshold": -163.32711434127293,
+      "matcherColor": "#b68f5e",
+      "thresholdDistance": 60,
+      "distance": 223.32711434127293,
+      "isGreyscale": false,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ]
+   },
+   "hexPalette": [
+    "#e4c000",
+    "#e2032c",
+    "#210009",
+    "#62565a",
+    "#aeb0b2",
+    "#ffffff"
+   ]
+  },
+  "markers": {
+   "animals": [
+    "eagle",
+    "bird"
+   ],
+   "items": [
+    "crown"
+   ]
+  }
+ },
+ {
+  "id": "wojewodztwa-6",
+  "colors": {
+   "byNames": {
+    "red": [
+     {
+      "didMatch": true,
+      "color": "#e60d2d",
+      "name": "red",
+      "distanceToTreshold": 26.905744190166864,
+      "matcherColor": "#f00",
+      "thresholdDistance": 80,
+      "distance": 53.094255809833136,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "black": [
+     {
+      "didMatch": true,
+      "color": "#110902",
+      "name": "black",
+      "matcherColor": "#000",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": true,
+      "isWhite": false
+     }
+    ],
+    "grey": [
+     {
+      "didMatch": true,
+      "color": "#a1989b",
+      "name": "grey",
+      "matcherColor": "#888",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": true,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "white": [
+     {
+      "didMatch": true,
+      "color": "#ffffff",
+      "name": "white",
+      "matcherColor": "#fff",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": true
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "blue": [
+     {
+      "didMatch": false,
+      "color": "#e60d2d",
+      "name": "blue",
+      "distanceToTreshold": -152.96243800257358,
+      "matcherColor": "#2e3192",
+      "thresholdDistance": 60,
+      "distance": 212.96243800257358,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "green": [
+     {
+      "didMatch": false,
+      "color": "#e60d2d",
+      "name": "green",
+      "distanceToTreshold": -164.02558926218438,
+      "matcherColor": "#006f00",
+      "thresholdDistance": 90,
+      "distance": 254.02558926218438,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "gold": [
+     {
+      "didMatch": false,
+      "color": "#e60d2d",
+      "name": "gold",
+      "distanceToTreshold": -86.98639392814562,
+      "matcherColor": "#b68f5e",
+      "thresholdDistance": 60,
+      "distance": 146.98639392814562,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ]
+   },
+   "hexPalette": [
+    "#e60d2d",
+    "#110902",
+    "#a1989b",
+    "#ffffff"
+   ]
+  },
+  "markers": {
+   "animals": [
+    "eagle",
+    "bird"
+   ],
+   "items": [
+    "crown"
+   ]
+  }
+ },
+ {
+  "id": "wojewodztwa-7",
+  "colors": {
+   "byNames": {
+    "gold": [
+     {
+      "didMatch": true,
+      "color": "#a89d70",
+      "name": "gold",
+      "distanceToTreshold": 33.241823679480696,
+      "matcherColor": "#b68f5e",
+      "thresholdDistance": 60,
+      "distance": 26.758176320519304,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "blue": [
+     {
+      "didMatch": true,
+      "color": "#0f6fb2",
+      "name": "blue",
+      "distanceToTreshold": 35.75128869403572,
+      "matcherColor": "#1d7dc0",
+      "thresholdDistance": 60,
+      "distance": 24.24871130596428,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "black": [
+     {
+      "didMatch": true,
+      "color": "#120400",
+      "name": "black",
+      "matcherColor": "#000",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": true,
+      "isWhite": false
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "didMatch": false,
+      "color": "#a89d70",
+      "name": "red",
+      "distanceToTreshold": -131.57031927943012,
+      "matcherColor": "#f00",
+      "thresholdDistance": 80,
+      "distance": 211.57031927943012,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "blue": [
+     {
+      "didMatch": false,
+      "color": "#a89d70",
+      "name": "blue",
+      "distanceToTreshold": -37.58826472059191,
+      "matcherColor": "#5596c3",
+      "thresholdDistance": 80,
+      "distance": 117.58826472059191,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "green": [
+     {
+      "didMatch": false,
+      "color": "#a89d70",
+      "name": "green",
+      "distanceToTreshold": -108.65052623694953,
+      "matcherColor": "#07923f",
+      "thresholdDistance": 60,
+      "distance": 168.65052623694953,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "gold": [
+     {
+      "didMatch": false,
+      "color": "#0f6fb2",
+      "name": "gold",
+      "distanceToTreshold": -129.6549498431296,
+      "matcherColor": "#b68f5e",
+      "thresholdDistance": 60,
+      "distance": 189.6549498431296,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ]
+   },
+   "hexPalette": [
+    "#ffc805",
+    "#0f6fb2",
+    "#a89d70",
+    "#120400"
+   ]
+  },
+  "markers": {
+   "animals": [
+    "eagle",
+    "bird"
+   ],
+   "items": [
+    "crown"
+   ]
+  }
+ },
+ {
+  "id": "wojewodztwa-8",
+  "colors": {
+   "byNames": {
+    "gold": [
+     {
+      "didMatch": true,
+      "color": "#f5d029",
+      "name": "gold",
+      "distanceToTreshold": 39.3844718719117,
+      "matcherColor": "#e6c633",
+      "thresholdDistance": 60,
+      "distance": 20.615528128088304,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "blue": [
+     {
+      "didMatch": true,
+      "color": "#0093df",
+      "name": "blue",
+      "distanceToTreshold": 27.442358807800588,
+      "matcherColor": "#0099ff",
+      "thresholdDistance": 60,
+      "distance": 32.55764119219941,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "red": [
+     {
+      "didMatch": true,
+      "color": "#f20400",
+      "name": "red",
+      "distanceToTreshold": 66.39852949126455,
+      "matcherColor": "#f00",
+      "thresholdDistance": 80,
+      "distance": 13.601470508735444,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "grey": [
+     {
+      "didMatch": true,
+      "color": "#848688",
+      "name": "grey",
+      "matcherColor": "#888",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": true,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "black": [
+     {
+      "didMatch": true,
+      "color": "#000000",
+      "name": "black",
+      "matcherColor": "#000",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": true,
+      "isWhite": false
+     }
+    ],
+    "white": [
+     {
+      "didMatch": true,
+      "color": "#ffffff",
+      "name": "white",
+      "matcherColor": "#fff",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": true
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "didMatch": false,
+      "color": "#0093df",
+      "name": "red",
+      "distanceToTreshold": -289.2736112965561,
+      "matcherColor": "#f00",
+      "thresholdDistance": 80,
+      "distance": 369.2736112965561,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "blue": [
+     {
+      "didMatch": false,
+      "color": "#f20400",
+      "name": "blue",
+      "distanceToTreshold": -188.17332652805376,
+      "matcherColor": "#243b7f",
+      "thresholdDistance": 60,
+      "distance": 248.17332652805376,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "green": [
+     {
+      "didMatch": false,
+      "color": "#f20400",
+      "name": "green",
+      "distanceToTreshold": -174.5996976566678,
+      "matcherColor": "#006f00",
+      "thresholdDistance": 90,
+      "distance": 264.5996976566678,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "gold": [
+     {
+      "didMatch": false,
+      "color": "#f20400",
+      "name": "gold",
+      "distanceToTreshold": -118.20493820318222,
+      "matcherColor": "#b68f5e",
+      "thresholdDistance": 60,
+      "distance": 178.20493820318222,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ]
+   },
+   "hexPalette": [
+    "#f5d029",
+    "#0093df",
+    "#f20400",
+    "#848688",
+    "#000000",
+    "#ffffff"
+   ]
+  },
+  "markers": {
+   "animals": [
+    "griffin",
+    "lion"
+   ],
+   "items": [
+    "cross",
+    "crown"
+   ]
+  }
+ },
+ {
+  "id": "wojewodztwa-9",
+  "colors": {
+   "byNames": {
+    "gold": [
+     {
+      "didMatch": true,
+      "color": "#fff61a",
+      "name": "gold",
+      "distanceToTreshold": 22.48636701560479,
+      "matcherColor": "#ffff00",
+      "thresholdDistance": 50,
+      "distance": 27.51363298439521,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "red": [
+     {
+      "didMatch": true,
+      "color": "#dc2b1a",
+      "name": "red",
+      "distanceToTreshold": 18.762756430420545,
+      "matcherColor": "#f00",
+      "thresholdDistance": 80,
+      "distance": 61.237243569579455,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "grey": [
+     {
+      "didMatch": true,
+      "color": "#a4a4a4",
+      "name": "grey",
+      "matcherColor": "#888",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": true,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "white": [
+     {
+      "didMatch": true,
+      "color": "#ffffff",
+      "name": "white",
+      "matcherColor": "#fff",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": true
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "didMatch": false,
+      "color": "#350000",
+      "name": "red",
+      "distanceToTreshold": -122,
+      "matcherColor": "#f00",
+      "thresholdDistance": 80,
+      "distance": 202,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "blue": [
+     {
+      "didMatch": false,
+      "color": "#350000",
+      "name": "blue",
+      "distanceToTreshold": -81.06381534610497,
+      "matcherColor": "#243b7f",
+      "thresholdDistance": 60,
+      "distance": 141.06381534610497,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "green": [
+     {
+      "didMatch": false,
+      "color": "#350000",
+      "name": "green",
+      "distanceToTreshold": -33.00406497347964,
+      "matcherColor": "#006f00",
+      "thresholdDistance": 90,
+      "distance": 123.00406497347964,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "gold": [
+     {
+      "didMatch": false,
+      "color": "#350000",
+      "name": "gold",
+      "distanceToTreshold": -154.30352306950067,
+      "matcherColor": "#b68f5e",
+      "thresholdDistance": 60,
+      "distance": 214.30352306950067,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ]
+   },
+   "hexPalette": [
+    "#fff61a",
+    "#dc2b1a",
+    "#350000",
+    "#a4a4a4",
+    "#ffffff"
+   ]
+  },
+  "markers": {
+   "animals": [
+    "eagle",
+    "horse",
+    "bird"
+   ],
+   "items": [
+    "sword",
+    "cross",
+    "crown"
+   ]
+  }
+ },
+ {
+  "id": "wojewodztwa-10",
+  "colors": {
+   "byNames": {
+    "gold": [
+     {
+      "didMatch": true,
+      "color": "#ffd516",
+      "name": "gold",
+      "distanceToTreshold": 18.878229610095822,
+      "matcherColor": "#e6c633",
+      "thresholdDistance": 60,
+      "distance": 41.12177038990418,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "black": [
+     {
+      "didMatch": true,
+      "color": "#030303",
+      "name": "black",
+      "matcherColor": "#000",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": true,
+      "isWhite": false
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "didMatch": false,
+      "color": "#6d6528",
+      "name": "red",
+      "distanceToTreshold": -101.98076821466603,
+      "matcherColor": "#f00",
+      "thresholdDistance": 80,
+      "distance": 181.98076821466603,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "blue": [
+     {
+      "didMatch": false,
+      "color": "#6d6528",
+      "name": "blue",
+      "distanceToTreshold": -61.086745765174484,
+      "matcherColor": "#243b7f",
+      "thresholdDistance": 60,
+      "distance": 121.08674576517448,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "green": [
+     {
+      "didMatch": false,
+      "color": "#6d6528",
+      "name": "green",
+      "distanceToTreshold": -26.53754759733019,
+      "matcherColor": "#006f00",
+      "thresholdDistance": 90,
+      "distance": 116.53754759733019,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "gold": [
+     {
+      "didMatch": false,
+      "color": "#6d6528",
+      "name": "gold",
+      "distanceToTreshold": -40.04498987955368,
+      "matcherColor": "#b68f5e",
+      "thresholdDistance": 60,
+      "distance": 100.04498987955368,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ]
+   },
+   "hexPalette": [
+    "#ffd516",
+    "#6d6528",
+    "#030303"
+   ]
+  },
+  "markers": {
+   "animals": [
+    "eagle",
+    "griffin",
+    "bird"
+   ],
+   "items": [
+    "sword",
+    "crown"
+   ]
+  }
+ },
+ {
+  "id": "wojewodztwa-11",
+  "colors": {
+   "byNames": {
+    "gold": [
+     {
+      "didMatch": true,
+      "color": "#fbd115",
+      "name": "gold",
+      "distanceToTreshold": 21.76389141138968,
+      "matcherColor": "#e6c633",
+      "thresholdDistance": 60,
+      "distance": 38.23610858861032,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "blue": [
+     {
+      "didMatch": true,
+      "color": "#2f44b5",
+      "name": "blue",
+      "distanceToTreshold": 20.16283142591582,
+      "matcherColor": "#2e3192",
+      "thresholdDistance": 60,
+      "distance": 39.83716857408418,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "black": [
+     {
+      "didMatch": true,
+      "color": "#000000",
+      "name": "black",
+      "matcherColor": "#000",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": true,
+      "isWhite": false
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "didMatch": false,
+      "color": "#2f44b5",
+      "name": "red",
+      "distanceToTreshold": -203.9876757889328,
+      "matcherColor": "#f00",
+      "thresholdDistance": 80,
+      "distance": 283.9876757889328,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "blue": [
+     {
+      "didMatch": false,
+      "color": "#7a6a19",
+      "name": "blue",
+      "distanceToTreshold": -81.45317246354003,
+      "matcherColor": "#243b7f",
+      "thresholdDistance": 60,
+      "distance": 141.45317246354003,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "green": [
+     {
+      "didMatch": false,
+      "color": "#2f44b5",
+      "name": "green",
+      "distanceToTreshold": -72.29512462672236,
+      "matcherColor": "#00824a",
+      "thresholdDistance": 60,
+      "distance": 132.29512462672236,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "gold": [
+     {
+      "didMatch": false,
+      "color": "#2f44b5",
+      "name": "gold",
+      "distanceToTreshold": -117.25405496066938,
+      "matcherColor": "#b68f5e",
+      "thresholdDistance": 60,
+      "distance": 177.25405496066938,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ]
+   },
+   "hexPalette": [
+    "#fbd115",
+    "#7a6a19",
+    "#2f44b5",
+    "#000000"
+   ]
+  },
+  "markers": {
+   "animals": [
+    "eagle",
+    "bird"
+   ],
+   "items": [
+    "crown"
+   ]
+  }
+ },
+ {
+  "id": "wojewodztwa-12",
+  "colors": {
+   "byNames": {
+    "blue": [
+     {
+      "didMatch": true,
+      "color": "#0094dd",
+      "name": "blue",
+      "distanceToTreshold": 25.634319445120838,
+      "matcherColor": "#0099ff",
+      "thresholdDistance": 60,
+      "distance": 34.36568055487916,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "red": [
+     {
+      "didMatch": true,
+      "color": "#dc251a",
+      "name": "red",
+      "distanceToTreshold": 22.81608617801681,
+      "matcherColor": "#f00",
+      "thresholdDistance": 80,
+      "distance": 57.18391382198319,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "gold": [
+     {
+      "didMatch": true,
+      "color": "#967079",
+      "name": "gold",
+      "distanceToTreshold": 7.903934889475579,
+      "matcherColor": "#b68f5e",
+      "thresholdDistance": 60,
+      "distance": 52.09606511052442,
+      "isGreyscale": false,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "black": [
+     {
+      "didMatch": true,
+      "color": "#080d0e",
+      "name": "black",
+      "matcherColor": "#000",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": true,
+      "isWhite": false
+     }
+    ],
+    "white": [
+     {
+      "didMatch": true,
+      "color": "#ffffff",
+      "name": "white",
+      "matcherColor": "#fff",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": true
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "didMatch": false,
+      "color": "#967079",
+      "name": "red",
+      "distanceToTreshold": -115.47378340841516,
+      "matcherColor": "#f00",
+      "thresholdDistance": 80,
+      "distance": 195.47378340841516,
+      "isGreyscale": false,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "green": [
+     {
+      "didMatch": false,
+      "color": "#967079",
+      "name": "green",
+      "distanceToTreshold": -98.01582199260935,
+      "matcherColor": "#07923f",
+      "thresholdDistance": 60,
+      "distance": 158.01582199260935,
+      "isGreyscale": false,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "gold": [
+     {
+      "didMatch": false,
+      "color": "#dc251a",
+      "name": "gold",
+      "distanceToTreshold": -71.54466921924279,
+      "matcherColor": "#b68f5e",
+      "thresholdDistance": 60,
+      "distance": 131.5446692192428,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "blue": [
+     {
+      "didMatch": false,
+      "color": "#967079",
+      "name": "blue",
+      "distanceToTreshold": -25.569882068703663,
+      "matcherColor": "#5596c3",
+      "thresholdDistance": 80,
+      "distance": 105.56988206870366,
+      "isGreyscale": false,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ]
+   },
+   "hexPalette": [
+    "#0094dd",
+    "#dc251a",
+    "#967079",
+    "#080d0e",
+    "#ffffff"
+   ]
+  },
+  "markers": {
+   "animals": [
+    "eagle",
+    "bird"
+   ],
+   "items": [
+    "cross"
+   ]
+  }
+ },
+ {
+  "id": "wojewodztwa-13",
+  "colors": {
+   "byNames": {
+    "gold": [
+     {
+      "didMatch": true,
+      "color": "#f4d839",
+      "name": "gold",
+      "distanceToTreshold": 36.42034775489681,
+      "matcherColor": "#e6c633",
+      "thresholdDistance": 60,
+      "distance": 23.57965224510319,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "red": [
+     {
+      "didMatch": true,
+      "color": "#d12421",
+      "name": "red",
+      "distanceToTreshold": 12.910507529121972,
+      "matcherColor": "#f00",
+      "thresholdDistance": 80,
+      "distance": 67.08949247087803,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "grey": [
+     {
+      "didMatch": true,
+      "color": "#928b8b",
+      "name": "grey",
+      "matcherColor": "#888",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": true,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "black": [
+     {
+      "didMatch": true,
+      "color": "#000200",
+      "name": "black",
+      "matcherColor": "#000",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": true,
+      "isWhite": false
+     }
+    ],
+    "white": [
+     {
+      "didMatch": true,
+      "color": "#ffffff",
+      "name": "white",
+      "matcherColor": "#fff",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": true
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "didMatch": false,
+      "color": "#f4d839",
+      "name": "red",
+      "distanceToTreshold": -143.66492796144863,
+      "matcherColor": "#f00",
+      "thresholdDistance": 80,
+      "distance": 223.66492796144863,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "blue": [
+     {
+      "didMatch": false,
+      "color": "#d12421",
+      "name": "blue",
+      "distanceToTreshold": -138.2271424401815,
+      "matcherColor": "#243b7f",
+      "thresholdDistance": 60,
+      "distance": 198.2271424401815,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "green": [
+     {
+      "didMatch": false,
+      "color": "#d12421",
+      "name": "green",
+      "distanceToTreshold": -134.48830704515547,
+      "matcherColor": "#006f00",
+      "thresholdDistance": 90,
+      "distance": 224.48830704515547,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "gold": [
+     {
+      "didMatch": false,
+      "color": "#d12421",
+      "name": "gold",
+      "distanceToTreshold": -66.09123680890754,
+      "matcherColor": "#b68f5e",
+      "thresholdDistance": 60,
+      "distance": 126.09123680890754,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ]
+   },
+   "hexPalette": [
+    "#f4d839",
+    "#d12421",
+    "#928b8b",
+    "#000200",
+    "#ffffff"
+   ]
+  },
+  "markers": {
+   "animals": [
+    "eagle",
+    "ram",
+    "bird"
+   ],
+   "items": [
+    "cross",
+    "crown"
+   ]
+  }
+ },
+ {
+  "id": "wojewodztwa-14",
+  "colors": {
+   "byNames": {
+    "gold": [
+     {
+      "didMatch": true,
+      "color": "#f4f924",
+      "name": "gold",
+      "distanceToTreshold": 11.881762894908164,
+      "matcherColor": "#ffff00",
+      "thresholdDistance": 50,
+      "distance": 38.118237105091836,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "red": [
+     {
+      "didMatch": true,
+      "color": "#e3001b",
+      "name": "red",
+      "distanceToTreshold": 41.102699322446554,
+      "matcherColor": "#f00",
+      "thresholdDistance": 80,
+      "distance": 38.897300677553446,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "grey": [
+     {
+      "didMatch": true,
+      "color": "#a0a0a0",
+      "name": "grey",
+      "matcherColor": "#888",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": true,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "black": [
+     {
+      "didMatch": true,
+      "color": "#000000",
+      "name": "black",
+      "matcherColor": "#000",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": true,
+      "isWhite": false
+     }
+    ],
+    "white": [
+     {
+      "didMatch": true,
+      "color": "#ffffff",
+      "name": "white",
+      "matcherColor": "#fff",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": true
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "didMatch": false,
+      "color": "#f4f924",
+      "name": "red",
+      "distanceToTreshold": -171.82930726982514,
+      "matcherColor": "#f00",
+      "thresholdDistance": 80,
+      "distance": 251.82930726982514,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "blue": [
+     {
+      "didMatch": false,
+      "color": "#e3001b",
+      "name": "blue",
+      "distanceToTreshold": -162.08782046748985,
+      "matcherColor": "#2e3192",
+      "thresholdDistance": 60,
+      "distance": 222.08782046748985,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "green": [
+     {
+      "didMatch": false,
+      "color": "#e3001b",
+      "name": "green",
+      "distanceToTreshold": -164.12398548739944,
+      "matcherColor": "#006f00",
+      "thresholdDistance": 90,
+      "distance": 254.12398548739944,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "gold": [
+     {
+      "didMatch": false,
+      "color": "#e3001b",
+      "name": "gold",
+      "distanceToTreshold": -104.20414123888594,
+      "matcherColor": "#b68f5e",
+      "thresholdDistance": 60,
+      "distance": 164.20414123888594,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ]
+   },
+   "hexPalette": [
+    "#f4f924",
+    "#e3001b",
+    "#525154",
+    "#a0a0a0",
+    "#000000",
+    "#ffffff"
+   ]
+  },
+  "markers": {
+   "animals": [
+    "eagle",
+    "bird"
+   ],
+   "items": [
+    "crown"
+   ]
+  }
+ },
+ {
+  "id": "wojewodztwa-15",
+  "colors": {
+   "byNames": {
+    "red": [
+     {
+      "didMatch": true,
+      "color": "#d72828",
+      "name": "red",
+      "distanceToTreshold": 10.717967697244902,
+      "matcherColor": "#f00",
+      "thresholdDistance": 80,
+      "distance": 69.2820323027551,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "grey": [
+     {
+      "didMatch": true,
+      "color": "#5d6a63",
+      "name": "grey",
+      "matcherColor": "#888",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": true,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "black": [
+     {
+      "didMatch": true,
+      "color": "#010101",
+      "name": "black",
+      "matcherColor": "#000",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": true,
+      "isWhite": false
+     }
+    ],
+    "white": [
+     {
+      "didMatch": true,
+      "color": "#ffffff",
+      "name": "white",
+      "matcherColor": "#fff",
+      "distanceToTreshold": -1,
+      "thresholdDistance": 0,
+      "distance": 0,
+      "isGreyscale": true,
+      "isLowSaturation": true,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": true
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "blue": [
+     {
+      "didMatch": false,
+      "color": "#d72828",
+      "name": "blue",
+      "distanceToTreshold": -139.69476708216467,
+      "matcherColor": "#2e3192",
+      "thresholdDistance": 60,
+      "distance": 199.69476708216467,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "green": [
+     {
+      "didMatch": false,
+      "color": "#d72828",
+      "name": "green",
+      "distanceToTreshold": -139.92607507631664,
+      "matcherColor": "#006f00",
+      "thresholdDistance": 90,
+      "distance": 229.92607507631664,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ],
+    "gold": [
+     {
+      "didMatch": false,
+      "color": "#d72828",
+      "name": "gold",
+      "distanceToTreshold": -60.888378266895444,
+      "matcherColor": "#b68f5e",
+      "thresholdDistance": 60,
+      "distance": 120.88837826689544,
+      "isGreyscale": false,
+      "isLowSaturation": false,
+      "isGrey": false,
+      "isBlack": false,
+      "isWhite": false
+     }
+    ]
+   },
+   "hexPalette": [
+    "#d72828",
+    "#5d6a63",
+    "#010101",
+    "#ffffff"
+   ]
+  },
+  "markers": {
+   "animals": [
+    "griffin"
+   ],
+   "items": []
+  }
+ }
+]

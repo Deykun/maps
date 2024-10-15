@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" height="458" width="408" stroke="#111" xmlns:xlink="http://www.w3.org/1999/xlink">
-<path d="m4 4v250a200 200 0 0 0 400 0v-250z" stroke-width="7" fill="#15a"/>
-<path id="a" stroke-width="5" stroke-linecap="round" fill="#fd1" d="m293 317a89 89 0 1 0 0 .1M153 339.9a56 56 0 1 0 99 -52m-111 52a67 67 0 1 0 116.7 -63m-129 61a78 78 0 1 0 134 -72"/>
-<use xlink:href="#a" x="99" y="-190"/>
-<use xlink:href="#a" x="-99" y="-190"/>
-</svg>
