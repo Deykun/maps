@@ -24,8 +24,13 @@ export const download = async (url: string, fileName: string, format: string, pa
     fit: 'contain',
     position: 'center',
     background: { r: 0, g: 0, b: 0, alpha: 0 },
-  }).toFile(`./public/images/heraldry/${lang}/${path}/${fileName}-80w.webp`).catch((e) => {
-    console.log(e);
+  }).toFile(`./public/images/heraldry/${lang}/${path}/${fileName}-80w.webp`).catch((error) => {
+    console.log(chalk.bgRedBright([
+      '✘',
+      `resize and save downloaded image error ${url}`,
+      `(expected filename: ${`./public/images/heraldry/${lang}/${path}/${fileName}-80w.webp`})`,
+    ].join(' ')));
+    console.log(error);
   });
 
   await sharp(bos).trim(trimOptions).resize(320, 320, {
@@ -33,6 +38,11 @@ export const download = async (url: string, fileName: string, format: string, pa
     position: 'center',
     background: { r: 0, g: 0, b: 0, alpha: 0 },
   }).toFile(`./public/images/heraldry/${lang}/${path}/${fileName}-320w.webp`).catch((error) => {
+    console.log(chalk.bgRedBright([
+      '✘',
+      `resize and save downloaded image error ${url}`,
+      `(expected filename: ${`./public/images/heraldry/${lang}/${path}/${fileName}-320w.webp`})`,
+    ].join(' ')));
     console.log(error);
   });
 };
@@ -73,13 +83,13 @@ export const fetchImages = async ({
 
     const format = unit.image?.source?.split('.')?.at(-1)?.toLowerCase() || 'png';
 
-    if (i > 0) {
-      clearLastLines(3);
-    }
-
     if (unit.image?.source) {
       if (!existsSync(expectedFilePath)) {
         await download(unit.image?.source, fileName, format, path, lang)
+
+        if (i > 0) {
+          clearLastLines(3);
+        }
 
         console.log([
           chalk.green('✓'),
@@ -87,6 +97,10 @@ export const fetchImages = async ({
           chalk.gray(`(${format} - index: ${chalk.white(unit.index)})`),
         ].join(' '));
       } else {
+        if (i > 0) {
+          clearLastLines(3);
+        }
+
         console.log([
           chalk.green('✓'),
           chalk.gray(`skipping "${chalk.white(unit.title)}"`),

@@ -27,6 +27,5 @@ fetchImages({
 	administrativeDivisions: units.slice(startIndex, endIndex),
 	path: 'unit',
 	lang: 'de',
-	subpage: 'deutsche-heraldik',
 	chunkIndex,
 });

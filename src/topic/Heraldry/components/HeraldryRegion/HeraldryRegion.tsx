@@ -12,9 +12,10 @@ import CountryHeraldryStatus from '@/topic/Heraldry/components/CountryHeraldry/C
 type FetchParams = {
   dataPaths: string[],
   filterForCountryData?: (units: CoatOfArmsMapData[]) => CoatOfArmsMapData[],
+  sortForCountryData?: (a: CoatOfArmsMapData, b: CoatOfArmsMapData) => number,
 }
 
-const fetchCountryData = async ({ dataPaths, filterForCountryData }: FetchParams) => {
+const fetchCountryData = async ({ dataPaths, filterForCountryData, sortForCountryData }: FetchParams) => {
   const promiseArray = dataPaths.map(
     (path) => fetch(`${path}-map-data.json`).then((resposne) => resposne.json()),
   );
@@ -46,6 +47,11 @@ const fetchCountryData = async ({ dataPaths, filterForCountryData }: FetchParams
   if (filterForCountryData) {
     // Filter from the parent
     unitsForMapAll = filterForCountryData(unitsForMapAll);
+  }
+
+  if (sortForCountryData) {
+      // Sort from the parent
+      unitsForMapAll = unitsForMapAll.sort(sortForCountryData);
   }
   
   const typeFiltersList = getFilter(unitsForMapAll, 'type');
@@ -95,6 +101,7 @@ const HeraldryRegionMap = ({
   developmentModeFiltersTypes,
   dataPaths,
   filterForCountryData,
+  sortForCountryData,
 }: Props) => {
   const [shouldFetchDetails, setShouldFetchDetails] = useState(false);
 
