@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 462 492">
-<path d="m32,6h400c75,280-40,440-200,480-165-40-280-200-200-480z" fill="#fff" stroke="#000" stroke-linejoin="round" stroke-width="6"/>
-<path id="h" d="m83,54h30c0-15 35-15 35,0h30c5,0 5,40 0,40h-35v90c0,5-25,5-25,0v-90h-35c-5,0-5-40 0-40"/>
-<use xlink:href="#h" transform="translate(204)"/>
-<use xlink:href="#h" transform="translate(102 252)"/>
-<path d="m7,209h448l-9,55h-431"/>
-</svg>

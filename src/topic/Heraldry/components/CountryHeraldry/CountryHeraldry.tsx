@@ -1,4 +1,4 @@
-import { memo, useRef, useState, useMemo, useEffect } from 'react';
+import { memo, useRef, useState, useMemo, useEffect, Suspense } from 'react';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 import { useDraggable } from "react-use-draggable-scroll";
@@ -10,7 +10,7 @@ import {
 } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
 
 import { MapsSearchParams, getSearchParamFromFilters } from '@/topic/Heraldry/utils/getSearchParams'
-import { MarkerParamsWithResult, AdministrativeUnit, MapOffset } from '@/topic/Heraldry/types';
+import { CoatOfArmsMapData, MapOffset, CoatOfArmsDetailsData } from '@/topic/Heraldry/types';
 
 import { GetFilterResponse } from '@/topic/Heraldry/utils/getFilter';
 import { getFilteredUnits } from '@/topic/Heraldry/utils/getFilteredUnits';
@@ -26,23 +26,28 @@ import HeraldryCanvas from '@/topic/Heraldry/components/HeraldryCanvas/HeraldryC
 
 import './CountryHeraldry.scss';
 
-type Props = {
+export type Props = {
   lang: string,
-  allUnits: AdministrativeUnit[],
+  unitsForMapAll: CoatOfArmsMapData[],
+  detailsForUnitsById: {
+    [id: string]: CoatOfArmsDetailsData,
+  },
   typeFiltersList: GetFilterResponse,
   animalFiltersList: GetFilterResponse,
   itemFiltersList: GetFilterResponse,
   mapWrapperClassName?: string,
   mapWrapperClassNameForZoom0?: string,
-  map: () => JSX.Element,
+  map: React.LazyExoticComponent<() => JSX.Element>,
   initialFilters?: Partial<MapsSearchParams>
   mapOffset: MapOffset,
   developmentModeFiltersTypes?: string[],
+  setShouldFetchDetails: (value: boolean) => void,
 }
 
 const CountryHeraldry = ({
   lang,
-  allUnits,
+  unitsForMapAll,
+  detailsForUnitsById,
   typeFiltersList,
   animalFiltersList,
   itemFiltersList,
@@ -52,6 +57,7 @@ const CountryHeraldry = ({
   initialFilters = {},
   mapOffset,
   developmentModeFiltersTypes,
+  setShouldFetchDetails,
 }: Props) => {
     const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
     const [listPhrase, setListPhrase] = useState('');
@@ -71,6 +77,13 @@ const CountryHeraldry = ({
     const { t, i18n } = useTranslation();
 
     useEffect(() => {
+      const hasInitialFilters = Object.values(initialFilters).filter(Boolean).length > 0;
+      if (hasInitialFilters) {
+        setShouldFetchDetails(true);
+      }
+    }, [initialFilters]);
+
+    useEffect(() => {
       if (isLanguageSupported(lang)) {
         i18n.changeLanguage(lang);
       } else {
@@ -86,7 +99,19 @@ const CountryHeraldry = ({
         filteredUnits,
         unitsForMap,
         subtitleParts,
-      } = getFilteredUnits(lang, allUnits, filterOperator, shouldReverseFilters, shouldIgnoreFormer, customFilter, typeFiltersToPass, colorFilters, animalFilters, itemFilters);
+      } = getFilteredUnits({
+        lang,
+        unitsForMapAll,
+        detailsForUnitsById,
+        filterOperator,
+        shouldReverseFilters,
+        shouldIgnoreFormer,
+        customFilter,
+        typeFilters: typeFiltersToPass,
+        colorFilters,
+        animalFilters,
+        itemFilters,
+      });
 
       setListPhrase('');
 
@@ -95,13 +120,13 @@ const CountryHeraldry = ({
       })
       
       window.history.replaceState(undefined, '', `${location.pathname}${searchParams}`);
-
+      
       return {
         units: filteredUnits,
         unitsForMap,
         subtitleParts,
       }
-    }, [lang, allUnits, filterOperator, shouldReverseFilters, shouldIgnoreFormer, customFilter, typeFilters, colorFilters, animalFilters, itemFilters]);
+    }, [lang, unitsForMapAll, detailsForUnitsById, filterOperator, shouldReverseFilters, shouldIgnoreFormer, customFilter, typeFilters, colorFilters, animalFilters, itemFilters]);
 
     return (
         <>
@@ -146,7 +171,9 @@ const CountryHeraldry = ({
                   mapOffset={mapOffset}
                   coatSize={Math.round(((coatSize + 1) / 11) * 80)}
                 >
-                  <MapBackground />
+                  <Suspense fallback={<svg />}>
+                    <MapBackground />
+                  </Suspense>
                 </HeraldryCanvas>
               </div>
             </div>
@@ -157,15 +184,15 @@ const CountryHeraldry = ({
               <p>
                 {zoomLevel === 1 && <>{t('heraldry.mapFooterSource')} <strong className="text-black">wikipedia.org</strong>.<br /></>}
                 {' '}
-                {t('heraldry.mapFooterAllCoats')} <strong className="text-black">{allUnits.length}</strong>
-                {allUnits.length > units.length && <>{t('heraldry.mapFooterCoatsAfterFilter')}
+                {t('heraldry.mapFooterAllCoats')} <strong className="text-black">{unitsForMapAll.length}</strong>
+                {unitsForMapAll.length > units.length && <>{t('heraldry.mapFooterCoatsAfterFilter')}
                 {' '}
                 <strong className={clsx({
                   'text-black': units.length > 0,
                   'text-[#ca1a1a]': units.length === 0 })
                 }>{units.length}</strong>
                 {units.length > 10 && <>{' '}- <strong className="text-black">
-                  {(100 * units.length/allUnits.length).toFixed(2)}
+                  {(100 * (units.length / unitsForMapAll.length)).toFixed(2)}
                 </strong><small>%</small></>}</>}.
               </p>
             </div>
@@ -214,6 +241,7 @@ const CountryHeraldry = ({
               setFilterOperator={setFilterOperator}
               shouldReverseFilters={shouldReverseFilters}
               setShouldReverseFilters={setShouldReverseFilters}
+              setShouldFetchDetails={setShouldFetchDetails}
             />
           </div>
         </>

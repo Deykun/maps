@@ -1,13 +1,28 @@
-import { useMemo } from 'react';
-import { useQuery } from '@tanstack/react-query';
-import SvgMap from './components/SvgMap'
-;
-import { AdministrativeUnit } from '@/topic/Heraldry/types';
-import { getFiltersFromSearchParams } from '@/topic/Heraldry/utils/getSearchParams';
-import { getFilter } from '@/topic/Heraldry/utils/getFilter';
+import React from 'react';
+import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
+const SvgMap = React.lazy(() => import('./components/SvgMap'));
 
-import CountryHeraldry from '@/topic/Heraldry/components/CountryHeraldry/CountryHeraldry';
-import CountryHeraldryStatus from '@/topic/Heraldry/components/CountryHeraldry/CountryHeraldryStatus';
+import HeraldryRegion from '@/topic/Heraldry/components/HeraldryRegion/HeraldryRegion';
+
+const filterForCountryData = (units: CoatOfArmsMapData[]) => {
+  return units.filter((unit: CoatOfArmsMapData) => {
+    if ([
+      'empty'
+    ].includes(unit.title)) {
+      // Historic
+      return false;
+    };
+
+    if ([
+      'empty'
+    ].includes(unit.title)) {
+      // Outside of country
+      return false;
+    }
+
+    return true;
+  });
+};
 
 const SORT_ORDER: {
   [type: string]: number,
@@ -26,116 +41,20 @@ const SORT_ORDER: {
   formerGemeinde: 10, 
 }
 
-const getSortRankFromUnit = (unit: AdministrativeUnit) => {
+const getSortRankFromUnit = (unit: CoatOfArmsMapData) => {
   const values = (unit.type || []).map((v) => (SORT_ORDER[v] || 1)) || [0];
 
   return Math.max(...values);
 };
 
-const fetchCountryData = async () => {
-  const [
-    formerUnits0,
-    formerUnits1,
-    formerUnits2,
-    formerUnits3,
-    units0,
-    units1,
-    units2,
-    units3,
-  ] = await Promise.all([
-    fetch('/maps/data/heraldry/de/formerUnit-0-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    fetch('/maps/data/heraldry/de/formerUnit-1-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    fetch('/maps/data/heraldry/de/formerUnit-2-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    fetch('/maps/data/heraldry/de/formerUnit-3-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    fetch('/maps/data/heraldry/de/unit-0-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    fetch('/maps/data/heraldry/de/unit-1-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    fetch('/maps/data/heraldry/de/unit-2-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-    fetch('/maps/data/heraldry/de/unit-3-map.json').then((response) => response.json()).then((byKey) => Object.values(byKey)),
-  ]);
-
-  const allUnits: AdministrativeUnit[] = Object.values([
-    ...Object.values(formerUnits0) as AdministrativeUnit[],
-    ...Object.values(formerUnits1) as AdministrativeUnit[],
-    ...Object.values(formerUnits2) as AdministrativeUnit[],
-    ...Object.values(formerUnits3) as AdministrativeUnit[],
-    ...Object.values(units0) as AdministrativeUnit[],
-    ...Object.values(units1) as AdministrativeUnit[],
-    ...Object.values(units2) as AdministrativeUnit[],
-    ...Object.values(units3) as AdministrativeUnit[],
-  ].reduce((stack: {
-      [url: string]: AdministrativeUnit,
-    }, unit: AdministrativeUnit) => {
-      const uniqueId = unit?.image?.source;
-      if (uniqueId) {
-        if (stack[uniqueId]) {
-          // It merges duplicates but keeps their type in array
-          const typeMerged: string[] = [...(stack[uniqueId].type || []), ...(unit.type || [])];
-          stack[uniqueId].type = [...new Set(typeMerged)];
-        } else {
-          stack[uniqueId] = unit;
-        }
-      }
-  
-      return stack;
-    }, {})).sort((a, b) => getSortRankFromUnit(a) > getSortRankFromUnit(b) ? 1 : -1);
-
-  const typeFiltersList = getFilter(allUnits, 'type').sort((a) => !a.value.startsWith('former') ? -1 : 1);
-  const animalFiltersList = getFilter(allUnits, 'animals');
-  const itemFiltersList = getFilter(allUnits, 'items');
-
-  return {
-    allUnits,
-    typeFiltersList,
-    animalFiltersList,
-    itemFiltersList
-  };
+const sortForCountryData = (a: CoatOfArmsMapData, b: CoatOfArmsMapData) => {
+  return getSortRankFromUnit(a) > getSortRankFromUnit(b) ? 1 : -1;
 }
 
-
 const HeraldryDE = () => {
-  const initialFilters = useMemo(() => {
-    return getFiltersFromSearchParams();
-  }, []);
-
-  const {
-    isLoading,
-    isError,
-    error,
-    // error,
-    data,
-  } = useQuery({
-    queryFn: () => fetchCountryData(),
-    queryKey: ['et'],
-  });
-
-  if (isError) {
-    console.error(error);
-
-    return <CountryHeraldryStatus text="Oops... There was an error while fetching data." />
-  }
-  
-  if (isLoading) {
-    return <CountryHeraldryStatus text="Gathering map data..." />
-  }
-
-  if (!data) {
-    return <CountryHeraldryStatus text="Oops... There was an error while fetching data." />
-  }
-
-  const {
-    allUnits,
-    typeFiltersList,
-    animalFiltersList,
-    itemFiltersList
-  } = data;
-
   return (
-    <CountryHeraldry
+    <HeraldryRegion
       lang="de"
-      allUnits={allUnits}
-      typeFiltersList={typeFiltersList}
-      animalFiltersList={animalFiltersList}
-      itemFiltersList={itemFiltersList}
       mapWrapperClassName="[&>div>svg]:aspect-[461_/_623]"
       mapWrapperClassNameForZoom0="max-w-[40vh]"
       map={SvgMap}
@@ -145,7 +64,18 @@ const HeraldryDE = () => {
          minLonLeft: 5.8,
          maxLonLeft: 15.1,
       }}
-      initialFilters={initialFilters}
+      dataPaths={[
+        '/maps/data/heraldry/de/formerUnit-0',
+        '/maps/data/heraldry/de/formerUnit-1',
+        '/maps/data/heraldry/de/formerUnit-2',
+        '/maps/data/heraldry/de/formerUnit-3',
+        '/maps/data/heraldry/de/unit-0',
+        '/maps/data/heraldry/de/unit-1',
+        '/maps/data/heraldry/de/unit-2',
+        '/maps/data/heraldry/de/unit-3',
+      ]}
+      filterForCountryData={filterForCountryData}
+      sortForCountryData={sortForCountryData}
       developmentModeFiltersTypes={[
         'unit-0',
         'unit-1',
@@ -161,3 +91,6 @@ const HeraldryDE = () => {
 };
 
 export default HeraldryDE;
+
+
+

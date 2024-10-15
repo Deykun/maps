@@ -1,3 +1,57 @@
+import { AdministrativeUnit } from '../../../../src/topic/Heraldry/types';
+import { removeDiacratics } from '../../../../src/utils/text';
+
+const getSimpleHashFromString = (text: string) => {
+  const intHash = text.split('').reduce((prevHash, currVal) => (((prevHash << 5) - prevHash) + currVal.charCodeAt(0))|0, 0);
+
+  return Math.abs(intHash).toString(16);
+}
+
+const commonWordsToRemove = [
+  'gemeinde',
+  'stadt',
+  'landkreis',
+  'verbandsgemeinde',
+  'valla',
+  'vapp',
+];
+
+export const getImageFileName = (unit: AdministrativeUnit) => {
+  const {
+    title,
+  } = unit;
+  let fileName = removeDiacratics(title.toLowerCase())
+    .replace(/[^\w\s]/gi, '')
+    .replace(/\s/gi, '-')
+    .replace(/[^a-z-]+/g, '')
+    .split('-').filter((word: string) => !commonWordsToRemove.includes(word)).join('-');
+
+  const hashSeed = unit.image?.source || unit.place?.name || unit.title;
+  fileName = `${getSimpleHashFromString(hashSeed)}-${fileName.slice(0, 24)}`;
+
+  // It trims example-name-of- to example-name-of
+  fileName = fileName.replace(/[-]/g, ' ').trim().replace(/ /g, '-');
+
+  return fileName;
+};
+
+export const getCompressedImageSrc = (imageUrl: string, path: string) => {
+  const [imageSrcWithoutFormat] = imageUrl.split('.');
+
+  const imagesList = [
+    { size: '80w', width: '80w' },
+    { size: '320w', width: '320w' },
+  ].map(({ size, width }) => ({ width, path: `${imageSrcWithoutFormat}-${size}.webp` }));
+  
+  const srcSet = imagesList.map(({ path, width }) => `${path} ${width}`).join(',')
+
+  return {
+    srcSet,
+    src: imageUrl,
+    imagesList,
+  };
+};
+
 export const getImageFromThumbnailUrl = (imageUrlToCheck: string) => {
   // https://stackoverflow.com/a/33691240/6743808
   /*

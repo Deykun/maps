@@ -9,13 +9,13 @@ import {
   useFiltersDevelopmentStore,
 } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
 
-import { AdministrativeUnit } from '@/topic/Heraldry/types';
+import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 
 import ButtonCircle from '@/components/UI/ButtonCircle';
 
 type Props = {
   className?: string,
-  unit: AdministrativeUnit,
+  unit: CoatOfArmsMapData,
   buttonSize?: 'small',
   labelPositions?: 'top',
 }

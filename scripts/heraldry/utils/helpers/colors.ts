@@ -1,4 +1,5 @@
 import chalk from 'chalk';
+import sharp from 'sharp';
 import nearestColor from 'nearest-color';
 import { extractColors } from 'extract-colors'
 import getPixels from 'get-pixels';
@@ -198,23 +199,27 @@ export const getImageColors = async (image: string) => {
     try {
       getPixels(image, (error, pixels) => {
         if (error) {
-          // console.log(`${chalk.red('getPixels error from:')} ${chalk.yellow(image)}`);
+          console.log(`${chalk.red('getPixels error from:')} ${chalk.yellow(image)}`);
 
           reject([]);
-        } else {
-          const data = [...pixels.data]
-          const [width, height] = pixels.shape
-      
-          resolve(extractColors({ data, width, height }, {
-            pixels: 400,
-            distance: 0.3,
-            saturationDistance: 0.5,
-            lightnessDistance: 0.3,
-            hueDistance: 0
-          }).then(res => res.map(({ red, green, blue}) => [red, green, blue])));
+
+          return;
         }
+
+        const data = [...pixels.data]
+        const [width, height] = pixels.shape
+    
+        resolve(extractColors({ data, width, height }, {
+          pixels: 400,
+          distance: 0.3,
+          saturationDistance: 0.5,
+          lightnessDistance: 0.3,
+          hueDistance: 0
+        }).then(res => res.map(({ red, green, blue}) => [red, green, blue])));
       });
-    } catch (err) {
+    } catch (error) {
+      console.log('EERRR');
+      console.error(error);
       reject([]);
     }
   });

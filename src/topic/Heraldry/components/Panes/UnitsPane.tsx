@@ -10,7 +10,7 @@ import IconEraser from '@/components/Icons/IconEraser';
 import IconTextMagnifyingGlass from '@/components/Icons/IconTextMagnifyingGlass';
 import IconGithub from '@/components/Icons/IconGithub';
 
-import { AdministrativeUnit } from '@/topic/Heraldry/types';
+import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 import IconCoatOfArms from '@/topic/Heraldry/components/IconCoatOfArms';
 
 import Pane from '@/components/UI/Pane';
@@ -23,7 +23,7 @@ import UnitsPaneItemDetails from './UnitsPane/UnitsPaneItemDetails';
 
 type Props = {
   children?: React.ReactNode,
-  units?: AdministrativeUnit[],
+  units?: CoatOfArmsMapData[],
   phrase?: string,
   shouldShowCount?: boolean,
 }
@@ -34,7 +34,7 @@ const UnitsPane = ({
   shouldShowCount = false,
 }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [previewUnit, setPreviewUnit] = useState<AdministrativeUnit | undefined>(undefined);
+  const [previewUnit, setPreviewUnit] = useState<CoatOfArmsMapData | undefined>(undefined);
   const [filterPhrase, setFilterPhrase] = useState(phrase);
   const [filteredUnits, setFilteredUnits] = useState(units);
   const [filterPage, setFilterPage] = useState(0);
@@ -63,14 +63,19 @@ const UnitsPane = ({
     setPreviewUnit(undefined);
 
     if (filterPhrase === '') {
-      setFilteredUnits(units);
+      /*
+        It's reversed because states/provinces
+        are at the top of the map, so they are rendered last,
+        so here we reverse them.
+      */
+      setFilteredUnits(units.reverse());
 
       return;
     }
 
     const listPhraseNormalized = removeDiacratics(filterPhrase.toLowerCase());
 
-    const filteredUnits = units.filter((unit) => {
+    const filteredUnits = units.reverse().filter((unit) => {
       return getDoesUnitMatch(listPhraseNormalized, unit);
     }).sort((a, b) => {
       const aRank = getUnitSortRank(listPhraseNormalized, a);

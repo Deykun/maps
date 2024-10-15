@@ -4,77 +4,9 @@ import sharp from 'sharp';
 import chalk from 'chalk';
 import { existsSync, mkdirSync } from 'fs';
 import * as fsExtra from "fs-extra";
-import { getSpriteLocation } from '@/topic/Heraldry/utils/getSpriteDataFromUnit';
-import { AdministrativeUnit } from '@/topic/Heraldry/types';
-import { numberOfColumnsPerSprite, numberOfRowsPerSprite, spriteOffset } from '@/topic/Heraldry/constants';
-
-
-export const resizeImages = ({
-  images,
-  lang,
-}: {
-  images: {
-    imageSrc: string,
-    imageFile: string,
-    type: string,
-  }[],
-  lang: string,
-}) => {
-  const start = (new Date()).getTime();
-  const total = images.length;
-  console.log(chalk.blue(`${total} images to compress.`))
-
-  images.forEach(({ type, imageSrc, imageFile }, index) => {
-    const imageName = imageFile.split('.')[0];
-  
-    try {
-      const trimOptions = {
-        threshold: 0,
-      }
-
-      sharp(imageSrc).trim(trimOptions).resize(80, 80, {
-        fit: 'contain',
-        position: 'center',
-        background: { r: 0, g: 0, b: 0, alpha: 0 },
-      }).toFile(`./public/images/heraldry/${lang}/web-${type}/${imageName}-80w.webp`).catch((e) => {
-        console.log({
-          imageFile,
-          e,
-        })
-      });
-      sharp(imageSrc).trim(trimOptions).resize(300, 300, {
-        fit: 'contain',
-        position: 'center',
-        background: { r: 0, g: 0, b: 0, alpha: 0 },
-      }).toFile(`./public/images/heraldry/${lang}/web-${type}/${imageName}-300w.webp`).catch((e) => {
-        console.log({
-          imageFile,
-          e,
-        })
-      });
-
-      if (index % 5 === 0) {
-        const progressPercent = (index / total) * 100;
-        const now = (new Date()).getTime();
-        const timeDiffrenceInSeconds = Math.floor((now - start) / 1000);
-        const timePerPercentage = timeDiffrenceInSeconds / progressPercent;
-        const expectedTimeInSeconds = Math.floor(timePerPercentage * 100);
-        const timeLeftSeconds = Math.floor(expectedTimeInSeconds - timeDiffrenceInSeconds);
-        const timeLeftMinutes = Math.floor(timeLeftSeconds / 60);
-        const timeLeftSecondsToShow = timeLeftSeconds - (timeLeftMinutes * 60);
-
-        const timeStatus = timeDiffrenceInSeconds === 0 ? '' : `${timeDiffrenceInSeconds}s passed and ${timeLeftMinutes}m ${timeLeftSecondsToShow}s to finish.`;
-
-        if (timeStatus) {
-          console.log(`${index} of ${total} - ${timeStatus}`);
-        }
-      }  
-    } catch (e) {
-      console.log(chalk.red(imageFile))
-      console.log(e);
-    }
-  });
-};
+import { getSpriteLocation } from '../../../src/topic/Heraldry/utils/getSpriteDataFromUnit';
+import { CoatOfArmsMapData } from '../../../src/topic/Heraldry/types';
+import { numberOfColumnsPerSprite, numberOfRowsPerSprite, spriteOffset } from '../../../src/topic/Heraldry/constants';
 
 type ImagesByIndex = {
   [index: string]: string,
@@ -88,10 +20,10 @@ export const getSprites = async ({
   const {
     imagesByIndex,
     maxIndex,
-  } = Object.values(mapJSON).reduce((stack: {
+  } = mapJSON.reduce((stack: {
     imagesByIndex: ImagesByIndex,
     maxIndex: number,
-  }, { index, imagesList }: AdministrativeUnit) => {
+  }, { index, imagesList = [] }: CoatOfArmsMapData) => {
     const imagePath = imagesList.find(({ width }) => width === '80w')?.path;
 
     if (imagePath && existsSync(`./public/${imagePath}`)) {

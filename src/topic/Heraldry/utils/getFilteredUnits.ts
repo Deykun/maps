@@ -1,4 +1,4 @@
-import { MarkerParamsWithResult, AdministrativeUnit } from '../types';
+import { MarkerParamsWithResult, CoatOfArmsMapData, CoatOfArmsDetailsData } from '../types';
 import { WITH_ANIMAL, WITHOUT_ANIMAL } from '../constants';
 import { collapsePhrases } from './markers/collapsePhrases';
 
@@ -8,23 +8,40 @@ export type SubtitlePart = {
 };
 
 export type GetFilterUnitsResponse = {
-  filteredUnits: AdministrativeUnit[];
-  unitsForMap: AdministrativeUnit[];
+  filteredUnits: CoatOfArmsMapData[];
+  unitsForMap: CoatOfArmsMapData[];
   subtitleParts: SubtitlePart[],
 };
 
-export const getFilteredUnits = (
+type GetFilteredUnitsParams = {
   lang: string,
-  units: AdministrativeUnit[],
+  unitsForMapAll: CoatOfArmsMapData[],
+  detailsForUnitsById: {
+    [id: string]: CoatOfArmsDetailsData,
+  },
   filterOperator: 'and' | 'or',
   shouldReverseFilters: boolean,
   shouldIgnoreFormer: boolean,
   customFilter: MarkerParamsWithResult | undefined,
-  typeFilers: string[],
+  typeFilters: string[],
   colorFilters: string[],
   animalFilters: string[],
   itemFilters: string[],
-) => {
+};
+
+export const getFilteredUnits = ({
+  lang,
+  unitsForMapAll,
+  detailsForUnitsById,
+  filterOperator,
+  shouldReverseFilters,
+  shouldIgnoreFormer,
+  customFilter,
+  typeFilters,
+  colorFilters,
+  animalFilters,
+  itemFilters,
+}: GetFilteredUnitsParams) => {
   const filterResponse = {
     matches: true,
     notMatches: false
@@ -35,7 +52,7 @@ export const getFilteredUnits = (
     filterResponse.notMatches = true;
   }
 
-  const filteredUnits = units.filter(
+  const filteredUnits = unitsForMapAll.filter(
     (unit) => {
       const isCustomFilterActive = customFilter && customFilter.isActive && Array.isArray(customFilter.result);
       if (isCustomFilterActive) {
@@ -48,13 +65,13 @@ export const getFilteredUnits = (
         }
       }
 
-      const isTypeFilterActive = typeFilers.length > 0;
+      const isTypeFilterActive = typeFilters.length > 0;
       if (isTypeFilterActive) {
         if ((unit?.type?.length || 0) === 0) {
           return filterResponse.notMatches;
         }
 
-        const isOneOfPickedTypes = typeFilers.some((active) => (unit?.type || []).includes(active));
+        const isOneOfPickedTypes = typeFilters.some((active) => (unit?.type || []).includes(active));
         if (!isOneOfPickedTypes) {
           return filterResponse.notMatches;
         }
@@ -69,22 +86,24 @@ export const getFilteredUnits = (
 
       const isColorFilterActive = colorFilters.length > 0;
       if (isColorFilterActive) {
-        if (Object.keys(unit.colors?.byNames || {}).length === 0) {
+        const unitColors = detailsForUnitsById?.[unit.id]?.colors;
+
+        if (Object.keys(unitColors?.byNames || {}).length === 0) {
           return filterResponse.notMatches;
         }
         
-        if (filterOperator === 'or' && !Object.keys(unit.colors?.byNames || {}).some((name) => colorFilters.includes(name))) {
+        if (filterOperator === 'or' && !Object.keys(unitColors?.byNames || {}).some((name) => colorFilters.includes(name))) {
           return filterResponse.notMatches;
         }
 
-        if (filterOperator === 'and' && !colorFilters.every((active) => Object.keys(unit.colors?.byNames || {}).some(( name ) => name === active))) {
+        if (filterOperator === 'and' && !colorFilters.every((active) => Object.keys(unitColors?.byNames || {}).some(( name ) => name === active))) {
           return filterResponse.notMatches;
         }
       }
 
       const isAnimalFilterActive = animalFilters.length > 0;
       if (isAnimalFilterActive) {
-        const animals = unit?.markers?.animals || [];
+        const animals = detailsForUnitsById?.[unit.id]?.markers?.animals || [];
         const hasAnimals = animals.length > 0;
 
         if ([WITH_ANIMAL, WITHOUT_ANIMAL].includes(animalFilters[0])) {
@@ -112,7 +131,7 @@ export const getFilteredUnits = (
 
       const isItemFilterActive = itemFilters.length > 0;
       if (isItemFilterActive) {
-        const items = unit?.markers?.items || [];
+        const items = detailsForUnitsById?.[unit.id]?.markers?.items || [];
         const hasItems = items.length > 0;
 
         if (!hasItems) {
@@ -135,7 +154,7 @@ export const getFilteredUnits = (
   );
 
   const unitsForMap = filteredUnits.filter(
-    (unit) => typeof unit?.place?.coordinates?.lon === 'number' && typeof unit?.imageUrl === 'string',
+    (unit) => typeof unit?.place?.coordinates?.lon === 'number' && (unit?.imagesList?.length || 0) > 0,
   );
 
   const subtitleParts: { operator: 'or' | 'and', labels: string[] }[] = [];
@@ -161,9 +180,9 @@ export const getFilteredUnits = (
     subtitleParts.push({ operator: 'or', labels: [`heraldry.unit.type.currentlyExisting`] })
   }
 
-  if (typeFilers.length > 0) {
+  if (typeFilters.length > 0) {
     // Using and operator for type like city, county is pointless
-    subtitleParts.push({ operator: 'or', labels: typeFilers.map((value) => `heraldry.unit.type.${lang}.${value}`) })
+    subtitleParts.push({ operator: 'or', labels: typeFilters.map((value) => `heraldry.unit.type.${lang}.${value}`) })
   }
 
   if (colorFilters.length > 0) {

@@ -15,7 +15,7 @@ const administrativeDivisions: AdministrativeUnit[] = Object.values(urls.unitByS
 	),
 ));
 
-fetchData({
+await fetchData({
 	administrativeDivisions: administrativeDivisions,
 	alreadyFetchedDivisions: alreadyFetchedDivisions,
 	path: './public/data/heraldry/et/unit.json',
@@ -29,7 +29,7 @@ const formerAdministrativeDivisions: AdministrativeUnit[] = Object.values(urls.h
 	),
 ));
 
-fetchData({
+await fetchData({
 	administrativeDivisions: formerAdministrativeDivisions,
 	alreadyFetchedDivisions: alreadyFetchedFormerDivisions,
 	path: './public/data/heraldry/et/formerUnit.json',

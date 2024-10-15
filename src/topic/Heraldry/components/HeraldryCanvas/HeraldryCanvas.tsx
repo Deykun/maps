@@ -8,7 +8,7 @@ import {
 
 import { mergeRefs } from '@/utils/ref';
 
-import { AdministrativeUnit, MapOffset } from '@/topic/Heraldry/types';
+import { CoatOfArmsMapData, MapOffset } from '@/topic/Heraldry/types';
 import { mapPadding, maxSelectedWithClick } from '@/topic/Heraldry/constants'
 import { getXYfromLatLon } from '@/topic/Heraldry/utils/getPosition';
 
@@ -16,7 +16,6 @@ import { render, onResize, setCoatOfArms, getCoatOfArmsForXandY, setCoatSize } f
 
 import useDebouncedResizeObserver from '@/hooks/useDebouncedResizeObserver'
 import useEffectChange from '@/hooks/useEffectChange'
-
 
 import useHeraldryCursorPosition from '@/topic/Heraldry/components/HeraldryCursor/useHeraldryCursorPosition';
 import HeraldryCursor from '@/topic/Heraldry/components/HeraldryCursor/HeraldryCursor';
@@ -26,7 +25,7 @@ import './HeraldryCanvas.scss';
 
 type Props = {
   className?: string,
-  units: AdministrativeUnit[],
+  units: CoatOfArmsMapData[],
   children: React.ReactNode,
   mapOffset: MapOffset,
   coatSize: number,
@@ -35,7 +34,7 @@ type Props = {
 
 const HeraldryCanvas = ({ className, units, children, mapOffset, coatSize, setListPhrase }: Props) => {
   const idToShow = useCursorStore((state) => state.idToShow);
-  const [hovered, setHovered] = useState<AdministrativeUnit[]>([]);
+  const [hovered, setHovered] = useState<CoatOfArmsMapData[]>([]);
 
   const { ref: wrapperRef, dimensions } = useDebouncedResizeObserver<HTMLDivElement>(10);
 
@@ -101,7 +100,7 @@ const HeraldryCanvas = ({ className, units, children, mapOffset, coatSize, setLi
 
     const selectedUnits = units.filter(({ id }) => selectedIds.includes(id));
 
-    setHovered(selectedUnits);
+    setHovered(selectedUnits.reverse());
   }, [position]);
 
   const handleMapClick = useCallback((event: React.MouseEvent) => {

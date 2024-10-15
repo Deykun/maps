@@ -1,4 +1,4 @@
-import { AdministrativeUnit } from '@/topic/Heraldry/types'
+import { CoatOfArmsMapData } from '@/topic/Heraldry/types'
 import { numberOfColumnsPerSprite, numberOfRowsPerSprite, spriteSize, spriteOffset } from '@/topic/Heraldry/constants';
 
 const numberOfImagesPerSprite = numberOfColumnsPerSprite * numberOfRowsPerSprite;
@@ -15,7 +15,7 @@ export const getSpriteLocation = (index: number) => {
   }
 }
 
-export const getSpriteDataFromUnit = (unit: AdministrativeUnit) => {
+export const getSpriteDataFromUnit = (unit: CoatOfArmsMapData) => {
   const {
     spriteIndex,
     spriteColumn,

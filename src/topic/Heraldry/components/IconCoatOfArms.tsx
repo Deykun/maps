@@ -1,9 +1,10 @@
 import IconShieldCheckers from '@/components/Icons/IconShieldCheckers';
 
-import { AdministrativeUnit } from '@/topic/Heraldry/types';
+import { getImageSrcSet } from '@/utils/image';
+import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 
 type Props = {
-  units: AdministrativeUnit[],
+  units: CoatOfArmsMapData[],
 }
 
 const IconCoatOfArms = ({ units }: Props) => {
@@ -14,7 +15,7 @@ const IconCoatOfArms = ({ units }: Props) => {
   return (
     <img
       src={units[0]?.imagesList?.[0].path}
-      srcSet={units[0]?.imageSrcSet}
+      srcSet={getImageSrcSet(units[0]?.imagesList)}
       alt=""
       loading="lazy"
     />

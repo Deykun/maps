@@ -11,12 +11,10 @@ fetchImages({
 	administrativeDivisions: units,
 	path: 'unit',
 	lang: 'et',
-	subpage: 'eesti-heraldika',
 });
 
 fetchImages({
 	administrativeDivisions: formerUnits,
 	path: 'formerUnit',
 	lang: 'et',
-	subpage: 'eesti-heraldika',
 });

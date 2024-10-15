@@ -29,17 +29,29 @@ export type AdministrativeUnitIndex = {
   imageSrcSet?: string,
 }
 
-export type AdministrativeUnit = {
+export type CoatOfArmsMapData = {
   lang: string,
   id: string,
   index: number,
   title: string,
-  shortTitle?: string,
   url: string,
-  partOf?: string,
-  type?: string[],
+  type: string[],
   spriteRoot?: string,
-  description?: string,
+  place: {
+    name: string,
+    coordinates: {
+      lat: number,
+      lon: number,
+    }
+  },
+  imagesList?: {
+    path: string,
+    width: string,
+  }[],
+}
+
+export type CoatOfArmsDetailsData = {
+  id: string,
   colors?: {
     hexPalette: string[],
     byNames: {
@@ -49,6 +61,17 @@ export type AdministrativeUnit = {
       [color: string]: ColorStatus[],
     }
   },
+  markers: {
+    animals?: string[],
+    items?: string[],
+  }
+}
+
+export type AdministrativeUnit = CoatOfArmsMapData & CoatOfArmsDetailsData & {
+  index: number,
+  shortTitle?: string, // can be removed
+  partOf?: string, // can be removed
+  description?: string,
   image?: {
     source: string,
     sourceAlt?: string,
@@ -56,23 +79,6 @@ export type AdministrativeUnit = {
     height?: number,
   },
   imageUrl?: string,
-  imageSrcSet?: string,
-  imagesList?: {
-    path: string,
-    name: string,
-    width: string,
-  }[],
-  place?: {
-    name?: string,
-    coordinates?: {
-      lat?: number,
-      lon?: number,
-    }
-  },
-  markers?: {
-    animals?: string[],
-    items?: string[],
-  }
 }
 
 export type AdministrativeUnitsGroup = {

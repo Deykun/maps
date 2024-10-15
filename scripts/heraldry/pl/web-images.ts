@@ -1,9 +1,9 @@
 import { getSprites } from '../utils/web';
 
-import gminyJson from '../../../public/data/heraldry/pl/gminy-map.json';
-import miastaJson from '../../../public/data/heraldry/pl/miasta-map.json';
-import powiatyJSON from '../../../public/data/heraldry/pl/powiaty-map.json';
-import wojewodztwaJSON from '../../../public/data/heraldry/pl/wojewodztwa-map.json';
+import gminyJson from '../../../public/data/heraldry/pl/gminy-map-data.json';
+import miastaJson from '../../../public/data/heraldry/pl/miasta-map-data.json';
+import powiatyJSON from '../../../public/data/heraldry/pl/powiaty-map-data.json';
+import wojewodztwaJSON from '../../../public/data/heraldry/pl/wojewodztwa-map-data.json';
 
 getSprites({
   mapJSON: gminyJson,

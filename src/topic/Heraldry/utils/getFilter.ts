@@ -1,15 +1,23 @@
-import { AdministrativeUnit } from '../types';
+import { CoatOfArmsMapData, CoatOfArmsDetailsData } from '../types';
 
 export type GetFilterResponse = {
   value: string;
   total: number;
 }[]
 
-export const getFilter = (units: AdministrativeUnit[], name: 'animals' | 'items' | 'type'): GetFilterResponse => {
+export const getFilter = (
+  units: CoatOfArmsMapData[] | CoatOfArmsDetailsData[],
+  name: 'animals' | 'items' | 'type'
+): GetFilterResponse => {
   const filterByName = units.reduce((stack: {
     [key: string]: number,
   }, unit) => {
-    const marker = (name === 'type' ? unit.type : unit?.markers?.[name]) || [];
+    const marker = (
+      name === 'type'
+      ? (unit as CoatOfArmsMapData).type
+      : (unit as CoatOfArmsDetailsData)?.markers?.[name]
+    ) || [];
+
     marker.forEach((value: string) => {
       if (stack[value]) {
         stack[value] = stack[value] + 1;
