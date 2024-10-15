@@ -7,7 +7,6 @@ import IconCheck from '@/components/Icons/IconCheck';
 import IconEraser from '@/components/Icons/IconEraser';
 import IconScriptBroken from '@/components/Icons/IconScriptBroken';
 
-
 import Pane from '@/components/UI/Pane';
 import Button from '@/components/UI/Button';
 import ButtonCircle from '@/components/UI/ButtonCircle';

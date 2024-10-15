@@ -42,6 +42,7 @@ export type Props = {
   mapOffset: MapOffset,
   developmentModeFiltersTypes?: string[],
   setShouldFetchDetails: (value: boolean) => void,
+  isFetchingDetails?: boolean,
 }
 
 const CountryHeraldry = ({
@@ -58,6 +59,7 @@ const CountryHeraldry = ({
   mapOffset,
   developmentModeFiltersTypes,
   setShouldFetchDetails,
+  isFetchingDetails = false,
 }: Props) => {
     const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
     const [listPhrase, setListPhrase] = useState('');
@@ -242,6 +244,7 @@ const CountryHeraldry = ({
               shouldReverseFilters={shouldReverseFilters}
               setShouldReverseFilters={setShouldReverseFilters}
               setShouldFetchDetails={setShouldFetchDetails}
+              isFetchingDetails={isFetchingDetails}
             />
           </div>
         </>

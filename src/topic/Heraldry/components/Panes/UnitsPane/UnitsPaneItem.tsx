@@ -12,6 +12,7 @@ import ButtonCircle from '@/components/UI/ButtonCircle';
 import IconMarker from '@/components/Icons/IconMarker';
 import IconPlusMagnifyingGlass from '@/components/Icons/IconPlusMagnifyingGlass';
 import IconLink from '@/components/Icons/IconLink';
+import IconScriptBroken from '@/components/Icons/IconScriptBroken';
 
 import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 
@@ -24,7 +25,9 @@ type Props = {
 }
 
 const UnitsPaneItem = ( { className, unit, setPreviewUnit }: Props) => {
-  const { title, url, imagesList, place } = unit;  
+  const { title, url, imagesList, place, type } = unit;
+
+  const isFormerUnit = type.length > 0 && type[0].startsWith('former');
   
   const { t } = useTranslation();
 
@@ -59,6 +62,12 @@ const UnitsPaneItem = ( { className, unit, setPreviewUnit }: Props) => {
           'opacity-70': className,
           'text-[#ca1a1a]': !place?.name
         })}>
+          {isFormerUnit && <>
+            <IconScriptBroken className="inline-block size-3" />
+            {' '}
+            {t('heraldry.item.formerUnit')}
+            {place?.name ? ',' : ''}
+          </>}
           {' '}
           {place?.name || t('heraldry.item.noLocation')}
         </p>
