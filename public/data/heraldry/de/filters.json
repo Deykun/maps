@@ -14,7 +14,8 @@
        "adlerrumpf",
        "adlerrümpfe",
        "adlers",
-       "doppeladler"
+       "doppeladler",
+       "ziegenadler"
       ]
     },
     {
@@ -159,6 +160,274 @@
        "greifenstein",
        "greifs",
        "greifswald"
+      ]
+    },
+    {
+      "name": "rabbit",
+      "phrases": [
+       "hase",
+       "hasen",
+       "kaninchen",
+       "kaninchens"
+      ]
+    },
+    {
+      "name": "bat",
+      "phrases": [
+       "fledermaus",
+       "fledermäuse",
+       "fledermäusen"
+      ]
+    },
+    {
+      "name": "boar",
+      "phrases": [
+       "wildschwein",
+       "wildschweine",
+       "wildschweinen",
+       "wildschweins"
+      ]
+    },
+    {
+      "name": "deer",
+      "phrases": [
+       "hirsch",
+       "hirsche",
+       "hirschen",
+       "hirsches",
+       "zwölfender-kronenhirsches"
+      ]
+    },
+    {
+      "name": "moose",
+      "phrases": [
+       "elch",
+       "elche",
+       "elchen",
+       "elches"
+      ]
+    },
+    {
+      "name": "wildcat",
+      "phrases": [
+       "wildkatze",
+       "wildkatzen"
+      ]
+    },
+    {
+      "name": "lion",
+      "phrases": [
+       "greifenlöwe",
+       "löwe",
+       "löwen",
+       "löwenhagen",
+       "löwenkopf",
+       "löwenköpfen",
+       "löwenmaske",
+       "löwenrumpf",
+       "seelöwe"
+      ]
+    },
+    {
+      "name": "bullBison",
+      "phrases": [
+       "auerochse",
+       "auerochsen",
+       "auerochsengehörn",
+       "auerochsenkopf",
+       "büffel",
+       "büffeln",
+       "büffels",
+       "büffelhörner",
+       "büffelohren",
+       "büffelgehörn",
+       "büffelhörnern",
+       "bulle",
+       "bullen",
+       "ochse",
+       "ochsen",
+       "ochsenkopf",
+       "ochsenrumpf",
+       "ochsenhörnern",
+       "stier",
+       "stiere",
+       "stieren",
+       "stierkopf",
+       "stiers",
+       "wisent",
+       "wisente",
+       "wisenten",
+       "wisents",
+       "wisentgehörne",
+       "wisentkopf"
+      ]
+    },
+    {
+      "name": "dragon",
+      "phrases": [
+       "drache",
+       "drachen",
+       "drachenähnlichem",
+       "drachenflügel",
+       "drachenkopf",
+       "drachenrumpf",
+       "drachenrümpfen",
+       "drachens",
+       "drachentöter"
+      ]
+    },
+    {
+      "name": "fish",
+      "phrases": [
+       "brassen",
+       "brassens",
+       "fisch",
+       "fische",
+       "fischen",
+       "fisches",
+       "hering",
+       "heringe",
+       "heringen",
+       "herings",
+       "karpfen",
+       "karpfens",
+       "lachs",
+       "lachse",
+       "lachsen",
+       "lachses",
+       "maräne",
+       "maränen",
+       "wels",
+       "welse",
+       "welsen",
+       "welses",
+       "zander",
+       "zandern",
+       "zanders"
+      ],
+      "include": [
+       "Uhyst (Spree)",
+       "Schlaubetal",
+       "Bezirk Köpenick",
+       "Berlin-Schmöckwitz"
+      ]
+    },
+    {
+      "name": "bee",
+      "phrases": [
+       "biene",
+       "bienen"
+      ]
+    },
+    {
+      "name": "mermaid",
+      "phrases": [
+       "seewiefken",
+       "sirene",
+       "sirenen"
+      ]
+    },
+    {
+      "name": "fox",
+      "phrases": [
+       "fuchs",
+       "füchse",
+       "füchsen",
+       "fuchses",
+       "fuchskopf"
+      ]
+    },
+    {
+      "name": "lizard",
+      "phrases": [
+       "eidechse",
+       "eidechsen"
+      ]
+    },
+    {
+      "name": "dog",
+      "phrases": [
+       "hund",
+       "hunde",
+       "hunden",
+       "hundes"
+      ]
+    },
+    {
+      "name": "crayfish",
+      "phrases": [
+       "krebs",
+       "krebse",
+       "krebses"
+      ]
+    },
+    {
+      "name": "horse",
+      "phrases": [
+       "pferd",
+       "pferde",
+       "pferdekopf",
+       "pferdeköpfen",
+       "pferdekopfform",
+       "pferden",
+       "pferderumpf",
+       "pferdes"
+      ]
+    },
+    {
+      "name": "unicorn",
+      "phrases": [
+       "einhorn",
+       "einhörner",
+       "einhörnern",
+       "einhornkopf",
+       "einhornrumpf",
+       "einhorns"
+      ]
+    },
+    {
+      "name": "goat",
+      "phrases": [
+       "ziege",
+       "ziegen",
+       "ziegenadler",
+       "ziegenbock",
+       "ziegenkopf"
+      ]
+    },
+    {
+      "name": "ram",
+      "phrases": [
+       "schaf",
+       "schafe",
+       "schafen",
+       "schafes",
+       "schafsrumpf"
+      ]
+    },
+    {
+      "name": "wolf",
+      "phrases": [
+       "wolf",
+       "wölfe",
+       "wölfen",
+       "wolfskopf",
+       "wolfsrumpf",
+       "wolves"
+      ]
+    },
+    {
+      "name": "squirrel",
+      "phrases": [
+       "eichhörnchen",
+       "eichhörnchens"
+      ]
+    },
+    {
+      "name": "snakes",
+      "phrases": [
+       "schlange",
+       "schlangen"
       ]
     }
   ],
