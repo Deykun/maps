@@ -12,7 +12,10 @@ export const PATHS_DATA: {
     pathNameLink: 'heraldry.de.mapTitle',
     path: 'deutsche-heraldik',
     title: '🛡️ Deutschland Wappenkarte',
-    social: ``,
+    social: `
+      <meta property="og:title" content="🛡️ Deutschland Wappenkarte" />
+      <meta property="og:image" content="https://deykun.github.io/maps/social/wappen-in-deutschland-map.png" />
+    `,
     lang: 'de',
     country: 'de',
   },
