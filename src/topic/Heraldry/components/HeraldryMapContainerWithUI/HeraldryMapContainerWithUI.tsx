@@ -22,9 +22,9 @@ import UnitsPane from '@/topic/Heraldry/components/Panes/UnitsPane';
 import FiltersPane from '@/topic/Heraldry/components/Panes/FiltersPane';
 
 import HeraldrySubtitle from '@/topic/Heraldry/components/HeraldrySubtitle';
-import HeraldryCanvas from '@/topic/Heraldry/components/HeraldryCanvas/HeraldryCanvas';
+import HeraldryMapHTMLCanvas from '@/topic/Heraldry/components/HeraldryMapHTMLCanvas/HeraldryMapHTMLCanvas';
 
-import './CountryHeraldry.scss';
+import './HeraldryMapContainerWithUI.scss';
 
 export type Props = {
   lang: string,
@@ -45,7 +45,7 @@ export type Props = {
   isFetchingDetails?: boolean,
 }
 
-const CountryHeraldry = ({
+const HeraldryMapContainerWithUI = ({
   lang,
   unitsForMapAll,
   detailsForUnitsById,
@@ -167,7 +167,7 @@ const CountryHeraldry = ({
                 })}
                 style={zoomLevel === 1 ? { } : { width: `max(${(zoomLevel - 1) * 500}px, ${(zoomLevel - 1) * 80}vw` }}
               >
-                <HeraldryCanvas
+                <HeraldryMapHTMLCanvas
                   units={unitsForMap}
                   setListPhrase={setListPhrase}
                   mapOffset={mapOffset}
@@ -176,12 +176,12 @@ const CountryHeraldry = ({
                   <Suspense fallback={<svg />}>
                     <MapBackground />
                   </Suspense>
-                </HeraldryCanvas>
+                </HeraldryMapHTMLCanvas>
               </div>
             </div>
-            <div className={clsx('country-heraldry-footer', {
+            <div className={clsx('heraldry-map-footer', {
               'text-center mt-10 text-[14px] text-[#4b4b4b] tracking-wide': zoomLevel === 1,
-              'country-heraldry-footer--zoomed fixed bottom-3 right-3 max-w-[calc(100vw_-24px)] z-30 ui-pane sans text-[12px] py-2 px-3 text-center': zoomLevel > 1,
+              'heraldry-map-footer--zoomed fixed bottom-3 right-3 max-w-[calc(100vw_-24px)] z-30 ui-pane sans text-[12px] py-2 px-3 text-center': zoomLevel > 1,
             })}>
               <p>
                 {zoomLevel === 1 && <>{t('heraldry.mapFooterSource')} <strong className="text-black">wikipedia.org</strong>.<br /></>}
@@ -251,4 +251,4 @@ const CountryHeraldry = ({
     );
 };
 
-export default memo(CountryHeraldry);
+export default memo(HeraldryMapContainerWithUI);

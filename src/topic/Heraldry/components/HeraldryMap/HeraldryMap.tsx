@@ -5,9 +5,9 @@ import { CoatOfArmsMapData, CoatOfArmsDetailsData } from '@/topic/Heraldry/types
 import { getFiltersFromSearchParams } from '@/topic/Heraldry/utils/getSearchParams';
 import { getFilter } from '@/topic/Heraldry/utils/getFilter';
 
-import CountryHeraldry, { Props as CountryHeraldryProps } from '@/topic/Heraldry/components/CountryHeraldry/CountryHeraldry';
+import HeraldryMapContainerWithUI, { Props as HeraldryMapContainerWithUIProps } from '@/topic/Heraldry/components/HeraldryMapContainerWithUI/HeraldryMapContainerWithUI';
 
-import CountryHeraldryStatus from '@/topic/Heraldry/components/CountryHeraldry/CountryHeraldryStatus';
+import HeraldryMapContainerWithUIStatus from '@/topic/Heraldry/components/HeraldryMapContainerWithUI/HeraldryMapContainerWithUIStatus';
 
 type FetchParams = {
   dataPaths: string[],
@@ -89,11 +89,11 @@ const fetchCountryDetailsData = async ({ dataPaths }: FetchParams) => {
 };
 
 type Props = FetchParams & Pick<
-  CountryHeraldryProps,
+  HeraldryMapContainerWithUIProps,
   "lang" | "map" | "mapWrapperClassName" | "mapWrapperClassNameForZoom0" | "mapOffset" | "developmentModeFiltersTypes"
 >;
 
-const HeraldryRegionMap = ({
+const HeraldryMapMap = ({
   lang,
   mapWrapperClassName,
   mapWrapperClassNameForZoom0,
@@ -133,15 +133,15 @@ const HeraldryRegionMap = ({
   if (isError) {
     console.error(error);
 
-    return <CountryHeraldryStatus text="Oops... There was an error while fetching data." />
+    return <HeraldryMapContainerWithUIStatus text="Oops... There was an error while fetching data." />
   }
   
   if (isLoading) {
-    return <CountryHeraldryStatus text="Gathering map data..." />
+    return <HeraldryMapContainerWithUIStatus text="Gathering map data..." />
   }
 
   if (!dataForMap) {
-    return <CountryHeraldryStatus text="Oops... There was an error while fetching data." />
+    return <HeraldryMapContainerWithUIStatus text="Oops... There was an error while fetching data." />
   }
 
   const {
@@ -156,7 +156,7 @@ const HeraldryRegionMap = ({
   } = dataForDetails || {};
 
   return (
-    <CountryHeraldry
+    <HeraldryMapContainerWithUI
       lang={lang}
       unitsForMapAll={unitsForMapAll}
       detailsForUnitsById={detailsForUnitsById}
@@ -175,4 +175,4 @@ const HeraldryRegionMap = ({
   );
 };
 
-export default HeraldryRegionMap;
+export default HeraldryMapMap;

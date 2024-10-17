@@ -21,7 +21,7 @@ import useHeraldryCursorPosition from '@/topic/Heraldry/components/HeraldryCurso
 import HeraldryCursor from '@/topic/Heraldry/components/HeraldryCursor/HeraldryCursor';
 import HeraldryCursorLastPoint from '@/topic/Heraldry/components/HeraldryCursor/HeraldryCursorLastPoint';
 
-import './HeraldryCanvas.scss';
+import './HeraldryMapHTMLCanvas.scss';
 
 type Props = {
   className?: string,
@@ -32,7 +32,7 @@ type Props = {
   setListPhrase: (phrase: string) => void,
 }
 
-const HeraldryCanvas = ({ className, units, children, mapOffset, coatSize, setListPhrase }: Props) => {
+const HeraldryMapHTMLCanvas = ({ className, units, children, mapOffset, coatSize, setListPhrase }: Props) => {
   const idToShow = useCursorStore((state) => state.idToShow);
   const [hovered, setHovered] = useState<CoatOfArmsMapData[]>([]);
 
@@ -169,7 +169,7 @@ const HeraldryCanvas = ({ className, units, children, mapOffset, coatSize, setLi
     <>
       <div
         ref={mergeRefs(wrapperRef, elementRef)}
-        className={clsx('heraldry-canvas mx-auto cursor-none', className)}
+        className={clsx('heraldry-map-canvas mx-auto cursor-none', className)}
         onClick={handleMapClick}
         style={{ padding: mapPadding }}
       >
@@ -182,4 +182,4 @@ const HeraldryCanvas = ({ className, units, children, mapOffset, coatSize, setLi
   );
 }
 
-export default memo(HeraldryCanvas);
+export default memo(HeraldryMapHTMLCanvas);

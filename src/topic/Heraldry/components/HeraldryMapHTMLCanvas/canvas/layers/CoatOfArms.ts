@@ -12,14 +12,12 @@ export class CoatOfArms {
   lonX: number;
   latY: number;
   id: string;
-  imageUrl: string;
   imageSprite: {
     url: string,
     indexX: number,
     indexY: number,
   };
   image: HTMLImageElement;
-  imageIsLoaded: boolean;
 
   constructor ({
     canvas,
@@ -27,7 +25,7 @@ export class CoatOfArms {
     lonX,
     latY,
     id,
-    imageUrl,
+    image,
     imageSprite,
     coatSize,
     mapOffset,
@@ -37,7 +35,7 @@ export class CoatOfArms {
     lonX: number,
     latY: number,
     id: string,
-    imageUrl: string,
+    image: HTMLImageElement,
     imageSprite: {
       url: string,
       indexX: number,
@@ -50,18 +48,8 @@ export class CoatOfArms {
     this.ctx = ctx;
 
     this.id = id;
-    this.imageUrl = imageUrl;
     this.imageSprite = imageSprite;
-
-    const image = new Image();
-    image.src = this.imageSprite.url;
     this.image = image;
-    this.imageIsLoaded = false;
-    this.image.onload = () => {
-      this.imageIsLoaded = true;
-      this.draw();
-    }
-
     this.width = coatSize;
     this.height = coatSize;
 
@@ -95,7 +83,7 @@ export class CoatOfArms {
   }
 
   draw() {
-    if (!this.imageIsLoaded) {
+    if (!this.image.complete) {
       return;
     }
 

@@ -8,7 +8,7 @@ type Props = {
   isLoading?: boolean,
 }
 
-const CountryHeraldryStatus = ({ text, isLoading = false }: Props) => {
+const HeraldryMapContainerWithUIStatus = ({ text, isLoading = false }: Props) => {
   return (
     <div id="map-status" className="flex flex-col justify-center items-center h-[100vh] p-4">
       <ButtonCircle tagName="span" size="large">
@@ -19,4 +19,4 @@ const CountryHeraldryStatus = ({ text, isLoading = false }: Props) => {
   );
 }
 
-export default CountryHeraldryStatus;
+export default HeraldryMapContainerWithUIStatus;

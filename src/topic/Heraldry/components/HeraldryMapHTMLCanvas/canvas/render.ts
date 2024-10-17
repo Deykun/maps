@@ -5,6 +5,7 @@ import { CoatOfArms } from './layers/CoatOfArms';
 
 let canvas = undefined as unknown as HTMLCanvasElement;
 let ctx = undefined as unknown as CanvasRenderingContext2D;
+let currentFrameHash = '';
 let coatOfArmsList: CoatOfArms[] = [];
 let coatSize = 40;
 let mapOffset: MapOffset = {
@@ -12,16 +13,10 @@ let mapOffset: MapOffset = {
   maxLatTop: -90,
   minLonLeft: -180,
   maxLonLeft: 180,
-}
-
-// const fps = 0.5;
-
-// const startAnimation = () => {
-//   setTimeout(() => {
-//     // window.requestAnimationFrame(renderFrame);
-//     renderFrame();
-//   }, 1000 / fps);
-// }
+};
+const cachedSprites: {
+  [key: string]: HTMLImageElement,
+} = {};
 
 type FrameStampData = {
   coatSize: number;
@@ -71,6 +66,34 @@ const getFrameStampData = ({ shouldSkipChangeCheck }: { shouldSkipChangeCheck: b
 
 let lastFrameStampData = getFrameStampData({ shouldSkipChangeCheck: false });
 
+const redrawItems = (redrawFrameHash: string, index: number) => {
+  /*
+    Looks like a reasonable solution https://stackoverflow.com/a/37514084/6743808
+
+    It is a recursive function iterating through the current list of coat of arms with setTimeout(),
+    freeing up the main thread if necessary.
+
+    If the current frame changes, it stops iterating further.
+    Using setTimout forEach or for () here would still iterate through all of the CoA. 
+  */
+  const shouldDropFrame = currentFrameHash !== redrawFrameHash;
+  if (shouldDropFrame) {
+    console.log(`  - Old frame (${redrawFrameHash}) rendering was stoped at ${index}`);
+
+    return;
+  }
+
+  if (coatOfArmsList[index]) {
+    const renderAtOnce = 40;
+
+    for (let i = 0; i <= renderAtOnce; i++) {
+      coatOfArmsList[index + i]?.draw();
+    } 
+
+    setTimeout(() => redrawItems(redrawFrameHash, index + renderAtOnce), 0);
+  }
+}
+
 const renderFrame = ({ shouldSkipChangeCheck = false }: { shouldSkipChangeCheck?: boolean } = {}) => {
   const frameStampData = getFrameStampData({ shouldSkipChangeCheck });
 
@@ -90,16 +113,15 @@ const renderFrame = ({ shouldSkipChangeCheck = false }: { shouldSkipChangeCheck?
   lastFrameStampData = frameStampData;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  coatOfArmsList.forEach((item) => {
-    /*
-      TODO: It currently works synchronously, but it should be asynchronous to avoid blocking the main thread.
+  currentFrameHash = [
+    'frame',
+    coatOfArmsList.length,
+    new Date().getTime(),
+    coatSize,
+    canvas.width,
+  ].join('-')
 
-      Additionally, there should be an option to skip frame calculation if a new one is requested.
-    */
-    // setTimeout(() => {
-      item.draw();
-    // }, 0);
-  });
+  redrawItems(currentFrameHash, 0);
 }
 
 const initEventListeners = () => {
@@ -171,14 +193,24 @@ export const render = ({ canvas: initCanvas, ctx: initCtx, mapOffset: initMapOff
   initEventListeners();
 };
 
-export const setCoatOfArms = (units: CoatOfArmsMapData[]) => {
+export const setCoatOfArms = async (units: CoatOfArmsMapData[]) => {
   coatOfArmsList = [];
-  
-  coatOfArmsList = units.filter((unit) => (unit?.imagesList || []).length > 0).map((unit) => {
+  let coatOfArmsSpritesUrls: string[] = [];
+
+  const newCoatOfArmsList = units.filter((unit) => (unit?.imagesList || []).length > 0).map((unit) => {
     const lonX = unit?.place?.coordinates?.lon ?? 0;
     const latY = unit?.place?.coordinates?.lat ?? 0;
 
-    const image = (unit.imagesList || []).find(({ width }) => width === '80w' );
+    const imageSprite = getSpriteDataFromUnit(unit);
+
+    const spriteSrc = imageSprite.url;
+
+    if (!cachedSprites[spriteSrc]) {
+      const image = new Image();
+      coatOfArmsSpritesUrls.push(spriteSrc)
+      image.src = spriteSrc;
+      cachedSprites[spriteSrc] = image;
+    }
 
     return new CoatOfArms({
       canvas,
@@ -186,15 +218,32 @@ export const setCoatOfArms = (units: CoatOfArmsMapData[]) => {
       lonX,
       latY,
       id: unit.id,
-      imageUrl: image?.path || '', // aserted in filter
-      imageSprite: getSpriteDataFromUnit(unit),
+      image: cachedSprites[imageSprite.url],
+      imageSprite,
       coatSize,
       mapOffset,
     });
   }).filter(Boolean);
 
-  renderFrame();
-  // startAnimation();
+  coatOfArmsList = newCoatOfArmsList;
+  
+  await Promise.all(coatOfArmsSpritesUrls.map((src) => {
+    if (cachedSprites[src].complete) {
+      return Promise.resolve()
+    }
+
+    cachedSprites[src].onload = () => {
+      return Promise.resolve();
+    }
+
+    cachedSprites[src].onerror = () => {
+      console.error(`Error while fetching sprite ${src}`);
+
+      return Promise.resolve();
+    }
+  }));
+
+  renderFrame({ shouldSkipChangeCheck: true });
 };
 
 export const getCoatOfArmsForXandY = ({ x, y }: { x: number, y: number }) => {
