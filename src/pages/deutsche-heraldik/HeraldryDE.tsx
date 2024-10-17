@@ -6,17 +6,51 @@ import HeraldryRegion from '@/topic/Heraldry/components/HeraldryRegion/HeraldryR
 
 const filterForCountryData = (units: CoatOfArmsMapData[]) => {
   return units.filter((unit: CoatOfArmsMapData) => {
-    if ([
-      'empty'
-    ].includes(unit.title)) {
-      // Historic
-      return false;
-    };
+    const imagePath = (unit.imagesList || []).find(({ width }) => width === '80w')?.path;
+
+    if (imagePath) {
+      if ([
+        // Not CoA but Maps
+        'images/heraldry/de/unit/17f85dc9-kreis-warendorf-80w.webp',
+        'images/heraldry/de/unit/10bb3b40-nordrheinwestfalen-80w.webp',
+        'images/heraldry/de/unit/624effa8-nordrheinwestfalen-80w.webp',
+        'images/heraldry/de/unit/59307d6a-nordrheinwestfalen-80w.webp',
+        'images/heraldry/de/unit/274142bd-nordrheinwestfalen-80w.webp',
+        'images/heraldry/de/unit/a261b12-nordrheinwestfalen-80w.webp',
+        'images/heraldry/de/unit/4eb9c094-nordrheinwestfalen-80w.webp',
+        'images/heraldry/de/unit/a61d6b4-nordrheinwestfalen-80w.webp',
+        'images/heraldry/de/unit/62b328d3-nordrheinwestfalen-80w.webp',
+        'images/heraldry/de/unit/d5380a3-nordrheinwestfalen-80w.webp',
+        'images/heraldry/de/unit/9470762-nordrheinwestfalen-80w.webp',
+        'images/heraldry/de/unit/1864c23b-nordrheinwestfalen-80w.webp',
+        'images/heraldry/de/unit/898ec90-nordrheinwestfalen-80w.webp',
+        'images/heraldry/de/unit/68c1ad4-nordrheinwestfalen-80w.webp',
+        'images/heraldry/de/unit/469531ac-nordrheinwestfalen-80w.webp',
+        'images/heraldry/de/unit/2c8c531d-badenwurttemberg-80w.webp',
+        'images/heraldry/de/unit/68328149-badenwurttemberg-80w.webp',
+        'images/heraldry/de/unit/1fb67b80-badenwurttemberg-80w.webp',
+        'images/heraldry/de/unit/326cd87e-badenwurttemberg-80w.webp',
+        'images/heraldry/de/unit/eb13a1a-badenwurttemberg-80w.webp',
+        'images/heraldry/de/unit/21cf49b0-badenwurttemberg-80w.webp',
+        'images/heraldry/de/unit/2955aec1-badenwurttemberg-80w.webp',
+        'images/heraldry/de/unit/3b309d7c-badenwurttemberg-80w.webp',
+        'images/heraldry/de/unit/6ffe3d8-badenwurttemberg-80w.webp',
+        'images/heraldry/de/unit/4b2e6014-badenwurttemberg-80w.webp',
+        'images/heraldry/de/unit/50d9f0eb-badenwurttemberg-80w.webp',
+        'images/heraldry/de/unit/7d1e046e-badenwurttemberg-80w.webp',
+        'images/heraldry/de/unit/31fb1c6-badenwurttemberg-80w.webp',
+        'images/heraldry/de/unit/25348764-thuringen-80w.webp',
+        'images/heraldry/de/unit/6bbef075-deutschland-80w.webp',
+        'images/heraldry/de/unit/4e7b1ef5-enneperuhrkreis-80w.webp',
+      ].includes(imagePath)) {
+        return false;
+      };
+    }
 
     if ([
       'Kanton Tessin'
     ].includes(unit.title)) {
-      // Outside of country
+      // Historic or outside of country
       return false;
     }
 

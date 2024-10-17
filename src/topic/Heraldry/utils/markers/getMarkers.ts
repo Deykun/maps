@@ -45,7 +45,7 @@ export const getMarkers = ({
     items = response.items;
   }
 
-  if (!animals.includes('bird') && animals.some((active) => ['crane', 'duck', 'eagle', 'goose', 'gull', 'hawk', 'stork', 'raven', 'rooster', 'swan', 'owl', 'vulture'].includes(active))) {
+  if (!animals.includes('bird') && animals.some((active) => ['crane', 'duck', 'eagle', 'falcon', 'goose', 'gull', 'hawk', 'heron', 'owl', 'pelican', 'stork', 'raven', 'rooster', 'swan', 'vulture'].includes(active))) {
     animals.push('bird');
   }
 
@@ -57,7 +57,7 @@ export const getMarkers = ({
     animals.push('wolf');
   }
 
-  if (!animals.includes('fish') && animals.some((active) => ['salmon'].includes(active))) {
+  if (!animals.includes('fish') && animals.some((active) => ['salmon', 'seahorse'].includes(active))) {
     animals.push('fish');
   }
 

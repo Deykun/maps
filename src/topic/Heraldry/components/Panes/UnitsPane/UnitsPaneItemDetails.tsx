@@ -69,7 +69,7 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
         </div>
       </span>
       <div className="w-full px-2 text-center">
-        <a href={url} target="_blank" className="text-[18px] font-[500] tracking-wide text-[#312f2f] hover:text-black duration-300">
+        <a href={`${url}?id=${unit.id}`} target="_blank" className="text-[18px] font-[500] tracking-wide text-[#312f2f] hover:text-black duration-300">
           <span>{title}</span>
           {' '}
           <IconLink className="inline-block size-3" /> 

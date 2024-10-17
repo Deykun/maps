@@ -2,7 +2,7 @@ import { useRef, useState, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useQuery } from '@tanstack/react-query';
 
-import { MarkerParams, MarkerParamsWithResult } from '@/topic/Heraldry/types';
+import { MarkerParams } from '@/topic/Heraldry/types';
 
 import {
   EMPTY_CUSTOM_FILTER,

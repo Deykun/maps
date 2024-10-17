@@ -99,3 +99,17 @@ h1, h2, h3 {
   background: #aa0d0d40;
   text-shadow: none;
 }
+
+pre::-moz-selection,
+pre span::-moz-selection {
+  color: black;
+  background: #af9393d9;
+  text-shadow: none;
+}
+  
+pre::selection,
+pre span::selection  {
+  color: black;
+  background: #af9393d9;
+  text-shadow: none;
+}
