@@ -230,13 +230,14 @@ export const setCoatOfArms = async (units: CoatOfArmsMapData[]) => {
         image,
       }
       image.onload = () => {
-        const isStillFetchingOthers = Object.values(cachedSprites).some(
-          ({ image }) => !image.complete
-        );
+        // It's chaotic without it, but users see more CoAs being loaded.
+        // const isStillFetchingOthers = Object.values(cachedSprites).some(
+        //   ({ image }) => !image.complete
+        // );
 
-        if (!isStillFetchingOthers) {
+        // if (!isStillFetchingOthers) {
           renderFrame();
-        }
+        // }
       }
 
       image.onerror = () => {
