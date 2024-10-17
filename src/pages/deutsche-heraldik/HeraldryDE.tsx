@@ -2,7 +2,7 @@ import React from 'react';
 import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 const SvgMap = React.lazy(() => import('./components/SvgMap'));
 
-import HeraldryRegion from '@/topic/Heraldry/components/HeraldryRegion/HeraldryRegion';
+import HeraldryMap from '@/topic/Heraldry/components/HeraldryMap/HeraldryMap';
 
 const filterForCountryData = (units: CoatOfArmsMapData[]) => {
   return units.filter((unit: CoatOfArmsMapData) => {
@@ -87,7 +87,7 @@ const sortForCountryData = (a: CoatOfArmsMapData, b: CoatOfArmsMapData) => {
 
 const HeraldryDE = () => {
   return (
-    <HeraldryRegion
+    <HeraldryMap
       lang="de"
       mapWrapperClassName="[&>div>svg]:aspect-[461_/_623]"
       mapWrapperClassNameForZoom0="max-w-[40vh]"

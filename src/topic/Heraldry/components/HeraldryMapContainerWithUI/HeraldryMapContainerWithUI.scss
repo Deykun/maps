@@ -1,4 +1,4 @@
-.heraldry-canvas {
+.heraldry-map-canvas {
   width: auto;
 
   > svg {
@@ -49,8 +49,8 @@
   container-type: inline-size;
 }
 
-.country-heraldry-footer {
-  &.country-heraldry-footer--zoomed {
+.heraldry-map-footer {
+  &.heraldry-map-footer--zoomed {
     width: max-content;
   }
 }
