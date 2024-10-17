@@ -82,6 +82,17 @@ export class CoatOfArms {
     this.height = size;
   }
 
+  updateCanvas({
+    canvas,
+    ctx,
+  }: {
+    canvas: HTMLCanvasElement,
+    ctx: CanvasRenderingContext2D,
+  }) {
+    this.canvas = canvas;
+    this.ctx = ctx;
+  }
+
   draw() {
     if (!this.image.complete) {
       this.image.onload = () => {

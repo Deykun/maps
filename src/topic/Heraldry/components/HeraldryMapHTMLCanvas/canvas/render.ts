@@ -179,6 +179,12 @@ export const render = ({ canvas: initCanvas, ctx: initCtx, mapOffset: initMapOff
   if (wasInited) {
     console.log('✨ Canvas reinitialized ✨');
     renderFrame({ shouldSkipChangeCheck: true });
+    coatOfArmsList.forEach((unit) => {
+      unit.updateCanvas({
+        canvas,
+        ctx,
+      })
+    })
 
     return;
   }
