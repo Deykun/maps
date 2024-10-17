@@ -178,6 +178,12 @@ export const render = ({ canvas: initCanvas, ctx: initCtx, mapOffset: initMapOff
 
   if (wasInited) {
     console.log('✨ Canvas reinitialized ✨');
+    coatOfArmsList.forEach((unit) => {
+      unit.updateCanvas({
+        canvas,
+        ctx,
+      })
+    });
     renderFrame({ shouldSkipChangeCheck: true });
 
     return;
