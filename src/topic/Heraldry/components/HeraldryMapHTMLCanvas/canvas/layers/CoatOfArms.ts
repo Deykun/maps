@@ -18,7 +18,6 @@ export class CoatOfArms {
     indexY: number,
   };
   image: HTMLImageElement;
-  imageIsLoaded: boolean;
 
   constructor ({
     canvas,
