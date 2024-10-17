@@ -50,6 +50,11 @@ export class CoatOfArms {
     this.id = id;
     this.imageSprite = imageSprite;
     this.image = image;
+    if (!this.image.complete) {
+      this.image.onload = () => {
+        this.draw();
+      }
+    }
     this.width = coatSize;
     this.height = coatSize;
 

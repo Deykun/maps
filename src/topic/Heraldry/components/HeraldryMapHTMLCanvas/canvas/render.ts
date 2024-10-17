@@ -224,8 +224,6 @@ export const setCoatOfArms = async (units: CoatOfArmsMapData[]) => {
       mapOffset,
     });
   }).filter(Boolean);
-
-  coatOfArmsList = newCoatOfArmsList;
   
   await Promise.all(coatOfArmsSpritesUrls.map((src) => {
     if (cachedSprites[src].complete) {
@@ -243,7 +241,9 @@ export const setCoatOfArms = async (units: CoatOfArmsMapData[]) => {
     }
   }));
 
-  renderFrame({ shouldSkipChangeCheck: true });
+  coatOfArmsList = newCoatOfArmsList;
+
+  renderFrame();
 };
 
 export const getCoatOfArmsForXandY = ({ x, y }: { x: number, y: number }) => {
