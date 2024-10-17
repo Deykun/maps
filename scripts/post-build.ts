@@ -11,7 +11,7 @@ PATHS_DATA.forEach(({ type, path, title, social, lang = 'en', country }) => {
   let html = fs.readFileSync('./dist/index.html', 'utf-8');
 
   html = html.replace('lang="en"', `lang="${lang}"`);
-  html = html.replace('<title>🗺️ maps</title>', `<title>${title}</title>`);
+  html = html.replace('<title>Heraldic maps</title>', `<title>${title}</title>`);
   html = html.replace('<!-- SOCIAL -->', social);
 
   if (type === 'heraldryCountry' && country) {

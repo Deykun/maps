@@ -145,11 +145,11 @@ const HeraldryMapContainerWithUI = ({
             {...events}
           >
             <header className={clsx('', {
-              'md:mb-10 min-h-[100px] max-w-[800px] flex-shrink-0 mx-auto': zoomLevel === 1,
+              'px-[50px] sm:px-0 md:mb-10 min-h-[100px] max-w-[800px] flex-shrink-0 mx-auto': zoomLevel === 1,
               'ui-slide-from-left ui-pane fixed top-3 left-3 md:left-12 md:ml-6 md:max-w-[calc(100vw_-_145px)] z-30 px-4 empty:hidden': zoomLevel > 1,
             })}>
               {zoomLevel === 1 && 
-                <h1 className={clsx('text-[28px] lg:text-[36px] text-center text-[#aa0d0d]', { 
+                <h1 className={clsx('text-[20px] sm:text-[28px] lg:text-[36px] text-center text-[#aa0d0d]', { 
                   'hidden': zoomLevel > 1,
                 })}>
                   {t(`heraldry.${lang}.mapTitle`)}

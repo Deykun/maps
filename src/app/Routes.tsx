@@ -23,7 +23,7 @@ const Routes = () => {
       return pathData.title;
     }
 
-    return '🗺️ maps';
+    return 'Heraldic maps';
   }, [path]);
 
   return (

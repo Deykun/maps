@@ -273,7 +273,7 @@ const FiltersPane = ({
               {animalFilters.includes(WITHOUT_ANIMAL) && <IconCheck className="inline size-3 fill-current" />} {t(`heraldry.animal.${WITHOUT_ANIMAL}`)}
             </button>
         </div>
-        {animalFiltersList.length > 0 && <div className="sans mt-2 pt-3 border-t border-t-[#dbd7d7] grid grid-cols-1 max-h-[80lvh] overflow-auto sm:grid-cols-2 gap-1">
+        {animalFiltersList.length > 0 && <div className="sans mt-2 pt-3 border-t border-t-[#dbd7d7] grid grid-cols-1 max-h-full overflow-auto sm:grid-cols-2 gap-1">
           {animalFiltersList.map(({ value, total }) => 
             <button
               onClick={() => toggleAnimal(value)}

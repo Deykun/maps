@@ -5,7 +5,8 @@
   background: rgba(255, 255, 255, 0.73);
   -webkit-backdrop-filter: blur(8px) saturate(1.5) contrast(0.7);
   backdrop-filter: blur(8px) saturate(1.5) contrast(0.7);
-  max-width: calc(100vw - 80px);
+  max-width: calc(100vw - 78px);
+  max-height: calc(100vh - 30px);
   box-shadow: 0 3px 14px -5px #f4f3f2c4, 0 7px 3px -6px #d7d7d7c4;
 
   > .border-t {
