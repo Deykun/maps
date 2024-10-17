@@ -133,15 +133,15 @@ const HeraldryMapMap = ({
   if (isError) {
     console.error(error);
 
-    return <HeraldryMapContainerWithUIStatus text="Oops... There was an error while fetching data." />
+    return <HeraldryMapContainerWithUIStatus message="heraldry.loading.error" />
   }
   
   if (isLoading) {
-    return <HeraldryMapContainerWithUIStatus text="Gathering map data..." />
+    return <HeraldryMapContainerWithUIStatus message="heraldry.loading.fetching" />
   }
 
   if (!dataForMap) {
-    return <HeraldryMapContainerWithUIStatus text="Oops... There was an error while fetching data." />
+    return <HeraldryMapContainerWithUIStatus message="heraldry.loading.error" />
   }
 
   const {
