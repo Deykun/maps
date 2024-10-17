@@ -57,7 +57,7 @@ export const getMarkers = ({
     animals.push('wolf');
   }
 
-  if (!animals.includes('fish') && animals.some((active) => ['salmon'].includes(active))) {
+  if (!animals.includes('fish') && animals.some((active) => ['salmon', 'seahorse'].includes(active))) {
     animals.push('fish');
   }
 

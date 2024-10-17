@@ -182,10 +182,22 @@
     {
       "name": "boar",
       "phrases": [
+       "eber",
+       "eberkopf",
+       "eberrumpf",
+       "ebers",
        "wildschwein",
        "wildschweine",
        "wildschweinen",
        "wildschweins"
+      ]
+    },
+    {
+      "name": "panther",
+      "phrases": [
+       "panther",
+       "panthern",
+       "panthers"
       ]
     },
     {
@@ -236,30 +248,50 @@
        "auerochsengehörn",
        "auerochsenkopf",
        "büffel",
-       "büffeln",
-       "büffels",
-       "büffelhörner",
-       "büffelohren",
        "büffelgehörn",
+       "büffelhörner",
        "büffelhörnern",
+       "büffeln",
+       "büffelohren",
+       "büffels",
        "bulle",
        "bullen",
+       "kuh",
+       "kühe",
+       "kühen",
+       "kuhkopf",
+       "kuhs",
        "ochse",
        "ochsen",
+       "ochsenhörnern",
        "ochsenkopf",
        "ochsenrumpf",
-       "ochsenhörnern",
        "stier",
        "stiere",
        "stieren",
+       "stierhaupt",
        "stierkopf",
        "stiers",
        "wisent",
        "wisente",
        "wisenten",
-       "wisents",
        "wisentgehörne",
-       "wisentkopf"
+       "wisentkopf",
+       "wisents"
+      ]
+    },
+    {
+      "name": "otter",
+      "phrases": [
+       "fischotter",
+       "fischottern",
+       "fischotters"
+      ]
+    },
+    {
+      "name": "bird",
+      "phrases": [
+       "dompfaff"
       ]
     },
     {
@@ -273,7 +305,9 @@
        "drachenrumpf",
        "drachenrümpfen",
        "drachens",
-       "drachentöter"
+       "drachentöter",
+       "lindwurm",
+       "lindwurms"
       ]
     },
     {
@@ -310,6 +344,13 @@
        "Schlaubetal",
        "Bezirk Köpenick",
        "Berlin-Schmöckwitz"
+      ]
+    },
+    {
+      "name": "seahorse",
+      "phrases": [
+       "seepferdchen",
+       "seepferdchens"
       ]
     },
     {
@@ -371,7 +412,8 @@
        "pferdekopfform",
        "pferden",
        "pferderumpf",
-       "pferdes"
+       "pferdes",
+       "roß"
       ]
     },
     {
@@ -398,11 +440,20 @@
     {
       "name": "ram",
       "phrases": [
+       "heidschnucke",
+       "heidschnuckenkopf",
        "schaf",
        "schafe",
        "schafen",
        "schafes",
-       "schafsrumpf"
+       "schafsrumpf",
+       "widder",
+       "widderhorn",
+       "widderhörner",
+       "widderkopf",
+       "widderköpfen",
+       "widderrumpf",
+       "widders"
       ]
     },
     {
