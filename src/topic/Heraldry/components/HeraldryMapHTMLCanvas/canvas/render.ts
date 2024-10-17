@@ -15,7 +15,9 @@ let mapOffset: MapOffset = {
   maxLonLeft: 180,
 };
 const cachedSprites: {
-  [key: string]: HTMLImageElement,
+  [key: string]: {
+    image: HTMLImageElement,
+  },
 } = {};
 
 type FrameStampData = {
@@ -24,6 +26,7 @@ type FrameStampData = {
   mapOffset: string;
   canvasWidth: number;
   shouldSkipChangeCheck: boolean,
+  fetchedSprites: number,
 };
 
 const getFirstFrameChangeDetected = (a: FrameStampData, b: FrameStampData) => {
@@ -33,6 +36,10 @@ const getFirstFrameChangeDetected = (a: FrameStampData, b: FrameStampData) => {
 
   if (a.coatSize !== b.coatSize) {
     return 'coatSize';
+  }
+
+  if (a.fetchedSprites !== b.fetchedSprites) {
+    return 'fetchedSprites'
   }
 
   if (a.coatOfArmsIds.length !== b.coatOfArmsIds.length) {
@@ -55,12 +62,15 @@ const getFirstFrameChangeDetected = (a: FrameStampData, b: FrameStampData) => {
 }
 
 const getFrameStampData = ({ shouldSkipChangeCheck }: { shouldSkipChangeCheck: boolean}): FrameStampData => {
+  const fetchedSprites = Object.values(cachedSprites).filter(({ image }) => image.complete).length;
+  
   return {
     coatSize,
     coatOfArmsIds: coatOfArmsList.map(({ id }) => id),
     mapOffset: JSON.stringify(mapOffset),
     canvasWidth: canvas?.width || 0,
     shouldSkipChangeCheck,
+    fetchedSprites,
   }
 };
 
@@ -215,7 +225,25 @@ export const setCoatOfArms = async (units: CoatOfArmsMapData[]) => {
       const image = new Image();
       coatOfArmsSpritesUrls.push(spriteSrc)
       image.src = spriteSrc;
-      cachedSprites[spriteSrc] = image;
+
+      cachedSprites[spriteSrc] = {
+        image,
+      }
+      image.onload = () => {
+        const isStillFetchingOthers = Object.values(cachedSprites).some(
+          ({ image }) => !image.complete
+        );
+
+        if (!isStillFetchingOthers) {
+          renderFrame();
+        }
+      }
+
+      image.onerror = () => {
+        console.error(`Error while fetching sprite ${spriteSrc}`);
+  
+        renderFrame();
+      }
     }
 
     return new CoatOfArms({
@@ -224,28 +252,12 @@ export const setCoatOfArms = async (units: CoatOfArmsMapData[]) => {
       lonX,
       latY,
       id: unit.id,
-      image: cachedSprites[imageSprite.url],
+      image: cachedSprites[spriteSrc].image,
       imageSprite,
       coatSize,
       mapOffset,
     });
   }).filter(Boolean);
-  
-  await Promise.all(coatOfArmsSpritesUrls.map((src) => {
-    if (cachedSprites[src].complete) {
-      return Promise.resolve()
-    }
-
-    cachedSprites[src].onload = () => {
-      return Promise.resolve();
-    }
-
-    cachedSprites[src].onerror = () => {
-      console.error(`Error while fetching sprite ${src}`);
-
-      return Promise.resolve();
-    }
-  }));
 
   coatOfArmsList = newCoatOfArmsList;
 

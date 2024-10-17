@@ -42,6 +42,8 @@ const filterForCountryData = (units: CoatOfArmsMapData[]) => {
         'images/heraldry/de/unit/25348764-thuringen-80w.webp',
         'images/heraldry/de/unit/6bbef075-deutschland-80w.webp',
         'images/heraldry/de/unit/4e7b1ef5-enneperuhrkreis-80w.webp',
+        'images/heraldry/de/unit/3994855a-oberbergischer-kreis-80w.webp',
+        'images/heraldry/de/unit/593e517f-rheinerftkreis-80w.webp',
       ].includes(imagePath)) {
         return false;
       };

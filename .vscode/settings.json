@@ -1,0 +1,6 @@
+{
+  "liveServer.settings.root": "/dist",
+  "liveServer.settings.mount": [
+      ["/maps", "./dist"]
+  ]
+}
