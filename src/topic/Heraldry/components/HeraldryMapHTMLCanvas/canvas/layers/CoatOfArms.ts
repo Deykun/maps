@@ -96,6 +96,7 @@ export class CoatOfArms {
   }) {
     this.canvas = canvas;
     this.ctx = ctx;
+    this.draw();
   }
 
   draw() {
