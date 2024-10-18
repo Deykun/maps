@@ -1,6 +1,13 @@
 {
   "animals": [
     {
+      "name": "gull",
+      "phrases": [
+       "möwe",
+       "möwen"
+      ]
+    },
+    {
       "name": "eagle",
       "phrases": [
        "adler",
@@ -15,7 +22,10 @@
        "adlerrümpfe",
        "adlers",
        "doppeladler",
-       "ziegenadler"
+       "doppelkopfadler",
+       "ziegenadler",
+       "seeadler",
+       "seeadlers"
       ]
     },
     {
@@ -35,7 +45,10 @@
        "reiherhälse",
        "reiherkopf",
        "reihers",
-       "reihren"
+       "reihren",
+       "fischreiher",
+       "fischreihers",
+       "fischreiherfuß"
       ]
     },
     {
@@ -167,6 +180,8 @@
       "phrases": [
        "hase",
        "hasen",
+       "hasenkopf",
+       "hasenköpfen",
        "kaninchen",
        "kaninchens"
       ]
@@ -189,7 +204,16 @@
        "wildschwein",
        "wildschweine",
        "wildschweinen",
-       "wildschweins"
+       "wildschweins",
+       "keilerkopf",
+       "keilerhaupt"
+      ]
+    },
+    {
+      "name": "ant",
+      "phrases": [
+        "ameise",
+        "ameisen"
       ]
     },
     {
@@ -207,7 +231,24 @@
        "hirsche",
        "hirschen",
        "hirsches",
+       "hirschbock",
+       "hirschgeweih",
+       "hirschhorn",
+       "hirschkopf",
+       "hirschkuh",
+       "hirschrumpf",
+       "hirschstange",
+       "hirschstangen",
+       "rehbock",
+       "rehbockkopf",
+       "rehbocks",
        "zwölfender-kronenhirsches"
+      ]
+    },
+    {
+      "name": "lynx",
+      "phrases": [
+       "luchs"
       ]
     },
     {
@@ -216,7 +257,8 @@
        "elch",
        "elche",
        "elchen",
-       "elches"
+       "elches",
+       "elchkopf"
       ]
     },
     {
@@ -291,7 +333,17 @@
     {
       "name": "bird",
       "phrases": [
-       "dompfaff"
+       "dompfaff",
+       "schwalbe",
+       "schwalben",
+       "schwalbes",
+       "birkhahn",
+       "kiebitz",
+       "milan",
+       "gabelweihe",
+       "flug",
+       "flügel",
+       "flügeln"
       ]
     },
     {
@@ -319,6 +371,9 @@
        "fische",
        "fischen",
        "fisches",
+       "hecht",
+       "hechte",
+       "hechten",
        "hering",
        "heringe",
        "heringen",
@@ -344,6 +399,12 @@
        "Schlaubetal",
        "Bezirk Köpenick",
        "Berlin-Schmöckwitz"
+      ]
+    },
+    {
+      "name": "weasel",
+      "phrases": [
+        "marder"
       ]
     },
     {
@@ -391,7 +452,8 @@
        "hund",
        "hunde",
        "hunden",
-       "hundes"
+       "hundes",
+       "windhund"
       ]
     },
     {
@@ -413,7 +475,13 @@
        "pferden",
        "pferderumpf",
        "pferdes",
-       "roß"
+       "ross",
+       "roß",
+       "rosskamm",
+       "rosskopf",
+       "rösser",
+       "schachrössel",
+       "fohlen"
       ]
     },
     {
@@ -434,7 +502,14 @@
        "ziegen",
        "ziegenadler",
        "ziegenbock",
-       "ziegenkopf"
+       "ziegenkopf",
+       "steinbock",
+       "steinbocksrumpf",
+       "steinbockshorn",
+       "steinbockkopf",
+       "steinbockhörnern",
+       "steinbockshörner",
+       "steinbockshorn"
       ]
     },
     {
@@ -442,6 +517,7 @@
       "phrases": [
        "heidschnucke",
        "heidschnuckenkopf",
+       "lamm",
        "schaf",
        "schafe",
        "schafen",
@@ -453,7 +529,8 @@
        "widderkopf",
        "widderköpfen",
        "widderrumpf",
-       "widders"
+       "widders",
+       "osterlamm"
       ]
     },
     {
@@ -514,6 +591,14 @@
        "biberkopf",
        "bibern",
        "bibers"
+      ]
+    },
+    {
+      "name": "leopard",
+      "phrases": [
+       "leopard",
+       "leoparden",
+       "leopardierten"
       ]
     },
     {
