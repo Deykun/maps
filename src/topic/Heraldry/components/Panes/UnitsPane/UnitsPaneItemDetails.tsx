@@ -17,6 +17,8 @@ import ButtonCircle from '@/components/UI/ButtonCircle';
 
 import DevelopmentActions from '@/topic/Heraldry/components/DevelopmentActions/DevelopmentActions';
 
+import UnitsPaneItemDetailsFromDevelopmentMode from './UnitsPaneItemDetailsFromDevelopmentMode';
+
 type Props = {
   className?: string,
   unit: CoatOfArmsMapData,
@@ -37,7 +39,7 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
 
   return (
     <li className={clsx('flex flex-col gap-2 items-center', { [className || '']: className })}>
-      <span className="relative size-full flex-shrink-0">
+      <span className="relative block size-full aspect-square flex-shrink-0">
         <img
           src={imagesList?.[0].path}
           srcSet={getImageSrcSet(imagesList)}
@@ -79,6 +81,7 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
           {' '}
           {place?.name || t('heraldry.item.noLocation')}
         </p>
+        <UnitsPaneItemDetailsFromDevelopmentMode id={unit.id} country={unit.lang} />
         {/* <div className="mt-2 empty:hidden flex gap-1 justify-center">
           {Object.entries(colors?.byNames || {}).map(([colorName, colors = []]) => {
             const title = [

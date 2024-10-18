@@ -81,7 +81,7 @@ const DevelopmentPane = ({
     queryFn: () => fetchTitlesAndDescriptions({ country, unitTypes }),
     queryKey: ['dev', country],
     staleTime: 60 * 60 * 1000,
-    enabled: Boolean(activeMenu),
+    enabled: window?.location?.href?.includes('localhost') || Boolean(activeMenu),
   });
 
   const toggleMenu = (name: string) => () => setActiveMenu((v) => v === name ? '' : name);
