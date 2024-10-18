@@ -22,7 +22,10 @@
        "adlerrümpfe",
        "adlers",
        "doppeladler",
-       "ziegenadler"
+       "doppelkopfadler",
+       "ziegenadler",
+       "seeadler",
+       "seeadlers"
       ]
     },
     {
@@ -42,7 +45,10 @@
        "reiherhälse",
        "reiherkopf",
        "reihers",
-       "reihren"
+       "reihren",
+       "fischreiher",
+       "fischreihers",
+       "fischreiherfuß"
       ]
     },
     {
@@ -198,7 +204,16 @@
        "wildschwein",
        "wildschweine",
        "wildschweinen",
-       "wildschweins"
+       "wildschweins",
+       "keilerkopf",
+       "keilerhaupt"
+      ]
+    },
+    {
+      "name": "ant",
+      "phrases": [
+        "ameise",
+        "ameisen"
       ]
     },
     {
@@ -216,6 +231,7 @@
        "hirsche",
        "hirschen",
        "hirsches",
+       "hirschbock",
        "hirschgeweih",
        "hirschhorn",
        "hirschkopf",
@@ -241,7 +257,8 @@
        "elch",
        "elche",
        "elchen",
-       "elches"
+       "elches",
+       "elchkopf"
       ]
     },
     {
@@ -319,7 +336,14 @@
        "dompfaff",
        "schwalbe",
        "schwalben",
-       "schwalbes"
+       "schwalbes",
+       "birkhahn",
+       "kiebitz",
+       "milan",
+       "gabelweihe",
+       "flug",
+       "flügel",
+       "flügeln"
       ]
     },
     {
@@ -347,6 +371,9 @@
        "fische",
        "fischen",
        "fisches",
+       "hecht",
+       "hechte",
+       "hechten",
        "hering",
        "heringe",
        "heringen",
@@ -372,6 +399,12 @@
        "Schlaubetal",
        "Bezirk Köpenick",
        "Berlin-Schmöckwitz"
+      ]
+    },
+    {
+      "name": "weasel",
+      "phrases": [
+        "marder"
       ]
     },
     {
@@ -419,7 +452,8 @@
        "hund",
        "hunde",
        "hunden",
-       "hundes"
+       "hundes",
+       "windhund"
       ]
     },
     {
@@ -444,7 +478,10 @@
        "ross",
        "roß",
        "rosskamm",
-       "rosskopf"
+       "rosskopf",
+       "rösser",
+       "schachrössel",
+       "fohlen"
       ]
     },
     {
@@ -465,7 +502,14 @@
        "ziegen",
        "ziegenadler",
        "ziegenbock",
-       "ziegenkopf"
+       "ziegenkopf",
+       "steinbock",
+       "steinbocksrumpf",
+       "steinbockshorn",
+       "steinbockkopf",
+       "steinbockhörnern",
+       "steinbockshörner",
+       "steinbockshorn"
       ]
     },
     {
@@ -485,7 +529,8 @@
        "widderkopf",
        "widderköpfen",
        "widderrumpf",
-       "widders"
+       "widders",
+       "osterlamm"
       ]
     },
     {
