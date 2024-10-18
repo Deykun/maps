@@ -1,7 +1,6 @@
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
-
-import { getImageSrcSet } from '@/utils/image';
+import { getSpriteDataFromUnit } from '@/topic/Heraldry/utils/getSpriteDataFromUnit';
 
 import {
   showUnitOnMap,
@@ -25,7 +24,7 @@ type Props = {
 }
 
 const UnitsPaneItem = ( { className, unit, setPreviewUnit }: Props) => {
-  const { title, url, imagesList, place, type } = unit;
+  const { title, url, place, type } = unit;
 
   const isFormerUnit = type.length > 0 && type[0].startsWith('former');
   
@@ -40,16 +39,25 @@ const UnitsPaneItem = ( { className, unit, setPreviewUnit }: Props) => {
   //   ...(markers?.items || []).map((v) => t(`heraldry.item.${v}`)),
   // ];
 
+  const {
+    spriteOffsetX,
+    spriteOffsetY,
+    url: spriteUrl,
+  } = getSpriteDataFromUnit(unit);
+
   return (
     <li className={clsx('flex gap-2 items-center', { [className || '']: className })}>
       <span className="relative size-[80px] md:size-20 flex-shrink-0">
-        <img
-          src={imagesList?.[0].path}
-          srcSet={getImageSrcSet(imagesList)}
-          className="size-[80px] md:size-20 object-contain p-2 rounded-[4px] bg-white border"
-          alt=""
-          loading="lazy"
-        />
+        <span className="inline-block size-[80px] rounded-[4px] bg-white border">
+          <span
+            className="inline-block size-[80px] scale-[0.7] origin-center"
+            style={{
+              backgroundImage: `url('${spriteUrl}')`,
+              backgroundPositionX: `-${spriteOffsetX}px`,
+              backgroundPositionY: `-${spriteOffsetY}px`,
+            }}
+          />
+        </span>
       </span>
       <span className="w-full">
         <a href={`${url}?id=${unit.id}`} target="_blank" className="text-[14px] font-[500] tracking-wide line-clamp-2 text-[#312f2f] hover:text-black duration-300">

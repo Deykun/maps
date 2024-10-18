@@ -1,6 +1,13 @@
 {
   "animals": [
     {
+      "name": "gull",
+      "phrases": [
+       "möwe",
+       "möwen"
+      ]
+    },
+    {
       "name": "eagle",
       "phrases": [
        "adler",
@@ -167,6 +174,8 @@
       "phrases": [
        "hase",
        "hasen",
+       "hasenkopf",
+       "hasenköpfen",
        "kaninchen",
        "kaninchens"
       ]
@@ -207,7 +216,23 @@
        "hirsche",
        "hirschen",
        "hirsches",
+       "hirschgeweih",
+       "hirschhorn",
+       "hirschkopf",
+       "hirschkuh",
+       "hirschrumpf",
+       "hirschstange",
+       "hirschstangen",
+       "rehbock",
+       "rehbockkopf",
+       "rehbocks",
        "zwölfender-kronenhirsches"
+      ]
+    },
+    {
+      "name": "lynx",
+      "phrases": [
+       "luchs"
       ]
     },
     {
@@ -514,6 +539,14 @@
        "biberkopf",
        "bibern",
        "bibers"
+      ]
+    },
+    {
+      "name": "leopard",
+      "phrases": [
+       "leopard",
+       "leoparden",
+       "leopardierten"
       ]
     },
     {

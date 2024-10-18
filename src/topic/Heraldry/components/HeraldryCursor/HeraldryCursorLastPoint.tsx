@@ -44,6 +44,7 @@ const HeraldryCursorLastPoint = () => {
           size="large"
           id="heraldry-cursor-last-point"
           className="heraldry-cursor-last-point"
+          wrapperClassName="leading-none"
           onClick={handleClick}
           label={lastClick.hovered.length === 1 ? lastClick.hovered.map(({ title }) => title).join(', ') : undefined}
           labelPosition="bottom"

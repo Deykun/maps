@@ -17,6 +17,8 @@ import ButtonCircle from '@/components/UI/ButtonCircle';
 
 import DevelopmentActions from '@/topic/Heraldry/components/DevelopmentActions/DevelopmentActions';
 
+import UnitsPaneItemDetailsFromDevelopmentMode from './UnitsPaneItemDetailsFromDevelopmentMode';
+
 type Props = {
   className?: string,
   unit: CoatOfArmsMapData,
@@ -79,6 +81,7 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
           {' '}
           {place?.name || t('heraldry.item.noLocation')}
         </p>
+        <UnitsPaneItemDetailsFromDevelopmentMode id={unit.id} country={unit.lang} />
         {/* <div className="mt-2 empty:hidden flex gap-1 justify-center">
           {Object.entries(colors?.byNames || {}).map(([colorName, colors = []]) => {
             const title = [

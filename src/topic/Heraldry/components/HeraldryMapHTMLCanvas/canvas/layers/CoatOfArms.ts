@@ -159,15 +159,11 @@ export class CoatOfArms {
     // const scaledMapPadding = mapPadding * window.devicePixelRatio;
     const scaledMapPadding = 0;
 
-
-
     // Is rendered simillary to translate(-50%, -50%);
     const object = {
       x: objectRaw.x + (this.width / 2) + scaledMapPadding,
       y: objectRaw.y + (this.height / 2) + scaledMapPadding,
     };
-
-
 
     if (object.x > this.x + this.width || object.x < this.x || object.y > this.y + this.height || object.y < this.y) {
       return false;
