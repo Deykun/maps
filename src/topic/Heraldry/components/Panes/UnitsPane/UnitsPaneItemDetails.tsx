@@ -39,7 +39,7 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
 
   return (
     <li className={clsx('flex flex-col gap-2 items-center', { [className || '']: className })}>
-      <span className="relative size-full flex-shrink-0">
+      <span className="relative block size-full aspect-square flex-shrink-0">
         <img
           src={imagesList?.[0].path}
           srcSet={getImageSrcSet(imagesList)}
