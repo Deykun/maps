@@ -129,6 +129,9 @@ export const toggleAsCustomFilterInclude = (unitTitle: string) => {
 export const updateCustomFilterResultBasedOnData = (data: AdministrativeUnitIndex[]) => {
   const state = useFiltersDevelopmentStore.getState();
 
+  // It only shows units with descriptions
+  // const filteredUnitsIds = data.filter(({ description }) => (description.length || 0) > 70).map(({ id }) => id);
+
   const filteredUnitsIds = data.filter(({ title, description }) => getHasMarker(
     {
       title,

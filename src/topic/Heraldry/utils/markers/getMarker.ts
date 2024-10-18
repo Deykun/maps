@@ -24,7 +24,7 @@ export const getHasMarker = (
     return false;
   }
 
-  const lowerCaseText = text.toLowerCase();
+  const lowerCaseText = ` ${text.toLowerCase()} `;
 
   const hasPhrase = phrases.some((phrase) => {
     const isEnding = phrase.startsWith('-');
@@ -43,7 +43,7 @@ export const getHasMarker = (
       `\n${phrase.toLowerCase()}`
     ];
 
-    const phrasesToCheck = words.flatMap((word) => [`${word} `, `${word},`, `${word}.`, `${word})`, `${word}-`, `${word}”`, `${word}“`, `${word}"`, `${word};`, `${word}:`, `${word}?`]);
+    const phrasesToCheck = words.flatMap((word) => [`${word} `, `${word},`, `${word}.`, `${word})`, `${word}-`, `${word}”`, `${word}“`, `${word}"`, `${word};`, `${word}:`, `${word}?`, `${word}[`]);
     
     // " bear" -> [" bear", " bear ", " bear,", " bear."]
     return phrasesToCheck.some((phraseToCheck) => lowerCaseText.includes(phraseToCheck));

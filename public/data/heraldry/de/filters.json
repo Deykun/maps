@@ -25,7 +25,11 @@
        "doppelkopfadler",
        "ziegenadler",
        "seeadler",
-       "seeadlers"
+       "seeadlers",
+       "adlerköpfen",
+       "äskulapstab",
+       "jungfrauenadler",
+       "johannesadler"
       ]
     },
     {
@@ -123,7 +127,11 @@
       "phrases": [
        "gans",
        "gänse",
-       "gänsen"
+       "gänsen",
+       "gänserumpf",
+       "gänsekielen",
+       "gänsefuß",
+       "gänserumpf"
       ]
     },
     {
@@ -146,7 +154,15 @@
        "schwanenrumpfes",
        "schwanes",
        "schwanewede",
-       "schwann"
+       "schwann",
+       "schwanenhals",
+       "schwanebeck"
+      ]
+    },
+    {
+      "name": "phoenix",
+      "phrases": [
+       "phönix"
       ]
     },
     {
@@ -157,7 +173,8 @@
        "hahnenfedern",
        "hahnenkopf",
        "hahns",
-       "hänen"
+       "hänen",
+       "henne"
       ]
     },
     {
@@ -172,7 +189,8 @@
        "greifenrumpf",
        "greifenstein",
        "greifs",
-       "greifswald"
+       "greifswald",
+       "greifenfang"
       ]
     },
     {
@@ -206,7 +224,8 @@
        "wildschweinen",
        "wildschweins",
        "keilerkopf",
-       "keilerhaupt"
+       "keilerhaupt",
+       "schwein"
       ]
     },
     {
@@ -242,7 +261,14 @@
        "rehbock",
        "rehbockkopf",
        "rehbocks",
-       "zwölfender-kronenhirsches"
+       "zwölfender-kronenhirsches",
+       "kitz",
+       "damhirschschaufel",
+       "geweih",
+       "geweihs",
+       "geweihstange",
+       "geweihstangen",
+       "reh"
       ]
     },
     {
@@ -273,6 +299,7 @@
       "phrases": [
        "greifenlöwe",
        "löwe",
+       "lowe",
        "löwen",
        "löwenhagen",
        "löwenkopf",
@@ -319,7 +346,10 @@
        "wisenten",
        "wisentgehörne",
        "wisentkopf",
-       "wisents"
+       "wisents",
+       "rinderkopf",
+       "rind",
+       "rinderhörner"
       ]
     },
     {
@@ -328,6 +358,25 @@
        "fischotter",
        "fischottern",
        "fischotters"
+      ]
+    },
+    {
+      "name": "peacock",
+      "phrases": [
+       "pfau",
+       "pfauenaugen",
+       "pfauenfederbusch",
+       "pfauenfedern",
+       "pfauenfederrosetten",
+       "pfauenspiegeln",
+       "pfauenstoß",
+       "pfauenwedel"
+      ]
+    },
+    {
+      "name": "grouse",
+      "phrases": [
+       "auerhahn"
       ]
     },
     {
@@ -343,7 +392,19 @@
        "gabelweihe",
        "flug",
        "flügel",
-       "flügeln"
+       "flügeln",
+       "vögel",
+       "vogel",
+       "vögeln",
+       "beizvögel",
+       "fink",
+       "finken",
+       "meise",
+       "auerhahn",
+       "kuckuck",
+       "bussard",
+       "bussardkopf",
+       "buntspecht"
       ]
     },
     {
@@ -392,7 +453,9 @@
        "welses",
        "zander",
        "zandern",
-       "zanders"
+       "zanders",
+       "sprotten",
+       "forelle"
       ],
       "include": [
        "Uhyst (Spree)",
@@ -404,7 +467,9 @@
     {
       "name": "weasel",
       "phrases": [
-        "marder"
+        "marder",
+        "wiesel",
+        "wieseln"
       ]
     },
     {
@@ -453,7 +518,10 @@
        "hunde",
        "hunden",
        "hundes",
-       "windhund"
+       "windhund",
+       "rüden",
+       "rüdenrumpf",
+       "rüdenköpfe"
       ]
     },
     {
@@ -462,6 +530,13 @@
        "krebs",
        "krebse",
        "krebses"
+      ]
+    },
+    {
+      "name": "elephant",
+      "phrases": [
+       "elefant",
+       "elefantenkopf"
       ]
     },
     {
@@ -504,12 +579,15 @@
        "ziegenbock",
        "ziegenkopf",
        "steinbock",
+       "Steinbockrumpf",
        "steinbocksrumpf",
        "steinbockshorn",
        "steinbockkopf",
        "steinbockhörnern",
        "steinbockshörner",
-       "steinbockshorn"
+       "steinbockshorn",
+       "gamsbock",
+       "gemsenkopf"
       ]
     },
     {
@@ -530,7 +608,8 @@
        "widderköpfen",
        "widderrumpf",
        "widders",
-       "osterlamm"
+       "osterlamm",
+       "salvatorlamm"
       ]
     },
     {
@@ -541,7 +620,8 @@
        "wölfen",
        "wolfskopf",
        "wolfsrumpf",
-       "wolves"
+       "wolves",
+       "wolfskopf"
       ]
     },
     {
@@ -588,6 +668,7 @@
       "name": "beaver",
       "phrases": [
        "biber",
+       "bieber",
        "biberkopf",
        "bibern",
        "bibers"
@@ -599,6 +680,18 @@
        "leopard",
        "leoparden",
        "leopardierten"
+      ]
+    },
+    {
+      "name": "cat",
+      "phrases": [
+       "katze"
+      ]
+    },
+    {
+      "name": "turtle",
+      "phrases": [
+       "schildkröte"
       ]
     },
     {
