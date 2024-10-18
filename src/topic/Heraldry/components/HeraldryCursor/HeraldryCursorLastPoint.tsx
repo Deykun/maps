@@ -55,6 +55,7 @@ const HeraldryCursorLastPoint = () => {
         {isFiltersDevelopmentModeActive && lastClick.hovered.length === 1 && <DevelopmentActions
           className="heraldry-cursor-last-point-development"
           unit={lastClick.hovered[0]}
+          shouldShowDescription
         />}
       </Pane>
     </div>

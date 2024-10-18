@@ -26,7 +26,7 @@ const UnitsPaneItemDetailsFromDevelopmentMode = ({ id, country }: Props) => {
     }
 
     return undefined;
-  }, [id, country])
+  }, [id, country]);
 
   if (!isFiltersDevelopmentModeActive || !description) {
     return null;
