@@ -2,5 +2,25 @@
   "liveServer.settings.root": "/dist",
   "liveServer.settings.mount": [
       ["/maps", "./dist"]
-  ]
+  ],
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#fee4e9",
+    "activityBar.background": "#fee4e9",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#29b807",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#15202b99",
+    "sash.hoverBorder": "#fee4e9",
+    "statusBar.background": "#fdb2c0",
+    "statusBar.foreground": "#15202b",
+    "statusBarItem.hoverBackground": "#fc8097",
+    "statusBarItem.remoteBackground": "#fdb2c0",
+    "statusBarItem.remoteForeground": "#15202b",
+    "titleBar.activeBackground": "#fdb2c0",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveBackground": "#fdb2c099",
+    "titleBar.inactiveForeground": "#15202b99"
+  },
+  "peacock.color": "#fdb2c0"
 }
