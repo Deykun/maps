@@ -36,7 +36,6 @@ export default function useKeepPositionAfterResize(size?: { width: number, heigh
           })
 
           scrollableWrapperEl?.scroll({
-            // behavior: 'smooth',
             left: newLeft,
             top: newTop,
           });
