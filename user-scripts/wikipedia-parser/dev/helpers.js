@@ -26,3 +26,11 @@ export const copyMessage = (text) => {
   document.execCommand('copy');
   document.body.removeChild(selBox);
 };
+
+export const openInNewTab = (url) => {
+  Object.assign(document.createElement('a'), {
+      target: '_blank',
+      rel: 'noreferrer noopener',
+      href: url,
+  }).click();
+}

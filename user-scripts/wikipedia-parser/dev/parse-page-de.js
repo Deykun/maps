@@ -14,6 +14,7 @@ const getSafeText = (text) => {
 
 const getUnitTypesFromTitle = (text) => {
   const lowercaseText = ` ${text.toLowerCase()} `;
+  const lowercaseTextWords = lowercaseText.trim().split(' ');
 
   const isFormer = getIsFormer(lowercaseText);
 
@@ -21,7 +22,8 @@ const getUnitTypesFromTitle = (text) => {
   const isCity = ['stadt\n', 'stadt ', 'städte ', 'stadtteile', 'stadtwappen', 'städtewappen'].some((phrase) => lowercaseText.includes(phrase));
   // bezirke - distric
   const isBezirke = ['bezirke', 'ortsbezirk'].some((phrase) => lowercaseText.includes(phrase));
-  const isLand = ['landeswappen'].some((phrase) => lowercaseText.includes(phrase));
+  const isLand = ['landeswappen'].some((phrase) => lowercaseText.includes(phrase)) || lowercaseTextWords.some((word) => word === 'land');
+  const isRegion = lowercaseTextWords.some((word) => word === 'region');
   const isGemeinde = [' gem.', 'gemeindewappen', 'gemeinde', 'gemeinden', 'gemeinschaften', 'marktgemeinde'].some((phrase) => lowercaseText.includes(phrase));
   const isMarkt = ['markt', 'märkte'].some((phrase) => lowercaseText.includes(phrase));
   const isMarktgemeinde = ['marktgemeinde', 'märkte'].some((phrase) => lowercaseText.includes(phrase));
@@ -33,6 +35,7 @@ const getUnitTypesFromTitle = (text) => {
     isKreis ? 'kreis' : '',
     isBezirke ? 'bezirke' : '',
     isLand ? 'land' : '',
+    isRegion ? 'region' : '',
     isGemeinde ? 'gemeinde' : '',
     isMarkt ? 'markt' : '',
     isMarktgemeinde ? 'marktgemeinde' : '',
@@ -44,11 +47,13 @@ const getUnitTypesFromTitle = (text) => {
 }
 
 appendCSS(`
-  [data-wp-title] {
+  [data-wp-title],
+  [data-wp-title-sm] {
     position: relative;
   }
 
-  [data-wp-title]::after {
+  [data-wp-title]::after,
+  [data-wp-title-sm]::after {
     content: attr(data-wp-title);
     position: absolute;
     top: 0%;
@@ -56,6 +61,7 @@ appendCSS(`
     background-color: #e0efff9c;
     font-size: 13px;
     padding: 0 3px;
+    border-radius: 30px;
     letter-spacing: 0.05em;
     color: #0c54a2;
     border: 1px solid #64788e40;
@@ -69,7 +75,15 @@ appendCSS(`
     white-space: nowrap;
   }
 
+  [data-wp-title-sm]::after {
+    max-width: 14px;
+    content: attr(data-wp-title-sm);
+    font-size: 10px;
+    padding: 0 2px;
+  }
+
   [data-wp-title]:hover::after,
+  [data-wp-title-sm]:hover::after,
   [data-wp-title-open]::after {
     max-width: 300px;
   }
@@ -135,6 +149,52 @@ export const markIndexedCategoriesPagesDE = () => {
   }
 }
 
+export const parseGalleryElement = (imageEl, { isFormerGroup, groupTypes, sectionTitle, source, pageTitle  }) => {
+  const isThatSpecificFormer = Boolean(imageEl.querySelector('.gallerytext')?.innerText?.match(/\d{4}\)/));
+
+  const thumbnailUrl = imageEl.querySelector('.thumb img').src;
+  const title = getSafeText(imageEl.querySelector('.gallerytext')?.innerText);
+  const locationName = getSafeText(imageEl.querySelector('.gallerytext a')?.innerText);
+  const locationUrl = imageEl.querySelector('.gallerytext a')?.href || '';
+  const descriptionNoteId = imageEl.querySelector('.gallerytext a[href^="#"]')?.getAttribute('href')?.replace('#', '');
+  const description = descriptionNoteId ? `${(document.getElementById(descriptionNoteId)?.innerText || '').replace(/\n|\r/g, '')} ${title}` : title;
+  const detailsUrlEl = imageEl.querySelector('a[href*="#Wappen"], a[href*="/Wappen"]')
+    || document.getElementById(descriptionNoteId)?.querySelector('a[href*="#Wappen"], a[href*="/Wappen"]');
+
+  if (detailsUrlEl) {
+    detailsUrlEl.setAttribute('data-wp-title-sm', `🔖 more`);
+
+    // console.log(detailsUrlEl.href);
+    // openInNewTab(detailsUrlEl.href);
+  }
+
+  const itemTypes = getUnitTypesFromTitle(title);
+
+  let types = itemTypes.length > 0 ? itemTypes : groupTypes;
+
+  const itemIcon = (isFormerGroup || isThatSpecificFormer) ? '🍂' : '🍃';
+
+  types = types.map((v) => {
+    return (isFormerGroup || isThatSpecificFormer) && !v.startsWith('former') ? `former${upperCaseFirstLetter(v)}` : v;
+  });
+
+  if (types.length > 0) {
+    imageEl.setAttribute('data-wp-title', `${itemIcon} ${types.join(', ')}`);
+
+    const coatOfArms = {
+      locationName,
+      locationUrl,
+      thumbnailUrl,
+      description,
+      type: types,
+      source,
+      sourceTitle: [pageTitle, sectionTitle].filter(Boolean).join(' | '),
+    };
+
+    return coatOfArms;
+  }
+}
+
 export const savePageCoatOfArmsIfPossibleDE = () => {
   const source = location.href.split('#')[0];
   const pageTitle = document.querySelector('.mw-page-title-main')?.innerText || '';
@@ -167,8 +227,8 @@ export const savePageCoatOfArmsIfPossibleDE = () => {
 
     const groupIcon = isFormerGroup ? '🍂' : '🍃';
 
-    if (groupTypes.length > 0 || sectionTitle.toLowerCase().includes('historische')) {
-
+    // Andere - Other
+    if (groupTypes.length > 0 || sectionTitle.toLowerCase().includes('historische') || sectionTitle.toLowerCase().includes('andere')) {
       headersEl.setAttribute('data-wp-title', `${groupIcon} ${groupTypes.join(', ')}`);
 
       const nextGalleryEl = getElementAfterHeader(headersEl.nextElementSibling, 'gallery');
@@ -178,38 +238,9 @@ export const savePageCoatOfArmsIfPossibleDE = () => {
         const imagesEl = nextGalleryEl ? Array.from(nextGalleryEl.querySelectorAll('.gallerybox')) : [];
 
         imagesEl.forEach((imageEl) => {
-          const isThatSpecificFormer = Boolean(imageEl.querySelector('.gallerytext')?.innerText?.match(/\d{4}\)/));
+          const coatOfArms = parseGalleryElement(imageEl, { isFormerGroup, groupTypes, sectionTitle, source, pageTitle  });
 
-          const thumbnailUrl = imageEl.querySelector('.thumb img').src;
-          const title = getSafeText(imageEl.querySelector('.gallerytext')?.innerText);
-          const locationName = getSafeText(imageEl.querySelector('.gallerytext a')?.innerText);
-          const locationUrl = imageEl.querySelector('.gallerytext a')?.href || '';
-          const descriptionNoteId = imageEl.querySelector('.gallerytext a[href^="#"]')?.getAttribute('href')?.replace('#', '');
-          const description = descriptionNoteId ? `${(document.getElementById(descriptionNoteId)?.innerText || '').replace(/\n|\r/g, '')} ${title}` : title;
-
-          const itemTypes = getUnitTypesFromTitle(title);
-
-          let types = itemTypes.length > 0 ? itemTypes : groupTypes;
-
-          const itemIcon = (isFormerGroup || isThatSpecificFormer) ? '🍂' : '🍃';
-
-          types = types.map((v) => {
-            return (isFormerGroup || isThatSpecificFormer) && !v.startsWith('former') ? `former${upperCaseFirstLetter(v)}` : v;
-          });
-
-          if (types.length > 0) {
-            imageEl.setAttribute('data-wp-title', `${itemIcon} ${types.join(', ')}`);
-
-            const coatOfArms = {
-              locationName,
-              locationUrl,
-              thumbnailUrl,
-              description,
-              type: types,
-              source,
-              sourceTitle: [pageTitle, sectionTitle].filter(Boolean).join(' | '),
-            };
-
+          if (coatOfArms) {
             coatOfArmsList.push(coatOfArms);
           }
         });
@@ -293,8 +324,34 @@ export const savePageCoatOfArmsIfPossibleDE = () => {
       }
     }
 
-    window.parsedDE[source] = coatOfArmsList;
+    if (window.parsedDE[source]) {
+      window.parsedDE[source] = [...window.parsedDE[source], coatOfArmsList];
+    } else {
+      window.parsedDE[source] = coatOfArmsList;
+    }
+
 
     saveSource(source, coatOfArmsList);
   })
+
+  // It contains a lot coat of arms, so is a good idea to check all coat of arms individualy
+  console.log(coatOfArmsList.length);
+
+  if (pageTitle.includes('Liste der ') || coatOfArmsList.length > 20) {
+    console.log('WOULD PARSE');
+    console.log('SOurce', source);
+    console.log('coatOfArmsList', coatOfArmsList);
+
+    const isFormerGroup = getIsFormer(pageTitle);
+    const notParsedImagesEl = Array.from(document.querySelectorAll('.gallerybox:not([data-wp-title]')) || [];
+
+    notParsedImagesEl.forEach((imageEl) => {
+      const coatOfArms = parseGalleryElement(imageEl, { isFormerGroup, groupTypes: [], sectionTitle: '', source, pageTitle });
+
+      if (coatOfArms) {
+        console.log('coatOfArms', coatOfArms); 
+        coatOfArmsList.push(coatOfArms);
+      }
+    });
+  }
 };
