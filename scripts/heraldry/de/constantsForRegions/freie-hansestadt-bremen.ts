@@ -8,6 +8,7 @@ export const urls: {
   unitBySource: {},
 };
 
+
 urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Bremen'] = [
   {
       locationName: '',
@@ -41,5 +42,13 @@ urls.unitBySource['https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Bremen'] = 
       type: ['city','land'],
       source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Bremen',
       sourceTitle: 'Liste der Wappen in Bremen | Landeswappen',
+    }, {
+      locationName: 'Vegesack',
+      locationUrl: 'https://de.wikipedia.org/wiki/Vegesack',
+      thumbnailUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/DEU_Vegesack_COA.svg/98px-DEU_Vegesack_COA.svg.png',
+      description: 'Ehemalige Stadt Vegesack, 1880 bis 1939',
+      type: ['formerCity'],
+      source: 'https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Bremen',
+      sourceTitle: 'Liste der Wappen in Bremen',
     }
 ]; 

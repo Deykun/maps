@@ -26,15 +26,6 @@ export default function useKeepPositionAfterResize(size?: { width: number, heigh
           const newLeft = centerPercentageX * (size?.width || 0) - (viewPortWidth / 2);
           const newTop = centerPercentageY * (size?.height || 0) - (viewPortHeight / 2);
 
-          console.log({
-            centerPercentageX,
-            centerPercentageY,
-            viewPortWidth,
-            viewPortHeight,
-            newLeft,
-            newTop,
-          })
-
           scrollableWrapperEl?.scroll({
             left: newLeft,
             top: newTop,
