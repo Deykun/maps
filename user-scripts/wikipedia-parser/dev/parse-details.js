@@ -20,7 +20,7 @@ const grabTextFromNextElements = (elToCheck, maxElementsToCheck = 5) => {
   return text;
 }
 
-const saveDetailsIfPossible = () => {
+const saveDetailsIfPossible = async () => {
   const hash = location.hash;
 
   if (hash) {
@@ -35,7 +35,7 @@ const saveDetailsIfPossible = () => {
       if (text) {
         const textToSave = text.replace(/(\r\n|\n|\r)/gm, ' ').replace( /\s\s+/g, ' ').trim().substring(0, 1200);
 
-        saveDetails(location.href, textToSave);
+        await saveDetails(location.href, textToSave);
       }
     }
   } else {
@@ -44,12 +44,14 @@ const saveDetailsIfPossible = () => {
     if (text) {
       const textToSave = getSafeText(text.replace(/(\r\n|\n|\r)/gm, ' ').replace( /\s\s+/g, ' ').trim()).substring(0, 1200);
   
-      console.log(textToSave);
-      saveDetails(location.href, textToSave);
+
+      await saveDetails(location.href, textToSave);
     }
   }
 
   if (location.href.includes('autoclose')) {
-    window.close();
+    setTimeout(() => {
+      window.close();
+    }, 500);
   }
 };

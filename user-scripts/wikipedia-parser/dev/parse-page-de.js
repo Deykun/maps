@@ -13,8 +13,8 @@ const getUnitTypesFromTitle = (text) => {
   // stadt - city
   const isCity = ['stadt\n', 'stadt ', 'städte ', 'stadtteile', 'stadtwappen', 'städtewappen'].some((phrase) => lowercaseText.includes(phrase));
   // bezirke - distric
-  const isBezirke = ['bezirke', 'ortsbezirk'].some((phrase) => lowercaseText.includes(phrase));
-  const isLand = ['landeswappen'].some((phrase) => lowercaseText.includes(phrase)) || lowercaseTextWords.some((word) => ['land', 'bundesland'].includes(word));
+  const isBezirke = ['bezirke', 'ortsbezirk', 'bezirk'].some((phrase) => lowercaseText.includes(phrase));
+  const isLand = ['landeswappen', 'landschaftsverbände'].some((phrase) => lowercaseText.includes(phrase)) || lowercaseTextWords.some((word) => ['land', 'bundesland'].includes(word));
   const isRegion = lowercaseTextWords.some((word) => word === 'region');
   const isGemeinde = [' gem.', 'gemeindewappen', 'gemeinde', 'gemeinden', 'gemeinschaften', 'marktgemeinde'].some((phrase) => lowercaseText.includes(phrase));
   const isMarkt = ['markt', 'märkte'].some((phrase) => lowercaseText.includes(phrase));
@@ -144,6 +144,8 @@ export const markIndexedCategoriesPagesDE = () => {
   }
 }
 
+const detailsSelectors = 'a[href*="#Wappen"], a[href*="/Wappen"], a[href*="/Landeswappen"], a[href*="#Hoheitszeichen"], a[href*="#Hoheitssymbole"]';
+
 export const parseGalleryElement = (imageEl, { isFormerGroup, groupTypes, sectionTitle, source, pageTitle  }) => {
   const isThatSpecificFormer = Boolean(imageEl.querySelector('.gallerytext')?.innerText?.match(/\d{4}\)/));
 
@@ -153,25 +155,7 @@ export const parseGalleryElement = (imageEl, { isFormerGroup, groupTypes, sectio
   const locationUrl = imageEl.querySelector('.gallerytext a')?.href || '';
   const descriptionNoteId = imageEl.querySelector('.gallerytext a[href^="#"]')?.getAttribute('href')?.replace('#', '');
   const description = descriptionNoteId ? `${(document.getElementById(descriptionNoteId)?.innerText || '').replace(/\n|\r/g, '')} |||| ${title}` : title;
-  const detailsUrlEl = imageEl.querySelector('a[href*="#Wappen"], a[href*="/Wappen"]')
-    || document.getElementById(descriptionNoteId)?.querySelector('a[href*="#Wappen"], a[href*="/Wappen"]');
-
-
-  let detailsUrl = '';
-
-  if (detailsUrlEl) {
-    if (!detailsUrlEl.hasAttribute('data-wp-title-sm')) {
-      detailsUrlEl.setAttribute('data-wp-title-sm', `🔖 more`);
-
-      const [root, hash] = detailsUrlEl.href.split('#');
-  
-      detailsUrl = `${root}?only=details&autoclose=1${hash ? `#${hash}` : ''}`;
-      detailsUrlEl.setAttribute('href', detailsUrl.replace('&autoclose=1', ''));
-
-      console.log(detailsUrl);
-      openInNewTab(detailsUrl);
-    }
-  }
+  const detailsUrlEl = imageEl.querySelector(detailsSelectors) || document.getElementById(descriptionNoteId)?.querySelector(detailsSelectors);
 
   const itemTypes = getUnitTypesFromTitle(title);
 
@@ -184,6 +168,21 @@ export const parseGalleryElement = (imageEl, { isFormerGroup, groupTypes, sectio
   });
 
   if (types.length > 0) {
+    let detailsUrl = '';
+
+    if (detailsUrlEl) {
+      if (!detailsUrlEl.hasAttribute('data-wp-title-sm')) {
+        detailsUrlEl.setAttribute('data-wp-title-sm', `🔖 more`);
+  
+        const [root, hash] = detailsUrlEl.href.split('#');
+    
+        detailsUrl = `${root}?only=details&autoclose=1${hash ? `#${hash}` : ''}`;
+        detailsUrlEl.setAttribute('href', detailsUrl.replace('&autoclose=1', ''));
+  
+        openInNewTab(detailsUrl);
+      }
+    }
+
     imageEl.setAttribute('data-wp-title', `${itemIcon} ${types.join(', ')}`);
 
     const coatOfArms = {
@@ -245,7 +244,7 @@ export const parseTableElement = (nextTableEl, { isFormerGroup, groupTypes, sect
 
   const groupIcon = isTableFormer ? '🍂' : '🍃';
 
-  nextTableEl.setAttribute('data-wp-title', `${groupIcon} ${tableTypes.join(', ')}`);
+  nextTableEl.setAttribute('data-wp-title', `${groupIcon} ${(tableTypes || []).join(', ')}`);
 
   const hasEnoughData = typeof indexCoatOfArms === 'number';
   if (hasEnoughData) {
@@ -263,12 +262,15 @@ export const parseTableElement = (nextTableEl, { isFormerGroup, groupTypes, sect
 
       const itemTypes = getUnitTypesFromTitle(description);
 
-      let types = itemTypes.length > 0 ? itemTypes : tableTypes;
+      let types = (itemTypes.length > 0 ? itemTypes : (tableTypes || groupTypes)) || [];
 
-      const itemIcon = (isFormerGroup || isTableFormer || isThatSpecificFormer) ? '🍂' : '🍃';
+      const titleToTest = `${title} `.replaceAll('-', '-').replaceAll('–', '-');
+      const isTitleFormer = Boolean(titleToTest.match(/-\d{4} /) || titleToTest.match(/-\d{4}\)/) || titleToTest.match(/bis \d{4}/));
+
+      const itemIcon = (isFormerGroup || isTableFormer || isThatSpecificFormer || isTitleFormer) ? '🍂' : '🍃';
 
       types = types.map((v) => {
-        return (isFormerGroup || isTableFormer || isThatSpecificFormer) && !v.startsWith('former') ? `former${upperCaseFirstLetter(v)}` : v;
+        return (isFormerGroup || isTableFormer || isThatSpecificFormer || isTitleFormer) && !v.startsWith('former') ? `former${upperCaseFirstLetter(v)}` : v;
       });
 
       if (types.length > 0) {
