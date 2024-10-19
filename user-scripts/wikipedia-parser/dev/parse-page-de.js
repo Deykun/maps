@@ -22,11 +22,13 @@ const getUnitTypesFromTitle = (text) => {
   const isCity = ['stadt\n', 'stadt ', 'städte ', 'stadtteile', 'stadtwappen', 'städtewappen'].some((phrase) => lowercaseText.includes(phrase));
   // bezirke - distric
   const isBezirke = ['bezirke', 'ortsbezirk'].some((phrase) => lowercaseText.includes(phrase));
-  const isLand = ['landeswappen'].some((phrase) => lowercaseText.includes(phrase)) || lowercaseTextWords.some((word) => word === 'land');
+  const isLand = ['landeswappen'].some((phrase) => lowercaseText.includes(phrase)) || lowercaseTextWords.some((word) => ['land', 'bundesland'].includes(word));
   const isRegion = lowercaseTextWords.some((word) => word === 'region');
   const isGemeinde = [' gem.', 'gemeindewappen', 'gemeinde', 'gemeinden', 'gemeinschaften', 'marktgemeinde'].some((phrase) => lowercaseText.includes(phrase));
   const isMarkt = ['markt', 'märkte'].some((phrase) => lowercaseText.includes(phrase));
   const isMarktgemeinde = ['marktgemeinde', 'märkte'].some((phrase) => lowercaseText.includes(phrase));
+  const isAmter = lowercaseTextWords.some((word) => ['ämter', 'amt'].includes(word));
+  const isOrtsteil = lowercaseTextWords.includes('ortsteil');
 
   const isKreis = !isCity && !isBezirke && !isLand && !isGemeinde && !isMarkt && !isMarktgemeinde && ['kreis', 'landkreis'].some((phrase) => lowercaseText.includes(phrase));
 
@@ -39,6 +41,8 @@ const getUnitTypesFromTitle = (text) => {
     isGemeinde ? 'gemeinde' : '',
     isMarkt ? 'markt' : '',
     isMarktgemeinde ? 'marktgemeinde' : '',
+    isAmter ? 'amt' : '',
+    isOrtsteil ? 'ortsteil' : '',
   ].filter(Boolean).map((v) => {
     return isFormer && v !== 'kreis' ? `former${upperCaseFirstLetter(v)}` : v;
   });
@@ -108,10 +112,9 @@ const getHeaderBefore = (elToCheck, classToFind) => {
   return undefined;
 }
 
-const getElementAfterHeader = (elToCheck, classToFind) => {
+const getElementAfterHeader = (elToCheck, classToFind, maxElementsToCheck = 7) => {
   let el = elToCheck;
 
-  const maxElementsToCheck = 7;
   for (let i = 0; i < maxElementsToCheck; i++) {
     if (!el) {
       return undefined;
@@ -195,6 +198,97 @@ export const parseGalleryElement = (imageEl, { isFormerGroup, groupTypes, sectio
   }
 }
 
+export const parseTableElement = (nextTableEl, { isFormerGroup, groupTypes, sectionTitle, source, pageTitle }) => {
+  const coatOfArmsList = [];
+  // https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Celle - table example
+  const {
+    tableTypes: tableTypesFromTable,
+    indexCoatOfArms,
+    indexLocation,
+    indexDescription,
+  } = Array.from(nextTableEl.querySelectorAll('tr:first-child th, tr:first-child td')).reduce((stack, el, index) => {
+    const text = (el.innerText || '').toLowerCase();
+    const isCoatOfArms = ['wappen'].some((v) => text.includes(v));
+    const isDescription = ['kommentare', 'beschreibung'].some((v) => text.includes(v));
+    const isLocation = !isCoatOfArms && !isDescription && getUnitTypesFromTitle(text).length > 0;
+
+    if (isLocation) {
+      stack.indexLocation = index;
+      console.log('text', text);
+      stack.tableTypes = getUnitTypesFromTitle(text);
+    }
+
+    if (isDescription) {
+      stack.indexDescription = index;
+    }
+
+    if (isCoatOfArms) {
+      stack.indexCoatOfArms = index;
+    }
+
+    return stack;
+  }, {
+    tableTypes: [],
+    indexLocation: 0,
+    indexCoatOfArms: 1,
+    indexDescription: 2,
+  });
+
+  const isTableFormer = isFormerGroup || tableTypesFromTable.length > 0 && tableTypesFromTable[0].startsWith('former');
+
+  const tableTypes = tableTypesFromTable.length > 0 ? tableTypesFromTable.map((v) => {
+    return isTableFormer && !v.startsWith('former') ? `former${upperCaseFirstLetter(v)}` : v;
+  }) : groupTypes;
+
+  const groupIcon = isTableFormer ? '🍂' : '🍃';
+
+  nextTableEl.setAttribute('data-wp-title', `${groupIcon} ${tableTypes.join(', ')}`);
+
+  const hasEnoughData = typeof indexCoatOfArms === 'number';
+  if (hasEnoughData) {
+    const [headEl, ...rowsEl] = Array.from(nextTableEl.querySelectorAll('tr'));
+
+    rowsEl.forEach(rowEl => {
+      const columnEls = Array.from(rowEl.querySelectorAll('td, th'));
+      const isThatSpecificFormer = getIsFormer(rowEl.innerText);
+
+      const thumbnailUrl = columnEls[indexCoatOfArms].querySelector('img')?.src;
+      const title = getSafeText(columnEls[indexLocation]?.innerText);
+      const locationName = getSafeText(columnEls[indexLocation]?.querySelector('a')?.innerText);
+      const locationUrl = columnEls[indexLocation]?.querySelector('a')?.href || '';
+      const description = `${getSafeText(columnEls[indexDescription]?.innerText)} ${title}`;
+
+      const itemTypes = getUnitTypesFromTitle(description);
+
+      let types = itemTypes.length > 0 ? itemTypes : tableTypes;
+
+      const itemIcon = (isFormerGroup || isTableFormer || isThatSpecificFormer) ? '🍂' : '🍃';
+
+      types = types.map((v) => {
+        return (isFormerGroup || isTableFormer || isThatSpecificFormer) && !v.startsWith('former') ? `former${upperCaseFirstLetter(v)}` : v;
+      });
+
+      if (types.length > 0) {
+        rowEl.setAttribute('data-wp-title', `${itemIcon} ${types.join(', ')}`);
+
+        const coatOfArms = {
+          locationName,
+          locationUrl,
+          thumbnailUrl,
+          description,
+          type: types,
+          source,
+          sourceTitle: [pageTitle, sectionTitle].filter(Boolean).join(' | '),
+        };
+
+        coatOfArmsList.push(coatOfArms);
+      }
+    })
+  }
+
+  return coatOfArmsList;
+}
+
 export const savePageCoatOfArmsIfPossibleDE = () => {
   const source = location.href.split('#')[0];
   const pageTitle = document.querySelector('.mw-page-title-main')?.innerText || '';
@@ -228,7 +322,7 @@ export const savePageCoatOfArmsIfPossibleDE = () => {
     const groupIcon = isFormerGroup ? '🍂' : '🍃';
 
     // Andere - Other
-    if (groupTypes.length > 0 || sectionTitle.toLowerCase().includes('historische') || sectionTitle.toLowerCase().includes('andere')) {
+    if (groupTypes.length > 0 || ['historische', 'andere', 'wappen'].some((phrase) => sectionTitle.toLowerCase().includes(phrase))) {
       headersEl.setAttribute('data-wp-title', `${groupIcon} ${groupTypes.join(', ')}`);
 
       const nextGalleryEl = getElementAfterHeader(headersEl.nextElementSibling, 'gallery');
@@ -244,82 +338,28 @@ export const savePageCoatOfArmsIfPossibleDE = () => {
             coatOfArmsList.push(coatOfArms);
           }
         });
+
+        const nextNextGalleryEl = getElementAfterHeader(nextGalleryEl.nextElementSibling, 'gallery', 1);
+
+        // Next element is a gallery too
+        if (nextNextGalleryEl) {
+          const imagesEl = nextNextGalleryEl ? Array.from(nextNextGalleryEl.querySelectorAll('.gallerybox')) : [];
+
+          imagesEl.forEach((imageEl) => {
+            const coatOfArms = parseGalleryElement(imageEl, { isFormerGroup, groupTypes, sectionTitle, source, pageTitle  });
+  
+            if (coatOfArms) {
+              coatOfArmsList.push(coatOfArms);
+            }
+          });
+        }
       }
 
       if (nextTableEl) {
-        // https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Celle - table example
-        const {
-          groupTypes,
-          indexCoatOfArms,
-          indexLocation,
-          indexDescription,
-        } = Array.from(nextTableEl.querySelectorAll('tr:first-child th, tr:first-child td')).reduce((stack, el, index) => {
-          const text = (el.innerText || '').toLowerCase();
-          const isCoatOfArms = ['wappen'].some((v) => text.includes(v));
-          const isDescription = ['kommentare'].some((v) => text.includes(v));
-          const isLocation = !isCoatOfArms && !isDescription;
+        const coatOfArmsFromTable = parseTableElement(nextTableEl, { sectionTitle, source, pageTitle  });
 
-          if (isLocation) {
-            stack.indexLocation = index;
-            stack.groupTypes = getUnitTypesFromTitle(text);
-          }
-
-          if (isDescription) {
-            stack.indexDescription = index;
-          }
-
-          if (isCoatOfArms) {
-            stack.indexCoatOfArms = index;
-          }
-
-          return stack;
-        }, {
-          groupTypes: [],
-          indexLocation: 0,
-          indexCoatOfArms: 1,
-          indexDescription: 2,
-        });
-
-        const hasEnoughData = typeof indexCoatOfArms === 'number';
-        if (hasEnoughData) {
-          const [headEl, ...rowsEl] = Array.from(nextTableEl.querySelectorAll('tr'));
-
-          rowsEl.forEach(rowEl => {
-            const columnEls = Array.from(rowEl.querySelectorAll('td, th'));
-            const isThatSpecificFormer = getIsFormer(rowEl.innerText);
-
-            const thumbnailUrl = columnEls[indexCoatOfArms].querySelector('img')?.src;
-            const title = getSafeText(columnEls[indexLocation]?.innerText);
-            const locationName = getSafeText(columnEls[indexLocation]?.querySelector('a')?.innerText);
-            const locationUrl = columnEls[indexLocation]?.querySelector('a')?.href || '';
-            const description = `${getSafeText(columnEls[indexDescription]?.innerText)} ${title}`;
-  
-            const itemTypes = getUnitTypesFromTitle(description);
-  
-            let types = itemTypes.length > 0 ? itemTypes : groupTypes;
-  
-            const itemIcon = (isFormerGroup || isThatSpecificFormer) ? '🍂' : '🍃';
-  
-            types = types.map((v) => {
-              return (isFormerGroup || isThatSpecificFormer) && !v.startsWith('former') ? `former${upperCaseFirstLetter(v)}` : v;
-            });
- 
-            if (types.length > 0) {
-              rowEl.setAttribute('data-wp-title', `${itemIcon} ${types.join(', ')}`);
-  
-              const coatOfArms = {
-                locationName,
-                locationUrl,
-                thumbnailUrl,
-                description,
-                type: types,
-                source,
-                sourceTitle: [pageTitle, sectionTitle].filter(Boolean).join(' | '),
-              };
-  
-              coatOfArmsList.push(coatOfArms);
-            }
-          })
+        if (coatOfArmsFromTable.length > 0) {
+          coatOfArmsList = [...coatOfArmsList, ...coatOfArmsFromTable];
         }
       }
     }
@@ -330,18 +370,11 @@ export const savePageCoatOfArmsIfPossibleDE = () => {
       window.parsedDE[source] = coatOfArmsList;
     }
 
-
     saveSource(source, coatOfArmsList);
   })
 
-  // It contains a lot coat of arms, so is a good idea to check all coat of arms individualy
-  console.log(coatOfArmsList.length);
-
+  // It is a list page or contains a lot coat of arms, so is a good idea to check all coat of arms individualy
   if (pageTitle.includes('Liste der ') || coatOfArmsList.length > 20) {
-    console.log('WOULD PARSE');
-    console.log('SOurce', source);
-    console.log('coatOfArmsList', coatOfArmsList);
-
     const isFormerGroup = getIsFormer(pageTitle);
     const notParsedImagesEl = Array.from(document.querySelectorAll('.gallerybox:not([data-wp-title]')) || [];
 
@@ -349,9 +382,25 @@ export const savePageCoatOfArmsIfPossibleDE = () => {
       const coatOfArms = parseGalleryElement(imageEl, { isFormerGroup, groupTypes: [], sectionTitle: '', source, pageTitle });
 
       if (coatOfArms) {
-        console.log('coatOfArms', coatOfArms); 
         coatOfArmsList.push(coatOfArms);
       }
     });
+
+    const notParsedTablesEl = Array.from(document.querySelectorAll('.wikitable:not([data-wp-title]')) || [];
+
+    notParsedTablesEl.forEach((tableEl) => {
+      const coatOfArmsFromTable = parseTableElement(tableEl, { isFormerGroup, groupTypes: [], sectionTitle: '', source, pageTitle });
+
+      if (coatOfArmsFromTable.length > 0) {
+        coatOfArmsList = [...coatOfArmsList, ...coatOfArmsFromTable];
+      }
+    });
+
+    
+    if (window.parsedDE[source]) {
+      window.parsedDE[source] = [...window.parsedDE[source], coatOfArmsList];
+    } else {
+      window.parsedDE[source] = coatOfArmsList;
+    }
   }
 };
