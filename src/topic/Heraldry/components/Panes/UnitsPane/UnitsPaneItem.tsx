@@ -6,6 +6,8 @@ import {
   showUnitOnMap,
 } from '@/topic/Heraldry/stores/cursorStore';
 
+import { copyText } from '@/utils/text';
+
 import ButtonCircle from '@/components/UI/ButtonCircle';
 
 import IconMarker from '@/components/Icons/IconMarker';
@@ -24,7 +26,10 @@ type Props = {
 }
 
 const UnitsPaneItem = ( { className, unit, setPreviewUnit }: Props) => {
-  const { title, url, place, type } = unit;
+  const { title, url, place, imagesList, type } = unit;
+
+  
+  const imagePath = (unit.imagesList || []).find(({ width }) => width === '80w')?.path;
 
   const isFormerUnit = type.length > 0 && type[0].startsWith('former');
   
@@ -56,7 +61,9 @@ const UnitsPaneItem = ( { className, unit, setPreviewUnit }: Props) => {
               backgroundPositionX: `-${spriteOffsetX}px`,
               backgroundPositionY: `-${spriteOffsetY}px`,
             }}
+            data-src={imagePath}
           />
+          {/* <button className="absolute bottom-1 right-2 bg-black px-3 text-white" onClick={() => copyText(`'${imagePath}',`)}>copy src</button> */}
         </span>
       </span>
       <span className="w-full">

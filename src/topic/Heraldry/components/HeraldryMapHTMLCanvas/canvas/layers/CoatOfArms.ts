@@ -96,6 +96,14 @@ export class CoatOfArms {
 
   draw() {
     if (!this.image.complete) {
+      this.ctx.fillStyle = '#7b7b7b';
+      this.ctx.fillRect(
+        this.x - 2,
+        this.y - 2,
+        4, // width
+        4, // height
+      );
+
       return;
     }
 

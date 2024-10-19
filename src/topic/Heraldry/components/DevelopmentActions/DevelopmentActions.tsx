@@ -8,7 +8,7 @@ import {
   useFiltersDevelopmentStore,
 } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
 
-import { copyMessage } from '@/utils/text';
+import { copyText } from '@/utils/text';
 
 import IconCopy from '@/components/Icons/IconCopy';
 import IconMarkerMinus from '@/components/Icons/IconMarkerMinus';
@@ -89,7 +89,7 @@ const DevelopmentActions = ({
             >
               <p className="sans text-[10px] text-justify">{description}</p>
               <Button
-                onClick={() => copyMessage(
+                onClick={() => copyText(
                   description.replace(/(\r\n|\n|\r)/gm, ' ').replace( /\s\s+/g, ' ')
                 )}
               >

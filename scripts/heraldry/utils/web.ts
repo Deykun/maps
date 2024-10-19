@@ -1,12 +1,13 @@
 
 import { joinImages } from 'join-images';
-import sharp from 'sharp';
 import chalk from 'chalk';
+import sharp from 'sharp';
 import { existsSync, mkdirSync } from 'fs';
 import * as fsExtra from "fs-extra";
 import { getSpriteLocation } from '../../../src/topic/Heraldry/utils/getSpriteDataFromUnit';
 import { CoatOfArmsMapData } from '../../../src/topic/Heraldry/types';
 import { numberOfColumnsPerSprite, numberOfRowsPerSprite, spriteOffset } from '../../../src/topic/Heraldry/constants';
+
 
 type ImagesByIndex = {
   [index: string]: string,
@@ -126,7 +127,9 @@ export const getSprites = async ({
   
       console.log(`${type}: sprite ${chalk.green(spriteIndex)} saved.`);
     } else {
-      console.log(`${type}: sprite ${chalk.yellow(spriteIndex)} skipped because empty.`);
+      console.log(`${type}: sprite ${chalk.yellow(spriteIndex)} was created as empty.`);
+
+      await sharp('./public/images/heraldry/blank-80w.png').toFile(`./public/images/heraldry/${lang}/web/sprites/${type}-${spriteIndex}.webp`);
     }
   }
 

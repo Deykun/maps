@@ -120,7 +120,7 @@ export const removeDiacratics = (word: string, lang?: string, special = '') => {
   return textToReturn;
 };
 
-export const copyMessage = (text: string) => {
+export const copyText = (text: string) => {
   const selBox = document.createElement('textarea');
   selBox.style.position = 'fixed';
   selBox.style.left = '0';

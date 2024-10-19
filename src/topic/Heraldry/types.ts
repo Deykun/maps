@@ -61,7 +61,7 @@ export type CoatOfArmsDetailsData = {
       [color: string]: ColorStatus[],
     }
   },
-  markers: {
+  markers?: {
     animals?: string[],
     items?: string[],
   }

@@ -1,7 +1,7 @@
 import fs from 'fs';
 import wiki from 'wikipedia';
 import chalk from 'chalk';
-import pLimit from 'p-limit'
+import pLimit from 'p-limit';
 
 import { AdministrativeUnit, UserScriptDivisionData } from '../../../src/topic/Heraldry/types';
 
@@ -293,7 +293,7 @@ const fetchDivisionFromAdministrativeUnit = async (division: AdministrativeUnit,
         console.log(chalk.red(error));
       })
       errors.push({
-        title: `Missing corrdinates for '${division.title}'. Page with the location not found.`,
+        title: `Missing corrdinates for '${division.title || division?.locationName}'. Page with the location not found.`,
         details: [`Tried pages: ${locationPages.join(', ')}.`,
           'You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.',
           '',
@@ -323,10 +323,10 @@ const fetchDivisionFromAdministrativeUnit = async (division: AdministrativeUnit,
       }
 
       if (!coordinates.lon) {
-        console.log(chalk.red(`Missing corrdinates for '${division.title}'. No data.`));
+        console.log(chalk.red(`Missing corrdinates for '${division.title || division?.locationName}' No data.`));
         console.log(chalk.red(division.url));
         errors.push({
-          title: `Missing corrdinates for '${division.title}'. No data.`,
+          title: `Missing corrdinates for '${division.title || division?.locationName}' No data.`,
           url: division.url,
         });
       }
@@ -619,6 +619,6 @@ export const fetchData = async ({
 
   await Promise.all(promises);
 
-  fs.writeFileSync(path, JSON.stringify(contentToSave, null, 4));
+  fs.writeFileSync(path, JSON.stringify(contentToSave.sort((a, b) => a.index - b.index), null, 4));
   fs.writeFileSync('./errors.json', JSON.stringify(errors, null, 4));
 }

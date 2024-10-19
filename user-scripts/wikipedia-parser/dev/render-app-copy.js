@@ -44,7 +44,7 @@ window.WikiParser.ui.eventsSubscribers.copyCode = {
     if (window.parsedDE[source]) {
       console.log('Copied!');
 
-      copyMessage(getSourceTextToCopy(source));
+      copyText(getSourceTextToCopy(source));
     }
   },
 };
@@ -59,7 +59,7 @@ window.WikiParser.ui.eventsSubscribers.copyCodeAll = {
       const textToCopy = indexedSources.map((source) => getSourceTextToCopy(source, unitsBySource[source])).join(' ');
       
       console.log('Copied!');
-      copyMessage(textToCopy);
+      copyText(textToCopy);
     }
   },
 };

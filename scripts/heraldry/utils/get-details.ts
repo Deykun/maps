@@ -57,15 +57,30 @@ export const getDetails = async ({
     if (existsSync(expectedFilePath)) {
       const temporaryPngFile = `./public/images/heraldry/${lang}/web/temp/${path}/${fileName}-320w.png`;
 
-      await sharp(expectedFilePath).toFile(temporaryPngFile);
+      let colors;
+      
+      try {
+        await sharp(expectedFilePath).toFile(temporaryPngFile);
 
-      const image = resolve(temporaryPngFile);
+        const image = resolve(temporaryPngFile);
 
-      const {
-        hexPalette,
-        byNames,
-        byNamesRejected,
-      } = await getImageColors(image);
+        const colorData = await getImageColors(image);
+
+        const {
+          hexPalette,
+          byNames,
+          byNamesRejected,
+        } = colorData;
+
+        colors = {
+          hexPalette,
+          byNames,
+          byNamesRejected,
+        }
+      } catch (error) {
+        console.log(chalk.red(`Broken color data ${expectedFilePath}`))
+        console.log(error);
+      }
 
       const {
         animals,
@@ -76,17 +91,17 @@ export const getDetails = async ({
         lang,
       });
 
+      const hasMarkers = animals.length > 0 || items.length > 0;
+
       contentToSaveForDetails.push({
         id: unit.id,
-        colors: {
-          byNames,
-          byNamesRejected,
-          hexPalette,
-        },
-        markers: {
-          animals,
-          items,
-        },
+        ...(colors ? { colors } : {}),
+        ...(hasMarkers ? {
+          markers: {
+            ...(animals.length > 0 ? { animals } : {}),
+            ...(items.length > 0 ? { items } : {}),
+          }
+        }: {}),
       });
 
       console.log([

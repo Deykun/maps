@@ -13,7 +13,7 @@ const getMD5 = function(d){var r = M(V(Y(X(d),8*d.length)));return r.toLowerCase
 
 export const upperCaseFirstLetter = (text) => (typeof text === 'string' ? text.charAt(0).toUpperCase() + text.slice(1) : '');
 
-export const copyMessage = (text) => {
+export const copyText = (text) => {
   const selBox = document.createElement('textarea');
   selBox.style.position = 'fixed';
   selBox.style.left = '0';

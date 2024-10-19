@@ -26,7 +26,7 @@ type Props = {
 }
 
 const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
-  const { title, url, imagesList, place, markers, colors } = unit;  
+  const { title, url, imagesList, place, markers, colors } = unit;
   
   const { t } = useTranslation();
 

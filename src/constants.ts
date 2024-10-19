@@ -14,8 +14,8 @@ export const PATHS_DATA: {
     title: 'Deutschland Wappenkarte | Heraldik-Karten',
     social: `
       <meta property="og:title" content="Deutschland Wappenkarte" />
-      <meta property="og:description" content="Interaktive Karte mit über 15.000 deutschen Wappen.">
-      <meta name="description" content="Interaktive Karte mit über 15.000 deutschen Wappen.">
+      <meta property="og:description" content="Interaktive Karte mit über 18.000 deutschen Wappen.">
+      <meta name="description" content="Interaktive Karte mit über 18.000 deutschen Wappen.">
       <meta property="og:image" content="https://deykun.github.io/maps/social/wappen-in-deutschland-map.png" />
     `,
     lang: 'de',
