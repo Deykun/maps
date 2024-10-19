@@ -13,12 +13,16 @@ const getSourceTextToCopy = (source, value) => {
   return `
   urls.unitBySource['${source}'] = [
     ${(value || window.parsedDE[source]).map((item) => {
+      const description = item.detailsUrl ? [item.description, getDetails(item.detailsUrl)].filter(Boolean).join(' |||| ') : item.description;
+
+      const descriptionToCopy = (description || '').substring(0, 3000);
+
       return `{
         locationName: '${item.locationName}',
         locationUrl: '${item.locationUrl}',
         thumbnailUrl: ${item.thumbnailUrl ? `'${item.thumbnailUrl}'` : 'undefined'},
-        description: '${item.description}',
-        type: [${item.type.map((v) => `'${v}'`).join(',')}],
+        description: '${descriptionToCopy}',
+        type: [${(item.type || []).map((v) => `'${v}'`).join(',')}],
         source: '${item.source}',
         sourceTitle: '${item.sourceTitle}',
       }`;
@@ -58,7 +62,8 @@ window.WikiParser.ui.eventsSubscribers.copyCodeAll = {
 window.WikiParser.ui.eventsSubscribers.removeAll = {
   selector: '#remove-all',
   handleClick: () => {
-    localStorage.removeItem('wikiparse-units');
+    // localStorage.removeItem('wikiparse-units');
+    localStorage.clear();
     console.log('Removed!');
   },
 };

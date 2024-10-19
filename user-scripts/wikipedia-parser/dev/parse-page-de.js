@@ -4,14 +4,6 @@ const getIsFormer = (text = '') => {
   return ['historische', 'ehemaliger', 'ehemalige', 'ehemals'].some((phrase) => lowercaseText.includes(phrase));
 }
 
-const getSafeText = (text) => {
-  if (!text) {
-    return '';
-  }
-
-  return text.replace(/\n|\r/g, ' ').replaceAll(`'`, `"`).replaceAll(`'`, '"').replace(/\s\s+/g, ' ');
-}
-
 const getUnitTypesFromTitle = (text) => {
   const lowercaseText = ` ${text.toLowerCase()} `;
   const lowercaseTextWords = lowercaseText.trim().split(' ');
@@ -160,15 +152,25 @@ export const parseGalleryElement = (imageEl, { isFormerGroup, groupTypes, sectio
   const locationName = getSafeText(imageEl.querySelector('.gallerytext a')?.innerText);
   const locationUrl = imageEl.querySelector('.gallerytext a')?.href || '';
   const descriptionNoteId = imageEl.querySelector('.gallerytext a[href^="#"]')?.getAttribute('href')?.replace('#', '');
-  const description = descriptionNoteId ? `${(document.getElementById(descriptionNoteId)?.innerText || '').replace(/\n|\r/g, '')} ${title}` : title;
+  const description = descriptionNoteId ? `${(document.getElementById(descriptionNoteId)?.innerText || '').replace(/\n|\r/g, '')} |||| ${title}` : title;
   const detailsUrlEl = imageEl.querySelector('a[href*="#Wappen"], a[href*="/Wappen"]')
     || document.getElementById(descriptionNoteId)?.querySelector('a[href*="#Wappen"], a[href*="/Wappen"]');
 
-  if (detailsUrlEl) {
-    detailsUrlEl.setAttribute('data-wp-title-sm', `🔖 more`);
 
-    // console.log(detailsUrlEl.href);
-    // openInNewTab(detailsUrlEl.href);
+  let detailsUrl = '';
+
+  if (detailsUrlEl) {
+    if (!detailsUrlEl.hasAttribute('data-wp-title-sm')) {
+      detailsUrlEl.setAttribute('data-wp-title-sm', `🔖 more`);
+
+      const [root, hash] = detailsUrlEl.href.split('#');
+  
+      detailsUrl = `${root}?only=details&autoclose=1${hash ? `#${hash}` : ''}`;
+      detailsUrlEl.setAttribute('href', detailsUrl.replace('&autoclose=1', ''));
+
+      console.log(detailsUrl);
+      openInNewTab(detailsUrl);
+    }
   }
 
   const itemTypes = getUnitTypesFromTitle(title);
@@ -190,6 +192,7 @@ export const parseGalleryElement = (imageEl, { isFormerGroup, groupTypes, sectio
       thumbnailUrl,
       description,
       type: types,
+      detailsUrl,
       source,
       sourceTitle: [pageTitle, sectionTitle].filter(Boolean).join(' | '),
     };
@@ -256,7 +259,7 @@ export const parseTableElement = (nextTableEl, { isFormerGroup, groupTypes, sect
       const title = getSafeText(columnEls[indexLocation]?.innerText);
       const locationName = getSafeText(columnEls[indexLocation]?.querySelector('a')?.innerText);
       const locationUrl = columnEls[indexLocation]?.querySelector('a')?.href || '';
-      const description = `${getSafeText(columnEls[indexDescription]?.innerText)} ${title}`;
+      const description = `${getSafeText(columnEls[indexDescription]?.innerText)} |||| ${title}`;
 
       const itemTypes = getUnitTypesFromTitle(description);
 
@@ -401,6 +404,10 @@ export const savePageCoatOfArmsIfPossibleDE = () => {
       window.parsedDE[source] = [...window.parsedDE[source], coatOfArmsList];
     } else {
       window.parsedDE[source] = coatOfArmsList;
+    }
+
+    if (coatOfArmsList.length > 0) {
+      saveSource(source, coatOfArmsList);
     }
   }
 };

@@ -34,3 +34,11 @@ export const openInNewTab = (url) => {
       href: url,
   }).click();
 }
+
+export const getSafeText = (text) => {
+  if (!text) {
+    return '';
+  }
+
+  return text.replace(/\n|\r/g, ' ').replaceAll(`'`, `"`).replaceAll(`'`, '"').replace(/\s\s+/g, ' ');
+}

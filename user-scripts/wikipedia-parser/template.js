@@ -55,13 +55,19 @@ const initWikiParser = async () => {
     /* import @/icons.js */
     /* import @/interface.js */
 
+    /* import @/parse-details.js */
     /* import @/parse-page-de.js */
     /* import @/parse-page.js */
 
     /* import @/render-app-copy.js */
     /* import @/render-app.js */
 
-    savePageCoatOfArmsIfPossible();
+    if (location.href.includes('only=details')) {
+      saveDetailsIfPossible();
+    } else {    
+      savePageCoatOfArmsIfPossible();
+    }
+
     renderApp();
 
     /* import @/subscribers.js */
