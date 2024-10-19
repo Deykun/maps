@@ -21,6 +21,8 @@ import useHeraldryCursorPosition from '@/topic/Heraldry/components/HeraldryCurso
 import HeraldryCursor from '@/topic/Heraldry/components/HeraldryCursor/HeraldryCursor';
 import HeraldryCursorLastPoint from '@/topic/Heraldry/components/HeraldryCursor/HeraldryCursorLastPoint';
 
+import useKeepPositionAfterResize from './useKeepPositionAfterResize';
+
 import './HeraldryMapHTMLCanvas.scss';
 
 type Props = {
@@ -61,6 +63,8 @@ const HeraldryMapHTMLCanvas = ({ className, units, children, mapOffset, coatSize
     onResize(mapOffset);
     setLastClick(undefined);
   }, [dimensions?.width]);
+
+  useKeepPositionAfterResize(dimensions);
 
   useEffectChange(() => {
     setCoatSize(coatSize);

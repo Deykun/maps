@@ -133,6 +133,7 @@ const HeraldryMapContainerWithUI = ({
     return (
         <>
           <section
+            id="map-section"
             ref={wrapperRef}
             className={clsx(
               "map-section fixed top-0 left-0 w-full h-full",
