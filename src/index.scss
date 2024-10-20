@@ -70,6 +70,25 @@ h1, h2, h3 {
   }
 }
 
+.ui-slide-from-right-sidebar {
+  transform: translateX(calc(100% + 150px));
+  opacity: 0;
+  animation: 1s uiSlideFromRight forwards ease-in;
+  transform-origin: center left;
+}
+
+@keyframes uiSlideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(calc(100% + 150px));
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
+
 .ui-slide-from-top {
   // opacity: 0;
   // transform: translateY(calc(-100% - 30px));

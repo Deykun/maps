@@ -1,10 +1,20 @@
 .ui-space {
-  @apply pointer-events-auto h-[12px] w-[12px] ml-auto bg-soft-ui;
+  @apply pointer-events-none h-[12px] w-[16px] ml-auto bg-ui;
+
+  &.ui-space--is-last {
+    @apply w-[12px];
+  }
 
   &.ui-space--top-right {
     @apply -mt-[1px];
 
     mask: radial-gradient(12px at 0 100%, transparent 94%, black) 0 -100%;
+
+    &.ui-space--is-large {
+      @apply h-[24px] w-[24px] -mt-[1px];;
+
+      mask: radial-gradient(25px at 0 100%, transparent 94%, black) 0 -100%;
+    }
   }
 
   &.ui-space--bottom-right {

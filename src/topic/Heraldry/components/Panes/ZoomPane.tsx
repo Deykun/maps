@@ -46,7 +46,7 @@ const ZoomPane = ({
 
   return (
     <div className="relative pointer-events-auto" id="zoom-pane">
-      <Panel>
+      <Panel className="ui-panel--rounded-l">
         <ButtonIcon onClick={() => setZoomLevel(zoomLevel + 1)} isDisabled={zoomLevel === zoomMax}>
           <IconPlus />
         </ButtonIcon>

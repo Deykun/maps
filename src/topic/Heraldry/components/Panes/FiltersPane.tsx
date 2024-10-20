@@ -149,7 +149,7 @@ const FiltersPane = ({
 
   return (
     <div className="relative pointer-events-auto" id="filters-pane">
-      <Panel>
+      <Panel className="ui-panel--rounded-l">
         <ButtonIcon
           onClick={() => setIsOpen(!isOpen)}
           isActive={isOpen}

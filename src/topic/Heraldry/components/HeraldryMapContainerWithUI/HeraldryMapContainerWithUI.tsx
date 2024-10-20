@@ -252,7 +252,7 @@ const HeraldryMapContainerWithUI = ({
               setShouldFetchDetails={setShouldFetchDetails}
               isFetchingDetails={isFetchingDetails}
             />
-            <Space />
+            <Space isLast />
           </div>
         </>
     );

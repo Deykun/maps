@@ -126,6 +126,10 @@
     }
   }
 
+  &:hover {
+    z-index: 2;
+  }
+
   &:hover .ui-button-icon-label--left {
     right: calc(100% + 20px);
     transform: translateY(-50%) scale(1);
@@ -206,7 +210,17 @@
       > svg {
         @apply size-4;
       }
-    } 
+    }
+
+    &:hover {
+      .ui-button-icon-label--right {
+        left: calc(100% + 10px) !important;
+      }
+  
+      .ui-button-icon-label--left {
+        right: calc(100% + 10px);
+      }
+    }
   }
 
   &.ui-button-icon--large {

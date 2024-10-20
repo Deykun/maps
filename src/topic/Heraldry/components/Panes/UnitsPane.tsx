@@ -20,6 +20,7 @@ import ButtonCircle from '@/components/UI/ButtonCircle';
 
 import { getDoesUnitMatch, getUnitSortRank } from './utils/units';
 
+import UnitsPaneSidebar from './UnitsPane/UnitsPaneSidebar';
 import UnitsPaneItem from './UnitsPane/UnitsPaneItem';
 import UnitsPaneItemDetails from './UnitsPane/UnitsPaneItemDetails';
 
@@ -36,6 +37,7 @@ const UnitsPane = ({
   shouldShowCount = false,
 }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpenOld, setIsOpenOld] = useState(false);
   const [previewUnit, setPreviewUnit] = useState<CoatOfArmsMapData | undefined>(undefined);
   const [filterPhrase, setFilterPhrase] = useState(phrase);
   const [filteredUnits, setFilteredUnits] = useState(units);
@@ -93,7 +95,7 @@ const UnitsPane = ({
 
   return (
     <div className="pointer-events-auto" id="units-pane">
-      <Panel>
+      <Panel className="ui-panel--rounded-l">
         <ButtonIcon
           id="units-pane-toggle"
           isDisabled={units.length === 0}
@@ -108,8 +110,27 @@ const UnitsPane = ({
             && filteredUnits.length < 100
             && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft">{filteredUnits.length}</span>}
         </ButtonIcon>
+        <ButtonIcon
+          id="units-pane-toggle"
+          isDisabled={units.length === 0}
+          isActive={isOpenOld}
+          onClick={() => setIsOpenOld(!isOpenOld)}
+          label="old"
+        >
+          <IconCoatOfArms units={filteredUnits} />
+          {shouldShowCount
+            && phrase === filterPhrase
+            && filteredUnits.length > 0
+            && filteredUnits.length < 100
+            && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft">{filteredUnits.length}</span>}
+        </ButtonIcon>
       </Panel>
-      {isOpen && <Pane className="ui-slide-from-top absolute top-0 right-full z-50 w-[400px] overflow-auto mr-3">
+      {isOpen && <UnitsPaneSidebar
+        filterPhrase={filterPhrase}
+        setFilterPhrase={setFilterPhrase}
+        units={filteredUnits}
+      />}
+      {isOpenOld && <Pane className="ui-slide-from-top absolute top-0 right-full z-50 w-[400px] overflow-auto mr-3">
         <div className="relative flex gap-1 justify-center items-center">
           <IconTextMagnifyingGlass className="size-4 absolute top-1/2 -translate-y-1/2 left-3 md:left-8 opacity-20" />
           <input

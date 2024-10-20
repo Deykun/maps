@@ -11,8 +11,12 @@ export default {
   },
   theme: {
     colors: {
-      'soft-ui': '#4b4b4b',
-      'soft-ui': '#937979',
+      'ui': '#937979',
+      'ui-contrast': '#ffdada',
+      'ui-dark': '#4b4b4b',
+      'white': '#fff',
+      'black': '#000',
+      'marker': 'ff8080',
     },
   },
   plugins: [],

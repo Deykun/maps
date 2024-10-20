@@ -1,5 +1,13 @@
 .ui-panel {
-  @apply bg-soft-ui p-2 rounded-l-[12px] flex flex-col gap-1;
+  @apply bg-ui text-ui-contrast p-2 flex flex-col gap-1;
+
+  &.ui-panel--rounded-l {
+    @apply rounded-l-[12px];
+  }
+
+  &.ui-panel--rounded-r {
+    @apply rounded-r-[12px];
+  }
 
   > .border-t {
     border-style: dashed;
