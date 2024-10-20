@@ -41,6 +41,16 @@ const FiltersPaneTypesFilter = ({
 
   const { t } = useTranslation();
 
+  const clearFilters = () => {
+    setTypeFilters([]);
+
+    if (shouldIgnoreFormer) {
+      setShouldIgnoreFormer(false);
+    }
+  }
+
+  const activeTotal = typeFilters.length + (shouldIgnoreFormer ? 1 : 0);
+
   return (
       <Pane className="ui-slide-from-top fixed top-0 right-full z-50 w-[400px] mr-3">
       <h3 className="flex gap-3 items-center">
@@ -50,11 +60,11 @@ const FiltersPaneTypesFilter = ({
         </span>
         <ButtonCircle
           wrapperClassName="ml-auto"
-          onClick={() => setTypeFilters([])}
-          isDisabled={typeFilters.length === 0}
+          onClick={clearFilters}
+          isDisabled={activeTotal === 0}
         >
           <IconEraser />
-          {typeFilters.length > 0 && <span className="ui-button-circle-marker">{typeFilters.length}</span>}
+          {activeTotal > 0 && <span className="ui-button-circle-marker">{activeTotal}</span>}
         </ButtonCircle>
       </h3>
       {typeFiltersList.length > 0 && <div className="grid grid-cols-1 gap-1 sans">
@@ -63,6 +73,7 @@ const FiltersPaneTypesFilter = ({
             onClick={() => toggleType(value)}
             className={clsx('font-[500] text-[14px] text-left hover:text-[#d2543a]', { 
               'font-[600] text-[#d2543a]': typeFilters.includes(value),
+              'opacity-20 hover:opacity-50': shouldIgnoreFormer && value.startsWith('former'),
             })}
           >
             {typeFilters.includes(value) && <IconCheck className="inline size-3 fill-current" />}
