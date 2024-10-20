@@ -24,6 +24,8 @@ import FiltersPane from '@/topic/Heraldry/components/Panes/FiltersPane';
 import HeraldrySubtitle from '@/topic/Heraldry/components/HeraldrySubtitle';
 import HeraldryMapHTMLCanvas from '@/topic/Heraldry/components/HeraldryMapHTMLCanvas/HeraldryMapHTMLCanvas';
 
+import Space from '@/components/NewUI/Space';
+
 import './HeraldryMapContainerWithUI.scss';
 
 export type Props = {
@@ -209,7 +211,8 @@ const HeraldryMapContainerWithUI = ({
               unitTypes={developmentModeFiltersTypes || typeFiltersList.map(({ value }) => value)}
             />
           </div>
-          <div className="ui-slide-from-right fixed top-3 right-3 z-20 flex flex-col gap-3 pointer-events-none">
+          <div className="ui-slide-from-right fixed top-0 right-0 z-20 flex flex-col pointer-events-none">          
+            <Space />
             <ZoomPane
               zoomLevel={zoomLevel}
               setZoomLevel={setZoomLevel}
@@ -220,11 +223,13 @@ const HeraldryMapContainerWithUI = ({
               coatMin={1}
               coatMax={9}
             />
+            <Space />
             <UnitsPane
               units={units}
               phrase={listPhrase}
               shouldShowCount={listPhrase.length > 0}
             />
+            <Space />
             <FiltersPane
               lang={lang}
               typeFilters={typeFilters}
@@ -247,6 +252,7 @@ const HeraldryMapContainerWithUI = ({
               setShouldFetchDetails={setShouldFetchDetails}
               isFetchingDetails={isFetchingDetails}
             />
+            <Space />
           </div>
         </>
     );

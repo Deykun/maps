@@ -1,0 +1,8 @@
+.ui-panel {
+  @apply bg-soft-ui p-2 rounded-l-[12px] flex flex-col gap-1;
+
+  > .border-t {
+    border-style: dashed;
+    border-color: #7b6767;
+  }
+}

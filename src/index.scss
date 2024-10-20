@@ -1,14 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@400..500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@400..600&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.heading {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
 }
 
 .sans {

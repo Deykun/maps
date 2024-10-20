@@ -27,7 +27,10 @@ import IconEyeCrossed from '@/components/Icons/IconEyeCrossed';
 import IconLoader from '@/components/Icons/IconLoader';
 
 import Pane from '@/components/UI/Pane';
+import Panel from '@/components/NewUI/Panel';
 import SubPane from '@/components/UI/SubPane';
+
+import ButtonIcon from '@/components/NewUI/ButtonIcon';
 import ButtonCircle from '@/components/UI/ButtonCircle';
 
 import { colorsMarkersByNames } from '@/topic/Heraldry/constants';
@@ -146,75 +149,75 @@ const FiltersPane = ({
 
   return (
     <div className="relative pointer-events-auto" id="filters-pane">
-      <Pane className="ui-pane--magic">
-        <ButtonCircle
+      <Panel>
+        <ButtonIcon
           onClick={() => setIsOpen(!isOpen)}
           isActive={isOpen}
           label={t('heraldry.titleFilters')}
         >
           <IconMapMagnifyingGlass />
-          {activeTotal > 0 && <span className="ui-button-circle-marker">{activeTotal}</span>}
-        </ButtonCircle>
+          {activeTotal > 0 && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft">{activeTotal}</span>}
+        </ButtonIcon>
         {isOpen && <>
           <span className="border-t" />
-          <ButtonCircle
+          <ButtonIcon
             onClick={toggleMenu('type')}
             isActive={activeMenu === 'type'}
             label={t('heraldry.unit.filterTitle')}
           >
             <IconBuilding />
-            {activeTotalTypes > 0 && <span className="ui-button-circle-marker">{activeTotalTypes}</span>}
-          </ButtonCircle>
-          <ButtonCircle
+            {activeTotalTypes > 0 && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft">{activeTotalTypes}</span>}
+          </ButtonIcon>
+          <ButtonIcon
             onClick={toggleMenu('color')}
             isActive={activeMenu === 'color'}
             label={t('heraldry.color.filterTitle')}
           >
             <IconColor />
-            {colorFilters.length > 0 && <span className="ui-button-circle-marker">{colorFilters.length}</span>}
-          </ButtonCircle>
-          <ButtonCircle
+            {colorFilters.length > 0 && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft">{colorFilters.length}</span>}
+          </ButtonIcon>
+          <ButtonIcon
             onClick={toggleMenu('animal')}
             isActive={activeMenu === 'animal'}
             label={t('heraldry.animal.filterTitle')}
             isDisabled={animalFiltersList.length === 0}
           >
             <IconAnimal />
-            {animalFilters.length > 0 && <span className="ui-button-circle-marker">{animalFilters.length}</span>}
-          </ButtonCircle>
-          <ButtonCircle
+            {animalFilters.length > 0 && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft">{animalFilters.length}</span>}
+          </ButtonIcon>
+          <ButtonIcon
             onClick={toggleMenu('item')}
             isActive={activeMenu === 'item'}
             label={t('heraldry.item.filterTitle')}
             isDisabled={itemFiltersList.length === 0}
           >
             <IconCrown />
-            {itemFilters.length > 0 && <span className="ui-button-circle-marker">{itemFilters.length}</span>}
-          </ButtonCircle>
-          <ButtonCircle
+            {itemFilters.length > 0 && <span className="ui-button-icon-marker">{itemFilters.length}</span>}
+          </ButtonIcon>
+          <ButtonIcon
             onClick={toggleMenu('settings')}
             isActive={activeMenu === 'settings'}
             label={t('heraldry.titleSettings')}
           >
             <IconControls />
-          </ButtonCircle>
+          </ButtonIcon>
         </>}
         {activeTotal > 0 && <>
           <span className="border-t" />
-          <ButtonCircle
+          <ButtonIcon
             onClick={resetFilters}
             label={t('heraldry.clearFilters')}
           >
             <IconEraser />
-          </ButtonCircle>
+          </ButtonIcon>
         </>}
         {isOpen && isFetchingDetails && <>
           <span className="border-t" />
-          <ButtonCircle tagName="span" isActive>
+          <ButtonIcon tagName="span" isActive>
             <IconLoader />
-          </ButtonCircle>
+          </ButtonIcon>
         </>}
-      </Pane>
+      </Panel>
       {activeMenu === 'type' && <FiltersPaneTypesFilter 
         lang={lang}
         typeFilters={typeFilters}
@@ -255,7 +258,7 @@ const FiltersPane = ({
             isDisabled={animalFilters.length === 0}
           >
             <IconEraser />
-            {animalFilters.length > 0 && <span className="ui-button-circle-marker">{animalFilters.length}</span>}
+            {animalFilters.length > 0 && <span className="ui-button-icon-marker">{animalFilters.length}</span>}
           </ButtonCircle>
         </h3>
         <div className="sans grid grid-cols-1 gap-1">
@@ -305,7 +308,7 @@ const FiltersPane = ({
             isDisabled={itemFilters.length === 0}
           >
             <IconEraser />
-            {itemFilters.length > 0 && <span className="ui-button-circle-marker">{itemFilters.length}</span>}
+            {itemFilters.length > 0 && <span className="ui-button-icon-marker">{itemFilters.length}</span>}
           </ButtonCircle>
         </h3>
         {itemFiltersList.length > 0 && <div className="sans grid grid-cols-1 max-h-[80lvh] overflow-auto sm:grid-cols-2 gap-1">

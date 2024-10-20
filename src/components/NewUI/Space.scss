@@ -1,0 +1,15 @@
+.ui-space {
+  @apply pointer-events-auto h-[12px] w-[12px] ml-auto bg-soft-ui;
+
+  &.ui-space--top-right {
+    @apply -mt-[1px];
+
+    mask: radial-gradient(12px at 0 100%, transparent 94%, black) 0 -100%;
+  }
+
+  &.ui-space--bottom-right {
+    @apply -mb-[1px];
+
+    mask: radial-gradient(12px at 0 0, transparent 94%, black) 0 100%;
+  }
+}

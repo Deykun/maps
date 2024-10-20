@@ -10,7 +10,10 @@ export default {
     hoverOnlyWhenSupported: true,
   },
   theme: {
-    extend: {},
+    colors: {
+      'soft-ui': '#4b4b4b',
+      'soft-ui': '#937979',
+    },
   },
   plugins: [],
 } satisfies Config

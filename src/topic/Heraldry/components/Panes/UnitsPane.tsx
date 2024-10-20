@@ -14,6 +14,8 @@ import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 import IconCoatOfArms from '@/topic/Heraldry/components/IconCoatOfArms';
 
 import Pane from '@/components/UI/Pane';
+import Panel from '@/components/NewUI/Panel';
+import ButtonIcon from '@/components/NewUI/ButtonIcon';
 import ButtonCircle from '@/components/UI/ButtonCircle';
 
 import { getDoesUnitMatch, getUnitSortRank } from './utils/units';
@@ -91,8 +93,8 @@ const UnitsPane = ({
 
   return (
     <div className="pointer-events-auto" id="units-pane">
-      <Pane>
-        <ButtonCircle
+      <Panel>
+        <ButtonIcon
           id="units-pane-toggle"
           isDisabled={units.length === 0}
           isActive={isOpen}
@@ -104,9 +106,9 @@ const UnitsPane = ({
             && phrase === filterPhrase
             && filteredUnits.length > 0
             && filteredUnits.length < 100
-            && <span className="ui-button-circle-marker">{filteredUnits.length}</span>}
-        </ButtonCircle>
-      </Pane>
+            && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft">{filteredUnits.length}</span>}
+        </ButtonIcon>
+      </Panel>
       {isOpen && <Pane className="ui-slide-from-top absolute top-0 right-full z-50 w-[400px] overflow-auto mr-3">
         <div className="relative flex gap-1 justify-center items-center">
           <IconTextMagnifyingGlass className="size-4 absolute top-1/2 -translate-y-1/2 left-3 md:left-8 opacity-20" />

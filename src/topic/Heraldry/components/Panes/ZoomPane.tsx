@@ -9,8 +9,10 @@ import IconControls from '@/components/Icons/IconControls';
 import IconShieldCheckers from '@/components/Icons/IconShieldCheckers';
 
 import Pane from '@/components/UI/Pane';
+import Panel from '@/components/NewUI/Panel';
 import SubPane from '@/components/UI/SubPane';
 
+import ButtonIcon from '@/components/NewUI/ButtonIcon';
 import ButtonCircle from '@/components/UI/ButtonCircle';
 
 type Props = {
@@ -44,17 +46,17 @@ const ZoomPane = ({
 
   return (
     <div className="relative pointer-events-auto" id="zoom-pane">
-      <Pane>
-        <ButtonCircle onClick={() => setZoomLevel(zoomLevel + 1)} isDisabled={zoomLevel === zoomMax}>
+      <Panel>
+        <ButtonIcon onClick={() => setZoomLevel(zoomLevel + 1)} isDisabled={zoomLevel === zoomMax}>
           <IconPlus />
-        </ButtonCircle>
-        <ButtonCircle onClick={() => setZoomLevel(zoomLevel - 1)} isDisabled={zoomLevel === zoomMin}>
+        </ButtonIcon>
+        <ButtonIcon onClick={() => setZoomLevel(zoomLevel - 1)} isDisabled={zoomLevel === zoomMin}>
           <IconMinus />
-        </ButtonCircle>
-        <ButtonCircle onClick={() => setIsOpen(!isOpen)} isActive={isOpen} label={t('heraldry.titleSettings')}>
+        </ButtonIcon>
+        <ButtonIcon onClick={() => setIsOpen(!isOpen)} isActive={isOpen} label={t('heraldry.titleSettings')}>
           <IconControls />
-        </ButtonCircle>
-      </Pane>
+        </ButtonIcon>
+      </Panel>
       {isOpen && <SubPane order={2} className="ui-slide-from-top absolute top-0 right-12 z-[100] mr-2 flex-row items-center">
         <ButtonCircle onClick={() => setCoatSize(coatSize - 1)} isDisabled={coatSize === coatMin}>
           <IconMinus />
