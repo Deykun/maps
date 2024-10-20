@@ -14,6 +14,7 @@ export default {
       'ui': '#937979',
       'ui-contrast': '#ffdada',
       'ui-dark': '#4b4b4b',
+      'ui-dark-contrast': '#e8b7b7',
       'white': '#fff',
       'black': '#000',
       'marker': 'ff8080',

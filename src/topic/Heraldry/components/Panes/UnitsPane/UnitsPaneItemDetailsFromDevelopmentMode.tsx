@@ -33,12 +33,12 @@ const UnitsPaneItemDetailsFromDevelopmentMode = ({ id, country }: Props) => {
   }
 
   return (
-    <div className="mt-4">
+    <div className="mt-4 text-ui-dark-contrast">
       <h3 className="text-[14px]">
         Description
       </h3>
       <div
-        className="my-2 sans text-[12px] tracking-wider opacity-70"
+        className="my-2 sans text-[10px] text-justify hyphens-auto line-clamp-6"
         dangerouslySetInnerHTML={{
           __html: description.includes('||||') ?
           (description as string).split('||||').map((paragraph) => `<p class="mb-2 last:mb-0">${paragraph}</p>`).join('')

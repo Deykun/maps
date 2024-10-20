@@ -36,7 +36,8 @@ const UnitsPane = ({
   phrase = '',
   shouldShowCount = false,
 }: Props) => {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const [isOpenOld, setIsOpenOld] = useState(false);
   const [previewUnit, setPreviewUnit] = useState<CoatOfArmsMapData | undefined>(undefined);
   const [filterPhrase, setFilterPhrase] = useState(phrase);
@@ -126,6 +127,12 @@ const UnitsPane = ({
         </ButtonIcon>
       </Panel>
       {isOpen && <UnitsPaneSidebar
+        filterPhrase={filterPhrase}
+        setFilterPhrase={setFilterPhrase}
+        units={filteredUnits}
+      />}
+
+      {<UnitsPaneSidebar
         filterPhrase={filterPhrase}
         setFilterPhrase={setFilterPhrase}
         units={filteredUnits}
