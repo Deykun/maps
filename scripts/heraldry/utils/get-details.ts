@@ -17,18 +17,29 @@ import { getMarkers } from '../../../src/topic/Heraldry/utils/markers/getMarkers
 
 import { getImageColors } from './helpers/colors'
 
+const start = (new Date()).getTime();
+
 export const getDetails = async ({
   administrativeDivisions,
+  alreadyFetchedDivisions = [],
   path,
   lang,
   chunkIndex,
 }: {
-  administrativeDivisions: AdministrativeUnit[]
+  administrativeDivisions: AdministrativeUnit[],
+  alreadyFetchedDivisions?: CoatOfArmsDetailsData[],
   path: string,
   lang: string,
   chunkIndex?: number,
 }) => {
   const contentToSaveForDetails: CoatOfArmsDetailsData[] = [];
+  const alreadyFetchedDetailsById = alreadyFetchedDivisions.reduce((stack: {
+    [id: string]: CoatOfArmsDetailsData,
+  }, item) => {
+    stack[item.id] = item;
+
+    return stack;
+  }, {})
 
   const total = administrativeDivisions.length;
 
@@ -38,6 +49,20 @@ export const getDetails = async ({
 
   if (total === 0) {
     return;
+  }
+
+  const getTimeStatus = (i: number) => {
+    const progressPercent = (i / total) * 100;
+    const now = (new Date()).getTime();
+    const timeDiffrenceInSeconds = Math.floor((now - start) / 1000);
+    const timePerPercentage = timeDiffrenceInSeconds / progressPercent;
+    const expectedTimeInSeconds = Math.floor(timePerPercentage * 100);
+    const timeLeftSeconds = Math.floor(expectedTimeInSeconds - timeDiffrenceInSeconds);
+    const timeLeftMinutes = Math.floor(timeLeftSeconds / 60);
+    const timeLeftSecondsToShow = timeLeftSeconds - (timeLeftMinutes * 60);
+    const timeStatus = timeDiffrenceInSeconds === 0 ? '' : `${chalk.blue(`${timeLeftMinutes > 0 ? `${timeLeftMinutes}m `: ''}${timeLeftSecondsToShow}s`)} to finish.`;
+
+    return timeStatus;
   }
 
   for (let i = 0; i < total; i++) {
@@ -57,29 +82,34 @@ export const getDetails = async ({
     if (existsSync(expectedFilePath)) {
       const temporaryPngFile = `./public/images/heraldry/${lang}/web/temp/${path}/${fileName}-320w.png`;
 
+      let wasColorTakenFromCache = false;
       let colors;
-      
-      try {
-        await sharp(expectedFilePath).toFile(temporaryPngFile);
-
-        const image = resolve(temporaryPngFile);
-
-        const colorData = await getImageColors(image);
-
-        const {
-          hexPalette,
-          byNames,
-          byNamesRejected,
-        } = colorData;
-
-        colors = {
-          hexPalette,
-          byNames,
-          byNamesRejected,
+      if (alreadyFetchedDetailsById[unit.id].colors) {
+        colors = alreadyFetchedDetailsById[unit.id].colors;
+        wasColorTakenFromCache = true;
+      } else {
+        try {
+          await sharp(expectedFilePath).toFile(temporaryPngFile);
+  
+          const image = resolve(temporaryPngFile);
+  
+          const colorData = await getImageColors(image);
+  
+          const {
+            hexPalette,
+            byNames,
+            byNamesRejected,
+          } = colorData;
+  
+          colors = {
+            hexPalette,
+            byNames,
+            byNamesRejected,
+          }
+        } catch (error) {
+          console.log(chalk.red(`Broken color data ${expectedFilePath}`))
+          console.log(error);
         }
-      } catch (error) {
-        console.log(chalk.red(`Broken color data ${expectedFilePath}`))
-        console.log(error);
       }
 
       const {
@@ -108,13 +138,15 @@ export const getDetails = async ({
         chalk.green('✓'),
         chalk.gray(`validating "${chalk.white(unit.title)}"`),
         chalk.gray(`(index: ${chalk.white(unit.index)})`),
-      ].join(' '));
+        wasColorTakenFromCache ? chalk.gray(`- color from cache.`) : undefined,
+      ].filter(Boolean).join(' '));
     }
 
     console.log(' ');
     console.log([
       chalk.yellow(`  Progress ${chalk.green(`${(i / total * 100).toFixed(1)}%`)}.`),
       `${chalk.white(i)} out of ${chalk.white(total)}.`,
+      getTimeStatus(i),
     ].join(' '));
     console.log(' ');
   }

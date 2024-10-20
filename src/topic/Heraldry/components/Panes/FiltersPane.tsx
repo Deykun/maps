@@ -134,12 +134,15 @@ const FiltersPane = ({
 
   const resetFilters = () => {
     setTypeFilters([]);
+    setShouldIgnoreFormer(false);
     setColorFilters([]);
     setAnimalFilters([]);
     setItemFilters([]);
   };
 
-  const activeTotal = typeFilters.length + colorFilters.length + animalFilters.length + itemFilters.length; 
+  const activeTotalTypes = typeFilters.length + (shouldIgnoreFormer ? 1 : 0);
+
+  const activeTotal = activeTotalTypes + colorFilters.length + animalFilters.length + itemFilters.length;
 
   return (
     <div className="relative pointer-events-auto" id="filters-pane">
@@ -160,7 +163,7 @@ const FiltersPane = ({
             label={t('heraldry.unit.filterTitle')}
           >
             <IconBuilding />
-            {typeFilters.length > 0 && <span className="ui-button-circle-marker">{typeFilters.length}</span>}
+            {activeTotalTypes > 0 && <span className="ui-button-circle-marker">{activeTotalTypes}</span>}
           </ButtonCircle>
           <ButtonCircle
             onClick={toggleMenu('color')}

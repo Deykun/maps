@@ -11,6 +11,7 @@ import {
   setCustomFilter,
   toggleCustomFilterVisiblity,
   updateCustomFilterResultBasedOnData,
+  showOnlyUnitsWithDescriptionInCustomFilter,
 } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
 
 import useEffectChange from '@/hooks/useEffectChange';
@@ -24,6 +25,7 @@ import IconFlask from '@/components/Icons/IconFlask';
 import IconLoader from '@/components/Icons/IconLoader';
 import IconSelected from '@/components/Icons/IconSelected';
 import IconSelectNew from '@/components/Icons/IconSelectNew';
+import IconQuote from '@/components/Icons/IconQuote';
 
 import Pane from '@/components/UI/Pane';
 import ButtonCircle from '@/components/UI/ButtonCircle';
@@ -59,6 +61,9 @@ const DevelopmentPane = ({
     exclude: filterExclude,
   });
 
+  
+  const [shouldShowOnlyValid, setShouldShowOnlyValid] = useState(false);
+
   const { t } = useTranslation();
 
   // Not the nicest solution, but it works
@@ -91,8 +96,14 @@ const DevelopmentPane = ({
       return;
     }
 
+    if (shouldShowOnlyValid) {
+      showOnlyUnitsWithDescriptionInCustomFilter(data);
+
+      return;
+    }
+
     updateCustomFilterResultBasedOnData(data);
-  }, [data]);
+  }, [data, shouldShowOnlyValid]);
 
   useEffectChange(() => {
     const wasIncludeAndExcludeUpdated = JSON.stringify({ filterInclude }) !== JSON.stringify(({ filterInclude: draftFilter.include })) ||
@@ -192,6 +203,14 @@ const DevelopmentPane = ({
             labelPosition="right"
           >
             <IconSelectNew />
+          </ButtonCircle>
+          <ButtonCircle
+            onClick={() => setShouldShowOnlyValid(!shouldShowOnlyValid)}
+            isActive={shouldShowOnlyValid}
+            label="Show only those with text"
+            labelPosition="right"
+          >
+            <IconQuote />
           </ButtonCircle>
           <ButtonCircle
               onClick={() => toggleCustomFilterVisiblity()}
