@@ -71,7 +71,7 @@ const DevelopmentActions = ({
       >
         <IconMarkerMinus />
       </ButtonCircle>
-      {shouldShowDescription && 
+      {shouldShowDescription && (description?.length || 0) > 0 && 
         <span className="relative">
           <ButtonCircle
             size={buttonSize}
