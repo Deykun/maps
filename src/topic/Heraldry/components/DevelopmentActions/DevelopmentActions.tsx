@@ -78,10 +78,10 @@ const DevelopmentActions = ({
             className="pointer-events-auto"
             onClick={() => setIsMoreOpen(!isMoreOpen)}
             isActive={isMoreOpen}
-            label={`Description - ${description?.length || 0}ch.`}
+            label={`Description - ${description?.length}ch.`}
             labelPosition={labelPositions ?? 'bottom'}
           >
-            <IconQuote />
+            <IconQuote className={description?.length < 60 ? 'scale-50' : ''} />
           </ButtonCircle>
           {isMoreOpen &&
             <Pane

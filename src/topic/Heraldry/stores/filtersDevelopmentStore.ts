@@ -126,11 +126,42 @@ export const toggleAsCustomFilterInclude = (unitTitle: string) => {
   });
 };
 
-export const updateCustomFilterResultBasedOnData = (data: AdministrativeUnitIndex[]) => {
+export const showOnlyUnitsWithDescriptionInCustomFilter = (data: AdministrativeUnitIndex[]) => {
   const state = useFiltersDevelopmentStore.getState();
 
-  // It only shows units with descriptions
-  // const filteredUnitsIds = data.filter(({ description }) => (description.length || 0) > 70).map(({ id }) => id);
+    // It only shows units with descriptions
+    const filteredUnitsIds = data.filter(({ description }) => (description.length || 0) > 70).map(({ id }) => id);
+
+    const wasUpdated = JSON.stringify(filteredUnitsIds) !== JSON.stringify(state.filter.result);
+
+    if (wasUpdated) {
+      useFiltersDevelopmentStore.setState({
+        ...state,
+        filter: {
+          ...state.filter,
+          ...EMPTY_CUSTOM_FILTER,
+          name: "withText",
+          phrases: ['only units with longer text'],
+          isActive: true,
+          result: filteredUnitsIds,
+        }
+      });
+    }
+
+
+    if (wasUpdated) {
+      useFiltersDevelopmentStore.setState({
+        ...state,
+        filter: {
+          ...state.filter,
+          result: filteredUnitsIds,
+        }
+      });
+    }
+}
+
+export const updateCustomFilterResultBasedOnData = (data: AdministrativeUnitIndex[]) => {
+  const state = useFiltersDevelopmentStore.getState();
 
   const filteredUnitsIds = data.filter(({ title, description }) => getHasMarker(
     {
