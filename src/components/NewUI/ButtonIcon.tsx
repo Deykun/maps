@@ -42,7 +42,8 @@ const ButtonIcon = ({
     <span className={cn('relative ui-button-icon', {
       [wrapperClassName || '']: wrapperClassName,
       'ui-button-icon--active': isActive,
-      [`ui-button-icon--${size}`]: size,
+      'ui-tooltip-wrapper': label,
+      [`ui-tooltip-wrapper--${size} ui-button-icon--${size}`]: size,
     })}>
       <TagName
         id={id}
@@ -55,8 +56,8 @@ const ButtonIcon = ({
       >
         {children}
         {label && <span
-          className={clsx('ui-button-icon-label', {
-            [`ui-button-icon-label--${labelPosition}`]: labelPosition,
+          className={clsx('ui-tooltip', {
+            [`ui-tooltip--${labelPosition}`]: labelPosition,
           })}
         >
           {label}

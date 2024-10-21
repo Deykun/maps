@@ -82,6 +82,12 @@ const UnitsPaneSidebar = ({
       setDetailsUnit(undefined);
 
       return;
+    } else if (units.length > 0) {
+      const hasCurrentlyOpen = units.some(({ id }) => id === detailsUnit?.id);
+
+      if (!hasCurrentlyOpen) {
+        setDetailsUnit(undefined);
+      }
     }
     
     setFilterPage(0);

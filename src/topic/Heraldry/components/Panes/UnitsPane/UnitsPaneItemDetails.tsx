@@ -17,7 +17,7 @@ import ButtonCircle from '@/components/UI/ButtonCircle';
 
 import DevelopmentActions from '@/topic/Heraldry/components/DevelopmentActions/DevelopmentActions';
 
-import UnitsPaneItemDetailsFromDevelopmentMode from './UnitsPaneItemDetailsFromDevelopmentMode';
+import UnitsPaneUnitDescription from './UnitsPaneUnitDescription';
 
 type Props = {
   className?: string,
@@ -81,7 +81,7 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
           {' '}
           {place?.name || t('heraldry.item.noLocation')}
         </p>
-        <UnitsPaneItemDetailsFromDevelopmentMode id={unit.id} country={unit.lang} />
+        <UnitsPaneUnitDescription id={unit.id} country={unit.lang} />
         {/* <div className="mt-2 empty:hidden flex gap-1 justify-center">
           {Object.entries(colors?.byNames || {}).map(([colorName, colors = []]) => {
             const title = [
@@ -109,13 +109,13 @@ const UnitsPaneItemDetails = ( { className, unit, setPreviewUnit }: Props) => {
           <p className="my-2">
             <span className="text-[12px]">Rejected:</span>
             {Object.entries(colors?.byNamesRejected || {}).map(([colorName, colors = []]) => {
-              const bestMatch = colors.sort((a, b) => a.distanceToTreshold - b.distanceToTreshold)?.[0];
+              const bestMatch = colors.sort((a, b) => a.distanceToThreshold - b.distanceToThreshold)?.[0];
 
               return (
                 <span
                   key={colorName}
                   className="inline-flex mx-1 size-4 rounded-md bg-[#eee] group overflow-hidden"
-                  title={`${colorName} ${bestMatch?.distanceToTreshold}`} 
+                  title={`${colorName} ${bestMatch?.distanceToThreshold}`} 
                   style={{ backgroundColor: colorsMarkersByNames[colorName], border: `2px solid ${bestMatch.matcherColor}` }}
                 >
                   {colors.map((item) => <span key={item.color} className="color size-full opacity-0 group-hover:opacity-100 duration-300" style={{ backgroundColor: item.color }} />)}

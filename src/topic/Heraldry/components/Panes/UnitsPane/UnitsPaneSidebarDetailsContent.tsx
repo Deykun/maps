@@ -13,7 +13,7 @@ import {
   showUnitOnMap,
 } from '@/topic/Heraldry/stores/cursorStore';
 
-
+import IconAnimal from '@/components/Icons/IconAnimal';
 import IconBook from '@/components/Icons/IconBook';
 import IconMarker from '@/components/Icons/IconMarker';
 import IconMinusMagnifyingGlass from '@/components/Icons/IconMinusMagnifyingGlass';
@@ -30,7 +30,7 @@ import ButtonCircle from '@/components/UI/ButtonCircle';
 
 import DevelopmentActions from '@/topic/Heraldry/components/DevelopmentActions/DevelopmentActions';
 
-import UnitsPaneItemDetailsFromDevelopmentMode from './UnitsPaneItemDetailsFromDevelopmentMode';
+import UnitsPaneUnitDescription from './UnitsPaneUnitDescription';
 import UnitsPaneUnitMarkers from './UnitsPaneUnitMarkers';
 import UnitsPaneUnitColors from './UnitsPaneUnitColors';
 
@@ -40,18 +40,11 @@ type Props = {
   setDetailsUnit: (unit: CoatOfArmsMapData | undefined) => void,
 }
 
-const UnitsPaneSidebarDetailsContent = ( { className, unit, setDetailsUnit }: Props) => {
+const UnitsPaneSidebarDetailsContent = ( { unit, setDetailsUnit }: Props) => {
   const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
-  const { title, url, imagesList, place, markers, colors } = unit;
+  const { title, url, imagesList, place } = unit;
   
   const { t } = useTranslation();
-
-  const markersList = [];
-
-  // const markersList = [
-  //   ...(markers?.animals || []).map((v) => t(`heraldry.animal.${v}`)),
-  //   ...(markers?.items || []).map((v) => t(`heraldry.item.${v}`)),
-  // ];
 
   return (
     <>
@@ -80,14 +73,14 @@ const UnitsPaneSidebarDetailsContent = ( { className, unit, setDetailsUnit }: Pr
               'absolute bottom-0 left-0',
               'flex gap-1 p-1',
             )}>
-              <UnitsPaneUnitColors id={unit.id} country={unit.lang} shouldShowOnlyRejected />  
+              <UnitsPaneUnitColors id={unit.id} country={unit.lang} labelPosition="right" shouldShowOnlyRejected />  
             </div>
           }
           <div className={clsx(
             'absolute bottom-0 right-0',
             'flex gap-1 p-1',
           )}>
-            <UnitsPaneUnitColors id={unit.id} country={unit.lang} />  
+            <UnitsPaneUnitColors id={unit.id} country={unit.lang} labelPosition="left" />  
           </div>
         </span>
         <h3 className="w-full px-2 text-center text-[18px] font-[500] tracking-wide text-white duration-300">
@@ -122,56 +115,7 @@ const UnitsPaneSidebarDetailsContent = ( { className, unit, setDetailsUnit }: Pr
         labelPositions="top"
       />
       <UnitsPaneUnitMarkers id={unit.id} country={unit.lang} />
-      <UnitsPaneItemDetailsFromDevelopmentMode id={unit.id} country={unit.lang} />
-        {/* <div className="mt-2 empty:hidden flex gap-1 justify-center">
-          {Object.entries(colors?.byNames || {}).map(([colorName, colors = []]) => {
-            const title = [
-              `${colors.sort((a, b) => a.distance - b.distance)?.[0]?.distance?.toFixed(1)} p.`,
-              t(`heraldry.color.${colorName}`),
-            ].filter(Boolean).join(' - ');
-
-            return (
-              <span
-                key={colorName}
-                className="inline-flex mr-1 size-3 rounded-[3px] bg-[#eee] shadow-sm group overflow-hidden"
-                title={title} 
-                style={{ backgroundColor: colorsMarkersByNames[colorName] }}
-            >
-              {colors.map((item) => <span
-                key={item.color}
-                className="color size-full opacity-0 group-hover:opacity-100 duration-300"
-                style={{ backgroundColor: item.color }}
-              />)}
-            </span>
-            )
-        })}
-      </div> */}
-      <div className="hidden">
-        <p className="my-2">
-          <span className="text-[12px]">Rejected:</span>
-          {Object.entries(colors?.byNamesRejected || {}).map(([colorName, colors = []]) => {
-            const bestMatch = colors.sort((a, b) => a.distanceToTreshold - b.distanceToTreshold)?.[0];
-
-            return (
-              <span
-                key={colorName}
-                className="inline-flex mx-1 size-4 rounded-md bg-[#eee] group overflow-hidden"
-                title={`${colorName} ${bestMatch?.distanceToTreshold}`} 
-                style={{ backgroundColor: colorsMarkersByNames[colorName], border: `2px solid ${bestMatch.matcherColor}` }}
-              >
-                {colors.map((item) => <span key={item.color} className="color size-full opacity-0 group-hover:opacity-100 duration-300" style={{ backgroundColor: item.color }} />)}
-              </span>
-            );
-          })}
-        </p>
-        <p className="my-2">
-          {(colors?.hexPalette || []).map((hexColor) => {
-            return (
-              <span key={hexColor} className="inline-flex size-4" style={{ backgroundColor: hexColor }} />
-            );
-          })}
-        </p>
-      </div>
+      <UnitsPaneUnitDescription id={unit.id} country={unit.lang} />
     </>
   );
 };

@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
+import clsx from 'clsx';
 
 import {
   useFiltersDevelopmentStore,
@@ -14,9 +15,10 @@ type Props = {
   id: string,
   country: string,
   shouldShowOnlyRejected?: boolean,
+  labelPosition: 'left' | 'right',
 }
 
-const UnitsPaneUnitColors = ({ id, country, shouldShowOnlyRejected = false }: Props) => {
+const UnitsPaneUnitColors = ({ id, country, shouldShowOnlyRejected = false, labelPosition }: Props) => {
   const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
 
   const { t } = useTranslation();
@@ -58,18 +60,17 @@ const UnitsPaneUnitColors = ({ id, country, shouldShowOnlyRejected = false }: Pr
           return false;
         }
 
-        const bestMatch = colors.sort((a, b) => a.distanceToTreshold - b.distanceToTreshold)?.[0];
-
-        const title = isFiltersDevModeActive ? [
-          t(`heraldry.color.${colorName}`),
-          bestMatch?.distanceToTreshold && !['black', 'grey', 'white'].includes(colorName) ? `(distance: ${bestMatch?.distanceToTreshold.toFixed(1)})` : '',
-        ].filter(Boolean).join(' ') : t(`heraldry.color.${colorName}`);
+        const bestMatch = colors.sort((a, b) => a.distanceToThreshold - b.distanceToThreshold)?.[0];
+        const shouldShowThreshold = isFiltersDevModeActive && bestMatch?.distanceToThreshold && !['black', 'grey', 'white'].includes(colorName);
 
         return (
           <span
             key={colorName}
-            className="inline-flex size-[8px] rounded-full bg-[#eee] shadow-md group overflow-hidden"
-            title={title} 
+            // className="inline-flex size-[8px] rounded-full bg-[#eee] shadow-md group overflow-hidden"
+            className={clsx(
+              'inline-flex size-[8px] rounded-full bg-[#eee] shadow-md',
+              'relative ui-tooltip-wrapper ui-tooltip-wrapper--small',
+            )}
             style={{ backgroundColor: colorsMarkersByNames[colorName] }}
           >
             {colors.map((item) => <span
@@ -78,6 +79,12 @@ const UnitsPaneUnitColors = ({ id, country, shouldShowOnlyRejected = false }: Pr
               style={{ backgroundColor: item.color }}
               data-color-from-image={item.color}
             />)}
+            <span className={`ui-tooltip ui-tooltip--${labelPosition}`}>
+              <strong>{t(`heraldry.color.${colorName}`)}</strong>
+              {shouldShowThreshold && 
+                <small><br />distance: {bestMatch?.distanceToThreshold.toFixed(1)}</small>
+              }
+            </span>
           </span>
         )
       })}

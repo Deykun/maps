@@ -11,7 +11,7 @@ type Props = {
   country: string,
 }
 
-const UnitsPaneItemDetailsFromDevelopmentMode = ({ id, country }: Props) => {
+const UnitsPaneUnitDescription = ({ id, country }: Props) => {
   const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
 
   const description = useMemo(() => {
@@ -49,4 +49,4 @@ const UnitsPaneItemDetailsFromDevelopmentMode = ({ id, country }: Props) => {
   );
 };
 
-export default UnitsPaneItemDetailsFromDevelopmentMode;
+export default UnitsPaneUnitDescription;
