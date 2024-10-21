@@ -1,28 +1,19 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import clsx from 'clsx';
 
 import { removeDiacratics } from '@/utils/text';
 
 import useOutsideClick from '@/hooks/useOutsideClick';
 
-import IconEraser from '@/components/Icons/IconEraser';
-import IconTextMagnifyingGlass from '@/components/Icons/IconTextMagnifyingGlass';
-import IconGithub from '@/components/Icons/IconGithub';
-
 import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 import IconCoatOfArms from '@/topic/Heraldry/components/IconCoatOfArms';
 
-import Pane from '@/components/UI/Pane';
 import Panel from '@/components/NewUI/Panel';
 import ButtonIcon from '@/components/NewUI/ButtonIcon';
-import ButtonCircle from '@/components/UI/ButtonCircle';
 
 import { getDoesUnitMatch, getUnitSortRank } from './utils/units';
 
 import UnitsPaneSidebar from './UnitsPane/UnitsPaneSidebar';
-import UnitsPaneItem from './UnitsPane/UnitsPaneItem';
-import UnitsPaneItemDetails from './UnitsPane/UnitsPaneItemDetails';
 
 type Props = {
   children?: React.ReactNode,
@@ -38,8 +29,7 @@ const UnitsPane = ({
   shouldShowCount = false,
   setShouldFetchDetails,
 }: Props) => {
-  // const [isOpen, setIsOpen] = useState(false);
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const [layout, setLayout] = useState<'grid' | 'list'>('grid');
   const [filterPhrase, setFilterPhrase] = useState(phrase);
   const [filteredUnits, setFilteredUnits] = useState(units);
@@ -114,15 +104,7 @@ const UnitsPane = ({
             && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft">{filteredUnits.length}</span>}
         </ButtonIcon>
       </Panel>
-      {/* {isOpen && <UnitsPaneSidebar
-        filterPhrase={filterPhrase}
-        setFilterPhrase={setFilterPhrase}
-        units={filteredUnits}
-        layout={layout}
-        setLayout={setLayout}
-      />} */}
-
-      {<UnitsPaneSidebar
+      {isOpen && <UnitsPaneSidebar
         filterPhrase={filterPhrase}
         setFilterPhrase={setFilterPhrase}
         units={filteredUnits}

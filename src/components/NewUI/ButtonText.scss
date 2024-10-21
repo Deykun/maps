@@ -60,6 +60,16 @@
 .ui-button-text--active {
   > a,
   > button {
-    color: #d2543a;
+    color: #fff;
+
+    > svg {
+      fill: #ff8080;
+    }
+
+    &:hover {
+      > svg {
+        fill: #ffdada;
+      }
+    }
   }
 }

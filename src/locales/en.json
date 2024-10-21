@@ -3,6 +3,7 @@
   "main.country": "Country",
   "main.language": "Language",
   "main.close": "Close",
+  "main.copy": "Copy",
   "heraldry.loading.fetching": "Gathering map data...",
   "heraldry.loading.error": "Oops... There was an error while fetching data.",
   "heraldry.noResult": "(no result)",
@@ -22,7 +23,7 @@
   "heraldry.color.black": "black",
   "heraldry.color.white": "white",
   "heraldry.color.gold": "gold",
-  "heraldry.unit.filterTitle": "Adminitraction unit",
+  "heraldry.unit.filterTitle": "Administration unit",
   "heraldry.unit.ignoreFormerUnits": "Ignore the former units",
   "heraldry.unit.type.currentlyExisting": "currently existing",
   "heraldry.unit.type.et.unit": "admin unit",
@@ -180,6 +181,7 @@
   "heraldry.list.clear": "Clear",
   "heraldry.list.labelGrid": "Grid",
   "heraldry.list.labelList": "List",
+  "heraldry.list.labelDescription": "Description",
   "heraldry.list.showMore": "Show more",
   "heraldry.list.footer": "If you see a mismatched coat of arms, you can report it here:"
 }

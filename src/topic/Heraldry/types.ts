@@ -32,6 +32,7 @@ export type AdministrativeUnitIndex = {
 export type CoatOfArmsMapData = {
   lang: string,
   id: string,
+  mergedIds?: string[],
   index: number,
   title: string,
   url: string,

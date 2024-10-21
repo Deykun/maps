@@ -11,6 +11,7 @@ export default {
   },
   theme: {
     colors: {
+      'current': 'currentColor',
       'ui': '#937979',
       'ui-contrast': '#ffdada',
       'ui-dark': '#4b4b4b',

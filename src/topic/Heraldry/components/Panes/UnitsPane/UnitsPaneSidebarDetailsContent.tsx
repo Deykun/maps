@@ -1,7 +1,6 @@
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
-import { colorsMarkersByNames } from '@/topic/Heraldry/constants';
 
 import { getImageSrcSet } from '@/utils/image';
 
@@ -13,26 +12,19 @@ import {
   showUnitOnMap,
 } from '@/topic/Heraldry/stores/cursorStore';
 
-import IconAnimal from '@/components/Icons/IconAnimal';
 import IconBook from '@/components/Icons/IconBook';
 import IconMarker from '@/components/Icons/IconMarker';
-import IconMinusMagnifyingGlass from '@/components/Icons/IconMinusMagnifyingGlass';
-import IconLink from '@/components/Icons/IconLink';
-import IconWikipedia from '@/components/Icons/IconWikipedia'
 import IconUndo from '@/components/Icons/IconUndo';
 
 
 import Panel from '@/components/NewUI/Panel';
-import ButtonIcon from '@/components/NewUI/ButtonIcon';
 import ButtonText from '@/components/NewUI/ButtonText';
 
-import ButtonCircle from '@/components/UI/ButtonCircle';
-
-import DevelopmentActions from '@/topic/Heraldry/components/DevelopmentActions/DevelopmentActions';
-
-import UnitsPaneUnitDescription from './UnitsPaneUnitDescription';
-import UnitsPaneUnitMarkers from './UnitsPaneUnitMarkers';
 import UnitsPaneUnitColors from './UnitsPaneUnitColors';
+import UnitsPaneUnitDescription from './UnitsPaneUnitDescription';
+import UnitsPaneUnitDevActions from './UnitsPaneUnitDevActions';
+import UnitsPaneUnitMarkers from './UnitsPaneUnitMarkers';
+
 
 type Props = {
   className?: string,
@@ -56,8 +48,12 @@ const UnitsPaneSidebarDetailsContent = ( { unit, setDetailsUnit }: Props) => {
           <span>{t('heraldry.list.title')}</span>
         </ButtonText>
 
-        <span className="text-ui-dark-contrast text-[10px] pr-2">
-          id: {unit.id}
+        <span className="text-ui-dark-contrast text-[10px] text-right pr-2">
+          id: <span className="text-white">{unit.id}</span>    
+          {unit.mergedIds && <small className="line-clamp-1">
+            <br />
+            {unit.mergedIds.join(', ')}
+          </small>}
         </span>
       </div>
       <Panel className="ui-panel--rounded-l ui-panel--rounded-r">
@@ -72,6 +68,7 @@ const UnitsPaneSidebarDetailsContent = ( { unit, setDetailsUnit }: Props) => {
             <div className={clsx(
               'absolute bottom-0 left-0',
               'flex gap-1 p-1',
+              'opacity-10 saturate-0 hover:saturate-100 hover:opacity-100 duration-150',
             )}>
               <UnitsPaneUnitColors id={unit.id} country={unit.lang} labelPosition="right" shouldShowOnlyRejected />  
             </div>
@@ -87,7 +84,7 @@ const UnitsPaneSidebarDetailsContent = ( { unit, setDetailsUnit }: Props) => {
           {title}
         </h3>
       </Panel>
-      <div className="text-center">
+      <div className="flex gap-1 justify-center">
         <ButtonText
           size="small"
           href={url}
@@ -109,12 +106,8 @@ const UnitsPaneSidebarDetailsContent = ( { unit, setDetailsUnit }: Props) => {
           {place?.name || t('heraldry.item.noLocation')}
         </p>
       </Panel>
-      <DevelopmentActions
-        unit={unit}
-        buttonSize="small"
-        labelPositions="top"
-      />
-      <UnitsPaneUnitMarkers id={unit.id} country={unit.lang} />
+      <UnitsPaneUnitMarkers id={unit.id} country={unit.lang} types={unit.type} />
+      <UnitsPaneUnitDevActions unit={unit} />
       <UnitsPaneUnitDescription id={unit.id} country={unit.lang} />
     </>
   );

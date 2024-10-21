@@ -5,25 +5,18 @@ import clsx from 'clsx';
 import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 
 import IconGithub from '@/components/Icons/IconGithub';
-import IconCheck from '@/components/Icons/IconCheck';
 import IconEraser from '@/components/Icons/IconEraser';
-import IconScriptBroken from '@/components/Icons/IconScriptBroken';
 import IconLayoutGrid from '@/components/Icons/IconLayoutGrid';
 import IconLayoutList from '@/components/Icons/IconLayoutList';
 
-
 import Panel from '@/components/NewUI/Panel';
 import Space from '@/components/NewUI/Space';
-import Button from '@/components/UI/Button';
-import ButtonCircle from '@/components/UI/ButtonCircle';
 
 import ButtonIcon from '@/components/NewUI/ButtonIcon';
 
 import UnitsPaneItemGrid from './UnitsPaneItemGrid';
 import UnitsPaneItemList from './UnitsPaneItemList';
 import UnitsPaneSidebarDetailsContent from './UnitsPaneSidebarDetailsContent';
-
-import './UnitsPaneSidebar.scss';
 
 type Props = {
   filterPhrase: string,
@@ -41,34 +34,7 @@ const UnitsPaneSidebar = ({
   setLayout,
 }: Props) => {
   const [filterPage, setFilterPage] = useState(0);
-  // const [detailsUnit, setDetailsUnit] = useState<CoatOfArmsMapData | undefined>(undefined);
-  const [detailsUnit, setDetailsUnit] = useState<CoatOfArmsMapData | undefined>( {
-    "lang": "pl",
-    "index": 0,
-    "id": "miasta-0",
-    "title": "Herb Barda",
-    "url": "https://pl.wikipedia.org/wiki/Herb_Barda",
-    "type": [
-     "miasta"
-    ],
-    "place": {
-     "name": "Bardo (miasto)",
-     "coordinates": {
-      "lat": 50.508611,
-      "lon": 16.743889
-     }
-    },
-    "imagesList": [
-     {
-      "width": "80w",
-      "path": "images/heraldry/pl/miasta/785898e3-herb-barda-80w.webp"
-     },
-     {
-      "width": "320w",
-      "path": "images/heraldry/pl/miasta/785898e3-herb-barda-320w.webp"
-     }
-    ]
-   });
+  const [detailsUnit, setDetailsUnit] = useState<CoatOfArmsMapData | undefined>(undefined);
 
   const { t } = useTranslation();
 
@@ -93,7 +59,9 @@ const UnitsPaneSidebar = ({
     setFilterPage(0);
   }, [units]);
 
-  const itemsToShow = 20 * (filterPage + 1);
+  const pageSize = layout === 'grid' ? 20 : 6;
+
+  const itemsToShow = pageSize * (filterPage + 1);
 
   return (
     <div className="ui-slide-from-right-sidebar fixed top-0 right-0 z-[-1] w-[400px] max-w-[100vw] max-h-[100vh] overflow-auto">
@@ -144,19 +112,19 @@ const UnitsPaneSidebar = ({
               {layout === 'grid' && <ul className="flex flex-wrap gap-[6px] empty:hidden">
                 {units.slice(0, itemsToShow).map((unit) => <UnitsPaneItemGrid unit={unit} setDetailsUnit={setDetailsUnit} />)}
               </ul>}
-              {layout === 'list' && <ul className="flex flex-col gap-[6px] empty:hidden">
+              {layout === 'list' && <ul className="flex flex-col gap-2 empty:hidden">
                 {units.slice(0, itemsToShow).map((unit) => <UnitsPaneItemList unit={unit} setDetailsUnit={setDetailsUnit} />)}
               </ul>}
               
               {units.length > itemsToShow && 
-              <div className={clsx("mt-5 text-center")}>
+              <div className={clsx("mt-2 text-center")}>
                 <button className="snap-center" onClick={() => setFilterPage(filterPage + 1)}>
                   {t('heraldry.list.showMore')} <small>({units.length - itemsToShow})</small>
                 </button>
               </div>}
             </Panel>
             <Panel className="ui-panel--rounded-l ui-panel--rounded-r bg-black">
-              <small className="block text-[14px]">
+              <small className="block text-[10px]">
                 {t('heraldry.list.footer')}
               </small>
               <a

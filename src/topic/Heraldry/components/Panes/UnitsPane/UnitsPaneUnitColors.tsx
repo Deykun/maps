@@ -66,23 +66,22 @@ const UnitsPaneUnitColors = ({ id, country, shouldShowOnlyRejected = false, labe
         return (
           <span
             key={colorName}
-            // className="inline-flex size-[8px] rounded-full bg-[#eee] shadow-md group overflow-hidden"
             className={clsx(
-              'inline-flex size-[8px] rounded-full bg-[#eee] shadow-md',
+              'group inline-flex size-[8px] rounded-full bg-[#eee] shadow-md',
               'relative ui-tooltip-wrapper ui-tooltip-wrapper--small',
             )}
             style={{ backgroundColor: colorsMarkersByNames[colorName] }}
           >
             {colors.map((item) => <span
               key={item.color}
-              className="color size-full opacity-0 group-hover:opacity-100 duration-300"
+              className="color size-full rounded-full opacity-0 group-hover:opacity-100 duration-300"
               style={{ backgroundColor: item.color }}
               data-color-from-image={item.color}
             />)}
             <span className={`ui-tooltip ui-tooltip--${labelPosition}`}>
-              <strong>{t(`heraldry.color.${colorName}`)}</strong>
+              <strong className="capitalize">{t(`heraldry.color.${colorName}`)}</strong>
               {shouldShowThreshold && 
-                <small><br />distance: {bestMatch?.distanceToThreshold.toFixed(1)}</small>
+                <small><br />Distance: <strong>{bestMatch?.distanceToThreshold.toFixed(1)}</strong></small>
               }
             </span>
           </span>

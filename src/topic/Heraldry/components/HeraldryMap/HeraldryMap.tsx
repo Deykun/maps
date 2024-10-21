@@ -26,7 +26,6 @@ const fetchCountryData = async ({ dataPaths, filterForCountryData, sortForCountr
     resposneAll.reduce((stack: {
       [url: string]: CoatOfArmsMapData,
     }, unit: CoatOfArmsMapData) => {
-      // Unique image name
       const uniqueId = unit?.imagesList?.[0]?.path?.split('/').at(-1);
 
       if (uniqueId) {
@@ -34,6 +33,7 @@ const fetchCountryData = async ({ dataPaths, filterForCountryData, sortForCountr
           // It merges duplicates but keeps their type in array
           const typeMerged: string[] = [...(stack[uniqueId].type || []), ...(unit.type || [])];
           stack[uniqueId].type = [...new Set(typeMerged)];
+          stack[uniqueId].mergedIds = Array.isArray(stack[uniqueId]?.mergedIds) ? [...(stack[uniqueId].mergedIds as string[]), unit.id] : [unit.id];
         } else {
           stack[uniqueId] = unit;
         }
@@ -42,6 +42,8 @@ const fetchCountryData = async ({ dataPaths, filterForCountryData, sortForCountr
       return stack;
     }, {}),
   );
+
+  console.log(unitsForMapAll);
 
   if (filterForCountryData) {
     // Filter from the parent

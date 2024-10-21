@@ -36,6 +36,10 @@ h1, h2, h3 {
   scrollbar-width: none;  /* Firefox */
 }
 
+svg {
+  fill: currentColor;
+}
+
 .ui-slide-from-left {
     transform: translateX(calc(-100% - 30px));
   animation: 0.3s uiSlideFromLeft forwards ease-in;
@@ -73,7 +77,7 @@ h1, h2, h3 {
 .ui-slide-from-right-sidebar {
   transform: translateX(calc(100% + 150px));
   opacity: 0;
-  animation: 1s uiSlideFromRight forwards ease-in;
+  animation: 0.5s uiSlideFromRight forwards ease-in;
   transform-origin: center left;
 }
 
@@ -138,10 +142,13 @@ pre span::selection  {
 }
 
 .ui-tooltip {
+  --color: #ffdada;
+  --background: #170505;
+
   position: absolute;
   opacity: 0;
-  color: #170505;
-  background-color: #ffdada;
+  color: var(--color);
+  background-color: var(--background);
   padding: 2px 10px;
   font-size: 12px;
   line-height: 1.4;
@@ -151,6 +158,11 @@ pre span::selection  {
   pointer-events: none;
   transition: 0.15s ease-in-out;
   text-wrap: nowrap;
+}
+
+.ui-tooltip--reverse {
+  --color: #170505;
+  --background: #ffdada;
 }
 
 .ui-tooltip--left {
@@ -166,7 +178,7 @@ pre span::selection  {
     left: 100%;
     transform: translateY(-50%);
     border: 5px solid transparent !important;
-    border-left-color: #ffdada !important;
+    border-left-color: var(--background) !important;
   }
 }
 
@@ -183,7 +195,7 @@ pre span::selection  {
     right: 100%;
     transform: translateY(-50%);
     border: 5px solid transparent !important;
-    border-right-color: #ffdada !important;
+    border-right-color: var(--background) !important;
   }
 }
 
@@ -200,7 +212,7 @@ pre span::selection  {
     bottom: 100%;
     transform: translateX(-50%);
     border: 5px solid transparent !important;
-    border-bottom-color: #ffdada !important;
+    border-bottom-color: var(--background) !important;
   }
 }
 
@@ -217,13 +229,16 @@ pre span::selection  {
     top: 100%;
     transform: translateX(-50%);
     border: 5px solid transparent !important;
-    border-top-color: #ffdada !important;
+    border-top-color: var(--background) !important;
   }
 }
 
 .ui-tooltip-wrapper:hover {
+  z-index: 1;
+
   .ui-tooltip {
     opacity: 1;
+    z-index: 3;
   }
 
   .ui-tooltip--left {

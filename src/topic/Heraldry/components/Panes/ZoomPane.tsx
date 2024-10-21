@@ -8,7 +8,6 @@ import IconMinus from '@/components/Icons/IconMinus';
 import IconControls from '@/components/Icons/IconControls';
 import IconShieldCheckers from '@/components/Icons/IconShieldCheckers';
 
-import Pane from '@/components/UI/Pane';
 import Panel from '@/components/NewUI/Panel';
 import SubPane from '@/components/UI/SubPane';
 
