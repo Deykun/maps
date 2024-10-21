@@ -231,8 +231,9 @@ const HeraldryMapContainerWithUI = ({
               setShouldFetchDetails={setShouldFetchDetails}
             />
             <Space />
-            <FiltersPane
+            <FiltersPane      
               lang={lang}
+              totalVisibleUnits={unitsForMap.length}
               typeFilters={typeFilters}
               setTypeFilters={setTypeFilters}
               typeFiltersList={typeFiltersList}

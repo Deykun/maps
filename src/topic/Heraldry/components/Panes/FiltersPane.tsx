@@ -6,6 +6,8 @@ import useOutsideClick from '@/hooks/useOutsideClick';
 
 import { WITH_ANIMAL, WITHOUT_ANIMAL } from '@/topic/Heraldry/constants';
 
+import { capitalize } from '@/utils/text';
+
 import {
   useFiltersDevelopmentStore,
   toggleFilterDevlopmentMode,
@@ -57,6 +59,7 @@ type FilterSetter = (values: string[]) => void;
 
 type Props = {
   lang: string,
+  totalVisibleUnits: number,
   typeFilters: string[],
   setTypeFilters: FilterSetter,
   typeFiltersList: FilterItem[],
@@ -80,6 +83,7 @@ type Props = {
 
 const FiltersPane = ({
   lang,
+  totalVisibleUnits,
   typeFilters,
   setTypeFilters,
   typeFiltersList,
@@ -142,11 +146,15 @@ const FiltersPane = ({
     setColorFilters([]);
     setAnimalFilters([]);
     setItemFilters([]);
+    setFilterOperator('and');
+    setShouldReverseFilters(false);
   };
 
   const activeTotalTypes = typeFilters.length + (shouldIgnoreFormer ? 1 : 0);
 
   const activeTotal = activeTotalTypes + colorFilters.length + animalFilters.length + itemFilters.length;
+
+  const shouldAddWarningForRevesedFilters = totalVisibleUnits === 0 && shouldReverseFilters;
 
   return (
     <div className="relative pointer-events-auto" id="filters-pane">
@@ -201,6 +209,7 @@ const FiltersPane = ({
             label={t('heraldry.titleSettings')}
           >
             <IconControls />
+            {shouldAddWarningForRevesedFilters && <span className="ui-button-icon-marker">!</span>}
           </ButtonIcon>
         </>}
         {activeTotal > 0 && <>
@@ -219,7 +228,7 @@ const FiltersPane = ({
           </ButtonIcon>
         </>}
       </Panel>
-      {activeMenu === 'type' && <FiltersPaneTypesFilter 
+      {activeMenu === 'type' && <FiltersPaneTypesFilter
         lang={lang}
         typeFilters={typeFilters}
         setTypeFilters={setTypeFilters}
@@ -234,8 +243,8 @@ const FiltersPane = ({
           wrapperClassName="relative bg-white rounded-[8px]"
           className="hover:!bg-transparent"
           onClick={() => toggleColor(name)}
-          label={t(`heraldry.color.${name}`)}
-          labelPosition="bottom"
+          label={capitalize(t(`heraldry.color.${name}`))}
+          labelPosition="bottomLeft"
         >
           <IconColor
             className={clsx('duration-300 drop-shadow-lg', {
@@ -335,7 +344,7 @@ const FiltersPane = ({
           wrapperClassName="ml-auto"
           onClick={() => setFilterOperator(filterOperator === 'and' ? 'or' : 'and')}
           label={`${t('heraldry.filterOperator')} ${t(`heraldry.filterOperator.${filterOperator}`)}`}
-          labelPosition="bottom"
+          labelPosition="bottomLeft"
         >
           {filterOperator === 'and' ? <IconCubeAnd /> : <IconCubeOr />}
         </ButtonIcon>
@@ -343,16 +352,17 @@ const FiltersPane = ({
           wrapperClassName="ml-auto"
           onClick={() => setShouldReverseFilters(!shouldReverseFilters)}
           label={`${t('heraldry.filterReverse')} ${t(`heraldry.filterReverse.${shouldReverseFilters ? 'yes' : 'no'}`)}`}
-          labelPosition="bottom"
+          labelPosition="bottomLeft"
         >
           {shouldReverseFilters ? <IconEyeCrossed /> : <IconEye />}
+          {shouldAddWarningForRevesedFilters && <span className="ui-button-icon-marker">!</span>}
         </ButtonIcon>
         <span className="border-l"></span>
         <ButtonIcon
           isActive={isFiltersDevModeActive}
           onClick={toggleFilterDevlopmentMode}
           label="Development mode"
-          labelPosition="bottom"
+          labelPosition="bottomLeft"
         >
           <IconFlask />
         </ButtonIcon>

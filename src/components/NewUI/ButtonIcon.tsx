@@ -16,7 +16,7 @@ type Props = {
   isActive?: boolean,
   title?: string,
   label?: string,
-  labelPosition?: 'left' | 'right' | 'bottom' | 'top',
+  labelPosition?: 'left' | 'right' | 'bottom' | 'top' | 'bottomRight' | 'bottomLeft',
   tagName?: 'span',
 }
 

@@ -82,7 +82,7 @@ const UnitsPaneSidebar = ({
                   isActive={layout === 'grid'}
                   onClick={() => setLayout('grid')}
                   label={t('heraldry.list.labelGrid')}
-                  labelPosition="right"
+                  labelPosition="bottomRight"
                 >
                   <IconLayoutGrid />
                 </ButtonIcon>
@@ -91,7 +91,7 @@ const UnitsPaneSidebar = ({
                   isActive={layout === 'list'}
                   onClick={() => setLayout('list')}
                   label={t('heraldry.list.labelList')}
-                  labelPosition="right"
+                  labelPosition="bottomRight"
                 >
                   <IconLayoutList />
                 </ButtonIcon>
@@ -101,7 +101,7 @@ const UnitsPaneSidebar = ({
                   isDisabled={filterPhrase.length === 0}
                   onClick={() => setFilterPhrase('')}
                   label={t('heraldry.list.clear')}
-                  labelPosition="left"
+                  labelPosition="bottomLeft"
                 >
                   <IconEraser />
                 </ButtonIcon>

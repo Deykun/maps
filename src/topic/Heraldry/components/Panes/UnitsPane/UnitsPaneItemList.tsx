@@ -60,6 +60,7 @@ const UnitsPaneItemList = ( { className, unit, setDetailsUnit }: Props) => {
           size="small"
           onClick={() => showUnitOnMap(unit.id)}
           label={t('heraldry.item.showOnMap')}
+          labelPosition="bottomLeft"
         >
           <IconMarker />
         </ButtonIcon>

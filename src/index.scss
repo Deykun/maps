@@ -199,7 +199,9 @@ pre span::selection  {
   }
 }
 
-.ui-tooltip--bottom {
+.ui-tooltip--bottom,
+.ui-tooltip--bottomRight,
+.ui-tooltip--bottomLeft {
   top: calc(100% - 5px);
   left: 50%;
   transform: translateX(-50%) scale(0);
@@ -213,6 +215,38 @@ pre span::selection  {
     transform: translateX(-50%);
     border: 5px solid transparent !important;
     border-bottom-color: var(--background) !important;
+  }
+}
+
+.ui-tooltip--bottomRight {
+  left: 12px;
+  transform: scale(0);
+  transform-origin: top left;
+
+  &::after {
+    left: 0;
+    transform: translateX(0);
+  }
+
+  .ui-tooltip-wrapper--small & {
+    left: 8px;
+  }
+}
+
+.ui-tooltip--bottomLeft {
+  right: 12px;
+  left: auto;
+  transform: scale(0);
+  transform-origin: top right;
+
+  &::after {
+    right: 0;
+    left: auto;
+    transform: translateX(0);
+  }
+
+  .ui-tooltip-wrapper--small & {
+    right: 8px;
   }
 }
 
@@ -259,6 +293,12 @@ pre span::selection  {
   .ui-tooltip--bottom {
     top: calc(100% + 10px);
     transform: translateX(-50%) scale(1);
+  }
+
+  .ui-tooltip--bottomRight,
+  .ui-tooltip--bottomLeft {
+    top: calc(100% + 10px);
+    transform: scale(1);
   }
 }
 
