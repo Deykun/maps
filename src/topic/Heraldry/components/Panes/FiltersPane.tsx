@@ -30,7 +30,6 @@ import IconLoader from '@/components/Icons/IconLoader';
 
 import Pane from '@/components/UI/Pane';
 import Panel from '@/components/NewUI/Panel';
-import SubPane from '@/components/UI/SubPane';
 import SubPanel from '@/components/NewUI/SubPanel';
 
 import ButtonIcon from '@/components/NewUI/ButtonIcon';

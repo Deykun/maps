@@ -7,13 +7,13 @@ import IconPlus from '@/components/Icons/IconPlus';
 import IconMinus from '@/components/Icons/IconMinus';
 import IconControls from '@/components/Icons/IconControls';
 import IconShieldCheckers from '@/components/Icons/IconShieldCheckers';
+import IconSquareRounded from '@/components/Icons/IconSquareRounded';
+
 
 import Panel from '@/components/NewUI/Panel';
-import SubPane from '@/components/UI/SubPane';
 import SubPanel from '@/components/NewUI/SubPanel';
 
 import ButtonIcon from '@/components/NewUI/ButtonIcon';
-import ButtonCircle from '@/components/UI/ButtonCircle';
 
 type Props = {
   setZoomLevel: (level: number) => void,
@@ -55,6 +55,7 @@ const ZoomPane = ({
         </ButtonIcon>
         <ButtonIcon onClick={() => setIsOpen(!isOpen)} isActive={isOpen} label={t('heraldry.titleSettings')}>
           <IconControls />
+          {coatSize < 0 && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft">!</span>}
         </ButtonIcon>
       </Panel>
       {isOpen && <SubPanel
@@ -64,8 +65,8 @@ const ZoomPane = ({
         <ButtonIcon onClick={() => setCoatSize(coatSize - 1)} isDisabled={coatSize === coatMin}>
           <IconMinus />
         </ButtonIcon>
-        <span style={{ transform: `scale(${((coatSize + 5) / (coatMax + 5)).toFixed(1)})`}}>
-          <IconShieldCheckers className="size-5" />
+        <span style={{ transform: `scale(${((coatSize + 5) / (coatMax + 5)).toFixed(1)})`}} >
+          {coatSize === -1 ? <IconSquareRounded className="size-5" /> : <IconShieldCheckers className="size-5" />}
         </span>
         <ButtonIcon onClick={() => setCoatSize(coatSize + 1)} isDisabled={coatSize === coatMax}>
           <IconPlus />

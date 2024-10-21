@@ -139,7 +139,7 @@ const UnitsPaneSidebar = ({
           </>
         }
       </div>
-      <Space isLast isLarge className="bg-ui-dark" />
+      <Space side="right" isLast isLarge className="bg-ui-dark" />
     </div>
   );
 }

@@ -152,7 +152,7 @@ const HeraldryMapContainerWithUI = ({
               'ui-slide-from-left ui-pane fixed top-3 left-3 md:left-12 md:ml-6 md:max-w-[calc(100vw_-_145px)] z-30 px-4 empty:hidden': zoomLevel > 1,
             })}>
               {zoomLevel === 1 && 
-                <h1 className={clsx('text-[20px] sm:text-[28px] lg:text-[36px] text-center text-[#aa0d0d]', { 
+                <h1 className={clsx('heading text-[20px] sm:text-[28px] lg:text-[36px] text-center text-ui-dark', { 
                   'hidden': zoomLevel > 1,
                 })}>
                   {t(`heraldry.${lang}.mapTitle`)}
@@ -187,24 +187,25 @@ const HeraldryMapContainerWithUI = ({
               'heraldry-map-footer--zoomed fixed bottom-3 right-3 max-w-[calc(100vw_-24px)] z-30 ui-pane sans text-[12px] py-2 px-3 text-center': zoomLevel > 1,
             })}>
               <p>
-                {zoomLevel === 1 && <>{t('heraldry.mapFooterSource')} <strong className="text-black">wikipedia.org</strong>.<br /></>}
+                {zoomLevel === 1 && <>{t('heraldry.mapFooterSource')} <strong className="text-ui-dark">wikipedia.org</strong>.<br /></>}
                 {' '}
-                {t('heraldry.mapFooterAllCoats')} <strong className="text-black">{unitsForMapAll.length}</strong>
+                {t('heraldry.mapFooterAllCoats')} <strong className="text-ui-dark">{unitsForMapAll.length}</strong>
                 {unitsForMapAll.length > units.length && <>{t('heraldry.mapFooterCoatsAfterFilter')}
                 {' '}
                 <strong className={clsx({
-                  'text-black': units.length > 0,
+                  'text-ui-dark': units.length > 0,
                   'text-[#ca1a1a]': units.length === 0 })
                 }>{units.length}</strong>
-                {units.length > 10 && <>{' '}- <strong className="text-black">
+                {units.length > 10 && <>{' '}- <strong className="text-ui-dark">
                   {(100 * (units.length / unitsForMapAll.length)).toFixed(2)}
                 </strong><small>%</small></>}</>}.
               </p>
             </div>
           </section>
-          <div className={clsx('ui-slide-from-left fixed top-3 left-3 z-20 flex flex-col gap-3 pointer-events-none', {
+          <div className={clsx('ui-slide-from-left fixed top-0 left-0 z-20 flex flex-col pointer-events-none', {
             'hidden md:flex': zoomLevel > 1 && subtitleParts.length !== 0,
           })}>
+            <Space side="left" />
             <NavigationPane />
             <DevelopmentPane
               country={lang}
@@ -212,7 +213,7 @@ const HeraldryMapContainerWithUI = ({
             />
           </div>
           <div className="ui-slide-from-right fixed top-0 right-0 z-20 flex flex-col pointer-events-none">          
-            <Space />
+            <Space side="right" />
             <ZoomPane
               zoomLevel={zoomLevel}
               setZoomLevel={setZoomLevel}
@@ -220,17 +221,17 @@ const HeraldryMapContainerWithUI = ({
               zoomMax={9}
               coatSize={coatSize}
               setCoatSize={setCoatSize}
-              coatMin={1}
-              coatMax={9}
+              coatMin={-1}
+              coatMax={11}
             />
-            <Space />
+            <Space side="right" />
             <UnitsPane
               units={units}
               phrase={listPhrase}
               shouldShowCount={listPhrase.length > 0}
               setShouldFetchDetails={setShouldFetchDetails}
             />
-            <Space />
+            <Space side="right" />
             <FiltersPane      
               lang={lang}
               totalVisibleUnits={unitsForMap.length}
@@ -254,7 +255,7 @@ const HeraldryMapContainerWithUI = ({
               setShouldFetchDetails={setShouldFetchDetails}
               isFetchingDetails={isFetchingDetails}
             />
-            <Space isLast />
+            <Space side="right" isLast />
           </div>
         </>
     );

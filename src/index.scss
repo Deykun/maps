@@ -41,35 +41,41 @@ svg {
 }
 
 .ui-slide-from-left {
-    transform: translateX(calc(-100% - 30px));
-  animation: 0.3s uiSlideFromLeft forwards ease-in;
-  animation-delay: 0.15s;
+  opacity: 0;
+  transform: translateX(calc(-100% - 30px));
+  animation: 0.5s uiSlideFromLeft forwards ease-in;
+  animation-delay: 0.3s;
   transform-origin: top right;
 }
 
 @keyframes uiSlideFromLeft {
   0% {
+    opacity: 0;
     transform: translateX(calc(-100% - 30px));
   }
 
   100% {
-    transform: translateX(0) scale(1);
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
 .ui-slide-from-right {
+  opacity: 0;
   transform: translateX(calc(100% + 30px));
-  animation: 0.3s uiSlideFromRight forwards ease-in;
-  animation-delay: 0.15s;
+  animation: 0.5s uiSlideFromRight forwards ease-in;
+  animation-delay: 0.3s;
   transform-origin: top left;
 }
 
 @keyframes uiSlideFromRight {
   0% {
+    opacity: 0;
     transform: translateX(calc(100% + 30px));
   }
 
   100% {
+    opacity: 1;
     transform: translateX(0);
   }
 }

@@ -43,8 +43,6 @@ const fetchCountryData = async ({ dataPaths, filterForCountryData, sortForCountr
     }, {}),
   );
 
-  console.log(unitsForMapAll);
-
   if (filterForCountryData) {
     // Filter from the parent
     unitsForMapAll = filterForCountryData(unitsForMapAll);

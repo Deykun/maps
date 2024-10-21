@@ -1,8 +1,13 @@
 .ui-space {
-  @apply pointer-events-none h-[12px] w-[16px] ml-auto bg-ui;
+  @apply pointer-events-none h-[12px] w-[16px] bg-ui;
 
   &.ui-space--is-last {
     @apply w-[12px];
+  }
+
+  &.ui-space--top-right,
+  &.ui-space--bottom-right {
+    @apply ml-auto;
   }
 
   &.ui-space--top-right {
@@ -21,5 +26,17 @@
     @apply -mb-[1px];
 
     mask: radial-gradient(12px at 0 0, transparent 94%, black) 0 100%;
+  }
+
+  &.ui-space--top-left {
+    @apply -mt-[1px];
+
+    mask: radial-gradient(12px at 100% 100%, transparent 94%, black) 0 -100%;
+  }
+
+  &.ui-space--bottom-left {
+    @apply -mb-[1px];
+
+    mask: radial-gradient(12px at 100% 0, transparent 94%, black) 0 100%;
   }
 }

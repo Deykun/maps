@@ -19,7 +19,7 @@ export default {
       'ui-dark-contrast': '#e8b7b7',
       'white': '#fff',
       'black': '#000',
-      'marker': 'ff8080',
+      'marker': '#ff8080',
     },
   },
   plugins: [],

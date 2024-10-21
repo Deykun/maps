@@ -95,13 +95,18 @@ export class CoatOfArms {
   }
 
   draw() {
-    if (!this.image.complete) {
-      this.ctx.fillStyle = '#7b7b7b';
+    if (!this.image.complete || this.width === 0) {
+      this.ctx.shadowOffsetX = 0;
+      this.ctx.shadowOffsetY = 3;
+      this.ctx.shadowBlur = 3;
+      this.ctx.shadowColor = 'rgba(47, 121, 121, 0.1)';
+
+      this.ctx.fillStyle = '#a62727';
       this.ctx.fillRect(
-        this.x - 2,
-        this.y - 2,
-        4, // width
-        4, // height
+        this.x - 1,
+        this.y - 1,
+        3, // width
+        3, // height
       );
 
       return;
@@ -138,6 +143,11 @@ export class CoatOfArms {
     // );
 
     // this.ctx.filter = 'grayscale(0) brightness(1)';
+    
+    this.ctx.shadowOffsetX = 0;
+    this.ctx.shadowOffsetY = 3;
+    this.ctx.shadowBlur = 3;
+    this.ctx.shadowColor = 'rgba(47, 121, 121, 0.1)';
 
     this.ctx.drawImage(
       this.image,

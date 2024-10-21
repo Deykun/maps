@@ -3,23 +3,24 @@ import clsx from 'clsx';
 import './Space.scss';
 
 type Props = {
+  side: 'left' | 'right'
   className?: string,
   isLast?: boolean,
   isLarge?: boolean,
 }
 
-const Space = ({ className, isLast = false, isLarge = false }: Props) => {
+const Space = ({ side, className, isLast = false, isLarge = false }: Props) => {
   return (
     <>
       <div
-        className={clsx('ui-space ui-space--top-right first:hidden', {
+        className={clsx(`ui-space ui-space--top-${side} first:hidden`, {
           [className || '']: className,
           'ui-space--is-last': isLast,
           'ui-space--is-large': isLarge,
         })}
       />
       <div
-        className={clsx('ui-space ui-space--bottom-right last:hidden', {
+        className={clsx(`ui-space ui-space--bottom-${side} last:hidden`, {
           [className || '']: className,
         })}
       />

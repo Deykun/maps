@@ -1,24 +1,39 @@
+:root {
+  // --region-bg: #f2f2f2;
+  // --region-bg--hover: #fff;
+  // --region-border: #d0d0d0;
+  // --region-border--large: #999;
+
+  --region-bg: #f4ebeb;
+  --region-bg--hover: #fff7f7;
+  --region-border: #d7d2d2;
+  --region-border--large: #bba6a6;
+  --map-shadow: #e8c4c42b;
+}
+
 .heraldry-map-canvas {
   width: auto;
 
   > svg {
     @apply mx-auto;
 
-    filter:
-      drop-shadow(0 3px 3px #0f0c0c1f)
-      drop-shadow(0 3px 0 #a6a6a6)
-      drop-shadow(0 2px 0 #7f7f7f)
-      drop-shadow(0 1px 0 #7f7f7f);
+    // filter:
+    //   drop-shadow(0 3px 3px #0f0c0c1f)
+    //   drop-shadow(0 3px 0 #a6a6a6)
+    //   drop-shadow(0 2px 0 #7f7f7f)
+    //   drop-shadow(0 1px 0 #7f7f7f);
+
+    filter: drop-shadow(0 3px 2px var(--map-shadow));
 
     path {
-      fill: #f2f2f2;
-      stroke: #d0d0d0;
+      fill: var(--region-bg);
+      stroke: var(--region-border);
       stroke-width: 1px;
       transition: 0.3s ease-in-out;
       vector-effect: non-scaling-stroke !important;
 
       &:hover {
-        fill: #fff !important;
+        fill: var(--region-bg--hover) !important;
       }
     }
   }
@@ -26,7 +41,7 @@
   #layer1 path {
     fill: transparent;
     pointer-events: none;
-    stroke: #999;
+    stroke: var(--region-border--large);
     stroke-width: 1px;
 
     &:hover {
