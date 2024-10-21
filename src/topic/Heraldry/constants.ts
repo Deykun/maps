@@ -22,13 +22,13 @@ export const colorsByNamesGrayscale: Colors = {
 };
 
 export const colorsMarkersByNames: Colors = {
+  black: '#000',
+  grey: '#888',
+  white: '#fff',
+  gold: '#bfa14e',
   red: '#d61e27',
   green: '#299649',
   blue: '#1d7dc0',
-  white: '#fff',
-  grey: '#888',
-  black: '#000',
-  gold: '#bfa14e',
 };
 
 export const numberOfColumnsPerSprite = 50;

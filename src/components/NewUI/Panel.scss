@@ -9,7 +9,8 @@
     @apply rounded-r-[12px];
   }
 
-  > .border-t {
+  > .border-t,
+  > .border-l {
     border-style: dashed;
     border-color: #7b6767;
   }

@@ -29,6 +29,7 @@ import IconLoader from '@/components/Icons/IconLoader';
 import Pane from '@/components/UI/Pane';
 import Panel from '@/components/NewUI/Panel';
 import SubPane from '@/components/UI/SubPane';
+import SubPanel from '@/components/NewUI/SubPanel';
 
 import ButtonIcon from '@/components/NewUI/ButtonIcon';
 import ButtonCircle from '@/components/UI/ButtonCircle';
@@ -227,14 +228,14 @@ const FiltersPane = ({
         shouldIgnoreFormer={shouldIgnoreFormer}
         setShouldIgnoreFormer={setShouldIgnoreFormer}
       />}
-      {activeMenu === 'color' && <SubPane order={2} className="ui-slide-from-top ui-pane-magic-border absolute right-full z-50 mt-2 mr-3 flex-row">
-        {Object.keys(colorsMarkersByNames).map((name) => <ButtonCircle
+      {activeMenu === 'color' && <SubPanel order={2} className="ui-slide-from-right-sidebar z-[-1] mt-2 absolute right-12 mr-2 flex-row">
+        {Object.keys(colorsMarkersByNames).map((name) => <ButtonIcon
           key={name}
-          className={clsx({
-            'border border-[#eac6a8]': colorFilters.includes(name),
-          })}
+          wrapperClassName="relative bg-white rounded-[8px]"
+          className="hover:!bg-transparent"
           onClick={() => toggleColor(name)}
-          title={t(`heraldry.unit.type.${lang}.${name}`)}
+          label={t(`heraldry.color.${name}`)}
+          labelPosition="bottom"
         >
           <IconColor
             className={clsx('duration-300 drop-shadow-lg', {
@@ -244,8 +245,9 @@ const FiltersPane = ({
               fill: colorsMarkersByNames[name],
             }}
           />
-        </ButtonCircle>)}
-      </SubPane>}
+          {colorFilters.includes(name) && <span className="ui-button-icon-marker-dot" />}
+        </ButtonIcon>)}
+      </SubPanel>}
       {activeMenu === 'animal' && <Pane className="ui-slide-from-top ui-pane-magic-border fixed top-0 right-full z-50 w-[400px] mr-3">
         <h3 className="flex gap-3 items-center">
           <IconAnimal className="size-5" />
@@ -328,26 +330,33 @@ const FiltersPane = ({
           )}
         </div>}
       </Pane>}
-      {activeMenu === 'settings' && <SubPane order={5} className="ui-slide-from-top ui-pane-magic-border absolute right-12 mt-2 mr-3 flex-row">
-        <ButtonCircle
+      {activeMenu === 'settings' && <SubPanel order={5} className="ui-slide-from-right-sidebar z-[-1] mt-2 absolute right-12 mr-2 flex-row">
+        <ButtonIcon
           wrapperClassName="ml-auto"
           onClick={() => setFilterOperator(filterOperator === 'and' ? 'or' : 'and')}
-          title={`${t('heraldry.filterOperator')} ${t(`heraldry.filterOperator.${filterOperator}`)}`}
+          label={`${t('heraldry.filterOperator')} ${t(`heraldry.filterOperator.${filterOperator}`)}`}
+          labelPosition="bottom"
         >
           {filterOperator === 'and' ? <IconCubeAnd /> : <IconCubeOr />}
-        </ButtonCircle>
-        <ButtonCircle
+        </ButtonIcon>
+        <ButtonIcon
           wrapperClassName="ml-auto"
           onClick={() => setShouldReverseFilters(!shouldReverseFilters)}
-          title={`${t('heraldry.filterReverse')} ${t(`heraldry.filterReverse.${shouldReverseFilters ? 'yes' : 'no'}`)}`}
+          label={`${t('heraldry.filterReverse')} ${t(`heraldry.filterReverse.${shouldReverseFilters ? 'yes' : 'no'}`)}`}
+          labelPosition="bottom"
         >
           {shouldReverseFilters ? <IconEyeCrossed /> : <IconEye />}
-        </ButtonCircle>
+        </ButtonIcon>
         <span className="border-l"></span>
-        <ButtonCircle isActive={isFiltersDevModeActive} onClick={toggleFilterDevlopmentMode}>
+        <ButtonIcon
+          isActive={isFiltersDevModeActive}
+          onClick={toggleFilterDevlopmentMode}
+          label="Development mode"
+          labelPosition="bottom"
+        >
           <IconFlask />
-        </ButtonCircle>
-      </SubPane>}
+        </ButtonIcon>
+      </SubPanel>}
     </div>
   );
 }

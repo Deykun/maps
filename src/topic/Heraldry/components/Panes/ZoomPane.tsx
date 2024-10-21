@@ -10,6 +10,7 @@ import IconShieldCheckers from '@/components/Icons/IconShieldCheckers';
 
 import Panel from '@/components/NewUI/Panel';
 import SubPane from '@/components/UI/SubPane';
+import SubPanel from '@/components/NewUI/SubPanel';
 
 import ButtonIcon from '@/components/NewUI/ButtonIcon';
 import ButtonCircle from '@/components/UI/ButtonCircle';
@@ -56,17 +57,20 @@ const ZoomPane = ({
           <IconControls />
         </ButtonIcon>
       </Panel>
-      {isOpen && <SubPane order={2} className="ui-slide-from-top absolute top-0 right-12 z-[100] mr-2 flex-row items-center">
-        <ButtonCircle onClick={() => setCoatSize(coatSize - 1)} isDisabled={coatSize === coatMin}>
+      {isOpen && <SubPanel
+        order={2}
+        className="ui-slide-from-right-sidebar z-[-1] absolute top-0 right-12 mr-2 flex-row items-center"
+      >
+        <ButtonIcon onClick={() => setCoatSize(coatSize - 1)} isDisabled={coatSize === coatMin}>
           <IconMinus />
-        </ButtonCircle>
-        <span style={{ transform: `scale(${((coatSize + 5) / (coatMax + 5)).toFixed(1)})`}} className="drop-shadow-[0_0_4px_rgba(255,255,255,0.95)]">
+        </ButtonIcon>
+        <span style={{ transform: `scale(${((coatSize + 5) / (coatMax + 5)).toFixed(1)})`}}>
           <IconShieldCheckers className="size-5" />
         </span>
-        <ButtonCircle onClick={() => setCoatSize(coatSize + 1)} isDisabled={coatSize === coatMax}>
+        <ButtonIcon onClick={() => setCoatSize(coatSize + 1)} isDisabled={coatSize === coatMax}>
           <IconPlus />
-        </ButtonCircle>
-      </SubPane>}
+        </ButtonIcon>
+      </SubPanel>}
     </div>
   );
 }

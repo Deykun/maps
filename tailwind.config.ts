@@ -11,6 +11,7 @@ export default {
   },
   theme: {
     colors: {
+      'transparent': 'transparent',
       'current': 'currentColor',
       'ui': '#937979',
       'ui-contrast': '#ffdada',
