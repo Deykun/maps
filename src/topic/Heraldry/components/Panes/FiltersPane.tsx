@@ -99,7 +99,7 @@ const FiltersPane = ({
   setShouldFetchDetails,
   isFetchingDetails,
 }: Props) => {
-  const isFiltersDevelopmentModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
+  const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
   const [activeMenu, setActiveMenu] = useState('');
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
@@ -115,7 +115,7 @@ const FiltersPane = ({
     } else {
       setShouldFetchDetails(true);
     }
-  }, [isOpen])
+  }, [isOpen]);
 
   const toggleMenu = (name: string) => () => setActiveMenu((v) => v === name ? '' : name); 
 
@@ -344,7 +344,7 @@ const FiltersPane = ({
           {shouldReverseFilters ? <IconEyeCrossed /> : <IconEye />}
         </ButtonCircle>
         <span className="border-l"></span>
-        <ButtonCircle isActive={isFiltersDevelopmentModeActive} onClick={toggleFilterDevlopmentMode}>
+        <ButtonCircle isActive={isFiltersDevModeActive} onClick={toggleFilterDevlopmentMode}>
           <IconFlask />
         </ButtonCircle>
       </SubPane>}

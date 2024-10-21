@@ -37,12 +37,12 @@ const DevelopmentActions = ({
   shouldShowDescription = false,
 }: Props) => {
   const [isMoreOpen, setIsMoreOpen] = useState(false);
-  const isFiltersDevelopmentModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
+  const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
   const filterExclude = useFiltersDevelopmentStore((state) => state.filter.exclude);
   const filterInclude = useFiltersDevelopmentStore((state) => state.filter.include);
 
   const description = useMemo(() => {
-    if (!isFiltersDevelopmentModeActive || !shouldShowDescription) {
+    if (!isFiltersDevModeActive || !shouldShowDescription) {
       return undefined;
     }
 
@@ -55,7 +55,7 @@ const DevelopmentActions = ({
     return undefined;
   }, [unit.id]);
 
-  if (!isFiltersDevelopmentModeActive) {
+  if (!isFiltersDevModeActive) {
     return null;
   }
 

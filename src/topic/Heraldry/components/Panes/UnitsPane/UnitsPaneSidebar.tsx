@@ -1,4 +1,4 @@
-import { memo, useState } from 'react';
+import { memo, useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import clsx from 'clsx';
 
@@ -20,6 +20,7 @@ import ButtonCircle from '@/components/UI/ButtonCircle';
 import ButtonIcon from '@/components/NewUI/ButtonIcon';
 
 import UnitsPaneItemGrid from './UnitsPaneItemGrid';
+import UnitsPaneItemList from './UnitsPaneItemList';
 import UnitsPaneSidebarDetailsContent from './UnitsPaneSidebarDetailsContent';
 
 import './UnitsPaneSidebar.scss';
@@ -28,12 +29,16 @@ type Props = {
   filterPhrase: string,
   setFilterPhrase: (value: string) => void,
   units?: CoatOfArmsMapData[],
+  layout: 'grid' | 'list',
+  setLayout: (value: 'grid' | 'list') => void,
 };
 
 const UnitsPaneSidebar = ({
   units = [],
   filterPhrase,
   setFilterPhrase,
+  layout,
+  setLayout,
 }: Props) => {
   const [filterPage, setFilterPage] = useState(0);
   // const [detailsUnit, setDetailsUnit] = useState<CoatOfArmsMapData | undefined>(undefined);
@@ -67,6 +72,21 @@ const UnitsPaneSidebar = ({
 
   const { t } = useTranslation();
 
+  useEffect(() => {
+    setFilterPage(0);
+  }, [layout]);
+
+  useEffect(() => {
+    if (units.length === 0) {
+      setFilterPage(0);
+      setDetailsUnit(undefined);
+
+      return;
+    }
+    
+    setFilterPage(0);
+  }, [units]);
+
   const itemsToShow = 20 * (filterPage + 1);
 
   return (
@@ -85,8 +105,8 @@ const UnitsPaneSidebar = ({
               <div className="mt-2 flex gap-1">
                 <ButtonIcon
                   size="small"
-                  isActive
-                  onClick={() => setFilterPhrase('')}
+                  isActive={layout === 'grid'}
+                  onClick={() => setLayout('grid')}
                   label={t('heraldry.list.labelGrid')}
                   labelPosition="right"
                 >
@@ -94,7 +114,8 @@ const UnitsPaneSidebar = ({
                 </ButtonIcon>
                 <ButtonIcon
                   size="small"
-                  onClick={() => setFilterPhrase('')}
+                  isActive={layout === 'list'}
+                  onClick={() => setLayout('list')}
                   label={t('heraldry.list.labelList')}
                   labelPosition="right"
                 >
@@ -114,9 +135,13 @@ const UnitsPaneSidebar = ({
             </Panel>
             <Panel className="ui-panel--rounded-l ui-panel--rounded-r text-[14px]">
               {units.length === 0 && <p className="text-center my-2">{t('heraldry.noResult')}</p>}
-              <ul className="flex flex-wrap gap-[6px]">
+              {layout === 'grid' && <ul className="flex flex-wrap gap-[6px] empty:hidden">
                 {units.slice(0, itemsToShow).map((unit) => <UnitsPaneItemGrid unit={unit} setDetailsUnit={setDetailsUnit} />)}
-              </ul>
+              </ul>}
+              {layout === 'list' && <ul className="flex flex-col gap-[6px] empty:hidden">
+                {units.slice(0, itemsToShow).map((unit) => <UnitsPaneItemList unit={unit} setDetailsUnit={setDetailsUnit} />)}
+              </ul>}
+              
               {units.length > itemsToShow && 
               <div className={clsx("mt-5 text-center")}>
                 <button className="snap-center" onClick={() => setFilterPage(filterPage + 1)}>

@@ -12,10 +12,10 @@ type Props = {
 }
 
 const UnitsPaneItemDetailsFromDevelopmentMode = ({ id, country }: Props) => {
-  const isFiltersDevelopmentModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
+  const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
 
   const description = useMemo(() => {
-    if (!isFiltersDevelopmentModeActive) {
+    if (!isFiltersDevModeActive) {
       return undefined;
     }
 
@@ -28,7 +28,7 @@ const UnitsPaneItemDetailsFromDevelopmentMode = ({ id, country }: Props) => {
     return undefined;
   }, [id, country]);
 
-  if (!isFiltersDevelopmentModeActive || !description) {
+  if (!isFiltersDevModeActive || !description) {
     return null;
   }
 

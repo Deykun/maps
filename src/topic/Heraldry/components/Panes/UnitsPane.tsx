@@ -29,43 +29,47 @@ type Props = {
   units?: CoatOfArmsMapData[],
   phrase?: string,
   shouldShowCount?: boolean,
+  setShouldFetchDetails: (value: boolean) => void,
 }
 
 const UnitsPane = ({ 
   units = [],
   phrase = '',
   shouldShowCount = false,
+  setShouldFetchDetails,
 }: Props) => {
   // const [isOpen, setIsOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(true);
-  const [isOpenOld, setIsOpenOld] = useState(false);
-  const [previewUnit, setPreviewUnit] = useState<CoatOfArmsMapData | undefined>(undefined);
+  const [layout, setLayout] = useState<'grid' | 'list'>('grid');
   const [filterPhrase, setFilterPhrase] = useState(phrase);
   const [filteredUnits, setFilteredUnits] = useState(units);
-  const [filterPage, setFilterPage] = useState(0);
 
   const { t } = useTranslation();
 
   useOutsideClick('#units-pane', () => {
     setIsOpen(false);
   }, '.heraldry-cursor-last-point-wrapper');
+ 
+
+  useEffect(() => {
+    if (isOpen) {
+      setShouldFetchDetails(true);
+    }
+  }, [isOpen]);
 
   useEffect(() => {
     if (units.length === 0) {
       setIsOpen(false);
       setFilterPhrase('');
-      setFilterPage(0);
-      setPreviewUnit(undefined);
 
       return;
     }
     
-    setFilterPage(0);
     setFilterPhrase(phrase);
   }, [units, phrase]);
 
   useEffect(() => {
-    setPreviewUnit(undefined);
+    // setPreviewUnit(undefined);
 
     if (filterPhrase === '') {
       /*
@@ -92,8 +96,6 @@ const UnitsPane = ({
     setFilteredUnits(filteredUnits);
   }, [units, filterPhrase]);
 
-  const itemsToShow = 5 + 10 * filterPage;
-
   return (
     <div className="pointer-events-auto" id="units-pane">
       <Panel className="ui-panel--rounded-l">
@@ -111,81 +113,22 @@ const UnitsPane = ({
             && filteredUnits.length < 100
             && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft">{filteredUnits.length}</span>}
         </ButtonIcon>
-        <ButtonIcon
-          id="units-pane-toggle"
-          isDisabled={units.length === 0}
-          isActive={isOpenOld}
-          onClick={() => setIsOpenOld(!isOpenOld)}
-          label="old"
-        >
-          <IconCoatOfArms units={filteredUnits} />
-          {shouldShowCount
-            && phrase === filterPhrase
-            && filteredUnits.length > 0
-            && filteredUnits.length < 100
-            && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft">{filteredUnits.length}</span>}
-        </ButtonIcon>
       </Panel>
-      {isOpen && <UnitsPaneSidebar
+      {/* {isOpen && <UnitsPaneSidebar
         filterPhrase={filterPhrase}
         setFilterPhrase={setFilterPhrase}
         units={filteredUnits}
-      />}
+        layout={layout}
+        setLayout={setLayout}
+      />} */}
 
       {<UnitsPaneSidebar
         filterPhrase={filterPhrase}
         setFilterPhrase={setFilterPhrase}
         units={filteredUnits}
+        layout={layout}
+        setLayout={setLayout}
       />}
-      {isOpenOld && <Pane className="ui-slide-from-top absolute top-0 right-full z-50 w-[400px] overflow-auto mr-3">
-        <div className="relative flex gap-1 justify-center items-center">
-          <IconTextMagnifyingGlass className="size-4 absolute top-1/2 -translate-y-1/2 left-3 md:left-8 opacity-20" />
-          <input
-            value={filterPhrase}
-            onChange={(e) => setFilterPhrase(e.target.value || '')}
-            className={clsx('w-full p-1 pl-[50px] md:pl-[85px] pr-[40px] h-[34px] leading-[34px] font-[600] rounded-t-[4px] bg-white border', {
-              'text-[16px]': filterPhrase.length < 10,
-              'text-[12px]': filterPhrase.length >= 10,
-            })}
-            placeholder={t('heraldry.list.limitListToPlaceholder')}
-          />
-          <ButtonCircle
-            wrapperClassName="absolute top-1/2 right-1 -translate-y-1/2"
-            id="units-pane-toggle"
-            isDisabled={filterPhrase.length === 0}
-            onClick={() => setFilterPhrase('')}
-            size="small"
-          >
-            <IconEraser />
-          </ButtonCircle>
-        </div>
-        {previewUnit && <UnitsPaneItemDetails unit={previewUnit} setPreviewUnit={setPreviewUnit} />}
-        {!previewUnit && <div className="border-t pt-2 pb-4 max-h-[480px] snap-y overflow-auto">
-          {filteredUnits.length === 0 && <p className="text-center text-[14px] my-2">{t('heraldry.noResult')}</p>}
-          <ul className="flex flex-col gap-3 empty:hidden">
-            {filteredUnits.slice(0, itemsToShow).map((unit) => (
-              <UnitsPaneItem key={unit.id} className="snap-end" unit={unit} setPreviewUnit={setPreviewUnit} />
-            ))}
-          </ul>
-          <div className={clsx("mt-5 text-center", {
-            'hidden': filteredUnits.length <= itemsToShow,
-          })}>
-            <button className="snap-center" onClick={() => setFilterPage(filterPage + 1)}>
-              {t('heraldry.list.showMore')}
-            </button>
-          </div>
-        </div>
-        }
-        <p className="sans tracking-wider text-right rounded-b-[4px] p-2 text-white bg-[#000000ba] hover:bg-[#000000cb] duration-300">
-          <small className="block text-[8px] sm:text-[10px]">
-            {t('heraldry.list.footer')}
-          </small>
-          <a href="https://github.com/Deykun/maps/issues" target="_blank" className="text-[8px] sm:text-[12px] font-[500]">
-            github.com/Deykun/maps/issues
-            <IconGithub className="inline size-5 fill-current ml-2" />
-          </a>
-        </p>
-      </Pane>}
     </div>
   );
 }

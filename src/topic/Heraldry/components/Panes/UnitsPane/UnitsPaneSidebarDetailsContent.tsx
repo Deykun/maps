@@ -6,6 +6,10 @@ import { colorsMarkersByNames } from '@/topic/Heraldry/constants';
 import { getImageSrcSet } from '@/utils/image';
 
 import {
+  useFiltersDevelopmentStore,
+} from '@/topic/Heraldry/stores/filtersDevelopmentStore';
+
+import {
   showUnitOnMap,
 } from '@/topic/Heraldry/stores/cursorStore';
 
@@ -37,6 +41,7 @@ type Props = {
 }
 
 const UnitsPaneSidebarDetailsContent = ( { className, unit, setDetailsUnit }: Props) => {
+  const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
   const { title, url, imagesList, place, markers, colors } = unit;
   
   const { t } = useTranslation();
@@ -69,13 +74,20 @@ const UnitsPaneSidebarDetailsContent = ( { className, unit, setDetailsUnit }: Pr
             srcSet={getImageSrcSet(imagesList)}
             className="size-full object-contain p-2 rounded-[8px] bg-white"
             alt=""
-          />      
-          <div className="absolute bottom-0 right-0 translate-y-[50%]  flex gap-2">
-            <DevelopmentActions
-              unit={unit}
-              buttonSize="small"
-              labelPositions="top"
-            />
+          />
+          {isFiltersDevModeActive &&
+            <div className={clsx(
+              'absolute bottom-0 left-0',
+              'flex gap-1 p-1',
+            )}>
+              <UnitsPaneUnitColors id={unit.id} country={unit.lang} shouldShowOnlyRejected />  
+            </div>
+          }
+          <div className={clsx(
+            'absolute bottom-0 right-0',
+            'flex gap-1 p-1',
+          )}>
+            <UnitsPaneUnitColors id={unit.id} country={unit.lang} />  
           </div>
         </span>
         <h3 className="w-full px-2 text-center text-[18px] font-[500] tracking-wide text-white duration-300">
@@ -104,9 +116,13 @@ const UnitsPaneSidebarDetailsContent = ( { className, unit, setDetailsUnit }: Pr
           {place?.name || t('heraldry.item.noLocation')}
         </p>
       </Panel>
+      <DevelopmentActions
+        unit={unit}
+        buttonSize="small"
+        labelPositions="top"
+      />
       <UnitsPaneUnitMarkers id={unit.id} country={unit.lang} />
       <UnitsPaneItemDetailsFromDevelopmentMode id={unit.id} country={unit.lang} />
-      <UnitsPaneUnitColors id={unit.id} country={unit.lang} />
         {/* <div className="mt-2 empty:hidden flex gap-1 justify-center">
           {Object.entries(colors?.byNames || {}).map(([colorName, colors = []]) => {
             const title = [

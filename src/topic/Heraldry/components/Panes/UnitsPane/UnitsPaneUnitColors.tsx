@@ -1,6 +1,10 @@
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import {
+  useFiltersDevelopmentStore,
+} from '@/topic/Heraldry/stores/filtersDevelopmentStore';
+
 import { colorsMarkersByNames } from '@/topic/Heraldry/constants';
 
 import { queryClient } from '@/main';
@@ -9,9 +13,12 @@ import { CoatOfArmsDetailsData } from '@/topic/Heraldry/types';
 type Props = {
   id: string,
   country: string,
+  shouldShowOnlyRejected?: boolean,
 }
 
-const UnitsPaneUnitColors = ({ id, country }: Props) => {
+const UnitsPaneUnitColors = ({ id, country, shouldShowOnlyRejected = false }: Props) => {
+  const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
+
   const { t } = useTranslation();
 
   const data = queryClient.getQueryData([country, 'details']);
@@ -40,20 +47,28 @@ const UnitsPaneUnitColors = ({ id, country }: Props) => {
     return null;
   }
 
-  const colors = details.colors;
+  const matchedColorsNames = Object.keys(details.colors?.byNames || {});
+
+  const colors = shouldShowOnlyRejected ? details.colors?.byNamesRejected : details.colors?.byNames;
 
   return (
-   <div className="mt-2 -mb-[12px] ml-auto p-[12px] bg-ui-dark-contrast rounded-t-[12px] empty:hidden flex gap-1 justify-center">
-      {Object.entries(colors?.byNames || {}).map(([colorName, colors = []]) => {
-        const title = [
-          `${colors.sort((a, b) => a.distance - b.distance)?.[0]?.distance?.toFixed(1)} p.`,
+    <>
+      {Object.entries(colors || {}).map(([colorName, colors = []]) => {
+        if (shouldShowOnlyRejected && matchedColorsNames.includes(colorName)) {
+          return false;
+        }
+
+        const bestMatch = colors.sort((a, b) => a.distanceToTreshold - b.distanceToTreshold)?.[0];
+
+        const title = isFiltersDevModeActive ? [
           t(`heraldry.color.${colorName}`),
-        ].filter(Boolean).join(' - ');
+          bestMatch?.distanceToTreshold && !['black', 'grey', 'white'].includes(colorName) ? `(distance: ${bestMatch?.distanceToTreshold.toFixed(1)})` : '',
+        ].filter(Boolean).join(' ') : t(`heraldry.color.${colorName}`);
 
         return (
           <span
             key={colorName}
-            className="inline-flex mr-1 size-3 rounded-full bg-[#eee] group overflow-hidden"
+            className="inline-flex size-[8px] rounded-full bg-[#eee] shadow-md group overflow-hidden"
             title={title} 
             style={{ backgroundColor: colorsMarkersByNames[colorName] }}
           >
@@ -61,11 +76,12 @@ const UnitsPaneUnitColors = ({ id, country }: Props) => {
               key={item.color}
               className="color size-full opacity-0 group-hover:opacity-100 duration-300"
               style={{ backgroundColor: item.color }}
+              data-color-from-image={item.color}
             />)}
           </span>
         )
       })}
-    </div>
+    </>
   );
 };
 

@@ -52,6 +52,10 @@ const colorMatchers = {
       color: '#f00',
       get: nearestColor.from({ color: '#f00' }),
       thresholdDistance: 80,
+    }, {
+      color: '#fe3940',
+      get: nearestColor.from({ color: '#fe3940' }),
+      thresholdDistance: 30,
     }],
   },
   green: {

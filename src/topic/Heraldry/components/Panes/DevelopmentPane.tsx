@@ -48,7 +48,7 @@ const DevelopmentPane = ({
   const updateResultsTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [activeMenu, setActiveMenu] = useState('');
   const [isOpen, setIsOpen] = useState(false);
-  const isFiltersDevelopmentModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
+  const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
   const isCustomFilterActive = useFiltersDevelopmentStore((state) => state.filter.isActive);
   const filterName = useFiltersDevelopmentStore((state) => state.filter.name);
   const filterPhrases = useFiltersDevelopmentStore((state) => state.filter.phrases);
@@ -72,10 +72,10 @@ const DevelopmentPane = ({
   });
 
   useEffect(() => {
-    if (!isOpen || !isFiltersDevelopmentModeActive) {
+    if (!isOpen || !isFiltersDevModeActive) {
       setActiveMenu('');
     }
-  }, [isOpen, isFiltersDevelopmentModeActive]);
+  }, [isOpen, isFiltersDevModeActive]);
   
   const {
     isLoading,
@@ -168,7 +168,7 @@ const DevelopmentPane = ({
     });
   }
 
-  if (!isFiltersDevelopmentModeActive) {
+  if (!isFiltersDevModeActive) {
     return null;
   }
 

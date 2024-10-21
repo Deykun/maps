@@ -228,6 +228,7 @@ const HeraldryMapContainerWithUI = ({
               units={units}
               phrase={listPhrase}
               shouldShowCount={listPhrase.length > 0}
+              setShouldFetchDetails={setShouldFetchDetails}
             />
             <Space />
             <FiltersPane
