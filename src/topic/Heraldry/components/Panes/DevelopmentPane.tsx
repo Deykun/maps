@@ -27,9 +27,9 @@ import IconSelected from '@/components/Icons/IconSelected';
 import IconSelectNew from '@/components/Icons/IconSelectNew';
 import IconQuote from '@/components/Icons/IconQuote';
 
-import Space from '@/components/NewUI/Space';
-import Panel from '@/components/NewUI/Panel';
-import ButtonIcon from '@/components/NewUI/ButtonIcon';
+import Space from '@/components/UI/Space';
+import Panel from '@/components/UI/Panel';
+import ButtonIcon from '@/components/UI/ButtonIcon';
 
 import { fetchTitlesAndDescriptions } from './DevelopmentPane/fetch';
 

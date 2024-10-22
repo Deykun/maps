@@ -4,9 +4,9 @@ import { useTranslation } from 'react-i18next';
 import IconBuilding from '@/components/Icons/IconBuilding';
 import IconScriptBroken from '@/components/Icons/IconScriptBroken';
 
-import Space from '@/components/NewUI/Space';
+import Space from '@/components/UI/Space';
 
-import ButtonText from '@/components/NewUI/ButtonText';
+import ButtonText from '@/components/UI/ButtonText';
 
 import { getSorter } from './utils/sort'
 

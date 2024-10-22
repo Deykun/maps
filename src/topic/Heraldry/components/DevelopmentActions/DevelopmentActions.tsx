@@ -17,9 +17,9 @@ import IconQuote from '@/components/Icons/IconQuote';
 
 import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 
-import Panel from '@/components/NewUI/Panel';
-import ButtonText from '@/components/NewUI/ButtonText';
-import ButtonIcon from '@/components/NewUI/ButtonIcon';
+import Panel from '@/components/UI/Panel';
+import ButtonText from '@/components/UI/ButtonText';
+import ButtonIcon from '@/components/UI/ButtonIcon';
 
 import UnitsPaneUnitMarkers from '@/topic/Heraldry/components/Panes/UnitsPane/UnitsPaneUnitMarkers';
 

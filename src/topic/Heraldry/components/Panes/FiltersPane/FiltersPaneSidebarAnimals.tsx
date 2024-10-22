@@ -6,8 +6,8 @@ import { WITH_ANIMAL, WITHOUT_ANIMAL } from '@/topic/Heraldry/constants';
 import IconAnimal from '@/components/Icons/IconAnimal';
 import IconForbidden from '@/components/Icons/IconForbidden';
 
-import Space from '@/components/NewUI/Space';
-import ButtonText from '@/components/NewUI/ButtonText';
+import Space from '@/components/UI/Space';
+import ButtonText from '@/components/UI/ButtonText';
 
 import { getSorter } from './utils/sort'
 

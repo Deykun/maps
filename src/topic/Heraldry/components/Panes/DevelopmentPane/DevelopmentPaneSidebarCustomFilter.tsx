@@ -7,9 +7,9 @@ import IconFolderDownload from '@/components/Icons/IconFolderDownload';
 import IconFolderUpload from '@/components/Icons/IconFolderUpload';
 import IconSelectNew from '@/components/Icons/IconSelectNew';
 
-import Space from '@/components/NewUI/Space';
-import Panel from '@/components/NewUI/Panel';
-import ButtonText from '@/components/NewUI/ButtonText';
+import Space from '@/components/UI/Space';
+import Panel from '@/components/UI/Panel';
+import ButtonText from '@/components/UI/ButtonText';
 
 import { removeDiacratics, copyText } from '@/utils/text';
 

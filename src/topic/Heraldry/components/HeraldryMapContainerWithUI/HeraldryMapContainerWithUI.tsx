@@ -25,7 +25,7 @@ import HeraldryTitle from '@/topic/Heraldry/components/HeraldryTitle/HeraldryTit
 import HeraldryFooter from '@/topic/Heraldry/components/HeraldryFooter/HeraldryFooter';
 import HeraldryMapHTMLCanvas from '@/topic/Heraldry/components/HeraldryMapHTMLCanvas/HeraldryMapHTMLCanvas';
 
-import Space from '@/components/NewUI/Space';
+import Space from '@/components/UI/Space';
 
 import './HeraldryMapContainerWithUI.scss';
 

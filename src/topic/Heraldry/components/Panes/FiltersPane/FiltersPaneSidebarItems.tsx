@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import IconCrown from '@/components/Icons/IconCrown';
 
-import Space from '@/components/NewUI/Space';
+import Space from '@/components/UI/Space';
 
 import { getSorter } from './utils/sort'
 

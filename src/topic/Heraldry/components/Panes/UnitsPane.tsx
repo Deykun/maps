@@ -10,8 +10,8 @@ import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 
 import IconCoatOfArms from '@/topic/Heraldry/components/IconCoatOfArms';
 
-import Panel from '@/components/NewUI/Panel';
-import ButtonIcon from '@/components/NewUI/ButtonIcon';
+import Panel from '@/components/UI/Panel';
+import ButtonIcon from '@/components/UI/ButtonIcon';
 
 import { getDoesUnitMatch, getUnitSortRank } from './utils/units';
 

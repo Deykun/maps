@@ -10,10 +10,10 @@ import IconLayoutGrid from '@/components/Icons/IconLayoutGrid';
 import IconLayoutList from '@/components/Icons/IconLayoutList';
 import IconCoatOfArms from '@/topic/Heraldry/components/IconCoatOfArms';
 
-import Panel from '@/components/NewUI/Panel';
-import Space from '@/components/NewUI/Space';
+import Panel from '@/components/UI/Panel';
+import Space from '@/components/UI/Space';
 
-import ButtonIcon from '@/components/NewUI/ButtonIcon';
+import ButtonIcon from '@/components/UI/ButtonIcon';
 
 import UnitsPaneItemGrid from './UnitsPaneItemGrid';
 import UnitsPaneItemList from './UnitsPaneItemList';

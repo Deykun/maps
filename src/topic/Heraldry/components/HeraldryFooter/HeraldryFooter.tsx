@@ -2,8 +2,8 @@ import { memo } from 'react';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 
-import Space from '@/components/NewUI/Space';
-import Panel from '@/components/NewUI/Panel';
+import Space from '@/components/UI/Space';
+import Panel from '@/components/UI/Panel';
 
 
 export type Props = {

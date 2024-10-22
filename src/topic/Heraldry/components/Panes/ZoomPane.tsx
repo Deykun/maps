@@ -10,10 +10,10 @@ import IconShieldCheckers from '@/components/Icons/IconShieldCheckers';
 import IconSquareRounded from '@/components/Icons/IconSquareRounded';
 
 
-import Panel from '@/components/NewUI/Panel';
-import SubPanel from '@/components/NewUI/SubPanel';
+import Panel from '@/components/UI/Panel';
+import SubPanel from '@/components/UI/SubPanel';
 
-import ButtonIcon from '@/components/NewUI/ButtonIcon';
+import ButtonIcon from '@/components/UI/ButtonIcon';
 
 type Props = {
   setZoomLevel: (level: number) => void,

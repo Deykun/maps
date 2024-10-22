@@ -15,7 +15,6 @@ import {
 
 import IconMapMagnifyingGlass from '@/components/Icons/IconMapMagnifyingGlass';
 import IconBuilding from '@/components/Icons/IconBuilding';
-import IconCheck from '@/components/Icons/IconCheck';
 import IconColor from '@/components/Icons/IconColor';
 import IconControls from '@/components/Icons/IconControls';
 import IconFlask from '@/components/Icons/IconFlask';
@@ -28,12 +27,10 @@ import IconEye from '@/components/Icons/IconEye';
 import IconEyeCrossed from '@/components/Icons/IconEyeCrossed';
 import IconLoader from '@/components/Icons/IconLoader';
 
-import Pane from '@/components/UI/Pane';
-import Panel from '@/components/NewUI/Panel';
-import SubPanel from '@/components/NewUI/SubPanel';
+import Panel from '@/components/UI/Panel';
+import SubPanel from '@/components/UI/SubPanel';
 
-import ButtonIcon from '@/components/NewUI/ButtonIcon';
-import ButtonCircle from '@/components/UI/ButtonCircle';
+import ButtonIcon from '@/components/UI/ButtonIcon';
 
 import { colorsMarkersByNames } from '@/topic/Heraldry/constants';
 

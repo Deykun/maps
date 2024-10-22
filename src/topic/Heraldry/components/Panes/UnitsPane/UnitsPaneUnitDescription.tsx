@@ -11,7 +11,7 @@ import { queryClient } from '@/main';
 
 import IconCopy from '@/components/Icons/IconCopy';
 
-import ButtonIcon from '@/components/NewUI/ButtonIcon';
+import ButtonIcon from '@/components/UI/ButtonIcon';
 
 type Props = {
   id: string,

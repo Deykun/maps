@@ -8,10 +8,10 @@ import IconSortByValue from '@/components/Icons/IconSortByValue';
 import IconInputCheckFull from '@/components/Icons/IconInputCheckFull';
 import IconInputRadioFull from '@/components/Icons/IconInputRadioFull';
 
-import Panel from '@/components/NewUI/Panel';
+import Panel from '@/components/UI/Panel';
 
-import ButtonIcon from '@/components/NewUI/ButtonIcon';
-import ButtonText from '@/components/NewUI/ButtonText';
+import ButtonIcon from '@/components/UI/ButtonIcon';
+import ButtonText from '@/components/UI/ButtonText';
 
 type Props = {
   clickType: 'checkbox' | 'radio',

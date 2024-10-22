@@ -14,9 +14,9 @@ import IconGlobe from '@/components/Icons/IconGlobe';
 import IconTranslation from '@/components/Icons/IconTranslation';
 import IconGithub from '@/components/Icons/IconGithub';
 
-import Panel from '@/components/NewUI/Panel';
-import SubPanel from '@/components/NewUI/SubPanel';
-import ButtonIcon from '@/components/NewUI/ButtonIcon';
+import Panel from '@/components/UI/Panel';
+import SubPanel from '@/components/UI/SubPanel';
+import ButtonIcon from '@/components/UI/ButtonIcon';
 
 import './NavigationPane.scss'
 

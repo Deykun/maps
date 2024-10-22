@@ -10,7 +10,7 @@ import IconFlask from '@/components/Icons/IconFlask';
 import IconMarkerMinus from '@/components/Icons/IconMarkerMinus';
 import IconMarkerPlus from '@/components/Icons/IconMarkerPlus';
 
-import ButtonText from '@/components/NewUI/ButtonText';
+import ButtonText from '@/components/UI/ButtonText';
 
 type Props = {
   unit: CoatOfArmsMapData,

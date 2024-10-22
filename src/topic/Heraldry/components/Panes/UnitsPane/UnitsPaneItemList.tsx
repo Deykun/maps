@@ -8,7 +8,7 @@ import {
   showUnitOnMap,
 } from '@/topic/Heraldry/stores/cursorStore';
 
-import ButtonIcon from '@/components/NewUI/ButtonIcon';
+import ButtonIcon from '@/components/UI/ButtonIcon';
 
 import IconMarker from '@/components/Icons/IconMarker';
 

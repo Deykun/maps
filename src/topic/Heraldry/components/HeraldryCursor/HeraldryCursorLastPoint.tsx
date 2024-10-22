@@ -13,8 +13,8 @@ import {
   getShortTitle
 } from '@/topic/Heraldry/utils/getShortTitle';
 
-import Panel from '@/components/NewUI/Panel';
-import ButtonIcon from '@/components/NewUI/ButtonIcon';
+import Panel from '@/components/UI/Panel';
+import ButtonIcon from '@/components/UI/ButtonIcon';
 
 import IconCoatOfArms from '@/topic/Heraldry/components/IconCoatOfArms';
 import DevelopmentActions from '@/topic/Heraldry/components/DevelopmentActions/DevelopmentActions';

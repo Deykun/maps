@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import clsx from 'clsx';
 
-import ButtonIcon from '@/components/NewUI/ButtonIcon';
+import ButtonIcon from '@/components/UI/ButtonIcon';
 
 import IconInfo from '@/components/Icons/IconInfo';
 

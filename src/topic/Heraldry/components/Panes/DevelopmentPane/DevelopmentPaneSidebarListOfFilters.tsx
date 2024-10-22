@@ -6,8 +6,8 @@ import IconCopy from '@/components/Icons/IconCopy';
 import IconSelected from '@/components/Icons/IconSelected';
 import IconSelectNew from '@/components/Icons/IconSelectNew';
 
-import Space from '@/components/NewUI/Space';
-import ButtonText from '@/components/NewUI/ButtonText';
+import Space from '@/components/UI/Space';
+import ButtonText from '@/components/UI/ButtonText';
 
 import { copyText } from '@/utils/text';
 

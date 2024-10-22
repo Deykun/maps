@@ -137,7 +137,7 @@ const HeraldryMapMap = ({
   }
   
   if (isLoading) {
-    return <HeraldryMapContainerWithUIStatus message="heraldry.loading.fetching" />
+    return <HeraldryMapContainerWithUIStatus message="heraldry.loading.fetching" isLoading />
   }
 
   if (!dataForMap) {

@@ -15,7 +15,7 @@
   border-radius: 12px;
   border-top-left-radius: 3px;
   transition: 0.12s ease-in-out;
-  border: 1px solid #999;
+  border: 1px solid #bba6a6;
   background: rgba(255, 255, 255, 0.73);
   -webkit-backdrop-filter: blur(8px) saturate(1.5) contrast(0.7);
   backdrop-filter: blur(8px) saturate(1.5) contrast(0.7);
@@ -24,7 +24,7 @@
   .map-wrapper:active & {
     border-radius: 50px;
     // 312f2f
-    border: 1px solid #999;
+    border: 1px solid #bba6a6;
     box-shadow: -2px -2px 10px #fff inset, 0 0 5px #fff inset, 0 3px 14px -5px #f4f3f2c4, 0 7px 3px -6px #d7d7d7c4;
   }
 
@@ -32,7 +32,7 @@
     width: 14px;
     height: 14px;
     border: 1px solid #dbd7d7;
-    border-color: #999;
+    border-color: #bba6a6;
     box-shadow: -5px -5px 10px #fff inset, -4px -4px 5px #fff inset, 0 3px 14px -5px #f4f3f2c4, 0 7px 3px -6px #d7d7d7c4;
   }
 }
@@ -40,8 +40,8 @@
 .heraldry-cursor-marker {
   text-align: center;
   padding: 0 4px;
-  background-color: #aa0d0d;
-  color: white;
+  color: #ffdada;
+  background-color: #170505;
   font-size: 10px;
   min-width: 15px;
   height: 15px;
