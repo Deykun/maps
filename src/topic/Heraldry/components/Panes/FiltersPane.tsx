@@ -37,7 +37,9 @@ import ButtonCircle from '@/components/UI/ButtonCircle';
 
 import { colorsMarkersByNames } from '@/topic/Heraldry/constants';
 
-import FiltersPaneTypesSidebar from './FiltersPane/FiltersPaneTypesSidebar';
+import FiltersPaneSidebarAnimals from './FiltersPane/FiltersPaneSidebarAnimals';
+import FiltersPaneSidebarItems from './FiltersPane/FiltersPaneSidebarItems';
+import FiltersPaneSidebarTypes from './FiltersPane/FiltersPaneSidebarTypes';
 
 const getFilterToggle = (values: string[], setValues: (values: string[]) => void) => (value: string) => {
   if (values.includes(value)) {
@@ -105,7 +107,7 @@ const FiltersPane = ({
 }: Props) => {
   const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
   // const [activeMenu, setActiveMenu] = useState('');
-  const [activeMenu, setActiveMenu] = useState('type');
+  const [activeMenu, setActiveMenu] = useState('items');
   
   // const [isOpen, setIsOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(true);
@@ -230,12 +232,12 @@ const FiltersPane = ({
           </ButtonIcon>
         </>}
       </Panel>
-      {activeMenu === 'type' && <FiltersPaneTypesSidebar
+      {activeMenu === 'type' && <FiltersPaneSidebarTypes
         lang={lang}
-        typeFilters={typeFilters}
-        setTypeFilters={setTypeFilters}
-        toggleType={toggleType}
-        typeFiltersList={typeFiltersList}
+        filters={typeFilters}
+        setFilters={setTypeFilters}
+        toggle={toggleType}
+        filtersList={typeFiltersList}
         shouldIgnoreFormer={shouldIgnoreFormer}
         setShouldIgnoreFormer={setShouldIgnoreFormer}
       />}
@@ -259,88 +261,18 @@ const FiltersPane = ({
           {colorFilters.includes(name) && <span className="ui-button-icon-marker-dot" />}
         </ButtonIcon>)}
       </SubPanel>}
-      {activeMenu === 'animal' && <Pane className="ui-slide-from-top ui-pane-magic-border fixed top-0 right-full z-50 w-[400px] mr-3">
-        <h3 className="flex gap-3 items-center">
-          <IconAnimal className="size-5" />
-          <span>
-            {t('heraldry.animal.filterTitle')}
-          </span>
-          <ButtonCircle
-            wrapperClassName="ml-auto"
-            onClick={() => setAnimalFilters([])}
-            isDisabled={animalFilters.length === 0}
-          >
-            <IconEraser />
-            {animalFilters.length > 0 && <span className="ui-button-icon-marker">{animalFilters.length}</span>}
-          </ButtonCircle>
-        </h3>
-        <div className="sans grid grid-cols-1 gap-1">
-            <button
-              className={clsx('font-[500] text-[14px] text-left hover:text-[#d2543a]', { 
-                'font-[600] text-[#d2543a]': animalFilters.includes(WITH_ANIMAL),
-              })}
-              onClick={() => toggleAnimal(WITH_ANIMAL)}
-            >
-              {animalFilters.includes(WITH_ANIMAL) && <IconCheck className="inline size-3 fill-current" />} {t(`heraldry.animal.${WITH_ANIMAL}`)}
-            </button>
-            <button
-              className={clsx('font-[500] text-[14px] text-left hover:text-[#d2543a]', { 
-                'font-[600] text-[#d2543a]': animalFilters.includes(WITHOUT_ANIMAL),
-              })}
-              onClick={() => toggleAnimal(WITHOUT_ANIMAL)}
-            >
-              {animalFilters.includes(WITHOUT_ANIMAL) && <IconCheck className="inline size-3 fill-current" />} {t(`heraldry.animal.${WITHOUT_ANIMAL}`)}
-            </button>
-        </div>
-        {animalFiltersList.length > 0 && <div className="sans mt-2 pt-3 border-t border-t-[#dbd7d7] grid grid-cols-1 max-h-full overflow-auto sm:grid-cols-2 gap-1">
-          {animalFiltersList.map(({ value, total }) => 
-            <button
-              onClick={() => toggleAnimal(value)}
-              className={clsx('font-[500] text-[14px] text-left hover:text-[#d2543a]', { 
-                'font-[600] text-[#d2543a]': animalFilters.includes(value),
-              })}
-            >
-               {animalFilters.includes(value) && <IconCheck className="inline size-3 fill-current" />}
-               {' '}
-               {t(`heraldry.animal.${value}`)}
-               {' '}
-               {total > 0 && <small className="text-[10px] text-[#b2afaf] tracking-widest font-[400]">({total})</small>}
-            </button>
-          )}
-        </div>}
-      </Pane>}
-      {activeMenu === 'item' && <Pane className="ui-slide-from-top ui-pane-magic-border fixed top-0 right-full z-50 w-[400px] mr-3">
-        <h3 className="flex gap-3 items-center">
-          <IconCrown className="size-5" />
-          <span>
-            {t('heraldry.item.filterTitle')}
-          </span>
-          <ButtonCircle
-            wrapperClassName="ml-auto"
-            onClick={() => setItemFilters([])}
-            isDisabled={itemFilters.length === 0}
-          >
-            <IconEraser />
-            {itemFilters.length > 0 && <span className="ui-button-icon-marker">{itemFilters.length}</span>}
-          </ButtonCircle>
-        </h3>
-        {itemFiltersList.length > 0 && <div className="sans grid grid-cols-1 max-h-[80lvh] overflow-auto sm:grid-cols-2 gap-1">
-          {itemFiltersList.map(({ value, total }) => 
-            <button
-              onClick={() => toggleItem(value)}
-              className={clsx('font-[500] text-[14px] text-left hover:text-[#d2543a]', { 
-                'font-[600] text-[#d2543a]': itemFilters.includes(value),
-              })}
-            >
-              {itemFilters.includes(value) && <IconCheck className="inline size-3 fill-current" />}
-              {' '}
-              {t(`heraldry.item.${value}`)}
-              {' '}
-              {total > 0 && <small className="text-[10px] text-[#b2afaf] tracking-widest font-[400]">({total})</small>}
-            </button>
-          )}
-        </div>}
-      </Pane>}
+      {activeMenu === 'animal' && <FiltersPaneSidebarAnimals
+        filters={animalFilters}
+        setFilters={setAnimalFilters}
+        toggle={toggleAnimal}
+        filtersList={animalFiltersList}
+      />}
+      {activeMenu === 'item' && <FiltersPaneSidebarItems
+        filters={itemFilters}
+        setFilters={setItemFilters}
+        toggle={toggleItem}
+        filtersList={itemFiltersList}
+      />}
       {activeMenu === 'settings' && <SubPanel order={5} className="ui-slide-from-right-sidebar z-[-1] mt-2 absolute right-12 mr-2 flex-row">
         <ButtonIcon
           wrapperClassName="ml-auto"

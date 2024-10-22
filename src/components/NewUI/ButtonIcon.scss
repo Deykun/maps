@@ -4,7 +4,7 @@
   > a,
   > button,
   > span {
-    @apply inline-flex justify-center items-center size-8;
+    @apply flex justify-center items-center size-8;
 
     color: #ffdada;
     font-size: 20px;

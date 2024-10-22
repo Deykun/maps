@@ -69,14 +69,14 @@ const UnitsPaneSidebarDetailsContent = ( { unit, setDetailsUnit }: Props) => {
               'flex gap-1 p-1',
               'opacity-10 saturate-0 hover:saturate-100 hover:opacity-100 duration-150',
             )}>
-              <UnitsPaneUnitColors id={unit.id} country={unit.lang} labelPosition="right" shouldShowOnlyRejected />  
+              <UnitsPaneUnitColors id={unit.id} country={unit.lang} labelPosition="bottomRight" shouldShowOnlyRejected />  
             </div>
           }
           <div className={clsx(
             'absolute bottom-0 right-0',
             'flex gap-1 p-1',
           )}>
-            <UnitsPaneUnitColors id={unit.id} country={unit.lang} labelPosition="left" />  
+            <UnitsPaneUnitColors id={unit.id} country={unit.lang} labelPosition="bottomLeft" />  
           </div>
         </span>
         <h3 className="w-full px-2 text-center text-[18px] font-[500] tracking-wide text-white duration-300">

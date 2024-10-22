@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import clsx from 'clsx';
 
 import { removeDiacratics } from '@/utils/text';
 
@@ -91,6 +92,9 @@ const UnitsPane = ({
     <div className="pointer-events-auto" id="units-pane">
       <Panel className="ui-panel--rounded-l">
         <ButtonIcon
+          className={clsx({
+            '!bg-white': filteredUnits.length === 1,
+          })}
           id="units-pane-toggle"
           isDisabled={units.length === 0}
           isActive={isOpen}

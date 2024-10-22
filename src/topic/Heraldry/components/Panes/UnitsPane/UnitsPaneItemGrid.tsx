@@ -6,9 +6,10 @@ type Props = {
   className?: string,
   unit: CoatOfArmsMapData,
   setDetailsUnit: (unit: CoatOfArmsMapData) => void,
+  labelPosition?: 'bottomLeft' | 'bottomRight'
 }
 
-const UnitsPaneItemGrid = ( { className, unit, setDetailsUnit }: Props) => {
+const UnitsPaneItemGrid = ( { className, unit, setDetailsUnit, labelPosition = 'bottomRight' }: Props) => {
   const imagePath = (unit.imagesList || []).find(({ width }) => width === '80w')?.path;
 
   const {
@@ -20,7 +21,10 @@ const UnitsPaneItemGrid = ( { className, unit, setDetailsUnit }: Props) => {
   return (
     <li className={clsx('m-0 p-0 size-[57px]', { [className || '']: className })}>
       <button
-        className="block relative size-[57px] rounded-[8px] bg-white"
+        className={clsx(
+          'block relative size-[57px] rounded-[8px] bg-white',
+          'ui-tooltip-wrapper ui-tooltip-wrapper--small',
+        )}
         onClick={() => setDetailsUnit(unit)}
       >
         <span
@@ -35,6 +39,13 @@ const UnitsPaneItemGrid = ( { className, unit, setDetailsUnit }: Props) => {
           }}
           data-src={imagePath}
         />
+          <span
+            className={clsx('ui-tooltip text-left', {
+              [`ui-tooltip--${labelPosition}`]: labelPosition,
+            })}
+          >
+            {unit.title.split(' ').map((word, index) => <span>{index !== 0 && <br />}{word}</span>)}
+          </span>
       </button>
     </li>
   );

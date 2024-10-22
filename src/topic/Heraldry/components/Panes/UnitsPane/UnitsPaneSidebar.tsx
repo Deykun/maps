@@ -117,7 +117,11 @@ const UnitsPaneSidebar = ({
             <Panel className="ui-panel--rounded-l ui-panel--rounded-r text-[14px]">
               {units.length === 0 && <p className="text-center my-2">{t('heraldry.noResult')}</p>}
               {layout === 'grid' && canUseGrid && <ul className="flex flex-wrap gap-[6px] empty:hidden">
-                {units.slice(0, itemsToShow).map((unit) => <UnitsPaneItemGrid unit={unit} setDetailsUnit={setDetailsUnit} />)}
+                {units.slice(0, itemsToShow).map((unit, index) => <UnitsPaneItemGrid
+                  unit={unit}
+                  setDetailsUnit={setDetailsUnit}
+                  labelPosition={[(index + 2) % 5, (index + 1) % 5].includes(0) ? 'bottomLeft' : 'bottomRight'}
+                />)}
               </ul>}
               {(layout === 'list' || !canUseGrid) && <ul className="flex flex-col gap-2 empty:hidden">
                 {units.slice(0, itemsToShow).map((unit) => <UnitsPaneItemList unit={unit} setDetailsUnit={setDetailsUnit} />)}

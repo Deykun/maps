@@ -15,7 +15,7 @@ type Props = {
   id: string,
   country: string,
   shouldShowOnlyRejected?: boolean,
-  labelPosition: 'left' | 'right',
+  labelPosition: 'bottomLeft' | 'bottomRight',
 }
 
 const UnitsPaneUnitColors = ({ id, country, shouldShowOnlyRejected = false, labelPosition }: Props) => {
@@ -78,7 +78,12 @@ const UnitsPaneUnitColors = ({ id, country, shouldShowOnlyRejected = false, labe
               style={{ backgroundColor: item.color }}
               data-color-from-image={item.color}
             />)}
-            <span className={`ui-tooltip ui-tooltip--${labelPosition}`}>
+            <span className={clsx(
+              `ui-tooltip ui-tooltip--${labelPosition}`,{
+                '!left-[-1px]': labelPosition === 'bottomRight',
+                '!right-[-1px]': labelPosition === 'bottomLeft',
+              }
+            )}>
               <strong className="capitalize">{t(`heraldry.color.${colorName}`)}</strong>
               {shouldShowThreshold && 
                 <small><br />Distance: <strong>{bestMatch?.distanceToThreshold.toFixed(1)}</strong></small>

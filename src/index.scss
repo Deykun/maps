@@ -1,3 +1,4 @@
+@import "@/scss/mixins.scss";
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@400..600&display=swap');
 
 @tailwind base;
@@ -292,47 +293,51 @@ pre span::selection  {
   }
 }
 
-.ui-tooltip-wrapper:hover {
-  z-index: 1;
+.ui-tooltip-wrapper {
+  @include hoverOnDesktopActiveOnMobile {
+    z-index: 1;
 
-  .ui-tooltip {
-    opacity: 1;
-    z-index: 3;
-  }
+    .ui-tooltip {
+      opacity: 1;
+      z-index: 3;
+    }
 
-  .ui-tooltip--left {
-    right: calc(100% + 20px);
-    transform: translateY(-50%) scale(1);
-  }
+    .ui-tooltip--left {
+      right: calc(100% + 20px);
+      transform: translateY(-50%) scale(1);
+    }
 
-  .ui-tooltip--right {
-    left: calc(100% + 20px);
-    transform: translateY(-50%) scale(1);
-  }
+    .ui-tooltip--right {
+      left: calc(100% + 20px);
+      transform: translateY(-50%) scale(1);
+    }
 
-  .ui-tooltip--top {
-    bottom: calc(100% + 10px);
-    transform: translateX(-50%) scale(1);
-  }
+    .ui-tooltip--top {
+      bottom: calc(100% + 10px);
+      transform: translateX(-50%) scale(1);
+    }
 
-  .ui-tooltip--bottom {
-    top: calc(100% + 10px);
-    transform: translateX(-50%) scale(1);
-  }
+    .ui-tooltip--bottom {
+      top: calc(100% + 10px);
+      transform: translateX(-50%) scale(1);
+    }
 
-  .ui-tooltip--bottomRight,
-  .ui-tooltip--bottomLeft {
-    top: calc(100% + 10px);
-    transform: scale(1);
+    .ui-tooltip--bottomRight,
+    .ui-tooltip--bottomLeft {
+      top: calc(100% + 10px);
+      transform: scale(1);
+    }
   }
 }
 
-.ui-tooltip-wrapper--small:hover {
-  .ui-tooltip--right {
-    left: calc(100% + 10px) !important;
-  }
+.ui-tooltip-wrapper--small {
+  @include hoverOnDesktopActiveOnMobile {
+    .ui-tooltip--right {
+      left: calc(100% + 10px) !important;
+    }
 
-  .ui-tooltip--left {
-    right: calc(100% + 10px);
+    .ui-tooltip--left {
+      right: calc(100% + 10px);
+    }
   }
 }
