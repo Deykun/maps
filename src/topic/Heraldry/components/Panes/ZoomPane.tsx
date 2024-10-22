@@ -60,7 +60,7 @@ const ZoomPane = ({
       </Panel>
       {isOpen && <SubPanel
         order={2}
-        className="ui-slide-from-right-sidebar z-[-1] absolute top-0 right-12 mr-2 flex-row items-center"
+        className="ui-slide-from-right-sidebar no-scrollbar z-[-1] absolute top-0 right-12 mr-2 flex-row items-center"
       >
         <ButtonIcon onClick={() => setCoatSize(coatSize - 1)} isDisabled={coatSize === coatMin}>
           <IconMinus />

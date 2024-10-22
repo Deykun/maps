@@ -73,7 +73,7 @@ const FiltersPaneSidebarTypes = ({
   const activeTotal = filters.length + (shouldIgnoreFormer ? 1 : 0);
 
   return (
-    <div className="ui-slide-from-right-sidebar fixed top-0 right-0 z-[-1] w-[400px] max-w-[100vw] max-h-[100svh] overflow-auto">
+    <div className="ui-slide-from-right-sidebar no-scrollbar fixed top-0 right-0 z-[-1] w-[400px] max-w-[100vw] max-h-[100svh] overflow-auto">
       <div className="bg-ui-dark text-ui-dark-contrast p-[12px] pr-[60px] rounded-bl-[18px] flex flex-col gap-[12px] relative">
         <h3 className="flex gap-3 items-center text-[14px]">
           <IconBuilding className="size-5 text-white" />
