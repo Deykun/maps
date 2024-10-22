@@ -84,11 +84,11 @@ svg {
 .ui-slide-from-right-sidebar {
   transform: translateX(calc(100% + 150px));
   opacity: 0;
-  animation: 0.5s uiSlideFromRight forwards ease-in;
+  animation: 0.5s uiSlideFromRightSidebar forwards ease-in;
   transform-origin: center left;
 }
 
-@keyframes uiSlideFromRight {
+@keyframes uiSlideFromRightSidebar {
   0% {
     opacity: 0;
     transform: translateX(calc(100% + 150px));
@@ -103,11 +103,11 @@ svg {
 .ui-slide-from-left-sidebar {
   transform: translateX(calc(-100% - 150px));
   opacity: 0;
-  animation: 0.5s uiSlideFromLeft forwards ease-in;
+  animation: 0.5s uiSlideFromLeftSidebar forwards ease-in;
   transform-origin: center left;
 }
 
-@keyframes uiSlideFromLeft {
+@keyframes uiSlideFromLeftSidebar {
   0% {
     opacity: 0;
     transform: translateX(calc(-100% - 150px));
@@ -120,21 +120,17 @@ svg {
 }
 
 .ui-slide-from-top {
-  // opacity: 0;
-  // transform: translateY(calc(-100% - 30px));
-  // animation: 0.3s uiSlideFromTop forwards ease-in;
-  // animation-delay: 0.15s;
-  // transform-origin: top right;
+  opacity: 0;
+  transform: translateY(calc(-100% - 30px));
+  animation: 0.5s uiSlideFromTop forwards ease-in;
+  animation-delay: 0.3s;
+  transform-origin: top left;
 }
 
 @keyframes uiSlideFromTop {
   0% {
     opacity: 0;
     transform: translateY(calc(-100% - 30px));
-  }
-
-  50% {
-    opacity: 0.3;
   }
 
   100% {

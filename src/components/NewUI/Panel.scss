@@ -8,6 +8,10 @@
   &.ui-panel--rounded-r {
     @apply rounded-r-[12px];
   }
+
+  &.ui-panel--rounded-b {
+    @apply rounded-b-[12px];
+  }
 }
 
 .ui-panel > .border-t,

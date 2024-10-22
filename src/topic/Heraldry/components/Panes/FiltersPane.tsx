@@ -106,11 +106,8 @@ const FiltersPane = ({
   isFetchingDetails,
 }: Props) => {
   const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
-  // const [activeMenu, setActiveMenu] = useState('');
-  const [activeMenu, setActiveMenu] = useState('items');
-  
-  // const [isOpen, setIsOpen] = useState(false);
-  const [isOpen, setIsOpen] = useState(true);
+  const [activeMenu, setActiveMenu] = useState('');
+  const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
 
   // Not the nicest solution, but it works

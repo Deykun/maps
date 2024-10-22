@@ -21,7 +21,7 @@ import ZoomPane from '@/topic/Heraldry/components/Panes/ZoomPane';
 import UnitsPane from '@/topic/Heraldry/components/Panes/UnitsPane';
 import FiltersPane from '@/topic/Heraldry/components/Panes/FiltersPane';
 
-import HeraldrySubtitle from '@/topic/Heraldry/components/HeraldrySubtitle';
+import HeraldryTitle from '@/topic/Heraldry/components/HeraldryTitle/HeraldryTitle';
 import HeraldryMapHTMLCanvas from '@/topic/Heraldry/components/HeraldryMapHTMLCanvas/HeraldryMapHTMLCanvas';
 
 import Space from '@/components/NewUI/Space';
@@ -67,7 +67,8 @@ const HeraldryMapContainerWithUI = ({
     const [listPhrase, setListPhrase] = useState('');
     const [filterOperator, setFilterOperator] = useState<'and' | 'or'>(initialFilters.filterOperator || 'and');
     const [shouldReverseFilters, setShouldReverseFilters] = useState(initialFilters.shouldReverseFilters || false);
-    const [zoomLevel, setZoomLevel] = useState(1);
+    // const [zoomLevel, setZoomLevel] = useState(1);
+    const [zoomLevel, setZoomLevel] = useState(2);
     const [coatSize, setCoatSize] = useState(4);
     const customFilter = useFiltersDevelopmentStore(state => state.filter);
     const [typeFilters, setTypeFilters] = useState<string[]>(initialFilters.typeFilters || []);
@@ -147,22 +148,12 @@ const HeraldryMapContainerWithUI = ({
             )}
             {...events}
           >
-            <header className={clsx('', {
-              'px-[50px] sm:px-0 md:mb-10 min-h-[100px] max-w-[800px] flex-shrink-0 mx-auto': zoomLevel === 1,
-              'ui-slide-from-left ui-pane fixed top-3 left-3 md:left-12 md:ml-6 md:max-w-[calc(100vw_-_145px)] z-30 px-4 empty:hidden': zoomLevel > 1,
-            })}>
-              {zoomLevel === 1 && 
-                <h1 className={clsx('heading text-[20px] sm:text-[28px] lg:text-[36px] text-center text-ui-dark', { 
-                  'hidden': zoomLevel > 1,
-                })}>
-                  {t(`heraldry.${lang}.mapTitle`)}
-                </h1>
-              }
-              {
-                (zoomLevel === 1 || subtitleParts.length > 0) &&
-                <HeraldrySubtitle zoomLevel={zoomLevel} subtitleParts={subtitleParts} shouldReverseFilters={shouldReverseFilters} />
-              }
-            </header>
+            <HeraldryTitle
+              country={lang}
+              zoomLevel={zoomLevel}
+              subtitleParts={subtitleParts}
+              shouldReverseFilters={shouldReverseFilters}
+            />
             <div>
               <div
                 className={clsx(mapWrapperClassName, "map-wrapper z-1 relative mx-auto", {
