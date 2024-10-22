@@ -96,6 +96,7 @@ const filterForCountryData = (units: CoatOfArmsMapData[]) => {
         'images/heraldry/de/unit/579ae633-brandenburg-80w.webp',
         'images/heraldry/de/unit/535977d9-brandenburg-80w.webp',
         'images/heraldry/de/unit/762c7133-nordrheinwestfalen-80w.webp',
+        'images/heraldry/de/unit/542c19a3-thuringen-80w.webp',
       ].includes(imagePath)) {
         return false;
       };

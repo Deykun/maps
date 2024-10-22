@@ -8,6 +8,7 @@ import IconGithub from '@/components/Icons/IconGithub';
 import IconEraser from '@/components/Icons/IconEraser';
 import IconLayoutGrid from '@/components/Icons/IconLayoutGrid';
 import IconLayoutList from '@/components/Icons/IconLayoutList';
+import IconCoatOfArms from '@/topic/Heraldry/components/IconCoatOfArms';
 
 import Panel from '@/components/NewUI/Panel';
 import Space from '@/components/NewUI/Space';
@@ -60,15 +61,20 @@ const UnitsPaneSidebar = ({
   }, [units]);
 
   const pageSize = layout === 'grid' ? 20 : 6;
-
   const itemsToShow = pageSize * (filterPage + 1);
+
+  const canUseGrid = units.length > 4;
 
   return (
     <div className="ui-slide-from-right-sidebar fixed top-0 right-0 z-[-1] w-[400px] max-w-[100vw] max-h-[100svh] overflow-auto">
-      <div className="bg-ui-dark p-[12px] pr-[60px] rounded-bl-[18px] flex flex-col gap-[12px] relative">
+      <div className="bg-ui-dark text-ui-dark-contrast p-[12px] pr-[60px] rounded-bl-[18px] flex flex-col gap-[12px] relative">
         {detailsUnit ?
           <UnitsPaneSidebarDetailsContent unit={detailsUnit} setDetailsUnit={setDetailsUnit}/>
           : <>
+            <h3 className="flex gap-3 items-center text-[14px]">
+              <IconCoatOfArms className="size-5" units={[]} />
+              <span>{t('heraldry.list.title')}</span>
+            </h3>
             <Panel className="ui-panel--rounded-l ui-panel--rounded-r">
               <input
                 value={filterPhrase}
@@ -79,7 +85,8 @@ const UnitsPaneSidebar = ({
               <div className="mt-2 flex gap-1">
                 <ButtonIcon
                   size="small"
-                  isActive={layout === 'grid'}
+                  isActive={layout === 'grid' && canUseGrid}
+                  isDisabled={!canUseGrid}
                   onClick={() => setLayout('grid')}
                   label={t('heraldry.list.labelGrid')}
                   labelPosition="bottomRight"
@@ -88,7 +95,7 @@ const UnitsPaneSidebar = ({
                 </ButtonIcon>
                 <ButtonIcon
                   size="small"
-                  isActive={layout === 'list'}
+                  isActive={layout === 'list' || !canUseGrid}
                   onClick={() => setLayout('list')}
                   label={t('heraldry.list.labelList')}
                   labelPosition="bottomRight"
@@ -109,10 +116,10 @@ const UnitsPaneSidebar = ({
             </Panel>
             <Panel className="ui-panel--rounded-l ui-panel--rounded-r text-[14px]">
               {units.length === 0 && <p className="text-center my-2">{t('heraldry.noResult')}</p>}
-              {layout === 'grid' && <ul className="flex flex-wrap gap-[6px] empty:hidden">
+              {layout === 'grid' && canUseGrid && <ul className="flex flex-wrap gap-[6px] empty:hidden">
                 {units.slice(0, itemsToShow).map((unit) => <UnitsPaneItemGrid unit={unit} setDetailsUnit={setDetailsUnit} />)}
               </ul>}
-              {layout === 'list' && <ul className="flex flex-col gap-2 empty:hidden">
+              {(layout === 'list' || !canUseGrid) && <ul className="flex flex-col gap-2 empty:hidden">
                 {units.slice(0, itemsToShow).map((unit) => <UnitsPaneItemList unit={unit} setDetailsUnit={setDetailsUnit} />)}
               </ul>}
             

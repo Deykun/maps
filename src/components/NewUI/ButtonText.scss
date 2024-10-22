@@ -11,7 +11,7 @@
     transition: 0.3s ease-in-out;
 
     &:disabled {
-      color: #ffdada47;
+      color: #ffb3b347;
     }
     
     @include hoverOnDesktopActiveOnMobile {
@@ -43,7 +43,7 @@
   &.ui-button-text--small {
     > a,
     > button {
-      @apply gap-1 p-1 px-2;
+      @apply gap-2 p-1 px-2;
 
       span {
         font-size: 10px;

@@ -8,10 +8,22 @@
   &.ui-panel--rounded-r {
     @apply rounded-r-[12px];
   }
+}
 
-  > .border-t,
-  > .border-l {
-    border-style: dashed;
-    border-color: #7b6767;
-  }
+.ui-panel > .border-t,
+.border-t--panel,
+.ui-panel > .border-l,
+.border-l--panel {
+  border-style: dashed;
+  border-color: #7b6767;
+}
+
+.ui-panel > .border-t,
+.border-t--panel {
+  border-top-width: 1px;
+}
+
+.ui-panel > .border-l,
+.border-l--panel {
+  border-left-width: 1px;
 }

@@ -6,6 +6,7 @@ import { removeDiacratics } from '@/utils/text';
 import useOutsideClick from '@/hooks/useOutsideClick';
 
 import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
+
 import IconCoatOfArms from '@/topic/Heraldry/components/IconCoatOfArms';
 
 import Panel from '@/components/NewUI/Panel';

@@ -6,12 +6,13 @@ import { getImageSrcSet } from '@/utils/image';
 import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 
 type Props = {
+  className?: string,
   units: CoatOfArmsMapData[],
 }
 
-const IconCoatOfArms = ({ units }: Props) => {
+const IconCoatOfArms = ({ className, units }: Props) => {
   if (units.length !== 1) {
-    return <IconShieldCheckers />
+    return <IconShieldCheckers className={className} />
   }
 
   const {

@@ -63,11 +63,6 @@ const UnitsPaneUnitColors = ({ id, country, shouldShowOnlyRejected = false, labe
         const bestMatch = colors.sort((a, b) => a.distanceToThreshold - b.distanceToThreshold)?.[0];
         const shouldShowThreshold = isFiltersDevModeActive && bestMatch && bestMatch.distanceToThreshold && !['black', 'grey', 'white'].includes(colorName);
 
-        console.log({
-          isFiltersDevModeActive,
-          shouldShowThreshold,
-        })
-
         return (
           <span
             key={colorName}

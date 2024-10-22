@@ -99,6 +99,25 @@ svg {
   }
 }
 
+.ui-slide-from-left-sidebar {
+  transform: translateX(calc(-100% - 150px));
+  opacity: 0;
+  animation: 0.5s uiSlideFromLeft forwards ease-in;
+  transform-origin: center left;
+}
+
+@keyframes uiSlideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(calc(-100% - 150px));
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
+
 .ui-slide-from-top {
   // opacity: 0;
   // transform: translateY(calc(-100% - 30px));
@@ -155,7 +174,7 @@ pre span::selection  {
   opacity: 0;
   color: var(--color);
   background-color: var(--background);
-  padding: 2px 10px;
+  padding: 2px 10px 4px;
   font-size: 12px;
   line-height: 1.4;
   letter-spacing: 0.04em;

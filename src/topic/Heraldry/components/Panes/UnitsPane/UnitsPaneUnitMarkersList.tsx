@@ -23,8 +23,7 @@ const UnitsPaneUnitMarkersList = ({ list, listTitle, listElementPrefix, icon: Ic
         
         {shouldShowContentAsTooltip ? <>
           <small>{t(listTitle)}:</small>
-          <br />
-          {list.map((element) => t(`${listElementPrefix}.${element}`)).join(', ')}
+          {list.map((element) => <span><br /> - {t(`${listElementPrefix}.${element}`)}</span>)}
         </> : t(listTitle)}
       </span>
     </span>

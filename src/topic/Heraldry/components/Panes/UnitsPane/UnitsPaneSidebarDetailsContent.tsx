@@ -47,7 +47,6 @@ const UnitsPaneSidebarDetailsContent = ( { unit, setDetailsUnit }: Props) => {
           <IconUndo />
           <span>{t('heraldry.list.title')}</span>
         </ButtonText>
-
         <span className="text-ui-dark-contrast text-[10px] text-right pr-2">
           id: <span className="text-white">{unit.id}</span>    
           {unit.mergedIds && <small className="line-clamp-1">

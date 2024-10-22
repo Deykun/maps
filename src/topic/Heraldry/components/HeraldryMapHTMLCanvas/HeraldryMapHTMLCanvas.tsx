@@ -67,7 +67,6 @@ const HeraldryMapHTMLCanvas = ({ className, units, children, mapOffset, coatSize
   useKeepPositionAfterResize(dimensions);
 
   useEffectChange(() => {
-    console.log(coatSize);
     setCoatSize(coatSize);
   }, [coatSize]);
 

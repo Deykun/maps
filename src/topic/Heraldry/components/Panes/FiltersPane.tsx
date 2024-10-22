@@ -37,7 +37,7 @@ import ButtonCircle from '@/components/UI/ButtonCircle';
 
 import { colorsMarkersByNames } from '@/topic/Heraldry/constants';
 
-import FiltersPaneTypesFilter from './FiltersPane/FiltersPaneTypesFilter';
+import FiltersPaneTypesSidebar from './FiltersPane/FiltersPaneTypesSidebar';
 
 const getFilterToggle = (values: string[], setValues: (values: string[]) => void) => (value: string) => {
   if (values.includes(value)) {
@@ -104,8 +104,11 @@ const FiltersPane = ({
   isFetchingDetails,
 }: Props) => {
   const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
-  const [activeMenu, setActiveMenu] = useState('');
-  const [isOpen, setIsOpen] = useState(false);
+  // const [activeMenu, setActiveMenu] = useState('');
+  const [activeMenu, setActiveMenu] = useState('type');
+  
+  // const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const { t } = useTranslation();
 
   // Not the nicest solution, but it works
@@ -227,7 +230,7 @@ const FiltersPane = ({
           </ButtonIcon>
         </>}
       </Panel>
-      {activeMenu === 'type' && <FiltersPaneTypesFilter
+      {activeMenu === 'type' && <FiltersPaneTypesSidebar
         lang={lang}
         typeFilters={typeFilters}
         setTypeFilters={setTypeFilters}

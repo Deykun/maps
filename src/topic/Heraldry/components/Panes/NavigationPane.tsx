@@ -61,7 +61,7 @@ const NavigationPane = () => {
           <IconGithub />
         </ButtonIcon>
       </Panel>
-      {activeMenu === 'country' && <SubPanel order={0} className="absolute left-12 ml-3 flex-row">
+      {activeMenu === 'country' && <SubPanel order={0} className="ui-slide-from-left-sidebar z-[-1] absolute left-12 ml-3 flex-row">
         {HERALDRY_COUNTRIES.map(({ path: langPath, pathNameLink, lang }) => <ButtonIcon
           href={`/maps/${langPath}`}
           title={t(pathNameLink)}
@@ -71,7 +71,7 @@ const NavigationPane = () => {
           {path === `/maps/${langPath}` && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft"><IconCheck className="h-[10px]" /></span>}
         </ButtonIcon>)}
       </SubPanel>}
-      {activeMenu === 'language' && <SubPanel order={1} className="absolute left-12 ml-3 flex-row">
+      {activeMenu === 'language' && <SubPanel order={1} className="ui-slide-from-left-sidebar z-[-1] absolute left-12 ml-3 flex-row">
         {SUPPORTED_LANGS.map((lang) => <ButtonIcon
           onClick={() => i18n.changeLanguage(lang)}
           isActive={i18n.language === lang}
