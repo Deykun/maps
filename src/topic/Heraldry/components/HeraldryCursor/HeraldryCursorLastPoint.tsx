@@ -9,8 +9,12 @@ import {
   useFiltersDevelopmentStore,
 } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
 
-import Pane from '@/components/UI/Pane';
-import ButtonCircle from '@/components/UI/ButtonCircle';
+import {
+  getShortTitle
+} from '@/topic/Heraldry/utils/getShortTitle';
+
+import Panel from '@/components/UI/Panel';
+import ButtonIcon from '@/components/UI/ButtonIcon';
 
 import IconCoatOfArms from '@/topic/Heraldry/components/IconCoatOfArms';
 import DevelopmentActions from '@/topic/Heraldry/components/DevelopmentActions/DevelopmentActions';
@@ -18,7 +22,7 @@ import DevelopmentActions from '@/topic/Heraldry/components/DevelopmentActions/D
 import './HeraldryCursorLastPoint.scss';
 
 const HeraldryCursorLastPoint = () => {
-  const isFiltersDevelopmentModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
+  const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
   const lastClick = useCursorStore(state => state.lastClick);
 
   const handleClick = useCallback(() => {
@@ -39,25 +43,27 @@ const HeraldryCursorLastPoint = () => {
         left: lastClick.x,
       }}
     >
-      <Pane className="rounded-full p-1">
-        <ButtonCircle
+      <Panel className="relative rounded-full p-[3px] bg-ui-dark">
+        <ButtonIcon
           size="large"
           id="heraldry-cursor-last-point"
-          className="heraldry-cursor-last-point"
-          wrapperClassName="leading-none"
+          className="heraldry-cursor-last-point rounded-full"
+          wrapperClassName={clsx({
+            'heraldry-cursor-last-point--unique': lastClick.hovered.length === 0,
+          })}
           onClick={handleClick}
-          label={lastClick.hovered.length === 1 ? lastClick.hovered.map(({ title }) => title).join(', ') : undefined}
+          label={lastClick.hovered.length === 1 ? lastClick.hovered.map(({ lang, title }) => getShortTitle(lang, title)).join(', ') : undefined}
           labelPosition="bottom"
         >
           <IconCoatOfArms units={lastClick.hovered} />
-          <span className="ui-button-circle-marker">{lastClick.hovered.length}</span>
-        </ButtonCircle>
-        {isFiltersDevelopmentModeActive && lastClick.hovered.length === 1 && <DevelopmentActions
+          <span className="ui-button-icon-marker">{lastClick.hovered.length}</span>
+        </ButtonIcon>
+        {isFiltersDevModeActive && lastClick.hovered.length === 1 && <DevelopmentActions
           className="heraldry-cursor-last-point-development"
           unit={lastClick.hovered[0]}
           shouldShowDescription
         />}
-      </Pane>
+      </Panel>
     </div>
   );
 };

@@ -1,9 +1,10 @@
 import clsx from 'clsx';
 
-import './Button.scss';
+import './ButtonText.scss';
 
 type Props = {
   className?: string,
+  size?: 'small' | 'large' | 'normal',
   wrapperClassName?: string,
   children: React.ReactNode,
   onClick?: () => void,
@@ -11,16 +12,19 @@ type Props = {
   target?: string,
   isDisabled?: boolean,
   isActive?: boolean,
+  isOnLight?: boolean,
   title?: string,
 }
 
-const Button = ({ className, wrapperClassName, children, onClick, href, target, isDisabled = false, isActive = false, title }: Props) => {
+const ButtonText = ({ className, size, wrapperClassName, children, onClick, href, target, isDisabled = false, isActive = false, isOnLight = false, title }: Props) => {
   const TagName = href ? 'a' : 'button';
 
   return (
-    <span className={clsx('relative ui-button', {
+    <span className={clsx('relative ui-button-text', {
       [wrapperClassName || '']: wrapperClassName,
-      'ui-button--active': isActive,
+      'ui-button-text--active': isActive,
+      'ui-button-text--on-light': isOnLight,
+      [`ui-button-text--${size}`]: size,
     })}>
       <TagName onClick={onClick} disabled={isDisabled} className={className} title={title} href={href} target={target}>
         {children}
@@ -29,4 +33,4 @@ const Button = ({ className, wrapperClassName, children, onClick, href, target, 
   );
 }
 
-export default Button;
+export default ButtonText;

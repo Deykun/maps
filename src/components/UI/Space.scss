@@ -1,0 +1,70 @@
+.ui-space {
+  @apply pointer-events-none flex-shrink-0 h-[12px] w-[16px] bg-ui;
+
+  &.ui-space--is-first {
+    @apply w-[12px];
+  }
+
+  &.ui-space--is-last {
+    @apply w-[12px];
+  }
+
+  &.ui-space--top-right,
+  &.ui-space--bottom-right {
+    @apply ml-auto;
+  }
+
+  &.ui-space--right-top {
+    @apply -mr-[4px];
+  }
+
+  &.ui-space--top-right {
+    @apply -mt-[1px];
+  }
+
+  &.ui-space--right-top,
+  &.ui-space--top-right {
+    mask: radial-gradient(12px at 0 100%, transparent 94%, black) 0 -100%;
+
+    &.ui-space--is-large {
+      @apply h-[24px] w-[24px] -mt-[1px];;
+
+      mask: radial-gradient(25px at 0 100%, transparent 94%, black) 0 -100%;
+    }
+  }
+
+  &.ui-space--right-bottom {
+    @apply -mr-[4px];
+  }
+
+  &.ui-space--bottom-right {
+    @apply -mb-[1px];
+  }
+
+  &.ui-space--right-bottom,
+  &.ui-space--bottom-right {
+    mask: radial-gradient(12px at 0 0, transparent 94%, black) 0 100%;
+  }
+
+  &.ui-space--left-top,
+  &.ui-space--top-left {
+    @apply -mt-[1px];
+
+    mask: radial-gradient(12px at 100% 100%, transparent 94%, black) 0 -100%;
+  }
+
+  &.ui-space--bottom-left {
+    @apply -mb-[1px];
+  }
+
+  &.ui-space--left-bottom,
+  &.ui-space--bottom-left {
+    mask: radial-gradient(12px at 100% 0, transparent 94%, black) 0 100%;
+
+    &.ui-space--is-large {
+      @apply h-[24px] w-[24px];
+
+      mask: radial-gradient(25px at 100% 0, transparent 94%, black) 0 100%;
+    }
+  }
+}

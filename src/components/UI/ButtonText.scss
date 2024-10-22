@@ -1,0 +1,90 @@
+@import "@/scss/mixins.scss";
+
+.ui-button-text {
+  > a,
+  > button {
+    @apply inline-flex justify-center items-center gap-3 p-2 px-3;
+
+    color: #ffdada;
+    background-color: transparent;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+
+    &:disabled {
+      color: #ffb3b347;
+    }
+    
+    @include hoverOnDesktopActiveOnMobile {
+      color: #fff;
+      background: #c6a0a08a;
+
+      .ui-button-icon-marker--on-soft {
+        background: white;
+      }
+    }
+
+    > img,
+    > svg {
+      @apply size-5;
+
+      object-fit: contain;
+      object-position: center;
+      fill: currentColor;
+      transition: ease-in-out 0.2s;
+    }
+
+    > span {
+      font-size: 12px;    
+      font-weight: 600;
+      line-height: 1.4;
+    }
+  }
+
+  &.ui-button-text--small {
+    > a,
+    > button {
+      @apply gap-2 p-1 px-2;
+
+      span {
+        font-size: 10px;
+      }
+
+      > img,
+      > svg {
+        @apply size-4;
+      }
+    }
+  }
+}
+
+.ui-button-text--active {
+  > a,
+  > button {
+    color: #fff;
+
+    > svg {
+      fill: #ff8080;
+    }
+
+    @include hoverOnDesktopActiveOnMobile {
+      > svg {
+        fill: #ffdada;
+      }
+    }
+  }
+
+  &.ui-button-text--on-light {
+    > a,
+    > button {
+      > svg {
+        fill: #842d2d;
+      }
+
+      @include hoverOnDesktopActiveOnMobile {
+        > svg {
+          fill: #ffdada;
+        }
+      }
+    }
+  }
+}

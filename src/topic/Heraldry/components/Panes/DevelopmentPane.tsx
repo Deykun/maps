@@ -27,13 +27,14 @@ import IconSelected from '@/components/Icons/IconSelected';
 import IconSelectNew from '@/components/Icons/IconSelectNew';
 import IconQuote from '@/components/Icons/IconQuote';
 
-import Pane from '@/components/UI/Pane';
-import ButtonCircle from '@/components/UI/ButtonCircle';
-
-import DevelopmentPaneAppFilters from './DevelopmentPane/DevelopmentPaneAppFilters';
-import DevelopmentPaneCustomFilter from './DevelopmentPane/DevelopmentPaneCustomFilter';
+import Space from '@/components/UI/Space';
+import Panel from '@/components/UI/Panel';
+import ButtonIcon from '@/components/UI/ButtonIcon';
 
 import { fetchTitlesAndDescriptions } from './DevelopmentPane/fetch';
+
+import DevelopmentPaneSidebarCustomFilter from './DevelopmentPane/DevelopmentPaneSidebarCustomFilter';
+import DevelopmentPaneSidebarListOfFilters from './DevelopmentPane/DevelopmentPaneSidebarListOfFilters';
 
 type Props = {
   country: string,
@@ -48,7 +49,7 @@ const DevelopmentPane = ({
   const updateResultsTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [activeMenu, setActiveMenu] = useState('');
   const [isOpen, setIsOpen] = useState(false);
-  const isFiltersDevelopmentModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
+  const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
   const isCustomFilterActive = useFiltersDevelopmentStore((state) => state.filter.isActive);
   const filterName = useFiltersDevelopmentStore((state) => state.filter.name);
   const filterPhrases = useFiltersDevelopmentStore((state) => state.filter.phrases);
@@ -72,10 +73,10 @@ const DevelopmentPane = ({
   });
 
   useEffect(() => {
-    if (!isOpen || !isFiltersDevelopmentModeActive) {
+    if (!isOpen || !isFiltersDevModeActive) {
       setActiveMenu('');
     }
-  }, [isOpen, isFiltersDevelopmentModeActive]);
+  }, [isOpen, isFiltersDevModeActive]);
   
   const {
     isLoading,
@@ -168,86 +169,91 @@ const DevelopmentPane = ({
     });
   }
 
-  if (!isFiltersDevelopmentModeActive) {
-    return null;
+  if (!isFiltersDevModeActive) {
+    return (<Space side="left" isLast />);
   }
 
   const isProcessing = isLoading || (isCustomFilterActive && (updateFilterTimeoutRef.current || updateResultsTimeoutRef.current));
 
   return (
-    <div className="relative pointer-events-auto" id="development-pane">
-      <Pane>
-        <ButtonCircle
-          onClick={() => setIsOpen(!isOpen)}
-          isActive={isOpen}
-          label="Custom filters"
-          labelPosition="right"
-        >
-          <IconFlask />
-          {isCustomFilterActive && <span className="ui-button-circle-marker !px-[3px]"><IconCheck className="h-[10px]" /></span>}
-        </ButtonCircle>
-        {isOpen && <>
-          <span className="border-t" />
-          <ButtonCircle
-            onClick={toggleMenu('filters')}
-            isActive={activeMenu === 'filters'}
-            label="App filters"
+    <>
+      <Space side="left" />
+      <div className="relative pointer-events-auto" id="development-pane">
+        <Panel className="ui-panel--rounded-r">
+          <ButtonIcon
+            onClick={() => setIsOpen(!isOpen)}
+            isActive={isOpen}
+            label="Custom filters"
             labelPosition="right"
           >
-            <IconSelected />
-          </ButtonCircle>
-          <ButtonCircle
-            onClick={toggleMenu('customFilter')}
-            isActive={activeMenu === 'customFilter'}
-            label="Create your own filter"
-            labelPosition="right"
-          >
-            <IconSelectNew />
-          </ButtonCircle>
-          <ButtonCircle
-            onClick={() => setShouldShowOnlyValid(!shouldShowOnlyValid)}
-            isActive={shouldShowOnlyValid}
-            label="Show only those with text"
-            labelPosition="right"
-          >
-            <IconQuote />
-          </ButtonCircle>
-          <ButtonCircle
-              onClick={() => toggleCustomFilterVisiblity()}
-              wrapperClassName="ml-auto"
-              isActive={isCustomFilterActive}
-              isDisabled={!draftFilter}
+            <IconFlask />
+            {isCustomFilterActive && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft"><IconCheck className="h-[10px]" /></span>}
+          </ButtonIcon>
+          {isOpen && <>
+            <span className="border-t" />
+            <ButtonIcon
+              onClick={toggleMenu('filters')}
+              isActive={activeMenu === 'filters'}
+              label="App filters"
+              labelPosition="right"
             >
-            {isCustomFilterActive ? <IconSelectionChecked /> : <IconSelectionUnchecked />}
-          </ButtonCircle>
-        </>}
-        {isCustomFilterActive && <>
-          <span className="border-t" />
-          <ButtonCircle
-            onClick={resetCustomFilter}
-            label={t('heraldry.clearFilters')}
-            labelPosition="right"
-          >
-            <IconEraser />
-          </ButtonCircle>
-        </>}
-        {isProcessing && <ButtonCircle tagName="span" isActive>
-          <IconLoader />
-        </ButtonCircle>}
-      </Pane>
-      {activeMenu === 'filters' &&
-        <DevelopmentPaneAppFilters
-          country={country}
-          setDraftFilter={setDraftFilter}
-        />
-      }
-      {activeMenu === 'customFilter' &&
-        <DevelopmentPaneCustomFilter
-          draftFilter={draftFilter}
-          setDraftFilter={setDraftFilter}
-        />
-      }
-    </div>
+              <IconSelected />
+            </ButtonIcon>
+            <ButtonIcon
+              onClick={toggleMenu('customFilter')}
+              isActive={activeMenu === 'customFilter'}
+              label="Create your own filter"
+              labelPosition="right"
+            >
+              <IconSelectNew />
+            </ButtonIcon>
+            <ButtonIcon
+              onClick={() => setShouldShowOnlyValid(!shouldShowOnlyValid)}
+              isActive={shouldShowOnlyValid}
+              label="Show only those with text"
+              labelPosition="right"
+            >
+              <IconQuote />
+            </ButtonIcon>
+            <ButtonIcon
+                onClick={() => toggleCustomFilterVisiblity()}
+                wrapperClassName="ml-auto"
+                isActive={isCustomFilterActive}
+                isDisabled={!draftFilter}
+              >
+              {isCustomFilterActive ? <IconSelectionChecked /> : <IconSelectionUnchecked />}
+            </ButtonIcon>
+          </>}
+          {isCustomFilterActive && <>
+            <span className="border-t" />
+            <ButtonIcon
+              onClick={resetCustomFilter}
+              label={t('heraldry.clearFilters')}
+              labelPosition="right"
+            >
+              <IconEraser />
+            </ButtonIcon>
+          </>}
+          {isProcessing && <ButtonIcon tagName="span" isActive>
+            <IconLoader />
+          </ButtonIcon>}
+        </Panel>
+        
+        {activeMenu === 'filters' &&
+          <DevelopmentPaneSidebarListOfFilters
+            country={country}
+            setDraftFilter={setDraftFilter}
+          />
+        }
+        {activeMenu === 'customFilter' &&
+          <DevelopmentPaneSidebarCustomFilter
+            draftFilter={draftFilter}
+            setDraftFilter={setDraftFilter}
+          />
+        }
+      </div>
+      <Space side="left" isLast />
+    </>
   );
 }
 

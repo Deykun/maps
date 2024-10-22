@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 
-import './Pane.scss';
+import './Panel.scss';
 
 type Props = {
   className?: string,
@@ -10,7 +10,7 @@ type Props = {
 const Pane = ({ className, children }: Props) => {
   return (
     <div
-      className={clsx('ui-pane pointer-events-auto', {
+      className={clsx('ui-panel pointer-events-auto', {
         [className || '']: className,
       })}
     >

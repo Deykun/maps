@@ -1,0 +1,37 @@
+.ui-panel {
+  @apply bg-ui text-ui-contrast p-2 flex flex-col gap-1;
+
+  &.ui-panel--rounded-l {
+    @apply rounded-l-[12px];
+  }
+
+  &.ui-panel--rounded-r {
+    @apply rounded-r-[12px];
+  }
+
+  &.ui-panel--rounded-t {
+    @apply rounded-t-[12px];
+  }
+
+  &.ui-panel--rounded-b {
+    @apply rounded-b-[12px];
+  }
+}
+
+.ui-panel > .border-t,
+.border-t--panel,
+.ui-panel > .border-l,
+.border-l--panel {
+  border-style: dashed;
+  border-color: #7b6767;
+}
+
+.ui-panel > .border-t,
+.border-t--panel {
+  border-top-width: 1px;
+}
+
+.ui-panel > .border-l,
+.border-l--panel {
+  border-left-width: 1px;
+}

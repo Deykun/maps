@@ -52,6 +52,10 @@ const colorMatchers = {
       color: '#f00',
       get: nearestColor.from({ color: '#f00' }),
       thresholdDistance: 80,
+    }, {
+      color: '#fe3940',
+      get: nearestColor.from({ color: '#fe3940' }),
+      thresholdDistance: 30,
     }],
   },
   green: {
@@ -150,7 +154,7 @@ export const getColorStatus = (color: RGB): ColorStatus[] => {
       color: hexColor,
       name,
       matcherColor,
-      distanceToTreshold: -1,
+      distanceToThreshold: -1,
       thresholdDistance: 0,
       distance: 0,
       ...greyscale,
@@ -169,7 +173,7 @@ export const getColorStatus = (color: RGB): ColorStatus[] => {
         didMatch,
         color: hexColor,
         name: colorName,
-        distanceToTreshold: thresholdDistance - match.distance,
+        distanceToThreshold: thresholdDistance - match.distance,
         matcherColor,
         thresholdDistance,
         distance: match?.distance,
@@ -177,13 +181,13 @@ export const getColorStatus = (color: RGB): ColorStatus[] => {
       };
     });
 
-    const bestMatch = colorMatches.sort((a: ColorStatus, b: ColorStatus) => b.distanceToTreshold - a.distanceToTreshold)[0];
+    const bestMatch = colorMatches.sort((a: ColorStatus, b: ColorStatus) => b.distanceToThreshold - a.distanceToThreshold)[0];
 
     statusesToReturn.push({
       didMatch: bestMatch.didMatch,
       color: hexColor,
       name: colorName,
-      distanceToTreshold: bestMatch.distanceToTreshold,
+      distanceToThreshold: bestMatch.distanceToThreshold,
       matcherColor: bestMatch.matcherColor,
       thresholdDistance: bestMatch.thresholdDistance,
       distance: bestMatch?.distance,

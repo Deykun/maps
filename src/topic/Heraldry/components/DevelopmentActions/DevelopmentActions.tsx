@@ -17,9 +17,11 @@ import IconQuote from '@/components/Icons/IconQuote';
 
 import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 
-import Pane from '@/components/UI/Pane';
-import Button from '@/components/UI/Button';
-import ButtonCircle from '@/components/UI/ButtonCircle';
+import Panel from '@/components/UI/Panel';
+import ButtonText from '@/components/UI/ButtonText';
+import ButtonIcon from '@/components/UI/ButtonIcon';
+
+import UnitsPaneUnitMarkers from '@/topic/Heraldry/components/Panes/UnitsPane/UnitsPaneUnitMarkers';
 
 type Props = {
   className?: string,
@@ -37,12 +39,12 @@ const DevelopmentActions = ({
   shouldShowDescription = false,
 }: Props) => {
   const [isMoreOpen, setIsMoreOpen] = useState(false);
-  const isFiltersDevelopmentModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
+  const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
   const filterExclude = useFiltersDevelopmentStore((state) => state.filter.exclude);
   const filterInclude = useFiltersDevelopmentStore((state) => state.filter.include);
 
   const description = useMemo(() => {
-    if (!isFiltersDevelopmentModeActive || !shouldShowDescription) {
+    if (!isFiltersDevModeActive || !shouldShowDescription) {
       return undefined;
     }
 
@@ -55,61 +57,69 @@ const DevelopmentActions = ({
     return undefined;
   }, [unit.id]);
 
-  if (!isFiltersDevelopmentModeActive) {
+  if (!isFiltersDevModeActive) {
     return null;
   }
 
   return (
     <div className={clsx(className, 'flex gap-2 pointer-events-none')}>
-      <ButtonCircle
-        size={buttonSize}
-        className="pointer-events-auto"
-        onClick={() => toggleAsCustomFilterExclude(unit.title)}
-        isActive={filterExclude?.includes(unit.title)}
-        label="Exclude"
-        labelPosition={labelPositions}
-      >
-        <IconMarkerMinus />
-      </ButtonCircle>
-      {shouldShowDescription && (description?.length || 0) > 0 && 
-        <span className="relative">
-          <ButtonCircle
-            size={buttonSize}
-            className="pointer-events-auto"
-            onClick={() => setIsMoreOpen(!isMoreOpen)}
-            isActive={isMoreOpen}
-            label={`Description - ${description?.length}ch.`}
-            labelPosition={labelPositions ?? 'bottom'}
-          >
-            <IconQuote className={description?.length < 60 ? 'scale-50' : ''} />
-          </ButtonCircle>
-          {isMoreOpen &&
-            <Pane
-              className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-[300px]"
+      <Panel className="ui-panel--rounded-l ui-panel--rounded-r pointer-events-auto flex-row">
+        <ButtonIcon
+          size={buttonSize}
+          className="relative pointer-events-auto"
+          onClick={() => toggleAsCustomFilterExclude(unit.title)}
+          isActive={filterExclude?.includes(unit.title)}
+          label="Exclude"
+          labelPosition={labelPositions}
+        >
+          <IconMarkerMinus />
+        </ButtonIcon>
+        {shouldShowDescription && (description?.length || 0) > 0 && 
+          <span className="relative">
+            <ButtonIcon
+              size={buttonSize}
+              className="relative pointer-events-auto"
+              onClick={() => setIsMoreOpen(!isMoreOpen)}
+              isActive={isMoreOpen}
+              label={`Description - ${description?.length}ch.`}
+              labelPosition={labelPositions ?? 'bottom'}
             >
-              <p className="sans text-[10px] text-justify">{description}</p>
-              <Button
-                onClick={() => copyText(
-                  description.replace(/(\r\n|\n|\r)/gm, ' ').replace( /\s\s+/g, ' ')
-                )}
+              <IconQuote className={description?.length < 60 ? 'scale-50' : ''} />
+            </ButtonIcon>
+            {isMoreOpen &&
+              <Panel
+                className="ui-panel--rounded-l ui-panel--rounded-r absolute bottom-full left-1/2 -translate-x-1/2 mb-5 w-[300px]"
               >
-                <span>Copy</span>
-                <IconCopy />
-              </Button>
-            </Pane>
-          }
-        </span>
-      }
-      <ButtonCircle
-        size={buttonSize}
-        className="pointer-events-auto"
-        onClick={() => toggleAsCustomFilterInclude(unit.title)}
-        isActive={filterInclude?.includes(unit.title)}
-        label="Include"
-        labelPosition={labelPositions ?? 'right'}
-      >
-        <IconMarkerPlus />
-      </ButtonCircle>
+                <p className="sans text-[10px] text-justify line-clamp-5">{description}</p>
+                <div className="flex justify-center gap-2">
+                  <UnitsPaneUnitMarkers id={unit.id} country={unit.lang} types={unit.type} shouldShowContentAsTooltip />
+                  <ButtonText
+                    size="small"
+                    onClick={() => copyText(
+                      description.replace(/(\r\n|\n|\r)/gm, ' ').replace( /\s\s+/g, ' ')
+                    )}
+                    isActive
+                    isOnLight
+                  >
+                    <span>Copy</span>
+                    <IconCopy />
+                  </ButtonText>
+                </div>
+              </Panel>
+            }
+          </span>
+        }
+        <ButtonIcon
+          size={buttonSize}
+          className="relative pointer-events-auto"
+          onClick={() => toggleAsCustomFilterInclude(unit.title)}
+          isActive={filterInclude?.includes(unit.title)}
+          label="Include"
+          labelPosition={labelPositions ?? 'right'}
+        >
+          <IconMarkerPlus />
+        </ButtonIcon>
+      </Panel>
     </div>
   );
 };

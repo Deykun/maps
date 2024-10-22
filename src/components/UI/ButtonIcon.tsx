@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import { cn } from '@/utils/tailwind';
 
-import './ButtonCircle.scss';
+import './ButtonIcon.scss';
 
 type Props = {
   id?: string,
@@ -16,11 +16,11 @@ type Props = {
   isActive?: boolean,
   title?: string,
   label?: string,
-  labelPosition?: 'left' | 'right' | 'bottom' | 'top',
+  labelPosition?: 'left' | 'right' | 'bottom' | 'top' | 'bottomRight' | 'bottomLeft',
   tagName?: 'span',
 }
 
-const ButtonCircle = ({
+const ButtonIcon = ({
   id,
   className,
   wrapperClassName,
@@ -39,10 +39,11 @@ const ButtonCircle = ({
   const TagName = tagName ?? (href ? 'a' : 'button');
 
   return (
-    <span className={cn('relative ui-button-circle', {
+    <span className={cn('relative ui-button-icon', {
       [wrapperClassName || '']: wrapperClassName,
-      'ui-button-circle--active': isActive,
-      [`ui-button-circle--${size}`]: size,
+      'ui-button-icon--active': isActive,
+      'ui-tooltip-wrapper': label,
+      [`ui-tooltip-wrapper--${size} ui-button-icon--${size}`]: size,
     })}>
       <TagName
         id={id}
@@ -55,8 +56,8 @@ const ButtonCircle = ({
       >
         {children}
         {label && <span
-          className={clsx('ui-button-circle-label', {
-            [`ui-button-circle-label--${labelPosition}`]: labelPosition,
+          className={clsx('ui-tooltip', {
+            [`ui-tooltip--${labelPosition}`]: labelPosition,
           })}
         >
           {label}
@@ -66,4 +67,4 @@ const ButtonCircle = ({
   );
 }
 
-export default ButtonCircle;
+export default ButtonIcon;
