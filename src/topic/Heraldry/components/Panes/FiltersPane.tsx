@@ -102,6 +102,7 @@ const FiltersPane = ({
   setShouldFetchDetails,
   isFetchingDetails,
 }: Props) => {
+  const [wasOpen, setWasOpen] = useState(false);
   const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
   const [activeMenu, setActiveMenu] = useState('');
   const [isOpen, setIsOpen] = useState(false);
@@ -117,6 +118,7 @@ const FiltersPane = ({
       setActiveMenu('');
     } else {
       setShouldFetchDetails(true);
+      setWasOpen(true)
     }
   }, [isOpen]);
 
@@ -146,6 +148,8 @@ const FiltersPane = ({
     setItemFilters([]);
     setFilterOperator('and');
     setShouldReverseFilters(false);
+    // Don't hint to open after clearing
+    setWasOpen(true);
   };
 
   const activeTotalTypes = typeFilters.length + (shouldIgnoreFormer ? 1 : 0);
@@ -164,6 +168,7 @@ const FiltersPane = ({
         >
           <IconMapMagnifyingGlass />
           {activeTotal > 0 && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft">{activeTotal}</span>}
+          {activeTotal === 0 && !wasOpen && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft">!</span>}
         </ButtonIcon>
         {isOpen && <>
           <span className="border-t" />
