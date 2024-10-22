@@ -1,6 +1,5 @@
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
-import clsx from 'clsx';
 
 import HeraldrySubtitle from '@/topic/Heraldry/components/HeraldryTitle/HeraldrySubtitle';
 
@@ -48,17 +47,10 @@ const HeraldryTitle = ({
 
   return (
     <header className="md:mb-10 min-h-[100px] max-w-[calc(100vw_-_120px)] lg:max-w-[800px] flex-shrink-0 mx-auto">
-      {zoomLevel === 1 && 
-        <h1 className={clsx('heading text-[20px] sm:text-[28px] lg:text-[36px] text-center text-ui-dark', { 
-          'hidden': zoomLevel > 1,
-        })}>
-          {t(`heraldry.${country}.mapTitle`)}
-        </h1>
-      }
-      {
-        (zoomLevel === 1 || subtitleParts.length > 0) &&
-        <HeraldrySubtitle zoomLevel={zoomLevel} subtitleParts={subtitleParts} shouldReverseFilters={shouldReverseFilters} />
-      }
+      <h1 className="heading text-[20px] sm:text-[28px] lg:text-[36px] text-center text-ui-dark">
+        {t(`heraldry.${country}.mapTitle`)}
+      </h1>
+      <HeraldrySubtitle zoomLevel={zoomLevel} subtitleParts={subtitleParts} shouldReverseFilters={shouldReverseFilters} />
     </header>
   );
 };

@@ -139,6 +139,26 @@ svg {
   }
 }
 
+.ui-slide-from-bottom {
+  opacity: 0;
+  transform: translateY(calc(100% + 30px));
+  animation: 0.5s uiSlideFromBottom forwards ease-in;
+  animation-delay: 0.3s;
+  transform-origin: top left;
+}
+
+@keyframes uiSlideFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(calc(100% + 30px));
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 ::-moz-selection {
   background: #aa0d0d40;
   text-shadow: none;

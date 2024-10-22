@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import './Space.scss';
 
 type Props = {
-  side: 'top' | 'left' | 'right'
+  side: 'top' | 'bottom' | 'left' | 'right'
   className?: string,
   isFirst?: boolean,
   isLast?: boolean,

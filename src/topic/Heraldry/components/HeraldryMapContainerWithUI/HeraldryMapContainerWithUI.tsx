@@ -22,6 +22,7 @@ import UnitsPane from '@/topic/Heraldry/components/Panes/UnitsPane';
 import FiltersPane from '@/topic/Heraldry/components/Panes/FiltersPane';
 
 import HeraldryTitle from '@/topic/Heraldry/components/HeraldryTitle/HeraldryTitle';
+import HeraldryFooter from '@/topic/Heraldry/components/HeraldryFooter/HeraldryFooter';
 import HeraldryMapHTMLCanvas from '@/topic/Heraldry/components/HeraldryMapHTMLCanvas/HeraldryMapHTMLCanvas';
 
 import Space from '@/components/NewUI/Space';
@@ -173,25 +174,11 @@ const HeraldryMapContainerWithUI = ({
                 </HeraldryMapHTMLCanvas>
               </div>
             </div>
-            <div className={clsx('heraldry-map-footer', {
-              'text-center mt-10 text-[14px] text-[#4b4b4b] tracking-wide': zoomLevel === 1,
-              'heraldry-map-footer--zoomed fixed bottom-3 right-3 max-w-[calc(100vw_-24px)] z-30 ui-pane sans text-[12px] py-2 px-3 text-center': zoomLevel > 1,
-            })}>
-              <p>
-                {zoomLevel === 1 && <>{t('heraldry.mapFooterSource')} <strong className="text-ui-dark">wikipedia.org</strong>.<br /></>}
-                {' '}
-                {t('heraldry.mapFooterAllCoats')} <strong className="text-ui-dark">{unitsForMapAll.length}</strong>
-                {unitsForMapAll.length > units.length && <>{t('heraldry.mapFooterCoatsAfterFilter')}
-                {' '}
-                <strong className={clsx({
-                  'text-ui-dark': units.length > 0,
-                  'text-[#ca1a1a]': units.length === 0 })
-                }>{units.length}</strong>
-                {units.length > 10 && <>{' '}- <strong className="text-ui-dark">
-                  {(100 * (units.length / unitsForMapAll.length)).toFixed(2)}
-                </strong><small>%</small></>}</>}.
-              </p>
-            </div>
+            <HeraldryFooter
+              zoomLevel={zoomLevel}
+              totalUnits={unitsForMapAll.length}
+              totalVisibleUnits={unitsForMap.length}
+            />
           </section>
           <div className={clsx('ui-slide-from-left fixed top-0 left-0 z-20 flex flex-col pointer-events-none', {
             'hidden md:flex': zoomLevel > 1 && subtitleParts.length !== 0,

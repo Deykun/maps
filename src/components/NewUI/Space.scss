@@ -33,9 +33,16 @@
     }
   }
 
+  &.ui-space--right-bottom {
+    @apply -mr-[4px];
+  }
+
   &.ui-space--bottom-right {
     @apply -mb-[1px];
+  }
 
+  &.ui-space--right-bottom,
+  &.ui-space--bottom-right {
     mask: radial-gradient(12px at 0 0, transparent 94%, black) 0 100%;
   }
 
@@ -48,7 +55,10 @@
 
   &.ui-space--bottom-left {
     @apply -mb-[1px];
+  }
 
+  &.ui-space--left-bottom,
+  &.ui-space--bottom-left {
     mask: radial-gradient(12px at 100% 0, transparent 94%, black) 0 100%;
   }
 }
