@@ -28,15 +28,13 @@ import IconSelectNew from '@/components/Icons/IconSelectNew';
 import IconQuote from '@/components/Icons/IconQuote';
 
 import Space from '@/components/NewUI/Space';
-import Pane from '@/components/UI/Pane';
 import Panel from '@/components/NewUI/Panel';
-import ButtonCircle from '@/components/UI/ButtonCircle';
 import ButtonIcon from '@/components/NewUI/ButtonIcon';
 
-import DevelopmentPaneAppFilters from './DevelopmentPane/DevelopmentPaneAppFilters';
-import DevelopmentPaneCustomFilter from './DevelopmentPane/DevelopmentPaneCustomFilter';
-
 import { fetchTitlesAndDescriptions } from './DevelopmentPane/fetch';
+
+import DevelopmentPaneSidebarCustomFilter from './DevelopmentPane/DevelopmentPaneSidebarCustomFilter';
+import DevelopmentPaneSidebarListOfFilters from './DevelopmentPane/DevelopmentPaneSidebarListOfFilters';
 
 type Props = {
   country: string,
@@ -49,8 +47,11 @@ const DevelopmentPane = ({
 }: Props) => {
   const updateFilterTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const updateResultsTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const [activeMenu, setActiveMenu] = useState('');
-  const [isOpen, setIsOpen] = useState(false);
+  // const [activeMenu, setActiveMenu] = useState('');
+  const [activeMenu, setActiveMenu] = useState('customFilter');
+  
+  // const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
   const isCustomFilterActive = useFiltersDevelopmentStore((state) => state.filter.isActive);
   const filterName = useFiltersDevelopmentStore((state) => state.filter.name);
@@ -240,14 +241,15 @@ const DevelopmentPane = ({
             <IconLoader />
           </ButtonIcon>}
         </Panel>
+        
         {activeMenu === 'filters' &&
-          <DevelopmentPaneAppFilters
+          <DevelopmentPaneSidebarListOfFilters
             country={country}
             setDraftFilter={setDraftFilter}
           />
         }
         {activeMenu === 'customFilter' &&
-          <DevelopmentPaneCustomFilter
+          <DevelopmentPaneSidebarCustomFilter
             draftFilter={draftFilter}
             setDraftFilter={setDraftFilter}
           />

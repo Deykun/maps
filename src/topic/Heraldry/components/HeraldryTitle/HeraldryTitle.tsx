@@ -8,7 +8,6 @@ import Panel from '@/components/NewUI/Panel';
 
 import { SubtitlePart } from '@/topic/Heraldry/utils/getFilteredUnits';
 
-
 export type Props = {
   country: string,
   zoomLevel: number,

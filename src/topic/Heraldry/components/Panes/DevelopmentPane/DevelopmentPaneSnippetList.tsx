@@ -18,7 +18,7 @@ const DevelopmentPaneSnippetList = ({
           {'  '}"<span key={value} className="text-white">{value}</span>"{index !== (list.length - 1) && <>,<br /></>}
         </>)}
         <br />
-      {' '}]
+      {' '}],
     </>
   );
 };

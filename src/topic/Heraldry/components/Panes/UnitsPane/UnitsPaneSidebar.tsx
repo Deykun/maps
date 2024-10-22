@@ -72,7 +72,7 @@ const UnitsPaneSidebar = ({
           <UnitsPaneSidebarDetailsContent unit={detailsUnit} setDetailsUnit={setDetailsUnit}/>
           : <>
             <h3 className="flex gap-3 items-center text-[14px]">
-              <IconCoatOfArms className="size-5" units={[]} />
+              <IconCoatOfArms className="size-5 text-white" units={[]} />
               <span>{t('heraldry.list.title')}</span>
             </h3>
             <Panel className="ui-panel--rounded-l ui-panel--rounded-r">

@@ -60,5 +60,11 @@
   &.ui-space--left-bottom,
   &.ui-space--bottom-left {
     mask: radial-gradient(12px at 100% 0, transparent 94%, black) 0 100%;
+
+    &.ui-space--is-large {
+      @apply h-[24px] w-[24px];
+
+      mask: radial-gradient(25px at 100% 0, transparent 94%, black) 0 100%;
+    }
   }
 }
