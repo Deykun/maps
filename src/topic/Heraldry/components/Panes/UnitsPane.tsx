@@ -92,9 +92,6 @@ const UnitsPane = ({
     <div className="pointer-events-auto" id="units-pane">
       <Panel className="ui-panel--rounded-l">
         <ButtonIcon
-          className={clsx({
-            '!bg-white': filteredUnits.length === 1,
-          })}
           id="units-pane-toggle"
           isDisabled={units.length === 0}
           isActive={isOpen}

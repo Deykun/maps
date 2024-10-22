@@ -68,8 +68,7 @@ const HeraldryMapContainerWithUI = ({
     const [listPhrase, setListPhrase] = useState('');
     const [filterOperator, setFilterOperator] = useState<'and' | 'or'>(initialFilters.filterOperator || 'and');
     const [shouldReverseFilters, setShouldReverseFilters] = useState(initialFilters.shouldReverseFilters || false);
-    // const [zoomLevel, setZoomLevel] = useState(1);
-    const [zoomLevel, setZoomLevel] = useState(2);
+    const [zoomLevel, setZoomLevel] = useState(1);
     const [coatSize, setCoatSize] = useState(4);
     const customFilter = useFiltersDevelopmentStore(state => state.filter);
     const [typeFilters, setTypeFilters] = useState<string[]>(initialFilters.typeFilters || []);
@@ -80,7 +79,7 @@ const HeraldryMapContainerWithUI = ({
 
     const { events } = useDraggable(wrapperRef, { decayRate: 0.015 });
 
-    const { t, i18n } = useTranslation();
+    const { i18n } = useTranslation();
 
     useEffect(() => {
       const hasInitialFilters = Object.values(initialFilters).filter(Boolean).length > 0;

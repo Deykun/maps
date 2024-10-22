@@ -1,29 +1,6 @@
-import { memo, useRef, useState, useMemo, useEffect, Suspense } from 'react';
+import { memo } from 'react';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
-// import { useTranslation } from 'react-i18next';
-// import { useDraggable } from "react-use-draggable-scroll";
-
-// import { isLanguageSupported } from '@/utils/lang';
-
-// import {
-//   useFiltersDevelopmentStore,
-// } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
-
-// import { MapsSearchParams, getSearchParamFromFilters } from '@/topic/Heraldry/utils/getSearchParams'
-// import { CoatOfArmsMapData, MapOffset, CoatOfArmsDetailsData } from '@/topic/Heraldry/types';
-
-// import { GetFilterResponse } from '@/topic/Heraldry/utils/getFilter';
-// import { getFilteredUnits } from '@/topic/Heraldry/utils/getFilteredUnits';
-
-// import DevelopmentPane from '@/topic/Heraldry/components/Panes/DevelopmentPane';
-// import NavigationPane from '@/topic/Heraldry/components/Panes/NavigationPane';
-// import ZoomPane from '@/topic/Heraldry/components/Panes/ZoomPane';
-// import UnitsPane from '@/topic/Heraldry/components/Panes/UnitsPane';
-// import FiltersPane from '@/topic/Heraldry/components/Panes/FiltersPane';
-
-// import HeraldryTitle from '@/topic/Heraldry/components/HeraldryTitle/HeraldryTitle';
-// import HeraldryMapHTMLCanvas from '@/topic/Heraldry/components/HeraldryMapHTMLCanvas/HeraldryMapHTMLCanvas';
 
 import Space from '@/components/NewUI/Space';
 import Panel from '@/components/NewUI/Panel';
@@ -41,11 +18,6 @@ const HeraldryFooter = ({
   totalUnits,
 }: Props) => {
   const { t } = useTranslation();
-
-  console.log({
-    totalVisibleUnits,
-    totalUnits,
-  })
 
   if (zoomLevel > 1) {
     return (

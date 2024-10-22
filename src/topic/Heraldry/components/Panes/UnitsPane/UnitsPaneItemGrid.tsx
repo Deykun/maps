@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import { getShortTitle } from '@/topic/Heraldry/utils/getShortTitle';
 import { getSpriteDataFromUnit } from '@/topic/Heraldry/utils/getSpriteDataFromUnit';
 import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 
@@ -44,7 +45,9 @@ const UnitsPaneItemGrid = ( { className, unit, setDetailsUnit, labelPosition = '
               [`ui-tooltip--${labelPosition}`]: labelPosition,
             })}
           >
-            {unit.title.split(' ').map((word, index) => <span>{index !== 0 && <br />}{word}</span>)}
+            {getShortTitle(unit.lang, unit.title).split(' ').map((word, index) => <span>
+              {index !== 0 && (word.length > 3 ? ' ' : <br />)}{word}
+            </span>)}
           </span>
       </button>
     </li>

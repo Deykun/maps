@@ -202,7 +202,7 @@ const FiltersPane = ({
             isDisabled={itemFiltersList.length === 0}
           >
             <IconCrown />
-            {itemFilters.length > 0 && <span className="ui-button-icon-marker">{itemFilters.length}</span>}
+            {itemFilters.length > 0 && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft">{itemFilters.length}</span>}
           </ButtonIcon>
           <ButtonIcon
             onClick={toggleMenu('settings')}
@@ -210,7 +210,7 @@ const FiltersPane = ({
             label={t('heraldry.titleSettings')}
           >
             <IconControls />
-            {shouldAddWarningForRevesedFilters && <span className="ui-button-icon-marker">!</span>}
+            {shouldAddWarningForRevesedFilters && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft">!</span>}
           </ButtonIcon>
         </>}
         {activeTotal > 0 && <>
@@ -286,7 +286,7 @@ const FiltersPane = ({
           labelPosition="bottomLeft"
         >
           {shouldReverseFilters ? <IconEyeCrossed /> : <IconEye />}
-          {shouldAddWarningForRevesedFilters && <span className="ui-button-icon-marker">!</span>}
+          {shouldAddWarningForRevesedFilters && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft">!</span>}
         </ButtonIcon>
         <span className="border-l"></span>
         <ButtonIcon
