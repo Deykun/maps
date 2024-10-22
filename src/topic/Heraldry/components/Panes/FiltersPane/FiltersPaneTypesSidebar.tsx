@@ -103,6 +103,7 @@ const FiltersPaneTypesSidebar = ({
                 size="small"
                 onClick={() => setShouldIgnoreFormer(!shouldIgnoreFormer)}
                 isActive={shouldIgnoreFormer}
+                isOnLight
               >
                 <IconScriptBroken />
                 <span>{t('heraldry.unit.ignoreFormerUnits')}</span>

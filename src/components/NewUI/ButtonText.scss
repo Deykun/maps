@@ -72,4 +72,19 @@
       }
     }
   }
+
+  &.ui-button-text--on-light {
+    > a,
+    > button {
+      > svg {
+        fill: #842d2d;
+      }
+
+      @include hoverOnDesktopActiveOnMobile {
+        > svg {
+          fill: #ffdada;
+        }
+      }
+    }
+  }
 }
