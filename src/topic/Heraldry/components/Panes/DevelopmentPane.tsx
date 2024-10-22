@@ -47,11 +47,8 @@ const DevelopmentPane = ({
 }: Props) => {
   const updateFilterTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const updateResultsTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  // const [activeMenu, setActiveMenu] = useState('');
-  const [activeMenu, setActiveMenu] = useState('customFilter');
-  
-  // const [isOpen, setIsOpen] = useState(false);
-  const [isOpen, setIsOpen] = useState(true);
+  const [activeMenu, setActiveMenu] = useState('');
+  const [isOpen, setIsOpen] = useState(false);
   const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
   const isCustomFilterActive = useFiltersDevelopmentStore((state) => state.filter.isActive);
   const filterName = useFiltersDevelopmentStore((state) => state.filter.name);
