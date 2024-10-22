@@ -235,7 +235,7 @@ const FiltersPane = ({
         shouldIgnoreFormer={shouldIgnoreFormer}
         setShouldIgnoreFormer={setShouldIgnoreFormer}
       />}
-      {activeMenu === 'color' && <SubPanel order={2} className="ui-slide-from-right-sidebar z-[-1] mt-2 absolute right-12 mr-2 flex-row">
+      {activeMenu === 'color' && <SubPanel order={2} className="ui-slide-from-right-sidebar no-scrollbar z-[-1] mt-2 absolute right-12 mr-2 flex-row">
         {Object.keys(colorsMarkersByNames).map((name) => <ButtonIcon
           key={name}
           wrapperClassName="relative bg-white rounded-[8px]"
@@ -267,7 +267,7 @@ const FiltersPane = ({
         toggle={toggleItem}
         filtersList={itemFiltersList}
       />}
-      {activeMenu === 'settings' && <SubPanel order={5} className="ui-slide-from-right-sidebar z-[-1] mt-2 absolute right-12 mr-2 flex-row">
+      {activeMenu === 'settings' && <SubPanel order={5} className="ui-slide-from-right-sidebar no-scrollbar z-[-1] mt-2 absolute right-12 mr-2 flex-row">
         <ButtonIcon
           wrapperClassName="ml-auto"
           onClick={() => setFilterOperator(filterOperator === 'and' ? 'or' : 'and')}
