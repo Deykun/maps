@@ -1,4 +1,4 @@
-import { memo, useState } from 'react';
+import { memo, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from "wouter";
 import clsx from 'clsx';
@@ -20,17 +20,43 @@ import ButtonIcon from '@/components/UI/ButtonIcon';
 
 import './NavigationPane.scss'
 
-const NavigationPane = () => {
+type Props = {
+  shouldHintLang?: boolean,
+  setShouldHintLang?: (value: boolean) => void,
+}
+
+const NavigationPane = ({
+  shouldHintLang,
+  setShouldHintLang,
+}: Props) => {
   const [activeMenu, setActiveMenu] = useState('');
   const { t, i18n } = useTranslation();
   const [path] = useLocation();
+
+  useEffect(() => {
+    if (shouldHintLang) {
+      setActiveMenu('language');
+    }
+  }, [shouldHintLang])
 
   const toggleMenu = (name: string) => () => setActiveMenu((v) => v === name ? '' : name); 
 
   // Not the nicest solution, but it works
   useOutsideClick('#navigation-pane', () => {
     setActiveMenu('');
+
+    if (setShouldHintLang) {
+      setShouldHintLang(false);
+    }
   });
+
+  const changeLanguage = (lang: string) => {
+    i18n.changeLanguage(lang);
+
+    if (setShouldHintLang) {
+      setShouldHintLang(false);
+    }
+  }
 
   return (
     <div className="relative" id="navigation-pane">
@@ -71,14 +97,20 @@ const NavigationPane = () => {
           {path === `/maps/${langPath}` && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft"><IconCheck className="h-[10px]" /></span>}
         </ButtonIcon>)}
       </SubPanel>}
-      {activeMenu === 'language' && <SubPanel order={1} className="ui-slide-from-left-sidebar z-[-1] absolute left-12 ml-3 flex-row">
+      {activeMenu === 'language' && <SubPanel order={1} className={clsx(
+        'ui-slide-from-left-sidebar !z-[-1] absolute left-12 ml-3 flex-row',
+        'ui-tooltip-wrapper', {
+          'ui-tooltip-wrapper--active ': shouldHintLang,
+        }
+      )}>
         {SUPPORTED_LANGS.map((lang) => <ButtonIcon
-          onClick={() => i18n.changeLanguage(lang)}
+          onClick={() => changeLanguage(lang)}
           isActive={i18n.language === lang}
         >
           <img className="navigation-pane-flag" src={`images/flags/${lang}.svg`} alt={lang} />
           {i18n.language === lang && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft"><IconCheck className="h-[10px]" /></span>}
         </ButtonIcon>)}
+        <span className="ui-tooltip ui-tooltip--top">App language</span>
       </SubPanel>}
     </div>
   );

@@ -65,6 +65,7 @@ const HeraldryMapContainerWithUI = ({
   isFetchingDetails = false,
 }: Props) => {
     const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
+    const [shouldHintLang, setShouldHintLang] = useState(false);
     const [listPhrase, setListPhrase] = useState('');
     const [filterOperator, setFilterOperator] = useState<'and' | 'or'>(initialFilters.filterOperator || 'and');
     const [shouldReverseFilters, setShouldReverseFilters] = useState(initialFilters.shouldReverseFilters || false);
@@ -89,12 +90,13 @@ const HeraldryMapContainerWithUI = ({
     }, [initialFilters]);
 
     useEffect(() => {
-      if (isLanguageSupported(lang)) {
-        i18n.changeLanguage(lang);
-      } else {
-        // i18n.changeLanguage('en');
+      i18n.changeLanguage(lang);
+
+      if (!isLanguageSupported(lang)) {
+        console.log('NOt supported')
+        setShouldHintLang(true);
       }
-    }, []);
+    }, [i18n]);
 
     const { units, unitsForMap, subtitleParts } = useMemo(() => {
       // All types are checked and we can skip setting subtitle and filtering
@@ -183,7 +185,10 @@ const HeraldryMapContainerWithUI = ({
             'hidden md:flex': zoomLevel > 1 && subtitleParts.length !== 0,
           })}>
             <Space side="left" />
-            <NavigationPane />
+            <NavigationPane
+              shouldHintLang={shouldHintLang}
+              setShouldHintLang={setShouldHintLang}
+            />
             <DevelopmentPane
               country={lang}
               unitTypes={developmentModeFiltersTypes || typeFiltersList.map(({ value }) => value)}
