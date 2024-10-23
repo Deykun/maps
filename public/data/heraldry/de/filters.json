@@ -334,17 +334,125 @@
     {
       "name": "lion",
       "phrases": [
-       "greifenlöwe",
-       "löwe",
-       "lowe",
-       "löwen",
-       "löwenhagen",
-       "löwenkopf",
-       "löwenköpfen",
-       "löwenköpfe",
-       "löwenmaske",
-       "löwenrumpf",
-       "seelöwe"
+          "greifenlöwe",
+          "löwe",
+          "lowe",
+          "löwen",
+          "löwenhagen",
+          "löwenkopf",
+          "löwenköpfen",
+          "löwenköpfe",
+          "löwenmaske",
+          "löwenrumpf",
+          "seelöwe"
+      ],
+      "include": [
+        {
+          "imageHash": "cfcacbe",
+          "note": "Bleckede"
+        },
+        {
+          "imageHash": "631de03e",
+          "note": "Wiednitz"
+        },
+        {
+          "imageHash": "645cced7",
+          "note": "Königstein (Sächsische Schweiz)"
+        },
+        {
+          "imageHash": "d730d27",
+          "note": "Sayda"
+        },
+        {
+          "imageHash": "2d59f536",
+          "note": "Markneukirchen"
+        },
+        {
+          "imageHash": "490aa494",
+          "note": "Weischlitz"
+        },
+        {
+          "imageHash": "96cef23",
+          "note": "Vogtlandkreis"
+        },
+        {
+          "imageHash": "476301a8",
+          "note": "Hauzenberg"
+        },
+        {
+          "imageHash": "730625be",
+          "note": "Kay (Tittmoning)"
+        },
+        {
+          "imageHash": "6af447bb",
+          "note": "Schönrain (Königsdorf)"
+        },
+        {
+          "imageHash": "7b38d614",
+          "note": "Ellhofen (Weiler-Simmerberg)"
+        },
+        {
+          "imageHash": "23b60e94",
+          "note": "Großrosseln"
+        },
+        {
+          "imageHash": "3be440e2",
+          "note": "Ludweiler"
+        },
+        {
+          "imageHash": "69616eb",
+          "note": "Gersweiler"
+        },
+        {
+          "imageHash": "4da3bdaf",
+          "note": "Saarwellingen"
+        },
+        {
+          "imageHash": "3025d737",
+          "note": "Völklingen"
+        },
+        {
+          "imageHash": "7c6de072",
+          "note": "Köllerbach"
+        },
+        {
+          "imageHash": "56de4ab",
+          "note": "Gerolstein"
+        },
+        {
+          "imageHash": "47df0237",
+          "note": "Verbandsgemeinde Gerolstein (1968–2018)"
+        },
+        {
+          "imageHash": "111e2078",
+          "note": "Verbandsgemeinde Gerolstein"
+        },
+        {
+          "imageHash": "332bf7ff",
+          "note": "Kirchwald"
+        },
+        {
+          "imageHash": "110d61fe",
+          "note": "Verbandsgemeinde Mendig"
+        },
+        {
+          "imageHash": "5eb061f1",
+          "note": "Mendig"
+        }
+      ],
+      "exclude": [
+          {
+              "imageHash": "3c2f0b02",
+              "note": "Leer (Ostfriesland)"
+          },
+          {
+              "imageHash": "42ea3f43",
+              "note": "München"
+          },
+          {
+              "imageHash": "69e4c568",
+              "note": "Coburg"
+          }
       ]
     },
     {

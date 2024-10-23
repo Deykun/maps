@@ -97,7 +97,7 @@ const DevelopmentPaneSidebarCustomFilter = ({
           <ButtonText
             wrapperClassName="ml-auto"
             isActive={Boolean(draftFilter)}
-            onClick={() => copyText(JSON.stringify(draftFilter, null, 4))}
+            onClick={() => copyText(JSON.stringify(draftFilter, null, 2))}
           >
             <span>{t('main.copy')}</span>
             <IconCopy />

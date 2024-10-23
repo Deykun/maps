@@ -68,9 +68,9 @@ const DevelopmentPane = ({
   const { t } = useTranslation();
 
   // Not the nicest solution, but it works
-  // useOutsideClick('#development-pane', () => {
-  //   setActiveMenu('');
-  // });
+  useOutsideClick('#development-pane', () => {
+    setActiveMenu('');
+  });
 
   useEffect(() => {
     if (!isOpen || !isFiltersDevModeActive) {
