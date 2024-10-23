@@ -18,9 +18,7 @@ type Props = {
 }
 
 const UnitsPaneUnitMarkers = ({ unit, shouldShowContentAsTooltip = false }: Props) => {
-  const id = unit.id;
   const country = unit.lang;
-  const types = unit.type;
 
   const data = queryClient.getQueryData([country, 'details']);
 
@@ -83,7 +81,7 @@ const UnitsPaneUnitMarkers = ({ unit, shouldShowContentAsTooltip = false }: Prop
         shouldShowContentAsTooltip={shouldShowContentAsTooltip}
       />
       <UnitsPaneUnitMarkersList
-        list={types}
+        list={unit.type}
         listTitle="heraldry.unit.filterTitle"
         listElementPrefix={`heraldry.unit.type.${country}`}
         icon={IconBuilding}
