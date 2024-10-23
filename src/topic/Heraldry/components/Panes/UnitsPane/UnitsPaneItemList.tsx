@@ -53,7 +53,7 @@ const UnitsPaneItemList = ( { className, unit, setDetailsUnit }: Props) => {
       <div className="flex flex-col gap-1 justify-start items-start self-center">
         <button className="block text-left text-[12px] font-[500] hover:text-white duration-300" onClick={() => setDetailsUnit(unit)}>{unit.title}</button>
         <p className="text-[10px] line-clamp-1 mb-1">{unit.place?.name}</p>
-        <UnitsPaneUnitMarkers id={unit.id} country={unit.lang} types={unit.type} shouldShowContentAsTooltip />
+        <UnitsPaneUnitMarkers unit={unit} shouldShowContentAsTooltip />
       </div>
       <div className="flex flex-col gap-1 ml-auto">
         <ButtonIcon

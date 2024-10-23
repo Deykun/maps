@@ -58,6 +58,11 @@ const fetchCountryData = async ({ dataPaths, filterForCountryData, sortForCountr
         } else {
           stack[uniqueId] = unit;
         }
+
+        const imagePath = (unit.imagesList || []).find(({ width }) => width === '80w')?.path;
+
+        // images/heraldry/de/unit/17f85dc9-kreis-warendorf-80w.webp -> 17f85dc9
+        stack[uniqueId].imageHash = (imagePath || '').split('/').at(-1)?.split('-')[0] || '';
       }
 
       if (updateLoaderIn === 'updateLoaderInIndex' && index % 10) {

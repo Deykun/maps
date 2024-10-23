@@ -1,6 +1,7 @@
 import { MarkerParamsWithResult, CoatOfArmsMapData, CoatOfArmsDetailsData } from '../types';
 import { WITH_ANIMAL, WITHOUT_ANIMAL } from '../constants';
 import { collapsePhrases } from './markers/collapsePhrases';
+import { mergeMarkersForUnit } from './markers/mergeMarkersForUnit';
 
 export type SubtitlePart = {
   operator: 'or' | 'and';
@@ -103,7 +104,7 @@ export const getFilteredUnits = ({
 
       const isAnimalFilterActive = animalFilters.length > 0;
       if (isAnimalFilterActive) {
-        const animals = detailsForUnitsById?.[unit.id]?.markers?.animals || [];
+        const animals = mergeMarkersForUnit(unit, detailsForUnitsById, 'animals');
         const hasAnimals = animals.length > 0;
 
         if ([WITH_ANIMAL, WITHOUT_ANIMAL].includes(animalFilters[0])) {
@@ -131,7 +132,7 @@ export const getFilteredUnits = ({
 
       const isItemFilterActive = itemFilters.length > 0;
       if (isItemFilterActive) {
-        const items = detailsForUnitsById?.[unit.id]?.markers?.items || [];
+        const items = mergeMarkersForUnit(unit, detailsForUnitsById, 'items');
         const hasItems = items.length > 0;
 
         if (!hasItems) {

@@ -23,8 +23,16 @@ export const getDoesUnitMatch = (listPhraseNormalized: string, unit: CoatOfArmsM
   return phrases.some(phrase => getDoesPhraseMatch(phrase, unit));
 };
 
+const multiplayerForShortTitlesBonus: {
+  [wordsCount: number]: number
+} = {
+  1: 6,
+  2: 4,
+  3: 2
+} as const;
+
 const getPhraseSortRank = (phrase: string, unit: CoatOfArmsMapData) => {
-  if (getDoesPhraseMatch(phrase, unit)) {
+  if (!getDoesPhraseMatch(phrase, unit)) {
     return 0;
   }
 
@@ -41,11 +49,11 @@ const getPhraseSortRank = (phrase: string, unit: CoatOfArmsMapData) => {
   listPhraseNormalizedWords.forEach((phraseWord) => {
     titleWords.forEach((titleWord) => {
       if (titleWord === phraseWord) {
-        rank += 500;
+        rank += 500 * (multiplayerForShortTitlesBonus[titleWords.length] || 1);
       } else if (titleWord.startsWith(phraseWord)) {
-        rank += 100;
+        rank += 100 * (multiplayerForShortTitlesBonus[titleWords.length] || 1);
       } else if (titleWord.includes(phraseWord)) {
-        rank += 20;
+        rank += 20 * (multiplayerForShortTitlesBonus[titleWords.length] || 1);
       }
     });
   })

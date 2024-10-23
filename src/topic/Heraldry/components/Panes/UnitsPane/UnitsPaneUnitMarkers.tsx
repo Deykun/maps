@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import clsx from 'clsx';
 
 import { queryClient } from '@/main';
-import { CoatOfArmsDetailsData } from '@/topic/Heraldry/types';
+import { CoatOfArmsMapData, CoatOfArmsDetailsData } from '@/topic/Heraldry/types';
 
 import IconAnimal from '@/components/Icons/IconAnimal';
 import IconBuilding from '@/components/Icons/IconBuilding';
@@ -10,42 +10,50 @@ import IconCrown from '@/components/Icons/IconCrown';
 
 import UnitsPaneUnitMarkersList from './UnitsPaneUnitMarkersList';
 
+import { mergeMarkersForUnit } from '@/topic/Heraldry/utils/markers/mergeMarkersForUnit';
+
 type Props = {
-  id: string,
-  country: string,
-  types?: string[],
+  unit: CoatOfArmsMapData,
   shouldShowContentAsTooltip?: boolean,
 }
 
-const UnitsPaneUnitMarkers = ({ id, country, types = [], shouldShowContentAsTooltip = false }: Props) => {
+const UnitsPaneUnitMarkers = ({ unit, shouldShowContentAsTooltip = false }: Props) => {
+  const country = unit.lang;
+
   const data = queryClient.getQueryData([country, 'details']);
 
-  const details = useMemo(() => {
+  const {
+    animals,
+    items,
+  } = useMemo(() => {
     if (!data) {
-      return undefined;
+      return {
+        animals: [],
+        items: [],
+      }
     }
 
-    const unitDetails = (data as {
+    const detailsForUnitsById = (data as {
       detailsForUnitsById: {
         [id: string]: CoatOfArmsDetailsData,
       }
-    }).detailsForUnitsById?.[id];
+    }).detailsForUnitsById;
 
-    if (unitDetails) {
-      return unitDetails;
+
+    const animals = mergeMarkersForUnit(unit, detailsForUnitsById, 'animals');
+    const items = mergeMarkersForUnit(unit, detailsForUnitsById, 'items');
+
+    return {
+      animals,
+      items,
     }
-
-    return undefined;
   }, [data]);
 
-  const hasContent = (details?.markers?.animals?.length || 0) > 0 || (details?.markers?.items?.length || 0) || types.length > 0;
+  const hasContent = animals.length > 0 || items.length > 0;
 
   if (!hasContent) {
     return null;
   }
-
-  const animals = details?.markers?.animals || [];
-  const items = details?.markers?.items || [];
 
   return (
     <p
@@ -73,7 +81,7 @@ const UnitsPaneUnitMarkers = ({ id, country, types = [], shouldShowContentAsTool
         shouldShowContentAsTooltip={shouldShowContentAsTooltip}
       />
       <UnitsPaneUnitMarkersList
-        list={types}
+        list={unit.type}
         listTitle="heraldry.unit.filterTitle"
         listElementPrefix={`heraldry.unit.type.${country}`}
         icon={IconBuilding}

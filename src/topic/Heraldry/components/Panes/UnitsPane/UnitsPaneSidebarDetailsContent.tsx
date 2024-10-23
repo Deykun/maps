@@ -49,10 +49,12 @@ const UnitsPaneSidebarDetailsContent = ( { unit, setDetailsUnit }: Props) => {
         </ButtonText>
         <span className="text-ui-dark-contrast text-[10px] text-right pr-2">
           id: <span className="text-white">{unit.id}</span>    
-          {unit.mergedIds && <small className="line-clamp-1">
+          {unit.mergedIds && <>
             <br />
-            {unit.mergedIds.join(', ')}
-          </small>}
+            <small className="line-clamp-1">
+              {unit.mergedIds.join(', ')}
+            </small>
+          </>}
         </span>
       </div>
       <Panel className="ui-panel--rounded-l ui-panel--rounded-r">
@@ -105,7 +107,7 @@ const UnitsPaneSidebarDetailsContent = ( { unit, setDetailsUnit }: Props) => {
           {place?.name || t('heraldry.item.noLocation')}
         </p>
       </Panel>
-      <UnitsPaneUnitMarkers id={unit.id} country={unit.lang} types={unit.type} />
+      <UnitsPaneUnitMarkers unit={unit} />
       <UnitsPaneUnitDevActions unit={unit} />
       <UnitsPaneUnitDescription id={unit.id} country={unit.lang} />
     </>
