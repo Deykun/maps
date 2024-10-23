@@ -166,7 +166,8 @@ export const getDetails = async ({
       chalk.yellow(`  Progress ${chalk.green(`${(i / total * 100).toFixed(1)}%`)}.`),
       `${chalk.white(i)} out of ${chalk.white(total)}.`,
       getTimeStatus(i),
-    ].join(' '));
+      typeof chunkIndex === 'number' ? chalk.gray(`(chunk ${chunkIndex})`) : '',
+    ].filter(Boolean).join(' '));
     console.log(' ');
   }
 
