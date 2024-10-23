@@ -137,5 +137,10 @@
   "heraldry.list.labelList": "Lista",
   "heraldry.list.labelDescription": "Opis",
   "heraldry.list.showMore": "Pokaż więcej",
-  "heraldry.list.footer": "Jeśli widzisz złe dopasowanie herbu możesz je zgłosić tutaj:"
+  "heraldry.list.footer": "Jeśli widzisz złe dopasowanie herbu możesz je zgłosić tutaj:",
+  "heraldry.loading.status.fetchingTexts": "Pobieranie lokalizacji",
+  "heraldry.loading.status.processingTexts": "Przetwarzanie lokalizacji",
+  "heraldry.loading.status.fetchingImages": "Pobieranie obrazków",
+  "heraldry.loading.status.fetchingFilters": "Pobieranie filtrów",
+  "heraldry.loading.status.processingMap": "Renderowanie mapy"
 }

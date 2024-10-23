@@ -14,7 +14,7 @@ const HeraldryProgressStatusList = () => {
   } = useProgressbarData('all');
 
   if (progresses.length === 0) {
-    // return null;
+    return null;
   }
 
   const indexBeingFetched = progresses.findIndex(({ value, total }) => value < total);

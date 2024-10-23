@@ -6,12 +6,13 @@ type Props = {
   className?: string,
   lineClassName?: string,
   progress: number,
+  strokeWidth?: number,
 };
 
 const radius = 11;
 const fullDashArray = 69.115038378975;
 
-const Icon = ({ className, lineClassName, progress }: Props) => {
+const Icon = ({ className, lineClassName, progress, strokeWidth = 3 }: Props) => {
 
   // const progressAsPercentage = fullDashArray * progress;
   const progressDashOffset = progress * fullDashArray;
@@ -36,9 +37,7 @@ const Icon = ({ className, lineClassName, progress }: Props) => {
       fill="transparent"
       strokeDasharray={fullDashArray}
       strokeDashoffset={fullDashArray - progressDashOffset}
-      style={{
-        strokeWidth: '3px',
-      }}
+      strokeWidth={strokeWidth}
     />
   </svg>
   )

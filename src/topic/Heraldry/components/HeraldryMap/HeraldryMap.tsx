@@ -162,17 +162,17 @@ const HeraldryMapMap = ({
   });
 
   if (isError) {
-    console.error(error);
+    console.log('Error content', error);
 
-    return <HeraldryProgressStatus message="heraldry.loading.error" />
+    return <HeraldryProgressStatus country={lang} message="heraldry.loading.error" />
   }
   
-  // if (isLoading) {
-    return <HeraldryProgressStatus country={lang} message="heraldry.loading.fetching" isLoading />
-  // }
+  if (isLoading) {
+    return <HeraldryProgressStatus country={lang} />
+  }
 
   if (!dataForMap) {
-    return <HeraldryProgressStatus message="heraldry.loading.error" />
+    return <HeraldryProgressStatus country={lang} message="heraldry.loading.error" />
   }
 
   const {
