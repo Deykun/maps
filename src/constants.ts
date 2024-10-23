@@ -66,3 +66,7 @@ export const PATHS_DATA: {
 ] as const;
 
 export const HERALDRY_COUNTRIES = PATHS_DATA.filter(({ type }) => type === 'heraldryCountry');
+
+export const LOCAL_STORAGE = {
+  'MAPS_USER_LANG': 'MAPS_USER_LANG',
+} as const;

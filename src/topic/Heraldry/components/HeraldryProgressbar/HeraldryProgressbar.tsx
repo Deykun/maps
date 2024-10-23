@@ -42,7 +42,7 @@ const HeraldryProgressbar = () => {
           }
         </span>
         <span className="ui-tooltip ui-tooltip--topRight !left-[6px] empty:hidden flex flex-col gap-1 !py-2">
-          {progresses.map(({ label, value, total }) => <span className="flex items-center gap-1">
+          {progresses.map(({ label, value, total }) => <span className="flex items-center gap-2">
             <strong className="text-white min-w-[42px] text-right">
               {(100 * value / total).toFixed(1)}
               <small>%</small>

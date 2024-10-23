@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useLocation } from "wouter";
 import clsx from 'clsx';
 
-import { HERALDRY_COUNTRIES } from '@/constants';
+import { HERALDRY_COUNTRIES, LOCAL_STORAGE } from '@/constants';
 
 import { isLanguageSupported } from '@/utils/lang';
 
@@ -56,6 +56,7 @@ const NavigationPane = ({
   const changeLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
     setWasLangChanged(true);
+    localStorage.setItem(LOCAL_STORAGE.MAPS_USER_LANG, lang);
 
     if (setShouldHintLang) {
       setShouldHintLang(false);

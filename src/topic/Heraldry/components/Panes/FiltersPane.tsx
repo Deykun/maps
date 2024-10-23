@@ -65,6 +65,7 @@ type Props = {
   setShouldIgnoreFormer: (value: boolean) => void,
   colorFilters: string[],
   setColorFilters: FilterSetter,
+  colorFiltersList: FilterItem[],
   animalFilters: string[],
   setAnimalFilters: FilterSetter,
   animalFiltersList: FilterItem[],
@@ -89,6 +90,7 @@ const FiltersPane = ({
   setShouldIgnoreFormer,
   colorFilters,
   setColorFilters,
+  colorFiltersList,
   animalFilters,
   setAnimalFilters,
   animalFiltersList,
@@ -184,6 +186,7 @@ const FiltersPane = ({
             onClick={toggleMenu('color')}
             isActive={activeMenu === 'color'}
             label={t('heraldry.color.filterTitle')}
+            isDisabled={colorFiltersList.length === 0}
           >
             <IconColor />
             {colorFilters.length > 0 && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft">{colorFilters.length}</span>}

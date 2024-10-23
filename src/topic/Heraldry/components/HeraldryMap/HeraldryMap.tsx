@@ -103,6 +103,7 @@ const fetchCountryDetailsData = async ({ dataPaths }: FetchParams) => {
 
   const animalFiltersList = getFilter(resposneAll, 'animals');
   const itemFiltersList = getFilter(resposneAll, 'items');
+  const colorFiltersList = getFilter(resposneAll, 'colors');
 
   const detailsForUnitsById = resposneAll.reduce((stack: {
     [id: string]: CoatOfArmsDetailsData,
@@ -115,7 +116,8 @@ const fetchCountryDetailsData = async ({ dataPaths }: FetchParams) => {
   return {
     detailsForUnitsById,
     animalFiltersList,
-    itemFiltersList
+    itemFiltersList,
+    colorFiltersList,
   };
 };
 
@@ -184,6 +186,7 @@ const HeraldryMapMap = ({
     detailsForUnitsById = {},
     animalFiltersList = [],
     itemFiltersList = [],
+    colorFiltersList = [],
   } = dataForDetails || {};
 
   return (
@@ -194,6 +197,7 @@ const HeraldryMapMap = ({
       typeFiltersList={typeFiltersList}
       animalFiltersList={animalFiltersList}
       itemFiltersList={itemFiltersList}
+      colorFiltersList={colorFiltersList}
       mapWrapperClassName={mapWrapperClassName}
       mapWrapperClassNameForZoom0={mapWrapperClassNameForZoom0}
       map={Map}

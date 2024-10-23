@@ -5,6 +5,8 @@ import { useDraggable } from "react-use-draggable-scroll";
 
 import { isLanguageSupported } from '@/utils/lang';
 
+import { LOCAL_STORAGE } from '@/constants';
+
 import {
   useFiltersDevelopmentStore,
 } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
@@ -40,6 +42,7 @@ export type Props = {
   typeFiltersList: GetFilterResponse,
   animalFiltersList: GetFilterResponse,
   itemFiltersList: GetFilterResponse,
+  colorFiltersList: GetFilterResponse,
   mapWrapperClassName?: string,
   mapWrapperClassNameForZoom0?: string,
   map: React.LazyExoticComponent<() => JSX.Element>,
@@ -57,6 +60,7 @@ const HeraldryMapContainerWithUI = ({
   typeFiltersList,
   animalFiltersList,
   itemFiltersList,
+  colorFiltersList,
   mapWrapperClassName,
   mapWrapperClassNameForZoom0,
   map: MapBackground,
@@ -92,10 +96,13 @@ const HeraldryMapContainerWithUI = ({
     }, [initialFilters]);
 
     useEffect(() => {
-      i18n.changeLanguage(lang);
+      const userHasLangugeSet = Boolean(localStorage.getItem(LOCAL_STORAGE.MAPS_USER_LANG))
+      if (!userHasLangugeSet) {
+        i18n.changeLanguage(lang);
 
-      if (!isLanguageSupported(lang)) {
-        setShouldHintLang(true);
+        if (!isLanguageSupported(lang)) {
+          setShouldHintLang(true);
+        }
       }
     }, [i18n]);
 
@@ -225,6 +232,7 @@ const HeraldryMapContainerWithUI = ({
               setShouldIgnoreFormer={setShouldIgnoreFormer}
               colorFilters={colorFilters}
               setColorFilters={setColorFilters}
+              colorFiltersList={colorFiltersList}
               animalFilters={animalFilters}
               setAnimalFilters={setAnimalFilters}
               animalFiltersList={animalFiltersList}
