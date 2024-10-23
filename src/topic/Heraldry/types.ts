@@ -51,15 +51,17 @@ export type CoatOfArmsMapData = {
   }[],
 }
 
+export type ColorStatusInDetails = Pick<ColorStatus, 'distanceToThreshold' | 'matcherColor'>
+
 export type CoatOfArmsDetailsData = {
   id: string,
   colors?: {
     hexPalette: string[],
     byNames: {
-      [color: string]: ColorStatus[],
+      [color: string]: ColorStatusInDetails[],
     }
     byNamesRejected: {
-      [color: string]: ColorStatus[],
+      [color: string]: ColorStatusInDetails[],
     }
   },
   markers?: {

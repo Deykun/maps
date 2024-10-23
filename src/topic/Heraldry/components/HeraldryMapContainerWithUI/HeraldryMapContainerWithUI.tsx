@@ -23,6 +23,8 @@ import FiltersPane from '@/topic/Heraldry/components/Panes/FiltersPane';
 
 import HeraldryTitle from '@/topic/Heraldry/components/HeraldryTitle/HeraldryTitle';
 import HeraldryFooter from '@/topic/Heraldry/components/HeraldryFooter/HeraldryFooter';
+import HeraldryProgressbar from '@/topic/Heraldry/components/HeraldryProgressbar/HeraldryProgressbar';
+
 import HeraldryMapHTMLCanvas from '@/topic/Heraldry/components/HeraldryMapHTMLCanvas/HeraldryMapHTMLCanvas';
 
 import Space from '@/components/UI/Space';
@@ -93,7 +95,6 @@ const HeraldryMapContainerWithUI = ({
       i18n.changeLanguage(lang);
 
       if (!isLanguageSupported(lang)) {
-        console.log('NOt supported')
         setShouldHintLang(true);
       }
     }, [i18n]);
@@ -239,6 +240,7 @@ const HeraldryMapContainerWithUI = ({
             />
             <Space side="right" isLast />
           </div>
+          <HeraldryProgressbar />
         </>
     );
 };

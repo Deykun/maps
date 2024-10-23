@@ -10,7 +10,7 @@ import { resolve } from 'path';
 import { clearLastLines } from './helpers/console';
 import { getImageFileName } from './helpers/images';
 
-import { AdministrativeUnit, CoatOfArmsDetailsData } from '../../../src/topic/Heraldry/types';
+import { AdministrativeUnit, CoatOfArmsDetailsData, ColorStatus, ColorStatusInDetails } from '../../../src/topic/Heraldry/types';
 
 
 import { getMarkers } from '../../../src/topic/Heraldry/utils/markers/getMarkers';
@@ -18,6 +18,21 @@ import { getMarkers } from '../../../src/topic/Heraldry/utils/markers/getMarkers
 import { getImageColors } from './helpers/colors'
 
 const start = (new Date()).getTime();
+
+const getColorsDataToSaveFromColor = (color: ColorStatusInDetails | ColorStatus) => {
+  const colorToSave: ColorStatusInDetails = {
+    distanceToThreshold: color.distanceToThreshold,
+    matcherColor: color.matcherColor,
+  }
+
+  return colorToSave;
+}
+
+const transformColorsByIds = (colorsByIds: {
+  [id: string]: (ColorStatusInDetails | ColorStatus)[],
+}) => Object.fromEntries(
+  Object.entries(colorsByIds).map(([key, values]) => [key, values.map(value => getColorsDataToSaveFromColor(value))])
+);
 
 export const getDetails = async ({
   administrativeDivisions,
@@ -84,8 +99,12 @@ export const getDetails = async ({
 
       let wasColorTakenFromCache = false;
       let colors;
-      if (alreadyFetchedDetailsById[unit.id].colors) {
-        colors = alreadyFetchedDetailsById[unit.id].colors;
+      if (alreadyFetchedDetailsById[unit.id]?.colors) {
+        colors = {
+          hexPalette: alreadyFetchedDetailsById[unit.id].colors?.hexPalette,
+          byNames: transformColorsByIds(alreadyFetchedDetailsById[unit.id].colors?.byNames || {}),
+          byNamesRejected: transformColorsByIds(alreadyFetchedDetailsById[unit.id].colors?.byNames || {}),
+        }
         wasColorTakenFromCache = true;
       } else {
         try {
@@ -103,8 +122,8 @@ export const getDetails = async ({
   
           colors = {
             hexPalette,
-            byNames,
-            byNamesRejected,
+            byNames: transformColorsByIds(byNames),
+            byNamesRejected: transformColorsByIds(byNamesRejected),
           }
         } catch (error) {
           console.log(chalk.red(`Broken color data ${expectedFilePath}`))

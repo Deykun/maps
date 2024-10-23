@@ -1,11 +1,18 @@
 import React from 'react';
 import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
+import {
+  updateProcessingTexts,
+} from '@/topic/Heraldry/stores/progressStore';
 const SvgMap = React.lazy(() => import('./components/SvgPowiaty'));
 
 import HeraldryMap from '@/topic/Heraldry/components/HeraldryMap/HeraldryMap';
 
-const filterForCountryData = (units: CoatOfArmsMapData[]) => {
-  return units.filter((unit: CoatOfArmsMapData) => {
+const filterForCountryData = (units: CoatOfArmsMapData[], shouldUpdateLoader: boolean) => {
+  return units.filter((unit: CoatOfArmsMapData, index) => {
+    if (shouldUpdateLoader && index % 10) {
+      updateProcessingTexts({ value: index, total: units.length });
+    }
+
     if ([
       'Herb Podgórza',
       'Herb gminy Janów (powiat częstochowski)',

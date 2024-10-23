@@ -5,27 +5,48 @@ import { CoatOfArmsMapData, CoatOfArmsDetailsData } from '@/topic/Heraldry/types
 import { getFiltersFromSearchParams } from '@/topic/Heraldry/utils/getSearchParams';
 import { getFilter } from '@/topic/Heraldry/utils/getFilter';
 
+import {
+  updateTotalsForTexts,
+  updateValueForTexts,
+  updateProcessingTexts,
+  updateTotalsForFilters,
+  updateValueForFilters,
+} from '@/topic/Heraldry/stores/progressStore';
+
 import HeraldryMapContainerWithUI, { Props as HeraldryMapContainerWithUIProps } from '@/topic/Heraldry/components/HeraldryMapContainerWithUI/HeraldryMapContainerWithUI';
 
-import HeraldryMapContainerWithUIStatus from '@/topic/Heraldry/components/HeraldryMapContainerWithUI/HeraldryMapContainerWithUIStatus';
+import HeraldryProgressStatus from '@/topic/Heraldry/components/HeraldryProgressbar/HeraldryProgressStatus';
 
 type FetchParams = {
   dataPaths: string[],
-  filterForCountryData?: (units: CoatOfArmsMapData[]) => CoatOfArmsMapData[],
+  filterForCountryData?: (units: CoatOfArmsMapData[], shouldUpdateLoader?: boolean) => CoatOfArmsMapData[],
   sortForCountryData?: (a: CoatOfArmsMapData, b: CoatOfArmsMapData) => number,
 }
 
 const fetchCountryData = async ({ dataPaths, filterForCountryData, sortForCountryData }: FetchParams) => {
+  updateTotalsForTexts(dataPaths);
+
   const promiseArray = dataPaths.map(
-    (path) => fetch(`${path}-map-data.json`).then((resposne) => resposne.json()),
+    (path) => fetch(`${path}-map-data.json`).then((resposne) => {
+      return resposne.json()
+    }).then((value) => {
+      updateValueForTexts(path);
+
+      return value;
+    }),
   );
   const resposne = await Promise.all(promiseArray);
   const resposneAll = resposne.flatMap(v => v) as CoatOfArmsMapData[];
 
+  const updateLoaderIn = [
+    filterForCountryData ? 'updateLoaderInFilter' : '',
+    'updateLoaderInIndex',
+  ].filter(Boolean)[0];
+
   let unitsForMapAll: CoatOfArmsMapData[] = Object.values(
     resposneAll.reduce((stack: {
       [url: string]: CoatOfArmsMapData,
-    }, unit: CoatOfArmsMapData) => {
+    }, unit: CoatOfArmsMapData, index) => {
       const uniqueId = unit?.imagesList?.[0]?.path?.split('/').at(-1);
 
       if (uniqueId) {
@@ -39,19 +60,25 @@ const fetchCountryData = async ({ dataPaths, filterForCountryData, sortForCountr
         }
       }
 
+      if (updateLoaderIn === 'updateLoaderInIndex' && index % 10) {
+        updateProcessingTexts({ value: index, total: resposneAll.length });
+      }
+
       return stack;
     }, {}),
   );
 
   if (filterForCountryData) {
     // Filter from the parent
-    unitsForMapAll = filterForCountryData(unitsForMapAll);
+    unitsForMapAll = filterForCountryData(unitsForMapAll, updateLoaderIn === 'updateLoaderInFilter');
   }
 
   if (sortForCountryData) {
     // Sort from the parent
     unitsForMapAll = unitsForMapAll.sort(sortForCountryData);
   }
+
+  updateProcessingTexts({ value: unitsForMapAll.length, total: unitsForMapAll.length });
   
   const typeFiltersList = getFilter(unitsForMapAll, 'type');
 
@@ -62,10 +89,14 @@ const fetchCountryData = async ({ dataPaths, filterForCountryData, sortForCountr
 };
 
 const fetchCountryDetailsData = async ({ dataPaths }: FetchParams) => {
-  const dataPathsWithoutChunks = Array.from(new Set(dataPaths.map((path) => path.replace(/-[\d+]/g, ''))));
+  updateTotalsForFilters(dataPaths);
 
-  const promiseArray = dataPathsWithoutChunks.map(
-    (path) => fetch(`${path}-details-data.json`).then((resposne) => resposne.json()),
+  const promiseArray = dataPaths.map(
+    (path) => fetch(`${path}-details-data.json`).then((resposne) => resposne.json()).then((value) => {
+      updateValueForFilters(path);
+
+      return value;
+    }),
   );
   const resposne = await Promise.all(promiseArray);
   const resposneAll = resposne.flatMap(v => v) as CoatOfArmsDetailsData[];
@@ -133,15 +164,15 @@ const HeraldryMapMap = ({
   if (isError) {
     console.error(error);
 
-    return <HeraldryMapContainerWithUIStatus message="heraldry.loading.error" />
+    return <HeraldryProgressStatus message="heraldry.loading.error" />
   }
   
-  if (isLoading) {
-    return <HeraldryMapContainerWithUIStatus message="heraldry.loading.fetching" isLoading />
-  }
+  // if (isLoading) {
+    return <HeraldryProgressStatus country={lang} message="heraldry.loading.fetching" isLoading />
+  // }
 
   if (!dataForMap) {
-    return <HeraldryMapContainerWithUIStatus message="heraldry.loading.error" />
+    return <HeraldryProgressStatus message="heraldry.loading.error" />
   }
 
   const {

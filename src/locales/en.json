@@ -181,5 +181,10 @@
   "heraldry.list.labelList": "List",
   "heraldry.list.labelDescription": "Description",
   "heraldry.list.showMore": "Show more",
-  "heraldry.list.footer": "If you see a mismatched coat of arms, you can report it here:"
+  "heraldry.list.footer": "If you see a mismatched coat of arms, you can report it here:",
+  "heraldry.loading.status.fetchingTexts": "Fetching locations",
+  "heraldry.loading.status.processingTexts": "Processing locations",
+  "heraldry.loading.status.fetchingImages": "Fetching images",
+  "heraldry.loading.status.fetchingFilters": "Fetching filters",
+  "heraldry.loading.status.processingMap": "Rending map"
 }

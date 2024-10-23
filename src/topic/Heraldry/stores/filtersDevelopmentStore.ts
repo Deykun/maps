@@ -22,7 +22,8 @@ export const useFiltersDevelopmentStore = create<FiltersDevelopmentStoreState>()
     persist(
       () => ({
         // Is active locally by default
-        isModeActive: window?.location?.href?.includes('localhost') || false,
+        // isModeActive: window?.location?.href?.includes('localhost') || false,
+        isModeActive: false,
         filter: {
           ...EMPTY_CUSTOM_FILTER,
           isActive: false,

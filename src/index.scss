@@ -309,6 +309,26 @@ pre span::selection  {
   }
 }
 
+.ui-tooltip--topRight {
+  left: 12px;
+  transform: scale(0);
+  transform-origin: top left;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 100%;
+    transform: translateX(0);
+    border: 5px solid transparent !important;
+    border-top-color: var(--background) !important;
+  }
+
+  .ui-tooltip-wrapper--small & {
+    left: 8px;
+  }
+}
+
 @mixin tooltipShow {
   z-index: 1;
 
@@ -330,6 +350,11 @@ pre span::selection  {
   .ui-tooltip--top {
     bottom: calc(100% + 10px);
     transform: translateX(-50%) scale(1);
+  }
+
+  .ui-tooltip--topRight {
+    bottom: calc(100% + 10px);
+    transform: scale(1);
   }
 
   .ui-tooltip--bottom {

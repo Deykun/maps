@@ -46,7 +46,7 @@ const HeraldryTitle = ({
 
   return (
     <header className="md:mb-10 min-h-[100px] max-w-[calc(100vw_-_120px)] lg:max-w-[800px] flex-shrink-0 mx-auto">
-      <h1 className="heading text-[20px] sm:text-[28px] lg:text-[36px] text-center text-ui-dark">
+      <h1 className="heading text-[20px] md:text-[28px] lg:text-[36px] text-center text-ui-dark">
         {t(`heraldry.${country}.mapTitle`)}
       </h1>
       <HeraldrySubtitle zoomLevel={zoomLevel} subtitleParts={subtitleParts} shouldReverseFilters={shouldReverseFilters} />

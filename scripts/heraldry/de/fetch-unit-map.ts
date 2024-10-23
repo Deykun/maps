@@ -5,9 +5,9 @@ import { AdministrativeUnit } from '../../../src/topic/Heraldry/types';
 
 import { fetchImages } from '../utils/fetch-images';
 
-const units = unitFromJSON as AdministrativeUnit[];
+import { chunkSize } from './constants';
 
-const chunkSize = 2500;
+const units = unitFromJSON as AdministrativeUnit[];
 
 const chunkArg = process.argv.find((arg) => arg.startsWith('chunk='));
 const chunkIndex = chunkArg ? Number(chunkArg.replace('chunk=', '')) : undefined;
