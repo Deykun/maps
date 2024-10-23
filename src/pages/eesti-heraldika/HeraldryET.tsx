@@ -7,7 +7,7 @@ const SvgMap = React.lazy(() => import('./components/SvgMap'));
 
 import HeraldryMap from '@/topic/Heraldry/components/HeraldryMap/HeraldryMap';
 
-const filterForCountryData = (units: CoatOfArmsMapData[], shouldUpdateLoader: boolean) => {
+const filterForCountryData = (units: CoatOfArmsMapData[], shouldUpdateLoader?: boolean) => {
   updateProcessingTexts({ value: units.length, total: units.length });
 
   return units;

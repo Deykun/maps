@@ -49,6 +49,7 @@ export type CoatOfArmsMapData = {
     path: string,
     width: string,
   }[],
+  imageHash?: string,
 }
 
 export type ColorStatusInDetails = Pick<ColorStatus, 'distanceToThreshold' | 'matcherColor'>

@@ -92,7 +92,7 @@ const DevelopmentActions = ({
               >
                 <p className="sans text-[10px] text-justify line-clamp-5">{description}</p>
                 <div className="flex justify-center gap-2">
-                  <UnitsPaneUnitMarkers id={unit.id} country={unit.lang} types={unit.type} shouldShowContentAsTooltip />
+                  <UnitsPaneUnitMarkers unit={unit} shouldShowContentAsTooltip />
                   <ButtonText
                     size="small"
                     onClick={() => copyText(
