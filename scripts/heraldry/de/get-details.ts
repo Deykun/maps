@@ -52,8 +52,8 @@ const getChunkIndex = async (chunkIndex) => {
 		lang: 'de',
 		chunkIndex,
 	});
-	
-getDetails({
+		
+	getDetails({
 		administrativeDivisions: formerUnits.slice(startIndex, endIndex),
 		alreadyFetchedDivisions: formerUnitJSON,
 		path: 'formerUnit',
@@ -61,8 +61,6 @@ getDetails({
 		chunkIndex,
 	});	
 }
-
-
 
 if (typeof chunkIndex !== 'number' && chunkArg === 'chunk=all') {
 	console.log(`${chalk.red('Missing chunk data.')} Add chunk=0 to generate first chunk data. Or chunk=all to generate all.`);

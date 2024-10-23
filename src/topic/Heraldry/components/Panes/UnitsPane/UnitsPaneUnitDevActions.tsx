@@ -34,7 +34,7 @@ const UnitsPaneUnitDescription = ({ unit }: Props) => {
       <div className="flex gap-1 justify-center">
         <ButtonText
           size="small"
-          onClick={() => toggleAsCustomFilterExclude(unit.title)}
+          onClick={() => toggleAsCustomFilterExclude(unit)}
           isActive={filterExclude?.includes(unit.title)}
         >
           <IconMarkerMinus />
@@ -42,7 +42,7 @@ const UnitsPaneUnitDescription = ({ unit }: Props) => {
         </ButtonText>
         <ButtonText
           size="small"
-          onClick={() => toggleAsCustomFilterInclude(unit.title)}
+          onClick={() => toggleAsCustomFilterInclude(unit)}
           isActive={filterInclude?.includes(unit.title)}
         >
           <IconMarkerPlus />

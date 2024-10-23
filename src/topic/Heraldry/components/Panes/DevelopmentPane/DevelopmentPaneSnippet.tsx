@@ -2,7 +2,7 @@ import clsx from 'clsx';
 
 import { MarkerParams } from '@/topic/Heraldry/types';
 
-import DevelopmentPaneSnippetList from './DevelopmentPaneSnippetList';
+import './DevelopmentPaneSnippet.scss';
 
 type Props = MarkerParams & {
   className?: string,
@@ -16,17 +16,15 @@ const DevelopmentPaneSnippet = ({
   exclude = [],
 }: Props) => {
   return (
-    <pre className={clsx('w-full p-2 bg-black whitespace-break-spaces text-[#fdb39d] text-[12px] leading-[16px]', {
+    <pre className={clsx('development-pane-snippet sans w-full px-2 whitespace-break-spaces text-[#fdb39d] tracking-widest text-[12px]', {
       [className || '']: className,
     })}>
-      {'{'}
-      <br />
-      {' '}"name": "<span className="text-white">{name}</span>",
-      <DevelopmentPaneSnippetList key="phrases" name="phrases" list={phrases} />
-      <DevelopmentPaneSnippetList key="exclude" name="exclude" list={exclude} />
-      <DevelopmentPaneSnippetList key="include" name="include" list={include} />
-      <br />
-      {'},'}
+      {JSON.stringify({
+          name,
+          phrases,
+          include,
+          exclude,
+      }, null, 4)}
     </pre>
   );
 };

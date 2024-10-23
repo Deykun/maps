@@ -16,6 +16,12 @@ const commonWordsToRemove = [
   'vapp',
 ];
 
+export const getImageHash = (unit: AdministrativeUnit) => {
+  const hashSeed = unit.image?.source || unit.place?.name || unit.title;
+
+  return getSimpleHashFromString(hashSeed);
+};
+
 export const getImageFileName = (unit: AdministrativeUnit) => {
   const {
     title,
@@ -26,8 +32,7 @@ export const getImageFileName = (unit: AdministrativeUnit) => {
     .replace(/[^a-z-]+/g, '')
     .split('-').filter((word: string) => !commonWordsToRemove.includes(word)).join('-');
 
-  const hashSeed = unit.image?.source || unit.place?.name || unit.title;
-  fileName = `${getSimpleHashFromString(hashSeed)}-${fileName.slice(0, 24)}`;
+  fileName = `${getImageHash(unit)}-${fileName.slice(0, 24)}`;
 
   // It trims example-name-of- to example-name-of
   fileName = fileName.replace(/[-]/g, ' ').trim().replace(/ /g, '-');

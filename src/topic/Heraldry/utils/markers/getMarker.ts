@@ -1,10 +1,14 @@
+import { ManualMarker, ComplexManualMarker } from '@/topic/Heraldry/types';
+
 export const getHasMarker = (
   {
     title,
     text,
+    imageHash,
   }: {
     title: string,
     text: string,
+    imageHash: string,
   },
   {
     phrases = [],
@@ -12,15 +16,30 @@ export const getHasMarker = (
     exclude = [],
   }: {
     phrases?: string[],
-    include?: string[],
-    exclude?: string[],
+    include?: ManualMarker[],
+    exclude?: ManualMarker[],
   },
 ) => {
-  if (include.includes(title)) {
+  // Legacy, imageHash will be better to use
+  const includeStrings = include.filter((value) => typeof value === 'string') as string[];
+  const excludeStrings = exclude.filter((value) => typeof value === 'string') as string[];
+
+  if (includeStrings.includes(title)) {
     return true;
   }
 
-  if (exclude.includes(title)) {
+  if (excludeStrings.includes(title)) {
+    return false;
+  }
+
+  const includeImageHash = (include.filter((value) => typeof value !== 'string') as ComplexManualMarker[]).map(({ imageHash }) => imageHash);
+  const excludeImageHash = (exclude.filter((value) => typeof value !== 'string') as ComplexManualMarker[]).map(({ imageHash }) => imageHash);
+
+  if (includeImageHash.includes(imageHash)) {
+    return true;
+  }
+
+  if (excludeImageHash.includes(imageHash)) {
     return false;
   }
 
@@ -56,15 +75,18 @@ export const getHasMarker = (
   return false;
 };
 
+
 export const getMarker = (
   markersList: string[],
   name: string,
   {
     title,
     text,
+    imageHash,
   }: {
     title: string,
     text: string,
+    imageHash: string,
   },
   {
     phrases = [],
@@ -72,11 +94,11 @@ export const getMarker = (
     exclude = [],
   }: {
     phrases?: string[],
-    include?: string[],
-    exclude?: string[],
+    include?: ManualMarker[],
+    exclude?: ManualMarker[],
   },
 ) => {
-  const hasMarker = getHasMarker({ title, text }, { phrases, include, exclude });
+  const hasMarker = getHasMarker({ title, text, imageHash }, { phrases, include, exclude });
 
   if (hasMarker) {
     markersList.push(name);

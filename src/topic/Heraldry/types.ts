@@ -91,11 +91,18 @@ export type AdministrativeUnitsGroup = {
   urls: AdministrativeUnit[],
 }
 
+export type ComplexManualMarker = {
+  imageHash: string,
+  comment?: '',
+}
+
+export type ManualMarker = string | ComplexManualMarker;
+
 export type MarkerParams = {
   name: string,
   phrases?: string[],
-  exclude?: string[],
-  include?: string[],
+  exclude?: ManualMarker[],
+  include?: ManualMarker[],
 }
 
 export type MarkerParamsWithResult = MarkerParams & {

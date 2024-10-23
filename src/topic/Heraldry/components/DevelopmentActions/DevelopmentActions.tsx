@@ -6,6 +6,7 @@ import {
   toggleAsCustomFilterExclude,
   toggleAsCustomFilterInclude,
   useFiltersDevelopmentStore,
+  getIsMatchingManualMarker,
 } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
 
 import { copyText } from '@/utils/text';
@@ -67,8 +68,8 @@ const DevelopmentActions = ({
         <ButtonIcon
           size={buttonSize}
           className="relative pointer-events-auto"
-          onClick={() => toggleAsCustomFilterExclude(unit.title)}
-          isActive={filterExclude?.includes(unit.title)}
+          onClick={() => toggleAsCustomFilterExclude(unit)}
+          isActive={getIsMatchingManualMarker(filterExclude, unit)}
           label="Exclude"
           labelPosition={labelPositions}
         >
@@ -112,8 +113,8 @@ const DevelopmentActions = ({
         <ButtonIcon
           size={buttonSize}
           className="relative pointer-events-auto"
-          onClick={() => toggleAsCustomFilterInclude(unit.title)}
-          isActive={filterInclude?.includes(unit.title)}
+          onClick={() => toggleAsCustomFilterInclude(unit)}
+          isActive={getIsMatchingManualMarker(filterInclude, unit)}
           label="Include"
           labelPosition={labelPositions ?? 'right'}
         >

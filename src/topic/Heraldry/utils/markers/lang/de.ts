@@ -14,16 +14,18 @@ const {
 export const getMarkers = ({
   text: rawText = '',
   title,
+  imageHash,
 }: {
   text: string,
   title: string,
+  imageHash: string,
 }) => {
   let animals: string[] = [];
   let items: string[] = [];
 
   const text = rawText.toLowerCase() || '';
 
-  const data = { title, text };
+  const data = { title, text, imageHash };
 
   animalsRules.forEach(({ name, phrases, exclude = [], include = [] }) => {
     animals = getMarker(animals, name, data, {

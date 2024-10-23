@@ -6,10 +6,12 @@ import { getMarkers as getMarkersPL } from './lang/pl';
 export const getMarkers = ({
   text: rawText = '',
   title,
+  imageHash,
   lang,
 }: {
   text: string,
   title: string,
+  imageHash: string,
   lang: string,
 }) => {
   let animals: string[] = [];
@@ -18,28 +20,28 @@ export const getMarkers = ({
   // const text = rawText.toLowerCase() || '';
 
   if (lang === 'de') {
-    const response = getMarkersDE({ text: rawText, title })
+    const response = getMarkersDE({ text: rawText, title, imageHash })
 
     animals = response.animals;
     items = response.items;
   }
 
   if (lang === 'et') {
-    const response = getMarkersET({ text: rawText, title })
+    const response = getMarkersET({ text: rawText, title, imageHash })
 
     animals = response.animals;
     items = response.items;
   }
 
   if (lang === 'fi') {
-    const response = getMarkersFI({ text: rawText, title })
+    const response = getMarkersFI({ text: rawText, title, imageHash })
 
     animals = response.animals;
     items = response.items;
   }
 
   if (lang === 'pl') {
-    const response = getMarkersPL({ text: rawText, title });
+    const response = getMarkersPL({ text: rawText, title, imageHash });
 
     animals = response.animals;
     items = response.items;

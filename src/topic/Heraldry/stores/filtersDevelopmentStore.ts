@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import { devtools, persist } from 'zustand/middleware'
 
-import { AdministrativeUnitIndex, MarkerParams, MarkerParamsWithResult } from '@/topic/Heraldry/types';
+import { CoatOfArmsMapData, AdministrativeUnitIndex, MarkerParams, MarkerParamsWithResult, ManualMarker, ComplexManualMarker } from '@/topic/Heraldry/types';
 
 import { getHasMarker } from '@/topic/Heraldry/utils/markers/getMarker';
 
@@ -19,19 +19,16 @@ export const EMPTY_CUSTOM_FILTER: MarkerParams = {
 
 export const useFiltersDevelopmentStore = create<FiltersDevelopmentStoreState>()(
   devtools(
-    persist(
-      () => ({
-        // Is active locally by default
-        // isModeActive: window?.location?.href?.includes('localhost') || false,
-        isModeActive: false,
-        filter: {
-          ...EMPTY_CUSTOM_FILTER,
-          isActive: false,
-          result: [],
-        },
-      } as FiltersDevelopmentStoreState),
-      { name: 'filterDevelopmentStore' },
-    )
+    () => ({
+      // Is active locally by default
+      isModeActive: window?.location?.href?.includes('localhost') || false,
+      filter: {
+        ...EMPTY_CUSTOM_FILTER,
+        isActive: false,
+        result: [],
+      },
+    } as FiltersDevelopmentStoreState),
+    { name: 'filterDevelopmentStore' },
   )
 )
 
@@ -93,34 +90,64 @@ export const setCustomFilterPhrases = (phrases: string[]) => {
   }));
 };
 
-export const toggleAsCustomFilterExclude = (unitTitle: string) => {
+export const getIsMatchingManualMarker = (rule: ManualMarker[] = [], { title, imageHash = '' }: { title: string, imageHash?: string }) => {
+  if (rule.length === 0) {
+    return false;
+  }
+
+  const strings = rule.filter((value) => typeof value === 'string') as string[];
+  if (strings.includes(title)) {
+    return true;
+  }
+
+  const imageHashes = (rule.filter((value) => typeof value !== 'string') as ComplexManualMarker[]).map(({ imageHash }) => imageHash);
+  if (imageHashes.includes(imageHash)) {
+    return true;
+  }
+
+  return false;
+}
+
+
+export const toggleAsCustomFilterExclude = (unit: CoatOfArmsMapData) => {
   useFiltersDevelopmentStore.setState((state) => {
-    const exclude = state.filter.exclude?.includes(unitTitle)
-      ? (state.filter.exclude || []).filter((unitnTitleToCheck) => unitTitle !== unitnTitleToCheck)
-      : Array.from(new Set([...(state.filter.exclude || []), unitTitle]));
+    const isActive = getIsMatchingManualMarker(state.filter.exclude, unit);
+
+    const exclude = isActive
+      ? (state.filter.exclude || []).filter(
+        (ruleToCheck) => typeof ruleToCheck === 'string' ? unit.title !== ruleToCheck : unit.imageHash !== ruleToCheck.imageHash)
+      : [...(state.filter.exclude || []), (unit.imageHash ? { imageHash: unit.imageHash, note: unit.title } : unit.title)]
 
     return {
       ...state,
       filter: {
         ...state.filter,
         exclude,
-        include: (state.filter.include || []).filter((unitnTitleToCheck) => unitTitle !== unitnTitleToCheck),
+        include: (state.filter.include || []).filter(
+          (ruleToCheck) => typeof ruleToCheck === 'string' ? unit.title !== ruleToCheck : unit.imageHash !== ruleToCheck.imageHash
+        ),
       }
     };
   });
 };
 
-export const toggleAsCustomFilterInclude = (unitTitle: string) => {
+export const toggleAsCustomFilterInclude = (unit: CoatOfArmsMapData) => {
   useFiltersDevelopmentStore.setState((state) => {
-    const include = state.filter.include?.includes(unitTitle)
-      ? (state.filter.include || []).filter((unitnTitleToCheck) => unitTitle !== unitnTitleToCheck)
-      : Array.from(new Set([...(state.filter.include || []), unitTitle]))
+    const isActive = getIsMatchingManualMarker(state.filter.include, unit);
+
+    const include = isActive
+      ? (state.filter.include || []).filter(
+        (ruleToCheck) => typeof ruleToCheck === 'string' ? unit.title !== ruleToCheck : unit.imageHash !== ruleToCheck.imageHash)
+        : [...(state.filter.include || []), (unit.imageHash ? { imageHash: unit.imageHash, note: unit.title } : unit.title)]
+
     
     return {
       ...state,
       filter: {
         ...state.filter,
-        exclude: (state.filter.exclude || []).filter((unitnTitleToCheck) => unitTitle !== unitnTitleToCheck),
+        exclude: (state.filter.exclude || []).filter(
+          (ruleToCheck) => typeof ruleToCheck === 'string' ? unit.title !== ruleToCheck : unit.imageHash !== ruleToCheck.imageHash
+        ),
         include,
       }
     };
@@ -164,10 +191,11 @@ export const showOnlyUnitsWithDescriptionInCustomFilter = (data: AdministrativeU
 export const updateCustomFilterResultBasedOnData = (data: AdministrativeUnitIndex[]) => {
   const state = useFiltersDevelopmentStore.getState();
 
-  const filteredUnitsIds = data.filter(({ title, description }) => getHasMarker(
+  const filteredUnitsIds = data.filter(({ title, description, imageUrl }) => getHasMarker(
     {
       title,
       text: description,
+      imageHash: (imageUrl || '').split('/').at(-1)?.split('-')[0] || '', // images/heraldry/de/unit/17f85dc9-kreis-warendorf-80w.webp -> 17f85dc9
     }, {
       phrases: state.filter.phrases,
       include: state.filter.include,
