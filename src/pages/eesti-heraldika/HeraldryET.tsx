@@ -1,13 +1,22 @@
 import React from 'react';
 import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
+import {
+  updateProcessingTexts,
+} from '@/topic/Heraldry/stores/progressStore';
 const SvgMap = React.lazy(() => import('./components/SvgMap'));
 
 import HeraldryMap from '@/topic/Heraldry/components/HeraldryMap/HeraldryMap';
 
-const filterForCountryData = (units: CoatOfArmsMapData[]) => {
+const filterForCountryData = (units: CoatOfArmsMapData[], shouldUpdateLoader: boolean) => {
+  updateProcessingTexts({ value: units.length, total: units.length });
+
   return units;
 
-  // return units.filter((unit: CoatOfArmsMapData) => {
+  // return units.filter((unit: CoatOfArmsMapData, index) => {
+  //   if (shouldUpdateLoader && index % 10) {
+  //     updateProcessingTexts({ value: index, total: units.length });
+  //   }
+  // };
   //   if ([
   //      'empty'
   //   ].includes(unit.title)) {

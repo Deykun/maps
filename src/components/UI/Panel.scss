@@ -13,6 +13,10 @@
     @apply rounded-t-[12px];
   }
 
+  &.ui-panel--rounded-tr {
+    @apply rounded-tr-[12px];
+  }
+
   &.ui-panel--rounded-b {
     @apply rounded-b-[12px];
   }

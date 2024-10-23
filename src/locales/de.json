@@ -38,5 +38,10 @@
   "heraldry.unit.type.de.formerRegion": "Land (historisch)",
   "heraldry.item.formerUnit": "historisch",
   "heraldry.filterOperator.and": "und",
-  "heraldry.filterOperator.or": "oder"
+  "heraldry.filterOperator.or": "oder",
+  "heraldry.loading.status.fetchingTexts": "Standorte werden abgerufen",
+  "heraldry.loading.status.processingTexts": "Standorte werden verarbeitet",
+  "heraldry.loading.status.fetchingImages": "Bilder werden abgerufen",
+  "heraldry.loading.status.fetchingFilters": "Filter werden abgerufen",
+  "heraldry.loading.status.processingMap": "Karte wird gerendert"
 }

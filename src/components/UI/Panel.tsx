@@ -7,7 +7,7 @@ type Props = {
   children: React.ReactNode,
 }
 
-const Pane = ({ className, children }: Props) => {
+const Panel = ({ className, children }: Props) => {
   return (
     <div
       className={clsx('ui-panel pointer-events-auto', {
@@ -19,4 +19,4 @@ const Pane = ({ className, children }: Props) => {
   );
 }
 
-export default Pane;
+export default Panel;

@@ -7,7 +7,7 @@ export type GetFilterResponse = {
 
 export const getFilter = (
   units: CoatOfArmsMapData[] | CoatOfArmsDetailsData[],
-  name: 'animals' | 'items' | 'type'
+  name: 'animals' | 'items' | 'type' | 'colors'
 ): GetFilterResponse => {
   const filterByName = units.reduce((stack: {
     [key: string]: number,
@@ -15,7 +15,11 @@ export const getFilter = (
     const marker = (
       name === 'type'
       ? (unit as CoatOfArmsMapData).type
-      : (unit as CoatOfArmsDetailsData)?.markers?.[name]
+      : (
+        name === 'colors'
+        ? Object.keys((unit as CoatOfArmsDetailsData).colors?.byNames || {})
+        : (unit as CoatOfArmsDetailsData)?.markers?.[name]
+      )
     ) || [];
 
     marker.forEach((value: string) => {

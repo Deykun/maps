@@ -1,6 +1,8 @@
 import { getSpriteDataFromUnit } from '@/topic/Heraldry/utils/getSpriteDataFromUnit';
 import { CoatOfArmsMapData, MapOffset } from '@/topic/Heraldry/types';
 
+import { updateProcessingMap, updateTotalsForImages, updateValueForImages } from '@/topic/Heraldry/stores/progressStore';
+
 import { CoatOfArms } from './layers/CoatOfArms';
 
 let canvas = undefined as unknown as HTMLCanvasElement;
@@ -76,7 +78,7 @@ const getFrameStampData = ({ shouldSkipChangeCheck }: { shouldSkipChangeCheck: b
 
 let lastFrameStampData = getFrameStampData({ shouldSkipChangeCheck: false });
 
-const redrawItems = (redrawFrameHash: string, index: number) => {
+const redrawItems = (redrawFrameHash: string, index: number, total: number) => {
   /*
     Looks like a reasonable solution https://stackoverflow.com/a/37514084/6743808
 
@@ -100,7 +102,10 @@ const redrawItems = (redrawFrameHash: string, index: number) => {
       coatOfArmsList[index + i]?.draw();
     } 
 
-    setTimeout(() => redrawItems(redrawFrameHash, index + renderAtOnce), 0);
+    updateProcessingMap({ value: index + renderAtOnce, total });
+
+    setTimeout(() => redrawItems(redrawFrameHash, index + renderAtOnce, total), 0);
+    // setTimeout(() => redrawItems(redrawFrameHash, index + renderAtOnce, total), 300);
   }
 }
 
@@ -131,7 +136,8 @@ const renderFrame = ({ shouldSkipChangeCheck = false }: { shouldSkipChangeCheck?
     canvas.width,
   ].join('-')
 
-  redrawItems(currentFrameHash, 0);
+  updateProcessingMap({ value: 0, total: coatOfArmsList.length });
+  redrawItems(currentFrameHash, 0, coatOfArmsList.length);
 }
 
 const initEventListeners = () => {
@@ -229,15 +235,19 @@ export const setCoatOfArms = async (units: CoatOfArmsMapData[]) => {
       cachedSprites[spriteSrc] = {
         image,
       }
+
+      updateTotalsForImages(Object.keys(cachedSprites));
       image.onload = () => {
         // It's chaotic without it, but users see more CoAs being loaded.
-        // const isStillFetchingOthers = Object.values(cachedSprites).some(
-        //   ({ image }) => !image.complete
-        // );
+        const isStillFetchingOthers = Object.values(cachedSprites).some(
+          ({ image }) => !image.complete
+        );
 
-        // if (!isStillFetchingOthers) {
+        updateValueForImages(spriteSrc);
+
+        if (!isStillFetchingOthers) {
           renderFrame();
-        // }
+        }
       }
 
       image.onerror = () => {

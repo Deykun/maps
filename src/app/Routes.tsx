@@ -1,5 +1,6 @@
 import { Route, Switch, useLocation } from "wouter";
 import { Helmet } from 'react-helmet';
+import { useTranslation } from 'react-i18next';
 
 import { PATHS_DATA } from '../constants';
 
@@ -10,10 +11,17 @@ import HeraldryET from '@/pages/eesti-heraldika/HeraldryET';
 import HeraldryPL from '@/pages/heraldyka/HeraldryPL';
 import HeraldryFI from '@/pages/suomalainen-heraldikka/HeraldryFI';
 
-import { useMemo } from "react";
+import { useEffect, useMemo } from "react";
 
 const Routes = () => {
   const [path] = useLocation();
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    if (i18n.language !== document.documentElement?.lang) {
+      document.documentElement.lang = i18n.language;
+    }
+  }, [i18n.language]);
 
   const title = useMemo(() => {
     const pathToCompare = path.replace('/maps/', '');

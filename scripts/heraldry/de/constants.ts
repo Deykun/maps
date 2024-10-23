@@ -17,6 +17,8 @@ import { urls as urlRegion13 } from './constantsForRegions/sachsen';
 import { urls as urlRegion14 } from './constantsForRegions/schleswig-holstein';
 import { urls as urlRegion15 } from './constantsForRegions/thuringen';
 
+export const chunkSize = 2500;
+
 export const urls: {
   unitBySource: {
     [source: string]: UserScriptDivisionData[],

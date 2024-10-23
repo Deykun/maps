@@ -115,5 +115,10 @@
   "heraldry.list.title": "Loend",
   "heraldry.list.limitListToPlaceholder": "Otsi...",
   "heraldry.list.showMore": "Kuva rohkem",
-  "heraldry.list.footer": "Kui näete sobimatut vapiilme, saate selle siin teatada:"
+  "heraldry.list.footer": "Kui näete sobimatut vapiilme, saate selle siin teatada:",
+  "heraldry.loading.status.fetchingTexts": "Asukohtade laadimine",
+  "heraldry.loading.status.processingTexts": "Asukohtade töötlemine",
+  "heraldry.loading.status.fetchingImages": "Piltide laadimine",
+  "heraldry.loading.status.fetchingFilters": "Filtrite laadimine",
+  "heraldry.loading.status.processingMap": "Kaardi renderdamine"
 }
