@@ -18,6 +18,7 @@ import ButtonIcon from '@/components/UI/ButtonIcon';
 import UnitsPaneItemGrid from './UnitsPaneItemGrid';
 import UnitsPaneItemList from './UnitsPaneItemList';
 import UnitsPaneSidebarDetailsContent from './UnitsPaneSidebarDetailsContent';
+import UnitsPaneSearchInput from './UnitsPaneSearchInput';
 
 type Props = {
   filterPhrase: string,
@@ -76,11 +77,9 @@ const UnitsPaneSidebar = ({
               <span>{t('heraldry.list.title')}</span>
             </h3>
             <Panel className="ui-panel--rounded-l ui-panel--rounded-r">
-              <input
-                value={filterPhrase}
-                onChange={(e) => setFilterPhrase(e.target.value || '')}
-                className={clsx('block w-full bg-ui-contrast text-ui-dark placeholder-ui-dark caret-marker rounded-full py-2 px-4')}
-                placeholder={t('heraldry.list.limitListToPlaceholder')}
+              <UnitsPaneSearchInput
+                filterPhrase={filterPhrase}
+                setFilterPhrase={setFilterPhrase}
               />
               <div className="mt-2 flex gap-1">
                 <ButtonIcon
