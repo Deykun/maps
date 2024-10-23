@@ -13,6 +13,7 @@ import ButtonIcon from '@/components/UI/ButtonIcon';
 import IconMarker from '@/components/Icons/IconMarker';
 
 import UnitsPaneUnitMarkers from './UnitsPaneUnitMarkers';
+import UnitsPaneItemListDevActions from './UnitsPaneItemListDevActions';
 
 type Props = {
   className?: string,
@@ -64,6 +65,7 @@ const UnitsPaneItemList = ( { className, unit, setDetailsUnit }: Props) => {
         >
           <IconMarker />
         </ButtonIcon>
+        <UnitsPaneItemListDevActions unit={unit} />
       </div>
     </li>
   );

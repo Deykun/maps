@@ -23,8 +23,7 @@ The filter should only include lions.
 
 #### Including Missing Items
 
-1. Activate the "Show only those with text" mode.
-2. From the basic filters, select "With Animal" and "Reverse Filters."
+1. From the basic filters, select "With Animal" and "Reverse Filters."
 
 You will see only CoA without animals and with short descriptions.
 

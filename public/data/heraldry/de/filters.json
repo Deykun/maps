@@ -334,17 +334,17 @@
     {
       "name": "lion",
       "phrases": [
-          "greifenlöwe",
-          "löwe",
-          "lowe",
-          "löwen",
-          "löwenhagen",
-          "löwenkopf",
-          "löwenköpfen",
-          "löwenköpfe",
-          "löwenmaske",
-          "löwenrumpf",
-          "seelöwe"
+        "greifenlöwe",
+        "löwe",
+        "lowe",
+        "löwen",
+        "löwenhagen",
+        "löwenkopf",
+        "löwenköpfen",
+        "löwenköpfe",
+        "löwenmaske",
+        "löwenrumpf",
+        "seelöwe"
       ],
       "include": [
         {
@@ -438,21 +438,101 @@
         {
           "imageHash": "5eb061f1",
           "note": "Mendig"
+        },
+        {
+          "imageHash": "763d5f21",
+          "note": "Jerxheim"
+        },
+        {
+          "imageHash": "493340c1",
+          "note": "Schöningen"
+        },
+        {
+          "imageHash": "27681f03",
+          "note": "Königslutter am Elm"
+        },
+        {
+          "imageHash": "278fb0b1",
+          "note": "Vordorf"
+        },
+        {
+          "imageHash": "5f886250",
+          "note": "Wilsche"
+        },
+        {
+          "imageHash": "72891b1b",
+          "note": "Clauen"
+        },
+        {
+          "imageHash": "9dde45f",
+          "note": "Ölsburg"
+        },
+        {
+          "imageHash": "1e452b3b",
+          "note": "Ilsede"
+        },
+        {
+          "imageHash": "6e518912",
+          "note": "Neuölsburg"
+        },
+        {
+          "imageHash": "6621a49d",
+          "note": "Sehnde"
+        },
+        {
+          "imageHash": "349a498f",
+          "note": "Sehnde"
+        },
+        {
+          "imageHash": "24a67bc8",
+          "note": "Sehnde"
+        },
+        {
+          "imageHash": "5416ee92",
+          "note": "Sehnde"
+        },
+        {
+          "imageHash": "268d3a78",
+          "note": "Sehnde"
+        },
+        {
+          "imageHash": "31891552",
+          "note": "Sehnde"
+        },
+        {
+          "imageHash": "4d3ce5f0",
+          "note": "Sehnde"
+        },
+        {
+          "imageHash": "35481cb8",
+          "note": "Sehnde"
+        },
+        {
+          "imageHash": "e4688e2",
+          "note": "Sehnde"
+        },
+        {
+          "imageHash": "4fb20df7",
+          "note": "Lauenau"
+        },
+        {
+          "imageHash": "7425b081",
+          "note": "Lüdersfeld"
         }
       ],
       "exclude": [
-          {
-              "imageHash": "3c2f0b02",
-              "note": "Leer (Ostfriesland)"
-          },
-          {
-              "imageHash": "42ea3f43",
-              "note": "München"
-          },
-          {
-              "imageHash": "69e4c568",
-              "note": "Coburg"
-          }
+        {
+          "imageHash": "3c2f0b02",
+          "note": "Leer (Ostfriesland)"
+        },
+        {
+          "imageHash": "42ea3f43",
+          "note": "München"
+        },
+        {
+          "imageHash": "69e4c568",
+          "note": "Coburg"
+        }
       ]
     },
     {

@@ -103,6 +103,7 @@ const filterForCountryData = (units: CoatOfArmsMapData[], shouldUpdateLoader?: b
         '535977d9',
         '762c7133',
         '542c19a3',
+        '17f85dc9',
       ].includes(unit.imageHash)) {
         return false;
       };
