@@ -56,7 +56,6 @@ const HeraldryProgressbar = () => {
       <Space side="bottom" className="bg-ui-dark" isLast />
     </div>
   );
-
 };
 
 export default memo(HeraldryProgressbar);

@@ -20,7 +20,6 @@ export default function useProgressbarData(type: ('loading' | 'all') = 'loading'
     value: number,
     total: number,
   }[] = fetchingSummary.map(([value, total, label]) => ({ label, value, total }));
-  // }[] = fetchingSummary.filter(([value, total]) => value < total).map(([value, total, label]) => ({ label, value, total }));
 
   if (type === 'loading') {
     const fetchingProgresses = allProgresses.filter(({ value, total }) => value < total);
@@ -40,5 +39,4 @@ export default function useProgressbarData(type: ('loading' | 'all') = 'loading'
     firstTotal: total,
     progresses: allProgresses, 
   });
-
 };
