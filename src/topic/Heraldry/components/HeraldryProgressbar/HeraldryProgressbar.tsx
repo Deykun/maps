@@ -20,6 +20,7 @@ const HeraldryProgressbar = () => {
 
   const { value: firstValue = 0, total: fitstTotal = 0 } = progresses[0] || {};
   const { value: secondValue = 0, total: secondTotal = 0 } = progresses[1] || {};
+  const { value: thirdValue = 0, total: thirdTotal = 0 } = progresses[2] || {};
 
   return (
     <div className="ui-slide-from-bottom fixed bottom-0 left-0 z-[10] flex items-end pointer-events-none">
@@ -38,6 +39,14 @@ const HeraldryProgressbar = () => {
               lineClassName="stroke-ui-contrast"
               progress={(secondValue / secondTotal)}
               strokeWidth={6}
+            />
+          }
+          {thirdTotal > 0 &&
+            <IconLoaderWithProgress
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-[1.5] size-5"
+              lineClassName="stroke-ui-contrast"
+              progress={(thirdValue / thirdTotal)}
+              strokeWidth={2}
             />
           }
         </span>

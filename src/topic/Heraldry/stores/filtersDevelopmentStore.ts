@@ -156,7 +156,7 @@ export const toggleAsCustomFilterInclude = (unit: CoatOfArmsMapData) => {
 };
 
 const bulkActionsCreator = (action: 'include' | 'exclude') => (units: CoatOfArmsMapData[]) => {
-  const rulesToAdd: ComplexManualMarker[] = units.filter(({ imageHash }) => imageHash).map((unit) => ({ imageHash: unit.imageHash as string, note: unit.title.substring(0, 20) }));
+  const rulesToAdd: ComplexManualMarker[] = units.filter(({ imageHash }) => imageHash).map((unit) => ({ imageHash: unit.imageHash as string, note: unit.title.substring(0, 50) }));
   const titlesToRemove = units.map(({ title }) => title);
   const hashesToRemove = rulesToAdd.map(({ imageHash }) => imageHash);
 

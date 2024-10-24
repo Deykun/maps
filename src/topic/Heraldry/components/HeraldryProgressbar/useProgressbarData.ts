@@ -5,6 +5,7 @@ export default function useProgressbarData(type: ('loading' | 'all') = 'loading'
   const processingTexts = useProgressStore(state => state.processingTexts);
   const fetchingImages = useProgressStore(state => state.fetchingImages);
   const fetchingFilters = useProgressStore(state => state.fetchingFilters);
+  const fetchingFiltersTexts = useProgressStore(state => state.fetchingFiltersTexts);
   const processingMap = useProgressStore(state => state.processingMap);
 
   const fetchingSummary: [number, number, string][] = [
@@ -12,6 +13,7 @@ export default function useProgressbarData(type: ('loading' | 'all') = 'loading'
     [processingTexts.value, processingTexts.total, 'processingTexts'],
     [fetchingImages.values.length, fetchingImages.totals.length, 'fetchingImages'],
     [fetchingFilters.values.length, fetchingFilters.totals.length, 'fetchingFilters'],
+    [fetchingFiltersTexts.values.length, fetchingFiltersTexts.totals.length, 'fetchingFiltersTexts'],
     [processingMap.value, processingMap.total, 'processingMap'],
   ];
 
