@@ -4,7 +4,7 @@ type Props = {
   list: string[],
   listTitle: string,
   listElementPrefix: string,
-  icon: (props: { className: string }) => JSX.Element
+  icon: (props: { className: string }) => JSX.Element,
   shouldShowContentAsTooltip?: boolean,
 }
 

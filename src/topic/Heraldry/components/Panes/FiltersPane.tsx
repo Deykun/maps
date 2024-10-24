@@ -197,7 +197,7 @@ const FiltersPane = ({
             label={t('heraldry.animal.filterTitle')}
             isDisabled={animalFiltersList.length === 0}
           >
-            <IconAnimal />
+            <IconAnimal animals={animalFilters.length === 1 ? animalFilters : []} />
             {animalFilters.length > 0 && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft">{animalFilters.length}</span>}
           </ButtonIcon>
           <ButtonIcon

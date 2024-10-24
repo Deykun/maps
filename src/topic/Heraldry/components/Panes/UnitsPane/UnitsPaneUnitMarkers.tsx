@@ -70,7 +70,7 @@ const UnitsPaneUnitMarkers = ({ unit, shouldShowContentAsTooltip = false }: Prop
         list={animals}
         listTitle="heraldry.animal.filterTitle"
         listElementPrefix="heraldry.animal"
-        icon={IconAnimal}
+        icon={({ className }) => <IconAnimal className={className} animals={animals} />}
         shouldShowContentAsTooltip={shouldShowContentAsTooltip}
       />
       <UnitsPaneUnitMarkersList

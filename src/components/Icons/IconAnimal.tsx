@@ -1,12 +1,69 @@
+import IconAnt from './IconAnt';
+import IconBadger from './IconBadger';
+import IconBird from './IconBird';
+import IconBison from './IconBison';
+import IconCat from './IconCat';
+// import IconDragon from './IconDragon';
+import IconFish from './IconFish';
+import IconHorse from './IconHorse';
+// import IconOtter from './IconOtter';
+import IconPig from './IconPig';
+// import IconRam from './IconRam';
+import IconWolf from './IconWolf';
+
 type Props = {
   className?: string,
+  animals?: string[],
 };
 
-const Icon = ({ className }: Props) => (
-  <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" transform="matrix(-1,0,0,1,0,0)">
-    {/* <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--> */}
-    <path d="M456 0c-48.6 0-88 39.4-88 88v29.2L12.5 390.6c-14 10.8-16.6 30.9-5.9 44.9s30.9 16.6 44.9 5.9l74.6-57.4h133.1l46.6 113.1c5 12.3 19.1 18.1 31.3 13.1s18.1-19.1 13.1-31.3L311.1 384h44.1l46.6 113.2c5 12.3 19.1 18.1 31.3 13.1s18.1-19.1 13.1-31.3l-42-102C484.9 354.1 544 280 544 192v-72l80.5-20.1c8.6-2.1 13.8-10.8 11.6-19.4C629 52 603.4 32 574 32h-50.1C507.7 12.5 483.3 0 456 0zm0 64a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/>
-  </svg>
-);
+const Icon = ({ className, animals = [] }: Props) => {
+  console.log('animals', animals);
+
+  if (animals.length === 0) {
+    return <IconBird className={className} />;
+  }
+
+  if (['bird', 'griffin'].some((category) => animals.includes(category))) {
+    return <IconBird className={className} />;
+  }
+
+  if (['cat', 'lion', 'leopard', 'wildcat', 'lynx', 'tiger', 'panther'].some((category) => animals.includes(category))) {
+    return <IconCat className={className} />;
+  }
+
+  if (['bullBison'].some((category) => animals.includes(category))) {
+    return <IconBison className={className} />;
+  }
+
+  if (['deer', 'moose', 'horse', 'centaur', 'donkey', 'goat', 'unicorn'].some((category) => animals.includes(category))) {
+    return <IconHorse className={className} />;
+  }
+
+  if (['boar'].some((category) => animals.includes(category))) {
+    return <IconPig className={className} />;
+  }
+
+  if (['bear', 'wolf', 'dog', 'fox'].some((category) => animals.includes(category))) {
+    return <IconWolf className={className} />;
+  }
+
+  if (['beaver', 'otter', 'dog', 'weasel', 'badger', 'rabbit', 'squirrel'].some((category) => animals.includes(category))) {
+    return <IconBadger className={className} />;
+  }
+
+  if (['fish', 'whale', 'mermaid'].some((category) => animals.includes(category))) {
+    return <IconFish className={className} />;
+  }
+
+  if (['ram', 'sheep'].some((category) => animals.includes(category))) {
+    return <IconBison className={className} />;
+  }
+
+  if (['insect'].some((category) => animals.includes(category))) {
+    return <IconAnt className={className} />;
+  }
+
+  return <IconBird className={className} />;
+}
 
 export default Icon;

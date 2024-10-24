@@ -5,7 +5,7 @@ import { removeDiacratics } from '@/utils/text';
 
 import useOutsideClick from '@/hooks/useOutsideClick';
 
-import { CoatOfArmsDetailsData, CoatOfArmsMapData } from '@/topic/Heraldry/types';
+import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 
 import IconCoatOfArms from '@/topic/Heraldry/components/IconCoatOfArms';
 
