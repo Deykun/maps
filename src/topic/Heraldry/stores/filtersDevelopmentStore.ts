@@ -139,7 +139,6 @@ export const toggleAsCustomFilterInclude = (unit: CoatOfArmsMapData) => {
       ? (state.filter.include || []).filter(
         (ruleToCheck) => typeof ruleToCheck === 'string' ? unit.title !== ruleToCheck : unit.imageHash !== ruleToCheck.imageHash)
         : [...(state.filter.include || []), (unit.imageHash ? { imageHash: unit.imageHash, note: unit.title } : unit.title)]
-
     
     return {
       ...state,
@@ -153,6 +152,48 @@ export const toggleAsCustomFilterInclude = (unit: CoatOfArmsMapData) => {
     };
   });
 };
+
+const bulkActionsCreator = (action: 'include' | 'exclude') => (units: CoatOfArmsMapData[]) => {
+  const rulesToAdd: ComplexManualMarker[] = units.filter(({ imageHash }) => imageHash).map((unit) => ({ imageHash: unit.imageHash as string, note: unit.title.substring(0, 20) }));
+  const titlesToRemove = units.map(({ title }) => title);
+  const hashesToRemove = rulesToAdd.map(({ imageHash }) => imageHash);
+
+  useFiltersDevelopmentStore.setState((state) => {
+    // We removing them for both to avoid duplicates
+    const excludeWithRemoved = (state.filter.exclude || []).filter((ruleToCheck) => typeof ruleToCheck === 'string'
+      ? !titlesToRemove.includes(ruleToCheck)
+      : !hashesToRemove.includes(ruleToCheck.imageHash)
+    );
+
+    const includeWithRemoved = (state.filter.include || []).filter((ruleToCheck) => typeof ruleToCheck === 'string'
+      ? !titlesToRemove.includes(ruleToCheck)
+      : !hashesToRemove.includes(ruleToCheck.imageHash)
+    );
+
+    let newExclude = excludeWithRemoved;
+    let newInclude = includeWithRemoved;
+    if (action === 'exclude') {
+      newExclude = [...newExclude, ...rulesToAdd];
+    }
+
+    if (action === 'include') {
+      newInclude = [...newInclude, ...rulesToAdd];
+    }
+      
+    return {
+      ...state,
+      filter: {
+        ...state.filter,
+        exclude: newExclude,
+        include: newInclude,
+      }
+    };
+  });
+};
+
+export const bulkAddToFilterInclude = bulkActionsCreator('include');
+
+export const bulkAddToFilterExclude = bulkActionsCreator('exclude');
 
 export const showOnlyUnitsWithDescriptionInCustomFilter = (data: AdministrativeUnitIndex[]) => {
   const state = useFiltersDevelopmentStore.getState();

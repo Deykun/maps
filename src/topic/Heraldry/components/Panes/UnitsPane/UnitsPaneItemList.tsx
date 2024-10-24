@@ -13,15 +13,17 @@ import ButtonIcon from '@/components/UI/ButtonIcon';
 import IconMarker from '@/components/Icons/IconMarker';
 
 import UnitsPaneUnitMarkers from './UnitsPaneUnitMarkers';
-import UnitsPaneItemListDevActions from './UnitsPaneItemListDevActions';
+import UnitsPaneItemListSelectCheckbox from './UnitsPaneItemListSelectCheckbox';
 
 type Props = {
   className?: string,
   unit: CoatOfArmsMapData,
   setDetailsUnit: (unit: CoatOfArmsMapData) => void,
+  setSelectedPaneUnits: (units: CoatOfArmsMapData[]) => void,
+  selectedPaneUnits: CoatOfArmsMapData[],
 }
 
-const UnitsPaneItemList = ( { className, unit, setDetailsUnit }: Props) => {
+const UnitsPaneItemList = ( { className, unit, setDetailsUnit, setSelectedPaneUnits, selectedPaneUnits }: Props) => {
   const { t } = useTranslation();
 
   const imagePath = (unit.imagesList || []).find(({ width }) => width === '80w')?.path;
@@ -65,7 +67,12 @@ const UnitsPaneItemList = ( { className, unit, setDetailsUnit }: Props) => {
         >
           <IconMarker />
         </ButtonIcon>
-        <UnitsPaneItemListDevActions unit={unit} />
+        <UnitsPaneItemListSelectCheckbox
+          className="mt-auto"
+          unit={unit}
+          selectedPaneUnits={selectedPaneUnits}
+          setSelectedPaneUnits={setSelectedPaneUnits}
+        />
       </div>
     </li>
   );

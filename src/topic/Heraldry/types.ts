@@ -93,7 +93,7 @@ export type AdministrativeUnitsGroup = {
 
 export type ComplexManualMarker = {
   imageHash: string,
-  comment?: '',
+  note?: string,
 }
 
 export type ManualMarker = string | ComplexManualMarker;

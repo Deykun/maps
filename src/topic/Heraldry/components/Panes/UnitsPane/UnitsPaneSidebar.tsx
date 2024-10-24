@@ -19,6 +19,7 @@ import UnitsPaneItemGrid from './UnitsPaneItemGrid';
 import UnitsPaneItemList from './UnitsPaneItemList';
 import UnitsPaneSidebarDetailsContent from './UnitsPaneSidebarDetailsContent';
 import UnitsPaneSearchInput from './UnitsPaneSearchInput';
+import UnitsPaneBulkDevActions from './UnitsPaneBulkDevActions';
 
 type Props = {
   filterPhrase: string,
@@ -26,6 +27,8 @@ type Props = {
   units?: CoatOfArmsMapData[],
   layout: 'grid' | 'list',
   setLayout: (value: 'grid' | 'list') => void,
+  setSelectedPaneUnits: (units: CoatOfArmsMapData[]) => void,
+  selectedPaneUnits: CoatOfArmsMapData[],
 };
 
 const UnitsPaneSidebar = ({
@@ -34,6 +37,8 @@ const UnitsPaneSidebar = ({
   setFilterPhrase,
   layout,
   setLayout,
+  setSelectedPaneUnits,
+  selectedPaneUnits = [],
 }: Props) => {
   const [filterPage, setFilterPage] = useState(0);
   const [detailsUnit, setDetailsUnit] = useState<CoatOfArmsMapData | undefined>(undefined);
@@ -61,10 +66,18 @@ const UnitsPaneSidebar = ({
     setFilterPage(0);
   }, [units]);
 
-  const pageSize = layout === 'grid' ? 20 : 6;
-  const itemsToShow = pageSize * (filterPage + 1);
+  const handleClear = () => {
+    setFilterPhrase('');
+    setSelectedPaneUnits([]);
+  }
 
   const canUseGrid = units.length > 4;
+  const shouldUseGridLayout = layout === 'grid' && canUseGrid;
+
+  const pageSize = shouldUseGridLayout ? 20 : 6;
+  const itemsToShow = pageSize * (filterPage + 1);
+
+  const isClearDisabled = filterPhrase.length === 0 && (shouldUseGridLayout || selectedPaneUnits.length === 0);
 
   return (
     <div className="ui-slide-from-right-sidebar no-scrollbar fixed top-0 right-0 z-[-1] w-[400px] max-w-[100vw] max-h-[100svh] overflow-auto">
@@ -76,56 +89,70 @@ const UnitsPaneSidebar = ({
               <IconCoatOfArms className="size-5 text-white" units={[]} />
               <span>{t('heraldry.list.title')}</span>
             </h3>
-            <Panel className="ui-panel--rounded-l ui-panel--rounded-r">
-              <UnitsPaneSearchInput
-                filterPhrase={filterPhrase}
-                setFilterPhrase={setFilterPhrase}
-              />
-              <div className="mt-2 flex gap-1">
-                <ButtonIcon
-                  size="small"
-                  isActive={layout === 'grid' && canUseGrid}
-                  isDisabled={!canUseGrid}
-                  onClick={() => setLayout('grid')}
-                  label={t('heraldry.list.labelGrid')}
-                  labelPosition="bottomRight"
-                >
-                  <IconLayoutGrid />
-                </ButtonIcon>
-                <ButtonIcon
-                  size="small"
-                  isActive={layout === 'list' || !canUseGrid}
-                  onClick={() => setLayout('list')}
-                  label={t('heraldry.list.labelList')}
-                  labelPosition="bottomRight"
-                >
-                  <IconLayoutList />
-                </ButtonIcon>
-                <ButtonIcon
-                  wrapperClassName="ml-auto"
-                  size="small"
-                  isDisabled={filterPhrase.length === 0}
-                  onClick={() => setFilterPhrase('')}
-                  label={t('heraldry.list.clear')}
-                  labelPosition="bottomLeft"
-                >
-                  <IconEraser />
-                </ButtonIcon>
-              </div>
-            </Panel>
+            <div className="sticky top-0 z-[1] -my-[12px] py-[12px] bg-ui-dark rounded-b-[12px]">
+              <Panel className="ui-panel--rounded-l ui-panel--rounded-r">
+                <UnitsPaneSearchInput
+                  filterPhrase={filterPhrase}
+                  setFilterPhrase={setFilterPhrase}
+                />
+                <div className="mt-2 flex gap-1">
+                  <ButtonIcon
+                    size="small"
+                    isActive={shouldUseGridLayout}
+                    isDisabled={!canUseGrid}
+                    onClick={() => setLayout('grid')}
+                    label={t('heraldry.list.labelGrid')}
+                    labelPosition="bottomRight"
+                  >
+                    <IconLayoutGrid />
+                  </ButtonIcon>
+                  <ButtonIcon
+                    size="small"
+                    isActive={!shouldUseGridLayout}
+                    onClick={() => setLayout('list')}
+                    label={t('heraldry.list.labelList')}
+                    labelPosition="bottomRight"
+                  >
+                    <IconLayoutList />
+                  </ButtonIcon>
+                  {!shouldUseGridLayout &&
+                    <UnitsPaneBulkDevActions
+                      setSelectedPaneUnits={setSelectedPaneUnits}
+                      selectedPaneUnits={selectedPaneUnits}
+                    />
+                  }
+                  <ButtonIcon
+                    wrapperClassName="ml-auto"
+                    size="small"
+                    isDisabled={isClearDisabled}
+                    onClick={handleClear}
+                    label={t('heraldry.list.clear')}
+                    labelPosition="bottomLeft"
+                  >
+                    <IconEraser />
+                  </ButtonIcon>
+                </div>
+              </Panel>
+            </div>
             <Panel className="ui-panel--rounded-l ui-panel--rounded-r text-[14px]">
               {units.length === 0 && <p className="text-center my-2">{t('heraldry.noResult')}</p>}
-              {layout === 'grid' && canUseGrid && <ul className="flex flex-wrap gap-[6px] empty:hidden">
+              {shouldUseGridLayout && <ul className="flex flex-wrap gap-[6px] empty:hidden">
                 {units.slice(0, itemsToShow).map((unit, index) => <UnitsPaneItemGrid
+                  key={unit.id}
                   unit={unit}
                   setDetailsUnit={setDetailsUnit}
                   labelPosition={[(index + 2) % 5, (index + 1) % 5].includes(0) ? 'bottomLeft' : 'bottomRight'}
                 />)}
               </ul>}
-              {(layout === 'list' || !canUseGrid) && <ul className="flex flex-col gap-2 empty:hidden">
-                {units.slice(0, itemsToShow).map((unit) => <UnitsPaneItemList unit={unit} setDetailsUnit={setDetailsUnit} />)}
+              {!shouldUseGridLayout && <ul className="flex flex-col gap-2 empty:hidden">
+                {units.slice(0, itemsToShow).map((unit) => <UnitsPaneItemList
+                  key={unit.id}
+                  unit={unit}
+                  setDetailsUnit={setDetailsUnit}
+                  setSelectedPaneUnits={setSelectedPaneUnits}
+                  selectedPaneUnits={selectedPaneUnits}
+                />)}
               </ul>}
-            
               {units.length > itemsToShow && 
               <div className={clsx("mt-2 text-center")}>
                 <button className="snap-center" onClick={() => setFilterPage(filterPage + 1)}>
