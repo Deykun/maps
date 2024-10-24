@@ -12,6 +12,7 @@ type Props = {
   label: string,
   total: number,
   onChange: (value: boolean) => void,
+  children?: React.ReactNode,
 };
 
 const FiltersPaneFilter = ({
@@ -21,6 +22,7 @@ const FiltersPaneFilter = ({
   label,
   total,
   onChange,
+  children
 }: Props) => {
   const IconSelected = type === 'checkbox' ? IconInputCheckFull : IconInputRadioFull;
   const IconUnselected = type === 'checkbox' ? IconInputCheckEmpty : IconInputRadioEmpty;
@@ -39,6 +41,7 @@ const FiltersPaneFilter = ({
         {label}
       </span>
       {total > 0 && <small className="flex-shrink-0 opacity-50">{' '}({total})</small>}
+      {children}
     </button>
   );
 }

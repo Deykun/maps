@@ -109,7 +109,7 @@ const UnitsPaneSidebarDetailsContent = ( { unit, setDetailsUnit }: Props) => {
       </Panel>
       <UnitsPaneUnitMarkers unit={unit} />
       <UnitsPaneUnitDevActions unit={unit} />
-      <UnitsPaneUnitDescription id={unit.id} country={unit.lang} />
+      <UnitsPaneUnitDescription id={unit.id} country={unit.lang} mergedIds={unit.mergedIds} />
     </>
   );
 };
