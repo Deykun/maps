@@ -6,6 +6,7 @@ import { CoatOfArmsMapData, CoatOfArmsDetailsData } from '@/topic/Heraldry/types
 
 import IconAnimal from '@/components/Icons/IconAnimal';
 import IconBuilding from '@/components/Icons/IconBuilding';
+import IconScriptBroken from '@/components/Icons/IconScriptBroken';
 import IconCrown from '@/components/Icons/IconCrown';
 
 import UnitsPaneUnitMarkersList from './UnitsPaneUnitMarkersList';
@@ -84,7 +85,7 @@ const UnitsPaneUnitMarkers = ({ unit, shouldShowContentAsTooltip = false }: Prop
         list={unit.type}
         listTitle="heraldry.unit.filterTitle"
         listElementPrefix={`heraldry.unit.type.${country}`}
-        icon={IconBuilding}
+        icon={unit.type.some((v) => !v.startsWith('former')) ? IconBuilding : IconScriptBroken}
         shouldShowContentAsTooltip={shouldShowContentAsTooltip}
       />
     </p>

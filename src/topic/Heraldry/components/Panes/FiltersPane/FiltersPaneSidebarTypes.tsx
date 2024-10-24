@@ -113,7 +113,9 @@ const FiltersPaneSidebarTypes = ({
               onChange={() => handleToggle(value)}
               label={t(`heraldry.unit.type.${lang}.${value}`)}
               total={total}
-            />
+            >            
+              {value.startsWith('former') && <IconScriptBroken className="size-3 flex-shrink-0" />}
+            </FiltersPaneFilter>
           </li>)}
         </ul>}
       </div>
