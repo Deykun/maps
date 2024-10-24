@@ -86,16 +86,6 @@ const UnitsPane = ({
     });
 
     setFilteredUnits(filteredUnits);
-
-    if (selectedPaneUnits.length > 0) {
-      if (filteredUnits.length === 0) {
-        setSelectedPaneUnits([]);
-      } else {
-        const filteredIds = filteredUnits.map(({ id }) => id);
-        
-        setSelectedPaneUnits(selectedPaneUnits.filter(({ id }) => filteredIds.includes(id)))
-      }
-    }
   }, [units, filterPhrase]);
 
   return (

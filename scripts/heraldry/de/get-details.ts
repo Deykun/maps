@@ -68,7 +68,7 @@ if (typeof chunkIndex !== 'number' && chunkArg === 'chunk=all') {
 	process.exit();
 }
 
-if (typeof chunkIndex !== 'number') {
+if (typeof chunkIndex === 'number') {
 	getChunkIndex(chunkIndex);
 }
 
