@@ -13,7 +13,6 @@ const filterForCountryData = (units: CoatOfArmsMapData[], shouldUpdateLoader?: b
       updateProcessingTexts({ value: index, total: units.length });
     }
 
-
     if (unit.imageHash) {
       if ([
         // Not CoA but Maps
@@ -104,6 +103,8 @@ const filterForCountryData = (units: CoatOfArmsMapData[], shouldUpdateLoader?: b
         '762c7133',
         '542c19a3',
         '17f85dc9',
+        '490b45a4',
+        '10fb5e86',
       ].includes(unit.imageHash)) {
         return false;
       };

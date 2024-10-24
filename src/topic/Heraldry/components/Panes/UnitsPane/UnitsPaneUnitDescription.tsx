@@ -1,71 +1,42 @@
-import { useMemo } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
 
 import {
   useFiltersDevelopmentStore,
 } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
 
-import { copyText } from '@/utils/text';
 
-import { queryClient } from '@/main';
+import ButtonText from '@/components/UI/ButtonText';
 
-import IconCopy from '@/components/Icons/IconCopy';
-
-import ButtonIcon from '@/components/UI/ButtonIcon';
+import UnitsPaneUnitDescriptionContent from './UnitsPaneUnitDescriptionContent';
 
 type Props = {
   id: string,
   country: string,
+  mergedIds?: string[],
 }
 
-const UnitsPaneUnitDescription = ({ id, country }: Props) => {
+const UnitsPaneUnitDescription = ({ id, country, mergedIds = [] }: Props) => {
+  const [idPicked, setIdPicked] = useState(id);
   const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
 
-  const { t } = useTranslation();
-
-  const description = useMemo(() => {
-    if (!isFiltersDevModeActive) {
-      return undefined;
-    }
-
-    const data = queryClient.getQueryData(['dev', country]);
-
-    if (data) {
-      return Object.values(data).find(({ id: idToCheck }) => idToCheck === id)?.description;
-    }
-
-    return undefined;
-  }, [id, country]);
-
-  if (!isFiltersDevModeActive || !description) {
+  if (!isFiltersDevModeActive) {
     return null;
   }
 
   return (
-    <div className="mt-4 text-ui-dark-contrast">
-      <h3 className="flex gap-2 items-center text-[14px]">
-        <span>
-          {t('heraldry.list.labelDescription')}
-        </span>
-        <ButtonIcon
+    <>
+      <UnitsPaneUnitDescriptionContent id={idPicked} country={country} shouldShowUnitTitle={idPicked !== id} />
+      {mergedIds.length > 0 && <div>
+
+        {[id, ...mergedIds].map((subId) => <ButtonText
           size="small"
-          wrapperClassName="ml-auto"
-          onClick={() => copyText(description)}
-          label={t('main.copy')}
-          labelPosition="left"
-        >
-          <IconCopy />
-        </ButtonIcon>
-      </h3>
-      <div
-        className="my-2 sans text-[10px] text-justify hyphens-auto line-clamp-6"
-        dangerouslySetInnerHTML={{
-          __html: description.includes('||||') ?
-          (description as string).split('||||').map((paragraph) => `<p class="mb-2 last:mb-0">${paragraph}</p>`).join('')
-          : `<p class="mb-2 last:mb-0">${description}<p>`,
-        }}
-      />
-    </div>
+          key={subId}
+          isActive={subId === idPicked}
+          onClick={() => setIdPicked(subId)}>
+            <span>{subId}</span>
+        </ButtonText>)}
+      </div>}
+    </>
   );
 };
 

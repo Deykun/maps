@@ -20,8 +20,6 @@ type Props = {
 };
 
 const Icon = ({ className, animals = [] }: Props) => {
-  console.log('animals', animals);
-
   if (animals.length === 0) {
     return <IconBird className={className} />;
   }

@@ -2,12 +2,21 @@ import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 import { removeDiacratics } from '@/utils/text';
 
 const getIsIdMatch = (phrase: string, unit: CoatOfArmsMapData) => {
-  return unit.id.toLowerCase() === phrase.replace('id:', '');
+  const idToFind = phrase.replace('id:', '').toLowerCase();
+
+  return [
+    unit.id.toLowerCase(),
+    ...(unit.mergedIds || []).map((id) => id.toLowerCase()),
+  ].some((id) => id === idToFind);
 }
 
 const getDoesPhraseMatch =  (phrase: string, unit: CoatOfArmsMapData) => {
   if (phrase.startsWith('id:')) {
     return getIsIdMatch(phrase, unit);
+  }
+
+  if (phrase.includes('-') && getIsIdMatch(phrase, unit)) {
+    return true;
   }
 
   const listPhraseNormalizedWords = phrase.split(' ').filter(Boolean);
