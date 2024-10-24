@@ -16,9 +16,10 @@ import IconBook from '@/components/Icons/IconBook';
 import IconMarker from '@/components/Icons/IconMarker';
 import IconUndo from '@/components/Icons/IconUndo';
 
-
 import Panel from '@/components/UI/Panel';
 import ButtonText from '@/components/UI/ButtonText';
+
+import AddOrRemoveMarkers from '@/topic/Heraldry/features/modifyMarkers/components/AddOrRemoveMarkers/AddOrRemoveMarkers'
 
 import UnitsPaneUnitColors from './UnitsPaneUnitColors';
 import UnitsPaneUnitDescription from './UnitsPaneUnitDescription';
@@ -108,7 +109,8 @@ const UnitsPaneSidebarDetailsContent = ( { unit, setDetailsUnit }: Props) => {
         </p>
       </Panel>
       <UnitsPaneUnitMarkers unit={unit} />
-      <UnitsPaneUnitDevActions unit={unit} />
+      <AddOrRemoveMarkers unit={unit} />
+      {/* <UnitsPaneUnitDevActions unit={unit} /> */}
       <UnitsPaneUnitDescription id={unit.id} country={unit.lang} mergedIds={unit.mergedIds} />
     </>
   );

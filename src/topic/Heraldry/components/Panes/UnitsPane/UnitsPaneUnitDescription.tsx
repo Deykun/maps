@@ -24,7 +24,7 @@ const UnitsPaneUnitDescription = ({ id, country, mergedIds = [] }: Props) => {
   }
 
   return (
-    <>
+    <div>
       <UnitsPaneUnitDescriptionContent id={idPicked} country={country} shouldShowUnitTitle={idPicked !== id} />
       {mergedIds.length > 0 && <div>
 
@@ -36,7 +36,7 @@ const UnitsPaneUnitDescription = ({ id, country, mergedIds = [] }: Props) => {
             <span>{subId}</span>
         </ButtonText>)}
       </div>}
-    </>
+    </div>
   );
 };
 
