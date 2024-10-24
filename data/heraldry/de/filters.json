@@ -10,31 +10,182 @@
     {
       "name": "eagle",
       "phrases": [
-       "adler",
-       "adlerfang",
-       "adlerfänge",
-       "adlerflügel",
-       "adlerflügeln",
-       "adlerklaue",
-       "adlerklauen",
-       "adlerkopf",
-       "adlerköpfe",
-       "adlern",
-       "adlerrumpf",
-       "adlerrümpfe",
-       "adlers",
-       "doppeladler",
-       "doppelkopfadler",
-       "ziegenadler",
-       "seeadler",
-       "seeadlers",
-       "adlerköpfen",
-       "äskulapstab",
-       "jungfrauenadler",
-       "johannesadler",
-       "reichsadler",
-       "adlerflug"
-      ]
+        "adler",
+        "adlerfang",
+        "adlerfänge",
+        "adlerflügel",
+        "adlerflügeln",
+        "adlerklaue",
+        "adlerklauen",
+        "adlerkopf",
+        "adlerköpfe",
+        "adlern",
+        "adlerrumpf",
+        "adlerrümpfe",
+        "adlers",
+        "doppeladler",
+        "doppelkopfadler",
+        "ziegenadler",
+        "seeadler",
+        "seeadlers",
+        "adlerköpfen",
+        "äskulapstab",
+        "jungfrauenadler",
+        "johannesadler",
+        "reichsadler",
+        "adlerflug"
+      ],
+      "include": [
+        {
+          "imageHash": "3ffef87",
+          "note": "Fürth"
+        },
+        {
+          "imageHash": "c0ee43",
+          "note": "Friedeburg"
+        },
+        {
+          "imageHash": "33bc9995",
+          "note": "Bengel (Mosel)"
+        },
+        {
+          "imageHash": "511d090f",
+          "note": "Kinderbeuern"
+        },
+        {
+          "imageHash": "3d100841",
+          "note": "Reil"
+        },
+        {
+          "imageHash": "4fc8c91d",
+          "note": "Hasborn (Eifel)"
+        },
+        {
+          "imageHash": "4c32bc72",
+          "note": "Diefenbach (bei Wittlich)"
+        },
+        {
+          "imageHash": "67db918c",
+          "note": "Willwerscheid"
+        },
+        {
+          "imageHash": "2ec88ac6",
+          "note": "Breit"
+        },
+        {
+          "imageHash": "662dbeeb",
+          "note": "Neunkirchen (Hunsrück)"
+        },
+        {
+          "imageHash": "41e6da80",
+          "note": "Lorscheid"
+        },
+        {
+          "imageHash": "56bc55",
+          "note": "Mertesdorf"
+        },
+        {
+          "imageHash": "f245eda",
+          "note": "Verbandsgemeinde Ruwer"
+        },
+        {
+          "imageHash": "9c5f044",
+          "note": "Kenn"
+        },
+        {
+          "imageHash": "6fc1ff8d",
+          "note": "Newel"
+        },
+        {
+          "imageHash": "1f08400",
+          "note": "Aach (bei Trier)"
+        },
+        {
+          "imageHash": "25848efe",
+          "note": "Dreis"
+        },
+        {
+          "imageHash": "3dd24362",
+          "note": "Freudenburg"
+        },
+        {
+          "imageHash": "6d769ded",
+          "note": "Taben-Rodt"
+        },
+        {
+          "imageHash": "35955c94",
+          "note": "Sotzweiler"
+        },
+        {
+          "imageHash": "502a5dbb",
+          "note": "Winterbach (St. Wendel)"
+        },
+        {
+          "imageHash": "4cc5a286",
+          "note": "Haaren (Aachen)"
+        },
+        {
+          "imageHash": "45009429",
+          "note": "Nidderau"
+        },
+        {
+          "imageHash": "1c7dfde2",
+          "note": "Schöneck (Hessen)"
+        },
+        {
+          "imageHash": "3ef63326",
+          "note": "Ellenz-Poltersdorf"
+        },
+        {
+          "imageHash": "6a93b516",
+          "note": "Kröv"
+        },
+        {
+          "imageHash": "6fbbda23",
+          "note": "Kinheim"
+        },
+        {
+          "imageHash": "122e6a0a",
+          "note": "Metterich"
+        },
+        {
+          "imageHash": "2e43c900",
+          "note": "Longuich"
+        },
+        {
+          "imageHash": "1c28b88e",
+          "note": "Bayern"
+        },
+        {
+          "imageHash": "3c74cea9",
+          "note": "Thür"
+        },
+        {
+          "imageHash": "3d0ff6f1",
+          "note": "Gemen"
+        },
+        {
+          "imageHash": "27779774",
+          "note": "Saar"
+        },
+        {
+          "imageHash": "166db694",
+          "note": "Naunheim"
+        },
+        {
+          "imageHash": "1f692374",
+          "note": "Seibersbach"
+        },
+        {
+          "imageHash": "34e1a60f",
+          "note": "Dernau"
+        },
+        {
+          "imageHash": "5c0545af",
+          "note": "Föritz"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "falcon",
@@ -2278,6 +2429,198 @@
         {
           "imageHash": "749734a3",
           "note": "Schloss Hämelschenburg"
+        },
+        {
+          "imageHash": "aec283f",
+          "note": "Esch (bei Gerolstein)"
+        },
+        {
+          "imageHash": "5a65539e",
+          "note": "Wallenborn"
+        },
+        {
+          "imageHash": "45459015",
+          "note": "Niederhausen an der Appel"
+        },
+        {
+          "imageHash": "50dc9485",
+          "note": "Lettweiler"
+        },
+        {
+          "imageHash": "52d83376",
+          "note": "Verbandsgemeinde Alsenz-Obermoschel"
+        },
+        {
+          "imageHash": "3f8c72f8",
+          "note": "Mühlpfad"
+        },
+        {
+          "imageHash": "4382fb2c",
+          "note": "Hungenroth"
+        },
+        {
+          "imageHash": "53c4f30c",
+          "note": "Kanzem"
+        },
+        {
+          "imageHash": "3fb3a916",
+          "note": "Berschweiler (Marpingen)"
+        },
+        {
+          "imageHash": "165d3650",
+          "note": "Oberthal (Saar)"
+        },
+        {
+          "imageHash": "7876f11d",
+          "note": "Michelrieth"
+        },
+        {
+          "imageHash": "3e972b71",
+          "note": "Weilmünster"
+        },
+        {
+          "imageHash": "513ff3f2",
+          "note": "Weilmünster"
+        },
+        {
+          "imageHash": "3102c8b4",
+          "note": "Lahnau"
+        },
+        {
+          "imageHash": "206e160b",
+          "note": "Löwensen"
+        },
+        {
+          "imageHash": "6a529d47",
+          "note": "Weser"
+        },
+        {
+          "imageHash": "193e88a4",
+          "note": "Viersen"
+        },
+        {
+          "imageHash": "5a0bf407",
+          "note": "Groß-Rohrheim"
+        },
+        {
+          "imageHash": "34fd3530",
+          "note": "Winterborn (Pfalz)"
+        },
+        {
+          "imageHash": "153a23e4",
+          "note": "Dörscheid"
+        },
+        {
+          "imageHash": "604e9df4",
+          "note": "Birkendorf (Biberach an der Riß)"
+        },
+        {
+          "imageHash": "7d0bf85a",
+          "note": "Henau (Hunsrück)"
+        },
+        {
+          "imageHash": "3adcfbee",
+          "note": "Strüth"
+        },
+        {
+          "imageHash": "35487437",
+          "note": "Erzgebirgskreis"
+        },
+        {
+          "imageHash": "c850bdb",
+          "note": "Felsberg (Saar)"
+        },
+        {
+          "imageHash": "2b99495a",
+          "note": "Verbandsgemeinde Aar-Einrich"
+        },
+        {
+          "imageHash": "7ca38296",
+          "note": "Emmerzhausen"
+        },
+        {
+          "imageHash": "1f97e678",
+          "note": "Remagen"
+        },
+        {
+          "imageHash": "2a87b25d",
+          "note": "Waldorf (Rheinland-Pfalz)"
+        },
+        {
+          "imageHash": "702d6a15",
+          "note": "Brohl-Lützing"
+        },
+        {
+          "imageHash": "71d0c69b",
+          "note": "Verbandsgemeinde Traben-Trarbach"
+        },
+        {
+          "imageHash": "56e82dbb",
+          "note": "Frankenblick"
+        },
+        {
+          "imageHash": "45f1bade",
+          "note": "Spay"
+        },
+        {
+          "imageHash": "5c5e6ead",
+          "note": "Heckenmünster"
+        },
+        {
+          "imageHash": "47d0b4b2",
+          "note": "Abtweiler"
+        },
+        {
+          "imageHash": "733e97d4",
+          "note": "Marienhausen"
+        },
+        {
+          "imageHash": "130ce11b",
+          "note": "Dümpelfeld"
+        },
+        {
+          "imageHash": "314f828b",
+          "note": "Meuspath"
+        },
+        {
+          "imageHash": "6ae7d933",
+          "note": "Virneburg"
+        },
+        {
+          "imageHash": "6979cfd9",
+          "note": "Bad Camberg"
+        },
+        {
+          "imageHash": "665e4242",
+          "note": "Weyer (Rhein-Lahn-Kreis)"
+        },
+        {
+          "imageHash": "2e98fb0d",
+          "note": "Kraam"
+        },
+        {
+          "imageHash": "7a75f224",
+          "note": "Kerpen"
+        },
+        {
+          "imageHash": "3c92e0e3",
+          "note": "Pohl (Nassau)"
+        },
+        {
+          "imageHash": "33677813",
+          "note": "Niedert"
+        },
+        {
+          "imageHash": "3f5565d0",
+          "note": "Schöneberg (Hunsrück)"
+        },
+        {
+          "imageHash": "2d0dba6f",
+          "note": "Verbandsgemeinde Gau-Algesheim"
+        },
+        {
+          "imageHash": "4d11e7f8",
+          "note": "Gusterath"
         }
       ],
       "exclude": [
