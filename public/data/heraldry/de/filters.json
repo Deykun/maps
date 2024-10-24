@@ -10,31 +10,182 @@
     {
       "name": "eagle",
       "phrases": [
-       "adler",
-       "adlerfang",
-       "adlerfänge",
-       "adlerflügel",
-       "adlerflügeln",
-       "adlerklaue",
-       "adlerklauen",
-       "adlerkopf",
-       "adlerköpfe",
-       "adlern",
-       "adlerrumpf",
-       "adlerrümpfe",
-       "adlers",
-       "doppeladler",
-       "doppelkopfadler",
-       "ziegenadler",
-       "seeadler",
-       "seeadlers",
-       "adlerköpfen",
-       "äskulapstab",
-       "jungfrauenadler",
-       "johannesadler",
-       "reichsadler",
-       "adlerflug"
-      ]
+        "adler",
+        "adlerfang",
+        "adlerfänge",
+        "adlerflügel",
+        "adlerflügeln",
+        "adlerklaue",
+        "adlerklauen",
+        "adlerkopf",
+        "adlerköpfe",
+        "adlern",
+        "adlerrumpf",
+        "adlerrümpfe",
+        "adlers",
+        "doppeladler",
+        "doppelkopfadler",
+        "ziegenadler",
+        "seeadler",
+        "seeadlers",
+        "adlerköpfen",
+        "äskulapstab",
+        "jungfrauenadler",
+        "johannesadler",
+        "reichsadler",
+        "adlerflug"
+      ],
+      "include": [
+        {
+          "imageHash": "3ffef87",
+          "note": "Fürth"
+        },
+        {
+          "imageHash": "c0ee43",
+          "note": "Friedeburg"
+        },
+        {
+          "imageHash": "33bc9995",
+          "note": "Bengel (Mosel)"
+        },
+        {
+          "imageHash": "511d090f",
+          "note": "Kinderbeuern"
+        },
+        {
+          "imageHash": "3d100841",
+          "note": "Reil"
+        },
+        {
+          "imageHash": "4fc8c91d",
+          "note": "Hasborn (Eifel)"
+        },
+        {
+          "imageHash": "4c32bc72",
+          "note": "Diefenbach (bei Wittlich)"
+        },
+        {
+          "imageHash": "67db918c",
+          "note": "Willwerscheid"
+        },
+        {
+          "imageHash": "2ec88ac6",
+          "note": "Breit"
+        },
+        {
+          "imageHash": "662dbeeb",
+          "note": "Neunkirchen (Hunsrück)"
+        },
+        {
+          "imageHash": "41e6da80",
+          "note": "Lorscheid"
+        },
+        {
+          "imageHash": "56bc55",
+          "note": "Mertesdorf"
+        },
+        {
+          "imageHash": "f245eda",
+          "note": "Verbandsgemeinde Ruwer"
+        },
+        {
+          "imageHash": "9c5f044",
+          "note": "Kenn"
+        },
+        {
+          "imageHash": "6fc1ff8d",
+          "note": "Newel"
+        },
+        {
+          "imageHash": "1f08400",
+          "note": "Aach (bei Trier)"
+        },
+        {
+          "imageHash": "25848efe",
+          "note": "Dreis"
+        },
+        {
+          "imageHash": "3dd24362",
+          "note": "Freudenburg"
+        },
+        {
+          "imageHash": "6d769ded",
+          "note": "Taben-Rodt"
+        },
+        {
+          "imageHash": "35955c94",
+          "note": "Sotzweiler"
+        },
+        {
+          "imageHash": "502a5dbb",
+          "note": "Winterbach (St. Wendel)"
+        },
+        {
+          "imageHash": "4cc5a286",
+          "note": "Haaren (Aachen)"
+        },
+        {
+          "imageHash": "45009429",
+          "note": "Nidderau"
+        },
+        {
+          "imageHash": "1c7dfde2",
+          "note": "Schöneck (Hessen)"
+        },
+        {
+          "imageHash": "3ef63326",
+          "note": "Ellenz-Poltersdorf"
+        },
+        {
+          "imageHash": "6a93b516",
+          "note": "Kröv"
+        },
+        {
+          "imageHash": "6fbbda23",
+          "note": "Kinheim"
+        },
+        {
+          "imageHash": "122e6a0a",
+          "note": "Metterich"
+        },
+        {
+          "imageHash": "2e43c900",
+          "note": "Longuich"
+        },
+        {
+          "imageHash": "1c28b88e",
+          "note": "Bayern"
+        },
+        {
+          "imageHash": "3c74cea9",
+          "note": "Thür"
+        },
+        {
+          "imageHash": "3d0ff6f1",
+          "note": "Gemen"
+        },
+        {
+          "imageHash": "27779774",
+          "note": "Saar"
+        },
+        {
+          "imageHash": "166db694",
+          "note": "Naunheim"
+        },
+        {
+          "imageHash": "1f692374",
+          "note": "Seibersbach"
+        },
+        {
+          "imageHash": "34e1a60f",
+          "note": "Dernau"
+        },
+        {
+          "imageHash": "5c0545af",
+          "note": "Föritz"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "falcon",
