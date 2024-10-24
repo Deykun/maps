@@ -5208,6 +5208,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "horse",
+    "donkey"
+   ]
   }
  },
  {
@@ -74052,7 +74058,6 @@
   "markers": {
    "animals": [
     "rooster",
-    "lion",
     "bird"
    ]
   }
@@ -74683,11 +74688,6 @@
      }
     ]
    }
-  },
-  "markers": {
-   "animals": [
-    "lion"
-   ]
   }
  },
  {
@@ -159607,6 +159607,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "dog"
+   ]
   }
  },
  {
