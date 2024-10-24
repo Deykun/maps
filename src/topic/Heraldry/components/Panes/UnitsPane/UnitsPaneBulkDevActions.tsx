@@ -21,16 +21,16 @@ type Props = {
 
 const UnitsPaneItemListSelectCheckbox = ({ setSelectedPaneUnits, selectedPaneUnits }: Props) => {
   const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
-  const filterExclude = useFiltersDevelopmentStore((state) => state.filter.exclude);
-  const filterInclude = useFiltersDevelopmentStore((state) => state.filter.include);
+  const filterExclude = useFiltersDevelopmentStore((state) => state.filter.exclude || []);
+  const filterInclude = useFiltersDevelopmentStore((state) => state.filter.include || []);
 
   if (!isFiltersDevModeActive) {
     return null;
   }
 
   const hasSelected = selectedPaneUnits.length > 0;
-  const hasExclude = (filterExclude?.length || 0) > 0;
-  const hasInclude = (filterInclude?.length || 0) > 0;
+  const hasExclude = filterExclude.length > 0;
+  const hasInclude = filterInclude.length > 0;
 
   const areAllExcludeActive = hasSelected && hasExclude && selectedPaneUnits.every((unit) => getIsMatchingManualMarker(filterExclude, unit));
   const areAllIncludeActive = hasSelected && hasInclude && selectedPaneUnits.every((unit) => getIsMatchingManualMarker(filterInclude, unit));

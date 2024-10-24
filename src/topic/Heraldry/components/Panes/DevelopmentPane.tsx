@@ -208,6 +208,7 @@ const DevelopmentPane = ({
             <ButtonIcon
               onClick={toggleMenu('customFilter')}
               isActive={activeMenu === 'customFilter'}
+              isDisabled={shouldShowOnlyValid}
               label="Create your own filter"
               labelPosition="right"
             >

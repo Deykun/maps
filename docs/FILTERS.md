@@ -15,6 +15,15 @@ This method isn't ideal (for example, sometimes the text describes a previous ve
 
  A basic filter based on search is refined.
 
+##### Tips:
+Do you speak Finnish? I don't. 
+
+1. I copy the description (that's why those copy buttons are near them).
+2. Go to chatgpt and ask: Which word in this text is the name of an animal? [copied text]
+3. In response I will get "The word "leijona" in the text is the name of an animal. It translates to "lion" in English."
+
+I often ask about other forms of words, and ChatGPT is very helpful in quickly identifying the key ones.
+
 #### Excluding False Positives
 
 1. Activate filter and from wisible CoA exclude lUse the filter to exclude CoA that doesn't have a lion.
@@ -23,9 +32,9 @@ The filter should only include lions.
 
 #### Including Missing Items
 
-1. From the basic filters, select "With Animal" and "Reverse Filters."
+1. Got to custom filter settings and reverse it.
 
-You will see only CoA without animals and with short descriptions.
+You will see only CoA without animals.
 
 1. Find coats of arms without lions and include them.
 
