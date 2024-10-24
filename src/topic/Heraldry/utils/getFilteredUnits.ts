@@ -57,19 +57,30 @@ export const getFilteredUnits = ({
     (unit) => {
       const isCustomFilterActive = customFilter && customFilter.isActive && Array.isArray(customFilter.result);
       if (isCustomFilterActive) {
+        /*
+          The custom filter doesn't use filterResponse.notMatches because customFilter.result has it built in, allowing the user to reverse the custom filter separately.
+          
+          For example, by selecting "lion" as a custom filter and reversing it, we get all CoA that do not match it.
+          
+          Then, we can enable the "without animals" filter, which isn't custom.
+          
+          This will match all CoA without animals and apply additional filtering based on the reversed lion filter.
+          
+          This is essentially how the filters are created. For more details, refer to FILTERS.md.
+        */
         if ((customFilter.result?.length || 0) === 0) {
-          return filterResponse.notMatches;
+          return false;
         }
 
         if ((unit.mergedIds || []).length > 0) {
           const unitsIdsToCheck = [unit.id, ...(unit.mergedIds || [])];
   
           if (!unitsIdsToCheck.some((id) => customFilter.result?.includes(id))) {
-            return filterResponse.notMatches;
+            return false;
           }
         } else {
           if (!customFilter.result?.includes(unit.id)) {
-            return filterResponse.notMatches;
+            return false;
           }
         }
       }

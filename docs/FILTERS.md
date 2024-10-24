@@ -1,4 +1,4 @@
-### This area is under construction.
+### This area is under construction (I'm trying to find the best startegy)
 
 If you see a filter for eagle, crown, or anchor, it's based on the description of the coat of arms scraped from Wikipedia.
 
@@ -39,3 +39,12 @@ You will see only CoA without animals.
 1. Find coats of arms without lions and include them.
 
 The filter has optimal search matching by phrases, excludes false positives, and includes CoA without descriptions.
+
+##### Draft of better process - WiP   
+For example, by selecting "lion" as a custom filter and reversing it, we get all CoA that do not match it.
+
+Then, we can enable the "without animals" filter, which isn't custom.
+
+This will match all CoA without animals and apply additional filtering based on the reversed lion filter.
+
+This is essentially how the filters are created. For more details, refer to FILTERS.md.
