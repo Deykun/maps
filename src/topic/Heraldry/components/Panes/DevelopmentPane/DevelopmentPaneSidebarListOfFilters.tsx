@@ -72,7 +72,7 @@ const DevelopmentPaneSidebarListOfFilters = ({
   }
 
   return (
-    <div className="ui-slide-from-left-sidebar fixed top-0 left-0 z-[-1] w-[400px] max-w-[100vw] max-h-[100svh] overflow-auto">
+    <div className="ui-slide-from-left-sidebar fixed top-0 left-0 z-[-1] w-[400px] max-w-[100vw] max-h-[100svh] overflow-auto no-scrollbar">
       <div className="bg-ui-dark text-ui-dark-contrast p-[12px] pl-[60px] rounded-br-[18px] flex flex-col gap-[12px] relative">
         <h3 className="flex gap-3 items-center text-[14px]">
           <IconSelected className="size-5 text-white" />
@@ -96,9 +96,6 @@ const DevelopmentPaneSidebarListOfFilters = ({
           disabled={isLoading}
           onChange={handleClick}
           className="block w-full bg-ui-contrast text-ui-dark placeholder-ui-dark caret-marker rounded-[8px] py-2 px-4"
-          // className={clxs('sans w-full p-1 px-2 text-[14px] bg-white border', {
-          //   'rounded-b-[4px]': !pickedFilter
-          // })}
         >
           <option>Pick filter</option>
           {data && <>

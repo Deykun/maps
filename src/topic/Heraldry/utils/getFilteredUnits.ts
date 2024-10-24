@@ -61,8 +61,16 @@ export const getFilteredUnits = ({
           return filterResponse.notMatches;
         }
 
-        if (!customFilter.result?.includes(unit.id)) {
-          return filterResponse.notMatches;
+        if ((unit.mergedIds || []).length > 0) {
+          const unitsIdsToCheck = [unit.id, ...(unit.mergedIds || [])];
+  
+          if (!unitsIdsToCheck.some((id) => customFilter.result?.includes(id))) {
+            return filterResponse.notMatches;
+          }
+        } else {
+          if (!customFilter.result?.includes(unit.id)) {
+            return filterResponse.notMatches;
+          }
         }
       }
 

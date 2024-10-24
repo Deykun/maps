@@ -266,7 +266,7 @@ const DevelopmentPane = ({
             setDraftFilter={setDraftFilter}
           />
         }
-        {activeMenu === 'settings' && <SubPanel order={4} className="ui-slide-from-left-sidebar no-scrollbar z-[-1] mt-2 absolute left-12 ml-3 flex-row">
+        {activeMenu === 'settings' && <SubPanel order={4} className="ui-slide-from-left-sidebar z-[-1] mt-2 absolute left-12 ml-3 flex-row">
         <ButtonIcon
           wrapperClassName="ml-auto"
           onClick={() => setShouldReverseCustomFilter(!shouldReverseCustomFilter)}
