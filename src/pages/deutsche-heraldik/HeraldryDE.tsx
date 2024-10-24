@@ -103,6 +103,7 @@ const filterForCountryData = (units: CoatOfArmsMapData[], shouldUpdateLoader?: b
         '535977d9',
         '762c7133',
         '542c19a3',
+        '17f85dc9',
       ].includes(unit.imageHash)) {
         return false;
       };
@@ -178,6 +179,8 @@ const HeraldryDE = () => {
         'unit-1',
         'unit-2',
         'unit-3',
+        'unit-4',
+        'unit-5',
         'formerUnit-0',
         'formerUnit-1',
         'formerUnit-2',

@@ -8,7 +8,7 @@ import sharp from 'sharp';
 import chalk from 'chalk';
 import { resolve } from 'path';
 import { clearLastLines } from './helpers/console';
-import { getImageFileName } from './helpers/images';
+import { getImageHash, getImageFileName } from './helpers/images';
 
 import { AdministrativeUnit, CoatOfArmsDetailsData, ColorStatus, ColorStatusInDetails } from '../../../src/topic/Heraldry/types';
 
@@ -137,6 +137,7 @@ export const getDetails = async ({
       } = getMarkers({
         text: unit?.description || '',
         title: unit?.title || '',
+        imageHash: getImageHash(unit),
         lang,
       });
 
@@ -166,7 +167,8 @@ export const getDetails = async ({
       chalk.yellow(`  Progress ${chalk.green(`${(i / total * 100).toFixed(1)}%`)}.`),
       `${chalk.white(i)} out of ${chalk.white(total)}.`,
       getTimeStatus(i),
-    ].join(' '));
+      typeof chunkIndex === 'number' ? chalk.gray(`(chunk ${chunkIndex})`) : '',
+    ].filter(Boolean).join(' '));
     console.log(' ');
   }
 

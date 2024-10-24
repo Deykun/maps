@@ -1,9 +1,11 @@
 import { create } from 'zustand';
-import { devtools, persist } from 'zustand/middleware'
+import { devtools } from 'zustand/middleware'
 
-import { AdministrativeUnitIndex, MarkerParams, MarkerParamsWithResult } from '@/topic/Heraldry/types';
+import { CoatOfArmsMapData, AdministrativeUnitIndex, MarkerParams, MarkerParamsWithResult, ManualMarker, ComplexManualMarker } from '@/topic/Heraldry/types';
 
 import { getHasMarker } from '@/topic/Heraldry/utils/markers/getMarker';
+
+export const minLengthOfLongDescription = 70;
 
 type FiltersDevelopmentStoreState = {
   isModeActive: boolean,
@@ -19,19 +21,16 @@ export const EMPTY_CUSTOM_FILTER: MarkerParams = {
 
 export const useFiltersDevelopmentStore = create<FiltersDevelopmentStoreState>()(
   devtools(
-    persist(
-      () => ({
-        // Is active locally by default
-        // isModeActive: window?.location?.href?.includes('localhost') || false,
-        isModeActive: false,
-        filter: {
-          ...EMPTY_CUSTOM_FILTER,
-          isActive: false,
-          result: [],
-        },
-      } as FiltersDevelopmentStoreState),
-      { name: 'filterDevelopmentStore' },
-    )
+    () => ({
+      // Is active locally by default
+      isModeActive: window?.location?.href?.includes('localhost') || false,
+      filter: {
+        ...EMPTY_CUSTOM_FILTER,
+        isActive: false,
+        result: [],
+      },
+    } as FiltersDevelopmentStoreState),
+    { name: 'filterDevelopmentStore' },
   )
 )
 
@@ -93,45 +92,126 @@ export const setCustomFilterPhrases = (phrases: string[]) => {
   }));
 };
 
-export const toggleAsCustomFilterExclude = (unitTitle: string) => {
+export const getIsMatchingManualMarker = (rule: ManualMarker[] = [], { title, imageHash = '' }: { title: string, imageHash?: string }) => {
+  if (rule.length === 0) {
+    return false;
+  }
+
+  const strings = rule.filter((value) => typeof value === 'string') as string[];
+  if (strings.includes(title)) {
+    return true;
+  }
+
+  const imageHashes = (rule.filter((value) => typeof value !== 'string') as ComplexManualMarker[]).map(({ imageHash }) => imageHash);
+  if (imageHashes.includes(imageHash)) {
+    return true;
+  }
+
+  return false;
+}
+
+
+export const toggleAsCustomFilterExclude = (unit: CoatOfArmsMapData) => {
   useFiltersDevelopmentStore.setState((state) => {
-    const exclude = state.filter.exclude?.includes(unitTitle)
-      ? (state.filter.exclude || []).filter((unitnTitleToCheck) => unitTitle !== unitnTitleToCheck)
-      : Array.from(new Set([...(state.filter.exclude || []), unitTitle]));
+    const isActive = getIsMatchingManualMarker(state.filter.exclude, unit);
+
+    const exclude = isActive
+      ? (state.filter.exclude || []).filter(
+        (ruleToCheck) => typeof ruleToCheck === 'string' ? unit.title !== ruleToCheck : unit.imageHash !== ruleToCheck.imageHash)
+      : [...(state.filter.exclude || []), (unit.imageHash ? { imageHash: unit.imageHash, note: unit.title } : unit.title)]
 
     return {
       ...state,
       filter: {
         ...state.filter,
         exclude,
-        include: (state.filter.include || []).filter((unitnTitleToCheck) => unitTitle !== unitnTitleToCheck),
+        include: (state.filter.include || []).filter(
+          (ruleToCheck) => typeof ruleToCheck === 'string' ? unit.title !== ruleToCheck : unit.imageHash !== ruleToCheck.imageHash
+        ),
       }
     };
   });
 };
 
-export const toggleAsCustomFilterInclude = (unitTitle: string) => {
+export const toggleAsCustomFilterInclude = (unit: CoatOfArmsMapData) => {
   useFiltersDevelopmentStore.setState((state) => {
-    const include = state.filter.include?.includes(unitTitle)
-      ? (state.filter.include || []).filter((unitnTitleToCheck) => unitTitle !== unitnTitleToCheck)
-      : Array.from(new Set([...(state.filter.include || []), unitTitle]))
+    const isActive = getIsMatchingManualMarker(state.filter.include, unit);
+
+    const include = isActive
+      ? (state.filter.include || []).filter(
+        (ruleToCheck) => typeof ruleToCheck === 'string' ? unit.title !== ruleToCheck : unit.imageHash !== ruleToCheck.imageHash)
+        : [...(state.filter.include || []), (unit.imageHash ? { imageHash: unit.imageHash, note: unit.title } : unit.title)]
     
     return {
       ...state,
       filter: {
         ...state.filter,
-        exclude: (state.filter.exclude || []).filter((unitnTitleToCheck) => unitTitle !== unitnTitleToCheck),
+        exclude: (state.filter.exclude || []).filter(
+          (ruleToCheck) => typeof ruleToCheck === 'string' ? unit.title !== ruleToCheck : unit.imageHash !== ruleToCheck.imageHash
+        ),
         include,
       }
     };
   });
 };
 
-export const showOnlyUnitsWithDescriptionInCustomFilter = (data: AdministrativeUnitIndex[]) => {
+const bulkActionsCreator = (action: 'include' | 'exclude') => (units: CoatOfArmsMapData[]) => {
+  const rulesToAdd: ComplexManualMarker[] = units.filter(({ imageHash }) => imageHash).map((unit) => ({ imageHash: unit.imageHash as string, note: unit.title.substring(0, 50) }));
+  const titlesToRemove = units.map(({ title }) => title);
+  const hashesToRemove = rulesToAdd.map(({ imageHash }) => imageHash);
+
+  useFiltersDevelopmentStore.setState((state) => {
+    // We removing them for both to avoid duplicates
+    const excludeWithRemoved = (state.filter.exclude || []).filter((ruleToCheck) => typeof ruleToCheck === 'string'
+      ? !titlesToRemove.includes(ruleToCheck)
+      : !hashesToRemove.includes(ruleToCheck.imageHash)
+    );
+
+    const includeWithRemoved = (state.filter.include || []).filter((ruleToCheck) => typeof ruleToCheck === 'string'
+      ? !titlesToRemove.includes(ruleToCheck)
+      : !hashesToRemove.includes(ruleToCheck.imageHash)
+    );
+
+    let newExclude = excludeWithRemoved;
+    let newInclude = includeWithRemoved;
+    if (action === 'exclude') {
+      newExclude = [...newExclude, ...rulesToAdd];
+    }
+
+    if (action === 'include') {
+      newInclude = [...newInclude, ...rulesToAdd];
+    }
+      
+    return {
+      ...state,
+      filter: {
+        ...state.filter,
+        exclude: newExclude,
+        include: newInclude,
+      }
+    };
+  });
+};
+
+export const bulkAddToFilterInclude = bulkActionsCreator('include');
+
+export const bulkAddToFilterExclude = bulkActionsCreator('exclude');
+
+export const showOnlyUnitsWithDescriptionInCustomFilter = (data: AdministrativeUnitIndex[], { shouldReverse = false } : { shouldReverse: boolean }) => {
   const state = useFiltersDevelopmentStore.getState();
 
+  const filterResponse = {
+    matches: true,
+    notMatches: false
+  };
+
+  if (shouldReverse) {
+    filterResponse.matches = false;
+    filterResponse.notMatches = true;
+  }
+
     // It only shows units with descriptions
-    const filteredUnitsIds = data.filter(({ description }) => (description.length || 0) > 70).map(({ id }) => id);
+    const filteredUnitsIds = data.filter(({ description }) => (description.length || 0) > minLengthOfLongDescription ? filterResponse.matches : filterResponse.notMatches).map(({ id }) => id);
 
     const wasUpdated = JSON.stringify(filteredUnitsIds) !== JSON.stringify(state.filter.result);
 
@@ -161,19 +241,30 @@ export const showOnlyUnitsWithDescriptionInCustomFilter = (data: AdministrativeU
     }
 }
 
-export const updateCustomFilterResultBasedOnData = (data: AdministrativeUnitIndex[]) => {
+export const updateCustomFilterResultBasedOnData = (data: AdministrativeUnitIndex[], { shouldReverse = false } : { shouldReverse: boolean }) => {
   const state = useFiltersDevelopmentStore.getState();
 
-  const filteredUnitsIds = data.filter(({ title, description }) => getHasMarker(
+  const filterResponse = {
+    matches: true,
+    notMatches: false
+  };
+
+  if (shouldReverse) {
+    filterResponse.matches = false;
+    filterResponse.notMatches = true;
+  }
+
+  const filteredUnitsIds = data.filter(({ title, description, imageUrl }) => getHasMarker(
     {
       title,
       text: description,
+      imageHash: (imageUrl || '').split('/').at(-1)?.split('-')[0] || '', // images/heraldry/de/unit/17f85dc9-kreis-warendorf-80w.webp -> 17f85dc9
     }, {
       phrases: state.filter.phrases,
       include: state.filter.include,
       exclude: state.filter.exclude,
     },
-  )).map(({ id }) => id);
+  ) ? filterResponse.matches : filterResponse.notMatches).map(({ id }) => id);
 
   const wasUpdated = JSON.stringify(filteredUnitsIds) !== JSON.stringify(state.filter.result);
 

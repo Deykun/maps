@@ -1,5 +1,4 @@
-import { memo, useState, useCallback, Dispatch, SetStateAction } from 'react';
-import { useQuery } from '@tanstack/react-query';
+import { memo, useCallback, Dispatch, SetStateAction } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import IconCopy from '@/components/Icons/IconCopy';
@@ -50,7 +49,7 @@ const DevelopmentPaneSidebarCustomFilter = ({
   }, []);
 
   return (
-    <div className="ui-slide-from-left-sidebar fixed top-0 left-0 z-[-1] w-[400px] max-w-[100vw] max-h-[100svh] overflow-auto">
+    <div className="ui-slide-from-left-sidebar fixed top-0 left-0 z-[-1] w-[400px] max-w-[100vw] max-h-[100svh] overflow-auto no-scrollbar">
       <div className="bg-ui-dark text-ui-dark-contrast p-[12px] pl-[60px] rounded-br-[18px] flex flex-col gap-[12px] relative">
         <h3 className="flex gap-3 items-center text-[14px]">
           <IconSelectNew className="size-5 text-white" />
@@ -97,7 +96,7 @@ const DevelopmentPaneSidebarCustomFilter = ({
           <ButtonText
             wrapperClassName="ml-auto"
             isActive={Boolean(draftFilter)}
-            onClick={() => copyText(JSON.stringify(draftFilter, null, 4))}
+            onClick={() => copyText(JSON.stringify(draftFilter, null, 2))}
           >
             <span>{t('main.copy')}</span>
             <IconCopy />

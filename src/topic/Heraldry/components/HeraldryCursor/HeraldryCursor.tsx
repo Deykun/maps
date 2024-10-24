@@ -3,6 +3,8 @@ import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 
 import './HeraldryCursor.scss';
 
+import HeraldryCursorDevMarker from './HeraldryCursorDevMarker';
+
 type Props = {
   top: string | number,
   left: string | number,
@@ -23,7 +25,7 @@ const HeraldryCursor = ({ top, left, isHovering = true, hovered }: Props) => {
       }}
     >
       <span className="heraldry-cursor">
-        {hovered.length > 0 && <span className="heraldry-cursor-marker">{hovered.length}</span>}
+        {hovered.length > 0 && <span className="heraldry-cursor-marker"><HeraldryCursorDevMarker hovered={hovered} />{hovered.length}</span>}
       </span>
     </div>
   );

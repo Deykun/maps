@@ -18,6 +18,9 @@ import useEffectChange from '@/hooks/useEffectChange';
 import useOutsideClick from '@/hooks/useOutsideClick';
 
 import IconCheck from '@/components/Icons/IconCheck';
+import IconControls from '@/components/Icons/IconControls';
+import IconEye from '@/components/Icons/IconEye';
+import IconEyeCrossed from '@/components/Icons/IconEyeCrossed';
 import IconSelectionChecked from '@/components/Icons/IconSelectionChecked';
 import IconSelectionUnchecked from '@/components/Icons/IconSelectionUnchecked';
 import IconEraser from '@/components/Icons/IconEraser';
@@ -29,6 +32,8 @@ import IconQuote from '@/components/Icons/IconQuote';
 
 import Space from '@/components/UI/Space';
 import Panel from '@/components/UI/Panel';
+import SubPanel from '@/components/UI/SubPanel';
+
 import ButtonIcon from '@/components/UI/ButtonIcon';
 
 import { fetchTitlesAndDescriptions } from './DevelopmentPane/fetch';
@@ -45,6 +50,7 @@ const DevelopmentPane = ({
   country,
   unitTypes,
 }: Props) => {
+  const [shouldReverseCustomFilter, setShouldReverseCustomFilter] = useState(false);
   const updateFilterTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const updateResultsTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [activeMenu, setActiveMenu] = useState('');
@@ -98,13 +104,13 @@ const DevelopmentPane = ({
     }
 
     if (shouldShowOnlyValid) {
-      showOnlyUnitsWithDescriptionInCustomFilter(data);
+      showOnlyUnitsWithDescriptionInCustomFilter(data, { shouldReverse: shouldReverseCustomFilter });
 
       return;
     }
 
-    updateCustomFilterResultBasedOnData(data);
-  }, [data, shouldShowOnlyValid]);
+    updateCustomFilterResultBasedOnData(data, { shouldReverse: shouldReverseCustomFilter });
+  }, [data, shouldShowOnlyValid, shouldReverseCustomFilter]);
 
   useEffectChange(() => {
     const wasIncludeAndExcludeUpdated = JSON.stringify({ filterInclude }) !== JSON.stringify(({ filterInclude: draftFilter.include })) ||
@@ -202,6 +208,7 @@ const DevelopmentPane = ({
             <ButtonIcon
               onClick={toggleMenu('customFilter')}
               isActive={activeMenu === 'customFilter'}
+              isDisabled={shouldShowOnlyValid}
               label="Create your own filter"
               labelPosition="right"
             >
@@ -214,6 +221,15 @@ const DevelopmentPane = ({
               labelPosition="right"
             >
               <IconQuote />
+            </ButtonIcon>
+            <ButtonIcon
+              onClick={toggleMenu('settings')}
+              isActive={activeMenu === 'settings'}
+              label={t('heraldry.titleSettings')}
+              labelPosition="right"
+            >
+              <IconControls />
+              {shouldReverseCustomFilter && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft">!</span>}
             </ButtonIcon>
             <ButtonIcon
                 onClick={() => toggleCustomFilterVisiblity()}
@@ -238,7 +254,6 @@ const DevelopmentPane = ({
             <IconLoader />
           </ButtonIcon>}
         </Panel>
-        
         {activeMenu === 'filters' &&
           <DevelopmentPaneSidebarListOfFilters
             country={country}
@@ -251,6 +266,17 @@ const DevelopmentPane = ({
             setDraftFilter={setDraftFilter}
           />
         }
+        {activeMenu === 'settings' && <SubPanel order={4} className="ui-slide-from-left-sidebar z-[-1] mt-2 absolute left-12 ml-3 flex-row">
+        <ButtonIcon
+          wrapperClassName="ml-auto"
+          onClick={() => setShouldReverseCustomFilter(!shouldReverseCustomFilter)}
+          label={`${t('heraldry.filterReverse')} ${t(`heraldry.filterReverse.${shouldReverseCustomFilter ? 'yes' : 'no'}`)}`}
+          labelPosition="bottomRight"
+        >
+          {shouldReverseCustomFilter ? <IconEyeCrossed /> : <IconEye />}
+          {shouldReverseCustomFilter && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft">!</span>}
+        </ButtonIcon>
+      </SubPanel>}
       </div>
       <Space side="left" isLast />
     </>

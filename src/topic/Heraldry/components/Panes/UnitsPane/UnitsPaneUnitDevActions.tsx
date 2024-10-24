@@ -2,6 +2,7 @@ import {
   toggleAsCustomFilterExclude,
   toggleAsCustomFilterInclude,
   useFiltersDevelopmentStore,
+  getIsMatchingManualMarker,
 } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
 
 import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
@@ -34,16 +35,16 @@ const UnitsPaneUnitDescription = ({ unit }: Props) => {
       <div className="flex gap-1 justify-center">
         <ButtonText
           size="small"
-          onClick={() => toggleAsCustomFilterExclude(unit.title)}
-          isActive={filterExclude?.includes(unit.title)}
+          onClick={() => toggleAsCustomFilterExclude(unit)}
+          isActive={getIsMatchingManualMarker(filterExclude, unit)}
         >
           <IconMarkerMinus />
           <span>Exclude</span>
         </ButtonText>
         <ButtonText
           size="small"
-          onClick={() => toggleAsCustomFilterInclude(unit.title)}
-          isActive={filterInclude?.includes(unit.title)}
+          onClick={() => toggleAsCustomFilterInclude(unit)}
+          isActive={getIsMatchingManualMarker(filterInclude, unit)}
         >
           <IconMarkerPlus />
           <span>Include</span>

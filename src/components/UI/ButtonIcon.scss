@@ -65,7 +65,6 @@
       min-width: 15px;
       height: 15px;
       line-height: 15px;
-      line-height: 15px;
       border-radius: 10px;
       border-bottom-left-radius: 2px;
       position: absolute;
@@ -79,6 +78,14 @@
 
       svg {
         fill: currentColor;
+      }
+
+      &.ui-button-icon-marker--small {
+        padding: 0 2px;
+        font-size: 8px;
+        min-width: 14px;
+        height: 14px;
+        line-height: 14px;
       }
     }
 

@@ -5,7 +5,7 @@ import { removeDiacratics } from '@/utils/text';
 
 import useOutsideClick from '@/hooks/useOutsideClick';
 
-import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
+import { CoatOfArmsDetailsData, CoatOfArmsMapData } from '@/topic/Heraldry/types';
 
 import IconCoatOfArms from '@/topic/Heraldry/components/IconCoatOfArms';
 
@@ -34,6 +34,7 @@ const UnitsPane = ({
   const [layout, setLayout] = useState<'grid' | 'list'>('grid');
   const [filterPhrase, setFilterPhrase] = useState(phrase);
   const [filteredUnits, setFilteredUnits] = useState(units);
+  const [selectedPaneUnits, setSelectedPaneUnits] = useState<CoatOfArmsMapData[]>([]);
 
   const { t } = useTranslation();
 
@@ -109,6 +110,8 @@ const UnitsPane = ({
         filterPhrase={filterPhrase}
         setFilterPhrase={setFilterPhrase}
         units={filteredUnits}
+        setSelectedPaneUnits={setSelectedPaneUnits}
+        selectedPaneUnits={selectedPaneUnits}
         layout={layout}
         setLayout={setLayout}
       />}

@@ -49,7 +49,7 @@ const UnitsPaneUnitMarkers = ({ unit, shouldShowContentAsTooltip = false }: Prop
     }
   }, [data]);
 
-  const hasContent = animals.length > 0 || items.length > 0;
+  const hasContent = animals.length > 0 || items.length > 0 || unit.type.length > 0;
 
   if (!hasContent) {
     return null;

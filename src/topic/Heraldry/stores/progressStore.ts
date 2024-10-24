@@ -17,6 +17,7 @@ type ProgressStoreState = {
   fetchingImages: FechtingProgress,
   processingMap: ProcessingProgress,
   fetchingFilters: FechtingProgress,
+  fetchingFiltersTexts: FechtingProgress,
 };
 
 const emptyFetchingProgress: FechtingProgress = { values: [], totals: [] };
@@ -29,7 +30,8 @@ export const useProgressStore = create<ProgressStoreState>()(
       fetchingImages: emptyFetchingProgress,
       processingMap: emptyProcessingProgress,
       fetchingFilters: emptyFetchingProgress,
-    } as ProgressStoreState),
+      fetchingFiltersTexts: emptyFetchingProgress,
+    }),
   { name: 'progressStore' })
 );
 
@@ -45,7 +47,7 @@ export const getUpdateTotalProcessingData = (name: 'processingTexts' | 'processi
   );
 };
 
-export const getUpdateTotalFetchingData = (name: 'fetchingTexts' | 'fetchingImages' | 'fetchingFilters', { shouldKeepValues = false } = {}) =>
+export const getUpdateTotalFetchingData = (name: 'fetchingTexts' | 'fetchingImages' | 'fetchingFilters' | 'fetchingFiltersTexts', { shouldKeepValues = false } = {}) =>
   (totals: string[]) => {
     useProgressStore.setState((state) => ({
       ...state,
@@ -57,7 +59,7 @@ export const getUpdateTotalFetchingData = (name: 'fetchingTexts' | 'fetchingImag
   );
 };
 
-export const getUpdateValueFetchingData = (name: 'fetchingTexts' | 'fetchingImages' | 'fetchingFilters') =>
+export const getUpdateValueFetchingData = (name: 'fetchingTexts' | 'fetchingImages' | 'fetchingFilters' | 'fetchingFiltersTexts') =>
   (value: string) => {
     useProgressStore.setState((state) => ({
       ...state,
@@ -86,5 +88,9 @@ export const updateProcessingMap = getUpdateTotalProcessingData('processingMap')
 export const updateTotalsForFilters = getUpdateTotalFetchingData('fetchingFilters');
 
 export const updateValueForFilters = getUpdateValueFetchingData('fetchingFilters');
+
+export const updateTotalsForFiltersTexts = getUpdateTotalFetchingData('fetchingFiltersTexts');
+
+export const updateValueForFiltersTexts = getUpdateValueFetchingData('fetchingFiltersTexts');
 
 export default useProgressStore;

@@ -3,9 +3,11 @@ import { useMemo, useState } from 'react';
 import { queryClient } from '@/main';
 
 import {
+  minLengthOfLongDescription,
   toggleAsCustomFilterExclude,
   toggleAsCustomFilterInclude,
   useFiltersDevelopmentStore,
+  getIsMatchingManualMarker,
 } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
 
 import { copyText } from '@/utils/text';
@@ -45,16 +47,16 @@ const DevelopmentActions = ({
 
   const description = useMemo(() => {
     if (!isFiltersDevModeActive || !shouldShowDescription) {
-      return undefined;
+      return '';
     }
 
     const data = queryClient.getQueryData(['dev', unit.lang]);
 
     if (data) {
-      return Object.values(data).find(({ id: idToCheck }) => idToCheck === unit.id)?.description;
+      return Object.values(data).find(({ id: idToCheck }) => idToCheck === unit.id)?.description as string || '';
     }
 
-    return undefined;
+    return '';
   }, [unit.id]);
 
   if (!isFiltersDevModeActive) {
@@ -67,8 +69,8 @@ const DevelopmentActions = ({
         <ButtonIcon
           size={buttonSize}
           className="relative pointer-events-auto"
-          onClick={() => toggleAsCustomFilterExclude(unit.title)}
-          isActive={filterExclude?.includes(unit.title)}
+          onClick={() => toggleAsCustomFilterExclude(unit)}
+          isActive={getIsMatchingManualMarker(filterExclude, unit)}
           label="Exclude"
           labelPosition={labelPositions}
         >
@@ -81,10 +83,13 @@ const DevelopmentActions = ({
               className="relative pointer-events-auto"
               onClick={() => setIsMoreOpen(!isMoreOpen)}
               isActive={isMoreOpen}
-              label={`Description - ${description?.length}ch.`}
+              label="Description"
               labelPosition={labelPositions ?? 'bottom'}
             >
-              <IconQuote className={description?.length < 60 ? 'scale-50' : ''} />
+              <IconQuote className={description.length < minLengthOfLongDescription ? 'scale-50' : ''} />
+              {description.length > 0 && <span className="ui-button-icon-marker ui-button-icon-marker--small ui-button-icon-marker--on-soft !px-[4px] !text-[9px] !h-[16px]">
+                {description.length > 749 ? '+750' : description.length}
+              </span>}
             </ButtonIcon>
             {isMoreOpen &&
               <Panel
@@ -112,8 +117,8 @@ const DevelopmentActions = ({
         <ButtonIcon
           size={buttonSize}
           className="relative pointer-events-auto"
-          onClick={() => toggleAsCustomFilterInclude(unit.title)}
-          isActive={filterInclude?.includes(unit.title)}
+          onClick={() => toggleAsCustomFilterInclude(unit)}
+          isActive={getIsMatchingManualMarker(filterInclude, unit)}
           label="Include"
           labelPosition={labelPositions ?? 'right'}
         >
