@@ -1,9 +1,11 @@
 import { create } from 'zustand';
-import { devtools, persist } from 'zustand/middleware'
+import { devtools } from 'zustand/middleware'
 
 import { CoatOfArmsMapData, AdministrativeUnitIndex, MarkerParams, MarkerParamsWithResult, ManualMarker, ComplexManualMarker } from '@/topic/Heraldry/types';
 
 import { getHasMarker } from '@/topic/Heraldry/utils/markers/getMarker';
+
+export const minLengthOfLongDescription = 70;
 
 type FiltersDevelopmentStoreState = {
   isModeActive: boolean,
@@ -195,11 +197,21 @@ export const bulkAddToFilterInclude = bulkActionsCreator('include');
 
 export const bulkAddToFilterExclude = bulkActionsCreator('exclude');
 
-export const showOnlyUnitsWithDescriptionInCustomFilter = (data: AdministrativeUnitIndex[]) => {
+export const showOnlyUnitsWithDescriptionInCustomFilter = (data: AdministrativeUnitIndex[], { shouldReverse = false } : { shouldReverse: boolean }) => {
   const state = useFiltersDevelopmentStore.getState();
 
+  const filterResponse = {
+    matches: true,
+    notMatches: false
+  };
+
+  if (shouldReverse) {
+    filterResponse.matches = false;
+    filterResponse.notMatches = true;
+  }
+
     // It only shows units with descriptions
-    const filteredUnitsIds = data.filter(({ description }) => (description.length || 0) > 70).map(({ id }) => id);
+    const filteredUnitsIds = data.filter(({ description }) => (description.length || 0) > minLengthOfLongDescription ? filterResponse.matches : filterResponse.notMatches).map(({ id }) => id);
 
     const wasUpdated = JSON.stringify(filteredUnitsIds) !== JSON.stringify(state.filter.result);
 
@@ -229,8 +241,18 @@ export const showOnlyUnitsWithDescriptionInCustomFilter = (data: AdministrativeU
     }
 }
 
-export const updateCustomFilterResultBasedOnData = (data: AdministrativeUnitIndex[]) => {
+export const updateCustomFilterResultBasedOnData = (data: AdministrativeUnitIndex[], { shouldReverse = false } : { shouldReverse: boolean }) => {
   const state = useFiltersDevelopmentStore.getState();
+
+  const filterResponse = {
+    matches: true,
+    notMatches: false
+  };
+
+  if (shouldReverse) {
+    filterResponse.matches = false;
+    filterResponse.notMatches = true;
+  }
 
   const filteredUnitsIds = data.filter(({ title, description, imageUrl }) => getHasMarker(
     {
@@ -242,7 +264,7 @@ export const updateCustomFilterResultBasedOnData = (data: AdministrativeUnitInde
       include: state.filter.include,
       exclude: state.filter.exclude,
     },
-  )).map(({ id }) => id);
+  ) ? filterResponse.matches : filterResponse.notMatches).map(({ id }) => id);
 
   const wasUpdated = JSON.stringify(filteredUnitsIds) !== JSON.stringify(state.filter.result);
 
