@@ -8,7 +8,10 @@ import IconFish from './IconFish';
 import IconHorse from './IconHorse';
 // import IconOtter from './IconOtter';
 import IconPig from './IconPig';
+import IconRabbit from './IconRabbit';
 // import IconRam from './IconRam';
+import IconSnake from './IconSnake';
+import IconTurtle from './IconTurtle';
 import IconWolf from './IconWolf';
 
 type Props = {
@@ -31,11 +34,11 @@ const Icon = ({ className, animals = [] }: Props) => {
     return <IconCat className={className} />;
   }
 
-  if (['bullBison'].some((category) => animals.includes(category))) {
+  if (['bullBison', 'elephant'].some((category) => animals.includes(category))) {
     return <IconBison className={className} />;
   }
 
-  if (['deer', 'moose', 'horse', 'centaur', 'donkey', 'goat', 'unicorn'].some((category) => animals.includes(category))) {
+  if (['deer', 'moose', 'horse', 'centaur', 'donkey', 'goat', 'unicorn', 'reindeer'].some((category) => animals.includes(category))) {
     return <IconHorse className={className} />;
   }
 
@@ -43,15 +46,19 @@ const Icon = ({ className, animals = [] }: Props) => {
     return <IconPig className={className} />;
   }
 
-  if (['bear', 'wolf', 'dog', 'fox'].some((category) => animals.includes(category))) {
+  if (['bear', 'wolf', 'dog', 'fox', 'wolverine'].some((category) => animals.includes(category))) {
     return <IconWolf className={className} />;
   }
 
-  if (['beaver', 'otter', 'dog', 'weasel', 'badger', 'rabbit', 'squirrel'].some((category) => animals.includes(category))) {
+  if (['beaver', 'otter', 'weasel', 'badger'].some((category) => animals.includes(category))) {
     return <IconBadger className={className} />;
   }
 
-  if (['fish', 'whale', 'mermaid'].some((category) => animals.includes(category))) {
+  if (['rabbit', 'squirrel', 'frog'].some((category) => animals.includes(category))) {
+    return <IconRabbit className={className} />;
+  }
+
+  if (['fish', 'whale', 'mermaid', 'seal', 'salmon', 'seahorse'].some((category) => animals.includes(category))) {
     return <IconFish className={className} />;
   }
 
@@ -59,8 +66,16 @@ const Icon = ({ className, animals = [] }: Props) => {
     return <IconBison className={className} />;
   }
 
-  if (['insect'].some((category) => animals.includes(category))) {
+  if (['insect', 'bee', 'ant', 'dragonfly', 'crayfish', 'butterfly'].some((category) => animals.includes(category))) {
     return <IconAnt className={className} />;
+  }
+
+  if (['snake', 'dragon'].some((category) => animals.includes(category))) {
+    return <IconSnake className={className} />;
+  }
+
+  if (['turtle'].some((category) => animals.includes(category))) {
+    return <IconTurtle className={className} />
   }
 
   return <IconBird className={className} />;
