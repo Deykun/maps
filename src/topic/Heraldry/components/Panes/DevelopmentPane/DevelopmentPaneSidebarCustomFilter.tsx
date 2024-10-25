@@ -27,7 +27,7 @@ const DevelopmentPaneSidebarCustomFilter = ({
 }: Props) => {
   const { t } = useTranslation();
 
-  const handleChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = useCallback((event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const name = (event.target.name || '');
     const value = (event.target.value || '');
 
@@ -65,12 +65,13 @@ const DevelopmentPaneSidebarCustomFilter = ({
             placeholder='name (ex. "eagle", "apple")'
             defaultValue={draftFilter.name}
           />
-          <input
+          <textarea
             onChange={handleChange}
             name="phrases"
-            className="block w-full text-[12px] bg-ui-contrast text-ui-dark placeholder-ui-dark caret-marker rounded-full py-2 px-4"
+            className="block w-full text-[12px] bg-ui-contrast text-ui-dark placeholder-ui-dark caret-marker rounded-[8px] py-2 px-4 min-h-[200px]"
             placeholder='phrases (ex. "eagle, eagles", "apple, apples")'
             defaultValue={draftFilter.phrases?.join(', ')}
+            spellCheck="false"
           />
         </Panel>
         <div className="flex gap-2 mt-5">
