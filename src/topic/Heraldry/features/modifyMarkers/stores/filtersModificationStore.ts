@@ -15,9 +15,6 @@ type FiltersModificationStoreState = {
       exclude?: ComplexManualMarker[],
     }
   },
-  touchedByHashes: {
-    [imageHash: string]: string[],
-  },
 }
 
 export const useFilterModificationStore = create<FiltersModificationStoreState>()(
@@ -26,7 +23,6 @@ export const useFilterModificationStore = create<FiltersModificationStoreState>(
     () => ({
         animal: {},
         item: {},
-        touchedByHashes: {},
       } as FiltersModificationStoreState),
       { name: 'filtersModificationStore' },
     )
@@ -65,9 +61,6 @@ const getListModifier = (action: 'reset' | 'include' | 'exclude') => (unit: Coat
       newExclude = [...newExclude, ruleToAdd];
     }
 
-    const oldTouchedForHash = state.touchedByHashes[imageHashToChange] || [];
-    const newTouchedForHash = [...new Set([...oldTouchedForHash, item])];
-
     const newFilter = {
       include: newInclude,
       exclude: newExclude,
@@ -81,10 +74,6 @@ const getListModifier = (action: 'reset' | 'include' | 'exclude') => (unit: Coat
         ...state[markerType],
         [item]: newFilter,
       },
-      touchedByHashes: {
-        ...state.touchedByHashes,
-        [imageHashToChange]: newTouchedForHash,
-      }
     };
   });
 };
@@ -111,8 +100,6 @@ const getListForUnit = (action: 'include' | 'exclude') => (unit: CoatOfArmsMapDa
   ).map(
     ([item]) => item
   );
-
-  console.log(list);
 
   return list;
 }
