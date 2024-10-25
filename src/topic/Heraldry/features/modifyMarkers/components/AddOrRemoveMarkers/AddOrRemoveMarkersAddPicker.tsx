@@ -11,20 +11,17 @@ import ButtonText from '@/components/UI/ButtonText';
 
 import useQueryFiltersSeeds from '@/topic/Heraldry/features/modify/hooks/useQueryFiltersSeeds';
 
-
 type Props = {
   country: string,
   markerType: MarkerType,
 }
 
-const AddOrRemoveMarkersPicker = ({ country, markerType }: Props) => {
+const AddOrRemoveMarkersAddPicker = ({ country, markerType }: Props) => {
   const [pickedItem, setPickedItem] = useState('');
   const { t } = useTranslation();
 
   const {
     isLoading,
-    isError,
-    error,
     data,
   } = useQueryFiltersSeeds({ country });
 
@@ -55,7 +52,7 @@ const AddOrRemoveMarkersPicker = ({ country, markerType }: Props) => {
   return (
     <>
       <select
-        className="w-full bg-ui-dark rounded-full h-[24px] px-3 text-[12px]"
+        className="w-full bg-ui-dark rounded-[4px] h-[24px] px-3 text-[12px]"
         onChange={handleChange}
       >
         <option value="">Pick</option>
@@ -66,7 +63,7 @@ const AddOrRemoveMarkersPicker = ({ country, markerType }: Props) => {
           {t(`heraldry.${markerType}.${name}`)}
         </option>)}
       </select>
-      <ButtonText>
+      <ButtonText size="small">
         {markerType === 'animal' ? <IconAnimal animals={pickedItem ? [pickedItem] : []} /> : <IconCrown />}
         <span className="flex-shrink-0 lowercase whitespace-nowrap">+ {t(pickedItem ? `heraldry.${markerType}.${pickedItem}` : `heraldry.${markerType}.filterTitle`)}</span>
       </ButtonText>
@@ -74,7 +71,7 @@ const AddOrRemoveMarkersPicker = ({ country, markerType }: Props) => {
   );
 };
 
-export default AddOrRemoveMarkersPicker;
+export default AddOrRemoveMarkersAddPicker;
 
 /*
 

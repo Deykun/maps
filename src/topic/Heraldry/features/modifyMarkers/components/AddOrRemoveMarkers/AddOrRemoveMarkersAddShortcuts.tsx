@@ -19,7 +19,7 @@ type Props = {
   // unit: CoatOfArmsMapData,
 }
 
-const AddOrRemoveMarkersShortcuts = ({}) => {
+const AddOrRemoveMarkersSection = ({}) => {
   const { t } = useTranslation();
 
   // TODO: add logic to return list of last or most popular user action in this section
@@ -38,4 +38,4 @@ const AddOrRemoveMarkersShortcuts = ({}) => {
   );
 };
 
-export default AddOrRemoveMarkersShortcuts;
+export default AddOrRemoveMarkersSection;
