@@ -113,8 +113,6 @@ const HeraldryMapHTMLCanvas = ({ className, units, children, mapOffset, coatSize
   }, [getUnitsForXY]);
 
   const handleMapClick = useCallback((event: React.PointerEvent) => {
-    // alert(event.pointerType);
-
     let selected = hovered;
     if (event.pointerType === 'touch') {
       if (elementRef.current) {

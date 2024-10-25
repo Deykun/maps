@@ -614,6 +614,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -1650,6 +1655,7 @@
     "lion"
    ],
    "items": [
+    "tree",
     "flower",
     "rose"
    ]
@@ -2147,6 +2153,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -4543,6 +4554,7 @@
   },
   "markers": {
    "items": [
+    "tree",
     "flower"
    ]
   }
