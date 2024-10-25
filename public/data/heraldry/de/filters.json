@@ -3234,6 +3234,8 @@
         "festungstor",
         "festungsturm",
         "flankenmauern",
+        "glockenturm",
+        "glockentürmchen",
         "hauptturm",
         "kirchturm",
         "kirchturmdach",
@@ -3317,6 +3319,7 @@
         "blütes",
         "doppelrose",
         "gänseblümchen",
+        "blütenglocke",
         "lilie",
         "lilien",
         "lilienstab",
@@ -3578,6 +3581,79 @@
         "engel",
         "engelskopf",
         "erzengel"
+      ],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "pickaxe",
+      "phrases": [
+        "bergmannspickel",
+        "bergmannspickeln",
+        "gegenspickel",
+        "pickel",
+        "steinpickel",
+        "zweispitzpickel"
+      ],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "heart",
+      "phrases": [
+        "herz",
+        "herze",
+        "herzen"
+      ],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "shell",
+      "phrases": [
+        "jakobsmuschel",
+        "jakobusmuschel",
+        "muschel",
+        "muschelchen",
+        "muschelhorn",
+        "muscheln",
+        "pilgermuschel",
+        "pilgermuscheln",
+        "taufmuschel"
+      ],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "anchor",
+      "phrases": [
+        "anker",
+        "schiffsanker"
+      ],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "lighthouse",
+      "phrases": [
+        "leuchtturm",
+        "leuchtturms"
+      ],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "bell",
+      "phrases": [
+        "bauernglocke",
+        "glocke",
+        "glockengalgen",
+        "glockenstuhl",
+        "glockenturm",
+        "glockentürmchen",
+        "kirchenglocke",
+        "kirchenglocken",
+        "kuhglocke"
       ],
       "include": [],
       "exclude": []

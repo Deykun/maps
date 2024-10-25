@@ -104,7 +104,7 @@ const redrawItems = (redrawFrameHash: string, index: number, total: number) => {
 
     updateProcessingMap({ value: index + renderAtOnce, total });
 
-    setTimeout(() => redrawItems(redrawFrameHash, index + renderAtOnce, total), 0);
+    setTimeout(() => redrawItems(redrawFrameHash, index + renderAtOnce, total), 5);
     // setTimeout(() => redrawItems(redrawFrameHash, index + renderAtOnce, total), 300);
   }
 }

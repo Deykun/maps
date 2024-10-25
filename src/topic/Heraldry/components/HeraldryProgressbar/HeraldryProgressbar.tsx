@@ -28,6 +28,7 @@ const HeraldryProgressbar = () => {
         <span className="size-5 relative">
           {fitstTotal > 0 &&
             <IconLoaderWithProgress
+              key="progres-1"
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-5"
               lineClassName="stroke-marker"
               progress={(firstValue / fitstTotal)}
@@ -35,6 +36,7 @@ const HeraldryProgressbar = () => {
           }
           {secondTotal > 0 &&
             <IconLoaderWithProgress
+              key="progres-2"
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-50 size-5"
               lineClassName="stroke-ui-contrast"
               progress={(secondValue / secondTotal)}
@@ -43,6 +45,7 @@ const HeraldryProgressbar = () => {
           }
           {thirdTotal > 0 &&
             <IconLoaderWithProgress
+              key="progres-3"
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-[1.5] size-5"
               lineClassName="stroke-ui-contrast"
               progress={(thirdValue / thirdTotal)}

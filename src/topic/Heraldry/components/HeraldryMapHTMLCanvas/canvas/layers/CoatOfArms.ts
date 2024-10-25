@@ -177,17 +177,21 @@ export class CoatOfArms {
     // const scaledMapPadding = mapPadding * window.devicePixelRatio;
     const scaledMapPadding = 0;
 
+    const clicableWidth = Math.max(6, this.width);
+    const clicableHeight = Math.max(6, this.height);
+
     // Is rendered simillary to translate(-50%, -50%);
     const object = {
-      x: objectRaw.x + (this.width / 2) + scaledMapPadding,
-      y: objectRaw.y + (this.height / 2) + scaledMapPadding,
+      x: objectRaw.x + (clicableWidth/ 2) + scaledMapPadding,
+      y: objectRaw.y + (clicableHeight / 2) + scaledMapPadding,
     };
 
-    if (object.x > this.x + this.width || object.x < this.x || object.y > this.y + this.height || object.y < this.y) {
+    if (object.x > this.x + clicableWidth || object.x < this.x || object.y > this.y + clicableHeight || object.y < this.y) {
       return false;
     }
 
     // TODO: add a check for elements to detect transparency
+    // comment: I could pull it off, but having quicker hover counter is better that having super precise one
     // const xInImage = object.x - this.x;
     // const yInImage = object.y - this.y;
 
