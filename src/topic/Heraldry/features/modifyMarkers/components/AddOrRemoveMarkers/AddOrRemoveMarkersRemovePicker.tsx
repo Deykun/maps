@@ -42,17 +42,19 @@ const AddOrRemoveMarkersRemovePicker = ({ unit }: Props) => {
         <IconEraser className="size-5 fill-white mr-auto" />
         {animals.map((animal) => 
           <ButtonText
+            className="!bg-[#601212]"
             size="small"
           >
-            <IconAnimal className="!fill-[#ee5454]" animals={[animal]} />
+            <IconAnimal animals={[animal]} />
             <span>- {t(`heraldry.animal.${animal}`)}</span>
           </ButtonText>
         )}
         {items.map((item) => 
           <ButtonText
+            className="!bg-[#601212]"
             size="small"
           >
-            <IconCrown className="!fill-[#ee5454]" />
+            <IconCrown />
             <span>- {t(`heraldry.item.${item}`)}</span>
           </ButtonText>
         )}

@@ -8,13 +8,14 @@ import IconInputCheckFull from '@/components/Icons/IconInputCheckFull';
 import ButtonIcon from '@/components/UI/ButtonIcon';
 
 type Props = {
+  wrapperClassName?: string,
   className?: string,
   unit: CoatOfArmsMapData,
   setSelectedPaneUnits: (units: CoatOfArmsMapData[]) => void,
   selectedPaneUnits: CoatOfArmsMapData[],
 }
 
-const UnitsPaneItemListSelectCheckbox = ({ className, unit, setSelectedPaneUnits, selectedPaneUnits }: Props) => {
+const UnitsPaneSelectCheckbox = ({ wrapperClassName, className, unit, setSelectedPaneUnits, selectedPaneUnits }: Props) => {
   const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
 
   const isSelected = selectedPaneUnits.some(({ id }) => id === unit.id);
@@ -37,7 +38,8 @@ const UnitsPaneItemListSelectCheckbox = ({ className, unit, setSelectedPaneUnits
 
   return (
     <ButtonIcon
-      wrapperClassName={className}
+      wrapperClassName={wrapperClassName}
+      className={className}
       size="small"
       onClick={handleToggle}
       isActive={isSelected}
@@ -49,4 +51,4 @@ const UnitsPaneItemListSelectCheckbox = ({ className, unit, setSelectedPaneUnits
   );
 };
 
-export default UnitsPaneItemListSelectCheckbox;
+export default UnitsPaneSelectCheckbox;

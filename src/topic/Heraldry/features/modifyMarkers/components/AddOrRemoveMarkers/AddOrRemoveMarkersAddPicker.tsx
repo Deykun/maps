@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { MarkerType } from '@/topic/Heraldry/types';
+import { CoatOfArmsMapData, MarkerType } from '@/topic/Heraldry/types';
 
 import IconLoader from '@/components/Icons/IconLoader';
 import IconAnimal from '@/components/Icons/IconAnimal';
@@ -11,19 +11,21 @@ import ButtonText from '@/components/UI/ButtonText';
 
 import useQueryFiltersSeeds from '@/topic/Heraldry/features/modify/hooks/useQueryFiltersSeeds';
 
+import { includeUnitInMarker, excludeUnitFromMarker, removeFromIncludeAndExcludeInMarker } from '@/topic/Heraldry/features/modifyMarkers/stores/filtersModificationStore';
+
 type Props = {
-  country: string,
+  unit: CoatOfArmsMapData,
   markerType: MarkerType,
 }
 
-const AddOrRemoveMarkersAddPicker = ({ country, markerType }: Props) => {
+const AddOrRemoveMarkersAddPicker = ({ unit, markerType }: Props) => {
   const [pickedItem, setPickedItem] = useState('');
   const { t } = useTranslation();
 
   const {
     isLoading,
     data,
-  } = useQueryFiltersSeeds({ country });
+  } = useQueryFiltersSeeds({ country: unit.lang });
 
   const handleChange = useCallback((event: React.ChangeEvent<HTMLSelectElement>) => {
     const value = event.target.value;
@@ -31,6 +33,12 @@ const AddOrRemoveMarkersAddPicker = ({ country, markerType }: Props) => {
     setPickedItem(value);
 
   }, [data]);
+
+  const handleApply = () => {
+    if (pickedItem) {
+      includeUnitInMarker(unit, markerType, pickedItem);
+    }
+  }
 
   if (isLoading) {
     return (
@@ -63,7 +71,11 @@ const AddOrRemoveMarkersAddPicker = ({ country, markerType }: Props) => {
           {t(`heraldry.${markerType}.${name}`)}
         </option>)}
       </select>
-      <ButtonText size="small">
+      <ButtonText
+        size="small"
+        isDisabled={!pickedItem}
+        onClick={handleApply}
+      >
         {markerType === 'animal' ? <IconAnimal animals={pickedItem ? [pickedItem] : []} /> : <IconCrown />}
         <span className="flex-shrink-0 lowercase whitespace-nowrap">+ {t(pickedItem ? `heraldry.${markerType}.${pickedItem}` : `heraldry.${markerType}.filterTitle`)}</span>
       </ButtonText>
@@ -72,38 +84,3 @@ const AddOrRemoveMarkersAddPicker = ({ country, markerType }: Props) => {
 };
 
 export default AddOrRemoveMarkersAddPicker;
-
-/*
-
-<select
-disabled={isLoading}
-onChange={handleClick}
-className="block w-full bg-ui-contrast text-ui-dark placeholder-ui-dark caret-marker rounded-[8px] py-2 px-4"
->
-<option>Pick filter</option>
-{data && <>
-  {data.animals.sort((a, b) => 
-    `${t(`heraldry.animal.${a.name}`)}`.localeCompare(
-      `${t(`heraldry.animal.${b.name}`)}`
-  )).map(({ name }, index) => (
-    <option
-      key={name}
-      value={`animal-${index}`}
-    >
-      {t('heraldry.animal.filterTitle')}: {t(`heraldry.animal.${name}`)}
-    </option>
-  ))}
-  {data.items.sort((a, b) => 
-    `${t(`heraldry.item.${a.name}`)}`.localeCompare(
-      `${t(`heraldry.item.${b.name}`)}`
-  )).map(({ name }, index) => (
-    <option
-      key={name}
-      value={`item-${index}`}
-    >
-      {t('heraldry.item.filterTitle')}: {t(`heraldry.item.${name}`)}
-    </option>
-  ))}
-</>}
-</select>
-*/

@@ -41,18 +41,13 @@ const AddOrRemoveMarkers = ({ unit }: Props) => {
 
   const toggleMenu = (name: MarkerType) => () => setActiveMenu((v) => v === name ? '' : name);
 
-  // if (!isFiltersDevModeActive) {
-  //   return null;
-  // }
   if (!isFiltersDevModeActive) {
     return null;
   }
 
-  // const items = mergeMarkersForUnit(unit, )
-
   return (
     <>
-      <Panel className="ui-panel--rounded-l ui-panel--rounded-r bg-black">
+      <Panel className="ui-panel--rounded-l ui-panel--rounded-r bg-black mt-4">
         <div className="flex gap-2 items-center">
           <IconFlask className="size-5 fill-white mr-auto" />
           <ButtonText
@@ -77,7 +72,7 @@ const AddOrRemoveMarkers = ({ unit }: Props) => {
           'border-t mt-1 pt-2 empty:hidden', {
             'flex-wrap': !activeMenu
         })}>
-          {activeMenu ? <AddOrRemoveMarkersAddPicker key={activeMenu} country={unit.lang} markerType={activeMenu} /> : <AddOrRemoveMarkersAddRemoveShortcuts />}
+          {activeMenu ? <AddOrRemoveMarkersAddPicker key={activeMenu} unit={unit} markerType={activeMenu} /> : <AddOrRemoveMarkersAddRemoveShortcuts />}
         </div>
       </Panel>
       <AddOrRemoveMarkersRemovePicker unit={unit} />

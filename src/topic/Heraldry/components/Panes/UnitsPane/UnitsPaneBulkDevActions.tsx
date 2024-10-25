@@ -19,7 +19,7 @@ type Props = {
   selectedPaneUnits: CoatOfArmsMapData[],
 }
 
-const UnitsPaneItemListSelectCheckbox = ({ setSelectedPaneUnits, selectedPaneUnits }: Props) => {
+const UnitsPaneSelectCheckbox = ({ setSelectedPaneUnits, selectedPaneUnits }: Props) => {
   const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
   const filterExclude = useFiltersDevelopmentStore((state) => state.filter.exclude || []);
   const filterInclude = useFiltersDevelopmentStore((state) => state.filter.include || []);
@@ -74,4 +74,4 @@ const UnitsPaneItemListSelectCheckbox = ({ setSelectedPaneUnits, selectedPaneUni
   );
 };
 
-export default UnitsPaneItemListSelectCheckbox;
+export default UnitsPaneSelectCheckbox;
