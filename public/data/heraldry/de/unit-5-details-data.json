@@ -1,6 +1,48 @@
 [
  {
-  "id": "city-13300"
+  "id": "city-13300",
+  "colors": {
+   "hexPalette": [
+    "#de4426",
+    "#717878",
+    "#17181f",
+    "#e7e7e7"
+   ],
+   "byNames": {
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -4.599054368237475,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -143.92409428196868,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -139.2967509582288,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -41.78899744078434,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
  },
  {
   "id": "gemeinde-13301",
@@ -2438,7 +2480,7 @@
     "#ffdd00",
     "#ed1d26",
     "#0166b3",
-    "#9a9a9a",
+    "#a9a9a9",
     "#ffffff",
     "#000000"
    ],
@@ -2932,28 +2974,29 @@
   "id": "city-13349",
   "colors": {
    "hexPalette": [
-    "#f5df07",
-    "#264898",
-    "#d8131d",
-    "#130000",
+    "#f4df10",
+    "#0e49a0",
+    "#da121d",
+    "#120400",
+    "#a2a2a2",
     "#ffffff"
    ],
    "byNames": {
     "gold": [
      {
-      "distanceToThreshold": 15.750912420912584,
-      "matcherColor": "#ffff00"
+      "distanceToThreshold": 14.767268488405435,
+      "matcherColor": "#e6c633"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 34.92012759203109,
-      "matcherColor": "#2e3192"
+      "distanceToThreshold": 17.940518310373818,
+      "matcherColor": "#243b7f"
      }
     ],
     "red": [
      {
-      "distanceToThreshold": 27.817627497401006,
+      "distanceToThreshold": 29.66114820538712,
       "matcherColor": "#f00"
      }
     ],
@@ -2961,6 +3004,12 @@
      {
       "distanceToThreshold": -1,
       "matcherColor": "#000"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
      }
     ],
     "white": [
@@ -2973,25 +3022,25 @@
    "byNamesRejected": {
     "red": [
      {
-      "distanceToThreshold": -194.54872063078346,
+      "distanceToThreshold": -218.34543737084368,
       "matcherColor": "#f00"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": -148.54016399725018,
+      "distanceToThreshold": -150.3188056261256,
       "matcherColor": "#2e3192"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": -146.56077443227989,
+      "distanceToThreshold": -148.77604569973096,
       "matcherColor": "#006f00"
      }
     ],
     "gold": [
      {
-      "distanceToThreshold": -84.07289821475794,
+      "distanceToThreshold": -85.41664278891878,
       "matcherColor": "#b68f5e"
      }
     ]
@@ -3253,28 +3302,29 @@
   "id": "city-13354",
   "colors": {
    "hexPalette": [
-    "#f5df07",
-    "#264898",
-    "#d8131d",
-    "#130000",
+    "#f4df10",
+    "#0e49a0",
+    "#da121d",
+    "#120400",
+    "#a2a2a2",
     "#ffffff"
    ],
    "byNames": {
     "gold": [
      {
-      "distanceToThreshold": 15.750912420912584,
-      "matcherColor": "#ffff00"
+      "distanceToThreshold": 14.767268488405435,
+      "matcherColor": "#e6c633"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 34.92012759203109,
-      "matcherColor": "#2e3192"
+      "distanceToThreshold": 17.940518310373818,
+      "matcherColor": "#243b7f"
      }
     ],
     "red": [
      {
-      "distanceToThreshold": 27.817627497401006,
+      "distanceToThreshold": 29.66114820538712,
       "matcherColor": "#f00"
      }
     ],
@@ -3282,6 +3332,12 @@
      {
       "distanceToThreshold": -1,
       "matcherColor": "#000"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
      }
     ],
     "white": [
@@ -3294,25 +3350,25 @@
    "byNamesRejected": {
     "red": [
      {
-      "distanceToThreshold": -194.54872063078346,
+      "distanceToThreshold": -218.34543737084368,
       "matcherColor": "#f00"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": -148.54016399725018,
+      "distanceToThreshold": -150.3188056261256,
       "matcherColor": "#2e3192"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": -146.56077443227989,
+      "distanceToThreshold": -148.77604569973096,
       "matcherColor": "#006f00"
      }
     ],
     "gold": [
      {
-      "distanceToThreshold": -84.07289821475794,
+      "distanceToThreshold": -85.41664278891878,
       "matcherColor": "#b68f5e"
      }
     ]

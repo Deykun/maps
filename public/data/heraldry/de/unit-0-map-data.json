@@ -1513,6 +1513,34 @@
  },
  {
   "lang": "de",
+  "index": 55,
+  "id": "gemeinde-55",
+  "title": "Westerheim (Württemberg)",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Alb-Donau-Kreis",
+  "type": [
+   "gemeinde"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen im Alb-Donau-Kreis | Gemeindewappen im Alb-Donau-Kreis",
+   "coordinates": {
+    "lat": 48.515,
+    "lon": 9.62361111
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/2f76306c-westerheim-wurttemberg-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/2f76306c-westerheim-wurttemberg-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 56,
   "id": "gemeinde-56",
   "title": "Westerstetten",
@@ -70005,34 +70033,6 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/unit/e11e724-unterroth-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 55,
-  "id": "gemeinde-55",
-  "title": "Westerheim (Württemberg)",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Alb-Donau-Kreis",
-  "type": [
-   "gemeinde"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Alb-Donau-Kreis | Gemeindewappen im Alb-Donau-Kreis",
-   "coordinates": {
-    "lat": 48.515,
-    "lon": 9.62361111
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/2f76306c-westerheim-wurttemberg-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/2f76306c-westerheim-wurttemberg-320w.webp"
    }
   ]
  }

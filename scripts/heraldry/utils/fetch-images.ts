@@ -24,6 +24,7 @@ export const download = async (url: string, fileName: string, format: string, pa
       // https://upload.wikimedia.org/wikipedia/commons/a/ae/Wappen_R%C3%B6vershagen.svg - has pt instead of px, but it is not responsive!
       // https://upload.wikimedia.org/wikipedia/commons/1/1e/Wappen_Untermarchtal.svg - has mm
       // https://upload.wikimedia.org/wikipedia/commons/6/67/Wappen_Westerheim.svg
+      // More about it: https://github.com/Deykun/maps/pull/104
       console.log(chalk.yellow(`  - SVG with not web units detected (pt, mm) - fix applied:`));
       console.log(chalk.yellow(`    ${url}`));
       console.log('');
@@ -129,7 +130,7 @@ export const fetchImages = async ({
     return timeStatus;
   }
 
-  const limit = pLimit(4);
+  const limit = pLimit(1);
 
   const promises = administrativeDivisions.map((division: AdministrativeUnit , i) => limit(() => new Promise((resolve) => {
     const fetchAndProcess = async () => {
