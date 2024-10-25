@@ -76,41 +76,59 @@ const HeraldryMapHTMLCanvas = ({ className, units, children, mapOffset, coatSize
     elementRef,
   } = useHeraldryCursorPosition();
 
-  useEffectChange(() => {
-    /* 
+  const getUnitsForXY = useCallback(({ x, y }: { x: number, y: number}) => {
+        /* 
       We have a 1200x1200 canvas that is scaled down to 100% x 100% (to ensure the canvas image looks good when the desktop is scaled).
       
       This code transforms the clicked point (x and y) to the corresponding point on the canvas.
     */
 
-    let canvasX = position.x;
-    let canvasY = position.y;
+      let canvasX = x;
+      let canvasY = y;
+  
+      const boxSize = canvasRef.current?.getClientRects()[0];
+  
+      const shouldScalePosition = typeof boxSize?.width === 'number'
+        && typeof canvasRef.current?.width=== 'number'
+        && Math.round(boxSize.width) !== Math.round(canvasRef.current.width);
+  
+      if (shouldScalePosition) {
+        canvasX = (canvasX / boxSize.width) * (canvasRef?.current?.width || 1);
+        canvasY = (canvasY / boxSize.height) * (canvasRef?.current?.height || 1);
+      }
+  
+      const selectedIds = getCoatOfArmsForXandY({
+        x: canvasX,
+        y: canvasY,
+      });
+  
+      const selectedUnits = units.filter(({ id }) => selectedIds.includes(id));
 
-    const boxSize = canvasRef.current?.getClientRects()[0];
+      return selectedUnits.reverse();
+  }, [position, canvasRef.current])
 
-    const shouldScalePosition = typeof boxSize?.width === 'number'
-      && typeof canvasRef.current?.width=== 'number'
-      && Math.round(boxSize.width) !== Math.round(canvasRef.current.width);
+  useEffectChange(() => {
+    const newHovered = getUnitsForXY(position);
+    setHovered(newHovered);
+  }, [getUnitsForXY]);
 
-    if (shouldScalePosition) {
-      canvasX = (canvasX / boxSize.width) * (canvasRef?.current?.width || 1);
-      canvasY = (canvasY / boxSize.height) * (canvasRef?.current?.height || 1);
+  const handleMapClick = useCallback((event: React.PointerEvent) => {
+    // alert(event.pointerType);
+
+    let selected = hovered;
+    if (event.pointerType === 'touch') {
+      if (elementRef.current) {
+        const rect = elementRef.current.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+        
+        selected = getUnitsForXY({ x, y });
+      }
     }
 
-    const selectedIds = getCoatOfArmsForXandY({
-      x: canvasX,
-      y: canvasY,
-    });
-
-    const selectedUnits = units.filter(({ id }) => selectedIds.includes(id));
-
-    setHovered(selectedUnits.reverse());
-  }, [position]);
-
-  const handleMapClick = useCallback((event: React.MouseEvent) => {
-    if (hovered.length > 0) {
-      if (hovered.length <= maxSelectedWithClick) {
-        const phrase = hovered.map(({ id }) => `id:${id}`).join(', ');
+    if (selected.length > 0) {
+      if (selected.length <= maxSelectedWithClick) {
+        const phrase = selected.map(({ id }) => `id:${id}`).join(', ');
 
         setListPhrase(phrase);
       } else {
@@ -125,11 +143,9 @@ const HeraldryMapHTMLCanvas = ({ className, units, children, mapOffset, coatSize
         setLastClick({
           x,
           y,
-          hovered: hovered,
+          hovered: selected,
         });
       }
-
-
     } else {
       setLastClick(undefined);
     }
@@ -174,7 +190,7 @@ const HeraldryMapHTMLCanvas = ({ className, units, children, mapOffset, coatSize
       <div
         ref={mergeRefs(wrapperRef, elementRef)}
         className={clsx('heraldry-map-canvas mx-auto cursor-none', className)}
-        onClick={handleMapClick}
+        onPointerUp={handleMapClick}
         style={{ padding: mapPadding }}
       >
         {children}
