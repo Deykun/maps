@@ -15,7 +15,33 @@ import { getImageFileName, getCompressedImageSrc } from './helpers/images';
 export const download = async (url: string, fileName: string, format: string, path: string, lang: string) => {
   const response = await fetch(url);
 
-  const blob = await response.blob();
+  let blob: Blob | undefined = undefined;
+  if (format === 'svg') {
+    const text = await response.text();
+
+    const isBroken = text.match(/width="([0-9.]+)(pt|mm)"/) || text.match(/height="([0-9.]+)(pt|mm)"/)
+    if (isBroken) {
+      // https://upload.wikimedia.org/wikipedia/commons/a/ae/Wappen_R%C3%B6vershagen.svg - has pt instead of px, but it is not responsive!
+      // https://upload.wikimedia.org/wikipedia/commons/1/1e/Wappen_Untermarchtal.svg - has mm
+      // https://upload.wikimedia.org/wikipedia/commons/6/67/Wappen_Westerheim.svg
+      console.log(chalk.yellow(`  - SVG with not web units detected (pt, mm) - fix applied:`));
+      console.log(chalk.yellow(`    ${url}`));
+      console.log('');
+      console.log('');
+      console.log('');
+
+      blob = new Blob([text.replace(/width="([0-9.]+)(pt|mm)"/, '').replace(/height="([0-9.]+)(pt|mm)"/, '')], {
+        type: 'image/svg+xml',
+      });
+    } else {
+      blob = new Blob([text], {
+        type: 'image/svg+xml',
+      });
+    }
+  } else {
+    blob = await response.blob();
+  }
+
   const bos = Buffer.from(await blob.arrayBuffer())
 
   const trimOptions = {
@@ -47,6 +73,13 @@ export const download = async (url: string, fileName: string, format: string, pa
     ].join(' ')));
     console.log(error);
   });
+
+  
+  if (fileName.includes('1f9f1589')) {
+    console.log({
+      url,
+    })
+  }
 };
 
 const start = (new Date()).getTime();
