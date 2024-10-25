@@ -5,8 +5,6 @@ import {
   getIsMatchingManualMarker,
 } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
 
-import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
-
 import IconCheck from '@/components/Icons/IconCheck';
 import IconInputCheckFull from '@/components/Icons/IconInputCheckFull';
 import IconMarkerMinus from '@/components/Icons/IconMarkerMinus';
@@ -14,12 +12,10 @@ import IconMarkerPlus from '@/components/Icons/IconMarkerPlus';
 
 import ButtonIcon from '@/components/UI/ButtonIcon';
 
-type Props = {
-  setSelectedPaneUnits: (units: CoatOfArmsMapData[]) => void,
-  selectedPaneUnits: CoatOfArmsMapData[],
-}
+import useUnitsPaneStore, { setSelected } from '@/topic/Heraldry/stores/unitsPaneStore';
 
-const UnitsPaneSelectCheckbox = ({ setSelectedPaneUnits, selectedPaneUnits }: Props) => {
+const UnitsPaneBulkDevActions = () => {
+  const selected = useUnitsPaneStore(state => state.selected);
   const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
   const filterExclude = useFiltersDevelopmentStore((state) => state.filter.exclude || []);
   const filterInclude = useFiltersDevelopmentStore((state) => state.filter.include || []);
@@ -28,29 +24,29 @@ const UnitsPaneSelectCheckbox = ({ setSelectedPaneUnits, selectedPaneUnits }: Pr
     return null;
   }
 
-  const hasSelected = selectedPaneUnits.length > 0;
+  const hasSelected = selected.length > 0;
   const hasExclude = filterExclude.length > 0;
   const hasInclude = filterInclude.length > 0;
 
-  const areAllExcludeActive = hasSelected && hasExclude && selectedPaneUnits.every((unit) => getIsMatchingManualMarker(filterExclude, unit));
-  const areAllIncludeActive = hasSelected && hasInclude && selectedPaneUnits.every((unit) => getIsMatchingManualMarker(filterInclude, unit));
+  const areAllExcludeActive = hasSelected && hasExclude && selected.every((unit) => getIsMatchingManualMarker(filterExclude, unit));
+  const areAllIncludeActive = hasSelected && hasInclude && selected.every((unit) => getIsMatchingManualMarker(filterInclude, unit));
 
   return (
     <>
       <span className="border-l--panel"></span>
       <ButtonIcon
         size="small"
-        onClick={() => setSelectedPaneUnits([])}
+        onClick={() => setSelected([])}
         isDisabled={!hasSelected}
         label={`Unselect`}
         labelPosition="bottomRight"
       >
         <IconInputCheckFull />
-        {selectedPaneUnits.length > 0 && <span className="ui-button-icon-marker ui-button-icon-marker--small ui-button-icon-marker--on-soft">{selectedPaneUnits.length}</span>}
+        {selected.length > 0 && <span className="ui-button-icon-marker ui-button-icon-marker--small ui-button-icon-marker--on-soft">{selected.length}</span>}
       </ButtonIcon>
       <ButtonIcon
         size="small"
-        onClick={() => bulkAddToFilterExclude(selectedPaneUnits)}
+        onClick={() => bulkAddToFilterExclude(selected)}
         isActive={areAllExcludeActive}
         isDisabled={!hasSelected}
         label={`Exclude in the custom filter`}
@@ -61,7 +57,7 @@ const UnitsPaneSelectCheckbox = ({ setSelectedPaneUnits, selectedPaneUnits }: Pr
       </ButtonIcon>
       <ButtonIcon
         size="small"
-        onClick={() => bulkAddToFilterInclude(selectedPaneUnits)}
+        onClick={() => bulkAddToFilterInclude(selected)}
         isActive={areAllIncludeActive}
         isDisabled={!hasSelected}
         label={`Include in the custom filter`}
@@ -74,4 +70,4 @@ const UnitsPaneSelectCheckbox = ({ setSelectedPaneUnits, selectedPaneUnits }: Pr
   );
 };
 
-export default UnitsPaneSelectCheckbox;
+export default UnitsPaneBulkDevActions;

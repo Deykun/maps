@@ -19,29 +19,28 @@ import IconUndo from '@/components/Icons/IconUndo';
 import Panel from '@/components/UI/Panel';
 import ButtonText from '@/components/UI/ButtonText';
 
+import useUnitsPaneStore, { setDetailsUnit } from '@/topic/Heraldry/stores/unitsPaneStore';
+
 import AddOrRemoveMarkers from '@/topic/Heraldry/features/modifyMarkers/components/AddOrRemoveMarkers/AddOrRemoveMarkers'
 
 import UnitsPaneSelectCheckbox from './UnitsPaneSelectCheckbox';
 
 import UnitsPaneUnitColors from './UnitsPaneUnitColors';
 import UnitsPaneUnitDescription from './UnitsPaneUnitDescription';
-import UnitsPaneUnitDevActions from './UnitsPaneUnitDevActions';
 import UnitsPaneUnitMarkers from './UnitsPaneUnitMarkers';
 
 
-type Props = {
-  className?: string,
-  unit: CoatOfArmsMapData,
-  setDetailsUnit: (unit: CoatOfArmsMapData | undefined) => void,
-  setSelectedPaneUnits: (units: CoatOfArmsMapData[]) => void,
-  selectedPaneUnits: CoatOfArmsMapData[],
-}
-
-const UnitsPaneSidebarDetailsContent = ( { unit, setDetailsUnit, setSelectedPaneUnits, selectedPaneUnits }: Props) => {
+const UnitsPaneSidebarDetailsContent = () => {
   const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
-  const { title, url, imagesList, place } = unit;
+  const unit = useUnitsPaneStore(state => state.details);
   
   const { t } = useTranslation();
+
+  if (!unit) {
+    return null;
+  }
+
+  const { title, url, imagesList, place } = unit;
 
   return (
     <>
@@ -56,8 +55,6 @@ const UnitsPaneSidebarDetailsContent = ( { unit, setDetailsUnit, setSelectedPane
           wrapperClassName="ml-auto"
           className="[&_svg]:!fill-ui !bg-transparent"
           unit={unit}
-          selectedPaneUnits={selectedPaneUnits}
-          setSelectedPaneUnits={setSelectedPaneUnits}
         />
         <span className="text-ui-dark-contrast text-[10px] text-right pr-2">
           id: <span className="text-white">{unit.id}</span>    
@@ -121,7 +118,6 @@ const UnitsPaneSidebarDetailsContent = ( { unit, setDetailsUnit, setSelectedPane
       </Panel>
       <UnitsPaneUnitMarkers unit={unit} />
       <AddOrRemoveMarkers unit={unit} />
-      {/* <UnitsPaneUnitDevActions unit={unit} /> */}
       <UnitsPaneUnitDescription id={unit.id} country={unit.lang} mergedIds={unit.mergedIds} />
     </>
   );

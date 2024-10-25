@@ -4,9 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { getSpriteDataFromUnit } from '@/topic/Heraldry/utils/getSpriteDataFromUnit';
 import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 
-import {
-  showUnitOnMap,
-} from '@/topic/Heraldry/stores/cursorStore';
+import { setDetailsUnit } from '@/topic/Heraldry/stores/unitsPaneStore';
+import { showUnitOnMap } from '@/topic/Heraldry/stores/cursorStore';
 
 import ButtonIcon from '@/components/UI/ButtonIcon';
 
@@ -18,12 +17,9 @@ import UnitsPaneSelectCheckbox from './UnitsPaneSelectCheckbox';
 type Props = {
   className?: string,
   unit: CoatOfArmsMapData,
-  setDetailsUnit: (unit: CoatOfArmsMapData) => void,
-  setSelectedPaneUnits: (units: CoatOfArmsMapData[]) => void,
-  selectedPaneUnits: CoatOfArmsMapData[],
 }
 
-const UnitsPaneItemList = ( { className, unit, setDetailsUnit, setSelectedPaneUnits, selectedPaneUnits }: Props) => {
+const UnitsPaneItemList = ( { className, unit }: Props) => {
   const { t } = useTranslation();
 
   const imagePath = (unit.imagesList || []).find(({ width }) => width === '80w')?.path;
@@ -70,8 +66,6 @@ const UnitsPaneItemList = ( { className, unit, setDetailsUnit, setSelectedPaneUn
         <UnitsPaneSelectCheckbox
           wrapperClassName="mt-auto"
           unit={unit}
-          selectedPaneUnits={selectedPaneUnits}
-          setSelectedPaneUnits={setSelectedPaneUnits}
         />
       </div>
     </li>

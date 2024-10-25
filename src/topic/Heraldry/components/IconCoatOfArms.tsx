@@ -10,10 +10,10 @@ import './IconCoatOfArms.scss';
 
 type Props = {
   className?: string,
-  units: CoatOfArmsMapData[],
+  units?: CoatOfArmsMapData[],
 }
 
-const IconCoatOfArms = ({ className, units }: Props) => {
+const IconCoatOfArms = ({ className, units = [] }: Props) => {
   if (units.length !== 1) {
     return <IconShieldCheckers className={className} />
   }

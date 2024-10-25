@@ -3,14 +3,15 @@ import { getShortTitle } from '@/topic/Heraldry/utils/getShortTitle';
 import { getSpriteDataFromUnit } from '@/topic/Heraldry/utils/getSpriteDataFromUnit';
 import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 
+import { setDetailsUnit } from '@/topic/Heraldry/stores/unitsPaneStore';
+
 type Props = {
   className?: string,
   unit: CoatOfArmsMapData,
-  setDetailsUnit: (unit: CoatOfArmsMapData) => void,
   labelPosition?: 'bottomLeft' | 'bottomRight'
 }
 
-const UnitsPaneItemGrid = ( { className, unit, setDetailsUnit, labelPosition = 'bottomRight' }: Props) => {
+const UnitsPaneItemGrid = ( { className, unit, labelPosition = 'bottomRight' }: Props) => {
   const imagePath = (unit.imagesList || []).find(({ width }) => width === '80w')?.path;
 
   const {

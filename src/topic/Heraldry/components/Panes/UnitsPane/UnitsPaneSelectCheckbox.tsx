@@ -7,41 +7,30 @@ import IconInputCheckFull from '@/components/Icons/IconInputCheckFull';
 
 import ButtonIcon from '@/components/UI/ButtonIcon';
 
+import useUnitsPaneStore, { toggleSelected } from '@/topic/Heraldry/stores/unitsPaneStore';
+
 type Props = {
   wrapperClassName?: string,
   className?: string,
   unit: CoatOfArmsMapData,
-  setSelectedPaneUnits: (units: CoatOfArmsMapData[]) => void,
-  selectedPaneUnits: CoatOfArmsMapData[],
 }
 
-const UnitsPaneSelectCheckbox = ({ wrapperClassName, className, unit, setSelectedPaneUnits, selectedPaneUnits }: Props) => {
+const UnitsPaneSelectCheckbox = ({ wrapperClassName, className, unit }: Props) => {
   const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
-
-  const isSelected = selectedPaneUnits.some(({ id }) => id === unit.id);
-
-  const handleToggle = () => {
-    if (isSelected) {
-      setSelectedPaneUnits(selectedPaneUnits.filter(({ id }) => id !== unit.id));
-
-      return;
-    }
-
-     setSelectedPaneUnits([...selectedPaneUnits, unit])
-  }
+  const selected = useUnitsPaneStore(state => state.selected);
+  const isSelected = selected.some(({ id }) => id === unit.id);
 
   // Bull actions are only available in dev mode
   if (!isFiltersDevModeActive) {
     return null;
   }
 
-
   return (
     <ButtonIcon
       wrapperClassName={wrapperClassName}
       className={className}
       size="small"
-      onClick={handleToggle}
+      onClick={() => toggleSelected(unit)}
       isActive={isSelected}
       label={isSelected ? 'Unselect' : 'Select'}
       labelPosition="left"

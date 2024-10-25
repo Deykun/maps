@@ -7,9 +7,8 @@ import { isLanguageSupported } from '@/utils/lang';
 
 import { LOCAL_STORAGE } from '@/constants';
 
-import {
-  useFiltersDevelopmentStore,
-} from '@/topic/Heraldry/stores/filtersDevelopmentStore';
+import { setUnitsPaneSearchPhrase } from '@/topic/Heraldry/stores/unitsPaneStore';
+import { useFiltersDevelopmentStore } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
 
 import { MapsSearchParams, getSearchParamFromFilters } from '@/topic/Heraldry/utils/getSearchParams'
 import { CoatOfArmsMapData, MapOffset, CoatOfArmsDetailsData } from '@/topic/Heraldry/types';
@@ -72,7 +71,6 @@ const HeraldryMapContainerWithUI = ({
 }: Props) => {
     const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
     const [shouldHintLang, setShouldHintLang] = useState(false);
-    const [listPhrase, setListPhrase] = useState('');
     const [filterOperator, setFilterOperator] = useState<'and' | 'or'>(initialFilters.filterOperator || 'and');
     const [shouldReverseFilters, setShouldReverseFilters] = useState(initialFilters.shouldReverseFilters || false);
     const [zoomLevel, setZoomLevel] = useState(1);
@@ -128,7 +126,7 @@ const HeraldryMapContainerWithUI = ({
         itemFilters,
       });
 
-      setListPhrase('');
+      setUnitsPaneSearchPhrase('');
 
       const searchParams = getSearchParamFromFilters({
         filterOperator, shouldReverseFilters, shouldIgnoreFormer, typeFilters: typeFiltersToPass, colorFilters, animalFilters, itemFilters,
@@ -173,7 +171,6 @@ const HeraldryMapContainerWithUI = ({
               >
                 <HeraldryMapHTMLCanvas
                   units={unitsForMap}
-                  setListPhrase={setListPhrase}
                   mapOffset={mapOffset}
                   coatSize={Math.round(((coatSize + 1) / 11) * 80)}
                 >
@@ -217,8 +214,6 @@ const HeraldryMapContainerWithUI = ({
             <Space side="right" />
             <UnitsPane
               units={units}
-              phrase={listPhrase}
-              shouldShowCount={listPhrase.length > 0}
               setShouldFetchDetails={setShouldFetchDetails}
             />
             <Space side="right" />
