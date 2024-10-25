@@ -68,29 +68,18 @@ const getListModifier = (action: 'reset' | 'include' | 'exclude') => (unit: Coat
     const oldTouchedForHash = state.touchedByHashes[imageHashToChange] || [];
     const newTouchedForHash = [...new Set([...oldTouchedForHash, item])];
 
-    console.log( {
-      ...state,
-      [markerType]: {
-        ...state[markerType],
-        [item]: {
-          include: newInclude,
-          exclude: newExclude,
-        }
-      },
-      touchedByHashes: {
-        ...state.touchedByHashes,
-        [imageHashToChange]: newTouchedForHash,
-      }
-    });
+    const newFilter = {
+      include: newInclude,
+      exclude: newExclude,
+    };
+
+    localStorage.setItem(`maps_${markerType}_${item}`, JSON.stringify(newFilter));
 
     return {
       ...state,
       [markerType]: {
         ...state[markerType],
-        [item]: {
-          include: newInclude,
-          exclude: newExclude,
-        }
+        [item]: newFilter,
       },
       touchedByHashes: {
         ...state.touchedByHashes,
@@ -105,5 +94,31 @@ export const removeFromIncludeAndExcludeInMarker = getListModifier('reset');
 export const excludeUnitFromMarker = getListModifier('exclude');
 
 export const includeUnitInMarker = getListModifier('include');
+
+const getListForUnit = (action: 'include' | 'exclude') => (unit: CoatOfArmsMapData, markerType: MarkerType) => (state: FiltersModificationStoreState) => {
+  const imageHashToChange = unit.imageHash;
+
+  if (!imageHashToChange) {
+    console.error('Unit without image hash');
+
+    return [];
+  }
+
+  const markerTypeList = state[markerType];
+
+  const list = Object.entries(markerTypeList).filter(
+    ([_item, rules]) => (rules[action] || []).some(({ imageHash }) => imageHash === imageHashToChange)
+  ).map(
+    ([item]) => item
+  );
+
+  console.log(list);
+
+  return list;
+}
+
+export const selectUnitExcludeModifictions = getListForUnit('exclude');
+
+export const selectUnitIncludeModifictions = getListForUnit('include');
 
 export default useFilterModificationStore;

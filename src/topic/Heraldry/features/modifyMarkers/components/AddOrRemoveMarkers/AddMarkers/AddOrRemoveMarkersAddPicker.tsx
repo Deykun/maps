@@ -9,9 +9,11 @@ import IconCrown from '@/components/Icons/IconCrown';
 
 import ButtonText from '@/components/UI/ButtonText';
 
+import { includeUnitInMarker, excludeUnitFromMarker, removeFromIncludeAndExcludeInMarker } from '@/topic/Heraldry/features/modifyMarkers/stores/filtersModificationStore';
+
 import useQueryFiltersSeeds from '@/topic/Heraldry/features/modify/hooks/useQueryFiltersSeeds';
 
-import { includeUnitInMarker, excludeUnitFromMarker, removeFromIncludeAndExcludeInMarker } from '@/topic/Heraldry/features/modifyMarkers/stores/filtersModificationStore';
+
 
 type Props = {
   unit: CoatOfArmsMapData,
