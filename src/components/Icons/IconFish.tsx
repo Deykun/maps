@@ -14,7 +14,7 @@ const Icon = ({ className }: Props) => (
         </g>
       </mask>
     </defs>
-    <path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSFishOne0)"/>
+    <path d="M0 0h48v48H0z" mask="url(#ipSFishOne0)"/>
   </svg>
 );
 

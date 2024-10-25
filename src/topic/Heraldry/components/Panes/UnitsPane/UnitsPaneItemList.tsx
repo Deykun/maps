@@ -13,7 +13,7 @@ import ButtonIcon from '@/components/UI/ButtonIcon';
 import IconMarker from '@/components/Icons/IconMarker';
 
 import UnitsPaneUnitMarkers from './UnitsPaneUnitMarkers';
-import UnitsPaneItemListSelectCheckbox from './UnitsPaneItemListSelectCheckbox';
+import UnitsPaneSelectCheckbox from './UnitsPaneSelectCheckbox';
 
 type Props = {
   className?: string,
@@ -67,8 +67,8 @@ const UnitsPaneItemList = ( { className, unit, setDetailsUnit, setSelectedPaneUn
         >
           <IconMarker />
         </ButtonIcon>
-        <UnitsPaneItemListSelectCheckbox
-          className="mt-auto"
+        <UnitsPaneSelectCheckbox
+          wrapperClassName="mt-auto"
           unit={unit}
           selectedPaneUnits={selectedPaneUnits}
           setSelectedPaneUnits={setSelectedPaneUnits}

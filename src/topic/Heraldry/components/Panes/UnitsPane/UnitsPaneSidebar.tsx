@@ -77,13 +77,16 @@ const UnitsPaneSidebar = ({
   const pageSize = shouldUseGridLayout ? 20 : 6;
   const itemsToShow = pageSize * (filterPage + 1);
 
-  const isClearDisabled = filterPhrase.length === 0 && (shouldUseGridLayout || selectedPaneUnits.length === 0);
-
   return (
     <div className="ui-slide-from-right-sidebar no-scrollbar fixed top-0 right-0 z-[-1] w-[400px] max-w-[100vw] max-h-[100dvh] overflow-auto">
       <div className="bg-ui-dark text-ui-dark-contrast p-[12px] pr-[60px] rounded-bl-[18px] flex flex-col gap-[12px] relative">
         {detailsUnit ?
-          <UnitsPaneSidebarDetailsContent unit={detailsUnit} setDetailsUnit={setDetailsUnit}/>
+          <UnitsPaneSidebarDetailsContent
+            unit={detailsUnit}
+            setDetailsUnit={setDetailsUnit}
+            setSelectedPaneUnits={setSelectedPaneUnits}
+            selectedPaneUnits={selectedPaneUnits}
+          />
           : <>
             <h3 className="flex gap-3 items-center text-[14px]">
               <IconCoatOfArms className="size-5 text-white" units={[]} />
@@ -115,16 +118,14 @@ const UnitsPaneSidebar = ({
                   >
                     <IconLayoutList />
                   </ButtonIcon>
-                  {!shouldUseGridLayout &&
-                    <UnitsPaneBulkDevActions
-                      setSelectedPaneUnits={setSelectedPaneUnits}
-                      selectedPaneUnits={selectedPaneUnits}
-                    />
-                  }
+                  <UnitsPaneBulkDevActions
+                    setSelectedPaneUnits={setSelectedPaneUnits}
+                    selectedPaneUnits={selectedPaneUnits}
+                  />
                   <ButtonIcon
                     wrapperClassName="ml-auto"
                     size="small"
-                    isDisabled={isClearDisabled}
+                    isDisabled={filterPhrase.length === 0 && selectedPaneUnits.length === 0}
                     onClick={handleClear}
                     label={t('heraldry.list.clear')}
                     labelPosition="bottomLeft"

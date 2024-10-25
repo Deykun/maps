@@ -32,7 +32,7 @@ const Icon = ({ className, animals = [] }: Props) => {
     return <IconCat className={className} />;
   }
 
-  if (['bullBison', 'elephant'].some((category) => animals.includes(category))) {
+  if (['bullBison', 'elephant', 'ox'].some((category) => animals.includes(category))) {
     return <IconBison className={className} />;
   }
 

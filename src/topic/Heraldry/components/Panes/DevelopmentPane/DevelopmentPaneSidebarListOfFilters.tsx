@@ -1,5 +1,4 @@
 import { memo, useState, useCallback, Dispatch, SetStateAction } from 'react';
-import { useQuery } from '@tanstack/react-query';
 import { useTranslation } from 'react-i18next';
 
 import IconCopy from '@/components/Icons/IconCopy';
@@ -9,29 +8,16 @@ import IconSelectNew from '@/components/Icons/IconSelectNew';
 import Space from '@/components/UI/Space';
 import ButtonText from '@/components/UI/ButtonText';
 
+import useQueryFiltersSeeds from '@/topic/Heraldry/features/modify/hooks/useQueryFiltersSeeds';
+
 import { copyText } from '@/utils/text';
 
 import { MarkerParams, MarkerParamsWithResult } from '@/topic/Heraldry/types';
 
 import DevelopmentPaneSnippet from './DevelopmentPaneSnippet';
 
-type FetchParmas = {
+type Props = {
   country: string,
-}
-
-const fetchData = async ({ country }: FetchParmas) => {
-  const response = await fetch(`/maps/data/heraldry/${country}/filters.json`).then((response) => response.json());
-
-  const animals = (response.animals || []) as MarkerParams[];
-  const items = (response.items || []) as MarkerParams[];
-
-  return {
-    animals,
-    items,
-  };
-};
-
-type Props = FetchParmas & {
   setDraftFilter: Dispatch<SetStateAction<MarkerParamsWithResult>>,
 };
 
@@ -47,11 +33,7 @@ const DevelopmentPaneSidebarListOfFilters = ({
     isError,
     error,
     data,
-  } = useQuery({
-    queryFn: () => fetchData({ country }),
-    queryKey: ['filter', country],
-    staleTime: 5 * 60 * 1000,
-  });
+  } = useQueryFiltersSeeds({ country });
 
   const handleClick = useCallback((event: React.ChangeEvent<HTMLSelectElement>) => {
     const value = (event.target.value || '');

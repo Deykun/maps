@@ -54,6 +54,8 @@ export type CoatOfArmsMapData = {
 
 export type ColorStatusInDetails = Pick<ColorStatus, 'distanceToThreshold' | 'matcherColor'>
 
+export type MarkerType = 'animal' | 'item';
+
 export type CoatOfArmsDetailsData = {
   id: string,
   colors?: {

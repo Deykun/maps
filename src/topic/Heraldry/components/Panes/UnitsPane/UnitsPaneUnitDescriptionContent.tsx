@@ -67,6 +67,9 @@ const UnitsPaneUnitDescriptionContent = ({ id, country, shouldShowUnitTitle = fa
         <span>
           {t('heraldry.list.labelDescription')}
         </span>
+        <small>
+          ({description.length})
+        </small>
         <ButtonIcon
           size="small"
           wrapperClassName="ml-auto"
@@ -77,11 +80,10 @@ const UnitsPaneUnitDescriptionContent = ({ id, country, shouldShowUnitTitle = fa
           <IconCopy />
         </ButtonIcon>
       </h3>
-      {shouldShowUnitTitle && title && <div className="-mb-2 text-[10px] text-justify hyphens-auto">{title}</div>}
       <div
-        className="my-2 text-[10px] text-justify hyphens-auto line-clamp-6"
+        className="my-2 text-[10px] text-justify hyphens-auto line-clamp-2"
         dangerouslySetInnerHTML={{
-          __html: description.includes('||||') ?
+          __html: (shouldShowUnitTitle ? `${title}||||${description}` : description).includes('||||') ?
           (description as string).split('||||').map((paragraph) => `<p class="mb-2 last:mb-0">${paragraph}</p>`).join('')
           : `<p class="mb-2 last:mb-0">${description}<p>`,
         }}

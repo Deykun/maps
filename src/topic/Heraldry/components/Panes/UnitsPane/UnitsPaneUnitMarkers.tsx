@@ -1,8 +1,6 @@
-import { useMemo } from 'react';
 import clsx from 'clsx';
 
-import { queryClient } from '@/main';
-import { CoatOfArmsMapData, CoatOfArmsDetailsData } from '@/topic/Heraldry/types';
+import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 
 import IconAnimal from '@/components/Icons/IconAnimal';
 import IconBuilding from '@/components/Icons/IconBuilding';
@@ -11,7 +9,7 @@ import IconCrown from '@/components/Icons/IconCrown';
 
 import UnitsPaneUnitMarkersList from './UnitsPaneUnitMarkersList';
 
-import { mergeMarkersForUnit } from '@/topic/Heraldry/utils/markers/mergeMarkersForUnit';
+import useGetUnitMarkersFromCache from '@/topic/Heraldry/features/modify/hooks/useGetUnitMarkersFromCache';
 
 type Props = {
   unit: CoatOfArmsMapData,
@@ -21,34 +19,10 @@ type Props = {
 const UnitsPaneUnitMarkers = ({ unit, shouldShowContentAsTooltip = false }: Props) => {
   const country = unit.lang;
 
-  const data = queryClient.getQueryData([country, 'details']);
-
   const {
     animals,
     items,
-  } = useMemo(() => {
-    if (!data) {
-      return {
-        animals: [],
-        items: [],
-      }
-    }
-
-    const detailsForUnitsById = (data as {
-      detailsForUnitsById: {
-        [id: string]: CoatOfArmsDetailsData,
-      }
-    }).detailsForUnitsById;
-
-
-    const animals = mergeMarkersForUnit(unit, detailsForUnitsById, 'animals');
-    const items = mergeMarkersForUnit(unit, detailsForUnitsById, 'items');
-
-    return {
-      animals,
-      items,
-    }
-  }, [data]);
+  } = useGetUnitMarkersFromCache(unit)
 
   const hasContent = animals.length > 0 || items.length > 0 || unit.type.length > 0;
 

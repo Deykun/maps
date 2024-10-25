@@ -16,9 +16,12 @@ import IconBook from '@/components/Icons/IconBook';
 import IconMarker from '@/components/Icons/IconMarker';
 import IconUndo from '@/components/Icons/IconUndo';
 
-
 import Panel from '@/components/UI/Panel';
 import ButtonText from '@/components/UI/ButtonText';
+
+import AddOrRemoveMarkers from '@/topic/Heraldry/features/modifyMarkers/components/AddOrRemoveMarkers/AddOrRemoveMarkers'
+
+import UnitsPaneSelectCheckbox from './UnitsPaneSelectCheckbox';
 
 import UnitsPaneUnitColors from './UnitsPaneUnitColors';
 import UnitsPaneUnitDescription from './UnitsPaneUnitDescription';
@@ -30,9 +33,11 @@ type Props = {
   className?: string,
   unit: CoatOfArmsMapData,
   setDetailsUnit: (unit: CoatOfArmsMapData | undefined) => void,
+  setSelectedPaneUnits: (units: CoatOfArmsMapData[]) => void,
+  selectedPaneUnits: CoatOfArmsMapData[],
 }
 
-const UnitsPaneSidebarDetailsContent = ( { unit, setDetailsUnit }: Props) => {
+const UnitsPaneSidebarDetailsContent = ( { unit, setDetailsUnit, setSelectedPaneUnits, selectedPaneUnits }: Props) => {
   const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
   const { title, url, imagesList, place } = unit;
   
@@ -40,13 +45,20 @@ const UnitsPaneSidebarDetailsContent = ( { unit, setDetailsUnit }: Props) => {
 
   return (
     <>
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center gap-2">
         <ButtonText
           onClick={() => setDetailsUnit(undefined)}
         >
           <IconUndo />
           <span>{t('heraldry.list.title')}</span>
         </ButtonText>
+        <UnitsPaneSelectCheckbox
+          wrapperClassName="ml-auto"
+          className="[&_svg]:!fill-ui !bg-transparent"
+          unit={unit}
+          selectedPaneUnits={selectedPaneUnits}
+          setSelectedPaneUnits={setSelectedPaneUnits}
+        />
         <span className="text-ui-dark-contrast text-[10px] text-right pr-2">
           id: <span className="text-white">{unit.id}</span>    
           {unit.mergedIds && <>
@@ -108,7 +120,8 @@ const UnitsPaneSidebarDetailsContent = ( { unit, setDetailsUnit }: Props) => {
         </p>
       </Panel>
       <UnitsPaneUnitMarkers unit={unit} />
-      <UnitsPaneUnitDevActions unit={unit} />
+      <AddOrRemoveMarkers unit={unit} />
+      {/* <UnitsPaneUnitDevActions unit={unit} /> */}
       <UnitsPaneUnitDescription id={unit.id} country={unit.lang} mergedIds={unit.mergedIds} />
     </>
   );
