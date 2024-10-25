@@ -13,14 +13,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -45,16 +38,22 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 10.755710991019477,
-      "matcherColor": "#b68f5e"
+      "distanceToThreshold": -68.73702446397704,
+      "matcherColor": "#fe3940"
      }
     ],
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -68.43853947004465,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -95.6044180508643,
+      "matcherColor": "#006f00"
      }
     ]
    }
@@ -74,14 +73,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -107,16 +99,28 @@
     ]
    },
    "byNamesRejected": {
-    "white": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -154.61670869739862,
+      "matcherColor": "#f00"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 30.572122060875678,
-      "matcherColor": "#243b7f"
+      "distanceToThreshold": -1.2526922630875106,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -34.92101980067429,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -98.01582199260935,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -136,14 +140,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -160,14 +157,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   },
   "markers": {
    "items": [
@@ -212,28 +202,28 @@
     ]
    },
    "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -237.48084043534783,
+      "matcherColor": "#fe3940"
+     }
+    ],
     "blue": [
      {
-      "distanceToThreshold": 4.046066592967023,
+      "distanceToThreshold": -139.23047233448182,
       "matcherColor": "#5596c3"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -136.76127667811062,
+      "matcherColor": "#00824a"
      }
     ],
-    "black": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -138.10603221507415,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -268,22 +258,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 38.25143682906845,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -166.86433521268316,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -4.381674411279491,
+      "matcherColor": "#243b7f"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": 10.28801846648146,
-      "matcherColor": "#006f00"
+      "distanceToThreshold": -164.678228358845,
+      "matcherColor": "#0f0"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -104.16455159382002,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -310,14 +306,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -334,14 +323,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -387,34 +369,28 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
+    "blue": [
      {
-      "distanceToThreshold": 34.97778326203829,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -126.17953341687434,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -63.182791005886855,
+      "matcherColor": "#00824a"
      }
     ],
     "gold": [
      {
-      "distanceToThreshold": 25.402312215987614,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -122.0631758483851,
+      "matcherColor": "#b68f5e"
      }
     ],
-    "blue": [
+    "red": [
      {
-      "distanceToThreshold": 19.626741523627302,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -215.90708000992475,
+      "matcherColor": "#f00"
      }
     ]
    }
@@ -441,14 +417,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -473,16 +442,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 9.688711258507254,
-      "matcherColor": "#ffff00"
+      "distanceToThreshold": -221.57917700000445,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -69.30970574554718,
+      "matcherColor": "#243b7f"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": 40.790627287701454,
-      "matcherColor": "#07923f"
+      "distanceToThreshold": -138.84492565927695,
+      "matcherColor": "#0f0"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -128.29232591903474,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -517,22 +498,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
-     {
-      "distanceToThreshold": 17.940518310373818,
-      "matcherColor": "#bfa14e"
-     }
-    ],
     "red": [
      {
-      "distanceToThreshold": 13.321667687321394,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -87.2006825918689,
+      "matcherColor": "#fe3940"
      }
     ],
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -134.57903278616635,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -131.33684736166276,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -74.38005804433931,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -554,6 +541,12 @@
       "matcherColor": "#5596c3"
      }
     ],
+    "red": [
+     {
+      "distanceToThreshold": 6.956562756394174,
+      "matcherColor": "#fe3940"
+     }
+    ],
     "black": [
      {
       "distanceToThreshold": -1,
@@ -568,22 +561,28 @@
     ]
    },
    "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -225.41730560007088,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -181.2839840462389,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -43.821962994349136,
+      "matcherColor": "#b68f5e"
+     }
+    ],
     "blue": [
      {
-      "distanceToThreshold": 41.308915755693796,
+      "distanceToThreshold": -138.73271360269823,
       "matcherColor": "#5596c3"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
      }
     ]
    }
@@ -603,14 +602,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -636,16 +628,28 @@
     ]
    },
    "byNamesRejected": {
-    "grey": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -162.58244987537157,
+      "matcherColor": "#fe3940"
      }
     ],
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -8.651001122378759,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -42.62066068779717,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -27.040220587955773,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -681,22 +685,28 @@
     ]
    },
    "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -152.163735324878,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -26.887791632159747,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -24.077345343439575,
+      "matcherColor": "#07923f"
+     }
+    ],
     "gold": [
      {
-      "distanceToThreshold": 31.346902436211195,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -37.94896630388705,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -731,22 +741,22 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 19.281453856995334,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -111.6403897198818,
+      "matcherColor": "#fe3940"
      }
     ],
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -109.59166648352453,
+      "matcherColor": "#5596c3"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -170.86394921491166,
+      "matcherColor": "#0f0"
      }
     ]
    }
@@ -796,28 +806,28 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
+    "blue": [
      {
-      "distanceToThreshold": 72.38422689413609,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -21.85283501208987,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -116.78800864312035,
+      "matcherColor": "#07923f"
      }
     ],
     "gold": [
      {
-      "distanceToThreshold": 15.446661180109075,
+      "distanceToThreshold": -121.08561511064318,
       "matcherColor": "#b68f5e"
      }
     ],
-    "black": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -114.43337564427412,
+      "matcherColor": "#fe3940"
      }
     ]
    }
@@ -846,16 +856,28 @@
     ]
    },
    "byNamesRejected": {
-    "green": [
+    "red": [
      {
-      "distanceToThreshold": 46.022733145407955,
-      "matcherColor": "#006f00"
+      "distanceToThreshold": -161.31307465614043,
+      "matcherColor": "#f00"
      }
     ],
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -50.104495821015405,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -131.19100397246729,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -113.16466152191677,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -891,22 +913,28 @@
     ]
    },
    "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -155.8664876577425,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -12.671462705624762,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -32.130342450248165,
+      "matcherColor": "#07923f"
+     }
+    ],
     "gold": [
      {
-      "distanceToThreshold": 37.328431902490735,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -36.803925540238296,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -942,22 +970,22 @@
     ]
    },
    "byNamesRejected": {
-    "blue": [
+    "red": [
      {
-      "distanceToThreshold": 33.05561282938504,
-      "matcherColor": "#00f"
+      "distanceToThreshold": -257.5588837521537,
+      "matcherColor": "#f00"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -148.67438750359375,
+      "matcherColor": "#00824a"
      }
     ],
-    "black": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -195.97656142701817,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -977,14 +1005,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -1023,28 +1044,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 26.162151368622737,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -181.9315927369018,
+      "matcherColor": "#fe3940"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 22.76364791498326,
+      "distanceToThreshold": -117.94948850653796,
       "matcherColor": "#5596c3"
      }
     ],
-    "black": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -64.69963913339926,
+      "matcherColor": "#00824a"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -77.56089560627322,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -1060,6 +1081,12 @@
     "#ffffff"
    ],
    "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 21.93774225170145,
+      "matcherColor": "#fe3940"
+     }
+    ],
     "grey": [
      {
       "distanceToThreshold": -1,
@@ -1074,16 +1101,28 @@
     ]
    },
    "byNamesRejected": {
-    "grey": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -72.0075755401939,
+      "matcherColor": "#243b7f"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -23.881517376613843,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -163.10759736055607,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": -143.15241428225687,
+      "matcherColor": "#f00"
      }
     ]
    }
@@ -1119,22 +1158,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 42.30819398704587,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -214.00850327839157,
+      "matcherColor": "#f00"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 19.52778731030388,
-      "matcherColor": "#1d7dc0"
+      "distanceToThreshold": -57.72425408555367,
+      "matcherColor": "#243b7f"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -59.62441222426132,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -115.21130100538608,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -1168,16 +1213,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 28.935550865981867,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -150.5363311931549,
+      "matcherColor": "#f00"
      }
     ],
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -30.111042608550477,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -8.615414616580097,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -57.23907198540937,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -1200,10 +1257,28 @@
     ]
    },
    "byNamesRejected": {
-    "white": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -152.0689552697646,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -24.208075622234716,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -15.769386958058462,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -49.899954504085215,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -1258,34 +1333,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
-     {
-      "distanceToThreshold": 30.8950268254572,
-      "matcherColor": "#ffff00"
-     }
-    ],
     "red": [
      {
-      "distanceToThreshold": 41.102699322446554,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -158.313568284391,
+      "matcherColor": "#fe3940"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 3.521244780004423,
-      "matcherColor": "#5596c3"
+      "distanceToThreshold": -162.08782046748985,
+      "matcherColor": "#2e3192"
      }
     ],
-    "black": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -98.25612152457168,
+      "matcherColor": "#07923f"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -18.29431652425353,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -1301,6 +1370,12 @@
     "#ffffff"
    ],
    "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 0.8280957083703555,
+      "matcherColor": "#fe3940"
+     }
+    ],
     "grey": [
      {
       "distanceToThreshold": -1,
@@ -1315,16 +1390,28 @@
     ]
    },
    "byNamesRejected": {
-    "grey": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -73.34541611919025,
+      "matcherColor": "#243b7f"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -17.953693776544768,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -156.1157097482735,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": -137.25100690215453,
+      "matcherColor": "#f00"
      }
     ]
    }
@@ -1374,28 +1461,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 26.638345364775446,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -199.5473807299922,
+      "matcherColor": "#fe3940"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 19.510331460653546,
+      "distanceToThreshold": -124.57272545478784,
       "matcherColor": "#5596c3"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -66.19429464123962,
+      "matcherColor": "#00824a"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -96.19218930535547,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -1431,22 +1518,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 32.269150752275905,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -118.35826173870348,
+      "matcherColor": "#f00"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 15.660401445209274,
-      "matcherColor": "#2e3192"
+      "distanceToThreshold": -66.44761761298629,
+      "matcherColor": "#243b7f"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -6.176920308356728,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -125.07836178224616,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -1488,28 +1581,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 21.295995039272746,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -190.8800579500105,
+      "matcherColor": "#fe3940"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 14.80030674918784,
+      "distanceToThreshold": -125.2973453311075,
       "matcherColor": "#5596c3"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -48.79797792238604,
+      "matcherColor": "#00824a"
      }
     ],
-    "black": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -84.92756811593853,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -1531,6 +1624,12 @@
       "matcherColor": "#5596c3"
      }
     ],
+    "red": [
+     {
+      "distanceToThreshold": 9.90024875775822,
+      "matcherColor": "#fe3940"
+     }
+    ],
     "black": [
      {
       "distanceToThreshold": -1,
@@ -1545,22 +1644,28 @@
     ]
    },
    "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -201.56208670678367,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -165.63254878829494,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -36.27045237246992,
+      "matcherColor": "#b68f5e"
+     }
+    ],
     "blue": [
      {
-      "distanceToThreshold": 26.727117592531187,
+      "distanceToThreshold": -134.5203953007732,
       "matcherColor": "#5596c3"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
      }
     ]
    }
@@ -1580,14 +1685,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -1600,6 +1698,12 @@
     "#ffffff"
    ],
    "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 5.6278847860921175,
+      "matcherColor": "#fe3940"
+     }
+    ],
     "black": [
      {
       "distanceToThreshold": -1,
@@ -1614,16 +1718,28 @@
     ]
    },
    "byNamesRejected": {
-    "black": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -18.066304100848015,
+      "matcherColor": "#5596c3"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -26.49277426467485,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -38.98484732523458,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": -156.52061220959158,
+      "matcherColor": "#f00"
      }
     ]
    }
@@ -1639,6 +1755,12 @@
     "#ffffff"
    ],
    "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 5.586888768532596,
+      "matcherColor": "#fe3940"
+     }
+    ],
     "black": [
      {
       "distanceToThreshold": -1,
@@ -1653,16 +1775,28 @@
     ]
    },
    "byNamesRejected": {
-    "black": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -17.02576977277738,
+      "matcherColor": "#5596c3"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -22.59539938761722,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -45.45615202537972,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": -160.12288520672078,
+      "matcherColor": "#f00"
      }
     ]
    }
@@ -1691,15 +1825,27 @@
     ]
    },
    "byNamesRejected": {
-    "white": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -106.53204751998703,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -22.829956724682134,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -92.93789589241771,
+      "matcherColor": "#07923f"
      }
     ],
     "gold": [
      {
-      "distanceToThreshold": 14.250683065208506,
+      "distanceToThreshold": -125.54514275507188,
       "matcherColor": "#b68f5e"
      }
     ]
@@ -1735,22 +1881,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 42.70838353420942,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -214.89659204541516,
+      "matcherColor": "#f00"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 22.46335124175308,
-      "matcherColor": "#1d7dc0"
+      "distanceToThreshold": -118.67058161690673,
+      "matcherColor": "#5596c3"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -54.96521212958292,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -114.21251390184347,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -1805,34 +1957,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 1.1867361898695492,
-      "matcherColor": "#b68f5e"
+      "distanceToThreshold": -109.26593266122194,
+      "matcherColor": "#fe3940"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 53,
-      "matcherColor": "#0000bf"
+      "distanceToThreshold": -24.880884817015158,
+      "matcherColor": "#5596c3"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": 27,
-      "matcherColor": "#006f00"
+      "distanceToThreshold": -80.86873322352267,
+      "matcherColor": "#07923f"
      }
     ],
-    "red": [
+    "gold": [
      {
-      "distanceToThreshold": 25.46560718225608,
-      "matcherColor": "#f00"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -74.05222862750176,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -1852,14 +1998,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -1876,14 +2015,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -1909,16 +2041,28 @@
     ]
    },
    "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -123.5545505675426,
+      "matcherColor": "#fe3940"
+     }
+    ],
     "blue": [
      {
-      "distanceToThreshold": 20.88478556878411,
-      "matcherColor": "#2e3192"
+      "distanceToThreshold": -135.46229368499723,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -180.1462566833011,
+      "matcherColor": "#0f0"
      }
     ],
     "gold": [
      {
-      "distanceToThreshold": 21.986844382503577,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -106.85922210054798,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -1954,22 +2098,28 @@
     ]
    },
    "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -112.39733143566983,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -22.576800496018592,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -78.11589336495638,
+      "matcherColor": "#00824a"
+     }
+    ],
     "gold": [
      {
-      "distanceToThreshold": 20.57919331114595,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -6.880490428823862,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -2005,22 +2155,28 @@
     ]
    },
    "byNamesRejected": {
+    "blue": [
+     {
+      "distanceToThreshold": -50.2905254316979,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -5.62949335848225,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -129.2854986521683,
+      "matcherColor": "#b68f5e"
+     }
+    ],
     "red": [
      {
-      "distanceToThreshold": 78.58578643762691,
+      "distanceToThreshold": -130.35921657964028,
       "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
      }
     ]
    }
@@ -2040,14 +2196,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -2086,28 +2235,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 42.70838353420942,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -201.57936004747918,
+      "matcherColor": "#fe3940"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 26.65208532660344,
+      "distanceToThreshold": -120.60408769514146,
       "matcherColor": "#5596c3"
      }
     ],
-    "black": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -65.19584657647394,
+      "matcherColor": "#00824a"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -94.58654533949584,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -2123,6 +2272,12 @@
     "#ffffff"
    ],
    "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 2.3232949938039056,
+      "matcherColor": "#fe3940"
+     }
+    ],
     "grey": [
      {
       "distanceToThreshold": -1,
@@ -2137,16 +2292,22 @@
     ]
    },
    "byNamesRejected": {
-    "grey": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -132.50176469855492,
+      "matcherColor": "#5596c3"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -150.4204650190994,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -36.88137075826292,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -2188,28 +2349,28 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
+    "blue": [
      {
-      "distanceToThreshold": 5.307296206389736,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -111.05262348178118,
+      "matcherColor": "#243b7f"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": 26.675439204049745,
+      "distanceToThreshold": -166.1893830743187,
       "matcherColor": "#006f00"
      }
     ],
-    "grey": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -131,
+      "matcherColor": "#bfa14e"
      }
     ],
-    "white": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -213.64604543565713,
+      "matcherColor": "#f00"
      }
     ]
    }
@@ -2251,28 +2412,28 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
+    "blue": [
      {
-      "distanceToThreshold": 28.921628843511463,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -29.881754627417564,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -87.41099009232656,
+      "matcherColor": "#07923f"
      }
     ],
     "gold": [
      {
-      "distanceToThreshold": 5.732145795139459,
+      "distanceToThreshold": -78.4088147481944,
       "matcherColor": "#b68f5e"
      }
     ],
-    "grey": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -102.17034463146413,
+      "matcherColor": "#fe3940"
      }
     ]
    }
@@ -2328,40 +2489,28 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
+    "blue": [
      {
-      "distanceToThreshold": 77.17157287525382,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -199.19527216627432,
+      "matcherColor": "#5596c3"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": 89,
+      "distanceToThreshold": -165,
       "matcherColor": "#0f0"
      }
     ],
     "gold": [
      {
-      "distanceToThreshold": 50,
-      "matcherColor": "#ffff00"
+      "distanceToThreshold": -166.37579375896178,
+      "matcherColor": "#bfa14e"
      }
     ],
-    "grey": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -175,
+      "matcherColor": "#f00"
      }
     ]
    }
@@ -2396,22 +2545,22 @@
     ]
    },
    "byNamesRejected": {
-    "green": [
+    "red": [
      {
-      "distanceToThreshold": 48.3380962103094,
-      "matcherColor": "#07923f"
+      "distanceToThreshold": -214.9254142999548,
+      "matcherColor": "#f00"
      }
     ],
-    "grey": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -46.06601717798213,
+      "matcherColor": "#243b7f"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -123.76887658142769,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -2460,34 +2609,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
-     {
-      "distanceToThreshold": 34.03849002850566,
-      "matcherColor": "#e6c633"
-     }
-    ],
     "red": [
      {
-      "distanceToThreshold": 29.960015987212785,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -121.18200951171406,
+      "matcherColor": "#fe3940"
      }
     ],
-    "grey": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -157.88758569500925,
+      "matcherColor": "#243b7f"
      }
     ],
-    "black": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -146.60515632589244,
+      "matcherColor": "#006f00"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -79.06113763377604,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -2523,22 +2666,28 @@
     ]
    },
    "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -149.73462951849467,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -44.79182665543445,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -18.057670987546118,
+      "matcherColor": "#07923f"
+     }
+    ],
     "gold": [
      {
-      "distanceToThreshold": 31.069047717021135,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -40.90589675534329,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -2579,22 +2728,22 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
+    "blue": [
      {
-      "distanceToThreshold": 14.075801104601965,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -157.08523671590382,
+      "matcherColor": "#2e3192"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -157.68124676688785,
+      "matcherColor": "#006f00"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -61.4495780149112,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -2644,34 +2793,28 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
+    "blue": [
      {
-      "distanceToThreshold": 32.2716017448731,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -180.57436558495158,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -164.40911933340755,
+      "matcherColor": "#0f0"
      }
     ],
     "gold": [
      {
-      "distanceToThreshold": 14.94290371408379,
-      "matcherColor": "#ffff00"
+      "distanceToThreshold": -86.82642813880614,
+      "matcherColor": "#b68f5e"
      }
     ],
-    "grey": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -141.16509670379727,
+      "matcherColor": "#f00"
      }
     ]
    }
@@ -2707,22 +2850,28 @@
     ]
    },
    "byNamesRejected": {
-    "grey": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -9.375611886017325,
+      "matcherColor": "#f00"
      }
     ],
-    "black": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -155.4692553474857,
+      "matcherColor": "#243b7f"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -129.5313189501671,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -47.67079455451233,
+      "matcherColor": "#bfa14e"
      }
     ]
    }
@@ -2758,22 +2907,28 @@
     ]
    },
    "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -222.77054017853192,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -34.913010577566894,
+      "matcherColor": "#5596c3"
+     }
+    ],
     "green": [
      {
-      "distanceToThreshold": 16.768067357565428,
-      "matcherColor": "#07923f"
+      "distanceToThreshold": -38.16785868539742,
+      "matcherColor": "#006f00"
      }
     ],
-    "grey": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -103.26052799130596,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -2793,14 +2948,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -2833,22 +2981,28 @@
     ]
    },
    "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -152.52741773820995,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -30.055538419355415,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -9.07966415668217,
+      "matcherColor": "#07923f"
+     }
+    ],
     "gold": [
      {
-      "distanceToThreshold": 35.81322675510435,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -54.90430801323335,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -2891,22 +3045,28 @@
     ]
    },
    "byNamesRejected": {
-    "grey": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -21.55786527886454,
+      "matcherColor": "#f00"
      }
     ],
-    "black": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -172.96047122030745,
+      "matcherColor": "#5596c3"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -157.3014354992708,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -47.86102168995063,
+      "matcherColor": "#e6c633"
      }
     ]
    }
@@ -2935,16 +3095,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 16.883877725379804,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -146.97356674291393,
+      "matcherColor": "#f00"
      }
     ],
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -34.878870145043365,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -21.351090957650968,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -40.444014256699234,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -2964,14 +3136,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -3004,22 +3169,28 @@
     ]
    },
    "byNamesRejected": {
+    "blue": [
+     {
+      "distanceToThreshold": -11.18113840043894,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -54.516374375021144,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -12.22880311897741,
+      "matcherColor": "#b68f5e"
+     }
+    ],
     "red": [
      {
-      "distanceToThreshold": 29.92006389780434,
-      "matcherColor": "#f00"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -147.50774630984418,
+      "matcherColor": "#fe3940"
      }
     ]
    }
@@ -3034,6 +3205,12 @@
     "#ffffff"
    ],
    "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 10.3531172956115,
+      "matcherColor": "#fe3940"
+     }
+    ],
     "white": [
      {
       "distanceToThreshold": -1,
@@ -3042,10 +3219,28 @@
     ]
    },
    "byNamesRejected": {
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -26.648716089737874,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -23.294657691835198,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -42.024506859871664,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": -150.95237604320073,
+      "matcherColor": "#f00"
      }
     ]
    }
@@ -3092,28 +3287,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 23.875216263623116,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -140.9208002882481,
+      "matcherColor": "#f00"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 19.485538918370928,
-      "matcherColor": "#5596c3"
+      "distanceToThreshold": -68.54960132182441,
+      "matcherColor": "#243b7f"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": 0.42321729376523365,
-      "matcherColor": "#006f00"
+      "distanceToThreshold": -61.18580774991764,
+      "matcherColor": "#00824a"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -146.82359633272023,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -3138,14 +3333,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -3162,14 +3350,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -3186,14 +3367,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -3232,28 +3406,22 @@
     ]
    },
    "byNamesRejected": {
-    "blue": [
+    "red": [
      {
-      "distanceToThreshold": 32.25112614897678,
-      "matcherColor": "#0059c7"
+      "distanceToThreshold": -255.3818719012702,
+      "matcherColor": "#f00"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -54.131503100590066,
+      "matcherColor": "#00824a"
      }
     ],
-    "black": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -145.55048041782825,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -3289,22 +3457,28 @@
     ]
    },
    "byNamesRejected": {
-    "blue": [
+    "red": [
      {
-      "distanceToThreshold": 13.599568967519275,
-      "matcherColor": "#1d7dc0"
+      "distanceToThreshold": -127.67522721788461,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -0.6697303403953043,
+      "matcherColor": "#006f00"
      }
     ],
     "gold": [
      {
-      "distanceToThreshold": 26.50373155111155,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -127.40597642551319,
+      "matcherColor": "#b68f5e"
      }
     ],
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -58.04236527620073,
+      "matcherColor": "#243b7f"
      }
     ]
    }
@@ -3329,14 +3503,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -3353,14 +3520,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -3377,14 +3537,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -3417,22 +3570,28 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
+    "blue": [
      {
-      "distanceToThreshold": 52.46820020412759,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -184.274478525642,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -170.049995193232,
+      "matcherColor": "#0f0"
      }
     ],
     "gold": [
      {
-      "distanceToThreshold": 2.886078754825455,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -112.96820517077697,
+      "matcherColor": "#b68f5e"
      }
     ],
-    "grey": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -124,
+      "matcherColor": "#f00"
      }
     ]
    }
@@ -3475,28 +3634,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
-     {
-      "distanceToThreshold": 35.9643311523818,
-      "matcherColor": "#ffff00"
-     }
-    ],
     "red": [
      {
-      "distanceToThreshold": 18.048405993065842,
+      "distanceToThreshold": -176.22255950637913,
       "matcherColor": "#f00"
      }
     ],
-    "grey": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -63.21120078953861,
+      "matcherColor": "#243b7f"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -23.78049041905207,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -181.52432589699944,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -3531,22 +3690,28 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
+    "blue": [
      {
-      "distanceToThreshold": 17.662210497965198,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -194.1988329661525,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -165.28415540334657,
+      "matcherColor": "#0f0"
      }
     ],
     "gold": [
      {
-      "distanceToThreshold": 37.9584054212077,
-      "matcherColor": "#ffff00"
+      "distanceToThreshold": -70.13070352534024,
+      "matcherColor": "#b68f5e"
      }
     ],
-    "black": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -163.00205760445732,
+      "matcherColor": "#f00"
      }
     ]
    }
@@ -3566,14 +3731,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -3605,22 +3763,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 17.64436283090526,
-      "matcherColor": "#b68f5e"
+      "distanceToThreshold": -118.59506539690256,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -70.82430966758434,
+      "matcherColor": "#243b7f"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": 8.158690137559503,
+      "distanceToThreshold": -76.94310408040221,
       "matcherColor": "#006f00"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -108.23198269056928,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -3662,28 +3826,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 24.928644166499637,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -195.02444311674233,
+      "matcherColor": "#fe3940"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 28.356994665298572,
+      "distanceToThreshold": -113.97164741270822,
       "matcherColor": "#5596c3"
      }
     ],
-    "black": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -70.44922383824292,
+      "matcherColor": "#00824a"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -89.46571513226704,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -3719,22 +3883,28 @@
     ]
    },
    "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -190.16811758290527,
+      "matcherColor": "#fe3940"
+     }
+    ],
     "blue": [
      {
-      "distanceToThreshold": 19.659300633817644,
+      "distanceToThreshold": -119.85995096566995,
       "matcherColor": "#5596c3"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -61.610032480877166,
+      "matcherColor": "#00824a"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -86.32156368765337,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -3752,8 +3922,8 @@
    "byNames": {
     "red": [
      {
-      "distanceToThreshold": 0.050015634773259876,
-      "matcherColor": "#f00"
+      "distanceToThreshold": 9.16733334400034,
+      "matcherColor": "#fe3940"
      }
     ],
     "grey": [
@@ -3770,22 +3940,22 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
+    "blue": [
      {
-      "distanceToThreshold": 0.050015634773259876,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -148.0723569396344,
+      "matcherColor": "#5596c3"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -158.35861168882386,
+      "matcherColor": "#006f00"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -49.60839383915814,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -3805,14 +3975,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -3825,6 +3988,12 @@
     "#ffffff"
    ],
    "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 0.3689352199418927,
+      "matcherColor": "#fe3940"
+     }
+    ],
     "grey": [
      {
       "distanceToThreshold": -1,
@@ -3839,16 +4008,22 @@
     ]
    },
    "byNamesRejected": {
-    "grey": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -126.92269087753522,
+      "matcherColor": "#5596c3"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -153.7580767892625,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -27.464278422679513,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -3890,28 +4065,22 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 20.931116292502733,
-      "matcherColor": "#ffff00"
+      "distanceToThreshold": -146.00884938426637,
+      "matcherColor": "#f00"
      }
     ],
-    "grey": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -188.37473800639282,
+      "matcherColor": "#5596c3"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -164.65663156493687,
+      "matcherColor": "#0f0"
      }
     ]
    }
@@ -3931,14 +4100,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -3984,34 +4146,28 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": 77.76393202250021,
-      "matcherColor": "#f00"
-     }
-    ],
     "blue": [
      {
-      "distanceToThreshold": 42.621852803017234,
-      "matcherColor": "#0059c7"
+      "distanceToThreshold": -21.158291800524196,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -93.37861650177967,
+      "matcherColor": "#07923f"
      }
     ],
     "gold": [
      {
-      "distanceToThreshold": 16.895475875495386,
+      "distanceToThreshold": -144.04656331337708,
       "matcherColor": "#b68f5e"
      }
     ],
-    "black": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -109.73546436034053,
+      "matcherColor": "#fe3940"
      }
     ]
    }
@@ -4027,6 +4183,12 @@
     "#ffffff"
    ],
    "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 7.550055679356351,
+      "matcherColor": "#fe3940"
+     }
+    ],
     "grey": [
      {
       "distanceToThreshold": -1,
@@ -4041,16 +4203,22 @@
     ]
    },
    "byNamesRejected": {
-    "grey": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -144.41702252725838,
+      "matcherColor": "#5596c3"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -155.7152823900052,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -46.58330075579383,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -4086,22 +4254,22 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 33.90402329860022,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -112.63590010933433,
+      "matcherColor": "#fe3940"
      }
     ],
-    "grey": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -126.3152926954277,
+      "matcherColor": "#5596c3"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -170.77001361352882,
+      "matcherColor": "#0f0"
      }
     ]
    }
@@ -4126,14 +4294,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -4172,28 +4333,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
-     {
-      "distanceToThreshold": 30.050041736256127,
-      "matcherColor": "#e6c633"
-     }
-    ],
     "red": [
      {
-      "distanceToThreshold": 55.79256312617959,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -100.91600360536523,
+      "matcherColor": "#fe3940"
      }
     ],
-    "black": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -178.2540660723338,
+      "matcherColor": "#243b7f"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -165.87106127891838,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -115.63029351453011,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -4243,34 +4404,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
-     {
-      "distanceToThreshold": 31.398924762261725,
-      "matcherColor": "#ffff00"
-     }
-    ],
     "red": [
      {
-      "distanceToThreshold": 0.012500976715116963,
+      "distanceToThreshold": -133.39634486091836,
       "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -75.20724832641184,
+      "matcherColor": "#243b7f"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": 44.44365081389596,
-      "matcherColor": "#07923f"
+      "distanceToThreshold": -16.62082348209472,
+      "matcherColor": "#006f00"
      }
     ],
-    "grey": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -152.92252111977257,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -4299,16 +4454,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 27.984378812835757,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -148.42285349763057,
+      "matcherColor": "#f00"
      }
     ],
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -24.982351108921435,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -3.3434518324665277,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -63.81033882515628,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -4358,34 +4525,28 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
+    "blue": [
      {
-      "distanceToThreshold": 61.58804736047803,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -156.40219965135688,
+      "matcherColor": "#5596c3"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": 89,
-      "matcherColor": "#0f0"
+      "distanceToThreshold": -173.6304231305636,
+      "matcherColor": "#006f00"
      }
     ],
-    "grey": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -166.37579375896178,
+      "matcherColor": "#bfa14e"
      }
     ],
-    "black": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -280.62584488635866,
+      "matcherColor": "#f00"
      }
     ]
    }
@@ -4426,22 +4587,28 @@
     ]
    },
    "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -226.94136247824275,
+      "matcherColor": "#f00"
+     }
+    ],
     "blue": [
      {
-      "distanceToThreshold": 12.229716350015252,
+      "distanceToThreshold": -58.135515404978875,
       "matcherColor": "#243b7f"
      }
     ],
-    "black": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -33.744333162063725,
+      "matcherColor": "#00824a"
      }
     ],
-    "grey": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -141.7746267497477,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -4495,34 +4662,28 @@
     ]
    },
    "byNamesRejected": {
-    "green": [
+    "red": [
      {
-      "distanceToThreshold": 90,
-      "matcherColor": "#0f0"
+      "distanceToThreshold": -280.62445840513925,
+      "matcherColor": "#f00"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 60,
-      "matcherColor": "#00f"
+      "distanceToThreshold": -157.22352328552918,
+      "matcherColor": "#5596c3"
      }
     ],
-    "grey": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -221.94680349314126,
+      "matcherColor": "#b68f5e"
      }
     ],
-    "black": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -162.84748147555987,
+      "matcherColor": "#00824a"
      }
     ]
    }
@@ -4565,28 +4726,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 13.416741204591538,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -244.15506561068685,
+      "matcherColor": "#fe3940"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 44.06262254949077,
-      "matcherColor": "#1d7dc0"
+      "distanceToThreshold": -170.54141374231926,
+      "matcherColor": "#5596c3"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -50.390216957844586,
+      "matcherColor": "#00824a"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -129.41224881194987,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -4628,28 +4789,22 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
+    "blue": [
      {
-      "distanceToThreshold": 55,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -179.26136336650762,
+      "matcherColor": "#243b7f"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -165.38402455909414,
+      "matcherColor": "#006f00"
      }
     ],
-    "black": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -117.73294573601149,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -4684,22 +4839,22 @@
     ]
    },
    "byNamesRejected": {
-    "blue": [
+    "red": [
      {
-      "distanceToThreshold": 27.06066181599879,
-      "matcherColor": "#0059c7"
+      "distanceToThreshold": -239.32115495218915,
+      "matcherColor": "#f00"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -39.12113800799504,
+      "matcherColor": "#00824a"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -137.45885647395005,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -4739,22 +4894,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 35.77191712082856,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -151.8641843838759,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -16.980517015670927,
+      "matcherColor": "#243b7f"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": 2.221870605486245,
-      "matcherColor": "#006f00"
+      "distanceToThreshold": -171.32164089489413,
+      "matcherColor": "#0f0"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -74.80726983364065,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -4796,28 +4957,22 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
+    "blue": [
      {
-      "distanceToThreshold": 79,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -198.80687780659923,
+      "matcherColor": "#2e3192"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -187.19487729754314,
+      "matcherColor": "#006f00"
      }
     ],
-    "black": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -125.65828826098769,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -4867,34 +5022,28 @@
     ]
    },
    "byNamesRejected": {
-    "green": [
+    "red": [
      {
-      "distanceToThreshold": 85.75735931288071,
-      "matcherColor": "#0f0"
+      "distanceToThreshold": -279.2144206459423,
+      "matcherColor": "#f00"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 57.763932022500214,
-      "matcherColor": "#00f"
+      "distanceToThreshold": -153.43735776434755,
+      "matcherColor": "#5596c3"
      }
     ],
-    "grey": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -220.15174459567442,
+      "matcherColor": "#b68f5e"
      }
     ],
-    "black": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -162.27460493722623,
+      "matcherColor": "#00824a"
      }
     ]
    }
@@ -4936,28 +5085,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 37.130806747941456,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -200.80954399735066,
+      "matcherColor": "#f00"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 25.35898384862245,
-      "matcherColor": "#2e3192"
+      "distanceToThreshold": -133.27447104611466,
+      "matcherColor": "#5596c3"
      }
     ],
-    "black": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -54.17968295629481,
+      "matcherColor": "#00824a"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -110.70442290696514,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -5004,28 +5153,22 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
+    "blue": [
      {
-      "distanceToThreshold": 3.4101834445335726,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -143.2043306625132,
+      "matcherColor": "#2e3192"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -146.81216184985095,
+      "matcherColor": "#006f00"
      }
     ],
-    "black": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -51.1035552986492,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -5061,22 +5204,22 @@
     ]
    },
    "byNamesRejected": {
-    "blue": [
+    "red": [
      {
-      "distanceToThreshold": 4.727162933764745,
-      "matcherColor": "#5596c3"
+      "distanceToThreshold": -151.23189564753773,
+      "matcherColor": "#fe3940"
      }
     ],
-    "black": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -130.85596663452782,
+      "matcherColor": "#07923f"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -29.760793222876543,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -5096,14 +5239,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   },
   "markers": {
    "animals": [
@@ -5126,14 +5262,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -5166,22 +5295,28 @@
     ]
    },
    "byNamesRejected": {
-    "grey": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -146.45529360118744,
+      "matcherColor": "#f00"
      }
     ],
-    "black": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -50.75549701637786,
+      "matcherColor": "#5596c3"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -19.655508284110525,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -40.52860289489753,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -5221,22 +5356,22 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 24.658805905855417,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -84.83466375620212,
+      "matcherColor": "#fe3940"
      }
     ],
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -109.208879284245,
+      "matcherColor": "#5596c3"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -152.14664978066494,
+      "matcherColor": "#006f00"
      }
     ]
    }
@@ -5263,14 +5398,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   },
   "markers": {
    "items": [
@@ -5288,6 +5416,12 @@
     "#1c1c1c"
    ],
    "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 11.724333117502933,
+      "matcherColor": "#fe3940"
+     }
+    ],
     "grey": [
      {
       "distanceToThreshold": -1,
@@ -5302,16 +5436,22 @@
     ]
    },
    "byNamesRejected": {
-    "grey": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -143.54641576191733,
+      "matcherColor": "#5596c3"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -159.26692520268307,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -45.877287460531406,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -5337,14 +5477,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   },
   "markers": {
    "items": [
@@ -5382,22 +5515,22 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
+    "blue": [
      {
-      "distanceToThreshold": 12.191445967341252,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -146.60590504629823,
+      "matcherColor": "#2e3192"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -148.9518780005715,
+      "matcherColor": "#006f00"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -60.208152801713084,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -5426,14 +5559,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -5450,14 +5576,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   },
   "markers": {
    "animals": [
@@ -5497,22 +5616,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 25.43122796511279,
-      "matcherColor": "#bfa14e"
+      "distanceToThreshold": -190.97232330996462,
+      "matcherColor": "#f00"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 18.119216817256152,
-      "matcherColor": "#2e3192"
+      "distanceToThreshold": -80.1280737409902,
+      "matcherColor": "#5596c3"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -49.110036201991974,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -93.73353570382747,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -5537,6 +5662,12 @@
     "#ffffff"
    ],
    "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 4.820643375971656,
+      "matcherColor": "#fe3940"
+     }
+    ],
     "white": [
      {
       "distanceToThreshold": -1,
@@ -5545,10 +5676,28 @@
     ]
    },
    "byNamesRejected": {
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -35.42963224406461,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -23.18653737234169,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -36.51424765287247,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": -148.49288829195538,
+      "matcherColor": "#f00"
      }
     ]
    }
@@ -5582,16 +5731,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 45,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -149.65626488297679,
+      "matcherColor": "#f00"
      }
     ],
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -33.42911751697112,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -17.362781749365766,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -44.48923389517219,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -5627,22 +5788,28 @@
     ]
    },
    "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -5.3553390593273775,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -144.6188398232333,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -42.75212893171606,
+      "matcherColor": "#b68f5e"
+     }
+    ],
     "blue": [
      {
-      "distanceToThreshold": 13.902277713535561,
-      "matcherColor": "#1d7dc0"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -132.79522815671555,
+      "matcherColor": "#2e3192"
      }
     ]
    }
@@ -5686,22 +5853,22 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 21.32184078837257,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -103.73855091184441,
+      "matcherColor": "#fe3940"
      }
     ],
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -112.6992475335594,
+      "matcherColor": "#5596c3"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -173.92802049043598,
+      "matcherColor": "#0f0"
      }
     ]
    }
@@ -5767,40 +5934,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
-     {
-      "distanceToThreshold": 41.93774225170145,
-      "matcherColor": "#ffff00"
-     }
-    ],
     "red": [
      {
-      "distanceToThreshold": 14.93080606001024,
+      "distanceToThreshold": -83.93291310777101,
       "matcherColor": "#f00"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 51.87596159536404,
-      "matcherColor": "#0059c7"
+      "distanceToThreshold": -107.46641454333462,
+      "matcherColor": "#243b7f"
      }
     ],
-    "black": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -53.81237777048261,
+      "matcherColor": "#006f00"
      }
     ],
-    "grey": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -31.0659101969557,
+      "matcherColor": "#bfa14e"
      }
     ]
    }
@@ -5847,28 +6002,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 28.28249694569259,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -204.75945135393377,
+      "matcherColor": "#fe3940"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 37.16310001879221,
+      "distanceToThreshold": -104.70246343782208,
       "matcherColor": "#5596c3"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -68.89142717807107,
+      "matcherColor": "#00824a"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -93.77906229392869,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -5897,14 +6052,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -5931,16 +6079,28 @@
     ]
    },
    "byNamesRejected": {
-    "grey": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -133.42211694198895,
+      "matcherColor": "#f00"
      }
     ],
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -61.95900950729306,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -9.453506725504653,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -142.11630315241766,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -5961,6 +6121,12 @@
     "#ffffff"
    ],
    "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 1.6274780817777845,
+      "matcherColor": "#fe3940"
+     }
+    ],
     "grey": [
      {
       "distanceToThreshold": -1,
@@ -5975,16 +6141,22 @@
     ]
    },
    "byNamesRejected": {
-    "grey": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -129.16500663351889,
+      "matcherColor": "#5596c3"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -152.4396832203837,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -30.160967164289005,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -6018,16 +6190,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 17.467659363726526,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -155.70744578820586,
+      "matcherColor": "#f00"
      }
     ],
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -27.71722239270747,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -18.300702423413796,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -45.299572648705464,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -6047,14 +6231,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   },
   "markers": {
    "items": [
@@ -6101,28 +6278,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 40.050062656739996,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -222.67766027094677,
+      "matcherColor": "#fe3940"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 26.608384285872,
-      "matcherColor": "#1d7dc0"
+      "distanceToThreshold": -76.59795020423988,
+      "matcherColor": "#243b7f"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -76.81008734738825,
+      "matcherColor": "#00824a"
      }
     ],
-    "black": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -119.66079149330272,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -6156,16 +6333,28 @@
     ]
    },
    "byNamesRejected": {
-    "black": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -144.0089283934906,
+      "matcherColor": "#f00"
      }
     ],
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -40.6855418018248,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -38.87871358386495,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -19.233831158161223,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -6190,14 +6379,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -6210,6 +6392,12 @@
     "#fefefe"
    ],
    "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 2.5227366719318276,
+      "matcherColor": "#fe3940"
+     }
+    ],
     "grey": [
      {
       "distanceToThreshold": -1,
@@ -6224,16 +6412,22 @@
     ]
    },
    "byNamesRejected": {
-    "grey": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -128.70074269153906,
+      "matcherColor": "#5596c3"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -155.80276646124224,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -29.370017343625932,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -6277,22 +6471,28 @@
     ]
    },
    "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -152.2886135823278,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -40.70253224224304,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -0.46546302318913035,
+      "matcherColor": "#006f00"
+     }
+    ],
     "gold": [
      {
-      "distanceToThreshold": 41.58804736047803,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -60.8966500776593,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -6325,20 +6525,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   },
   "markers": {
    "animals": [
@@ -6381,22 +6568,28 @@
     ]
    },
    "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -186.50173209468787,
+      "matcherColor": "#fe3940"
+     }
+    ],
     "blue": [
      {
-      "distanceToThreshold": 44.0277885027901,
+      "distanceToThreshold": -125.64532574313475,
       "matcherColor": "#5596c3"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -75.43264008354853,
+      "matcherColor": "#00824a"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -75.07405376311175,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -6416,14 +6609,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   },
   "markers": {
    "items": [
@@ -6446,14 +6632,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -6470,14 +6649,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -6523,34 +6695,28 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
+    "blue": [
      {
-      "distanceToThreshold": 2.870239206905353,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -67.1416532848303,
+      "matcherColor": "#243b7f"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": 24.630521632345214,
-      "matcherColor": "#07923f"
+      "distanceToThreshold": -144.86379031259798,
+      "matcherColor": "#006f00"
      }
     ],
-    "grey": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -94.3243337908834,
+      "matcherColor": "#b68f5e"
      }
     ],
-    "black": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -193.3605677488983,
+      "matcherColor": "#f00"
      }
     ]
    }
@@ -6570,14 +6736,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -6609,22 +6768,22 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 40.30228439640779,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -101.58267363144739,
+      "matcherColor": "#fe3940"
      }
     ],
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -142.84748147555987,
+      "matcherColor": "#5596c3"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -164.96274237621463,
+      "matcherColor": "#0f0"
      }
     ]
    }
@@ -6660,22 +6819,28 @@
     ]
    },
    "byNamesRejected": {
+    "blue": [
+     {
+      "distanceToThreshold": -52.06437824031127,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -2.841069373459902,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -63.296390863642074,
+      "matcherColor": "#b68f5e"
+     }
+    ],
     "red": [
      {
-      "distanceToThreshold": 22.094905232786296,
+      "distanceToThreshold": -183.35527334762065,
       "matcherColor": "#f00"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
      }
     ]
    }
@@ -6733,34 +6898,28 @@
     ]
    },
    "byNamesRejected": {
-    "blue": [
+    "red": [
      {
-      "distanceToThreshold": 20.744427147218957,
-      "matcherColor": "#1d7dc0"
+      "distanceToThreshold": -143.38108316653233,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -148.12811677750278,
+      "matcherColor": "#0f0"
      }
     ],
     "gold": [
      {
-      "distanceToThreshold": 24.264863229588727,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -125.21878954360974,
+      "matcherColor": "#b68f5e"
      }
     ],
-    "grey": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -123.93626455341385,
+      "matcherColor": "#5596c3"
      }
     ]
    }
@@ -6796,22 +6955,22 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
+    "blue": [
      {
-      "distanceToThreshold": 6.508503893307491,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -157.9403588140572,
+      "matcherColor": "#243b7f"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -144.02777612924496,
+      "matcherColor": "#006f00"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -55.139046374372924,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -6833,10 +6992,28 @@
     ]
    },
    "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -139.61329650091773,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -51.01801655587259,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -21.103555298649198,
+      "matcherColor": "#006f00"
+     }
+    ],
     "gold": [
      {
-      "distanceToThreshold": 22.410107741574997,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -38.142753171082376,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -6879,28 +7056,28 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
+    "blue": [
      {
-      "distanceToThreshold": 21.681906752706666,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -80.21055595068441,
+      "matcherColor": "#243b7f"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": 42.45007122521575,
-      "matcherColor": "#07923f"
+      "distanceToThreshold": -29.037809119623844,
+      "matcherColor": "#006f00"
      }
     ],
-    "grey": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -160.46768470685222,
+      "matcherColor": "#b68f5e"
      }
     ],
-    "white": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -132,
+      "matcherColor": "#f00"
      }
     ]
    }
@@ -6942,28 +7119,22 @@
     ]
    },
    "byNamesRejected": {
-    "green": [
+    "red": [
      {
-      "distanceToThreshold": 27.212807378489998,
-      "matcherColor": "#07923f"
+      "distanceToThreshold": -198.32714563980278,
+      "matcherColor": "#f00"
      }
     ],
-    "grey": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -66.62148316932637,
+      "matcherColor": "#243b7f"
      }
     ],
-    "black": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -94.89351180730586,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -6999,22 +7170,28 @@
     ]
    },
    "byNamesRejected": {
-    "blue": [
+    "red": [
      {
-      "distanceToThreshold": 9,
-      "matcherColor": "#00f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": 24.54415587728429,
-      "matcherColor": "#ffff00"
+      "distanceToThreshold": -208.5324938373493,
+      "matcherColor": "#f00"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": 65.97917570107137,
+      "distanceToThreshold": -58.43517103436099,
       "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -144.54094944533722,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -91.48597294799279,
+      "matcherColor": "#243b7f"
      }
     ]
    }
@@ -7043,10 +7220,28 @@
     ]
    },
    "byNamesRejected": {
-    "black": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -185.26263029146511,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -123.15757431117353,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -207.38527199577317,
+      "matcherColor": "#0f0"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -58.549567692168324,
+      "matcherColor": "#e6c633"
      }
     ]
    }
@@ -7082,22 +7277,28 @@
     ]
    },
    "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -266.88381565858384,
+      "matcherColor": "#fe3940"
+     }
+    ],
     "blue": [
      {
-      "distanceToThreshold": 27.735468390196644,
-      "matcherColor": "#1d7dc0"
+      "distanceToThreshold": -155.05531263938707,
+      "matcherColor": "#5596c3"
      }
     ],
-    "black": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -60.33702672078948,
+      "matcherColor": "#00824a"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -147.70170918892313,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -7117,14 +7318,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -7170,34 +7364,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 17.268278761557006,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -270.96677557497935,
+      "matcherColor": "#fe3940"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 24.41910625068561,
-      "matcherColor": "#1d7dc0"
+      "distanceToThreshold": -171.0398374760468,
+      "matcherColor": "#5596c3"
      }
     ],
-    "black": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -66.77539193392383,
+      "matcherColor": "#00824a"
      }
     ],
-    "grey": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -150.6205118216172,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -7217,14 +7405,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -7237,6 +7418,12 @@
     "#ffffff"
    ],
    "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 2.4137715517325553,
+      "matcherColor": "#fe3940"
+     }
+    ],
     "grey": [
      {
       "distanceToThreshold": -1,
@@ -7251,16 +7438,28 @@
     ]
    },
    "byNamesRejected": {
-    "grey": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -22.596296229444846,
+      "matcherColor": "#5596c3"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -41.00495037373169,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -19.40403012442127,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": -150.38015411901608,
+      "matcherColor": "#fe3940"
      }
     ]
    }
@@ -7271,9 +7470,9 @@
   "colors": {
    "hexPalette": [
     "#fcdb00",
-    "#015198",
+    "#005298",
     "#db261e",
-    "#160e00",
+    "#200e00",
     "#ffffff"
    ],
    "byNames": {
@@ -7285,7 +7484,7 @@
     ],
     "blue": [
      {
-      "distanceToThreshold": 12.313523929734544,
+      "distanceToThreshold": 12.481582517933113,
       "matcherColor": "#0059c7"
      }
     ],
@@ -7303,28 +7502,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 13.875216263623116,
-      "matcherColor": "#ffff00"
+      "distanceToThreshold": -143.4390297150433,
+      "matcherColor": "#f00"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 12.313523929734544,
-      "matcherColor": "#0059c7"
+      "distanceToThreshold": -74.7961423780369,
+      "matcherColor": "#243b7f"
      }
     ],
-    "red": [
+    "green": [
      {
-      "distanceToThreshold": 19.667587484006575,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -12.142057938931302,
+      "matcherColor": "#006f00"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -159.03652663425797,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -7344,14 +7543,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -7391,28 +7583,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 10.83700578687258,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -150.70327262524907,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -73.90668392578468,
+      "matcherColor": "#243b7f"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": 39,
-      "matcherColor": "#07923f"
+      "distanceToThreshold": -6.30160954002794,
+      "matcherColor": "#006f00"
      }
     ],
-    "grey": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -161.60776159692603,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -7432,14 +7624,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -7456,14 +7641,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -7489,16 +7667,28 @@
     ]
    },
    "byNamesRejected": {
-    "black": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -154.86379031259798,
+      "matcherColor": "#f00"
      }
     ],
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -90.8683703907777,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -58.361046100383106,
+      "matcherColor": "#0f0"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -20.65977932030313,
+      "matcherColor": "#bfa14e"
      }
     ]
    }
@@ -7542,28 +7732,28 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": 25.355695630743,
-      "matcherColor": "#f00"
-     }
-    ],
     "blue": [
      {
-      "distanceToThreshold": 18.02419827061533,
-      "matcherColor": "#5596c3"
+      "distanceToThreshold": -78.64342753985852,
+      "matcherColor": "#243b7f"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": 12.173269373562917,
-      "matcherColor": "#006f00"
+      "distanceToThreshold": -118.50770291502829,
+      "matcherColor": "#07923f"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -32.2062904578641,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": -156.19881847100964,
+      "matcherColor": "#fe3940"
      }
     ]
    }
@@ -7592,16 +7782,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 17.04653681017094,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -150.84410323852762,
+      "matcherColor": "#f00"
      }
     ],
-    "black": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -17.26577508832743,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -13.797018909980366,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -55.77132632910448,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -7636,22 +7838,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 15.356971428900572,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -196.34941650019817,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -90.51245795614395,
+      "matcherColor": "#243b7f"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": 59.98333796039273,
-      "matcherColor": "#006f00"
+      "distanceToThreshold": -169.9869561518653,
+      "matcherColor": "#07923f"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -131.73158320944412,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -7671,14 +7879,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -7695,14 +7896,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -7727,16 +7921,22 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 13.875216263623116,
-      "matcherColor": "#ffff00"
+      "distanceToThreshold": -139.02054698132775,
+      "matcherColor": "#f00"
      }
     ],
-    "black": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -185.84770076116888,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -164.55844122715712,
+      "matcherColor": "#0f0"
      }
     ]
    }
@@ -7780,22 +7980,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 15.055589891511538,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -160.85265205099984,
+      "matcherColor": "#f00"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 24.77217009238293,
-      "matcherColor": "#243b7f"
+      "distanceToThreshold": -142.25435878740376,
+      "matcherColor": "#5596c3"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -34.8525170989152,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -76.87220316777254,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -7815,14 +8021,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -7856,22 +8055,28 @@
     ]
    },
    "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -138.76611034209446,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -24.694794521981848,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -153.29088119279737,
+      "matcherColor": "#07923f"
+     }
+    ],
     "gold": [
      {
-      "distanceToThreshold": 30.5835121610524,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -24.7938677028003,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -7901,16 +8106,28 @@
     ]
    },
    "byNamesRejected": {
-    "black": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -140.7893439298834,
+      "matcherColor": "#fe3940"
      }
     ],
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -28.157292865529882,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -140.37464909513878,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -12.725511342306831,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -7930,14 +8147,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -7977,28 +8187,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 18,
-      "matcherColor": "#ffff00"
+      "distanceToThreshold": -176.51705596314645,
+      "matcherColor": "#f00"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 13.675060712398121,
-      "matcherColor": "#0099ff"
+      "distanceToThreshold": -66.78327965469263,
+      "matcherColor": "#243b7f"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": 4.413786156881557,
-      "matcherColor": "#006f00"
+      "distanceToThreshold": -89.89329538041386,
+      "matcherColor": "#00824a"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -172.09696249628084,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -8047,34 +8257,28 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": 13.404204336910283,
-      "matcherColor": "#f00"
-     }
-    ],
     "blue": [
      {
-      "distanceToThreshold": 23.889059829464422,
-      "matcherColor": "#2e3192"
+      "distanceToThreshold": -165.41801074900758,
+      "matcherColor": "#5596c3"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -49.238271681677574,
+      "matcherColor": "#00824a"
      }
     ],
-    "black": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -118.202132422707,
+      "matcherColor": "#b68f5e"
      }
     ],
-    "white": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -207.3221188840149,
+      "matcherColor": "#f00"
      }
     ]
    }
@@ -8094,14 +8298,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -8133,22 +8330,22 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 43.47728835814169,
-      "matcherColor": "#b68f5e"
+      "distanceToThreshold": -86.1077086157504,
+      "matcherColor": "#fe3940"
      }
     ],
-    "grey": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -70.72491499417075,
+      "matcherColor": "#5596c3"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -129.66565503054863,
+      "matcherColor": "#006f00"
      }
     ]
    }
@@ -8190,28 +8387,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 14.86686361441297,
-      "matcherColor": "#bfa14e"
+      "distanceToThreshold": -191.82425476038458,
+      "matcherColor": "#fe3940"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 11.72848324520686,
+      "distanceToThreshold": -90.95320997278759,
       "matcherColor": "#5596c3"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -54.791114638721055,
+      "matcherColor": "#00824a"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -89.41887430977386,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -8231,14 +8428,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -8255,14 +8445,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -8279,14 +8462,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -8303,14 +8479,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   },
   "markers": {
    "animals": [
@@ -8335,14 +8504,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -8381,28 +8543,28 @@
     ]
    },
    "byNamesRejected": {
-    "blue": [
+    "red": [
      {
-      "distanceToThreshold": 30.913920855502028,
-      "matcherColor": "#1d7dc0"
+      "distanceToThreshold": -107.92026682108761,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -74.4810019424736,
+      "matcherColor": "#006f00"
      }
     ],
     "gold": [
      {
-      "distanceToThreshold": 15.16697645708021,
+      "distanceToThreshold": -118.26665420094696,
       "matcherColor": "#b68f5e"
      }
     ],
-    "black": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -63.25152704247171,
+      "matcherColor": "#5596c3"
      }
     ]
    }
@@ -8422,14 +8584,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -8462,22 +8617,28 @@
     ]
    },
    "byNamesRejected": {
+    "blue": [
+     {
+      "distanceToThreshold": -59.03360869939212,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -20.634533487514645,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -155.5736533067063,
+      "matcherColor": "#b68f5e"
+     }
+    ],
     "red": [
      {
-      "distanceToThreshold": 16.328970481073576,
+      "distanceToThreshold": -144.0044642412289,
       "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
      }
     ]
    }
@@ -8500,10 +8661,28 @@
     ]
    },
    "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -112.52368224263643,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -72.15899515356494,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -3.4113554499507615,
+      "matcherColor": "#b68f5e"
+     }
+    ],
     "blue": [
      {
-      "distanceToThreshold": 22.039494207795386,
-      "matcherColor": "#2e3192"
+      "distanceToThreshold": -28.784190027779317,
+      "matcherColor": "#5596c3"
      }
     ]
    }
@@ -8539,22 +8718,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 16,
-      "matcherColor": "#ffff00"
+      "distanceToThreshold": -156.32604596192948,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -72.44244032786469,
+      "matcherColor": "#243b7f"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": 1.7050397814235367,
-      "matcherColor": "#006f00"
+      "distanceToThreshold": -167.25668115716644,
+      "matcherColor": "#0f0"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -161.36847110643376,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -8574,14 +8759,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -8598,14 +8776,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -8644,28 +8815,28 @@
     ]
    },
    "byNamesRejected": {
-    "blue": [
+    "red": [
      {
-      "distanceToThreshold": 22.120815486048876,
-      "matcherColor": "#5596c3"
+      "distanceToThreshold": -107.13132391981054,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -169.49373788205372,
+      "matcherColor": "#0f0"
      }
     ],
     "gold": [
      {
-      "distanceToThreshold": 27.42700505019534,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -82.01760454253551,
+      "matcherColor": "#b68f5e"
      }
     ],
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -114.78706322546165,
+      "matcherColor": "#5596c3"
      }
     ]
    }
@@ -8701,22 +8872,28 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
+    "blue": [
      {
-      "distanceToThreshold": 79,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -32.82730166054668,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -19.51100552753688,
+      "matcherColor": "#07923f"
      }
     ],
     "gold": [
      {
-      "distanceToThreshold": 17.69160839738764,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -41.336074524327216,
+      "matcherColor": "#b68f5e"
      }
     ],
-    "black": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -152.13142829009604,
+      "matcherColor": "#f00"
      }
     ]
    }
@@ -8736,14 +8913,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -8760,14 +8930,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -8784,14 +8947,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -8816,16 +8972,22 @@
     ]
    },
    "byNamesRejected": {
-    "green": [
+    "red": [
      {
-      "distanceToThreshold": 13.888240067647885,
-      "matcherColor": "#006f00"
+      "distanceToThreshold": -177.05057868053905,
+      "matcherColor": "#f00"
      }
     ],
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -63.903188013868316,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -81.6368596093545,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -8867,28 +9029,28 @@
     ]
    },
    "byNamesRejected": {
-    "blue": [
+    "red": [
      {
-      "distanceToThreshold": 53,
-      "matcherColor": "#0000bf"
+      "distanceToThreshold": -204.8806767753826,
+      "matcherColor": "#f00"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": 71.97224362268005,
-      "matcherColor": "#006f00"
+      "distanceToThreshold": -110.29386365926402,
+      "matcherColor": "#00824a"
      }
     ],
-    "grey": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -144.4333632262601,
+      "matcherColor": "#b68f5e"
      }
     ],
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -89.17774632967212,
+      "matcherColor": "#243b7f"
      }
     ]
    }
@@ -8938,34 +9100,28 @@
     ]
    },
    "byNamesRejected": {
-    "blue": [
+    "red": [
      {
-      "distanceToThreshold": 10.884155217490104,
-      "matcherColor": "#5596c3"
+      "distanceToThreshold": -150.17213991069764,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -128.62396454321492,
+      "matcherColor": "#00824a"
      }
     ],
     "gold": [
      {
-      "distanceToThreshold": 47.763932022500214,
-      "matcherColor": "#ffff00"
+      "distanceToThreshold": -33.69098142297368,
+      "matcherColor": "#b68f5e"
      }
     ],
-    "grey": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -197.60583567353189,
+      "matcherColor": "#5596c3"
      }
     ]
    }
@@ -9001,22 +9157,28 @@
     ]
    },
    "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -146.43412368360038,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -154.2946862393597,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -167.27222936026345,
+      "matcherColor": "#0f0"
+     }
+    ],
     "gold": [
      {
-      "distanceToThreshold": 19.171088674812793,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -41.21758740456127,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -9071,34 +9233,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
-     {
-      "distanceToThreshold": 15.634319445120838,
-      "matcherColor": "#ffff00"
-     }
-    ],
     "red": [
      {
-      "distanceToThreshold": 18.355859970310235,
+      "distanceToThreshold": -181.46510283401108,
       "matcherColor": "#f00"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 22.717296235385504,
-      "matcherColor": "#1d7dc0"
+      "distanceToThreshold": -25.761296631988955,
+      "matcherColor": "#243b7f"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -16.235587257754645,
+      "matcherColor": "#006f00"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -160.6762334280699,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -9135,22 +9291,28 @@
     ]
    },
    "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -169.29099462275005,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -1.1811384004389396,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -68.47567863218313,
+      "matcherColor": "#b68f5e"
+     }
+    ],
     "blue": [
      {
-      "distanceToThreshold": 18.836285266507886,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -76.7662239004938,
+      "matcherColor": "#243b7f"
      }
     ]
    }
@@ -9174,10 +9336,28 @@
     ]
    },
    "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -208.52463185172303,
+      "matcherColor": "#fe3940"
+     }
+    ],
     "blue": [
      {
-      "distanceToThreshold": 37.55005567935635,
-      "matcherColor": "#243b7f"
+      "distanceToThreshold": -119.82242116439286,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -232.23283507426737,
+      "matcherColor": "#0f0"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -98.71357849913159,
+      "matcherColor": "#e6c633"
      }
     ]
    }
@@ -9219,28 +9399,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
-     {
-      "distanceToThreshold": 20.693511985932908,
-      "matcherColor": "#e6c633"
-     }
-    ],
     "red": [
      {
-      "distanceToThreshold": 57.97728445445476,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -146.5984144889189,
+      "matcherColor": "#fe3940"
      }
     ],
-    "black": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -187.0647688360281,
+      "matcherColor": "#2e3192"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -188.06653879961897,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -115.54771431152272,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -9283,28 +9463,28 @@
     ]
    },
    "byNamesRejected": {
+    "blue": [
+     {
+      "distanceToThreshold": -92.75994906227544,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -10.324473584464926,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -75.94116374373144,
+      "matcherColor": "#bfa14e"
+     }
+    ],
     "red": [
      {
-      "distanceToThreshold": 72.12599212598819,
+      "distanceToThreshold": -182.26132006073635,
       "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
      }
     ]
    }
@@ -9324,14 +9504,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   },
   "markers": {
    "animals": [
@@ -9354,14 +9527,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   },
   "markers": {
    "animals": [
@@ -9399,22 +9565,22 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 13.438213092708736,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -158.07977031036592,
+      "matcherColor": "#fe3940"
      }
     ],
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -146.35591443565153,
+      "matcherColor": "#5596c3"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -152.57370014080257,
+      "matcherColor": "#0f0"
      }
     ]
    }
@@ -9471,34 +9637,28 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
+    "blue": [
      {
-      "distanceToThreshold": 58.69272424733748,
-      "matcherColor": "#f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": 19.52778731030388,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -5.391130897087265,
+      "matcherColor": "#0059c7"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": 56.47389077151958,
-      "matcherColor": "#006f00"
+      "distanceToThreshold": -120.87011914630895,
+      "matcherColor": "#00824a"
      }
     ],
-    "grey": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -150.32593753505535,
+      "matcherColor": "#b68f5e"
      }
     ],
-    "white": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -237.79283037452666,
+      "matcherColor": "#fe3940"
      }
     ]
    }
@@ -9548,28 +9708,28 @@
     ]
    },
    "byNamesRejected": {
-    "green": [
+    "red": [
      {
-      "distanceToThreshold": 3.3607909659748145,
-      "matcherColor": "#07923f"
+      "distanceToThreshold": -256.1398518474119,
+      "matcherColor": "#f00"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 43.84450557859649,
-      "matcherColor": "#0059c7"
+      "distanceToThreshold": -60.584494166319786,
+      "matcherColor": "#5596c3"
      }
     ],
-    "black": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -163.95088747312434,
+      "matcherColor": "#b68f5e"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -83.92706486272832,
+      "matcherColor": "#00824a"
      }
     ]
    }
@@ -9589,14 +9749,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -9635,28 +9788,28 @@
     ]
    },
    "byNamesRejected": {
-    "green": [
+    "red": [
      {
-      "distanceToThreshold": 4.741569331825019,
-      "matcherColor": "#006f00"
+      "distanceToThreshold": -105.76598181583194,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -140.3724120664835,
+      "matcherColor": "#5596c3"
      }
     ],
     "gold": [
      {
-      "distanceToThreshold": 7.760168453564091,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -66.763559432512,
+      "matcherColor": "#b68f5e"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -124.05373157223866,
+      "matcherColor": "#006f00"
      }
     ]
    }
@@ -9699,28 +9852,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 44.6148351928655,
-      "matcherColor": "#ffff00"
+      "distanceToThreshold": -135,
+      "matcherColor": "#f00"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 45.54316770519904,
-      "matcherColor": "#0000bf"
+      "distanceToThreshold": -80.09282636880448,
+      "matcherColor": "#243b7f"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -27.987287450809717,
+      "matcherColor": "#006f00"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -162.3713110992513,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -9740,14 +9893,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -9780,22 +9926,22 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
+    "blue": [
      {
-      "distanceToThreshold": 2,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -145.36414976655004,
+      "matcherColor": "#5596c3"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -152.12806528777287,
+      "matcherColor": "#006f00"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -50.69778678907723,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -9837,28 +9983,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 16.458980337503156,
-      "matcherColor": "#ffff00"
+      "distanceToThreshold": -220.88203668547578,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -64.03628501370073,
+      "matcherColor": "#243b7f"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": 46.03575995623106,
-      "matcherColor": "#07923f"
+      "distanceToThreshold": -151.8677324489565,
+      "matcherColor": "#0f0"
      }
     ],
-    "grey": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -126.9545399288287,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -9878,14 +10024,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -9918,22 +10057,28 @@
     ]
    },
    "byNamesRejected": {
+    "blue": [
+     {
+      "distanceToThreshold": -26.67756341753038,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -6.113538704262382,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -61.27654348636426,
+      "matcherColor": "#b68f5e"
+     }
+    ],
     "red": [
      {
-      "distanceToThreshold": 4.607692700116942,
+      "distanceToThreshold": -153.04506002058915,
       "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
      }
     ]
    }
@@ -9962,16 +10107,28 @@
     ]
    },
    "byNamesRejected": {
-    "green": [
+    "red": [
      {
-      "distanceToThreshold": 13.835703902681544,
-      "matcherColor": "#006f00"
+      "distanceToThreshold": -156.5079279855117,
+      "matcherColor": "#f00"
      }
     ],
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -99.33488227336031,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -35.189285111298105,
+      "matcherColor": "#bfa14e"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -46.769879725033036,
+      "matcherColor": "#0f0"
      }
     ]
    }
@@ -10007,22 +10164,22 @@
     ]
    },
    "byNamesRejected": {
-    "blue": [
+    "red": [
      {
-      "distanceToThreshold": 18.258603838267476,
-      "matcherColor": "#5596c3"
+      "distanceToThreshold": -149.36276090649363,
+      "matcherColor": "#fe3940"
      }
     ],
-    "black": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
+      "distanceToThreshold": -80.42791745233566,
+      "matcherColor": "#07923f"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -19.567581338130424,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -10045,10 +10202,28 @@
     ]
    },
    "byNamesRejected": {
-    "white": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -221.2588306905849,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -7.155034278003697,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -10.370448343036728,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -91.69377047196105,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -10083,22 +10258,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 48.819660112501055,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -158.01050396988785,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -19.887420787005013,
+      "matcherColor": "#243b7f"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": 14.84017030354579,
-      "matcherColor": "#006f00"
+      "distanceToThreshold": -154.79583329787295,
+      "matcherColor": "#0f0"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -87.70578864756791,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -10134,22 +10315,28 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 28.535734554895452,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -142.32817529353696,
+      "matcherColor": "#fe3940"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": 17.023814024664844,
-      "matcherColor": "#5596c3"
+      "distanceToThreshold": -69.63795740445775,
+      "matcherColor": "#243b7f"
      }
     ],
-    "white": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -104.86357996840903,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -22.97590011563598,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -10169,14 +10356,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -10202,16 +10382,28 @@
     ]
    },
    "byNamesRejected": {
-    "blue": [
+    "red": [
      {
-      "distanceToThreshold": 39.09545503963312,
-      "matcherColor": "#243b7f"
+      "distanceToThreshold": -188.64474683120085,
+      "matcherColor": "#f00"
      }
     ],
-    "grey": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -79.26707129849535,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -25.854528127525114,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -125.48854412065452,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -10234,10 +10426,28 @@
     ]
    },
    "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -172.06434618705003,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -94.79416466232504,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -66.25767303415662,
+      "matcherColor": "#bfa14e"
+     }
+    ],
     "green": [
      {
-      "distanceToThreshold": 28.502032553912805,
-      "matcherColor": "#006f00"
+      "distanceToThreshold": -208.66034219494225,
+      "matcherColor": "#0f0"
      }
     ]
    }
@@ -10272,22 +10482,22 @@
     ]
    },
    "byNamesRejected": {
-    "gold": [
+    "red": [
      {
-      "distanceToThreshold": 2.781121996320131,
-      "matcherColor": "#bfa14e"
+      "distanceToThreshold": -90.30854353202602,
+      "matcherColor": "#f00"
      }
     ],
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -126.00970850908945,
+      "matcherColor": "#5596c3"
      }
     ],
-    "grey": [
+    "green": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -111.68044030098704,
+      "matcherColor": "#006f00"
      }
     ]
    }
@@ -10315,16 +10525,28 @@
     ]
    },
    "byNamesRejected": {
-    "green": [
+    "red": [
      {
-      "distanceToThreshold": 45.269080137343764,
-      "matcherColor": "#07923f"
+      "distanceToThreshold": -141.16509670379727,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -180.57436558495158,
+      "matcherColor": "#5596c3"
      }
     ],
     "gold": [
      {
-      "distanceToThreshold": 14.94290371408379,
-      "matcherColor": "#ffff00"
+      "distanceToThreshold": -117.36403243047897,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -164.40911933340755,
+      "matcherColor": "#0f0"
      }
     ]
    }
@@ -10366,28 +10588,28 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
+    "blue": [
      {
-      "distanceToThreshold": 63.326667999466935,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -46.29675441893792,
+      "matcherColor": "#243b7f"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": 40.66441446582396,
-      "matcherColor": "#006f00"
+      "distanceToThreshold": -69.26716520447101,
+      "matcherColor": "#07923f"
      }
     ],
-    "blue": [
+    "gold": [
      {
-      "distanceToThreshold": 7.21263845968862,
-      "matcherColor": "#5596c3"
+      "distanceToThreshold": -15.61084578286372,
+      "matcherColor": "#b68f5e"
      }
     ],
-    "white": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -152.00274723201295,
+      "matcherColor": "#fe3940"
      }
     ]
    }
@@ -10415,16 +10637,22 @@
     ]
    },
    "byNamesRejected": {
-    "green": [
+    "red": [
      {
-      "distanceToThreshold": 54,
-      "matcherColor": "#07923f"
+      "distanceToThreshold": -219.6681497923995,
+      "matcherColor": "#f00"
      }
     ],
-    "white": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -53.53413583587978,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -123.66001197865583,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -10446,10 +10674,28 @@
     ]
    },
    "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -151.08656386730925,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -31.92388155425118,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -12.47068372797375,
+      "matcherColor": "#07923f"
+     }
+    ],
     "gold": [
      {
-      "distanceToThreshold": 18.3706834070027,
-      "matcherColor": "#e6c633"
+      "distanceToThreshold": -50.32225523438143,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -10484,22 +10730,22 @@
     ]
    },
    "byNamesRejected": {
-    "green": [
+    "red": [
      {
-      "distanceToThreshold": 45.7873295964481,
-      "matcherColor": "#07923f"
+      "distanceToThreshold": -219.71152797314954,
+      "matcherColor": "#f00"
      }
     ],
-    "grey": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -63.17467272130257,
+      "matcherColor": "#243b7f"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -127.10692130437079,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -10519,14 +10765,7 @@
      }
     ]
    },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
+   "byNamesRejected": {}
   }
  },
  {
@@ -10572,34 +10811,28 @@
     ]
    },
    "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": 30.31835584068834,
-      "matcherColor": "#0059c7"
-     }
-    ],
     "red": [
      {
-      "distanceToThreshold": 6.1014208526307385,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -112.94404499663497,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -94.7578754054216,
+      "matcherColor": "#07923f"
      }
     ],
     "gold": [
      {
-      "distanceToThreshold": 12.450026288125038,
+      "distanceToThreshold": -53.61778029868388,
       "matcherColor": "#b68f5e"
      }
     ],
-    "black": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -16.072888995803595,
+      "matcherColor": "#5596c3"
      }
     ]
    }
@@ -10610,7 +10843,6 @@
   "colors": {
    "hexPalette": [
     "#00973f",
-    "#97a0a1",
     "#ffffff"
    ],
    "byNames": {
@@ -10618,12 +10850,6 @@
      {
       "distanceToThreshold": 51.39767473295737,
       "matcherColor": "#07923f"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
      }
     ],
     "white": [
@@ -10634,22 +10860,22 @@
     ]
    },
    "byNamesRejected": {
-    "green": [
+    "red": [
      {
-      "distanceToThreshold": 51.39767473295737,
-      "matcherColor": "#07923f"
+      "distanceToThreshold": -222.9768968089811,
+      "matcherColor": "#f00"
      }
     ],
-    "grey": [
+    "blue": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -57.71151175649729,
+      "matcherColor": "#243b7f"
      }
     ],
-    "white": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -124.79448043705202,
+      "matcherColor": "#b68f5e"
      }
     ]
    }
@@ -10691,28 +10917,28 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
+    "blue": [
      {
-      "distanceToThreshold": 31.358453971938765,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -31.010988347561636,
+      "matcherColor": "#243b7f"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": 28.69747150402359,
+      "distanceToThreshold": -151.1016383187804,
       "matcherColor": "#006f00"
      }
     ],
-    "grey": [
+    "gold": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
+      "distanceToThreshold": -110.20575783445165,
+      "matcherColor": "#b68f5e"
      }
     ],
-    "white": [
+    "red": [
      {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
+      "distanceToThreshold": -156.4910146284632,
+      "matcherColor": "#f00"
      }
     ]
    }
