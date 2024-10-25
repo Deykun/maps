@@ -1,34 +1,6 @@
 [
  {
   "lang": "de",
-  "index": 7949,
-  "id": "formerGemeinde-7949",
-  "title": "Großstöbnitz",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Altenburger_Land",
-  "type": [
-   "formerGemeinde"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Altenburger Land | Wappen ehemals selbstständiger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.92277778,
-    "lon": 12.38694444
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-grosstobnitz-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-grosstobnitz-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
   "index": 7947,
   "id": "formerGemeinde-7947",
   "title": "Drogen (Schmölln)",
@@ -85,9 +57,9 @@
  },
  {
   "lang": "de",
-  "index": 7952,
-  "id": "formerGemeinde-7952",
-  "title": "Jückelberg",
+  "index": 7949,
+  "id": "formerGemeinde-7949",
+  "title": "Großstöbnitz",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Altenburger_Land",
   "type": [
    "formerGemeinde"
@@ -96,46 +68,18 @@
   "place": {
    "name": "Liste der Wappen im Landkreis Altenburger Land | Wappen ehemals selbstständiger Städte und Gemeinden",
    "coordinates": {
-    "lat": 50.92638889,
-    "lon": 12.62888889
+    "lat": 50.92277778,
+    "lon": 12.38694444
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-juckelberg-80w.webp"
+    "path": "images/heraldry/de/formerUnit/3408fb18-grosstobnitz-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-juckelberg-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 7951,
-  "id": "formerGemeinde-7951",
-  "title": "Großröda",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Altenburger_Land",
-  "type": [
-   "formerGemeinde"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Altenburger Land | Wappen ehemals selbstständiger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.99666667,
-    "lon": 12.32194444
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-grosroda-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-grosroda-320w.webp"
+    "path": "images/heraldry/de/formerUnit/3408fb18-grosstobnitz-320w.webp"
    }
   ]
  },
@@ -169,6 +113,62 @@
  },
  {
   "lang": "de",
+  "index": 7951,
+  "id": "formerGemeinde-7951",
+  "title": "Großröda",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Altenburger_Land",
+  "type": [
+   "formerGemeinde"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Altenburger Land | Wappen ehemals selbstständiger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.99666667,
+    "lon": 12.32194444
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-grosroda-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-grosroda-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 7952,
+  "id": "formerGemeinde-7952",
+  "title": "Jückelberg",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Altenburger_Land",
+  "type": [
+   "formerGemeinde"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Altenburger Land | Wappen ehemals selbstständiger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.92638889,
+    "lon": 12.62888889
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-juckelberg-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-juckelberg-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 7953,
   "id": "formerGemeinde-7953",
   "title": "Lumpzig",
@@ -192,6 +192,34 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/formerUnit/18d609e2-lumpzig-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 7954,
+  "id": "formerGemeinde-7954",
+  "title": "Naundorf (Starkenberg)",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Altenburger_Land",
+  "type": [
+   "formerGemeinde"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Altenburger Land | Wappen ehemals selbstständiger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.97694444,
+    "lon": 12.26583333
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/1d56d9e2-naundorf-starkenberg-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/1d56d9e2-naundorf-starkenberg-320w.webp"
    }
   ]
  },
@@ -253,6 +281,34 @@
  },
  {
   "lang": "de",
+  "index": 7957,
+  "id": "formerGemeinde-7957",
+  "title": "Tegkwitz",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Altenburger_Land",
+  "type": [
+   "formerGemeinde"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Altenburger Land | Wappen ehemals selbstständiger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.98,
+    "lon": 12.34166667
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/6ac1530a-tegkwitz-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/6ac1530a-tegkwitz-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 7958,
   "id": "formerGemeinde-7958",
   "title": "Wildenbörten",
@@ -309,9 +365,9 @@
  },
  {
   "lang": "de",
-  "index": 7954,
-  "id": "formerGemeinde-7954",
-  "title": "Naundorf (Starkenberg)",
+  "index": 7960,
+  "id": "formerGemeinde-7960",
+  "title": "Ziegelheim",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Altenburger_Land",
   "type": [
    "formerGemeinde"
@@ -320,18 +376,47 @@
   "place": {
    "name": "Liste der Wappen im Landkreis Altenburger Land | Wappen ehemals selbstständiger Städte und Gemeinden",
    "coordinates": {
-    "lat": 50.97694444,
-    "lon": 12.26583333
+    "lat": 50.92583333,
+    "lon": 12.55333333
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/1d56d9e2-naundorf-starkenberg-80w.webp"
+    "path": "images/heraldry/de/formerUnit/479a742f-ziegelheim-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/1d56d9e2-naundorf-starkenberg-320w.webp"
+    "path": "images/heraldry/de/formerUnit/479a742f-ziegelheim-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 7962,
+  "id": "formerGemeinde-7962",
+  "title": "Nesse-Apfelstädt",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Gotha",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Gotha | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.9125,
+    "lon": 10.91333333
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/421bb445-nesseapfelstadt-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/421bb445-nesseapfelstadt-320w.webp"
    }
   ]
  },
@@ -453,63 +538,6 @@
  },
  {
   "lang": "de",
-  "index": 7957,
-  "id": "formerGemeinde-7957",
-  "title": "Tegkwitz",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Altenburger_Land",
-  "type": [
-   "formerGemeinde"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Altenburger Land | Wappen ehemals selbstständiger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.98,
-    "lon": 12.34166667
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/6ac1530a-tegkwitz-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/6ac1530a-tegkwitz-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 7968,
-  "id": "formerCity-7968",
-  "title": "Friedrichroda",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Gotha",
-  "type": [
-   "formerCity",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Gotha | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.85794,
-    "lon": 10.56424
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/497bdb19-friedrichroda-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/497bdb19-friedrichroda-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
   "index": 7967,
   "id": "formerGemeinde-7967",
   "title": "Hörsel (Gemeinde)",
@@ -539,59 +567,30 @@
  },
  {
   "lang": "de",
-  "index": 7962,
-  "id": "formerGemeinde-7962",
-  "title": "Nesse-Apfelstädt",
+  "index": 7968,
+  "id": "formerCity-7968",
+  "title": "Friedrichroda",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Gotha",
   "type": [
-   "formerGemeinde",
+   "formerCity",
    "formerOrtsteil"
   ],
   "spriteRoot": "formerUnit",
   "place": {
    "name": "Liste der Wappen im Landkreis Gotha | Wappen ehemaliger Städte und Gemeinden",
    "coordinates": {
-    "lat": 50.9125,
-    "lon": 10.91333333
+    "lat": 50.85794,
+    "lon": 10.56424
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/421bb445-nesseapfelstadt-80w.webp"
+    "path": "images/heraldry/de/formerUnit/497bdb19-friedrichroda-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/421bb445-nesseapfelstadt-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 7971,
-  "id": "formerGemeinde-7971",
-  "title": "Hörsel (Gemeinde)",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Gotha",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Gotha | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.91666667,
-    "lon": 10.58333333
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-horsel-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-horsel-320w.webp"
+    "path": "images/heraldry/de/formerUnit/497bdb19-friedrichroda-320w.webp"
    }
   ]
  },
@@ -655,6 +654,35 @@
  },
  {
   "lang": "de",
+  "index": 7971,
+  "id": "formerGemeinde-7971",
+  "title": "Hörsel (Gemeinde)",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Gotha",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Gotha | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.91666667,
+    "lon": 10.58333333
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-horsel-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-horsel-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 7972,
   "id": "formerGemeinde-7972",
   "title": "Nesse-Apfelstädt",
@@ -679,34 +707,6 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/formerUnit/1a65e173-nesseapfelstadt-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 7960,
-  "id": "formerGemeinde-7960",
-  "title": "Ziegelheim",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Altenburger_Land",
-  "type": [
-   "formerGemeinde"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Altenburger Land | Wappen ehemals selbstständiger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.92583333,
-    "lon": 12.55333333
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/479a742f-ziegelheim-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/479a742f-ziegelheim-320w.webp"
    }
   ]
  },
@@ -741,35 +741,6 @@
  },
  {
   "lang": "de",
-  "index": 7975,
-  "id": "formerCity-7975",
-  "title": "Ohrdruf",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Gotha",
-  "type": [
-   "formerCity",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Gotha | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.82805556,
-    "lon": 10.73277778
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/15d25b78-ohrdruf-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/15d25b78-ohrdruf-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
   "index": 7974,
   "id": "formerGemeinde-7974",
   "title": "Drei Gleichen (Gemeinde)",
@@ -794,6 +765,35 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/formerUnit/7f4e249b-drei-gleichen-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 7975,
+  "id": "formerCity-7975",
+  "title": "Ohrdruf",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Gotha",
+  "type": [
+   "formerCity",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Gotha | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.82805556,
+    "lon": 10.73277778
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/15d25b78-ohrdruf-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/15d25b78-ohrdruf-320w.webp"
    }
   ]
  },
@@ -857,9 +857,9 @@
  },
  {
   "lang": "de",
-  "index": 7980,
-  "id": "formerGemeinde-7980",
-  "title": "Nesse-Apfelstädt",
+  "index": 7978,
+  "id": "formerGemeinde-7978",
+  "title": "Georgenthal",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Gotha",
   "type": [
    "formerGemeinde",
@@ -869,18 +869,18 @@
   "place": {
    "name": "Liste der Wappen im Landkreis Gotha | Wappen ehemaliger Städte und Gemeinden",
    "coordinates": {
-    "lat": 50.9125,
-    "lon": 10.91333333
+    "lat": 50.82944444,
+    "lon": 10.65722222
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3f65b42-nesseapfelstadt-80w.webp"
+    "path": "images/heraldry/de/formerUnit/1f3ad623-georgenthal-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3f65b42-nesseapfelstadt-320w.webp"
+    "path": "images/heraldry/de/formerUnit/1f3ad623-georgenthal-320w.webp"
    }
   ]
  },
@@ -915,9 +915,9 @@
  },
  {
   "lang": "de",
-  "index": 7983,
-  "id": "formerGemeinde-7983",
-  "title": "Hörsel (Gemeinde)",
+  "index": 7980,
+  "id": "formerGemeinde-7980",
+  "title": "Nesse-Apfelstädt",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Gotha",
   "type": [
    "formerGemeinde",
@@ -927,47 +927,18 @@
   "place": {
    "name": "Liste der Wappen im Landkreis Gotha | Wappen ehemaliger Städte und Gemeinden",
    "coordinates": {
-    "lat": 50.91666667,
-    "lon": 10.58333333
+    "lat": 50.9125,
+    "lon": 10.91333333
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-horsel-80w.webp"
+    "path": "images/heraldry/de/formerUnit/3f65b42-nesseapfelstadt-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-horsel-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 7978,
-  "id": "formerGemeinde-7978",
-  "title": "Georgenthal",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Gotha",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Gotha | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.82944444,
-    "lon": 10.65722222
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/1f3ad623-georgenthal-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/1f3ad623-georgenthal-320w.webp"
+    "path": "images/heraldry/de/formerUnit/3f65b42-nesseapfelstadt-320w.webp"
    }
   ]
  },
@@ -1002,35 +973,6 @@
  },
  {
   "lang": "de",
-  "index": 7985,
-  "id": "formerGemeinde-7985",
-  "title": "Georgenthal",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Gotha",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Gotha | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.82944444,
-    "lon": 10.65722222
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/56f37a8f-georgenthal-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/56f37a8f-georgenthal-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
   "index": 7982,
   "id": "formerGemeinde-7982",
   "title": "Hörsel (Gemeinde)",
@@ -1060,6 +1002,93 @@
  },
  {
   "lang": "de",
+  "index": 7983,
+  "id": "formerGemeinde-7983",
+  "title": "Hörsel (Gemeinde)",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Gotha",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Gotha | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.91666667,
+    "lon": 10.58333333
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-horsel-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-horsel-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 7984,
+  "id": "formerGemeinde-7984",
+  "title": "Drei Gleichen (Gemeinde)",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Gotha",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Gotha | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.86666667,
+    "lon": 10.81666667
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/76ce49d3-drei-gleichen-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/76ce49d3-drei-gleichen-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 7985,
+  "id": "formerGemeinde-7985",
+  "title": "Georgenthal",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Gotha",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Gotha | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.82944444,
+    "lon": 10.65722222
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/56f37a8f-georgenthal-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/56f37a8f-georgenthal-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 7986,
   "id": "formerGemeinde-7986",
   "title": "Nesse-Apfelstädt",
@@ -1084,6 +1113,64 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/formerUnit/3c85c78d-nesseapfelstadt-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 7987,
+  "id": "formerGemeinde-7987",
+  "title": "Georgenthal",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Gotha",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Gotha | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.82944444,
+    "lon": 10.65722222
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/5dc06099-georgenthal-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/5dc06099-georgenthal-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 7988,
+  "id": "formerGemeinde-7988",
+  "title": "Drei Gleichen (Gemeinde)",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Gotha",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Gotha | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.86666667,
+    "lon": 10.81666667
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/1cabba8e-drei-gleichen-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/1cabba8e-drei-gleichen-320w.webp"
    }
   ]
  },
@@ -1147,8 +1234,8 @@
  },
  {
   "lang": "de",
-  "index": 7984,
-  "id": "formerGemeinde-7984",
+  "index": 7991,
+  "id": "formerGemeinde-7991",
   "title": "Drei Gleichen (Gemeinde)",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Gotha",
   "type": [
@@ -1166,98 +1253,11 @@
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/76ce49d3-drei-gleichen-80w.webp"
+    "path": "images/heraldry/de/formerUnit/193281c5-drei-gleichen-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/76ce49d3-drei-gleichen-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 7988,
-  "id": "formerGemeinde-7988",
-  "title": "Drei Gleichen (Gemeinde)",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Gotha",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Gotha | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.86666667,
-    "lon": 10.81666667
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/1cabba8e-drei-gleichen-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/1cabba8e-drei-gleichen-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 7987,
-  "id": "formerGemeinde-7987",
-  "title": "Georgenthal",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Gotha",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Gotha | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.82944444,
-    "lon": 10.65722222
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/5dc06099-georgenthal-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/5dc06099-georgenthal-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 7994,
-  "id": "formerGemeinde-7994",
-  "title": "Hörsel (Gemeinde)",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Gotha",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Gotha | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.91666667,
-    "lon": 10.58333333
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-horsel-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-horsel-320w.webp"
+    "path": "images/heraldry/de/formerUnit/193281c5-drei-gleichen-320w.webp"
    }
   ]
  },
@@ -1292,35 +1292,6 @@
  },
  {
   "lang": "de",
-  "index": 7991,
-  "id": "formerGemeinde-7991",
-  "title": "Drei Gleichen (Gemeinde)",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Gotha",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Gotha | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.86666667,
-    "lon": 10.81666667
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/193281c5-drei-gleichen-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/193281c5-drei-gleichen-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
   "index": 7993,
   "id": "formerGemeinde-7993",
   "title": "Nessetal",
@@ -1350,30 +1321,30 @@
  },
  {
   "lang": "de",
-  "index": 7996,
-  "id": "formerCity-7996",
-  "title": "Ohrdruf",
+  "index": 7994,
+  "id": "formerGemeinde-7994",
+  "title": "Hörsel (Gemeinde)",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Gotha",
   "type": [
-   "formerCity",
+   "formerGemeinde",
    "formerOrtsteil"
   ],
   "spriteRoot": "formerUnit",
   "place": {
    "name": "Liste der Wappen im Landkreis Gotha | Wappen ehemaliger Städte und Gemeinden",
    "coordinates": {
-    "lat": 50.82805556,
-    "lon": 10.73277778
+    "lat": 50.91666667,
+    "lon": 10.58333333
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/526178c0-ohrdruf-80w.webp"
+    "path": "images/heraldry/de/formerUnit/3408fb18-horsel-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/526178c0-ohrdruf-320w.webp"
+    "path": "images/heraldry/de/formerUnit/3408fb18-horsel-320w.webp"
    }
   ]
  },
@@ -1408,30 +1379,30 @@
  },
  {
   "lang": "de",
-  "index": 8004,
-  "id": "formerGemeinde-8004",
-  "title": "Gießübel (Schleusegrund)",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Hildburghausen",
+  "index": 7996,
+  "id": "formerCity-7996",
+  "title": "Ohrdruf",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Gotha",
   "type": [
-   "formerGemeinde",
+   "formerCity",
    "formerOrtsteil"
   ],
   "spriteRoot": "formerUnit",
   "place": {
-   "name": "Liste der Wappen im Landkreis Hildburghausen | Ehemalige Gemeinden mit eigenem Wappen",
+   "name": "Liste der Wappen im Landkreis Gotha | Wappen ehemaliger Städte und Gemeinden",
    "coordinates": {
-    "lat": 50.53638889,
-    "lon": 10.91944444
+    "lat": 50.82805556,
+    "lon": 10.73277778
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/6521472d-giesubel-schleusegrund-80w.webp"
+    "path": "images/heraldry/de/formerUnit/526178c0-ohrdruf-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/6521472d-giesubel-schleusegrund-320w.webp"
+    "path": "images/heraldry/de/formerUnit/526178c0-ohrdruf-320w.webp"
    }
   ]
  },
@@ -1489,6 +1460,64 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/formerUnit/8523cf4-bedheim-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8003,
+  "id": "formerCity-8003",
+  "title": "Bockstadt",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Hildburghausen",
+  "type": [
+   "formerCity",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Hildburghausen | Ehemalige Gemeinden mit eigenem Wappen",
+   "coordinates": {
+    "lat": 50.40694444,
+    "lon": 10.88111111
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/6c0603c3-bockstadt-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/6c0603c3-bockstadt-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8004,
+  "id": "formerGemeinde-8004",
+  "title": "Gießübel (Schleusegrund)",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Hildburghausen",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Hildburghausen | Ehemalige Gemeinden mit eigenem Wappen",
+   "coordinates": {
+    "lat": 50.53638889,
+    "lon": 10.91944444
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/6521472d-giesubel-schleusegrund-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/6521472d-giesubel-schleusegrund-320w.webp"
    }
   ]
  },
@@ -1581,6 +1610,35 @@
  },
  {
   "lang": "de",
+  "index": 8008,
+  "id": "formerCity-8008",
+  "title": "Hellingen (Heldburg)",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Hildburghausen",
+  "type": [
+   "formerCity",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Hildburghausen | Ehemalige Gemeinden mit eigenem Wappen",
+   "coordinates": {
+    "lat": 50.25,
+    "lon": 10.68305556
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/1ebcbaca-hellingen-heldburg-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/1ebcbaca-hellingen-heldburg-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 8009,
   "id": "formerGemeinde-8009",
   "title": "Langenbach (Schleusegrund)",
@@ -1605,35 +1663,6 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/formerUnit/1c9e22de-langenbach-schleusegrund-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8003,
-  "id": "formerCity-8003",
-  "title": "Bockstadt",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Hildburghausen",
-  "type": [
-   "formerCity",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Hildburghausen | Ehemalige Gemeinden mit eigenem Wappen",
-   "coordinates": {
-    "lat": 50.40694444,
-    "lon": 10.88111111
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/6c0603c3-bockstadt-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/6c0603c3-bockstadt-320w.webp"
    }
   ]
  },
@@ -1755,30 +1784,30 @@
  },
  {
   "lang": "de",
-  "index": 8008,
-  "id": "formerCity-8008",
-  "title": "Hellingen (Heldburg)",
+  "index": 8015,
+  "id": "formerGemeinde-8015",
+  "title": "Steinbach (Schleusegrund)",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Hildburghausen",
   "type": [
-   "formerCity",
+   "formerGemeinde",
    "formerOrtsteil"
   ],
   "spriteRoot": "formerUnit",
   "place": {
    "name": "Liste der Wappen im Landkreis Hildburghausen | Ehemalige Gemeinden mit eigenem Wappen",
    "coordinates": {
-    "lat": 50.25,
-    "lon": 10.68305556
+    "lat": 50.52416667,
+    "lon": 10.84638889
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/1ebcbaca-hellingen-heldburg-80w.webp"
+    "path": "images/heraldry/de/formerUnit/4dc892bf-steinbach-schleusegrund-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/1ebcbaca-hellingen-heldburg-320w.webp"
+    "path": "images/heraldry/de/formerUnit/4dc892bf-steinbach-schleusegrund-320w.webp"
    }
   ]
  },
@@ -1842,35 +1871,6 @@
  },
  {
   "lang": "de",
-  "index": 8015,
-  "id": "formerGemeinde-8015",
-  "title": "Steinbach (Schleusegrund)",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Hildburghausen",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Hildburghausen | Ehemalige Gemeinden mit eigenem Wappen",
-   "coordinates": {
-    "lat": 50.52416667,
-    "lon": 10.84638889
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/4dc892bf-steinbach-schleusegrund-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/4dc892bf-steinbach-schleusegrund-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
   "index": 8019,
   "id": "formerCity-8019",
   "title": "Ellrich",
@@ -1895,6 +1895,35 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/formerUnit/4ea8002d-ellrich-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8020,
+  "id": "formerGemeinde-8020",
+  "title": "Hohenstein (Thüringen)",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Nordhausen",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Nordhausen | Wappen ehemals selbstständiger Gemeinden",
+   "coordinates": {
+    "lat": 51.54333333,
+    "lon": 10.54444444
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/37f8d30e-hohenstein-thuringen-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/37f8d30e-hohenstein-thuringen-320w.webp"
    }
   ]
  },
@@ -1987,38 +2016,9 @@
  },
  {
   "lang": "de",
-  "index": 8026,
-  "id": "formerCity-8026",
-  "title": "Helme",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Nordhausen",
-  "type": [
-   "formerCity",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Nordhausen | Wappen ehemals selbstständiger Gemeinden",
-   "coordinates": {
-    "lat": 51.3401,
-    "lon": 11.3306
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-helme-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-helme-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8020,
-  "id": "formerGemeinde-8020",
-  "title": "Hohenstein (Thüringen)",
+  "index": 8024,
+  "id": "formerGemeinde-8024",
+  "title": "Großwechsungen",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Nordhausen",
   "type": [
    "formerGemeinde",
@@ -2028,18 +2028,18 @@
   "place": {
    "name": "Liste der Wappen im Landkreis Nordhausen | Wappen ehemals selbstständiger Gemeinden",
    "coordinates": {
-    "lat": 51.54333333,
-    "lon": 10.54444444
+    "lat": 51.4925,
+    "lon": 10.69083333
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/37f8d30e-hohenstein-thuringen-80w.webp"
+    "path": "images/heraldry/de/formerUnit/518b610b-groswechsungen-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/37f8d30e-hohenstein-thuringen-320w.webp"
+    "path": "images/heraldry/de/formerUnit/518b610b-groswechsungen-320w.webp"
    }
   ]
  },
@@ -2074,30 +2074,30 @@
  },
  {
   "lang": "de",
-  "index": 8024,
-  "id": "formerGemeinde-8024",
-  "title": "Großwechsungen",
+  "index": 8026,
+  "id": "formerCity-8026",
+  "title": "Helme",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Nordhausen",
   "type": [
-   "formerGemeinde",
+   "formerCity",
    "formerOrtsteil"
   ],
   "spriteRoot": "formerUnit",
   "place": {
    "name": "Liste der Wappen im Landkreis Nordhausen | Wappen ehemals selbstständiger Gemeinden",
    "coordinates": {
-    "lat": 51.4925,
-    "lon": 10.69083333
+    "lat": 51.3401,
+    "lon": 11.3306
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/518b610b-groswechsungen-80w.webp"
+    "path": "images/heraldry/de/formerUnit/3408fb18-helme-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/518b610b-groswechsungen-320w.webp"
+    "path": "images/heraldry/de/formerUnit/3408fb18-helme-320w.webp"
    }
   ]
  },
@@ -2161,35 +2161,6 @@
  },
  {
   "lang": "de",
-  "index": 8032,
-  "id": "formerCity-8032",
-  "title": "Bleicherode",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Nordhausen",
-  "type": [
-   "formerCity",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Nordhausen | Wappen ehemals selbstständiger Gemeinden",
-   "coordinates": {
-    "lat": 51.43944444,
-    "lon": 10.57138889
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-bleicherode-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-bleicherode-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
   "index": 8029,
   "id": "formerGemeinde-8029",
   "title": "Harztor",
@@ -2214,6 +2185,93 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/formerUnit/248c50ea-harztor-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8030,
+  "id": "formerCity-8030",
+  "title": "Bleicherode",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Nordhausen",
+  "type": [
+   "formerCity",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Nordhausen | Wappen ehemals selbstständiger Gemeinden",
+   "coordinates": {
+    "lat": 51.43944444,
+    "lon": 10.57138889
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/1ad96260-bleicherode-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/1ad96260-bleicherode-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8031,
+  "id": "formerGemeinde-8031",
+  "title": "Kleinwerther",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Nordhausen",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Nordhausen | Wappen ehemals selbstständiger Gemeinden",
+   "coordinates": {
+    "lat": 51.479623,
+    "lon": 10.738978
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/45c2d40f-kleinwerther-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/45c2d40f-kleinwerther-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8032,
+  "id": "formerCity-8032",
+  "title": "Bleicherode",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Nordhausen",
+  "type": [
+   "formerCity",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Nordhausen | Wappen ehemals selbstständiger Gemeinden",
+   "coordinates": {
+    "lat": 51.43944444,
+    "lon": 10.57138889
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-bleicherode-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-bleicherode-320w.webp"
    }
   ]
  },
@@ -2277,9 +2335,38 @@
  },
  {
   "lang": "de",
-  "index": 8031,
-  "id": "formerGemeinde-8031",
-  "title": "Kleinwerther",
+  "index": 8035,
+  "id": "formerCity-8035",
+  "title": "Nordhausen",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Nordhausen",
+  "type": [
+   "formerCity",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Nordhausen | Wappen ehemals selbstständiger Gemeinden",
+   "coordinates": {
+    "lat": 51.50027778,
+    "lon": 10.79138889
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/b6f98a7-nordhausen-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/b6f98a7-nordhausen-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8036,
+  "id": "formerGemeinde-8036",
+  "title": "Hohenstein (Thüringen)",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Nordhausen",
   "type": [
    "formerGemeinde",
@@ -2289,18 +2376,18 @@
   "place": {
    "name": "Liste der Wappen im Landkreis Nordhausen | Wappen ehemals selbstständiger Gemeinden",
    "coordinates": {
-    "lat": 51.479623,
-    "lon": 10.738978
+    "lat": 51.54333333,
+    "lon": 10.54444444
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/45c2d40f-kleinwerther-80w.webp"
+    "path": "images/heraldry/de/formerUnit/3cbae236-hohenstein-thuringen-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/45c2d40f-kleinwerther-320w.webp"
+    "path": "images/heraldry/de/formerUnit/3cbae236-hohenstein-thuringen-320w.webp"
    }
   ]
  },
@@ -2335,37 +2422,37 @@
  },
  {
   "lang": "de",
-  "index": 8030,
-  "id": "formerCity-8030",
-  "title": "Bleicherode",
+  "index": 8038,
+  "id": "formerGemeinde-8038",
+  "title": "Sollstedt",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Nordhausen",
   "type": [
-   "formerCity",
+   "formerGemeinde",
    "formerOrtsteil"
   ],
   "spriteRoot": "formerUnit",
   "place": {
    "name": "Liste der Wappen im Landkreis Nordhausen | Wappen ehemals selbstständiger Gemeinden",
    "coordinates": {
-    "lat": 51.43944444,
-    "lon": 10.57138889
+    "lat": 51.41555556,
+    "lon": 10.53388889
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/1ad96260-bleicherode-80w.webp"
+    "path": "images/heraldry/de/formerUnit/4a784361-sollstedt-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/1ad96260-bleicherode-320w.webp"
+    "path": "images/heraldry/de/formerUnit/4a784361-sollstedt-320w.webp"
    }
   ]
  },
  {
   "lang": "de",
-  "index": 8035,
-  "id": "formerCity-8035",
+  "index": 8039,
+  "id": "formerCity-8039",
   "title": "Nordhausen",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Nordhausen",
   "type": [
@@ -2383,11 +2470,11 @@
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/b6f98a7-nordhausen-80w.webp"
+    "path": "images/heraldry/de/formerUnit/6c4cb66e-nordhausen-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/b6f98a7-nordhausen-320w.webp"
+    "path": "images/heraldry/de/formerUnit/6c4cb66e-nordhausen-320w.webp"
    }
   ]
  },
@@ -2451,67 +2538,9 @@
  },
  {
   "lang": "de",
-  "index": 8036,
-  "id": "formerGemeinde-8036",
-  "title": "Hohenstein (Thüringen)",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Nordhausen",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Nordhausen | Wappen ehemals selbstständiger Gemeinden",
-   "coordinates": {
-    "lat": 51.54333333,
-    "lon": 10.54444444
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3cbae236-hohenstein-thuringen-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3cbae236-hohenstein-thuringen-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8038,
-  "id": "formerGemeinde-8038",
-  "title": "Sollstedt",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Nordhausen",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Nordhausen | Wappen ehemals selbstständiger Gemeinden",
-   "coordinates": {
-    "lat": 51.41555556,
-    "lon": 10.53388889
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/4a784361-sollstedt-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/4a784361-sollstedt-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8039,
-  "id": "formerCity-8039",
-  "title": "Nordhausen",
+  "index": 8042,
+  "id": "formerCity-8042",
+  "title": "Bleicherode",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Nordhausen",
   "type": [
    "formerCity",
@@ -2521,18 +2550,18 @@
   "place": {
    "name": "Liste der Wappen im Landkreis Nordhausen | Wappen ehemals selbstständiger Gemeinden",
    "coordinates": {
-    "lat": 51.50027778,
-    "lon": 10.79138889
+    "lat": 51.43944444,
+    "lon": 10.57138889
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/6c4cb66e-nordhausen-80w.webp"
+    "path": "images/heraldry/de/formerUnit/4ae4800f-bleicherode-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/6c4cb66e-nordhausen-320w.webp"
+    "path": "images/heraldry/de/formerUnit/4ae4800f-bleicherode-320w.webp"
    }
   ]
  },
@@ -2625,35 +2654,6 @@
  },
  {
   "lang": "de",
-  "index": 8042,
-  "id": "formerCity-8042",
-  "title": "Bleicherode",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Nordhausen",
-  "type": [
-   "formerCity",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Nordhausen | Wappen ehemals selbstständiger Gemeinden",
-   "coordinates": {
-    "lat": 51.43944444,
-    "lon": 10.57138889
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/4ae4800f-bleicherode-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/4ae4800f-bleicherode-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
   "index": 8046,
   "id": "formerGemeinde-8046",
   "title": "Kindelbrück",
@@ -2712,6 +2712,34 @@
  },
  {
   "lang": "de",
+  "index": 8048,
+  "id": "formerGemeinde-8048",
+  "title": "Eßleben-Teutleben",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_S%C3%B6mmerda",
+  "type": [
+   "formerGemeinde"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Sömmerda | Ehemalige Gemeinden mit eigenem Wappen",
+   "coordinates": {
+    "lat": 51.15222222,
+    "lon": 11.46222222
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/413ace0-eslebenteutleben-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/413ace0-eslebenteutleben-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 8049,
   "id": "formerGemeinde-8049",
   "title": "Frömmstedt",
@@ -2736,34 +2764,6 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/formerUnit/2266ba30-frommstedt-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8048,
-  "id": "formerGemeinde-8048",
-  "title": "Eßleben-Teutleben",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_S%C3%B6mmerda",
-  "type": [
-   "formerGemeinde"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Sömmerda | Ehemalige Gemeinden mit eigenem Wappen",
-   "coordinates": {
-    "lat": 51.15222222,
-    "lon": 11.46222222
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/413ace0-eslebenteutleben-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/413ace0-eslebenteutleben-320w.webp"
    }
   ]
  },
@@ -2827,35 +2827,6 @@
  },
  {
   "lang": "de",
-  "index": 8054,
-  "id": "formerGemeinde-8054",
-  "title": "Hardisleben",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_S%C3%B6mmerda",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Sömmerda | Ehemalige Gemeinden mit eigenem Wappen",
-   "coordinates": {
-    "lat": 51.155,
-    "lon": 11.42222222
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/ec26fa9-hardisleben-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/ec26fa9-hardisleben-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
   "index": 8052,
   "id": "formerCity-8052",
   "title": "Großmonra",
@@ -2885,35 +2856,6 @@
  },
  {
   "lang": "de",
-  "index": 8055,
-  "id": "formerGemeinde-8055",
-  "title": "Kleinbrembach",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_S%C3%B6mmerda",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Sömmerda | Ehemalige Gemeinden mit eigenem Wappen",
-   "coordinates": {
-    "lat": 51.12555556,
-    "lon": 11.2725
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/2bd17e1-kleinbrembach-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/2bd17e1-kleinbrembach-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
   "index": 8053,
   "id": "formerGemeinde-8053",
   "title": "Guthmannshausen",
@@ -2938,6 +2880,64 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/formerUnit/1c322d0c-guthmannshausen-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8054,
+  "id": "formerGemeinde-8054",
+  "title": "Hardisleben",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_S%C3%B6mmerda",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Sömmerda | Ehemalige Gemeinden mit eigenem Wappen",
+   "coordinates": {
+    "lat": 51.155,
+    "lon": 11.42222222
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/ec26fa9-hardisleben-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/ec26fa9-hardisleben-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8055,
+  "id": "formerGemeinde-8055",
+  "title": "Kleinbrembach",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_S%C3%B6mmerda",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Sömmerda | Ehemalige Gemeinden mit eigenem Wappen",
+   "coordinates": {
+    "lat": 51.12555556,
+    "lon": 11.2725
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/2bd17e1-kleinbrembach-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/2bd17e1-kleinbrembach-320w.webp"
    }
   ]
  },
@@ -3030,34 +3030,6 @@
  },
  {
   "lang": "de",
-  "index": 8060,
-  "id": "formerCity-8060",
-  "title": "Gebesee",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_S%C3%B6mmerda",
-  "type": [
-   "formerCity"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Sömmerda | Historische Wappen",
-   "coordinates": {
-    "lat": 51.11388889,
-    "lon": 10.93472222
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-gebesee-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-gebesee-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
   "index": 8059,
   "id": "formerCity-8059",
   "title": "Schillingstedt",
@@ -3082,6 +3054,34 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/formerUnit/136a1e31-schillingstedt-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8060,
+  "id": "formerCity-8060",
+  "title": "Gebesee",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_S%C3%B6mmerda",
+  "type": [
+   "formerCity"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Sömmerda | Historische Wappen",
+   "coordinates": {
+    "lat": 51.11388889,
+    "lon": 10.93472222
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-gebesee-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-gebesee-320w.webp"
    }
   ]
  },
@@ -3116,30 +3116,30 @@
  },
  {
   "lang": "de",
-  "index": 8064,
-  "id": "formerCity-8064",
-  "title": "Königsee",
+  "index": 8062,
+  "id": "formerGemeinde-8062",
+  "title": "Unterwellenborn",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Saalfeld-Rudolstadt",
   "type": [
-   "formerCity",
+   "formerGemeinde",
    "formerOrtsteil"
   ],
   "spriteRoot": "formerUnit",
   "place": {
    "name": "Liste der Wappen im Landkreis Saalfeld-Rudolstadt | Wappen ehemaliger Städte und Gemeinden",
    "coordinates": {
-    "lat": 50.661315,
-    "lon": 11.097371
+    "lat": 50.65861111,
+    "lon": 11.44194444
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-konigsee-80w.webp"
+    "path": "images/heraldry/de/formerUnit/5e56e91b-unterwellenborn-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-konigsee-320w.webp"
+    "path": "images/heraldry/de/formerUnit/5e56e91b-unterwellenborn-320w.webp"
    }
   ]
  },
@@ -3174,66 +3174,8 @@
  },
  {
   "lang": "de",
-  "index": 8066,
-  "id": "formerGemeinde-8066",
-  "title": "Kaulsdorf (Saale)",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Saalfeld-Rudolstadt",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Saalfeld-Rudolstadt | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.62194444,
-    "lon": 11.43
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-kaulsdorf-saale-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-kaulsdorf-saale-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8062,
-  "id": "formerGemeinde-8062",
-  "title": "Unterwellenborn",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Saalfeld-Rudolstadt",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Saalfeld-Rudolstadt | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.65861111,
-    "lon": 11.44194444
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/5e56e91b-unterwellenborn-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/5e56e91b-unterwellenborn-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8069,
-  "id": "formerCity-8069",
+  "index": 8064,
+  "id": "formerCity-8064",
   "title": "Königsee",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Saalfeld-Rudolstadt",
   "type": [
@@ -3290,6 +3232,64 @@
  },
  {
   "lang": "de",
+  "index": 8066,
+  "id": "formerGemeinde-8066",
+  "title": "Kaulsdorf (Saale)",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Saalfeld-Rudolstadt",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Saalfeld-Rudolstadt | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.62194444,
+    "lon": 11.43
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-kaulsdorf-saale-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-kaulsdorf-saale-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8067,
+  "id": "formerGemeinde-8067",
+  "title": "Unterwellenborn",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Saalfeld-Rudolstadt",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Saalfeld-Rudolstadt | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.65861111,
+    "lon": 11.44194444
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/40179d17-unterwellenborn-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/40179d17-unterwellenborn-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 8068,
   "id": "formerGemeinde-8068",
   "title": "Uhlstädt-Kirchhasel",
@@ -3319,9 +3319,9 @@
  },
  {
   "lang": "de",
-  "index": 8072,
-  "id": "formerCity-8072",
-  "title": "Neuhaus am Rennweg",
+  "index": 8069,
+  "id": "formerCity-8069",
+  "title": "Königsee",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Saalfeld-Rudolstadt",
   "type": [
    "formerCity",
@@ -3331,18 +3331,18 @@
   "place": {
    "name": "Liste der Wappen im Landkreis Saalfeld-Rudolstadt | Wappen ehemaliger Städte und Gemeinden",
    "coordinates": {
-    "lat": 50.50916667,
-    "lon": 11.13833333
+    "lat": 50.661315,
+    "lon": 11.097371
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/44294758-neuhaus-am-rennweg-80w.webp"
+    "path": "images/heraldry/de/formerUnit/3408fb18-konigsee-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/44294758-neuhaus-am-rennweg-320w.webp"
+    "path": "images/heraldry/de/formerUnit/3408fb18-konigsee-320w.webp"
    }
   ]
  },
@@ -3401,6 +3401,35 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/formerUnit/6e8fddec-unterwellenborn-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8072,
+  "id": "formerCity-8072",
+  "title": "Neuhaus am Rennweg",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Saalfeld-Rudolstadt",
+  "type": [
+   "formerCity",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Saalfeld-Rudolstadt | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.50916667,
+    "lon": 11.13833333
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/44294758-neuhaus-am-rennweg-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/44294758-neuhaus-am-rennweg-320w.webp"
    }
   ]
  },
@@ -3466,35 +3495,6 @@
  },
  {
   "lang": "de",
-  "index": 8077,
-  "id": "formerCity-8077",
-  "title": "Königsee",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Saalfeld-Rudolstadt",
-  "type": [
-   "formerCity",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Saalfeld-Rudolstadt | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.661315,
-    "lon": 11.097371
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-konigsee-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-konigsee-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
   "index": 8075,
   "id": "formerCity-8075",
   "title": "Schwarzatal",
@@ -3520,65 +3520,6 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/formerUnit/4c749bcf-schwarzatal-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8079,
-  "id": "formerCity-8079",
-  "title": "Neuhaus am Rennweg",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Saalfeld-Rudolstadt",
-  "type": [
-   "formerCity",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Saalfeld-Rudolstadt | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.50916667,
-    "lon": 11.13833333
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/79b36cc8-neuhaus-am-rennweg-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/79b36cc8-neuhaus-am-rennweg-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8078,
-  "id": "formerCity-8078",
-  "title": "Schwarzatal",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Saalfeld-Rudolstadt",
-  "type": [
-   "formerCity",
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Saalfeld-Rudolstadt | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.58277778,
-    "lon": 11.14444444
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/1e105dcb-schwarzatal-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/1e105dcb-schwarzatal-320w.webp"
    }
   ]
  },
@@ -3614,11 +3555,41 @@
  },
  {
   "lang": "de",
-  "index": 8081,
-  "id": "formerGemeinde-8081",
-  "title": "Drognitz",
+  "index": 8077,
+  "id": "formerCity-8077",
+  "title": "Königsee",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Saalfeld-Rudolstadt",
   "type": [
+   "formerCity",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Saalfeld-Rudolstadt | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.661315,
+    "lon": 11.097371
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-konigsee-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-konigsee-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8078,
+  "id": "formerCity-8078",
+  "title": "Schwarzatal",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Saalfeld-Rudolstadt",
+  "type": [
+   "formerCity",
    "formerGemeinde",
    "formerOrtsteil"
   ],
@@ -3626,18 +3597,47 @@
   "place": {
    "name": "Liste der Wappen im Landkreis Saalfeld-Rudolstadt | Wappen ehemaliger Städte und Gemeinden",
    "coordinates": {
-    "lat": 50.588,
-    "lon": 11.572
+    "lat": 50.58277778,
+    "lon": 11.14444444
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-drognitz-80w.webp"
+    "path": "images/heraldry/de/formerUnit/1e105dcb-schwarzatal-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-drognitz-320w.webp"
+    "path": "images/heraldry/de/formerUnit/1e105dcb-schwarzatal-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8079,
+  "id": "formerCity-8079",
+  "title": "Neuhaus am Rennweg",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Saalfeld-Rudolstadt",
+  "type": [
+   "formerCity",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Saalfeld-Rudolstadt | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.50916667,
+    "lon": 11.13833333
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/79b36cc8-neuhaus-am-rennweg-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/79b36cc8-neuhaus-am-rennweg-320w.webp"
    }
   ]
  },
@@ -3672,58 +3672,30 @@
  },
  {
   "lang": "de",
-  "index": 8085,
-  "id": "formerGemeinde-8085",
-  "title": "Saalfelder Höhe",
+  "index": 8081,
+  "id": "formerGemeinde-8081",
+  "title": "Drognitz",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Saalfeld-Rudolstadt",
   "type": [
-   "formerGemeinde"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Saalfeld-Rudolstadt | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.63083333,
-    "lon": 11.25972222
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-saalfelder-hohe-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-saalfelder-hohe-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8084,
-  "id": "formerCity-8084",
-  "title": "Königsee",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Saalfeld-Rudolstadt",
-  "type": [
-   "formerCity",
+   "formerGemeinde",
    "formerOrtsteil"
   ],
   "spriteRoot": "formerUnit",
   "place": {
    "name": "Liste der Wappen im Landkreis Saalfeld-Rudolstadt | Wappen ehemaliger Städte und Gemeinden",
    "coordinates": {
-    "lat": 50.661315,
-    "lon": 11.097371
+    "lat": 50.588,
+    "lon": 11.572
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/67163922-konigsee-80w.webp"
+    "path": "images/heraldry/de/formerUnit/3408fb18-drognitz-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/67163922-konigsee-320w.webp"
+    "path": "images/heraldry/de/formerUnit/3408fb18-drognitz-320w.webp"
    }
   ]
  },
@@ -3758,6 +3730,63 @@
  },
  {
   "lang": "de",
+  "index": 8084,
+  "id": "formerCity-8084",
+  "title": "Königsee",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Saalfeld-Rudolstadt",
+  "type": [
+   "formerCity",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Saalfeld-Rudolstadt | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.661315,
+    "lon": 11.097371
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/67163922-konigsee-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/67163922-konigsee-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8085,
+  "id": "formerGemeinde-8085",
+  "title": "Saalfelder Höhe",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Saalfeld-Rudolstadt",
+  "type": [
+   "formerGemeinde"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Saalfeld-Rudolstadt | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.63083333,
+    "lon": 11.25972222
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-saalfelder-hohe-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-saalfelder-hohe-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 8086,
   "id": "formerCity-8086",
   "title": "Saale",
@@ -3787,6 +3816,35 @@
  },
  {
   "lang": "de",
+  "index": 8087,
+  "id": "formerCity-8087",
+  "title": "Rudolstadt",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Saalfeld-Rudolstadt",
+  "type": [
+   "formerCity",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Saalfeld-Rudolstadt | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.71694444,
+    "lon": 11.3275
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/3eb59608-rudolstadt-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/3eb59608-rudolstadt-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 8088,
   "id": "formerGemeinde-8088",
   "title": "Uhlstädt-Kirchhasel",
@@ -3811,6 +3869,35 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/formerUnit/26fef14a-uhlstadtkirchhasel-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8089,
+  "id": "formerGemeinde-8089",
+  "title": "Unterwellenborn",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Saalfeld-Rudolstadt",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Saalfeld-Rudolstadt | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.65861111,
+    "lon": 11.44194444
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/10d11fbe-unterwellenborn-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/10d11fbe-unterwellenborn-320w.webp"
    }
   ]
  },
@@ -3903,88 +3990,30 @@
  },
  {
   "lang": "de",
-  "index": 8067,
-  "id": "formerGemeinde-8067",
-  "title": "Unterwellenborn",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Saalfeld-Rudolstadt",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Saalfeld-Rudolstadt | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.65861111,
-    "lon": 11.44194444
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/40179d17-unterwellenborn-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/40179d17-unterwellenborn-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8087,
-  "id": "formerCity-8087",
-  "title": "Rudolstadt",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Saalfeld-Rudolstadt",
+  "index": 8093,
+  "id": "formerCity-8093",
+  "title": "Kaltennordheim",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Schmalkalden-Meiningen",
   "type": [
    "formerCity",
    "formerOrtsteil"
   ],
   "spriteRoot": "formerUnit",
   "place": {
-   "name": "Liste der Wappen im Landkreis Saalfeld-Rudolstadt | Wappen ehemaliger Städte und Gemeinden",
+   "name": "Liste der Wappen im Landkreis Schmalkalden-Meiningen | Wappen ehemaliger Städte und Gemeinden",
    "coordinates": {
-    "lat": 50.71694444,
-    "lon": 11.3275
+    "lat": 50.62638889,
+    "lon": 10.15861111
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3eb59608-rudolstadt-80w.webp"
+    "path": "images/heraldry/de/formerUnit/3bc02d29-kaltennordheim-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3eb59608-rudolstadt-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8089,
-  "id": "formerGemeinde-8089",
-  "title": "Unterwellenborn",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Saalfeld-Rudolstadt",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Saalfeld-Rudolstadt | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.65861111,
-    "lon": 11.44194444
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/10d11fbe-unterwellenborn-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/10d11fbe-unterwellenborn-320w.webp"
+    "path": "images/heraldry/de/formerUnit/3bc02d29-kaltennordheim-320w.webp"
    }
   ]
  },
@@ -4019,30 +4048,30 @@
  },
  {
   "lang": "de",
-  "index": 8098,
-  "id": "formerCity-8098",
-  "title": "Steinbach-Hallenberg",
+  "index": 8095,
+  "id": "formerGemeinde-8095",
+  "title": "Grabfeld (Gemeinde)",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Schmalkalden-Meiningen",
   "type": [
-   "formerCity",
+   "formerGemeinde",
    "formerOrtsteil"
   ],
   "spriteRoot": "formerUnit",
   "place": {
    "name": "Liste der Wappen im Landkreis Schmalkalden-Meiningen | Wappen ehemaliger Städte und Gemeinden",
    "coordinates": {
-    "lat": 50.70055556,
-    "lon": 10.56666667
+    "lat": 50.454084,
+    "lon": 10.437051
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3fc5aa48-steinbachhallenberg-80w.webp"
+    "path": "images/heraldry/de/formerUnit/acfe814-grabfeld-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3fc5aa48-steinbachhallenberg-320w.webp"
+    "path": "images/heraldry/de/formerUnit/acfe814-grabfeld-320w.webp"
    }
   ]
  },
@@ -4077,38 +4106,9 @@
  },
  {
   "lang": "de",
-  "index": 8095,
-  "id": "formerGemeinde-8095",
-  "title": "Grabfeld (Gemeinde)",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Schmalkalden-Meiningen",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Schmalkalden-Meiningen | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.454084,
-    "lon": 10.437051
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/acfe814-grabfeld-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/acfe814-grabfeld-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8093,
-  "id": "formerCity-8093",
-  "title": "Kaltennordheim",
+  "index": 8098,
+  "id": "formerCity-8098",
+  "title": "Steinbach-Hallenberg",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Schmalkalden-Meiningen",
   "type": [
    "formerCity",
@@ -4118,18 +4118,18 @@
   "place": {
    "name": "Liste der Wappen im Landkreis Schmalkalden-Meiningen | Wappen ehemaliger Städte und Gemeinden",
    "coordinates": {
-    "lat": 50.62638889,
-    "lon": 10.15861111
+    "lat": 50.70055556,
+    "lon": 10.56666667
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3bc02d29-kaltennordheim-80w.webp"
+    "path": "images/heraldry/de/formerUnit/3fc5aa48-steinbachhallenberg-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3bc02d29-kaltennordheim-320w.webp"
+    "path": "images/heraldry/de/formerUnit/3fc5aa48-steinbachhallenberg-320w.webp"
    }
   ]
  },
@@ -4280,9 +4280,9 @@
  },
  {
   "lang": "de",
-  "index": 8106,
-  "id": "formerCity-8106",
-  "title": "Kaltennordheim",
+  "index": 8104,
+  "id": "formerCity-8104",
+  "title": "Meiningen",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Schmalkalden-Meiningen",
   "type": [
    "formerCity",
@@ -4292,47 +4292,18 @@
   "place": {
    "name": "Liste der Wappen im Landkreis Schmalkalden-Meiningen | Wappen ehemaliger Städte und Gemeinden",
    "coordinates": {
-    "lat": 50.62638889,
-    "lon": 10.15861111
+    "lat": 50.56777778,
+    "lon": 10.41555556
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-kaltennordheim-80w.webp"
+    "path": "images/heraldry/de/formerUnit/14acdb1b-meiningen-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-kaltennordheim-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8108,
-  "id": "formerCity-8108",
-  "title": "Kaltennordheim",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Schmalkalden-Meiningen",
-  "type": [
-   "formerCity",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Schmalkalden-Meiningen | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.62638889,
-    "lon": 10.15861111
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-kaltennordheim-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-kaltennordheim-320w.webp"
+    "path": "images/heraldry/de/formerUnit/14acdb1b-meiningen-320w.webp"
    }
   ]
  },
@@ -4367,37 +4338,8 @@
  },
  {
   "lang": "de",
-  "index": 8109,
-  "id": "formerCity-8109",
-  "title": "Wasungen",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Schmalkalden-Meiningen",
-  "type": [
-   "formerCity",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Schmalkalden-Meiningen | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.66305556,
-    "lon": 10.35972222
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3c467d2f-wasungen-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3c467d2f-wasungen-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8111,
-  "id": "formerCity-8111",
+  "index": 8106,
+  "id": "formerCity-8106",
   "title": "Kaltennordheim",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Schmalkalden-Meiningen",
   "type": [
@@ -4425,9 +4367,9 @@
  },
  {
   "lang": "de",
-  "index": 8104,
-  "id": "formerCity-8104",
-  "title": "Meiningen",
+  "index": 8107,
+  "id": "formerCity-8107",
+  "title": "Kaltennordheim",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Schmalkalden-Meiningen",
   "type": [
    "formerCity",
@@ -4437,18 +4379,76 @@
   "place": {
    "name": "Liste der Wappen im Landkreis Schmalkalden-Meiningen | Wappen ehemaliger Städte und Gemeinden",
    "coordinates": {
-    "lat": 50.56777778,
-    "lon": 10.41555556
+    "lat": 50.62638889,
+    "lon": 10.15861111
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/14acdb1b-meiningen-80w.webp"
+    "path": "images/heraldry/de/formerUnit/6b68e010-kaltennordheim-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/14acdb1b-meiningen-320w.webp"
+    "path": "images/heraldry/de/formerUnit/6b68e010-kaltennordheim-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8108,
+  "id": "formerCity-8108",
+  "title": "Kaltennordheim",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Schmalkalden-Meiningen",
+  "type": [
+   "formerCity",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Schmalkalden-Meiningen | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.62638889,
+    "lon": 10.15861111
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-kaltennordheim-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-kaltennordheim-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8109,
+  "id": "formerCity-8109",
+  "title": "Wasungen",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Schmalkalden-Meiningen",
+  "type": [
+   "formerCity",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Schmalkalden-Meiningen | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.66305556,
+    "lon": 10.35972222
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/3c467d2f-wasungen-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/3c467d2f-wasungen-320w.webp"
    }
   ]
  },
@@ -4483,37 +4483,8 @@
  },
  {
   "lang": "de",
-  "index": 8115,
-  "id": "formerCity-8115",
-  "title": "Steinbach-Hallenberg",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Schmalkalden-Meiningen",
-  "type": [
-   "formerCity",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Schmalkalden-Meiningen | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.70055556,
-    "lon": 10.56666667
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-steinbachhallenberg-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-steinbachhallenberg-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8107,
-  "id": "formerCity-8107",
+  "index": 8111,
+  "id": "formerCity-8111",
   "title": "Kaltennordheim",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Schmalkalden-Meiningen",
   "type": [
@@ -4531,11 +4502,11 @@
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/6b68e010-kaltennordheim-80w.webp"
+    "path": "images/heraldry/de/formerUnit/3408fb18-kaltennordheim-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/6b68e010-kaltennordheim-320w.webp"
+    "path": "images/heraldry/de/formerUnit/3408fb18-kaltennordheim-320w.webp"
    }
   ]
  },
@@ -4599,6 +4570,35 @@
  },
  {
   "lang": "de",
+  "index": 8115,
+  "id": "formerCity-8115",
+  "title": "Steinbach-Hallenberg",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Schmalkalden-Meiningen",
+  "type": [
+   "formerCity",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Schmalkalden-Meiningen | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.70055556,
+    "lon": 10.56666667
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-steinbachhallenberg-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-steinbachhallenberg-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 8116,
   "id": "formerCity-8116",
   "title": "Schmalkalden",
@@ -4623,64 +4623,6 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/formerUnit/f4f11d3-schmalkalden-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8120,
-  "id": "formerCity-8120",
-  "title": "Wasungen",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Schmalkalden-Meiningen",
-  "type": [
-   "formerCity",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Schmalkalden-Meiningen | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.66305556,
-    "lon": 10.35972222
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-wasungen-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-wasungen-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8121,
-  "id": "formerCity-8121",
-  "title": "Steinbach-Hallenberg",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Schmalkalden-Meiningen",
-  "type": [
-   "formerCity",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Schmalkalden-Meiningen | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.70055556,
-    "lon": 10.56666667
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-steinbachhallenberg-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-steinbachhallenberg-320w.webp"
    }
   ]
  },
@@ -4773,6 +4715,122 @@
  },
  {
   "lang": "de",
+  "index": 8120,
+  "id": "formerCity-8120",
+  "title": "Wasungen",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Schmalkalden-Meiningen",
+  "type": [
+   "formerCity",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Schmalkalden-Meiningen | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.66305556,
+    "lon": 10.35972222
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-wasungen-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-wasungen-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8121,
+  "id": "formerCity-8121",
+  "title": "Steinbach-Hallenberg",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Schmalkalden-Meiningen",
+  "type": [
+   "formerCity",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Schmalkalden-Meiningen | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.70055556,
+    "lon": 10.56666667
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-steinbachhallenberg-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-steinbachhallenberg-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8122,
+  "id": "formerCity-8122",
+  "title": "Steinbach-Hallenberg",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Schmalkalden-Meiningen",
+  "type": [
+   "formerCity",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Schmalkalden-Meiningen | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.70055556,
+    "lon": 10.56666667
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/5b3ff3aa-steinbachhallenberg-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/5b3ff3aa-steinbachhallenberg-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8123,
+  "id": "formerCity-8123",
+  "title": "Wasungen",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Schmalkalden-Meiningen",
+  "type": [
+   "formerCity",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Schmalkalden-Meiningen | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.66305556,
+    "lon": 10.35972222
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/d10c756-wasungen-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/d10c756-wasungen-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 8124,
   "id": "formerCity-8124",
   "title": "Meiningen",
@@ -4826,35 +4884,6 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/formerUnit/28c230ac-meiningen-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8123,
-  "id": "formerCity-8123",
-  "title": "Wasungen",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Schmalkalden-Meiningen",
-  "type": [
-   "formerCity",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Schmalkalden-Meiningen | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.66305556,
-    "lon": 10.35972222
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/d10c756-wasungen-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/d10c756-wasungen-320w.webp"
    }
   ]
  },
@@ -4918,6 +4947,35 @@
  },
  {
   "lang": "de",
+  "index": 8128,
+  "id": "formerGemeinde-8128",
+  "title": "Grabfeld (Gemeinde)",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Schmalkalden-Meiningen",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Schmalkalden-Meiningen | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.454084,
+    "lon": 10.437051
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/6ff305f3-grabfeld-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/6ff305f3-grabfeld-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 8129,
   "id": "formerGemeinde-8129",
   "title": "Effelder-Rauenstein",
@@ -4975,30 +5033,59 @@
  },
  {
   "lang": "de",
-  "index": 8128,
-  "id": "formerGemeinde-8128",
-  "title": "Grabfeld (Gemeinde)",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Schmalkalden-Meiningen",
+  "index": 8131,
+  "id": "formerGemeinde-8131",
+  "title": "Am Ettersberg",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Weimarer_Land",
   "type": [
    "formerGemeinde",
    "formerOrtsteil"
   ],
   "spriteRoot": "formerUnit",
   "place": {
-   "name": "Liste der Wappen im Landkreis Schmalkalden-Meiningen | Wappen ehemaliger Städte und Gemeinden",
+   "name": "Liste der Wappen im Landkreis Weimarer Land | Wappen ehemals selbständiger Gemeinden",
    "coordinates": {
-    "lat": 50.454084,
-    "lon": 10.437051
+    "lat": 51.06111111,
+    "lon": 11.24416667
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/6ff305f3-grabfeld-80w.webp"
+    "path": "images/heraldry/de/formerUnit/5eed21e9-am-ettersberg-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/6ff305f3-grabfeld-320w.webp"
+    "path": "images/heraldry/de/formerUnit/5eed21e9-am-ettersberg-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8132,
+  "id": "formerGemeinde-8132",
+  "title": "Am Ettersberg",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Weimarer_Land",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Weimarer Land | Wappen ehemals selbständiger Gemeinden",
+   "coordinates": {
+    "lat": 51.06111111,
+    "lon": 11.24416667
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/2c1ac245-am-ettersberg-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/2c1ac245-am-ettersberg-320w.webp"
    }
   ]
  },
@@ -5062,35 +5149,6 @@
  },
  {
   "lang": "de",
-  "index": 8122,
-  "id": "formerCity-8122",
-  "title": "Steinbach-Hallenberg",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Schmalkalden-Meiningen",
-  "type": [
-   "formerCity",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Schmalkalden-Meiningen | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.70055556,
-    "lon": 10.56666667
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/5b3ff3aa-steinbachhallenberg-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/5b3ff3aa-steinbachhallenberg-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
   "index": 8135,
   "id": "formerGemeinde-8135",
   "title": "Ilmtal-Weinstraße",
@@ -5115,35 +5173,6 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/formerUnit/3408fb18-ilmtalweinstrase-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8137,
-  "id": "formerCity-8137",
-  "title": "Bad Sulza",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Weimarer_Land",
-  "type": [
-   "formerCity",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Weimarer Land | Wappen ehemals selbständiger Gemeinden",
-   "coordinates": {
-    "lat": 51.08768056,
-    "lon": 11.62325
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-bad-sulza-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-bad-sulza-320w.webp"
    }
   ]
  },
@@ -5178,30 +5207,30 @@
  },
  {
   "lang": "de",
-  "index": 8139,
-  "id": "formerGemeinde-8139",
-  "title": "Ilmtal-Weinstraße",
+  "index": 8137,
+  "id": "formerCity-8137",
+  "title": "Bad Sulza",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Weimarer_Land",
   "type": [
-   "formerGemeinde",
+   "formerCity",
    "formerOrtsteil"
   ],
   "spriteRoot": "formerUnit",
   "place": {
    "name": "Liste der Wappen im Landkreis Weimarer Land | Wappen ehemals selbständiger Gemeinden",
    "coordinates": {
-    "lat": 51.05861111,
-    "lon": 11.44166667
+    "lat": 51.08768056,
+    "lon": 11.62325
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-ilmtalweinstrase-80w.webp"
+    "path": "images/heraldry/de/formerUnit/3408fb18-bad-sulza-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-ilmtalweinstrase-320w.webp"
+    "path": "images/heraldry/de/formerUnit/3408fb18-bad-sulza-320w.webp"
    }
   ]
  },
@@ -5236,9 +5265,9 @@
  },
  {
   "lang": "de",
-  "index": 8132,
-  "id": "formerGemeinde-8132",
-  "title": "Am Ettersberg",
+  "index": 8139,
+  "id": "formerGemeinde-8139",
+  "title": "Ilmtal-Weinstraße",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Weimarer_Land",
   "type": [
    "formerGemeinde",
@@ -5248,26 +5277,26 @@
   "place": {
    "name": "Liste der Wappen im Landkreis Weimarer Land | Wappen ehemals selbständiger Gemeinden",
    "coordinates": {
-    "lat": 51.06111111,
-    "lon": 11.24416667
+    "lat": 51.05861111,
+    "lon": 11.44166667
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/2c1ac245-am-ettersberg-80w.webp"
+    "path": "images/heraldry/de/formerUnit/3408fb18-ilmtalweinstrase-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/2c1ac245-am-ettersberg-320w.webp"
+    "path": "images/heraldry/de/formerUnit/3408fb18-ilmtalweinstrase-320w.webp"
    }
   ]
  },
  {
   "lang": "de",
-  "index": 8131,
-  "id": "formerGemeinde-8131",
-  "title": "Am Ettersberg",
+  "index": 8140,
+  "id": "formerGemeinde-8140",
+  "title": "Ilmtal-Weinstraße",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Weimarer_Land",
   "type": [
    "formerGemeinde",
@@ -5277,18 +5306,76 @@
   "place": {
    "name": "Liste der Wappen im Landkreis Weimarer Land | Wappen ehemals selbständiger Gemeinden",
    "coordinates": {
-    "lat": 51.06111111,
-    "lon": 11.24416667
+    "lat": 51.05861111,
+    "lon": 11.44166667
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/5eed21e9-am-ettersberg-80w.webp"
+    "path": "images/heraldry/de/formerUnit/4c4d72b1-ilmtalweinstrase-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/5eed21e9-am-ettersberg-320w.webp"
+    "path": "images/heraldry/de/formerUnit/4c4d72b1-ilmtalweinstrase-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8141,
+  "id": "formerGemeinde-8141",
+  "title": "Grammetal",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Weimarer_Land",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Weimarer Land | Wappen ehemals selbständiger Gemeinden",
+   "coordinates": {
+    "lat": 50.96666667,
+    "lon": 11.21666667
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/709b9f6a-grammetal-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/709b9f6a-grammetal-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8142,
+  "id": "formerGemeinde-8142",
+  "title": "Ilmtal-Weinstraße",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Weimarer_Land",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Weimarer Land | Wappen ehemals selbständiger Gemeinden",
+   "coordinates": {
+    "lat": 51.05861111,
+    "lon": 11.44166667
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/35c89064-ilmtalweinstrase-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/35c89064-ilmtalweinstrase-320w.webp"
    }
   ]
  },
@@ -5352,8 +5439,8 @@
  },
  {
   "lang": "de",
-  "index": 8140,
-  "id": "formerGemeinde-8140",
+  "index": 8145,
+  "id": "formerGemeinde-8145",
   "title": "Ilmtal-Weinstraße",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Weimarer_Land",
   "type": [
@@ -5371,18 +5458,18 @@
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/4c4d72b1-ilmtalweinstrase-80w.webp"
+    "path": "images/heraldry/de/formerUnit/1a595d54-ilmtalweinstrase-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/4c4d72b1-ilmtalweinstrase-320w.webp"
+    "path": "images/heraldry/de/formerUnit/1a595d54-ilmtalweinstrase-320w.webp"
    }
   ]
  },
  {
   "lang": "de",
-  "index": 8141,
-  "id": "formerGemeinde-8141",
+  "index": 8146,
+  "id": "formerGemeinde-8146",
   "title": "Grammetal",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Weimarer_Land",
   "type": [
@@ -5400,11 +5487,11 @@
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/709b9f6a-grammetal-80w.webp"
+    "path": "images/heraldry/de/formerUnit/2d37fbcb-grammetal-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/709b9f6a-grammetal-320w.webp"
+    "path": "images/heraldry/de/formerUnit/2d37fbcb-grammetal-320w.webp"
    }
   ]
  },
@@ -5497,59 +5584,30 @@
  },
  {
   "lang": "de",
-  "index": 8142,
-  "id": "formerGemeinde-8142",
-  "title": "Ilmtal-Weinstraße",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Weimarer_Land",
+  "index": 8150,
+  "id": "formerGemeinde-8150",
+  "title": "Rosenthal am Rennsteig",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Saale-Orla-Kreis",
   "type": [
    "formerGemeinde",
    "formerOrtsteil"
   ],
   "spriteRoot": "formerUnit",
   "place": {
-   "name": "Liste der Wappen im Landkreis Weimarer Land | Wappen ehemals selbständiger Gemeinden",
+   "name": "Liste der Wappen im Saale-Orla-Kreis | Wappen ehemaliger Städte und Gemeinden",
    "coordinates": {
-    "lat": 51.05861111,
-    "lon": 11.44166667
+    "lat": 50.40194444,
+    "lon": 11.70027778
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/35c89064-ilmtalweinstrase-80w.webp"
+    "path": "images/heraldry/de/formerUnit/1878a5f-rosenthal-am-rennsteig-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/35c89064-ilmtalweinstrase-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8145,
-  "id": "formerGemeinde-8145",
-  "title": "Ilmtal-Weinstraße",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Weimarer_Land",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Weimarer Land | Wappen ehemals selbständiger Gemeinden",
-   "coordinates": {
-    "lat": 51.05861111,
-    "lon": 11.44166667
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/1a595d54-ilmtalweinstrase-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/1a595d54-ilmtalweinstrase-320w.webp"
+    "path": "images/heraldry/de/formerUnit/1878a5f-rosenthal-am-rennsteig-320w.webp"
    }
   ]
  },
@@ -5613,64 +5671,6 @@
  },
  {
   "lang": "de",
-  "index": 8150,
-  "id": "formerGemeinde-8150",
-  "title": "Rosenthal am Rennsteig",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Saale-Orla-Kreis",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Saale-Orla-Kreis | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.40194444,
-    "lon": 11.70027778
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/1878a5f-rosenthal-am-rennsteig-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/1878a5f-rosenthal-am-rennsteig-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8146,
-  "id": "formerGemeinde-8146",
-  "title": "Grammetal",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Weimarer_Land",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Weimarer Land | Wappen ehemals selbständiger Gemeinden",
-   "coordinates": {
-    "lat": 50.96666667,
-    "lon": 11.21666667
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/2d37fbcb-grammetal-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/2d37fbcb-grammetal-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
   "index": 8153,
   "id": "formerCity-8153",
   "title": "Schleiz",
@@ -5695,35 +5695,6 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/formerUnit/7cc9809-schleiz-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8155,
-  "id": "formerGemeinde-8155",
-  "title": "Rosenthal am Rennsteig",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Saale-Orla-Kreis",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Saale-Orla-Kreis | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.40194444,
-    "lon": 11.70027778
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/63d61924-rosenthal-am-rennsteig-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/63d61924-rosenthal-am-rennsteig-320w.webp"
    }
   ]
  },
@@ -5758,6 +5729,35 @@
  },
  {
   "lang": "de",
+  "index": 8155,
+  "id": "formerGemeinde-8155",
+  "title": "Rosenthal am Rennsteig",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Saale-Orla-Kreis",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Saale-Orla-Kreis | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.40194444,
+    "lon": 11.70027778
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/63d61924-rosenthal-am-rennsteig-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/63d61924-rosenthal-am-rennsteig-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 8156,
   "id": "formerCity-8156",
   "title": "Neustadt an der Orla",
@@ -5787,9 +5787,9 @@
  },
  {
   "lang": "de",
-  "index": 8159,
-  "id": "formerGemeinde-8159",
-  "title": "Krölpa",
+  "index": 8157,
+  "id": "formerGemeinde-8157",
+  "title": "Rosenthal am Rennsteig",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Saale-Orla-Kreis",
   "type": [
    "formerGemeinde",
@@ -5799,18 +5799,18 @@
   "place": {
    "name": "Liste der Wappen im Saale-Orla-Kreis | Wappen ehemaliger Städte und Gemeinden",
    "coordinates": {
-    "lat": 50.67638889,
-    "lon": 11.5375
+    "lat": 50.40194444,
+    "lon": 11.70027778
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-krolpa-80w.webp"
+    "path": "images/heraldry/de/formerUnit/299a47c7-rosenthal-am-rennsteig-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-krolpa-320w.webp"
+    "path": "images/heraldry/de/formerUnit/299a47c7-rosenthal-am-rennsteig-320w.webp"
    }
   ]
  },
@@ -5845,6 +5845,35 @@
  },
  {
   "lang": "de",
+  "index": 8159,
+  "id": "formerGemeinde-8159",
+  "title": "Krölpa",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Saale-Orla-Kreis",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Saale-Orla-Kreis | Wappen ehemaliger Städte und Gemeinden",
+   "coordinates": {
+    "lat": 50.67638889,
+    "lon": 11.5375
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-krolpa-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-krolpa-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 8160,
   "id": "formerGemeinde-8160",
   "title": "Remptendorf",
@@ -5869,35 +5898,6 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/formerUnit/3408fb18-remptendorf-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8157,
-  "id": "formerGemeinde-8157",
-  "title": "Rosenthal am Rennsteig",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Saale-Orla-Kreis",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Saale-Orla-Kreis | Wappen ehemaliger Städte und Gemeinden",
-   "coordinates": {
-    "lat": 50.40194444,
-    "lon": 11.70027778
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/299a47c7-rosenthal-am-rennsteig-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/299a47c7-rosenthal-am-rennsteig-320w.webp"
    }
   ]
  },
@@ -5959,93 +5959,6 @@
  },
  {
   "lang": "de",
-  "index": 8164,
-  "id": "formerGemeinde-8164",
-  "title": "Unstrut-Hainich",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Unstrut-Hainich-Kreis",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Unstrut-Hainich-Kreis | Wappen ehemals selbstständiger Gemeinden",
-   "coordinates": {
-    "lat": 51.13333333,
-    "lon": 10.56666667
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-unstruthainich-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-unstruthainich-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8167,
-  "id": "formerGemeinde-8167",
-  "title": "Unstrut-Hainich",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Unstrut-Hainich-Kreis",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Unstrut-Hainich-Kreis | Wappen ehemals selbstständiger Gemeinden",
-   "coordinates": {
-    "lat": 51.13333333,
-    "lon": 10.56666667
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-unstruthainich-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-unstruthainich-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8166,
-  "id": "formerGemeinde-8166",
-  "title": "Südeichsfeld",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Unstrut-Hainich-Kreis",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Unstrut-Hainich-Kreis | Wappen ehemals selbstständiger Gemeinden",
-   "coordinates": {
-    "lat": 51.16388889,
-    "lon": 10.31944444
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/20e3563f-sudeichsfeld-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/20e3563f-sudeichsfeld-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
   "index": 8163,
   "id": "formerGemeinde-8163",
   "title": "Rosenthal am Rennsteig",
@@ -6075,8 +5988,8 @@
  },
  {
   "lang": "de",
-  "index": 8170,
-  "id": "formerGemeinde-8170",
+  "index": 8164,
+  "id": "formerGemeinde-8164",
   "title": "Unstrut-Hainich",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Unstrut-Hainich-Kreis",
   "type": [
@@ -6133,6 +6046,64 @@
  },
  {
   "lang": "de",
+  "index": 8166,
+  "id": "formerGemeinde-8166",
+  "title": "Südeichsfeld",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Unstrut-Hainich-Kreis",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Unstrut-Hainich-Kreis | Wappen ehemals selbstständiger Gemeinden",
+   "coordinates": {
+    "lat": 51.16388889,
+    "lon": 10.31944444
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/20e3563f-sudeichsfeld-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/20e3563f-sudeichsfeld-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8167,
+  "id": "formerGemeinde-8167",
+  "title": "Unstrut-Hainich",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Unstrut-Hainich-Kreis",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Unstrut-Hainich-Kreis | Wappen ehemals selbstständiger Gemeinden",
+   "coordinates": {
+    "lat": 51.13333333,
+    "lon": 10.56666667
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-unstruthainich-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-unstruthainich-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 8168,
   "id": "formerGemeinde-8168",
   "title": "Unstrut-Hainich",
@@ -6157,6 +6128,93 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/formerUnit/9fd9ec4-unstruthainich-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8169,
+  "id": "formerGemeinde-8169",
+  "title": "Südeichsfeld",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Unstrut-Hainich-Kreis",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Unstrut-Hainich-Kreis | Wappen ehemals selbstständiger Gemeinden",
+   "coordinates": {
+    "lat": 51.16388889,
+    "lon": 10.31944444
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/633b2aae-sudeichsfeld-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/633b2aae-sudeichsfeld-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8170,
+  "id": "formerGemeinde-8170",
+  "title": "Unstrut-Hainich",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Unstrut-Hainich-Kreis",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Unstrut-Hainich-Kreis | Wappen ehemals selbstständiger Gemeinden",
+   "coordinates": {
+    "lat": 51.13333333,
+    "lon": 10.56666667
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-unstruthainich-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-unstruthainich-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8171,
+  "id": "formerGemeinde-8171",
+  "title": "Südeichsfeld",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Unstrut-Hainich-Kreis",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Unstrut-Hainich-Kreis | Wappen ehemals selbstständiger Gemeinden",
+   "coordinates": {
+    "lat": 51.16388889,
+    "lon": 10.31944444
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/46d6a9c2-sudeichsfeld-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/46d6a9c2-sudeichsfeld-320w.webp"
    }
   ]
  },
@@ -6220,93 +6278,6 @@
  },
  {
   "lang": "de",
-  "index": 8175,
-  "id": "formerGemeinde-8175",
-  "title": "Unstruttal",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Unstrut-Hainich-Kreis",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Unstrut-Hainich-Kreis | Wappen ehemals selbstständiger Gemeinden",
-   "coordinates": {
-    "lat": 51.27,
-    "lon": 10.45416667
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/4af16e03-unstruttal-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/4af16e03-unstruttal-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8171,
-  "id": "formerGemeinde-8171",
-  "title": "Südeichsfeld",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Unstrut-Hainich-Kreis",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Unstrut-Hainich-Kreis | Wappen ehemals selbstständiger Gemeinden",
-   "coordinates": {
-    "lat": 51.16388889,
-    "lon": 10.31944444
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/46d6a9c2-sudeichsfeld-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/46d6a9c2-sudeichsfeld-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8177,
-  "id": "formerGemeinde-8177",
-  "title": "Unstrut-Hainich",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Unstrut-Hainich-Kreis",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Unstrut-Hainich-Kreis | Wappen ehemals selbstständiger Gemeinden",
-   "coordinates": {
-    "lat": 51.13333333,
-    "lon": 10.56666667
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-unstruthainich-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-unstruthainich-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
   "index": 8174,
   "id": "formerGemeinde-8174",
   "title": "Vogtei (Gemeinde)",
@@ -6331,6 +6302,35 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/formerUnit/4371447a-vogtei-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8175,
+  "id": "formerGemeinde-8175",
+  "title": "Unstruttal",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Unstrut-Hainich-Kreis",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Unstrut-Hainich-Kreis | Wappen ehemals selbstständiger Gemeinden",
+   "coordinates": {
+    "lat": 51.27,
+    "lon": 10.45416667
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/4af16e03-unstruttal-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/4af16e03-unstruttal-320w.webp"
    }
   ]
  },
@@ -6365,6 +6365,35 @@
  },
  {
   "lang": "de",
+  "index": 8177,
+  "id": "formerGemeinde-8177",
+  "title": "Unstrut-Hainich",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Unstrut-Hainich-Kreis",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Unstrut-Hainich-Kreis | Wappen ehemals selbstständiger Gemeinden",
+   "coordinates": {
+    "lat": 51.13333333,
+    "lon": 10.56666667
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-unstruthainich-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/3408fb18-unstruthainich-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 8178,
   "id": "formerCity-8178",
   "title": "Bad Langensalza",
@@ -6389,35 +6418,6 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/formerUnit/3bf90007-bad-langensalza-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8180,
-  "id": "formerGemeinde-8180",
-  "title": "Vogtei (Gemeinde)",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Unstrut-Hainich-Kreis",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Unstrut-Hainich-Kreis | Wappen ehemals selbstständiger Gemeinden",
-   "coordinates": {
-    "lat": 51.16055556,
-    "lon": 10.4425
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/4924c94a-vogtei-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/4924c94a-vogtei-320w.webp"
    }
   ]
  },
@@ -6452,30 +6452,30 @@
  },
  {
   "lang": "de",
-  "index": 8182,
-  "id": "formerCity-8182",
-  "title": "Nottertal-Heilinger Höhen",
+  "index": 8180,
+  "id": "formerGemeinde-8180",
+  "title": "Vogtei (Gemeinde)",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Unstrut-Hainich-Kreis",
   "type": [
-   "formerCity",
+   "formerGemeinde",
    "formerOrtsteil"
   ],
   "spriteRoot": "formerUnit",
   "place": {
    "name": "Liste der Wappen im Unstrut-Hainich-Kreis | Wappen ehemals selbstständiger Gemeinden",
    "coordinates": {
-    "lat": 51.2375,
-    "lon": 10.65555556
+    "lat": 51.16055556,
+    "lon": 10.4425
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3a697df2-nottertalheilinger-hohen-80w.webp"
+    "path": "images/heraldry/de/formerUnit/4924c94a-vogtei-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3a697df2-nottertalheilinger-hohen-320w.webp"
+    "path": "images/heraldry/de/formerUnit/4924c94a-vogtei-320w.webp"
    }
   ]
  },
@@ -6510,116 +6510,30 @@
  },
  {
   "lang": "de",
-  "index": 8184,
-  "id": "formerGemeinde-8184",
-  "title": "Unstrut-Hainich",
+  "index": 8182,
+  "id": "formerCity-8182",
+  "title": "Nottertal-Heilinger Höhen",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Unstrut-Hainich-Kreis",
   "type": [
-   "formerGemeinde",
+   "formerCity",
    "formerOrtsteil"
   ],
   "spriteRoot": "formerUnit",
   "place": {
    "name": "Liste der Wappen im Unstrut-Hainich-Kreis | Wappen ehemals selbstständiger Gemeinden",
    "coordinates": {
-    "lat": 51.13333333,
-    "lon": 10.56666667
+    "lat": 51.2375,
+    "lon": 10.65555556
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/445843a3-unstruthainich-80w.webp"
+    "path": "images/heraldry/de/formerUnit/3a697df2-nottertalheilinger-hohen-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/445843a3-unstruthainich-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8186,
-  "id": "formerGemeinde-8186",
-  "title": "Unstrut-Hainich",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Unstrut-Hainich-Kreis",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Unstrut-Hainich-Kreis | Wappen ehemals selbstständiger Gemeinden",
-   "coordinates": {
-    "lat": 51.13333333,
-    "lon": 10.56666667
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-unstruthainich-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/3408fb18-unstruthainich-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8169,
-  "id": "formerGemeinde-8169",
-  "title": "Südeichsfeld",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Unstrut-Hainich-Kreis",
-  "type": [
-   "formerGemeinde",
-   "formerOrtsteil"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Unstrut-Hainich-Kreis | Wappen ehemals selbstständiger Gemeinden",
-   "coordinates": {
-    "lat": 51.16388889,
-    "lon": 10.31944444
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/633b2aae-sudeichsfeld-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/633b2aae-sudeichsfeld-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 8187,
-  "id": "formerGemeinde-8187",
-  "title": "Dünwald",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Unstrut-Hainich-Kreis",
-  "type": [
-   "formerGemeinde"
-  ],
-  "spriteRoot": "formerUnit",
-  "place": {
-   "name": "Liste der Wappen im Unstrut-Hainich-Kreis | Historische Wappen",
-   "coordinates": {
-    "lat": 51.31666667,
-    "lon": 10.43333333
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/formerUnit/36530f56-dunwald-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/formerUnit/36530f56-dunwald-320w.webp"
+    "path": "images/heraldry/de/formerUnit/3a697df2-nottertalheilinger-hohen-320w.webp"
    }
   ]
  },
@@ -6654,6 +6568,35 @@
  },
  {
   "lang": "de",
+  "index": 8184,
+  "id": "formerGemeinde-8184",
+  "title": "Unstrut-Hainich",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Unstrut-Hainich-Kreis",
+  "type": [
+   "formerGemeinde",
+   "formerOrtsteil"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Unstrut-Hainich-Kreis | Wappen ehemals selbstständiger Gemeinden",
+   "coordinates": {
+    "lat": 51.13333333,
+    "lon": 10.56666667
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/445843a3-unstruthainich-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/445843a3-unstruthainich-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 8185,
   "id": "formerCity-8185",
   "title": "Bad Langensalza",
@@ -6683,29 +6626,58 @@
  },
  {
   "lang": "de",
-  "index": 8189,
-  "id": "formerGemeinde-8189",
-  "title": "Lerchenberg (Eisenach)",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Wartburgkreis",
+  "index": 8186,
+  "id": "formerGemeinde-8186",
+  "title": "Unstrut-Hainich",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Unstrut-Hainich-Kreis",
   "type": [
-   "formerGemeinde"
+   "formerGemeinde",
+   "formerOrtsteil"
   ],
   "spriteRoot": "formerUnit",
   "place": {
-   "name": "Liste der Wappen im Wartburgkreis | Ehemalige Gemeinden mit eigenem Wappen",
+   "name": "Liste der Wappen im Unstrut-Hainich-Kreis | Wappen ehemals selbstständiger Gemeinden",
    "coordinates": {
-    "lat": 51.02416667,
-    "lon": 10.34111111
+    "lat": 51.13333333,
+    "lon": 10.56666667
    }
   },
   "imagesList": [
    {
     "width": "80w",
-    "path": "images/heraldry/de/formerUnit/7c6a772-lerchenberg-eisenach-80w.webp"
+    "path": "images/heraldry/de/formerUnit/3408fb18-unstruthainich-80w.webp"
    },
    {
     "width": "320w",
-    "path": "images/heraldry/de/formerUnit/7c6a772-lerchenberg-eisenach-320w.webp"
+    "path": "images/heraldry/de/formerUnit/3408fb18-unstruthainich-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8187,
+  "id": "formerGemeinde-8187",
+  "title": "Dünwald",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Unstrut-Hainich-Kreis",
+  "type": [
+   "formerGemeinde"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Unstrut-Hainich-Kreis | Historische Wappen",
+   "coordinates": {
+    "lat": 51.31666667,
+    "lon": 10.43333333
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/36530f56-dunwald-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/36530f56-dunwald-320w.webp"
    }
   ]
  },
@@ -6734,6 +6706,34 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/formerUnit/3de3650f-schlotheim-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 8189,
+  "id": "formerGemeinde-8189",
+  "title": "Lerchenberg (Eisenach)",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Wartburgkreis",
+  "type": [
+   "formerGemeinde"
+  ],
+  "spriteRoot": "formerUnit",
+  "place": {
+   "name": "Liste der Wappen im Wartburgkreis | Ehemalige Gemeinden mit eigenem Wappen",
+   "coordinates": {
+    "lat": 51.02416667,
+    "lon": 10.34111111
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/formerUnit/7c6a772-lerchenberg-eisenach-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/formerUnit/7c6a772-lerchenberg-eisenach-320w.webp"
    }
   ]
  }
