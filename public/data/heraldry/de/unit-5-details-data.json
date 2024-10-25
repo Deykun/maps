@@ -756,6 +756,14 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "cross",
+    "flower",
+    "rose",
+    "heart"
+   ]
   }
  },
  {
@@ -1365,6 +1373,9 @@
     "rooster",
     "lion",
     "bird"
+   ],
+   "items": [
+    "cross"
    ]
   }
  },
@@ -1595,6 +1606,10 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "flower",
+    "rose"
    ]
   }
  },
@@ -1671,6 +1686,9 @@
    "animals": [
     "eagle",
     "bird"
+   ],
+   "items": [
+    "wheel"
    ]
   }
  },
@@ -1723,6 +1741,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -2136,6 +2159,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "heart"
    ]
   }
  },
@@ -2204,6 +2230,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "crown"
    ]
   }
  },
@@ -2253,6 +2282,9 @@
    "animals": [
     "eagle",
     "bird"
+   ],
+   "items": [
+    "cross"
    ]
   }
  },
@@ -2393,6 +2425,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "wheel"
    ]
   }
  },
@@ -2547,6 +2582,9 @@
     "deer",
     "lion",
     "bird"
+   ],
+   "items": [
+    "wheel"
    ]
   }
  },
@@ -2618,6 +2656,9 @@
     "rooster",
     "lion",
     "bird"
+   ],
+   "items": [
+    "cross"
    ]
   }
  },
@@ -2693,6 +2734,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "wheel"
    ]
   }
  },
@@ -2751,6 +2795,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "saint",
+    "wheel"
+   ]
   }
  },
  {
@@ -2872,6 +2922,9 @@
     "lion",
     "bird",
     "dragon"
+   ],
+   "items": [
+    "angel"
    ]
   }
  },
@@ -2948,6 +3001,9 @@
    "animals": [
     "rooster",
     "bird"
+   ],
+   "items": [
+    "walls"
    ]
   }
  },
@@ -3005,6 +3061,10 @@
     "eagle",
     "lion",
     "bird"
+   ],
+   "items": [
+    "wheel",
+    "heart"
    ]
   }
  },
@@ -3063,6 +3123,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "saint",
+    "wheel"
+   ]
   }
  },
  {
@@ -3177,6 +3243,9 @@
     "lion",
     "bird",
     "dragon"
+   ],
+   "items": [
+    "angel"
    ]
   }
  },
@@ -3253,6 +3322,9 @@
    "animals": [
     "rooster",
     "bird"
+   ],
+   "items": [
+    "walls"
    ]
   }
  },
@@ -3310,6 +3382,10 @@
     "eagle",
     "lion",
     "bird"
+   ],
+   "items": [
+    "wheel",
+    "heart"
    ]
   }
  },
@@ -3361,6 +3437,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "cross",
+    "wheel"
+   ]
   }
  },
  {
@@ -3418,6 +3500,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "walls",
+    "sword"
+   ]
   }
  },
  {
@@ -3684,6 +3772,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "cross",
+    "wheel"
+   ]
   }
  },
  {
@@ -3741,6 +3835,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "walls",
+    "sword"
+   ]
   }
  },
  {
@@ -4384,6 +4484,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "flower"
+   ]
   }
  },
  {
