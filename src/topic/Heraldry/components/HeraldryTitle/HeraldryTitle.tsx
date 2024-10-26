@@ -7,20 +7,21 @@ import Space from '@/components/UI/Space';
 import Panel from '@/components/UI/Panel';
 
 import { SubtitlePart } from '@/topic/Heraldry/utils/getFilteredUnits';
+import useFiltersStore from '@/topic/Heraldry/stores/filtersStore';
 
 export type Props = {
   country: string,
   zoomLevel: number,
   subtitleParts: SubtitlePart[],
-  shouldReverseFilters: boolean,
 }
 
 const HeraldryTitle = ({
   country,
   zoomLevel,
   subtitleParts,
-  shouldReverseFilters,
 }: Props) => {
+  const shouldReverseFilters = useFiltersStore(state => state.shouldReverseFilters);
+
   const { t } = useTranslation();
 
   if (zoomLevel > 1) {

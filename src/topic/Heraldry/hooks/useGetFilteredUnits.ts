@@ -6,7 +6,9 @@ import { getFilteredUnits, GetFilteredUnitsParams } from '@/topic/Heraldry/utils
 import { setUnitsPaneSearchPhrase } from '@/topic/Heraldry/stores/unitsPaneStore';
 import useFiltersStore  from '@/topic/Heraldry/stores/filtersStore';
 
-type UseGetFilteredUnitsParams = Omit<GetFilteredUnitsParams, 'colorFilters' | 'typeFilters' | 'shouldIgnoreFormer'> & {
+type UseGetFilteredUnitsParams = Omit<GetFilteredUnitsParams, 
+'colorFilters' | 'typeFilters' | 'shouldIgnoreFormer' | 'filterOperator' | 'shouldReverseFilters'
+> & {
   typeFiltersList: GetFilterResponse
 }
 
@@ -14,8 +16,6 @@ export default function useGetFilteredUnits({
   lang,
   unitsForMapAll,
   detailsForUnitsById,
-  filterOperator,
-  shouldReverseFilters,
   customFilter,
   animalFilters,
   itemFilters,
@@ -25,6 +25,8 @@ export default function useGetFilteredUnits({
   const shouldIgnoreFormer = useFiltersStore(state => state.shouldIgnoreFormer);
   const typeFilters = useFiltersStore(state => state.type);
   const colorFilters = useFiltersStore(state => state.color);
+  const filterOperator = useFiltersStore(state => state.filterOperator);
+  const shouldReverseFilters = useFiltersStore(state => state.shouldReverseFilters);
 
   const { units, unitsForMap, subtitleParts } = useMemo(() => {
     // All types are checked and we can skip setting subtitle and filtering

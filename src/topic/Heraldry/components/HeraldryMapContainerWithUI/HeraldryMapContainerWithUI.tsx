@@ -71,8 +71,6 @@ const HeraldryMapContainerWithUI = ({
 }: Props) => {
     const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
     const [shouldHintLang, setShouldHintLang] = useState(false);
-    const [filterOperator, setFilterOperator] = useState<'and' | 'or'>(initialFilters.filterOperator || 'and');
-    const [shouldReverseFilters, setShouldReverseFilters] = useState(initialFilters.shouldReverseFilters || false);
     const [zoomLevel, setZoomLevel] = useState(1);
     const [coatSize, setCoatSize] = useState(4);
     const customFilter = useFiltersDevelopmentStore(state => state.filter);
@@ -105,8 +103,6 @@ const HeraldryMapContainerWithUI = ({
       lang,
       unitsForMapAll,
       detailsForUnitsById,
-      filterOperator,
-      shouldReverseFilters,
       customFilter,
       animalFilters,
       itemFilters,
@@ -132,7 +128,6 @@ const HeraldryMapContainerWithUI = ({
               country={lang}
               zoomLevel={zoomLevel}
               subtitleParts={subtitleParts}
-              shouldReverseFilters={shouldReverseFilters}
             />
             <div>
               <div
@@ -200,10 +195,6 @@ const HeraldryMapContainerWithUI = ({
               itemFilters={itemFilters}
               setItemFilters={setItemFilters}
               itemFiltersList={itemFiltersList}
-              filterOperator={filterOperator}
-              setFilterOperator={setFilterOperator}
-              shouldReverseFilters={shouldReverseFilters}
-              setShouldReverseFilters={setShouldReverseFilters}
               setShouldFetchDetails={setShouldFetchDetails}
               isFetchingDetails={isFetchingDetails}
             />

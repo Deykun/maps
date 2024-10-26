@@ -5,27 +5,16 @@ import useOutsideClick from '@/hooks/useOutsideClick';
 
 import { WITH_ANIMAL, WITHOUT_ANIMAL } from '@/topic/Heraldry/constants';
 
-import {
-  useFiltersDevelopmentStore,
-  toggleFilterDevlopmentMode,
-} from '@/topic/Heraldry/stores/filtersDevelopmentStore';
-
 import IconMapMagnifyingGlass from '@/components/Icons/IconMapMagnifyingGlass';
 import IconBuilding from '@/components/Icons/IconBuilding';
 import IconColor from '@/components/Icons/IconColor';
 import IconControls from '@/components/Icons/IconControls';
-import IconFlask from '@/components/Icons/IconFlask';
 import IconAnimal from '@/components/Icons/IconAnimal';
 import IconCrown from '@/components/Icons/IconCrown';
 import IconEraser from '@/components/Icons/IconEraser';
-import IconCubeAnd from '@/components/Icons/IconCubeAnd';
-import IconCubeOr from '@/components/Icons/IconCubeOr';
-import IconEye from '@/components/Icons/IconEye';
-import IconEyeCrossed from '@/components/Icons/IconEyeCrossed';
 import IconLoader from '@/components/Icons/IconLoader';
 
 import Panel from '@/components/UI/Panel';
-import SubPanel from '@/components/UI/SubPanel';
 
 import ButtonIcon from '@/components/UI/ButtonIcon';
 
@@ -35,6 +24,7 @@ import FiltersPaneSidebarAnimals from './FiltersPane/FiltersPaneSidebarAnimals';
 import FiltersPaneSidebarItems from './FiltersPane/FiltersPaneSidebarItems';
 import FiltersPaneSidebarTypes from './FiltersPane/FiltersPaneSidebarTypes';
 import FiltersPaneSubPanelColors from './FiltersPane/FiltersPaneSubPanelColors';
+import FiltersPaneSubPanelSettings from './FiltersPane/FiltersPaneSubPanelSettings';
 
 const getFilterToggle = (values: string[], setValues: (values: string[]) => void) => (value: string) => {
   if (values.includes(value)) {
@@ -65,10 +55,6 @@ type Props = {
   itemFilters: string[],
   setItemFilters: FilterSetter,
   itemFiltersList: FilterItem[],
-  filterOperator: 'or' | 'and',
-  setFilterOperator: (operator: 'or' | 'and') => void,
-  shouldReverseFilters: boolean,
-  setShouldReverseFilters: (value: boolean) => void,
   setShouldFetchDetails: (value: boolean) => void,
   isFetchingDetails: boolean,
 };
@@ -84,18 +70,14 @@ const FiltersPane = ({
   itemFilters,
   setItemFilters,
   itemFiltersList,
-  filterOperator,
-  setFilterOperator,
-  shouldReverseFilters,
-  setShouldReverseFilters,
   setShouldFetchDetails,
   isFetchingDetails,
 }: Props) => {
+  const shouldReverseFilters = useFiltersStore(state => state.shouldReverseFilters);
   const [wasOpen, setWasOpen] = useState(false);
   const shouldIgnoreFormer = useFiltersStore(state => state.shouldIgnoreFormer);
   const typeFilters = useFiltersStore(state => state.type);
   const colorFilters = useFiltersStore(state => state.color);
-  const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
   const [activeMenu, setActiveMenu] = useState('');
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
@@ -132,8 +114,6 @@ const FiltersPane = ({
     resetFilters();
     setAnimalFilters([]);
     setItemFilters([]);
-    setFilterOperator('and');
-    setShouldReverseFilters(false);
     // Don't hint to open after clearing
     setWasOpen(true);
   };
@@ -232,34 +212,11 @@ const FiltersPane = ({
         toggle={toggleItem}
         filtersList={itemFiltersList}
       />}
-      {activeMenu === 'settings' && <SubPanel order={5} className="ui-slide-from-right-sidebar no-scrollbar z-[-1] mt-1 absolute right-12 mr-2 flex-row">
-        <ButtonIcon
-          wrapperClassName="ml-auto"
-          onClick={() => setFilterOperator(filterOperator === 'and' ? 'or' : 'and')}
-          label={`${t('heraldry.filterOperator')} ${t(`heraldry.filterOperator.${filterOperator}`)}`}
-          labelPosition="bottomLeft"
-        >
-          {filterOperator === 'and' ? <IconCubeAnd /> : <IconCubeOr />}
-        </ButtonIcon>
-        <ButtonIcon
-          wrapperClassName="ml-auto"
-          onClick={() => setShouldReverseFilters(!shouldReverseFilters)}
-          label={`${t('heraldry.filterReverse')} ${t(`heraldry.filterReverse.${shouldReverseFilters ? 'yes' : 'no'}`)}`}
-          labelPosition="bottomLeft"
-        >
-          {shouldReverseFilters ? <IconEyeCrossed /> : <IconEye />}
-          {shouldAddWarningForRevesedFilters && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft">!</span>}
-        </ButtonIcon>
-        <span className="border-l"></span>
-        <ButtonIcon
-          isActive={isFiltersDevModeActive}
-          onClick={toggleFilterDevlopmentMode}
-          label="Development mode"
-          labelPosition="bottomLeft"
-        >
-          <IconFlask />
-        </ButtonIcon>
-      </SubPanel>}
+      {activeMenu === 'settings' && <FiltersPaneSubPanelSettings
+        className="absolute right-12 z-[-1] mt-1 mr-2"
+        order={5}
+        shouldAddWarningForRevesedFilters={shouldAddWarningForRevesedFilters}
+      />}
     </div>
   );
 }

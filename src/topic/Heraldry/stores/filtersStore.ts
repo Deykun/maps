@@ -7,22 +7,28 @@ type UnitPaneStoreState = {
   type: string[],
   shouldIgnoreFormer: boolean,
   color: string[],
+  filterOperator: 'or' | 'and',
+  shouldReverseFilters: boolean,
 }
 
 const initial = getFiltersFromSearchParams();
 
-const emptyState = {
+const emptyState: UnitPaneStoreState = {
   type: [],
   shouldIgnoreFormer: false,
   color: [],
+  filterOperator: 'and',
+  shouldReverseFilters: false,
 }
 
 export const useFiltersStore = create<UnitPaneStoreState>()(
   devtools(
     () => ({
       type: initial.typeFilters || emptyState.type,
-      shouldIgnoreFormer: initial.shouldIgnoreFormer || emptyState.shouldIgnoreFormer,
+      shouldIgnoreFormer: initial.shouldIgnoreFormer ?? emptyState.shouldIgnoreFormer,
       color: initial.colorFilters || emptyState.color,
+      filterOperator: initial.filterOperator || emptyState.filterOperator,
+      shouldReverseFilters: initial.shouldReverseFilters ?? emptyState.shouldReverseFilters
     } as UnitPaneStoreState),
     { name: 'filterDevelopmentStore' },
   )
@@ -32,7 +38,7 @@ export const resetFilters = () => {
   useFiltersStore.setState(emptyState);
 }
 
-const getBooleanFilterSet = (filterName: 'shouldIgnoreFormer') => (value: boolean) => {
+const getBooleanFilterSet = (filterName: 'shouldIgnoreFormer' | 'shouldReverseFilters') => (value: boolean) => {
   useFiltersStore.setState((state) => ({
       ...state,
       [filterName]: value,
@@ -40,6 +46,7 @@ const getBooleanFilterSet = (filterName: 'shouldIgnoreFormer') => (value: boolea
 }
 
 export const setShouldIgnoreFormer = getBooleanFilterSet('shouldIgnoreFormer');
+export const setShouldReverseFilters = getBooleanFilterSet('shouldReverseFilters');
 
 const getStringsFilterSet = (filterName: 'type' | 'color') => (values: string[]) => {
   useFiltersStore.setState((state) => ({
@@ -51,7 +58,7 @@ const getStringsFilterSet = (filterName: 'type' | 'color') => (values: string[])
 export const setType = getStringsFilterSet('type');
 export const setColor = getStringsFilterSet('color');
 
-const getBooleanFilterToogle = (filterName: 'shouldIgnoreFormer') => () => {
+const getBooleanFilterToogle = (filterName: 'shouldIgnoreFormer' | 'shouldReverseFilters') => () => {
   useFiltersStore.setState((state) => ({
       ...state,
       [filterName]: !state[filterName],
@@ -59,6 +66,14 @@ const getBooleanFilterToogle = (filterName: 'shouldIgnoreFormer') => () => {
 }
 
 export const toggleShouldIgnoreFormer = getBooleanFilterToogle('shouldIgnoreFormer');
+export const toggleShouldReverseFilters = getBooleanFilterToogle('shouldReverseFilters');
+
+export const toggleFilterOperator = () => {
+  useFiltersStore.setState((state) => ({
+      ...state,
+      filterOperator: state.filterOperator === 'and' ? 'or' : 'and',
+  }));
+}
 
 const getStringsFilterToggle = (filterName: 'type' | 'color') => (value: string) => {
   useFiltersStore.setState((state) => {
