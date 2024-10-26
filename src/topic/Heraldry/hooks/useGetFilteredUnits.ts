@@ -117,7 +117,9 @@ export default function useGetFilteredUnits({
         clearTimeout(updateFilterTimeoutRef.current);
         updateFilterTimeoutRef.current = null;
       }
-    }, 500);
+    }, 200); /*
+      This is just a proof of concept; it could be expanded further, and I could indicate changes using progressStore. However, that’s not necessary here. Leaving it as is avoids tying a large recalculation to changes in one checkbox, so updates happen instantly, and the calculation won't block the main thread this ms later, running asynchronously instead.
+    */
   }, [filterHash]);
 
   useEffect(() => {
