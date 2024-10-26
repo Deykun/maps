@@ -6,7 +6,7 @@ import { getFilteredUnits, GetFilteredUnitsParams } from '@/topic/Heraldry/utils
 import { setUnitsPaneSearchPhrase } from '@/topic/Heraldry/stores/unitsPaneStore';
 import useFiltersStore  from '@/topic/Heraldry/stores/filtersStore';
 
-type UseGetFilteredUnitsParams = Omit<GetFilteredUnitsParams, 'colorFilters'> & {
+type UseGetFilteredUnitsParams = Omit<GetFilteredUnitsParams, 'colorFilters' | 'typeFilters' | 'shouldIgnoreFormer'> & {
   typeFiltersList: GetFilterResponse
 }
 
@@ -16,14 +16,14 @@ export default function useGetFilteredUnits({
   detailsForUnitsById,
   filterOperator,
   shouldReverseFilters,
-  shouldIgnoreFormer,
   customFilter,
-  typeFilters,
   animalFilters,
   itemFilters,
   // Not passed to getFilteredUnits
   typeFiltersList,
 }: UseGetFilteredUnitsParams) {
+  const shouldIgnoreFormer = useFiltersStore(state => state.shouldIgnoreFormer);
+  const typeFilters = useFiltersStore(state => state.type);
   const colorFilters = useFiltersStore(state => state.color);
 
   const { units, unitsForMap, subtitleParts } = useMemo(() => {

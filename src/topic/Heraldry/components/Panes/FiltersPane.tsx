@@ -56,11 +56,8 @@ type FilterSetter = (values: string[]) => void;
 type Props = {
   lang: string,
   totalVisibleUnits: number,
-  typeFilters: string[],
-  setTypeFilters: FilterSetter,
   typeFiltersList: FilterItem[],
-  shouldIgnoreFormer: boolean,
-  setShouldIgnoreFormer: (value: boolean) => void,
+
   colorFiltersList: FilterItem[],
   animalFilters: string[],
   setAnimalFilters: FilterSetter,
@@ -79,11 +76,7 @@ type Props = {
 const FiltersPane = ({
   lang,
   totalVisibleUnits,
-  typeFilters,
-  setTypeFilters,
   typeFiltersList,
-  shouldIgnoreFormer,
-  setShouldIgnoreFormer,
   colorFiltersList,
   animalFilters,
   setAnimalFilters,
@@ -99,6 +92,8 @@ const FiltersPane = ({
   isFetchingDetails,
 }: Props) => {
   const [wasOpen, setWasOpen] = useState(false);
+  const shouldIgnoreFormer = useFiltersStore(state => state.shouldIgnoreFormer);
+  const typeFilters = useFiltersStore(state => state.type);
   const colorFilters = useFiltersStore(state => state.color);
   const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
   const [activeMenu, setActiveMenu] = useState('');
@@ -120,8 +115,6 @@ const FiltersPane = ({
   }, [isOpen]);
 
   const toggleMenu = (name: string) => () => setActiveMenu((v) => v === name ? '' : name); 
-
-  const toggleType = useCallback(getFilterToggle(typeFilters, setTypeFilters), [typeFilters]);
   
   const toggleAnimal = useCallback((animal: string) => {
     if ([WITH_ANIMAL, WITHOUT_ANIMAL].includes(animal)) {
@@ -137,8 +130,6 @@ const FiltersPane = ({
 
   const handleResetFilters = () => {
     resetFilters();
-    setTypeFilters([]);
-    setShouldIgnoreFormer(false);
     setAnimalFilters([]);
     setItemFilters([]);
     setFilterOperator('and');
@@ -227,15 +218,7 @@ const FiltersPane = ({
           </ButtonIcon>
         </>}
       </Panel>
-      {activeMenu === 'type' && <FiltersPaneSidebarTypes
-        lang={lang}
-        filters={typeFilters}
-        setFilters={setTypeFilters}
-        toggle={toggleType}
-        filtersList={typeFiltersList}
-        shouldIgnoreFormer={shouldIgnoreFormer}
-        setShouldIgnoreFormer={setShouldIgnoreFormer}
-      />}
+      {activeMenu === 'type' && <FiltersPaneSidebarTypes lang={lang} filtersList={typeFiltersList} />}
       {activeMenu === 'color' && <FiltersPaneSubPanelColors className="absolute right-12 z-[-1] mt-1 mr-2" order={2} />}
       {activeMenu === 'animal' && <FiltersPaneSidebarAnimals
         filters={animalFilters}

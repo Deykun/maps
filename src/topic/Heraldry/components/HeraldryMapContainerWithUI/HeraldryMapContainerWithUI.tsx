@@ -1,4 +1,4 @@
-import { memo, useRef, useState, useMemo, useEffect, Suspense } from 'react';
+import { memo, useRef, useState, useEffect, Suspense } from 'react';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 import { useDraggable } from "react-use-draggable-scroll";
@@ -76,10 +76,8 @@ const HeraldryMapContainerWithUI = ({
     const [zoomLevel, setZoomLevel] = useState(1);
     const [coatSize, setCoatSize] = useState(4);
     const customFilter = useFiltersDevelopmentStore(state => state.filter);
-    const [typeFilters, setTypeFilters] = useState<string[]>(initialFilters.typeFilters || []);
     const [animalFilters, setAnimalFilters] = useState<string[]>(initialFilters.animalFilters || []);
     const [itemFilters, setItemFilters] = useState<string[]>(initialFilters.itemFilters || []);
-    const [shouldIgnoreFormer, setShouldIgnoreFormer] = useState(initialFilters.shouldIgnoreFormer || false);
 
     const { events } = useDraggable(wrapperRef, { decayRate: 0.015 });
 
@@ -109,9 +107,7 @@ const HeraldryMapContainerWithUI = ({
       detailsForUnitsById,
       filterOperator,
       shouldReverseFilters,
-      shouldIgnoreFormer,
       customFilter,
-      typeFilters,
       animalFilters,
       itemFilters,
       typeFiltersList,
@@ -196,11 +192,7 @@ const HeraldryMapContainerWithUI = ({
             <FiltersPane      
               lang={lang}
               totalVisibleUnits={unitsForMap.length}
-              typeFilters={typeFilters}
-              setTypeFilters={setTypeFilters}
               typeFiltersList={typeFiltersList}
-              shouldIgnoreFormer={shouldIgnoreFormer}
-              setShouldIgnoreFormer={setShouldIgnoreFormer}
               colorFiltersList={colorFiltersList}
               animalFilters={animalFilters}
               setAnimalFilters={setAnimalFilters}

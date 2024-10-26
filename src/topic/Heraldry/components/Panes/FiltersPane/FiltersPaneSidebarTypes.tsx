@@ -8,6 +8,13 @@ import Space from '@/components/UI/Space';
 
 import ButtonText from '@/components/UI/ButtonText';
 
+import useFiltersStore, {
+  setType as setFilters,
+  toggleType as toggle,
+  setShouldIgnoreFormer,
+  toggleShouldIgnoreFormer,
+} from '@/topic/Heraldry/stores/filtersStore';
+
 import { getSorter } from './utils/sort'
 
 import FiltersPaneFilter from './FiltersPaneFilter';
@@ -18,27 +25,17 @@ type FilterItem = {
   total: number,
 }
 
-type FilterSetter = (values: string[]) => void;
-
 type Props = {
   lang: string,
-  filters: string[],
-  setFilters: FilterSetter,
-  toggle: (value: string) => void,
   filtersList: FilterItem[],
-  shouldIgnoreFormer: boolean,
-  setShouldIgnoreFormer: (value: boolean) => void,
 };
 
 const FiltersPaneSidebarTypes = ({
   lang,
-  filters,
-  setFilters,
-  toggle,
   filtersList,
-  shouldIgnoreFormer,
-  setShouldIgnoreFormer,
 }: Props) => {
+  const shouldIgnoreFormer = useFiltersStore(state => state.shouldIgnoreFormer);
+  const filters = useFiltersStore(state => state.type);
   const [sortBy, setSortBy] = useState<'value' | 'name'>('value');
   const [clickType, setClickType] = useState<'checkbox' | 'radio'>('checkbox');
 
@@ -92,7 +89,7 @@ const FiltersPaneSidebarTypes = ({
           {hasFormerTypes &&
             <ButtonText
               size="small"
-              onClick={() => setShouldIgnoreFormer(!shouldIgnoreFormer)}
+              onClick={toggleShouldIgnoreFormer}
               isActive={shouldIgnoreFormer}
               isOnLight
             >

@@ -46,7 +46,7 @@ const UnitsPaneItemGrid = ( { className, unit, labelPosition = 'bottomRight' }: 
               [`ui-tooltip--${labelPosition}`]: labelPosition,
             })}
           >
-            {getShortTitle(unit.lang, unit.title).split(' ').map((word, index) => <span>
+            {getShortTitle(unit.lang, unit.title).split(' ').map((word, index) => <span key={word}>
               {index !== 0 && (word.length > 3 ? ' ' : <br />)}{word}
             </span>)}
           </span>
