@@ -25,6 +25,7 @@ export const setUnitsPaneSearchPhrase = (value: string) => {
   useUnitsPaneStore.setState((state) => ({
     ...state,
     searchPhrase: value,
+    details: value ? undefined : state.details,
   }));
 };
 

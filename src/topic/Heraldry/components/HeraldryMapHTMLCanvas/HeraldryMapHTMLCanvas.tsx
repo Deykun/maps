@@ -12,7 +12,7 @@ import { CoatOfArmsMapData, MapOffset } from '@/topic/Heraldry/types';
 import { mapPadding, maxSelectedWithClick } from '@/topic/Heraldry/constants'
 import { getXYfromLatLon } from '@/topic/Heraldry/utils/getPosition';
 
-import { setUnitsPaneSearchPhrase } from '@/topic/Heraldry/stores/unitsPaneStore';
+import { setUnitsPaneSearchPhrase, setDetailsUnit } from '@/topic/Heraldry/stores/unitsPaneStore';
 
 import useDebouncedResizeObserver from '@/hooks/useDebouncedResizeObserver'
 import useEffectChange from '@/hooks/useEffectChange'

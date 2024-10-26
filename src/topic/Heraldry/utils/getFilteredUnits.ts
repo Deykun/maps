@@ -14,7 +14,7 @@ export type GetFilterUnitsResponse = {
   subtitleParts: SubtitlePart[],
 };
 
-type GetFilteredUnitsParams = {
+export type GetFilteredUnitsParams = {
   lang: string,
   unitsForMapAll: CoatOfArmsMapData[],
   detailsForUnitsById: {

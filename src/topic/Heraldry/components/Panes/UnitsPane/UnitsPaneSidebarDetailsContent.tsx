@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
-import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 
 import { getImageSrcSet } from '@/utils/image';
 
@@ -11,6 +10,8 @@ import {
 import {
   showUnitOnMap,
 } from '@/topic/Heraldry/stores/cursorStore';
+
+import Image from '@/components/Image/Image';
 
 import IconBook from '@/components/Icons/IconBook';
 import IconMarker from '@/components/Icons/IconMarker';
@@ -68,7 +69,7 @@ const UnitsPaneSidebarDetailsContent = () => {
       </div>
       <Panel className="ui-panel--rounded-l ui-panel--rounded-r">
         <span className="relative block size-full aspect-square mb-2">
-          <img
+          <Image
             src={imagesList?.[0].path}
             srcSet={getImageSrcSet(imagesList)}
             className="size-full object-contain p-2 rounded-[8px] bg-white"
