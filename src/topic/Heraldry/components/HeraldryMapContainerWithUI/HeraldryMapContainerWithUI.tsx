@@ -7,14 +7,14 @@ import { isLanguageSupported } from '@/utils/lang';
 
 import { LOCAL_STORAGE } from '@/constants';
 
-import { setUnitsPaneSearchPhrase } from '@/topic/Heraldry/stores/unitsPaneStore';
 import { useFiltersDevelopmentStore } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
 
-import { MapsSearchParams, getSearchParamFromFilters } from '@/topic/Heraldry/utils/getSearchParams'
+import { MapsSearchParams } from '@/topic/Heraldry/utils/getSearchParams'
 import { CoatOfArmsMapData, MapOffset, CoatOfArmsDetailsData } from '@/topic/Heraldry/types';
 
+import useGetFilteredUnits from '@/topic/Heraldry/hooks/useGetFilteredUnits';
+
 import { GetFilterResponse } from '@/topic/Heraldry/utils/getFilter';
-import { getFilteredUnits } from '@/topic/Heraldry/utils/getFilteredUnits';
 
 import DevelopmentPane from '@/topic/Heraldry/components/Panes/DevelopmentPane';
 import NavigationPane from '@/topic/Heraldry/components/Panes/NavigationPane';
@@ -77,7 +77,6 @@ const HeraldryMapContainerWithUI = ({
     const [coatSize, setCoatSize] = useState(4);
     const customFilter = useFiltersDevelopmentStore(state => state.filter);
     const [typeFilters, setTypeFilters] = useState<string[]>(initialFilters.typeFilters || []);
-    const [colorFilters, setColorFilters] = useState<string[]>(initialFilters.colorFilters || []);
     const [animalFilters, setAnimalFilters] = useState<string[]>(initialFilters.animalFilters || []);
     const [itemFilters, setItemFilters] = useState<string[]>(initialFilters.itemFilters || []);
     const [shouldIgnoreFormer, setShouldIgnoreFormer] = useState(initialFilters.shouldIgnoreFormer || false);
@@ -104,42 +103,19 @@ const HeraldryMapContainerWithUI = ({
       }
     }, [i18n]);
 
-    const { units, unitsForMap, subtitleParts } = useMemo(() => {
-      // All types are checked and we can skip setting subtitle and filtering
-      const typeFiltersToPass = typeFilters.length === typeFiltersList.length ? [] : typeFilters;
-
-      const {
-        filteredUnits,
-        unitsForMap,
-        subtitleParts,
-      } = getFilteredUnits({
-        lang,
-        unitsForMapAll,
-        detailsForUnitsById,
-        filterOperator,
-        shouldReverseFilters,
-        shouldIgnoreFormer,
-        customFilter,
-        typeFilters: typeFiltersToPass,
-        colorFilters,
-        animalFilters,
-        itemFilters,
-      });
-
-      setUnitsPaneSearchPhrase('');
-
-      const searchParams = getSearchParamFromFilters({
-        filterOperator, shouldReverseFilters, shouldIgnoreFormer, typeFilters: typeFiltersToPass, colorFilters, animalFilters, itemFilters,
-      })
-      
-      window.history.replaceState(undefined, '', `${location.pathname}${searchParams}`);
-      
-      return {
-        units: filteredUnits,
-        unitsForMap,
-        subtitleParts,
-      }
-    }, [lang, unitsForMapAll, detailsForUnitsById, filterOperator, shouldReverseFilters, shouldIgnoreFormer, customFilter, typeFilters, colorFilters, animalFilters, itemFilters]);
+    const { units, unitsForMap, subtitleParts } = useGetFilteredUnits({
+      lang,
+      unitsForMapAll,
+      detailsForUnitsById,
+      filterOperator,
+      shouldReverseFilters,
+      shouldIgnoreFormer,
+      customFilter,
+      typeFilters,
+      animalFilters,
+      itemFilters,
+      typeFiltersList,
+    });
 
     return (
         <>
@@ -225,8 +201,6 @@ const HeraldryMapContainerWithUI = ({
               typeFiltersList={typeFiltersList}
               shouldIgnoreFormer={shouldIgnoreFormer}
               setShouldIgnoreFormer={setShouldIgnoreFormer}
-              colorFilters={colorFilters}
-              setColorFilters={setColorFilters}
               colorFiltersList={colorFiltersList}
               animalFilters={animalFilters}
               setAnimalFilters={setAnimalFilters}

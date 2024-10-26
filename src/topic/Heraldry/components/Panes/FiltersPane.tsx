@@ -1,12 +1,9 @@
 import { memo, useState, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
-import clsx from 'clsx';
 
 import useOutsideClick from '@/hooks/useOutsideClick';
 
 import { WITH_ANIMAL, WITHOUT_ANIMAL } from '@/topic/Heraldry/constants';
-
-import { capitalize } from '@/utils/text';
 
 import {
   useFiltersDevelopmentStore,
@@ -32,11 +29,12 @@ import SubPanel from '@/components/UI/SubPanel';
 
 import ButtonIcon from '@/components/UI/ButtonIcon';
 
-import { colorsMarkersByNames } from '@/topic/Heraldry/constants';
+import useFiltersStore, { resetFilters } from '@/topic/Heraldry/stores/filtersStore'
 
 import FiltersPaneSidebarAnimals from './FiltersPane/FiltersPaneSidebarAnimals';
 import FiltersPaneSidebarItems from './FiltersPane/FiltersPaneSidebarItems';
 import FiltersPaneSidebarTypes from './FiltersPane/FiltersPaneSidebarTypes';
+import FiltersPaneSubPanelColors from './FiltersPane/FiltersPaneSubPanelColors';
 
 const getFilterToggle = (values: string[], setValues: (values: string[]) => void) => (value: string) => {
   if (values.includes(value)) {
@@ -63,8 +61,6 @@ type Props = {
   typeFiltersList: FilterItem[],
   shouldIgnoreFormer: boolean,
   setShouldIgnoreFormer: (value: boolean) => void,
-  colorFilters: string[],
-  setColorFilters: FilterSetter,
   colorFiltersList: FilterItem[],
   animalFilters: string[],
   setAnimalFilters: FilterSetter,
@@ -88,8 +84,6 @@ const FiltersPane = ({
   typeFiltersList,
   shouldIgnoreFormer,
   setShouldIgnoreFormer,
-  colorFilters,
-  setColorFilters,
   colorFiltersList,
   animalFilters,
   setAnimalFilters,
@@ -105,6 +99,7 @@ const FiltersPane = ({
   isFetchingDetails,
 }: Props) => {
   const [wasOpen, setWasOpen] = useState(false);
+  const colorFilters = useFiltersStore(state => state.color);
   const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
   const [activeMenu, setActiveMenu] = useState('');
   const [isOpen, setIsOpen] = useState(false);
@@ -128,8 +123,6 @@ const FiltersPane = ({
 
   const toggleType = useCallback(getFilterToggle(typeFilters, setTypeFilters), [typeFilters]);
   
-  const toggleColor = useCallback(getFilterToggle(colorFilters, setColorFilters), [colorFilters]);
-  
   const toggleAnimal = useCallback((animal: string) => {
     if ([WITH_ANIMAL, WITHOUT_ANIMAL].includes(animal)) {
       setAnimalFilters(animalFilters.includes(animal) ? [] : [animal]);
@@ -142,10 +135,10 @@ const FiltersPane = ({
 
   const toggleItem = useCallback(getFilterToggle(itemFilters, setItemFilters), [itemFilters]);
 
-  const resetFilters = () => {
+  const handleResetFilters = () => {
+    resetFilters();
     setTypeFilters([]);
     setShouldIgnoreFormer(false);
-    setColorFilters([]);
     setAnimalFilters([]);
     setItemFilters([]);
     setFilterOperator('and');
@@ -221,7 +214,7 @@ const FiltersPane = ({
         {activeTotal > 0 && <>
           <span className="border-t" />
           <ButtonIcon
-            onClick={resetFilters}
+            onClick={handleResetFilters}
             label={t('heraldry.clearFilters')}
           >
             <IconEraser />
@@ -243,26 +236,7 @@ const FiltersPane = ({
         shouldIgnoreFormer={shouldIgnoreFormer}
         setShouldIgnoreFormer={setShouldIgnoreFormer}
       />}
-      {activeMenu === 'color' && <SubPanel order={2} className="ui-slide-from-right-sidebar no-scrollbar z-[-1] mt-1 absolute right-12 mr-2 flex-row">
-        {Object.keys(colorsMarkersByNames).map((name) => <ButtonIcon
-          key={name}
-          wrapperClassName="relative bg-white rounded-[8px]"
-          className="hover:!bg-transparent"
-          onClick={() => toggleColor(name)}
-          label={capitalize(t(`heraldry.color.${name}`))}
-          labelPosition="bottomLeft"
-        >
-          <IconColor
-            className={clsx('duration-300 drop-shadow-lg', {
-              'opacity-30': !colorFilters.includes(name),
-            })}
-            style={{
-              fill: colorsMarkersByNames[name],
-            }}
-          />
-          {colorFilters.includes(name) && <span className="ui-button-icon-marker-dot" />}
-        </ButtonIcon>)}
-      </SubPanel>}
+      {activeMenu === 'color' && <FiltersPaneSubPanelColors className="absolute right-12 z-[-1] mt-1 mr-2" order={2} />}
       {activeMenu === 'animal' && <FiltersPaneSidebarAnimals
         filters={animalFilters}
         setFilters={setAnimalFilters}
