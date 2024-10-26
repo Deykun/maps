@@ -25,7 +25,10 @@ const HeraldryCursor = ({ top, left, isHovering = true, hovered }: Props) => {
       }}
     >
       <span className="heraldry-cursor">
-        {hovered.length > 0 && <span className="heraldry-cursor-marker"><HeraldryCursorDevMarker hovered={hovered} />{hovered.length}</span>}
+        {hovered.length > 0 && <span className="heraldry-cursor-marker">
+          <HeraldryCursorDevMarker hovered={hovered} />
+          <span>{hovered.length}</span>
+        </span>}
       </span>
     </div>
   );

@@ -1,13 +1,9 @@
 import { useCallback } from 'react';
 import clsx from 'clsx';
 
-import {
-  useCursorStore,
-} from '@/topic/Heraldry/stores/cursorStore';
-
-import {
-  useFiltersDevelopmentStore,
-} from '@/topic/Heraldry/stores/filtersDevelopmentStore';
+import { useCursorStore } from '@/topic/Heraldry/stores/cursorStore';
+import { useFiltersDevelopmentStore } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
+import { setUnitsPaneSearchPhrase, setDetailsUnit } from '@/topic/Heraldry/stores/unitsPaneStore';
 
 import {
   getShortTitle
@@ -26,9 +22,19 @@ const HeraldryCursorLastPoint = () => {
   const lastClick = useCursorStore(state => state.lastClick);
 
   const handleClick = useCallback(() => {
+    if (lastClick?.hovered.length === 1) {
+      setUnitsPaneSearchPhrase('');
+
+      setDetailsUnit(lastClick.hovered[0]);
+    } else {
+      const phrase = (lastClick?.hovered || []).map(({ id }) => `id:${id}`).join(', ');
+
+      setUnitsPaneSearchPhrase(phrase);
+    }
+
     // TODO: replace with some kind of global store
     document.getElementById(`units-pane-toggle`)?.click();
-  }, []);
+  }, [lastClick]);
 
   if (!Array.isArray(lastClick?.hovered) || lastClick.hovered.length === 0) {
     return null;

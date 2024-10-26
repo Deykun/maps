@@ -2,8 +2,11 @@ import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 
 import {
   useFiltersDevelopmentStore,
-  getIsMatchingManualMarker,
 } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
+
+import IconInputCheckFull from '@/components/Icons/IconInputCheckFull';
+
+import useUnitsPaneStore from '@/topic/Heraldry/stores/unitsPaneStore';
 
 import './HeraldryCursor.scss';
 
@@ -13,30 +16,24 @@ type Props = {
 
 const HeraldryCursorDevMarker = ({ hovered }: Props) => {
   const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
-  const filterExclude = useFiltersDevelopmentStore((state) => state.filter.exclude || [])
-  const filterInclude = useFiltersDevelopmentStore((state) => state.filter.include || []);
+  const selected = useUnitsPaneStore(state => state.selected);
 
-  if (!isFiltersDevModeActive || (filterExclude.length === 0 && filterInclude.length === 0)) {
+  if (!isFiltersDevModeActive || selected.length === 0) {
     return null;
   }
 
-  
-  const excluded = hovered.filter((unit) => getIsMatchingManualMarker(filterExclude, unit));
-  const included = hovered.filter((unit) => getIsMatchingManualMarker(filterInclude, unit));
+  const selectedAndHovered = selected.filter(({ id: selectedId }) => hovered.some(({ id: hoveredId }) => selectedId === hoveredId))
 
-  if (excluded.length === 0 && included.length === 0) {
-    return null;
+  if (selectedAndHovered.length === 0) {
+    return null
   }
-
-  const devLabel = [
-    included.length > 0 ? `+${included.length} ⛨` : '',
-    excluded.length > 0 ? `-${excluded.length} ⛨` : '',
-  ].filter(Boolean).join(' ').trim();
   
   return (
     <>
-      {devLabel}
-      {' | '}
+      <IconInputCheckFull className="inline-block size-2 mt-[-1px] mr-1 fill-white" />
+      {selectedAndHovered.length < hovered.length &&<span>      
+        {selectedAndHovered.length}/
+      </span>}
     </>
   );
 };

@@ -78,7 +78,7 @@ const HeraldryMapHTMLCanvas = ({ className, units, children, mapOffset, coatSize
   } = useHeraldryCursorPosition();
 
   const getUnitsForXY = useCallback(({ x, y }: { x: number, y: number}) => {
-        /* 
+    /*
       We have a 1200x1200 canvas that is scaled down to 100% x 100% (to ensure the canvas image looks good when the desktop is scaled).
       
       This code transforms the clicked point (x and y) to the corresponding point on the canvas.
