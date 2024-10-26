@@ -1,14 +1,19 @@
 import { create } from 'zustand';
 import { devtools } from 'zustand/middleware'
 
+import { WITH_ANIMAL, WITHOUT_ANIMAL } from '@/topic/Heraldry/constants';
+
 import { getFiltersFromSearchParams } from '@/topic/Heraldry/utils/getSearchParams';
 
 type UnitPaneStoreState = {
   type: string[],
   shouldIgnoreFormer: boolean,
   color: string[],
+  animal: string[],
+  item: string[],
   filterOperator: 'or' | 'and',
   shouldReverseFilters: boolean,
+  shouldHideMissingImages: boolean,
 }
 
 const initial = getFiltersFromSearchParams();
@@ -17,8 +22,11 @@ const emptyState: UnitPaneStoreState = {
   type: [],
   shouldIgnoreFormer: false,
   color: [],
+  animal: [],
+  item: [],
   filterOperator: 'and',
   shouldReverseFilters: false,
+  shouldHideMissingImages: false,
 }
 
 export const useFiltersStore = create<UnitPaneStoreState>()(
@@ -27,10 +35,13 @@ export const useFiltersStore = create<UnitPaneStoreState>()(
       type: initial.typeFilters || emptyState.type,
       shouldIgnoreFormer: initial.shouldIgnoreFormer ?? emptyState.shouldIgnoreFormer,
       color: initial.colorFilters || emptyState.color,
+      animal: initial.animalFilters || emptyState.animal,
+      item: initial.itemFilters || emptyState.item,
       filterOperator: initial.filterOperator || emptyState.filterOperator,
-      shouldReverseFilters: initial.shouldReverseFilters ?? emptyState.shouldReverseFilters
+      shouldReverseFilters: initial.shouldReverseFilters ?? emptyState.shouldReverseFilters,
+      shouldHideMissingImages: emptyState.shouldHideMissingImages,
     } as UnitPaneStoreState),
-    { name: 'filterDevelopmentStore' },
+    { name: 'filterStore' },
   )
 );
 
@@ -48,7 +59,7 @@ const getBooleanFilterSet = (filterName: 'shouldIgnoreFormer' | 'shouldReverseFi
 export const setShouldIgnoreFormer = getBooleanFilterSet('shouldIgnoreFormer');
 export const setShouldReverseFilters = getBooleanFilterSet('shouldReverseFilters');
 
-const getStringsFilterSet = (filterName: 'type' | 'color') => (values: string[]) => {
+const getStringsFilterSet = (filterName: 'type' | 'color' | 'animal' | 'item') => (values: string[]) => {
   useFiltersStore.setState((state) => ({
       ...state,
       [filterName]: values,
@@ -57,8 +68,10 @@ const getStringsFilterSet = (filterName: 'type' | 'color') => (values: string[])
 
 export const setType = getStringsFilterSet('type');
 export const setColor = getStringsFilterSet('color');
+export const setAnimal = getStringsFilterSet('animal');
+export const setItem = getStringsFilterSet('item');
 
-const getBooleanFilterToogle = (filterName: 'shouldIgnoreFormer' | 'shouldReverseFilters') => () => {
+const getBooleanFilterToogle = (filterName: 'shouldIgnoreFormer' | 'shouldReverseFilters' | 'shouldHideMissingImages') => () => {
   useFiltersStore.setState((state) => ({
       ...state,
       [filterName]: !state[filterName],
@@ -67,6 +80,7 @@ const getBooleanFilterToogle = (filterName: 'shouldIgnoreFormer' | 'shouldRevers
 
 export const toggleShouldIgnoreFormer = getBooleanFilterToogle('shouldIgnoreFormer');
 export const toggleShouldReverseFilters = getBooleanFilterToogle('shouldReverseFilters');
+export const toggleShouldHideMissingImages = getBooleanFilterToogle('shouldHideMissingImages');
 
 export const toggleFilterOperator = () => {
   useFiltersStore.setState((state) => ({
@@ -75,7 +89,7 @@ export const toggleFilterOperator = () => {
   }));
 }
 
-const getStringsFilterToggle = (filterName: 'type' | 'color') => (value: string) => {
+const getStringsFilterToggle = (filterName: 'type' | 'color' | 'animal' | 'item') => (value: string) => {
   useFiltersStore.setState((state) => {
     const isActive = state[filterName].includes(value);
     
@@ -88,5 +102,20 @@ const getStringsFilterToggle = (filterName: 'type' | 'color') => (value: string)
 
 export const toggleType = getStringsFilterToggle('type');
 export const toggleColor = getStringsFilterToggle('color');
+export const defaultToggleAnimal = getStringsFilterToggle('animal');
+
+export const toggleAnimal = (animal: string) => {
+  if ([WITH_ANIMAL, WITHOUT_ANIMAL].includes(animal)) {
+    const animalFilters = useFiltersStore.getState().animal;
+
+    setAnimal(animalFilters.includes(animal) ? [] : [animal]);
+
+    return;
+  }
+
+  defaultToggleAnimal(animal);
+};
+
+export const toggleItem = getStringsFilterToggle('item');
 
 export default useFiltersStore;

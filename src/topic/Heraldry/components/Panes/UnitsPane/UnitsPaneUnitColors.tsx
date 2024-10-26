@@ -2,9 +2,7 @@ import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import clsx from 'clsx';
 
-import {
-  useFiltersDevelopmentStore,
-} from '@/topic/Heraldry/stores/filtersDevelopmentStore';
+import { useFiltersDevelopmentStore } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
 
 import { colorsMarkersByNames } from '@/topic/Heraldry/constants';
 
@@ -73,7 +71,7 @@ const UnitsPaneUnitColors = ({ id, country, shouldShowOnlyRejected = false, labe
             style={{ backgroundColor: colorsMarkersByNames[colorName] }}
           >
             {colors.map((item) => <span
-              key={item.color}
+              key={item.matcherColor}
               className="color size-full rounded-full opacity-0 group-hover:opacity-100 duration-300"
               style={{ backgroundColor: item.color }}
               data-color-from-image={item.color}

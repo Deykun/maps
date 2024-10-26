@@ -29,14 +29,17 @@ const FiltersPaneFilter = ({
 
   return (
     <button
-      className={clsx('flex gap-2 items-center max-w-full', {
+      className={clsx('flex gap-2 items-center max-w-full group', {
         'opacity-20': isDisabled && !isSelected,
         'opacity-50': isDisabled && isSelected,
       })}
       onClick={() => onChange(!isSelected)}
       disabled={isDisabled && !isSelected}
     >
-      {isSelected ? <IconSelected className="flex-shrink-0 size-3 text-marker" /> : <IconUnselected className="flex-shrink-0 size-3 text-ui-contrast" />}
+      {isSelected
+        ? <IconSelected className="flex-shrink-0 size-3 text-marker" />
+        : <IconUnselected className="flex-shrink-0 size-3 text-ui-contrast group-hover:text-marker" />
+      }
       <span className={clsx('text-left overflow-hidden truncate', { 'text-white': isSelected })}>
         {label}
       </span>

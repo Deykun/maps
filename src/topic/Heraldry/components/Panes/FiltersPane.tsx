@@ -1,9 +1,7 @@
-import { memo, useState, useEffect, useCallback } from 'react';
+import { memo, useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import useOutsideClick from '@/hooks/useOutsideClick';
-
-import { WITH_ANIMAL, WITHOUT_ANIMAL } from '@/topic/Heraldry/constants';
 
 import IconMapMagnifyingGlass from '@/components/Icons/IconMapMagnifyingGlass';
 import IconBuilding from '@/components/Icons/IconBuilding';
@@ -26,16 +24,6 @@ import FiltersPaneSidebarTypes from './FiltersPane/FiltersPaneSidebarTypes';
 import FiltersPaneSubPanelColors from './FiltersPane/FiltersPaneSubPanelColors';
 import FiltersPaneSubPanelSettings from './FiltersPane/FiltersPaneSubPanelSettings';
 
-const getFilterToggle = (values: string[], setValues: (values: string[]) => void) => (value: string) => {
-  if (values.includes(value)) {
-    setValues(values.filter((active) => active !== value));
-
-    return;
-  }
-
-  setValues([...values, value]);
-}
-
 type FilterItem = {
   value: string,
   total: number,
@@ -47,14 +35,10 @@ type Props = {
   lang: string,
   totalVisibleUnits: number,
   typeFiltersList: FilterItem[],
-
   colorFiltersList: FilterItem[],
-  animalFilters: string[],
-  setAnimalFilters: FilterSetter,
   animalFiltersList: FilterItem[],
-  itemFilters: string[],
-  setItemFilters: FilterSetter,
   itemFiltersList: FilterItem[],
+  brokenHashes: string[],
   setShouldFetchDetails: (value: boolean) => void,
   isFetchingDetails: boolean,
 };
@@ -64,12 +48,9 @@ const FiltersPane = ({
   totalVisibleUnits,
   typeFiltersList,
   colorFiltersList,
-  animalFilters,
-  setAnimalFilters,
   animalFiltersList,
-  itemFilters,
-  setItemFilters,
   itemFiltersList,
+  brokenHashes,
   setShouldFetchDetails,
   isFetchingDetails,
 }: Props) => {
@@ -77,6 +58,8 @@ const FiltersPane = ({
   const [wasOpen, setWasOpen] = useState(false);
   const shouldIgnoreFormer = useFiltersStore(state => state.shouldIgnoreFormer);
   const typeFilters = useFiltersStore(state => state.type);
+  const animalFilters = useFiltersStore(state => state.animal);
+  const itemFilters = useFiltersStore(state => state.item);
   const colorFilters = useFiltersStore(state => state.color);
   const [activeMenu, setActiveMenu] = useState('');
   const [isOpen, setIsOpen] = useState(false);
@@ -97,23 +80,9 @@ const FiltersPane = ({
   }, [isOpen]);
 
   const toggleMenu = (name: string) => () => setActiveMenu((v) => v === name ? '' : name); 
-  
-  const toggleAnimal = useCallback((animal: string) => {
-    if ([WITH_ANIMAL, WITHOUT_ANIMAL].includes(animal)) {
-      setAnimalFilters(animalFilters.includes(animal) ? [] : [animal]);
-
-      return;
-    }
-
-    getFilterToggle(animalFilters.filter((active) => ![WITH_ANIMAL, WITHOUT_ANIMAL].includes(active)), setAnimalFilters)(animal);
-  }, [animalFilters]);
-
-  const toggleItem = useCallback(getFilterToggle(itemFilters, setItemFilters), [itemFilters]);
 
   const handleResetFilters = () => {
     resetFilters();
-    setAnimalFilters([]);
-    setItemFilters([]);
     // Don't hint to open after clearing
     setWasOpen(true);
   };
@@ -200,21 +169,12 @@ const FiltersPane = ({
       </Panel>
       {activeMenu === 'type' && <FiltersPaneSidebarTypes lang={lang} filtersList={typeFiltersList} />}
       {activeMenu === 'color' && <FiltersPaneSubPanelColors className="absolute right-12 z-[-1] mt-1 mr-2" order={2} />}
-      {activeMenu === 'animal' && <FiltersPaneSidebarAnimals
-        filters={animalFilters}
-        setFilters={setAnimalFilters}
-        toggle={toggleAnimal}
-        filtersList={animalFiltersList}
-      />}
-      {activeMenu === 'item' && <FiltersPaneSidebarItems
-        filters={itemFilters}
-        setFilters={setItemFilters}
-        toggle={toggleItem}
-        filtersList={itemFiltersList}
-      />}
+      {activeMenu === 'animal' && <FiltersPaneSidebarAnimals filtersList={animalFiltersList} />}
+      {activeMenu === 'item' && <FiltersPaneSidebarItems filtersList={itemFiltersList} />}
       {activeMenu === 'settings' && <FiltersPaneSubPanelSettings
         className="absolute right-12 z-[-1] mt-1 mr-2"
         order={5}
+        brokenHashes={brokenHashes}
         shouldAddWarningForRevesedFilters={shouldAddWarningForRevesedFilters}
       />}
     </div>

@@ -42,25 +42,25 @@ const RemoveModifications = ({ unit }: Props) => {
       <div className="flex gap-2 items-center justify-end flex-wrap">
         <IconEraser className="size-5 flex-shrink-0 fill-white mr-auto" />
         {includeAnimal.map((name) => 
-          <ButtonText size="small" onClick={() => removeFromIncludeAndExcludeInMarker(unit, 'animal', name)} className={buttonClassName}>
+          <ButtonText key={name} size="small" onClick={() => removeFromIncludeAndExcludeInMarker(unit, 'animal', name)} className={buttonClassName}>
             <IconAnimal className="!fill-marker" animals={[name]} />
             <span>+ {t(`heraldry.animal.${name}`)}</span>
           </ButtonText>
         )}
         {excludedAnimal.map((name) => 
-          <ButtonText size="small" onClick={() => removeFromIncludeAndExcludeInMarker(unit, 'animal', name)} className={buttonClassName}>
+          <ButtonText key={name} size="small" onClick={() => removeFromIncludeAndExcludeInMarker(unit, 'animal', name)} className={buttonClassName}>
             <IconAnimal className="!fill-marker" animals={[name]} />
             <span>- {t(`heraldry.animal.${name}`)}</span>
           </ButtonText>
         )}
         {includeItem.map((name) => 
-          <ButtonText size="small" onClick={() => removeFromIncludeAndExcludeInMarker(unit, 'item', name)} className={buttonClassName}>
+          <ButtonText key={name} size="small" onClick={() => removeFromIncludeAndExcludeInMarker(unit, 'item', name)} className={buttonClassName}>
             <IconCrown className="!fill-marker" />
             <span>+ {t(`heraldry.item.${name}`)}</span>
           </ButtonText>
         )}
         {excludeItem.map((name) => 
-          <ButtonText size="small" onClick={() => removeFromIncludeAndExcludeInMarker(unit, 'item', name)} className={buttonClassName}>
+          <ButtonText key={name} size="small" onClick={() => removeFromIncludeAndExcludeInMarker(unit, 'item', name)} className={buttonClassName}>
             <IconCrown className="!fill-marker" />
             <span>- {t(`heraldry.item.${name}`)}</span>
           </ButtonText>

@@ -48,6 +48,7 @@ export type Props = {
   initialFilters?: Partial<MapsSearchParams>
   mapOffset: MapOffset,
   developmentModeFiltersTypes?: string[],
+  brokenHashes?: string[],
   setShouldFetchDetails: (value: boolean) => void,
   isFetchingDetails?: boolean,
 }
@@ -66,6 +67,7 @@ const HeraldryMapContainerWithUI = ({
   initialFilters = {},
   mapOffset,
   developmentModeFiltersTypes,
+  brokenHashes = [],
   setShouldFetchDetails,
   isFetchingDetails = false,
 }: Props) => {
@@ -74,8 +76,6 @@ const HeraldryMapContainerWithUI = ({
     const [zoomLevel, setZoomLevel] = useState(1);
     const [coatSize, setCoatSize] = useState(4);
     const customFilter = useFiltersDevelopmentStore(state => state.filter);
-    const [animalFilters, setAnimalFilters] = useState<string[]>(initialFilters.animalFilters || []);
-    const [itemFilters, setItemFilters] = useState<string[]>(initialFilters.itemFilters || []);
 
     const { events } = useDraggable(wrapperRef, { decayRate: 0.015 });
 
@@ -104,9 +104,8 @@ const HeraldryMapContainerWithUI = ({
       unitsForMapAll,
       detailsForUnitsById,
       customFilter,
-      animalFilters,
-      itemFilters,
       typeFiltersList,
+      brokenHashes,
     });
 
     return (
@@ -189,12 +188,9 @@ const HeraldryMapContainerWithUI = ({
               totalVisibleUnits={unitsForMap.length}
               typeFiltersList={typeFiltersList}
               colorFiltersList={colorFiltersList}
-              animalFilters={animalFilters}
-              setAnimalFilters={setAnimalFilters}
               animalFiltersList={animalFiltersList}
-              itemFilters={itemFilters}
-              setItemFilters={setItemFilters}
               itemFiltersList={itemFiltersList}
+              brokenHashes={brokenHashes}
               setShouldFetchDetails={setShouldFetchDetails}
               isFetchingDetails={isFetchingDetails}
             />

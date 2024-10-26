@@ -1,13 +1,19 @@
-import { useMemo } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
+
+
+import useEffectChange from '@/hooks/useEffectChange';
+
+import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 import { GetFilterResponse } from '@/topic/Heraldry/utils/getFilter';
 import { getSearchParamFromFilters } from '@/topic/Heraldry/utils/getSearchParams'
-import { getFilteredUnits, GetFilteredUnitsParams } from '@/topic/Heraldry/utils/getFilteredUnits';
+import { getFilteredUnits, GetFilteredUnitsParams, SubtitlePart } from '@/topic/Heraldry/utils/getFilteredUnits';
+
 
 import { setUnitsPaneSearchPhrase } from '@/topic/Heraldry/stores/unitsPaneStore';
 import useFiltersStore  from '@/topic/Heraldry/stores/filtersStore';
 
 type UseGetFilteredUnitsParams = Omit<GetFilteredUnitsParams, 
-'colorFilters' | 'typeFilters' | 'shouldIgnoreFormer' | 'filterOperator' | 'shouldReverseFilters'
+  'colorFilters' | 'typeFilters' | 'shouldIgnoreFormer' | 'filterOperator' | 'shouldReverseFilters' | 'shouldHideMissingImages' | 'animalFilters' | 'itemFilters'
 > & {
   typeFiltersList: GetFilterResponse
 }
@@ -17,18 +23,49 @@ export default function useGetFilteredUnits({
   unitsForMapAll,
   detailsForUnitsById,
   customFilter,
-  animalFilters,
-  itemFilters,
+  brokenHashes,
   // Not passed to getFilteredUnits
   typeFiltersList,
 }: UseGetFilteredUnitsParams) {
-  const shouldIgnoreFormer = useFiltersStore(state => state.shouldIgnoreFormer);
-  const typeFilters = useFiltersStore(state => state.type);
-  const colorFilters = useFiltersStore(state => state.color);
-  const filterOperator = useFiltersStore(state => state.filterOperator);
-  const shouldReverseFilters = useFiltersStore(state => state.shouldReverseFilters);
+  const updateFilterTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const { units, unitsForMap, subtitleParts } = useMemo(() => {
+  const [response, setResponse] = useState<{
+    units: CoatOfArmsMapData[];
+    unitsForMap: CoatOfArmsMapData[];
+    subtitleParts: SubtitlePart[]
+  }>({
+    units: [],
+    unitsForMap: [],
+    subtitleParts: [],
+  });
+
+  const {
+    type: typeFilters,
+    color: colorFilters,
+    animal: animalFilters,
+    item: itemFilters,
+    filterOperator,
+    shouldReverseFilters,
+    shouldHideMissingImages,
+    shouldIgnoreFormer,
+  } = useFiltersStore();
+
+  const filterHash = JSON.stringify({
+    lang,
+    unitsForMapAll, 
+    detailsForUnitsById, 
+    filterOperator, 
+    shouldReverseFilters,
+    shouldIgnoreFormer,
+    customFilter,
+    typeFilters,
+    colorFilters,
+    animalFilters,
+    itemFilters,
+    shouldHideMissingImages
+  });
+
+  const updateResponse = useCallback(() => {
     // All types are checked and we can skip setting subtitle and filtering
     const typeFiltersToPass = typeFilters.length === typeFiltersList.length ? [] : typeFilters;
 
@@ -43,6 +80,8 @@ export default function useGetFilteredUnits({
       filterOperator,
       shouldReverseFilters,
       shouldIgnoreFormer,
+      brokenHashes,
+      shouldHideMissingImages,
       customFilter,
       typeFilters: typeFiltersToPass,
       colorFilters,
@@ -58,17 +97,32 @@ export default function useGetFilteredUnits({
     
     window.history.replaceState(undefined, '', `${location.pathname}${searchParams}`);
     
-    return {
+    setResponse({
       units: filteredUnits,
       unitsForMap,
       subtitleParts,
+    })
+  }, [filterHash]);
+
+  useEffectChange(() => {
+    if (updateFilterTimeoutRef.current) {
+      clearTimeout(updateFilterTimeoutRef.current);
+      updateFilterTimeoutRef.current = null;
     }
-  }, [lang, unitsForMapAll, detailsForUnitsById, filterOperator, shouldReverseFilters, shouldIgnoreFormer, customFilter, typeFilters, colorFilters, animalFilters, itemFilters]);
 
+    updateFilterTimeoutRef.current = setTimeout(() => {
+      updateResponse();
 
-  return {
-    units,
-    unitsForMap,
-    subtitleParts,
-  };
+      if (updateFilterTimeoutRef.current) {
+        clearTimeout(updateFilterTimeoutRef.current);
+        updateFilterTimeoutRef.current = null;
+      }
+    }, 500);
+  }, [filterHash]);
+
+  useEffect(() => {
+    updateResponse();
+  }, []);
+
+  return response;
 }
