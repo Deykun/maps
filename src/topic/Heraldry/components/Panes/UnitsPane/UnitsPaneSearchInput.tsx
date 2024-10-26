@@ -4,18 +4,12 @@ import clsx from 'clsx';
 
 import useEffectChange from '@/hooks/useEffectChange';
 
+import useUnitsPaneStore, { setUnitsPaneSearchPhrase } from '@/topic/Heraldry/stores/unitsPaneStore';
 
-type Props = {
-  filterPhrase: string,
-  setFilterPhrase: (value: string) => void,
-};
-
-const UnitsPaneSearchInput = ({
-  filterPhrase,
-  setFilterPhrase,
-}: Props) => {
+const UnitsPaneSearchInput = () => {
+  const searchPhrase = useUnitsPaneStore(state => state.searchPhrase);
   const updateFilterTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const [inputValue, setInputValue] = useState(filterPhrase);
+  const [inputValue, setInputValue] = useState(searchPhrase);
 
   const { t } = useTranslation();
 
@@ -25,9 +19,9 @@ const UnitsPaneSearchInput = ({
       updateFilterTimeoutRef.current = null;
     }
 
-    if (filterPhrase !== inputValue) {
+    if (searchPhrase !== inputValue) {
       updateFilterTimeoutRef.current = setTimeout(() => {
-        setFilterPhrase(inputValue);
+        setUnitsPaneSearchPhrase(inputValue);
 
         if (updateFilterTimeoutRef.current) {
           clearTimeout(updateFilterTimeoutRef.current);
@@ -43,8 +37,8 @@ const UnitsPaneSearchInput = ({
       updateFilterTimeoutRef.current = null;
     }
 
-    setInputValue(filterPhrase);
-  }, [filterPhrase])
+    setInputValue(searchPhrase);
+  }, [searchPhrase])
 
   return (
     <input

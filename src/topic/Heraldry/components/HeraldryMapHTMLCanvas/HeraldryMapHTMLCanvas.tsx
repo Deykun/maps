@@ -12,7 +12,7 @@ import { CoatOfArmsMapData, MapOffset } from '@/topic/Heraldry/types';
 import { mapPadding, maxSelectedWithClick } from '@/topic/Heraldry/constants'
 import { getXYfromLatLon } from '@/topic/Heraldry/utils/getPosition';
 
-import { render, onResize, setCoatOfArms, getCoatOfArmsForXandY, setCoatSize } from './canvas/render';
+import { setUnitsPaneSearchPhrase, setDetailsUnit } from '@/topic/Heraldry/stores/unitsPaneStore';
 
 import useDebouncedResizeObserver from '@/hooks/useDebouncedResizeObserver'
 import useEffectChange from '@/hooks/useEffectChange'
@@ -20,6 +20,8 @@ import useEffectChange from '@/hooks/useEffectChange'
 import useHeraldryCursorPosition from '@/topic/Heraldry/components/HeraldryCursor/useHeraldryCursorPosition';
 import HeraldryCursor from '@/topic/Heraldry/components/HeraldryCursor/HeraldryCursor';
 import HeraldryCursorLastPoint from '@/topic/Heraldry/components/HeraldryCursor/HeraldryCursorLastPoint';
+
+import { render, onResize, setCoatOfArms, getCoatOfArmsForXandY, setCoatSize } from './canvas/render';
 
 import useKeepPositionAfterResize from './useKeepPositionAfterResize';
 
@@ -31,10 +33,9 @@ type Props = {
   children: React.ReactNode,
   mapOffset: MapOffset,
   coatSize: number,
-  setListPhrase: (phrase: string) => void,
 }
 
-const HeraldryMapHTMLCanvas = ({ className, units, children, mapOffset, coatSize, setListPhrase }: Props) => {
+const HeraldryMapHTMLCanvas = ({ className, units, children, mapOffset, coatSize }: Props) => {
   const idToShow = useCursorStore((state) => state.idToShow);
   const [hovered, setHovered] = useState<CoatOfArmsMapData[]>([]);
 
@@ -77,7 +78,7 @@ const HeraldryMapHTMLCanvas = ({ className, units, children, mapOffset, coatSize
   } = useHeraldryCursorPosition();
 
   const getUnitsForXY = useCallback(({ x, y }: { x: number, y: number}) => {
-        /* 
+    /*
       We have a 1200x1200 canvas that is scaled down to 100% x 100% (to ensure the canvas image looks good when the desktop is scaled).
       
       This code transforms the clicked point (x and y) to the corresponding point on the canvas.
@@ -113,8 +114,6 @@ const HeraldryMapHTMLCanvas = ({ className, units, children, mapOffset, coatSize
   }, [getUnitsForXY]);
 
   const handleMapClick = useCallback((event: React.PointerEvent) => {
-    // alert(event.pointerType);
-
     let selected = hovered;
     if (event.pointerType === 'touch') {
       if (elementRef.current) {
@@ -130,9 +129,9 @@ const HeraldryMapHTMLCanvas = ({ className, units, children, mapOffset, coatSize
       if (selected.length <= maxSelectedWithClick) {
         const phrase = selected.map(({ id }) => `id:${id}`).join(', ');
 
-        setListPhrase(phrase);
+        setUnitsPaneSearchPhrase(phrase);
       } else {
-        setListPhrase('');
+        setUnitsPaneSearchPhrase('');
       }
 
       if (elementRef.current) {

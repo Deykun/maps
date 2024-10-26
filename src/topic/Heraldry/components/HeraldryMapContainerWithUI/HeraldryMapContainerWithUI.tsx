@@ -1,4 +1,4 @@
-import { memo, useRef, useState, useMemo, useEffect, Suspense } from 'react';
+import { memo, useRef, useState, useEffect, Suspense } from 'react';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 import { useDraggable } from "react-use-draggable-scroll";
@@ -7,15 +7,14 @@ import { isLanguageSupported } from '@/utils/lang';
 
 import { LOCAL_STORAGE } from '@/constants';
 
-import {
-  useFiltersDevelopmentStore,
-} from '@/topic/Heraldry/stores/filtersDevelopmentStore';
+import { useFiltersDevelopmentStore } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
 
-import { MapsSearchParams, getSearchParamFromFilters } from '@/topic/Heraldry/utils/getSearchParams'
+import { MapsSearchParams } from '@/topic/Heraldry/utils/getSearchParams'
 import { CoatOfArmsMapData, MapOffset, CoatOfArmsDetailsData } from '@/topic/Heraldry/types';
 
+import useGetFilteredUnits from '@/topic/Heraldry/hooks/useGetFilteredUnits';
+
 import { GetFilterResponse } from '@/topic/Heraldry/utils/getFilter';
-import { getFilteredUnits } from '@/topic/Heraldry/utils/getFilteredUnits';
 
 import DevelopmentPane from '@/topic/Heraldry/components/Panes/DevelopmentPane';
 import NavigationPane from '@/topic/Heraldry/components/Panes/NavigationPane';
@@ -49,6 +48,7 @@ export type Props = {
   initialFilters?: Partial<MapsSearchParams>
   mapOffset: MapOffset,
   developmentModeFiltersTypes?: string[],
+  brokenHashes?: string[],
   setShouldFetchDetails: (value: boolean) => void,
   isFetchingDetails?: boolean,
 }
@@ -67,22 +67,15 @@ const HeraldryMapContainerWithUI = ({
   initialFilters = {},
   mapOffset,
   developmentModeFiltersTypes,
+  brokenHashes = [],
   setShouldFetchDetails,
   isFetchingDetails = false,
 }: Props) => {
     const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
     const [shouldHintLang, setShouldHintLang] = useState(false);
-    const [listPhrase, setListPhrase] = useState('');
-    const [filterOperator, setFilterOperator] = useState<'and' | 'or'>(initialFilters.filterOperator || 'and');
-    const [shouldReverseFilters, setShouldReverseFilters] = useState(initialFilters.shouldReverseFilters || false);
     const [zoomLevel, setZoomLevel] = useState(1);
     const [coatSize, setCoatSize] = useState(4);
     const customFilter = useFiltersDevelopmentStore(state => state.filter);
-    const [typeFilters, setTypeFilters] = useState<string[]>(initialFilters.typeFilters || []);
-    const [colorFilters, setColorFilters] = useState<string[]>(initialFilters.colorFilters || []);
-    const [animalFilters, setAnimalFilters] = useState<string[]>(initialFilters.animalFilters || []);
-    const [itemFilters, setItemFilters] = useState<string[]>(initialFilters.itemFilters || []);
-    const [shouldIgnoreFormer, setShouldIgnoreFormer] = useState(initialFilters.shouldIgnoreFormer || false);
 
     const { events } = useDraggable(wrapperRef, { decayRate: 0.015 });
 
@@ -106,42 +99,14 @@ const HeraldryMapContainerWithUI = ({
       }
     }, [i18n]);
 
-    const { units, unitsForMap, subtitleParts } = useMemo(() => {
-      // All types are checked and we can skip setting subtitle and filtering
-      const typeFiltersToPass = typeFilters.length === typeFiltersList.length ? [] : typeFilters;
-
-      const {
-        filteredUnits,
-        unitsForMap,
-        subtitleParts,
-      } = getFilteredUnits({
-        lang,
-        unitsForMapAll,
-        detailsForUnitsById,
-        filterOperator,
-        shouldReverseFilters,
-        shouldIgnoreFormer,
-        customFilter,
-        typeFilters: typeFiltersToPass,
-        colorFilters,
-        animalFilters,
-        itemFilters,
-      });
-
-      setListPhrase('');
-
-      const searchParams = getSearchParamFromFilters({
-        filterOperator, shouldReverseFilters, shouldIgnoreFormer, typeFilters: typeFiltersToPass, colorFilters, animalFilters, itemFilters,
-      })
-      
-      window.history.replaceState(undefined, '', `${location.pathname}${searchParams}`);
-      
-      return {
-        units: filteredUnits,
-        unitsForMap,
-        subtitleParts,
-      }
-    }, [lang, unitsForMapAll, detailsForUnitsById, filterOperator, shouldReverseFilters, shouldIgnoreFormer, customFilter, typeFilters, colorFilters, animalFilters, itemFilters]);
+    const { units, unitsForMap, subtitleParts } = useGetFilteredUnits({
+      lang,
+      unitsForMapAll,
+      detailsForUnitsById,
+      customFilter,
+      typeFiltersList,
+      brokenHashes,
+    });
 
     return (
         <>
@@ -162,7 +127,6 @@ const HeraldryMapContainerWithUI = ({
               country={lang}
               zoomLevel={zoomLevel}
               subtitleParts={subtitleParts}
-              shouldReverseFilters={shouldReverseFilters}
             />
             <div>
               <div
@@ -173,7 +137,6 @@ const HeraldryMapContainerWithUI = ({
               >
                 <HeraldryMapHTMLCanvas
                   units={unitsForMap}
-                  setListPhrase={setListPhrase}
                   mapOffset={mapOffset}
                   coatSize={Math.round(((coatSize + 1) / 11) * 80)}
                 >
@@ -217,32 +180,17 @@ const HeraldryMapContainerWithUI = ({
             <Space side="right" />
             <UnitsPane
               units={units}
-              phrase={listPhrase}
-              shouldShowCount={listPhrase.length > 0}
               setShouldFetchDetails={setShouldFetchDetails}
             />
             <Space side="right" />
             <FiltersPane      
               lang={lang}
               totalVisibleUnits={unitsForMap.length}
-              typeFilters={typeFilters}
-              setTypeFilters={setTypeFilters}
               typeFiltersList={typeFiltersList}
-              shouldIgnoreFormer={shouldIgnoreFormer}
-              setShouldIgnoreFormer={setShouldIgnoreFormer}
-              colorFilters={colorFilters}
-              setColorFilters={setColorFilters}
               colorFiltersList={colorFiltersList}
-              animalFilters={animalFilters}
-              setAnimalFilters={setAnimalFilters}
               animalFiltersList={animalFiltersList}
-              itemFilters={itemFilters}
-              setItemFilters={setItemFilters}
               itemFiltersList={itemFiltersList}
-              filterOperator={filterOperator}
-              setFilterOperator={setFilterOperator}
-              shouldReverseFilters={shouldReverseFilters}
-              setShouldReverseFilters={setShouldReverseFilters}
+              brokenHashes={brokenHashes}
               setShouldFetchDetails={setShouldFetchDetails}
               isFetchingDetails={isFetchingDetails}
             />

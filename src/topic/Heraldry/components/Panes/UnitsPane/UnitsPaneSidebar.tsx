@@ -15,6 +15,8 @@ import Space from '@/components/UI/Space';
 
 import ButtonIcon from '@/components/UI/ButtonIcon';
 
+import useUnitsPaneStore, { setDetailsUnit, setUnitsPaneSearchPhrase } from '@/topic/Heraldry/stores/unitsPaneStore';
+
 import UnitsPaneItemGrid from './UnitsPaneItemGrid';
 import UnitsPaneItemList from './UnitsPaneItemList';
 import UnitsPaneSidebarDetailsContent from './UnitsPaneSidebarDetailsContent';
@@ -22,8 +24,6 @@ import UnitsPaneSearchInput from './UnitsPaneSearchInput';
 import UnitsPaneBulkDevActions from './UnitsPaneBulkDevActions';
 
 type Props = {
-  filterPhrase: string,
-  setFilterPhrase: (value: string) => void,
   units?: CoatOfArmsMapData[],
   layout: 'grid' | 'list',
   setLayout: (value: 'grid' | 'list') => void,
@@ -33,15 +33,14 @@ type Props = {
 
 const UnitsPaneSidebar = ({
   units = [],
-  filterPhrase,
-  setFilterPhrase,
   layout,
   setLayout,
   setSelectedPaneUnits,
   selectedPaneUnits = [],
 }: Props) => {
   const [filterPage, setFilterPage] = useState(0);
-  const [detailsUnit, setDetailsUnit] = useState<CoatOfArmsMapData | undefined>(undefined);
+  const searchPhrase = useUnitsPaneStore(state => state.searchPhrase);
+  const detailsUnit = useUnitsPaneStore(state => state.details);
 
   const { t } = useTranslation();
 
@@ -67,7 +66,7 @@ const UnitsPaneSidebar = ({
   }, [units]);
 
   const handleClear = () => {
-    setFilterPhrase('');
+    setUnitsPaneSearchPhrase('');
     setSelectedPaneUnits([]);
   }
 
@@ -81,23 +80,15 @@ const UnitsPaneSidebar = ({
     <div className="ui-slide-from-right-sidebar no-scrollbar fixed top-0 right-0 z-[-1] w-[400px] max-w-[100vw] max-h-[100dvh] overflow-auto">
       <div className="bg-ui-dark text-ui-dark-contrast p-[12px] pr-[60px] rounded-bl-[18px] flex flex-col gap-[12px] relative">
         {detailsUnit ?
-          <UnitsPaneSidebarDetailsContent
-            unit={detailsUnit}
-            setDetailsUnit={setDetailsUnit}
-            setSelectedPaneUnits={setSelectedPaneUnits}
-            selectedPaneUnits={selectedPaneUnits}
-          />
+          <UnitsPaneSidebarDetailsContent />
           : <>
             <h3 className="flex gap-3 items-center text-[14px]">
-              <IconCoatOfArms className="size-5 text-white" units={[]} />
+              <IconCoatOfArms className="size-5 text-white" />
               <span>{t('heraldry.list.title')}</span>
             </h3>
             <div className="sticky top-0 z-[1] -my-[12px] py-[12px] bg-ui-dark rounded-b-[12px]">
               <Panel className="ui-panel--rounded-l ui-panel--rounded-r">
-                <UnitsPaneSearchInput
-                  filterPhrase={filterPhrase}
-                  setFilterPhrase={setFilterPhrase}
-                />
+                <UnitsPaneSearchInput />
                 <div className="mt-2 flex gap-1">
                   <ButtonIcon
                     size="small"
@@ -118,14 +109,11 @@ const UnitsPaneSidebar = ({
                   >
                     <IconLayoutList />
                   </ButtonIcon>
-                  <UnitsPaneBulkDevActions
-                    setSelectedPaneUnits={setSelectedPaneUnits}
-                    selectedPaneUnits={selectedPaneUnits}
-                  />
+                  <UnitsPaneBulkDevActions />
                   <ButtonIcon
                     wrapperClassName="ml-auto"
                     size="small"
-                    isDisabled={filterPhrase.length === 0 && selectedPaneUnits.length === 0}
+                    isDisabled={searchPhrase.length === 0 && selectedPaneUnits.length === 0}
                     onClick={handleClear}
                     label={t('heraldry.list.clear')}
                     labelPosition="bottomLeft"
@@ -141,7 +129,6 @@ const UnitsPaneSidebar = ({
                 {units.slice(0, itemsToShow).map((unit, index) => <UnitsPaneItemGrid
                   key={unit.id}
                   unit={unit}
-                  setDetailsUnit={setDetailsUnit}
                   labelPosition={[(index + 2) % 5, (index + 1) % 5].includes(0) ? 'bottomLeft' : 'bottomRight'}
                 />)}
               </ul>}
@@ -149,9 +136,6 @@ const UnitsPaneSidebar = ({
                 {units.slice(0, itemsToShow).map((unit) => <UnitsPaneItemList
                   key={unit.id}
                   unit={unit}
-                  setDetailsUnit={setDetailsUnit}
-                  setSelectedPaneUnits={setSelectedPaneUnits}
-                  selectedPaneUnits={selectedPaneUnits}
                 />)}
               </ul>}
               {units.length > itemsToShow && 

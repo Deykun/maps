@@ -38,8 +38,11 @@
 }
 
 .heraldry-cursor-marker {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 0 4px;
+  padding: 4px;
   color: #ffdada;
   background-color: #170505;
   font-size: 10px;

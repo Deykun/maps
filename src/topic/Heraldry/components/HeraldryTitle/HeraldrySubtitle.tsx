@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import clsx from 'clsx';
 
@@ -55,36 +55,36 @@ const HeraldrySubtitle = ({
         <small className="mr-1">
           {t(shouldReverseFilters ? 'heraldry.activeExclusionFilters' : 'heraldry.activeFilters')}
         </small>
-          {subtitleParts.map(({ operator, labels }, indexParts) => {
-            if (labels.length === 1) {
-              return (
-                <>
-                  <strong dangerouslySetInnerHTML={{ __html: t(labels[0]) }} />
-                  {indexParts < subtitleParts.length - 1 && <small className="mx-1">
-                    {' '}{t('heraldry.filterOperator.and')}{' '}
-                  </small>}
-                </>
-              )
-            }
-
+        {subtitleParts.map(({ operator, labels }, indexParts) => {
+          if (labels.length === 1) {
             return (
               <>
-                {operator === 'or' && subtitleParts.length > 1 && <small>{'( '}</small>}
-                {labels.map((label, indexLabel) => (
-                  <>
-                    <strong dangerouslySetInnerHTML={{ __html: t(label) }} />
-                    {indexLabel < labels.length - 1 && <small className="mx-1">
-                      {' '}{t(`heraldry.filterOperator.${operator}`)}{' '}
-                    </small>}
-                  </>
-                ))}
-                {operator === 'or' && subtitleParts.length > 1 && <small>{' )'}</small>}
+                <strong key={labels[0]} dangerouslySetInnerHTML={{ __html: t(labels[0]) }} />
                 {indexParts < subtitleParts.length - 1 && <small className="mx-1">
                   {' '}{t('heraldry.filterOperator.and')}{' '}
                 </small>}
               </>
-            );
-          })}
+            )
+          }
+
+          return (
+            <React.Fragment key={labels[0]}>
+              {operator === 'or' && subtitleParts.length > 1 && <small>{'( '}</small>}
+              {labels.map((label, indexLabel) => (
+                <React.Fragment key={label}>
+                  <strong dangerouslySetInnerHTML={{ __html: t(label) }} />
+                  {indexLabel < labels.length - 1 && <small className="mx-1">
+                    {' '}{t(`heraldry.filterOperator.${operator}`)}{' '}
+                  </small>}
+                </React.Fragment>
+              ))}
+              {operator === 'or' && subtitleParts.length > 1 && <small>{' )'}</small>}
+              {indexParts < subtitleParts.length - 1 && <small className="mx-1">
+                {' '}{t('heraldry.filterOperator.and')}{' '}
+              </small>}
+            </React.Fragment>
+          );
+        })}
       </span>}
     </h2>
   );

@@ -42,6 +42,7 @@ const RemoveMarkers = ({ unit }: Props) => {
         <IconMarkerMinus className="size-5 flex-shrink-0 fill-white mr-auto" />
         {animals.map((name) => 
           <ButtonText
+            key={name}
             size="small"
             onClick={() => excludeUnitFromMarker(unit, 'animal', name)}
             isDisabled={excludedAnimal.includes(name)}
@@ -52,6 +53,7 @@ const RemoveMarkers = ({ unit }: Props) => {
         )}
         {items.map((name) => 
           <ButtonText
+            key={name}
             size="small"
             onClick={() => excludeUnitFromMarker(unit, 'item', name)}
             isDisabled={excludeItem.includes(name)}

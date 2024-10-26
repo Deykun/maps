@@ -99,6 +99,7 @@ const NavigationPane = ({
       </Panel>
       {activeMenu === 'country' && <SubPanel order={0} className="ui-slide-from-left-sidebar z-[-1] absolute left-12 ml-3 flex-row">
         {HERALDRY_COUNTRIES.map(({ path: langPath, pathNameLink, lang }) => <ButtonIcon
+          key={langPath}
           href={`/maps/${langPath}`}
           title={t(pathNameLink)}
           isActive={path === `/maps/${langPath}`}
@@ -114,6 +115,7 @@ const NavigationPane = ({
         }
       )}>
         {SUPPORTED_LANGS.map((lang) => <ButtonIcon
+          key={lang}
           onClick={() => changeLanguage(lang)}
           isActive={i18n.language === lang}
         >

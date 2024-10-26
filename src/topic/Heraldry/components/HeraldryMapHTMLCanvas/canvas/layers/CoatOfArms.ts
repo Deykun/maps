@@ -146,8 +146,8 @@ export class CoatOfArms {
     
     this.ctx.shadowOffsetX = 0;
     this.ctx.shadowOffsetY = 3;
-    this.ctx.shadowBlur = 3;
-    this.ctx.shadowColor = 'rgba(47, 121, 121, 0.1)';
+    this.ctx.shadowBlur = 4;
+    this.ctx.shadowColor = 'rgba(104, 67, 67, 0.16)';
 
     this.ctx.drawImage(
       this.image,

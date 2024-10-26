@@ -9,6 +9,11 @@ import IconForbidden from '@/components/Icons/IconForbidden';
 import Space from '@/components/UI/Space';
 import ButtonText from '@/components/UI/ButtonText';
 
+import useFiltersStore, {
+  setAnimal as setFilters,
+  toggleAnimal as toggle,
+} from '@/topic/Heraldry/stores/filtersStore';
+
 import { getSorter } from './utils/sort'
 
 import FiltersPaneFilter from './FiltersPaneFilter';
@@ -19,21 +24,14 @@ type FilterItem = {
   total: number,
 }
 
-type FilterSetter = (values: string[]) => void;
-
 type Props = {
-  filters: string[],
-  setFilters: FilterSetter,
-  toggle: (value: string) => void,
   filtersList: FilterItem[],
 };
 
 const FiltersPaneSidebarTypes = ({
-  filters,
-  setFilters,
-  toggle,
   filtersList,
 }: Props) => {
+  const filters = useFiltersStore(state => state.animal);
   const [sortBy, setSortBy] = useState<'value' | 'name'>('value');
   const [clickType, setClickType] = useState<'checkbox' | 'radio'>(filters.length > 1 ? 'checkbox' : 'radio');
 

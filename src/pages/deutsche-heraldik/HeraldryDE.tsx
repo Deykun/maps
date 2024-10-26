@@ -179,6 +179,10 @@ const HeraldryDE = () => {
       ]}
       filterForCountryData={filterForCountryData}
       sortForCountryData={sortForCountryData}
+      brokenHashes={[
+        '6ec97a69',
+        '3408fb18',
+      ]}
       developmentModeFiltersTypes={[
         'unit-0',
         'unit-1',

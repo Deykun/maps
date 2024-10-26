@@ -1,52 +1,28 @@
-import { memo, useState, useEffect, useCallback } from 'react';
+import { memo, useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import clsx from 'clsx';
 
 import useOutsideClick from '@/hooks/useOutsideClick';
-
-import { WITH_ANIMAL, WITHOUT_ANIMAL } from '@/topic/Heraldry/constants';
-
-import { capitalize } from '@/utils/text';
-
-import {
-  useFiltersDevelopmentStore,
-  toggleFilterDevlopmentMode,
-} from '@/topic/Heraldry/stores/filtersDevelopmentStore';
 
 import IconMapMagnifyingGlass from '@/components/Icons/IconMapMagnifyingGlass';
 import IconBuilding from '@/components/Icons/IconBuilding';
 import IconColor from '@/components/Icons/IconColor';
 import IconControls from '@/components/Icons/IconControls';
-import IconFlask from '@/components/Icons/IconFlask';
 import IconAnimal from '@/components/Icons/IconAnimal';
 import IconCrown from '@/components/Icons/IconCrown';
 import IconEraser from '@/components/Icons/IconEraser';
-import IconCubeAnd from '@/components/Icons/IconCubeAnd';
-import IconCubeOr from '@/components/Icons/IconCubeOr';
-import IconEye from '@/components/Icons/IconEye';
-import IconEyeCrossed from '@/components/Icons/IconEyeCrossed';
 import IconLoader from '@/components/Icons/IconLoader';
 
 import Panel from '@/components/UI/Panel';
-import SubPanel from '@/components/UI/SubPanel';
 
 import ButtonIcon from '@/components/UI/ButtonIcon';
 
-import { colorsMarkersByNames } from '@/topic/Heraldry/constants';
+import useFiltersStore, { resetFilters } from '@/topic/Heraldry/stores/filtersStore'
 
 import FiltersPaneSidebarAnimals from './FiltersPane/FiltersPaneSidebarAnimals';
 import FiltersPaneSidebarItems from './FiltersPane/FiltersPaneSidebarItems';
 import FiltersPaneSidebarTypes from './FiltersPane/FiltersPaneSidebarTypes';
-
-const getFilterToggle = (values: string[], setValues: (values: string[]) => void) => (value: string) => {
-  if (values.includes(value)) {
-    setValues(values.filter((active) => active !== value));
-
-    return;
-  }
-
-  setValues([...values, value]);
-}
+import FiltersPaneSubPanelColors from './FiltersPane/FiltersPaneSubPanelColors';
+import FiltersPaneSubPanelSettings from './FiltersPane/FiltersPaneSubPanelSettings';
 
 type FilterItem = {
   value: string,
@@ -58,24 +34,11 @@ type FilterSetter = (values: string[]) => void;
 type Props = {
   lang: string,
   totalVisibleUnits: number,
-  typeFilters: string[],
-  setTypeFilters: FilterSetter,
   typeFiltersList: FilterItem[],
-  shouldIgnoreFormer: boolean,
-  setShouldIgnoreFormer: (value: boolean) => void,
-  colorFilters: string[],
-  setColorFilters: FilterSetter,
   colorFiltersList: FilterItem[],
-  animalFilters: string[],
-  setAnimalFilters: FilterSetter,
   animalFiltersList: FilterItem[],
-  itemFilters: string[],
-  setItemFilters: FilterSetter,
   itemFiltersList: FilterItem[],
-  filterOperator: 'or' | 'and',
-  setFilterOperator: (operator: 'or' | 'and') => void,
-  shouldReverseFilters: boolean,
-  setShouldReverseFilters: (value: boolean) => void,
+  brokenHashes: string[],
   setShouldFetchDetails: (value: boolean) => void,
   isFetchingDetails: boolean,
 };
@@ -83,29 +46,21 @@ type Props = {
 const FiltersPane = ({
   lang,
   totalVisibleUnits,
-  typeFilters,
-  setTypeFilters,
   typeFiltersList,
-  shouldIgnoreFormer,
-  setShouldIgnoreFormer,
-  colorFilters,
-  setColorFilters,
   colorFiltersList,
-  animalFilters,
-  setAnimalFilters,
   animalFiltersList,
-  itemFilters,
-  setItemFilters,
   itemFiltersList,
-  filterOperator,
-  setFilterOperator,
-  shouldReverseFilters,
-  setShouldReverseFilters,
+  brokenHashes,
   setShouldFetchDetails,
   isFetchingDetails,
 }: Props) => {
+  const shouldReverseFilters = useFiltersStore(state => state.shouldReverseFilters);
   const [wasOpen, setWasOpen] = useState(false);
-  const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
+  const shouldIgnoreFormer = useFiltersStore(state => state.shouldIgnoreFormer);
+  const typeFilters = useFiltersStore(state => state.type);
+  const animalFilters = useFiltersStore(state => state.animal);
+  const itemFilters = useFiltersStore(state => state.item);
+  const colorFilters = useFiltersStore(state => state.color);
   const [activeMenu, setActiveMenu] = useState('');
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
@@ -126,30 +81,8 @@ const FiltersPane = ({
 
   const toggleMenu = (name: string) => () => setActiveMenu((v) => v === name ? '' : name); 
 
-  const toggleType = useCallback(getFilterToggle(typeFilters, setTypeFilters), [typeFilters]);
-  
-  const toggleColor = useCallback(getFilterToggle(colorFilters, setColorFilters), [colorFilters]);
-  
-  const toggleAnimal = useCallback((animal: string) => {
-    if ([WITH_ANIMAL, WITHOUT_ANIMAL].includes(animal)) {
-      setAnimalFilters(animalFilters.includes(animal) ? [] : [animal]);
-
-      return;
-    }
-
-    getFilterToggle(animalFilters.filter((active) => ![WITH_ANIMAL, WITHOUT_ANIMAL].includes(active)), setAnimalFilters)(animal);
-  }, [animalFilters]);
-
-  const toggleItem = useCallback(getFilterToggle(itemFilters, setItemFilters), [itemFilters]);
-
-  const resetFilters = () => {
-    setTypeFilters([]);
-    setShouldIgnoreFormer(false);
-    setColorFilters([]);
-    setAnimalFilters([]);
-    setItemFilters([]);
-    setFilterOperator('and');
-    setShouldReverseFilters(false);
+  const handleResetFilters = () => {
+    resetFilters();
     // Don't hint to open after clearing
     setWasOpen(true);
   };
@@ -221,7 +154,7 @@ const FiltersPane = ({
         {activeTotal > 0 && <>
           <span className="border-t" />
           <ButtonIcon
-            onClick={resetFilters}
+            onClick={handleResetFilters}
             label={t('heraldry.clearFilters')}
           >
             <IconEraser />
@@ -234,75 +167,16 @@ const FiltersPane = ({
           </ButtonIcon>
         </>}
       </Panel>
-      {activeMenu === 'type' && <FiltersPaneSidebarTypes
-        lang={lang}
-        filters={typeFilters}
-        setFilters={setTypeFilters}
-        toggle={toggleType}
-        filtersList={typeFiltersList}
-        shouldIgnoreFormer={shouldIgnoreFormer}
-        setShouldIgnoreFormer={setShouldIgnoreFormer}
+      {activeMenu === 'type' && <FiltersPaneSidebarTypes lang={lang} filtersList={typeFiltersList} />}
+      {activeMenu === 'color' && <FiltersPaneSubPanelColors className="absolute right-12 z-[-1] mt-1 mr-2" order={2} />}
+      {activeMenu === 'animal' && <FiltersPaneSidebarAnimals filtersList={animalFiltersList} />}
+      {activeMenu === 'item' && <FiltersPaneSidebarItems filtersList={itemFiltersList} />}
+      {activeMenu === 'settings' && <FiltersPaneSubPanelSettings
+        className="absolute right-12 z-[-1] mt-1 mr-2"
+        order={5}
+        brokenHashes={brokenHashes}
+        shouldAddWarningForRevesedFilters={shouldAddWarningForRevesedFilters}
       />}
-      {activeMenu === 'color' && <SubPanel order={2} className="ui-slide-from-right-sidebar no-scrollbar z-[-1] mt-2 absolute right-12 mr-2 flex-row">
-        {Object.keys(colorsMarkersByNames).map((name) => <ButtonIcon
-          key={name}
-          wrapperClassName="relative bg-white rounded-[8px]"
-          className="hover:!bg-transparent"
-          onClick={() => toggleColor(name)}
-          label={capitalize(t(`heraldry.color.${name}`))}
-          labelPosition="bottomLeft"
-        >
-          <IconColor
-            className={clsx('duration-300 drop-shadow-lg', {
-              'opacity-30': !colorFilters.includes(name),
-            })}
-            style={{
-              fill: colorsMarkersByNames[name],
-            }}
-          />
-          {colorFilters.includes(name) && <span className="ui-button-icon-marker-dot" />}
-        </ButtonIcon>)}
-      </SubPanel>}
-      {activeMenu === 'animal' && <FiltersPaneSidebarAnimals
-        filters={animalFilters}
-        setFilters={setAnimalFilters}
-        toggle={toggleAnimal}
-        filtersList={animalFiltersList}
-      />}
-      {activeMenu === 'item' && <FiltersPaneSidebarItems
-        filters={itemFilters}
-        setFilters={setItemFilters}
-        toggle={toggleItem}
-        filtersList={itemFiltersList}
-      />}
-      {activeMenu === 'settings' && <SubPanel order={5} className="ui-slide-from-right-sidebar no-scrollbar z-[-1] mt-2 absolute right-12 mr-2 flex-row">
-        <ButtonIcon
-          wrapperClassName="ml-auto"
-          onClick={() => setFilterOperator(filterOperator === 'and' ? 'or' : 'and')}
-          label={`${t('heraldry.filterOperator')} ${t(`heraldry.filterOperator.${filterOperator}`)}`}
-          labelPosition="bottomLeft"
-        >
-          {filterOperator === 'and' ? <IconCubeAnd /> : <IconCubeOr />}
-        </ButtonIcon>
-        <ButtonIcon
-          wrapperClassName="ml-auto"
-          onClick={() => setShouldReverseFilters(!shouldReverseFilters)}
-          label={`${t('heraldry.filterReverse')} ${t(`heraldry.filterReverse.${shouldReverseFilters ? 'yes' : 'no'}`)}`}
-          labelPosition="bottomLeft"
-        >
-          {shouldReverseFilters ? <IconEyeCrossed /> : <IconEye />}
-          {shouldAddWarningForRevesedFilters && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft">!</span>}
-        </ButtonIcon>
-        <span className="border-l"></span>
-        <ButtonIcon
-          isActive={isFiltersDevModeActive}
-          onClick={toggleFilterDevlopmentMode}
-          label="Development mode"
-          labelPosition="bottomLeft"
-        >
-          <IconFlask />
-        </ButtonIcon>
-      </SubPanel>}
     </div>
   );
 }

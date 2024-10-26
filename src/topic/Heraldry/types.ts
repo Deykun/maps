@@ -52,7 +52,7 @@ export type CoatOfArmsMapData = {
   imageHash?: string,
 }
 
-export type ColorStatusInDetails = Pick<ColorStatus, 'distanceToThreshold' | 'matcherColor'>
+export type ColorStatusInDetails = Pick<ColorStatus, 'distanceToThreshold' | 'matcherColor' | 'color'>
 
 export type MarkerType = 'animal' | 'item';
 

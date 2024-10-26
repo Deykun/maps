@@ -14,7 +14,7 @@ export type GetFilterUnitsResponse = {
   subtitleParts: SubtitlePart[],
 };
 
-type GetFilteredUnitsParams = {
+export type GetFilteredUnitsParams = {
   lang: string,
   unitsForMapAll: CoatOfArmsMapData[],
   detailsForUnitsById: {
@@ -23,6 +23,8 @@ type GetFilteredUnitsParams = {
   filterOperator: 'and' | 'or',
   shouldReverseFilters: boolean,
   shouldIgnoreFormer: boolean,
+  brokenHashes: string[],
+  shouldHideMissingImages: boolean,
   customFilter: MarkerParamsWithResult | undefined,
   typeFilters: string[],
   colorFilters: string[],
@@ -37,12 +39,15 @@ export const getFilteredUnits = ({
   filterOperator,
   shouldReverseFilters,
   shouldIgnoreFormer,
+  brokenHashes,
+  shouldHideMissingImages,
   customFilter,
   typeFilters,
   colorFilters,
   animalFilters,
   itemFilters,
 }: GetFilteredUnitsParams) => {
+  console.log(' - Units being filtered')
   const filterResponse = {
     matches: true,
     notMatches: false
@@ -83,6 +88,10 @@ export const getFilteredUnits = ({
             return false;
           }
         }
+      }
+
+      if (shouldHideMissingImages && brokenHashes.some((brokenHash) => unit.imageHash === brokenHash)) {
+        return filterResponse.notMatches;
       }
 
       const isTypeFilterActive = typeFilters.length > 0;

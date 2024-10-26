@@ -25,6 +25,7 @@ const AddOrRemoveMarkersSection = ({ unit }: Props) => {
     <>
       {['lion', 'eagle'].map((name) => 
         <ButtonText
+          key={name}
           size="small"
           onClick={() => includeUnitInMarker(unit, 'animal', name)}
           isDisabled={includeAnimal.includes(name)}
@@ -35,6 +36,7 @@ const AddOrRemoveMarkersSection = ({ unit }: Props) => {
       )}
       {['crown'].map((name) => 
         <ButtonText
+          key={name}
           size="small"
           onClick={() => includeUnitInMarker(unit, 'item', name)}
           isDisabled={includeItem.includes(name)}

@@ -128,7 +128,7 @@ const fetchCountryDetailsData = async ({ dataPaths }: FetchParams) => {
 
 type Props = FetchParams & Pick<
   HeraldryMapContainerWithUIProps,
-  "lang" | "map" | "mapWrapperClassName" | "mapWrapperClassNameForZoom0" | "mapOffset" | "developmentModeFiltersTypes"
+  "lang" | "map" | "mapWrapperClassName" | "mapWrapperClassNameForZoom0" | "mapOffset" | "developmentModeFiltersTypes" | "brokenHashes"
 >;
 
 const HeraldryMapMap = ({
@@ -139,6 +139,7 @@ const HeraldryMapMap = ({
   mapOffset,
   developmentModeFiltersTypes,
   dataPaths,
+  brokenHashes,
   filterForCountryData,
   sortForCountryData,
 }: Props) => {
@@ -209,6 +210,7 @@ const HeraldryMapMap = ({
       initialFilters={initialFilters}
       mapOffset={mapOffset}
       developmentModeFiltersTypes={developmentModeFiltersTypes}
+      brokenHashes={brokenHashes}
       setShouldFetchDetails={setShouldFetchDetails}
       isFetchingDetails={isFetchingDetails}
     />
