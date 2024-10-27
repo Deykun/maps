@@ -1,11 +1,17 @@
 import { create } from 'zustand';
 import { devtools } from 'zustand/middleware'
 
-import { IS_DEV } from '@/constants';
-
 import { removeDiacratics } from '@/utils/text';
 
 import { getInitCookiesSettings, saveCookies, CookiesValue } from '@/topic/Heraldry/features/tracking/utils/getInit';
+
+
+export const IS_MAIN_INSTANCE = window && ['localhost', 'deykun'].some(phrase => (window?.location?.href || '').includes(phrase)) || false;
+
+export const IS_DEV = (window.location.origin || '')?.includes('localhost') || false;
+
+// Just put your ID inside the single quotes if you want to use your own GA instance. ;)
+export const TRACKER_GA_ID = IS_MAIN_INSTANCE ? 'G-RTPFBWF3B4' : '';
 
 type TrackingStoreState = CookiesValue & {
   isPopupOpen: boolean,

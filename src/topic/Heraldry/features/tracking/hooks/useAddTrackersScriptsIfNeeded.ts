@@ -1,8 +1,6 @@
 import { useEffect } from 'react';
 
-import { TRACKER_GA_ID } from '@/constants';
-
-import useTrackingStore from '@/topic/Heraldry/features/tracking/stores/trackingStore';
+import useTrackingStore, { TRACKER_GA_ID } from '@/topic/Heraldry/features/tracking/stores/trackingStore';
 
 export default function useAddTrackersScriptsIfNeeded() {
   const isGoogleAnalyticsAccepted = useTrackingStore(state => state.didAgreeToGA);

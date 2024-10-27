@@ -70,10 +70,3 @@ export const HERALDRY_COUNTRIES = PATHS_DATA.filter(({ type }) => type === 'hera
 export const LOCAL_STORAGE = {
   'MAPS_USER_LANG': 'MAPS_USER_LANG',
 } as const;
-
-export const IS_MAIN_INSTANCE = ['localhost', 'deykun'].some(phrase => window.location.href.includes(phrase));
-
-export const IS_DEV = (window.location.origin || '')?.includes('localhost') || false;
-
-// Just put your ID inside the single quotes if you want to use your own GA instance. ;)
-export const TRACKER_GA_ID = IS_MAIN_INSTANCE ? 'G-RTPFBWF3B4' : '';
