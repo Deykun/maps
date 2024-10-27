@@ -26,7 +26,7 @@ const userScriptLogger = (params) => {
       console.error(error);
     }
 
-    if (window.WikiParser.isDevMode && error) {
+    if (window.WikiParser.IS_DEVMode && error) {
       // eslint-disable-next-line no-console
       console.error(error);
     }

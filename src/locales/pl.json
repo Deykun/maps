@@ -142,5 +142,8 @@
   "heraldry.loading.status.processingTexts": "Przetwarzanie lokalizacji",
   "heraldry.loading.status.fetchingImages": "Pobieranie obrazków",
   "heraldry.loading.status.fetchingFilters": "Pobieranie filtrów",
-  "heraldry.loading.status.processingMap": "Renderowanie mapy"
+  "heraldry.loading.status.processingMap": "Renderowanie mapy",
+  "settings.cookies.text": "Czy możemy badać Twoją aktywność za pomocą <b>Google Analytics</b>?",
+  "settings.cookies.rejectGA": "Nie",
+  "settings.cookies.acceptAll": "Tak"
 }

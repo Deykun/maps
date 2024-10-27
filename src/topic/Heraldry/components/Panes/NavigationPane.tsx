@@ -12,6 +12,10 @@ import useOutsideClick from '@/hooks/useOutsideClick';
 import { SUPPORTED_LANGS } from '@/i18n';
 
 import IconCheck from '@/components/Icons/IconCheck';
+import IconCookie from '@/components/Icons/IconCookie';
+import IconCookies from '@/components/Icons/IconCookies';
+import IconControls from '@/components/Icons/IconControls';
+
 import IconGlobe from '@/components/Icons/IconGlobe';
 import IconTranslation from '@/components/Icons/IconTranslation';
 import IconGithub from '@/components/Icons/IconGithub';
@@ -19,6 +23,8 @@ import IconGithub from '@/components/Icons/IconGithub';
 import Panel from '@/components/UI/Panel';
 import SubPanel from '@/components/UI/SubPanel';
 import ButtonIcon from '@/components/UI/ButtonIcon';
+
+import useTrackingStore, { toggleCookiesPopup } from '@/topic/Heraldry/features/tracking/stores/trackingStore';
 
 import './NavigationPane.scss'
 
@@ -31,6 +37,8 @@ const NavigationPane = ({
   shouldHintLang,
   setShouldHintLang,
 }: Props) => {
+  const didAgreeToGA = useTrackingStore(state => state.didAgreeToGA);
+  const isPopupOpen = useTrackingStore(state => state.isPopupOpen);
   const [wasLangChanged, setWasLangChanged] = useState(false);
   const [activeMenu, setActiveMenu] = useState('');
   const { t, i18n } = useTranslation();
@@ -88,6 +96,15 @@ const NavigationPane = ({
           }
         </ButtonIcon>
         <ButtonIcon
+          onClick={toggleMenu('settings')}
+          isActive={activeMenu === 'settings'}
+          label={t('heraldry.titleSettings')}
+          labelPosition="right"
+        >
+          <IconControls />
+        </ButtonIcon>
+        <span className="border-t" />
+        <ButtonIcon
           className="hover:!bg-black"
           href="https://github.com/Deykun/maps"
           target="_blank"
@@ -123,6 +140,16 @@ const NavigationPane = ({
           {i18n.language === lang && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft"><IconCheck className="h-[10px]" /></span>}
         </ButtonIcon>)}
         <span className="ui-tooltip ui-tooltip--top">App language</span>
+      </SubPanel>}
+      {activeMenu === 'settings' && <SubPanel order={2} className="ui-slide-from-left-sidebar z-[-1] absolute left-12 ml-3 flex-row">
+        <ButtonIcon
+          label="Cookies"
+          labelPosition="bottomRight"
+          onClick={toggleCookiesPopup}
+          isActive={isPopupOpen}
+        >
+          {didAgreeToGA ? <IconCookies /> : <IconCookie />}
+        </ButtonIcon>
       </SubPanel>}
     </div>
   );

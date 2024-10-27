@@ -8,7 +8,7 @@ const getSettingsFromLS = () => getFromLocalStorage('wikiparse-state', {});
 
 window.WikiParser = {
   version: 'SCRIPT_VERSION',
-  isDevMode: false,
+  IS_DEVMode: false,
   cache: {
     HTML: {},
     CSS: {},

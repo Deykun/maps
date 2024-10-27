@@ -22,6 +22,8 @@ import ZoomPane from '@/topic/Heraldry/components/Panes/ZoomPane';
 import UnitsPane from '@/topic/Heraldry/components/Panes/UnitsPane';
 import FiltersPane from '@/topic/Heraldry/components/Panes/FiltersPane';
 
+import CookiesPane from '@/topic/Heraldry/features/tracking/components/CookiesPane';
+
 import HeraldryTitle from '@/topic/Heraldry/components/HeraldryTitle/HeraldryTitle';
 import HeraldryFooter from '@/topic/Heraldry/components/HeraldryFooter/HeraldryFooter';
 import HeraldryProgressbar from '@/topic/Heraldry/components/HeraldryProgressbar/HeraldryProgressbar';
@@ -196,7 +198,8 @@ const HeraldryMapContainerWithUI = ({
             />
             <Space side="right" isLast />
           </div>
-          <HeraldryProgressbar />
+          <HeraldryProgressbar />    
+          <CookiesPane />
         </>
     );
 };

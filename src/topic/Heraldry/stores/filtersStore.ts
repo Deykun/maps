@@ -5,6 +5,8 @@ import { WITH_ANIMAL, WITHOUT_ANIMAL } from '@/topic/Heraldry/constants';
 
 import { getFiltersFromSearchParams } from '@/topic/Heraldry/utils/getSearchParams';
 
+import { trackFilter } from '@/topic/Heraldry/features/tracking/stores/trackingStore';
+
 type UnitPaneStoreState = {
   type: string[],
   shouldIgnoreFormer: boolean,
@@ -60,10 +62,18 @@ export const setShouldIgnoreFormer = getBooleanFilterSet('shouldIgnoreFormer');
 export const setShouldReverseFilters = getBooleanFilterSet('shouldReverseFilters');
 
 const getStringsFilterSet = (filterName: 'type' | 'color' | 'animal' | 'item') => (values: string[]) => {
-  useFiltersStore.setState((state) => ({
+  useFiltersStore.setState((state) => {
+    const diffrence = values.filter((value) => !state[filterName].includes(value));
+
+    if (diffrence.length === 1) {
+      trackFilter(diffrence[0]);
+    }
+
+    return {
       ...state,
       [filterName]: values,
-  }));
+    }
+  });
 }
 
 export const setType = getStringsFilterSet('type');
@@ -72,10 +82,18 @@ export const setAnimal = getStringsFilterSet('animal');
 export const setItem = getStringsFilterSet('item');
 
 const getBooleanFilterToogle = (filterName: 'shouldIgnoreFormer' | 'shouldReverseFilters' | 'shouldHideMissingImages') => () => {
-  useFiltersStore.setState((state) => ({
+  useFiltersStore.setState((state) => {
+    const isActive = state[filterName];
+    
+    if (!isActive) {
+      trackFilter(filterName);
+    }
+
+    return {
       ...state,
       [filterName]: !state[filterName],
-  }));
+    }
+  });
 }
 
 export const toggleShouldIgnoreFormer = getBooleanFilterToogle('shouldIgnoreFormer');
@@ -92,6 +110,9 @@ export const toggleFilterOperator = () => {
 const getStringsFilterToggle = (filterName: 'type' | 'color' | 'animal' | 'item') => (value: string) => {
   useFiltersStore.setState((state) => {
     const isActive = state[filterName].includes(value);
+    if (!isActive) {
+      trackFilter(value);
+    }
     
     return {
       ...state,
@@ -108,7 +129,9 @@ export const toggleAnimal = (animal: string) => {
   if ([WITH_ANIMAL, WITHOUT_ANIMAL].includes(animal)) {
     const animalFilters = useFiltersStore.getState().animal;
 
-    setAnimal(animalFilters.includes(animal) ? [] : [animal]);
+    const isActive = animalFilters.includes(animal);
+
+    setAnimal(isActive ? [] : [animal]);
 
     return;
   }
