@@ -4155,6 +4155,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "lion"
+   ]
   }
  },
  {
@@ -88432,6 +88437,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "lion"
+   ]
   }
  },
  {
@@ -88558,6 +88568,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "lion"
+   ]
   }
  },
  {
@@ -88768,6 +88783,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "lion"
+   ]
   }
  },
  {
@@ -91796,6 +91816,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "lion"
+   ]
   }
  },
  {
@@ -114035,6 +114060,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "lion"
+   ]
   }
  },
  {
@@ -138348,28 +138378,34 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
+    "blue": [
      {
-      "distanceToThreshold": -124,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -170.049995193232,
-      "matcherColor": "#0f0"
+      "distanceToThreshold": 8.911840902220796,
+      "matcherColor": "#0099ff"
      }
     ],
     "gold": [
      {
-      "distanceToThreshold": -184.47699278255203,
-      "matcherColor": "#b68f5e"
+      "distanceToThreshold": 2.886078754825455,
+      "matcherColor": "#e6c633"
      }
     ],
-    "blue": [
+    "black": [
      {
-      "distanceToThreshold": -184.274478525642,
-      "matcherColor": "#5596c3"
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
      }
     ]
    }

@@ -92195,6 +92195,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "lion"
+   ]
   }
  },
  {
@@ -94560,6 +94565,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "lion"
+   ]
   }
  },
  {
@@ -157392,28 +157402,28 @@
     ]
    },
    "byNamesRejected": {
-    "blue": [
+    "red": [
      {
-      "distanceToThreshold": -15.205041883295237,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -120.72077910411963,
-      "matcherColor": "#07923f"
+      "distanceToThreshold": 8.055577005580204,
+      "matcherColor": "#f00"
      }
     ],
     "gold": [
      {
-      "distanceToThreshold": -116.98022488402484,
+      "distanceToThreshold": 4.909165916642721,
       "matcherColor": "#b68f5e"
      }
     ],
-    "red": [
+    "green": [
      {
-      "distanceToThreshold": -118.41495881480412,
-      "matcherColor": "#fe3940"
+      "distanceToThreshold": 35.28158581138345,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
      }
     ]
    }

@@ -4230,28 +4230,28 @@
     ]
    },
    "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": 19.667587484006575,
+      "matcherColor": "#f00"
+     }
+    ],
     "blue": [
      {
-      "distanceToThreshold": -91.54008277950666,
+      "distanceToThreshold": 41.41243723685052,
       "matcherColor": "#5596c3"
      }
     ],
-    "green": [
+    "black": [
      {
-      "distanceToThreshold": -59.803204238093656,
-      "matcherColor": "#0f0"
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
      }
     ],
-    "gold": [
+    "white": [
      {
-      "distanceToThreshold": -19.586431004286155,
-      "matcherColor": "#bfa14e"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": -152.51021482937045,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
      }
     ]
    }
@@ -12201,6 +12201,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "lion"
+   ]
   }
  },
  {
@@ -117870,6 +117875,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "lion"
+   ]
   }
  },
  {

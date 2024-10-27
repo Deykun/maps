@@ -1,48 +1,6 @@
 [
  {
-  "id": "city-13300",
-  "colors": {
-   "hexPalette": [
-    "#de4426",
-    "#717878",
-    "#17181f",
-    "#e7e7e7"
-   ],
-   "byNames": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -4.599054368237475,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -143.92409428196868,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -139.2967509582288,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -41.78899744078434,
-      "matcherColor": "#b68f5e"
-     }
-    ]
-   }
-  }
+  "id": "city-13300"
  },
  {
   "id": "gemeinde-13301",

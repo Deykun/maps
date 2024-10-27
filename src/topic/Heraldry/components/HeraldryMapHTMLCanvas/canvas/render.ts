@@ -96,7 +96,7 @@ const redrawItems = (redrawFrameHash: string, index: number, total: number) => {
   }
 
   if (coatOfArmsList[index]) {
-    const renderAtOnce = 30;
+    const renderAtOnce = 45;
 
     for (let i = 0; i <= renderAtOnce; i++) {
       coatOfArmsList[index + i]?.draw();
@@ -104,7 +104,7 @@ const redrawItems = (redrawFrameHash: string, index: number, total: number) => {
 
     updateProcessingMap({ value: index + renderAtOnce, total });
 
-    setTimeout(() => redrawItems(redrawFrameHash, index + renderAtOnce, total), 2);
+    setTimeout(() => redrawItems(redrawFrameHash, index + renderAtOnce, total), 0);
     // setTimeout(() => redrawItems(redrawFrameHash, index + renderAtOnce, total), 300);
   }
 }
@@ -246,7 +246,7 @@ export const setCoatOfArms = async (units: CoatOfArmsMapData[]) => {
         updateValueForImages(spriteSrc);
 
         if (!isStillFetchingOthers) {
-          renderFrame();
+          renderFrame({ shouldSkipChangeCheck: true });
         }
       }
 
