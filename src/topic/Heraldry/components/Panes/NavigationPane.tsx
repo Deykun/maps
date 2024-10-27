@@ -24,7 +24,7 @@ import Panel from '@/components/UI/Panel';
 import SubPanel from '@/components/UI/SubPanel';
 import ButtonIcon from '@/components/UI/ButtonIcon';
 
-import useTrackingStore, { toggleCookiesPopup } from '@/topic/Heraldry/features/tracking/stores/trackingStore';
+import useTrackingStore, { track, toggleCookiesPopup } from '@/topic/Heraldry/features/tracking/stores/trackingStore';
 
 import './NavigationPane.scss'
 
@@ -65,6 +65,7 @@ const NavigationPane = ({
     i18n.changeLanguage(lang);
     setWasLangChanged(true);
     localStorage.setItem(LOCAL_STORAGE.MAPS_USER_LANG, lang);
+    track({ name: `lang_changed_to_${lang}`, withCountry: true });
 
     if (setShouldHintLang) {
       setShouldHintLang(false);
