@@ -188,5 +188,8 @@
   "heraldry.loading.status.fetchingImages": "Fetching images",
   "heraldry.loading.status.fetchingFilters": "Fetching filters",
   "heraldry.loading.status.fetchingFiltersTexts": "Fetching text for custom filters",
-  "heraldry.loading.status.processingMap": "Rendering map"
+  "heraldry.loading.status.processingMap": "Rendering map",
+  "settings.cookies.text": "Can we track your activity using <b>Google Analytics</b>?",
+  "settings.cookies.rejectGA": "No",
+  "settings.cookies.acceptAll": "Yes"
 }

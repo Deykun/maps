@@ -11,11 +11,13 @@ import HeraldryET from '@/pages/eesti-heraldika/HeraldryET';
 import HeraldryPL from '@/pages/heraldyka/HeraldryPL';
 import HeraldryFI from '@/pages/suomalainen-heraldikka/HeraldryFI';
 
+import { track } from '@/topic/Heraldry/features/tracking/stores/trackingStore';
+
 import { useEffect, useMemo } from "react";
 
 const Routes = () => {
   const [path] = useLocation();
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
   useEffect(() => {
     if (i18n.language !== document.documentElement?.lang) {
@@ -27,7 +29,13 @@ const Routes = () => {
     const pathToCompare = path.replace('/maps/', '');
     const pathData = PATHS_DATA.find(({ path: itemPath }) => pathToCompare === itemPath);
 
+    document.documentElement.setAttribute('country', pathData?.country || '');
+    
     if (pathData) {
+      if (pathData.type === 'heraldryCountry') {
+        track({ name: `country_map_page_${pathData.country}` });
+      }
+
       return pathData.title;
     }
 

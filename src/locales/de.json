@@ -43,5 +43,8 @@
   "heraldry.loading.status.processingTexts": "Standorte werden verarbeitet",
   "heraldry.loading.status.fetchingImages": "Bilder werden abgerufen",
   "heraldry.loading.status.fetchingFilters": "Filter werden abgerufen",
-  "heraldry.loading.status.processingMap": "Karte wird gerendert"
+  "heraldry.loading.status.processingMap": "Karte wird gerendert",
+  "settings.cookies.text": "Dürfen wir Ihre Aktivität mit <b>Google Analytics</b> verfolgen?",
+  "settings.cookies.rejectGA": "Nein",
+  "settings.cookies.acceptAll": "Ja"
 }
