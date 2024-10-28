@@ -1,24 +1,20 @@
-# 🛡️ Heraldic maps of selected countries. 🇩🇪 🇪🇪 🇫🇮 🇵🇱
+# 🛡️ Heraldic maps of selected countries
 
-These are maps created by parsing data from Wikipedia, and sometimes things are marked incorrectly, or the location of a city is moved to a different side of the country. It’s not intentional — this is just a fun open-source project that can still show some interesting things about geography and heraldry.
-
-So I have only one request: don’t be a jerk. It’s easy to get upset when our city is marked incorrectly, but no one did that on purpose. I’m trying my best, and the process of parsing and verifying things is gradually improving. However, it is still worth noting that this will never be ideal.
-
-My goal is to make it usable and reasonably reliable, move on to the next country, and eventually connect the maps into one for all of Europe.
+These maps were created by parsing data from Wikipedia, and sometimes cities are marked incorrectly or placed on the wrong side of the country. This is just a fun open-source project that can still show some interesting things about geography and heraldry. I ask that you keep this in mind. It’s easy to feel upset about inaccuracies (especially when our town is marked incorrectly), but that isn't intentional. I’m continuously working to improve the parsing and verification process, though it will never be perfect. My goal is to make these maps usable and reasonably reliable, move on to other countries, and eventually connect all of Europe into one comprehensive map.
 
 ## Heraldic maps of countries
 Below is a list of country maps with the coats of arms of provinces, states, or municipalities (depending on what was available) marked on them. The data is parsed from Wikipedia, often with text descriptions, which makes filtering coats of arms containing elements like an eagle quite easy.
 
-### Coats of arms in Germany (beta)
+### Coats of arms in Germany (🧪 beta) 🇩🇪
 https://deykun.github.io/maps/deutsche-heraldik
 
-### Coats of arms in Estonia
+### Coats of arms in Estonia 🇪🇪
 https://deykun.github.io/maps/eesti-heraldika
 
-### Coats of arms in Finland
+### Coats of arms in Finland 🇫🇮
 https://deykun.github.io/maps/suomalainen-heraldikka
 
-### Coats of arms of Polish cities, counties, and municipalities
+### Coats of arms in Poland 🇵🇱
 https://deykun.github.io/maps/heraldyka
 
 ## About the process

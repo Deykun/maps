@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import IconGithub from '@/components/Icons/IconGithub';
 import IconShieldCheckers from '@/components/Icons/IconShieldCheckers';
 
-import HeraldryProgressbar from './HeraldryProgressbar';
 import HeraldryProgressStatusList from './HeraldryProgressStatusList';
 
 type Props = {

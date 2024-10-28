@@ -24,7 +24,7 @@ const DevelopmentPaneSnippet = ({
         'development-pane-snippet w-full px-2',
         'whitespace-break-spaces text-[#fdb39d] tracking-widest text-[10px]', {
           [className || '']: className,
-          'max-h-[200px] overflow-hidden': !isOpen,
+          'max-h-[100px] overflow-hidden': !isOpen,
         },
       )}
       dangerouslySetInnerHTML={{ __html: JSON.stringify({
