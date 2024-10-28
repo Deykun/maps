@@ -57,9 +57,8 @@ const AddOrRemoveMarkers = ({ unit }: Props) => {
       </div>
       <div className={clsx(
         'flex gap-2 items-center justify-end min-h-[36px]',
-        'border-t mt-1 pt-2 empty:hidden', {
-          'flex-wrap': !activeMenu
-      })}>
+        'border-t mt-1 pt-2 empty:hidden flex-wrap'
+      )}>
         {activeMenu ? <AddOrRemoveMarkersAddPicker key={activeMenu} unit={unit} markerType={activeMenu} /> : <AddOrRemoveMarkersAddRemoveShortcuts unit={unit} />}
       </div>
     </Panel>
