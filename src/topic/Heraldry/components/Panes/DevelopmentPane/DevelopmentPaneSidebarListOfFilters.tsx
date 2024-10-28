@@ -120,7 +120,7 @@ const DevelopmentPaneSidebarListOfFilters = ({
                 key={name}
                 value={`animal-${name}`}
               >
-                {t('heraldry.animal.filterTitle')}: {t(`heraldry.animal.${name}`)}
+                {t(`heraldry.animal.${name}`)} ({t('heraldry.animal.filterTitle')})
               </option>
             ))}
             {data.items.sort((a, b) => 
@@ -131,7 +131,7 @@ const DevelopmentPaneSidebarListOfFilters = ({
                 key={name}
                 value={`item-${name}`}
               >
-                {t('heraldry.item.filterTitle')}: {t(`heraldry.item.${name}`)}
+               {t(`heraldry.item.${name}`)} ({t('heraldry.item.filterTitle')})
               </option>
             ))}
           </>}

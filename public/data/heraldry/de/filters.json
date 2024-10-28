@@ -362,13 +362,24 @@
     {
       "name": "rabbit",
       "phrases": [
-       "hase",
-       "hasen",
-       "hasenkopf",
-       "hasenköpfen",
-       "kaninchen",
-       "kaninchens"
-      ]
+        "hase",
+        "hasen",
+        "hasenkopf",
+        "hasenköpfen",
+        "kaninchen",
+        "kaninchens"
+      ],
+      "include": [
+        {
+          "imageHash": "767ee817",
+          "note": "Steinhöfel"
+        },
+        {
+          "imageHash": "649d1863",
+          "note": "Stahe"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "bat",
@@ -381,18 +392,25 @@
     {
       "name": "boar",
       "phrases": [
-       "eber",
-       "eberkopf",
-       "eberrumpf",
-       "ebers",
-       "wildschwein",
-       "wildschweine",
-       "wildschweinen",
-       "wildschweins",
-       "keilerkopf",
-       "keilerhaupt",
-       "schwein"
-      ]
+        "eber",
+        "eberkopf",
+        "eberrumpf",
+        "ebers",
+        "wildschwein",
+        "wildschweine",
+        "wildschweinen",
+        "wildschweins",
+        "keilerkopf",
+        "keilerhaupt",
+        "schwein"
+      ],
+      "include": [
+        {
+          "imageHash": "e13986b",
+          "note": "Steinhöfel"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "ant",
@@ -420,36 +438,43 @@
     {
       "name": "deer",
       "phrases": [
-       "hindin",
-       "hirsch",
-       "hirsche",
-       "hirschen",
-       "hirsches",
-       "hirschbock",
-       "hirschgeweih",
-       "hirschhorn",
-       "hirschkopf",
-       "hirschkuh",
-       "hirschrumpf",
-       "hirschstange",
-       "hirschstangen",
-       "hubertushirsch",
-       "rehbock",
-       "rehbockkopf",
-       "rehbocks",
-       "zwölfender-kronenhirsches",
-       "zwölfender-hirschstangen",
-       "zwölfender-hirschgeweih",
-       "kitz",
-       "damhirschschaufel",
-       "damhirsch-Schaufel",
-       "geweih",
-       "geweihs",
-       "geweihstange",
-       "geweihstangen",
-       "reh",
-       "rehkitz"
-      ]
+        "hindin",
+        "hirsch",
+        "hirsche",
+        "hirschen",
+        "hirsches",
+        "hirschbock",
+        "hirschgeweih",
+        "hirschhorn",
+        "hirschkopf",
+        "hirschkuh",
+        "hirschrumpf",
+        "hirschstange",
+        "hirschstangen",
+        "hubertushirsch",
+        "rehbock",
+        "rehbockkopf",
+        "rehbocks",
+        "zwölfender-kronenhirsches",
+        "zwölfender-hirschstangen",
+        "zwölfender-hirschgeweih",
+        "kitz",
+        "damhirschschaufel",
+        "damhirsch-Schaufel",
+        "geweih",
+        "geweihs",
+        "geweihstange",
+        "geweihstangen",
+        "reh",
+        "rehkitz"
+      ],
+      "include": [
+        {
+          "imageHash": "7971f5d2",
+          "note": "Samtgemeinde Aue"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "lynx",
@@ -466,14 +491,21 @@
     {
       "name": "moose",
       "phrases": [
-       "elch",
-       "elche",
-       "elchen",
-       "elches",
-       "elchkopf",
-       "elchgeweih",
-       "elchgeweihs"
-      ]
+        "elch",
+        "elche",
+        "elchen",
+        "elches",
+        "elchkopf",
+        "elchgeweih",
+        "elchgeweihs"
+      ],
+      "include": [
+        {
+          "imageHash": "538df32a",
+          "note": "Groß Brunsrode"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "wildcat",
@@ -2769,6 +2801,62 @@
         {
           "imageHash": "2a9b92e2",
           "note": "Westerhof"
+        },
+        {
+          "imageHash": "6a3b8d7c",
+          "note": "Monheim am Rhein"
+        },
+        {
+          "imageHash": "e13986b",
+          "note": "Steinhöfel"
+        },
+        {
+          "imageHash": "7b78fd7a",
+          "note": "Harber (Hohenhameln)"
+        },
+        {
+          "imageHash": "1a2553eb",
+          "note": "Ohof"
+        },
+        {
+          "imageHash": "6adb039b",
+          "note": "Plockhorst"
+        },
+        {
+          "imageHash": "687126b8",
+          "note": "Alvesse (Edemissen)"
+        },
+        {
+          "imageHash": "11ff3030",
+          "note": "Rietze"
+        },
+        {
+          "imageHash": "44d5958c",
+          "note": "Voigtholz-Ahlemissen"
+        },
+        {
+          "imageHash": "2054f73c",
+          "note": "Oedesse"
+        },
+        {
+          "imageHash": "1960d2ee",
+          "note": "Edemissen"
+        },
+        {
+          "imageHash": "6c348fe0",
+          "note": "Abbensen (Edemissen)"
+        },
+        {
+          "imageHash": "20a95cf5",
+          "note": "Oelerse"
+        },
+        {
+          "imageHash": "76b16856",
+          "note": "Soltau"
+        },
+        {
+          "imageHash": "cff06da",
+          "note": "Kreis Borken"
         }
       ],
       "exclude": [
@@ -2874,59 +2962,85 @@
     {
       "name": "bird",
       "phrases": [
-       "dompfaff",
-       "schwalbe",
-       "schwalben",
-       "schwalbes",
-       "birkhahn",
-       "kiebitz",
-       "milan",
-       "gabelweihe",
-       "flug",
-       "flügel",
-       "flügeln",
-       "vögel",
-       "vogel",
-       "vögeln",
-       "vogelkopf",
-       "beizvögel",
-       "fink",
-       "finken",
-       "meise",
-       "auerhahn",
-       "kuckuck",
-       "bussard",
-       "bussardkopf",
-       "buntspecht",
-       "trappe",
-       "turmfalke",
-       "merletten",
-       "sittich",
-       "star",
-       "elster",
-       "bachstelze",
-       "lerche",
-       "rabenkrähe",
-       "wachteln"
+        "dompfaff",
+        "schwalbe",
+        "schwalben",
+        "schwalbes",
+        "birkhahn",
+        "kiebitz",
+        "milan",
+        "gabelweihe",
+        "flug",
+        "flügel",
+        "flügeln",
+        "vögel",
+        "vogel",
+        "vögeln",
+        "vogelkopf",
+        "beizvögel",
+        "fink",
+        "finken",
+        "meise",
+        "auerhahn",
+        "kuckuck",
+        "bussard",
+        "bussardkopf",
+        "buntspecht",
+        "trappe",
+        "turmfalke",
+        "merletten",
+        "sittich",
+        "star",
+        "elster",
+        "bachstelze",
+        "lerche",
+        "rabenkrähe",
+        "wachteln"
+      ],
+      "include": [],
+      "exclude": [
+        {
+          "imageHash": "3471efad",
+          "note": "Meine"
+        }
       ]
     },
     {
       "name": "dragon",
       "phrases": [
-       "drache",
-       "drachen",
-       "drachenähnlichem",
-       "drachenflügel",
-       "drachenkopf",
-       "drachenrumpf",
-       "drachenrümpfen",
-       "drachens",
-       "drachentöter",
-       "lindwurm",
-       "lindwurms",
-       "lindwürmer",
-       "basilisk"
-      ]
+        "drache",
+        "drachen",
+        "drachenähnlichem",
+        "drachenflügel",
+        "drachenkopf",
+        "drachenrumpf",
+        "drachenrümpfen",
+        "drachens",
+        "drachentöter",
+        "lindwurm",
+        "lindwurms",
+        "lindwürmer",
+        "basilisk"
+      ],
+      "include": [
+        {
+          "imageHash": "1b4f5f71",
+          "note": "Dungelbeck"
+        },
+        {
+          "imageHash": "2792586a",
+          "note": "Munster"
+        },
+        {
+          "imageHash": "f8c6bd2",
+          "note": "Kelz"
+        },
+        {
+          "imageHash": "2e23124a",
+          "note": "Roetgen"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "salmon",
@@ -3070,30 +3184,53 @@
     {
       "name": "horse",
       "phrases": [
-       "pferd",
-       "pferde",
-       "pferdekopf",
-       "pferdeköpfe",
-       "pferdeköpfen",
-       "pferdekopfform",
-       "pferden",
-       "pferderumpf",
-       "pferdes",
-       "ross",
-       "rosse",
-       "roß",
-       "rosskamm",
-       "rosskopf",
-       "rösser",
-       "schachrössel",
-       "fohlen",
-       "stute",
-       "füllen",
-       "schimmel",
-       "hengste",
-       "hengst",
-       "maulesel"
-      ]
+        "pferd",
+        "pferde",
+        "pferdekopf",
+        "pferdeköpfe",
+        "pferdeköpfen",
+        "pferdekopfform",
+        "pferden",
+        "pferderumpf",
+        "pferdes",
+        "ross",
+        "rosse",
+        "roß",
+        "rosskamm",
+        "rosskopf",
+        "rösser",
+        "schachrössel",
+        "fohlen",
+        "stute",
+        "füllen",
+        "schimmel",
+        "hengste",
+        "hengst",
+        "maulesel"
+      ],
+      "include": [
+        {
+          "imageHash": "2872e64a",
+          "note": "Baden (Achim)"
+        },
+        {
+          "imageHash": "7f0d52dd",
+          "note": "Breitscheid (Ratingen)"
+        },
+        {
+          "imageHash": "2ed8770",
+          "note": "Laffeld"
+        },
+        {
+          "imageHash": "76b10916",
+          "note": "Wedtlenstedt"
+        },
+        {
+          "imageHash": "657fcf17",
+          "note": "Barnstedt (Dörverden)"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "unicorn",
@@ -3137,42 +3274,87 @@
         "gemsenkopf",
         "gämse",
         "geiß"
-      ]
+      ],
+      "include": [
+        {
+          "imageHash": "76f30fd7",
+          "note": "Klein Gleidingen"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "ram",
       "phrases": [
-       "heidschnucke",
-       "heidschnuckenkopf",
-       "lamm",
-       "schaf",
-       "schafe",
-       "schafen",
-       "schafes",
-       "schafsrumpf",
-       "widder",
-       "widderhorn",
-       "widderhörner",
-       "widderkopf",
-       "widderköpfen",
-       "widderrumpf",
-       "widders",
-       "osterlamm",
-       "salvatorlamm",
-       "gotteslamm"
-      ]
+        "heidschnucke",
+        "heidschnuckenkopf",
+        "lamm",
+        "schaf",
+        "schafe",
+        "schafen",
+        "schafes",
+        "schafsrumpf",
+        "widder",
+        "widderhorn",
+        "widderhörner",
+        "widderkopf",
+        "widderköpfen",
+        "widderrumpf",
+        "widders",
+        "osterlamm",
+        "salvatorlamm",
+        "gotteslamm"
+      ],
+      "include": [
+        {
+          "imageHash": "3181e219",
+          "note": "Lebus"
+        },
+        {
+          "imageHash": "31935369",
+          "note": "Rötzum"
+        },
+        {
+          "imageHash": "46d3936f",
+          "note": "Eimke"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "wolf",
       "phrases": [
-       "wolf",
-       "wölfe",
-       "wölfen",
-       "wolfskopf",
-       "wolfsrumpf",
-       "wolves",
-       "wolfskop"
-      ]
+        "wolf",
+        "wölfe",
+        "wölfen",
+        "wolfskopf",
+        "wolfsrumpf",
+        "wolves",
+        "wolfskop"
+      ],
+      "include": [
+        {
+          "imageHash": "3181e219",
+          "note": "Lebus"
+        },
+        {
+          "imageHash": "f2d78fe",
+          "note": "Klein Ilsede"
+        },
+        {
+          "imageHash": "14246154",
+          "note": "Groß Ilsede"
+        },
+        {
+          "imageHash": "cab327b",
+          "note": "Hohenhameln"
+        },
+        {
+          "imageHash": "79569150",
+          "note": "Elsdorf (Rheinland)"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "squirrel",
