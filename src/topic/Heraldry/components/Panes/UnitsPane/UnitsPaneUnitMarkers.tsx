@@ -12,11 +12,13 @@ import UnitsPaneUnitMarkersList from './UnitsPaneUnitMarkersList';
 import useGetUnitMarkersFromCache from '@/topic/Heraldry/features/modify/hooks/useGetUnitMarkersFromCache';
 
 type Props = {
+  className?: string,
   unit: CoatOfArmsMapData,
   shouldShowContentAsTooltip?: boolean,
+  shouldShowTypes?: boolean,
 }
 
-const UnitsPaneUnitMarkers = ({ unit, shouldShowContentAsTooltip = false }: Props) => {
+const UnitsPaneUnitMarkers = ({ className, unit, shouldShowContentAsTooltip = false, shouldShowTypes = true }: Props) => {
   const country = unit.lang;
 
   const {
@@ -38,6 +40,7 @@ const UnitsPaneUnitMarkers = ({ unit, shouldShowContentAsTooltip = false }: Prop
         {
           'inline-flex text-ui-contrast': shouldShowContentAsTooltip,
           'flex text-ui-dark-contrast': !shouldShowContentAsTooltip,
+          [className || '']: className,
         }
       )}
     >
@@ -55,13 +58,13 @@ const UnitsPaneUnitMarkers = ({ unit, shouldShowContentAsTooltip = false }: Prop
         icon={IconCrown}
         shouldShowContentAsTooltip={shouldShowContentAsTooltip}
       />
-      <UnitsPaneUnitMarkersList
+      {shouldShowTypes && <UnitsPaneUnitMarkersList
         list={unit.type}
         listTitle="heraldry.unit.filterTitle"
         listElementPrefix={`heraldry.unit.type.${country}`}
         icon={unit.type.some((v) => !v.startsWith('former')) ? IconBuilding : IconScriptBroken}
         shouldShowContentAsTooltip={shouldShowContentAsTooltip}
-      />
+      />}
     </p>
   );
 };

@@ -15,3 +15,8 @@ export const roundWithPrecision = (value: number, precision: number) => {
 
   return Math.round(value * multiplier) / multiplier;
 };
+
+export const formatLargeNumber = (value: number) => {
+  // It looks like: 3 211 300
+  return new Intl.NumberFormat('en-US').format(value).replace(',', ' ')
+};

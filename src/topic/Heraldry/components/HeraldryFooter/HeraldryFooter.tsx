@@ -2,6 +2,8 @@ import { memo } from 'react';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 
+import { formatLargeNumber } from '@/utils/math';
+
 import Space from '@/components/UI/Space';
 import Panel from '@/components/UI/Panel';
 
@@ -24,10 +26,10 @@ const HeraldryFooter = ({
         <Space side="bottom" className="bg-ui-dark" isFirst />
         <Panel className="ui-panel--rounded-t flex-row min-h-[24px] items-center px-4 text-[12px] text-ui-dark-contrast [&_strong]:text-white bg-ui-dark">
           <p>
-            {t('heraldry.mapFooterAllCoats')} <strong>{totalUnits}</strong>
+            {t('heraldry.mapFooterAllCoats')} <strong>{formatLargeNumber(totalUnits)}</strong>
             {totalUnits > totalVisibleUnits && <>{t('heraldry.mapFooterCoatsAfterFilter')}
             {' '}
-            <strong>{totalVisibleUnits}</strong>
+            <strong>{formatLargeNumber(totalVisibleUnits)}</strong>
             {totalVisibleUnits > 10 && <>{' '}- <strong>
               {(100 * (totalVisibleUnits / totalUnits)).toFixed(2)}
             </strong><small>%</small></>}</>}.            
@@ -45,12 +47,12 @@ const HeraldryFooter = ({
       <p>
         {zoomLevel === 1 && <>{t('heraldry.mapFooterSource')} <strong className="text-ui-dark">wikipedia.org</strong>.<br /></>}
         {' '}
-        {t('heraldry.mapFooterAllCoats')} <strong className="text-ui-dark">{totalUnits}</strong>
+        {t('heraldry.mapFooterAllCoats')} <strong className="text-ui-dark">{formatLargeNumber(totalUnits)}</strong>
         {totalUnits > totalVisibleUnits && <>{t('heraldry.mapFooterCoatsAfterFilter')}
         {' '}
         <strong className={clsx({
           'text-[#ca1a1a]': totalVisibleUnits === 0 })
-        }>{totalVisibleUnits}</strong>
+        }>{formatLargeNumber(totalVisibleUnits)}</strong>
         {totalVisibleUnits > 10 && <>{' '}- <strong className="text-ui-dark">
           {(100 * (totalVisibleUnits / totalUnits)).toFixed(2)}
         </strong><small>%</small></>}</>}.

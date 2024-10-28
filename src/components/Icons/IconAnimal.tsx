@@ -57,7 +57,7 @@ const Icon = ({ className, animals = [] }: Props) => {
     return <IconRabbit className={className} />;
   }
 
-  if (['fish', 'whale', 'mermaid', 'seal', 'salmon', 'seahorse'].some((category) => animals.includes(category))) {
+  if (['fish', 'whale', 'dolphin', 'mermaid', 'seal', 'salmon', 'seahorse'].some((category) => animals.includes(category))) {
     return <IconFish className={className} />;
   }
 
