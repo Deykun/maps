@@ -116,11 +116,11 @@ export const selectUnitIncludeModifictions = getListForUnit('include');
 
 type Shortcut = { name: string, type: 'animal' | 'item', total: number };
 
-export const selectShortcuts = (state: FiltersModificationStoreState): Shortcut[] => {
+export const selectShortcuts = (state: FiltersModificationStoreState, max: number = 8): Shortcut[] => {
   const animal: Shortcut[] = Object.entries(state.animal).map(([name, { include = [] } = {}]) => ({ name, type: 'animal', total: include.length }));
   const item: Shortcut[] = Object.entries(state.item).map(([name, { include = [] } = {}]) => ({ name, type: 'item', total: include.length }));
 
-  return [...animal, ...item].sort((a, b) => b.total - a.total).slice(0, 12);
+  return [...animal, ...item].sort((a, b) => b.total - a.total).slice(0, max);
 };
 
 export default useFilterModificationStore;

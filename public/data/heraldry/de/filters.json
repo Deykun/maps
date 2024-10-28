@@ -2,10 +2,7 @@
   "animals": [
     {
       "name": "gull",
-      "phrases": [
-       "möwe",
-       "möwen"
-      ]
+      "phrases": ["möwe", "möwen"]
     },
     {
       "name": "eagle",
@@ -199,109 +196,237 @@
         {
           "imageHash": "3f20cc45",
           "note": "Detzem"
+        },
+        {
+          "imageHash": "62354131",
+          "note": "Zehdenick"
+        },
+        {
+          "imageHash": "75ff91d1",
+          "note": "Lindow (Mark)"
+        },
+        {
+          "imageHash": "44d6154",
+          "note": "Neuruppin"
+        },
+        {
+          "imageHash": "31ab313",
+          "note": "Schnackenburg"
+        },
+        {
+          "imageHash": "6dafe829",
+          "note": "Linden (Hessen)"
+        },
+        {
+          "imageHash": "24b0b2b0",
+          "note": "Gemünden (Westerwald)"
+        },
+        {
+          "imageHash": "300077d0",
+          "note": "Weilmünster"
+        },
+        {
+          "imageHash": "1ca66b40",
+          "note": "Lehmen"
+        },
+        {
+          "imageHash": "fdc6034",
+          "note": "Rech"
+        },
+        {
+          "imageHash": "769d33e8",
+          "note": "Altenahr"
+        },
+        {
+          "imageHash": "7a7cfa0b",
+          "note": "Wassenach"
+        },
+        {
+          "imageHash": "2d628915",
+          "note": "Ahrweiler"
+        },
+        {
+          "imageHash": "192f18c7",
+          "note": "Erden (Mosel)"
+        },
+        {
+          "imageHash": "2e07ee7a",
+          "note": "Verbandsgemeinde Kröv-Bausendorf"
+        },
+        {
+          "imageHash": "4cd9122",
+          "note": "Bad Bertrich"
+        },
+        {
+          "imageHash": "3568003a",
+          "note": "Dohr"
+        },
+        {
+          "imageHash": "6f701c15",
+          "note": "Auersmacher"
+        },
+        {
+          "imageHash": "543ad6d8",
+          "note": "Kleinblittersdorf"
+        },
+        {
+          "imageHash": "6875a82",
+          "note": "Obermaßfeld-Grimmenthal"
+        },
+        {
+          "imageHash": "28c230ac",
+          "note": "Meiningen"
+        },
+        {
+          "imageHash": "67a64bc9",
+          "note": "Herresbach"
         }
       ],
       "exclude": []
     },
     {
       "name": "falcon",
-      "phrases": [
-       "falke",
-       "falken",
-       "falkenkopf"
-      ]
+      "phrases": ["falke", "falken", "falkenkopf"]
     },
     {
       "name": "heron",
       "phrases": [
-       "reiher",
-       "reiherfederbusch",
-       "reiherfedern",
-       "reiherhälse",
-       "reiherkopf",
-       "reihers",
-       "reihren",
-       "fischreiher",
-       "fischreihers",
-       "fischreiherfuß"
-      ]
+        "reiher",
+        "reiherfederbusch",
+        "reiherfedern",
+        "reiherhälse",
+        "reiherkopf",
+        "reihers",
+        "reihren",
+        "fischreiher",
+        "fischreihers",
+        "fischreiherfuß"
+      ],
+      "include": [
+        {
+          "imageHash": "5107e2e",
+          "note": "Obernholz"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "crane",
       "phrases": [
-       "kranich",
-       "kraniche",
-       "kranichen",
-       "kranichflügel",
-       "kranichs"
+        "kranich",
+        "kraniche",
+        "kranichen",
+        "kranichflügel",
+        "kranichs"
       ]
     },
     {
       "name": "hawk",
       "phrases": [
-       "habicht",
-       "habichte",
-       "habichten",
-       "habichts",
-       "habichtswald"
+        "habicht",
+        "habichte",
+        "habichten",
+        "habichts",
+        "habichtswald",
+        "sperber"
       ]
     },
     {
-      "name": "raven",
+      "name": "rooster",
       "phrases": [
-       "rabe",
-       "raben",
-       "rabenau"
-      ]
-    },
-    {
-      "name": "owl",
-      "phrases": [
-       "eule",
-       "eulen",
-       "eulenbis",
-       "eulenloch",
-       "waldkauz"
-      ]
-    },
-    {
-      "name": "vulture",
-      "phrases": [
-       "geier",
-       "geiern",
-       "geiers",
-       "geiersthal",
-       "geierkopf"
-      ]
-    },
-    {
-      "name": "pelican",
-      "phrases": [
-       "pelikan",
-       "pelikane",
-       "pelikanen",
-       "pelikans"
-      ]
-    },
-    {
-      "name": "griffin",
-      "phrases": [
-        "greif",
-        "greife",
-        "greifen",
-        "greifenkopf",
-        "greifenköpfe",
-        "greifenlöwe",
-        "greifenrumpf",
-        "greifenstein",
-        "greifs",
-        "greifswald",
-        "greifenfang"
+        "hahn",
+        "hähne",
+        "hahnenfedern",
+        "wetterhahn",
+        "hahnenkopf",
+        "hahns",
+        "hänen",
+        "henne",
+        "hahnes",
+        "hühnerfuß"
       ],
       "include": [
         {
-          "imageHash": "7268c8e3",
-          "note": "Heuchling (Lauf an der Pegnitz)"
+          "imageHash": "359c537f",
+          "note": "Ingelbach"
+        },
+        {
+          "imageHash": "10e395cd",
+          "note": "Oberweid"
+        },
+        {
+          "imageHash": "6875a82",
+          "note": "Obermaßfeld-Grimmenthal"
+        },
+        {
+          "imageHash": "14acdb1b",
+          "note": "Meiningen"
+        },
+        {
+          "imageHash": "31152f67",
+          "note": "Meiningen"
+        },
+        {
+          "imageHash": "2284b864",
+          "note": "Rohr (Thüringen)"
+        },
+        {
+          "imageHash": "6062ae42",
+          "note": "Kühndorf"
+        },
+        {
+          "imageHash": "93436a0",
+          "note": "Schwarza (Thüringer Wald)"
+        },
+        {
+          "imageHash": "12547ddc",
+          "note": "Dietzhausen"
+        },
+        {
+          "imageHash": "617febc4",
+          "note": "Dautphetal"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "raven",
+      "phrases": ["rabe", "raben", "rabenau"]
+    },
+    {
+      "name": "owl",
+      "phrases": ["eule", "eulen", "eulenbis", "eulenloch", "waldkauz"],
+      "include": [
+        {
+          "imageHash": "1caec8de",
+          "note": "Oberfischbach (Wackersberg)"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "vulture",
+      "phrases": ["geier", "geiern", "geiers", "geiersthal", "geierkopf"]
+    },
+    {
+      "name": "pelican",
+      "phrases": ["pelikan", "pelikane", "pelikanen", "pelikans"]
+    },
+    {
+      "name": "stork",
+      "phrases": [
+        "storch",
+        "störche",
+        "störchen",
+        "storches",
+        "storchenrumpf",
+        "storchennest",
+        "weißstorch"
+      ],
+      "include": [
+        {
+          "imageHash": "58d626af",
+          "note": "Alt Isenhagen"
         }
       ],
       "exclude": []
@@ -327,63 +452,46 @@
     },
     {
       "name": "pigeon",
-      "phrases": [
-       "taube",
-       "tauben",
-       "taubenturm"
-      ]
+      "phrases": ["taube", "tauben", "taubenturm"],
+      "include": [
+        {
+          "imageHash": "1f64fe2e",
+          "note": "Dautphetal"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "swan",
       "phrases": [
-       "schwan",
-       "schwäne",
-       "schwänen",
-       "schwanenfittich",
-       "schwanenhälse",
-       "schwanenrumpf",
-       "schwanenrumpfes",
-       "schwanes",
-       "schwanewede",
-       "schwann",
-       "schwanenhals",
-       "schwanebeck"
-      ]
-    },
-    {
-      "name": "phoenix",
-      "phrases": [
-       "phönix"
-      ]
-    },
-    {
-      "name": "hawk",
-      "phrases": [
-       "sperber"
-      ]
-    },
-    {
-      "name": "griffin",
-      "phrases": [
-        "greif",
-        "greife",
-        "greifen",
-        "greifenkopf",
-        "greifenköpfe",
-        "greifenlöwe",
-        "greifenrumpf",
-        "greifenstein",
-        "greifs",
-        "greifswald",
-        "greifenfang"
+        "schwan",
+        "schwäne",
+        "schwänen",
+        "schwanenfittich",
+        "schwanenhälse",
+        "schwanenrumpf",
+        "schwanenrumpfes",
+        "schwanes",
+        "schwanewede",
+        "schwann",
+        "schwanenhals",
+        "schwanebeck"
       ],
       "include": [
         {
-          "imageHash": "7268c8e3",
-          "note": "Heuchling (Lauf an der Pegnitz)"
+          "imageHash": "2cb1c742",
+          "note": "Selters (Taunus)"
+        },
+        {
+          "imageHash": "71edc71a",
+          "note": "Selters (Taunus)"
         }
       ],
       "exclude": []
+    },
+    {
+      "name": "phoenix",
+      "phrases": ["phönix"]
     },
     {
       "name": "griffin",
@@ -426,17 +534,24 @@
         {
           "imageHash": "649d1863",
           "note": "Stahe"
+        },
+        {
+          "imageHash": "1a13b09d",
+          "note": "Hasenmoor"
         }
       ],
       "exclude": []
     },
     {
       "name": "bat",
-      "phrases": [
-       "fledermaus",
-       "fledermäuse",
-       "fledermäusen"
-      ]
+      "phrases": ["fledermaus", "fledermäuse", "fledermäusen"],
+      "include": [
+        {
+          "imageHash": "5598d461",
+          "note": "Fiefbergen"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "boar",
@@ -457,32 +572,37 @@
         {
           "imageHash": "e13986b",
           "note": "Steinhöfel"
+        },
+        {
+          "imageHash": "4d152eea",
+          "note": "Suhlendorf"
+        },
+        {
+          "imageHash": "5f4ab101",
+          "note": "Schnega"
+        },
+        {
+          "imageHash": "46715eb9",
+          "note": "Deutsch Evern"
+        },
+        {
+          "imageHash": "72b2c139",
+          "note": "Dietzhölztal"
         }
       ],
       "exclude": []
     },
     {
       "name": "ant",
-      "phrases": [
-        "ameise",
-        "ameisen"
-      ]
+      "phrases": ["ameise", "ameisen"]
     },
     {
       "name": "whale",
-      "phrases": [
-        "wale",
-        "wales"
-      ]
+      "phrases": ["wale", "wales"]
     },
     {
       "name": "panther",
-      "phrases": [
-       "panther",
-       "panter",
-       "panthern",
-       "panthers"
-      ]
+      "phrases": ["panther", "panter", "panthern", "panthers"]
     },
     {
       "name": "deer",
@@ -521,21 +641,80 @@
         {
           "imageHash": "7971f5d2",
           "note": "Samtgemeinde Aue"
+        },
+        {
+          "imageHash": "c8225a0",
+          "note": "Haßmoor"
+        },
+        {
+          "imageHash": "3737afd9",
+          "note": "Havelberg"
+        },
+        {
+          "imageHash": "43bf358a",
+          "note": "Samtgemeinde Bodenteich"
+        },
+        {
+          "imageHash": "5ce5c26c",
+          "note": "Bad Bodenteich"
+        },
+        {
+          "imageHash": "29c2ed37",
+          "note": "Himbergen"
+        },
+        {
+          "imageHash": "3cd5bf60",
+          "note": "Sprakensehl"
+        },
+        {
+          "imageHash": "b569616",
+          "note": "Hirschberg (Rhein-Lahn-Kreis)"
+        },
+        {
+          "imageHash": "194241fe",
+          "note": "Köfering (Kümmersbruck)"
+        },
+        {
+          "imageHash": "93436a0",
+          "note": "Schwarza (Thüringer Wald)"
+        },
+        {
+          "imageHash": "5f16e2eb",
+          "note": "Oberhof"
+        },
+        {
+          "imageHash": "39059963",
+          "note": "Dautphetal"
+        },
+        {
+          "imageHash": "220cd02e",
+          "note": "Wetter (Hessen)"
+        },
+        {
+          "imageHash": "488da97b",
+          "note": "Bockenbach (Kreuztal)"
+        },
+        {
+          "imageHash": "341568f3",
+          "note": "Eichen (Kreuztal)"
         }
       ],
       "exclude": []
     },
     {
       "name": "lynx",
-      "phrases": [
-       "luchs"
-      ]
+      "phrases": ["luchs"]
     },
     {
       "name": "frog",
-      "phrases": [
-       "frosch"
-      ]
+      "phrases": ["frosch"],
+      "include": [
+        {
+          "imageHash": "207a6448",
+          "note": "Gerbach"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "moose",
@@ -558,10 +737,7 @@
     },
     {
       "name": "wildcat",
-      "phrases": [
-       "wildkatze",
-       "wildkatzen"
-      ]
+      "phrases": ["wildkatze", "wildkatzen"]
     },
     {
       "name": "lion",
@@ -2910,6 +3086,54 @@
         {
           "imageHash": "464e5328",
           "note": "Verbandsgemeinde Neumagen-Dhron"
+        },
+        {
+          "imageHash": "35b52a56",
+          "note": "Vierhöfen"
+        },
+        {
+          "imageHash": "559cf57e",
+          "note": "Weilburg"
+        },
+        {
+          "imageHash": "125676fe",
+          "note": "Oberlahnkreis"
+        },
+        {
+          "imageHash": "1dd8ea61",
+          "note": "Bischoffen"
+        },
+        {
+          "imageHash": "65f04efe",
+          "note": "Weilrod"
+        },
+        {
+          "imageHash": "7cb0da04",
+          "note": "Weilrod"
+        },
+        {
+          "imageHash": "9635bc7",
+          "note": "Weilrod"
+        },
+        {
+          "imageHash": "6ca0dee1",
+          "note": "Hirz-Maulsbach"
+        },
+        {
+          "imageHash": "51917019",
+          "note": "Leimbach (bei Adenau)"
+        },
+        {
+          "imageHash": "333d2df6",
+          "note": "Densborn"
+        },
+        {
+          "imageHash": "19c373e8",
+          "note": "Verbandsgemeinde Traben-Trarbach (1968–2014)"
+        },
+        {
+          "imageHash": "5de10008",
+          "note": "Verbandsgemeinde Zell (Mosel)"
         }
       ],
       "exclude": [
@@ -2930,86 +3154,95 @@
     {
       "name": "bullBison",
       "phrases": [
-       "auerochse",
-       "auerochsen",
-       "auerochsengehörn",
-       "auerochsenkopf",
-       "büffel",
-       "büffelgehörn",
-       "büffelhörner",
-       "büffelhörnern",
-       "büffeln",
-       "büffelohren",
-       "büffels",
-       "bulle",
-       "bullen",
-       "kuh",
-       "kühe",
-       "kühen",
-       "kuhkopf",
-       "kuhs",
-       "ochse",
-       "ochsen",
-       "ochsenhörnern",
-       "ochsenkopf",
-       "ochsenrumpf",
-       "stier",
-       "stiere",
-       "stieren",
-       "stierhaupt",
-       "stierkopf",
-       "stiers",
-       "wisent",
-       "wisente",
-       "wisenten",
-       "wisentgehörne",
-       "wisentkopf",
-       "wisents",
-       "rinderkopf",
-       "rind",
-       "rinderhörner",
-       "kalb",
-       "kalbe",
-       "kalbskopf",
-       "stierrumpf"
-      ]
+        "auerochse",
+        "auerochsen",
+        "auerochsengehörn",
+        "auerochsenkopf",
+        "büffel",
+        "büffelgehörn",
+        "büffelhörner",
+        "büffelhörnern",
+        "büffeln",
+        "büffelohren",
+        "büffels",
+        "bulle",
+        "bullen",
+        "kuh",
+        "kühe",
+        "kühen",
+        "kuhkopf",
+        "kuhs",
+        "ochse",
+        "ochsen",
+        "ochsenhörnern",
+        "ochsenkopf",
+        "ochsenrumpf",
+        "stier",
+        "stiere",
+        "stieren",
+        "stierhaupt",
+        "stierkopf",
+        "stiers",
+        "wisent",
+        "wisente",
+        "wisenten",
+        "wisentgehörne",
+        "wisentkopf",
+        "wisents",
+        "rinderkopf",
+        "rind",
+        "rinderhörner",
+        "kalb",
+        "kalbe",
+        "kalbskopf",
+        "stierrumpf"
+      ],
+      "include": [
+        {
+          "imageHash": "5b403ef7",
+          "note": "Lohbarbek"
+        },
+        {
+          "imageHash": "6062ae42",
+          "note": "Kühndorf"
+        },
+        {
+          "imageHash": "16c1835f",
+          "note": "Wiesenthal (Thüringen)"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "otter",
-      "phrases": [
-       "fischotter",
-       "fischottern",
-       "fischotters"
-      ]
+      "phrases": ["fischotter", "fischottern", "fischotters"]
     },
     {
       "name": "peacock",
       "phrases": [
-       "pfau",
-       "pfauenaugen",
-       "pfauenfederbusch",
-       "pfauenfedern",
-       "pfauenfederrosetten",
-       "pfauenspiegeln",
-       "pfauenstoß",
-       "pfauenwedel"
+        "pfau",
+        "pfauenaugen",
+        "pfauenfederbusch",
+        "pfauenfedern",
+        "pfauenfederrosetten",
+        "pfauenspiegeln",
+        "pfauenstoß",
+        "pfauenwedel"
       ]
     },
     {
       "name": "grouse",
-      "phrases": [
-       "auerhahn"
-      ]
+      "phrases": ["auerhahn"]
     },
     {
       "name": "duck",
       "phrases": [
-       "ente",
-       "entenkopf",
-       "entenköpfen",
-       "entenfuß",
-       "entenfußes",
-       "wildente"
+        "ente",
+        "entenkopf",
+        "entenköpfen",
+        "entenfuß",
+        "entenfußes",
+        "wildente"
       ]
     },
     {
@@ -3066,6 +3299,54 @@
         {
           "imageHash": "2f6234a",
           "note": "Niederwerrn"
+        },
+        {
+          "imageHash": "557ad11e",
+          "note": "Wrixum"
+        },
+        {
+          "imageHash": "4e000ddb",
+          "note": "Passade"
+        },
+        {
+          "imageHash": "6e485760",
+          "note": "Fahren (Kreis Plön)"
+        },
+        {
+          "imageHash": "58b11c7b",
+          "note": "Havelberg"
+        },
+        {
+          "imageHash": "4358cf57",
+          "note": "Ostereistedt"
+        },
+        {
+          "imageHash": "7a9967a5",
+          "note": "Armstedt"
+        },
+        {
+          "imageHash": "6963b87b",
+          "note": "Buchholz (Westerwald)"
+        },
+        {
+          "imageHash": "4fdfe018",
+          "note": "Gladbach (Vettweiß)"
+        },
+        {
+          "imageHash": "44668a5b",
+          "note": "Illerich"
+        },
+        {
+          "imageHash": "9488a9a",
+          "note": "Mendhausen"
+        },
+        {
+          "imageHash": "6dafe829",
+          "note": "Linden (Hessen)"
+        },
+        {
+          "imageHash": "2670bc98",
+          "note": "Dautphetal"
         }
       ],
       "exclude": [
@@ -3112,148 +3393,207 @@
         {
           "imageHash": "6bf1bee4",
           "note": "Gyhum"
+        },
+        {
+          "imageHash": "501f2975",
+          "note": "Brechen (Hessen)"
+        },
+        {
+          "imageHash": "35dca0ec",
+          "note": "Brechen (Hessen)"
+        },
+        {
+          "imageHash": "3bb67556",
+          "note": "Sankt Johann (bei Mayen)"
+        },
+        {
+          "imageHash": "10585e76",
+          "note": "Urmitz"
+        },
+        {
+          "imageHash": "4a147483",
+          "note": "Greimerath (Eifel)"
         }
       ],
       "exclude": []
     },
     {
       "name": "salmon",
-      "phrases": [
-        "salme"
-      ]
+      "phrases": ["salme"]
     },
     {
       "name": "fish",
       "phrases": [
-       "brassen",
-       "brassens",
-       "fisch",
-       "fische",
-       "fischen",
-       "fisches",
-       "hecht",
-       "hechte",
-       "hechten",
-       "hering",
-       "heringe",
-       "heringen",
-       "herings",
-       "karpfen",
-       "karpfens",
-       "lachs",
-       "lachse",
-       "lachsen",
-       "lachses",
-       "maräne",
-       "maränen",
-       "wels",
-       "welse",
-       "welsen",
-       "welses",
-       "zander",
-       "zandern",
-       "zanders",
-       "sprotten",
-       "forelle",
-       "forellen",
-       "barsche"
+        "brassen",
+        "brassens",
+        "fisch",
+        "fische",
+        "fischen",
+        "fisches",
+        "hecht",
+        "hechte",
+        "hechten",
+        "hering",
+        "heringe",
+        "heringen",
+        "herings",
+        "karpfen",
+        "karpfens",
+        "lachs",
+        "lachse",
+        "lachsen",
+        "lachses",
+        "maräne",
+        "maränen",
+        "wels",
+        "welse",
+        "welsen",
+        "welses",
+        "zander",
+        "zandern",
+        "zanders",
+        "sprotten",
+        "forelle",
+        "forellen",
+        "barsche"
       ],
       "include": [
-       "Uhyst (Spree)",
-       "Schlaubetal",
-       "Bezirk Köpenick",
-       "Berlin-Schmöckwitz"
-      ]
+        "Uhyst (Spree)",
+        "Schlaubetal",
+        "Bezirk Köpenick",
+        "Berlin-Schmöckwitz",
+        {
+          "imageHash": "2e086ccf",
+          "note": "Barsbek"
+        },
+        {
+          "imageHash": "326aad24",
+          "note": "Beckedorf (Seevetal)"
+        },
+        {
+          "imageHash": "69f98a41",
+          "note": "Weilrod"
+        },
+        {
+          "imageHash": "e2a2c12",
+          "note": "Weilrod"
+        },
+        {
+          "imageHash": "7a52eba0",
+          "note": "Salm (Eifel)"
+        },
+        {
+          "imageHash": "1caec8de",
+          "note": "Oberfischbach (Wackersberg)"
+        },
+        {
+          "imageHash": "4e20f1cd",
+          "note": "Dermbach"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "weasel",
-      "phrases": [
-        "marder",
-        "wiesel",
-        "wieseln"
-      ]
+      "phrases": ["marder", "wiesel", "wieseln"]
     },
     {
       "name": "seahorse",
-      "phrases": [
-       "seepferdchen",
-       "seepferdchens"
-      ]
+      "phrases": ["seepferdchen", "seepferdchens"]
     },
     {
       "name": "bee",
-      "phrases": [
-       "biene",
-       "bienen"
-      ]
+      "phrases": ["biene", "bienen"]
     },
     {
       "name": "mermaid",
       "phrases": [
-       "seewiefken",
-       "sirene",
-       "sirenen",
-       "nixe",
-       "wassernixe",
-       "wassermann"
-      ]
+        "seewiefken",
+        "sirene",
+        "sirenen",
+        "nixe",
+        "wassernixe",
+        "wassermann"
+      ],
+      "include": [
+        {
+          "imageHash": "52fb5eae",
+          "note": "Westerdeichstrich"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "fox",
-      "phrases": [
-       "fuchs",
-       "füchse",
-       "füchsen",
-       "fuchses",
-       "fuchskopf"
-      ]
+      "phrases": ["fuchs", "füchse", "füchsen", "fuchses", "fuchskopf"],
+      "include": [
+        {
+          "imageHash": "11c03858",
+          "note": "Biebertal"
+        },
+        {
+          "imageHash": "21c3d9f0",
+          "note": "Lohra"
+        },
+        {
+          "imageHash": "26534c2a",
+          "note": "Dautphetal"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "lizard",
-      "phrases": [
-       "eidechse",
-       "eidechsen"
-      ]
+      "phrases": ["eidechse", "eidechsen"]
     },
     {
       "name": "badger",
-      "phrases": [
-        "dachs"
-      ]
+      "phrases": ["dachs"]
     },
     {
       "name": "dog",
       "phrases": [
-       "hund",
-       "hunde",
-       "hunden",
-       "hundes",
-       "windhund",
-       "rüde",
-       "rüden",
-       "rüdenrumpf",
-       "rüdenköpfe",
-       "rüdenkopf",
-       "bracke",
-       "bracken",
-       "brackenkopf",
-       "brackenrumpf"
-      ]
+        "hund",
+        "hunde",
+        "hunden",
+        "hundes",
+        "windhund",
+        "rüde",
+        "rüden",
+        "rüdenrumpf",
+        "rüdenköpfe",
+        "rüdenkopf",
+        "bracke",
+        "bracken",
+        "brackenkopf",
+        "brackenrumpf"
+      ],
+      "include": [
+        {
+          "imageHash": "72afb58a",
+          "note": "Hontheim"
+        },
+        {
+          "imageHash": "397defa",
+          "note": "Bad Berneck im Fichtelgebirge"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "crayfish",
-      "phrases": [
-       "krebs",
-       "krebse",
-       "krebses"
-      ]
+      "phrases": ["krebs", "krebse", "krebses"],
+      "include": [
+        {
+          "imageHash": "22ca17b1",
+          "note": "Hohenfelde (Kreis Plön)"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "elephant",
-      "phrases": [
-       "elefant",
-       "elefantenkopf"
-      ]
+      "phrases": ["elefant", "elefantenkopf"]
     },
     {
       "name": "horse",
@@ -3302,6 +3642,66 @@
         {
           "imageHash": "657fcf17",
           "note": "Barnstedt (Dörverden)"
+        },
+        {
+          "imageHash": "6e2d4225",
+          "note": "Havelberg"
+        },
+        {
+          "imageHash": "430d00a5",
+          "note": "Göhrde"
+        },
+        {
+          "imageHash": "20abc409",
+          "note": "Oetzen"
+        },
+        {
+          "imageHash": "1836abb6",
+          "note": "Amt Neuhaus"
+        },
+        {
+          "imageHash": "7e9f59f4",
+          "note": "Rosengarten (Landkreis Harburg)"
+        },
+        {
+          "imageHash": "631539d6",
+          "note": "Düdenbüttel"
+        },
+        {
+          "imageHash": "57347f9",
+          "note": "Weilrod"
+        },
+        {
+          "imageHash": "10585e76",
+          "note": "Urmitz"
+        },
+        {
+          "imageHash": "6640d54b",
+          "note": "Traben-Trarbach"
+        },
+        {
+          "imageHash": "41d730c4",
+          "note": "Türkismühle"
+        },
+        {
+          "imageHash": "14d42eee",
+          "note": "Garmisch-Partenkirchen"
+        },
+        {
+          "imageHash": "660e9f77",
+          "note": "Stein an der Traun"
+        },
+        {
+          "imageHash": "ec418a2",
+          "note": "Kemnath am Buchberg"
+        },
+        {
+          "imageHash": "4f406027",
+          "note": "Roßdorf (Thüringen)"
+        },
+        {
+          "imageHash": "5cc9884a",
+          "note": "Empfertshausen"
         }
       ],
       "exclude": []
@@ -3309,19 +3709,24 @@
     {
       "name": "unicorn",
       "phrases": [
-       "einhorn",
-       "einhörner",
-       "einhörnern",
-       "einhornkopf",
-       "einhornrumpf",
-       "einhorns"
-      ]
+        "einhorn",
+        "einhörner",
+        "einhörnern",
+        "einhornkopf",
+        "einhornrumpf",
+        "einhorns"
+      ],
+      "include": [
+        {
+          "imageHash": "187adce5",
+          "note": "Christes"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "tiger",
-      "phrases": [
-       "tiger"
-      ]
+      "phrases": ["tiger"]
     },
     {
       "name": "goat",
@@ -3353,6 +3758,18 @@
         {
           "imageHash": "76f30fd7",
           "note": "Klein Gleidingen"
+        },
+        {
+          "imageHash": "6140d6c",
+          "note": "Alterkülz"
+        },
+        {
+          "imageHash": "7f2adb3e",
+          "note": "Ockfen"
+        },
+        {
+          "imageHash": "6c0603c3",
+          "note": "Bockstadt"
         }
       ],
       "exclude": []
@@ -3391,6 +3808,14 @@
         {
           "imageHash": "46d3936f",
           "note": "Eimke"
+        },
+        {
+          "imageHash": "75d43e86",
+          "note": "Samtgemeinde Suderburg"
+        },
+        {
+          "imageHash": "5f1f78de",
+          "note": "Lierschied"
         }
       ],
       "exclude": []
@@ -3426,87 +3851,132 @@
         {
           "imageHash": "79569150",
           "note": "Elsdorf (Rheinland)"
+        },
+        {
+          "imageHash": "778d8e41",
+          "note": "Wulfsen"
+        },
+        {
+          "imageHash": "21a61b73",
+          "note": "Breddorf"
+        },
+        {
+          "imageHash": "42cb5914",
+          "note": "Weilmünster"
+        },
+        {
+          "imageHash": "3156604d",
+          "note": "Wolfersweiler"
+        },
+        {
+          "imageHash": "11e61512",
+          "note": "Bernlohe (Roth)"
+        },
+        {
+          "imageHash": "4266d30b",
+          "note": "Rosa (Thüringen)"
         }
       ],
       "exclude": []
     },
     {
       "name": "squirrel",
-      "phrases": [
-       "eichhörnchen",
-       "eichhörnchens"
-      ]
+      "phrases": ["eichhörnchen", "eichhörnchens"],
+      "include": [
+        {
+          "imageHash": "58b58eb2",
+          "note": "Lipporn"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "donkey",
       "phrases": [
-       "esel",
-       "eseln",
-       "esels",
-       "eselskopf",
-       "eselsrumpf",
-       "maulesel"
+        "esel",
+        "eseln",
+        "esels",
+        "eselskopf",
+        "eselsrumpf",
+        "maulesel"
       ]
     },
     {
       "name": "centaur",
-      "phrases": [
-       "zentaur",
-       "zentauren"
-      ]
+      "phrases": ["zentaur", "zentauren"]
     },
     {
       "name": "bear",
       "phrases": [
-       "bär",
-       "bären",
-       "bärenfells",
-       "bärenklaue",
-       "bärenkopf",
-       "bärenköpfe",
-       "bärenpranke",
-       "bärenpranken",
-       "bärenrumpf",
-       "bärentatze",
-       "bärentatzen"
-      ]
+        "bär",
+        "bären",
+        "bärenfells",
+        "bärenklaue",
+        "bärenkopf",
+        "bärenköpfe",
+        "bärenpranke",
+        "bärenpranken",
+        "bärenrumpf",
+        "bärentatze",
+        "bärentatzen"
+      ],
+      "include": [
+        {
+          "imageHash": "501f2975",
+          "note": "Brechen (Hessen)"
+        },
+        {
+          "imageHash": "20b3cc58",
+          "note": "Brechen (Hessen)"
+        },
+        {
+          "imageHash": "784111f7",
+          "note": "Bärenbach (Hunsrück)"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "beaver",
-      "phrases": [
-       "biber",
-       "bieber",
-       "biberkopf",
-       "bibern",
-       "bibers"
-      ]
+      "phrases": ["biber", "bieber", "biberkopf", "bibern", "bibers"],
+      "include": [
+        {
+          "imageHash": "7a81ba",
+          "note": "Bevern (Bremervörde)"
+        },
+        {
+          "imageHash": "11c03858",
+          "note": "Biebertal"
+        },
+        {
+          "imageHash": "eb61bab",
+          "note": "Bebra"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "leopard",
-      "phrases": [
-       "leopard",
-       "leoparden",
-       "leopardierten"
-      ]
+      "phrases": ["leopard", "leoparden", "leopardierten"]
     },
     {
       "name": "cat",
-      "phrases": [
-       "katze"
-      ]
+      "phrases": ["katze"]
     },
     {
       "name": "turtle",
-      "phrases": [
-       "schildkröte"
-      ]
+      "phrases": ["schildkröte"]
     },
     {
       "name": "snake",
-      "phrases": [
-       "schlange",
-       "schlangen"
-      ]
+      "phrases": ["schlange", "schlangen"],
+      "include": [
+        {
+          "imageHash": "4499e815",
+          "note": "Bad Salzschlirf"
+        }
+      ],
+      "exclude": []
     }
   ],
   "items": [
@@ -3850,21 +4320,13 @@
     },
     {
       "name": "arrow",
-      "phrases": [
-        "pfeil",
-        "pfeile",
-        "pfeilen",
-        "pfeils"
-      ],
+      "phrases": ["pfeil", "pfeile", "pfeilen", "pfeils"],
       "include": [],
       "exclude": []
     },
     {
       "name": "crozier",
-      "phrases": [
-        "kreuzstab",
-        "pastoralstab"
-      ],
+      "phrases": ["kreuzstab", "pastoralstab"],
       "include": [],
       "exclude": []
     },
@@ -3887,10 +4349,7 @@
     },
     {
       "name": "horseshoe",
-      "phrases": [
-        "hufeisen",
-        "hufeisens"
-      ],
+      "phrases": ["hufeisen", "hufeisens"],
       "include": [],
       "exclude": []
     },
@@ -4030,11 +4489,7 @@
     },
     {
       "name": "angel",
-      "phrases": [
-        "engel",
-        "engelskopf",
-        "erzengel"
-      ],
+      "phrases": ["engel", "engelskopf", "erzengel"],
       "include": [],
       "exclude": []
     },
@@ -4053,11 +4508,7 @@
     },
     {
       "name": "heart",
-      "phrases": [
-        "herz",
-        "herze",
-        "herzen"
-      ],
+      "phrases": ["herz", "herze", "herzen"],
       "include": [],
       "exclude": []
     },
@@ -4079,19 +4530,13 @@
     },
     {
       "name": "anchor",
-      "phrases": [
-        "anker",
-        "schiffsanker"
-      ],
+      "phrases": ["anker", "schiffsanker"],
       "include": [],
       "exclude": []
     },
     {
       "name": "lighthouse",
-      "phrases": [
-        "leuchtturm",
-        "leuchtturms"
-      ],
+      "phrases": ["leuchtturm", "leuchtturms"],
       "include": [],
       "exclude": []
     },

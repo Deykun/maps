@@ -28,7 +28,7 @@ const AddOrRemoveMarkersSection = ({ unit }: Props) => {
   // TODO: add logic to return list of last or most popular user action in this section
   return (
     <>
-      {shortcuts.map(({ name, type }) => 
+      {shortcuts.map(({ name, type, total }) => 
         <ButtonText
           key={name}
           size="small"
@@ -36,7 +36,7 @@ const AddOrRemoveMarkersSection = ({ unit }: Props) => {
           isDisabled={type === 'animal' ? includeAnimal.includes(name) : includeItem.includes(name)}
         >
           {type === 'animal' ? <IconAnimal animals={[name]} /> : <IconCrown />}
-          <span>+ {t(`heraldry.${type}.${name}`)}</span>
+          <span>+ {t(`heraldry.${type}.${name}`)} <small>({total})</small></span>
         </ButtonText>
       )}
     </>

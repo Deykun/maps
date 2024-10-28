@@ -33,7 +33,7 @@ const DevelopmentPaneSidebarListOfFilters = ({
   setDraftFilter,
   onUse,
 }: Props) => {
-  const shortcuts = useFilterModificationStore(selectShortcuts);
+  const shortcuts = useFilterModificationStore(state => selectShortcuts(state, 100));
   const [selected, setSelected] = useState<{ type: 'animal' | 'item', name: string } | undefined>();
   const { t } = useTranslation();
 
@@ -126,7 +126,7 @@ const DevelopmentPaneSidebarListOfFilters = ({
             isDisabled={!data}
           >
             {type === 'animal' ? <IconAnimal animals={[name]} /> : <IconCrown />}
-            <span>{t(`heraldry.${type}.${name}`)} ({total})</span>
+            <span>{t(`heraldry.${type}.${name}`)} <small>({total})</small></span>
           </ButtonText>)}
         </div>}
         <select
@@ -162,7 +162,7 @@ const DevelopmentPaneSidebarListOfFilters = ({
         </select>
         <div className="flex gap-2">
           {selectedFilter && <ButtonText
-            onClick={() => copyText(JSON.stringify(selectedFilter, null, 4))}
+            onClick={() => copyText(`${JSON.stringify(selectedFilter, null, 4)},`)}
           >
             <span>{t('main.copy')}</span>
             <IconCopy />

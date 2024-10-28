@@ -1375,7 +1375,9 @@
   },
   "markers": {
    "animals": [
-    "lion"
+    "rooster",
+    "lion",
+    "bird"
    ],
    "items": [
     "cross"
@@ -1900,7 +1902,9 @@
   },
   "markers": {
    "animals": [
-    "lion"
+    "rooster",
+    "lion",
+    "bird"
    ]
   }
  },
@@ -1963,6 +1967,7 @@
   "markers": {
    "animals": [
     "eagle",
+    "rooster",
     "lion",
     "bird"
    ]
@@ -2359,7 +2364,9 @@
   },
   "markers": {
    "animals": [
-    "lion"
+    "rooster",
+    "lion",
+    "bird"
    ]
   }
  },
@@ -2657,7 +2664,9 @@
   },
   "markers": {
    "animals": [
-    "lion"
+    "rooster",
+    "lion",
+    "bird"
    ],
    "items": [
     "cross"
@@ -3007,6 +3016,10 @@
    }
   },
   "markers": {
+   "animals": [
+    "rooster",
+    "bird"
+   ],
    "items": [
     "walls"
    ]
@@ -3331,6 +3344,10 @@
    }
   },
   "markers": {
+   "animals": [
+    "rooster",
+    "bird"
+   ],
    "items": [
     "walls"
    ]
@@ -4442,6 +4459,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "rooster",
+    "bird"
+   ]
   }
  },
  {
@@ -4605,6 +4628,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "rooster",
+    "bird"
+   ]
   }
  },
  {
