@@ -17,17 +17,21 @@ type FiltersModificationStoreState = {
   },
 }
 
+const emptyState: FiltersModificationStoreState = {
+  animal: {},
+  item: {},
+};
+
 export const useFilterModificationStore = create<FiltersModificationStoreState>()(
   devtools(
     persist(
-    () => ({
-        animal: {},
-        item: {},
-      } as FiltersModificationStoreState),
+    () => (emptyState as FiltersModificationStoreState),
       { name: 'filtersModificationStore' },
     )
   )
 )
+
+export const resetModifications = () => useFilterModificationStore.setState(emptyState);
 
 const getListModifier = (action: 'reset' | 'include' | 'exclude') => (unit: CoatOfArmsMapData, markerType: MarkerType, item: string) => {
   const imageHashToChange = unit.imageHash;
@@ -109,5 +113,14 @@ const getListForUnit = (action: 'include' | 'exclude') => (unit: CoatOfArmsMapDa
 export const selectUnitExcludeModifictions = getListForUnit('exclude');
 
 export const selectUnitIncludeModifictions = getListForUnit('include');
+
+type Shortcut = { name: string, type: 'animal' | 'item', total: number };
+
+export const selectShortcuts = (state: FiltersModificationStoreState): Shortcut[] => {
+  const animal: Shortcut[] = Object.entries(state.animal).map(([name, { include = [] } = {}]) => ({ name, type: 'animal', total: include.length }));
+  const item: Shortcut[] = Object.entries(state.item).map(([name, { include = [] } = {}]) => ({ name, type: 'item', total: include.length }));
+
+  return [...animal, ...item].sort((a, b) => a.total - b.total).slice(0, 6);
+};
 
 export default useFilterModificationStore;

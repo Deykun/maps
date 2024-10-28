@@ -2,8 +2,11 @@ import { memo, useState, useCallback, useMemo, Dispatch, SetStateAction } from '
 import { useTranslation } from 'react-i18next';
 
 import IconCopy from '@/components/Icons/IconCopy';
+import IconEraser from '@/components/Icons/IconEraser';
 import IconSelected from '@/components/Icons/IconSelected';
 import IconSelectNew from '@/components/Icons/IconSelectNew';
+import IconAnimal from '@/components/Icons/IconAnimal';
+import IconCrown from '@/components/Icons/IconCrown';
 
 import Space from '@/components/UI/Space';
 import ButtonText from '@/components/UI/ButtonText';
@@ -15,6 +18,7 @@ import { copyText } from '@/utils/text';
 import { MarkerParamsWithResult } from '@/topic/Heraldry/types';
 
 import FilterModifications from '@/topic/Heraldry/features/modifyMarkers/components/DevelopmentPaneSidebarListOfFilters/FilterModifications';
+import { useFilterModificationStore, selectShortcuts, resetModifications } from '@/topic/Heraldry/features/modifyMarkers/stores/filtersModificationStore';
 
 import DevelopmentPaneSnippet from './DevelopmentPaneSnippet';
 
@@ -29,6 +33,7 @@ const DevelopmentPaneSidebarListOfFilters = ({
   setDraftFilter,
   onUse,
 }: Props) => {
+  const shortcuts = useFilterModificationStore(selectShortcuts);
   const [selected, setSelected] = useState<{ type: 'animal' | 'item', name: string } | undefined>();
   const { t } = useTranslation();
 
@@ -105,6 +110,25 @@ const DevelopmentPaneSidebarListOfFilters = ({
           </a>
           {'. '}
         </p>
+        {shortcuts.length > 0 && <div className="flex gap-2 flex-wrap">
+          <ButtonText
+            size="small"
+            onClick={resetModifications}
+          >
+            <IconEraser />
+            <span>{t('heraldry.list.clear')}</span>
+          </ButtonText>
+          {shortcuts.map(({ name, type }) => <ButtonText
+            size="small"
+            key={name}
+            onClick={() => setSelected({ name, type })}
+            isActive={selected?.name === name && selected?.type === type}
+            isDisabled={!data}
+          >
+            {type === 'animal' ? <IconAnimal animals={[name]} /> : <IconCrown />}
+            <span>{t(`heraldry.${type}.${name}`)}</span>
+          </ButtonText>)}
+        </div>}
         <select
           disabled={isLoading}
           onChange={handleChange}
