@@ -1,7 +1,6 @@
-import { memo, useState, useEffect } from 'react';
+import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import IconScriptBroken from '@/components/Icons/IconScriptBroken';
 import IconEraser from '@/components/Icons/IconEraser';
 import IconSortByName from '@/components/Icons/IconSortByName';
 import IconSortByValue from '@/components/Icons/IconSortByValue';

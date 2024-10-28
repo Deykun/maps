@@ -38,7 +38,7 @@ const getListModifier = (action: 'reset' | 'include' | 'exclude') => (unit: Coat
     return;
   }
 
-  const ruleToAdd: ComplexManualMarker = { imageHash: imageHashToChange, note: unit.title.substring(0, 50) };
+  const ruleToAdd: ComplexManualMarker = { imageHash: imageHashToChange, note: unit.title };
 
   useFilterModificationStore.setState((state) => {
     const filter = state[markerType][item];
@@ -66,7 +66,9 @@ const getListModifier = (action: 'reset' | 'include' | 'exclude') => (unit: Coat
       exclude: newExclude,
     };
 
-    localStorage.setItem(`maps_${markerType}_${item}`, JSON.stringify(newFilter));
+    // Backup
+    const country = document.documentElement.getAttribute('country');
+    localStorage.setItem(`${country}_maps_${markerType}_${item}`, JSON.stringify(newFilter));
 
     return {
       ...state,
