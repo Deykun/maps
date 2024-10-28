@@ -5,6 +5,26 @@
       "phrases": ["möwe", "möwen"]
     },
     {
+      "name": "dolphin",
+      "phrases": [
+          "delphin",
+          "delphine"
+      ],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "insect",
+      "phrases": [],
+      "include": [
+          {
+              "imageHash": "2135f75e",
+              "note": "Rosenthal (Peine)"
+          }
+      ],
+      "exclude": []
+    },
+    {
       "name": "eagle",
       "phrases": [
         "adler",
@@ -508,6 +528,70 @@
         {
           "imageHash": "3b6c985",
           "note": "Nidderau"
+        },
+        {
+          "imageHash": "6e184c96",
+          "note": "Freißenbüttel"
+        },
+        {
+          "imageHash": "bca4e68",
+          "note": "Wittmund"
+        },
+        {
+          "imageHash": "4694da9e",
+          "note": "Hoffeld (Eifel)"
+        },
+        {
+          "imageHash": "1397b4ba",
+          "note": "Müsch"
+        },
+        {
+          "imageHash": "d81d8d2",
+          "note": "Kobern-Gondorf"
+        },
+        {
+          "imageHash": "10fcaa6e",
+          "note": "Eimersdorf"
+        },
+        {
+          "imageHash": "7270eb44",
+          "note": "Petersberg (Hessen)"
+        },
+        {
+          "imageHash": "cbbfc9a",
+          "note": "Lahn (Stadt)"
+        },
+        {
+          "imageHash": "2a15c92c",
+          "note": "Katlenburg (Katlenburg-Lindau)"
+        },
+        {
+          "imageHash": "23544620",
+          "note": "Egestorf (Süntel)"
+        },
+        {
+          "imageHash": "59aae8a",
+          "note": "Bezirk Steglitz"
+        },
+        {
+          "imageHash": "30b4cbbd",
+          "note": "Ludwigsfelde"
+        },
+        {
+          "imageHash": "68b37eec",
+          "note": "Niemegk"
+        },
+        {
+          "imageHash": "432f57d9",
+          "note": "Niehorst"
+        },
+        {
+          "imageHash": "1712021a",
+          "note": "Ebbesloh"
+        },
+        {
+          "imageHash": "2ab26920",
+          "note": "Isselhorst"
         }
       ],
       "exclude": []
@@ -723,6 +807,10 @@
         {
           "imageHash": "17e8ca5",
           "note": "Burg (Mosel)"
+        },
+        {
+          "imageHash": "73b7d09b",
+          "note": "Seesen"
         }
       ],
       "exclude": []
@@ -773,6 +861,10 @@
         {
           "imageHash": "175cfa94",
           "note": "Eulenberg (Westerwald)"
+        },
+        {
+          "imageHash": "227c004d",
+          "note": "Krüzen"
         }
       ],
       "exclude": []
@@ -812,6 +904,10 @@
         {
           "imageHash": "45d6bede",
           "note": "Gerstungen"
+        },
+        {
+          "imageHash": "319f5b5c",
+          "note": "Osloß"
         }
       ],
       "exclude": []
@@ -934,6 +1030,10 @@
         {
           "imageHash": "7bde40e2",
           "note": "Sarzbüttel"
+        },
+        {
+          "imageHash": "4791ac7d",
+          "note": "Frankfurt-Schwanheim"
         }
       ],
       "exclude": []
@@ -989,6 +1089,18 @@
         {
           "imageHash": "12216b10",
           "note": "Binsdorf (Geislingen)"
+        },
+        {
+          "imageHash": "10fcaa6e",
+          "note": "Eimersdorf"
+        },
+        {
+          "imageHash": "cbbfc9a",
+          "note": "Lahn (Stadt)"
+        },
+        {
+          "imageHash": "3ec17923",
+          "note": "Gießen"
         }
       ],
       "exclude": []
@@ -1453,6 +1565,34 @@
         {
           "imageHash": "12eca739",
           "note": "Verbandsgemeinde Hermeskeil"
+        },
+        {
+          "imageHash": "7cea41e5",
+          "note": "Hösel"
+        },
+        {
+          "imageHash": "9d91932",
+          "note": "Bleialf"
+        },
+        {
+          "imageHash": "46a3093f",
+          "note": "Sachsenheim (Gössenheim)"
+        },
+        {
+          "imageHash": "26edefb5",
+          "note": "Coppenbrügge"
+        },
+        {
+          "imageHash": "1c1e5cd0",
+          "note": "Bäntorf"
+        },
+        {
+          "imageHash": "4d807dd8",
+          "note": "Brünnighausen"
+        },
+        {
+          "imageHash": "2d19ba6e",
+          "note": "Samtgemeinde Ostheide"
         }
       ],
       "exclude": []
@@ -4165,6 +4305,58 @@
         {
           "imageHash": "2508b5d4",
           "note": "Usingen"
+        },
+        {
+          "imageHash": "66572f30",
+          "note": "Harscheid (bei Adenau)"
+        },
+        {
+          "imageHash": "526f9737",
+          "note": "Hoof (St. Wendel)"
+        },
+        {
+          "imageHash": "5ef539d0",
+          "note": "Michelbach (Alzenau)"
+        },
+        {
+          "imageHash": "1c7affc7",
+          "note": "Kälberau"
+        },
+        {
+          "imageHash": "4481a0f7",
+          "note": "Hanau"
+        },
+        {
+          "imageHash": "7c46ad5a",
+          "note": "Laubach"
+        },
+        {
+          "imageHash": "408e785e",
+          "note": "Gemünden (Felda)"
+        },
+        {
+          "imageHash": "6d4a72f0",
+          "note": "Bad Hersfeld"
+        },
+        {
+          "imageHash": "49fc18c5",
+          "note": "Potzwenden"
+        },
+        {
+          "imageHash": "23544620",
+          "note": "Egestorf (Süntel)"
+        },
+        {
+          "imageHash": "7ba8a713",
+          "note": "Samtgemeinde Altes Amt Ebstorf"
+        },
+        {
+          "imageHash": "6fbaffb8",
+          "note": "Dahlenburg"
+        },
+        {
+          "imageHash": "43121383",
+          "note": "Barmke"
         }
       ],
       "exclude": [
@@ -4256,6 +4448,10 @@
         {
           "imageHash": "3a2296e6",
           "note": "Friedberg (Hessen)"
+        },
+        {
+          "imageHash": "25b7309f",
+          "note": "Lehe (Emsland)"
         }
       ],
       "exclude": []
@@ -4305,10 +4501,7 @@
     },
     {
       "name": "snail",
-      "phrases": [
-          "schnecke",
-          "schnecken"
-      ],
+      "phrases": ["schnecke", "schnecken"],
       "exclude": [],
       "include": []
     },
@@ -4326,6 +4519,10 @@
         {
           "imageHash": "12e6f928",
           "note": "Lohrheim"
+        },
+        {
+          "imageHash": "43c5d6c5",
+          "note": "Gescher"
         }
       ],
       "exclude": []
@@ -4648,6 +4845,66 @@
         {
           "imageHash": "2504ee71",
           "note": "Feldhorst"
+        },
+        {
+          "imageHash": "320a4997",
+          "note": "Uhler"
+        },
+        {
+          "imageHash": "635f4b2a",
+          "note": "Spechbach (Kraichgau)"
+        },
+        {
+          "imageHash": "4481a0f7",
+          "note": "Hanau"
+        },
+        {
+          "imageHash": "1119c117",
+          "note": "Jossgrund"
+        },
+        {
+          "imageHash": "77ed085a",
+          "note": "Dautphetal"
+        },
+        {
+          "imageHash": "4a703d7b",
+          "note": "Dautphetal"
+        },
+        {
+          "imageHash": "6df448a9",
+          "note": "Gierswalde"
+        },
+        {
+          "imageHash": "4464ffaf",
+          "note": "Seelze"
+        },
+        {
+          "imageHash": "5d77b279",
+          "note": "Krukow (Lauenburg)"
+        },
+        {
+          "imageHash": "671e677a",
+          "note": "Möckern"
+        },
+        {
+          "imageHash": "7d6339cb",
+          "note": "Hohe Börde"
+        },
+        {
+          "imageHash": "2f3536f4",
+          "note": "Pollhagen"
+        },
+        {
+          "imageHash": "61e79cad",
+          "note": "Velen"
+        },
+        {
+          "imageHash": "6e65b12f",
+          "note": "Spexard"
+        },
+        {
+          "imageHash": "2eaf735",
+          "note": "Kreis Halle (Westfalen)"
         }
       ],
       "exclude": [
@@ -4946,6 +5203,22 @@
         {
           "imageHash": "7c7b22c3",
           "note": "Hakenberg (Lichtenau)"
+        },
+        {
+          "imageHash": "54a7be8b",
+          "note": "Frankfurt-Fechenheim"
+        },
+        {
+          "imageHash": "70763cee",
+          "note": "Gimte"
+        },
+        {
+          "imageHash": "26f8b2e2",
+          "note": "Hohnstorf (Elbe)"
+        },
+        {
+          "imageHash": "11779304",
+          "note": "Premnitz"
         }
       ],
       "exclude": []
@@ -5537,6 +5810,42 @@
         {
           "imageHash": "7a37518a",
           "note": "Usingen"
+        },
+        {
+          "imageHash": "41787485",
+          "note": "Richterich"
+        },
+        {
+          "imageHash": "767064bc",
+          "note": "Roschberg"
+        },
+        {
+          "imageHash": "cde7644",
+          "note": "Morlesau"
+        },
+        {
+          "imageHash": "73987be1",
+          "note": "Seesen"
+        },
+        {
+          "imageHash": "11886031",
+          "note": "Dörpe (Coppenbrügge)"
+        },
+        {
+          "imageHash": "37577cb5",
+          "note": "Boitze"
+        },
+        {
+          "imageHash": "314e0a4",
+          "note": "Hoppegarten"
+        },
+        {
+          "imageHash": "1712021a",
+          "note": "Ebbesloh"
+        },
+        {
+          "imageHash": "480638b6",
+          "note": "Diepenau"
         }
       ],
       "exclude": []
@@ -5571,6 +5880,14 @@
         {
           "imageHash": "3bff3485",
           "note": "Mühlried"
+        },
+        {
+          "imageHash": "2c5a177e",
+          "note": "Karlburg"
+        },
+        {
+          "imageHash": "20ff2c72",
+          "note": "Ronnenberg"
         }
       ],
       "exclude": []
@@ -5693,6 +6010,10 @@
         {
           "imageHash": "5c016433",
           "note": "Crimla"
+        },
+        {
+          "imageHash": "2b3bbe13",
+          "note": "Beuren (bei Nürtingen)"
         }
       ],
       "exclude": []
@@ -5807,6 +6128,14 @@
         {
           "imageHash": "21616e39",
           "note": "Hastenbeck"
+        },
+        {
+          "imageHash": "342d9487",
+          "note": "Bubach (St. Wendel)"
+        },
+        {
+          "imageHash": "6303f1ff",
+          "note": "Gommern"
         }
       ],
       "exclude": []
@@ -5930,6 +6259,18 @@
         {
           "imageHash": "4b4c0d74",
           "note": "Wölferlingen"
+        },
+        {
+          "imageHash": "461c84f",
+          "note": "Gladenbach"
+        },
+        {
+          "imageHash": "1716f887",
+          "note": "Vallstedt"
+        },
+        {
+          "imageHash": "5c08aca7",
+          "note": "Eilshausen"
         }
       ],
       "exclude": []
@@ -5949,6 +6290,10 @@
         {
           "imageHash": "7ce1adf3",
           "note": "Erle (Raesfeld)"
+        },
+        {
+          "imageHash": "1098ff27",
+          "note": "Gommern"
         }
       ],
       "exclude": []
@@ -6066,6 +6411,14 @@
         {
           "imageHash": "4ef83924",
           "note": "Eystrup"
+        },
+        {
+          "imageHash": "bca4e68",
+          "note": "Wittmund"
+        },
+        {
+          "imageHash": "59aae8a",
+          "note": "Bezirk Steglitz"
         }
       ],
       "exclude": []
@@ -6114,7 +6467,14 @@
     },
     {
       "name": "turtle",
-      "phrases": ["schildkröte"]
+      "phrases": ["schildkröte"],
+      "include": [
+        {
+          "imageHash": "e5c81f",
+          "note": "Hoppegarten"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "dinosaur",
@@ -6169,6 +6529,10 @@
         {
           "imageHash": "1c0e4635",
           "note": "Untermühlhausen"
+        },
+        {
+          "imageHash": "3a4ba301",
+          "note": "Samtgemeinde Nenndorf"
         }
       ],
       "exclude": []

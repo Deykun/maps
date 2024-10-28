@@ -35511,6 +35511,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "bird"
+   ],
    "items": [
     "bell"
    ]
@@ -35591,6 +35594,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "owl",
+    "bird"
+   ]
   }
  },
  {
@@ -50936,6 +50945,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "dolphin"
+   ],
    "items": [
     "walls",
     "anchor"

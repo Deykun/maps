@@ -1,5 +1,7 @@
 import clsx from 'clsx';
 
+import { formatLargeNumber } from '@/utils/math';
+
 import IconInputCheckEmpty from '@/components/Icons/IconInputCheckEmpty';
 import IconInputCheckFull from '@/components/Icons/IconInputCheckFull';
 import IconInputRadioEmpty from '@/components/Icons/IconInputRadioEmpty';
@@ -43,7 +45,7 @@ const FiltersPaneFilter = ({
       <span className={clsx('text-left overflow-hidden truncate', { 'text-white': isSelected })}>
         {label}
       </span>
-      {total > 0 && <small className="flex-shrink-0 opacity-50">{' '}({total})</small>}
+      {total > 0 && <small className="flex-shrink-0 opacity-50">{' '}({formatLargeNumber(total)})</small>}
       {children}
     </button>
   );

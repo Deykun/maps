@@ -4,17 +4,12 @@ import { queryClient } from '@/main';
 
 import {
   minLengthOfLongDescription,
-  toggleAsCustomFilterExclude,
-  toggleAsCustomFilterInclude,
   useFiltersDevelopmentStore,
-  getIsMatchingManualMarker,
 } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
 
 import { copyText } from '@/utils/text';
 
 import IconCopy from '@/components/Icons/IconCopy';
-import IconMarkerMinus from '@/components/Icons/IconMarkerMinus';
-import IconMarkerPlus from '@/components/Icons/IconMarkerPlus';
 import IconQuote from '@/components/Icons/IconQuote';
 
 import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
@@ -24,6 +19,7 @@ import ButtonText from '@/components/UI/ButtonText';
 import ButtonIcon from '@/components/UI/ButtonIcon';
 
 import UnitsPaneUnitMarkers from '@/topic/Heraldry/components/Panes/UnitsPane/UnitsPaneUnitMarkers';
+import UnitsPaneSelectCheckbox from '@/topic/Heraldry/components/Panes/UnitsPane/UnitsPaneSelectCheckbox';
 
 type Props = {
   className?: string,
@@ -42,8 +38,6 @@ const DevelopmentActions = ({
 }: Props) => {
   const [isMoreOpen, setIsMoreOpen] = useState(false);
   const isFiltersDevModeActive = useFiltersDevelopmentStore((state) => state.isModeActive);
-  const filterExclude = useFiltersDevelopmentStore((state) => state.filter.exclude);
-  const filterInclude = useFiltersDevelopmentStore((state) => state.filter.include);
 
   const description = useMemo(() => {
     if (!isFiltersDevModeActive || !shouldShowDescription) {
@@ -65,17 +59,16 @@ const DevelopmentActions = ({
 
   return (
     <div className={clsx(className, 'flex gap-2 pointer-events-none')}>
-      <Panel className="ui-panel--rounded-l ui-panel--rounded-r pointer-events-auto flex-row">
-        <ButtonIcon
-          size={buttonSize}
-          className="relative pointer-events-auto"
-          onClick={() => toggleAsCustomFilterExclude(unit)}
-          isActive={getIsMatchingManualMarker(filterExclude, unit)}
-          label="Exclude"
-          labelPosition={labelPositions}
-        >
-          <IconMarkerMinus />
-        </ButtonIcon>
+      <Panel className="ui-panel--rounded-l ui-panel--rounded-r pointer-events-auto flex-row items-center gap-3 py-1">
+        <UnitsPaneSelectCheckbox
+          unit={unit}
+        />
+        <UnitsPaneUnitMarkers
+          className="flex-nowrap"
+          unit={unit}
+          shouldShowContentAsTooltip
+          shouldShowTypes={false}
+        />
         {shouldShowDescription && (description?.length || 0) > 0 && 
           <span className="relative">
             <ButtonIcon
@@ -84,7 +77,7 @@ const DevelopmentActions = ({
               onClick={() => setIsMoreOpen(!isMoreOpen)}
               isActive={isMoreOpen}
               label="Description"
-              labelPosition={labelPositions ?? 'bottom'}
+              labelPosition={labelPositions ?? 'right'}
             >
               <IconQuote className={description.length < minLengthOfLongDescription ? 'scale-50' : ''} />
               {description.length > 0 && <span className="ui-button-icon-marker ui-button-icon-marker--small ui-button-icon-marker--on-soft !px-[4px] !text-[9px] !h-[16px]">
@@ -97,7 +90,6 @@ const DevelopmentActions = ({
               >
                 <p className="sans text-[10px] text-justify line-clamp-5">{description}</p>
                 <div className="flex justify-center gap-2">
-                  <UnitsPaneUnitMarkers unit={unit} shouldShowContentAsTooltip />
                   <ButtonText
                     size="small"
                     onClick={() => copyText(
@@ -114,16 +106,6 @@ const DevelopmentActions = ({
             }
           </span>
         }
-        <ButtonIcon
-          size={buttonSize}
-          className="relative pointer-events-auto"
-          onClick={() => toggleAsCustomFilterInclude(unit)}
-          isActive={getIsMatchingManualMarker(filterInclude, unit)}
-          label="Include"
-          labelPosition={labelPositions ?? 'right'}
-        >
-          <IconMarkerPlus />
-        </ButtonIcon>
       </Panel>
     </div>
   );
