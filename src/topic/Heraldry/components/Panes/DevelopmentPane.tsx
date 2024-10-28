@@ -67,7 +67,6 @@ const DevelopmentPane = ({
     include: filterInclude,
     exclude: filterExclude,
   });
-
   
   const [shouldShowOnlyValid, setShouldShowOnlyValid] = useState(false);
 
@@ -232,11 +231,11 @@ const DevelopmentPane = ({
               {shouldReverseCustomFilter && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft">!</span>}
             </ButtonIcon>
             <ButtonIcon
-                onClick={() => toggleCustomFilterVisiblity()}
-                wrapperClassName="ml-auto"
-                isActive={isCustomFilterActive}
-                isDisabled={!draftFilter}
-              >
+              onClick={() => toggleCustomFilterVisiblity()}
+              wrapperClassName="ml-auto"
+              isActive={isCustomFilterActive}
+              isDisabled={!draftFilter}
+            >
               {isCustomFilterActive ? <IconSelectionChecked /> : <IconSelectionUnchecked />}
             </ButtonIcon>
           </>}
@@ -258,6 +257,7 @@ const DevelopmentPane = ({
           <DevelopmentPaneSidebarListOfFilters
             country={country}
             setDraftFilter={setDraftFilter}
+            onUse={() => setActiveMenu('customFilter')}
           />
         }
         {activeMenu === 'customFilter' &&

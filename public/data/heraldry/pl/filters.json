@@ -85,34 +85,17 @@
     },
     {
       "name": "falcon",
-      "phrases": [
-        "sokoła",
-        "sokół"
-      ],
-      "exclude": [
-        "Herb Sokółki"
-      ]
+      "phrases": ["sokoła", "sokół"],
+      "exclude": ["Herb Sokółki"]
     },
     {
       "name": "heron",
-      "phrases": [
-        "czapla",
-        "czaple",
-        "czaplę",
-        "czapli"
-      ],
-      "exclude": [
-        "Herb Brzegu Dolnego",
-        "Herb Mikołowa"
-      ]
+      "phrases": ["czapla", "czaple", "czaplę", "czapli"],
+      "exclude": ["Herb Brzegu Dolnego", "Herb Mikołowa"]
     },
     {
       "name": "crane",
-      "phrases": [
-        "żuraw",
-        "żurawia",
-        "żurawie"
-      ],
+      "phrases": ["żuraw", "żurawia", "żurawie"],
       "exclude": [
         "Herb gminy Ostrówek (województwo lubelskie)",
         "Herb gminy Srokowo"
@@ -120,56 +103,30 @@
     },
     {
       "name": "raven",
-      "phrases": [
-        "kruk",
-        "kruka",
-        "kruki"
-      ],
-      "exclude": [
-        "Herb Ozorkowa",
-        "Herb Częstochowy"
-      ]
+      "phrases": ["kruk", "kruka", "kruki"],
+      "exclude": ["Herb Ozorkowa", "Herb Częstochowy"]
     },
     {
       "name": "hawk",
-      "phrases": [
-        "jastrząb",
-        "jastrzębia"
-      ],
-      "exclude": [
-        "Herb Jastrzębia"
-      ]
+      "phrases": ["jastrząb", "jastrzębia"],
+      "exclude": ["Herb Jastrzębia"]
     },
     {
       "name": "owl",
-      "phrases": [
-        "sowa",
-        "sowę"
-      ]
+      "phrases": ["sowa", "sowę"]
     },
     {
       "name": "vulture",
-      "phrases": [
-        "sępie"
-      ]
+      "phrases": ["sępie"]
     },
     {
       "name": "pelican",
-      "phrases": [
-        "pelikan"
-      ],
-      "exclude": [
-        "Herb gminy Radwanice",
-        "Herb Muszyny",
-        "Herb Kisielic"
-      ]
+      "phrases": ["pelikan"],
+      "exclude": ["Herb gminy Radwanice", "Herb Muszyny", "Herb Kisielic"]
     },
     {
       "name": "stork",
-      "phrases": [
-        "bocian",
-        "bociany"
-      ],
+      "phrases": ["bocian", "bociany"],
       "exclude": [
         "Herb gminy Drużbice",
         "Herb Makowa Mazowieckiego",
@@ -179,83 +136,38 @@
     },
     {
       "name": "goose",
-      "phrases": [
-        "gęsią",
-        "gęsie",
-        "gęś"
-      ],
-      "exclude": [
-        "Herb gminy Markowa"
-      ]
+      "phrases": ["gęsią", "gęsie", "gęś"],
+      "exclude": ["Herb gminy Markowa"]
     },
     {
       "name": "pigeon",
-      "phrases": [
-        "gołąb",
-        "gołębia",
-        "gołębie",
-        "gołębiem"
-      ]
+      "phrases": ["gołąb", "gołębia", "gołębie", "gołębiem"]
     },
     {
       "name": "swan",
-      "phrases": [
-        "łabędzia",
-        "łabędzie",
-        "łabędź"
-      ],
-      "exclude": [
-        "Herb Drawna"
-      ]
+      "phrases": ["łabędzia", "łabędzie", "łabędź"],
+      "exclude": ["Herb Drawna"]
     },
     {
       "name": "rooster",
-      "phrases": [
-        "kogut",
-        "kogutami",
-        "kogutem"
-      ],
-      "exclude": [
-        "Herb gminy Zatory",
-        "Herb Radoszyc"
-      ]
+      "phrases": ["kogut", "kogutami", "kogutem"],
+      "exclude": ["Herb gminy Zatory", "Herb Radoszyc"]
     },
     {
       "name": "snake",
-      "phrases": [
-        "wąż",
-        "weża",
-        "weże"
-      ],
-      "exclude": [
-        "Herb gminy Zbrosławice",
-        "Herb Ornety"
-      ],
-      "include": [
-        "Herb gminy Dubienka",
-        "Herb Otwocka"
-      ]
+      "phrases": ["wąż", "weża", "weże"],
+      "exclude": ["Herb gminy Zbrosławice", "Herb Ornety"],
+      "include": ["Herb gminy Dubienka", "Herb Otwocka"]
     },
     {
       "name": "rabbit",
-      "phrases": [
-        "królik",
-        "królika",
-        "króliki",
-        "zając",
-        "zająca"
-      ],
-      "exclude": [
-        "Herb Opatówka"
-      ]
+      "phrases": ["królik", "królika", "króliki", "zając", "zająca", "zającem"],
+      "exclude": ["Herb Opatówka"],
+      "include": []
     },
     {
       "name": "bat",
-      "phrases": [
-        "nietoperz",
-        "nietoperze",
-        "nietoperzem"
-      ]
+      "phrases": ["nietoperz", "nietoperze", "nietoperzem"]
     },
     {
       "name": "griffin",
@@ -269,9 +181,7 @@
         "rybogryf",
         "rybogryfa"
       ],
-      "include": [
-        "Herb powiatu polickiego"
-      ],
+      "include": ["Herb powiatu polickiego"],
       "exclude": [
         "Herb gminy Bielice",
         "Herb gminy Kołobrzeg",
@@ -288,11 +198,7 @@
     },
     {
       "name": "boar",
-      "phrases": [
-        "dzik",
-        "dzika",
-        "dziki"
-      ],
+      "phrases": ["dzik", "dzika", "dziki"],
       "exclude": [
         "Herb gminy Łopiennik Górny",
         "Herb gminy Wizna",
@@ -339,20 +245,12 @@
     },
     {
       "name": "moose",
-      "phrases": [
-        "łosia",
-        "łosiem",
-        "łoś"
-      ],
-      "exclude": [
-        "Herb Supraśla"
-      ]
+      "phrases": ["łosia", "łosiem", "łoś"],
+      "exclude": ["Herb Supraśla"]
     },
     {
       "name": "wildcat",
-      "phrases": [
-        "żbik"
-      ]
+      "phrases": ["żbik"]
     },
     {
       "name": "lion",
@@ -437,16 +335,8 @@
     },
     {
       "name": "dragon",
-      "phrases": [
-        "smok",
-        "smoka",
-        "smokiem"
-      ],
-      "exclude": [
-        "Herb Tucholi",
-        "Herb Gdyni",
-        "Herb Tczewa"
-      ]
+      "phrases": ["smok", "smoka", "smokiem"],
+      "exclude": ["Herb Tucholi", "Herb Gdyni", "Herb Tczewa"]
     },
     {
       "name": "fish",
@@ -486,37 +376,17 @@
     },
     {
       "name": "bee",
-      "phrases": [
-        "pszczoła",
-        "pszczołami",
-        "pszczołę",
-        "pszczoły",
-        "pszczół"
-      ],
-      "exclude": [
-        "Herb Zduńskiej Woli"
-      ]
+      "phrases": ["pszczoła", "pszczołami", "pszczołę", "pszczoły", "pszczół"],
+      "exclude": ["Herb Zduńskiej Woli"]
     },
     {
       "name": "mermaid",
-      "phrases": [
-        "syrena",
-        "syreną",
-        "syrenę"
-      ],
-      "exclude": [
-        "Herb Lubniewic"
-      ]
+      "phrases": ["syrena", "syreną", "syrenę"],
+      "exclude": ["Herb Lubniewic"]
     },
     {
       "name": "fox",
-      "phrases": [
-        "lis",
-        "lisy",
-        "lisa",
-        "lisami",
-        "lisem"
-      ],
+      "phrases": ["lis", "lisy", "lisa", "lisami", "lisem"],
       "exclude": [
         "Herb gminy Cieszków",
         "Herb gminy Kodeń",
@@ -534,22 +404,23 @@
     },
     {
       "name": "lizard",
-      "phrases": [
-        "jaszczurka",
-        "jaszuczurki"
-      ],
+      "phrases": ["jaszczurka", "jaszuczurki"],
+      "include": ["Herb gminy Lisewo", "Herb gminy Ryńsk"]
+    },
+    {
+      "name": "unusualHybrid",
+      "phrases": [],
       "include": [
-        "Herb gminy Lisewo",
-        "Herb gminy Ryńsk"
-      ]
+        {
+          "imageHash": "369db30a",
+          "note": "Herb Prochowic"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "dog",
-      "phrases": [
-        "pies",
-        "psa",
-        "psy"
-      ],
+      "phrases": ["pies", "psa", "psy"],
       "exclude": [
         "Herb gminy Sułoszowa",
         "Herb gminy Kulesze Kościelne",
@@ -560,14 +431,8 @@
     },
     {
       "name": "crayfish",
-      "phrases": [
-        "rak",
-        "raka",
-        "rakiem"
-      ],
-      "exclude": [
-        "Herb Rakoniewic"
-      ]
+      "phrases": ["rak", "raka", "rakiem"],
+      "exclude": ["Herb Rakoniewic"]
     },
     {
       "name": "horse",
@@ -581,22 +446,12 @@
         "rumaku",
         "starykoń"
       ],
-      "include": [
-        "Herb gminy Gołuchów"
-      ]
+      "include": ["Herb gminy Gołuchów"]
     },
     {
       "name": "unicorn",
-      "phrases": [
-        "jednorożca",
-        "jednorożcami",
-        "jednorożcem",
-        "jednorożec"
-      ],
-      "include": [
-        "Herb gminy Wądroże Wielkie",
-        "Herb gminy Lubsza"
-      ]
+      "phrases": ["jednorożca", "jednorożcami", "jednorożcem", "jednorożec"],
+      "include": ["Herb gminy Wądroże Wielkie", "Herb gminy Lubsza"]
     },
     {
       "name": "goat",
@@ -614,48 +469,42 @@
         "koźłów",
         "kózm kozie"
       ],
-      "exclude": [
-        "Herb gminy Abramów"
-      ]
+      "exclude": ["Herb gminy Abramów"]
     },
     {
       "name": "bird",
       "phrases": [
-       "cietrzewia",
-       "czajkę",
-       "czyżyka",
-       "kaczory",
-       "kormorana",
-       "kraskę",
-       "krogulcem",
-       "mewę",
-       "pióro",
-       "ptak",
-       "ptakiem",
-       "puszczyk",
-       "szpak",
-       "ślepowron",
-       "wrony"
+        "cietrzewia",
+        "czajkę",
+        "czyżyka",
+        "kaczory",
+        "kormorana",
+        "kraskę",
+        "krogulcem",
+        "mewę",
+        "pióro",
+        "ptak",
+        "ptakiem",
+        "puszczyk",
+        "szpak",
+        "ślepowron",
+        "wrony"
       ],
       "exclude": [
-       "Herb gminy Rutki",
-       "Herb Ozorkowa",
-       "Herb Mieszkowic",
-       "Herb Tczewa"
+        "Herb gminy Rutki",
+        "Herb Ozorkowa",
+        "Herb Mieszkowic",
+        "Herb Tczewa"
       ]
     },
     {
       "name": "ram",
-      "phrases": [
-       "baran",
-       "baranek",
-       "owca"
-      ],
+      "phrases": ["baran", "baranek", "owca"],
       "exclude": [
-       "Herb Korsz",
-       "Herb gminy Tuczępy",
-       "Herb Piekar Śląskich",
-       "Herb województwa łódzkiego"
+        "Herb Korsz",
+        "Herb gminy Tuczępy",
+        "Herb Piekar Śląskich",
+        "Herb województwa łódzkiego"
       ]
     },
     {
@@ -678,38 +527,23 @@
     },
     {
       "name": "squirrel",
-      "phrases": [
-        "wiewiórka",
-        "wiewiórkę"
-      ]
+      "phrases": ["wiewiórka", "wiewiórkę"]
     },
     {
       "name": "insect",
-      "phrases": [
-        "konik polny"
-      ]
+      "phrases": ["konik polny"]
     },
     {
       "name": "amphisbaena",
-      "phrases": [
-        "amfisbaena",
-        "amfisbaenę"
-      ]
+      "phrases": ["amfisbaena", "amfisbaenę"]
     },
     {
       "name": "donkey",
-      "phrases": [
-        "osioł",
-        "osła",
-        "oślej"
-      ]
+      "phrases": ["osioł", "osła", "oślej"]
     },
     {
       "name": "centaur",
-      "phrases": [
-        "centaur",
-        "centaura"
-      ]
+      "phrases": ["centaur", "centaura"]
     },
     {
       "name": "bear",
@@ -719,9 +553,7 @@
         "niedźwiedziu",
         "niedźwiedź"
       ],
-      "include": [
-        "Herb gminy Siedlce"
-      ],
+      "include": ["Herb gminy Siedlce"],
       "exclude": [
         "Herb Sobótki",
         "Herb Janowa Lubelskiego",
@@ -731,45 +563,20 @@
     },
     {
       "name": "beaver",
-      "phrases": [
-        "bobra",
-        "bobrem",
-        "bobry",
-        "bóbr"
-      ],
-      "exclude": [
-        "Herb gminy Łomża"
-      ]
+      "phrases": ["bobra", "bobrem", "bobry", "bóbr"],
+      "exclude": ["Herb gminy Łomża"]
     }
   ],
   "items": [
     {
       "name": "horseshoe",
-      "phrases": [
-        "podkowa",
-        "podkową",
-        "podkowę",
-        "podkowie",
-        "półpodkową"
-      ],
-      "exclude": [
-        "Herb Izbicy",
-        "Herb Bobowej"
-      ],
-      "include": [
-        "Herb gminy Gościeradów",
-        "Herb powiatu brzezińskiego"
-      ]
+      "phrases": ["podkowa", "podkową", "podkowę", "podkowie", "półpodkową"],
+      "exclude": ["Herb Izbicy", "Herb Bobowej"],
+      "include": ["Herb gminy Gościeradów", "Herb powiatu brzezińskiego"]
     },
     {
       "name": "key",
-      "phrases": [
-        "klucz",
-        "kluczami",
-        "klucze",
-        "kluczem",
-        "kluczy"
-      ],
+      "phrases": ["klucz", "kluczami", "klucze", "kluczem", "kluczy"],
       "exclude": [
         "Herb gminy Koszęcin",
         "Herb Mogilna",
@@ -820,10 +627,7 @@
         "Herb Pszczyny",
         "Herb Sandomierza"
       ],
-      "include": [
-        "Herb Krasnobrodu",
-        "Herb powiatu opoczyńskiego"
-      ]
+      "include": ["Herb Krasnobrodu", "Herb powiatu opoczyńskiego"]
     },
     {
       "name": "arrow",
@@ -852,10 +656,7 @@
     },
     {
       "name": "heart",
-      "phrases": [
-        "serce",
-        "sercem"
-      ]
+      "phrases": ["serce", "sercem"]
     },
     {
       "name": "hand",
@@ -972,11 +773,7 @@
         "jabłoń",
         "jabuszkiem"
       ],
-      "exclude": [
-        "Herb gminy Wąsewo",
-        "Herb gminy Zbrosławice",
-        "Herb Kowar"
-      ]
+      "exclude": ["Herb gminy Wąsewo", "Herb gminy Zbrosławice", "Herb Kowar"]
     },
     {
       "name": "hammer",
@@ -1000,9 +797,7 @@
         "Herb Ustronia",
         "Herb Skarżyska-Kamiennej"
       ],
-      "include": [
-        "Herb powiatu złotoryjskiego"
-      ]
+      "include": ["Herb powiatu złotoryjskiego"]
     },
     {
       "name": "pickaxe",
@@ -1016,11 +811,7 @@
         "oskardem",
         "oskardy"
       ],
-      "exclude": [
-        "Herb Krzeszowic",
-        "Herb Piekar Śląskich",
-        "Herb Zabrza"
-      ]
+      "exclude": ["Herb Krzeszowic", "Herb Piekar Śląskich", "Herb Zabrza"]
     },
     {
       "name": "tree",
@@ -1111,14 +902,7 @@
     },
     {
       "name": "lily",
-      "phrases": [
-        "lilia",
-        "liliami",
-        "lilie",
-        "lilię",
-        "lilii",
-        "lilijkę"
-      ],
+      "phrases": ["lilia", "liliami", "lilie", "lilię", "lilii", "lilijkę"],
       "exclude": [
         "Herb gminy Świdwin",
         "Herb Goleniowa",
@@ -1138,14 +922,7 @@
     },
     {
       "name": "rose",
-      "phrases": [
-        "róż",
-        "róża",
-        "różami",
-        "różą",
-        "róże",
-        "różę"
-      ],
+      "phrases": ["róż", "róża", "różami", "różą", "róże", "różę"],
       "exclude": [
         "Herb gminy Młynarze",
         "Herb gminy Murów",
@@ -1233,9 +1010,7 @@
         "Herb Sandomierza",
         "Herb Witkowa"
       ],
-      "include": [
-        "Herb powiatu żyrardowskiego"
-      ]
+      "include": ["Herb powiatu żyrardowskiego"]
     },
     {
       "name": "boat",
@@ -1430,13 +1205,7 @@
     },
     {
       "name": "shell",
-      "phrases": [
-        "muszelka",
-        "muszelki",
-        "muszla",
-        "muszle",
-        "muszlę"
-      ]
+      "phrases": ["muszelka", "muszelki", "muszla", "muszle", "muszlę"]
     },
     {
       "name": "angel",
@@ -1448,9 +1217,7 @@
         "anioły",
         "archanioła"
       ],
-      "include": [
-        "Herb Białej Podlaskiej"
-      ],
+      "include": ["Herb Białej Podlaskiej"],
       "exclude": [
         "Herb Murowanej Gośliny",
         "Herb gminy Kamieniec",
@@ -1479,17 +1246,11 @@
         "Herb Nysy",
         "Herb Koszalina"
       ],
-      "include": [
-        "Herb gminy Jerzmanowice-Przeginia"
-      ]
+      "include": ["Herb gminy Jerzmanowice-Przeginia"]
     },
     {
       "name": "wheel",
-      "phrases": [
-        "koła",
-        "kołem",
-        "koło"
-      ],
+      "phrases": ["koła", "kołem", "koło"],
       "exclude": [
         "Herb gminy Miłkowice",
         "Herb Siechnic",

@@ -57,10 +57,15 @@ export const getFilteredUnits = ({
     filterResponse.matches = false;
     filterResponse.notMatches = true;
   }
+  
+  const isCustomFilterActive = customFilter && customFilter.isActive && Array.isArray(customFilter.result);
+  const isTypeFilterActive = typeFilters.length > 0;
+  const isColorFilterActive = colorFilters.length > 0;
+  const isAnimalFilterActive = animalFilters.length > 0;
+  const isItemFilterActive = itemFilters.length > 0;
 
   const filteredUnits = unitsForMapAll.filter(
     (unit) => {
-      const isCustomFilterActive = customFilter && customFilter.isActive && Array.isArray(customFilter.result);
       if (isCustomFilterActive) {
         /*
           The custom filter doesn't use filterResponse.notMatches because customFilter.result has it built in, allowing the user to reverse the custom filter separately.
@@ -94,7 +99,6 @@ export const getFilteredUnits = ({
         return filterResponse.notMatches;
       }
 
-      const isTypeFilterActive = typeFilters.length > 0;
       if (isTypeFilterActive) {
         if ((unit?.type?.length || 0) === 0) {
           return filterResponse.notMatches;
@@ -113,7 +117,6 @@ export const getFilteredUnits = ({
         }
       }
 
-      const isColorFilterActive = colorFilters.length > 0;
       if (isColorFilterActive) {
         const unitColors = detailsForUnitsById?.[unit.id]?.colors;
 
@@ -130,7 +133,6 @@ export const getFilteredUnits = ({
         }
       }
 
-      const isAnimalFilterActive = animalFilters.length > 0;
       if (isAnimalFilterActive) {
         const animals = mergeMarkersForUnit(unit, detailsForUnitsById, 'animals');
         const hasAnimals = animals.length > 0;
@@ -158,7 +160,6 @@ export const getFilteredUnits = ({
         }
       }
 
-      const isItemFilterActive = itemFilters.length > 0;
       if (isItemFilterActive) {
         const items = mergeMarkersForUnit(unit, detailsForUnitsById, 'items');
         const hasItems = items.length > 0;

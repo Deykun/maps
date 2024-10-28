@@ -6,6 +6,7 @@ import IconCat from './IconCat';
 // import IconDragon from './IconDragon';
 import IconFish from './IconFish';
 import IconHorse from './IconHorse';
+import IconLobster from './IconLobster';
 // import IconOtter from './IconOtter';
 import IconPig from './IconPig';
 import IconRabbit from './IconRabbit';
@@ -64,8 +65,12 @@ const Icon = ({ className, animals = [] }: Props) => {
     return <IconBison className={className} />;
   }
 
-  if (['insect', 'bee', 'ant', 'dragonfly', 'crayfish', 'butterfly'].some((category) => animals.includes(category))) {
+  if (['insect', 'bee', 'ant', 'dragonfly', 'butterfly'].some((category) => animals.includes(category))) {
     return <IconAnt className={className} />;
+  }
+
+  if (['crayfish'].some((category) => animals.includes(category))) {
+    return <IconLobster className={className} />;
   }
 
   if (['snake', 'dragon'].some((category) => animals.includes(category))) {

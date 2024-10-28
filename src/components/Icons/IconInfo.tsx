@@ -3,7 +3,7 @@ type Props = {
 };
 
 const Icon = ({ className }: Props) => (
-  <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
     <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0-2C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm1 18h-2v-8h2v8zM12 5.75c.69 0 1.25.56 1.25 1.25S12.69 8.25 12 8.25 10.75 7.69 10.75 7s.56-1.25 1.25-1.25z"/>
   </svg>
 );
