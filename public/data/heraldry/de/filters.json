@@ -4304,6 +4304,15 @@
       "phrases": ["auerhahn"]
     },
     {
+      "name": "snail",
+      "phrases": [
+          "schnecke",
+          "schnecken"
+      ],
+      "exclude": [],
+      "include": []
+    },
+    {
       "name": "duck",
       "phrases": [
         "ente",
