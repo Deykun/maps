@@ -2,10 +2,7 @@
   "animals": [
     {
       "name": "gull",
-      "phrases": [
-       "möwe",
-       "möwen"
-      ]
+      "phrases": ["möwe", "möwen"]
     },
     {
       "name": "eagle",
@@ -183,304 +180,680 @@
         {
           "imageHash": "5c0545af",
           "note": "Föritz"
+        },
+        {
+          "imageHash": "ce4e640",
+          "note": "Rommerskirchen"
+        },
+        {
+          "imageHash": "17e9f305",
+          "note": "Broichweiden"
+        },
+        {
+          "imageHash": "3ed541d6",
+          "note": "Würselen"
+        },
+        {
+          "imageHash": "3f20cc45",
+          "note": "Detzem"
+        },
+        {
+          "imageHash": "62354131",
+          "note": "Zehdenick"
+        },
+        {
+          "imageHash": "75ff91d1",
+          "note": "Lindow (Mark)"
+        },
+        {
+          "imageHash": "44d6154",
+          "note": "Neuruppin"
+        },
+        {
+          "imageHash": "31ab313",
+          "note": "Schnackenburg"
+        },
+        {
+          "imageHash": "6dafe829",
+          "note": "Linden (Hessen)"
+        },
+        {
+          "imageHash": "24b0b2b0",
+          "note": "Gemünden (Westerwald)"
+        },
+        {
+          "imageHash": "300077d0",
+          "note": "Weilmünster"
+        },
+        {
+          "imageHash": "1ca66b40",
+          "note": "Lehmen"
+        },
+        {
+          "imageHash": "fdc6034",
+          "note": "Rech"
+        },
+        {
+          "imageHash": "769d33e8",
+          "note": "Altenahr"
+        },
+        {
+          "imageHash": "7a7cfa0b",
+          "note": "Wassenach"
+        },
+        {
+          "imageHash": "2d628915",
+          "note": "Ahrweiler"
+        },
+        {
+          "imageHash": "192f18c7",
+          "note": "Erden (Mosel)"
+        },
+        {
+          "imageHash": "2e07ee7a",
+          "note": "Verbandsgemeinde Kröv-Bausendorf"
+        },
+        {
+          "imageHash": "4cd9122",
+          "note": "Bad Bertrich"
+        },
+        {
+          "imageHash": "3568003a",
+          "note": "Dohr"
+        },
+        {
+          "imageHash": "6f701c15",
+          "note": "Auersmacher"
+        },
+        {
+          "imageHash": "543ad6d8",
+          "note": "Kleinblittersdorf"
+        },
+        {
+          "imageHash": "6875a82",
+          "note": "Obermaßfeld-Grimmenthal"
+        },
+        {
+          "imageHash": "28c230ac",
+          "note": "Meiningen"
+        },
+        {
+          "imageHash": "67a64bc9",
+          "note": "Herresbach"
+        },
+        {
+          "imageHash": "12e981f0",
+          "note": "Westhofen (Schwerte)"
+        },
+        {
+          "imageHash": "7e5b415",
+          "note": "Wiesemscheid"
+        },
+        {
+          "imageHash": "69005911",
+          "note": "Nohn"
+        },
+        {
+          "imageHash": "6ac6c01d",
+          "note": "Niedersohren"
+        },
+        {
+          "imageHash": "15600bfd",
+          "note": "Verbandsgemeinde Eich"
+        },
+        {
+          "imageHash": "c628161",
+          "note": "Udenheim"
         }
       ],
       "exclude": []
     },
     {
       "name": "falcon",
-      "phrases": [
-       "falke",
-       "falken",
-       "falkenkopf"
-      ]
+      "phrases": ["falke", "falken", "falkenkopf"]
     },
     {
       "name": "heron",
       "phrases": [
-       "reiher",
-       "reiherfederbusch",
-       "reiherfedern",
-       "reiherhälse",
-       "reiherkopf",
-       "reihers",
-       "reihren",
-       "fischreiher",
-       "fischreihers",
-       "fischreiherfuß"
-      ]
+        "reiher",
+        "reiherfederbusch",
+        "reiherfedern",
+        "reiherhälse",
+        "reiherkopf",
+        "reihers",
+        "reihren",
+        "fischreiher",
+        "fischreihers",
+        "fischreiherfuß"
+      ],
+      "include": [
+        {
+          "imageHash": "5107e2e",
+          "note": "Obernholz"
+        },
+        {
+          "imageHash": "330b59dc",
+          "note": "Parsau"
+        },
+        {
+          "imageHash": "7560830e",
+          "note": "Plötzkau"
+        },
+        {
+          "imageHash": "4f9c52d5",
+          "note": "Schkopau"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "crane",
       "phrases": [
-       "kranich",
-       "kraniche",
-       "kranichen",
-       "kranichflügel",
-       "kranichs"
+        "kranich",
+        "kraniche",
+        "kranichen",
+        "kranichflügel",
+        "kranichs"
       ]
     },
     {
       "name": "hawk",
       "phrases": [
-       "habicht",
-       "habichte",
-       "habichten",
-       "habichts",
-       "habichtswald"
-      ]
-    },
-    {
-      "name": "raven",
-      "phrases": [
-       "rabe",
-       "raben",
-       "rabenau"
-      ]
-    },
-    {
-      "name": "owl",
-      "phrases": [
-       "eule",
-       "eulen",
-       "eulenbis",
-       "eulenloch",
-       "waldkauz"
-      ]
-    },
-    {
-      "name": "vulture",
-      "phrases": [
-       "geier",
-       "geiern",
-       "geiers",
-       "geiersthal",
-       "geierkopf"
-      ]
-    },
-    {
-      "name": "pelican",
-      "phrases": [
-       "pelikan",
-       "pelikane",
-       "pelikanen",
-       "pelikans"
-      ]
-    },
-    {
-      "name": "stork",
-      "phrases": [
-       "storch",
-       "störche",
-       "störchen",
-       "storches",
-       "storchenrumpf",
-       "storchennest",
-       "weißstorch"
-      ]
-    },
-    {
-      "name": "goose",
-      "phrases": [
-       "gans",
-       "gänse",
-       "gänsen",
-       "gänserumpf",
-       "gänsekielen",
-       "gänsefuß",
-       "gänserumpf"
-      ]
-    },
-    {
-      "name": "pigeon",
-      "phrases": [
-       "taube",
-       "tauben",
-       "taubenturm"
-      ]
-    },
-    {
-      "name": "swan",
-      "phrases": [
-       "schwan",
-       "schwäne",
-       "schwänen",
-       "schwanenfittich",
-       "schwanenhälse",
-       "schwanenrumpf",
-       "schwanenrumpfes",
-       "schwanes",
-       "schwanewede",
-       "schwann",
-       "schwanenhals",
-       "schwanebeck"
-      ]
-    },
-    {
-      "name": "phoenix",
-      "phrases": [
-       "phönix"
-      ]
-    },
-    {
-      "name": "hawk",
-      "phrases": [
-       "sperber"
+        "habicht",
+        "habichte",
+        "habichten",
+        "habichts",
+        "habichtswald",
+        "sperber"
       ]
     },
     {
       "name": "rooster",
       "phrases": [
-       "hahn",
-       "hähne",
-       "hahnenfedern",
-       "wetterhahn",
-       "hahnenkopf",
-       "hahns",
-       "hänen",
-       "henne",
-       "hahnes",
-       "hühnerfuß"
-      ]
+        "hahn",
+        "hähne",
+        "hahnenfedern",
+        "wetterhahn",
+        "hahnenkopf",
+        "hahns",
+        "hänen",
+        "henne",
+        "hahnes",
+        "hühnerfuß"
+      ],
+      "include": [
+        {
+          "imageHash": "359c537f",
+          "note": "Ingelbach"
+        },
+        {
+          "imageHash": "10e395cd",
+          "note": "Oberweid"
+        },
+        {
+          "imageHash": "6875a82",
+          "note": "Obermaßfeld-Grimmenthal"
+        },
+        {
+          "imageHash": "14acdb1b",
+          "note": "Meiningen"
+        },
+        {
+          "imageHash": "31152f67",
+          "note": "Meiningen"
+        },
+        {
+          "imageHash": "2284b864",
+          "note": "Rohr (Thüringen)"
+        },
+        {
+          "imageHash": "6062ae42",
+          "note": "Kühndorf"
+        },
+        {
+          "imageHash": "93436a0",
+          "note": "Schwarza (Thüringer Wald)"
+        },
+        {
+          "imageHash": "12547ddc",
+          "note": "Dietzhausen"
+        },
+        {
+          "imageHash": "617febc4",
+          "note": "Dautphetal"
+        },
+        {
+          "imageHash": "75242600",
+          "note": "Ramelsloh"
+        },
+        {
+          "imageHash": "73e9af95",
+          "note": "Haan"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "raven",
+      "phrases": ["rabe", "raben", "rabenau"]
+    },
+    {
+      "name": "owl",
+      "phrases": ["eule", "eulen", "eulenbis", "eulenloch", "waldkauz"],
+      "include": [
+        {
+          "imageHash": "1caec8de",
+          "note": "Oberfischbach (Wackersberg)"
+        },
+        {
+          "imageHash": "57b9e79f",
+          "note": "Ohlenhard"
+        },
+        {
+          "imageHash": "11462d54",
+          "note": "Oberdigisheim"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "vulture",
+      "phrases": ["geier", "geiern", "geiers", "geiersthal", "geierkopf"]
+    },
+    {
+      "name": "pelican",
+      "phrases": ["pelikan", "pelikane", "pelikanen", "pelikans"]
+    },
+    {
+      "name": "stork",
+      "phrases": [
+        "storch",
+        "störche",
+        "störchen",
+        "storches",
+        "storchenrumpf",
+        "storchennest",
+        "weißstorch"
+      ],
+      "include": [
+        {
+          "imageHash": "58d626af",
+          "note": "Alt Isenhagen"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "goose",
+      "phrases": [
+        "gans",
+        "gänse",
+        "gänsen",
+        "gänserumpf",
+        "gänsekielen",
+        "gänsefuß",
+        "gänserumpf"
+      ],
+      "include": [
+        {
+          "imageHash": "33431acc",
+          "note": "Vahlde"
+        },
+        {
+          "imageHash": "3e5a804",
+          "note": "Dreisen"
+        },
+        {
+          "imageHash": "5a53e45",
+          "note": "Gundihausen"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "pigeon",
+      "phrases": ["taube", "tauben", "taubenturm"],
+      "include": [
+        {
+          "imageHash": "1f64fe2e",
+          "note": "Dautphetal"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "swan",
+      "phrases": [
+        "schwan",
+        "schwäne",
+        "schwänen",
+        "schwanenfittich",
+        "schwanenhälse",
+        "schwanenrumpf",
+        "schwanenrumpfes",
+        "schwanes",
+        "schwanewede",
+        "schwann",
+        "schwanenhals",
+        "schwanebeck"
+      ],
+      "include": [
+        {
+          "imageHash": "2cb1c742",
+          "note": "Selters (Taunus)"
+        },
+        {
+          "imageHash": "71edc71a",
+          "note": "Selters (Taunus)"
+        },
+        {
+          "imageHash": "6a891300",
+          "note": "Bensheim"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "phoenix",
+      "phrases": ["phönix"]
     },
     {
       "name": "griffin",
       "phrases": [
-       "greif",
-       "greife",
-       "greifen",
-       "greifenkopf",
-       "greifenköpfe",
-       "greifenlöwe",
-       "greifenrumpf",
-       "greifenstein",
-       "greifs",
-       "greifswald",
-       "greifenfang"
-      ]
+        "greif",
+        "greife",
+        "greifen",
+        "greifenkopf",
+        "greifenköpfe",
+        "greifenlöwe",
+        "greifenrumpf",
+        "greifenstein",
+        "greifs",
+        "greifswald",
+        "greifenfang"
+      ],
+      "include": [
+        {
+          "imageHash": "7268c8e3",
+          "note": "Heuchling (Lauf an der Pegnitz)"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "rabbit",
       "phrases": [
-       "hase",
-       "hasen",
-       "hasenkopf",
-       "hasenköpfen",
-       "kaninchen",
-       "kaninchens"
-      ]
+        "hase",
+        "hasen",
+        "hasenkopf",
+        "hasenköpfen",
+        "kaninchen",
+        "kaninchens"
+      ],
+      "include": [
+        {
+          "imageHash": "767ee817",
+          "note": "Steinhöfel"
+        },
+        {
+          "imageHash": "649d1863",
+          "note": "Stahe"
+        },
+        {
+          "imageHash": "1a13b09d",
+          "note": "Hasenmoor"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "bat",
-      "phrases": [
-       "fledermaus",
-       "fledermäuse",
-       "fledermäusen"
-      ]
+      "phrases": ["fledermaus", "fledermäuse", "fledermäusen"],
+      "include": [
+        {
+          "imageHash": "5598d461",
+          "note": "Fiefbergen"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "boar",
       "phrases": [
-       "eber",
-       "eberkopf",
-       "eberrumpf",
-       "ebers",
-       "wildschwein",
-       "wildschweine",
-       "wildschweinen",
-       "wildschweins",
-       "keilerkopf",
-       "keilerhaupt",
-       "schwein"
-      ]
+        "eber",
+        "eberkopf",
+        "eberrumpf",
+        "ebers",
+        "wildschwein",
+        "wildschweine",
+        "wildschweinen",
+        "wildschweins",
+        "keilerkopf",
+        "keilerhaupt",
+        "schwein"
+      ],
+      "include": [
+        {
+          "imageHash": "e13986b",
+          "note": "Steinhöfel"
+        },
+        {
+          "imageHash": "4d152eea",
+          "note": "Suhlendorf"
+        },
+        {
+          "imageHash": "5f4ab101",
+          "note": "Schnega"
+        },
+        {
+          "imageHash": "46715eb9",
+          "note": "Deutsch Evern"
+        },
+        {
+          "imageHash": "72b2c139",
+          "note": "Dietzhölztal"
+        },
+        {
+          "imageHash": "6becffa4",
+          "note": "Schretstaken"
+        },
+        {
+          "imageHash": "3051ba74",
+          "note": "Großenrode"
+        },
+        {
+          "imageHash": "55278e65",
+          "note": "Eberhausen"
+        },
+        {
+          "imageHash": "45420399",
+          "note": "Dörrmoschel"
+        },
+        {
+          "imageHash": "3eb572ac",
+          "note": "Nettelkofen"
+        },
+        {
+          "imageHash": "580977b5",
+          "note": "Geringswalde"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "ant",
-      "phrases": [
-        "ameise",
-        "ameisen"
-      ]
+      "phrases": ["ameise", "ameisen"]
     },
     {
       "name": "whale",
-      "phrases": [
-        "wale",
-        "wales"
-      ]
+      "phrases": ["wale", "wales"]
     },
     {
       "name": "panther",
-      "phrases": [
-       "panther",
-       "panter",
-       "panthern",
-       "panthers"
-      ]
+      "phrases": ["panther", "panter", "panthern", "panthers"]
     },
     {
       "name": "deer",
       "phrases": [
-       "hindin",
-       "hirsch",
-       "hirsche",
-       "hirschen",
-       "hirsches",
-       "hirschbock",
-       "hirschgeweih",
-       "hirschhorn",
-       "hirschkopf",
-       "hirschkuh",
-       "hirschrumpf",
-       "hirschstange",
-       "hirschstangen",
-       "hubertushirsch",
-       "rehbock",
-       "rehbockkopf",
-       "rehbocks",
-       "zwölfender-kronenhirsches",
-       "zwölfender-hirschstangen",
-       "zwölfender-hirschgeweih",
-       "kitz",
-       "damhirschschaufel",
-       "damhirsch-Schaufel",
-       "geweih",
-       "geweihs",
-       "geweihstange",
-       "geweihstangen",
-       "reh",
-       "rehkitz"
-      ]
+        "hindin",
+        "hirsch",
+        "hirsche",
+        "hirschen",
+        "hirsches",
+        "hirschbock",
+        "hirschgeweih",
+        "hirschhorn",
+        "hirschkopf",
+        "hirschkuh",
+        "hirschrumpf",
+        "hirschstange",
+        "hirschstangen",
+        "hubertushirsch",
+        "rehbock",
+        "rehbockkopf",
+        "rehbocks",
+        "zwölfender-kronenhirsches",
+        "zwölfender-hirschstangen",
+        "zwölfender-hirschgeweih",
+        "kitz",
+        "damhirschschaufel",
+        "damhirsch-Schaufel",
+        "geweih",
+        "geweihs",
+        "geweihstange",
+        "geweihstangen",
+        "reh",
+        "rehkitz"
+      ],
+      "include": [
+        {
+          "imageHash": "7971f5d2",
+          "note": "Samtgemeinde Aue"
+        },
+        {
+          "imageHash": "c8225a0",
+          "note": "Haßmoor"
+        },
+        {
+          "imageHash": "3737afd9",
+          "note": "Havelberg"
+        },
+        {
+          "imageHash": "43bf358a",
+          "note": "Samtgemeinde Bodenteich"
+        },
+        {
+          "imageHash": "5ce5c26c",
+          "note": "Bad Bodenteich"
+        },
+        {
+          "imageHash": "29c2ed37",
+          "note": "Himbergen"
+        },
+        {
+          "imageHash": "3cd5bf60",
+          "note": "Sprakensehl"
+        },
+        {
+          "imageHash": "b569616",
+          "note": "Hirschberg (Rhein-Lahn-Kreis)"
+        },
+        {
+          "imageHash": "194241fe",
+          "note": "Köfering (Kümmersbruck)"
+        },
+        {
+          "imageHash": "93436a0",
+          "note": "Schwarza (Thüringer Wald)"
+        },
+        {
+          "imageHash": "5f16e2eb",
+          "note": "Oberhof"
+        },
+        {
+          "imageHash": "39059963",
+          "note": "Dautphetal"
+        },
+        {
+          "imageHash": "220cd02e",
+          "note": "Wetter (Hessen)"
+        },
+        {
+          "imageHash": "488da97b",
+          "note": "Bockenbach (Kreuztal)"
+        },
+        {
+          "imageHash": "341568f3",
+          "note": "Eichen (Kreuztal)"
+        },
+        {
+          "imageHash": "b8b28cf",
+          "note": "Astfeld"
+        },
+        {
+          "imageHash": "262619b0",
+          "note": "Lissendorf"
+        },
+        {
+          "imageHash": "4c3f08ca",
+          "note": "Feusdorf"
+        },
+        {
+          "imageHash": "1afca6fa",
+          "note": "Birgel"
+        },
+        {
+          "imageHash": "2b126142",
+          "note": "Wiesbaum"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "lynx",
-      "phrases": [
-       "luchs"
-      ]
+      "phrases": ["luchs"]
     },
     {
       "name": "frog",
-      "phrases": [
-       "frosch"
-      ]
+      "phrases": ["frosch"],
+      "include": [
+        {
+          "imageHash": "207a6448",
+          "note": "Gerbach"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "moose",
       "phrases": [
-       "elch",
-       "elche",
-       "elchen",
-       "elches",
-       "elchkopf",
-       "elchgeweih",
-       "elchgeweihs"
-      ]
+        "elch",
+        "elche",
+        "elchen",
+        "elches",
+        "elchkopf",
+        "elchgeweih",
+        "elchgeweihs"
+      ],
+      "include": [
+        {
+          "imageHash": "538df32a",
+          "note": "Groß Brunsrode"
+        },
+        {
+          "imageHash": "694962d5",
+          "note": "Amt Kisdorf"
+        },
+        {
+          "imageHash": "2b890a99",
+          "note": "Wieda"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "wildcat",
-      "phrases": [
-       "wildkatze",
-       "wildkatzen"
-      ]
+      "phrases": ["wildkatze", "wildkatzen"]
     },
     {
       "name": "lion",
@@ -2621,6 +2994,342 @@
         {
           "imageHash": "4d11e7f8",
           "note": "Gusterath"
+        },
+        {
+          "imageHash": "31a60c6",
+          "note": "Dremmen"
+        },
+        {
+          "imageHash": "48fea635",
+          "note": "Burtscheid"
+        },
+        {
+          "imageHash": "7f5815c2",
+          "note": "Wiltingen"
+        },
+        {
+          "imageHash": "7c241c1",
+          "note": "Klarenthal (Saarbrücken)"
+        },
+        {
+          "imageHash": "5a0d328",
+          "note": "Burgen (bei Bernkastel-Kues)"
+        },
+        {
+          "imageHash": "52f58ed6",
+          "note": "Brauneberg"
+        },
+        {
+          "imageHash": "430c0623",
+          "note": "Schwarzen"
+        },
+        {
+          "imageHash": "5ce51f15",
+          "note": "Ehlenz"
+        },
+        {
+          "imageHash": "46ade5bb",
+          "note": "Bad Schwalbach"
+        },
+        {
+          "imageHash": "508b8f4",
+          "note": "Masserberg"
+        },
+        {
+          "imageHash": "19eb84aa",
+          "note": "Bergen an der Dumme"
+        },
+        {
+          "imageHash": "33436f7",
+          "note": "Samtgemeinde Ilmenau"
+        },
+        {
+          "imageHash": "1052b228",
+          "note": "Hörsten (Seevetal)"
+        },
+        {
+          "imageHash": "6cca1605",
+          "note": "Bullenhausen"
+        },
+        {
+          "imageHash": "28a2355d",
+          "note": "Hamburg-Wilhelmsburg"
+        },
+        {
+          "imageHash": "fe7db58",
+          "note": "Lautert"
+        },
+        {
+          "imageHash": "2b0ee71a",
+          "note": "Verbandsgemeinde Nastätten"
+        },
+        {
+          "imageHash": "31930286",
+          "note": "Sippersfeld"
+        },
+        {
+          "imageHash": "74fa2aba",
+          "note": "Offenheim"
+        },
+        {
+          "imageHash": "73752f9a",
+          "note": "Mölsheim"
+        },
+        {
+          "imageHash": "3d7555c",
+          "note": "Verbandsgemeinde Nierstein-Oppenheim"
+        },
+        {
+          "imageHash": "43e6a5de",
+          "note": "Verbandsgemeinde Rhein-Selz"
+        },
+        {
+          "imageHash": "5bbaf53c",
+          "note": "Mörlenbach"
+        },
+        {
+          "imageHash": "14ff2f56",
+          "note": "Grasellenbach"
+        },
+        {
+          "imageHash": "2fca2520",
+          "note": "Callbach"
+        },
+        {
+          "imageHash": "146a1345",
+          "note": "Breitenheim"
+        },
+        {
+          "imageHash": "29189e06",
+          "note": "Groß-Umstadt"
+        },
+        {
+          "imageHash": "6b0c7fe0",
+          "note": "Sandhofen"
+        },
+        {
+          "imageHash": "585db512",
+          "note": "Bensheim"
+        },
+        {
+          "imageHash": "1d15ff85",
+          "note": "Bensheim"
+        },
+        {
+          "imageHash": "25385270",
+          "note": "Freiberg"
+        },
+        {
+          "imageHash": "3bad7c55",
+          "note": "Dahlum"
+        },
+        {
+          "imageHash": "285c0071",
+          "note": "Samtgemeinde Velpke"
+        },
+        {
+          "imageHash": "5351a528",
+          "note": "Müden (Aller)"
+        },
+        {
+          "imageHash": "151021ed",
+          "note": "Hemmendorf (Salzhemmendorf)"
+        },
+        {
+          "imageHash": "2c873beb",
+          "note": "Stadtoldendorf"
+        },
+        {
+          "imageHash": "2a9b92e2",
+          "note": "Westerhof"
+        },
+        {
+          "imageHash": "6a3b8d7c",
+          "note": "Monheim am Rhein"
+        },
+        {
+          "imageHash": "e13986b",
+          "note": "Steinhöfel"
+        },
+        {
+          "imageHash": "7b78fd7a",
+          "note": "Harber (Hohenhameln)"
+        },
+        {
+          "imageHash": "1a2553eb",
+          "note": "Ohof"
+        },
+        {
+          "imageHash": "6adb039b",
+          "note": "Plockhorst"
+        },
+        {
+          "imageHash": "687126b8",
+          "note": "Alvesse (Edemissen)"
+        },
+        {
+          "imageHash": "11ff3030",
+          "note": "Rietze"
+        },
+        {
+          "imageHash": "44d5958c",
+          "note": "Voigtholz-Ahlemissen"
+        },
+        {
+          "imageHash": "2054f73c",
+          "note": "Oedesse"
+        },
+        {
+          "imageHash": "1960d2ee",
+          "note": "Edemissen"
+        },
+        {
+          "imageHash": "6c348fe0",
+          "note": "Abbensen (Edemissen)"
+        },
+        {
+          "imageHash": "20a95cf5",
+          "note": "Oelerse"
+        },
+        {
+          "imageHash": "76b16856",
+          "note": "Soltau"
+        },
+        {
+          "imageHash": "cff06da",
+          "note": "Kreis Borken"
+        },
+        {
+          "imageHash": "464e5328",
+          "note": "Verbandsgemeinde Neumagen-Dhron"
+        },
+        {
+          "imageHash": "35b52a56",
+          "note": "Vierhöfen"
+        },
+        {
+          "imageHash": "559cf57e",
+          "note": "Weilburg"
+        },
+        {
+          "imageHash": "125676fe",
+          "note": "Oberlahnkreis"
+        },
+        {
+          "imageHash": "1dd8ea61",
+          "note": "Bischoffen"
+        },
+        {
+          "imageHash": "65f04efe",
+          "note": "Weilrod"
+        },
+        {
+          "imageHash": "7cb0da04",
+          "note": "Weilrod"
+        },
+        {
+          "imageHash": "9635bc7",
+          "note": "Weilrod"
+        },
+        {
+          "imageHash": "6ca0dee1",
+          "note": "Hirz-Maulsbach"
+        },
+        {
+          "imageHash": "51917019",
+          "note": "Leimbach (bei Adenau)"
+        },
+        {
+          "imageHash": "333d2df6",
+          "note": "Densborn"
+        },
+        {
+          "imageHash": "19c373e8",
+          "note": "Verbandsgemeinde Traben-Trarbach (1968–2014)"
+        },
+        {
+          "imageHash": "5de10008",
+          "note": "Verbandsgemeinde Zell (Mosel)"
+        },
+        {
+          "imageHash": "32352a9e",
+          "note": "Dillkreis"
+        },
+        {
+          "imageHash": "54b3afa8",
+          "note": "Samtgemeinde Bevensen-Ebstorf"
+        },
+        {
+          "imageHash": "2e04a7ab",
+          "note": "Samtgemeinde Bevensen"
+        },
+        {
+          "imageHash": "6c366da8",
+          "note": "Adendorf"
+        },
+        {
+          "imageHash": "16e8056b",
+          "note": "Bahlburg (Winsen)"
+        },
+        {
+          "imageHash": "6d58ebe6",
+          "note": "Müden (Örtze)"
+        },
+        {
+          "imageHash": "79a18fbf",
+          "note": "Amelinghausen"
+        },
+        {
+          "imageHash": "17ee7afa",
+          "note": "Soderstorf"
+        },
+        {
+          "imageHash": "127cc8b2",
+          "note": "Gamsen (Gifhorn)"
+        },
+        {
+          "imageHash": "ac21ec5",
+          "note": "Emmenhausen (Bovenden)"
+        },
+        {
+          "imageHash": "30e0c176",
+          "note": "Speck / Wehl / Helpenstein"
+        },
+        {
+          "imageHash": "3537649f",
+          "note": "Froitzheim"
+        },
+        {
+          "imageHash": "85fec29",
+          "note": "Verbandsgemeinde Pellenz"
+        },
+        {
+          "imageHash": "2bcc315a",
+          "note": "Jünkerath"
+        },
+        {
+          "imageHash": "64459091",
+          "note": "Verbandsgemeinde Wolfstein"
+        },
+        {
+          "imageHash": "4f4a8a43",
+          "note": "Verbandsgemeinde Rheinauen"
+        },
+        {
+          "imageHash": "5c352e39",
+          "note": "Neufra"
+        },
+        {
+          "imageHash": "243f2503",
+          "note": "Oberwaldbach"
+        },
+        {
+          "imageHash": "260432dc",
+          "note": "Colditz"
+        },
+        {
+          "imageHash": "2c69bdb9",
+          "note": "Siebenlehn"
         }
       ],
       "exclude": [
@@ -2641,328 +3350,841 @@
     {
       "name": "bullBison",
       "phrases": [
-       "auerochse",
-       "auerochsen",
-       "auerochsengehörn",
-       "auerochsenkopf",
-       "büffel",
-       "büffelgehörn",
-       "büffelhörner",
-       "büffelhörnern",
-       "büffeln",
-       "büffelohren",
-       "büffels",
-       "bulle",
-       "bullen",
-       "kuh",
-       "kühe",
-       "kühen",
-       "kuhkopf",
-       "kuhs",
-       "ochse",
-       "ochsen",
-       "ochsenhörnern",
-       "ochsenkopf",
-       "ochsenrumpf",
-       "stier",
-       "stiere",
-       "stieren",
-       "stierhaupt",
-       "stierkopf",
-       "stiers",
-       "wisent",
-       "wisente",
-       "wisenten",
-       "wisentgehörne",
-       "wisentkopf",
-       "wisents",
-       "rinderkopf",
-       "rind",
-       "rinderhörner",
-       "kalb",
-       "kalbe",
-       "kalbskopf",
-       "stierrumpf"
-      ]
+        "auerochse",
+        "auerochsen",
+        "auerochsengehörn",
+        "auerochsenkopf",
+        "büffel",
+        "büffelgehörn",
+        "büffelhörner",
+        "büffelhörnern",
+        "büffeln",
+        "büffelohren",
+        "büffels",
+        "bulle",
+        "bullen",
+        "kuh",
+        "kühe",
+        "kühen",
+        "kuhkopf",
+        "kuhs",
+        "ochse",
+        "ochsen",
+        "ochsenhörnern",
+        "ochsenkopf",
+        "ochsenrumpf",
+        "stier",
+        "stiere",
+        "stieren",
+        "stierhaupt",
+        "stierkopf",
+        "stiers",
+        "wisent",
+        "wisente",
+        "wisenten",
+        "wisentgehörne",
+        "wisentkopf",
+        "wisents",
+        "rinderkopf",
+        "rind",
+        "rinderhörner",
+        "kalb",
+        "kalbe",
+        "kalbskopf",
+        "stierrumpf"
+      ],
+      "include": [
+        {
+          "imageHash": "5b403ef7",
+          "note": "Lohbarbek"
+        },
+        {
+          "imageHash": "6062ae42",
+          "note": "Kühndorf"
+        },
+        {
+          "imageHash": "16c1835f",
+          "note": "Wiesenthal (Thüringen)"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "otter",
-      "phrases": [
-       "fischotter",
-       "fischottern",
-       "fischotters"
-      ]
+      "phrases": ["fischotter", "fischottern", "fischotters"],
+      "include": [
+        {
+          "imageHash": "78454d94",
+          "note": "Ellierode (Hardegsen)"
+        },
+        {
+          "imageHash": "15283033",
+          "note": "Otterwisch"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "peacock",
       "phrases": [
-       "pfau",
-       "pfauenaugen",
-       "pfauenfederbusch",
-       "pfauenfedern",
-       "pfauenfederrosetten",
-       "pfauenspiegeln",
-       "pfauenstoß",
-       "pfauenwedel"
+        "pfau",
+        "pfauenaugen",
+        "pfauenfederbusch",
+        "pfauenfedern",
+        "pfauenfederrosetten",
+        "pfauenspiegeln",
+        "pfauenstoß",
+        "pfauenwedel"
       ]
     },
     {
       "name": "grouse",
-      "phrases": [
-       "auerhahn"
-      ]
+      "phrases": ["auerhahn"]
     },
     {
       "name": "duck",
       "phrases": [
-       "ente",
-       "entenkopf",
-       "entenköpfen",
-       "entenfuß",
-       "entenfußes",
-       "wildente"
+        "ente",
+        "entenkopf",
+        "entenköpfen",
+        "entenfuß",
+        "entenfußes",
+        "wildente"
       ]
     },
     {
       "name": "bird",
       "phrases": [
-       "dompfaff",
-       "schwalbe",
-       "schwalben",
-       "schwalbes",
-       "birkhahn",
-       "kiebitz",
-       "milan",
-       "gabelweihe",
-       "flug",
-       "flügel",
-       "flügeln",
-       "vögel",
-       "vogel",
-       "vögeln",
-       "vogelkopf",
-       "beizvögel",
-       "fink",
-       "finken",
-       "meise",
-       "auerhahn",
-       "kuckuck",
-       "bussard",
-       "bussardkopf",
-       "buntspecht",
-       "trappe",
-       "turmfalke",
-       "merletten",
-       "sittich",
-       "star",
-       "elster",
-       "bachstelze",
-       "lerche",
-       "rabenkrähe",
-       "wachteln"
+        "dompfaff",
+        "schwalbe",
+        "schwalben",
+        "schwalbes",
+        "birkhahn",
+        "kiebitz",
+        "milan",
+        "gabelweihe",
+        "flug",
+        "flügel",
+        "flügeln",
+        "vögel",
+        "vogel",
+        "vögeln",
+        "vogelkopf",
+        "beizvögel",
+        "fink",
+        "finken",
+        "meise",
+        "auerhahn",
+        "kuckuck",
+        "bussard",
+        "bussardkopf",
+        "buntspecht",
+        "trappe",
+        "turmfalke",
+        "merletten",
+        "sittich",
+        "star",
+        "elster",
+        "bachstelze",
+        "lerche",
+        "rabenkrähe",
+        "wachteln"
+      ],
+      "include": [
+        {
+          "imageHash": "6bf2915b",
+          "note": "Ahle (Bünde)"
+        },
+        {
+          "imageHash": "286a289e",
+          "note": "Raesfeld"
+        },
+        {
+          "imageHash": "5dab6ea0",
+          "note": "Seeon-Seebruck"
+        },
+        {
+          "imageHash": "2f6234a",
+          "note": "Niederwerrn"
+        },
+        {
+          "imageHash": "557ad11e",
+          "note": "Wrixum"
+        },
+        {
+          "imageHash": "4e000ddb",
+          "note": "Passade"
+        },
+        {
+          "imageHash": "6e485760",
+          "note": "Fahren (Kreis Plön)"
+        },
+        {
+          "imageHash": "58b11c7b",
+          "note": "Havelberg"
+        },
+        {
+          "imageHash": "4358cf57",
+          "note": "Ostereistedt"
+        },
+        {
+          "imageHash": "7a9967a5",
+          "note": "Armstedt"
+        },
+        {
+          "imageHash": "6963b87b",
+          "note": "Buchholz (Westerwald)"
+        },
+        {
+          "imageHash": "4fdfe018",
+          "note": "Gladbach (Vettweiß)"
+        },
+        {
+          "imageHash": "44668a5b",
+          "note": "Illerich"
+        },
+        {
+          "imageHash": "9488a9a",
+          "note": "Mendhausen"
+        },
+        {
+          "imageHash": "6dafe829",
+          "note": "Linden (Hessen)"
+        },
+        {
+          "imageHash": "2670bc98",
+          "note": "Dautphetal"
+        },
+        {
+          "imageHash": "9df239f",
+          "note": "Göttin (Lauenburg)"
+        },
+        {
+          "imageHash": "59b0dea8",
+          "note": "Gudow"
+        },
+        {
+          "imageHash": "21468f80",
+          "note": "Billingshausen (Bovenden)"
+        },
+        {
+          "imageHash": "6fb50f87",
+          "note": "Rödern (Hunsrück)"
+        },
+        {
+          "imageHash": "272872a3",
+          "note": "Wachenheim (Pfrimm)"
+        },
+        {
+          "imageHash": "562f83c0",
+          "note": "Jedesheim"
+        },
+        {
+          "imageHash": "57980b04",
+          "note": "Martinszell im Allgäu"
+        },
+        {
+          "imageHash": "317150f0",
+          "note": "Pöring (Zorneding)"
+        },
+        {
+          "imageHash": "70f0b14b",
+          "note": "Sparneck"
+        }
+      ],
+      "exclude": [
+        {
+          "imageHash": "3471efad",
+          "note": "Meine"
+        }
       ]
     },
     {
       "name": "dragon",
       "phrases": [
-       "drache",
-       "drachen",
-       "drachenähnlichem",
-       "drachenflügel",
-       "drachenkopf",
-       "drachenrumpf",
-       "drachenrümpfen",
-       "drachens",
-       "drachentöter",
-       "lindwurm",
-       "lindwurms",
-       "lindwürmer",
-       "basilisk"
-      ]
+        "drache",
+        "drachen",
+        "drachenähnlichem",
+        "drachenflügel",
+        "drachenkopf",
+        "drachenrumpf",
+        "drachenrümpfen",
+        "drachens",
+        "drachentöter",
+        "lindwurm",
+        "lindwurms",
+        "lindwürmer",
+        "basilisk"
+      ],
+      "include": [
+        {
+          "imageHash": "1b4f5f71",
+          "note": "Dungelbeck"
+        },
+        {
+          "imageHash": "2792586a",
+          "note": "Munster"
+        },
+        {
+          "imageHash": "f8c6bd2",
+          "note": "Kelz"
+        },
+        {
+          "imageHash": "2e23124a",
+          "note": "Roetgen"
+        },
+        {
+          "imageHash": "6bf1bee4",
+          "note": "Gyhum"
+        },
+        {
+          "imageHash": "501f2975",
+          "note": "Brechen (Hessen)"
+        },
+        {
+          "imageHash": "35dca0ec",
+          "note": "Brechen (Hessen)"
+        },
+        {
+          "imageHash": "3bb67556",
+          "note": "Sankt Johann (bei Mayen)"
+        },
+        {
+          "imageHash": "10585e76",
+          "note": "Urmitz"
+        },
+        {
+          "imageHash": "4a147483",
+          "note": "Greimerath (Eifel)"
+        },
+        {
+          "imageHash": "5bdc9910",
+          "note": "Ormont"
+        },
+        {
+          "imageHash": "2ae002d9",
+          "note": "Bauler (Landkreis Ahrweiler)"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "salmon",
-      "phrases": [
-        "salme"
-      ]
+      "phrases": ["salme"]
     },
     {
       "name": "fish",
       "phrases": [
-       "brassen",
-       "brassens",
-       "fisch",
-       "fische",
-       "fischen",
-       "fisches",
-       "hecht",
-       "hechte",
-       "hechten",
-       "hering",
-       "heringe",
-       "heringen",
-       "herings",
-       "karpfen",
-       "karpfens",
-       "lachs",
-       "lachse",
-       "lachsen",
-       "lachses",
-       "maräne",
-       "maränen",
-       "wels",
-       "welse",
-       "welsen",
-       "welses",
-       "zander",
-       "zandern",
-       "zanders",
-       "sprotten",
-       "forelle",
-       "forellen",
-       "barsche"
+        "brassen",
+        "brassens",
+        "fisch",
+        "fische",
+        "fischen",
+        "fisches",
+        "hecht",
+        "hechte",
+        "hechten",
+        "hering",
+        "heringe",
+        "heringen",
+        "herings",
+        "karpfen",
+        "karpfens",
+        "lachs",
+        "lachse",
+        "lachsen",
+        "lachses",
+        "maräne",
+        "maränen",
+        "wels",
+        "welse",
+        "welsen",
+        "welses",
+        "zander",
+        "zandern",
+        "zanders",
+        "sprotten",
+        "forelle",
+        "forellen",
+        "barsche"
       ],
       "include": [
-       "Uhyst (Spree)",
-       "Schlaubetal",
-       "Bezirk Köpenick",
-       "Berlin-Schmöckwitz"
-      ]
+        "Uhyst (Spree)",
+        "Schlaubetal",
+        "Bezirk Köpenick",
+        "Berlin-Schmöckwitz",
+        {
+          "imageHash": "2e086ccf",
+          "note": "Barsbek"
+        },
+        {
+          "imageHash": "326aad24",
+          "note": "Beckedorf (Seevetal)"
+        },
+        {
+          "imageHash": "69f98a41",
+          "note": "Weilrod"
+        },
+        {
+          "imageHash": "e2a2c12",
+          "note": "Weilrod"
+        },
+        {
+          "imageHash": "7a52eba0",
+          "note": "Salm (Eifel)"
+        },
+        {
+          "imageHash": "1caec8de",
+          "note": "Oberfischbach (Wackersberg)"
+        },
+        {
+          "imageHash": "4e20f1cd",
+          "note": "Dermbach"
+        },
+        {
+          "imageHash": "2d82434e",
+          "note": "Over (Seevetal)"
+        },
+        {
+          "imageHash": "69a43b51",
+          "note": "Laßrönne"
+        },
+        {
+          "imageHash": "3ebeddc1",
+          "note": "Bienenbüttel"
+        },
+        {
+          "imageHash": "15a73cbd",
+          "note": "Denkershausen"
+        },
+        {
+          "imageHash": "4d41c49f",
+          "note": "Eich (Rheinhessen)"
+        },
+        {
+          "imageHash": "2d94a672",
+          "note": "Hamm am Rhein"
+        },
+        {
+          "imageHash": "15600bfd",
+          "note": "Verbandsgemeinde Eich"
+        },
+        {
+          "imageHash": "63525b1a",
+          "note": "Zschadraß"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "weasel",
-      "phrases": [
-        "marder",
-        "wiesel",
-        "wieseln"
-      ]
+      "phrases": ["marder", "wiesel", "wieseln"]
     },
     {
       "name": "seahorse",
-      "phrases": [
-       "seepferdchen",
-       "seepferdchens"
-      ]
+      "phrases": ["seepferdchen", "seepferdchens"]
     },
     {
       "name": "bee",
-      "phrases": [
-       "biene",
-       "bienen"
-      ]
+      "phrases": ["biene", "bienen"],
+      "include": [
+        {
+          "imageHash": "71d23352",
+          "note": "Lengenbostel"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "mermaid",
       "phrases": [
-       "seewiefken",
-       "sirene",
-       "sirenen",
-       "nixe",
-       "wassernixe",
-       "wassermann"
-      ]
+        "seewiefken",
+        "sirene",
+        "sirenen",
+        "nixe",
+        "wassernixe",
+        "wassermann"
+      ],
+      "include": [
+        {
+          "imageHash": "52fb5eae",
+          "note": "Westerdeichstrich"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "fox",
-      "phrases": [
-       "fuchs",
-       "füchse",
-       "füchsen",
-       "fuchses",
-       "fuchskopf"
-      ]
+      "phrases": ["fuchs", "füchse", "füchsen", "fuchses", "fuchskopf"],
+      "include": [
+        {
+          "imageHash": "11c03858",
+          "note": "Biebertal"
+        },
+        {
+          "imageHash": "21c3d9f0",
+          "note": "Lohra"
+        },
+        {
+          "imageHash": "26534c2a",
+          "note": "Dautphetal"
+        },
+        {
+          "imageHash": "1bebea84",
+          "note": "Winkel (Gifhorn)"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "lizard",
-      "phrases": [
-       "eidechse",
-       "eidechsen"
-      ]
+      "phrases": ["eidechse", "eidechsen"]
     },
     {
       "name": "badger",
-      "phrases": [
-        "dachs"
-      ]
+      "phrases": ["dachs"]
     },
     {
       "name": "dog",
       "phrases": [
-       "hund",
-       "hunde",
-       "hunden",
-       "hundes",
-       "windhund",
-       "rüde",
-       "rüden",
-       "rüdenrumpf",
-       "rüdenköpfe",
-       "rüdenkopf",
-       "bracke",
-       "bracken",
-       "brackenkopf",
-       "brackenrumpf"
-      ]
+        "hund",
+        "hunde",
+        "hunden",
+        "hundes",
+        "windhund",
+        "rüde",
+        "rüden",
+        "rüdenrumpf",
+        "rüdenköpfe",
+        "rüdenkopf",
+        "bracke",
+        "bracken",
+        "brackenkopf",
+        "brackenrumpf"
+      ],
+      "include": [
+        {
+          "imageHash": "72afb58a",
+          "note": "Hontheim"
+        },
+        {
+          "imageHash": "397defa",
+          "note": "Bad Berneck im Fichtelgebirge"
+        },
+        {
+          "imageHash": "44c12597",
+          "note": "Beierstedt"
+        },
+        {
+          "imageHash": "15ee791d",
+          "note": "Wülfrath"
+        },
+        {
+          "imageHash": "3c6b04a5",
+          "note": "Brochenzell"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "crayfish",
-      "phrases": [
-       "krebs",
-       "krebse",
-       "krebses"
-      ]
+      "phrases": ["krebs", "krebse", "krebses"],
+      "include": [
+        {
+          "imageHash": "22ca17b1",
+          "note": "Hohenfelde (Kreis Plön)"
+        },
+        {
+          "imageHash": "2b57eddf",
+          "note": "Verbandsgemeinde Bernkastel-Kues"
+        },
+        {
+          "imageHash": "7ce17413",
+          "note": "Bernkastel-Kues"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "elephant",
-      "phrases": [
-       "elefant",
-       "elefantenkopf"
-      ]
+      "phrases": ["elefant", "elefantenkopf"]
     },
     {
       "name": "horse",
       "phrases": [
-       "pferd",
-       "pferde",
-       "pferdekopf",
-       "pferdeköpfe",
-       "pferdeköpfen",
-       "pferdekopfform",
-       "pferden",
-       "pferderumpf",
-       "pferdes",
-       "ross",
-       "rosse",
-       "roß",
-       "rosskamm",
-       "rosskopf",
-       "rösser",
-       "schachrössel",
-       "fohlen",
-       "stute",
-       "füllen",
-       "schimmel",
-       "hengste",
-       "hengst",
-       "maulesel"
-      ]
+        "pferd",
+        "pferde",
+        "pferdekopf",
+        "pferdeköpfe",
+        "pferdeköpfen",
+        "pferdekopfform",
+        "pferden",
+        "pferderumpf",
+        "pferdes",
+        "ross",
+        "rosse",
+        "roß",
+        "rosskamm",
+        "rosskopf",
+        "rösser",
+        "schachrössel",
+        "fohlen",
+        "stute",
+        "füllen",
+        "schimmel",
+        "hengste",
+        "hengst",
+        "maulesel"
+      ],
+      "include": [
+        {
+          "imageHash": "2872e64a",
+          "note": "Baden (Achim)"
+        },
+        {
+          "imageHash": "7f0d52dd",
+          "note": "Breitscheid (Ratingen)"
+        },
+        {
+          "imageHash": "2ed8770",
+          "note": "Laffeld"
+        },
+        {
+          "imageHash": "76b10916",
+          "note": "Wedtlenstedt"
+        },
+        {
+          "imageHash": "657fcf17",
+          "note": "Barnstedt (Dörverden)"
+        },
+        {
+          "imageHash": "6e2d4225",
+          "note": "Havelberg"
+        },
+        {
+          "imageHash": "430d00a5",
+          "note": "Göhrde"
+        },
+        {
+          "imageHash": "20abc409",
+          "note": "Oetzen"
+        },
+        {
+          "imageHash": "1836abb6",
+          "note": "Amt Neuhaus"
+        },
+        {
+          "imageHash": "7e9f59f4",
+          "note": "Rosengarten (Landkreis Harburg)"
+        },
+        {
+          "imageHash": "631539d6",
+          "note": "Düdenbüttel"
+        },
+        {
+          "imageHash": "57347f9",
+          "note": "Weilrod"
+        },
+        {
+          "imageHash": "10585e76",
+          "note": "Urmitz"
+        },
+        {
+          "imageHash": "6640d54b",
+          "note": "Traben-Trarbach"
+        },
+        {
+          "imageHash": "41d730c4",
+          "note": "Türkismühle"
+        },
+        {
+          "imageHash": "14d42eee",
+          "note": "Garmisch-Partenkirchen"
+        },
+        {
+          "imageHash": "660e9f77",
+          "note": "Stein an der Traun"
+        },
+        {
+          "imageHash": "ec418a2",
+          "note": "Kemnath am Buchberg"
+        },
+        {
+          "imageHash": "4f406027",
+          "note": "Roßdorf (Thüringen)"
+        },
+        {
+          "imageHash": "5cc9884a",
+          "note": "Empfertshausen"
+        },
+        {
+          "imageHash": "5380fc9a",
+          "note": "Berne"
+        },
+        {
+          "imageHash": "48a064e4",
+          "note": "Daverden"
+        },
+        {
+          "imageHash": "66c9a216",
+          "note": "Hasbergen (Delmenhorst)"
+        },
+        {
+          "imageHash": "6976cf48",
+          "note": "Lemwerder"
+        },
+        {
+          "imageHash": "7200f843",
+          "note": "Sottrum"
+        },
+        {
+          "imageHash": "561e4880",
+          "note": "Stedebergen"
+        },
+        {
+          "imageHash": "25d1f768",
+          "note": "Wahnebergen"
+        },
+        {
+          "imageHash": "3eac26a1",
+          "note": "Bad Fallingbostel"
+        },
+        {
+          "imageHash": "76c63106",
+          "note": "Dibbersen (Buchholz)"
+        },
+        {
+          "imageHash": "56ceed22",
+          "note": "Ohlendorf (Seevetal)"
+        },
+        {
+          "imageHash": "e2d04c6",
+          "note": "Ehestorf (Rosengarten)"
+        },
+        {
+          "imageHash": "2caaf9d2",
+          "note": "Samtgemeinde Harsefeld"
+        },
+        {
+          "imageHash": "199491c3",
+          "note": "Hepstedt"
+        },
+        {
+          "imageHash": "5e429a6",
+          "note": "Neubokel"
+        },
+        {
+          "imageHash": "6da8be31",
+          "note": "Adenstedt (Ilsede)"
+        },
+        {
+          "imageHash": "1ab9f118",
+          "note": "Wolfenbüttel"
+        },
+        {
+          "imageHash": "67e40ea5",
+          "note": "Zorge (Walkenried)"
+        },
+        {
+          "imageHash": "3ea59d89",
+          "note": "Edemissen (Einbeck)"
+        },
+        {
+          "imageHash": "5cb016ff",
+          "note": "Behrensen"
+        },
+        {
+          "imageHash": "473e6c4b",
+          "note": "Verlar"
+        },
+        {
+          "imageHash": "bf6ef0",
+          "note": "Bösperde"
+        },
+        {
+          "imageHash": "2d124297",
+          "note": "Amt Hubbelrath"
+        },
+        {
+          "imageHash": "4ad8210c",
+          "note": "Norheim"
+        },
+        {
+          "imageHash": "16f24b70",
+          "note": "Rüdesheim (Nahe)"
+        },
+        {
+          "imageHash": "131ad7a5",
+          "note": "Mannweiler-Cölln"
+        },
+        {
+          "imageHash": "419eb75",
+          "note": "Katzenbach (Donnersbergkreis)"
+        },
+        {
+          "imageHash": "24b51a5e",
+          "note": "Reichsthal"
+        },
+        {
+          "imageHash": "7216f43b",
+          "note": "Bensheim"
+        },
+        {
+          "imageHash": "ba8a418",
+          "note": "Altmittweida"
+        },
+        {
+          "imageHash": "100ecafe",
+          "note": "Seelitz"
+        },
+        {
+          "imageHash": "63525b1a",
+          "note": "Zschadraß"
+        },
+        {
+          "imageHash": "3a7a57e8",
+          "note": "Roßwein"
+        },
+        {
+          "imageHash": "1e1a4b51",
+          "note": "Rossau (Sachsen)"
+        },
+        {
+          "imageHash": "71cbedf8",
+          "note": "Groitzsch"
+        },
+        {
+          "imageHash": "7e433083",
+          "note": "Nebra (Unstrut)"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "unicorn",
       "phrases": [
-       "einhorn",
-       "einhörner",
-       "einhörnern",
-       "einhornkopf",
-       "einhornrumpf",
-       "einhorns"
-      ]
+        "einhorn",
+        "einhörner",
+        "einhörnern",
+        "einhornkopf",
+        "einhornrumpf",
+        "einhorns"
+      ],
+      "include": [
+        {
+          "imageHash": "187adce5",
+          "note": "Christes"
+        },
+        {
+          "imageHash": "6a9650cc",
+          "note": "Schondorf am Ammersee"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "tiger",
-      "phrases": [
-       "tiger"
-      ]
+      "phrases": ["tiger"]
     },
     {
       "name": "goat",
@@ -2989,120 +4211,344 @@
         "gemsenkopf",
         "gämse",
         "geiß"
-      ]
+      ],
+      "include": [
+        {
+          "imageHash": "76f30fd7",
+          "note": "Klein Gleidingen"
+        },
+        {
+          "imageHash": "6140d6c",
+          "note": "Alterkülz"
+        },
+        {
+          "imageHash": "7f2adb3e",
+          "note": "Ockfen"
+        },
+        {
+          "imageHash": "6c0603c3",
+          "note": "Bockstadt"
+        },
+        {
+          "imageHash": "51e10e67",
+          "note": "Teufelsmoor (Ort)"
+        },
+        {
+          "imageHash": "178fcbe9",
+          "note": "Buntenbock"
+        },
+        {
+          "imageHash": "4e70b5d7",
+          "note": "Langelsheim"
+        },
+        {
+          "imageHash": "652c1896",
+          "note": "Lagershausen"
+        },
+        {
+          "imageHash": "4312a6c3",
+          "note": "Stein-Bockenheim"
+        },
+        {
+          "imageHash": "9d41bee",
+          "note": "Aach im Allgäu"
+        },
+        {
+          "imageHash": "35e98325",
+          "note": "Otterfing"
+        },
+        {
+          "imageHash": "4d545e54",
+          "note": "Poxau"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "ram",
       "phrases": [
-       "heidschnucke",
-       "heidschnuckenkopf",
-       "lamm",
-       "schaf",
-       "schafe",
-       "schafen",
-       "schafes",
-       "schafsrumpf",
-       "widder",
-       "widderhorn",
-       "widderhörner",
-       "widderkopf",
-       "widderköpfen",
-       "widderrumpf",
-       "widders",
-       "osterlamm",
-       "salvatorlamm",
-       "gotteslamm"
-      ]
+        "heidschnucke",
+        "heidschnuckenkopf",
+        "lamm",
+        "schaf",
+        "schafe",
+        "schafen",
+        "schafes",
+        "schafsrumpf",
+        "widder",
+        "widderhorn",
+        "widderhörner",
+        "widderkopf",
+        "widderköpfen",
+        "widderrumpf",
+        "widders",
+        "osterlamm",
+        "salvatorlamm",
+        "gotteslamm"
+      ],
+      "include": [
+        {
+          "imageHash": "3181e219",
+          "note": "Lebus"
+        },
+        {
+          "imageHash": "31935369",
+          "note": "Rötzum"
+        },
+        {
+          "imageHash": "46d3936f",
+          "note": "Eimke"
+        },
+        {
+          "imageHash": "75d43e86",
+          "note": "Samtgemeinde Suderburg"
+        },
+        {
+          "imageHash": "5f1f78de",
+          "note": "Lierschied"
+        },
+        {
+          "imageHash": "26f75353",
+          "note": "Garlstorf"
+        },
+        {
+          "imageHash": "1187db18",
+          "note": "Horst (Seevetal)"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "wolf",
       "phrases": [
-       "wolf",
-       "wölfe",
-       "wölfen",
-       "wolfskopf",
-       "wolfsrumpf",
-       "wolves",
-       "wolfskop"
-      ]
+        "wolf",
+        "wölfe",
+        "wölfen",
+        "wolfskopf",
+        "wolfsrumpf",
+        "wolves",
+        "wolfskop"
+      ],
+      "include": [
+        {
+          "imageHash": "3181e219",
+          "note": "Lebus"
+        },
+        {
+          "imageHash": "f2d78fe",
+          "note": "Klein Ilsede"
+        },
+        {
+          "imageHash": "14246154",
+          "note": "Groß Ilsede"
+        },
+        {
+          "imageHash": "cab327b",
+          "note": "Hohenhameln"
+        },
+        {
+          "imageHash": "79569150",
+          "note": "Elsdorf (Rheinland)"
+        },
+        {
+          "imageHash": "778d8e41",
+          "note": "Wulfsen"
+        },
+        {
+          "imageHash": "21a61b73",
+          "note": "Breddorf"
+        },
+        {
+          "imageHash": "42cb5914",
+          "note": "Weilmünster"
+        },
+        {
+          "imageHash": "3156604d",
+          "note": "Wolfersweiler"
+        },
+        {
+          "imageHash": "11e61512",
+          "note": "Bernlohe (Roth)"
+        },
+        {
+          "imageHash": "4266d30b",
+          "note": "Rosa (Thüringen)"
+        },
+        {
+          "imageHash": "63711eb9",
+          "note": "Wendeburg"
+        },
+        {
+          "imageHash": "71f0c4d7",
+          "note": "Duttenstedt"
+        },
+        {
+          "imageHash": "4bca47f2",
+          "note": "Ingeleben"
+        },
+        {
+          "imageHash": "1beba706",
+          "note": "Langelsheim"
+        },
+        {
+          "imageHash": "3e8992ee",
+          "note": "Langelsheim"
+        },
+        {
+          "imageHash": "8b7ce6a",
+          "note": "Ergste"
+        },
+        {
+          "imageHash": "4ec9f0a3",
+          "note": "Wolfstein"
+        },
+        {
+          "imageHash": "37c8f734",
+          "note": "Icking"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "squirrel",
-      "phrases": [
-       "eichhörnchen",
-       "eichhörnchens"
-      ]
+      "phrases": ["eichhörnchen", "eichhörnchens"],
+      "include": [
+        {
+          "imageHash": "58b58eb2",
+          "note": "Lipporn"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "donkey",
       "phrases": [
-       "esel",
-       "eseln",
-       "esels",
-       "eselskopf",
-       "eselsrumpf",
-       "maulesel"
+        "esel",
+        "eseln",
+        "esels",
+        "eselskopf",
+        "eselsrumpf",
+        "maulesel"
       ]
     },
     {
       "name": "centaur",
-      "phrases": [
-       "zentaur",
-       "zentauren"
-      ]
+      "phrases": ["zentaur", "zentauren"]
     },
     {
       "name": "bear",
       "phrases": [
-       "bär",
-       "bären",
-       "bärenfells",
-       "bärenklaue",
-       "bärenkopf",
-       "bärenköpfe",
-       "bärenpranke",
-       "bärenpranken",
-       "bärenrumpf",
-       "bärentatze",
-       "bärentatzen"
-      ]
+        "bär",
+        "bären",
+        "bärenfells",
+        "bärenklaue",
+        "bärenkopf",
+        "bärenköpfe",
+        "bärenpranke",
+        "bärenpranken",
+        "bärenrumpf",
+        "bärentatze",
+        "bärentatzen"
+      ],
+      "include": [
+        {
+          "imageHash": "501f2975",
+          "note": "Brechen (Hessen)"
+        },
+        {
+          "imageHash": "20b3cc58",
+          "note": "Brechen (Hessen)"
+        },
+        {
+          "imageHash": "784111f7",
+          "note": "Bärenbach (Hunsrück)"
+        },
+        {
+          "imageHash": "3e2d73c",
+          "note": "Westen (Dörverden)"
+        },
+        {
+          "imageHash": "7ad60982",
+          "note": "Kretz"
+        },
+        {
+          "imageHash": "7ce17413",
+          "note": "Bernkastel-Kues"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "beaver",
-      "phrases": [
-       "biber",
-       "bieber",
-       "biberkopf",
-       "bibern",
-       "bibers"
-      ]
+      "phrases": ["biber", "bieber", "biberkopf", "bibern", "bibers"],
+      "include": [
+        {
+          "imageHash": "7a81ba",
+          "note": "Bevern (Bremervörde)"
+        },
+        {
+          "imageHash": "11c03858",
+          "note": "Biebertal"
+        },
+        {
+          "imageHash": "eb61bab",
+          "note": "Bebra"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "leopard",
-      "phrases": [
-       "leopard",
-       "leoparden",
-       "leopardierten"
-      ]
+      "phrases": ["leopard", "leoparden", "leopardierten"]
     },
     {
       "name": "cat",
-      "phrases": [
-       "katze"
-      ]
+      "phrases": ["katze"]
     },
     {
       "name": "turtle",
-      "phrases": [
-       "schildkröte"
+      "phrases": ["schildkröte"]
+    },
+    {
+      "name": "dinosaur",
+      "phrases": ["dinosaurier", "dinosauriern", "dinosauriers"],
+      "exclude": [],
+      "include": [
+        {
+          "imageHash": "8523cf4",
+          "note": "Bedheim"
+        }
       ]
     },
     {
+      "name": "unusualHybrid",
+      "phrases": [],
+      "include": [
+        {
+          "imageHash": "233e50c",
+          "note": "Schillingen"
+        },
+        {
+          "imageHash": "5dab6ea0",
+          "note": "Seeon-Seebruck"
+        }
+      ],
+      "exclude": []
+    },
+    {
       "name": "snake",
-      "phrases": [
-       "schlange",
-       "schlangen"
-      ]
+      "phrases": ["schlange", "schlangen"],
+      "include": [
+        {
+          "imageHash": "4499e815",
+          "note": "Bad Salzschlirf"
+        },
+        {
+          "imageHash": "63525b1a",
+          "note": "Zschadraß"
+        }
+      ],
+      "exclude": []
     }
   ],
   "items": [
@@ -3446,21 +4892,13 @@
     },
     {
       "name": "arrow",
-      "phrases": [
-        "pfeil",
-        "pfeile",
-        "pfeilen",
-        "pfeils"
-      ],
+      "phrases": ["pfeil", "pfeile", "pfeilen", "pfeils"],
       "include": [],
       "exclude": []
     },
     {
       "name": "crozier",
-      "phrases": [
-        "kreuzstab",
-        "pastoralstab"
-      ],
+      "phrases": ["kreuzstab", "pastoralstab"],
       "include": [],
       "exclude": []
     },
@@ -3483,10 +4921,7 @@
     },
     {
       "name": "horseshoe",
-      "phrases": [
-        "hufeisen",
-        "hufeisens"
-      ],
+      "phrases": ["hufeisen", "hufeisens"],
       "include": [],
       "exclude": []
     },
@@ -3626,11 +5061,7 @@
     },
     {
       "name": "angel",
-      "phrases": [
-        "engel",
-        "engelskopf",
-        "erzengel"
-      ],
+      "phrases": ["engel", "engelskopf", "erzengel"],
       "include": [],
       "exclude": []
     },
@@ -3649,11 +5080,7 @@
     },
     {
       "name": "heart",
-      "phrases": [
-        "herz",
-        "herze",
-        "herzen"
-      ],
+      "phrases": ["herz", "herze", "herzen"],
       "include": [],
       "exclude": []
     },
@@ -3675,19 +5102,13 @@
     },
     {
       "name": "anchor",
-      "phrases": [
-        "anker",
-        "schiffsanker"
-      ],
+      "phrases": ["anker", "schiffsanker"],
       "include": [],
       "exclude": []
     },
     {
       "name": "lighthouse",
-      "phrases": [
-        "leuchtturm",
-        "leuchtturms"
-      ],
+      "phrases": ["leuchtturm", "leuchtturms"],
       "include": [],
       "exclude": []
     },

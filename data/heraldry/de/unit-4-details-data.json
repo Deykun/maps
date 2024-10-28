@@ -4230,28 +4230,28 @@
     ]
    },
    "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": 19.667587484006575,
+      "matcherColor": "#f00"
+     }
+    ],
     "blue": [
      {
-      "distanceToThreshold": -91.54008277950666,
+      "distanceToThreshold": 41.41243723685052,
       "matcherColor": "#5596c3"
      }
     ],
-    "green": [
+    "black": [
      {
-      "distanceToThreshold": -59.803204238093656,
-      "matcherColor": "#0f0"
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
      }
     ],
-    "gold": [
+    "white": [
      {
-      "distanceToThreshold": -19.586431004286155,
-      "matcherColor": "#bfa14e"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": -152.51021482937045,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
      }
     ]
    }
@@ -8982,6 +8982,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "lion"
+   ]
   }
  },
  {
@@ -9286,6 +9291,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "horse"
+   ]
   }
  },
  {
@@ -9799,6 +9809,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "otter"
+   ]
   }
  },
  {
@@ -11557,6 +11572,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "horse"
+   ]
   }
  },
  {
@@ -12201,6 +12221,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "lion"
+   ]
   }
  },
  {
@@ -12252,6 +12277,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "boar"
+   ]
   }
  },
  {
@@ -13474,6 +13504,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "horse"
+   ]
   }
  },
  {
@@ -13538,6 +13573,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "horse"
+   ]
   }
  },
  {
@@ -13620,6 +13660,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "horse"
+   ]
   }
  },
  {
@@ -24230,6 +24275,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "mermaid"
+   ]
   }
  },
  {
@@ -31418,6 +31468,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "boar"
+   ],
    "items": [
     "tree"
    ]
@@ -31953,6 +32006,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ]
   }
  },
  {
@@ -31993,6 +32051,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "bird"
+   ],
    "items": [
     "tree"
    ]
@@ -40733,6 +40794,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ]
   }
  },
  {
@@ -56780,6 +56846,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "crayfish"
+   ],
    "items": [
     "wheel"
    ]
@@ -58660,6 +58729,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "fish"
+   ]
   }
  },
  {
@@ -58881,6 +58955,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ]
   }
  },
  {
@@ -58957,6 +59036,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bat"
+   ]
   }
  },
  {
@@ -59447,6 +59531,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ]
   }
  },
  {
@@ -64724,6 +64813,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "deer"
+   ]
   }
  },
  {
@@ -81761,6 +81855,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "rabbit"
+   ]
   }
  },
  {
@@ -82213,6 +82312,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "rabbit"
+   ]
   }
  },
  {
@@ -82554,6 +82658,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ]
   }
  },
  {
@@ -84953,6 +85062,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "moose"
+   ],
    "items": [
     "wheel"
    ]
@@ -91476,6 +91588,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "bullBison"
+   ],
    "items": [
     "tree"
    ]
@@ -117870,6 +117985,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "lion"
+   ]
   }
  },
  {
@@ -123425,6 +123545,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "unicorn"
+   ]
   }
  },
  {
@@ -123950,6 +124075,13 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "rooster",
+    "bullBison",
+    "bird"
+   ]
   }
  },
  {
@@ -124159,6 +124291,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "deer"
+   ]
   }
  },
  {
@@ -124222,6 +124359,13 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "eagle",
+    "rooster",
+    "bird"
+   ]
   }
  },
  {
@@ -124273,6 +124417,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "rooster",
+    "bird"
+   ]
   }
  },
  {
@@ -124429,6 +124579,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "rooster",
+    "bird"
+   ]
   }
  },
  {
@@ -124492,6 +124648,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "wolf"
+   ]
   }
  },
  {
@@ -124555,6 +124716,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "horse"
+   ]
   }
  },
  {
@@ -124742,6 +124908,13 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "rooster",
+    "deer",
+    "bird"
+   ]
   }
  },
  {
@@ -138023,6 +138196,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "fish"
+   ]
   }
  },
  {
@@ -138131,6 +138309,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "horse"
+   ]
   }
  },
  {
@@ -139069,6 +139252,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bullBison"
+   ]
   }
  },
  {
