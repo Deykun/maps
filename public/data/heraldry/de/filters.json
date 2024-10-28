@@ -408,6 +408,46 @@
         {
           "imageHash": "6dfaa6eb",
           "note": "Liebshausen"
+        },
+        {
+          "imageHash": "78596ae9",
+          "note": "Weener"
+        },
+        {
+          "imageHash": "9d7e2a1",
+          "note": "Kornelimünster"
+        },
+        {
+          "imageHash": "45f2e896",
+          "note": "Nitz"
+        },
+        {
+          "imageHash": "387ffcd0",
+          "note": "Oberstedem"
+        },
+        {
+          "imageHash": "1fe5a785",
+          "note": "Niederstedem"
+        },
+        {
+          "imageHash": "6e403a09",
+          "note": "Oberrohr (Ursberg)"
+        },
+        {
+          "imageHash": "fe19fe2",
+          "note": "Rieden am Ammersee"
+        },
+        {
+          "imageHash": "2a3d2272",
+          "note": "Graisbach"
+        },
+        {
+          "imageHash": "21928b61",
+          "note": "Friesack"
+        },
+        {
+          "imageHash": "5e68fa7a",
+          "note": "Brake (Unterweser)"
         }
       ],
       "exclude": []
@@ -466,6 +506,10 @@
         {
           "imageHash": "6243d87",
           "note": "Rayerschied"
+        },
+        {
+          "imageHash": "7aeeaabd",
+          "note": "Ebersbach-Neugersdorf"
         }
       ],
       "exclude": []
@@ -494,6 +538,10 @@
         {
           "imageHash": "39d7603c",
           "note": "Eisighofen"
+        },
+        {
+          "imageHash": "be9ff5c",
+          "note": "Landrecht (Steinburg)"
         }
       ],
       "exclude": []
@@ -630,6 +678,10 @@
         {
           "imageHash": "11a3225b",
           "note": "Oelsberg"
+        },
+        {
+          "imageHash": "6da1309",
+          "note": "Winsen (Holstein)"
         }
       ],
       "exclude": []
@@ -657,6 +709,10 @@
         {
           "imageHash": "58d626af",
           "note": "Alt Isenhagen"
+        },
+        {
+          "imageHash": "5957106",
+          "note": "Schönteichen"
         }
       ],
       "exclude": []
@@ -696,6 +752,10 @@
         {
           "imageHash": "49bffb46",
           "note": "Schiesheim"
+        },
+        {
+          "imageHash": "68da6cb9",
+          "note": "Paska"
         }
       ],
       "exclude": []
@@ -759,6 +819,14 @@
         {
           "imageHash": "fb52e33",
           "note": "Roes"
+        },
+        {
+          "imageHash": "5dd4788a",
+          "note": "Winnemark"
+        },
+        {
+          "imageHash": "75b6289d",
+          "note": "Nebelschütz"
         }
       ],
       "exclude": []
@@ -794,6 +862,10 @@
         {
           "imageHash": "16b2d810",
           "note": "Angermünde"
+        },
+        {
+          "imageHash": "60de812f",
+          "note": "Geising"
         }
       ],
       "exclude": []
@@ -906,6 +978,14 @@
         {
           "imageHash": "e0a2c3d",
           "note": "Oberwies"
+        },
+        {
+          "imageHash": "16352bd9",
+          "note": "Schweinspoint"
+        },
+        {
+          "imageHash": "7aeeaabd",
+          "note": "Ebersbach-Neugersdorf"
         }
       ],
       "exclude": []
@@ -920,7 +1000,14 @@
     },
     {
       "name": "panther",
-      "phrases": ["panther", "panter", "panthern", "panthers"]
+      "phrases": ["panther", "panter", "panthern", "panthers"],
+      "include": [
+        {
+          "imageHash": "6ec5d121",
+          "note": "Ingolstadt"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "deer",
@@ -1107,13 +1194,40 @@
         {
           "imageHash": "6f26c962",
           "note": "Zerf"
+        },
+        {
+          "imageHash": "6118f2db",
+          "note": "Wimbach"
+        },
+        {
+          "imageHash": "5d0f6f0f",
+          "note": "Karlsbrunn"
+        },
+        {
+          "imageHash": "10ff06b6",
+          "note": "Schmähingen"
+        },
+        {
+          "imageHash": "15fa6877",
+          "note": "Augustusburg"
+        },
+        {
+          "imageHash": "600eee6b",
+          "note": "Räckelwitz"
         }
       ],
       "exclude": []
     },
     {
       "name": "lynx",
-      "phrases": ["luchs"]
+      "phrases": ["luchs"],
+      "include": [
+        {
+          "imageHash": "7d25629e",
+          "note": "Ronheim"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "frog",
@@ -3736,6 +3850,26 @@
         {
           "imageHash": "241836f4",
           "note": "Vierherrenborn"
+        },
+        {
+          "imageHash": "396ca5b0",
+          "note": "Ralingen"
+        },
+        {
+          "imageHash": "5d0f6f0f",
+          "note": "Karlsbrunn"
+        },
+        {
+          "imageHash": "58e66948",
+          "note": "St. Nikolaus (Großrosseln)"
+        },
+        {
+          "imageHash": "390683b7",
+          "note": "Steingriff"
+        },
+        {
+          "imageHash": "42b4fbe",
+          "note": "Niederaltheim"
         }
       ],
       "exclude": [
@@ -4099,6 +4233,42 @@
         {
           "imageHash": "50dc6e37",
           "note": "Wiebelsheim"
+        },
+        {
+          "imageHash": "38fa09c0",
+          "note": "Geltorf"
+        },
+        {
+          "imageHash": "11d56855",
+          "note": "Moordiek"
+        },
+        {
+          "imageHash": "59abc80f",
+          "note": "Schöndorf (an der Ruwer)"
+        },
+        {
+          "imageHash": "682ee8df",
+          "note": "Degerndorf am Inn"
+        },
+        {
+          "imageHash": "56d8ba5e",
+          "note": "Villenbach"
+        },
+        {
+          "imageHash": "6885f9f5",
+          "note": "Falkenau (Flöha)"
+        },
+        {
+          "imageHash": "2d0a8ebd",
+          "note": "Elstra"
+        },
+        {
+          "imageHash": "6920192a",
+          "note": "Vögelsen"
+        },
+        {
+          "imageHash": "45e829cc",
+          "note": "Sirksfelde"
         }
       ],
       "exclude": [
@@ -4345,6 +4515,18 @@
         {
           "imageHash": "11efc4e3",
           "note": "Havelsee"
+        },
+        {
+          "imageHash": "7fe09c85",
+          "note": "Weßling"
+        },
+        {
+          "imageHash": "62f82bc4",
+          "note": "Leitheim"
+        },
+        {
+          "imageHash": "7d474c82",
+          "note": "Amt Süderbrarup"
         }
       ],
       "exclude": []
@@ -4368,6 +4550,10 @@
         {
           "imageHash": "6cda9edf",
           "note": "Nastätten"
+        },
+        {
+          "imageHash": "31fc99ef",
+          "note": "Reinsdorf (Sachsen)"
         }
       ],
       "exclude": []
@@ -4475,6 +4661,10 @@
         {
           "imageHash": "6a6fd546",
           "note": "Heiligenberg (Bodenseekreis)"
+        },
+        {
+          "imageHash": "163596f",
+          "note": "Wilkau-Haßlau"
         }
       ],
       "exclude": []
@@ -4824,6 +5014,38 @@
         {
           "imageHash": "4c94a083",
           "note": "Hentern"
+        },
+        {
+          "imageHash": "2b57bfb6",
+          "note": "Büderich (Meerbusch)"
+        },
+        {
+          "imageHash": "6dea787e",
+          "note": "Bayersried (Ursberg)"
+        },
+        {
+          "imageHash": "209c85da",
+          "note": "Roßhaupten (Röfingen)"
+        },
+        {
+          "imageHash": "62f82bc4",
+          "note": "Leitheim"
+        },
+        {
+          "imageHash": "a95fe8b",
+          "note": "Appetshofen"
+        },
+        {
+          "imageHash": "4543c788",
+          "note": "Großolbersdorf"
+        },
+        {
+          "imageHash": "5957106",
+          "note": "Schönteichen"
+        },
+        {
+          "imageHash": "791d6326",
+          "note": "Eyendorf"
         }
       ],
       "exclude": []
@@ -4854,6 +5076,10 @@
         {
           "imageHash": "711d0070",
           "note": "Überbach"
+        },
+        {
+          "imageHash": "3bff3485",
+          "note": "Mühlried"
         }
       ],
       "exclude": []
@@ -4944,6 +5170,22 @@
         {
           "imageHash": "59035380",
           "note": "Forth (Eckental)"
+        },
+        {
+          "imageHash": "b60beb9",
+          "note": "Hammel (Neusäß)"
+        },
+        {
+          "imageHash": "a95fe8b",
+          "note": "Appetshofen"
+        },
+        {
+          "imageHash": "46c81a06",
+          "note": "Bocksberg (Laugna)"
+        },
+        {
+          "imageHash": "f1fe1e6",
+          "note": "Bockau"
         }
       ],
       "exclude": []
@@ -5022,6 +5264,18 @@
         {
           "imageHash": "6c682cbd",
           "note": "Bad Camberg"
+        },
+        {
+          "imageHash": "7c709321",
+          "note": "Mürlenbach"
+        },
+        {
+          "imageHash": "368962bb",
+          "note": "Rathen"
+        },
+        {
+          "imageHash": "30d60f48",
+          "note": "Thiemendorf (Waldhufen)"
         }
       ],
       "exclude": []
@@ -5121,6 +5375,10 @@
         {
           "imageHash": "4c95df61",
           "note": "Uersfeld"
+        },
+        {
+          "imageHash": "2a9fd7cb",
+          "note": "Wortelstetten"
         }
       ],
       "exclude": []
@@ -5136,6 +5394,10 @@
         {
           "imageHash": "14801cbd",
           "note": "Hintereben (Jandelsbrunn)"
+        },
+        {
+          "imageHash": "7ce1adf3",
+          "note": "Erle (Raesfeld)"
         }
       ],
       "exclude": []
@@ -5225,6 +5487,22 @@
         {
           "imageHash": "78b85b9e",
           "note": "Steyerberg"
+        },
+        {
+          "imageHash": "688d73f0",
+          "note": "Kemnat (Burtenbach)"
+        },
+        {
+          "imageHash": "384c759f",
+          "note": "Bärenstein (Altenberg)"
+        },
+        {
+          "imageHash": "452bbfe",
+          "note": "Pulsnitz"
+        },
+        {
+          "imageHash": "1dafaad7",
+          "note": "Bezirk Treptow"
         }
       ],
       "exclude": []
@@ -5286,6 +5564,10 @@
         {
           "imageHash": "5dab6ea0",
           "note": "Seeon-Seebruck"
+        },
+        {
+          "imageHash": "62f82bc4",
+          "note": "Leitheim"
         }
       ],
       "exclude": []
@@ -5305,6 +5587,10 @@
         {
           "imageHash": "7df0d551",
           "note": "Ahlen"
+        },
+        {
+          "imageHash": "333c9b67",
+          "note": "Natterholz (Daiting)"
         }
       ],
       "exclude": []

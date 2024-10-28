@@ -1,6 +1,11 @@
 import { MarkerParams, ComplexManualMarker } from '@/topic/Heraldry/types';
+import { useTranslation } from 'react-i18next';
 
+import { copyText } from '@/utils/text';
+
+import IconCopy from '@/components/Icons/IconCopy';
 import IconSelectNew from '@/components/Icons/IconSelectNew';
+
 
 import ButtonText from '@/components/UI/ButtonText';
 
@@ -12,7 +17,9 @@ type Props = {
 }
 
 const MergeMofificationButton = ({ filter: initFliter, include, exclude, setDraftFilter }: Props) => {
-  const handleClick = () => {
+  const { t } = useTranslation();
+
+  const mergeData = () => {
     const hashesIncluded = (initFliter.include || []).map((ruleToCheck) => typeof ruleToCheck === 'string' ? '' : ruleToCheck.imageHash).filter(Boolean)
     const hashesExcluded = (initFliter.exclude || []).map((ruleToCheck) => typeof ruleToCheck === 'string' ? '' : ruleToCheck.imageHash).filter(Boolean)
 
@@ -34,23 +41,44 @@ const MergeMofificationButton = ({ filter: initFliter, include, exclude, setDraf
         : !hashesToRemove.includes(ruleToCheck.imageHash)
     );
 
-    setDraftFilter({
+    return {
       ...initFliter,
       include: [...includeWithRemoved, ...rulesToInclude],
       exclude: [...excludeWithRemoved, ...rulesToExclude],
-    });
+    }
+  }
+
+  const handleClick = () => {
+    const mergedFilter = mergeData();
+
+    setDraftFilter(mergedFilter);
+  }
+
+  const handleCopyFiler = () => {
+    const mergedFilter = mergeData();
+
+    copyText(`${JSON.stringify(mergedFilter, null, 4)},`)
   }
 
   return (
-    <ButtonText
-      size="small"
-      onClick={handleClick}
-      wrapperClassName="ml-auto"
-      isActive
-    >
-      <span>Use</span>
-      <IconSelectNew />
-    </ButtonText>
+    <>
+      <ButtonText  
+        size="small"
+        onClick={handleCopyFiler}
+      >
+        <span>{t('main.copy')}</span>
+        <IconCopy />
+      </ButtonText>
+      <ButtonText
+        size="small"
+        onClick={handleClick}
+        wrapperClassName="ml-auto"
+        isActive
+      >
+        <span>Use</span>
+        <IconSelectNew />
+      </ButtonText>
+    </>
   );
 };
 
