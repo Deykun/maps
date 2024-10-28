@@ -37,8 +37,8 @@ const FiltersPaneFilter = ({
       disabled={isDisabled && !isSelected}
     >
       {isSelected
-        ? <IconSelected className="flex-shrink-0 size-3 text-marker" />
-        : <IconUnselected className="flex-shrink-0 size-3 text-ui-contrast group-hover:text-marker" />
+        ? <IconSelected className="flex-shrink-0 size-3 text-marker group-hover:text-white duration-300" />
+        : <IconUnselected className="flex-shrink-0 size-3 text-ui-contrast group-hover:text-white duration-300" />
       }
       <span className={clsx('text-left overflow-hidden truncate', { 'text-white': isSelected })}>
         {label}

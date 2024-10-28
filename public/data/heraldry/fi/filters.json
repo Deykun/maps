@@ -2,9 +2,7 @@
   "animals": [
     {
       "name": "bear",
-      "phrases": [
-        "karhu"
-      ],
+      "phrases": ["karhu"],
       "exclude": [
         "Kymin vaakuna",
         "Maksamaan vaakuna",
@@ -18,9 +16,7 @@
     },
     {
       "name": "beaver",
-      "phrases": [
-        "majava"
-      ]
+      "phrases": ["majava"]
     },
     {
       "name": "bird",
@@ -57,70 +53,53 @@
     },
     {
       "name": "eagle",
-      "phrases": [
-        "kotkanpää"
-      ]
+      "phrases": ["kotkanpää"]
     },
     {
       "name": "bullBison",
-      "phrases": [
-        "vetohärkäparillaan",
-        "härkä"
-      ],
-      "include": [
-        "Joroisten vaakuna"
-      ]
+      "phrases": ["vetohärkäparillaan", "härkä"],
+      "include": ["Joroisten vaakuna"]
     },
     {
       "name": "ram",
-      "phrases": [
-        "oinaan"
-      ]
+      "phrases": ["oinaan"]
     },
     {
       "name": "ant",
-      "phrases": [
-        "muurahainen"
-      ]
+      "phrases": ["muurahainen"]
     },
     {
       "name": "wolf",
-      "phrases": [
-        "susi",
-        "susiksi"
-      ]
+      "phrases": ["susi", "susiksi"]
     },
     {
       "name": "wolverine",
-      "phrases": [
-        "ahma"
-      ]
+      "phrases": ["ahma"]
     },
     {
       "name": "lion",
-      "phrases": [
-        "leijona"
-      ],
-      "exclude": [
-        "Helsingin vaakuna",
-        "Maarianhaminan vaakuna"
-      ]
+      "phrases": ["leijona"],
+      "exclude": ["Helsingin vaakuna", "Maarianhaminan vaakuna"]
     },
     {
       "name": "lynx",
-      "phrases": [
-        "ilves",
-        "ilveksen"
-      ],
+      "phrases": ["ilves", "ilveksen"],
+      "include": ["Kanta-Hämeen vaakuna"]
+    },
+    {
+      "name": "unusualHybrid",
+      "phrases": [],
       "include": [
-        "Kanta-Hämeen vaakuna"
-      ]
+        {
+          "imageHash": "5e5c0c29",
+          "note": "Inarin vaakuna"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "squirrel",
-      "phrases": [
-        "orava"
-      ],
+      "phrases": ["orava"],
       "exclude": [
         "Kiihtelysvaaran vaakuna",
         "Maksamaan vaakuna",
@@ -131,101 +110,61 @@
     },
     {
       "name": "moose",
-      "phrases": [
-        "hirvi",
-        "hirvenpää"
-      ],
-      "exclude": [
-        "Kurikan vaakuna"
-      ]
+      "phrases": ["hirvi", "hirvenpää"],
+      "exclude": ["Kurikan vaakuna"]
     },
     {
       "name": "reindeer",
-      "phrases": [
-        "poro"
-      ]
+      "phrases": ["poro"]
     },
     {
       "name": "goat",
-      "phrases": [
-        "vuohi",
-        "pukki"
-      ]
+      "phrases": ["vuohi", "pukki"]
     },
     {
       "name": "duck",
-      "phrases": [
-        "sorsa"
-      ]
+      "phrases": ["sorsa"]
     },
     {
       "name": "rooster",
-      "phrases": [
-        "kukko"
-      ]
+      "phrases": ["kukko"]
     },
     {
       "name": "swan",
-      "phrases": [
-        "joutsen",
-        "joutsenet"
-      ],
-      "exclude": [
-        "Salon vaakuna",
-        "Halikon vaakuna"
-      ]
+      "phrases": ["joutsen", "joutsenet"],
+      "exclude": ["Salon vaakuna", "Halikon vaakuna"]
     },
     {
       "name": "crayfish",
-      "phrases": [
-        "rapuja",
-        "rapupitäjän"
-      ]
+      "phrases": ["rapuja", "rapupitäjän"]
     },
     {
       "name": "raven",
-      "phrases": [
-        "korppi"
-      ]
+      "phrases": ["korppi"]
     },
     {
       "name": "gull",
-      "phrases": [
-        "lokki"
-      ]
+      "phrases": ["lokki"]
     },
     {
       "name": "crane",
-      "phrases": [
-        "kurki"
-      ]
+      "phrases": ["kurki"]
     },
     {
       "name": "butterfly",
-      "phrases": [
-        "perhonen"
-      ]
+      "phrases": ["perhonen"]
     },
     {
       "name": "boar",
-      "phrases": [
-        "karjunpää"
-      ]
+      "phrases": ["karjunpää"]
     },
     {
       "name": "goat",
-      "phrases": [
-        "kauris"
-      ]
+      "phrases": ["kauris"]
     },
     {
       "name": "horse",
-      "phrases": [
-        "hevonen",
-        "ratsuhevonen",
-        "hevosen",
-        "ori"
-      ],
+      "phrases": ["hevonen", "ratsuhevonen", "hevosen", "ori"],
       "exclude": [
         "Längelmäen vaakuna",
         "Espoon vaakuna",
@@ -235,45 +174,27 @@
     },
     {
       "name": "weasel",
-      "phrases": [
-        "näätä",
-        "kärppä"
-      ]
+      "phrases": ["näätä", "kärppä"]
     },
     {
       "name": "seal",
-      "phrases": [
-        "hylje"
-      ]
+      "phrases": ["hylje"]
     },
     {
       "name": "mermaid",
-      "phrases": [
-        "merenneito"
-      ],
+      "phrases": ["merenneito"],
       "include": [
         "Vöyrin vaakuna",
         "Vöyri-Maksamaan vaakuna",
         "Maksamaan vaakuna",
         "Päijät-Hämeen vaakuna"
       ],
-      "exclude": [
-        "Lahden vaakuna"
-      ]
+      "exclude": ["Lahden vaakuna"]
     },
     {
       "name": "fish",
-      "phrases": [
-        "kala",
-        "kalastaa",
-        "siika",
-        "kuha",
-        "hauki",
-        "muikkua"
-      ],
-      "include": [
-        "Ruoveden vaakuna"
-      ],
+      "phrases": ["kala", "kalastaa", "siika", "kuha", "hauki", "muikkua"],
+      "include": ["Ruoveden vaakuna"],
       "exclude": [
         "Oulunsalon vaakuna",
         "Kiimingin vaakuna",
@@ -315,9 +236,7 @@
     },
     {
       "name": "salmon",
-      "phrases": [
-        "lohi"
-      ],
+      "phrases": ["lohi"],
       "exclude": [
         "Himangan vaakuna",
         "Lohjan kunnan vaakuna",
@@ -333,43 +252,22 @@
   "items": [
     {
       "name": "anchor",
-      "phrases": [
-        "-ankkuri",
-        "ankkuri"
-      ],
-      "exclude": [
-        "Kajaanin vaakuna",
-        "Karstulan vaakuna"
-      ]
+      "phrases": ["-ankkuri", "ankkuri"],
+      "exclude": ["Kajaanin vaakuna", "Karstulan vaakuna"]
     },
     {
       "name": "earOfGrain",
-      "phrases": [
-        "tähkää",
-        "tähkä",
-        "lyhde",
-        "röyhy"
-      ],
-      "exclude": [
-        "Savonlinnan vaakuna"
-      ]
+      "phrases": ["tähkää", "tähkä", "lyhde", "röyhy"],
+      "exclude": ["Savonlinnan vaakuna"]
     },
     {
       "name": "key",
-      "phrases": [
-        "avain",
-        "avaimet"
-      ],
-      "exclude": [
-        "Kouvolan vaakuna"
-      ]
+      "phrases": ["avain", "avaimet"],
+      "exclude": ["Kouvolan vaakuna"]
     },
     {
       "name": "crown",
-      "phrases": [
-        "kruunu",
-        "kruunata"
-      ],
+      "phrases": ["kruunu", "kruunata"],
       "include": [
         "Loviisan vaakuna",
         "Raaseporin vaakuna",
@@ -412,9 +310,7 @@
         "Jämsän vaakuna",
         "Jämsänkosken vaakuna"
       ],
-      "include": [
-        "Pieksämäen vaakuna"
-      ]
+      "include": ["Pieksämäen vaakuna"]
     },
     {
       "name": "boat",
@@ -469,10 +365,7 @@
         "havupuun",
         "kanto"
       ],
-      "include": [
-        "Savukosken vaakuna",
-        "Luumäen vaakuna"
-      ],
+      "include": ["Savukosken vaakuna", "Luumäen vaakuna"],
       "exclude": [
         "Alahärmän vaakuna",
         "Alastaron vaakuna",
@@ -608,21 +501,15 @@
     },
     {
       "name": "shell",
-      "phrases": [
-        "simpukat"
-      ]
+      "phrases": ["simpukat"]
     },
     {
       "name": "lily",
-      "phrases": [
-        "lilja"
-      ]
+      "phrases": ["lilja"]
     },
     {
       "name": "rose",
-      "phrases": [
-        "ruusut"
-      ]
+      "phrases": ["ruusut"]
     },
     {
       "name": "flower",
@@ -642,12 +529,7 @@
     },
     {
       "name": "axeSaw",
-      "phrases": [
-        "kirvestä",
-        "kirves",
-        "saha",
-        "justeerisaha"
-      ],
+      "phrases": ["kirvestä", "kirves", "saha", "justeerisaha"],
       "exclude": [
         "Lieksan vaakuna",
         "Keski-Pohjanmaan vaakuna",
