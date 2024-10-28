@@ -183,6 +183,22 @@
         {
           "imageHash": "5c0545af",
           "note": "Föritz"
+        },
+        {
+          "imageHash": "ce4e640",
+          "note": "Rommerskirchen"
+        },
+        {
+          "imageHash": "17e9f305",
+          "note": "Broichweiden"
+        },
+        {
+          "imageHash": "3ed541d6",
+          "note": "Würselen"
+        },
+        {
+          "imageHash": "3f20cc45",
+          "note": "Detzem"
         }
       ],
       "exclude": []
@@ -268,28 +284,46 @@
       ]
     },
     {
-      "name": "stork",
+      "name": "griffin",
       "phrases": [
-       "storch",
-       "störche",
-       "störchen",
-       "storches",
-       "storchenrumpf",
-       "storchennest",
-       "weißstorch"
-      ]
+        "greif",
+        "greife",
+        "greifen",
+        "greifenkopf",
+        "greifenköpfe",
+        "greifenlöwe",
+        "greifenrumpf",
+        "greifenstein",
+        "greifs",
+        "greifswald",
+        "greifenfang"
+      ],
+      "include": [
+        {
+          "imageHash": "7268c8e3",
+          "note": "Heuchling (Lauf an der Pegnitz)"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "goose",
       "phrases": [
-       "gans",
-       "gänse",
-       "gänsen",
-       "gänserumpf",
-       "gänsekielen",
-       "gänsefuß",
-       "gänserumpf"
-      ]
+        "gans",
+        "gänse",
+        "gänsen",
+        "gänserumpf",
+        "gänsekielen",
+        "gänsefuß",
+        "gänserumpf"
+      ],
+      "include": [
+        {
+          "imageHash": "33431acc",
+          "note": "Vahlde"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "pigeon",
@@ -329,35 +363,50 @@
       ]
     },
     {
-      "name": "rooster",
+      "name": "griffin",
       "phrases": [
-       "hahn",
-       "hähne",
-       "hahnenfedern",
-       "wetterhahn",
-       "hahnenkopf",
-       "hahns",
-       "hänen",
-       "henne",
-       "hahnes",
-       "hühnerfuß"
-      ]
+        "greif",
+        "greife",
+        "greifen",
+        "greifenkopf",
+        "greifenköpfe",
+        "greifenlöwe",
+        "greifenrumpf",
+        "greifenstein",
+        "greifs",
+        "greifswald",
+        "greifenfang"
+      ],
+      "include": [
+        {
+          "imageHash": "7268c8e3",
+          "note": "Heuchling (Lauf an der Pegnitz)"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "griffin",
       "phrases": [
-       "greif",
-       "greife",
-       "greifen",
-       "greifenkopf",
-       "greifenköpfe",
-       "greifenlöwe",
-       "greifenrumpf",
-       "greifenstein",
-       "greifs",
-       "greifswald",
-       "greifenfang"
-      ]
+        "greif",
+        "greife",
+        "greifen",
+        "greifenkopf",
+        "greifenköpfe",
+        "greifenlöwe",
+        "greifenrumpf",
+        "greifenstein",
+        "greifs",
+        "greifswald",
+        "greifenfang"
+      ],
+      "include": [
+        {
+          "imageHash": "7268c8e3",
+          "note": "Heuchling (Lauf an der Pegnitz)"
+        }
+      ],
+      "exclude": []
     },
     {
       "name": "rabbit",
@@ -2857,6 +2906,10 @@
         {
           "imageHash": "cff06da",
           "note": "Kreis Borken"
+        },
+        {
+          "imageHash": "464e5328",
+          "note": "Verbandsgemeinde Neumagen-Dhron"
         }
       ],
       "exclude": [
@@ -2997,7 +3050,24 @@
         "rabenkrähe",
         "wachteln"
       ],
-      "include": [],
+      "include": [
+        {
+          "imageHash": "6bf2915b",
+          "note": "Ahle (Bünde)"
+        },
+        {
+          "imageHash": "286a289e",
+          "note": "Raesfeld"
+        },
+        {
+          "imageHash": "5dab6ea0",
+          "note": "Seeon-Seebruck"
+        },
+        {
+          "imageHash": "2f6234a",
+          "note": "Niederwerrn"
+        }
+      ],
       "exclude": [
         {
           "imageHash": "3471efad",
@@ -3038,6 +3108,10 @@
         {
           "imageHash": "2e23124a",
           "note": "Roetgen"
+        },
+        {
+          "imageHash": "6bf1bee4",
+          "note": "Gyhum"
         }
       ],
       "exclude": []

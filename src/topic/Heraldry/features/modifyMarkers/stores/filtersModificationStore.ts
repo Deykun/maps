@@ -120,7 +120,7 @@ export const selectShortcuts = (state: FiltersModificationStoreState): Shortcut[
   const animal: Shortcut[] = Object.entries(state.animal).map(([name, { include = [] } = {}]) => ({ name, type: 'animal', total: include.length }));
   const item: Shortcut[] = Object.entries(state.item).map(([name, { include = [] } = {}]) => ({ name, type: 'item', total: include.length }));
 
-  return [...animal, ...item].sort((a, b) => a.total - b.total).slice(0, 6);
+  return [...animal, ...item].sort((a, b) => b.total - a.total).slice(0, 12);
 };
 
 export default useFilterModificationStore;

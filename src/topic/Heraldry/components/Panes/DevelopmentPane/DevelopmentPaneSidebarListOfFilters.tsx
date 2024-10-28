@@ -118,7 +118,7 @@ const DevelopmentPaneSidebarListOfFilters = ({
             <IconEraser />
             <span>{t('heraldry.list.clear')}</span>
           </ButtonText>
-          {shortcuts.map(({ name, type }) => <ButtonText
+          {shortcuts.map(({ name, type, total }) => <ButtonText
             size="small"
             key={name}
             onClick={() => setSelected({ name, type })}
@@ -126,7 +126,7 @@ const DevelopmentPaneSidebarListOfFilters = ({
             isDisabled={!data}
           >
             {type === 'animal' ? <IconAnimal animals={[name]} /> : <IconCrown />}
-            <span>{t(`heraldry.${type}.${name}`)}</span>
+            <span>{t(`heraldry.${type}.${name}`)} ({total})</span>
           </ButtonText>)}
         </div>}
         <select

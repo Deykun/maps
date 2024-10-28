@@ -7285,10 +7285,6 @@
    }
   },
   "markers": {
-   "animals": [
-    "rooster",
-    "bird"
-   ],
    "items": [
     "walls"
    ]
@@ -7608,10 +7604,6 @@
    }
   },
   "markers": {
-   "animals": [
-    "rooster",
-    "bird"
-   ],
    "items": [
     "walls"
    ]
@@ -24183,6 +24175,8 @@
   },
   "markers": {
    "animals": [
+    "griffin",
+    "griffin",
     "griffin"
    ],
    "items": [
@@ -27777,10 +27771,6 @@
    }
   },
   "markers": {
-   "animals": [
-    "rooster",
-    "bird"
-   ],
    "items": [
     "tree"
    ]
@@ -35456,12 +35446,6 @@
      }
     ]
    }
-  },
-  "markers": {
-   "animals": [
-    "stork",
-    "bird"
-   ]
   }
  },
  {
@@ -55001,10 +54985,6 @@
    }
   },
   "markers": {
-   "animals": [
-    "rooster",
-    "bird"
-   ],
    "items": [
     "cross",
     "wheel"
@@ -61800,6 +61780,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "dragon"
+   ]
   }
  },
  {
@@ -62432,10 +62417,6 @@
    }
   },
   "markers": {
-   "animals": [
-    "rooster",
-    "bird"
-   ],
    "items": [
     "walls",
     "bell"
@@ -63758,6 +63739,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "goose",
+    "bird"
+   ]
   }
  },
  {
@@ -69089,6 +69076,8 @@
   },
   "markers": {
    "animals": [
+    "griffin",
+    "griffin",
     "griffin",
     "bird"
    ],
@@ -77513,6 +77502,8 @@
   },
   "markers": {
    "animals": [
+    "griffin",
+    "griffin",
     "griffin"
    ]
   }
@@ -83613,6 +83604,8 @@
   },
   "markers": {
    "animals": [
+    "griffin",
+    "griffin",
     "griffin",
     "lion"
    ]
@@ -99061,12 +99054,6 @@
      }
     ]
    }
-  },
-  "markers": {
-   "animals": [
-    "rooster",
-    "bird"
-   ]
   }
  },
  {
@@ -114543,6 +114530,8 @@
   },
   "markers": {
    "animals": [
+    "griffin",
+    "griffin",
     "griffin"
    ]
   }
@@ -134473,10 +134462,6 @@
    }
   },
   "markers": {
-   "animals": [
-    "rooster",
-    "bird"
-   ],
    "items": [
     "walls"
    ]
@@ -138759,6 +138744,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "eagle",
+    "bird"
+   ]
   }
  },
  {
@@ -139559,10 +139550,8 @@
   },
   "markers": {
    "animals": [
-    "rooster",
     "lion",
-    "fish",
-    "bird"
+    "fish"
    ]
   }
  },
@@ -141023,6 +141012,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "eagle",
+    "bird"
+   ]
   }
  },
  {

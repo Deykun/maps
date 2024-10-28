@@ -46007,6 +46007,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ]
   }
  },
  {
@@ -52713,6 +52718,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ]
   }
  },
  {
@@ -64116,6 +64126,8 @@
   "markers": {
    "animals": [
     "griffin",
+    "griffin",
+    "griffin",
     "lion"
    ]
   }
@@ -67958,7 +67970,9 @@
   },
   "markers": {
    "animals": [
-    "lion"
+    "eagle",
+    "lion",
+    "bird"
    ]
   }
  },
@@ -73968,6 +73982,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "lion"
+   ]
   }
  },
  {
@@ -79256,10 +79275,6 @@
    }
   },
   "markers": {
-   "animals": [
-    "rooster",
-    "bird"
-   ],
    "items": [
     "cross"
    ]
@@ -98499,12 +98514,6 @@
      }
     ]
    }
-  },
-  "markers": {
-   "animals": [
-    "rooster",
-    "bird"
-   ]
   }
  },
  {
@@ -116134,12 +116143,6 @@
      }
     ]
    }
-  },
-  "markers": {
-   "animals": [
-    "rooster",
-    "bird"
-   ]
   }
  },
  {
@@ -119931,12 +119934,6 @@
      }
     ]
    }
-  },
-  "markers": {
-   "animals": [
-    "stork",
-    "bird"
-   ]
   }
  },
  {
@@ -124609,10 +124606,6 @@
    }
   },
   "markers": {
-   "animals": [
-    "stork",
-    "bird"
-   ],
    "items": [
     "earOfGrain"
    ]
@@ -125865,12 +125858,6 @@
      }
     ]
    }
-  },
-  "markers": {
-   "animals": [
-    "stork",
-    "bird"
-   ]
   }
  },
  {
@@ -131446,10 +131433,6 @@
    }
   },
   "markers": {
-   "animals": [
-    "rooster",
-    "bird"
-   ],
    "items": [
     "walls"
    ]
@@ -142311,10 +142294,6 @@
    }
   },
   "markers": {
-   "animals": [
-    "rooster",
-    "bird"
-   ],
    "items": [
     "walls",
     "flower",
