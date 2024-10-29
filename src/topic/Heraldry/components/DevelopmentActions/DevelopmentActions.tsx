@@ -64,7 +64,7 @@ const DevelopmentActions = ({
           unit={unit}
         />
         <UnitsPaneUnitMarkers
-          className="flex-nowrap"
+          className="flex-nowrap empty:hidden"
           unit={unit}
           shouldShowContentAsTooltip
           shouldShowTypes={false}

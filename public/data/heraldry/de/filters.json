@@ -6,10 +6,7 @@
     },
     {
       "name": "dolphin",
-      "phrases": [
-          "delphin",
-          "delphine"
-      ],
+      "phrases": ["delphin", "delphine"],
       "include": [],
       "exclude": []
     },
@@ -17,10 +14,14 @@
       "name": "insect",
       "phrases": [],
       "include": [
-          {
-              "imageHash": "2135f75e",
-              "note": "Rosenthal (Peine)"
-          }
+        {
+          "imageHash": "2135f75e",
+          "note": "Rosenthal (Peine)"
+        },
+        {
+          "imageHash": "4e5ad7a3",
+          "note": "Amt Unterspreewald (1992–2012)"
+        }
       ],
       "exclude": []
     },
@@ -53,10 +54,6 @@
         "adlerflug"
       ],
       "include": [
-        {
-          "imageHash": "3ffef87",
-          "note": "Fürth"
-        },
         {
           "imageHash": "c0ee43",
           "note": "Friedeburg"
@@ -594,7 +591,24 @@
           "note": "Isselhorst"
         }
       ],
-      "exclude": []
+      "exclude": [
+        {
+          "imageHash": "5e9f5f3c",
+          "note": "Berlin"
+        },
+        {
+          "imageHash": "58a1a20d",
+          "note": "Landkreis Dingolfing-Landau"
+        },
+        {
+          "imageHash": "2b5e1929",
+          "note": "Stuer"
+        },
+        {
+          "imageHash": "79e86cc5",
+          "note": "Welver"
+        }
+      ]
     },
     {
       "name": "falcon",
@@ -4357,6 +4371,10 @@
         {
           "imageHash": "43121383",
           "note": "Barmke"
+        },
+        {
+          "imageHash": "3bfe8028",
+          "note": "Ahlden (Aller)"
         }
       ],
       "exclude": [
@@ -4911,6 +4929,30 @@
         {
           "imageHash": "3471efad",
           "note": "Meine"
+        },
+        {
+          "imageHash": "4e5ad7a3",
+          "note": "Amt Unterspreewald (1992–2012)"
+        },
+        {
+          "imageHash": "5e9f5f3c",
+          "note": "Berlin"
+        },
+        {
+          "imageHash": "58a1a20d",
+          "note": "Landkreis Dingolfing-Landau"
+        },
+        {
+          "imageHash": "3ffef87",
+          "note": "Fürth"
+        },
+        {
+          "imageHash": "2b5e1929",
+          "note": "Stuer"
+        },
+        {
+          "imageHash": "79e86cc5",
+          "note": "Welver"
         }
       ]
     },
@@ -5846,6 +5888,14 @@
         {
           "imageHash": "480638b6",
           "note": "Diepenau"
+        },
+        {
+          "imageHash": "416711bf",
+          "note": "Eickeloh"
+        },
+        {
+          "imageHash": "4be9f5ba",
+          "note": "Berlin-Charlottenburg"
         }
       ],
       "exclude": []
@@ -6502,6 +6552,10 @@
         {
           "imageHash": "62f82bc4",
           "note": "Leitheim"
+        },
+        {
+          "imageHash": "7e23ebaf",
+          "note": "Brokdorf"
         }
       ],
       "exclude": []
@@ -6533,12 +6587,102 @@
         {
           "imageHash": "3a4ba301",
           "note": "Samtgemeinde Nenndorf"
+        },
+        {
+          "imageHash": "2b5e1929",
+          "note": "Stuer"
         }
       ],
       "exclude": []
     }
   ],
   "items": [
+    {
+      "name": "grape",
+      "phrases": [
+        "traube",
+        "trauben",
+        "weinstock",
+        "weinstöcke",
+        "weintraube",
+        "weintrauben"
+      ],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "hops",
+      "phrases": [
+          "hopfen",
+          "hopfenanbau",
+          "hopfenblatt",
+          "hopfenblüte",
+          "hopfenblüten",
+          "hopfendolde",
+          "hopfendolden",
+          "hopfendoldenübereinander",
+          "hopfenfrucht",
+          "hopfenpflanze",
+          "hopfenpflanzen",
+          "hopfenranke",
+          "hopfenrebe",
+          "hopfenrispe",
+          "hopfenstaude",
+          "hopfenstock",
+          "hopfentrieb",
+          "hopfenzweig",
+          "hopfenzweigen"
+      ],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "windmill",
+      "phrases": [
+          "bockwindmühle",
+          "flügelkreuz",
+          "hessenmühle",
+          "holländerwindmühle",
+          "kornwindmühle",
+          "windmühle",
+          "windmühlen",
+          "windmühlen-flügelkreuz",
+          "windmühlenflügel",
+          "windmühlenflügeln"
+      ],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "grave",
+      "phrases": [
+        "grab",
+        "grabdenkmal",
+        "grabhügel",
+        "großsteingrab",
+        "hünengrab",
+        "megalithanlagen",
+        "megalithgrab",
+        "steingrab",
+        "steinpackungsgrab",
+        "steinzeitgrab"
+      ],
+      "include": [],
+      "exclude": [
+        {
+          "imageHash": "15fb2b90",
+          "note": "Laatzen"
+        },
+        {
+          "imageHash": "619d6a3e",
+          "note": "Gronau (Leine)"
+        },
+        {
+          "imageHash": "146ed617",
+          "note": "Grab (Großerlach)"
+        }
+      ]
+    },
     {
       "name": "cross",
       "phrases": [
@@ -6781,7 +6925,12 @@
         "zinnenturm"
       ],
       "exclude": [],
-      "include": []
+      "include": [
+        {
+          "imageHash": "7e5b415",
+          "note": "Wiesemscheid"
+        }
+      ]
     },
     {
       "name": "flower",
@@ -6834,7 +6983,12 @@
         "schwertern",
         "schwertes"
       ],
-      "include": [],
+      "include": [
+        {
+          "imageHash": "69005911",
+          "note": "Nohn"
+        }
+      ],
       "exclude": []
     },
     {
@@ -7084,7 +7238,12 @@
         "pilgermuscheln",
         "taufmuschel"
       ],
-      "include": [],
+      "include": [
+        {
+          "imageHash": "543ad6d8",
+          "note": "Kleinblittersdorf"
+        }
+      ],
       "exclude": []
     },
     {

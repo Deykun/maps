@@ -251,6 +251,39 @@
   ],
   "items": [
     {
+      "name": "windmill",
+      "phrases": [
+          "tuulimylly",
+          "tuulimyllyistä",
+          "tuulimyllyn",
+          "tuulimyllyt"
+      ],
+      "include": [],
+      "exclude": [
+          {
+              "imageHash": "4c7f2549",
+              "note": "Köyliön vaakuna"
+          },
+          {
+              "imageHash": "4c7f2549",
+              "note": "Säkylän vaakuna"
+          }
+      ]
+    },
+    {
+      "name": "hops",
+      "phrases": [
+          "humalaköynnöksiä"
+      ],
+      "exclude": [
+          {
+              "imageHash": "786ed88",
+              "note": "Tammisaaren vaakuna"
+          }
+      ],
+      "include": []
+    },
+    {
       "name": "anchor",
       "phrases": ["-ankkuri", "ankkuri"],
       "exclude": ["Kajaanin vaakuna", "Karstulan vaakuna"]
