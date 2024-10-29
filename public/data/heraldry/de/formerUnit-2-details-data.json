@@ -6121,6 +6121,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "grave"
+   ]
   }
  },
  {
@@ -6255,6 +6260,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "grave"
+   ]
   }
  },
  {
@@ -10219,6 +10229,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "windmill"
+   ]
   }
  },
  {
@@ -16225,6 +16240,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "windmill"
+   ]
   }
  },
  {
@@ -37173,6 +37193,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "grave"
+   ]
   }
  },
  {
@@ -37224,6 +37249,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "grave"
+   ]
   }
  },
  {
@@ -37700,6 +37730,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "grave"
+   ]
   }
  },
  {
@@ -38434,6 +38469,7 @@
     "bird"
    ],
    "items": [
+    "windmill",
     "walls"
    ]
   }
@@ -51253,6 +51289,7 @@
     "lion"
    ],
    "items": [
+    "hops",
     "walls",
     "flower"
    ]
@@ -52449,6 +52486,7 @@
     "lion"
    ],
    "items": [
+    "hops",
     "walls",
     "flower"
    ]
@@ -58712,9 +58750,7 @@
   },
   "markers": {
    "animals": [
-    "eagle",
-    "dog",
-    "bird"
+    "dog"
    ],
    "items": [
     "sword"
@@ -73433,6 +73469,9 @@
     "eagle",
     "lion",
     "bird"
+   ],
+   "items": [
+    "grape"
    ]
   }
  },
@@ -73503,6 +73542,7 @@
     "lion"
    ],
    "items": [
+    "grape",
     "walls"
    ]
   }
@@ -73589,6 +73629,7 @@
     "bird"
    ],
    "items": [
+    "grape",
     "key"
    ]
   }
@@ -76678,6 +76719,7 @@
     "lion"
    ],
    "items": [
+    "grape",
     "walls"
    ]
   }
@@ -76738,6 +76780,7 @@
     "lion"
    ],
    "items": [
+    "grape",
     "cross"
    ]
   }
@@ -78316,6 +78359,9 @@
     "eagle",
     "lion",
     "bird"
+   ],
+   "items": [
+    "grape"
    ]
   }
  },
@@ -80834,6 +80880,7 @@
   },
   "markers": {
    "items": [
+    "grape",
     "crown"
    ]
   }
@@ -89846,6 +89893,9 @@
    "animals": [
     "eagle",
     "bird"
+   ],
+   "items": [
+    "shell"
    ]
   }
  },
@@ -94330,6 +94380,7 @@
   },
   "markers": {
    "items": [
+    "grave",
     "tree"
    ]
   }
@@ -95253,6 +95304,7 @@
   },
   "markers": {
    "items": [
+    "hops",
     "tree"
    ]
   }
@@ -95785,6 +95837,7 @@
   },
   "markers": {
    "items": [
+    "grave",
     "wheel",
     "key"
    ]
@@ -96100,6 +96153,7 @@
   },
   "markers": {
    "items": [
+    "grave",
     "crown"
    ]
   }
@@ -96619,6 +96673,9 @@
   "markers": {
    "animals": [
     "bird"
+   ],
+   "items": [
+    "windmill"
    ]
   }
  },
@@ -96876,6 +96933,7 @@
     "fish"
    ],
    "items": [
+    "hops",
     "earOfGrain"
    ]
   }
@@ -97266,6 +97324,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "grape"
+   ]
   }
  },
  {
@@ -99274,6 +99337,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "grave"
+   ]
   }
  },
  {
@@ -103840,6 +103908,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "hops"
    ]
   }
  },
@@ -104806,6 +104877,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "windmill"
+   ]
   }
  },
  {
@@ -110976,6 +111052,9 @@
   "markers": {
    "animals": [
     "deer"
+   ],
+   "items": [
+    "windmill"
    ]
   }
  },
@@ -116899,6 +116978,7 @@
   },
   "markers": {
    "items": [
+    "grave",
     "tree",
     "earOfGrain"
    ]
@@ -117741,6 +117821,9 @@
    "animals": [
     "eagle",
     "bird"
+   ],
+   "items": [
+    "windmill"
    ]
   }
  },
@@ -118061,6 +118144,9 @@
   "markers": {
    "animals": [
     "dog"
+   ],
+   "items": [
+    "windmill"
    ]
   }
  },
@@ -121043,6 +121129,9 @@
    "animals": [
     "owl",
     "bird"
+   ],
+   "items": [
+    "windmill"
    ]
   }
  },
@@ -121200,6 +121289,7 @@
   },
   "markers": {
    "items": [
+    "grape",
     "boat"
    ]
   }
@@ -126806,6 +126896,9 @@
   "markers": {
    "animals": [
     "bird"
+   ],
+   "items": [
+    "windmill"
    ]
   }
  },
@@ -127884,6 +127977,7 @@
   },
   "markers": {
    "items": [
+    "hops",
     "walls",
     "flower",
     "earOfGrain"
@@ -128350,6 +128444,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "grape"
+   ]
   }
  },
  {
@@ -128727,6 +128826,7 @@
   },
   "markers": {
    "items": [
+    "grape",
     "earOfGrain"
    ]
   }
@@ -131451,6 +131551,7 @@
   },
   "markers": {
    "items": [
+    "grape",
     "wheel"
    ]
   }
@@ -132760,6 +132861,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "grave"
+   ]
   }
  },
  {
@@ -133411,6 +133517,9 @@
    "animals": [
     "eagle",
     "bird"
+   ],
+   "items": [
+    "windmill"
    ]
   }
  },
@@ -142725,6 +142834,7 @@
     "fish"
    ],
    "items": [
+    "windmill",
     "cross",
     "tree"
    ]
@@ -143421,6 +143531,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "grave"
+   ]
   }
  },
  {

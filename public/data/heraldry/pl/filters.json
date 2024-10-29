@@ -569,6 +569,47 @@
   ],
   "items": [
     {
+      "name": "grave",
+      "phrases": [
+          "grób"
+      ],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "hops",
+      "phrases": [
+          "chmiel",
+          "chmielowe",
+          "chmielu"
+      ],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "grape",
+      "phrases": [
+          "winogron",
+          "winogrono",
+          "winorośl",
+          "winoroślami",
+          "winorośli"
+      ],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "windmill",
+      "phrases": [
+          "wiatrak",
+          "wiatraka",
+          "wiatrakiem",
+          "wiatraków"
+      ],
+      "include": [],
+      "exclude": []
+    },
+    {
       "name": "horseshoe",
       "phrases": ["podkowa", "podkową", "podkowę", "podkowie", "półpodkową"],
       "exclude": ["Herb Izbicy", "Herb Bobowej"],
