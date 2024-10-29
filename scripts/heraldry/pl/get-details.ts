@@ -8,7 +8,7 @@ import cachedMiasta from '../../../public/data/heraldry/pl/miasta-details-data.j
 import cachedPowiaty from '../../../public/data/heraldry/pl/powiaty-details-data.json';
 import cachedWojewodztwa from '../../../public/data/heraldry/pl/wojewodztwa-details-data.json';
 
-import { AdministrativeUnit } from '../../../src/topic/Heraldry/types';
+import { AdministrativeUnit, CoatOfArmsDetailsData } from '../../../src/topic/Heraldry/types';
 
 import { getDetails } from '../utils/get-details';
 
