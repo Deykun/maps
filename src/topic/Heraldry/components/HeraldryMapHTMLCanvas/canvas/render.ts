@@ -5,6 +5,7 @@ import { updateProcessingMap, updateTotalsForImages, updateValueForImages } from
 
 import { CoatOfArms } from './layers/CoatOfArms';
 
+let canvasIndex = 0;
 let canvas = undefined as unknown as HTMLCanvasElement;
 let ctx = undefined as unknown as CanvasRenderingContext2D;
 let currentFrameHash = '';
@@ -26,7 +27,9 @@ type FrameStampData = {
   coatSize: number;
   coatOfArmsIds: string[];
   mapOffset: string;
+  canvasIndex: number,
   canvasWidth: number;
+  windowWidth: number,
   shouldSkipChangeCheck: boolean,
   fetchedSprites: number,
 };
@@ -56,6 +59,14 @@ const getFirstFrameChangeDetected = (a: FrameStampData, b: FrameStampData) => {
     return 'mapOffset';
   }
 
+  if (a.windowWidth !== b.windowWidth) {
+    return 'windowResized';
+  }
+
+  if (a.canvasIndex !== b.canvasIndex) {
+    return 'canvasIndex';
+  }
+
   if (a.shouldSkipChangeCheck !== b.shouldSkipChangeCheck) {
     return 'shouldSkipChangeCheck';
   }
@@ -66,11 +77,14 @@ const getFirstFrameChangeDetected = (a: FrameStampData, b: FrameStampData) => {
 const getFrameStampData = ({ shouldSkipChangeCheck }: { shouldSkipChangeCheck: boolean}): FrameStampData => {
   const fetchedSprites = Object.values(cachedSprites).filter(({ image }) => image.complete).length;
   
+  // All those values should affect currentFrameHash =
   return {
     coatSize,
     coatOfArmsIds: coatOfArmsList.map(({ id }) => id),
     mapOffset: JSON.stringify(mapOffset),
     canvasWidth: canvas?.width || 0,
+    windowWidth: window.innerWidth || 0,
+    canvasIndex,
     shouldSkipChangeCheck,
     fetchedSprites,
   }
@@ -106,6 +120,8 @@ const redrawItems = (redrawFrameHash: string, index: number, total: number) => {
 
     setTimeout(() => redrawItems(redrawFrameHash, index + renderAtOnce, total), 0);
     // setTimeout(() => redrawItems(redrawFrameHash, index + renderAtOnce, total), 300);
+  } else {
+    console.log('Frame was rendered', currentFrameHash);
   }
 }
 
@@ -130,11 +146,16 @@ const renderFrame = ({ shouldSkipChangeCheck = false }: { shouldSkipChangeCheck?
 
   currentFrameHash = [
     'frame',
-    coatOfArmsList.length,
+    lastFrameStampData.coatOfArmsIds.length,
     new Date().getTime(),
-    coatSize,
-    canvas.width,
-  ].join('-')
+    lastFrameStampData.coatSize,
+    lastFrameStampData.canvasWidth,
+    lastFrameStampData.windowWidth,
+    lastFrameStampData.fetchedSprites,
+    lastFrameStampData.shouldSkipChangeCheck ? 'y' : 'n',
+    lastFrameStampData.canvasIndex,
+    // JSON.stringify(lastFrameStampData.mapOffset),
+  ].join('-');
 
   updateProcessingMap({ value: 0, total: coatOfArmsList.length });
   redrawItems(currentFrameHash, 0, coatOfArmsList.length);
@@ -200,6 +221,7 @@ export const render = ({ canvas: initCanvas, ctx: initCtx, mapOffset: initMapOff
         ctx,
       })
     });
+    canvasIndex += 1;
     renderFrame({ shouldSkipChangeCheck: true });
 
     return;
@@ -246,7 +268,9 @@ export const setCoatOfArms = async (units: CoatOfArmsMapData[]) => {
         updateValueForImages(spriteSrc);
 
         if (!isStillFetchingOthers) {
-          renderFrame({ shouldSkipChangeCheck: true });
+          setTimeout(() => {
+            renderFrame({ shouldSkipChangeCheck: true });
+          }, 10);
         }
       }
 
