@@ -153,7 +153,7 @@ const mapOffset: MapOffset = {
     It’s probably a Mercator projection. To calculate the Y position, you need to know the angles
     and do some complex logarithmic calculations.
 
-    This projection is easy, but it's fucking frustrating when you don't know those numbers
+    This projection is easy, but it's frustrating when you don't know those numbers
     and don't want to spend three weeks just calculating trigonometry for spheres.
   */
    minLatTop: 47.3,
@@ -169,7 +169,7 @@ const mapOffset: MapOffset = {
     const skewFactor = percentageY - 0.15;
 
     // It stretches the top a bit, which is a cartographic heresy in itself ;D
-    // Bu it looks better
+    // But it looks better.
     return percentageY + (skewFactor * 0.2);
   }
 }
