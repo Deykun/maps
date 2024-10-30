@@ -21,7 +21,11 @@ export const getXYfromLatLon = ({
   const heightLat = Math.abs(mapOffset.minLatTop - mapOffset.maxLatTop);
 
   const percentageX = (cordinates.lonX - mapOffset.minLonLeft) / widthLon;
-  const percentageY = (mapOffset.maxLatTop - cordinates.latY) / heightLat;
+  let percentageY = (mapOffset.maxLatTop - cordinates.latY) / heightLat;
+
+  if (mapOffset.yModfier) {
+    percentageY = mapOffset.yModfier(percentageY)
+  }
 
   const scaledMapPadding = mapPadding * pixelRatio;
 
