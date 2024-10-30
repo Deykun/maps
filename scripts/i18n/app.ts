@@ -22,6 +22,9 @@ app.get('/', (req: Request, res: Response) => {
       <head>
         <link rel="stylesheet" href="/admin/reset.css">
         <link rel="stylesheet" href="/admin/style.css">
+        <script>
+          window.appLangs = ${JSON.stringify(langs)};
+        </script>
         <script src="/admin/script.js"></script>
       </head>
       <body>
@@ -32,8 +35,12 @@ app.get('/', (req: Request, res: Response) => {
                 <img src="/admin/images/translate.svg" />
               </td>
               ${langs.map((lang) => {
-                return `<th>
+                return `<th data-lang-header="${lang}">
                   ${lang}
+                  <button class="button-copy" data-copy="${lang}">
+                    <span>Kopiuj</span>
+                    <img src="/admin/images/copy.svg" />
+                  </button>
                 </th>
                 `;
               }).join('')}
@@ -43,7 +50,10 @@ app.get('/', (req: Request, res: Response) => {
                 <th>${key}</th>
                 ${langs.map((lang) => {
                   return `<td>            
-                    <textarea>${resources[lang].translation[key] || ''}</textarea>
+                    <textarea
+                      data-field-lang="${lang}"
+                      data-field-key="${key}"
+                    >${resources[lang].translation[key] || ''}</textarea>
                   </td>
                   `;
                 }).join('')}

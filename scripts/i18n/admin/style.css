@@ -27,13 +27,13 @@ table {
     background: var(--bg);
     padding: 5px;
     text-transform: uppercase;
+  }
 
-    img {
-      display: block;
-      margin-left: auto;
-      width: 30px;
-      height: 30px;
-    }
+  img {
+    display: block;
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
   }
 
   th {
@@ -42,6 +42,7 @@ table {
     font-weight: 400;
     letter-spacing: 0.03em;
     padding: 5px;
+    position: relative;
   }
 
   th:first-child {
@@ -52,8 +53,8 @@ table {
 textarea {
   color: var(--text);
   background: var(--bg);
-  border: 2px solid var(--border);
-  font-size: 16px;
+  border: 1px solid var(--border);
+  font-size: 13px;
   resize: vertical;
   min-height: 35px;
   height: 35px;
@@ -70,4 +71,35 @@ textarea {
   &.field-touched {
     border-bottom-color: var(--border-focus);
   }
+}
+
+.button-copy {
+  background-color: #c17f7f;
+  border: none;
+  padding: 5px;
+  margin: 5px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  color: white;
+  border-radius: 4px;
+
+  & img {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.marker-progress {
+  color: white;
+  background-color: #0774ff;
+  padding: 2px 8px;
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  border-radius: 4px;
+  font-size: 10px;
+  letter-spacing: 0.09em;
+  text-align: center;
 }
