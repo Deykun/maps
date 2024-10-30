@@ -1,0 +1,105 @@
+:root {
+  --primary: #d7eb67;
+  --text: white;
+  --bg: #1d2214;
+  --border: #3e4634;
+  --border-focus: var(--primary);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+main {
+  /* width: min(calc(100vw - 32px), 1000px); */
+  margin: 0 auto;
+}
+
+table {
+  tr:first-child {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--bg);
+    padding: 5px;
+    text-transform: uppercase;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+  }
+
+  th {
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    padding: 5px;
+    position: relative;
+  }
+
+  th:first-child {
+    text-align: right;
+  }
+}
+
+textarea {
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  font-size: 13px;
+  resize: vertical;
+  min-height: 35px;
+  height: 35px;
+  width: 250px;
+  padding: 5px;
+  border-radius: 2px;
+  outline-offset: 3px;
+  outline-color: white;
+
+  &:focus {
+    border-color: var(--border-focus);
+  }
+
+  &.field-touched {
+    border-bottom-color: var(--border-focus);
+  }
+}
+
+.button-copy {
+  background-color: #c17f7f;
+  border: none;
+  padding: 5px;
+  margin: 5px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  color: white;
+  border-radius: 4px;
+
+  & img {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.marker-progress {
+  color: white;
+  background-color: #0774ff;
+  padding: 2px 8px;
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  border-radius: 4px;
+  font-size: 10px;
+  letter-spacing: 0.09em;
+  text-align: center;
+}

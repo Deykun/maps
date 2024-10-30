@@ -34,10 +34,13 @@ const userScriptLogger = (params) => {
 };
 
 const domReady = (fn) => {
-  document.addEventListener('DOMContentLoaded', fn);
   if (document.readyState === 'interactive' || document.readyState === 'complete') {
     fn();
+
+    return;
   }
+
+  document.addEventListener('DOMContentLoaded', fn);
 };
 
 const initWikiParser = async () => {

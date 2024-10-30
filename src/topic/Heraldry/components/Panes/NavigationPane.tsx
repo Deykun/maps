@@ -26,6 +26,8 @@ import ButtonIcon from '@/components/UI/ButtonIcon';
 
 import useTrackingStore, { track, toggleCookiesPopup } from '@/topic/Heraldry/features/tracking/stores/trackingStore';
 
+import IconFlag from './NavigationPane/IconFlag';
+
 import './NavigationPane.scss'
 
 type Props = {
@@ -122,7 +124,7 @@ const NavigationPane = ({
           title={t(pathNameLink)}
           isActive={path === `/maps/${langPath}`}
         >
-          <img className="navigation-pane-flag" src={`images/flags/${lang}.svg`} alt={lang} />
+          <IconFlag className="navigation-pane-flag" code={lang} />
           {path === `/maps/${langPath}` && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft"><IconCheck className="h-[10px]" /></span>}
         </ButtonIcon>)}
       </SubPanel>}
@@ -137,17 +139,17 @@ const NavigationPane = ({
           onClick={() => changeLanguage(lang)}
           isActive={i18n.language === lang}
         >
-          <img className="navigation-pane-flag" src={`images/flags/${lang}.svg`} alt={lang} />
+          <IconFlag className="navigation-pane-flag" code={lang} />
           {i18n.language === lang && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft"><IconCheck className="h-[10px]" /></span>}
         </ButtonIcon>)}
         <span className="ui-tooltip ui-tooltip--top">App language</span>
       </SubPanel>}
       {activeMenu === 'settings' && <SubPanel order={2} className="ui-slide-from-left-sidebar z-[-1] absolute left-12 ml-3 flex-row">
         <ButtonIcon
-          label="Cookies"
-          labelPosition="bottomRight"
           onClick={toggleCookiesPopup}
           isActive={isPopupOpen}
+          label="Cookies"
+          labelPosition="bottomRight"
         >
           {didAgreeToGA ? <IconCookies /> : <IconCookie />}
         </ButtonIcon>

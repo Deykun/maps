@@ -1,0 +1,32 @@
+import IconDe from './Flags/De';
+import IconEn from './Flags/En';
+import IconEt from './Flags/Et';
+import IconFi from './Flags/Fi';
+import IconPl from './Flags/Pl';
+
+const iconByCode = {
+  de: IconDe,
+  en: IconEn,
+  et: IconEt,
+  fi: IconFi,
+  pl: IconPl,
+};
+
+const supportedCodes = Object.keys(iconByCode);
+
+type Props = {
+  className?: string,
+  code: string,
+};
+
+const Icon = ({ className, code }: Props) => {
+  const IconForCode = supportedCodes.includes(code) ? iconByCode[code as keyof typeof iconByCode] : null;
+
+  if (!IconForCode) {
+    return null;
+  }
+
+  return <IconForCode className={className} />
+}
+
+export default Icon;
