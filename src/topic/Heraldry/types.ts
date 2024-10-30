@@ -117,6 +117,7 @@ export type MapOffset = {
   maxLatTop: number,
   minLonLeft: number,
   maxLonLeft: number,
+  yModfier?: (percentageY: number) => number,
 }
 
 export type UserScriptDivisionData = {

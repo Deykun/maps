@@ -1,5 +1,5 @@
 import React from 'react';
-import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
+import { CoatOfArmsMapData, MapOffset } from '@/topic/Heraldry/types';
 import {
   updateProcessingTexts,
 } from '@/topic/Heraldry/stores/progressStore';
@@ -148,6 +148,32 @@ const sortForCountryData = (a: CoatOfArmsMapData, b: CoatOfArmsMapData) => {
   return getSortRankFromUnit(a) > getSortRankFromUnit(b) ? 1 : -1;
 }
 
+const mapOffset: MapOffset = {
+  /*
+    It’s probably a Mercator projection. To calculate the Y position, you need to know the angles
+    and do some complex logarithmic calculations.
+
+    This projection is easy, but it's fucking frustrating when you don't know those numbers
+    and don't want to spend three weeks just calculating trigonometry for spheres.
+  */
+   minLatTop: 47.3,
+   maxLatTop: 55.22,
+   minLonLeft: 5.8,
+   maxLonLeft: 15.1,
+   yModfier: (percentageY: number) => {
+    if (percentageY > 0.15) {
+      return percentageY;
+    }
+
+    // Only applies to the top
+    const skewFactor = percentageY - 0.15;
+
+    // It stretches the top a bit, which is a cartographic heresy in itself ;D
+    // Bu it looks better
+    return percentageY + (skewFactor * 0.2);
+  }
+}
+
 const HeraldryDE = () => {
   return (
     <HeraldryMap
@@ -155,16 +181,7 @@ const HeraldryDE = () => {
       mapWrapperClassName="[&>div>svg]:aspect-[461_/_623]"
       mapWrapperClassNameForZoom0="max-w-[40vh]"
       map={SvgMap}
-      mapOffset={{
-        /*
-          It’s probably a Mercator projection. To calculate the Y position, you need to know the angles and do some complex logarithmic calculations.
-          This projection is easy, but it's fucking frustrating when you don't know those numbers and don't want to spend three weeks just calculating trigonometry for spheres.
-        */
-         minLatTop: 47.3,
-         maxLatTop: 55.22,
-         minLonLeft: 5.8,
-         maxLonLeft: 15.1,
-      }}
+      mapOffset={mapOffset}
       dataPaths={[
         '/maps/data/heraldry/de/formerUnit-0',
         '/maps/data/heraldry/de/formerUnit-1',
