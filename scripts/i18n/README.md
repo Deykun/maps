@@ -1,0 +1,1 @@
+I don’t want to use Crowdin, but I would like to have some kind of manager for strings like that.

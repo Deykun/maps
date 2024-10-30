@@ -4,30 +4,7 @@ import intervalPlural from 'i18next-intervalplural-postprocessor';
 
 import { LOCAL_STORAGE } from './constants';
 
-import localeEn from './locales/en.json';
-import localeEt from './locales/et.json';
-import localeDe from './locales/de.json';
-import localeFi from './locales/fi.json';
-import localePl from './locales/pl.json';
-
-// TODO: manage them separated from your code: https://react.i18next.com/guides/multiple-translation-files)
-const resources = {
-  en: {
-    translation: localeEn,
-  },
-  et: {
-    translation: localeEt,
-  },
-  de: {
-    translation: localeDe,
-  },
-  pl: {
-    translation: localePl,
-  },
-  fi: {
-    translation: localeFi,
-  }
-};
+import { resources } from './locales/config'
 
 export const SUPPORTED_LANGS = Object.keys(resources).sort((a, b) => a.localeCompare(b))
 
