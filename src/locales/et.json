@@ -1,5 +1,8 @@
 {
   "main.currentLanguage": "Estonian",
+  "heraldry.et.mapTitle": "Heraldiatunnused Eestis",
+  "heraldry.fi.mapTitle": "Heraldiatunnused Soomes",
+  "heraldry.pl.mapTitle": "Heraldiatunnused Poolas",
   "heraldry.loading.fetching": "Kaardiandmete hankimine..",
   "heraldry.loading.error": "Oops... Andmete laadimisel tekkis viga.",
   "heraldry.noResult": "(tulemust ei leitud)",
@@ -25,9 +28,6 @@
   "heraldry.filterReverse": "Tagurpidi filtrid:",
   "heraldry.filterReverse.yes": "jah",
   "heraldry.filterReverse.no": "ei",
-  "heraldry.et.mapTitle": "Heraldiatunnused Eestis",
-  "heraldry.fi.mapTitle": "Heraldiatunnused Soomes",
-  "heraldry.pl.mapTitle": "Heraldiatunnused Poolas",
   "heraldry.animal.filterTitle": "Loomad",
   "heraldry.animal.withAnimal": "loomaga",
   "heraldry.animal.withoutAnimals": "ilma loomadeta",
