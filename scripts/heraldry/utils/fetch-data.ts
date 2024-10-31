@@ -6,7 +6,7 @@ import pLimit from 'p-limit';
 import { AdministrativeUnit, UserScriptDivisionData } from '../../../src/topic/Heraldry/types';
 
 import { getImageFromThumbnailUrl } from './helpers/images';
-import { locationTitleByCoatOfArmsTitle } from './constants';
+import { locationTitleByCoatOfArmsTitle, locationTitleByImages } from './constants';
 
 const start = (new Date()).getTime();
 const errors: { title: string, url: string, details?: string[] }[] = [];
@@ -347,7 +347,7 @@ const fetchDivisionFromAdministrativeUnit = async (division: AdministrativeUnit,
   return division;
 };
 
-const fetchDivisionFromUserScript= async (division: UserScriptDivisionData, path: string, lang: string, unitNames: string[], indexData: {
+const fetchDivisionFromUserScript = async (division: UserScriptDivisionData, path: string, lang: string, unitNames: string[], indexData: {
   lang: string;
   id: string;
   index: any;
@@ -356,6 +356,11 @@ const fetchDivisionFromUserScript= async (division: UserScriptDivisionData, path
   if (locationTitleByCoatOfArmsTitle[division.title]) {
     locationPages.push(locationTitleByCoatOfArmsTitle[division.title]);
   }
+
+  if (locationTitleByImages[division.thumbnailUrl]) {
+    locationPages.push(locationTitleByImages[division.thumbnailUrl]);
+  }
+
   if (division.locationUrl) {
     const titleOfLocationUrl = ((decodeURI(division.locationUrl).split('/').at(-1) as string) || '').replaceAll('_', ' ');
     locationPages.push(titleOfLocationUrl);
@@ -395,7 +400,7 @@ const fetchDivisionFromUserScript= async (division: UserScriptDivisionData, path
 
     if (!didFetch) {
       failed = failed + 1;
-      console.log(`${chalk.red(`No location was found '${division.locationName}' ${division.sourceTitle}`)}. Page with the location not found.`);
+      console.log(`${chalk.red(`No location was found '${division.title || division.locationName}' ${division.sourceTitle}`)}. Page with the location not found.`);
       console.log(`Tried: ${chalk.yellow(locationPages.join(', '))}`);
       console.log('Those errors are saved to errors.json at the end.');
       console.log(' ')
@@ -406,8 +411,9 @@ const fetchDivisionFromUserScript= async (division: UserScriptDivisionData, path
         console.log(chalk.red(error));
       })
       errors.push({
-        title: `Missing corrdinates for '${division.locationName}' ${division.sourceTitle}. Page with the location not found.`,
+        title: `Missing corrdinates for '${division.title || division.locationName}' ${division.sourceTitle}. Page with the location not found.`,
         details: [`Tried pages: ${locationPages.join(', ')}.`,
+          `Images: ${division.thumbnailUrl}`,
           'You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.',
           '',
           'Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.',
@@ -449,10 +455,10 @@ const fetchDivisionFromUserScript= async (division: UserScriptDivisionData, path
       }
 
       if (!coordinates.lon) {
-        console.log(chalk.red(`Missing corrdinates for '${division.locationName}' ${division.sourceTitle}. No data.`));
+        console.log(chalk.red(`Missing corrdinates for '${division.title || division.locationName}' ${division.sourceTitle}. No data.`));
         console.log(chalk.red(division.source));
         errors.push({
-          title: `Missing corrdinates for '${division.locationName}' ${division.sourceTitle}. No data.`,
+          title: `Missing corrdinates for '${division.title || division.locationName}' ${division.sourceTitle}. No data.`,
           url: division.source,
         });
       }

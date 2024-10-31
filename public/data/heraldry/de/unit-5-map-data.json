@@ -1,6 +1,240 @@
 [
  {
   "lang": "de",
+  "index": 13292,
+  "id": "city-13292",
+  "title": "Amt Creuzburg",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Wartburgkreis",
+  "type": [
+   "city",
+   "amt",
+   "ortsteil"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen im Wartburgkreis | Wappen der Ortsteile",
+   "coordinates": {
+    "lat": 51.05138889,
+    "lon": 10.24472222
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/28859b2c-amt-creuzburg-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/28859b2c-amt-creuzburg-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 13293,
+  "id": "city-13293",
+  "title": "Bad Salzungen",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Wartburgkreis",
+  "type": [
+   "city",
+   "ortsteil"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen im Wartburgkreis | Wappen der Ortsteile",
+   "coordinates": {
+    "lat": 50.81208,
+    "lon": 10.23345
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/3408fb18-bad-salzungen-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/3408fb18-bad-salzungen-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 13294,
+  "id": "city-13294",
+  "title": "Amt Creuzburg",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Wartburgkreis",
+  "type": [
+   "city",
+   "amt",
+   "ortsteil"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen im Wartburgkreis | Wappen der Ortsteile",
+   "coordinates": {
+    "lat": 51.05138889,
+    "lon": 10.24472222
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/4203a046-amt-creuzburg-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/4203a046-amt-creuzburg-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 13295,
+  "id": "city-13295",
+  "title": "Bad Salzungen",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Wartburgkreis",
+  "type": [
+   "city",
+   "ortsteil"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen im Wartburgkreis | Wappen der Ortsteile",
+   "coordinates": {
+    "lat": 50.81208,
+    "lon": 10.23345
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/7e5b494b-bad-salzungen-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/7e5b494b-bad-salzungen-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 13296,
+  "id": "city-13296",
+  "title": "Werra-Suhl-Tal",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Wartburgkreis",
+  "type": [
+   "city",
+   "ortsteil"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen im Wartburgkreis | Wappen der Ortsteile",
+   "coordinates": {
+    "lat": 50.93944444,
+    "lon": 10.07
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/3408fb18-werrasuhltal-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/3408fb18-werrasuhltal-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 13297,
+  "id": "gemeinde-13297",
+  "title": "Hörselberg-Hainich",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Wartburgkreis",
+  "type": [
+   "gemeinde",
+   "ortsteil"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen im Wartburgkreis | Wappen der Ortsteile",
+   "coordinates": {
+    "lat": 50.99055556,
+    "lon": 10.43305556
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/6dcf31a9-horselberghainich-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/6dcf31a9-horselberghainich-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 13298,
+  "id": "gemeinde-13298",
+  "title": "Barchfeld-Immelborn",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Wartburgkreis",
+  "type": [
+   "gemeinde",
+   "ortsteil"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen im Wartburgkreis | Wappen der Ortsteile",
+   "coordinates": {
+    "lat": 50.80055556,
+    "lon": 10.30388889
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/43adca30-barchfeldimmelborn-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/43adca30-barchfeldimmelborn-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 13299,
+  "id": "gemeinde-13299",
+  "title": "Krayenberggemeinde",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Wartburgkreis",
+  "type": [
+   "gemeinde",
+   "ortsteil"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen im Wartburgkreis | Wappen der Ortsteile",
+   "coordinates": {
+    "lat": 50.83611111,
+    "lon": 10.08638889
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/58e7fa83-krayenberggemeinde-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/58e7fa83-krayenberggemeinde-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 13300,
   "id": "city-13300",
   "title": "Ruhla",
