@@ -63,3 +63,23 @@
 .map-wrapper {
   container-type: inline-size;
 }
+
+.popup-with-question {
+  @apply bg-black text-white gap-10 p-4 flex-col items-end md:flex-row md:items-center rounded-[12px];
+
+  letter-spacing: 0.02em;
+  transform: scale(0.9) translateY(250px);
+  animation: slideInPopupWithQuestion 0.2s ease-out forwards;
+  animation: slideInPopupWithQuestion 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.2) forwards;
+  animation-delay: 0.7s;
+  margin-bottom: 50px;
+
+  @media (min-width: 640px) {
+    margin-bottom: 0;
+  }
+}
+
+@keyframes slideInPopupWithQuestion {
+  0% { transform: scale(0.9) translateY(250px); }
+  100% { transform: scale(1) translateY(0); }
+}

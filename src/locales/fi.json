@@ -163,7 +163,8 @@
   "heraldry.loading.status.fetchingImages": "Bilder werden abgerufen",
   "heraldry.loading.status.fetchingFilters": "Filter werden abgerufen",
   "heraldry.loading.status.processingMap": "Karte wird gerendert",
-  "settings.cookies.text": "Voimmeko seurata toimintaasi <b>Google Analyticsilla</b>?",
-  "settings.cookies.rejectGA": "Ei",
-  "settings.cookies.acceptAll": "Kyllä"
+  "settings.cookies.text": "Tämän sivuston asianmukaista toimintaa varten käytetään <b>selaimen välimuistia</b>.<br /><br />Valitsemalla <b>\"Hyväksy kaikki\"</b> suostut myös valinnaiseen toiminnan seurantaan, kuten tietojen keräämiseen <b>Google Analyticsin</b> kautta.",
+  "settings.cookies.acceptRequired": "Hyväksy vaaditut",
+  "settings.cookies.acceptAll": "Hyväksy kaikki",
+  "settings.language.text": "Voit valita kartan kielen."
 }

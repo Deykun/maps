@@ -191,7 +191,8 @@
   "heraldry.loading.status.fetchingFilters": "Filter werden abgerufen",
   "heraldry.loading.status.fetchingFiltersTexts": "Text für benutzerdefinierte Filter wird abgerufen",
   "heraldry.loading.status.processingMap": "Karte wird gerendert",
-  "settings.cookies.text": "Dürfen wir Ihre Aktivität mit <b>Google Analytics</b> verfolgen?",
-  "settings.cookies.rejectGA": "Nein",
-  "settings.cookies.acceptAll": "Ja"
+  "settings.cookies.text": "Für die ordnungsgemäße Funktionalität dieser Seite wird <b>der Cache Ihres Browsers</b> verwendet.<br /><br />Durch die Auswahl von <b>„Alle akzeptieren“</b> stimmen Sie auch der optionalen Verfolgung Ihrer Aktivitäten zu, wie z. B. der Datensammlung über <b>Google Analytics</b>.",
+  "settings.cookies.acceptRequired": "Erforderliche akzeptieren",
+  "settings.cookies.acceptAll": "Alle akzeptieren",
+  "settings.language.text": "Du kannst die Sprache der Karte wählen."
 }

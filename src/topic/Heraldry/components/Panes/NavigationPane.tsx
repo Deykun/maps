@@ -30,15 +30,7 @@ import IconFlag from './NavigationPane/IconFlag';
 
 import './NavigationPane.scss'
 
-type Props = {
-  shouldHintLang?: boolean,
-  setShouldHintLang?: (value: boolean) => void,
-}
-
-const NavigationPane = ({
-  shouldHintLang,
-  setShouldHintLang,
-}: Props) => {
+const NavigationPane = () => {
   const didAgreeToGA = useTrackingStore(state => state.didAgreeToGA);
   const isPopupOpen = useTrackingStore(state => state.isPopupOpen);
   const [wasLangChanged, setWasLangChanged] = useState(false);
@@ -46,21 +38,11 @@ const NavigationPane = ({
   const { t, i18n } = useTranslation();
   const [path] = useLocation();
 
-  useEffect(() => {
-    if (shouldHintLang) {
-      setActiveMenu('language');
-    }
-  }, [shouldHintLang])
-
   const toggleMenu = (name: string) => () => setActiveMenu((v) => v === name ? '' : name); 
 
   // Not the nicest solution, but it works
   useOutsideClick('#navigation-pane', () => {
     setActiveMenu('');
-
-    if (setShouldHintLang) {
-      setShouldHintLang(false);
-    }
   });
 
   const changeLanguage = (lang: string) => {
@@ -68,10 +50,6 @@ const NavigationPane = ({
     setWasLangChanged(true);
     localStorage.setItem(LOCAL_STORAGE.MAPS_USER_LANG, lang);
     track({ name: `lang_changed_to_${lang}`, withCountry: true });
-
-    if (setShouldHintLang) {
-      setShouldHintLang(false);
-    }
   }
 
   return (
@@ -130,9 +108,6 @@ const NavigationPane = ({
       </SubPanel>}
       {activeMenu === 'language' && <SubPanel order={1} className={clsx(
         'ui-slide-from-left-sidebar !z-[-1] absolute left-12 ml-3 flex-row',
-        'ui-tooltip-wrapper', {
-          'ui-tooltip-wrapper--active ': shouldHintLang,
-        }
       )}>
         {SUPPORTED_LANGS.map((lang) => <ButtonIcon
           key={lang}
@@ -142,7 +117,6 @@ const NavigationPane = ({
           <IconFlag className="navigation-pane-flag" code={lang} />
           {i18n.language === lang && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft"><IconCheck className="h-[10px]" /></span>}
         </ButtonIcon>)}
-        <span className="ui-tooltip ui-tooltip--top">App language</span>
       </SubPanel>}
       {activeMenu === 'settings' && <SubPanel order={2} className="ui-slide-from-left-sidebar z-[-1] absolute left-12 ml-3 flex-row">
         <ButtonIcon
