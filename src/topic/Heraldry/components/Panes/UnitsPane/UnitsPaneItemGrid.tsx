@@ -8,10 +8,9 @@ import { setDetailsUnit } from '@/topic/Heraldry/stores/unitsPaneStore';
 type Props = {
   className?: string,
   unit: CoatOfArmsMapData,
-  labelPosition?: 'bottomLeft' | 'bottomRight'
 }
 
-const UnitsPaneItemGrid = ( { className, unit, labelPosition = 'bottomRight' }: Props) => {
+const UnitsPaneItemGrid = ( { className, unit }: Props) => {
   const imagePath = (unit.imagesList || []).find(({ width }) => width === '80w')?.path;
 
   const {
@@ -41,11 +40,7 @@ const UnitsPaneItemGrid = ( { className, unit, labelPosition = 'bottomRight' }: 
           }}
           data-src={imagePath}
         />
-          <span
-            className={clsx('ui-tooltip text-left', {
-              [`ui-tooltip--${labelPosition}`]: labelPosition,
-            })}
-          >
+          <span className="ui-tooltip text-left ui-tooltip--bottomLeft">
             {getShortTitle(unit.lang, unit.title).split(' ').map((word, index) => <span key={word}>
               {index !== 0 && (word.length > 3 ? ' ' : <br />)}{word}
             </span>)}

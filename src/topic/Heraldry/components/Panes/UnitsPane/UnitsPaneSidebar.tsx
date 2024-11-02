@@ -77,91 +77,92 @@ const UnitsPaneSidebar = ({
   const itemsToShow = pageSize * (filterPage + 1);
 
   return (
-    <div className="ui-slide-from-right-sidebar no-scrollbar fixed top-0 right-0 z-[-1] w-[400px] max-w-[100vw] max-h-[100dvh] overflow-auto">
-      <div className="bg-ui-dark text-ui-dark-contrast p-[12px] pr-[60px] rounded-bl-[18px] flex flex-col gap-[12px] relative">
-        {detailsUnit ?
-          <UnitsPaneSidebarDetailsContent />
-          : <>
-            <h3 className="flex gap-3 items-center text-[14px]">
-              <IconCoatOfArms className="size-5 text-white" />
-              <span>{t('heraldry.list.title')}</span>
-            </h3>
-            <div className="sticky top-0 z-[1] -my-[12px] py-[12px] bg-ui-dark rounded-b-[12px]">
-              <Panel className="ui-panel--rounded-l ui-panel--rounded-r">
-                <UnitsPaneSearchInput />
-                <div className="mt-2 flex gap-1">
-                  <ButtonIcon
-                    size="small"
-                    isActive={shouldUseGridLayout}
-                    isDisabled={!canUseGrid}
-                    onClick={() => setLayout('grid')}
-                    label={t('heraldry.list.labelGrid')}
-                    labelPosition="bottomRight"
-                  >
-                    <IconLayoutGrid />
-                  </ButtonIcon>
-                  <ButtonIcon
-                    size="small"
-                    isActive={!shouldUseGridLayout}
-                    onClick={() => setLayout('list')}
-                    label={t('heraldry.list.labelList')}
-                    labelPosition="bottomRight"
-                  >
-                    <IconLayoutList />
-                  </ButtonIcon>
-                  <UnitsPaneBulkDevActions />
-                  <ButtonIcon
-                    wrapperClassName="ml-auto"
-                    size="small"
-                    isDisabled={searchPhrase.length === 0 && selectedPaneUnits.length === 0}
-                    onClick={handleClear}
-                    label={t('heraldry.list.clear')}
-                    labelPosition="bottomLeft"
-                  >
-                    <IconEraser />
-                  </ButtonIcon>
-                </div>
+    <div className="ui-slide-from-right-sidebar no-scrollbar fixed top-0 right-0 z-[-1] w-[100vw] max-h-[100dvh] overflow-auto pointer-events-none">
+      <div className="ml-auto w-[400px] max-w-[100vw]">
+        <div className="bg-ui-dark text-ui-dark-contrast p-[12px] pr-[60px] rounded-bl-[18px] flex flex-col gap-[12px] relative pointer-events-auto">
+          {detailsUnit ?
+            <UnitsPaneSidebarDetailsContent />
+            : <>
+              <h3 className="flex gap-3 items-center text-[14px]">
+                <IconCoatOfArms className="size-5 text-white" />
+                <span>{t('heraldry.list.title')}</span>
+              </h3>
+              <div className="sticky top-0 z-[1] -my-[12px] py-[12px] bg-ui-dark rounded-b-[12px]">
+                <Panel className="ui-panel--rounded-l ui-panel--rounded-r">
+                  <UnitsPaneSearchInput />
+                  <div className="mt-2 flex gap-1">
+                    <ButtonIcon
+                      size="small"
+                      isActive={shouldUseGridLayout}
+                      isDisabled={!canUseGrid}
+                      onClick={() => setLayout('grid')}
+                      label={t('heraldry.list.labelGrid')}
+                      labelPosition="bottomRight"
+                    >
+                      <IconLayoutGrid />
+                    </ButtonIcon>
+                    <ButtonIcon
+                      size="small"
+                      isActive={!shouldUseGridLayout}
+                      onClick={() => setLayout('list')}
+                      label={t('heraldry.list.labelList')}
+                      labelPosition="bottomRight"
+                    >
+                      <IconLayoutList />
+                    </ButtonIcon>
+                    <UnitsPaneBulkDevActions />
+                    <ButtonIcon
+                      wrapperClassName="ml-auto"
+                      size="small"
+                      isDisabled={searchPhrase.length === 0 && selectedPaneUnits.length === 0}
+                      onClick={handleClear}
+                      label={t('heraldry.list.clear')}
+                      labelPosition="bottomLeft"
+                    >
+                      <IconEraser />
+                    </ButtonIcon>
+                  </div>
+                </Panel>
+              </div>
+              <Panel className="ui-panel--rounded-l ui-panel--rounded-r text-[14px]">
+                {units.length === 0 && <p className="text-center my-2">{t('heraldry.noResult')}</p>}
+                {shouldUseGridLayout && <ul className="flex flex-wrap gap-[6px] empty:hidden">
+                  {units.slice(0, itemsToShow).map((unit) => <UnitsPaneItemGrid
+                    key={unit.id}
+                    unit={unit}
+                  />)}
+                </ul>}
+                {!shouldUseGridLayout && <ul className="flex flex-col gap-2 empty:hidden">
+                  {units.slice(0, itemsToShow).map((unit) => <UnitsPaneItemList
+                    key={unit.id}
+                    unit={unit}
+                  />)}
+                </ul>}
+                {units.length > itemsToShow && 
+                <div className={clsx("mt-2 text-center")}>
+                  <button className="snap-center" onClick={() => setFilterPage(filterPage + 1)}>
+                    {t('heraldry.list.showMore')} <small>({units.length - itemsToShow})</small>
+                  </button>
+                </div>}
               </Panel>
-            </div>
-            <Panel className="ui-panel--rounded-l ui-panel--rounded-r text-[14px]">
-              {units.length === 0 && <p className="text-center my-2">{t('heraldry.noResult')}</p>}
-              {shouldUseGridLayout && <ul className="flex flex-wrap gap-[6px] empty:hidden">
-                {units.slice(0, itemsToShow).map((unit, index) => <UnitsPaneItemGrid
-                  key={unit.id}
-                  unit={unit}
-                  labelPosition={[(index + 2) % 5, (index + 1) % 5].includes(0) ? 'bottomLeft' : 'bottomRight'}
-                />)}
-              </ul>}
-              {!shouldUseGridLayout && <ul className="flex flex-col gap-2 empty:hidden">
-                {units.slice(0, itemsToShow).map((unit) => <UnitsPaneItemList
-                  key={unit.id}
-                  unit={unit}
-                />)}
-              </ul>}
-              {units.length > itemsToShow && 
-              <div className={clsx("mt-2 text-center")}>
-                <button className="snap-center" onClick={() => setFilterPage(filterPage + 1)}>
-                  {t('heraldry.list.showMore')} <small>({units.length - itemsToShow})</small>
-                </button>
-              </div>}
+              <Panel className="ui-panel--rounded-l ui-panel--rounded-r bg-black">
+                <small className="block text-[10px]">
+                  {t('heraldry.list.footer')}
+                </small>
+                <a
+                  href="https://github.com/Deykun/maps/issues"
+                  target="_blank"
+                  className="text-[10px] sm:text-[12px] text-white font-[500]"
+                >
+                  github.com/Deykun/maps/issues
+                  <IconGithub className="inline size-5 fill-white ml-2" />
+                </a>
             </Panel>
-            <Panel className="ui-panel--rounded-l ui-panel--rounded-r bg-black">
-              <small className="block text-[10px]">
-                {t('heraldry.list.footer')}
-              </small>
-              <a
-                href="https://github.com/Deykun/maps/issues"
-                target="_blank"
-                className="text-[10px] sm:text-[12px] text-white font-[500]"
-              >
-                github.com/Deykun/maps/issues
-                <IconGithub className="inline size-5 fill-white ml-2" />
-              </a>
-          </Panel>
-          </>
-        }
+            </>
+          }
+        </div>
+        <Space side="right" isLast isLarge className="bg-ui-dark mb-5" />
       </div>
-      <Space side="right" isLast isLarge className="bg-ui-dark mb-5" />
     </div>
   );
 }

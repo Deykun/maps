@@ -30,7 +30,7 @@ const CookiesPane = () => {
         className="text-[12px]"
         dangerouslySetInnerHTML={{ __html: t('settings.cookies.text') }}
       />
-      <div className="flex flex-col justify-center items-center gap-2">      
+      <div className="flex flex-row-reverse sm:flex-col justify-center items-center gap-2">      
         <ButtonText
           className="hover:!bg-[#c4ee6842]"
           onClick={acceptAll}

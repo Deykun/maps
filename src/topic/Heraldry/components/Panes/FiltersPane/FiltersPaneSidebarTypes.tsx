@@ -70,53 +70,55 @@ const FiltersPaneSidebarTypes = ({
   const activeTotal = filters.length + (shouldIgnoreFormer ? 1 : 0);
 
   return (
-    <div className="ui-slide-from-right-sidebar no-scrollbar fixed top-0 right-0 z-[-1] w-[400px] max-w-[100vw] max-h-[100svh] overflow-auto">
-      <div className="bg-ui-dark text-ui-dark-contrast p-[12px] pr-[60px] rounded-bl-[18px] flex flex-col gap-[12px] relative">
-        <h3 className="flex gap-3 items-center text-[14px]">
-          <IconBuilding className="size-5 text-white" />
-          <span>
-            {t('heraldry.unit.filterTitle')}
-          </span>
-        </h3>
-        <FiltersPaneFilters
-          clickType={clickType}
-          setClickType={setClickType}
-          sortBy={sortBy}
-          setSortBy={setSortBy}
-          clearFilters={clearFilters}
-          activeTotal={activeTotal}
-        >
-          {hasFormerTypes &&
-            <ButtonText
-              size="small"
-              onClick={toggleShouldIgnoreFormer}
-              isActive={shouldIgnoreFormer}
-              isOnLight
-            >
-              <IconScriptBroken />
-              <span>{t('heraldry.unit.ignoreFormerUnits')}</span>
-            </ButtonText>
-          }
-        </FiltersPaneFilters>
-        {filtersList.length > 0 && <ul>
-          {filtersList.sort(getSorter({ sortBy, tBase: `heraldry.unit.type.${lang}.`, t })).map(({ value, total }) => <li
-            key={value}
-            className="block pl-4"
+    <div className="ui-slide-from-right-sidebar no-scrollbar fixed top-0 right-0 z-[-1] w-[100vw] max-h-[100dvh] overflow-auto pointer-events-none">
+      <div className="ml-auto w-[400px] max-w-[100vw]">
+        <div className="bg-ui-dark text-ui-dark-contrast p-[12px] pr-[60px] rounded-bl-[18px] flex flex-col gap-[12px] relative pointer-events-auto">
+          <h3 className="flex gap-3 items-center text-[14px]">
+            <IconBuilding className="size-5 text-white" />
+            <span>
+              {t('heraldry.unit.filterTitle')}
+            </span>
+          </h3>
+          <FiltersPaneFilters
+            clickType={clickType}
+            setClickType={setClickType}
+            sortBy={sortBy}
+            setSortBy={setSortBy}
+            clearFilters={clearFilters}
+            activeTotal={activeTotal}
           >
-            <FiltersPaneFilter
-              type={clickType}
-              isSelected={filters.includes(value)}
-              isDisabled={shouldIgnoreFormer && value.startsWith('former')}
-              onChange={() => handleToggle(value)}
-              label={t(`heraldry.unit.type.${lang}.${value}`)}
-              total={total}
-            >            
-              {value.startsWith('former') && <IconScriptBroken className="size-3 flex-shrink-0" />}
-            </FiltersPaneFilter>
-          </li>)}
-        </ul>}
+            {hasFormerTypes &&
+              <ButtonText
+                size="small"
+                onClick={toggleShouldIgnoreFormer}
+                isActive={shouldIgnoreFormer}
+                isOnLight
+              >
+                <IconScriptBroken />
+                <span>{t('heraldry.unit.ignoreFormerUnits')}</span>
+              </ButtonText>
+            }
+          </FiltersPaneFilters>
+          {filtersList.length > 0 && <ul>
+            {filtersList.sort(getSorter({ sortBy, tBase: `heraldry.unit.type.${lang}.`, t })).map(({ value, total }) => <li
+              key={value}
+              className="block pl-4"
+            >
+              <FiltersPaneFilter
+                type={clickType}
+                isSelected={filters.includes(value)}
+                isDisabled={shouldIgnoreFormer && value.startsWith('former')}
+                onChange={() => handleToggle(value)}
+                label={t(`heraldry.unit.type.${lang}.${value}`)}
+                total={total}
+              >            
+                {value.startsWith('former') && <IconScriptBroken className="size-3 flex-shrink-0" />}
+              </FiltersPaneFilter>
+            </li>)}
+          </ul>}
+        </div>
+        <Space side="right" isLast isLarge className="bg-ui-dark mb-5" />
       </div>
-      <Space side="right" isLast isLarge className="bg-ui-dark mb-5" />
     </div>
   );
 }

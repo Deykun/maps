@@ -57,38 +57,40 @@ const FiltersPaneSidebarItems = ({
   const activeTotal = filters.length;
 
   return (
-    <div className="ui-slide-from-right-sidebar no-scrollbar fixed top-0 right-0 z-[-1] w-[400px] max-w-[100vw] max-h-[100dvh] overflow-auto">
-      <div className="bg-ui-dark text-ui-dark-contrast p-[12px] pr-[60px] rounded-bl-[18px] flex flex-col gap-[12px] relative">
-        <h3 className="flex gap-3 items-center text-[14px]">
-          <IconCrown className="size-5 text-white" />
-          <span>
-            {t('heraldry.item.filterTitle')}
-          </span>
-        </h3>
-        <FiltersPaneFilters
-          clickType={clickType}
-          setClickType={setClickType}
-          sortBy={sortBy}
-          setSortBy={setSortBy}
-          clearFilters={clearFilters}
-          activeTotal={activeTotal}
-        />
-        {filtersList.length > 0 && <ul>
-          {filtersList.sort(getSorter({ sortBy, tBase: `heraldry.item.`, t })).map(({ value, total }) => <li
-            key={value}
-            className="block pl-4"
-          >
-            <FiltersPaneFilter
-              type={clickType}
-              isSelected={filters.includes(value)}
-              onChange={() => handleToggle(value)}
-              label={t(`heraldry.item.${value}`)}
-              total={total}
-            />
-          </li>)}
-        </ul>}
+    <div className="ui-slide-from-right-sidebar no-scrollbar fixed top-0 right-0 z-[-1] w-[100vw] max-h-[100dvh] overflow-auto pointer-events-none">
+      <div className="ml-auto w-[400px] max-w-[100vw]">
+        <div className="bg-ui-dark text-ui-dark-contrast p-[12px] pr-[60px] rounded-bl-[18px] flex flex-col gap-[12px] relative pointer-events-auto">
+          <h3 className="flex gap-3 items-center text-[14px]">
+            <IconCrown className="size-5 text-white" />
+            <span>
+              {t('heraldry.item.filterTitle')}
+            </span>
+          </h3>
+          <FiltersPaneFilters
+            clickType={clickType}
+            setClickType={setClickType}
+            sortBy={sortBy}
+            setSortBy={setSortBy}
+            clearFilters={clearFilters}
+            activeTotal={activeTotal}
+          />
+          {filtersList.length > 0 && <ul>
+            {filtersList.sort(getSorter({ sortBy, tBase: `heraldry.item.`, t })).map(({ value, total }) => <li
+              key={value}
+              className="block pl-4"
+            >
+              <FiltersPaneFilter
+                type={clickType}
+                isSelected={filters.includes(value)}
+                onChange={() => handleToggle(value)}
+                label={t(`heraldry.item.${value}`)}
+                total={total}
+              />
+            </li>)}
+          </ul>}
+        </div>
+        <Space side="right" isLast isLarge className="bg-ui-dark mb-5" />
       </div>
-      <Space side="right" isLast isLarge className="bg-ui-dark mb-5" />
     </div>
   );
 }
