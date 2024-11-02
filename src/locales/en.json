@@ -197,7 +197,8 @@
   "heraldry.loading.status.fetchingFilters": "Fetching filters",
   "heraldry.loading.status.fetchingFiltersTexts": "Fetching text for custom filters",
   "heraldry.loading.status.processingMap": "Rendering map",
-  "settings.cookies.text": "Can we track your activity using <b>Google Analytics</b>?",
-  "settings.cookies.rejectGA": "No",
-  "settings.cookies.acceptAll": "Yes"
+  "settings.cookies.text": "For proper functionality, this site utilizes <b>your browser's cache</b>.<br /><br />By choosing <b>\"Accept All\"</b>, you also consent to optional tracking of your activity, such as data collection via <b>Google Analytics</b>.",
+  "settings.cookies.acceptRequired": "Accept required",
+  "settings.cookies.acceptAll": "Accept all",
+  "settings.language.text": "You can choose the language of the map."
 }

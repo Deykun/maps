@@ -175,7 +175,8 @@
   "heraldry.loading.status.fetchingFilters": "Pobieranie filtrów",
   "heraldry.loading.status.fetchingFiltersTexts": "Pobieranie tekstów do filtrów",
   "heraldry.loading.status.processingMap": "Renderowanie mapy",
-  "settings.cookies.text": "Czy możemy badać Twoją aktywność za pomocą <b>Google Analytics</b>?",
-  "settings.cookies.rejectGA": "Nie",
-  "settings.cookies.acceptAll": "Tak"
+  "settings.cookies.text": "Aby ta strona działała prawidłowo, korzysta z <b>pamięci podręcznej przeglądarki</b>.<br /><br />Wybierając <b>„Akceptuj wszystko”</b>, wyrażasz również zgodę na opcjonalne śledzenie twojej aktywności, takie jak zbieranie danych za pośrednictwem <b>Google Analytics</b>.",
+  "settings.cookies.acceptRequired": "Zakceptuj wymagane",
+  "settings.cookies.acceptAll": "Akceptuj wszystko",
+  "settings.language.text": "Możesz wybrać język mapy."
 }

@@ -1,6 +1,62 @@
 [
  {
   "lang": "de",
+  "index": 2669,
+  "id": "city-2669",
+  "title": "Senden (Bayern)",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Neu-Ulm",
+  "type": [
+   "city"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Neu-Ulm | Wappen der Städte, Märkte und Gemeinden",
+   "coordinates": {
+    "lat": 48.32361111,
+    "lon": 10.04416667
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/79c2d9c3-senden-bayern-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/79c2d9c3-senden-bayern-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 2670,
+  "id": "gemeinde-2670",
+  "title": "Unterroth",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Neu-Ulm",
+  "type": [
+   "gemeinde"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Neu-Ulm | Wappen der Städte, Märkte und Gemeinden",
+   "coordinates": {
+    "lat": 48.19693,
+    "lon": 10.17074
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/e11e724-unterroth-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/e11e724-unterroth-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 2671,
   "id": "city-2671",
   "title": "Vöhringen (Iller)",
@@ -26369,6 +26425,62 @@
  },
  {
   "lang": "de",
+  "index": 3673,
+  "id": "land-3673",
+  "title": "Lichtenau (Mittelfranken)",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_mit_dem_N%C3%BCrnberger_Stadtwappen",
+  "type": [
+   "land"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen mit dem Nürnberger Stadtwappen | Das Nürnberger Wappen in Wappen von Gebietskörperschaften und Verwaltungseinheiten",
+   "coordinates": {
+    "lat": 49.27694444,
+    "lon": 10.68527778
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/1058dacc-lichtenau-mittelfranken-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/1058dacc-lichtenau-mittelfranken-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 3674,
+  "id": "land-3674",
+  "title": "Neunkirchen am Sand",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_mit_dem_N%C3%BCrnberger_Stadtwappen",
+  "type": [
+   "land"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen mit dem Nürnberger Stadtwappen | Das Nürnberger Wappen in Wappen von Gebietskörperschaften und Verwaltungseinheiten",
+   "coordinates": {
+    "lat": 49.524305,
+    "lon": 11.318941
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/1911dc0a-neunkirchen-am-sand-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/1911dc0a-neunkirchen-am-sand-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 3683,
   "id": "land-3683",
   "title": "Bayern",
@@ -26392,6 +26504,62 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/unit/1c28b88e-bayern-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 3691,
+  "id": "land-3691",
+  "title": "Lichtenau (Mittelfranken)",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_mit_dem_N%C3%BCrnberger_Stadtwappen",
+  "type": [
+   "land"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen mit dem Nürnberger Stadtwappen | Kleines Nürnberger Wappen",
+   "coordinates": {
+    "lat": 49.27694444,
+    "lon": 10.68527778
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/1058dacc-lichtenau-mittelfranken-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/1058dacc-lichtenau-mittelfranken-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 3692,
+  "id": "land-3692",
+  "title": "Neunkirchen am Sand",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_mit_dem_N%C3%BCrnberger_Stadtwappen",
+  "type": [
+   "land"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen mit dem Nürnberger Stadtwappen | Kleines Nürnberger Wappen",
+   "coordinates": {
+    "lat": 49.524305,
+    "lon": 11.318941
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/1911dc0a-neunkirchen-am-sand-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/1911dc0a-neunkirchen-am-sand-320w.webp"
    }
   ]
  },
@@ -27977,6 +28145,34 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/unit/626a8214-elbeelster-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 3773,
+  "id": "kreis-3773",
+  "title": "Herzberg (Elster)",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Elbe-Elster",
+  "type": [
+   "kreis"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Elbe-Elster | Landkreis Elbe-Elster und Vorgängerkreise",
+   "coordinates": {
+    "lat": 51.6925,
+    "lon": 13.23555556
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/509fd4ad-herzberg-elster-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/509fd4ad-herzberg-elster-320w.webp"
    }
   ]
  },
@@ -36754,6 +36950,34 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/unit/77b2dbb-uckermark-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 4103,
+  "id": "kreis-4103",
+  "title": "Herzberg (Elster)",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Brandenburg",
+  "type": [
+   "kreis"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen in Brandenburg | Ehemalige Landkreise",
+   "coordinates": {
+    "lat": 51.6925,
+    "lon": 13.23555556
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/509fd4ad-herzberg-elster-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/509fd4ad-herzberg-elster-320w.webp"
    }
   ]
  },
@@ -69887,234 +70111,6 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/unit/879819b-samtgemeinde-borde-lamst-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 5387,
-  "id": "gemeinde-5387",
-  "title": "Samtgemeinde Hemmoor",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Cuxhaven",
-  "type": [
-   "gemeinde"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Cuxhaven | Samtgemeinden",
-   "coordinates": {
-    "lat": 53.7,
-    "lon": 9.11666667
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/47b61b97-samtgemeinde-hemmoor-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/47b61b97-samtgemeinde-hemmoor-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 5388,
-  "id": "land-5388",
-  "title": "Samtgemeinde Land Hadeln",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Cuxhaven",
-  "type": [
-   "land"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Cuxhaven | Samtgemeinden",
-   "coordinates": {
-    "lat": 53.80769167,
-    "lon": 8.903175
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/55d257fb-samtgemeinde-land-hadeln-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/55d257fb-samtgemeinde-land-hadeln-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 5389,
-  "id": "land-5389",
-  "title": "Samtgemeinde Am Dobrock",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Cuxhaven",
-  "type": [
-   "land",
-   "gemeinde"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Cuxhaven | Ehemalige Samtgemeinden",
-   "coordinates": {
-    "lat": 53.77083333,
-    "lon": 9.05833333
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/33d1921-samtgemeinde-am-dobrock-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/33d1921-samtgemeinde-am-dobrock-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 5390,
-  "id": "city-5390",
-  "title": "Samtgemeinde Bederkesa",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Cuxhaven",
-  "type": [
-   "city",
-   "gemeinde"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Cuxhaven | Ehemalige Samtgemeinden",
-   "coordinates": {
-    "lat": 53.625,
-    "lon": 8.84138889
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/7e591573-samtgemeinde-bederkesa-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/7e591573-samtgemeinde-bederkesa-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 5391,
-  "id": "gemeinde-5391",
-  "title": "Samtgemeinde Beverstedt",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Cuxhaven",
-  "type": [
-   "gemeinde"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Cuxhaven | Ehemalige Samtgemeinden",
-   "coordinates": {
-    "lat": 53.435,
-    "lon": 8.81916667
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/6c815efa-samtgemeinde-beverstedt-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/6c815efa-samtgemeinde-beverstedt-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 5392,
-  "id": "land-5392",
-  "title": "Samtgemeinde Hadeln",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Cuxhaven",
-  "type": [
-   "land",
-   "gemeinde"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Cuxhaven | Ehemalige Samtgemeinden",
-   "coordinates": {
-    "lat": 53.811667,
-    "lon": 8.9001
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/55d257fb-samtgemeinde-hadeln-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/55d257fb-samtgemeinde-hadeln-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 5393,
-  "id": "gemeinde-5393",
-  "title": "Samtgemeinde Hagen",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Cuxhaven",
-  "type": [
-   "gemeinde"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Cuxhaven | Ehemalige Samtgemeinden",
-   "coordinates": {
-    "lat": 53.36666667,
-    "lon": 8.65
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/724a14cf-samtgemeinde-hagen-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/724a14cf-samtgemeinde-hagen-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 5394,
-  "id": "land-5394",
-  "title": "Samtgemeinde Sietland",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Cuxhaven",
-  "type": [
-   "land",
-   "gemeinde"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Cuxhaven | Ehemalige Samtgemeinden",
-   "coordinates": {
-    "lat": 53.73333333,
-    "lon": 8.91666667
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/1496735a-samtgemeinde-sietland-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/1496735a-samtgemeinde-sietland-320w.webp"
    }
   ]
  }

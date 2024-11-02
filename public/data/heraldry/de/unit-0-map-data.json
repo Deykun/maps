@@ -11017,6 +11017,34 @@
  },
  {
   "lang": "de",
+  "index": 413,
+  "id": "kreis-413",
+  "title": "Landkreis Heilbronn",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Heilbronn",
+  "type": [
+   "kreis"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Heilbronn | Landkreiswappen Heilbronn",
+   "coordinates": {
+    "lat": 49.13694444,
+    "lon": 9.22694444
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/4e19e50-heilbronn-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/4e19e50-heilbronn-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 415,
   "id": "gemeinde-415",
   "title": "Bad Friedrichshall",
@@ -26972,6 +27000,34 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/unit/5ac23e81-oberkochen-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 1013,
+  "id": "city-1013",
+  "title": "Schwäbisch Gmünd",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Ostalbkreis",
+  "type": [
+   "city"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen im Ostalbkreis | Städtewappen im Ostalbkreis",
+   "coordinates": {
+    "lat": 48.8,
+    "lon": 9.8
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/42cc7a13-schwabisch-gmund-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/42cc7a13-schwabisch-gmund-320w.webp"
    }
   ]
  },
@@ -69977,62 +70033,6 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/unit/76ba69a0-roggenburg-bayern-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 2669,
-  "id": "city-2669",
-  "title": "Senden (Bayern)",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Neu-Ulm",
-  "type": [
-   "city"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Neu-Ulm | Wappen der Städte, Märkte und Gemeinden",
-   "coordinates": {
-    "lat": 48.32361111,
-    "lon": 10.04416667
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/79c2d9c3-senden-bayern-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/79c2d9c3-senden-bayern-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 2670,
-  "id": "gemeinde-2670",
-  "title": "Unterroth",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Neu-Ulm",
-  "type": [
-   "gemeinde"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Neu-Ulm | Wappen der Städte, Märkte und Gemeinden",
-   "coordinates": {
-    "lat": 48.19693,
-    "lon": 10.17074
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/e11e724-unterroth-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/e11e724-unterroth-320w.webp"
    }
   ]
  }

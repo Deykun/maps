@@ -175,3 +175,11 @@ export const locationTitleByCoatOfArmsTitle = {
   'Anjalan vaakuna': 'Anjalan kartano',
   'Vanajan vaakuna': 'Vanaja (Suomen entinen kunta)',
 } as const;
+
+export const locationTitleByImages = {
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Wappen_Landkreis_Heilbronn_alt.svg/108px-Wappen_Landkreis_Heilbronn_alt.svg.png': 'Landkreis Heilbronn',
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/DEU_Schwaebisch_Gmuend_COA.svg/93px-DEU_Schwaebisch_Gmuend_COA.svg.png': 'Schwäbisch Gmünd',
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/DEU_Lichtenau_COA.svg/46px-DEU_Lichtenau_COA.svg.png': 'Lichtenau (Mittelfranken)',
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/DEU_Neunkirchen_am_Sand_COA.svg/46px-DEU_Neunkirchen_am_Sand_COA.svg.png': 'Neunkirchen am Sand',
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Wappen_Landkreis_Herzberg.jpg/120px-Wappen_Landkreis_Herzberg.jpg': 'Herzberg (Elster)',
+} as const;

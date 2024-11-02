@@ -3,8 +3,6 @@ import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 import { useDraggable } from "react-use-draggable-scroll";
 
-import { isLanguageSupported } from '@/utils/lang';
-
 import { LOCAL_STORAGE } from '@/constants';
 
 import { useFiltersDevelopmentStore } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
@@ -23,6 +21,7 @@ import UnitsPane from '@/topic/Heraldry/components/Panes/UnitsPane';
 import FiltersPane from '@/topic/Heraldry/components/Panes/FiltersPane';
 
 import CookiesPane from '@/topic/Heraldry/features/tracking/components/CookiesPane';
+import NotYourLangPane from '@/topic/Heraldry/features/langHint/components/NotYourLangPane';
 
 import HeraldryTitle from '@/topic/Heraldry/components/HeraldryTitle/HeraldryTitle';
 import HeraldryFooter from '@/topic/Heraldry/components/HeraldryFooter/HeraldryFooter';
@@ -74,7 +73,6 @@ const HeraldryMapContainerWithUI = ({
   isFetchingDetails = false,
 }: Props) => {
     const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
-    const [shouldHintLang, setShouldHintLang] = useState(false);
     const [zoomLevel, setZoomLevel] = useState(1);
     const [coatSize, setCoatSize] = useState(4);
     const customFilter = useFiltersDevelopmentStore(state => state.filter);
@@ -94,10 +92,6 @@ const HeraldryMapContainerWithUI = ({
       const userHasLangugeSet = Boolean(localStorage.getItem(LOCAL_STORAGE.MAPS_USER_LANG))
       if (!userHasLangugeSet) {
         i18n.changeLanguage(lang);
-
-        if (!isLanguageSupported(lang)) {
-          setShouldHintLang(true);
-        }
       }
     }, [i18n]);
 
@@ -158,10 +152,7 @@ const HeraldryMapContainerWithUI = ({
             'hidden md:flex': zoomLevel > 1 && subtitleParts.length !== 0,
           })}>
             <Space side="left" />
-            <NavigationPane
-              shouldHintLang={shouldHintLang}
-              setShouldHintLang={setShouldHintLang}
-            />
+            <NavigationPane />
             <DevelopmentPane
               country={lang}
               unitTypes={developmentModeFiltersTypes || typeFiltersList.map(({ value }) => value)}
@@ -185,7 +176,7 @@ const HeraldryMapContainerWithUI = ({
               setShouldFetchDetails={setShouldFetchDetails}
             />
             <Space side="right" />
-            <FiltersPane      
+            <FiltersPane
               lang={lang}
               totalVisibleUnits={unitsForMap.length}
               typeFiltersList={typeFiltersList}
@@ -198,8 +189,17 @@ const HeraldryMapContainerWithUI = ({
             />
             <Space side="right" isLast />
           </div>
-          <HeraldryProgressbar />    
-          <CookiesPane />
+          <HeraldryProgressbar />
+          <div className={clsx(
+            'fixed bottom-[50px] left-1/2 -translate-x-1/2',
+            'flex flex-col gap-2 empty:hidden',
+            'w-[calc(100vw_-24px)] sm:w-auto max-w-[600px]',
+            'pointer-events-none',
+            '[&_>_div]:hidden [&_>_div:first-child]:flex',
+          )}>
+            <NotYourLangPane lang={lang} />
+            <CookiesPane />
+          </div>
         </>
     );
 };

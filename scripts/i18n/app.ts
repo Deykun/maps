@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename); // get the name of the directory
 import { resources } from '../../src/locales/config';
 
 const keys = Object.keys(resources.en.translation);
-const langs = Object.keys(resources);
+const langs = Object.keys(resources).sort((a, b) => a.localeCompare(b));
 
 const app = express();
 const port = 3000;

@@ -1,6 +1,234 @@
 [
  {
   "lang": "de",
+  "index": 5387,
+  "id": "gemeinde-5387",
+  "title": "Samtgemeinde Hemmoor",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Cuxhaven",
+  "type": [
+   "gemeinde"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Cuxhaven | Samtgemeinden",
+   "coordinates": {
+    "lat": 53.7,
+    "lon": 9.11666667
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/47b61b97-samtgemeinde-hemmoor-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/47b61b97-samtgemeinde-hemmoor-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 5388,
+  "id": "land-5388",
+  "title": "Samtgemeinde Land Hadeln",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Cuxhaven",
+  "type": [
+   "land"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Cuxhaven | Samtgemeinden",
+   "coordinates": {
+    "lat": 53.80769167,
+    "lon": 8.903175
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/55d257fb-samtgemeinde-land-hadeln-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/55d257fb-samtgemeinde-land-hadeln-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 5389,
+  "id": "land-5389",
+  "title": "Samtgemeinde Am Dobrock",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Cuxhaven",
+  "type": [
+   "land",
+   "gemeinde"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Cuxhaven | Ehemalige Samtgemeinden",
+   "coordinates": {
+    "lat": 53.77083333,
+    "lon": 9.05833333
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/33d1921-samtgemeinde-am-dobrock-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/33d1921-samtgemeinde-am-dobrock-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 5390,
+  "id": "city-5390",
+  "title": "Samtgemeinde Bederkesa",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Cuxhaven",
+  "type": [
+   "city",
+   "gemeinde"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Cuxhaven | Ehemalige Samtgemeinden",
+   "coordinates": {
+    "lat": 53.625,
+    "lon": 8.84138889
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/7e591573-samtgemeinde-bederkesa-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/7e591573-samtgemeinde-bederkesa-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 5391,
+  "id": "gemeinde-5391",
+  "title": "Samtgemeinde Beverstedt",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Cuxhaven",
+  "type": [
+   "gemeinde"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Cuxhaven | Ehemalige Samtgemeinden",
+   "coordinates": {
+    "lat": 53.435,
+    "lon": 8.81916667
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/6c815efa-samtgemeinde-beverstedt-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/6c815efa-samtgemeinde-beverstedt-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 5392,
+  "id": "land-5392",
+  "title": "Samtgemeinde Hadeln",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Cuxhaven",
+  "type": [
+   "land",
+   "gemeinde"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Cuxhaven | Ehemalige Samtgemeinden",
+   "coordinates": {
+    "lat": 53.811667,
+    "lon": 8.9001
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/55d257fb-samtgemeinde-hadeln-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/55d257fb-samtgemeinde-hadeln-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 5393,
+  "id": "gemeinde-5393",
+  "title": "Samtgemeinde Hagen",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Cuxhaven",
+  "type": [
+   "gemeinde"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Cuxhaven | Ehemalige Samtgemeinden",
+   "coordinates": {
+    "lat": 53.36666667,
+    "lon": 8.65
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/724a14cf-samtgemeinde-hagen-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/724a14cf-samtgemeinde-hagen-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 5394,
+  "id": "land-5394",
+  "title": "Samtgemeinde Sietland",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Cuxhaven",
+  "type": [
+   "land",
+   "gemeinde"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Cuxhaven | Ehemalige Samtgemeinden",
+   "coordinates": {
+    "lat": 53.73333333,
+    "lon": 8.91666667
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/1496735a-samtgemeinde-sietland-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/1496735a-samtgemeinde-sietland-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 5395,
   "id": "land-5395",
   "title": "Samtgemeinde Land Wursten",
@@ -70364,230 +70592,6 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/unit/6a258c84-harspelt-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 7984,
-  "id": "gemeinde-7984",
-  "title": "Herzfeld (Eifel)",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Eifelkreis_Bitburg-Pr%C3%BCm",
-  "type": [
-   "gemeinde"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Eifelkreis Bitburg-Prüm | Verbandsgemeinde Arzfeld",
-   "coordinates": {
-    "lat": 50.13305556,
-    "lon": 6.20944444
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/1256c70d-herzfeld-eifel-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/1256c70d-herzfeld-eifel-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 7985,
-  "id": "gemeinde-7985",
-  "title": "Irrhausen",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Eifelkreis_Bitburg-Pr%C3%BCm",
-  "type": [
-   "gemeinde"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Eifelkreis Bitburg-Prüm | Verbandsgemeinde Arzfeld",
-   "coordinates": {
-    "lat": 50.08055556,
-    "lon": 6.2125
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/3efa2134-irrhausen-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/3efa2134-irrhausen-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 7986,
-  "id": "gemeinde-7986",
-  "title": "Jucken (Gemeinde)",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Eifelkreis_Bitburg-Pr%C3%BCm",
-  "type": [
-   "gemeinde"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Eifelkreis Bitburg-Prüm | Verbandsgemeinde Arzfeld",
-   "coordinates": {
-    "lat": 50.055,
-    "lon": 6.23055556
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/6a258c84-jucken-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/6a258c84-jucken-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 7987,
-  "id": "gemeinde-7987",
-  "title": "Kesfeld",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Eifelkreis_Bitburg-Pr%C3%BCm",
-  "type": [
-   "gemeinde"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Eifelkreis Bitburg-Prüm | Verbandsgemeinde Arzfeld",
-   "coordinates": {
-    "lat": 50.15305556,
-    "lon": 6.23305556
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/15fb0aad-kesfeld-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/15fb0aad-kesfeld-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 7988,
-  "id": "gemeinde-7988",
-  "title": "Kickeshausen",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Eifelkreis_Bitburg-Pr%C3%BCm",
-  "type": [
-   "gemeinde"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Eifelkreis Bitburg-Prüm | Verbandsgemeinde Arzfeld",
-   "coordinates": {
-    "lat": 50.06805556,
-    "lon": 6.23861111
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/6a258c84-kickeshausen-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/6a258c84-kickeshausen-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 7989,
-  "id": "gemeinde-7989",
-  "title": "Kinzenburg",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Eifelkreis_Bitburg-Pr%C3%BCm",
-  "type": [
-   "gemeinde"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Eifelkreis Bitburg-Prüm | Verbandsgemeinde Arzfeld",
-   "coordinates": {
-    "lat": 50.12027778,
-    "lon": 6.34027778
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/59ebb4c8-kinzenburg-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/59ebb4c8-kinzenburg-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 7990,
-  "id": "gemeinde-7990",
-  "title": "Krautscheid",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Eifelkreis_Bitburg-Pr%C3%BCm",
-  "type": [
-   "gemeinde"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Eifelkreis Bitburg-Prüm | Verbandsgemeinde Arzfeld",
-   "coordinates": {
-    "lat": 50.06416667,
-    "lon": 6.33055556
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/64a44e9-krautscheid-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/64a44e9-krautscheid-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 7991,
-  "id": "gemeinde-7991",
-  "title": "Lambertsberg",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Eifelkreis_Bitburg-Pr%C3%BCm",
-  "type": [
-   "gemeinde"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Eifelkreis Bitburg-Prüm | Verbandsgemeinde Arzfeld",
-   "coordinates": {
-    "lat": 50.09138889,
-    "lon": 6.39
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/10005a4f-lambertsberg-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/10005a4f-lambertsberg-320w.webp"
    }
   ]
  }
