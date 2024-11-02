@@ -49,63 +49,65 @@ const DevelopmentPaneSidebarCustomFilter = ({
   }, []);
 
   return (
-    <div className="ui-slide-from-left-sidebar fixed top-0 left-0 z-[-1] w-[400px] max-w-[100vw] max-h-[100dvh] overflow-auto no-scrollbar">
-      <div className="bg-ui-dark text-ui-dark-contrast p-[12px] pl-[60px] rounded-br-[18px] flex flex-col gap-[12px] relative">
-        <h3 className="flex gap-3 items-center text-[14px]">
-          <IconSelectNew className="size-5 text-white" />
-          <span>
-            Create a custom filter
-          </span>
-        </h3>
-        <Panel className="ui-panel--rounded-l ui-panel--rounded-r gap-2">
-          <input
-            onChange={handleChange}
-            name="name"
-            className="block w-full text-[12px] bg-ui-contrast text-ui-dark placeholder-ui-dark caret-marker rounded-full py-2 px-4"
-            placeholder='name (ex. "eagle", "apple")'
-            defaultValue={draftFilter.name}
-          />
-          <textarea
-            onChange={handleChange}
-            name="phrases"
-            className="block w-full text-[12px] bg-ui-contrast text-ui-dark placeholder-ui-dark caret-marker rounded-[8px] py-2 px-4 min-h-[200px]"
-            placeholder='phrases (ex. "eagle, eagles", "apple, apples")'
-            defaultValue={draftFilter.phrases?.join(', ')}
-            spellCheck="false"
-          />
-        </Panel>
-        <div className="flex gap-2 mt-5">
-          <ButtonText
-            onClick={() => {
-              const value = localStorage.getItem('draft');
+    <div className="ui-slide-from-left-sidebar fixed top-0 left-0 z-[-1] max-h-[100dvh] overflow-auto no-scrollbar">
+      <div className="mr-auto w-[400px] max-w-[100vw]">
+        <div className="bg-ui-dark text-ui-dark-contrast p-[12px] pl-[60px] rounded-br-[18px] flex flex-col gap-[12px] relative">
+          <h3 className="flex gap-3 items-center text-[14px]">
+            <IconSelectNew className="size-5 text-white" />
+            <span>
+              Create a custom filter
+            </span>
+          </h3>
+          <Panel className="ui-panel--rounded-l ui-panel--rounded-r gap-2">
+            <input
+              onChange={handleChange}
+              name="name"
+              className="block w-full text-[12px] bg-ui-contrast text-ui-dark placeholder-ui-dark caret-marker rounded-full py-2 px-4"
+              placeholder='name (ex. "eagle", "apple")'
+              defaultValue={draftFilter.name}
+            />
+            <textarea
+              onChange={handleChange}
+              name="phrases"
+              className="block w-full text-[12px] bg-ui-contrast text-ui-dark placeholder-ui-dark caret-marker rounded-[8px] py-2 px-4 min-h-[200px]"
+              placeholder='phrases (ex. "eagle, eagles", "apple, apples")'
+              defaultValue={draftFilter.phrases?.join(', ')}
+              spellCheck="false"
+            />
+          </Panel>
+          <div className="flex gap-2 mt-5">
+            <ButtonText
+              onClick={() => {
+                const value = localStorage.getItem('draft');
 
-              if (value) {
-                setDraftFilter(JSON.parse(value));
-              }
-            }}
-          >
-            <span>Load</span>
-            <IconFolderDownload />
-          </ButtonText>
-          <ButtonText
-            onClick={() => localStorage.setItem('draft', JSON.stringify(draftFilter))}
-            isDisabled={!draftFilter}
-          >
-            <span>Save</span>
-            <IconFolderUpload />
-          </ButtonText>
-          <ButtonText
-            wrapperClassName="ml-auto"
-            isActive={Boolean(draftFilter)}
-            onClick={() => copyText(`${JSON.stringify(draftFilter, null, 4)},`)}
-          >
-            <span>{t('main.copy')}</span>
-            <IconCopy />
-          </ButtonText>
+                if (value) {
+                  setDraftFilter(JSON.parse(value));
+                }
+              }}
+            >
+              <span>Load</span>
+              <IconFolderDownload />
+            </ButtonText>
+            <ButtonText
+              onClick={() => localStorage.setItem('draft', JSON.stringify(draftFilter))}
+              isDisabled={!draftFilter}
+            >
+              <span>Save</span>
+              <IconFolderUpload />
+            </ButtonText>
+            <ButtonText
+              wrapperClassName="ml-auto"
+              isActive={Boolean(draftFilter)}
+              onClick={() => copyText(`${JSON.stringify(draftFilter, null, 4)},`)}
+            >
+              <span>{t('main.copy')}</span>
+              <IconCopy />
+            </ButtonText>
+          </div>
+          {draftFilter && <DevelopmentPaneSnippet {...draftFilter} />}
         </div>
-        {draftFilter && <DevelopmentPaneSnippet {...draftFilter} />}
+        <Space side="left" isLast isLarge className="bg-ui-dark mb-5" />
       </div>
-      <Space side="left" isLast isLarge className="bg-ui-dark mb-5" />
     </div>
   );
 }

@@ -32,7 +32,6 @@ const UnitsPane = ({
   const [isOpen, setIsOpen] = useState(false);
   const [layout, setLayout] = useState<'grid' | 'list'>('grid');
   const [filteredUnits, setFilteredUnits] = useState(units);
-  const [selectedPaneUnits, setSelectedPaneUnits] = useState<CoatOfArmsMapData[]>([]);
 
   const { t } = useTranslation();
 
@@ -103,8 +102,6 @@ const UnitsPane = ({
       </Panel>
       {isOpen && <UnitsPaneSidebar
         units={filteredUnits}
-        setSelectedPaneUnits={setSelectedPaneUnits}
-        selectedPaneUnits={selectedPaneUnits}
         layout={layout}
         setLayout={setLayout}
       />}

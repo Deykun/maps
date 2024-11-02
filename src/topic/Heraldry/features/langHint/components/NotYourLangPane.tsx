@@ -44,7 +44,7 @@ const NotYourLangPane = ({ lang }: Props) => {
 
   return (
     <Panel className="popup-with-question">
-      <div className="text-[12px]">
+      <div className="text-[12px] text-center">
         <p
           dangerouslySetInnerHTML={{ __html: t('settings.language.text', { lng: suggestedLang }) }}
         />
@@ -53,7 +53,7 @@ const NotYourLangPane = ({ lang }: Props) => {
           className="mt-1 opacity-70"
         />
       </div>
-      <div className="flex justify-center items-center gap-2">
+      <div className="flex flex-wrap sm:flex-nowrap justify-center items-center gap-2">
         <ButtonText
           className="hover:!bg-[#c4ee6842]"
           onClick={() => changeLanguage(lang)}
