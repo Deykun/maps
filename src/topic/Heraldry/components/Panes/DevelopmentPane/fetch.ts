@@ -14,9 +14,10 @@ export const fetchTitlesAndDescriptions = async ({ country, unitTypes }: { count
     ).then(
       (byKey) => {
         updateValueForFiltersTexts(unit);
-        
-      return Object.values(byKey) as AdministrativeUnitIndex[];
-    })
+
+        return Object.values(byKey) as AdministrativeUnitIndex[];
+      }
+    ),
   ));
 
   return devData.flatMap((unit) => unit);
