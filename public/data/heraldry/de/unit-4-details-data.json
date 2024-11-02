@@ -72310,6 +72310,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -91920,6 +91925,7 @@
   },
   "markers": {
    "items": [
+    "windmill",
     "tree"
    ]
   }
@@ -92052,6 +92058,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "fish"
+   ],
    "items": [
     "walls"
    ]
@@ -97461,6 +97470,14 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "fish"
+   ],
+   "items": [
+    "windmill"
+   ]
   }
  },
  {
@@ -102069,6 +102086,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "earOfGrain"
+   ]
   }
  },
  {

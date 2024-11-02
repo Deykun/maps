@@ -601,6 +601,10 @@
         {
           "imageHash": "24dd41e5",
           "note": "Kreis Wiedenbrück"
+        },
+        {
+          "imageHash": "c0327fc",
+          "note": "Gundheim"
         }
       ],
       "exclude": [
@@ -1627,6 +1631,14 @@
         {
           "imageHash": "2d19ba6e",
           "note": "Samtgemeinde Ostheide"
+        },
+        {
+          "imageHash": "18b76857",
+          "note": "Baden-Württemberg"
+        },
+        {
+          "imageHash": "6ac5bbe9",
+          "note": "Steinbach-Hallenberg"
         }
       ],
       "exclude": []
@@ -4542,6 +4554,10 @@
         {
           "imageHash": "7dfb6ee7",
           "note": "Rengsdorf"
+        },
+        {
+          "imageHash": "530bb8ca",
+          "note": "Rüscheid"
         }
       ],
       "exclude": []
@@ -4574,6 +4590,10 @@
         {
           "imageHash": "43c5d6c5",
           "note": "Gescher"
+        },
+        {
+          "imageHash": "1bab161b",
+          "note": "Pleizenhausen"
         }
       ],
       "exclude": []
@@ -4980,6 +5000,10 @@
         {
           "imageHash": "147b3569",
           "note": "Hübingen"
+        },
+        {
+          "imageHash": "53993fa",
+          "note": "Lauter (Oberfranken)"
         }
       ],
       "exclude": [
@@ -5114,6 +5138,10 @@
         {
           "imageHash": "127fdc7e",
           "note": "Frankfurt-Sossenheim"
+        },
+        {
+          "imageHash": "7a4883f0",
+          "note": "Höchstenbach"
         }
       ],
       "exclude": []
@@ -5330,6 +5358,18 @@
         {
           "imageHash": "7519d9eb",
           "note": "Ruschweiler"
+        },
+        {
+          "imageHash": "6aca24f1",
+          "note": "Flomborn"
+        },
+        {
+          "imageHash": "8b506b1",
+          "note": "Stördorf"
+        },
+        {
+          "imageHash": "32befe4a",
+          "note": "Bekmünde"
         }
       ],
       "exclude": []
@@ -6263,6 +6303,10 @@
         {
           "imageHash": "48a11bf4",
           "note": "Lykershausen"
+        },
+        {
+          "imageHash": "73ba217a",
+          "note": "Lichtenfels (Hessen)"
         }
       ],
       "exclude": []
@@ -6684,7 +6728,28 @@
         "weintraube",
         "weintrauben"
       ],
-      "include": [],
+      "include": [
+        {
+          "imageHash": "533da99e",
+          "note": "Westhofen"
+        },
+        {
+          "imageHash": "57c09ebd",
+          "note": "Monzernheim"
+        },
+        {
+          "imageHash": "cf11ed0",
+          "note": "Gundersheim"
+        },
+        {
+          "imageHash": "6000165a",
+          "note": "Gau-Heppenheim"
+        },
+        {
+          "imageHash": "5a331eae",
+          "note": "Wirmsthal"
+        }
+      ],
       "exclude": []
     },
     {
@@ -6727,7 +6792,20 @@
         "windmühlenflügel",
         "windmühlenflügeln"
       ],
-      "include": [],
+      "include": [
+        {
+          "imageHash": "530bb8ca",
+          "note": "Rüscheid"
+        },
+        {
+          "imageHash": "8b506b1",
+          "note": "Stördorf"
+        },
+        {
+          "imageHash": "4030f91e",
+          "note": "Amt Itzehoe-Land"
+        }
+      ],
       "exclude": []
     },
     {
@@ -6852,6 +6930,10 @@
         {
           "imageHash": "54b3afa8",
           "note": "Samtgemeinde Bevensen-Ebstorf"
+        },
+        {
+          "imageHash": "5db0b88d",
+          "note": "Roßbach (Westerwald)"
         }
       ],
       "exclude": []
@@ -6886,6 +6968,18 @@
         {
           "imageHash": "63e1ef66",
           "note": "Rettenbergen"
+        },
+        {
+          "imageHash": "7f67731c",
+          "note": "Polch"
+        },
+        {
+          "imageHash": "43d8045f",
+          "note": "Verbandsgemeinde Maifeld"
+        },
+        {
+          "imageHash": "57c09ebd",
+          "note": "Monzernheim"
         }
       ]
     },
@@ -6948,7 +7042,12 @@
         "weidenbaum",
         "weidenzweig"
       ],
-      "exclude": [],
+      "exclude": [
+        {
+          "imageHash": "4c92e0f7",
+          "note": "Eibensbach"
+        }
+      ],
       "include": [
         {
           "imageHash": "6fdae640",
@@ -7049,6 +7148,70 @@
         {
           "imageHash": "60a36715",
           "note": "Wakendorf I"
+        },
+        {
+          "imageHash": "1bab161b",
+          "note": "Pleizenhausen"
+        },
+        {
+          "imageHash": "6de582b8",
+          "note": "Mandern"
+        },
+        {
+          "imageHash": "6aca24f1",
+          "note": "Flomborn"
+        },
+        {
+          "imageHash": "6ac5bbe9",
+          "note": "Steinbach-Hallenberg"
+        },
+        {
+          "imageHash": "3fc5aa48",
+          "note": "Steinbach-Hallenberg"
+        },
+        {
+          "imageHash": "68b821b8",
+          "note": "Rodenbach bei Puderbach"
+        },
+        {
+          "imageHash": "6039022a",
+          "note": "Welkenbach"
+        },
+        {
+          "imageHash": "79569150",
+          "note": "Elsdorf (Rheinland)"
+        },
+        {
+          "imageHash": "69a89b5f",
+          "note": "Becke (Hemer)"
+        },
+        {
+          "imageHash": "3e45a274",
+          "note": "Upsprunge"
+        },
+        {
+          "imageHash": "37c20da",
+          "note": "Barkhausen (Gnarrenburg)"
+        },
+        {
+          "imageHash": "3d92b758",
+          "note": "Heeßel (Hemmoor)"
+        },
+        {
+          "imageHash": "749862a2",
+          "note": "Hackemühlen"
+        },
+        {
+          "imageHash": "be89920",
+          "note": "Altenhof (bei Eckernförde)"
+        },
+        {
+          "imageHash": "6920192a",
+          "note": "Vögelsen"
+        },
+        {
+          "imageHash": "7d974946",
+          "note": "Samtgemeinde Gellersen"
         }
       ]
     },
@@ -7231,6 +7394,50 @@
         {
           "imageHash": "36a455f1",
           "note": "Sulzbach (Rhein-Lahn-Kreis)"
+        },
+        {
+          "imageHash": "3f27ba5f",
+          "note": "Tholey"
+        },
+        {
+          "imageHash": "7c5dca9d",
+          "note": "Aschach (Bad Bocklet)"
+        },
+        {
+          "imageHash": "45906c83",
+          "note": "Engelstadt"
+        },
+        {
+          "imageHash": "8306d65",
+          "note": "Almersbach"
+        },
+        {
+          "imageHash": "7e7aa848",
+          "note": "Bergheim"
+        },
+        {
+          "imageHash": "5a47c01c",
+          "note": "Weisweiler"
+        },
+        {
+          "imageHash": "56a3f48f",
+          "note": "Nothberg"
+        },
+        {
+          "imageHash": "245e2285",
+          "note": "Samtgemeinde Thedinghausen"
+        },
+        {
+          "imageHash": "1fc53682",
+          "note": "Thedinghausen"
+        },
+        {
+          "imageHash": "466262e",
+          "note": "Karlshöfen"
+        },
+        {
+          "imageHash": "10475e82",
+          "note": "Kirchgellersen"
         }
       ]
     },
@@ -7307,6 +7514,14 @@
         {
           "imageHash": "675995d3",
           "note": "Niederfischbach"
+        },
+        {
+          "imageHash": "340b7f7d",
+          "note": "Oberdreis"
+        },
+        {
+          "imageHash": "4ede0c3c",
+          "note": "Dürwiß"
         }
       ],
       "exclude": []
@@ -7338,6 +7553,18 @@
         {
           "imageHash": "426bbd6a",
           "note": "Kail"
+        },
+        {
+          "imageHash": "512f5b74",
+          "note": "Stockheim (Brackenheim)"
+        },
+        {
+          "imageHash": "7246d53b",
+          "note": "Neuching"
+        },
+        {
+          "imageHash": "4ac9e9c1",
+          "note": "Mündersbach"
         }
       ],
       "exclude": []
@@ -7403,6 +7630,30 @@
         {
           "imageHash": "58444294",
           "note": "Batenhorst"
+        },
+        {
+          "imageHash": "6de582b8",
+          "note": "Mandern"
+        },
+        {
+          "imageHash": "519bd530",
+          "note": "Bermersheim"
+        },
+        {
+          "imageHash": "6ee6cc42",
+          "note": "Rickenbach (Hotzenwald)"
+        },
+        {
+          "imageHash": "1e916068",
+          "note": "Harpolingen"
+        },
+        {
+          "imageHash": "4f957d19",
+          "note": "Hohenfelde (Stormarn)"
+        },
+        {
+          "imageHash": "10475e82",
+          "note": "Kirchgellersen"
         }
       ],
       "exclude": []
@@ -7422,7 +7673,16 @@
     {
       "name": "arrow",
       "phrases": ["pfeil", "pfeile", "pfeilen", "pfeils"],
-      "include": [],
+      "include": [
+        {
+          "imageHash": "2055becb",
+          "note": "Schnorbach"
+        },
+        {
+          "imageHash": "4c92e0f7",
+          "note": "Eibensbach"
+        }
+      ],
       "exclude": []
     },
     {
@@ -7444,6 +7704,34 @@
         {
           "imageHash": "33792262",
           "note": "Amt Serkenrode"
+        },
+        {
+          "imageHash": "3ebe3896",
+          "note": "Dintesheim"
+        },
+        {
+          "imageHash": "724b6e13",
+          "note": "Alsheim"
+        },
+        {
+          "imageHash": "7152bb1f",
+          "note": "Unterjesingen"
+        },
+        {
+          "imageHash": "64b54552",
+          "note": "Pfronstetten"
+        },
+        {
+          "imageHash": "637787f3",
+          "note": "Rippolingen"
+        },
+        {
+          "imageHash": "58b196d1",
+          "note": "Bücken"
+        },
+        {
+          "imageHash": "10475e82",
+          "note": "Kirchgellersen"
         }
       ],
       "exclude": []
@@ -7530,6 +7818,18 @@
         {
           "imageHash": "10be29dd",
           "note": "Brekendorf"
+        },
+        {
+          "imageHash": "569a86d8",
+          "note": "Pflaumheim"
+        },
+        {
+          "imageHash": "8306d65",
+          "note": "Almersbach"
+        },
+        {
+          "imageHash": "4ac9e9c1",
+          "note": "Mündersbach"
         }
       ],
       "exclude": []
@@ -7613,6 +7913,10 @@
         {
           "imageHash": "3ab9825",
           "note": "Bühnsdorf"
+        },
+        {
+          "imageHash": "37640c9e",
+          "note": "Tuchenbach"
         }
       ],
       "exclude": []
@@ -7653,7 +7957,20 @@
         "wurfbeile",
         "zimmermannsbeil"
       ],
-      "include": [],
+      "include": [
+        {
+          "imageHash": "5e227450",
+          "note": "Frauenzimmern"
+        },
+        {
+          "imageHash": "52c1699b",
+          "note": "Bühl (Tübingen)"
+        },
+        {
+          "imageHash": "32b31d58",
+          "note": "Partenheim"
+        }
+      ],
       "exclude": []
     },
     {
@@ -7700,6 +8017,14 @@
         {
           "imageHash": "3a380c25",
           "note": "Borod"
+        },
+        {
+          "imageHash": "8306d65",
+          "note": "Almersbach"
+        },
+        {
+          "imageHash": "6039022a",
+          "note": "Welkenbach"
         }
       ],
       "exclude": []
@@ -7720,7 +8045,12 @@
     {
       "name": "angel",
       "phrases": ["engel", "engelskopf", "erzengel"],
-      "include": [],
+      "include": [
+        {
+          "imageHash": "45906c83",
+          "note": "Engelstadt"
+        }
+      ],
       "exclude": []
     },
     {
@@ -7788,7 +8118,24 @@
         "kirchenglocken",
         "kuhglocke"
       ],
-      "include": [],
+      "include": [
+        {
+          "imageHash": "6dfaa6eb",
+          "note": "Liebshausen"
+        },
+        {
+          "imageHash": "68b821b8",
+          "note": "Rodenbach bei Puderbach"
+        },
+        {
+          "imageHash": "4ac9e9c1",
+          "note": "Mündersbach"
+        },
+        {
+          "imageHash": "466262e",
+          "note": "Karlshöfen"
+        }
+      ],
       "exclude": []
     }
   ]
