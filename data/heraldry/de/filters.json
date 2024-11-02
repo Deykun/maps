@@ -589,6 +589,18 @@
         {
           "imageHash": "2ab26920",
           "note": "Isselhorst"
+        },
+        {
+          "imageHash": "6465e0f7",
+          "note": "Bad Salzig"
+        },
+        {
+          "imageHash": "7daa3321",
+          "note": "Osterspai"
+        },
+        {
+          "imageHash": "24dd41e5",
+          "note": "Kreis Wiedenbrück"
         }
       ],
       "exclude": [
@@ -1145,6 +1157,10 @@
         {
           "imageHash": "39c1adbe",
           "note": "Rennau"
+        },
+        {
+          "imageHash": "7ca85adb",
+          "note": "Dahmen"
         }
       ],
       "exclude": []
@@ -1247,6 +1263,10 @@
         {
           "imageHash": "33c4e38a",
           "note": "Gerstungen"
+        },
+        {
+          "imageHash": "11494b54",
+          "note": "Brachbach"
         }
       ],
       "exclude": []
@@ -4375,6 +4395,10 @@
         {
           "imageHash": "3bfe8028",
           "note": "Ahlden (Aller)"
+        },
+        {
+          "imageHash": "d17a75",
+          "note": "Salzhausen"
         }
       ],
       "exclude": [
@@ -4472,7 +4496,16 @@
           "note": "Lehe (Emsland)"
         }
       ],
-      "exclude": []
+      "exclude": [
+        {
+          "imageHash": "313faac6",
+          "note": "Dülmen"
+        },
+        {
+          "imageHash": "752c8493",
+          "note": "Dülmen"
+        }
+      ]
     },
     {
       "name": "otter",
@@ -4923,6 +4956,30 @@
         {
           "imageHash": "2eaf735",
           "note": "Kreis Halle (Westfalen)"
+        },
+        {
+          "imageHash": "127fdc7e",
+          "note": "Frankfurt-Sossenheim"
+        },
+        {
+          "imageHash": "61a1cc6d",
+          "note": "Bad Schwalbach"
+        },
+        {
+          "imageHash": "5dded5fe",
+          "note": "Dülmen"
+        },
+        {
+          "imageHash": "754c350e",
+          "note": "Mörsdorf (Hunsrück)"
+        },
+        {
+          "imageHash": "1a4e285",
+          "note": "Maintal"
+        },
+        {
+          "imageHash": "147b3569",
+          "note": "Hübingen"
         }
       ],
       "exclude": [
@@ -5049,6 +5106,14 @@
         {
           "imageHash": "2e658cb7",
           "note": "Fachingen"
+        },
+        {
+          "imageHash": "45a9b8f6",
+          "note": "Hünstetten"
+        },
+        {
+          "imageHash": "127fdc7e",
+          "note": "Frankfurt-Sossenheim"
         }
       ],
       "exclude": []
@@ -5261,6 +5326,10 @@
         {
           "imageHash": "11779304",
           "note": "Premnitz"
+        },
+        {
+          "imageHash": "7519d9eb",
+          "note": "Ruschweiler"
         }
       ],
       "exclude": []
@@ -5896,6 +5965,10 @@
         {
           "imageHash": "4be9f5ba",
           "note": "Berlin-Charlottenburg"
+        },
+        {
+          "imageHash": "42f73978",
+          "note": "Gieleroth"
         }
       ],
       "exclude": []
@@ -6186,6 +6259,10 @@
         {
           "imageHash": "6303f1ff",
           "note": "Gommern"
+        },
+        {
+          "imageHash": "48a11bf4",
+          "note": "Lykershausen"
         }
       ],
       "exclude": []
@@ -6613,25 +6690,25 @@
     {
       "name": "hops",
       "phrases": [
-          "hopfen",
-          "hopfenanbau",
-          "hopfenblatt",
-          "hopfenblüte",
-          "hopfenblüten",
-          "hopfendolde",
-          "hopfendolden",
-          "hopfendoldenübereinander",
-          "hopfenfrucht",
-          "hopfenpflanze",
-          "hopfenpflanzen",
-          "hopfenranke",
-          "hopfenrebe",
-          "hopfenrispe",
-          "hopfenstaude",
-          "hopfenstock",
-          "hopfentrieb",
-          "hopfenzweig",
-          "hopfenzweigen"
+        "hopfen",
+        "hopfenanbau",
+        "hopfenblatt",
+        "hopfenblüte",
+        "hopfenblüten",
+        "hopfendolde",
+        "hopfendolden",
+        "hopfendoldenübereinander",
+        "hopfenfrucht",
+        "hopfenpflanze",
+        "hopfenpflanzen",
+        "hopfenranke",
+        "hopfenrebe",
+        "hopfenrispe",
+        "hopfenstaude",
+        "hopfenstock",
+        "hopfentrieb",
+        "hopfenzweig",
+        "hopfenzweigen"
       ],
       "include": [],
       "exclude": []
@@ -6639,16 +6716,16 @@
     {
       "name": "windmill",
       "phrases": [
-          "bockwindmühle",
-          "flügelkreuz",
-          "hessenmühle",
-          "holländerwindmühle",
-          "kornwindmühle",
-          "windmühle",
-          "windmühlen",
-          "windmühlen-flügelkreuz",
-          "windmühlenflügel",
-          "windmühlenflügeln"
+        "bockwindmühle",
+        "flügelkreuz",
+        "hessenmühle",
+        "holländerwindmühle",
+        "kornwindmühle",
+        "windmühle",
+        "windmühlen",
+        "windmühlen-flügelkreuz",
+        "windmühlenflügel",
+        "windmühlenflügeln"
       ],
       "include": [],
       "exclude": []
@@ -6667,7 +6744,12 @@
         "steinpackungsgrab",
         "steinzeitgrab"
       ],
-      "include": [],
+      "include": [
+        {
+          "imageHash": "213b5d7b",
+          "note": "Samtgemeinde Herzlake"
+        }
+      ],
       "exclude": [
         {
           "imageHash": "15fb2b90",
@@ -6730,7 +6812,48 @@
         "templerkreuz",
         "ulrichskreuz"
       ],
-      "include": [],
+      "include": [
+        {
+          "imageHash": "33f5873d",
+          "note": "Galenberg"
+        },
+        {
+          "imageHash": "1dae724b",
+          "note": "Seelbach bei Hamm (Sieg)"
+        },
+        {
+          "imageHash": "754c350e",
+          "note": "Mörsdorf (Hunsrück)"
+        },
+        {
+          "imageHash": "72ba714b",
+          "note": "Willroth"
+        },
+        {
+          "imageHash": "368af79e",
+          "note": "Kaifenheim"
+        },
+        {
+          "imageHash": "48a11bf4",
+          "note": "Lykershausen"
+        },
+        {
+          "imageHash": "1e5afe5a",
+          "note": "Hilgenroth"
+        },
+        {
+          "imageHash": "48529cc",
+          "note": "Amt Sundern"
+        },
+        {
+          "imageHash": "65140b35",
+          "note": "Bad Bevensen"
+        },
+        {
+          "imageHash": "54b3afa8",
+          "note": "Samtgemeinde Bevensen-Ebstorf"
+        }
+      ],
       "exclude": []
     },
     {
@@ -6755,7 +6878,16 @@
         "volkskrone"
       ],
       "exclude": [],
-      "include": []
+      "include": [
+        {
+          "imageHash": "6fce952f",
+          "note": "Garbeck"
+        },
+        {
+          "imageHash": "63e1ef66",
+          "note": "Rettenbergen"
+        }
+      ]
     },
     {
       "name": "tree",
@@ -6817,7 +6949,108 @@
         "weidenzweig"
       ],
       "exclude": [],
-      "include": []
+      "include": [
+        {
+          "imageHash": "6fdae640",
+          "note": "Oberehe-Stroheich"
+        },
+        {
+          "imageHash": "1dae724b",
+          "note": "Seelbach bei Hamm (Sieg)"
+        },
+        {
+          "imageHash": "752c8493",
+          "note": "Dülmen"
+        },
+        {
+          "imageHash": "313faac6",
+          "note": "Dülmen"
+        },
+        {
+          "imageHash": "213b5d7b",
+          "note": "Samtgemeinde Herzlake"
+        },
+        {
+          "imageHash": "50842d68",
+          "note": "Durlach"
+        },
+        {
+          "imageHash": "6b97b63c",
+          "note": "Bad Saulgau"
+        },
+        {
+          "imageHash": "4ef639a1",
+          "note": "Ringelai"
+        },
+        {
+          "imageHash": "9bc0841",
+          "note": "Eichenberg (Sailauf)"
+        },
+        {
+          "imageHash": "2d142030",
+          "note": "Zimmerschied"
+        },
+        {
+          "imageHash": "5ffa6f38",
+          "note": "Brohl"
+        },
+        {
+          "imageHash": "42292554",
+          "note": "Gipperath"
+        },
+        {
+          "imageHash": "29bc4ba5",
+          "note": "Zemmer"
+        },
+        {
+          "imageHash": "ea1012c",
+          "note": "Heupelzen"
+        },
+        {
+          "imageHash": "11494b54",
+          "note": "Brachbach"
+        },
+        {
+          "imageHash": "42f73978",
+          "note": "Gieleroth"
+        },
+        {
+          "imageHash": "70d6c04d",
+          "note": "Giesenhausen"
+        },
+        {
+          "imageHash": "d468807",
+          "note": "Misselberg"
+        },
+        {
+          "imageHash": "33792262",
+          "note": "Amt Serkenrode"
+        },
+        {
+          "imageHash": "48529cc",
+          "note": "Amt Sundern"
+        },
+        {
+          "imageHash": "6e6c821a",
+          "note": "Wehrbleck"
+        },
+        {
+          "imageHash": "3306e4cf",
+          "note": "Barum (Landkreis Uelzen)"
+        },
+        {
+          "imageHash": "56b445b7",
+          "note": "Samtgemeinde Scharnebeck"
+        },
+        {
+          "imageHash": "77bd9712",
+          "note": "Lindhorst (Seevetal)"
+        },
+        {
+          "imageHash": "60a36715",
+          "note": "Wakendorf I"
+        }
+      ]
     },
     {
       "name": "saint",
@@ -6840,7 +7073,20 @@
         "täufers"
       ],
       "exclude": [],
-      "include": []
+      "include": [
+        {
+          "imageHash": "48a11bf4",
+          "note": "Lykershausen"
+        },
+        {
+          "imageHash": "9591041",
+          "note": "Sundern (Sauerland)"
+        },
+        {
+          "imageHash": "65140b35",
+          "note": "Bad Bevensen"
+        }
+      ]
     },
     {
       "name": "walls",
@@ -6929,6 +7175,62 @@
         {
           "imageHash": "7e5b415",
           "note": "Wiesemscheid"
+        },
+        {
+          "imageHash": "33f5873d",
+          "note": "Galenberg"
+        },
+        {
+          "imageHash": "d17a75",
+          "note": "Salzhausen"
+        },
+        {
+          "imageHash": "4d152eea",
+          "note": "Suhlendorf"
+        },
+        {
+          "imageHash": "286a289e",
+          "note": "Raesfeld"
+        },
+        {
+          "imageHash": "835f969",
+          "note": "Neuhütten (Hochwald)"
+        },
+        {
+          "imageHash": "7e8678a0",
+          "note": "Seewald"
+        },
+        {
+          "imageHash": "18ddf75",
+          "note": "Bad Saulgau"
+        },
+        {
+          "imageHash": "4844c44f",
+          "note": "Balgheim (Möttingen)"
+        },
+        {
+          "imageHash": "49e57578",
+          "note": "Macken"
+        },
+        {
+          "imageHash": "1e5afe5a",
+          "note": "Hilgenroth"
+        },
+        {
+          "imageHash": "ea1012c",
+          "note": "Heupelzen"
+        },
+        {
+          "imageHash": "402f5758",
+          "note": "Mudenbach"
+        },
+        {
+          "imageHash": "11333ee",
+          "note": "Dienethal"
+        },
+        {
+          "imageHash": "36a455f1",
+          "note": "Sulzbach (Rhein-Lahn-Kreis)"
         }
       ]
     },
@@ -6965,7 +7267,48 @@
         "sumpfdotterblumenstaude",
         "wasserrose"
       ],
-      "include": [],
+      "include": [
+        {
+          "imageHash": "2742cec5",
+          "note": "Verbandsgemeinde Wissen"
+        },
+        {
+          "imageHash": "2eab8242",
+          "note": "Woggersin"
+        },
+        {
+          "imageHash": "585bf08a",
+          "note": "Fensdorf"
+        },
+        {
+          "imageHash": "72ba714b",
+          "note": "Willroth"
+        },
+        {
+          "imageHash": "1fc56bbc",
+          "note": "Dünfus"
+        },
+        {
+          "imageHash": "426bbd6a",
+          "note": "Kail"
+        },
+        {
+          "imageHash": "18c00f84",
+          "note": "Binningen (Eifel)"
+        },
+        {
+          "imageHash": "d468807",
+          "note": "Misselberg"
+        },
+        {
+          "imageHash": "36a455f1",
+          "note": "Sulzbach (Rhein-Lahn-Kreis)"
+        },
+        {
+          "imageHash": "675995d3",
+          "note": "Niederfischbach"
+        }
+      ],
       "exclude": []
     },
     {
@@ -6987,6 +7330,14 @@
         {
           "imageHash": "69005911",
           "note": "Nohn"
+        },
+        {
+          "imageHash": "1fc56bbc",
+          "note": "Dünfus"
+        },
+        {
+          "imageHash": "426bbd6a",
+          "note": "Kail"
         }
       ],
       "exclude": []
@@ -7016,7 +7367,44 @@
         "weizenähre",
         "weizenähren"
       ],
-      "include": [],
+      "include": [
+        {
+          "imageHash": "1db87476",
+          "note": "Ebertshausen"
+        },
+        {
+          "imageHash": "147b3569",
+          "note": "Hübingen"
+        },
+        {
+          "imageHash": "5234d9e1",
+          "note": "Volkerzen"
+        },
+        {
+          "imageHash": "426bbd6a",
+          "note": "Kail"
+        },
+        {
+          "imageHash": "67a9ef6c",
+          "note": "Nachtsheim"
+        },
+        {
+          "imageHash": "324f89ba",
+          "note": "Baar (Eifel)"
+        },
+        {
+          "imageHash": "6b725f8e",
+          "note": "Kettenhausen"
+        },
+        {
+          "imageHash": "3a380c25",
+          "note": "Borod"
+        },
+        {
+          "imageHash": "58444294",
+          "note": "Batenhorst"
+        }
+      ],
       "exclude": []
     },
     {
@@ -7040,7 +7428,24 @@
     {
       "name": "crozier",
       "phrases": ["kreuzstab", "pastoralstab"],
-      "include": [],
+      "include": [
+        {
+          "imageHash": "6d189194",
+          "note": "Mitteleschenbach"
+        },
+        {
+          "imageHash": "5ffa6f38",
+          "note": "Brohl"
+        },
+        {
+          "imageHash": "7daa3321",
+          "note": "Osterspai"
+        },
+        {
+          "imageHash": "33792262",
+          "note": "Amt Serkenrode"
+        }
+      ],
       "exclude": []
     },
     {
@@ -7057,7 +7462,76 @@
         "wasserschöpfrad",
         "zahnrad"
       ],
-      "include": [],
+      "include": [
+        {
+          "imageHash": "4d9f91cc",
+          "note": "Karl (Eifel)"
+        },
+        {
+          "imageHash": "42cf81c8",
+          "note": "Adelsberg (Zell im Wiesental)"
+        },
+        {
+          "imageHash": "35c72de5",
+          "note": "Atzenbach"
+        },
+        {
+          "imageHash": "46b7b656",
+          "note": "Riedichen"
+        },
+        {
+          "imageHash": "1dba1de6",
+          "note": "Maintal"
+        },
+        {
+          "imageHash": "77cdd88a",
+          "note": "Maintal"
+        },
+        {
+          "imageHash": "18dba9ab",
+          "note": "Stein-Wingert"
+        },
+        {
+          "imageHash": "29bc4ba5",
+          "note": "Zemmer"
+        },
+        {
+          "imageHash": "3a380c25",
+          "note": "Borod"
+        },
+        {
+          "imageHash": "48529cc",
+          "note": "Amt Sundern"
+        },
+        {
+          "imageHash": "77d93b4",
+          "note": "Amt Reckenberg"
+        },
+        {
+          "imageHash": "24dd41e5",
+          "note": "Kreis Wiedenbrück"
+        },
+        {
+          "imageHash": "3306e4cf",
+          "note": "Barum (Landkreis Uelzen)"
+        },
+        {
+          "imageHash": "2e04a7ab",
+          "note": "Samtgemeinde Bevensen"
+        },
+        {
+          "imageHash": "77bd9712",
+          "note": "Lindhorst (Seevetal)"
+        },
+        {
+          "imageHash": "691735a9",
+          "note": "Neuengörs"
+        },
+        {
+          "imageHash": "10be29dd",
+          "note": "Brekendorf"
+        }
+      ],
       "exclude": []
     },
     {
@@ -7082,7 +7556,12 @@
         "schraubenschlüsseln",
         "violinschlüssel"
       ],
-      "include": [],
+      "include": [
+        {
+          "imageHash": "585bf08a",
+          "note": "Fensdorf"
+        }
+      ],
       "exclude": []
     },
     {
@@ -7130,7 +7609,12 @@
         "wikingerboot",
         "zeesboot"
       ],
-      "include": [],
+      "include": [
+        {
+          "imageHash": "3ab9825",
+          "note": "Bühnsdorf"
+        }
+      ],
       "exclude": []
     },
     {
@@ -7176,15 +7660,48 @@
       "name": "hammer",
       "phrases": [
         "berghämmerchen",
+        "bergmannsschlägel",
+        "bütnerschlägel",
         "hammer",
         "hämmerchen",
         "hämmerchens",
         "hammers",
         "kornhammer",
+        "schlägel",
+        "schlägeln",
         "schmiedehammer",
         "spitzhammer"
       ],
-      "include": [],
+      "include": [
+        {
+          "imageHash": "2fcdefc7",
+          "note": "Bell (bei Mendig)"
+        },
+        {
+          "imageHash": "5a716bef",
+          "note": "Hamm (Sieg)"
+        },
+        {
+          "imageHash": "4ce92610",
+          "note": "Astert"
+        },
+        {
+          "imageHash": "261444cc",
+          "note": "Eisen (Nohfelden)"
+        },
+        {
+          "imageHash": "732478e6",
+          "note": "Untereisesheim"
+        },
+        {
+          "imageHash": "6b725f8e",
+          "note": "Kettenhausen"
+        },
+        {
+          "imageHash": "3a380c25",
+          "note": "Borod"
+        }
+      ],
       "exclude": []
     },
     {
