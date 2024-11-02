@@ -1,6 +1,356 @@
 [
  {
-  "id": "city-13300"
+  "id": "city-13292"
+ },
+ {
+  "id": "city-13293"
+ },
+ {
+  "id": "city-13294",
+  "colors": {
+   "hexPalette": [
+    "#ffe700",
+    "#0090d3",
+    "#e20015",
+    "#181500",
+    "#666868",
+    "#ffffff"
+   ],
+   "byNames": {
+    "gold": [
+     {
+      "distanceToThreshold": 26,
+      "matcherColor": "#ffff00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": 20.465205198458406,
+      "matcherColor": "#1d7dc0"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": 44.194972420063685,
+      "matcherColor": "#f00"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -151.95258136093247,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -73.1052215354454,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -3.1450481775601418,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -160.64451046876286,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "city-13295",
+  "colors": {
+   "hexPalette": [
+    "#008dfd",
+    "#002c4b",
+    "#7f8193",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 47.83447493940356,
+      "matcherColor": "#0099ff"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -189.41789101691074,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -10.568384694197007,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -148.05287789405847,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -5,
+      "matcherColor": "#243b7f"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "animals": [
+    "fish",
+    "mermaid"
+   ]
+  }
+ },
+ {
+  "id": "city-13296",
+  "colors": {
+   "hexPalette": [
+    "#e3e3e3"
+   ],
+   "byNames": {
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ]
+   },
+   "byNamesRejected": {}
+  }
+ },
+ {
+  "id": "gemeinde-13297",
+  "colors": {
+   "hexPalette": [
+    "#f4c33f",
+    "#487540",
+    "#ffffff"
+   ],
+   "byNames": {
+    "gold": [
+     {
+      "distanceToThreshold": 41.318458307730594,
+      "matcherColor": "#e6c633"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -146.4376293816909,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -32.89241088485109,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -6.5194280961092375,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -56.944431248349744,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "gemeinde-13298",
+  "colors": {
+   "hexPalette": [
+    "#903e2f",
+    "#0090c8",
+    "#000000",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 24.41910625068561,
+      "matcherColor": "#1d7dc0"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -270.96677557497935,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -74.43585831168707,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -66.77539193392383,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -150.6205118216172,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "gemeinde-13299",
+  "colors": {
+   "hexPalette": [
+    "#e6e7a7",
+    "#101501",
+    "#458152"
+   ],
+   "byNames": {
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -160.75090861718465,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -29.52094726934027,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -7.037303048377481,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -54.49454135459908,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "city-13300",
+  "colors": {
+   "hexPalette": [
+    "#de4426",
+    "#717878",
+    "#17181f",
+    "#e7e7e7"
+   ],
+   "byNames": {
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -4.599054368237475,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -143.92409428196868,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -139.2967509582288,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -41.78899744078434,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
  },
  {
   "id": "gemeinde-13301",

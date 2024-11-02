@@ -15315,6 +15315,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "hammer"
+   ]
   }
  },
  {
@@ -24504,6 +24509,17 @@
   }
  },
  {
+  "id": "kreis-413",
+  "markers": {
+   "items": [
+    "grape",
+    "earOfGrain",
+    "hammer",
+    "anchor"
+   ]
+  }
+ },
+ {
   "id": "gemeinde-415",
   "colors": {
    "hexPalette": [
@@ -28528,6 +28544,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "hammer"
+   ]
   }
  },
  {
@@ -33268,6 +33289,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "hammer"
+   ]
   }
  },
  {
@@ -46960,6 +46986,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "walls"
    ]
   }
  },
@@ -61283,6 +61312,14 @@
    "items": [
     "flower",
     "rose"
+   ]
+  }
+ },
+ {
+  "id": "city-1013",
+  "markers": {
+   "animals": [
+    "unicorn"
    ]
   }
  },
@@ -85708,6 +85745,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "crozier"
+   ]
   }
  },
  {
@@ -104925,6 +104967,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "hammer"
+   ]
   }
  },
  {
@@ -110157,6 +110204,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "hammer"
+   ]
   }
  },
  {
@@ -121207,7 +121259,8 @@
   },
   "markers": {
    "items": [
-    "walls"
+    "walls",
+    "hammer"
    ]
   }
  },
@@ -132828,7 +132881,8 @@
   },
   "markers": {
    "items": [
-    "wheel"
+    "wheel",
+    "hammer"
    ]
   }
  },
@@ -133548,6 +133602,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -141195,6 +141254,9 @@
   "markers": {
    "animals": [
     "bird"
+   ],
+   "items": [
+    "hammer"
    ]
   }
  },
@@ -170837,131 +170899,6 @@
    "animals": [
     "fish",
     "beaver"
-   ]
-  }
- },
- {
-  "id": "city-2669",
-  "colors": {
-   "hexPalette": [
-    "#fcdd08",
-    "#0f47af",
-    "#809149",
-    "#000000"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 2.025867837457021,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 26.458980337503156,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "gold": [
-     {
-      "distanceToThreshold": 2.025867837457021,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 26.458980337503156,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
-   }
-  },
-  "markers": {
-   "items": [
-    "flower",
-    "lily"
-   ]
-  }
- },
- {
-  "id": "gemeinde-2670",
-  "colors": {
-   "hexPalette": [
-    "#d9201f",
-    "#100609",
-    "#686461",
-    "#ffffff"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 21.442336112170594,
-      "matcherColor": "#f00"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": 21.442336112170594,
-      "matcherColor": "#f00"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   }
-  },
-  "markers": {
-   "animals": [
-    "lion"
    ]
   }
  }
