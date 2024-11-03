@@ -491,6 +491,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "earOfGrain",
+    "hammer"
+   ]
   }
  },
  {
@@ -4666,6 +4672,14 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "fish"
+   ],
+   "items": [
+    "grape"
+   ]
   }
  },
  {
@@ -5107,7 +5121,12 @@
   },
   "markers": {
    "animals": [
-    "lion"
+    "rooster",
+    "lion",
+    "bird"
+   ],
+   "items": [
+    "grape"
    ]
   }
  },

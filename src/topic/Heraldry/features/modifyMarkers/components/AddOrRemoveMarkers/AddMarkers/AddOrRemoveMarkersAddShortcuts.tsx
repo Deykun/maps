@@ -8,6 +8,7 @@ import {
   selectUnitIncludeModifictions,
   selectShortcuts,
 } from '@/topic/Heraldry/features/modifyMarkers/stores/filtersModificationStore';
+import useGetUnitMarkersFromCache from '@/topic/Heraldry/features/modify/hooks/useGetUnitMarkersFromCache';
 
 import IconAnimal from '@/components/Icons/IconAnimal';
 import IconCrown from '@/components/Icons/IconCrown';
@@ -21,11 +22,14 @@ type Props = {
 const AddOrRemoveMarkersSection = ({ unit }: Props) => {
   const includeAnimal = useFilterModificationStore(selectUnitIncludeModifictions(unit, 'animal'));
   const includeItem = useFilterModificationStore(selectUnitIncludeModifictions(unit, 'item'));
+  const {
+    animals,
+    items,
+  } = useGetUnitMarkersFromCache(unit)
   const shortcuts = useFilterModificationStore(selectShortcuts);
 
   const { t } = useTranslation();
 
-  // TODO: add logic to return list of last or most popular user action in this section
   return (
     <>
       {shortcuts.map(({ name, type, total }) => 
@@ -33,7 +37,8 @@ const AddOrRemoveMarkersSection = ({ unit }: Props) => {
           key={name}
           size="small"
           onClick={() => includeUnitInMarker(unit, type, name)}
-          isDisabled={type === 'animal' ? includeAnimal.includes(name) : includeItem.includes(name)}
+          isActive={type === 'animal' ? includeAnimal.includes(name) : includeItem.includes(name)}
+          isDisabled={type === 'animal' ? animals.includes(name) : items.includes(name)}
         >
           {type === 'animal' ? <IconAnimal animals={[name]} /> : <IconCrown />}
           <span>+ {t(`heraldry.${type}.${name}`)} <small>({total})</small></span>
