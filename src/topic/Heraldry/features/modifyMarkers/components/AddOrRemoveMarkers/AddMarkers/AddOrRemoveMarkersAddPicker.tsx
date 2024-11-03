@@ -10,11 +10,8 @@ import IconCrown from '@/components/Icons/IconCrown';
 
 import ButtonText from '@/components/UI/ButtonText';
 
-import {
-  useFilterModificationStore,
-  includeUnitInMarker,
-  selectUnitIncludeModifictions,
-} from '@/topic/Heraldry/features/modifyMarkers/stores/filtersModificationStore';
+import { includeUnitInMarker } from '@/topic/Heraldry/features/modifyMarkers/stores/filtersModificationStore';
+import useGetUnitMarkersFromCache from '@/topic/Heraldry/features/modify/hooks/useGetUnitMarkersFromCache';
 
 import useQueryFiltersSeeds from '@/topic/Heraldry/features/modify/hooks/useQueryFiltersSeeds';
 import { useMemo, useState } from 'react';
@@ -25,8 +22,10 @@ type Props = {
 }
 
 const AddOrRemoveMarkersAddPicker = ({ unit, markerType }: Props) => {
-  const includeAnimal = useFilterModificationStore(selectUnitIncludeModifictions(unit, 'animal'));
-  const includeItem = useFilterModificationStore(selectUnitIncludeModifictions(unit, 'item'));
+  const {
+    animals,
+    items,
+  } = useGetUnitMarkersFromCache(unit)
   const [inputValue, setInputValue] = useState('');
   const { t } = useTranslation();
 
@@ -46,8 +45,9 @@ const AddOrRemoveMarkersAddPicker = ({ unit, markerType }: Props) => {
 
     return (data[keyForType] || []).filter(({ name }) =>
       removeDiacratics(t(`heraldry.${markerType}.${name}`).toLowerCase()).includes(phraseToCheck)
+      || name.includes(phraseToCheck) // searching by marker codename
     ).sort((a, b) => 
-      `${t(`heraldry.animal.${a.name}`)}`.localeCompare(`${t(`heraldry.animal.${b.name}`)}`)
+      `${t(`heraldry.${markerType}.${a.name}`)}`.localeCompare(`${t(`heraldry.${markerType}.${b.name}`)}`)
     );
   }, [data, markerType, inputValue])
 
@@ -75,7 +75,8 @@ const AddOrRemoveMarkersAddPicker = ({ unit, markerType }: Props) => {
         key={name}
         size="small"
         onClick={() => includeUnitInMarker(unit, markerType, name)}
-        isActive={markerType === 'animal' ? includeAnimal.includes(name) : includeItem.includes(name)}
+        isActive={markerType === 'animal' ? animals.includes(name) : items.includes(name)}
+        isDisabled={markerType === 'animal' ? animals.includes(name) : items.includes(name)}
       >
         {markerType === 'animal' ? <IconAnimal animals={name ? [name] : []} /> : <IconCrown />}
         <span className="flex-shrink-0 lowercase whitespace-nowrap">
