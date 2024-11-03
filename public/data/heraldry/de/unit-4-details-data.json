@@ -53395,6 +53395,7 @@
   },
   "markers": {
    "items": [
+    "wheel",
     "anchor"
    ]
   }
@@ -125170,6 +125171,15 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "rooster",
+    "bird"
+   ],
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -138514,6 +138524,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "earOfGrain"
+   ]
   }
  },
  {
@@ -139233,6 +139248,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -139283,6 +139303,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "sword",
+    "heart"
+   ]
   }
  },
  {
@@ -139767,6 +139793,13 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree",
+    "sword",
+    "hammer"
+   ]
   }
  },
  {
@@ -140713,6 +140746,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "cross",
+    "walls"
+   ]
   }
  },
  {
@@ -140877,6 +140916,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "cross",
+    "walls"
+   ]
   }
  },
  {

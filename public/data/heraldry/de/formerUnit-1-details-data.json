@@ -17258,6 +17258,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "cross",
+    "walls"
+   ]
   }
  },
  {
@@ -48726,6 +48732,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree",
+    "walls"
+   ]
   }
  },
  {
@@ -50693,6 +50705,7 @@
   "markers": {
    "items": [
     "grape",
+    "walls",
     "wheel"
    ]
   }
@@ -50759,6 +50772,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "hammer"
+   ]
   }
  },
  {
@@ -59358,7 +59376,8 @@
   },
   "markers": {
    "items": [
-    "cross"
+    "cross",
+    "crown"
    ]
   }
  },
@@ -98431,11 +98450,6 @@
      }
     ]
    }
-  },
-  "markers": {
-   "items": [
-    "walls"
-   ]
   }
  },
  {
@@ -112057,7 +112071,8 @@
   },
   "markers": {
    "items": [
-    "cross"
+    "cross",
+    "tree"
    ]
   }
  },
@@ -113840,6 +113855,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree",
+    "walls"
+   ]
   }
  },
  {
@@ -114937,6 +114958,14 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "lion"
+   ],
+   "items": [
+    "crown"
+   ]
   }
  },
  {
@@ -115037,6 +115066,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "flower"
+   ]
   }
  },
  {
@@ -115138,6 +115172,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "key"
+   ]
   }
  },
  {
@@ -115946,6 +115985,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree",
+    "hammer"
+   ]
   }
  },
  {
@@ -116759,6 +116804,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "crown"
+   ]
   }
  },
  {
@@ -131340,6 +131390,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -131727,6 +131782,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "tree"
    ]
   }
  },
@@ -131829,6 +131887,14 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bullBison"
+   ],
+   "items": [
+    "flower"
+   ]
   }
  },
  {
@@ -131892,6 +131958,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "cross",
+    "earOfGrain"
+   ]
   }
  },
  {

@@ -1,6 +1,11 @@
 [
  {
-  "id": "city-13292"
+  "id": "city-13292",
+  "markers": {
+   "items": [
+    "tree"
+   ]
+  }
  },
  {
   "id": "city-13293"
@@ -413,6 +418,14 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ],
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -470,6 +483,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -527,6 +545,14 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ],
+   "items": [
+    "sword"
+   ]
   }
  },
  {
