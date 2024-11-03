@@ -92257,6 +92257,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "crown",
+    "key"
+   ]
   }
  },
  {
@@ -92320,6 +92326,15 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "lion"
+   ],
+   "items": [
+    "crown",
+    "key"
+   ]
   }
  },
  {
@@ -92677,6 +92692,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "bell"
+   ]
   }
  },
  {
@@ -161155,6 +161175,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -162173,6 +162198,7 @@
   },
   "markers": {
    "items": [
+    "cross",
     "tree"
    ]
   }
@@ -168816,6 +168842,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "ram"
+   ],
    "items": [
     "tree"
    ]

@@ -31919,6 +31919,7 @@
   },
   "markers": {
    "items": [
+    "walls",
     "sword"
    ]
   }
@@ -38774,6 +38775,7 @@
   },
   "markers": {
    "animals": [
+    "fish",
     "horse"
    ],
    "items": [
@@ -40486,6 +40488,7 @@
     "ram"
    ],
    "items": [
+    "boat",
     "bell"
    ]
   }
@@ -41198,6 +41201,7 @@
     "ram"
    ],
    "items": [
+    "boat",
     "bell"
    ]
   }
@@ -101656,7 +101660,8 @@
   },
   "markers": {
    "items": [
-    "tree"
+    "tree",
+    "wheel"
    ]
   }
  },
