@@ -42935,7 +42935,8 @@
   },
   "markers": {
    "items": [
-    "earOfGrain"
+    "earOfGrain",
+    "crozier"
    ]
   }
  },
@@ -72113,6 +72114,7 @@
   "markers": {
    "animals": [
     "griffin",
+    "deer",
     "lion"
    ]
   }
@@ -98720,6 +98722,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ]
   }
  },
  {
@@ -122861,6 +122868,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "sword"
+   ]
   }
  },
  {
@@ -128091,6 +128103,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "boat"
+   ]
   }
  },
  {
@@ -167096,7 +167113,8 @@
    ],
    "items": [
     "grape",
-    "tree"
+    "tree",
+    "walls"
    ]
   }
  },
