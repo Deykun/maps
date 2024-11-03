@@ -61362,6 +61362,53 @@
  },
  {
   "id": "city-1013",
+  "colors": {
+   "hexPalette": [
+    "#fb8487",
+    "#db261e",
+    "#ffffff"
+   ],
+   "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 19.667587484006575,
+      "matcherColor": "#f00"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -73.31989159885913,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -148.1802103947443,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -142.78745670675644,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -68.41339493993607,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  },
   "markers": {
    "animals": [
     "unicorn"

@@ -10,9 +10,23 @@ const getIsIdMatch = (phrase: string, unit: CoatOfArmsMapData) => {
   ].some((id) => id === idToFind);
 }
 
+const getIsImageMatch = (phrase: string, unit: CoatOfArmsMapData) => {
+  if (!unit.imageHash) {
+    return false;
+  }
+
+  const hashToFind = phrase.replace('img:', '').toLowerCase();
+
+  return unit.imageHash === hashToFind;
+};
+
 const getDoesPhraseMatch =  (phrase: string, unit: CoatOfArmsMapData) => {
   if (phrase.startsWith('id:')) {
     return getIsIdMatch(phrase, unit);
+  }
+
+  if (phrase.startsWith('img:')) {
+    return getIsImageMatch(phrase, unit);
   }
 
   if (phrase.includes('-') && getIsIdMatch(phrase, unit)) {
@@ -52,6 +66,10 @@ const getPhraseSortRank = (phrase: string, unit: CoatOfArmsMapData) => {
   let rank = 0;
 
   if (phrase.startsWith('id:') && getIsIdMatch(phrase, unit)) {
+    rank += 2000;
+  }
+
+  if (phrase.startsWith('img:') && getIsImageMatch(phrase, unit)) {
     rank += 2000;
   }
 

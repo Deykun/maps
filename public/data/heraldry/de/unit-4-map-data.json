@@ -1,6 +1,174 @@
 [
  {
   "lang": "de",
+  "index": 10584,
+  "id": "city-10584",
+  "title": "Halle (Saale)",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Sachsen-Anhalt",
+  "type": [
+   "city"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen in Sachsen-Anhalt | Wappen der kreisfreien Städte in Sachsen-Anhalt",
+   "coordinates": {
+    "lat": 51.48277778,
+    "lon": 11.97
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/5d00691f-halle-saale-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/5d00691f-halle-saale-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 10585,
+  "id": "city-10585",
+  "title": "Magdeburg",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Sachsen-Anhalt",
+  "type": [
+   "city"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen in Sachsen-Anhalt | Wappen der kreisfreien Städte in Sachsen-Anhalt",
+   "coordinates": {
+    "lat": 52.13333333,
+    "lon": 11.61666667
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/ca2ad01-magdeburg-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/ca2ad01-magdeburg-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 10586,
+  "id": "kreis-10586",
+  "title": "Altmarkkreis Salzwedel",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Sachsen-Anhalt",
+  "type": [
+   "kreis"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen in Sachsen-Anhalt | Wappen der Landkreise in Sachsen-Anhalt",
+   "coordinates": {
+    "lat": 52.68,
+    "lon": 11.23
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/6a429b54-altmarkkreis-salzwedel-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/6a429b54-altmarkkreis-salzwedel-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 10587,
+  "id": "kreis-10587",
+  "title": "Landkreis Anhalt-Bitterfeld",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Sachsen-Anhalt",
+  "type": [
+   "kreis"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen in Sachsen-Anhalt | Wappen der Landkreise in Sachsen-Anhalt",
+   "coordinates": {
+    "lat": 51.77,
+    "lon": 12.07
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/452c51d5-anhaltbitterfeld-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/452c51d5-anhaltbitterfeld-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 10588,
+  "id": "kreis-10588",
+  "title": "Landkreis Börde",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Sachsen-Anhalt",
+  "type": [
+   "kreis"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen in Sachsen-Anhalt | Wappen der Landkreise in Sachsen-Anhalt",
+   "coordinates": {
+    "lat": 52.22,
+    "lon": 11.35
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/397fe052-borde-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/397fe052-borde-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 10589,
+  "id": "kreis-10589",
+  "title": "Burgenlandkreis",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Sachsen-Anhalt",
+  "type": [
+   "kreis"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen in Sachsen-Anhalt | Wappen der Landkreise in Sachsen-Anhalt",
+   "coordinates": {
+    "lat": 51.15,
+    "lon": 11.88
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/25bcc800-burgenlandkreis-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/25bcc800-burgenlandkreis-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 10590,
   "id": "kreis-10590",
   "title": "Landkreis Harz",
@@ -70082,181 +70250,6 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/unit/c6e5ee9-geisa-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 13286,
-  "id": "gemeinde-13286",
-  "title": "Dermbach",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Wartburgkreis",
-  "type": [
-   "gemeinde",
-   "ortsteil"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Wartburgkreis | Wappen der Ortsteile",
-   "coordinates": {
-    "lat": 50.71638889,
-    "lon": 10.11972222
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/3408fb18-dermbach-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/3408fb18-dermbach-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 13287,
-  "id": "city-13287",
-  "title": "Amt Creuzburg",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Wartburgkreis",
-  "type": [
-   "city",
-   "amt",
-   "ortsteil"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Wartburgkreis | Wappen der Ortsteile",
-   "coordinates": {
-    "lat": 51.05138889,
-    "lon": 10.24472222
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/2f3eef24-amt-creuzburg-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/2f3eef24-amt-creuzburg-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 13288,
-  "id": "city-13288",
-  "title": "Werra-Suhl-Tal",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Wartburgkreis",
-  "type": [
-   "city",
-   "ortsteil"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Wartburgkreis | Wappen der Ortsteile",
-   "coordinates": {
-    "lat": 50.93944444,
-    "lon": 10.07
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/644b7b85-werrasuhltal-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/644b7b85-werrasuhltal-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 13289,
-  "id": "gemeinde-13289",
-  "title": "Krayenberggemeinde",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Wartburgkreis",
-  "type": [
-   "gemeinde",
-   "ortsteil"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Wartburgkreis | Wappen der Ortsteile",
-   "coordinates": {
-    "lat": 50.83611111,
-    "lon": 10.08638889
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/4d64b65d-krayenberggemeinde-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/4d64b65d-krayenberggemeinde-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 13290,
-  "id": "city-13290",
-  "title": "Werra-Suhl-Tal",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Wartburgkreis",
-  "type": [
-   "city",
-   "ortsteil"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Wartburgkreis | Wappen der Ortsteile",
-   "coordinates": {
-    "lat": 50.93944444,
-    "lon": 10.07
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/3408fb18-werrasuhltal-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/3408fb18-werrasuhltal-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 13291,
-  "id": "gemeinde-13291",
-  "title": "Krayenberggemeinde",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Wartburgkreis",
-  "type": [
-   "gemeinde",
-   "ortsteil"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Wartburgkreis | Wappen der Ortsteile",
-   "coordinates": {
-    "lat": 50.83611111,
-    "lon": 10.08638889
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/24413d31-krayenberggemeinde-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/24413d31-krayenberggemeinde-320w.webp"
    }
   ]
  }

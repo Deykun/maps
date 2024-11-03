@@ -1,5 +1,218 @@
 [
  {
+  "id": "gemeinde-5384",
+  "colors": {
+   "hexPalette": [
+    "#fede0a",
+    "#124699",
+    "#da131b",
+    "#f8f8ff",
+    "#000000"
+   ],
+   "byNames": {
+    "gold": [
+     {
+      "distanceToThreshold": 15.503623378679322,
+      "matcherColor": "#ffff00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": 26.518661914433586,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": 30.41169492713025,
+      "matcherColor": "#f00"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "gold": [
+     {
+      "distanceToThreshold": 15.503623378679322,
+      "matcherColor": "#ffff00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": 26.518661914433586,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": 30.41169492713025,
+      "matcherColor": "#f00"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "animals": [
+    "eagle",
+    "bird"
+   ],
+   "items": [
+    "cross"
+   ]
+  }
+ },
+ {
+  "id": "kreis-5385",
+  "colors": {
+   "hexPalette": [
+    "#009604",
+    "#ffd701",
+    "#540000",
+    "#7c797a",
+    "#ffffff"
+   ],
+   "byNames": {
+    "green": [
+     {
+      "distanceToThreshold": 50.79540843217468,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": 9.98750195251489,
+      "matcherColor": "#ffff00"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "green": [
+     {
+      "distanceToThreshold": 50.79540843217468,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": 9.98750195251489,
+      "matcherColor": "#ffff00"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "saint",
+    "flower",
+    "rose"
+   ]
+  }
+ },
+ {
+  "id": "kreis-5386",
+  "colors": {
+   "hexPalette": [
+    "#d8a001",
+    "#640a04",
+    "#008d12",
+    "#767976",
+    "#ffffff"
+   ],
+   "byNames": {
+    "green": [
+     {
+      "distanceToThreshold": 55.0142886309282,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "green": [
+     {
+      "distanceToThreshold": 55.0142886309282,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
+  }
+ },
+ {
   "id": "gemeinde-5387",
   "colors": {
    "hexPalette": [
@@ -145339,6 +145552,71 @@
   }
  },
  {
+  "id": "land-7861",
+  "colors": {
+   "hexPalette": [
+    "#c2001f",
+    "#3f983f",
+    "#ffffff"
+   ],
+   "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 11.574858421775986,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": 3.6794886386851076,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "blue": [
+     {
+      "distanceToThreshold": -53.83572019457287,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -135.6501717260592,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -63.300446065697585,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": -172.85766747322495,
+      "matcherColor": "#f00"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "animals": [
+    "horse"
+   ],
+   "items": [
+    "flower",
+    "rose"
+   ]
+  }
+ },
+ {
   "id": "ortsteil-7862",
   "colors": {
    "hexPalette": [
@@ -153437,277 +153715,6 @@
     "earOfGrain",
     "wheel"
    ]
-  }
- },
- {
-  "id": "gemeinde-7980",
-  "colors": {
-   "hexPalette": [
-    "#ffdd00",
-    "#ea1b28",
-    "#0166b3",
-    "#d7dae0",
-    "#000004"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 16,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 27.369210532236934,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 36.125327227373354,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "gold": [
-     {
-      "distanceToThreshold": 16,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 27.369210532236934,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 36.125327227373354,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
-   }
-  },
-  "markers": {
-   "items": [
-    "crown",
-    "tree",
-    "bell"
-   ]
-  }
- },
- {
-  "id": "gemeinde-7981",
-  "colors": {
-   "hexPalette": [
-    "#0f47af",
-    "#a4a4a4",
-    "#000000",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 26.458980337503156,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": 26.458980337503156,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   }
-  },
-  "markers": {
-   "animals": [
-    "deer"
-   ]
-  }
- },
- {
-  "id": "gemeinde-7982",
-  "colors": {
-   "hexPalette": [
-    "#fddf11",
-    "#0033ff",
-    "#ff0100",
-    "#74837a",
-    "#000000",
-    "#ffffff"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 13.709505376751892,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 9,
-      "matcherColor": "#00f"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 79,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "gold": [
-     {
-      "distanceToThreshold": 13.709505376751892,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 9,
-      "matcherColor": "#00f"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 79,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   }
-  },
-  "markers": {
-   "items": [
-    "tree",
-    "flower",
-    "earOfGrain"
-   ]
-  }
- },
- {
-  "id": "gemeinde-7983",
-  "colors": {
-   "hexPalette": [
-    "#cccccc"
-   ],
-   "byNames": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
   }
  }
 ]
