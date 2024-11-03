@@ -3133,6 +3133,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -4149,6 +4154,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "earOfGrain"
+   ]
   }
  },
  {
@@ -4343,6 +4353,14 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "lion"
+   ],
+   "items": [
+    "windmill"
+   ]
   }
  },
  {
@@ -4807,6 +4825,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "walls",
+    "key"
+   ]
   }
  },
  {

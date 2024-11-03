@@ -4610,7 +4610,8 @@
   },
   "markers": {
    "items": [
-    "sword"
+    "sword",
+    "crozier"
    ]
   }
  },
@@ -4841,6 +4842,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "crozier"
+   ]
   }
  },
  {
@@ -14424,6 +14430,7 @@
   },
   "markers": {
    "items": [
+    "tree",
     "axeSaw"
    ]
   }
@@ -15917,7 +15924,8 @@
   },
   "markers": {
    "items": [
-    "crown"
+    "crown",
+    "saint"
    ]
   }
  },
@@ -16567,6 +16575,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "sword"
+   ]
   }
  },
  {
@@ -29830,6 +29843,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "earOfGrain"
+   ]
   }
  },
  {
@@ -38223,6 +38241,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "cross"
+   ]
   }
  },
  {
@@ -38414,6 +38437,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "crozier"
+   ]
   }
  },
  {
@@ -40741,6 +40769,7 @@
   },
   "markers": {
    "items": [
+    "cross",
     "earOfGrain"
    ]
   }
@@ -46493,6 +46522,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -58697,6 +58731,9 @@
   "markers": {
    "animals": [
     "beaver"
+   ],
+   "items": [
+    "tree"
    ]
   }
  },
@@ -59895,6 +59932,7 @@
     "fish"
    ],
    "items": [
+    "grape",
     "tree"
    ]
   }
@@ -82110,6 +82148,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "hammer"
+   ]
   }
  },
  {
@@ -83364,6 +83407,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "crown"
    ]
   }
  },
@@ -83631,6 +83677,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "crozier"
+   ]
   }
  },
  {
@@ -85269,6 +85320,9 @@
   "markers": {
    "animals": [
     "rabbit"
+   ],
+   "items": [
+    "crozier"
    ]
   }
  },
@@ -100824,6 +100878,9 @@
   "markers": {
    "animals": [
     "deer"
+   ],
+   "items": [
+    "hammer"
    ]
   }
  },
@@ -126529,7 +126586,8 @@
   },
   "markers": {
    "items": [
-    "sword"
+    "sword",
+    "crozier"
    ]
   }
  },
@@ -142518,6 +142576,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -144809,7 +144872,8 @@
   },
   "markers": {
    "items": [
-    "walls"
+    "walls",
+    "crozier"
    ]
   }
  },
@@ -145282,6 +145346,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
