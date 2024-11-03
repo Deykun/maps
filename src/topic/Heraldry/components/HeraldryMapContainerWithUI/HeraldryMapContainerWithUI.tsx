@@ -136,6 +136,7 @@ const HeraldryMapContainerWithUI = ({
                   mapOffset={mapOffset}
                   coatSize={Math.round(((coatSize + 1) / 11) * 80)}
                 >
+                  {zoomLevel > 1 && <div key={zoomLevel} className="map-grid" />}
                   <Suspense fallback={<svg />}>
                     <MapBackground />
                   </Suspense>

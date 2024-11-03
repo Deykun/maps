@@ -23997,7 +23997,8 @@
   "markers": {
    "items": [
     "walls",
-    "sword"
+    "sword",
+    "crozier"
    ]
   }
  },
@@ -24829,6 +24830,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "sword"
+   ]
   }
  },
  {
@@ -25098,7 +25104,8 @@
   },
   "markers": {
    "items": [
-    "flower"
+    "flower",
+    "crozier"
    ]
   }
  },
@@ -25930,7 +25937,8 @@
   },
   "markers": {
    "items": [
-    "tree"
+    "tree",
+    "walls"
    ]
   }
  },
@@ -26509,6 +26517,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -104213,9 +104226,6 @@
    }
   },
   "markers": {
-   "animals": [
-    "deer"
-   ],
    "items": [
     "flower",
     "lily"
@@ -114129,6 +114139,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "sword",
+    "key"
+   ]
   }
  },
  {
@@ -114365,6 +114381,9 @@
   "markers": {
    "animals": [
     "deer"
+   ],
+   "items": [
+    "tree"
    ]
   }
  },
@@ -168001,6 +168020,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
