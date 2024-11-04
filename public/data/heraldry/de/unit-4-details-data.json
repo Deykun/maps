@@ -23112,6 +23112,9 @@
    "animals": [
     "hawk",
     "bird"
+   ],
+   "items": [
+    "tree"
    ]
   }
  },
@@ -24040,6 +24043,9 @@
    "animals": [
     "hawk",
     "bird"
+   ],
+   "items": [
+    "tree"
    ]
   }
  },
@@ -26599,6 +26605,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "boat"
+   ]
   }
  },
  {
@@ -27202,6 +27213,9 @@
    "animals": [
     "eagle",
     "bird"
+   ],
+   "items": [
+    "tree"
    ]
   }
  },
@@ -29636,6 +29650,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -60039,6 +60058,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "crozier"
+   ]
   }
  },
  {
@@ -61916,6 +61940,9 @@
   "markers": {
    "animals": [
     "bird"
+   ],
+   "items": [
+    "walls"
    ]
   }
  },
@@ -65759,6 +65786,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -66031,6 +66063,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -67535,6 +67572,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -67628,6 +67670,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "crown"
+   ]
   }
  },
  {
@@ -69922,6 +69969,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -76383,6 +76435,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -76498,6 +76555,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -79228,6 +79290,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "boat"
+   ]
   }
  },
  {
@@ -80327,6 +80394,9 @@
   "markers": {
    "animals": [
     "bird"
+   ],
+   "items": [
+    "tree"
    ]
   }
  },
@@ -81503,6 +81573,9 @@
   "markers": {
    "animals": [
     "fish"
+   ],
+   "items": [
+    "boat"
    ]
   }
  },
@@ -88579,6 +88652,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "crozier"
+   ]
   }
  },
  {
@@ -93598,6 +93676,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -95640,6 +95723,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -96196,6 +96284,9 @@
   "markers": {
    "animals": [
     "bullBison"
+   ],
+   "items": [
+    "tree"
    ]
   }
  },
@@ -96651,6 +96742,9 @@
   "markers": {
    "animals": [
     "horse"
+   ],
+   "items": [
+    "tree"
    ]
   }
  },
@@ -96970,6 +97064,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree",
+    "walls"
+   ]
   }
  },
  {
@@ -97260,6 +97360,7 @@
   },
   "markers": {
    "animals": [
+    "bird",
     "fish",
     "unusualHybrid"
    ]
