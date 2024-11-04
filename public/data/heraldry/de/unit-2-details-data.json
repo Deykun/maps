@@ -145580,28 +145580,22 @@
     ]
    },
    "byNamesRejected": {
-    "blue": [
+    "red": [
      {
-      "distanceToThreshold": -53.83572019457287,
-      "matcherColor": "#5596c3"
+      "distanceToThreshold": 11.574858421775986,
+      "matcherColor": "#f00"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": -135.6501717260592,
-      "matcherColor": "#006f00"
+      "distanceToThreshold": 3.6794886386851076,
+      "matcherColor": "#07923f"
      }
     ],
-    "gold": [
+    "white": [
      {
-      "distanceToThreshold": -63.300446065697585,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": -172.85766747322495,
-      "matcherColor": "#f00"
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
      }
     ]
    }

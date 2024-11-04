@@ -198,25 +198,6 @@ export const fetchImages = async ({
           lang,
         });
 
-        if (types.length > 0) {
-          console.log(types);
-          console.log(types);
-          console.log(types);
-          console.log(types);
-          console.log(types);
-          console.log(types);
-          console.log(types);
-          console.log(types);
-          console.log(types);
-          console.log(types);
-          console.log(types);
-          console.log(types);
-          console.log(types);
-          console.log(types);
-          console.log(types);
-          console.log(types);
-        }
-
         contentToSaveForMap.push({
           lang: unit.lang,
           index: unit.index,

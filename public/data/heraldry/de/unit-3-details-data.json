@@ -173912,28 +173912,28 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
+    "gold": [
      {
-      "distanceToThreshold": -191.0793241839001,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -42.674365700418434,
-      "matcherColor": "#5596c3"
+      "distanceToThreshold": 21.038480522443685,
+      "matcherColor": "#e6c633"
      }
     ],
     "green": [
      {
-      "distanceToThreshold": -122.46176126540982,
-      "matcherColor": "#006f00"
+      "distanceToThreshold": 13.815587044978045,
+      "matcherColor": "#07923f"
      }
     ],
-    "gold": [
+    "white": [
      {
-      "distanceToThreshold": -74.7961423780369,
-      "matcherColor": "#b68f5e"
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
      }
     ]
    }

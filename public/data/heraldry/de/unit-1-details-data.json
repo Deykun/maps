@@ -69541,28 +69541,34 @@
     ]
    },
    "byNamesRejected": {
+    "gold": [
+     {
+      "distanceToThreshold": 14.94290371408379,
+      "matcherColor": "#ffff00"
+     }
+    ],
     "red": [
      {
-      "distanceToThreshold": -141.16509670379727,
+      "distanceToThreshold": 30.41169492713025,
       "matcherColor": "#f00"
      }
     ],
-    "blue": [
+    "grey": [
      {
-      "distanceToThreshold": -151.29363454680788,
-      "matcherColor": "#2e3192"
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
      }
     ],
-    "green": [
+    "black": [
      {
-      "distanceToThreshold": -148.15331196521285,
-      "matcherColor": "#006f00"
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
      }
     ],
-    "gold": [
+    "white": [
      {
-      "distanceToThreshold": -85.46820958546235,
-      "matcherColor": "#b68f5e"
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
      }
     ]
    }
@@ -123051,28 +123057,28 @@
     ]
    },
    "byNamesRejected": {
-    "blue": [
+    "red": [
      {
-      "distanceToThreshold": -76.47710430691296,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -38.798291914139924,
-      "matcherColor": "#006f00"
+      "distanceToThreshold": 50.98276374290619,
+      "matcherColor": "#f00"
      }
     ],
     "gold": [
      {
-      "distanceToThreshold": -26.029064856012468,
-      "matcherColor": "#b68f5e"
+      "distanceToThreshold": 37.4833395016046,
+      "matcherColor": "#e6c633"
      }
     ],
-    "red": [
+    "blue": [
      {
-      "distanceToThreshold": -99.14519251154914,
-      "matcherColor": "#f00"
+      "distanceToThreshold": 19.392118991506095,
+      "matcherColor": "#0059c7"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
      }
     ]
    }
@@ -160642,28 +160648,34 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -143.21951391226105,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -150.46139788569303,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -150.0874840552918,
-      "matcherColor": "#006f00"
-     }
-    ],
     "gold": [
      {
-      "distanceToThreshold": -72.53678734600442,
-      "matcherColor": "#b68f5e"
+      "distanceToThreshold": 14.139157845917786,
+      "matcherColor": "#ffff00"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": 23.34313810313882,
+      "matcherColor": "#f00"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
      }
     ]
    }
