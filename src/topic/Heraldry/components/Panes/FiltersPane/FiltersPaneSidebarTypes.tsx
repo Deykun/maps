@@ -1,5 +1,7 @@
-import { memo, useState, useEffect } from 'react';
+import { memo, useState, useEffect, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
+
+import { lowercaseFirstLetter } from '@/utils/text';
 
 import IconBuilding from '@/components/Icons/IconBuilding';
 import IconScriptBroken from '@/components/Icons/IconScriptBroken';
@@ -41,6 +43,32 @@ const FiltersPaneSidebarTypes = ({
 
   const { t } = useTranslation();
 
+  const {
+    verified,
+    unverified,
+    unverifiedFormer,
+  } = useMemo(() => {
+    return filtersList.sort(getSorter({ sortBy, tBase: `heraldry.unit.type.${lang}.`, t })).reduce((stack: {
+      verified: FilterItem[],
+      unverified: FilterItem[],
+      unverifiedFormer: FilterItem[],
+    }, item) => {
+      if (item.value.startsWith('verified')) {
+        stack.verified.push(item);
+      } else if (item.value.startsWith('former')) {
+        stack.unverifiedFormer.push(item);
+      } else {
+        stack.unverified.push(item);
+      }
+
+      return stack;
+    }, {
+      verified: [],
+      unverified: [],
+      unverifiedFormer: [],
+    })
+  }, [filtersList, lang, t, sortBy]);
+
   useEffect(() => {
     if (clickType === 'radio' && filters.length > 1) {    
       setFilters([]);
@@ -66,7 +94,8 @@ const FiltersPaneSidebarTypes = ({
     setFilters([value]);
   }
 
-  const hasFormerTypes = filtersList.some(({ value }) => value.startsWith('former'));
+  const hasOnlyOneList = [verified.length, unverified.length, unverifiedFormer.length].filter(Boolean).length === 1;
+  const isSortable = verified.length > 1 || unverified.length > 1 || unverifiedFormer.length > 1;
   const activeTotal = filters.length + (shouldIgnoreFormer ? 1 : 0);
 
   return (
@@ -84,10 +113,11 @@ const FiltersPaneSidebarTypes = ({
             setClickType={setClickType}
             sortBy={sortBy}
             setSortBy={setSortBy}
+            isSortable={isSortable}
             clearFilters={clearFilters}
             activeTotal={activeTotal}
           >
-            {hasFormerTypes &&
+            {unverifiedFormer.length > 0 &&
               <ButtonText
                 size="small"
                 onClick={toggleShouldIgnoreFormer}
@@ -99,23 +129,70 @@ const FiltersPaneSidebarTypes = ({
               </ButtonText>
             }
           </FiltersPaneFilters>
-          {filtersList.length > 0 && <ul>
-            {filtersList.sort(getSorter({ sortBy, tBase: `heraldry.unit.type.${lang}.`, t })).map(({ value, total }) => <li
+          {verified.length > 0 && <ul className="mt-5">
+            {verified.map(({ value, total }) => <li
               key={value}
               className="block pl-4"
             >
               <FiltersPaneFilter
                 type={clickType}
                 isSelected={filters.includes(value)}
-                isDisabled={shouldIgnoreFormer && value.startsWith('former')}
                 onChange={() => handleToggle(value)}
                 label={t(`heraldry.unit.type.${lang}.${value}`)}
                 total={total}
-              >            
-                {value.startsWith('former') && <IconScriptBroken className="size-3 flex-shrink-0" />}
-              </FiltersPaneFilter>
+              />
             </li>)}
           </ul>}
+          {verified.length > 0 && (unverified.length > 0 || unverifiedFormer.length > 0) && <div>
+            <p className="mt-5 px-4 text-[12px] text-white">
+              {t('heraldry.unit.type.unreliableData')}
+            </p>
+          </div>}
+          {unverified.length > 0 && <>
+            {!hasOnlyOneList && <h4 className="mt-5 flex gap-2 items-center text-[12px]">
+              <IconBuilding className="size-4 text-white" />
+              {t('heraldry.unit.type.currentlyExisting')}
+            </h4>}
+            <ul>
+              {unverified.map(({ value, total }) => <li
+                key={value}
+                className="block pl-4"
+              >
+                <FiltersPaneFilter
+                  type={clickType}
+                  isSelected={filters.includes(value)}
+                  onChange={() => handleToggle(value)}
+                  label={t(`heraldry.unit.type.${lang}.${value}`)}
+                  total={total}
+                />
+              </li>)}
+            </ul>
+          </>}
+
+          {unverifiedFormer.length > 0 && <>
+            {!hasOnlyOneList && <h4 className="mt-5 flex gap-2 items-center text-[12px]">
+              <IconScriptBroken className="size-4 text-white" />
+              {t('heraldry.unit.type.formerUnits')}
+            </h4>}
+            <ul>
+              {unverifiedFormer.map(({ value, total }) => <li
+                key={value}
+                className="block pl-4"
+              >
+                <FiltersPaneFilter
+                  type={clickType}
+                  isSelected={filters.includes(value)}
+                  isDisabled={shouldIgnoreFormer && value.startsWith('former')}
+                  onChange={() => handleToggle(value)}
+                  // label={t(`heraldry.unit.type.${lang}.${lowercaseFirstLetter(value.replace('former', ''))}`)}
+                  label={t(`heraldry.unit.type.${lang}.${value}`)}
+                  total={total}
+                  >            
+                  <IconScriptBroken className="size-3 flex-shrink-0" />
+                </FiltersPaneFilter>
+              </li>)}
+            </ul>
+          </>}
         </div>
         <Space side="right" isLast isLarge className="bg-ui-dark mb-5" />
       </div>
