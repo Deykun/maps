@@ -34,7 +34,7 @@ const DevelopmentPaneSidebarListOfFilters = ({
   onUse,
 }: Props) => {
   const shortcuts = useFilterModificationStore(state => selectShortcuts(state, 100));
-  const [selected, setSelected] = useState<{ type: 'animal' | 'item', name: string } | undefined>();
+  const [selected, setSelected] = useState<{ type: 'type' | 'animal' | 'item', name: string } | undefined>();
   const { t } = useTranslation();
 
   const handleDraftUpdate = useCallback((filter: MarkerParamsWithResult) => {
@@ -57,9 +57,9 @@ const DevelopmentPaneSidebarListOfFilters = ({
     const value = (event.target.value || '');
     const [type, name] = value.split('-');
 
-    if (['animal', 'item'].includes(type)) {
+    if (['type', 'animal', 'item'].includes(type)) {
       setSelected({
-        type: type as 'animal' | 'item',
+        type: type as 'type' | 'animal' | 'item',
         name,
       });
 
@@ -70,6 +70,12 @@ const DevelopmentPaneSidebarListOfFilters = ({
   }, [data]);
 
   const selectedFilter = useMemo(() => {
+    if (data && selected?.type === 'type') {
+      const filter = data.types.find(({ name }) => selected?.name === name);
+
+      return filter;
+    } 
+
     if (data && selected?.type === 'animal') {
       const filter = data.animals.find(({ name }) => selected?.name === name);
 
@@ -137,6 +143,17 @@ const DevelopmentPaneSidebarListOfFilters = ({
           >
             <option>Pick filter</option>
             {data && <>
+              {data.types.sort((a, b) => 
+                `${t(`heraldry.unit.type.${country}.${a.name}`)}`.localeCompare(
+                  `${t(`heraldry.unit.type.${country}.${b.name}`)}`
+              )).map(({ name }) => (
+                <option
+                  key={name}
+                  value={`type-${name}`}
+                >
+                  {t(`heraldry.unit.type.${country}.${name}`)} ({t('heraldry.unit.filterTitle')})
+                </option>
+              ))}
               {data.animals.sort((a, b) => 
                 `${t(`heraldry.animal.${a.name}`)}`.localeCompare(
                   `${t(`heraldry.animal.${b.name}`)}`
@@ -182,9 +199,9 @@ const DevelopmentPaneSidebarListOfFilters = ({
             className="rounded-[8px]"
             {...selectedFilter}
           />}
-          {selectedFilter && selected && <FilterModifications
+          {selectedFilter && selected && ['animal', 'item'].includes(selected.type) && <FilterModifications
             snippetClassName="rounded-[8px]"
-            type={selected.type}
+            type={selected.type as 'animal' | 'item'}
             name={selected.name}
             filter={selectedFilter}
             setDraftFilter={handleDraftUpdate}

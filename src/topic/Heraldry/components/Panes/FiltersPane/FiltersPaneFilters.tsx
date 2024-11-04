@@ -17,6 +17,7 @@ type Props = {
   setClickType: (v: 'checkbox' | 'radio') => void,
   sortBy: 'name' | 'value',
   setSortBy: (v: 'name' | 'value') => void,
+  isSortable: boolean,
   clearFilters: () => void,
   activeTotal: number,
   children?: React.ReactNode,
@@ -27,6 +28,7 @@ const FiltersPaneFilters = ({
   setClickType,
   sortBy,
   setSortBy,
+  isSortable,
   clearFilters,
   activeTotal,
   children,
@@ -35,7 +37,7 @@ const FiltersPaneFilters = ({
 
   return (
     <Panel className="ui-panel--rounded-l ui-panel--rounded-r">
-      <div className="flex gap-1">
+      <div className="flex gap-1 items-center">
         <ButtonText
           size="small"
           onClick={() => setClickType(clickType === 'checkbox' ? 'radio' : 'checkbox')}
@@ -50,6 +52,7 @@ const FiltersPaneFilters = ({
           wrapperClassName="ml-auto"
           size="small"
           onClick={() => setSortBy(sortBy === 'value' ? 'name' : 'value')}
+          isDisabled={!isSortable}
         >
           {sortBy === 'value' ? <IconSortByValue /> : <IconSortByName />}
         </ButtonIcon>

@@ -182,4 +182,10 @@ export const locationTitleByImages = {
   'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/DEU_Lichtenau_COA.svg/46px-DEU_Lichtenau_COA.svg.png': 'Lichtenau (Mittelfranken)',
   'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/DEU_Neunkirchen_am_Sand_COA.svg/46px-DEU_Neunkirchen_am_Sand_COA.svg.png': 'Neunkirchen am Sand',
   'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Wappen_Landkreis_Herzberg.jpg/120px-Wappen_Landkreis_Herzberg.jpg': 'Herzberg (Elster)',
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/DEU_Hamburg_COA.svg/86px-DEU_Hamburg_COA.svg.png': 'Hamburg',
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Coat_of_arms_of_Hesse.svg/99px-Coat_of_arms_of_Hesse.svg.png': 'Hessen',
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Coat_of_arms_of_Mecklenburg-Western_Pomerania_%28great%29.svg/139px-Coat_of_arms_of_Mecklenburg-Western_Pomerania_%28great%29.svg.png': 'Mecklenburg-Vorpommern',
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Coat_of_arms_of_North_Rhine-Westphalia.svg/104px-Coat_of_arms_of_North_Rhine-Westphalia.svg.png': 'Nordrhein-Westfalen',
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Wappen_des_Saarlands.svg/97px-Wappen_des_Saarlands.svg.png': 'Saarland',
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Wappen_Sachsen-Anhalt.svg/99px-Wappen_Sachsen-Anhalt.svg.png': 'Sachsen-Anhalt',
 } as const;

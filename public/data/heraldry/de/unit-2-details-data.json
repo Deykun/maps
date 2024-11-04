@@ -1,5 +1,218 @@
 [
  {
+  "id": "gemeinde-5384",
+  "colors": {
+   "hexPalette": [
+    "#fede0a",
+    "#124699",
+    "#da131b",
+    "#f8f8ff",
+    "#000000"
+   ],
+   "byNames": {
+    "gold": [
+     {
+      "distanceToThreshold": 15.503623378679322,
+      "matcherColor": "#ffff00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": 26.518661914433586,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": 30.41169492713025,
+      "matcherColor": "#f00"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "gold": [
+     {
+      "distanceToThreshold": 15.503623378679322,
+      "matcherColor": "#ffff00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": 26.518661914433586,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": 30.41169492713025,
+      "matcherColor": "#f00"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "animals": [
+    "eagle",
+    "bird"
+   ],
+   "items": [
+    "cross"
+   ]
+  }
+ },
+ {
+  "id": "kreis-5385",
+  "colors": {
+   "hexPalette": [
+    "#009604",
+    "#ffd701",
+    "#540000",
+    "#7c797a",
+    "#ffffff"
+   ],
+   "byNames": {
+    "green": [
+     {
+      "distanceToThreshold": 50.79540843217468,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": 9.98750195251489,
+      "matcherColor": "#ffff00"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "green": [
+     {
+      "distanceToThreshold": 50.79540843217468,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": 9.98750195251489,
+      "matcherColor": "#ffff00"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "saint",
+    "flower",
+    "rose"
+   ]
+  }
+ },
+ {
+  "id": "kreis-5386",
+  "colors": {
+   "hexPalette": [
+    "#d8a001",
+    "#640a04",
+    "#008d12",
+    "#767976",
+    "#ffffff"
+   ],
+   "byNames": {
+    "green": [
+     {
+      "distanceToThreshold": 55.0142886309282,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "green": [
+     {
+      "distanceToThreshold": 55.0142886309282,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
+  }
+ },
+ {
   "id": "gemeinde-5387",
   "colors": {
    "hexPalette": [
@@ -12677,6 +12890,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -13141,7 +13359,8 @@
   },
   "markers": {
    "items": [
-    "tree"
+    "tree",
+    "earOfGrain"
    ]
   }
  },
@@ -13787,6 +14006,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "windmill"
+   ]
   }
  },
  {
@@ -13890,6 +14114,7 @@
   },
   "markers": {
    "items": [
+    "tree",
     "earOfGrain",
     "key"
    ]
@@ -16096,6 +16321,9 @@
   "markers": {
    "animals": [
     "bird"
+   ],
+   "items": [
+    "tree"
    ]
   }
  },
@@ -16534,6 +16762,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -19261,6 +19494,7 @@
   "markers": {
    "items": [
     "tree",
+    "walls",
     "bell"
    ]
   }
@@ -23338,6 +23572,7 @@
   "markers": {
    "items": [
     "sword",
+    "crozier",
     "horseshoe"
    ]
   }
@@ -23818,6 +24053,9 @@
    "animals": [
     "heron",
     "bird"
+   ],
+   "items": [
+    "wheel"
    ]
   }
  },
@@ -25648,6 +25886,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "crown",
+    "tree"
+   ]
   }
  },
  {
@@ -25802,6 +26046,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "earOfGrain",
+    "hammer"
+   ]
   }
  },
  {
@@ -26013,6 +26263,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ]
   }
  },
  {
@@ -26064,6 +26319,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "walls",
+    "heart"
+   ]
   }
  },
  {
@@ -26396,7 +26657,8 @@
   "markers": {
    "items": [
     "tree",
-    "walls"
+    "walls",
+    "hammer"
    ]
   }
  },
@@ -26462,6 +26724,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "fish"
+   ]
   }
  },
  {
@@ -26797,6 +27064,14 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "goat"
+   ],
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -26890,6 +27165,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -27775,6 +28055,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "walls",
+    "flower"
+   ]
   }
  },
  {
@@ -28628,6 +28914,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -28691,6 +28982,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "hammer"
+   ]
   }
  },
  {
@@ -28857,6 +29153,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "earOfGrain"
+   ]
   }
  },
  {
@@ -29169,6 +29470,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -29335,6 +29641,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "earOfGrain"
+   ]
   }
  },
  {
@@ -29762,6 +30073,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "crown",
+    "tree"
+   ]
   }
  },
  {
@@ -31138,7 +31455,8 @@
     "horse"
    ],
    "items": [
-    "walls"
+    "walls",
+    "wheel"
    ]
   }
  },
@@ -33092,6 +33410,9 @@
   "markers": {
    "animals": [
     "wolf"
+   ],
+   "items": [
+    "wheel"
    ]
   }
  },
@@ -33236,6 +33557,7 @@
   },
   "markers": {
    "items": [
+    "tree",
     "wheel"
    ]
   }
@@ -38744,6 +39066,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "walls"
    ]
   }
  },
@@ -43956,6 +44281,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -44645,6 +44975,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -44826,6 +45161,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "crozier"
+   ]
   }
  },
  {
@@ -46130,6 +46470,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree",
+    "axeSaw"
+   ]
   }
  },
  {
@@ -46314,6 +46660,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree",
+    "horseshoe"
+   ]
   }
  },
  {
@@ -46377,6 +46729,14 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "horse"
+   ],
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -46440,6 +46800,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree",
+    "walls"
+   ]
   }
  },
  {
@@ -47858,6 +48224,7 @@
   },
   "markers": {
    "animals": [
+    "bird",
     "snake"
    ],
    "items": [
@@ -48395,7 +48762,9 @@
   },
   "markers": {
    "items": [
-    "windmill"
+    "windmill",
+    "walls",
+    "anchor"
    ]
   }
  },
@@ -48916,6 +49285,14 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "dragon"
+   ],
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -49390,6 +49767,9 @@
    "animals": [
     "horse",
     "wolf"
+   ],
+   "items": [
+    "walls"
    ]
   }
  },
@@ -50392,6 +50772,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bullBison"
+   ]
   }
  },
  {
@@ -50717,6 +51102,10 @@
   "markers": {
    "animals": [
     "bear"
+   ],
+   "items": [
+    "walls",
+    "anchor"
    ]
   }
  },
@@ -51197,6 +51586,15 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "horse"
+   ],
+   "items": [
+    "walls",
+    "flower"
+   ]
   }
  },
  {
@@ -51411,6 +51809,15 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "horse"
+   ],
+   "items": [
+    "walls",
+    "flower"
+   ]
   }
  },
  {
@@ -56164,7 +56571,8 @@
   },
   "markers": {
    "items": [
-    "key"
+    "key",
+    "boat"
    ]
   }
  },
@@ -56804,6 +57212,9 @@
   "markers": {
    "animals": [
     "horse"
+   ],
+   "items": [
+    "sword"
    ]
   }
  },
@@ -57187,6 +57598,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "boat"
+   ]
   }
  },
  {
@@ -57353,6 +57769,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "boat"
+   ]
   }
  },
  {
@@ -57473,6 +57894,9 @@
    "animals": [
     "eagle",
     "bird"
+   ],
+   "items": [
+    "wheel"
    ]
   }
  },
@@ -57780,6 +58204,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "windmill"
+   ]
   }
  },
  {
@@ -58145,6 +58574,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -58743,6 +59177,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree",
+    "hammer"
+   ]
   }
  },
  {
@@ -58793,6 +59233,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "walls",
+    "flower"
+   ]
   }
  },
  {
@@ -59329,6 +59775,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "wheel"
+   ]
   }
  },
  {
@@ -59354,6 +59805,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "hammer"
+   ]
   }
  },
  {
@@ -59792,6 +60248,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree",
+    "wheel"
+   ]
   }
  },
  {
@@ -59970,6 +60432,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "axeSaw"
+   ]
   }
  },
  {
@@ -60151,6 +60618,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "hammer"
    ]
   }
  },
@@ -60277,6 +60747,10 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "walls",
+    "hammer"
    ]
   }
  },
@@ -60772,6 +61246,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree",
+    "wheel"
+   ]
   }
  },
  {
@@ -60938,6 +61418,9 @@
   "markers": {
    "animals": [
     "wolf"
+   ],
+   "items": [
+    "tree"
    ]
   }
  },
@@ -61816,6 +62299,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "axeSaw"
+   ]
   }
  },
  {
@@ -62947,6 +63435,10 @@
   "markers": {
    "animals": [
     "dragon"
+   ],
+   "items": [
+    "cross",
+    "crown"
    ]
   }
  },
@@ -63892,6 +64384,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "cross"
    ]
   }
  },
@@ -65308,6 +65803,7 @@
   },
   "markers": {
    "items": [
+    "saint",
     "key"
    ]
   }
@@ -65955,6 +66451,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -67470,6 +67971,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -70797,6 +71303,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "grave",
+    "cross"
+   ]
   }
  },
  {
@@ -71072,6 +71584,9 @@
   "markers": {
    "animals": [
     "fish"
+   ],
+   "items": [
+    "walls"
    ]
   }
  },
@@ -71149,6 +71664,14 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "horse"
+   ],
+   "items": [
+    "saint"
+   ]
   }
  },
  {
@@ -71280,6 +71803,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "cross",
+    "wheel"
+   ]
   }
  },
  {
@@ -71810,6 +72339,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree",
+    "walls"
+   ]
   }
  },
  {
@@ -73087,6 +73622,7 @@
   },
   "markers": {
    "items": [
+    "arrow",
     "wheel"
    ]
   }
@@ -76310,6 +76846,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree",
+    "sword"
+   ]
   }
  },
  {
@@ -76604,6 +77146,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree",
+    "sword"
+   ]
   }
  },
  {
@@ -77649,6 +78197,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "earOfGrain",
+    "hammer"
+   ]
   }
  },
  {
@@ -78044,6 +78598,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree",
+    "sword"
+   ]
   }
  },
  {
@@ -78220,7 +78780,9 @@
   },
   "markers": {
    "items": [
-    "tree"
+    "tree",
+    "walls",
+    "hammer"
    ]
   }
  },
@@ -83864,6 +84426,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "earOfGrain"
+   ]
   }
  },
  {
@@ -94583,6 +95150,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "earOfGrain"
+   ]
   }
  },
  {
@@ -101137,6 +101709,7 @@
   },
   "markers": {
    "items": [
+    "cross",
     "tree"
    ]
   }
@@ -103006,7 +103579,8 @@
   },
   "markers": {
    "items": [
-    "key"
+    "key",
+    "boat"
    ]
   }
  },
@@ -103366,6 +103940,7 @@
     "lion"
    ],
    "items": [
+    "cross",
     "heart"
    ]
   }
@@ -109845,6 +110420,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -112882,6 +113462,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -114767,6 +115352,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "crown"
+   ]
   }
  },
  {
@@ -114834,7 +115424,8 @@
   },
   "markers": {
    "items": [
-    "cross"
+    "cross",
+    "heart"
    ]
   }
  },
@@ -115469,7 +116060,6 @@
   },
   "markers": {
    "items": [
-    "tree",
     "flower",
     "rose"
    ]
@@ -116972,6 +117562,7 @@
   },
   "markers": {
    "items": [
+    "walls",
     "flower",
     "rose"
    ]
@@ -117698,6 +118289,13 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "flower",
+    "sword",
+    "key"
+   ]
   }
  },
  {
@@ -117749,6 +118347,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -118318,6 +118921,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -118482,6 +119090,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -120744,6 +121357,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "walls",
+    "wheel"
+   ]
   }
  },
  {
@@ -124190,6 +124809,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "windmill",
+    "wheel"
+   ]
   }
  },
  {
@@ -124279,6 +124904,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -124507,6 +125137,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "windmill",
+    "wheel"
+   ]
   }
  },
  {
@@ -124596,6 +125232,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -126905,6 +127546,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "bell"
+   ]
   }
  },
  {
@@ -127575,6 +128221,10 @@
   "markers": {
    "animals": [
     "fish"
+   ],
+   "items": [
+    "tree",
+    "earOfGrain"
    ]
   }
  },
@@ -127937,6 +128587,15 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bullBison"
+   ],
+   "items": [
+    "crown",
+    "tree"
+   ]
   }
  },
  {
@@ -132056,7 +132715,8 @@
     "ram"
    ],
    "items": [
-    "cross"
+    "cross",
+    "tree"
    ]
   }
  },
@@ -133358,6 +134018,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "crown",
+    "walls"
+   ]
   }
  },
  {
@@ -133641,6 +134307,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "crown",
+    "walls"
+   ]
   }
  },
  {
@@ -135024,6 +135696,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "crown"
    ]
   }
  },
@@ -142629,6 +143304,10 @@
    "animals": [
     "eagle",
     "bird"
+   ],
+   "items": [
+    "walls",
+    "hammer"
    ]
   }
  },
@@ -144870,6 +145549,65 @@
      }
     ]
    }
+  }
+ },
+ {
+  "id": "land-7861",
+  "colors": {
+   "hexPalette": [
+    "#c2001f",
+    "#3f983f",
+    "#ffffff"
+   ],
+   "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 11.574858421775986,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": 3.6794886386851076,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": 11.574858421775986,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": 3.6794886386851076,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "animals": [
+    "horse"
+   ],
+   "items": [
+    "flower",
+    "rose"
+   ]
   }
  },
  {
@@ -148783,6 +149521,11 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "grape",
+    "walls",
+    "wheel"
    ]
   }
  },
@@ -149011,6 +149754,9 @@
   "markers": {
    "animals": [
     "boar"
+   ],
+   "items": [
+    "shell"
    ]
   }
  },
@@ -149102,6 +149848,15 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ],
+   "items": [
+    "crown",
+    "saint"
+   ]
   }
  },
  {
@@ -149468,6 +150223,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "wheel"
+   ]
   }
  },
  {
@@ -149882,6 +150642,10 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "crown",
+    "shell"
    ]
   }
  },
@@ -150040,6 +150804,10 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "crown",
+    "shell"
    ]
   }
  },
@@ -150198,6 +150966,10 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "cross",
+    "tree"
    ]
   }
  },
@@ -150846,6 +151618,10 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "crozier",
+    "shell"
    ]
   }
  },
@@ -150910,6 +151686,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "hammer"
+   ]
   }
  },
  {
@@ -151062,7 +151843,11 @@
   },
   "markers": {
    "animals": [
-    "lion"
+    "lion",
+    "snake"
+   ],
+   "items": [
+    "crown"
    ]
   }
  },
@@ -151114,6 +151899,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -152919,277 +153709,6 @@
     "earOfGrain",
     "wheel"
    ]
-  }
- },
- {
-  "id": "gemeinde-7980",
-  "colors": {
-   "hexPalette": [
-    "#ffdd00",
-    "#ea1b28",
-    "#0166b3",
-    "#d7dae0",
-    "#000004"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 16,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 27.369210532236934,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 36.125327227373354,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "gold": [
-     {
-      "distanceToThreshold": 16,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 27.369210532236934,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 36.125327227373354,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
-   }
-  },
-  "markers": {
-   "items": [
-    "crown",
-    "tree",
-    "bell"
-   ]
-  }
- },
- {
-  "id": "gemeinde-7981",
-  "colors": {
-   "hexPalette": [
-    "#0f47af",
-    "#a4a4a4",
-    "#000000",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 26.458980337503156,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": 26.458980337503156,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   }
-  },
-  "markers": {
-   "animals": [
-    "deer"
-   ]
-  }
- },
- {
-  "id": "gemeinde-7982",
-  "colors": {
-   "hexPalette": [
-    "#fddf11",
-    "#0033ff",
-    "#ff0100",
-    "#74837a",
-    "#000000",
-    "#ffffff"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 13.709505376751892,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 9,
-      "matcherColor": "#00f"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 79,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "gold": [
-     {
-      "distanceToThreshold": 13.709505376751892,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 9,
-      "matcherColor": "#00f"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 79,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   }
-  },
-  "markers": {
-   "items": [
-    "tree",
-    "flower",
-    "earOfGrain"
-   ]
-  }
- },
- {
-  "id": "gemeinde-7983",
-  "colors": {
-   "hexPalette": [
-    "#cccccc"
-   ],
-   "byNames": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   }
   }
  }
 ]

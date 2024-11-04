@@ -20,6 +20,7 @@ export const getMarkers = ({
   title: string,
   imageHash: string,
 }) => {
+  let types: string[] = [];
   let animals: string[] = [];
   let items: string[] = [];
 
@@ -46,5 +47,6 @@ export const getMarkers = ({
   return {
     animals,
     items,
+    types,
   }
 };
