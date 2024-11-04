@@ -131,6 +131,7 @@ const SORT_ORDER: {
   bezirke: 500,
   marktgemeinde: 800,
   land: 2000,
+  verifiedLand: 3000,
   formerMarkt: 5,
   formerBezirke: 5,
   formerKreis: 8,
