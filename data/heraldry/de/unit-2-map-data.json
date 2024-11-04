@@ -1,6 +1,90 @@
 [
  {
   "lang": "de",
+  "index": 5384,
+  "id": "gemeinde-5384",
+  "title": "Strücklingen",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Cloppenburg",
+  "type": [
+   "gemeinde"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Cloppenburg | Gemeinde Molbergen",
+   "coordinates": {
+    "lat": 53.102282,
+    "lon": 7.6815838
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/4e834327-strucklingen-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/4e834327-strucklingen-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 5385,
+  "id": "kreis-5385",
+  "title": "Landkreis Cuxhaven",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Cuxhaven",
+  "type": [
+   "kreis"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Cuxhaven | Landkreis Cuxhaven und Vorgängerkreise",
+   "coordinates": {
+    "lat": 53.62,
+    "lon": 8.81
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/19031b6b-cuxhaven-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/19031b6b-cuxhaven-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 5386,
+  "id": "kreis-5386",
+  "title": "Samtgemeinde Börde Lamstedt",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Cuxhaven",
+  "type": [
+   "kreis"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen im Landkreis Cuxhaven | Samtgemeinden",
+   "coordinates": {
+    "lat": 53.63166667,
+    "lon": 9.09861111
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/879819b-samtgemeinde-borde-lamst-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/879819b-samtgemeinde-borde-lamst-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 5387,
   "id": "gemeinde-5387",
   "title": "Samtgemeinde Hemmoor",
@@ -47779,6 +47863,7 @@
   "title": "Niedersachsen",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Niedersachsen",
   "type": [
+   "verifiedLand",
    "land"
   ],
   "spriteRoot": "unit",
@@ -67284,6 +67369,35 @@
  },
  {
   "lang": "de",
+  "index": 7861,
+  "id": "land-7861",
+  "title": "Nordrhein-Westfalen",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Nordrhein-Westfalen",
+  "type": [
+   "verifiedLand",
+   "land"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen in Nordrhein-Westfalen",
+   "coordinates": {
+    "lat": 51.47833333,
+    "lon": 7.555
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/5b5fb6bd-nordrheinwestfalen-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/5b5fb6bd-nordrheinwestfalen-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 7862,
   "id": "ortsteil-7862",
   "title": "Fronhofen (Kleinich)",
@@ -70480,118 +70594,6 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/unit/347b57a2-eschfeld-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 7980,
-  "id": "gemeinde-7980",
-  "title": "Euscheid",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Eifelkreis_Bitburg-Pr%C3%BCm",
-  "type": [
-   "gemeinde"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Eifelkreis Bitburg-Prüm | Verbandsgemeinde Arzfeld",
-   "coordinates": {
-    "lat": 50.13472222,
-    "lon": 6.30638889
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/416253c4-euscheid-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/416253c4-euscheid-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 7981,
-  "id": "gemeinde-7981",
-  "title": "Großkampenberg",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Eifelkreis_Bitburg-Pr%C3%BCm",
-  "type": [
-   "gemeinde"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Eifelkreis Bitburg-Prüm | Verbandsgemeinde Arzfeld",
-   "coordinates": {
-    "lat": 50.16,
-    "lon": 6.21166667
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/1ec25cee-groskampenberg-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/1ec25cee-groskampenberg-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 7982,
-  "id": "gemeinde-7982",
-  "title": "Hargarten (Eifel)",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Eifelkreis_Bitburg-Pr%C3%BCm",
-  "type": [
-   "gemeinde"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Eifelkreis Bitburg-Prüm | Verbandsgemeinde Arzfeld",
-   "coordinates": {
-    "lat": 50.09694444,
-    "lon": 6.40805556
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/1da913eb-hargarten-eifel-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/1da913eb-hargarten-eifel-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 7983,
-  "id": "gemeinde-7983",
-  "title": "Harspelt",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Eifelkreis_Bitburg-Pr%C3%BCm",
-  "type": [
-   "gemeinde"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Eifelkreis Bitburg-Prüm | Verbandsgemeinde Arzfeld",
-   "coordinates": {
-    "lat": 50.13833333,
-    "lon": 6.17277778
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/6a258c84-harspelt-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/6a258c84-harspelt-320w.webp"
    }
   ]
  }

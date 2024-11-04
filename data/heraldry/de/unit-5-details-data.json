@@ -1,6 +1,287 @@
 [
  {
+  "id": "gemeinde-13286"
+ },
+ {
+  "id": "city-13287",
+  "markers": {
+   "items": [
+    "cross",
+    "walls"
+   ]
+  }
+ },
+ {
+  "id": "city-13288",
+  "colors": {
+   "hexPalette": [
+    "#1786dc",
+    "#ebba44",
+    "#6b5b4c",
+    "#110900",
+    "#fefefe"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 29.98333796039273,
+      "matcherColor": "#1d7dc0"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": 38.59906544096731,
+      "matcherColor": "#e6c633"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -109.6338577364285,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -42.759180473517546,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -33.021502890460766,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -33.091352981896236,
+      "matcherColor": "#243b7f"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "animals": [
+    "heron",
+    "bird"
+   ]
+  }
+ },
+ {
+  "id": "gemeinde-13289",
+  "colors": {
+   "hexPalette": [
+    "#00b3ff",
+    "#10ca0c",
+    "#ffd73a",
+    "#e2f0ed",
+    "#747474",
+    "#000000"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 34,
+      "matcherColor": "#0099ff"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": 33.35196384692581,
+      "matcherColor": "#0f0"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": 28.9677587016342,
+      "matcherColor": "#e6c633"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -128.117045254457,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -174.55434224370612,
+      "matcherColor": "#0f0"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -131.47323572760763,
+      "matcherColor": "#bfa14e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -147.80254607883558,
+      "matcherColor": "#5596c3"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "city-13290",
+  "colors": {
+   "hexPalette": [
+    "#e3e3e3"
+   ],
+   "byNames": {
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ]
+   },
+   "byNamesRejected": {}
+  }
+ },
+ {
+  "id": "gemeinde-13291",
+  "colors": {
+   "hexPalette": [
+    "#fbca0e",
+    "#bc4f3d",
+    "#22a134",
+    "#430800",
+    "#ffffff"
+   ],
+   "byNames": {
+    "gold": [
+     {
+      "distanceToThreshold": 17.268278761557006,
+      "matcherColor": "#e6c633"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": 27.212807378489998,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -108.17013578142522,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -80.32462364104171,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -32.873919120373145,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -140.71372648625703,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
   "id": "city-13292",
+  "colors": {
+   "hexPalette": [
+    "#427340",
+    "#9ea0a4",
+    "#ffffff"
+   ],
+   "byNames": {
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -150.30848877103944,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -29.470665583754325,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -2.0217365626187274,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -63.044707322176194,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  },
   "markers": {
    "items": [
     "tree"
@@ -8,7 +289,21 @@
   }
  },
  {
-  "id": "city-13293"
+  "id": "city-13293",
+  "colors": {
+   "hexPalette": [
+    "#e3e3e3"
+   ],
+   "byNames": {
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ]
+   },
+   "byNamesRejected": {}
+  }
  },
  {
   "id": "city-13294",
@@ -4788,6 +5083,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "crown"
    ]
   }
  },
@@ -5095,6 +5393,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "tree"
    ]
   }
  }

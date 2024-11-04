@@ -26038,6 +26038,7 @@
   "title": "Bayern",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Bayern",
   "type": [
+   "verifiedLand",
    "land"
   ],
   "spriteRoot": "unit",
@@ -26518,7 +26519,7 @@
   ],
   "spriteRoot": "unit",
   "place": {
-   "name": "Liste der Wappen mit dem Nürnberger Stadtwappen | Kleines Nürnberger Wappen",
+   "name": "Liste der Wappen mit dem Nürnberger Stadtwappen | Das Nürnberger Wappen in Wappen von Gebietskörperschaften und Verwaltungseinheiten",
    "coordinates": {
     "lat": 49.27694444,
     "lon": 10.68527778
@@ -26546,7 +26547,7 @@
   ],
   "spriteRoot": "unit",
   "place": {
-   "name": "Liste der Wappen mit dem Nürnberger Stadtwappen | Kleines Nürnberger Wappen",
+   "name": "Liste der Wappen mit dem Nürnberger Stadtwappen | Das Nürnberger Wappen in Wappen von Gebietskörperschaften und Verwaltungseinheiten",
    "coordinates": {
     "lat": 49.524305,
     "lon": 11.318941
@@ -26570,6 +26571,7 @@
   "title": "Berlin",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Berlin",
   "type": [
+   "verifiedLand",
    "land"
   ],
   "spriteRoot": "unit",
@@ -36428,6 +36430,7 @@
   "title": "Brandenburg",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Brandenburg",
   "type": [
+   "verifiedLand",
    "land"
   ],
   "spriteRoot": "unit",
@@ -36988,6 +36991,7 @@
   "title": "Freie Hansestadt Bremen",
   "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Bremen",
   "type": [
+   "verifiedLand",
    "city",
    "land"
   ],
@@ -37036,6 +37040,35 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/unit/4330e4af-freie-hansestadt-bremen-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 4111,
+  "id": "land-4111",
+  "title": "Hamburg",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Hamburg",
+  "type": [
+   "verifiedLand",
+   "land"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen in Hamburg | Landeswappen",
+   "coordinates": {
+    "lat": 53.550556,
+    "lon": 9.993333
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/168c4119-hamburg-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/168c4119-hamburg-320w.webp"
    }
   ]
  },
@@ -49621,6 +49654,35 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/unit/71dfa548-frankfurtbergenenkheim-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
+  "index": 4635,
+  "id": "land-4635",
+  "title": "Hessen",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Hessen",
+  "type": [
+   "verifiedLand",
+   "land"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen in Hessen | Landeswappen",
+   "coordinates": {
+    "lat": 50.599501,
+    "lon": 9.024946
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/7653b356-hessen-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/7653b356-hessen-320w.webp"
    }
   ]
  },
@@ -64909,6 +64971,35 @@
  },
  {
   "lang": "de",
+  "index": 5200,
+  "id": "land-5200",
+  "title": "Mecklenburg-Vorpommern",
+  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_in_Mecklenburg-Vorpommern",
+  "type": [
+   "verifiedLand",
+   "land"
+  ],
+  "spriteRoot": "unit",
+  "place": {
+   "name": "Liste der Wappen in Mecklenburg-Vorpommern | Wappen des Bundeslandes Mecklenburg-Vorpommern",
+   "coordinates": {
+    "lat": 53.612062,
+    "lon": 12.700195
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/de/unit/853c8a4-mecklenburgvorpommern-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/de/unit/853c8a4-mecklenburgvorpommern-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "de",
   "index": 5201,
   "id": "city-5201",
   "title": "Rostock",
@@ -70027,90 +70118,6 @@
    {
     "width": "320w",
     "path": "images/heraldry/de/unit/59a1456b-scharrel-saterland-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 5384,
-  "id": "gemeinde-5384",
-  "title": "Strücklingen",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Cloppenburg",
-  "type": [
-   "gemeinde"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Cloppenburg | Gemeinde Molbergen",
-   "coordinates": {
-    "lat": 53.102282,
-    "lon": 7.6815838
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/4e834327-strucklingen-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/4e834327-strucklingen-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 5385,
-  "id": "kreis-5385",
-  "title": "Landkreis Cuxhaven",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Cuxhaven",
-  "type": [
-   "kreis"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Cuxhaven | Landkreis Cuxhaven und Vorgängerkreise",
-   "coordinates": {
-    "lat": 53.62,
-    "lon": 8.81
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/19031b6b-cuxhaven-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/19031b6b-cuxhaven-320w.webp"
-   }
-  ]
- },
- {
-  "lang": "de",
-  "index": 5386,
-  "id": "kreis-5386",
-  "title": "Samtgemeinde Börde Lamstedt",
-  "url": "https://de.wikipedia.org/wiki/Liste_der_Wappen_im_Landkreis_Cuxhaven",
-  "type": [
-   "kreis"
-  ],
-  "spriteRoot": "unit",
-  "place": {
-   "name": "Liste der Wappen im Landkreis Cuxhaven | Samtgemeinden",
-   "coordinates": {
-    "lat": 53.63166667,
-    "lon": 9.09861111
-   }
-  },
-  "imagesList": [
-   {
-    "width": "80w",
-    "path": "images/heraldry/de/unit/879819b-samtgemeinde-borde-lamst-80w.webp"
-   },
-   {
-    "width": "320w",
-    "path": "images/heraldry/de/unit/879819b-samtgemeinde-borde-lamst-320w.webp"
    }
   ]
  }
