@@ -12,7 +12,6 @@ import { getImageHash, getImageFileName } from './helpers/images';
 
 import { AdministrativeUnit, CoatOfArmsDetailsData, ColorStatus, ColorStatusInDetails } from '../../../src/topic/Heraldry/types';
 
-
 import { getMarkers } from '../../../src/topic/Heraldry/utils/markers/getMarkers';
 
 import { getImageColors } from './helpers/colors'

@@ -9,8 +9,10 @@ import pLimit from 'p-limit';
 
 import { AdministrativeUnit, CoatOfArmsMapData } from '../../../src/topic/Heraldry/types';
 
+import { getMarkers } from '../../../src/topic/Heraldry/utils/markers/getMarkers';
+
 import { clearLastLines } from './helpers/console';
-import { getImageFileName, getCompressedImageSrc } from './helpers/images';
+import { getImageHash, getImageFileName, getCompressedImageSrc } from './helpers/images';
 
 export const download = async (url: string, fileName: string, format: string, path: string, lang: string) => {
   const response = await fetch(url);
@@ -187,13 +189,41 @@ export const fetchImages = async ({
           imageUrl: `images/heraldry/${lang}/${path}/${fileName}.${format}`,
         };
 
+        const {
+          types,
+        } = getMarkers({
+          text: '',
+          title: '',
+          imageHash: getImageHash(unit),
+          lang,
+        });
+
+        if (types.length > 0) {
+          console.log(types);
+          console.log(types);
+          console.log(types);
+          console.log(types);
+          console.log(types);
+          console.log(types);
+          console.log(types);
+          console.log(types);
+          console.log(types);
+          console.log(types);
+          console.log(types);
+          console.log(types);
+          console.log(types);
+          console.log(types);
+          console.log(types);
+          console.log(types);
+        }
+
         contentToSaveForMap.push({
           lang: unit.lang,
           index: unit.index,
           id: unit.id,
           title: unit.title,
           url: unit.url,
-          type: unit.type,
+          type: [...types, ...unit.type],
           ...(unit.spriteRoot ? { spriteRoot: unit.spriteRoot } : {}),
           place: unit.place,
           imagesList,

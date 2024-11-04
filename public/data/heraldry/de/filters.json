@@ -1,4 +1,69 @@
 {
+  "types": [
+    {
+      "name": "customLand",
+      "phrases": [],
+      "include": [
+        {
+          "imageHash": "46951be8",
+          "note": "Baden-Württemberg"
+        },
+        {
+          "imageHash": "5e9f5f3c",
+          "note": "Berlin"
+        },
+        {
+          "imageHash": "339e6615",
+          "note": "Brandenburg"
+        },
+        {
+          "imageHash": "56f07ccf",
+          "note": "Freie Hansestadt Bremen"
+        },
+        {
+          "imageHash": "168c4119",
+          "note": "Hamburg"
+        },
+        {
+          "imageHash": "7653b356",
+          "note": "Hessen"
+        },
+        {
+          "imageHash": "853c8a4",
+          "note": "Mecklenburg-Vorpommern"
+        },
+        {
+          "imageHash": "1ef1d73e",
+          "note": "Niedersachsen"
+        },
+        {
+          "imageHash": "5b5fb6bd",
+          "note": "Nordrhein-Westfalen"
+        },
+        {
+          "imageHash": "33ec0aca",
+          "note": "Rheinland-Pfalz"
+        },
+        {
+          "imageHash": "1e0b36b1",
+          "note": "Saarland"
+        },
+        {
+          "imageHash": "7cd5e8b0",
+          "note": "Sachsen"
+        },
+        {
+          "imageHash": "73d3535f",
+          "note": "Schleswig-Holstein"
+        },
+        {
+          "imageHash": "3fe95b31",
+          "note": "Thüringen"
+        }
+      ],
+      "exclude": []
+    }
+  ],
   "animals": [
     {
       "name": "gull",

@@ -14,14 +14,14 @@ export const getMarkers = ({
   imageHash: string,
   lang: string,
 }) => {
+  let types: string[] = [];
   let animals: string[] = [];
   let items: string[] = [];
-
-  // const text = rawText.toLowerCase() || '';
 
   if (lang === 'de') {
     const response = getMarkersDE({ text: rawText, title, imageHash })
 
+    types = response.types;
     animals = response.animals;
     items = response.items;
   }
@@ -29,6 +29,7 @@ export const getMarkers = ({
   if (lang === 'et') {
     const response = getMarkersET({ text: rawText, title, imageHash })
 
+    types = response.types;
     animals = response.animals;
     items = response.items;
   }
@@ -36,6 +37,7 @@ export const getMarkers = ({
   if (lang === 'fi') {
     const response = getMarkersFI({ text: rawText, title, imageHash })
 
+    types = response.types;
     animals = response.animals;
     items = response.items;
   }
@@ -43,6 +45,7 @@ export const getMarkers = ({
   if (lang === 'pl') {
     const response = getMarkersPL({ text: rawText, title, imageHash });
 
+    types = response.types;
     animals = response.animals;
     items = response.items;
   }
@@ -72,6 +75,7 @@ export const getMarkers = ({
   }
 
   return {
+    types,
     animals,
     items,
   }
