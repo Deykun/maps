@@ -75,6 +75,7 @@ const FiltersPaneSidebarTypes = ({
             setClickType={setClickType}
             sortBy={sortBy}
             setSortBy={setSortBy}
+            isSortable={filtersList.length > 1}
             clearFilters={clearFilters}
             activeTotal={activeTotal}
           />
