@@ -156,6 +156,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -231,6 +236,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree",
+    "walls"
+   ]
   }
  },
  {
@@ -561,6 +572,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "stork",
+    "bird"
+   ]
   }
  },
  {
@@ -605,6 +622,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -1362,6 +1384,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree",
+    "hammer"
+   ]
   }
  },
  {
@@ -2219,6 +2247,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "crown"
    ]
   }
  },
@@ -3044,6 +3075,9 @@
     "rooster",
     "lion",
     "bird"
+   ],
+   "items": [
+    "crown"
    ]
   }
  },
@@ -4267,6 +4301,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ]
   }
  },
  {
@@ -4602,6 +4641,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ]
   }
  },
  {
@@ -5331,6 +5375,9 @@
    "animals": [
     "rooster",
     "bird"
+   ],
+   "items": [
+    "crown"
    ]
   }
  },
