@@ -762,6 +762,22 @@
         {
           "imageHash": "5deb4b3a",
           "note": "Landkreis Stollberg"
+        },
+        {
+          "imageHash": "f049867",
+          "note": "Söhlde"
+        },
+        {
+          "imageHash": "9348da3",
+          "note": "Schladen-Werla"
+        },
+        {
+          "imageHash": "3e2132c",
+          "note": "Gillersheim"
+        },
+        {
+          "imageHash": "79263e06",
+          "note": "Aufkirchen (Gerolfingen)"
         }
       ],
       "exclude": [
@@ -857,6 +873,10 @@
         {
           "imageHash": "644b7b85",
           "note": "Werra-Suhl-Tal"
+        },
+        {
+          "imageHash": "ed9ae7c",
+          "note": "Schweisweiler"
         }
       ],
       "exclude": []
@@ -1030,6 +1050,14 @@
         {
           "imageHash": "3405734a",
           "note": "Rathenow"
+        },
+        {
+          "imageHash": "2a820975",
+          "note": "Werxhausen"
+        },
+        {
+          "imageHash": "247d5dd6",
+          "note": "Mengersgereuth-Hämmern"
         }
       ],
       "exclude": []
@@ -1100,6 +1128,10 @@
         {
           "imageHash": "709bbf5",
           "note": "Etzbach"
+        },
+        {
+          "imageHash": "6a034115",
+          "note": "Oebisfelde"
         }
       ],
       "exclude": []
@@ -1204,11 +1236,7 @@
     },
     {
       "name": "monkey",
-      "phrases": [
-          "affe",
-          "affen",
-          "affenrumpf"
-      ],
+      "phrases": ["affe", "affen", "affenrumpf"],
       "include": [],
       "exclude": []
     },
@@ -1300,6 +1328,10 @@
         {
           "imageHash": "4791ac7d",
           "note": "Frankfurt-Schwanheim"
+        },
+        {
+          "imageHash": "48fea635",
+          "note": "Burtscheid"
         }
       ],
       "exclude": []
@@ -1409,6 +1441,10 @@
         {
           "imageHash": "7ca85adb",
           "note": "Dahmen"
+        },
+        {
+          "imageHash": "18dbb882",
+          "note": "Hasenthal"
         }
       ],
       "exclude": []
@@ -1979,6 +2015,22 @@
         {
           "imageHash": "3546af3d",
           "note": "Höringen"
+        },
+        {
+          "imageHash": "19122083",
+          "note": "Lauenberg"
+        },
+        {
+          "imageHash": "48fea635",
+          "note": "Burtscheid"
+        },
+        {
+          "imageHash": "16aaee5f",
+          "note": "Roth (Rhein-Lahn-Kreis)"
+        },
+        {
+          "imageHash": "6deabd68",
+          "note": "Hürnheim (Ederheim)"
         }
       ],
       "exclude": [
@@ -2018,6 +2070,14 @@
         {
           "imageHash": "7c27e5c6",
           "note": "Sankt Alban (Pfalz)"
+        },
+        {
+          "imageHash": "7c8b0bb7",
+          "note": "Limburg an der Lahn"
+        },
+        {
+          "imageHash": "245e25f7",
+          "note": "Spreetal"
         }
       ],
       "exclude": []
@@ -4884,6 +4944,18 @@
         {
           "imageHash": "72e045bb",
           "note": "Oberndorf (Pfalz)"
+        },
+        {
+          "imageHash": "5a02da17",
+          "note": "Schladen-Werla"
+        },
+        {
+          "imageHash": "4a929e4",
+          "note": "Kreis Moers"
+        },
+        {
+          "imageHash": "57df4e9b",
+          "note": "Deesbach"
         }
       ],
       "exclude": [
@@ -5717,6 +5789,42 @@
         {
           "imageHash": "4513a070",
           "note": "Verbandsgemeinde Meisenheim"
+        },
+        {
+          "imageHash": "1120c588",
+          "note": "Belum"
+        },
+        {
+          "imageHash": "250440e",
+          "note": "Söhlde"
+        },
+        {
+          "imageHash": "205955bc",
+          "note": "Halberstadt"
+        },
+        {
+          "imageHash": "6a3b8d7c",
+          "note": "Monheim am Rhein"
+        },
+        {
+          "imageHash": "10010cc",
+          "note": "Geilenkirchen"
+        },
+        {
+          "imageHash": "165d3650",
+          "note": "Oberthal (Saar)"
+        },
+        {
+          "imageHash": "a72a012",
+          "note": "Haupersweiler"
+        },
+        {
+          "imageHash": "5829d871",
+          "note": "Elsterheide"
+        },
+        {
+          "imageHash": "287dc544",
+          "note": "Bahretal"
         }
       ],
       "exclude": [
@@ -5911,6 +6019,14 @@
         {
           "imageHash": "7bc27cff",
           "note": "Rittersdorf (Thüringen)"
+        },
+        {
+          "imageHash": "60f1a50b",
+          "note": "Bürgel (Thüringen)"
+        },
+        {
+          "imageHash": "8b8c036",
+          "note": "Rötha"
         }
       ],
       "exclude": []
@@ -6283,6 +6399,22 @@
         {
           "imageHash": "3faa17b4",
           "note": "Elbe-Parey"
+        },
+        {
+          "imageHash": "2b9fdd40",
+          "note": "Thalfang"
+        },
+        {
+          "imageHash": "56814e9c",
+          "note": "Sichelreuth"
+        },
+        {
+          "imageHash": "5110ddde",
+          "note": "Glaubitz"
+        },
+        {
+          "imageHash": "56b4f969",
+          "note": "Lohsa"
         }
       ],
       "exclude": []
@@ -7006,6 +7138,14 @@
         {
           "imageHash": "7bc27cff",
           "note": "Rittersdorf (Thüringen)"
+        },
+        {
+          "imageHash": "21eddb95",
+          "note": "Allershausen (Uslar)"
+        },
+        {
+          "imageHash": "5829d871",
+          "note": "Elsterheide"
         }
       ],
       "exclude": []
@@ -7364,6 +7504,14 @@
         {
           "imageHash": "718ef551",
           "note": "Gambach (Karlstadt)"
+        },
+        {
+          "imageHash": "5cd3f334",
+          "note": "Herbram"
+        },
+        {
+          "imageHash": "6a11b9a8",
+          "note": "Hartmannsdorf (bei Eisenberg)"
         }
       ],
       "exclude": []
@@ -7515,6 +7663,14 @@
         {
           "imageHash": "526178c0",
           "note": "Ohrdruf"
+        },
+        {
+          "imageHash": "41e504e2",
+          "note": "Wülfershausen (Wasserlosen)"
+        },
+        {
+          "imageHash": "77d1cbc5",
+          "note": "Ehrenhain (Nobitz)"
         }
       ],
       "exclude": [
@@ -7543,6 +7699,10 @@
         {
           "imageHash": "1098ff27",
           "note": "Gommern"
+        },
+        {
+          "imageHash": "75049adb",
+          "note": "Hohenwarte"
         }
       ],
       "exclude": []
@@ -8162,6 +8322,26 @@
         {
           "imageHash": "4eb485bd",
           "note": "Seegebiet Mansfelder Land"
+        },
+        {
+          "imageHash": "fce97c9",
+          "note": "Nochern"
+        },
+        {
+          "imageHash": "32c1112b",
+          "note": "Serrig"
+        },
+        {
+          "imageHash": "13d85ea",
+          "note": "Seitenroda"
+        },
+        {
+          "imageHash": "5f5fee29",
+          "note": "Graitschen bei Bürgel"
+        },
+        {
+          "imageHash": "1da02048",
+          "note": "Landkreis Kitzingen"
         }
       ],
       "exclude": []
@@ -8307,6 +8487,18 @@
         {
           "imageHash": "4dcdee20",
           "note": "Oschersleben (Bode)"
+        },
+        {
+          "imageHash": "67c80ff4",
+          "note": "Hude (Oldenburg)"
+        },
+        {
+          "imageHash": "511e753c",
+          "note": "Söhlde"
+        },
+        {
+          "imageHash": "319f5b5c",
+          "note": "Osloß"
         }
       ],
       "exclude": []
@@ -8369,6 +8561,10 @@
         {
           "imageHash": "37ac3a89",
           "note": "Spechtsbrunn"
+        },
+        {
+          "imageHash": "242d5cc7",
+          "note": "Holste"
         }
       ],
       "exclude": [
@@ -9081,6 +9277,142 @@
         {
           "imageHash": "3bafea15",
           "note": "Heufelden"
+        },
+        {
+          "imageHash": "47937a2c",
+          "note": "Högersdorf"
+        },
+        {
+          "imageHash": "13f15aa1",
+          "note": "Spreckens"
+        },
+        {
+          "imageHash": "1af31fb4",
+          "note": "Vegesack"
+        },
+        {
+          "imageHash": "a669ff6",
+          "note": "Bad Pyrmont"
+        },
+        {
+          "imageHash": "583683fb",
+          "note": "Neersen (Bad Pyrmont)"
+        },
+        {
+          "imageHash": "14fe48d5",
+          "note": "Kleinenberg (Bad Pyrmont)"
+        },
+        {
+          "imageHash": "42fee1ba",
+          "note": "Großenberg (Bad Pyrmont)"
+        },
+        {
+          "imageHash": "fab585",
+          "note": "Eichenborn (Bad Pyrmont)"
+        },
+        {
+          "imageHash": "735564b7",
+          "note": "Baarsen (Bad Pyrmont)"
+        },
+        {
+          "imageHash": "14b4a237",
+          "note": "Wallensen"
+        },
+        {
+          "imageHash": "15499baf",
+          "note": "Hildesheim"
+        },
+        {
+          "imageHash": "531e18f3",
+          "note": "Harsum"
+        },
+        {
+          "imageHash": "659ab133",
+          "note": "Harsum"
+        },
+        {
+          "imageHash": "201306a2",
+          "note": "Nesselröden (Duderstadt)"
+        },
+        {
+          "imageHash": "73671ea1",
+          "note": "Germershausen"
+        },
+        {
+          "imageHash": "18107fbd",
+          "note": "Obernfeld"
+        },
+        {
+          "imageHash": "6ba91279",
+          "note": "Dringenberg"
+        },
+        {
+          "imageHash": "3f866753",
+          "note": "Neuenbeken"
+        },
+        {
+          "imageHash": "54b26074",
+          "note": "Grundsteinheim"
+        },
+        {
+          "imageHash": "400ab940",
+          "note": "Holtheim"
+        },
+        {
+          "imageHash": "3135143d",
+          "note": "Eggermühlen"
+        },
+        {
+          "imageHash": "77919d3e",
+          "note": "Wegberg"
+        },
+        {
+          "imageHash": "513ff3f2",
+          "note": "Weilmünster"
+        },
+        {
+          "imageHash": "6a6f126c",
+          "note": "Stahlhofen (Westerwald)"
+        },
+        {
+          "imageHash": "4b503ea1",
+          "note": "Untershausen"
+        },
+        {
+          "imageHash": "47fd2f20",
+          "note": "Winden (Nassau)"
+        },
+        {
+          "imageHash": "6f26c962",
+          "note": "Zerf"
+        },
+        {
+          "imageHash": "2c474fab",
+          "note": "Kirf"
+        },
+        {
+          "imageHash": "a72a012",
+          "note": "Haupersweiler"
+        },
+        {
+          "imageHash": "11ee914e",
+          "note": "Bobenheim am Berg"
+        },
+        {
+          "imageHash": "6b788d20",
+          "note": "Reinhardsachsen"
+        },
+        {
+          "imageHash": "78732b38",
+          "note": "Landkreis Görlitz"
+        },
+        {
+          "imageHash": "76308a03",
+          "note": "Haselbach in der Rhön"
+        },
+        {
+          "imageHash": "5c757bc6",
+          "note": "Kronberg im Taunus"
         }
       ],
       "exclude": [
@@ -9869,6 +10201,118 @@
         {
           "imageHash": "175140cb",
           "note": "Thallwitz"
+        },
+        {
+          "imageHash": "463cb3dc",
+          "note": "Aerzen"
+        },
+        {
+          "imageHash": "120ee3c4",
+          "note": "Delligsen"
+        },
+        {
+          "imageHash": "73671ea1",
+          "note": "Germershausen"
+        },
+        {
+          "imageHash": "184c3a20",
+          "note": "Calden"
+        },
+        {
+          "imageHash": "179e3a52",
+          "note": "Bissendorf"
+        },
+        {
+          "imageHash": "6c880dba",
+          "note": "Erkrath"
+        },
+        {
+          "imageHash": "a02cb09",
+          "note": "Erkrath"
+        },
+        {
+          "imageHash": "75ed76b9",
+          "note": "Wegberg"
+        },
+        {
+          "imageHash": "511bd197",
+          "note": "Heinsberg"
+        },
+        {
+          "imageHash": "94fa209",
+          "note": "Waldfeucht"
+        },
+        {
+          "imageHash": "924d6e6",
+          "note": "Langenfeld (Rheinland)"
+        },
+        {
+          "imageHash": "25b43d31",
+          "note": "Bedburg"
+        },
+        {
+          "imageHash": "6727ac4c",
+          "note": "Teveren"
+        },
+        {
+          "imageHash": "3e972b71",
+          "note": "Weilmünster"
+        },
+        {
+          "imageHash": "7d041e3c",
+          "note": "Hollnich"
+        },
+        {
+          "imageHash": "6ebc260e",
+          "note": "Rhein-Hunsrück-Kreis"
+        },
+        {
+          "imageHash": "58d04517",
+          "note": "Verbandsgemeinde Kirchberg (Hunsrück)"
+        },
+        {
+          "imageHash": "53b1f1ec",
+          "note": "Frauenberg (Nahe)"
+        },
+        {
+          "imageHash": "4a04ad1d",
+          "note": "Verbandsgemeinde Altenglan"
+        },
+        {
+          "imageHash": "24b51a5e",
+          "note": "Reichsthal"
+        },
+        {
+          "imageHash": "5cfd9a83",
+          "note": "Wachenheim an der Weinstraße"
+        },
+        {
+          "imageHash": "33aeb1c3",
+          "note": "Standenbühl"
+        },
+        {
+          "imageHash": "551c81b2",
+          "note": "Frettenheim"
+        },
+        {
+          "imageHash": "2bd3b527",
+          "note": "Itzgrund"
+        },
+        {
+          "imageHash": "78732b38",
+          "note": "Landkreis Görlitz"
+        },
+        {
+          "imageHash": "15bf6742",
+          "note": "Spremberg"
+        },
+        {
+          "imageHash": "31da8e1a",
+          "note": "Saalburg-Ebersdorf"
+        },
+        {
+          "imageHash": "31fbb9c6",
+          "note": "Großsorheim"
         }
       ]
     },
@@ -11901,6 +12345,534 @@
         {
           "imageHash": "34d689c8",
           "note": "Görzke"
+        },
+        {
+          "imageHash": "24172175",
+          "note": "Brammer"
+        },
+        {
+          "imageHash": "6a6496ea",
+          "note": "Kükels"
+        },
+        {
+          "imageHash": "446c189",
+          "note": "Wahlstedt"
+        },
+        {
+          "imageHash": "30461f3f",
+          "note": "Oering"
+        },
+        {
+          "imageHash": "463ead5",
+          "note": "Hamburg-Langenhorn"
+        },
+        {
+          "imageHash": "40299c5",
+          "note": "Oederquart"
+        },
+        {
+          "imageHash": "59625227",
+          "note": "Minstedt"
+        },
+        {
+          "imageHash": "71a32a0d",
+          "note": "Samtgemeinde Geestequelle"
+        },
+        {
+          "imageHash": "5e43f950",
+          "note": "Hipstedt"
+        },
+        {
+          "imageHash": "3a50db85",
+          "note": "Hüttenbusch"
+        },
+        {
+          "imageHash": "73a4fa51",
+          "note": "Stockhausen (Lübbecke)"
+        },
+        {
+          "imageHash": "3e52c0f",
+          "note": "Halvestorf"
+        },
+        {
+          "imageHash": "20bf96fb",
+          "note": "Haverbeck (Hameln)"
+        },
+        {
+          "imageHash": "fab585",
+          "note": "Eichenborn (Bad Pyrmont)"
+        },
+        {
+          "imageHash": "c85243b",
+          "note": "Holzen (bei Eschershausen)"
+        },
+        {
+          "imageHash": "120ee3c4",
+          "note": "Delligsen"
+        },
+        {
+          "imageHash": "1cf1884c",
+          "note": "Groß Lafferde"
+        },
+        {
+          "imageHash": "278fb0b1",
+          "note": "Vordorf"
+        },
+        {
+          "imageHash": "127cc8b2",
+          "note": "Gamsen (Gifhorn)"
+        },
+        {
+          "imageHash": "6adb039b",
+          "note": "Plockhorst"
+        },
+        {
+          "imageHash": "1960d2ee",
+          "note": "Edemissen"
+        },
+        {
+          "imageHash": "58af1c21",
+          "note": "Schladen-Werla"
+        },
+        {
+          "imageHash": "5260fa5a",
+          "note": "Schladen-Werla"
+        },
+        {
+          "imageHash": "289d11e1",
+          "note": "Schladen-Werla"
+        },
+        {
+          "imageHash": "49cf5f98",
+          "note": "Samtgemeinde Elm-Asse"
+        },
+        {
+          "imageHash": "3153a34f",
+          "note": "Hohe Börde"
+        },
+        {
+          "imageHash": "7d6339cb",
+          "note": "Hohe Börde"
+        },
+        {
+          "imageHash": "47c4202b",
+          "note": "Halberstadt"
+        },
+        {
+          "imageHash": "205955bc",
+          "note": "Halberstadt"
+        },
+        {
+          "imageHash": "42026951",
+          "note": "Stöckheim (Northeim)"
+        },
+        {
+          "imageHash": "2632f91",
+          "note": "Pöhlde"
+        },
+        {
+          "imageHash": "30044114",
+          "note": "Harzgerode"
+        },
+        {
+          "imageHash": "2791bf9b",
+          "note": "Harzgerode"
+        },
+        {
+          "imageHash": "3e2132c",
+          "note": "Gillersheim"
+        },
+        {
+          "imageHash": "4511e87",
+          "note": "Sonnenstein (Gemeinde)"
+        },
+        {
+          "imageHash": "76ccf90d",
+          "note": "Sonnenstein (Gemeinde)"
+        },
+        {
+          "imageHash": "1fed6ce",
+          "note": "Hillerse (Northeim)"
+        },
+        {
+          "imageHash": "208ffb90",
+          "note": "Ertinghausen"
+        },
+        {
+          "imageHash": "6df448a9",
+          "note": "Gierswalde"
+        },
+        {
+          "imageHash": "400ab940",
+          "note": "Holtheim"
+        },
+        {
+          "imageHash": "5ed6188",
+          "note": "Sande (Paderborn)"
+        },
+        {
+          "imageHash": "55b3eee3",
+          "note": "Lippling"
+        },
+        {
+          "imageHash": "5d56d72f",
+          "note": "Göstrup"
+        },
+        {
+          "imageHash": "57d18217",
+          "note": "Mastholte"
+        },
+        {
+          "imageHash": "79757410",
+          "note": "Benteler (Langenberg)"
+        },
+        {
+          "imageHash": "3fdb251",
+          "note": "Samtgemeinde Neuenkirchen"
+        },
+        {
+          "imageHash": "3f17c824",
+          "note": "Gölenkamp"
+        },
+        {
+          "imageHash": "42f8416b",
+          "note": "Kreis Wesel"
+        },
+        {
+          "imageHash": "10010cc",
+          "note": "Geilenkirchen"
+        },
+        {
+          "imageHash": "19f3a017",
+          "note": "Höfen (Monschau)"
+        },
+        {
+          "imageHash": "490e8221",
+          "note": "Dickendorf"
+        },
+        {
+          "imageHash": "6383276e",
+          "note": "Schutzbach"
+        },
+        {
+          "imageHash": "159e6da",
+          "note": "Waldsolms"
+        },
+        {
+          "imageHash": "3e972b71",
+          "note": "Weilmünster"
+        },
+        {
+          "imageHash": "153acc79",
+          "note": "Hüttenberg (Hessen)"
+        },
+        {
+          "imageHash": "6dafe829",
+          "note": "Linden (Hessen)"
+        },
+        {
+          "imageHash": "22eed652",
+          "note": "Limburg an der Lahn"
+        },
+        {
+          "imageHash": "5076c6b0",
+          "note": "Limburg an der Lahn"
+        },
+        {
+          "imageHash": "48706dd2",
+          "note": "Limburg an der Lahn"
+        },
+        {
+          "imageHash": "6a6f126c",
+          "note": "Stahlhofen (Westerwald)"
+        },
+        {
+          "imageHash": "4b503ea1",
+          "note": "Untershausen"
+        },
+        {
+          "imageHash": "2bd06026",
+          "note": "Ergeshausen"
+        },
+        {
+          "imageHash": "16aaee5f",
+          "note": "Roth (Rhein-Lahn-Kreis)"
+        },
+        {
+          "imageHash": "1be342b2",
+          "note": "Laubach (Hunsrück)"
+        },
+        {
+          "imageHash": "7d041e3c",
+          "note": "Hollnich"
+        },
+        {
+          "imageHash": "5d47c894",
+          "note": "Hettenrodt"
+        },
+        {
+          "imageHash": "7b9bc321",
+          "note": "Etgert"
+        },
+        {
+          "imageHash": "6a41b8d2",
+          "note": "Gielert"
+        },
+        {
+          "imageHash": "4a6ee330",
+          "note": "Farschweiler"
+        },
+        {
+          "imageHash": "ed9ae7c",
+          "note": "Schweisweiler"
+        },
+        {
+          "imageHash": "422a0138",
+          "note": "Dittelsheim-Heßloch"
+        },
+        {
+          "imageHash": "280e4823",
+          "note": "Hochborn"
+        },
+        {
+          "imageHash": "22e083f9",
+          "note": "Waldbrunn (Odenwald)"
+        },
+        {
+          "imageHash": "43da3448",
+          "note": "Gädheim"
+        },
+        {
+          "imageHash": "41e504e2",
+          "note": "Wülfershausen (Wasserlosen)"
+        },
+        {
+          "imageHash": "1b142c15",
+          "note": "Eschenthal"
+        },
+        {
+          "imageHash": "4468e760",
+          "note": "Schwarzatal"
+        },
+        {
+          "imageHash": "6d85c91e",
+          "note": "Moxa"
+        },
+        {
+          "imageHash": "68da6cb9",
+          "note": "Paska"
+        },
+        {
+          "imageHash": "7c47376b",
+          "note": "Schmorda"
+        },
+        {
+          "imageHash": "4a90b4df",
+          "note": "Oppurg"
+        },
+        {
+          "imageHash": "588fc8ef",
+          "note": "Gumperda"
+        },
+        {
+          "imageHash": "6ea8b29e",
+          "note": "Großschwabhausen"
+        },
+        {
+          "imageHash": "2b992022",
+          "note": "Apolda"
+        },
+        {
+          "imageHash": "6a11b9a8",
+          "note": "Hartmannsdorf (bei Eisenberg)"
+        },
+        {
+          "imageHash": "7fc8f7a1",
+          "note": "Zeitz"
+        },
+        {
+          "imageHash": "6f1e48c1",
+          "note": "Neukieritzsch"
+        },
+        {
+          "imageHash": "450132a9",
+          "note": "Thümmlitzwalde"
+        },
+        {
+          "imageHash": "72dabfe9",
+          "note": "Ketzerbachtal"
+        },
+        {
+          "imageHash": "1974de89",
+          "note": "Zeithain"
+        },
+        {
+          "imageHash": "7cf90e6d",
+          "note": "Rückersdorf (Niederlausitz)"
+        },
+        {
+          "imageHash": "72071df3",
+          "note": "Landkreis Torgau-Oschatz"
+        },
+        {
+          "imageHash": "5c41fd30",
+          "note": "Kirschau"
+        },
+        {
+          "imageHash": "12c00ad",
+          "note": "Crostau"
+        },
+        {
+          "imageHash": "6b9faa58",
+          "note": "Uhyst (Spree)"
+        },
+        {
+          "imageHash": "56b4f969",
+          "note": "Lohsa"
+        },
+        {
+          "imageHash": "5829d871",
+          "note": "Elsterheide"
+        },
+        {
+          "imageHash": "c8a670a",
+          "note": "Hohenbocka"
+        },
+        {
+          "imageHash": "6276e2f4",
+          "note": "Lindenau (Oberlausitz)"
+        },
+        {
+          "imageHash": "5a112dda",
+          "note": "Großdubrau"
+        },
+        {
+          "imageHash": "46dad445",
+          "note": "Malschwitz"
+        },
+        {
+          "imageHash": "78732b38",
+          "note": "Landkreis Görlitz"
+        },
+        {
+          "imageHash": "73cd2170",
+          "note": "Rietschen"
+        },
+        {
+          "imageHash": "245e25f7",
+          "note": "Spreetal"
+        },
+        {
+          "imageHash": "4fe39692",
+          "note": "Oßling"
+        },
+        {
+          "imageHash": "2e70d8f7",
+          "note": "Hoyerswerda"
+        },
+        {
+          "imageHash": "67abe0e8",
+          "note": "Hainewalde"
+        },
+        {
+          "imageHash": "287dc544",
+          "note": "Bahretal"
+        },
+        {
+          "imageHash": "16918cf6",
+          "note": "Dohma"
+        },
+        {
+          "imageHash": "1bbc49e9",
+          "note": "Dohma"
+        },
+        {
+          "imageHash": "48d0f154",
+          "note": "Freital"
+        },
+        {
+          "imageHash": "3cb62c8d",
+          "note": "Beerwalde (Klingenberg)"
+        },
+        {
+          "imageHash": "30d567f",
+          "note": "Großschirma"
+        },
+        {
+          "imageHash": "3cf0ac54",
+          "note": "Leubsdorf (Sachsen)"
+        },
+        {
+          "imageHash": "73664dc0",
+          "note": "Hohndorf"
+        },
+        {
+          "imageHash": "452110c5",
+          "note": "Ponitz"
+        },
+        {
+          "imageHash": "77d1cbc5",
+          "note": "Ehrenhain (Nobitz)"
+        },
+        {
+          "imageHash": "349f6a8",
+          "note": "Amtsberg"
+        },
+        {
+          "imageHash": "7a097824",
+          "note": "Mohlsdorf-Teichwolframsdorf"
+        },
+        {
+          "imageHash": "4e7535f3",
+          "note": "Limbach (Vogtland)"
+        },
+        {
+          "imageHash": "75049adb",
+          "note": "Hohenwarte"
+        },
+        {
+          "imageHash": "643299d7",
+          "note": "Rot am See"
+        },
+        {
+          "imageHash": "6f01a91",
+          "note": "Benzenzimmern"
+        },
+        {
+          "imageHash": "79f7054f",
+          "note": "Hochdorf (bei Plochingen)"
+        },
+        {
+          "imageHash": "6c239665",
+          "note": "Lindau (Bodensee)"
+        },
+        {
+          "imageHash": "4f13bca0",
+          "note": "Hasel (Baden)"
+        },
+        {
+          "imageHash": "674fe785",
+          "note": "Ruit (Ostfildern)"
+        },
+        {
+          "imageHash": "68e5b65d",
+          "note": "Eschach (bei Schwäbisch Gmünd)"
+        },
+        {
+          "imageHash": "2a57fdd4",
+          "note": "Lindach (Schwäbisch Gmünd)"
+        },
+        {
+          "imageHash": "1f8cd09a",
+          "note": "Schwärzelbach"
+        },
+        {
+          "imageHash": "47497835",
+          "note": "Usingen"
+        },
+        {
+          "imageHash": "658c24ff",
+          "note": "Dreisbach (Westerwald)"
         }
       ]
     },
@@ -12058,6 +13030,46 @@
         {
           "imageHash": "12b56d42",
           "note": "Amerdingen"
+        },
+        {
+          "imageHash": "7fb6884e",
+          "note": "Hohe Börde"
+        },
+        {
+          "imageHash": "1f58e4f9",
+          "note": "Oberharz am Brocken"
+        },
+        {
+          "imageHash": "73671ea1",
+          "note": "Germershausen"
+        },
+        {
+          "imageHash": "77919d3e",
+          "note": "Wegberg"
+        },
+        {
+          "imageHash": "4c94a083",
+          "note": "Hentern"
+        },
+        {
+          "imageHash": "f0e397a",
+          "note": "Steinbach am Donnersberg"
+        },
+        {
+          "imageHash": "13ce2df8",
+          "note": "Erfeld"
+        },
+        {
+          "imageHash": "513c3923",
+          "note": "Markranstädt"
+        },
+        {
+          "imageHash": "34fceab4",
+          "note": "Schkeuditz"
+        },
+        {
+          "imageHash": "4477f5cb",
+          "note": "Wittichenau"
         }
       ]
     },
@@ -13189,6 +14201,214 @@
         {
           "imageHash": "4a47c97f",
           "note": "Stadt Wanzleben"
+        },
+        {
+          "imageHash": "463ead5",
+          "note": "Hamburg-Langenhorn"
+        },
+        {
+          "imageHash": "6cc11574",
+          "note": "Gnarrenburg"
+        },
+        {
+          "imageHash": "1c062478",
+          "note": "Brillit"
+        },
+        {
+          "imageHash": "5ba92028",
+          "note": "Wardenburg"
+        },
+        {
+          "imageHash": "67c80ff4",
+          "note": "Hude (Oldenburg)"
+        },
+        {
+          "imageHash": "73576339",
+          "note": "Hude (Oldenburg)"
+        },
+        {
+          "imageHash": "259b6cc1",
+          "note": "Kreis Lübbecke"
+        },
+        {
+          "imageHash": "6291261f",
+          "note": "Bad Münder am Deister"
+        },
+        {
+          "imageHash": "14b4a237",
+          "note": "Wallensen"
+        },
+        {
+          "imageHash": "120ee3c4",
+          "note": "Delligsen"
+        },
+        {
+          "imageHash": "15499baf",
+          "note": "Hildesheim"
+        },
+        {
+          "imageHash": "531e18f3",
+          "note": "Harsum"
+        },
+        {
+          "imageHash": "1e61d0e2",
+          "note": "Söhlde"
+        },
+        {
+          "imageHash": "3153a34f",
+          "note": "Hohe Börde"
+        },
+        {
+          "imageHash": "3ed06880",
+          "note": "Hohnstedt"
+        },
+        {
+          "imageHash": "1fed6ce",
+          "note": "Hillerse (Northeim)"
+        },
+        {
+          "imageHash": "208ffb90",
+          "note": "Ertinghausen"
+        },
+        {
+          "imageHash": "19122083",
+          "note": "Lauenberg"
+        },
+        {
+          "imageHash": "52d612f6",
+          "note": "Fredelsloh"
+        },
+        {
+          "imageHash": "6fc75c6b",
+          "note": "Immenhausen"
+        },
+        {
+          "imageHash": "6ba91279",
+          "note": "Dringenberg"
+        },
+        {
+          "imageHash": "3f866753",
+          "note": "Neuenbeken"
+        },
+        {
+          "imageHash": "57d18217",
+          "note": "Mastholte"
+        },
+        {
+          "imageHash": "e0e9575",
+          "note": "Rulle"
+        },
+        {
+          "imageHash": "669a14e4",
+          "note": "Bersenbrück"
+        },
+        {
+          "imageHash": "5601b6e4",
+          "note": "Alstätte"
+        },
+        {
+          "imageHash": "48fea635",
+          "note": "Burtscheid"
+        },
+        {
+          "imageHash": "513ff3f2",
+          "note": "Weilmünster"
+        },
+        {
+          "imageHash": "3b93edca",
+          "note": "Limburg an der Lahn"
+        },
+        {
+          "imageHash": "1af202",
+          "note": "Hirschfeld (Hunsrück)"
+        },
+        {
+          "imageHash": "4a6ee330",
+          "note": "Farschweiler"
+        },
+        {
+          "imageHash": "32c1112b",
+          "note": "Serrig"
+        },
+        {
+          "imageHash": "53b1f1ec",
+          "note": "Frauenberg (Nahe)"
+        },
+        {
+          "imageHash": "7c47376b",
+          "note": "Schmorda"
+        },
+        {
+          "imageHash": "13d85ea",
+          "note": "Seitenroda"
+        },
+        {
+          "imageHash": "6a11b9a8",
+          "note": "Hartmannsdorf (bei Eisenberg)"
+        },
+        {
+          "imageHash": "796bc73a",
+          "note": "Zeitz"
+        },
+        {
+          "imageHash": "5281c7d2",
+          "note": "Ostrau (Jahnatal)"
+        },
+        {
+          "imageHash": "1974de89",
+          "note": "Zeithain"
+        },
+        {
+          "imageHash": "2473c206",
+          "note": "Schirgiswalde"
+        },
+        {
+          "imageHash": "3af33177",
+          "note": "Neustadt in Sachsen"
+        },
+        {
+          "imageHash": "492af635",
+          "note": "Göda"
+        },
+        {
+          "imageHash": "1c4aa427",
+          "note": "Cunewalde"
+        },
+        {
+          "imageHash": "78732b38",
+          "note": "Landkreis Görlitz"
+        },
+        {
+          "imageHash": "15bf6742",
+          "note": "Spremberg"
+        },
+        {
+          "imageHash": "287dc544",
+          "note": "Bahretal"
+        },
+        {
+          "imageHash": "73caeaac",
+          "note": "Dohna"
+        },
+        {
+          "imageHash": "25385270",
+          "note": "Freiberg"
+        },
+        {
+          "imageHash": "15fa6877",
+          "note": "Augustusburg"
+        },
+        {
+          "imageHash": "1a948e75",
+          "note": "Hainichen"
+        },
+        {
+          "imageHash": "ee556dc",
+          "note": "Hohenleuben"
+        },
+        {
+          "imageHash": "247d5dd6",
+          "note": "Mengersgereuth-Hämmern"
         }
       ]
     },
@@ -13809,6 +15029,126 @@
         {
           "imageHash": "53aa3472",
           "note": "Rathenow"
+        },
+        {
+          "imageHash": "36ac3d2b",
+          "note": "Seth (Holstein)"
+        },
+        {
+          "imageHash": "199491c3",
+          "note": "Hepstedt"
+        },
+        {
+          "imageHash": "592b68e6",
+          "note": "Flegessen"
+        },
+        {
+          "imageHash": "16c80774",
+          "note": "Kreipke"
+        },
+        {
+          "imageHash": "42f15428",
+          "note": "Benstorf"
+        },
+        {
+          "imageHash": "7f97fe46",
+          "note": "Sibbesse"
+        },
+        {
+          "imageHash": "1e5dace1",
+          "note": "Söhlde"
+        },
+        {
+          "imageHash": "6c348fe0",
+          "note": "Abbensen (Edemissen)"
+        },
+        {
+          "imageHash": "7d9fc8af",
+          "note": "Vechelde"
+        },
+        {
+          "imageHash": "4cad2cb5",
+          "note": "Möser (Ortschaft)"
+        },
+        {
+          "imageHash": "3ed06880",
+          "note": "Hohnstedt"
+        },
+        {
+          "imageHash": "1b82a0c4",
+          "note": "Imbshausen"
+        },
+        {
+          "imageHash": "7d3b2f63",
+          "note": "Eboldshausen"
+        },
+        {
+          "imageHash": "4513f103",
+          "note": "Höckelheim"
+        },
+        {
+          "imageHash": "3f56fd56",
+          "note": "Dörnten"
+        },
+        {
+          "imageHash": "367d6170",
+          "note": "Lutterbeck (Moringen)"
+        },
+        {
+          "imageHash": "52d612f6",
+          "note": "Fredelsloh"
+        },
+        {
+          "imageHash": "21eddb95",
+          "note": "Allershausen (Uslar)"
+        },
+        {
+          "imageHash": "6ba91279",
+          "note": "Dringenberg"
+        },
+        {
+          "imageHash": "5d56d72f",
+          "note": "Göstrup"
+        },
+        {
+          "imageHash": "4b503ea1",
+          "note": "Untershausen"
+        },
+        {
+          "imageHash": "33aeb1c3",
+          "note": "Standenbühl"
+        },
+        {
+          "imageHash": "14bea8cd",
+          "note": "Mochau (Döbeln)"
+        },
+        {
+          "imageHash": "66f1be52",
+          "note": "Ottendorf-Okrilla"
+        },
+        {
+          "imageHash": "4477f5cb",
+          "note": "Wittichenau"
+        },
+        {
+          "imageHash": "5a854035",
+          "note": "Pretzschendorf"
+        },
+        {
+          "imageHash": "735bae18",
+          "note": "Colmnitz (Klingenberg)"
+        },
+        {
+          "imageHash": "13724dfb",
+          "note": "Wildenfels"
+        },
+        {
+          "imageHash": "69f8d87a",
+          "note": "Christgarten"
+        },
+        {
+          "imageHash": "38af9176",
+          "note": "Blumweiler"
         }
       ],
       "exclude": [
@@ -14261,6 +15601,54 @@
         {
           "imageHash": "274e86cc",
           "note": "Könnern"
+        },
+        {
+          "imageHash": "31ba533e",
+          "note": "Lamspringe"
+        },
+        {
+          "imageHash": "32e111eb",
+          "note": "Ditfurt"
+        },
+        {
+          "imageHash": "1b82a0c4",
+          "note": "Imbshausen"
+        },
+        {
+          "imageHash": "51f50cae",
+          "note": "Berwartshausen"
+        },
+        {
+          "imageHash": "3f866753",
+          "note": "Neuenbeken"
+        },
+        {
+          "imageHash": "4359ff47",
+          "note": "Langgöns"
+        },
+        {
+          "imageHash": "7ab9ec64",
+          "note": "Dahlheim"
+        },
+        {
+          "imageHash": "40ce8aa2",
+          "note": "Greßthal (Wasserlosen)"
+        },
+        {
+          "imageHash": "2473c206",
+          "note": "Schirgiswalde"
+        },
+        {
+          "imageHash": "287dc544",
+          "note": "Bahretal"
+        },
+        {
+          "imageHash": "ee556dc",
+          "note": "Hohenleuben"
+        },
+        {
+          "imageHash": "5c757bc6",
+          "note": "Kronberg im Taunus"
         }
       ],
       "exclude": []
@@ -14946,6 +16334,146 @@
         {
           "imageHash": "26e65e3f",
           "note": "Seegebiet Mansfelder Land"
+        },
+        {
+          "imageHash": "1dea9ae2",
+          "note": "Klein Rheide"
+        },
+        {
+          "imageHash": "6862ae81",
+          "note": "Thüste"
+        },
+        {
+          "imageHash": "47a4b8cd",
+          "note": "Heinade"
+        },
+        {
+          "imageHash": "28f75269",
+          "note": "Söhlde"
+        },
+        {
+          "imageHash": "1e61d0e2",
+          "note": "Söhlde"
+        },
+        {
+          "imageHash": "14246154",
+          "note": "Groß Ilsede"
+        },
+        {
+          "imageHash": "2054f73c",
+          "note": "Oedesse"
+        },
+        {
+          "imageHash": "20a95cf5",
+          "note": "Oelerse"
+        },
+        {
+          "imageHash": "58e5f4ac",
+          "note": "Verbandsgemeinde Flechtingen"
+        },
+        {
+          "imageHash": "3982cf58",
+          "note": "Wegeleben"
+        },
+        {
+          "imageHash": "51c43f71",
+          "note": "Echte"
+        },
+        {
+          "imageHash": "5cb016ff",
+          "note": "Behrensen"
+        },
+        {
+          "imageHash": "13393e3a",
+          "note": "Dinkelhausen"
+        },
+        {
+          "imageHash": "2bd06026",
+          "note": "Ergeshausen"
+        },
+        {
+          "imageHash": "fce97c9",
+          "note": "Nochern"
+        },
+        {
+          "imageHash": "6140d6c",
+          "note": "Alterkülz"
+        },
+        {
+          "imageHash": "18e5ab10",
+          "note": "Maitzborn"
+        },
+        {
+          "imageHash": "7297a76f",
+          "note": "Trassem"
+        },
+        {
+          "imageHash": "7c1f207f",
+          "note": "Dittelbrunn"
+        },
+        {
+          "imageHash": "6bb75968",
+          "note": "Geldersheim"
+        },
+        {
+          "imageHash": "7fc8f7a1",
+          "note": "Zeitz"
+        },
+        {
+          "imageHash": "7c06411",
+          "note": "Tiefenbach (Striegistal)"
+        },
+        {
+          "imageHash": "14bea8cd",
+          "note": "Mochau (Döbeln)"
+        },
+        {
+          "imageHash": "5281c7d2",
+          "note": "Ostrau (Jahnatal)"
+        },
+        {
+          "imageHash": "1974de89",
+          "note": "Zeithain"
+        },
+        {
+          "imageHash": "40a3a703",
+          "note": "Burkau"
+        },
+        {
+          "imageHash": "42778ec5",
+          "note": "Schwarzheide"
+        },
+        {
+          "imageHash": "6b0ba96a",
+          "note": "Königswartha"
+        },
+        {
+          "imageHash": "48d0f154",
+          "note": "Freital"
+        },
+        {
+          "imageHash": "7a097824",
+          "note": "Mohlsdorf-Teichwolframsdorf"
+        },
+        {
+          "imageHash": "c4555e1",
+          "note": "Langenbernsdorf"
+        },
+        {
+          "imageHash": "6d949b2c",
+          "note": "Feldstetten"
+        },
+        {
+          "imageHash": "3011ca04",
+          "note": "Gottmadingen"
+        },
+        {
+          "imageHash": "40c17ef5",
+          "note": "Obergröningen"
+        },
+        {
+          "imageHash": "6cda6645",
+          "note": "Frankfurt-Berkersheim"
         }
       ],
       "exclude": []
@@ -15062,6 +16590,18 @@
         {
           "imageHash": "34d689c8",
           "note": "Görzke"
+        },
+        {
+          "imageHash": "3c26552d",
+          "note": "Baesweiler"
+        },
+        {
+          "imageHash": "7d24cf6d",
+          "note": "Gauaschach"
+        },
+        {
+          "imageHash": "66f1be52",
+          "note": "Ottendorf-Okrilla"
         }
       ],
       "exclude": []
@@ -15729,6 +17269,74 @@
         {
           "imageHash": "2d8fb213",
           "note": "Mitterteich"
+        },
+        {
+          "imageHash": "397b820d",
+          "note": "Honigsee"
+        },
+        {
+          "imageHash": "23070a76",
+          "note": "Wilstedt"
+        },
+        {
+          "imageHash": "43121383",
+          "note": "Barmke"
+        },
+        {
+          "imageHash": "529b8862",
+          "note": "Mariental (Niedersachsen)"
+        },
+        {
+          "imageHash": "7fb6884e",
+          "note": "Hohe Börde"
+        },
+        {
+          "imageHash": "6ba91279",
+          "note": "Dringenberg"
+        },
+        {
+          "imageHash": "2732e186",
+          "note": "Weinähr"
+        },
+        {
+          "imageHash": "7297a76f",
+          "note": "Trassem"
+        },
+        {
+          "imageHash": "165d3650",
+          "note": "Oberthal (Saar)"
+        },
+        {
+          "imageHash": "4a04ad1d",
+          "note": "Verbandsgemeinde Altenglan"
+        },
+        {
+          "imageHash": "59115c31",
+          "note": "Kaltenbrunn (Walldürn)"
+        },
+        {
+          "imageHash": "6b788d20",
+          "note": "Reinhardsachsen"
+        },
+        {
+          "imageHash": "6bb75968",
+          "note": "Geldersheim"
+        },
+        {
+          "imageHash": "7d24cf6d",
+          "note": "Gauaschach"
+        },
+        {
+          "imageHash": "6c0c62e4",
+          "note": "Lahm (Wilhelmsthal)"
+        },
+        {
+          "imageHash": "393addb",
+          "note": "Wagensteig"
+        },
+        {
+          "imageHash": "1dd8ea61",
+          "note": "Bischoffen"
         }
       ],
       "exclude": []
@@ -16435,6 +18043,126 @@
         {
           "imageHash": "4c05c8d8",
           "note": "Laußig"
+        },
+        {
+          "imageHash": "78cc192a",
+          "note": "Tangstedt (Kreis Pinneberg)"
+        },
+        {
+          "imageHash": "6976cf48",
+          "note": "Lemwerder"
+        },
+        {
+          "imageHash": "5bba5641",
+          "note": "Hachmühlen"
+        },
+        {
+          "imageHash": "31ba533e",
+          "note": "Lamspringe"
+        },
+        {
+          "imageHash": "2865cce7",
+          "note": "Harsum"
+        },
+        {
+          "imageHash": "61f70d1c",
+          "note": "Münstedt"
+        },
+        {
+          "imageHash": "2054f73c",
+          "note": "Oedesse"
+        },
+        {
+          "imageHash": "289d11e1",
+          "note": "Schladen-Werla"
+        },
+        {
+          "imageHash": "7b563a4c",
+          "note": "Querenhorst"
+        },
+        {
+          "imageHash": "51f50cae",
+          "note": "Berwartshausen"
+        },
+        {
+          "imageHash": "560a8ee7",
+          "note": "Schnedinghausen"
+        },
+        {
+          "imageHash": "3fdb251",
+          "note": "Samtgemeinde Neuenkirchen"
+        },
+        {
+          "imageHash": "3135143d",
+          "note": "Eggermühlen"
+        },
+        {
+          "imageHash": "490e8221",
+          "note": "Dickendorf"
+        },
+        {
+          "imageHash": "2bd06026",
+          "note": "Ergeshausen"
+        },
+        {
+          "imageHash": "789a8479",
+          "note": "Heinzenbach"
+        },
+        {
+          "imageHash": "165d3650",
+          "note": "Oberthal (Saar)"
+        },
+        {
+          "imageHash": "a72a012",
+          "note": "Haupersweiler"
+        },
+        {
+          "imageHash": "4104dd14",
+          "note": "Lautenbach (Ottweiler)"
+        },
+        {
+          "imageHash": "4855798f",
+          "note": "Breunigweiler"
+        },
+        {
+          "imageHash": "12a783fa",
+          "note": "Euerbach"
+        },
+        {
+          "imageHash": "7c47376b",
+          "note": "Schmorda"
+        },
+        {
+          "imageHash": "6f1e48c1",
+          "note": "Neukieritzsch"
+        },
+        {
+          "imageHash": "1974de89",
+          "note": "Zeithain"
+        },
+        {
+          "imageHash": "48d0f154",
+          "note": "Freital"
+        },
+        {
+          "imageHash": "3cb62c8d",
+          "note": "Beerwalde (Klingenberg)"
+        },
+        {
+          "imageHash": "18dbb882",
+          "note": "Hasenthal"
+        },
+        {
+          "imageHash": "1ee92a5b",
+          "note": "Böttigheim"
+        },
+        {
+          "imageHash": "287d686b",
+          "note": "Kürnberg (Schopfheim)"
+        },
+        {
+          "imageHash": "47be1382",
+          "note": "Ruppertshofen (Ostalbkreis)"
         }
       ],
       "exclude": [
@@ -16787,6 +18515,30 @@
         {
           "imageHash": "7e689903",
           "note": "Dahlen (Sachsen)"
+        },
+        {
+          "imageHash": "1af31fb4",
+          "note": "Vegesack"
+        },
+        {
+          "imageHash": "259b6cc1",
+          "note": "Kreis Lübbecke"
+        },
+        {
+          "imageHash": "3ee228ed",
+          "note": "Elvese"
+        },
+        {
+          "imageHash": "1fed6ce",
+          "note": "Hillerse (Northeim)"
+        },
+        {
+          "imageHash": "77919d3e",
+          "note": "Wegberg"
+        },
+        {
+          "imageHash": "5ef5b208",
+          "note": "Kördorf"
         }
       ],
       "exclude": []
@@ -16941,6 +18693,38 @@
         {
           "imageHash": "36f82414",
           "note": "Seegebiet Mansfelder Land"
+        },
+        {
+          "imageHash": "6157b518",
+          "note": "Bargfeld-Stegen"
+        },
+        {
+          "imageHash": "a28b24",
+          "note": "Kayhude"
+        },
+        {
+          "imageHash": "2815de55",
+          "note": "Elmshorn"
+        },
+        {
+          "imageHash": "10e4ab50",
+          "note": "Geversdorf"
+        },
+        {
+          "imageHash": "563295a2",
+          "note": "Klenkendorf"
+        },
+        {
+          "imageHash": "7769f0e9",
+          "note": "Samtgemeinde Schöppenstedt"
+        },
+        {
+          "imageHash": "56d62a17",
+          "note": "Schöppenstedt"
+        },
+        {
+          "imageHash": "51af6593",
+          "note": "Möser"
         }
       ],
       "exclude": []
@@ -17133,6 +18917,38 @@
         {
           "imageHash": "18217ac",
           "note": "Bülstringen"
+        },
+        {
+          "imageHash": "a58205d",
+          "note": "Bakede"
+        },
+        {
+          "imageHash": "254e4bd1",
+          "note": "Samtgemeinde Grasleben"
+        },
+        {
+          "imageHash": "24f1c991",
+          "note": "Grasleben"
+        },
+        {
+          "imageHash": "16aaee5f",
+          "note": "Roth (Rhein-Lahn-Kreis)"
+        },
+        {
+          "imageHash": "ffc22b0",
+          "note": "Weidhausen bei Coburg"
+        },
+        {
+          "imageHash": "57df4e9b",
+          "note": "Deesbach"
+        },
+        {
+          "imageHash": "75049adb",
+          "note": "Hohenwarte"
+        },
+        {
+          "imageHash": "770cd16d",
+          "note": "Herrenzimmern (Niederstetten)"
         }
       ],
       "exclude": []
@@ -17741,6 +19557,150 @@
         {
           "imageHash": "5b158d98",
           "note": "Zielitz"
+        },
+        {
+          "imageHash": "c85243b",
+          "note": "Holzen (bei Eschershausen)"
+        },
+        {
+          "imageHash": "120ee3c4",
+          "note": "Delligsen"
+        },
+        {
+          "imageHash": "14246154",
+          "note": "Groß Ilsede"
+        },
+        {
+          "imageHash": "79217f1c",
+          "note": "Riefensbeek-Kamschlacken"
+        },
+        {
+          "imageHash": "67e40ea5",
+          "note": "Zorge (Walkenried)"
+        },
+        {
+          "imageHash": "7c84e3ec",
+          "note": "Alsdorf"
+        },
+        {
+          "imageHash": "40f9d2e8",
+          "note": "Gressenich"
+        },
+        {
+          "imageHash": "61e76a8b",
+          "note": "Mausbach (Stolberg)"
+        },
+        {
+          "imageHash": "6383276e",
+          "note": "Schutzbach"
+        },
+        {
+          "imageHash": "71483ed",
+          "note": "Solms"
+        },
+        {
+          "imageHash": "3e972b71",
+          "note": "Weilmünster"
+        },
+        {
+          "imageHash": "665e4242",
+          "note": "Weyer (Rhein-Lahn-Kreis)"
+        },
+        {
+          "imageHash": "6140d6c",
+          "note": "Alterkülz"
+        },
+        {
+          "imageHash": "789a8479",
+          "note": "Heinzenbach"
+        },
+        {
+          "imageHash": "2bb03602",
+          "note": "Reckershausen"
+        },
+        {
+          "imageHash": "662dbeeb",
+          "note": "Neunkirchen (Hunsrück)"
+        },
+        {
+          "imageHash": "410e8abd",
+          "note": "Kraisdorf"
+        },
+        {
+          "imageHash": "7734b996",
+          "note": "Maroldsweisach"
+        },
+        {
+          "imageHash": "12d8ba8f",
+          "note": "Hafenpreppach"
+        },
+        {
+          "imageHash": "990e161",
+          "note": "Neuhaus-Schierschnitz"
+        },
+        {
+          "imageHash": "20199a70",
+          "note": "Hüttengrund (Sonneberg)"
+        },
+        {
+          "imageHash": "796bc73a",
+          "note": "Zeitz"
+        },
+        {
+          "imageHash": "7c06411",
+          "note": "Tiefenbach (Striegistal)"
+        },
+        {
+          "imageHash": "56b4f969",
+          "note": "Lohsa"
+        },
+        {
+          "imageHash": "5829d871",
+          "note": "Elsterheide"
+        },
+        {
+          "imageHash": "73cd2170",
+          "note": "Rietschen"
+        },
+        {
+          "imageHash": "245e25f7",
+          "note": "Spreetal"
+        },
+        {
+          "imageHash": "287dc544",
+          "note": "Bahretal"
+        },
+        {
+          "imageHash": "271dc882",
+          "note": "Glashütte (Sachsen)"
+        },
+        {
+          "imageHash": "2e34156a",
+          "note": "Landkreis Sächsische Schweiz-Osterzgebirge"
+        },
+        {
+          "imageHash": "48d0f154",
+          "note": "Freital"
+        },
+        {
+          "imageHash": "4cad701",
+          "note": "Landkreis Mittelsachsen"
+        },
+        {
+          "imageHash": "2a1023eb",
+          "note": "Landkreis Freiberg"
+        },
+        {
+          "imageHash": "9513bf9",
+          "note": "Hilbersdorf (Bobritzsch-Hilbersdorf)"
+        },
+        {
+          "imageHash": "73664dc0",
+          "note": "Hohndorf"
+        },
+        {
+          "imageHash": "7a097824",
+          "note": "Mohlsdorf-Teichwolframsdorf"
         }
       ],
       "exclude": []
@@ -17767,6 +19727,10 @@
         {
           "imageHash": "377a0a4c",
           "note": "Seegebiet Mansfelder Land"
+        },
+        {
+          "imageHash": "450132a9",
+          "note": "Thümmlitzwalde"
         }
       ],
       "exclude": []
@@ -17820,6 +19784,10 @@
         {
           "imageHash": "7c31fa6e",
           "note": "Düngenheim"
+        },
+        {
+          "imageHash": "6862ae81",
+          "note": "Thüste"
         }
       ],
       "exclude": []
@@ -17867,6 +19835,22 @@
         {
           "imageHash": "36f3fe08",
           "note": "Trennfeld"
+        },
+        {
+          "imageHash": "278fb0b1",
+          "note": "Vordorf"
+        },
+        {
+          "imageHash": "6180bed1",
+          "note": "Rhode (Königslutter)"
+        },
+        {
+          "imageHash": "3982cf58",
+          "note": "Wegeleben"
+        },
+        {
+          "imageHash": "735bae18",
+          "note": "Colmnitz (Klingenberg)"
         }
       ],
       "exclude": []
@@ -17992,6 +19976,18 @@
         {
           "imageHash": "166db694",
           "note": "Naunheim"
+        },
+        {
+          "imageHash": "7d3b2f63",
+          "note": "Eboldshausen"
+        },
+        {
+          "imageHash": "1f24fbf3",
+          "note": "Baldringen"
+        },
+        {
+          "imageHash": "5e174110",
+          "note": "Hülben"
         }
       ],
       "exclude": []
@@ -18075,6 +20071,18 @@
         {
           "imageHash": "ff4649e",
           "note": "Gevensleben"
+        },
+        {
+          "imageHash": "5e021f43",
+          "note": "Dorndorf-Steudnitz"
+        },
+        {
+          "imageHash": "1974de89",
+          "note": "Zeithain"
+        },
+        {
+          "imageHash": "67abe0e8",
+          "note": "Hainewalde"
         }
       ],
       "exclude": []
@@ -18086,6 +20094,10 @@
         {
           "imageHash": "690eb0cc",
           "note": "Logumer Vorwerk"
+        },
+        {
+          "imageHash": "4e5dc1a5",
+          "note": "Amt Ritzebüttel"
         }
       ],
       "exclude": []
@@ -18231,6 +20243,34 @@
         {
           "imageHash": "355b4b32",
           "note": "Niedere Börde"
+        },
+        {
+          "imageHash": "7f018f7b",
+          "note": "Donnern"
+        },
+        {
+          "imageHash": "47a4b8cd",
+          "note": "Heinade"
+        },
+        {
+          "imageHash": "3a9d6012",
+          "note": "Söhlde"
+        },
+        {
+          "imageHash": "79757410",
+          "note": "Benteler (Langenberg)"
+        },
+        {
+          "imageHash": "490e8221",
+          "note": "Dickendorf"
+        },
+        {
+          "imageHash": "2cb701bd",
+          "note": "Klingelbach"
+        },
+        {
+          "imageHash": "3cf0ac54",
+          "note": "Leubsdorf (Sachsen)"
         }
       ],
       "exclude": []

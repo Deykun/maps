@@ -58,6 +58,14 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "wolf"
+   ],
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -9874,6 +9882,9 @@
     "crane",
     "lion",
     "bird"
+   ],
+   "items": [
+    "crown"
    ]
   }
  },
