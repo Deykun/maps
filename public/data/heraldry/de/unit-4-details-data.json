@@ -3391,6 +3391,7 @@
   },
   "markers": {
    "animals": [
+    "parrot",
     "bird"
    ]
   }
@@ -5154,6 +5155,9 @@
   "markers": {
    "animals": [
     "bird"
+   ],
+   "items": [
+    "tree"
    ]
   }
  },
@@ -6204,6 +6208,9 @@
    "animals": [
     "swan",
     "bird"
+   ],
+   "items": [
+    "walls"
    ]
   }
  },
@@ -7112,6 +7119,9 @@
    "animals": [
     "heron",
     "bird"
+   ],
+   "items": [
+    "tree"
    ]
   }
  },
@@ -7509,6 +7519,9 @@
     "stork",
     "horse",
     "bird"
+   ],
+   "items": [
+    "tree"
    ]
   }
  },
@@ -7924,6 +7937,7 @@
     "bird"
    ],
    "items": [
+    "cross",
     "crown"
    ]
   }
@@ -8890,6 +8904,9 @@
   "markers": {
    "animals": [
     "bird"
+   ],
+   "items": [
+    "tree"
    ]
   }
  },
@@ -13871,6 +13888,7 @@
     "bird"
    ],
    "items": [
+    "tree",
     "walls"
    ]
   }
@@ -17166,6 +17184,11 @@
    "animals": [
     "eagle",
     "bird"
+   ],
+   "items": [
+    "tree",
+    "earOfGrain",
+    "hammer"
    ]
   }
  },
@@ -128580,6 +128603,9 @@
    "animals": [
     "eagle",
     "bird"
+   ],
+   "items": [
+    "wheel"
    ]
   }
  },
@@ -128875,6 +128901,9 @@
    "animals": [
     "eagle",
     "bird"
+   ],
+   "items": [
+    "tree"
    ]
   }
  },
@@ -129211,7 +129240,7 @@
     "bird"
    ],
    "items": [
-    "walls"
+    "tree"
    ]
   }
  },
@@ -137568,6 +137597,7 @@
    "animals": [
     "eagle",
     "wolf",
+    "unusualHybrid",
     "bird"
    ]
   }
@@ -137894,6 +137924,7 @@
     "bird"
    ],
    "items": [
+    "crown",
     "earOfGrain"
    ]
   }

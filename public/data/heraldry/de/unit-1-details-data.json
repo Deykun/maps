@@ -3720,6 +3720,9 @@
    "animals": [
     "eagle",
     "bird"
+   ],
+   "items": [
+    "axeSaw"
    ]
   }
  },
@@ -6394,6 +6397,9 @@
    "animals": [
     "eagle",
     "bird"
+   ],
+   "items": [
+    "crown"
    ]
   }
  },
@@ -7005,6 +7011,11 @@
     "eagle",
     "deer",
     "bird"
+   ],
+   "items": [
+    "tree",
+    "horn",
+    "musicalInstrument"
    ]
   }
  },
@@ -20704,6 +20715,8 @@
     "bird"
    ],
    "items": [
+    "walls",
+    "flower",
     "sword"
    ]
   }
@@ -29101,6 +29114,7 @@
     "bird"
    ],
    "items": [
+    "crozier",
     "wheel"
    ]
   }
@@ -42854,6 +42868,9 @@
    "animals": [
     "eagle",
     "bird"
+   ],
+   "items": [
+    "crown"
    ]
   }
  },
@@ -42924,6 +42941,9 @@
    "animals": [
     "falcon",
     "bird"
+   ],
+   "items": [
+    "crozier"
    ]
   }
  },
@@ -45519,6 +45539,7 @@
     "bird"
    ],
    "items": [
+    "tree",
     "axeSaw"
    ]
   }
@@ -45636,7 +45657,8 @@
     "bird"
    ],
    "items": [
-    "saint"
+    "saint",
+    "crozier"
    ]
   }
  },
@@ -69671,6 +69693,9 @@
    "animals": [
     "eagle",
     "bird"
+   ],
+   "items": [
+    "wheel"
    ]
   }
  },
@@ -69845,6 +69870,9 @@
    "animals": [
     "eagle",
     "bird"
+   ],
+   "items": [
+    "wheel"
    ]
   }
  },
@@ -111938,8 +111966,12 @@
   },
   "markers": {
    "animals": [
+    "swan",
     "lion",
     "bird"
+   ],
+   "items": [
+    "crown"
    ]
   }
  },
@@ -114805,6 +114837,10 @@
   "markers": {
    "animals": [
     "bird"
+   ],
+   "items": [
+    "tree",
+    "walls"
    ]
   }
  },
@@ -160239,9 +160275,6 @@
    }
   },
   "markers": {
-   "animals": [
-    "bird"
-   ],
    "items": [
     "cross",
     "arrow"

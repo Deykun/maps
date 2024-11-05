@@ -96,13 +96,15 @@ const NavigationPane = () => {
         </ButtonIcon>
       </Panel>
       {activeMenu === 'country' && <SubPanel order={0} className="ui-slide-from-left-sidebar z-[-1] absolute left-12 ml-3 flex-row">
-        {HERALDRY_COUNTRIES.map(({ path: langPath, pathNameLink, lang }) => <ButtonIcon
+        {HERALDRY_COUNTRIES.map(({ path: langPath, pathNameLink, country, lang }) => <ButtonIcon
           key={langPath}
           href={`/maps/${langPath}`}
           title={t(pathNameLink)}
           isActive={path === `/maps/${langPath}`}
+          label={t(`heraldry.${country}.mapTitle`)}
+          labelPosition="bottomRight"
         >
-          <IconFlag className="navigation-pane-flag" code={lang} />
+          <IconFlag className="navigation-pane-flag" code={country || lang} />
           {path === `/maps/${langPath}` && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft"><IconCheck className="h-[10px]" /></span>}
         </ButtonIcon>)}
       </SubPanel>}
@@ -113,6 +115,8 @@ const NavigationPane = () => {
           key={lang}
           onClick={() => changeLanguage(lang)}
           isActive={i18n.language === lang}
+          label={t('main.currentLanguage', { lng: lang })}
+          labelPosition="bottomRight"
         >
           <IconFlag className="navigation-pane-flag" code={lang} />
           {i18n.language === lang && <span className="ui-button-icon-marker ui-button-icon-marker--on-soft"><IconCheck className="h-[10px]" /></span>}

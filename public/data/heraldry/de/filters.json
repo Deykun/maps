@@ -1332,9 +1332,22 @@
         {
           "imageHash": "48fea635",
           "note": "Burtscheid"
+        },
+        {
+          "imageHash": "6c81273b",
+          "note": "Kreis Ahaus"
+        },
+        {
+          "imageHash": "4481a0f7",
+          "note": "Hanau"
         }
       ],
-      "exclude": []
+      "exclude": [
+        {
+          "imageHash": "30d7ca64",
+          "note": "Straubenhardt"
+        }
+      ]
     },
     {
       "name": "phoenix",
@@ -1593,6 +1606,18 @@
         {
           "imageHash": "10010cc",
           "note": "Geilenkirchen"
+        },
+        {
+          "imageHash": "56d8ba5e",
+          "note": "Villenbach"
+        },
+        {
+          "imageHash": "3e47558",
+          "note": "Zwönitz"
+        },
+        {
+          "imageHash": "359f37eb",
+          "note": "Niederkrüchten"
         }
       ],
       "exclude": []
@@ -5874,6 +5899,18 @@
         {
           "imageHash": "2c359278",
           "note": "Klötze"
+        },
+        {
+          "imageHash": "30d7ca64",
+          "note": "Straubenhardt"
+        },
+        {
+          "imageHash": "7e251d0d",
+          "note": "Jessen (Elster)"
+        },
+        {
+          "imageHash": "40eed259",
+          "note": "Stralsund"
         }
       ]
     },
@@ -6426,6 +6463,10 @@
         {
           "imageHash": "56b4f969",
           "note": "Lohsa"
+        },
+        {
+          "imageHash": "21928b61",
+          "note": "Friesack"
         }
       ],
       "exclude": []
@@ -6600,6 +6641,14 @@
         {
           "imageHash": "4a5c6a13",
           "note": "Mainbullau"
+        },
+        {
+          "imageHash": "1cdd14c7",
+          "note": "Ludwigsstadt"
+        },
+        {
+          "imageHash": "71397e59",
+          "note": "Quedlinburg"
         }
       ],
       "exclude": []
@@ -7978,6 +8027,10 @@
         {
           "imageHash": "49f899b1",
           "note": "Alteglofsheim"
+        },
+        {
+          "imageHash": "efc1ae7",
+          "note": "Langenorla"
         }
       ],
       "exclude": []
@@ -8353,6 +8406,14 @@
         {
           "imageHash": "1da02048",
           "note": "Landkreis Kitzingen"
+        },
+        {
+          "imageHash": "56bc55",
+          "note": "Mertesdorf"
+        },
+        {
+          "imageHash": "9c5f044",
+          "note": "Kenn"
         }
       ],
       "exclude": []
@@ -9424,6 +9485,18 @@
         {
           "imageHash": "5c757bc6",
           "note": "Kronberg im Taunus"
+        },
+        {
+          "imageHash": "25848efe",
+          "note": "Dreis"
+        },
+        {
+          "imageHash": "630c3b06",
+          "note": "Görlitz"
+        },
+        {
+          "imageHash": "7e251d0d",
+          "note": "Jessen (Elster)"
         }
       ],
       "exclude": [
@@ -10324,6 +10397,46 @@
         {
           "imageHash": "31fbb9c6",
           "note": "Großsorheim"
+        },
+        {
+          "imageHash": "27779774",
+          "note": "Saar"
+        },
+        {
+          "imageHash": "21834513",
+          "note": "Wald (Gunzenhausen)"
+        },
+        {
+          "imageHash": "769d33e8",
+          "note": "Altenahr"
+        },
+        {
+          "imageHash": "2936c1e8",
+          "note": "Floß (Oberpfalz)"
+        },
+        {
+          "imageHash": "2b23f170",
+          "note": "Erbendorf"
+        },
+        {
+          "imageHash": "10a6d903",
+          "note": "Moßbach"
+        },
+        {
+          "imageHash": "1652c7c1",
+          "note": "Olbersleben"
+        },
+        {
+          "imageHash": "6216f21e",
+          "note": "Lohne (Oldenburg)"
+        },
+        {
+          "imageHash": "4481a0f7",
+          "note": "Hanau"
+        },
+        {
+          "imageHash": "5b983b39",
+          "note": "Gräfenberg"
         }
       ]
     },
@@ -12884,6 +12997,106 @@
         {
           "imageHash": "658c24ff",
           "note": "Dreisbach (Westerwald)"
+        },
+        {
+          "imageHash": "61a1cc6d",
+          "note": "Bad Schwalbach"
+        },
+        {
+          "imageHash": "776c02c",
+          "note": "Bad Schwalbach"
+        },
+        {
+          "imageHash": "57b9e79f",
+          "note": "Ohlenhard"
+        },
+        {
+          "imageHash": "1f08400",
+          "note": "Aach (bei Trier)"
+        },
+        {
+          "imageHash": "35955c94",
+          "note": "Sotzweiler"
+        },
+        {
+          "imageHash": "5c0545af",
+          "note": "Föritz"
+        },
+        {
+          "imageHash": "247d5dd6",
+          "note": "Mengersgereuth-Hämmern"
+        },
+        {
+          "imageHash": "1a948e75",
+          "note": "Hainichen"
+        },
+        {
+          "imageHash": "2147d9ca",
+          "note": "Bad Gottleuba-Berggießhübel"
+        },
+        {
+          "imageHash": "2d80d585",
+          "note": "Wachau (Sachsen)"
+        },
+        {
+          "imageHash": "2d0a8ebd",
+          "note": "Elstra"
+        },
+        {
+          "imageHash": "5957106",
+          "note": "Schönteichen"
+        },
+        {
+          "imageHash": "1f92f587",
+          "note": "Neißeaue"
+        },
+        {
+          "imageHash": "7e251d0d",
+          "note": "Jessen (Elster)"
+        },
+        {
+          "imageHash": "676e267c",
+          "note": "Werder (Havel)"
+        },
+        {
+          "imageHash": "4358cf57",
+          "note": "Ostereistedt"
+        },
+        {
+          "imageHash": "27ae9d74",
+          "note": "Hülsen (Dörverden)"
+        },
+        {
+          "imageHash": "2f3536f4",
+          "note": "Pollhagen"
+        },
+        {
+          "imageHash": "5997b7a0",
+          "note": "Gückingen"
+        },
+        {
+          "imageHash": "4484c557",
+          "note": "Bronnweiler"
+        },
+        {
+          "imageHash": "7ad26962",
+          "note": "Reit im Winkl"
+        },
+        {
+          "imageHash": "62837a99",
+          "note": "Landkreis Rosenheim"
+        },
+        {
+          "imageHash": "65505aa9",
+          "note": "Luhe-Wildenau"
+        },
+        {
+          "imageHash": "5f4838ff",
+          "note": "Huy (Gemeinde)"
+        },
+        {
+          "imageHash": "1284cf65",
+          "note": "Pottum"
         }
       ]
     },
@@ -12919,6 +13132,10 @@
         {
           "imageHash": "7c27e5c6",
           "note": "Sankt Alban (Pfalz)"
+        },
+        {
+          "imageHash": "24490c54",
+          "note": "Sankt Oswald-Riedlhütte"
         }
       ],
       "include": [
@@ -14418,8 +14635,52 @@
           "note": "Hohenleuben"
         },
         {
-          "imageHash": "247d5dd6",
-          "note": "Mengersgereuth-Hämmern"
+          "imageHash": "776c02c",
+          "note": "Bad Schwalbach"
+        },
+        {
+          "imageHash": "27779774",
+          "note": "Saar"
+        },
+        {
+          "imageHash": "75b6289d",
+          "note": "Nebelschütz"
+        },
+        {
+          "imageHash": "21928b61",
+          "note": "Friesack"
+        },
+        {
+          "imageHash": "31ab313",
+          "note": "Schnackenburg"
+        },
+        {
+          "imageHash": "c0ee43",
+          "note": "Friedeburg"
+        },
+        {
+          "imageHash": "3568003a",
+          "note": "Dohr"
+        },
+        {
+          "imageHash": "2998d258",
+          "note": "Verbandsgemeinde Dahner Felsenland"
+        },
+        {
+          "imageHash": "71397e59",
+          "note": "Quedlinburg"
+        },
+        {
+          "imageHash": "5f4838ff",
+          "note": "Huy (Gemeinde)"
+        },
+        {
+          "imageHash": "4dc34e9b",
+          "note": "Amt Hausberge"
+        },
+        {
+          "imageHash": "1e549bcb",
+          "note": "Zwiesel"
         }
       ]
     },
@@ -15160,6 +15421,26 @@
         {
           "imageHash": "38af9176",
           "note": "Blumweiler"
+        },
+        {
+          "imageHash": "57b9e79f",
+          "note": "Ohlenhard"
+        },
+        {
+          "imageHash": "fdc6034",
+          "note": "Rech"
+        },
+        {
+          "imageHash": "63af4855",
+          "note": "Spradow"
+        },
+        {
+          "imageHash": "34693ce",
+          "note": "Roßleben-Wiehe"
+        },
+        {
+          "imageHash": "1e549bcb",
+          "note": "Zwiesel"
         }
       ],
       "exclude": [
@@ -15660,6 +15941,22 @@
         {
           "imageHash": "5c757bc6",
           "note": "Kronberg im Taunus"
+        },
+        {
+          "imageHash": "56bc55",
+          "note": "Mertesdorf"
+        },
+        {
+          "imageHash": "742998fe",
+          "note": "Suffersheim"
+        },
+        {
+          "imageHash": "35a01887",
+          "note": "Rangsdorf"
+        },
+        {
+          "imageHash": "3776f2fc",
+          "note": "Nordenham"
         }
       ],
       "exclude": []
@@ -16485,6 +16782,14 @@
         {
           "imageHash": "6cda6645",
           "note": "Frankfurt-Berkersheim"
+        },
+        {
+          "imageHash": "35955c94",
+          "note": "Sotzweiler"
+        },
+        {
+          "imageHash": "2147d9ca",
+          "note": "Bad Gottleuba-Berggießhübel"
         }
       ],
       "exclude": []
@@ -16502,6 +16807,18 @@
         {
           "imageHash": "58bd5563",
           "note": "Würzweiler"
+        },
+        {
+          "imageHash": "3c74cea9",
+          "note": "Thür"
+        },
+        {
+          "imageHash": "34e1a60f",
+          "note": "Dernau"
+        },
+        {
+          "imageHash": "5a53e45",
+          "note": "Gundihausen"
         }
       ],
       "exclude": []
@@ -17348,6 +17665,22 @@
         {
           "imageHash": "1dd8ea61",
           "note": "Bischoffen"
+        },
+        {
+          "imageHash": "7bee5604",
+          "note": "Prien am Chiemsee"
+        },
+        {
+          "imageHash": "181c51d9",
+          "note": "Schleching"
+        },
+        {
+          "imageHash": "29d1fa3e",
+          "note": "Falkenberg (Oberpfalz)"
+        },
+        {
+          "imageHash": "4170645f",
+          "note": "Arnstein (Sachsen-Anhalt)"
         }
       ],
       "exclude": []
@@ -17362,7 +17695,12 @@
         "ringe",
         "siegelring"
       ],
-      "include": [],
+      "include": [
+        {
+          "imageHash": "3219fa1e",
+          "note": "Molsdorf"
+        }
+      ],
       "exclude": []
     },
     {
@@ -18187,6 +18525,18 @@
         {
           "imageHash": "47be1382",
           "note": "Ruppertshofen (Ostalbkreis)"
+        },
+        {
+          "imageHash": "1c28b88e",
+          "note": "Bayern"
+        },
+        {
+          "imageHash": "5ea7166d",
+          "note": "Almerswind"
+        },
+        {
+          "imageHash": "3568003a",
+          "note": "Dohr"
         }
       ],
       "exclude": [
@@ -18973,6 +19323,10 @@
         {
           "imageHash": "770cd16d",
           "note": "Herrenzimmern (Niederstetten)"
+        },
+        {
+          "imageHash": "70b5390a",
+          "note": "Gallmersgarten"
         }
       ],
       "exclude": []
@@ -19725,6 +20079,10 @@
         {
           "imageHash": "7a097824",
           "note": "Mohlsdorf-Teichwolframsdorf"
+        },
+        {
+          "imageHash": "2147d9ca",
+          "note": "Bad Gottleuba-Berggießhübel"
         }
       ],
       "exclude": []
@@ -19755,6 +20113,10 @@
         {
           "imageHash": "450132a9",
           "note": "Thümmlitzwalde"
+        },
+        {
+          "imageHash": "1f08400",
+          "note": "Aach (bei Trier)"
         }
       ],
       "exclude": []
@@ -20012,6 +20374,10 @@
         {
           "imageHash": "5e174110",
           "note": "Hülben"
+        },
+        {
+          "imageHash": "25239a46",
+          "note": "Schwalldorf"
         }
       ],
       "exclude": []
@@ -20107,6 +20473,10 @@
         {
           "imageHash": "67abe0e8",
           "note": "Hainewalde"
+        },
+        {
+          "imageHash": "3776f2fc",
+          "note": "Nordenham"
         }
       ],
       "exclude": []
@@ -20137,6 +20507,10 @@
         {
           "imageHash": "32c1d9ba",
           "note": "Haserich"
+        },
+        {
+          "imageHash": "65505aa9",
+          "note": "Luhe-Wildenau"
         }
       ],
       "exclude": [
