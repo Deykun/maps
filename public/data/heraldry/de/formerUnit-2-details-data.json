@@ -13055,6 +13055,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "jewelry"
+   ]
   }
  },
  {
@@ -26478,7 +26483,8 @@
   },
   "markers": {
    "items": [
-    "tree"
+    "tree",
+    "jewelry"
    ]
   }
  },
@@ -48527,7 +48533,8 @@
   },
   "markers": {
    "items": [
-    "tree"
+    "tree",
+    "jewelry"
    ]
   }
  },
@@ -48583,7 +48590,8 @@
   },
   "markers": {
    "items": [
-    "tree"
+    "tree",
+    "jewelry"
    ]
   }
  },
@@ -73436,6 +73444,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "jewelry"
+   ]
   }
  },
  {
@@ -81011,6 +81024,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "jewelry"
+   ]
   }
  },
  {
@@ -83992,6 +84010,7 @@
   },
   "markers": {
    "items": [
+    "jewelry",
     "wheel"
    ]
   }
@@ -96557,6 +96576,9 @@
     "eagle",
     "monkey",
     "bird"
+   ],
+   "items": [
+    "jewelry"
    ]
   }
  },
@@ -107568,6 +107590,9 @@
   "markers": {
    "animals": [
     "dog"
+   ],
+   "items": [
+    "jewelry"
    ]
   }
  },
@@ -124138,6 +124163,7 @@
     "bird"
    ],
    "items": [
+    "jewelry",
     "boat"
    ]
   }
@@ -126175,7 +126201,8 @@
   },
   "markers": {
    "items": [
-    "tree"
+    "tree",
+    "jewelry"
    ]
   }
  },
@@ -126248,7 +126275,8 @@
    ],
    "items": [
     "tree",
-    "earOfGrain"
+    "earOfGrain",
+    "jewelry"
    ]
   }
  },
@@ -126884,6 +126912,7 @@
     "bird"
    ],
    "items": [
+    "jewelry",
     "anchor"
    ]
   }
@@ -131608,6 +131637,7 @@
     "bird"
    ],
    "items": [
+    "jewelry",
     "wheel"
    ]
   }

@@ -29887,6 +29887,9 @@
   "markers": {
    "animals": [
     "fish"
+   ],
+   "items": [
+    "jewelry"
    ]
   }
  },
@@ -61676,7 +61679,8 @@
     "bird"
    ],
    "items": [
-    "walls"
+    "walls",
+    "jewelry"
    ]
   }
  },
@@ -64923,6 +64927,7 @@
   "markers": {
    "items": [
     "flower",
+    "jewelry",
     "rose"
    ]
   }
@@ -65270,6 +65275,9 @@
    "animals": [
     "griffin",
     "lion"
+   ],
+   "items": [
+    "jewelry"
    ]
   }
  },
@@ -68833,6 +68841,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "jewelry"
+   ]
   }
  },
  {
@@ -76615,6 +76628,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "jewelry"
+   ]
   }
  },
  {
@@ -93739,6 +93757,7 @@
    "items": [
     "flower",
     "earOfGrain",
+    "jewelry",
     "rose",
     "bell"
    ]
@@ -96747,7 +96766,8 @@
   },
   "markers": {
    "items": [
-    "cross"
+    "cross",
+    "jewelry"
    ]
   }
  },
@@ -98315,7 +98335,8 @@
     "dog"
    ],
    "items": [
-    "cross"
+    "cross",
+    "jewelry"
    ]
   }
  },
@@ -101846,6 +101867,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "jewelry"
+   ]
   }
  },
  {
@@ -102047,6 +102073,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "jewelry"
+   ]
   }
  },
  {
@@ -104866,6 +104897,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "jewelry"
+   ]
   }
  },
  {
@@ -135691,6 +135727,7 @@
    ],
    "items": [
     "walls",
+    "jewelry",
     "heart"
    ]
   }
@@ -136063,7 +136100,8 @@
     "bullBison"
    ],
    "items": [
-    "crown"
+    "crown",
+    "jewelry"
    ]
   }
  },
@@ -170049,6 +170087,7 @@
   },
   "markers": {
    "items": [
+    "jewelry",
     "wheel"
    ]
   }
