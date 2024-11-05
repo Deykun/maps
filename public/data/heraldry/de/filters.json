@@ -1587,6 +1587,17 @@
       "exclude": []
     },
     {
+      "name": "parrot",
+      "phrases": ["papagei"],
+      "include": [
+        {
+          "imageHash": "10010cc",
+          "note": "Geilenkirchen"
+        }
+      ],
+      "exclude": []
+    },
+    {
       "name": "deer",
       "phrases": [
         "hindin",
@@ -20140,24 +20151,18 @@
     },
     {
       "name": "violin",
-      "phrases": [
-          "geige"
-      ],
+      "phrases": ["geige"],
       "exclude": [],
       "include": [
-          {
-              "imageHash": "3be8072a",
-              "note": "Zwota"
-          }
+        {
+          "imageHash": "3be8072a",
+          "note": "Zwota"
+        }
       ]
     },
     {
       "name": "flute",
-      "phrases": [
-          "flöte",
-          "flöten",
-          "querflöte"
-      ],
+      "phrases": ["flöte", "flöten", "querflöte"],
       "exclude": [],
       "include": []
     },

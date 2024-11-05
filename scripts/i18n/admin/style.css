@@ -94,6 +94,10 @@ textarea {
     width: 12px;
     height: 12px;
   }
+
+  &:hover {
+    background-color: #a06464;
+  }
 }
 
 .marker-progress {
