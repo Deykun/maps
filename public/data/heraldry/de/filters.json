@@ -20103,6 +20103,65 @@
       "exclude": []
     },
     {
+      "name": "horn",
+      "phrases": ["hifthorn", "horn", "jagdhorn", "posthorn"],
+      "include": [
+        {
+          "imageHash": "126c243c",
+          "note": "Volkringhausen"
+        },
+        {
+          "imageHash": "32c1d9ba",
+          "note": "Haserich"
+        }
+      ],
+      "exclude": [
+        {
+          "imageHash": "682b902a",
+          "note": "Landkreis Mecklenburgische Seenplatte"
+        },
+        {
+          "imageHash": "47b9ebf6",
+          "note": "Horn (Hunsrück)"
+        },
+        {
+          "imageHash": "38ae9abb",
+          "note": "Landkreis Esslingen"
+        },
+        {
+          "imageHash": "54cfbcee",
+          "note": "Gaienhofen"
+        },
+        {
+          "imageHash": "1a6b5b0a",
+          "note": "Schondorf am Ammersee"
+        }
+      ]
+    },
+    {
+      "name": "violin",
+      "phrases": [
+          "geige"
+      ],
+      "exclude": [],
+      "include": [
+          {
+              "imageHash": "3be8072a",
+              "note": "Zwota"
+          }
+      ]
+    },
+    {
+      "name": "flute",
+      "phrases": [
+          "flöte",
+          "flöten",
+          "querflöte"
+      ],
+      "exclude": [],
+      "include": []
+    },
+    {
       "name": "bell",
       "phrases": [
         "bauernglocke",

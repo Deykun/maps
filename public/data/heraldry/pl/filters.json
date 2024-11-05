@@ -414,6 +414,14 @@
         {
           "imageHash": "369db30a",
           "note": "Herb Prochowic"
+        },
+        {
+          "imageHash": "2f5e7d6b",
+          "note": "Herb Darłowa"
+        },
+        {
+          "imageHash": "2f12ca55",
+          "note": "Herb Lubina"
         }
       ],
       "exclude": []
@@ -570,42 +578,31 @@
   "items": [
     {
       "name": "grave",
-      "phrases": [
-          "grób"
-      ],
+      "phrases": ["grób"],
       "include": [],
       "exclude": []
     },
     {
       "name": "hops",
-      "phrases": [
-          "chmiel",
-          "chmielowe",
-          "chmielu"
-      ],
+      "phrases": ["chmiel", "chmielowe", "chmielu"],
       "include": [],
       "exclude": []
     },
     {
       "name": "grape",
       "phrases": [
-          "winogron",
-          "winogrono",
-          "winorośl",
-          "winoroślami",
-          "winorośli"
+        "winogron",
+        "winogrono",
+        "winorośl",
+        "winoroślami",
+        "winorośli"
       ],
       "include": [],
       "exclude": []
     },
     {
       "name": "windmill",
-      "phrases": [
-          "wiatrak",
-          "wiatraka",
-          "wiatrakiem",
-          "wiatraków"
-      ],
+      "phrases": ["wiatrak", "wiatraka", "wiatrakiem", "wiatraków"],
       "include": [],
       "exclude": []
     },
@@ -1453,6 +1450,20 @@
         "Herb powiatu białogardzkiego",
         "Herb powiatu goleniowskiego"
       ]
+    },
+    {
+      "name": "horn",
+      "phrases": [
+        "czarny róg",
+        "róg myśliwski",
+        "róg złoty",
+        "srebrno-złoty róg",
+        "trąba",
+        "trąbka",
+        "złoty róg"
+      ],
+      "include": [],
+      "exclude": []
     },
     {
       "name": "saint",

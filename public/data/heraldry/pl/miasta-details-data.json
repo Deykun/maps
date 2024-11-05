@@ -2468,6 +2468,7 @@
   "markers": {
    "animals": [
     "eagle",
+    "unusualHybrid",
     "bird"
    ],
    "items": [
@@ -4722,6 +4723,10 @@
   "markers": {
    "animals": [
     "horse"
+   ],
+   "items": [
+    "horn",
+    "musicalInstrument"
    ]
   }
  },
@@ -7478,7 +7483,8 @@
   },
   "markers": {
    "animals": [
-    "pigeon"
+    "pigeon",
+    "bird"
    ],
    "items": [
     "sword",
@@ -9750,7 +9756,8 @@
   },
   "markers": {
    "animals": [
-    "pigeon"
+    "pigeon",
+    "bird"
    ],
    "items": [
     "cross",
@@ -12572,7 +12579,8 @@
   },
   "markers": {
    "animals": [
-    "pigeon"
+    "pigeon",
+    "bird"
    ],
    "items": [
     "axeSaw"
@@ -15338,7 +15346,9 @@
    "items": [
     "lily",
     "walls",
-    "flower"
+    "horn",
+    "flower",
+    "musicalInstrument"
    ]
   }
  },
@@ -21443,7 +21453,9 @@
   "markers": {
    "items": [
     "axeSaw",
-    "tree"
+    "tree",
+    "horn",
+    "musicalInstrument"
    ]
   }
  },
@@ -24294,7 +24306,9 @@
   },
   "markers": {
    "items": [
-    "tree"
+    "tree",
+    "horn",
+    "musicalInstrument"
    ]
   }
  },
@@ -26601,7 +26615,9 @@
   "markers": {
    "items": [
     "cross",
-    "crown"
+    "crown",
+    "horn",
+    "musicalInstrument"
    ]
   }
  },
@@ -45106,7 +45122,9 @@
   },
   "markers": {
    "items": [
-    "walls"
+    "walls",
+    "horn",
+    "musicalInstrument"
    ]
   }
  },
@@ -54489,7 +54507,9 @@
   "markers": {
    "items": [
     "sword",
-    "walls"
+    "walls",
+    "horn",
+    "musicalInstrument"
    ]
   }
  },
@@ -56918,6 +56938,10 @@
   "markers": {
    "animals": [
     "deer"
+   ],
+   "items": [
+    "horn",
+    "musicalInstrument"
    ]
   }
  },
@@ -61787,7 +61811,8 @@
   "markers": {
    "animals": [
     "griffin",
-    "fish"
+    "fish",
+    "unusualHybrid"
    ],
    "items": [
     "walls",

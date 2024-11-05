@@ -3,6 +3,7 @@
   --text: white;
   --bg: #1d2214;
   --border: #3e4634;
+  --border-empty: #ea3b124a;
   --border-focus: var(--primary);
 }
 
@@ -63,6 +64,10 @@ textarea {
   border-radius: 2px;
   outline-offset: 3px;
   outline-color: white;
+
+  &:empty {
+    border-color: var(--border-empty);
+  }
 
   &:focus {
     border-color: var(--border-focus);

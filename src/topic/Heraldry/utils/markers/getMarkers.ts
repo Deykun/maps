@@ -74,6 +74,10 @@ export const getMarkers = ({
     items.push('walls');
   }
 
+  if (!items.includes('musicalInstrument') && items.some((active) => ['violin', 'flute', 'horn'].includes(active))) {
+    items.push('musicalInstrument')
+  }
+
   return {
     types,
     animals,
