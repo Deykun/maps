@@ -53976,6 +53976,7 @@
   },
   "markers": {
    "animals": [
+    "parrot",
     "lion",
     "bird"
    ],
@@ -64401,7 +64402,9 @@
   },
   "markers": {
    "items": [
-    "tree"
+    "tree",
+    "horn",
+    "musicalInstrument"
    ]
   }
  },
@@ -65049,7 +65052,9 @@
   },
   "markers": {
    "items": [
-    "cross"
+    "cross",
+    "horn",
+    "musicalInstrument"
    ]
   }
  },
@@ -70905,7 +70910,9 @@
   },
   "markers": {
    "animals": [
-    "lion"
+    "parrot",
+    "lion",
+    "bird"
    ]
   }
  },
@@ -81469,7 +81476,9 @@
     "bird"
    ],
    "items": [
-    "cross"
+    "cross",
+    "horn",
+    "musicalInstrument"
    ]
   }
  },
@@ -83050,7 +83059,9 @@
    "items": [
     "cross",
     "tree",
-    "axeSaw"
+    "axeSaw",
+    "horn",
+    "musicalInstrument"
    ]
   }
  },
@@ -98736,7 +98747,9 @@
   },
   "markers": {
    "items": [
-    "tree"
+    "tree",
+    "horn",
+    "musicalInstrument"
    ]
   }
  },
@@ -106048,7 +106061,9 @@
   },
   "markers": {
    "items": [
-    "walls"
+    "walls",
+    "horn",
+    "musicalInstrument"
    ]
   }
  },
@@ -118752,6 +118767,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "horn",
+    "musicalInstrument"
+   ]
   }
  },
  {
@@ -119852,7 +119873,9 @@
   },
   "markers": {
    "items": [
-    "tree"
+    "tree",
+    "horn",
+    "musicalInstrument"
    ]
   }
  },
@@ -142851,6 +142874,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "violin",
+    "musicalInstrument"
+   ]
   }
  },
  {

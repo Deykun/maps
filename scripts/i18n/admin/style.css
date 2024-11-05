@@ -3,6 +3,7 @@
   --text: white;
   --bg: #1d2214;
   --border: #3e4634;
+  --border-empty: #ea3b124a;
   --border-focus: var(--primary);
 }
 
@@ -64,6 +65,10 @@ textarea {
   outline-offset: 3px;
   outline-color: white;
 
+  &:empty {
+    border-color: var(--border-empty);
+  }
+
   &:focus {
     border-color: var(--border-focus);
   }
@@ -88,6 +93,10 @@ textarea {
   & img {
     width: 12px;
     height: 12px;
+  }
+
+  &:hover {
+    background-color: #a06464;
   }
 }
 
