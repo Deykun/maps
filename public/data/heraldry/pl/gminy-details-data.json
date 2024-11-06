@@ -9886,7 +9886,8 @@
    "items": [
     "sword",
     "arrow",
-    "cross"
+    "cross",
+    "jewelry"
    ]
   }
  },
@@ -11132,6 +11133,7 @@
    ],
    "items": [
     "sword",
+    "jewelry",
     "crown"
    ]
   }
@@ -14565,6 +14567,7 @@
   "markers": {
    "items": [
     "lily",
+    "jewelry",
     "flower"
    ]
   }
@@ -15755,7 +15758,8 @@
    ],
    "items": [
     "horseshoe",
-    "cross"
+    "cross",
+    "jewelry"
    ]
   }
  },
@@ -17470,6 +17474,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "jewelry"
    ]
   }
  },
@@ -23256,6 +23263,7 @@
    "items": [
     "earOfGrain",
     "lily",
+    "jewelry",
     "flower"
    ]
   }
@@ -24616,6 +24624,7 @@
    "items": [
     "lily",
     "walls",
+    "jewelry",
     "saint",
     "flower"
    ]
@@ -26176,6 +26185,7 @@
    "items": [
     "lily",
     "cross",
+    "jewelry",
     "flower"
    ]
   }
@@ -27156,7 +27166,8 @@
   },
   "markers": {
    "items": [
-    "arrow"
+    "arrow",
+    "jewelry"
    ]
   }
  },
@@ -30172,6 +30183,7 @@
   "markers": {
    "items": [
     "lily",
+    "jewelry",
     "flower"
    ]
   }
@@ -36514,7 +36526,8 @@
     "bird"
    ],
    "items": [
-    "cross"
+    "cross",
+    "jewelry"
    ]
   }
  },
@@ -39824,6 +39837,7 @@
   "markers": {
    "items": [
     "lily",
+    "jewelry",
     "crown",
     "flower"
    ]
@@ -41413,6 +41427,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "jewelry"
+   ]
   }
  },
  {
@@ -43493,7 +43512,8 @@
     "horseshoe",
     "arrow",
     "walls",
-    "cross"
+    "cross",
+    "jewelry"
    ]
   }
  },
@@ -43805,7 +43825,8 @@
    ],
    "items": [
     "earOfGrain",
-    "walls"
+    "walls",
+    "jewelry"
    ]
   }
  },
@@ -43935,6 +43956,7 @@
    ],
    "items": [
     "lily",
+    "jewelry",
     "flower"
    ]
   }
@@ -46067,7 +46089,8 @@
     "horseshoe",
     "axeSaw",
     "walls",
-    "cross"
+    "cross",
+    "jewelry"
    ]
   }
  },
@@ -46468,7 +46491,8 @@
     "fish"
    ],
    "items": [
-    "walls"
+    "walls",
+    "jewelry"
    ]
   }
  },
@@ -46832,6 +46856,7 @@
    ],
    "items": [
     "lily",
+    "jewelry",
     "flower"
    ]
   }
@@ -50493,7 +50518,8 @@
   "markers": {
    "items": [
     "lily",
-    "flower"
+    "flower",
+    "jewelry"
    ]
   }
  },
@@ -55746,6 +55772,7 @@
   "markers": {
    "items": [
     "lily",
+    "jewelry",
     "flower"
    ]
   }
@@ -57826,7 +57853,8 @@
     "lion"
    ],
    "items": [
-    "walls"
+    "walls",
+    "jewelry"
    ]
   }
  },
@@ -58352,6 +58380,7 @@
   "markers": {
    "items": [
     "lily",
+    "jewelry",
     "flower"
    ]
   }
@@ -59215,6 +59244,7 @@
    "items": [
     "horseshoe",
     "cross",
+    "jewelry",
     "crown"
    ]
   }
@@ -79662,6 +79692,7 @@
     "tree",
     "rose",
     "cross",
+    "jewelry",
     "crown",
     "flower"
    ]

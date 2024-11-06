@@ -1246,6 +1246,130 @@
       "phrases": ["muszelka", "muszelki", "muszla", "muszle", "muszlę"]
     },
     {
+      "name": "jewelry",
+      "phrases": [
+        "kolczyk",
+        "kolczykiem",
+        "pierścienia",
+        "pierścienie",
+        "pierścieniem",
+        "pierścieniu",
+        "pierścień",
+        "pierścionek",
+        "pierścionkiem",
+        "półpierścieniem",
+        "półpierścieniu",
+        "półpierścień"
+      ],
+      "include": [],
+      "exclude": [
+        {
+          "imageHash": "457b62c2",
+          "note": "Herb gminy Płoskinia"
+        },
+        {
+          "imageHash": "539db69",
+          "note": "Herb Chojnic"
+        },
+        {
+          "imageHash": "34d20d44",
+          "note": "Herb powiatu chojnickiego"
+        },
+        {
+          "imageHash": "28c090c0",
+          "note": "Herb gminy Tarnówka"
+        },
+        {
+          "imageHash": "2aac3680",
+          "note": "Herb powiatu wałeckiego"
+        },
+        {
+          "imageHash": "2f8856e0",
+          "note": "Herb powiatu wągrowieckiego"
+        },
+        {
+          "imageHash": "3c3955db",
+          "note": "Herb gminy Dopiewo"
+        },
+        {
+          "imageHash": "43087463",
+          "note": "Herb Nekli"
+        },
+        {
+          "imageHash": "50adf505",
+          "note": "Herb powiatu wrzesińskiego"
+        },
+        {
+          "imageHash": "29a4d8c",
+          "note": "Herb gminy Ostrów Wielkopolski"
+        },
+        {
+          "imageHash": "67b7c4b5",
+          "note": "Herb gminy Sieroszewice"
+        },
+        {
+          "imageHash": "5f695f8a",
+          "note": "Herb gminy Czermin (województwo wielkopolskie)"
+        },
+        {
+          "imageHash": "6f4f9577",
+          "note": "Herb Ślesina"
+        },
+        {
+          "imageHash": "5ceb4fc3",
+          "note": "Herb gminy Boniewo"
+        },
+        {
+          "imageHash": "1484590c",
+          "note": "Herb Bierutowa"
+        },
+        {
+          "imageHash": "471838de",
+          "note": "Herb Brzegu"
+        },
+        {
+          "imageHash": "6ee08c4c",
+          "note": "Herb województwa łódzkiego"
+        },
+        {
+          "imageHash": "9ee7737",
+          "note": "Herb województwa mazowieckiego"
+        },
+        {
+          "imageHash": "2c023c69",
+          "note": "Herb Łomianek"
+        },
+        {
+          "imageHash": "59ecf62b",
+          "note": "Herb gminy Kuczbork-Osada"
+        },
+        {
+          "imageHash": "4b3b7ebd",
+          "note": "Herb gminy Osiek (powiat brodnicki)"
+        },
+        {
+          "imageHash": "e374fae",
+          "note": "Herb Kikoła"
+        },
+        {
+          "imageHash": "2dc79492",
+          "note": "Herb Skępego"
+        },
+        {
+          "imageHash": "56843bd4",
+          "note": "Herb Magnuszewa"
+        },
+        {
+          "imageHash": "141c1157",
+          "note": "Herb Ostrowca Świętokrzyskiego"
+        },
+        {
+          "imageHash": "1c597352",
+          "note": "Herb gminy Niedrzwica Duża"
+        }
+      ]
+    },
+    {
       "name": "angel",
       "phrases": [
         "anioł",
