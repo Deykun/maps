@@ -99,7 +99,10 @@ export default function useGetFilteredUnits({
     
     window.history.replaceState(undefined, '', `${location.pathname}${searchParams}`);
 
-    const cacheKey = filteredUnits.map(({ id }) => id).sort((a, b) => a.localeCompare(b)).join(',');
+    const cacheKey = [
+      ...filteredUnits.map(({ id }) => id).sort((a, b) => a.localeCompare(b)).join(','),
+      ...subtitleParts.map(({ operator, labels }) => `${operator}:${labels.join(',')}`),
+    ].join('|');
 
     if (postMemoCacheHash === cacheKey) {
       return;
