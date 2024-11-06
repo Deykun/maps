@@ -9575,11 +9575,11 @@
   },
   "markers": {
    "animals": [
+    "shell",
     "fish"
    ],
    "items": [
-    "walls",
-    "shell"
+    "walls"
    ]
   }
  },
@@ -22107,7 +22107,7 @@
    }
   },
   "markers": {
-   "items": [
+   "animals": [
     "shell"
    ]
   }
@@ -33457,8 +33457,10 @@
    }
   },
   "markers": {
+   "animals": [
+    "shell"
+   ],
    "items": [
-    "shell",
     "saint"
    ]
   }
@@ -69105,9 +69107,11 @@
    }
   },
   "markers": {
+   "animals": [
+    "shell"
+   ],
    "items": [
     "rose",
-    "shell",
     "flower"
    ]
   }
