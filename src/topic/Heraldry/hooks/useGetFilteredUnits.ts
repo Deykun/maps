@@ -18,6 +18,8 @@ type UseGetFilteredUnitsParams = Omit<GetFilteredUnitsParams,
   typeFiltersList: GetFilterResponse
 }
 
+let postMemoCacheHash = '';
+
 export default function useGetFilteredUnits({
   lang,
   unitsForMapAll,
@@ -96,7 +98,15 @@ export default function useGetFilteredUnits({
     })
     
     window.history.replaceState(undefined, '', `${location.pathname}${searchParams}`);
-    
+
+    const cacheKey = filteredUnits.map(({ id }) => id).sort((a, b) => a.localeCompare(b)).join(',');
+
+    if (postMemoCacheHash === cacheKey) {
+      return;
+    }
+
+    postMemoCacheHash = cacheKey;
+   
     setResponse({
       units: filteredUnits,
       unitsForMap,
