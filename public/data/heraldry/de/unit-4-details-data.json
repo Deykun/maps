@@ -31537,6 +31537,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "horse"
+   ],
    "items": [
     "tree"
    ]
@@ -32263,6 +32266,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "horse"
+   ],
    "items": [
     "tree"
    ]
@@ -32664,7 +32670,9 @@
   "markers": {
    "items": [
     "cross",
-    "jewelry"
+    "tree",
+    "jewelry",
+    "wheel"
    ]
   }
  },
@@ -34355,6 +34363,7 @@
   },
   "markers": {
    "items": [
+    "cross",
     "tree"
    ]
   }
@@ -36461,6 +36470,7 @@
   },
   "markers": {
    "animals": [
+    "bird",
     "fish"
    ],
    "items": [
@@ -36533,6 +36543,8 @@
   },
   "markers": {
    "items": [
+    "tree",
+    "walls",
     "sword",
     "key"
    ]
@@ -36756,7 +36768,8 @@
   },
   "markers": {
    "items": [
-    "tree"
+    "tree",
+    "jewelry"
    ]
   }
  },
@@ -36825,7 +36838,8 @@
   "markers": {
    "items": [
     "tree",
-    "wheel"
+    "wheel",
+    "boat"
    ]
   }
  },
@@ -36878,6 +36892,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "fish"
+   ]
   }
  },
  {
@@ -36982,7 +37001,8 @@
   },
   "markers": {
    "animals": [
-    "bird"
+    "bird",
+    "ram"
    ],
    "items": [
     "bell"
@@ -37069,6 +37089,9 @@
    "animals": [
     "owl",
     "bird"
+   ],
+   "items": [
+    "flower"
    ]
   }
  },
@@ -37217,6 +37240,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "boat"
    ]
   }
  },
@@ -39817,6 +39843,7 @@
   },
   "markers": {
    "items": [
+    "windmill",
     "horn",
     "musicalInstrument"
    ]
@@ -102793,6 +102820,8 @@
     "bird"
    ],
    "items": [
+    "crown",
+    "walls",
     "earOfGrain"
    ]
   }

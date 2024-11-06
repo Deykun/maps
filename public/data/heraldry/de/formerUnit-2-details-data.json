@@ -5036,6 +5036,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "boat"
    ]
   }
  },
@@ -5395,7 +5398,8 @@
   },
   "markers": {
    "animals": [
-    "lion"
+    "lion",
+    "fish"
    ]
   }
  },
@@ -5703,6 +5707,9 @@
   "markers": {
    "animals": [
     "fish"
+   ],
+   "items": [
+    "anchor"
    ]
   }
  },
@@ -6163,6 +6170,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
