@@ -1,6 +1,20 @@
 [
  {
-  "id": "gemeinde-13286"
+  "id": "gemeinde-13286",
+  "colors": {
+   "hexPalette": [
+    "#e3e3e3"
+   ],
+   "byNames": {
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ]
+   },
+   "byNamesRejected": {}
+  }
  },
  {
   "id": "city-13287",
@@ -815,8 +829,7 @@
     "bird"
    ],
    "items": [
-    "walls",
-    "bird"
+    "walls"
    ]
   }
  },
@@ -943,8 +956,7 @@
     "bird"
    ],
    "items": [
-    "sword",
-    "bird"
+    "sword"
    ]
   }
  },
@@ -3382,8 +3394,7 @@
     "bird"
    ],
    "items": [
-    "wheel",
-    "bird"
+    "wheel"
    ]
   }
  },
@@ -3725,7 +3736,6 @@
    ],
    "items": [
     "grape",
-    "bird",
     "angel"
    ]
   }
@@ -4055,7 +4065,6 @@
    ],
    "items": [
     "grape",
-    "bird",
     "angel"
    ]
   }
@@ -4387,8 +4396,7 @@
     "bird"
    ],
    "items": [
-    "jewelry",
-    "bird"
+    "jewelry"
    ]
   }
  },
@@ -4731,8 +4739,7 @@
     "bird"
    ],
    "items": [
-    "jewelry",
-    "bird"
+    "jewelry"
    ]
   }
  },
