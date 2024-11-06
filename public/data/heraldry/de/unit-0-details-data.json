@@ -59982,7 +59982,9 @@
     "bear"
    ],
    "items": [
-    "cross"
+    "cross",
+    "saint",
+    "crozier"
    ]
   }
  },
@@ -60441,6 +60443,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "crozier"
+   ]
   }
  },
  {
@@ -96506,6 +96513,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "crozier"
+   ]
   }
  },
  {
@@ -96573,6 +96585,7 @@
   },
   "markers": {
    "items": [
+    "crown",
     "tree"
    ]
   }
@@ -110990,6 +111003,7 @@
   },
   "markers": {
    "items": [
+    "tree",
     "walls"
    ]
   }
@@ -111042,6 +111056,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "sword",
+    "crozier"
+   ]
   }
  },
  {
@@ -111357,6 +111377,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "crozier"
+   ]
   }
  },
  {
@@ -133276,6 +133301,7 @@
   },
   "markers": {
    "items": [
+    "tree",
     "bell"
    ]
   }
@@ -134012,7 +134038,8 @@
   },
   "markers": {
    "items": [
-    "tree"
+    "tree",
+    "crozier"
    ]
   }
  },
@@ -139098,6 +139125,7 @@
   },
   "markers": {
    "items": [
+    "crozier",
     "shell"
    ]
   }

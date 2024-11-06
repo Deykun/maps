@@ -190,6 +190,9 @@
     "eagle",
     "lion",
     "bird"
+   ],
+   "items": [
+    "cross"
    ]
   }
  },
@@ -49881,7 +49884,8 @@
   },
   "markers": {
    "items": [
-    "earOfGrain"
+    "earOfGrain",
+    "axeSaw"
    ]
   }
  },
@@ -50357,7 +50361,8 @@
   },
   "markers": {
    "items": [
-    "earOfGrain"
+    "earOfGrain",
+    "axeSaw"
    ]
   }
  },
@@ -51027,8 +51032,7 @@
     "fish"
    ],
    "items": [
-    "cross",
-    "crozier"
+    "cross"
    ]
   }
  },
@@ -61028,7 +61032,8 @@
   },
   "markers": {
    "items": [
-    "grave"
+    "grave",
+    "tree"
    ]
   }
  },
@@ -67997,7 +68002,8 @@
     "bird"
    ],
    "items": [
-    "tree"
+    "tree",
+    "walls"
    ]
   }
  },
@@ -74827,6 +74833,8 @@
     "fish"
    ],
    "items": [
+    "cross",
+    "tree",
     "saint"
    ]
   }
@@ -77891,6 +77899,7 @@
   },
   "markers": {
    "items": [
+    "boat",
     "bell"
    ]
   }
@@ -78423,6 +78432,7 @@
   },
   "markers": {
    "items": [
+    "tree",
     "wheel"
    ]
   }
