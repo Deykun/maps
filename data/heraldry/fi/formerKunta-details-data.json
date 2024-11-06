@@ -7189,8 +7189,10 @@
    }
   },
   "markers": {
+   "animals": [
+    "shell"
+   ],
    "items": [
-    "shell",
     "walls"
    ]
   }
@@ -9694,6 +9696,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "windmill"
+   ]
   }
  },
  {

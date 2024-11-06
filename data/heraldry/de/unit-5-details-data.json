@@ -4,6 +4,80 @@
  },
  {
   "id": "city-13287",
+  "colors": {
+   "hexPalette": [
+    "#e20019",
+    "#f9e52f",
+    "#0090d3",
+    "#7a7a7a",
+    "#111111",
+    "#ffffff"
+   ],
+   "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 41.71162056184671,
+      "matcherColor": "#f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": 23.421317683656234,
+      "matcherColor": "#e6c633"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": 20.465205198458406,
+      "matcherColor": "#1d7dc0"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "blue": [
+     {
+      "distanceToThreshold": -154.60818400047344,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -77.71347065556077,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -156.36543161974836,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": -276.0947565705757,
+      "matcherColor": "#fe3940"
+     }
+    ]
+   }
+  },
   "markers": {
    "items": [
     "cross",
@@ -741,7 +815,8 @@
     "bird"
    ],
    "items": [
-    "walls"
+    "walls",
+    "bird"
    ]
   }
  },
@@ -868,7 +943,8 @@
     "bird"
    ],
    "items": [
-    "sword"
+    "sword",
+    "bird"
    ]
   }
  },
@@ -3306,7 +3382,8 @@
     "bird"
    ],
    "items": [
-    "wheel"
+    "wheel",
+    "bird"
    ]
   }
  },
@@ -3458,7 +3535,8 @@
     "lion"
    ],
    "items": [
-    "wheel"
+    "wheel",
+    "apple"
    ]
   }
  },
@@ -3647,6 +3725,7 @@
    ],
    "items": [
     "grape",
+    "bird",
     "angel"
    ]
   }
@@ -3976,6 +4055,7 @@
    ],
    "items": [
     "grape",
+    "bird",
     "angel"
    ]
   }
@@ -4307,7 +4387,8 @@
     "bird"
    ],
    "items": [
-    "jewelry"
+    "jewelry",
+    "bird"
    ]
   }
  },
@@ -4650,7 +4731,8 @@
     "bird"
    ],
    "items": [
-    "jewelry"
+    "jewelry",
+    "bird"
    ]
   }
  },

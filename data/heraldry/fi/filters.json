@@ -98,6 +98,10 @@
       "exclude": []
     },
     {
+      "name": "shell",
+      "phrases": ["simpukat"]
+    },
+    {
       "name": "squirrel",
       "phrases": ["orava"],
       "exclude": [
@@ -531,10 +535,6 @@
         "Etelä-Pohjanmaan vaakuna",
         "Jämsän vaakuna"
       ]
-    },
-    {
-      "name": "shell",
-      "phrases": ["simpukat"]
     },
     {
       "name": "lily",
