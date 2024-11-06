@@ -125269,7 +125269,61 @@
   }
  },
  {
-  "id": "formerKreis-4870"
+  "id": "formerKreis-4870",
+  "colors": {
+   "hexPalette": [
+    "#e0432f",
+    "#4775b7",
+    "#111018",
+    "#fdfdf9"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 42.1978836571284,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -196.38462845343543,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -139.34903692517094,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -70.73255141700554,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -84.63056385149025,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
  },
  {
   "id": "formerKreis-4871",
