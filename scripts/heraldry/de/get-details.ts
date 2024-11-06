@@ -36,10 +36,10 @@ import { chunkSize } from './constants';
 const chunkArg = process.argv.find((arg) => arg.startsWith('chunk='));
 const chunkIndex = chunkArg ? Number(chunkArg.replace('chunk=', '')) : undefined;
 
-const getChunkIndex = async (chunkIndex) => {
+const getChunkIndex = async (chunkIndex: number, params?: { shouldRemoveTemporaryFiles?: boolean }) => {
 	const startIndex = chunkIndex * chunkSize;
 	const endIndex = startIndex + chunkSize;
-	
+
 	console.log(`${chalk.green(`Generating chunk ${chunkIndex}`)} (${startIndex} - ${endIndex})`);
 	
 	const units = unitFromJSON as AdministrativeUnit[]
@@ -51,15 +51,17 @@ const getChunkIndex = async (chunkIndex) => {
 		path: 'unit',
 		lang: 'de',
 		chunkIndex,
+		shouldRemoveTemporaryFiles: params?.shouldRemoveTemporaryFiles,
 	});
-		
+
 	getDetails({
 		administrativeDivisions: formerUnits.slice(startIndex, endIndex),
 		alreadyFetchedDivisions: formerUnitJSON,
 		path: 'formerUnit',
 		lang: 'de',
 		chunkIndex,
-	});	
+		shouldRemoveTemporaryFiles: params?.shouldRemoveTemporaryFiles,
+	});
 }
 
 if (typeof chunkIndex !== 'number' && chunkArg === 'chunk=all') {
@@ -73,11 +75,11 @@ if (typeof chunkIndex === 'number') {
 }
 
 if (chunkArg === 'chunk=all') {
-	await getChunkIndex(0);
-	await getChunkIndex(1);
-	await getChunkIndex(2);
-	await getChunkIndex(3);
-	await getChunkIndex(4);
-	await getChunkIndex(5);
+	await getChunkIndex(0, { shouldRemoveTemporaryFiles: false });
+	await getChunkIndex(1, { shouldRemoveTemporaryFiles: false });
+	await getChunkIndex(2, { shouldRemoveTemporaryFiles: false });
+	await getChunkIndex(3, { shouldRemoveTemporaryFiles: false });
+	await getChunkIndex(4, { shouldRemoveTemporaryFiles: false });
+	await getChunkIndex(5, { shouldRemoveTemporaryFiles: true });
 }
 

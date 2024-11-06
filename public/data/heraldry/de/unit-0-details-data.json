@@ -24600,6 +24600,80 @@
  },
  {
   "id": "kreis-413",
+  "colors": {
+   "hexPalette": [
+    "#fcdb00",
+    "#00509c",
+    "#db261e",
+    "#a1a1a1",
+    "#ffffff",
+    "#000000"
+   ],
+   "byNames": {
+    "gold": [
+     {
+      "distanceToThreshold": 13.875216263623116,
+      "matcherColor": "#ffff00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": 16.068234727022407,
+      "matcherColor": "#0059c7"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": 19.667587484006575,
+      "matcherColor": "#f00"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -229.45274275727468,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -148.1802103947443,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -142.78745670675644,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -68.41339493993607,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  },
   "markers": {
    "items": [
     "grape",

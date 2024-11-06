@@ -39,12 +39,14 @@ export const getDetails = async ({
   path,
   lang,
   chunkIndex,
+  shouldRemoveTemporaryFiles = true,
 }: {
   administrativeDivisions: AdministrativeUnit[],
   alreadyFetchedDivisions?: CoatOfArmsDetailsData[],
   path: string,
   lang: string,
   chunkIndex?: number,
+  shouldRemoveTemporaryFiles?: boolean,
 }) => {
   const contentToSaveForDetails: CoatOfArmsDetailsData[] = [];
   const alreadyFetchedDetailsById = alreadyFetchedDivisions.reduce((stack: {
@@ -94,7 +96,8 @@ export const getDetails = async ({
     }
 
     if (existsSync(expectedFilePath)) {
-      const temporaryPngFile = `./public/images/heraldry/${lang}/web/temp/${path}/${fileName}-320w.png`;
+      // The ID is being added because, if the image is duplicated, sometimes a previous iteration removes it from the current one before it can be used
+      const temporaryPngFile = `./public/images/heraldry/${lang}/web/temp/${path}/${fileName}-${unit.id}-320w.png`;
 
       let wasColorTakenFromCache = false;
       let colors;
@@ -180,7 +183,9 @@ export const getDetails = async ({
 
   const chunkSuffix = typeof chunkIndex === 'number' ? `-${chunkIndex}` : '';
 
-  fsExtra.emptyDirSync(`./public/images/heraldry/${lang}/web/temp/${path}/`);
+  if (shouldRemoveTemporaryFiles) {
+    fsExtra.emptyDirSync(`./public/images/heraldry/${lang}/web/temp/${path}/`);
+  }
 
   writeFileSync(
     `./public/data/heraldry/${lang}/${path}${chunkSuffix}-details-data.json`,
