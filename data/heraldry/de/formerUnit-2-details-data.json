@@ -43696,7 +43696,8 @@
   },
   "markers": {
    "items": [
-    "crozier"
+    "crozier",
+    "book"
    ]
   }
  },
@@ -48918,7 +48919,8 @@
     "bird"
    ],
    "items": [
-    "saint"
+    "saint",
+    "book"
    ]
   }
  },
@@ -48977,6 +48979,7 @@
     "boar"
    ],
    "items": [
+    "book",
     "bell"
    ]
   }
@@ -61181,7 +61184,7 @@
   },
   "markers": {
    "animals": [
-    "grouse",
+    "capercaillie",
     "bird"
    ]
   }
@@ -63703,7 +63706,8 @@
    "items": [
     "cross",
     "saint",
-    "key"
+    "key",
+    "book"
    ]
   }
  },
@@ -66956,6 +66960,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "book"
+   ]
   }
  },
  {
@@ -73167,7 +73176,8 @@
   "markers": {
    "items": [
     "saint",
-    "key"
+    "key",
+    "book"
    ]
   }
  },
@@ -80651,7 +80661,8 @@
   },
   "markers": {
    "items": [
-    "saint"
+    "saint",
+    "book"
    ]
   }
  },
@@ -80684,7 +80695,8 @@
    "items": [
     "tree",
     "saint",
-    "flower"
+    "flower",
+    "book"
    ]
   }
  },
@@ -81874,7 +81886,8 @@
     "fish"
    ],
    "items": [
-    "crozier"
+    "crozier",
+    "jug"
    ]
   }
  },
@@ -82911,7 +82924,8 @@
   },
   "markers": {
    "items": [
-    "axeSaw"
+    "axeSaw",
+    "book"
    ]
   }
  },
@@ -94243,7 +94257,8 @@
   },
   "markers": {
    "items": [
-    "saint"
+    "saint",
+    "book"
    ]
   }
  },
@@ -97036,7 +97051,8 @@
   },
   "markers": {
    "items": [
-    "earOfGrain"
+    "earOfGrain",
+    "book"
    ]
   }
  },
@@ -103657,6 +103673,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "book"
+   ]
   }
  },
  {
@@ -103907,7 +103928,8 @@
   },
   "markers": {
    "items": [
-    "walls"
+    "walls",
+    "book"
    ]
   }
  },
@@ -107793,7 +107815,8 @@
   "markers": {
    "items": [
     "saint",
-    "key"
+    "key",
+    "book"
    ]
   }
  },
@@ -108706,7 +108729,8 @@
   "markers": {
    "items": [
     "saint",
-    "crozier"
+    "crozier",
+    "book"
    ]
   }
  },
@@ -125929,7 +125953,8 @@
     "bird"
    ],
    "items": [
-    "sword"
+    "sword",
+    "book"
    ]
   }
  },
@@ -145783,6 +145808,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "book"
+   ]
   }
  },
  {
@@ -148202,6 +148232,9 @@
    "animals": [
     "lion",
     "ram"
+   ],
+   "items": [
+    "book"
    ]
   }
  },

@@ -128,6 +128,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "jug"
+   ]
   }
  },
  {
@@ -6299,7 +6304,8 @@
     "lion"
    ],
    "items": [
-    "crown"
+    "crown",
+    "jug"
    ]
   }
  },
