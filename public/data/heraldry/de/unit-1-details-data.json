@@ -14264,7 +14264,8 @@
   },
   "markers": {
    "items": [
-    "saint"
+    "saint",
+    "book"
    ]
   }
  },
@@ -26200,6 +26201,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "book"
+   ]
   }
  },
  {
@@ -30150,7 +30156,8 @@
   },
   "markers": {
    "items": [
-    "saint"
+    "saint",
+    "book"
    ]
   }
  },
@@ -44154,7 +44161,8 @@
   "markers": {
    "items": [
     "tree",
-    "walls"
+    "walls",
+    "book"
    ]
   }
  },
@@ -49049,7 +49057,8 @@
   },
   "markers": {
    "items": [
-    "cross"
+    "cross",
+    "jug"
    ]
   }
  },
@@ -54322,6 +54331,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "bucket"
+   ]
   }
  },
  {
@@ -56275,6 +56289,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "bucket"
+   ]
   }
  },
  {
@@ -62382,6 +62401,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "book"
+   ]
   }
  },
  {
@@ -69350,7 +69374,8 @@
     "bird"
    ],
    "items": [
-    "cross"
+    "cross",
+    "book"
    ]
   }
  },
@@ -69782,28 +69807,34 @@
     ]
    },
    "byNamesRejected": {
+    "gold": [
+     {
+      "distanceToThreshold": 14.94290371408379,
+      "matcherColor": "#ffff00"
+     }
+    ],
     "red": [
      {
-      "distanceToThreshold": -141.16509670379727,
+      "distanceToThreshold": 30.41169492713025,
       "matcherColor": "#f00"
      }
     ],
-    "blue": [
+    "grey": [
      {
-      "distanceToThreshold": -151.29363454680788,
-      "matcherColor": "#2e3192"
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
      }
     ],
-    "green": [
+    "black": [
      {
-      "distanceToThreshold": -148.15331196521285,
-      "matcherColor": "#006f00"
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
      }
     ],
-    "gold": [
+    "white": [
      {
-      "distanceToThreshold": -85.46820958546235,
-      "matcherColor": "#b68f5e"
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
      }
     ]
    }
@@ -73489,7 +73520,8 @@
     "fish"
    ],
    "items": [
-    "tree"
+    "tree",
+    "jug"
    ]
   }
  },
@@ -73773,7 +73805,8 @@
    "items": [
     "earOfGrain",
     "wheel",
-    "hammer"
+    "hammer",
+    "jug"
    ]
   }
  },
@@ -79123,7 +79156,8 @@
   },
   "markers": {
    "items": [
-    "tree"
+    "tree",
+    "book"
    ]
   }
  },
@@ -84145,7 +84179,8 @@
   },
   "markers": {
    "items": [
-    "walls"
+    "walls",
+    "book"
    ]
   }
  },
@@ -92928,22 +92963,28 @@
     ]
    },
    "byNamesRejected": {
-    "blue": [
+    "red": [
      {
-      "distanceToThreshold": -165.25319087640023,
-      "matcherColor": "#2e3192"
+      "distanceToThreshold": 45.63431944512084,
+      "matcherColor": "#f00"
      }
     ],
-    "green": [
+    "black": [
      {
-      "distanceToThreshold": -160.82862675540048,
-      "matcherColor": "#006f00"
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
      }
     ],
-    "gold": [
+    "grey": [
      {
-      "distanceToThreshold": -102.53922603482522,
-      "matcherColor": "#b68f5e"
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
      }
     ]
    }
@@ -110639,6 +110680,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "book"
+   ]
   }
  },
  {
@@ -111016,7 +111062,8 @@
     "saint",
     "walls",
     "sword",
-    "key"
+    "key",
+    "book"
    ]
   }
  },
@@ -113778,7 +113825,8 @@
    "items": [
     "saint",
     "wheel",
-    "key"
+    "key",
+    "book"
    ]
   }
  },
@@ -140249,7 +140297,8 @@
   },
   "markers": {
    "items": [
-    "earOfGrain"
+    "earOfGrain",
+    "book"
    ]
   }
  },
@@ -143066,7 +143115,8 @@
   },
   "markers": {
    "items": [
-    "earOfGrain"
+    "earOfGrain",
+    "book"
    ]
   }
  },
@@ -172355,7 +172405,8 @@
   },
   "markers": {
    "items": [
-    "sword"
+    "sword",
+    "book"
    ]
   }
  },

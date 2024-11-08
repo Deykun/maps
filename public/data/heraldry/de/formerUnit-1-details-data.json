@@ -11088,7 +11088,8 @@
   "markers": {
    "items": [
     "cross",
-    "sword"
+    "sword",
+    "book"
    ]
   }
  },
@@ -15563,7 +15564,8 @@
   },
   "markers": {
    "items": [
-    "walls"
+    "walls",
+    "book"
    ]
   }
  },
@@ -20994,6 +20996,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "bucket"
+   ]
   }
  },
  {
@@ -32535,7 +32542,8 @@
   },
   "markers": {
    "items": [
-    "wheel"
+    "wheel",
+    "bucket"
    ]
   }
  },
@@ -41490,7 +41498,8 @@
    ],
    "items": [
     "cross",
-    "saint"
+    "saint",
+    "book"
    ]
   }
  },
@@ -41942,7 +41951,8 @@
    "items": [
     "cross",
     "saint",
-    "walls"
+    "walls",
+    "book"
    ]
   }
  },
@@ -71660,6 +71670,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "bucket"
+   ]
   }
  },
  {
@@ -76102,7 +76117,8 @@
     "fox"
    ],
    "items": [
-    "tree"
+    "tree",
+    "book"
    ]
   }
  },
@@ -76174,7 +76190,8 @@
     "bird"
    ],
    "items": [
-    "tree"
+    "tree",
+    "book"
    ]
   }
  },
@@ -99629,7 +99646,8 @@
     "saint",
     "walls",
     "flower",
-    "sword"
+    "sword",
+    "book"
    ]
   }
  },
@@ -125298,28 +125316,22 @@
     ]
    },
    "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -196.38462845343543,
-      "matcherColor": "#fe3940"
-     }
-    ],
     "blue": [
      {
-      "distanceToThreshold": -139.34903692517094,
+      "distanceToThreshold": 42.1978836571284,
       "matcherColor": "#5596c3"
      }
     ],
-    "green": [
+    "black": [
      {
-      "distanceToThreshold": -70.73255141700554,
-      "matcherColor": "#00824a"
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
      }
     ],
-    "gold": [
+    "white": [
      {
-      "distanceToThreshold": -84.63056385149025,
-      "matcherColor": "#b68f5e"
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
      }
     ]
    }
@@ -127037,7 +127049,8 @@
    "items": [
     "tree",
     "axeSaw",
-    "hammer"
+    "hammer",
+    "jug"
    ]
   }
  },

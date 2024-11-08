@@ -22754,6 +22754,50 @@
       ]
     },
     {
+      "name": "bucket",
+      "phrases": [
+        "eimer",
+        "eimerchen",
+        "eimerchens",
+        "eimern",
+        "eimers",
+        "wassereimer"
+      ],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "jug",
+      "phrases": [
+        "enghalskrug",
+        "glaskrug",
+        "henkelkrug",
+        "jagdkrug",
+        "krug",
+        "kruges",
+        "neukrug",
+        "ölkrug",
+        "salzkeramikhenkelkrug",
+        "tonkrug"
+      ],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "book",
+      "phrases": [
+        "bibel",
+        "buch",
+        "buches",
+        "evangelienbuch",
+        "gesangbuch",
+        "landrechtbuch",
+        "messbuch"
+      ],
+      "include": [],
+      "exclude": []
+    },
+    {
       "name": "violin",
       "phrases": ["geige"],
       "exclude": [],
