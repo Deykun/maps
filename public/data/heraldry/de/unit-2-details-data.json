@@ -7017,7 +7017,8 @@
     "windmill",
     "saint",
     "flower",
-    "lily"
+    "lily",
+    "book"
    ]
   }
  },
@@ -7379,7 +7380,8 @@
    "items": [
     "saint",
     "flower",
-    "lily"
+    "lily",
+    "book"
    ]
   }
  },
@@ -12100,7 +12102,8 @@
     "lion"
    ],
    "items": [
-    "key"
+    "key",
+    "jug"
    ]
   }
  },
@@ -28964,7 +28967,8 @@
    "items": [
     "tree",
     "earOfGrain",
-    "wheel"
+    "wheel",
+    "jug"
    ]
   }
  },
@@ -40429,7 +40433,8 @@
    "items": [
     "saint",
     "sword",
-    "key"
+    "key",
+    "book"
    ]
   }
  },
@@ -41292,6 +41297,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "bucket"
+   ]
   }
  },
  {
@@ -42227,6 +42237,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "book"
    ]
   }
  },
@@ -48132,7 +48145,8 @@
   "markers": {
    "items": [
     "tree",
-    "walls"
+    "walls",
+    "jug"
    ]
   }
  },
@@ -54590,7 +54604,8 @@
    "items": [
     "walls",
     "wheel",
-    "key"
+    "key",
+    "book"
    ]
   }
  },
@@ -63147,7 +63162,8 @@
    "items": [
     "tree",
     "saint",
-    "key"
+    "key",
+    "book"
    ]
   }
  },
@@ -63651,7 +63667,8 @@
   "markers": {
    "items": [
     "saint",
-    "key"
+    "key",
+    "book"
    ]
   }
  },
@@ -90017,7 +90034,8 @@
   },
   "markers": {
    "items": [
-    "cross"
+    "cross",
+    "bucket"
    ]
   }
  },
@@ -105912,6 +105930,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "book"
+   ]
   }
  },
  {
@@ -109712,7 +109735,8 @@
     "bird"
    ],
    "items": [
-    "walls"
+    "walls",
+    "book"
    ]
   }
  },
@@ -118356,6 +118380,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "bucket"
+   ]
   }
  },
  {
@@ -119330,7 +119359,8 @@
    "items": [
     "tree",
     "flower",
-    "rose"
+    "rose",
+    "book"
    ]
   }
  },
@@ -120631,7 +120661,8 @@
   },
   "markers": {
    "items": [
-    "tree"
+    "tree",
+    "bucket"
    ]
   }
  },
@@ -124708,6 +124739,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "book"
+   ]
   }
  },
  {
@@ -127220,7 +127256,8 @@
    ],
    "items": [
     "cross",
-    "saint"
+    "saint",
+    "book"
    ]
   }
  },
@@ -131682,7 +131719,8 @@
     "lion"
    ],
    "items": [
-    "walls"
+    "walls",
+    "book"
    ]
   }
  },
@@ -139610,7 +139648,8 @@
   "markers": {
    "items": [
     "cross",
-    "walls"
+    "walls",
+    "book"
    ]
   }
  },
@@ -140249,28 +140288,34 @@
     ]
    },
    "byNamesRejected": {
+    "gold": [
+     {
+      "distanceToThreshold": 14.94290371408379,
+      "matcherColor": "#ffff00"
+     }
+    ],
     "red": [
      {
-      "distanceToThreshold": -141.16509670379727,
+      "distanceToThreshold": 30.41169492713025,
       "matcherColor": "#f00"
      }
     ],
-    "blue": [
+    "grey": [
      {
-      "distanceToThreshold": -151.29363454680788,
-      "matcherColor": "#2e3192"
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
      }
     ],
-    "green": [
+    "black": [
      {
-      "distanceToThreshold": -148.15331196521285,
-      "matcherColor": "#006f00"
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
      }
     ],
-    "gold": [
+    "white": [
      {
-      "distanceToThreshold": -85.46820958546235,
-      "matcherColor": "#b68f5e"
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
      }
     ]
    }
@@ -147927,7 +147972,8 @@
   },
   "markers": {
    "items": [
-    "key"
+    "key",
+    "book"
    ]
   }
  },
@@ -154499,7 +154545,8 @@
     "bird"
    ],
    "items": [
-    "saint"
+    "saint",
+    "book"
    ]
   }
  },

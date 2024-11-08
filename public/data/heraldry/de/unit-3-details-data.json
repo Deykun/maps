@@ -985,7 +985,8 @@
   },
   "markers": {
    "items": [
-    "earOfGrain"
+    "earOfGrain",
+    "book"
    ]
   }
  },
@@ -2000,7 +2001,8 @@
   },
   "markers": {
    "items": [
-    "sword"
+    "sword",
+    "jug"
    ]
   }
  },
@@ -10430,7 +10432,8 @@
   },
   "markers": {
    "items": [
-    "earOfGrain"
+    "earOfGrain",
+    "jug"
    ]
   }
  },
@@ -11074,7 +11077,8 @@
   "markers": {
    "items": [
     "earOfGrain",
-    "wheel"
+    "wheel",
+    "jug"
    ]
   }
  },
@@ -11694,6 +11698,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "book"
+   ]
   }
  },
  {
@@ -13675,7 +13684,8 @@
   },
   "markers": {
    "items": [
-    "earOfGrain"
+    "earOfGrain",
+    "bucket"
    ]
   }
  },
@@ -15028,6 +15038,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "jug"
+   ]
   }
  },
  {
@@ -37975,6 +37990,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "book"
+   ]
   }
  },
  {
@@ -58754,6 +58774,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "bucket"
+   ]
   }
  },
  {
@@ -59686,7 +59711,8 @@
   },
   "markers": {
    "items": [
-    "cross"
+    "cross",
+    "book"
    ]
   }
  },
@@ -70402,7 +70428,8 @@
   },
   "markers": {
    "items": [
-    "saint"
+    "saint",
+    "book"
    ]
   }
  },
@@ -82809,6 +82836,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "book"
+   ]
   }
  },
  {
@@ -87486,7 +87518,8 @@
     "lion"
    ],
    "items": [
-    "tree"
+    "tree",
+    "book"
    ]
   }
  },
@@ -90149,7 +90182,8 @@
   "markers": {
    "items": [
     "saint",
-    "key"
+    "key",
+    "book"
    ]
   }
  },
@@ -95927,6 +95961,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "book"
+   ]
   }
  },
  {
@@ -98332,7 +98371,8 @@
     "cross",
     "saint",
     "flower",
-    "rose"
+    "rose",
+    "book"
    ]
   }
  },
@@ -98999,7 +99039,8 @@
   },
   "markers": {
    "items": [
-    "saint"
+    "saint",
+    "book"
    ]
   }
  },
@@ -119308,6 +119349,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "book"
+   ]
   }
  },
  {
@@ -126346,6 +126392,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "bucket"
+   ]
   }
  },
  {
@@ -134625,6 +134676,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "book"
+   ]
   }
  },
  {
@@ -138598,6 +138654,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "book"
+   ]
   }
  },
  {
@@ -139211,6 +139272,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "jug"
+   ]
   }
  },
  {
@@ -139278,6 +139344,9 @@
   "markers": {
    "animals": [
     "deer"
+   ],
+   "items": [
+    "jug"
    ]
   }
  },
@@ -139646,7 +139715,8 @@
   "markers": {
    "items": [
     "flower",
-    "rose"
+    "rose",
+    "jug"
    ]
   }
  },
@@ -141695,7 +141765,8 @@
     "lion"
    ],
    "items": [
-    "wheel"
+    "wheel",
+    "jug"
    ]
   }
  },
@@ -144195,7 +144266,8 @@
   },
   "markers": {
    "items": [
-    "saint"
+    "saint",
+    "book"
    ]
   }
  },
@@ -144473,6 +144545,9 @@
     "lion",
     "peacock",
     "bird"
+   ],
+   "items": [
+    "jug"
    ]
   }
  },
@@ -144779,7 +144854,8 @@
    "items": [
     "flower",
     "sword",
-    "lily"
+    "lily",
+    "book"
    ]
   }
  },
@@ -147097,6 +147173,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "jug"
+   ]
   }
  },
  {
@@ -147392,7 +147473,8 @@
    "items": [
     "grape",
     "cross",
-    "crown"
+    "crown",
+    "jug"
    ]
   }
  },
@@ -147669,6 +147751,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "jug"
+   ]
   }
  },
  {
@@ -149552,7 +149639,8 @@
    ],
    "items": [
     "tree",
-    "sword"
+    "sword",
+    "book"
    ]
   }
  },
@@ -149728,6 +149816,9 @@
   "markers": {
    "animals": [
     "deer"
+   ],
+   "items": [
+    "jug"
    ]
   }
  },
@@ -151420,7 +151511,8 @@
   "markers": {
    "items": [
     "cross",
-    "tree"
+    "tree",
+    "book"
    ]
   }
  },
@@ -153133,7 +153225,8 @@
   },
   "markers": {
    "items": [
-    "hammer"
+    "hammer",
+    "jug"
    ]
   }
  },
@@ -153992,7 +154085,8 @@
   },
   "markers": {
    "items": [
-    "key"
+    "key",
+    "book"
    ]
   }
  },
@@ -156653,7 +156747,8 @@
   },
   "markers": {
    "items": [
-    "key"
+    "key",
+    "book"
    ]
   }
  },
@@ -161272,28 +161367,40 @@
     ]
    },
    "byNamesRejected": {
+    "gold": [
+     {
+      "distanceToThreshold": 11.688510683275346,
+      "matcherColor": "#e6c633"
+     }
+    ],
     "red": [
      {
-      "distanceToThreshold": -242.62244955249008,
-      "matcherColor": "#fe3940"
+      "distanceToThreshold": 9.551437204155832,
+      "matcherColor": "#f00"
      }
     ],
     "blue": [
      {
-      "distanceToThreshold": -134.32189789110234,
-      "matcherColor": "#2e3192"
+      "distanceToThreshold": 41.615223689149765,
+      "matcherColor": "#1d7dc0"
      }
     ],
-    "green": [
+    "grey": [
      {
-      "distanceToThreshold": -55.680594742592845,
-      "matcherColor": "#00824a"
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
      }
     ],
-    "gold": [
+    "white": [
      {
-      "distanceToThreshold": -131.92446430822727,
-      "matcherColor": "#b68f5e"
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
      }
     ]
    }
@@ -164240,7 +164347,8 @@
    "items": [
     "cross",
     "saint",
-    "crozier"
+    "crozier",
+    "book"
    ]
   }
  },
@@ -164510,7 +164618,8 @@
    ],
    "items": [
     "saint",
-    "key"
+    "key",
+    "book"
    ]
   }
  },
@@ -167507,6 +167616,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "jug"
+   ]
   }
  },
  {
@@ -167917,7 +168031,8 @@
    ],
    "items": [
     "cross",
-    "crozier"
+    "crozier",
+    "bucket"
    ]
   }
  },
@@ -170442,7 +170557,8 @@
   "markers": {
    "items": [
     "saint",
-    "sword"
+    "sword",
+    "book"
    ]
   }
  },
@@ -171912,7 +172028,8 @@
    ],
    "items": [
     "earOfGrain",
-    "wheel"
+    "wheel",
+    "book"
    ]
   }
  },

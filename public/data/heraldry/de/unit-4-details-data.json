@@ -21463,7 +21463,8 @@
   },
   "markers": {
    "items": [
-    "tree"
+    "tree",
+    "jug"
    ]
   }
  },
@@ -21693,7 +21694,8 @@
    "items": [
     "saint",
     "walls",
-    "key"
+    "key",
+    "book"
    ]
   }
  },
@@ -28092,7 +28094,8 @@
   },
   "markers": {
    "items": [
-    "saint"
+    "saint",
+    "book"
    ]
   }
  },
@@ -28338,7 +28341,8 @@
   },
   "markers": {
    "items": [
-    "sword"
+    "sword",
+    "jug"
    ]
   }
  },
@@ -34554,6 +34558,9 @@
   "markers": {
    "animals": [
     "horse"
+   ],
+   "items": [
+    "bucket"
    ]
   }
  },
@@ -58359,7 +58366,8 @@
   },
   "markers": {
    "items": [
-    "cross"
+    "cross",
+    "book"
    ]
   }
  },
@@ -64680,6 +64688,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "book"
+   ]
   }
  },
  {
@@ -70635,7 +70648,8 @@
   },
   "markers": {
    "items": [
-    "tree"
+    "tree",
+    "bucket"
    ]
   }
  },
@@ -78920,7 +78934,8 @@
   "markers": {
    "items": [
     "tree",
-    "earOfGrain"
+    "earOfGrain",
+    "book"
    ]
   }
  },
@@ -97830,7 +97845,8 @@
     "bullBison"
    ],
    "items": [
-    "flower"
+    "flower",
+    "book"
    ]
   }
  },
@@ -98595,7 +98611,8 @@
    ],
    "items": [
     "saint",
-    "sword"
+    "sword",
+    "book"
    ]
   }
  },
@@ -101145,7 +101162,8 @@
   },
   "markers": {
    "items": [
-    "boat"
+    "boat",
+    "book"
    ]
   }
  },
@@ -107334,6 +107352,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "book"
+   ]
   }
  },
  {
@@ -109739,7 +109762,8 @@
    "items": [
     "cross",
     "wheel",
-    "angel"
+    "angel",
+    "book"
    ]
   }
  },
@@ -115233,7 +115257,8 @@
   },
   "markers": {
    "items": [
-    "tree"
+    "tree",
+    "jug"
    ]
   }
  },
@@ -115565,7 +115590,8 @@
    "items": [
     "cross",
     "saint",
-    "wheel"
+    "wheel",
+    "book"
    ]
   }
  },
@@ -116354,7 +116380,8 @@
     "cross",
     "crown",
     "saint",
-    "walls"
+    "walls",
+    "book"
    ]
   }
  },
@@ -118333,7 +118360,8 @@
   },
   "markers": {
    "items": [
-    "cross"
+    "cross",
+    "book"
    ]
   }
  },
@@ -122842,6 +122870,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "book"
+   ]
   }
  },
  {
@@ -124270,7 +124303,8 @@
     "fish"
    ],
    "items": [
-    "key"
+    "key",
+    "jug"
    ]
   }
  },
@@ -140848,7 +140882,8 @@
   },
   "markers": {
    "items": [
-    "cross"
+    "cross",
+    "book"
    ]
   }
  },
