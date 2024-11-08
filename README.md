@@ -23,3 +23,5 @@ Some countries have dedicated pages for the coat of arms of smaller cities and m
 There are countries, like Germany, that usually have pages with a lot of coat of arms, so I wrote a dedicated parser as a user-script to create a seed while visually showing me what has been indexed and based on what.
 
 Sometimes, there will be a list of 30 coat of arms under the header "Former cities' coats of arms", and the images need to be aware they are under that header to recognize their status (city & and being former). Occasionally, there will be a footnote in the image description, so there’s a process to parse that as well. It isn’t ideal, and Germany's Wikipedia has more than one approach for this, so it isn’t as reliable for Germany.
+
+[Read more about the app - DEVELOPMENT.md](docs/DEVELOPMENT.md)
