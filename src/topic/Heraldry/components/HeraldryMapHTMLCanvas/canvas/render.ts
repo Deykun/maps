@@ -185,12 +185,12 @@ const setCanvasAttributes = (canvas: HTMLCanvasElement) => {
   canvas.setAttribute('height', (style.height() * dpi).toString());
 }
 
-export const onResize = (mapOffset: MapOffset) => {
+export const onResize = () => {
   // Size is optional, but we calc it once here for all CoAs
   const size = canvas.getClientRects()[0];
 
   coatOfArmsList.forEach((item) => {
-    item.onResize(mapOffset, size);
+    item.onResize({ size });
   });
 
   if (canvas) {

@@ -5,6 +5,8 @@ import { useDraggable } from "react-use-draggable-scroll";
 
 import { LOCAL_STORAGE } from '@/constants';
 
+import { mergeRefs } from '@/utils/ref';
+
 import { useFiltersDevelopmentStore } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
 
 import { MapsSearchParams } from '@/topic/Heraldry/utils/getSearchParams'
@@ -20,6 +22,7 @@ import ZoomPane from '@/topic/Heraldry/components/Panes/ZoomPane';
 import UnitsPane from '@/topic/Heraldry/components/Panes/UnitsPane';
 import FiltersPane from '@/topic/Heraldry/components/Panes/FiltersPane';
 
+import useTrackScrollPosition from '@/topic/Heraldry/features/partialRender/hooks/useTrackScrollPosition';
 import CookiesPane from '@/topic/Heraldry/features/tracking/components/CookiesPane';
 import NotYourLangPane from '@/topic/Heraldry/features/langHint/components/NotYourLangPane';
 
@@ -77,6 +80,7 @@ const HeraldryMapContainerWithUI = ({
     const [coatSize, setCoatSize] = useState(4);
     const customFilter = useFiltersDevelopmentStore(state => state.filter);
 
+    const scrollWrapperRef = useTrackScrollPosition();
     const { events } = useDraggable(wrapperRef, { decayRate: 0.015 });
 
     const { i18n } = useTranslation();
@@ -108,7 +112,7 @@ const HeraldryMapContainerWithUI = ({
         <>
           <section
             id="map-section"
-            ref={wrapperRef}
+            ref={mergeRefs(wrapperRef, scrollWrapperRef)}
             className={clsx(
               "map-section fixed top-0 left-0 w-full h-full",
               "p-5 pt-[100px]",

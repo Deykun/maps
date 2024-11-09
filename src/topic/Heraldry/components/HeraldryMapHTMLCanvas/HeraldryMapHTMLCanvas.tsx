@@ -12,7 +12,7 @@ import { CoatOfArmsMapData, MapOffset } from '@/topic/Heraldry/types';
 import { mapPadding, maxSelectedWithClick } from '@/topic/Heraldry/constants'
 import { getXYfromLatLon } from '@/topic/Heraldry/utils/getPosition';
 
-import { setUnitsPaneSearchPhrase, setDetailsUnit } from '@/topic/Heraldry/stores/unitsPaneStore';
+import { setUnitsPaneSearchPhrase } from '@/topic/Heraldry/stores/unitsPaneStore';
 
 import useDebouncedResizeObserver from '@/hooks/useDebouncedResizeObserver'
 import useEffectChange from '@/hooks/useEffectChange'
@@ -61,7 +61,7 @@ const HeraldryMapHTMLCanvas = ({ className, units, children, mapOffset, coatSize
   }, [units]);
 
   useEffectChange(() => {
-    onResize(mapOffset);
+    onResize();
     setLastClick(undefined);
   }, [dimensions?.width]);
 
@@ -84,28 +84,28 @@ const HeraldryMapHTMLCanvas = ({ className, units, children, mapOffset, coatSize
       This code transforms the clicked point (x and y) to the corresponding point on the canvas.
     */
 
-      let canvasX = x;
-      let canvasY = y;
-  
-      const boxSize = canvasRef.current?.getClientRects()[0];
-  
-      const shouldScalePosition = typeof boxSize?.width === 'number'
-        && typeof canvasRef.current?.width=== 'number'
-        && Math.round(boxSize.width) !== Math.round(canvasRef.current.width);
-  
-      if (shouldScalePosition) {
-        canvasX = (canvasX / boxSize.width) * (canvasRef?.current?.width || 1);
-        canvasY = (canvasY / boxSize.height) * (canvasRef?.current?.height || 1);
-      }
-  
-      const selectedIds = getCoatOfArmsForXandY({
-        x: canvasX,
-        y: canvasY,
-      });
-  
-      const selectedUnits = units.filter(({ id }) => selectedIds.includes(id));
+    let canvasX = x;
+    let canvasY = y;
 
-      return selectedUnits.reverse();
+    const boxSize = canvasRef.current?.getClientRects()[0];
+
+    const shouldScalePosition = typeof boxSize?.width === 'number'
+      && typeof canvasRef.current?.width=== 'number'
+      && Math.round(boxSize.width) !== Math.round(canvasRef.current.width);
+
+    if (shouldScalePosition) {
+      canvasX = (canvasX / boxSize.width) * (canvasRef?.current?.width || 1);
+      canvasY = (canvasY / boxSize.height) * (canvasRef?.current?.height || 1);
+    }
+
+    const selectedIds = getCoatOfArmsForXandY({
+      x: canvasX,
+      y: canvasY,
+    });
+
+    const selectedUnits = units.filter(({ id }) => selectedIds.includes(id));
+
+    return selectedUnits.reverse();
   }, [position, canvasRef.current])
 
   useEffectChange(() => {

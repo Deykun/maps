@@ -18,6 +18,7 @@ export class CoatOfArms {
     indexY: number,
   };
   image: HTMLImageElement;
+  mapOffset: MapOffset;
 
   constructor ({
     canvas,
@@ -58,19 +59,20 @@ export class CoatOfArms {
 
     this.x = 0;
     this.y = 0;
+    this.mapOffset = mapOffset;
 
-    this.onResize(mapOffset);
+    this.onResize();
   }
 
-  onResize(mapOffset: MapOffset, canvas?: { width: number, height: number }) {
+  onResize(params?: { size?: { width: number, height: number }}) {
     const position = getXYfromLatLon({
       cordinates: {
         lonX: this.lonX,
         latY: this.latY,
       },
-      mapOffset,
+      mapOffset: this.mapOffset,
       pixelRatio: window.devicePixelRatio,
-      canvas: canvas || this.canvas,
+      canvas: params?.size || this.canvas,
     });
 
     this.x = position.x;
