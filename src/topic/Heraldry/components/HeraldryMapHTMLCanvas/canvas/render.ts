@@ -1,5 +1,5 @@
 import { getSpriteDataFromUnit } from '@/topic/Heraldry/utils/getSpriteDataFromUnit';
-import { CoatOfArmsMapData, MapOffset } from '@/topic/Heraldry/types';
+import { CoatOfArmsMapData, MapOffset, ScrollPosition } from '@/topic/Heraldry/types';
 
 import { updateProcessingMap, updateTotalsForImages, updateValueForImages } from '@/topic/Heraldry/stores/progressStore';
 
@@ -10,6 +10,7 @@ let canvas = undefined as unknown as HTMLCanvasElement;
 let ctx = undefined as unknown as CanvasRenderingContext2D;
 let currentFrameHash = '';
 let coatOfArmsList: CoatOfArms[] = [];
+let scrollPosition = undefined as unknown as ScrollPosition;
 let coatSize = 40;
 let mapOffset: MapOffset = {
   minLatTop: 90,
@@ -74,7 +75,33 @@ const getFirstFrameChangeDetected = (a: FrameStampData, b: FrameStampData) => {
   return '';
 }
 
-const getFrameStampData = ({ shouldSkipChangeCheck }: { shouldSkipChangeCheck: boolean}): FrameStampData => {
+type GetFrameStampDataParams = {
+  shouldSkipChangeCheck: boolean,
+}
+
+const getShouldPrioritizeVisibleUnits = () => {
+  if (!scrollPosition) {
+    return false;
+  }
+
+  // It isn't worth prioritizing if the ammount is small
+  if (coatOfArmsList.length < 3000) {
+    return false
+  }
+
+  const canvasWidth = canvas?.width || 0;
+  const windowWidth = window?.innerWidth || 0;
+
+  if (!canvasWidth || !windowWidth) {
+    return false;
+  }
+
+  return (canvasWidth * window.devicePixelRatio / windowWidth) > 1.7;
+};
+
+const getFrameStampData = ({
+  shouldSkipChangeCheck,
+}: GetFrameStampDataParams): FrameStampData => {
   const fetchedSprites = Object.values(cachedSprites).filter(({ image }) => image.complete).length;
   
   // All those values should affect currentFrameHash =
@@ -125,7 +152,11 @@ const redrawItems = (redrawFrameHash: string, index: number, total: number) => {
   }
 }
 
-const renderFrame = ({ shouldSkipChangeCheck = false }: { shouldSkipChangeCheck?: boolean } = {}) => {
+type RenderFrameParams = {
+  shouldSkipChangeCheck?: boolean,
+}
+
+const renderFrame = ({ shouldSkipChangeCheck = false }: RenderFrameParams = {}) => {
   const frameStampData = getFrameStampData({ shouldSkipChangeCheck });
 
   if (!shouldSkipChangeCheck) {
@@ -157,6 +188,24 @@ const renderFrame = ({ shouldSkipChangeCheck = false }: { shouldSkipChangeCheck?
     // JSON.stringify(lastFrameStampData.mapOffset),
   ].join('-');
 
+
+  const shouldPrioritizeVisibleUnits = scrollPosition && getShouldPrioritizeVisibleUnits();
+
+  console.log('shouldPrioritizeVisibleUnits', shouldPrioritizeVisibleUnits);
+  if (shouldPrioritizeVisibleUnits) {
+    const minMaxData = {
+      xMin: scrollPosition.left,
+      xMax: scrollPosition.left + scrollPosition.width,
+      yMin: scrollPosition.top,
+      yMax: scrollPosition.top + scrollPosition.height,
+    };
+
+    coatOfArmsList = coatOfArmsList.sort((a, b) => 
+      b.isRenderedIn(minMaxData) && !a.isRenderedIn(minMaxData)
+      ? 1 : -1
+    );
+  }
+
   updateProcessingMap({ value: 0, total: coatOfArmsList.length });
   redrawItems(currentFrameHash, 0, coatOfArmsList.length);
 }
@@ -185,18 +234,26 @@ const setCanvasAttributes = (canvas: HTMLCanvasElement) => {
   canvas.setAttribute('height', (style.height() * dpi).toString());
 }
 
-export const onResize = (mapOffset: MapOffset) => {
+export const onScroll = ({
+  scrollData,
+}: {
+  scrollData: ScrollPosition,
+}) => {
+  scrollPosition = scrollData;
+}
+
+export const onResize = () => {
   // Size is optional, but we calc it once here for all CoAs
   const size = canvas.getClientRects()[0];
 
   coatOfArmsList.forEach((item) => {
-    item.onResize(mapOffset, size);
+    item.onResize({ size });
   });
 
   if (canvas) {
     setCanvasAttributes(canvas);
   }
-  
+
   renderFrame();
 }
 

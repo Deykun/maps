@@ -5,7 +5,10 @@ import { useDraggable } from "react-use-draggable-scroll";
 
 import { LOCAL_STORAGE } from '@/constants';
 
-import { useFiltersDevelopmentStore } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
+import { mergeRefs } from '@/utils/ref';
+
+import useZoomStore from '@/topic/Heraldry/stores/zoomStore';
+import useFiltersDevelopmentStore from '@/topic/Heraldry/stores/filtersDevelopmentStore';
 
 import { MapsSearchParams } from '@/topic/Heraldry/utils/getSearchParams'
 import { CoatOfArmsMapData, MapOffset, CoatOfArmsDetailsData } from '@/topic/Heraldry/types';
@@ -20,6 +23,7 @@ import ZoomPane from '@/topic/Heraldry/components/Panes/ZoomPane';
 import UnitsPane from '@/topic/Heraldry/components/Panes/UnitsPane';
 import FiltersPane from '@/topic/Heraldry/components/Panes/FiltersPane';
 
+import useTrackScrollPosition from '@/topic/Heraldry/features/partialRender/hooks/useTrackScrollPosition';
 import CookiesPane from '@/topic/Heraldry/features/tracking/components/CookiesPane';
 import NotYourLangPane from '@/topic/Heraldry/features/langHint/components/NotYourLangPane';
 
@@ -73,10 +77,11 @@ const HeraldryMapContainerWithUI = ({
   isFetchingDetails = false,
 }: Props) => {
     const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
-    const [zoomLevel, setZoomLevel] = useState(1);
+    const zoomLevel = useZoomStore(state => state.zoomLevel);
     const [coatSize, setCoatSize] = useState(4);
     const customFilter = useFiltersDevelopmentStore(state => state.filter);
 
+    const scrollWrapperRef = useTrackScrollPosition();
     const { events } = useDraggable(wrapperRef, { decayRate: 0.015 });
 
     const { i18n } = useTranslation();
@@ -108,12 +113,11 @@ const HeraldryMapContainerWithUI = ({
         <>
           <section
             id="map-section"
-            ref={wrapperRef}
+            ref={mergeRefs(wrapperRef, scrollWrapperRef)}
             className={clsx(
               "map-section fixed top-0 left-0 w-full h-full",
               "p-5 pt-[100px]",
               "no-scrollbar overflow-auto", {
-                // "flex flex-col justify-evenly": zoomLevel === 1,
                 "pb-[100px]": zoomLevel > 1,
               }
             )}
@@ -121,7 +125,6 @@ const HeraldryMapContainerWithUI = ({
           >
             <HeraldryTitle
               country={lang}
-              zoomLevel={zoomLevel}
               subtitleParts={subtitleParts}
             />
             <div>
@@ -162,10 +165,6 @@ const HeraldryMapContainerWithUI = ({
           <div className="ui-slide-from-right fixed top-0 right-0 z-20 flex flex-col pointer-events-none">          
             <Space side="right" />
             <ZoomPane
-              zoomLevel={zoomLevel}
-              setZoomLevel={setZoomLevel}
-              zoomMin={1}
-              zoomMax={9}
               coatSize={coatSize}
               setCoatSize={setCoatSize}
               coatMin={-1}

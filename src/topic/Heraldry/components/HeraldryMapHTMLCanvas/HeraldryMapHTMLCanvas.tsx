@@ -12,7 +12,7 @@ import { CoatOfArmsMapData, MapOffset } from '@/topic/Heraldry/types';
 import { mapPadding, maxSelectedWithClick } from '@/topic/Heraldry/constants'
 import { getXYfromLatLon } from '@/topic/Heraldry/utils/getPosition';
 
-import { setUnitsPaneSearchPhrase, setDetailsUnit } from '@/topic/Heraldry/stores/unitsPaneStore';
+import { setUnitsPaneSearchPhrase } from '@/topic/Heraldry/stores/unitsPaneStore';
 
 import useDebouncedResizeObserver from '@/hooks/useDebouncedResizeObserver'
 import useEffectChange from '@/hooks/useEffectChange'
@@ -21,7 +21,9 @@ import useHeraldryCursorPosition from '@/topic/Heraldry/components/HeraldryCurso
 import HeraldryCursor from '@/topic/Heraldry/components/HeraldryCursor/HeraldryCursor';
 import HeraldryCursorLastPoint from '@/topic/Heraldry/components/HeraldryCursor/HeraldryCursorLastPoint';
 
-import { render, onResize, setCoatOfArms, getCoatOfArmsForXandY, setCoatSize } from './canvas/render';
+import useScrollPositionStore from '@/topic/Heraldry/features/partialRender/stores/scrollPositionStore';
+
+import { render, onScroll, onResize, setCoatOfArms, getCoatOfArmsForXandY, setCoatSize } from './canvas/render';
 
 import useKeepPositionAfterResize from './useKeepPositionAfterResize';
 
@@ -38,6 +40,11 @@ type Props = {
 const HeraldryMapHTMLCanvas = ({ className, units, children, mapOffset, coatSize }: Props) => {
   const idToShow = useCursorStore((state) => state.idToShow);
   const [hovered, setHovered] = useState<CoatOfArmsMapData[]>([]);
+  const scrollData = useScrollPositionStore();
+  
+  useEffect(() => {
+    onScroll({ scrollData });
+  }, [scrollData]);
 
   const { ref: wrapperRef, dimensions } = useDebouncedResizeObserver<HTMLDivElement>(10);
 
@@ -61,7 +68,7 @@ const HeraldryMapHTMLCanvas = ({ className, units, children, mapOffset, coatSize
   }, [units]);
 
   useEffectChange(() => {
-    onResize(mapOffset);
+    onResize();
     setLastClick(undefined);
   }, [dimensions?.width]);
 
@@ -84,28 +91,28 @@ const HeraldryMapHTMLCanvas = ({ className, units, children, mapOffset, coatSize
       This code transforms the clicked point (x and y) to the corresponding point on the canvas.
     */
 
-      let canvasX = x;
-      let canvasY = y;
-  
-      const boxSize = canvasRef.current?.getClientRects()[0];
-  
-      const shouldScalePosition = typeof boxSize?.width === 'number'
-        && typeof canvasRef.current?.width=== 'number'
-        && Math.round(boxSize.width) !== Math.round(canvasRef.current.width);
-  
-      if (shouldScalePosition) {
-        canvasX = (canvasX / boxSize.width) * (canvasRef?.current?.width || 1);
-        canvasY = (canvasY / boxSize.height) * (canvasRef?.current?.height || 1);
-      }
-  
-      const selectedIds = getCoatOfArmsForXandY({
-        x: canvasX,
-        y: canvasY,
-      });
-  
-      const selectedUnits = units.filter(({ id }) => selectedIds.includes(id));
+    let canvasX = x;
+    let canvasY = y;
 
-      return selectedUnits.reverse();
+    const boxSize = canvasRef.current?.getClientRects()[0];
+
+    const shouldScalePosition = typeof boxSize?.width === 'number'
+      && typeof canvasRef.current?.width=== 'number'
+      && Math.round(boxSize.width) !== Math.round(canvasRef.current.width);
+
+    if (shouldScalePosition) {
+      canvasX = (canvasX / boxSize.width) * (canvasRef?.current?.width || 1);
+      canvasY = (canvasY / boxSize.height) * (canvasRef?.current?.height || 1);
+    }
+
+    const selectedIds = getCoatOfArmsForXandY({
+      x: canvasX,
+      y: canvasY,
+    });
+
+    const selectedUnits = units.filter(({ id }) => selectedIds.includes(id));
+
+    return selectedUnits.reverse();
   }, [position, canvasRef.current])
 
   useEffectChange(() => {

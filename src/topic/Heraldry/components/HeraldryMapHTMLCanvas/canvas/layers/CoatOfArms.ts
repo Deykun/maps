@@ -1,4 +1,4 @@
-import { spriteSize, spriteOffset } from '@/topic/Heraldry/constants'
+import { spriteSize, spriteOffset, mapPadding } from '@/topic/Heraldry/constants'
 import { MapOffset } from '@/topic/Heraldry/types';
 import { getXYfromLatLon } from '@/topic/Heraldry/utils/getPosition';
 
@@ -18,6 +18,7 @@ export class CoatOfArms {
     indexY: number,
   };
   image: HTMLImageElement;
+  mapOffset: MapOffset;
 
   constructor ({
     canvas,
@@ -58,19 +59,20 @@ export class CoatOfArms {
 
     this.x = 0;
     this.y = 0;
+    this.mapOffset = mapOffset;
 
-    this.onResize(mapOffset);
+    this.onResize();
   }
 
-  onResize(mapOffset: MapOffset, canvas?: { width: number, height: number }) {
+  onResize(params?: { size?: { width: number, height: number }}) {
     const position = getXYfromLatLon({
       cordinates: {
         lonX: this.lonX,
         latY: this.latY,
       },
-      mapOffset,
+      mapOffset: this.mapOffset,
       pixelRatio: window.devicePixelRatio,
-      canvas: canvas || this.canvas,
+      canvas: params?.size || this.canvas,
     });
 
     this.x = position.x;
@@ -213,6 +215,20 @@ export class CoatOfArms {
     // }
     
     // canvas.remove();
+
+    return true;
+  }
+
+  isRenderedIn(objectRaw: { xMin: number, xMax: number, yMin: number, yMax: number }) {
+    const scaledMapPadding = mapPadding * window.devicePixelRatio;
+        
+    if (this.x + scaledMapPadding + this.width < objectRaw.xMin - 150 || this.x - scaledMapPadding - this.width > objectRaw.xMax + 150) {
+      return false;
+    }
+
+    if (this.y + scaledMapPadding + this.height < objectRaw.yMin - 150 || this.y - scaledMapPadding - this.height > objectRaw.yMax + 150) {
+      return false;
+    }
 
     return true;
   }

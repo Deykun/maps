@@ -19,7 +19,7 @@ const fetchData = async ({ country }: FetchParmas) => {
   };
 };
 
-export default function useQueryFiltersSeeds({ country }: FetchParmas){
+export default function useQueryFiltersSeeds({ country }: FetchParmas) {
   const response = useQuery({
     queryFn: () => fetchData({ country }),
     queryKey: ['filter', country],

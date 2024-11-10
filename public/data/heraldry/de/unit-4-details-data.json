@@ -19205,6 +19205,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -19254,6 +19259,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "crown",
+    "saint"
+   ]
   }
  },
  {
@@ -19770,6 +19781,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -20363,6 +20379,14 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "deer"
+   ],
+   "items": [
+    "crozier"
+   ]
   }
  },
  {
@@ -108668,6 +108692,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -108901,6 +108930,7 @@
     "lion"
    ],
    "items": [
+    "crown",
     "flower",
     "hammer"
    ]
@@ -109158,7 +109188,8 @@
   },
   "markers": {
    "items": [
-    "tree"
+    "tree",
+    "musicalInstrument"
    ]
   }
  },
@@ -109308,6 +109339,11 @@
    "animals": [
     "peacock",
     "bird"
+   ],
+   "items": [
+    "crown",
+    "saint",
+    "walls"
    ]
   }
  },
@@ -117431,6 +117467,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -117538,6 +117579,14 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ],
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -117971,6 +118020,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -118034,6 +118088,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -118147,6 +118206,9 @@
    "animals": [
     "deer",
     "lion"
+   ],
+   "items": [
+    "earOfGrain"
    ]
   }
  },
@@ -118581,6 +118643,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "hammer"
    ]
   }
  },
@@ -118633,6 +118698,13 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree",
+    "walls",
+    "wheel"
+   ]
   }
  },
  {
@@ -118701,6 +118773,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "hammer"
    ]
   }
  },
@@ -119370,6 +119445,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree",
+    "wheel"
+   ]
   }
  },
  {
@@ -119652,6 +119733,9 @@
    "animals": [
     "pigeon",
     "bird"
+   ],
+   "items": [
+    "tree"
    ]
   }
  },
@@ -119690,6 +119774,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "swan",
+    "bird"
+   ]
   }
  },
  {
@@ -119790,6 +119880,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "crown"
+   ]
   }
  },
  {

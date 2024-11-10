@@ -129,3 +129,10 @@ export type UserScriptDivisionData = {
   source: string,
   sourceTitle: string,
 }
+
+export type ScrollPosition = {
+  width: number,
+  height: number,
+  left: number,
+  top: number,
+}
