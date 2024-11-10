@@ -84,7 +84,7 @@ const getShouldPrioritizeVisibleUnits = () => {
     return false;
   }
 
-  // It isn't worth part rendering if number of CoA is small
+  // It isn't worth prioritizing if the ammount is small
   if (coatOfArmsList.length < 3000) {
     return false
   }
@@ -96,7 +96,7 @@ const getShouldPrioritizeVisibleUnits = () => {
     return false;
   }
 
-  return (canvasWidth * window.devicePixelRatio / windowWidth) > 1.8;
+  return (canvasWidth * window.devicePixelRatio / windowWidth) > 1.7;
 };
 
 const getFrameStampData = ({
