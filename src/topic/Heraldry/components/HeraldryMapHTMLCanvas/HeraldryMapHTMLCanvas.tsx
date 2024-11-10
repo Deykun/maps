@@ -68,7 +68,7 @@ const HeraldryMapHTMLCanvas = ({ className, units, children, mapOffset, coatSize
   }, [units]);
 
   useEffectChange(() => {
-    onResize({ scrollData });
+    onResize();
     setLastClick(undefined);
   }, [dimensions?.width]);
 

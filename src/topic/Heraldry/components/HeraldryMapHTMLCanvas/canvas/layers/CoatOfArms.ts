@@ -222,11 +222,11 @@ export class CoatOfArms {
   isRenderedIn(objectRaw: { xMin: number, xMax: number, yMin: number, yMax: number }) {
     const scaledMapPadding = mapPadding * window.devicePixelRatio;
         
-    if (this.x + scaledMapPadding + this.width < objectRaw.xMin - 100 || this.x - scaledMapPadding - this.width > objectRaw.xMax + 100) {
+    if (this.x + scaledMapPadding + this.width < objectRaw.xMin - 150 || this.x - scaledMapPadding - this.width > objectRaw.xMax + 150) {
       return false;
     }
 
-    if (this.y + scaledMapPadding + this.height < objectRaw.yMin - 100 || this.y - scaledMapPadding - this.height > objectRaw.yMax + 100) {
+    if (this.y + scaledMapPadding + this.height < objectRaw.yMin - 150 || this.y - scaledMapPadding - this.height > objectRaw.yMax + 150) {
       return false;
     }
 

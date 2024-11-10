@@ -10,7 +10,7 @@ let canvas = undefined as unknown as HTMLCanvasElement;
 let ctx = undefined as unknown as CanvasRenderingContext2D;
 let currentFrameHash = '';
 let coatOfArmsList: CoatOfArms[] = [];
-let coatOfArmsListForPartRender: CoatOfArms[] = [];
+let scrollPosition = undefined as unknown as ScrollPosition;
 let coatSize = 40;
 let mapOffset: MapOffset = {
   minLatTop: 90,
@@ -33,14 +33,9 @@ type FrameStampData = {
   windowWidth: number,
   shouldSkipChangeCheck: boolean,
   fetchedSprites: number,
-  partRenderData: string,
 };
 
 const getFirstFrameChangeDetected = (a: FrameStampData, b: FrameStampData) => {
-  if (a.partRenderData !== b.partRenderData) {
-    return 'partRenderData';
-  }
-
   if (a.canvasWidth !== b.canvasWidth) {
     return 'canvasWidth';
   }
@@ -82,40 +77,31 @@ const getFirstFrameChangeDetected = (a: FrameStampData, b: FrameStampData) => {
 
 type GetFrameStampDataParams = {
   shouldSkipChangeCheck: boolean,
-  scrollData?: ScrollPosition,
 }
 
-const getPartRenderData = (scrollData?: ScrollPosition) => {
-  if (!scrollData) {
-    return '';
+const getShouldPrioritizeVisibleUnits = () => {
+  if (!scrollPosition) {
+    return false;
   }
 
   // It isn't worth part rendering if number of CoA is small
-  // if (coatOfArmsList.length < 3000) {
-  //   return '';
-  // }
+  if (coatOfArmsList.length < 3000) {
+    return false
+  }
 
   const canvasWidth = canvas?.width || 0;
   const windowWidth = window?.innerWidth || 0;
 
   if (!canvasWidth || !windowWidth) {
-    return '';
+    return false;
   }
 
-  const isValidForPartFrame = (canvasWidth * window.devicePixelRatio / windowWidth) > 1.8;
-  if (isValidForPartFrame) {
-    return `pr-${(canvasWidth * window.devicePixelRatio / windowWidth).toFixed(1)}-l${scrollData.left}-t${scrollData.top}`;
-  }
-
-  return '';
+  return (canvasWidth * window.devicePixelRatio / windowWidth) > 1.8;
 };
 
 const getFrameStampData = ({
   shouldSkipChangeCheck,
-  scrollData,
 }: GetFrameStampDataParams): FrameStampData => {
-  const partRenderData = getPartRenderData(scrollData);
-  console.log(partRenderData);
   const fetchedSprites = Object.values(cachedSprites).filter(({ image }) => image.complete).length;
   
   // All those values should affect currentFrameHash =
@@ -128,13 +114,12 @@ const getFrameStampData = ({
     canvasIndex,
     shouldSkipChangeCheck,
     fetchedSprites,
-    partRenderData,
   }
 };
 
 let lastFrameStampData = getFrameStampData({ shouldSkipChangeCheck: false });
 
-const redrawItems = (redrawFrameHash: string, index: number, total: number, isPartRender: boolean) => {
+const redrawItems = (redrawFrameHash: string, index: number, total: number) => {
   /*
     Looks like a reasonable solution https://stackoverflow.com/a/37514084/6743808
 
@@ -151,19 +136,17 @@ const redrawItems = (redrawFrameHash: string, index: number, total: number, isPa
     return;
   }
 
-  const list = isPartRender ? coatOfArmsListForPartRender : coatOfArmsList;
-
-  if (list[index]) {
+  if (coatOfArmsList[index]) {
     const renderAtOnce = 45;
 
     for (let i = 0; i <= renderAtOnce; i++) {
-      list[index + i]?.draw();
+      coatOfArmsList[index + i]?.draw();
     } 
 
     updateProcessingMap({ value: index + renderAtOnce, total });
 
-    setTimeout(() => redrawItems(redrawFrameHash, index + renderAtOnce, total, isPartRender), 0);
-    // setTimeout(() => redrawItems(redrawFrameHash, index + renderAtOnce, total), 300, isPartRender);
+    // setTimeout(() => redrawItems(redrawFrameHash, index + renderAtOnce, total), 0);
+    setTimeout(() => redrawItems(redrawFrameHash, index + renderAtOnce, total), 300);
   } else {
     console.log('Frame was rendered', currentFrameHash);
   }
@@ -171,11 +154,10 @@ const redrawItems = (redrawFrameHash: string, index: number, total: number, isPa
 
 type RenderFrameParams = {
   shouldSkipChangeCheck?: boolean,
-  scrollData?: ScrollPosition,
 }
 
-const renderFrame = ({ shouldSkipChangeCheck = false, scrollData }: RenderFrameParams = {}) => {
-  const frameStampData = getFrameStampData({ shouldSkipChangeCheck, scrollData });
+const renderFrame = ({ shouldSkipChangeCheck = false }: RenderFrameParams = {}) => {
+  const frameStampData = getFrameStampData({ shouldSkipChangeCheck });
 
   if (!shouldSkipChangeCheck) {
     const frameChange = getFirstFrameChangeDetected(lastFrameStampData, frameStampData);
@@ -203,26 +185,29 @@ const renderFrame = ({ shouldSkipChangeCheck = false, scrollData }: RenderFrameP
     lastFrameStampData.fetchedSprites,
     lastFrameStampData.shouldSkipChangeCheck ? 'y' : 'n',
     lastFrameStampData.canvasIndex,
-    lastFrameStampData.partRenderData,
     // JSON.stringify(lastFrameStampData.mapOffset),
   ].join('-');
 
 
-  const isPartRenderUpdatedOnScroll = frameStampData.partRenderData && scrollData;
-  if (isPartRenderUpdatedOnScroll) {
-    coatOfArmsListForPartRender = coatOfArmsList.filter((item) => item.isRenderedIn({
-      xMin: scrollData.left,
-      xMax: scrollData.left + scrollData.width,
-      yMin: scrollData.top,
-      yMax: scrollData.top + scrollData.height,
-    }));
+  const shouldPrioritizeVisibleUnits = scrollPosition && getShouldPrioritizeVisibleUnits();
 
-    updateProcessingMap({ value: 0, total: coatOfArmsListForPartRender.length });
-    redrawItems(currentFrameHash, 0, coatOfArmsListForPartRender.length, isPartRenderUpdatedOnScroll);
-  } else {
-    updateProcessingMap({ value: 0, total: coatOfArmsList.length });
-    redrawItems(currentFrameHash, 0, coatOfArmsList.length, isPartRenderUpdatedOnScroll);
+  console.log('shouldPrioritizeVisibleUnits', shouldPrioritizeVisibleUnits);
+  if (shouldPrioritizeVisibleUnits) {
+    const minMaxData = {
+      xMin: scrollPosition.left,
+      xMax: scrollPosition.left + scrollPosition.width,
+      yMin: scrollPosition.top,
+      yMax: scrollPosition.top + scrollPosition.height,
+    };
+
+    coatOfArmsList = coatOfArmsList.sort((a, b) => 
+      b.isRenderedIn(minMaxData) && !a.isRenderedIn(minMaxData)
+      ? 1 : -1
+    );
   }
+
+  updateProcessingMap({ value: 0, total: coatOfArmsList.length });
+  redrawItems(currentFrameHash, 0, coatOfArmsList.length);
 }
 
 const initEventListeners = () => {
@@ -254,14 +239,10 @@ export const onScroll = ({
 }: {
   scrollData: ScrollPosition,
 }) => {
-  renderFrame({ scrollData });
+  scrollPosition = scrollData;
 }
 
-export const onResize = ({
-  scrollData,
-}: {
-  scrollData: ScrollPosition,
-}) => {
+export const onResize = () => {
   // Size is optional, but we calc it once here for all CoAs
   const size = canvas.getClientRects()[0];
 
@@ -273,7 +254,7 @@ export const onResize = ({
     setCanvasAttributes(canvas);
   }
 
-  renderFrame({ scrollData });
+  renderFrame();
 }
 
 export const render = ({ canvas: initCanvas, ctx: initCtx, mapOffset: initMapOffset, coatSize: initCoatSize }: {
