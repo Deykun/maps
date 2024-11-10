@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 
 import IconShieldCheckers from '@/components/Icons/IconShieldCheckers';
+// import IconShieldSearch from '@/components/Icons/IconShieldSearch';
 
 import { getSpriteDataFromUnit } from '@/topic/Heraldry/utils/getSpriteDataFromUnit';
 

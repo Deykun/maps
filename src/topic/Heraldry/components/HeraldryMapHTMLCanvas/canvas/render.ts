@@ -188,10 +188,8 @@ const renderFrame = ({ shouldSkipChangeCheck = false }: RenderFrameParams = {}) 
     // JSON.stringify(lastFrameStampData.mapOffset),
   ].join('-');
 
-
   const shouldPrioritizeVisibleUnits = scrollPosition && getShouldPrioritizeVisibleUnits();
 
-  console.log('shouldPrioritizeVisibleUnits', shouldPrioritizeVisibleUnits);
   if (shouldPrioritizeVisibleUnits) {
     const minMaxData = {
       xMin: scrollPosition.left,

@@ -68,6 +68,7 @@ const HeraldryMapHTMLCanvas = ({ className, units, children, mapOffset, coatSize
   }, [units]);
 
   useEffectChange(() => {
+    onScroll({ scrollData });
     onResize();
     setLastClick(undefined);
   }, [dimensions?.width]);
@@ -75,6 +76,7 @@ const HeraldryMapHTMLCanvas = ({ className, units, children, mapOffset, coatSize
   useKeepPositionAfterResize(dimensions);
 
   useEffectChange(() => {
+    onScroll({ scrollData });
     setCoatSize(coatSize);
   }, [coatSize]);
 
