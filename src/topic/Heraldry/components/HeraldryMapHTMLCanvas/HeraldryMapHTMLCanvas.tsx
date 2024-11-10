@@ -21,7 +21,9 @@ import useHeraldryCursorPosition from '@/topic/Heraldry/components/HeraldryCurso
 import HeraldryCursor from '@/topic/Heraldry/components/HeraldryCursor/HeraldryCursor';
 import HeraldryCursorLastPoint from '@/topic/Heraldry/components/HeraldryCursor/HeraldryCursorLastPoint';
 
-import { render, onResize, setCoatOfArms, getCoatOfArmsForXandY, setCoatSize } from './canvas/render';
+import useScrollPositionStore from '@/topic/Heraldry/features/partialRender/stores/scrollPositionStore';
+
+import { render, onScroll, onResize, setCoatOfArms, getCoatOfArmsForXandY, setCoatSize } from './canvas/render';
 
 import useKeepPositionAfterResize from './useKeepPositionAfterResize';
 
@@ -38,6 +40,11 @@ type Props = {
 const HeraldryMapHTMLCanvas = ({ className, units, children, mapOffset, coatSize }: Props) => {
   const idToShow = useCursorStore((state) => state.idToShow);
   const [hovered, setHovered] = useState<CoatOfArmsMapData[]>([]);
+  const scrollData = useScrollPositionStore();
+  
+  useEffect(() => {
+    onScroll({ scrollData });
+  }, [scrollData]);
 
   const { ref: wrapperRef, dimensions } = useDebouncedResizeObserver<HTMLDivElement>(10);
 
@@ -61,7 +68,7 @@ const HeraldryMapHTMLCanvas = ({ className, units, children, mapOffset, coatSize
   }, [units]);
 
   useEffectChange(() => {
-    onResize();
+    onResize({ scrollData });
     setLastClick(undefined);
   }, [dimensions?.width]);
 

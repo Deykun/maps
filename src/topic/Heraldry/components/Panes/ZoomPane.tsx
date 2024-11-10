@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { useZoomStore, setZoomLevel, zoomMin, zoomMax } from '@/topic/Heraldry/stores/zoomStore';
+
 import useOutsideClick from '@/hooks/useOutsideClick';
 
 import IconPlus from '@/components/Icons/IconPlus';
@@ -9,17 +11,12 @@ import IconControls from '@/components/Icons/IconControls';
 import IconShieldCheckers from '@/components/Icons/IconShieldCheckers';
 import IconSquareRounded from '@/components/Icons/IconSquareRounded';
 
-
 import Panel from '@/components/UI/Panel';
 import SubPanel from '@/components/UI/SubPanel';
 
 import ButtonIcon from '@/components/UI/ButtonIcon';
 
 type Props = {
-  setZoomLevel: (level: number) => void,
-  zoomLevel: number,
-  zoomMin: number,
-  zoomMax: number,
   coatSize: number,
   setCoatSize: (size: number) => void,
   coatMin: number,
@@ -27,15 +24,12 @@ type Props = {
 };
 
 const ZoomPane = ({
-  zoomLevel,
-  setZoomLevel,
-  zoomMin,
-  zoomMax,
   coatSize,
   setCoatSize,
   coatMin,
   coatMax,
 }: Props) => {
+  const zoomLevel = useZoomStore(state => state.zoomLevel);
   const [isOpen, setIsOpen] = useState(false);
 
   const { t } = useTranslation();

@@ -1,4 +1,4 @@
-import { spriteSize, spriteOffset } from '@/topic/Heraldry/constants'
+import { spriteSize, spriteOffset, mapPadding } from '@/topic/Heraldry/constants'
 import { MapOffset } from '@/topic/Heraldry/types';
 import { getXYfromLatLon } from '@/topic/Heraldry/utils/getPosition';
 
@@ -215,6 +215,20 @@ export class CoatOfArms {
     // }
     
     // canvas.remove();
+
+    return true;
+  }
+
+  isRenderedIn(objectRaw: { xMin: number, xMax: number, yMin: number, yMax: number }) {
+    const scaledMapPadding = mapPadding * window.devicePixelRatio;
+        
+    if (this.x + scaledMapPadding + this.width < objectRaw.xMin - 100 || this.x - scaledMapPadding - this.width > objectRaw.xMax + 100) {
+      return false;
+    }
+
+    if (this.y + scaledMapPadding + this.height < objectRaw.yMin - 100 || this.y - scaledMapPadding - this.height > objectRaw.yMax + 100) {
+      return false;
+    }
 
     return true;
   }

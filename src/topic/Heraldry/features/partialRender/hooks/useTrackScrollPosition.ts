@@ -2,9 +2,11 @@ import { useRef, useCallback, useEffect } from 'react';
 import throttle from 'lodash/throttle';
 import debounce from 'lodash/debounce';
 
+import useZoomStore from '@/topic/Heraldry/stores/zoomStore';
 import { updateScrollPosition } from '@/topic/Heraldry/features/partialRender/stores/scrollPositionStore';
 
 function useTrackScrollPosition() {
+  const zoomLevel = useZoomStore(state => state.zoomLevel);
   const ref = useRef<HTMLDivElement | null>(null);
 
   const handleScroll = useCallback((_source: string) => {
@@ -15,6 +17,10 @@ function useTrackScrollPosition() {
       updateScrollPosition({ width, height, left: scrollLeft, top: scrollTop });
     }
   }, [updateScrollPosition]);
+
+  useEffect(() => {
+    handleScroll('zoom');
+  }, [ref.current, handleScroll, zoomLevel]);
 
   // Throttled and debounced versions of the scroll handler
   const throttledHandleScroll = useCallback(throttle(handleScroll, 1500), [handleScroll]);

@@ -1,5 +1,5 @@
 import { getSpriteDataFromUnit } from '@/topic/Heraldry/utils/getSpriteDataFromUnit';
-import { CoatOfArmsMapData, MapOffset } from '@/topic/Heraldry/types';
+import { CoatOfArmsMapData, MapOffset, ScrollPosition } from '@/topic/Heraldry/types';
 
 import { updateProcessingMap, updateTotalsForImages, updateValueForImages } from '@/topic/Heraldry/stores/progressStore';
 
@@ -10,6 +10,7 @@ let canvas = undefined as unknown as HTMLCanvasElement;
 let ctx = undefined as unknown as CanvasRenderingContext2D;
 let currentFrameHash = '';
 let coatOfArmsList: CoatOfArms[] = [];
+let coatOfArmsListForPartRender: CoatOfArms[] = [];
 let coatSize = 40;
 let mapOffset: MapOffset = {
   minLatTop: 90,
@@ -32,9 +33,14 @@ type FrameStampData = {
   windowWidth: number,
   shouldSkipChangeCheck: boolean,
   fetchedSprites: number,
+  partRenderData: string,
 };
 
 const getFirstFrameChangeDetected = (a: FrameStampData, b: FrameStampData) => {
+  if (a.partRenderData !== b.partRenderData) {
+    return 'partRenderData';
+  }
+
   if (a.canvasWidth !== b.canvasWidth) {
     return 'canvasWidth';
   }
@@ -74,7 +80,42 @@ const getFirstFrameChangeDetected = (a: FrameStampData, b: FrameStampData) => {
   return '';
 }
 
-const getFrameStampData = ({ shouldSkipChangeCheck }: { shouldSkipChangeCheck: boolean}): FrameStampData => {
+type GetFrameStampDataParams = {
+  shouldSkipChangeCheck: boolean,
+  scrollData?: ScrollPosition,
+}
+
+const getPartRenderData = (scrollData?: ScrollPosition) => {
+  if (!scrollData) {
+    return '';
+  }
+
+  // It isn't worth part rendering if number of CoA is small
+  // if (coatOfArmsList.length < 3000) {
+  //   return '';
+  // }
+
+  const canvasWidth = canvas?.width || 0;
+  const windowWidth = window?.innerWidth || 0;
+
+  if (!canvasWidth || !windowWidth) {
+    return '';
+  }
+
+  const isValidForPartFrame = (canvasWidth * window.devicePixelRatio / windowWidth) > 1.8;
+  if (isValidForPartFrame) {
+    return `pr-${(canvasWidth * window.devicePixelRatio / windowWidth).toFixed(1)}-l${scrollData.left}-t${scrollData.top}`;
+  }
+
+  return '';
+};
+
+const getFrameStampData = ({
+  shouldSkipChangeCheck,
+  scrollData,
+}: GetFrameStampDataParams): FrameStampData => {
+  const partRenderData = getPartRenderData(scrollData);
+  console.log(partRenderData);
   const fetchedSprites = Object.values(cachedSprites).filter(({ image }) => image.complete).length;
   
   // All those values should affect currentFrameHash =
@@ -87,12 +128,13 @@ const getFrameStampData = ({ shouldSkipChangeCheck }: { shouldSkipChangeCheck: b
     canvasIndex,
     shouldSkipChangeCheck,
     fetchedSprites,
+    partRenderData,
   }
 };
 
 let lastFrameStampData = getFrameStampData({ shouldSkipChangeCheck: false });
 
-const redrawItems = (redrawFrameHash: string, index: number, total: number) => {
+const redrawItems = (redrawFrameHash: string, index: number, total: number, isPartRender: boolean) => {
   /*
     Looks like a reasonable solution https://stackoverflow.com/a/37514084/6743808
 
@@ -109,24 +151,31 @@ const redrawItems = (redrawFrameHash: string, index: number, total: number) => {
     return;
   }
 
-  if (coatOfArmsList[index]) {
+  const list = isPartRender ? coatOfArmsListForPartRender : coatOfArmsList;
+
+  if (list[index]) {
     const renderAtOnce = 45;
 
     for (let i = 0; i <= renderAtOnce; i++) {
-      coatOfArmsList[index + i]?.draw();
+      list[index + i]?.draw();
     } 
 
     updateProcessingMap({ value: index + renderAtOnce, total });
 
-    setTimeout(() => redrawItems(redrawFrameHash, index + renderAtOnce, total), 0);
-    // setTimeout(() => redrawItems(redrawFrameHash, index + renderAtOnce, total), 300);
+    setTimeout(() => redrawItems(redrawFrameHash, index + renderAtOnce, total, isPartRender), 0);
+    // setTimeout(() => redrawItems(redrawFrameHash, index + renderAtOnce, total), 300, isPartRender);
   } else {
     console.log('Frame was rendered', currentFrameHash);
   }
 }
 
-const renderFrame = ({ shouldSkipChangeCheck = false }: { shouldSkipChangeCheck?: boolean } = {}) => {
-  const frameStampData = getFrameStampData({ shouldSkipChangeCheck });
+type RenderFrameParams = {
+  shouldSkipChangeCheck?: boolean,
+  scrollData?: ScrollPosition,
+}
+
+const renderFrame = ({ shouldSkipChangeCheck = false, scrollData }: RenderFrameParams = {}) => {
+  const frameStampData = getFrameStampData({ shouldSkipChangeCheck, scrollData });
 
   if (!shouldSkipChangeCheck) {
     const frameChange = getFirstFrameChangeDetected(lastFrameStampData, frameStampData);
@@ -154,11 +203,26 @@ const renderFrame = ({ shouldSkipChangeCheck = false }: { shouldSkipChangeCheck?
     lastFrameStampData.fetchedSprites,
     lastFrameStampData.shouldSkipChangeCheck ? 'y' : 'n',
     lastFrameStampData.canvasIndex,
+    lastFrameStampData.partRenderData,
     // JSON.stringify(lastFrameStampData.mapOffset),
   ].join('-');
 
-  updateProcessingMap({ value: 0, total: coatOfArmsList.length });
-  redrawItems(currentFrameHash, 0, coatOfArmsList.length);
+
+  const isPartRenderUpdatedOnScroll = frameStampData.partRenderData && scrollData;
+  if (isPartRenderUpdatedOnScroll) {
+    coatOfArmsListForPartRender = coatOfArmsList.filter((item) => item.isRenderedIn({
+      xMin: scrollData.left,
+      xMax: scrollData.left + scrollData.width,
+      yMin: scrollData.top,
+      yMax: scrollData.top + scrollData.height,
+    }));
+
+    updateProcessingMap({ value: 0, total: coatOfArmsListForPartRender.length });
+    redrawItems(currentFrameHash, 0, coatOfArmsListForPartRender.length, isPartRenderUpdatedOnScroll);
+  } else {
+    updateProcessingMap({ value: 0, total: coatOfArmsList.length });
+    redrawItems(currentFrameHash, 0, coatOfArmsList.length, isPartRenderUpdatedOnScroll);
+  }
 }
 
 const initEventListeners = () => {
@@ -185,7 +249,19 @@ const setCanvasAttributes = (canvas: HTMLCanvasElement) => {
   canvas.setAttribute('height', (style.height() * dpi).toString());
 }
 
-export const onResize = () => {
+export const onScroll = ({
+  scrollData,
+}: {
+  scrollData: ScrollPosition,
+}) => {
+  renderFrame({ scrollData });
+}
+
+export const onResize = ({
+  scrollData,
+}: {
+  scrollData: ScrollPosition,
+}) => {
   // Size is optional, but we calc it once here for all CoAs
   const size = canvas.getClientRects()[0];
 
@@ -196,8 +272,8 @@ export const onResize = () => {
   if (canvas) {
     setCanvasAttributes(canvas);
   }
-  
-  renderFrame();
+
+  renderFrame({ scrollData });
 }
 
 export const render = ({ canvas: initCanvas, ctx: initCtx, mapOffset: initMapOffset, coatSize: initCoatSize }: {

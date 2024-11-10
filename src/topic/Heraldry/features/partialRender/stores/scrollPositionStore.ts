@@ -2,39 +2,30 @@
 
 
 import { create } from 'zustand';
-import { devtools, persist } from 'zustand/middleware';
+import { devtools } from 'zustand/middleware';
 
-type ScrollPositionStoreState = {
-  width: number,
-  height: number,
-  left: number,
-  top: number,
-}
+import { ScrollPosition } from '@/topic/Heraldry/types';
 
+type ScrollPositionStoreState = ScrollPosition;
 
-
-export const useFilterModificationStore = create<ScrollPositionStoreState>()(
+export const useScrollPositionStore = create<ScrollPositionStoreState>()(
   devtools(
-    persist(
     () => ({
       width: 0,
       height: 0,
       left: 0,
       top: 0,
     } as ScrollPositionStoreState),
-      { name: 'scrollPositionStore' },
-    )
+    { name: 'scrollPositionStore' },
   )
 )
 
 export const updateScrollPosition = (state: ScrollPositionStoreState) => {
-  const prevState = useFilterModificationStore.getState();
+  const prevState = useScrollPositionStore.getState();
 
   if (JSON.stringify(prevState) !== JSON.stringify(state)) {
-    console.log(state);
-    console.log('prevState', prevState);
-    useFilterModificationStore.setState(state);
+    useScrollPositionStore.setState(state);
   }  
 };
 
-export default useFilterModificationStore;
+export default useScrollPositionStore;
