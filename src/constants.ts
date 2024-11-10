@@ -51,6 +51,17 @@ export const PATHS_DATA: {
   },
   {
     type: 'heraldryCountry',
+    pathNameLink: 'heraldry.no.mapTitle',
+    path: 'norges-heraldikk',
+    title: 'Våpenskjold i Norge | Heraldisk kart',
+    social: `  
+      <meta property="og:title" content="Våpenskjold i Norge | Heraldisk kart" />
+    `,
+    lang: 'no',
+    country: 'no',
+  },
+  {
+    type: 'heraldryCountry',
     pathNameLink: 'heraldry.pl.mapTitle',
     path: 'heraldyka',
     title: 'Herby polskich miast, powiatów i gmin - Heraldyka, mapa | Polska | Mapy heraldyczne',
