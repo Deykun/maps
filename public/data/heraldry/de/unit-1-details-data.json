@@ -94887,6 +94887,10 @@
   "markers": {
    "animals": [
     "griffin"
+   ],
+   "items": [
+    "tree",
+    "flower"
    ]
   }
  },
@@ -105480,6 +105484,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "walls"
    ]
   }
  },
@@ -105613,6 +105620,10 @@
    "animals": [
     "dragon",
     "bear"
+   ],
+   "items": [
+    "cross",
+    "flower"
    ]
   }
  },
@@ -115248,6 +115259,15 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "dragon"
+   ],
+   "items": [
+    "walls",
+    "wheel"
+   ]
   }
  },
  {
@@ -115481,6 +115501,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "walls"
    ]
   }
  },
