@@ -14,7 +14,7 @@ const administrativeDivisions: UserScriptDivisionData[] = Object.values(urls.fyl
 }));
 
 const administrativeDivisionsCurrent = administrativeDivisions.filter((unit) => unit.type.some(v => !v.startsWith('former')));
-const administrativeDivisionsFormer = administrativeDivisions.filter((unit) => !unit.type.some(v => v.startsWith('former')));
+const administrativeDivisionsFormer = administrativeDivisions.filter((unit) => unit.type.every(v => v.startsWith('former')));
 
 fetchData({
   isFromUserScript: true,

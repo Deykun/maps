@@ -1,346 +1,254 @@
 [
     {
-        "title": "Agder",
+        "title": "Aust-Agder",
         "lang": "no",
-        "id": "fylker-0",
+        "id": "formerFylker-0",
         "index": 0,
         "type": [
-            "fylker"
+            "formerFylker"
         ],
         "spriteRoot": "formerFylker",
-        "description": "Agders fylkesvåpen (2020–) Motiv: På rød bunn et gullfarget eiketre.",
+        "description": "^ Forskrift om fylkesvåpen og fylkesflagg, Aust-Agder Lovdata |||| Aust-Agders fylkesvåpen (1958–2019) Motiv: På rød bunn to gull bjelker.[6]",
         "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/2/25/Agder_v%C3%A5pen.svg",
-            "sourceAlt": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Agder_v%C3%A5pen.svg/96px-Agder_v%C3%A5pen.svg.png"
+            "source": "https://upload.wikimedia.org/wikipedia/commons/6/62/Aust-Agder_v%C3%A5pen.svg",
+            "sourceAlt": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Aust-Agder_v%C3%A5pen.svg/107px-Aust-Agder_v%C3%A5pen.svg.png"
         },
         "place": {
-            "name": "Fylkesvåpen i Norge | Nåværende fylker",
+            "name": "Fylkesvåpen i Norge | Tidligere fylker",
             "coordinates": {
-                "lat": 58.14669444,
-                "lon": 7.99561111
+                "lat": 58.56666667,
+                "lon": 8.56666667
             }
         }
     },
     {
-        "title": "Innlandet",
+        "title": "Bergen",
         "lang": "no",
-        "id": "fylker-1",
+        "id": "formerFylker-1",
         "index": 1,
         "type": [
-            "fylker"
+            "formerFylker"
         ],
         "spriteRoot": "formerFylker",
-        "description": "Innlandets fylkesvåpen (2020–) Motiv: På grønn bunn tre hvitfargede fjelltopper og samt Innlandsknuten.",
+        "description": "^ BERGEN KOMMUNES VÅPEN, FLAGG, SEGL OG LOGO. Arkivert 26. september 2020 hos Wayback Machine. Bergen kommune |||| Bergen kommunes segl (1924–1972)[7]Ei sølv borg på gull fjellgrunn mot en rød bakgrunn.",
         "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Innlandet_v%C3%A5pen.svg",
-            "sourceAlt": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Innlandet_v%C3%A5pen.svg/96px-Innlandet_v%C3%A5pen.svg.png"
+            "source": "https://upload.wikimedia.org/wikipedia/commons/7/76/Bergen_komm.svg",
+            "sourceAlt": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Bergen_komm.svg/120px-Bergen_komm.svg.png"
         },
         "place": {
-            "name": "Fylkesvåpen i Norge | Nåværende fylker",
+            "name": "Fylkesvåpen i Norge | Tidligere fylker",
             "coordinates": {
-                "lat": 61.5,
-                "lon": 10.66666667
+                "lat": 60.3925,
+                "lon": 5.32333333
             }
         }
     },
     {
-        "title": "Møre og Romsdal",
+        "title": "Hedmark",
         "lang": "no",
-        "id": "fylker-2",
+        "id": "formerFylker-2",
         "index": 2,
         "type": [
-            "fylker"
+            "formerFylker"
         ],
         "spriteRoot": "formerFylker",
-        "description": "^ Møre og Romsdal Store norske leksikon |||| Møre og Romsdals fylkesvåpen (1978–) Motiv (nynorsk): På blå botn tre gull vikingskip sett frå framsida.[1]",
+        "description": "^ Godkjenning av våpen og flagg, Hedmark fylkeskommune Lovdata |||| Hedmarks fylkesvåpen (1987–2019) Motiv: I grønt tre oppvoksende sølv barkespader.[8]",
         "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/d/db/M%C3%B8re_og_Romsdal_v%C3%A5pen.svg",
-            "sourceAlt": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/M%C3%B8re_og_Romsdal_v%C3%A5pen.svg/101px-M%C3%B8re_og_Romsdal_v%C3%A5pen.svg.png"
+            "source": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Hedmark_v%C3%A5pen.svg",
+            "sourceAlt": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Hedmark_v%C3%A5pen.svg/101px-Hedmark_v%C3%A5pen.svg.png"
         },
         "place": {
-            "name": "Fylkesvåpen i Norge | Nåværende fylker",
+            "name": "Fylkesvåpen i Norge | Tidligere fylker",
             "coordinates": {
-                "lat": 62.7375,
-                "lon": 7.15833333
+                "lat": 60.83333333,
+                "lon": 11.66666667
             }
         }
     },
     {
-        "title": "Nordland",
+        "title": "Hordaland",
         "lang": "no",
-        "id": "fylker-3",
+        "id": "formerFylker-3",
         "index": 3,
         "type": [
-            "fylker"
+            "formerFylker"
         ],
         "spriteRoot": "formerFylker",
-        "description": "^ Forskrift om fylkesvåpen og fylkesflagg, Nordland fylke Lovdata |||| Nordlands fylkesvåpen (1965–) Motiv: På gull bunn en svart båt med mast og råseil.[2]",
+        "description": "^ Forskrift om fylkesvåpen og fylkesflagg, Hordaland fylke Lovdata |||| Hordalands fylkesvåpen (1961–2019) Motiv (nynorsk): På raud botn to krosslagde gulløkser med gullkrone over.[9]",
         "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Nordland_v%C3%A5pen.svg",
-            "sourceAlt": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Nordland_v%C3%A5pen.svg/97px-Nordland_v%C3%A5pen.svg.png"
+            "source": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Hordaland_v%C3%A5pen.svg",
+            "sourceAlt": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Hordaland_v%C3%A5pen.svg/105px-Hordaland_v%C3%A5pen.svg.png"
         },
         "place": {
-            "name": "Fylkesvåpen i Norge | Nåværende fylker",
+            "name": "Fylkesvåpen i Norge | Tidligere fylker",
             "coordinates": {
-                "lat": 66.83333333,
-                "lon": 14.66666667
+                "lat": 60.25,
+                "lon": 6
             }
         }
     },
     {
-        "title": "Oslo",
+        "title": "Nord-Trøndelag",
         "lang": "no",
-        "id": "fylker-4",
+        "id": "formerFylker-4",
         "index": 4,
         "type": [
-            "fylker"
+            "formerFylker"
         ],
         "spriteRoot": "formerFylker",
-        "description": "^ Oslo byvåpen - opprinnelsen til og utformingen av Oslos byvåpen Aktiv i Oslo |||| Oslo kommunes segl (1924–) Motiv: St. Hallvard med helgenrelikvier; tre piler og en møllestein.[3]",
+        "description": "^ Forskrift om fylkesvåpen og fylkesflagg, Nord-Trøndelag Lovdata |||| Nord-Trøndelags fylkesvåpen (1957–2017) Motiv: På sølv bunn et utbøyd gull kors.[10]Våpenet er videreført i bruk ved opprettelsen av Trøndelag fylke i 2018.",
         "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/d/da/Oslo_komm.svg",
-            "sourceAlt": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Oslo_komm.svg/100px-Oslo_komm.svg.png"
+            "source": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Nord-Tr%C3%B8ndelag_v%C3%A5pen.svg",
+            "sourceAlt": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Nord-Tr%C3%B8ndelag_v%C3%A5pen.svg/101px-Nord-Tr%C3%B8ndelag_v%C3%A5pen.svg.png"
         },
         "place": {
-            "name": "Fylkesvåpen i Norge | Nåværende fylker",
+            "name": "Fylkesvåpen i Norge | Tidligere fylker",
             "coordinates": {
-                "lat": 59.91333333,
-                "lon": 10.73888889
+                "lat": 64.5,
+                "lon": 11.66666944
             }
         }
     },
     {
-        "title": "Rogaland",
+        "title": "Oppland",
         "lang": "no",
-        "id": "fylker-5",
+        "id": "formerFylker-5",
         "index": 5,
         "type": [
-            "fylker"
+            "formerFylker"
         ],
         "spriteRoot": "formerFylker",
-        "description": "^ Forskrift om godkjennelse av fylkesvåpen og fylkesflagg, Rogaland Lovdata |||| Rogalands fylkesvåpen (1974–) Motiv: På blå bunn et sølv svevende utskrådd kors med spiss fot.[4]",
+        "description": "^ Godkjenning av våpen og flagg, Oppland fylkeskommune Lovdata |||| Opplands fylkesvåpen (1989–2019) Motiv: I grønt en sølv mogop.[11]",
         "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Rogaland_v%C3%A5pen.svg",
-            "sourceAlt": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Rogaland_v%C3%A5pen.svg/101px-Rogaland_v%C3%A5pen.svg.png"
+            "source": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Oppland_v%C3%A5pen.svg",
+            "sourceAlt": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Oppland_v%C3%A5pen.svg/101px-Oppland_v%C3%A5pen.svg.png"
         },
         "place": {
-            "name": "Fylkesvåpen i Norge | Nåværende fylker",
+            "name": "Fylkesvåpen i Norge | Tidligere fylker",
             "coordinates": {
-                "lat": 58.97,
-                "lon": 5.71
+                "lat": 61.41,
+                "lon": 9.34
             }
         }
     },
     {
-        "title": "Trøndelag",
+        "title": "Sogn og Fjordane",
         "lang": "no",
-        "id": "fylker-6",
+        "id": "formerFylker-6",
         "index": 6,
         "type": [
-            "fylker"
+            "formerFylker"
         ],
         "spriteRoot": "formerFylker",
-        "description": "^ Forskrift om fylkesvåpen og fylkesflagg, Nord-Trøndelag Lovdata |||| Trøndelags fylkesvåpen (1957–) Motiv: På sølv bunn et utbøyd gull kors.[5] Fylkesvåpen for tidligere Nord-Trøndelag fylke, videreført i bruk ved opprettelsen av Trøndelag fylke i 2018. ",
+        "description": "^ Godkjenning av våpen og flagg, Sogn og Fjordane fylkeskommune Lovdata |||| Sogn og Fjordanes fylkesvåpen (1983–2019) Motiv (nynorsk): På sølv grunn tre blå spissar mot venstre.[12]",
         "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Tr%C3%B8ndelag_v%C3%A5pen.svg",
-            "sourceAlt": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Tr%C3%B8ndelag_v%C3%A5pen.svg/100px-Tr%C3%B8ndelag_v%C3%A5pen.svg.png"
+            "source": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Sogn_og_Fjordane_v%C3%A5pen.svg",
+            "sourceAlt": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Sogn_og_Fjordane_v%C3%A5pen.svg/101px-Sogn_og_Fjordane_v%C3%A5pen.svg.png"
         },
         "place": {
-            "name": "Fylkesvåpen i Norge | Nåværende fylker",
+            "name": "Fylkesvåpen i Norge | Tidligere fylker",
             "coordinates": {
-                "lat": 63.42694444,
-                "lon": 10.39305556
+                "lat": 61.33333333,
+                "lon": 5.83333333
             }
         }
     },
     {
-        "title": "Finnmark",
+        "title": "Sør-Trøndelag",
         "lang": "no",
-        "id": "fylker-7",
+        "id": "formerFylker-7",
         "index": 7,
         "type": [
-            "fylker"
+            "formerFylker"
         ],
         "spriteRoot": "formerFylker",
-        "description": "Finnmarks fylkesvåpen (1967–) Motiv: PÅ svart bunn ei borg i gull.",
+        "description": "^ Godkjenning av våpen og flagg, Sør-Trøndelag fylkeskommune Lovdata |||| Sør-Trøndelags fylkesvåpen (1983–2017) Motiv: I gull to korslagte røde økser belagt med en rød korsstav.[13]",
         "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/4/40/Finnmark_v%C3%A5pen.svg",
-            "sourceAlt": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Finnmark_v%C3%A5pen.svg/101px-Finnmark_v%C3%A5pen.svg.png"
+            "source": "https://upload.wikimedia.org/wikipedia/commons/6/6f/S%C3%B8r-Tr%C3%B8ndelag_v%C3%A5pen.svg",
+            "sourceAlt": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/S%C3%B8r-Tr%C3%B8ndelag_v%C3%A5pen.svg/101px-S%C3%B8r-Tr%C3%B8ndelag_v%C3%A5pen.svg.png"
         },
         "place": {
-            "name": "Fylkesvåpen i Norge | Nåværende fylker",
+            "name": "Fylkesvåpen i Norge | Tidligere fylker",
             "coordinates": {
-                "lat": 70.11907,
-                "lon": 27.58779
+                "lat": 63.39,
+                "lon": 10.26
             }
         }
     },
     {
-        "title": "Troms",
+        "title": "Vest-Agder",
         "lang": "no",
-        "id": "fylker-8",
+        "id": "formerFylker-8",
         "index": 8,
         "type": [
-            "fylker"
+            "formerFylker"
         ],
         "spriteRoot": "formerFylker",
-        "description": "Troms’ fylkesvåpen (1960–) Motiv: På rød bunn ei gull griff .",
+        "description": "^ Forskrift om fylkesvåpen og fylkesflagg, Vest-Agder Lovdata |||| Vest-Agders fylkesvåpen (1958–2019) Motiv (nynorsk): På grøn botn ei gull eik.[14]",
         "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/d/da/Troms_v%C3%A5pen.svg",
-            "sourceAlt": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Troms_v%C3%A5pen.svg/101px-Troms_v%C3%A5pen.svg.png"
+            "source": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Vest-Agder_v%C3%A5pen.svg",
+            "sourceAlt": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Vest-Agder_v%C3%A5pen.svg/105px-Vest-Agder_v%C3%A5pen.svg.png"
         },
         "place": {
-            "name": "Fylkesvåpen i Norge | Nåværende fylker",
+            "name": "Fylkesvåpen i Norge | Tidligere fylker",
             "coordinates": {
-                "lat": 69.15645,
-                "lon": 19.40185556
+                "lat": 58.58305556,
+                "lon": 7.58305556
             }
         }
     },
     {
-        "title": "Buskerud",
+        "title": "Vestfold og Telemark",
         "lang": "no",
-        "id": "fylker-9",
+        "id": "formerFylker-9",
         "index": 9,
         "type": [
-            "fylker"
+            "formerFylker"
         ],
         "spriteRoot": "formerFylker",
-        "description": "Buskeruds fylkesvåpen (1966–) Motiv: På sølv bunn en opprett blå bjørn.",
+        "description": "Vestfold og Telemarks fylkesvåpen (2020–2024) Motiv: På rød bunn ei gullfarget vikingskip og akantus .",
         "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Buskerud_v%C3%A5pen.svg",
-            "sourceAlt": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Buskerud_v%C3%A5pen.svg/106px-Buskerud_v%C3%A5pen.svg.png"
+            "source": "https://upload.wikimedia.org/wikipedia/commons/0/04/Vestfold_og_Telemark_v%C3%A5pen.svg",
+            "sourceAlt": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Vestfold_og_Telemark_v%C3%A5pen.svg/105px-Vestfold_og_Telemark_v%C3%A5pen.svg.png"
         },
         "place": {
-            "name": "Fylkesvåpen i Norge | Nåværende fylker",
+            "name": "Fylkesvåpen i Norge | Tidligere fylker",
             "coordinates": {
-                "lat": 60.5,
-                "lon": 9.5
+                "lat": 59.5,
+                "lon": 9
             }
         }
     },
     {
-        "title": "Østfold",
+        "title": "Viken (fylke)",
         "lang": "no",
-        "id": "fylker-10",
+        "id": "formerFylker-10",
         "index": 10,
         "type": [
-            "fylker"
+            "formerFylker"
         ],
         "spriteRoot": "formerFylker",
-        "description": "Østfolds fylkesvåpen (1958–) Motiv: På rød bunn en gull tredelt solstråle skrått oppad.",
+        "description": "Vikens fylkesvåpen (2020–2024) Motiv: På blå bunn ei sølvfarget fjell som speiler seg i vannet .",
         "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
         "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/a/a2/%C3%98stfold_v%C3%A5pen.svg",
-            "sourceAlt": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/%C3%98stfold_v%C3%A5pen.svg/104px-%C3%98stfold_v%C3%A5pen.svg.png"
+            "source": "https://upload.wikimedia.org/wikipedia/commons/0/09/Viken_v%C3%A5pen.svg",
+            "sourceAlt": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Viken_v%C3%A5pen.svg/98px-Viken_v%C3%A5pen.svg.png"
         },
         "place": {
-            "name": "Fylkesvåpen i Norge | Nåværende fylker",
-            "coordinates": {
-                "lat": 59.33333333,
-                "lon": 11.33333333
-            }
-        }
-    },
-    {
-        "title": "Akershus",
-        "lang": "no",
-        "id": "fylker-11",
-        "index": 11,
-        "type": [
-            "fylker"
-        ],
-        "spriteRoot": "formerFylker",
-        "description": "Akershus’ fylkesvåpen (1987–) Motiv: I blått en sølv trappegavl.",
-        "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Akershus_v%C3%A5pen.svg",
-            "sourceAlt": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Akershus_v%C3%A5pen.svg/101px-Akershus_v%C3%A5pen.svg.png"
-        },
-        "place": {
-            "name": "Fylkesvåpen i Norge | Nåværende fylker",
+            "name": "Fylkesvåpen i Norge | Tidligere fylker",
             "coordinates": {
                 "lat": 60,
-                "lon": 11
-            }
-        }
-    },
-    {
-        "title": "Vestfold",
-        "lang": "no",
-        "id": "fylker-12",
-        "index": 12,
-        "type": [
-            "fylker"
-        ],
-        "spriteRoot": "formerFylker",
-        "description": "Vestfolds fylkesvåpen (2024–) Motiv: På rød bunn et gull kongekrone.",
-        "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Vestfold_v%C3%A5pen_2024.svg",
-            "sourceAlt": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Vestfold_v%C3%A5pen_2024.svg/105px-Vestfold_v%C3%A5pen_2024.svg.png"
-        },
-        "place": {
-            "name": "Fylkesvåpen i Norge | Nåværende fylker",
-            "coordinates": {
-                "lat": 59.31,
-                "lon": 10.22
-            }
-        }
-    },
-    {
-        "title": "Telemark",
-        "lang": "no",
-        "id": "fylker-13",
-        "index": 13,
-        "type": [
-            "fylker"
-        ],
-        "spriteRoot": "formerFylker",
-        "description": "Telemarks fylkesvåpen (2024–) Motiv: På gull bunn et oppvoksende svart bondestridsøks.",
-        "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Telemark_v%C3%A5pen_2024.svg",
-            "sourceAlt": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Telemark_v%C3%A5pen_2024.svg/105px-Telemark_v%C3%A5pen_2024.svg.png"
-        },
-        "place": {
-            "name": "Fylkesvåpen i Norge | Nåværende fylker",
-            "coordinates": {
-                "lat": 59.33333333,
-                "lon": 8.5
-            }
-        }
-    },
-    {
-        "title": "Vestland",
-        "lang": "no",
-        "id": "fylker-14",
-        "index": 14,
-        "type": [
-            "fylker"
-        ],
-        "spriteRoot": "formerFylker",
-        "description": "Vestlands fylkesvåpen (2020–) Motiv: På dypblå bunn to sølvfargede fjell.",
-        "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
-        "image": {
-            "source": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Vestland_v%C3%A5pen.svg",
-            "sourceAlt": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Vestland_v%C3%A5pen.svg/98px-Vestland_v%C3%A5pen.svg.png"
-        },
-        "place": {
-            "name": "Fylkesvåpen i Norge | Nåværende fylker",
-            "coordinates": {
-                "lat": 60.925,
-                "lon": 6.445
+                "lon": 10
             }
         }
     }

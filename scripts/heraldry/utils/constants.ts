@@ -193,4 +193,5 @@ export const locationTitleByImages = {
   'https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Oslo_komm.svg/100px-Oslo_komm.svg.png': 'Oslo',
   'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Akershus_v%C3%A5pen.svg/101px-Akershus_v%C3%A5pen.svg.png': 'Akershus',
   'https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Troms_v%C3%A5pen.svg/101px-Troms_v%C3%A5pen.svg.png': 'Troms',
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Bergen_komm.svg/120px-Bergen_komm.svg.png': 'Bergen',
 } as const;
