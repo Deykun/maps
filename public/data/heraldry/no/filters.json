@@ -67,7 +67,7 @@
     },
     {
       "name": "fish",
-      "phrases": ["torsk", "terner", "tørrfisker"],
+      "phrases": ["torsk", "tørrfisker"],
       "include": [
         {
           "imageHash": "54867a04",
@@ -80,6 +80,10 @@
         {
           "imageHash": "55215095",
           "note": "Austevoll"
+        },
+        {
+          "imageHash": "58d0c2fc",
+          "note": "Inderøy"
         }
       ],
       "exclude": []
@@ -194,7 +198,8 @@
         "orrhane",
         "fuglearten",
         "makrellterna",
-        "ryper"
+        "ryper",
+        "terner"
       ],
       "include": [],
       "exclude": []
@@ -297,14 +302,99 @@
         {
           "imageHash": "5816aecf",
           "note": "Grimstad"
+        },
+        {
+          "imageHash": "136c2fcb",
+          "note": "Stavanger"
+        },
+        {
+          "imageHash": "6c3a1284",
+          "note": "Øygarden"
+        },
+        {
+          "imageHash": "27fd60f4",
+          "note": "Tolga"
+        },
+        {
+          "imageHash": "4bbbc020",
+          "note": "Kvitsøy"
         }
       ],
       "exclude": []
     },
     {
+      "name": "rose",
+      "phrases": ["rose", "roser", "rosett"],
+      "exclude": [
+        {
+          "imageHash": "6915b9cc",
+          "note": "Bindal"
+        },
+        {
+          "imageHash": "468d4465",
+          "note": "Tingvoll"
+        }
+      ],
+      "include": []
+    },
+    {
+      "name": "flower",
+      "phrases": ["blåklokke"],
+      "exclude": [],
+      "include": [
+        {
+          "imageHash": "3747043d",
+          "note": "Nannestad"
+        },
+        {
+          "imageHash": "742e40f8",
+          "note": "Lunner"
+        },
+        {
+          "imageHash": "338ceb59",
+          "note": "Oppland"
+        },
+        {
+          "imageHash": "37c430db",
+          "note": "Snåsa"
+        },
+        {
+          "imageHash": "3ceb90cc",
+          "note": "Meløy"
+        },
+        {
+          "imageHash": "12ea5ceb",
+          "note": "Storfjord"
+        },
+        {
+          "imageHash": "fad7a51",
+          "note": "Selbu"
+        },
+        {
+          "imageHash": "52dce487",
+          "note": "Nord-Aurdal"
+        }
+      ]
+    },
+    {
+      "name": "bell",
+      "phrases": ["bjeller", "klokke"],
+      "exclude": [],
+      "include": []
+    },
+    {
       "name": "sword",
       "phrases": ["sverd"],
-      "include": [],
+      "include": [
+        {
+          "imageHash": "1869e2b2",
+          "note": "Vik"
+        },
+        {
+          "imageHash": "f462e8a",
+          "note": "Gjerstad"
+        }
+      ],
       "exclude": []
     },
     {
@@ -341,7 +431,329 @@
           "note": "Asker"
         }
       ],
+      "exclude": [
+        {
+          "imageHash": "74f495e1",
+          "note": "Vega"
+        },
+        {
+          "imageHash": "1f0559a1",
+          "note": "Heim"
+        }
+      ]
+    },
+    {
+      "name": "pickaxe",
+      "phrases": ["hakke", "hakker"],
+      "include": [],
       "exclude": []
+    },
+    {
+      "name": "hammer",
+      "phrases": ["hammer", "klubbe"],
+      "exclude": [],
+      "include": []
+    },
+    {
+      "name": "tree",
+      "phrases": [
+        "asketre",
+        "bjørkekvist",
+        "blad",
+        "eik",
+        "eikeblad",
+        "eikekvist",
+        "eikeløv",
+        "eiketre",
+        "furu",
+        "furukongler",
+        "grankongle",
+        "lindekvist",
+        "lindetrær",
+        "løvtre",
+        "traer",
+        "tre",
+        "treet"
+      ],
+      "exclude": [
+        {
+          "imageHash": "3f2080ed",
+          "note": "Tana"
+        },
+        {
+          "imageHash": "e040374",
+          "note": "Gamvik"
+        },
+        {
+          "imageHash": "503f03b7",
+          "note": "Porsanger"
+        },
+        {
+          "imageHash": "96d556c",
+          "note": "Karasjok"
+        },
+        {
+          "imageHash": "12ea5ceb",
+          "note": "Storfjord"
+        },
+        {
+          "imageHash": "305f1f8a",
+          "note": "Sortland"
+        },
+        {
+          "imageHash": "4bbbf9b3",
+          "note": "Steigen"
+        },
+        {
+          "imageHash": "5d2ada3",
+          "note": "Røst"
+        },
+        {
+          "imageHash": "2220c7d7",
+          "note": "Træna"
+        },
+        {
+          "imageHash": "5c118c10",
+          "note": "Herøy (Nordland)"
+        },
+        {
+          "imageHash": "2a8a8b7c",
+          "note": "Vevelstad"
+        },
+        {
+          "imageHash": "78713bca",
+          "note": "Lierne"
+        },
+        {
+          "imageHash": "3c16e9ec",
+          "note": "Flatanger"
+        },
+        {
+          "imageHash": "71a815bf",
+          "note": "Åfjord"
+        },
+        {
+          "imageHash": "46040cb9",
+          "note": "Frøya (kommune)"
+        },
+        {
+          "imageHash": "fad7a51",
+          "note": "Selbu"
+        },
+        {
+          "imageHash": "12d463d1",
+          "note": "Tydal"
+        },
+        {
+          "imageHash": "75a77521",
+          "note": "Midtre Gauldal"
+        },
+        {
+          "imageHash": "68096320",
+          "note": "Oppdal"
+        },
+        {
+          "imageHash": "402b4c8e",
+          "note": "Os (Innlandet)"
+        },
+        {
+          "imageHash": "1d933a1c",
+          "note": "Averøy"
+        },
+        {
+          "imageHash": "19c292e8",
+          "note": "Rauma"
+        },
+        {
+          "imageHash": "16456a32",
+          "note": "Møre og Romsdal"
+        },
+        {
+          "imageHash": "4c1a95c5",
+          "note": "Haram"
+        },
+        {
+          "imageHash": "25f27077",
+          "note": "Hareid"
+        },
+        {
+          "imageHash": "14175e4b",
+          "note": "Ørsta"
+        },
+        {
+          "imageHash": "386a2802",
+          "note": "Lom"
+        },
+        {
+          "imageHash": "2b66370",
+          "note": "Innlandet"
+        },
+        {
+          "imageHash": "5d444115",
+          "note": "Åmot"
+        },
+        {
+          "imageHash": "23cdb2c7",
+          "note": "Hedmark"
+        },
+        {
+          "imageHash": "709de9e6",
+          "note": "Åsnes"
+        },
+        {
+          "imageHash": "20e3b767",
+          "note": "Sør-Odal"
+        },
+        {
+          "imageHash": "3e681fc2",
+          "note": "Jevnaker"
+        },
+        {
+          "imageHash": "52dce487",
+          "note": "Nord-Aurdal"
+        },
+        {
+          "imageHash": "38fe1ed1",
+          "note": "Vang"
+        },
+        {
+          "imageHash": "1869e2b2",
+          "note": "Vik"
+        },
+        {
+          "imageHash": "352b0801",
+          "note": "Høyanger"
+        },
+        {
+          "imageHash": "484d5b97",
+          "note": "Sogn og Fjordane"
+        },
+        {
+          "imageHash": "27f842ef",
+          "note": "Hyllestad"
+        },
+        {
+          "imageHash": "39986aa9",
+          "note": "Modalen"
+        },
+        {
+          "imageHash": "5f88c02d",
+          "note": "Vaksdal"
+        },
+        {
+          "imageHash": "2cf302f3",
+          "note": "Osterøy"
+        },
+        {
+          "imageHash": "242d4147",
+          "note": "Masfjorden"
+        },
+        {
+          "imageHash": "3d4cd35d",
+          "note": "Austrheim"
+        },
+        {
+          "imageHash": "6a28a357",
+          "note": "Hol (Buskerud)"
+        },
+        {
+          "imageHash": "35d8da2a",
+          "note": "Ål"
+        },
+        {
+          "imageHash": "17578e74",
+          "note": "Gol"
+        },
+        {
+          "imageHash": "650b056e",
+          "note": "Modum"
+        },
+        {
+          "imageHash": "3e1e0cef",
+          "note": "Lillestrøm"
+        },
+        {
+          "imageHash": "4009b2ad",
+          "note": "Rælingen"
+        },
+        {
+          "imageHash": "4893dbd3",
+          "note": "Oslo"
+        },
+        {
+          "imageHash": "1c52412b",
+          "note": "Asker"
+        },
+        {
+          "imageHash": "55c8a4c",
+          "note": "Ås (kommune)"
+        },
+        {
+          "imageHash": "76a47855",
+          "note": "Vestby"
+        },
+        {
+          "imageHash": "255da115",
+          "note": "Siljan"
+        },
+        {
+          "imageHash": "2fb6fe30",
+          "note": "Rollag"
+        },
+        {
+          "imageHash": "634813",
+          "note": "Midt-Telemark (kommune)"
+        },
+        {
+          "imageHash": "f462e8a",
+          "note": "Gjerstad"
+        },
+        {
+          "imageHash": "174d9247",
+          "note": "Nissedal"
+        },
+        {
+          "imageHash": "46dfeb02",
+          "note": "Arendal"
+        },
+        {
+          "imageHash": "5816aecf",
+          "note": "Grimstad"
+        },
+        {
+          "imageHash": "1abb11cb",
+          "note": "Lillesand"
+        },
+        {
+          "imageHash": "1654bf04",
+          "note": "Sirdal"
+        },
+        {
+          "imageHash": "5d045a9d",
+          "note": "Sokndal"
+        },
+        {
+          "imageHash": "4356a2d0",
+          "note": "Strand (Rogaland)"
+        },
+        {
+          "imageHash": "4bbbc020",
+          "note": "Kvitsøy"
+        },
+        {
+          "imageHash": "14fdc253",
+          "note": "Haugesund"
+        },
+        {
+          "imageHash": "1cfe8648",
+          "note": "Ullensvang"
+        },
+        {
+          "imageHash": "686349ab",
+          "note": "Kvænangen"
+        }
+      ],
+      "include": []
     },
     {
       "name": "crown",
@@ -394,6 +806,10 @@
         {
           "imageHash": "5816aecf",
           "note": "Grimstad"
+        },
+        {
+          "imageHash": "136c2fcb",
+          "note": "Stavanger"
         }
       ],
       "exclude": [
