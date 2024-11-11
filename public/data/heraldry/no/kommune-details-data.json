@@ -3419,7 +3419,7 @@
    }
   },
   "markers": {
-   "animals": [
+   "items": [
     "axeSaw"
    ]
   }
@@ -5958,6 +5958,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "arrow"
+   ]
   }
  },
  {
@@ -6211,6 +6216,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "arrow"
+   ]
   }
  },
  {
@@ -8765,7 +8775,7 @@
    }
   },
   "markers": {
-   "animals": [
+   "items": [
     "axeSaw"
    ]
   }
@@ -8954,7 +8964,7 @@
    }
   },
   "markers": {
-   "animals": [
+   "items": [
     "axeSaw"
    ]
   }
@@ -9186,7 +9196,8 @@
   },
   "markers": {
    "items": [
-    "walls"
+    "walls",
+    "lighthouse"
    ]
   }
  },
@@ -10285,7 +10296,9 @@
   },
   "markers": {
    "items": [
-    "cross"
+    "cross",
+    "lighthouse",
+    "walls"
    ]
   }
  },
@@ -11188,7 +11201,8 @@
   },
   "markers": {
    "items": [
-    "walls"
+    "walls",
+    "lighthouse"
    ]
   }
  },
@@ -16080,7 +16094,7 @@
    }
   },
   "markers": {
-   "animals": [
+   "items": [
     "axeSaw"
    ]
   }
@@ -16332,6 +16346,14 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ],
+   "items": [
+    "arrow"
+   ]
   }
  },
  {
@@ -16377,7 +16399,7 @@
    }
   },
   "markers": {
-   "animals": [
+   "items": [
     "axeSaw"
    ]
   }

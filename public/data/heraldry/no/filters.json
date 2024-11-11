@@ -93,21 +93,6 @@
       "exclude": []
     },
     {
-      "name": "axeSaw",
-      "phrases": [
-        "bondestridsøks",
-        "gulløkser",
-        "kjøreøkser",
-        "øks",
-        "øksehoder",
-        "økser",
-        "sag",
-        "tømmersag"
-      ],
-      "exclude": [],
-      "include": []
-    },
-    {
       "name": "bullBison",
       "phrases": ["moskus"],
       "include": [],
@@ -220,7 +205,12 @@
         "ryper",
         "terner"
       ],
-      "include": [],
+      "include": [
+        {
+          "imageHash": "23a1797f",
+          "note": "Våler (Innlandet)"
+        }
+      ],
       "exclude": []
     },
     {
@@ -591,10 +581,42 @@
       ]
     },
     {
+      "name": "arrow",
+      "phrases": ["pil", "piler", "piloddar", "pilspisser"],
+      "exclude": [
+        {
+          "imageHash": "508105a0",
+          "note": "Skiptvet"
+        }
+      ],
+      "include": []
+    },
+    {
       "name": "saint",
       "phrases": ["skytshelgen", "skytshelgenen", "st."],
       "include": [],
       "exclude": []
+    },
+    {
+      "name": "lighthouse",
+      "phrases": ["fyrtårn"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "axeSaw",
+      "phrases": [
+        "bondestridsøks",
+        "gulløkser",
+        "kjøreøkser",
+        "øks",
+        "øksehoder",
+        "økser",
+        "sag",
+        "tømmersag"
+      ],
+      "exclude": [],
+      "include": []
     },
     {
       "name": "tree",
