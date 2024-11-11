@@ -161,7 +161,7 @@ const mapOffset: MapOffset = {
    maxLatTop: 55.22,
    minLonLeft: 5.8,
    maxLonLeft: 15.1,
-   yModfier: (percentageY: number) => {
+   yModifier: (percentageY: number) => {
     if (percentageY > 0.15) {
       return percentageY;
     }

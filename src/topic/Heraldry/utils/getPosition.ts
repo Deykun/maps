@@ -20,11 +20,18 @@ export const getXYfromLatLon = ({
   const widthLon = Math.abs(mapOffset.minLonLeft - mapOffset.maxLonLeft);
   const heightLat = Math.abs(mapOffset.minLatTop - mapOffset.maxLatTop);
 
-  const percentageX = (cordinates.lonX - mapOffset.minLonLeft) / widthLon;
-  let percentageY = (mapOffset.maxLatTop - cordinates.latY) / heightLat;
+  const percentageXRaw = (cordinates.lonX - mapOffset.minLonLeft) / widthLon;
+  const percentageYRaw = (mapOffset.maxLatTop - cordinates.latY) / heightLat;
 
-  if (mapOffset.yModfier) {
-    percentageY = mapOffset.yModfier(percentageY)
+  let percentageX = percentageXRaw;
+  let percentageY = percentageYRaw;
+
+  if (mapOffset.yModifier) {
+    percentageY = mapOffset.yModifier(percentageY, { percentageX: percentageXRaw })
+  }
+
+  if (mapOffset.xModifier) {
+    percentageX = mapOffset.xModifier(percentageX, { percentageY: percentageYRaw })
   }
 
   const scaledMapPadding = mapPadding * pixelRatio;

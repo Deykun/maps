@@ -1,0 +1,556 @@
+[
+ {
+  "id": "formerFylker-0",
+  "colors": {
+   "hexPalette": [
+    "#ffe101",
+    "#e20e01"
+   ],
+   "byNames": {
+    "gold": [
+     {
+      "distanceToThreshold": 19.98333796039273,
+      "matcherColor": "#ffff00"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": 47.781992612825974,
+      "matcherColor": "#f00"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -145.00222221124838,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -172.38115241989829,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -155.93901683140885,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -105.00303027520434,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "formerFylker-1",
+  "colors": {
+   "hexPalette": [
+    "#de2538",
+    "#7f7d7e",
+    "#141213",
+    "#ffffff"
+   ],
+   "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 5.206952194739387,
+      "matcherColor": "#f00"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "blue": [
+     {
+      "distanceToThreshold": -138.04039991880444,
+      "matcherColor": "#2e3192"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -150.61587645041215,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -59.498953970317245,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
+  }
+ },
+ {
+  "id": "formerFylker-2",
+  "colors": {
+   "hexPalette": [
+    "#32ac61",
+    "#fffffd"
+   ],
+   "byNames": {
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -204.63661043513008,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -26.36258740741502,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -0.6712452484700506,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -75.18135966175217,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "formerFylker-3",
+  "colors": {
+   "hexPalette": [
+    "#fbd405",
+    "#e51635"
+   ],
+   "byNames": {
+    "gold": [
+     {
+      "distanceToThreshold": 7.530961510620379,
+      "matcherColor": "#e6c633"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": 17,
+      "matcherColor": "#f00"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -132.09667607013552,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -147.04347369574342,
+      "matcherColor": "#2e3192"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -161.33841727837788,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -76.12861565446113,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "axeSaw"
+   ]
+  }
+ },
+ {
+  "id": "formerFylker-4",
+  "colors": {
+   "hexPalette": [
+    "#ffe101",
+    "#716a26",
+    "#ffffff"
+   ],
+   "byNames": {
+    "gold": [
+     {
+      "distanceToThreshold": 19.98333796039273,
+      "matcherColor": "#ffff00"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -101.22913673027304,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -66.72410978184064,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -29.32309080810805,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -36.26006440887103,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "cross"
+   ]
+  }
+ },
+ {
+  "id": "formerFylker-5",
+  "colors": {
+   "hexPalette": [
+    "#32ac61",
+    "#ffffff"
+   ],
+   "byNames": {
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -204.63661043513008,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -26.36258740741502,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -0.6712452484700506,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -75.18135966175217,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "flower"
+   ]
+  }
+ },
+ {
+  "id": "formerFylker-6",
+  "colors": {
+   "hexPalette": [
+    "#0185ca",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 29.210391363318696,
+      "matcherColor": "#1d7dc0"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -268.04194335697116,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -68.03905654135383,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -151.00947846009194,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "formerFylker-7",
+  "colors": {
+   "hexPalette": [
+    "#e20e01",
+    "#ffe101"
+   ],
+   "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 47.781992612825974,
+      "matcherColor": "#f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": 19.98333796039273,
+      "matcherColor": "#ffff00"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "blue": [
+     {
+      "distanceToThreshold": -188.62799556263678,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -166.7605888760968,
+      "matcherColor": "#0f0"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -105.00303027520434,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": -145.00222221124838,
+      "matcherColor": "#f00"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "axeSaw"
+   ]
+  }
+ },
+ {
+  "id": "formerFylker-8",
+  "colors": {
+   "hexPalette": [
+    "#ffe700",
+    "#198908"
+   ],
+   "byNames": {
+    "gold": [
+     {
+      "distanceToThreshold": 26,
+      "matcherColor": "#ffff00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": 53.054093596177665,
+      "matcherColor": "#006f00"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -187.83017007051313,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -82.70949512909084,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -166.12692166189794,
+      "matcherColor": "#0f0"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -119.11169699380329,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
+  }
+ },
+ {
+  "id": "formerFylker-9",
+  "colors": {
+   "hexPalette": [
+    "#ffce00",
+    "#e50017"
+   ],
+   "byNames": {
+    "gold": [
+     {
+      "distanceToThreshold": 2.641478401200054,
+      "matcherColor": "#e6c633"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": 45.286890084580435,
+      "matcherColor": "#f00"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -126,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -165.87385860253949,
+      "matcherColor": "#2e3192"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -165.52103631599493,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -106.43016553497748,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "formerFylker-10",
+  "colors": {
+   "hexPalette": [
+    "#0185ca",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 29.210391363318696,
+      "matcherColor": "#1d7dc0"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -268.04194335697116,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -68.03905654135383,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -151.00947846009194,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ }
+]

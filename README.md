@@ -5,7 +5,7 @@ These maps were created by parsing data from Wikipedia, and sometimes cities are
 ## Heraldic maps of countries
 Below is a list of country maps with the coats of arms of provinces, states, or municipalities (depending on what was available) marked on them. The data is parsed from Wikipedia, often with text descriptions, which makes filtering coats of arms containing elements like an eagle quite easy.
 
-### Coats of arms in Germany (🧪 beta) 🇩🇪
+### Coats of arms in Germany 🇩🇪 (🧪 beta)
 https://deykun.github.io/maps/deutsche-heraldik
 
 ### Coats of arms in Estonia 🇪🇪
@@ -13,6 +13,9 @@ https://deykun.github.io/maps/eesti-heraldika
 
 ### Coats of arms in Finland 🇫🇮
 https://deykun.github.io/maps/suomalainen-heraldikka
+
+### Coats of arms in Norway 🇳🇴
+https://deykun.github.io/maps/norges-heraldikk
 
 ### Coats of arms in Poland 🇵🇱
 https://deykun.github.io/maps/heraldyka

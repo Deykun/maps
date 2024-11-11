@@ -9,6 +9,7 @@ import Home from '@/pages/Home';
 import HeraldryDE from '@/pages/deutsche-heraldik/HeraldryDE';
 import HeraldryET from '@/pages/eesti-heraldika/HeraldryET';
 import HeraldryPL from '@/pages/heraldyka/HeraldryPL';
+import HeraldryNO from '@/pages/norges-heraldikk/HeraldryNO';
 import HeraldryFI from '@/pages/suomalainen-heraldikka/HeraldryFI';
 
 import { track } from '@/topic/Heraldry/features/tracking/stores/trackingStore';
@@ -52,6 +53,7 @@ const Routes = () => {
         <Route path="/maps/deutsche-heraldik" component={HeraldryDE} />
         <Route path="/maps/eesti-heraldika" component={HeraldryET} />
         <Route path="/maps/heraldyka" component={HeraldryPL} />
+        <Route path="/maps/norges-heraldikk" component={HeraldryNO} />
         <Route path="/maps/suomalainen-heraldikka" component={HeraldryFI} />
       </Switch>
     </>

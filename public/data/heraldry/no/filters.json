@@ -1,0 +1,992 @@
+{
+  "animals": [
+    {
+      "name": "wolverine",
+      "phrases": ["jerv"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "seal",
+      "phrases": ["sel"],
+      "include": [],
+      "exclude": [
+        {
+          "imageHash": "231dbc04",
+          "note": "Sel (kommune)"
+        }
+      ]
+    },
+    {
+      "name": "swan",
+      "phrases": ["sangsvaner", "svane", "svaner"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "moose",
+      "phrases": ["elg", "elger", "elggevir", "elghode", "elgstamme"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "griffin",
+      "phrases": ["griff"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "capercaillie",
+      "phrases": ["tiur"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "lion",
+      "phrases": ["løve", "løvehoder"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "deer",
+      "phrases": ["hjort", "hjortehode"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "deer",
+      "phrases": ["hjortehode"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "whale",
+      "phrases": ["hvalfisk"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "fish",
+      "phrases": ["torsk", "tørrfisker"],
+      "include": [
+        {
+          "imageHash": "54867a04",
+          "note": "Ålesund"
+        },
+        {
+          "imageHash": "3435741b",
+          "note": "Kristiansund"
+        },
+        {
+          "imageHash": "55215095",
+          "note": "Austevoll"
+        },
+        {
+          "imageHash": "58d0c2fc",
+          "note": "Inderøy"
+        },
+        {
+          "imageHash": "66b98bec",
+          "note": "Hustadvika"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "bullBison",
+      "phrases": ["moskus"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "goat",
+      "phrases": ["geitebukk", "geitebukkhovud"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "dragon",
+      "phrases": ["lindorm", "drakehovud"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "fox",
+      "phrases": ["rev"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "cormorant",
+      "phrases": ["skarv", "skarvene", "skarver", "skarvhode", "skarvehode"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "horse",
+      "phrases": ["hest", "hester", "hesterasen"],
+      "include": [],
+      "exclude": [
+        {
+          "imageHash": "6da016f2",
+          "note": "Engerdal"
+        }
+      ]
+    },
+    {
+      "name": "salmon",
+      "phrases": ["laks", "lakser"],
+      "exclude": [],
+      "include": []
+    },
+    {
+      "name": "reindeer",
+      "phrases": [
+        "rein",
+        "reinsdyr",
+        "reinsdyrgevir",
+        "reinsdyrhoder",
+        "reinsdyrs"
+      ],
+      "exclude": [],
+      "include": []
+    },
+    {
+      "name": "snake",
+      "phrases": ["orm", "sjøorm"],
+      "exclude": [],
+      "include": []
+    },
+    {
+      "name": "beaver",
+      "phrases": ["bever", "beveren"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "squirrel",
+      "phrases": ["ekorn"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "rooster",
+      "phrases": ["hane", "hanen"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "owl",
+      "phrases": ["ugle"],
+      "exclude": [],
+      "include": []
+    },
+    {
+      "name": "lynx",
+      "phrases": ["gaupe", "gaupehovud"],
+      "exclude": [],
+      "include": []
+    },
+    {
+      "name": "heron",
+      "phrases": ["hegre"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "bird",
+      "phrases": [
+        "lundefugl",
+        "orrfugl",
+        "vipe",
+        "orrhane",
+        "fuglearten",
+        "makrellterna",
+        "ryper",
+        "terner"
+      ],
+      "include": [
+        {
+          "imageHash": "23a1797f",
+          "note": "Våler (Innlandet)"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "ram",
+      "phrases": ["værhode"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "gull",
+      "phrases": ["måke", "måker", "sølvmåker"],
+      "exclude": [],
+      "include": []
+    },
+    {
+      "name": "bear",
+      "phrases": ["isbjørn", "bjørn", "bjørnehode"],
+      "exclude": [
+        {
+          "imageHash": "63328626",
+          "note": "Bodø"
+        },
+        {
+          "imageHash": "6c861fbd",
+          "note": "Rana"
+        }
+      ],
+      "include": []
+    },
+    {
+      "name": "eagle",
+      "phrases": ["havørn", "ørn", "ørnerov"],
+      "include": [],
+      "exclude": []
+    }
+  ],
+  "items": [
+    {
+      "name": "walls",
+      "phrases": ["borg", "festning", "festningsverk", "fort"],
+      "include": [
+        {
+          "imageHash": "7cd0360a",
+          "note": "Drammen"
+        },
+        {
+          "imageHash": "14fdc253",
+          "note": "Haugesund"
+        },
+        {
+          "imageHash": "36bac6f4",
+          "note": "Molde"
+        },
+        {
+          "imageHash": "628476f0",
+          "note": "Trondheim"
+        },
+        {
+          "imageHash": "7db522c0",
+          "note": "Lurøy"
+        },
+        {
+          "imageHash": "4893dbd3",
+          "note": "Oslo"
+        },
+        {
+          "imageHash": "6a2a23f4",
+          "note": "Lindesnes"
+        },
+        {
+          "imageHash": "54867a04",
+          "note": "Ålesund"
+        },
+        {
+          "imageHash": "3435741b",
+          "note": "Kristiansund"
+        },
+        {
+          "imageHash": "7d4930b1",
+          "note": "Hamar"
+        },
+        {
+          "imageHash": "453f76e8",
+          "note": "Lillehammer"
+        },
+        {
+          "imageHash": "19554a9e",
+          "note": "Hammerfest"
+        },
+        {
+          "imageHash": "7407ca9a",
+          "note": "Skien"
+        },
+        {
+          "imageHash": "46dfeb02",
+          "note": "Arendal"
+        },
+        {
+          "imageHash": "5816aecf",
+          "note": "Grimstad"
+        },
+        {
+          "imageHash": "136c2fcb",
+          "note": "Stavanger"
+        },
+        {
+          "imageHash": "6c3a1284",
+          "note": "Øygarden"
+        },
+        {
+          "imageHash": "27fd60f4",
+          "note": "Tolga"
+        },
+        {
+          "imageHash": "4bbbc020",
+          "note": "Kvitsøy"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "earOfGrain",
+      "phrases": ["kornaks"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "horseshoe",
+      "phrases": ["hestesko"],
+      "exclude": [],
+      "include": []
+    },
+    {
+      "name": "jewelry",
+      "phrases": ["ringar"],
+      "exclude": [],
+      "include": []
+    },
+    {
+      "name": "cross",
+      "phrases": ["antoniuskors", "kløverbladkors", "kors", "kross", "krossar"],
+      "include": [
+        {
+          "imageHash": "479dc54c",
+          "note": "Enebakk"
+        },
+        {
+          "imageHash": "16456a32",
+          "note": "Møre og Romsdal"
+        },
+        {
+          "imageHash": "628476f0",
+          "note": "Trondheim"
+        },
+        {
+          "imageHash": "297c5afb",
+          "note": "Røros"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "rose",
+      "phrases": ["rose", "roser", "rosett"],
+      "exclude": [
+        {
+          "imageHash": "6915b9cc",
+          "note": "Bindal"
+        },
+        {
+          "imageHash": "468d4465",
+          "note": "Tingvoll"
+        }
+      ],
+      "include": []
+    },
+    {
+      "name": "flower",
+      "phrases": ["blåklokke"],
+      "exclude": [],
+      "include": [
+        {
+          "imageHash": "3747043d",
+          "note": "Nannestad"
+        },
+        {
+          "imageHash": "742e40f8",
+          "note": "Lunner"
+        },
+        {
+          "imageHash": "338ceb59",
+          "note": "Oppland"
+        },
+        {
+          "imageHash": "37c430db",
+          "note": "Snåsa"
+        },
+        {
+          "imageHash": "3ceb90cc",
+          "note": "Meløy"
+        },
+        {
+          "imageHash": "12ea5ceb",
+          "note": "Storfjord"
+        },
+        {
+          "imageHash": "fad7a51",
+          "note": "Selbu"
+        },
+        {
+          "imageHash": "52dce487",
+          "note": "Nord-Aurdal"
+        },
+        {
+          "imageHash": "7407ca9a",
+          "note": "Skien"
+        },
+        {
+          "imageHash": "628476f0",
+          "note": "Trondheim"
+        },
+        {
+          "imageHash": "373d7910",
+          "note": "Nordre Follo"
+        }
+      ]
+    },
+    {
+      "name": "jug",
+      "phrases": ["leirgauk"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "wheel",
+      "phrases": ["hjul", "vasshjul", "tannhjul", "tannhjulene"],
+      "exclude": [],
+      "include": [
+        {
+          "imageHash": "144916e1",
+          "note": "Ringerike"
+        },
+        {
+          "imageHash": "55e33b85",
+          "note": "Orkland"
+        },
+        {
+          "imageHash": "6864c58a",
+          "note": "Sørfold"
+        },
+        {
+          "imageHash": "4d9520cd",
+          "note": "Kåfjord"
+        },
+        {
+          "imageHash": "33e04453",
+          "note": "Meråker"
+        },
+        {
+          "imageHash": "13d3c55a",
+          "note": "Evje og Hornnes"
+        }
+      ]
+    },
+    {
+      "name": "bell",
+      "phrases": ["bjeller", "klokke"],
+      "exclude": [],
+      "include": []
+    },
+    {
+      "name": "sword",
+      "phrases": ["sverd"],
+      "include": [
+        {
+          "imageHash": "1869e2b2",
+          "note": "Vik"
+        },
+        {
+          "imageHash": "f462e8a",
+          "note": "Gjerstad"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "horn",
+      "phrases": ["drikkehorn"],
+      "exclude": [],
+      "include": []
+    },
+    {
+      "name": "violin",
+      "phrases": ["fela", "feler", "fiolin"],
+      "include": [
+        {
+          "imageHash": "1c01cdd6",
+          "note": "Voss"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "boat",
+      "phrases": [
+        "båt",
+        "båter",
+        "brigg",
+        "galei",
+        "krigsskip",
+        "losskøyte",
+        "skipstype"
+      ],
+      "include": [
+        {
+          "imageHash": "1c52412b",
+          "note": "Asker"
+        },
+        {
+          "imageHash": "16456a32",
+          "note": "Møre og Romsdal"
+        }
+      ],
+      "exclude": [
+        {
+          "imageHash": "74f495e1",
+          "note": "Vega"
+        },
+        {
+          "imageHash": "1f0559a1",
+          "note": "Heim"
+        }
+      ]
+    },
+    {
+      "name": "lily",
+      "phrases": ["lilje", "liljebord"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "key",
+      "phrases": ["nøkkel", "nøkler"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "anchor",
+      "phrases": ["anker", "ankere", "ankeret"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "pickaxe",
+      "phrases": ["hakke", "hakker"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "hammer",
+      "phrases": ["hammer", "klubbe"],
+      "exclude": [],
+      "include": [
+        {
+          "imageHash": "297c5afb",
+          "note": "Røros"
+        }
+      ]
+    },
+    {
+      "name": "arrow",
+      "phrases": ["pil", "piler", "piloddar", "pilspisser"],
+      "exclude": [
+        {
+          "imageHash": "508105a0",
+          "note": "Skiptvet"
+        }
+      ],
+      "include": []
+    },
+    {
+      "name": "saint",
+      "phrases": ["skytshelgen", "skytshelgenen", "st."],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "lighthouse",
+      "phrases": ["fyrtårn"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "axeSaw",
+      "phrases": [
+        "bondestridsøks",
+        "gulløkser",
+        "kjøreøkser",
+        "øks",
+        "øksehoder",
+        "økser",
+        "sag",
+        "tømmersag"
+      ],
+      "exclude": [],
+      "include": []
+    },
+    {
+      "name": "tree",
+      "phrases": [
+        "trærne",
+        "asketre",
+        "bjørkekvist",
+        "blad",
+        "eik",
+        "eikeblad",
+        "eikekvist",
+        "eikeløv",
+        "eiketre",
+        "furu",
+        "furukongler",
+        "grankongle",
+        "lindekvist",
+        "lindetrær",
+        "løvtre",
+        "traer",
+        "tre",
+        "treet"
+      ],
+      "exclude": [
+        {
+          "imageHash": "3f2080ed",
+          "note": "Tana"
+        },
+        {
+          "imageHash": "e040374",
+          "note": "Gamvik"
+        },
+        {
+          "imageHash": "503f03b7",
+          "note": "Porsanger"
+        },
+        {
+          "imageHash": "96d556c",
+          "note": "Karasjok"
+        },
+        {
+          "imageHash": "12ea5ceb",
+          "note": "Storfjord"
+        },
+        {
+          "imageHash": "305f1f8a",
+          "note": "Sortland"
+        },
+        {
+          "imageHash": "4bbbf9b3",
+          "note": "Steigen"
+        },
+        {
+          "imageHash": "5d2ada3",
+          "note": "Røst"
+        },
+        {
+          "imageHash": "2220c7d7",
+          "note": "Træna"
+        },
+        {
+          "imageHash": "5c118c10",
+          "note": "Herøy (Nordland)"
+        },
+        {
+          "imageHash": "2a8a8b7c",
+          "note": "Vevelstad"
+        },
+        {
+          "imageHash": "78713bca",
+          "note": "Lierne"
+        },
+        {
+          "imageHash": "3c16e9ec",
+          "note": "Flatanger"
+        },
+        {
+          "imageHash": "71a815bf",
+          "note": "Åfjord"
+        },
+        {
+          "imageHash": "46040cb9",
+          "note": "Frøya (kommune)"
+        },
+        {
+          "imageHash": "fad7a51",
+          "note": "Selbu"
+        },
+        {
+          "imageHash": "12d463d1",
+          "note": "Tydal"
+        },
+        {
+          "imageHash": "75a77521",
+          "note": "Midtre Gauldal"
+        },
+        {
+          "imageHash": "68096320",
+          "note": "Oppdal"
+        },
+        {
+          "imageHash": "402b4c8e",
+          "note": "Os (Innlandet)"
+        },
+        {
+          "imageHash": "1d933a1c",
+          "note": "Averøy"
+        },
+        {
+          "imageHash": "19c292e8",
+          "note": "Rauma"
+        },
+        {
+          "imageHash": "16456a32",
+          "note": "Møre og Romsdal"
+        },
+        {
+          "imageHash": "4c1a95c5",
+          "note": "Haram"
+        },
+        {
+          "imageHash": "25f27077",
+          "note": "Hareid"
+        },
+        {
+          "imageHash": "14175e4b",
+          "note": "Ørsta"
+        },
+        {
+          "imageHash": "386a2802",
+          "note": "Lom"
+        },
+        {
+          "imageHash": "2b66370",
+          "note": "Innlandet"
+        },
+        {
+          "imageHash": "5d444115",
+          "note": "Åmot"
+        },
+        {
+          "imageHash": "23cdb2c7",
+          "note": "Hedmark"
+        },
+        {
+          "imageHash": "709de9e6",
+          "note": "Åsnes"
+        },
+        {
+          "imageHash": "20e3b767",
+          "note": "Sør-Odal"
+        },
+        {
+          "imageHash": "3e681fc2",
+          "note": "Jevnaker"
+        },
+        {
+          "imageHash": "52dce487",
+          "note": "Nord-Aurdal"
+        },
+        {
+          "imageHash": "38fe1ed1",
+          "note": "Vang"
+        },
+        {
+          "imageHash": "1869e2b2",
+          "note": "Vik"
+        },
+        {
+          "imageHash": "352b0801",
+          "note": "Høyanger"
+        },
+        {
+          "imageHash": "484d5b97",
+          "note": "Sogn og Fjordane"
+        },
+        {
+          "imageHash": "27f842ef",
+          "note": "Hyllestad"
+        },
+        {
+          "imageHash": "39986aa9",
+          "note": "Modalen"
+        },
+        {
+          "imageHash": "5f88c02d",
+          "note": "Vaksdal"
+        },
+        {
+          "imageHash": "2cf302f3",
+          "note": "Osterøy"
+        },
+        {
+          "imageHash": "242d4147",
+          "note": "Masfjorden"
+        },
+        {
+          "imageHash": "3d4cd35d",
+          "note": "Austrheim"
+        },
+        {
+          "imageHash": "6a28a357",
+          "note": "Hol (Buskerud)"
+        },
+        {
+          "imageHash": "35d8da2a",
+          "note": "Ål"
+        },
+        {
+          "imageHash": "17578e74",
+          "note": "Gol"
+        },
+        {
+          "imageHash": "650b056e",
+          "note": "Modum"
+        },
+        {
+          "imageHash": "3e1e0cef",
+          "note": "Lillestrøm"
+        },
+        {
+          "imageHash": "4009b2ad",
+          "note": "Rælingen"
+        },
+        {
+          "imageHash": "4893dbd3",
+          "note": "Oslo"
+        },
+        {
+          "imageHash": "1c52412b",
+          "note": "Asker"
+        },
+        {
+          "imageHash": "55c8a4c",
+          "note": "Ås (kommune)"
+        },
+        {
+          "imageHash": "76a47855",
+          "note": "Vestby"
+        },
+        {
+          "imageHash": "255da115",
+          "note": "Siljan"
+        },
+        {
+          "imageHash": "2fb6fe30",
+          "note": "Rollag"
+        },
+        {
+          "imageHash": "634813",
+          "note": "Midt-Telemark (kommune)"
+        },
+        {
+          "imageHash": "f462e8a",
+          "note": "Gjerstad"
+        },
+        {
+          "imageHash": "174d9247",
+          "note": "Nissedal"
+        },
+        {
+          "imageHash": "46dfeb02",
+          "note": "Arendal"
+        },
+        {
+          "imageHash": "5816aecf",
+          "note": "Grimstad"
+        },
+        {
+          "imageHash": "1abb11cb",
+          "note": "Lillesand"
+        },
+        {
+          "imageHash": "1654bf04",
+          "note": "Sirdal"
+        },
+        {
+          "imageHash": "5d045a9d",
+          "note": "Sokndal"
+        },
+        {
+          "imageHash": "4356a2d0",
+          "note": "Strand (Rogaland)"
+        },
+        {
+          "imageHash": "4bbbc020",
+          "note": "Kvitsøy"
+        },
+        {
+          "imageHash": "14fdc253",
+          "note": "Haugesund"
+        },
+        {
+          "imageHash": "1cfe8648",
+          "note": "Ullensvang"
+        },
+        {
+          "imageHash": "686349ab",
+          "note": "Kvænangen"
+        }
+      ],
+      "include": []
+    },
+    {
+      "name": "crown",
+      "phrases": ["kongekrone", "krone", "kroner"],
+      "include": [
+        {
+          "imageHash": "54867a04",
+          "note": "Ålesund"
+        },
+        {
+          "imageHash": "3435741b",
+          "note": "Kristiansund"
+        },
+        {
+          "imageHash": "7d4930b1",
+          "note": "Hamar"
+        },
+        {
+          "imageHash": "4893dbd3",
+          "note": "Oslo"
+        },
+        {
+          "imageHash": "14fdc253",
+          "note": "Haugesund"
+        },
+        {
+          "imageHash": "453f76e8",
+          "note": "Lillehammer"
+        },
+        {
+          "imageHash": "19554a9e",
+          "note": "Hammerfest"
+        },
+        {
+          "imageHash": "7a67e6ec",
+          "note": "Horten"
+        },
+        {
+          "imageHash": "7407ca9a",
+          "note": "Skien"
+        },
+        {
+          "imageHash": "3bfa720f",
+          "note": "Halden"
+        },
+        {
+          "imageHash": "46dfeb02",
+          "note": "Arendal"
+        },
+        {
+          "imageHash": "5816aecf",
+          "note": "Grimstad"
+        },
+        {
+          "imageHash": "136c2fcb",
+          "note": "Stavanger"
+        }
+      ],
+      "exclude": [
+        {
+          "imageHash": "6eac2b30",
+          "note": "Vennesla"
+        },
+        {
+          "imageHash": "7186d43d",
+          "note": "Tysnes"
+        }
+      ]
+    }
+  ]
+}
