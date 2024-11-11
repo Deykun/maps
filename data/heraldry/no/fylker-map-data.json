@@ -1,0 +1,422 @@
+[
+ {
+  "lang": "no",
+  "index": 0,
+  "id": "fylker-0",
+  "title": "Agder",
+  "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
+  "type": [
+   "fylker"
+  ],
+  "spriteRoot": "fylker",
+  "place": {
+   "name": "Fylkesvåpen i Norge | Nåværende fylker",
+   "coordinates": {
+    "lat": 58.14669444,
+    "lon": 7.99561111
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/no/fylker/126562aa-agder-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/no/fylker/126562aa-agder-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "no",
+  "index": 1,
+  "id": "fylker-1",
+  "title": "Innlandet",
+  "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
+  "type": [
+   "fylker"
+  ],
+  "spriteRoot": "fylker",
+  "place": {
+   "name": "Fylkesvåpen i Norge | Nåværende fylker",
+   "coordinates": {
+    "lat": 61.5,
+    "lon": 10.66666667
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/no/fylker/2b66370-innlandet-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/no/fylker/2b66370-innlandet-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "no",
+  "index": 2,
+  "id": "fylker-2",
+  "title": "Møre og Romsdal",
+  "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
+  "type": [
+   "fylker"
+  ],
+  "spriteRoot": "fylker",
+  "place": {
+   "name": "Fylkesvåpen i Norge | Nåværende fylker",
+   "coordinates": {
+    "lat": 62.7375,
+    "lon": 7.15833333
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/no/fylker/16456a32-mre-og-romsdal-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/no/fylker/16456a32-mre-og-romsdal-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "no",
+  "index": 3,
+  "id": "fylker-3",
+  "title": "Nordland",
+  "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
+  "type": [
+   "fylker"
+  ],
+  "spriteRoot": "fylker",
+  "place": {
+   "name": "Fylkesvåpen i Norge | Nåværende fylker",
+   "coordinates": {
+    "lat": 66.83333333,
+    "lon": 14.66666667
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/no/fylker/2d254ff3-nordland-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/no/fylker/2d254ff3-nordland-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "no",
+  "index": 4,
+  "id": "fylker-4",
+  "title": "Oslo",
+  "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
+  "type": [
+   "fylker"
+  ],
+  "spriteRoot": "fylker",
+  "place": {
+   "name": "Fylkesvåpen i Norge | Nåværende fylker",
+   "coordinates": {
+    "lat": 59.91333333,
+    "lon": 10.73888889
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/no/fylker/4893dbd3-oslo-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/no/fylker/4893dbd3-oslo-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "no",
+  "index": 5,
+  "id": "fylker-5",
+  "title": "Rogaland",
+  "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
+  "type": [
+   "fylker"
+  ],
+  "spriteRoot": "fylker",
+  "place": {
+   "name": "Fylkesvåpen i Norge | Nåværende fylker",
+   "coordinates": {
+    "lat": 58.97,
+    "lon": 5.71
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/no/fylker/3c7495d5-rogaland-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/no/fylker/3c7495d5-rogaland-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "no",
+  "index": 6,
+  "id": "fylker-6",
+  "title": "Trøndelag",
+  "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
+  "type": [
+   "fylker"
+  ],
+  "spriteRoot": "fylker",
+  "place": {
+   "name": "Fylkesvåpen i Norge | Nåværende fylker",
+   "coordinates": {
+    "lat": 63.42694444,
+    "lon": 10.39305556
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/no/fylker/8408eda-trndelag-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/no/fylker/8408eda-trndelag-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "no",
+  "index": 7,
+  "id": "fylker-7",
+  "title": "Finnmark",
+  "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
+  "type": [
+   "fylker"
+  ],
+  "spriteRoot": "fylker",
+  "place": {
+   "name": "Fylkesvåpen i Norge | Nåværende fylker",
+   "coordinates": {
+    "lat": 70.11907,
+    "lon": 27.58779
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/no/fylker/7414438e-finnmark-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/no/fylker/7414438e-finnmark-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "no",
+  "index": 8,
+  "id": "fylker-8",
+  "title": "Troms",
+  "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
+  "type": [
+   "fylker"
+  ],
+  "spriteRoot": "fylker",
+  "place": {
+   "name": "Fylkesvåpen i Norge | Nåværende fylker",
+   "coordinates": {
+    "lat": 69.15645,
+    "lon": 19.40185556
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/no/fylker/3c304b22-troms-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/no/fylker/3c304b22-troms-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "no",
+  "index": 9,
+  "id": "fylker-9",
+  "title": "Buskerud",
+  "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
+  "type": [
+   "fylker"
+  ],
+  "spriteRoot": "fylker",
+  "place": {
+   "name": "Fylkesvåpen i Norge | Nåværende fylker",
+   "coordinates": {
+    "lat": 60.5,
+    "lon": 9.5
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/no/fylker/56afd97e-buskerud-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/no/fylker/56afd97e-buskerud-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "no",
+  "index": 10,
+  "id": "fylker-10",
+  "title": "Østfold",
+  "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
+  "type": [
+   "fylker"
+  ],
+  "spriteRoot": "fylker",
+  "place": {
+   "name": "Fylkesvåpen i Norge | Nåværende fylker",
+   "coordinates": {
+    "lat": 59.33333333,
+    "lon": 11.33333333
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/no/fylker/69e89475-stfold-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/no/fylker/69e89475-stfold-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "no",
+  "index": 11,
+  "id": "fylker-11",
+  "title": "Akershus",
+  "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
+  "type": [
+   "fylker"
+  ],
+  "spriteRoot": "fylker",
+  "place": {
+   "name": "Fylkesvåpen i Norge | Nåværende fylker",
+   "coordinates": {
+    "lat": 60,
+    "lon": 11
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/no/fylker/2683448e-akershus-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/no/fylker/2683448e-akershus-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "no",
+  "index": 12,
+  "id": "fylker-12",
+  "title": "Vestfold",
+  "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
+  "type": [
+   "fylker"
+  ],
+  "spriteRoot": "fylker",
+  "place": {
+   "name": "Fylkesvåpen i Norge | Nåværende fylker",
+   "coordinates": {
+    "lat": 59.31,
+    "lon": 10.22
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/no/fylker/1e9cbc4a-vestfold-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/no/fylker/1e9cbc4a-vestfold-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "no",
+  "index": 13,
+  "id": "fylker-13",
+  "title": "Telemark",
+  "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
+  "type": [
+   "fylker"
+  ],
+  "spriteRoot": "fylker",
+  "place": {
+   "name": "Fylkesvåpen i Norge | Nåværende fylker",
+   "coordinates": {
+    "lat": 59.33333333,
+    "lon": 8.5
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/no/fylker/470bb5d9-telemark-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/no/fylker/470bb5d9-telemark-320w.webp"
+   }
+  ]
+ },
+ {
+  "lang": "no",
+  "index": 14,
+  "id": "fylker-14",
+  "title": "Vestland",
+  "url": "https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge",
+  "type": [
+   "fylker"
+  ],
+  "spriteRoot": "fylker",
+  "place": {
+   "name": "Fylkesvåpen i Norge | Nåværende fylker",
+   "coordinates": {
+    "lat": 60.925,
+    "lon": 6.445
+   }
+  },
+  "imagesList": [
+   {
+    "width": "80w",
+    "path": "images/heraldry/no/fylker/32ba84a9-vestland-80w.webp"
+   },
+   {
+    "width": "320w",
+    "path": "images/heraldry/no/fylker/32ba84a9-vestland-320w.webp"
+   }
+  ]
+ }
+]
