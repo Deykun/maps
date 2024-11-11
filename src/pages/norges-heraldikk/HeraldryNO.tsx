@@ -3,7 +3,7 @@ import { CoatOfArmsMapData, MapOffset } from '@/topic/Heraldry/types';
 import {
   updateProcessingTexts,
 } from '@/topic/Heraldry/stores/progressStore';
-const SvgMap = React.lazy(() => import('./components/SvgMap2'));
+const SvgMap = React.lazy(() => import('./components/SvgMap'));
 
 import HeraldryMap from '@/topic/Heraldry/components/HeraldryMap/HeraldryMap';
 
