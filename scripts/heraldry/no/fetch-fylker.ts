@@ -3,9 +3,11 @@ import { AdministrativeUnit, UserScriptDivisionData } from '../../../src/topic/H
 
 import { fetchData } from '../utils/fetch-data';
 
-// import alreadyFetchedJSON from '../../../public/data/heraldry/no/fylker.json';
+import alreadyFetchedCurrentJSON from '../../../public/data/heraldry/no/fylker.json';
+import alreadyFetchedFormerJSON from '../../../public/data/heraldry/no/formerFylker.json';
 
-// const alreadyFetchedDivisions = alreadyFetchedJSON as AdministrativeUnit[];
+const alreadyFetchedDivisionsCurrent = alreadyFetchedCurrentJSON as AdministrativeUnit[];
+const alreadyFetchedDivisionsFormer = alreadyFetchedFormerJSON as AdministrativeUnit[];
 
 const administrativeDivisions: UserScriptDivisionData[] = Object.values(urls.fylkerBySource).flatMap(division => division).map((unit) => ({
 	...unit,
@@ -19,7 +21,7 @@ const administrativeDivisionsFormer = administrativeDivisions.filter((unit) => u
 fetchData({
   isFromUserScript: true,
 	administrativeDivisions: administrativeDivisionsCurrent,
-	// alreadyFetchedDivisions: alreadyFetchedDivisions,
+	alreadyFetchedDivisions: alreadyFetchedDivisionsCurrent,
 	path: './public/data/heraldry/no/fylker.json',
 	unitNames: ['fylker'],
 	lang: 'no',
@@ -28,7 +30,7 @@ fetchData({
 fetchData({
   isFromUserScript: true,
 	administrativeDivisions: administrativeDivisionsFormer,
-	// alreadyFetchedDivisions: alreadyFetchedDivisions,
+	alreadyFetchedDivisions: alreadyFetchedDivisionsFormer,
 	path: './public/data/heraldry/no/formerFylker.json',
 	unitNames: ['formerFylker'],
 	lang: 'no',
