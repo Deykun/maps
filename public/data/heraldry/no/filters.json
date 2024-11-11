@@ -76,6 +76,10 @@
         {
           "imageHash": "3435741b",
           "note": "Kristiansund"
+        },
+        {
+          "imageHash": "55215095",
+          "note": "Austevoll"
         }
       ],
       "exclude": []
@@ -229,5 +233,179 @@
       "exclude": []
     }
   ],
-  "items": []
+  "items": [
+    {
+      "name": "walls",
+      "phrases": ["borg", "festning", "festningsverk", "fort"],
+      "include": [
+        {
+          "imageHash": "7cd0360a",
+          "note": "Drammen"
+        },
+        {
+          "imageHash": "14fdc253",
+          "note": "Haugesund"
+        },
+        {
+          "imageHash": "36bac6f4",
+          "note": "Molde"
+        },
+        {
+          "imageHash": "628476f0",
+          "note": "Trondheim"
+        },
+        {
+          "imageHash": "7db522c0",
+          "note": "Lurøy"
+        },
+        {
+          "imageHash": "4893dbd3",
+          "note": "Oslo"
+        },
+        {
+          "imageHash": "6a2a23f4",
+          "note": "Lindesnes"
+        },
+        {
+          "imageHash": "54867a04",
+          "note": "Ålesund"
+        },
+        {
+          "imageHash": "3435741b",
+          "note": "Kristiansund"
+        },
+        {
+          "imageHash": "7d4930b1",
+          "note": "Hamar"
+        },
+        {
+          "imageHash": "453f76e8",
+          "note": "Lillehammer"
+        },
+        {
+          "imageHash": "19554a9e",
+          "note": "Hammerfest"
+        },
+        {
+          "imageHash": "7407ca9a",
+          "note": "Skien"
+        },
+        {
+          "imageHash": "46dfeb02",
+          "note": "Arendal"
+        },
+        {
+          "imageHash": "5816aecf",
+          "note": "Grimstad"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "sword",
+      "phrases": ["sverd"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "horn",
+      "phrases": ["drikkehorn"],
+      "exclude": [],
+      "include": []
+    },
+    {
+      "name": "violin",
+      "phrases": ["fela", "feler", "fiolin"],
+      "include": [
+        {
+          "imageHash": "1c01cdd6",
+          "note": "Voss"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "boat",
+      "phrases": [
+        "båt",
+        "båter",
+        "brigg",
+        "galei",
+        "krigsskip",
+        "losskøyte",
+        "skipstype"
+      ],
+      "include": [
+        {
+          "imageHash": "1c52412b",
+          "note": "Asker"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "crown",
+      "phrases": ["kongekrone", "krone", "kroner"],
+      "include": [
+        {
+          "imageHash": "54867a04",
+          "note": "Ålesund"
+        },
+        {
+          "imageHash": "3435741b",
+          "note": "Kristiansund"
+        },
+        {
+          "imageHash": "7d4930b1",
+          "note": "Hamar"
+        },
+        {
+          "imageHash": "4893dbd3",
+          "note": "Oslo"
+        },
+        {
+          "imageHash": "14fdc253",
+          "note": "Haugesund"
+        },
+        {
+          "imageHash": "453f76e8",
+          "note": "Lillehammer"
+        },
+        {
+          "imageHash": "19554a9e",
+          "note": "Hammerfest"
+        },
+        {
+          "imageHash": "7a67e6ec",
+          "note": "Horten"
+        },
+        {
+          "imageHash": "7407ca9a",
+          "note": "Skien"
+        },
+        {
+          "imageHash": "3bfa720f",
+          "note": "Halden"
+        },
+        {
+          "imageHash": "46dfeb02",
+          "note": "Arendal"
+        },
+        {
+          "imageHash": "5816aecf",
+          "note": "Grimstad"
+        }
+      ],
+      "exclude": [
+        {
+          "imageHash": "6eac2b30",
+          "note": "Vennesla"
+        },
+        {
+          "imageHash": "7186d43d",
+          "note": "Tysnes"
+        }
+      ]
+    }
+  ]
 }
