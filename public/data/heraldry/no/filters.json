@@ -84,9 +84,28 @@
         {
           "imageHash": "58d0c2fc",
           "note": "Inderøy"
+        },
+        {
+          "imageHash": "66b98bec",
+          "note": "Hustadvika"
         }
       ],
       "exclude": []
+    },
+    {
+      "name": "axeSaw",
+      "phrases": [
+        "bondestridsøks",
+        "gulløkser",
+        "kjøreøkser",
+        "øks",
+        "øksehoder",
+        "økser",
+        "sag",
+        "tømmersag"
+      ],
+      "exclude": [],
+      "include": []
     },
     {
       "name": "bullBison",
@@ -323,6 +342,21 @@
       "exclude": []
     },
     {
+      "name": "cross",
+      "phrases": ["antoniuskors", "kløverbladkors", "kors", "kross", "krossar"],
+      "include": [
+        {
+          "imageHash": "479dc54c",
+          "note": "Enebakk"
+        },
+        {
+          "imageHash": "16456a32",
+          "note": "Møre og Romsdal"
+        }
+      ],
+      "exclude": []
+    },
+    {
       "name": "rose",
       "phrases": ["rose", "roser", "rosett"],
       "exclude": [
@@ -373,6 +407,10 @@
         {
           "imageHash": "52dce487",
           "note": "Nord-Aurdal"
+        },
+        {
+          "imageHash": "7407ca9a",
+          "note": "Skien"
         }
       ]
     },
@@ -429,6 +467,10 @@
         {
           "imageHash": "1c52412b",
           "note": "Asker"
+        },
+        {
+          "imageHash": "16456a32",
+          "note": "Møre og Romsdal"
         }
       ],
       "exclude": [
@@ -441,6 +483,12 @@
           "note": "Heim"
         }
       ]
+    },
+    {
+      "name": "anchor",
+      "phrases": ["anker", "ankere", "ankeret"],
+      "include": [],
+      "exclude": []
     },
     {
       "name": "pickaxe",
