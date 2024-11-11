@@ -352,6 +352,14 @@
         {
           "imageHash": "16456a32",
           "note": "Møre og Romsdal"
+        },
+        {
+          "imageHash": "628476f0",
+          "note": "Trondheim"
+        },
+        {
+          "imageHash": "297c5afb",
+          "note": "Røros"
         }
       ],
       "exclude": []
@@ -411,6 +419,37 @@
         {
           "imageHash": "7407ca9a",
           "note": "Skien"
+        },
+        {
+          "imageHash": "628476f0",
+          "note": "Trondheim"
+        }
+      ]
+    },
+    {
+      "name": "wheel",
+      "phrases": ["hjul", "vasshjul"],
+      "exclude": [],
+      "include": [
+        {
+          "imageHash": "144916e1",
+          "note": "Ringerike"
+        },
+        {
+          "imageHash": "55e33b85",
+          "note": "Orkland"
+        },
+        {
+          "imageHash": "6864c58a",
+          "note": "Sørfold"
+        },
+        {
+          "imageHash": "4d9520cd",
+          "note": "Kåfjord"
+        },
+        {
+          "imageHash": "33e04453",
+          "note": "Meråker"
         }
       ]
     },
@@ -485,6 +524,18 @@
       ]
     },
     {
+      "name": "lily",
+      "phrases": ["lilje", "liljebord"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "key",
+      "phrases": ["nøkkel", "nøkler"],
+      "include": [],
+      "exclude": []
+    },
+    {
       "name": "anchor",
       "phrases": ["anker", "ankere", "ankeret"],
       "include": [],
@@ -500,7 +551,12 @@
       "name": "hammer",
       "phrases": ["hammer", "klubbe"],
       "exclude": [],
-      "include": []
+      "include": [
+        {
+          "imageHash": "297c5afb",
+          "note": "Røros"
+        }
+      ]
     },
     {
       "name": "tree",

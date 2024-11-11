@@ -1371,6 +1371,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "wheel"
+   ]
   }
  },
  {
@@ -2344,6 +2349,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "wheel"
+   ]
   }
  },
  {
@@ -3516,6 +3526,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "wheel"
+   ]
   }
  },
  {
@@ -4711,6 +4726,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "wheel"
+   ]
   }
  },
  {
@@ -4997,6 +5017,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "wheel"
+   ]
   }
  },
  {
@@ -5240,6 +5265,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "cross",
+    "hammer"
+   ]
   }
  },
  {
@@ -5603,6 +5634,8 @@
   "markers": {
    "items": [
     "walls",
+    "cross",
+    "flower",
     "crown"
    ]
   }
@@ -8857,6 +8890,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "lily",
+    "flower"
+   ]
   }
  },
  {
@@ -10018,6 +10057,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "wheel"
+   ]
   }
  },
  {
@@ -12770,7 +12814,8 @@
   "markers": {
    "items": [
     "walls",
-    "sword"
+    "sword",
+    "key"
    ]
   }
  },
@@ -12894,6 +12939,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "key"
+   ]
   }
  },
  {
@@ -13397,6 +13447,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "wheel"
+   ]
   }
  },
  {
@@ -14100,6 +14155,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "wheel"
+   ]
   }
  },
  {
@@ -15127,6 +15187,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "lily",
+    "flower"
+   ]
   }
  },
  {
@@ -16022,6 +16088,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "key"
+   ]
   }
  },
  {
@@ -17339,7 +17410,9 @@
   },
   "markers": {
    "items": [
-    "sword"
+    "sword",
+    "lily",
+    "flower"
    ]
   }
  },
