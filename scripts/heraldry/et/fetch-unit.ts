@@ -11,7 +11,7 @@ const alreadyFetchedFormerDivisions = alreadyFetchedFormerJSON as Administrative
 
 const administrativeDivisions: AdministrativeUnit[] = Object.values(urls.unitBySource).flatMap(
 	({ title, urls }) => urls.map(
-		(gmina) => ({ ...gmina, type: ['unit'], partOf: title }
+		(unit) => ({ ...unit, type: ['unit'], partOf: title }
 	),
 ));
 
@@ -25,7 +25,7 @@ await fetchData({
 
 const formerAdministrativeDivisions: AdministrativeUnit[] = Object.values(urls.historicUnitBySource).flatMap(
 	({ title, urls }) => urls.map(
-		(gmina) => ({ ...gmina, type: ['formerUnit'], partOf: title }
+		(unit) => ({ ...unit, type: ['formerUnit'], partOf: title }
 	),
 ));
 

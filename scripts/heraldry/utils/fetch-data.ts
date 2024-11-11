@@ -1,4 +1,7 @@
-import fs from 'fs';
+import fs, {
+  existsSync,
+  mkdirSync,
+} from "fs";
 import wiki from 'wikipedia';
 import chalk from 'chalk';
 import pLimit from 'p-limit';
@@ -624,6 +627,11 @@ export const fetchData = async ({
   })));
 
   await Promise.all(promises);
+
+  const dirToCreate = path.split('/').slice(0, -1).join('/');
+  if (!existsSync(dirToCreate)) {
+    mkdirSync(dirToCreate);
+  }
 
   fs.writeFileSync(path, JSON.stringify(contentToSave.sort((a, b) => a.index - b.index), null, 4));
   fs.writeFileSync('./errors.json', JSON.stringify(errors, null, 4));

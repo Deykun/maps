@@ -59,8 +59,19 @@ const initWikiParser = async () => {
     /* import @/interface.js */
 
     /* import @/parse-details.js */
-    /* import @/parse-page-de.js */
     /* import @/parse-page.js */
+
+    const savePageCoatOfArmsIfPossible = () => {
+      if (location.href.includes('de.wikipedia')) {
+        /* import @/parse-page-de.js */
+        savePageCoatOfArmsIfPossibleDE();
+      }
+    
+      if (location.href.includes('no.wikipedia')) {
+        /* import @/parse-page-no.js */
+        savePageCoatOfArmsIfPossibleNO();
+      }
+    };
 
     /* import @/render-app-copy.js */
     /* import @/render-app.js */
