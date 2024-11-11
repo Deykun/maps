@@ -1,9 +1,9 @@
 import React from 'react';
-import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
+import { CoatOfArmsMapData, MapOffset } from '@/topic/Heraldry/types';
 import {
   updateProcessingTexts,
 } from '@/topic/Heraldry/stores/progressStore';
-const SvgMap = React.lazy(() => import('./components/SvgMap'));
+const SvgMap = React.lazy(() => import('./components/SvgMap2'));
 
 import HeraldryMap from '@/topic/Heraldry/components/HeraldryMap/HeraldryMap';
 
@@ -13,19 +13,45 @@ const filterForCountryData = (units: CoatOfArmsMapData[]) => {
   return units;
 };
 
+const mapOffset: MapOffset = {
+  minLatTop: 58,
+  maxLatTop: 71.9,
+  minLonLeft: 4.45,
+  maxLonLeft: 24.8,
+  xModifier: (percentageX: number, { percentageY }) => {
+    if (percentageY > 0.5) {
+      return percentageX;
+    }
+
+    if (percentageX > 0.55) {
+      const skewFactor = percentageX - 0.55;
+
+      return percentageX + (skewFactor * -1 * 0.45);
+    }
+
+    const skewFactor = percentageX - 0.75;
+
+    return percentageX + (skewFactor * 0.1);
+  },
+  yModifier: (percentageY: number) => {
+    if (percentageY > 0.3) {
+      return percentageY;
+    }
+
+    const skewFactor = percentageY - 0.4;
+
+    return percentageY + (skewFactor * 0.18);
+  }
+}
+
 const HeraldryNO = () => {
   return (
     <HeraldryMap
       lang="no"
-      mapWrapperClassName="[&>div>svg]:aspect-[480_/_601]"
-      mapWrapperClassNameForZoom0="max-w-[70vh]"
+      mapWrapperClassName="[&>div>svg]:aspect-[507_/_730]"
+      mapWrapperClassNameForZoom0="max-w-[42vh]"
       map={SvgMap}
-      mapOffset={{
-        minLatTop: 57.95,
-        maxLatTop: 71.19,
-        minLonLeft: 4.99,
-        maxLonLeft: 31.15,
-      }}
+      mapOffset={mapOffset}
       dataPaths={[
         '/maps/data/heraldry/no/formerFylker',
         '/maps/data/heraldry/no/kommune',

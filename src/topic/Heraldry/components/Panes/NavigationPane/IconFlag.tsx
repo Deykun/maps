@@ -2,6 +2,7 @@ import IconDe from './Flags/De';
 import IconEn from './Flags/En';
 import IconEt from './Flags/Et';
 import IconFi from './Flags/Fi';
+import IconNo from './Flags/No';
 import IconPl from './Flags/Pl';
 
 const iconByCode = {
@@ -9,6 +10,7 @@ const iconByCode = {
   en: IconEn,
   et: IconEt,
   fi: IconFi,
+  no: IconNo,
   pl: IconPl,
 };
 
