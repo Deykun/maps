@@ -121,7 +121,7 @@
     },
     {
       "name": "dragon",
-      "phrases": ["lindorm"],
+      "phrases": ["lindorm", "drakehovud"],
       "include": [],
       "exclude": []
     },
@@ -342,6 +342,24 @@
       "exclude": []
     },
     {
+      "name": "earOfGrain",
+      "phrases": ["kornaks"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "horseshoe",
+      "phrases": ["hestesko"],
+      "exclude": [],
+      "include": []
+    },
+    {
+      "name": "jewelry",
+      "phrases": ["ringar"],
+      "exclude": [],
+      "include": []
+    },
+    {
       "name": "cross",
       "phrases": ["antoniuskors", "kløverbladkors", "kors", "kross", "krossar"],
       "include": [
@@ -423,12 +441,22 @@
         {
           "imageHash": "628476f0",
           "note": "Trondheim"
+        },
+        {
+          "imageHash": "373d7910",
+          "note": "Nordre Follo"
         }
       ]
     },
     {
+      "name": "jug",
+      "phrases": ["leirgauk"],
+      "include": [],
+      "exclude": []
+    },
+    {
       "name": "wheel",
-      "phrases": ["hjul", "vasshjul"],
+      "phrases": ["hjul", "vasshjul", "tannhjul", "tannhjulene"],
       "exclude": [],
       "include": [
         {
@@ -450,6 +478,10 @@
         {
           "imageHash": "33e04453",
           "note": "Meråker"
+        },
+        {
+          "imageHash": "13d3c55a",
+          "note": "Evje og Hornnes"
         }
       ]
     },
@@ -559,8 +591,15 @@
       ]
     },
     {
+      "name": "saint",
+      "phrases": ["skytshelgen", "skytshelgenen", "st."],
+      "include": [],
+      "exclude": []
+    },
+    {
       "name": "tree",
       "phrases": [
+        "trærne",
         "asketre",
         "bjørkekvist",
         "blad",

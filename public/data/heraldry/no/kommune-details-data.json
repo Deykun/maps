@@ -5874,6 +5874,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "jewelry"
+   ]
   }
  },
  {
@@ -7647,6 +7652,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "dragon"
+   ]
   }
  },
  {
@@ -7773,6 +7783,9 @@
   "markers": {
    "animals": [
     "horse"
+   ],
+   "items": [
+    "saint"
    ]
   }
  },
@@ -9817,6 +9830,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "jug"
+   ]
   }
  },
  {
@@ -10591,6 +10609,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "wheel"
+   ]
   }
  },
  {
@@ -11533,6 +11556,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "wheel"
+   ]
   }
  },
  {
@@ -11631,6 +11659,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "horseshoe"
+   ]
   }
  },
  {
@@ -14385,6 +14418,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "flower"
+   ]
   }
  },
  {
@@ -14834,6 +14872,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "earOfGrain"
+   ]
   }
  },
  {
@@ -15257,6 +15300,7 @@
    ],
    "items": [
     "walls",
+    "saint",
     "crown"
    ]
   }
