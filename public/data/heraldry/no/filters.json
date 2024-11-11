@@ -1,0 +1,233 @@
+{
+  "animals": [
+    {
+      "name": "wolverine",
+      "phrases": ["jerv"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "seal",
+      "phrases": ["sel"],
+      "include": [],
+      "exclude": [
+        {
+          "imageHash": "231dbc04",
+          "note": "Sel (kommune)"
+        }
+      ]
+    },
+    {
+      "name": "swan",
+      "phrases": ["sangsvaner", "svane", "svaner"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "moose",
+      "phrases": ["elg", "elger", "elggevir", "elghode", "elgstamme"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "griffin",
+      "phrases": ["griff"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "capercaillie",
+      "phrases": ["tiur"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "lion",
+      "phrases": ["løve", "løvehoder"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "deer",
+      "phrases": ["hjort", "hjortehode"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "deer",
+      "phrases": ["hjortehode"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "whale",
+      "phrases": ["hvalfisk"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "fish",
+      "phrases": ["torsk", "terner", "tørrfisker"],
+      "include": [
+        {
+          "imageHash": "54867a04",
+          "note": "Ålesund"
+        },
+        {
+          "imageHash": "3435741b",
+          "note": "Kristiansund"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "bullBison",
+      "phrases": ["moskus"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "goat",
+      "phrases": ["geitebukk", "geitebukkhovud"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "dragon",
+      "phrases": ["lindorm"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "fox",
+      "phrases": ["rev"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "cormorant",
+      "phrases": ["skarv", "skarvene", "skarver", "skarvhode", "skarvehode"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "horse",
+      "phrases": ["hest", "hester", "hesterasen"],
+      "include": [],
+      "exclude": [
+        {
+          "imageHash": "6da016f2",
+          "note": "Engerdal"
+        }
+      ]
+    },
+    {
+      "name": "salmon",
+      "phrases": ["laks", "lakser"],
+      "exclude": [],
+      "include": []
+    },
+    {
+      "name": "reindeer",
+      "phrases": [
+        "rein",
+        "reinsdyr",
+        "reinsdyrgevir",
+        "reinsdyrhoder",
+        "reinsdyrs"
+      ],
+      "exclude": [],
+      "include": []
+    },
+    {
+      "name": "snake",
+      "phrases": ["orm", "sjøorm"],
+      "exclude": [],
+      "include": []
+    },
+    {
+      "name": "beaver",
+      "phrases": ["bever", "beveren"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "squirrel",
+      "phrases": ["ekorn"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "rooster",
+      "phrases": ["hane", "hanen"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "owl",
+      "phrases": ["ugle"],
+      "exclude": [],
+      "include": []
+    },
+    {
+      "name": "lynx",
+      "phrases": ["gaupe", "gaupehovud"],
+      "exclude": [],
+      "include": []
+    },
+    {
+      "name": "heron",
+      "phrases": ["hegre"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "bird",
+      "phrases": [
+        "lundefugl",
+        "orrfugl",
+        "vipe",
+        "orrhane",
+        "fuglearten",
+        "makrellterna",
+        "ryper"
+      ],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "ram",
+      "phrases": ["værhode"],
+      "include": [],
+      "exclude": []
+    },
+    {
+      "name": "gull",
+      "phrases": ["måke", "måker", "sølvmåker"],
+      "exclude": [],
+      "include": []
+    },
+    {
+      "name": "bear",
+      "phrases": ["isbjørn", "bjørn", "bjørnehode"],
+      "exclude": [
+        {
+          "imageHash": "63328626",
+          "note": "Bodø"
+        },
+        {
+          "imageHash": "6c861fbd",
+          "note": "Rana"
+        }
+      ],
+      "include": []
+    },
+    {
+      "name": "eagle",
+      "phrases": ["havørn", "ørn", "ørnerov"],
+      "include": [],
+      "exclude": []
+    }
+  ],
+  "items": []
+}
