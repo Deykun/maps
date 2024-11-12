@@ -41,6 +41,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "rooster",
+    "bird"
+   ]
   }
  },
  {
@@ -205,6 +211,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "dragon"
+   ]
   }
  },
  {
@@ -1683,6 +1694,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "goose",
+    "bird"
+   ]
   }
  },
  {
@@ -1894,6 +1911,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "horse"
+   ]
   }
  },
  {
@@ -1952,6 +1974,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "horse"
+   ],
    "items": [
     "tree"
    ]
@@ -3227,6 +3252,11 @@
     ]
    },
    "byNamesRejected": {}
+  },
+  "markers": {
+   "animals": [
+    "horse"
+   ]
   }
  },
  {
@@ -3689,6 +3719,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "horse"
+   ],
    "items": [
     "wheel"
    ]
@@ -3769,6 +3802,10 @@
    "byNamesRejected": {}
   },
   "markers": {
+   "animals": [
+    "eagle",
+    "bird"
+   ],
    "items": [
     "walls",
     "flower"
@@ -4192,6 +4229,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "seahorses"
+   ]
   }
  },
  {

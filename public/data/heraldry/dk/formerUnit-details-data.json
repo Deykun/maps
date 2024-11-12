@@ -47,6 +47,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "dragon"
+   ]
   }
  },
  {
@@ -427,6 +432,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "tree"
    ]
   }
  },
@@ -682,6 +690,13 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "dragon",
+    "goose",
+    "bird"
+   ]
   }
  },
  {
@@ -1105,6 +1120,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "dragon"
+   ]
   }
  },
  {
@@ -1562,6 +1582,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "dragon"
+   ]
   }
  },
  {

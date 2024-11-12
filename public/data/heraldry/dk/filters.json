@@ -14,6 +14,93 @@
       ]
     },
     {
+      "name": "eagle",
+      "include": [
+        {
+          "imageHash": "7688f5",
+          "note": "Roskilde Kommune"
+        }
+      ]
+    },
+    {
+      "name": "dragon",
+      "include": [
+        {
+          "imageHash": "1224f24",
+          "note": "Bornholms Amt"
+        },
+        {
+          "imageHash": "3d7bdaa4",
+          "note": "Bornholms Amt"
+        },
+        {
+          "imageHash": "1224f24",
+          "note": "Bornholms Regionskommune"
+        },
+        {
+          "imageHash": "78d2236c",
+          "note": "Storstrøms Amt"
+        },
+        {
+          "imageHash": "270457c0",
+          "note": "Storstrøms Amt"
+        }
+      ]
+    },
+    {
+      "name": "rooster",
+      "include": [
+        {
+          "imageHash": "76b1987f",
+          "note": "Albertslund Kommune"
+        }
+      ]
+    },
+    {
+      "name": "goose",
+      "include": [
+        {
+          "imageHash": "23a65f72",
+          "note": "Vallensbæk Kommune"
+        },
+        {
+          "imageHash": "270457c0",
+          "note": "Storstrøms Amt"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "seahorses",
+      "include": [
+        {
+          "imageHash": "5bf9d8c2",
+          "note": "Fanø Kommune"
+        }
+      ]
+    },
+    {
+      "name": "horse",
+      "include": [
+        {
+          "imageHash": "8118c8e",
+          "note": "Holstebro Kommune"
+        },
+        {
+          "imageHash": "29ae0449",
+          "note": "Horsens Kommune"
+        },
+        {
+          "imageHash": "601fd73d",
+          "note": "Odsherred Kommune"
+        },
+        {
+          "imageHash": "1ce895d0",
+          "note": "Faxe Kommune"
+        }
+      ]
+    },
+    {
       "name": "snake",
       "include": [
         {
@@ -630,6 +717,10 @@
         {
           "imageHash": "d3b7ac1",
           "note": "Københavns Amt"
+        },
+        {
+          "imageHash": "7a183462",
+          "note": "Nordjyllands Amt"
         }
       ],
       "exclude": []
