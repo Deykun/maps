@@ -124,6 +124,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "bird"
+   ],
    "items": [
     "crown",
     "walls",
@@ -960,6 +963,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ]
   }
  },
  {
@@ -1067,6 +1075,10 @@
    }
   },
   "markers": {
+   "animals": [
+    "swan",
+    "bird"
+   ],
    "items": [
     "tree"
    ]
@@ -1184,6 +1196,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "bird"
+   ],
    "items": [
     "crown",
     "walls",
@@ -1368,6 +1383,7 @@
     "lion"
    ],
    "items": [
+    "heart",
     "walls"
    ]
   }
@@ -1695,6 +1711,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "bird"
+   ],
    "items": [
     "walls"
    ]
@@ -1745,6 +1764,7 @@
   },
   "markers": {
    "animals": [
+    "shell",
     "deer"
    ]
   }
@@ -2357,6 +2377,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "bird"
+   ],
    "items": [
     "crown"
    ]

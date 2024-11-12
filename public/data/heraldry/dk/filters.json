@@ -1,6 +1,114 @@
 {
   "animals": [
     {
+      "name": "shell",
+      "include": [
+        {
+          "imageHash": "39088620",
+          "note": "Ballerup Kommune"
+        },
+        {
+          "imageHash": "4c4656f2",
+          "note": "Århus Amt"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "bird",
+      "include": [
+        {
+          "imageHash": "58871dee",
+          "note": "Vordingborg Kommune"
+        },
+        {
+          "imageHash": "9a5aa65",
+          "note": "Lolland Kommune"
+        },
+        {
+          "imageHash": "751f40fb",
+          "note": "Gladsaxe Kommune"
+        },
+        {
+          "imageHash": "6cb530e8",
+          "note": "Morsø Kommune"
+        },
+        {
+          "imageHash": "4586f70f",
+          "note": "Jammerbugt Kommune"
+        },
+        {
+          "imageHash": "2d948bc5",
+          "note": "Herning Kommune"
+        },
+        {
+          "imageHash": "7c98f409",
+          "note": "Præstø Amt"
+        },
+        {
+          "imageHash": "38f544cd",
+          "note": "Kolding Kommune"
+        },
+        {
+          "imageHash": "9e69e7e",
+          "note": "Viborg Amt"
+        },
+        {
+          "imageHash": "6cdfabd7",
+          "note": "Viborg Amt"
+        },
+        {
+          "imageHash": "2682e547",
+          "note": "Furesø Kommune"
+        },
+        {
+          "imageHash": "34ebfeb2",
+          "note": "Frederiksberg Kommune"
+        },
+        {
+          "imageHash": "2f3d7b84",
+          "note": "Frederiksberg Kommune"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "swan",
+      "include": [
+        {
+          "imageHash": "62b1f2e4",
+          "note": "Fredensborg Kommune"
+        },
+        {
+          "imageHash": "8bad573",
+          "note": "Assens"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "fish",
+      "include": [
+        {
+          "imageHash": "211be114",
+          "note": "Skive Kommune"
+        },
+        {
+          "imageHash": "509dec85",
+          "note": "Ringkøbing-Skjern Kommune"
+        },
+        {
+          "imageHash": "4069bdc6",
+          "note": "Aabenraa Kommune"
+        },
+        {
+          "imageHash": "58e0c633",
+          "note": "Middelfart Kommune"
+        }
+      ],
+      "exclude": []
+    },
+    {
       "name": "bullBison",
       "include": [
         {
@@ -71,7 +179,7 @@
       "exclude": []
     },
     {
-      "name": "seahorses",
+      "name": "seahorse",
       "include": [
         {
           "imageHash": "5bf9d8c2",
@@ -169,6 +277,42 @@
     }
   ],
   "items": [
+    {
+      "name": "bucket",
+      "include": [
+        {
+          "imageHash": "33b5236c",
+          "note": "Brøndby Kommune"
+        }
+      ]
+    },
+    {
+      "name": "key",
+      "include": [
+        {
+          "imageHash": "10d934a",
+          "note": "Næstved Kommune"
+        }
+      ]
+    },
+    {
+      "name": "horn",
+      "include": [
+        {
+          "imageHash": "61f1f6d7",
+          "note": "Ishøj Kommune"
+        }
+      ]
+    },
+    {
+      "name": "heart",
+      "include": [
+        {
+          "imageHash": "3fce7b8",
+          "note": "Nordjyllands Amt"
+        }
+      ]
+    },
     {
       "name": "crown",
       "include": [
@@ -450,6 +594,10 @@
         {
           "imageHash": "2d948bc5",
           "note": "Herning Kommune"
+        },
+        {
+          "imageHash": "3bac3ee7",
+          "note": "Svendborg Kommune"
         }
       ],
       "exclude": []

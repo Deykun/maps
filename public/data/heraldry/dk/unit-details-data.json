@@ -161,6 +161,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "shell"
+   ]
   }
  },
  {
@@ -279,6 +284,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "bucket"
+   ]
   }
  },
  {
@@ -461,6 +471,10 @@
    }
   },
   "markers": {
+   "animals": [
+    "swan",
+    "bird"
+   ],
    "items": [
     "crown"
    ]
@@ -536,6 +550,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "bird"
+   ],
    "items": [
     "crown",
     "walls",
@@ -640,6 +657,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ]
   }
  },
  {
@@ -765,6 +787,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ]
   }
  },
  {
@@ -1381,7 +1408,9 @@
   },
   "markers": {
    "items": [
-    "cross"
+    "horn",
+    "cross",
+    "musicalInstrument"
    ]
   }
  },
@@ -1850,6 +1879,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "bird"
+   ],
    "items": [
     "hammer",
     "walls"
@@ -2298,6 +2330,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "fish"
+   ]
   }
  },
  {
@@ -2535,6 +2572,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "fish"
+   ]
   }
  },
  {
@@ -2952,6 +2994,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ]
   }
  },
  {
@@ -3066,6 +3113,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "bird"
+   ],
    "items": [
     "tree"
    ]
@@ -3606,6 +3656,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ]
   }
  },
  {
@@ -3658,6 +3713,7 @@
   },
   "markers": {
    "items": [
+    "key",
     "crown"
    ]
   }
@@ -4038,6 +4094,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ]
   }
  },
  {
@@ -4232,7 +4293,8 @@
   },
   "markers": {
    "animals": [
-    "seahorses"
+    "seahorse",
+    "fish"
    ]
   }
  },
@@ -4462,6 +4524,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "bird"
+   ],
    "items": [
     "flower"
    ]
@@ -4570,6 +4635,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "fish"
+   ]
   }
  },
  {
@@ -4805,6 +4875,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -5150,6 +5225,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "fish"
+   ]
   }
  }
 ]
