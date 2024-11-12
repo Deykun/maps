@@ -60,7 +60,7 @@ const HeraldryDK = () => {
       lang="da"
       country="dk"
       mapWrapperClassName="[&>div>svg]:aspect-[414_/_330]"
-      mapWrapperClassNameForZoom0="max-w-[70vh]"
+      mapWrapperClassNameForZoom0="max-w-[50vh]"
       map={SvgMap}
       mapOffset={{
         minLatTop: 54.5,
