@@ -15,7 +15,7 @@ export type GetFilterUnitsResponse = {
 };
 
 export type GetFilteredUnitsParams = {
-  lang: string,
+  country: string,
   unitsForMapAll: CoatOfArmsMapData[],
   detailsForUnitsById: {
     [id: string]: CoatOfArmsDetailsData,
@@ -33,7 +33,7 @@ export type GetFilteredUnitsParams = {
 };
 
 export const getFilteredUnits = ({
-  lang,
+  country,
   unitsForMapAll,
   detailsForUnitsById,
   filterOperator,
@@ -212,7 +212,7 @@ export const getFilteredUnits = ({
 
   if (typeFilters.length > 0) {
     // Using and operator for type like city, county is pointless
-    subtitleParts.push({ operator: 'or', labels: typeFilters.map((value) => `heraldry.unit.type.${lang}.${value}`) })
+    subtitleParts.push({ operator: 'or', labels: typeFilters.map((value) => `heraldry.unit.type.${country}.${value}`) })
   }
 
   if (colorFilters.length > 0) {

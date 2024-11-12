@@ -29,10 +29,8 @@ type FilterItem = {
   total: number,
 }
 
-type FilterSetter = (values: string[]) => void;
-
 type Props = {
-  lang: string,
+  country: string,
   totalVisibleUnits: number,
   typeFiltersList: FilterItem[],
   colorFiltersList: FilterItem[],
@@ -44,7 +42,7 @@ type Props = {
 };
 
 const FiltersPane = ({
-  lang,
+  country,
   totalVisibleUnits,
   typeFiltersList,
   colorFiltersList,
@@ -167,7 +165,7 @@ const FiltersPane = ({
           </ButtonIcon>
         </>}
       </Panel>
-      {activeMenu === 'type' && <FiltersPaneSidebarTypes lang={lang} filtersList={typeFiltersList} />}
+      {activeMenu === 'type' && <FiltersPaneSidebarTypes country={country} filtersList={typeFiltersList} />}
       {activeMenu === 'color' && <FiltersPaneSubPanelColors className="absolute right-12 z-[-1] mt-1 mr-2" order={2} />}
       {activeMenu === 'animal' && <FiltersPaneSidebarAnimals filtersList={animalFiltersList} />}
       {activeMenu === 'item' && <FiltersPaneSidebarItems filtersList={itemFiltersList} />}

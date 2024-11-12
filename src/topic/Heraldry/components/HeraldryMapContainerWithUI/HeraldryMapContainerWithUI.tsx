@@ -39,6 +39,7 @@ import './HeraldryMapContainerWithUI.scss';
 
 export type Props = {
   lang: string,
+  country?: string,
   unitsForMapAll: CoatOfArmsMapData[],
   detailsForUnitsById: {
     [id: string]: CoatOfArmsDetailsData,
@@ -60,6 +61,7 @@ export type Props = {
 
 const HeraldryMapContainerWithUI = ({
   lang,
+  country: counrtyRaw,
   unitsForMapAll,
   detailsForUnitsById,
   typeFiltersList,
@@ -76,6 +78,7 @@ const HeraldryMapContainerWithUI = ({
   setShouldFetchDetails,
   isFetchingDetails = false,
 }: Props) => {
+    const country = counrtyRaw ?? lang;
     const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
     const zoomLevel = useZoomStore(state => state.zoomLevel);
     const [coatSize, setCoatSize] = useState(4);
@@ -101,7 +104,7 @@ const HeraldryMapContainerWithUI = ({
     }, [i18n]);
 
     const { units, unitsForMap, subtitleParts } = useGetFilteredUnits({
-      lang,
+      country,
       unitsForMapAll,
       detailsForUnitsById,
       customFilter,
@@ -124,7 +127,7 @@ const HeraldryMapContainerWithUI = ({
             {...events}
           >
             <HeraldryTitle
-              country={lang}
+              country={country}
               subtitleParts={subtitleParts}
             />
             <div>
@@ -177,7 +180,7 @@ const HeraldryMapContainerWithUI = ({
             />
             <Space side="right" />
             <FiltersPane
-              lang={lang}
+              country={country}
               totalVisibleUnits={unitsForMap.length}
               typeFiltersList={typeFiltersList}
               colorFiltersList={colorFiltersList}
