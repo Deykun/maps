@@ -91,6 +91,18 @@
         {
           "imageHash": "7bda85f5",
           "note": "Odense Kommune"
+        },
+        {
+          "imageHash": "7ba136af",
+          "note": "Nyborg Kommune"
+        },
+        {
+          "imageHash": "411943cf",
+          "note": "Køge Kommune"
+        },
+        {
+          "imageHash": "6e6e7e17",
+          "note": "Ringsted Kommune"
         }
       ],
       "exclude": []
@@ -125,8 +137,17 @@
         {
           "imageHash": "7bda85f5",
           "note": "Odense Kommune"
+        },
+        {
+          "imageHash": "7ba136af",
+          "note": "Nyborg Kommune"
+        },
+        {
+          "imageHash": "f5b97da",
+          "note": "Faaborg-Midtfyn Kommune"
         }
-      ]
+      ],
+      "exclude": []
     },
     {
       "name": "walls",
@@ -214,6 +235,75 @@
         {
           "imageHash": "411943cf",
           "note": "Køge Kommune"
+        },
+        {
+          "imageHash": "2b8c3f7c",
+          "note": "Kalundborg Kommune"
+        },
+        {
+          "imageHash": "7c98f409",
+          "note": "Præstø Amt"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "axeSaw",
+      "include": [
+        {
+          "imageHash": "4b17de3c",
+          "note": "Vejle Amt"
+        },
+        {
+          "imageHash": "2cc8ed4c",
+          "note": "Vejle Amt"
+        }
+      ]
+    },
+    {
+      "name": "lily",
+      "include": [
+        {
+          "imageHash": "7bda85f5",
+          "note": "Odense Kommune"
+        },
+        {
+          "imageHash": "330dd8b",
+          "note": "Glostrup Kommune"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "boat",
+      "include": [
+        {
+          "imageHash": "760ace11",
+          "note": "Thisted"
+        },
+        {
+          "imageHash": "693dd7e0",
+          "note": "Tønder Kommune"
+        },
+        {
+          "imageHash": "6ecc09d",
+          "note": "Odense Amt"
+        },
+        {
+          "imageHash": "625c65ba",
+          "note": "Nordfyns Kommune"
+        },
+        {
+          "imageHash": "35196927",
+          "note": "Orø Sogn"
+        },
+        {
+          "imageHash": "1b11a187",
+          "note": "Helsingør Kommune"
+        },
+        {
+          "imageHash": "177b2e59",
+          "note": "Guldborgsund Kommune"
         }
       ],
       "exclude": []
@@ -248,8 +338,17 @@
         {
           "imageHash": "6e6e7e17",
           "note": "Ringsted Kommune"
+        },
+        {
+          "imageHash": "7d9d60a",
+          "note": "Odense Amt"
+        },
+        {
+          "imageHash": "487ebffc",
+          "note": "Langeland Kommune"
         }
-      ]
+      ],
+      "exclude": []
     },
     {
       "name": "tree",
@@ -309,8 +408,29 @@
         {
           "imageHash": "bfe2931",
           "note": "Gentofte Kommune"
+        },
+        {
+          "imageHash": "7a7c344e",
+          "note": "Esbjerg Kommune"
+        },
+        {
+          "imageHash": "6cb530e8",
+          "note": "Morsø Kommune"
+        },
+        {
+          "imageHash": "62b2b5ae",
+          "note": "Århus Amt"
+        },
+        {
+          "imageHash": "43c81e43",
+          "note": "Københavns Amt"
+        },
+        {
+          "imageHash": "d3b7ac1",
+          "note": "Københavns Amt"
         }
-      ]
+      ],
+      "exclude": []
     }
   ]
 }

@@ -793,6 +793,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "lily",
+    "flower"
+   ]
   }
  },
  {
@@ -950,6 +956,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "boat"
+   ]
   }
  },
  {
@@ -2987,6 +2998,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -3250,6 +3266,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "boat"
+   ]
   }
  },
  {
@@ -3360,7 +3381,8 @@
   },
   "markers": {
    "items": [
-    "cross"
+    "cross",
+    "walls"
    ]
   }
  },
@@ -3409,6 +3431,7 @@
   },
   "markers": {
    "items": [
+    "crown",
     "cross",
     "walls"
    ]
@@ -3670,6 +3693,7 @@
   },
   "markers": {
    "items": [
+    "crown",
     "flower"
    ]
   }
@@ -4065,6 +4089,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -4213,6 +4242,7 @@
   },
   "markers": {
    "items": [
+    "cross",
     "walls"
    ]
   }
@@ -4387,6 +4417,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "flower"
+   ]
   }
  },
  {
@@ -4494,6 +4529,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "boat"
+   ]
   }
  },
  {
@@ -4548,6 +4588,8 @@
   },
   "markers": {
    "items": [
+    "crown",
+    "cross",
     "walls"
    ]
   }
@@ -4618,7 +4660,9 @@
    "items": [
     "crown",
     "cross",
-    "walls"
+    "walls",
+    "lily",
+    "flower"
    ]
   }
  },
@@ -4764,6 +4808,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "boat"
+   ]
   }
  },
  {

@@ -294,7 +294,8 @@
   },
   "markers": {
    "items": [
-    "crown"
+    "crown",
+    "tree"
    ]
   }
  },
@@ -797,7 +798,8 @@
   },
   "markers": {
    "items": [
-    "cross"
+    "cross",
+    "axeSaw"
    ]
   }
  },
@@ -1362,7 +1364,8 @@
   },
   "markers": {
    "items": [
-    "crown"
+    "crown",
+    "boat"
    ]
   }
  },
@@ -1411,7 +1414,8 @@
   },
   "markers": {
    "items": [
-    "crown"
+    "crown",
+    "tree"
    ]
   }
  },
@@ -1578,7 +1582,8 @@
   },
   "markers": {
    "items": [
-    "crown"
+    "crown",
+    "flower"
    ]
   }
  },
@@ -1630,6 +1635,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -2009,6 +2019,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "boat"
+   ]
   }
  },
  {
@@ -2109,6 +2124,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "boat"
+   ]
   }
  },
  {
@@ -2205,7 +2225,8 @@
   },
   "markers": {
    "items": [
-    "cross"
+    "cross",
+    "axeSaw"
    ]
   }
  },
@@ -2422,6 +2443,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  }
 ]
