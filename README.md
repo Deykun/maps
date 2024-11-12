@@ -8,6 +8,9 @@ Below is a list of country maps with the coats of arms of provinces, states, or 
 ### Coats of arms in Germany 🇩🇪 (🧪 beta)
 https://deykun.github.io/maps/deutsche-heraldik
 
+### Coats of arms in Denmark 🇩🇰
+https://deykun.github.io/maps/dansk-heraldik
+
 ### Coats of arms in Estonia 🇪🇪
 https://deykun.github.io/maps/eesti-heraldika
 
