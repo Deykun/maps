@@ -8,5 +8,5 @@ const miasta = miastaFromJSON as AdministrativeUnit[]
 fetchImages({
 	administrativeDivisions: miasta,
 	path: 'miasta',
-  lang: 'pl',
+  country: 'pl',
 });

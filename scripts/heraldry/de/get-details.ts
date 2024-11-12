@@ -49,7 +49,7 @@ const getChunkIndex = async (chunkIndex: number, params?: { shouldRemoveTemporar
 		administrativeDivisions: units.slice(startIndex, endIndex),
 		alreadyFetchedDivisions: unitsJSON,
 		path: 'unit',
-		lang: 'de',
+		country: 'de',
 		chunkIndex,
 		shouldRemoveTemporaryFiles: params?.shouldRemoveTemporaryFiles,
 	});
@@ -58,7 +58,7 @@ const getChunkIndex = async (chunkIndex: number, params?: { shouldRemoveTemporar
 		administrativeDivisions: formerUnits.slice(startIndex, endIndex),
 		alreadyFetchedDivisions: formerUnitJSON,
 		path: 'formerUnit',
-		lang: 'de',
+		country: 'de',
 		chunkIndex,
 		shouldRemoveTemporaryFiles: params?.shouldRemoveTemporaryFiles,
 	});

@@ -30,11 +30,11 @@ const formerUnitJSON = [
 getSprites({
   mapJSON: unitJSON,
   type: 'unit',
-  lang: 'de',
+  country: 'de',
 });
 
 getSprites({
   mapJSON: formerUnitJSON,
   type: 'formerUnit',
-  lang: 'de',
+  country: 'de',
 });

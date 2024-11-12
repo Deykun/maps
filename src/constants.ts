@@ -23,6 +23,20 @@ export const PATHS_DATA: {
   },
   {
     type: 'heraldryCountry',
+    pathNameLink: 'heraldry.dk.mapTitle',
+    path: 'dansk-heraldik',
+    title: 'Nuværende og tidligere Danmarks våbenskjolde | Heraldiske kort',
+    social: `
+      <meta property="og:title" content="Nuværende og tidligere Danmarks våbenskjolde | Heraldiske kort" />
+      <meta property="og:description" content="Filterbart kort." />
+      <meta name="description" content="Filterbart kort." />
+      <meta property="og:image" content="https://deykun.github.io/maps/social/dansk-heraldik.png" />
+    `,
+    lang: 'da',
+    country: 'dk',
+  },
+  {
+    type: 'heraldryCountry',
     pathNameLink: 'heraldry.et.mapTitle',
     path: 'eesti-heraldika',
     title: 'Praegused ja endised Eesti vappide kujundid | Heraldilised kaardid',

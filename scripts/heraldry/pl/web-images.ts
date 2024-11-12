@@ -8,23 +8,23 @@ import wojewodztwaJSON from '../../../public/data/heraldry/pl/wojewodztwa-map-da
 getSprites({
   mapJSON: gminyJson,
   type: 'gminy',
-  lang: 'pl',
+  country: 'pl',
 });
 
 getSprites({
   mapJSON: powiatyJSON,
   type: 'powiaty',
-  lang: 'pl',
+  country: 'pl',
 });
 
 getSprites({
   mapJSON: miastaJson,
   type: 'miasta',
-  lang: 'pl',
+  country: 'pl',
 });
 
 getSprites({
   mapJSON: wojewodztwaJSON,
   type: 'wojewodztwa',
-  lang: 'pl',
+  country: 'pl',
 });

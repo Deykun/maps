@@ -26,7 +26,7 @@ export const getSpriteDataFromUnit = (unit: CoatOfArmsMapData) => {
   const spriteOffsetY = spriteSize * spriteRow + spriteOffset * spriteRow;
 
   return {
-    url: `images/heraldry/${unit.lang}/web/sprites/${unit.spriteRoot || unit.type?.[0] || ''}-${spriteIndex}.webp`,
+    url: `images/heraldry/${unit.country}/web/sprites/${unit.spriteRoot || unit.type?.[0] || ''}-${spriteIndex}.webp`,
     indexX: spriteColumn,
     indexY: spriteRow,
     spriteOffsetX,

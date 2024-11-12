@@ -8,5 +8,5 @@ const powiaty = powiatyFromJSON as AdministrativeUnit[]
 fetchImages({
 	administrativeDivisions: powiaty,
 	path: 'powiaty',
-  lang: 'pl',
+  country: 'pl',
 });

@@ -21,7 +21,7 @@ fetchData({
 	alreadyFetchedDivisions: alreadyFetchedDivisions,
 	unitNames: ['kunta'],
 	path: './public/data/heraldry/fi/kunta.json',
-	lang: 'fi',
+	country: 'fi',
 });
 
 const formerAdministrativeDivisions: AdministrativeUnit[] = Object.values(urls.historicKuntaBySource).flatMap(
@@ -35,5 +35,5 @@ fetchData({
 	alreadyFetchedDivisions: alreadyFetchedFormerDivisions,
 	unitNames: ['formerKunta'],
 	path: './public/data/heraldry/fi/formerKunta.json',
-	lang: 'fi',
+	country: 'fi',
 });

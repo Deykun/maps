@@ -17,7 +17,7 @@ const errors: { title: string, url: string, details?: string[] }[] = [];
 global.processed = typeof global.processed === 'object' ? global.processed : {};
 let failed = 0;
 
-const safeFetchLoop = async ({ lang, page, title }: { lang: string, page: string, title: string }) => {
+const safeFetchLoop = async ({ country, page, title }: { country: string, page: string, title: string }) => {
   try {
     const response = await wiki.page(page);
 
@@ -31,7 +31,7 @@ const safeFetchLoop = async ({ lang, page, title }: { lang: string, page: string
       }
     }
 
-    if (lang === 'fi') {
+    if (country === 'fi') {
       const references = await response.infobox();
 
       // fi: keskus -> en: center
@@ -72,7 +72,7 @@ const safeFetchLoop = async ({ lang, page, title }: { lang: string, page: string
   }
 };
 
-const fetchDivisionFromAdministrativeUnit = async (division: AdministrativeUnit, path: string, lang: string, unitNames: string[]) => {
+const fetchDivisionFromAdministrativeUnit = async (division: AdministrativeUnit, path: string, country: string, unitNames: string[]) => {
   let locationPages: string[] = [];
   if (locationTitleByCoatOfArmsTitle[division.title]) {
     locationPages.push(locationTitleByCoatOfArmsTitle[division.title]);
@@ -95,7 +95,7 @@ const fetchDivisionFromAdministrativeUnit = async (division: AdministrativeUnit,
     const categories = await page.categories();
     // const images = await page.images();
 
-    if (lang === 'et') {
+    if (country === 'et') {
       const name = division.title.replace(' valla vapp', '').replace(' vapp', '');
 
       if (name) {
@@ -103,7 +103,7 @@ const fetchDivisionFromAdministrativeUnit = async (division: AdministrativeUnit,
       }
     }
   
-    if (lang === 'fi') {
+    if (country === 'fi') {
         const name = division.title.replace(' vaakuna', '');
 
         if (name) {
@@ -153,7 +153,7 @@ const fetchDivisionFromAdministrativeUnit = async (division: AdministrativeUnit,
         }
     }
 
-    if (lang === 'pl') {
+    if (country === 'pl') {
       const name = division.title.replace(
         'Herb gminy ', ''
       ).replace(
@@ -265,7 +265,7 @@ const fetchDivisionFromAdministrativeUnit = async (division: AdministrativeUnit,
         coordinates,
         errorMessge,
         errorFromCatch,
-      } = await safeFetchLoop({ lang, page: locationPages[i], title: division.title });
+      } = await safeFetchLoop({ country, page: locationPages[i], title: division.title });
       if (errorMessge) {
         divisionError.push(errorMessge);
       }
@@ -350,8 +350,8 @@ const fetchDivisionFromAdministrativeUnit = async (division: AdministrativeUnit,
   return division;
 };
 
-const fetchDivisionFromUserScript = async (division: UserScriptDivisionData, path: string, lang: string, unitNames: string[], indexData: {
-  lang: string;
+const fetchDivisionFromUserScript = async (division: UserScriptDivisionData, path: string, country: string, unitNames: string[], indexData: {
+  country: string;
   id: string;
   index: any;
 }) => {
@@ -383,7 +383,7 @@ const fetchDivisionFromUserScript = async (division: UserScriptDivisionData, pat
         coordinates,
         errorMessge,
         errorFromCatch,
-      } = await safeFetchLoop({ lang, page: locationPages[i], title: division.title });
+      } = await safeFetchLoop({ country, page: locationPages[i], title: division.title });
       if (errorMessge) {
         divisionError.push(errorMessge);
       }
@@ -436,7 +436,7 @@ const fetchDivisionFromUserScript = async (division: UserScriptDivisionData, pat
 
       const divisionToSave: AdministrativeUnit = {
         title: divisionPage.title || division.locationName,
-        lang: indexData.lang,
+        country: indexData.country,
         id: indexData.id,
         index: indexData.index,
         type: division.type,
@@ -488,7 +488,7 @@ type FetchDataParamsShared = {
   alreadyFetchedDivisions?: AdministrativeUnit[],
   unitNames?: string[],
   path: string,
-  lang?: string,
+  country?: string,
 }
 
 type FetchDataParamsUnit = FetchDataParamsShared & {
@@ -503,19 +503,23 @@ type FetchDataParamsUSUnit = FetchDataParamsShared & {
 
 type FetchDataParams = FetchDataParamsUnit | FetchDataParamsUSUnit;
 
+const COUNTRY_TO_LANG = {
+  'dk': 'da',
+}
+
 export const fetchData = async ({
   administrativeDivisions,
   alreadyFetchedDivisions = [],
   unitNames = [],
   path,
-  lang = 'pl',
+  country = 'pl',
   isFromUserScript = false,
 }: FetchDataParams) => {
   const unitType = unitNames[0]
   global.processed[unitType] = 0;
 
-  const landOfWikipedia = lang === 'et' ? 'et' : lang;
-  wiki.setLang(landOfWikipedia);
+  const langOfWikipedia = COUNTRY_TO_LANG[country] || country;
+  wiki.setLang(langOfWikipedia);
 
   const total = administrativeDivisions.length;
 
@@ -579,7 +583,7 @@ export const fetchData = async ({
       );
 
       const indexData = {
-        lang,
+        country,
         id: `${division.type?.[0] || 'unknown'}-${index}`,
         index,
       };
@@ -598,7 +602,7 @@ export const fetchData = async ({
         resolve(true);
       } else {
         if (isFromUserScript) {
-          const divisionData = await fetchDivisionFromUserScript(division as UserScriptDivisionData, path, lang, unitNames, indexData);
+          const divisionData = await fetchDivisionFromUserScript(division as UserScriptDivisionData, path, country, unitNames, indexData);
 
           if (divisionData) {
             contentToSave.push({
@@ -607,7 +611,7 @@ export const fetchData = async ({
             });
           }
         } else {
-          const divisionUpdate = await fetchDivisionFromAdministrativeUnit(division as AdministrativeUnit, path, lang, unitNames);
+          const divisionUpdate = await fetchDivisionFromAdministrativeUnit(division as AdministrativeUnit, path, country, unitNames);
 
           contentToSave.push({
             ...divisionUpdate,

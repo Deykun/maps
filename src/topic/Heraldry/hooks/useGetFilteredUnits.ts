@@ -21,7 +21,7 @@ type UseGetFilteredUnitsParams = Omit<GetFilteredUnitsParams,
 let postMemoCacheHash = '';
 
 export default function useGetFilteredUnits({
-  lang,
+  country,
   unitsForMapAll,
   detailsForUnitsById,
   customFilter,
@@ -53,7 +53,7 @@ export default function useGetFilteredUnits({
   } = useFiltersStore();
 
   const filterHash = JSON.stringify({
-    lang,
+    country,
     unitsForMapAll, 
     detailsForUnitsById, 
     filterOperator, 
@@ -76,7 +76,7 @@ export default function useGetFilteredUnits({
       unitsForMap,
       subtitleParts,
     } = getFilteredUnits({
-      lang,
+      country,
       unitsForMapAll,
       detailsForUnitsById,
       filterOperator,

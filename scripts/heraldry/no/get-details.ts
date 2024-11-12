@@ -13,17 +13,17 @@ const kommune = kommuneFromJSON as AdministrativeUnit[]
 getDetails({
 	administrativeDivisions: fylker,
 	path: 'fylker',
-	lang: 'no',
+	country: 'no',
 });
 
 getDetails({
 	administrativeDivisions: formerFylker,
 	path: 'formerFylker',
-	lang: 'no',
+	country: 'no',
 });
 
 getDetails({
 	administrativeDivisions: kommune,
 	path: 'kommune',
-	lang: 'no',
+	country: 'no',
 });

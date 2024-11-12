@@ -10,12 +10,12 @@ const formerUnits = formerUnitsFromJSON as AdministrativeUnit[]
 fetchImages({
 	administrativeDivisions: units,
 	path: 'fylker',
-  lang: 'no',
+  country: 'no',
 });
 
 fetchImages({
 	administrativeDivisions: formerUnits,
 	path: 'formerFylker',
-  lang: 'no',
+  country: 'no',
 });
 

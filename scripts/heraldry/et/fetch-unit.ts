@@ -20,7 +20,7 @@ await fetchData({
 	alreadyFetchedDivisions: alreadyFetchedDivisions,
 	path: './public/data/heraldry/et/unit.json',
 	unitNames: ['unit'],
-	lang: 'et',
+	country: 'et',
 });
 
 const formerAdministrativeDivisions: AdministrativeUnit[] = Object.values(urls.historicUnitBySource).flatMap(
@@ -34,5 +34,5 @@ await fetchData({
 	alreadyFetchedDivisions: alreadyFetchedFormerDivisions,
 	path: './public/data/heraldry/et/formerUnit.json',
 	unitNames: ['formerUnit'],
-	lang: 'et',
+	country: 'et',
 });

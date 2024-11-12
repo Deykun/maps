@@ -12,17 +12,17 @@ const maakunta = maakuntaFromJSon as AdministrativeUnit[];
 getDetails({
 	administrativeDivisions: kunta,
 	path: 'kunta',
-	lang: 'fi',
+	country: 'fi',
 });
 
 getDetails({
 	administrativeDivisions: formerKunta,
 	path: 'formerKunta',
-	lang: 'fi',
+	country: 'fi',
 });
 
 getDetails({
 	administrativeDivisions: maakunta,
 	path: 'maakunta',
-	lang: 'fi',
+	country: 'fi',
 });

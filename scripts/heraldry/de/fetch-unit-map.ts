@@ -26,6 +26,6 @@ console.log(`${chalk.green(`Generating chunk ${chunkIndex}`)} (${startIndex} - $
 fetchImages({
 	administrativeDivisions: units.slice(startIndex, endIndex),
 	path: 'unit',
-	lang: 'de',
+	country: 'de',
 	chunkIndex,
 });

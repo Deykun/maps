@@ -10,11 +10,11 @@ const formerUnits = formerUnitFromJSON as AdministrativeUnit[]
 fetchImages({
 	administrativeDivisions: units,
 	path: 'kunta',
-	lang: 'fi',
+	country: 'fi',
 });
 
 fetchImages({
 	administrativeDivisions: formerUnits,
 	path: 'formerKunta',
-	lang: 'fi',
+	country: 'fi',
 });

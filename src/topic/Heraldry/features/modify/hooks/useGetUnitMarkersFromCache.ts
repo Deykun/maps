@@ -6,9 +6,7 @@ import { CoatOfArmsMapData, CoatOfArmsDetailsData } from '@/topic/Heraldry/types
 import { mergeMarkersForUnit } from '@/topic/Heraldry/utils/markers/mergeMarkersForUnit';
 
 export default function useGetUnitMarkersFromCache(unit: CoatOfArmsMapData) {
-  const country = unit.lang;
-
-  const data = queryClient.getQueryData([country, 'details']);
+  const data = queryClient.getQueryData([unit.country, 'details']);
 
   const {
     animals,

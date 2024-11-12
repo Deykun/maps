@@ -10,11 +10,11 @@ const formerUnits = formerUnitFromJSON as AdministrativeUnit[]
 getDetails({
 	administrativeDivisions: units,
 	path: 'unit',
-	lang: 'et',
+	country: 'et',
 });
 
 getDetails({
 	administrativeDivisions: formerUnits,
 	path: 'formerUnit',
-	lang: 'et',
+	country: 'et',
 });

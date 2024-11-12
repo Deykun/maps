@@ -8,5 +8,5 @@ const units = unitFromJSON as AdministrativeUnit[]
 fetchImages({
 	administrativeDivisions: units,
 	path: 'maakunta',
-	lang: 'fi',
+	country: 'fi',
 });

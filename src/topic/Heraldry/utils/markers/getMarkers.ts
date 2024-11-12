@@ -1,25 +1,26 @@
-import { getMarkers as getMarkersET } from './lang/et';
-import { getMarkers as getMarkersDE } from './lang/de';
-import { getMarkers as getMarkersFI } from './lang/fi';
-import { getMarkers as getMarkersNO } from './lang/no';
-import { getMarkers as getMarkersPL } from './lang/pl';
+import { getMarkers as getMarkersDE } from './country/de';
+import { getMarkers as getMarkersDK } from './country/dk';
+import { getMarkers as getMarkersET } from './country/et';
+import { getMarkers as getMarkersFI } from './country/fi';
+import { getMarkers as getMarkersNO } from './country/no';
+import { getMarkers as getMarkersPL } from './country/pl';
 
 export const getMarkers = ({
   text: rawText = '',
   title,
   imageHash,
-  lang,
+  country,
 }: {
   text: string,
   title: string,
   imageHash: string,
-  lang: string,
+  country: string,
 }) => {
   let types: string[] = [];
   let animals: string[] = [];
   let items: string[] = [];
 
-  if (lang === 'de') {
+  if (country === 'de') {
     const response = getMarkersDE({ text: rawText, title, imageHash })
 
     types = response.types;
@@ -27,7 +28,15 @@ export const getMarkers = ({
     items = response.items;
   }
 
-  if (lang === 'et') {
+  if (country === 'dk') {
+    const response = getMarkersDK({ text: rawText, title, imageHash })
+
+    types = response.types;
+    animals = response.animals;
+    items = response.items;
+  }
+
+  if (country === 'et') {
     const response = getMarkersET({ text: rawText, title, imageHash })
 
     types = response.types;
@@ -35,7 +44,7 @@ export const getMarkers = ({
     items = response.items;
   }
 
-  if (lang === 'fi') {
+  if (country === 'fi') {
     const response = getMarkersFI({ text: rawText, title, imageHash })
 
     types = response.types;
@@ -43,7 +52,7 @@ export const getMarkers = ({
     items = response.items;
   }
 
-  if (lang === 'no') {
+  if (country === 'no') {
     const response = getMarkersNO({ text: rawText, title, imageHash })
 
     types = response.types;
@@ -51,7 +60,7 @@ export const getMarkers = ({
     items = response.items;
   }
 
-  if (lang === 'pl') {
+  if (country === 'pl') {
     const response = getMarkersPL({ text: rawText, title, imageHash });
 
     types = response.types;

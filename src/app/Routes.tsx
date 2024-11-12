@@ -6,6 +6,7 @@ import { PATHS_DATA } from '../constants';
 
 import Home from '@/pages/Home';
 
+import HeraldryDK from '@/pages/dansk-heraldik/HeraldryDK';
 import HeraldryDE from '@/pages/deutsche-heraldik/HeraldryDE';
 import HeraldryET from '@/pages/eesti-heraldika/HeraldryET';
 import HeraldryPL from '@/pages/heraldyka/HeraldryPL';
@@ -50,6 +51,7 @@ const Routes = () => {
       </Helmet>
       <Switch >
         <Route path="/maps" component={Home} />
+        <Route path="/maps/dansk-heraldik" component={HeraldryDK} />
         <Route path="/maps/deutsche-heraldik" component={HeraldryDE} />
         <Route path="/maps/eesti-heraldika" component={HeraldryET} />
         <Route path="/maps/heraldyka" component={HeraldryPL} />

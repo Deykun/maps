@@ -128,11 +128,12 @@ const fetchCountryDetailsData = async ({ dataPaths }: FetchParams) => {
 
 type Props = FetchParams & Pick<
   HeraldryMapContainerWithUIProps,
-  "lang" | "map" | "mapWrapperClassName" | "mapWrapperClassNameForZoom0" | "mapOffset" | "developmentModeFiltersTypes" | "brokenHashes"
+  "lang" | 'country' | "map" | "mapWrapperClassName" | "mapWrapperClassNameForZoom0" | "mapOffset" | "developmentModeFiltersTypes" | "brokenHashes"
 >;
 
 const HeraldryMapMap = ({
   lang,
+  country,
   mapWrapperClassName,
   mapWrapperClassNameForZoom0,
   map: Map,
@@ -164,7 +165,7 @@ const HeraldryMapMap = ({
     data: dataForDetails,
   } = useQuery({
     queryFn: () => fetchCountryDetailsData({ dataPaths }),
-    queryKey: [lang, 'details'],
+    queryKey: [country, 'details'],
     staleTime: 60 * 60 * 1000,
     enabled: shouldFetchDetails,
   });
@@ -198,6 +199,7 @@ const HeraldryMapMap = ({
   return (
     <HeraldryMapContainerWithUI
       lang={lang}
+      country={country}
       unitsForMapAll={unitsForMapAll}
       detailsForUnitsById={detailsForUnitsById}
       typeFiltersList={typeFiltersList}

@@ -28,12 +28,12 @@ type FilterItem = {
 }
 
 type Props = {
-  lang: string,
+  country: string,
   filtersList: FilterItem[],
 };
 
 const FiltersPaneSidebarTypes = ({
-  lang,
+  country,
   filtersList,
 }: Props) => {
   const shouldIgnoreFormer = useFiltersStore(state => state.shouldIgnoreFormer);
@@ -48,7 +48,7 @@ const FiltersPaneSidebarTypes = ({
     unverified,
     unverifiedFormer,
   } = useMemo(() => {
-    return filtersList.sort(getSorter({ sortBy, tBase: `heraldry.unit.type.${lang}.`, t })).reduce((stack: {
+    return filtersList.sort(getSorter({ sortBy, tBase: `heraldry.unit.type.${country}.`, t })).reduce((stack: {
       verified: FilterItem[],
       unverified: FilterItem[],
       unverifiedFormer: FilterItem[],
@@ -67,7 +67,7 @@ const FiltersPaneSidebarTypes = ({
       unverified: [],
       unverifiedFormer: [],
     })
-  }, [filtersList, lang, t, sortBy]);
+  }, [filtersList, country, t, sortBy]);
 
   useEffect(() => {
     if (clickType === 'radio' && filters.length > 1) {    
@@ -138,7 +138,7 @@ const FiltersPaneSidebarTypes = ({
                 type={clickType}
                 isSelected={filters.includes(value)}
                 onChange={() => handleToggle(value)}
-                label={t(`heraldry.unit.type.${lang}.${value}`)}
+                label={t(`heraldry.unit.type.${country}.${value}`)}
                 total={total}
               />
             </li>)}
@@ -162,7 +162,7 @@ const FiltersPaneSidebarTypes = ({
                   type={clickType}
                   isSelected={filters.includes(value)}
                   onChange={() => handleToggle(value)}
-                  label={t(`heraldry.unit.type.${lang}.${value}`)}
+                  label={t(`heraldry.unit.type.${country}.${value}`)}
                   total={total}
                 />
               </li>)}
@@ -185,7 +185,7 @@ const FiltersPaneSidebarTypes = ({
                   isDisabled={shouldIgnoreFormer && value.startsWith('former')}
                   onChange={() => handleToggle(value)}
                   // label={t(`heraldry.unit.type.${lang}.${lowercaseFirstLetter(value.replace('former', ''))}`)}
-                  label={t(`heraldry.unit.type.${lang}.${value}`)}
+                  label={t(`heraldry.unit.type.${country}.${value}`)}
                   total={total}
                   >            
                   <IconScriptBroken className="size-3 flex-shrink-0" />

@@ -44,21 +44,8 @@ export const savePageCoatOfArmsIfPossibleNO = () => {
     const groupTypes = getUnitTypesFromTitle(sectionTitle);
     let isFormerGroup = getIsFormer(sectionTitle);
 
-  //   const isH3 = headersEl.getAttribute('class').includes('mw-heading3');
-
-  //   if (isH3 && !isFormerGroup) {
-  //     const sectionHeaderH2 = getHeaderBefore(headersEl, 'mw-heading2');
-
-  //     if (sectionHeaderH2) {
-  //       const sectionTitleH2 = sectionHeaderH2.firstChild.innerText;
-
-  //       isFormerGroup = getIsFormer(sectionTitleH2);
-  //     }
-  //   }
-
     const groupIcon = isFormerGroup ? '🍂' : '🍃';
 
-  //   // Andere - Other
     if (groupTypes.length > 0) {
       headersEl.setAttribute('data-wp-title', `${groupIcon} ${groupTypes.join(', ')}`);
 
@@ -108,40 +95,5 @@ export const savePageCoatOfArmsIfPossibleNO = () => {
     }
 
     saveSource(source, coatOfArmsList);
-  })
-
-  // // It is a list page or contains a lot coat of arms, so is a good idea to check all coat of arms individualy
-  // if (pageTitle.includes('Liste der ') || coatOfArmsList.length > 20) {
-  //   const isFormerGroup = getIsFormer(pageTitle);
-  //   const notParsedImagesEl = Array.from(document.querySelectorAll('.gallerybox:not([data-wp-title]')) || [];
-
-  //   notParsedImagesEl.forEach((imageEl) => {
-  //     const coatOfArms = parseGalleryElement(imageEl, { isFormerGroup, groupTypes: [], sectionTitle: '', source, pageTitle });
-
-  //     if (coatOfArms) {
-  //       coatOfArmsList.push(coatOfArms);
-  //     }
-  //   });
-
-  //   const notParsedTablesEl = Array.from(document.querySelectorAll('.wikitable:not([data-wp-title]')) || [];
-
-  //   notParsedTablesEl.forEach((tableEl) => {
-  //     const coatOfArmsFromTable = parseTableElement(tableEl, { isFormerGroup, groupTypes: [], sectionTitle: '', source, pageTitle });
-
-  //     if (coatOfArmsFromTable.length > 0) {
-  //       coatOfArmsList = [...coatOfArmsList, ...coatOfArmsFromTable];
-  //     }
-  //   });
-
-    
-  //   if (window.parsedDE[source]) {
-  //     window.parsedDE[source] = [...window.parsedDE[source], coatOfArmsList];
-  //   } else {
-  //     window.parsedDE[source] = coatOfArmsList;
-  //   }
-
-  //   if (coatOfArmsList.length > 0) {
-  //     saveSource(source, coatOfArmsList);
-  //   }
-  // }
+  });
 };
