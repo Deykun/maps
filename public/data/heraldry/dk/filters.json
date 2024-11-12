@@ -103,9 +103,44 @@
         {
           "imageHash": "6e6e7e17",
           "note": "Ringsted Kommune"
+        },
+        {
+          "imageHash": "14172d38",
+          "note": "Fredericia Kommune"
         }
       ],
       "exclude": []
+    },
+    {
+      "name": "bell",
+      "include": [
+        {
+          "imageHash": "3cc227ab",
+          "note": "Tårnby Kommune"
+        },
+        {
+          "imageHash": "bfe2931",
+          "note": "Gentofte Kommune"
+        }
+      ]
+    },
+    {
+      "name": "windmill",
+      "include": [
+        {
+          "imageHash": "4ba3758e",
+          "note": "Sønderjyllands Amt"
+        }
+      ]
+    },
+    {
+      "name": "hammer",
+      "include": [
+        {
+          "imageHash": "2d948bc5",
+          "note": "Herning Kommune"
+        }
+      ]
     },
     {
       "name": "cross",
@@ -243,6 +278,58 @@
         {
           "imageHash": "7c98f409",
           "note": "Præstø Amt"
+        },
+        {
+          "imageHash": "2d948bc5",
+          "note": "Herning Kommune"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "sword",
+      "include": [
+        {
+          "imageHash": "5e94e0b5",
+          "note": "Hjørring Kommune"
+        },
+        {
+          "imageHash": "6112eeb8",
+          "note": "Aarhus Kommune"
+        },
+        {
+          "imageHash": "14172d38",
+          "note": "Fredericia Kommune"
+        },
+        {
+          "imageHash": "3a195ca0",
+          "note": "Aabenraa Amt"
+        },
+        {
+          "imageHash": "512f1faf",
+          "note": "Københavns Kommune"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "anchor",
+      "include": [
+        {
+          "imageHash": "19f0dc00",
+          "note": "Struer Kommune"
+        },
+        {
+          "imageHash": "7a7c344e",
+          "note": "Esbjerg Kommune"
+        },
+        {
+          "imageHash": "373eded5",
+          "note": "Dragør Kommune"
+        },
+        {
+          "imageHash": "6112eeb8",
+          "note": "Aarhus Kommune"
         }
       ],
       "exclude": []
@@ -304,6 +391,10 @@
         {
           "imageHash": "177b2e59",
           "note": "Guldborgsund Kommune"
+        },
+        {
+          "imageHash": "58d2c656",
+          "note": "Frederikssund Kommune"
         }
       ],
       "exclude": []

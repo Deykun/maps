@@ -363,7 +363,8 @@
   },
   "markers": {
    "items": [
-    "walls"
+    "walls",
+    "sword"
    ]
   }
  },
@@ -1483,7 +1484,8 @@
   },
   "markers": {
    "items": [
-    "walls"
+    "walls",
+    "sword"
    ]
   }
  },
@@ -2074,6 +2076,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "windmill"
+   ]
   }
  },
  {
@@ -2342,7 +2349,8 @@
   },
   "markers": {
    "items": [
-    "crown"
+    "crown",
+    "sword"
    ]
   }
  },
