@@ -1,7 +1,7 @@
 [
     {
         "title": "Agder",
-        "lang": "no",
+        "country": "no",
         "id": "fylker-0",
         "index": 0,
         "type": [
@@ -24,7 +24,7 @@
     },
     {
         "title": "Innlandet",
-        "lang": "no",
+        "country": "no",
         "id": "fylker-1",
         "index": 1,
         "type": [
@@ -47,7 +47,7 @@
     },
     {
         "title": "Møre og Romsdal",
-        "lang": "no",
+        "country": "no",
         "id": "fylker-2",
         "index": 2,
         "type": [
@@ -70,7 +70,7 @@
     },
     {
         "title": "Nordland",
-        "lang": "no",
+        "country": "no",
         "id": "fylker-3",
         "index": 3,
         "type": [
@@ -93,7 +93,7 @@
     },
     {
         "title": "Oslo",
-        "lang": "no",
+        "country": "no",
         "id": "fylker-4",
         "index": 4,
         "type": [
@@ -116,7 +116,7 @@
     },
     {
         "title": "Rogaland",
-        "lang": "no",
+        "country": "no",
         "id": "fylker-5",
         "index": 5,
         "type": [
@@ -139,7 +139,7 @@
     },
     {
         "title": "Trøndelag",
-        "lang": "no",
+        "country": "no",
         "id": "fylker-6",
         "index": 6,
         "type": [
@@ -162,7 +162,7 @@
     },
     {
         "title": "Finnmark",
-        "lang": "no",
+        "country": "no",
         "id": "fylker-7",
         "index": 7,
         "type": [
@@ -185,7 +185,7 @@
     },
     {
         "title": "Troms",
-        "lang": "no",
+        "country": "no",
         "id": "fylker-8",
         "index": 8,
         "type": [
@@ -208,7 +208,7 @@
     },
     {
         "title": "Buskerud",
-        "lang": "no",
+        "country": "no",
         "id": "fylker-9",
         "index": 9,
         "type": [
@@ -231,7 +231,7 @@
     },
     {
         "title": "Østfold",
-        "lang": "no",
+        "country": "no",
         "id": "fylker-10",
         "index": 10,
         "type": [
@@ -254,7 +254,7 @@
     },
     {
         "title": "Akershus",
-        "lang": "no",
+        "country": "no",
         "id": "fylker-11",
         "index": 11,
         "type": [
@@ -277,7 +277,7 @@
     },
     {
         "title": "Vestfold",
-        "lang": "no",
+        "country": "no",
         "id": "fylker-12",
         "index": 12,
         "type": [
@@ -300,7 +300,7 @@
     },
     {
         "title": "Telemark",
-        "lang": "no",
+        "country": "no",
         "id": "fylker-13",
         "index": 13,
         "type": [
@@ -323,7 +323,7 @@
     },
     {
         "title": "Vestland",
-        "lang": "no",
+        "country": "no",
         "id": "fylker-14",
         "index": 14,
         "type": [
