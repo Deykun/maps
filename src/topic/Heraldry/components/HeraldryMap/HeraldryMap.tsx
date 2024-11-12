@@ -173,15 +173,15 @@ const HeraldryMapMap = ({
   if (isError) {
     console.log('Error content', error);
 
-    return <HeraldryProgressStatus country={lang} message="heraldry.loading.error" />
+    return <HeraldryProgressStatus country={country || lang} message="heraldry.loading.error" />
   }
   
   if (isLoading) {
-    return <HeraldryProgressStatus country={lang} />
+    return <HeraldryProgressStatus country={country || lang} />
   }
 
   if (!dataForMap) {
-    return <HeraldryProgressStatus country={lang} message="heraldry.loading.error" />
+    return <HeraldryProgressStatus country={country || lang} message="heraldry.loading.error" />
   }
 
   const {

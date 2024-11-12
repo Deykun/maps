@@ -49,7 +49,7 @@ const HeraldryNO = () => {
     <HeraldryMap
       lang="no"
       mapWrapperClassName="[&>div>svg]:aspect-[507_/_730]"
-      mapWrapperClassNameForZoom0="max-w-[42vh]"
+      mapWrapperClassNameForZoom0="max-w-[38vh]"
       map={SvgMap}
       mapOffset={mapOffset}
       dataPaths={[
