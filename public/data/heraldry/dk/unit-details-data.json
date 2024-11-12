@@ -1035,6 +1035,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "deer"
+   ]
   }
  },
  {
@@ -1293,6 +1298,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "deer"
+   ],
    "items": [
     "crown"
    ]
@@ -1556,6 +1564,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "bullBison"
+   ]
   }
  },
  {
@@ -2860,7 +2873,8 @@
   "markers": {
    "items": [
     "crown",
-    "sword"
+    "sword",
+    "wheel"
    ]
   }
  },
@@ -3673,6 +3687,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "wheel"
+   ]
   }
  },
  {
@@ -4218,6 +4237,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "lion"
+   ],
    "items": [
     "crown",
     "sword"
@@ -4891,6 +4913,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "lion"
+   ]
   }
  },
  {

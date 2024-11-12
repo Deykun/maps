@@ -1,5 +1,86 @@
 {
-  "animals": [],
+  "animals": [
+    {
+      "name": "bullBison",
+      "include": [
+        {
+          "imageHash": "7c3484cd",
+          "note": "Rødovre Kommune"
+        },
+        {
+          "imageHash": "3cc1f647",
+          "note": "Aalborg Amt"
+        }
+      ]
+    },
+    {
+      "name": "snake",
+      "include": [
+        {
+          "imageHash": "3d64fac",
+          "note": "Vestsjællands Amt"
+        }
+      ]
+    },
+    {
+      "name": "deer",
+      "include": [
+        {
+          "imageHash": "3d77dd27",
+          "note": "Hørsholm Kommune"
+        },
+        {
+          "imageHash": "71b422c3",
+          "note": "Herlev Kommune"
+        },
+        {
+          "imageHash": "4c4656f2",
+          "note": "Århus Amt"
+        },
+        {
+          "imageHash": "1a3f1035",
+          "note": "Ringkjøbing Amt"
+        },
+        {
+          "imageHash": "29072363",
+          "note": "Vestjylland"
+        }
+      ]
+    },
+    {
+      "name": "lion",
+      "include": [
+        {
+          "imageHash": "7a183462",
+          "note": "Nordjyllands Amt"
+        },
+        {
+          "imageHash": "3fce7b8",
+          "note": "Nordjyllands Amt"
+        },
+        {
+          "imageHash": "7e50ced",
+          "note": "Varde Kommune"
+        },
+        {
+          "imageHash": "53b98035",
+          "note": "Ribe Amt"
+        },
+        {
+          "imageHash": "24c21728",
+          "note": "Ribe Amt"
+        },
+        {
+          "imageHash": "14172d38",
+          "note": "Fredericia Kommune"
+        },
+        {
+          "imageHash": "76bb1e9a",
+          "note": "Sønderjyllands Amt"
+        }
+      ]
+    }
+  ],
   "items": [
     {
       "name": "crown",
@@ -313,6 +394,28 @@
       "exclude": []
     },
     {
+      "name": "earOfGrain",
+      "include": [
+        {
+          "imageHash": "4ba3758e",
+          "note": "Sønderjyllands Amt"
+        }
+      ]
+    },
+    {
+      "name": "wheel",
+      "include": [
+        {
+          "imageHash": "5e94e0b5",
+          "note": "Hjørring Kommune"
+        },
+        {
+          "imageHash": "601fd73d",
+          "note": "Odsherred Kommune"
+        }
+      ]
+    },
+    {
       "name": "anchor",
       "include": [
         {
@@ -328,8 +431,16 @@
           "note": "Dragør Kommune"
         },
         {
+          "imageHash": "62b2b5ae",
+          "note": "Århus Amt"
+        },
+        {
           "imageHash": "6112eeb8",
           "note": "Aarhus Kommune"
+        },
+        {
+          "imageHash": "adbd40e",
+          "note": "Århus Amt"
         }
       ],
       "exclude": []
