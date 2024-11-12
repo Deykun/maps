@@ -19,7 +19,8 @@ const SubPanel = ({ order = 0, className, children }: Props) => {
   return (
     <div
       className={clsx(
-        'ui-panel pointer-events-auto', 
+        'ui-panel pointer-events-auto',
+        'flex-wrap w-max max-w-[192px] sm:w-none sm:max-w-none sm:flex-nowrap',
         ' ui-panel--rounded-l ui-panel--rounded-r', {
           [className || '']: className,
         },
