@@ -21,26 +21,26 @@ getDetails({
 	administrativeDivisions: gminy,
 	alreadyFetchedDivisions: cachedGminy as CoatOfArmsDetailsData[],
 	path: 'gminy',
-	lang: 'pl',
+	country: 'pl',
 });
 
 getDetails({
 	administrativeDivisions: miasta,
 	alreadyFetchedDivisions: cachedMiasta as CoatOfArmsDetailsData[],
 	path: 'miasta',
-	lang: 'pl',
+	country: 'pl',
 });
 
 getDetails({
 	administrativeDivisions: powiaty,
 	alreadyFetchedDivisions: cachedPowiaty as CoatOfArmsDetailsData[],
 	path: 'powiaty',
-	lang: 'pl',
+	country: 'pl',
 });
 
 getDetails({
 	administrativeDivisions: wojewodztwa,
 	alreadyFetchedDivisions: cachedWojewodztwa  as CoatOfArmsDetailsData[],
 	path: 'wojewodztwa',
-	lang: 'pl',
+	country: 'pl',
 });

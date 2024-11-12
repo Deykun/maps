@@ -7,17 +7,17 @@ import maakuntaJson from '../../../public/data/heraldry/fi/maakunta-map-data.jso
 getSprites({
   mapJSON: kuntaJson,
   type: 'kunta',
-  lang: 'fi',
+  country: 'fi',
 });
 
 getSprites({
   mapJSON: formerKuntaJson,
   type: 'formerKunta',
-  lang: 'fi',
+  country: 'fi',
 });
 
 getSprites({
   mapJSON: maakuntaJson,
   type: 'maakunta',
-  lang: 'fi',
+  country: 'fi',
 });

@@ -32,7 +32,7 @@ const AddOrRemoveMarkersAddPicker = ({ unit, markerType }: Props) => {
   const {
     isLoading,
     data,
-  } = useQueryFiltersSeeds({ country: unit.lang });
+  } = useQueryFiltersSeeds({ country: unit.country });
 
   const options = useMemo(() => {
     if (!data) {

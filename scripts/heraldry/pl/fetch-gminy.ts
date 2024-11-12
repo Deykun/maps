@@ -18,5 +18,5 @@ fetchData({
 	alreadyFetchedDivisions,
 	unitNames: ['gminy'],
 	path: './public/data/heraldry/pl/gminy.json',
-	lang: 'pl',
+	country: 'pl',
 });

@@ -77,6 +77,10 @@ const HeraldryDK = () => {
       brokenHashes={[
         '3408fb18',
       ]}
+      developmentModeFiltersTypes={[
+        'formerUnit',
+        'unit',
+      ]}
     />
   );
 };

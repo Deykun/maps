@@ -24,7 +24,7 @@ fetchData({
 	alreadyFetchedDivisions: alreadyFetchedDivisionsCurrent,
 	path: './public/data/heraldry/no/fylker.json',
 	unitNames: ['fylker'],
-	lang: 'no',
+	country: 'no',
 });
 
 fetchData({
@@ -33,5 +33,5 @@ fetchData({
 	alreadyFetchedDivisions: alreadyFetchedDivisionsFormer,
 	path: './public/data/heraldry/no/formerFylker.json',
 	unitNames: ['formerFylker'],
-	lang: 'no',
+	country: 'no',
 });

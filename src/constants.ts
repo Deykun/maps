@@ -18,7 +18,7 @@ export const PATHS_DATA: {
       <meta name="description" content="Interaktive Karte mit über 18.000 deutschen Wappen." />
       <meta property="og:image" content="https://deykun.github.io/maps/social/wappen-in-deutschland-map.png" />
     `,
-    lang: 'de',
+    country: 'de',
     country: 'de',
   },
   {
@@ -29,7 +29,7 @@ export const PATHS_DATA: {
     social: `
 
     `,
-    lang: 'da',
+    country: 'da',
     country: 'dk',
   },
   {
@@ -43,7 +43,7 @@ export const PATHS_DATA: {
       <meta name="description" content="Interaktiivne kaart, millel on üle 250 vapi." />
       <meta property="og:image" content="https://deykun.github.io/maps/social/praegused-ja-endised-eesti-vappide-kujundid.png" />
     `,
-    lang: 'et',
+    country: 'et',
     country: 'et',
   },
   {
@@ -57,7 +57,7 @@ export const PATHS_DATA: {
       <meta name="description" content="Interaktiivinen kartta, jossa on yli 500 vaakunaa." />
       <meta property="og:image" content="https://deykun.github.io/maps/social/suomen-vaakunat.png" />
     `,
-    lang: 'fi',
+    country: 'fi',
     country: 'fi',
   },
   {
@@ -71,7 +71,7 @@ export const PATHS_DATA: {
       <meta name="description" content="Interaktivt kart med over 350 våpenskjold." />
       <meta property="og:image" content="https://deykun.github.io/maps/social/vapenskjold-for-norske-regioner.png" />
     `,
-    lang: 'no',
+    country: 'no',
     country: 'no',
   },
   {
@@ -85,7 +85,7 @@ export const PATHS_DATA: {
       <meta name="description" content="Interaktywna mapa zawiera ponad 2500 herbów." />
       <meta property="og:image" content="https://deykun.github.io/maps/social/herby-polskich-gmin-i-miast.png" />
     `,
-    lang: 'pl',
+    country: 'pl',
     country: 'pl',
   },
 ] as const;

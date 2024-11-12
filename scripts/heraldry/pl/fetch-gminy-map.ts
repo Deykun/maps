@@ -8,5 +8,5 @@ const gminy = gminyFromJSON as AdministrativeUnit[];
 fetchImages({
 	administrativeDivisions: gminy,
 	path: 'gminy',
-  lang: 'pl',
+  country: 'pl',
 });

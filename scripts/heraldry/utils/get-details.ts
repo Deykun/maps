@@ -37,14 +37,14 @@ export const getDetails = async ({
   administrativeDivisions,
   alreadyFetchedDivisions = [],
   path,
-  lang,
+  country,
   chunkIndex,
   shouldRemoveTemporaryFiles = true,
 }: {
   administrativeDivisions: AdministrativeUnit[],
   alreadyFetchedDivisions?: CoatOfArmsDetailsData[],
   path: string,
-  lang: string,
+  country: string,
   chunkIndex?: number,
   shouldRemoveTemporaryFiles?: boolean,
 }) => {
@@ -85,10 +85,10 @@ export const getDetails = async ({
     const unit = administrativeDivisions[i];
     const fileName = getImageFileName(unit);
 
-    const expectedFilePath = `./public/images/heraldry/${lang}/${path}/${fileName}-320w.webp`;
+    const expectedFilePath = `./public/images/heraldry/${country}/${path}/${fileName}-320w.webp`;
 
-    if (!existsSync(`./public/images/heraldry/${lang}/web/temp/${path}`)){
-      mkdirSync(`./public/images/heraldry/${lang}/web/temp/${path}`);
+    if (!existsSync(`./public/images/heraldry/${country}/web/temp/${path}`)){
+      mkdirSync(`./public/images/heraldry/${country}/web/temp/${path}`);
     }
 
     if (i > 0) {
@@ -97,7 +97,7 @@ export const getDetails = async ({
 
     if (existsSync(expectedFilePath)) {
       // The ID is being added because, if the image is duplicated, sometimes a previous iteration removes it from the current one before it can be used
-      const temporaryPngFile = `./public/images/heraldry/${lang}/web/temp/${path}/${fileName}-${unit.id}-320w.png`;
+      const temporaryPngFile = `./public/images/heraldry/${country}/web/temp/${path}/${fileName}-${unit.id}-320w.png`;
 
       let wasColorTakenFromCache = false;
       let colors;
@@ -140,7 +140,7 @@ export const getDetails = async ({
         text: unit?.description || '',
         title: unit?.title || '',
         imageHash: getImageHash(unit),
-        lang,
+        country,
       });
 
       const hasMarkers = animals.length > 0 || items.length > 0;
@@ -184,11 +184,11 @@ export const getDetails = async ({
   const chunkSuffix = typeof chunkIndex === 'number' ? `-${chunkIndex}` : '';
 
   if (shouldRemoveTemporaryFiles) {
-    fsExtra.emptyDirSync(`./public/images/heraldry/${lang}/web/temp/${path}/`);
+    fsExtra.emptyDirSync(`./public/images/heraldry/${country}/web/temp/${path}/`);
   }
 
   writeFileSync(
-    `./public/data/heraldry/${lang}/${path}${chunkSuffix}-details-data.json`,
+    `./public/data/heraldry/${country}/${path}${chunkSuffix}-details-data.json`,
     JSON.stringify(contentToSaveForDetails, null, 1),
   );
 };

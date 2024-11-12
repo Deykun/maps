@@ -15,5 +15,5 @@ fetchData({
 	alreadyFetchedDivisions: alreadyFetchedDivisions,
 	path: './public/data/heraldry/no/kommune.json',
 	unitNames: ['kommune'],
-	lang: 'no',
+	country: 'no',
 });

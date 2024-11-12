@@ -10,11 +10,11 @@ fsExtra.emptyDirSync(`./public/images/heraldry/et/web/temp/`);
 getSprites({
   mapJSON: unitJSON,
   type: 'unit',
-  lang: 'et',
+  country: 'et',
 });
 
 getSprites({
   mapJSON: formerUnitJSON,
   type: 'formerUnit',
-  lang: 'et',
+  country: 'et',
 });

@@ -17,5 +17,5 @@ fetchData({
 	alreadyFetchedDivisions: alreadyFetchedDivisions,
 	path: './public/data/heraldry/de/unit.json',
 	unitNames: ['unit'],
-	lang: 'de',
+	country: 'de',
 });

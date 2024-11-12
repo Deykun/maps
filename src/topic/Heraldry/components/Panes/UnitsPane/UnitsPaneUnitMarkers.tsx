@@ -19,8 +19,6 @@ type Props = {
 }
 
 const UnitsPaneUnitMarkers = ({ className, unit, shouldShowContentAsTooltip = false, shouldShowTypes = true }: Props) => {
-  const country = unit.lang;
-
   const {
     animals,
     items,
@@ -61,7 +59,7 @@ const UnitsPaneUnitMarkers = ({ className, unit, shouldShowContentAsTooltip = fa
       {shouldShowTypes && <UnitsPaneUnitMarkersList
         list={unit.type}
         listTitle="heraldry.unit.filterTitle"
-        listElementPrefix={`heraldry.unit.type.${country}`}
+        listElementPrefix={`heraldry.unit.type.${unit.country}`}
         icon={unit.type.some((v) => !v.startsWith('former')) ? IconBuilding : IconScriptBroken}
         shouldShowContentAsTooltip={shouldShowContentAsTooltip}
       />}

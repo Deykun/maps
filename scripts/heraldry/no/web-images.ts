@@ -7,17 +7,17 @@ import kommuneJSON from '../../../public/data/heraldry/no/kommune-map-data.json'
 getSprites({
   mapJSON: fylkerJSON,
   type: 'fylker',
-  lang: 'no',
+  country: 'no',
 });
 
 getSprites({
   mapJSON: formerFylkerJSON,
   type: 'formerFylker',
-  lang: 'no',
+  country: 'no',
 });
 
 getSprites({
   mapJSON: kommuneJSON,
   type: 'kommune',
-  lang: 'no',
+  country: 'no',
 });

@@ -1,0 +1,5003 @@
+[
+ {
+  "id": "kommune-0",
+  "colors": {
+   "hexPalette": [
+    "#6c6a9f",
+    "#ffffdf",
+    "#000064"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 18.673007574152145,
+      "matcherColor": "#5596c3"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -193.90691849604673,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -59.40214188558343,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -171.53617427952807,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -14.202425836356596,
+      "matcherColor": "#243b7f"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-1",
+  "colors": {
+   "hexPalette": [
+    "#feff00",
+    "#0132b3",
+    "#434700",
+    "#a6a767",
+    "#ffffff"
+   ],
+   "byNames": {
+    "gold": [
+     {
+      "distanceToThreshold": 29.784110140523744,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": 16.159379566434055,
+      "matcherColor": "#0059c7"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": 11.96795530040238,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -116.16771189288008,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -43.74974747448982,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -105.29367804002669,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -105.06059493410291,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-2",
+  "colors": {
+   "hexPalette": [
+    "#7e9a9a",
+    "#ffffff",
+    "#000000"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 21.879435653118442,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -154.10051602317685,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -90.0199986668444,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -22.80700453464067,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-3",
+  "colors": {
+   "hexPalette": [
+    "#f6d402",
+    "#887a36",
+    "#294289"
+   ],
+   "byNames": {
+    "gold": [
+     {
+      "distanceToThreshold": 6.586518555705432,
+      "matcherColor": "#e6c633"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": 46.80909404172708,
+      "matcherColor": "#243b7f"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -182.5280937347468,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -72.53196386331621,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -38.721831425475486,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -106.30995159640929,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-4",
+  "colors": {
+   "hexPalette": [
+    "#cb7f32",
+    "#0132b3",
+    "#110100",
+    "#ffffff"
+   ],
+   "byNames": {
+    "gold": [
+     {
+      "distanceToThreshold": 14.349151157946693,
+      "matcherColor": "#bfa14e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": 16.159379566434055,
+      "matcherColor": "#0059c7"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -234.7332203628972,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -108.35604582810714,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -72.0075755401939,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -160.53344417570773,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-5",
+  "colors": {
+   "hexPalette": [
+    "#0099fe",
+    "#ff0100",
+    "#c27e38",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 59,
+      "matcherColor": "#0099ff"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": 79,
+      "matcherColor": "#f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": 18.551236447874587,
+      "matcherColor": "#bfa14e"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -61.7877987534291,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -112.47715920567435,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -125.28086787361505,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -98.2638493918495,
+      "matcherColor": "#5596c3"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-6",
+  "colors": {
+   "hexPalette": [
+    "#2ba02b",
+    "#a1cca0",
+    "#ffffff"
+   ],
+   "byNames": {
+    "green": [
+     {
+      "distanceToThreshold": 16.502873658136906,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -168.68064827758138,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -19.584135282684457,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -32.293011653104045,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -131.02094126037596,
+      "matcherColor": "#07923f"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
+  }
+ },
+ {
+  "id": "kommune-7",
+  "colors": {
+   "hexPalette": [
+    "#ffe501",
+    "#7f99ce",
+    "#0c2e82",
+    "#fefefe"
+   ],
+   "byNames": {
+    "gold": [
+     {
+      "distanceToThreshold": 23.980776337484624,
+      "matcherColor": "#ffff00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": 32.54093956450804,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -199.40114530903412,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -189.77212606197844,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -41.666120217110674,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -139.01004999748127,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "crown"
+   ]
+  }
+ },
+ {
+  "id": "kommune-8",
+  "colors": {
+   "hexPalette": [
+    "#f1cc37",
+    "#cf181b",
+    "#717171",
+    "#000000",
+    "#ffffff"
+   ],
+   "byNames": {
+    "gold": [
+     {
+      "distanceToThreshold": 46.84705356203409,
+      "matcherColor": "#e6c633"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": 19.92504681649764,
+      "matcherColor": "#f00"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -117.84789481084943,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -141.16162655934158,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -136.15702509539693,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -78.8344337691482,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "crown",
+    "walls",
+    "tree"
+   ]
+  }
+ },
+ {
+  "id": "kommune-9",
+  "colors": {
+   "hexPalette": [
+    "#006aaa",
+    "#000000",
+    "#dcdedf"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 26.38452737205678,
+      "matcherColor": "#0059c7"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -244.2853681558883,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -38.95453501482385,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -140.6713731452496,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-10",
+  "colors": {
+   "hexPalette": [
+    "#86b1d2",
+    "#0c7390",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 8.105877018683515,
+      "matcherColor": "#1d7dc0"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -224.97540884471323,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -12.587877775838024,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -119.39899665271264,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-11",
+  "colors": {
+   "hexPalette": [
+    "#0063a4",
+    "#ca8b31"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 23.599450553597407,
+      "matcherColor": "#0059c7"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": 21.973693316336913,
+      "matcherColor": "#bfa14e"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -68.2496819333274,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -119.73554777385735,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -139.8999749874922,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -107.41931597356768,
+      "matcherColor": "#5596c3"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
+  }
+ },
+ {
+  "id": "kommune-12",
+  "colors": {
+   "hexPalette": [
+    "#0201ff",
+    "#f7dc31",
+    "#505248",
+    "#ffffff",
+    "#000000"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 57.763932022500214,
+      "matcherColor": "#00f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": 32.12528027046729,
+      "matcherColor": "#e6c633"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -133.83833495247686,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -164.23414404835555,
+      "matcherColor": "#0f0"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -220.15174459567442,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -149.04148095923586,
+      "matcherColor": "#5596c3"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-13",
+  "colors": {
+   "hexPalette": [
+    "#fe1a00",
+    "#000000",
+    "#7e7e7e"
+   ],
+   "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 53.98077633748463,
+      "matcherColor": "#f00"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "blue": [
+     {
+      "distanceToThreshold": -194.4444929645757,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -177.8451044913832,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -106.4602054546371,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-14",
+  "colors": {
+   "hexPalette": [
+    "#819ecd",
+    "#084fa4",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 22.730709692831553,
+      "matcherColor": "#0059c7"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -226.83220169988675,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -43.75451797391764,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -138.17164277464119,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-15",
+  "colors": {
+   "hexPalette": [
+    "#fedc00",
+    "#0071b8",
+    "#ffffff"
+   ],
+   "byNames": {
+    "gold": [
+     {
+      "distanceToThreshold": 14.985717199976804,
+      "matcherColor": "#ffff00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": 31.69805660383019,
+      "matcherColor": "#0059c7"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -254.14068893207246,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -187.36865934510723,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -51.30588483993108,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -145.24132137559434,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "crown",
+    "flower"
+   ]
+  }
+ },
+ {
+  "id": "kommune-16",
+  "colors": {
+   "hexPalette": [
+    "#003e9c",
+    "#534501",
+    "#9aacca",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 7.240120945675017,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -175.59426062028095,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -143.97548872352286,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -55.27792503337315,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -74.85177047410241,
+      "matcherColor": "#243b7f"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-17",
+  "colors": {
+   "hexPalette": [
+    "#e60000",
+    "#7e9a9a",
+    "#000708",
+    "#ffffff"
+   ],
+   "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 55,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": 21.879435653118442,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "blue": [
+     {
+      "distanceToThreshold": -179.26136336650762,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -90.0199986668444,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -22.80700453464067,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": -154.10051602317685,
+      "matcherColor": "#fe3940"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-18",
+  "colors": {
+   "hexPalette": [
+    "#cdaf5c",
+    "#ab0a31"
+   ],
+   "byNames": {
+    "gold": [
+     {
+      "distanceToThreshold": 35.75128869403572,
+      "matcherColor": "#bfa14e"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -17.75990998359194,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -102.9570495560103,
+      "matcherColor": "#2e3192"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -114.55561590921917,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -80.83678496756448,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "crown"
+   ]
+  }
+ },
+ {
+  "id": "kommune-19",
+  "colors": {
+   "hexPalette": [
+    "#00d929",
+    "#ff0019",
+    "#585858",
+    "#b1b1b1",
+    "#000000",
+    "#ffffff"
+   ],
+   "byNames": {
+    "green": [
+     {
+      "distanceToThreshold": 34.09830056250526,
+      "matcherColor": "#0f0"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": 55,
+      "matcherColor": "#f00"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -257.3351449226718,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -186.42037253441526,
+      "matcherColor": "#2e3192"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -114.75411297019593,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -189.23287772037162,
+      "matcherColor": "#006f00"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
+  }
+ },
+ {
+  "id": "kommune-20",
+  "colors": {
+   "hexPalette": [
+    "#00ff00",
+    "#cb7f32",
+    "#ffffff",
+    "#000000"
+   ],
+   "byNames": {
+    "green": [
+     {
+      "distanceToThreshold": 90,
+      "matcherColor": "#0f0"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": 14.349151157946693,
+      "matcherColor": "#bfa14e"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -57.732548122119425,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -108.35604582810714,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -166.71788636982305,
+      "matcherColor": "#bfa14e"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -119.67832506007863,
+      "matcherColor": "#006f00"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
+  }
+ },
+ {
+  "id": "kommune-21",
+  "colors": {
+   "hexPalette": [
+    "#ffd329",
+    "#cd0f24",
+    "#b59594",
+    "#050000",
+    "#ffffff"
+   ],
+   "byNames": {
+    "gold": [
+     {
+      "distanceToThreshold": 5.6584873232258985,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": 16.58864455004924,
+      "matcherColor": "#f00"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -114.3918280236108,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -26.892469332502557,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -133.6749854782491,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -82.39733143566983,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "crown"
+   ]
+  }
+ },
+ {
+  "id": "kommune-22",
+  "colors": {
+   "hexPalette": [
+    "#d20002",
+    "#003e8f",
+    "#aaaaaa",
+    "#ffffff"
+   ],
+   "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 34.955577481779166,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": 20.490507469723177,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "blue": [
+     {
+      "distanceToThreshold": -162.2206111052708,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -36.87620966986684,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -145.14872653760247,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": -218.8611717838234,
+      "matcherColor": "#f00"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "cross"
+   ]
+  }
+ },
+ {
+  "id": "kommune-23",
+  "colors": {
+   "hexPalette": [
+    "#023e9a",
+    "#c01121",
+    "#7f8879",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 16.479889706022114,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": 6.876816261872179,
+      "matcherColor": "#f00"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -222.6037012331475,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -126.30765127475266,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -80.34600101178515,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -126.9117438792972,
+      "matcherColor": "#243b7f"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
+  }
+ },
+ {
+  "id": "kommune-24",
+  "colors": {
+   "hexPalette": [
+    "#e3e3e3"
+   ],
+   "byNames": {
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ]
+   },
+   "byNamesRejected": {}
+  }
+ },
+ {
+  "id": "kommune-25",
+  "colors": {
+   "hexPalette": [
+    "#0c428b",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 32.269150752275905,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -207.62127876775736,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -32.005434622091755,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -131.9739565670302,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
+  }
+ },
+ {
+  "id": "kommune-26",
+  "colors": {
+   "hexPalette": [
+    "#2666ff",
+    "#f70000",
+    "#818085",
+    "#050000",
+    "#d2d2d2"
+   ],
+   "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 72,
+      "matcherColor": "#f00"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -261.8252901994616,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -193.2153233909828,
+      "matcherColor": "#2e3192"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -180.79512551004314,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -123.05736805712027,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-27",
+  "colors": {
+   "hexPalette": [
+    "#0099fe",
+    "#809796",
+    "#ffffff",
+    "#000000"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 17.750502010056337,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -149.18705310373292,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -89.11405031049222,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -18.20485918406861,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
+  }
+ },
+ {
+  "id": "kommune-28",
+  "colors": {
+   "hexPalette": [
+    "#4cb1ff",
+    "#666966",
+    "#000000",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 13.592169136464037,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -257.3412605248331,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -141.85638459062918,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -135.7370685383839,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-29",
+  "colors": {
+   "hexPalette": [
+    "#8eb4ae",
+    "#01665f",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 12.250461256182717,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": 24.985717199976804,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -209.73263537268286,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -118.05055461862511,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -125.58825393865851,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -4.015623093116886,
+      "matcherColor": "#243b7f"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-30",
+  "colors": {
+   "hexPalette": [
+    "#41841c",
+    "#004a8a",
+    "#ffffff"
+   ],
+   "byNames": {
+    "green": [
+     {
+      "distanceToThreshold": 16.175884698833002,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": 19.47840082129038,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -219.2407057871639,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -66.37642185154634,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -139.55199823604875,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -25.0411665018772,
+      "matcherColor": "#00824a"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-31",
+  "colors": {
+   "hexPalette": [
+    "#002b75"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 19.35519713419685,
+      "matcherColor": "#243b7f"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -203.83622038069774,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -37.04638066409278,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -148.9330036159917,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-32",
+  "colors": {
+   "hexPalette": [
+    "#de2b37",
+    "#1051af",
+    "#60923b",
+    "#f3f4f1"
+   ],
+   "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 2.7795363909280866,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": 30.06674090580847,
+      "matcherColor": "#0059c7"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "blue": [
+     {
+      "distanceToThreshold": -56.50274722510167,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -27.991525119391525,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -32.89779329994873,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": -143.78114308404093,
+      "matcherColor": "#f00"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-33",
+  "colors": {
+   "hexPalette": [
+    "#21ad5e",
+    "#cd0f24",
+    "#ffffff"
+   ],
+   "byNames": {
+    "green": [
+     {
+      "distanceToThreshold": 11.358453971938765,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": 16.58864455004924,
+      "matcherColor": "#f00"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -216.73051747334654,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -136.30843079195554,
+      "matcherColor": "#2e3192"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -82.39733143566983,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -139.2095111464618,
+      "matcherColor": "#006f00"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
+  }
+ },
+ {
+  "id": "kommune-34",
+  "colors": {
+   "hexPalette": [
+    "#ffb01d",
+    "#e20001",
+    "#c0c0c0"
+   ],
+   "byNames": {
+    "gold": [
+     {
+      "distanceToThreshold": 20.08759591304979,
+      "matcherColor": "#e6c633"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": 50.98276374290619,
+      "matcherColor": "#f00"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -94.04434690867618,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -175.49309968659378,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -161.78959470160797,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -116.16469566857032,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-35",
+  "colors": {
+   "hexPalette": [
+    "#dc2b34",
+    "#1051af",
+    "#548631",
+    "#9aa8b7",
+    "#ffffff"
+   ],
+   "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 3.9868432440804327,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": 7.688175240836301,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "blue": [
+     {
+      "distanceToThreshold": -58.37651794169315,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -131.03141102970474,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -36.591925128346006,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": -161.0026177831079,
+      "matcherColor": "#fe3940"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "cross",
+    "walls"
+   ]
+  }
+ },
+ {
+  "id": "kommune-36",
+  "colors": {
+   "hexPalette": [
+    "#008d52"
+   ],
+   "byNames": {
+    "green": [
+     {
+      "distanceToThreshold": 46.398529491264554,
+      "matcherColor": "#00824a"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -222.70447634615516,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -40.22474744293447,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -122.40614024752566,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-37",
+  "colors": {
+   "hexPalette": [
+    "#c7b14e",
+    "#af0626",
+    "#e3e5e6"
+   ],
+   "byNames": {
+    "gold": [
+     {
+      "distanceToThreshold": 42.11145618000168,
+      "matcherColor": "#bfa14e"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -8.76936408468859,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -113.35224255832401,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -117.59094392578882,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -88.16882263148344,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
+  }
+ },
+ {
+  "id": "kommune-38",
+  "colors": {
+   "hexPalette": [
+    "#004096",
+    "#d82c34",
+    "#829dd9",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 29.42332553439283,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": 1.5079621872383768,
+      "matcherColor": "#f00"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -190.873266829646,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -135.13585011473418,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -74.27211177307072,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -134.32189789110234,
+      "matcherColor": "#2e3192"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-39",
+  "colors": {
+   "hexPalette": [
+    "#016bb5",
+    "#aca9aa",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 34.52452159428601,
+      "matcherColor": "#0059c7"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -249.73625824285688,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -49.4486180817282,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -144.0245083317198,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-40",
+  "colors": {
+   "hexPalette": [
+    "#3497c8",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 46.608384285872,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -231.02873405048723,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -77.91664149043072,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -107.92855623746667,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-41",
+  "colors": {
+   "hexPalette": [
+    "#ffd93f",
+    "#015bea",
+    "#d32431",
+    "#599637",
+    "#ffffff"
+   ],
+   "byNames": {
+    "gold": [
+     {
+      "distanceToThreshold": 26.38452737205678,
+      "matcherColor": "#e6c633"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": 24.928644166499637,
+      "matcherColor": "#0059c7"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": 4.946685616156827,
+      "matcherColor": "#f00"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -150.3931422590525,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -60.05713120009278,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -21.65572085656875,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -41.08906963663283,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
+  }
+ },
+ {
+  "id": "kommune-42",
+  "colors": {
+   "hexPalette": [
+    "#063f97",
+    "#a40812",
+    "#aaa184",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 21.373584168344067,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": 16.273577781849106,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -119.9866660740214,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -117.63727086397157,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -95.96473960482223,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -26.37198879404295,
+      "matcherColor": "#5596c3"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
+  }
+ },
+ {
+  "id": "kommune-43",
+  "colors": {
+   "hexPalette": [
+    "#00389b",
+    "#da2b34",
+    "#959691",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 14.294420471894242,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": 3.045467969716043,
+      "matcherColor": "#f00"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -223.62147486632102,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -144.20503837449783,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -54.28035701729323,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -136.10201426808445,
+      "matcherColor": "#2e3192"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-44",
+  "colors": {
+   "hexPalette": [
+    "#1051af",
+    "#fdeda7",
+    "#717a45"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 30.06674090580847,
+      "matcherColor": "#0059c7"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -119.52192861938761,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -42.85706605220514,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -16.334788923530795,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -52.07573584879245,
+      "matcherColor": "#5596c3"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-45",
+  "colors": {
+   "hexPalette": [
+    "#8f0055",
+    "#ffffff"
+   ],
+   "byNames": {
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -60.60227594174995,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -64.62343278854101,
+      "matcherColor": "#2e3192"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -109.98749960935058,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -88.49579118614776,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-46",
+  "colors": {
+   "hexPalette": [
+    "#dc2a36",
+    "#003892",
+    "#fee46d"
+   ],
+   "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 3.156002186247491,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": 19.1833367360829,
+      "matcherColor": "#243b7f"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "blue": [
+     {
+      "distanceToThreshold": -125.03902067655318,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -187.7156819482832,
+      "matcherColor": "#0f0"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -9.570108523704349,
+      "matcherColor": "#e6c633"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": -146.8219443394965,
+      "matcherColor": "#fe3940"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
+  }
+ },
+ {
+  "id": "kommune-47",
+  "colors": {
+   "hexPalette": [
+    "#d23538",
+    "#1051af",
+    "#530101",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 30.06674090580847,
+      "matcherColor": "#0059c7"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -92.00581385522992,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -86.45477117526761,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -47.80420893427021,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -136.50445287575548,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
+  }
+ },
+ {
+  "id": "kommune-48",
+  "colors": {
+   "hexPalette": [
+    "#71ca93",
+    "#009746",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 3.8948096382382147,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": 48.90946349359058,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -224.50944156134142,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -86.3830591291219,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -123.74982993189408,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -54.057003292213494,
+      "matcherColor": "#243b7f"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "crown"
+   ]
+  }
+ },
+ {
+  "id": "kommune-49",
+  "colors": {
+   "hexPalette": [
+    "#014766"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 15.345772876467784,
+      "matcherColor": "#243b7f"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -202.77376115898733,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -5.31462317123173,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -134.95897004241687,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-50",
+  "colors": {
+   "hexPalette": [
+    "#1149a3",
+    "#8b1c18",
+    "#a5a5a5",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 18.696247143873236,
+      "matcherColor": "#2e3192"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -41.72099243762351,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -73.66429054622759,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -81.32940246105903,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -88.92615619829849,
+      "matcherColor": "#243b7f"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "crown"
+   ]
+  }
+ },
+ {
+  "id": "kommune-51",
+  "colors": {
+   "hexPalette": [
+    "#008ac8",
+    "#52a127",
+    "#a9d395",
+    "#fefefe"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 27.22806078365212,
+      "matcherColor": "#1d7dc0"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -165.36120392749427,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -134.58931111445972,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -28.41945487278238,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -33.547346952713966,
+      "matcherColor": "#5596c3"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-52",
+  "colors": {
+   "hexPalette": [
+    "#e3e3e3"
+   ],
+   "byNames": {
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ]
+   },
+   "byNamesRejected": {}
+  }
+ },
+ {
+  "id": "kommune-53",
+  "colors": {
+   "hexPalette": [
+    "#00548e",
+    "#7da9b5",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 33.55648592106751,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -177.06037766796427,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -108.45474169639749,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -47.210074153504806,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-54",
+  "colors": {
+   "hexPalette": [
+    "#e05001",
+    "#8e7c6e",
+    "#1c0000",
+    "#ffffff"
+   ],
+   "byNames": {
+    "gold": [
+     {
+      "distanceToThreshold": 12.914970532025784,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -147,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -80.2640367307315,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -24.47707194019246,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -170.21946051539604,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-55",
+  "colors": {
+   "hexPalette": [
+    "#e3e3e3"
+   ],
+   "byNames": {
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ]
+   },
+   "byNamesRejected": {}
+  }
+ },
+ {
+  "id": "kommune-56",
+  "colors": {
+   "hexPalette": [
+    "#de2d37",
+    "#ebb68d",
+    "#2154a5"
+   ],
+   "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 1.6482291202043058,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": 18.107279868693176,
+      "matcherColor": "#2e3192"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "blue": [
+     {
+      "distanceToThreshold": -82.60381299342276,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -47.17275773255068,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -115.2797763576848,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": -209.07611454424938,
+      "matcherColor": "#f00"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "crown"
+   ]
+  }
+ },
+ {
+  "id": "kommune-57",
+  "colors": {
+   "hexPalette": [
+    "#e3e3e3"
+   ],
+   "byNames": {
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ]
+   },
+   "byNamesRejected": {}
+  }
+ },
+ {
+  "id": "kommune-58",
+  "colors": {
+   "hexPalette": [
+    "#dc2b34",
+    "#1051af",
+    "#85add4",
+    "#ffffff"
+   ],
+   "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 3.9868432440804327,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": 24.12513982120403,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "blue": [
+     {
+      "distanceToThreshold": -137.8585353225885,
+      "matcherColor": "#2e3192"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -136.4230129083657,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -71.24404748406687,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": -193.60903380677624,
+      "matcherColor": "#fe3940"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
+  }
+ },
+ {
+  "id": "kommune-59",
+  "colors": {
+   "hexPalette": [
+    "#555555",
+    "#a2a2a2",
+    "#ffffff",
+    "#000000"
+   ],
+   "byNames": {
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ]
+   },
+   "byNamesRejected": {}
+  }
+ },
+ {
+  "id": "kommune-60",
+  "colors": {
+   "hexPalette": [
+    "#709fcd",
+    "#00479a",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 13.42747591121993,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -226.2384691706775,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -39.403219263764285,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -144.71443525066815,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-61",
+  "colors": {
+   "hexPalette": [
+    "#d90c18"
+   ],
+   "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 33.48118660154797,
+      "matcherColor": "#f00"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "blue": [
+     {
+      "distanceToThreshold": -153.2932253964012,
+      "matcherColor": "#2e3192"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -149.7206707816412,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -92.59750980930193,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-62",
+  "colors": {
+   "hexPalette": [
+    "#003c97",
+    "#fee46d",
+    "#568533"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 16.721829983235196,
+      "matcherColor": "#243b7f"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -141.022623276442,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -12.37675517420935,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -45.66456359631643,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -57.268921714152384,
+      "matcherColor": "#243b7f"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
+  }
+ },
+ {
+  "id": "kommune-63",
+  "colors": {
+   "hexPalette": [
+    "#0180ff",
+    "#da0001",
+    "#fb8a85",
+    "#000f1e",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 34.98000799360639,
+      "matcherColor": "#0099ff"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": 42.986488953356506,
+      "matcherColor": "#f00"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -177.1964229922337,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -10.578327685441266,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -171.52537657889687,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -52.43220179290273,
+      "matcherColor": "#243b7f"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "cross"
+   ]
+  }
+ },
+ {
+  "id": "kommune-64",
+  "colors": {
+   "hexPalette": [
+    "#808696",
+    "#283951",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 13.783119966834626,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -156.71713077003955,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -15.247327757050442,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -106.52026903653501,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "cross",
+    "walls"
+   ]
+  }
+ },
+ {
+  "id": "kommune-65",
+  "colors": {
+   "hexPalette": [
+    "#a3c875",
+    "#4f890f",
+    "#fefbff"
+   ],
+   "byNames": {
+    "green": [
+     {
+      "distanceToThreshold": 5.489645604813603,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -143.53970564532824,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -83.09786860746738,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -113.68937791356154,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -69.94614268996213,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-66",
+  "colors": {
+   "hexPalette": [
+    "#44b549",
+    "#00437c",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 23,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -211.35888522576414,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -47.0196835140129,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -20.430093870391573,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -139.49937343260004,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-67",
+  "colors": {
+   "hexPalette": [
+    "#cf8326",
+    "#015cbb"
+   ],
+   "byNames": {
+    "gold": [
+     {
+      "distanceToThreshold": 7.502381006373248,
+      "matcherColor": "#bfa14e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": 47.59032635400914,
+      "matcherColor": "#0059c7"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -248.55593131155007,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -119.73482420449369,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -59.22248110151038,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -149.78798821667556,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "crown"
+   ]
+  }
+ },
+ {
+  "id": "kommune-68",
+  "colors": {
+   "hexPalette": [
+    "#f7ce18",
+    "#004683",
+    "#839ab4",
+    "#ffffff"
+   ],
+   "byNames": {
+    "gold": [
+     {
+      "distanceToThreshold": 27.10623159320295,
+      "matcherColor": "#e6c633"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": 31.451055624246578,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -164.92049661336284,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -162.11773995310628,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -110.21457046915813,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -40.588269693836565,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-69",
+  "colors": {
+   "hexPalette": [
+    "#90752c",
+    "#204392",
+    "#fee46f"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 39,
+      "matcherColor": "#243b7f"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -147.341478509682,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -124.2082270624766,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -188.5067324141375,
+      "matcherColor": "#0f0"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -11.246052522227501,
+      "matcherColor": "#e6c633"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "flower"
+   ]
+  }
+ },
+ {
+  "id": "kommune-70",
+  "colors": {
+   "hexPalette": [
+    "#a2a2a2",
+    "#ffffff",
+    "#474747"
+   ],
+   "byNames": {
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {}
+  },
+  "markers": {
+   "items": [
+    "walls",
+    "flower"
+   ]
+  }
+ },
+ {
+  "id": "kommune-71",
+  "colors": {
+   "hexPalette": [
+    "#004b8f",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 17.4794167490614,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -221.82610887728055,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -28.238313673823114,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -140.37215375395854,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-72",
+  "colors": {
+   "hexPalette": [
+    "#ffd500",
+    "#cc071e"
+   ],
+   "byNames": {
+    "gold": [
+     {
+      "distanceToThreshold": 8,
+      "matcherColor": "#ffff00"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": 20.418123560935072,
+      "matcherColor": "#f00"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -133,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -140.45947221321322,
+      "matcherColor": "#2e3192"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -140.93722090646193,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -91.90786681406595,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-73",
+  "colors": {
+   "hexPalette": [
+    "#013669",
+    "#94989b",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 18.358674372685975,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -200.1017672204158,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -22.085321464924533,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -141.9975247373096,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-74",
+  "colors": {
+   "hexPalette": [
+    "#707070",
+    "#ffffff",
+    "#000000"
+   ],
+   "byNames": {
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ]
+   },
+   "byNamesRejected": {}
+  },
+  "markers": {
+   "items": [
+    "crown"
+   ]
+  }
+ },
+ {
+  "id": "kommune-75",
+  "colors": {
+   "hexPalette": [
+    "#609600",
+    "#005e95",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 9.75062189439555,
+      "matcherColor": "#0059c7"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -229.9387036173443,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -107.36188335460378,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -23.192547743172284,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -136.3415391607186,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-76",
+  "colors": {
+   "hexPalette": [
+    "#20457d",
+    "#a6a8aa"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 49.045548849896676,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -184.79237149132524,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -25.708809348864477,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -110.1087887206302,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "flower"
+   ]
+  }
+ },
+ {
+  "id": "kommune-77",
+  "colors": {
+   "hexPalette": [
+    "#0000ff",
+    "#c0bfc4"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 60,
+      "matcherColor": "#00f"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -280.62445840513925,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -162.84748147555987,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -221.94680349314126,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-78",
+  "colors": {
+   "hexPalette": [
+    "#0090d3",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 20.465205198458406,
+      "matcherColor": "#1d7dc0"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -276.0947565705757,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -77.71347065556077,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -156.36543161974836,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-79",
+  "colors": {
+   "hexPalette": [
+    "#0062d1",
+    "#7e9a9a",
+    "#ffffff",
+    "#000001"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 21.879435653118442,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -154.10051602317685,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -90.0199986668444,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -22.80700453464067,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-80",
+  "colors": {
+   "hexPalette": [
+    "#003f7e",
+    "#a8b9d3"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 23.764658136013125,
+      "matcherColor": "#243b7f"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -183.04694318389082,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -162.13959575005984,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -65.0959631642844,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -11.487704091861431,
+      "matcherColor": "#5596c3"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-81",
+  "colors": {
+   "hexPalette": [
+    "#a10024",
+    "#144682",
+    "#87abcf",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 24.45722369200474,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -188.18799233688367,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -105.49018097760361,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -133.89430110243055,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -65.54680402144851,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
+  }
+ },
+ {
+  "id": "kommune-82",
+  "colors": {
+   "hexPalette": [
+    "#0380c8",
+    "#c34935",
+    "#000000",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 32.63213563319198,
+      "matcherColor": "#1d7dc0"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -28.342050931298132,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -115.61614722584412,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -22.158383625774917,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -115.43029447861966,
+      "matcherColor": "#5596c3"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-83",
+  "colors": {
+   "hexPalette": [
+    "#e3e3e3"
+   ],
+   "byNames": {
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ]
+   },
+   "byNamesRejected": {}
+  }
+ },
+ {
+  "id": "kommune-84",
+  "colors": {
+   "hexPalette": [
+    "#d85531",
+    "#fdfdfd"
+   ],
+   "byNames": {
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -19.52776998815917,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -126.64462248023779,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -133.00896842952304,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -20.90117428072351,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "flower"
+   ]
+  }
+ },
+ {
+  "id": "kommune-85",
+  "colors": {
+   "hexPalette": [
+    "#0075b8",
+    "#000e28",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 28.87123516745324,
+      "matcherColor": "#1d7dc0"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -178.49758219372188,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -14.923781860929893,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -169.5234192843946,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -44.355162785556516,
+      "matcherColor": "#243b7f"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-86",
+  "colors": {
+   "hexPalette": [
+    "#295884",
+    "#000002",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 30.1503768868014,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -186.39069052802876,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -22.516664983504995,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -96.04486534327236,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-87",
+  "colors": {
+   "hexPalette": [
+    "#609335",
+    "#1051af",
+    "#adb5b0",
+    "#fffffd"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 30.06674090580847,
+      "matcherColor": "#0059c7"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -227.09444801233383,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -62.45701105947717,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -53.39312148450628,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -134.8358283273382,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-88",
+  "colors": {
+   "hexPalette": [
+    "#be1545",
+    "#00447a",
+    "#678fb3",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 54.92012759203109,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -178.37946155991477,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -105.67739737212196,
+      "matcherColor": "#2e3192"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -87.65838953476364,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -56.04309544302927,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
+  }
+ },
+ {
+  "id": "kommune-89",
+  "colors": {
+   "hexPalette": [
+    "#d82c34",
+    "#00318f",
+    "#a1a0a3",
+    "#ffffff"
+   ],
+   "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 1.5079621872383768,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": 19.35519713419685,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "blue": [
+     {
+      "distanceToThreshold": -134.32189789110234,
+      "matcherColor": "#2e3192"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -46.404887105809195,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -150.6205118216172,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": -216.43717715563275,
+      "matcherColor": "#f00"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "crown",
+    "cross",
+    "walls"
+   ]
+  }
+ },
+ {
+  "id": "kommune-90",
+  "colors": {
+   "hexPalette": [
+    "#076ea4",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 21.360641827276687,
+      "matcherColor": "#1d7dc0"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -237.01734968294716,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -32.46080250571049,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -131.34785078489907,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-91",
+  "colors": {
+   "hexPalette": [
+    "#d6383d",
+    "#003a98",
+    "#650000",
+    "#9bafcd",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 5,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -178.82049707823225,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -94.38588018338982,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -147.14487683744437,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -58.63389060466659,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
+  }
+ },
+ {
+  "id": "kommune-92",
+  "colors": {
+   "hexPalette": [
+    "#fee66f",
+    "#1051af",
+    "#528333"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 30.06674090580847,
+      "matcherColor": "#0059c7"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -142.9147819234965,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -54.35033887138245,
+      "matcherColor": "#243b7f"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -8.615414616580097,
+      "matcherColor": "#006f00"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -49.512556357707226,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-93",
+  "colors": {
+   "hexPalette": [
+    "#c19502",
+    "#ffe56f",
+    "#2154a5"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 18.107279868693176,
+      "matcherColor": "#2e3192"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -209.07611454424938,
+      "matcherColor": "#f00"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -125.41908382621125,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -47.17275773255068,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -115.2797763576848,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "kommune-94",
+  "colors": {
+   "hexPalette": [
+    "#e3e3e3"
+   ],
+   "byNames": {
+    "grey": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#888"
+     }
+    ]
+   },
+   "byNamesRejected": {}
+  }
+ },
+ {
+  "id": "kommune-95",
+  "colors": {
+   "hexPalette": [
+    "#ee4042",
+    "#55b949",
+    "#000000",
+    "#ffffff"
+   ],
+   "byNames": {
+    "red": [
+     {
+      "distanceToThreshold": 12.421604168753053,
+      "matcherColor": "#fe3940"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "blue": [
+     {
+      "distanceToThreshold": -46.92123541787639,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -27.778129394513755,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -47.76826991280875,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "red": [
+     {
+      "distanceToThreshold": -181.63715332498174,
+      "matcherColor": "#f00"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
+  }
+ },
+ {
+  "id": "kommune-96",
+  "colors": {
+   "hexPalette": [
+    "#74b495",
+    "#007c46",
+    "#ffffff"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 16.93653989828975,
+      "matcherColor": "#5596c3"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": 52.788897449072024,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -212.0633492925807,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -82.94404499663497,
+      "matcherColor": "#07923f"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -124.55622449540954,
+      "matcherColor": "#b68f5e"
+     }
+    ],
+    "blue": [
+     {
+      "distanceToThreshold": -33.64827814754524,
+      "matcherColor": "#243b7f"
+     }
+    ]
+   }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
+  }
+ },
+ {
+  "id": "kommune-97",
+  "colors": {
+   "hexPalette": [
+    "#0163b4",
+    "#000004",
+    "#fcfff8"
+   ],
+   "byNames": {
+    "blue": [
+     {
+      "distanceToThreshold": 38.505814739795326,
+      "matcherColor": "#0059c7"
+     }
+    ],
+    "black": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#000"
+     }
+    ],
+    "white": [
+     {
+      "distanceToThreshold": -1,
+      "matcherColor": "#fff"
+     }
+    ]
+   },
+   "byNamesRejected": {
+    "red": [
+     {
+      "distanceToThreshold": -246.67568014775753,
+      "matcherColor": "#f00"
+     }
+    ],
+    "green": [
+     {
+      "distanceToThreshold": -50.4445562261898,
+      "matcherColor": "#00824a"
+     }
+    ],
+    "gold": [
+     {
+      "distanceToThreshold": -145.165786621454,
+      "matcherColor": "#b68f5e"
+     }
+    ]
+   }
+  }
+ }
+]

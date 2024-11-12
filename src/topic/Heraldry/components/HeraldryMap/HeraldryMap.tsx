@@ -165,7 +165,7 @@ const HeraldryMapMap = ({
     data: dataForDetails,
   } = useQuery({
     queryFn: () => fetchCountryDetailsData({ dataPaths }),
-    queryKey: [lang, 'details'],
+    queryKey: [country, 'details'],
     staleTime: 60 * 60 * 1000,
     enabled: shouldFetchDetails,
   });

@@ -1,0 +1,316 @@
+{
+  "animals": [],
+  "items": [
+    {
+      "name": "crown",
+      "include": [
+        {
+          "imageHash": "51a02953",
+          "note": "Brønderslev Kommune"
+        },
+        {
+          "imageHash": "5e94e0b5",
+          "note": "Hjørring Kommune"
+        },
+        {
+          "imageHash": "193fe82b",
+          "note": "Thisted Kommune"
+        },
+        {
+          "imageHash": "9e69e7e",
+          "note": "Viborg Amt"
+        },
+        {
+          "imageHash": "24c21728",
+          "note": "Ribe Amt"
+        },
+        {
+          "imageHash": "53b98035",
+          "note": "Ribe Amt"
+        },
+        {
+          "imageHash": "7d9d60a",
+          "note": "Odense Amt"
+        },
+        {
+          "imageHash": "10d934a",
+          "note": "Næstved Kommune"
+        },
+        {
+          "imageHash": "614319fc",
+          "note": "Stevns Kommune"
+        },
+        {
+          "imageHash": "35196927",
+          "note": "Orø Sogn"
+        },
+        {
+          "imageHash": "3d77dd27",
+          "note": "Hørsholm Kommune"
+        },
+        {
+          "imageHash": "199cd45d",
+          "note": "Frederiksborg Amt"
+        },
+        {
+          "imageHash": "3d71891c",
+          "note": "Frederiksborg Amt"
+        },
+        {
+          "imageHash": "7350ee6f",
+          "note": "Hillerød Kommune"
+        },
+        {
+          "imageHash": "62b1f2e4",
+          "note": "Fredensborg Kommune"
+        },
+        {
+          "imageHash": "2fd11556",
+          "note": "Halsnæs Kommune"
+        },
+        {
+          "imageHash": "3a195ca0",
+          "note": "Aabenraa Amt"
+        },
+        {
+          "imageHash": "2f3d7b84",
+          "note": "Frederiksberg Kommune"
+        },
+        {
+          "imageHash": "34ebfeb2",
+          "note": "Frederiksberg Kommune"
+        },
+        {
+          "imageHash": "43c81e43",
+          "note": "Københavns Amt"
+        },
+        {
+          "imageHash": "d3b7ac1",
+          "note": "Københavns Amt"
+        },
+        {
+          "imageHash": "7bda85f5",
+          "note": "Odense Kommune"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "cross",
+      "include": [
+        {
+          "imageHash": "46c24827",
+          "note": "Lemvig Kommune"
+        },
+        {
+          "imageHash": "4b17de3c",
+          "note": "Vejle Amt"
+        },
+        {
+          "imageHash": "2cc8ed4c",
+          "note": "Vejle Amt"
+        },
+        {
+          "imageHash": "411943cf",
+          "note": "Køge Kommune"
+        },
+        {
+          "imageHash": "61f1f6d7",
+          "note": "Ishøj Kommune"
+        },
+        {
+          "imageHash": "2b8c3f7c",
+          "note": "Kalundborg Kommune"
+        },
+        {
+          "imageHash": "7bda85f5",
+          "note": "Odense Kommune"
+        }
+      ]
+    },
+    {
+      "name": "walls",
+      "include": [
+        {
+          "imageHash": "33c1d1d1",
+          "note": "Aalborg Kommune"
+        },
+        {
+          "imageHash": "3fce7b8",
+          "note": "Nordjyllands Amt"
+        },
+        {
+          "imageHash": "7150f9fa",
+          "note": "Viborg Kommune"
+        },
+        {
+          "imageHash": "46c24827",
+          "note": "Lemvig Kommune"
+        },
+        {
+          "imageHash": "72e61a54",
+          "note": "Silkeborg Kommune"
+        },
+        {
+          "imageHash": "5b70756f",
+          "note": "Skanderborg Kommune"
+        },
+        {
+          "imageHash": "6112eeb8",
+          "note": "Aarhus Kommune"
+        },
+        {
+          "imageHash": "7bda85f5",
+          "note": "Odense Kommune"
+        },
+        {
+          "imageHash": "7ba136af",
+          "note": "Nyborg Kommune"
+        },
+        {
+          "imageHash": "f5b97da",
+          "note": "Faaborg-Midtfyn Kommune"
+        },
+        {
+          "imageHash": "6d4df606",
+          "note": "Sønderborg Kommune"
+        },
+        {
+          "imageHash": "626e1dfc",
+          "note": "Hvidovre Kommune"
+        },
+        {
+          "imageHash": "512f1faf",
+          "note": "Københavns Kommune"
+        },
+        {
+          "imageHash": "2f3d7b84",
+          "note": "Frederiksberg Kommune"
+        },
+        {
+          "imageHash": "34ebfeb2",
+          "note": "Frederiksberg Kommune"
+        },
+        {
+          "imageHash": "7cebe545",
+          "note": "Høje-Taastrup Kommune"
+        },
+        {
+          "imageHash": "7688f5",
+          "note": "Roskilde Kommune"
+        },
+        {
+          "imageHash": "3cc227ab",
+          "note": "Tårnby Kommune"
+        },
+        {
+          "imageHash": "24c21728",
+          "note": "Ribe Amt"
+        },
+        {
+          "imageHash": "53b98035",
+          "note": "Ribe Amt"
+        },
+        {
+          "imageHash": "411943cf",
+          "note": "Køge Kommune"
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "name": "flower",
+      "include": [
+        {
+          "imageHash": "38f544cd",
+          "note": "Kolding Kommune"
+        },
+        {
+          "imageHash": "fb21f2",
+          "note": "Assens Kommune"
+        },
+        {
+          "imageHash": "2fd11556",
+          "note": "Halsnæs Kommune"
+        },
+        {
+          "imageHash": "758fc42f",
+          "note": "Roskilde Amt"
+        },
+        {
+          "imageHash": "76cbd795",
+          "note": "Roskilde Amt"
+        },
+        {
+          "imageHash": "7688f5",
+          "note": "Roskilde Kommune"
+        },
+        {
+          "imageHash": "6e6e7e17",
+          "note": "Ringsted Kommune"
+        }
+      ]
+    },
+    {
+      "name": "tree",
+      "include": [
+        {
+          "imageHash": "7a803ebf",
+          "note": "Odder Kommune"
+        },
+        {
+          "imageHash": "29ae0449",
+          "note": "Horsens Kommune"
+        },
+        {
+          "imageHash": "6a1ba53c",
+          "note": "Vejle Kommune"
+        },
+        {
+          "imageHash": "1d5d540a",
+          "note": "Fyns Amt"
+        },
+        {
+          "imageHash": "8bad573",
+          "note": "Assens"
+        },
+        {
+          "imageHash": "5160cca",
+          "note": "Ærø Kommune"
+        },
+        {
+          "imageHash": "1409da95",
+          "note": "Egedal Kommune"
+        },
+        {
+          "imageHash": "4457e8bc",
+          "note": "Holbæk Kommune"
+        },
+        {
+          "imageHash": "34ebfeb2",
+          "note": "Frederiksberg Kommune"
+        },
+        {
+          "imageHash": "2f3d7b84",
+          "note": "Frederiksberg Kommune"
+        },
+        {
+          "imageHash": "762ab259",
+          "note": "Rudersdal Kommune"
+        },
+        {
+          "imageHash": "199cd45d",
+          "note": "Frederiksborg Amt"
+        },
+        {
+          "imageHash": "3d71891c",
+          "note": "Frederiksborg Amt"
+        },
+        {
+          "imageHash": "bfe2931",
+          "note": "Gentofte Kommune"
+        }
+      ]
+    }
+  ]
+}

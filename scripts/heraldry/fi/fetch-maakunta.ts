@@ -18,5 +18,5 @@ fetchData({
 	// alreadyFetchedDivisions,
 	unitNames: ['maakunta'],
 	path: './public/data/heraldry/fi/maakunta.json',
-	lang: 'fi',
+	country: 'fi',
 });

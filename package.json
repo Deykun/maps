@@ -16,6 +16,7 @@
     "fetch:dk:unit": "tsx scripts/heraldry/dk/fetch-unit.ts",
     "fetch:dk:unit-map": "tsx scripts/heraldry/dk/fetch-unit-map.ts",
     "web:dk": "tsx scripts/heraldry/dk/web-images.ts",
+    "index:dk": "tsx scripts/heraldry/dk/get-details.ts",
     "fetch:et:unit": "tsx scripts/heraldry/et/fetch-unit.ts",
     "fetch:et:unit-map": "tsx scripts/heraldry/et/fetch-unit-map.ts",
     "web:et": "tsx scripts/heraldry/et/web-images.ts",

@@ -161,7 +161,7 @@ const HeraldryMapContainerWithUI = ({
             <Space side="left" />
             <NavigationPane />
             <DevelopmentPane
-              country={lang}
+              country={country}
               unitTypes={developmentModeFiltersTypes || typeFiltersList.map(({ value }) => value)}
             />
           </div>

@@ -16,7 +16,7 @@ type ImagesByIndex = {
 export const getSprites = async ({
   mapJSON,
   type,
-  lang,
+  country,
 }) => {
   const {
     imagesByIndex,
@@ -78,12 +78,12 @@ export const getSprites = async ({
     sprites[spriteIndex][spriteColumn][spriteRow] = imagesByIndex[i] || './public/images/heraldry/blank-80w.png';
   }
 
-  if (!existsSync(`./public/images/heraldry/${lang}/web/temp/${type}`)){
-    mkdirSync(`./public/images/heraldry/${lang}/web/temp/${type}`);
+  if (!existsSync(`./public/images/heraldry/${country}/web/temp/${type}`)){
+    mkdirSync(`./public/images/heraldry/${country}/web/temp/${type}`);
   }
 
-  fsExtra.emptyDirSync(`./public/images/heraldry/${lang}/web/temp/${type}`);
-  fsExtra.emptyDirSync(`./public/images/heraldry/${lang}/web/sprites/`);
+  fsExtra.emptyDirSync(`./public/images/heraldry/${country}/web/temp/${type}`);
+  fsExtra.emptyDirSync(`./public/images/heraldry/${country}/web/sprites/`);
 
   console.log(`${type}: ${chalk.gray('Current images were removed.')}`)
   console.log(' ');
@@ -99,7 +99,7 @@ export const getSprites = async ({
     const columnsSprites: string[] = [];
 
     for (let spriteColumn = 0; spriteColumn <= (sprites[spriteIndex]?.columnCount || 0); spriteColumn++) {
-      const file = `./public/images/heraldry/${lang}/web/temp/${type}/${type}-sprite-${spriteIndex}-column-${spriteColumn}.png`;
+      const file = `./public/images/heraldry/${country}/web/temp/${type}/${type}-sprite-${spriteIndex}-column-${spriteColumn}.png`;
 
       if (sprites[spriteIndex] && sprites[spriteIndex][spriteColumn]) {
         const columnSprites = await joinImages(Object.values(sprites[spriteIndex][spriteColumn]), {
@@ -122,18 +122,18 @@ export const getSprites = async ({
         offset: spriteOffset,
         color: { r: 0, g: 0, b: 0, alpha: 0 },
       }).then((sprite) => {
-          sprite.toFile(`./public/images/heraldry/${lang}/web/sprites/${type}-${spriteIndex}.webp`);
+          sprite.toFile(`./public/images/heraldry/${country}/web/sprites/${type}-${spriteIndex}.webp`);
       });
   
       console.log(`${type}: sprite ${chalk.green(spriteIndex)} saved.`);
     } else {
       console.log(`${type}: sprite ${chalk.yellow(spriteIndex)} was created as empty.`);
 
-      await sharp('./public/images/heraldry/blank-80w.png').toFile(`./public/images/heraldry/${lang}/web/sprites/${type}-${spriteIndex}.webp`);
+      await sharp('./public/images/heraldry/blank-80w.png').toFile(`./public/images/heraldry/${country}/web/sprites/${type}-${spriteIndex}.webp`);
     }
   }
 
   console.log(`${type}: ${chalk.gray('temporary files removed (you can unncomment next line to keep it).')}`);
-  fsExtra.emptyDirSync(`./public/images/heraldry/${lang}/web/temp/${type}`);
+  fsExtra.emptyDirSync(`./public/images/heraldry/${country}/web/temp/${type}`);
   console.log('')
 }

@@ -23,7 +23,7 @@ fetchData({
 	alreadyFetchedDivisions: alreadyFetchedDivisionsCurrent,
 	path: './public/data/heraldry/dk/unit.json',
 	unitNames: ['unit'],
-	lang: 'dk',
+	country: 'dk',
 });
 
 fetchData({
@@ -32,5 +32,5 @@ fetchData({
 	alreadyFetchedDivisions: alreadyFetchedDivisionsFormer,
 	path: './public/data/heraldry/dk/formerUnit.json',
 	unitNames: ['formerUnit'],
-	lang: 'dk',
+	country: 'dk',
 });

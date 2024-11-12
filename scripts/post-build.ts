@@ -18,7 +18,7 @@ PATHS_DATA.forEach(({ type, path, title, social, lang = 'en', country }) => {
     const sprites = fs.readdirSync(`${BASEDIR}/public/images/heraldry/${country}/web/sprites/`);
 
     if (sprites.length > 0) {
-      const preloadSprites = sprites.map((filename) => `<link rel="prefetch" href="/maps/images/heraldry/${lang}/web/sprites/${filename}" as="image" />`);
+      const preloadSprites = sprites.map((filename) => `<link rel="prefetch" href="/maps/images/heraldry/${country}/web/sprites/${filename}" as="image" />`);
 
       html = html.replace('<!-- PRELOAD -->', preloadSprites.join(`
     `));
