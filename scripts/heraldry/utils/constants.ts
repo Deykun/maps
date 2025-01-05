@@ -1,5 +1,6 @@
 export const locationTitleByCoatOfArmsTitle = {
   // PL
+  'Herb Wolina': 'Wolin (wyspa)',
   'Herb gminy Osieczna (województwo pomorskie)': 'Osieczna (gmina w województwie pomorskim)',
   'Herb gminy Zielona Góra': 'Zielona Góra (gmina wiejska)',
   'Herb powiatu elbląskiego': 'Powiat elbląski',

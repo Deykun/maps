@@ -170,8 +170,6 @@ const HeraldryMap = ({
     enabled: shouldFetchDetails,
   });
 
-  console.log('country', country);
-
   if (isError) {
     console.log('Error content', error);
 
