@@ -39,7 +39,7 @@ import './HeraldryMapContainerWithUI.scss';
 
 export type Props = {
   lang: string,
-  country?: string,
+  country: string,
   unitsForMapAll: CoatOfArmsMapData[],
   detailsForUnitsById: {
     [id: string]: CoatOfArmsDetailsData,
@@ -61,7 +61,7 @@ export type Props = {
 
 const HeraldryMapContainerWithUI = ({
   lang,
-  country: counrtyRaw,
+  country,
   unitsForMapAll,
   detailsForUnitsById,
   typeFiltersList,
@@ -78,7 +78,6 @@ const HeraldryMapContainerWithUI = ({
   setShouldFetchDetails,
   isFetchingDetails = false,
 }: Props) => {
-    const country = counrtyRaw ?? lang;
     const wrapperRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
     const zoomLevel = useZoomStore(state => state.zoomLevel);
     const [coatSize, setCoatSize] = useState(4);

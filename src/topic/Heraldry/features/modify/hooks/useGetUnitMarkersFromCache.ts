@@ -1,12 +1,13 @@
 import { useMemo } from 'react';
 
-import { queryClient } from '@/main';
+import queryClient from '@/providers/utils/queryClient';
 import { CoatOfArmsMapData, CoatOfArmsDetailsData } from '@/topic/Heraldry/types';
 
 import { mergeMarkersForUnit } from '@/topic/Heraldry/utils/markers/mergeMarkersForUnit';
 
-export default function useGetUnitMarkersFromCache(unit: CoatOfArmsMapData) {
-  const data = queryClient.getQueryData([unit.country, 'details']);
+export default function useGetUnitMarkersFromCache(unit: CoatOfArmsMapData, country: string) {
+  const data = queryClient.getQueryData(['details', country]);
+  const data2 = queryClient.getQueryData(['dev', country]);
 
   const {
     animals,
@@ -33,7 +34,7 @@ export default function useGetUnitMarkersFromCache(unit: CoatOfArmsMapData) {
       animals,
       items,
     }
-  }, [data]);
+  }, [data, unit.id]);
 
   return {
     animals,

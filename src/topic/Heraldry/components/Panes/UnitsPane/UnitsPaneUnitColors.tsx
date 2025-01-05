@@ -6,7 +6,7 @@ import { useFiltersDevelopmentStore } from '@/topic/Heraldry/stores/filtersDevel
 
 import { colorsMarkersByNames } from '@/topic/Heraldry/constants';
 
-import { queryClient } from '@/main';
+import queryClient from '@/providers/utils/queryClient';
 import { CoatOfArmsDetailsData } from '@/topic/Heraldry/types';
 
 type Props = {
@@ -21,7 +21,7 @@ const UnitsPaneUnitColors = ({ id, country, shouldShowOnlyRejected = false, labe
 
   const { t } = useTranslation();
 
-  const data = queryClient.getQueryData([country, 'details']);
+  const data = queryClient.getQueryData(['details', country]);
 
   const details = useMemo(() => {
     if (!data) {

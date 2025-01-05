@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import { useMemo, useState } from 'react';
-import { queryClient } from '@/main';
+import queryClient from '@/providers/utils/queryClient';
 
 import {
   minLengthOfLongDescription,

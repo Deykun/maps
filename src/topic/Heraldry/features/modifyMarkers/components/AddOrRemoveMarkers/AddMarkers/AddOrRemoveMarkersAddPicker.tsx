@@ -25,7 +25,7 @@ const AddOrRemoveMarkersAddPicker = ({ unit, markerType }: Props) => {
   const {
     animals,
     items,
-  } = useGetUnitMarkersFromCache(unit)
+  } = useGetUnitMarkersFromCache(unit, unit.country)
   const [inputValue, setInputValue] = useState('');
   const { t } = useTranslation();
 

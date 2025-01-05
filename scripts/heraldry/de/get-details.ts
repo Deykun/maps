@@ -64,7 +64,7 @@ const getChunkIndex = async (chunkIndex: number, params?: { shouldRemoveTemporar
 	});
 }
 
-if (typeof chunkIndex !== 'number' && chunkArg === 'chunk=all') {
+if (typeof chunkIndex !== 'number' && chunkArg !== 'chunk=all') {
 	console.log(`${chalk.red('Missing chunk data.')} Add chunk=0 to generate first chunk data. Or chunk=all to generate all.`);
 
 	process.exit();

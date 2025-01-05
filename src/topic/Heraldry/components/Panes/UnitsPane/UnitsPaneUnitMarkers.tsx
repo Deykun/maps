@@ -22,7 +22,7 @@ const UnitsPaneUnitMarkers = ({ className, unit, shouldShowContentAsTooltip = fa
   const {
     animals,
     items,
-  } = useGetUnitMarkersFromCache(unit)
+  } = useGetUnitMarkersFromCache(unit, unit.country);
 
   const hasContent = animals.length > 0 || items.length > 0 || unit.type.length > 0;
 

@@ -25,7 +25,7 @@ const AddOrRemoveMarkersSection = ({ unit }: Props) => {
   const {
     animals,
     items,
-  } = useGetUnitMarkersFromCache(unit)
+  } = useGetUnitMarkersFromCache(unit, unit.country);
   const shortcuts = useFilterModificationStore(selectShortcuts);
 
   const { t } = useTranslation();

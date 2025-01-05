@@ -81,14 +81,14 @@ const UnitsPaneSidebarDetailsContent = () => {
               'flex gap-1 p-1',
               'opacity-10 saturate-0 hover:saturate-100 hover:opacity-100 duration-150',
             )}>
-              <UnitsPaneUnitColors id={unit.id} country={unit.lang} labelPosition="bottomRight" shouldShowOnlyRejected />  
+              <UnitsPaneUnitColors id={unit.id} country={unit.country} labelPosition="bottomRight" shouldShowOnlyRejected />  
             </div>
           }
           <div className={clsx(
             'absolute bottom-0 right-0',
             'flex gap-1 p-1',
           )}>
-            <UnitsPaneUnitColors id={unit.id} country={unit.lang} labelPosition="bottomLeft" />  
+            <UnitsPaneUnitColors id={unit.id} country={unit.country} labelPosition="bottomLeft" />  
           </div>
         </span>
         <h3 className="w-full px-2 text-center text-[18px] font-[500] tracking-wide text-white duration-300">
@@ -119,7 +119,7 @@ const UnitsPaneSidebarDetailsContent = () => {
       </Panel>
       <UnitsPaneUnitMarkers unit={unit} />
       <AddOrRemoveMarkers unit={unit} />
-      <UnitsPaneUnitDescription id={unit.id} country={unit.lang} mergedIds={unit.mergedIds} />
+      <UnitsPaneUnitDescription id={unit.id} country={unit.country} mergedIds={unit.mergedIds} />
     </>
   );
 };

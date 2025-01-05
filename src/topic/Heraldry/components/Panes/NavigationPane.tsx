@@ -1,4 +1,4 @@
-import { memo, useEffect, useState } from 'react';
+import { memo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from "wouter";
 import clsx from 'clsx';

@@ -30,7 +30,7 @@ const RemoveMarkers = ({ unit }: Props) => {
   const {
     animals,
     items,
-  } = useGetUnitMarkersFromCache(unit)
+  } = useGetUnitMarkersFromCache(unit, unit.country);
 
   if (items.length === 0 && animals.length === 0) {
     return null;

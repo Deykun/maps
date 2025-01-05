@@ -7,7 +7,7 @@ import {
 
 import { copyText } from '@/utils/text';
 
-import { queryClient } from '@/main';
+import queryClient from '@/providers/utils/queryClient';
 
 import IconCopy from '@/components/Icons/IconCopy';
 
@@ -39,6 +39,7 @@ const UnitsPaneUnitDescriptionContent = ({ id, country, shouldShowUnitTitle = fa
 
     if (data) {
       const unitData = Object.values(data).find(({ id: idToCheck }) => idToCheck === id);
+
       return {
         title: unitData?.title || '',
         description: unitData?.description || '',

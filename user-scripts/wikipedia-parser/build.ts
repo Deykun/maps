@@ -1,5 +1,5 @@
 import chalk from 'chalk'
-import fs from 'fs';
+import fs, { existsSync, mkdirSync } from 'fs';
 
 console.log()
 console.log(chalk.green("Building..."));
@@ -36,5 +36,9 @@ partPaths.forEach((path) => {
 console.log()
 console.log(chalk.green("Saving..."));
 console.log()
+
+if (!existsSync('./dist-us')){
+  mkdirSync('./dist-us');
+}
 
 fs.writeFileSync('./dist-us/wikipedia-parser.user.js', template);

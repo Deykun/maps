@@ -131,7 +131,7 @@ type Props = FetchParams & Pick<
   "lang" | 'country' | "map" | "mapWrapperClassName" | "mapWrapperClassNameForZoom0" | "mapOffset" | "developmentModeFiltersTypes" | "brokenHashes"
 >;
 
-const HeraldryMapMap = ({
+const HeraldryMap = ({
   lang,
   country,
   mapWrapperClassName,
@@ -157,7 +157,7 @@ const HeraldryMapMap = ({
     data: dataForMap,
   } = useQuery({
     queryFn: () => fetchCountryData({ dataPaths, filterForCountryData, sortForCountryData }),
-    queryKey: [lang, 'map'],
+    queryKey: ['map', lang],
   });
 
   const {
@@ -165,10 +165,12 @@ const HeraldryMapMap = ({
     data: dataForDetails,
   } = useQuery({
     queryFn: () => fetchCountryDetailsData({ dataPaths }),
-    queryKey: [country, 'details'],
+    queryKey: ['details', country],
     staleTime: 60 * 60 * 1000,
     enabled: shouldFetchDetails,
   });
+
+  console.log('country', country);
 
   if (isError) {
     console.log('Error content', error);
@@ -219,4 +221,4 @@ const HeraldryMapMap = ({
   );
 };
 
-export default HeraldryMapMap;
+export default HeraldryMap;

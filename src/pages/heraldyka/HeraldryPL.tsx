@@ -43,6 +43,7 @@ const HeraldryPL = () => {
   return (
     <HeraldryMap
       lang="pl"
+      country="pl"
       mapWrapperClassName="[&>div>svg]:aspect-[820_/_775]"
       mapWrapperClassNameForZoom0="max-w-[50vh]"
       map={SvgMap}
