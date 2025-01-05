@@ -91,12 +91,12 @@ global.processed = typeof global.processed === 'object' ? global.processed : {};
 export const fetchImages = async ({
   administrativeDivisions,
   path,
-  lang,
+  country,
   chunkIndex,
 }: {
   administrativeDivisions: AdministrativeUnit[]
   path: string,
-  lang: string,
+  country: string,
   chunkIndex?: number,
 }) => {
   const contentToSaveForMap: CoatOfArmsMapData[] = [];
@@ -114,8 +114,8 @@ export const fetchImages = async ({
     return;
   }
 
-  if (!existsSync(`./public/images/heraldry/${lang}/${path}`)) {
-    mkdirSync(`./public/images/heraldry/${lang}/${path}`);
+  if (!existsSync(`./public/images/heraldry/${country}/${path}`)) {
+    mkdirSync(`./public/images/heraldry/${country}/${path}`);
   }
 
   const getTimeStatus = () => {
@@ -139,13 +139,13 @@ export const fetchImages = async ({
       const unit = administrativeDivisions[i];
       const fileName = getImageFileName(unit);
 
-      const expectedFilePath = `./public/images/heraldry/${lang}/${path}/${fileName}-320w.webp`;
+      const expectedFilePath = `./public/images/heraldry/${country}/${path}/${fileName}-320w.webp`;
 
       const format = unit.image?.source?.split('.')?.at(-1)?.toLowerCase() || 'png';
 
       if (unit.image?.source) {
         if (!existsSync(expectedFilePath)) {
-          await download(unit.image?.source, fileName, format, path, lang)
+          await download(unit.image?.source, fileName, format, path, country)
 
           if (i > 0) {
             clearLastLines(3);
@@ -174,7 +174,7 @@ export const fetchImages = async ({
 
         const {
           imagesList,
-        } = getCompressedImageSrc(`images/heraldry/${lang}/${path}/${fileName}.webp`, path);
+        } = getCompressedImageSrc(`images/heraldry/${country}/${path}/${fileName}.webp`, path);
 
         if (!unit.place?.coordinates?.lat || !unit.place?.coordinates?.lon) {
           console.log(`${chalk.yellow(unit.title)} doesn't have the ${chalk.red('location')}.`);
@@ -186,7 +186,7 @@ export const fetchImages = async ({
           title: unit.title,
           url: unit.url || '',
           description:  unit.description || '',
-          imageUrl: `images/heraldry/${lang}/${path}/${fileName}.${format}`,
+          imageUrl: `images/heraldry/${country}/${path}/${fileName}.${format}`,
         };
 
         const {
@@ -195,11 +195,11 @@ export const fetchImages = async ({
           text: '',
           title: '',
           imageHash: getImageHash(unit),
-          lang,
+          country,
         });
 
         contentToSaveForMap.push({
-          lang: unit.lang,
+          country: unit.country,
           index: unit.index,
           id: unit.id,
           title: unit.title,
@@ -247,11 +247,11 @@ export const fetchImages = async ({
   chalk.white(`Saving .json files for path.`),
 
   writeFileSync(
-    `./public/data/heraldry/${lang}/${path}${chunkSuffix}-map-data.json`,
+    `./public/data/heraldry/${country}/${path}${chunkSuffix}-map-data.json`,
     JSON.stringify(contentToSaveForMap, null, 1),
   );
   writeFileSync(
-    `./public/data/heraldry/${lang}/${path}${chunkSuffix}-dev-data.json`,
+    `./public/data/heraldry/${country}/${path}${chunkSuffix}-dev-data.json`,
     JSON.stringify(contentToSaveForDevMode, null, 1),
   );
 };

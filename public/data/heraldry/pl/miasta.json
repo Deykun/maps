@@ -15744,6 +15744,17 @@
         "country": "pl"
     },
     {
+        "title": "Herby miast Śląska Cieszyńskiego",
+        "url": "https://pl.wikipedia.org/wiki/Kategoria:Herby_miast_%C5%9Al%C4%85ska_Cieszy%C5%84skiego",
+        "type": [
+            "miasta"
+        ],
+        "partOf": "Herby miast województwa śląskiego",
+        "country": "pl",
+        "id": "miasta-656",
+        "index": 656
+    },
+    {
         "title": "Herb Będzina",
         "url": "https://pl.wikipedia.org/wiki/Herb_B%C4%99dzina",
         "type": [
@@ -16366,6 +16377,25 @@
         "id": "miasta-682",
         "index": 682,
         "country": "pl"
+    },
+    {
+        "title": "Herb Lublińca",
+        "url": "https://pl.wikipedia.org/wiki/Herb_Lubli%C5%84ca",
+        "type": [
+            "miasta"
+        ],
+        "partOf": "Herby miast województwa śląskiego",
+        "description": "Herb Lublińca – jeden z symboli miasta Lubliniec w postaci herbu ustanowiony 25 lutego 2016 roku.\n\n\n== Wygląd i symbolika ==\nHerb przedstawia na tarczy dwudzielnej w pas, po heraldycznie prawej stronie pół złotego górnośląskiego orła zwróconego w prawą stronę, w polu błękitnym, po heraldycznie lewej stronie pięć srebrnych gwiazd w słup, w układzie 3-2, w polu barwy czerwonej.\n\n\n== Historia ==\n\nPrzed rokiem 2006  miasto używało przejściowo herbu o obydwu polach błękitnych, w 2016 powrócono do historycznych barw. Herbu z czerwonym polem z gwiazdami miasto używało jeszcze w 1936 roku.\n\n\n== Przypisy ==",
+        "place": {
+            "name": "Lubliniec",
+            "coordinates": {
+                "lat": 50.668056,
+                "lon": 18.679167
+            }
+        },
+        "country": "pl",
+        "id": "miasta-683",
+        "index": 683
     },
     {
         "title": "Herb Łazisk Górnych",
@@ -24613,15 +24643,15 @@
             "height": 373
         },
         "place": {
-            "name": "Wolina",
+            "name": "Wolin (wyspa)",
             "coordinates": {
-                "lat": 50.500833,
-                "lon": 22.181111
+                "lat": 53.916667,
+                "lon": 14.566667
             }
         },
+        "country": "pl",
         "id": "miasta-1027",
-        "index": 1027,
-        "country": "pl"
+        "index": 1027
     },
     {
         "title": "Herb Złocieńca",
@@ -24646,35 +24676,5 @@
         "id": "miasta-1028",
         "index": 1028,
         "country": "pl"
-    },
-    {
-        "title": "Herby miast Śląska Cieszyńskiego",
-        "url": "https://pl.wikipedia.org/wiki/Kategoria:Herby_miast_%C5%9Al%C4%85ska_Cieszy%C5%84skiego",
-        "type": [
-            "miasta"
-        ],
-        "partOf": "Herby miast województwa śląskiego",
-        "country": "pl",
-        "id": "miasta-656",
-        "index": 656
-    },
-    {
-        "title": "Herb Lublińca",
-        "url": "https://pl.wikipedia.org/wiki/Herb_Lubli%C5%84ca",
-        "type": [
-            "miasta"
-        ],
-        "partOf": "Herby miast województwa śląskiego",
-        "description": "Herb Lublińca – jeden z symboli miasta Lubliniec w postaci herbu ustanowiony 25 lutego 2016 roku.\n\n\n== Wygląd i symbolika ==\nHerb przedstawia na tarczy dwudzielnej w pas, po heraldycznie prawej stronie pół złotego górnośląskiego orła zwróconego w prawą stronę, w polu błękitnym, po heraldycznie lewej stronie pięć srebrnych gwiazd w słup, w układzie 3-2, w polu barwy czerwonej.\n\n\n== Historia ==\n\nPrzed rokiem 2006  miasto używało przejściowo herbu o obydwu polach błękitnych, w 2016 powrócono do historycznych barw. Herbu z czerwonym polem z gwiazdami miasto używało jeszcze w 1936 roku.\n\n\n== Przypisy ==",
-        "place": {
-            "name": "Lubliniec",
-            "coordinates": {
-                "lat": 50.668056,
-                "lon": 18.679167
-            }
-        },
-        "country": "pl",
-        "id": "miasta-683",
-        "index": 683
     }
 ]
