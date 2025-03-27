@@ -496,6 +496,7 @@
         "mewę",
         "pióro",
         "ptak",
+        "ptaka",
         "ptakiem",
         "puszczyk",
         "szpak",
@@ -511,7 +512,7 @@
     },
     {
       "name": "ram",
-      "phrases": ["baran", "baranek", "owca"],
+      "phrases": ["baran", "baranek", "baranka", "owca"],
       "exclude": [
         "Herb Korsz",
         "Herb gminy Tuczępy",
@@ -1584,10 +1585,23 @@
         "srebrno-złoty róg",
         "trąba",
         "trąbka",
+        "trąby",
         "złoty róg"
       ],
-      "include": [],
-      "exclude": []
+      "exclude": [
+        {
+          "imageHash": "6442c8cf",
+          "note": "Herb Kłecka"
+        },
+        {
+          "imageHash": "21a38444",
+          "note": "Herb Bobowej"
+        },
+        {
+          "imageHash": "698bf906",
+          "note": "Herb Leska"
+        }
+      ]
     },
     {
       "name": "saint",
