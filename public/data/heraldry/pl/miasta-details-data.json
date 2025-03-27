@@ -12201,6 +12201,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "horn",
+    "musicalInstrument"
+   ]
   }
  },
  {
@@ -13183,6 +13189,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "ram"
+   ],
    "items": [
     "cross"
    ]
@@ -15558,6 +15567,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "ram"
+   ],
    "items": [
     "cross"
    ]
@@ -20883,6 +20895,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "horn",
+    "musicalInstrument"
+   ]
   }
  },
  {
@@ -23662,6 +23680,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "horn",
+    "musicalInstrument"
+   ]
   }
  },
  {
@@ -25807,6 +25831,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "ram"
+   ],
    "items": [
     "crown"
    ]
@@ -29862,7 +29889,8 @@
   },
   "markers": {
    "animals": [
-    "mermaid"
+    "mermaid",
+    "bird"
    ],
    "items": [
     "sword",
@@ -29897,6 +29925,10 @@
   "markers": {
    "animals": [
     "bear"
+   ],
+   "items": [
+    "horn",
+    "musicalInstrument"
    ]
   }
  },
@@ -30097,6 +30129,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "ram"
+   ],
    "items": [
     "crozier"
    ]
@@ -30372,6 +30407,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "ram"
+   ],
    "items": [
     "cross",
     "saint"
@@ -32000,6 +32038,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "ram"
+   ],
    "items": [
     "lily",
     "flower"
@@ -33471,6 +33512,12 @@
      }
     ]
    }
+  },
+  "markers": {
+   "items": [
+    "horn",
+    "musicalInstrument"
+   ]
   }
  },
  {
@@ -46187,6 +46234,7 @@
   "markers": {
    "animals": [
     "eagle",
+    "ram",
     "bird"
    ],
    "items": [

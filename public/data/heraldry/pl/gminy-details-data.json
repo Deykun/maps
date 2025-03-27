@@ -16309,7 +16309,9 @@
     "bird"
    ],
    "items": [
-    "cross"
+    "cross",
+    "horn",
+    "musicalInstrument"
    ]
   }
  },
@@ -25541,7 +25543,9 @@
   "markers": {
    "items": [
     "lily",
-    "flower"
+    "horn",
+    "flower",
+    "musicalInstrument"
    ]
   }
  },
@@ -28108,6 +28112,7 @@
   },
   "markers": {
    "animals": [
+    "bird",
     "amphisbaena"
    ]
   }
@@ -34329,7 +34334,9 @@
    "items": [
     "tree",
     "lily",
-    "flower"
+    "horn",
+    "flower",
+    "musicalInstrument"
    ]
   }
  },
@@ -45227,6 +45234,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "ram"
+   ],
    "items": [
     "tree",
     "lily",
@@ -51723,6 +51733,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "ram"
+   ],
    "items": [
     "cross"
    ]
@@ -55080,6 +55093,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "bird"
+   ],
    "items": [
     "cross"
    ]
@@ -56045,6 +56061,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "bird"
+   ],
    "items": [
     "earOfGrain",
     "cross"
@@ -80940,6 +80959,10 @@
   "markers": {
    "animals": [
     "bullBison"
+   ],
+   "items": [
+    "horn",
+    "musicalInstrument"
    ]
   }
  },
@@ -82518,6 +82541,11 @@
      }
     ]
    }
+  },
+  "markers": {
+   "animals": [
+    "ram"
+   ]
   }
  },
  {
