@@ -14,7 +14,7 @@ import { AdministrativeUnit, CoatOfArmsDetailsData, ColorStatus, ColorStatusInDe
 
 import { getMarkers } from '../../../src/topic/Heraldry/utils/markers/getMarkers';
 
-import { getImageColors } from './helpers/colors'
+import { getImageColors, getNewImageColors } from './helpers/colors'
 
 const start = (new Date()).getTime();
 
@@ -115,6 +115,15 @@ export const getDetails = async ({
           const image = resolve(temporaryPngFile);
   
           const colorData = await getImageColors(image);
+          const colorDataNew = await getNewImageColors(image);
+
+          console.log(' ');
+          console.log(colorDataNew);
+          console.log(' ');
+          // console.log({
+          //   colorData,
+          //   colorDataNew,
+          // })
   
           const {
             hexPalette,
