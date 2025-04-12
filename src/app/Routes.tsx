@@ -1,6 +1,7 @@
 import { Route, Switch, useLocation } from "wouter";
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
+import { useEffect, useMemo } from "react";
 
 import { PATHS_DATA } from '../constants';
 
@@ -12,10 +13,10 @@ import HeraldryET from '@/pages/eesti-heraldika/HeraldryET';
 import HeraldryPL from '@/pages/heraldyka/HeraldryPL';
 import HeraldryNO from '@/pages/norges-heraldikk/HeraldryNO';
 import HeraldryFI from '@/pages/suomalainen-heraldikka/HeraldryFI';
+import AboutColor from "@/pages/about-color/AboutColor";
 
 import { track } from '@/topic/Heraldry/features/tracking/stores/trackingStore';
 
-import { useEffect, useMemo } from "react";
 
 const Routes = () => {
   const [path] = useLocation();
@@ -57,6 +58,7 @@ const Routes = () => {
         <Route path="/maps/heraldyka" component={HeraldryPL} />
         <Route path="/maps/norges-heraldikk" component={HeraldryNO} />
         <Route path="/maps/suomalainen-heraldikka" component={HeraldryFI} />
+        <Route path="/maps/about-color" component={AboutColor} />
       </Switch>
     </>
   )

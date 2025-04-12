@@ -1,8 +1,6 @@
 import chalk from "chalk";
-import sharp from "sharp";
+// import sharp from "sharp";
 import nearestColor from "nearest-color";
-import { extractColors } from "extract-colors";
-import getPixels from "get-pixels";
 
 import { Greyscale, ColorStatus } from "../../../../src/topic/Heraldry/types";
 
@@ -59,6 +57,16 @@ const colorMatchers = {
         color: "#fe3940",
         get: nearestColor.from({ color: "#fe3940" }),
         thresholdDistance: 30,
+      },
+      {
+        color: "#c13338",
+        get: nearestColor.from({ color: "#c13338" }),
+        thresholdDistance: 30,
+      },
+      {
+        color: "#d55943",
+        get: nearestColor.from({ color: "#d55943" }),
+        thresholdDistance: 15,
       },
     ],
   },
@@ -128,6 +136,11 @@ const colorMatchers = {
         get: nearestColor.from({ color: "#2e3192" }),
         thresholdDistance: 60,
       },
+      {
+        color: "#98d9f1",
+        get: nearestColor.from({ color: "#98d9f1" }),
+        thresholdDistance: 30,
+      },
     ],
   },
   gold: {
@@ -152,9 +165,22 @@ const colorMatchers = {
         get: nearestColor.from({ color: "#ffff00" }),
         thresholdDistance: 50,
       },
+      {
+        color: "#eee1a8",
+        get: nearestColor.from({ color: "#eee1a8" }),
+        thresholdDistance: 30,
+      },
     ],
   },
 };
+
+const allSupportedColors = [
+  "white",
+  "grey",
+  "white",
+  "transparent",
+  ...Object.keys(colorMatchers),
+];
 
 export const getColorStatus = (color: RGB): ColorStatus[] => {
   const hexColor = rgbToHex(color);
@@ -186,129 +212,74 @@ export const getColorStatus = (color: RGB): ColorStatus[] => {
     ];
   }
 
-  const statusesToReturn: ColorStatus[] = [];
+  const colorStatuses = Object.keys(colorMatchers).reduce(
+    (stack: ColorStatus[], colorName) => {
+      const colorMatches: ColorStatus[] = (
+        colorMatchers[colorName]?.getters || []
+      ).map(({ get, thresholdDistance, color: matcherColor }) => {
+        const match = get(hexColor);
 
-  ["red", "blue", "green", "gold"].forEach((colorName) => {
-    const colorMatches: ColorStatus[] = (
-      colorMatchers[colorName]?.getters || []
-    ).map(({ get, thresholdDistance, color: matcherColor }) => {
-      const match = get(hexColor);
+        const didMatch = (match.distance || 0) < thresholdDistance;
 
-      const didMatch = (match.distance || 0) < thresholdDistance;
+        return {
+          didMatch,
+          color: hexColor,
+          name: colorName,
+          distanceToThreshold: thresholdDistance - match.distance,
+          matcherColor,
+          thresholdDistance,
+          distance: match?.distance,
+          ...greyscale,
+        };
+      });
 
-      return {
-        didMatch,
+      const bestMatchForColor = colorMatches.sort(
+        (a: ColorStatus, b: ColorStatus) =>
+          b.distanceToThreshold - a.distanceToThreshold
+      )[0];
+
+      stack.push({
+        didMatch: bestMatchForColor.didMatch,
         color: hexColor,
         name: colorName,
-        distanceToThreshold: thresholdDistance - match.distance,
-        matcherColor,
-        thresholdDistance,
-        distance: match?.distance,
+        distanceToThreshold: bestMatchForColor.distanceToThreshold,
+        matcherColor: bestMatchForColor.matcherColor,
+        thresholdDistance: bestMatchForColor.thresholdDistance,
+        distance: bestMatchForColor?.distance,
         ...greyscale,
-      };
-    });
-
-    const bestMatch = colorMatches.sort(
-      (a: ColorStatus, b: ColorStatus) =>
-        b.distanceToThreshold - a.distanceToThreshold
-    )[0];
-
-    statusesToReturn.push({
-      didMatch: bestMatch.didMatch,
-      color: hexColor,
-      name: colorName,
-      distanceToThreshold: bestMatch.distanceToThreshold,
-      matcherColor: bestMatch.matcherColor,
-      thresholdDistance: bestMatch.thresholdDistance,
-      distance: bestMatch?.distance,
-      ...greyscale,
-    });
-  });
-
-  return statusesToReturn;
-};
-
-export const getImageColors = async (image: string) => {
-  const colorsPaletteRGB: RGB[] = await new Promise((resolve, reject) => {
-    try {
-      getPixels(image, (error, pixels) => {
-        if (error) {
-          console.log(
-            `${chalk.red("getPixels error from:")} ${chalk.yellow(image)}`
-          );
-
-          reject([]);
-
-          return;
-        }
-
-        const data = [...pixels.data];
-        const [width, height] = pixels.shape;
-
-        resolve(
-          extractColors(
-            { data, width, height },
-            {
-              pixels: 400,
-              distance: 0.3,
-              saturationDistance: 0.5,
-              lightnessDistance: 0.3,
-              hueDistance: 0,
-            }
-          ).then((res) => res.map(({ red, green, blue }) => [red, green, blue]))
-        );
       });
-    } catch (error) {
-      console.log("EERRR");
-      console.error(error);
-      reject([]);
-    }
-  });
 
-  const hexPalette = colorsPaletteRGB.map(rgbToHex);
-  const colorsPalette = colorsPaletteRGB.flatMap(getColorStatus);
-
-  const { byNames, byNamesRejected } = colorsPalette.reduce(
-    (stack, color) => {
-      if (color.name) {
-        const propName = color.didMatch ? "byNames" : "byNamesRejected";
-        if (Array.isArray(stack[color.name])) {
-          stack[propName][color.name].push(color);
-        } else {
-          stack[propName][color.name] = [color];
-        }
-      }
       return stack;
     },
-    {
-      byNames: {},
-      byNamesRejected: {},
-    }
+    []
   );
 
-  return {
-    colorsPalette,
-    hexPalette,
-    byNames,
-    byNamesRejected,
-  };
+  const didNotMatchAnything =
+    colorStatuses.some(({ didMatch }) => didMatch) === false;
+  if (didNotMatchAnything && greyscale.isLowSaturation === false) {
+    console.log(`Missing match for color ${chalk.white(hexColor)}`);
+  }
+
+  return colorStatuses;
 };
 
-export const getNewImageColors = async (imagePath: string) => {
+export const getImageColors = async (imagePath: string) => {
   const { data, info } = await sharp(imagePath)
     .raw()
     .toBuffer({ resolveWithObject: true });
 
   const { width, height, channels } = info;
 
-  console.log(`Image dimensions: ${width}x${height}, Channels: ${channels}`);
+  const imageColors = allSupportedColors.reduce(
+    (stack: { [colorName: string]: number }, colorName) => {
+      stack[colorName] = 0;
 
-  const imageColors: {
-    [color: string]: number;
-  } = {
-    transparent: 0,
-  };
+      return stack;
+    },
+    {}
+  );
 
+  // tl;dr; it checks each pixel individually
   for (let y = 0; y < height; y++) {
     for (let x = 0; x < width; x++) {
       const index = (y * width + x) * channels;
@@ -331,5 +302,15 @@ export const getNewImageColors = async (imagePath: string) => {
     }
   }
 
-  return imageColors;
+  const total = height * width;
+
+  const imageColorsAsPercentage: {
+    [name: string]: number;
+  } = Object.entries(imageColors).reduce((stack, [name, value]) => {
+    stack[name] = Math.round((1000 * value) / total) / 10;
+
+    return stack;
+  }, {});
+
+  return imageColorsAsPercentage;
 };

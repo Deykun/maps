@@ -59,12 +59,11 @@ export type MarkerType = 'animal' | 'item';
 export type CoatOfArmsDetailsData = {
   id: string,
   colors?: {
-    hexPalette: string[],
     byNames: {
-      [color: string]: ColorStatusInDetails[],
-    }
+      [color: string]: number,
+    },
     byNamesRejected: {
-      [color: string]: ColorStatusInDetails[],
+      [color: string]: number,
     }
   },
   markers?: {

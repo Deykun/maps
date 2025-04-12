@@ -1,24 +1,34 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from "react";
 
+import useEffectChange from "@/hooks/useEffectChange";
 
-import useEffectChange from '@/hooks/useEffectChange';
+import { CoatOfArmsMapData } from "@/topic/Heraldry/types";
+import { GetFilterResponse } from "@/topic/Heraldry/utils/getFilter";
+import { getSearchParamFromFilters } from "@/topic/Heraldry/utils/getSearchParams";
+import {
+  getFilteredUnits,
+  GetFilteredUnitsParams,
+  SubtitlePart,
+} from "@/topic/Heraldry/utils/getFilteredUnits";
 
-import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
-import { GetFilterResponse } from '@/topic/Heraldry/utils/getFilter';
-import { getSearchParamFromFilters } from '@/topic/Heraldry/utils/getSearchParams'
-import { getFilteredUnits, GetFilteredUnitsParams, SubtitlePart } from '@/topic/Heraldry/utils/getFilteredUnits';
+import { setUnitsPaneSearchPhrase } from "@/topic/Heraldry/stores/unitsPaneStore";
+import useFiltersStore from "@/topic/Heraldry/stores/filtersStore";
 
-
-import { setUnitsPaneSearchPhrase } from '@/topic/Heraldry/stores/unitsPaneStore';
-import useFiltersStore  from '@/topic/Heraldry/stores/filtersStore';
-
-type UseGetFilteredUnitsParams = Omit<GetFilteredUnitsParams, 
-  'colorFilters' | 'typeFilters' | 'shouldIgnoreFormer' | 'filterOperator' | 'shouldReverseFilters' | 'shouldHideMissingImages' | 'animalFilters' | 'itemFilters'
+type UseGetFilteredUnitsParams = Omit<
+  GetFilteredUnitsParams,
+  | "colorFilters"
+  | "typeFilters"
+  | "shouldIgnoreFormer"
+  | "filterOperator"
+  | "shouldReverseFilters"
+  | "shouldHideMissingImages"
+  | "animalFilters"
+  | "itemFilters"
 > & {
-  typeFiltersList: GetFilterResponse
-}
+  typeFiltersList: GetFilterResponse;
+};
 
-let postMemoCacheHash = '';
+let postMemoCacheHash = "";
 
 export default function useGetFilteredUnits({
   country,
@@ -29,12 +39,14 @@ export default function useGetFilteredUnits({
   // Not passed to getFilteredUnits
   typeFiltersList,
 }: UseGetFilteredUnitsParams) {
-  const updateFilterTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const updateFilterTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(
+    null
+  );
 
   const [response, setResponse] = useState<{
     units: CoatOfArmsMapData[];
     unitsForMap: CoatOfArmsMapData[];
-    subtitleParts: SubtitlePart[]
+    subtitleParts: SubtitlePart[];
   }>({
     units: [],
     unitsForMap: [],
@@ -54,9 +66,9 @@ export default function useGetFilteredUnits({
 
   const filterHash = JSON.stringify({
     country,
-    unitsForMapAll, 
-    detailsForUnitsById, 
-    filterOperator, 
+    unitsForMapAll,
+    detailsForUnitsById,
+    filterOperator,
     shouldReverseFilters,
     shouldIgnoreFormer,
     customFilter,
@@ -64,18 +76,15 @@ export default function useGetFilteredUnits({
     colorFilters,
     animalFilters,
     itemFilters,
-    shouldHideMissingImages
+    shouldHideMissingImages,
   });
 
   const updateResponse = useCallback(() => {
     // All types are checked and we can skip setting subtitle and filtering
-    const typeFiltersToPass = typeFilters.length === typeFiltersList.length ? [] : typeFilters;
+    const typeFiltersToPass =
+      typeFilters.length === typeFiltersList.length ? [] : typeFilters;
 
-    const {
-      filteredUnits,
-      unitsForMap,
-      subtitleParts,
-    } = getFilteredUnits({
+    const { filteredUnits, unitsForMap, subtitleParts } = getFilteredUnits({
       country,
       unitsForMapAll,
       detailsForUnitsById,
@@ -91,30 +100,45 @@ export default function useGetFilteredUnits({
       itemFilters,
     });
 
-    setUnitsPaneSearchPhrase('');
+    setUnitsPaneSearchPhrase("");
 
     const searchParams = getSearchParamFromFilters({
-      filterOperator, shouldReverseFilters, shouldIgnoreFormer, typeFilters: typeFiltersToPass, colorFilters, animalFilters, itemFilters,
-    })
-    
-    window.history.replaceState(undefined, '', `${location.pathname}${searchParams}`);
+      filterOperator,
+      shouldReverseFilters,
+      shouldIgnoreFormer,
+      typeFilters: typeFiltersToPass,
+      colorFilters,
+      animalFilters,
+      itemFilters,
+    });
+
+    window.history.replaceState(
+      undefined,
+      "",
+      `${location.pathname}${searchParams}`
+    );
 
     const cacheKey = [
-      ...filteredUnits.map(({ id }) => id).sort((a, b) => a.localeCompare(b)).join(','),
-      ...subtitleParts.map(({ operator, labels }) => `${operator}:${labels.join(',')}`),
-    ].join('|');
+      ...filteredUnits
+        .map(({ id }) => id)
+        .sort((a, b) => a.localeCompare(b))
+        .join(","),
+      ...subtitleParts.map(
+        ({ operator, labels }) => `${operator}:${labels.join(",")}`
+      ),
+    ].join("|");
 
     if (postMemoCacheHash === cacheKey) {
       return;
     }
 
     postMemoCacheHash = cacheKey;
-   
+
     setResponse({
       units: filteredUnits,
       unitsForMap,
       subtitleParts,
-    })
+    });
   }, [filterHash]);
 
   useEffectChange(() => {

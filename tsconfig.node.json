@@ -24,8 +24,9 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": ".",
     "paths": {
+      "@scripts/*": ["./scripts/*"],
       "@/*": ["./src/*"],
     },
   },
-  "include": ["src", "vite.config.ts"],
+  "include": ["scripts", "src", "vite.config.ts"],
 }

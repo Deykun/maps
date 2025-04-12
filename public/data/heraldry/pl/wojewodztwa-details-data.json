@@ -2,51 +2,15 @@
  {
   "id": "wojewodztwa-0",
   "colors": {
-   "hexPalette": [
-    "#fbcf01",
-    "#807859",
-    "#ffffff",
-    "#0a0a0a"
-   ],
    "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 1.093294099907439,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
+    "transparent": 21.6,
+    "black": 34.5,
+    "gold": 35.6
    },
    "byNamesRejected": {
-    "gold": [
-     {
-      "distanceToThreshold": 1.093294099907439,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
+    "green": 0.5,
+    "grey": 0.8,
+    "white": 3.5
    }
   },
   "markers": {
@@ -62,63 +26,16 @@
  {
   "id": "wojewodztwa-1",
   "colors": {
-   "hexPalette": [
-    "#d02f1d",
-    "#706d71",
-    "#000200",
-    "#ffffff"
-   ],
    "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 7.481036962736425,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
+    "transparent": 26.3,
+    "black": 11.2,
+    "white": 34.9,
+    "red": 5.9
    },
    "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": 7.481036962736425,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
+    "grey": 2.5,
+    "gold": 1.3,
+    "green": 0.1
    }
   },
   "markers": {
@@ -135,51 +52,17 @@
  {
   "id": "wojewodztwa-2",
   "colors": {
-   "hexPalette": [
-    "#d51216",
-    "#755e5f",
-    "#000000",
-    "#ffffff"
-   ],
    "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 29.285110667576134,
-      "matcherColor": "#f00"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
+    "transparent": 21.9,
+    "red": 52.4,
+    "white": 13.5
    },
    "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": 29.285110667576134,
-      "matcherColor": "#f00"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
+    "black": 2.9,
+    "grey": 1.9,
+    "gold": 0.6,
+    "green": 0,
+    "blue": 0
    }
   },
   "markers": {
@@ -196,77 +79,17 @@
  {
   "id": "wojewodztwa-3",
   "colors": {
-   "hexPalette": [
-    "#f6f102",
-    "#db261e",
-    "#01923f",
-    "#290000",
-    "#989a9c",
-    "#ffffff"
-   ],
    "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 33.23694538575979,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 19.667587484006575,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": 54,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
+    "transparent": 20.8,
+    "green": 33.4,
+    "red": 16.7,
+    "gold": 6,
+    "white": 8.7
    },
    "byNamesRejected": {
-    "gold": [
-     {
-      "distanceToThreshold": 33.23694538575979,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 19.667587484006575,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": 54,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
+    "black": 4,
+    "grey": 4,
+    "blue": 0
    }
   },
   "markers": {
@@ -282,76 +105,17 @@
  {
   "id": "wojewodztwa-4",
   "colors": {
-   "hexPalette": [
-    "#ffe700",
-    "#be2910",
-    "#949396",
-    "#ffffff",
-    "#000000"
-   ],
    "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 26,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 1.5015923728385445,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
+    "transparent": 25,
+    "black": 6.3,
+    "gold": 28.5,
+    "red": 14.2
    },
    "byNamesRejected": {
-    "gold": [
-     {
-      "distanceToThreshold": 26,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 1.5015923728385445,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
+    "green": 0.6,
+    "white": 1.7,
+    "grey": 3.8,
+    "blue": 0
    }
   },
   "markers": {
@@ -371,65 +135,17 @@
  {
   "id": "wojewodztwa-5",
   "colors": {
-   "hexPalette": [
-    "#e4c000",
-    "#e2032c",
-    "#210009",
-    "#62565a",
-    "#aeb0b2",
-    "#ffffff"
-   ],
    "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 8.60933936988161,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 27.21742711841341,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
+    "transparent": 18.5,
+    "red": 31.5,
+    "grey": 5.8,
+    "white": 23.5
    },
    "byNamesRejected": {
-    "gold": [
-     {
-      "distanceToThreshold": 8.60933936988161,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 27.21742711841341,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
+    "black": 3.1,
+    "gold": 4.7,
+    "green": 0.2,
+    "blue": 0
    }
   },
   "markers": {
@@ -445,63 +161,17 @@
  {
   "id": "wojewodztwa-6",
   "colors": {
-   "hexPalette": [
-    "#e60d2d",
-    "#110902",
-    "#a1989b",
-    "#ffffff"
-   ],
    "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 26.905744190166864,
-      "matcherColor": "#f00"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
+    "transparent": 23,
+    "red": 34.4,
+    "white": 21.9,
+    "grey": 5.7
    },
    "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": 26.905744190166864,
-      "matcherColor": "#f00"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
+    "black": 3.1,
+    "gold": 1.9,
+    "green": 0,
+    "blue": 0
    }
   },
   "markers": {
@@ -517,51 +187,15 @@
  {
   "id": "wojewodztwa-7",
   "colors": {
-   "hexPalette": [
-    "#ffc805",
-    "#0f6fb2",
-    "#a89d70",
-    "#120400"
-   ],
    "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 33.241823679480696,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 35.75128869403572,
-      "matcherColor": "#1d7dc0"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
+    "transparent": 25,
+    "blue": 43.9,
+    "gold": 21.5
    },
    "byNamesRejected": {
-    "gold": [
-     {
-      "distanceToThreshold": 33.241823679480696,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 35.75128869403572,
-      "matcherColor": "#1d7dc0"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
+    "green": 2.4,
+    "black": 1.6,
+    "grey": 0.1
    }
   },
   "markers": {
@@ -577,89 +211,17 @@
  {
   "id": "wojewodztwa-8",
   "colors": {
-   "hexPalette": [
-    "#f5d029",
-    "#0093df",
-    "#f20400",
-    "#848688",
-    "#000000",
-    "#ffffff"
-   ],
    "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 39.3844718719117,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 27.442358807800588,
-      "matcherColor": "#0099ff"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 66.39852949126455,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
+    "transparent": 21.8,
+    "blue": 26.1,
+    "red": 23.9,
+    "white": 9.4,
+    "gold": 6
    },
    "byNamesRejected": {
-    "gold": [
-     {
-      "distanceToThreshold": 39.3844718719117,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 27.442358807800588,
-      "matcherColor": "#0099ff"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 66.39852949126455,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
+    "black": 2.9,
+    "grey": 2,
+    "green": 0.9
    }
   },
   "markers": {
@@ -676,64 +238,17 @@
  {
   "id": "wojewodztwa-9",
   "colors": {
-   "hexPalette": [
-    "#fff61a",
-    "#dc2b1a",
-    "#350000",
-    "#a4a4a4",
-    "#ffffff"
-   ],
    "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 22.48636701560479,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 18.762756430420545,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
+    "transparent": 17.8,
+    "red": 55.5,
+    "white": 7.9
    },
    "byNamesRejected": {
-    "gold": [
-     {
-      "distanceToThreshold": 22.48636701560479,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 18.762756430420545,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
+    "black": 0.9,
+    "gold": 2.2,
+    "green": 0.1,
+    "grey": 3.7,
+    "blue": 1.8
    }
   },
   "markers": {
@@ -752,38 +267,15 @@
  {
   "id": "wojewodztwa-10",
   "colors": {
-   "hexPalette": [
-    "#ffd516",
-    "#6d6528",
-    "#030303"
-   ],
    "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 18.878229610095822,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
+    "transparent": 24.8,
+    "black": 30.9,
+    "gold": 35.8
    },
    "byNamesRejected": {
-    "gold": [
-     {
-      "distanceToThreshold": 18.878229610095822,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
+    "green": 1.6,
+    "red": 0,
+    "grey": 0.1
    }
   },
   "markers": {
@@ -801,51 +293,16 @@
  {
   "id": "wojewodztwa-11",
   "colors": {
-   "hexPalette": [
-    "#fbd115",
-    "#7a6a19",
-    "#2f44b5",
-    "#000000"
-   ],
    "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 21.76389141138968,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 20.16283142591582,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
+    "transparent": 17.6,
+    "blue": 39.6,
+    "gold": 31
    },
    "byNamesRejected": {
-    "gold": [
-     {
-      "distanceToThreshold": 21.76389141138968,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 20.16283142591582,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
+    "black": 4.2,
+    "green": 0.9,
+    "grey": 0.1,
+    "white": 0
    }
   },
   "markers": {
@@ -861,76 +318,17 @@
  {
   "id": "wojewodztwa-12",
   "colors": {
-   "hexPalette": [
-    "#0094dd",
-    "#dc251a",
-    "#967079",
-    "#080d0e",
-    "#ffffff"
-   ],
    "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 25.634319445120838,
-      "matcherColor": "#0099ff"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 22.81608617801681,
-      "matcherColor": "#f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": 7.903934889475579,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
+    "transparent": 20.4,
+    "blue": 27.8,
+    "red": 15.2,
+    "gold": 9.2,
+    "white": 11.7
    },
    "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": 25.634319445120838,
-      "matcherColor": "#0099ff"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 22.81608617801681,
-      "matcherColor": "#f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": 7.903934889475579,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
+    "black": 4.4,
+    "grey": 0.9,
+    "green": 1.9
    }
   },
   "markers": {
@@ -946,76 +344,16 @@
  {
   "id": "wojewodztwa-13",
   "colors": {
-   "hexPalette": [
-    "#f4d839",
-    "#d12421",
-    "#928b8b",
-    "#000200",
-    "#ffffff"
-   ],
    "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 36.42034775489681,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 12.910507529121972,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
+    "transparent": 17.9,
+    "red": 42.1,
+    "gold": 5,
+    "white": 10.6
    },
    "byNamesRejected": {
-    "gold": [
-     {
-      "distanceToThreshold": 36.42034775489681,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 12.910507529121972,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
+    "black": 4.7,
+    "grey": 2.2,
+    "green": 0.2
    }
   },
   "markers": {
@@ -1033,77 +371,17 @@
  {
   "id": "wojewodztwa-14",
   "colors": {
-   "hexPalette": [
-    "#f4f924",
-    "#e3001b",
-    "#525154",
-    "#a0a0a0",
-    "#000000",
-    "#ffffff"
-   ],
    "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 11.881762894908164,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 41.102699322446554,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
+    "transparent": 32.5,
+    "black": 8.5,
+    "red": 29.1,
+    "grey": 6.4,
+    "white": 14.1
    },
    "byNamesRejected": {
-    "gold": [
-     {
-      "distanceToThreshold": 11.881762894908164,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 41.102699322446554,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
+    "gold": 2.7,
+    "green": 0.4,
+    "blue": 0
    }
   },
   "markers": {
@@ -1119,63 +397,17 @@
  {
   "id": "wojewodztwa-15",
   "colors": {
-   "hexPalette": [
-    "#d72828",
-    "#5d6a63",
-    "#010101",
-    "#ffffff"
-   ],
    "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 10.717967697244902,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
+    "transparent": 20.1,
+    "black": 5.8,
+    "white": 41,
+    "red": 11.3
    },
    "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": 10.717967697244902,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
+    "grey": 4,
+    "green": 0.2,
+    "gold": 1,
+    "blue": 0
    }
   },
   "markers": {
