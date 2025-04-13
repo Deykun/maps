@@ -1,10 +1,125 @@
 import chalk from "chalk";
 // import sharp from "sharp";
-import nearestColor from "nearest-color";
 
 import { Greyscale, ColorStatus } from "../../../../src/topic/Heraldry/types";
+import { Saturation } from "react-color-palette";
 
 type RGB = [r: number, g: number, b: number];
+type HSV = [hue: number, saturation: number, value: number];
+
+const hexToRGB = (hexRaw: string): RGB => {
+  let hex = hexRaw.replace(/^#/, "");
+
+  // If it's a shorthand (3 characters), expand it to 6
+  if (hex.length === 3) {
+    hex = hex
+      .split("")
+      .map((char) => char + char)
+      .join("");
+  }
+
+  const r = parseInt(hex.slice(0, 2), 16);
+  const g = parseInt(hex.slice(2, 4), 16);
+  const b = parseInt(hex.slice(4, 6), 16);
+
+  return [r, g, b];
+};
+
+const convertRGBToHSV = ([r, g, b]: RGB): HSV => {
+  r /= 255;
+  g /= 255;
+  b /= 255;
+
+  const max = Math.max(r, g, b);
+  const min = Math.min(r, g, b);
+  const delta = max - min;
+
+  let h = 0,
+    s = 0,
+    v = max;
+
+  if (delta !== 0) {
+    s = delta / max;
+
+    switch (max) {
+      case r:
+        h = 60 * (((g - b) / delta) % 6);
+        break;
+      case g:
+        h = 60 * ((b - r) / delta + 2);
+        break;
+      case b:
+        h = 60 * ((r - g) / delta + 4);
+        break;
+    }
+  }
+
+  if (h < 0) h += 360;
+
+  return [h, s, v];
+};
+
+const power = {
+  hue: 100,
+  saturation: 10,
+  value: 40,
+};
+
+const powerSum = Object.values(power).reduce(
+  (stack, value) => stack + value,
+  0
+);
+
+type DistanceBetweenColors = {
+  total: number;
+  hue: number;
+  saturation: number;
+  value: number;
+};
+
+const cache: {
+  [hexAhexB: string]: DistanceBetweenColors;
+} = {};
+
+const getDistanceBetweenColors = (
+  hexA: string,
+  hexB: string
+): DistanceBetweenColors => {
+  if (cache[`${hexA}${hexB}`]) {
+    return cache[`${hexA}${hexB}`];
+  }
+
+  const rgbA = hexToRGB(hexA);
+  const rgbB = hexToRGB(hexB);
+
+  const hsvA = convertRGBToHSV(rgbA);
+  const hsvB = convertRGBToHSV(rgbB);
+
+  const distances = {
+    hue: Math.abs(hsvA[0] - hsvB[0]),
+    saturation: Math.abs(hsvA[1] - hsvB[1]),
+    value: Math.abs(hsvA[2] - hsvB[2]),
+  };
+
+  if (distances.hue > 180) {
+    distances.hue = 360 - distances.hue;
+  }
+
+  // as percentage
+  distances.hue = distances.hue / 360;
+
+  const result = {
+    total:
+      power.hue * distances.hue +
+      power.saturation * distances.saturation +
+      (power.value * distances.value) / powerSum,
+    ...distances,
+  };
+
+  cache[`${hexA}${hexB}`] = result;
+
+  return result;
+};
 
 export const componentToHex = (color: number) => {
   const hex = color.toString(16);
@@ -45,133 +160,42 @@ export const getGreyscale = ([r, g, b]: RGB): Greyscale => {
   };
 };
 
-const colorMatchers = {
-  red: {
-    getters: [
-      {
-        color: "#f00",
-        get: nearestColor.from({ color: "#f00" }),
-        thresholdDistance: 80,
-      },
-      {
-        color: "#fe3940",
-        get: nearestColor.from({ color: "#fe3940" }),
-        thresholdDistance: 30,
-      },
-      {
-        color: "#c13338",
-        get: nearestColor.from({ color: "#c13338" }),
-        thresholdDistance: 30,
-      },
-      {
-        color: "#d55943",
-        get: nearestColor.from({ color: "#d55943" }),
-        thresholdDistance: 15,
-      },
-    ],
-  },
-  green: {
-    getters: [
-      {
-        color: "#0f0",
-        get: nearestColor.from({ color: "#0f0" }),
-        thresholdDistance: 90,
-      },
-      {
-        color: "#006f00",
-        get: nearestColor.from({ color: "#006f00" }),
-        thresholdDistance: 90,
-      },
-      {
-        color: "#00824a",
-        get: nearestColor.from({ color: "#00824a" }),
-        thresholdDistance: 60,
-      },
-      {
-        color: "#07923f",
-        get: nearestColor.from({ color: "#07923f" }),
-        thresholdDistance: 60,
-      },
-    ],
-  },
-  blue: {
-    getters: [
-      {
-        color: "#00f",
-        get: nearestColor.from({ color: "#00f" }),
-        thresholdDistance: 60,
-      },
-      {
-        color: "#0059c7",
-        get: nearestColor.from({ color: "#0059c7" }),
-        thresholdDistance: 60,
-      },
-      {
-        color: "#1d7dc0",
-        get: nearestColor.from({ color: "#1d7dc0" }),
-        thresholdDistance: 60,
-      },
-      {
-        color: "#5596c3",
-        get: nearestColor.from({ color: "#5596c3" }),
-        thresholdDistance: 80,
-      },
-      {
-        color: "#0000bf",
-        get: nearestColor.from({ color: "#0000bf" }),
-        thresholdDistance: 60,
-      },
-      {
-        color: "#0099ff",
-        get: nearestColor.from({ color: "#0099ff" }),
-        thresholdDistance: 60,
-      },
-      {
-        color: "#243b7f",
-        get: nearestColor.from({ color: "#243b7f" }),
-        thresholdDistance: 60,
-      },
-      {
-        color: "#2e3192",
-        get: nearestColor.from({ color: "#2e3192" }),
-        thresholdDistance: 60,
-      },
-      {
-        color: "#98d9f1",
-        get: nearestColor.from({ color: "#98d9f1" }),
-        thresholdDistance: 30,
-      },
-    ],
-  },
-  gold: {
-    getters: [
-      {
-        color: "#bfa14e",
-        get: nearestColor.from({ color: "#bfa14e" }),
-        thresholdDistance: 60,
-      },
-      {
-        color: "#e6c633",
-        get: nearestColor.from({ color: "#e6c633" }),
-        thresholdDistance: 60,
-      },
-      {
-        color: "#b68f5e",
-        get: nearestColor.from({ color: "#b68f5e" }),
-        thresholdDistance: 60,
-      },
-      {
-        color: "#ffff00",
-        get: nearestColor.from({ color: "#ffff00" }),
-        thresholdDistance: 50,
-      },
-      {
-        color: "#eee1a8",
-        get: nearestColor.from({ color: "#eee1a8" }),
-        thresholdDistance: 30,
-      },
-    ],
-  },
+const colorMatchers: {
+  [colorName: string]: {
+    hexColor: string;
+    thresholdDistance: number;
+  }[];
+} = {
+  red: [
+    {
+      hexColor: "#f00",
+      thresholdDistance: 5,
+    },
+  ],
+  green: [
+    {
+      hexColor: "#0f0",
+      thresholdDistance: 5,
+    },
+  ],
+  orange: [
+    {
+      hexColor: "#ffa000",
+      thresholdDistance: 5,
+    },
+  ],
+  blue: [
+    {
+      hexColor: "#00f",
+      thresholdDistance: 5,
+    },
+  ],
+  // gold: [
+  //   {
+  //     hexColor: "#bfa14e",
+  //     thresholdDistance: 1,
+  //   },
+  // ],
 };
 
 const allSupportedColors = [
@@ -187,51 +211,61 @@ export const getColorStatus = (color: RGB): ColorStatus[] => {
 
   const greyscale = getGreyscale(color);
 
-  if (greyscale.isGreyscale) {
-    let name = "grey";
-    let matcherColor = "#888";
-    if (greyscale.isBlack) {
-      name = "black";
-      matcherColor = "#000";
-    } else if (greyscale.isWhite) {
-      name = "white";
-      matcherColor = "#fff";
-    }
+  // if (greyscale.isGreyscale) {
+  //   let name = "grey";
+  //   let matcherColor = "#888";
+  //   if (greyscale.isBlack) {
+  //     name = "black";
+  //     matcherColor = "#000";
+  //   } else if (greyscale.isWhite) {
+  //     name = "white";
+  //     matcherColor = "#fff";
+  //   }
 
-    return [
-      {
-        didMatch: true,
-        color: hexColor,
-        name,
-        matcherColor,
-        distanceToThreshold: -1,
-        thresholdDistance: 0,
-        distance: 0,
-        ...greyscale,
-      },
-    ];
-  }
+  //   return [
+  //     {
+  //       didMatch: true,
+  //       color: hexColor,
+  //       name,
+  //       matcherColor,
+  //       distanceToThreshold: -1,
+  //       thresholdDistance: 0,
+  //       distance: 0,
+  //       ...greyscale,
+  //     },
+  //   ];
+  // }
 
   const colorStatuses = Object.keys(colorMatchers).reduce(
     (stack: ColorStatus[], colorName) => {
-      const colorMatches: ColorStatus[] = (
-        colorMatchers[colorName]?.getters || []
-      ).map(({ get, thresholdDistance, color: matcherColor }) => {
-        const match = get(hexColor);
+      const colorMatches: ColorStatus[] = colorMatchers[colorName].map(
+        ({ thresholdDistance, hexColor: matcherHex }) => {
+          const response = getDistanceBetweenColors(matcherHex, hexColor);
+          const distanceFromTopSaturation = Math.sqrt(
+            response.saturation ** 2 + response.value ** 2
+          );
+          const isStrongColor = distanceFromTopSaturation < 0.6;
+          console.log(
+            "isStrongColor",
+            isStrongColor,
+            distanceFromTopSaturation
+          );
 
-        const didMatch = (match.distance || 0) < thresholdDistance;
+          const didMatch =
+            isStrongColor && (response.total || 0) < thresholdDistance;
 
-        return {
-          didMatch,
-          color: hexColor,
-          name: colorName,
-          distanceToThreshold: thresholdDistance - match.distance,
-          matcherColor,
-          thresholdDistance,
-          distance: match?.distance,
-          ...greyscale,
-        };
-      });
+          return {
+            didMatch,
+            color: hexColor,
+            name: colorName,
+            distanceToThreshold: thresholdDistance - response.total,
+            matcherColor: matcherHex,
+            thresholdDistance,
+            distance: response.total,
+            ...greyscale,
+          };
+        }
+      );
 
       const bestMatchForColor = colorMatches.sort(
         (a: ColorStatus, b: ColorStatus) =>

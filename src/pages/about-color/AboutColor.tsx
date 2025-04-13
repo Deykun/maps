@@ -5,6 +5,13 @@ import "react-color-palette/css";
 
 import { getColorStatus } from "@scripts/heraldry/utils/helpers/colors";
 import ColorMatchDescription from "./components/ColorMatchDescription";
+import { colorsMarkersByNames } from "@/topic/Heraldry/constants";
+import { ColorStatus } from "@/topic/Heraldry/types";
+
+const emptyColorStatus = {
+  ...getColorStatus([255, 255, 255])[0],
+  name: "missing",
+};
 
 const hexToRgb = (hex: string): { r: number; g: number; b: number } | null => {
   // Remove the hash if present
@@ -33,60 +40,79 @@ const hexToRgb = (hex: string): { r: number; g: number; b: number } | null => {
 const AboutColor = () => {
   const [color, setColor] = useColor("#561ecb");
 
-  const matches = useMemo(() => {
-    // return {};
-    // console.log(color);
+  const { statusesByColorName = {}, matchingColorsNames = [] } = useMemo(() => {
     const response = hexToRgb(color.hex as unknown as string);
 
-    if (response) {
-      const { r, g, b } = response;
-
-      return getColorStatus([r, g, b]);
+    if (!response) {
+      return {
+        statusesByColorName: {},
+        matchingColorsNames: [],
+      };
     }
 
-    return getColorStatus([0, 0, 0]);
+    const { r, g, b } = response;
+
+    return getColorStatus([r, g, b]).reduce(
+      (
+        stack: {
+          statusesByColorName: { [colorName: string]: ColorStatus };
+          matchingColorsNames: string[];
+        },
+        status
+      ) => {
+        stack.statusesByColorName[status.name] = status;
+
+        if (status.didMatch) {
+          stack.matchingColorsNames.push(status.name);
+        }
+
+        return stack;
+      },
+      {
+        statusesByColorName: {},
+        matchingColorsNames: [],
+      }
+    );
   }, [color]);
-
-  // const
-
-  console.log(matches);
-  // console.log(x);
 
   return (
     <div>
       <div className="p-4">
         <ColorPicker color={color} onChange={setColor} hideAlpha />
       </div>
-      <header className="p-4">
-        <h1 className="flex gap-2 items-end">
-          <span
-            className="inline-flex size-7 rounded-sm"
-            style={{ backgroundColor: color.hex }}
-            title={color.hex}
-          />
-          <span>{color.hex}</span>
-        </h1>
-      </header>
-      <div className="flex p-4 gap-5">
-        <div className="w-1/3">
-          <h2>Matched</h2>
-          <ul className="flex flex-col gap-2">
-            {matches
-              .filter(({ didMatch }) => didMatch)
-              .map((status) => (
-                <ColorMatchDescription status={status} />
-              ))}
+      <div className="flex flex-col gap-2 p-4">
+        <header
+          className="flex gap-2 items-center p-4"
+          style={{ backgroundColor: color.hex }}
+        >
+          <h1 className="bg-white p-2 rounded-md">
+            <span>{color.hex}</span>
+          </h1>
+          <ul className="ml-auto flex gap-2 items-center bg-white p-1 rounded-md empty:hidden">
+            {matchingColorsNames.map((colorName) => {
+              const { matcherColor } = statusesByColorName[colorName];
+              return (
+                <li
+                  className="inline-flex size-7 rounded-sm relative"
+                  style={{ backgroundColor: matcherColor }}
+                  title={matcherColor}
+                />
+              );
+            })}
           </ul>
-        </div>
-        <div className="w-1/3">
-          <h2>Not matched</h2>
-          <ul className="flex flex-col gap-2">
-            {matches
-              .filter(({ didMatch }) => !didMatch)
-              .map((status) => (
-                <ColorMatchDescription status={status} />
-              ))}
-          </ul>
+        </header>
+        <div className="flex flex-col gap-2">
+          {Object.keys(colorsMarkersByNames).map((colorName) => {
+            if (statusesByColorName[colorName]) {
+              return (
+                <ColorMatchDescription
+                  status={statusesByColorName[colorName]}
+                />
+              );
+            }
+
+            return <ColorMatchDescription status={emptyColorStatus} />;
+          })}
         </div>
       </div>
     </div>

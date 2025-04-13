@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { ColorStatus } from "@/topic/Heraldry/types";
 import { colorsMarkersByNames } from "@/topic/Heraldry/constants";
 
@@ -6,6 +7,7 @@ type Props = {
 };
 
 const ColorMatchDescription = ({ status }: Props) => {
+  const { t } = useTranslation();
   const { name, matcherColor, distanceToThreshold } = status;
   return (
     <li className="flex gap-2 items-end">
@@ -20,7 +22,7 @@ const ColorMatchDescription = ({ status }: Props) => {
           title={colorsMarkersByNames[name]}
         ></span>
       </span>
-      <strong>{name}</strong>
+      <strong>{name === 'missing' ? 'missing' : t(`heraldry.color.${name}`)}</strong>
       <small>{distanceToThreshold.toFixed(1)}pt</small>
     </li>
   );

@@ -29,6 +29,9 @@ export const colorsMarkersByNames: Colors = {
   red: '#d61e27',
   green: '#299649',
   blue: '#1d7dc0',
+
+  // new
+  orange: '#f99208',
 };
 
 export const numberOfColumnsPerSprite = 50;
