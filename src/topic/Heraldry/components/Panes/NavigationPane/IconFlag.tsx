@@ -3,6 +3,7 @@ import IconDk from './Flags/Dk';
 import IconEn from './Flags/En';
 import IconEt from './Flags/Et';
 import IconFi from './Flags/Fi';
+import IconNl from './Flags/Nl';
 import IconNo from './Flags/No';
 import IconPl from './Flags/Pl';
 
@@ -13,6 +14,7 @@ const iconByCode = {
   en: IconEn,
   et: IconEt,
   fi: IconFi,
+  nl: IconNl,
   no: IconNo,
   pl: IconPl,
 };

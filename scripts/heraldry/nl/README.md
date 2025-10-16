@@ -1,36 +1,37 @@
-https://en.wikipedia.org/wiki/Administrative_divisions_of_Finland
+https://nl.wikipedia.org/wiki/Categorie:Wapen_van_voormalige_Noord-Hollandse_gemeente
+https://nl.wikipedia.org/wiki/Categorie:Wapen_van_voormalige_Nederlandse_gemeente
+https://nl.wikipedia.org/wiki/Categorie:Wapen_van_Nederlandse_gemeente
 
-- 19 regions - maakunta
-- 70 sub-regions - seutukunta
-- 309 munocopalities - kunta
+But also
+https://nl.wikipedia.org/wiki/Lijst_van_wapens_van_Nederlandse_gemeenten
 
-vaakuna - coat of arms
+Gemeenten - Municipalities
 
-Suomen kuntien vaakunat - Coats of arms of Finnish municipalities
-https://fi.wikipedia.org/w/index.php?title=Luokka:Suomen_kuntien_vaakunat&pagefrom=Outokumpu%0AOutokummun+vaakuna#mw-pages
+Nederland → Provincie → Gemeente → Stadsdeel/Wijk/Buurt
+
+| Level | Type                   | English Name     | Dutch Name                  |
+| ----- | ---------------------- | ---------------- | --------------------------- |
+| 1     | Country                | Netherlands      | Nederland                   |
+| 2     | Province               | Province         | Provincie                   |
+| 3     | Municipality           | Municipality     | Gemeente                    |
+| 4     | Sub-municipal division | District         | Stadsdeel (in large cities) |
+| 5     | Sub-municipal division | Neighborhood     | Wijk                        |
+| 6     | Sub-municipal division | Sub-neighborhood | Buurt                       |
 
 
-Historic - Suomen entisten kuntien vaakunat - Coats of arms of former Finnish municipalities
-https://fi.wikipedia.org/wiki/Luokka:Suomen_entisten_kuntien_vaakunat
+Provinces are the main regional divisions (12 total).
 
-Check?
-https://fi.wikipedia.org/wiki/Luettelo_Suomen_kunnista
+Municipalities handle local government (342 total as of 2025).
 
-```
-document.querySelectorAll('.CategoryTreeToggle:not([aria-expanded="true"])')
+https://nl.wikipedia.org/wiki/Categorie:Wapen_(heraldiek)
 
-title = document.getElementById('firstHeading').innerText.replace('Luokka:', '');
-group = 'maakuntaBySource';
-key = title
+Nederlands provinciewapen - Dutch provincial coat of arms
+https://nl.wikipedia.org/wiki/Categorie:Nederlands_provinciewapen
 
-mapped = {
-  key,
-	title,
-  urls: Array.from(document.querySelectorAll('.mw-category-group a')).map((el) => ({
-    title: el.innerText,
-    url: el.href,
-  }))
-};
+Wapen van Nederlandse gemeente - Coat of arms of a Dutch municipality
+https://nl.wikipedia.org/wiki/Categorie:Wapen_van_Nederlandse_gemeente
 
-console.log(`urls.${group}['${key}'] = `, JSON.stringify(mapped));
-```
+Wapen van Nederlandse heerlijkheid - Coat of arms of a Dutch lordship
+https://nl.wikipedia.org/wiki/Categorie:Wapen_van_Nederlandse_heerlijkheid
+
+Voormalige - former

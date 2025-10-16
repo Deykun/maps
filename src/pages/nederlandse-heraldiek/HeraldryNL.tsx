@@ -31,7 +31,7 @@ const filterForCountryData = (units: CoatOfArmsMapData[], shouldUpdateLoader?: b
   });
 };
 
-const HeraldryFI = () => {
+const HeraldryNL = () => {
   return (
     <HeraldryMap
       lang="en"
@@ -55,4 +55,4 @@ const HeraldryFI = () => {
   );
 };
 
-export default HeraldryFI;
+export default HeraldryNL;

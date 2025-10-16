@@ -27,6 +27,8 @@
     "fetch:fi:maakunta-map": "tsx scripts/heraldry/fi/fetch-maakunta-map.ts",
     "web:fi": "tsx scripts/heraldry/fi/web-images.ts",
     "index:fi": "tsx scripts/heraldry/fi/get-details.ts",
+    "fetch:nl:gemeente": "tsx scripts/heraldry/nl/fetch-gemeente.ts",
+    "fetch:nl:province": "tsx scripts/heraldry/nl/fetch-province.ts",
     "fetch:no:fylker": "tsx scripts/heraldry/no/fetch-fylker.ts",
     "fetch:no:fylker-map": "tsx scripts/heraldry/no/fetch-fylker-map.ts",
     "fetch:no:kommune": "tsx scripts/heraldry/no/fetch-kommune.ts",
