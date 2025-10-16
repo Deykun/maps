@@ -1,28 +1,24 @@
-import kuntaFromJSON from '../../../public/data/heraldry/fi/kunta.json'
-import formerKuntaFromJSon from '../../../public/data/heraldry/fi/formerKunta.json'
-import maakuntaFromJSon from '../../../public/data/heraldry/fi/maakunta.json'
-import { AdministrativeUnit } from '../../../src/topic/Heraldry/types';
+import gemeenteFromJSON from "../../../public/data/heraldry/nl/gemeente.json";
+import formerGemeenteFromJSON from "../../../public/data/heraldry/nl/formerGemeente.json";
+import provinceFromJSON from "../../../public/data/heraldry/nl/province.json";
+import { AdministrativeUnit } from "../../../src/topic/Heraldry/types";
 
-import { getDetails } from '../utils/get-details';
-
-const kunta = kuntaFromJSON as AdministrativeUnit[];
-const formerKunta = formerKuntaFromJSon as AdministrativeUnit[];
-const maakunta = maakuntaFromJSon as AdministrativeUnit[];
+import { getDetails } from "../utils/get-details";
 
 getDetails({
-	administrativeDivisions: kunta,
-	path: 'kunta',
-	country: 'fi',
+  administrativeDivisions: gemeenteFromJSON as AdministrativeUnit[],
+  path: "gemeente",
+  country: "nl",
 });
 
 getDetails({
-	administrativeDivisions: formerKunta,
-	path: 'formerKunta',
-	country: 'fi',
+  administrativeDivisions: formerGemeenteFromJSON as AdministrativeUnit[],
+  path: "formerGemeente",
+  country: "nl",
 });
 
 getDetails({
-	administrativeDivisions: maakunta,
-	path: 'maakunta',
-	country: 'fi',
+  administrativeDivisions: provinceFromJSON as AdministrativeUnit[],
+  path: "province",
+  country: "nl",
 });

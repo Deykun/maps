@@ -1,23 +1,23 @@
-import { getSprites } from '../utils/web';
+import { getSprites } from "../utils/web";
 
-import kuntaJson from '../../../public/data/heraldry/fi/kunta-map-data.json';
-import formerKuntaJson from '../../../public/data/heraldry/fi/formerKunta-map-data.json';
-import maakuntaJson from '../../../public/data/heraldry/fi/maakunta-map-data.json';
+import gemeenteFromJSON from "../../../public/data/heraldry/nl/gemeente-map-data.json";
+import formerGemeenteFromJSON from "../../../public/data/heraldry/nl/formerGemeente-map-data.json";
+import provinceFromJSON from "../../../public/data/heraldry/nl/province-map-data.json";
 
 getSprites({
-  mapJSON: kuntaJson,
-  type: 'kunta',
-  country: 'fi',
+  mapJSON: gemeenteFromJSON,
+  type: "gemeente",
+  country: "nl",
 });
 
 getSprites({
-  mapJSON: formerKuntaJson,
-  type: 'formerKunta',
-  country: 'fi',
+  mapJSON: formerGemeenteFromJSON,
+  type: "formerGemeente",
+  country: "nl",
 });
 
 getSprites({
-  mapJSON: maakuntaJson,
-  type: 'maakunta',
-  country: 'fi',
+  mapJSON: provinceFromJSON,
+  type: "province",
+  country: "nl",
 });
