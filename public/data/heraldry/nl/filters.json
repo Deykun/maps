@@ -190,5 +190,132 @@
       "phrases": ["bever", "bevers"]
     }
   ],
-  "items": []
+  "items": [
+    {
+      "name": "hops",
+      "phrases": ["hop", "hopachtig"]
+    },
+    {
+      "name": "grape",
+      "phrases": ["druif", "druivenrank", "druivenranken"]
+    },
+    {
+      "name": "windmill",
+      "phrases": ["windmolen", "windmolens"]
+    },
+    {
+      "name": "horseshoe",
+      "phrases": ["hoefijzer", "hoefijzers"]
+    },
+    {
+      "name": "key",
+      "phrases": ["sleutel", "sleutels"]
+    },
+    {
+      "name": "arrow",
+      "phrases": ["pijl", "pijlen"]
+    },
+    {
+      "name": "heart",
+      "phrases": ["hart", "harten"]
+    },
+    {
+      "name": "earOfGrain",
+      "phrases": ["aar", "aren", "schoof"]
+    },
+    {
+      "name": "axeSaw",
+      "phrases": [
+        "bijl",
+        "bijlen",
+        "bijltje",
+        "hakbijl",
+        "hakbijlen",
+        "slagersmes",
+        "slagersmessen"
+      ]
+    },
+    {
+      "name": "apple",
+      "phrases": ["appel", "appelboom", "appels", "appeltje"]
+    },
+    {
+      "name": "hammer",
+      "phrases": [
+        "hamer",
+        "hamers",
+        "hamertje",
+        "hamertjes",
+        "knuppel",
+        "mijninsignes",
+        "mijnwapen"
+      ]
+    },
+    {
+      "name": "pickaxe",
+      "phrases": [
+        "houweel",
+        "houweels",
+        "mijnwapen",
+        "pikhouweel",
+        "pikhouweels"
+      ]
+    },
+    {
+      "name": "tree",
+      "phrases": ["boom", "boomen"]
+    },
+    {
+      "name": "lily",
+      "phrases": ["lelie", "lelies", "lelietje"]
+    },
+    {
+      "name": "rose",
+      "phrases": ["roos", "rozen"]
+    },
+    {
+      "name": "flower",
+      "phrases": ["bloem", "bloemen", "tulp", "tulpen"]
+    },
+    {
+      "name": "walls",
+      "phrases": ["bakstenen", "kaseel", "muur", "poort", "poorten", "toren"]
+    },
+    {
+      "name": "boat",
+      "phrases": ["boot", "boten", "schepen", "schip"]
+    },
+    {
+      "name": "cross",
+      "phrases": ["kruis", "kruisen"]
+    },
+    {
+      "name": "jewelry",
+      "phrases": ["oorbel", "ring", "ringen"]
+    },
+    {
+      "name": "angel",
+      "phrases": ["aartsengel", "engel", "engelen"]
+    },
+    {
+      "name": "crozier",
+      "phrases": ["bisschopsstaf", "herdersstaf", "herdersstaffen"]
+    },
+    {
+      "name": "wheel",
+      "phrases": ["wiel", "wielen"]
+    },
+    {
+      "name": "crown",
+      "phrases": ["kronen", "kroon"]
+    },
+    {
+      "name": "horn",
+      "phrases": ["hoorn", "trompet", "trompetten"]
+    },
+    {
+      "name": "saint",
+      "phrases": ["heilige"]
+    }
+  ]
 }
