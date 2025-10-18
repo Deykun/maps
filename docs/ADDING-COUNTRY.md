@@ -8,7 +8,7 @@ It's a rough description, based on countries that have dedicated coat of arms pa
 2. Copy `src/pages/suomalainen-heraldikka` with a proper slug
 3. Change `HeraldryFI.tsx` inside to `Heraldry[COUNTRY CODE].tsx` (also the name inside)
 4. Add country in `src/app/Routes.tsx`
-5. If country uses a new language add it to `src/locales` (to `[langcoode].json` and `config.ts`) (it can be an empty `{}`) (keep in mind that language may differ from country code)
+5. If country uses a new language add it to `src/locales` (to `[langcoode].json` and `config.ts`) (it can be an empty `{}` - more about languages: `docs/ADDING-LANGUAGE.md`) (keep in mind that language may differ from country code)
 6. Add basic data to `src/constants.ts`
 7. Add country flag based on `src/topic/Heraldry/components/Panes/NavigationPane/Flags/README.md`
 

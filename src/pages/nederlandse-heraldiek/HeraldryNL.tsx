@@ -31,7 +31,7 @@ const filterForCountryData = (
 const HeraldryNL = () => {
   return (
     <HeraldryMap
-      lang="el"
+      lang="nl"
       country="nl"
       mapWrapperClassName="[&>div>svg]:aspect-[1_/_1]"
       mapWrapperClassNameForZoom0="max-w-[65vh]"
