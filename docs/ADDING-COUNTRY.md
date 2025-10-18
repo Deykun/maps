@@ -2,7 +2,7 @@
 
 It's a rough description, based on countries that have dedicated coat of arms pages.
 
-# Setting up the page in the app
+# Setting up the page in the app - `src`
 
 1. Copy `scripts/heraldry/fi` with a correct country code.
 2. Copy `src/pages/suomalainen-heraldikka` with a proper slug
@@ -12,7 +12,7 @@ It's a rough description, based on countries that have dedicated coat of arms pa
 6. Add basic data to `src/constants.ts`
 7. Add country flag based on `src/topic/Heraldry/components/Panes/NavigationPane/Flags/README.md`
 
-# Gathering data
+# Gathering data - `scripts`
 
 
 1. That data lands in `scripts/heraldry/[countryCode]/constants.ts`
@@ -39,3 +39,7 @@ mapped = {
 
 console.log(`urls.${group}['${key}'] = `, JSON.stringify(mapped));
 ```
+
+# Passing data to map `src/pages/[nl-slug]`
+
+1. 
