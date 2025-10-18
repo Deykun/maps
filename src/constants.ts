@@ -71,9 +71,9 @@ export const PATHS_DATA: {
       "Nederlandse wapens – Heraldiek, kaart | Nederland, Holland | Heraldieke kaarten",
     social: `  
       <meta property="og:title" content="Nederlandse wapens – Heraldiek, kaart | Nederland, Holland | Heraldieke kaarten" />
-      <meta property="og:description" content="Interactieve kaart." />
-      <meta name="description" content="Interactieve kaart." />
-      <!-- <meta property="og:image" content="https://deykun.github.io/maps/social/herby-polskich-gmin-i-miast.png" /> -->
+      <meta property="og:description" content="Interactieve kaart met meer dan 100 wapens." />
+      <meta name="description" content="Interactieve kaart met meer dan 100 wapens." />
+      <meta property="og:image" content="https://deykun.github.io/maps/social/nederlandse-heraldiek.png" />
     `,
     lang: "nl",
     country: "nl",
