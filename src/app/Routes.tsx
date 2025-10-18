@@ -1,19 +1,20 @@
 import { Route, Switch, useLocation } from "wouter";
-import { Helmet } from 'react-helmet';
-import { useTranslation } from 'react-i18next';
+import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
 
-import { PATHS_DATA } from '../constants';
+import { PATHS_DATA } from "../constants";
 
-import Home from '@/pages/Home';
+import Home from "@/pages/Home";
 
-import HeraldryDK from '@/pages/dansk-heraldik/HeraldryDK';
-import HeraldryDE from '@/pages/deutsche-heraldik/HeraldryDE';
-import HeraldryET from '@/pages/eesti-heraldika/HeraldryET';
-import HeraldryPL from '@/pages/heraldyka/HeraldryPL';
-import HeraldryNO from '@/pages/norges-heraldikk/HeraldryNO';
-import HeraldryFI from '@/pages/suomalainen-heraldikka/HeraldryFI';
+import HeraldryDK from "@/pages/dansk-heraldik/HeraldryDK";
+import HeraldryDE from "@/pages/deutsche-heraldik/HeraldryDE";
+import HeraldryET from "@/pages/eesti-heraldika/HeraldryET";
+import HeraldryFI from "@/pages/suomalainen-heraldikka/HeraldryFI";
+import HeraldryNL from "@/pages/nederlandse-heraldiek/HeraldryNL";
+import HeraldryNO from "@/pages/norges-heraldikk/HeraldryNO";
+import HeraldryPL from "@/pages/heraldyka/HeraldryPL";
 
-import { track } from '@/topic/Heraldry/features/tracking/stores/trackingStore';
+import { track } from "@/topic/Heraldry/features/tracking/stores/trackingStore";
 
 import { useEffect, useMemo } from "react";
 
@@ -28,38 +29,41 @@ const Routes = () => {
   }, [i18n.language]);
 
   const title = useMemo(() => {
-    const pathToCompare = path.replace('/maps/', '');
-    const pathData = PATHS_DATA.find(({ path: itemPath }) => pathToCompare === itemPath);
+    const pathToCompare = path.replace("/maps/", "");
+    const pathData = PATHS_DATA.find(
+      ({ path: itemPath }) => pathToCompare === itemPath
+    );
 
-    document.documentElement.setAttribute('country', pathData?.country || '');
-    
+    document.documentElement.setAttribute("country", pathData?.country || "");
+
     if (pathData) {
-      if (pathData.type === 'heraldryCountry') {
+      if (pathData.type === "heraldryCountry") {
         track({ name: `country_map_page_${pathData.country}` });
       }
 
       return pathData.title;
     }
 
-    return 'Heraldic maps';
+    return "Heraldic maps";
   }, [path]);
 
   return (
     <>
       <Helmet>
-          <title>{title}</title>
+        <title>{title}</title>
       </Helmet>
-      <Switch >
+      <Switch>
         <Route path="/maps" component={Home} />
         <Route path="/maps/dansk-heraldik" component={HeraldryDK} />
         <Route path="/maps/deutsche-heraldik" component={HeraldryDE} />
         <Route path="/maps/eesti-heraldika" component={HeraldryET} />
-        <Route path="/maps/heraldyka" component={HeraldryPL} />
-        <Route path="/maps/norges-heraldikk" component={HeraldryNO} />
         <Route path="/maps/suomalainen-heraldikka" component={HeraldryFI} />
+        <Route path="/maps/nederlandse-heraldiek" component={HeraldryNL} />
+        <Route path="/maps/norges-heraldikk" component={HeraldryNO} />
+        <Route path="/maps/heraldyka" component={HeraldryPL} />
       </Switch>
     </>
-  )
-}
+  );
+};
 
-export default Routes
+export default Routes;

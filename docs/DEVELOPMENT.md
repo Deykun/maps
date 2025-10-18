@@ -3,7 +3,7 @@
 ## How Data is Collected and Prepared for the Web
 
 1. A custom JavaScript script is used to fetch seed data for indexing:
-   - For countries like Poland, Estonia, and Finland, the seed data consists of links to pages titled "Coat of Arms of Municipality of X" - and script fetches descriptions from respository
+   - For countries like Poland, Estonia, and Finland, the seed data consists of links to pages titled "Coat of Arms of Municipality of X" - and script fetches descriptions from repository.
    - For Germany, the data is parsed from Wikipedia directly, including the image link, description, and potential location name.
 
 2. The seed data is located in `scripts/heraldry/[COUNTRY]/constants.ts`.
@@ -31,4 +31,4 @@ Usually markers have mistakes,  `public/data/heraldry/[COUNTRY]/filters.json` is
 
 ## How to add new country
 
-This section is under construction and will likely never be finished. However, the country pages don’t have much code. Simply copy the flow from `scripts/heraldry/fi` and `src/pages/suomalainen-heraldikka` and TS schould be your friend. The biggest challenge will likely be gathering seed data.
+This section is under construction and will likely never be finished. However, the country pages don’t have much code. Simply copy the flow from `scripts/heraldry/fi` and `src/pages/suomalainen-heraldikka` and TS should be your friend. The biggest challenge will likely be gathering seed data.
