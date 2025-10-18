@@ -42,4 +42,6 @@ console.log(`urls.${group}['${key}'] = `, JSON.stringify(mapped));
 
 # Passing data to map `src/pages/[nl-slug]`
 
-1. 
+1. Add markers to `src/topic/Heraldry/utils/markers/getMarkers.ts`
+2. You can use dev tool in application to refine it in `public/data/heraldry/[country]/filters.json`
+3. After refining run `yarn index:nl`
