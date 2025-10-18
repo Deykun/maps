@@ -1,4 +1,4 @@
-# Adding country
+# Adding country - DRAFT
 
 It's a rough description, based on countries that have dedicated coat of arms pages.
 
@@ -45,3 +45,7 @@ console.log(`urls.${group}['${key}'] = `, JSON.stringify(mapped));
 1. Add markers to `src/topic/Heraldry/utils/markers/getMarkers.ts`
 2. You can use dev tool in application to refine it in `public/data/heraldry/[country]/filters.json`
 3. After refining run `yarn index:nl`
+
+# SEO
+
+1. Make a screenshot and add it as a social image in `src/constants.ts`
