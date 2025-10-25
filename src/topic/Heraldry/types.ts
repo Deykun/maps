@@ -10,6 +10,8 @@ export type Greyscale = {
   isWhite: boolean,
 }
 
+export type RGB = [number, number, number];
+
 export type ColorStatus = Greyscale & {
   didMatch: boolean,
   color: string,
@@ -55,6 +57,13 @@ export type CoatOfArmsMapData = {
 export type ColorStatusInDetails = Pick<ColorStatus, 'distanceToThreshold' | 'matcherColor' | 'color'>
 
 export type MarkerType = 'animal' | 'item';
+
+export type ImageColors = {
+  hasTransparent: boolean,
+  colorsByNames: {
+    [name: string]: number,
+  }
+}
 
 export type CoatOfArmsDetailsData = {
   id: string,
