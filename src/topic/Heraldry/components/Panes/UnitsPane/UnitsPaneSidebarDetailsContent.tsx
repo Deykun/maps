@@ -27,7 +27,6 @@ import UnitsPaneSelectCheckbox from "./UnitsPaneSelectCheckbox";
 import UnitsPaneUnitColors from "./UnitsPaneUnitColors";
 import UnitsPaneUnitDescription from "./UnitsPaneUnitDescription";
 import UnitsPaneUnitMarkers from "./UnitsPaneUnitMarkers";
-import UnitsPaneUnitColorsMatched from "./UnitsPaneUnitColorsMatched";
 
 const UnitsPaneSidebarDetailsContent = () => {
   const isFiltersDevModeActive = useFiltersDevelopmentStore(
@@ -75,31 +74,13 @@ const UnitsPaneSidebarDetailsContent = () => {
             className="size-full object-contain p-2 rounded-[8px] bg-white"
             alt=""
           />
-          {isFiltersDevModeActive && (
-            <div
-              className={clsx(
-                "absolute bottom-0 left-0",
-                "flex gap-1 p-1",
-                "opacity-10 saturate-0 hover:saturate-100 hover:opacity-100 duration-150"
-              )}
-            >
-              <UnitsPaneUnitColors
-                id={unit.id}
-                country={unit.country}
-                labelPosition="bottomRight"
-                shouldShowOnlyRejected
-              />
-            </div>
-          )}
-          <div className={clsx("absolute bottom-0 right-0", "flex gap-1 p-1")}>
+          <div
+            className={clsx(
+              "absolute bottom-0 right-0",
+              "flex gap-1 p-1"
+            )}
+          >
             <UnitsPaneUnitColors
-              id={unit.id}
-              country={unit.country}
-              labelPosition="bottomLeft"
-            />
-          </div>
-          <div className={clsx("bg-white absolute top-full left-1/2", "flex gap-1 p-1")}>
-            <UnitsPaneUnitColorsMatched
               id={unit.id}
               country={unit.country}
               labelPosition="bottomLeft"
