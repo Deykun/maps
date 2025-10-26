@@ -2,100 +2,26 @@
  {
   "id": "maakunta-2",
   "colors": {
-   "hexPalette": [
-    "#1558a4",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 19.171088674812793,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -218.99163867907743,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -41.51354589413178,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -123.97282408007982,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.3407716049382716,
+    "blue": 0.8139894189802893,
+    "white": 0.15618708741045928,
+    "grey": 0.0006086427267194157,
+    "black": 0.0013109227960110491
    }
   }
  },
  {
   "id": "maakunta-3",
   "colors": {
-   "hexPalette": [
-    "#ffcf23",
-    "#8b8c95",
-    "#ffffff",
-    "#131821"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 28.983875161458354,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -122.78088885721277,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -160.31021617900475,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -171.828187940107,
-      "matcherColor": "#0f0"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.19864197530864197,
+    "black": 0.7232321676167001,
+    "grey": 0.06378061931905715,
+    "white": 0.052457248497920196,
+    "gold": 0.13129718071175472
    }
   },
   "markers": {
@@ -107,56 +33,13 @@
  {
   "id": "maakunta-4",
   "colors": {
-   "hexPalette": [
-    "#ffcd01",
-    "#e30046",
-    "#fcfffd"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 3.6617359159869025,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 4.607692700116942,
-      "matcherColor": "#f00"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -125.00243900988104,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -142.3314113033367,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -172.2022120425379,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -91.82226450688975,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.1992283950617284,
+    "red": 0.5188668336866449,
+    "black": 0.0008864906533050684,
+    "white": 0.05442281749855463,
+    "gold": 0.31320100211986895
    }
   },
   "markers": {
@@ -172,119 +55,25 @@
  {
   "id": "maakunta-6",
   "colors": {
-   "hexPalette": [
-    "#ffed00",
-    "#2b944a"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 32,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": 22.30384635005847,
-      "matcherColor": "#07923f"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -188.93121797217964,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -43.821962994349136,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -165.63450471327224,
-      "matcherColor": "#0f0"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -80.52046114356443,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.13984567901234568,
+    "gold": 0.5266066238472855,
+    "green": 0.4593993325917686
    }
   }
  },
  {
   "id": "maakunta-1",
   "colors": {
-   "hexPalette": [
-    "#f5d440",
-    "#da281b",
-    "#828781",
-    "#000000",
-    "#ffffff"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 35.710084397017766,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 19.188816817956912,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -125.26107045875989,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -148.53057329801786,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -140.85493280413135,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -68.03905654135383,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2084567901234568,
+    "grey": 0.046673945254620604,
+    "red": 0.47188645402791857,
+    "black": 0.2084535600093582,
+    "gold": 0.022225688216486003,
+    "white": 0.20599703657490448
    }
   },
   "markers": {
@@ -296,100 +85,26 @@
  {
   "id": "maakunta-5",
   "colors": {
-   "hexPalette": [
-    "#2e69b2",
-    "#ccccca"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 30.251050438712966,
-      "matcherColor": "#1d7dc0"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -212,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -56.43453096053592,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -104.30459518832697,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.1473456790123457,
+    "blue": 0.7046984724534858,
+    "grey": 0.2840078187214942
    }
   }
  },
  {
   "id": "maakunta-0",
   "colors": {
-   "hexPalette": [
-    "#aa1e00",
-    "#0456c8",
-    "#dbb358",
-    "#f3f3f3"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 54.900980486407214,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": 25.243705606034467,
-      "matcherColor": "#bfa14e"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -99.17043005270207,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -93.91377173760566,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -155.61962462311516,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -154.8697279748825,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.3772839506172839,
+    "grey": 0.12470261697065821,
+    "white": 0.005204203013481364,
+    "gold": 0.2764670896114195,
+    "red": 0.009664948453608248,
+    "blue": 0.5666137985725614,
+    "green": 0.00004956383822363204
    }
   },
   "markers": {
@@ -401,56 +116,13 @@
  {
   "id": "maakunta-7",
   "colors": {
-   "hexPalette": [
-    "#ffcd01",
-    "#e30046",
-    "#fcfffd"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 3.6617359159869025,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 4.607692700116942,
-      "matcherColor": "#f00"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -125.00243900988104,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -142.3314113033367,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -172.2022120425379,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -91.82226450688975,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.1992283950617284,
+    "red": 0.5188668336866449,
+    "black": 0.0008864906533050684,
+    "white": 0.05442281749855463,
+    "gold": 0.31320100211986895
    }
   },
   "markers": {
@@ -466,57 +138,13 @@
  {
   "id": "maakunta-11",
   "colors": {
-   "hexPalette": [
-    "#e3ce4f",
-    "#0032ac",
-    "#88a2e6",
-    "#ffffff"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 30.725437663391105,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 16.99206399190654,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -199.13969538253298,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -111.71854370404549,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -149.41824180333478,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -84.8205786482018,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2012962962962963,
+    "blue": 0.4475616353659479,
+    "white": 0.4693175670453667,
+    "grey": 0.0022799288971327,
+    "gold": 0.03006414715202102
    }
   },
   "markers": {
@@ -529,56 +157,14 @@
  {
   "id": "maakunta-8",
   "colors": {
-   "hexPalette": [
-    "#fff301",
-    "#dd0328",
-    "#ffffff"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 37.9584054212077,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 27.416732699460375,
-      "matcherColor": "#f00"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -163.00205760445732,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -149.70693836876262,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -159.2087478400387,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -95.03870484495155,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.10651234567901234,
+    "red": 0.6172233928633113,
+    "gold": 0.08570244222598362,
+    "blue": 0.0007599571660506408,
+    "grey": 0.0001036305226432692,
+    "white": 0.22339286331134064
    }
   },
   "markers": {
@@ -591,43 +177,15 @@
  {
   "id": "maakunta-12",
   "colors": {
-   "hexPalette": [
-    "#d2241d",
-    "#c8c8c8"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 15.486435534842755,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": -141.0198995124612,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -134.8688506663384,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -68.28873683998918,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.38537037037037036,
+    "grey": 0.11845937531384955,
+    "gold": 0.1115295771818821,
+    "white": 0.0013056141408054635,
+    "blue": 0.006980014060459978,
+    "red": 0.5607110575474541,
+    "green": 0.02465602088982625
    }
   },
   "markers": {
@@ -639,63 +197,15 @@
  {
   "id": "maakunta-9",
   "colors": {
-   "hexPalette": [
-    "#d83c1a",
-    "#155bdc",
-    "#0c0601",
-    "#cdcdcd"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 3.8619674538407907,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 30.234247867725568,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": -146.402519364469,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -92.57129481000021,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -150.95260131128984,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": -252.45530619905162,
-      "matcherColor": "#fe3940"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.4210185185185185,
+    "grey": 0.3102510794818487,
+    "white": 0.025481102404179327,
+    "black": 0.0025054640439255826,
+    "gold": 0.06135721520336905,
+    "red": 0.0023455408070792686,
+    "blue": 0.5363292286369209
    }
   },
   "markers": {
@@ -710,62 +220,26 @@
  {
   "id": "maakunta-13",
   "colors": {
-   "hexPalette": [
-    "#efbc00"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 7.255332023037624,
-      "matcherColor": "#e6c633"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -108.67962264113208,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -171.3662666309861,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -158.21361767638777,
-      "matcherColor": "#0f0"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.23151234567901235,
+    "red": 0.40403229045343186,
+    "gold": 0.5824731916944456
    }
   }
  },
  {
   "id": "maakunta-10",
   "colors": {
-   "hexPalette": [
-    "#888888",
-    "#e7e7e7",
-    "#000000"
-   ],
-   "byNames": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
-   },
-   "byNamesRejected": {}
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.17308641975308642,
+    "black": 0.4158330845028367,
+    "grey": 0.5666616900567334,
+    "white": 0.002985965959988056,
+    "gold": 0.0005971931919976113,
+    "red": 0.006830397133472678
+   }
   },
   "markers": {
    "animals": [
@@ -776,44 +250,13 @@
  {
   "id": "maakunta-14",
   "colors": {
-   "hexPalette": [
-    "#7ea2cc",
-    "#0d57a0",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 18.841768745486647,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -222.87456149369825,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -37.02576977277738,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -129.87627550591992,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.14444444444444443,
+    "blue": 0.7853535353535354,
+    "white": 0.1704184704184704,
+    "grey": 0.0018037518037518038,
+    "black": 0.005375180375180375
    }
   },
   "markers": {
@@ -825,44 +268,13 @@
  {
   "id": "maakunta-17",
   "colors": {
-   "hexPalette": [
-    "#7ea2cc",
-    "#0d57a0",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 18.841768745486647,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -222.87456149369825,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -37.02576977277738,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -129.87627550591992,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.14444444444444443,
+    "blue": 0.7853535353535354,
+    "white": 0.1704184704184704,
+    "grey": 0.0018037518037518038,
+    "black": 0.005375180375180375
    }
   },
   "markers": {
@@ -874,56 +286,14 @@
  {
   "id": "maakunta-16",
   "colors": {
-   "hexPalette": [
-    "#fff301",
-    "#dd0328",
-    "#ffffff"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 37.9584054212077,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 27.416732699460375,
-      "matcherColor": "#f00"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -163.00205760445732,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -149.70693836876262,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -159.2087478400387,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -95.03870484495155,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.10651234567901234,
+    "red": 0.6172233928633113,
+    "gold": 0.08570244222598362,
+    "blue": 0.0007599571660506408,
+    "grey": 0.0001036305226432692,
+    "white": 0.22339286331134064
    }
   },
   "markers": {
@@ -936,57 +306,14 @@
  {
   "id": "maakunta-18",
   "colors": {
-   "hexPalette": [
-    "#ffce26",
-    "#9a9c9e",
-    "#ffffff",
-    "#131821"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 30.70836296824638,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -121.25475199146638,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -158.0861188729826,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -172.43094329747015,
-      "matcherColor": "#0f0"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.19864197530864197,
+    "black": 0.7225003851486674,
+    "grey": 0.0655137883222924,
+    "white": 0.05214912956401171,
+    "gold": 0.13168232937914034,
+    "blue": 0.00019257433369280542
    }
   },
   "markers": {
@@ -998,50 +325,12 @@
  {
   "id": "maakunta-19",
   "colors": {
-   "hexPalette": [
-    "#fff301",
-    "#81a621",
-    "#016bb7"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 37.9584054212077,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 35.896058413612096,
-      "matcherColor": "#0059c7"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -250.83832909746116,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -88.62977198585071,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -51.40466776576285,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -144.88533378453423,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.21854938271604937,
+    "blue": 0.6367155100912358,
+    "green": 0.059165053912081836,
+    "gold": 0.2940479481812078
    }
   },
   "markers": {
@@ -1053,113 +342,26 @@
  {
   "id": "maakunta-15",
   "colors": {
-   "hexPalette": [
-    "#ffd700",
-    "#d60132"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 10,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 15.331615143101033,
-      "matcherColor": "#f00"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -135,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -139.35897271003378,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -155.75597652956478,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -92.06577524216289,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.21391975308641975,
+    "red": 0.5907181279202167,
+    "gold": 0.34202363657780044
    }
   }
  },
  {
   "id": "maakunta-20",
   "colors": {
-   "hexPalette": [
-    "#e30a0f",
-    "#0456c8",
-    "#8fbdf4",
-    "#dbb358",
-    "#010101"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 46.698348389306574,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 54.900980486407214,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": 25.243705606034467,
-      "matcherColor": "#bfa14e"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": -93.91377173760566,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -155.61962462311516,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -101.66941578418596,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": -99.17043005270207,
-      "matcherColor": "#fe3940"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.41685185185185186,
+    "gold": 0.42352069440033874,
+    "grey": 0.03551391976288769,
+    "white": 0.0011114639568116863,
+    "red": 0.020853180903990683,
+    "blue": 0.30184185455700224,
+    "black": 0.16354398221657668
    }
   },
   "markers": {
@@ -1174,57 +376,14 @@
  {
   "id": "maakunta-21",
   "colors": {
-   "hexPalette": [
-    "#ffce26",
-    "#9a9c9e",
-    "#ffffff",
-    "#131821"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 30.70836296824638,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -121.25475199146638,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -158.0861188729826,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -172.43094329747015,
-      "matcherColor": "#0f0"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.19864197530864197,
+    "black": 0.7225003851486674,
+    "grey": 0.0655137883222924,
+    "white": 0.05214912956401171,
+    "gold": 0.13168232937914034,
+    "blue": 0.00019257433369280542
    }
   },
   "markers": {
@@ -1236,57 +395,14 @@
  {
   "id": "maakunta-22",
   "colors": {
-   "hexPalette": [
-    "#ffda10",
-    "#5d7c04",
-    "#095fa9",
-    "#ffffff"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 12.565835097474313,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 28.10956256179605,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -233.2123880053278,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -90.34294130420622,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -41.64152694642087,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -134.57132368363023,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.14358024691358023,
+    "blue": 0.520758252847052,
+    "white": 0.3024362116188554,
+    "grey": 0.0005766181346403345,
+    "green": 0.005153524578347989,
+    "gold": 0.14656912209889
    }
   },
   "markers": {
@@ -1298,50 +414,14 @@
  {
   "id": "maakunta-23",
   "colors": {
-   "hexPalette": [
-    "#0968af",
-    "#f9b473",
-    "#ec1c2e"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 30.301515190165006,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 22.894833858923064,
-      "matcherColor": "#f00"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -103.24788928909905,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -164.36391253477763,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -75.812370570578,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -155.73363205582945,
-      "matcherColor": "#2e3192"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.4357716049382716,
+    "gold": 0.3956019911383404,
+    "grey": 0.0035556041792024506,
+    "red": 0.4104808270882337,
+    "green": 0.0032820961654176466,
+    "blue": 0.11038783436354685
    }
   },
   "markers": {

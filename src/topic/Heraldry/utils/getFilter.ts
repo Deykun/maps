@@ -17,7 +17,7 @@ export const getFilter = (
       ? (unit as CoatOfArmsMapData).type
       : (
         name === 'colors'
-        ? Object.keys((unit as CoatOfArmsDetailsData).colors?.byNames || {})
+        ? Object.keys((unit as CoatOfArmsDetailsData).colors?.colorsByNames || {})
         : (unit as CoatOfArmsDetailsData)?.markers?.[name]
       )
     ) || [];

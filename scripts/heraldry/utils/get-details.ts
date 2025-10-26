@@ -9,37 +9,13 @@ import { getImageHash, getImageFileName } from "./helpers/images";
 import {
   AdministrativeUnit,
   CoatOfArmsDetailsData,
-  ColorStatus,
-  ColorStatusInDetails,
 } from "../../../src/topic/Heraldry/types";
 
 import { getMarkers } from "../../../src/topic/Heraldry/utils/markers/getMarkers";
 
 import { getImageColors } from "./helpers/colors";
-import { getNewImageColors } from "./helpers/colors-new";
 
 const start = new Date().getTime();
-
-const getColorsDataToSaveFromColor = (
-  color: ColorStatusInDetails | ColorStatus
-) => {
-  const colorToSave: ColorStatusInDetails = {
-    distanceToThreshold: color.distanceToThreshold,
-    matcherColor: color.matcherColor,
-  };
-
-  return colorToSave;
-};
-
-const transformColorsByIds = (colorsByIds: {
-  [id: string]: (ColorStatusInDetails | ColorStatus)[];
-}) =>
-  Object.fromEntries(
-    Object.entries(colorsByIds).map(([key, values]) => [
-      key,
-      values.map((value) => getColorsDataToSaveFromColor(value)),
-    ])
-  );
 
 export const getDetails = async ({
   administrativeDivisions,
@@ -111,7 +87,9 @@ export const getDetails = async ({
     const expectedFilePath = `./public/images/heraldry/${country}/${path}/${fileName}-320w.webp`;
 
     if (!existsSync(`./public/images/heraldry/${country}/web/temp/${path}`)) {
-      mkdirSync(`./public/images/heraldry/${country}/web/temp/${path}`);
+      mkdirSync(`./public/images/heraldry/${country}/web/temp/${path}`, {
+        recursive: true,
+      });
     }
 
     if (i > 0) {
@@ -125,41 +103,19 @@ export const getDetails = async ({
       let wasColorTakenFromCache = false;
       let colors;
       if (alreadyFetchedDetailsById[unit.id]?.colors) {
-        colors = {
-          hexPalette: alreadyFetchedDetailsById[unit.id].colors?.hexPalette,
-          byNames: transformColorsByIds(
-            alreadyFetchedDetailsById[unit.id].colors?.byNames || {}
-          ),
-          byNamesRejected: transformColorsByIds(
-            alreadyFetchedDetailsById[unit.id].colors?.byNames || {}
-          ),
-        };
+        colors = alreadyFetchedDetailsById[unit.id].colors;
         wasColorTakenFromCache = true;
       } else {
         try {
-          await sharp(expectedFilePath).resize(180, 180).toFile(temporaryPngFile);
+          await sharp(expectedFilePath)
+            .resize(180, 180)
+            .toFile(temporaryPngFile);
 
           const imagePath = resolve(temporaryPngFile);
 
-          const colorData = await getImageColors(imagePath);
-          const colorData2 = await getNewImageColors(imagePath);
+          const imageColors = await getImageColors(imagePath);
 
-          const { hexPalette, byNames, byNamesRejected } = colorData;
-
-          const { hasTransparent, colorsByNames } = colorData2;
-
-          // console.table('colorData');
-          // console.table(colorData);
-          // console.table('colorData2');
-          // console.table(colorData2);
-
-          colors = {
-            hexPalette,
-            byNames: transformColorsByIds(byNames),
-            byNamesRejected: transformColorsByIds(byNamesRejected),
-            hasTransparent,
-            colorsByNames,
-          };
+          colors = imageColors;
         } catch (error) {
           console.log(chalk.red(`Broken color data ${expectedFilePath}`));
           console.log(error);

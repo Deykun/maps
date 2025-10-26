@@ -20,6 +20,7 @@ const unitsJSON: CoatOfArmsDetailsData[] = [
 	...units2JSON,
 	...units3JSON,
 	...units4JSON,
+	...units5JSON,
 ];
 
 const formerUnitJSON: CoatOfArmsDetailsData[] = [
@@ -47,7 +48,7 @@ const getChunkIndex = async (chunkIndex: number, params?: { shouldRemoveTemporar
 	
 	getDetails({
 		administrativeDivisions: units.slice(startIndex, endIndex),
-		alreadyFetchedDivisions: unitsJSON,
+		// alreadyFetchedDivisions: unitsJSON,
 		path: 'unit',
 		country: 'de',
 		chunkIndex,
@@ -56,7 +57,7 @@ const getChunkIndex = async (chunkIndex: number, params?: { shouldRemoveTemporar
 
 	getDetails({
 		administrativeDivisions: formerUnits.slice(startIndex, endIndex),
-		alreadyFetchedDivisions: formerUnitJSON,
+		// alreadyFetchedDivisions: formerUnitJSON,
 		path: 'formerUnit',
 		country: 'de',
 		chunkIndex,

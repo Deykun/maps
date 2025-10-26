@@ -36,7 +36,7 @@ const fetchCountryData = async ({ dataPaths, filterForCountryData, sortForCountr
     }),
   );
   const resposne = await Promise.all(promiseArray);
-  const resposneAll = resposne.flatMap(v => v) as CoatOfArmsMapData[];
+  const responseAll = resposne.flatMap(v => v) as CoatOfArmsMapData[];
 
   const updateLoaderIn = [
     filterForCountryData ? 'updateLoaderInFilter' : '',
@@ -44,7 +44,7 @@ const fetchCountryData = async ({ dataPaths, filterForCountryData, sortForCountr
   ].filter(Boolean)[0];
 
   let unitsForMapAll: CoatOfArmsMapData[] = Object.values(
-    resposneAll.reduce((stack: {
+    responseAll.reduce((stack: {
       [url: string]: CoatOfArmsMapData,
     }, unit: CoatOfArmsMapData, index) => {
       const uniqueId = unit?.imagesList?.[0]?.path?.split('/').at(-1);
@@ -66,7 +66,7 @@ const fetchCountryData = async ({ dataPaths, filterForCountryData, sortForCountr
       }
 
       if (updateLoaderIn === 'updateLoaderInIndex' && index % 10) {
-        updateProcessingTexts({ value: index, total: resposneAll.length });
+        updateProcessingTexts({ value: index, total: responseAll.length });
       }
 
       return stack;
@@ -104,13 +104,13 @@ const fetchCountryDetailsData = async ({ dataPaths }: FetchParams) => {
     }),
   );
   const resposne = await Promise.all(promiseArray);
-  const resposneAll = resposne.flatMap(v => v) as CoatOfArmsDetailsData[];
+  const responseAll = resposne.flatMap(v => v) as CoatOfArmsDetailsData[];
 
-  const animalFiltersList = getFilter(resposneAll, 'animals');
-  const itemFiltersList = getFilter(resposneAll, 'items');
-  const colorFiltersList = getFilter(resposneAll, 'colors');
+  const animalFiltersList = getFilter(responseAll, 'animals');
+  const itemFiltersList = getFilter(responseAll, 'items');
+  const colorFiltersList = getFilter(responseAll, 'colors');
 
-  const detailsForUnitsById = resposneAll.reduce((stack: {
+  const detailsForUnitsById = responseAll.reduce((stack: {
     [id: string]: CoatOfArmsDetailsData,
   }, item) => {
     stack[item.id] = item;

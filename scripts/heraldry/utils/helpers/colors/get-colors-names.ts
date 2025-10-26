@@ -26,6 +26,26 @@ const colorMatchers: {
         get: nearestColor.from({ color: "#fe3940" }) as NearestColorCallback,
         thresholdDistance: 30,
       },
+      {
+        color: "#c13338",
+        get: nearestColor.from({ color: "#c13338" }) as NearestColorCallback,
+        thresholdDistance: 30,
+      },
+      {
+        color: "#8a3035",
+        get: nearestColor.from({ color: "#8a3035" }) as NearestColorCallback,
+        thresholdDistance: 30,
+      },
+      {
+        color: "#ab0001",
+        get: nearestColor.from({ color: "#ab0001" }) as NearestColorCallback,
+        thresholdDistance: 30,
+      },
+      {
+        color: "#800000",
+        get: nearestColor.from({ color: "#800000" }) as NearestColorCallback,
+        thresholdDistance: 30,
+      },
     ],
   },
   green: {
@@ -33,22 +53,47 @@ const colorMatchers: {
       {
         color: "#0f0",
         get: nearestColor.from({ color: "#0f0" }) as NearestColorCallback,
-        thresholdDistance: 90,
+        thresholdDistance: 80,
       },
       {
         color: "#006f00",
         get: nearestColor.from({ color: "#006f00" }) as NearestColorCallback,
-        thresholdDistance: 90,
+        thresholdDistance: 50,
       },
       {
         color: "#00824a",
         get: nearestColor.from({ color: "#00824a" }) as NearestColorCallback,
-        thresholdDistance: 60,
+        thresholdDistance: 50,
       },
       {
         color: "#07923f",
         get: nearestColor.from({ color: "#07923f" }) as NearestColorCallback,
-        thresholdDistance: 60,
+        thresholdDistance: 50,
+      },
+      {
+        color: "#32ac61",
+        get: nearestColor.from({ color: "#32ac61" }) as NearestColorCallback,
+        thresholdDistance: 50,
+      },
+      {
+        color: "#80c241",
+        get: nearestColor.from({ color: "#80c241" }) as NearestColorCallback,
+        thresholdDistance: 30,
+      },
+      {
+        color: "#77b567",
+        get: nearestColor.from({ color: "#77b567" }) as NearestColorCallback,
+        thresholdDistance: 30,
+      },
+      {
+        color: "#4f8a0d",
+        get: nearestColor.from({ color: "#4f8a0d" }) as NearestColorCallback,
+        thresholdDistance: 30,
+      },
+      {
+        color: "#5e9437",
+        get: nearestColor.from({ color: "#5e9437" }) as NearestColorCallback,
+        thresholdDistance: 30,
       },
     ],
   },
@@ -143,10 +188,9 @@ export const getColorsNames = (rgbColor: RGB): string[] => {
   const colorNames = ["red", "blue", "green", "gold"].filter((colorName) => {
     const matcherGetters = colorMatchers[colorName].getters;
 
-    return matcherGetters.some(
-      (getter) =>
-        (getter.get(hexColor)?.distance || 255) < getter.thresholdDistance
-    );
+    return matcherGetters.some((getter) => {
+      return (getter.get(hexColor)?.distance || 255) < getter.thresholdDistance;
+    });
   });
 
   return colorNames;

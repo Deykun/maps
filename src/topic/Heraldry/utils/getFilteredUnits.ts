@@ -124,11 +124,11 @@ export const getFilteredUnits = ({
           return filterResponse.notMatches;
         }
         
-        if (filterOperator === 'or' && colorFilters.every((active) => (unitColors?.colorsByNames[active] || 0) <= 0.03)) {
+        if (filterOperator === 'or' && colorFilters.every((active) => (unitColors?.colorsByNames[active] || 0) <= 0.035)) {
           return filterResponse.notMatches;
         }
 
-        if (filterOperator === 'and' && colorFilters.some((active) => (unitColors?.colorsByNames[active] || 0) <= 0.03)) {
+        if (filterOperator === 'and' && colorFilters.some((active) => (unitColors?.colorsByNames[active] || 0) <= 0.035)) {
           return filterResponse.notMatches;
         }
 

@@ -2,44 +2,12 @@
  {
   "id": "kommune-0",
   "colors": {
-   "hexPalette": [
-    "#6c6a9f",
-    "#ffffdf",
-    "#000064"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 18.673007574152145,
-      "matcherColor": "#5596c3"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -193.90691849604673,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -59.40214188558343,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -171.53617427952807,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -14.202425836356596,
-      "matcherColor": "#243b7f"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.22885802469135802,
+    "blue": 0.033660196117670606,
+    "grey": 0.013848308985391234,
+    "white": 0.013368020812487492
    }
   },
   "markers": {
@@ -52,114 +20,28 @@
  {
   "id": "kommune-1",
   "colors": {
-   "hexPalette": [
-    "#feff00",
-    "#0132b3",
-    "#434700",
-    "#a6a767",
-    "#ffffff"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 29.784110140523744,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 16.159379566434055,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": 11.96795530040238,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -116.16771189288008,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -43.74974747448982,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -105.29367804002669,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -105.06059493410291,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.18888888888888888,
+    "white": 0.17492389649923895,
+    "grey": 0.018683409436834095,
+    "black": 0.009779299847792999,
+    "blue": 0.48854642313546426,
+    "gold": 0.18242009132420092,
+    "green": 0.00003805175038051751
    }
   }
  },
  {
   "id": "kommune-2",
   "colors": {
-   "hexPalette": [
-    "#7e9a9a",
-    "#ffffff",
-    "#000000"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 21.879435653118442,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -154.10051602317685,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -90.0199986668444,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -22.80700453464067,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.12777777777777777,
+    "grey": 0.09044585987261146,
+    "white": 0.10056617126680821,
+    "black": 0.24989384288747346,
+    "blue": 0.5282377919320594
    }
   },
   "markers": {
@@ -171,50 +53,13 @@
  {
   "id": "kommune-3",
   "colors": {
-   "hexPalette": [
-    "#f6d402",
-    "#887a36",
-    "#294289"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 6.586518555705432,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 46.80909404172708,
-      "matcherColor": "#243b7f"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -182.5280937347468,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -72.53196386331621,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -38.721831425475486,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -106.30995159640929,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.26425925925925925,
+    "blue": 0.5592331571440557,
+    "grey": 0.017325278966356238,
+    "gold": 0.3969712224179881,
+    "green": 0.00016779931202282072
    }
   },
   "markers": {
@@ -226,63 +71,15 @@
  {
   "id": "kommune-4",
   "colors": {
-   "hexPalette": [
-    "#cb7f32",
-    "#0132b3",
-    "#110100",
-    "#ffffff"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 14.349151157946693,
-      "matcherColor": "#bfa14e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 16.159379566434055,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -234.7332203628972,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -108.35604582810714,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -72.0075755401939,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -160.53344417570773,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.06666666666666667,
+    "white": 0.1890542328042328,
+    "grey": 0.01917989417989418,
+    "blue": 0.4488756613756614,
+    "black": 0.016435185185185185,
+    "gold": 0.22943121693121693,
+    "red": 0.00006613756613756614
    }
   },
   "markers": {
@@ -294,63 +91,14 @@
  {
   "id": "kommune-5",
   "colors": {
-   "hexPalette": [
-    "#0099fe",
-    "#ff0100",
-    "#c27e38",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 59,
-      "matcherColor": "#0099ff"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 79,
-      "matcherColor": "#f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": 18.551236447874587,
-      "matcherColor": "#bfa14e"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -61.7877987534291,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -112.47715920567435,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -125.28086787361505,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -98.2638493918495,
-      "matcherColor": "#5596c3"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.12222222222222222,
+    "white": 0.2582630098452883,
+    "gold": 0.1519690576652602,
+    "red": 0.23642756680731364,
+    "grey": 0.007841068917018284,
+    "blue": 0.20949367088607596
    }
   },
   "markers": {
@@ -362,50 +110,13 @@
  {
   "id": "kommune-6",
   "colors": {
-   "hexPalette": [
-    "#2ba02b",
-    "#a1cca0",
-    "#ffffff"
-   ],
-   "byNames": {
-    "green": [
-     {
-      "distanceToThreshold": 16.502873658136906,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -168.68064827758138,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -19.584135282684457,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -32.293011653104045,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -131.02094126037596,
-      "matcherColor": "#07923f"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2855246913580247,
+    "white": 0.34571687761890363,
+    "green": 0.5660287701412589,
+    "grey": 0.03607067259924835,
+    "blue": 0.00008639682059700203
    }
   },
   "markers": {
@@ -417,57 +128,14 @@
  {
   "id": "kommune-7",
   "colors": {
-   "hexPalette": [
-    "#ffe501",
-    "#7f99ce",
-    "#0c2e82",
-    "#fefefe"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 23.980776337484624,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 32.54093956450804,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -199.40114530903412,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -189.77212606197844,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -41.666120217110674,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -139.01004999748127,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2775925925925926,
+    "blue": 0.7557463898145774,
+    "grey": 0.0014526189865846364,
+    "gold": 0.04319405280697257,
+    "green": 0.0002990686148850722,
+    "white": 0.17170810903187217
    }
   },
   "markers": {
@@ -483,70 +151,16 @@
  {
   "id": "kommune-8",
   "colors": {
-   "hexPalette": [
-    "#f1cc37",
-    "#cf181b",
-    "#717171",
-    "#000000",
-    "#ffffff"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 46.84705356203409,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 19.92504681649764,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -117.84789481084943,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -141.16162655934158,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -136.15702509539693,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -78.8344337691482,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2758333333333333,
+    "grey": 0.1337424881728679,
+    "black": 0.057324297830626945,
+    "white": 0.43451391552657376,
+    "green": 0.06921536035460087,
+    "blue": 0.012402506073392149,
+    "gold": 0.023355922090099304,
+    "red": 0.18735882027021267
    }
   },
   "markers": {
@@ -563,50 +177,13 @@
  {
   "id": "kommune-9",
   "colors": {
-   "hexPalette": [
-    "#006aaa",
-    "#000000",
-    "#dcdedf"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 26.38452737205678,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -244.2853681558883,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -38.95453501482385,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -140.6713731452496,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2482716049382716,
+    "grey": 0.49646904253572016,
+    "blue": 0.44650188865166696,
+    "white": 0.010510757102972574,
+    "black": 0.011126621776974873
    }
   },
   "markers": {
@@ -618,44 +195,13 @@
  {
   "id": "kommune-10",
   "colors": {
-   "hexPalette": [
-    "#86b1d2",
-    "#0c7390",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 8.105877018683515,
-      "matcherColor": "#1d7dc0"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -224.97540884471323,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -12.587877775838024,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -119.39899665271264,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.24972222222222223,
+    "blue": 0.6744827018799622,
+    "white": 0.28405117446213335,
+    "grey": 0.0002468221646303838,
+    "green": 0.0000411370274383973
    }
   },
   "markers": {
@@ -667,49 +213,12 @@
  {
   "id": "kommune-11",
   "colors": {
-   "hexPalette": [
-    "#0063a4",
-    "#ca8b31"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 23.599450553597407,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": 21.973693316336913,
-      "matcherColor": "#bfa14e"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -68.2496819333274,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -119.73554777385735,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -139.8999749874922,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -107.41931597356768,
-      "matcherColor": "#5596c3"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.3340740740740741,
+    "blue": 0.4371060437523174,
+    "grey": 0.027206154987022616,
+    "gold": 0.47511123470522804
    }
   },
   "markers": {
@@ -722,70 +231,14 @@
  {
   "id": "kommune-12",
   "colors": {
-   "hexPalette": [
-    "#0201ff",
-    "#f7dc31",
-    "#505248",
-    "#ffffff",
-    "#000000"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 57.763932022500214,
-      "matcherColor": "#00f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": 32.12528027046729,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -133.83833495247686,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -164.23414404835555,
-      "matcherColor": "#0f0"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -220.15174459567442,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -149.04148095923586,
-      "matcherColor": "#5596c3"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.10555555555555556,
+    "white": 0.20355417529330572,
+    "grey": 0.03761214630779848,
+    "blue": 0.13257418909592822,
+    "black": 0.06980676328502415,
+    "gold": 0.4665286404416839
    }
   },
   "markers": {
@@ -797,50 +250,14 @@
  {
   "id": "kommune-13",
   "colors": {
-   "hexPalette": [
-    "#fe1a00",
-    "#000000",
-    "#7e7e7e"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 53.98077633748463,
-      "matcherColor": "#f00"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": -194.4444929645757,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -177.8451044913832,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -106.4602054546371,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.18407407407407408,
+    "black": 0.09853986987441368,
+    "red": 0.6486987441367832,
+    "grey": 0.14132243909819941,
+    "blue": 0.00011348161597821153,
+    "gold": 0.055038583749432594
    }
   },
   "markers": {
@@ -853,100 +270,26 @@
  {
   "id": "kommune-14",
   "colors": {
-   "hexPalette": [
-    "#819ecd",
-    "#084fa4",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 22.730709692831553,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -226.83220169988675,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -43.75451797391764,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -138.17164277464119,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2,
+    "white": 0.2689429012345679,
+    "blue": 0.4312885802469136,
+    "green": 0.27534722222222224
    }
   }
  },
  {
   "id": "kommune-15",
   "colors": {
-   "hexPalette": [
-    "#fedc00",
-    "#0071b8",
-    "#ffffff"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 14.985717199976804,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 31.69805660383019,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -254.14068893207246,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -187.36865934510723,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -51.30588483993108,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -145.24132137559434,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.355679012345679,
+    "blue": 0.7183368461391071,
+    "green": 0.010730024908986396,
+    "gold": 0.0896723510251006,
+    "white": 0.15074726959187584,
+    "grey": 0.00009580379383023568
    }
   },
   "markers": {
@@ -959,51 +302,13 @@
  {
   "id": "kommune-16",
   "colors": {
-   "hexPalette": [
-    "#003e9c",
-    "#534501",
-    "#9aacca",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 7.240120945675017,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -175.59426062028095,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -143.97548872352286,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -55.27792503337315,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -74.85177047410241,
-      "matcherColor": "#243b7f"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.21876543209876542,
+    "gold": 0.00995575221238938,
+    "grey": 0.0027259797724399496,
+    "white": 0.4298751580278129,
+    "blue": 0.4631795195954488
    }
   },
   "markers": {
@@ -1015,63 +320,15 @@
  {
   "id": "kommune-17",
   "colors": {
-   "hexPalette": [
-    "#e60000",
-    "#7e9a9a",
-    "#000708",
-    "#ffffff"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 55,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 21.879435653118442,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": -179.26136336650762,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -90.0199986668444,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -22.80700453464067,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": -154.10051602317685,
-      "matcherColor": "#fe3940"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.07222222222222222,
+    "white": 0.18596141051230872,
+    "grey": 0.07182302062541583,
+    "red": 0.3319028609447771,
+    "blue": 0.3414836992681304,
+    "black": 0.019494344644045244,
+    "gold": 0.00016633399866932801
    }
   },
   "markers": {
@@ -1083,43 +340,11 @@
  {
   "id": "kommune-18",
   "colors": {
-   "hexPalette": [
-    "#cdaf5c",
-    "#ab0a31"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 35.75128869403572,
-      "matcherColor": "#bfa14e"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -17.75990998359194,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -102.9570495560103,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -114.55561590921917,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -80.83678496756448,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.3876851851851852,
+    "red": 0.019507031604415546,
+    "gold": 0.3667019507031604
    }
   },
   "markers": {
@@ -1131,71 +356,15 @@
  {
   "id": "kommune-19",
   "colors": {
-   "hexPalette": [
-    "#00d929",
-    "#ff0019",
-    "#585858",
-    "#b1b1b1",
-    "#000000",
-    "#ffffff"
-   ],
-   "byNames": {
-    "green": [
-     {
-      "distanceToThreshold": 34.09830056250526,
-      "matcherColor": "#0f0"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 55,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -257.3351449226718,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -186.42037253441526,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -114.75411297019593,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -189.23287772037162,
-      "matcherColor": "#006f00"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2222222222222222,
+    "grey": 0.055714285714285716,
+    "white": 0.4176984126984127,
+    "green": 0.09626984126984127,
+    "black": 0.03757936507936508,
+    "red": 0.2913095238095238,
+    "gold": 0.00007936507936507937
    }
   },
   "markers": {
@@ -1207,63 +376,15 @@
  {
   "id": "kommune-20",
   "colors": {
-   "hexPalette": [
-    "#00ff00",
-    "#cb7f32",
-    "#ffffff",
-    "#000000"
-   ],
-   "byNames": {
-    "green": [
-     {
-      "distanceToThreshold": 90,
-      "matcherColor": "#0f0"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": 14.349151157946693,
-      "matcherColor": "#bfa14e"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -57.732548122119425,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -108.35604582810714,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -166.71788636982305,
-      "matcherColor": "#bfa14e"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -119.67832506007863,
-      "matcherColor": "#006f00"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.07222222222222222,
+    "white": 0.19654025282767798,
+    "grey": 0.01753160345974717,
+    "black": 0.08546240851630073,
+    "red": 0.271290751829674,
+    "gold": 0.23236859614105124,
+    "green": 0.07255489021956088
    }
   },
   "markers": {
@@ -1275,64 +396,15 @@
  {
   "id": "kommune-21",
   "colors": {
-   "hexPalette": [
-    "#ffd329",
-    "#cd0f24",
-    "#b59594",
-    "#050000",
-    "#ffffff"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 5.6584873232258985,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 16.58864455004924,
-      "matcherColor": "#f00"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -114.3918280236108,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -26.892469332502557,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -133.6749854782491,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -82.39733143566983,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.20209876543209876,
+    "red": 0.6397183970292434,
+    "gold": 0.08041930991799474,
+    "grey": 0.08827170044870802,
+    "white": 0.12103512300789107,
+    "blue": 0.00003868172675228222,
+    "black": 0.00027077208726597555
    }
   },
   "markers": {
@@ -1347,63 +419,15 @@
  {
   "id": "kommune-22",
   "colors": {
-   "hexPalette": [
-    "#d20002",
-    "#003e8f",
-    "#aaaaaa",
-    "#ffffff"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 34.955577481779166,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 20.490507469723177,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": -162.2206111052708,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -36.87620966986684,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -145.14872653760247,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": -218.8611717838234,
-      "matcherColor": "#f00"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.21645061728395062,
+    "black": 0.024776460393114586,
+    "grey": 0.033402922755741124,
+    "blue": 0.33954386103123646,
+    "white": 0.33525032496947255,
+    "red": 0.054082798282585574,
+    "gold": 0.17871351479103478
    }
   },
   "markers": {
@@ -1417,63 +441,14 @@
  {
   "id": "kommune-23",
   "colors": {
-   "hexPalette": [
-    "#023e9a",
-    "#c01121",
-    "#7f8879",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 16.479889706022114,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 6.876816261872179,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -222.6037012331475,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -126.30765127475266,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -80.34600101178515,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -126.9117438792972,
-      "matcherColor": "#243b7f"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2467283950617284,
+    "gold": 0.03347537490780955,
+    "grey": 0.009792673932639514,
+    "white": 0.42423994099811524,
+    "blue": 0.19114152257641565,
+    "red": 0.1808161927394903
    }
   },
   "markers": {
@@ -1486,60 +461,23 @@
  {
   "id": "kommune-24",
   "colors": {
-   "hexPalette": [
-    "#e3e3e3"
-   ],
-   "byNames": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   },
-   "byNamesRejected": {}
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.23262345679012345,
+    "grey": 0.8889514539677432,
+    "white": 0.11104854603225676
+   }
   }
  },
  {
   "id": "kommune-25",
   "colors": {
-   "hexPalette": [
-    "#0c428b",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 32.269150752275905,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -207.62127876775736,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -32.005434622091755,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -131.9739565670302,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2222222222222222,
+    "white": 0.28543650793650793,
+    "blue": 0.6853571428571429,
+    "grey": 0.0015476190476190477
    }
   },
   "markers": {
@@ -1551,58 +489,15 @@
  {
   "id": "kommune-26",
   "colors": {
-   "hexPalette": [
-    "#2666ff",
-    "#f70000",
-    "#818085",
-    "#050000",
-    "#d2d2d2"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 72,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -261.8252901994616,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -193.2153233909828,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -180.79512551004314,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -123.05736805712027,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.08333333333333333,
+    "white": 0.18525252525252525,
+    "grey": 0.44171717171717173,
+    "gold": 0.0014141414141414141,
+    "blue": 0.015589225589225588,
+    "black": 0.019764309764309766,
+    "red": 0.20013468013468014
    }
   },
   "markers": {
@@ -1614,51 +509,14 @@
  {
   "id": "kommune-27",
   "colors": {
-   "hexPalette": [
-    "#0099fe",
-    "#809796",
-    "#ffffff",
-    "#000000"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 17.750502010056337,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -149.18705310373292,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -89.11405031049222,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -18.20485918406861,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.16666666666666666,
+    "grey": 0.11392592592592593,
+    "blue": 0.6169259259259259,
+    "black": 0.0672962962962963,
+    "gold": 0.04577777777777778,
+    "white": 0.07422222222222222
    }
   },
   "markers": {
@@ -1671,57 +529,13 @@
  {
   "id": "kommune-28",
   "colors": {
-   "hexPalette": [
-    "#4cb1ff",
-    "#666966",
-    "#000000",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 13.592169136464037,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -257.3412605248331,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -141.85638459062918,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -135.7370685383839,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.08888888888888889,
+    "white": 0.37730352303523035,
+    "grey": 0.1040650406504065,
+    "blue": 0.49498644986449863,
+    "black": 0.010941734417344173
    }
   },
   "markers": {
@@ -1734,148 +548,37 @@
  {
   "id": "kommune-29",
   "colors": {
-   "hexPalette": [
-    "#8eb4ae",
-    "#01665f",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 12.250461256182717,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": 24.985717199976804,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -209.73263537268286,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -118.05055461862511,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -125.58825393865851,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -4.015623093116886,
-      "matcherColor": "#243b7f"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.35348765432098767,
+    "green": 0.7572444741490428,
+    "grey": 0.0014321859932209862,
+    "blue": 0.0419630496013749,
+    "white": 0.19291545328686685
    }
   }
  },
  {
   "id": "kommune-30",
   "colors": {
-   "hexPalette": [
-    "#41841c",
-    "#004a8a",
-    "#ffffff"
-   ],
-   "byNames": {
-    "green": [
-     {
-      "distanceToThreshold": 16.175884698833002,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 19.47840082129038,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -219.2407057871639,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -66.37642185154634,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -139.55199823604875,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -25.0411665018772,
-      "matcherColor": "#00824a"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "green": 0.37099290226971376,
+    "transparent": 0.20858024691358024,
+    "white": 0.23371811871148895,
+    "grey": 0.0005069807347320802,
+    "blue": 0.3770766710864987,
+    "gold": 0.00015599407222525544
    }
   }
  },
  {
   "id": "kommune-31",
   "colors": {
-   "hexPalette": [
-    "#002b75"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 19.35519713419685,
-      "matcherColor": "#243b7f"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -203.83622038069774,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -37.04638066409278,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -148.9330036159917,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.6007098765432098,
+    "blue": 0.9993043209399397
    }
   },
   "markers": {
@@ -1891,57 +594,15 @@
  {
   "id": "kommune-32",
   "colors": {
-   "hexPalette": [
-    "#de2b37",
-    "#1051af",
-    "#60923b",
-    "#f3f4f1"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 2.7795363909280866,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 30.06674090580847,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": -56.50274722510167,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -27.991525119391525,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -32.89779329994873,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": -143.78114308404093,
-      "matcherColor": "#f00"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.19756172839506173,
+    "blue": 0.49167275664448634,
+    "grey": 0.06600253855917536,
+    "gold": 0.06415631370437325,
+    "green": 0.08981114658256087,
+    "white": 0.09215739066887188,
+    "red": 0.07092580483864765
    }
   },
   "markers": {
@@ -1953,56 +614,15 @@
  {
   "id": "kommune-33",
   "colors": {
-   "hexPalette": [
-    "#21ad5e",
-    "#cd0f24",
-    "#ffffff"
-   ],
-   "byNames": {
-    "green": [
-     {
-      "distanceToThreshold": 11.358453971938765,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 16.58864455004924,
-      "matcherColor": "#f00"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -216.73051747334654,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -136.30843079195554,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -82.39733143566983,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -139.2095111464618,
-      "matcherColor": "#006f00"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.25237654320987657,
+    "red": 0.5126945465053875,
+    "green": 0.2532716839367543,
+    "gold": 0.01717376047558106,
+    "grey": 0.06691986954547331,
+    "white": 0.08405234694298806,
+    "blue": 0.0021054369813813317
    }
   },
   "markers": {
@@ -2017,114 +637,27 @@
  {
   "id": "kommune-34",
   "colors": {
-   "hexPalette": [
-    "#ffb01d",
-    "#e20001",
-    "#c0c0c0"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 20.08759591304979,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 50.98276374290619,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -94.04434690867618,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -175.49309968659378,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -161.78959470160797,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -116.16469566857032,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.3299691358024691,
+    "red": 0.4391266295084988,
+    "grey": 0.40973789672486066,
+    "gold": 0.1209636556266986
    }
   }
  },
  {
   "id": "kommune-35",
   "colors": {
-   "hexPalette": [
-    "#dc2b34",
-    "#1051af",
-    "#548631",
-    "#9aa8b7",
-    "#ffffff"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 3.9868432440804327,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 7.688175240836301,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": -58.37651794169315,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -131.03141102970474,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -36.591925128346006,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": -161.0026177831079,
-      "matcherColor": "#fe3940"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.23416666666666666,
+    "blue": 0.5354451295691774,
+    "gold": 0.07084995768347237,
+    "grey": 0.0030226091161890943,
+    "green": 0.034336839559908114,
+    "red": 0.120380445734091,
+    "white": 0.08580179744488776
    }
   },
   "markers": {
@@ -2137,86 +670,25 @@
  {
   "id": "kommune-36",
   "colors": {
-   "hexPalette": [
-    "#008d52"
-   ],
-   "byNames": {
-    "green": [
-     {
-      "distanceToThreshold": 46.398529491264554,
-      "matcherColor": "#00824a"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -222.70447634615516,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -40.22474744293447,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -122.40614024752566,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.9588271604938272,
+    "green": 0.8643178410794603,
+    "blue": 0.0022488755622188904
    }
   }
  },
  {
   "id": "kommune-37",
   "colors": {
-   "hexPalette": [
-    "#c7b14e",
-    "#af0626",
-    "#e3e5e6"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 42.11145618000168,
-      "matcherColor": "#bfa14e"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -8.76936408468859,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -113.35224255832401,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -117.59094392578882,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -88.16882263148344,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2939506172839506,
+    "red": 0.01210876027277496,
+    "grey": 0.3216034271725826,
+    "white": 0.008174506032523168,
+    "gold": 0.10316488896660256,
+    "black": 0.0009617065920615492
    }
   },
   "markers": {
@@ -2228,107 +700,28 @@
  {
   "id": "kommune-38",
   "colors": {
-   "hexPalette": [
-    "#004096",
-    "#d82c34",
-    "#829dd9",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 29.42332553439283,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 1.5079621872383768,
-      "matcherColor": "#f00"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -190.873266829646,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -135.13585011473418,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -74.27211177307072,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -134.32189789110234,
-      "matcherColor": "#2e3192"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.19277777777777777,
+    "gold": 0.018199892941806226,
+    "grey": 0.0037470367821365756,
+    "white": 0.3961153169687237,
+    "blue": 0.11940812112869924,
+    "red": 0.30079528943947387
    }
   }
  },
  {
   "id": "kommune-39",
   "colors": {
-   "hexPalette": [
-    "#016bb5",
-    "#aca9aa",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 34.52452159428601,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -249.73625824285688,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -49.4486180817282,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -144.0245083317198,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.3453703703703704,
+    "blue": 0.5291371994342291,
+    "white": 0.21664309288071665,
+    "grey": 0.015558698727015558,
+    "black": 0.0008015087223008015,
+    "green": 0.2198019801980198
    }
   },
   "markers": {
@@ -2340,107 +733,27 @@
  {
   "id": "kommune-40",
   "colors": {
-   "hexPalette": [
-    "#3497c8",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 46.608384285872,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -231.02873405048723,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -77.91664149043072,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -107.92855623746667,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2578395061728395,
+    "blue": 0.8226316227231141,
+    "white": 0.15470348498710804,
+    "grey": 0.00004158695832986775
    }
   }
  },
  {
   "id": "kommune-41",
   "colors": {
-   "hexPalette": [
-    "#ffd93f",
-    "#015bea",
-    "#d32431",
-    "#599637",
-    "#ffffff"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 26.38452737205678,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 24.928644166499637,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 4.946685616156827,
-      "matcherColor": "#f00"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -150.3931422590525,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -60.05713120009278,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -21.65572085656875,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -41.08906963663283,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2756172839506173,
+    "blue": 0.26403919897741795,
+    "gold": 0.047635279079676185,
+    "grey": 0.00524073285044738,
+    "white": 0.2547933532168726,
+    "red": 0.1809970174691095,
+    "green": 0.04324669791222838
    }
   },
   "markers": {
@@ -2452,57 +765,14 @@
  {
   "id": "kommune-42",
   "colors": {
-   "hexPalette": [
-    "#063f97",
-    "#a40812",
-    "#aaa184",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 21.373584168344067,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": 16.273577781849106,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -119.9866660740214,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -117.63727086397157,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -95.96473960482223,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -26.37198879404295,
-      "matcherColor": "#5596c3"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2741975308641975,
+    "gold": 0.025599591767307365,
+    "white": 0.42477462153427453,
+    "red": 0.33657935022963087,
+    "grey": 0.002423881612519136,
+    "blue": 0.08092362646708624
    }
   },
   "markers": {
@@ -2514,63 +784,15 @@
  {
   "id": "kommune-43",
   "colors": {
-   "hexPalette": [
-    "#00389b",
-    "#da2b34",
-    "#959691",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 14.294420471894242,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 3.045467969716043,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -223.62147486632102,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -144.20503837449783,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -54.28035701729323,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -136.10201426808445,
-      "matcherColor": "#2e3192"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.22984567901234568,
+    "gold": 0.016230513365126438,
+    "grey": 0.0660441630264898,
+    "white": 0.35510760229230953,
+    "red": 0.3027692061074821,
+    "blue": 0.13461307257644373,
+    "black": 0.00016030136656915
    }
   },
   "markers": {
@@ -2582,44 +804,13 @@
  {
   "id": "kommune-44",
   "colors": {
-   "hexPalette": [
-    "#1051af",
-    "#fdeda7",
-    "#717a45"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 30.06674090580847,
-      "matcherColor": "#0059c7"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -119.52192861938761,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -42.85706605220514,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -16.334788923530795,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -52.07573584879245,
-      "matcherColor": "#5596c3"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2337962962962963,
+    "blue": 0.6332729103726082,
+    "grey": 0.0037462235649546828,
+    "gold": 0.1713997985901309,
+    "green": 0.00036253776435045317
    }
   },
   "markers": {
@@ -2631,93 +822,25 @@
  {
   "id": "kommune-45",
   "colors": {
-   "hexPalette": [
-    "#8f0055",
-    "#ffffff"
-   ],
-   "byNames": {
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -60.60227594174995,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -64.62343278854101,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -109.98749960935058,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -88.49579118614776,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.33382716049382716,
+    "white": 0.13505374351371385,
+    "gold": 0.00004633061527057079,
+    "grey": 0.00018532246108228317
    }
   }
  },
  {
   "id": "kommune-46",
   "colors": {
-   "hexPalette": [
-    "#dc2a36",
-    "#003892",
-    "#fee46d"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 3.156002186247491,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 19.1833367360829,
-      "matcherColor": "#243b7f"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": -125.03902067655318,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -187.7156819482832,
-      "matcherColor": "#0f0"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -9.570108523704349,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": -146.8219443394965,
-      "matcherColor": "#fe3940"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.22830246913580246,
+    "gold": 0.08151021877374715,
+    "red": 0.32792064952205735,
+    "grey": 0.002479702435707715,
+    "blue": 0.24185097788265408
    }
   },
   "markers": {
@@ -2729,51 +852,15 @@
  {
   "id": "kommune-47",
   "colors": {
-   "hexPalette": [
-    "#d23538",
-    "#1051af",
-    "#530101",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 30.06674090580847,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -92.00581385522992,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -86.45477117526761,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -47.80420893427021,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -136.50445287575548,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.22583333333333333,
+    "blue": 0.46481680819678667,
+    "gold": 0.041223139177929274,
+    "grey": 0.002790734760594825,
+    "red": 0.22537176573775067,
+    "green": 0.00011960291831120679,
+    "white": 0.11637363951680421
    }
   },
   "markers": {
@@ -2787,56 +874,13 @@
  {
   "id": "kommune-48",
   "colors": {
-   "hexPalette": [
-    "#71ca93",
-    "#009746",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 3.8948096382382147,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": 48.90946349359058,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -224.50944156134142,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -86.3830591291219,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -123.74982993189408,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -54.057003292213494,
-      "matcherColor": "#243b7f"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.31037037037037035,
+    "green": 0.8391514500537057,
+    "blue": 0.020810955961331902,
+    "white": 0.10396527031865378,
+    "grey": 0.00004475474400286431
    }
   },
   "markers": {
@@ -2848,93 +892,25 @@
  {
   "id": "kommune-49",
   "colors": {
-   "hexPalette": [
-    "#014766"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 15.345772876467784,
-      "matcherColor": "#243b7f"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -202.77376115898733,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -5.31462317123173,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -134.95897004241687,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.8436419753086419,
+    "blue": 0.990525069088038,
+    "grey": 0.0005921831819976313
    }
   }
  },
  {
   "id": "kommune-50",
   "colors": {
-   "hexPalette": [
-    "#1149a3",
-    "#8b1c18",
-    "#a5a5a5",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 18.696247143873236,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -41.72099243762351,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -73.66429054622759,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -81.32940246105903,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -88.92615619829849,
-      "matcherColor": "#243b7f"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2390432098765432,
+    "grey": 0.021131616305009124,
+    "white": 0.3307239910768607,
+    "gold": 0.057432569458527684,
+    "blue": 0.03041979314540661,
+    "red": 0.25978503346177245
    }
   },
   "markers": {
@@ -2948,51 +924,14 @@
  {
   "id": "kommune-51",
   "colors": {
-   "hexPalette": [
-    "#008ac8",
-    "#52a127",
-    "#a9d395",
-    "#fefefe"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 27.22806078365212,
-      "matcherColor": "#1d7dc0"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -165.36120392749427,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -134.58931111445972,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -28.41945487278238,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -33.547346952713966,
-      "matcherColor": "#5596c3"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.24938271604938272,
+    "blue": 0.3630345394736842,
+    "white": 0.18873355263157895,
+    "green": 0.4270970394736842,
+    "gold": 0.00020559210526315788,
+    "grey": 0.00004111842105263158
    }
   },
   "markers": {
@@ -3004,112 +943,37 @@
  {
   "id": "kommune-52",
   "colors": {
-   "hexPalette": [
-    "#e3e3e3"
-   ],
-   "byNames": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   },
-   "byNamesRejected": {}
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.23262345679012345,
+    "grey": 0.8889514539677432,
+    "white": 0.11104854603225676
+   }
   }
  },
  {
   "id": "kommune-53",
   "colors": {
-   "hexPalette": [
-    "#00548e",
-    "#7da9b5",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 33.55648592106751,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -177.06037766796427,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -108.45474169639749,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -47.210074153504806,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.42104938271604936,
+    "white": 0.43842627145751145,
+    "blue": 0.5324661477769485,
+    "grey": 0.0006397270497920887
    }
   }
  },
  {
   "id": "kommune-54",
   "colors": {
-   "hexPalette": [
-    "#e05001",
-    "#8e7c6e",
-    "#1c0000",
-    "#ffffff"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 12.914970532025784,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -147,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -80.2640367307315,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -24.47707194019246,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -170.21946051539604,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.31679012345679014,
+    "red": 0.0033881460065052402,
+    "grey": 0.035462594868088185,
+    "gold": 0.052493675460787856,
+    "white": 0.15748102638236358,
+    "black": 0.0003614022406938923
    }
   },
   "markers": {
@@ -3124,67 +988,24 @@
  {
   "id": "kommune-55",
   "colors": {
-   "hexPalette": [
-    "#e3e3e3"
-   ],
-   "byNames": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   },
-   "byNamesRejected": {}
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.23262345679012345,
+    "grey": 0.8889514539677432,
+    "white": 0.11104854603225676
+   }
   }
  },
  {
   "id": "kommune-56",
   "colors": {
-   "hexPalette": [
-    "#de2d37",
-    "#ebb68d",
-    "#2154a5"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 1.6482291202043058,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 18.107279868693176,
-      "matcherColor": "#2e3192"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": -82.60381299342276,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -47.17275773255068,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -115.2797763576848,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": -209.07611454424938,
-      "matcherColor": "#f00"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2796296296296296,
+    "blue": 0.5524850042844901,
+    "grey": 0.015381319622964866,
+    "gold": 0.13680377035132818,
+    "red": 0.19005998286203943
    }
   },
   "markers": {
@@ -3196,74 +1017,26 @@
  {
   "id": "kommune-57",
   "colors": {
-   "hexPalette": [
-    "#e3e3e3"
-   ],
-   "byNames": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   },
-   "byNamesRejected": {}
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.23262345679012345,
+    "grey": 0.8889514539677432,
+    "white": 0.11104854603225676
+   }
   }
  },
  {
   "id": "kommune-58",
   "colors": {
-   "hexPalette": [
-    "#dc2b34",
-    "#1051af",
-    "#85add4",
-    "#ffffff"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 3.9868432440804327,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 24.12513982120403,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": -137.8585353225885,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -136.4230129083657,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -71.24404748406687,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": -193.60903380677624,
-      "matcherColor": "#fe3940"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.22978395061728396,
+    "blue": 0.4679222600681226,
+    "grey": 0.001442596674013224,
+    "gold": 0.02191945501903426,
+    "green": 0.00004007212983370066,
+    "red": 0.339491083951112,
+    "white": 0.07088759767581647
    }
   },
   "markers": {
@@ -3275,33 +1048,13 @@
  {
   "id": "kommune-59",
   "colors": {
-   "hexPalette": [
-    "#555555",
-    "#a2a2a2",
-    "#ffffff",
-    "#000000"
-   ],
-   "byNames": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
-   },
-   "byNamesRejected": {}
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.25929012345679014,
+    "black": 0.43426809450393766,
+    "grey": 0.14871452977207383,
+    "white": 0.4170173757239885
+   }
   },
   "markers": {
    "animals": [
@@ -3312,80 +1065,25 @@
  {
   "id": "kommune-60",
   "colors": {
-   "hexPalette": [
-    "#709fcd",
-    "#00479a",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 13.42747591121993,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -226.2384691706775,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -39.403219263764285,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -144.71443525066815,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.21246913580246912,
+    "blue": 0.5842608559335319,
+    "white": 0.38277943251293306,
+    "grey": 0.00035271986204734283
    }
   }
  },
  {
   "id": "kommune-61",
   "colors": {
-   "hexPalette": [
-    "#d90c18"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 33.48118660154797,
-      "matcherColor": "#f00"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": -153.2932253964012,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -149.7206707816412,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -92.59750980930193,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.26589506172839505,
+    "red": 0.477359680470885,
+    "gold": 0.4567584612150515,
+    "black": 0.0004624763506411604,
+    "grey": 0.00021021652301870928
    }
   },
   "markers": {
@@ -3397,44 +1095,13 @@
  {
   "id": "kommune-62",
   "colors": {
-   "hexPalette": [
-    "#003c97",
-    "#fee46d",
-    "#568533"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 16.721829983235196,
-      "matcherColor": "#243b7f"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -141.022623276442,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -12.37675517420935,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -45.66456359631643,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -57.268921714152384,
-      "matcherColor": "#243b7f"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.23487654320987655,
+    "gold": 0.08124243646631707,
+    "green": 0.19620814844695442,
+    "grey": 0.0051230334812424365,
+    "blue": 0.11258572004840661
    }
   },
   "markers": {
@@ -3446,58 +1113,15 @@
  {
   "id": "kommune-63",
   "colors": {
-   "hexPalette": [
-    "#0180ff",
-    "#da0001",
-    "#fb8a85",
-    "#000f1e",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 34.98000799360639,
-      "matcherColor": "#0099ff"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 42.986488953356506,
-      "matcherColor": "#f00"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -177.1964229922337,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -10.578327685441266,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -171.52537657889687,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -52.43220179290273,
-      "matcherColor": "#243b7f"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.25416666666666665,
+    "black": 0.01940823505069315,
+    "grey": 0.02611214566521829,
+    "white": 0.4759776536312849,
+    "red": 0.33850610386923236,
+    "gold": 0.0016139044072004966,
+    "blue": 0.07663976825987999
    }
   },
   "markers": {
@@ -3510,44 +1134,12 @@
  {
   "id": "kommune-64",
   "colors": {
-   "hexPalette": [
-    "#808696",
-    "#283951",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 13.783119966834626,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -156.71713077003955,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -15.247327757050442,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -106.52026903653501,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2648765432098765,
+    "blue": 0.5981610546645394,
+    "grey": 0.05617600134352171,
+    "white": 0.33315139810227556
    }
   },
   "markers": {
@@ -3561,100 +1153,26 @@
  {
   "id": "kommune-65",
   "colors": {
-   "hexPalette": [
-    "#a3c875",
-    "#4f890f",
-    "#fefbff"
-   ],
-   "byNames": {
-    "green": [
-     {
-      "distanceToThreshold": 5.489645604813603,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -143.53970564532824,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -83.09786860746738,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -113.68937791356154,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -69.94614268996213,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "green": 0.4964294030893425,
+    "gold": 0.010517736552045331,
+    "white": 0.4569199720561981,
+    "grey": 0.0005045408678102926,
+    "transparent": 0.2047530864197531
    }
   }
  },
  {
   "id": "kommune-66",
   "colors": {
-   "hexPalette": [
-    "#44b549",
-    "#00437c",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 23,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -211.35888522576414,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -47.0196835140129,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -20.430093870391573,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -139.49937343260004,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2809567901234568,
+    "blue": 0.7774820792376701,
+    "white": 0.07138258144825514,
+    "grey": 0.0003433918530282869,
+    "green": 0.12971627248143539
    }
   },
   "markers": {
@@ -3666,49 +1184,12 @@
  {
   "id": "kommune-67",
   "colors": {
-   "hexPalette": [
-    "#cf8326",
-    "#015cbb"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 7.502381006373248,
-      "matcherColor": "#bfa14e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 47.59032635400914,
-      "matcherColor": "#0059c7"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -248.55593131155007,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -119.73482420449369,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -59.22248110151038,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -149.78798821667556,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.28922839506172837,
+    "blue": 0.6967736332450388,
+    "gold": 0.17165313300620957,
+    "grey": 0.11220634851708715
    }
   },
   "markers": {
@@ -3721,57 +1202,15 @@
  {
   "id": "kommune-68",
   "colors": {
-   "hexPalette": [
-    "#f7ce18",
-    "#004683",
-    "#839ab4",
-    "#ffffff"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 27.10623159320295,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 31.451055624246578,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -164.92049661336284,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -162.11773995310628,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -110.21457046915813,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -40.588269693836565,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.3257098765432099,
+    "grey": 0.03190369387101204,
+    "black": 0.020597793747425274,
+    "white": 0.09740467798782441,
+    "blue": 0.5993500251750813,
+    "green": 0.0014647319998169085,
+    "gold": 0.21696342747287958
    }
   },
   "markers": {
@@ -3786,44 +1225,14 @@
  {
   "id": "kommune-69",
   "colors": {
-   "hexPalette": [
-    "#90752c",
-    "#204392",
-    "#fee46f"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 39,
-      "matcherColor": "#243b7f"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -147.341478509682,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -124.2082270624766,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -188.5067324141375,
-      "matcherColor": "#0f0"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -11.246052522227501,
-      "matcherColor": "#e6c633"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2203395061728395,
+    "blue": 0.20676141087051186,
+    "grey": 0.029135822018130714,
+    "gold": 0.11773088951347928,
+    "red": 0.025770951268754207,
+    "black": 0.0022168560231186412
    }
   },
   "markers": {
@@ -3836,26 +1245,15 @@
  {
   "id": "kommune-70",
   "colors": {
-   "hexPalette": [
-    "#a2a2a2",
-    "#ffffff",
-    "#474747"
-   ],
-   "byNames": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {}
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2560802469135802,
+    "gold": 0.05277351367049745,
+    "grey": 0.34165871468281955,
+    "white": 0.32062398871509773,
+    "red": 0.09127494502758993,
+    "blue": 0.06331162096004647
+   }
   },
   "markers": {
    "animals": [
@@ -3871,174 +1269,50 @@
  {
   "id": "kommune-71",
   "colors": {
-   "hexPalette": [
-    "#004b8f",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 17.4794167490614,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -221.82610887728055,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -28.238313673823114,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -140.37215375395854,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2222222222222222,
+    "blue": 0.16484126984126984,
+    "white": 0.678968253968254,
+    "green": 0.11535714285714285,
+    "grey": 0.0004365079365079365
    }
   }
  },
  {
   "id": "kommune-72",
   "colors": {
-   "hexPalette": [
-    "#ffd500",
-    "#cc071e"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 8,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 20.418123560935072,
-      "matcherColor": "#f00"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -133,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -140.45947221321322,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -140.93722090646193,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -91.90786681406595,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.32558641975308644,
+    "gold": 0.5204796119170747,
+    "red": 0.464051988467347
    }
   }
  },
  {
   "id": "kommune-73",
   "colors": {
-   "hexPalette": [
-    "#013669",
-    "#94989b",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 18.358674372685975,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -200.1017672204158,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -22.085321464924533,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -141.9975247373096,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.24768518518518517,
+    "black": 0.03253333333333333,
+    "blue": 0.7204102564102564,
+    "grey": 0.14843076923076923,
+    "white": 0.058133333333333335
    }
   }
  },
  {
   "id": "kommune-74",
   "colors": {
-   "hexPalette": [
-    "#707070",
-    "#ffffff",
-    "#000000"
-   ],
-   "byNames": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
-   },
-   "byNamesRejected": {}
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.27197530864197533,
+    "black": 0.5946243852806512,
+    "grey": 0.0830507037476683,
+    "white": 0.32232491097168053
+   }
   },
   "markers": {
    "items": [
@@ -4049,50 +1323,14 @@
  {
   "id": "kommune-75",
   "colors": {
-   "hexPalette": [
-    "#609600",
-    "#005e95",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 9.75062189439555,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -229.9387036173443,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -107.36188335460378,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -23.192547743172284,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -136.3415391607186,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2611111111111111,
+    "white": 0.5033416875522139,
+    "blue": 0.30885547201336677,
+    "green": 0.13709273182957393,
+    "gold": 0.009231411862990811,
+    "grey": 0.001545530492898914
    }
   },
   "markers": {
@@ -4104,43 +1342,11 @@
  {
   "id": "kommune-76",
   "colors": {
-   "hexPalette": [
-    "#20457d",
-    "#a6a8aa"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 49.045548849896676,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -184.79237149132524,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -25.708809348864477,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -110.1087887206302,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.24219135802469136,
+    "blue": 0.7755875045819248,
+    "grey": 0.22351647456522625
    }
   },
   "markers": {
@@ -4152,86 +1358,23 @@
  {
   "id": "kommune-77",
   "colors": {
-   "hexPalette": [
-    "#0000ff",
-    "#c0bfc4"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 60,
-      "matcherColor": "#00f"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -280.62445840513925,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -162.84748147555987,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -221.94680349314126,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2783333333333333,
+    "blue": 0.18462920195021812,
+    "grey": 0.4739970917800017
    }
   }
  },
  {
   "id": "kommune-78",
   "colors": {
-   "hexPalette": [
-    "#0090d3",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 20.465205198458406,
-      "matcherColor": "#1d7dc0"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -276.0947565705757,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -77.71347065556077,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -156.36543161974836,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.20953703703703705,
+    "blue": 0.5992347038381945,
+    "white": 0.31744172425910744,
+    "grey": 0.00007809144508219124
    }
   },
   "markers": {
@@ -4244,51 +1387,13 @@
  {
   "id": "kommune-79",
   "colors": {
-   "hexPalette": [
-    "#0062d1",
-    "#7e9a9a",
-    "#ffffff",
-    "#000001"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 21.879435653118442,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -154.10051602317685,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -90.0199986668444,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -22.80700453464067,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.1111111111111111,
+    "blue": 0.7983680555555556,
+    "grey": 0.04510416666666667,
+    "black": 0.0077777777777777776,
+    "white": 0.07822916666666667
    }
   },
   "markers": {
@@ -4301,43 +1406,10 @@
  {
   "id": "kommune-80",
   "colors": {
-   "hexPalette": [
-    "#003f7e",
-    "#a8b9d3"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 23.764658136013125,
-      "matcherColor": "#243b7f"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -183.04694318389082,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -162.13959575005984,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -65.0959631642844,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -11.487704091861431,
-      "matcherColor": "#5596c3"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2094135802469136,
+    "blue": 0.779504196759711
    }
   },
   "markers": {
@@ -4353,51 +1425,14 @@
  {
   "id": "kommune-81",
   "colors": {
-   "hexPalette": [
-    "#a10024",
-    "#144682",
-    "#87abcf",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 24.45722369200474,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -188.18799233688367,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -105.49018097760361,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -133.89430110243055,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -65.54680402144851,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.3662962962962963,
+    "blue": 0.26894603545684787,
+    "grey": 0.0020455873758036236,
+    "white": 0.5028248587570622,
+    "gold": 0.007695304889927917,
+    "red": 0.001996882914474966
    }
   },
   "markers": {
@@ -4410,117 +1445,39 @@
  {
   "id": "kommune-82",
   "colors": {
-   "hexPalette": [
-    "#0380c8",
-    "#c34935",
-    "#000000",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 32.63213563319198,
-      "matcherColor": "#1d7dc0"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -28.342050931298132,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -115.61614722584412,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -22.158383625774917,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -115.43029447861966,
-      "matcherColor": "#5596c3"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.3232098765432099,
+    "black": 0.034385260853703026,
+    "grey": 0.019700839109813937,
+    "white": 0.5027818314483765,
+    "gold": 0.017147026632615834,
+    "red": 0.19541225829989056,
+    "blue": 0.1773987595767968
    }
   }
  },
  {
   "id": "kommune-83",
   "colors": {
-   "hexPalette": [
-    "#e3e3e3"
-   ],
-   "byNames": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   },
-   "byNamesRejected": {}
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.23262345679012345,
+    "grey": 0.8889514539677432,
+    "white": 0.11104854603225676
+   }
   }
  },
  {
   "id": "kommune-84",
   "colors": {
-   "hexPalette": [
-    "#d85531",
-    "#fdfdfd"
-   ],
-   "byNames": {
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -19.52776998815917,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -126.64462248023779,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -133.00896842952304,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -20.90117428072351,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.29055555555555557,
+    "red": 0.0002175237100843992,
+    "gold": 0.0492038632210911,
+    "white": 0.23505612111720178,
+    "grey": 0.00013051422605063953
    }
   },
   "markers": {
@@ -4535,50 +1492,14 @@
  {
   "id": "kommune-85",
   "colors": {
-   "hexPalette": [
-    "#0075b8",
-    "#000e28",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 28.87123516745324,
-      "matcherColor": "#1d7dc0"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -178.49758219372188,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -14.923781860929893,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -169.5234192843946,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -44.355162785556516,
-      "matcherColor": "#243b7f"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2735493827160494,
+    "blue": 0.6907847219271784,
+    "grey": 0.09546671198538471,
+    "white": 0.2078854569401368,
+    "black": 0.0008922122615456515,
+    "gold": 0.00004248629816884055
    }
   },
   "markers": {
@@ -4590,50 +1511,14 @@
  {
   "id": "kommune-86",
   "colors": {
-   "hexPalette": [
-    "#295884",
-    "#000002",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 30.1503768868014,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -186.39069052802876,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -22.516664983504995,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -96.04486534327236,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.309783950617284,
+    "black": 0.02137459195993382,
+    "grey": 0.01131333005410723,
+    "green": 0.2640969458480526,
+    "blue": 0.46330993158341904,
+    "white": 0.21629477261548094
    }
   },
   "markers": {
@@ -4645,57 +1530,14 @@
  {
   "id": "kommune-87",
   "colors": {
-   "hexPalette": [
-    "#609335",
-    "#1051af",
-    "#adb5b0",
-    "#fffffd"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 30.06674090580847,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -227.09444801233383,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -62.45701105947717,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -53.39312148450628,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -134.8358283273382,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.20660493827160495,
+    "blue": 0.5525947249669337,
+    "grey": 0.19726912004979383,
+    "white": 0.13382089784486112,
+    "gold": 0.000933634171010659,
+    "green": 0.06554889908970668
    }
   },
   "markers": {
@@ -4707,51 +1549,14 @@
  {
   "id": "kommune-88",
   "colors": {
-   "hexPalette": [
-    "#be1545",
-    "#00447a",
-    "#678fb3",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 54.92012759203109,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -178.37946155991477,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -105.67739737212196,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -87.65838953476364,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -56.04309544302927,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2946913580246914,
+    "blue": 0.14948363381760896,
+    "white": 0.5088394888849991,
+    "grey": 0.000656397689480133,
+    "red": 0.007964291965692281,
+    "gold": 0.000218799229826711
    }
   },
   "markers": {
@@ -4765,63 +1570,14 @@
  {
   "id": "kommune-89",
   "colors": {
-   "hexPalette": [
-    "#d82c34",
-    "#00318f",
-    "#a1a0a3",
-    "#ffffff"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 1.5079621872383768,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 19.35519713419685,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": -134.32189789110234,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -46.404887105809195,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -150.6205118216172,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": -216.43717715563275,
-      "matcherColor": "#f00"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.24790123456790122,
+    "gold": 0.0956172028890348,
+    "grey": 0.15397242284963886,
+    "white": 0.3894451739986868,
+    "blue": 0.14272816808929745,
+    "red": 0.09348325673013788
    }
   },
   "markers": {
@@ -4837,43 +1593,12 @@
  {
   "id": "kommune-90",
   "colors": {
-   "hexPalette": [
-    "#076ea4",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 21.360641827276687,
-      "matcherColor": "#1d7dc0"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -237.01734968294716,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -32.46080250571049,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -131.34785078489907,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.25,
+    "grey": 0.007818930041152264,
+    "white": 0.5261728395061729,
+    "blue": 0.38185185185185183
    }
   },
   "markers": {
@@ -4885,52 +1610,14 @@
  {
   "id": "kommune-91",
   "colors": {
-   "hexPalette": [
-    "#d6383d",
-    "#003a98",
-    "#650000",
-    "#9bafcd",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 5,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -178.82049707823225,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -94.38588018338982,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -147.14487683744437,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -58.63389060466659,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.25583333333333336,
+    "gold": 0.016009290365393388,
+    "white": 0.38832897847455516,
+    "grey": 0.006843349508523081,
+    "red": 0.3232134710298204,
+    "blue": 0.1258346812658123
    }
   },
   "markers": {
@@ -4942,44 +1629,13 @@
  {
   "id": "kommune-92",
   "colors": {
-   "hexPalette": [
-    "#fee66f",
-    "#1051af",
-    "#528333"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 30.06674090580847,
-      "matcherColor": "#0059c7"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -142.9147819234965,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -54.35033887138245,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -8.615414616580097,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -49.512556357707226,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2245679012345679,
+    "blue": 0.3729899697500398,
+    "gold": 0.2954147428753383,
+    "grey": 0.012099984078968317,
+    "green": 0.08485909886960676
    }
   },
   "markers": {
@@ -4991,44 +1647,14 @@
  {
   "id": "kommune-93",
   "colors": {
-   "hexPalette": [
-    "#c19502",
-    "#ffe56f",
-    "#2154a5"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 18.107279868693176,
-      "matcherColor": "#2e3192"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -209.07611454424938,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -125.41908382621125,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -47.17275773255068,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -115.2797763576848,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.1884259259259259,
+    "blue": 0.7011979463776383,
+    "gold": 0.1657349305951702,
+    "grey": 0.005742536603917095,
+    "green": 0.00011409013120365089,
+    "red": 0.0008366609621601065
    }
   },
   "markers": {
@@ -5040,74 +1666,27 @@
  {
   "id": "kommune-94",
   "colors": {
-   "hexPalette": [
-    "#e3e3e3"
-   ],
-   "byNames": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   },
-   "byNamesRejected": {}
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.23262345679012345,
+    "grey": 0.8889514539677432,
+    "white": 0.11104854603225676
+   }
   }
  },
  {
   "id": "kommune-95",
   "colors": {
-   "hexPalette": [
-    "#ee4042",
-    "#55b949",
-    "#000000",
-    "#ffffff"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 12.421604168753053,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": -46.92123541787639,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -27.778129394513755,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -47.76826991280875,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": -181.63715332498174,
-      "matcherColor": "#f00"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.30342592592592593,
+    "grey": 0.031015995391909256,
+    "black": 0.04142850813062165,
+    "blue": 0.1397935220878196,
+    "white": 0.35792458682263284,
+    "green": 0.29974744118038016,
+    "gold": 0.0024812796313527404,
+    "red": 0.06110151092206124
    }
   },
   "markers": {
@@ -5119,56 +1698,14 @@
  {
   "id": "kommune-96",
   "colors": {
-   "hexPalette": [
-    "#74b495",
-    "#007c46",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 16.93653989828975,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": 52.788897449072024,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -212.0633492925807,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -82.94404499663497,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -124.55622449540954,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -33.64827814754524,
-      "matcherColor": "#243b7f"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2217283950617284,
+    "black": 0.023477157360406092,
+    "grey": 0.02688769035532995,
+    "white": 0.43960184010152287,
+    "blue": 0.09735881979695432,
+    "green": 0.37797430203045684
    }
   },
   "markers": {
@@ -5180,50 +1717,13 @@
  {
   "id": "kommune-97",
   "colors": {
-   "hexPalette": [
-    "#0163b4",
-    "#000004",
-    "#fcfff8"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 38.505814739795326,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -246.67568014775753,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -50.4445562261898,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -145.165786621454,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.28944444444444445,
+    "black": 0.02436799583007558,
+    "blue": 0.6356528537920251,
+    "white": 0.28629137346885586,
+    "grey": 0.004778038398054035
    }
   },
   "markers": {
