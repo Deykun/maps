@@ -262,7 +262,14 @@
     },
     {
       "name": "leopard",
-      "phrases": ["lampart", "lamparta", "lamparty", "lamparcie", "lewarta"]
+      "phrases": [
+        "lampart",
+        "lamparta",
+        "lamparty",
+        "lampartami",
+        "lamparcie",
+        "lewarta"
+      ]
     },
     {
       "name": "lion",
@@ -523,7 +530,18 @@
     },
     {
       "name": "ram",
-      "phrases": ["baran", "baranek", "baranka", "barana", "owca", "owcę", "muflona", "baranią"],
+      "phrases": [
+        "baran",
+        "baranek",
+        "baranka",
+        "barana",
+        "owca",
+        "owcę",
+        "owczą",
+        "runo",
+        "muflona",
+        "baranią"
+      ],
       "exclude": [
         "Herb Korsz",
         "Herb gminy Tuczępy",

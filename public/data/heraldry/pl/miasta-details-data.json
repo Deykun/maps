@@ -3697,6 +3697,24 @@
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
+    "transparent": 0.1486111111111111,
+    "blue": 0.5316657603770165,
+    "grey": 0.37846655791190864,
+    "gold": 0.0008337864781584194,
+    "red": 0.0000725031720137756
+   }
+  },
+  "markers": {
+   "items": [
+    "axeSaw"
+   ]
+  }
+ },
+ {
+  "id": "miasta-171",
+  "colors": {
+   "hasTransparent": true,
+   "colorsByNames": {
     "transparent": 0.23700617283950617,
     "black": 0.06075805994903119,
     "blue": 0.565753812548036,
@@ -3712,7 +3730,7 @@
   }
  },
  {
-  "id": "miasta-171",
+  "id": "miasta-172",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -3730,7 +3748,7 @@
   }
  },
  {
-  "id": "miasta-172",
+  "id": "miasta-173",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -3744,7 +3762,29 @@
   }
  },
  {
-  "id": "miasta-173",
+  "id": "miasta-174",
+  "colors": {
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.1,
+    "grey": 0.07270233196159122,
+    "red": 0.47565157750342935,
+    "gold": 0.06711248285322359,
+    "white": 0.3150891632373114
+   }
+  },
+  "markers": {
+   "animals": [
+    "rooster",
+    "bird"
+   ],
+   "items": [
+    "walls"
+   ]
+  }
+ },
+ {
+  "id": "miasta-175",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -3771,7 +3811,7 @@
   }
  },
  {
-  "id": "miasta-174",
+  "id": "miasta-176",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -3796,7 +3836,7 @@
   }
  },
  {
-  "id": "miasta-175",
+  "id": "miasta-177",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -3820,7 +3860,7 @@
   }
  },
  {
-  "id": "miasta-176",
+  "id": "miasta-178",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -3843,7 +3883,7 @@
   }
  },
  {
-  "id": "miasta-177",
+  "id": "miasta-179",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -3862,7 +3902,7 @@
   }
  },
  {
-  "id": "miasta-178",
+  "id": "miasta-180",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -3884,7 +3924,7 @@
   }
  },
  {
-  "id": "miasta-179",
+  "id": "miasta-181",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -3904,7 +3944,7 @@
   }
  },
  {
-  "id": "miasta-180",
+  "id": "miasta-182",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -3924,7 +3964,7 @@
   }
  },
  {
-  "id": "miasta-181",
+  "id": "miasta-183",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -3939,7 +3979,7 @@
   }
  },
  {
-  "id": "miasta-182",
+  "id": "miasta-184",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -3957,7 +3997,7 @@
   }
  },
  {
-  "id": "miasta-183",
+  "id": "miasta-185",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -3976,7 +4016,7 @@
   }
  },
  {
-  "id": "miasta-184",
+  "id": "miasta-186",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -3994,7 +4034,7 @@
   }
  },
  {
-  "id": "miasta-185",
+  "id": "miasta-187",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4013,7 +4053,7 @@
   }
  },
  {
-  "id": "miasta-186",
+  "id": "miasta-188",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4034,7 +4074,7 @@
   }
  },
  {
-  "id": "miasta-187",
+  "id": "miasta-189",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4046,7 +4086,7 @@
   }
  },
  {
-  "id": "miasta-188",
+  "id": "miasta-190",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4071,7 +4111,7 @@
   }
  },
  {
-  "id": "miasta-189",
+  "id": "miasta-191",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4090,7 +4130,7 @@
   }
  },
  {
-  "id": "miasta-190",
+  "id": "miasta-192",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4104,7 +4144,7 @@
   }
  },
  {
-  "id": "miasta-191",
+  "id": "miasta-193",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4127,7 +4167,7 @@
   }
  },
  {
-  "id": "miasta-192",
+  "id": "miasta-194",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4148,7 +4188,7 @@
   }
  },
  {
-  "id": "miasta-193",
+  "id": "miasta-195",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4168,7 +4208,7 @@
   }
  },
  {
-  "id": "miasta-194",
+  "id": "miasta-196",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4190,7 +4230,7 @@
   }
  },
  {
-  "id": "miasta-195",
+  "id": "miasta-197",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4204,7 +4244,7 @@
   }
  },
  {
-  "id": "miasta-196",
+  "id": "miasta-198",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4219,7 +4259,7 @@
   }
  },
  {
-  "id": "miasta-197",
+  "id": "miasta-199",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4236,7 +4276,7 @@
   }
  },
  {
-  "id": "miasta-198",
+  "id": "miasta-200",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4255,7 +4295,7 @@
   }
  },
  {
-  "id": "miasta-199",
+  "id": "miasta-201",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4276,7 +4316,7 @@
   }
  },
  {
-  "id": "miasta-200",
+  "id": "miasta-202",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4293,7 +4333,7 @@
   }
  },
  {
-  "id": "miasta-201",
+  "id": "miasta-203",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4313,7 +4353,7 @@
   }
  },
  {
-  "id": "miasta-202",
+  "id": "miasta-204",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4335,7 +4375,32 @@
   }
  },
  {
-  "id": "miasta-203",
+  "id": "miasta-205",
+  "colors": {
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2111111111111111,
+    "white": 0.2389280125195618,
+    "red": 0.43959311424100156,
+    "gold": 0.015140845070422536,
+    "blue": 0.02992957746478873,
+    "grey": 0.07852112676056339,
+    "black": 0.006338028169014085,
+    "green": 0.001134585289514867
+   }
+  },
+  "markers": {
+   "animals": [
+    "dragon",
+    "horse"
+   ],
+   "items": [
+    "saint"
+   ]
+  }
+ },
+ {
+  "id": "miasta-206",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4354,7 +4419,7 @@
   }
  },
  {
-  "id": "miasta-204",
+  "id": "miasta-207",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4375,7 +4440,7 @@
   }
  },
  {
-  "id": "miasta-205",
+  "id": "miasta-208",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4388,7 +4453,7 @@
   }
  },
  {
-  "id": "miasta-206",
+  "id": "miasta-209",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4406,7 +4471,7 @@
   }
  },
  {
-  "id": "miasta-207",
+  "id": "miasta-210",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4429,7 +4494,7 @@
   }
  },
  {
-  "id": "miasta-208",
+  "id": "miasta-211",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4451,7 +4516,7 @@
   }
  },
  {
-  "id": "miasta-209",
+  "id": "miasta-212",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4472,7 +4537,7 @@
   }
  },
  {
-  "id": "miasta-210",
+  "id": "miasta-213",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4495,7 +4560,7 @@
   }
  },
  {
-  "id": "miasta-211",
+  "id": "miasta-214",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4516,7 +4581,7 @@
   }
  },
  {
-  "id": "miasta-212",
+  "id": "miasta-215",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4540,7 +4605,7 @@
   }
  },
  {
-  "id": "miasta-213",
+  "id": "miasta-216",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4562,7 +4627,7 @@
   }
  },
  {
-  "id": "miasta-214",
+  "id": "miasta-217",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4584,7 +4649,7 @@
   }
  },
  {
-  "id": "miasta-215",
+  "id": "miasta-218",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4609,7 +4674,7 @@
   }
  },
  {
-  "id": "miasta-216",
+  "id": "miasta-219",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4632,7 +4697,7 @@
   }
  },
  {
-  "id": "miasta-217",
+  "id": "miasta-220",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4654,7 +4719,7 @@
   }
  },
  {
-  "id": "miasta-218",
+  "id": "miasta-221",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4679,7 +4744,7 @@
   }
  },
  {
-  "id": "miasta-219",
+  "id": "miasta-222",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4706,7 +4771,7 @@
   }
  },
  {
-  "id": "miasta-220",
+  "id": "miasta-223",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4727,7 +4792,7 @@
   }
  },
  {
-  "id": "miasta-221",
+  "id": "miasta-224",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4751,7 +4816,7 @@
   }
  },
  {
-  "id": "miasta-222",
+  "id": "miasta-225",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4772,7 +4837,7 @@
   }
  },
  {
-  "id": "miasta-223",
+  "id": "miasta-226",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4793,7 +4858,7 @@
   }
  },
  {
-  "id": "miasta-224",
+  "id": "miasta-227",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4818,7 +4883,7 @@
   }
  },
  {
-  "id": "miasta-225",
+  "id": "miasta-228",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4837,7 +4902,7 @@
   }
  },
  {
-  "id": "miasta-226",
+  "id": "miasta-229",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4862,7 +4927,7 @@
   }
  },
  {
-  "id": "miasta-227",
+  "id": "miasta-230",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4886,7 +4951,7 @@
   }
  },
  {
-  "id": "miasta-228",
+  "id": "miasta-231",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4911,7 +4976,7 @@
   }
  },
  {
-  "id": "miasta-229",
+  "id": "miasta-232",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4931,7 +4996,7 @@
   }
  },
  {
-  "id": "miasta-230",
+  "id": "miasta-233",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4956,7 +5021,7 @@
   }
  },
  {
-  "id": "miasta-231",
+  "id": "miasta-234",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4976,7 +5041,7 @@
   }
  },
  {
-  "id": "miasta-232",
+  "id": "miasta-235",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -4997,7 +5062,7 @@
   }
  },
  {
-  "id": "miasta-233",
+  "id": "miasta-236",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5021,7 +5086,7 @@
   }
  },
  {
-  "id": "miasta-234",
+  "id": "miasta-237",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5045,7 +5110,7 @@
   }
  },
  {
-  "id": "miasta-235",
+  "id": "miasta-238",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5069,7 +5134,7 @@
   }
  },
  {
-  "id": "miasta-236",
+  "id": "miasta-239",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5091,7 +5156,7 @@
   }
  },
  {
-  "id": "miasta-237",
+  "id": "miasta-240",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5114,7 +5179,7 @@
   }
  },
  {
-  "id": "miasta-238",
+  "id": "miasta-241",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5136,7 +5201,7 @@
   }
  },
  {
-  "id": "miasta-239",
+  "id": "miasta-242",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5153,7 +5218,7 @@
   }
  },
  {
-  "id": "miasta-240",
+  "id": "miasta-243",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5178,7 +5243,7 @@
   }
  },
  {
-  "id": "miasta-241",
+  "id": "miasta-244",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5203,7 +5268,7 @@
   }
  },
  {
-  "id": "miasta-242",
+  "id": "miasta-245",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5217,7 +5282,7 @@
   }
  },
  {
-  "id": "miasta-243",
+  "id": "miasta-246",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5243,7 +5308,7 @@
   }
  },
  {
-  "id": "miasta-244",
+  "id": "miasta-247",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5265,7 +5330,7 @@
   }
  },
  {
-  "id": "miasta-245",
+  "id": "miasta-248",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5284,7 +5349,7 @@
   }
  },
  {
-  "id": "miasta-246",
+  "id": "miasta-249",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5308,7 +5373,7 @@
   }
  },
  {
-  "id": "miasta-247",
+  "id": "miasta-250",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5332,7 +5397,7 @@
   }
  },
  {
-  "id": "miasta-248",
+  "id": "miasta-251",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5355,7 +5420,7 @@
   }
  },
  {
-  "id": "miasta-249",
+  "id": "miasta-252",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5380,7 +5445,7 @@
   }
  },
  {
-  "id": "miasta-250",
+  "id": "miasta-253",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5399,7 +5464,7 @@
   }
  },
  {
-  "id": "miasta-251",
+  "id": "miasta-254",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5423,7 +5488,7 @@
   }
  },
  {
-  "id": "miasta-252",
+  "id": "miasta-255",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5442,7 +5507,7 @@
   }
  },
  {
-  "id": "miasta-253",
+  "id": "miasta-256",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5456,7 +5521,7 @@
   }
  },
  {
-  "id": "miasta-254",
+  "id": "miasta-257",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5476,7 +5541,7 @@
   }
  },
  {
-  "id": "miasta-255",
+  "id": "miasta-258",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5501,7 +5566,7 @@
   }
  },
  {
-  "id": "miasta-256",
+  "id": "miasta-259",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5519,7 +5584,7 @@
   }
  },
  {
-  "id": "miasta-257",
+  "id": "miasta-260",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5538,7 +5603,7 @@
   }
  },
  {
-  "id": "miasta-258",
+  "id": "miasta-261",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5557,7 +5622,7 @@
   }
  },
  {
-  "id": "miasta-259",
+  "id": "miasta-262",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5577,7 +5642,7 @@
   }
  },
  {
-  "id": "miasta-260",
+  "id": "miasta-263",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5595,7 +5660,7 @@
   }
  },
  {
-  "id": "miasta-261",
+  "id": "miasta-264",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5613,7 +5678,7 @@
   }
  },
  {
-  "id": "miasta-262",
+  "id": "miasta-265",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5633,7 +5698,7 @@
   }
  },
  {
-  "id": "miasta-263",
+  "id": "miasta-266",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5653,7 +5718,7 @@
   }
  },
  {
-  "id": "miasta-264",
+  "id": "miasta-267",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5673,7 +5738,7 @@
   }
  },
  {
-  "id": "miasta-265",
+  "id": "miasta-268",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5693,7 +5758,7 @@
   }
  },
  {
-  "id": "miasta-266",
+  "id": "miasta-269",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5715,7 +5780,7 @@
   }
  },
  {
-  "id": "miasta-267",
+  "id": "miasta-270",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5739,7 +5804,7 @@
   }
  },
  {
-  "id": "miasta-268",
+  "id": "miasta-271",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5757,7 +5822,7 @@
   }
  },
  {
-  "id": "miasta-269",
+  "id": "miasta-272",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5771,7 +5836,7 @@
   }
  },
  {
-  "id": "miasta-270",
+  "id": "miasta-273",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5793,7 +5858,7 @@
   }
  },
  {
-  "id": "miasta-271",
+  "id": "miasta-274",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5816,7 +5881,7 @@
   }
  },
  {
-  "id": "miasta-272",
+  "id": "miasta-275",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5834,7 +5899,7 @@
   }
  },
  {
-  "id": "miasta-273",
+  "id": "miasta-276",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5853,7 +5918,7 @@
   }
  },
  {
-  "id": "miasta-274",
+  "id": "miasta-277",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5876,7 +5941,7 @@
   }
  },
  {
-  "id": "miasta-275",
+  "id": "miasta-278",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5897,7 +5962,7 @@
   }
  },
  {
-  "id": "miasta-276",
+  "id": "miasta-279",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5913,7 +5978,7 @@
   }
  },
  {
-  "id": "miasta-277",
+  "id": "miasta-280",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5930,7 +5995,7 @@
   }
  },
  {
-  "id": "miasta-278",
+  "id": "miasta-281",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5950,7 +6015,7 @@
   }
  },
  {
-  "id": "miasta-279",
+  "id": "miasta-282",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5971,7 +6036,7 @@
   }
  },
  {
-  "id": "miasta-280",
+  "id": "miasta-283",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -5990,7 +6055,7 @@
   }
  },
  {
-  "id": "miasta-281",
+  "id": "miasta-284",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6010,7 +6075,7 @@
   }
  },
  {
-  "id": "miasta-282",
+  "id": "miasta-285",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6030,7 +6095,7 @@
   }
  },
  {
-  "id": "miasta-283",
+  "id": "miasta-286",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6050,7 +6115,7 @@
   }
  },
  {
-  "id": "miasta-284",
+  "id": "miasta-287",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6072,7 +6137,7 @@
   }
  },
  {
-  "id": "miasta-285",
+  "id": "miasta-288",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6091,7 +6156,7 @@
   }
  },
  {
-  "id": "miasta-286",
+  "id": "miasta-289",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6114,7 +6179,7 @@
   }
  },
  {
-  "id": "miasta-287",
+  "id": "miasta-290",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6135,7 +6200,7 @@
   }
  },
  {
-  "id": "miasta-288",
+  "id": "miasta-291",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6154,7 +6219,7 @@
   }
  },
  {
-  "id": "miasta-289",
+  "id": "miasta-292",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6175,7 +6240,7 @@
   }
  },
  {
-  "id": "miasta-290",
+  "id": "miasta-293",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6199,7 +6264,7 @@
   }
  },
  {
-  "id": "miasta-291",
+  "id": "miasta-294",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6220,7 +6285,7 @@
   }
  },
  {
-  "id": "miasta-292",
+  "id": "miasta-295",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6234,7 +6299,7 @@
   }
  },
  {
-  "id": "miasta-293",
+  "id": "miasta-296",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6252,7 +6317,7 @@
   }
  },
  {
-  "id": "miasta-294",
+  "id": "miasta-297",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6273,7 +6338,7 @@
   }
  },
  {
-  "id": "miasta-295",
+  "id": "miasta-298",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6295,7 +6360,7 @@
   }
  },
  {
-  "id": "miasta-296",
+  "id": "miasta-299",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6319,7 +6384,7 @@
   }
  },
  {
-  "id": "miasta-297",
+  "id": "miasta-300",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6338,7 +6403,7 @@
   }
  },
  {
-  "id": "miasta-298",
+  "id": "miasta-301",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6360,7 +6425,7 @@
   }
  },
  {
-  "id": "miasta-299",
+  "id": "miasta-302",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6386,7 +6451,7 @@
   }
  },
  {
-  "id": "miasta-300",
+  "id": "miasta-303",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6406,7 +6471,7 @@
   }
  },
  {
-  "id": "miasta-301",
+  "id": "miasta-304",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6429,7 +6494,7 @@
   }
  },
  {
-  "id": "miasta-302",
+  "id": "miasta-305",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6449,7 +6514,7 @@
   }
  },
  {
-  "id": "miasta-303",
+  "id": "miasta-306",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6473,7 +6538,7 @@
   }
  },
  {
-  "id": "miasta-304",
+  "id": "miasta-307",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6497,7 +6562,7 @@
   }
  },
  {
-  "id": "miasta-305",
+  "id": "miasta-308",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6522,7 +6587,7 @@
   }
  },
  {
-  "id": "miasta-306",
+  "id": "miasta-309",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6542,7 +6607,7 @@
   }
  },
  {
-  "id": "miasta-307",
+  "id": "miasta-310",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6564,7 +6629,7 @@
   }
  },
  {
-  "id": "miasta-308",
+  "id": "miasta-311",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6583,7 +6648,7 @@
   }
  },
  {
-  "id": "miasta-309",
+  "id": "miasta-312",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6603,7 +6668,7 @@
   }
  },
  {
-  "id": "miasta-310",
+  "id": "miasta-313",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6621,7 +6686,7 @@
   }
  },
  {
-  "id": "miasta-311",
+  "id": "miasta-314",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6644,7 +6709,7 @@
   }
  },
  {
-  "id": "miasta-312",
+  "id": "miasta-315",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6666,7 +6731,7 @@
   }
  },
  {
-  "id": "miasta-313",
+  "id": "miasta-316",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6684,7 +6749,7 @@
   }
  },
  {
-  "id": "miasta-314",
+  "id": "miasta-317",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6705,7 +6770,7 @@
   }
  },
  {
-  "id": "miasta-315",
+  "id": "miasta-318",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6729,7 +6794,7 @@
   }
  },
  {
-  "id": "miasta-316",
+  "id": "miasta-319",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6751,7 +6816,7 @@
   }
  },
  {
-  "id": "miasta-317",
+  "id": "miasta-320",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6772,7 +6837,7 @@
   }
  },
  {
-  "id": "miasta-318",
+  "id": "miasta-321",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6802,7 +6867,7 @@
   }
  },
  {
-  "id": "miasta-319",
+  "id": "miasta-322",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6827,7 +6892,7 @@
   }
  },
  {
-  "id": "miasta-320",
+  "id": "miasta-323",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6851,7 +6916,7 @@
   }
  },
  {
-  "id": "miasta-321",
+  "id": "miasta-324",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6870,7 +6935,7 @@
   }
  },
  {
-  "id": "miasta-322",
+  "id": "miasta-325",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6889,7 +6954,7 @@
   }
  },
  {
-  "id": "miasta-323",
+  "id": "miasta-326",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6906,7 +6971,7 @@
   }
  },
  {
-  "id": "miasta-324",
+  "id": "miasta-327",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6930,7 +6995,7 @@
   }
  },
  {
-  "id": "miasta-325",
+  "id": "miasta-328",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6947,7 +7012,7 @@
   }
  },
  {
-  "id": "miasta-326",
+  "id": "miasta-329",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6966,7 +7031,7 @@
   }
  },
  {
-  "id": "miasta-327",
+  "id": "miasta-330",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -6984,7 +7049,7 @@
   }
  },
  {
-  "id": "miasta-328",
+  "id": "miasta-331",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7005,7 +7070,7 @@
   }
  },
  {
-  "id": "miasta-329",
+  "id": "miasta-332",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7026,7 +7091,7 @@
   }
  },
  {
-  "id": "miasta-330",
+  "id": "miasta-333",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7054,7 +7119,7 @@
   }
  },
  {
-  "id": "miasta-331",
+  "id": "miasta-334",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7073,7 +7138,7 @@
   }
  },
  {
-  "id": "miasta-332",
+  "id": "miasta-335",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7094,7 +7159,7 @@
   }
  },
  {
-  "id": "miasta-333",
+  "id": "miasta-336",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7114,7 +7179,7 @@
   }
  },
  {
-  "id": "miasta-334",
+  "id": "miasta-337",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7140,7 +7205,7 @@
   }
  },
  {
-  "id": "miasta-335",
+  "id": "miasta-338",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7164,7 +7229,7 @@
   }
  },
  {
-  "id": "miasta-336",
+  "id": "miasta-339",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7185,7 +7250,7 @@
   }
  },
  {
-  "id": "miasta-337",
+  "id": "miasta-340",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7208,7 +7273,7 @@
   }
  },
  {
-  "id": "miasta-338",
+  "id": "miasta-341",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7235,7 +7300,7 @@
   }
  },
  {
-  "id": "miasta-339",
+  "id": "miasta-342",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7257,7 +7322,7 @@
   }
  },
  {
-  "id": "miasta-340",
+  "id": "miasta-343",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7279,7 +7344,7 @@
   }
  },
  {
-  "id": "miasta-341",
+  "id": "miasta-344",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7302,7 +7367,7 @@
   }
  },
  {
-  "id": "miasta-342",
+  "id": "miasta-345",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7324,7 +7389,7 @@
   }
  },
  {
-  "id": "miasta-343",
+  "id": "miasta-346",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7350,7 +7415,7 @@
   }
  },
  {
-  "id": "miasta-344",
+  "id": "miasta-347",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7375,7 +7440,7 @@
   }
  },
  {
-  "id": "miasta-345",
+  "id": "miasta-348",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7389,7 +7454,7 @@
   }
  },
  {
-  "id": "miasta-346",
+  "id": "miasta-349",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7407,7 +7472,7 @@
   }
  },
  {
-  "id": "miasta-347",
+  "id": "miasta-350",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7431,7 +7496,7 @@
   }
  },
  {
-  "id": "miasta-348",
+  "id": "miasta-351",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7456,7 +7521,7 @@
   }
  },
  {
-  "id": "miasta-349",
+  "id": "miasta-352",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7484,7 +7549,7 @@
   }
  },
  {
-  "id": "miasta-350",
+  "id": "miasta-353",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7503,7 +7568,7 @@
   }
  },
  {
-  "id": "miasta-351",
+  "id": "miasta-354",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7522,7 +7587,7 @@
   }
  },
  {
-  "id": "miasta-352",
+  "id": "miasta-355",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7538,7 +7603,7 @@
   }
  },
  {
-  "id": "miasta-353",
+  "id": "miasta-356",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7558,7 +7623,7 @@
   }
  },
  {
-  "id": "miasta-354",
+  "id": "miasta-357",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7580,7 +7645,7 @@
   }
  },
  {
-  "id": "miasta-355",
+  "id": "miasta-358",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7601,7 +7666,7 @@
   }
  },
  {
-  "id": "miasta-356",
+  "id": "miasta-359",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7623,7 +7688,7 @@
   }
  },
  {
-  "id": "miasta-357",
+  "id": "miasta-360",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7646,7 +7711,7 @@
   }
  },
  {
-  "id": "miasta-358",
+  "id": "miasta-361",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7667,7 +7732,7 @@
   }
  },
  {
-  "id": "miasta-359",
+  "id": "miasta-362",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7693,7 +7758,7 @@
   }
  },
  {
-  "id": "miasta-360",
+  "id": "miasta-363",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7718,7 +7783,7 @@
   }
  },
  {
-  "id": "miasta-361",
+  "id": "miasta-364",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7737,7 +7802,7 @@
   }
  },
  {
-  "id": "miasta-362",
+  "id": "miasta-365",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7750,7 +7815,7 @@
   }
  },
  {
-  "id": "miasta-363",
+  "id": "miasta-366",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7764,7 +7829,7 @@
   }
  },
  {
-  "id": "miasta-364",
+  "id": "miasta-367",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7786,7 +7851,7 @@
   }
  },
  {
-  "id": "miasta-365",
+  "id": "miasta-368",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7806,7 +7871,7 @@
   }
  },
  {
-  "id": "miasta-366",
+  "id": "miasta-369",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7833,7 +7898,7 @@
   }
  },
  {
-  "id": "miasta-367",
+  "id": "miasta-370",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7852,7 +7917,7 @@
   }
  },
  {
-  "id": "miasta-368",
+  "id": "miasta-371",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7870,7 +7935,7 @@
   }
  },
  {
-  "id": "miasta-369",
+  "id": "miasta-372",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7889,7 +7954,7 @@
   }
  },
  {
-  "id": "miasta-370",
+  "id": "miasta-373",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7908,7 +7973,7 @@
   }
  },
  {
-  "id": "miasta-371",
+  "id": "miasta-374",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7928,7 +7993,7 @@
   }
  },
  {
-  "id": "miasta-372",
+  "id": "miasta-375",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7950,7 +8015,7 @@
   }
  },
  {
-  "id": "miasta-373",
+  "id": "miasta-376",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7970,7 +8035,7 @@
   }
  },
  {
-  "id": "miasta-374",
+  "id": "miasta-377",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -7993,7 +8058,7 @@
   }
  },
  {
-  "id": "miasta-375",
+  "id": "miasta-378",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8013,7 +8078,7 @@
   }
  },
  {
-  "id": "miasta-376",
+  "id": "miasta-379",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8026,7 +8091,7 @@
   }
  },
  {
-  "id": "miasta-377",
+  "id": "miasta-380",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8040,7 +8105,7 @@
   }
  },
  {
-  "id": "miasta-378",
+  "id": "miasta-381",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8065,7 +8130,7 @@
   }
  },
  {
-  "id": "miasta-379",
+  "id": "miasta-382",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8084,7 +8149,7 @@
   }
  },
  {
-  "id": "miasta-380",
+  "id": "miasta-383",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8103,7 +8168,7 @@
   }
  },
  {
-  "id": "miasta-381",
+  "id": "miasta-384",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8125,7 +8190,7 @@
   }
  },
  {
-  "id": "miasta-382",
+  "id": "miasta-385",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8146,7 +8211,7 @@
   }
  },
  {
-  "id": "miasta-383",
+  "id": "miasta-386",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8169,7 +8234,7 @@
   }
  },
  {
-  "id": "miasta-384",
+  "id": "miasta-387",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8190,7 +8255,7 @@
   }
  },
  {
-  "id": "miasta-385",
+  "id": "miasta-388",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8207,7 +8272,7 @@
   }
  },
  {
-  "id": "miasta-386",
+  "id": "miasta-389",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8226,7 +8291,7 @@
   }
  },
  {
-  "id": "miasta-387",
+  "id": "miasta-390",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8245,7 +8310,7 @@
   }
  },
  {
-  "id": "miasta-388",
+  "id": "miasta-391",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8268,7 +8333,7 @@
   }
  },
  {
-  "id": "miasta-389",
+  "id": "miasta-392",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8287,7 +8352,7 @@
   }
  },
  {
-  "id": "miasta-390",
+  "id": "miasta-393",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8302,7 +8367,7 @@
   }
  },
  {
-  "id": "miasta-391",
+  "id": "miasta-394",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8323,7 +8388,7 @@
   }
  },
  {
-  "id": "miasta-392",
+  "id": "miasta-395",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8341,7 +8406,7 @@
   }
  },
  {
-  "id": "miasta-393",
+  "id": "miasta-396",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8362,7 +8427,7 @@
   }
  },
  {
-  "id": "miasta-394",
+  "id": "miasta-397",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8382,7 +8447,7 @@
   }
  },
  {
-  "id": "miasta-395",
+  "id": "miasta-398",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8401,7 +8466,7 @@
   }
  },
  {
-  "id": "miasta-396",
+  "id": "miasta-399",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8422,7 +8487,7 @@
   }
  },
  {
-  "id": "miasta-397",
+  "id": "miasta-400",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8441,7 +8506,7 @@
   }
  },
  {
-  "id": "miasta-398",
+  "id": "miasta-401",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8460,7 +8525,7 @@
   }
  },
  {
-  "id": "miasta-399",
+  "id": "miasta-402",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8478,7 +8543,7 @@
   }
  },
  {
-  "id": "miasta-400",
+  "id": "miasta-403",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8498,7 +8563,7 @@
   }
  },
  {
-  "id": "miasta-401",
+  "id": "miasta-404",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8511,7 +8576,7 @@
   }
  },
  {
-  "id": "miasta-402",
+  "id": "miasta-405",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8535,7 +8600,7 @@
   }
  },
  {
-  "id": "miasta-403",
+  "id": "miasta-406",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8553,7 +8618,7 @@
   }
  },
  {
-  "id": "miasta-404",
+  "id": "miasta-407",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8574,7 +8639,26 @@
   }
  },
  {
-  "id": "miasta-405",
+  "id": "miasta-408",
+  "colors": {
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.23895061728395062,
+    "black": 0.01918241544326385,
+    "red": 0.32265390542623085,
+    "grey": 0.18476762105604672,
+    "white": 0.21550815151269365,
+    "gold": 0.16566631519182415
+   }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
+  }
+ },
+ {
+  "id": "miasta-409",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8600,7 +8684,7 @@
   }
  },
  {
-  "id": "miasta-406",
+  "id": "miasta-410",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8620,7 +8704,7 @@
   }
  },
  {
-  "id": "miasta-407",
+  "id": "miasta-411",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8641,7 +8725,7 @@
   }
  },
  {
-  "id": "miasta-408",
+  "id": "miasta-412",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8660,7 +8744,7 @@
   }
  },
  {
-  "id": "miasta-409",
+  "id": "miasta-413",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8684,7 +8768,7 @@
   }
  },
  {
-  "id": "miasta-410",
+  "id": "miasta-414",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8709,7 +8793,7 @@
   }
  },
  {
-  "id": "miasta-411",
+  "id": "miasta-415",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8728,7 +8812,7 @@
   }
  },
  {
-  "id": "miasta-412",
+  "id": "miasta-416",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8750,7 +8834,7 @@
   }
  },
  {
-  "id": "miasta-413",
+  "id": "miasta-417",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8770,7 +8854,7 @@
   }
  },
  {
-  "id": "miasta-414",
+  "id": "miasta-418",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8788,7 +8872,7 @@
   }
  },
  {
-  "id": "miasta-415",
+  "id": "miasta-419",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8811,7 +8895,7 @@
   }
  },
  {
-  "id": "miasta-416",
+  "id": "miasta-420",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8830,7 +8914,7 @@
   }
  },
  {
-  "id": "miasta-417",
+  "id": "miasta-421",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8851,7 +8935,7 @@
   }
  },
  {
-  "id": "miasta-418",
+  "id": "miasta-422",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8872,7 +8956,7 @@
   }
  },
  {
-  "id": "miasta-419",
+  "id": "miasta-423",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8887,7 +8971,7 @@
   }
  },
  {
-  "id": "miasta-420",
+  "id": "miasta-424",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8909,7 +8993,7 @@
   }
  },
  {
-  "id": "miasta-421",
+  "id": "miasta-425",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8931,7 +9015,7 @@
   }
  },
  {
-  "id": "miasta-422",
+  "id": "miasta-426",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8943,7 +9027,7 @@
   }
  },
  {
-  "id": "miasta-423",
+  "id": "miasta-427",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8965,7 +9049,7 @@
   }
  },
  {
-  "id": "miasta-424",
+  "id": "miasta-428",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -8986,7 +9070,7 @@
   }
  },
  {
-  "id": "miasta-425",
+  "id": "miasta-429",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9008,7 +9092,7 @@
   }
  },
  {
-  "id": "miasta-426",
+  "id": "miasta-430",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9029,7 +9113,7 @@
   }
  },
  {
-  "id": "miasta-427",
+  "id": "miasta-431",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9048,7 +9132,7 @@
   }
  },
  {
-  "id": "miasta-428",
+  "id": "miasta-432",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9068,7 +9152,7 @@
   }
  },
  {
-  "id": "miasta-429",
+  "id": "miasta-433",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9091,7 +9175,7 @@
   }
  },
  {
-  "id": "miasta-430",
+  "id": "miasta-434",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9116,7 +9200,7 @@
   }
  },
  {
-  "id": "miasta-431",
+  "id": "miasta-435",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9137,7 +9221,7 @@
   }
  },
  {
-  "id": "miasta-432",
+  "id": "miasta-436",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9157,7 +9241,7 @@
   }
  },
  {
-  "id": "miasta-433",
+  "id": "miasta-437",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9169,7 +9253,7 @@
   }
  },
  {
-  "id": "miasta-434",
+  "id": "miasta-438",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9193,7 +9277,7 @@
   }
  },
  {
-  "id": "miasta-435",
+  "id": "miasta-439",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9220,7 +9304,7 @@
   }
  },
  {
-  "id": "miasta-436",
+  "id": "miasta-440",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9232,7 +9316,7 @@
   }
  },
  {
-  "id": "miasta-437",
+  "id": "miasta-441",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9260,7 +9344,7 @@
   }
  },
  {
-  "id": "miasta-438",
+  "id": "miasta-442",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9276,7 +9360,7 @@
   }
  },
  {
-  "id": "miasta-439",
+  "id": "miasta-443",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9296,7 +9380,7 @@
   }
  },
  {
-  "id": "miasta-440",
+  "id": "miasta-444",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9315,7 +9399,7 @@
   }
  },
  {
-  "id": "miasta-441",
+  "id": "miasta-445",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9333,7 +9417,7 @@
   }
  },
  {
-  "id": "miasta-442",
+  "id": "miasta-446",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9356,7 +9440,7 @@
   }
  },
  {
-  "id": "miasta-443",
+  "id": "miasta-447",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9374,7 +9458,7 @@
   }
  },
  {
-  "id": "miasta-444",
+  "id": "miasta-448",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9395,7 +9479,7 @@
   }
  },
  {
-  "id": "miasta-445",
+  "id": "miasta-449",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9416,7 +9500,7 @@
   }
  },
  {
-  "id": "miasta-446",
+  "id": "miasta-450",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9436,7 +9520,7 @@
   }
  },
  {
-  "id": "miasta-447",
+  "id": "miasta-451",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9456,7 +9540,7 @@
   }
  },
  {
-  "id": "miasta-448",
+  "id": "miasta-452",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9480,7 +9564,7 @@
   }
  },
  {
-  "id": "miasta-449",
+  "id": "miasta-453",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9499,7 +9583,7 @@
   }
  },
  {
-  "id": "miasta-450",
+  "id": "miasta-454",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9521,7 +9605,7 @@
   }
  },
  {
-  "id": "miasta-451",
+  "id": "miasta-455",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9541,7 +9625,7 @@
   }
  },
  {
-  "id": "miasta-452",
+  "id": "miasta-456",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9563,7 +9647,7 @@
   }
  },
  {
-  "id": "miasta-453",
+  "id": "miasta-457",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9577,7 +9661,7 @@
   }
  },
  {
-  "id": "miasta-454",
+  "id": "miasta-458",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9597,7 +9681,7 @@
   }
  },
  {
-  "id": "miasta-455",
+  "id": "miasta-459",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9617,7 +9701,7 @@
   }
  },
  {
-  "id": "miasta-456",
+  "id": "miasta-460",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9639,7 +9723,7 @@
   }
  },
  {
-  "id": "miasta-457",
+  "id": "miasta-461",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9667,7 +9751,7 @@
   }
  },
  {
-  "id": "miasta-458",
+  "id": "miasta-462",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9687,7 +9771,7 @@
   }
  },
  {
-  "id": "miasta-459",
+  "id": "miasta-463",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9707,7 +9791,7 @@
   }
  },
  {
-  "id": "miasta-460",
+  "id": "miasta-464",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9726,7 +9810,7 @@
   }
  },
  {
-  "id": "miasta-461",
+  "id": "miasta-465",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9744,7 +9828,7 @@
   }
  },
  {
-  "id": "miasta-462",
+  "id": "miasta-466",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9766,7 +9850,7 @@
   }
  },
  {
-  "id": "miasta-463",
+  "id": "miasta-467",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9787,7 +9871,7 @@
   }
  },
  {
-  "id": "miasta-464",
+  "id": "miasta-468",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9812,7 +9896,27 @@
   }
  },
  {
-  "id": "miasta-465",
+  "id": "miasta-469",
+  "colors": {
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.17685185185185184,
+    "black": 0.03014623172103487,
+    "blue": 0.5762654668166479,
+    "gold": 0.13712035995500563,
+    "grey": 0.04056992875890514,
+    "green": 0.0021372328458942632,
+    "white": 0.14495688038995125
+   }
+  },
+  "markers": {
+   "items": [
+    "crown"
+   ]
+  }
+ },
+ {
+  "id": "miasta-470",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9837,7 +9941,7 @@
   }
  },
  {
-  "id": "miasta-466",
+  "id": "miasta-471",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9856,7 +9960,7 @@
   }
  },
  {
-  "id": "miasta-467",
+  "id": "miasta-472",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9875,7 +9979,7 @@
   }
  },
  {
-  "id": "miasta-468",
+  "id": "miasta-473",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9895,7 +9999,7 @@
   }
  },
  {
-  "id": "miasta-469",
+  "id": "miasta-474",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9914,7 +10018,7 @@
   }
  },
  {
-  "id": "miasta-470",
+  "id": "miasta-475",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9939,7 +10043,7 @@
   }
  },
  {
-  "id": "miasta-471",
+  "id": "miasta-476",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9960,7 +10064,7 @@
   }
  },
  {
-  "id": "miasta-472",
+  "id": "miasta-477",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -9984,7 +10088,7 @@
   }
  },
  {
-  "id": "miasta-473",
+  "id": "miasta-478",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10009,7 +10113,7 @@
   }
  },
  {
-  "id": "miasta-474",
+  "id": "miasta-479",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10031,7 +10135,7 @@
   }
  },
  {
-  "id": "miasta-475",
+  "id": "miasta-480",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10045,7 +10149,7 @@
   }
  },
  {
-  "id": "miasta-476",
+  "id": "miasta-481",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10063,7 +10167,7 @@
   }
  },
  {
-  "id": "miasta-477",
+  "id": "miasta-482",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10090,7 +10194,7 @@
   }
  },
  {
-  "id": "miasta-478",
+  "id": "miasta-483",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10114,7 +10218,7 @@
   }
  },
  {
-  "id": "miasta-479",
+  "id": "miasta-484",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10135,7 +10239,7 @@
   }
  },
  {
-  "id": "miasta-480",
+  "id": "miasta-485",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10152,7 +10256,7 @@
   }
  },
  {
-  "id": "miasta-481",
+  "id": "miasta-486",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10172,7 +10276,7 @@
   }
  },
  {
-  "id": "miasta-482",
+  "id": "miasta-487",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10193,7 +10297,7 @@
   }
  },
  {
-  "id": "miasta-483",
+  "id": "miasta-488",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10212,7 +10316,7 @@
   }
  },
  {
-  "id": "miasta-484",
+  "id": "miasta-489",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10233,7 +10337,7 @@
   }
  },
  {
-  "id": "miasta-485",
+  "id": "miasta-490",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10252,7 +10356,7 @@
   }
  },
  {
-  "id": "miasta-486",
+  "id": "miasta-491",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10271,7 +10375,7 @@
   }
  },
  {
-  "id": "miasta-487",
+  "id": "miasta-492",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10291,7 +10395,7 @@
   }
  },
  {
-  "id": "miasta-488",
+  "id": "miasta-493",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10317,7 +10421,7 @@
   }
  },
  {
-  "id": "miasta-489",
+  "id": "miasta-494",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10335,7 +10439,7 @@
   }
  },
  {
-  "id": "miasta-490",
+  "id": "miasta-495",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10355,7 +10459,7 @@
   }
  },
  {
-  "id": "miasta-491",
+  "id": "miasta-496",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10382,7 +10486,7 @@
   }
  },
  {
-  "id": "miasta-492",
+  "id": "miasta-497",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10400,7 +10504,7 @@
   }
  },
  {
-  "id": "miasta-493",
+  "id": "miasta-498",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10420,7 +10524,7 @@
   }
  },
  {
-  "id": "miasta-494",
+  "id": "miasta-499",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10440,7 +10544,7 @@
   }
  },
  {
-  "id": "miasta-495",
+  "id": "miasta-500",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10458,7 +10562,7 @@
   }
  },
  {
-  "id": "miasta-496",
+  "id": "miasta-501",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10481,7 +10585,7 @@
   }
  },
  {
-  "id": "miasta-497",
+  "id": "miasta-502",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10501,7 +10605,7 @@
   }
  },
  {
-  "id": "miasta-498",
+  "id": "miasta-503",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10526,7 +10630,7 @@
   }
  },
  {
-  "id": "miasta-499",
+  "id": "miasta-504",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10546,7 +10650,7 @@
   }
  },
  {
-  "id": "miasta-500",
+  "id": "miasta-505",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10570,7 +10674,7 @@
   }
  },
  {
-  "id": "miasta-501",
+  "id": "miasta-506",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10591,7 +10695,7 @@
   }
  },
  {
-  "id": "miasta-502",
+  "id": "miasta-507",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10610,7 +10714,7 @@
   }
  },
  {
-  "id": "miasta-503",
+  "id": "miasta-508",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10635,7 +10739,7 @@
   }
  },
  {
-  "id": "miasta-504",
+  "id": "miasta-509",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10655,7 +10759,7 @@
   }
  },
  {
-  "id": "miasta-505",
+  "id": "miasta-510",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10679,7 +10783,7 @@
   }
  },
  {
-  "id": "miasta-506",
+  "id": "miasta-511",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10705,7 +10809,7 @@
   }
  },
  {
-  "id": "miasta-507",
+  "id": "miasta-512",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10730,7 +10834,7 @@
   }
  },
  {
-  "id": "miasta-508",
+  "id": "miasta-513",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10750,7 +10854,7 @@
   }
  },
  {
-  "id": "miasta-509",
+  "id": "miasta-514",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10771,7 +10875,7 @@
   }
  },
  {
-  "id": "miasta-510",
+  "id": "miasta-515",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10796,7 +10900,7 @@
   }
  },
  {
-  "id": "miasta-511",
+  "id": "miasta-516",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10819,7 +10923,7 @@
   }
  },
  {
-  "id": "miasta-512",
+  "id": "miasta-517",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10840,7 +10944,7 @@
   }
  },
  {
-  "id": "miasta-513",
+  "id": "miasta-518",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10868,7 +10972,7 @@
   }
  },
  {
-  "id": "miasta-514",
+  "id": "miasta-519",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10892,7 +10996,7 @@
   }
  },
  {
-  "id": "miasta-515",
+  "id": "miasta-520",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10912,7 +11016,7 @@
   }
  },
  {
-  "id": "miasta-516",
+  "id": "miasta-521",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10925,7 +11029,7 @@
   }
  },
  {
-  "id": "miasta-517",
+  "id": "miasta-522",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10947,7 +11051,7 @@
   }
  },
  {
-  "id": "miasta-518",
+  "id": "miasta-523",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10966,7 +11070,7 @@
   }
  },
  {
-  "id": "miasta-519",
+  "id": "miasta-524",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -10992,7 +11096,7 @@
   }
  },
  {
-  "id": "miasta-520",
+  "id": "miasta-525",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11011,7 +11115,7 @@
   }
  },
  {
-  "id": "miasta-521",
+  "id": "miasta-526",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11030,7 +11134,7 @@
   }
  },
  {
-  "id": "miasta-522",
+  "id": "miasta-527",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11051,7 +11155,7 @@
   }
  },
  {
-  "id": "miasta-523",
+  "id": "miasta-528",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11079,7 +11183,7 @@
   }
  },
  {
-  "id": "miasta-524",
+  "id": "miasta-529",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11099,7 +11203,7 @@
   }
  },
  {
-  "id": "miasta-525",
+  "id": "miasta-530",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11121,7 +11225,7 @@
   }
  },
  {
-  "id": "miasta-526",
+  "id": "miasta-531",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11142,7 +11246,7 @@
   }
  },
  {
-  "id": "miasta-527",
+  "id": "miasta-532",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11160,7 +11264,7 @@
   }
  },
  {
-  "id": "miasta-528",
+  "id": "miasta-533",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11181,7 +11285,7 @@
   }
  },
  {
-  "id": "miasta-529",
+  "id": "miasta-534",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11201,7 +11305,7 @@
   }
  },
  {
-  "id": "miasta-530",
+  "id": "miasta-535",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11218,7 +11322,7 @@
   }
  },
  {
-  "id": "miasta-531",
+  "id": "miasta-536",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11232,7 +11336,7 @@
   }
  },
  {
-  "id": "miasta-532",
+  "id": "miasta-537",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11252,7 +11356,7 @@
   }
  },
  {
-  "id": "miasta-533",
+  "id": "miasta-538",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11275,7 +11379,7 @@
   }
  },
  {
-  "id": "miasta-534",
+  "id": "miasta-539",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11291,7 +11395,7 @@
   }
  },
  {
-  "id": "miasta-535",
+  "id": "miasta-540",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11311,7 +11415,7 @@
   }
  },
  {
-  "id": "miasta-536",
+  "id": "miasta-541",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11330,7 +11434,7 @@
   }
  },
  {
-  "id": "miasta-537",
+  "id": "miasta-542",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11348,7 +11452,7 @@
   }
  },
  {
-  "id": "miasta-538",
+  "id": "miasta-543",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11369,7 +11473,7 @@
   }
  },
  {
-  "id": "miasta-539",
+  "id": "miasta-544",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11390,7 +11494,7 @@
   }
  },
  {
-  "id": "miasta-540",
+  "id": "miasta-545",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11415,7 +11519,7 @@
   }
  },
  {
-  "id": "miasta-541",
+  "id": "miasta-546",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11436,7 +11540,7 @@
   }
  },
  {
-  "id": "miasta-542",
+  "id": "miasta-547",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11456,7 +11560,7 @@
   }
  },
  {
-  "id": "miasta-543",
+  "id": "miasta-548",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11469,7 +11573,7 @@
   }
  },
  {
-  "id": "miasta-544",
+  "id": "miasta-549",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11492,7 +11596,7 @@
   }
  },
  {
-  "id": "miasta-545",
+  "id": "miasta-550",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11514,7 +11618,7 @@
   }
  },
  {
-  "id": "miasta-546",
+  "id": "miasta-551",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11536,7 +11640,7 @@
   }
  },
  {
-  "id": "miasta-547",
+  "id": "miasta-552",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11557,7 +11661,7 @@
   }
  },
  {
-  "id": "miasta-548",
+  "id": "miasta-553",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11577,7 +11681,7 @@
   }
  },
  {
-  "id": "miasta-549",
+  "id": "miasta-554",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11596,7 +11700,7 @@
   }
  },
  {
-  "id": "miasta-550",
+  "id": "miasta-555",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11615,7 +11719,7 @@
   }
  },
  {
-  "id": "miasta-551",
+  "id": "miasta-556",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11637,7 +11741,7 @@
   }
  },
  {
-  "id": "miasta-552",
+  "id": "miasta-557",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11656,7 +11760,7 @@
   }
  },
  {
-  "id": "miasta-553",
+  "id": "miasta-558",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11679,7 +11783,7 @@
   }
  },
  {
-  "id": "miasta-554",
+  "id": "miasta-559",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11701,7 +11805,7 @@
   }
  },
  {
-  "id": "miasta-555",
+  "id": "miasta-560",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11715,7 +11819,7 @@
   }
  },
  {
-  "id": "miasta-556",
+  "id": "miasta-561",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11737,7 +11841,7 @@
   }
  },
  {
-  "id": "miasta-557",
+  "id": "miasta-562",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11758,7 +11862,7 @@
   }
  },
  {
-  "id": "miasta-558",
+  "id": "miasta-563",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11783,7 +11887,7 @@
   }
  },
  {
-  "id": "miasta-559",
+  "id": "miasta-564",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11806,7 +11910,7 @@
   }
  },
  {
-  "id": "miasta-560",
+  "id": "miasta-565",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11824,7 +11928,7 @@
   }
  },
  {
-  "id": "miasta-561",
+  "id": "miasta-566",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11841,7 +11945,7 @@
   }
  },
  {
-  "id": "miasta-562",
+  "id": "miasta-567",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11871,7 +11975,7 @@
   }
  },
  {
-  "id": "miasta-563",
+  "id": "miasta-568",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11891,7 +11995,7 @@
   }
  },
  {
-  "id": "miasta-564",
+  "id": "miasta-569",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11903,7 +12007,7 @@
   }
  },
  {
-  "id": "miasta-565",
+  "id": "miasta-570",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11927,7 +12031,7 @@
   }
  },
  {
-  "id": "miasta-566",
+  "id": "miasta-571",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11941,7 +12045,7 @@
   }
  },
  {
-  "id": "miasta-567",
+  "id": "miasta-572",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11964,7 +12068,7 @@
   }
  },
  {
-  "id": "miasta-568",
+  "id": "miasta-573",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -11976,7 +12080,7 @@
   }
  },
  {
-  "id": "miasta-569",
+  "id": "miasta-574",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12000,7 +12104,7 @@
   }
  },
  {
-  "id": "miasta-570",
+  "id": "miasta-575",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12020,7 +12124,7 @@
   }
  },
  {
-  "id": "miasta-571",
+  "id": "miasta-576",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12040,7 +12144,7 @@
   }
  },
  {
-  "id": "miasta-572",
+  "id": "miasta-577",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12060,7 +12164,7 @@
   }
  },
  {
-  "id": "miasta-573",
+  "id": "miasta-578",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12079,7 +12183,7 @@
   }
  },
  {
-  "id": "miasta-574",
+  "id": "miasta-579",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12099,7 +12203,7 @@
   }
  },
  {
-  "id": "miasta-575",
+  "id": "miasta-580",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12127,7 +12231,7 @@
   }
  },
  {
-  "id": "miasta-576",
+  "id": "miasta-581",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12147,7 +12251,7 @@
   }
  },
  {
-  "id": "miasta-577",
+  "id": "miasta-582",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12172,7 +12276,7 @@
   }
  },
  {
-  "id": "miasta-578",
+  "id": "miasta-583",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12196,7 +12300,7 @@
   }
  },
  {
-  "id": "miasta-579",
+  "id": "miasta-584",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12215,7 +12319,7 @@
   }
  },
  {
-  "id": "miasta-580",
+  "id": "miasta-585",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12235,7 +12339,7 @@
   }
  },
  {
-  "id": "miasta-581",
+  "id": "miasta-586",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12259,7 +12363,7 @@
   }
  },
  {
-  "id": "miasta-582",
+  "id": "miasta-587",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12280,7 +12384,7 @@
   }
  },
  {
-  "id": "miasta-583",
+  "id": "miasta-588",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12309,7 +12413,7 @@
   }
  },
  {
-  "id": "miasta-584",
+  "id": "miasta-589",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12326,7 +12430,7 @@
   }
  },
  {
-  "id": "miasta-585",
+  "id": "miasta-590",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12348,7 +12452,7 @@
   }
  },
  {
-  "id": "miasta-586",
+  "id": "miasta-591",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12367,7 +12471,7 @@
   }
  },
  {
-  "id": "miasta-587",
+  "id": "miasta-592",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12388,7 +12492,7 @@
   }
  },
  {
-  "id": "miasta-588",
+  "id": "miasta-593",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12412,7 +12516,7 @@
   }
  },
  {
-  "id": "miasta-589",
+  "id": "miasta-594",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12436,7 +12540,7 @@
   }
  },
  {
-  "id": "miasta-590",
+  "id": "miasta-595",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12456,7 +12560,7 @@
   }
  },
  {
-  "id": "miasta-591",
+  "id": "miasta-596",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12475,7 +12579,7 @@
   }
  },
  {
-  "id": "miasta-592",
+  "id": "miasta-597",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12493,7 +12597,7 @@
   }
  },
  {
-  "id": "miasta-593",
+  "id": "miasta-598",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12514,7 +12618,7 @@
   }
  },
  {
-  "id": "miasta-594",
+  "id": "miasta-599",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12536,7 +12640,7 @@
   }
  },
  {
-  "id": "miasta-595",
+  "id": "miasta-600",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12557,7 +12661,7 @@
   }
  },
  {
-  "id": "miasta-596",
+  "id": "miasta-601",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12579,7 +12683,7 @@
   }
  },
  {
-  "id": "miasta-597",
+  "id": "miasta-602",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12599,7 +12703,7 @@
   }
  },
  {
-  "id": "miasta-598",
+  "id": "miasta-603",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12611,7 +12715,7 @@
   }
  },
  {
-  "id": "miasta-599",
+  "id": "miasta-604",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12634,7 +12738,7 @@
   }
  },
  {
-  "id": "miasta-600",
+  "id": "miasta-605",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12656,7 +12760,7 @@
   }
  },
  {
-  "id": "miasta-601",
+  "id": "miasta-606",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12679,7 +12783,7 @@
   }
  },
  {
-  "id": "miasta-602",
+  "id": "miasta-607",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12699,7 +12803,7 @@
   }
  },
  {
-  "id": "miasta-603",
+  "id": "miasta-608",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12722,7 +12826,7 @@
   }
  },
  {
-  "id": "miasta-604",
+  "id": "miasta-609",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12746,7 +12850,7 @@
   }
  },
  {
-  "id": "miasta-605",
+  "id": "miasta-610",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12768,7 +12872,7 @@
   }
  },
  {
-  "id": "miasta-606",
+  "id": "miasta-611",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12793,7 +12897,7 @@
   }
  },
  {
-  "id": "miasta-607",
+  "id": "miasta-612",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12806,7 +12910,7 @@
   }
  },
  {
-  "id": "miasta-608",
+  "id": "miasta-613",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12831,7 +12935,7 @@
   }
  },
  {
-  "id": "miasta-609",
+  "id": "miasta-614",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12849,7 +12953,7 @@
   }
  },
  {
-  "id": "miasta-610",
+  "id": "miasta-615",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12866,7 +12970,7 @@
   }
  },
  {
-  "id": "miasta-611",
+  "id": "miasta-616",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12888,7 +12992,7 @@
   }
  },
  {
-  "id": "miasta-612",
+  "id": "miasta-617",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12907,7 +13011,7 @@
   }
  },
  {
-  "id": "miasta-613",
+  "id": "miasta-618",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12925,7 +13029,7 @@
   }
  },
  {
-  "id": "miasta-614",
+  "id": "miasta-619",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12949,7 +13053,7 @@
   }
  },
  {
-  "id": "miasta-615",
+  "id": "miasta-620",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12971,7 +13075,7 @@
   }
  },
  {
-  "id": "miasta-616",
+  "id": "miasta-621",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -12998,7 +13102,7 @@
   }
  },
  {
-  "id": "miasta-617",
+  "id": "miasta-622",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13021,7 +13125,7 @@
   }
  },
  {
-  "id": "miasta-618",
+  "id": "miasta-623",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13033,7 +13137,7 @@
   }
  },
  {
-  "id": "miasta-619",
+  "id": "miasta-624",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13053,7 +13157,7 @@
   }
  },
  {
-  "id": "miasta-620",
+  "id": "miasta-625",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13072,7 +13176,7 @@
   }
  },
  {
-  "id": "miasta-621",
+  "id": "miasta-626",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13090,7 +13194,7 @@
   }
  },
  {
-  "id": "miasta-622",
+  "id": "miasta-627",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13114,7 +13218,7 @@
   }
  },
  {
-  "id": "miasta-623",
+  "id": "miasta-628",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13135,7 +13239,7 @@
   }
  },
  {
-  "id": "miasta-624",
+  "id": "miasta-629",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13156,7 +13260,7 @@
   }
  },
  {
-  "id": "miasta-625",
+  "id": "miasta-630",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13178,7 +13282,7 @@
   }
  },
  {
-  "id": "miasta-626",
+  "id": "miasta-631",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13198,7 +13302,7 @@
   }
  },
  {
-  "id": "miasta-627",
+  "id": "miasta-632",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13212,7 +13316,7 @@
   }
  },
  {
-  "id": "miasta-628",
+  "id": "miasta-633",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13232,7 +13336,7 @@
   }
  },
  {
-  "id": "miasta-629",
+  "id": "miasta-634",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13256,7 +13360,30 @@
   }
  },
  {
-  "id": "miasta-630",
+  "id": "miasta-635",
+  "colors": {
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.22506172839506172,
+    "black": 0.02513143221284053,
+    "green": 0.5279990441293612,
+    "gold": 0.22554564282300463,
+    "red": 0.06746853592480484,
+    "grey": 0.0004381073761350964
+   }
+  },
+  "markers": {
+   "animals": [
+    "fish",
+    "horse"
+   ],
+   "items": [
+    "earOfGrain"
+   ]
+  }
+ },
+ {
+  "id": "miasta-636",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13278,7 +13405,7 @@
   }
  },
  {
-  "id": "miasta-631",
+  "id": "miasta-637",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13292,7 +13419,7 @@
   }
  },
  {
-  "id": "miasta-632",
+  "id": "miasta-638",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13311,7 +13438,7 @@
   }
  },
  {
-  "id": "miasta-633",
+  "id": "miasta-639",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13335,7 +13462,7 @@
   }
  },
  {
-  "id": "miasta-634",
+  "id": "miasta-640",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13359,7 +13486,7 @@
   }
  },
  {
-  "id": "miasta-635",
+  "id": "miasta-641",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13379,7 +13506,7 @@
   }
  },
  {
-  "id": "miasta-636",
+  "id": "miasta-642",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13399,7 +13526,7 @@
   }
  },
  {
-  "id": "miasta-637",
+  "id": "miasta-643",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13423,7 +13550,7 @@
   }
  },
  {
-  "id": "miasta-638",
+  "id": "miasta-644",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13438,7 +13565,7 @@
   }
  },
  {
-  "id": "miasta-639",
+  "id": "miasta-645",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13451,7 +13578,7 @@
   }
  },
  {
-  "id": "miasta-640",
+  "id": "miasta-646",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13470,7 +13597,7 @@
   }
  },
  {
-  "id": "miasta-641",
+  "id": "miasta-647",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13488,7 +13615,7 @@
   }
  },
  {
-  "id": "miasta-642",
+  "id": "miasta-648",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13512,7 +13639,7 @@
   }
  },
  {
-  "id": "miasta-643",
+  "id": "miasta-649",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13532,7 +13659,7 @@
   }
  },
  {
-  "id": "miasta-644",
+  "id": "miasta-650",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13551,7 +13678,7 @@
   }
  },
  {
-  "id": "miasta-645",
+  "id": "miasta-651",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13573,7 +13700,7 @@
   }
  },
  {
-  "id": "miasta-646",
+  "id": "miasta-652",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13593,7 +13720,7 @@
   }
  },
  {
-  "id": "miasta-647",
+  "id": "miasta-653",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13619,7 +13746,7 @@
   }
  },
  {
-  "id": "miasta-648",
+  "id": "miasta-654",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13639,7 +13766,7 @@
   }
  },
  {
-  "id": "miasta-649",
+  "id": "miasta-655",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13663,7 +13790,7 @@
   }
  },
  {
-  "id": "miasta-650",
+  "id": "miasta-656",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13682,7 +13809,7 @@
   }
  },
  {
-  "id": "miasta-651",
+  "id": "miasta-657",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13703,7 +13830,7 @@
   }
  },
  {
-  "id": "miasta-652",
+  "id": "miasta-658",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13728,7 +13855,7 @@
   }
  },
  {
-  "id": "miasta-653",
+  "id": "miasta-659",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13751,7 +13878,7 @@
   }
  },
  {
-  "id": "miasta-654",
+  "id": "miasta-660",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13775,7 +13902,7 @@
   }
  },
  {
-  "id": "miasta-655",
+  "id": "miasta-661",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13799,7 +13926,7 @@
   }
  },
  {
-  "id": "miasta-657",
+  "id": "miasta-663",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13822,7 +13949,7 @@
   }
  },
  {
-  "id": "miasta-658",
+  "id": "miasta-664",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13848,7 +13975,7 @@
   }
  },
  {
-  "id": "miasta-659",
+  "id": "miasta-665",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13871,7 +13998,7 @@
   }
  },
  {
-  "id": "miasta-660",
+  "id": "miasta-666",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13886,7 +14013,7 @@
   }
  },
  {
-  "id": "miasta-661",
+  "id": "miasta-667",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13910,7 +14037,7 @@
   }
  },
  {
-  "id": "miasta-662",
+  "id": "miasta-668",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13934,7 +14061,7 @@
   }
  },
  {
-  "id": "miasta-663",
+  "id": "miasta-669",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13960,7 +14087,7 @@
   }
  },
  {
-  "id": "miasta-664",
+  "id": "miasta-670",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -13984,7 +14111,7 @@
   }
  },
  {
-  "id": "miasta-665",
+  "id": "miasta-671",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14002,7 +14129,7 @@
   }
  },
  {
-  "id": "miasta-666",
+  "id": "miasta-672",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14028,7 +14155,7 @@
   }
  },
  {
-  "id": "miasta-667",
+  "id": "miasta-673",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14054,7 +14181,7 @@
   }
  },
  {
-  "id": "miasta-668",
+  "id": "miasta-674",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14081,7 +14208,7 @@
   }
  },
  {
-  "id": "miasta-669",
+  "id": "miasta-675",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14105,7 +14232,7 @@
   }
  },
  {
-  "id": "miasta-670",
+  "id": "miasta-676",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14125,7 +14252,7 @@
   }
  },
  {
-  "id": "miasta-671",
+  "id": "miasta-677",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14148,7 +14275,7 @@
   }
  },
  {
-  "id": "miasta-672",
+  "id": "miasta-678",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14171,7 +14298,7 @@
   }
  },
  {
-  "id": "miasta-673",
+  "id": "miasta-679",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14191,7 +14318,7 @@
   }
  },
  {
-  "id": "miasta-674",
+  "id": "miasta-680",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14209,7 +14336,7 @@
   }
  },
  {
-  "id": "miasta-675",
+  "id": "miasta-681",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14222,7 +14349,7 @@
   }
  },
  {
-  "id": "miasta-676",
+  "id": "miasta-682",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14249,7 +14376,7 @@
   }
  },
  {
-  "id": "miasta-677",
+  "id": "miasta-683",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14270,7 +14397,7 @@
   }
  },
  {
-  "id": "miasta-678",
+  "id": "miasta-684",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14290,7 +14417,7 @@
   }
  },
  {
-  "id": "miasta-679",
+  "id": "miasta-685",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14309,7 +14436,7 @@
   }
  },
  {
-  "id": "miasta-680",
+  "id": "miasta-686",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14332,7 +14459,7 @@
   }
  },
  {
-  "id": "miasta-681",
+  "id": "miasta-687",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14355,7 +14482,7 @@
   }
  },
  {
-  "id": "miasta-682",
+  "id": "miasta-688",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14377,7 +14504,7 @@
   }
  },
  {
-  "id": "miasta-684",
+  "id": "miasta-690",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14396,7 +14523,7 @@
   }
  },
  {
-  "id": "miasta-685",
+  "id": "miasta-691",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14414,7 +14541,7 @@
   }
  },
  {
-  "id": "miasta-686",
+  "id": "miasta-692",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14438,7 +14565,7 @@
   }
  },
  {
-  "id": "miasta-687",
+  "id": "miasta-693",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14453,7 +14580,7 @@
   }
  },
  {
-  "id": "miasta-688",
+  "id": "miasta-694",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14472,7 +14599,7 @@
   }
  },
  {
-  "id": "miasta-689",
+  "id": "miasta-695",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14497,7 +14624,7 @@
   }
  },
  {
-  "id": "miasta-690",
+  "id": "miasta-696",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14524,7 +14651,7 @@
   }
  },
  {
-  "id": "miasta-691",
+  "id": "miasta-697",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14544,7 +14671,7 @@
   }
  },
  {
-  "id": "miasta-692",
+  "id": "miasta-698",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14563,7 +14690,7 @@
   }
  },
  {
-  "id": "miasta-693",
+  "id": "miasta-699",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14582,7 +14709,7 @@
   }
  },
  {
-  "id": "miasta-694",
+  "id": "miasta-700",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14603,7 +14730,7 @@
   }
  },
  {
-  "id": "miasta-695",
+  "id": "miasta-701",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14622,7 +14749,7 @@
   }
  },
  {
-  "id": "miasta-696",
+  "id": "miasta-702",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14643,7 +14770,7 @@
   }
  },
  {
-  "id": "miasta-697",
+  "id": "miasta-703",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14663,7 +14790,7 @@
   }
  },
  {
-  "id": "miasta-698",
+  "id": "miasta-704",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14686,7 +14813,7 @@
   }
  },
  {
-  "id": "miasta-699",
+  "id": "miasta-705",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14707,7 +14834,7 @@
   }
  },
  {
-  "id": "miasta-700",
+  "id": "miasta-706",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14726,7 +14853,7 @@
   }
  },
  {
-  "id": "miasta-701",
+  "id": "miasta-707",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14750,7 +14877,7 @@
   }
  },
  {
-  "id": "miasta-702",
+  "id": "miasta-708",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14769,7 +14896,7 @@
   }
  },
  {
-  "id": "miasta-703",
+  "id": "miasta-709",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14791,7 +14918,7 @@
   }
  },
  {
-  "id": "miasta-704",
+  "id": "miasta-710",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14817,7 +14944,7 @@
   }
  },
  {
-  "id": "miasta-705",
+  "id": "miasta-711",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14835,7 +14962,7 @@
   }
  },
  {
-  "id": "miasta-706",
+  "id": "miasta-712",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14849,7 +14976,7 @@
   }
  },
  {
-  "id": "miasta-707",
+  "id": "miasta-713",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14874,7 +15001,7 @@
   }
  },
  {
-  "id": "miasta-708",
+  "id": "miasta-714",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14895,7 +15022,7 @@
   }
  },
  {
-  "id": "miasta-709",
+  "id": "miasta-715",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14920,7 +15047,7 @@
   }
  },
  {
-  "id": "miasta-710",
+  "id": "miasta-716",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14945,7 +15072,7 @@
   }
  },
  {
-  "id": "miasta-711",
+  "id": "miasta-717",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14967,7 +15094,7 @@
   }
  },
  {
-  "id": "miasta-712",
+  "id": "miasta-718",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -14986,7 +15113,7 @@
   }
  },
  {
-  "id": "miasta-713",
+  "id": "miasta-719",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15013,7 +15140,7 @@
   }
  },
  {
-  "id": "miasta-714",
+  "id": "miasta-720",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15032,7 +15159,7 @@
   }
  },
  {
-  "id": "miasta-715",
+  "id": "miasta-721",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15047,7 +15174,7 @@
   }
  },
  {
-  "id": "miasta-716",
+  "id": "miasta-722",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15075,7 +15202,7 @@
   }
  },
  {
-  "id": "miasta-717",
+  "id": "miasta-723",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15099,7 +15226,7 @@
   }
  },
  {
-  "id": "miasta-718",
+  "id": "miasta-724",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15123,7 +15250,7 @@
   }
  },
  {
-  "id": "miasta-719",
+  "id": "miasta-725",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15144,7 +15271,7 @@
   }
  },
  {
-  "id": "miasta-720",
+  "id": "miasta-726",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15158,7 +15285,7 @@
   }
  },
  {
-  "id": "miasta-721",
+  "id": "miasta-727",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15172,7 +15299,7 @@
   }
  },
  {
-  "id": "miasta-722",
+  "id": "miasta-728",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15186,7 +15313,7 @@
   }
  },
  {
-  "id": "miasta-723",
+  "id": "miasta-729",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15212,7 +15339,7 @@
   }
  },
  {
-  "id": "miasta-724",
+  "id": "miasta-730",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15237,7 +15364,7 @@
   }
  },
  {
-  "id": "miasta-725",
+  "id": "miasta-731",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15259,7 +15386,7 @@
   }
  },
  {
-  "id": "miasta-726",
+  "id": "miasta-732",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15282,7 +15409,7 @@
   }
  },
  {
-  "id": "miasta-727",
+  "id": "miasta-733",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15302,7 +15429,7 @@
   }
  },
  {
-  "id": "miasta-728",
+  "id": "miasta-734",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15325,7 +15452,7 @@
   }
  },
  {
-  "id": "miasta-729",
+  "id": "miasta-735",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15346,7 +15473,7 @@
   }
  },
  {
-  "id": "miasta-730",
+  "id": "miasta-736",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15371,7 +15498,7 @@
   }
  },
  {
-  "id": "miasta-731",
+  "id": "miasta-737",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15397,262 +15524,7 @@
   }
  },
  {
-  "id": "miasta-732",
-  "colors": {
-   "hasTransparent": true,
-   "colorsByNames": {
-    "transparent": 0.5582716049382717,
-    "blue": 0.1308692006707658,
-    "green": 0.41922861934041367,
-    "red": 0.23833147009502514,
-    "gold": 0.07944382336500838,
-    "grey": 0.01795695919508105,
-    "white": 0.005869200670765791
-   }
-  },
-  "markers": {
-   "animals": [
-    "eagle",
-    "bird"
-   ],
-   "items": [
-    "lily",
-    "rose",
-    "flower"
-   ]
-  }
- },
- {
-  "id": "miasta-733",
-  "colors": {
-   "hasTransparent": true,
-   "colorsByNames": {
-    "transparent": 0.302962962962963,
-    "grey": 0.11663124335812965,
-    "blue": 0.5019925611052072,
-    "gold": 0.09117074034714842,
-    "red": 0.0077045696068012755,
-    "black": 0.0012398157987956076,
-    "green": 0.00035423308537017357,
-    "white": 0.007128940843074743
-   }
-  },
-  "markers": {
-   "animals": [
-    "eagle",
-    "bird"
-   ],
-   "items": [
-    "walls",
-    "crown"
-   ]
-  }
- },
- {
-  "id": "miasta-734",
-  "colors": {
-   "hasTransparent": true,
-   "colorsByNames": {
-    "transparent": 0.2027469135802469,
-    "black": 0.17482869420463784,
-    "blue": 0.5064457434865085,
-    "gold": 0.1979791723123379,
-    "grey": 0.03894545313770276,
-    "white": 0.004258449150245829,
-    "green": 0.0007742634818628779
-   }
-  },
-  "markers": {
-   "animals": [
-    "eagle",
-    "bird"
-   ],
-   "items": [
-    "saint"
-   ]
-  }
- },
- {
-  "id": "miasta-735",
-  "colors": {
-   "hasTransparent": true,
-   "colorsByNames": {
-    "transparent": 0.12222222222222222,
-    "grey": 0.2620253164556962,
-    "black": 0.014767932489451477,
-    "blue": 0.3265822784810127,
-    "gold": 0.06160337552742616,
-    "red": 0.023452883263009844,
-    "white": 0.2555203938115331
-   }
-  },
-  "markers": {
-   "animals": [
-    "eagle",
-    "bird"
-   ],
-   "items": [
-    "walls",
-    "crown"
-   ]
-  }
- },
- {
-  "id": "miasta-736",
-  "colors": {
-   "hasTransparent": true,
-   "colorsByNames": {
-    "transparent": 0.08333333333333333,
-    "grey": 0.06643097643097644,
-    "white": 0.15713804713804713,
-    "black": 0.2037037037037037,
-    "blue": 0.10602693602693603,
-    "gold": 0.1988888888888889,
-    "red": 0.09225589225589226,
-    "green": 0.03326599326599326
-   }
-  },
-  "markers": {
-   "animals": [
-    "eagle",
-    "ram",
-    "bird"
-   ],
-   "items": [
-    "apple",
-    "tree"
-   ]
-  }
- },
- {
-  "id": "miasta-737",
-  "colors": {
-   "hasTransparent": true,
-   "colorsByNames": {
-    "transparent": 0.14444444444444443,
-    "grey": 0.340981240981241,
-    "white": 0.22146464646464648,
-    "black": 0.012806637806637806,
-    "blue": 0.16031746031746033,
-    "red": 0.0544011544011544,
-    "gold": 0.11612554112554113
-   }
-  },
-  "markers": {
-   "animals": [
-    "eagle",
-    "bird"
-   ],
-   "items": [
-    "hammer",
-    "tree"
-   ]
-  }
- },
- {
   "id": "miasta-738",
-  "colors": {
-   "hasTransparent": true,
-   "colorsByNames": {
-    "transparent": 0.2183641975308642,
-    "grey": 0.14700888450148075,
-    "black": 0.0009081934846989141,
-    "blue": 0.5448766041461007,
-    "gold": 0.03218163869693978,
-    "red": 0.03759131293188549,
-    "white": 0.13512339585389932,
-    "green": 0.0013820335636722605
-   }
-  },
-  "markers": {
-   "animals": [
-    "eagle",
-    "bird"
-   ],
-   "items": [
-    "walls"
-   ]
-  }
- },
- {
-  "id": "miasta-739",
-  "colors": {
-   "hasTransparent": true,
-   "colorsByNames": {
-    "transparent": 0.15555555555555556,
-    "grey": 0.09616228070175438,
-    "blue": 0.21480263157894736,
-    "white": 0.23143274853801168,
-    "gold": 0.17346491228070177,
-    "green": 0.11195175438596491,
-    "red": 0.08358918128654971,
-    "black": 0.00010964912280701755
-   }
-  },
-  "markers": {
-   "animals": [
-    "eagle",
-    "bird"
-   ],
-   "items": [
-    "sword",
-    "walls",
-    "saint"
-   ]
-  }
- },
- {
-  "id": "miasta-740",
-  "colors": {
-   "hasTransparent": true,
-   "colorsByNames": {
-    "transparent": 0.30694444444444446,
-    "blue": 0.4884880872856825,
-    "gold": 0.3130705856156758,
-    "red": 0.08652861278111779,
-    "grey": 0.04168336673346693,
-    "white": 0.012513916722333556,
-    "black": 0.0000445335114673792,
-    "green": 0.0000890670229347584
-   }
-  },
-  "markers": {
-   "animals": [
-    "eagle",
-    "bird"
-   ]
-  }
- },
- {
-  "id": "miasta-741",
-  "colors": {
-   "hasTransparent": true,
-   "colorsByNames": {
-    "transparent": 0.2139814814814815,
-    "black": 0.029175010798287982,
-    "blue": 0.7247025562492637,
-    "grey": 0.002473789610083638,
-    "gold": 0.14925197314171282,
-    "green": 0.000039266501747359325
-   }
-  }
- },
- {
-  "id": "miasta-742",
-  "colors": {
-   "hasTransparent": true,
-   "colorsByNames": {
-    "transparent": 0.3271604938271605,
-    "black": 0.1123394495412844,
-    "blue": 0.5455963302752294,
-    "grey": 0.0016972477064220184,
-    "gold": 0.0076146788990825685,
-    "green": 0.2171559633027523
-   }
-  }
- },
- {
-  "id": "miasta-743",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15671,7 +15543,7 @@
   }
  },
  {
-  "id": "miasta-744",
+  "id": "miasta-739",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15690,7 +15562,7 @@
   }
  },
  {
-  "id": "miasta-745",
+  "id": "miasta-740",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15704,7 +15576,7 @@
   }
  },
  {
-  "id": "miasta-746",
+  "id": "miasta-741",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15723,7 +15595,7 @@
   }
  },
  {
-  "id": "miasta-747",
+  "id": "miasta-742",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15741,7 +15613,7 @@
   }
  },
  {
-  "id": "miasta-748",
+  "id": "miasta-743",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15766,7 +15638,7 @@
   }
  },
  {
-  "id": "miasta-749",
+  "id": "miasta-744",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15786,7 +15658,7 @@
   }
  },
  {
-  "id": "miasta-750",
+  "id": "miasta-745",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15809,7 +15681,7 @@
   }
  },
  {
-  "id": "miasta-751",
+  "id": "miasta-746",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15828,7 +15700,7 @@
   }
  },
  {
-  "id": "miasta-752",
+  "id": "miasta-747",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15849,7 +15721,7 @@
   }
  },
  {
-  "id": "miasta-753",
+  "id": "miasta-748",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15867,7 +15739,7 @@
   }
  },
  {
-  "id": "miasta-754",
+  "id": "miasta-749",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15890,7 +15762,7 @@
   }
  },
  {
-  "id": "miasta-755",
+  "id": "miasta-750",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15907,7 +15779,7 @@
   }
  },
  {
-  "id": "miasta-756",
+  "id": "miasta-751",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15926,7 +15798,7 @@
   }
  },
  {
-  "id": "miasta-757",
+  "id": "miasta-752",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15938,7 +15810,7 @@
   }
  },
  {
-  "id": "miasta-758",
+  "id": "miasta-753",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15962,7 +15834,7 @@
   }
  },
  {
-  "id": "miasta-759",
+  "id": "miasta-754",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -15987,7 +15859,7 @@
   }
  },
  {
-  "id": "miasta-760",
+  "id": "miasta-755",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16007,7 +15879,7 @@
   }
  },
  {
-  "id": "miasta-761",
+  "id": "miasta-756",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16027,7 +15899,7 @@
   }
  },
  {
-  "id": "miasta-762",
+  "id": "miasta-757",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16047,7 +15919,7 @@
   }
  },
  {
-  "id": "miasta-763",
+  "id": "miasta-758",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16065,7 +15937,7 @@
   }
  },
  {
-  "id": "miasta-764",
+  "id": "miasta-759",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16085,7 +15957,7 @@
   }
  },
  {
-  "id": "miasta-765",
+  "id": "miasta-760",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16109,7 +15981,7 @@
   }
  },
  {
-  "id": "miasta-766",
+  "id": "miasta-761",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16132,7 +16004,7 @@
   }
  },
  {
-  "id": "miasta-767",
+  "id": "miasta-762",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16151,7 +16023,7 @@
   }
  },
  {
-  "id": "miasta-768",
+  "id": "miasta-763",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16170,7 +16042,7 @@
   }
  },
  {
-  "id": "miasta-769",
+  "id": "miasta-764",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16194,7 +16066,7 @@
   }
  },
  {
-  "id": "miasta-770",
+  "id": "miasta-765",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16219,7 +16091,7 @@
   }
  },
  {
-  "id": "miasta-771",
+  "id": "miasta-766",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16240,7 +16112,7 @@
   }
  },
  {
-  "id": "miasta-772",
+  "id": "miasta-767",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16263,7 +16135,7 @@
   }
  },
  {
-  "id": "miasta-773",
+  "id": "miasta-768",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16288,7 +16160,7 @@
   }
  },
  {
-  "id": "miasta-774",
+  "id": "miasta-769",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16311,7 +16183,7 @@
   }
  },
  {
-  "id": "miasta-775",
+  "id": "miasta-770",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16332,7 +16204,7 @@
   }
  },
  {
-  "id": "miasta-776",
+  "id": "miasta-771",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16351,7 +16223,7 @@
   }
  },
  {
-  "id": "miasta-777",
+  "id": "miasta-772",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16373,7 +16245,7 @@
   }
  },
  {
-  "id": "miasta-778",
+  "id": "miasta-773",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16393,7 +16265,7 @@
   }
  },
  {
-  "id": "miasta-779",
+  "id": "miasta-774",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16419,7 +16291,7 @@
   }
  },
  {
-  "id": "miasta-780",
+  "id": "miasta-775",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16439,7 +16311,7 @@
   }
  },
  {
-  "id": "miasta-781",
+  "id": "miasta-776",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16460,7 +16332,7 @@
   }
  },
  {
-  "id": "miasta-782",
+  "id": "miasta-777",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16479,7 +16351,31 @@
   }
  },
  {
-  "id": "miasta-783",
+  "id": "miasta-778",
+  "colors": {
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.12777777777777777,
+    "black": 0.03708421797593772,
+    "red": 0.18011323425336165,
+    "gold": 0.033722576079263974,
+    "grey": 0.04469214437367303,
+    "white": 0.6389596602972399
+   }
+  },
+  "markers": {
+   "animals": [
+    "eagle",
+    "deer",
+    "bird"
+   ],
+   "items": [
+    "saint"
+   ]
+  }
+ },
+ {
+  "id": "miasta-779",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16494,7 +16390,7 @@
   }
  },
  {
-  "id": "miasta-784",
+  "id": "miasta-780",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16514,7 +16410,7 @@
   }
  },
  {
-  "id": "miasta-785",
+  "id": "miasta-781",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16537,7 +16433,7 @@
   }
  },
  {
-  "id": "miasta-786",
+  "id": "miasta-782",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16558,7 +16454,7 @@
   }
  },
  {
-  "id": "miasta-787",
+  "id": "miasta-783",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16578,7 +16474,7 @@
   }
  },
  {
-  "id": "miasta-788",
+  "id": "miasta-784",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16601,7 +16497,7 @@
   }
  },
  {
-  "id": "miasta-789",
+  "id": "miasta-785",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16621,7 +16517,7 @@
   }
  },
  {
-  "id": "miasta-790",
+  "id": "miasta-786",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16641,7 +16537,7 @@
   }
  },
  {
-  "id": "miasta-791",
+  "id": "miasta-787",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16667,7 +16563,7 @@
   }
  },
  {
-  "id": "miasta-792",
+  "id": "miasta-788",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16692,7 +16588,7 @@
   }
  },
  {
-  "id": "miasta-793",
+  "id": "miasta-789",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16716,7 +16612,7 @@
   }
  },
  {
-  "id": "miasta-794",
+  "id": "miasta-790",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16736,7 +16632,7 @@
   }
  },
  {
-  "id": "miasta-795",
+  "id": "miasta-791",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16753,7 +16649,7 @@
   }
  },
  {
-  "id": "miasta-796",
+  "id": "miasta-792",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16774,7 +16670,7 @@
   }
  },
  {
-  "id": "miasta-797",
+  "id": "miasta-793",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16794,7 +16690,7 @@
   }
  },
  {
-  "id": "miasta-798",
+  "id": "miasta-794",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16816,7 +16712,7 @@
   }
  },
  {
-  "id": "miasta-799",
+  "id": "miasta-795",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16845,7 +16741,7 @@
   }
  },
  {
-  "id": "miasta-800",
+  "id": "miasta-796",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16870,7 +16766,7 @@
   }
  },
  {
-  "id": "miasta-801",
+  "id": "miasta-797",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16893,7 +16789,7 @@
   }
  },
  {
-  "id": "miasta-802",
+  "id": "miasta-798",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16913,7 +16809,7 @@
   }
  },
  {
-  "id": "miasta-803",
+  "id": "miasta-799",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16937,7 +16833,7 @@
   }
  },
  {
-  "id": "miasta-804",
+  "id": "miasta-800",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16959,7 +16855,7 @@
   }
  },
  {
-  "id": "miasta-805",
+  "id": "miasta-801",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16978,7 +16874,7 @@
   }
  },
  {
-  "id": "miasta-806",
+  "id": "miasta-802",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -16999,7 +16895,7 @@
   }
  },
  {
-  "id": "miasta-807",
+  "id": "miasta-803",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17027,7 +16923,7 @@
   }
  },
  {
-  "id": "miasta-808",
+  "id": "miasta-804",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17050,7 +16946,7 @@
   }
  },
  {
-  "id": "miasta-809",
+  "id": "miasta-805",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17075,7 +16971,7 @@
   }
  },
  {
-  "id": "miasta-810",
+  "id": "miasta-806",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17098,7 +16994,7 @@
   }
  },
  {
-  "id": "miasta-811",
+  "id": "miasta-807",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17123,7 +17019,7 @@
   }
  },
  {
-  "id": "miasta-812",
+  "id": "miasta-808",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17145,7 +17041,7 @@
   }
  },
  {
-  "id": "miasta-813",
+  "id": "miasta-809",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17164,7 +17060,7 @@
   }
  },
  {
-  "id": "miasta-814",
+  "id": "miasta-810",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17187,7 +17083,7 @@
   }
  },
  {
-  "id": "miasta-815",
+  "id": "miasta-811",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17211,7 +17107,7 @@
   }
  },
  {
-  "id": "miasta-816",
+  "id": "miasta-812",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17233,7 +17129,7 @@
   }
  },
  {
-  "id": "miasta-817",
+  "id": "miasta-813",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17253,7 +17149,7 @@
   }
  },
  {
-  "id": "miasta-818",
+  "id": "miasta-814",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17270,7 +17166,7 @@
   }
  },
  {
-  "id": "miasta-819",
+  "id": "miasta-815",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17290,7 +17186,7 @@
   }
  },
  {
-  "id": "miasta-820",
+  "id": "miasta-816",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17314,7 +17210,7 @@
   }
  },
  {
-  "id": "miasta-821",
+  "id": "miasta-817",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17332,7 +17228,7 @@
   }
  },
  {
-  "id": "miasta-822",
+  "id": "miasta-818",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17358,7 +17254,7 @@
   }
  },
  {
-  "id": "miasta-823",
+  "id": "miasta-819",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17382,7 +17278,7 @@
   }
  },
  {
-  "id": "miasta-824",
+  "id": "miasta-820",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17406,7 +17302,7 @@
   }
  },
  {
-  "id": "miasta-825",
+  "id": "miasta-821",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17430,7 +17326,7 @@
   }
  },
  {
-  "id": "miasta-826",
+  "id": "miasta-822",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17451,7 +17347,7 @@
   }
  },
  {
-  "id": "miasta-827",
+  "id": "miasta-823",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17472,7 +17368,7 @@
   }
  },
  {
-  "id": "miasta-828",
+  "id": "miasta-824",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17498,7 +17394,7 @@
   }
  },
  {
-  "id": "miasta-829",
+  "id": "miasta-825",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17522,7 +17418,7 @@
   }
  },
  {
-  "id": "miasta-830",
+  "id": "miasta-826",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17546,7 +17442,7 @@
   }
  },
  {
-  "id": "miasta-831",
+  "id": "miasta-827",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17569,7 +17465,7 @@
   }
  },
  {
-  "id": "miasta-832",
+  "id": "miasta-828",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17589,7 +17485,7 @@
   }
  },
  {
-  "id": "miasta-833",
+  "id": "miasta-829",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17608,7 +17504,7 @@
   }
  },
  {
-  "id": "miasta-834",
+  "id": "miasta-830",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17631,7 +17527,7 @@
   }
  },
  {
-  "id": "miasta-835",
+  "id": "miasta-831",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17651,7 +17547,7 @@
   }
  },
  {
-  "id": "miasta-836",
+  "id": "miasta-832",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17677,7 +17573,7 @@
   }
  },
  {
-  "id": "miasta-837",
+  "id": "miasta-833",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17699,7 +17595,7 @@
   }
  },
  {
-  "id": "miasta-838",
+  "id": "miasta-834",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17722,7 +17618,7 @@
   }
  },
  {
-  "id": "miasta-839",
+  "id": "miasta-835",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17747,7 +17643,7 @@
   }
  },
  {
-  "id": "miasta-840",
+  "id": "miasta-836",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17766,7 +17662,7 @@
   }
  },
  {
-  "id": "miasta-841",
+  "id": "miasta-837",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17790,7 +17686,7 @@
   }
  },
  {
-  "id": "miasta-842",
+  "id": "miasta-838",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17813,7 +17709,7 @@
   }
  },
  {
-  "id": "miasta-843",
+  "id": "miasta-839",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17828,7 +17724,7 @@
   }
  },
  {
-  "id": "miasta-844",
+  "id": "miasta-840",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17849,7 +17745,7 @@
   }
  },
  {
-  "id": "miasta-845",
+  "id": "miasta-841",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17874,7 +17770,31 @@
   }
  },
  {
-  "id": "miasta-846",
+  "id": "miasta-842",
+  "colors": {
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.19996913580246914,
+    "black": 0.08630068284402607,
+    "red": 0.5297249334516415,
+    "grey": 0.051348327610817486,
+    "gold": 0.07353111376875893,
+    "white": 0.1401952085181899,
+    "blue": 0.00007715751707110065
+   }
+  },
+  "markers": {
+   "animals": [
+    "eagle",
+    "bird"
+   ],
+   "items": [
+    "key"
+   ]
+  }
+ },
+ {
+  "id": "miasta-843",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17894,7 +17814,7 @@
   }
  },
  {
-  "id": "miasta-847",
+  "id": "miasta-844",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17912,7 +17832,7 @@
   }
  },
  {
-  "id": "miasta-848",
+  "id": "miasta-845",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17932,7 +17852,7 @@
   }
  },
  {
-  "id": "miasta-849",
+  "id": "miasta-846",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17952,7 +17872,7 @@
   }
  },
  {
-  "id": "miasta-850",
+  "id": "miasta-847",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17973,7 +17893,7 @@
   }
  },
  {
-  "id": "miasta-851",
+  "id": "miasta-848",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -17997,7 +17917,7 @@
   }
  },
  {
-  "id": "miasta-852",
+  "id": "miasta-849",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18016,7 +17936,7 @@
   }
  },
  {
-  "id": "miasta-853",
+  "id": "miasta-850",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18037,7 +17957,7 @@
   }
  },
  {
-  "id": "miasta-854",
+  "id": "miasta-851",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18055,7 +17975,7 @@
   }
  },
  {
-  "id": "miasta-855",
+  "id": "miasta-852",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18079,7 +17999,7 @@
   }
  },
  {
-  "id": "miasta-856",
+  "id": "miasta-853",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18104,7 +18024,7 @@
   }
  },
  {
-  "id": "miasta-857",
+  "id": "miasta-854",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18124,7 +18044,7 @@
   }
  },
  {
-  "id": "miasta-858",
+  "id": "miasta-855",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18143,7 +18063,7 @@
   }
  },
  {
-  "id": "miasta-859",
+  "id": "miasta-856",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18164,7 +18084,7 @@
   }
  },
  {
-  "id": "miasta-860",
+  "id": "miasta-857",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18180,7 +18100,7 @@
   }
  },
  {
-  "id": "miasta-861",
+  "id": "miasta-858",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18203,31 +18123,7 @@
   }
  },
  {
-  "id": "miasta-862",
-  "colors": {
-   "hasTransparent": true,
-   "colorsByNames": {
-    "transparent": 0.19996913580246914,
-    "black": 0.08630068284402607,
-    "red": 0.5297249334516415,
-    "grey": 0.051348327610817486,
-    "gold": 0.07353111376875893,
-    "white": 0.1401952085181899,
-    "blue": 0.00007715751707110065
-   }
-  },
-  "markers": {
-   "animals": [
-    "eagle",
-    "bird"
-   ],
-   "items": [
-    "key"
-   ]
-  }
- },
- {
-  "id": "miasta-863",
+  "id": "miasta-859",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18238,7 +18134,7 @@
   }
  },
  {
-  "id": "miasta-864",
+  "id": "miasta-860",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18257,7 +18153,7 @@
   }
  },
  {
-  "id": "miasta-865",
+  "id": "miasta-861",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18276,7 +18172,7 @@
   }
  },
  {
-  "id": "miasta-866",
+  "id": "miasta-862",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18294,7 +18190,7 @@
   }
  },
  {
-  "id": "miasta-867",
+  "id": "miasta-863",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18313,7 +18209,7 @@
   }
  },
  {
-  "id": "miasta-868",
+  "id": "miasta-864",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18336,7 +18232,7 @@
   }
  },
  {
-  "id": "miasta-869",
+  "id": "miasta-865",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18361,7 +18257,7 @@
   }
  },
  {
-  "id": "miasta-870",
+  "id": "miasta-866",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18384,7 +18280,7 @@
   }
  },
  {
-  "id": "miasta-871",
+  "id": "miasta-867",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18408,7 +18304,7 @@
   }
  },
  {
-  "id": "miasta-872",
+  "id": "miasta-868",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18428,7 +18324,7 @@
   }
  },
  {
-  "id": "miasta-873",
+  "id": "miasta-869",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18450,7 +18346,7 @@
   }
  },
  {
-  "id": "miasta-874",
+  "id": "miasta-870",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18469,7 +18365,7 @@
   }
  },
  {
-  "id": "miasta-875",
+  "id": "miasta-871",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18490,7 +18386,7 @@
   }
  },
  {
-  "id": "miasta-876",
+  "id": "miasta-872",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18509,7 +18405,7 @@
   }
  },
  {
-  "id": "miasta-877",
+  "id": "miasta-873",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18529,7 +18425,7 @@
   }
  },
  {
-  "id": "miasta-878",
+  "id": "miasta-874",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18549,7 +18445,7 @@
   }
  },
  {
-  "id": "miasta-879",
+  "id": "miasta-875",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18573,7 +18469,7 @@
   }
  },
  {
-  "id": "miasta-880",
+  "id": "miasta-876",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18595,7 +18491,7 @@
   }
  },
  {
-  "id": "miasta-881",
+  "id": "miasta-877",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18614,7 +18510,7 @@
   }
  },
  {
-  "id": "miasta-882",
+  "id": "miasta-878",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18636,7 +18532,7 @@
   }
  },
  {
-  "id": "miasta-883",
+  "id": "miasta-879",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18658,7 +18554,7 @@
   }
  },
  {
-  "id": "miasta-884",
+  "id": "miasta-880",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18679,7 +18575,7 @@
   }
  },
  {
-  "id": "miasta-885",
+  "id": "miasta-881",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18699,7 +18595,7 @@
   }
  },
  {
-  "id": "miasta-886",
+  "id": "miasta-882",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18719,7 +18615,7 @@
   }
  },
  {
-  "id": "miasta-887",
+  "id": "miasta-883",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18744,7 +18640,7 @@
   }
  },
  {
-  "id": "miasta-888",
+  "id": "miasta-884",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18765,7 +18661,7 @@
   }
  },
  {
-  "id": "miasta-889",
+  "id": "miasta-885",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18784,7 +18680,7 @@
   }
  },
  {
-  "id": "miasta-890",
+  "id": "miasta-886",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18802,7 +18698,7 @@
   }
  },
  {
-  "id": "miasta-891",
+  "id": "miasta-887",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18827,7 +18723,7 @@
   }
  },
  {
-  "id": "miasta-892",
+  "id": "miasta-888",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18858,7 +18754,7 @@
   }
  },
  {
-  "id": "miasta-893",
+  "id": "miasta-889",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18879,7 +18775,7 @@
   }
  },
  {
-  "id": "miasta-894",
+  "id": "miasta-890",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18906,7 +18802,7 @@
   }
  },
  {
-  "id": "miasta-895",
+  "id": "miasta-891",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18928,7 +18824,7 @@
   }
  },
  {
-  "id": "miasta-896",
+  "id": "miasta-892",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18949,7 +18845,7 @@
   }
  },
  {
-  "id": "miasta-897",
+  "id": "miasta-893",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18969,7 +18865,7 @@
   }
  },
  {
-  "id": "miasta-898",
+  "id": "miasta-894",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -18994,7 +18890,7 @@
   }
  },
  {
-  "id": "miasta-899",
+  "id": "miasta-895",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19016,7 +18912,7 @@
   }
  },
  {
-  "id": "miasta-900",
+  "id": "miasta-896",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19035,7 +18931,7 @@
   }
  },
  {
-  "id": "miasta-901",
+  "id": "miasta-897",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19055,7 +18951,7 @@
   }
  },
  {
-  "id": "miasta-902",
+  "id": "miasta-898",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19073,7 +18969,7 @@
   }
  },
  {
-  "id": "miasta-903",
+  "id": "miasta-899",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19098,7 +18994,7 @@
   }
  },
  {
-  "id": "miasta-904",
+  "id": "miasta-900",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19122,7 +19018,7 @@
   }
  },
  {
-  "id": "miasta-905",
+  "id": "miasta-901",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19142,7 +19038,7 @@
   }
  },
  {
-  "id": "miasta-906",
+  "id": "miasta-902",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19163,7 +19059,7 @@
   }
  },
  {
-  "id": "miasta-907",
+  "id": "miasta-903",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19184,7 +19080,7 @@
   }
  },
  {
-  "id": "miasta-908",
+  "id": "miasta-904",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19205,7 +19101,7 @@
   }
  },
  {
-  "id": "miasta-909",
+  "id": "miasta-905",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19223,7 +19119,7 @@
   }
  },
  {
-  "id": "miasta-910",
+  "id": "miasta-906",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19243,7 +19139,7 @@
   }
  },
  {
-  "id": "miasta-911",
+  "id": "miasta-907",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19264,7 +19160,7 @@
   }
  },
  {
-  "id": "miasta-912",
+  "id": "miasta-908",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19288,7 +19184,7 @@
   }
  },
  {
-  "id": "miasta-913",
+  "id": "miasta-909",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19312,7 +19208,7 @@
   }
  },
  {
-  "id": "miasta-914",
+  "id": "miasta-910",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19332,7 +19228,7 @@
   }
  },
  {
-  "id": "miasta-915",
+  "id": "miasta-911",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19353,7 +19249,7 @@
   }
  },
  {
-  "id": "miasta-916",
+  "id": "miasta-912",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19378,7 +19274,7 @@
   }
  },
  {
-  "id": "miasta-917",
+  "id": "miasta-913",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19400,7 +19296,7 @@
   }
  },
  {
-  "id": "miasta-918",
+  "id": "miasta-914",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19421,7 +19317,7 @@
   }
  },
  {
-  "id": "miasta-919",
+  "id": "miasta-915",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19451,7 +19347,7 @@
   }
  },
  {
-  "id": "miasta-920",
+  "id": "miasta-916",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19472,7 +19368,7 @@
   }
  },
  {
-  "id": "miasta-921",
+  "id": "miasta-917",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19495,7 +19391,7 @@
   }
  },
  {
-  "id": "miasta-922",
+  "id": "miasta-918",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19518,7 +19414,7 @@
   }
  },
  {
-  "id": "miasta-923",
+  "id": "miasta-919",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19538,7 +19434,7 @@
   }
  },
  {
-  "id": "miasta-924",
+  "id": "miasta-920",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19558,7 +19454,7 @@
   }
  },
  {
-  "id": "miasta-925",
+  "id": "miasta-921",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19576,7 +19472,7 @@
   }
  },
  {
-  "id": "miasta-926",
+  "id": "miasta-922",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19601,7 +19497,7 @@
   }
  },
  {
-  "id": "miasta-927",
+  "id": "miasta-923",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19625,7 +19521,7 @@
   }
  },
  {
-  "id": "miasta-928",
+  "id": "miasta-924",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19644,7 +19540,7 @@
   }
  },
  {
-  "id": "miasta-929",
+  "id": "miasta-925",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19668,7 +19564,7 @@
   }
  },
  {
-  "id": "miasta-930",
+  "id": "miasta-926",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19687,7 +19583,7 @@
   }
  },
  {
-  "id": "miasta-931",
+  "id": "miasta-927",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19708,7 +19604,7 @@
   }
  },
  {
-  "id": "miasta-932",
+  "id": "miasta-928",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19726,7 +19622,7 @@
   }
  },
  {
-  "id": "miasta-933",
+  "id": "miasta-929",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19743,7 +19639,7 @@
   }
  },
  {
-  "id": "miasta-934",
+  "id": "miasta-930",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19770,7 +19666,7 @@
   }
  },
  {
-  "id": "miasta-935",
+  "id": "miasta-931",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19795,7 +19691,7 @@
   }
  },
  {
-  "id": "miasta-936",
+  "id": "miasta-932",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19814,7 +19710,7 @@
   }
  },
  {
-  "id": "miasta-937",
+  "id": "miasta-933",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19835,7 +19731,7 @@
   }
  },
  {
-  "id": "miasta-938",
+  "id": "miasta-934",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19859,7 +19755,7 @@
   }
  },
  {
-  "id": "miasta-939",
+  "id": "miasta-935",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19880,7 +19776,7 @@
   }
  },
  {
-  "id": "miasta-940",
+  "id": "miasta-936",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19899,7 +19795,7 @@
   }
  },
  {
-  "id": "miasta-941",
+  "id": "miasta-937",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19921,7 +19817,7 @@
   }
  },
  {
-  "id": "miasta-942",
+  "id": "miasta-938",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19941,7 +19837,7 @@
   }
  },
  {
-  "id": "miasta-943",
+  "id": "miasta-939",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19966,7 +19862,7 @@
   }
  },
  {
-  "id": "miasta-944",
+  "id": "miasta-940",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -19990,7 +19886,7 @@
   }
  },
  {
-  "id": "miasta-945",
+  "id": "miasta-941",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20010,7 +19906,7 @@
   }
  },
  {
-  "id": "miasta-946",
+  "id": "miasta-942",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20036,7 +19932,7 @@
   }
  },
  {
-  "id": "miasta-947",
+  "id": "miasta-943",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20055,7 +19951,7 @@
   }
  },
  {
-  "id": "miasta-948",
+  "id": "miasta-944",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20074,7 +19970,7 @@
   }
  },
  {
-  "id": "miasta-949",
+  "id": "miasta-945",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20096,7 +19992,7 @@
   }
  },
  {
-  "id": "miasta-950",
+  "id": "miasta-946",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20116,7 +20012,7 @@
   }
  },
  {
-  "id": "miasta-951",
+  "id": "miasta-947",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20137,7 +20033,7 @@
   }
  },
  {
-  "id": "miasta-952",
+  "id": "miasta-948",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20152,7 +20048,7 @@
   }
  },
  {
-  "id": "miasta-953",
+  "id": "miasta-949",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20175,7 +20071,7 @@
   }
  },
  {
-  "id": "miasta-954",
+  "id": "miasta-950",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20192,7 +20088,7 @@
   }
  },
  {
-  "id": "miasta-955",
+  "id": "miasta-951",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20214,7 +20110,7 @@
   }
  },
  {
-  "id": "miasta-956",
+  "id": "miasta-952",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20239,7 +20135,7 @@
   }
  },
  {
-  "id": "miasta-957",
+  "id": "miasta-953",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20258,7 +20154,7 @@
   }
  },
  {
-  "id": "miasta-958",
+  "id": "miasta-954",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20281,7 +20177,33 @@
   }
  },
  {
-  "id": "miasta-959",
+  "id": "miasta-955",
+  "colors": {
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.15,
+    "black": 0.009658678286129267,
+    "grey": 0.07912127814088599,
+    "white": 0.6540305010893246,
+    "blue": 0.0013798111837327524,
+    "gold": 0.010421205519244735,
+    "green": 0.018627450980392157,
+    "red": 0.15773420479302833
+   }
+  },
+  "markers": {
+   "animals": [
+    "lion"
+   ],
+   "items": [
+    "heart",
+    "tree",
+    "crown"
+   ]
+  }
+ },
+ {
+  "id": "miasta-956",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20300,7 +20222,7 @@
   }
  },
  {
-  "id": "miasta-960",
+  "id": "miasta-957",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20320,7 +20242,7 @@
   }
  },
  {
-  "id": "miasta-961",
+  "id": "miasta-958",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20343,7 +20265,7 @@
   }
  },
  {
-  "id": "miasta-962",
+  "id": "miasta-959",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20360,7 +20282,7 @@
   }
  },
  {
-  "id": "miasta-963",
+  "id": "miasta-960",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20380,7 +20302,7 @@
   }
  },
  {
-  "id": "miasta-964",
+  "id": "miasta-961",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20406,7 +20328,7 @@
   }
  },
  {
-  "id": "miasta-965",
+  "id": "miasta-962",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20428,7 +20350,7 @@
   }
  },
  {
-  "id": "miasta-966",
+  "id": "miasta-963",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20451,7 +20373,7 @@
   }
  },
  {
-  "id": "miasta-967",
+  "id": "miasta-964",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20474,7 +20396,7 @@
   }
  },
  {
-  "id": "miasta-968",
+  "id": "miasta-965",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20488,7 +20410,7 @@
   }
  },
  {
-  "id": "miasta-969",
+  "id": "miasta-966",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20513,7 +20435,7 @@
   }
  },
  {
-  "id": "miasta-970",
+  "id": "miasta-967",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20536,7 +20458,7 @@
   }
  },
  {
-  "id": "miasta-971",
+  "id": "miasta-968",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20555,7 +20477,7 @@
   }
  },
  {
-  "id": "miasta-972",
+  "id": "miasta-969",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20576,7 +20498,7 @@
   }
  },
  {
-  "id": "miasta-973",
+  "id": "miasta-970",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20600,7 +20522,7 @@
   }
  },
  {
-  "id": "miasta-974",
+  "id": "miasta-971",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20621,7 +20543,7 @@
   }
  },
  {
-  "id": "miasta-975",
+  "id": "miasta-972",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20645,7 +20567,7 @@
   }
  },
  {
-  "id": "miasta-976",
+  "id": "miasta-973",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20669,7 +20591,7 @@
   }
  },
  {
-  "id": "miasta-977",
+  "id": "miasta-974",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20695,7 +20617,7 @@
   }
  },
  {
-  "id": "miasta-978",
+  "id": "miasta-975",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20717,7 +20639,7 @@
   }
  },
  {
-  "id": "miasta-979",
+  "id": "miasta-976",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20740,7 +20662,7 @@
   }
  },
  {
-  "id": "miasta-980",
+  "id": "miasta-977",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20760,7 +20682,7 @@
   }
  },
  {
-  "id": "miasta-981",
+  "id": "miasta-978",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20780,7 +20702,7 @@
   }
  },
  {
-  "id": "miasta-982",
+  "id": "miasta-979",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20804,7 +20726,7 @@
   }
  },
  {
-  "id": "miasta-983",
+  "id": "miasta-980",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20824,7 +20746,7 @@
   }
  },
  {
-  "id": "miasta-984",
+  "id": "miasta-981",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20842,7 +20764,7 @@
   }
  },
  {
-  "id": "miasta-985",
+  "id": "miasta-982",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20866,7 +20788,7 @@
   }
  },
  {
-  "id": "miasta-986",
+  "id": "miasta-983",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20890,7 +20812,7 @@
   }
  },
  {
-  "id": "miasta-987",
+  "id": "miasta-984",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20911,7 +20833,7 @@
   }
  },
  {
-  "id": "miasta-988",
+  "id": "miasta-985",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20934,7 +20856,7 @@
   }
  },
  {
-  "id": "miasta-989",
+  "id": "miasta-986",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20956,7 +20878,7 @@
   }
  },
  {
-  "id": "miasta-990",
+  "id": "miasta-987",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -20977,7 +20899,7 @@
   }
  },
  {
-  "id": "miasta-991",
+  "id": "miasta-988",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21002,7 +20924,7 @@
   }
  },
  {
-  "id": "miasta-992",
+  "id": "miasta-989",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21029,7 +20951,7 @@
   }
  },
  {
-  "id": "miasta-993",
+  "id": "miasta-990",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21051,7 +20973,7 @@
   }
  },
  {
-  "id": "miasta-994",
+  "id": "miasta-991",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21073,7 +20995,7 @@
   }
  },
  {
-  "id": "miasta-995",
+  "id": "miasta-992",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21098,7 +21020,7 @@
   }
  },
  {
-  "id": "miasta-996",
+  "id": "miasta-993",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21113,7 +21035,7 @@
   }
  },
  {
-  "id": "miasta-997",
+  "id": "miasta-994",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21135,7 +21057,7 @@
   }
  },
  {
-  "id": "miasta-998",
+  "id": "miasta-995",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21151,7 +21073,7 @@
   }
  },
  {
-  "id": "miasta-999",
+  "id": "miasta-996",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21175,7 +21097,7 @@
   }
  },
  {
-  "id": "miasta-1000",
+  "id": "miasta-997",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21200,7 +21122,7 @@
   }
  },
  {
-  "id": "miasta-1001",
+  "id": "miasta-998",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21224,7 +21146,7 @@
   }
  },
  {
-  "id": "miasta-1002",
+  "id": "miasta-999",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21250,7 +21172,7 @@
   }
  },
  {
-  "id": "miasta-1003",
+  "id": "miasta-1000",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21276,7 +21198,7 @@
   }
  },
  {
-  "id": "miasta-1004",
+  "id": "miasta-1001",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21300,7 +21222,7 @@
   }
  },
  {
-  "id": "miasta-1005",
+  "id": "miasta-1002",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21320,7 +21242,7 @@
   }
  },
  {
-  "id": "miasta-1006",
+  "id": "miasta-1003",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21339,7 +21261,7 @@
   }
  },
  {
-  "id": "miasta-1007",
+  "id": "miasta-1004",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21360,7 +21282,7 @@
   }
  },
  {
-  "id": "miasta-1008",
+  "id": "miasta-1005",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21382,7 +21304,7 @@
   }
  },
  {
-  "id": "miasta-1009",
+  "id": "miasta-1006",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21407,7 +21329,7 @@
   }
  },
  {
-  "id": "miasta-1010",
+  "id": "miasta-1007",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21430,7 +21352,7 @@
   }
  },
  {
-  "id": "miasta-1011",
+  "id": "miasta-1008",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21449,7 +21371,7 @@
   }
  },
  {
-  "id": "miasta-1012",
+  "id": "miasta-1009",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21474,7 +21396,7 @@
   }
  },
  {
-  "id": "miasta-1013",
+  "id": "miasta-1010",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21495,7 +21417,7 @@
   }
  },
  {
-  "id": "miasta-1014",
+  "id": "miasta-1011",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21518,7 +21440,7 @@
   }
  },
  {
-  "id": "miasta-1015",
+  "id": "miasta-1012",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21538,7 +21460,7 @@
   }
  },
  {
-  "id": "miasta-1016",
+  "id": "miasta-1013",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21558,7 +21480,7 @@
   }
  },
  {
-  "id": "miasta-1017",
+  "id": "miasta-1014",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21581,7 +21503,7 @@
   }
  },
  {
-  "id": "miasta-1018",
+  "id": "miasta-1015",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21602,7 +21524,7 @@
   }
  },
  {
-  "id": "miasta-1019",
+  "id": "miasta-1016",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21624,7 +21546,7 @@
   }
  },
  {
-  "id": "miasta-1020",
+  "id": "miasta-1017",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21645,7 +21567,7 @@
   }
  },
  {
-  "id": "miasta-1021",
+  "id": "miasta-1018",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21670,7 +21592,7 @@
   }
  },
  {
-  "id": "miasta-1022",
+  "id": "miasta-1019",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21695,7 +21617,7 @@
   }
  },
  {
-  "id": "miasta-1023",
+  "id": "miasta-1020",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21711,7 +21633,7 @@
   }
  },
  {
-  "id": "miasta-1024",
+  "id": "miasta-1021",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21736,7 +21658,7 @@
   }
  },
  {
-  "id": "miasta-1025",
+  "id": "miasta-1022",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21758,7 +21680,7 @@
   }
  },
  {
-  "id": "miasta-1026",
+  "id": "miasta-1023",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21777,7 +21699,7 @@
   }
  },
  {
-  "id": "miasta-1027",
+  "id": "miasta-1024",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
@@ -21803,7 +21725,7 @@
   }
  },
  {
-  "id": "miasta-1028",
+  "id": "miasta-1025",
   "colors": {
    "hasTransparent": true,
    "colorsByNames": {
