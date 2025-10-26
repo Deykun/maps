@@ -4,7 +4,7 @@ import getPixels from "get-pixels";
 import sharp from "sharp";
 import { getColorsNames } from "./colors/get-colors-names";
 
-export const getNewImageColors = async (imagePath: string): ImageColors => {
+export const getNewImageColors = async (imagePath: string): Promise<ImageColors> => {
   const { data, info } = await sharp(imagePath)
     .raw()
     .toBuffer({ resolveWithObject: true });
@@ -49,13 +49,6 @@ export const getNewImageColors = async (imagePath: string): ImageColors => {
       }
     )
   );
-
-  console.log(imagePath);
-  console.log(colorsByNamesAsPercentages);
-
-  // getPixels(imagePath, (error, pixels) => {
-  //   const data = [...pixels.data];
-  //   const [width, height] = pixels.shape;
 
   return {
     hasTransparent: (imageColorsByNames.transparent || 0) > 0,

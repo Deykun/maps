@@ -120,17 +120,18 @@ export const getFilteredUnits = ({
       if (isColorFilterActive) {
         const unitColors = detailsForUnitsById?.[unit.id]?.colors;
 
-        if (Object.keys(unitColors?.byNames || {}).length === 0) {
+        if (Object.keys(unitColors?.colorsByNames || {}).length === 0) {
           return filterResponse.notMatches;
         }
         
-        if (filterOperator === 'or' && !Object.keys(unitColors?.byNames || {}).some((name) => colorFilters.includes(name))) {
+        if (filterOperator === 'or' && colorFilters.every((active) => (unitColors?.colorsByNames[active] || 0) <= 0.03)) {
           return filterResponse.notMatches;
         }
 
-        if (filterOperator === 'and' && !colorFilters.every((active) => Object.keys(unitColors?.byNames || {}).some(( name ) => name === active))) {
+        if (filterOperator === 'and' && colorFilters.some((active) => (unitColors?.colorsByNames[active] || 0) <= 0.03)) {
           return filterResponse.notMatches;
         }
+
       }
 
       if (isAnimalFilterActive) {

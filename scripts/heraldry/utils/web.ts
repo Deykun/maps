@@ -159,7 +159,7 @@ export const getSprites = async ({ mapJSON, type, country }) => {
 
   console.log(
     `${type}: ${chalk.gray(
-      "temporary files removed (you can unncomment next line to keep it)."
+      "temporary files removed (you can uncomment next line to keep it)."
     )}`
   );
   fsExtra.emptyDirSync(`./public/images/heraldry/${country}/web/temp/${type}`);

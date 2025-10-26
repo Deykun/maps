@@ -160,16 +160,16 @@ export const fetchImages = async ({
   const getTimeStatus = () => {
     const progressPercent = (global.processed[path] / total) * 100;
     const now = new Date().getTime();
-    const timeDiffrenceInSeconds = Math.floor((now - start) / 1000);
-    const timePerPercentage = timeDiffrenceInSeconds / progressPercent;
+    const timeDifferenceInSeconds = Math.floor((now - start) / 1000);
+    const timePerPercentage = timeDifferenceInSeconds / progressPercent;
     const expectedTimeInSeconds = Math.floor(timePerPercentage * 100);
     const timeLeftSeconds = Math.floor(
-      expectedTimeInSeconds - timeDiffrenceInSeconds
+      expectedTimeInSeconds - timeDifferenceInSeconds
     );
     const timeLeftMinutes = Math.floor(timeLeftSeconds / 60);
     const timeLeftSecondsToShow = timeLeftSeconds - timeLeftMinutes * 60;
     const timeStatus =
-      timeDiffrenceInSeconds === 0
+      timeDifferenceInSeconds === 0
         ? ""
         : `${chalk.blue(
             `${

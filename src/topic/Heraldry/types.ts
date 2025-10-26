@@ -74,6 +74,9 @@ export type CoatOfArmsDetailsData = {
     }
     byNamesRejected: {
       [color: string]: ColorStatusInDetails[],
+    },
+    colorsByNames: {
+      [color: string]: number,
     }
   },
   markers?: {
