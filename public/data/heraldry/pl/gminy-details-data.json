@@ -102,6 +102,10 @@
    }
   },
   "markers": {
+   "animals": [
+    "rooster",
+    "bird"
+   ],
    "items": [
     "arrow"
    ]
@@ -1082,7 +1086,9 @@
   },
   "markers": {
    "animals": [
-    "lion"
+    "rooster",
+    "lion",
+    "bird"
    ]
   }
  },
@@ -1210,6 +1216,11 @@
     "red": 0.00020841148764119878,
     "green": 0.05885540410987453
    }
+  },
+  "markers": {
+   "animals": [
+    "ram"
+   ]
   }
  },
  {
@@ -3526,6 +3537,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "leopard"
+   ],
    "items": [
     "crown"
    ]
@@ -4263,6 +4277,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "leopard"
+   ],
    "items": [
     "tree",
     "crown"
@@ -4439,6 +4456,11 @@
     "blue": 0.7192022376261705,
     "grey": 0.23559933519802181
    }
+  },
+  "markers": {
+   "animals": [
+    "goat"
+   ]
   }
  },
  {
@@ -4639,6 +4661,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "leopard"
+   ],
    "items": [
     "tree"
    ]
@@ -4807,6 +4832,11 @@
     "green": 0.004022217965906914,
     "grey": 0.001819574794100747
    }
+  },
+  "markers": {
+   "animals": [
+    "leopard"
+   ]
   }
  },
  {
@@ -4825,6 +4855,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "leopard"
+   ],
    "items": [
     "crown"
    ]
@@ -5088,6 +5121,11 @@
     "blue": 0.0012532800689304038,
     "white": 0.0502095327615243
    }
+  },
+  "markers": {
+   "animals": [
+    "leopard"
+   ]
   }
  },
  {
@@ -6052,6 +6090,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "fish"
+   ],
    "items": [
     "key",
     "sword"
@@ -14512,6 +14553,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "turtle"
+   ],
    "items": [
     "wheel"
    ]
@@ -14690,6 +14734,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "ram"
+   ],
    "items": [
     "horseshoe",
     "cross"
@@ -15941,6 +15988,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "leopard"
+   ],
    "items": [
     "earOfGrain"
    ]
@@ -16408,6 +16458,7 @@
     "eagle",
     "fish",
     "unicorn",
+    "goat",
     "bird"
    ],
    "items": [
@@ -20917,6 +20968,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "goat"
+   ],
    "items": [
     "tree",
     "walls",
@@ -23177,6 +23231,7 @@
   },
   "markers": {
    "animals": [
+    "leopard",
     "unicorn"
    ],
    "items": [
@@ -25635,6 +25690,11 @@
     "red": 0.1781937808412313,
     "green": 0.012532309861361323
    }
+  },
+  "markers": {
+   "animals": [
+    "ram"
+   ]
   }
  },
  {

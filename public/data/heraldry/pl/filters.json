@@ -116,6 +116,10 @@
       "phrases": ["sowa", "sowę"]
     },
     {
+      "name": "turtle",
+      "phrases": ["żółw", "żółwia"]
+    },
+    {
       "name": "vulture",
       "phrases": ["sępie"]
     },
@@ -150,7 +154,7 @@
     },
     {
       "name": "rooster",
-      "phrases": ["kogut", "kogutami", "kogutem"],
+      "phrases": ["kogut", "koguta", "kogutami", "kogutem"],
       "exclude": ["Herb gminy Zatory", "Herb Radoszyc"]
     },
     {
@@ -257,6 +261,10 @@
       "phrases": ["muszelka", "muszelki", "muszla", "muszle", "muszlę"]
     },
     {
+      "name": "leopard",
+      "phrases": ["lampart", "lamparta", "lamparty", "lamparcie", "lewarta"]
+    },
+    {
       "name": "lion",
       "phrases": [
         "lew",
@@ -348,6 +356,7 @@
         "karp",
         "karpia",
         "karpiami",
+        "karpie",
         "karpiem",
         "leszcza",
         "leszcze",
@@ -473,13 +482,15 @@
         "kozę",
         "kozie",
         "koziołek",
+        "koziołka",
         "koziołki",
         "kozła",
         "kozłem",
         "kozłów",
         "kozy",
         "koźłów",
-        "kózm kozie"
+        "kózm kozie",
+        "pół-kozła"
       ],
       "exclude": ["Herb gminy Abramów"]
     },
@@ -512,7 +523,7 @@
     },
     {
       "name": "ram",
-      "phrases": ["baran", "baranek", "baranka", "owca"],
+      "phrases": ["baran", "baranek", "baranka", "barana", "owca", "owcę", "muflona"],
       "exclude": [
         "Herb Korsz",
         "Herb gminy Tuczępy",
