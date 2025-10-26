@@ -20,6 +20,7 @@ const unitsJSON: CoatOfArmsDetailsData[] = [
 	...units2JSON,
 	...units3JSON,
 	...units4JSON,
+	...units5JSON,
 ];
 
 const formerUnitJSON: CoatOfArmsDetailsData[] = [

@@ -1,139 +1,135 @@
 export type Colors = {
-  [key: string]: string,
-}
+  [key: string]: string;
+};
 
 export type Greyscale = {
-  isGreyscale: boolean,,
-  isLowSaturation: boolean,
-  isGrey: boolean,
-  isBlack: boolean,
-  isWhite: boolean,
-}
+  isGreyscale: boolean;
+  isLowSaturation: boolean;
+  isGrey: boolean;
+  isBlack: boolean;
+  isWhite: boolean;
+};
 
-export type ColorStatus = Greyscale & {
-  didMatch: boolean,
-  color: string,
-  name: string,
-  matcherColor: string,
-  distanceToThreshold: number,
-  thresholdDistance: number,
-  distance: number,
-}
+export type RGB = [number, number, number];
 
 export type AdministrativeUnitIndex = {
-  id: string,
-  title: string,
-  url: string,
-  description: string,
-  imageUrl?: string,
-  imageSrcSet?: string,
-}
+  id: string;
+  title: string;
+  url: string;
+  description: string;
+  imageUrl?: string;
+  imageSrcSet?: string;
+};
 
 export type CoatOfArmsMapData = {
-  country: string,
-  id: string,
-  mergedIds?: string[],
-  index: number,
-  title: string,
-  url: string,
-  type: string[],
-  spriteRoot?: string,
+  country: string;
+  id: string;
+  mergedIds?: string[];
+  index: number;
+  title: string;
+  url: string;
+  type: string[];
+  spriteRoot?: string;
   place: {
-    name: string,
+    name: string;
     coordinates: {
-      lat: number,
-      lon: number,
-    }
-  },
+      lat: number;
+      lon: number;
+    };
+  };
   imagesList?: {
-    path: string,
-    width: string,
-  }[],
-  imageHash?: string,
-}
+    path: string;
+    width: string;
+  }[];
+  imageHash?: string;
+};
 
-export type ColorStatusInDetails = Pick<ColorStatus, 'distanceToThreshold' | 'matcherColor' | 'color'>
+export type MarkerType = "animal" | "item";
 
-export type MarkerType = 'animal' | 'item';
+export type ImageColors = {
+  hasTransparent: boolean;
+  colorsByNames: {
+    [name: string]: number | undefined;
+  };
+};
 
 export type CoatOfArmsDetailsData = {
-  id: string,
-  colors?: {
-    hexPalette: string[],
-    byNames: {
-      [color: string]: ColorStatusInDetails[],
-    }
-    byNamesRejected: {
-      [color: string]: ColorStatusInDetails[],
-    }
-  },
+  id: string;
+  colors?: ImageColors;
   markers?: {
-    animals?: string[],
-    items?: string[],
-  }
-}
+    animals?: string[];
+    items?: string[];
+  };
+};
 
-export type AdministrativeUnit = CoatOfArmsMapData & CoatOfArmsDetailsData & {
-  index: number,
-  shortTitle?: string, // can be removed
-  partOf?: string, // can be removed
-  description?: string,
-  image?: {
-    source: string,
-    sourceAlt?: string,
-    width?: number,
-    height?: number,
-  },
-  imageUrl?: string,
-}
+export type AdministrativeUnit = CoatOfArmsMapData &
+  CoatOfArmsDetailsData & {
+    index: number;
+    shortTitle?: string; // can be removed
+    partOf?: string; // can be removed
+    description?: string;
+    image?: {
+      source: string;
+      sourceAlt?: string;
+      width?: number;
+      height?: number;
+    };
+    imageUrl?: string;
+  };
 
 export type AdministrativeUnitsGroup = {
-  key: string,
-  title: string,
-  urls: AdministrativeUnit[],
-}
+  key: string;
+  title: string;
+  urls: AdministrativeUnit[];
+};
 
 export type ComplexManualMarker = {
-  imageHash: string,
-  note?: string,
-}
+  imageHash: string;
+  note?: string;
+};
 
 export type ManualMarker = string | ComplexManualMarker;
 
 export type MarkerParams = {
-  name: string,
-  phrases?: string[],
-  exclude?: ManualMarker[],
-  include?: ManualMarker[],
-}
+  name: string;
+  phrases?: string[];
+  exclude?: ManualMarker[];
+  include?: ManualMarker[];
+};
 
 export type MarkerParamsWithResult = MarkerParams & {
-  isActive?: boolean,
-  result?: string[],
-}
+  isActive?: boolean;
+  result?: string[];
+};
 
 export type MapOffset = {
-  minLatTop: number,
-  maxLatTop: number,
-  minLonLeft: number,
-  maxLonLeft: number,
-  xModifier?: (percentageX: number, { percentageY }: { percentageY: number }) => number,
-  yModifier?: (percentageY: number, { percentageX }: { percentageX: number }) => number,
-}
+  minLatTop: number;
+  maxLatTop: number;
+  minLonLeft: number;
+  maxLonLeft: number;
+  xModifier?: (
+    percentageX: number,
+    { percentageY }: { percentageY: number }
+  ) => number;
+  yModifier?: (
+    percentageY: number,
+    { percentageX }: { percentageX: number }
+  ) => number;
+};
 
 export type UserScriptDivisionData = {
-  locationName: string,
-  locationUrl: string,
-  thumbnailUrl?: string,
-  description: string,
-  type: string[],
-  source: string,
-  sourceTitle: string,
-}
+  locationName: string;
+  locationUrl: string;
+  thumbnailUrl?: string;
+  description: string;
+  type: string[];
+  source: string;
+  sourceTitle: string;
+};
 
 export type ScrollPosition = {
-  width: number,
-  height: number,
-  left: number,
-  top: number,
-}
+  width: number;
+  height: number;
+  left: number;
+  top: number;
+};

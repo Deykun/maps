@@ -1,20 +1,28 @@
-import unitFromJSON from '../../../public/data/heraldry/et/unit.json'
-import formerUnitFromJSON from '../../../public/data/heraldry/et/formerUnit.json'
-import { AdministrativeUnit } from '../../../src/topic/Heraldry/types';
+import unitFromJSON from "../../../public/data/heraldry/et/unit.json";
+import formerUnitFromJSON from "../../../public/data/heraldry/et/formerUnit.json";
+import {
+  AdministrativeUnit,
+  CoatOfArmsDetailsData,
+} from "../../../src/topic/Heraldry/types";
 
-import { getDetails } from '../utils/get-details';
+import cachedUnit from "../../../public/data/heraldry/et/unit-details-data.json";
+import cachedFormerUnit from "../../../public/data/heraldry/et/formerUnit-details-data.json";
 
-const units = unitFromJSON as AdministrativeUnit[]
-const formerUnits = formerUnitFromJSON as AdministrativeUnit[]
+import { getDetails } from "../utils/get-details";
+
+const units = unitFromJSON as AdministrativeUnit[];
+const formerUnits = formerUnitFromJSON as AdministrativeUnit[];
 
 getDetails({
-	administrativeDivisions: units,
-	path: 'unit',
-	country: 'et',
+  administrativeDivisions: units,
+  alreadyFetchedDivisions: cachedUnit as CoatOfArmsDetailsData[],
+  path: "unit",
+  country: "et",
 });
 
 getDetails({
-	administrativeDivisions: formerUnits,
-	path: 'formerUnit',
-	country: 'et',
+  administrativeDivisions: formerUnits,
+  alreadyFetchedDivisions: cachedFormerUnit as CoatOfArmsDetailsData[],
+  path: "formerUnit",
+  country: "et",
 });

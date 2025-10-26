@@ -63,10 +63,10 @@ export const setShouldReverseFilters = getBooleanFilterSet('shouldReverseFilters
 
 const getStringsFilterSet = (filterName: 'type' | 'color' | 'animal' | 'item') => (values: string[]) => {
   useFiltersStore.setState((state) => {
-    const diffrence = values.filter((value) => !state[filterName].includes(value));
+    const Difference = values.filter((value) => !state[filterName].includes(value));
 
-    if (diffrence.length === 1) {
-      trackFilter(diffrence[0]);
+    if (Difference.length === 1) {
+      trackFilter(Difference[0]);
     }
 
     return {

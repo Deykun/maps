@@ -2,50 +2,13 @@
  {
   "id": "formerAmt-0",
   "colors": {
-   "hexPalette": [
-    "#f6d402",
-    "#887a36",
-    "#294289"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 6.586518555705432,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 46.80909404172708,
-      "matcherColor": "#243b7f"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -182.5280937347468,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -72.53196386331621,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -38.721831425475486,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -106.30995159640929,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.26425925925925925,
+    "blue": 0.5592331571440557,
+    "grey": 0.017325278966356238,
+    "gold": 0.3969712224179881,
+    "green": 0.00016779931202282072
    }
   },
   "markers": {
@@ -57,70 +20,16 @@
  {
   "id": "formerKommune-1",
   "colors": {
-   "hexPalette": [
-    "#f1cc37",
-    "#cf181b",
-    "#717171",
-    "#000000",
-    "#ffffff"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 46.84705356203409,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 19.92504681649764,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -117.84789481084943,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -141.16162655934158,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -136.15702509539693,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -78.8344337691482,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2758333333333333,
+    "grey": 0.1337424881728679,
+    "black": 0.057324297830626945,
+    "white": 0.43451391552657376,
+    "green": 0.06921536035460087,
+    "blue": 0.012402506073392149,
+    "gold": 0.023355922090099304,
+    "red": 0.18735882027021267
    }
   },
   "markers": {
@@ -137,50 +46,13 @@
  {
   "id": "formerAmt-2",
   "colors": {
-   "hexPalette": [
-    "#f2e300",
-    "#db261e",
-    "#260000"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 19.129301919133738,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 19.667587484006575,
-      "matcherColor": "#f00"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -137,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -80.04999107461592,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -27.324336776305714,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -163.6537502480117,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.24518518518518517,
+    "grey": 0.0008177952240758914,
+    "black": 0.02281648675171737,
+    "red": 0.5943735688583579,
+    "gold": 0.14192836113837096
    }
   },
   "markers": {
@@ -193,50 +65,13 @@
  {
   "id": "formerAmt-3",
   "colors": {
-   "hexPalette": [
-    "#fcdb00",
-    "#db261e",
-    "#260000"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 13.875216263623116,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 19.667587484006575,
-      "matcherColor": "#f00"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -137,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -80.04999107461592,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -27.324336776305714,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -163.6537502480117,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.3441358024691358,
+    "grey": 0.007435294117647059,
+    "black": 0.007623529411764706,
+    "red": 0.513035294117647,
+    "gold": 0.3487058823529412
    }
   },
   "markers": {
@@ -248,56 +83,13 @@
  {
   "id": "formerAmt-4",
   "colors": {
-   "hexPalette": [
-    "#fdda02",
-    "#017cc4",
-    "#00030b"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 12.892049369441054,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 31.69805660383019,
-      "matcherColor": "#1d7dc0"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -263.1245469079654,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -184.75838041504937,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -62.15154522149935,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -148.62885706440517,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2560493827160494,
+    "grey": 0.005268835048124793,
+    "black": 0.023066710919349486,
+    "blue": 0.6608031861931629,
+    "gold": 0.22141553269166944
    }
   },
   "markers": {
@@ -310,63 +102,14 @@
  {
   "id": "formerKommune-5",
   "colors": {
-   "hexPalette": [
-    "#023e9a",
-    "#c01121",
-    "#7f8879",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 16.479889706022114,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 6.876816261872179,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -222.6037012331475,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -126.30765127475266,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -80.34600101178515,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -126.9117438792972,
-      "matcherColor": "#243b7f"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2467283950617284,
+    "gold": 0.03347537490780955,
+    "grey": 0.009792673932639514,
+    "white": 0.42423994099811524,
+    "blue": 0.19114152257641565,
+    "red": 0.1808161927394903
    }
   },
   "markers": {
@@ -379,57 +122,14 @@
  {
   "id": "formerAmt-6",
   "colors": {
-   "hexPalette": [
-    "#0c93c8",
-    "#837349",
-    "#000508",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 31.069047717021135,
-      "matcherColor": "#1d7dc0"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -104.20097719610501,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -60.0199986668444,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -1.8546683767684584,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -55,
-      "matcherColor": "#5596c3"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.24459876543209877,
+    "grey": 0.007231869254341165,
+    "black": 0.05716036772216548,
+    "gold": 0.09491317671092953,
+    "white": 0.26431052093973445,
+    "blue": 0.16915219611848825
    }
   },
   "markers": {
@@ -444,58 +144,15 @@
  {
   "id": "formerAmt-7",
   "colors": {
-   "hexPalette": [
-    "#ec2327",
-    "#073d78",
-    "#7f9bc2",
-    "#470000",
-    "#efefef"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 24.25952996251287,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 37.69160839738764,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": -84.34334068463289,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -41.764942226678784,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -143.97548872352286,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": -104,
-      "matcherColor": "#f00"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.3020987654320988,
+    "grey": 0.0623562710065452,
+    "white": 0.4894746152485406,
+    "gold": 0.02710949938085972,
+    "blue": 0.08097470369715196,
+    "black": 0.006545197240403326,
+    "red": 0.20436051653989032
    }
   },
   "markers": {
@@ -511,57 +168,14 @@
  {
   "id": "formerAmt-8",
   "colors": {
-   "hexPalette": [
-    "#f5db00",
-    "#958f46",
-    "#2e2c7a",
-    "#faffff"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 19.19558847379367,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 41.29171306613029,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -165.96951030564745,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -60.605832026982426,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -48.70142593360954,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -110.53152201279386,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2706172839506173,
+    "blue": 0.8295108327691266,
+    "gold": 0.1219109681787407,
+    "grey": 0.010451929587000678,
+    "white": 0.007659106296547055,
+    "black": 0.000042315504400812456
    }
   },
   "markers": {
@@ -573,56 +187,13 @@
  {
   "id": "formerAmt-9",
   "colors": {
-   "hexPalette": [
-    "#f9db00",
-    "#db261e",
-    "#100100"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 13.503424818210682,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 19.667587484006575,
-      "matcherColor": "#f00"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -139.0821763631172,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -148.1802103947443,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -142.78745670675644,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -68.41339493993607,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.3686111111111111,
+    "grey": 0.0036662267194603314,
+    "red": 0.5614215183066921,
+    "gold": 0.265434814488928,
+    "black": 0.013638363396392433
    }
   },
   "markers": {
@@ -634,64 +205,14 @@
  {
   "id": "formerAmt-10",
   "colors": {
-   "hexPalette": [
-    "#f0de0c",
-    "#826500",
-    "#017cc4",
-    "#000012",
-    "#dbdfe2"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 13.127833418968137,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 31.69805660383019,
-      "matcherColor": "#1d7dc0"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -263.1245469079654,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -103.4900608599801,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -62.15154522149935,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -148.62885706440517,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.3046913580246914,
+    "grey": 0.09348366477272728,
+    "black": 0.02197265625,
+    "blue": 0.7200372869318182,
+    "green": 0.004305752840909091,
+    "gold": 0.09517045454545454
    }
   },
   "markers": {
@@ -705,71 +226,16 @@
  {
   "id": "formerAmt-11",
   "colors": {
-   "hexPalette": [
-    "#d9241d",
-    "#fcdb00",
-    "#017cc4",
-    "#9ca65c",
-    "#00381d",
-    "#dbdcd7"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 20.158542798491276,
-      "matcherColor": "#f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": 25.22932269857258,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 31.69805660383019,
-      "matcherColor": "#1d7dc0"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": 27.822833773160745,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": -44.44615837837216,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -93.10780515702001,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -151.93867037423823,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": -182.682317638626,
-      "matcherColor": "#f00"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2849382716049383,
+    "black": 0.01256042817679558,
+    "gold": 0.48027451657458564,
+    "grey": 0.036041091160220994,
+    "red": 0.03647272099447514,
+    "white": 0.00043162983425414363,
+    "blue": 0.3184996546961326,
+    "green": 0.013164709944751381
    }
   },
   "markers": {
@@ -781,56 +247,13 @@
  {
   "id": "formerAmt-12",
   "colors": {
-   "hexPalette": [
-    "#ea2e27",
-    "#fce24d",
-    "#000000"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 16.140779835641588,
-      "matcherColor": "#f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": 15.909184629902796,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": -138.14903162746333,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -175.09243670840556,
-      "matcherColor": "#0f0"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -63.03657992645927,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": -139.51106158596258,
-      "matcherColor": "#fe3940"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.29944444444444446,
+    "black": 0.23063706053396776,
+    "gold": 0.35915058595470967,
+    "red": 0.32694510529562076,
+    "grey": 0.0001762269803506917
    }
   },
   "markers": {
@@ -843,57 +266,14 @@
  {
   "id": "formerAmt-13",
   "colors": {
-   "hexPalette": [
-    "#f7c500",
-    "#0063ad",
-    "#a49b70",
-    "#000500"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 31.857505441059423,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 32.14322344563176,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -111.44963768069539,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -34.69524837585905,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -104.71490521504117,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -143.22647465327935,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.37209876543209874,
+    "black": 0.028313016122689737,
+    "blue": 0.3840444357058592,
+    "gold": 0.3406409752261109,
+    "grey": 0.00152379079826976,
+    "red": 0.1352241447109713
    }
   },
   "markers": {
@@ -905,63 +285,15 @@
  {
   "id": "formerAmt-14",
   "colors": {
-   "hexPalette": [
-    "#0072c7",
-    "#fcdb00",
-    "#ece4f0",
-    "#000000"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 35,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": 13.875216263623116,
-      "matcherColor": "#ffff00"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -139.02054698132775,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -164.55844122715712,
-      "matcherColor": "#0f0"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -152.1084628203222,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -185.84770076116888,
-      "matcherColor": "#5596c3"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.33564814814814814,
+    "black": 0.19772357723577236,
+    "grey": 0.009337979094076656,
+    "gold": 0.5447154471544715,
+    "white": 0.00027874564459930314,
+    "green": 0.004506387921022067,
+    "blue": 0.18527293844367015
    }
   },
   "markers": {
@@ -973,50 +305,13 @@
  {
   "id": "formerAmt-15",
   "colors": {
-   "hexPalette": [
-    "#0167ad",
-    "#00060f",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 30.453426594611685,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "black": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#000"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -244.12034801906526,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -42.62066068779717,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -141.49937965165054,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.3055246913580247,
+    "blue": 0.6813919381360828,
+    "grey": 0.023776721034620682,
+    "white": 0.27269899115594864,
+    "black": 0.008532954090929292
    }
   },
   "markers": {
@@ -1028,50 +323,15 @@
  {
   "id": "formerAmt-16",
   "colors": {
-   "hexPalette": [
-    "#659a42",
-    "#1051af",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 30.06674090580847,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -227.09444801233383,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -50.04999038831184,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -53.39312148450628,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -134.8358283273382,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.23712962962962963,
+    "blue": 0.479872152769349,
+    "green": 0.0652991867945139,
+    "grey": 0.08552817898612292,
+    "white": 0.29522191204434195,
+    "gold": 0.004369462313387547,
+    "red": 0.0018206092972448112
    }
   },
   "markers": {
@@ -1087,50 +347,13 @@
  {
   "id": "formerAmt-17",
   "colors": {
-   "hexPalette": [
-    "#c3a114",
-    "#1051af",
-    "#fdefab"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 1.862232585005465,
-      "matcherColor": "#bfa14e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 30.06674090580847,
-      "matcherColor": "#0059c7"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -181.12555506143732,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -111.62724232217087,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -215.78750792012414,
-      "matcherColor": "#0f0"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -68.87978895078933,
-      "matcherColor": "#e6c633"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.24944444444444444,
+    "blue": 0.4731885845875483,
+    "grey": 0.004646763714121227,
+    "gold": 0.24278312361213916,
+    "green": 0.00020560901389916935
    }
   },
   "markers": {
@@ -1142,57 +365,15 @@
  {
   "id": "formerKommune-18",
   "colors": {
-   "hexPalette": [
-    "#d82e37",
-    "#366516",
-    "#a4a5a2",
-    "#ffffff"
-   ],
-   "byNames": {
-    "green": [
-     {
-      "distanceToThreshold": 30.83920216900384,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -146.02212281102044,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -54.51200810395389,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -142.1766568800576,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -92.7481587450402,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.22012345679012346,
+    "gold": 0.07262149754630362,
+    "grey": 0.09818743074244103,
+    "white": 0.37450530315022956,
+    "green": 0.07527307266107329,
+    "blue": 0.00007915149596327371,
+    "red": 0.14860693367104638
    }
   },
   "markers": {
@@ -1209,43 +390,11 @@
  {
   "id": "formerAmt-19",
   "colors": {
-   "hexPalette": [
-    "#f8e56e",
-    "#cd0f24"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 16.58864455004924,
-      "matcherColor": "#f00"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -148.14600753314681,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -136.30843079195554,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -139.2095111464618,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -82.39733143566983,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.25882716049382715,
+    "red": 0.6325476805196969,
+    "gold": 0.1836845173648705
    }
   },
   "markers": {
@@ -1258,124 +407,40 @@
  {
   "id": "formerAmt-20",
   "colors": {
-   "hexPalette": [
-    "#9b5e23",
-    "#21409a",
-    "#cccccc"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 38.59906544096731,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -197.6616646208115,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -94.434452114805,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -48.834737101717664,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -119.00279327429502,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.29268518518518516,
+    "blue": 0.6212855085744208,
+    "grey": 0.2885630754461753,
+    "gold": 0.05546101147619671,
+    "red": 0.0018763363441986298,
+    "white": 0.00964349609460226
    }
   }
  },
  {
   "id": "formerAmt-21",
   "colors": {
-   "hexPalette": [
-    "#e3e3e3"
-   ],
-   "byNames": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   },
-   "byNamesRejected": {}
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.23262345679012345,
+    "grey": 0.8889514539677432,
+    "white": 0.11104854603225676
+   }
   }
  },
  {
   "id": "formerAmt-22",
   "colors": {
-   "hexPalette": [
-    "#d0b228",
-    "#a30814",
-    "#1051af",
-    "#ffffff"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 28.298265031705284,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 30.06674090580847,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -227.09444801233383,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -113.72104075212076,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -53.39312148450628,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -134.8358283273382,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.25200617283950616,
+    "blue": 0.5242005364142769,
+    "gold": 0.06659789560552919,
+    "grey": 0.0030946977511863006,
+    "green": 0.00008252527336496802,
+    "white": 0.2524035485867547,
+    "red": 0.04860738601196617
    }
   },
   "markers": {
@@ -1391,43 +456,13 @@
  {
   "id": "formerAmt-23",
   "colors": {
-   "hexPalette": [
-    "#fde56d",
-    "#363636"
-   ],
-   "byNames": {
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -147.79201331893398,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -124.59960899278374,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -186.70561974777456,
-      "matcherColor": "#0f0"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -9.670653793401428,
-      "matcherColor": "#e6c633"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.36530864197530866,
+    "grey": 0.734973740517409,
+    "gold": 0.11199183038319394,
+    "blue": 0.00004862867146469558,
+    "black": 0.0015561174868702586
    }
   },
   "markers": {
@@ -1440,44 +475,13 @@
  {
   "id": "formerAmt-24",
   "colors": {
-   "hexPalette": [
-    "#ffe26d",
-    "#1051af",
-    "#7d8150"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 30.06674090580847,
-      "matcherColor": "#0059c7"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -118.59676981684359,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -43.5556554755791,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -59.49581933953871,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -0.3406993661823563,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2595679012345679,
+    "blue": 0.6755731554814506,
+    "gold": 0.15377240516882035,
+    "grey": 0.0032096706961233846,
+    "green": 0.00020842017507294707
    }
   },
   "markers": {
@@ -1490,63 +494,14 @@
  {
   "id": "formerKommune-25",
   "colors": {
-   "hexPalette": [
-    "#023e9a",
-    "#c01121",
-    "#7f8879",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 16.479889706022114,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 6.876816261872179,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -222.6037012331475,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -126.30765127475266,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -80.34600101178515,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -126.9117438792972,
-      "matcherColor": "#243b7f"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2467283950617284,
+    "gold": 0.03347537490780955,
+    "grey": 0.009792673932639514,
+    "white": 0.42423994099811524,
+    "blue": 0.19114152257641565,
+    "red": 0.1808161927394903
    }
   },
   "markers": {
@@ -1559,44 +514,14 @@
  {
   "id": "formerAmt-26",
   "colors": {
-   "hexPalette": [
-    "#003f9c",
-    "#742240",
-    "#fee46d"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 13.599568967519275,
-      "matcherColor": "#243b7f"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -146.8219443394965,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -187.7156819482832,
-      "matcherColor": "#0f0"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -9.570108523704349,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -125.03902067655318,
-      "matcherColor": "#5596c3"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.24595679012345678,
+    "blue": 0.5484834840980721,
+    "grey": 0.006589988129835045,
+    "gold": 0.03299087225246613,
+    "red": 0.02660554213908559,
+    "green": 0.000040931603290900904
    }
   },
   "markers": {
@@ -1608,50 +533,13 @@
  {
   "id": "formerAmt-27",
   "colors": {
-   "hexPalette": [
-    "#f1c804",
-    "#1051af",
-    "#909365"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 21.154150800889937,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 30.06674090580847,
-      "matcherColor": "#0059c7"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -116.8638825579659,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -31.022520238012973,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -82.17594733287342,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -134.8358283273382,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2465432098765432,
+    "blue": 0.6269867278387679,
+    "gold": 0.27474193019826315,
+    "green": 0.00024578076355890547,
+    "grey": 0.003973455677535639
    }
   },
   "markers": {
@@ -1664,50 +552,14 @@
  {
   "id": "formerAmt-28",
   "colors": {
-   "hexPalette": [
-    "#d22f36",
-    "#1051af",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 30.06674090580847,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -227.09444801233383,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -128.05318396666408,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -53.39312148450628,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -134.8358283273382,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.23194444444444445,
+    "blue": 0.4360859955796665,
+    "gold": 0.04271649588105284,
+    "grey": 0.004902551737994776,
+    "red": 0.07836045810729356,
+    "white": 0.3801084990958409
    }
   },
   "markers": {
@@ -1722,44 +574,14 @@
  {
   "id": "formerAmt-29",
   "colors": {
-   "hexPalette": [
-    "#003f9c",
-    "#940b0e",
-    "#fee46d"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 13.599568967519275,
-      "matcherColor": "#243b7f"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -146.8219443394965,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -187.7156819482832,
-      "matcherColor": "#0f0"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -9.570108523704349,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -125.03902067655318,
-      "matcherColor": "#5596c3"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2862037037037037,
+    "gold": 0.03735893111947075,
+    "red": 0.13006442686037964,
+    "grey": 0.0017728196480304406,
+    "blue": 0.24966489384701865,
+    "green": 0.00004323950361049855
    }
   },
   "markers": {
@@ -1772,56 +594,14 @@
  {
   "id": "formerAmt-30",
   "colors": {
-   "hexPalette": [
-    "#003597",
-    "#d72534",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 16.31934066431689,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 4.680679769397813,
-      "matcherColor": "#f00"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -221.05647310762146,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -143.24879420910196,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -58.69709347747316,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -133.75499993548553,
-      "matcherColor": "#2e3192"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.296141975308642,
+    "grey": 0.008375356281517211,
+    "gold": 0.049857487393115546,
+    "white": 0.43617627713220786,
+    "blue": 0.10572242929182196,
+    "red": 0.26358254768691075
    }
   },
   "markers": {
@@ -1837,56 +617,14 @@
  {
   "id": "formerAmt-31",
   "colors": {
-   "hexPalette": [
-    "#998f43",
-    "#2154a5",
-    "#d7d8d5"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 20.3767744876821,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 18.107279868693176,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -209.07611454424938,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -65.11030287336595,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -47.17275773255068,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -115.2797763576848,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.29898148148148146,
+    "blue": 0.7695592832298683,
+    "grey": 0.021221326993351827,
+    "gold": 0.09857790692554924,
+    "white": 0.013648571302778145,
+    "green": 0.00017611059745520187
    }
   },
   "markers": {
@@ -1898,49 +636,11 @@
  {
   "id": "formerAmt-32",
   "colors": {
-   "hexPalette": [
-    "#f3d239",
-    "#cd0f24"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 41.318458307730594,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": 16.58864455004924,
-      "matcherColor": "#f00"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -123.5545505675426,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -136.30843079195554,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -139.2095111464618,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -82.39733143566983,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2687654320987654,
+    "red": 0.6000337666722945,
+    "gold": 0.22138274523045753
    }
   },
   "markers": {
@@ -1952,163 +652,43 @@
  {
   "id": "formerAmt-33",
   "colors": {
-   "hexPalette": [
-    "#e61f22",
-    "#46712c",
-    "#9e9896",
-    "#ffffff"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 27.635890153655815,
-      "matcherColor": "#f00"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": 7.295707487458671,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": -44.69479452198185,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -155.87801853764805,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -66.26955294131677,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": -141.20126581916298,
-      "matcherColor": "#f00"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2525,
+    "gold": 0.015566290928609769,
+    "white": 0.40443453486931746,
+    "grey": 0.04091828729509889,
+    "red": 0.04785498988397539,
+    "green": 0.0013625665799578844,
+    "blue": 0.00020644948181180065
    }
   }
  },
  {
   "id": "formerAmt-34",
   "colors": {
-   "hexPalette": [
-    "#02409d",
-    "#554e15",
-    "#b88685",
-    "#ffffff"
-   ],
-   "byNames": {
-    "blue": [
-     {
-      "distanceToThreshold": 14.382021088171825,
-      "matcherColor": "#243b7f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": 19.92507018097224,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -94.85992151206888,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -130.71706793048176,
-      "matcherColor": "#07923f"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -77.70620901034201,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -37.902502093891115,
-      "matcherColor": "#5596c3"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.26219135802469135,
+    "gold": 0.021627274628738757,
+    "white": 0.6586488182388621,
+    "grey": 0.0020497803806734994,
+    "red": 0.06458899811754863,
+    "blue": 0.13758627902112527
    }
   }
  },
  {
   "id": "formerAmt-35",
   "colors": {
-   "hexPalette": [
-    "#da2b36",
-    "#ffffff"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 1.6801430031948996,
-      "matcherColor": "#f00"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": -135.15122341404884,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -144.65719677862003,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -53.56055653262712,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.24953703703703703,
+    "gold": 0.025046267735965452,
+    "green": 0.07320584001645075,
+    "grey": 0.007361710878058811,
+    "white": 0.5194735759819041,
+    "red": 0.1900472959078758
    }
   },
   "markers": {
@@ -2120,50 +700,13 @@
  {
   "id": "formerAmt-36",
   "colors": {
-   "hexPalette": [
-    "#cd0f24",
-    "#a3a3a1",
-    "#ffffff"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 16.58864455004924,
-      "matcherColor": "#f00"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": -136.30843079195554,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -139.2095111464618,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -82.39733143566983,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.29095679012345677,
+    "red": 0.5230487964131807,
+    "gold": 0.06960344752535585,
+    "white": 0.19401035998781177,
+    "grey": 0.1405127758673225
    }
   },
   "markers": {
@@ -2176,50 +719,13 @@
  {
   "id": "formerAmt-37",
   "colors": {
-   "hexPalette": [
-    "#dc2b32",
-    "#fee46f",
-    "#2154a5"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 5.340774180279638,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 18.107279868693176,
-      "matcherColor": "#2e3192"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": -124.2082270624766,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -47.17275773255068,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -115.2797763576848,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": -209.07611454424938,
-      "matcherColor": "#f00"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.28262345679012346,
+    "blue": 0.46013853633351975,
+    "gold": 0.1643505571569935,
+    "grey": 0.00486167878501054,
+    "red": 0.059716904014111775
    }
   },
   "markers": {
@@ -2231,93 +737,26 @@
  {
   "id": "formerAmt-38",
   "colors": {
-   "hexPalette": [
-    "#db2c37",
-    "#fee46d",
-    "#2154a5"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 0.898798997739604,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 18.107279868693176,
-      "matcherColor": "#2e3192"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": -125.03902067655318,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -47.17275773255068,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -115.2797763576848,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": -209.07611454424938,
-      "matcherColor": "#f00"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.26058641975308644,
+    "blue": 0.4721793212839671,
+    "grey": 0.008181324873732103,
+    "gold": 0.048044412906457404,
+    "red": 0.09433568476854363,
+    "white": 0.00475852569186459,
+    "green": 0.00004174145343740869
    }
   }
  },
  {
   "id": "formerAmt-39",
   "colors": {
-   "hexPalette": [
-    "#cd0f24",
-    "#fee46d"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 16.58864455004924,
-      "matcherColor": "#f00"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "blue": [
-     {
-      "distanceToThreshold": -125.03902067655318,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -187.7156819482832,
-      "matcherColor": "#0f0"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -9.570108523704349,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "red": [
-     {
-      "distanceToThreshold": -146.8219443394965,
-      "matcherColor": "#fe3940"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2601851851851852,
+    "gold": 0.07096370463078848,
+    "red": 0.39232373800584064
    }
   },
   "markers": {
@@ -2330,50 +769,14 @@
  {
   "id": "formerAmt-40",
   "colors": {
-   "hexPalette": [
-    "#d9b219",
-    "#ffffff",
-    "#383838"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 24.715442471245296,
-      "matcherColor": "#e6c633"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ],
-    "grey": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#888"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -102.40468269664785,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -137.04377438664304,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -138.4797584032336,
-      "matcherColor": "#006f00"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.27240740740740743,
+    "gold": 0.06570798337151099,
+    "white": 0.3622635106473233,
+    "grey": 0.2907864596589463,
+    "black": 0.006829557987613473,
+    "red": 0.1519470603206923
    }
   },
   "markers": {
@@ -2388,56 +791,14 @@
  {
   "id": "formerAmt-41",
   "colors": {
-   "hexPalette": [
-    "#838b4b",
-    "#1051af",
-    "#e2eeec"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 5.428945401430987,
-      "matcherColor": "#b68f5e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 30.06674090580847,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -227.09444801233383,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -48.9844951922517,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -53.39312148450628,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -134.8358283273382,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.27064814814814814,
+    "blue": 0.8532013033726884,
+    "gold": 0.04659134188142694,
+    "grey": 0.024967204096314165,
+    "white": 0.031272481063010456,
+    "green": 0.000042317295078498584
    }
   },
   "markers": {
@@ -2450,43 +811,11 @@
  {
   "id": "formerAmt-42",
   "colors": {
-   "hexPalette": [
-    "#ffeca7",
-    "#cd0f24"
-   ],
-   "byNames": {
-    "red": [
-     {
-      "distanceToThreshold": 16.58864455004924,
-      "matcherColor": "#f00"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -176.52118535394862,
-      "matcherColor": "#fe3940"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -136.30843079195554,
-      "matcherColor": "#2e3192"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -139.2095111464618,
-      "matcherColor": "#006f00"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -82.39733143566983,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.2910185185185185,
+    "red": 0.728701406120761,
+    "gold": 0.09542466588306996
    }
   },
   "markers": {
@@ -2498,56 +827,14 @@
  {
   "id": "formerAmt-43",
   "colors": {
-   "hexPalette": [
-    "#a59c3d",
-    "#1051af",
-    "#efefed"
-   ],
-   "byNames": {
-    "gold": [
-     {
-      "distanceToThreshold": 28.535734554895452,
-      "matcherColor": "#bfa14e"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": 30.06674090580847,
-      "matcherColor": "#0059c7"
-     }
-    ],
-    "white": [
-     {
-      "distanceToThreshold": -1,
-      "matcherColor": "#fff"
-     }
-    ]
-   },
-   "byNamesRejected": {
-    "red": [
-     {
-      "distanceToThreshold": -227.09444801233383,
-      "matcherColor": "#f00"
-     }
-    ],
-    "blue": [
-     {
-      "distanceToThreshold": -76.17938404283711,
-      "matcherColor": "#5596c3"
-     }
-    ],
-    "green": [
-     {
-      "distanceToThreshold": -53.39312148450628,
-      "matcherColor": "#00824a"
-     }
-    ],
-    "gold": [
-     {
-      "distanceToThreshold": -134.8358283273382,
-      "matcherColor": "#b68f5e"
-     }
-    ]
+   "hasTransparent": true,
+   "colorsByNames": {
+    "transparent": 0.25179012345679014,
+    "blue": 0.6828644501278772,
+    "gold": 0.05886478013365234,
+    "grey": 0.030814289250061876,
+    "white": 0.11492451117894563,
+    "green": 0.0002475043313257982
    }
   },
   "markers": {

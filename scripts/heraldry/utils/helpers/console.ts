@@ -1,4 +1,4 @@
-export const clearLastLines = (count) => {
-  process.stdout.moveCursor(0, -count)
-  process.stdout.clearScreenDown()
-}
+export const clearLastLines = (count: number) => {
+  process.stdout.moveCursor(0, -count);
+  process.stdout.clearScreenDown();
+};
