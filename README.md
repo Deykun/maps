@@ -24,8 +24,7 @@ https://deykun.github.io/maps/nederlandse-heraldiek
 https://deykun.github.io/maps/norges-heraldikk
 
 ### Coats of arms in Poland 🇵🇱
-https://deykun.github.io/maps/heraldyka
-Data indexed: 26.10.2025
+https://deykun.github.io/maps/heraldyka (Data reindexed: 26.10.2025)
 
 ## About the process
 Some countries have dedicated pages for the coat of arms of smaller cities and municipalities on Wikipedia (e.g. Estonia, Finland, Poland). For those, I visit the category page containing the list of such coats of arms and parse them to obtain initial links to those pages (they are stored in: `scripts/heraldry/[country]/constants.ts`). Using npm's `wikipedia` package, I fetch the coat of arms page (save the main image and descriptions) and attempt to locate the link in the data to fetch the page of the city or town in order to retrieve its location. These cases are the best because they provide me with clear descriptions and images.
