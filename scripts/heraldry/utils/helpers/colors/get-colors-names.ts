@@ -163,6 +163,16 @@ const colorMatchers: {
         get: nearestColor.from({ color: "#ffff00" }) as NearestColorCallback,
         thresholdDistance: 50,
       },
+      {
+        color: "#fffa5f",
+        get: nearestColor.from({ color: "#fffa5f" }) as NearestColorCallback,
+        thresholdDistance: 40,
+      },
+      {
+        color: "#fafe02",
+        get: nearestColor.from({ color: "#fafe02" }) as NearestColorCallback,
+        thresholdDistance: 40,
+      },
     ],
   },
 };

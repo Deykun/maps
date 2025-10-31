@@ -22,28 +22,28 @@ const wojewodztwa = wojewodztwaFromJSON as AdministrativeUnit[];
 
 getDetails({
   administrativeDivisions: gminy,
-  alreadyFetchedDivisions: cachedGminy as CoatOfArmsDetailsData[],
+  // alreadyFetchedDivisions: cachedGminy as CoatOfArmsDetailsData[],
   path: "gminy",
   country: "pl",
 });
 
 getDetails({
   administrativeDivisions: miasta,
-  alreadyFetchedDivisions: cachedMiasta as CoatOfArmsDetailsData[],
+  // alreadyFetchedDivisions: cachedMiasta as CoatOfArmsDetailsData[],
   path: "miasta",
   country: "pl",
 });
 
 getDetails({
   administrativeDivisions: powiaty,
-  alreadyFetchedDivisions: cachedPowiaty as CoatOfArmsDetailsData[],
+  // alreadyFetchedDivisions: cachedPowiaty as CoatOfArmsDetailsData[],
   path: "powiaty",
   country: "pl",
 });
 
 getDetails({
   administrativeDivisions: wojewodztwa,
-  alreadyFetchedDivisions: cachedWojewodztwa as CoatOfArmsDetailsData[],
+  // alreadyFetchedDivisions: cachedWojewodztwa as CoatOfArmsDetailsData[],
   path: "wojewodztwa",
   country: "pl",
 });

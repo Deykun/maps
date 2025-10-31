@@ -41,4 +41,4 @@ export const mapPadding = 40;
 
 export const maxSelectedWithClick = 50;
 
-export const MINIMAL_COLOR_PERCENTAGE = 0.035;
+export const MINIMAL_COLOR_PERCENTAGE = 0.025;
