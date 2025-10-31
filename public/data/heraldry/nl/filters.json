@@ -5,8 +5,21 @@
       "phrases": ["halfleeuw", "leeuw", "leeuwen"]
     },
     {
+      "name": "leopard",
+      "phrases": ["luipaarden"]
+    },
+    {
       "name": "deer",
-      "phrases": ["gewei", "hert", "herten", "hinde", "reebokje", "reebokjes"]
+      "phrases": [
+        "gewei",
+        "hert",
+        "herten",
+        "hinde",
+        "reebokje",
+        "reebokjes",
+        "ree",
+        "reeën"
+      ]
     },
     {
       "name": "horse",
@@ -21,8 +34,12 @@
       "phrases": ["haas", "konijn", "konijnen"]
     },
     {
+      "name": "raven",
+      "phrases": ["raaf", "raven"]
+    },
+    {
       "name": "eagle",
-      "phrases": ["adelaar", "adelaars"]
+      "phrases": ["adelaar", "adelaars", "arend", "arenden"]
     },
     {
       "name": "falcon",
@@ -61,6 +78,10 @@
       "phrases": ["ooievaar", "ooievaars"]
     },
     {
+      "name": "duck",
+      "phrases": ["eend", "eenden"]
+    },
+    {
       "name": "goose",
       "phrases": ["gans", "ganzen"]
     },
@@ -86,7 +107,17 @@
     },
     {
       "name": "boar",
-      "phrases": ["everzwijn", "everzwijnen"]
+      "phrases": [
+        "everzwijn",
+        "everzwijnen",
+        "zwijn",
+        "zwijnen",
+        "zwijnskoppen"
+      ]
+    },
+    {
+      "name": "bird",
+      "phrases": ["vogels", "kauwen"]
     },
     {
       "name": "moose",
@@ -105,7 +136,10 @@
         "stiertje",
         "vaarskalf",
         "waterbuffel",
-        "wisent"
+        "wisent",
+        "koe",
+        "koeien",
+        "ossenkop"
       ]
     },
     {
@@ -147,7 +181,7 @@
     },
     {
       "name": "dog",
-      "phrases": ["hond", "honden"]
+      "phrases": ["hond", "honden", "hondenkoppen"]
     },
     {
       "name": "crayfish",
@@ -163,7 +197,14 @@
     },
     {
       "name": "ram",
-      "phrases": ["lammetje", "ram", "schaap", "schapen"]
+      "phrases": [
+        "lammetje",
+        "ram",
+        "schaap",
+        "schapen",
+        "schaapskop",
+        "ramskoppen"
+      ]
     },
     {
       "name": "wolf",
@@ -183,7 +224,7 @@
     },
     {
       "name": "bear",
-      "phrases": ["beer", "beren"]
+      "phrases": ["beer", "beren", "berenklaauwen"]
     },
     {
       "name": "beaver",

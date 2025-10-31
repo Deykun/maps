@@ -46,6 +46,16 @@ const colorMatchers: {
         get: nearestColor.from({ color: "#800000" }) as NearestColorCallback,
         thresholdDistance: 30,
       },
+      {
+        color: "#eb551d",
+        get: nearestColor.from({ color: "#eb551d" }) as NearestColorCallback,
+        thresholdDistance: 30,
+      },
+      {
+        color: "#c8481b",
+        get: nearestColor.from({ color: "#c8481b" }) as NearestColorCallback,
+        thresholdDistance: 30,
+      },
     ],
   },
   green: {
@@ -147,6 +157,11 @@ const colorMatchers: {
       {
         color: "#033578",
         get: nearestColor.from({ color: "#033578" }) as NearestColorCallback,
+        thresholdDistance: 40,
+      },
+      {
+        color: "#b2e1fd",
+        get: nearestColor.from({ color: "#b2e1fd" }) as NearestColorCallback,
         thresholdDistance: 40,
       },
     ],
