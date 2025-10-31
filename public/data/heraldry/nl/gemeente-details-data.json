@@ -302,6 +302,10 @@
    }
   },
   "markers": {
+   "animals": [
+    "horse",
+    "unusualHybrid"
+   ],
    "items": [
     "lily",
     "boat",
@@ -930,6 +934,10 @@
    }
   },
   "markers": {
+   "animals": [
+    "butterfly",
+    "insect"
+   ],
    "items": [
     "flower",
     "crown"
@@ -2351,6 +2359,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "bird"
+   ],
    "items": [
     "cross",
     "crown"
@@ -2711,6 +2722,7 @@
   "markers": {
    "animals": [
     "pigeon",
+    "shell",
     "bird"
    ],
    "items": [
@@ -2924,6 +2936,10 @@
    }
   },
   "markers": {
+   "animals": [
+    "salmon",
+    "fish"
+   ],
    "items": [
     "crown"
    ]
@@ -4416,6 +4432,11 @@
     "green": 0.12150750625521267,
     "black": 0.0009382819015846538
    }
+  },
+  "markers": {
+   "animals": [
+    "fish"
+   ]
   }
  },
  {
@@ -5023,6 +5044,10 @@
    }
   },
   "markers": {
+   "animals": [
+    "stork",
+    "bird"
+   ],
    "items": [
     "crown"
    ]
@@ -5584,7 +5609,8 @@
   },
   "markers": {
    "animals": [
-    "fish"
+    "fish",
+    "salmon"
    ],
    "items": [
     "lily",
@@ -5761,7 +5787,8 @@
   },
   "markers": {
    "animals": [
-    "snake"
+    "snake",
+    "bird"
    ],
    "items": [
     "key",

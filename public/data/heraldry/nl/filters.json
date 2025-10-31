@@ -2,7 +2,7 @@
   "animals": [
     {
       "name": "lion",
-      "phrases": ["halfleeuw", "leeuw", "leeuwen"]
+      "phrases": ["halfleeuw", "leeuw", "leeuwen", "leeuwenkoppen"]
     },
     {
       "name": "leopard",
@@ -18,12 +18,21 @@
         "reebokje",
         "reebokjes",
         "ree",
-        "reeën"
+        "reeën",
+        "hertshoornen"
       ]
     },
     {
+      "name": "cat",
+      "phrases": ["kat"]
+    },
+    {
       "name": "horse",
-      "phrases": ["paard", "paarden"]
+      "phrases": ["paard", "paarden", "zeepaarden"]
+    },
+    {
+      "name": "unusualHybrid",
+      "phrases": ["zeepaarden"]
     },
     {
       "name": "griffin",
@@ -39,7 +48,7 @@
     },
     {
       "name": "eagle",
-      "phrases": ["adelaar", "adelaars", "arend", "arenden"]
+      "phrases": ["adelaar", "adelaars", "arend", "arenden", "adelaarspoot"]
     },
     {
       "name": "falcon",
@@ -116,16 +125,32 @@
       ]
     },
     {
+      "name": "whale",
+      "phrases": ["walvis"]
+    },
+    {
+      "name": "stork",
+      "phrases": ["lepelaar"]
+    },
+    {
+      "name": "crab",
+      "phrases": ["krabben"]
+    },
+    {
       "name": "bird",
-      "phrases": ["vogels", "kauwen"]
+      "phrases": [
+        "vogels",
+        "kauwen",
+        "merlet",
+        "maarlen",
+        "meerlen",
+        "fazant",
+        "vink"
+      ]
     },
     {
       "name": "moose",
       "phrases": ["eland", "elanden"]
-    },
-    {
-      "name": "shell",
-      "phrases": ["schelp", "schelpen", "schelpje", "schelpjes"]
     },
     {
       "name": "bullBison",
@@ -160,7 +185,10 @@
         "visachtig",
         "visgraaf",
         "vissen",
-        "zalm"
+        "zalm",
+        "baars",
+        "baarsen",
+        "haringen"
       ]
     },
     {
@@ -180,8 +208,12 @@
       "phrases": ["hagedis", "hagedissen"]
     },
     {
+      "name": "salmon",
+      "phrases": ["zalmen", "zalm"]
+    },
+    {
       "name": "dog",
-      "phrases": ["hond", "honden", "hondenkoppen"]
+      "phrases": ["hond", "honden", "hondenkoppen", "hazewindhonden"]
     },
     {
       "name": "crayfish",
@@ -193,7 +225,7 @@
     },
     {
       "name": "goat",
-      "phrases": ["geit", "geiten"]
+      "phrases": ["geit", "geiten", "bok"]
     },
     {
       "name": "ram",
@@ -229,6 +261,22 @@
     {
       "name": "beaver",
       "phrases": ["bever", "bevers"]
+    },
+    {
+      "name": "butterfly",
+      "phrases": ["vlinder"]
+    },
+    {
+      "name": "shell",
+      "phrases": [
+        "jacobsschelpen",
+        "st.jacobsschelpen",
+        "schelp",
+        "schelpen",
+        "schelpje",
+        "schelpjes",
+        "zeehorens"
+      ]
     }
   ],
   "items": [

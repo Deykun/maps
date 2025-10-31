@@ -1016,6 +1016,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "shell"
+   ],
    "items": [
     "earOfGrain",
     "crown",
@@ -1189,8 +1192,8 @@
   },
   "markers": {
    "animals": [
-    "shell",
-    "unicorn"
+    "unicorn",
+    "shell"
    ],
    "items": [
     "horn",
@@ -1618,6 +1621,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "dog"
+   ],
    "items": [
     "jewelry",
     "crown"
@@ -1723,7 +1729,8 @@
   "markers": {
    "animals": [
     "lion",
-    "fish"
+    "fish",
+    "salmon"
    ],
    "items": [
     "crown"
@@ -2384,6 +2391,11 @@
     "gold": 0.007275287491199249,
     "red": 0.12062896033794884
    }
+  },
+  "markers": {
+   "animals": [
+    "shell"
+   ]
   }
  },
  {
@@ -2570,7 +2582,8 @@
   },
   "markers": {
    "animals": [
-    "lion"
+    "lion",
+    "bird"
    ],
    "items": [
     "walls",
@@ -2682,7 +2695,9 @@
   },
   "markers": {
    "animals": [
-    "fish"
+    "lion",
+    "fish",
+    "salmon"
    ],
    "items": [
     "apple",
@@ -2785,6 +2800,11 @@
     "white": 0.0002424536307431204,
     "green": 0.00020204469228593365
    }
+  },
+  "markers": {
+   "animals": [
+    "lion"
+   ]
   }
  },
  {
@@ -2955,6 +2975,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "lion"
+   ],
    "items": [
     "crown"
    ]
@@ -2992,6 +3015,11 @@
     "red": 0.47297013483429245,
     "black": 0.0005040534296635443
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ]
   }
  },
  {
@@ -3024,7 +3052,8 @@
   },
   "markers": {
    "animals": [
-    "fish"
+    "fish",
+    "salmon"
    ],
    "items": [
     "cross"
@@ -5143,6 +5172,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "fish"
+   ],
    "items": [
     "cross"
    ]
@@ -5657,6 +5689,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "bird"
+   ],
    "items": [
     "cross",
     "crown"
@@ -6931,6 +6966,12 @@
     "white": 0.0007320941961199008,
     "black": 0.00044739089762882824
    }
+  },
+  "markers": {
+   "animals": [
+    "salmon",
+    "fish"
+   ]
   }
  },
  {
@@ -6965,6 +7006,12 @@
     "white": 0.011266116240289585,
     "black": 0.00044739089762882824
    }
+  },
+  "markers": {
+   "animals": [
+    "salmon",
+    "fish"
+   ]
   }
  },
  {
@@ -7157,6 +7204,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "goat"
+   ],
    "items": [
     "angel"
    ]
@@ -7213,7 +7263,8 @@
    "animals": [
     "lion",
     "raven",
-    "bird"
+    "bird",
+    "goat"
    ],
    "items": [
     "crown"
@@ -7233,6 +7284,12 @@
     "black": 0.001014465526958482,
     "green": 0.04200638737554011
    }
+  },
+  "markers": {
+   "animals": [
+    "butterfly",
+    "insect"
+   ]
   }
  },
  {
@@ -7304,6 +7361,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "bird"
+   ],
    "items": [
     "crown"
    ]
@@ -7591,6 +7651,12 @@
     "gold": 0.015292634318949038,
     "black": 0.0004880627974132672
    }
+  },
+  "markers": {
+   "animals": [
+    "salmon",
+    "fish"
+   ]
   }
  },
  {
@@ -7606,6 +7672,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "lion"
+   ],
    "items": [
     "crown",
     "saint"
@@ -7836,6 +7905,12 @@
     "red": 0.31231951844470657,
     "black": 0.00044739089762882824
    }
+  },
+  "markers": {
+   "animals": [
+    "salmon",
+    "fish"
+   ]
   }
  },
  {
@@ -7878,6 +7953,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "bird"
+   ],
    "items": [
     "walls",
     "crown"
@@ -8768,7 +8846,8 @@
   },
   "markers": {
    "animals": [
-    "lion"
+    "lion",
+    "fish"
    ]
   }
  },
@@ -8786,6 +8865,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "goat"
+   ],
    "items": [
     "saint"
    ]
@@ -9049,6 +9131,12 @@
     "grey": 0.35358909036415404,
     "blue": 0.0000749288176232579
    }
+  },
+  "markers": {
+   "animals": [
+    "salmon",
+    "fish"
+   ]
   }
  },
  {
@@ -9169,6 +9257,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "goat"
+   ],
    "items": [
     "saint"
    ]
@@ -9552,6 +9643,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "bird"
+   ],
    "items": [
     "saint"
    ]
@@ -9608,6 +9702,10 @@
    }
   },
   "markers": {
+   "animals": [
+    "butterfly",
+    "insect"
+   ],
    "items": [
     "tree"
    ]
@@ -9671,6 +9769,7 @@
    "animals": [
     "duck",
     "fish",
+    "salmon",
     "bird"
    ],
    "items": [
@@ -9774,7 +9873,8 @@
   "markers": {
    "animals": [
     "bird",
-    "fish"
+    "fish",
+    "salmon"
    ],
    "items": [
     "tree",
@@ -10287,6 +10387,11 @@
     "grey": 0.000579598145285935,
     "black": 0.00023183925811437405
    }
+  },
+  "markers": {
+   "animals": [
+    "fish"
+   ]
   }
  },
  {
@@ -10379,6 +10484,10 @@
    }
   },
   "markers": {
+   "animals": [
+    "whale",
+    "fish"
+   ],
    "items": [
     "crown"
    ]
@@ -10530,6 +10639,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "fish"
+   ],
    "items": [
     "crown"
    ]
@@ -10655,6 +10767,12 @@
     "gold": 0.17296631059983567,
     "white": 0.0007469933517591694
    }
+  },
+  "markers": {
+   "animals": [
+    "stork",
+    "bird"
+   ]
   }
  },
  {
@@ -10690,6 +10808,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "cat"
+   ],
    "items": [
     "tree"
    ]
@@ -11016,6 +11137,11 @@
     "black": 0.0001870207593042828,
     "green": 0.00007480830372171311
    }
+  },
+  "markers": {
+   "animals": [
+    "fish"
+   ]
   }
  },
  {
@@ -12572,7 +12698,8 @@
   },
   "markers": {
    "animals": [
-    "fish"
+    "fish",
+    "salmon"
    ],
    "items": [
     "lily",
@@ -12635,7 +12762,8 @@
   },
   "markers": {
    "animals": [
-    "fish"
+    "fish",
+    "salmon"
    ]
   }
  },
@@ -12758,6 +12886,11 @@
     "red": 0.17126807696904506,
     "blue": 0.24194255208955817
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ]
   }
  },
  {
@@ -14123,6 +14256,11 @@
     "black": 0.07507146080938769,
     "white": 0.0009402738077328118
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ]
   }
  },
  {
@@ -14139,6 +14277,11 @@
     "green": 0.000040094623311013995,
     "white": 0.0010424602060863637
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ]
   }
  },
  {
@@ -15440,6 +15583,12 @@
     "red": 0.13102778317466485,
     "grey": 0.0015931610646978823
    }
+  },
+  "markers": {
+   "animals": [
+    "eagle",
+    "bird"
+   ]
   }
  },
  {
@@ -15524,6 +15673,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "shell"
+   ],
    "items": [
     "crown"
    ]
@@ -15565,6 +15717,11 @@
     "grey": 0.1475421600287047,
     "white": 0.000968783638320775
    }
+  },
+  "markers": {
+   "animals": [
+    "shell"
+   ]
   }
  },
  {
@@ -15920,6 +16077,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "bird"
+   ],
    "items": [
     "jewelry"
    ]
@@ -16049,6 +16209,7 @@
   "markers": {
    "animals": [
     "pigeon",
+    "shell",
     "bird"
    ],
    "items": [
@@ -16974,7 +17135,8 @@
   "markers": {
    "animals": [
     "lion",
-    "fish"
+    "fish",
+    "salmon"
    ]
   }
  },
@@ -17060,6 +17222,7 @@
    "animals": [
     "eagle",
     "fish",
+    "salmon",
     "bird"
    ],
    "items": [
@@ -17317,6 +17480,11 @@
     "black": 0.04783758556316117,
     "white": 0.00023335407591785936
    }
+  },
+  "markers": {
+   "animals": [
+    "deer"
+   ]
   }
  },
  {
@@ -18029,6 +18197,11 @@
     "white": 0.0038624377924682462,
     "black": 0.015338334695090248
    }
+  },
+  "markers": {
+   "animals": [
+    "crab"
+   ]
   }
  },
  {
@@ -20128,6 +20301,11 @@
     "black": 0.01595939086294416,
     "green": 0.00048730964467005075
    }
+  },
+  "markers": {
+   "animals": [
+    "lion"
+   ]
   }
  },
  {
