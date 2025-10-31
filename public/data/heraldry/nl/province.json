@@ -29,6 +29,13 @@
             "width": 320,
             "height": 257
         },
+        "place": {
+            "name": "Drenthe",
+            "coordinates": {
+                "lat": 52.91666667,
+                "lon": 6.58333333
+            }
+        },
         "country": "nl",
         "id": "province-1",
         "index": 1
@@ -118,6 +125,13 @@
             "width": 320,
             "height": 230
         },
+        "place": {
+            "name": "Groningen (provincie)",
+            "coordinates": {
+                "lat": 53.25,
+                "lon": 6.75
+            }
+        },
         "country": "nl",
         "id": "province-5",
         "index": 5
@@ -136,10 +150,10 @@
             "height": 213
         },
         "place": {
-            "name": "Groningen (provincie)",
+            "name": "Groningen (gemeente)",
             "coordinates": {
-                "lat": 53.25,
-                "lon": 6.75
+                "lat": 53.21666667,
+                "lon": 6.56666667
             }
         },
         "country": "nl",
@@ -158,6 +172,13 @@
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Limburg-nl-wapen.svg/langnl-330px-Limburg-nl-wapen.svg.png",
             "width": 320,
             "height": 591
+        },
+        "place": {
+            "name": "Limburg (Belgische stad)",
+            "coordinates": {
+                "lat": 50.61223056,
+                "lon": 5.94030278
+            }
         },
         "country": "nl",
         "id": "province-7",
@@ -225,10 +246,10 @@
             "height": 212
         },
         "place": {
-            "name": "Utrecht (provincie)",
+            "name": "Utrecht (stad)",
             "coordinates": {
-                "lat": 52.08333333,
-                "lon": 5.16666667
+                "lat": 52.08888889,
+                "lon": 5.11555556
             }
         },
         "country": "nl",
@@ -249,10 +270,10 @@
             "height": 219
         },
         "place": {
-            "name": "Zeeland (provincie)",
+            "name": "Zeeland (Noord-Brabant)",
             "coordinates": {
-                "lat": 51.5,
-                "lon": 3.83333333
+                "lat": 51.69666667,
+                "lon": 5.67305556
             }
         },
         "country": "nl",

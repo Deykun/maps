@@ -139,6 +139,16 @@ const colorMatchers: {
         get: nearestColor.from({ color: "#2e3192" }) as NearestColorCallback,
         thresholdDistance: 60,
       },
+      {
+        color: "#0066d2",
+        get: nearestColor.from({ color: "#0066d2" }) as NearestColorCallback,
+        thresholdDistance: 60,
+      },
+      {
+        color: "#033578",
+        get: nearestColor.from({ color: "#033578" }) as NearestColorCallback,
+        thresholdDistance: 40,
+      },
     ],
   },
   gold: {

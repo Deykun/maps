@@ -2033,6 +2033,13 @@
   "type": [
    "gemeente"
   ],
+  "place": {
+   "name": "Scherpenzeel (Gelderland)",
+   "coordinates": {
+    "lat": 52.07916667,
+    "lon": 5.48944444
+   }
+  },
   "imagesList": [
    {
     "width": "80w",
@@ -2107,6 +2114,13 @@
   "type": [
    "gemeente"
   ],
+  "place": {
+   "name": "Wageningen (Nederland)",
+   "coordinates": {
+    "lat": 51.96666667,
+    "lon": 5.66666667
+   }
+  },
   "imagesList": [
    {
     "width": "80w",
@@ -2343,6 +2357,13 @@
   "type": [
    "gemeente"
   ],
+  "place": {
+   "name": "Appingedam",
+   "coordinates": {
+    "lat": 53.31666667,
+    "lon": 6.86666667
+   }
+  },
   "imagesList": [
    {
     "width": "80w",
@@ -2364,7 +2385,7 @@
    "gemeente"
   ],
   "place": {
-   "name": "Groningen (stad)",
+   "name": "Groningen (gemeente)",
    "coordinates": {
     "lat": 53.21666667,
     "lon": 6.56666667
@@ -2552,6 +2573,13 @@
   "type": [
    "gemeente"
   ],
+  "place": {
+   "name": "Agodorp",
+   "coordinates": {
+    "lat": 52.87153889,
+    "lon": 7.08219167
+   }
+  },
   "imagesList": [
    {
     "width": "80w",
@@ -2572,6 +2600,13 @@
   "type": [
    "gemeente"
   ],
+  "place": {
+   "name": "Aduard",
+   "coordinates": {
+    "lat": 53.25472222,
+    "lon": 6.46
+   }
+  },
   "imagesList": [
    {
     "width": "80w",
@@ -2593,10 +2628,10 @@
    "gemeente"
   ],
   "place": {
-   "name": "Beek (plaats in Nederlands-Limburg)",
+   "name": "Beek (gemeente)",
    "coordinates": {
-    "lat": 50.93861111,
-    "lon": 5.79666667
+    "lat": 50.93944444,
+    "lon": 5.79611111
    }
   },
   "imagesList": [
@@ -2673,6 +2708,13 @@
   "type": [
    "gemeente"
   ],
+  "place": {
+   "name": "Bergen (gemeente in Limburg)",
+   "coordinates": {
+    "lat": 51.59916667,
+    "lon": 6.03361111
+   }
+  },
   "imagesList": [
    {
     "width": "80w",
@@ -3422,6 +3464,13 @@
   "type": [
    "gemeente"
   ],
+  "place": {
+   "name": "Altena (Nederlandse gemeente)",
+   "coordinates": {
+    "lat": 51.46,
+    "lon": 4.57
+   }
+  },
   "imagesList": [
    {
     "width": "80w",
@@ -3442,6 +3491,13 @@
   "type": [
    "gemeente"
   ],
+  "place": {
+   "name": "Asten (gemeente)",
+   "coordinates": {
+    "lat": 51.40305556,
+    "lon": 5.74722222
+   }
+  },
   "imagesList": [
    {
     "width": "80w",
@@ -3733,9 +3789,9 @@
    "gemeente"
   ],
   "place": {
-   "name": "Deurne (Noord-Brabant)",
+   "name": "Deurne (gemeente)",
    "coordinates": {
-    "lat": 51.46444444,
+    "lat": 51.46388889,
     "lon": 5.79472222
    }
   },
@@ -4137,6 +4193,13 @@
   "type": [
    "gemeente"
   ],
+  "place": {
+   "name": "Heusden (gemeente)",
+   "coordinates": {
+    "lat": 51.70416667,
+    "lon": 5.16861111
+   }
+  },
   "imagesList": [
    {
     "width": "80w",
@@ -4211,6 +4274,13 @@
   "type": [
    "gemeente"
   ],
+  "place": {
+   "name": "Land van Cuijk (gemeente)",
+   "coordinates": {
+    "lat": 51.66666667,
+    "lon": 5.86666667
+   }
+  },
   "imagesList": [
    {
     "width": "80w",
@@ -5054,6 +5124,13 @@
   "type": [
    "gemeente"
   ],
+  "place": {
+   "name": "Bloemendaal (Noord-Holland)",
+   "coordinates": {
+    "lat": 52.40277778,
+    "lon": 4.62805556
+   }
+  },
   "imagesList": [
    {
     "width": "80w",
@@ -5371,6 +5448,13 @@
   "type": [
    "gemeente"
   ],
+  "place": {
+   "name": "Heemstede (Noord-Holland)",
+   "coordinates": {
+    "lat": 52.35277778,
+    "lon": 4.62
+   }
+  },
   "imagesList": [
    {
     "width": "80w",
@@ -5581,10 +5665,10 @@
    "gemeente"
   ],
   "place": {
-   "name": "Laren (Noord-Holland)",
+   "name": "Laren (Gelderland)",
    "coordinates": {
-    "lat": 52.2564,
-    "lon": 5.22475
+    "lat": 52.19333333,
+    "lon": 6.36555556
    }
   },
   "imagesList": [
@@ -6276,10 +6360,10 @@
    "gemeente"
   ],
   "place": {
-   "name": "Hengelo (Overijssel)",
+   "name": "Hengelo (Gelderland)",
    "coordinates": {
-    "lat": 52.26555556,
-    "lon": 6.79305556
+    "lat": 52.05166667,
+    "lon": 6.31055556
    }
   },
   "imagesList": [
@@ -8510,10 +8594,10 @@
    "gemeente"
   ],
   "place": {
-   "name": "Noordwijk (Zuid-Holland)",
+   "name": "Noordwijk (Drenthe)",
    "coordinates": {
-    "lat": 52.23944444,
-    "lon": 4.44777778
+    "lat": 52.4,
+    "lon": 6.17
    }
   },
   "imagesList": [
@@ -8645,10 +8729,10 @@
    "gemeente"
   ],
   "place": {
-   "name": "Rijswijk (Zuid-Holland)",
+   "name": "Rijswijk (Gelderland)",
    "coordinates": {
-    "lat": 52.04555556,
-    "lon": 4.33
+    "lat": 51.9575,
+    "lon": 5.35638889
    }
   },
   "imagesList": [

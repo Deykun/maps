@@ -25,7 +25,7 @@ fetchData({
 });
 
 const formerAdministrativeDivisions: AdministrativeUnit[] = Object.values(
-  urls.historicGameenteBySource
+  urls.historicGemeenteBySource
 ).flatMap(({ title, urls }) =>
   urls.map((unit) => ({ ...unit, type: ["formerGemeente"], partOf: title }))
 );
