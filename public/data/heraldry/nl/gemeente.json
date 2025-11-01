@@ -1845,6 +1845,13 @@
             "width": 320,
             "height": 507
         },
+        "place": {
+            "name": "Scherpenzeel (Gelderland)",
+            "coordinates": {
+                "lat": 52.07916667,
+                "lon": 5.48944444
+            }
+        },
         "country": "nl",
         "id": "gemeente-78",
         "index": 78
@@ -1909,6 +1916,13 @@
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Coat_of_arms_of_Wageningen.svg/langnl-330px-Coat_of_arms_of_Wageningen.svg.png",
             "width": 320,
             "height": 227
+        },
+        "place": {
+            "name": "Wageningen (Nederland)",
+            "coordinates": {
+                "lat": 51.96666667,
+                "lon": 5.66666667
+            }
         },
         "country": "nl",
         "id": "gemeente-81",
@@ -2130,6 +2144,13 @@
             "width": 320,
             "height": 204
         },
+        "place": {
+            "name": "Appingedam",
+            "coordinates": {
+                "lat": 53.31666667,
+                "lon": 6.86666667
+            }
+        },
         "country": "nl",
         "id": "gemeente-91",
         "index": 91
@@ -2148,7 +2169,7 @@
             "height": 218
         },
         "place": {
-            "name": "Groningen (stad)",
+            "name": "Groningen (gemeente)",
             "coordinates": {
                 "lat": 53.21666667,
                 "lon": 6.56666667
@@ -2315,6 +2336,13 @@
             "width": 320,
             "height": 549
         },
+        "place": {
+            "name": "Agodorp",
+            "coordinates": {
+                "lat": 52.87153889,
+                "lon": 7.08219167
+            }
+        },
         "country": "nl",
         "id": "gemeente-99",
         "index": 99
@@ -2331,6 +2359,13 @@
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Westerkwartier_wapen_2018.svg/langnl-330px-Westerkwartier_wapen_2018.svg.png",
             "width": 320,
             "height": 203
+        },
+        "place": {
+            "name": "Aduard",
+            "coordinates": {
+                "lat": 53.25472222,
+                "lon": 6.46
+            }
         },
         "country": "nl",
         "id": "gemeente-100",
@@ -2361,10 +2396,10 @@
             "height": 542
         },
         "place": {
-            "name": "Beek (plaats in Nederlands-Limburg)",
+            "name": "Beek (gemeente)",
             "coordinates": {
-                "lat": 50.93861111,
-                "lon": 5.79666667
+                "lat": 50.93944444,
+                "lon": 5.79611111
             }
         },
         "country": "nl",
@@ -2431,6 +2466,13 @@
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Bergen_L-wapen.svg/langnl-330px-Bergen_L-wapen.svg.png",
             "width": 320,
             "height": 390
+        },
+        "place": {
+            "name": "Bergen (gemeente in Limburg)",
+            "coordinates": {
+                "lat": 51.59916667,
+                "lon": 6.03361111
+            }
         },
         "country": "nl",
         "id": "gemeente-105",
@@ -3108,6 +3150,13 @@
             "width": 320,
             "height": 529
         },
+        "place": {
+            "name": "Altena (Nederlandse gemeente)",
+            "coordinates": {
+                "lat": 51.46,
+                "lon": 4.57
+            }
+        },
         "country": "nl",
         "id": "gemeente-134",
         "index": 134
@@ -3124,6 +3173,13 @@
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Asten_wapen.svg/langnl-330px-Asten_wapen.svg.png",
             "width": 320,
             "height": 455
+        },
+        "place": {
+            "name": "Asten (gemeente)",
+            "coordinates": {
+                "lat": 51.40305556,
+                "lon": 5.74722222
+            }
         },
         "country": "nl",
         "id": "gemeente-135",
@@ -3383,9 +3439,9 @@
             "height": 553
         },
         "place": {
-            "name": "Deurne (Noord-Brabant)",
+            "name": "Deurne (gemeente)",
             "coordinates": {
-                "lat": 51.46444444,
+                "lat": 51.46388889,
                 "lon": 5.79472222
             }
         },
@@ -3742,6 +3798,13 @@
             "width": 320,
             "height": 201
         },
+        "place": {
+            "name": "Heusden (gemeente)",
+            "coordinates": {
+                "lat": 51.70416667,
+                "lon": 5.16861111
+            }
+        },
         "country": "nl",
         "id": "gemeente-161",
         "index": 161
@@ -3806,6 +3869,13 @@
             "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Gemeentewapen_van_Land_van_Cuijk.svg/langnl-330px-Gemeentewapen_van_Land_van_Cuijk.svg.png",
             "width": 320,
             "height": 511
+        },
+        "place": {
+            "name": "Land van Cuijk (gemeente)",
+            "coordinates": {
+                "lat": 51.66666667,
+                "lon": 5.86666667
+            }
         },
         "country": "nl",
         "id": "gemeente-164",
@@ -4565,6 +4635,13 @@
             "width": 320,
             "height": 512
         },
+        "place": {
+            "name": "Bloemendaal (Noord-Holland)",
+            "coordinates": {
+                "lat": 52.40277778,
+                "lon": 4.62805556
+            }
+        },
         "country": "nl",
         "id": "gemeente-197",
         "index": 197
@@ -4846,6 +4923,13 @@
             "width": 320,
             "height": 207
         },
+        "place": {
+            "name": "Heemstede (Noord-Holland)",
+            "coordinates": {
+                "lat": 52.35277778,
+                "lon": 4.62
+            }
+        },
         "country": "nl",
         "id": "gemeente-209",
         "index": 209
@@ -5032,10 +5116,10 @@
             "height": 382
         },
         "place": {
-            "name": "Laren (Noord-Holland)",
+            "name": "Laren (Gelderland)",
             "coordinates": {
-                "lat": 52.2564,
-                "lon": 5.22475
+                "lat": 52.19333333,
+                "lon": 6.36555556
             }
         },
         "country": "nl",
@@ -5660,10 +5744,10 @@
             "height": 390
         },
         "place": {
-            "name": "Hengelo (Overijssel)",
+            "name": "Hengelo (Gelderland)",
             "coordinates": {
-                "lat": 52.26555556,
-                "lon": 6.79305556
+                "lat": 52.05166667,
+                "lon": 6.31055556
             }
         },
         "country": "nl",
@@ -7697,10 +7781,10 @@
             "height": 378
         },
         "place": {
-            "name": "Noordwijk (Zuid-Holland)",
+            "name": "Noordwijk (Drenthe)",
             "coordinates": {
-                "lat": 52.23944444,
-                "lon": 4.44777778
+                "lat": 52.4,
+                "lon": 6.17
             }
         },
         "country": "nl",
@@ -7817,10 +7901,10 @@
             "height": 168
         },
         "place": {
-            "name": "Rijswijk (Zuid-Holland)",
+            "name": "Rijswijk (Gelderland)",
             "coordinates": {
-                "lat": 52.04555556,
-                "lon": 4.33
+                "lat": 51.9575,
+                "lon": 5.35638889
             }
         },
         "country": "nl",

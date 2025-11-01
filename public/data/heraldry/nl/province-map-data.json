@@ -28,6 +28,13 @@
   "type": [
    "province"
   ],
+  "place": {
+   "name": "Drenthe",
+   "coordinates": {
+    "lat": 52.91666667,
+    "lon": 6.58333333
+   }
+  },
   "imagesList": [
    {
     "width": "80w",
@@ -129,6 +136,13 @@
   "type": [
    "province"
   ],
+  "place": {
+   "name": "Groningen (provincie)",
+   "coordinates": {
+    "lat": 53.25,
+    "lon": 6.75
+   }
+  },
   "imagesList": [
    {
     "width": "80w",
@@ -150,10 +164,10 @@
    "province"
   ],
   "place": {
-   "name": "Groningen (provincie)",
+   "name": "Groningen (gemeente)",
    "coordinates": {
-    "lat": 53.25,
-    "lon": 6.75
+    "lat": 53.21666667,
+    "lon": 6.56666667
    }
   },
   "imagesList": [
@@ -176,6 +190,13 @@
   "type": [
    "province"
   ],
+  "place": {
+   "name": "Limburg (Belgische stad)",
+   "coordinates": {
+    "lat": 50.61223056,
+    "lon": 5.94030278
+   }
+  },
   "imagesList": [
    {
     "width": "80w",
@@ -251,10 +272,10 @@
    "province"
   ],
   "place": {
-   "name": "Utrecht (provincie)",
+   "name": "Utrecht (stad)",
    "coordinates": {
-    "lat": 52.08333333,
-    "lon": 5.16666667
+    "lat": 52.08888889,
+    "lon": 5.11555556
    }
   },
   "imagesList": [
@@ -278,10 +299,10 @@
    "province"
   ],
   "place": {
-   "name": "Zeeland (provincie)",
+   "name": "Zeeland (Noord-Brabant)",
    "coordinates": {
-    "lat": 51.5,
-    "lon": 3.83333333
+    "lat": 51.69666667,
+    "lon": 5.67305556
    }
   },
   "imagesList": [

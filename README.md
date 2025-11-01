@@ -18,7 +18,7 @@ https://deykun.github.io/maps/eesti-heraldika
 https://deykun.github.io/maps/suomalainen-heraldikka
 
 ### Coats of arms in the Netherlands 🇳🇱 (🧪 beta)
-https://deykun.github.io/maps/nederlandse-heraldiek
+https://deykun.github.io/maps/nederlandse-heraldiek (Data reindexed: 31.10.2025)
 
 ### Coats of arms in Norway 🇳🇴
 https://deykun.github.io/maps/norges-heraldikk

@@ -199,11 +199,23 @@ const fetchDivisionFromAdministrativeUnit = async (
     }
 
     if (country === "nl") {
-      const name = division.title.replace("Wapen van ", "");
+      const name = division.title
+        .replace("Wapen van ", "")
+        .replace(/ \(.*\)/, "");
 
       if (name) {
         locationPages.push(name);
         locationPages.push(`${name} (gemeente)`);
+        locationPages.push(`${name} (Drenthe)`);
+        locationPages.push(`${name} (dorp)`);
+        locationPages.push(`${name} (buurtschap)`);
+        locationPages.push(`${name} (plaats)`);
+        locationPages.push(`${name} (Nederland)`);
+        locationPages.push(`${name} (Gelderland)`);
+        locationPages.push(`${name} (Zuid-Holland)`);
+        locationPages.push(`${name} (Neder-Betuwe)`);
+        locationPages.push(`${name} (Noord-Holland)`);
+        locationPages.push(`${name} (Bernheze)`);
       }
     }
 

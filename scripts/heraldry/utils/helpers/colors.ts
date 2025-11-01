@@ -2,6 +2,12 @@ import { ImageColors } from "../../../../src/topic/Heraldry/types";
 import sharp from "sharp";
 import { getColorsNames } from "./colors/get-colors-names";
 
+export const roundWithPrecision = (value: number, precision: number) => {
+  const multiplier = Math.pow(10, precision || 0);
+
+  return Math.round(value * multiplier) / multiplier;
+};
+
 export const getImageColors = async (
   imagePath: string
 ): Promise<ImageColors> => {
@@ -43,9 +49,12 @@ export const getImageColors = async (
   const colorsByNamesAsPercentages = Object.fromEntries(
     Object.entries(imageColorsByNames).map(
       ([colorName, numberOfPixelsWithColor]) => {
-        return colorName === "transparent"
-          ? [colorName, numberOfPixelsWithColor / size]
-          : [colorName, numberOfPixelsWithColor / sizeWithoutTransparent];
+        const percentage =
+          colorName === "transparent"
+            ? numberOfPixelsWithColor / size
+            : numberOfPixelsWithColor / sizeWithoutTransparent;
+
+        return [colorName, roundWithPrecision(percentage, 4)];
       }
     )
   );

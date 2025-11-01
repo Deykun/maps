@@ -1,1 +1,36 @@
-[]
+[
+    {
+        "title": "Missing corrdinates for 'Wapen van Brabant'. Page with the location not found.",
+        "details": [
+            "Tried pages: Hertogdom Brabant, Brabant, Brabant (gemeente), Brabant (Drenthe), Brabant (dorp), Brabant (buurtschap), Brabant (plaats), Brabant (Nederland), Brabant (Gelderland), Brabant (Zuid-Holland), Brabant (Neder-Betuwe), Brabant (Noord-Holland), Brabant (Bernheze).",
+            "You can check if there is a potential way to automate it: scripts/heraldry/utils/fetch-data.ts.",
+            "",
+            "Or just tell the tool which page name to use in scripts/heraldry/utils/constants.ts.",
+            "",
+            "You will find the proper name of the page in the URL, make sure it has lat and lon.",
+            "",
+            "List of errors:",
+            "Page 'Hertogdom Brabant' exists but without location, no location.",
+            "Page 'Brabant' exists but without location, no location.",
+            "Page 'Brabant (gemeente)' does not exist.",
+            "Page 'Brabant (Drenthe)' does not exist.",
+            "Page 'Brabant (dorp)' does not exist.",
+            "Page 'Brabant (buurtschap)' does not exist.",
+            "Page 'Brabant (plaats)' does not exist.",
+            "Page 'Brabant (Nederland)' does not exist.",
+            "Page 'Brabant (Gelderland)' does not exist.",
+            "Page 'Brabant (Zuid-Holland)' does not exist.",
+            "Page 'Brabant (Neder-Betuwe)' does not exist.",
+            "Page 'Brabant (Noord-Holland)' does not exist.",
+            "Page 'Brabant (Bernheze)' does not exist.",
+            "",
+            "Item categories:",
+            "Categorie:Belgisch subnationaal wapen",
+            "Categorie:Nederlands provinciewapen",
+            "Categorie:Noord-Brabants symbool",
+            "Categorie:Vlaams-Brabant",
+            "Categorie:Waals-Brabant"
+        ],
+        "url": "https://nl.wikipedia.org/wiki/Wapen_van_Brabant"
+    }
+]
