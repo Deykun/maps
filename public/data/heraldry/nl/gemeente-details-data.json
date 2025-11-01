@@ -563,7 +563,8 @@
   },
   "markers": {
    "items": [
-    "tree"
+    "tree",
+    "sword"
    ]
   }
  },
@@ -868,7 +869,8 @@
   "markers": {
    "items": [
     "tree",
-    "crown"
+    "crown",
+    "sword"
    ]
   }
  },
@@ -1411,6 +1413,10 @@
    }
   },
   "markers": {
+   "animals": [
+    "parrot",
+    "bird"
+   ],
    "items": [
     "walls",
     "crown"
@@ -1483,6 +1489,7 @@
     "lily",
     "cross",
     "crown",
+    "sword",
     "flower"
    ]
   }
@@ -1923,6 +1930,7 @@
    "items": [
     "rose",
     "crown",
+    "sword",
     "flower"
    ]
   }
@@ -1995,7 +2003,8 @@
    ],
    "items": [
     "key",
-    "crown"
+    "crown",
+    "anchor"
    ]
   }
  },
@@ -2106,7 +2115,8 @@
   "markers": {
    "items": [
     "boat",
-    "crown"
+    "crown",
+    "bell"
    ]
   }
  },
@@ -2225,7 +2235,8 @@
    ],
    "items": [
     "cross",
-    "crown"
+    "crown",
+    "sword"
    ]
   }
  },
@@ -2291,7 +2302,8 @@
     "arrow",
     "walls",
     "cross",
-    "crown"
+    "crown",
+    "sword"
    ]
   }
  },
@@ -2434,7 +2446,8 @@
     "lion"
    ],
    "items": [
-    "saint"
+    "saint",
+    "sword"
    ]
   }
  },
@@ -2480,7 +2493,8 @@
    "items": [
     "hammer",
     "crozier",
-    "saint"
+    "saint",
+    "sword"
    ]
   }
  },
@@ -2522,7 +2536,10 @@
   },
   "markers": {
    "items": [
-    "crown"
+    "crown",
+    "horn",
+    "sword",
+    "musicalInstrument"
    ]
   }
  },
@@ -2541,7 +2558,8 @@
   },
   "markers": {
    "items": [
-    "crown"
+    "crown",
+    "sword"
    ]
   }
  },
@@ -2820,6 +2838,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "anchor"
    ]
   }
  },
@@ -2894,7 +2915,9 @@
   },
   "markers": {
    "items": [
-    "crown"
+    "crown",
+    "horn",
+    "musicalInstrument"
    ]
   }
  },
@@ -3167,6 +3190,10 @@
     "eagle",
     "crane",
     "bird"
+   ],
+   "items": [
+    "horn",
+    "musicalInstrument"
    ]
   }
  },
@@ -3277,7 +3304,9 @@
     "lion"
    ],
    "items": [
-    "crown"
+    "crown",
+    "horn",
+    "musicalInstrument"
    ]
   }
  },
@@ -3441,7 +3470,9 @@
   },
   "markers": {
    "items": [
-    "tree"
+    "tree",
+    "horn",
+    "musicalInstrument"
    ]
   }
  },
@@ -3596,7 +3627,9 @@
   },
   "markers": {
    "items": [
-    "crown"
+    "crown",
+    "horn",
+    "musicalInstrument"
    ]
   }
  },
@@ -3859,7 +3892,8 @@
    "items": [
     "cross",
     "angel",
-    "crown"
+    "crown",
+    "sword"
    ]
   }
  },
@@ -4393,6 +4427,7 @@
    "items": [
     "rose",
     "crown",
+    "sword",
     "flower"
    ]
   }
@@ -4482,7 +4517,9 @@
    "items": [
     "tree",
     "cross",
-    "crown"
+    "crown",
+    "bell",
+    "sword"
    ]
   }
  },
@@ -4912,6 +4949,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "anchor"
    ]
   }
  },
@@ -5525,7 +5565,8 @@
   "markers": {
    "items": [
     "cross",
-    "crown"
+    "crown",
+    "anchor"
    ]
   }
  },
@@ -6372,7 +6413,8 @@
     "lion"
    ],
    "items": [
-    "crown"
+    "crown",
+    "sword"
    ]
   }
  },
@@ -6420,7 +6462,9 @@
    ],
    "items": [
     "walls",
-    "crown"
+    "crown",
+    "horn",
+    "musicalInstrument"
    ]
   }
  },
@@ -6953,7 +6997,8 @@
    ],
    "items": [
     "key",
-    "crown"
+    "crown",
+    "sword"
    ]
   }
  },
@@ -6975,7 +7020,8 @@
     "lion"
    ],
    "items": [
-    "key"
+    "key",
+    "sword"
    ]
   }
  },
@@ -7077,6 +7123,7 @@
   },
   "markers": {
    "items": [
+    "windmill",
     "earOfGrain",
     "crown"
    ]

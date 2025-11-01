@@ -9,6 +9,10 @@
       "phrases": ["luipaarden"]
     },
     {
+      "name": "otter",
+      "phrases": ["otter"]
+    },
+    {
       "name": "deer",
       "phrases": [
         "gewei",
@@ -129,6 +133,10 @@
       "phrases": ["walvis"]
     },
     {
+      "name": "mole",
+      "phrases": ["mol"]
+    },
+    {
       "name": "stork",
       "phrases": ["lepelaar"]
     },
@@ -172,6 +180,10 @@
       "phrases": ["draak", "draken"]
     },
     {
+      "name": "parrot",
+      "phrases": ["papegaaien", "papegaaijen"]
+    },
+    {
       "name": "fish",
       "phrases": [
         "brasem",
@@ -188,7 +200,8 @@
         "zalm",
         "baars",
         "baarsen",
-        "haringen"
+        "haringen",
+        "rog"
       ]
     },
     {
@@ -213,7 +226,13 @@
     },
     {
       "name": "dog",
-      "phrases": ["hond", "honden", "hondenkoppen", "hazewindhonden"]
+      "phrases": [
+        "hond",
+        "honden",
+        "hondenkoppen",
+        "hazewindhonden",
+        "brakkenkoppen"
+      ]
     },
     {
       "name": "crayfish",
@@ -290,7 +309,7 @@
     },
     {
       "name": "windmill",
-      "phrases": ["windmolen", "windmolens"]
+      "phrases": ["windmolen", "windmolens", "molen", "molens", "wipmolen"]
     },
     {
       "name": "horseshoe",
@@ -400,11 +419,23 @@
     },
     {
       "name": "horn",
-      "phrases": ["hoorn", "trompet", "trompetten"]
+      "phrases": ["hoorn", "hoorns", "trompet", "trompetten"]
+    },
+    {
+      "name": "bell",
+      "phrases": ["klok", "klokjes"]
     },
     {
       "name": "saint",
       "phrases": ["heilige"]
+    },
+    {
+      "name": "sword",
+      "phrases": ["zwaard", "zwaarden", "degen", "gevest"]
+    },
+    {
+      "name": "anchor",
+      "phrases": ["scheepsanker", "anker"]
     }
   ]
 }
