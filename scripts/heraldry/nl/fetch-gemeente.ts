@@ -12,13 +12,19 @@ const alreadyFetchedFormerDivisions =
 
 const administrativeDivisions: AdministrativeUnit[] = Object.values(
   urls.gemeenteBySource
-).flatMap(({ title, urls }) =>
-  urls.map((unit) => ({ ...unit, type: ["gemeente"], partOf: title }))
-);
+)
+  .flatMap(({ title, urls }) =>
+    urls.map((unit) => ({ ...unit, type: ["gemeente"], partOf: title }))
+  )
+  .filter(
+    (unit) =>
+      !unit.title.startsWith("Lijst van wapens") &&
+      !unit.url.includes("/wiki/Categorie:")
+  );
 
 fetchData({
   administrativeDivisions: administrativeDivisions,
-  alreadyFetchedDivisions: alreadyFetchedDivisions,
+  // alreadyFetchedDivisions: alreadyFetchedDivisions,
   unitNames: ["gemeente"],
   path: "./public/data/heraldry/nl/gemeente.json",
   country: "nl",
@@ -26,13 +32,19 @@ fetchData({
 
 const formerAdministrativeDivisions: AdministrativeUnit[] = Object.values(
   urls.historicGemeenteBySource
-).flatMap(({ title, urls }) =>
-  urls.map((unit) => ({ ...unit, type: ["formerGemeente"], partOf: title }))
-);
+)
+  .flatMap(({ title, urls }) =>
+    urls.map((unit) => ({ ...unit, type: ["formerGemeente"], partOf: title }))
+  )
+  .filter(
+    (unit) =>
+      !unit.title.startsWith("Lijst van wapens") &&
+      !unit.url.includes("/wiki/Categorie:")
+  );
 
 fetchData({
   administrativeDivisions: formerAdministrativeDivisions,
-  alreadyFetchedDivisions: alreadyFetchedFormerDivisions,
+  // alreadyFetchedDivisions: alreadyFetchedFormerDivisions,
   unitNames: ["formerGemeente"],
   path: "./public/data/heraldry/nl/formerGemeente.json",
   country: "nl",

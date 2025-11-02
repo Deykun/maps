@@ -1,4 +1,6 @@
-export const locationTitleByCoatOfArmsTitle = {
+export const locationTitleByCoatOfArmsTitle: {
+  [coatOfArmsTitle: string]: string;
+} = {
   // PL
   "Herb Wolina": "Wolin (wyspa)",
   "Herb gminy Osieczna (województwo pomorskie)":
@@ -66,11 +68,11 @@ export const locationTitleByCoatOfArmsTitle = {
   // - pl
   // et
   "Harjumaa vapp": "Harju maakond",
-  "Pirita linnaosa vapp": "Pirita", // 'Pirita linnaosa', misses cordinates
+  "Pirita linnaosa vapp": "Pirita", // 'Pirita linnaosa', misses coordinates
   "Maidla valla vapp": "Maidla vald",
   "Saare valla vapp": "Saare vald",
   "Järvamaa vapp": "Järva maakond",
-  "Järva valla vapp": "Järva-Jaani", // 'Järva vald',  misses cordinates
+  "Järva valla vapp": "Järva-Jaani", // 'Järva vald',  misses coordinates
   "Läänemaa vapp": "Lääne maakond",
   "Ridala valla vapp": "Ridala vald",
   "Rägavere valla vapp": "Rägavere vald",
@@ -192,7 +194,7 @@ export const locationTitleByCoatOfArmsTitle = {
   "Wapen van Westerkwartier (gemeente)": "Aduard",
   "Wapen van het Land van Cuijk (gemeente)": "Land van Cuijk (gemeente)",
   "Wapen van Est en Opijne": "Opijnen",
-  "Wapen van Brabant": "Hertogdom Brabant",
+  "Wapen van Brabant": "Noord-Brabant",
   "Ommelander wapen": "Groningen (provincie)",
 } as const;
 

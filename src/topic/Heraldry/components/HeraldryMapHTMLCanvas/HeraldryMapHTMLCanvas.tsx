@@ -166,7 +166,7 @@ const HeraldryMapHTMLCanvas = ({ className, units, children, mapOffset, coatSize
       if (unit && canvasRef.current) {
         if (typeof unit?.place?.coordinates?.lon === 'number' && typeof unit?.place?.coordinates?.lat === 'number') {
           const position = getXYfromLatLon({
-            cordinates: {
+            coordinates: {
               lonX: unit.place.coordinates.lon,
               latY: unit.place.coordinates.lat,
             },

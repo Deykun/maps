@@ -66,7 +66,7 @@ export class CoatOfArms {
 
   onResize(params?: { size?: { width: number, height: number }}) {
     const position = getXYfromLatLon({
-      cordinates: {
+      coordinates: {
         lonX: this.lonX,
         latY: this.latY,
       },
