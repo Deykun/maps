@@ -24,7 +24,7 @@ const administrativeDivisions: AdministrativeUnit[] = Object.values(
 
 fetchData({
   administrativeDivisions: administrativeDivisions,
-  // alreadyFetchedDivisions: alreadyFetchedDivisions,
+  alreadyFetchedDivisions: alreadyFetchedDivisions,
   unitNames: ["gemeente"],
   path: "./public/data/heraldry/nl/gemeente.json",
   country: "nl",
@@ -44,7 +44,7 @@ const formerAdministrativeDivisions: AdministrativeUnit[] = Object.values(
 
 fetchData({
   administrativeDivisions: formerAdministrativeDivisions,
-  // alreadyFetchedDivisions: alreadyFetchedFormerDivisions,
+  alreadyFetchedDivisions: alreadyFetchedFormerDivisions,
   unitNames: ["formerGemeente"],
   path: "./public/data/heraldry/nl/formerGemeente.json",
   country: "nl",
