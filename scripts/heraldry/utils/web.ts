@@ -148,11 +148,7 @@ export const getSprites = async ({ mapJSON, type, country }) => {
       console.log(`${type}: sprite ${chalk.green(spriteIndex)} saved.`);
     } else {
       console.log(
-        `${type}: sprite ${chalk.yellow(spriteIndex)} was created as empty.`
-      );
-
-      await sharp("./public/images/heraldry/blank-80w.png").toFile(
-        `./public/images/heraldry/${country}/web/sprites/${type}-${spriteIndex}.webp`
+        `${type}: sprite ${chalk.yellow(spriteIndex)} was skipped as empty.`
       );
     }
   }

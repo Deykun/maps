@@ -12,9 +12,15 @@ const alreadyFetchedFormerDivisions =
 
 const administrativeDivisions: AdministrativeUnit[] = Object.values(
   urls.gemeenteBySource
-).flatMap(({ title, urls }) =>
-  urls.map((unit) => ({ ...unit, type: ["gemeente"], partOf: title }))
-);
+)
+  .flatMap(({ title, urls }) =>
+    urls.map((unit) => ({ ...unit, type: ["gemeente"], partOf: title }))
+  )
+  .filter(
+    (unit) =>
+      !unit.title.startsWith("Lijst van wapens") &&
+      !unit.url.includes("/wiki/Categorie:")
+  );
 
 fetchData({
   administrativeDivisions: administrativeDivisions,
@@ -25,10 +31,16 @@ fetchData({
 });
 
 const formerAdministrativeDivisions: AdministrativeUnit[] = Object.values(
-  urls.historicGameenteBySource
-).flatMap(({ title, urls }) =>
-  urls.map((unit) => ({ ...unit, type: ["formerGemeente"], partOf: title }))
-);
+  urls.historicGemeenteBySource
+)
+  .flatMap(({ title, urls }) =>
+    urls.map((unit) => ({ ...unit, type: ["formerGemeente"], partOf: title }))
+  )
+  .filter(
+    (unit) =>
+      !unit.title.startsWith("Lijst van wapens") &&
+      !unit.url.includes("/wiki/Categorie:")
+  );
 
 fetchData({
   administrativeDivisions: formerAdministrativeDivisions,

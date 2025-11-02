@@ -1,19 +1,25 @@
-import { AdministrativeUnit } from '../../../../src/topic/Heraldry/types';
-import { removeDiacratics } from '../../../../src/utils/text';
+import { AdministrativeUnit } from "../../../../src/topic/Heraldry/types";
+import { removeDiacratics } from "../../../../src/utils/text";
 
 const getSimpleHashFromString = (text: string) => {
-  const intHash = text.split('').reduce((prevHash, currVal) => (((prevHash << 5) - prevHash) + currVal.charCodeAt(0))|0, 0);
+  const intHash = text
+    .split("")
+    .reduce(
+      (prevHash, currVal) =>
+        ((prevHash << 5) - prevHash + currVal.charCodeAt(0)) | 0,
+      0
+    );
 
   return Math.abs(intHash).toString(16);
-}
+};
 
 const commonWordsToRemove = [
-  'gemeinde',
-  'stadt',
-  'landkreis',
-  'verbandsgemeinde',
-  'valla',
-  'vapp',
+  "gemeinde",
+  "stadt",
+  "landkreis",
+  "verbandsgemeinde",
+  "valla",
+  "vapp",
 ];
 
 export const getImageHash = (unit: AdministrativeUnit) => {
@@ -23,32 +29,37 @@ export const getImageHash = (unit: AdministrativeUnit) => {
 };
 
 export const getImageFileName = (unit: AdministrativeUnit) => {
-  const {
-    title,
-  } = unit;
+  const { title } = unit;
   let fileName = removeDiacratics(title.toLowerCase())
-    .replace(/[^\w\s]/gi, '')
-    .replace(/\s/gi, '-')
-    .replace(/[^a-z-]+/g, '')
-    .split('-').filter((word: string) => !commonWordsToRemove.includes(word)).join('-');
+    .replace(/[^\w\s]/gi, "")
+    .replace(/\s/gi, "-")
+    .replace(/[^a-z-]+/g, "")
+    .split("-")
+    .filter((word: string) => !commonWordsToRemove.includes(word))
+    .join("-");
 
   fileName = `${getImageHash(unit)}-${fileName.slice(0, 24)}`;
 
   // It trims example-name-of- to example-name-of
-  fileName = fileName.replace(/[-]/g, ' ').trim().replace(/ /g, '-');
+  fileName = fileName.replace(/[-]/g, " ").trim().replace(/ /g, "-");
 
   return fileName;
 };
 
 export const getCompressedImageSrc = (imageUrl: string, path: string) => {
-  const [imageSrcWithoutFormat] = imageUrl.split('.');
+  const [imageSrcWithoutFormat] = imageUrl.split(".");
 
   const imagesList = [
-    { size: '80w', width: '80w' },
-    { size: '320w', width: '320w' },
-  ].map(({ size, width }) => ({ width, path: `${imageSrcWithoutFormat}-${size}.webp` }));
-  
-  const srcSet = imagesList.map(({ path, width }) => `${path} ${width}`).join(',')
+    { size: "80w", width: "80w" },
+    { size: "320w", width: "320w" },
+  ].map(({ size, width }) => ({
+    width,
+    path: `${imageSrcWithoutFormat}-${size}.webp`,
+  }));
+
+  const srcSet = imagesList
+    .map(({ path, width }) => `${path} ${width}`)
+    .join(",");
 
   return {
     srcSet,
@@ -69,11 +80,11 @@ export const getImageFromThumbnailUrl = (imageUrlToCheck: string) => {
     The last part is the desired thumbnail width, and the file name again: /200px-Tour_Eiffel_Wikimedia_Commons.jpg
   */
 
-  if (imageUrlToCheck.includes('/thumb/')) {
-    let imageUrl = imageUrlToCheck.replace('/thumb/', '/');
+  if (imageUrlToCheck.includes("/thumb/")) {
+    let imageUrl = imageUrlToCheck.replace("/thumb/", "/");
 
-    imageUrl = imageUrl.split('/').slice(0, -1).join('/');
-  
+    imageUrl = imageUrl.split("/").slice(0, -1).join("/");
+
     return imageUrl;
   }
 

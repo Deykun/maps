@@ -7,12 +7,12 @@ type Coordinates = {
 }
 
 export const getXYfromLatLon = ({ 
-  cordinates,
+  coordinates,
   mapOffset,
   pixelRatio = window.devicePixelRatio,
   canvas,
 }: {
-  cordinates: Coordinates,
+  coordinates: Coordinates,
   mapOffset: MapOffset,
   pixelRatio: number,
   canvas: HTMLCanvasElement | { width: number, height: number },
@@ -20,8 +20,8 @@ export const getXYfromLatLon = ({
   const widthLon = Math.abs(mapOffset.minLonLeft - mapOffset.maxLonLeft);
   const heightLat = Math.abs(mapOffset.minLatTop - mapOffset.maxLatTop);
 
-  const percentageXRaw = (cordinates.lonX - mapOffset.minLonLeft) / widthLon;
-  const percentageYRaw = (mapOffset.maxLatTop - cordinates.latY) / heightLat;
+  const percentageXRaw = (coordinates.lonX - mapOffset.minLonLeft) / widthLon;
+  const percentageYRaw = (mapOffset.maxLatTop - coordinates.latY) / heightLat;
 
   let percentageX = percentageXRaw;
   let percentageY = percentageYRaw;

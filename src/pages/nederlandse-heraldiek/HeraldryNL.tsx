@@ -34,7 +34,7 @@ const HeraldryNL = () => {
       lang="nl"
       country="nl"
       mapWrapperClassName="[&>div>svg]:aspect-[1_/_1]"
-      mapWrapperClassNameForZoom0="max-w-[65vh]"
+      mapWrapperClassNameForZoom0="max-w-[49vh]"
       map={SvgMap}
       mapOffset={{
         minLatTop: 50.625,
