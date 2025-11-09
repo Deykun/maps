@@ -1,9 +1,30 @@
-import { ComplexManualMarker, MarkerParams } from "@/topic/Heraldry/types";
+import {
+  ComplexManualMarker,
+  ManualMarker,
+  MarkerParams,
+} from "@/topic/Heraldry/types";
 
 type Params = {
   initFilter: MarkerParams;
   include: ComplexManualMarker[];
   exclude: ComplexManualMarker[];
+};
+
+const sortRules = (a?: ManualMarker, b?: ManualMarker) => {
+  if (typeof a === "string" && typeof b === "string") {
+    return b.localeCompare(a);
+  }
+
+  if (
+    typeof (a as ComplexManualMarker)?.imageHash === "string" &&
+    typeof (b as ComplexManualMarker)?.imageHash === "string"
+  ) {
+    return (b as ComplexManualMarker).imageHash.localeCompare(
+      (a as ComplexManualMarker).imageHash
+    );
+  }
+
+  return 0;
 };
 
 export const getMergedFilterData = ({
@@ -48,7 +69,7 @@ export const getMergedFilterData = ({
 
   return {
     ...initFilter,
-    include: [...includeWithRemoved, ...rulesToInclude],
-    exclude: [...excludeWithRemoved, ...rulesToExclude],
+    include: [...includeWithRemoved, ...rulesToInclude].sort(sortRules),
+    exclude: [...excludeWithRemoved, ...rulesToExclude].sort(sortRules),
   };
 };
