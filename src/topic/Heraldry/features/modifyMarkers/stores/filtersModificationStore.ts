@@ -133,9 +133,9 @@ const getListForUnit =
     return list;
   };
 
-export const selectUnitExcludeModifictions = getListForUnit("exclude");
+export const selectUnitExcludeModifications = getListForUnit("exclude");
 
-export const selectUnitIncludeModifictions = getListForUnit("include");
+export const selectUnitIncludeModifications = getListForUnit("include");
 
 type Shortcut = { name: string; type: "animal" | "item"; total: number };
 

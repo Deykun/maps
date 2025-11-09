@@ -12,8 +12,8 @@ import ButtonText from '@/components/UI/ButtonText';
 
 import {
   useFilterModificationStore,
-  selectUnitExcludeModifictions,
-  selectUnitIncludeModifictions,
+  selectUnitExcludeModifications,
+  selectUnitIncludeModifications,
   removeFromIncludeAndExcludeInMarker,
 } from '@/topic/Heraldry/features/modifyMarkers/stores/filtersModificationStore';
 
@@ -24,10 +24,10 @@ type Props = {
 const buttonClassName = 'hover:!bg-[#ff00004f]';
 
 const RemoveModifications = ({ unit }: Props) => {
-  const includeAnimal = useFilterModificationStore(selectUnitIncludeModifictions(unit, 'animal'));
-  const includeItem = useFilterModificationStore(selectUnitIncludeModifictions(unit, 'item'));
-  const excludedAnimal = useFilterModificationStore(selectUnitExcludeModifictions(unit, 'animal'));
-  const excludeItem = useFilterModificationStore(selectUnitExcludeModifictions(unit, 'item'));
+  const includeAnimal = useFilterModificationStore(selectUnitIncludeModifications(unit, 'animal'));
+  const includeItem = useFilterModificationStore(selectUnitIncludeModifications(unit, 'item'));
+  const excludedAnimal = useFilterModificationStore(selectUnitExcludeModifications(unit, 'animal'));
+  const excludeItem = useFilterModificationStore(selectUnitExcludeModifications(unit, 'item'));
 
   const { t } = useTranslation();
 

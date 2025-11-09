@@ -12,7 +12,7 @@ import IconCrown from '@/components/Icons/IconCrown';
 import ButtonText from '@/components/UI/ButtonText';
 
 
-import { useFilterModificationStore, excludeUnitFromMarker, selectUnitExcludeModifictions } from '@/topic/Heraldry/features/modifyMarkers/stores/filtersModificationStore';
+import { useFilterModificationStore, excludeUnitFromMarker, selectUnitExcludeModifications } from '@/topic/Heraldry/features/modifyMarkers/stores/filtersModificationStore';
 
 import useGetUnitMarkersFromCache from '@/topic/Heraldry/features/modify/hooks/useGetUnitMarkersFromCache';
 
@@ -22,8 +22,8 @@ type Props = {
 }
 
 const RemoveMarkers = ({ unit }: Props) => {
-  const excludedAnimal = useFilterModificationStore(selectUnitExcludeModifictions(unit, 'animal'));
-  const excludeItem = useFilterModificationStore(selectUnitExcludeModifictions(unit, 'item'));
+  const excludedAnimal = useFilterModificationStore(selectUnitExcludeModifications(unit, 'animal'));
+  const excludeItem = useFilterModificationStore(selectUnitExcludeModifications(unit, 'item'));
 
   const { t } = useTranslation();
 

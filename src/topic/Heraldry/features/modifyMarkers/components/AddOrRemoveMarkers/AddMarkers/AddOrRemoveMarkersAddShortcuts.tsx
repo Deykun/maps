@@ -5,7 +5,7 @@ import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
 import {
   useFilterModificationStore,
   includeUnitInMarker,
-  selectUnitIncludeModifictions,
+  selectUnitIncludeModifications,
   selectShortcuts,
 } from '@/topic/Heraldry/features/modifyMarkers/stores/filtersModificationStore';
 import useGetUnitMarkersFromCache from '@/topic/Heraldry/features/modify/hooks/useGetUnitMarkersFromCache';
@@ -20,8 +20,8 @@ type Props = {
 }
 
 const AddOrRemoveMarkersSection = ({ unit }: Props) => {
-  const includeAnimal = useFilterModificationStore(selectUnitIncludeModifictions(unit, 'animal'));
-  const includeItem = useFilterModificationStore(selectUnitIncludeModifictions(unit, 'item'));
+  const includeAnimal = useFilterModificationStore(selectUnitIncludeModifications(unit, 'animal'));
+  const includeItem = useFilterModificationStore(selectUnitIncludeModifications(unit, 'item'));
   const {
     animals,
     items,
