@@ -21,7 +21,7 @@ export const useCursorStore = create<FiltersDevelopmentStoreState>()(
         idToShow: '',
         lastClick: undefined,
       } as FiltersDevelopmentStoreState),
-      { name: 'filterDevelopmentStore' },
+      { name: 'cursorStore' },
     )
   )
 )

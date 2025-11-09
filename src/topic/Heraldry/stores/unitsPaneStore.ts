@@ -1,23 +1,23 @@
-import { create } from 'zustand';
-import { devtools } from 'zustand/middleware'
+import { create } from "zustand";
+import { devtools } from "zustand/middleware";
 
-import { CoatOfArmsMapData } from '@/topic/Heraldry/types';
-
+import { CoatOfArmsMapData } from "@/topic/Heraldry/types";
 
 type UnitPaneStoreState = {
-  searchPhrase: string,
-  selected: CoatOfArmsMapData[],
-  details?: CoatOfArmsMapData,
-}
+  searchPhrase: string;
+  selected: CoatOfArmsMapData[];
+  details?: CoatOfArmsMapData;
+};
 
 export const useUnitsPaneStore = create<UnitPaneStoreState>()(
   devtools(
-    () => ({
-      searchPhrase: '',
-      selected: [],
-      details: undefined,
-    } as UnitPaneStoreState),
-    { name: 'filterDevelopmentStore' },
+    () =>
+      ({
+        searchPhrase: "",
+        selected: [],
+        details: undefined,
+      } as UnitPaneStoreState),
+    { name: "unitsPaneStore" }
   )
 );
 
@@ -42,16 +42,18 @@ export const toggleSelected = (unit: CoatOfArmsMapData) => {
 
     return {
       ...state,
-      selected: isSelected ? state.selected.filter(({ id }) => id !== unit.id) : [...state.selected, unit],
-    }
+      selected: isSelected
+        ? state.selected.filter(({ id }) => id !== unit.id)
+        : [...state.selected, unit],
+    };
   });
 };
 
 export const setSelected = (units: CoatOfArmsMapData[]) => {
   useUnitsPaneStore.setState((state) => ({
-      ...state,
-      selected: units,
+    ...state,
+    selected: units,
   }));
-}
+};
 
 export default useUnitsPaneStore;
