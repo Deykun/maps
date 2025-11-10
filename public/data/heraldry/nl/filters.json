@@ -2,253 +2,17 @@
   "types": [],
   "animals": [
     {
-      "name": "ram",
+      "name": "bat",
       "phrases": [
-        "lam",
-        "lammetje",
-        "ram",
-        "ramskoppen",
-        "schaap",
-        "schaapskop",
-        "schapen"
-      ]
-    },
-    {
-      "name": "stork",
-      "phrases": [
-        "ooievaar",
-        "ooievaars"
-      ]
-    },
-    {
-      "name": "stork",
-      "phrases": [
-        "lepelaar"
-      ]
-    },
-    {
-      "name": "beaver",
-      "phrases": [
-        "bever",
-        "bevers"
-      ]
-    },
-    {
-      "name": "bullBison",
-      "phrases": [
-        "halfstier",
-        "koe",
-        "koeien",
-        "os",
-        "ossenkop",
-        "stier",
-        "stiertje",
-        "vaarskalf",
-        "waterbuffel",
-        "wisent"
-      ]
-    },
-    {
-      "name": "centaur",
-      "phrases": [
-        "centaur",
-        "centauren"
-      ]
-    },
-    {
-      "name": "crab",
-      "phrases": [
-        "krabben"
-      ]
-    },
-    {
-      "name": "heron",
-      "phrases": [
-        "reiger",
-        "reigers"
-      ]
-    },
-    {
-      "name": "boar",
-      "phrases": [
-        "everzwijn",
-        "everzwijnen",
-        "zwijn",
-        "zwijnen",
-        "zwijnskoppen"
-      ]
-    },
-    {
-      "name": "goose",
-      "phrases": [
-        "gans",
-        "ganzen"
-      ]
-    },
-    {
-      "name": "pigeon",
-      "phrases": [
-        "duif",
-        "duiven"
-      ]
-    },
-    {
-      "name": "griffin",
-      "phrases": [
-        "griffioen",
-        "halffgriffioen"
-      ]
-    },
-    {
-      "name": "hawk",
-      "phrases": [
-        "havik",
-        "haviken"
-      ]
-    },
-    {
-      "name": "lizard",
-      "phrases": [
-        "hagedis",
-        "hagedissen"
-      ]
-    },
-    {
-      "name": "unicorn",
-      "phrases": [
-        "eenhoorn",
-        "eenhoorns"
-      ]
-    },
-    {
-      "name": "deer",
-      "phrases": [
-        "gewei",
-        "hert",
-        "herten",
-        "hertshoornen",
-        "hinde",
-        "ree",
-        "reebokje",
-        "reebokjes",
-        "reeën"
-      ]
-    },
-    {
-      "name": "duck",
-      "phrases": [
-        "eend",
-        "eenden"
-      ]
-    },
-    {
-      "name": "rooster",
-      "phrases": [
-        "haan",
-        "hanen"
-      ]
-    },
-    {
-      "name": "horse",
-      "phrases": [
-        "paard",
-        "paarden",
-        "zeepaarden"
-      ]
-    },
-    {
-      "name": "cat",
-      "phrases": [
-        "kat"
-      ]
-    },
-    {
-      "name": "goat",
-      "phrases": [
-        "bok",
-        "geit",
-        "geiten"
-      ]
-    },
-    {
-      "name": "raven",
-      "phrases": [
-        "raaf",
-        "raven"
-      ]
-    },
-    {
-      "name": "raven",
-      "phrases": [
-        "kraai",
-        "kraaien"
-      ]
-    },
-    {
-      "name": "leopard",
-      "phrases": [
-        "luipaarden"
-      ]
-    },
-    {
-      "name": "lion",
-      "phrases": [
-        "halfleeuw",
-        "leeuw",
-        "leeuwen",
-        "leeuwenkoppen"
-      ]
-    },
-    {
-      "name": "fox",
-      "phrases": [
-        "vos",
-        "vossen"
-      ]
-    },
-    {
-      "name": "swan",
-      "phrases": [
-        "zwaan",
-        "zwaanen"
-      ]
-    },
-    {
-      "name": "salmon",
-      "phrases": [
-        "zalm",
-        "zalmen"
-      ]
-    },
-    {
-      "name": "moose",
-      "phrases": [
-        "eland",
-        "elanden"
-      ]
-    },
-    {
-      "name": "mole",
-      "phrases": [
-        "mol"
-      ]
-    },
-    {
-      "name": "butterfly",
-      "phrases": [
-        "vlinder"
-      ]
-    },
-    {
-      "name": "shell",
-      "phrases": [
-        "jacobsschelpen",
-        "schelp",
-        "schelpen",
-        "schelpje",
-        "schelpjes",
-        "st.jacobsschelpen",
-        "zeehorens"
+        "vleermuis",
+        "vleermuizen"
+      ],
+      "include": [],
+      "exclude": [
+        {
+          "imageHash": "56d44e53",
+          "note": "Wapen van Bath (Nederland)"
+        }
       ]
     },
     {
@@ -260,58 +24,10 @@
       ]
     },
     {
-      "name": "bat",
+      "name": "beaver",
       "phrases": [
-        "vleermuis",
-        "vleermuizen"
-      ]
-    },
-    {
-      "name": "unusualHybrid",
-      "phrases": [
-        "zeepaarden"
-      ]
-    },
-    {
-      "name": "eagle",
-      "phrases": [
-        "adelaar",
-        "adelaars",
-        "adelaarspoot",
-        "arend",
-        "arenden"
-      ]
-    },
-    {
-      "name": "donkey",
-      "phrases": [
-        "ezel",
-        "ezels"
-      ]
-    },
-    {
-      "name": "parrot",
-      "phrases": [
-        "papegaaien",
-        "papegaaijen"
-      ]
-    },
-    {
-      "name": "pelican",
-      "phrases": [
-        "pelikaan",
-        "pelikaanen"
-      ]
-    },
-    {
-      "name": "dog",
-      "phrases": [
-        "brakkenkoppen",
-        "hazewindhonden",
-        "hond",
-        "honden",
-        "hondenkoppen",
-        "windhond"
+        "bever",
+        "bevers"
       ]
     },
     {
@@ -338,10 +54,130 @@
       ]
     },
     {
+      "name": "boar",
+      "phrases": [
+        "everzwijn",
+        "everzwijnen",
+        "zwijn",
+        "zwijnen",
+        "zwijnskoppen"
+      ]
+    },
+    {
+      "name": "bullBison",
+      "phrases": [
+        "halfstier",
+        "koe",
+        "koeien",
+        "os",
+        "ossenkop",
+        "stier",
+        "stiertje",
+        "vaarskalf",
+        "waterbuffel",
+        "wisent"
+      ]
+    },
+    {
+      "name": "butterfly",
+      "phrases": [
+        "vlinder"
+      ]
+    },
+    {
+      "name": "cat",
+      "phrases": [
+        "kat"
+      ]
+    },
+    {
+      "name": "centaur",
+      "phrases": [
+        "centaur",
+        "centauren"
+      ]
+    },
+    {
+      "name": "crab",
+      "phrases": [
+        "krabben"
+      ]
+    },
+    {
+      "name": "crane",
+      "phrases": [
+        "kraanvogel",
+        "kraanvogels"
+      ]
+    },
+    {
       "name": "crayfish",
       "phrases": [
         "kreeft",
         "kreeften"
+      ]
+    },
+    {
+      "name": "deer",
+      "phrases": [
+        "gewei",
+        "hert",
+        "herten",
+        "hertshoornen",
+        "hinde",
+        "ree",
+        "reebokje",
+        "reebokjes",
+        "reeën"
+      ]
+    },
+    {
+      "name": "dog",
+      "phrases": [
+        "brakkenkoppen",
+        "hazewindhonden",
+        "hond",
+        "honden",
+        "hondenkoppen",
+        "windhond"
+      ]
+    },
+    {
+      "name": "donkey",
+      "phrases": [
+        "ezel",
+        "ezels"
+      ]
+    },
+    {
+      "name": "dragon",
+      "phrases": [
+        "draak",
+        "draken"
+      ]
+    },
+    {
+      "name": "duck",
+      "phrases": [
+        "eend",
+        "eenden"
+      ]
+    },
+    {
+      "name": "eagle",
+      "phrases": [
+        "adelaar",
+        "adelaars",
+        "adelaarspoot",
+        "arend",
+        "arenden"
+      ]
+    },
+    {
+      "name": "falcon",
+      "phrases": [
+        "valk",
+        "valken"
       ]
     },
     {
@@ -367,31 +203,76 @@
       ]
     },
     {
-      "name": "vulture",
+      "name": "fox",
       "phrases": [
-        "gier",
-        "gieren"
+        "vos",
+        "vossen"
       ]
     },
     {
-      "name": "dragon",
+      "name": "goat",
       "phrases": [
-        "draak",
-        "draken"
+        "bok",
+        "geit",
+        "geiten"
       ]
     },
     {
-      "name": "falcon",
+      "name": "goose",
       "phrases": [
-        "valk",
-        "valken"
+        "gans",
+        "ganzen"
       ]
     },
     {
-      "name": "owl",
+      "name": "griffin",
       "phrases": [
-        "uil",
-        "uilen"
+        "griffioen",
+        "halffgriffioen"
+      ]
+    },
+    {
+      "name": "hawk",
+      "phrases": [
+        "havik",
+        "haviken"
+      ]
+    },
+    {
+      "name": "heron",
+      "phrases": [
+        "reiger",
+        "reigers"
+      ]
+    },
+    {
+      "name": "horse",
+      "phrases": [
+        "paard",
+        "paarden",
+        "zeepaarden"
+      ]
+    },
+    {
+      "name": "leopard",
+      "phrases": [
+        "luipaarden"
+      ]
+    },
+    {
+      "name": "lion",
+      "phrases": [
+        "halfleeuw",
+        "leeuw",
+        "leeuwen",
+        "leeuwenkoppen"
+      ]
+    },
+    {
+      "name": "lizard",
+      "phrases": [
+        "hagedis",
+        "hagedissen"
       ]
     },
     {
@@ -402,37 +283,50 @@
       ]
     },
     {
-      "name": "snake",
+      "name": "mole",
       "phrases": [
-        "slang",
-        "slangen"
+        "mol"
       ]
     },
     {
-      "name": "whale",
+      "name": "moose",
       "phrases": [
-        "walvis"
-      ]
-    },
-    {
-      "name": "squirrel",
-      "phrases": [
-        "eekhoorn",
-        "eekhoorns"
-      ]
-    },
-    {
-      "name": "wolf",
-      "phrases": [
-        "halfwolf",
-        "wolf",
-        "wolven"
+        "eland",
+        "elanden"
       ]
     },
     {
       "name": "otter",
       "phrases": [
         "otter"
+      ]
+    },
+    {
+      "name": "owl",
+      "phrases": [
+        "uil",
+        "uilen"
+      ]
+    },
+    {
+      "name": "parrot",
+      "phrases": [
+        "papegaaien",
+        "papegaaijen"
+      ]
+    },
+    {
+      "name": "pelican",
+      "phrases": [
+        "pelikaan",
+        "pelikaanen"
+      ]
+    },
+    {
+      "name": "pigeon",
+      "phrases": [
+        "duif",
+        "duiven"
       ]
     },
     {
@@ -444,14 +338,134 @@
       ]
     },
     {
-      "name": "crane",
+      "name": "ram",
       "phrases": [
-        "kraanvogel",
-        "kraanvogels"
+        "lam",
+        "lammetje",
+        "ram",
+        "ramskoppen",
+        "schaap",
+        "schaapskop",
+        "schapen"
+      ]
+    },
+    {
+      "name": "raven",
+      "phrases": [
+        "raaf",
+        "raven"
+      ]
+    },
+    {
+      "name": "raven",
+      "phrases": [
+        "kraai",
+        "kraaien"
+      ]
+    },
+    {
+      "name": "rooster",
+      "phrases": [
+        "haan",
+        "hanen"
+      ]
+    },
+    {
+      "name": "salmon",
+      "phrases": [
+        "zalm",
+        "zalmen"
+      ]
+    },
+    {
+      "name": "shell",
+      "phrases": [
+        "jacobsschelpen",
+        "schelp",
+        "schelpen",
+        "schelpje",
+        "schelpjes",
+        "st.jacobsschelpen",
+        "zeehorens"
+      ]
+    },
+    {
+      "name": "snake",
+      "phrases": [
+        "slang",
+        "slangen"
+      ]
+    },
+    {
+      "name": "squirrel",
+      "phrases": [
+        "eekhoorn",
+        "eekhoorns"
+      ]
+    },
+    {
+      "name": "stork",
+      "phrases": [
+        "ooievaar",
+        "ooievaars"
+      ]
+    },
+    {
+      "name": "stork",
+      "phrases": [
+        "lepelaar"
+      ]
+    },
+    {
+      "name": "swan",
+      "phrases": [
+        "zwaan",
+        "zwaanen"
+      ]
+    },
+    {
+      "name": "unicorn",
+      "phrases": [
+        "eenhoorn",
+        "eenhoorns"
+      ]
+    },
+    {
+      "name": "unusualHybrid",
+      "phrases": [
+        "zeepaarden"
+      ]
+    },
+    {
+      "name": "vulture",
+      "phrases": [
+        "gier",
+        "gieren"
+      ]
+    },
+    {
+      "name": "whale",
+      "phrases": [
+        "walvis"
+      ]
+    },
+    {
+      "name": "wolf",
+      "phrases": [
+        "halfwolf",
+        "wolf",
+        "wolven"
       ]
     }
   ],
   "items": [
+    {
+      "name": "anchor",
+      "phrases": [
+        "anker",
+        "scheepsanker"
+      ]
+    },
     {
       "name": "angel",
       "phrases": [
@@ -461,200 +475,12 @@
       ]
     },
     {
-      "name": "jewelry",
-      "phrases": [
-        "oorbel",
-        "ring",
-        "ringen"
-      ]
-    },
-    {
-      "name": "hops",
-      "phrases": [
-        "hop",
-        "hopachtig"
-      ]
-    },
-    {
-      "name": "tree",
-      "phrases": [
-        "bladen",
-        "boom",
-        "boomen",
-        "eikenboom",
-        "elzen",
-        "lindeboom",
-        "rijssen tak"
-      ]
-    },
-    {
-      "name": "bell",
-      "phrases": [
-        "klok",
-        "klokjes"
-      ]
-    },
-    {
       "name": "apple",
       "phrases": [
         "appel",
         "appelboom",
         "appels",
         "appeltje"
-      ]
-    },
-    {
-      "name": "pickaxe",
-      "phrases": [
-        "houweel",
-        "houweels",
-        "mijnwapen",
-        "pikhouweel",
-        "pikhouweels"
-      ]
-    },
-    {
-      "name": "key",
-      "phrases": [
-        "sleutel",
-        "sleutels"
-      ]
-    },
-    {
-      "name": "earOfGrain",
-      "phrases": [
-        "aar",
-        "aren",
-        "hooischelf",
-        "korenschoof",
-        "korenschoven",
-        "schoof"
-      ]
-    },
-    {
-      "name": "wheel",
-      "phrases": [
-        "wiel",
-        "wielen"
-      ]
-    },
-    {
-      "name": "crown",
-      "phrases": [
-        "kronen",
-        "kroon"
-      ]
-    },
-    {
-      "name": "anchor",
-      "phrases": [
-        "anker",
-        "scheepsanker"
-      ]
-    },
-    {
-      "name": "cross",
-      "phrases": [
-        "kruis",
-        "kruisen"
-      ]
-    },
-    {
-      "name": "flower",
-      "phrases": [
-        "bloem",
-        "bloemen",
-        "boekweitbloemen",
-        "boekweitplant",
-        "distel",
-        "krullelie",
-        "rijsttakken",
-        "tulp",
-        "tulpen"
-      ]
-    },
-    {
-      "name": "lily",
-      "phrases": [
-        "lelie",
-        "lelies",
-        "lelietje"
-      ]
-    },
-    {
-      "name": "boat",
-      "phrases": [
-        "boot",
-        "boten",
-        "schepen",
-        "schip"
-      ]
-    },
-    {
-      "name": "sword",
-      "phrases": [
-        "degen",
-        "gevest",
-        "zwaard",
-        "zwaarden"
-      ]
-    },
-    {
-      "name": "hammer",
-      "phrases": [
-        "hamer",
-        "hamers",
-        "hamertje",
-        "hamertjes",
-        "knuppel",
-        "mijninsignes",
-        "mijnwapen"
-      ]
-    },
-    {
-      "name": "crozier",
-      "phrases": [
-        "bisschopsstaf",
-        "herdersstaf",
-        "herdersstaffen"
-      ]
-    },
-    {
-      "name": "horseshoe",
-      "phrases": [
-        "hoefijzer",
-        "hoefijzers"
-      ]
-    },
-    {
-      "name": "saint",
-      "phrases": [
-        "heilige"
-      ]
-    },
-    {
-      "name": "horn",
-      "phrases": [
-        "hoorn",
-        "hoorns",
-        "trompet",
-        "trompetten",
-        "waldhoorn",
-        "waldhoorns"
-      ]
-    },
-    {
-      "name": "rose",
-      "phrases": [
-        "roos",
-        "rozen"
-      ]
-    },
-    {
-      "name": "heart",
-      "phrases": [
-        "hart",
-        "harten"
       ]
     },
     {
@@ -677,13 +503,187 @@
       ]
     },
     {
-      "name": "windmill",
+      "name": "bell",
       "phrases": [
-        "molen",
-        "molens",
-        "windmolen",
-        "windmolens",
-        "wipmolen"
+        "klok",
+        "klokjes"
+      ]
+    },
+    {
+      "name": "boat",
+      "phrases": [
+        "boot",
+        "boten",
+        "schepen",
+        "schip"
+      ]
+    },
+    {
+      "name": "cross",
+      "phrases": [
+        "kruis",
+        "kruisen"
+      ]
+    },
+    {
+      "name": "crown",
+      "phrases": [
+        "kronen",
+        "kroon"
+      ]
+    },
+    {
+      "name": "crozier",
+      "phrases": [
+        "bisschopsstaf",
+        "herdersstaf",
+        "herdersstaffen"
+      ]
+    },
+    {
+      "name": "earOfGrain",
+      "phrases": [
+        "aar",
+        "aren",
+        "hooischelf",
+        "korenschoof",
+        "korenschoven",
+        "schoof"
+      ]
+    },
+    {
+      "name": "flower",
+      "phrases": [
+        "bloem",
+        "bloemen",
+        "boekweitbloemen",
+        "boekweitplant",
+        "distel",
+        "krullelie",
+        "rijsttakken",
+        "tulp",
+        "tulpen"
+      ]
+    },
+    {
+      "name": "grape",
+      "phrases": [
+        "druif",
+        "druivenrank",
+        "druivenranken",
+        "wijngaardranken",
+        "wijnstok"
+      ]
+    },
+    {
+      "name": "hammer",
+      "phrases": [
+        "hamer",
+        "hamers",
+        "hamertje",
+        "hamertjes",
+        "knuppel",
+        "mijninsignes",
+        "mijnwapen"
+      ]
+    },
+    {
+      "name": "heart",
+      "phrases": [
+        "hart",
+        "harten"
+      ]
+    },
+    {
+      "name": "hops",
+      "phrases": [
+        "hop",
+        "hopachtig"
+      ]
+    },
+    {
+      "name": "horn",
+      "phrases": [
+        "hoorn",
+        "hoorns",
+        "trompet",
+        "trompetten",
+        "waldhoorn",
+        "waldhoorns"
+      ]
+    },
+    {
+      "name": "horseshoe",
+      "phrases": [
+        "hoefijzer",
+        "hoefijzers"
+      ]
+    },
+    {
+      "name": "jewelry",
+      "phrases": [
+        "oorbel",
+        "ring",
+        "ringen"
+      ]
+    },
+    {
+      "name": "key",
+      "phrases": [
+        "sleutel",
+        "sleutels"
+      ]
+    },
+    {
+      "name": "lily",
+      "phrases": [
+        "lelie",
+        "lelies",
+        "lelietje"
+      ]
+    },
+    {
+      "name": "pickaxe",
+      "phrases": [
+        "houweel",
+        "houweels",
+        "mijnwapen",
+        "pikhouweel",
+        "pikhouweels"
+      ]
+    },
+    {
+      "name": "rose",
+      "phrases": [
+        "roos",
+        "rozen"
+      ]
+    },
+    {
+      "name": "saint",
+      "phrases": [
+        "heilige"
+      ]
+    },
+    {
+      "name": "sword",
+      "phrases": [
+        "degen",
+        "gevest",
+        "zwaard",
+        "zwaarden"
+      ]
+    },
+    {
+      "name": "tree",
+      "phrases": [
+        "bladen",
+        "boom",
+        "boomen",
+        "eikenboom",
+        "elzen",
+        "lindeboom",
+        "rijssen tak"
       ]
     },
     {
@@ -702,13 +702,20 @@
       ]
     },
     {
-      "name": "grape",
+      "name": "wheel",
       "phrases": [
-        "druif",
-        "druivenrank",
-        "druivenranken",
-        "wijngaardranken",
-        "wijnstok"
+        "wiel",
+        "wielen"
+      ]
+    },
+    {
+      "name": "windmill",
+      "phrases": [
+        "molen",
+        "molens",
+        "windmolen",
+        "windmolens",
+        "wipmolen"
       ]
     }
   ]

@@ -47,15 +47,17 @@ const FilterSeeds = ({ country }: Props) => {
         const { include = [], exclude = [] } = modifications[type][name] || {};
 
         if (newData[typeKey].some((filter) => filter.name === name)) {
-          newData[typeKey].map((filter) =>
-            filter.name === name
-              ? getMergedFilterData({
-                  initFilter: filter,
-                  include,
-                  exclude,
-                })
-              : filter
-          );
+          newData[typeKey] = newData[typeKey].map((filter) => {
+            if (filter.name === name) {
+              return getMergedFilterData({
+                initFilter: filter,
+                include,
+                exclude,
+              });
+            }
+
+            return filter;
+          });
         } else {
           newData[typeKey].push({
             name,
@@ -67,27 +69,32 @@ const FilterSeeds = ({ country }: Props) => {
       }
     });
 
-    newData.types = newData.types.map((filter) => {
-      return {
-        ...filter,
-        phrases: filter.phrases?.sort((a, b) => a.localeCompare(b)),
-      };
-    });
+    newData.types = newData.types
+      .map((filter) => {
+        return {
+          ...filter,
+          phrases: filter.phrases?.sort((a, b) => a.localeCompare(b)),
+        };
+      })
+      .sort((a, b) => a.name.localeCompare(b.name));
 
-    newData.animals = newData.animals.map((filter) => {
-      return {
-        ...filter,
-        phrases: filter.phrases?.sort((a, b) => a.localeCompare(b)),
-      };
-    });
+    newData.animals = newData.animals
+      .map((filter) => {
+        return {
+          ...filter,
+          phrases: filter.phrases?.sort((a, b) => a.localeCompare(b)),
+        };
+      })
+      .sort((a, b) => a.name.localeCompare(b.name));
 
-    newData.items = newData.items.map((filter) => {
-      return {
-        ...filter,
-        phrases: filter.phrases?.sort((a, b) => a.localeCompare(b)),
-      };
-    });
-
+    newData.items = newData.items
+      .map((filter) => {
+        return {
+          ...filter,
+          phrases: filter.phrases?.sort((a, b) => a.localeCompare(b)),
+        };
+      })
+      .sort((a, b) => a.name.localeCompare(b.name));
     copyText(JSON.stringify(newData, null, 2));
   };
 

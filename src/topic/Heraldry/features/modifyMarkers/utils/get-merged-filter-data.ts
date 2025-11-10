@@ -67,6 +67,11 @@ export const getMergedFilterData = ({
       : !hashesToRemove.includes(ruleToCheck.imageHash)
   );
 
+  console.log({
+    rulesToInclude,
+    rulesToExclude,
+  })
+
   return {
     ...initFilter,
     phrases: initFilter.phrases?.sort((a, b) => a.localeCompare(b)),
