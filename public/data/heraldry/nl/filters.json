@@ -4,13 +4,13 @@
     {
       "name": "ram",
       "phrases": [
-        "lammetje",
         "lam",
+        "lammetje",
         "ram",
+        "ramskoppen",
         "schaap",
-        "schapen",
         "schaapskop",
-        "ramskoppen"
+        "schapen"
       ]
     },
     {
@@ -37,15 +37,15 @@
       "name": "bullBison",
       "phrases": [
         "halfstier",
+        "koe",
+        "koeien",
         "os",
+        "ossenkop",
         "stier",
         "stiertje",
         "vaarskalf",
         "waterbuffel",
-        "wisent",
-        "koe",
-        "koeien",
-        "ossenkop"
+        "wisent"
       ]
     },
     {
@@ -126,12 +126,12 @@
         "gewei",
         "hert",
         "herten",
+        "hertshoornen",
         "hinde",
+        "ree",
         "reebokje",
         "reebokjes",
-        "ree",
-        "reeën",
-        "hertshoornen"
+        "reeën"
       ]
     },
     {
@@ -165,9 +165,9 @@
     {
       "name": "goat",
       "phrases": [
+        "bok",
         "geit",
-        "geiten",
-        "bok"
+        "geiten"
       ]
     },
     {
@@ -216,8 +216,8 @@
     {
       "name": "salmon",
       "phrases": [
-        "zalmen",
-        "zalm"
+        "zalm",
+        "zalmen"
       ]
     },
     {
@@ -243,11 +243,11 @@
       "name": "shell",
       "phrases": [
         "jacobsschelpen",
-        "st.jacobsschelpen",
         "schelp",
         "schelpen",
         "schelpje",
         "schelpjes",
+        "st.jacobsschelpen",
         "zeehorens"
       ]
     },
@@ -277,9 +277,9 @@
       "phrases": [
         "adelaar",
         "adelaars",
+        "adelaarspoot",
         "arend",
-        "arenden",
-        "adelaarspoot"
+        "arenden"
       ]
     },
     {
@@ -306,11 +306,12 @@
     {
       "name": "dog",
       "phrases": [
+        "brakkenkoppen",
+        "hazewindhonden",
         "hond",
         "honden",
         "hondenkoppen",
-        "hazewindhonden",
-        "brakkenkoppen"
+        "windhond"
       ]
     },
     {
@@ -322,13 +323,15 @@
     {
       "name": "bird",
       "phrases": [
-        "vogels",
+        "fazant",
         "kauwen",
-        "merlet",
         "maarlen",
         "meerlen",
-        "fazant",
-        "vink"
+        "merlet",
+        "vink",
+        "vogels",
+        "zwaluw",
+        "zwaluwen"
       ]
     },
     {
@@ -341,22 +344,23 @@
     {
       "name": "fish",
       "phrases": [
+        "baars",
+        "baarsen",
+        "bot",
         "brasem",
         "brasems",
         "halfvis",
+        "haringen",
         "karper",
         "karpers",
         "meerval",
+        "rog",
         "snoek",
         "vis",
         "visachtig",
         "visgraaf",
         "vissen",
-        "zalm",
-        "baars",
-        "baarsen",
-        "haringen",
-        "rog"
+        "zalm"
       ]
     },
     {
@@ -533,8 +537,8 @@
     {
       "name": "anchor",
       "phrases": [
-        "scheepsanker",
-        "anker"
+        "anker",
+        "scheepsanker"
       ]
     },
     {
@@ -549,6 +553,7 @@
       "phrases": [
         "bloem",
         "bloemen",
+        "krullelie",
         "tulp",
         "tulpen"
       ]
@@ -573,10 +578,10 @@
     {
       "name": "sword",
       "phrases": [
-        "zwaard",
-        "zwaarden",
         "degen",
-        "gevest"
+        "gevest",
+        "zwaard",
+        "zwaarden"
       ]
     },
     {
@@ -659,10 +664,10 @@
     {
       "name": "windmill",
       "phrases": [
-        "windmolen",
-        "windmolens",
         "molen",
         "molens",
+        "windmolen",
+        "windmolens",
         "wipmolen"
       ]
     },

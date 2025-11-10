@@ -3743,7 +3743,8 @@
   "markers": {
    "items": [
     "bell",
-    "crown"
+    "crown",
+    "flower"
    ]
   }
  },
@@ -8345,6 +8346,11 @@
     "grey": 0.0005,
     "green": 0.0002
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ]
   }
  },
  {
@@ -14985,6 +14991,11 @@
     "grey": 0.6804,
     "black": 0.0061
    }
+  },
+  "markers": {
+   "animals": [
+    "fish"
+   ]
   }
  },
  {
@@ -17103,6 +17114,11 @@
     "white": 0.001,
     "black": 0.0117
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ]
   }
  },
  {
@@ -18294,6 +18310,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "dog"
+   ],
    "items": [
     "tree"
    ]

@@ -67,6 +67,27 @@ const FilterSeeds = ({ country }: Props) => {
       }
     });
 
+    newData.types = newData.types.map((filter) => {
+      return {
+        ...filter,
+        phrases: filter.phrases?.sort((a, b) => a.localeCompare(b)),
+      };
+    });
+
+    newData.animals = newData.animals.map((filter) => {
+      return {
+        ...filter,
+        phrases: filter.phrases?.sort((a, b) => a.localeCompare(b)),
+      };
+    });
+
+    newData.items = newData.items.map((filter) => {
+      return {
+        ...filter,
+        phrases: filter.phrases?.sort((a, b) => a.localeCompare(b)),
+      };
+    });
+
     copyText(JSON.stringify(newData, null, 2));
   };
 

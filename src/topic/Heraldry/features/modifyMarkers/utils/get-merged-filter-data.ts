@@ -69,6 +69,7 @@ export const getMergedFilterData = ({
 
   return {
     ...initFilter,
+    phrases: initFilter.phrases?.sort((a, b) => a.localeCompare(b)),
     include: [...includeWithRemoved, ...rulesToInclude].sort(sortRules),
     exclude: [...excludeWithRemoved, ...rulesToExclude].sort(sortRules),
   };
