@@ -41,7 +41,7 @@ const MergeModificationButton = ({
       exclude,
     });
 
-    copyText(`${JSON.stringify(mergedFilter, null, 4)}`);
+    copyText(`${JSON.stringify(mergedFilter, null, 4)},`);
   };
 
   return (

@@ -67,12 +67,8 @@ const FilterSeeds = ({ country }: Props) => {
       }
     });
 
-    copyText(`${JSON.stringify(newData, null, 4)},`);
+    copyText(JSON.stringify(newData, null, 2));
   };
-
-  if (shortcuts.length === 0) {
-    return null;
-  }
 
   return (
     <div className="flex gap-2">

@@ -154,8 +154,8 @@ export const getMarkers = ({
   }
 
   return {
-    types,
-    animals,
-    items,
+    types: types.sort((a, b) => a.localeCompare(b)),
+    animals: animals.sort((a, b) => a.localeCompare(b)),
+    items: items.sort((a, b) => a.localeCompare(b)),
   };
 };

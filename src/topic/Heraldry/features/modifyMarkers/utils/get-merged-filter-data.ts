@@ -12,15 +12,15 @@ type Params = {
 
 const sortRules = (a?: ManualMarker, b?: ManualMarker) => {
   if (typeof a === "string" && typeof b === "string") {
-    return b.localeCompare(a);
+    return a.localeCompare(b);
   }
 
   if (
     typeof (a as ComplexManualMarker)?.imageHash === "string" &&
     typeof (b as ComplexManualMarker)?.imageHash === "string"
   ) {
-    return (b as ComplexManualMarker).imageHash.localeCompare(
-      (a as ComplexManualMarker).imageHash
+    return (a as ComplexManualMarker).imageHash.localeCompare(
+      (b as ComplexManualMarker).imageHash
     );
   }
 
