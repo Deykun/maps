@@ -325,9 +325,12 @@
       "phrases": [
         "fazant",
         "kauwen",
+        "kievit",
+        "kieviten",
         "maarlen",
         "meerlen",
         "merlet",
+        "patrijs",
         "vink",
         "vogels",
         "zwaluw",
@@ -475,8 +478,13 @@
     {
       "name": "tree",
       "phrases": [
+        "bladen",
         "boom",
-        "boomen"
+        "boomen",
+        "eikenboom",
+        "elzen",
+        "lindeboom",
+        "rijssen tak"
       ]
     },
     {
@@ -517,6 +525,9 @@
       "phrases": [
         "aar",
         "aren",
+        "hooischelf",
+        "korenschoof",
+        "korenschoven",
         "schoof"
       ]
     },
@@ -553,7 +564,11 @@
       "phrases": [
         "bloem",
         "bloemen",
+        "boekweitbloemen",
+        "boekweitplant",
+        "distel",
         "krullelie",
+        "rijsttakken",
         "tulp",
         "tulpen"
       ]
@@ -675,11 +690,15 @@
       "name": "walls",
       "phrases": [
         "bakstenen",
+        "burcht",
+        "burgt",
+        "burgten",
         "kaseel",
         "muur",
         "poort",
         "poorten",
-        "toren"
+        "toren",
+        "wachttoren"
       ]
     },
     {
@@ -687,7 +706,9 @@
       "phrases": [
         "druif",
         "druivenrank",
-        "druivenranken"
+        "druivenranken",
+        "wijngaardranken",
+        "wijnstok"
       ]
     }
   ]

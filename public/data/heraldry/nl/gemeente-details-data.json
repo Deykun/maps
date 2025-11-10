@@ -389,7 +389,8 @@
     "flower",
     "heart",
     "lily",
-    "saint"
+    "saint",
+    "walls"
    ]
   }
  },
@@ -498,7 +499,8 @@
     "fox"
    ],
    "items": [
-    "crown"
+    "crown",
+    "tree"
    ]
   }
  },
@@ -1112,7 +1114,8 @@
   },
   "markers": {
    "items": [
-    "crown"
+    "crown",
+    "walls"
    ]
   }
  },
@@ -1394,7 +1397,8 @@
     "lion"
    ],
    "items": [
-    "crown"
+    "crown",
+    "walls"
    ]
   }
  },
@@ -1554,6 +1558,11 @@
     "white": 0.0048,
     "blue": 0.0013
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -1573,6 +1582,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "walls"
    ]
   }
  },
@@ -1931,7 +1943,9 @@
     "crown",
     "flower",
     "rose",
-    "sword"
+    "sword",
+    "tree",
+    "walls"
    ]
   }
  },
@@ -2140,7 +2154,8 @@
     "eagle"
    ],
    "items": [
-    "crown"
+    "crown",
+    "earOfGrain"
    ]
   }
  },
@@ -2185,7 +2200,8 @@
   },
   "markers": {
    "items": [
-    "crown"
+    "crown",
+    "earOfGrain"
    ]
   }
  },
@@ -2210,7 +2226,8 @@
     "lion"
    ],
    "items": [
-    "crown"
+    "crown",
+    "earOfGrain"
    ]
   }
  },
@@ -2352,7 +2369,8 @@
    ],
    "items": [
     "cross",
-    "crown"
+    "crown",
+    "tree"
    ]
   }
  },
@@ -2398,7 +2416,8 @@
     "fish"
    ],
    "items": [
-    "crown"
+    "crown",
+    "walls"
    ]
   }
  },
@@ -3171,7 +3190,8 @@
    "items": [
     "angel",
     "cross",
-    "crown"
+    "crown",
+    "walls"
    ]
   }
  },
@@ -3328,7 +3348,8 @@
   },
   "markers": {
    "items": [
-    "crown"
+    "crown",
+    "walls"
    ]
   }
  },
@@ -3454,7 +3475,8 @@
     "duck"
    ],
    "items": [
-    "crown"
+    "crown",
+    "walls"
    ]
   }
  },
@@ -3611,7 +3633,8 @@
   "markers": {
    "items": [
     "crown",
-    "heart"
+    "heart",
+    "walls"
    ]
   }
  },
@@ -3667,7 +3690,8 @@
   },
   "markers": {
    "items": [
-    "crown"
+    "crown",
+    "walls"
    ]
   }
  },
@@ -3824,6 +3848,11 @@
     "white": 0.0013,
     "green": 0.0001
    }
+  },
+  "markers": {
+   "items": [
+    "earOfGrain"
+   ]
   }
  },
  {
@@ -4191,6 +4220,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "walls"
    ]
   }
  },
@@ -4841,6 +4873,7 @@
    ],
    "items": [
     "crown",
+    "earOfGrain",
     "tree",
     "walls"
    ]
@@ -4886,7 +4919,8 @@
    ],
    "items": [
     "boat",
-    "crown"
+    "crown",
+    "tree"
    ]
   }
  },
@@ -5048,7 +5082,8 @@
    ],
    "items": [
     "arrow",
-    "crown"
+    "crown",
+    "walls"
    ]
   }
  },
@@ -5317,7 +5352,8 @@
     "crown",
     "flower",
     "rose",
-    "saint"
+    "saint",
+    "tree"
    ]
   }
  },
@@ -5360,6 +5396,9 @@
    "animals": [
     "bee",
     "insect"
+   ],
+   "items": [
+    "earOfGrain"
    ]
   }
  },
@@ -5466,7 +5505,8 @@
     "pigeon"
    ],
    "items": [
-    "crown"
+    "crown",
+    "tree"
    ]
   }
  },
@@ -5620,7 +5660,8 @@
     "lion"
    ],
    "items": [
-    "crown"
+    "crown",
+    "tree"
    ]
   }
  },
@@ -5841,7 +5882,8 @@
    ],
    "items": [
     "crown",
-    "key"
+    "key",
+    "tree"
    ]
   }
  },
@@ -5918,7 +5960,8 @@
     "cross",
     "crown",
     "flower",
-    "lily"
+    "lily",
+    "walls"
    ]
   }
  },
@@ -5941,7 +5984,8 @@
     "lion"
    ],
    "items": [
-    "crown"
+    "crown",
+    "walls"
    ]
   }
  },
@@ -5962,7 +6006,8 @@
   },
   "markers": {
    "items": [
-    "crown"
+    "crown",
+    "walls"
    ]
   }
  },
@@ -6100,7 +6145,8 @@
    ],
    "items": [
     "crown",
-    "saint"
+    "saint",
+    "walls"
    ]
   }
  },
@@ -6274,7 +6320,8 @@
     "unicorn"
    ],
    "items": [
-    "crown"
+    "crown",
+    "tree"
    ]
   }
  },
@@ -6497,7 +6544,8 @@
    "items": [
     "cross",
     "crown",
-    "key"
+    "key",
+    "walls"
    ]
   }
  },
@@ -6624,7 +6672,8 @@
     "lion"
    ],
    "items": [
-    "crown"
+    "crown",
+    "walls"
    ]
   }
  },
@@ -6760,7 +6809,8 @@
     "griffin"
    ],
    "items": [
-    "crown"
+    "crown",
+    "walls"
    ]
   }
  },
@@ -6779,7 +6829,8 @@
   },
   "markers": {
    "items": [
-    "crown"
+    "crown",
+    "earOfGrain"
    ]
   }
  },
@@ -7054,7 +7105,8 @@
    ],
    "items": [
     "crown",
-    "key"
+    "key",
+    "walls"
    ]
   }
  },

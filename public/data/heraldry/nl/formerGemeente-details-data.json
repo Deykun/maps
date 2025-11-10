@@ -568,7 +568,8 @@
     "snake"
    ],
    "items": [
-    "crown"
+    "crown",
+    "walls"
    ]
   }
  },
@@ -721,6 +722,11 @@
     "blue": 0.5981,
     "grey": 0.0041
    }
+  },
+  "markers": {
+   "items": [
+    "earOfGrain"
+   ]
   }
  },
  {
@@ -887,6 +893,7 @@
    "items": [
     "bell",
     "crown",
+    "earOfGrain",
     "flower",
     "rose"
    ]
@@ -1545,7 +1552,8 @@
   },
   "markers": {
    "items": [
-    "crown"
+    "crown",
+    "walls"
    ]
   }
  },
@@ -1598,6 +1606,11 @@
     "white": 0.0042,
     "grey": 0.145
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -1658,7 +1671,8 @@
     "lion"
    ],
    "items": [
-    "crown"
+    "crown",
+    "tree"
    ]
   }
  },
@@ -2119,6 +2133,11 @@
     "grey": 0.0001,
     "white": 0.0019
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -2131,6 +2150,11 @@
     "grey": 0.0013,
     "blue": 0.4054
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -2628,6 +2652,7 @@
   "markers": {
    "items": [
     "crown",
+    "walls",
     "windmill"
    ]
   }
@@ -2962,7 +2987,8 @@
   "markers": {
    "items": [
     "flower",
-    "rose"
+    "rose",
+    "tree"
    ]
   }
  },
@@ -3489,6 +3515,7 @@
     "lion"
    ],
    "items": [
+    "earOfGrain",
     "flower",
     "horn",
     "musicalInstrument",
@@ -3701,7 +3728,8 @@
   "markers": {
    "items": [
     "crown",
-    "hammer"
+    "hammer",
+    "tree"
    ]
   }
  },
@@ -3877,7 +3905,8 @@
   },
   "markers": {
    "items": [
-    "crown"
+    "crown",
+    "earOfGrain"
    ]
   }
  },
@@ -4158,7 +4187,8 @@
   "markers": {
    "items": [
     "crown",
-    "jewelry"
+    "jewelry",
+    "walls"
    ]
   }
  },
@@ -4356,6 +4386,7 @@
   "markers": {
    "items": [
     "crown",
+    "earOfGrain",
     "flower",
     "lily"
    ]
@@ -4448,7 +4479,8 @@
   },
   "markers": {
    "items": [
-    "crown"
+    "crown",
+    "earOfGrain"
    ]
   }
  },
@@ -4489,6 +4521,7 @@
   },
   "markers": {
    "items": [
+    "earOfGrain",
     "walls"
    ]
   }
@@ -6801,7 +6834,8 @@
     "lion"
    ],
    "items": [
-    "crown"
+    "crown",
+    "walls"
    ]
   }
  },
@@ -7371,7 +7405,8 @@
     "raven"
    ],
    "items": [
-    "crown"
+    "crown",
+    "walls"
    ]
   }
  },
@@ -7488,6 +7523,9 @@
   "markers": {
    "animals": [
     "fish"
+   ],
+   "items": [
+    "earOfGrain"
    ]
   }
  },
@@ -8314,6 +8352,11 @@
     "grey": 0.0001,
     "white": 0.0008
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -8411,6 +8454,11 @@
     "blue": 0.0001,
     "black": 0.0074
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -8664,6 +8712,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "tree"
    ]
   }
  },
@@ -9045,6 +9096,9 @@
    "animals": [
     "bird",
     "duck"
+   ],
+   "items": [
+    "walls"
    ]
   }
  },
@@ -9211,6 +9265,10 @@
   "markers": {
    "animals": [
     "ram"
+   ],
+   "items": [
+    "earOfGrain",
+    "tree"
    ]
   }
  },
@@ -9375,7 +9433,8 @@
    "items": [
     "crown",
     "key",
-    "saint"
+    "saint",
+    "tree"
    ]
   }
  },
@@ -9434,6 +9493,11 @@
     "grey": 0.0052,
     "gold": 0.1615
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -9648,6 +9712,11 @@
     "grey": 0.0161,
     "green": 0
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -9913,7 +9982,8 @@
     "salmon"
    ],
    "items": [
-    "crown"
+    "crown",
+    "earOfGrain"
    ]
   }
  },
@@ -11167,6 +11237,7 @@
     "bullBison"
    ],
    "items": [
+    "earOfGrain",
     "horn",
     "musicalInstrument",
     "walls"
@@ -12019,7 +12090,8 @@
    ],
    "items": [
     "crown",
-    "tree"
+    "tree",
+    "walls"
    ]
   }
  },
@@ -12286,7 +12358,8 @@
     "lion"
    ],
    "items": [
-    "crown"
+    "crown",
+    "walls"
    ]
   }
  },
@@ -12610,7 +12683,8 @@
   },
   "markers": {
    "items": [
-    "crown"
+    "crown",
+    "tree"
    ]
   }
  },
@@ -12669,6 +12743,11 @@
     "gold": 0.0908,
     "red": 0.0026
    }
+  },
+  "markers": {
+   "items": [
+    "earOfGrain"
+   ]
   }
  },
  {
@@ -12749,7 +12828,8 @@
    ],
    "items": [
     "cross",
-    "crown"
+    "crown",
+    "walls"
    ]
   }
  },
@@ -13177,7 +13257,8 @@
     "flower",
     "heart",
     "lily",
-    "saint"
+    "saint",
+    "walls"
    ]
   }
  },
@@ -13242,7 +13323,8 @@
   },
   "markers": {
    "items": [
-    "crown"
+    "crown",
+    "tree"
    ]
   }
  },
@@ -13422,6 +13504,11 @@
     "blue": 0.0481,
     "green": 0.3544
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -14394,7 +14481,8 @@
   "markers": {
    "items": [
     "flower",
-    "lily"
+    "lily",
+    "walls"
    ]
   }
  },
@@ -14531,7 +14619,8 @@
    "items": [
     "bell",
     "cross",
-    "sword"
+    "sword",
+    "walls"
    ]
   }
  },
@@ -14964,7 +15053,8 @@
     "unicorn"
    ],
    "items": [
-    "crown"
+    "crown",
+    "tree"
    ]
   }
  },
@@ -15180,6 +15270,11 @@
     "green": 0.0183,
     "blue": 0.0002
    }
+  },
+  "markers": {
+   "animals": [
+    "bird"
+   ]
   }
  },
  {
@@ -15197,7 +15292,8 @@
   },
   "markers": {
    "items": [
-    "crown"
+    "crown",
+    "walls"
    ]
   }
  },
@@ -15431,6 +15527,7 @@
   "markers": {
    "items": [
     "crown",
+    "flower",
     "sword"
    ]
   }
@@ -15501,6 +15598,11 @@
     "grey": 0.9811,
     "black": 0.0189
    }
+  },
+  "markers": {
+   "items": [
+    "grape"
+   ]
   }
  },
  {
@@ -15618,6 +15720,7 @@
   },
   "markers": {
    "animals": [
+    "bird",
     "dog"
    ],
    "items": [
@@ -16137,6 +16240,11 @@
     "black": 0.0056,
     "red": 0.1571
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -16149,6 +16257,11 @@
     "black": 0.0242,
     "gold": 0.2551
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -16752,7 +16865,8 @@
     "lion"
    ],
    "items": [
-    "crown"
+    "crown",
+    "walls"
    ]
   }
  },
@@ -16781,6 +16895,11 @@
     "white": 0.0021,
     "black": 0.0001
    }
+  },
+  "markers": {
+   "items": [
+    "earOfGrain"
+   ]
   }
  },
  {
@@ -16838,6 +16957,9 @@
    }
   },
   "markers": {
+   "animals": [
+    "bird"
+   ],
    "items": [
     "crown"
    ]
@@ -16933,6 +17055,11 @@
     "gold": 0.5353,
     "red": 0.3201
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -16987,7 +17114,8 @@
     "lion"
    ],
    "items": [
-    "crown"
+    "crown",
+    "walls"
    ]
   }
  },
@@ -17007,7 +17135,8 @@
   "markers": {
    "items": [
     "cross",
-    "crown"
+    "crown",
+    "walls"
    ]
   }
  },
@@ -17054,6 +17183,11 @@
     "blue": 0.0399,
     "green": 0.025
    }
+  },
+  "markers": {
+   "items": [
+    "grape"
+   ]
   }
  },
  {
@@ -17190,6 +17324,7 @@
   },
   "markers": {
    "items": [
+    "flower",
     "saint"
    ]
   }
@@ -17694,7 +17829,8 @@
   },
   "markers": {
    "items": [
-    "crown"
+    "crown",
+    "walls"
    ]
   }
  },
@@ -17738,7 +17874,8 @@
     "lion"
    ],
    "items": [
-    "crown"
+    "crown",
+    "walls"
    ]
   }
  },
@@ -18351,6 +18488,11 @@
     "grey": 0.2589,
     "black": 0.0001
    }
+  },
+  "markers": {
+   "items": [
+    "earOfGrain"
+   ]
   }
  },
  {
@@ -18970,6 +19112,11 @@
     "red": 0.0187,
     "black": 0.0103
    }
+  },
+  "markers": {
+   "items": [
+    "tree"
+   ]
   }
  },
  {
@@ -19730,6 +19877,11 @@
     "green": 0.0001,
     "blue": 0.0015
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -19964,6 +20116,11 @@
     "grey": 0.9582,
     "black": 0.0418
    }
+  },
+  "markers": {
+   "items": [
+    "flower"
+   ]
   }
  },
  {
@@ -20110,6 +20267,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "walls"
    ]
   }
  },
@@ -20537,6 +20697,11 @@
     "red": 0.1456,
     "blue": 0
    }
+  },
+  "markers": {
+   "items": [
+    "walls"
+   ]
   }
  },
  {
@@ -20575,6 +20740,9 @@
   "markers": {
    "animals": [
     "lion"
+   ],
+   "items": [
+    "walls"
    ]
   }
  },
@@ -20679,7 +20847,8 @@
    ],
    "items": [
     "crown",
-    "flower"
+    "flower",
+    "walls"
    ]
   }
  },
