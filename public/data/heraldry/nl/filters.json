@@ -530,6 +530,13 @@
       "phrases": [
         "kronen",
         "kroon"
+      ],
+      "include": [],
+      "exclude": [
+        {
+          "imageHash": "140f5a8c",
+          "note": "Wapen van Brabant"
+        }
       ]
     },
     {
