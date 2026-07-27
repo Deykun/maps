@@ -1,26 +1,31 @@
-import { MarkerParams } from '@/topic/Heraldry/types';
+import { MarkerParams } from "@/topic/Heraldry/types";
 
+import { useFilterModificationStore } from "@/topic/Heraldry/features/modifyMarkers/stores/filtersModificationStore";
 
-import { useFilterModificationStore } from '@/topic/Heraldry/features/modifyMarkers/stores/filtersModificationStore';
+import DevelopmentPaneSnippet from "@/topic/Heraldry/components/Panes/DevelopmentPane/DevelopmentPaneSnippet";
 
-import DevelopmentPaneSnippet from '@/topic/Heraldry/components/Panes/DevelopmentPane/DevelopmentPaneSnippet';
-
-import MergeMofificationButton from './MergeMofificationButton';
+import MergeModificationButton from "./MergeModificationButton";
 
 type Props = {
-  className?: string,
-  snippetClassName?: string,
-  type: 'animal' | 'item',
-  name: string,
-  filter: MarkerParams,
-  setDraftFilter: (v: MarkerParams) => void,
-}
+  className?: string;
+  snippetClassName?: string;
+  type: "animal" | "item";
+  name: string;
+  filter: MarkerParams;
+  setDraftFilter: (v: MarkerParams) => void;
+};
 
-const FilterModifications = ({ className, snippetClassName, type, name, filter, setDraftFilter }: Props) => {
-  const {
-    include = [],
-    exclude = [],
-  } = useFilterModificationStore(state => state[type][name] || {});
+const FilterModifications = ({
+  className,
+  snippetClassName,
+  type,
+  name,
+  filter,
+  setDraftFilter,
+}: Props) => {
+  const { include = [], exclude = [] } = useFilterModificationStore(
+    (state) => state[type][name] || {}
+  );
 
   if (include.length === 0 && exclude.length === 0) {
     return null;
@@ -30,7 +35,7 @@ const FilterModifications = ({ className, snippetClassName, type, name, filter, 
     <div className={className}>
       <div className="flex gap-2 justify-between items-center mb-1">
         <h5 className="text-[12px] font-[500] text-white">Modifications</h5>
-        <MergeMofificationButton
+        <MergeModificationButton
           filter={filter}
           include={include}
           exclude={exclude}

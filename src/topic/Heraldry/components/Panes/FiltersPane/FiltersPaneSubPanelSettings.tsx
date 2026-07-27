@@ -16,7 +16,7 @@ import ButtonIcon from '@/components/UI/ButtonIcon';
 import useFiltersStore, { toggleFilterOperator, toggleShouldReverseFilters, toggleShouldHideMissingImages } from '@/topic/Heraldry/stores/filtersStore';
 import {
   useFiltersDevelopmentStore,
-  toggleFilterDevlopmentMode,
+  toggleFilterDevelopmentMode,
 } from '@/topic/Heraldry/stores/filtersDevelopmentStore';
 
 type Props = {
@@ -69,7 +69,7 @@ const FiltersPaneSubPanelColors = ({
       <span className="border-l"></span>
       <ButtonIcon
         isActive={isFiltersDevModeActive}
-        onClick={toggleFilterDevlopmentMode}
+        onClick={toggleFilterDevelopmentMode}
         label="Development mode"
         labelPosition="bottomLeft"
       >

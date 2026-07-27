@@ -1,12 +1,14 @@
-import { useQuery } from '@tanstack/react-query';
-import { MarkerParams } from '@/topic/Heraldry/types';
+import { useQuery } from "@tanstack/react-query";
+import { MarkerParams } from "@/topic/Heraldry/types";
 
-type FetchParmas = {
-  country: string,
-}
+type FetchParams = {
+  country: string;
+};
 
-const fetchData = async ({ country }: FetchParmas) => {
-  const response = await fetch(`/maps/data/heraldry/${country}/filters.json`).then((response) => response.json());
+const fetchData = async ({ country }: FetchParams) => {
+  const response = await fetch(
+    `/maps/data/heraldry/${country}/filters.json`
+  ).then((response) => response.json());
 
   const types = (response.types || []) as MarkerParams[];
   const animals = (response.animals || []) as MarkerParams[];
@@ -19,12 +21,12 @@ const fetchData = async ({ country }: FetchParmas) => {
   };
 };
 
-export default function useQueryFiltersSeeds({ country }: FetchParmas) {
+export default function useQueryFiltersSeeds({ country }: FetchParams) {
   const response = useQuery({
     queryFn: () => fetchData({ country }),
-    queryKey: ['filter', country],
+    queryKey: ["filter", country],
     staleTime: 5 * 60 * 1000,
   });
 
   return response;
-};
+}

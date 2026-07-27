@@ -34,7 +34,7 @@ export const useFiltersDevelopmentStore = create<FiltersDevelopmentStoreState>()
   )
 )
 
-export const toggleFilterDevlopmentMode = () => {
+export const toggleFilterDevelopmentMode = () => {
   useFiltersDevelopmentStore.setState((state) => ({
     ...state,
     isModeActive: !state.isModeActive,

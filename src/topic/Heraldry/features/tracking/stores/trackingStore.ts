@@ -32,7 +32,7 @@ export const useTrackingStore = create<TrackingStoreState>()(
       wasPopupClosed: initial.wasPopupClosed || emptyState.wasPopupClosed,
       didAgreeToGA: initial.didAgreeToGA || emptyState.didAgreeToGA,
     } as TrackingStoreState),
-    { name: 'trackinStore' },
+    { name: 'trackingStore' },
   )
 )
 
